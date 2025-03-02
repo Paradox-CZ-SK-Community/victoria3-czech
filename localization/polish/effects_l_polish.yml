@@ -93,7 +93,7 @@
  ADD_INVESTMENT_POOL_FIRST:0 "#variable [COUNTRY.GetAdjectiveNoFormatting]#! [concept_investment_pool] bylo zvýšeno o @money!$VALUE|D+$"
  ADD_INVESTMENT_POOL_THIRD:0 "#variable [COUNTRY.GetAdjective]#! [concept_investment_pool] bylo zvýšeno o @money!$VALUE|D+$"
  ADD_JOURNAL_ENTRY:0 "Přidává #variable $JOURNAL_ENTRY_NAME$#! do deníku [COUNTRY.GetName|v]"
- ADD_JOURNAL_ENTRY_FIRST:0 "Přidává"
+ ADD_JOURNAL_ENTRY_FIRST:0 "Přidává #variable $JOURNAL_ENTRY_NAME$#! do deníku [COUNTRY.GetNameNoFlag|v]"
  ADD_JOURNAL_ENTRY_THIRD:0 "Přidává #variable $JOURNAL_ENTRY_NAME$#! do deníku [COUNTRY.GetName|v]"
  ADD_LAW_PROGRESS:0 "Změnit pokrok zákona [Law.GetName] o $VALUE|0%$"
  ADD_LEVERAGE: "[concept_power_bloc] získává #positive_value $VALUE$#! [concept_power_bloc_leverage]"
