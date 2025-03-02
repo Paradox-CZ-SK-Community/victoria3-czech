@@ -114,7 +114,7 @@
  ADD_LOYALISTS_FIRST:3 "$VALUE|+=1%$ z $FILTER_DESC$ v [COUNTRY.GetNameNoFlag] se stávají více [concept_loyalist]"
  ADD_LOYALISTS_IN_STATE_THIRD: "$VALUE|+=1%$ $FILTER_DESC$ v [STATE.GetName] se stávají více [concept_loyalist]"
  ADD_LOYALISTS_THIRD:3 "$VALUE|+=1%$ z $FILTER_DESC$ v [COUNTRY.GetName] se stává více [concept_loyalist]"
- ADD_MODIFIER:1 "$SUBJECT_NAME$ získává"
+ ADD_MODIFIER:1 "$SUBJECT_NAME$ získává #tooltippable #tooltip:[GetRawTextTooltipTag('$ADD_MODIFIER_BREAKDOWN$')] $MODIFIER_NAME$#!#! $MAYBE_DECAYING_WITH_SPACE_AFTER$$DURATION$\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!"
  ADD_MODIFIER_BREAKDOWN:0 "#header $MODIFIER_NAME$#!\n$MODIFIER_DESC$"
  ADD_MODIFIER_FIRST:0 "$SUBJECT_NAME$ získává #tooltippable #tooltip:[GetRawTextTooltipTag('$ADD_MODIFIER_BREAKDOWN$')] $MODIFIER_NAME$#!#! $MAYBE_DECAYING_WITH_SPACE_AFTER$$DURATION$\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!"
  ADD_MODIFIER_THIRD:0 "$SUBJECT_NAME$ získává #tooltippable #tooltip:[GetRawTextTooltipTag('$ADD_MODIFIER_BREAKDOWN$')] $MODIFIER_NAME$#!#! $MAYBE_DECAYING_WITH_SPACE_AFTER$$DURATION$\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!"
