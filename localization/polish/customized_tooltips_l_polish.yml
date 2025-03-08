@@ -352,7 +352,7 @@
  HARVEST_CONDITION_AREA_DURATION_LABEL: "#b [HarvestConditionArea.GetRemainingDurationLabel]#! ([HarvestConditionArea.GetRemainingDurationRange])"
  HARVEST_CONDITION_AREA_EFFECT_DESC: "#title Účinky epicentra kvůli #v $MAX_INTENSITY|1$#! $concept_harvest_condition_intensity_short$:#!#indent_newline:3 \n$BREAKDOWN$#!"
  HARVEST_CONDITION_AREA_INTENSITY: "[HarvestConditionArea.GetEpicenter.GetIntensity|v1] [Concept('concept_harvest_condition_intensity', '$concept_harvest_condition_intensity_short$')] v epicentru"
- HARVEST_CONDITION_AREA_NAME_HEADER: "[HarvestConditionArea.GetNameNoIcon] kolem [HarvestConditionArea.GetEpicenterRegion.GetName]"
+ HARVEST_CONDITION_AREA_NAME_HEADER: "[HarvestConditionArea.GetNameNoIcon] nedaleko [HarvestConditionArea.GetEpicenterRegion.GetName]"
  HARVEST_CONDITION_AREA_OTHER_STATES_ADDITIONAL_END: "a #v [GetDataModelSize(DataModelSkipFirst(HarvestConditionArea.GetHarvestConditionsNotAffecting(GetPlayer.Self), '(int32)20'))]#! více..."
  HARVEST_CONDITION_AREA_OTHER_STATES_ADDITIONAL: "a #v [GetDataModelSize(DataModelSkipFirst(HarvestConditionArea.GetHarvestConditionsNotAffecting(GetPlayer.Self), '(int32)5'))]#! více..."
  HARVEST_CONDITION_AREA_OTHER_STATES_LIST_HEADER_FORMAT: "[SelectLocalization(EqualTo_int32(GetDataModelSize(HarvestConditionArea.GetHarvestConditionsNotAffecting(GetPlayer.Self)),'(int32)1'),'HARVEST_CONDITION_AREA_OTHER_STATES_LIST_HEADER_ONE', 'HARVEST_CONDITION_AREA_OTHER_STATES_LIST_HEADER_MULTIPLE')]"
