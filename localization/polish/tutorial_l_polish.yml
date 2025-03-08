@@ -404,7 +404,7 @@
  lesson_establish_trade_route_how_5_desc:1 "The "
  lesson_establish_trade_route_how_6:0 "$lesson_establish_trade_route_how_1$"
  lesson_establish_trade_route_how_6_continue:0 "Stiskněte Další"
- lesson_establish_trade_route_how_6_desc:1 "To"
+ lesson_establish_trade_route_how_6_desc:1 "#v Množství#!, které je [concept_trade_route] schopna přepravovat, je spojeno s její úrovní. Toto je počet [Concept('concept_good','$concept_goods$')], které můžete očekávat, že tato trasa bude obchodovat při plné kapacitě, a je založen na nabídce, poptávce a ziskovosti trasy. Počet $concept_goods$ obchodovaných na trase generuje [concept_buy_orders] a [concept_sell_orders] v příslušných [Concept('concept_market','$concept_markets$')].\n\n#b Importní trasy:#!\n$TAB$[concept_buy_orders] na vzdáleném trhu\n$TAB$[concept_sell_orders] na výchozím trhu\n\n#b Exportní trasy:#!\n$TAB$[concept_sell_orders] na vzdáleném trhu\n$TAB$[concept_buy_orders] na výchozím trhu\n\nToto ovlivňuje [concept_market_price] $concept_goods$ v obou $concept_markets$."
  lesson_establish_trade_route_how_7:0 "$lesson_establish_trade_route_how_1$"
  lesson_establish_trade_route_how_7_continue:0 "Stiskněte Další"
  lesson_establish_trade_route_how_7_desc:0 "Produktivita [concept_trade_route] je množství zisku generovaného zaměstnanci v řídící [GetBuildingType('building_trade_center').GetName], poté, co byly vybrány [concept_tariffs] jak u dovážejícího, tak u vyvážejícího [concept_market_owner]. Čím větší je rozdíl v [concept_market_price] ve dvou [Concept('concept_market','$concept_markets$')] před obchodováním, tím větší je $concept_productivity$."
