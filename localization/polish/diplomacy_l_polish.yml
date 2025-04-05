@@ -763,7 +763,7 @@
  defensive_pact_trigger_false_desc_third:0 "[AddTextIf(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self),TARGET_COUNTRY.GetNameNoFlag)][AddTextIf(Not(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self)),TARGET_COUNTRY.GetName)] není #b v#! [concept_defensive_pact] s [COUNTRY.GetName]"
  demand_state: "Požadavek na stát"
  demand_state_action_name: "Požadovat [concept_state]"
- demand_state_desc: "Požadovat, aby váš [concept_overlord] vám dal jeden z jejich vlastních [Concept('concept_state','$concept_states$')], nebo převést [concept_state] od jednoho z jejich [concept_subjects] k vám. To sníží vaši [concept_liberty_desire], pokud bude uděleno."
+ demand_state_desc: "Požadovat, aby váš [concept_overlord] vám dal jeden z jejich vlastních [Concept('concept_state','$concept_states$')], nebo převést [concept_state] od jednoho z jejich $concept_subjects$ k vám. To sníží vaši [concept_liberty_desire], pokud bude uděleno."
  demand_state_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] přijalo naši žádost o $STATES_DESC$"
  demand_state_proposal_accepted_name: "$demand_state_action_name$ Přijato"
  demand_state_proposal_declined_desc: "[TARGET_COUNTRY.GetName] odmítlo naši žádost o $STATES_DESC$"
