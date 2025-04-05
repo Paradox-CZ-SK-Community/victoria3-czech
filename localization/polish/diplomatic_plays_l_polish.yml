@@ -103,7 +103,7 @@
  DIPLO_PLAY_SAME_SIDES:1 "[COUNTRY.GetName] podporuje [TARGET_COUNTRY.GetName] v jiném diplomatickém tahu"
  DIPLO_PLAY_SAME_SIDE_AS: "[COUNTRY.GetName] je na stejné straně jako [TARGET_COUNTRY.GetName] ve [DIPLOMATIC_PLAY.GetName]"
  DIPLO_PLAY_SUPPORT:0 "Podporovat"
- DIPLO_PLAY_SWAY_COUNTRY_DESC: "#header Ovlivněte [COUNTRY.GetName]#!\nAktuálně #b [DiplomaticPlay.GetSupportStanceDesc( Country.Self )]#!\n$TOOLTIP_DELIMITER$\nPokuste se [concept_sway] [COUNTRY.GetName] na svou stranu v [concept_diplomatic_play][ConcatIfNeitherEmpty( '\n\n', '$ERRORS$' )]"
+ DIPLO_PLAY_SWAY_COUNTRY_DESC: "#header Ovlivněte [COUNTRY.GetName]#!\nAktuálněo #b [DiplomaticPlay.GetSupportStanceDesc( Country.Self )]#!\n$TOOLTIP_DELIMITER$\nPokuste se [concept_sway] [COUNTRY.GetName] na svou stranu v [concept_diplomatic_play][ConcatIfNeitherEmpty( '\n\n', '$ERRORS$' )]"
  DIPLO_PLAY_SWAY_OFFER_DESC:3 "#header Ovládání s $SWAY_OFFER|v$#![ConcatIfNeitherEmpty('\n', SelectLocalization( And(SwayOffer.GetOfferedWarGoal.IsValid,GreaterThan_CFixedPoint(SwayOffer.GetOfferedWarGoal.GetInfamyAmount, '(CFixedPoint)0')), 'SWAY_OFFER_MANEUVERS_AND_INFAMY_COST', 'SWAY_OFFER_MANEUVERS_COST_ONLY'))][ConcatIfNeitherEmpty( '\n\n', '$ERRORS$' )]"
  DIPLO_PLAY_SWITCH_COUNTRY_ESCALATION:1 "Může se změnit na jinou zemi, zatímco eskalace je nižší než #variable $VALUE$#!"
  DIPLO_PLAY_SWITCH_COUNTRY_NOT_AI:1 "Lze přepnout pouze na uměle řízenou zemi"
