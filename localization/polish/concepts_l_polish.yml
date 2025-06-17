@@ -708,7 +708,7 @@ concept_budget_investment_income_desc: "Když je [concept_money] z [concept_trea
  concept_humiliate:1 "Ponížit"
  concept_humiliated:1 "Ponížený"
  concept_humiliation:0 "Ponížení"
- concept_humiliation_desc:2 "Cíl [concept_war_goal], který lze nárokovat v [concept_diplomatic_play] nebo jako součást [concept_peace_deal]. $concept_humiliated$ [concept_country] není schopen zahájit žádné $concept_diplomatic_plays$ proti [concept_country], od kterého byli $concept_humiliated$ po dobu #v [GetDefine('NDiplomacy','WAR_GOAL_HUMILIATION_MONTHS')|0] měsíců#!.[AddLocalizationIf(GetPlayer.IsValid,'concept_humiliation_desc_added')]"
+ concept_humiliation_desc:2 "[concept_war_goal], který lze nárokovat v [Concept('concept_diplomatic_play', 'diplomatický hře')] nebo jako součást [Concept('concept_peace_deal', 'mírové dohody')]. $concept_humiliated$ [concept_country] není schopen zahájit žádné $concept_diplomatic_plays$ proti [concept_country], od kterého byli $concept_humiliated$ po dobu #v [GetDefine('NDiplomacy','WAR_GOAL_HUMILIATION_MONTHS')|0] měsíců#!.[AddLocalizationIf(GetPlayer.IsValid,'concept_humiliation_desc_added')]"
  concept_humiliation_desc_added:0 "\n\nBěhem této doby jsou také podrobeni následujícím účinkům:\n[GetStaticModifier('country_humiliated').GetDesc]"
  concept_ideological_incoherence: "Ideologická neslučitelnost"
  concept_ideological_incoherence_desc: "Legitimita [Concept('concept_government','$concept_government_possessive$')] [concept_legitimacy] je snížena, pokud [Concept('concept_interest_group','$concept_interest_groups$')] [concept_in_government] mají [Concept('concept_ideology','$concept_ideologies$')], které se neshodují s aktuálním [Concept('concept_law', '$concept_laws$')] v [concept_country]."
