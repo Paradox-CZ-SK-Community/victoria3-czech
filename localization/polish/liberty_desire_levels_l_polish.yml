@@ -50,3 +50,7 @@
  ld_level_high: "Vysoké"
  ld_level_low: "Nízké"
  ld_level_moderate: "Mírné"
+ LIBERTY_DESIRE_WEEKLY_CHANGE_FROM_SUPPORTING_INDEPENDENCE: "[GetArticleType('support_independence').GetName] (#tooltippable #tooltip:[Country.GetTooltipTag],LIBERTY_DESIRE_WEEKLY_CHANGE_FROM_SUPPORTING_INDEPENDENCE_BREAKDOWN countries)#!#!"
+ LIBERTY_DESIRE_WEEKLY_CHANGE_FROM_SUPPORTING_INDEPENDENCE_BREAKDOWN: "#header [Country.GetWeeklyLibertyDesireChangeFromSupportIndependence|v:=] z [GetArticleType('support_independence').GetName]#!\n$TOOLTIP_DELIMITER$\n[Country.GetWeeklyLibertyDesireChangeFromSupportIndependenceDesc]"
+ LIBERTY_DESIRE_WEEKLY_CHANGE_FROM_SUPPORTING_INDEPENDENCE_MAX_LIMIT: "Maximální množství je limitováno na  $AMOUNT_MAX|v$"
+ LIBERTY_DESIRE_WEEKLY_CHANGE_FROM_COUNTRY_SUPPORTING_INDEPENDENCE: "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VALUE|v:=$#!#! z [Country.GetName]"

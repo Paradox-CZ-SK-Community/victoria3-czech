@@ -77,7 +77,7 @@
  POLITICAL_MOVEMENT_REVOLUTION_PROGRESS_IMMUNE: "Tento $concept_revolution$ se nebude rozvíjet, [Country.GetName] nemůže mít $concept_revolutions$"
  POLITICAL_MOVEMENT_SUPPORT: "#tooltippable #tooltip:[PoliticalMovement.GetTooltipTag],POLITICAL_MOVEMENT_SUPPORT_TOOLTIP,PoliticalMovementSupportTooltip [LabelingHelper.GetLabelForSupport(PoliticalMovement.GetSupport)]#!#! ([PoliticalMovement.GetSupport|v%0])"
  POLITICAL_MOVEMENT_SUPPORTING_AGITATORS: "#title Podporující [Concept('concept_agitator', '$concept_agitators$')]#!"
- POLITICAL_MOVEMENT_SUPPORTING_AGITATORS_HEADER: "\n[SelectLocalization(IsDataModelEmpty(PoliticalMovement.GetSupportingCharacters), 'POLITICAL_MOVEMENT_NO_SUPPORTING_AGITATORS', 'POLITICAL_MOVEMENT_SUPPORTING_AGITATORS')]"
+ POLITICAL_MOVEMENT_SUPPORTING_AGITATORS_HEADER: "[SelectLocalization(IsDataModelEmpty(PoliticalMovement.GetSupportingCharacters), 'POLITICAL_MOVEMENT_NO_SUPPORTING_AGITATORS', 'POLITICAL_MOVEMENT_SUPPORTING_AGITATORS')]"
  POLITICAL_MOVEMENT_SUPPORT_AND_RADICALISM_WITH_LABELS:0 "[Concept('concept_political_movement_support', '$concept_political_movement_support_short$')] #tooltippable #tooltip:[PoliticalMovement.GetTooltipTag],POLITICAL_MOVEMENT_SUPPORT_TOOLTIP,PoliticalMovementSupportTooltip [LabelingHelper.GetLabelForSupport(PoliticalMovement.GetSupport)] ([PoliticalMovement.GetSupport|v%0])#!#!, [Concept('concept_activism', '$concept_activism_short$')] #tooltippable #tooltip:[PoliticalMovement.GetTooltipTag],POLITICAL_MOVEMENT_RADICALISM_TOOLTIP,PoliticalMovementRadicalismTooltip [LabelingHelper.GetLabelForRadicalism(PoliticalMovement.GetRadicalism)] ($POLITICAL_MOVEMENT_RADICALISM_WITHOUT_LABEL$)#!#!"
  POLITICAL_MOVEMENT_SUPPORT_CONCEPT_SHORT_HEADER: "[Concept('concept_political_movement_support','$concept_political_movement_support_short$')]:"
  POLITICAL_MOVEMENT_SUPPORT_FROM_MILITARY: "$VALUE|v=%1$ z $concept_political_movement_support_short$ $NUM_INDIVIDUALS|vD$ [GetPopType('soldiers').GetName] a [GetPopType('officers').GetName]\n$TAB$(představující $FRACTION|v%0$ z celkové [concept_political_strength] armády)"
@@ -149,3 +149,7 @@
  revolution:0 "Revoluce"
  secession:0 "Secese"
  successfully_met_foreign_imposition_legitimacy: "Uvedený uplatněný zákon"
+ LAW_POLITICAL_MOVEMENT_TARGET_RADICALISM_WITH_LABEL_AND_PRECENTAGE: "[LabelingHelper.GetLabelForRadicalism(Law.GetRadicalismDriftTargetOnMovementFromStartEnact( PoliticalMovement.Self ))] ([SelectLocalization(GreaterThanOrEqualTo_CFixedPoint(Law.GetRadicalismDriftTargetOnMovementFromStartEnact( PoliticalMovement.Self ), '(CFixedPoint)1'), 'LAW_POLITICAL_MOVEMENT_TARGET_RADICALISM_WITHOUT_LABEL_RED', 'LAW_POLITICAL_MOVEMENT_TARGET_RADICALISM_WITHOUT_LABEL')])"
+ LAW_POLITICAL_MOVEMENT_TARGET_RADICALISM_WITHOUT_LABEL: "#v [Law.GetRadicalismDriftTargetOnMovementFromStartEnact( PoliticalMovement.Self )|%0]#!"
+ LAW_POLITICAL_MOVEMENT_TARGET_RADICALISM_WITHOUT_LABEL_RED: "#r [Law.GetRadicalismDriftTargetOnMovementFromStartEnact( PoliticalMovement.Self )|%0]#!"
+
