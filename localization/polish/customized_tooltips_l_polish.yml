@@ -139,6 +139,7 @@
  DATA_COMPANY_TYPE_NAME_FORMAT_TOOLTIP: "Ovlivnilo by [CompanyType.GetNumBuildingLevels|v] úrovní [concept_building] v [GetPlayer.GetName]:"
  DATA_COMPANY_TYPE_NAME_FORMAT_TOOLTIP_PT2: "[ConcatIfNeitherEmpty( SelectLocalization(CompanyType.CanProducePrestigeGoods,'DATA_COMPANY_TYPE_NAME_PRESTIGE_GOODS',''), '\n\n')]$COMPANY_THROUGHPUT_BONUS_HEADER$\n$COMPANY_CONSTRUCTION_BONUS_HEADER$\n\n$COMPANY_PROSPERITY_MODIFIER_HEADER$\n$COMPANY_TYPE_PROSPERITY_MODIFIER$"
  DATA_COMPANY_TYPE_NAME_PRESTIGE_GOODS: "Může vyrábět [CompanyType.GetProducedPrestigeGoodsDesc]"
+ DATA_COMPANY_TYPE_PREDICTED_PRODUCTIVITY: "@money![CompanyType.GetProductivity|1v] předpokládaná [concept_productivity]"
  DATA_COUNTRY_DIPLOMATIC_ACTION_AI_ACCEPTANCE: "[DiplomaticAction.GetWillAcceptDesc] #tooltippable #tooltip:[DiplomaticAction.GetTooltipTag],AI_WILL_ACCEPT_TOOLTIP ([DiplomaticAction.GetAcceptanceValue|=+])#!#!"
  DATA_COUNTRY_DIPLOMATIC_ACTION_DESC: "[AddLocalizationIf(Not(StringIsEmpty(DiplomaticAction.GetDesc)), 'DATA_DIPLOMATIC_ACTION_DESC')]"
  DATA_COUNTRY_DIPLOMATIC_ACTION_DESC_WITH_DELIMITER: "#lore [ConcatIfNeitherEmpty('\n$TOOLTIP_DELIMITER$\n', AddLocalizationIf(Not(StringIsEmpty(DiplomaticAction.GetDesc)), 'DATA_DIPLOMATIC_ACTION_DESC'))]#!"
@@ -522,4 +523,5 @@
  UNCLAIMED_LEVERAGE_FORMATTED: "#tooltippable #tooltip:$BREAKDOWN_TAG$ $UNCLAIMED_LEVERAGE|v0$#!#!"
  UNCLAIMED_LEVERAGE_MODIFIER_DESC: "[Country.GetModifier.GetDescFor('country_leverage_resistance_add')]\n[Country.GetModifier.GetDescFor('country_leverage_resistance_mult')]"
  UNINCORPORATED:0 "[Concept('concept_unincorporated_state','$concept_unincorporated_state_short$')]"
+ USING_X_FREE_CHARTERS: "Využito [Country.GetUsedFreeCharters|v] / [GetPlayer.GetModifier.GetValueWithBreakdownFor('country_free_charters_add')] volných [Concept('concept_company_charter','$concept_company_charters$')]"
  expel_diplomats_leverage_generation_tt: "[SCOPE.sCountry('target_country').GetPowerBloc.GetName] výrazně snížil @leverage![Nbsp][concept_power_bloc_leverage] generaci na vás."
