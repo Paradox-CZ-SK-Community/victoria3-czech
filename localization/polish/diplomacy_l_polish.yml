@@ -1520,7 +1520,7 @@
  raise_payments_trigger_desc_first: "[COUNTRY.GetAdjectiveNoFlag] požadoval zvýšení plateb od jejich subjektu [TARGET_COUNTRY.GetName]"
  raise_payments_trigger_desc_global: "Zvýšili platby subjektům"
  raise_payments_trigger_desc_third: "[COUNTRY.GetName] požaduje zvýšení plateb od jejich subjektu [AddTextIf(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self),TARGET_COUNTRY.GetNameNoFlag)][AddTextIf(Not(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self)),TARGET_COUNTRY.GetName)]"
- raise_payments_trigger_false_desc_first: "[COUNTRY.GetAdjectiveNoFlag] nemá #b nepožadoval#! zvýšení plateb od jejich subjektu [TARGET_COUNTRY.GetName]"
+ raise_payments_trigger_false_desc_first: "[COUNTRY.GetAdjectiveNoFlag] #b nepožadoval#! zvýšení plateb od jejich subjektu [TARGET_COUNTRY.GetName]"
  raise_payments_trigger_false_desc_global: "Má"
  raise_payments_trigger_false_desc_third: "[COUNTRY.GetName] #b nepožadovalo#! zvýšení plateb od jejich subjekta [AddTextIf(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self),TARGET_COUNTRY.GetNameNoFlag)][AddTextIf(Not(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self)),TARGET_COUNTRY.GetName)]"
  recognized: "Uznáno"
