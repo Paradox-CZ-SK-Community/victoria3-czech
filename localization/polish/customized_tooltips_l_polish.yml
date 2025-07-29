@@ -277,7 +277,7 @@
  DATA_MILITARY_FORMATION_NAME_FORMAT:0 "#tooltippable_name #tooltip:$TAG$,DATA_MILITARY_FORMATION,MilitaryFormationTooltip $NAME$#!#!"
  DATA_MILITARY_FORMATION_NAME_WITH_COUNTRY_FLAG_FORMAT: "#tooltippable_name #tooltip:$TAG$,DATA_MILITARY_FORMATION,MilitaryFormationTooltip $FLAG_ICON$[Nbsp]$NAME$#!#!"
  DATA_MILITARY_FORMATION_ORGANIZATION: "@organization! $MILITARY_FORMATION_ORGANIZATION_VALUE_TOOLTIPPABLE$ [concept_organization]"
- DATA_MILITARY_FORMATION_TYPE: "[concept_military_formation]\n[MilitaryFormation.GetCountry.GetAdjective] [SelectLocalization(MilitaryFormation.IsArmy, 'MILITARY_FORMATION_ARMY_CONCEPT', 'MILITARY_FORMATION_FLEET_CONCEPT')]"
+ DATA_MILITARY_FORMATION_TYPE: "[concept_military_formation]\n[MilitaryFormation.GetCountry.GetAltAdjective('aa')] [SelectLocalization(MilitaryFormation.IsArmy, 'MILITARY_FORMATION_ARMY_CONCEPT', 'MILITARY_FORMATION_FLEET_CONCEPT')|l]"
  DATA_MILITARY_FORMATION_UNITS: "[MilitaryFormation.GetUnitIcon] #v #tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],MILITARY_FORMATION_TOTAL_NUMBER_OF_UNITS_TOOLTIP [AddLocalizationIf(LessThan_int32(MilitaryFormation.GetCommandLimitRaw, MilitaryFormation.GetNumCombatUnits), '@warning! ')][MilitaryFormation.GetNumCombatUnits]#!#!#! / [MilitaryFormation.GetCommandLimit] [SelectLocalization(MilitaryFormation.IsArmy, 'BATTALIONS_CONCEPT', 'FLOTILLAS_CONCEPT')] $INCOMING_NUMBER_OF_REGULARS_LABEL$"
  DATA_MILITARY_FORMATION_UPKEEP: "@money!#v #tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],MILITARY_FORMATION_EXPENSE_TOOLTIP_TAG [MilitaryFormation.GetGoodsConsumptionCostRaw|0-K]#!#!#! Údržba"
  DATA_MOBILIZATION_OPTION_GROUP_NAME_FORMAT: "#tooltippable_name #tooltip:$TAG$,MOBILIZATION_OPTION_GROUP_TOOLTIP,MobilizationOptionGroupTooltip $NAME$#!#!"
