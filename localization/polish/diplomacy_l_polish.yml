@@ -41,7 +41,7 @@
  DIPLOMATIC_ACCEPTANCE_ACTOR_CAPITAL_MARKET_ACCESS: "z přístupu na trh hlavního města [SCOPE.sCountry('other_country').GetCapital.GetNameNoFormatting]"
  DIPLOMATIC_ACCEPTANCE_ACTOR_ECONOMIC_DEPENDENCE: "z [concept_economic_dependence] [SCOPE.sCountry('actor').GetNameNoFormatting] na [concept_overlord]"
  DIPLOMATIC_ACCEPTANCE_ACTOR_LIBERTY_DESIRE: "z [concept_liberty_desire] [SCOPE.sCountry('actor').GetNameNoFormatting]"
- DIPLOMATIC_ACCEPTANCE_AGRICULTURAL_EXPANSION: "They are pursuing a [concept_ai_strategy] of #v $ai_strategy_agricultural_expansion$#!"
+ DIPLOMATIC_ACCEPTANCE_AGRICULTURAL_EXPANSION: "Usilují o [Concept('concept_ai_strategy','strategii')] #v $ai_strategy_agricultural_expansion$#!"
  DIPLOMATIC_ACCEPTANCE_ALLIANCE: "z existující [Concept('concept_alliance','aliance')]"
  DIPLOMATIC_ACCEPTANCE_ALLIED_TO_ALLIES: "z toho že máme [Concept('concept_alliance','$concept_alliances$')] nebo [Concept('concept_defensive_pact','$concept_defensive_pacts$')] se spojenci [SCOPE.sCountry('target').GetAdjectiveNoFormatting]"
  DIPLOMATIC_ACCEPTANCE_ALLIED_TO_RIVALS: "z toho že máme [Concept('concept_alliance','$concept_alliances$')] nebo [Concept('concept_defensive_pact','$concept_defensive_pacts$')] se spojenci [SCOPE.sCountry('target').GetAdjectiveNoFormatting] [Concept('concept_rivalry','$concept_rivals$')]"
@@ -594,7 +594,7 @@
  change_customs_union_proposal_third_party_accepted_name:0 "$change_customs_union$ Připojeno"
  change_customs_union_proposal_third_party_declined_desc:0 "[INITIATOR_COUNTRY.GetName] odmítl změnit jejich [concept_customs_union] na tu od [INITIATOR_COUNTRY.GetName]."
  change_customs_union_proposal_third_party_declined_name:0 "$change_customs_union$ Žádost odmítnuta"
- chartered_company: "Charted Company"
+ chartered_company: "Akciová společnosOUNTRY
  chartered_company_action_ask_to_break_name: "Požadovat nezávislost"
  chartered_company_action_break_name: "Udělte nezávislost"
  chartered_company_action_name: "[concept_chartered_company]"
