@@ -1826,3 +1826,5 @@
  war_reparations_desc: "Způsobuje, že jeden [concept_country] musí platit část svého příjmu druhému po dobu trvání paktu."
  war_reparations_pact_desc:0 "[SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName] platí týdně [concept_war_reparations] [SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName]."
  war_reparations_type_break_desc:0 "Ukončit probíhající platby [concept_war_reparations] z jiné země k nám."
+ TREATY_DRAFT_OWE_OBLIGATION_ALREADY_EFFECTUATED: "@red_cross! Výměna [Concept('concept_obligation', 'závazků')] stanovená touto [Concept('concept_treaty','smlouvou')] již proběhla, a to buď proto, že původní [concept_binding_period|l] vypršelo, nebo proto, že od jejího vstupu v platnost dne $DATE|v$ uplynulo $INTERVAL$"
+ TREATY_DRAFT_OWE_OBLIGATION_ALREADY_ASKING: "@red_cross! [COUNTRY.GetName] nemůže současně slíbit [concept_obligation|l] vůči [OTHER_COUNTRY.GetAltAdjective('u')] v době, kdy [OTHER_COUNTRY.GetName] slibuje závazek vůči [COUNTRY.GetAltAdjective('u')]"
