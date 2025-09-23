@@ -1,6 +1,6 @@
 ﻿l_polish:
  AGITATORS_TITLE: "[Concept('concept_agitator','$concept_agitators$')]"
- ARISTOCRATS_GC_LINK: "[SelectLocalization(GetPlayer.IsValid,'ARISTOCRATS_INGAME_LINK','aristocrats')]"
+ ARISTOCRATS_GC_LINK: "[SelectLocalization(GetPlayer.IsValid,'ARISTOCRATS_INGAME_LINK','aristrokrati')]"
  ARISTOCRATS_INGAME_LINK: "[GetPopType('aristocrats').GetName]"
  CAPITALISTS_GC_LINK: "[SelectLocalization(GetPlayer.IsValid,'CAPITALISTS_INGAME_LINK','kapitalisté')]"
  CAPITALISTS_INGAME_LINK: "[GetPopType('capitalists').GetName]"
@@ -14,7 +14,7 @@
  ECONOMIC_SYSTEM_LINK: "[GetLawGroup('lawgroup_economic_system').GetName]"
  FINANCIAL_DISTRICTS_GC_LINK: "[SelectLocalization(GetPlayer.IsValid,'FINANCIAL_INGAME_LINK','finanční obvod')]"
  FINANCIAL_INGAME_LINK: "[GetBuildingType('building_financial_district').GetName]"
- FULL_ACCEPTANCE_GC_LINK: "[SelectLocalization(GetPlayer.IsValid,'FULL_ACCEPTANCE_LINK','Plné přijetí')]"
+ FULL_ACCEPTANCE_GC_LINK: "[SelectLocalization(GetPlayer.IsValid,'FULL_ACCEPTANCE_LINK','plné přijetí')]"
  FULL_ACCEPTANCE_LINK: "[GetAcceptanceStatus('full_acceptance').GetName]"
  GEOREGION_INDIA_STATE_REGIONS: "\n$EFFECT_LIST_BULLET$$STATE_QUETTA$\n$EFFECT_LIST_BULLET$$STATE_PASHTUNISTAN$\n$EFFECT_LIST_BULLET$$STATE_KASHMIR$"
  GEOREGION_INDIA_STATE_REGIONS_INGAME_LINK: "\n$EFFECT_LIST_BULLET$[GetStateRegion('STATE_QUETTA').GetName]\n$EFFECT_LIST_BULLET$[GetStateRegion('STATE_PASHTUNISTAN').GetName]\n$EFFECT_LIST_BULLET$[GetStateRegion('STATE_KASHMIR').GetName]"
@@ -114,7 +114,7 @@
  concept_attitude:0 "Postoj"
  concept_attitude_desc: "Ukazatel, jaké pocity k vám p
  concept_attracted:0 "Přitahován"
- concept_attrition:0 "Opotřebení"
+ concept_attrition:0 "Vyčerpání"
  concept_attrition_desc: "[concept_casualties] na [Concept('concept_manpower','personálu')] způsobené mimo [Concept('concept_battle','bitvu')] se nazývají Opotřebením. Běžně se to stává, když jsou [Concept('concept_battalion','$concept_battalions$')|l] [Concept('concept_mobilize_battalion','mobilizovány')] a může to být výsledkem nemocí, nehod, nepřízně počasí nebo dokonce dezerce. $concept_attrition$ lze omezit pomocí [Concept('concept_mobilization_option','$concept_mobilization_options$')|l] $medic_support$."
  concept_attrition_risk: "Riziko opotřebení"
  concept_authority:0 "Autorita"
