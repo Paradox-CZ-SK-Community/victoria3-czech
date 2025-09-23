@@ -1,370 +1,370 @@
 ﻿l_polish:
- dyn_c_croatia_slavonia: "Chorvatsko‑Slavonie" # todo: NEW TRANSLATION
- je_matter_of_hungary: "Záležitost Maďarska" # todo: NEW TRANSLATION
- je_matter_of_hungary_reason: "Od chvíle, kdy Habsburkové před stoletími získali trůn svatého Štěpána, se jejich nezávislé maďarské poddané ukázaly jako obtížný lid k vládnutí.\n\nKonfrontována s čím dál agresivnějšími požadavky na autonomii [GetCulture('hungarian').GetName], správa v [ROOT.GetCountry.GetCapital.GetCityHubName] musí rozhodnout, zda vyhoví požadavkům maďarských nacionalistů, nebo je — je-li třeba — utne silou.\n\n#bold Maďarská revoluce#!\nAktivace #Bold $je_springtime_of_the_peoples$#! [concept_journal_entry] pravděpodobně posílí radikální frakce v #b $HUN_ADJ$ sněmu#!, což může vést ke konfliktu s vládou v [ROOT.GetCountry.GetCapital.GetCityHubName]." # todo: NEW TRANSLATION
- modifier_young_hungary_movement: "Hnutí Mladé Maďarsko" # todo: NEW TRANSLATION
- matter_of_hungary_hungarian_homelands_tt: "[SCOPE.sCulture('hungarian_scope').GetName] [Concept('concept_homeland','$concept_homelands$')] v [GetStateRegion('STATE_CENTRAL_HUNGARY').GetName] a [GetStateRegion('STATE_TRANSDANUBIA').GetName] jsou vlastněny [ROOT.GetCountry.GetName] nebo jejími [Concept('concept_subject','$concept_subjects$')]" # todo: NEW TRANSLATION
- matter_of_hungary_ausgleich_tt: "#b $HUN$#! je ustanoveno jako [concept_subject] v [concept_personal_union] s [ROOT.GetCountry.GetName]" # todo: NEW TRANSLATION
- je_matter_of_hungary_neoabsolutist_fail_tt: "Neuspěli jsme #bold ve#! #bold $je_austrian_neo_absolutism$#! [concept_journal_entry]" # todo: NEW TRANSLATION
- je_matter_of_hungary_completion_centralization_tt: "Dokončili jsme #bold $je_austrian_neo_absolutism$#! [concept_journal_entry] a zbavili #bold $HUN$#! jejích tradičních práv a privilegií" # todo: NEW TRANSLATION
- je_matter_of_hungary_completion_autonomy_tt: "Založili jsme #bold Dvojitou monarchii#!" # todo: NEW TRANSLATION
- je_matter_of_hungary_fail_hungary_is_free: "#bold $HUN$#! se osvobodilo od kontroly [ROOT.GetCountry.GetAdjective]" # todo: NEW TRANSLATION
- je_matter_of_hungary_fail_not_at_war_with_hungary: "#bold $HUN$#! #bold není#! v opozici vůči [ROOT.GetCountry.GetName] v [concept_diplomatic_play]" # todo: NEW TRANSLATION
- je_matter_of_hungary_on_fail_lose_control: "Veškerá zbývající území v Maďarsku pod kontrolou [ROOT.GetCountry.GetName] nebo jejích [Concept('concept_subject','$concept_subjects$')] #bold odtrhnou se#!. Nacionalističtí rebelové povstanou v našich negermánských zemích." # todo: NEW TRANSLATION
- hungarian_above_80_acceptance_for_a_while_tt: "Průměrné [concept_acceptance] [GetCulture('hungarian').GetName] v [ROOT.GetCountry.GetNameNoFlag] bylo větší nebo rovno #v 80#! po #b 60 měsíců#! (aktuálně [ROOT.GetCountry.MakeScope.Var('hungarian_acceptance_var').GetValue|v0])" # todo: NEW TRANSLATION
- hungarian_movements_pacified_tt: "Žádné [GetCulture('hungarian').GetName] #v $movement_cultural_minority$#! nemá [Concept('concept_activism','$concept_activism_short$')] $RADICALISM_AGITATING$ (#v 25%#!) nebo více" # todo: NEW TRANSLATION
- je_austrian_neo_absolutism: "Autokracie v době svobody" # todo: NEW TRANSLATION
- je_austrian_neo_absolutism_reason: "#italic „Pilíře bachovského systému spočívají na jeho čtyřech armádách: stálé armádě vojáků, sedící armádě úředníků, klečící armádě kněží a plazivé armádě udavačů.“ #!\n\nHrozba revoluce zdola vyžaduje, aby [ROOT.GetCountry.GetCapital.GetCityHubName] provedla svou vlastní shora. Zavedením centralizovaného, racionálního a efektivního státního aparátu — obsazeného loajálními a schopnými byrokraty — bude země modernizována, aby čelila výzvám současné doby.\n\n[concept_austrian_constitutional_pressure]:\nPokud se odpor proti rakouskému neoabsolutistickému projektu stane příliš silným, bude [ROOT.GetCountry.GetCapital.GetCityHubName] nuceno ustoupit požadavkům na reformu a udělit ústavu omezující pravomoci státu." # todo: NEW TRANSLATION
- je_austrian_neo_absolutism_fail_tt: "[concept_austrian_constitutional_pressure] dosáhl #v 100#!" # todo: NEW TRANSLATION
- je_austrian_neo_absolutism_possible_tt:1 "[ROOT.GetCountry.GetNameNoFlag] nemá #bold žádné#! [concept_crown_land] ani [concept_personal_union] [Concept('concept_subject','$concept_subjects$')]" # todo: NEW TRANSLATION
- austrian_gdp_higher_than_prussia: "[ROOT.GetCountry.GetNameNoFlag] má vyšší [concept_gdp] než #b $PRU$#!" # todo: NEW TRANSLATION
- austrian_gdp_higher_than_germany: "[ROOT.GetCountry.GetNameNoFlag] má vyšší [concept_gdp] než #b $GER$#!" # todo: NEW TRANSLATION
- enforced_wargoal_on_prussia_tt: "[ROOT.GetCountry.GetNameNoFlag] vynutil [concept_war_goal] na #b $PRU$#! zatímco je tento [concept_journal_entry] aktivní" # todo: NEW TRANSLATION
- enforced_wargoal_on_germany_tt: "[ROOT.GetCountry.GetNameNoFlag] vynutil [concept_war_goal] na #b $GER$#! zatímco je tento [concept_journal_entry] aktivní" # todo: NEW TRANSLATION
- austrian_rank_three_or_above_tt: "Naše moc [concept_rank] musí být v rámci top #v 3#!" # todo: NEW TRANSLATION
- modifier_streamline_crown_lands: "Snížená autonomie korunních zemí" # todo: NEW TRANSLATION
- matter_of_hungary_dual_monarchy_button: "Zřídit Dvojitou monarchii" # todo: NEW TRANSLATION
- matter_of_hungary_dual_monarchy_button_desc: "#bold $HUN$#! dlouho usilovalo o rovnocenné postavení v rámci [ROOT.GetCountry.GetAdjective] říše, a pouze jeho udělením můžeme doufat, že uspokojíme maďarské nároky na svobodu.\n\nVe spolupráci s představiteli $HUN_ADJ$ byl vypracován plán udělit #bold $HUN$#! plnou vnitřní autonomii a odpovědné ministerstvo. Výměnou Maďarsko uzná, že říše zůstává jednotným státem pro účely války a zahraničních věcí." # todo: NEW TRANSLATION
- matter_of_hungary_integrate_crown_lands_button: "Integrovat korunní země" # todo: NEW TRANSLATION
- matter_of_hungary_integrate_crown_lands_button_desc: "Úroveň autonomie, kterou si užívají [ROOT.GetCountry.GetAdjective] [Concept('concept_crown_land','$concept_crown_lands$')] jako #b $HUN$#! byla po generace trnem v oku centrální vládě. Spravovány převážně vlastními instituce děděnými z dob habsburské složené monarchie, odolávaly reformním snahám, které nyní charakterizují tak zvané #italic Erblande#!.\n\nPro blaho naší velké říše musí být tyto [Concept('concept_crown_land','$concept_crown_lands$')] plně integrovány do rakouské správy." # todo: NEW TRANSLATION
- matter_of_hungary_integrate_crown_lands_tt: "Všechny [concept_crown_land] [Concept('concept_subject','$concept_subjects$')] mají méně než #v 25#! [concept_liberty_desire]" # todo: NEW TRANSLATION
- matter_of_hungary_defeated_hungary_tt: "Nedávno jsme porazili #bold $HUN$#! v [concept_war]" # todo: NEW TRANSLATION
- austrian_neo_absolutism_constitutional_pressure_progress_bar: "[concept_austrian_constitutional_pressure]" # todo: NEW TRANSLATION
- austrian_neo_absolutism_constitutional_pressure_progress_bar_desc: "[concept_austrian_constitutional_pressure]: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)" # todo: NEW TRANSLATION
- austrian_neo_absolutism_abolish_crown_land_autonomy_button: "Marginalizovat sněmy korunních zemí" # todo: NEW TRANSLATION
- austrian_neo_absolutism_abolish_crown_land_autonomy_button_desc: "Tradičně autonomní #italic Landtage#! představují jednu z největších překážek našich snah vynutit přímou vládu z [ROOT.GetCountry.GetCapital.GetCityHubName]. Musíme jim odejmout zákonodárné pravomoci a redukovat je na ničím nezajištěné administrativní orgány pod přímým císařským dohledem." # todo: NEW TRANSLATION
- modifier_bureaucratisation_of_the_landtage: "Byrokratizace Landtagů" # todo: NEW TRANSLATION
- austrian_neo_absolutism_abolish_feudal_obligations_button: "Zrušit feudální povinnosti" # todo: NEW TRANSLATION
- austrian_neo_absolutism_abolish_feudal_obligations_button_desc: "Patent o nevolnictví z roku 1781 osvobodil rakouské rolníky od vázanosti na půdu, přesto jsou stále povinni vykonávat #italic robotu#! (povinné práce), platit feudální dávky a podléhat vrchnostenské jurisdikci.\n\nZrušení těchto staromódních povinností by sice získalo přízeň reformátorů, ale mohlo by také rozzuřit velkostatkářskou elitu, která by z návrhu ztratila jak bohatství, tak vliv." # todo: NEW TRANSLATION
- modifier_empowered_smallholders: "Posílení velkých sedláků" # todo: NEW TRANSLATION
- modifier_bureaucratisation_of_nobles: "Zvýšená byrokratizace šlechty" # todo: NEW TRANSLATION
- austrian_neo_absolutism_papal_concordat_button: "Přijmout papežskou konkordát" # todo: NEW TRANSLATION
- austrian_neo_absolutism_papal_concordat_button_desc: "Svojí nerozvážnou honbou za reformami josefinisté a liberálové podkopali samotné základy naší velké říše: naší neochvějné víry a loajality k papežskému stolci.\n\nMusíme napravit škody, které způsobili, a dosáhnout dohody s církví, která zajistí její přítomnost na všech úrovních společnosti — od školní lavice až po svátost manželství." # todo: NEW TRANSLATION
- je_austrian_neo_absolutism_completion_economic_tt: "#tooltippable;tooltip:temp Ekonomické reformy#! Dokončeno" # todo: NEW TRANSLATION
- je_austrian_neo_absolutism_completion_bureaucratic_tt: "#tooltippable;tooltip:temp Byrokratické reformy#! Dokončeno" # todo: NEW TRANSLATION
- je_austrian_neo_absolutism_completion_military_tt: "#tooltippable;tooltip:temp Vojenské reformy#! Dokončeno" # todo: NEW TRANSLATION
- je_austrian_neo_absolutism_completion_crown_lands_tt: "Marginalizovali jsme sněmy [concept_crown_land]" # todo: NEW TRANSLATION
- je_austrian_neo_absolutism_completion_papal_concordat_tt: "Přijali jsme #bold papežský konkordát#!" # todo: NEW TRANSLATION
- je_austrian_neo_absolutism_completion_feudal_obligations_tt: "Zrušili jsme #bold feudální povinnosti#!" # todo: NEW TRANSLATION
- je_austrian_neo_absolutism_hungary_subject_tt: "Založili jsme #bold Rakousko‑Uhersko#!" # todo: NEW TRANSLATION
- austrian_neo_absolutism_recently_lost_war: "nedávno prohrál v [concept_war]" # todo: NEW TRANSLATION
- austrian_neo_absolutism_declared_bankruptcy: "vyhlásil [concept_bankruptcy]" # todo: NEW TRANSLATION
- austrian_neo_absolutism_taking_loans: "[concept_loans]" # todo: NEW TRANSLATION
- austrian_neo_absolutism_radicals: "[Concept('concept_state','$concept_states$')] s [Concept('concept_radical','$concept_radicals$')]" # todo: NEW TRANSLATION
- austrian_neo_absolutism_loyalists: "[Concept('concept_state', '$concept_states$')] s [Concept('concept_loyalist','$concept_loyalists$')]" # todo: NEW TRANSLATION
- austrian_neo_absolutism_positive_budget_balance: "kladné rozpočtové saldo" # todo: NEW TRANSLATION
- austrian_neo_absolutism_excess_bureaucracy: "nadbytečná [concept_bureaucracy]" # todo: NEW TRANSLATION
- austrian_neo_absolutism_bureaucracy_deficit: "nedostatek [concept_bureaucracy]" # todo: NEW TRANSLATION
- austrian_neo_absolutism_movement_activism: "[Concept('concept_activism', '$concept_activism_short$')] #tooltippable;tooltip:[GetPlayer.GetTooltipTag],liberal_movements_list_tt Liberální#!, #tooltippable;tooltip:[GetPlayer.GetTooltipTag],socialist_movements_list_tt Socialistický#!, a #b $movement_cultural_minority_short$#! [Concept('concept_political_movement','$concept_political_movements$')]" # todo: NEW TRANSLATION
- austrian_neo_absolutism_interest_groups_opposing: "[concept_clout] [Concept('concept_interest_group','$concept_interest_groups$')] odporujících [GetLawType('law_autocracy').GetName]" # todo: NEW TRANSLATION
- austrian_neo_absolutism_interest_groups_supporting: "[concept_clout] [Concept('concept_interest_group','$concept_interest_groups$')] podporujících [GetLawType('law_autocracy').GetName]" # todo: NEW TRANSLATION
- austrian_neo_absolutism_movement_activism_2: "[Concept('concept_political_movement_support', '$concept_political_movement_support_short$')] #b $movement_royalist_absolutist_short$#!, #b $movement_religious_majority_short$#!, a #b $movement_cultural_majority_short$#! [Concept('concept_political_movement','$concept_political_movements$')]" # todo: NEW TRANSLATION
- modifier_abolished_feudal_obligations: "Zrušené feudální povinnosti" # todo: NEW TRANSLATION
- modifier_robot_compensation_payments: "Vyrovnání za robotu" # todo: NEW TRANSLATION
- modifier_austrian_state_police: "Tajná policie" # todo: NEW TRANSLATION
- modifier_austrian_state_police_upgraded: "Upevněná tajná policie" # todo: NEW TRANSLATION
- austrian_neo_absolutism_constitutional_pressure_progress_bar_decrease_10_tt: "#bold Snižuje#! [concept_austrian_constitutional_pressure] o #g #b 10#! #!" # todo: NEW TRANSLATION
- austrian_neo_absolutism_constitutional_pressure_progress_bar_increase_10_tt: "#bold Zvyšuje#! [concept_austrian_constitutional_pressure] o #r #b 10#! #!" # todo: NEW TRANSLATION
- je_austrian_neo_absolutism_completion_tt: "[Concept('concept_political_movement_support', '$concept_political_movement_support_short$')] pro všechny [Concept('concept_political_movement','$concept_political_movements$')] bude v nadcházejících letech klesat." # todo: NEW TRANSLATION
- austria_events.1.t: "Pravidlo pera a bajonetu" # todo: NEW TRANSLATION
- austria_events.1.d: "S dokončením poslední neoabsolutistické reformy je [ROOT.GetCountry.GetName] připravena vstoupit do nové zlaté éry. Její národy, opouštějící frakční nacionalismus, se místo toho sjednocují pod praporem osvíceného a rozumného vládnutí." # todo: NEW TRANSLATION
- austria_events.1.f: "„Blaho jedince je založeno na blahu celku: ale blaho celku také spočívá na blahobytu jedinců.“\n\n— Joseph von Sonnenfels" # todo: NEW TRANSLATION
- austria_events.1.a: "Sláva! Sláva [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]! Ať žije [ROOT.GetCountry.GetRuler.GetHerHis] osvícená vláda!" # todo: NEW TRANSLATION
- austria_events.1.b: "[ROOT.GetCountry.GetNameNoFlag] přetrvává díky moudrosti a povinnosti jejích oddaných byrokratů." # todo: NEW TRANSLATION
- modifier_everymans_emperor: "Císař všech poddaných" # todo: NEW TRANSLATION
- modifier_everymans_ruler: "Vládce všech poddaných" # todo: NEW TRANSLATION
- modifier_volksbeamter: "Lidoví úředníci" # todo: NEW TRANSLATION
- modifier_viribus_unitis: "Viribus Unitis" # todo: NEW TRANSLATION
- austria_events.2.t: "Žádná ústava, žádné peníze" # todo: NEW TRANSLATION
- austria_events.2.d: "Trpělivost [ROOT.GetCountry.GetAdjective] establishmentu došla. Frustrováni údajnou špatnou správou neoabsolutistické frakce požadují okamžité udělení ústavy." # todo: NEW TRANSLATION
- austria_events.2.f: "Ostré klapání bot znělo chodbami Hofburgu, kde ministři a úředníci jednali s rostoucou naléhavostí. Dveře se rychle otevíraly a zavíraly, a tiše vedené debaty přerůstaly v rozjitřené hádky. Nepořádek vnější administrativní sféry byl dlouho běžným obrazem rakouské správy. Ale vnitřní? To bylo mimo normu. Mimo normu a nebezpečné." # todo: NEW TRANSLATION
- austria_events.2.a: "Splňte jejich požadavky. Stabilita říše je na prvním místě." # todo: NEW TRANSLATION
- austria_events.2.b: "Požadují? Vyhrožujte jim obviněním z velezrady." # todo: NEW TRANSLATION
- modifier_unrest_in_the_ministry_of_finance: "Nepokoje ve finančním ministerstvu" # todo: NEW TRANSLATION
- modifier_disapproving_of_unqualified_autocracy: "Oponující neomezené autokracii" # todo: NEW TRANSLATION
- modifier_autocracy_discredited: "Neoabsolutismus zdiskreditován" # todo: NEW TRANSLATION
- austria_events.3.t: "Krize na Dunaji" # todo: NEW TRANSLATION
- austria_events.3.d: "Nezávislost [SCOPE.sCountry('hungary_scope').GetNameNoFlag] rozpoutala vlnu etnických nepokojů napříč naším národem. Inspirováni událostmi v [SCOPE.sCountry('hungary_scope').GetCapital.GetCityHubName] povstali nacionalisté po celém [ROOT.GetCountry.GetName] proti [ROOT.GetCountry.GetCapital.GetCityHubName]." # todo: NEW TRANSLATION
- austria_events.3.f: "Ze čtyř posádek pod jeho velením si jen jedna uchovala čest a zůstala plně loajální. Ostatní buď utekly jako zbabělci, nebo — což bylo horší — se obrátily v zrádce.\n\nVzpourci. Pso. Podal by je, kdyby měl šanci.\n\n„Herr feldmaršál! Vaše rozkazy?“\n\nSlova ho vytrhla z myšlenek. Ostrý výdech. „Tyto povstání nejsou ničím novým. Říše přežila větší hrozby. Postavte perimetr a přiveďte kurýra, chci rozkazy z [ROOT.GetCountry.GetCapital.GetCityHubName] bez prodlení.“" # todo: NEW TRANSLATION
- austria_events.3.a: "Okraj ztracen, stáhněte se do Erblandů." # todo: NEW TRANSLATION
- austria_events.3.b: "Stáhněte se z Maďarska, ale ani o palec dál." # todo: NEW TRANSLATION
- austria_danube_croat_revolt: "Naši [SCOPE.sCulture('croat_scope').GetName] poddaní povstali a vyhnali naše úředníky ze svých zemí." # todo: NEW TRANSLATION
- austria_danube_serb_revolt: "Naši [SCOPE.sCulture('serb_scope').GetName] poddaní povstali a vyhnali naše úředníky ze svých zemí." # todo: NEW TRANSLATION
- austria_danube_polish_revolt: "Naši [SCOPE.sCulture('polish_scope').GetName] poddaní povstali a vyhnali naše úředníky ze svých zemí." # todo: NEW TRANSLATION
- austria_danube_italian_revolt: "Naši [SCOPE.sCulture('north_italian_scope').GetName] poddaní povstali a vyhnali naše úředníky ze svých zemí." # todo: NEW TRANSLATION
- modifier_broken_eagle: "Zlomený orel" # todo: NEW TRANSLATION
- modifier_overstretched_administration: "Přetížená správa" # todo: NEW TRANSLATION
- austria_events.4.t: "Ausgleich" # todo: NEW TRANSLATION
- austria_events.4.d: "Bylo dosaženo kompromisu. Podle dohody bude [ROOT.GetCountry.GetName] přestavěno na Dvojitou monarchii [ROOT.GetCountry.GetNameNoFlag]-[SCOPE.sCountry('hungary_scope').GetNameNoFlag], rozdělenou na Transleithanskou oblast spravovanou z [SCOPE.sCountry('hungary_scope').GetCapital.GetCityHubName] a Cisleithanskou oblast spravovanou z [ROOT.GetCountry.GetCapital.GetCityHubName]." # todo: NEW TRANSLATION
- austria_events.4.f: "Stojíc mezi svými vrstevníky sledoval hrabě, jak [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstNameNoFormatting], v plném rouchu, vyrazil k umělému korunovačnímu návrší, jehož půda byla dovezena ze všech koutů jeho rodné maďarské země. Přišel z povinnosti, ne z oddanosti, přesto jak [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] vystoupal na vrchol, cítil tíhu okamžiku, kterou nečekal.\n\nKdyž [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] vztyčil meč, jednou se čepelí záhybila do každého světového směru a hlasitě přísahal chránit království a všechny jeho poddané, něco v něm zavibrovalo. Nebyla to loajalita, pomyslel si. Snad respekt." # todo: NEW TRANSLATION
- austria_events.4.a: "Založit Transleithanii." # todo: NEW TRANSLATION
- austria_events.4.b: "Založit Transleithanii v plném svazku s Trojitým královstvím." # todo: NEW TRANSLATION
- austria_events.4.c: "Udržet Trojité království pod přímou [ROOT.GetCountry.GetAdjective] kontrolou." # todo: NEW TRANSLATION
- transleithania_historical_tt: "#bold Transleithania#! je definována jako státní svazek Království Maďarska a Trojitého království [SCOPE.sStateRegion('croatia_state_scope').GetName], [SCOPE.sStateRegion('slavonia_state_scope').GetName] a [SCOPE.sStateRegion('dalmatia_state_scope').GetName], přičemž [SCOPE.sStateRegion('dalmatia_state_scope').GetName] zůstává pod přímou kontrolou [ROOT.GetCountry.GetAdjective]." # todo: NEW TRANSLATION
- transleithania_full_triune_tt: "#bold Transleithania#! je definována jako státní svazek Království Maďarska a Trojitého království [SCOPE.sStateRegion('croatia_state_scope').GetName], [SCOPE.sStateRegion('slavonia_state_scope').GetName] a [SCOPE.sStateRegion('dalmatia_state_scope').GetName] v plném rozsahu." # todo: NEW TRANSLATION
- transleithania_only_hungary_tt: "#bold Transleithania#! je definována jako území samotného Království Maďarska." # todo: NEW TRANSLATION
- modifier_partial_hungarian_triune_union: "Částečný maďarsko‑trojitý svaz" # todo: NEW TRANSLATION
- modifier_hungarian_triune_union: "Maďarsko‑trojitý svaz" # todo: NEW TRANSLATION
- modifier_croatian_debacle: "Přerušení maďarsko‑chorvatských vazeb" # todo: NEW TRANSLATION
- austria_events.5.t: "Relikvie minulých časů" # todo: NEW TRANSLATION
- austria_events.5.d: "S odklonem vlády od neoabsolutistického projektu se jeho bývalí stoupenci ocitají zdiskreditováni v očích národa." # todo: NEW TRANSLATION
- austria_events.5.f: "S procvičenou rukou ministr podepsal dokument. Naposledy? Myšlenka zůstala v hlavě. Vzdychl. Krizí bylo příliš, hnůj příliš zakořeněný. Kdyby měli jen o deset let více, možná o dvacet, pak by se brilance jejich práce ukázala všem.\n\nKdyž předával dokument svému tajemníkovi, jeho prsty zaváhaly, sevření se zpevnilo. Na okamžik se ruka bránila pustit papír.\n\nPak ho pustil." # todo: NEW TRANSLATION
- austria_events.5.a: "Jejich myšlenky možná byly špatné, ale jejich metody měly cenu." # todo: NEW TRANSLATION
- austria_events.5.b: "Nechat je na svých místech v bezpečnostních službách." # todo: NEW TRANSLATION
- austria_events.5.c: "Veřejně se od nich distancovat." # todo: NEW TRANSLATION
- modifier_austrian_state_police_remnant_1: "Dědictví pravidla pera" # todo: NEW TRANSLATION
- modifier_austrian_state_police_remnant_2: "Dědictví pravidla bajonetu" # todo: NEW TRANSLATION
- modifier_opening_up_the_political_sphere: "Otevření politické sféry" # todo: NEW TRANSLATION
- je_austrian_neo_absolutism_status: "Prostřednictvím centralizace, reforem a efektivní byrokracie bude zajištěna budoucnost říše" # todo: NEW TRANSLATION
- je_austrian_neo_absolutism_status_1: "Ústavní tlak je #bold zanedbatelný#!" # todo: NEW TRANSLATION
- je_austrian_neo_absolutism_status_2: "Ústavní tlak je #bold rostoucí#!" # todo: NEW TRANSLATION
- je_austrian_neo_absolutism_status_3: "Ústavní tlak je #bold vysoký#!" # todo: NEW TRANSLATION
- je_austrian_neo_absolutism_status_4: "Ústavní tlak je #bold kritický#!" # todo: NEW TRANSLATION
- decision_found_budapest: "Zákon o sjednocení Budapešti" # todo: NEW TRANSLATION
- decision_found_budapest_desc: "Sjednocením historického maďarského hlavního města Buda s rychle se rozvíjejícím městem Pest vytvoříme jedno prosperující metropolitní centrum překlenuté oběma břehy Dunaje." # todo: NEW TRANSLATION
- decision_found_budapest_tt: "Města #bold Buda#!, #bold Pest#! a #bold Óbuda#! budou sloučena a vytvoří nové město #bold Budapešť#!" # todo: NEW TRANSLATION
- decision_move_capital_to_buda: "Určit Buda za hlavní město" # todo: NEW TRANSLATION
- decision_move_capital_to_buda_desc: "Ač Maďarsko znalo mnoho hlavních měst, žádné nepřevyšuje prestiž a slávu Budy. Musíme tam přemístit maďarský sněm." # todo: NEW TRANSLATION
- modifier_buda_made_capital: "Růst Peštu" # todo: NEW TRANSLATION
- decision_demand_hungary_revoke_laws: "Jednostranně zrušit maďarské reformy" # todo: NEW TRANSLATION
- decision_demand_hungary_revoke_laws_desc: "Z jakéhokoli důvodu naše vláda tehdy ustoupila požadavkům povstaleckého maďarského sněmu. Musíme tu chybu napravit." # todo: NEW TRANSLATION
- decision_demand_hungary_revoke_laws_tt: "Umožnili jsme maďarskému sněmu přijmout revoluční zákony" # todo: NEW TRANSLATION
- je_hungarian_revolution: "Maďarská revoluce" # todo: NEW TRANSLATION
- je_hungarian_revolution_reason: "#italic „Svoboda je zásada; její společenstvím je její bezpečí; výlučnost je její záhubou“#!—Lajos Kossuth\n\nKdyž se [ROOT.GetCountry.GetNameNoFlag] vydávala do nového století, bude se stále více formovat kolem kroužků liberálních, reformně smýšlejících politiků.\n\nI když se neshodují v přesné povaze budoucího vztahu Maďarska k #bold habsburské monarchii#!, spojuje je společná touha po politických a hospodářských reformách; chtějí přeměnit relativní periferii Maďarska v moderní a dynamický národní stát s autonomií nad maďarskými [Concept('concept_homeland','$concept_homelands$')].\n\n#bold Občané pod donucením#!\nJsme‑li v opozici vůči #bold $AUS$#! v [concept_diplomatic_play], mohou utlačované menšiny využít situace a pokusit se #tooltippable #tooltip:hungarian_revolt_ethnic_unrest_tt #bold svrhnout#! maďarské jho.#!#! " # todo: NEW TRANSLATION
- owns_all_hungarian_homelands_tt: "Vlastní #b všechny#! #tooltippable #tooltip:[GetPlayer.GetTooltipTag],hungarian_homeland_states_tt [SCOPE.sCulture('hungarian_culture_scope').GetName] domovské země#!#!" # todo: NEW TRANSLATION
- hungarian_homeland_states_tt: "#title Následující [Concept('concept_state_region','$concept_state_regions$')] jsou [GetCulture('hungarian').GetName] [Concept('concept_homeland','$concept_homelands$')]:#! #indent_newline:3 \n• $STATE_BANAT$\n• $STATE_SLOVAKIA$\n• $STATE_RUTHENIA$\n• $STATE_BEKES$\n• $STATE_TRANSDANUBIA$\n• $STATE_CENTRAL_HUNGARY$\n• $STATE_DELVIDEK$\n• $STATE_NORTHERN_TRANSYLVANIA$\n• $STATE_SOUTHERN_TRANSYLVANIA$#!" # todo: NEW TRANSLATION
- hungarian_revolt_ethnic_unrest_tt: "[GetCulture('serb').GetName], [GetCulture('slovak').GetName] a [GetCulture('romanian').GetName] poddaní se mohou #n vzbouřit#! pokud jsou splněny následující podmínky:\n\n• Průměrné [concept_acceptance] [GetCulture('serb').GetName], [GetCulture('slovak').GetName] nebo [GetCulture('romanian').GetName] je pod #v 60#!\n• Jedna z následujících: #indent_newline:3 \n• [concept_cultural_turmoil] v [GetCulture('serb').GetName], [GetCulture('slovak').GetName] nebo [GetCulture('romanian').GetName] [Concept('concept_homeland','$concept_homelands$')] přesáhne #n 15%#!\n• [concept_political_movement] způsobuje [concept_obstinance] v [GetCulture('serb').GetName], [GetCulture('slovak').GetName] nebo [GetCulture('romanian').GetName] [Concept('concept_homeland','$concept_homelands$')]#!" # todo: NEW TRANSLATION
- has_founded_budapest_tt: "Učinili jsme #bold rozhodnutí#! založit #bold Budapešť#!" # todo: NEW TRANSLATION
- modifier_hungary_timeout: "Země, kterou dějiny minuly" # todo: NEW TRANSLATION
- hungarian_revolution_annex_transylvania_button: "Prohlásit unii s Sedmihradskem" # todo: NEW TRANSLATION
- hungarian_revolution_annex_transylvania_button_desc: "Ač je [SCOPE.sCountry('transylvania_scope').GetName] uznáno jako Země [ROOT.GetCountry.GetAdjective] koruny, je od porážky #bold Rákócziho povstání#! v roce 1711 spravováno odděleně od vlastní Maďarské koruny.\n\nTransylvánský sněm je však stále ovládán prouniečními delegáty z [SCOPE.sCulture('hungarian_culture_scope').GetName] a [SCOPE.sCulture('szekely_culture_scope').GetName] a s lehkým postrčením by se pravděpodobně znovu připojil k říši. [SCOPE.sCountry('austria_scope').GetName] takový krok pravděpodobně neschválí a označí nás za zrádce." # todo: NEW TRANSLATION
- if_trs_accepts_tt: "Pokud [SCOPE.sCountry('transylvania_scope').GetName] přijme náš návrh na Unii [SCOPE.sCountry('transylvania_scope').GetNameNoFormatting] s [ROOT.GetCountry.GetName], bude [SCOPE.sCountry('transylvania_scope').GetNameNoFormatting] #b anektována#!" # todo: NEW TRANSLATION
- hungarian_revolution_twelve_points_button: "Vyhlásit Dvanáct bodů" # todo: NEW TRANSLATION
- hungarian_revolution_twelve_points_button_desc: "Dlouho rozděleni mezi radikály a opatrnějšími reformátory se [ROOT.GetCountry.GetAdjective] progresivci nyní sjednotili za společným programem Dvanácti bodů, řadou dalekosáhlých zákonů zamýšlených zajistit zemi svobodu navěky." # todo: NEW TRANSLATION
- hungarian_revolution_twelve_points_tt: "Takový radikální krok pravděpodobně způsobí #bold vážné roztržení#! v našich vztazích s [SCOPE.sCountry('austria_scope').GetName], #n které by mohlo vést k válce#!" # todo: NEW TRANSLATION
- hungarian_revolution_austrian_ruler: "Následující podmínky sníží šanci, že [SCOPE.sCountry('austria_scope').GetName] bude naše kroky odmítat:#indent_newline:3 \n• [SCOPE.sCountry('austria_scope').GetAdjective] [concept_ruler] má [GetCharacterTrait('compliant').GetName] [concept_character_trait]\n• [SCOPE.sCountry('austria_scope').GetName] se aktivně účastní jakéhokoli [concept_diplomatic_play]#!" # todo: NEW TRANSLATION
- modifier_the_spirit_of_48: "Společný pokrokový front" # todo: NEW TRANSLATION
- possible_effects_hungary_events.9_tt: "#header Následující jsou všechny #b možné#! efekty události vyplývající z rozhodnutí [SCOPE.sCountry('austria_scope').GetName] v $hungary_events.9.t$:#!" # todo: NEW TRANSLATION
- possible_hun_lawgroup_distribution_of_power_change_tt: "[ROOT.GetCountry.GetName] povoluje zákon [GetLawType('law_census_voting').GetName] v [GetLawGroup('lawgroup_distribution_of_power').GetName]" # todo: NEW TRANSLATION
- possible_hun_lawgroup_free_speech_change_tt: "[ROOT.GetCountry.GetName] povoluje zákon [GetLawType('law_protected_speech').GetName] v [GetLawGroup('lawgroup_free_speech').GetName]" # todo: NEW TRANSLATION
- possible_hun_lawgroup_land_reform_change_tt: "[ROOT.GetCountry.GetName] povoluje zákon [GetLawType('law_tenant_farmers').GetName] v [GetLawGroup('lawgroup_land_reform').GetName]" # todo: NEW TRANSLATION
- possible_hun_lawgroup_church_and_state_change_tt: "[ROOT.GetCountry.GetName] povoluje zákon [GetLawType('law_freedom_of_conscience').GetName] v [GetLawGroup('lawgroup_church_and_state').GetName]" # todo: NEW TRANSLATION
- possible_hun_lawgroup_internal_security_change_tt: "[ROOT.GetCountry.GetName] povoluje zákon [GetLawType('law_national_guard').GetName] v [GetLawGroup('lawgroup_internal_security').GetName]" # todo: NEW TRANSLATION
- possible_hun_lawgroup_taxation_change_tt: "[ROOT.GetCountry.GetName] povoluje zákon [GetLawType('law_per_capita_based_taxation').GetName] v [GetLawGroup('lawgroup_taxation').GetName]" # todo: NEW TRANSLATION
- possible_hun_lawgroup_economic_system_change_tt: "[ROOT.GetCountry.GetName] povoluje zákon [GetLawType('law_interventionism').GetName] v [GetLawGroup('lawgroup_economic_system').GetName]" # todo: NEW TRANSLATION
- hungarian_revolution_establish_honved_button: "Zřídit Honvédskou armádu" # todo: NEW TRANSLATION
- hungarian_revolution_establish_honved_button_desc: "Dlouho bylo [ROOT.GetCountry.GetName] odepíráno právo uplatňovat vojenskou autoritu nad vlastními rekruty; nyní je však schopno i nuceno zformovat armádu, která bude odpovídat [ROOT.GetCountry.GetCapital.GetCityHubName], a ne #italic Hofkriegsrat#! ve Vídni.\n\nTradiční uherské pluky jsou však příliš omezené počtem, aby samy tuto roli splnily. Musíme zahájit rozsáhlou přestavbu a nábor, abychom znovu nahnali strach do srdcí našich nepřátel." # todo: NEW TRANSLATION
- possible_effects_hungary_events.7_tt: "#header Následující jsou všechny #b možné#! efekty události z $hungary_events.7.t$:#!" # todo: NEW TRANSLATION
- dp_hungarian_revolution: "Uherská revoluce" # todo: NEW TRANSLATION
- hungary_events.1.t: "Perla Dunaje" # todo: NEW TRANSLATION
- hungary_events.1.d: "Po formálním spojení Budy, Pešti a Óbudy v jedno zažívá nové velkoměsto Budapešť nebývalý rozmach v dějinách [ROOT.GetCountry.GetName], s kapitálem a know‑how proudícím do města." # todo: NEW TRANSLATION
- hungary_events.1.f: ""Hlavní město bude mocné jen tehdy, má‑li vládnoucí moc; bude v životě prosperovat, bude‑li jím řídit jedna duše, jedna vůle ve svých snahách, bude šťastné, jen pokud se oddělené zájmy slijí ve společný zájem."\n—Bertalan Szemere" # todo: NEW TRANSLATION
- hungary_events.1.a: "Panónie je naším obilným košem, Budapešť jeho bijícím srdcem." # todo: NEW TRANSLATION
- hungary_events.1.b: "Borúra derű, ať Budapešť vede cestu našeho národa." # todo: NEW TRANSLATION
- modifier_budapest_steam_mills: "Rozmach parních mlýnů v Budapešti" # todo: NEW TRANSLATION
- modifier_budapest_paris_of_the_east: "Paříž Východu" # todo: NEW TRANSLATION
- modifier_budapest_chain_bridge: "Széchenyiho řetězový most" # todo: NEW TRANSLATION
- modifier_budapest_grain_barons: "Posílení obilních baronů" # todo: NEW TRANSLATION
- modifier_budapest_academy: "Sponzorování Akademie věd" # todo: NEW TRANSLATION
- hungary_events.2.t: "Srbské povstání" # todo: NEW TRANSLATION
- hungary_events.2.d: "Po shromáždění v Sremski Karlovci se zástupci [GetCulture('serb').GetName] v [SCOPE.sCountry('hungary_country_scope').GetName] vzbouřili s úmyslem vytvořit srbské panství severně od řeky Savy." # todo: NEW TRANSLATION
- hungary_events.2.f: ""Rozptýleni do sta směrů — na sto stran mohl nad námi vládnout kdokoli, zatímco my jsme nedokázali vládnout sami sobě, jako bychom nikdy nevládli svému osudu!\"\n—Nikanor Grujić" # todo: NEW TRANSLATION
- hungary_events.2.a: "Zmobilizujte armádu a porazte tyto vídeňské poskoky." # todo: NEW TRANSLATION
- hungary_events.2.b: "Za ctěný kříž a Zlatou svobodu!" # todo: NEW TRANSLATION
- hungary_events.2.c: "Uznat [SCOPE.sCountry('banat_country_scope').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('banat_country_scope').GetRuler.GetLastName] jako našeho místního guvernéra." # todo: NEW TRANSLATION
- hungary_events.2.e: "Srbům nelze věřit. Zničte je také." # todo: NEW TRANSLATION
- modifier_serbian_volunteers: "Srbští dobrovolníci" # todo: NEW TRANSLATION
- hungary_events.3.t: "Slovenské povstání" # todo: NEW TRANSLATION
- hungary_events.3.d: "Ze svého shromáždění v Myjavě Národní výbor [GetCulture('slovak').GetName] vyhlásil záměr oddělit se od [SCOPE.sCountry('hungary_country_scope').GetName] a vyhlásil všeobecné slovenské povstání." # todo: NEW TRANSLATION
- hungary_events.3.f: ""Dlouho jsme sloužili jako hračka ďábelské politiky, která nás úmyslně rozdělila a neustále mezi námi pobouřovala konflikty, aby jsme padli vlastní vinou... Dozráli jsme, poznali jsme svá práva a chceme je statečně bránit.\"\n—Ľudovít Štúr" # todo: NEW TRANSLATION
- hungary_events.3.a: "Naše armáda si s těmito zrádci rychle poradí." # todo: NEW TRANSLATION
- hungary_events.3.b: "Sláva! Šetkým Slovakom!" # todo: NEW TRANSLATION
- hungary_events.3.c: "Slibte Slovákom autonomii za věrnost." # todo: NEW TRANSLATION
- hungary_events.3.e: "Povstání musí být udušeno." # todo: NEW TRANSLATION
- modifier_slovak_volunteers: "Slovenskí dobrovolníci" # todo: NEW TRANSLATION
- hungary_events.4.t: "Uhry volají po unii" # todo: NEW TRANSLATION
- hungary_events.4.d: "Odvážným krokem prohlásil [SCOPE.sCountry('hungary_country_scope').GetAdjective] sněm Unii [ROOT.GetCountry.GetName] s Uhry. Schválení sněmu v [ROOT.GetCountry.GetCapital.GetCityHubName] je však třeba, aby unie nabyla účinnosti, což přimělo prounijní delegáty [GetCulture('hungarian').GetName] a [GetCulture('szekely').GetName] spěchat zajistit potřebné hlasy." # todo: NEW TRANSLATION
- hungary_events.4.f: "Kdyby Bůh chtěl, aby dnes pracoval, neposlal by mu takový rozruch, pomyslel si Ioan. Znovu vzhlédl od účetní knihy, vzal dýmku, potáhl a zadíval se z okna.\n\nPřed palácem Reduta se dav ještě zvětšil. Složený hlavně z místních Szeklerů a Maďarů, někteří, které Ioan poznal, jejich výkřiky 'Unie nebo smrt!' se nesly ulicemi.\n\nŠpatné pro obchod, pomyslel si. Špatné #italic pro#! obchod taky. Jeho vznětlivý syn, spolu se dvěma učni, už opustili město kvůli jakési 'národní schůzi' v Blaji. Ne, pomyslel si Ioan a žvýkal dýmku, toto rozhodně neskončí dobře." # todo: NEW TRANSLATION
- hungary_events.4.a: "Igen. Sněm hlasuje pro sjednocení." # todo: NEW TRANSLATION
- hungary_events.4.b: "Nem. Návrh je v těsném hlasování zamítnut." # todo: NEW TRANSLATION
- hungary_events.5.t: "Transylvánie schvaluje unii s Uhry" # todo: NEW TRANSLATION
- hungary_events.5.d: "Po hlasování v regionálním maďarsky-dominovaném sněmu se Sedmihradsko rozhodlo připojit se k [SCOPE.sCountry('hungary_country_scope').GetName] v unii." # todo: NEW TRANSLATION
- hungary_events.5.f: "'Unie nebo smrt' vyhlásili týden předtím. Sebevražda hlasováním, pomyslel si; měli raději křičet 'Unie #italic a#! smrt' místo toho. Bylo to spravedlivé? Možná. Bylo to legální? Sporně. Bylo to rozumné? Rozhodně ne.\n\nPodle jeho štěstí nyní na něj a jeho koutek světa spadne hněv jak [SCOPE.sCountry('hungary_country_scope').GetCapital.GetCityHubName], tak Vídně, a nemohl nic udělat, aby tomu zabránil." # todo: NEW TRANSLATION
- hungary_events.5.a: "Sedmihradsko je neoddělitelnou součástí uherské koruny." # todo: NEW TRANSLATION
- hungary_events.5.b: "Prozatím umožnit zachování místních privilegií." # todo: NEW TRANSLATION
- hungary_events.5.c: "Dobře. Přijmout rozhodnutí sněmu." # todo: NEW TRANSLATION
- hungary_events.5.e: "Překročili meze! Požadovat okamžité stažení ze Sedmihradska." # todo: NEW TRANSLATION
- modifier_allowed_transylvanian_autonomy: "Povolená sedmihradská autonomie" # todo: NEW TRANSLATION
- modifier_not_allowed_transylvanian_autonomy: "Zakázaná sedmihradská autonomie" # todo: NEW TRANSLATION
- transylvanian_diet_abolished: "Tímto aktem se #bold Sedmihradský sněm#! de facto #bold zrušuje#!" # todo: NEW TRANSLATION
- transylvanian_diet_retained: "Tímto aktem je samostatný #bold Sedmihradský sněm#! nyní #bold zachován#!" # todo: NEW TRANSLATION
- hungary_likely_lead_to_war_tt: "Takové požadavky budou v [SCOPE.sCountry('hungary_country_scope').GetName] přijaty s pobouřením a jejich vystavení pravděpodobně povede k #n válce#!" # todo: NEW TRANSLATION
- modifier_transylvanian_bands: "Loajální grenzérské pluky" # todo: NEW TRANSLATION
- hungarian_revolution: "Uherská revoluce" # todo: NEW TRANSLATION
- je_hungarian_revolution_backed_down_fail: "Byli jsme #bold $AUS$#! donuceni ustoupit od našich reforem" # todo: NEW TRANSLATION
- modifier_revolutionary_fervor: "Revoluční zápal" # todo: NEW TRANSLATION
- hungary_events.6.t: "Rakouské ultimátum" # todo: NEW TRANSLATION
- hungary_events.6.d: "Hrozíc vojenskou akcí, vláda v [SCOPE.sCountry('austria_country_scope').GetCapital.GetCityHubName] protiprávně a jednostranně zrušila naše nedávné reformy a nyní požaduje, abychom se vrátili do řady." # todo: NEW TRANSLATION
- hungary_events.6.f: "Když přednesl poselství z [SCOPE.sCountry('austria_country_scope').GetCapital.GetCityHubName], rakouský vyslanec zaťukal patami a uklonil se shromážděným uherským hodnostářům.\n\nPožadavky byly jasné: čas na vyjednávání pominul. Buď uherský sněm reformu zruší, nebo to za něj udělá rakouská armáda." # todo: NEW TRANSLATION
- hungary_events.6.a: "To je poslední kapka. Maďaři, k zbraním!" # todo: NEW TRANSLATION
- hungary_events.6.b: "Nemáme jinou možnost než přijmout." # todo: NEW TRANSLATION
- austrian_ultimatium_tt: "Přijetím jejich ultimáta se zruší všechny naše reformy, a #bold $je_hungarian_revolution$#! [concept_journal_entry] #n selže#!" # todo: NEW TRANSLATION
- modifier_humiliated_by_austria: "Ponížení Rakouskem" # todo: NEW TRANSLATION
- hungary_events.7.t: "Vstaň, Maďare!" # todo: NEW TRANSLATION
- hungary_events.7.d: "Zazní trubka napříč [ROOT.GetCountry.GetAdjective] územím a tisíce dobrovolníků se hrnou do nově zřízených náborových úřadů. Jak se plní seznamy pluků, nově povýšení generálové mezi sebou svádějí spory o to, jak je nejlépe využít." # todo: NEW TRANSLATION
- hungary_events.7.f: ""Kde leží naše hroby,\nPoklekají naši vnuci,\nA s požehnáním v modlitbě\nBudou vyslovovat naše posvěcená jména.\nPři Bohu Maďarů\nSlibujeme,\nSlibujeme, že už nebudeme otroky!\n\n— Sándor Petőfi, #italic Nemzeti dal#!"" # todo: NEW TRANSLATION
- hungary_events.7.a: "Bojujeme za vlast, tam prolijeme svou krev." # todo: NEW TRANSLATION
- hungary_events.7.b: "Kdo se odváží, zvítězí. Musíme přenést boj k nepříteli." # todo: NEW TRANSLATION
- every_state_with_enlistment_decree_get_modifier: "Každý [ROOT.GetCountry.GetAdjective] [concept_state] s [GetDecreeType('decree_enlistment_efforts').GetName] [concept_decree] #b aktivním#! získá #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_mustering_the_honved_tt $modifier_mustering_the_honved$#! na #v [GetPlayer.MakeScope.ScriptValue('display_normal_modifier_time')]#! let" # todo: NEW TRANSLATION
- modifier_mustering_the_honved_tt: "[GetStaticModifier('modifier_mustering_the_honved').GetName|v]\n[GetStaticModifier('modifier_mustering_the_honved').GetDesc]" # todo: NEW TRANSLATION
- modifier_mustering_the_honved: "Mobilizace Honvédů" # todo: NEW TRANSLATION
- modifier_defenders_of_the_homeland: "Obránci vlasti" # todo: NEW TRANSLATION
- modifier_honved_mobilization_programme: "Program mobilizace Honvédů" # todo: NEW TRANSLATION
- modifier_autumn_campaign: "Vpřed, Honvédové!" # todo: NEW TRANSLATION
- hungary_events.8.t: "Sedmihradské povstání" # todo: NEW TRANSLATION
- hungary_events.8.d: "Hluboce nespokojeni s unifikací Sedmihradska a [SCOPE.sCountry('hungary_country_scope').GetName] se tisíce předáků a prostých [GetCulture('romanian').GetName] shromáždily v Blaji a vyhlásily, že vezmou do rukou zbraně proti [SCOPE.sCountry('hungary_country_scope').GetCapital.GetCityHubName]." # todo: NEW TRANSLATION
- hungary_events.8.f: "Mihai vytáhl z kabátu malé polní kukátko a upravil čočku. Ze svého místa na Kopci vinic viděl obrovské zástupy mužů, kteří se shromáždili v a kolem města. Tisíce alespoň, a pokud byl jejich oděv jakoukoli nápovědou, pocházeli z celého Sedmihradska a dál.\n\nZvuk prasklé větvičky přerušil jeho pozorování. Kroky? Když se ohlédl, neviděl žádné z #italic moți#! rváčů, kteří mu ten den dělali potíže. Ti parchanti by nedokázali připravit přepad ani kulhavé prasnici, pomyslel si, právě když kyj dopadl a rozprášil mu lebku." # todo: NEW TRANSLATION
- hungary_events.8.a: "Zatraceni ti zrádci. Vyslat armádu." # todo: NEW TRANSLATION
- hungary_events.8.b: "Libertate sau Moarte!" # todo: NEW TRANSLATION
- hungary_events.8.c: "Potvrdit Sedmihradsko jako autonomní korunové území." # todo: NEW TRANSLATION
- hungary_events.8.e: "Nenecháme se donutit houfem povýšených nevolníků." # todo: NEW TRANSLATION
- modifier_auraria_gemina_legion: "Legie Auraria Gemina" # todo: NEW TRANSLATION
- transylvanian_massacres_tt: "Jak se #bold řád rozpadá#!, zprávy o #n masakrech#! páchaných potulnými skupinami rolníků a vojáků se šíří po #bold Sedmihradsku#!" # todo: NEW TRANSLATION
- hungary_events.9.t: "Uherské jaro" # todo: NEW TRANSLATION
- hungary_events.9.d: "V šokujícím kroku prosazoval sněm ovládaný progresivci v [SCOPE.sCountry('hungary_country_scope').GetName] řadu zákonů, jejichž radikální povaha hrozí podkopat naši vládu nad národem." # todo: NEW TRANSLATION
- hungary_events.9.f: "Detaily zpráv z [SCOPE.sCountry('hungary_country_scope').GetCapital.GetCityHubName] se lišily stejně jako reakce těch, kteří je přijali. Velký skok směrem k liberální budoucnosti, nebo klopýtnutí do chaosu a anarchie? Akt vzpoury, nebo inspirace pro zbytek říše? Výzva k odporu, nebo zbabělý zrada v zádech?\n\nSám nevěděl, ale obával se, že reakce z Hofburgu nebude nic přátelského." # todo: NEW TRANSLATION
- hungary_events.9.a: "Máme naléhavější problémy k řešení." # todo: NEW TRANSLATION
- hungary_events.9.b: "Prohlásit zákony za nelegální a požadovat jejich okamžité zrušení." # todo: NEW TRANSLATION
- hungary_events.11.t: "Záležitost Uherska" # todo: NEW TRANSLATION
- hungary_events.11.d: "S nástupem [ROOT.GetCountry.GetRuler.GetFullName] jako [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetName] byla zpochybněna vnímaná laxnost jeho předchůdce vůči [SCOPE.sCountry('hungary_country_scope').GetName]. Mnozí nyní vyzývají nového [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle], aby zrušil nedávné zákony přijaté uherským sněmem." # todo: NEW TRANSLATION
- hungary_events.11.f: "Je opravdu schválení dané pod nátlakem vůbec schválením? Je panovník vázán pošetilými sliby svého předchůdce? Je vázán zákony přijatými bez řádné císařské autority?\n\nV očích [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstNameNoFormatting] to vůbec nebyly skutečné záhady. Jedinou otázkou bylo: jak daleko je ochoten zajít, aby uskutečnil svou vizi?" # todo: NEW TRANSLATION
- hungary_events.11.a: "Zrušit zákony a formálně zrušit uherský sněm." # todo: NEW TRANSLATION
- hungary_events.11.b: "Neriskujme to." # todo: NEW TRANSLATION
- hungary_events.12.t: "Země zemí" # todo: NEW TRANSLATION
- hungary_events.12.d: "Revoluce [ROOT.GetCountry.GetAdjective] byla ohromným úspěchem, dopad jejích ekonomických a politických reforem je cítit po celé zemi." # todo: NEW TRANSLATION
- hungary_events.12.f: "Zde vlála krví posetá vlajka svobody nad maďarskou hlavou;\na zde v mnohaletých zápasech padli\nnaši nejlepší a nejvznešenější, mrtví.\n\nNavzdory dlouhým útrapám\na staletím bojů,\nnaše síla, byť oslabena, není vyčerpána;\nnaše země stále žije.\n\n— #italic Szózat#!, Mihály Vörösmarty" # todo: NEW TRANSLATION
- hungary_events.12.a: "Ať žije maďarská svoboda!" # todo: NEW TRANSLATION
- hungary_events.12.b: "Ať žije vlast!" # todo: NEW TRANSLATION
- increased_chance_of_liberal_leaders_tt: "Všechny [Concept('concept_interest_group', '$concept_interest_groups$')] budou mít vyšší šanci vytvořit liberální a radikální [Concept('concept_leader', '$concept_leaders$')]." # todo: NEW TRANSLATION
- modifier_efficient_magyarization: "Komplexní maďarizace" # todo: NEW TRANSLATION
- modifier_hungarian_radicalism: "Země svobody" # todo: NEW TRANSLATION
- modifier_a_liberal_century: "Revoluce potvrzena" # todo: NEW TRANSLATION
- hungary_events.13.t: "Koruna sv. Štěpána" # todo: NEW TRANSLATION
- hungary_events.13.d: "S konečným zajištěním [ROOT.GetCountry.GetAdjective] nezávislosti a s koncem období prozatímní vlády pod [ROOT.GetCountry.GetRuler.GetFullName] nastal čas, aby sněm definitivně rozhodl o postavení monarchie." # todo: NEW TRANSLATION
- hungary_events.13.f: "Co se stane s prázdným Trůnem svatého Štěpána? Debata probíhala celý odpoledne a rada sotva učinila krok kupředu. Pragmatičtí monarchisté, horliví republikáni a všemožní Franco-, Anglo- a Rusofilové se několik dní ostře střetávali v novinových článcích, hádkách a v nejméně jednom případě i osobně.\n\nAle jak pragmatický rozum postupně otupuje pevné přesvědčení, jednou silné dělící linie se zamazávají a vznikají nová spojenectví. A na konci posledního projednávání bylo učiněno rozhodnutí." # todo: NEW TRANSLATION
- hungary_events.13.a: "Habsburkové už ne. Uhry budou [GetLawType('law_presidential_republic').GetName]." # todo: NEW TRANSLATION
- hungary_events.13.b: "Uherský šlechtic usedne na trůn." # todo: NEW TRANSLATION
- hungary_events.13.c: "Pozvat [SCOPE.sCountry('russia_scope').GetAdjective] [SCOPE.sCountry('russia_scope').GetRuler.GetLastNameNoFormatting] do [ROOT.GetCountry.GetCapital.GetCityHubName]." # todo: NEW TRANSLATION
- hungary_events.13.e: "Dobré vztahy s [SCOPE.sCountry('britain_scope').GetName] jsou nejdůležitější." # todo: NEW TRANSLATION
- hungary_events.13.g: "Na trůn usedne [SCOPE.sCountry('france_scope').GetAdjective] princ." # todo: NEW TRANSLATION
- restored_the_throne_of_st_stephen: "Obnoven trůn sv. Štěpána" # todo: NEW TRANSLATION
- established_the_hungarian_republic: "Kossuthova revoluce" # todo: NEW TRANSLATION
- restored_the_throne_of_st_stephen_negative: "Zradil Kossuthovu vizi" # todo: NEW TRANSLATION
- established_the_hungarian_republic_negative: "Monarchistický nesouhlas" # todo: NEW TRANSLATION
- notification_hungarian_king_elected_from_our_country_name: "[SCOPE.sCountry('hungary_scope').GetName] zvolí [ROOT.GetCountry.GetAdjective] [SCOPE.sCountry('hungary_scope').GetPrimaryRoleTitle]" # todo: NEW TRANSLATION
- notification_hungarian_king_elected_from_our_country_desc: "V nedávném hlasování [SCOPE.sCountry('hungary_scope').GetAdjective] sněm zvolil [ROOT.GetCountry.GetAdjective] prince jako [SCOPE.sCountry('hungary_scope').GetPrimaryRoleTitle], který nyní bude vládnout zemi jako [SCOPE.sCountry('hungary_scope').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('hungary_scope').GetRuler.GetFullName]" # todo: NEW TRANSLATION
- notification_hungarian_king_elected_from_our_country_tooltip: "#header $notification_hungarian_king_elected_from_our_country_name$#!\n$TOOLTIP_DELIMITER$\n$notification_hungarian_king_elected_from_our_country_desc$" # todo: NEW TRANSLATION
- je_grunderzeit: "Gründerzeit" # todo: NEW TRANSLATION
- je_grunderzeit_reason: "Na #bold německých zemích#! se zmocnilo #bold investiční šílenství#!, kapitál s horečnou intenzitou proudí do železnic, továren a bank — hnán bezbřehým optimismem, spekulativními ambicemi a slibem #bold nové průmyslové éry#!.\n\nNěmecké [Concept('concept_gdp', '$concept_gdp_short$')], poslední čtvrtletní výsledek: @gdp!#variable [GetGlobalVariable('grunderzeit_combined_gdp_global_var_baseline').GetValue|K]#!\nNěmecké [Concept('concept_gdp', '$concept_gdp_short$')], aktuálně: @gdp!#variable [GetPlayer.MakeScope.ScriptValue('grunderzeit_actual_gdp_script_value')|K]#!\nNěmecké [Concept('concept_gdp', '$concept_gdp_short$')], čtvrtletní cíl: @gdp!#variable [GetGlobalVariable('grunderzeit_combined_gdp_global_var_goal').GetValue|K]#!\n\n#bold Tempo doby zakládání#!\nThe #bold $je_grunderzeit$#! [concept_journal_entry] je organizován do #bold finančních čtvrtletí#!. Každé #v 3#! měsíce musí kombinované [Concept('concept_gdp', '$concept_gdp_short$')] všech #bold německých#! [Concept('concept_country', '$concept_countries$')] v #bold Evropě#! vzrůstat alespoň o #v 2.5#! procent. Pokud se to nepodaří, #n se vyčerpá#! #bold ukazatel postupu#! o #v 1#!, pokud se podaří, #g se zvýší#! o #v 1#! místo toho. Dosáhne‑li ukazatel hodnoty #v 0#!, vyústí to v #n finanční krach#!." # todo: NEW TRANSLATION
- je_grunderzeit_fail_tt: "Ukazatel #bold postupu#! dosáhl #v 0#!" # todo: NEW TRANSLATION
- grunderzeit_possible_tt: "#v 75%#! nebo více všech #bold německých#! [Concept('concept_country', '$concept_countries$')] v #bold Evropě#! prozkoumalo [GetTechnology('mutual_funds').GetName] a má alespoň jednu úroveň [GetBuildingType('building_railway').GetName] (aktuálně [GetGlobalVariable('grunderzeit_countries_percent').GetValue|v%0])" # todo: NEW TRANSLATION
- grunderzeit_progress_bar: "Gründerzeit" # todo: NEW TRANSLATION
- grunderzeit_progress_bar_desc: "Nedávné cíle [Concept('concept_gdp', '$concept_gdp_short$')] splněny: #v [JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|0]/4#!" # todo: NEW TRANSLATION
- grunderzeit.1.t: "Gründerkrach" # todo: NEW TRANSLATION
- grunderzeit.1.d: "Roky optimismu a ekonomického růstu prudce skončily, s krvavě červenými čísly hlášenými na německých burzách, když banky a spekulativní společnosti padaly jako domino." # todo: NEW TRANSLATION
- grunderzeit.1.f: "#bold Bankovní panika v [ROOT.GetCountry.GetCapital.GetCityHubName]#!\nOznámení o likvidaci řady prominentních společností spustilo lavinu, která smetla nejen drobné investory, ale i známé finančníky. Po celý den kurýři jezdili mezi davem a obchodníci byli viděni, jak pálí bezcenné akciové poukázky." # todo: NEW TRANSLATION
- grunderzeit.1.a: "Na vině jsou spekulanti a nekontrolovaný ekonomický liberalismus." # todo: NEW TRANSLATION
- grunderzeit.1.b: "Je to dílo predátorských agentů mezi námi." # todo: NEW TRANSLATION
- modifier_grunderkrach_blame_minorities: "Finanční konspirační teorie" # todo: NEW TRANSLATION
- modifier_grunderkrach_blame_free_trade: "Volný obchod diskreditován" # todo: NEW TRANSLATION
- modifier_grunderkrach_blame_minorities_ig_boost: "Šíření antisemitské literatury" # todo: NEW TRANSLATION
- modifier_grunderkrach: "Gründerkrise" # todo: NEW TRANSLATION
- modifier_grunderkrach_blame_minorities_half_dummy: "$modifier_grunderkrach_blame_minorities$" # todo: NEW TRANSLATION
- modifier_grunderkrach_blame_free_trade_half_dummy: "$modifier_grunderkrach_blame_free_trade$" # todo: NEW TRANSLATION
- modifier_grunderkrach_blame_minorities_ig_boost_half_dummy: "$modifier_grunderkrach_blame_minorities_ig_boost$" # todo: NEW TRANSLATION
- modifier_grunderkrach_half_dummy: "$modifier_grunderkrach$" # todo: NEW TRANSLATION
- grunderzeit.2.t: "Třicet let pokroku" # todo: NEW TRANSLATION
- grunderzeit.2.d: "Po desetiletích ekonomické prosperity se intenzivní hnací síla a aktivita, které je charakterizovaly, poněkud utišily. Tyto roky vstoupí do [ROOT.GetCountry.GetAdjective] historie jako některé z jejích nejslavnějších." # todo: NEW TRANSLATION
- grunderzeit.2.f: "\"A nazvali to bublina, pah! Bublina!? Jen #italic blázen#! by investoval majetek své drahé do něčeho takového, a řeknu ti jednu věc, #italic liebchen#!, já nejsem blázen.\"" # todo: NEW TRANSLATION
- grunderzeit.2.a: "Tři jásoty na nezdolného podnikatelského ducha člověka!" # todo: NEW TRANSLATION
- grunderzeit.2.b: "Ať jsou tyto dekády jen první z mnoha." # todo: NEW TRANSLATION
- modifier_grunderyears_success: "Duch slavného třicetiletí" # todo: NEW TRANSLATION
- modifier_grunderyears_success_2: "Lesk slavného třicetiletí" # todo: NEW TRANSLATION
- modifier_grunderyears_success_half_dummy: "$modifier_grunderyears_success$" # todo: NEW TRANSLATION
- modifier_grunderyears_success_2_half_dummy: "$modifier_grunderyears_success_2$" # todo: NEW TRANSLATION
- grunderzeit.3.t: "Věk podnikatelů" # todo: NEW TRANSLATION
- grunderzeit.3.d: "Podpořené inovacemi ve finančním právu a šířením železnice, německé země bzučí aktivitou, nové společnosti a podnikatelské projekty vyrůstají jako houby po dešti." # todo: NEW TRANSLATION
- grunderzeit.3.f: "Dělník znovu práskl bičem a hnál vyčerpaný vozíkový tým vpřed. Dnes udělali slušný pokrok — většina písku byla odnesena ze staveniště. Ale slušný není dost. A ani dobré sotva stačí.\n\nBič práskl znovu.\n\nDozorce pocítil výčitku vůči těm chudým tvorečkům, ale rychle myšlenku odhrnul. Milosrdenství tento areál z továrnu nepromění. Rozhodnost ano." # todo: NEW TRANSLATION
- grunderzeit.3.a: "Kupuj! Investuj! Rozšiřuj se!" # todo: NEW TRANSLATION
- grunderzeit.3.b: "Nenechme se příliš unášet." # todo: NEW TRANSLATION
- modifier_grunderzeit_boom: "Tempo doby zakládání" # todo: NEW TRANSLATION
- grunderzeit_participant_high: "Bonusy #bold $je_grunderzeit$#! [concept_journal_entry] budou #g silnější#!, ale stejně tak bude jakýkoli následný #n krach#!" # todo: NEW TRANSLATION
- grunderzeit_participant_low: "Bonusy #bold $je_grunderzeit$#! [concept_journal_entry] budou #n slabší#!, ale stejně tak bude jakýkoli následný #n krach#! slabší" # todo: NEW TRANSLATION
- grunderzeit_bonus_last_tt: "Následující [concept_modifier] bude aktivní po dobu trvání #bold $je_grunderzeit$#! [concept_journal_entry]" # todo: NEW TRANSLATION
- grunderzeit_expectations_tt: "@warning! Aby byla udržena důvěra investorů, musí kombinované [Concept('concept_gdp', '$concept_gdp_short$')] všech #bold německých#! [Concept('concept_country', '$concept_countries$')] růst o #v 2.5%#! [Concept('concept_gdp', '$concept_gdp_short$')] za čtvrtletí" # todo: NEW TRANSLATION
- grunderzeit_status_desc_default_key: "Německý ekonomický zázrak je teprve na obzoru." # todo: NEW TRANSLATION
- grunderzeit_status_desc_key_1:1 "Ekonomika je #n v úpadku#!" # todo: NEW TRANSLATION
- grunderzeit_status_desc_key_2: "Ekonomika #n stagnuje#!" # todo: NEW TRANSLATION
- grunderzeit_status_desc_key_3: "Ekonomika #g prosperuje#!" # todo: NEW TRANSLATION
- grunderzeit_status_desc_key_4: "Ekonomika #g kvete#!" # todo: NEW TRANSLATION
- grunderzeit_status_desc_key_0: "Ekonomika #bold zkolabovala#!" # todo: NEW TRANSLATION
- je_bavarocracy: "Bavarokracie" # todo: NEW TRANSLATION
- je_bavarocracy_reason: "Od svého založení v roce 1832 bylo vznikající [ROOT.GetCountry.GetAdjective] království — první skutečně nezávislý řecký stát od dob Konstantina XI. — pod nadvládou [SCOPE.sCharacter('king_otto_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('king_otto_scope').GetFirstName] a jeho bavorských regentů.\n\nPokud chce mladý král dokázat, že je hoden vlády nad Hellény, bude muset učinit razantní kroky, aby uklidnil své nové poddané." # todo: NEW TRANSLATION
- je_bavarocracy_complete_tt: "Bavorské rozhořčení je pod #v 10#!" # todo: NEW TRANSLATION
- je_bavarocracy_fail_tt: "Bavorské rozhořčení bylo #v 80#! nebo více po dobu #v 50#! měsíců. Aktuálně tomu tak bylo po dobu #v [GetPlayer.MakeScope.Var('je_bavarocracy_timer_var').GetValue]#! měsíců." # todo: NEW TRANSLATION
- modifier_foreign_administration: "Zahraniční správa" # todo: NEW TRANSLATION
- bavarocracy_german_characters_tt: "[GetCulture('south_german').GetName] [Concept('concept_commander','$concept_commanders$')] nebo [Concept('concept_character', '$concept_characters$')] v [concept_in_government]" # todo: NEW TRANSLATION
- bavarocracy_catholic_ruler_tt: "#bold nemá#! [GetReligion('orthodox').GetName] [concept_ruler]" # todo: NEW TRANSLATION
- bavarocracy_no_heir_tt: "[concept_ruler] #bold nemá#! [concept_heir]" # todo: NEW TRANSLATION
- bavarocracy_no_wife_tt: "[concept_ruler] není v manželství" # todo: NEW TRANSLATION
- bavarocracy_no_voting_tt: "#bold nemá#! [Concept('concept_votes','$concept_voting_rights$')]" # todo: NEW TRANSLATION
- bavarocracy_small_army_tt: "nasazuje méně než #v 10#! [Concept('concept_battalion', '$concept_battalions$')]" # todo: NEW TRANSLATION
- bavarocracy_turmoil_tt: "[Concept('concept_radical','$concept_radicals$')] ve vlastněných [GetCulture('greek').GetName] [concept_homeland] [Concept('concept_state','$concept_states$')]" # todo: NEW TRANSLATION
- bavarocracy_losing_wars_tt: "nedávno #r prohrál#! [concept_war]" # todo: NEW TRANSLATION
- bavarocracy_greek_homeland_states_tt: "vlastní [GetCulture('greek').GetName] [concept_homeland] [Concept('concept_state','$concept_states$')]" # todo: NEW TRANSLATION
- bavarocracy_loyalists_tt: "[Concept('concept_loyalist','$concept_loyalists$')] ve vlastněných [GetCulture('greek').GetName] [concept_homeland] [Concept('concept_state','$concept_states$')]" # todo: NEW TRANSLATION
- bavarocracy_winning_wars_tt: "nedávno #g vyhrál#! [concept_war]" # todo: NEW TRANSLATION
- bavarocracy_university_tt: "mít alespoň jednu [GetBuildingType('building_university').GetName] v [GetCulture('greek').GetName] [concept_homeland] [concept_state]" # todo: NEW TRANSLATION
- bavarocracy_large_army_tt: "nasazuje více než #v 20#! [Concept('concept_battalion', '$concept_battalions$')]" # todo: NEW TRANSLATION
- je_bavarocracy_convert_button: "Přejít na východní ortodoxii" # todo: NEW TRANSLATION
- je_bavarocracy_convert_button_desc: "Ačkoliv je [ROOT.GetCountry.GetName] pevně [GetReligion('orthodox').GetName] země, [SCOPE.sCharacter('king_otto_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('king_otto_scope').GetFirstName] neochvějně lpí na své rodné [GetReligion('catholic').GetName] víře, což vyvolává mezi jeho novými poddanými značné rozhořčení.\n\nPokud má Othonova vláda přetrvat mezi Řeky, možná bude třeba učinit některé osobní oběti?" # todo: NEW TRANSLATION
- modifier_suspected_crypto_catholic: "Podezření na skrytého katolíka" # todo: NEW TRANSLATION
- je_bavarocracy_convert_possible: "[SCOPE.sCharacter('king_otto_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('king_otto_scope').GetFirstName] vyznává [GetReligion('catholic').GetName]" # todo: NEW TRANSLATION
- bavarocracy_progress_bar_decrease_10_tt: "#bold Snižuje#! #bold Bavorské rozhořčení#! o #variable 10#!" # todo: NEW TRANSLATION
- bavarocracy_progress_bar: "Bavorské rozhořčení" # todo: NEW TRANSLATION
- bavarocracy_progress_bar_desc: "[concept_bavarocratic_ire]: ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)]/100)" # todo: NEW TRANSLATION
- bavarocracy_events.1.t: "Civilizační král Hellénů" # todo: NEW TRANSLATION
- bavarocracy_events.1.d: "Po úspěšném provedení země bouřlivými ranými lety se [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstName] nyní etabloval jako schopný státník v čele stabilní vlády." # todo: NEW TRANSLATION
- bavarocracy_events.1.f: "S šálkem kávy v ruce [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstNameNoFormatting] přehraboval ranní korespondenci. Zprávy o silničních lupičích, korupčních skandálech a frakčních sporech — jako obvykle. Mezi těmi se však objevovaly i náznaky změny: účinky nedávných policejních reforem, založení intelektuálních institucí a probouzení moderního byrokratického aparátu. Hodně práce ještě zbývalo, ale rok od roku byly ranní povinnosti [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] o něco příjemnější." # todo: NEW TRANSLATION
- bavarocracy_events.1.a: "Nový Periklés!" # todo: NEW TRANSLATION
- bavarocracy_events.1.b: "Nový Alexandr!" # todo: NEW TRANSLATION
- modifier_ottonian_renaissance: "Othonovská renesance" # todo: NEW TRANSLATION
- modifier_ottonian_reforms: "Othonovy reformy úřednictva" # todo: NEW TRANSLATION
- bavarocracy_events.1.tt_1: "Po dokončení [concept_journal_entry] přijetím autokracie získáme následující odměnu:" # todo: NEW TRANSLATION
- bavarocracy_events.1.tt_2: "Po dokončení [concept_journal_entry] přijetím demokracie získáme následující odměnu:" # todo: NEW TRANSLATION
- modifier_bavarocracy_autocratic: "Helénský řád" # todo: NEW TRANSLATION
- modifier_bavarocracy_democratic: "Helénské svobody" # todo: NEW TRANSLATION
- bavarocracy_events.2.t: "Pád krále Otta" # todo: NEW TRANSLATION
- bavarocracy_events.2.d: "Rozhněváni bavorskou klikou propuklo v [ROOT.GetCountry.GetCapital.GetCityHubName] lidové povstání a sesadilo [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstName], který byl naposledy spatřen nastupovat na cizí škuner plující na sever. S odchodem starého [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] byla lidu dočasnou vládou nabídnuta možnost zvolit jeho následníka." # todo: NEW TRANSLATION
- bavarocracy_events.2.f: "\"Žádné tištěné hlasovací lístky? To má být nějaký vtip?\"\n\n\"Ne, pane. Prostě napište jméno muže, kterého chcete na trůně, a odevzdejte mi to do hodiny.\"" # todo: NEW TRANSLATION
- bavarocracy_events.2.a: "Dánský princ" # todo: NEW TRANSLATION
- bavarocracy_events.2.b: "Republika" # todo: NEW TRANSLATION
- bavarocracy_events.2.c: "Britský princ" # todo: NEW TRANSLATION
- bavarocracy_events.2.e: "Francouzský princ" # todo: NEW TRANSLATION
- bavarocracy_events.2.g: "Ruský císařský princ" # todo: NEW TRANSLATION
- bavarocracy_events.2.h: "Král" # todo: NEW TRANSLATION
- bavarocracy_events.2.i: "Garibaldi" # todo: NEW TRANSLATION
- modifier_an_inconvenient_republic: "Opportunistický republikanismus" # todo: NEW TRANSLATION
- modifier_architects_of_the_second_republic: "Architekti Druhé republiky" # todo: NEW TRANSLATION
- bavarocracy_prince_danish_tt: "#b $DEN_ADJ$#! [GetIdeology('ideology_reformer').GetName] princ se stane #b Králem Hellénů#! jako #b George I#!" # todo: NEW TRANSLATION
- bavarocracy_prince_french_tt: "#b $FRA_ADJ$#! princ vládnoucí dynastie se stane #b Králem Hellénů#! jako #b George I#!" # todo: NEW TRANSLATION
- bavarocracy_prince_british_tt: "#b $GBR_ADJ$#! [GetIdeology('ideology_market_liberal').GetName] princ se stane #b Králem Hellénů#! jako #b George I#!" # todo: NEW TRANSLATION
- bavarocracy_prince_russian_tt: "#b $RUS_ADJ$#! [GetIdeology('ideology_royalist').GetName] princ se stane #b Králem Hellénů#! jako #b George I#!" # todo: NEW TRANSLATION
- bavarocracy_prince_french_bourbon_tt: "#b Legitimista#! [GetIdeology('ideology_traditionalist').GetName] princ se stane #b Králem Hellénů#! jako #b George I#!" # todo: NEW TRANSLATION
- bavarocracy_prince_french_orleans_tt: "#b Orleanista#! [GetIdeology('ideology_market_liberal').GetName] princ se stane #b Králem Hellénů#! jako #b George I#!" # todo: NEW TRANSLATION
- bavarocracy_prince_french_bonaparte_tt: "#b Bonapartist#! [GetIdeology('ideology_jingoist_leader').GetName] princ se stane #b Králem Hellénů#! jako #b George I#!" # todo: NEW TRANSLATION
- bavarocracy_prince_garibaldi_tt: "Giuseppe Garibaldi se stane #b Králem Hellénů#! jako #b Iosif I#!" # todo: NEW TRANSLATION
- modifier_revolutionary_king: "Frýgijská koruna" # todo: NEW TRANSLATION
- bavarocracy_expell_tt: "#b Král Otto#! a jeho #b bavorští#! rádci půjdou do #b exilu#!" # todo: NEW TRANSLATION
- bavarocracy_fail_tt: "Pád [SCOPE.sCharacter('king_otto_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('king_otto_scope').GetFirstName] může otevřít #tooltippable #tooltip:bavarocracy_fail_explanation_tt nové politické příležitosti#!#!" # todo: NEW TRANSLATION
- bavarocracy_fail_explanation_tt: "Konec bavarokracie nám umožní dosadit na trůn #b $DEN_ADJ$#! prince, přijatelného pro [Concept('concept_great_power', '$concept_great_powers$')], nebo založit #b Druhou helénskou republiku#!\n\n#b $FRA$#!, #b $GBR$#! nebo #b $RUS$#!, které nám dluží [concept_obligation], přinutí ignorovat ustanovení #b Londýnské konference z roku 1832#! a dovolí nám zvolit jednoho z jejich princů jako Krále Hellénů.\n\nPotenciální zahraniční král přijde s následující [Concept('concept_ideology', '$concept_ideologies$')]:\n• $DEN_ADJ$: [GetIdeology('ideology_reformer').GetName]\n• $GBR_ADJ$: [GetIdeology('ideology_market_liberal').GetName]\n• $RUS_ADJ$: [GetIdeology('ideology_royalist').GetName]\n• $FRA_ADJ$ Oreanist: [GetIdeology('ideology_market_liberal').GetName]\n• $FRA_ADJ$ Legitimist: [GetIdeology('ideology_traditionalist').GetName]\n• $FRA_ADJ$ Bonapartist: [GetIdeology('ideology_jingoist_leader').GetName]" # todo: NEW TRANSLATION
+ dyn_c_croatia_slavonia: "Chorvatsko-Slavonie"
+ je_matter_of_hungary: "Záležitost Maďarska"
+ je_matter_of_hungary_reason: "Od chvíle, kdy Habsburkové před stoletími získali trůn svatého Štěpána, se jejich nezávislé maďarské poddané ukázaly jako obtížný lid k vládnutí.\n\nKonfrontována s čím dál agresivnějšími požadavky na autonomii [GetCulture('hungarian').GetName], správa v [ROOT.GetCountry.GetCapital.GetCityHubName] musí rozhodnout, zda vyhoví požadavkům maďarských nacionalistů, nebo je - je-li třeba - utne silou.\n\n#bold Maďarská revoluce#!\nAktivace #Bold $je_springtime_of_the_peoples$#! [concept_journal_entry] pravděpodobně posílí radikální frakce v #b $HUN_ADJ$ sněmu#!, což může vést ke konfliktu s vládou v [ROOT.GetCountry.GetCapital.GetCityHubName]."
+ modifier_young_hungary_movement: "Hnutí Mladé Maďarsko"
+ matter_of_hungary_hungarian_homelands_tt: "[SCOPE.sCulture('hungarian_scope').GetName] [Concept('concept_homeland','$concept_homelands$')] v [GetStateRegion('STATE_CENTRAL_HUNGARY').GetName] a [GetStateRegion('STATE_TRANSDANUBIA').GetName] jsou vlastněny [ROOT.GetCountry.GetName] nebo jejími [Concept('concept_subject','$concept_subjects$')]"
+ matter_of_hungary_ausgleich_tt: "#b $HUN$#! je ustanoveno jako [concept_subject] v [concept_personal_union] s [ROOT.GetCountry.GetName]"
+ je_matter_of_hungary_neoabsolutist_fail_tt: "Neuspěli jsme #bold ve#! #bold $je_austrian_neo_absolutism$#! [concept_journal_entry]"
+ je_matter_of_hungary_completion_centralization_tt: "Dokončili jsme #bold $je_austrian_neo_absolutism$#! [concept_journal_entry] a zbavili #bold $HUN$#! jejích tradičních práv a privilegií"
+ je_matter_of_hungary_completion_autonomy_tt: "Založili jsme #bold Dvojitou monarchii#!"
+ je_matter_of_hungary_fail_hungary_is_free: "#bold $HUN$#! se osvobodilo od kontroly [ROOT.GetCountry.GetAdjective]"
+ je_matter_of_hungary_fail_not_at_war_with_hungary: "#bold $HUN$#! #bold není#! v opozici vůči [ROOT.GetCountry.GetName] v [concept_diplomatic_play]"
+ je_matter_of_hungary_on_fail_lose_control: "Veškerá zbývající území v Maďarsku pod kontrolou [ROOT.GetCountry.GetName] nebo jejích [Concept('concept_subject','$concept_subjects$')] #bold odtrhnou se#!. Nacionalističtí rebelové povstanou v našich negermánských zemích."
+ hungarian_above_80_acceptance_for_a_while_tt: "Průměrné [concept_acceptance] [GetCulture('hungarian').GetName] v [ROOT.GetCountry.GetNameNoFlag] bylo větší nebo rovno #v 80#! po #b 60 měsíců#! (aktuálně [ROOT.GetCountry.MakeScope.Var('hungarian_acceptance_var').GetValue|v0])"
+ hungarian_movements_pacified_tt: "Žádné [GetCulture('hungarian').GetName] #v $movement_cultural_minority$#! nemá [Concept('concept_activism','$concept_activism_short$')] $RADICALISM_AGITATING$ (#v 25%#!) nebo více"
+ je_austrian_neo_absolutism: "Autokracie v době svobody"
+ je_austrian_neo_absolutism_reason: "#italic „Pilíře bachovského systému spočívají na jeho čtyřech armádách: stálé armádě vojáků, sedící armádě úředníků, klečící armádě kněží a plazivé armádě udavačů.“ #!\n\nHrozba revoluce zdola vyžaduje, aby [ROOT.GetCountry.GetCapital.GetCityHubName] provedla svou vlastní shora. Zavedením centralizovaného, racionálního a efektivního státního aparátu - obsazeného loajálními a schopnými byrokraty - bude země modernizována, aby čelila výzvám současné doby.\n\n[concept_austrian_constitutional_pressure]:\nPokud se odpor proti rakouskému neoabsolutistickému projektu stane příliš silným, bude [ROOT.GetCountry.GetCapital.GetCityHubName] nuceno ustoupit požadavkům na reformu a udělit ústavu omezující pravomoci státu."
+ je_austrian_neo_absolutism_fail_tt: "[concept_austrian_constitutional_pressure] dosáhl #v 100#!"
+ je_austrian_neo_absolutism_possible_tt:1 "[ROOT.GetCountry.GetNameNoFlag] nemá #bold žádné#! [concept_crown_land] ani [concept_personal_union] [Concept('concept_subject','$concept_subjects$')]"
+ austrian_gdp_higher_than_prussia: "[ROOT.GetCountry.GetNameNoFlag] má vyšší [concept_gdp] než #b $PRU$#!"
+ austrian_gdp_higher_than_germany: "[ROOT.GetCountry.GetNameNoFlag] má vyšší [concept_gdp] než #b $GER$#!"
+ enforced_wargoal_on_prussia_tt: "[ROOT.GetCountry.GetNameNoFlag] vynutil [concept_war_goal] na #b $PRU$#! zatímco je tento [concept_journal_entry] aktivní"
+ enforced_wargoal_on_germany_tt: "[ROOT.GetCountry.GetNameNoFlag] vynutil [concept_war_goal] na #b $GER$#! zatímco je tento [concept_journal_entry] aktivní"
+ austrian_rank_three_or_above_tt: "Naše moc [concept_rank] musí být v rámci top #v 3#!"
+ modifier_streamline_crown_lands: "Snížená autonomie korunních zemí"
+ matter_of_hungary_dual_monarchy_button: "Zřídit Dvojitou monarchii"
+ matter_of_hungary_dual_monarchy_button_desc: "#bold $HUN$#! dlouho usilovalo o rovnocenné postavení v rámci [ROOT.GetCountry.GetAdjective] říše, a pouze jeho udělením můžeme doufat, že uspokojíme maďarské nároky na svobodu.\n\nVe spolupráci s představiteli $HUN_ADJ$ byl vypracován plán udělit #bold $HUN$#! plnou vnitřní autonomii a odpovědné ministerstvo. Výměnou Maďarsko uzná, že říše zůstává jednotným státem pro účely války a zahraničních věcí."
+ matter_of_hungary_integrate_crown_lands_button: "Integrovat korunní země"
+ matter_of_hungary_integrate_crown_lands_button_desc: "Úroveň autonomie, kterou si užívají [ROOT.GetCountry.GetAdjective] [Concept('concept_crown_land','$concept_crown_lands$')] jako #b $HUN$#! byla po generace trnem v oku centrální vládě. Spravovány převážně vlastními instituce děděnými z dob habsburské složené monarchie, odolávaly reformním snahám, které nyní charakterizují tak zvané #italic Erblande#!.\n\nPro blaho naší velké říše musí být tyto [Concept('concept_crown_land','$concept_crown_lands$')] plně integrovány do rakouské správy."
+ matter_of_hungary_integrate_crown_lands_tt: "Všechny [concept_crown_land] [Concept('concept_subject','$concept_subjects$')] mají méně než #v 25#! [concept_liberty_desire]"
+ matter_of_hungary_defeated_hungary_tt: "Nedávno jsme porazili #bold $HUN$#! v [concept_war]"
+ austrian_neo_absolutism_constitutional_pressure_progress_bar: "[concept_austrian_constitutional_pressure]"
+ austrian_neo_absolutism_constitutional_pressure_progress_bar_desc: "[concept_austrian_constitutional_pressure]: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)"
+ austrian_neo_absolutism_abolish_crown_land_autonomy_button: "Marginalizovat sněmy korunních zemí"
+ austrian_neo_absolutism_abolish_crown_land_autonomy_button_desc: "Tradičně autonomní #italic Landtage#! představují jednu z největších překážek našich snah vynutit přímou vládu z [ROOT.GetCountry.GetCapital.GetCityHubName]. Musíme jim odejmout zákonodárné pravomoci a redukovat je na ničím nezajištěné administrativní orgány pod přímým císařským dohledem."
+ modifier_bureaucratisation_of_the_landtage: "Byrokratizace Landtagů"
+ austrian_neo_absolutism_abolish_feudal_obligations_button: "Zrušit feudální povinnosti"
+ austrian_neo_absolutism_abolish_feudal_obligations_button_desc: "Patent o nevolnictví z roku 1781 osvobodil rakouské rolníky od vázanosti na půdu, přesto jsou stále povinni vykonávat #italic robotu#! (povinné práce), platit feudální dávky a podléhat vrchnostenské jurisdikci.\n\nZrušení těchto staromódních povinností by sice získalo přízeň reformátorů, ale mohlo by také rozzuřit velkostatkářskou elitu, která by z návrhu ztratila jak bohatství, tak vliv."
+ modifier_empowered_smallholders: "Posílení velkých sedláků"
+ modifier_bureaucratisation_of_nobles: "Zvýšená byrokratizace šlechty"
+ austrian_neo_absolutism_papal_concordat_button: "Přijmout papežskou konkordát"
+ austrian_neo_absolutism_papal_concordat_button_desc: "Svojí nerozvážnou honbou za reformami josefinisté a liberálové podkopali samotné základy naší velké říše: naší neochvějné víry a loajality k papežskému stolci.\n\nMusíme napravit škody, které způsobili, a dosáhnout dohody s církví, která zajistí její přítomnost na všech úrovních společnosti - od školní lavice až po svátost manželství."
+ je_austrian_neo_absolutism_completion_economic_tt: "#tooltippable;tooltip:temp Ekonomické reformy#! Dokončeno"
+ je_austrian_neo_absolutism_completion_bureaucratic_tt: "#tooltippable;tooltip:temp Byrokratické reformy#! Dokončeno"
+ je_austrian_neo_absolutism_completion_military_tt: "#tooltippable;tooltip:temp Vojenské reformy#! Dokončeno"
+ je_austrian_neo_absolutism_completion_crown_lands_tt: "Marginalizovali jsme sněmy [concept_crown_land]"
+ je_austrian_neo_absolutism_completion_papal_concordat_tt: "Přijali jsme #bold papežský konkordát#!"
+ je_austrian_neo_absolutism_completion_feudal_obligations_tt: "Zrušili jsme #bold feudální povinnosti#!"
+ je_austrian_neo_absolutism_hungary_subject_tt: "Založili jsme #bold Rakousko-Uhersko#!"
+ austrian_neo_absolutism_recently_lost_war: "nedávno prohrál v [concept_war]"
+ austrian_neo_absolutism_declared_bankruptcy: "vyhlásil [concept_bankruptcy]"
+ austrian_neo_absolutism_taking_loans: "[concept_loans]"
+ austrian_neo_absolutism_radicals: "[Concept('concept_state','$concept_states$')] s [Concept('concept_radical','$concept_radicals$')]"
+ austrian_neo_absolutism_loyalists: "[Concept('concept_state', '$concept_states$')] s [Concept('concept_loyalist','$concept_loyalists$')]"
+ austrian_neo_absolutism_positive_budget_balance: "kladné rozpočtové saldo"
+ austrian_neo_absolutism_excess_bureaucracy: "nadbytečná [concept_bureaucracy]"
+ austrian_neo_absolutism_bureaucracy_deficit: "nedostatek [concept_bureaucracy]"
+ austrian_neo_absolutism_movement_activism: "[Concept('concept_activism', '$concept_activism_short$')] #tooltippable;tooltip:[GetPlayer.GetTooltipTag],liberal_movements_list_tt Liberální#!, #tooltippable;tooltip:[GetPlayer.GetTooltipTag],socialist_movements_list_tt Socialistický#!, a #b $movement_cultural_minority_short$#! [Concept('concept_political_movement','$concept_political_movements$')]"
+ austrian_neo_absolutism_interest_groups_opposing: "[concept_clout] [Concept('concept_interest_group','$concept_interest_groups$')] odporujících [GetLawType('law_autocracy').GetName]"
+ austrian_neo_absolutism_interest_groups_supporting: "[concept_clout] [Concept('concept_interest_group','$concept_interest_groups$')] podporujících [GetLawType('law_autocracy').GetName]"
+ austrian_neo_absolutism_movement_activism_2: "[Concept('concept_political_movement_support', '$concept_political_movement_support_short$')] #b $movement_royalist_absolutist_short$#!, #b $movement_religious_majority_short$#!, a #b $movement_cultural_majority_short$#! [Concept('concept_political_movement','$concept_political_movements$')]"
+ modifier_abolished_feudal_obligations: "Zrušené feudální povinnosti"
+ modifier_robot_compensation_payments: "Vyrovnání za robotu"
+ modifier_austrian_state_police: "Tajná policie"
+ modifier_austrian_state_police_upgraded: "Upevněná tajná policie"
+ austrian_neo_absolutism_constitutional_pressure_progress_bar_decrease_10_tt: "#bold Snižuje#! [concept_austrian_constitutional_pressure] o #g #b 10#! #!"
+ austrian_neo_absolutism_constitutional_pressure_progress_bar_increase_10_tt: "#bold Zvyšuje#! [concept_austrian_constitutional_pressure] o #r #b 10#! #!"
+ je_austrian_neo_absolutism_completion_tt: "[Concept('concept_political_movement_support', '$concept_political_movement_support_short$')] pro všechny [Concept('concept_political_movement','$concept_political_movements$')] bude v nadcházejících letech klesat."
+ austria_events.1.t: "Pravidlo pera a bajonetu"
+ austria_events.1.d: "S dokončením poslední neoabsolutistické reformy je [ROOT.GetCountry.GetName] připravena vstoupit do nové zlaté éry. Její národy, opouštějící frakční nacionalismus, se místo toho sjednocují pod praporem osvíceného a rozumného vládnutí."
+ austria_events.1.f: "„Blaho jedince je založeno na blahu celku: ale blaho celku také spočívá na blahobytu jedinců.“\n\n- Joseph von Sonnenfels"
+ austria_events.1.a: "Sláva! Sláva [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]! Ať žije [ROOT.GetCountry.GetRuler.GetHerHis] osvícená vláda!"
+ austria_events.1.b: "[ROOT.GetCountry.GetNameNoFlag] přetrvává díky moudrosti a povinnosti jejích oddaných byrokratů."
+ modifier_everymans_emperor: "Císař všech poddaných"
+ modifier_everymans_ruler: "Vládce všech poddaných"
+ modifier_volksbeamter: "Lidoví úředníci"
+ modifier_viribus_unitis: "Viribus Unitis"
+ austria_events.2.t: "Žádná ústava, žádné peníze"
+ austria_events.2.d: "Trpělivost [ROOT.GetCountry.GetAdjective] establishmentu došla. Frustrováni údajnou špatnou správou neoabsolutistické frakce požadují okamžité udělení ústavy."
+ austria_events.2.f: "Ostré klapání bot znělo chodbami Hofburgu, kde ministři a úředníci jednali s rostoucou naléhavostí. Dveře se rychle otevíraly a zavíraly, a tiše vedené debaty přerůstaly v rozjitřené hádky. Nepořádek vnější administrativní sféry byl dlouho běžným obrazem rakouské správy. Ale vnitřní? To bylo mimo normu. Mimo normu a nebezpečné."
+ austria_events.2.a: "Splňte jejich požadavky. Stabilita říše je na prvním místě."
+ austria_events.2.b: "Požadují? Vyhrožujte jim obviněním z velezrady."
+ modifier_unrest_in_the_ministry_of_finance: "Nepokoje ve finančním ministerstvu"
+ modifier_disapproving_of_unqualified_autocracy: "Oponující neomezené autokracii"
+ modifier_autocracy_discredited: "Neoabsolutismus zdiskreditován"
+ austria_events.3.t: "Krize na Dunaji"
+ austria_events.3.d: "Nezávislost [SCOPE.sCountry('hungary_scope').GetNameNoFlag] rozpoutala vlnu etnických nepokojů napříč naším národem. Inspirováni událostmi v [SCOPE.sCountry('hungary_scope').GetCapital.GetCityHubName] povstali nacionalisté po celém [ROOT.GetCountry.GetName] proti [ROOT.GetCountry.GetCapital.GetCityHubName]."
+ austria_events.3.f: "Ze čtyř posádek pod jeho velením si pouze jedna zachovala čest a zůstala plně loajální. Ostatní se buď rozprchly jako zbabělci, nebo, co hůř, se staly zrádci.\n\nVzbouřenci. Psi. Kdyby měl možnost, všechny by je pověsil.\n\n„Herr feldmaršál! Vaše rozkazy?“\n\nTato slova vytrhla generála z jeho myšlenek. Prudce vydechl. „Tyto povstání nejsou nic nového. Říše přežila větší hrozby. Vytvořte perimetr a přiveďte mi kurýra, ať mi bezodkladně dodá rozkazy, které pro nás má [ROOT.GetCountry.GetCapital.GetCityHubName].“"
+ austria_events.3.a: "Periferie je ztracena, ustupte do Erblande."
+ austria_events.3.b: "Stáhněte se z Maďarska, ale ani o palec dál."
+ austria_danube_croat_revolt: "Naši [SCOPE.sCulture('croat_scope').GetName] poddaní povstali a vyhnali naše úředníky ze svých zemí."
+ austria_danube_serb_revolt: "Naši [SCOPE.sCulture('serb_scope').GetName] poddaní povstali a vyhnali naše úředníky ze svých zemí."
+ austria_danube_polish_revolt: "Naši [SCOPE.sCulture('polish_scope').GetName] poddaní povstali a vyhnali naše úředníky ze svých zemí."
+ austria_danube_italian_revolt: "Naši [SCOPE.sCulture('north_italian_scope').GetName] poddaní povstali a vyhnali naše úředníky ze svých zemí."
+ modifier_broken_eagle: "Zlomený orel"
+ modifier_overstretched_administration: "Přetížená správa"
+ austria_events.4.t: "Ausgleich"
+ austria_events.4.d: "Bylo dosaženo kompromisu. Podle dohody bude [ROOT.GetCountry.GetName] přestavěno na Dvojitou monarchii [ROOT.GetCountry.GetNameNoFlag]-[SCOPE.sCountry('hungary_scope').GetNameNoFlag], rozdělenou na Transleithanskou oblast spravovanou z [SCOPE.sCountry('hungary_scope').GetCapital.GetCityHubName] a Cisleithanskou oblast spravovanou z [ROOT.GetCountry.GetCapital.GetCityHubName]."
+ austria_events.4.f: "Stojíc mezi svými vrstevníky sledoval hrabě, jak [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstNameNoFormatting], v plném rouchu, vyrazil k umělému korunovačnímu návrší, jehož půda byla dovezena ze všech koutů jeho rodné maďarské země. Přišel z povinnosti, ne z oddanosti, přesto jak [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] vystoupal na vrchol, cítil tíhu okamžiku, kterou nečekal.\n\nKdyž [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] vztyčil meč, jednou se čepelí záhybila do každého světového směru a hlasitě přísahal chránit království a všechny jeho poddané, něco v něm zavibrovalo. Nebyla to loajalita, pomyslel si. Snad respekt."
+ austria_events.4.a: "Založit Transleithanii."
+ austria_events.4.b: "Založit Transleithanii v plném svazku s Trojitým královstvím."
+ austria_events.4.c: "Udržet Trojité království pod přímou [ROOT.GetCountry.GetAdjective] kontrolou."
+ transleithania_historical_tt: "#bold Transleithania#! je definována jako státní svazek Království Maďarska a Trojitého království [SCOPE.sStateRegion('croatia_state_scope').GetName], [SCOPE.sStateRegion('slavonia_state_scope').GetName] a [SCOPE.sStateRegion('dalmatia_state_scope').GetName], přičemž [SCOPE.sStateRegion('dalmatia_state_scope').GetName] zůstává pod přímou kontrolou [ROOT.GetCountry.GetAdjective]."
+ transleithania_full_triune_tt: "#bold Transleithania#! je definována jako státní svazek Království Maďarska a Trojitého království [SCOPE.sStateRegion('croatia_state_scope').GetName], [SCOPE.sStateRegion('slavonia_state_scope').GetName] a [SCOPE.sStateRegion('dalmatia_state_scope').GetName] v plném rozsahu."
+ transleithania_only_hungary_tt: "#bold Transleithania#! je definována jako území samotného Království Maďarska."
+ modifier_partial_hungarian_triune_union: "Částečný maďarsko-trojitý svaz"
+ modifier_hungarian_triune_union: "Maďarsko-trojitý svaz"
+ modifier_croatian_debacle: "Přerušení maďarsko-chorvatských vazeb"
+ austria_events.5.t: "Relikvie minulých časů"
+ austria_events.5.d: "S odklonem vlády od neoabsolutistického projektu se jeho bývalí stoupenci ocitají zdiskreditováni v očích národa."
+ austria_events.5.f: "S procvičenou rukou ministr podepsal dokument. Naposledy? Myšlenka zůstala v hlavě. Vzdychl. Krizí bylo příliš, hnůj příliš zakořeněný. Kdyby měli jen o deset let více, možná o dvacet, pak by se brilance jejich práce ukázala všem.\n\nKdyž předával dokument svému tajemníkovi, jeho prsty zaváhaly, sevření se zpevnilo. Na okamžik se ruka bránila pustit papír.\n\nPak ho pustil."
+ austria_events.5.a: "Jejich myšlenky možná byly špatné, ale jejich metody měly cenu."
+ austria_events.5.b: "Nechat je na svých místech v bezpečnostních službách."
+ austria_events.5.c: "Veřejně se od nich distancovat."
+ modifier_austrian_state_police_remnant_1: "Dědictví pravidla pera"
+ modifier_austrian_state_police_remnant_2: "Dědictví pravidla bajonetu"
+ modifier_opening_up_the_political_sphere: "Otevření politické sféry"
+ je_austrian_neo_absolutism_status: "Prostřednictvím centralizace, reforem a efektivní byrokracie bude zajištěna budoucnost říše"
+ je_austrian_neo_absolutism_status_1: "Ústavní tlak je #bold zanedbatelný#!"
+ je_austrian_neo_absolutism_status_2: "Ústavní tlak je #bold rostoucí#!"
+ je_austrian_neo_absolutism_status_3: "Ústavní tlak je #bold vysoký#!"
+ je_austrian_neo_absolutism_status_4: "Ústavní tlak je #bold kritický#!"
+ decision_found_budapest: "Zákon o sjednocení Budapešti"
+ decision_found_budapest_desc: "Sjednocením historického maďarského hlavního města Buda s rychle se rozvíjejícím městem Pest vytvoříme jedno prosperující metropolitní centrum překlenuté oběma břehy Dunaje."
+ decision_found_budapest_tt: "Města #bold Buda#!, #bold Pest#! a #bold Óbuda#! budou sloučena a vytvoří nové město #bold Budapešť#!"
+ decision_move_capital_to_buda: "Určit Buda za hlavní město"
+ decision_move_capital_to_buda_desc: "Ač Maďarsko znalo mnoho hlavních měst, žádné nepřevyšuje prestiž a slávu Budy. Musíme tam přemístit maďarský sněm."
+ modifier_buda_made_capital: "Růst Pešti"
+ decision_demand_hungary_revoke_laws: "Jednostranně zrušit maďarské reformy"
+ decision_demand_hungary_revoke_laws_desc: "Z jakéhokoli důvodu naše vláda tehdy ustoupila požadavkům povstaleckého maďarského sněmu. Musíme tu chybu napravit."
+ decision_demand_hungary_revoke_laws_tt: "Umožnili jsme maďarskému sněmu přijmout revoluční zákony"
+ je_hungarian_revolution: "Maďarská revoluce"
+ je_hungarian_revolution_reason: "#italic „Svoboda je zásada; její společenstvím je její bezpečí; výlučnost je její záhubou“#!-Lajos Kossuth\n\nKdyž se [ROOT.GetCountry.GetNameNoFlag] vydávala do nového století, bude se stále více formovat kolem kroužků liberálních, reformně smýšlejících politiků.\n\nI když se neshodují v přesné povaze budoucího vztahu Maďarska k #bold habsburské monarchii#!, spojuje je společná touha po politických a hospodářských reformách; chtějí přeměnit relativní periferii Maďarska v moderní a dynamický národní stát s autonomií nad maďarskými [Concept('concept_homeland','$concept_homelands$')].\n\n#bold Občané pod donucením#!\nJsme-li v opozici vůči #bold $AUS$#! v [concept_diplomatic_play], mohou utlačované menšiny využít situace a pokusit se #tooltippable #tooltip:hungarian_revolt_ethnic_unrest_tt #bold svrhnout#! maďarské jho.#!#! "
+ owns_all_hungarian_homelands_tt: "Vlastní #b všechny#! #tooltippable #tooltip:[GetPlayer.GetTooltipTag],hungarian_homeland_states_tt [SCOPE.sCulture('hungarian_culture_scope').GetName] domovské země#!#!"
+ hungarian_homeland_states_tt: "#title Následující [Concept('concept_state_region','$concept_state_regions$')] jsou [GetCulture('hungarian').GetName] [Concept('concept_homeland','$concept_homelands$')]:#! #indent_newline:3 \n• $STATE_BANAT$\n• $STATE_SLOVAKIA$\n• $STATE_RUTHENIA$\n• $STATE_BEKES$\n• $STATE_TRANSDANUBIA$\n• $STATE_CENTRAL_HUNGARY$\n• $STATE_DELVIDEK$\n• $STATE_NORTHERN_TRANSYLVANIA$\n• $STATE_SOUTHERN_TRANSYLVANIA$#!"
+ hungarian_revolt_ethnic_unrest_tt: "[GetCulture('serb').GetName], [GetCulture('slovak').GetName] a [GetCulture('romanian').GetName] poddaní se mohou #n vzbouřit#! pokud jsou splněny následující podmínky:\n\n• Průměrné [concept_acceptance] [GetCulture('serb').GetName], [GetCulture('slovak').GetName] nebo [GetCulture('romanian').GetName] je pod #v 60#!\n• Jedna z následujících: #indent_newline:3 \n• [concept_cultural_turmoil] v [GetCulture('serb').GetName], [GetCulture('slovak').GetName] nebo [GetCulture('romanian').GetName] [Concept('concept_homeland','$concept_homelands$')] přesáhne #n 15%#!\n• [concept_political_movement] způsobuje [concept_obstinance] v [GetCulture('serb').GetName], [GetCulture('slovak').GetName] nebo [GetCulture('romanian').GetName] [Concept('concept_homeland','$concept_homelands$')]#!"
+ has_founded_budapest_tt: "Učinili jsme #bold rozhodnutí#! založit #bold Budapešť#!"
+ modifier_hungary_timeout: "Země, kterou dějiny minuly"
+ hungarian_revolution_annex_transylvania_button: "Prohlásit unii s Sedmihradskem"
+ hungarian_revolution_annex_transylvania_button_desc: "Ač je [SCOPE.sCountry('transylvania_scope').GetName] uznáno jako Země [ROOT.GetCountry.GetAdjective] koruny, je od porážky #bold Rákócziho povstání#! v roce 1711 spravováno odděleně od vlastní Maďarské koruny.\n\nTransylvánský sněm je však stále ovládán prouniečními delegáty z [SCOPE.sCulture('hungarian_culture_scope').GetName] a [SCOPE.sCulture('szekely_culture_scope').GetName] a s lehkým postrčením by se pravděpodobně znovu připojil k říši. [SCOPE.sCountry('austria_scope').GetName] takový krok pravděpodobně neschválí a označí nás za zrádce."
+ if_trs_accepts_tt: "Pokud [SCOPE.sCountry('transylvania_scope').GetName] přijme náš návrh na Unii [SCOPE.sCountry('transylvania_scope').GetNameNoFormatting] s [ROOT.GetCountry.GetName], bude [SCOPE.sCountry('transylvania_scope').GetNameNoFormatting] #b anektována#!"
+ hungarian_revolution_twelve_points_button: "Vyhlásit Dvanáct bodů"
+ hungarian_revolution_twelve_points_button_desc: "Dlouho rozděleni mezi radikály a opatrnějšími reformátory se [ROOT.GetCountry.GetAdjective] progresivci nyní sjednotili za společným programem Dvanácti bodů, řadou dalekosáhlých zákonů zamýšlených zajistit zemi svobodu navěky."
+ hungarian_revolution_twelve_points_tt: "Takový radikální krok pravděpodobně způsobí #bold vážné roztržení#! v našich vztazích s [SCOPE.sCountry('austria_scope').GetName], #n které by mohlo vést k válce#!"
+ hungarian_revolution_austrian_ruler: "Následující podmínky sníží šanci, že [SCOPE.sCountry('austria_scope').GetName] bude naše kroky odmítat:#indent_newline:3 \n• [SCOPE.sCountry('austria_scope').GetAdjective] [concept_ruler] má [GetCharacterTrait('compliant').GetName] [concept_character_trait]\n• [SCOPE.sCountry('austria_scope').GetName] se aktivně účastní jakéhokoli [concept_diplomatic_play]#!"
+ modifier_the_spirit_of_48: "Společný pokrokový front"
+ possible_effects_hungary_events.9_tt: "#header Následující jsou všechny #b možné#! efekty události vyplývající z rozhodnutí [SCOPE.sCountry('austria_scope').GetName] v $hungary_events.9.t$:#!"
+ possible_hun_lawgroup_distribution_of_power_change_tt: "[ROOT.GetCountry.GetName] povoluje zákon [GetLawType('law_census_voting').GetName] v [GetLawGroup('lawgroup_distribution_of_power').GetName]"
+ possible_hun_lawgroup_free_speech_change_tt: "[ROOT.GetCountry.GetName] povoluje zákon [GetLawType('law_protected_speech').GetName] v [GetLawGroup('lawgroup_free_speech').GetName]"
+ possible_hun_lawgroup_land_reform_change_tt: "[ROOT.GetCountry.GetName] povoluje zákon [GetLawType('law_tenant_farmers').GetName] v [GetLawGroup('lawgroup_land_reform').GetName]"
+ possible_hun_lawgroup_church_and_state_change_tt: "[ROOT.GetCountry.GetName] povoluje zákon [GetLawType('law_freedom_of_conscience').GetName] v [GetLawGroup('lawgroup_church_and_state').GetName]"
+ possible_hun_lawgroup_internal_security_change_tt: "[ROOT.GetCountry.GetName] povoluje zákon [GetLawType('law_national_guard').GetName] v [GetLawGroup('lawgroup_internal_security').GetName]"
+ possible_hun_lawgroup_taxation_change_tt: "[ROOT.GetCountry.GetName] povoluje zákon [GetLawType('law_per_capita_based_taxation').GetName] v [GetLawGroup('lawgroup_taxation').GetName]"
+ possible_hun_lawgroup_economic_system_change_tt: "[ROOT.GetCountry.GetName] povoluje zákon [GetLawType('law_interventionism').GetName] v [GetLawGroup('lawgroup_economic_system').GetName]"
+ hungarian_revolution_establish_honved_button: "Zřídit Honvédskou armádu"
+ hungarian_revolution_establish_honved_button_desc: "Dlouho bylo [ROOT.GetCountry.GetName] odepíráno právo uplatňovat vojenskou autoritu nad vlastními rekruty; nyní je však schopno i nuceno zformovat armádu, která bude odpovídat [ROOT.GetCountry.GetCapital.GetCityHubName], a ne #italic Hofkriegsrat#! ve Vídni.\n\nTradiční uherské pluky jsou však příliš omezené počtem, aby samy tuto roli splnily. Musíme zahájit rozsáhlou přestavbu a nábor, abychom znovu nahnali strach do srdcí našich nepřátel."
+ possible_effects_hungary_events.7_tt: "#header Následující jsou všechny #b možné#! efekty události z $hungary_events.7.t$:#!"
+ dp_hungarian_revolution: "Uherská revoluce"
+ hungary_events.1.t: "Perla Dunaje"
+ hungary_events.1.d: "Po formálním spojení Budy, Pešti a Óbudy v jedno zažívá nové velkoměsto Budapešť nebývalý rozmach v dějinách [ROOT.GetCountry.GetName], s kapitálem a know-how proudícím do města."
+ hungary_events.1.f: ""Hlavní město bude mocné jen tehdy, má-li vládnoucí moc; bude v životě prosperovat, bude-li jím řídit jedna duše, jedna vůle ve svých snahách, bude šťastné, jen pokud se oddělené zájmy slijí ve společný zájem."\n-Bertalan Szemere"
+ hungary_events.1.a: "Panónie je naším obilným košem, Budapešť jeho bijícím srdcem."
+ hungary_events.1.b: "Borúra derű, ať Budapešť vede cestu našeho národa."
+ modifier_budapest_steam_mills: "Rozmach parních mlýnů v Budapešti"
+ modifier_budapest_paris_of_the_east: "Paříž Východu"
+ modifier_budapest_chain_bridge: "Széchenyiho řetězový most"
+ modifier_budapest_grain_barons: "Posílení obilních baronů"
+ modifier_budapest_academy: "Sponzorování Akademie věd"
+ hungary_events.2.t: "Srbské povstání"
+ hungary_events.2.d: "Po shromáždění v Sremski Karlovci se zástupci [GetCulture('serb').GetName] v [SCOPE.sCountry('hungary_country_scope').GetName] vzbouřili s úmyslem vytvořit srbské panství severně od řeky Savy."
+ hungary_events.2.f: ""Rozptýleni do sta směrů - na sto stran mohl nad námi vládnout kdokoli, zatímco my jsme nedokázali vládnout sami sobě, jako bychom nikdy nevládli svému osudu!\"\n-Nikanor Grujić"
+ hungary_events.2.a: "Zmobilizujte armádu a porazte tyto vídeňské poskoky."
+ hungary_events.2.b: "Za ctěný kříž a Zlatou svobodu!"
+ hungary_events.2.c: "Uznat [SCOPE.sCountry('banat_country_scope').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('banat_country_scope').GetRuler.GetLastName] jako našeho místního guvernéra."
+ hungary_events.2.e: "Srbům nelze věřit. Zničte je také."
+ modifier_serbian_volunteers: "Srbští dobrovolníci"
+ hungary_events.3.t: "Slovenské povstání"
+ hungary_events.3.d: "Ze svého shromáždění v Myjavě Národní výbor [GetCulture('slovak').GetName] vyhlásil záměr oddělit se od [SCOPE.sCountry('hungary_country_scope').GetName] a vyhlásil všeobecné slovenské povstání."
+ hungary_events.3.f: ""Dlouho jsme sloužili jako hračka ďábelské politiky, která nás úmyslně rozdělila a neustále mezi námi pobouřovala konflikty, aby jsme padli vlastní vinou... Dozráli jsme, poznali jsme svá práva a chceme je statečně bránit.\"\n-Ľudovít Štúr"
+ hungary_events.3.a: "Naše armáda si s těmito zrádci rychle poradí."
+ hungary_events.3.b: "Sláva! Šetkým Slovakom!"
+ hungary_events.3.c: "Slibte Slovákům autonomii za věrnost."
+ hungary_events.3.e: "Povstání musí být udušeno."
+ modifier_slovak_volunteers: "Slovenskí dobrovolníci"
+ hungary_events.4.t: "Uhry volají po unii"
+ hungary_events.4.d: "Odvážným krokem prohlásil [SCOPE.sCountry('hungary_country_scope').GetAdjective] sněm Unii [ROOT.GetCountry.GetName] s Uhry. Schválení sněmu v [ROOT.GetCountry.GetCapital.GetCityHubName] je však třeba, aby unie nabyla účinnosti, což přimělo prounijní delegáty [GetCulture('hungarian').GetName] a [GetCulture('szekely').GetName] spěchat zajistit potřebné hlasy."
+ hungary_events.4.f: "Kdyby Bůh chtěl, aby dnes pracoval, neposlal by mu takový rozruch, pomyslel si Ioan. Znovu vzhlédl od účetní knihy, vzal dýmku, potáhl a zadíval se z okna.\n\nPřed palácem Reduta se dav ještě zvětšil. Složený hlavně z místních Szeklerů a Maďarů, někteří, které Ioan poznal, jejich výkřiky 'Unie nebo smrt!' se nesly ulicemi.\n\nŠpatné pro obchod, pomyslel si. Špatné #italic pro#! obchod taky. Jeho vznětlivý syn, spolu se dvěma učni, už opustili město kvůli jakési 'národní schůzi' v Blaji. Ne, pomyslel si Ioan a žvýkal dýmku, toto rozhodně neskončí dobře."
+ hungary_events.4.a: "Igen. Sněm hlasuje pro sjednocení."
+ hungary_events.4.b: "Nem. Návrh je v těsném hlasování zamítnut."
+ hungary_events.5.t: "Transylvánie schvaluje unii s Uhry"
+ hungary_events.5.d: "Po hlasování v regionálním maďarsky-dominovaném sněmu se Sedmihradsko rozhodlo připojit se k [SCOPE.sCountry('hungary_country_scope').GetName] v unii."
+ hungary_events.5.f: "'Unie nebo smrt' vyhlásili týden předtím. Sebevražda hlasováním, pomyslel si; měli raději křičet 'Unie #italic a#! smrt' místo toho. Bylo to spravedlivé? Možná. Bylo to legální? Sporně. Bylo to rozumné? Rozhodně ne.\n\nPodle jeho štěstí nyní na něj a jeho koutek světa spadne hněv jak [SCOPE.sCountry('hungary_country_scope').GetCapital.GetCityHubName], tak Vídně, a nemohl nic udělat, aby tomu zabránil."
+ hungary_events.5.a: "Sedmihradsko je neoddělitelnou součástí uherské koruny."
+ hungary_events.5.b: "Prozatím umožnit zachování místních privilegií."
+ hungary_events.5.c: "Dobře. Přijmout rozhodnutí sněmu."
+ hungary_events.5.e: "Překročili meze! Požadovat okamžité stažení ze Sedmihradska."
+ modifier_allowed_transylvanian_autonomy: "Povolená sedmihradská autonomie"
+ modifier_not_allowed_transylvanian_autonomy: "Zakázaná sedmihradská autonomie"
+ transylvanian_diet_abolished: "Tímto aktem se #bold Sedmihradský sněm#! de facto #bold zrušuje#!"
+ transylvanian_diet_retained: "Tímto aktem je samostatný #bold Sedmihradský sněm#! nyní #bold zachován#!"
+ hungary_likely_lead_to_war_tt: "Takové požadavky budou v [SCOPE.sCountry('hungary_country_scope').GetName] přijaty s pobouřením a jejich vystavení pravděpodobně povede k #n válce#!"
+ modifier_transylvanian_bands: "Loajální grenzérské pluky"
+ hungarian_revolution: "Uherská revoluce"
+ je_hungarian_revolution_backed_down_fail: "Byli jsme #bold $AUS$#! donuceni ustoupit od našich reforem"
+ modifier_revolutionary_fervor: "Revoluční zápal"
+ hungary_events.6.t: "Rakouské ultimátum"
+ hungary_events.6.d: "Hrozíc vojenskou akcí, vláda v [SCOPE.sCountry('austria_country_scope').GetCapital.GetCityHubName] protiprávně a jednostranně zrušila naše nedávné reformy a nyní požaduje, abychom se vrátili do řady."
+ hungary_events.6.f: "Když přednesl poselství z [SCOPE.sCountry('austria_country_scope').GetCapital.GetCityHubName], rakouský vyslanec zaťukal patami a uklonil se shromážděným uherským hodnostářům.\n\nPožadavky byly jasné: čas na vyjednávání pominul. Buď uherský sněm reformu zruší, nebo to za něj udělá rakouská armáda."
+ hungary_events.6.a: "To je poslední kapka. Maďaři, k zbraním!"
+ hungary_events.6.b: "Nemáme jinou možnost než přijmout."
+ austrian_ultimatium_tt: "Přijetím jejich ultimáta se zruší všechny naše reformy, a #bold $je_hungarian_revolution$#! [concept_journal_entry] #n selže#!"
+ modifier_humiliated_by_austria: "Ponížení Rakouskem"
+ hungary_events.7.t: "Vstaň, Maďare!"
+ hungary_events.7.d: "Zazní trubka napříč [ROOT.GetCountry.GetAdjective] územím a tisíce dobrovolníků se hrnou do nově zřízených náborových úřadů. Jak se plní seznamy pluků, nově povýšení generálové mezi sebou svádějí spory o to, jak je nejlépe využít."
+ hungary_events.7.f: ""Kde leží naše hroby,\nPoklekají naši vnuci,\nA s požehnáním v modlitbě\nBudou vyslovovat naše posvěcená jména.\nPři Bohu Maďarů\nSlibujeme,\nSlibujeme, že už nebudeme otroky!\n\n- Sándor Petőfi, #italic Nemzeti dal#!""
+ hungary_events.7.a: "Bojujeme za vlast, tam prolijeme svou krev."
+ hungary_events.7.b: "Kdo se odváží, zvítězí. Musíme přenést boj k nepříteli."
+ every_state_with_enlistment_decree_get_modifier: "Každý [ROOT.GetCountry.GetAdjective] [concept_state] s [GetDecreeType('decree_enlistment_efforts').GetName] [concept_decree] #b aktivním#! získá #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_mustering_the_honved_tt $modifier_mustering_the_honved$#! na #v [GetPlayer.MakeScope.ScriptValue('display_normal_modifier_time')]#! let"
+ modifier_mustering_the_honved_tt: "[GetStaticModifier('modifier_mustering_the_honved').GetName|v]\n[GetStaticModifier('modifier_mustering_the_honved').GetDesc]"
+ modifier_mustering_the_honved: "Mobilizace Honvédů"
+ modifier_defenders_of_the_homeland: "Obránci vlasti"
+ modifier_honved_mobilization_programme: "Program mobilizace Honvédů"
+ modifier_autumn_campaign: "Vpřed, Honvédové!"
+ hungary_events.8.t: "Sedmihradské povstání"
+ hungary_events.8.d: "Hluboce nespokojeni s unifikací Sedmihradska a [SCOPE.sCountry('hungary_country_scope').GetName] se tisíce předáků a prostých [GetCulture('romanian').GetName] shromáždily v Blaji a vyhlásily, že vezmou do rukou zbraně proti [SCOPE.sCountry('hungary_country_scope').GetCapital.GetCityHubName]."
+ hungary_events.8.f: "Mihai vytáhl z kabátu malé polní kukátko a upravil čočku. Ze svého místa na Kopci vinic viděl obrovské zástupy mužů, kteří se shromáždili v a kolem města. Tisíce alespoň, a pokud byl jejich oděv jakoukoli nápovědou, pocházeli z celého Sedmihradska a dál.\n\nZvuk prasklé větvičky přerušil jeho pozorování. Kroky? Když se ohlédl, neviděl žádné z #italic moți#! rváčů, kteří mu ten den dělali potíže. Ti parchanti by nedokázali připravit přepad ani kulhavé prasnici, pomyslel si, právě když kyj dopadl a rozprášil mu lebku."
+ hungary_events.8.a: "Zatraceni ti zrádci. Vyslat armádu."
+ hungary_events.8.b: "Libertate sau Moarte!"
+ hungary_events.8.c: "Potvrdit Sedmihradsko jako autonomní korunové území."
+ hungary_events.8.e: "Nenecháme se donutit houfem povýšených nevolníků."
+ modifier_auraria_gemina_legion: "Legie Auraria Gemina"
+ transylvanian_massacres_tt: "Jak se #bold řád rozpadá#!, zprávy o #n masakrech#! páchaných potulnými skupinami rolníků a vojáků se šíří po #bold Sedmihradsku#!"
+ hungary_events.9.t: "Uherské jaro"
+ hungary_events.9.d: "V šokujícím kroku prosazoval sněm ovládaný progresivci v [SCOPE.sCountry('hungary_country_scope').GetName] řadu zákonů, jejichž radikální povaha hrozí podkopat naši vládu nad národem."
+ hungary_events.9.f: "Detaily zpráv z [SCOPE.sCountry('hungary_country_scope').GetCapital.GetCityHubName] se lišily stejně jako reakce těch, kteří je přijali. Velký skok směrem k liberální budoucnosti, nebo klopýtnutí do chaosu a anarchie? Akt vzpoury, nebo inspirace pro zbytek říše? Výzva k odporu, nebo zbabělý zrada v zádech?\n\nSám nevěděl, ale obával se, že reakce z Hofburgu nebude nic přátelského."
+ hungary_events.9.a: "Máme naléhavější problémy k řešení."
+ hungary_events.9.b: "Prohlásit zákony za nelegální a požadovat jejich okamžité zrušení."
+ hungary_events.11.t: "Záležitost Uherska"
+ hungary_events.11.d: "S nástupem [ROOT.GetCountry.GetRuler.GetFullName] jako [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetName] byla zpochybněna vnímaná laxnost jeho předchůdce vůči [SCOPE.sCountry('hungary_country_scope').GetName]. Mnozí nyní vyzývají nového [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle], aby zrušil nedávné zákony přijaté uherským sněmem."
+ hungary_events.11.f: "Je opravdu schválení dané pod nátlakem vůbec schválením? Je panovník vázán pošetilými sliby svého předchůdce? Je vázán zákony přijatými bez řádné císařské autority?\n\nV očích [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstNameNoFormatting] to vůbec nebyly skutečné záhady. Jedinou otázkou bylo: jak daleko je ochoten zajít, aby uskutečnil svou vizi?"
+ hungary_events.11.a: "Zrušit zákony a formálně zrušit uherský sněm."
+ hungary_events.11.b: "Neriskujme to."
+ hungary_events.12.t: "Země zemí"
+ hungary_events.12.d: "Revoluce [ROOT.GetCountry.GetAdjective] byla ohromným úspěchem, dopad jejích ekonomických a politických reforem je cítit po celé zemi."
+ hungary_events.12.f: "Zde vlála krví posetá vlajka svobody nad maďarskou hlavou;\na zde v mnohaletých zápasech padli\nnaši nejlepší a nejvznešenější, mrtví.\n\nNavzdory dlouhým útrapám\na staletím bojů,\nnaše síla, byť oslabena, není vyčerpána;\nnaše země stále žije.\n\n- #italic Szózat#!, Mihály Vörösmarty"
+ hungary_events.12.a: "Ať žije maďarská svoboda!"
+ hungary_events.12.b: "Ať žije vlast!"
+ increased_chance_of_liberal_leaders_tt: "Všechny [Concept('concept_interest_group', '$concept_interest_groups$')] budou mít vyšší šanci vytvořit liberální a radikální [Concept('concept_leader', '$concept_leaders$')]."
+ modifier_efficient_magyarization: "Komplexní maďarizace"
+ modifier_hungarian_radicalism: "Země svobody"
+ modifier_a_liberal_century: "Revoluce potvrzena"
+ hungary_events.13.t: "Koruna sv. Štěpána"
+ hungary_events.13.d: "S konečným zajištěním [ROOT.GetCountry.GetAdjective] nezávislosti a s koncem období prozatímní vlády pod [ROOT.GetCountry.GetRuler.GetFullName] nastal čas, aby sněm definitivně rozhodl o postavení monarchie."
+ hungary_events.13.f: "Co se stane s prázdným Trůnem svatého Štěpána? Debata probíhala celý odpoledne a rada sotva učinila krok kupředu. Pragmatičtí monarchisté, horliví republikáni a všemožní Franco-, Anglo- a Rusofilové se několik dní ostře střetávali v novinových článcích, hádkách a v nejméně jednom případě i osobně.\n\nAle jak pragmatický rozum postupně otupuje pevné přesvědčení, jednou silné dělící linie se zamazávají a vznikají nová spojenectví. A na konci posledního projednávání bylo učiněno rozhodnutí."
+ hungary_events.13.a: "Habsburkové už ne. Uhry budou [GetLawType('law_presidential_republic').GetName]."
+ hungary_events.13.b: "Uherský šlechtic usedne na trůn."
+ hungary_events.13.c: "Pozvat [SCOPE.sCountry('russia_scope').GetAdjective] [SCOPE.sCountry('russia_scope').GetRuler.GetLastNameNoFormatting] do [ROOT.GetCountry.GetCapital.GetCityHubName]."
+ hungary_events.13.e: "Dobré vztahy s [SCOPE.sCountry('britain_scope').GetName] jsou nejdůležitější."
+ hungary_events.13.g: "Na trůn usedne [SCOPE.sCountry('france_scope').GetAdjective] princ."
+ restored_the_throne_of_st_stephen: "Obnoven trůn sv. Štěpána"
+ established_the_hungarian_republic: "Kossuthova revoluce"
+ restored_the_throne_of_st_stephen_negative: "Zradil Kossuthovu vizi"
+ established_the_hungarian_republic_negative: "Monarchistický nesouhlas"
+ notification_hungarian_king_elected_from_our_country_name: "[SCOPE.sCountry('hungary_scope').GetName] zvolí [ROOT.GetCountry.GetAdjective] [SCOPE.sCountry('hungary_scope').GetPrimaryRoleTitle]"
+ notification_hungarian_king_elected_from_our_country_desc: "V nedávném hlasování [SCOPE.sCountry('hungary_scope').GetAdjective] sněm zvolil [ROOT.GetCountry.GetAdjective] prince jako [SCOPE.sCountry('hungary_scope').GetPrimaryRoleTitle], který nyní bude vládnout zemi jako [SCOPE.sCountry('hungary_scope').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('hungary_scope').GetRuler.GetFullName]"
+ notification_hungarian_king_elected_from_our_country_tooltip: "#header $notification_hungarian_king_elected_from_our_country_name$#!\n$TOOLTIP_DELIMITER$\n$notification_hungarian_king_elected_from_our_country_desc$"
+ je_grunderzeit: "Gründerzeit"
+ je_grunderzeit_reason: "Na #bold německých zemích#! se zmocnilo #bold investiční šílenství#!, kapitál s horečnou intenzitou proudí do železnic, továren a bank - hnán bezbřehým optimismem, spekulativními ambicemi a slibem #bold nové průmyslové éry#!.\n\nNěmecké [Concept('concept_gdp', '$concept_gdp_short$')], poslední čtvrtletní výsledek: @gdp!#variable [GetGlobalVariable('grunderzeit_combined_gdp_global_var_baseline').GetValue|K]#!\nNěmecké [Concept('concept_gdp', '$concept_gdp_short$')], aktuálně: @gdp!#variable [GetPlayer.MakeScope.ScriptValue('grunderzeit_actual_gdp_script_value')|K]#!\nNěmecké [Concept('concept_gdp', '$concept_gdp_short$')], čtvrtletní cíl: @gdp!#variable [GetGlobalVariable('grunderzeit_combined_gdp_global_var_goal').GetValue|K]#!\n\n#bold Tempo doby zakládání#!\nThe #bold $je_grunderzeit$#! [concept_journal_entry] je organizován do #bold finančních čtvrtletí#!. Každé #v 3#! měsíce musí kombinované [Concept('concept_gdp', '$concept_gdp_short$')] všech #bold německých#! [Concept('concept_country', '$concept_countries$')] v #bold Evropě#! vzrůstat alespoň o #v 2.5#! procent. Pokud se to nepodaří, #n se vyčerpá#! #bold ukazatel postupu#! o #v 1#!, pokud se podaří, #g se zvýší#! o #v 1#! místo toho. Dosáhne-li ukazatel hodnoty #v 0#!, vyústí to v #n finanční krach#!."
+ je_grunderzeit_fail_tt: "Ukazatel #bold postupu#! dosáhl #v 0#!"
+ grunderzeit_possible_tt: "#v 75%#! nebo více všech #bold německých#! [Concept('concept_country', '$concept_countries$')] v #bold Evropě#! prozkoumalo [GetTechnology('mutual_funds').GetName] a má alespoň jednu úroveň [GetBuildingType('building_railway').GetName] (aktuálně [GetGlobalVariable('grunderzeit_countries_percent').GetValue|v%0])"
+ grunderzeit_progress_bar: "Gründerzeit"
+ grunderzeit_progress_bar_desc: "Nedávné cíle [Concept('concept_gdp', '$concept_gdp_short$')] splněny: #v [JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|0]/4#!"
+ grunderzeit.1.t: "Gründerkrach"
+ grunderzeit.1.d: "Roky optimismu a ekonomického růstu prudce skončily, s krvavě červenými čísly hlášenými na německých burzách, když banky a spekulativní společnosti padaly jako domino."
+ grunderzeit.1.f: "#bold Bankovní panika v [ROOT.GetCountry.GetCapital.GetCityHubName]#!\nOznámení o likvidaci řady prominentních společností spustilo lavinu, která smetla nejen drobné investory, ale i známé finančníky. Po celý den kurýři jezdili mezi davem a obchodníci byli viděni, jak pálí bezcenné akciové poukázky."
+ grunderzeit.1.a: "Na vině jsou spekulanti a nekontrolovaný ekonomický liberalismus."
+ grunderzeit.1.b: "Je to dílo predátorských agentů mezi námi."
+ modifier_grunderkrach_blame_minorities: "Finanční konspirační teorie"
+ modifier_grunderkrach_blame_free_trade: "Volný obchod diskreditován"
+ modifier_grunderkrach_blame_minorities_ig_boost: "Šíření antisemitské literatury"
+ modifier_grunderkrach: "Gründerkrise"
+ modifier_grunderkrach_blame_minorities_half_dummy: "$modifier_grunderkrach_blame_minorities$"
+ modifier_grunderkrach_blame_free_trade_half_dummy: "$modifier_grunderkrach_blame_free_trade$"
+ modifier_grunderkrach_blame_minorities_ig_boost_half_dummy: "$modifier_grunderkrach_blame_minorities_ig_boost$"
+ modifier_grunderkrach_half_dummy: "$modifier_grunderkrach$"
+ grunderzeit.2.t: "Třicet let pokroku"
+ grunderzeit.2.d: "Po desetiletích ekonomické prosperity se intenzivní hnací síla a aktivita, které je charakterizovaly, poněkud utišily. Tyto roky vstoupí do [ROOT.GetCountry.GetAdjective] historie jako některé z jejích nejslavnějších."
+ grunderzeit.2.f: "\"A nazvali to bublina, pah! Bublina!? Jen #italic blázen#! by investoval majetek své drahé do něčeho takového, a řeknu ti jednu věc, #italic liebchen#!, já nejsem blázen.\""
+ grunderzeit.2.a: "Tři jásoty na nezdolného podnikatelského ducha člověka!"
+ grunderzeit.2.b: "Ať jsou tyto dekády jen první z mnoha."
+ modifier_grunderyears_success: "Duch slavného třicetiletí"
+ modifier_grunderyears_success_2: "Lesk slavného třicetiletí"
+ modifier_grunderyears_success_half_dummy: "$modifier_grunderyears_success$"
+ modifier_grunderyears_success_2_half_dummy: "$modifier_grunderyears_success_2$"
+ grunderzeit.3.t: "Věk podnikatelů"
+ grunderzeit.3.d: "Podpořené inovacemi ve finančním právu a šířením železnice, německé země bzučí aktivitou, nové společnosti a podnikatelské projekty vyrůstají jako houby po dešti."
+ grunderzeit.3.f: "Dělník znovu práskl bičem a hnál vyčerpaný vozíkový tým vpřed. Dnes udělali slušný pokrok - většina písku byla odnesena ze staveniště. Ale slušný není dost. A ani dobré sotva stačí.\n\nBič práskl znovu.\n\nDozorce pocítil výčitku vůči těm chudým tvorečkům, ale rychle myšlenku odhrnul. Milosrdenství tento areál z továrnu nepromění. Rozhodnost ano."
+ grunderzeit.3.a: "Kupuj! Investuj! Rozšiřuj se!"
+ grunderzeit.3.b: "Nenechme se příliš unášet."
+ modifier_grunderzeit_boom: "Tempo doby zakládání"
+ grunderzeit_participant_high: "Bonusy #bold $je_grunderzeit$#! [concept_journal_entry] budou #g silnější#!, ale stejně tak bude jakýkoli následný #n krach#!"
+ grunderzeit_participant_low: "Bonusy #bold $je_grunderzeit$#! [concept_journal_entry] budou #n slabší#!, ale stejně tak bude jakýkoli následný #n krach#! slabší"
+ grunderzeit_bonus_last_tt: "Následující [concept_modifier] bude aktivní po dobu trvání #bold $je_grunderzeit$#! [concept_journal_entry]"
+ grunderzeit_expectations_tt: "@warning! Aby byla udržena důvěra investorů, musí kombinované [Concept('concept_gdp', '$concept_gdp_short$')] všech #bold německých#! [Concept('concept_country', '$concept_countries$')] růst o #v 2.5%#! [Concept('concept_gdp', '$concept_gdp_short$')] za čtvrtletí"
+ grunderzeit_status_desc_default_key: "Německý ekonomický zázrak je teprve na obzoru."
+ grunderzeit_status_desc_key_1:1 "Ekonomika je #n v úpadku#!"
+ grunderzeit_status_desc_key_2: "Ekonomika #n stagnuje#!"
+ grunderzeit_status_desc_key_3: "Ekonomika #g prosperuje#!"
+ grunderzeit_status_desc_key_4: "Ekonomika #g kvete#!"
+ grunderzeit_status_desc_key_0: "Ekonomika #bold zkolabovala#!"
+ je_bavarocracy: "Bavarokracie"
+ je_bavarocracy_reason: "Od svého založení v roce 1832 bylo vznikající [ROOT.GetCountry.GetAdjective] království - první skutečně nezávislý řecký stát od dob Konstantina XI. - pod nadvládou [SCOPE.sCharacter('king_otto_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('king_otto_scope').GetFirstName] a jeho bavorských regentů.\n\nPokud chce mladý král dokázat, že je hoden vlády nad Hellény, bude muset učinit razantní kroky, aby uklidnil své nové poddané."
+ je_bavarocracy_complete_tt: "Bavorské rozhořčení je pod #v 10#!"
+ je_bavarocracy_fail_tt: "Bavorské rozhořčení bylo #v 80#! nebo více po dobu #v 50#! měsíců. Aktuálně tomu tak bylo po dobu #v [GetPlayer.MakeScope.Var('je_bavarocracy_timer_var').GetValue]#! měsíců."
+ modifier_foreign_administration: "Zahraniční správa"
+ bavarocracy_german_characters_tt: "[GetCulture('south_german').GetName] [Concept('concept_commander','$concept_commanders$')] nebo [Concept('concept_character', '$concept_characters$')] v [concept_in_government]"
+ bavarocracy_catholic_ruler_tt: "#bold nemá#! [GetReligion('orthodox').GetName] [concept_ruler]"
+ bavarocracy_no_heir_tt: "[concept_ruler] #bold nemá#! [concept_heir]"
+ bavarocracy_no_wife_tt: "[concept_ruler] není v manželství"
+ bavarocracy_no_voting_tt: "#bold nemá#! [Concept('concept_votes','$concept_voting_rights$')]"
+ bavarocracy_small_army_tt: "nasazuje méně než #v 10#! [Concept('concept_battalion', '$concept_battalions$')]"
+ bavarocracy_turmoil_tt: "[Concept('concept_radical','$concept_radicals$')] ve vlastněných [GetCulture('greek').GetName] [concept_homeland] [Concept('concept_state','$concept_states$')]"
+ bavarocracy_losing_wars_tt: "nedávno #r prohrál#! [concept_war]"
+ bavarocracy_greek_homeland_states_tt: "vlastní [GetCulture('greek').GetName] [concept_homeland] [Concept('concept_state','$concept_states$')]"
+ bavarocracy_loyalists_tt: "[Concept('concept_loyalist','$concept_loyalists$')] ve vlastněných [GetCulture('greek').GetName] [concept_homeland] [Concept('concept_state','$concept_states$')]"
+ bavarocracy_winning_wars_tt: "nedávno #g vyhrál#! [concept_war]"
+ bavarocracy_university_tt: "mít alespoň jednu [GetBuildingType('building_university').GetName] v [GetCulture('greek').GetName] [concept_homeland] [concept_state]"
+ bavarocracy_large_army_tt: "nasazuje více než #v 20#! [Concept('concept_battalion', '$concept_battalions$')]"
+ je_bavarocracy_convert_button: "Přejít na východní ortodoxii"
+ je_bavarocracy_convert_button_desc: "Ačkoliv je [ROOT.GetCountry.GetName] pevně [GetReligion('orthodox').GetName] země, [SCOPE.sCharacter('king_otto_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('king_otto_scope').GetFirstName] neochvějně lpí na své rodné [GetReligion('catholic').GetName] víře, což vyvolává mezi jeho novými poddanými značné rozhořčení.\n\nPokud má Othonova vláda přetrvat mezi Řeky, možná bude třeba učinit některé osobní oběti?"
+ modifier_suspected_crypto_catholic: "Podezření na skrytého katolíka"
+ je_bavarocracy_convert_possible: "[SCOPE.sCharacter('king_otto_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('king_otto_scope').GetFirstName] vyznává [GetReligion('catholic').GetName]"
+ bavarocracy_progress_bar_decrease_10_tt: "#bold Snižuje#! #bold Bavorské rozhořčení#! o #variable 10#!"
+ bavarocracy_progress_bar: "Bavorské rozhořčení"
+ bavarocracy_progress_bar_desc: "[concept_bavarocratic_ire]: ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)]/100)"
+ bavarocracy_events.1.t: "Civilizační král Hellénů"
+ bavarocracy_events.1.d: "Po úspěšném provedení země bouřlivými ranými lety se [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstName] nyní etabloval jako schopný státník v čele stabilní vlády."
+ bavarocracy_events.1.f: "S šálkem kávy v ruce [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstNameNoFormatting] přehraboval ranní korespondenci. Zprávy o silničních lupičích, korupčních skandálech a frakčních sporech - jako obvykle. Mezi těmi se však objevovaly i náznaky změny: účinky nedávných policejních reforem, založení intelektuálních institucí a probouzení moderního byrokratického aparátu. Hodně práce ještě zbývalo, ale rok od roku byly ranní povinnosti [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] o něco příjemnější."
+ bavarocracy_events.1.a: "Nový Periklés!"
+ bavarocracy_events.1.b: "Nový Alexandr!"
+ modifier_ottonian_renaissance: "Othonovská renesance"
+ modifier_ottonian_reforms: "Othonovy reformy úřednictva"
+ bavarocracy_events.1.tt_1: "Po dokončení [concept_journal_entry] přijetím autokracie získáme následující odměnu:"
+ bavarocracy_events.1.tt_2: "Po dokončení [concept_journal_entry] přijetím demokracie získáme následující odměnu:"
+ modifier_bavarocracy_autocratic: "Helénský řád"
+ modifier_bavarocracy_democratic: "Helénské svobody"
+ bavarocracy_events.2.t: "Pád krále Otta"
+ bavarocracy_events.2.d: "Rozhněváni bavorskou klikou propuklo v [ROOT.GetCountry.GetCapital.GetCityHubName] lidové povstání a sesadilo [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstName], který byl naposledy spatřen nastupovat na cizí škuner plující na sever. S odchodem starého [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] byla lidu dočasnou vládou nabídnuta možnost zvolit jeho následníka."
+ bavarocracy_events.2.f: "\"Žádné tištěné hlasovací lístky? To má být nějaký vtip?\"\n\n\"Ne, pane. Prostě napište jméno muže, kterého chcete na trůně, a odevzdejte mi to do hodiny.\""
+ bavarocracy_events.2.a: "Dánský princ"
+ bavarocracy_events.2.b: "Republika"
+ bavarocracy_events.2.c: "Britský princ"
+ bavarocracy_events.2.e: "Francouzský princ"
+ bavarocracy_events.2.g: "Ruský císařský princ"
+ bavarocracy_events.2.h: "Král"
+ bavarocracy_events.2.i: "Garibaldi"
+ modifier_an_inconvenient_republic: "Opportunistický republikanismus"
+ modifier_architects_of_the_second_republic: "Architekti Druhé republiky"
+ bavarocracy_prince_danish_tt: "#b $DEN_ADJ$#! [GetIdeology('ideology_reformer').GetName] princ se stane #b Králem Hellénů#! jako #b George I#!"
+ bavarocracy_prince_french_tt: "#b $FRA_ADJ$#! princ vládnoucí dynastie se stane #b Králem Hellénů#! jako #b George I#!"
+ bavarocracy_prince_british_tt: "#b $GBR_ADJ$#! [GetIdeology('ideology_market_liberal').GetName] princ se stane #b Králem Hellénů#! jako #b George I#!"
+ bavarocracy_prince_russian_tt: "#b $RUS_ADJ$#! [GetIdeology('ideology_royalist').GetName] princ se stane #b Králem Hellénů#! jako #b George I#!"
+ bavarocracy_prince_french_bourbon_tt: "#b Legitimista#! [GetIdeology('ideology_traditionalist').GetName] princ se stane #b Králem Hellénů#! jako #b George I#!"
+ bavarocracy_prince_french_orleans_tt: "#b Orleanista#! [GetIdeology('ideology_market_liberal').GetName] princ se stane #b Králem Hellénů#! jako #b George I#!"
+ bavarocracy_prince_french_bonaparte_tt: "#b Bonapartist#! [GetIdeology('ideology_jingoist_leader').GetName] princ se stane #b Králem Hellénů#! jako #b George I#!"
+ bavarocracy_prince_garibaldi_tt: "Giuseppe Garibaldi se stane #b Králem Hellénů#! jako #b Iosif I#!"
+ modifier_revolutionary_king: "Frýgijská koruna"
+ bavarocracy_expell_tt: "#b Král Otto#! a jeho #b bavorští#! rádci půjdou do #b exilu#!"
+ bavarocracy_fail_tt: "Pád [SCOPE.sCharacter('king_otto_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('king_otto_scope').GetFirstName] může otevřít #tooltippable #tooltip:bavarocracy_fail_explanation_tt nové politické příležitosti#!#!"
+ bavarocracy_fail_explanation_tt: "Konec bavarokracie nám umožní dosadit na trůn #b $DEN_ADJ$#! prince, přijatelného pro [Concept('concept_great_power', '$concept_great_powers$')], nebo založit #b Druhou helénskou republiku#!\n\n#b $FRA$#!, #b $GBR$#! nebo #b $RUS$#!, které nám dluží [concept_obligation], přinutí ignorovat ustanovení #b Londýnské konference z roku 1832#! a dovolí nám zvolit jednoho z jejich princů jako Krále Hellénů.\n\nPotenciální zahraniční král přijde s následující [Concept('concept_ideology', '$concept_ideologies$')]:\n• $DEN_ADJ$: [GetIdeology('ideology_reformer').GetName]\n• $GBR_ADJ$: [GetIdeology('ideology_market_liberal').GetName]\n• $RUS_ADJ$: [GetIdeology('ideology_royalist').GetName]\n• $FRA_ADJ$ Oreanist: [GetIdeology('ideology_market_liberal').GetName]\n• $FRA_ADJ$ Legitimist: [GetIdeology('ideology_traditionalist').GetName]\n• $FRA_ADJ$ Bonapartist: [GetIdeology('ideology_jingoist_leader').GetName]"
