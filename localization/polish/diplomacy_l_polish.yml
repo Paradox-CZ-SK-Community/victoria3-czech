@@ -177,7 +177,7 @@
  DIPLOMATIC_PACT_REQUIREMENT_AT_PEACE: "Obě [Concept('concept_country', '$concept_countries$')] nesmí být na opačných stranách ve [concept_war]"
  DIPLOMATIC_PACT_REQUIREMENT_DIPLOMATIC_AUTONOMY: "Ani jedna z [Concept('concept_country', '$concept_countries$')] není [concept_subject] bez diplomatické autonomie"
  DIPLOMATIC_PACT_REQUIREMENT_DURATION_NOT_EXPIRED: "Doba trvání vynuceného [concept_diplomatic_pact] ještě nevypršela"
- DIPLOMATIC_PACT_REQUIREMENT_HIGH_LIBERTY_DESIRE: "[SCOPE.sCountry('source_country').GetName] [concept_liberty_desire] musí být alespoň #v 25#!, nebo mít stejného [concept_overlord]" # todo: [SCOPE.sCountry('source_country').GetName] [concept_liberty_desire] musí být alespoň #v 25#!, nebo sdílet stejného [concept_overlord]
+ DIPLOMATIC_PACT_REQUIREMENT_HIGH_LIBERTY_DESIRE: "[SCOPE.sCountry('source_country').GetName] [concept_liberty_desire] musí být alespoň #v 25#!, nebo mít stejného [concept_overlord]"
  DIPLOMATIC_PACT_REQUIREMENT_MORE_TECHS_RESEARCHED: "[SCOPE.sCountry('actor').GetName] musí mít odemčeno více [Concept('concept_technology', '$concept_technologies$')] než [SCOPE.sCountry('target_country').GetName]"
  DIPLOMATIC_PACT_REQUIREMENT_NOT_DECENTRALIZED: "Ani jedna ze dvou [Concept('concept_country', '$concept_countries$')] není [concept_decentralized_nation]"
  DIPLOMATIC_PACT_REQUIREMENT_NO_SUBJECT_RELATION: "Ani [concept_country] není [concept_subject] druhé"
@@ -264,8 +264,8 @@
  DIPLO_ACTION_TRADE_STATES_NOT_SAME_REGION: "Obchodované [Concept('concept_state','$concept_states$')] musí být v různých [Concept('concept_state_region', '$concept_state_regions$')]"
  DIPLO_ACTION_TRADE_STATES_WOULD_BREAK_CONNECTION: "Both [Concept('concept_country', '$concept_countries$')] must have a land or sea connection to the selected [Concept('concept_state','$concept_states$')] after the trade"
  DIPLO_PACT_RELATIONS_BREAKDOWN_FORMAT: "#header [concept_relations] pokrok#!\n#v $DAYS$#! dnů do [SelectLocalization( LessThan_CFixedPoint( '(CFixedPoint)$PROGRESS_DAILY|5$', '(CFixedPoint)0' ), '#r -', '#g ' )]100%#!\n$TOOLTIP_DELIMITER$\n#v $PROGRESS_DAILY|%2=+$#! denní pokrok díky:\n$BREAKDOWN$"
- DIPLO_PACT_RELATIONS_CHANGE_NEG: "[concept_relations] se zhorší o #r -1#! za $DAYS|v$ dní. Celkový pokrok je #v $PROGRESS_DAILY|%+=2$#! ($PROGRESS_DAILY|4$) vztahů za den" # todo: [concept_relations] se zhorší o #r -1#! za $DAYS|v$ dnů. Celkový pokrok je #v $PROGRESS_DAILY|%+=2$#! ($PROGRESS_DAILY|4$) vztahů za den
- DIPLO_PACT_RELATIONS_CHANGE_POS: "[concept_relations] se zlepší o #g +1#! za $DAYS|v$ dní. Celkový pokrok je #v $PROGRESS_DAILY|%+=2$#! ($PROGRESS_DAILY|4$) vztahů za den" # todo: [concept_relations] se zlepší o #g +1#! za $DAYS|v$ dnů. Celkový pokrok je #v $PROGRESS_DAILY|%+=2$#! ($PROGRESS_DAILY|4$) vztahů za den
+ DIPLO_PACT_RELATIONS_CHANGE_NEG: "[concept_relations] se zhorší o #r -1#! za $DAYS|v$ dní. Celkový pokrok je #v $PROGRESS_DAILY|%+=2$#! ($PROGRESS_DAILY|4$) vztahů za den"
+ DIPLO_PACT_RELATIONS_CHANGE_POS: "[concept_relations] se zlepší o #g +1#! za $DAYS|v$ dní. Celkový pokrok je #v $PROGRESS_DAILY|%+=2$#! ($PROGRESS_DAILY|4$) vztahů za den"
  DIPLO_PACT_RELATIONS_CHANGE_TOTAL: "\n$DESC$, díky: #indent_newline:3 \n$DESC_DETAILS$#!"
  DIPLO_PACT_RELATIONS_EFFECT_BASE_VALUE: "#v $VAL|%2=+$#! základní hodnota"
  DIPLO_PLAY_GREAT_POWER_TRIGGER: "Musíme být [concept_great_power], abychom zahájili tuto [concept_diplomatic_play]"

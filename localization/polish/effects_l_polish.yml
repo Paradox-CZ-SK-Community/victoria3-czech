@@ -17,7 +17,7 @@
  ADD_CHARACTER_IDEOLOGY_THIRD: "[PoliticalMovement.GetName] získá [IDEOLOGY.GetName] jako potenciální [concept_character] [concept_ideology]"
  ADD_CHARACTER_ROLE: "[CHARACTER.GetFullName] se stává #v $ROLE$#!"
  ADD_CHARACTER_ROLE_GLOBAL: "Stává se #v $ROLE$#!"
- ADD_CIVIL_WAR_PROGRESS: "Změnit pokrok [CIVIL_WAR.GetPoliticalMovement.GetName] [CIVIL_WAR.GetName] o $VALUE|%0-$" # todo: Změnit pokrok [CIVIL_WAR.GetPoliticalMovement.GetName] [CIVIL_WAR.GetName] o $VALUE|%0-$
+ ADD_CIVIL_WAR_PROGRESS: "Změnit pokrok [CIVIL_WAR.GetPoliticalMovement.GetName] [CIVIL_WAR.GetName] o $VALUE|%0-$"
  ADD_CLAIM: "[TARGET_COUNTRY.GetName] získává [concept_claim] na [STATE_REGION.GetName]"
  ADD_CLAIM_THIRD: "[TARGET_COUNTRY.GetName] získává [concept_claim] na [STATE_REGION.GetName]"
  ADD_COHESION_NUMBER: "[concept_power_bloc] získává #positive_value $VALUE$#! [concept_power_bloc_cohesion]"
@@ -66,7 +66,7 @@
  ADD_EMBARGOED_GOODS: "[COUNTRY.GetName] začíná [Concept('concept_embargo', '$concept_embargoing$')] [TARGET_GOODS.GetName]"
  ADD_EMBARGOED_GOODS_FIRST: "[COUNTRY.GetNameNoFlag] začíná [Concept('concept_embargo', '$concept_embargoing$')] [TARGET_GOODS.GetName]"
  ADD_EMBARGOED_GOODS_THIRD: "[COUNTRY.GetName] začíná [Concept('concept_embargo', '$concept_embargoing$')] [TARGET_GOODS.GetName]"
- ADD_ENACTMENT_MODIFIER: "[COUNTRY.GetName] získává #tooltippable #tooltip:[GetRawTextTooltipTag('$ADD_MODIFIER_BREAKDOWN$')] $MODIFIER_NAME$#!#! $MAYBE_DECAYING_WITH_SPACE_AFTER$během současného nebo příštího zákona [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enactment$')]\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!" # todo: [COUNTRY.GetName] získá #tooltippable #tooltip:[GetRawTextTooltipTag('$ADD_MODIFIER_BREAKDOWN$')] $MODIFIER_NAME$#!#! $MAYBE_DECAYING_WITH_SPACE_AFTER$během současného nebo následujícího zákona [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enactment$')]\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!
+ ADD_ENACTMENT_MODIFIER: "[COUNTRY.GetName] získává #tooltippable #tooltip:[GetRawTextTooltipTag('$ADD_MODIFIER_BREAKDOWN$')] $MODIFIER_NAME$#!#! $MAYBE_DECAYING_WITH_SPACE_AFTER$během současného nebo příštího zákona [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enactment$')]\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!"
  ADD_ENACTMENT_MODIFIER_FIRST: "$ADD_ENACTMENT_MODIFIER$"
  ADD_ENACTMENT_MODIFIER_FIRST_NEG: "$ADD_ENACTMENT_MODIFIER$"
  ADD_ENACTMENT_MODIFIER_NEG: "$ADD_ENACTMENT_MODIFIER$"

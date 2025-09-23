@@ -19,7 +19,7 @@
  1848.4.d: "Pod vedením [SCOPE.sCharacter('radical_leader_scope').GetFullName], [GetIdeology('ideology_radical').GetName] hnutí se stává velmi rozšířené v [ROOT.GetCountry.GetName]. Ať už je podporujeme, nebo proti nim vystupujeme, toto ohlašuje období velkých změn a reakcí."
  1848.4.d_no_leader: "Podníceno revolučními pocity, které se šíří Evropou, se [GetIdeology('ideology_radical').GetName] hnutí se stává velmi rozšířené v [ROOT.GetCountry.GetName]. Ať už je podporujeme nebo se jim proti, ohlašují dobu velkých změn a reakcí."
  1848.4.f: ""Lidé [ROOT.GetCountry.GetAdjectiveNoFormatting] národa mají právo vládnout sami, osvobozeni od spárů králů a aristokratů, kteří hromadí dědičnou moc. Naše požadavky byly jasně vyjádřeny; a buď budou splněny, nebo se vydáme do ulic. Vybojujeme si svobodu krví mučedníků, pokud to bude nutné.""
- 1848.4.t: "Jaro národů" # todo: Jaro národů
+ 1848.4.t: "Jaro národů"
  1848.5.a: "Tajná policie poskytne diskrétní řešení."
  1848.5.b: "Potřebujeme Národní gardu."
  1848.5.c: "Tyranie není odpovědí."
@@ -153,7 +153,7 @@
  autocracy.3.a: "Naplňte je loajalitou k státu."
  autocracy.3.b: "Odpusťte se nečistým myšlenkám."
  autocracy.3.d: "[SCOPE.gsInterestGroup('church_scope').GetName] ve [SCOPE.sState('religious_serfs_state').GetName] ujišťují [SCOPE.sPop('religious_serf_pop').GetName], že navzdory tvrdým podmínkám jejich života slouží většímu dobru národa [ROOT.GetCountry.GetAdjective]. Nevolníci budou odměněni v záhrobí za své služby."
- autocracy.3.f: ""Blahoslavení tiší,\nneboť oni zdědí zemi,\nBlahoslavení ti, kdo lační a žízní po spravedlnosti\nneboť oni budou nasyceni,\nBlahoslavení milosrdní\nneboť jim bude projeveno milosrdenství." \n\n–#italic Kázání na hoře#!, Matouš 5: 5-7" # todo: "Blahoslavení tichí,\nneboť oni zdědí zemi,\nBlahoslavení, kteří lační a žízní po spravedlnosti\nneboť oni budou nasyceni,\nBlahoslavení milosrdní\nneboť oni dojdou milosti." \n\n–#italic Kázání na hoře#!, Matouš 5: 5-7" # todo: "Blahoslavení tichí,\nneboť oni zdědí zemi,\nBlahoslavení ti, kteří lační a žízní po spravedlnosti,\nneboť oni budou nasyceni,\nBlahoslavení milosrdní,\nneboť oni budou obdařeni milosrdenstvím." \n\n–#italic Kázání na hoře#!, Matouš 5: 5-7" # todo: \
+ autocracy.3.f: ""Blahoslavení tiší,\nneboť oni zdědí zemi,\nBlahoslavení ti, kdo lační a žízní po spravedlnosti\nneboť oni budou nasyceni,\nBlahoslavení milosrdní\nneboť jim bude projeveno milosrdenství." \n\n–#italic Kázání na hoře#!, Matouš 5: 5-7"
  autocracy.3.t: "Požehnáni jsou tichí"
  ban_liquor: "Zákaz alkoholu"
  ban_liquor_desc: "Konzumace alkoholu sráží naše občany k jejich základním pudům. Alkohol musí být zakázán, aby se zajistila morální a civilizovaná společnost."
@@ -339,7 +339,7 @@
  communism.9.t: "M prostředí produkce"
  communism_1_progress_bar: "Duch, který straší svět"
  communism_1_progress_bar_desc: "Pokrok:"
- communism_progress_bar_at_full_tt: "#variable $communism_1_progress_bar$#! ukazatel postupu dosáhl #variable 100%#!" # todo: #variable $communism_1_progress_bar$#! ukazatel postupu dosáhl #variable 100%#!
+ communism_progress_bar_at_full_tt: "#variable $communism_1_progress_bar$#! ukazatel postupu dosáhl #variable 100%#!"
  communism_progress_from_characters_tt: "popularita [Concept('concept_character', '$concept_characters$')] podporujících [GetLawType('law_council_republic').GetName]"
  communism_progress_from_events_tt: "události a další účinky"
  communism_progress_from_interest_groups_tt: "[Concept('concept_interest_group','$concept_interest_groups$')] podporující [GetLawType('law_council_republic').GetName]"
@@ -798,7 +798,7 @@
  je_conquer_oregon: "Anektovat Oregon"
  je_conquer_oregon_reason: "Jelikož Britové odmítli postoupit Oregon diplomaticky, musíme to vzít silou zbraní."
  je_consolidate_colonial_rule: "Upevnit koloniální vládu"
- je_consolidate_colonial_rule_goal: "Nejvyšší [Country.GetAdjectiveNoFlag] [concept_secession] pokrok je menší než #variable 30%#! po dobu #v 120#! měsíců\n• (V současnosti to platí #variable [ROOT.GetCountry.MakeScope.Var('east_indies_revolt_var').GetValue]#! měsíců)" # todo: Nejvyšší [Country.GetAdjectiveNoFlag] [concept_secession] pokrok je menší než #variable 30%#! po dobu #v 120#! měsíců\n• (V současnosti tomu tak bylo #variable [ROOT.GetCountry.MakeScope.Var('east_indies_revolt_var').GetValue]#! měsíců)
+ je_consolidate_colonial_rule_goal: "Nejvyšší [Country.GetAdjectiveNoFlag] [concept_secession] pokrok je menší než #variable 30%#! po dobu #v 120#! měsíců\n• (V současnosti to platí #variable [ROOT.GetCountry.MakeScope.Var('east_indies_revolt_var').GetValue]#! měsíců)"
  je_consolidate_colonial_rule_reason: "Hranice našich indických teritorií se osvědčila jako stála zdroj rizika. Jsme obklopeni nepořádnými politickými těmito zlovolnými panovníky, které mohou kdykoliv ohrozit integritu našeho území. Abychom zajistili bezpečnost našich jádrových majetků, ti domorodí panovníci, kteří se vyhýbají našim pravidlům se musí dostat pod kontrolu, a jakékoliv náznaky populární rezistence musí být rozdrceny, než se situace dostane mimo kontrolu.\n\nJak rozšiřujeme naši administrativu po Indii, dostaneme příležitost zřídit nové [Concept('concept_princely_state', '$concept_princely_states$')] pro podporu naší správy. Přílišná přímá kontrola nad množstvím půdy přivede [concept_liberty_desire] našich stávajících poddaných k nárůst."
  je_dialectics: "Oddělení filozofie"
  je_dialectics_reason: "I když filozofie existuje po staletí, je čas začít ji brát vážně jako obor. Mělo by být založeno plně financované filozofické oddělení na všech našich nejlepších vzdělávacích institucích."
@@ -1286,7 +1286,7 @@
  path_to_vanguardism: "Cesta k avantgardismu"
  patriocitc_taxation_ig: "Veřejná pochvala"
  patriotic_taxation: "Patriotická zdanění"
- peoples_springtime_underway_tt: "Každá #b evropská#! [concept_country] s [concept_rank] [concept_major_power] nebo vyšším prožívá #tooltippable;tooltip:[GetPlayer.GetTooltipTag],liberal_movements_list_tt Liberální#! nebo #tooltippable;tooltip:[GetPlayer.GetTooltipTag],socialist_movements_list_tt Socialistická#! [concept_revolution]" # todo: Jakákoli #b evropská#! [concept_country] s [concept_rank] [concept_major_power] nebo vyšším prožívá #tooltippable;tooltip:[GetPlayer.GetTooltipTag],liberal_movements_list_tt Liberální#! nebo #tooltippable;tooltip:[GetPlayer.GetTooltipTag],socialist_movements_list_tt Socialistická#! [concept_revolution]
+ peoples_springtime_underway_tt: "Každá #b evropská#! [concept_country] s [concept_rank] [concept_major_power] nebo vyšším prožívá #tooltippable;tooltip:[GetPlayer.GetTooltipTag],liberal_movements_list_tt Liberální#! nebo #tooltippable;tooltip:[GetPlayer.GetTooltipTag],socialist_movements_list_tt Socialistická#! [concept_revolution]"
  philanthropy_law: "Filantropie"
  philanthropy_mod: "Dávat štědře"
  plague.1.a: "Musíme doufat, že se to nešíří!"
