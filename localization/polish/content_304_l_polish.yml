@@ -57,8 +57,8 @@
  caudillo.6.t: "Výzva k vedení"
  central_government_defeated_tt: "#bold centrální vláda#! v [GetGlobalVariable('chinese_central_government').GetCountry.GetName|v] byla poražena"
  charles_xv_death_tt: "Karel XV. umírá."
- chi_add_1_fragile_unity_tt:1 "Pokroková lišta #Bold Křehké Jednoty#! [concept_journal_entry] je zvýšena o #Bold 1#!"
- chi_remove_1_fragile_unity_tt:1 "Progresní barva #Bold Křehké Jednoty#! [concept_journal_entry] je vyčerpána o #Bold 1#!"
+ chi_add_1_fragile_unity_tt: "Pokroková lišta #Bold Křehké Jednoty#! [concept_journal_entry] je zvýšena o #Bold 1#!"
+ chi_remove_1_fragile_unity_tt: "Progresní barva #Bold Křehké Jednoty#! [concept_journal_entry] je vyčerpána o #Bold 1#!"
  china_shattered_tt: "#v $CHI$#! nedokázal [je_warlord_china] [concept_journal_entry]"
  confederation_of_rhine_cooldown_year_tt: "Toto rozhodnutí bude znovu dostupné za #bold 3 roky#!"
  corporate_state.1.a: "Jejich podpora je vítaná."
@@ -226,7 +226,7 @@
  je_risorgimento_italian_minors_tt: "Menší národy #b $ITA_ADJ$#! se mohou sjednotit s námi, pokud se staneme jediným #b $ITA_ADJ$#! [concept_unification_candidate]"
  je_risorgimento_italian_radicals_button: "Podpořte pro-sjednocení sentimentu"
  je_risorgimento_italian_radicals_button_desc: "Po celé italském poloostrově se masy pomalu probouzejí a obracejí se k myšlence sjednocené Itálie. Pokud se jejich vládci nezdají být ochotni následovat toto volání, snad jejich lidé ano."
- je_risorgimento_reason: "Větry nacionalismu, které se přelévají Evropou, začínají procházet [ROOT.GetCountry.GetName], inspirující postavy jak v naší vládě, tak mimo ni, aby hleděly k obnově jediné, sjednocené Itálie.\n\nV našich [SCOPE.sCulture('north_italian_scope').GetName] a [SCOPE.sCulture('south_italian_scope').GetName] státech máme [Country.MakeScope.Var('italian_states_radicals_total').GetValue|D] radikálů z celkové populace [Country.MakeScope.Var('italian_states_pop_total').GetValue|D], což představuje [Country.MakeScope.Var('italian_states_radicals_total_bar').GetValue|R]#red %#! naší italské populace.\n\nDosažení #red;bold;shadow 25%#! povede k převzetí [ROOT.GetCountry.GetAdjective] vlády plně italskými revolucionáři[ROOT.GetCountry.GetCustom('italy_fate_loc')]."
+ je_risorgimento_reason: "Větry nacionalismu, které zasahují Evropu, začaly proudit i přes [ROOT.GetCountry.GetName], inspirujíce osobnosti jak uvnitř naší vlády, tak mimo ni, aby směřovaly k obnově jediné, sjednocené Itálie.\n\nDokud je tento zápis v deníku aktivní, jakákoliv aktivní [concept_revolution] způsobená [SelectLocalization(SCOPE.sPoliticalMovement('italian_national_movement').IsValid, SCOPE.sPoliticalMovement('italian_national_movement').GetName, 'movement_italian_national')] povede k uchopení vlády [ROOT.GetCountry.GetAdjective] panitalskými revolucionáři[ROOT.GetCountry.GetCustom('italy_fate_loc')]." # todo: Větry nacionalismu, které se šíří Evropou, začaly pronikat i do [ROOT.GetCountry.GetName], inspirujíce postavy jak uvnitř naší vlády, tak i mimo ni, aby směřovaly k obnově jediné, sjednocené Itálie.\n\nDokud je tento zápisek v deníku aktivní, jakákoli aktivní [concept_revolution] způsobená [SelectLocalization(SCOPE.sPoliticalMovement('italian_national_movement').IsValid, SCOPE.sPoliticalMovement('italian_national_movement').GetName, 'movement_italian_national')] povede k uchopení vlády [ROOT.GetCountry.GetAdjective] panitalskými revolucionáři[ROOT.GetCountry.GetCustom('italy_fate_loc')].
  je_sale_of_alaska: "Prodej Aljašky"
  je_sale_of_alaska_reason: "[SCOPE.sState('alaska_scope').GetName], izolované území na okraji [SCOPE.sCountry('alaska_owner_scope').GetName], se v posledních letech stalo cílem nebezpečných zahraničních mocností.\n\nAbychom z území dostali nějaký zisk a vyhnuli se ponížení útokem našich nepřátel v případě války, úředníci ve vládě [SCOPE.sCharacter('ruler_scope').GetPrimaryRoleTitle] navrhli najít kupce pro [SCOPE.sState('alaska_scope').GetName]."
  je_sell_alaska_button: "Najít kupce"
@@ -283,7 +283,7 @@
  modifier_corporate_state_unbiased_nominating_bodies: "Minimalizoovaný předpojatost"
  modifier_disastrous_administration: "Katastrofální správa"
  modifier_egalitarian_workers_movement: "Egalitářské odbory"
- modifier_election_popularity_boost: "Oblíbený u voličů"
+ modifier_election_popularity_boost: "Oblíbený u voličů" # todo: Oblíbený u voličů
  modifier_end_of_warlord_period: "Znovu sjednocené Čína"
  modifier_exiled_leader: "Vyhnaný vůdce"
  modifier_fall_of_germany: "Rýn Fiasco"
@@ -498,5 +498,6 @@
  warlord_china_events.200.d: "Období pilné modernizace a centralizace konečně ukončilo riziko malého válečnictví, které mohlo roztrhnout stát. Navzdory snahám vnitřních i vnějších nepřátel, [ROOT.GetCountry.GetName] stojí neohnutý a sjednocený."
  warlord_china_events.200.f: "Tam na okraji horizontu, osvětlené západem slunce, byly poslední zahraniční lodě. Jejich barvy vlály na půli žerdi, jasný znak toho, že utekly s ocasy mezi nohama. Proti nim na moři vlála čínská vlajka vysoko na čínské půdě. Zpráva pro svět byla jasná: Mandát Číny zůstává v jejích vlastních rukou. Její lid bude jediný, kdo určí její budoucnost."
  warlord_china_events.200.t: "Století triumfu"
- would_be_accepted_under_national_supremacy_tt: "Tato [concept_pop] kultura sdílí [Concept('concept_cultural_heritage_trait', '$concept_cultural_heritage_traits$')] a všechny další [Concept('concept_cultural_trait', '$concept_cultural_traits$')] s jakoukoli z těchto zemí [concept_primary_cultures]"
+ would_be_accepted_under_national_supremacy_tt: "Kultura tohoto [concept_pop] má společné jak [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] tak [Concept('concept_language_trait','$concept_language_trait_short$')] [Concept('concept_discrimination_trait','$concept_discrimination_trait_short$')] s některou z [concept_primary_cultures] této země" # todo: Kultura tohoto [concept_pop] sdílí jak [Concept('concept_heritage_trait','$concept_heritage_trait_short$')], tak [Concept('concept_language_trait','$concept_language_trait_short$')] [Concept('concept_discrimination_trait','$concept_discrimination_trait_short$')] s kteroukoli z [concept_primary_cultures] této země
  yangban_dissolution_tt: "Třída [SCOPE.gsInterestGroup('yangban_scope').GetName] bude nahrazena #bold vlastníky půdy#!"
+ corporate_state.1.d1: "Některé skupiny [SCOPE.gsInterestGroup('trade_unions_ig').GetName] vyjádřily podporu oficiálnímu uznání role práce v našem státě. Slouží jako cenná protiváha proti komunistické opozici."

@@ -1,25 +1,25 @@
 ﻿l_polish:
  POLITICAL_LOBBY_APPEASEMENT: "$concept_political_lobby_appeasement$ [PoliticalLobby.GetAppeasement|=+]"
- POLITICAL_LOBBY_APPEASEMENT_APPROVAL_IMPACT: "[concept_approval] členů [concept_interest_group]: $IMPACT|=+$"
+ POLITICAL_LOBBY_APPEASEMENT_APPROVAL_IMPACT: "$IMPACT|=+$ [concept_approval] členů [concept_interest_group]" # todo: [concept_approval] členů [concept_interest_group]: $IMPACT|=+$
  POLITICAL_LOBBY_APPEASEMENT_CHANGE: "$AMOUNT|=+$ od [POLITICAL_LOBBY_APPEASEMENT_FACTOR.GetDesc|v] ($DATE|v$)"
  POLITICAL_LOBBY_APPEASEMENT_DECREASE: "Snižuje [concept_political_lobby_appeasement]"
  POLITICAL_LOBBY_APPEASEMENT_FACTORS: "Akce cílené na [PoliticalLobby.GetTargetCountry.GetName]"
  POLITICAL_LOBBY_APPEASEMENT_IMPACT: "[PoliticalLobby.GetAppeasement|=+v] [concept_approval] od [concept_political_lobby_appeasement]"
  POLITICAL_LOBBY_APPEASEMENT_INCREASE: "Zvyšuje [concept_political_lobby_appeasement]"
- POLITICAL_LOBBY_APPEASEMENT_TOOLTIP: "#header [concept_political_lobby_appeasement]#!\nAktuálně: [PoliticalLobby.GetAppeasement|=+]\n[PoliticalLobby.GetName]\n$TOOLTIP_DELIMITER$\n#title Efekty:#!\n[PoliticalLobby.GetAppeasementEffectsDesc]\n\n#title Nedávné změny:#!\n[PoliticalLobby.GetAppeasementChangesDesc]"
+ POLITICAL_LOBBY_APPEASEMENT_TOOLTIP: "#header [concept_political_lobby_appeasement]#!\n[PoliticalLobby.GetAppeasement|=+] v [PoliticalLobby.GetName]\n$TOOLTIP_DELIMITER$\n#title Efekty:#! #indent_newline:3 \n[PoliticalLobby.GetAppeasementEffectsDesc]#!\n\n#title Nedávné změny:#! #indent_newline:3 \n[PoliticalLobby.GetAppeasementChangesDesc]#!" # todo: #header [concept_political_lobby_appeasement]#!\nAktuálně: [PoliticalLobby.GetAppeasement|=+]\n[PoliticalLobby.GetName]\n$TOOLTIP_DELIMITER$\n#title Efekty:#!\n[PoliticalLobby.GetAppeasementEffectsDesc]\n\n#title Nedávné změny:#!\n[PoliticalLobby.GetAppeasementChangesDesc]
  POLITICAL_LOBBY_APPEASEMENT_VALUE: "[concept_political_lobby_appeasement]: #v #tooltippable #tooltip:[PoliticalLobby.GetTooltipTag],POLITICAL_LOBBY_APPEASEMENT_TOOLTIP [PoliticalLobby.GetAppeasement|=+0]#!#!#!"
  POLITICAL_LOBBY_HOME_COUNTRY: "Z [PoliticalLobby.GetCountry.GetName]"
  POLITICAL_LOBBY_MEMBER_CLOUT: "$CLOUT|1%v$ od [INTEREST_GROUP.GetName]"
  POLITICAL_LOBBY_MEMBER_SUPPORT: "[SelectLocalization(GreaterThan_CFixedPoint(PoliticalLobby.CalcJoinWeight(InterestGroup.Self),'(CFixedPoint)10'), 'POLITICAL_LOBBY_MEMBER_SUPPORT_SOLID', 'POLITICAL_LOBBY_MEMBER_SUPPORT_FAILING')]"
  POLITICAL_LOBBY_MEMBER_SUPPORT_FAILING: "#n Slabý#!"
  POLITICAL_LOBBY_MEMBER_SUPPORT_SOLID: "Silná"
- POLITICAL_LOBBY_MEMBER_SUPPORT_TT: "#T Podpora loby#!\n[PoliticalLobby.CalcJoinWeight(InterestGroup.Self)|v0] ($POLITICAL_LOBBY_MEMBER_SUPPORT$)\n\nPokud podpora klesne na #v 0#!, [InterestGroup.GetName] pravděpodobně opustí [PoliticalLobby.GetName]\n$TOOLTIP_DELIMITER$\nCelková podpora je dána:\n[PoliticalLobby.CalcJoinWeightDesc(InterestGroup.Self)]"
+ POLITICAL_LOBBY_MEMBER_SUPPORT_TT: "#T Podpora lobby#!\n[PoliticalLobby.CalcJoinWeight(InterestGroup.Self)|v0] ($POLITICAL_LOBBY_MEMBER_SUPPORT$)\n\nPokud podpora klesne na #v 0#!, [InterestGroup.GetName] pravděpodobně opustí [PoliticalLobby.GetName]\n$TOOLTIP_DELIMITER$\n#title Tato podpora je způsobena:#!#indent_newline:3 \n[PoliticalLobby.CalcJoinWeightDesc(InterestGroup.Self)]#!" # todo: #T Podpora loby#!\n[PoliticalLobby.CalcJoinWeight(InterestGroup.Self)|v0] ($POLITICAL_LOBBY_MEMBER_SUPPORT$)\n\nPokud podpora klesne na #v 0#!, [InterestGroup.GetName] pravděpodobně opustí [PoliticalLobby.GetName]\n$TOOLTIP_DELIMITER$\nCelková podpora je dána:\n[PoliticalLobby.CalcJoinWeightDesc(InterestGroup.Self)]
  POLITICAL_LOBBY_SUPPORTERS: "Podporovatelé"
  POLITICAL_LOBBY_TARGET_COUNTRY_RELATION: "[SelectLocalization(EqualTo_string(PoliticalLobby.GetType.GetCategory,'foreign_pro_country'),'POLITICAL_LOBBY_TARGET_COUNTRY_RELATION_PRO','POLITICAL_LOBBY_TARGET_COUNTRY_RELATION_ANTI')]"
  POLITICAL_LOBBY_TARGET_COUNTRY_RELATION_ANTI: "Odmítá [PoliticalLobby.GetTargetCountry.GetName]"
  POLITICAL_LOBBY_TARGET_COUNTRY_RELATION_PRO: "Podporuje [PoliticalLobby.GetTargetCountry.GetName]"
- POLITICAL_LOBBY_TOTAL_CLOUT: "Vliv loby: #tooltippable #tooltip:POLITICAL_LOBBY_TOTAL_CLOUT_BREAKDOWN_TOOLTIP [PoliticalLobby.GetTotalClout|%1v]#!#!"
- POLITICAL_LOBBY_TOTAL_CLOUT_BREAKDOWN_TOOLTIP: "#header Lobby [concept_clout]#!\nCelkem: [PoliticalLobby.GetTotalClout|%1v]\n$TOOLTIP_DELIMITER$\n[PoliticalLobby.GetTotalCloutBreakdown]"
+ POLITICAL_LOBBY_TOTAL_CLOUT: "Vliv lobby: #tooltippable #tooltip:[PoliticalLobby.GetTooltipTag],POLITICAL_LOBBY_TOTAL_CLOUT_BREAKDOWN_TOOLTIP [PoliticalLobby.GetTotalClout|%1v]#!#!" # todo: Vliv loby: #tooltippable #tooltip:POLITICAL_LOBBY_TOTAL_CLOUT_BREAKDOWN_TOOLTIP [PoliticalLobby.GetTotalClout|%1v]#!#!
+ POLITICAL_LOBBY_TOTAL_CLOUT_BREAKDOWN_TOOLTIP: "#header [concept_clout] lobby#!\n[PoliticalLobby.GetTotalClout|%1v] celkem\n$TOOLTIP_DELIMITER$\n[PoliticalLobby.GetTotalCloutBreakdown]" # todo: #header Lobby [concept_clout]#!\nCelkem: [PoliticalLobby.GetTotalClout|%1v]\n$TOOLTIP_DELIMITER$\n[PoliticalLobby.GetTotalCloutBreakdown]
  appeasement_alliance_broken: "Zrušeno [concept_alliance]"
  appeasement_alliance_broken_desc: "Porušení [concept_alliance]"
  appeasement_alliance_formed: "Vytvořeno [concept_alliance]"
