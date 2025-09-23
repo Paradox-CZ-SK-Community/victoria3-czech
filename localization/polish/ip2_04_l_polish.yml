@@ -31,7 +31,7 @@
  add_medium_indian_loyalists_tt: "[SCOPE.ScriptValue('medium_radicals')|+=1%] z"
  add_medium_indian_radicals_third_tt: "[SCOPE.ScriptValue('medium_radicals')|-=1%] #bold Jihoasijských#! [Concept('concept_pop', '$concept_pops$')] v této zemi se stává více [concept_radical]."
  add_medium_indian_radicals_tt: "[SCOPE.ScriptValue('medium_radicals')|-=1%] z"
- add_modifier_india_crown_rule_tt: "[ROOT.GetCountry.GetNameNoFlag] získává #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_india_crown_rule_tt $modifier_india_crown_rule$#! na dobu neurčitou" # todo: [ROOT.GetCountry.GetNameNoFlag] získává #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_india_crown_rule_tt $modifier_india_crown_rule$#! trvale
+ add_modifier_india_crown_rule_tt: "[ROOT.GetCountry.GetNameNoFlag] získává #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_india_crown_rule_tt $modifier_india_crown_rule$#! na dobu neurčitou"
  add_small_european_loyalists_tt: "[SCOPE.ScriptValue('small_radicals')|+=1%] z"
  add_small_european_radicals_tt: "[SCOPE.ScriptValue('small_radicals')|-=1%] z"
  add_small_indian_loyalists_third_tt: "[SCOPE.ScriptValue('small_radicals')|+=1%] #bold Jihoasijských#! [Concept('concept_pop', '$concept_pops$')] v této zemi se stává více [concept_loyalist]."
@@ -442,7 +442,7 @@
  no_federation_je_tt: "Nemá aktivní #v Federaci Indie#! [concept_journal_entry]"
  no_more_utilitarianism_tt: "#v $je_imperialism_of_promise$#! [concept_journal_entry] už nebude dostupný"
  no_overlord_dictate_tt: "Nemá aktivní"
- no_south_asian_primary_cultures_tt: "Žádná z našich [Concept('concept_primary_cultures','$concept_primary_cultures$')] nemá vlastnost #v $heritage_group_south_asian$#!" # todo: Žádné z našich [Concept('concept_primary_cultures','$concept_primary_cultures$')] nemá rys
+ no_south_asian_primary_cultures_tt: "Žádná z našich [Concept('concept_primary_cultures','$concept_primary_cultures$')] nemá vlastnost #v $heritage_group_south_asian$#!"
  no_union_je_tt: "Nemá aktivní #v Unii Indie#! [concept_journal_entry]"
  not_at_war_with_koh_i_noor_owner_tt: "Není ve válce s majitelem"
  notification_besant_to_india_desc: "Theosofistka aktivista [SCOPE.sCharacter('besant_scope').GetFullName] se přestěhovala do Indie, aby pokračovala v [SCOPE.sCharacter('besant_scope').GetHerHis] reformních snahách."
@@ -475,7 +475,7 @@
  notification_overlord_government_reform_accepted_desc: "[SCOPE.sCountry('india_overlord_scope').GetName] schválil naši žádost o demokratizaci naší správy. Nyní můžeme přijmout #b $lawgroup_distribution_of_power$#! [Concept('concept_law', '$concept_laws$')]"
  notification_overlord_government_reform_accepted_name: "[SCOPE.sCountry('india_overlord_scope').GetName] schválil reformu vlády"
  notification_overlord_government_reform_accepted_tooltip: "#header $notification_overlord_government_reform_accepted_name$#!\n$TOOLTIP_DELIMITER$\n$notification_overlord_government_reform_accepted_desc$"
- notification_overlord_government_reform_denied_desc: "[SCOPE.sCountry('india_overlord_scope').GetName] odmítl naši žádost o demokratizaci naší správy. [Concept('concept_radical', '$concept_radicalism$')] mezi našimi #b $heritage_group_south_asian$#! [Concept('concept_pop','$concept_pops$')] se v důsledku zvýšil.\n\nO reformu můžeme požádat znovu za #v 5 years#!" # todo: [SCOPE.sCountry('india_overlord_scope').GetName] zamítl naši žádost o demokratizaci naší správy. [Concept('concept_radical', '$concept_radicalism$')] mezi našimi #b $south_asian_heritage$#! [Concept('concept_pop','$concept_pops$')] se tím zvýšila.\n\nMůžeme požádat o reformu znovu za #v 5 let#!
+ notification_overlord_government_reform_denied_desc: "[SCOPE.sCountry('india_overlord_scope').GetName] odmítl naši žádost o demokratizaci naší správy. [Concept('concept_radical', '$concept_radicalism$')] mezi našimi #b $heritage_group_south_asian$#! [Concept('concept_pop','$concept_pops$')] se v důsledku zvýšil.\n\nO reformu můžeme požádat znovu za #v 5 let#!"
  notification_overlord_government_reform_denied_name: "[SCOPE.sCountry('india_overlord_scope').GetName] zamítl reformu vlády"
  notification_overlord_government_reform_denied_tooltip: "#header $notification_overlord_government_reform_denied_name$#!\n$TOOLTIP_DELIMITER$\n$notification_overlord_government_reform_denied_desc$"
  notification_prisoner_out_of_jail_desc: "[SCOPE.sCharacter('prisoner_scope').GetFullName], dříve zatčený za obvinění související s [SCOPE.sCharacter('prisoner_scope').GetHerHis] politickými aktivitami, byl propuštěn z vězení."
