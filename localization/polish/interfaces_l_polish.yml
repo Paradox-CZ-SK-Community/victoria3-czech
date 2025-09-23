@@ -9199,121 +9199,121 @@
  LACK_OF_OFFICERS_FACTOR: "x$FACTOR|2-$ z důvodu nedostatku $MISSING_OFFICERS|v$ [GetPopType('officers').GetName] v [BUILDING.GetName]"
  NATIONALIZE_BUILDING_TYPE_GROUP_BUILDING_ENTRY_MONEY: "@money!#v $VAL|D=-$#!"
  DEMOBILIZE_ARMY_COMMAND_ARMY_ERRORS: "[MilitaryFormation.GetName] nelze demobilizovat[AddTextIf(Not(StringIsEmpty('$ERRORS$')), '\n #indent_newline:3 $ERRORS$#!')]"
- SHIPPING_LANE_CONVOY_COST_GOOD_ENTRY: "$VALUE|vD=$ od $QUANTITY|0v$ [Goods.GetName] ($MULT|vD$ za množství)" # todo: $VALUE|vD=$ z $QUANTITY|0v$ [Goods.GetTextIcon][Nbsp][Goods.GetName] ($MULT|vD$ za jednotku)
+ SHIPPING_LANE_CONVOY_COST_GOOD_ENTRY: "$VALUE|vD=$ od $QUANTITY|0v$ [Goods.GetName] ($MULT|vD$ za množství)"
  GOODS_MONOPOLY_WORLD_MARKET_PRICE_DESC: "$PRICE_IMPACT|v=%0$ $concept_world_market_price$, protože [MARKET.GetName] ovládá $EXPORT_SHARE|v%0$ z [Concept('concept_trade','$concept_exports$')]"
  GOODS_MONOPOLY_MARKET_PRICE_DESC: "[Goods.GetMarketMonopolyPriceImpact|v%=0] $concept_market_price$ z [Goods.GetMarketMonopolyFraction|v%0] z $concept_market$ [concept_sell_orders] vyrobených pod [concept_monopoly]\n\n"
  GOODS_MONOPOLY_STATE_PRICE_DESC: "[Goods.GetStateMonopolyPriceImpact|v%=0] Státní cena z [Goods.GetStateMonopolyFraction|v%0] z $concept_state$ [concept_good_production] pod [concept_monopoly]\n\n"
- GOODS_IMPORTS: "$ORDERS|=vD$ z importů" # todo: Dovozy: $ORDERS|=vD$
- GOODS_EXPORTS: "$ORDERS|=vD$ z exportů" # todo: Vývozy: $ORDERS|=vD$
- LOBBY_JOURNAL_ENTRIES: "Unikátní [Concept('concept_journal_entry', '$concept_journal_entries$')]"  # todo: NEW TRANSLATION
- LOBBY_JOURNAL_ENTRY_TOOLTIP: "#header [JournalEntryType.GetName]#!\n$TOOLTIP_DELIMITER$\n[JournalEntryType.GetLobbyDesc]"  # todo: NEW TRANSLATION
- TREATY_PROPOSAL_DECLINE_BUTTON_TOOLTIP: "[GetDesc(Proposal.GetTreaty.DeclineTreatyProposal)]"  # todo: NEW TRANSLATION
- DISCRIMINATION_TRAIT_GROUP_ENTRY: "[Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')]: [DiscriminationTrait.GetTraitGroup.GetName]\n"  # todo: NEW TRANSLATION
- DISCRIMINATION_TRAIT_GROUP_CULTURES: "Typ: [DiscriminationTraitGroup.GetType]\n[Concept('concept_culture', '$concept_cultures$')]: [DiscriminationTraitGroup.GetCulturesDesc]"  # todo: NEW TRANSLATION
- DISCRIMINATION_TRAIT_GROUP_RELIGIONS: "Typ: [DiscriminationTraitGroup.GetType]\n[Concept('concept_religion', '$concept_religions$')]: [DiscriminationTraitGroup.GetReligionsDesc]"  # todo: NEW TRANSLATION
- BORROW_LENDING_SETTING_ANY_ARMY_DESC: "Umožňuje, aby [Concept('concept_battalion','$concept_battalions$')] z [MilitaryFormation.GetName] byly půjčeny jakékoli jiné přátelské #b postupující#! [Concept('concept_army','$concept_armies$')] na stejné [concept_front] jako [MilitaryFormation.GetName]\n\n(Bránící [Concept('concept_army','$concept_armies$')] si mohou vždy půjčit [Concept('concept_battalion','$concept_battalions$')])"  # todo: NEW TRANSLATION
- BORROW_LENDING_SETTING_ANY_FLEET_DESC: "Umožňuje, aby [Concept('concept_flotilla','$concept_flotillas$')] z [MilitaryFormation.GetName] byly půjčeny jakékoli jiné přátelské [Concept('concept_fleet','$concept_fleets$')] ve stejném [concept_sea_node] jako [MilitaryFormation.GetName]"  # todo: NEW TRANSLATION
- BORROW_LENDING_SETTING_PLAYER_COUNTRY_ONLY_ARMY_DESC: "Umožňuje, aby [Concept('concept_battalion','$concept_battalions$')] z [MilitaryFormation.GetName] byly #b pouze#! půjčeny ostatním [GetPlayer.GetAdjective] #b postupujícím#! [Concept('concept_army','$concept_armies$')]\n\n(Bránící [Concept('concept_army','$concept_armies$')] si mohou vždy půjčit [Concept('concept_battalion','$concept_battalions$')])"  # todo: NEW TRANSLATION
- BORROW_LENDING_SETTING_PLAYER_COUNTRY_ONLY_FLEET_DESC: "Umožňuje, aby [Concept('concept_flotilla','$concept_flotillas$')] z [MilitaryFormation.GetName] byly #b pouze#! půjčeny ostatním [GetPlayer.GetAdjective] [Concept('concept_fleet','$concept_fleets$')]"  # todo: NEW TRANSLATION
- BORROW_LENDING_SETTING_NONE_ARMY_DESC: "Zakazuje, aby [Concept('concept_battalion','$concept_battalions$')] z [MilitaryFormation.GetName] byly půjčeny jiným #b postupujícím#! [Concept('concept_army','$concept_armies$')]\n\n(Bránící [Concept('concept_army','$concept_armies$')] si mohou vždy půjčit [Concept('concept_battalion','$concept_battalions$')])"  # todo: NEW TRANSLATION
- BORROW_LENDING_SETTING_NONE_FLEET_DESC: "Zakazuje, aby [Concept('concept_flotilla','$concept_flotillas$')] z [MilitaryFormation.GetName] byly půjčeny jakékoli jiné [concept_fleet]"  # todo: NEW TRANSLATION
- CONVOYS_FROM_ME_TO_MARKET: "$TAB$ #v $VALUE|+=$#! přispěno do [Country.GetMarket.GetName]"  # todo: NEW TRANSLATION
- CONVOYS_MODIFIER_DESC: "$TAB$#indent_newline:3 $DESC$#!"  # todo: NEW TRANSLATION
- NAVAL_INVASION_GENERAL_FORCED_ADVANCE_WARNING: "@warning! [Character.GetFullNameWithTitle] bude nucen #b postoupit#! (Aktuální [concept_order]: #b [Character.GetOrderType.GetName]#!)"  # todo: NEW TRANSLATION
- WORLD_MARKET_ACCESS_FROM_MARKET_ACCESS_BREAKDOWN_TOOLTIP: "#header Stav [concept_market_access]#!\n[State.GetMarketAccessDesc]"  # todo: NEW TRANSLATION
- RADICALS_INCREASE_conquest_by_primary_culture: "#v #n +$AMOUNT|D$#!#! z dobytí cizím [concept_country] se stejnou [Concept('concept_primary_cultures', '$concept_primary_culture$')]"  # todo: NEW TRANSLATION
- RADICALS_INCREASE_inherit: "#v #n +$AMOUNT|D$#!#! z [Concept('concept_radical', '$concept_radicals$')] již přítomných v anektovaných [Concept('concept_state','$concept_states$')]"  # todo: NEW TRANSLATION
- RADICALS_DECREASE_conquest_by_primary_culture: "#v #p -$AMOUNT|D$#!#! z dobytí cizím [concept_country] se stejnou [Concept('concept_primary_cultures', '$concept_primary_culture$')]"  # todo: NEW TRANSLATION
- COMPANY_HQ_ASSETS_HEADER: "#v [GetDataModelSize(Building.GetBuildingAssets)]#! [Concept('concept_building','$concept_buildings$')] s aktivy v [Building.GetState.GetCountry.GetFlagTextIcon] [Building.GetState.GetName]"  # todo: NEW TRANSLATION
- MARKET_COUNTRY_TRADE_CAPACITY_TOOLTIP: "#header [concept_trade_capacity] v $MARKET_NAME$#!\n$BALANCE|+=$ pro [COUNTRY.GetName] ($USAGE|v$/$CAPACITY|v$)\n$TOOLTIP_DELIMITER$\n$DETAILS$"  # todo: NEW TRANSLATION
- MARKET_COUNTRY_TRADE_CAPACITY_STATE_ENTRY: "[STATE.GetTradeCapacityBalance|+=] ve [STATE.GetName] ([STATE.GetTradeCapacityUsage|v]/[STATE.GetTradeCapacity|v])"  # todo: NEW TRANSLATION
- MARKET_COUNTRY_TRADE_CAPACITY: "[Country.GetAdjective] [concept_trade_capacity]: [Market.GetCountryTradeCapacityBalance(Country.Self)|+=] ([Market.GetCountryTradeCapacityUsage(Country.Self)|v]/[Market.GetCountryTradeCapacity(Country.Self)|v])"  # todo: NEW TRANSLATION
- STATE_MODIFIER_ADDITIONAL_SELL_ORDERS: "Další prodejní příkazy"  # todo: NEW TRANSLATION
- STATE_OBSTINANCE: "[concept_obstinance]\n$STATE_OBSTINANCE_CONDENSED$"  # todo: NEW TRANSLATION
- STATE_OBSTINANCE_CONDENSED: "#b [State.GetObstinance|%R1]#! (@population! [State.GetNumObstinanceSupporters|vD])"  # todo: NEW TRANSLATION
- TOOLTIP_STATE_OBSTINANCE: "#BOLD #V [concept_obstinance] v [State.GetName]#!#!\n[State.GetObstinance|%1-] (@population! [State.GetNumObstinanceSupporters|vD]) z [Concept('concept_pop', '$concept_pops$')] aktuálně (max #tooltippable #tooltip:[State.GetTooltipTag],TOOLTIP_STATE_OBSTINANCE_MAX_BREAKDOWN [GetDefine('NPolitics','OBSTINANCE_MAX')|v%1]#!#!)[ConcatIfNeitherEmpty('\n$TOOLTIP_DELIMITER$\n', AddLocalizationIf(GreaterThan_CFixedPoint(State.GetObstinance,'(CFixedPoint)0'), 'TOOLTIP_STATE_OBSTINANCE_DETAILS'))]"  # todo: NEW TRANSLATION
- TOOLTIP_STATE_OBSTINANCE_DETAILS: "#title Způsobeno:#!#indent_newline:3 \n[State.GetObstinanceDesc]#!\n\n#title Důsledky:#!#indent_newline:3 \n[State.GetObstinanceEffectsDesc]#!"  # todo: NEW TRANSLATION
- TOOLTIP_STATE_OBSTINANCE_MAX_BREAKDOWN: "#BOLD Závažné [concept_obstinance]#!\nPři [GetDefine('NPolitics','OBSTINANCE_MAX')|v%1] [concept_state] trpí #v 100%#! z #r #tooltippable #tooltip:[State.GetTooltipTag],OBSTINANCE_EFFECTS sankcí#!#!#! z $concept_obstinance$\n[State.GetObstinance|%1-] / [GetDefine('NPolitics','OBSTINANCE_MAX')|v%1] v [State.GetName] nyní\n$TOOLTIP_DELIMITER$\n#lore V tomto okamžiku nezáleží, jestli se více lidí stane $concept_obstinate$, důsledky jsou již tak velké, jak mohou být#!"  # todo: NEW TRANSLATION
- OBSTINANCE_EFFECTS: "[State.GetObstinanceEffectsDesc]"  # todo: NEW TRANSLATION
- OBSTINANCE_FROM_MOVEMENT: "$VALUE|-=%1$ z @population! $NUM_SUPPORTERS|vD$ [Concept('concept_pop', '$concept_pops$')] podporujících [POLITICAL_MOVEMENT.GetName]"  # todo: NEW TRANSLATION
- OBSTINANCE_IN_STATE: "$VALUE|-=%1$ z @population! $NUM_SUPPORTERS|vD$ [Concept('concept_pop', '$concept_pops$')] v [STATE.GetName]"  # todo: NEW TRANSLATION
- CAN_CAUSE_OBSTINANCE: "@obstinance! Může způsobit [concept_obstinance]"  # todo: NEW TRANSLATION
- IS_CAUSING_OBSTINANCE: "@obstinance! [concept_obstinance] ve #v #tooltippable #tooltip:[PoliticalMovement.GetTooltipTag],MOVEMENT_CAUSING_OBSTINANCE_STATES_BREAKDOWN_TOOLTIP [PoliticalMovement.GetNumOfObstinateStates]#!#!#! [Concept('concept_state','$concept_states$')]"  # todo: NEW TRANSLATION
- THIS_MOVEMENT_CAN_CAUSE_OBSTINANCE: "@obstinance! Toto [Concept('concept_political_movement','$concept_political_movement_short$')] může způsobit [concept_obstinance]"  # todo: NEW TRANSLATION
- THIS_MOVEMENT_IS_CAUSING_OBSTINANCE: "@obstinance! [Concept('concept_political_movement','$concept_political_movement_short$')] způsobuje [concept_obstinance] v #v #tooltippable #tooltip:[PoliticalMovement.GetTooltipTag],MOVEMENT_CAUSING_OBSTINANCE_STATES_BREAKDOWN_TOOLTIP [PoliticalMovement.GetNumOfObstinateStates]#!#!#! [Concept('concept_state','$concept_states$')], kde nejvyšší je #v [PoliticalMovement.GetHighestStateObstinance|%]#!"  # todo: NEW TRANSLATION
- MOVEMENT_CAUSING_OBSTINANCE_STATES_BREAKDOWN_TOOLTIP: "[PoliticalMovement.GetObstinateStatesBreakdown]"  # todo: NEW TRANSLATION
- MOVEMENT_CAUSING_OBSTINANCE_STATES_BREAKDOWN: "#header [PoliticalMovement.GetName] způsobuje [concept_obstinance]#!\nV #v [PoliticalMovement.GetNumOfObstinateStates]#! [Concept('concept_state','$concept_states$')] aktuálně\n$TOOLTIP_DELIMITER$\n"  # todo: NEW TRANSLATION
- INCORPORATION_TIME_SAME_HERITAGE_OR_LANGUAGE: "Trvá celkem $YEARS|v0$ let, než bude [State.GetName] [Concept('concept_incorporated_state','$concept_incorporate$')], protože je to [concept_homeland] [Culture.GetName] [concept_culture], která sdílí [concept_heritage_trait] [DiscriminationTrait.GetName] s jinou $concept_culture$ v [State.GetOwner.GetName]."  # todo: NEW TRANSLATION
- INCORPORATION_TIME_SAME_TRAIT_GROUP: "Trvá celkem $YEARS|v0$ let, než bude [State.GetName] [Concept('concept_incorporated_state','$concept_incorporate$')], protože je to [concept_homeland] [Culture.GetName] [concept_culture], která sdílí [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] [DiscriminationTraitGroup.GetName] s jinou $concept_culture$ v [State.GetOwner.GetName]."  # todo: NEW TRANSLATION
- DISCRIMINATION_LEVEL_second_rate_citizen: "Základní úroveň akceptace je @acceptance_status_4! $second_rate_citizen$"  # todo: NEW TRANSLATION
- trade_unions_more_corporatist_effect_tt: "The [GetInterestGroupVariant('ig_trade_unions',GetPlayer).GetNameWithCountryVariant] bude mít větší pravděpodobnost vytvářet postavy [GetIdeology('ideology_corporatist_leader').GetName]"  # todo: NEW TRANSLATION
- trade_unions_less_corporatist_effect_tt: "The [GetInterestGroupVariant('ig_trade_unions',GetPlayer).GetNameWithCountryVariant] bude mít menší pravděpodobnost vytvářet postavy [GetIdeology('ideology_corporatist_leader').GetName]"  # todo: NEW TRANSLATION
- trade_unions_much_more_radical_effect_tt: "The [GetInterestGroupVariant('ig_trade_unions',GetPlayer).GetNameWithCountryVariant] bude mnohem pravděpodobněji vytvářet postavy s #tooltippable #tooltip:[GetPlayer.GetTooltipTag],extremist_ideology_tt_list radikálními [Concept('concept_ideology','$concept_ideologies$')]#!#!"  # todo: NEW TRANSLATION
- trade_unions_much_less_radical_effect_tt: "The [GetInterestGroupVariant('ig_trade_unions',GetPlayer).GetNameWithCountryVariant] bude mnohem méně pravděpodobně vytvářet postavy s #tooltippable #tooltip:[GetPlayer.GetTooltipTag],extremist_ideology_tt_list radikálními [Concept('concept_ideology','$concept_ideologies$')]#!#!"  # todo: NEW TRANSLATION
- trade_unions_more_radical_effect_tt: "The [GetInterestGroupVariant('ig_trade_unions',GetPlayer).GetNameWithCountryVariant] bude mít větší pravděpodobnost vytvářet postavy s #tooltippable #tooltip:[GetPlayer.GetTooltipTag],extremist_ideology_tt_list radikálními [Concept('concept_ideology','$concept_ideologies$')]#!#!"  # todo: NEW TRANSLATION
- trade_unions_less_radical_effect_tt: "The [GetInterestGroupVariant('ig_trade_unions',GetPlayer).GetNameWithCountryVariant] bude mít menší pravděpodobnost vytvářet postavy s #tooltippable #tooltip:[GetPlayer.GetTooltipTag],extremist_ideology_tt_list radikálními [Concept('concept_ideology','$concept_ideologies$')]#!#!"  # todo: NEW TRANSLATION
- extremist_ideology_tt_list: "Tyto [Concept('concept_ideology','$concept_ideologies$')] zahrnují:\n• [GetIdeology('ideology_communist').GetName]\n• [GetIdeology('ideology_vanguardist').GetName]\n• [GetIdeology('ideology_anarchist').GetName]\n• [GetIdeology('ideology_nihilist').GetName]\n• [GetIdeology('ideology_radical').GetName]"  # todo: NEW TRANSLATION
- NO_UNIVERSAL_SUFFRAGE: "Chybí [GetLawType('law_universal_suffrage').GetName]"  # todo: NEW TRANSLATION
- LEGACY_OF_FRENCH_REVOLUTION: "Dědictví Francouzské revoluce"  # todo: NEW TRANSLATION
- POP_ACTIVE_NATIONAL_AWAKENING: "Aktivní [concept_national_awakening]"  # todo: NEW TRANSLATION
- POP_CULTURAL_FERVOR: "Vysoké [Concept('concept_culture','$concept_cultural$')] [concept_fervor]"  # todo: NEW TRANSLATION
- POP_CULTURE_FERVOR: "[concept_fervor] u [Pop.GetCulture.GetName] [concept_culture]"  # todo: NEW TRANSLATION
- SUPPORT_SEPARATISM_ACTION: "[GetDiplomaticActionType('support_separatism').GetName]"  # todo: NEW TRANSLATION
- WAR_SUPPORT_FROM_FERVOR: "[concept_fervor] [SCOPE.GetRootScope.GetCountry.GetAdjective] [Concept('concept_primary_cultures','$concept_primary_culture$')]"  # todo: NEW TRANSLATION
- CULTURAL_FERVOR_FROM_BEING_AT_WAR: "$VALUE|0+=$ z toho, že [Concept('concept_primary_cultures','$concept_primary_culture$')] v #v $NUM_COUNTRIES_AT_WAR$#! jsou v [concept_war]"  # todo: NEW TRANSLATION
- CULTURAL_FERVOR_FROM_WAR_CASUALTIES: "$VALUE|0+=$ z $COUNT|Kv$ válečných [concept_casualties] této [concept_culture]"  # todo: NEW TRANSLATION
- CULTURAL_FERVOR_FROM_LITERACY: "$VALUE|0+=$ z [concept_literacy]"  # todo: NEW TRANSLATION
- CULTURAL_FERVOR_FROM_ACADEMICS: "$VALUE|0+=$ z [GetPopType('academics').GetName]"  # todo: NEW TRANSLATION
- CULTURAL_FERVOR_FROM_ACCEPTANCE: "$VALUE|0+=$ z průměrné [concept_acceptance] #v $AVERAGE_ACCEPTANCE$#!"  # todo: NEW TRANSLATION
- CULTURAL_FERVOR_FROM_NATIONAL_AWAKENING: "$VALUE|0+=$ z toho, že má @national_awakening! [concept_national_awakening]"  # todo: NEW TRANSLATION
- CULTURAL_FERVOR_FROM_NATIONALISM: "$VALUE|0+=$ z [Concept('concept_pop', '$concept_pops$')] v #v $NUM_COUNTRIES_WITH_NATIONALISM$#! [Concept('concept_country', SelectLocalization(EqualTo_int32('(int32)$NUM_COUNTRIES_WITH_NATIONALISM$', '(int32)1'), 'concept_country', 'concept_countries'))] které získaly [GetTechnology('nationalism').GetName]"  # todo: NEW TRANSLATION
- CULTURAL_FERVOR_FROM_PAN_NATIONALISM: "$VALUE|0+=$ z [Concept('concept_pop', '$concept_pops$')] v #v $NUM_COUNTRIES_WITH_PAN_NATIONALISM$#! [Concept('concept_country', SelectLocalization(EqualTo_int32('(int32)$NUM_COUNTRIES_WITH_PAN_NATIONALISM$', '(int32)1'), 'concept_country', 'concept_countries'))] které získaly [GetTechnology('pan-nationalism').GetName]"  # todo: NEW TRANSLATION
- CULTURAL_FERVOR_FROM_LAWS: "$VALUE|0+=$ z toho, že [Concept('concept_primary_cultures','$concept_primary_culture$')] jsou v #v $NUM_COUNTRIES_WITH_MULTICULTURAL$#! nezávislých [Concept('concept_country', SelectLocalization(EqualTo_int32('(int32)$NUM_COUNTRIES_WITH_MULTICULTURAL$', '(int32)1'), 'concept_country', 'concept_countries'))] ovlivněných různými [GetLawGroup('lawgroup_citizenship').GetName] [Concept('concept_law', '$concept_laws$')] [Concept('concept_enactment_of_laws', '$concept_enactment_of_laws_enacted$')]"  # todo: NEW TRANSLATION
- CULTURAL_FERVOR_FROM_PUBLIC_SCHOOLS: "$VALUE|0+=$ z toho, že [Concept('concept_primary_cultures','$concept_primary_culture$')] jsou v #v $NUM_COUNTRIES_WITH_PUBLIC_SCHOOLS$#! [Concept('concept_country', SelectLocalization(EqualTo_int32('(int32)$NUM_COUNTRIES_WITH_PUBLIC_SCHOOLS$', '(int32)1'), 'concept_country', 'concept_countries'))] s použitelnou [GetInstitutionType('institution_schools').GetName] [concept_institution]"  # todo: NEW TRANSLATION
- CULTURAL_FERVOR_FROM_OTHER_CULTURES_RELEASED: "$VALUE|0+=$ z toho, že #v $NUM_COUNTRIES_RELEASED$#! [Concept('concept_culture', '$concept_cultures$')] byly propuštěny jako samostatné [Concept('concept_country', '$concept_countries$')]"  # todo: NEW TRANSLATION
- CULTURAL_FERVOR_FROM_COUNTRY_FERVOR_TARGET_MOD: "#tooltippable #tooltip:[CULTURE.GetTooltipTag],CULTURAL_FERVOR_FROM_COUNTRY_FERVOR_TARGET_MOD_BREAKDOWN $VALUE|+=$#!#! z [concept_country] [Concept('concept_modifier','$concept_modifiers$')]"  # todo: NEW TRANSLATION
- CULTURAL_FERVOR_FROM_COUNTRY_FERVOR_TARGET_MOD_BREAKDOWN: "[Culture.GetName]\n[Culture.GetTargetFervorFromCountryModifiers|+=] cílové [concept_fervor] z [concept_country] [Concept('concept_modifier','$concept_modifiers$')]\n$TOOLTIP_DELIMITER$\n[Culture.GetTargetFervorFromCountryModifiersBreakdown]"  # todo: NEW TRANSLATION
- CULTURAL_FERVOR_FROM_COUNTRY_FERVOR_TARGET_MOD_BREAKDOWN_ENTRY: "$VALUE|+=$ z [COUNTRY.GetName] (#tooltippable #tooltip:$PERC_BREAKDOWN_TAG$ $PERC|%$#!#! z #tooltippable #tooltip:$MOD_VALUE_BREAKDOWN_TAG$ $MOD_VALUE|+=$#!#!)"  # todo: NEW TRANSLATION
- CULTURAL_FERVOR_FROM_COUNTRY_FERVOR_TARGET_MOD_BREAKDOWN_PERC_BREAKDOWN: "$PERC|%$ [CULTURE.GetName] [Concept('concept_pop', '$concept_pops$')] žijí v [COUNTRY.GetName]"  # todo: NEW TRANSLATION
- POP_ASSIMILATING_INDIVIDUALS: "#v #tooltippable #tooltip:[Pop.GetTooltipTag],POP_ASSIMILATING_INDIVIDUALS_TOOLTIP [Pop.GetNumAssimilatingIndividuals]#!#!#! [Concept('concept_individual', '$concept_individuals$')] jsou [Concept('concept_assimilation','$concept_assimilating$')] z [Pop.GetCulture.GetName] do [Pop.GetAssimilatingCulture.GetName] za měsíc"  # todo: NEW TRANSLATION
- POP_ASSIMILATING_INDIVIDUALS_TOOLTIP: "[Pop.GetPopAssimilationDesc]"  # todo: NEW TRANSLATION
- POP_CONVERTING_INDIVIDUALS: "#v #tooltippable #tooltip:[Pop.GetTooltipTag],POP_CONVERTING_INDIVIDUALS_TOOLTIP [Pop.GetNumConvertingIndividuals]#!#!#! [Concept('concept_individual', '$concept_individuals$')] jsou [Concept('concept_conversion','$concept_converting$')] z [Pop.GetReligion.GetName] na [Pop.GetConvertingReligion.GetName] za měsíc"  # todo: NEW TRANSLATION
- POP_CONVERTING_INDIVIDUALS_TOOLTIP: "[Pop.GetPopConversionDesc]"  # todo: NEW TRANSLATION
- POP_ASSIMILATION_FERVOR: "#v x$FACTOR|2$#! násobitel základní míry [concept_assimilation] pro [Culture.GetName] kvůli #v $CULTURAL_FERVOR|0$#! [concept_fervor]\n"  # todo: NEW TRANSLATION
- POP_ASSIMILATION_IN_HOMELAND: "#v x$FACTOR|2$#! násobitel základní míry [concept_assimilation] v [Concept('concept_homeland', '$concept_homelands$')]\n"  # todo: NEW TRANSLATION
- HERITAGE_TRAIT: "$concept_heritage_trait_short$"  # todo: NEW TRANSLATION
- LANGUAGE_TRAIT: "$concept_language_trait_short$"  # todo: NEW TRANSLATION
- TRADITION_TRAITS: "$concept_tradition_traits_short$"  # todo: NEW TRANSLATION
- UNIFICATION_SUPPORT_INVALID_TARGET: "[Country.GetName] není platným cílem pro sjednocení: #v $VALUE$#!"  # todo: NEW TRANSLATION
- COMMANDER_ORDER_NAVAL_INVASION_ADVANCE: "#V Generál přiřazený k námořní invazi musí mít rozkaz #b postoupit#!#!"  # todo: NEW TRANSLATION
- LACKING_UNLOCKING_COMPANY_CATEGORY: "[COMPANY.GetName] musí mít kategorii $CATEGORY|v$"  # todo: NEW TRANSLATION
- HAS_DISALLOWING_COMPANY_CATEGORY: "[COMPANY.GetName] nesmí #b mít#! kategorii $CATEGORY|v$"  # todo: NEW TRANSLATION
- BATTLE_SIZE_INVASION_GARRISONED_BATTALIONS: "Garnizonové $concept_battalions$"  # todo: NEW TRANSLATION
- DIPLO_PLAY_TAKE_SIDE_BREAK_TREATIES_CONFIRM: "Prohlásit podporu [COUNTRY.GetName]?\n\n[GetPlayer.GetAllianceLikeTreatiesBrokenOnWarDesc(OTHER_COUNTRY.Self)]"  # todo: NEW TRANSLATION
- BATTLE_VICTORY_MIN_VALUE_REACHED: "Dosažena minimální hodnota"  # todo: NEW TRANSLATION
- ALLIANCE_LIKE_TREATIES_BROKEN_DESC: "Následující [Concept('concept_treaty', '$concept_treaties$')] budou porušeny:#indent_newline:3 \n$BREAKDOWN$#!"  # todo: NEW TRANSLATION
- ALLIANCE_LIKE_TREATIES_BROKEN_ON_WAR_DESC: "Následující [Concept('concept_treaty', '$concept_treaties$')] budou porušeny, jakmile vypukne válka:#indent_newline:3 \n$BREAKDOWN$#!"  # todo: NEW TRANSLATION
- ALLIANCE_LIKE_TREATIES_BROKEN_TREATY_ENTRY: "$EFFECT_LIST_BULLET$ $DATA_TREATY_NAME_FORMAT$"  # todo: NEW TRANSLATION
- EFFECTS_ON_ACCEPTANCE_law_subjecthood: "#tooltippable #tooltip:$BREAKDOWN_TAG$ Populace s nízkou úrovní přijetí čelí mírným postihům, zatímco více akceptované populace dostávají jen málo výhod#!#!"  # todo: NEW TRANSLATION
- THEME_BULK_SELECTION_NAME: "Témata"  # todo: NEW TRANSLATION
- THEME_BULK_SELECTION_DESC: "#header $THEME_BULK_SELECTION_NAME$#!\nVyberte témata pro uživatelské rozhraní, papírovou mapu a tabulku."  # todo: NEW TRANSLATION
- THEME_BULK_GROUP_TOOLTIP: "#header [ThemeBulkSelectionGroup.GetName]#! [AddLocalizationIf(ThemeBulkSelectionGroup.IsSelected, SelectLocalization(ThemeBulkSelectionGroup.CanBeSelected, 'CURRENT_THEME', 'CURRENT_THEME_DISABLED'))]\n[ThemeBulkSelectionGroup.GetDesc][ConcatIfNeitherEmpty('\n\n', AddLocalizationIf(Not(ThemeBulkSelectionGroup.IsSpecialGroupType), 'THEME_BULK_GROUP_TOOLTIP_THEME_LIST_BREAKDOWN'))][ConcatIfNeitherEmpty('\n\n', AddLocalizationIf(Not(ThemeBulkSelectionGroup.IsSpecialGroupType), SelectLocalization(ThemeBulkSelectionGroup.HasDlcRequirement, 'THEME_BULK_GROUP_IN_DLC_TOOLTIP', 'THEME_BULK_GROUP_NOT_IN_DLC_TOOLTIP')))]"  # todo: NEW TRANSLATION
- THEME_BULK_GROUP_TOOLTIP_THEME_LIST_BREAKDOWN: "Vybere následující témata:#indent_newline:3 \n[ThemeBulkSelectionGroup.GetThemeListDesc]#!"  # todo: NEW TRANSLATION
- THEME_BULK_GROUP_THEME_LIST_ENTRY: "#header [Theme.GetName]#! [Theme.GetCategory.GetName]"  # todo: NEW TRANSLATION
- THEME_BULK_GROUP_IN_DLC_TOOLTIP: "Používá témata z #v [ThemeBulkSelectionGroup.GetRequiredDlc.GetName]#! DLC[ConcatIfNeitherEmpty('\n', SelectLocalization(ThemeBulkSelectionGroup.GetRequiredDlc.IsVerified, SelectLocalization(ThemeBulkSelectionGroup.GetRequiredDlc.IsEnabled, 'DLC_ENABLED', 'DLC_NOT_ENABLED'), 'DLC_NOT_OWNED'))]."  # todo: NEW TRANSLATION
- THEME_BULK_GROUP_NOT_IN_DLC_TOOLTIP: "Používá témata z základní hry."  # todo: NEW TRANSLATION
- national_awakening_started_notification_group: "$concept_national_awakening$ začalo"  # todo: NEW TRANSLATION
- notification_political_movement_spread_from_country_name: "[SCOPE.GetRootScope.GetPoliticalMovement.GetName] [concept_political_movement] se šíří"  # todo: NEW TRANSLATION
- notification_political_movement_spread_from_country_desc: "[SCOPE.GetRootScope.GetPoliticalMovement.GetName] [concept_political_movement] se rozšířilo do [SCOPE.sCountry('movement_country').GetName] z [SCOPE.sCountry('movement_spread_country').GetName]. Jejich [Concept('concept_political_movement_support', '$concept_political_movement_support_short$')] je [SCOPE.GetRootScope.GetPoliticalMovement.GetSupport|v%0] a jejich [Concept('concept_activism', '$concept_activism_short$')] je [SCOPE.GetRootScope.GetPoliticalMovement.GetRadicalism|v%0]."  # todo: NEW TRANSLATION
- notification_political_movement_spread_from_country_tooltip: "#header $notification_political_movement_spread_from_country_name$#!\n$notification_political_movement_spread_from_country_desc$"  # todo: NEW TRANSLATION
- notification_treaty_proposal_declined_obligation_info: "Odmítnutím [TARGET_COUNTRY.GetName] #tooltippable #tooltip:$TOOLTIP_TAGS$ zřekl se#!#! své [concept_obligation] vůči [COUNTRY.GetName]."  # todo: NEW TRANSLATION
- notification_treaty_proposal_declined_obligation_info_tooltip: "#title Důsledky pro [concept_country] za zřeknutí se jejich dlužné [concept_obligation]:#!\n$REPUDIATE_OBLIGATION_EFFECTS$"  # todo: NEW TRANSLATION
- notification_national_awakening_started_name: "[SCOPE.sCulture('culture').GetName] [concept_national_awakening]"  # todo: NEW TRANSLATION
- notification_national_awakening_started_desc: "[SCOPE.sCulture('culture').GetName] [concept_national_awakening] začalo v [SCOPE.sStateRegion('region').GetName]."  # todo: NEW TRANSLATION
- notification_national_awakening_started_tooltip: "#header $notification_national_awakening_started_name$#!\n$notification_national_awakening_started_desc$"  # todo: NEW TRANSLATION
- TOOLTIP_TYPE_CULTURAL_TRAIT_GROUP: "[concept_discrimination_trait_group]"  # todo: NEW TRANSLATION
- CHANGE_NAME_OF_PRESTIGE_GOOD: "Změnit název [Goods.GetName] [concept_prestige_good]"  # todo: NEW TRANSLATION
- PRESTIGE_GOOD_INVALID_NAME: "Neplatné jméno:#indent_newline:3 \n$DESC$"  # todo: NEW TRANSLATION
- PRESTIGE_GOOD_INVALID: "Neplatný [concept_prestige_good]"  # todo: NEW TRANSLATION
- PRESTIGE_GOOD_NOT_YOURS: "Hráč není hlavním producentem [Goods.GetName]"  # todo: NEW TRANSLATION
- HAS_NATIONAL_AWAKENING: "Má @national_awakening! [concept_national_awakening]"  # todo: NEW TRANSLATION
+ GOODS_IMPORTS: "$ORDERS|=vD$ z importů"
+ GOODS_EXPORTS: "$ORDERS|=vD$ z exportů"
+ LOBBY_JOURNAL_ENTRIES: "Unikátní [Concept('concept_journal_entry', '$concept_journal_entries$')]"
+ LOBBY_JOURNAL_ENTRY_TOOLTIP: "#header [JournalEntryType.GetName]#!\n$TOOLTIP_DELIMITER$\n[JournalEntryType.GetLobbyDesc]"
+ TREATY_PROPOSAL_DECLINE_BUTTON_TOOLTIP: "[GetDesc(Proposal.GetTreaty.DeclineTreatyProposal)]"
+ DISCRIMINATION_TRAIT_GROUP_ENTRY: "[Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')]: [DiscriminationTrait.GetTraitGroup.GetName]\n"
+ DISCRIMINATION_TRAIT_GROUP_CULTURES: "Typ: [DiscriminationTraitGroup.GetType]\n[Concept('concept_culture', '$concept_cultures$')]: [DiscriminationTraitGroup.GetCulturesDesc]"
+ DISCRIMINATION_TRAIT_GROUP_RELIGIONS: "Typ: [DiscriminationTraitGroup.GetType]\n[Concept('concept_religion', '$concept_religions$')]: [DiscriminationTraitGroup.GetReligionsDesc]"
+ BORROW_LENDING_SETTING_ANY_ARMY_DESC: "Umožňuje, aby [Concept('concept_battalion','$concept_battalions$')] z [MilitaryFormation.GetName] byly půjčeny jakékoli jiné přátelské #b postupující#! [Concept('concept_army','$concept_armies$')] na stejné [concept_front] jako [MilitaryFormation.GetName]\n\n(Bránící [Concept('concept_army','$concept_armies$')] si mohou vždy půjčit [Concept('concept_battalion','$concept_battalions$')])"
+ BORROW_LENDING_SETTING_ANY_FLEET_DESC: "Umožňuje, aby [Concept('concept_flotilla','$concept_flotillas$')] z [MilitaryFormation.GetName] byly půjčeny jakékoli jiné přátelské [Concept('concept_fleet','$concept_fleets$')] ve stejném [concept_sea_node] jako [MilitaryFormation.GetName]"
+ BORROW_LENDING_SETTING_PLAYER_COUNTRY_ONLY_ARMY_DESC: "Umožňuje, aby [Concept('concept_battalion','$concept_battalions$')] z [MilitaryFormation.GetName] byly #b pouze#! půjčeny ostatním [GetPlayer.GetAdjective] #b postupujícím#! [Concept('concept_army','$concept_armies$')]\n\n(Bránící [Concept('concept_army','$concept_armies$')] si mohou vždy půjčit [Concept('concept_battalion','$concept_battalions$')])"
+ BORROW_LENDING_SETTING_PLAYER_COUNTRY_ONLY_FLEET_DESC: "Umožňuje, aby [Concept('concept_flotilla','$concept_flotillas$')] z [MilitaryFormation.GetName] byly #b pouze#! půjčeny ostatním [GetPlayer.GetAdjective] [Concept('concept_fleet','$concept_fleets$')]"
+ BORROW_LENDING_SETTING_NONE_ARMY_DESC: "Zakazuje, aby [Concept('concept_battalion','$concept_battalions$')] z [MilitaryFormation.GetName] byly půjčeny jiným #b postupujícím#! [Concept('concept_army','$concept_armies$')]\n\n(Bránící [Concept('concept_army','$concept_armies$')] si mohou vždy půjčit [Concept('concept_battalion','$concept_battalions$')])"
+ BORROW_LENDING_SETTING_NONE_FLEET_DESC: "Zakazuje, aby [Concept('concept_flotilla','$concept_flotillas$')] z [MilitaryFormation.GetName] byly půjčeny jakékoli jiné [concept_fleet]"
+ CONVOYS_FROM_ME_TO_MARKET: "$TAB$ #v $VALUE|+=$#! přispěno do [Country.GetMarket.GetName]"
+ CONVOYS_MODIFIER_DESC: "$TAB$#indent_newline:3 $DESC$#!"
+ NAVAL_INVASION_GENERAL_FORCED_ADVANCE_WARNING: "@warning! [Character.GetFullNameWithTitle] bude nucen #b postoupit#! (Aktuální [concept_order]: #b [Character.GetOrderType.GetName]#!)"
+ WORLD_MARKET_ACCESS_FROM_MARKET_ACCESS_BREAKDOWN_TOOLTIP: "#header Stav [concept_market_access]#!\n[State.GetMarketAccessDesc]"
+ RADICALS_INCREASE_conquest_by_primary_culture: "#v #n +$AMOUNT|D$#!#! z dobytí cizím [concept_country] se stejnou [Concept('concept_primary_cultures', '$concept_primary_culture$')]"
+ RADICALS_INCREASE_inherit: "#v #n +$AMOUNT|D$#!#! z [Concept('concept_radical', '$concept_radicals$')] již přítomných v anektovaných [Concept('concept_state','$concept_states$')]"
+ RADICALS_DECREASE_conquest_by_primary_culture: "#v #p -$AMOUNT|D$#!#! z dobytí cizím [concept_country] se stejnou [Concept('concept_primary_cultures', '$concept_primary_culture$')]"
+ COMPANY_HQ_ASSETS_HEADER: "#v [GetDataModelSize(Building.GetBuildingAssets)]#! [Concept('concept_building','$concept_buildings$')] s aktivy v [Building.GetState.GetCountry.GetFlagTextIcon] [Building.GetState.GetName]"
+ MARKET_COUNTRY_TRADE_CAPACITY_TOOLTIP: "#header [concept_trade_capacity] v $MARKET_NAME$#!\n$BALANCE|+=$ pro [COUNTRY.GetName] ($USAGE|v$/$CAPACITY|v$)\n$TOOLTIP_DELIMITER$\n$DETAILS$"
+ MARKET_COUNTRY_TRADE_CAPACITY_STATE_ENTRY: "[STATE.GetTradeCapacityBalance|+=] ve [STATE.GetName] ([STATE.GetTradeCapacityUsage|v]/[STATE.GetTradeCapacity|v])"
+ MARKET_COUNTRY_TRADE_CAPACITY: "[Country.GetAdjective] [concept_trade_capacity]: [Market.GetCountryTradeCapacityBalance(Country.Self)|+=] ([Market.GetCountryTradeCapacityUsage(Country.Self)|v]/[Market.GetCountryTradeCapacity(Country.Self)|v])"
+ STATE_MODIFIER_ADDITIONAL_SELL_ORDERS: "Další prodejní příkazy"
+ STATE_OBSTINANCE: "[concept_obstinance]\n$STATE_OBSTINANCE_CONDENSED$"
+ STATE_OBSTINANCE_CONDENSED: "#b [State.GetObstinance|%R1]#! (@population! [State.GetNumObstinanceSupporters|vD])"
+ TOOLTIP_STATE_OBSTINANCE: "#BOLD #V [concept_obstinance] v [State.GetName]#!#!\n[State.GetObstinance|%1-] (@population! [State.GetNumObstinanceSupporters|vD]) z [Concept('concept_pop', '$concept_pops$')] aktuálně (max #tooltippable #tooltip:[State.GetTooltipTag],TOOLTIP_STATE_OBSTINANCE_MAX_BREAKDOWN [GetDefine('NPolitics','OBSTINANCE_MAX')|v%1]#!#!)[ConcatIfNeitherEmpty('\n$TOOLTIP_DELIMITER$\n', AddLocalizationIf(GreaterThan_CFixedPoint(State.GetObstinance,'(CFixedPoint)0'), 'TOOLTIP_STATE_OBSTINANCE_DETAILS'))]"
+ TOOLTIP_STATE_OBSTINANCE_DETAILS: "#title Způsobeno:#!#indent_newline:3 \n[State.GetObstinanceDesc]#!\n\n#title Důsledky:#!#indent_newline:3 \n[State.GetObstinanceEffectsDesc]#!"
+ TOOLTIP_STATE_OBSTINANCE_MAX_BREAKDOWN: "#BOLD Závažné [concept_obstinance]#!\nPři [GetDefine('NPolitics','OBSTINANCE_MAX')|v%1] [concept_state] trpí #v 100%#! z #r #tooltippable #tooltip:[State.GetTooltipTag],OBSTINANCE_EFFECTS sankcí#!#!#! z $concept_obstinance$\n[State.GetObstinance|%1-] / [GetDefine('NPolitics','OBSTINANCE_MAX')|v%1] v [State.GetName] nyní\n$TOOLTIP_DELIMITER$\n#lore V tomto okamžiku nezáleží, jestli se více lidí stane $concept_obstinate$, důsledky jsou již tak velké, jak mohou být#!"
+ OBSTINANCE_EFFECTS: "[State.GetObstinanceEffectsDesc]"
+ OBSTINANCE_FROM_MOVEMENT: "$VALUE|-=%1$ z @population! $NUM_SUPPORTERS|vD$ [Concept('concept_pop', '$concept_pops$')] podporujících [POLITICAL_MOVEMENT.GetName]"
+ OBSTINANCE_IN_STATE: "$VALUE|-=%1$ z @population! $NUM_SUPPORTERS|vD$ [Concept('concept_pop', '$concept_pops$')] v [STATE.GetName]"
+ CAN_CAUSE_OBSTINANCE: "@obstinance! Může způsobit [concept_obstinance]"
+ IS_CAUSING_OBSTINANCE: "@obstinance! [concept_obstinance] ve #v #tooltippable #tooltip:[PoliticalMovement.GetTooltipTag],MOVEMENT_CAUSING_OBSTINANCE_STATES_BREAKDOWN_TOOLTIP [PoliticalMovement.GetNumOfObstinateStates]#!#!#! [Concept('concept_state','$concept_states$')]"
+ THIS_MOVEMENT_CAN_CAUSE_OBSTINANCE: "@obstinance! Toto [Concept('concept_political_movement','$concept_political_movement_short$')] může způsobit [concept_obstinance]"
+ THIS_MOVEMENT_IS_CAUSING_OBSTINANCE: "@obstinance! [Concept('concept_political_movement','$concept_political_movement_short$')] způsobuje [concept_obstinance] v #v #tooltippable #tooltip:[PoliticalMovement.GetTooltipTag],MOVEMENT_CAUSING_OBSTINANCE_STATES_BREAKDOWN_TOOLTIP [PoliticalMovement.GetNumOfObstinateStates]#!#!#! [Concept('concept_state','$concept_states$')], kde nejvyšší je #v [PoliticalMovement.GetHighestStateObstinance|%]#!"
+ MOVEMENT_CAUSING_OBSTINANCE_STATES_BREAKDOWN_TOOLTIP: "[PoliticalMovement.GetObstinateStatesBreakdown]"
+ MOVEMENT_CAUSING_OBSTINANCE_STATES_BREAKDOWN: "#header [PoliticalMovement.GetName] způsobuje [concept_obstinance]#!\nV #v [PoliticalMovement.GetNumOfObstinateStates]#! [Concept('concept_state','$concept_states$')] aktuálně\n$TOOLTIP_DELIMITER$\n"
+ INCORPORATION_TIME_SAME_HERITAGE_OR_LANGUAGE: "Trvá celkem $YEARS|v0$ let, než bude [State.GetName] [Concept('concept_incorporated_state','$concept_incorporate$')], protože je to [concept_homeland] [Culture.GetName] [concept_culture], která sdílí [concept_heritage_trait] [DiscriminationTrait.GetName] s jinou $concept_culture$ v [State.GetOwner.GetName]."
+ INCORPORATION_TIME_SAME_TRAIT_GROUP: "Trvá celkem $YEARS|v0$ let, než bude [State.GetName] [Concept('concept_incorporated_state','$concept_incorporate$')], protože je to [concept_homeland] [Culture.GetName] [concept_culture], která sdílí [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] [DiscriminationTraitGroup.GetName] s jinou $concept_culture$ v [State.GetOwner.GetName]."
+ DISCRIMINATION_LEVEL_second_rate_citizen: "Základní úroveň akceptace je @acceptance_status_4! $second_rate_citizen$"
+ trade_unions_more_corporatist_effect_tt: "The [GetInterestGroupVariant('ig_trade_unions',GetPlayer).GetNameWithCountryVariant] bude mít větší pravděpodobnost vytvářet postavy [GetIdeology('ideology_corporatist_leader').GetName]"
+ trade_unions_less_corporatist_effect_tt: "The [GetInterestGroupVariant('ig_trade_unions',GetPlayer).GetNameWithCountryVariant] bude mít menší pravděpodobnost vytvářet postavy [GetIdeology('ideology_corporatist_leader').GetName]"
+ trade_unions_much_more_radical_effect_tt: "The [GetInterestGroupVariant('ig_trade_unions',GetPlayer).GetNameWithCountryVariant] bude mnohem pravděpodobněji vytvářet postavy s #tooltippable #tooltip:[GetPlayer.GetTooltipTag],extremist_ideology_tt_list radikálními [Concept('concept_ideology','$concept_ideologies$')]#!#!"
+ trade_unions_much_less_radical_effect_tt: "The [GetInterestGroupVariant('ig_trade_unions',GetPlayer).GetNameWithCountryVariant] bude mnohem méně pravděpodobně vytvářet postavy s #tooltippable #tooltip:[GetPlayer.GetTooltipTag],extremist_ideology_tt_list radikálními [Concept('concept_ideology','$concept_ideologies$')]#!#!"
+ trade_unions_more_radical_effect_tt: "The [GetInterestGroupVariant('ig_trade_unions',GetPlayer).GetNameWithCountryVariant] bude mít větší pravděpodobnost vytvářet postavy s #tooltippable #tooltip:[GetPlayer.GetTooltipTag],extremist_ideology_tt_list radikálními [Concept('concept_ideology','$concept_ideologies$')]#!#!"
+ trade_unions_less_radical_effect_tt: "The [GetInterestGroupVariant('ig_trade_unions',GetPlayer).GetNameWithCountryVariant] bude mít menší pravděpodobnost vytvářet postavy s #tooltippable #tooltip:[GetPlayer.GetTooltipTag],extremist_ideology_tt_list radikálními [Concept('concept_ideology','$concept_ideologies$')]#!#!"
+ extremist_ideology_tt_list: "Tyto [Concept('concept_ideology','$concept_ideologies$')] zahrnují:\n• [GetIdeology('ideology_communist').GetName]\n• [GetIdeology('ideology_vanguardist').GetName]\n• [GetIdeology('ideology_anarchist').GetName]\n• [GetIdeology('ideology_nihilist').GetName]\n• [GetIdeology('ideology_radical').GetName]"
+ NO_UNIVERSAL_SUFFRAGE: "Chybí [GetLawType('law_universal_suffrage').GetName]"
+ LEGACY_OF_FRENCH_REVOLUTION: "Dědictví Francouzské revoluce"
+ POP_ACTIVE_NATIONAL_AWAKENING: "Aktivní [concept_national_awakening]"
+ POP_CULTURAL_FERVOR: "Vysoké [Concept('concept_culture','$concept_cultural$')] [concept_fervor]"
+ POP_CULTURE_FERVOR: "[concept_fervor] u [Pop.GetCulture.GetName] [concept_culture]"
+ SUPPORT_SEPARATISM_ACTION: "[GetDiplomaticActionType('support_separatism').GetName]"
+ WAR_SUPPORT_FROM_FERVOR: "[concept_fervor] [SCOPE.GetRootScope.GetCountry.GetAdjective] [Concept('concept_primary_cultures','$concept_primary_culture$')]"
+ CULTURAL_FERVOR_FROM_BEING_AT_WAR: "$VALUE|0+=$ z toho, že [Concept('concept_primary_cultures','$concept_primary_culture$')] v #v $NUM_COUNTRIES_AT_WAR$#! jsou v [concept_war]"
+ CULTURAL_FERVOR_FROM_WAR_CASUALTIES: "$VALUE|0+=$ z $COUNT|Kv$ válečných [concept_casualties] této [concept_culture]"
+ CULTURAL_FERVOR_FROM_LITERACY: "$VALUE|0+=$ z [concept_literacy]"
+ CULTURAL_FERVOR_FROM_ACADEMICS: "$VALUE|0+=$ z [GetPopType('academics').GetName]"
+ CULTURAL_FERVOR_FROM_ACCEPTANCE: "$VALUE|0+=$ z průměrné [concept_acceptance] #v $AVERAGE_ACCEPTANCE$#!"
+ CULTURAL_FERVOR_FROM_NATIONAL_AWAKENING: "$VALUE|0+=$ z toho, že má @national_awakening! [concept_national_awakening]"
+ CULTURAL_FERVOR_FROM_NATIONALISM: "$VALUE|0+=$ z [Concept('concept_pop', '$concept_pops$')] v #v $NUM_COUNTRIES_WITH_NATIONALISM$#! [Concept('concept_country', SelectLocalization(EqualTo_int32('(int32)$NUM_COUNTRIES_WITH_NATIONALISM$', '(int32)1'), 'concept_country', 'concept_countries'))] které získaly [GetTechnology('nationalism').GetName]"
+ CULTURAL_FERVOR_FROM_PAN_NATIONALISM: "$VALUE|0+=$ z [Concept('concept_pop', '$concept_pops$')] v #v $NUM_COUNTRIES_WITH_PAN_NATIONALISM$#! [Concept('concept_country', SelectLocalization(EqualTo_int32('(int32)$NUM_COUNTRIES_WITH_PAN_NATIONALISM$', '(int32)1'), 'concept_country', 'concept_countries'))] které získaly [GetTechnology('pan-nationalism').GetName]"
+ CULTURAL_FERVOR_FROM_LAWS: "$VALUE|0+=$ z toho, že [Concept('concept_primary_cultures','$concept_primary_culture$')] jsou v #v $NUM_COUNTRIES_WITH_MULTICULTURAL$#! nezávislých [Concept('concept_country', SelectLocalization(EqualTo_int32('(int32)$NUM_COUNTRIES_WITH_MULTICULTURAL$', '(int32)1'), 'concept_country', 'concept_countries'))] ovlivněných různými [GetLawGroup('lawgroup_citizenship').GetName] [Concept('concept_law', '$concept_laws$')] [Concept('concept_enactment_of_laws', '$concept_enactment_of_laws_enacted$')]"
+ CULTURAL_FERVOR_FROM_PUBLIC_SCHOOLS: "$VALUE|0+=$ z toho, že [Concept('concept_primary_cultures','$concept_primary_culture$')] jsou v #v $NUM_COUNTRIES_WITH_PUBLIC_SCHOOLS$#! [Concept('concept_country', SelectLocalization(EqualTo_int32('(int32)$NUM_COUNTRIES_WITH_PUBLIC_SCHOOLS$', '(int32)1'), 'concept_country', 'concept_countries'))] s použitelnou [GetInstitutionType('institution_schools').GetName] [concept_institution]"
+ CULTURAL_FERVOR_FROM_OTHER_CULTURES_RELEASED: "$VALUE|0+=$ z toho, že #v $NUM_COUNTRIES_RELEASED$#! [Concept('concept_culture', '$concept_cultures$')] byly propuštěny jako samostatné [Concept('concept_country', '$concept_countries$')]"
+ CULTURAL_FERVOR_FROM_COUNTRY_FERVOR_TARGET_MOD: "#tooltippable #tooltip:[CULTURE.GetTooltipTag],CULTURAL_FERVOR_FROM_COUNTRY_FERVOR_TARGET_MOD_BREAKDOWN $VALUE|+=$#!#! z [concept_country] [Concept('concept_modifier','$concept_modifiers$')]"
+ CULTURAL_FERVOR_FROM_COUNTRY_FERVOR_TARGET_MOD_BREAKDOWN: "[Culture.GetName]\n[Culture.GetTargetFervorFromCountryModifiers|+=] cílové [concept_fervor] z [concept_country] [Concept('concept_modifier','$concept_modifiers$')]\n$TOOLTIP_DELIMITER$\n[Culture.GetTargetFervorFromCountryModifiersBreakdown]"
+ CULTURAL_FERVOR_FROM_COUNTRY_FERVOR_TARGET_MOD_BREAKDOWN_ENTRY: "$VALUE|+=$ z [COUNTRY.GetName] (#tooltippable #tooltip:$PERC_BREAKDOWN_TAG$ $PERC|%$#!#! z #tooltippable #tooltip:$MOD_VALUE_BREAKDOWN_TAG$ $MOD_VALUE|+=$#!#!)"
+ CULTURAL_FERVOR_FROM_COUNTRY_FERVOR_TARGET_MOD_BREAKDOWN_PERC_BREAKDOWN: "$PERC|%$ [CULTURE.GetName] [Concept('concept_pop', '$concept_pops$')] žijí v [COUNTRY.GetName]"
+ POP_ASSIMILATING_INDIVIDUALS: "#v #tooltippable #tooltip:[Pop.GetTooltipTag],POP_ASSIMILATING_INDIVIDUALS_TOOLTIP [Pop.GetNumAssimilatingIndividuals]#!#!#! [Concept('concept_individual', '$concept_individuals$')] jsou [Concept('concept_assimilation','$concept_assimilating$')] z [Pop.GetCulture.GetName] do [Pop.GetAssimilatingCulture.GetName] za měsíc"
+ POP_ASSIMILATING_INDIVIDUALS_TOOLTIP: "[Pop.GetPopAssimilationDesc]"
+ POP_CONVERTING_INDIVIDUALS: "#v #tooltippable #tooltip:[Pop.GetTooltipTag],POP_CONVERTING_INDIVIDUALS_TOOLTIP [Pop.GetNumConvertingIndividuals]#!#!#! [Concept('concept_individual', '$concept_individuals$')] jsou [Concept('concept_conversion','$concept_converting$')] z [Pop.GetReligion.GetName] na [Pop.GetConvertingReligion.GetName] za měsíc"
+ POP_CONVERTING_INDIVIDUALS_TOOLTIP: "[Pop.GetPopConversionDesc]"
+ POP_ASSIMILATION_FERVOR: "#v x$FACTOR|2$#! násobitel základní míry [concept_assimilation] pro [Culture.GetName] kvůli #v $CULTURAL_FERVOR|0$#! [concept_fervor]\n"
+ POP_ASSIMILATION_IN_HOMELAND: "#v x$FACTOR|2$#! násobitel základní míry [concept_assimilation] v [Concept('concept_homeland', '$concept_homelands$')]\n"
+ HERITAGE_TRAIT: "$concept_heritage_trait_short$"
+ LANGUAGE_TRAIT: "$concept_language_trait_short$"
+ TRADITION_TRAITS: "$concept_tradition_traits_short$"
+ UNIFICATION_SUPPORT_INVALID_TARGET: "[Country.GetName] není platným cílem pro sjednocení: #v $VALUE$#!"
+ COMMANDER_ORDER_NAVAL_INVASION_ADVANCE: "#V Generál přiřazený k námořní invazi musí mít rozkaz #b postoupit#!#!"
+ LACKING_UNLOCKING_COMPANY_CATEGORY: "[COMPANY.GetName] musí mít kategorii $CATEGORY|v$"
+ HAS_DISALLOWING_COMPANY_CATEGORY: "[COMPANY.GetName] nesmí #b mít#! kategorii $CATEGORY|v$"
+ BATTLE_SIZE_INVASION_GARRISONED_BATTALIONS: "Garnizonové $concept_battalions$"
+ DIPLO_PLAY_TAKE_SIDE_BREAK_TREATIES_CONFIRM: "Prohlásit podporu [COUNTRY.GetName]?\n\n[GetPlayer.GetAllianceLikeTreatiesBrokenOnWarDesc(OTHER_COUNTRY.Self)]"
+ BATTLE_VICTORY_MIN_VALUE_REACHED: "Dosažena minimální hodnota"
+ ALLIANCE_LIKE_TREATIES_BROKEN_DESC: "Následující [Concept('concept_treaty', '$concept_treaties$')] budou porušeny:#indent_newline:3 \n$BREAKDOWN$#!"
+ ALLIANCE_LIKE_TREATIES_BROKEN_ON_WAR_DESC: "Následující [Concept('concept_treaty', '$concept_treaties$')] budou porušeny, jakmile vypukne válka:#indent_newline:3 \n$BREAKDOWN$#!"
+ ALLIANCE_LIKE_TREATIES_BROKEN_TREATY_ENTRY: "$EFFECT_LIST_BULLET$ $DATA_TREATY_NAME_FORMAT$"
+ EFFECTS_ON_ACCEPTANCE_law_subjecthood: "#tooltippable #tooltip:$BREAKDOWN_TAG$ Populace s nízkou úrovní přijetí čelí mírným postihům, zatímco více akceptované populace dostávají jen málo výhod#!#!"
+ THEME_BULK_SELECTION_NAME: "Témata"
+ THEME_BULK_SELECTION_DESC: "#header $THEME_BULK_SELECTION_NAME$#!\nVyberte témata pro uživatelské rozhraní, papírovou mapu a tabulku."
+ THEME_BULK_GROUP_TOOLTIP: "#header [ThemeBulkSelectionGroup.GetName]#! [AddLocalizationIf(ThemeBulkSelectionGroup.IsSelected, SelectLocalization(ThemeBulkSelectionGroup.CanBeSelected, 'CURRENT_THEME', 'CURRENT_THEME_DISABLED'))]\n[ThemeBulkSelectionGroup.GetDesc][ConcatIfNeitherEmpty('\n\n', AddLocalizationIf(Not(ThemeBulkSelectionGroup.IsSpecialGroupType), 'THEME_BULK_GROUP_TOOLTIP_THEME_LIST_BREAKDOWN'))][ConcatIfNeitherEmpty('\n\n', AddLocalizationIf(Not(ThemeBulkSelectionGroup.IsSpecialGroupType), SelectLocalization(ThemeBulkSelectionGroup.HasDlcRequirement, 'THEME_BULK_GROUP_IN_DLC_TOOLTIP', 'THEME_BULK_GROUP_NOT_IN_DLC_TOOLTIP')))]"
+ THEME_BULK_GROUP_TOOLTIP_THEME_LIST_BREAKDOWN: "Vybere následující témata:#indent_newline:3 \n[ThemeBulkSelectionGroup.GetThemeListDesc]#!"
+ THEME_BULK_GROUP_THEME_LIST_ENTRY: "#header [Theme.GetName]#! [Theme.GetCategory.GetName]"
+ THEME_BULK_GROUP_IN_DLC_TOOLTIP: "Používá témata z #v [ThemeBulkSelectionGroup.GetRequiredDlc.GetName]#! DLC[ConcatIfNeitherEmpty('\n', SelectLocalization(ThemeBulkSelectionGroup.GetRequiredDlc.IsVerified, SelectLocalization(ThemeBulkSelectionGroup.GetRequiredDlc.IsEnabled, 'DLC_ENABLED', 'DLC_NOT_ENABLED'), 'DLC_NOT_OWNED'))]."
+ THEME_BULK_GROUP_NOT_IN_DLC_TOOLTIP: "Používá témata z základní hry."
+ national_awakening_started_notification_group: "$concept_national_awakening$ začalo"
+ notification_political_movement_spread_from_country_name: "[SCOPE.GetRootScope.GetPoliticalMovement.GetName] [concept_political_movement] se šíří"
+ notification_political_movement_spread_from_country_desc: "[SCOPE.GetRootScope.GetPoliticalMovement.GetName] [concept_political_movement] se rozšířilo do [SCOPE.sCountry('movement_country').GetName] z [SCOPE.sCountry('movement_spread_country').GetName]. Jejich [Concept('concept_political_movement_support', '$concept_political_movement_support_short$')] je [SCOPE.GetRootScope.GetPoliticalMovement.GetSupport|v%0] a jejich [Concept('concept_activism', '$concept_activism_short$')] je [SCOPE.GetRootScope.GetPoliticalMovement.GetRadicalism|v%0]."
+ notification_political_movement_spread_from_country_tooltip: "#header $notification_political_movement_spread_from_country_name$#!\n$notification_political_movement_spread_from_country_desc$"
+ notification_treaty_proposal_declined_obligation_info: "Odmítnutím [TARGET_COUNTRY.GetName] #tooltippable #tooltip:$TOOLTIP_TAGS$ zřekl se#!#! své [concept_obligation] vůči [COUNTRY.GetName]."
+ notification_treaty_proposal_declined_obligation_info_tooltip: "#title Důsledky pro [concept_country] za zřeknutí se jejich dlužné [concept_obligation]:#!\n$REPUDIATE_OBLIGATION_EFFECTS$"
+ notification_national_awakening_started_name: "[SCOPE.sCulture('culture').GetName] [concept_national_awakening]"
+ notification_national_awakening_started_desc: "[SCOPE.sCulture('culture').GetName] [concept_national_awakening] začalo v [SCOPE.sStateRegion('region').GetName]."
+ notification_national_awakening_started_tooltip: "#header $notification_national_awakening_started_name$#!\n$notification_national_awakening_started_desc$"
+ TOOLTIP_TYPE_CULTURAL_TRAIT_GROUP: "[concept_discrimination_trait_group]"
+ CHANGE_NAME_OF_PRESTIGE_GOOD: "Změnit název [Goods.GetName] [concept_prestige_good]"
+ PRESTIGE_GOOD_INVALID_NAME: "Neplatné jméno:#indent_newline:3 \n$DESC$"
+ PRESTIGE_GOOD_INVALID: "Neplatný [concept_prestige_good]"
+ PRESTIGE_GOOD_NOT_YOURS: "Hráč není hlavním producentem [Goods.GetName]"
+ HAS_NATIONAL_AWAKENING: "Má @national_awakening! [concept_national_awakening]"

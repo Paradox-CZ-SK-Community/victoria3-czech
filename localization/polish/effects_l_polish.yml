@@ -599,37 +599,37 @@
  VIOLATE_SOVEREIGNTY_JOIN_THIRD: "[COUNTRY.GetName] jde do [concept_war] s [TARGET_COUNTRY.GetName]"
  custom_trigger_event_unspecific: "Spouští událost"
  TSUNAMI_EFFECT_GLOBAL: "[GetHarvestConditionType('tsunami').GetNameNoFormatting|b] způsobí $VALUE|v-0$ [Concept('concept_devastation','devastaci')] ve všech #b pobřežních státech#! v oblasti [STRATEGIC_REGION.GetName]"
- EXECUTE_EVENT_OPTION: "$EFFECT_DESC$"    # todo: NEW TRANSLATION
- ACTIVATE_LAW_FIRST: "[COUNTRY.GetNameNoFlag] zavádí zákon [Law.GetFullNameWithStatus]"    # todo: NEW TRANSLATION
- LIBERATE_SLAVES: "Všichni [GetPopType('slaves').GetName] budou osvobozeni"    # todo: NEW TRANSLATION
- LIBERATE_SLAVES_FIRST: "Všichni [GetPopType('slaves').GetName] v $SUBJECT_NAME$ budou osvobozeni"    # todo: NEW TRANSLATION
- LIBERATE_SLAVES_THIRD: "Všichni [GetPopType('slaves').GetName] v $SUBJECT_NAME$ budou osvobozeni"    # todo: NEW TRANSLATION
- LIBERATE_SLAVES_IN_INCORPORATED_STATES: "Všichni [GetPopType('slaves').GetName] v [Concept('concept_incorporated_state', '$concept_incorporated_states$')] budou osvobozeni"    # todo: NEW TRANSLATION
- LIBERATE_SLAVES_IN_INCORPORATED_STATES_FIRST: "Všichni [GetPopType('slaves').GetName] v [Concept('concept_incorporated_state', '$concept_incorporated_states$')] v [Country.GetNameNoFlag] budou osvobozeni"    # todo: NEW TRANSLATION
- LIBERATE_SLAVES_IN_INCORPORATED_STATES_THIRD: "Všichni [GetPopType('slaves').GetName] v [Concept('concept_incorporated_state', '$concept_incorporated_states$')] v [Country.GetName] budou osvobozeni"    # todo: NEW TRANSLATION
- LIBERATE_SLAVES_IN_UNINCORPORATED_STATES: "Všichni [GetPopType('slaves').GetName] v [Concept('concept_unincorporated_state', '$concept_unincorporated_states$')] budou osvobozeni"    # todo: NEW TRANSLATION
- LIBERATE_SLAVES_IN_UNINCORPORATED_STATES_FIRST: "Všichni [GetPopType('slaves').GetName] v [Concept('concept_unincorporated_state', '$concept_unincorporated_states$')] v [Country.GetNameNoFlag] budou osvobozeni"    # todo: NEW TRANSLATION
- LIBERATE_SLAVES_IN_UNINCORPORATED_STATES_THIRD: "Všichni [GetPopType('slaves').GetName] v [Concept('concept_unincorporated_state', '$concept_unincorporated_states$')] v [Country.GetName] budou osvobozeni"    # todo: NEW TRANSLATION
- ADD_TRADITION_TRAIT: "[CULTURE.GetName] přijímá [DISCRIMINATION_TRAIT.GetName] [concept_tradition_trait]"    # todo: NEW TRANSLATION
- REMOVE_TRADITION_TRAIT: "[CULTURE.GetName] opouští [DISCRIMINATION_TRAIT.GetName] [concept_tradition_trait]"    # todo: NEW TRANSLATION
- SET_FERVOR: "[concept_fervor] [CULTURE.GetName] je nastaven na #variable $VALUE|0$#!"    # todo: NEW TRANSLATION
- ADD_FERVOR: "[concept_fervor] [CULTURE.GetName] se změní o #variable $VALUE|0+$#!"    # todo: NEW TRANSLATION
- CREATE_DIPLOMATIC_PLAY_FIRST: "[COUNTRY.GetNameNoFlag] zahajuje #variable [DIPLOMATIC_PLAY_TYPE.GetName]#! [concept_diplomatic_play] proti [TARGET_COUNTRY.GetName]"    # todo: NEW TRANSLATION
- CREATE_DIPLOMATIC_PLAY_THIRD: "[COUNTRY.GetName] zahajuje #variable [DIPLOMATIC_PLAY_TYPE.GetName]#! [concept_diplomatic_play] proti [TARGET_COUNTRY.GetName]"    # todo: NEW TRANSLATION
- ADD_CULTURE_ACCEPTANCE_MODIFIER: "$MODIFIER_DESC$ kultura v [Country.GetName]"    # todo: NEW TRANSLATION
- ADD_CULTURE_ACCEPTANCE_MODIFIER_FIRST: "$MODIFIER_DESC$ kultura v [Country.GetName]"    # todo: NEW TRANSLATION
- ADD_CULTURE_ACCEPTANCE_MODIFIER_THIRD: "$MODIFIER_DESC$ kultura v [Country.GetName]"    # todo: NEW TRANSLATION
- ADD_CULTURE_ACCEPTANCE_MODIFIER_NEG: "$ADD_CULTURE_ACCEPTANCE_MODIFIER$"    # todo: NEW TRANSLATION
- ADD_CULTURE_ACCEPTANCE_MODIFIER_FIRST_NEG: "$ADD_CULTURE_ACCEPTANCE_MODIFIER_FIRST$"    # todo: NEW TRANSLATION
- ADD_CULTURE_ACCEPTANCE_MODIFIER_THIRD_NEG: "$ADD_CULTURE_ACCEPTANCE_MODIFIER_THIRD$"    # todo: NEW TRANSLATION
- ADD_FERVOR_TARGET_MODIFIER: "$MODIFIER_DESC$ [Concept('concept_pop', '$concept_pops$')] v [Country.GetName]"    # todo: NEW TRANSLATION
- ADD_FERVOR_TARGET_MODIFIER_NEG: "$MODIFIER_DESC$ [Concept('concept_pop', '$concept_pops$')] v [Country.GetName]"    # todo: NEW TRANSLATION
- WITHDRAW_EFFECT: "[concept_country] vystupuje z [concept_treaty]"    # todo: NEW TRANSLATION
- WITHDRAW_EFFECT_FIRST: "[COUNTRY.GetNameNoFlag] vystupuje z [concept_treaty]"    # todo: NEW TRANSLATION
- WITHDRAW_EFFECT_THIRD: "[COUNTRY.GetName] vystupuje z [concept_treaty]"    # todo: NEW TRANSLATION
- START_NATIONAL_AWAKENING: "[concept_national_awakening] začíná pro [CULTURE.GetName] [concept_culture] v [STATE_REGION.GetName] a trvá $MONTHS|v0$ měsíců"    # todo: NEW TRANSLATION
- START_NATIONAL_AWAKENING_FIRST: "[concept_national_awakening] začíná pro [CULTURE.GetName] [concept_culture] v [STATE_REGION.GetName] a trvá $MONTHS|v0$ měsíců"    # todo: NEW TRANSLATION
- START_NATIONAL_AWAKENING_THIRD: "[concept_national_awakening] začíná pro [CULTURE.GetName] [concept_culture] v [STATE_REGION.GetName] a trvá $MONTHS|v0$ měsíců"    # todo: NEW TRANSLATION
- END_NATIONAL_AWAKENING: "[concept_national_awakening] pro [CULTURE.GetName] [concept_culture] končí"    # todo: NEW TRANSLATION
- END_NATIONAL_AWAKENING_FIRST: "[concept_national_awakening] pro [CULTURE.GetName] [concept_culture] končí"    # todo: NEW TRANSLATION
- END_NATIONAL_AWAKENING_THIRD: "[concept_national_awakening] pro [CULTURE.GetName] [concept_culture] končí""    # todo: NEW TRANSLATION
+ EXECUTE_EVENT_OPTION: "$EFFECT_DESC$"
+ ACTIVATE_LAW_FIRST: "[COUNTRY.GetNameNoFlag] zavádí zákon [Law.GetFullNameWithStatus]"
+ LIBERATE_SLAVES: "Všichni [GetPopType('slaves').GetName] budou osvobozeni"
+ LIBERATE_SLAVES_FIRST: "Všichni [GetPopType('slaves').GetName] v $SUBJECT_NAME$ budou osvobozeni"
+ LIBERATE_SLAVES_THIRD: "Všichni [GetPopType('slaves').GetName] v $SUBJECT_NAME$ budou osvobozeni"
+ LIBERATE_SLAVES_IN_INCORPORATED_STATES: "Všichni [GetPopType('slaves').GetName] v [Concept('concept_incorporated_state', '$concept_incorporated_states$')] budou osvobozeni"
+ LIBERATE_SLAVES_IN_INCORPORATED_STATES_FIRST: "Všichni [GetPopType('slaves').GetName] v [Concept('concept_incorporated_state', '$concept_incorporated_states$')] v [Country.GetNameNoFlag] budou osvobozeni"
+ LIBERATE_SLAVES_IN_INCORPORATED_STATES_THIRD: "Všichni [GetPopType('slaves').GetName] v [Concept('concept_incorporated_state', '$concept_incorporated_states$')] v [Country.GetName] budou osvobozeni"
+ LIBERATE_SLAVES_IN_UNINCORPORATED_STATES: "Všichni [GetPopType('slaves').GetName] v [Concept('concept_unincorporated_state', '$concept_unincorporated_states$')] budou osvobozeni"
+ LIBERATE_SLAVES_IN_UNINCORPORATED_STATES_FIRST: "Všichni [GetPopType('slaves').GetName] v [Concept('concept_unincorporated_state', '$concept_unincorporated_states$')] v [Country.GetNameNoFlag] budou osvobozeni"
+ LIBERATE_SLAVES_IN_UNINCORPORATED_STATES_THIRD: "Všichni [GetPopType('slaves').GetName] v [Concept('concept_unincorporated_state', '$concept_unincorporated_states$')] v [Country.GetName] budou osvobozeni"
+ ADD_TRADITION_TRAIT: "[CULTURE.GetName] přijímá [DISCRIMINATION_TRAIT.GetName] [concept_tradition_trait]"
+ REMOVE_TRADITION_TRAIT: "[CULTURE.GetName] opouští [DISCRIMINATION_TRAIT.GetName] [concept_tradition_trait]"
+ SET_FERVOR: "[concept_fervor] [CULTURE.GetName] je nastaven na #variable $VALUE|0$#!"
+ ADD_FERVOR: "[concept_fervor] [CULTURE.GetName] se změní o #variable $VALUE|0+$#!"
+ CREATE_DIPLOMATIC_PLAY_FIRST: "[COUNTRY.GetNameNoFlag] zahajuje #variable [DIPLOMATIC_PLAY_TYPE.GetName]#! [concept_diplomatic_play] proti [TARGET_COUNTRY.GetName]"
+ CREATE_DIPLOMATIC_PLAY_THIRD: "[COUNTRY.GetName] zahajuje #variable [DIPLOMATIC_PLAY_TYPE.GetName]#! [concept_diplomatic_play] proti [TARGET_COUNTRY.GetName]"
+ ADD_CULTURE_ACCEPTANCE_MODIFIER: "$MODIFIER_DESC$ kultura v [Country.GetName]"
+ ADD_CULTURE_ACCEPTANCE_MODIFIER_FIRST: "$MODIFIER_DESC$ kultura v [Country.GetName]"
+ ADD_CULTURE_ACCEPTANCE_MODIFIER_THIRD: "$MODIFIER_DESC$ kultura v [Country.GetName]"
+ ADD_CULTURE_ACCEPTANCE_MODIFIER_NEG: "$ADD_CULTURE_ACCEPTANCE_MODIFIER$"
+ ADD_CULTURE_ACCEPTANCE_MODIFIER_FIRST_NEG: "$ADD_CULTURE_ACCEPTANCE_MODIFIER_FIRST$"
+ ADD_CULTURE_ACCEPTANCE_MODIFIER_THIRD_NEG: "$ADD_CULTURE_ACCEPTANCE_MODIFIER_THIRD$"
+ ADD_FERVOR_TARGET_MODIFIER: "$MODIFIER_DESC$ [Concept('concept_pop', '$concept_pops$')] v [Country.GetName]"
+ ADD_FERVOR_TARGET_MODIFIER_NEG: "$MODIFIER_DESC$ [Concept('concept_pop', '$concept_pops$')] v [Country.GetName]"
+ WITHDRAW_EFFECT: "[concept_country] vystupuje ze [Concept('concept_treaty','smlouvy')]"
+ WITHDRAW_EFFECT_FIRST: "[COUNTRY.GetNameNoFlag] vystupuje ze [Concept('concept_treaty','smlouvy')]"
+ WITHDRAW_EFFECT_THIRD: "[COUNTRY.GetName] vystupuje ze [Concept('concept_treaty','smlouvy')]"
+ START_NATIONAL_AWAKENING: "[concept_national_awakening] začíná pro [CULTURE.GetName] [Concept('concept_culture','kulturu')] v [STATE_REGION.GetName] a trvá $MONTHS|v0$ měsíců"
+ START_NATIONAL_AWAKENING_FIRST: "[concept_national_awakening] začíná pro [CULTURE.GetName] [Concept('concept_culture','kulturu')] v [STATE_REGION.GetName] a trvá $MONTHS|v0$ měsíců"
+ START_NATIONAL_AWAKENING_THIRD: "[concept_national_awakening] začíná pro [CULTURE.GetName] [Concept('concept_culture','kulturu')] v [STATE_REGION.GetName] a trvá $MONTHS|v0$ měsíců"
+ END_NATIONAL_AWAKENING: "[concept_national_awakening] pro [CULTURE.GetName] [Concept('concept_culture','kulturu')] končí"
+ END_NATIONAL_AWAKENING_FIRST: "[concept_national_awakening] pro [CULTURE.GetName] [Concept('concept_culture','kulturu')] končí"
+ END_NATIONAL_AWAKENING_THIRD: "[concept_national_awakening] pro [CULTURE.GetName] [Concept('concept_culture','kulturu')] končí"

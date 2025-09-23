@@ -15,8 +15,8 @@
  EVENT_TARGET_CUSTOM_NAME: "$GENERAL|v$ ($SPECIFIC|V$)"
  EVENT_TARGET_NOT_COMPARISON_TRIGGER: "$LEFT|v$ #bold není #! $RIGHT|v$"
  EVENT_TARGET_NO_CUSTOM_NAME: "$SPECIFIC|v$"
- GOODS_PRODUCTION_RANK_ONE_OF_THE_TOP_PRODUCERS: "jeden z #v nejlepších $NUM|0$#! producentů [Goods.GetName] (aktuálně: [SelectLocalization(BetweenInclusiveOfMax_CFixedPoint('(CFixedPoint)$CURRENT_VALUE$','(CFixedPoint)0', '(CFixedPoint)10'),'#v ##$CURRENT_VALUE|0$#!','none')])" # todo: Jedním z #v top $NUM|0$#! producentů zboží [Goods.GetTextIcon][Nbsp][Goods.GetName] (aktuálně: [SelectLocalization(BetweenInclusiveOfMax_CFixedPoint('(CFixedPoint)$CURRENT_VALUE$','(CFixedPoint)0','(CFixedPoint)10'),'#v ##$CURRENT_VALUE|0$#!','none')])
- GOODS_PRODUCTION_RANK_PRODUCER: "#v ##$NUM|0$#! producent [Goods.GetName] (aktuálně: [SelectLocalization(BetweenInclusiveOfMax_CFixedPoint('(CFixedPoint)$CURRENT_VALUE$','(CFixedPoint)0', '(CFixedPoint)10'),'#v ##$CURRENT_VALUE|0$#!','none')])" # todo: #v ##$NUM|0$#! producent zboží [Goods.GetTextIcon][Nbsp][Goods.GetName] (aktuálně: [SelectLocalization(BetweenInclusiveOfMax_CFixedPoint('(CFixedPoint)$CURRENT_VALUE$','(CFixedPoint)0','(CFixedPoint)10'),'#v ##$CURRENT_VALUE|0$#!','none')])
+ GOODS_PRODUCTION_RANK_ONE_OF_THE_TOP_PRODUCERS: "jeden z #v nejlepších $NUM|0$#! producentů [Goods.GetName] (aktuálně: [SelectLocalization(BetweenInclusiveOfMax_CFixedPoint('(CFixedPoint)$CURRENT_VALUE$','(CFixedPoint)0', '(CFixedPoint)10'),'#v ##$CURRENT_VALUE|0$#!','none')])"
+ GOODS_PRODUCTION_RANK_PRODUCER: "#v ##$NUM|0$#! producent [Goods.GetName] (aktuálně: [SelectLocalization(BetweenInclusiveOfMax_CFixedPoint('(CFixedPoint)$CURRENT_VALUE$','(CFixedPoint)0', '(CFixedPoint)10'),'#v ##$CURRENT_VALUE|0$#!','none')])"
  NOT_TRIGGER_ANY_POLITICAL_MOVEMENT: "Žádný [concept_political_movement]:"
  NOT_TRIGGER_ANY_SCOPE_CULTURE_COUNT: "$PARAMETERS$ $FILTER$[Concept('concept_culture', '$concept_cultures$')] NE:"
  NOT_TRIGGER_BUILDING_LEVEL_GREATER_OR_EQUAL: "Úroveň budovy je větší nebo rovna $TARGET_VALUE|0v$"
@@ -252,13 +252,13 @@
  TRIGGER_ANY_POWER_BLOC_MEMBER_PERCENT_THIRD: "$PARAMETERS$ z $FILTER$členové [PowerBloc.GetName]:"
  TRIGGER_ANY_POWER_BLOC_MEMBER_THIRD: "Jakýkoliv člen [PowerBloc.GetName]:"
  TRIGGER_ANY_POWER_BLOC_PERCENT: "$PARAMETERS$ of $FILTER$[Concept('concept_power_bloc', '$concept_power_blocs$')]:"
- TRIGGER_ANY_PRIMARY_CULTURE: "Jakákoliv [concept_primary_cultures]:"
- TRIGGER_ANY_PRIMARY_CULTURE_ALL: "Všechny [concept_primary_cultures]:" # todo: Všechny [Concept('concept_primary_cultures', '$concept_primary_culture$')]:
- TRIGGER_ANY_PRIMARY_CULTURE_ALL_FIRST: "Všechny [concept_primary_cultures] v [COUNTRY.GetNameNoFlag]:" # todo: Všechny [Concept('concept_primary_cultures', '$concept_primary_culture$')] v [COUNTRY.GetNameNoFlag]:
- TRIGGER_ANY_PRIMARY_CULTURE_ALL_FIRST_NOT: "Všechny [concept_primary_cultures] v [COUNTRY.GetNameNoFlag] NE:" # todo: Žádný [Concept('concept_primary_cultures', '$concept_primary_culture$')] ve [COUNTRY.GetNameNoFlag] NE:
- TRIGGER_ANY_PRIMARY_CULTURE_ALL_NOT: "Všechny [concept_primary_cultures] NE:" # todo: Všechny [Concept('concept_primary_cultures', '$concept_primary_culture$')] NE:
- TRIGGER_ANY_PRIMARY_CULTURE_ALL_THIRD: "Všechny [concept_primary_cultures] v [COUNTRY.GetName]:" # todo: Všechny [Concept('concept_primary_cultures', '$concept_primary_culture$')] v [COUNTRY.GetName]:
- TRIGGER_ANY_PRIMARY_CULTURE_ALL_THIRD_NOT: "Všechny [concept_primary_cultures] v [COUNTRY.GetName] NE:" # todo: Všechny [Concept('concept_primary_cultures', '$concept_primary_culture$')] v [COUNTRY.GetName] NENÍ:
+ TRIGGER_ANY_PRIMARY_CULTURE: "Jakákoliv [Concept('concept_primary_cultures','primární kultura')]:"
+ TRIGGER_ANY_PRIMARY_CULTURE_ALL: "Všechny [concept_primary_cultures|l]:"
+ TRIGGER_ANY_PRIMARY_CULTURE_ALL_FIRST: "Všechny [concept_primary_cultures|l] v [COUNTRY.GetNameNoFlag]:"
+ TRIGGER_ANY_PRIMARY_CULTURE_ALL_FIRST_NOT: "Všechny [concept_primary_cultures|l] v [COUNTRY.GetNameNoFlag] NE:"
+ TRIGGER_ANY_PRIMARY_CULTURE_ALL_NOT: "Všechny [concept_primary_cultures|l] NE:"
+ TRIGGER_ANY_PRIMARY_CULTURE_ALL_THIRD: "Všechny [concept_primary_cultures|l] v [COUNTRY.GetName]:"
+ TRIGGER_ANY_PRIMARY_CULTURE_ALL_THIRD_NOT: "Všechny [concept_primary_cultures|l] v [COUNTRY.GetName] NE:"
  TRIGGER_ANY_PRIMARY_CULTURE_COUNT: "$PARAMETERS$ $FILTER$[Concept('concept_primary_cultures', '$concept_primary_culture$')]:"
  TRIGGER_ANY_PRIMARY_CULTURE_COUNT_FIRST: "$PARAMETERS$ $FILTER$[Concept('concept_primary_cultures', '$concept_primary_culture$')] ve [COUNTRY.GetNameNoFlag]:"
  TRIGGER_ANY_PRIMARY_CULTURE_COUNT_THIRD: "$PARAMETERS$ $FILTER$[Concept('concept_primary_cultures', '$concept_primary_culture$')] v [COUNTRY.GetName]:"
@@ -912,7 +912,7 @@
  TRIGGER_CONSTRUCTION_QUEUE_PRIVATE_DURATION_LESS_THAN_THIRD: "Zbývající doba [Concept('concept_private_construction', '$concept_private_constructions$')] ve [Country.GetName] je větší než nebo rovna $NUM|0v$ týdnů (aktuálně: $CURRENT_VALUE|0v$)"
  TRIGGER_CONSTRUCTION_QUEUE_PRIVATE_DURATION_NOT_EQUAL: "Zbývající doba [Concept('concept_private_construction', '$concept_private_constructions$')] #bold není#! $NUM|0v$ týdnů"
  TRIGGER_CONSTRUCTION_QUEUE_PRIVATE_DURATION_NOT_EQUAL_FIRST: "Zbývající doba [Country.GetAdjectiveNoFlag] [Concept('concept_private_construction', '$concept_private_constructions$')] #bold není#! $NUM|0v$ týdny (aktuálně: $CURRENT_VALUE|0v$)"
- TRIGGER_CONSTRUCTION_QUEUE_PRIVATE_DURATION_NOT_EQUAL_THIRD: "Zbývající doba [Concept('concept_private_construction', '$concept_private_constructions$')] v [Country.GetName] je #bold not #!$NUM|0v$ týdny (aktuálně: $CURRENT_VALUE|0v$)"
+ TRIGGER_CONSTRUCTION_QUEUE_PRIVATE_DURATION_NOT_EQUAL_THIRD: "Zbývající doba [Concept('concept_private_construction', '$concept_private_constructions$')] v [Country.GetName] #b není#!$NUM|0v$ týdny (aktuálně: $CURRENT_VALUE|0v$)"
  TRIGGER_CONSTRUCTION_QUEUE_SIZE_EQUAL: "Počet projektů v [concept_construction_queue] je $NUM|0v$"
  TRIGGER_CONSTRUCTION_QUEUE_SIZE_EQUAL_FIRST: "Počet projektů v [Country.GetAdjectiveNoFlag] [concept_construction_queue] je $NUM|0v$"
  TRIGGER_CONSTRUCTION_QUEUE_SIZE_EQUAL_THIRD: "Počet projektů v [Country.GetName] [concept_construction_queue] je $NUM|0v$"
@@ -1123,8 +1123,8 @@
  TRIGGER_COUNTRY_RELIGION_NOT: "Náboženství [COUNTRY.GetName] #bold není#! stejné jako v [GetPlayer.GetName]"
  TRIGGER_COUNTRY_THIS_EQUAL: "Země je [TARGET_COUNTRY.GetName]"
  TRIGGER_COUNTRY_THIS_EQUAL_NOT: "Země #bold není#! [TARGET_COUNTRY.GetName]"
- TRIGGER_COUNTRY_TIER: "#variable [concept_country_tier]#! z [COUNTRY.GetName] je $TIER|v$" # todo: #variable [concept_country_tier] [COUNTRY.GetName] je $TIER|v$
- TRIGGER_COUNTRY_TIER_NOT: "#variable [concept_country_tier]#! z [COUNTRY.GetName] je #bold ne #!$TIER|v$" # todo: #variable [concept_country_tier] [COUNTRY.GetName] #bold není#! $TIER|v$
+ TRIGGER_COUNTRY_TIER: "#variable [concept_country_tier]#! z [COUNTRY.GetName] je $TIER|v$"
+ TRIGGER_COUNTRY_TIER_NOT: "#variable [concept_country_tier]#! z [COUNTRY.GetName] #bold není #!$TIER|v$"
  TRIGGER_CREDIT_EQUAL: "Úvěr [COUNTRY.GetName] je $TARGET_VALUE|0v$"
  TRIGGER_CREDIT_GREATER_OR_EQUAL: "Kredit [COUNTRY.GetName] je větší než, nebo se rovná $TARGET_VALUE|0v$"
  TRIGGER_CREDIT_GREATER_THAN: "Kredit [COUNTRY.GetName] je větší než $TARGET_VALUE|0v$"
@@ -1355,9 +1355,9 @@
  TRIGGER_HAS_ACTIVE_PRODUCTION_METHOD_THIRD: "[Building.GetName] má aktivovaný [PRODUCTION_METHOD.GetName]"
  TRIGGER_HAS_ACTIVE_PRODUCTION_METHOD_THIRD_NOT: "[Building.GetName] #bold není#! aktivováno [PRODUCTION_METHOD.GetName]"
  TRIGGER_HAS_ANY_SECESSIONISTS_BROKEN_OUT: "Má [Concept('concept_secession','$concept_seceding$')] [Concept('concept_country', '$concept_countries$')] odtržené" # todo: Má se oddělili secesionisté
- TRIGGER_HAS_ANY_SECESSIONISTS_BROKEN_OUT_NOT: "#bold ne #!má [Concept('concept_secession','$concept_seceding$')] [Concept('concept_country', '$concept_countries$')] odtržené" # todo: Nemá #bold not#! žádné odtržené země
+ TRIGGER_HAS_ANY_SECESSIONISTS_BROKEN_OUT_NOT: "#bold Nemá #! [Concept('concept_secession','$concept_seceding$')] [Concept('concept_country', '$concept_countries$')] odtržené" # todo: Nemá #bold not#! žádné odtržené země
  TRIGGER_HAS_ANY_SECESSIONISTS_GROWING: "Má rostoucí [Concept('concept_secession','$concept_secessionist$')] [Concept('concept_political_movement','$concept_political_movements_short$')]" # todo: Má se rozrůstající se secesionistické hnutí
- TRIGGER_HAS_ANY_SECESSIONISTS_GROWING_NOT: "#bold ne #!má rostoucí [Concept('concept_secession','$concept_secessionist$')] [Concept('concept_political_movement','$concept_political_movements_short$')]" # todo: Nemá #bold klesající#! hnutí separatistů
+ TRIGGER_HAS_ANY_SECESSIONISTS_GROWING_NOT: "#bold Nemá #! rostoucí [Concept('concept_secession','$concept_secessionist$')] [Concept('concept_political_movement','$concept_political_movements_short$')]" # todo: Nemá #bold klesající#! hnutí separatistů
  TRIGGER_HAS_ANY_SECESSIONISTS_POSSIBLE: "Má možné secesionistické hnutí"
  TRIGGER_HAS_ANY_SECESSIONISTS_POSSIBLE_NOT: "#bold Nemá#! možné secesionistické pohyby"
  TRIGGER_HAS_ANY_SUBVENTIONS_ON: "Má jakoukoli úroveň [concept_subventions] na [TARGET_GOODS.GetName]"
@@ -1769,7 +1769,7 @@
  TRIGGER_IG_APPROVAL_THIRD_NOT: "[concept_approval] [INTEREST_GROUP.GetName] #bold není#! $COMPARATOR$ #variable $NUM|0+=$#!"
  TRIGGER_IG_CLOUT: "Ovlivnění je $COMPARATOR$ #variable $NUM|0%$#!"
  TRIGGER_IG_CLOUT_FIRST: "[INTEREST_GROUP.GetName] [concept_clout] je $COMPARATOR$ #variable $NUM|0%$#!"
- TRIGGER_IG_CLOUT_FIRST_NOT: "[INTEREST_GROUP.GetName] [concept_clout] je #bold not #!$COMPARATOR$ #variable $NUM|0%$#!"
+ TRIGGER_IG_CLOUT_FIRST_NOT: "[INTEREST_GROUP.GetName] [concept_clout] #b není#!$COMPARATOR$ #variable $NUM|0%$#!"
  TRIGGER_IG_CLOUT_NOT: "Ovlivnění #bold není#!$COMPARATOR$ #variable $NUM|0%$#!"
  TRIGGER_IG_CLOUT_THIRD: "[INTEREST_GROUP.GetName] [concept_clout] je $COMPARATOR$ #variable $NUM|0%$#!"
  TRIGGER_IG_CLOUT_THIRD_NOT: "[INTEREST_GROUP.GetName] [concept_clout] #bold není#!$COMPARATOR$ #variable $NUM|0%$#!"
@@ -1842,7 +1842,7 @@
  TRIGGER_INSTITUTION_INVESTMENT_LEVEL_FIRST_NOT: "[COUNTRY.GetAdjectiveNoFlag] Investiční úroveň pro [INSTITUTION_TYPE.GetName] #bold není#! $COMPARATOR$ $NUM|v$"
  TRIGGER_INSTITUTION_INVESTMENT_LEVEL_NOT: "Úroveň investice pro [INSTITUTION_TYPE.GetName] #bold not #!$COMPARATOR$ $NUM|v$"
  TRIGGER_INSTITUTION_INVESTMENT_LEVEL_THIRD: "[COUNTRY.GetAdjective] Úroveň investice pro [INSTITUTION_TYPE.GetName] $COMPARATOR$ $NUM|v$"
- TRIGGER_INSTITUTION_INVESTMENT_LEVEL_THIRD_NOT: "[COUNTRY.GetAdjective] úroveň investic pro [INSTITUTION_TYPE.GetName] je #bold not #!$COMPARATOR$ $NUM|v$"
+ TRIGGER_INSTITUTION_INVESTMENT_LEVEL_THIRD_NOT: "[COUNTRY.GetAdjective] úroveň investic pro [INSTITUTION_TYPE.GetName] #b není#!$COMPARATOR$ $NUM|v$"
  TRIGGER_INTEREST_GROUP_POPULATION: "Populace $COMPARATOR$ #variable $NUM$#!"
  TRIGGER_INTEREST_GROUP_POPULATION_NOT: "Populace #bold ne #!$COMPARATOR$ #variable $NUM$#!"
  TRIGGER_INTEREST_GROUP_POPULATION_PERCENTAGE: "Procento populace země je $COMPARATOR$ #variable $NUM$#!"
@@ -1977,7 +1977,7 @@
  TRIGGER_IS_COUNTRY_TYPE: "Je #variable $COUNTRY_TYPE$#!"
  TRIGGER_IS_COUNTRY_TYPE_FIRST: "[COUNTRY.GetNameNoFlag] je #variable $COUNTRY_TYPE$#!"
  TRIGGER_IS_COUNTRY_TYPE_FIRST_NOT: "[COUNTRY.GetNameNoFlag] #bold není#!#variable $COUNTRY_TYPE$#!"
- TRIGGER_IS_COUNTRY_TYPE_NOCONTEXT_NOT: "Je #bold not #!#variable $COUNTRY_TYPE$#!"
+ TRIGGER_IS_COUNTRY_TYPE_NOCONTEXT_NOT: "#b Není#!#variable $COUNTRY_TYPE$#!"
  TRIGGER_IS_COUNTRY_TYPE_NOT: "#bold není#! #variable $COUNTRY_TYPE$#!"
  TRIGGER_IS_COUNTRY_TYPE_THIRD: "[COUNTRY.GetName] je #variable $COUNTRY_TYPE$#!"
  TRIGGER_IS_COUNTRY_TYPE_THIRD_NOT: "[COUNTRY.GetName] #bold není#! #variable $COUNTRY_TYPE$#!"
@@ -2170,7 +2170,7 @@
  TRIGGER_IS_IN_SAME_POWER_BLOC_THIRD: "[Country.GetName] je ve stejné [concept_power_bloc] jako [TARGET_COUNTRY.GetName]"
  TRIGGER_IS_IN_SAME_POWER_BLOC_THIRD_NOT: "[Country.GetName] #bold není#! ve stejné [concept_power_bloc] jako [TARGET_COUNTRY.GetName]"
  TRIGGER_IS_IN_SEVERE_STARVATION: "Je v těžké hladu"
- TRIGGER_IS_IN_SEVERE_STARVATION_NOT: "Je #bold not #! v těžkém hladomoru"
+ TRIGGER_IS_IN_SEVERE_STARVATION_NOT: "#b Není#! v těžkém hladomoru"
  TRIGGER_IS_IN_STARVATION: "Je v hladovění"
  TRIGGER_IS_IN_STARVATION_NOT: "#bold Není#! v hladomoru"
  TRIGGER_IS_IN_VOID: "Zmizel"
@@ -2492,7 +2492,7 @@
  TRIGGER_LOBBY_JOIN_WEIGHT_LESS_THAN_NOT: "[concept_political_lobby] váha připojení #bold není#! méně než $TARGET_VALUE|0v$"
  TRIGGER_LOBBY_JOIN_WEIGHT_NOT_EQUAL: "[concept_political_lobby] join weight #bold není#! $TARGET_VALUE|0v$"
  TRIGGER_LOYALIST_FRACTION: "Frakce [concept_loyalist] [SelectLocalization( StringIsEmpty( '$FILTER$' ), Concept('concept_pop', '$concept_pops$'), '$FILTER$')] je $COMPARATOR$ $NUM$"
- TRIGGER_LOYALIST_FRACTION_NOT: "Frakce [concept_loyalist] [SelectLocalization( StringIsEmpty( '$FILTER$' ), Concept('concept_pop', '$concept_pops$'), '$FILTER$')] je #bold not #!$COMPARATOR$ $NUM$"
+ TRIGGER_LOYALIST_FRACTION_NOT: "Frakce [concept_loyalist] [SelectLocalization( StringIsEmpty( '$FILTER$' ), Concept('concept_pop', '$concept_pops$'), '$FILTER$')] #b není#!$COMPARATOR$ $NUM$"
  TRIGGER_LOYALIST_FRACTION_THIRD: "$COMPARATOR|U$ $NUM|%0$ z [SelectLocalization( StringIsEmpty( '$FILTER$' ), Concept('concept_pop', '$concept_pops$'), '$FILTER$')] ve $NAME$ jsou [Concept('concept_loyalist', '$concept_loyalists$')]"
  TRIGGER_LOYALIST_FRACTION_THIRD_NOT: "$COMPARATOR|U$ $NUM|%0$ z [SelectLocalization( StringIsEmpty( '$FILTER$' ), Concept('concept_pop', '$concept_pops$'), '$FILTER$')] v $NAME$ #bold není#! [Concept('concept_loyalist', '$concept_loyalists$')]"
  TRIGGER_LOYALTY: "Loajalisté jsou $COMPARATOR$ #variable $NUM|%$#!"
@@ -2774,7 +2774,7 @@
  TRIGGER_NUM_ALLIANCES_TO_ALLIES_GREATER_THAN: "Počet spojenectví [TARGET_COUNTRY.GetName] s Aliancemi [COUNTRY.GetName] je větší než $TARGET_VALUE|0v$"
  TRIGGER_NUM_ALLIANCES_TO_ALLIES_LESS_OR_EQUAL: "Počet aliancí, které má [TARGET_COUNTRY.GetName] s aliancemi k [COUNTRY.GetName] úrovni je méně než, nebo rovno $TARGET_VALUE|0v$"
  TRIGGER_NUM_ALLIANCES_TO_ALLIES_LESS_THAN: "Počet Aliancí, které má [TARGET_COUNTRY.GetName] s spojenci na [COUNTRY.GetName] je menší než $TARGET_VALUE|0v$"
- TRIGGER_NUM_ALLIANCES_TO_ALLIES_NOT_EQUAL: "Počet aliancí, které má [TARGET_COUNTRY.GetName] s aliancemi k [COUNTRY.GetName] úrovni je #bold not #!$TARGET_VALUE|0v$"
+ TRIGGER_NUM_ALLIANCES_TO_ALLIES_NOT_EQUAL: "Počet aliancí, které má [TARGET_COUNTRY.GetName] s aliancemi k [COUNTRY.GetName] úrovni #b není#!$TARGET_VALUE|0v$"
  TRIGGER_NUM_ALLIANCES_TO_RIVALS_EQUAL: "Počet aliancí, které má [TARGET_COUNTRY.GetName] s rivaly vůči [COUNTRY.GetName], je $TARGET_VALUE|0v$"
  TRIGGER_NUM_ALLIANCES_TO_RIVALS_GREATER_OR_EQUAL: "Počet spojenectví [TARGET_COUNTRY.GetName] s rivaly [COUNTRY.GetName] je větší než, nebo roven $TARGET_VALUE|0v$"
  TRIGGER_NUM_ALLIANCES_TO_RIVALS_GREATER_THAN: "Počet aliancí, které [TARGET_COUNTRY.GetName] má s rivaly z [COUNTRY.GetName], je větší než $TARGET_VALUE|0v$"
@@ -2963,7 +2963,7 @@
  TRIGGER_NUM_TOTAL_BATTALIONS_GREATER_THAN: "[FRONT.GetName] počet batalionů je větší než $TARGET_VALUE|0v$"
  TRIGGER_NUM_TOTAL_BATTALIONS_LESS_OR_EQUAL: "Počet pluků na [FRONT.GetName] je méně než, nebo rovno $TARGET_VALUE|0v$"
  TRIGGER_NUM_TOTAL_BATTALIONS_LESS_THAN: "[FRONT.GetName] počet batalionů je menší než $TARGET_VALUE|0v$"
- TRIGGER_NUM_TOTAL_BATTALIONS_NOT_EQUAL: "Počet pluků na [FRONT.GetName] je #bold not #!$TARGET_VALUE|0v$"
+ TRIGGER_NUM_TOTAL_BATTALIONS_NOT_EQUAL: "Počet pluků na [FRONT.GetName] #b není#!$TARGET_VALUE|0v$"
  TRIGGER_NUM_UNINCORPORATED_STATES_EQUAL: "Počet nezačleněných států, které [COUNTRY.GetName] má, je $TARGET_VALUE|0v$"
  TRIGGER_NUM_UNINCORPORATED_STATES_GREATER_OR_EQUAL: "Počet neúplně zapojených států, které [COUNTRY.GetName] má, je větší či roven $TARGET_VALUE|0v$"
  TRIGGER_NUM_UNINCORPORATED_STATES_GREATER_THAN: "Počet nezahrnutých států, které [COUNTRY.GetName] má, je větší než $TARGET_VALUE|0v$"
@@ -3043,7 +3043,7 @@
  TRIGGER_POLITICAL_MOVEMENT_SUPPORT: "Podpora je $COMPARATOR$ #variable $NUM|%0$#!"
  TRIGGER_POLITICAL_MOVEMENT_SUPPORT_NOT: "Podpora není #bold $COMPARATOR$ #variable $NUM|%0$#!"
  TRIGGER_POLITICAL_MOVEMENT_SUPPORT_THIRD: "Podpora pro [POLITICAL_MOVEMENT.GetName] je $COMPARATOR$ #variable $NUM|%0$#!"
- TRIGGER_POLITICAL_MOVEMENT_SUPPORT_THIRD_NOT: "Podpora [POLITICAL_MOVEMENT.GetName] je #bold not #!$COMPARATOR$ #variable $NUM|%0$#!"
+ TRIGGER_POLITICAL_MOVEMENT_SUPPORT_THIRD_NOT: "Podpora [POLITICAL_MOVEMENT.GetName] #b není#!$COMPARATOR$ #variable $NUM|%0$#!"
  TRIGGER_POLITICAL_MOVEMENT_WEALTH_SUPPORT: "Podpora bohatství je $COMPARATOR$ #variable $NUM|%0$#!"
  TRIGGER_POLITICAL_MOVEMENT_WEALTH_SUPPORT_NOT: "Podpora bohatsví #bold není#! $COMPARATOR$ #variable $NUM|%0$#!"
  TRIGGER_POLITICAL_MOVEMENT_WEALTH_SUPPORT_THIRD: "Podpora bohatství pro [POLITICAL_MOVEMENT.GetName] je $COMPARATOR$ #variable $NUM|%0$#!"
@@ -3152,7 +3152,7 @@
  TRIGGER_PRODUCED_AUTHORITY_FIRST_NOT: "[COUNTRY.GetAdjectiveNoFlag] @aut![Nbsp][concept_authority] tvorby #bold není#! $COMPARATOR$ #variable $NUM|0$#!"
  TRIGGER_PRODUCED_AUTHORITY_NOT: "@aut![Nbsp][concept_authority] tvorby #bold není#! #!$COMPARATOR$ #variable $NUM|0$#!"
  TRIGGER_PRODUCED_AUTHORITY_THIRD: "[COUNTRY.GetAdjective] @aut![Nbsp][concept_authority] tvorby je $COMPARATOR$ #variable $NUM|0$#!"
- TRIGGER_PRODUCED_AUTHORITY_THIRD_NOT: "[COUNTRY.GetAdjective] @aut![Nbsp][concept_authority] tvorby je #bold not #!$COMPARATOR$ #variable $NUM|0$#!"
+ TRIGGER_PRODUCED_AUTHORITY_THIRD_NOT: "[COUNTRY.GetAdjective] @aut![Nbsp][concept_authority] tvorby #b není#!$COMPARATOR$ #variable $NUM|0$#!"
  TRIGGER_PRODUCED_BUREAUCRACY: "@bur![Nbsp][concept_bureaucracy] produkce je $COMPARATOR$ #variable $NUM|0$#!"
  TRIGGER_PRODUCED_BUREAUCRACY_FIRST: "[COUNTRY.GetAdjectiveNoFlag] produkce @bur![Nbsp][concept_bureaucracy] je $COMPARATOR$ #variable $NUM|0$#!"
  TRIGGER_PRODUCED_BUREAUCRACY_FIRST_NOT: "[COUNTRY.GetAdjectiveNoFlag] @bur![Nbsp][concept_bureaucracy] produkce není #bold $COMPARATOR$ #variable $NUM|0$#!"
@@ -3369,7 +3369,7 @@
  TRIGGER_STATE_GOODS_PRICIER_THIRD: "[STATE_GOODS.GetGoods.GetName] v [STATE_GOODS.GetState.GetName] je $COMPARATOR$ #variable $NUM|%0v$#! dražší než [concept_base_price]"
  TRIGGER_STATE_GOODS_PRICIER_THIRD_NOT: "[STATE_GOODS.GetGoods.GetName] v [STATE_GOODS.GetState.GetName] #bold není#! $COMPARATOR$ #variable $NUM|%0v$#! dražší než [concept_base_price]"
  TRIGGER_STATE_GOODS_PRODUCTION: "Produkcí státního zboží je $COMPARATOR$ #variable $NUM$#!"
- TRIGGER_STATE_GOODS_PRODUCTION_NOT: "Výroba státních zboží je #bold not #!$COMPARATOR$ #variable $NUM$#!  "
+ TRIGGER_STATE_GOODS_PRODUCTION_NOT: "Výroba státních zboží #b není#!$COMPARATOR$ #variable $NUM$#!  "
  TRIGGER_STATE_GOODS_PRODUCTION_THIRD: "Produkcí pro [STATE_GOODS.GetGoods.GetName] ve [STATE_GOODS.GetState.GetName] je $COMPARATOR$ #variable $NUM$#!"
  TRIGGER_STATE_GOODS_PRODUCTION_THIRD_NOT: "Výroba pro [STATE_GOODS.GetGoods.GetName] v [STATE_GOODS.GetState.GetName] #bold není#! $COMPARATOR$ #variable $NUM$#!  "
  TRIGGER_STATE_HAS_BUILDING_GROUP_LEVELS: "[STATE.GetName] má $COMPARATOR$ #variable $NUM|0$#! úrovně budov $BUILDING_GROUP$ "
@@ -3413,7 +3413,7 @@
  TRIGGER_STATE_REGION_HAS_GOODS_SHORTAGE: "Má [Concept('concept_shortage', '$concept_shortages$')]"
  TRIGGER_STATE_REGION_HAS_GOODS_SHORTAGE_NOT: "Nemá #bold not#! [Concept('concept_shortage', '$concept_shortages$')]"
  TRIGGER_STATE_RELIGION: "Náboženství [concept_state_religion] je [RELIGION.GetName]"
- TRIGGER_STATE_RELIGION_NOT: "[concept_state_religion] je #bold not #![RELIGION.GetName]"
+ TRIGGER_STATE_RELIGION_NOT: "[concept_state_religion] #b není#![RELIGION.GetName]"
  TRIGGER_STATE_RELIGIOUS_ACCEPTANCE: "[TARGET_RELIGION.GetName] [concept_acceptance] je $COMPARATOR$ $NUM|v$"
  TRIGGER_STATE_RELIGIOUS_ACCEPTANCE_NOT: "[TARGET_RELIGION.GetName] [concept_acceptance] #bold není#! $COMPARATOR$ $NUM|v$"
  TRIGGER_STATE_RELIGIOUS_ACCEPTANCE_THIRD: "Přijetí [concept_acceptance] [TARGET_RELIGION.GetName] v [STATE.GetName] je $COMPARATOR$ $NUM|v$"
@@ -3482,7 +3482,7 @@
  TRIGGER_TAX_CAPACITY_USAGE_EQUAL_FIRST_NOT: "Částka využití [concept_tax_capacity] v [State.GetName] #bold není#! $TARGET_VALUE|0v$"
  TRIGGER_TAX_CAPACITY_USAGE_EQUAL_NOT: "Částka využití [concept_tax_capacity] #bold není#! $TARGET_VALUE|0v$"
  TRIGGER_TAX_CAPACITY_USAGE_EQUAL_THIRD: "Množství používání [concept_tax_capacity] ve [State.GetName] je $TARGET_VALUE|0v$"
- TRIGGER_TAX_CAPACITY_USAGE_EQUAL_THIRD_NOT: "Množství použité [concept_tax_capacity] v [State.GetName] je #bold not #!$TARGET_VALUE|0v$"
+ TRIGGER_TAX_CAPACITY_USAGE_EQUAL_THIRD_NOT: "Množství použité [concept_tax_capacity] v [State.GetName] #b není#!$TARGET_VALUE|0v$"
  TRIGGER_TAX_CAPACITY_USAGE_GREATER_OR_EQUAL: "Hodnota využití [concept_tax_capacity] je větší než nebo rovna $TARGET_VALUE|0v$"
  TRIGGER_TAX_CAPACITY_USAGE_GREATER_OR_EQUAL_FIRST: "Množství využití [concept_tax_capacity] ve [State.GetName] je větší než nebo rovno $TARGET_VALUE|0v$"
  TRIGGER_TAX_CAPACITY_USAGE_GREATER_OR_EQUAL_FIRST_NOT: "Částka využití [concept_tax_capacity] v [State.GetName] #bold není#! větší než, nebo rovna $TARGET_VALUE|0v$"
@@ -3607,7 +3607,7 @@
  TRIGGER_TRANSFER_MONEY_NET_INCOME_THIRD: "Týdenní zůstatek pro [Country.GetAdjective] z převodů peněz na základě smluv po výdajích je $COMPARATOR$ #variable $NUM$#!"
  TRIGGER_TRANSFER_MONEY_NET_INCOME_THIRD_NOT: "Týdenní zůstatek pro [Country.GetAdjective] z převodů peněz na základě smluv po výdajích #bold není #!$COMPARATOR$ #variable $NUM$#!"
  TRIGGER_TURMOIL: "Neurovnanost je $COMPARATOR$ #variable $NUM|%$#!"
- TRIGGER_TURMOIL_NOT: "Nepokoj je #bold not #!$COMPARATOR$ #variable $NUM|%$#!"
+ TRIGGER_TURMOIL_NOT: "Nepokoj #b není#!$COMPARATOR$ #variable $NUM|%$#!"
  TRIGGER_TURMOIL_THIRD: "Nepokoje v [State.GetName] jsou $COMPARATOR$ #variable $NUM|%$#! (aktuálně: $CURRENT_VALUE|%v$)"
  TRIGGER_WAR_PARTICIPANT_HAS_WAR_GOAL_OF_TYPE_AGAINST: "Drží [WAR_GOAL_TYPE.GetName] #v [concept_war_goal] cílící na [TARGET_COUNTRY.GetName] v [concept_war]"
  TRIGGER_WAR_PARTICIPANT_HAS_WAR_GOAL_OF_TYPE_AGAINST_FIRST: "[COUNTRY.GetNameNoFlag] drží [WAR_GOAL_TYPE.GetName] #! [concept_war_goal] cílený na [TARGET_COUNTRY.GetName] v [concept_war]"
@@ -3677,174 +3677,172 @@
  TRIGGER_YEAR_GREATER_THAN_OR_EQUAL: "V roce nebo po $NUM$"
  TRIGGER_YEAR_LESS_THAN: "Před $NUM$"
  TRIGGER_YEAR_LESS_THAN_OR_EQUAL: "V roce nebo před $NUM$"
- princely_state: "Jakýkoli [concept_princely_state]:"
- princely_state_all: "All [Concept('concept_princely_state','$concept_princely_states$')]:"
  violate_sovereignty_trigger_not: "Musí mít pozemní bojiště sousedící s oběma vůdci války"
  TRIGGER_IS_ADJACENT_TO_MARKET: "Je sousední s [TARGET_MARKET.GetName]"
  TRIGGER_IS_ADJACENT_TO_MARKET_NOT: "Není #bold sousední#! s [TARGET_MARKET.GetName]"
  TRIGGER_IS_ADJACENT_TO_MARKET_THIRD: "[MARKET.GetName] je sousední s [TARGET_MARKET.GetName]"
  TRIGGER_IS_ADJACENT_TO_MARKET_THIRD_NOT: "[MARKET.GetName] není #bold sousední#! s [TARGET_MARKET.GetName]"
- TRIGGER_IS_DIPLOMATIC_PLAY_COMMITTED_PARTICIPANT_THIRD: "[COUNTRY.GetNameNoFlag] je závazným účastníkem jakékoli [concept_diplomatic_play]"  # todo: NEW TRANSLATION
- TRIGGER_IS_DIPLOMATIC_PLAY_COMMITTED_PARTICIPANT_THIRD_NOT: "[COUNTRY.GetNameNoFlag] je #bold not #!závazným účastníkem jakékoli [concept_diplomatic_play]"  # todo: NEW TRANSLATION
- TRIGGER_IS_DIPLOMATIC_PLAY_COMMITTED_PARTICIPANT_FIRST: "[COUNTRY.GetNameNoFlag] je závazným účastníkem jakékoli [concept_diplomatic_play]"  # todo: NEW TRANSLATION
- TRIGGER_IS_DIPLOMATIC_PLAY_COMMITTED_PARTICIPANT_FIRST_NOT: "[COUNTRY.GetNameNoFlag] je #bold not #!závazným účastníkem jakékoli [concept_diplomatic_play]"  # todo: NEW TRANSLATION
- TRIGGER_IS_DIPLOMATIC_PLAY_UNDECIDED_PARTICIPANT_FIRST: "[COUNTRY.GetNameNoFlag] je nerozhodným účastníkem jakékoli [concept_diplomatic_play]"  # todo: NEW TRANSLATION
- TRIGGER_IS_DIPLOMATIC_PLAY_UNDECIDED_PARTICIPANT_FIRST_NOT: "[COUNTRY.GetNameNoFlag] je #bold not #!nerozhodným účastníkem jakékoli [concept_diplomatic_play]"  # todo: NEW TRANSLATION
- TRIGGER_IS_DIPLOMATIC_PLAY_UNDECIDED_PARTICIPANT_THIRD: "[COUNTRY.GetNameNoFlag] je nerozhodným účastníkem jakékoli [concept_diplomatic_play]"  # todo: NEW TRANSLATION
- TRIGGER_IS_DIPLOMATIC_PLAY_UNDECIDED_PARTICIPANT_THIRD_NOT: "[COUNTRY.GetNameNoFlag] je #bold not #!nerozhodným účastníkem jakékoli [concept_diplomatic_play]"  # todo: NEW TRANSLATION
- TRIGGER_IS_BUILDING_TYPE_NONE: "$TRIGGER_IS_BUILDING_TYPE$"  # todo: NEW TRANSLATION
- TRIGGER_IS_BUILDING_TYPE_NONE_NOT: "$TRIGGER_IS_BUILDING_TYPE_NOT$"  # todo: NEW TRANSLATION
- TRIGGER_HAS_WAR_WITH_FIRST: "[COUNTRY.GetNameNoFlag] je ve válce s [TARGET_COUNTRY.GetName]"  # todo: NEW TRANSLATION
- TRIGGER_HAS_WAR_WITH_FIRST_NOT: "[COUNTRY.GetNameNoFlag] je #bold not#! ve válce s [TARGET_COUNTRY.GetName]"  # todo: NEW TRANSLATION
- TRIGGER_HAS_WAR_WITH_THIRD: "[COUNTRY.GetName] je ve válce s [TARGET_COUNTRY.GetName]"  # todo: NEW TRANSLATION
- TRIGGER_HAS_WAR_WITH_THIRD_NOT: "[COUNTRY.GetName] je #bold not#! ve válce s [TARGET_COUNTRY.GetName]"  # todo: NEW TRANSLATION
- TRIGGER_MOVEMENT_CAN_CAUSE_OBSTINANCE: "Může způsobit odpor"  # todo: NEW TRANSLATION
- TRIGGER_MOVEMENT_CAN_CAUSE_OBSTINANCE_NOT: "Může #bold not#! způsobit odpor"  # todo: NEW TRANSLATION
- TRIGGER_MOVEMENT_CAN_CAUSE_OBSTINANCE_FIRST: "[POLITICAL_MOVEMENT.GetName] může způsobit odpor"  # todo: NEW TRANSLATION
- TRIGGER_MOVEMENT_CAN_CAUSE_OBSTINANCE_FIRST_NOT: "[POLITICAL_MOVEMENT.GetName] může #bold not#! způsobit odpor"  # todo: NEW TRANSLATION
- TRIGGER_MOVEMENT_CAN_CAUSE_OBSTINANCE_THIRD: "[POLITICAL_MOVEMENT.GetName] může způsobit odpor"  # todo: NEW TRANSLATION
- TRIGGER_MOVEMENT_CAN_CAUSE_OBSTINANCE_THIRD_NOT: "[POLITICAL_MOVEMENT.GetName] může #bold not#! způsobit odpor"  # todo: NEW TRANSLATION
- TRIGGER_MOVEMENT_IS_CAUSING_OBSTINANCE: "Způsobuje odpor"  # todo: NEW TRANSLATION
- TRIGGER_MOVEMENT_IS_CAUSING_OBSTINANCE_NOT: "Je #bold not#! způsobuje odpor"  # todo: NEW TRANSLATION
- TRIGGER_MOVEMENT_IS_CAUSING_OBSTINANCE_FIRST: "[POLITICAL_MOVEMENT.GetName] způsobuje odpor"  # todo: NEW TRANSLATION
- TRIGGER_MOVEMENT_IS_CAUSING_OBSTINANCE_FIRST_NOT: "[POLITICAL_MOVEMENT.GetName] je #bold not#! způsobuje odpor"  # todo: NEW TRANSLATION
- TRIGGER_MOVEMENT_IS_CAUSING_OBSTINANCE_THIRD: "[POLITICAL_MOVEMENT.GetName] způsobuje odpor"  # todo: NEW TRANSLATION
- TRIGGER_MOVEMENT_IS_CAUSING_OBSTINANCE_THIRD_NOT: "[POLITICAL_MOVEMENT.GetName] je #bold not#! způsobuje odpor"  # todo: NEW TRANSLATION
- TRIGGER_OBSTINANCE: "Odpor je $COMPARATOR$ #variable $NUM|%$#!"  # todo: NEW TRANSLATION
- TRIGGER_OBSTINANCE_NOT: "Odpor je #bold not #!$COMPARATOR$ #variable $NUM|%$#!"  # todo: NEW TRANSLATION
- TRIGGER_OBSTINANCE_FIRST: "Odpor v [STATE.GetName] je $COMPARATOR$ #variable $NUM|%$#!"  # todo: NEW TRANSLATION
- TRIGGER_OBSTINANCE_FIRST_NOT: "Odpor v [STATE.GetName] je #bold not #!$COMPARATOR$ #variable $NUM|%$#!"  # todo: NEW TRANSLATION
- TRIGGER_OBSTINANCE_THIRD: "Odpor v [STATE.GetName] je $COMPARATOR$ #variable $NUM|%$#!"  # todo: NEW TRANSLATION
- TRIGGER_OBSTINANCE_THIRD_NOT: "Odpor v [STATE.GetName] je #bold not #!$COMPARATOR$ #variable $NUM|%$#!"  # todo: NEW TRANSLATION
- TRIGGER_YEARS_TO_INCORPORATE: "Potrvá $COMPARATOR$ #variable $NUM|0$#! let na začlenění"  # todo: NEW TRANSLATION
- TRIGGER_YEARS_TO_INCORPORATE_NOT: "Bude #bold not #! trvat $COMPARATOR$ #variable $NUM|0$#! let na začlenění"  # todo: NEW TRANSLATION
- TRIGGER_YEARS_TO_INCORPORATE_THIRD: "[STATE.GetName] bude trvat $COMPARATOR$ #variable $NUM|0$#! let na začlenění"  # todo: NEW TRANSLATION
- TRIGGER_YEARS_TO_INCORPORATE_THIRD_NOT: "[STATE.GetName] bude #bold not #! trvat $COMPARATOR$ #variable $NUM|0$#! let na začlenění"  # todo: NEW TRANSLATION
- TRIGGER_GLOBAL_COUNTRY_RANKING_FIRST: "[COUNTRY.GetNameNoFlag] pořadí síly je $COMPARATOR$ $NUM|v$"  # todo: NEW TRANSLATION
- TRIGGER_GLOBAL_COUNTRY_RANKING_FIRST_NOT: "[COUNTRY.GetNameNoFlag] pořadí síly je #bold not #!$COMPARATOR$ $NUM|v$"  # todo: NEW TRANSLATION
- TRIGGER_CULTURE_TARGET_FERVOR: "Cílový kulturní zápal je $COMPARATOR$ #variable $NUM|$#!"  # todo: NEW TRANSLATION
- TRIGGER_CULTURE_TARGET_FERVOR_NOT: "Cílový kulturní zápal je #bold not #!$COMPARATOR$ #variable $NUM|$#!"  # todo: NEW TRANSLATION
- TRIGGER_CULTURE_TARGET_FERVOR_THIRD: "Cílový kulturní zápal [Culture.GetName] je $COMPARATOR$ #variable $NUM|$#! (aktuálně: $CURRENT_VALUE|v$)"  # todo: NEW TRANSLATION
- TRIGGER_CULTURE_CURRENT_FERVOR: "Kulturní zápal je $COMPARATOR$ #variable $NUM|$#!"  # todo: NEW TRANSLATION
- TRIGGER_CULTURE_CURRENT_FERVOR_NOT: "Kulturní zápal je #bold not #!$COMPARATOR$ #variable $NUM|$#!"  # todo: NEW TRANSLATION
- TRIGGER_CULTURE_CURRENT_FERVOR_THIRD: "Kulturní zápal [Culture.GetName] je $COMPARATOR$ #variable $NUM|$#! (aktuálně: $CURRENT_VALUE|v$)"  # todo: NEW TRANSLATION
- TRIGGER_IS_INCORPORATED_NONE: "$TRIGGER_IS_INCORPORATED$"  # todo: NEW TRANSLATION
- TRIGGER_IS_INCORPORATED_NONE_NOT: "$TRIGGER_IS_INCORPORATED_NOT$"  # todo: NEW TRANSLATION
- TRIGGER_COUNTRY_HAS_PRIMARY_CULTURE_NONE: "$TRIGGER_COUNTRY_HAS_PRIMARY_CULTURE$"  # todo: NEW TRANSLATION
- TRIGGER_COUNTRY_HAS_PRIMARY_CULTURE_NONE_NOT: "$TRIGGER_COUNTRY_HAS_PRIMARY_CULTURE_NOT$"  # todo: NEW TRANSLATION
- TRIGGER_HAS_ANY_SECESSIONISTS_GROWING_FIRST: "[Country.GetNameNoFlag] má rostoucí [Concept('concept_secession','$concept_secessionist$')] [Concept('concept_political_movement','$concept_political_movements_short$')]"  # todo: NEW TRANSLATION
- TRIGGER_HAS_ANY_SECESSIONISTS_GROWING_FIRST_NOT: "[Country.GetNameNoFlag] má #bold not #! rostoucí [Concept('concept_secession','$concept_secessionist$')] [Concept('concept_political_movement','$concept_political_movements_short$')]"  # todo: NEW TRANSLATION
- TRIGGER_HAS_ANY_SECESSIONISTS_BROKEN_OUT_FIRST: "[Country.GetNameNoFlag] má odtržené [Concept('concept_secession','$concept_seceding$')] [Concept('concept_country', '$concept_countries$')]"  # todo: NEW TRANSLATION
- TRIGGER_HAS_ANY_SECESSIONISTS_BROKEN_OUT_FIRST_NOT: "[Country.GetNameNoFlag] má #bold not #! odtržené [Concept('concept_secession','$concept_seceding$')] [Concept('concept_country', '$concept_countries$')]"  # todo: NEW TRANSLATION
- TRIGGER_HAS_DISCRIMINATION_TRAIT_GROUP: "$SUBJECT$ má skupinu vlastností [DISCRIMINATION_TRAIT_GROUP.GetName]"  # todo: NEW TRANSLATION
- TRIGGER_HAS_DISCRIMINATION_TRAIT_GROUP_NOT: "$SUBJECT$ má #bold not #! skupinu vlastností [DISCRIMINATION_TRAIT_GROUP.GetName]"  # todo: NEW TRANSLATION
- TRIGGER_HAS_DISCRIMINATION_TRAIT_GROUP_NONE: "Má skupinu vlastností [DISCRIMINATION_TRAIT_GROUP.GetName]"  # todo: NEW TRANSLATION
- TRIGGER_HAS_DISCRIMINATION_TRAIT_GROUP_NONE_NOT: "Má #bold not #! skupinu vlastností [DISCRIMINATION_TRAIT_GROUP.GetName]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_HERITAGE_TRAIT_GROUP_WITH_ANY_PRIMARY_CULTURE: "Sdílí [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s jakoukoli [concept_primary_cultures] v [TARGET_COUNTRY.GetName]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_HERITAGE_TRAIT_GROUP_WITH_ANY_PRIMARY_CULTURE_NOT: "Nesdílí [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s žádnou [concept_primary_cultures] v [TARGET_COUNTRY.GetName]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_HERITAGE_TRAIT_GROUP_WITH_ANY_PRIMARY_CULTURE_NOCONTEXT: "Sdílí [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s jakoukoli [concept_primary_cultures] v jejich [concept_country]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_HERITAGE_TRAIT_GROUP_WITH_ANY_PRIMARY_CULTURE_NOCONTEXT_NOT: "Nesdílí [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s žádnou [concept_primary_cultures] v jejich [concept_country]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_HERITAGE_TRAIT_GROUP_WITH_ANY_PRIMARY_CULTURE_THIRD: "Sdílí [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s jakoukoli [concept_primary_cultures] ([Pop.GetCountry.GetPrimaryCulturesDesc] v [Pop.GetCountry.GetName])"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_HERITAGE_TRAIT_GROUP_WITH_ANY_PRIMARY_CULTURE_THIRD_NOT: "Nesdílí [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s žádnou [concept_primary_cultures] ([Pop.GetCountry.GetPrimaryCulturesDesc] v [Pop.GetCountry.GetName])"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_LANGUAGE_TRAIT_WITH_ANY_PRIMARY_CULTURE: "Sdílí [concept_language_trait] s jakoukoli [concept_primary_cultures] v [TARGET_COUNTRY.GetName]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_LANGUAGE_TRAIT_WITH_ANY_PRIMARY_CULTURE_NOT: "Sdílí #bold not #! [concept_language_trait] s jakoukoli [concept_primary_cultures] v [TARGET_COUNTRY.GetName]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_LANGUAGE_TRAIT_WITH_ANY_PRIMARY_CULTURE_NOCONTEXT: "Sdílí [concept_language_trait] s jakoukoli [concept_primary_cultures] v jejich [concept_country]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_LANGUAGE_TRAIT_WITH_ANY_PRIMARY_CULTURE_NOCONTEXT_NOT: "Nesdílí [concept_language_trait] s žádnou z [concept_primary_cultures] v jejich [concept_country]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_LANGUAGE_TRAIT_WITH_ANY_PRIMARY_CULTURE_THIRD: "Sdílí [concept_language_trait] s jakoukoli [concept_primary_cultures] ([Pop.GetCountry.GetPrimaryCulturesDesc] v [Pop.GetCountry.GetName])"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_LANGUAGE_TRAIT_WITH_ANY_PRIMARY_CULTURE_THIRD_NOT: "Nesdílí [concept_language_trait] s žádnou z [concept_primary_cultures] ([Pop.GetCountry.GetPrimaryCulturesDesc] v [Pop.GetCountry.GetName])"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_LANGUAGE_TRAIT_GROUP_WITH_ANY_PRIMARY_CULTURE: "Sdílí [Concept('concept_language_trait','$concept_language_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s jakoukoli [concept_primary_cultures] v [TARGET_COUNTRY.GetName]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_LANGUAGE_TRAIT_GROUP_WITH_ANY_PRIMARY_CULTURE_NOT: "Nesdílí [Concept('concept_language_trait','$concept_language_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s žádnou [concept_primary_cultures] v [TARGET_COUNTRY.GetName]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_LANGUAGE_TRAIT_GROUP_WITH_ANY_PRIMARY_CULTURE_NOCONTEXT: "Sdílí [Concept('concept_language_trait','$concept_language_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s jakoukoli [concept_primary_cultures] v jejich [concept_country]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_LANGUAGE_TRAIT_GROUP_WITH_ANY_PRIMARY_CULTURE_NOCONTEXT_NOT: "Nesdílí [Concept('concept_language_trait','$concept_language_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s žádnou [concept_primary_cultures] v jejich [concept_country]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_LANGUAGE_TRAIT_GROUP_WITH_ANY_PRIMARY_CULTURE_THIRD: "Sdílí [Concept('concept_language_trait','$concept_language_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s jakoukoli [concept_primary_cultures] ([Pop.GetCountry.GetPrimaryCulturesDesc] v [Pop.GetCountry.GetName])"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_LANGUAGE_TRAIT_GROUP_WITH_ANY_PRIMARY_CULTURE_THIRD_NOT: "Nesdílí [Concept('concept_language_trait','$concept_language_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s žádnou [concept_primary_cultures] ([Pop.GetCountry.GetPrimaryCulturesDesc] v [Pop.GetCountry.GetName])"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_TRADITION_TRAIT_WITH_ANY_PRIMARY_CULTURE: "Sdílí [concept_tradition_trait] s jakoukoli [concept_primary_cultures] v [TARGET_COUNTRY.GetName]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_TRADITION_TRAIT_WITH_ANY_PRIMARY_CULTURE_NOT: "Sdílí #bold not #! [concept_tradition_trait] s jakoukoli [concept_primary_cultures] v [TARGET_COUNTRY.GetName]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_TRADITION_TRAIT_WITH_ANY_PRIMARY_CULTURE_NOCONTEXT: "Sdílí [concept_tradition_trait] s jakoukoli [concept_primary_cultures] v jejich [concept_country]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_TRADITION_TRAIT_WITH_ANY_PRIMARY_CULTURE_NOCONTEXT_NOT: "Nesdílí [concept_tradition_trait] s žádnou z [concept_primary_cultures] v jejich [concept_country]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_TRADITION_TRAIT_WITH_ANY_PRIMARY_CULTURE_THIRD: "Sdílí [concept_tradition_trait] s jakoukoli [concept_primary_cultures] ([Pop.GetCountry.GetPrimaryCulturesDesc] v [Pop.GetCountry.GetName])"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_TRADITION_TRAIT_WITH_ANY_PRIMARY_CULTURE_THIRD_NOT: "Nesdílí [concept_tradition_trait] s žádnou z [concept_primary_cultures] ([Pop.GetCountry.GetPrimaryCulturesDesc] v [Pop.GetCountry.GetName])"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_HERITAGE_TRAIT_GROUP_WITH_STATE_RELIGION: "Sdílí [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s [concept_state_religion] v [TARGET_COUNTRY.GetName]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_HERITAGE_TRAIT_GROUP_WITH_STATE_RELIGION_NOT: "Nesdílí [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s [concept_state_religion] v [TARGET_COUNTRY.GetName]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_HERITAGE_TRAIT_GROUP_WITH_STATE_RELIGION_NOCONTEXT: "Sdílí [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s [concept_state_religion] v jejich [concept_country]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_HERITAGE_TRAIT_GROUP_WITH_STATE_RELIGION_NOCONTEXT_NOT: "Nesdílí [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s [concept_state_religion] v jejich [concept_country]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_HERITAGE_TRAIT_GROUP_WITH_STATE_RELIGION_THIRD: "Sdílí [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s [concept_state_religion] ([Pop.GetCountry.GetStateReligion.GetName] v [Pop.GetCountry.GetName])"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_HERITAGE_TRAIT_GROUP_WITH_STATE_RELIGION_THIRD_NOT: "Nesdílí [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s [concept_state_religion] ([Pop.GetCountry.GetStateReligion.GetName] v [Pop.GetCountry.GetName])"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_HERITAGE_TRAIT_WITH_CULTURE: "Sdílí [concept_heritage_trait] s [TARGET_CULTURE.GetName] [concept_culture]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_HERITAGE_TRAIT_WITH_CULTURE_NOT: "Sdílí #bold not #! [concept_heritage_trait] s [TARGET_CULTURE.GetName] [concept_culture]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_HERITAGE_TRAIT_WITH_CULTURE_NOCONTEXT: "Sdílí [concept_heritage_trait] s [concept_culture]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_HERITAGE_TRAIT_WITH_CULTURE_NOCONTEXT_NOT: "Nesdílí [concept_heritage_trait] s [concept_culture]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_HERITAGE_TRAIT_GROUP_WITH_CULTURE: "Sdílí [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s [TARGET_CULTURE.GetName] [concept_culture]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_HERITAGE_TRAIT_GROUP_WITH_CULTURE_NOT: "Sdílí #bold not #! [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s [TARGET_CULTURE.GetName] [concept_culture]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_HERITAGE_TRAIT_GROUP_WITH_CULTURE_NOCONTEXT: "Sdílí [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s [concept_culture]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_HERITAGE_TRAIT_GROUP_WITH_CULTURE_NOCONTEXT_NOT: "Nesdílí [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s [concept_culture]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_LANGUAGE_TRAIT_WITH_CULTURE: "Sdílí [concept_language_trait] s [TARGET_CULTURE.GetName] [concept_culture]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_LANGUAGE_TRAIT_WITH_CULTURE_NOT: "Sdílí #bold not #! [concept_language_trait] s [TARGET_CULTURE.GetName] [concept_culture]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_LANGUAGE_TRAIT_WITH_CULTURE_NOCONTEXT: "Sdílí [concept_language_trait] s [concept_culture]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_LANGUAGE_TRAIT_WITH_CULTURE_NOCONTEXT_NOT: "Nesdílí [concept_language_trait] s [concept_culture]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_LANGUAGE_TRAIT_GROUP_WITH_CULTURE: "Sdílí [Concept('concept_language_trait','$concept_language_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s [TARGET_CULTURE.GetName] [concept_culture]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_LANGUAGE_TRAIT_GROUP_WITH_CULTURE_NOT: "Sdílí #bold not #! [Concept('concept_language_trait','$concept_language_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s [TARGET_CULTURE.GetName] [concept_culture]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_LANGUAGE_TRAIT_GROUP_WITH_CULTURE_NOCONTEXT: "Sdílí [Concept('concept_language_trait','$concept_language_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s [concept_culture]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_LANGUAGE_TRAIT_GROUP_WITH_CULTURE_NOCONTEXT_NOT: "Nesdílí [Concept('concept_language_trait','$concept_language_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s [concept_culture]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_TRADITION_TRAIT_WITH_CULTURE: "Sdílí [concept_tradition_trait] s [TARGET_CULTURE.GetName] [concept_culture]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_TRADITION_TRAIT_WITH_CULTURE_NOT: "Sdílí #bold not #! [concept_tradition_trait] s [TARGET_CULTURE.GetName] [concept_culture]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_TRADITION_TRAIT_WITH_CULTURE_NOCONTEXT: "Sdílí [concept_tradition_trait] s [concept_culture]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_TRADITION_TRAIT_WITH_CULTURE_NOCONTEXT_NOT: "Nesdílí [concept_tradition_trait] s [concept_culture]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_HERITAGE_TRAIT_WITH_RELIGION: "Sdílí [concept_heritage_trait] s [TARGET_RELIGION.GetName] [concept_religion]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_HERITAGE_TRAIT_WITH_RELIGION_NOT: "Sdílí #bold not #! [concept_heritage_trait] s [TARGET_RELIGION.GetName] [concept_religion]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_HERITAGE_TRAIT_WITH_RELIGION_NOCONTEXT: "Sdílí [concept_heritage_trait] s [concept_religion]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_HERITAGE_TRAIT_WITH_RELIGION_NOCONTEXT_NOT: "Nesdílí [concept_heritage_trait] s [concept_religion]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_HERITAGE_TRAIT_GROUP_WITH_RELIGION: "Sdílí [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s [TARGET_RELIGION.GetName] [concept_religion]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_HERITAGE_TRAIT_GROUP_WITH_RELIGION_NOT: "Sdílí #bold not #! [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s [TARGET_RELIGION.GetName] [concept_religion]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_HERITAGE_TRAIT_GROUP_WITH_RELIGION_NOCONTEXT: "Sdílí [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s [concept_religion]"  # todo: NEW TRANSLATION
- TRIGGER_SHARES_HERITAGE_TRAIT_GROUP_WITH_RELIGION_NOCONTEXT_NOT: "Nesdílí [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s [concept_religion]"  # todo: NEW TRANSLATION
- TRIGGER_ANY_POLITICAL_MOVEMENT_NOT: "Žádné [concept_political_movement]:"  # todo: NEW TRANSLATION
- TRIGGER_ANY_POLITICAL_MOVEMENT_FIRST: "Jakýkoli [Country.GetAdjectiveNoFlag] [concept_political_movement]:"  # todo: NEW TRANSLATION
- TRIGGER_ANY_POLITICAL_MOVEMENT_FIRST_NOT: "Žádný [Country.GetAdjectiveNoFlag] [concept_political_movement]:"  # todo: NEW TRANSLATION
- TRIGGER_ANY_POLITICAL_MOVEMENT_ALL_NOT: "Žádný [Concept('concept_political_movement', '$concept_political_movements$')]:"  # todo: NEW TRANSLATION
- TRIGGER_ANY_POLITICAL_MOVEMENT_ALL_FIRST: "Všechny [Country.GetAdjectiveNoFlag] [Concept('concept_political_movement', '$concept_political_movements$')]:"  # todo: NEW TRANSLATION
- TRIGGER_ANY_POLITICAL_MOVEMENT_ALL_FIRST_NOT: "Žádný [Country.GetAdjectiveNoFlag] [Concept('concept_political_movement', '$concept_political_movements$')]:"  # todo: NEW TRANSLATION
- TRIGGER_ANY_POLITICAL_MOVEMENT_CULTURE_EQUAL: "[concept_culture] je [TARGET_CULTURE.GetName]"  # todo: NEW TRANSLATION
- TRIGGER_ANY_COUNTRY_PERCENT_FIRST: "$PARAMETERS$ ze všech $FILTER$[Concept('concept_country', '$concept_countries$')]"  # todo: NEW TRANSLATION
- TRIGGER_LEGITIMACY_GREATER_OR_EQUAL_NOT: "Legitimita vlády [COUNTRY.GetName] je #bold not #!větší než, nebo rovna $TARGET_VALUE|0v$"  # todo: NEW TRANSLATION
- TRIGGER_LEGITIMACY_GREATER_OR_EQUAL_FIRST: "Legitimita vlády [COUNTRY.GetNameNoFlag] je větší než, nebo rovna $TARGET_VALUE|0v$"  # todo: NEW TRANSLATION
- TRIGGER_LEGITIMACY_GREATER_OR_EQUAL_FIRST_NOT: "Legitimita vlády [COUNTRY.GetNameNoFlag] je #bold not #!větší než, nebo rovna $TARGET_VALUE|0v$"  # todo: NEW TRANSLATION
- TRIGGER_LEGITIMACY_GREATER_OR_EQUAL_THIRD: "Legitimita vlády [COUNTRY.GetName] je větší než, nebo rovna $TARGET_VALUE|0v$"  # todo: NEW TRANSLATION
- TRIGGER_LEGITIMACY_GREATER_OR_EQUAL_THIRD_NOT: "Legitimita vlády [COUNTRY.GetName] je #bold not #!větší než, nebo rovna $TARGET_VALUE|0v$"  # todo: NEW TRANSLATION
- TRIGGER_POP_TYPE_PERCENT_COUNTRY_FIRST: "Populace v [COUNTRY.GetNameNoFlag] je $COMPARATOR$ $NUM|%0v$ [POP_TYPE.GetName] (aktuálně $CURRENT_VALUE|%0v$)"  # todo: NEW TRANSLATION
- TRIGGER_POP_TYPE_PERCENT_COUNTRY_FIRST_NOT: "Populace v [COUNTRY.GetNameNoFlag] je #bold not#! $COMPARATOR$ $NUM|%0v$ [POP_TYPE.GetName] (aktuálně $CURRENT_VALUE|%0v$)"  # todo: NEW TRANSLATION
- TRIGGER_COUNTRY_DEFINITION_DIRECT_LINK_EQUAL: "Je #v [COUNTRY_DEFINITION.GetName]#!"  # todo: NEW TRANSLATION
- TRIGGER_COUNTRY_DEFINITION_DIRECT_LINK_EQUAL_NOT: "Je #b not#! #v [COUNTRY_DEFINITION.GetName]#!"  # todo: NEW TRANSLATION
- TRIGGER_COUNTRY_DEFINITION_DIRECT_LINK_FIRST_EQUAL: "Vaše země je #v [COUNTRY_DEFINITION.GetName]#!"  # todo: NEW TRANSLATION
- TRIGGER_COUNTRY_DEFINITION_DIRECT_LINK_EQUAL_FIRST_NOT: "Vaše země je #b not#! #v [COUNTRY_DEFINITION.GetName]#!"  # todo: NEW TRANSLATION
- TRIGGER_COUNTRY_DEFINITION_DIRECT_LINK_THIRD_EQUAL: "Jsou #v [COUNTRY_DEFINITION.GetName]#!"  # todo: NEW TRANSLATION
- TRIGGER_COUNTRY_DEFINITION_DIRECT_LINK_EQUAL_THIRD_NOT: "Jsou #b not#! #v [COUNTRY_DEFINITION.GetName]#!"  # todo: NEW TRANSLATION
- TRIGGER_THIS_COUNTRY_DEFINITION_DIRECT_LINK_EQUAL: "Je #v [TARGET_COUNTRY_DEFINITION.GetName]#!"  # todo: NEW TRANSLATION
- TRIGGER_THIS_COUNTRY_DEFINITION_DIRECT_LINK_EQUAL_NOT: "Je #b not#! #v [TARGET_COUNTRY_DEFINITION.GetName]#!"  # todo: NEW TRANSLATION
- TRIGGER_THIS_COUNTRY_DEFINITION_DIRECT_LINK_FIRST_EQUAL: "Vaše země je #v [TARGET_COUNTRY_DEFINITION.GetName]#!"  # todo: NEW TRANSLATION
- TRIGGER_THIS_COUNTRY_DEFINITION_DIRECT_LINK_EQUAL_FIRST_NOT: "Vaše země je #b not#! #v [TARGET_COUNTRY_DEFINITION.GetName]#!"  # todo: NEW TRANSLATION
- TRIGGER_THIS_COUNTRY_DEFINITION_DIRECT_LINK_THIRD_EQUAL: "Jsou #v [TARGET_COUNTRY_DEFINITION.GetName]#!"  # todo: NEW TRANSLATION
- TRIGGER_THIS_COUNTRY_DEFINITION_DIRECT_LINK_EQUAL_THIRD_NOT: "Jsou #b not#! #v [TARGET_COUNTRY_DEFINITION.GetName]#!"  # todo: NEW TRANSLATION
- TRIGGER_IS_FLEET_NONE: "$TRIGGER_IS_FLEET$"  # todo: NEW TRANSLATION
- TRIGGER_IS_FLEET_NONE_NOT: "$TRIGGER_IS_FLEET_NONE_NOT$"  # todo: NEW TRANSLATION
- TRIGGER_ANY_SCOPE_TREATY_THIRD: "Jakýkoli [concept_treaty]:"  # todo: NEW TRANSLATION
- TRIGGER_ANY_INTEREST_GROUP_IN_GOVERNMENT: "Jakákoli [concept_interest_group] [concept_in_government]:"  # todo: NEW TRANSLATION
- TRIGGER_ANY_INTEREST_GROUP_IN_GOVERNMENT_ALL: "Všechny [Concept('concept_interest_group', '$concept_interest_groups$')] [concept_in_government]:"  # todo: NEW TRANSLATION
- TRIGGER_ANY_INTEREST_GROUP_IN_GOVERNMENT_PERCENT: "$PARAMETERS$ z $FILTER$[Concept('concept_interest_group', '$concept_interest_groups$')] [concept_in_government]:"  # todo: NEW TRANSLATION
- TRIGGER_ANY_INTEREST_GROUP_IN_GOVERNMENT_COUNT: "$PARAMETERS$ $FILTER$[Concept('concept_interest_group', '$concept_interest_groups$')] [concept_in_government]:"  # todo: NEW TRANSLATION
- TRIGGER_ANY_INTEREST_GROUP_IN_GOVERNMENT_COUNT_FIRST: "$PARAMETERS$ $FILTER$[Concept('concept_interest_group', '$concept_interest_groups$')] [concept_in_government]:"  # todo: NEW TRANSLATION
- TRIGGER_ANY_INTEREST_GROUP_IN_GOVERNMENT_COUNT_THIRD: "$PARAMETERS$ $FILTER$[Concept('concept_interest_group', '$concept_interest_groups$')] [concept_in_government]:"  # todo: NEW TRANSLATION
- TRIGGER_ANY_INTEREST_GROUP_IN_GOVERNMENT_FIRST: "Jakákoli [concept_interest_group] [concept_in_government]:"  # todo: NEW TRANSLATION
- TRIGGER_ANY_INTEREST_GROUP_IN_OPPOSITION: "Jakákoli [concept_interest_group] [concept_in_opposition]:"  # todo: NEW TRANSLATION
- TRIGGER_ANY_INTEREST_GROUP_IN_OPPOSITION_ALL: "Všechny [Concept('concept_interest_group', '$concept_interest_groups$')] [concept_in_opposition]:"  # todo: NEW TRANSLATION
- TRIGGER_ANY_INTEREST_GROUP_IN_OPPOSITION_PERCENT: "$PARAMETERS$ z $FILTER$[Concept('concept_interest_group', '$concept_interest_groups$')] [concept_in_opposition]:"  # todo: NEW TRANSLATION
- TRIGGER_ANY_INTEREST_GROUP_IN_OPPOSITION_COUNT: "$PARAMETERS$ $FILTER$[Concept('concept_interest_group', '$concept_interest_groups$')] [concept_in_opposition]:"  # todo: NEW TRANSLATION
- TRIGGER_ANY_INTEREST_GROUP_IN_OPPOSITION_COUNT_FIRST: "$PARAMETERS$ $FILTER$[Concept('concept_interest_group', '$concept_interest_groups$')] [concept_in_opposition]:"  # todo: NEW TRANSLATION
- TRIGGER_ANY_INTEREST_GROUP_IN_OPPOSITION_COUNT_THIRD: "$PARAMETERS$ $FILTER$[Concept('concept_interest_group', '$concept_interest_groups$')] [concept_in_opposition]:"  # todo: NEW TRANSLATION
- TRIGGER_ANY_INTEREST_GROUP_IN_OPPOSITION_FIRST: "Jakýkoli [concept_interest_group] [concept_in_opposition]:"  # todo: NEW TRANSLATION
- TRIGGER_CULTURE_HAS_NATIONAL_AWAKENING: "[CULTURE.GetName] má aktivní [concept_national_awakening]"  # todo: NEW TRANSLATION
- TRIGGER_CULTURE_HAS_NATIONAL_AWAKENING_NOT: "[CULTURE.GetName] #b nemá#! aktivní [concept_national_awakening]"  # todo: NEW TRANSLATION
- TRIGGER_CULTURE_HAS_NATIONAL_AWAKENING_OCCURRED: "[CULTURE.GetName] měla [concept_national_awakening]"  # todo: NEW TRANSLATION
- TRIGGER_CULTURE_HAS_NATIONAL_AWAKENING_OCCURRED_NOT: "[CULTURE.GetName] #b neměla#! [concept_national_awakening]"  # todo: NEW TRANSLATION
- TRIGGER_STATE_HAS_NATIONAL_AWAKENING: "[STATE.GetName] má aktivní [concept_national_awakening]"  # todo: NEW TRANSLATION
- TRIGGER_STATE_HAS_NATIONAL_AWAKENING_NOT: "[STATE.GetName] #b nemá#! aktivní [concept_national_awakening]"  # todo: NEW TRANSLATION
+ TRIGGER_IS_DIPLOMATIC_PLAY_COMMITTED_PARTICIPANT_THIRD: "[COUNTRY.GetNameNoFlag] je závazným účastníkem jakékoli [Concept('concept_diplomatic_play','diplomatické hry')]"
+ TRIGGER_IS_DIPLOMATIC_PLAY_COMMITTED_PARTICIPANT_THIRD_NOT: "[COUNTRY.GetNameNoFlag] #b není#! závazným účastníkem jakékoli [Concept('concept_diplomatic_play','diplomatické hry')]"
+ TRIGGER_IS_DIPLOMATIC_PLAY_COMMITTED_PARTICIPANT_FIRST: "[COUNTRY.GetNameNoFlag] je závazným účastníkem jakékoli [Concept('concept_diplomatic_play','diplomatické hry')]"
+ TRIGGER_IS_DIPLOMATIC_PLAY_COMMITTED_PARTICIPANT_FIRST_NOT: "[COUNTRY.GetNameNoFlag] #b není#! závazným účastníkem jakékoli [Concept('concept_diplomatic_play','diplomatické hry')]"
+ TRIGGER_IS_DIPLOMATIC_PLAY_UNDECIDED_PARTICIPANT_FIRST: "[COUNTRY.GetNameNoFlag] je nerozhodným účastníkem jakékoli [Concept('concept_diplomatic_play','diplomatické hry')]"
+ TRIGGER_IS_DIPLOMATIC_PLAY_UNDECIDED_PARTICIPANT_FIRST_NOT: "[COUNTRY.GetNameNoFlag] #b není#! nerozhodným účastníkem jakékoli [Concept('concept_diplomatic_play','diplomatické hry')]"
+ TRIGGER_IS_DIPLOMATIC_PLAY_UNDECIDED_PARTICIPANT_THIRD: "[COUNTRY.GetNameNoFlag] je nerozhodným účastníkem jakékoli [Concept('concept_diplomatic_play','diplomatické hry')]"
+ TRIGGER_IS_DIPLOMATIC_PLAY_UNDECIDED_PARTICIPANT_THIRD_NOT: "[COUNTRY.GetNameNoFlag] #b není#! nerozhodným účastníkem jakékoli [Concept('concept_diplomatic_play','diplomatické hry')]"
+ TRIGGER_IS_BUILDING_TYPE_NONE: "$TRIGGER_IS_BUILDING_TYPE$"
+ TRIGGER_IS_BUILDING_TYPE_NONE_NOT: "$TRIGGER_IS_BUILDING_TYPE_NOT$"
+ TRIGGER_HAS_WAR_WITH_FIRST: "[COUNTRY.GetNameNoFlag] je ve válce s [TARGET_COUNTRY.GetName]"
+ TRIGGER_HAS_WAR_WITH_FIRST_NOT: "[COUNTRY.GetNameNoFlag] #b není#! ve válce s [TARGET_COUNTRY.GetName]"
+ TRIGGER_HAS_WAR_WITH_THIRD: "[COUNTRY.GetName] je ve válce s [TARGET_COUNTRY.GetName]"
+ TRIGGER_HAS_WAR_WITH_THIRD_NOT: "[COUNTRY.GetName] #b není#! ve válce s [TARGET_COUNTRY.GetName]"
+ TRIGGER_MOVEMENT_CAN_CAUSE_OBSTINANCE: "Může způsobit odpor"
+ TRIGGER_MOVEMENT_CAN_CAUSE_OBSTINANCE_NOT: "Může #bold not#! způsobit odpor"
+ TRIGGER_MOVEMENT_CAN_CAUSE_OBSTINANCE_FIRST: "[POLITICAL_MOVEMENT.GetName] může způsobit odpor"
+ TRIGGER_MOVEMENT_CAN_CAUSE_OBSTINANCE_FIRST_NOT: "[POLITICAL_MOVEMENT.GetName] může #bold not#! způsobit odpor"
+ TRIGGER_MOVEMENT_CAN_CAUSE_OBSTINANCE_THIRD: "[POLITICAL_MOVEMENT.GetName] může způsobit odpor"
+ TRIGGER_MOVEMENT_CAN_CAUSE_OBSTINANCE_THIRD_NOT: "[POLITICAL_MOVEMENT.GetName] může #bold not#! způsobit odpor"
+ TRIGGER_MOVEMENT_IS_CAUSING_OBSTINANCE: "Způsobuje odpor"
+ TRIGGER_MOVEMENT_IS_CAUSING_OBSTINANCE_NOT: "#b Není#! způsobuje odpor"
+ TRIGGER_MOVEMENT_IS_CAUSING_OBSTINANCE_FIRST: "[POLITICAL_MOVEMENT.GetName] způsobuje odpor"
+ TRIGGER_MOVEMENT_IS_CAUSING_OBSTINANCE_FIRST_NOT: "[POLITICAL_MOVEMENT.GetName] #b není#! způsobuje odpor"
+ TRIGGER_MOVEMENT_IS_CAUSING_OBSTINANCE_THIRD: "[POLITICAL_MOVEMENT.GetName] způsobuje odpor"
+ TRIGGER_MOVEMENT_IS_CAUSING_OBSTINANCE_THIRD_NOT: "[POLITICAL_MOVEMENT.GetName] #b není#! způsobuje odpor"
+ TRIGGER_OBSTINANCE: "Odpor je $COMPARATOR$ #variable $NUM|%$#!"
+ TRIGGER_OBSTINANCE_NOT: "Odpor #b není#!$COMPARATOR$ #variable $NUM|%$#!"
+ TRIGGER_OBSTINANCE_FIRST: "Odpor v [STATE.GetName] je $COMPARATOR$ #variable $NUM|%$#!"
+ TRIGGER_OBSTINANCE_FIRST_NOT: "Odpor v [STATE.GetName] #b není#!$COMPARATOR$ #variable $NUM|%$#!"
+ TRIGGER_OBSTINANCE_THIRD: "Odpor v [STATE.GetName] je $COMPARATOR$ #variable $NUM|%$#!"
+ TRIGGER_OBSTINANCE_THIRD_NOT: "Odpor v [STATE.GetName] #b není#!$COMPARATOR$ #variable $NUM|%$#!"
+ TRIGGER_YEARS_TO_INCORPORATE: "Potrvá $COMPARATOR$ #variable $NUM|0$#! let na začlenění"
+ TRIGGER_YEARS_TO_INCORPORATE_NOT: "#bold Nebude#! trvat $COMPARATOR$ #variable $NUM|0$#! let na začlenění"
+ TRIGGER_YEARS_TO_INCORPORATE_THIRD: "[STATE.GetName] bude trvat $COMPARATOR$ #variable $NUM|0$#! let na začlenění"
+ TRIGGER_YEARS_TO_INCORPORATE_THIRD_NOT: "[STATE.GetName] bude #bold not #! trvat $COMPARATOR$ #variable $NUM|0$#! let na začlenění"
+ TRIGGER_GLOBAL_COUNTRY_RANKING_FIRST: "[COUNTRY.GetNameNoFlag] pořadí síly je $COMPARATOR$ $NUM|v$"
+ TRIGGER_GLOBAL_COUNTRY_RANKING_FIRST_NOT: "[COUNTRY.GetNameNoFlag] pořadí síly #b není#!$COMPARATOR$ $NUM|v$"
+ TRIGGER_CULTURE_TARGET_FERVOR: "Cílový kulturní zápal je $COMPARATOR$ #variable $NUM|$#!"
+ TRIGGER_CULTURE_TARGET_FERVOR_NOT: "Cílový kulturní zápal #b není#!$COMPARATOR$ #variable $NUM|$#!"
+ TRIGGER_CULTURE_TARGET_FERVOR_THIRD: "Cílový kulturní zápal [Culture.GetName] je $COMPARATOR$ #variable $NUM|$#! (aktuálně: $CURRENT_VALUE|v$)"
+ TRIGGER_CULTURE_CURRENT_FERVOR: "Kulturní zápal je $COMPARATOR$ #variable $NUM|$#!"
+ TRIGGER_CULTURE_CURRENT_FERVOR_NOT: "Kulturní zápal #b není#!$COMPARATOR$ #variable $NUM|$#!"
+ TRIGGER_CULTURE_CURRENT_FERVOR_THIRD: "Kulturní zápal [Culture.GetName] je $COMPARATOR$ #variable $NUM|$#! (aktuálně: $CURRENT_VALUE|v$)"
+ TRIGGER_IS_INCORPORATED_NONE: "$TRIGGER_IS_INCORPORATED$"
+ TRIGGER_IS_INCORPORATED_NONE_NOT: "$TRIGGER_IS_INCORPORATED_NOT$"
+ TRIGGER_COUNTRY_HAS_PRIMARY_CULTURE_NONE: "$TRIGGER_COUNTRY_HAS_PRIMARY_CULTURE$"
+ TRIGGER_COUNTRY_HAS_PRIMARY_CULTURE_NONE_NOT: "$TRIGGER_COUNTRY_HAS_PRIMARY_CULTURE_NOT$"
+ TRIGGER_HAS_ANY_SECESSIONISTS_GROWING_FIRST: "[Country.GetNameNoFlag] má rostoucí [Concept('concept_secession','separatistické')] [Concept('concept_political_movement','$concept_political_movements_short$')|l]"
+ TRIGGER_HAS_ANY_SECESSIONISTS_GROWING_FIRST_NOT: "[Country.GetNameNoFlag] #bold nemá #! rostoucí [Concept('concept_secession','separatistické')] [Concept('concept_political_movement','$concept_political_movements_short$')|l]"
+ TRIGGER_HAS_ANY_SECESSIONISTS_BROKEN_OUT_FIRST: "[Country.GetNameNoFlag] má odtržené [Concept('concept_secession','odrtžené')] [Concept('concept_country', '$concept_countries$')|l]"
+ TRIGGER_HAS_ANY_SECESSIONISTS_BROKEN_OUT_FIRST_NOT: "[Country.GetNameNoFlag] #bold nemá #! [Concept('concept_secession','odtržené')] [Concept('concept_country', '$concept_countries$')|l]"
+ TRIGGER_HAS_DISCRIMINATION_TRAIT_GROUP: "$SUBJECT$ má skupinu vlastností [DISCRIMINATION_TRAIT_GROUP.GetName]"
+ TRIGGER_HAS_DISCRIMINATION_TRAIT_GROUP_NOT: "$SUBJECT$ #bold nemá#! skupinu vlastností [DISCRIMINATION_TRAIT_GROUP.GetName]"
+ TRIGGER_HAS_DISCRIMINATION_TRAIT_GROUP_NONE: "Má skupinu vlastností [DISCRIMINATION_TRAIT_GROUP.GetName]"
+ TRIGGER_HAS_DISCRIMINATION_TRAIT_GROUP_NONE_NOT: "#bold Nemá #! skupinu vlastností [DISCRIMINATION_TRAIT_GROUP.GetName]"
+ TRIGGER_SHARES_HERITAGE_TRAIT_GROUP_WITH_ANY_PRIMARY_CULTURE: "Sdílí [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s jakoukoli [Concept('concept_primary_cultures','primární kulturou')] v [TARGET_COUNTRY.GetName]"
+ TRIGGER_SHARES_HERITAGE_TRAIT_GROUP_WITH_ANY_PRIMARY_CULTURE_NOT: "Nesdílí [Concept('concept_heritage_trait','$concept_heritage_trait_short$')|l] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')|l] s žádnou [Concept('concept_primary_cultures','primární kulturou')] v [TARGET_COUNTRY.GetName]"
+ TRIGGER_SHARES_HERITAGE_TRAIT_GROUP_WITH_ANY_PRIMARY_CULTURE_NOCONTEXT: "Sdílí [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')|l] s jakoukoli [Concept('concept_primary_cultures','primární kulturou')] v jejich [Concept('concept_country','zemi')]"
+ TRIGGER_SHARES_HERITAGE_TRAIT_GROUP_WITH_ANY_PRIMARY_CULTURE_NOCONTEXT_NOT: "Nesdílí [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')|l] s žádnou [Concept('concept_primary_cultures','primární kulturou')] v jejich [Concept('concept_country','zemi')]"
+ TRIGGER_SHARES_HERITAGE_TRAIT_GROUP_WITH_ANY_PRIMARY_CULTURE_THIRD: "Sdílí [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')|l] s jakoukoli [Concept('concept_primary_cultures','primární kulturou')] ([Pop.GetCountry.GetPrimaryCulturesDesc] v [Pop.GetCountry.GetName])"
+ TRIGGER_SHARES_HERITAGE_TRAIT_GROUP_WITH_ANY_PRIMARY_CULTURE_THIRD_NOT: "Nesdílí [Concept('concept_heritage_trait','$concept_heritage_trait_short$')|l] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')|l] s žádnou [Concept('concept_primary_cultures','primární kulturou')] ([Pop.GetCountry.GetPrimaryCulturesDesc] v [Pop.GetCountry.GetName])"
+ TRIGGER_SHARES_LANGUAGE_TRAIT_WITH_ANY_PRIMARY_CULTURE: "Sdílí [concept_language_trait|l] s jakoukoli [Concept('concept_primary_cultures','primární kulturou')] v [TARGET_COUNTRY.GetName]"
+ TRIGGER_SHARES_LANGUAGE_TRAIT_WITH_ANY_PRIMARY_CULTURE_NOT: "#bold Nesdílí #! [concept_language_trait|l] s jakoukoli [Concept('concept_primary_cultures','primární kulturou')] v [TARGET_COUNTRY.GetName]"
+ TRIGGER_SHARES_LANGUAGE_TRAIT_WITH_ANY_PRIMARY_CULTURE_NOCONTEXT: "Sdílí [concept_language_trait|l] s jakoukoli [Concept('concept_primary_cultures','primární kulturou')] v jejich [Concept('concept_country','zemi')]"
+ TRIGGER_SHARES_LANGUAGE_TRAIT_WITH_ANY_PRIMARY_CULTURE_NOCONTEXT_NOT: "Nesdílí [concept_language_trait|l] s žádnou z [Concept('concept_primary_cultures','primární kulturou')] v jejich [concept_country|l]"
+ TRIGGER_SHARES_LANGUAGE_TRAIT_WITH_ANY_PRIMARY_CULTURE_THIRD: "Sdílí [concept_language_trait|l] s jakoukoli [Concept('concept_primary_cultures','primární kulturou')] ([Pop.GetCountry.GetPrimaryCulturesDesc] v [Pop.GetCountry.GetName])"
+ TRIGGER_SHARES_LANGUAGE_TRAIT_WITH_ANY_PRIMARY_CULTURE_THIRD_NOT: "Nesdílí [concept_language_trait|l] s žádnou z [Concept('concept_primary_cultures','primární kulturou')] ([Pop.GetCountry.GetPrimaryCulturesDesc] v [Pop.GetCountry.GetName])"
+ TRIGGER_SHARES_LANGUAGE_TRAIT_GROUP_WITH_ANY_PRIMARY_CULTURE: "Sdílí [Concept('concept_language_trait','$concept_language_trait_short$')|l] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')|l] s jakoukoli [Concept('concept_primary_cultures','primární kulturou')] v [TARGET_COUNTRY.GetName]"
+ TRIGGER_SHARES_LANGUAGE_TRAIT_GROUP_WITH_ANY_PRIMARY_CULTURE_NOT: "Nesdílí [Concept('concept_language_trait','$concept_language_trait_short$')|l] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')|l] s žádnou [Concept('concept_primary_cultures','primární kulturou')] v [TARGET_COUNTRY.GetName]"
+ TRIGGER_SHARES_LANGUAGE_TRAIT_GROUP_WITH_ANY_PRIMARY_CULTURE_NOCONTEXT: "Sdílí [Concept('concept_language_trait','$concept_language_trait_short$')|l] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')|l] s jakoukoli [Concept('concept_primary_cultures','primární kulturou')] v jejich [Concept('concept_country','zemi')]"
+ TRIGGER_SHARES_LANGUAGE_TRAIT_GROUP_WITH_ANY_PRIMARY_CULTURE_NOCONTEXT_NOT: "Nesdílí [Concept('concept_language_trait','$concept_language_trait_short$')|l] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')|l] s žádnou [Concept('concept_primary_cultures','primární kulturou')] v jejich [Concept('concept_country','zemi')]"
+ TRIGGER_SHARES_LANGUAGE_TRAIT_GROUP_WITH_ANY_PRIMARY_CULTURE_THIRD: "Sdílí [Concept('concept_language_trait','$concept_language_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')|l] s jakoukoli [Concept('concept_primary_cultures','primární kulturou')] ([Pop.GetCountry.GetPrimaryCulturesDesc] v [Pop.GetCountry.GetName])"
+ TRIGGER_SHARES_LANGUAGE_TRAIT_GROUP_WITH_ANY_PRIMARY_CULTURE_THIRD_NOT: "Nesdílí [Concept('concept_language_trait','$concept_language_trait_short$')|l] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')|l] s žádnou [Concept('concept_primary_cultures','primární kulturou')] ([Pop.GetCountry.GetPrimaryCulturesDesc] v [Pop.GetCountry.GetName])"
+ TRIGGER_SHARES_TRADITION_TRAIT_WITH_ANY_PRIMARY_CULTURE: "Sdílí [concept_tradition_trait|l] s jakoukoli [Concept('concept_primary_cultures','primární kulturou')] v [TARGET_COUNTRY.GetName]"
+ TRIGGER_SHARES_TRADITION_TRAIT_WITH_ANY_PRIMARY_CULTURE_NOT: "Sdílí #bold not #! [concept_tradition_trait|l] s jakoukoli [Concept('concept_primary_cultures','primární kulturou')] v [TARGET_COUNTRY.GetName]"
+ TRIGGER_SHARES_TRADITION_TRAIT_WITH_ANY_PRIMARY_CULTURE_NOCONTEXT: "Sdílí [concept_tradition_trait|l] s jakoukoli [Concept('concept_primary_cultures','primární kulturou')] v jejich [Concept('concept_country','zemi')]"
+ TRIGGER_SHARES_TRADITION_TRAIT_WITH_ANY_PRIMARY_CULTURE_NOCONTEXT_NOT: "Nesdílí [concept_tradition_trait|l] s žádnou z [Concept('concept_primary_cultures','primárních kultur')] v jejich [Concept('concept_country','zemi')]"
+ TRIGGER_SHARES_TRADITION_TRAIT_WITH_ANY_PRIMARY_CULTURE_THIRD: "Sdílí [concept_tradition_trait|l] s jakoukoli [Concept('concept_primary_cultures','primární kulturou')] ([Pop.GetCountry.GetPrimaryCulturesDesc] v [Pop.GetCountry.GetName])"
+ TRIGGER_SHARES_TRADITION_TRAIT_WITH_ANY_PRIMARY_CULTURE_THIRD_NOT: "Nesdílí [concept_tradition_trait|l] s žádnou z [Concept('concept_primary_cultures','primárních kultur')] ([Pop.GetCountry.GetPrimaryCulturesDesc] v [Pop.GetCountry.GetName])"
+ TRIGGER_SHARES_HERITAGE_TRAIT_GROUP_WITH_STATE_RELIGION: "Sdílí [Concept('concept_heritage_trait','$concept_heritage_trait_short$')|l] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')|l] se [Concept('concept_state_religion','státním náboženstvím')] v [TARGET_COUNTRY.GetName]"
+ TRIGGER_SHARES_HERITAGE_TRAIT_GROUP_WITH_STATE_RELIGION_NOT: "Nesdílí [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] se [Concept('concept_state_religion','státním náboženstvím')] v [TARGET_COUNTRY.GetName]"
+ TRIGGER_SHARES_HERITAGE_TRAIT_GROUP_WITH_STATE_RELIGION_NOCONTEXT: "Sdílí [Concept('concept_heritage_trait','$concept_heritage_trait_short$')|l] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')|l] se [Concept('concept_state_religion','státním náboženstvím')] v jejich [Concept('concept_country','zemi')]"
+ TRIGGER_SHARES_HERITAGE_TRAIT_GROUP_WITH_STATE_RELIGION_NOCONTEXT_NOT: "Nesdílí [Concept('concept_heritage_trait','$concept_heritage_trait_short$')|l] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')|l] se [Concept('concept_state_religion','státním náboženstvím')] v jejich [Concept('concept_country','zemi')]"
+ TRIGGER_SHARES_HERITAGE_TRAIT_GROUP_WITH_STATE_RELIGION_THIRD: "Sdílí [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s [concept_state_religion] ([Pop.GetCountry.GetStateReligion.GetName] v [Pop.GetCountry.GetName])"
+ TRIGGER_SHARES_HERITAGE_TRAIT_GROUP_WITH_STATE_RELIGION_THIRD_NOT: "Nesdílí [Concept('concept_heritage_trait','$concept_heritage_trait_short$')|l] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')|l] se [Concept('concept_state_religion','státním náboženstvím')] ([Pop.GetCountry.GetStateReligion.GetName] v [Pop.GetCountry.GetName])"
+ TRIGGER_SHARES_HERITAGE_TRAIT_WITH_CULTURE: "Sdílí [concept_heritage_trait|l] s [TARGET_CULTURE.GetName] [Concept('concept_culture','kulturou')]"
+ TRIGGER_SHARES_HERITAGE_TRAIT_WITH_CULTURE_NOT: "Sdílí #bold not #! [concept_heritage_trait|l] s [TARGET_CULTURE.GetName] [Concept('concept_culture','kulturou')]"
+ TRIGGER_SHARES_HERITAGE_TRAIT_WITH_CULTURE_NOCONTEXT: "Sdílí [concept_heritage_trait|l] s [Concept('concept_culture','kulturou')]"
+ TRIGGER_SHARES_HERITAGE_TRAIT_WITH_CULTURE_NOCONTEXT_NOT: "Nesdílí [concept_heritage_trait|l] s [Concept('concept_culture','kulturou')]"
+ TRIGGER_SHARES_HERITAGE_TRAIT_GROUP_WITH_CULTURE: "Sdílí [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s [TARGET_CULTURE.GetName] [Concept('concept_culture','kulturou')]"
+ TRIGGER_SHARES_HERITAGE_TRAIT_GROUP_WITH_CULTURE_NOT: "#bold Nesdílí #! [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s [TARGET_CULTURE.GetName] [Concept('concept_culture','kulturou')]"
+ TRIGGER_SHARES_HERITAGE_TRAIT_GROUP_WITH_CULTURE_NOCONTEXT: "Sdílí [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s [Concept('concept_culture','kulturou')]"
+ TRIGGER_SHARES_HERITAGE_TRAIT_GROUP_WITH_CULTURE_NOCONTEXT_NOT: "Nesdílí [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s [Concept('concept_culture','kulturou')]"
+ TRIGGER_SHARES_LANGUAGE_TRAIT_WITH_CULTURE: "Sdílí [concept_language_trait] s [TARGET_CULTURE.GetName] [Concept('concept_culture','kulturou')]"
+ TRIGGER_SHARES_LANGUAGE_TRAIT_WITH_CULTURE_NOT: "Sdílí #bold not #! [concept_language_trait|l] s [TARGET_CULTURE.GetName] [Concept('concept_culture','kulturou')]"
+ TRIGGER_SHARES_LANGUAGE_TRAIT_WITH_CULTURE_NOCONTEXT: "Sdílí [concept_language_trait|l] s [Concept('concept_culture','kulturou')]"
+ TRIGGER_SHARES_LANGUAGE_TRAIT_WITH_CULTURE_NOCONTEXT_NOT: "Nesdílí [concept_language_trait|l] s [Concept('concept_culture','kulturou')]"
+ TRIGGER_SHARES_LANGUAGE_TRAIT_GROUP_WITH_CULTURE: "Sdílí [Concept('concept_language_trait','$concept_language_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s [TARGET_CULTURE.GetName] [Concept('concept_culture','kulturou')]"
+ TRIGGER_SHARES_LANGUAGE_TRAIT_GROUP_WITH_CULTURE_NOT: "#bold Nesdílí #! [Concept('concept_language_trait','$concept_language_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s [TARGET_CULTURE.GetName] [Concept('concept_culture','kulturou')]"
+ TRIGGER_SHARES_LANGUAGE_TRAIT_GROUP_WITH_CULTURE_NOCONTEXT: "Sdílí [Concept('concept_language_trait','$concept_language_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s [Concept('concept_culture','kulturou')]"
+ TRIGGER_SHARES_LANGUAGE_TRAIT_GROUP_WITH_CULTURE_NOCONTEXT_NOT: "Nesdílí [Concept('concept_language_trait','$concept_language_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s [Concept('concept_culture','kulturou')]"
+ TRIGGER_SHARES_TRADITION_TRAIT_WITH_CULTURE: "Sdílí [concept_tradition_trait|l] s [TARGET_CULTURE.GetName] [Concept('concept_religion','náboženstvím')]"
+ TRIGGER_SHARES_TRADITION_TRAIT_WITH_CULTURE_NOT: "#bold Nesdílí#! [concept_tradition_trait|l] s [TARGET_CULTURE.GetName] [Concept('concept_religion','náboženstvím')]"
+ TRIGGER_SHARES_TRADITION_TRAIT_WITH_CULTURE_NOCONTEXT: "Sdílí [concept_tradition_trait|l] s [Concept('concept_religion','náboženstvím')]"
+ TRIGGER_SHARES_TRADITION_TRAIT_WITH_CULTURE_NOCONTEXT_NOT: "Nesdílí [concept_tradition_trait|l] s [Concept('concept_religion','náboženstvím')]"
+ TRIGGER_SHARES_HERITAGE_TRAIT_WITH_RELIGION: "Sdílí [concept_heritage_trait|l] s [TARGET_RELIGION.GetName] [Concept('concept_religion','náboženstvím')]"
+ TRIGGER_SHARES_HERITAGE_TRAIT_WITH_RELIGION_NOT: "#bold Nesdílí#! [concept_heritage_trait|l] s [TARGET_RELIGION.GetName] [Concept('concept_religion','náboženstvím')]"
+ TRIGGER_SHARES_HERITAGE_TRAIT_WITH_RELIGION_NOCONTEXT: "Sdílí [concept_heritage_trait|l] s [Concept('concept_religion','náboženstvím')]"
+ TRIGGER_SHARES_HERITAGE_TRAIT_WITH_RELIGION_NOCONTEXT_NOT: "#bold Nesdílí#! [concept_heritage_trait|l] s [Concept('concept_religion','náboženstvím')]"
+ TRIGGER_SHARES_HERITAGE_TRAIT_GROUP_WITH_RELIGION: "Sdílí [Concept('concept_heritage_trait','$concept_heritage_trait_short$')|l] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s [TARGET_RELIGION.GetName] [Concept('concept_religion','náboženstvím')]"
+ TRIGGER_SHARES_HERITAGE_TRAIT_GROUP_WITH_RELIGION_NOT: "#bold Nesdílí#! [Concept('concept_heritage_trait','$concept_heritage_trait_short$')|l] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s [TARGET_RELIGION.GetName] [Concept('concept_religion','náboženstvím')]"
+ TRIGGER_SHARES_HERITAGE_TRAIT_GROUP_WITH_RELIGION_NOCONTEXT: "Sdílí [Concept('concept_heritage_trait','$concept_heritage_trait_short$')|l] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] s [Concept('concept_religion','náboženstvím')]"
+ TRIGGER_SHARES_HERITAGE_TRAIT_GROUP_WITH_RELIGION_NOCONTEXT_NOT: "Nesdílí [Concept('concept_heritage_trait','$concept_heritage_trait_short$')|l] [Concept('concept_discrimination_trait_group','skupiny rysů')] s [Concept('concept_religion','náboženstvím')]"
+ TRIGGER_ANY_POLITICAL_MOVEMENT_NOT: "Žádné [concept_political_movement|l]:"
+ TRIGGER_ANY_POLITICAL_MOVEMENT_FIRST: "Jakýkoli [Country.GetAdjectiveNoFlag] [concept_political_movement|l]:"
+ TRIGGER_ANY_POLITICAL_MOVEMENT_FIRST_NOT: "Žádný [Country.GetAdjectiveNoFlag] [concept_political_movement|l]:"
+ TRIGGER_ANY_POLITICAL_MOVEMENT_ALL_NOT: "Žádný [Concept('concept_political_movement', '$concept_political_movements$')|l]:"
+ TRIGGER_ANY_POLITICAL_MOVEMENT_ALL_FIRST: "Všechny [Country.GetAdjectiveNoFlag] [Concept('concept_political_movement', '$concept_political_movements$')|l]:"
+ TRIGGER_ANY_POLITICAL_MOVEMENT_ALL_FIRST_NOT: "Žádný [Country.GetAdjectiveNoFlag] [Concept('concept_political_movement', '$concept_political_movements$')|l]:"
+ TRIGGER_ANY_POLITICAL_MOVEMENT_CULTURE_EQUAL: "[concept_culture] je [TARGET_CULTURE.GetName]"
+ TRIGGER_ANY_COUNTRY_PERCENT_FIRST: "$PARAMETERS$ ze všech $FILTER$[Concept('concept_country', 'země')]"
+ TRIGGER_LEGITIMACY_GREATER_OR_EQUAL_NOT: "Legitimita vlády [COUNTRY.GetName] #b není#! větší než, nebo rovna $TARGET_VALUE|0v$"
+ TRIGGER_LEGITIMACY_GREATER_OR_EQUAL_FIRST: "Legitimita vlády [COUNTRY.GetNameNoFlag] je větší než, nebo rovna $TARGET_VALUE|0v$"
+ TRIGGER_LEGITIMACY_GREATER_OR_EQUAL_FIRST_NOT: "Legitimita vlády [COUNTRY.GetNameNoFlag] #b není#! větší než, nebo rovna $TARGET_VALUE|0v$"
+ TRIGGER_LEGITIMACY_GREATER_OR_EQUAL_THIRD: "Legitimita vlády [COUNTRY.GetName] je větší než, nebo rovna $TARGET_VALUE|0v$"
+ TRIGGER_LEGITIMACY_GREATER_OR_EQUAL_THIRD_NOT: "Legitimita vlády [COUNTRY.GetName] #b není#! větší než, nebo rovna $TARGET_VALUE|0v$"
+ TRIGGER_POP_TYPE_PERCENT_COUNTRY_FIRST: "Populace v [COUNTRY.GetNameNoFlag] je $COMPARATOR$ $NUM|%0v$ [POP_TYPE.GetName] (aktuálně $CURRENT_VALUE|%0v$)"
+ TRIGGER_POP_TYPE_PERCENT_COUNTRY_FIRST_NOT: "Populace v [COUNTRY.GetNameNoFlag] #b není#! $COMPARATOR$ $NUM|%0v$ [POP_TYPE.GetName] (aktuálně $CURRENT_VALUE|%0v$)"
+ TRIGGER_COUNTRY_DEFINITION_DIRECT_LINK_EQUAL: "Je #v [COUNTRY_DEFINITION.GetName]#!"
+ TRIGGER_COUNTRY_DEFINITION_DIRECT_LINK_EQUAL_NOT: "#b Není#! #v [COUNTRY_DEFINITION.GetName]#!"
+ TRIGGER_COUNTRY_DEFINITION_DIRECT_LINK_FIRST_EQUAL: "Vaše země je #v [COUNTRY_DEFINITION.GetName]#!"
+ TRIGGER_COUNTRY_DEFINITION_DIRECT_LINK_EQUAL_FIRST_NOT: "Vaše země #b není#! #v [COUNTRY_DEFINITION.GetName]#!"
+ TRIGGER_COUNTRY_DEFINITION_DIRECT_LINK_THIRD_EQUAL: "Jsou #v [COUNTRY_DEFINITION.GetName]#!"
+ TRIGGER_COUNTRY_DEFINITION_DIRECT_LINK_EQUAL_THIRD_NOT: "#b Nejsou#! #v [COUNTRY_DEFINITION.GetName]#!"
+ TRIGGER_THIS_COUNTRY_DEFINITION_DIRECT_LINK_EQUAL: "Je #v [TARGET_COUNTRY_DEFINITION.GetName]#!"
+ TRIGGER_THIS_COUNTRY_DEFINITION_DIRECT_LINK_EQUAL_NOT: "#b Není#! #v [TARGET_COUNTRY_DEFINITION.GetName]#!"
+ TRIGGER_THIS_COUNTRY_DEFINITION_DIRECT_LINK_FIRST_EQUAL: "Vaše země je #v [TARGET_COUNTRY_DEFINITION.GetName]#!"
+ TRIGGER_THIS_COUNTRY_DEFINITION_DIRECT_LINK_EQUAL_FIRST_NOT: "Vaše země #b není#! #v [TARGET_COUNTRY_DEFINITION.GetName]#!"
+ TRIGGER_THIS_COUNTRY_DEFINITION_DIRECT_LINK_THIRD_EQUAL: "Jsou #v [TARGET_COUNTRY_DEFINITION.GetName]#!"
+ TRIGGER_THIS_COUNTRY_DEFINITION_DIRECT_LINK_EQUAL_THIRD_NOT: "#b Nejsou#! #v [TARGET_COUNTRY_DEFINITION.GetName]#!"
+ TRIGGER_IS_FLEET_NONE: "$TRIGGER_IS_FLEET$"
+ TRIGGER_IS_FLEET_NONE_NOT: "$TRIGGER_IS_FLEET_NONE_NOT$"
+ TRIGGER_ANY_SCOPE_TREATY_THIRD: "Jakýkoli [concept_treaty|l]:"
+ TRIGGER_ANY_INTEREST_GROUP_IN_GOVERNMENT: "Jakákoli [concept_interest_group|l] [concept_in_government|l]:"
+ TRIGGER_ANY_INTEREST_GROUP_IN_GOVERNMENT_ALL: "Všechny [Concept('concept_interest_group', '$concept_interest_groups$')|l] [concept_in_government|l]:"
+ TRIGGER_ANY_INTEREST_GROUP_IN_GOVERNMENT_PERCENT: "$PARAMETERS$ z $FILTER$[Concept('concept_interest_group', '$concept_interest_groups$')|l] [concept_in_government|l]:"
+ TRIGGER_ANY_INTEREST_GROUP_IN_GOVERNMENT_COUNT: "$PARAMETERS$ $FILTER$[Concept('concept_interest_group', '$concept_interest_groups$')|l] [concept_in_government|l]:"
+ TRIGGER_ANY_INTEREST_GROUP_IN_GOVERNMENT_COUNT_FIRST: "$PARAMETERS$ $FILTER$[Concept('concept_interest_group', '$concept_interest_groups$')|l] [concept_in_government|l]:"
+ TRIGGER_ANY_INTEREST_GROUP_IN_GOVERNMENT_COUNT_THIRD: "$PARAMETERS$ $FILTER$[Concept('concept_interest_group', '$concept_interest_groups$')|l] [concept_in_government|l]:"
+ TRIGGER_ANY_INTEREST_GROUP_IN_GOVERNMENT_FIRST: "Jakákoli [concept_interest_group|l] [concept_in_government|l]:"
+ TRIGGER_ANY_INTEREST_GROUP_IN_OPPOSITION: "Jakákoli [concept_interest_group|l] [concept_in_opposition|l]:"
+ TRIGGER_ANY_INTEREST_GROUP_IN_OPPOSITION_ALL: "Všechny [Concept('concept_interest_group', '$concept_interest_groups$')|l] [concept_in_opposition|l]:"
+ TRIGGER_ANY_INTEREST_GROUP_IN_OPPOSITION_PERCENT: "$PARAMETERS$ z $FILTER$[Concept('concept_interest_group', '$concept_interest_groups$')|l] [concept_in_opposition|l]:"
+ TRIGGER_ANY_INTEREST_GROUP_IN_OPPOSITION_COUNT: "$PARAMETERS$ $FILTER$[Concept('concept_interest_group', '$concept_interest_groups$')|l] [concept_in_opposition|l]:"
+ TRIGGER_ANY_INTEREST_GROUP_IN_OPPOSITION_COUNT_FIRST: "$PARAMETERS$ $FILTER$[Concept('concept_interest_group', '$concept_interest_groups$')|l] [concept_in_opposition|l]:"
+ TRIGGER_ANY_INTEREST_GROUP_IN_OPPOSITION_COUNT_THIRD: "$PARAMETERS$ $FILTER$[Concept('concept_interest_group', '$concept_interest_groups$')|l] [concept_in_opposition|l]:"
+ TRIGGER_ANY_INTEREST_GROUP_IN_OPPOSITION_FIRST: "Jakákoli [concept_interest_group|l] [concept_in_opposition|l]:"
+ TRIGGER_CULTURE_HAS_NATIONAL_AWAKENING: "[CULTURE.GetName] má aktivní [concept_national_awakening|l]"
+ TRIGGER_CULTURE_HAS_NATIONAL_AWAKENING_NOT: "[CULTURE.GetName] #b nemá#! aktivní [concept_national_awakening|l]"
+ TRIGGER_CULTURE_HAS_NATIONAL_AWAKENING_OCCURRED: "[CULTURE.GetName] měla [concept_national_awakening|l]"
+ TRIGGER_CULTURE_HAS_NATIONAL_AWAKENING_OCCURRED_NOT: "[CULTURE.GetName] #b neměla#! [concept_national_awakening|l]"
+ TRIGGER_STATE_HAS_NATIONAL_AWAKENING: "[STATE.GetName] má aktivní [concept_national_awakening|l]"
+ TRIGGER_STATE_HAS_NATIONAL_AWAKENING_NOT: "[STATE.GetName] #b nemá#! aktivní [concept_national_awakening|l]"
