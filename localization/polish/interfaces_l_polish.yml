@@ -1559,7 +1559,7 @@
  CONVOY_RAID_VALUE_FROM_UNITS: "$TAB$$TAB$$VALUE|v$ z bojových jednotek"
  CONVOY_TOPBAR_TOOLTIP: "#header @convoys! [concept_convoys]#!\nZůstatek: [Country.GetNumAvailableConvoys|=+D]\n[Country.GetConvoyEffectDesc]\n$TOOLTIP_DELIMITER$\n$NUM_CONVOYS_BREAKDOWN$"
  CORE_IDEOLOGY_HEADER: "[Ideology.GetName] - [concept_core_movement_ideology]"
- CORPORATISM_TECH: "#v $corporatism$#! [concept_technology]" #Technologie #v $corporatism$#! [concept_technology] byla odemčena
+ CORPORATISM_TECH: "#v $corporatism$#! [concept_technology]"  #Technologie #v $corporatism$#! [concept_technology] byla odemčena
  COST: "Náklady: #variable $VALUE$#! $TYPE$"
  COST_CREDIT: "Náklady: @money!#variable $VALUE|K$#! kredit"
  COST_DIPLOMATIC: "@inf!#BOLD #V $COST|1$#!#!"
@@ -1771,7 +1771,7 @@
  CULTURE_TITLE: "#title [concept_culture]#!"
  CULTURE_TYPE_DESCRIPTION: "Kultura, Éra [Era.GetNumber]"
  CURRENT: "Aktuální"
- CURRENTLITERACY: "$VAL|1*v$ [Concept('concept_literacy','$concept_literate$')] [Concept('concept_individual', '$concept_individuals$')] z celkového [Concept('concept_pop','$concept_population$')]\n$RATE|%2v$ $TRENDARROW$ míra [concept_literacy]" #Gramotní členové celkové populace [concept_pop]: $VAL|1*v$\nMíra gramotnosti: $RATE|%2v$ $TRENDARROW$
+ CURRENTLITERACY: "$VAL|1*v$ [Concept('concept_literacy','$concept_literate$')] [Concept('concept_individual', '$concept_individuals$')] z celkového [Concept('concept_pop','$concept_population$')]\n$RATE|%2v$ $TRENDARROW$ míra [concept_literacy]"  #Gramotní členové celkové populace [concept_pop]: $VAL|1*v$\nMíra gramotnosti: $RATE|%2v$ $TRENDARROW$
  CURRENTLY: "aktuálně "
  CURRENTLY_ACCEPTING_PEACE_DEAL_TOOLTIP: "Přijali jste [concept_peace_deal], což znamená, že [War.GetName] [concept_war] skončí a všechny #b vymačkané#! [Concept('concept_war_goal', '$concept_war_goals$')] budou uplatněny"
  CURRENTLY_ACTIVE_LAW: "#b Aktivní zákon#!"
@@ -1857,7 +1857,7 @@
  DEAD_HEADER_ENTRY_BATTLE: "Z [concept_battle]: $NUM|-D$"
  DEAD_TOOLTIP_ATTACKER: "Strana [Battle.GetAttacker.GetAdjective] utrpěla [Battle.GetAttackerTotalDead|0v] [concept_dead]"
  DEAD_TOOLTIP_DEFENDER: "Strana [Battle.GetDefender.GetAdjective] utrpěla [Battle.GetDefenderTotalDead|0v] [concept_dead]"
- DEATHS_FROM_SOL: "#v $VAL|D-=0$#! z [concept_sol]" #Z [concept_sol]: #variable $VAL|-=0$#!
+ DEATHS_FROM_SOL: "#v $VAL|D-=0$#! z [concept_sol]"  #Z [concept_sol]: #variable $VAL|-=0$#!
  DEBUG_BUILDING_TOOLTIP: "ID: #variable [Building.GetID]#!"
  DEBUG_MODIFIERS: "#title Debug - Modifikátory#!"
  DEBUG_NO_CHARACTER_IN_GBR_IS_VICTORIA: "#debug Debug: V GBR žádná postava není Victoria#!"
@@ -1883,7 +1883,7 @@
  DECLARE_INTEREST_NOT_COASTAL_NOT_ADJACENT: "[StrategicRegion.GetName] není ani pobřežní, ani sousedící s žádným z našich přirozených [Concept('concept_interest', '$concept_interests$')]"
  DECLARE_INTEREST_REMOVE_TOOLTIP: "#header [Concept('concept_declared_interest','$concept_declare_interest$')] v [StrategicRegion.GetName]#!\n$TOOLTIP_DELIMITER$\nOdstraňte náš [concept_declared_interest] v [StrategicRegion.GetName]\nMomentálně používáme [GetPlayer.GetNumDeclaredInterests|v] z našeho #tooltippable #tooltip:[GetPlayer.GetTooltipTag],MAX_DECLARED_INTERESTS_TOOLTIP [GetPlayer.CalcMaxNumDeclaredInterests|v]#!#! [Concept('concept_declared_interest','$concept_declared_interests$')]"
  DECLARE_INTEREST_TOO_MANY_DECLARED_INTERESTS: "[Country.GetName] nemůže prohlásit žádné další [Concept('concept_interest', '$concept_interests$')]"
- DECLARE_NEUTRALITY_DIPLOMATIC_PLAY_TOOLTIP: "Prohlásit se za neutrální v tomto [concept_diplomatic_play][ConcatIfNeitherEmpty('\n\n',DiplomaticPlay.GetDeclareNeutralityValidTooltip(GetPlayer))]" #Prohlaste se za neutrální v této [concept_diplomatic_play][ConcatIfNeitherEmpty(DiplomaticPlay.GetDeclareNeutralityValidTooltip(GetPlayer),'\n\n')]
+ DECLARE_NEUTRALITY_DIPLOMATIC_PLAY_TOOLTIP: "Prohlásit se za neutrální v tomto [concept_diplomatic_play][ConcatIfNeitherEmpty('\n\n',DiplomaticPlay.GetDeclareNeutralityValidTooltip(GetPlayer))]"  #Prohlaste se za neutrální v této [concept_diplomatic_play][ConcatIfNeitherEmpty(DiplomaticPlay.GetDeclareNeutralityValidTooltip(GetPlayer),'\n\n')]
  DECREASE: "snížení"
  DECREASED_EMPLOYMENT_COLON: "#title Snížená zaměstnanost:#!"
  DECREASE_SPEED_ALREADY_MIN: "#N Nelze zpomalit rychlost hry více#!"
@@ -2586,7 +2586,7 @@
  FORMATION_STATUS_CONTROLLING_SEA_NODE_SHORT: "Má kontrolu nad [Invasion.GetSeaNodeName] pro [concept_naval_invasion]"
  FORMATION_STATUS_DEFENDING_INVASION_AT_HQ: "V [HQ.GetName] brání [Invasion.GetInvaderCountry.GetAdjective] [Invasion.GetName]"
  FORMATION_STATUS_DEFENDING_INVASION_AT_SEA_REGION: "V [Province.GetSeaNodeName] brání [Invasion.GetInvaderCountry.GetAdjective] [Invasion.GetName]"
- FORMATION_STATUS_DEFENDING_INVASION_AT_STATE: "V [Invasion.GetTargetState.GetNameWithCountryFlag] brání [Invasion.GetInvaderCountry.GetAdjective] [concept_invasion] z [Invasion.GetSourceState.GetNameWithCountryFlag]"
+ FORMATION_STATUS_DEFENDING_INVASION_AT_STATE: "Na [Invasion.GetTargetState.GetNameWithCountryFlag] právě brání [Invasion.GetInvaderCountry.GetAdjective] [concept_invasion] [AddLocalizationIf(Invasion.IsLandInvasion, 'FORMATION_STATUS_DEFENDING_INVASION_FROM_SOURCE_STATE')]"
  FORMATION_STATUS_DEFENDING_INVASION_SHORT: "Brání proti [Invasion.GetName]"
  FORMATION_STATUS_FIGHTING_CONTROL_SEA_NODE: "Snaží se získat kontrolu nad [Invasion.GetSeaNodeName] kvůli [Invasion.GetName]. Všechny nepřátelské [Concept('concept_fleet', '$concept_fleets$')] musí být [concept_admiral_defeated]"
  FORMATION_STATUS_FIGHTING_CONTROL_SEA_NODE_SHORT: "Snaží se získat kontrolu nad [Invasion.GetSeaNodeName] [concept_naval_invasion]"
@@ -2763,7 +2763,7 @@
  GDP_OWNERSHIP_RATIO_STATE: "[State.GetGdpRatioOwnedByDesc(GetPlayer.Self)]"
  GDP_PER_CAPITA_LEADERBOARD_HEADER: "#header HDP per capita#!"
  GDP_SHORT: "[Concept('concept_gdp', '$concept_gdp_short$')]"
- GDP_TOOLTIP: "#header [concept_gdp]#!\n[Country.GetAdjective] $GDP_SHORT$: #N @money![Country.GetGDP|Dv]#! ([Country.GetGDPRanking])\n$TOOLTIP_DELIMITER$\nHDP per capita: #variable @money![Country.GetGDPPerCapita|2*]#! ([Country.GetGDPPerCapitaRanking])\n\n"
+ GDP_TOOLTIP: "#header [Country.GetAdjective] [concept_gdp]#!\n@money![Country.GetGDP|Dv] (#u #tooltippable #tooltip:[Country.GetTooltipTag],COUNTRY_GDP_OWNERSHIP_TOOLTIP [Country.GetDomesticallyOwnedGDPFraction|%1b]#!#!#!) v domácím vlastnictví $concept_gdp_short$ ([Country.GetGDPRanking])\n@money![Country.GetGDPPerCapita|2*v] [Concept('concept_gdp_per_capita', '$concept_gdp_per_capita_short$')] ([Country.GetGDPPerCapitaRanking])"
  GENERAL_BUSY_NAVAL_INVASION: "[Character.GetFirstName] je zaměstnán účastí v #v Námořní Invazi#!"
  GENERAL_LOCATION_PRESENT_DESC: "[Character.GetOrderType.GetAltName( 'gerund' )|v] na $LOCATION|v$$ADDITIONAL_LOCATION_INFO$"
  GENERAL_LOCATION_PRESENT_DESC_WITHOUT_EXTRA_INFO: "[Character.GetOrderType.GetAltName( 'gerund' )|v] na $LOCATION|v$"
@@ -3258,7 +3258,7 @@
  INACTIVE_TREATY_PORT: "Neaktivní [concept_treaty_port]"
  INCLUDED_WAGE_SUBSIDIES: "\nZahrnuje @money![Building.GetAverageAnnualWageSubsidies|Dv] z [Concept('concept_subsidies','$concept_subsidized$')]"
  INCOHERENCE_BASE_PENALTY_DESC: "$BASE|0+$ z #bold Základní penalizace#! kvůli:\n$TAB$$STANCE|+$ z postoje k [LawType.GetName]\n$TAB$#v x$FACTOR$#! z základního faktoru"
- INCOHERENCE_ENTRY_BREAKDOWN: "#header [LawType.GetName]: #negative_value $VALUE$#!#!\n$TOOLTIP_DELIMITER$\n@approves! $concept_interest_groups$: #v $SUM_POSITIVE|+=$#!\n$BREAKDOWN_POSITIVE$\n\n@disapproves! $concept_interest_groups$: #v $SUM_NEGATIVE|+=$#!\n$BREAKDOWN_NEGATIVE$"
+ INCOHERENCE_ENTRY_BREAKDOWN: "#header [LawType.GetName]: #negative_value $VALUE$#!#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
  INCOHERENCE_GROUP_BREAKDOWN: "#tooltip_header [LawGroup.GetName]: #n $VALUE$#!#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
  INCOHERENCE_LAW_ENTRY_FIRST_FORMAT: "#active $BREAKDOWN$#!"
  INCOHERENCE_LAW_ENTRY_OTHERS_FORMAT: "#inactive $BREAKDOWN$#!"
@@ -3395,7 +3395,7 @@
  INTEREST_GROUPS_TAB: "Zájmové Skupiny"
  INTEREST_GROUP_CHARACTER_LEADER_IDEOLOGIES_HEADER: "Šance na [concept_leader] [Concept('concept_character', '$concept_characters$')] - Hodnoceno v pořadí"
  INTEREST_GROUP_CHARACTER_LEADER_IDEOLOGY_TOOLTIP: "[PotentialLeaderIdeology.GetCharacterFullName|v] jako [Ideology.GetName]\n[PotentialLeaderIdeology.GetChancePercentage|0%v] šance, že příští [concept_leader] [InterestGroup.GetName] bude [PotentialLeaderIdeology.GetCharacterFullName|v]"
- INTEREST_GROUP_INCOHERENCE_ENTRY: "[InterestGroup.GetName]: #tooltippable #tooltip:$BREAKDOWN_TAG$ $VALUE|+=$#!#!$PARTY_LABEL$"
+ INTEREST_GROUP_INCOHERENCE_ENTRY: "[INTEREST_GROUP.GetName]: $STANCE$$PARTY_LABEL$"
  INTEREST_GROUP_INCOHERENCE_ENTRY_PARTY: " ($PARTY$$WHIP$)"
  INTEREST_GROUP_ITEM: "#variable [INTEREST_GROUP.GetClout|1%]#! [INTEREST_GROUP.GetName]"
  INTEREST_GROUP_ITEM_POPULATION: "[INTEREST_GROUP.GetName]: #variable [INTEREST_GROUP.GetPopulation|K]#!"
@@ -3494,7 +3494,7 @@
  INVESTMENT_POOL_CHANGE: "[GetPlayer.GetInvestmentPoolChangeFromConstructionDesc]\n[GetPlayer.GetInvestmentPoolChangeFromInvestmentDesc]"
  INVESTMENT_POOL_CHANGE_FROM_CONSTRUCTION: "#bold Nová [concept_construction]:#! #v @money!$CHANGE|D+$#!"
  INVESTMENT_POOL_CHANGE_FROM_CONSTRUCTION_EMPTY: "Žádná nová [concept_construction] pomocí $concept_investment_pool$: #v @money!$CHANGE|D+=$#!"
- INVESTMENT_POOL_CHANGE_FROM_INVESTMENT: "[concept_reinvestment]: #v @money!#tooltippable #tooltip:[GetPlayer.GetTooltipTag],INVESTMENT_POOL_SOURCES_BREAKDOWN $CHANGE|D+=$#!#!#!\nVeškeré investice jsou násobeny #v x$MULTIPLIER$#! kvůli [GetPlayer.GetAdjective] [concept_gdp] @money![GetPlayer.GetGDP|Dv]"
+ INVESTMENT_POOL_CHANGE_FROM_INVESTMENT: "[concept_reinvestment]: #v @money!#tooltippable #tooltip:[GetPlayer.GetTooltipTag],INVESTMENT_POOL_SOURCES_BREAKDOWN $CHANGE|D+=$#!#!#!\nVšechny investice jsou vynásobeny #v x$MULTIPLIER$#! kvůli [GetPlayer.GetAdjective] [concept_gdp] @money![GetPlayer.GetGDPWithOwnershipsInForeignCountries|Dv] (včetně vašich [Concept('concept_foreign_investment','$concept_foreign_investments$')])"
  INVESTMENT_POOL_CHANGE_FROM_INVESTMENT_EMPTY: "Žádné investiční zdroje: #v @money!$CHANGE|D+=$#!"
  INVESTMENT_POOL_NEXT_BUILDING: "Rozšíří [BUILDING_TYPE.GetName] ve [STATE.GetName]\nStav: $STATUS$"
  INVESTMENT_POOL_NEXT_BUILDING_AVAILABLE_TOTAL_FUNDS: "@money!$CURRENT|vD$ uloženo v [concept_investment_pool] s @money!$NEEDED|vD$ potřebnými na aktuálně zařazené [Concept('concept_private_construction', '$concept_private_constructions$')] výsledky v @money!$AVAILABLE|vD$ dostupných uložených prostředků"
@@ -3509,9 +3509,9 @@
  INVESTMENT_POOL_NEXT_FRACTION_HANDLED_BY_WEEKLY_FUNDS: "$FRACTION|%0v$ z týdenních nákladů na výstavbu (@money!$COST|vD$) je pokryto dostupnými týdenními prostředky uhrazenými do [concept_investment_pool]"
  INVESTMENT_POOL_NEXT_PRIVATIZATION_READY: "#p Připraveno na $concept_privatization$#!"
  INVESTMENT_POOL_NO_PREVIOUS_INVESTMENTS: "Žádné předchozí investice"
- INVESTMENT_POOL_PREVIOUS_CONSTRUCTION: "$EFFECT_LIST_BULLET$[BUILDING_TYPE.GetName] v [STATE.GetName] $concept_constructed$ [TARGET_BUILDING_TYPE.GetName] v [TARGET_STATE.GetName] dne $DATE|v$"
- INVESTMENT_POOL_PREVIOUS_INVESTMENTS_DESC: "#header Předchozí [Concept('concept_private_construction', '$concept_private_constructions$')] a [Concept('concept_privatize', '$concept_privatizations$')]#!\n$TOOLTIP_DELIMITER$\n$DETAILS$"
- INVESTMENT_POOL_PREVIOUS_PRIVATIZATION: "$EFFECT_LIST_BULLET$[BUILDING_TYPE.GetName] v [STATE.GetName] $concept_privatized$ [TARGET_BUILDING_TYPE.GetName] v [TARGET_STATE.GetName] dne $DATE|v$"
+ INVESTMENT_POOL_PREVIOUS_CONSTRUCTION: "#indent_newline:3 $DATE|b$:\n$EFFECT_LIST_BULLET$[TARGET_BUILDING_TYPE.GetName] v [TARGET_STATE.GetName] $concept_constructed$ od [BUILDING_TYPE.GetName] v [STATE.GetName]#!"
+ INVESTMENT_POOL_PREVIOUS_INVESTMENTS_DESC: "#header Předchozí investice#!\n$TOOLTIP_DELIMITER$\n#title Předchozí [Concept('concept_private_construction', '$concept_private_constructions$')]:#!#indent_newline:3 \n$CONSTRUCTIONS_DETAILS$#!\n\n#title Předchozí [Concept('concept_privatize', '$concept_privatizations$')]:#!#indent_newline:3 \n$PRIVATIZATIONS_DETAILS$#!"
+ INVESTMENT_POOL_PREVIOUS_PRIVATIZATION: "#indent_newline:3 $DATE|b$:\n$EFFECT_LIST_BULLET$[TARGET_BUILDING_TYPE.GetName] v [TARGET_STATE.GetName] $concept_privatized$ od [BUILDING_TYPE.GetName] v [STATE.GetName]#!"
  INVESTMENT_POOL_PRIVATIZATION_COST: "Náklady na [concept_privatize] jednu úroveň [BUILDING.GetName]: @money!$COST|vD$"
  INVESTMENT_POOL_PRIVATIZING_NEXT_BUILDING: "Bude [concept_privatize] [BUILDING_TYPE.GetName] ve [STATE.GetName]\nStatus: $STATUS$"
  INVESTMENT_POOL_PRIVATIZING_NEXT_BUILDING_WITH_INVESTOR: "[BUILDING_TYPE.GetName] ve [STATE.GetName] bude [concept_privatize] [TARGET_BUILDING_TYPE.GetName] ve [TARGET_STATE.GetName]\nStav: $STATUS$"
@@ -4120,7 +4120,7 @@
  MARKET_EXPORTS: "[Market.GetTotalExportedAmount|vD] Exporty"
  MARKET_EXPORTS_TO_MARKET: "@market_sell_orders! [Concept('concept_trade','$concept_exports$')] [Market.GetExportedAmountToMarket(Goods.GetMarket, Goods.Self)|v0] [Goods.GetName] do [Goods.GetMarket.GetOwner.GetFlagTextIcon] [Goods.GetMarket.GetName]"
  MARKET_EXPORTS_TO_WORLD_MARKET: "@market_exports! [Concept('concept_trade','$concept_exports$')] [Market.GetExportedAmount(Goods.Self)|v0] [Goods.GetName] do [concept_world_market]"
- MARKET_GDP_PERCENTAGE: "#title [GetPlayer.GetAdjectiveNoFormatting] $GDP_SHORT$ Příspěvek#!\n[Market.GetMarketSharePercentageFor( GetPlayer )|%1v]"
+ MARKET_GDP_PERCENTAGE: "#title [GetPlayer.GetAdjectiveNoFormatting] $GDP_SHORT$ příspěvek#!\n[Market.GetMarketSharePercentageFor( GetPlayer )|%1v]"
  MARKET_GDP_PERCENTAGE_TOOLTIP: "#header Příspěvek na HDP#!\n[Market.GetName] přispívá [Market.GetGDPContributionPercentage( GetPlayer )|%1v] k HDP ve [GetPlayer.GetName]"
  MARKET_GOODS: "Zboží"
  MARKET_GOODS_BALANCE_TOOLTIP: "[SelectLocalization(LessThan_int32(FixedPointToInt(Goods.GetMarketBuyAndSellOrdersBalance), '(int32)0'), 'MARKET_GOODS_BALANCE_TOOLTIP_IMBALANCE', 'MARKET_GOODS_BALANCE_TOOLTIP_BALANCE')]"
@@ -4223,7 +4223,7 @@
  MIGRATION_PULL_FROM_SOL: "$TAB$[concept_sol]: #v $VAL|+=1$#!"
  MIGRATION_PULL_FROM_UNEMPLOYMENT: "$TAB$[Concept('concept_unemployed','$concept_unemployment$')]: #v $VAL|+=1$#!"
  MIGRATION_TARGETS: "Cíle migrace:"
- MIGRATION_TARGET_ENTRY: "#variable $TARGET$#!"
+ MIGRATION_TARGET_ENTRY: "$TARGET$"
  MILD_STARVATION: "[Concept('concept_starvation', '$concept_mild_starvation$')]"
  MILITARY: "Armáda"
  MILITARY_BUILDINGS_EXPENSES_BREAKDOWN: "#tooltip_header Zboží pro vojenské budovy#!\nCelkem: #v #N @money!-[GetPlayer.GetMilitaryGoodsExpenses|D-]#!#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetMilitaryGoodsExpensesDesc]\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetMilitaryGoodsExpensesByGoodsDesc]"
@@ -5423,7 +5423,7 @@
  POP_IG_MEMBERSHIP: "#variable $MEMBERS|D$#! podporují [INTEREST_GROUP.GetName] (Atraktivita: #tooltip_header #tooltippable #tooltip:[INTEREST_GROUP.GetPopWithIG(POP.Self).GetTooltipTag],POP_IG_ATTRACTION_TOOLTIP $ATTRACTION|%0$#!#!#!)\n"
  POP_IG_NO_MEMBERSHIP: "#variable $NUM_INACTIVE|D$#! jsou #bold [Concept('concept_politically_unaligned_aligned', '$concept_politically_unaligned$')]#! a nepodporují žádnou [concept_interest_group]\n#variable $NUM_NON_PARTICIPATING|D$#! #bold Zimané závislí#! nemohou se účastnit politiky"
  POP_IG_POL_STR: "Pol. síla: #v [PopListPopEntry.GetIGPolStr|D]#!"
- POP_IG_POL_STR_TOOLTIP: "#header [concept_political_strength]#!\n$TOOLTIP_DELIMITER$\nTento Pop podporuje #v [PopListPopEntry.GetInterestGroupContext.GetName]#! s #v [PopListPopEntry.GetIGPolStr|K]#! z jejich #v [PopListPopEntry.GetPop.GetPoliticalStrength|D]#! [concept_political_strength].
+ POP_IG_POL_STR_TOOLTIP: "#header [concept_political_strength]#!\n$TOOLTIP_DELIMITER$\nTento Pop podporuje #v [PopListPopEntry.GetInterestGroupContext.GetName]#! s #v [PopListPopEntry.GetIGPolStr|K]#! z jejich #v [PopListPopEntry.GetPop.GetPoliticalStrength|D]#! [concept_political_strength]."
  POP_IG_POPULATION: "#v [PopListPopEntry.GetIGTotalPops|D]#!"
  POP_IG_POPULATION_DEPENDENTS: "Tento Pop podporuje #v [PopListPopEntry.GetInterestGroupContext.GetName]#! s #v [PopListPopEntry.GetIGDependents|1K]#! z jejich #v [PopListPopEntry.GetPop.GetNumDependentPoliticalParticipants|1K]#! oprávněných závislých"
  POP_IG_POPULATION_TOOLTIP: "#header [concept_interest_group] Členové#!\n$TOOLTIP_DELIMITER$\n$POP_IG_POPULATION_WORKING_ADULTS$\n$POP_IG_POPULATION_DEPENDENTS$"
@@ -5463,7 +5463,7 @@
  POP_MOVEMENT_ATTRACTION_TOOLTIP: "#header Atraktivita populace k [PopWithMovement.GetPoliticalMovement.GetName]#!\n$TOOLTIP_DELIMITER$\nCelková atraktivita: [PopWithMovement.CalcAttractionToMovement|v]\n[PopWithMovement.GetAttractionToMovementDesc]"
  POP_MOVEMENT_MEMBERSHIP: "#variable $MEMBERS|D$#! jsou součástí [POLITICAL_MOVEMENT.GetName] (Atraktivita: #tooltip_header #tooltippable #tooltip:$BREAKDOWN_TAG$ $ATTRACTION|%0$#!#!#!)\n"
  POP_MOVEMENT_NO_MEMBERSHIP: "#variable $NUM_INACTIVE|D$#! se nepřipojili k žádnému [concept_political_movement]\n#variable $NUM_NON_PARTICIPATING|D$#! #bold Neschopní závislí#! se nemohou účastnit politiky"
- POP_MUSLIM: "Následuje $sunni$, $shiite$ nebo $ibadi$ [concept_religion]" #Následuje $sunni$ nebo $shiite$ [concept_religion]
+ POP_MUSLIM: "Následuje $sunni$, $shiite$ nebo $ibadi$ [concept_religion]"  #Následuje $sunni$ nebo $shiite$ [concept_religion]
  POP_NEEDS_ENTRY: "[Goods.GetName] - Ekvivalent k $MULT|2v$ jednotkám [PopNeed.GetDefaultGoods.GetName]"
  POP_NEEDS_ENTRY_DEFAULT: "[Goods.GetName] - Výchozí [Concept('concept_good', '$concept_goods$')] pro [PopNeed.GetNameNoFormatting]"
  POP_NEEDS_GOOD_BAR_CHART_ITEM_TOOLTIP: "#header [Goods.GetName]#!\n[GoodsList.GetPopConsumptionRatio(Goods.Self)|0%v] z [GetPopNeed('popneed_basic_food').GetName] [Concept('concept_pop_needs','$concept_pop_needs_short$')] je naplněno [Goods.GetName] v [Goods.GetMarket.GetName], [SelectLocalization(FoodSecurityFilter.HasSpecificState, 'FOOD_SECURITY_SPECIFIC_STATE', 'FOOD_SECURITY_FILTER_ALL_STATES')][ConcatIfNeitherEmpty(', ', SelectLocalization(FoodSecurityFilter.HasSpecificCountry, 'FOOD_SECURITY_SPECIFIC_COUNTRY',  AddLocalizationIf(Not(FoodSecurityFilter.HasSpecificState), 'FOOD_SECURITY_FILTER_ALL_COUNTRIES')))]\n$TOOLTIP_DELIMITER$\n[concept_market_price]: @money![Goods.GetMarketPrice|0v] [Goods.GetCompareIconAgainstBasePrice( Goods.GetMarketPrice )] ([Goods.GetPercentageDeltaAgainstBasePrice(Goods.GetMarketPrice)|%0=-])"
@@ -6741,7 +6741,7 @@
  STATE_INDUSTRY_OUTPUT_MULT_desc: "TESTOVÁNÍ_DESC"
  STATE_INFRASTRUCTURE: "[concept_infrastructure]\n$STATE_INFRASTRUCTURE_CONDENSED$"
  STATE_INFRASTRUCTURE_CONDENSED: "[SelectLocalization(GreaterThan_CFixedPoint(State.GetInfrastructureUsage,State.GetInfrastructure), 'WARNING', '')]Používá #tooltippable #tooltip:[State.GetTooltipTag],STATE_INFRASTRUCTURE_USAGE_TOOLTIP [State.GetInfrastructureUsage|0v]#!#! z #tooltippable #tooltip:[State.GetTooltipTag],STATE_INFRASTRUCTURE_TOOLTIP [State.GetInfrastructure|0v]#!#!"
- STATE_INFRASTRUCTURE_DESC: "#header Bilance [concept_infrastructure]#!\n[State.GetInfrastructureBalance|0+=] aktuálně v [State.GetName]\n$TOOLTIP_DELIMITER$\n[SelectLocalization(LessThanOrEqualTo_CFixedPoint(State.GetInfrastructure, '(CFixedPoint)0'), 'NO_STATE_INFRASTRUCTURE_DESC', 'STATE_INFRASTRUCTURE_DESC_HAS_INFRASTRUCTURE')]\n\n[SelectLocalization(EqualTo_CFixedPoint(State.GetInfrastructureUsage, '(CFixedPoint)0'), 'NO_STATE_INFRASTRUCTURE_USAGE_DESC', 'STATE_INFRASTRUCTURE_USAGE_DESC')]" ##header [concept_infrastructure] Zůstatek#!\n[concept_infrastructure] Zůstatek v [State.GetName] je [State.GetInfrastructureBalance|0+=]\n$TOOLTIP_DELIMITER$\n[SelectLocalization(LessThanOrEqualTo_CFixedPoint(State.GetInfrastructure, '(CFixedPoint)0'), 'NO_STATE_INFRASTRUCTURE_DESC', 'STATE_INFRASTRUCTURE_DESC_HAS_INFRASTRUCTURE')]\n\n[SelectLocalization(EqualTo_CFixedPoint(State.GetInfrastructureUsage, '(CFixedPoint)0'), 'NO_STATE_INFRASTRUCTURE_USAGE_DESC', 'STATE_INFRASTRUCTURE_USAGE_DESC')]
+ STATE_INFRASTRUCTURE_DESC: "#header Bilance [concept_infrastructure]#!\n[State.GetInfrastructureBalance|0+=] aktuálně v [State.GetName]\n$TOOLTIP_DELIMITER$\n[SelectLocalization(LessThanOrEqualTo_CFixedPoint(State.GetInfrastructure, '(CFixedPoint)0'), 'NO_STATE_INFRASTRUCTURE_DESC', 'STATE_INFRASTRUCTURE_DESC_HAS_INFRASTRUCTURE')]\n\n[SelectLocalization(EqualTo_CFixedPoint(State.GetInfrastructureUsage, '(CFixedPoint)0'), 'NO_STATE_INFRASTRUCTURE_USAGE_DESC', 'STATE_INFRASTRUCTURE_USAGE_DESC')]"  ##header [concept_infrastructure] Zůstatek#!\n[concept_infrastructure] Zůstatek v [State.GetName] je [State.GetInfrastructureBalance|0+=]\n$TOOLTIP_DELIMITER$\n[SelectLocalization(LessThanOrEqualTo_CFixedPoint(State.GetInfrastructure, '(CFixedPoint)0'), 'NO_STATE_INFRASTRUCTURE_DESC', 'STATE_INFRASTRUCTURE_DESC_HAS_INFRASTRUCTURE')]\n\n[SelectLocalization(EqualTo_CFixedPoint(State.GetInfrastructureUsage, '(CFixedPoint)0'), 'NO_STATE_INFRASTRUCTURE_USAGE_DESC', 'STATE_INFRASTRUCTURE_USAGE_DESC')]
  STATE_INFRASTRUCTURE_DESC_HAS_INFRASTRUCTURE: "#title [concept_infrastructure] úroveň #v [State.GetInfrastructure|0+]#! je způsobena:#!\n   #indent_newline:3 [State.GetInfrastructureDesc]#!"
  STATE_INFRASTRUCTURE_MAP_MARKER_TOOLTIP: "#header [State.GetName] [concept_market_access]#!\n[State.GetMarketAccessDesc]"
  STATE_INFRASTRUCTURE_PRODUCTION_MARKER: "$concept_infrastructure$: [State.GetInfrastructureBalance|0+=]"
@@ -7476,7 +7476,7 @@
  TOTAL_NAVAL_BASE: "[GetBuildingType('building_naval_base').GetName] velikost:"
  TOTAL_POLITICAL_STRENGTH_TITLE: "#title Celková [concept_political_strength]#!"
  TOTAL_TARIFFS_SUBVENTIONS_MONEY_BALANCE_FOR_GOODS_DESC: "$HEADER$\n$VALUE|K=+$ v $NAME$\n$TOOLTIP_DELIMITER$\n$TARIFFS|K=+$ z $concept_tariffs$ ($TARIFF_RATE|%0v$ sazba $concept_tariff$)\n$SUBVENTIONS|K=+$ z $concept_subventions$ ($SUBVENTION_RATE|%0v$ sazba $concept_subvention$)"
- TOTAL_TARIFFS_SUBVENTIONS_MONEY_BALANCE_FOR_GOODS_HEADER: "#header [concept_tariffs] a [concept_subventions] pro $GOODS_NAME$#!" ##header [concept_tariffs] a [concept_subventions] pro $GOODS_ICON$[Nbsp]$GOODS_NAME$#!
+ TOTAL_TARIFFS_SUBVENTIONS_MONEY_BALANCE_FOR_GOODS_HEADER: "#header [concept_tariffs] a [concept_subventions] pro $GOODS_NAME$#!"  ##header [concept_tariffs] a [concept_subventions] pro $GOODS_ICON$[Nbsp]$GOODS_NAME$#!
  TOTAL_TARIFFS_SUBVENTIONS_MONEY_BALANCE_FOR_GOODS_NONE_DESC: "$HEADER$\n$TOOLTIP_DELIMITER$\nŽádné $concept_tariffs$ ani $concept_subventions$ pro toto [concept_good] v $NAME|v$"
  TOTAL_TARIFFS_SUBVENTIONS_MONEY_BALANCE_FOR_GOODS_NO_TRADE_DESC: "$HEADER$\n$TOOLTIP_DELIMITER$\nŽádný [concept_trade] tohoto [concept_good] v $NAME|v$"
  TOTAL_TARIFFS_SUBVENTIONS_MONEY_MARKET_BALANCE_FOR_GOODS: "@money![Goods.GetMarketTariffsSubventionsBalance|K=+]"
@@ -8061,12 +8061,12 @@
  WORKER_OWNED: "Vlastněno pracovníky"
  WORKFORCE: "#title Pracovní síla #!"
  WORKFORCE_FACTOR_DESC: "#v ×$FACTOR|2$#! násobitel z vlivu [concept_workforce] (@population! #v $SIZE|D$#!)"
- WORKFORCE_RATIO_DESC: "#v $VAL|%1$#! této populace je v pracovní síle, zatímco zbytek jsou závislí. V průběhu času se tento poměr přiblíží #v $TARGET_VAL|%1$#! z důvodu:\n$BREAKDOWN$" ##variable $VAL|%1$#! této Pop je v pracovní síle, zatímco zbytek jsou závislí. Časem se tento poměr přiblíží #variable $TARGET_VAL|%1$#! díky:\n$BREAKDOWN$
+ WORKFORCE_RATIO_DESC: "#v $VAL|%1$#! této populace je v pracovní síle, zatímco zbytek jsou závislí. V průběhu času se tento poměr přiblíží #v $TARGET_VAL|%1$#! z důvodu:\n$BREAKDOWN$"  ##variable $VAL|%1$#! této Pop je v pracovní síle, zatímco zbytek jsou závislí. Časem se tento poměr přiblíží #variable $TARGET_VAL|%1$#! díky:\n$BREAKDOWN$
  WORKING_ADULTS_INCOME_TITLE: "#title Příjem pracovní síly#!"
  WORKING_ADULTS_TITLE: "#title Pracovní síla#!"
  WORKS_AT: "$NAME$($NUM|0*$)"
  WORLD_MARKET_ACCESS: "[concept_world_market_access]"
- WORLD_MARKET_ACCESS_FROM_MARKET_ACCESS: "#tooltippable #tooltip:[State.GetTooltipTag],WORLD_MARKET_ACCESS_FROM_MARKET_ACCESS_BREAKDOWN_TOOLTIP $VALUE|v%0$#!#! základ z [concept_market_access]" #$VALUE|v%0$ základ z [concept_market_access]
+ WORLD_MARKET_ACCESS_FROM_MARKET_ACCESS: "#tooltippable #tooltip:[State.GetTooltipTag],WORLD_MARKET_ACCESS_FROM_MARKET_ACCESS_BREAKDOWN_TOOLTIP $VALUE|v%0$#!#! základ z [concept_market_access]"  #$VALUE|v%0$ základ z [concept_market_access]
  WORLD_MARKET_ACCESS_HAS_HUB: "Připojeno ke [Concept('concept_world_market','světovýmu trhu')] skrze [Concept('concept_world_market_hub','$concept_world_market_hub_short$')|l] ve státě [STATE.GetName]"
  WORLD_MARKET_ACCESS_IS_HUB: "[STATE.GetName] je [concept_world_market_hub] pro [STATE.GetMarket.GetName]"
  WORLD_MARKET_ACCESS_NO_HUB: "Protože není připojeno k žádnému [concept_world_market_hub], má tento $concept_state$ #n 0%#! přístup na $concept_world_market_access$"
@@ -8075,8 +8075,8 @@
  WORLD_MARKET_CURRENT_GOODS_FILTERS: "[SelectLocalization(And(WorldMarketPanel.IsSelected('staple'), WorldMarketPanel.IsSelected('military')), 'ALL_GOODS', 'WORLD_MARKET_SELECTED_FILTER')]"
  WORLD_MARKET_EXPORTERS_TOOLTIP: "#header [Market.GetName]#!\nExportuje [Market.GetTotalExportedAmount|Dv] do [concept_world_market]"
  WORLD_MARKET_GOODS_BALANCE_TOOLTIP: "#header [concept_world_market] Bilance#!\nHodnota: [Goods.GetWorldMarketExportsAndImportsBalance|v0]"
- WORLD_MARKET_GOODS_EXPORT_TOOLTIP: "#header [Market.GetName] [Goods.GetName] $concept_exports$#!\nMnožství: [Market.GetExportedAmount(Goods.Self)|v0]" ##header [Market.GetName] [Goods.GetTextIcon][Nbsp][Goods.GetName] $concept_exports$#!\nMnožství: [Market.GetExportedAmount(Goods.Self)|v0]
- WORLD_MARKET_GOODS_IMPORT_TOOLTIP: "#header [Market.GetName] [Goods.GetName] $concept_imports$#!\nMnožství: [Market.GetImportedAmount(Goods.Self)|v0]" ##header [Market.GetName] [Goods.GetTextIcon][Nbsp][Goods.GetName] $concept_imports$#!\nMnožství: [Market.GetImportedAmount(Goods.Self)|v0]
+ WORLD_MARKET_GOODS_EXPORT_TOOLTIP: "#header [Market.GetName] [Goods.GetName] $concept_exports$#!\nMnožství: [Market.GetExportedAmount(Goods.Self)|v0]"  ##header [Market.GetName] [Goods.GetTextIcon][Nbsp][Goods.GetName] $concept_exports$#!\nMnožství: [Market.GetExportedAmount(Goods.Self)|v0]
+ WORLD_MARKET_GOODS_IMPORT_TOOLTIP: "#header [Market.GetName] [Goods.GetName] $concept_imports$#!\nMnožství: [Market.GetImportedAmount(Goods.Self)|v0]"  ##header [Market.GetName] [Goods.GetTextIcon][Nbsp][Goods.GetName] $concept_imports$#!\nMnožství: [Market.GetImportedAmount(Goods.Self)|v0]
  WORLD_MARKET_HEADER: "Světový trh"
  WORLD_MARKET_IMPORTERS_TOOLTIP: "#header [Market.GetName]#!\nImportuje [Market.GetTotalImportedAmount|Dv] ze [concept_world_market]"
  WORLD_MARKET_NO_SEA_REGION_TRADE: "Žádný [concept_trade] přes [concept_world_market] v mořské oblasti"
@@ -9316,3 +9316,25 @@
  PRESTIGE_GOOD_INVALID: "Neplatný [concept_prestige_good]"
  PRESTIGE_GOOD_NOT_YOURS: "Hráč není hlavním producentem [Goods.GetName]"
  HAS_NATIONAL_AWAKENING: "Má @national_awakening! [concept_national_awakening]"
+ RELEASE_COUNTRY_WILL_RECEIVE_STATES_NO_HOMELAND: "Obdrží následující státy:\n[COUNTRY_CREATION.ListReleasableStatesWithoutHomeland(GetPlayer)]"
+ KEEP_HOMELAND_STATES: "#b Uchovat domovinu#!"
+ CANNOT_RELEASE_COUNTRY_WITH_HOMELAND_STATES: "#b Nelze#! propustit s ponecháním [Concept('concept_homeland', '$concept_homelands$')] [Concept('concept_state', '$concept_states$')], protože [Concept('concept_country', '$concept_countries$')] nebude mít požadované $concept_states$."
+ RELEASE_COUNTRY_OPTIONS: "#header Možnosti#!"
+ COUNTRY_GDP_OWNERSHIP_TOOLTIP: "#header [concept_gdp_ownership] v [Country.GetName]#!\n#u [Country.GetDomesticallyOwnedGDPFraction|%1b]#! (@money![Country.GetGDP|Dv]) domácí vlastnický podíl $concept_gdp_short$\n$TOOLTIP_DELIMITER$\n[SelectLocalization(IsZero_CFixedPoint(Country.GetForeignOwnedGDPFraction), 'NO_FOREIGNLY_OWNED_PERCENTAGE', 'COUNTRY_FOREIGNLY_OWNED_PERCENTAGE')]\n\n[SelectLocalization(IsZero_CFixedPoint(Country.GetGDPOwnedInForeignCountries), 'NO_OWNED_FOREIGN_GDP_BY_COUNTRY', 'OWNED_FOREIGN_GDP_BY_COUNTRY')]"
+ COUNTRY_FOREIGNLY_OWNED_PERCENTAGE: "#title #o [Country.GetForeignOwnedGDPFraction|%1b]#! (@money![Country.GetForeignOwnedGDP|Dv]) z [Country.GetAdjective] $concept_gdp_short$ je v zahraničním vlastnictví:#!#indent_newline:3 \n[Country.GetForeignOwnedGDPDesc]#!"
+ FOREIGN_COUNTRY_OWNING_GDP_ITEM: "#o $GDP_FRACTION|%1b$#! (@money!$GDP|Db$) $concept_gdp_short$ vlastněné [Country.GetName] ($LEVELS|v$ [Concept('concept_building_level', '$concept_building_levels_short$')])"
+ NO_FOREIGNLY_OWNED_PERCENTAGE: "Žádné zahraniční [Concept('concept_country','$concept_countries$')] nevlastní žádnou část [Country.GetAdjective] $concept_gdp_short$"
+ OWNED_FOREIGN_GDP_BY_COUNTRY: "#title @money!#u [Country.GetGDPOwnedInForeignCountries|Db]#! $concept_gdp_short$ je vlastněno [Country.GetName] v zahraničních [Concept('concept_country','$concept_countries$')]:#!#indent_newline:3 \n[Country.GetGDPOwnedInForeignCountriesDesc]#!"
+ OWNED_GDP_COUNTRY_ITEM: "#u $GDP_FRACTION|%1b$#! (@money!$GDP|Db$) $concept_gdp_short$ vlastněné v [Country.GetName] ($LEVELS|v$ [Concept('concept_building_level', '$concept_building_levels_short$')])"
+ NO_OWNED_FOREIGN_GDP_BY_COUNTRY: "[Country.GetName] nevlastní žádné $concept_gdp_short$ v zahraničních [Concept('concept_country','$concept_countries$')]"
+ COUNTRY_ALL_GDP: "@money!#v [Country.GetGDPWithOwnershipsInForeignCountries|D]#!"
+ DOMESTIC_COUNTRY_GDP: "@money!#v [Country.GetGDP|D]#!"
+ FOREIGN_COUNTRY_GDP: "@money!#u [Country.GetGDPOwnedInForeignCountries|Db]#!"
+ COUNTRY_ALL_OWNERSHIP: "#u [Country.GetDomesticallyOwnedGDPFraction|%1b]#![ConcatIfNeitherEmpty(' + ', AddLocalizationIf(NotZero_CFixedPoint(Country.GetGDPOwnedInForeignCountries), 'FOREIGN_COUNTRY_GDP'))]"
+ FORMATION_STATUS_DEFENDING_INVASION_FROM_SOURCE_STATE: "z [Invasion.GetSourceState.GetNameWithCountryFlag]"
+ DISCRIMINATION_LEVEL_subjecthood: "Průměrná [concept_acceptance] podle [GetLawType('law_subjecthood').GetName]"
+ INVESTMENT_POOL_NO_PREVIOUS_PRIVATIZATIONS: "Žádné předchozí [Concept('concept_privatize', '$concept_privatizations$')]"
+ INVESTMENT_POOL_NO_PREVIOUS_PRIVATE_CONSTRUCTIONS: "Žádné předchozí [Concept('concept_private_construction', '$concept_private_constructions$')]"
+ TODO: "#todo TODO#!"
+ RANK_TOOLTIP_MAX_SUBJECT_WARGOAL: "@information! [COUNTRY.GetName] nemůže dosáhnout vyššího $concept_rank$ než $HIGHEST_RANK|v$ kvůli tomu, že je cílem podmanění [concept_war_goal], což je omezuje na maximální pořadí #v ##$HIGHEST_POSITION$#! na světě"
+ NATIONAL_AWAKENING_CULTURE_TOOLTIP: "[Culture.GetName] [concept_culture] má [concept_national_awakening], která zvyšuje jejich [concept_fervor] a atraktivitu $concept_pop$ pro [Concept('concept_political_movement', '$concept_political_movements$')] u [Culture.GetName] [Concept('concept_pop', '$concept_pops$')]"
