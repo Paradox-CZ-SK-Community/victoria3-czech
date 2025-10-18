@@ -170,7 +170,7 @@
  DIPLOMATIC_ACTION_TOO_SOON: "Musíme počkat až do #variable $DATE$#!, abychom mohli znovu provádět diplomacii s #variable $COUNTRY$#!."
  DIPLOMATIC_INCIDENT_NON_WARGOAL_DESC: "Povede k [concept_diplomatic_incident] v $STRATEGIC_REGION$, dávající #N #B #tooltippable #tooltip:$INFAMY_BREAKDOWN_TAG$ $INFAMY_AMOUNT|1$#!#!#!#! [concept_infamy] [COUNTRY.GetName] a sníží jejich $RELATIONS$ s #tooltippable #tooltip:$RELATIONS_BREAKDOWN_TAG$ $NUM_COUNTRIES_IMPACTED|v$ země#!#!"
  DIPLOMATIC_INCIDENT_RELATIONS_IMPACT: "[COUNTRY.GetAdjectiveNoFormatting] [concept_relations] s [COUNTRY_THIRD_PARTY.GetName]: $AMOUNT|=+$"
- DIPLOMATIC_INCIDENT_WARGOAL_DESC: "Požadování tohoto povede k [concept_diplomatic_incident] v $STRATEGIC_REGION$, dává #N #B #tooltippable #tooltip:$INFAMY_BREAKDOWN_TAG$ $INFAMY_AMOUNT|1$#!#!#!#! [concept_infamy] [COUNTRY.GetName] a snižuje jejich $RELATIONS$ s #tooltippable #tooltip:$RELATIONS_BREAKDOWN_TAG$ $NUM_COUNTRIES_IMPACTED|v$ zeměmi#!#!"
+ DIPLOMATIC_INCIDENT_WARGOAL_DESC: "Požadování tohoto cíle povede k [Concept('concept_diplomatic_incident','diplomatickému incidentu')] v $STRATEGIC_REGION$, dává #N #B #tooltippable #tooltip:$INFAMY_BREAKDOWN_TAG$ $INFAMY_AMOUNT|1$#!#!#!#! [Concept('concept_infamy','infamie')] [COUNTRY.GetAltAdjective('u')] a snižuje jejich vztahy s #tooltippable #tooltip:$RELATIONS_BREAKDOWN_TAG$ $NUM_COUNTRIES_IMPACTED|v$ zeměmi#!#!"
  DIPLOMATIC_PACT_DESC: "[DiplomaticPact.GetDesc]"
  DIPLOMATIC_PACT_HEADER: "#header [DiplomaticPact.GetName]#!"
  DIPLOMATIC_PACT_REDUCED_LIBERTY_DESIRE: "Přispěje k poklesu [SCOPE.sCountry('target_country').GetAdjective] [concept_liberty_desire]"
