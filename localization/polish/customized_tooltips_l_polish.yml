@@ -232,7 +232,7 @@
  DATA_INTEREST_GROUP_TRAIT_NAME_TOOLTIP: "[InterestGroupTrait.GetModifiersDesc(InterestGroup.Self)]\n\n[InterestGroupTrait.GetTriggersDesc(InterestGroup.Self)]\n$TOOLTIP_DELIMITER$\n#lore [InterestGroupTrait.GetDesc]#!"
  DATA_INTEREST_GROUP_VARIANT_NAME_FORMAT: "$NAME$ ($TYPE$)"
  DATA_LAW_CUSTOM_EFFECTS_HEADER: "Immediate effects when enacted:"
- DATA_LAW_EFFECTS_HEADER: "Effects:"
+ DATA_LAW_EFFECTS_HEADER: "Účinky:"
  DATA_LAW_GROUP_NAME_FORMAT: "#tooltippable_name #tooltip:$TAG$,DATA_LAW_GROUP_NAME_TOOLTIP,LawGroupTooltip $NAME$#!#!"
  DATA_LAW_GROUP_NAME_TOOLTIP: "[LawGroup.GetDesc]\n\n$DATA_LAW_GROUP_NAME_TOOLTIP_ACTIVE_LAW$[ConcatIfNeitherEmpty( '\n', AddLocalizationIf( LawGroup.GetCurrentlyEnacting.IsValid, 'DATA_LAW_GROUP_NAME_TOOLTIP_ENACTING_LAW' ))]\nMáme [LawGroup.GetNumEnactable|v] dostupných alternativ v této skupině."
  DATA_LAW_GROUP_NAME_TOOLTIP_ACTIVE_LAW: "Aktuálně aktivní [concept_law]: [LawGroup.GetCurrentlyActive.GetName]"
