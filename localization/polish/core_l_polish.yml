@@ -112,7 +112,7 @@
  HOVER_STATE_REGION_ADJACENCY_SEA_DEBUG_INFO: "Sousední mořské státní regiony: "
  HOVER_STATE_REGION_ENTRY: "[StateRegion.GetName|v] ([StateRegion.GetID|v])"
  HOVER_STATE_REGION_NAVAL_EXIT_DEBUG_INFO: "Námořní výstup: $REGION$"
- HOVER_STATE_TOOLTIP_COLONIZABLE: "#BOLD #V [GetPlayer.GetAdjectiveNoFormatting]#!#! [concept_tension] s #variable [STATE.GetCountry.GetName]#!: [STATE.GetOwner.GetTensionWithDesc( GetPlayer.Self )|+] (#BOLD [STATE.GetCountry.GetTensionWith( GetPlayer.Self )|-]#!)\n"
+ HOVER_STATE_TOOLTIP_COLONIZABLE: "#BOLD #V [GetPlayer.GetAltAdjectiveNoFormatting('ee')]#!#! [concept_tension|l] s #variable [STATE.GetCountry.GetAltAdjective('I')]#!: [STATE.GetOwner.GetTensionWithDesc( GetPlayer.Self )|+] (#BOLD [STATE.GetCountry.GetTensionWith( GetPlayer.Self )|-]#!)\n"
  HOVER_STATE_TOOLTIP_NON_COLONIZABLE: "#tooltippable #tooltip:[STATE.GetCountry.GetTooltipTag],COUNTRY_ATTITUDE_TOOLTIP [STATE.GetCountry.GetAttitudeTowards(GetPlayer.Self).GetName]#!#! (#tooltippable #tooltip:[STATE.GetCountry.GetTooltipTag],COUNTRY_ATTITUDE_SCORE_TOOLTIP [STATE.GetCountry.GetAttitudeTowards(GetPlayer.Self).CalcScore|+=0]#!#!) [concept_attitude] vůči [AddLocalizationIf(ObjectsEqual(GetPlayer.GetYouOrCountryName, 'vy'), 'vám')][AddLocalizationIf(Not(ObjectsEqual(GetPlayer.GetYouOrCountryName, 'vy')), GetPlayer.GetYouOrCountryName)]"
  HOVER_STATE_TRADE_LENS: "Součást [State.GetMarket.GetName]\n[concept_infrastructure] bilance: [State.GetInfrastructureBalance|0+=]"
  IG_LEADER_TRAIT: "Vlastnost vůdce - $TRAIT_NAME$"
