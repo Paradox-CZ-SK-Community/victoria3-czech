@@ -2,7 +2,7 @@
  1848.1.a: "Vinen! Ať žije republika! Ať žije [ROOT.GetCountry.GetName]!"
  1848.1.b: "Tohle není spravedlnost!"
  1848.1.d: "Radikální vláda uvěznila [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullName] a narychlo zorganizovala soudní proces. Očekávaný výsledek je vinen následovaný veřejnou popravou."
- 1848.1.f: ""Občan [ROOT.GetCountry.GetRuler.GetLastName]. [ROOT.GetCountry.GetAdjectiveNoFormatting] národ vás obviňuje z mnoha zločinů, které jste spáchali pro zachování své tyranie, abyste zničili jeho svobodu. Mezi nejotřesnějšími obviněními je spiknutí s cizími mocnostmi, aristokratická korupce a odpovědnost za krveprolití lidu. Jak se hájíte?""
+ 1848.1.f: ""Občane [ROOT.GetCountry.GetRuler.GetLastNameNoFormatting]. [ROOT.GetCountry.GetAdjectiveNoFormatting] národ vás obviňuje ze spáchání mnoha zločinů za účelem nastolení vaší tyranie a zničení jeho svobody. Mezi nejzávažnější z těchto obvinění patří spiknutí se zahraničními mocnostmi, šlechtická korupce a způsobení prolévání lidové krve. Jak se hlásíte?" # todo: CHANGED
  1848.1.t: "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstName] před soudem"
  1848.2.a: "Musíme nechat minulost za sebou."
  1848.2.b: "Nostalgie není na škodu."
@@ -93,7 +93,7 @@
  amazon.4.a: "Barbarský!"
  amazon.4.b: "[SCOPE.sCharacter('hunted_character').GetFirstName] nikdy nespal v lepší posteli."
  amazon.4.d: "Po návratu ze safari expedice byl [SCOPE.sCharacter('hunted_character').GetFullName] uvězněn na malém ostrově ve [SCOPE.sState('dangerous_game_state').GetName]. Tam [SCOPE.sCharacter('hunted_character').GetSheHe] byl loven jako zvíře [SCOPE.sCountry('hunter_country').GetAdjectiveNoFormatting] šlechticem [SCOPE.sCharacter('hunter_character').GetFullName]."
- amazon.4.f: ""Skvělé! Někdo z nás má poskytnout hody pro psy. Druhý bude spát v této velmi dobré posteli. V pozoru, [SCOPE.sCharacter('hunted_character').GetFirstName].""
+ amazon.4.f: ""Skvělé! Jeden z nás připraví hostinu pro lovecké psy. Druhý bude spát v této výborné posteli. Dávej pozor, [SCOPE.sCharacter('hunted_character').GetFirstNameNoFormatting]." # todo: CHANGED
  amazon.4.t: "Nejnebezpečnější hra"
  amazon_migration: "Migrace do Amazonie"
  amazon_theatre: "Teatro Amazonas"
@@ -313,7 +313,7 @@
  communism.3.t: "Vanguard postoupí"
  communism.4.a: "Matka anarchie miluje své syny."
  communism.4.d: "[ROOT.GetCountry.GetName] se rychle stává anarchistickou utopií. Chudoba byla úplně eliminována a bez třídní společnost založená na vzájemné pomoci se ujímá."
- communism.4.f: ""Jiná koncepce společnosti je v procesu formování. Pod jménem Anarchie se snaží o co nejúplnější rozvoj individuality spojený s nejvyšším rozvojem dobrovolné asociace ve všech jejích aspektech, ve všech možných stupních, pro všechny představitelné cíle."    
+ communism.4.f: ""Jiná koncepce společnosti je v procesu formování. Pod jménem Anarchie se snaží o co nejúplnější rozvoj individuality spojený s nejvyšším rozvojem dobrovolné asociace ve všech jejích aspektech, ve všech možných stupních, pro všechny představitelné cíle."
  communism.4.t: "Dobytí chleba"
  communism.5.a: "Neloajalita je zrada."
  communism.5.d: "Reakční prvky v politickém prostředí byly téměř zcela eradikovány nebo potlačeny. Vkůpní strana vládne nad všemi."
@@ -343,7 +343,7 @@
  communism_progress_from_characters_tt: "popularita [Concept('concept_character', '$concept_characters$')] podporujících [GetLawType('law_council_republic').GetName]"
  communism_progress_from_events_tt: "události a další účinky"
  communism_progress_from_interest_groups_tt: "[Concept('concept_interest_group','$concept_interest_groups$')] podporující [GetLawType('law_council_republic').GetName]"
- communism_progress_from_laws_tt: "#bold Policie#! a #bold Vnitřní záležitosti#! [Concept('concept_institution', '$concept_institutions$')]"
+ communism_progress_from_laws_tt: "úroveň #bold Pořádkových sil#! a #bold Vnitřních záležitostí#! [Concept('concept_institution', '$concept_institutions$')]" # todo: CHANGED
  communism_progress_from_loyalists_tt: "[Concept('concept_state', '$concept_states$')] s [Concept('concept_loyalist','$concept_loyalists$')]"
  communism_progress_from_movement_activism_tt: "[Concept('concept_activism', '$concept_activism_short$')] [GetIdeology('ideology_socialist').GetName], [GetIdeology('ideology_communist').GetName] a [GetIdeology('ideology_anarchist').GetName] [Concept('concept_political_movement','$concept_political_movements$')]"
  communism_progress_from_movement_support_tt: "[Concept('concept_political_movement_support', '$concept_political_movement_support_short$')] od [GetIdeology('ideology_socialist').GetName], [GetIdeology('ideology_communist').GetName], a [GetIdeology('ideology_anarchist').GetName] [Concept('concept_political_movement','$concept_political_movements$')]"
@@ -516,7 +516,7 @@
  generals.1.a: "[SCOPE.sCharacter('low_rank_general').GetFullName] si to zasloužil."
  generals.1.b: "[SCOPE.gsInterestGroup('low_rank_general_ig').GetName] nás nebude nutit."
  generals.1.d: "Skupina [SCOPE.gsInterestGroup('low_rank_general_ig').GetName] požaduje povýšení [SCOPE.sCharacter('low_rank_general').GetRankName] [SCOPE.sCharacter('low_rank_general').GetFullName], vyzdvihující [SCOPE.sCharacter('low_rank_general').GetHerHis] historii loajální a efektivní služby."
- generals.1.f: "Tolik medailí zdobilo [SCOPE.sCharacter('low_rank_general').GetHerHis] sako, že sotva bylo vidět látku pod nimi, ale to stále nestačilo. Hruď vyboulená hrdostí, generál se usmíval, když si [SCOPE.sCharacter('low_rank_general').GetSheHe] představovali pohled na [SCOPE.sCharacter('high_rank_general').GetLastName] tváři, když [SCOPE.sCharacter('high_rank_general').GetRankName] se dozvěděl o [SCOPE.sCharacter('low_rank_general').GetHerHis] bezprostředním povýšení; jejich rivalita byla legendární mezi důstojníky.\n\nNakonec [SCOPE.sCharacter('low_rank_general').GetSheHe] by měly mít [SCOPE.sCharacter('low_rank_general').GetHerHis] zasloužené."
+ generals.1.f: "Tak mnoho medailí zdobilo [SCOPE.sCharacter('low_rank_general').GetHerHis] sako, že sotva bylo vidět látku pod nimi, a přesto to pořád nestačilo. Hruď vystrčená pýchou, generál se usmál, když si [SCOPE.sCharacter('low_rank_general').GetSheHe] představoval výraz na tváři [SCOPE.sCharacter('high_rank_general').GetLastNameNoFormatting], až se [SCOPE.sCharacter('high_rank_general').GetRankName] dověděl o [SCOPE.sCharacter('low_rank_general').GetHerHis] blížícím se povýšení; jejich rivalita byla mezi důstojníky legendární.\n\nKonečně by [SCOPE.sCharacter('low_rank_general').GetSheHe] získal to, co [SCOPE.sCharacter('low_rank_general').GetHerHis] náleží." # todo: CHANGED
  generals.1.t: "Zasloužená povýšení"
  generic_law_advance: "Zákonná realizace pokročila"
  generic_law_debate_fail: "Návrh na přijetí zákona neuspěl"
@@ -607,7 +607,7 @@
  german_unification.2.a: "Za Německo!"
  german_unification.2.b: "Naše suverenita je nedotknutelná."
  german_unification.2.d: "Když je [SCOPE.sCountry('german_unification_candidate').GetName] nyní považován za jedinou realistickou možnost pro německou unifikaci, mnoho menších německých států se rozhodlo připojit k jejich praporu. Měli bychom se vzdát naší nezávislosti ve jménu větší německé jednoty?"
- german_unification.2.f: ""Připojením k této konfederaci s [SCOPE.sCountry('german_unification_candidate').GetName] se možná vzdáváme [ROOT.GetCountry.GetAdjectiveNoFormatting] suverenity, ale tímto pomáháme zajistit německou suverenitu. Duch doby je nepopiratelný; němečtí lidé touží po jednotě a [SCOPE.sCountry('german_unification_candidate').GetAdjectiveNoFormatting] se zdá být těmi, kteří to uskuteční. Odpírat nadcházející spojení německého lidu by bylo naprosto pošetilé.""
+ german_unification.2.f: ""Připojením se k této konfederaci s [SCOPE.sCountry('german_unification_candidate').GetNameNoFormatting] můžeme vzdát [ROOT.GetCountry.GetAdjectiveNoFormatting] suverenity, ale tím zároveň pomáháme zajistit německou suverenitu. Duch doby je nepopiratelný; německý lid touží po jednotě a [SCOPE.sCountry('german_unification_candidate').GetAdjectiveNoFormatting] se zdá být ten, kdo to uskuteční. Stavět se proti sjednocení německého lidu by byla čirá pošetilost." # todo: CHANGED
  german_unification.2.t: "Konfederace s [SCOPE.sCountry('german_unification_candidate').GetName]"
  german_unification.3.a: "Jmenovat Bismarcka kancléřem."
  german_unification.3.b: "Realpolitik není správná politika."
@@ -626,7 +626,6 @@
  german_unification.5.f: ""Německá konfederace? Konfederace je vtip, relikvie dávné éry, cizí nařízení! Aby Němci prospívali a zaujmuli své zasloužené místo v Evropě, musíme mít skutečný německý národ!""
  german_unification.5.t: "Německá národní identita"
  german_unification_popularity: "Německý sjednotitel"
- german_unifier_ruler: "Německý unifikátor"
  germany_aggressive_expansion: "Realpolitik odsouzena"
  god_worshippers: "Společnost uctívající Boha"
  good_and_cheap: "Dobré a levné"
@@ -635,24 +634,6 @@
  grand_exhibition_decision_custom_tooltip_2: "Dosud neproběhla Světová výstava"
  great_plains_settlement: "Osídlení amerického západu"
  great_purge_modifier: "Velká čistka"
- greece.1.a: "Náš nárok na tuto zemi je neopominutelný."
- greece.1.b: "Expanze není prozatím prioritou."
- greece.1.d: "Národní vzestup vytvořil irredentistickou touhu mezi našimi občany začlenit všechny země lidu [SCOPE.sCulture('greek_culture_scope').GetName] pod jednu řeckou státnost."
- greece.1.f: ""Odmítli jsme staletou otomanskou vládu, abychom vytvořili řecký stát. Ale to nestačí. Mnoho našich krajanských občanů stále žije pod utlačující nadvládou cizinců, toužící po zemi, kterou mohou nazývat svou. Tento sen lze uskutečnit pouze anexí všech řeckých zemí, což dosáhneme s či bez souhlasu jejich dobyvatelů.""
- greece.1.t: "Řecký stát"
- greece.2.a: "Byzantium bude obnoveno."
- greece.2.b: "Měli bychom oslavovat to, co již bylo dosaženo."
- greece.2.c: "Repatriovat naše lidi do Řecka."
- greece.2.d: "Expanze řeckého státu vedla některé z nejvášnivějších nacionalistů k navržení ještě ambicióznějšího projektu: obnovení Byzantské říše dobytím [SCOPE.sState('thrace_scope').GetStateRegion.GetName] a [SCOPE.sState('aydin_scope').GetStateRegion.GetName]."
- greece.2.f: ""To, co se včera zdálo být absurdním snem, je nyní na dosah. Fialový fénix opět povstane!""
- greece.2.t: "Megali Idea"
- greece.3.a: "Nejpřijatelnejší řešení."
- greece.3.d: "Díky pečlivým vyjednáváním, [SCOPE.sCountry('ionian_overlord').GetName] souhlasilo s postoupením [SCOPE.sCountry('ionian_country').GetName] [ROOT.GetCountry.GetName]."
- greece.3.f: ""Abychom podpořili dobrou vůli mezi našimi národy a posílili ducha [ROOT.GetCountry.GetAdjectiveNoFormatting] národa, [SCOPE.sCountry('ionian_overlord').GetRuler.GetPrimaryRoleTitle] velkoryse postoupil Jónské ostrovy. Naše přátelské protektoráty, pod nimiž ostrovy těží z naší skutečné a spravedlivé pomoci, se považují za ukončené a důvěřujeme, že lid těchto ostrovů bude prosperovat pod laskavou péčí našich důvěryhodných přátel.""
- greece.3.t: "Smlouva [SCOPE.sState('ionian_overlord_capital').GetCityHubName]"
- greek_nationalism: "Řecký nacionalismus"
- greek_state_complete_tt: "Vlastnit alespoň 7 řeckých domovských států"
- greek_state_possible_tt: "Vlastnit minimálně 3 řecké domovské státy"
  grim_realism: "Svěží realismus"
  hanover_union_ends: "Unie mezi Británií a Hannoverem skončí"
  has_adjacent_railway_tt: "Jakýkoli vlastněný sousední stát také splňuje tyto podmínky"
@@ -698,8 +679,6 @@
  home_affairs_cost_mod: "Efektivní vnitřní záležitosti"
  honorable_restoration_failed: "Ctihodná obnova selhala"
  hunted_down_and_defeated: "Zklamaní vrazi"
- ideology_austrian_hegemony: "Rakouské hegemonisty"
- ideology_austrian_hegemony_desc: "#lore Tato skupina věří, že Rakušané by měli tvořit sociální a politickou elitu země.#!"
  if_accepted_by_target_country_tt: "Pokud [SCOPE.sCountry('target_country').GetName] přijme:"
  ig_withering_away: "Mizící"
  improved_serial_killer_chance: "Policie bude mít větší pravděpodobnost, že chytí vraha"
@@ -721,9 +700,6 @@
  infiltrating_communist_parties: "Infiltrace stran"
  institutions_of_socialism_modifier: "Instituce socialismu"
  investigating_foreign_murder: "Dlouhé vyšetřování vraždy"
- ionian_islands_decision: "Připojit Jónské ostrovy"
- ionian_islands_decision_desc: "Iónské ostrovy se v průběhu napoleonských válek několikrát změnily v rukou, a po svém nezávislosti nebyly integrovány do řeckého státu. Pokud dokážeme získat souhlas jak iónských lidí, tak vlády jejich ochránců, můžeme být schopni vyjednat mírový přechod moci."
- ionian_islands_possible_tt: "Vlastnit alespoň 3 řecké domovské státy"
  iron_horse_raids: "Loupeže železného koně"
  is_in_civil_war_tt: "Je v [concept_civil_war]"
  is_meiji_japan: "Bylo dokončeno čestné vstupní záznam do obnovy."
@@ -802,8 +778,6 @@
  je_consolidate_colonial_rule_reason: "Hranice našich indických teritorií se osvědčila jako stála zdroj rizika. Jsme obklopeni nepořádnými politickými těmito zlovolnými panovníky, které mohou kdykoliv ohrozit integritu našeho území. Abychom zajistili bezpečnost našich jádrových majetků, ti domorodí panovníci, kteří se vyhýbají našim pravidlům se musí dostat pod kontrolu, a jakékoliv náznaky populární rezistence musí být rozdrceny, než se situace dostane mimo kontrolu.\n\nJak rozšiřujeme naši administrativu po Indii, dostaneme příležitost zřídit nové [Concept('concept_princely_state', '$concept_princely_states$')] pro podporu naší správy. Přílišná přímá kontrola nad množstvím půdy přivede [concept_liberty_desire] našich stávajících poddaných k nárůst."
  je_dialectics: "Oddělení filozofie"
  je_dialectics_reason: "I když filozofie existuje po staletí, je čas začít ji brát vážně jako obor. Mělo by být založeno plně financované filozofické oddělení na všech našich nejlepších vzdělávacích institucích."
- je_dual_monarchy: "Otázka Maďarska"
- je_dual_monarchy_reason: "Maďarský nacionalismus roste a maďarští elity se snaží o větší zastoupení ve vládě. Pokud dovolíme těmto hnutím stát se příliš mocnými, budeme možná muset udělat nepříjemný kompromis."
  je_electric_underground_railway: "Metropolitní železnice"
  je_electric_underground_railway_reason: "Jak se naše hlavní město stává stále hustěji osídleným, musíme vyvinout stále vynalézavější dopravní řešení. Naši přední inženýři se domnívají, že by bylo možné vybudovat podzemní železniční síť poháněnou elektřinou pod městem, což by občanům umožnilo rychle cestovat mezi klíčovými místy."
  je_end_strike_tt: "Protest končí"
@@ -821,8 +795,6 @@
  je_german_unification_idea_trigger_desc: "Dokončil myšlenku $je_german_unification_idea$ [concept_journal_entry]"
  je_german_unification_reason: "Nastal čas pro rozhodující krok k německé unifikaci. Jako jeden z předních německých států je naší povinností dosáhnout tohoto cíle."
  je_german_unification_sole_candidate_trigger_desc: "Nemá být žádná německá [Concept('concept_unification_candidate', '$concept_unification_candidates$')] kromě [GetPlayer.GetName]"
- je_greek_nationalism: "Řecký stát"
- je_greek_nationalism_reason: "Navzdory založení nezávislého řeckého státu, většina Řeků stále žije pod cizí vládou. Musí být učiněno usilovné úsilí, jak diplomaticky, tak vojenskými prostředky, o začlenění řeckých vlastí do naší vlády."
  je_heavenly_kingdom_main: "Nebeské království"
  je_heavenly_kingdom_main_reason: "Nebezpeční fanatikové inspirují nesouhlas po celé zemi. Představují extrémní hrozbu; pokud mobilizují dost lidí kolem svého kultu, pokusí se vytvořit své vlastní heretické království. Tato šílená individua musí být zastavena za všech okolností."
  je_is_not_on_strike_tt: "#bold Nemít#! protesty na pracovištích"
@@ -869,8 +841,8 @@
  je_patagonia: "Dobyti pouště "
  je_patagonia_reason: "Jižní dosah kontinentu zůstává mimo kontrolu jakéhokoli národa. Ačkoliv původní obyvatelstvo jistě neusnadní, je nezbytné, abychom tuto oblast zajistili dříve, než padne do rukou našich rivalů."
  je_peru_bolivia: "Peru-bolivijská konfederace"
- je_peru_bolivia_goal: "Udržujte bolivijskou kulturu [SCOPE.sCulture('south_andean_culture').GetName] a [SCOPE.sCulture('quechua_culture').GetName] typu [Concept('concept_subject', '$concept_subjects$')] a zároveň si uchovávejte legitimitu nad"
- je_peru_bolivia_reason: "Bolivijská intervence do peruánské občanské války v roce 1835 vedla k tomu, že peruánská území spadla pod kontrolu [SCOPE.sCountry('bolivia_scope').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('bolivia_scope').GetName]. Musíme udělat vše, co je v našich silách, abychom ochránili tuto křehkou konfederaci, takže plná a pravá unie mezi našimi národy se může stát možnou.\n\n@warning! I když usilujeme o konsolidaci"
+ je_peru_bolivia_goal: "[SCOPE.sCountry('bolivia_scope').GetNameNoFlag] úspěšně zachovává své [SCOPE.sCulture('south_andean_culture').GetName] a [SCOPE.sCulture('quechua_culture').GetName] [Concept('concept_subject', '$concept_subjects$')], přičemž udržuje [concept_legitimacy] nad #bold 50#! po dobu 10 let" # todo: CHANGED
+ je_peru_bolivia_reason: "Bolivijská intervence do peruánské občanské války v roce 1835 vedla k tomu, že území Peru přešlo pod kontrolu [SCOPE.sCountry('bolivia_scope').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('bolivia_scope').GetName]. [SCOPE.sCountry('bolivia_scope').GetNameNoFormatting] se snaží zachovat tuto křehkou Konfederaci, aby se mohla stát možná skutečná a úplná unie mezi jejími poddanými.\n\n@information! Ambice #bold Peruánsko-bolivijské konfederace#! lze odvrátit tím, že je donutíte propustit své [Concept('concept_subject', '$concept_subjects$')] dříve, než ukazatel postupu dosáhne #variable 100%#!.\n\n@warning! Zatímco #b $BOL$#! usiluje o konsolidaci vlády #bold Konfederace#!, bude vystavena zvýšené agresi svých sousedů." # todo: CHANGED
  je_qa_test: "QA TEST"
  je_qa_test_reason: "Miluji QA"
  je_realism: "Podporovat realistické umění"
@@ -1084,12 +1056,12 @@
  meiji.5.b: "[SCOPE.sCountry('japan_embassy_country').GetName] nás má co učit."
  meiji.5.c: "Nemáme co získat od [SCOPE.sCountry('japan_embassy_country').GetName]."
  meiji.5.d: "Jako součást diplomatického výletu na Západ, se naši důstojníci setkali s [SCOPE.sCharacter('japan_embassy_politician').GetFullName], vysoce postaveným politikem [SCOPE.sCountry('japan_embassy_country').GetAdjectiveNoFormatting]. Zajímali se o budování dobrých vztahů s nově otevírajícím se státem [ROOT.GetCountry.GetAdjectiveNoFormatting] a vypracovali několik smluv, do kterých bychom se měli zapojit s [SCOPE.sCountry('japan_embassy_country').GetName]."
- meiji.5.f: ""Národy dnes vypadají, že vedou vztahy s přátelstvím a zdvořilostí. Ale to je úplně povrchní; protože za touto fasádou přebývá vzájemný opovrhování a boj o nadvládu. Zatímco [ROOT.GetCountry.GetName] může mít nyní diplomatické vztahy s několika zeměmi, jeho přátelství s [SCOPE.sCountry('japan_embassy_country').GetAdjectiveNoFormatting] státem by mělo být tím nejbližším, kvůli opravdovému respektu, s jakým udržujeme právo na sebeurčení.""
+ meiji.5.f: ""Národy se dnes zdají jednat s vlídností a zdvořilostí. Ale je to zcela povrchní; za touto fasádou číhá vzájemné pohrdání a boj o nadřazenost. I když má [ROOT.GetCountry.GetNameNoFormatting] nyní diplomatické styky s řadou zemí, jeho přátelství s [SCOPE.sCountry('japan_embassy_country').GetAdjectiveNoFormatting] státem by mělo být nejbližší ze všech, kvůli skutečné úctě, kterou chováme k právu na sebevládu." # todo: CHANGED
  meiji.5.t: "Velvyslanec z [SCOPE.sCountry('japan_embassy_country').GetName]"
  meiji.6.a: "[SCOPE.sCountry('western_investor_country').GetAdjectiveNoFormatting] vynalézavost posílí [ROOT.GetCountry.GetName]."
  meiji.6.b: "Nemáme potřebu zahraničního vměšování do naší ekonomiky."
  meiji.6.d: "[SCOPE.sCharacter('western_investor_ig_leader').GetFullName], bohatý a mocný průmyslník z [SCOPE.sCountry('western_investor_country').GetName], považuje [ROOT.GetCountry.GetName] za lukrativní a neprozkoumaný trh. Na oplátku za různé politické výhody, které budou vykoupeny v neurčitém bodě času, je [SCOPE.sCharacter('western_investor_ig_leader').GetFullName] ochoten sdílet s námi průmyslovou technologii [SCOPE.sCharacter('western_investor_ig_leader').GetHerHis] domoviny."
- meiji.6.f: ""Jsou tady ti moji kolegové, kteří opovrhují zájmem o [ROOT.GetCountry.GetName], vyjadřujícím, že jeho nedostatek cenných přírodních zdrojů činí z něj neatraktivní místo pro podnikání. Já však vidím potenciál této země. Co dnes jsou neposkvrněné lesy a ladem ležící pole, zítra se promění v prosperující městské centra, udusující se zdravý smog moderního průmyslu.""
+ meiji.6.f: ""Mezi mými kolegy jsou tací, kdo pohrdají zájmem o [ROOT.GetCountry.GetNameNoFormatting], domnívajíce se, že jeho nedostatek cenných přírodních zdrojů z něj činí neatraktivní místo pro obchod. Já však v této zemi vidím potenciál. To, co jsou dnes panenské lesy a ladem ležící pole, se zítra stanou kvetoucími městskými centry, dusícími se zdravým smogem moderního průmyslu." # todo: CHANGED
  meiji.6.t: "[SCOPE.sCountry('western_investor_country').GetAdjectiveNoFormatting] investice"
  meiji_favored_ig: "Oblíbený císařem"
  meritocracy: "Meritokracie"
@@ -1116,7 +1088,6 @@
  modifier_second_crusade_against_manchu: "Pozornosti vůči padlé dynastii"
  modifier_springtime_of_the_peoples: "Jaro národů"
  monarchist_nostalgia: "Beznadějná nostalgie"
- move_greeks_tt: "Všichni řečtí obyvatelé se přestěhují do našeho hlavního státu"
  movement_investigation_isolation: "Vyšetřování vraždy"
  munitions_modifier: "Muniční mánie"
  mustard_gas: "Hořčičný plyn"
@@ -1242,7 +1213,7 @@
  oregon.2.t: "Sporná oregonská hranice"
  oregon.3.a: "Velmi přátelské jednání."
  oregon.3.d: "[SCOPE.sCountry('britain_scope').GetName] souhlasilo s našimi rozumnými podmínkami a postoupilo kontrolu nad [SCOPE.sState('washington_scope').GetName], [SCOPE.sState('oregon_scope').GetName] a [SCOPE.sState('idaho_scope').GetName] státu [ROOT.GetCountry.GetName]."
- oregon.3.f: ""Současná smlouva má být ratifikována [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetName], radou a souhlasem Senátu, a důsledky budou vyměněny v Londýně, po uplynutí šesti měsíců od této datum, nebo dříve, pokud to bude možné.""
+ oregon.3.f: ""Tuto smlouvu ratifikuje [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetNameNoFormatting], po poradě a se souhlasem jejího Senátu, a ratifikace budou vyměněny v Londýně po uplynutí šesti měsíců od tohoto dne, nebo dříve, pokud to bude možné." # todo: CHANGED
  oregon.3.t: "Oregonská smlouva"
  oregon.4.a: "Pokud to nechtějí předat, musíme to zabavit silou."
  oregon.4.d: "[SCOPE.sCountry('britain_scope').GetName] odmítl náš rozumný kompromis ohledně sporu o hranici v Oregonu. Nárok [ROOT.GetCountry.GetName] na toto území je nesporný, a tak může být násilnější přechod moci nevyhnutelný."
@@ -1257,7 +1228,7 @@
  our_place_on_the_world_stage: "Místo na světové scéně"
  outsourcing_anger: "Strach z koloniálního outsourcingu"
  panama_canal_construction_available: "Nyní je možné vybudovat Panamský průplav v Panamě"
- panama_canal_purchase_available: "Rozhodnutí 'Získat půdu v Panamě' je nyní k dispozici"
+ panama_canal_purchase_available: "The #b $panama_canal_purchase$#! [concept_decision] je nyní k dispozici" # todo: CHANGED
  panama_purchase: "Panamský nákup"
  panama_sale: "Panamský prodej"
  pandemic_response.tt: "Zvolíme, jak reagovat na pandemii.\nNebudeme moci zvolit jinou reakci po dobu 6 měsíců."
@@ -1587,7 +1558,7 @@
  strikebreakers_called_off: "Zatčení stávkokazové"
  successful_strike_action: "Úspěšná akce stávky"
  suez_canal_construction_available: "Nyní je možné vybudovat Suezký kanál v Sinaji"
- suez_canal_purchase_available: "Rozhodnutí 'Získat půdu v Sinaji' je nyní dostupné"
+ suez_canal_purchase_available: "The #b $suez_canal_purchase$#! [concept_decision] je nyní k dispozici" # todo: CHANGED
  suez_purchase: "Nákup Suezu"
  suez_sale: "Prodej Suezu"
  suppressed_secret_societies: "Potlačené tajné společnosti"
@@ -1690,7 +1661,6 @@
  transfers_treasury_to_eic_diplo_tt: "Obsah [SCOPE.sCountry('target_country').GetName][concept_treasury] (@money![SCOPE.sCountry('target_country').GetGoldReserves|K]) je převeden na [ROOT.GetCountry.GetName]"
  transfers_treasury_to_eic_tt: "Obsah [ROOT.GetCountry.GetName][concept_treasury] (@money![ROOT.GetCountry.GetGoldReserves|K]) se převádí na [ROOT.GetCountry.GetOverlord.GetName]"
  treatment_expenses_modifier: "Psychologické ošetření"
- treaty_of_london_event_tt: "Jónske ostrovy budou anektovány"
  tunguska.1.a: "Fascinující, ale nepodstatné."
  tunguska.1.b: "To si žádá vědecké zkoumání."
  tunguska.1.c: "Je to znamení!"
@@ -1759,3 +1729,14 @@
  yan_xishan_thought_mod: "Unifikující myšlenka"
  je_age_of_princes_is_ethiopia: "Vytvořili jste #b Etiopii#! (viz kartu [concept_nation_formation] ve vašem #b deníku#!)"
  is_not_in_civil_war_tt: "Není #b zapojen# do [Concept('concept_civil_war','občanské války')]"
+ communism_progress_from_no_laws_tt: "nedostatek #bold Policing#! nebo #bold Home Affairs#! [Concept('concept_institution', '$concept_institutions$')]" # todo: NEW TRANSLATION
+ je_peru_bolivia_restorer_victory: "K dosažení vítězství #b Restorer#!:\n" # todo: NEW TRANSLATION
+ je_peru_bolivia_on_restorer_victory: "Při vítězství #b Restorer#!:\n$EFFECT$" # todo: NEW TRANSLATION
+ je_peru_bolivia_confederation_victory: "K dosažení vítězství #b Confederation#!:\n" # todo: NEW TRANSLATION
+ je_peru_bolivia_on_confederation_victory: "Při vítězství #b Confederation#!:\n$EFFECT$" # todo: NEW TRANSLATION
+ generic_revolt_carlist: "Carlist $NAME$" # todo: NEW TRANSLATION
+ generic_revolt_carlist_adj: "Carlist $ADJECTIVE$" # todo: NEW TRANSLATION
+ generic_revolt_miguelist: "Miguelist $NAME$" # todo: NEW TRANSLATION
+ generic_revolt_miguelist_adj: "Miguelist $ADJECTIVE$" # todo: NEW TRANSLATION
+ generic_revolt_slave_revolt: "$ADJECTIVE$ povstání otroků" # todo: NEW TRANSLATION
+ generic_revolt_slave_revolt_adj: "Revoluční $ADJECTIVE$" # todo: NEW TRANSLATION

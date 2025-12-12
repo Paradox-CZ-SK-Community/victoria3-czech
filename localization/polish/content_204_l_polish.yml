@@ -96,13 +96,13 @@
  andean_federation.2.f: "Pero vyjasnilo papír. Klapnutí kladiva a oznámení poté. Potlesk se rozlehl po celém kontinentu, od nejvyšších vrcholů po nejhlubší údolí. Ačkoliv se nikdy nedožil, velký sen Simóna Bolívara se konečně splnil. Sen o sjednocené hispanofonní jihoamerické federaci, neochvějné a pravé. Nechť federace And stane pevně jako samy hory."
  andean_federation.2.t: "Velká unifikace"
  andean_federation_b_tt: "The"
- andean_federation_reqs_tt: "Byl vytvořen #variable Peru-Bolivijská konfederace#!, #variable Río de la Plata#! nebo #variable Gran Kolumbie#!, nebo více než #variable 10#! [Concept('concept_incorporated_state','$concept_incorporated_states$')] v #bold Jižní Americe#!"
+ andean_federation_reqs_tt: "Vytvořeno #v $PBC$#!, #v $PLT$#! nebo #v $GCO$#!" # todo: CHANGED
  andean_major_formation_available_tt: "The"
  anl_more_leftists_tt: "Levné postavy budou mnohem pravděpodobněji objevovat, dokud #variable Nová republika#! nebude úspěšně dokončena"
  anticommunists_more_fascist_tt: "[SCOPE.gsInterestGroup('anticommunist_ig').GetName] budou o něco pravděpodobnější vybírat #variable fašistické#! postavy"
  armed_forces_positivists_large_tt: "Skupina [SCOPE.gsInterestGroup('armed_forces_ig').GetName] bude mnohem pravděpodobněji vybírat pozitivistické vůdce, když [Concept('concept_political_movement_pressure', '$concept_political_movement_pressured_short$')] z využitelného [concept_political_movement]"
  armed_forces_positivists_tt: "Skupina [SCOPE.gsInterestGroup('armed_forces_ig').GetName] bude pravděpodobněji vybírat pozitivistické vůdce v budoucnu."
- bol_no_revolutions_tt: "Žádné z našich [SCOPE.sCulture('south_andean_culture').GetName] a [SCOPE.sCulture('quechua_culture').GetName] [Concept('concept_subject', '$concept_subjects$')] momentálně nejsou v [concept_civil_war]"
+ bol_no_revolutions_tt: "Žádný z [Concept('concept_subject', '$concept_subjects$')] [SCOPE.sCulture('south_andean_culture').GetName] a [SCOPE.sCulture('quechua_culture').GetName] v [SCOPE.sCountry('bolivia_scope').GetNameNoFlag] se v současné době nenachází v [concept_civil_war]" # todo: CHANGED
  bp1_misc.3.a: "Brazílie se vyvíjí s dobou."
  bp1_misc.3.d: "Vliv filozofie pozitivismu na [ROOT.GetCountry.GetAdjective] společnost se rozšířil až k postojům [SCOPE.gsInterestGroup('landowners_ig').GetName] vůči státní moci."
  bp1_misc.3.f: "Slogan již předtím viděl, ale nikdy takto. Byl vyražen ve zlatě na bohatém mramoru, na dveřích domu plantáže, třpytící se z procesu jeho instalace.\n\n\"Láska jako princip a pořádek jako základ; pokrok jako cíl.\""
@@ -253,8 +253,6 @@
  has_rejected_la_plata_tt: "Odmítl návrh obnovit Rio de la Plata"
  ideology_integralist: "Integralistický"
  ideology_integralist_desc: "#lore Tento vůdce podporuje tradicionalistické katolické hodnoty v řízení a odmítá konvenční konzervatismus a parlamentarismus."
- ideology_land_reformer: "Reformátor země"
- ideology_land_reformer_desc: "Tato postava se zavazuje zlomit moc velkých vlastníků půdy a přerozdělit půdu, aby ji obdělávali běžní lidé."
  ideology_modernizer: "Modernizátor"
  ideology_modernizer_desc: "#lore Tato skupina se silně investuje do modernizace a centralizace národa pod racionálními linkami.#!"
  ideology_modernizer_leader: "Modernizátor"
@@ -287,15 +285,15 @@
  je_positivist_movement_suppress_positivism_button_desc: "Potlačit činnost pozitivistických organizací, aby se zabránilo šíření tohoto nebezpečného filozofického tendence."
  je_south_american_national_identity_emergence: "Národ [ROOT.GetCountry.GetAdjective]"
  je_south_american_national_identity_emergence_goal: "Pokrok vyvstávající [ROOT.GetCountry.GetAdjectiveNoFormatting]"
- je_south_american_national_identity_emergence_reason: "Nezávislost [ROOT.GetCountry.GetName] od Španělska vyvolala šumění nacionalismu po celé zemi. Jak náš národ postupuje do budoucnosti, naši intelektuálové se snaží formulovat novou identitu, která bude výhradně [SCOPE.sCulture('new_national_culture').GetName].\n\nNásledující podmínky přispějí k procesu vytváření našeho"
- je_south_american_national_identity_emergence_special_tooltip: "Tato míra je určena následujícím:\n#variable [Country.MakeScope.Var('national_identity_progress_from_igs').GetValue|+=]#! z [concept_clout] z [GetIdeology('ideology_patriotic').GetName] a [GetIdeology('ideology_liberal').GetName] [Concept('concept_interest_group','$concept_interest_groups$')]\n#variable [Country.MakeScope.Var('national_identity_progress_from_wars').GetValue|+=]#! z probíhajících [Concept('concept_war','$concept_wars$')]\n#variable [Country.MakeScope.Var('national_identity_progress_from_universities').GetValue|+=]#! z [GetBuildingType('building_university').GetName], [GetBuildingType('building_arts_academy').GetName], a [GetBuildingType('building_government_administration').GetName] budov\n#variable [Country.MakeScope.Var('national_identity_progress_from_prestige').GetValue|+=]#! z [concept_prestige]\n#variable [Country.MakeScope.Var('national_identity_progress_from_homelands').GetValue|+=]#! z vlastnění ne-[Concept('concept_primary_cultures','$concept_primary_culture$')] [Concept('concept_homeland','$concept_homelands$')]\n#variable [Country.MakeScope.Var('national_identity_progress_var_add').GetValue|+=]#! z jiných účinků"
+ je_south_american_national_identity_emergence_reason: "Nezávislost [ROOT.GetCountry.GetName] na Španělsku vyvolala náznaky nacionalismu po celé zemi. Jak národ kráčí do budoucnosti, naši intelektuálové se snaží formulovat novou identitu, která bude výrazně a výhradně [SCOPE.sCulture('new_national_culture').GetName].\n\nNásledující podmínky podpoří proces rozvíjení naší #bold národní identity#!:\n• [GetIdeology('ideology_patriotic').GetName] nebo [GetIdeology('ideology_liberal').GetName] [Concept('concept_interest_group','$concept_interest_groups$')], které jsou [concept_in_government] nebo mají vysoký [concept_clout]\n• Probíhající [Concept('concept_war','$concept_wars$')] s vysokou [concept_war_support]\n• Budovy [GetBuildingType('building_university').GetName], [GetBuildingType('building_art_academy').GetName] a [GetBuildingType('building_government_administration').GetName] s vysokým [concept_occupancy]\n• Vysoké národní [concept_prestige]\n• Nevlastnit [Concept('concept_homeland','$concept_homelands$')] neodpovídající [SCOPE.sCulture('old_national_culture').GetName]\n\nOčekává se, že postup tohoto #bold národního probuzení#! se zvýší o #tooltippable;tooltip:[Country.GetTooltipTag],je_south_american_national_identity_emergence_special_tooltip [Country.MakeScope.Var('national_identity_progress_var_next').GetValue|+=]#! příští měsíc.\n\n@warning! Dokončení tohoto [concept_journal_entry] vyloučí [ROOT.GetCountry.GetName] z usilování o #bold větší nadnárodní ambice#!" # todo: CHANGED
+ je_south_american_national_identity_emergence_special_tooltip: "Rychlost je určena těmito položkami:\n#variable [Country.MakeScope.Var('national_identity_progress_from_igs').GetValue|+=]#! z [concept_clout] [GetIdeology('ideology_patriotic').GetName] a [GetIdeology('ideology_liberal').GetName] [Concept('concept_interest_group','$concept_interest_groups$')]\n#variable [Country.MakeScope.Var('national_identity_progress_from_wars').GetValue|+=]#! z probíhajících [Concept('concept_war','$concept_wars$')]\n#variable [Country.MakeScope.Var('national_identity_progress_from_universities').GetValue|+=]#! z budov [GetBuildingType('building_university').GetName], [GetBuildingType('building_art_academy').GetName] a [GetBuildingType('building_government_administration').GetName]\n#variable [Country.MakeScope.Var('national_identity_progress_from_prestige').GetValue|+=]#! z [concept_prestige]\n#variable [Country.MakeScope.Var('national_identity_progress_from_homelands').GetValue|+=]#! z vlastnictví ne-[Concept('concept_primary_cultures','$concept_primary_culture$')] [Concept('concept_homeland','$concept_homelands$')]\n#variable [Country.MakeScope.Var('national_identity_progress_var_add').GetValue|+=]#! z jiných efektů" # todo: CHANGED
  je_the_krakow_uprising: "Krakovské povstání"
  je_the_krakow_uprising_annex_button: "Obsadit Krakov"
  je_the_krakow_uprising_annex_button_desc: "Obsadíme Svobodné Město Krakov, abychom je přetvořili v nedílnou součást našeho státu"
  je_the_krakow_uprising_reason: "Revoluce [concept_revolution] trhající svobodné město [SCOPE.sCountry('krakow_scope').GetName] hrozí vyvoláním další vlny polské nacionalistické agitační v Galicii. Město musí být uklidněno a začleněno jako plnohodnotná součást [ROOT.GetCountry.GetName]."
  je_the_red_scare: "Rudý postrach"
  je_the_red_scare_reason: "Vznik mocného komunistického režimu v cizí zemi vyvolal obavy mezi některými segmenty populace, že [ROOT.GetCountry.GetName] bude dalším, kdo padne do komunismu.\n\nDomácí politické proudy se levicovými agendami se dostaly pod dohledem protikomunistických sil, protože jsou obviňovány z toho, že se staly předzvěstí krvavé revoluce, a agenti cizích mocností."
- je_war_of_the_confederation: "Peruánsko-bolivijská konfederace"
+ je_war_of_the_confederation: "Válka Konfederace" # todo: CHANGED
  je_war_of_the_confederation_reason: "Se svou větší populací evropského původu, nevyužitými zdroji a strategickou polohou představuje solidní #bold Peru-Bolivijská konfederace#! existenciální hrozbu pro [SCOPE.sCountry('home_country_scope').GetAdjective] národní zájmy. Abychom zachovali vyvážení moci, #bold konfederace#! musí být buď udělána přátelskou k našemu státu nebo násilně rozložena.\n\nAmbice #bold Peru-Bolivijské konfederace#! mohou být odvráceny tím, že je donutíme uvolnit své [Concept('concept_subject', '$concept_subjects$')] dříve, než pokroková lišta dosáhne #variable 100%#!."
  krakow.1.a: "Musíme okamžitě znovu získat kontrolu nad Krakovem."
  krakow.1.b: "Jsme vázáni zachovat status Vídeňské smlouvy."
@@ -310,7 +308,7 @@
  krakow_uprising_happened_tt: "V Krakově proběhla nedávná [concept_revolution]"
  la_plata.1.a: "La Plata bude jedno."
  la_plata.1.b: "Naši sousedé se již rozhodli pro sebesvobodnost."
- la_plata.1.d: "Nedávný vzestup nacionalismu v [ROOT.GetCountry.GetName] vyvolal nostalgii po solidaritě válek za nezávislost. Výzvy k obnovení Spojených provincií Río de la Plata začaly znít v [ROOT.GetCountry.GetNameNoFormatting]."
+ la_plata.1.d: "Nedávný návrat vojenské síly [ROOT.GetCountry.GetName] vyvolal nostalgii po solidaritě z válek za nezávislost. Výzvy k obnovení Spojených provincií Río de la Plata začaly znít v [ROOT.GetCountry.GetNameNoFormatting]." # todo: CHANGED
  la_plata.1.f: "\"Je to opravdu tak hloupé, otče? La Plata je velké místo a máme větší šikany kolem nás. Budeme potřebovat jeden druhého dříve, než se zdá?\"\n\n\"Ne. Poprvé, když se to stalo, La Plata se stala příliš malou pro nás všechny. Jeden z těch větších šikan demoloval naše dveře s ním. Děláme je malými a chytrými, ne velkými a hádavými.\"\n\n\"Vaši bratři selhali, otče. Selhali jste také. Ale můžeme se poučit z vašich chyb a udělat to správně tentokrát.\""
  la_plata.1.t: "Duch Tucumánu"
  la_plata.2.a: "Nechť svatá svoboda a jednota vládnou!"
@@ -487,7 +485,7 @@
  notification_sa_culture_genesis_desc: "[SCOPE.sCountry('south_america_nation_scope').GetName], dříve známý jako [SCOPE.sCulture('old_national_culture').GetName] národ, zažil široce rozšířené kulturní probuzení, přecházející k odlišnému [SCOPE.sCulture('new_national_culture').GetName] kultuře."
  notification_sa_culture_genesis_name: "Genese kultury [SCOPE.sCulture('new_national_culture').GetName]"
  notification_sa_culture_genesis_tooltip: "#header $notification_sa_culture_genesis_name$#!\n$TOOLTIP_DELIMITER$\n$notification_sa_culture_genesis_desc$"
- peru_bolivia_complete_tt: "Účinky dokončení budou záviset na tom, zda jsme se rozhodli #bold rozložit#! nebo #bold spřátelit#! s #bold Peru-Bolivijskou konfederací#!"
+ peru_bolivia_complete_tt: "Důsledky budou záviset na tom, zda si tato země zvolila #bold rozpustit#! nebo #bold spřátelit se s#! #bold Peru-Bolivian Confederation#!" # todo: CHANGED
  peru_bolivia_completion_nonbolivia_tt: "Peru-Bolivijská konfederace se [Concept('concept_unification', 'Sjednotit')] do jediné [concept_country]"
  peru_bolivia_dead_tt: "[SCOPE.sCountry('bolivia_scope').GetName] neexistuje, nebo ztratila všechny své [SCOPE.sCulture('south_andean_culture').GetName] a [SCOPE.sCulture('quechua_culture').GetName] [Concept('concept_subject', '$concept_subjects$')]"
  peru_bolivia_events.1.a: "Podpis pro Unii!"
@@ -647,7 +645,7 @@
  red_scare.2.a: "Komunisti přicházejí pro naše ženy!"
  red_scare.2.b: "Tato výpověď se zdá být vysoce podezřelá."
  red_scare.2.d: "Po vládních slyšeních o aktivitách komunistického režimu v [SCOPE.sCountry('red_scare_target_nation').GetName] noviny po celé [ROOT.GetCountry.GetName] hlásily senzace o všech dospělých ženách v [SCOPE.sCountry('red_scare_target_nation').GetName], které byly znárodněny jako společné vlastnictví."
- red_scare.2.f: ""Viděl jsem to na vlastní oči, než jsem utekl. Rudé úřady nařídily kolektivní orgie, při nichž se nebere ohled na ctnostné ženy. Ministerstvo svobodné lásky je nutí se jich všechny účastnit pod hrozbou bajonetu."\n\n"Pro upřesnění, říkáte, že dívka v [SCOPE.sCountry('red_scare_target_nation').GetName], která dosáhne osmnácti let, se okamžitě stává státním majetkem?"\n\n"Ano, ano. Jejich jména jsou vyvěšena na nástěnce v jejich městech a všichni způsobilí muži si je mohou vzít za manželky podle libosti, kolik chtějí..."\n\n"Ale i vdané musí stále chodit na ty orgie?"
+ red_scare.2.f: ""Viděl jsem to sám, než jsem utekl. Rudé úřady nařídily kolektivní orgie, ve kterých se nedbá na ctnostné ženy. Ministerstvo svobodné lásky je nutí se jich všech zúčastnit pod hrozbou bodáku."\n\n"Aby bylo jasno, tvrdíte, že dívka v [SCOPE.sCountry('red_scare_target_nation').GetNameNoFormatting], po dovršení osmnácti let, okamžitě se stává státním majetkem?"\n\n"Ano, ano. Jejich jména jsou umístěna na nástěnce v jejich městech, a všem způsobilým mužům je dovoleno si je vzít dle libosti, kolik chtějí..."\n\n"Ale i když jsou vdané, musí stále chodit na orgie?" # todo: CHANGED
  red_scare.2.t: "Nacionalizace žen"
  red_scare.20.a: "Naše národ bude zabezpečen."
  red_scare.20.b: "Musíme se litovat za své vlastní excesy."
@@ -698,3 +696,11 @@
  usa_two_party_system: "Americký dvoustranný systém"
  vargas_out_tt: "Prezident [SCOPE.sCountry('brazil_scope').GetName] není spojen s [SCOPE.gsInterestGroup('pb_scope').GetName]"
  from_northern_democrats: "Od severních demokratů"
+ all_restorers_lose_prestige_tt: "Všechny zúčastněné [Concept('concept_country', '$concept_countries$')] nepřátelské ke #b Konfederaci#! ztratí [concept_prestige], a získají [Concept('concept_radical', '$concept_radicals$')]" # todo: NEW TRANSLATION
+ peru_bolivia_events.9.t: "Samota" # todo: NEW TRANSLATION
+ peru_bolivia_events.9.d_1: "Závažné územní ztráty zredukovaly [ROOT.GetCountry.GetName] na území [GetGeographicRegion('geographic_region_bolivia').GetName]. Protože zůstala zachována pouze polovina jejích členů, Konfederace se stala zbytečnou." # todo: NEW TRANSLATION
+ peru_bolivia_events.9.d_2: "Závažné územní ztráty zredukovaly [ROOT.GetCountry.GetName] na území [GetGeographicRegion('geographic_region_peru').GetName]. Protože zůstala zachována pouze polovina jejích členů, Konfederace se stala zbytečnou." # todo: NEW TRANSLATION
+ peru_bolivia_events.9.f_1: "Byla obsazena pouze čtvrtina křesel Generálního kongresu. Polovina sálu, kterou dříve obsazovali bolivijští zástupci, byla ponechána bez osvětlení — čímž se ušetřily svíčky. V chudém ostrůvku světla, který tvořil peruánský kvadrant, senátoři ústně schválili pravidla zasedání.\n\nRáno byl návrh předložen poloprázdnému výboru. Odpoledne prošel sněmovnou. Večer byl položen na stůl [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] a Konfederace přestala existovat." # todo: NEW TRANSLATION
+ peru_bolivia_events.9.f_2: "Byla obsazena pouze čtvrtina křesel Generálního kongresu. Polovina sálu, kterou dříve obsazovali bolivijští zástupci, byla ponechána bez osvětlení — čímž se ušetřily svíčky. V chudém ostrůvku světla, který tvořil peruánský kvadrant, senátoři ústně schválili pravidla zasedání.\n\nRáno byl návrh předložen poloprázdnému výboru. Odpoledne prošel sněmovnou. Večer byl položen na stůl [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] a Konfederace přestala existovat." # todo: NEW TRANSLATION
+ peru_bolivia_events.9.a: "$BOL$ je vše, co zůstalo." # todo: NEW TRANSLATION
+ peru_bolivia_events.9.b: "$PEU$ je vše, co zůstalo." # todo: NEW TRANSLATION

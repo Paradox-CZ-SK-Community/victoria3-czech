@@ -141,15 +141,7 @@
  great_reformer.1.t: "Velký reformátor"
  has_alaska_sale_cooldown_tt: "Tuto akci ještě v minulém roce nevyužil#!"
  has_formed_china_tt: "Vytvořil národ #v $CHI$#!"
- ideology_colonialist: "Kolonialisté"
- ideology_colonialist_desc: "Tato skupina představuje koloniální zájem závislý na neustálém získávání bohatství z jejich území a upřednostňuje udržování tohoto systému před nezávislým ekonomickým rozvojem."
  ideology_not_too_close_tt: "Ideologie této postavy není příliš podobná té naší [concept_ruler]"
- ideology_sovereignist: "Suverénní"
- ideology_sovereignist_desc: "Tato skupina se staví proti represivním opatřením, uplatňovaným na ni koloniálními úřady, a preferuje politiky, které slouží k dosažení národní samostatnosti."
- ideology_sovereignist_leader: "Suverénní"
- ideology_sovereignist_leader_desc: "Tento vůdce se staví proti represivním opatřením uplatňovaným na jejich národ koloniálními úřady, preferující politiky, které slouží k dosažení národní samostatnosti."
- ideology_utopian: "Utopistická"
- ideology_utopian_desc: "Tento vůdce usiluje o vytvoření socialistické společnosti založené na principech egalitarismu, racionalismu a společném vlastnictví."
  inherit_characters_from_athabaska_tt: "Dědí všechny [Concept('concept_character', '$concept_characters$')] z #v $ATB$#!"
  is_in_other_market_tt: "Je [concept_junior_partner] v jiném [concept_customs_union] země"
  is_italy_tt: "Vytvořil národ #bold Itálie#!"
@@ -289,7 +281,6 @@
  modifier_fall_of_germany: "Rýn Fiasco"
  modifier_george_i: "Hvězdný suverén"
  modifier_government_accident_attempt: "Pokus o neúspěšný atentát"
- modifier_great_reformer: "Car-Osvoboditel"
  modifier_great_reforms_complete: "Velké reformy dokončeny"
  modifier_india_company_rule: "Zpráva společnosti"
  modifier_india_crown_rule: "Krále"
@@ -342,9 +333,6 @@
  notification_nationalism_national_agitation_occurred_desc: "[SCOPE.sCulture('agitation_culture').GetName] nacionalistické nepokoje se ostrě zvýšily v [SCOPE.sState('agitation_state').GetName]. Agenti [SCOPE.sCountry('agitation_sponsor').GetName] byli podezřelí ze podněcování tohoto podvratného jednání."
  notification_nationalism_national_agitation_occurred_name: "[SCOPE.sCulture('agitation_culture').GetName] Nepokoje v [SCOPE.sState('agitation_state').GetName]"
  notification_nationalism_national_agitation_occurred_tooltip: "#header $notification_nationalism_national_agitation_occurred_name$#!\n$TOOLTIP_DELIMITER$\n$notification_nationalism_national_agitation_occurred_desc$"
- notification_nationalism_unlock_national_agitation_desc: "S rozvojem nacionalismu v naší zemi se zpřístupnila interakce postavy „Podnítit národní agitaci“ pro [Concept('concept_agitator','$concept_agitators$')|l]."
- notification_nationalism_unlock_national_agitation_name: "Národní agitace dostupná"
- notification_nationalism_unlock_national_agitation_tooltip: "#header $notification_nationalism_unlock_national_agitation_name$#!\n$TOOLTIP_DELIMITER$\n$notification_nationalism_unlock_national_agitation_desc$"
  notification_sabotage_decision_agitation_occurred_desc: "Inspirováni výzvami k italskému sjednocení od [SCOPE.sCountry('saboteur_country').GetName], [Concept('concept_activism', '$concept_activism_short$')] [SCOPE.sPoliticalMovement('italian_nationalist_movement').GetName] vzrostla."
  notification_sabotage_decision_agitation_occurred_name: "Pro-sjednocovací nepokoje zasáhly [SCOPE.sCountry('victim_country').GetName]"
  notification_sabotage_decision_agitation_occurred_tooltip: "#header $notification_sabotage_decision_agitation_occurred_name$#!\n$TOOLTIP_DELIMITER$\n$notification_sabotage_decision_agitation_occurred_desc$"
@@ -501,3 +489,16 @@
  would_be_accepted_under_national_supremacy_tt: "Kultura tohoto [concept_pop] má společné jak [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] tak [Concept('concept_language_trait','$concept_language_trait_short$')] [Concept('concept_discrimination_trait','$concept_discrimination_trait_short$')] s některou z [concept_primary_cultures] této země"
  yangban_dissolution_tt: "Třída [SCOPE.gsInterestGroup('yangban_scope').GetName] bude nahrazena #bold vlastníky půdy#!"
  corporate_state.1.d1: "Některé skupiny [SCOPE.gsInterestGroup('trade_unions_ig').GetName] vyjádřily podporu oficiálnímu uznání role práce v našem státě. Slouží jako cenná protiváha proti komunistické opozici."
+ sweden_migration.1.t: "Švédská migrace" # todo: NEW TRANSLATION
+ sweden_migration.1.d: "Špatné podmínky v [SCOPE.sCountry('migration_country').GetName] učinily migraci do [SCOPE.sState('migration_target_state').GetName] velmi atraktivní alternativou. Tisíce [SCOPE.sCulture('migration_culture').GetName] lidí vyplulo přes moře do Ameriky." # todo: NEW TRANSLATION
+ sweden_migration.1.f: "[SCOPE.sCulture('migration_culture').GetNameNoFormatting] rolníci vystupují z poslední lodi. Desítky tisíc jich už přišly dříve, další desítky tisíc jsou na cestě. \nPro Švédy se Minnesota jevila jako pozemský ráj; její tmavá a úrodná půda dávala úrody dostatečné k tomu, aby zahnala nouzi a potěšila srdce." # todo: NEW TRANSLATION
+ sweden_migration.1.a: "Právě teď potřebujeme lepší život." # todo: NEW TRANSLATION
+ sweden_migration.1.b: "New York nám bohatě postačí." # todo: NEW TRANSLATION
+ sweden_migration: "Švédská migrace" # todo: NEW TRANSLATION
+ sweden_law.1.t: "Rasová biologie" # todo: NEW TRANSLATION
+ sweden_law.1.d: "[SCOPE.sCountry('sweden_law_country').GetAdjective] státní institut pro rasovou biologii byl pověřen hledáním příčin kriminality, alkoholismu a duševních problémů. Nároky institutu přiměly Riksdag k přijetí politik, které kontrolují porodnost [SCOPE.sCulture('sweden_law_culture').GetName] lidí." # todo: NEW TRANSLATION
+ sweden_law.1.f: "V přednáškových sálech v Uppsale profesoři zvedají posuvky jako by byly věštci. Rozprostírají diagramy fyziognomií a ukazují na ně po jedné. \nTento je čistokrevný Švéd, s dlouhými končetinami a duševně zdravý. Ten je poskvrněný křížením, odsouzen ke sklonu k alkoholismu. První je budoucností národa. Ten druhý je předurčen tiše zmizet. \nBylo by to humánní, pokračuje profesor. Podívejte se na grafy, na dobře uspořádaná čísla. Národ od nás požaduje víc, než on dokáže poskytnout." # todo: NEW TRANSLATION
+ sweden_law.1.a: "Tři generace imbecilů stačí." # todo: NEW TRANSLATION
+ sweden_law.1.b: "Musíme tuto situaci kontrolovat." # todo: NEW TRANSLATION
+ sweden_law_birth: "Pýcha národa" # todo: NEW TRANSLATION
+ sweden_law_birth_two: "Kniha hanby" # todo: NEW TRANSLATION

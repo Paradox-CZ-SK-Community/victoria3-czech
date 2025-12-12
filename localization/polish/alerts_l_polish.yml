@@ -113,7 +113,7 @@
  alert_can_resign_alert_name: "[concept_ruler] může #bold rezignovat#!"
  alert_can_take_decisions_action: "Panel žurnálu"
  alert_can_take_decisions_hint: "Můžete vidět dostupná i nedostupná rozhodnutí v panelu "Žurnál""
- alert_can_take_decisions_name: "Dostupná rozhodnutí"
+ alert_can_take_decisions_name: "[SCOPE.GetRootScope.GetDecisionType.GetName]" # todo: CHANGED
  alert_company_losing_prosperity_action: "Panel společnosti"
  alert_company_losing_prosperity_desc: "#v [SCOPE.GetRootScope.GetCompany.GetCompanyType.GetName]#! má negativní růst [concept_prosperity|l] a je v nebezpečí ztráty svého bonusu prosperity."
  alert_company_losing_prosperity_hint: "Můžeme zlepšit [Concept('concept_prosperity','prosperitu')] [Concept('concept_company','společnosti')] zvýšením [Concept('concept_productivity','produktivity')] s ní spojených [Concept('concept_building', 'budov')]."
@@ -205,7 +205,7 @@
  alert_legitimacy_level_unacceptable_alert_action: "Politický panel"
  alert_legitimacy_level_unacceptable_alert_desc: "Vaše [concept_government|l] má [GetPlayer.GetGovernmentLegitimacy|v] [concept_legitimacy|l], což z ní činí nepřijatelnou vládu. To má vliv na [Concept('concept_radical', 'radikalizaci')] vaší [Concept('concept_pop', 'populace')]."
  alert_legitimacy_level_unacceptable_alert_hint: "$alert_low_legitimacy_alert_hint$"
- alert_legitimacy_level_unacceptable_alert_name: "Nepřijatelná vláda"
+ alert_legitimacy_level_unacceptable_alert_name: "$legitimacy_level_unacceptable$" # todo: CHANGED
  alert_low_expected_sol_in_state_action: "Státní panel"
  alert_low_expected_sol_in_state_desc: "[SCOPE.GetRootScope.GetState.GetName] hlásí, že velká část [Concept('concept_pop','populace')] je pod očekávaným [Concept('concept_sol','životním standardem')]."
  alert_low_expected_sol_in_state_hint: "Můžeme to napravit rozšířením dostupné práce v státě ke zvýšení přijmu populace. To pomůže zvýšit životní standard."
@@ -401,3 +401,20 @@
  alert_may_be_annexed_by_austria_hint: "Můžete použít panel diplomacie, abyste zjistili, které [Concept('concept_subject_action','$concept_subject_actions$')|l] jsou k dispozici, abyste zvýšili naši [Concept('concept_liberty_desire','touhu po svobodě')]."
  alert_may_be_annexed_by_austria_action: "Panel diplomacie"
  may_be_annexed_by_austria_setting_name: "Nadvládce pravděpodobně anektuje"
+ alert_formable_possible_name: "[SCOPE.GetRootScope.GetCountryFormation.GetName]" # todo: NEW TRANSLATION
+ alert_formable_possible_desc: "Můžeme vytvořit nový národ [SCOPE.GetRootScope.GetCountryFormation.GetName|v]." # todo: NEW TRANSLATION
+ alert_formable_possible_hint: "Nový národ můžete vytvořit v panelu diplomacie" # todo: NEW TRANSLATION
+ alert_formable_possible_action: "Panel diplomacie" # todo: NEW TRANSLATION
+ alert_major_formable_possible_name: "[SCOPE.GetRootScope.GetCountryFormation.GetAdjective] [Concept('concept_unification', '$concept_major_unification$')] Možné" # todo: NEW TRANSLATION
+ alert_major_formable_possible_desc: "$alert_formable_possible_desc$" # todo: NEW TRANSLATION
+ alert_major_formable_possible_hint: "$alert_formable_possible_hint$" # todo: NEW TRANSLATION
+ alert_major_formable_possible_action: "$alert_formable_possible_action$" # todo: NEW TRANSLATION
+ alert_can_take_decisions_desc: "[SCOPE.GetRootScope.GetDecisionType.GetDesc]" # todo: NEW TRANSLATION
+ ag_formables_possible_name: "Možné [Concept('concept_nation_formation','$concept_nation_formations$')]" # todo: NEW TRANSLATION
+ ag_formables_possible_desc: "Máme možnost vytvořit jeden nebo více nových států." # todo: NEW TRANSLATION
+ ag_formables_possible_tooltip: "#header $ag_formables_possible_name$#!\n$TOOLTIP_DELIMITER$\n$ag_formables_possible_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$" # todo: NEW TRANSLATION
+ ag_can_take_decisions_name: "Dostupná rozhodnutí" # todo: NEW TRANSLATION
+ ag_can_take_decisions_desc: "Máme [Concept('concept_decision', '$concept_decisions$')], která lze přijmout." # todo: NEW TRANSLATION
+ ag_can_take_decisions_tooltip: "#header $ag_can_take_decisions_name$#!\n$TOOLTIP_DELIMITER$\n$ag_can_take_decisions_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$" # todo: NEW TRANSLATION
+ formable_possible_setting_name: "Zakládání států" # todo: NEW TRANSLATION
+ major_formable_possible_setting_name: "Hlavní formování států" # todo: NEW TRANSLATION

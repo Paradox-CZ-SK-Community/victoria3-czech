@@ -53,7 +53,7 @@
  tibet_expedition_events.12.a: "Udělejte co největší tašku! Dopředu!"
  tibet_expedition_events.12.b: "To by byla masakra—ustupte."
  tibet_expedition_events.12.d: "Patrola [SCOPE.sCountry('tibet_scope').GetAdjective] zřídila blokádu na trase expedice [SCOPE.sCharacter('expedition_leader').GetPrimaryRoleTitle] [SCOPE.sCharacter('expedition_leader').GetLastName]. Jakékoli zpoždění v postupu expedice by mohlo být pro projekt katastrofální."
- tibet_expedition_events.12.f: "[SCOPE.sCharacter('expedition_leader').GetFullName] se zamračil nad pohledem před [SCOPE.sCharacter('expedition_leader').GetHerHim]. Množství tibetských vojáků stojících naproti [SCOPE.sCharacter('expedition_leader').GetHerHim] vypadalo impozantně, ale [SCOPE.sCharacter('expedition_leader').GetSheHe] věděl, jaké zbraně [SCOPE.sCharacter('expedition_leader').GetSheHe] přinesl s expedicí. Prochodit blokádou nebyl problém—problém byl cena, jak to udělat."
+ tibet_expedition_events.12.f: "[SCOPE.sCharacter('expedition_leader').GetFullNameNoFormatting] se zamračil nad tím, co se mu naskytlo před [SCOPE.sCharacter('expedition_leader').GetHerHim]. Hromada tibetských vojáků stojících napříč silnicí před [SCOPE.sCharacter('expedition_leader').GetHerHim] vypadala impozantně, ale [SCOPE.sCharacter('expedition_leader').GetSheHe] věděl, jaké zbraně s sebou na expedici přivezl. Probojovat se přes barikádu nebyl problém — problémem byla cena, kterou za to zaplatí." # todo: CHANGED
  tibet_expedition_events.12.t: "Expedice [SCOPE.sCharacter('expedition_leader').GetLastName] je zablokována"
  tibet_expedition_events.13.a: "Nemůžeme poskytnout žádnou materiální pomoc."
  tibet_expedition_events.13.b: "Budeme podporovat [SCOPE.sCountry('tibet_scope').GetAdjective] vojenské síly."
@@ -63,12 +63,12 @@
  tibet_expedition_events.14.a: "Musíme odolávat sněhu a pokračovat!"
  tibet_expedition_events.14.b: "Lepší hrát opatrně a weather this storm."
  tibet_expedition_events.14.d: "[SCOPE.sCharacter('expedition_leader').GetPrimaryRoleTitle] expedice [SCOPE.sCharacter('expedition_leader').GetLastName] byla pozdržena zlovolným a neočekávaným počasím podél jedné z neobyčejně nebezpečných cest na cestě do [SCOPE.sCountry('tibet_scope').GetCapital.GetName]. Zpoždění by mohla být nákladná, ale procházení nepřízní by mohlo být ještě dražší."
- tibet_expedition_events.14.f: "Zmrazený vítr foukal pod [SCOPE.sCharacter('expedition_leader').GetLastName] boty a kolem jeho prstů. Mrazík kousá zem pod nol. Bylo to dobře pod nulou, a přesto [SCOPE.sCharacter('expedition_leader').GetSheHe] slyšel vojáka vykřiknout. [SCOPE.sCharacter('expedition_leader').GetSheHe|U] předpokládal, že to bylo ohledně sněhu, ale [SCOPE.sCharacter('expedition_leader').GetSheHe] mohl sotva vidět za špičku [SCOPE.sCharacter('expedition_leader').GetHerHis] nosu a nemohl říct, kde voják byl, natož co se kolem nich dělo."
+ tibet_expedition_events.14.f: "Zamrzlý vítr vane pod botami [SCOPE.sCharacter('expedition_leader').GetLastNameNoFormatting] a kolem jeho prstů. Mráz štípal do země dole. Teplota byla hluboko pod nulou, a přesto [SCOPE.sCharacter('expedition_leader').GetSheHe] slyšel, jak nějaký voják vykřikl. [SCOPE.sCharacter('expedition_leader').GetSheHe|U] předpokládal, že to je kvůli sněhu, ale [SCOPE.sCharacter('expedition_leader').GetSheHe] sotva viděl za špičku [SCOPE.sCharacter('expedition_leader').GetHerHis] nosu a nedokázal určit, kde ten voják je, natož co se kolem děje." # todo: CHANGED
  tibet_expedition_events.14.t: "Himalájská vánice"
  tibet_expedition_events.18.a: "Zasaďte tu pevnost nyní!"
  tibet_expedition_events.18.b: "Nejsme zde pro krveprolití—vyjednávejte o jejich kapitulaci."
  tibet_expedition_events.18.d: "Rozsáhlý opevněný klášter vyčnívá z tibetského kamene vpřed — Gyantse Dzong, granitový strážce údolí Tsangpo a jedna z klíčových přístupových cest do Lhasy. Nebude žádná bezpečná cesta do hlavního města, dokud tuto pevnost nedrží vojáci expedice."
- tibet_expedition_events.18.f: "Nepřekonatelná pevnost tyčila nad okolní krajinou. Blízké vesničky byly prachové skvrny v porovnání s tímto kamenným obrem, který se vznášel nad nimi. Uctivé zdi a starobylé síně odrážely století bojování, hrdosti, nespočetné modlitby, bitev a intrik. Stálo to jako perzistentní svědectví vůle generací vůdců.\n\nSérie děl [SCOPE.sCharacter('expedition_leader').GetLastName] by to mohla ukončit za den."
+ tibet_expedition_events.18.f: "Nezdolná pevnost se tyčila nad okolní krajinou. Blízké vesnice byly proti kamennému obra, který se nad nimi tyčil, jen tečkami prachu. Vznešené zdi a starobylé síně nesly ozvěny století bojů, pýchy, nesčetných modliteb, bitev a intrik. Stála jako trvalé svědectví vůlí generací vládců.\n\nSalva z děl [SCOPE.sCharacter('expedition_leader').GetLastNameNoFormatting] by ji mohla zničit za den." # todo: CHANGED
  tibet_expedition_events.18.t: "Gyantse Dzong"
  tibet_expedition_events.19.a: "A co? Tohle je jen jak armády fungují."
  tibet_expedition_events.19.b: "Disciplínujte vojáky a omluvte se místním úředníkům."
@@ -107,7 +107,7 @@
  tibet_expedition_events.29.t: "Násilná tvář"
  tibet_expedition_events.3.a: "Vpřed, do Tibetu!"
  tibet_expedition_events.3.d: "S [SCOPE.sCharacter('expedition_leader').GetPrimaryRoleTitle] [SCOPE.sCharacter('expedition_leader').GetFullName] v čele je naše expedice do Tibetu připravena začít.\n\n#N Protože [SCOPE.sCharacter('expedition_leader').GetSheHe] je v čele, pokud [SCOPE.sCharacter('expedition_leader').GetSheHe] zemře, expedice skončí v neúspěchu.#!"
- tibet_expedition_events.3.f: "[SCOPE.sCharacter('expedition_leader').GetLastName] se zamračil, když [SCOPE.sCharacter('expedition_leader').GetSheHe] procházel zprávami. Kdyby každá fáma o životně důležitém horském průsmyku byla pravdivá, Himaláje byly prošpikované více dírami než švýcarský sýr. Nebylo nic jiného, než vyrazit ven a zjistit, který z nich je skutečný."
+ tibet_expedition_events.3.f: "[SCOPE.sCharacter('expedition_leader').GetLastNameNoFormatting] se zamračil, zatímco [SCOPE.sCharacter('expedition_leader').GetSheHe] procházel zprávy. Kdyby byla pravdivá každá pověst o nějakém důležitém horském průsmyku, Himaláje by byly poseté dírami více než švýcarský sýr. Nezbývalo než vyrazit ven a zjistit, která z nich je skutečná." # todo: CHANGED
  tibet_expedition_events.3.t: "Expedice se vydává"
  tibet_expedition_events.4.a: "Jak si to dovolují? Musíme jednat!"
  tibet_expedition_events.4.b: "Klid! Hlavně nepodlehnime stádovitému chování."

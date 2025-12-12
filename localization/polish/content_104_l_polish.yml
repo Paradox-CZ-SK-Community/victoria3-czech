@@ -390,7 +390,7 @@
  decree_events.3.a: "Zasloužil si tuto práci."
  decree_events.3.b: "Dotýká příběh, ale nezaslouží si zvláštní zacházení."
  decree_events.3.d: "Nízký člověk vstoupil jako populární vůdce [SCOPE.gsInterestGroup('ig_intelligentsia').GetName], což se mnohým nelíbilo k takové sociální mobilitě."
- decree_events.3.f: "\"Zpočátku žil se svou chudou vdovou matkou, poté s jeho hrozným strýcem, oba poté zemřeli, jak se říká, a stal se sirotkem a uprchl ze státu. Poté byl viděn jako obchodník s vínem, jak byl mladý, a někteří říkají, že se pokusil stát se nějakým strážcem zákona. Poté se pokusil psát, v čemž byl mírně úspěšný, a nyní... nyní to vidíte, vůdce [SCOPE.gsInterestGroup('ig_intelligentsia').GetName], konečně v klidu.\""
+ decree_events.3.f: ""Nejprve žil se svou chudou ovdovělou matkou, pak s jejím hrozným strýcem, pak oba, jak se říkalo, zemřeli a on se stal sirotkem a uprchl ze země. Poté ho vídali jako obchodníka s vínem, přestože byl mladý, a někteří tvrdí, že se pokusil stát jakýmsi strážcem zákona. Pak se pustil do psaní, v němž měl mírný úspěch, a teď... teď tu to máte — vůdce [SCOPE.gsInterestGroup('ig_intelligentsia').GetNameNoFormatting], konečně v klidu." # todo: CHANGED
  decree_events.3.t: "Základní principy"
  decree_events.4.a: "Muži ho budou následovat."
  decree_events.4.b: "Neměli bychom rozčilit [SCOPE.sCharacter('noble_character').GetLastName]."
@@ -437,12 +437,12 @@
  election_other_parties_events.3.a: "Skutečně jsou naši nejschopnější lidé."
  election_other_parties_events.3.b: "Vojenský populismus? V mé válce?"
  election_other_parties_events.3.d: "Členové [SCOPE.sParty('military_party').GetName] hlasitě prohlásili, že jediný způsob, jak nás vést ven z [SCOPE.sWar('ongoing_war').GetName] války, je ponechat vládu našeho národa v jejich schopných rukou."
- election_other_parties_events.3.f: ""Zoufalé časy vyžadují zoufalá opatření. Ne že bychom byli zoufalým opatřením, samozřejmě, ale takové je přísloví – přirozený řád lingvistiky. Každý ať si dává, co mu náleží, ordo naturalis, musíme se řídit těmito pravidly. A jak by něco mohlo být přirozenějšího než nechat [SCOPE.sParty('military_party').GetName] vést nás válkou?""
+ election_other_parties_events.3.f: ""V zoufalých časech se sáhne k zoufalým opatřením. Ne že bychom sami byli zoufalým opatřením, samozřejmě, ale tak to říkají — přirozený řád lingvistiky. Každému své, ordo naturalis, musíme hrát podle těchto pravidel. A co by mohlo být přirozenější než nechat [SCOPE.sParty('military_party').GetNameNoFormatting] vést nás válkou?" # todo: CHANGED
  election_other_parties_events.3.t: "Přirozené řešení"
  election_other_parties_events.4.a: "A děkuji [SCOPE.GetRootScope.GetCountry.GetCustom('GetDivinity')] že to dělají."
  election_other_parties_events.4.b: "Zní to trochu jako fantazie, ale [SCOPE.sParty('social_democrat_party').GetName] je stále rozumnou volbou."
  election_other_parties_events.4.d: "Členové [SCOPE.sParty('social_democrat_party').GetName] upozornili na vzestup [SCOPE.sParty('leftist_party').GetName], vyjadřujíce svou ochotu nabídnout umírněnější řešení jejich politického extremismu."
- election_other_parties_events.4.f: ""Slyšeli jste o tom nebezpečném [SCOPE.sParty('leftist_party').GetName]? Říkali mi, že se jejich členové scházejí v noci, plánují svůj další teroristický útok a jedí děti! Děti!""
+ election_other_parties_events.4.f: ""Slyšeli jste o té nebezpečné [SCOPE.sParty('leftist_party').GetNameNoFormatting]? Říkají, že se jejich členové scházejí v noci, plánují další teroristický útok a jedí miminka! Miminka!" # todo: CHANGED
  election_other_parties_events.4.t: "Zlatý střed"
  election_other_parties_events.5.a: "A měli by se ještě více rozšířit."
  election_other_parties_events.5.b: "Ohrožují jednotu [ROOT.GetCountry.GetNameNoFormatting]!"
@@ -635,7 +635,7 @@
  expedition_events.650.a: "Nemůžeme zajistit krmení našich mužů."
  expedition_events.650.b: "Expedice nelze rozdělit."
  expedition_events.650.d: "Dorazili jsme do misionářského tábora, kde jsme našli jídlo a odpočinek, po kterém jsme toužili. Nedostatek potravin během naší cesty sváděl jednoho muže k požadavku na rozdělení expedice."
- expedition_events.650.f: "Něco podobného jsem nikdy neviděl - nebo viděl, v mladší době, když byla fascinace a naděje smíchána s ambicí a touhou. Oh, nebyl jsem dojat, byl jsem vyděšen. Pleť jeho úst nebyla křivě usměvavá, ale prasklá do extáze. "Nech mě zůstat vzadu, [SCOPE.sCharacter('expedition_leader').GetFullName], prosím tě.""
+ expedition_events.650.f: ""Čehokoli podobného jeho výrazu jsem nikdy předtím neviděla — nebo možná ano, v mládí, kdy se fascinace a naděje mísily s ambicemi a touhou. Ach, nebyla jsem dojatá, byla jsem vyděšená. Kůže kolem jeho úst nebyla zkřivená v úsměv, ale popraskaná v extázi. "Nech mě tady, [SCOPE.sCharacter('expedition_leader').GetFullNameNoFormatting], prosím tě." # todo: CHANGED
  expedition_events.650.t: "Zadní sloupec"
  expedition_events.650.tt: "Muži byli ponecháni za sebou."
  expedition_events.651.a: "Jméno expedice bylo poskvrněno."
@@ -644,7 +644,7 @@
  expedition_events.651.t: "Zprávy z rear column"
  expedition_events.652.a: "Dolů s zrádci!"
  expedition_events.652.d: "Vzpoura byla vznesena muži, kteří požadovali rozdělení expedice."
- expedition_events.652.f: ""Neuchopitelné pohledy, vyhýbavá slova. V tváři některých našich mužů bylo něco, co mě přimělo chtít, abych poslechl jejich petice, aby zůstali pozadu, ne proto, že bych chtěl splnit jejich sobecká přání, ale protože jejich společnost se pro mě stala opovržlivou.\n\n"Pane [SCOPE.sCharacter('expedition_leader').GetFullName]," slyšel jsem, když jsem se otočil čelem k studené zbrani mířící na mou hruď, "bylo by rozumné se obrátit na zpět.""
+ expedition_events.652.f: ""Neuchopitelné pohledy, vyhýbavá slova. Něco v obličeji některých z našich mužů mě přimělo přát si, abych poslechla jejich žádosti, aby zůstali pozadu, ne proto, že bych chtěla vyhovět jejich sobeckým přáním, ale protože mi jejich společnost byla odporná.\n\n"Pane [SCOPE.sCharacter('expedition_leader').GetFullNameNoFormatting]," jsem zaslechla, když jsem se otočila a ocitla tváří tvář chladné zbrani namířené na mou hruď, "bylo by vhodné se vrátit." # todo: CHANGED
  expedition_events.652.t: "Vzpoura!"
  expedition_events.660.a: "Potřebujeme více jídla."
  expedition_events.660.b: "Potřebujeme zbraně."
@@ -837,7 +837,6 @@
  gustave_eiffel_angry_modifier: "Nerespektoval architekta Eiffela"
  gustave_eiffel_modifier: "Podpořil státního architekta"
  gustave_eiffel_sad_modifier: "Kritizoval Eiffelovu konstrukci"
- has_socialist_ideology_tt: "Vůdce této zájmové skupiny má [GetIdeology('ideology_anarchist').GetName], [GetIdeology('ideology_communist').GetName] nebo [GetIdeology('ideology_vanguardist').GetName] [concept_ideology]"
  helped_hidden_children_modifier: "Pomohli skrýt děti"
  hidden_children_modifier: "Skrytí děti"
  hypnosis_modifier: "Hypnotická léčba"
@@ -859,7 +858,7 @@
  ig_suppression_events.3.b: "Možná že bychom měli skandál ještě zvětšit."
  ig_suppression_events.3.c: "Toto už zašlo příliš daleko."
  ig_suppression_events.3.d: "S pověstmi o [SCOPE.sCharacter('suppressed_leader').GetHerHis] způsobu života se dostaly ke všem společenským vrstvám a [SCOPE.sCharacter('suppressed_leader').GetHerHis] pověst byla podkopána, jistě můžeme přesvědčit [SCOPE.sCharacter('suppressed_leader').GetFullName] k odstoupení z [SCOPE.sCharacter('suppressed_leader').GetHerHis] pozice vůdce [SCOPE.gsInterestGroup('target').GetName]."
- ig_suppression_events.3.f: ""Byl to jeden z těch dní, kdy plameny továren blikaly jako malé oči skrze okna, jeden z těch dní, kdy [SCOPE.sCharacter('suppressed_leader').GetFullName] cítil, jako by celé město zíralo na [SCOPE.sCharacter('suppressed_leader').GetHerHim], obviňující, požadovat. Ale nebyla to [SCOPE.sCharacter('suppressed_leader').GetHerHis] chyba! [SCOPE.sCharacter('suppressed_leader').GetSheHe] to věděl, [SCOPE.sCharacter('suppressed_leader').GetSheHe] nic špatného neudělal... Byla to vláda, bylo to očividně vláda, která šířila lži, nikdy se jim nelíbila [SCOPE.sCharacter('suppressed_leader').GetHerHim], že?"
+ ig_suppression_events.3.f: ""Byl to jeden z oněch dnů, kdy se plameny továren skrz okna třpytily jako malá očka, jeden z oněch dnů, kdy se [SCOPE.sCharacter('suppressed_leader').GetFullNameNoFormatting] zdál, jako by na [SCOPE.sCharacter('suppressed_leader').GetHerHim] hledělo celé město, obviňovalo a požadovalo. Ale to nebyla vina [SCOPE.sCharacter('suppressed_leader').GetHerHis]! [SCOPE.sCharacter('suppressed_leader').GetSheHe] to věděl, nic zlého nebylo spácháno... Byla to vláda, to byla očividně vláda, která šíří lži; nikdy neměli [SCOPE.sCharacter('suppressed_leader').GetHerHim] rádi, že ne? Ó, ne, nikdy neměli.\n\n"Na co se díváte!?" # todo: CHANGED
  ig_suppression_events.3.t: "Přesvědčování"
  ig_suppression_events.4.a.tt: "[SCOPE.sCharacter('suppressed_leader').GetFullName] bude uvězněn."
  ig_suppression_events.4.a: "Ať [SCOPE.sCharacter('suppressed_leader').GetHerHis] tělo shnije ve vězení."
@@ -907,7 +906,7 @@
  internal_security_events.1.a: "Není co zde vyšetřovat."
  internal_security_events.1.b: "Nemůžeme schválit zákon na úkor důvěry našich lidí."
  internal_security_events.1.d: "Zmizení [SCOPE.sCharacter('anti_secret_police_leader').GetFullName], ze [SCOPE.gsInterestGroup('anti_secret_police_ig').GetName], vyvolalo vážné obavy mezi elitami, vzhledem k [SCOPE.sCharacter('anti_secret_police_leader').GetHerHis] nedávnému odporu vůči [SCOPE.sLaw('current_law_scope').GetName]."
- internal_security_events.1.f: ""Bylo už po poledni, když rodina nahlásila příslušným úřadům: [SCOPE.sCharacter('anti_secret_police_leader').GetFullNameNoFormatting] byl celou noc nezvěstný, žádné varování nebo poznámka nezůstala. Příbuzní vyjádřili své obavy, že to bylo způsobeno [SCOPE.sCharacter('anti_secret_police_leader').GetHerHis] neochotou opozice vůči [SCOPE.sLaw('current_law_scope').GetName], protože u jejich dveří byl několik dní předtím nechán malý nůž, který nyní vykládají jako hrozbu.""
+ internal_security_events.1.f: ""Bylo už dávno po poledni, když rodina oznámila příslušným úřadům: [SCOPE.sCharacter('anti_secret_police_leader').GetFullNameNoFormatting] zmizel celou noc, nezanechal žádné varování ani vzkaz. Příbuzní vyjádřili obavy, že to bylo podníceno [SCOPE.sCharacter('anti_secret_police_leader').GetHerHis] důrazem na odpor vůči [SCOPE.sLaw('current_law_scope').GetNameNoFormatting], neboť před několika dny byl na jejich dveřích nalezen malý nůž, který nyní vykládají jako hrozbu." # todo: CHANGED
  internal_security_events.1.t: "Podivné zmizení"
  internal_security_events.2.a: "Naši lidé si musí vědoma!"
  internal_security_events.2.b: "Toto je velmi užitečné informace, která by měla zůstat... soukromá."
@@ -985,7 +984,7 @@
  je_krakatoa_reason: "Následky sopečné erupce v [GetStateRegion('STATE_WEST_JAVA').GetName] nadále ovlivňují světové klima, čímž zvyšují četnost a závažnost [Concept('concept_harvest_condition','podmínek sklizně')] jako [GetHarvestConditionType('frost').GetName], [GetHarvestConditionType('hailstorm').GetName], [GetHarvestConditionType('disease_outbreak').GetName] a [GetHarvestConditionType('torrential_rains').GetName] až do doby, než se teplotní úroveň obnoví.\n$TSUNAMI_LIST_HEADER$$TSUNAMI_LIST_CONTENT$\n$TSUNAMI_LIST_AFTER$"
  TSUNAMI_LIST_HEADER: "$TOOLTIP_DELIMITER$\nVaše [Concept('concept_state', '$concept_states$')|l], které jsou v současnosti zasaženy [Concept('concept_devastation','devastací')] způsobenou [GetHarvestConditionType('tsunami').GetName]:"
  TSUNAMI_LIST_CONTENT: "#indent_newline:3 \n[GetScriptedGui('je_krakatoa_tsunami_states_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)]#!"
- TSUNAMI_LIST_ENTRY: "[THIS.GetState.GetName]: [THIS.GetState.GetStateRegion.GetDevastationLevel|-%0]"
+ TSUNAMI_LIST_ENTRY: "[THIS.GetState.GetName]: [THIS.GetState.GetDevastationLevel|-%0]" # todo: CHANGED
  TSUNAMI_LIST_EMPTY_STATE: "Žádný [concept_state|l] není v současnosti zasažen [GetHarvestConditionType('tsunami').GetNameNoFormatting|b]"
  TSUNAMI_LIST_AFTER: "@information! Použití [Concept('concept_decree','dekretu')] [GetDecreeType('decree_emergency_relief').GetName] v postižených státech přidává #v [SCOPE.ScriptValue('krakatoa_decree_emergency_relief_devastation_recovery_chance')|0]%#! šanci každý měsíc snížit devastaci o #v;P [SCOPE.ScriptValue('krakatoa_decree_emergency_relief_devastation_recovery_amount')|0]%#!"
  je_krakatoa_thermometer_progress_bar_name: "Obnova teploty"
@@ -1218,7 +1217,7 @@
  psychology_events.1.b: "[SCOPE.sCharacter('mentally_ill_leader').GetSheHe|U] může získat pomoc, kterou [SCOPE.sCharacter('mentally_ill_leader').GetSheHe] potřebuje v asilovém zařízení."
  psychology_events.1.c: "Psychoanalýza se stala velice slibným trendem."
  psychology_events.1.d: "Objevily se zprávy, že [SCOPE.sCharacter('mentally_ill_leader').GetFullName], vůdce [SCOPE.gsInterestGroup('mentally_ill_ig').GetName], se nezúčastňuje schůzí nebo nesplňuje své povinnosti. Už nemůžeme ignorovat [SCOPE.sCharacter('mentally_ill_leader').GetHerHis] nepřítomnost."
- psychology_events.1.f: "[SCOPE.sCharacter('mentally_ill_leader').GetLastName] sotva reaguje, když voláme [SCOPE.sCharacter('mentally_ill_leader').GetHerHis] jméno. Prázdný pohled, [SCOPE.sCharacter('mentally_ill_leader').GetSheHe] skoro nemrká. "Pojďme se projít," říkáme [SCOPE.sCharacter('mentally_ill_leader').GetHerHim], a [SCOPE.sCharacter('mentally_ill_leader').GetSheHe] tiše přikývne a tiše jdeme."
+ psychology_events.1.f: ""[SCOPE.sCharacter('mentally_ill_leader').GetLastNameNoFormatting] sotva reaguje, když zavoláme [SCOPE.sCharacter('mentally_ill_leader').GetHerHis] jméno. Prázdný pohled, [SCOPE.sCharacter('mentally_ill_leader').GetSheHe] téměř nemrká. "Pojďme se projít," říkáme [SCOPE.sCharacter('mentally_ill_leader').GetHerHim], a [SCOPE.sCharacter('mentally_ill_leader').GetSheHe] tiše přikývne, a tiše kráčíme." # todo: CHANGED
  psychology_events.1.t: "Roztržitá mysl"
  psychology_events.1.tt: "Postava bude poslána do ústavu."
  psychology_events.2.a: "Nesmysl! Skutečný doktor by měl léčit [ROOT.GetCountry.GetRuler.GetHerHim] správnou hypnoterapií."
@@ -1254,7 +1253,6 @@
  purged_police_modifier: "Čistka policie"
  ragged_schools_devout: "Náboženské chatrné školy"
  ragged_schools_modifier: "Zoufalé školy"
- ragged_schools_no_devout: "Nábožensky neutrální ragged schools"
  refused_to_pay_modifier: "Odmítnuto platit skladateli"
  rejected_charitable_slums_modifier: "Odmítnuta charitativní politika slumů"
  rejected_charitable_slums_state_modifier: "Odmítnutá charitativní slumy"
@@ -1442,3 +1440,4 @@
  zeppelins_society_modifier: "Společnost vzducholodí"
  zeppelins_trading_modifier: "Obchodování se vzducholoděmi"
  krakatoa.5.c: "Nemáme nic navíc..."
+ modifier_no_ragged_schools: "Zamítnuté chudinské školy" # todo: NEW TRANSLATION
