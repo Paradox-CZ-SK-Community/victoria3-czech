@@ -631,37 +631,37 @@
  END_NATIONAL_AWAKENING: "[concept_national_awakening] pro [CULTURE.GetName] [Concept('concept_culture','kulturu')] končí"
  END_NATIONAL_AWAKENING_FIRST: "[concept_national_awakening] pro [CULTURE.GetName] [Concept('concept_culture','kulturu')] končí"
  END_NATIONAL_AWAKENING_THIRD: "[concept_national_awakening] pro [CULTURE.GetName] [Concept('concept_culture','kulturu')] končí"
- CALL_ELECTION_FIRST: "[COUNTRY.GetNameNoFlag] bude mít volby za #variable $MONTHS$ měsíců#!" # todo: NEW TRANSLATION
- RETIRE_CHARACTER_GLOBAL: "[concept_character] odchází do důchodu" # todo: NEW TRANSLATION
- RETIRE_CHARACTER_GLOBAL_NEG: "[concept_character] neodchází do důchodu" # todo: NEW TRANSLATION
- RETIRE_CHARACTER: "[CHARACTER.GetFullName] odchází do důchodu" # todo: NEW TRANSLATION
- RETIRE_CHARACTER_NEG: "[CHARACTER.GetFullName] neodchází do důchodu" # todo: NEW TRANSLATION
- ADD_CONTEXTLESS_JOURNAL_ENTRY: "Aktivuje [JOURNAL_ENTRY_TYPE.GetName|v]" # todo: NEW TRANSLATION
- SET_RULING_PARTY_THIRD: "[PARTY.GetName] [Party.GetMembersSummary] je přidána do [concept_government], zatímco všichni ostatní jsou odstraněni" # todo: NEW TRANSLATION
- ADD_INVOLVED_COUNTRY: "[TARGET_COUNTRY.GetName] se zapojí do [concept_journal_entry]" # todo: NEW TRANSLATION
- ADD_INVOLVED_COUNTRY_THIRD: "[TARGET_COUNTRY.GetName] se zapojí do [JOURNAL_ENTRY.GetName]" # todo: NEW TRANSLATION
- REMOVE_INVOLVED_COUNTRY: "[TARGET_COUNTRY.GetName] už nebude součástí [concept_journal_entry]" # todo: NEW TRANSLATION
- REMOVE_INVOLVED_COUNTRY_THIRD: "[TARGET_COUNTRY.GetName] už nebude zapojeno do [JOURNAL_ENTRY.GetName]" # todo: NEW TRANSLATION
- ADD_MOMENTUM_THIRD_NEG: "#v $VALUE|%-0$#! [concept_momentum] bude odečteno od [Party.GetName] [Party.GetMembersSummary]" # todo: NEW TRANSLATION
- SET_CHARACTER_AS_EXECUTIVE: "Stává se [concept_executive] společnosti [TARGET_COMPANY.GetName]" # todo: NEW TRANSLATION
- SET_CHARACTER_AS_EXECUTIVE_THIRD: "[CHARACTER.GetFullName] se stává [concept_executive] společnosti [TARGET_COMPANY.GetName]" # todo: NEW TRANSLATION
- IMPROVE_STANCE_GLOBAL: "[concept_interest_group] dočasně zaujímá příznivější postoj k [concept_law], který je právě schvalován" # todo: NEW TRANSLATION
- IMPROVE_STANCE_THIRD: "[INTEREST_GROUP.GetName] dočasně zaujímá příznivější postoj k [concept_law], který je právě schvalován" # todo: NEW TRANSLATION
- ADD_AMENDMENT_GLOBAL: "K [concept_law] je přidán [concept_amendment]" # todo: NEW TRANSLATION
- ADD_AMENDMENT_FIRST: "[AMENDMENT_TYPE.GetName] je přidán k [LAW.GetName]" # todo: NEW TRANSLATION
- ADD_AMENDMENT_THIRD: "[AMENDMENT_TYPE.GetName] je přidán k [LAW.GetName]" # todo: NEW TRANSLATION
- REMOVE_AMENDMENT_GLOBAL: "[concept_amendment] je odstraněn z [concept_law]" # todo: NEW TRANSLATION
- REMOVE_AMENDMENT_FIRST: "[AMENDMENT.GetName] je odstraněn z [LAW.GetName]" # todo: NEW TRANSLATION
- REMOVE_AMENDMENT_THIRD: "[AMENDMENT.GetName] je odstraněn z [LAW.GetName]" # todo: NEW TRANSLATION
- TRANSFER_SUBJECT_GLOBAL: "[TARGET_COUNTRY.GetName] je převedeno jako [concept_subject] do [COUNTRY.GetName]" # todo: NEW TRANSLATION
- TRANSFER_SUBJECT_FIRST: "[TARGET_COUNTRY.GetName] je převedeno jako [concept_subject] do [COUNTRY.GetNameNoFlag]" # todo: NEW TRANSLATION
- TRANSFER_SUBJECT_THIRD: "[TARGET_COUNTRY.GetName] je převedeno jako [concept_subject] do [COUNTRY.GetName]" # todo: NEW TRANSLATION
- ADD_ELECTORAL_CONFIDENCE: "[concept_electoral_confidence] se zvýší o #variable $VALUE|+0%$#!" # todo: NEW TRANSLATION
- ADD_ELECTORAL_CONFIDENCE_NEGATIVE: "[concept_electoral_confidence] se sníží o #variable $VALUE|-0%$#!" # todo: NEW TRANSLATION
- ADD_ELECTORAL_CONFIDENCE_FIRST: "[COUNTRY.GetAdjectiveNoFlag] [concept_electoral_confidence] se zvýší o #variable $VALUE|+0%$#!" # todo: NEW TRANSLATION
- ADD_ELECTORAL_CONFIDENCE_FIRST_NEGATIVE: "[COUNTRY.GetAdjectiveNoFlag] [concept_electoral_confidence] se sníží o #variable $VALUE|-0%$#!" # todo: NEW TRANSLATION
- ADD_ELECTORAL_CONFIDENCE_THIRD: "[COUNTRY.GetAdjective] [concept_electoral_confidence] se zvýší o #variable $VALUE|+0%$#!" # todo: NEW TRANSLATION
- ADD_ELECTORAL_CONFIDENCE_THIRD_NEGATIVE: "[COUNTRY.GetAdjective] [concept_electoral_confidence] se sníží o #variable $VALUE|-0%$#!" # todo: NEW TRANSLATION
- SET_ELECTORAL_CONFIDENCE: "[concept_electoral_confidence] je nastavena na #variable $VALUE|0%$#!" # todo: NEW TRANSLATION
- SET_ELECTORAL_CONFIDENCE_FIRST: "[COUNTRY.GetAdjectiveNoFlag] [concept_electoral_confidence] je nastavena na #variable $VALUE|0%$#!" # todo: NEW TRANSLATION
- SET_ELECTORAL_CONFIDENCE_THIRD: "[COUNTRY.GetAdjective] [concept_electoral_confidence] je nastavena na #variable $VALUE|0%$#!" # todo: NEW TRANSLATION
+ CALL_ELECTION_FIRST: "[COUNTRY.GetNameNoFlag] bude mít volby za #variable $MONTHS$ měsíců#!"
+ RETIRE_CHARACTER_GLOBAL: "[concept_character] odchází do důchodu"
+ RETIRE_CHARACTER_GLOBAL_NEG: "[concept_character] neodchází do důchodu"
+ RETIRE_CHARACTER: "[CHARACTER.GetFullName] odchází do důchodu"
+ RETIRE_CHARACTER_NEG: "[CHARACTER.GetFullName] neodchází do důchodu"
+ ADD_CONTEXTLESS_JOURNAL_ENTRY: "Aktivuje [JOURNAL_ENTRY_TYPE.GetName|v]"
+ SET_RULING_PARTY_THIRD: "[PARTY.GetName] [Party.GetMembersSummary] je přidána do [Concept('concept_government','vlády')], zatímco všichni ostatní jsou odstraněni"
+ ADD_INVOLVED_COUNTRY: "[TARGET_COUNTRY.GetName] se zapojí do [Concept('concept_journal_entry','záznamu v deníku')]"
+ ADD_INVOLVED_COUNTRY_THIRD: "[TARGET_COUNTRY.GetName] se zapojí do [JOURNAL_ENTRY.GetName]"
+ REMOVE_INVOLVED_COUNTRY: "[TARGET_COUNTRY.GetName] už nebude součástí [Concept('concept_journal_entry','záznamu v deníku')]"
+ REMOVE_INVOLVED_COUNTRY_THIRD: "[TARGET_COUNTRY.GetName] už nebude zapojeno do [JOURNAL_ENTRY.GetName]"
+ ADD_MOMENTUM_THIRD_NEG: "#v $VALUE|%-0$#! [concept_momentum] bude odečteno od [Party.GetName] [Party.GetMembersSummary]"
+ SET_CHARACTER_AS_EXECUTIVE: "Stává se [Concept('concept_executive','výkonným představitelem')] společnosti [TARGET_COMPANY.GetName]"
+ SET_CHARACTER_AS_EXECUTIVE_THIRD: "[CHARACTER.GetFullName] se stává [Concept('concept_executive','výkonným představitelem')] společnosti [TARGET_COMPANY.GetName]"
+ IMPROVE_STANCE_GLOBAL: "[concept_interest_group] dočasně zaujímá příznivější postoj k [Concept('concept_law','zákonům')], který je právě schvalován"
+ IMPROVE_STANCE_THIRD: "[INTEREST_GROUP.GetName] dočasně zaujímá příznivější postoj k [Concept('concept_law','zákonům')], který je právě schvalován"
+ ADD_AMENDMENT_GLOBAL: "K [Concept('concept_law','zákonu')] je přidán [concept_amendment|l]"
+ ADD_AMENDMENT_FIRST: "[AMENDMENT_TYPE.GetName] je přidán k [LAW.GetName]"
+ ADD_AMENDMENT_THIRD: "[AMENDMENT_TYPE.GetName] je přidán k [LAW.GetName]"
+ REMOVE_AMENDMENT_GLOBAL: "[concept_amendment] je odstraněn ze [Concept('concept_law','zákona')]"
+ REMOVE_AMENDMENT_FIRST: "[AMENDMENT.GetName] je odstraněn z [LAW.GetName]"
+ REMOVE_AMENDMENT_THIRD: "[AMENDMENT.GetName] je odstraněn z [LAW.GetName]"
+ TRANSFER_SUBJECT_GLOBAL: "[TARGET_COUNTRY.GetName] je převedena jako [Concept('concept_subject','závislá země')] do [COUNTRY.GetName]"
+ TRANSFER_SUBJECT_FIRST: "[TARGET_COUNTRY.GetName] je převedeno jako [Concept('concept_subject','závislá země')] do [COUNTRY.GetNameNoFlag]"
+ TRANSFER_SUBJECT_THIRD: "[TARGET_COUNTRY.GetName] je převedeno jako [Concept('concept_subject','závislá země')] do [COUNTRY.GetName]"
+ ADD_ELECTORAL_CONFIDENCE: "[concept_electoral_confidence] se zvýší o #variable $VALUE|+0%$#!"
+ ADD_ELECTORAL_CONFIDENCE_NEGATIVE: "[concept_electoral_confidence] se sníží o #variable $VALUE|-0%$#!"
+ ADD_ELECTORAL_CONFIDENCE_FIRST: "[COUNTRY.GetAltAdjectiveNoFlag('aa')] [concept_electoral_confidence|l] se zvýší o #variable $VALUE|+0%$#!"
+ ADD_ELECTORAL_CONFIDENCE_FIRST_NEGATIVE: "[COUNTRY.GetAltAdjectiveNoFlag('aa')] [concept_electoral_confidence|l] se sníží o #variable $VALUE|-0%$#!"
+ ADD_ELECTORAL_CONFIDENCE_THIRD: "[COUNTRY.GetAltAdjective('aa')] [concept_electoral_confidence|l] se zvýší o #variable $VALUE|+0%$#!"
+ ADD_ELECTORAL_CONFIDENCE_THIRD_NEGATIVE: "[COUNTRY.GetAltAdjective('aa')] [concept_electoral_confidence|l] se sníží o #variable $VALUE|-0%$#!"
+ SET_ELECTORAL_CONFIDENCE: "[concept_electoral_confidence] je nastavena na #variable $VALUE|0%$#!"
+ SET_ELECTORAL_CONFIDENCE_FIRST: "[COUNTRY.GetAltAdjectiveNoFlag('aa')] [concept_electoral_confidence] je nastavena na #variable $VALUE|0%$#!"
+ SET_ELECTORAL_CONFIDENCE_THIRD: "[COUNTRY.GetAltAdjective('aa')] [concept_electoral_confidence] je nastavena na #variable $VALUE|0%$#!"

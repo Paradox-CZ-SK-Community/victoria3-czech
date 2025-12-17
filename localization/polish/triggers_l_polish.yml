@@ -4025,25 +4025,25 @@
  TRIGGER_LIBERTY_DESIRE_WEEKLY_PROGRESS_THIRD_NOT: "$TRIGGER_LIBERTY_DESIRE_WEEKLY_PROGRESS_FIRST_NOT$" # todo: NEW TRANSLATION
  TRIGGER_GDP_RANKING: "[Concept('concept_gdp', '$concept_gdp_short$')] pořadí je $COMPARATOR$ $NUM|v$" # todo: NEW TRANSLATION
  TRIGGER_GDP_RANKING_NOT: "[Concept('concept_gdp', '$concept_gdp_short$')] pořadí je #b not#! $COMPARATOR$ $NUM|v$" # todo: NEW TRANSLATION
- TRIGGER_GDP_RANKING_FIRST: "[COUNTRY.GetAdjectiveNoFlag] [Concept('concept_gdp', '$concept_gdp_short$')] pořadí je $COMPARATOR$ $NUM|v$ (aktuálně [COUNTRY.GetGDPRanking])" # todo: NEW TRANSLATION
- TRIGGER_GDP_RANKING_FIRST_NOT: "[COUNTRY.GetAdjectiveNoFlag] [Concept('concept_gdp', '$concept_gdp_short$')] pořadí je #b not#! $COMPARATOR$ $NUM|v$ (aktuálně [COUNTRY.GetGDPRanking])" # todo: NEW TRANSLATION
- TRIGGER_GDP_RANKING_THIRD: "[COUNTRY.GetAdjective] [Concept('concept_gdp', '$concept_gdp_short$')] pořadí je $COMPARATOR$ $NUM|v$ (aktuálně [COUNTRY.GetGDPRanking])" # todo: NEW TRANSLATION
- TRIGGER_GDP_RANKING_THIRD_NOT: "[COUNTRY.GetAdjective] [Concept('concept_gdp', '$concept_gdp_short$')] pořadí je #b not#! $COMPARATOR$ $NUM|v$ (aktuálně [COUNTRY.GetGDPRanking])" # todo: NEW TRANSLATION
- TRIGGER_COUNTRY_SCOPE_EQUAL: "Je [COUNTRY.GetName]" # todo: NEW TRANSLATION
- TRIGGER_COUNTRY_SCOPE_EQUAL_NOT: "Je #b not#! [COUNTRY.GetName]" # todo: NEW TRANSLATION
- TRIGGER_ELECTORAL_CONFIDENCE: "[concept_electoral_confidence] je $COMPARATOR$ $NUM|%0v$ (aktuálně $CURRENT_VALUE|%0v$)" # todo: NEW TRANSLATION
- TRIGGER_ELECTORAL_CONFIDENCE_NOT: "[concept_electoral_confidence] je #bold not #!$COMPARATOR$ $NUM|%0v$ (aktuálně $CURRENT_VALUE|%0v$)" # todo: NEW TRANSLATION
- TRIGGER_ELECTORAL_CONFIDENCE_FIRST: "[COUNTRY.GetAdjectiveNoFlag] [concept_electoral_confidence] je $COMPARATOR$ $NUM|%0v$ (aktuálně $CURRENT_VALUE|%0v$)" # todo: NEW TRANSLATION
- TRIGGER_ELECTORAL_CONFIDENCE_FIRST_NOT: "[COUNTRY.GetAdjectiveNoFlag] [concept_electoral_confidence] je #bold not #!$COMPARATOR$ $NUM|%0v$ (aktuálně $CURRENT_VALUE|%0v$)" # todo: NEW TRANSLATION
- TRIGGER_ELECTORAL_CONFIDENCE_THIRD: "[COUNTRY.GetAdjective] [concept_electoral_confidence] je $COMPARATOR$ $NUM|%0v$ (aktuálně $CURRENT_VALUE|%0v$)" # todo: NEW TRANSLATION
- TRIGGER_ELECTORAL_CONFIDENCE_THIRD_NOT: "[COUNTRY.GetAdjective] [concept_electoral_confidence] je #bold not #!$COMPARATOR$ $NUM|%0v$ (aktuálně $CURRENT_VALUE|%0v$)" # todo: NEW TRANSLATION
- TRIGGER_CAN_TRANSFER_SUBJECT: "[TARGET_COUNTRY.GetName] lze převést jako [concept_subject] na [COUNTRY.GetName]" # todo: NEW TRANSLATION
- TRIGGER_CAN_TRANSFER_SUBJECT_NOT: "[TARGET_COUNTRY.GetName] #b cannot#! být převeden jako [concept_subject] na [COUNTRY.GetName]" # todo: NEW TRANSLATION
- TRIGGER_CAN_TRANSFER_SUBJECT_FIRST: "[TARGET_COUNTRY.GetName] lze převést jako [concept_subject] na [COUNTRY.GetNameNoFlag]" # todo: NEW TRANSLATION
- TRIGGER_CAN_TRANSFER_SUBJECT_FIRST_NOT: "[TARGET_COUNTRY.GetName] #b cannot#! být převeden jako [concept_subject] na [COUNTRY.GetNameNoFlag]" # todo: NEW TRANSLATION
- TRIGGER_IS_IN_SAME_MARKET_AREA: "Je ve stejné [concept_market_area] jako [TARGET_STATE.GetName]" # todo: NEW TRANSLATION
- TRIGGER_IS_IN_SAME_MARKET_AREA_NOT: "Je #bold not#! ve stejné [concept_market_area] jako [TARGET_STATE.GetName]" # todo: NEW TRANSLATION
- TRIGGER_IS_IN_SAME_MARKET_AREA_FIRST: "[STATE.GetNameNoFlag] je ve stejné [concept_market_area] jako [TARGET_STATE.GetName]" # todo: NEW TRANSLATION
- TRIGGER_IS_IN_SAME_MARKET_AREA_FIRST_NOT: "[STATE.GetNameNoFlag] je #bold not#! ve stejné [concept_market_area] jako [TARGET_STATE.GetName]" # todo: NEW TRANSLATION
- TRIGGER_IS_IN_SAME_MARKET_AREA_THIRD: "[STATE.GetName] je ve stejné [concept_market_area] jako [TARGET_STATE.GetName]" # todo: NEW TRANSLATION
- TRIGGER_IS_IN_SAME_MARKET_AREA_THIRD_NOT: "[STATE.GetName] je #bold not#! ve stejné [concept_market_area] jako [TARGET_STATE.GetName]" # todo: NEW TRANSLATION
+ TRIGGER_GDP_RANKING_FIRST: "[COUNTRY.GetAdjectiveNoFlag] [Concept('concept_gdp', '$concept_gdp_short$')] pořadí je $COMPARATOR$ $NUM|v$ (aktuálně [COUNTRY.GetGDPRanking])"
+ TRIGGER_GDP_RANKING_FIRST_NOT: "[COUNTRY.GetAdjectiveNoFlag] [Concept('concept_gdp', '$concept_gdp_short$')] pořadí je #b not#! $COMPARATOR$ $NUM|v$ (aktuálně [COUNTRY.GetGDPRanking])"
+ TRIGGER_GDP_RANKING_THIRD: "[COUNTRY.GetAdjective] [Concept('concept_gdp', '$concept_gdp_short$')] pořadí je $COMPARATOR$ $NUM|v$ (aktuálně [COUNTRY.GetGDPRanking])"
+ TRIGGER_GDP_RANKING_THIRD_NOT: "[COUNTRY.GetAdjective] [Concept('concept_gdp', '$concept_gdp_short$')] pořadí #b není#! $COMPARATOR$ $NUM|v$ (aktuálně [COUNTRY.GetGDPRanking])"
+ TRIGGER_COUNTRY_SCOPE_EQUAL: "Je [COUNTRY.GetName]"
+ TRIGGER_COUNTRY_SCOPE_EQUAL_NOT: "#b Není#! [COUNTRY.GetName]"
+ TRIGGER_ELECTORAL_CONFIDENCE: "[concept_electoral_confidence] je $COMPARATOR$ $NUM|%0v$ (aktuálně $CURRENT_VALUE|%0v$)"
+ TRIGGER_ELECTORAL_CONFIDENCE_NOT: "[concept_electoral_confidence] #bold není #!$COMPARATOR$ $NUM|%0v$ (aktuálně $CURRENT_VALUE|%0v$)"
+ TRIGGER_ELECTORAL_CONFIDENCE_FIRST: "[COUNTRY.GetAdjectiveNoFlag] [concept_electoral_confidence] je $COMPARATOR$ $NUM|%0v$ (aktuálně $CURRENT_VALUE|%0v$)"
+ TRIGGER_ELECTORAL_CONFIDENCE_FIRST_NOT: "[COUNTRY.GetAdjectiveNoFlag] [concept_electoral_confidence] #bold není #!$COMPARATOR$ $NUM|%0v$ (aktuálně $CURRENT_VALUE|%0v$)"
+ TRIGGER_ELECTORAL_CONFIDENCE_THIRD: "[COUNTRY.GetAdjective] [concept_electoral_confidence] je $COMPARATOR$ $NUM|%0v$ (aktuálně $CURRENT_VALUE|%0v$)"
+ TRIGGER_ELECTORAL_CONFIDENCE_THIRD_NOT: "[COUNTRY.GetAdjective] [concept_electoral_confidence] #bold není #!$COMPARATOR$ $NUM|%0v$ (aktuálně $CURRENT_VALUE|%0v$)"
+ TRIGGER_CAN_TRANSFER_SUBJECT: "[TARGET_COUNTRY.GetName] lze převést jako [Concept('concept_subject','závislou zemi')] na [COUNTRY.GetName]"
+ TRIGGER_CAN_TRANSFER_SUBJECT_NOT: "[TARGET_COUNTRY.GetName] #b nemůže#! být převeden jako [Concept('concept_subject','závislou zemi')] na [COUNTRY.GetName]"
+ TRIGGER_CAN_TRANSFER_SUBJECT_FIRST: "[TARGET_COUNTRY.GetName] lze převést jako [Concept('concept_subject','závislou zemi')] na [COUNTRY.GetNameNoFlag]"
+ TRIGGER_CAN_TRANSFER_SUBJECT_FIRST_NOT: "[TARGET_COUNTRY.GetName] #b nemůže#! být převeden jako [Concept('concept_subject','závislá zem')] na [COUNTRY.GetNameNoFlag]"
+ TRIGGER_IS_IN_SAME_MARKET_AREA: "Je ve stejné [Concept('concept_market_area','oblasti trhu')] jako [TARGET_STATE.GetName]"
+ TRIGGER_IS_IN_SAME_MARKET_AREA_NOT: "#bold Není#! ve stejné [Concept('concept_market_area','oblasti trhu')] jako [TARGET_STATE.GetName]"
+ TRIGGER_IS_IN_SAME_MARKET_AREA_FIRST: "[STATE.GetNameNoFlag] je ve stejné [Concept('concept_market_area','oblasti trhu')] jako [TARGET_STATE.GetName]"
+ TRIGGER_IS_IN_SAME_MARKET_AREA_FIRST_NOT: "[STATE.GetNameNoFlag] #bold není#! ve stejné [Concept('concept_market_area','oblasti trhu')] jako [TARGET_STATE.GetName]"
+ TRIGGER_IS_IN_SAME_MARKET_AREA_THIRD: "[STATE.GetName] je ve stejné [Concept('concept_market_area','oblasti trhu')] jako [TARGET_STATE.GetName]"
+ TRIGGER_IS_IN_SAME_MARKET_AREA_THIRD_NOT: "[STATE.GetName] #bold není#! ve stejné [Concept('concept_market_area','oblasti trhu')] jako [TARGET_STATE.GetName]"
