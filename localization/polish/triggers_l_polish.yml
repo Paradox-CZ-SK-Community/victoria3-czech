@@ -308,10 +308,10 @@
  TRIGGER_ANY_SCOPE_BUILDING_ALL_THIRD: "Všechny [Concept('concept_building', '$concept_buildings$')|l]:"
  TRIGGER_ANY_SCOPE_BUILDING_COUNT: "$PARAMETERS$ $FILTER$[Concept('concept_building', '$concept_buildings$')|l]:"
  TRIGGER_ANY_SCOPE_BUILDING_FIRST: "Jakákoli [Country.GetAltAdjectiveNoFlag('aa')|l] [concept_building|l]:"
- TRIGGER_ANY_SCOPE_BUILDING_FIRST_NOT: "Žádná [Country.GetAdjectiveNoFlag] [concept_building|l]:"
- TRIGGER_ANY_SCOPE_BUILDING_IN_STATE_ALL_THIRD: "Všechny [Concept('concept_building', '$concept_buildings$')] v [STATE.GetName]:" # todo: CHANGED
- TRIGGER_ANY_SCOPE_BUILDING_IN_STATE_THIRD: "Libovolná [concept_building] v [STATE.GetName]:" # todo: CHANGED
- TRIGGER_ANY_SCOPE_BUILDING_IN_STATE_THIRD_NOT: "Žádná [concept_building] v [STATE.GetName]:" # todo: CHANGED
+ TRIGGER_ANY_SCOPE_BUILDING_FIRST_NOT: "Žádná [Country.GetAltAdjectiveNoFlag('aa')] [concept_building|l]:"
+ TRIGGER_ANY_SCOPE_BUILDING_IN_STATE_ALL_THIRD: "Všechny [Concept('concept_building', 'budovy')] v [STATE.GetName]:"
+ TRIGGER_ANY_SCOPE_BUILDING_IN_STATE_THIRD: "Libovolná [Concept('concept_building','budova')] v [STATE.GetName]:"
+ TRIGGER_ANY_SCOPE_BUILDING_IN_STATE_THIRD_NOT: "Žádná [Concept('concept_building','budova')] v [STATE.GetName]:"
  TRIGGER_ANY_SCOPE_BUILDING_NOT: "Žádná [concept_building|l]:"
  TRIGGER_ANY_SCOPE_BUILDING_PERCENT: "$PARAMETERS$ z $FILTER$[Concept('concept_building', '$concept_buildings$')|l]:"
  TRIGGER_ANY_SCOPE_BUILDING_PERCENT_FIRST: "$PARAMETERS$ z $FILTER$[Concept('concept_building', '$concept_buildings$')|l]:"
@@ -1032,12 +1032,12 @@
  TRIGGER_COUNTRY_GDP_LESS_OR_EQUAL: "$GDP_SHORT$ [COUNTRY.GetName] je méně než, nebo rovno @money!$TARGET_VALUE|Dv$ (aktuálně: @money!$CURRENT_VALUE|Dv$)"
  TRIGGER_COUNTRY_GDP_LESS_THAN: "HDP [COUNTRY.GetName] je menší než @money!$TARGET_VALUE|Dv$ (aktuálně: @money!$CURRENT_VALUE|Dv$)"
  TRIGGER_COUNTRY_GDP_NOT_EQUAL: "HDP [COUNTRY.GetName] #bold není#! @money!$TARGET_VALUE|Dv$ (aktuálně: @money!$CURRENT_VALUE|Dv$)"
- TRIGGER_COUNTRY_HAS_BUILDING_GROUP_LEVELS: "Má $COMPARATOR$ #variable $NUM|0$#! úrovní budov skupiny [BUILDING_GROUP.GetName]" # todo: CHANGED
- TRIGGER_COUNTRY_HAS_BUILDING_GROUP_LEVELS_FIRST: "[COUNTRY.GetNameNoFlag] má $COMPARATOR$ #variable $NUM|0$#! úrovní budov skupiny [BUILDING_GROUP.GetName]" # todo: CHANGED
- TRIGGER_COUNTRY_HAS_BUILDING_GROUP_LEVELS_FIRST_NOT: "[COUNTRY.GetNameNoFlag] #bold nemá#! $COMPARATOR$ #variable $NUM|0$#! $NUM$#! úrovní budov skupiny [BUILDING_GROUP.GetName]" # todo: CHANGED
- TRIGGER_COUNTRY_HAS_BUILDING_GROUP_LEVELS_NOT: " #bold Nemá#! $COMPARATOR$ #variable $NUM|0$#! $NUM$#! úrovní budov skupiny [BUILDING_GROUP.GetName]" # todo: CHANGED
- TRIGGER_COUNTRY_HAS_BUILDING_GROUP_LEVELS_THIRD: "[COUNTRY.GetName] má $COMPARATOR$ #variable $NUM|0$#! úrovní budov skupiny [BUILDING_GROUP.GetName]" # todo: CHANGED
- TRIGGER_COUNTRY_HAS_BUILDING_GROUP_LEVELS_THIRD_NOT: "[COUNTRY.GetName] #bold nemá#! $COMPARATOR$ #variable $NUM|0$#! $NUM$#! úrovní budov skupiny [BUILDING_GROUP.GetName]" # todo: CHANGED
+ TRIGGER_COUNTRY_HAS_BUILDING_GROUP_LEVELS: "Má $COMPARATOR$ #variable $NUM|0$#! úrovní budov skupiny [BUILDING_GROUP.GetName]"
+ TRIGGER_COUNTRY_HAS_BUILDING_GROUP_LEVELS_FIRST: "[COUNTRY.GetNameNoFlag] má $COMPARATOR$ #variable $NUM|0$#! úrovní budov skupiny [BUILDING_GROUP.GetName]"
+ TRIGGER_COUNTRY_HAS_BUILDING_GROUP_LEVELS_FIRST_NOT: "[COUNTRY.GetNameNoFlag] #bold nemá#! $COMPARATOR$ #variable $NUM|0$#! $NUM$#! úrovní budov skupiny [BUILDING_GROUP.GetName]"
+ TRIGGER_COUNTRY_HAS_BUILDING_GROUP_LEVELS_NOT: " #bold Nemá#! $COMPARATOR$ #variable $NUM|0$#! $NUM$#! úrovní budov skupiny [BUILDING_GROUP.GetName]"
+ TRIGGER_COUNTRY_HAS_BUILDING_GROUP_LEVELS_THIRD: "[COUNTRY.GetName] má $COMPARATOR$ #variable $NUM|0$#! úrovní budov skupiny [BUILDING_GROUP.GetName]"
+ TRIGGER_COUNTRY_HAS_BUILDING_GROUP_LEVELS_THIRD_NOT: "[COUNTRY.GetName] #bold nemá#! $COMPARATOR$ #variable $NUM|0$#! $NUM$#! úrovní budov skupiny [BUILDING_GROUP.GetName]"
  TRIGGER_COUNTRY_HAS_BUILDING_LEVELS: "Má $COMPARATOR$ #variable $NUM|0$#! úrovní budov"
  TRIGGER_COUNTRY_HAS_BUILDING_LEVELS_FIRST: "[COUNTRY.GetNameNoFlag] má $COMPARATOR$ #variable $NUM|0$#! úrovní budov"
  TRIGGER_COUNTRY_HAS_BUILDING_LEVELS_FIRST_NOT: "[COUNTRY.GetNameNoFlag] #bold nemá#! $COMPARATOR$ #variable $NUM|0$#! úroveň budov"
@@ -1154,8 +1154,8 @@
  TRIGGER_CULTURE_PERCENT_COUNTRY_NOT: "Populace v [Country.GetAltAdjective('L')] #bold není#! $COMPARATOR$ $NUM|%0v$ [TARGET_CULTURE.GetName] (aktuálně $CURRENT_VALUE|%0v$)"
  TRIGGER_CULTURE_PERCENT_COUNTRY_THIRD: "Populace v [Country.GetAltAdjective('L')] je $COMPARATOR$ $NUM|%0v$ [TARGET_CULTURE.GetName] (Aktuálně $CURRENT_VALUE|%0v$)"
  TRIGGER_CULTURE_PERCENT_COUNTRY_THIRD_NOT: "Populace v [Country.GetAltAdjective('L')] #bold není#! $COMPARATOR$ $NUM|%0v$ [TARGET_CULTURE.GetName] (Aktuálně $CURRENT_VALUE|%0v$)"
- TRIGGER_CULTURE_PERCENT_STATE: "Populace v tomto [concept_state] je $COMPARATOR$ $NUM|%0v$ [TARGET_CULTURE.GetName]" # todo: CHANGED
- TRIGGER_CULTURE_PERCENT_STATE_NOT: "Populace v tomto [concept_state] #bold není#! $COMPARATOR$ $NUM|%0v$ [TARGET_CULTURE.GetName]" # todo: CHANGED
+ TRIGGER_CULTURE_PERCENT_STATE: "Populace v tomto [concept_state] je $COMPARATOR$ $NUM|%0v$ [TARGET_CULTURE.GetName]"
+ TRIGGER_CULTURE_PERCENT_STATE_NOT: "Populace v tomto [concept_state] #bold není#! $COMPARATOR$ $NUM|%0v$ [TARGET_CULTURE.GetName]"
  TRIGGER_CULTURE_SECESSION_PROGRESS: "[CULTURE.GetName] v [TARGET_COUNTRY.GetAltAdjective('L')]: pokrok [concept_secession|l] ($CURRENT_VALUE$) je $COMPARATOR$ $NUM|v$"
  TRIGGER_CULTURE_SECESSION_PROGRESS_NOT: "[CULTURE.GetName] v [TARGET_COUNTRY.GetAltAdjective('L')]: pokrok [concept_secession|l] ($CURRENT_VALUE$) je $COMPARATOR$ $NUM|v$"
  TRIGGER_DEPENDENTS_GLOBAL: "Počet [Concept('concept_individual','$concept_individuals$')|l] kteří jsou [concept_dependents|l] je $COMPARATOR$ #variable $NUM$#!"
@@ -1446,7 +1446,7 @@
  TRIGGER_HAS_DIPLOMATIC_RELEVANCE: "Jsme [concept_neighbors|l] s [TARGET_COUNTRY.GetAltAdjective('I')] nebo máme [Concept('concept_interest', '$concept_interests$')|l] ve stejných [Concept('concept_strategic_region','strategických regionech')|l]"
  TRIGGER_HAS_DIPLOMATIC_RELEVANCE_NOT: "#b Nejsme#! [concept_neighbors|l] s [TARGET_COUNTRY.GetAltAdjective('I')] a #b nemáme#! žádné [Concept('concept_interest', '$concept_interests$')|l] ve stejných [Concept('concept_strategic_region','strategických regionech')|l]"
  TRIGGER_HAS_DIPLOMATS_EXPELLED: "Má nedávno vyhozené diplomaty [TARGET_COUNTRY.GetName]"
- TRIGGER_HAS_DIPLOMATS_EXPELLED_NOT: "Nedávno #bold nevyhostil#! diplomaty [TARGET_COUNTRY.GetName]" # todo: CHANGED
+ TRIGGER_HAS_DIPLOMATS_EXPELLED_NOT: "#bold nevyhostil#! nedávno diplomaty [TARGET_COUNTRY.GetName]"
  TRIGGER_HAS_DISCRIMINATION_TRAIT: "$SUBJECT$ má vlastnost [DISCRIMINATION_TRAIT.GetName]"
  TRIGGER_HAS_DISCRIMINATION_TRAIT_NONE: "Má vlastnost [DISCRIMINATION_TRAIT.GetName]"
  TRIGGER_HAS_DISCRIMINATION_TRAIT_NONE_NOT: "#bold ne #!má vlastnost [DISCRIMINATION_TRAIT.GetName]"
@@ -1606,10 +1606,10 @@
  TRIGGER_HAS_PORT_NOT: "#bold Nemá #! aktivní port"
  TRIGGER_HAS_POSSIBLE_DECISIONS: "Má možné rozhodnutí"
  TRIGGER_HAS_POSSIBLE_DECISIONS_NOT: "#bold Nemá#! žádná možná rozhodnutí"
- TRIGGER_HAS_POTENTIAL_RESOURCE: "Může potenciálně mít #v $BUILDING_TYPE$#!" # todo: CHANGED
- TRIGGER_HAS_POTENTIAL_RESOURCE_NOT: "#bold nemůže#! potenciálně mít #v $BUILDING_TYPE$#!" # todo: CHANGED
- TRIGGER_HAS_POTENTIAL_RESOURCE_THIRD: "[STATE.GetName] by mohl potenciálně mít #v $BUILDING_TYPE$#!" # todo: CHANGED
- TRIGGER_HAS_POTENTIAL_RESOURCE_THIRD_NOT: "[STATE.GetName] by #bold nemohl#! potenciálně mít #v $BUILDING_TYPE$#!" # todo: CHANGED
+ TRIGGER_HAS_POTENTIAL_RESOURCE: "Může potenciálně mít #v $BUILDING_TYPE$#!"
+ TRIGGER_HAS_POTENTIAL_RESOURCE_NOT: "#bold nemůže#! potenciálně mít #v $BUILDING_TYPE$#!"
+ TRIGGER_HAS_POTENTIAL_RESOURCE_THIRD: "[STATE.GetName] by mohl potenciálně mít #v $BUILDING_TYPE$#!"
+ TRIGGER_HAS_POTENTIAL_RESOURCE_THIRD_NOT: "[STATE.GetName] by #bold nemohl#! potenciálně mít #v $BUILDING_TYPE$#!"
  TRIGGER_HAS_POTENTIAL_SUPPLY: "Má v oblasti $NAME$ lokální [concept_supply|l] nebo může být [Concept('concept_trade', '$concept_imported$')|l]"
  TRIGGER_HAS_POTENTIAL_SUPPLY_NOT: "#b Nemá#! v oblasti $NAME$ lokální [concept_supply|l] a nemůže být [Concept('concept_trade', '$concept_imported$')|l]"
  TRIGGER_HAS_POTENTIAL_SUPPLY_THIRD: "[Goods.GetName] má místní [concept_supply|l] nebo může být [Concept('concept_trade', '$concept_imported$')|l] v $NAME$"
@@ -1931,8 +1931,8 @@
  TRIGGER_IS_BUILDABLE_NOT: "[BuildingType.GetName] #bold nemůže #! být manuálně postaven"
  TRIGGER_IS_BUILDING_CATEGORY: "Je $CATEGORY$"
  TRIGGER_IS_BUILDING_CATEGORY_NOT: "#bold Není#! [CATEGORY$]"
- TRIGGER_IS_BUILDING_GROUP: "Budova je ve skupině [BUILDING_GROUP.GetName]" # todo: CHANGED
- TRIGGER_IS_BUILDING_GROUP_NOT: "Budova #bold není#! ve skupině [BUILDING_GROUP.GetName]" # todo: CHANGED
+ TRIGGER_IS_BUILDING_GROUP: "Budova je ve skupině [BUILDING_GROUP.GetName]"
+ TRIGGER_IS_BUILDING_GROUP_NOT: "Budova #bold není#! ve skupině [BUILDING_GROUP.GetName]"
  TRIGGER_IS_BUILDING_TYPE: "Budova je [BUILDING_TYPE.GetName|l]"
  TRIGGER_IS_BUILDING_TYPE_NOT: "Budova #bold není#! [BUILDING_TYPE.GetName]"
  TRIGGER_IS_BUSY: "Je [concept_busy|l]"
@@ -2007,17 +2007,17 @@
  TRIGGER_IS_DIPLOMATIC_PLAY_INITIATOR_THIRD: "[COUNTRY.GetName] je [concept_initiator|l] aktuální [concept_diplomatic_play|l]"
  TRIGGER_IS_DIPLOMATIC_PLAY_INITIATOR_THIRD_NOT: "[COUNTRY.GetName] #b není#! iniciátor [concept_diplomatic_play|l] aktivního v současnosti"
  TRIGGER_IS_DIPLOMATIC_PLAY_INVOLVED_WITH: "Je zúčastněnou zemí spolu s [TARGET_COUNTRY.GetName] ve [concept_diplomatic_play|l]"
- TRIGGER_IS_DIPLOMATIC_PLAY_INVOLVED_WITH_FIRST: "[COUNTRY.GetNameNoFlag] je zapojenou zemí po boku [TARGET_COUNTRY.GetName] v [concept_diplomatic_play]" # todo: CHANGED
- TRIGGER_IS_DIPLOMATIC_PLAY_INVOLVED_WITH_FIRST_NOT: "[COUNTRY.GetNameNoFlag] #bold není#! zapojenou zemí po boku [TARGET_COUNTRY.GetName] v [concept_diplomatic_play]" # todo: CHANGED
- TRIGGER_IS_DIPLOMATIC_PLAY_INVOLVED_WITH_NOT: "#bold Není#! #! zúčastněnou zemí vedle [TARGET_COUNTRY.GetName] v [concept_diplomatic_play|l]"
- TRIGGER_IS_DIPLOMATIC_PLAY_INVOLVED_WITH_THIRD: "[COUNTRY.GetName] je zapojenou zemí po boku [TARGET_COUNTRY.GetName] v [concept_diplomatic_play]" # todo: CHANGED
- TRIGGER_IS_DIPLOMATIC_PLAY_INVOLVED_WITH_THIRD_NOT: "[COUNTRY.GetName] #bold není#! zapojenou zemí po boku [TARGET_COUNTRY.GetName] v [concept_diplomatic_play]" # todo: CHANGED
- TRIGGER_IS_DIPLOMATIC_PLAY_PARTICIPANT_WITH: "Je závazným účastníkem vedle [TARGET_COUNTRY.GetName] v [concept_diplomatic_play|l]"
- TRIGGER_IS_DIPLOMATIC_PLAY_PARTICIPANT_WITH_FIRST: "[COUNTRY.GetNameNoFlag] je angažovaným účastníkem po boku [TARGET_COUNTRY.GetName] v [concept_diplomatic_play]" # todo: CHANGED
- TRIGGER_IS_DIPLOMATIC_PLAY_PARTICIPANT_WITH_FIRST_NOT: "[COUNTRY.GetNameNoFlag] #bold není#! angažovaným účastníkem po boku [TARGET_COUNTRY.GetName] v [concept_diplomatic_play]" # todo: CHANGED
- TRIGGER_IS_DIPLOMATIC_PLAY_PARTICIPANT_WITH_NOT: "#bold Není#! angažovaný účastník spolu s [TARGET_COUNTRY.GetName] v [concept_diplomatic_play|l]"
- TRIGGER_IS_DIPLOMATIC_PLAY_PARTICIPANT_WITH_THIRD: "[COUNTRY.GetName] je angažovaným účastníkem po boku [TARGET_COUNTRY.GetName] v [concept_diplomatic_play]" # todo: CHANGED
- TRIGGER_IS_DIPLOMATIC_PLAY_PARTICIPANT_WITH_THIRD_NOT: "[COUNTRY.GetName] #bold není#! angažovaným účastníkem po boku [TARGET_COUNTRY.GetName] v [concept_diplomatic_play]" # todo: CHANGED
+ TRIGGER_IS_DIPLOMATIC_PLAY_INVOLVED_WITH_FIRST: "[COUNTRY.GetNameNoFlag] je zapojenou zemí po boku [TARGET_COUNTRY.GetAltAdjective('G')] v [Concept('concept_diplomatic_play','diplomatický hře')]"
+ TRIGGER_IS_DIPLOMATIC_PLAY_INVOLVED_WITH_FIRST_NOT: "[COUNTRY.GetNameNoFlag] #bold není#! zapojenou zemí po boku [TARGET_COUNTRY.GetAltAdjective('G')] v [Concept('concept_diplomatic_play','diplomatický hře')]"
+ TRIGGER_IS_DIPLOMATIC_PLAY_INVOLVED_WITH_NOT: "#bold Není#! zúčastněnou zemí vedle [TARGET_COUNTRY.GetAltAdjective('G')] v [Concept('concept_diplomatic_play','diplomatický hře')]"
+ TRIGGER_IS_DIPLOMATIC_PLAY_INVOLVED_WITH_THIRD: "[COUNTRY.GetName] je zapojenou zemí po boku [TARGET_COUNTRY.GetAltAdjective('G')] v [Concept('concept_diplomatic_play','diplomatický hře')]"
+ TRIGGER_IS_DIPLOMATIC_PLAY_INVOLVED_WITH_THIRD_NOT: "[COUNTRY.GetName] #bold není#! zapojenou zemí po boku [TARGET_COUNTRY.GetAltAdjective('G')] v [Concept('concept_diplomatic_play','diplomatický hře')]"
+ TRIGGER_IS_DIPLOMATIC_PLAY_PARTICIPANT_WITH: "Je závazným účastníkem vedle [TARGET_COUNTRY.GetName] v [Concept('concept_diplomatic_play','diplomatický hře')]"
+ TRIGGER_IS_DIPLOMATIC_PLAY_PARTICIPANT_WITH_FIRST: "[COUNTRY.GetNameNoFlag] je angažovaným účastníkem po boku [TARGET_COUNTRY.GetAltAdjective('G')] v [Concept('concept_diplomatic_play','diplomatický hře')]"
+ TRIGGER_IS_DIPLOMATIC_PLAY_PARTICIPANT_WITH_FIRST_NOT: "[COUNTRY.GetNameNoFlag] #bold není#! angažovaným účastníkem po boku [TARGET_COUNTRY.GetAltAdjective('G')] v [Concept('concept_diplomatic_play','diplomatický hře')]"
+ TRIGGER_IS_DIPLOMATIC_PLAY_PARTICIPANT_WITH_NOT: "#bold Není#! angažovaný účastník spolu s [TARGET_COUNTRY.GetName] v [Concept('concept_diplomatic_play','diplomatický hře')]"
+ TRIGGER_IS_DIPLOMATIC_PLAY_PARTICIPANT_WITH_THIRD: "[COUNTRY.GetName] je angažovaným účastníkem po boku [TARGET_COUNTRY.GetAltAdjective('G')] v [Concept('concept_diplomatic_play','diplomatický hře')]"
+ TRIGGER_IS_DIPLOMATIC_PLAY_PARTICIPANT_WITH_THIRD_NOT: "[COUNTRY.GetName] #bold není#! angažovaným účastníkem po boku [TARGET_COUNTRY.GetAltAdjective('G')] v [Concept('concept_diplomatic_play','diplomatický hře')]"
  TRIGGER_IS_DIPLOMATIC_PLAY_TARGET: "Je cílem v jakékoli diplomatické hře"
  TRIGGER_IS_DIPLOMATIC_PLAY_TARGET_NOT: "#bold Není#! cílem v žádné diplomatické hře"
  TRIGGER_IS_DIPLOMATIC_PLAY_TYPE: "Diplomatická hra je [DIPLOMATIC_PLAY_TYPE.GetName]"
@@ -2166,8 +2166,8 @@
  TRIGGER_IS_IN_SAME_POWER_BLOC_FIRST: "Jsme ve stejném [concept_power_bloc|l] jako [TARGET_COUNTRY.GetName]"
  TRIGGER_IS_IN_SAME_POWER_BLOC_FIRST_NOT: "Jsme #bold ne#! ve stejné [concept_power_bloc|l] jako [TARGET_COUNTRY.GetName]"
  TRIGGER_IS_IN_SAME_POWER_BLOC_NOT: "Země není #bold ve stejném#! [concept_power_bloc|l] jako [TARGET_COUNTRY.GetName]"
- TRIGGER_IS_IN_SAME_POWER_BLOC_THIRD: "[COUNTRY.GetName] je ve stejném [concept_power_bloc] jako [TARGET_COUNTRY.GetName]" # todo: CHANGED
- TRIGGER_IS_IN_SAME_POWER_BLOC_THIRD_NOT: "[COUNTRY.GetName] #bold není#! ve stejném [concept_power_bloc] jako [TARGET_COUNTRY.GetName]" # todo: CHANGED
+ TRIGGER_IS_IN_SAME_POWER_BLOC_THIRD: "[COUNTRY.GetName] je ve stejném [Concept('concept_power_bloc','mocenském bloku')] jako [TARGET_COUNTRY.GetName]"
+ TRIGGER_IS_IN_SAME_POWER_BLOC_THIRD_NOT: "[COUNTRY.GetName] #bold není#! ve stejném [Concept('concept_power_bloc','mocenském bloku')] jako [TARGET_COUNTRY.GetName]"
  TRIGGER_IS_IN_SEVERE_STARVATION: "Je v těžké hladu"
  TRIGGER_IS_IN_SEVERE_STARVATION_NOT: "#b Není#! v těžkém hladomoru"
  TRIGGER_IS_IN_STARVATION: "Je v hladovění"
@@ -2696,10 +2696,10 @@
  TRIGGER_NATIONALIZATION_COST_THIRD_NOT: "Celkové náklady na [Concept('concept_nationalize','znárodnění')|l] všech [Concept('concept_building', 'budov')|l] v [Country.GetAltAdjective('L')] vlastněných [Concept('concept_government','vládou')|l] nebo [TARGET_COUNTRY.GetAltAdjective('I')] [Concept('concept_pop', 'populací')|l] #bold není#! $COMPARATOR$ $NUM|%2v$ (aktuálně: $CURRENT_VALUE|%2v$)"
  TRIGGER_NAVAL_POWER_PROJECTION: "Má námořní [concept_power_projection|l] $COMPARATOR$ $NUM|v$"
  TRIGGER_NAVAL_POWER_PROJECTION_FIRST: "[COUNTRY.GetAdjectiveNoFlag] námořní [concept_power_projection|l] je $COMPARATOR$ $NUM|v$"
- TRIGGER_NAVAL_POWER_PROJECTION_FIRST_NOT: "[COUNTRY.GetAdjectiveNoFlag] námořní [concept_power_projection] #bold není#! $COMPARATOR$ $NUM|v$" # todo: CHANGED
- TRIGGER_NAVAL_POWER_PROJECTION_NOT: "#bold Nemá#! námořní [concept_power_projection] $COMPARATOR$ $NUM|v$" # todo: CHANGED
+ TRIGGER_NAVAL_POWER_PROJECTION_FIRST_NOT: "[COUNTRY.GetAdjectiveNoFlag] námořní [concept_power_projection|l] #bold není#! $COMPARATOR$ $NUM|v$"
+ TRIGGER_NAVAL_POWER_PROJECTION_NOT: "#bold Nemá#! námořní [concept_power_projection|l] $COMPARATOR$ $NUM|v$"
  TRIGGER_NAVAL_POWER_PROJECTION_THIRD: "[COUNTRY.GetAdjective] námořní [concept_power_projection|l] je $COMPARATOR$ $NUM|v$"
- TRIGGER_NAVAL_POWER_PROJECTION_THIRD_NOT: "[COUNTRY.GetAdjective] námořní [concept_power_projection] #bold není#! $COMPARATOR$ $NUM|v$" # todo: CHANGED
+ TRIGGER_NAVAL_POWER_PROJECTION_THIRD_NOT: "[COUNTRY.GetAdjective] námořní [concept_power_projection|l] #bold není#! $COMPARATOR$ $NUM|v$"
  TRIGGER_NAVY_SIZE_EQUAL: "Počet flotil, které [COUNTRY.GetName] má, je $TARGET_VALUE|0v$"
  TRIGGER_NAVY_SIZE_EQUAL_FIRST: "Počet flotil, které má [COUNTRY.GetNameNoFlag], je $TARGET_VALUE|0v$"
  TRIGGER_NAVY_SIZE_EQUAL_FIRST_NOT: "Počet flotil, které má [COUNTRY.GetNameNoFlag], #bold není#! #!$TARGET_VALUE|0v$"
@@ -3128,8 +3128,8 @@
  TRIGGER_PREFERS_LAW_NOT: "#b Nemá#! preferovat [TARGET_LAW_TYPE.GetName] před $COMPARISON_LAW_TYPE_NAME$"
  TRIGGER_PREFERS_LAW_THIRD: "[INTEREST_GROUP.GetName] upřednostňuje [TARGET_LAW_TYPE.GetName] před $COMPARISON_LAW_TYPE_NAME$"
  TRIGGER_PREFERS_LAW_THIRD_NOT: "[INTEREST_GROUP.GetName] #b nepreferuje#! [TARGET_LAW_TYPE.GetName] před $COMPARISON_LAW_TYPE_NAME$"
- TRIGGER_PRESTIGE: "Prestiž [COUNTRY.GetName] je $COMPARATOR$ #v $NUM$#! (aktuálně: $CURRENT_VALUE|v$)" # todo: CHANGED
- TRIGGER_PRESTIGE_NOT: "Prestiž [COUNTRY.GetName] #bold není#! $COMPARATOR$ #v $NUM$#! (aktuálně: $CURRENT_VALUE|v$)" # todo: CHANGED
+ TRIGGER_PRESTIGE: "Prestiž [COUNTRY.GetName] je $COMPARATOR$ #v $NUM$#! (aktuálně: $CURRENT_VALUE|v$)"
+ TRIGGER_PRESTIGE_NOT: "Prestiž [COUNTRY.GetName] #bold není#! $COMPARATOR$ #v $NUM$#! (aktuálně: $CURRENT_VALUE|v$)"
  TRIGGER_PRIMARY_CULTURES_PERCENT_COUNTRY: "[COUNTRY.GetAdjective] [concept_primary_cultures|l] tvoří $COMPARATOR$ $NUM|%0v$ populace v [Country.GetAltAdjective('L')] (aktuálně $CURRENT_VALUE|%0v$)"
  TRIGGER_PRIMARY_CULTURES_PERCENT_COUNTRY_FIRST: "[COUNTRY.GetAdjective] [concept_primary_cultures|l] tvoří $COMPARATOR$ $NUM|%0v$ populace v [Country.GetAltAdjectiveNoFlag('L')] (Aktuálně $CURRENT_VALUE|%0v$)"
  TRIGGER_PRIMARY_CULTURES_PERCENT_COUNTRY_FIRST_NOT: "[COUNTRY.GetAdjective] [concept_primary_cultures|l] #bold není#! $COMPARATOR$ $NUM|%0v$ z populace v [Country.GetAltAdjectiveNoFlag('L')] (aktuálně $CURRENT_VALUE|%0v$)"
@@ -3259,10 +3259,10 @@
  TRIGGER_RELIGION_PERCENT_COUNTRY_NOT: "Populace v [Country.GetAltAdjective('L')] #bold není#! $COMPARATOR$ $NUM|%0v$ [TARGET_RELIGION.GetName] (Aktuálně $CURRENT_VALUE|%0v$)"
  TRIGGER_RELIGION_PERCENT_COUNTRY_THIRD: "Populace v [Country.GetAltAdjective('L')] je $COMPARATOR$ $NUM|%0v$ [TARGET_RELIGION.GetName] (aktuálně $CURRENT_VALUE|%0v$)"
  TRIGGER_RELIGION_PERCENT_COUNTRY_THIRD_NOT: "Populace v [Country.GetAltAdjective('L')] #bold není#! $COMPARATOR$ $NUM|%0v$ [TARGET_RELIGION.GetName] (aktuálně $CURRENT_VALUE|%0v$)"
- TRIGGER_RELIGION_PERCENT_STATE: "Populace v tomto státě je $COMPARATOR$ $NUM|%0v$ [TARGET_RELIGION.GetName] (aktuálně $CURRENT_VALUE|%0v$)" # todo: CHANGED
- TRIGGER_RELIGION_PERCENT_STATE_NOT: "Populace v tomto státě #bold není#! $COMPARATOR$ $NUM|%0v$ [TARGET_RELIGION.GetName] (aktuálně $CURRENT_VALUE|%0v$)" # todo: CHANGED
- TRIGGER_REMAINING_UNDEPLETED: "[STATE_REGION.GetName] má $COMPARATOR$ #variable $NUM$#! zbývajících zdrojů v #variable $BUILDING_TYPE$#!" # todo: CHANGED
- TRIGGER_REMAINING_UNDEPLETED_NOT: "[STATE_REGION.GetName] #bold nemá#! $COMPARATOR$ #variable $NUM$#! zbývajících zdrojů v #variable $BUILDING_TYPE$#!" # todo: CHANGED
+ TRIGGER_RELIGION_PERCENT_STATE: "Populace v tomto státě je $COMPARATOR$ $NUM|%0v$ [TARGET_RELIGION.GetName] (aktuálně $CURRENT_VALUE|%0v$)"
+ TRIGGER_RELIGION_PERCENT_STATE_NOT: "Populace v tomto státě #bold není#! $COMPARATOR$ $NUM|%0v$ [TARGET_RELIGION.GetName] (aktuálně $CURRENT_VALUE|%0v$)"
+ TRIGGER_REMAINING_UNDEPLETED: "[STATE_REGION.GetName] má $COMPARATOR$ #variable $NUM$#! zbývajících zdrojů v #variable $BUILDING_TYPE$#!"
+ TRIGGER_REMAINING_UNDEPLETED_NOT: "[STATE_REGION.GetName] #bold nemá#! $COMPARATOR$ #variable $NUM$#! zbývajících zdrojů v #variable $BUILDING_TYPE$#!"
  TRIGGER_RESULT_UNDEFINED: "  •  $TEXT$"
  TRIGGER_REVOLUTION_PROGRESS: "Pokrok revoluce $COMPARATOR$ #variable $NUM$#!"
  TRIGGER_REVOLUTION_PROGRESS_NOT: "Pokrok revoluce #bold není#! $COMPARATOR$ #variable $NUM$#!"
@@ -3357,8 +3357,8 @@
  TRIGGER_STATE_GOODS_PRODUCTION_NOT: "Výroba státních zboží #b není#! $COMPARATOR$ #variable $NUM$#!  "
  TRIGGER_STATE_GOODS_PRODUCTION_THIRD: "Produkcí pro [STATE_GOODS.GetGoods.GetName] ve [STATE_GOODS.GetState.GetName] je $COMPARATOR$ #variable $NUM$#!"
  TRIGGER_STATE_GOODS_PRODUCTION_THIRD_NOT: "Výroba pro [STATE_GOODS.GetGoods.GetName] v [STATE_GOODS.GetState.GetName] #bold není#! $COMPARATOR$ #variable $NUM$#!  "
- TRIGGER_STATE_HAS_BUILDING_GROUP_LEVELS: "[STATE.GetName] má $COMPARATOR$ #variable $NUM|0$#! úrovní budov skupiny [BUILDING_GROUP.GetName]" # todo: CHANGED
- TRIGGER_STATE_HAS_BUILDING_GROUP_LEVELS_NOT: "[STATE.GetName] #bold nemá#! $COMPARATOR$ #variable $NUM|0$#! $NUM$#! úrovní budov skupiny [BUILDING_GROUP.GetName]" # todo: CHANGED
+ TRIGGER_STATE_HAS_BUILDING_GROUP_LEVELS: "[STATE.GetName] má $COMPARATOR$ #variable $NUM|0$#! úrovní budov skupiny [BUILDING_GROUP.GetName]"
+ TRIGGER_STATE_HAS_BUILDING_GROUP_LEVELS_NOT: "[STATE.GetName] #bold nemá#! $COMPARATOR$ #variable $NUM|0$#! $NUM$#! úrovní budov skupiny [BUILDING_GROUP.GetName]"
  TRIGGER_STATE_HAS_BUILDING_LEVELS: "[STATE.GetName] úrovně budov jsou $COMPARATOR$ #variable $NUM|0$#!"
  TRIGGER_STATE_HAS_BUILDING_LEVELS_NOT: "[STATE.GetName] úrovně budov #bold nejsou#! $COMPARATOR$ #variable $NUM|0$#!"
  TRIGGER_STATE_HAS_BUILDING_TYPE_LEVELS: "[STATE.GetName] má $COMPARATOR$ #variable $NUM|0$#! úrovně [TARGET_BUILDING_TYPE.GetName] budov"
@@ -3391,8 +3391,8 @@
  TRIGGER_STATE_OWNER_EQUAL_NOT: "[concept_state] #bold není#! vlastněn [TARGET_COUNTRY.GetAltAdjective('I')]"
  TRIGGER_STATE_OWNER_EQUAL_THIRD: "[concept_state] je vlastněn [TARGET_COUNTRY.GetAltAdjective('I')]"
  TRIGGER_STATE_OWNER_EQUAL_THIRD_NOT: "[concept_state] není vlastněn [TARGET_COUNTRY.GetAltAdjective('I')]"
- TRIGGER_STATE_POPULATION: "Celková populace v [STATE.GetName] je $COMPARATOR$ #v $NUM|K$#!" # todo: CHANGED
- TRIGGER_STATE_POPULATION_NOT: "Celková populace v [STATE.GetName] #bold není#! $COMPARATOR$ #v $NUM|K$#!" # todo: CHANGED
+ TRIGGER_STATE_POPULATION: "Celková populace v [STATE.GetName] je $COMPARATOR$ #v $NUM|K$#!"
+ TRIGGER_STATE_POPULATION_NOT: "Celková populace v [STATE.GetName] #bold není#! $COMPARATOR$ #v $NUM|K$#!"
  TRIGGER_STATE_REGION_EQUAL: "[concept_state_region] je [TARGET_STATE_REGION.GetName]"
  TRIGGER_STATE_REGION_EQUAL_NOT: "[concept_state_region] #bold není#! [TARGET_STATE_REGION.GetName]"
  TRIGGER_STATE_REGION_HAS_GOODS_SHORTAGE: "Má [Concept('concept_shortage', '$concept_shortages$')|l]"
@@ -3407,8 +3407,8 @@
  TRIGGER_STATE_TRADE_NOT: "Obchod se $GOODS_NAME$ se $STATE_NAME$ #bold není#! $COMPARATOR$ $NUM|0v$\n(v současnosti $CURRENT_VALUE|0$)"
  TRIGGER_STATE_TRADE_THIRD: "Obchod se $GOODS_NAME$ mezi [STATE.GetName] a $STATE_NAME$ je $COMPARATOR$ $NUM|0v$\n(v současnosti $CURRENT_VALUE|0$)"
  TRIGGER_STATE_TRADE_THIRD_NOT: "Obchod se $GOODS_NAME$ mezi [STATE.GetName] a $STATE_NAME$ #bold není#! $COMPARATOR$ $NUM|0v$\n(v současnosti $CURRENT_VALUE|0$)"
- TRIGGER_STATE_UNEMPLOYMENT_RATE: "Nezaměstnanost v [STATE.GetName] je $COMPARATOR$ #v $NUM|0%$#!" # todo: CHANGED
- TRIGGER_STATE_UNEMPLOYMENT_RATE_NOT: "Nezaměstnanost v [STATE.GetName] #bold není#! $COMPARATOR$ #v $NUM|0%$#!" # todo: CHANGED
+ TRIGGER_STATE_UNEMPLOYMENT_RATE: "Nezaměstnanost v [STATE.GetName] je $COMPARATOR$ #v $NUM|0%$#!"
+ TRIGGER_STATE_UNEMPLOYMENT_RATE_NOT: "Nezaměstnanost v [STATE.GetName] #bold není#! $COMPARATOR$ #v $NUM|0%$#!"
  TRIGGER_STRATA: "Třída je $COMPARATOR$ $STRATA$"
  TRIGGER_STRATA_NOT: "Třída #bold není#! $COMPARATOR$ $STRATA$"
  TRIGGER_STRATEGIC_REGION_EQUAL: "[concept_strategic_region] je [TARGET_STRATEGIC_REGION.GetName]"
@@ -3831,200 +3831,200 @@
  TRIGGER_STATE_HAS_NATIONAL_AWAKENING_NOT: "[STATE.GetName] #b nemá#! aktivní [concept_national_awakening|l]"
  TRIGGER_IS_IN_REVOLT_THIRD: "[STATE.GetName] je v [Concept('concept_insurrection', '$concept_revolt$')|l]"
  TRIGGER_IS_IN_REVOLT_THIRD_NOT: "[STATE.GetName] #b není#! v [Concept('concept_insurrection', '$concept_revolt$')|l]"
- TRIGGER_IS_HOMELAND_NONE: "$TRIGGER_IS_HOMELAND$" # todo: NEW TRANSLATION
- TRIGGER_IS_HOMELAND_NONE_NOT: "$TRIGGER_IS_HOMELAND_NOT$" # todo: NEW TRANSLATION
- TRIGGER_IS_INVOLVED_IN_JOURNAL_ENTRY: "Je zapojen do [JOURNAL_ENTRY_TYPE.GetName] [concept_journal_entry]" # todo: NEW TRANSLATION
- TRIGGER_IS_INVOLVED_IN_JOURNAL_ENTRY_NOT: "Je #b not#! zapojen do [JOURNAL_ENTRY_TYPE.GetName] [concept_journal_entry]" # todo: NEW TRANSLATION
- TRIGGER_IS_INVOLVED_IN_JOURNAL_ENTRY_FIRST: "[COUNTRY.GetNameNoFlag] je zapojen do [JOURNAL_ENTRY_TYPE.GetName] [concept_journal_entry]" # todo: NEW TRANSLATION
- TRIGGER_IS_INVOLVED_IN_JOURNAL_ENTRY_FIRST_NOT: "[COUNTRY.GetNameNoFlag] je #b not#! zapojen do [JOURNAL_ENTRY_TYPE.GetName] [concept_journal_entry]" # todo: NEW TRANSLATION
- TRIGGER_IS_INVOLVED_IN_JOURNAL_ENTRY_THIRD: "[COUNTRY.GetName] je zapojen do [JOURNAL_ENTRY_TYPE.GetName] [concept_journal_entry]" # todo: NEW TRANSLATION
- TRIGGER_IS_INVOLVED_IN_JOURNAL_ENTRY_THIRD_NOT: "[COUNTRY.GetName] je #b not#! zapojen do [JOURNAL_ENTRY_TYPE.GetName] [concept_journal_entry]" # todo: NEW TRANSLATION
- TRIGGER_IS_IN_GEOGRAPHIC_REGION: "je v [GeographicRegion.GetName]" # todo: NEW TRANSLATION
- TRIGGER_IS_IN_GEOGRAPHIC_REGION_NOT: "je #bold not#! v [GeographicRegion.GetName]" # todo: NEW TRANSLATION
- TRIGGER_IS_IN_GEOGRAPHIC_REGION_THIRD: "$SCOPE_NAME$ je v [GeographicRegion.GetName]" # todo: NEW TRANSLATION
- TRIGGER_IS_IN_GEOGRAPHIC_REGION_THIRD_NOT: "$SCOPE_NAME$ je #bold not#! v [GeographicRegion.GetName]" # todo: NEW TRANSLATION
- TRIGGER_IS_IN_GEOGRAPHIC_REGION_NONE: "je v tomto [concept_georegion]" # todo: NEW TRANSLATION
- TRIGGER_IS_IN_GEOGRAPHIC_REGION_NONE_NOT: "je #b not#! v tomto [concept_georegion]" # todo: NEW TRANSLATION
- TRIGGER_IS_BUSY_THIRD: "[Character.GetFullName] je [concept_busy]" # todo: NEW TRANSLATION
- TRIGGER_IS_BUSY_THIRD_NOT: "[Character.GetFullName] není [concept_busy]" # todo: NEW TRANSLATION
- TRIGGER_HAS_DIPLOMATS_EXPELLED_THIRD: "[COUNTRY.GetName] nedávno vyhostil diplomaty země [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
- TRIGGER_HAS_DIPLOMATS_EXPELLED_THIRD_NOT: "[COUNTRY.GetName] #bold not#! nedávno vyhostil diplomaty země [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
- TRIGGER_IS_EXPORTED_TO: "Je vyváženo z [MARKET_GOODS.GetMarket.GetName] do [TARGET_MARKET.GetName]" # todo: NEW TRANSLATION
- TRIGGER_IS_EXPORTED_TO_NOT: "Není #bold not#! vyváženo z [MARKET_GOODS.GetMarket.GetName] do [TARGET_MARKET.GetName]" # todo: NEW TRANSLATION
- TRIGGER_IS_EXPORTED_TO_THIRD: "[MARKET_GOODS.GetGoods.GetName] je vyváženo z [MARKET_GOODS.GetMarket.GetName] do [TARGET_MARKET.GetName]" # todo: NEW TRANSLATION
- TRIGGER_IS_EXPORTED_TO_THIRD_NOT: "[MARKET_GOODS.GetGoods.GetName] není #bold not#! vyváženo z [MARKET_GOODS.GetMarket.GetName] do [TARGET_MARKET.GetName]" # todo: NEW TRANSLATION
- TRIGGER_IS_IMPORTED_FROM: "Je dováženo z [TARGET_MARKET.GetName] do [MARKET_GOODS.GetMarket.GetName]" # todo: NEW TRANSLATION
- TRIGGER_IS_IMPORTED_FROM_NOT: "Není #bold not#! dováženo z [TARGET_MARKET.GetName] do [MARKET_GOODS.GetMarket.GetName]" # todo: NEW TRANSLATION
- TRIGGER_IS_IMPORTED_FROM_THIRD: "[MARKET_GOODS.GetGoods.GetName] je dováženo z [TARGET_MARKET.GetName] do [MARKET_GOODS.GetMarket.GetName]" # todo: NEW TRANSLATION
- TRIGGER_IS_IMPORTED_FROM_THIRD_NOT: "[MARKET_GOODS.GetGoods.GetName] není #bold not#! dováženo z [TARGET_MARKET.GetName] do [MARKET_GOODS.GetMarket.GetName]" # todo: NEW TRANSLATION
- TRIGGER_STALL_CHANCE: "Šance na [concept_enactment_stall] je $COMPARATOR$ #variable $NUM|0%$#!" # todo: NEW TRANSLATION
- TRIGGER_STALL_CHANCE_NOT: "Šance na [concept_enactment_stall] není #b not#! $COMPARATOR$ #variable $NUM|0%$#!" # todo: NEW TRANSLATION
- TRIGGER_STALL_CHANCE_FIRST: "Vaše šance na [concept_enactment_stall] je $COMPARATOR$ #variable $NUM|0%$#!" # todo: NEW TRANSLATION
- TRIGGER_STALL_CHANCE_FIRST_NOT: "Vaše šance na [concept_enactment_stall] není #b not#! $COMPARATOR$ #variable $NUM|0%$#!" # todo: NEW TRANSLATION
- TRIGGER_STALL_CHANCE_THIRD: "Šance na [concept_enactment_stall] v [Country.GetName] je $COMPARATOR$ #variable $NUM|0%$#!" # todo: NEW TRANSLATION
- TRIGGER_STALL_CHANCE_THIRD_NOT: "Šance na [concept_enactment_stall] v [Country.GetName] není #b not#! $COMPARATOR$ #variable $NUM|0%$#!" # todo: NEW TRANSLATION
- TRIGGER_LEADING_PRODUCER_OF_FIRST: "[COUNTRY.GetNameNoFlag] je hlavním producentem [TARGET_GOODS.GetName]" # todo: NEW TRANSLATION
- TRIGGER_LEADING_PRODUCER_OF_FIRST_NOT: "[COUNTRY.GetNameNoFlag] je #bold not #!hlavním producentem [TARGET_GOODS.GetName]" # todo: NEW TRANSLATION
- TRIGGER_TOTAL_EXPENSES: "Týdenní celkové výdaje jsou $COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)" # todo: NEW TRANSLATION
- TRIGGER_TOTAL_EXPENSES_NOT: "Týdenní celkové výdaje nejsou #bold not #!$COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)" # todo: NEW TRANSLATION
- TRIGGER_TOTAL_EXPENSES_FIRST: "[COUNTRY.GetAdjectiveNoFlag] týdenní celkové výdaje jsou $COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)" # todo: NEW TRANSLATION
- TRIGGER_TOTAL_EXPENSES_FIRST_NOT: "[COUNTRY.GetAdjectiveNoFlag] týdenní celkové výdaje nejsou #bold not #!$COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)" # todo: NEW TRANSLATION
- TRIGGER_TOTAL_EXPENSES_THIRD: "[COUNTRY.GetAdjective] týdenní celkové výdaje jsou $COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)" # todo: NEW TRANSLATION
- TRIGGER_TOTAL_EXPENSES_THIRD_NOT: "[COUNTRY.GetAdjective] týdenní celkové výdaje nejsou #bold not #!$COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)" # todo: NEW TRANSLATION
- TRIGGER_FIXED_EXPENSES: "Týdenní fixní výdaje jsou $COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)" # todo: NEW TRANSLATION
- TRIGGER_FIXED_EXPENSES_NOT: "Týdenní fixní výdaje nejsou #bold not #!$COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)" # todo: NEW TRANSLATION
- TRIGGER_FIXED_EXPENSES_FIRST: "[COUNTRY.GetAdjectiveNoFlag] týdenní fixní výdaje jsou $COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)" # todo: NEW TRANSLATION
- TRIGGER_FIXED_EXPENSES_FIRST_NOT: "[COUNTRY.GetAdjectiveNoFlag] týdenní fixní výdaje nejsou #bold not #!$COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)" # todo: NEW TRANSLATION
- TRIGGER_FIXED_EXPENSES_THIRD: "[COUNTRY.GetAdjective] týdenní fixní výdaje jsou $COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)" # todo: NEW TRANSLATION
- TRIGGER_FIXED_EXPENSES_THIRD_NOT: "[COUNTRY.GetAdjective] týdenní fixní výdaje nejsou #bold not #!$COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)" # todo: NEW TRANSLATION
- TRIGGER_TOTAL_INCOME: "Týdenní celkové příjmy jsou $COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)" # todo: NEW TRANSLATION
- TRIGGER_TOTAL_INCOME_NOT: "Týdenní celkové příjmy nejsou #bold not #!$COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)" # todo: NEW TRANSLATION
- TRIGGER_TOTAL_INCOME_FIRST: "[COUNTRY.GetAdjectiveNoFlag] týdenní celkové příjmy jsou $COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)" # todo: NEW TRANSLATION
- TRIGGER_TOTAL_INCOME_FIRST_NOT: "[COUNTRY.GetAdjectiveNoFlag] týdenní celkové příjmy nejsou #bold not #!$COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)" # todo: NEW TRANSLATION
- TRIGGER_TOTAL_INCOME_THIRD: "[COUNTRY.GetAdjective] týdenní celkové příjmy jsou $COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)" # todo: NEW TRANSLATION
- TRIGGER_TOTAL_INCOME_THIRD_NOT: "[COUNTRY.GetAdjective] týdenní celkové příjmy nejsou #bold not #!$COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)" # todo: NEW TRANSLATION
- TRIGGER_FIXED_INCOME: "Týdenní fixní příjmy jsou $COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)" # todo: NEW TRANSLATION
- TRIGGER_FIXED_INCOME_NOT: "Týdenní fixní příjmy nejsou #bold not #!$COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)" # todo: NEW TRANSLATION
- TRIGGER_FIXED_INCOME_FIRST: "[COUNTRY.GetAdjectiveNoFlag] týdenní fixní příjmy jsou $COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)" # todo: NEW TRANSLATION
- TRIGGER_FIXED_INCOME_FIRST_NOT: "[COUNTRY.GetAdjectiveNoFlag] týdenní fixní příjmy nejsou #bold not #!$COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)" # todo: NEW TRANSLATION
- TRIGGER_FIXED_INCOME_THIRD: "[COUNTRY.GetAdjective] týdenní fixní příjmy jsou $COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)" # todo: NEW TRANSLATION
- TRIGGER_FIXED_INCOME_THIRD_NOT: "[COUNTRY.GetAdjective] týdenní fixní příjmy nejsou #bold not #!$COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)" # todo: NEW TRANSLATION
- TRIGGER_NET_FIXED_INCOME: "Týdenní čisté fixní příjmy po výdajích jsou $COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)" # todo: NEW TRANSLATION
- TRIGGER_NET_FIXED_INCOME_NOT: "Týdenní čisté fixní příjmy po výdajích nejsou #bold not #!$COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)" # todo: NEW TRANSLATION
- TRIGGER_NET_FIXED_INCOME_FIRST: "[COUNTRY.GetAdjectiveNoFlag] týdenní čisté fixní příjmy po výdajích jsou $COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)" # todo: NEW TRANSLATION
- TRIGGER_NET_FIXED_INCOME_FIRST_NOT: "[COUNTRY.GetAdjectiveNoFlag] týdenní čisté fixní příjmy po výdajích nejsou #bold not #!$COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)" # todo: NEW TRANSLATION
- TRIGGER_NET_FIXED_INCOME_THIRD: "[COUNTRY.GetAdjective] týdenní čisté fixní příjmy po výdajích jsou $COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)" # todo: NEW TRANSLATION
- TRIGGER_NET_FIXED_INCOME_THIRD_NOT: "[COUNTRY.GetAdjective] týdenní čisté fixní příjmy po výdajích nejsou #bold not #!$COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)" # todo: NEW TRANSLATION
- TRIGGER_NET_TOTAL_INCOME: "Týdenní čisté celkové příjmy po výdajích jsou $COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)" # todo: NEW TRANSLATION
- TRIGGER_NET_TOTAL_INCOME_NOT: "Týdenní čisté celkové příjmy po výdajích nejsou #bold not #!$COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)" # todo: NEW TRANSLATION
- TRIGGER_NET_TOTAL_INCOME_FIRST: "[COUNTRY.GetAdjectiveNoFlag] týdenní čisté celkové příjmy po výdajích jsou $COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)" # todo: NEW TRANSLATION
- TRIGGER_NET_TOTAL_INCOME_FIRST_NOT: "[COUNTRY.GetAdjectiveNoFlag] týdenní čisté celkové příjmy po výdajích nejsou #bold not #!$COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)" # todo: NEW TRANSLATION
- TRIGGER_NET_TOTAL_INCOME_THIRD: "[COUNTRY.GetAdjective] týdenní čisté celkové příjmy po výdajích jsou $COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)" # todo: NEW TRANSLATION
- TRIGGER_NET_TOTAL_INCOME_THIRD_NOT: "[COUNTRY.GetAdjective] týdenní čisté celkové příjmy po výdajích nejsou #bold not #!$COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)" # todo: NEW TRANSLATION
- TRIGGER_NAVAL_POWER_PROJECTION_GREATER_THAN: "Námořní [concept_power_projection] je $COMPARATOR$ $NUM|v$" # todo: NEW TRANSLATION
- TRIGGER_NAVAL_POWER_PROJECTION_GREATER_THAN_FIRST: "[COUNTRY.GetAdjectiveNoFlag] námořní [concept_power_projection] je $COMPARATOR$ $NUM|v$" # todo: NEW TRANSLATION
- TRIGGER_NAVAL_POWER_PROJECTION_GREATER_THAN_THIRD: "[COUNTRY.GetAdjective] námořní [concept_power_projection] je $COMPARATOR$ $NUM|v$" # todo: NEW TRANSLATION
- TRIGGER_ARMY_POWER_PROJECTION_GREATER_THAN: "Pozemní [concept_power_projection] je $COMPARATOR$ $NUM|v$" # todo: NEW TRANSLATION
- TRIGGER_ARMY_POWER_PROJECTION_GREATER_THAN_FIRST: "[COUNTRY.GetAdjectiveNoFlag] pozemní [concept_power_projection] je $COMPARATOR$ $NUM|v$" # todo: NEW TRANSLATION
- TRIGGER_ARMY_POWER_PROJECTION_GREATER_THAN_THIRD: "[COUNTRY.GetAdjective] pozemní [concept_power_projection] je $COMPARATOR$ $NUM|v$" # todo: NEW TRANSLATION
- TRIGGER_CULTURE_PERCENT_STATE_FIRST: "Populace ve [STATE.GetName] je $COMPARATOR$ $NUM|%0v$ [TARGET_CULTURE.GetName] (aktuálně $CURRENT_VALUE|%0v$)" # todo: NEW TRANSLATION
- TRIGGER_CULTURE_PERCENT_STATE_FIRST_NOT: "Populace ve [STATE.GetName] není #bold not#! $COMPARATOR$ $NUM|%0v$ [TARGET_CULTURE.GetName] (aktuálně $CURRENT_VALUE|%0v$)" # todo: NEW TRANSLATION
- TRIGGER_CULTURE_PERCENT_STATE_THIRD: "Populace ve [STATE.GetName] je $COMPARATOR$ $NUM|%0v$ [TARGET_CULTURE.GetName] (aktuálně $CURRENT_VALUE|%0v$)" # todo: NEW TRANSLATION
- TRIGGER_CULTURE_PERCENT_STATE_THIRD_NOT: "Populace ve [STATE.GetName] není #bold not#! $COMPARATOR$ $NUM|%0v$ [TARGET_CULTURE.GetName] (aktuálně $CURRENT_VALUE|%0v$)" # todo: NEW TRANSLATION
- TRIGGER_RELIGION_PERCENT_STATE_FIRST: "Populace ve [STATE.GetName] je $COMPARATOR$ $NUM|%0v$ [TARGET_RELIGION.GetName] (aktuálně $CURRENT_VALUE|%0v$)" # todo: NEW TRANSLATION
- TRIGGER_RELIGION_PERCENT_STATE_FIRST_NOT: "Populace ve [STATE.GetName] není #bold not#! $COMPARATOR$ $NUM|%0v$ [TARGET_RELIGION.GetName] (aktuálně $CURRENT_VALUE|%0v$)" # todo: NEW TRANSLATION
- TRIGGER_RELIGION_PERCENT_STATE_THIRD: "Populace ve [STATE.GetName] je $COMPARATOR$ $NUM|%0v$ [TARGET_RELIGION.GetName] (aktuálně $CURRENT_VALUE|%0v$)" # todo: NEW TRANSLATION
- TRIGGER_RELIGION_PERCENT_STATE_THIRD_NOT: "Populace ve [STATE.GetName] není #bold not#! $COMPARATOR$ $NUM|%0v$ [TARGET_RELIGION.GetName] (aktuálně $CURRENT_VALUE|%0v$)" # todo: NEW TRANSLATION
- TRIGGER_COUNTRY_AVERAGE_CULTURE_POP_ACCEPTANCE: "Průměrné přijetí [CULTURE.GetName] [Concept('concept_pop', '$concept_pops$')] v [COUNTRY.GetName] je $COMPARATOR$ #variable $NUM$#!" # todo: NEW TRANSLATION
- TRIGGER_COUNTRY_AVERAGE_CULTURE_POP_ACCEPTANCE_NOT: "Průměrné přijetí [CULTURE.GetName] [Concept('concept_pop', '$concept_pops$')] v [COUNTRY.GetName] není #bold not #!$COMPARATOR$ #variable $NUM$#!" # todo: NEW TRANSLATION
- TRIGGER_COUNTRY_AVERAGE_CULTURE_POP_ACCEPTANCE_FIRST: "Průměrné přijetí [CULTURE.GetName] [Concept('concept_pop', '$concept_pops$')] v [COUNTRY.GetName] je $COMPARATOR$ #variable $NUM$#!" # todo: NEW TRANSLATION
- TRIGGER_COUNTRY_AVERAGE_CULTURE_POP_ACCEPTANCE_FIRST_NOT: "Průměrné přijetí [CULTURE.GetName] [Concept('concept_pop', '$concept_pops$')] v [COUNTRY.GetName] není #bold not #!$COMPARATOR$ #variable $NUM$#!" # todo: NEW TRANSLATION
- TRIGGER_COUNTRY_AVERAGE_CULTURE_POP_ACCEPTANCE_THIRD: "Průměrné přijetí [CULTURE.GetName] [Concept('concept_pop', '$concept_pops$')] v [COUNTRY.GetName] je $COMPARATOR$ #variable $NUM$#!" # todo: NEW TRANSLATION
- TRIGGER_COUNTRY_AVERAGE_CULTURE_POP_ACCEPTANCE_THIRD_NOT: "Průměrné přijetí [CULTURE.GetName] [Concept('concept_pop', '$concept_pops$')] v [COUNTRY.GetName] není #bold not #!$COMPARATOR$ #variable $NUM$#!" # todo: NEW TRANSLATION
- TRIGGER_COUNTRY_AVERAGE_RELIGION_POP_ACCEPTANCE: "Průměrné přijetí [RELIGION.GetName] [Concept('concept_pop', '$concept_pops$')] v [COUNTRY.GetName] je $COMPARATOR$ #variable $NUM$#!" # todo: NEW TRANSLATION
- TRIGGER_COUNTRY_AVERAGE_RELIGION_POP_ACCEPTANCE_NOT: "Průměrné přijetí [RELIGION.GetName] [Concept('concept_pop', '$concept_pops$')] v [COUNTRY.GetName] není #bold not #!$COMPARATOR$ #variable $NUM$#!" # todo: NEW TRANSLATION
- TRIGGER_COUNTRY_AVERAGE_RELIGION_POP_ACCEPTANCE_FIRST: "Průměrné přijetí [RELIGION.GetName] [Concept('concept_pop', '$concept_pops$')] v [COUNTRY.GetName] je $COMPARATOR$ #variable $NUM$#!" # todo: NEW TRANSLATION
- TRIGGER_COUNTRY_AVERAGE_RELIGION_POP_ACCEPTANCE_FIRST_NOT: "Průměrné přijetí [RELIGION.GetName] [Concept('concept_pop', '$concept_pops$')] v [COUNTRY.GetName] není #bold not #!$COMPARATOR$ #variable $NUM$#!" # todo: NEW TRANSLATION
- TRIGGER_COUNTRY_AVERAGE_RELIGION_POP_ACCEPTANCE_THIRD: "Průměrné přijetí [RELIGION.GetName] [Concept('concept_pop', '$concept_pops$')] v [COUNTRY.GetName] je $COMPARATOR$ #variable $NUM$#!" # todo: NEW TRANSLATION
- TRIGGER_COUNTRY_AVERAGE_RELIGION_POP_ACCEPTANCE_THIRD_NOT: "Průměrné přijetí [RELIGION.GetName] [Concept('concept_pop', '$concept_pops$')] v [COUNTRY.GetName] není #bold not #!$COMPARATOR$ #variable $NUM$#!" # todo: NEW TRANSLATION
- TRIGGER_COUNTRY_AVERAGE_CULTURE_AND_RELIGION_POP_ACCEPTANCE: "Průměrné přijetí [CULTURE.GetName] [RELIGION.GetName] [Concept('concept_pop', '$concept_pops$')] v [COUNTRY.GetName] je $COMPARATOR$ #variable $NUM$#!" # todo: NEW TRANSLATION
- TRIGGER_COUNTRY_AVERAGE_CULTURE_AND_RELIGION_POP_ACCEPTANCE_NOT: "Průměrné přijetí [CULTURE.GetName] [RELIGION.GetName] [Concept('concept_pop', '$concept_pops$')] v [COUNTRY.GetName] není #bold not #!$COMPARATOR$ #variable $NUM$#!" # todo: NEW TRANSLATION
- TRIGGER_COUNTRY_AVERAGE_CULTURE_AND_RELIGION_POP_ACCEPTANCE_FIRST: "Průměrné přijetí [CULTURE.GetName] [RELIGION.GetName] [Concept('concept_pop', '$concept_pops$')] v [COUNTRY.GetName] je $COMPARATOR$ #variable $NUM$#!" # todo: NEW TRANSLATION
- TRIGGER_COUNTRY_AVERAGE_CULTURE_AND_RELIGION_POP_ACCEPTANCE_FIRST_NOT: "Průměrné přijetí [CULTURE.GetName] [RELIGION.GetName] [Concept('concept_pop', '$concept_pops$')] v [COUNTRY.GetName] není #bold not #!$COMPARATOR$ #variable $NUM$#!" # todo: NEW TRANSLATION
- TRIGGER_COUNTRY_AVERAGE_CULTURE_AND_RELIGION_POP_ACCEPTANCE_THIRD: "Průměrné přijetí [CULTURE.GetName] [RELIGION.GetName] [Concept('concept_pop', '$concept_pops$')] v [COUNTRY.GetName] je $COMPARATOR$ #variable $NUM$#!" # todo: NEW TRANSLATION
- TRIGGER_COUNTRY_AVERAGE_CULTURE_AND_RELIGION_POP_ACCEPTANCE_THIRD_NOT: "Průměrné přijetí [CULTURE.GetName] [RELIGION.GetName] [Concept('concept_pop', '$concept_pops$')] v [COUNTRY.GetName] není #bold not #!$COMPARATOR$ #variable $NUM$#!" # todo: NEW TRANSLATION
- TRIGGER_STATE_AVERAGE_CULTURE_POP_ACCEPTANCE: "Průměrné přijetí [CULTURE.GetName] [Concept('concept_pop', '$concept_pops$')] v [STATE.GetName] je $COMPARATOR$ #variable $NUM$#!" # todo: NEW TRANSLATION
- TRIGGER_STATE_AVERAGE_CULTURE_POP_ACCEPTANCE_NOT: "Průměrné přijetí [CULTURE.GetName] [Concept('concept_pop', '$concept_pops$')] v [STATE.GetName] není #bold not #!$COMPARATOR$ #variable $NUM$#!" # todo: NEW TRANSLATION
- TRIGGER_STATE_AVERAGE_CULTURE_POP_ACCEPTANCE_FIRST: "Průměrné přijetí [CULTURE.GetName] [Concept('concept_pop', '$concept_pops$')] v [STATE.GetName] je $COMPARATOR$ #variable $NUM$#!" # todo: NEW TRANSLATION
- TRIGGER_STATE_AVERAGE_CULTURE_POP_ACCEPTANCE_FIRST_NOT: "Průměrné přijetí [CULTURE.GetName] [Concept('concept_pop', '$concept_pops$')] v [STATE.GetName] není #bold not #!$COMPARATOR$ #variable $NUM$#!" # todo: NEW TRANSLATION
- TRIGGER_STATE_AVERAGE_CULTURE_POP_ACCEPTANCE_THIRD: "Průměrné přijetí [CULTURE.GetName] [Concept('concept_pop', '$concept_pops$')] v [STATE.GetName] je $COMPARATOR$ #variable $NUM$#!" # todo: NEW TRANSLATION
- TRIGGER_STATE_AVERAGE_CULTURE_POP_ACCEPTANCE_THIRD_NOT: "Průměrné přijetí [CULTURE.GetName] [Concept('concept_pop', '$concept_pops$')] v [STATE.GetName] není #bold not #!$COMPARATOR$ #variable $NUM$#!" # todo: NEW TRANSLATION
- TRIGGER_STATE_AVERAGE_RELIGION_POP_ACCEPTANCE: "Průměrné přijetí [RELIGION.GetName] [Concept('concept_pop', '$concept_pops$')] v [STATE.GetName] je $COMPARATOR$ #variable $NUM$#!" # todo: NEW TRANSLATION
- TRIGGER_STATE_AVERAGE_RELIGION_POP_ACCEPTANCE_NOT: "Průměrné přijetí [RELIGION.GetName] [Concept('concept_pop', '$concept_pops$')] v [STATE.GetName] není #bold not #!$COMPARATOR$ #variable $NUM$#!" # todo: NEW TRANSLATION
- TRIGGER_STATE_AVERAGE_RELIGION_POP_ACCEPTANCE_FIRST: "Průměrné přijetí [RELIGION.GetName] [Concept('concept_pop', '$concept_pops$')] v [STATE.GetName] je $COMPARATOR$ #variable $NUM$#!" # todo: NEW TRANSLATION
- TRIGGER_STATE_AVERAGE_RELIGION_POP_ACCEPTANCE_FIRST_NOT: "Průměrné přijetí [RELIGION.GetName] [Concept('concept_pop', '$concept_pops$')] v [STATE.GetName] není #bold not #!$COMPARATOR$ #variable $NUM$#!" # todo: NEW TRANSLATION
- TRIGGER_STATE_AVERAGE_RELIGION_POP_ACCEPTANCE_THIRD: "Průměrné přijetí [RELIGION.GetName] [Concept('concept_pop', '$concept_pops$')] v [STATE.GetName] je $COMPARATOR$ #variable $NUM$#!" # todo: NEW TRANSLATION
- TRIGGER_STATE_AVERAGE_RELIGION_POP_ACCEPTANCE_THIRD_NOT: "Průměrné přijetí [RELIGION.GetName] [Concept('concept_pop', '$concept_pops$')] v [STATE.GetName] není #bold not #!$COMPARATOR$ #variable $NUM$#!" # todo: NEW TRANSLATION
- TRIGGER_STATE_AVERAGE_CULTURE_AND_RELIGION_POP_ACCEPTANCE: "Průměrné přijetí [CULTURE.GetName] [RELIGION.GetName] [Concept('concept_pop', '$concept_pops$')] v [STATE.GetName] je $COMPARATOR$ #variable $NUM$#!" # todo: NEW TRANSLATION
- TRIGGER_STATE_AVERAGE_CULTURE_AND_RELIGION_POP_ACCEPTANCE_NOT: "Průměrné přijetí [CULTURE.GetName] [RELIGION.GetName] [Concept('concept_pop', '$concept_pops$')] v [STATE.GetName] není #bold not #!$COMPARATOR$ #variable $NUM$#!" # todo: NEW TRANSLATION
- TRIGGER_STATE_AVERAGE_CULTURE_AND_RELIGION_POP_ACCEPTANCE_FIRST: "Průměrné přijetí [CULTURE.GetName] [RELIGION.GetName] [Concept('concept_pop', '$concept_pops$')] v [STATE.GetName] je $COMPARATOR$ #variable $NUM$#!" # todo: NEW TRANSLATION
- TRIGGER_STATE_AVERAGE_CULTURE_AND_RELIGION_POP_ACCEPTANCE_FIRST_NOT: "Průměrné přijetí [CULTURE.GetName] [RELIGION.GetName] [Concept('concept_pop', '$concept_pops$')] v [STATE.GetName] není #bold not #!$COMPARATOR$ #variable $NUM$#!" # todo: NEW TRANSLATION
- TRIGGER_STATE_AVERAGE_CULTURE_AND_RELIGION_POP_ACCEPTANCE_THIRD: "Průměrné přijetí [CULTURE.GetName] [RELIGION.GetName] [Concept('concept_pop', '$concept_pops$')] v [STATE.GetName] je $COMPARATOR$ #variable $NUM$#!" # todo: NEW TRANSLATION
- TRIGGER_STATE_AVERAGE_CULTURE_AND_RELIGION_POP_ACCEPTANCE_THIRD_NOT: "Průměrné přijetí [CULTURE.GetName] [RELIGION.GetName] [Concept('concept_pop', '$concept_pops$')] v [STATE.GetName] není #bold not #!$COMPARATOR$ #variable $NUM$#!" # todo: NEW TRANSLATION
- NOT_TRIGGER_MARKET_ACCESS_GREATER_THAN: "[concept_market_access] není #b not#! větší než $NUM|%0v$ (aktuálně: $CURRENT_VALUE|%0v$)" # todo: NEW TRANSLATION
- NOT_TRIGGER_MARKET_ACCESS_LESS_THAN: "[concept_market_access] není #b not#! menší než $NUM|%0v$ (aktuálně: $CURRENT_VALUE|%0v$)" # todo: NEW TRANSLATION
- NOT_TRIGGER_MARKET_ACCESS_GREATER_OR_EQUAL: "[concept_market_access] není #b not#! větší, nebo rovný $NUM|%0v$ (aktuálně: $CURRENT_VALUE|%0v$)" # todo: NEW TRANSLATION
- NOT_TRIGGER_MARKET_ACCESS_LESS_OR_EQUAL: "[concept_market_access] není #b not#! menší, nebo rovný $NUM|%0v$ (aktuálně: $CURRENT_VALUE|%0v$)" # todo: NEW TRANSLATION
- NOT_TRIGGER_MARKET_ACCESS_EQUAL: "[concept_market_access] není #b not#! $NUM|%0v$ (aktuálně: $CURRENT_VALUE|%0v$)" # todo: NEW TRANSLATION
- NOT_TRIGGER_MARKET_ACCESS_NOT_EQUAL: "[concept_market_access] není #bold not #!$NUM|%0v$ (aktuálně: $CURRENT_VALUE|%0v$)" # todo: NEW TRANSLATION
- NOT_TRIGGER_MARKET_ACCESS_GREATER_THAN_THIRD: "[concept_market_access] v [State.GetName] není #b not#! větší než $NUM|%0v$ (aktuálně: $CURRENT_VALUE|%0v$)" # todo: NEW TRANSLATION
- NOT_TRIGGER_MARKET_ACCESS_LESS_THAN_THIRD: "[concept_market_access] v [State.GetName] není #b not#! menší než $NUM|%0v$ (aktuálně: $CURRENT_VALUE|%0v$)" # todo: NEW TRANSLATION
- NOT_TRIGGER_MARKET_ACCESS_GREATER_OR_EQUAL_THIRD: "[concept_market_access] v [State.GetName] není #b not#! větší, nebo rovný $NUM|%0v$ (aktuálně: $CURRENT_VALUE|%0v$)" # todo: NEW TRANSLATION
- NOT_TRIGGER_MARKET_ACCESS_LESS_OR_EQUAL_THIRD: "[concept_market_access] v [State.GetName] není #b not#! menší, nebo rovný $NUM|%0v$ (aktuálně: $CURRENT_VALUE|%0v$)" # todo: NEW TRANSLATION
- NOT_TRIGGER_MARKET_ACCESS_EQUAL_THIRD: "[concept_market_access] v [State.GetName] není #b not#! $NUM|%0v$ (aktuálně: $CURRENT_VALUE|%0v$)" # todo: NEW TRANSLATION
- NOT_TRIGGER_MARKET_ACCESS_NOT_EQUAL_THIRD: "[concept_market_access] v [State.GetName] není #bold not #!$NUM|%0v$ (aktuálně: $CURRENT_VALUE|%0v$)" # todo: NEW TRANSLATION
- TRIGGER_STATE_GDP_GREATER_THAN: "$GDP_SHORT$ státu [STATE.GetName] je větší než @money!$TARGET_VALUE|Dv$ (aktuálně: @money!$CURRENT_VALUE|Dv$)" # todo: NEW TRANSLATION
- TRIGGER_STATE_GDP_GREATER_OR_EQUAL: "$GDP_SHORT$ státu [STATE.GetName] je větší nebo rovno @money!$TARGET_VALUE|Dv$ (aktuálně: @money!$CURRENT_VALUE|Dv$)" # todo: NEW TRANSLATION
- TRIGGER_STATE_GDP_LESS_THAN: "$GDP_SHORT$ státu [STATE.GetName] je menší než @money!$TARGET_VALUE|Dv$ (aktuálně: @money!$CURRENT_VALUE|Dv$)" # todo: NEW TRANSLATION
- TRIGGER_STATE_GDP_LESS_OR_EQUAL: "$GDP_SHORT$ státu [STATE.GetName] je menší nebo rovno @money!$TARGET_VALUE|Dv$ (aktuálně: @money!$CURRENT_VALUE|Dv$)" # todo: NEW TRANSLATION
- TRIGGER_STATE_GDP_EQUAL: "$GDP_SHORT$ státu [STATE.GetName] je @money!$TARGET_VALUE|Dv$ (aktuálně: @money!$CURRENT_VALUE|Dv$)" # todo: NEW TRANSLATION
- TRIGGER_STATE_GDP_NOT_EQUAL: "$GDP_SHORT$ státu [STATE.GetName] není #bold not #!@money!$TARGET_VALUE|Dv$ (aktuálně: @money!$CURRENT_VALUE|Dv$)" # todo: NEW TRANSLATION
- TRIGGER_PRESTIGE_GREATER_OR_EQUAL: "Prestiž [COUNTRY.GetName] je $COMPARATOR$ #v $NUM$#! (aktuálně: $CURRENT_VALUE|v$)" # todo: NEW TRANSLATION
- TRIGGER_PRESTIGE_GREATER_OR_EQUAL_NOT: "Prestiž [COUNTRY.GetName] není #bold not#! $COMPARATOR$ #v $NUM$#! (aktuálně: $CURRENT_VALUE|v$)" # todo: NEW TRANSLATION
- TRIGGER_TOTAL_TRADE_VALUE_GREATER_THAN: "Celková hodnota [concept_trade] je větší než $TARGET_VALUE|0v$" # todo: NEW TRANSLATION
- TRIGGER_TOTAL_TRADE_VALUE_GREATER_THAN_FIRST: "$TRIGGER_TOTAL_TRADE_VALUE_GREATER_THAN$" # todo: NEW TRANSLATION
- TRIGGER_TOTAL_TRADE_VALUE_GREATER_OR_EQUAL: "Celková hodnota [concept_trade] je větší nebo rovna $TARGET_VALUE|0v$" # todo: NEW TRANSLATION
- TRIGGER_TOTAL_TRADE_VALUE_GREATER_OR_EQUAL_FIRST: "$TRIGGER_TOTAL_TRADE_VALUE_GREATER_OR_EQUAL$" # todo: NEW TRANSLATION
- TRIGGER_TOTAL_TRADE_VALUE_LESS_THAN: "Celková hodnota [concept_trade] je menší než $TARGET_VALUE|0v$" # todo: NEW TRANSLATION
- TRIGGER_TOTAL_TRADE_VALUE_LESS_THAN_FIRST: "$TTRIGGER_TOTAL_TRADE_VALUE_LESS_THAN$" # todo: NEW TRANSLATION
- TRIGGER_TOTAL_TRADE_VALUE_LESS_OR_EQUAL: "Celková hodnota [concept_trade] je menší nebo rovna $TARGET_VALUE|0v$" # todo: NEW TRANSLATION
- TRIGGER_TOTAL_TRADE_VALUE_LESS_OR_EQUAL_FIRST: "$TRIGGER_TOTAL_TRADE_VALUE_LESS_OR_EQUAL$" # todo: NEW TRANSLATION
- TRIGGER_TOTAL_TRADE_VALUE_EQUAL: "Celková hodnota [concept_trade] je rovna $TARGET_VALUE|0v$" # todo: NEW TRANSLATION
- TRIGGER_TOTAL_TRADE_VALUE_EQUAL_FIRST: "$TRIGGER_TOTAL_TRADE_VALUE_EQUAL$" # todo: NEW TRANSLATION
- TRIGGER_TOTAL_TRADE_VALUE_NOT_EQUAL: "Celková hodnota [concept_trade] není #v not#! rovna $TARGET_VALUE|0v$" # todo: NEW TRANSLATION
- TRIGGER_TOTAL_TRADE_VALUE_NOT_EQUAL_FIRST: "$TRIGGER_TOTAL_TRADE_VALUE_NOT_EQUAL$" # todo: NEW TRANSLATION
- TRIGGER_ANY_COMPANY_FIRST: "Libovolná [concept_company]:" # todo: NEW TRANSLATION
- TRIGGER_ANY_COMPANY_FIRST_NOT: "Žádná [concept_company]:" # todo: NEW TRANSLATION
- TRIGGER_NUM_UNITS_SHARE: "Celkový podíl [Concept('concept_unit','$concept_units$')] kontrolovaný touto postavou je $COMPARATOR$ $TARGET_VALUE|0v$" # todo: NEW TRANSLATION
- TRIGGER_NUM_UNITS_SHARE_NOT: "Celkový podíl [Concept('concept_unit','$concept_units$')] kontrolovaný touto postavou není #bold not #! $COMPARATOR$ $TARGET_VALUE|0v$" # todo: NEW TRANSLATION
- TRIGGER_NUM_UNITS_SHARE_LESS_THAN: "Celkový podíl [Concept('concept_unit','$concept_units$')] kontrolovaný touto postavou je menší než $TARGET_VALUE|0v$" # todo: NEW TRANSLATION
- TRIGGER_NUM_UNITS_SHARE_LESS_THAN_NOT: "Celkový podíl [Concept('concept_unit','$concept_units$')] kontrolovaný touto postavou není #bold not #! menší než $TARGET_VALUE|0v$" # todo: NEW TRANSLATION
- TRIGGER_NUM_UNITS_SHARE_LESS_THAN_THIRD: "Celkový podíl [Concept('concept_unit','$concept_units$')] kontrolovaný [Character.GetFullName] je menší než $TARGET_VALUE|0v$" # todo: NEW TRANSLATION
- TRIGGER_NUM_UNITS_SHARE_LESS_THAN_THIRD_NOT: "Celkový podíl [Concept('concept_unit','$concept_units$')] kontrolovaný [Character.GetFullName] není #bold not #! menší než $TARGET_VALUE|0v$" # todo: NEW TRANSLATION
- TRIGGER_NUM_UNITS_SHARE_LESS_OR_EQUAL: "Celkový podíl [Concept('concept_unit','$concept_units$')] kontrolovaný touto postavou je menší nebo rovný $TARGET_VALUE|0v$" # todo: NEW TRANSLATION
- TRIGGER_NUM_UNITS_SHARE_LESS_OR_EQUAL_NOT: "Celkový podíl [Concept('concept_unit','$concept_units$')] kontrolovaný touto postavou není #bold not #! menší nebo rovný $TARGET_VALUE|0v$" # todo: NEW TRANSLATION
- TRIGGER_NUM_UNITS_SHARE_LESS_OR_EQUAL_THIRD: "Celkový podíl [Concept('concept_unit','$concept_units$')] kontrolovaný [Character.GetFullName] je menší nebo rovný $TARGET_VALUE|0v$" # todo: NEW TRANSLATION
- TRIGGER_NUM_UNITS_SHARE_LESS_OR_EQUAL_THIRD_NOT: "Celkový podíl [Concept('concept_unit','$concept_units$')] kontrolovaný [Character.GetFullName] není #bold not #! menší nebo rovný $TARGET_VALUE|0v$" # todo: NEW TRANSLATION
- TRIGGER_IS_NEGOTIATING: "[Concept('concept_negotiation', '$concept_negotiations$')] probíhají" # todo: NEW TRANSLATION
- TRIGGER_IS_NEGOTIATING_NOT: "[Concept('concept_negotiation', '$concept_negotiations$')] jsou #b not#! v průběhu" # todo: NEW TRANSLATION
- TRIGGER_HAS_NEGOTIATED: "[concept_interest_group] dokončil [Concept('concept_negotiation', '$concept_negotiations$')]" # todo: NEW TRANSLATION
- TRIGGER_HAS_NEGOTIATED_NOT: "[concept_interest_group] #b not#! dokončil [Concept('concept_negotiation', '$concept_negotiations$')]" # todo: NEW TRANSLATION
- TRIGGER_HAS_NEGOTIATED_THIRD: "[INTEREST_GROUP.GetName] dokončil [Concept('concept_negotiation', '$concept_negotiations$')]" # todo: NEW TRANSLATION
- TRIGGER_HAS_NEGOTIATED_THIRD_NOT: "[INTEREST_GROUP.GetName] #b not#! dokončil [Concept('concept_negotiation', '$concept_negotiations$')]" # todo: NEW TRANSLATION
- TRIGGER_HAS_AMENDMENT: "Má [concept_amendment] typu [AMENDMENT_TYPE.GetName]" # todo: NEW TRANSLATION
- TRIGGER_HAS_AMENDMENT_NOT: "Má #b not#! [concept_amendment] typu [AMENDMENT_TYPE.GetName]" # todo: NEW TRANSLATION
- TRIGGER_HAS_AMENDMENT_THIRD: "[LAW.GetName] má [concept_amendment] typu [AMENDMENT_TYPE.GetName]" # todo: NEW TRANSLATION
- TRIGGER_HAS_AMENDMENT_THIRD_NOT: "[LAW.GetName] #b not#! má [concept_amendment] typu [AMENDMENT_TYPE.GetName]" # todo: NEW TRANSLATION
- TRIGGER_WOULD_SPONSOR_AMENDMENT: "Sponzoroval by [concept_amendment] typu [AMENDMENT_TYPE.GetName]" # todo: NEW TRANSLATION
- TRIGGER_WOULD_SPONSOR_AMENDMENT_NOT: "Sponzoroval by #b not#! [concept_amendment] typu [AMENDMENT_TYPE.GetName]" # todo: NEW TRANSLATION
- TRIGGER_WOULD_SPONSOR_AMENDMENT_THIRD: "[INTEREST_GROUP.GetName] by sponzoroval [concept_amendment] typu [AMENDMENT_TYPE.GetName]" # todo: NEW TRANSLATION
- TRIGGER_WOULD_SPONSOR_AMENDMENT_THIRD_NOT: "[INTEREST_GROUP.GetName] by #b not#! sponzoroval [concept_amendment] typu [AMENDMENT_TYPE.GetName]" # todo: NEW TRANSLATION
- TRIGGER_AMENDMENT_STANCE: "Postoj k [AMENDMENT.GetName] $COMPARATOR$ #variable $NUM$#!" # todo: NEW TRANSLATION
- TRIGGER_AMENDMENT_STANCE_NOT: "Postoj k [AMENDMENT.GetName] #b not#! $COMPARATOR$ #variable $NUM$#!" # todo: NEW TRANSLATION
- TRIGGER_AMENDMENT_CAN_BE_REPEALED: "[AMENDMENT.GetName] lze zrušit" # todo: NEW TRANSLATION
- TRIGGER_AMENDMENT_CAN_BE_REPEALED_NOT: "[AMENDMENT.GetName] lze #b not#! zrušit" # todo: NEW TRANSLATION
- TRIGGER_AMENDMENT_COUNT: "[LAW.GetName] má $COMPARATOR$ $NUM|v$ [Concept('concept_amendment', '$concept_amendments$')]" # todo: NEW TRANSLATION
- TRIGGER_AMENDMENT_COUNT_NOT: "[LAW.GetName] #b not#! má $COMPARATOR$ $NUM|v$ [Concept('concept_amendment', '$concept_amendments$')]" # todo: NEW TRANSLATION
- TRIGGER_HAS_PARENT_LAW: "[concept_amendment] má rodičovský [concept_law]" # todo: NEW TRANSLATION
- TRIGGER_HAS_PARENT_LAW_NOT: "[concept_amendment] #b not#! nemá rodičovský [concept_law]" # todo: NEW TRANSLATION
- TRIGGER_LIBERTY_DESIRE_WEEKLY_PROGRESS: "[concept_liberty_desire] týdenní změna je $COMPARATOR$ $NUM|v$" # todo: NEW TRANSLATION
- TRIGGER_LIBERTY_DESIRE_WEEKLY_PROGRESS_NOT: "[concept_liberty_desire] týdenní změna je #b not#! $COMPARATOR$ $NUM|v$" # todo: NEW TRANSLATION
- TRIGGER_LIBERTY_DESIRE_WEEKLY_PROGRESS_FIRST: "[COUNTRY.GetName] [concept_liberty_desire] týdenní změna je $COMPARATOR$ $NUM|v$" # todo: NEW TRANSLATION
- TRIGGER_LIBERTY_DESIRE_WEEKLY_PROGRESS_FIRST_NOT: "[COUNTRY.GetName] [concept_liberty_desire] týdenní změna je #b not#! $COMPARATOR$ $NUM|v$" # todo: NEW TRANSLATION
- TRIGGER_LIBERTY_DESIRE_WEEKLY_PROGRESS_THIRD: "$TRIGGER_LIBERTY_DESIRE_WEEKLY_PROGRESS_FIRST$" # todo: NEW TRANSLATION
- TRIGGER_LIBERTY_DESIRE_WEEKLY_PROGRESS_THIRD_NOT: "$TRIGGER_LIBERTY_DESIRE_WEEKLY_PROGRESS_FIRST_NOT$" # todo: NEW TRANSLATION
- TRIGGER_GDP_RANKING: "[Concept('concept_gdp', '$concept_gdp_short$')] pořadí je $COMPARATOR$ $NUM|v$" # todo: NEW TRANSLATION
- TRIGGER_GDP_RANKING_NOT: "[Concept('concept_gdp', '$concept_gdp_short$')] pořadí je #b not#! $COMPARATOR$ $NUM|v$" # todo: NEW TRANSLATION
+ TRIGGER_IS_HOMELAND_NONE: "$TRIGGER_IS_HOMELAND$"
+ TRIGGER_IS_HOMELAND_NONE_NOT: "$TRIGGER_IS_HOMELAND_NOT$"
+ TRIGGER_IS_INVOLVED_IN_JOURNAL_ENTRY: "Je zapojen do [JOURNAL_ENTRY_TYPE.GetName] [concept_journal_entry]"
+ TRIGGER_IS_INVOLVED_IN_JOURNAL_ENTRY_NOT: "#b Není#! zapojen do [JOURNAL_ENTRY_TYPE.GetName] [concept_journal_entry]"
+ TRIGGER_IS_INVOLVED_IN_JOURNAL_ENTRY_FIRST: "[COUNTRY.GetNameNoFlag] je zapojen do [JOURNAL_ENTRY_TYPE.GetName] [concept_journal_entry]"
+ TRIGGER_IS_INVOLVED_IN_JOURNAL_ENTRY_FIRST_NOT: "[COUNTRY.GetNameNoFlag] #b není#! zapojen do [JOURNAL_ENTRY_TYPE.GetName] [concept_journal_entry]"
+ TRIGGER_IS_INVOLVED_IN_JOURNAL_ENTRY_THIRD: "[COUNTRY.GetName] je zapojen do [JOURNAL_ENTRY_TYPE.GetName] [concept_journal_entry]"
+ TRIGGER_IS_INVOLVED_IN_JOURNAL_ENTRY_THIRD_NOT: "[COUNTRY.GetName] #b není#! zapojena do [JOURNAL_ENTRY_TYPE.GetName] [concept_journal_entry|l]"
+ TRIGGER_IS_IN_GEOGRAPHIC_REGION: "je v [GeographicRegion.GetName]"
+ TRIGGER_IS_IN_GEOGRAPHIC_REGION_NOT: "#bold není#! v [GeographicRegion.GetName]"
+ TRIGGER_IS_IN_GEOGRAPHIC_REGION_THIRD: "$SCOPE_NAME$ je v [GeographicRegion.GetName]"
+ TRIGGER_IS_IN_GEOGRAPHIC_REGION_THIRD_NOT: "$SCOPE_NAME$ #bold není#! v [GeographicRegion.GetName]"
+ TRIGGER_IS_IN_GEOGRAPHIC_REGION_NONE: "je v tomto [Concept('concept_georegion','geografickém regionu')]"
+ TRIGGER_IS_IN_GEOGRAPHIC_REGION_NONE_NOT: "#b není#! v tomto [Concept('concept_georegion','geografickém regionu')]"
+ TRIGGER_IS_BUSY_THIRD: "[Character.GetFullName] je [concept_busy]"
+ TRIGGER_IS_BUSY_THIRD_NOT: "[Character.GetFullName] není [concept_busy]"
+ TRIGGER_HAS_DIPLOMATS_EXPELLED_THIRD: "[COUNTRY.GetName] nedávno vyhostil diplomaty země [TARGET_COUNTRY.GetName]"
+ TRIGGER_HAS_DIPLOMATS_EXPELLED_THIRD_NOT: "[COUNTRY.GetName] #bold nevyhostil#! nedávno diplomaty země [TARGET_COUNTRY.GetName]"
+ TRIGGER_IS_EXPORTED_TO: "Je vyváženo z [MARKET_GOODS.GetMarket.GetName] do [TARGET_MARKET.GetName]"
+ TRIGGER_IS_EXPORTED_TO_NOT: "#bold Není#! vyváženo z [MARKET_GOODS.GetMarket.GetName] do [TARGET_MARKET.GetName]"
+ TRIGGER_IS_EXPORTED_TO_THIRD: "[MARKET_GOODS.GetGoods.GetName] je vyváženo z [MARKET_GOODS.GetMarket.GetName] do [TARGET_MARKET.GetName]"
+ TRIGGER_IS_EXPORTED_TO_THIRD_NOT: "[MARKET_GOODS.GetGoods.GetName] #bold není#! vyváženo z [MARKET_GOODS.GetMarket.GetName] do [TARGET_MARKET.GetName]"
+ TRIGGER_IS_IMPORTED_FROM: "Je dováženo z [TARGET_MARKET.GetName] do [MARKET_GOODS.GetMarket.GetName]"
+ TRIGGER_IS_IMPORTED_FROM_NOT: "#bold Není#! dováženo z [TARGET_MARKET.GetName] do [MARKET_GOODS.GetMarket.GetName]"
+ TRIGGER_IS_IMPORTED_FROM_THIRD: "[MARKET_GOODS.GetGoods.GetName] je dováženo z [TARGET_MARKET.GetName] do [MARKET_GOODS.GetMarket.GetName]"
+ TRIGGER_IS_IMPORTED_FROM_THIRD_NOT: "[MARKET_GOODS.GetGoods.GetName] #bold není#! dováženo z [TARGET_MARKET.GetName] do [MARKET_GOODS.GetMarket.GetName]"
+ TRIGGER_STALL_CHANCE: "Šance na [concept_enactment_stall] je $COMPARATOR$ #variable $NUM|0%$#!"
+ TRIGGER_STALL_CHANCE_NOT: "Šance na [concept_enactment_stall] #b není#! $COMPARATOR$ #variable $NUM|0%$#!"
+ TRIGGER_STALL_CHANCE_FIRST: "Vaše šance na [concept_enactment_stall] je $COMPARATOR$ #variable $NUM|0%$#!"
+ TRIGGER_STALL_CHANCE_FIRST_NOT: "Vaše šance na [concept_enactment_stall] #b není#! $COMPARATOR$ #variable $NUM|0%$#!"
+ TRIGGER_STALL_CHANCE_THIRD: "Šance na [concept_enactment_stall] v [COUNTRY.GetAltAdjective('L')] je $COMPARATOR$ #variable $NUM|0%$#!"
+ TRIGGER_STALL_CHANCE_THIRD_NOT: "Šance na [concept_enactment_stall] v [COUNTRY.GetAltAdjective('L')] #b není#! $COMPARATOR$ #variable $NUM|0%$#!"
+ TRIGGER_LEADING_PRODUCER_OF_FIRST: "[COUNTRY.GetNameNoFlag] je hlavním producentem [TARGET_GOODS.GetName]"
+ TRIGGER_LEADING_PRODUCER_OF_FIRST_NOT: "[COUNTRY.GetNameNoFlag] #bold není#! hlavním producentem [TARGET_GOODS.GetName]"
+ TRIGGER_TOTAL_EXPENSES: "Týdenní celkové výdaje jsou $COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)"
+ TRIGGER_TOTAL_EXPENSES_NOT: "Týdenní celkové výdaje #bold nejsou #!$COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)"
+ TRIGGER_TOTAL_EXPENSES_FIRST: "[COUNTRY.GetAdjectiveNoFlag] týdenní celkové výdaje jsou $COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)"
+ TRIGGER_TOTAL_EXPENSES_FIRST_NOT: "[COUNTRY.GetAdjectiveNoFlag] týdenní celkové výdaje #bold nejsou #!$COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)"
+ TRIGGER_TOTAL_EXPENSES_THIRD: "[COUNTRY.GetAdjective] týdenní celkové výdaje jsou $COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)"
+ TRIGGER_TOTAL_EXPENSES_THIRD_NOT: "[COUNTRY.GetAdjective] týdenní celkové výdaje #bold nejsou #!$COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)"
+ TRIGGER_FIXED_EXPENSES: "Týdenní fixní výdaje jsou $COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)"
+ TRIGGER_FIXED_EXPENSES_NOT: "Týdenní fixní výdaje #bold nejsou #!$COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)"
+ TRIGGER_FIXED_EXPENSES_FIRST: "[COUNTRY.GetAdjectiveNoFlag] týdenní fixní výdaje jsou $COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)"
+ TRIGGER_FIXED_EXPENSES_FIRST_NOT: "[COUNTRY.GetAdjectiveNoFlag] týdenní fixní výdaje #bold nejsou #!$COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)"
+ TRIGGER_FIXED_EXPENSES_THIRD: "[COUNTRY.GetAdjective] týdenní fixní výdaje jsou $COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)"
+ TRIGGER_FIXED_EXPENSES_THIRD_NOT: "[COUNTRY.GetAdjective] týdenní fixní výdaje #bold nejsou #!$COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)"
+ TRIGGER_TOTAL_INCOME: "Týdenní celkové příjmy jsou $COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)"
+ TRIGGER_TOTAL_INCOME_NOT: "Týdenní celkové příjmy #bold nejsou #!$COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)"
+ TRIGGER_TOTAL_INCOME_FIRST: "[COUNTRY.GetAltAdjectiveNoFlag('ee')] týdenní celkové příjmy jsou $COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)"
+ TRIGGER_TOTAL_INCOME_FIRST_NOT: "[COUNTRY.GetAltAdjectiveNoFlag('ee')] týdenní celkové příjmy #bold nejsou #!$COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)"
+ TRIGGER_TOTAL_INCOME_THIRD: "[COUNTRY.GetAltAdjective('ee')] týdenní celkové příjmy jsou $COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)"
+ TRIGGER_TOTAL_INCOME_THIRD_NOT: "[COUNTRY.GetAltAdjective('ee')] týdenní celkové příjmy #bold nejsou #!$COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)"
+ TRIGGER_FIXED_INCOME: "Týdenní fixní příjmy jsou $COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)"
+ TRIGGER_FIXED_INCOME_NOT: "Týdenní fixní příjmy #bold nejsou #!$COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)"
+ TRIGGER_FIXED_INCOME_FIRST: "[COUNTRY.GetAltAdjectiveNoFlag('ee')] týdenní fixní příjmy jsou $COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)"
+ TRIGGER_FIXED_INCOME_FIRST_NOT: "[COUNTRY.GetAltAdjectiveNoFlag('ee')] týdenní fixní příjmy #bold nejsou #!$COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)"
+ TRIGGER_FIXED_INCOME_THIRD: "[COUNTRY.GetAltAdjective('ee')] týdenní fixní příjmy jsou $COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)"
+ TRIGGER_FIXED_INCOME_THIRD_NOT: "[COUNTRY.GetAltAdjective('ee')] týdenní fixní příjmy #bold nejsou #!$COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)"
+ TRIGGER_NET_FIXED_INCOME: "Týdenní čisté fixní příjmy po výdajích jsou $COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)"
+ TRIGGER_NET_FIXED_INCOME_NOT: "Týdenní čisté fixní příjmy po výdajích #bold nejsou #!$COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)"
+ TRIGGER_NET_FIXED_INCOME_FIRST: "[COUNTRY.GetAltAdjectiveNoFlag('ee')] týdenní čisté fixní příjmy po výdajích jsou $COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)"
+ TRIGGER_NET_FIXED_INCOME_FIRST_NOT: "[COUNTRY.GetAltAdjectiveNoFlag('ee')] týdenní čisté fixní příjmy po výdajích #bold nejsou #!$COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)"
+ TRIGGER_NET_FIXED_INCOME_THIRD: "[COUNTRY.GetAltAdjective('ee')] týdenní čisté fixní příjmy po výdajích jsou $COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)"
+ TRIGGER_NET_FIXED_INCOME_THIRD_NOT: "[COUNTRY.GetAltAdjective('ee')] týdenní čisté fixní příjmy po výdajích #bold nejsou #!$COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)"
+ TRIGGER_NET_TOTAL_INCOME: "Týdenní čisté celkové příjmy po výdajích jsou $COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)"
+ TRIGGER_NET_TOTAL_INCOME_NOT: "Týdenní čisté celkové příjmy po výdajích #bold nejsou #!$COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)"
+ TRIGGER_NET_TOTAL_INCOME_FIRST: "[COUNTRY.GetAltAdjectiveNoFlag('ee')] týdenní čisté celkové příjmy po výdajích jsou $COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)"
+ TRIGGER_NET_TOTAL_INCOME_FIRST_NOT: "[COUNTRY.GetAltAdjectiveNoFlag('ee')] týdenní čisté celkové příjmy po výdajích #bold nejsou #!$COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)"
+ TRIGGER_NET_TOTAL_INCOME_THIRD: "[COUNTRY.GetAltAdjective('ee')] týdenní čisté celkové příjmy po výdajích jsou $COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)"
+ TRIGGER_NET_TOTAL_INCOME_THIRD_NOT: "[COUNTRY.GetAltAdjective('ee')] týdenní čisté celkové příjmy po výdajích #bold nejsou #!$COMPARATOR$ @money!$NUM|vK$ (aktuálně @money!$CURRENT_VALUE|vK$)"
+ TRIGGER_NAVAL_POWER_PROJECTION_GREATER_THAN: "Námořní [concept_power_projection|l] je $COMPARATOR$ $NUM|v$"
+ TRIGGER_NAVAL_POWER_PROJECTION_GREATER_THAN_FIRST: "[COUNTRY.GetAdjectiveNoFlag('aa')] námořní [concept_power_projectionwl] je $COMPARATOR$ $NUM|v$"
+ TRIGGER_NAVAL_POWER_PROJECTION_GREATER_THAN_THIRD: "[COUNTRY.GetAltAdjective('aa')] námořní [concept_power_projection|l] je $COMPARATOR$ $NUM|v$"
+ TRIGGER_ARMY_POWER_PROJECTION_GREATER_THAN: "Pozemní [concept_power_projection] je $COMPARATOR$ $NUM|v$"
+ TRIGGER_ARMY_POWER_PROJECTION_GREATER_THAN_FIRST: "[COUNTRY.GetAltAdjectiveNoFlag('aa')] pozemní [concept_power_projection|l] je $COMPARATOR$ $NUM|v$"
+ TRIGGER_ARMY_POWER_PROJECTION_GREATER_THAN_THIRD: "[COUNTRY.GetAltAdjective('aa')] pozemní [concept_power_projection|l] je $COMPARATOR$ $NUM|v$"
+ TRIGGER_CULTURE_PERCENT_STATE_FIRST: "Populace ve [STATE.GetName] je $COMPARATOR$ $NUM|%0v$ [TARGET_CULTURE.GetName] (aktuálně $CURRENT_VALUE|%0v$)"
+ TRIGGER_CULTURE_PERCENT_STATE_FIRST_NOT: "Populace ve [STATE.GetName] #bold není#! $COMPARATOR$ $NUM|%0v$ [TARGET_CULTURE.GetName] (aktuálně $CURRENT_VALUE|%0v$)"
+ TRIGGER_CULTURE_PERCENT_STATE_THIRD: "Populace ve [STATE.GetName] je $COMPARATOR$ $NUM|%0v$ [TARGET_CULTURE.GetName] (aktuálně $CURRENT_VALUE|%0v$)"
+ TRIGGER_CULTURE_PERCENT_STATE_THIRD_NOT: "Populace ve [STATE.GetName] #bold není#! $COMPARATOR$ $NUM|%0v$ [TARGET_CULTURE.GetName] (aktuálně $CURRENT_VALUE|%0v$)"
+ TRIGGER_RELIGION_PERCENT_STATE_FIRST: "Populace ve [STATE.GetName] je $COMPARATOR$ $NUM|%0v$ [TARGET_RELIGION.GetName] (aktuálně $CURRENT_VALUE|%0v$)"
+ TRIGGER_RELIGION_PERCENT_STATE_FIRST_NOT: "Populace ve [STATE.GetName] #bold není#! $COMPARATOR$ $NUM|%0v$ [TARGET_RELIGION.GetName] (aktuálně $CURRENT_VALUE|%0v$)"
+ TRIGGER_RELIGION_PERCENT_STATE_THIRD: "Populace ve [STATE.GetName] je $COMPARATOR$ $NUM|%0v$ [TARGET_RELIGION.GetName] (aktuálně $CURRENT_VALUE|%0v$)"
+ TRIGGER_RELIGION_PERCENT_STATE_THIRD_NOT: "Populace ve [STATE.GetName] #bold není#! $COMPARATOR$ $NUM|%0v$ [TARGET_RELIGION.GetName] (aktuálně $CURRENT_VALUE|%0v$)"
+ TRIGGER_COUNTRY_AVERAGE_CULTURE_POP_ACCEPTANCE: "Průměrné přijetí [CULTURE.GetName] [Concept('concept_pop', 'populace')] v [COUNTRY.GetAltAdjective('L')] je $COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_COUNTRY_AVERAGE_CULTURE_POP_ACCEPTANCE_NOT: "Průměrné přijetí [CULTURE.GetName] [Concept('concept_pop', 'populace')] v [COUNTRY.GetAltAdjective('L')] #bold není #!$COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_COUNTRY_AVERAGE_CULTURE_POP_ACCEPTANCE_FIRST: "Průměrné přijetí [CULTURE.GetName] [Concept('concept_pop', 'populace')] v [COUNTRY.GetAltAdjective('L')] je $COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_COUNTRY_AVERAGE_CULTURE_POP_ACCEPTANCE_FIRST_NOT: "Průměrné přijetí [CULTURE.GetName] [Concept('concept_pop', 'populace')] v [COUNTRY.GetAltAdjective('L')] #bold není #!$COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_COUNTRY_AVERAGE_CULTURE_POP_ACCEPTANCE_THIRD: "Průměrné přijetí [CULTURE.GetName] [Concept('concept_pop', 'populace')] v [COUNTRY.GetAltAdjective('L')] je $COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_COUNTRY_AVERAGE_CULTURE_POP_ACCEPTANCE_THIRD_NOT: "Průměrné přijetí [CULTURE.GetName] [Concept('concept_pop', 'populace')] v [COUNTRY.GetAltAdjective('L')] #bold není #!$COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_COUNTRY_AVERAGE_RELIGION_POP_ACCEPTANCE: "Průměrné přijetí [RELIGION.GetName] [Concept('concept_pop', 'populace')] v [COUNTRY.GetAltAdjective('L')] je $COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_COUNTRY_AVERAGE_RELIGION_POP_ACCEPTANCE_NOT: "Průměrné přijetí [RELIGION.GetName] [Concept('concept_pop', 'populace')] v [COUNTRY.GetAltAdjective('L')] #bold není #!$COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_COUNTRY_AVERAGE_RELIGION_POP_ACCEPTANCE_FIRST: "Průměrné přijetí [RELIGION.GetName] [Concept('concept_pop', 'populace')] v [COUNTRY.GetAltAdjective('L')] je $COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_COUNTRY_AVERAGE_RELIGION_POP_ACCEPTANCE_FIRST_NOT: "Průměrné přijetí [RELIGION.GetName] [Concept('concept_pop', 'populace')] v [COUNTRY.GetAltAdjective('L')] #bold není #!$COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_COUNTRY_AVERAGE_RELIGION_POP_ACCEPTANCE_THIRD: "Průměrné přijetí [RELIGION.GetName] [Concept('concept_pop', 'populace')] v [COUNTRY.GetAltAdjective('L')] je $COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_COUNTRY_AVERAGE_RELIGION_POP_ACCEPTANCE_THIRD_NOT: "Průměrné přijetí [RELIGION.GetName] [Concept('concept_pop', 'populace')] v [COUNTRY.GetAltAdjective('L')] #bold není #!$COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_COUNTRY_AVERAGE_CULTURE_AND_RELIGION_POP_ACCEPTANCE: "Průměrné přijetí [CULTURE.GetCustom('CUL_ADJ_ee')] [RELIGION.GetName] [Concept('concept_pop', 'populace')] v [COUNTRY.GetAltAdjective('L')] je $COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_COUNTRY_AVERAGE_CULTURE_AND_RELIGION_POP_ACCEPTANCE_NOT: "Průměrné přijetí [CULTURE.GetCustom('CUL_ADJ_ee')] [RELIGION.GetName] [Concept('concept_pop', 'populace')] v [COUNTRY.GetAltAdjective('L')] #bold není #!$COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_COUNTRY_AVERAGE_CULTURE_AND_RELIGION_POP_ACCEPTANCE_FIRST: "Průměrné přijetí [CULTURE.GetCustom('CUL_ADJ_ee')] [RELIGION.GetName] [Concept('concept_pop', 'populace')] v [COUNTRY.GetAltAdjective('L')] je $COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_COUNTRY_AVERAGE_CULTURE_AND_RELIGION_POP_ACCEPTANCE_FIRST_NOT: "Průměrné přijetí [CULTURE.GetCustom('CUL_ADJ_ee')] [RELIGION.GetName] [Concept('concept_pop', 'populace')] v [COUNTRY.GetAltAdjective('L')] #bold není #!$COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_COUNTRY_AVERAGE_CULTURE_AND_RELIGION_POP_ACCEPTANCE_THIRD: "Průměrné přijetí [CULTURE.GetCustom('CUL_ADJ_ee')] [RELIGION.GetName] [Concept('concept_pop', 'populace')] v [COUNTRY.GetAltAdjective('L')] je $COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_COUNTRY_AVERAGE_CULTURE_AND_RELIGION_POP_ACCEPTANCE_THIRD_NOT: "Průměrné přijetí [CULTURE.GetCustom('CUL_ADJ_ee')] [RELIGION.GetName] [Concept('concept_pop', 'populace')] v [COUNTRY.GetAltAdjective('L')] #bold není #!$COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_STATE_AVERAGE_CULTURE_POP_ACCEPTANCE: "Průměrné přijetí [CULTURE.GetCustom('CUL_ADJ_ee')] [Concept('concept_pop', 'populace')] v [STATE.GetName] je $COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_STATE_AVERAGE_CULTURE_POP_ACCEPTANCE_NOT: "Průměrné přijetí [CULTURE.GetCustom('CUL_ADJ_ee')] [Concept('concept_pop', 'populace')] v [STATE.GetName] #bold není #!$COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_STATE_AVERAGE_CULTURE_POP_ACCEPTANCE_FIRST: "Průměrné přijetí [CULTURE.GetCustom('CUL_ADJ_ee')] [Concept('concept_pop', 'populace')] v [STATE.GetName] je $COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_STATE_AVERAGE_CULTURE_POP_ACCEPTANCE_FIRST_NOT: "Průměrné přijetí [CULTURE.GetCustom('CUL_ADJ_ee')] [Concept('concept_pop', 'populace')] v [STATE.GetName] #bold není #!$COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_STATE_AVERAGE_CULTURE_POP_ACCEPTANCE_THIRD: "Průměrné přijetí [CULTURE.GetCustom('CUL_ADJ_ee')] [Concept('concept_pop', 'populace')] v [STATE.GetName] je $COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_STATE_AVERAGE_CULTURE_POP_ACCEPTANCE_THIRD_NOT: "Průměrné přijetí [CULTURE.GetCustom('CUL_ADJ_ee')] [Concept('concept_pop', 'populace')] v [STATE.GetName] #bold není #!$COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_STATE_AVERAGE_RELIGION_POP_ACCEPTANCE: "Průměrné přijetí [RELIGION.GetName] [Concept('concept_pop', 'populace')] v [STATE.GetName] je $COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_STATE_AVERAGE_RELIGION_POP_ACCEPTANCE_NOT: "Průměrné přijetí [RELIGION.GetName] [Concept('concept_pop', 'populace')] v [STATE.GetName] #bold není #!$COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_STATE_AVERAGE_RELIGION_POP_ACCEPTANCE_FIRST: "Průměrné přijetí [RELIGION.GetName] [Concept('concept_pop', 'populace')] v [STATE.GetName] je $COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_STATE_AVERAGE_RELIGION_POP_ACCEPTANCE_FIRST_NOT: "Průměrné přijetí [RELIGION.GetName] [Concept('concept_pop', 'populace')] v [STATE.GetName] #bold není #!$COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_STATE_AVERAGE_RELIGION_POP_ACCEPTANCE_THIRD: "Průměrné přijetí [RELIGION.GetName] [Concept('concept_pop', 'populace')] v [STATE.GetName] je $COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_STATE_AVERAGE_RELIGION_POP_ACCEPTANCE_THIRD_NOT: "Průměrné přijetí [RELIGION.GetName] [Concept('concept_pop', 'populace')] v [STATE.GetName] #bold není #!$COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_STATE_AVERAGE_CULTURE_AND_RELIGION_POP_ACCEPTANCE: "Průměrné přijetí [CULTURE.GetCustom('CUL_ADJ_ee')] [RELIGION.GetName] [Concept('concept_pop', 'populace')] v [STATE.GetName] je $COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_STATE_AVERAGE_CULTURE_AND_RELIGION_POP_ACCEPTANCE_NOT: "Průměrné přijetí [CULTURE.GetCustom('CUL_ADJ_ee')] [RELIGION.GetName] [Concept('concept_pop', 'populace')] v [STATE.GetName] #bold není #!$COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_STATE_AVERAGE_CULTURE_AND_RELIGION_POP_ACCEPTANCE_FIRST: "Průměrné přijetí [CULTURE.GetCustom('CUL_ADJ_ee')] [RELIGION.GetName] [Concept('concept_pop', 'populace')] v [STATE.GetName] je $COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_STATE_AVERAGE_CULTURE_AND_RELIGION_POP_ACCEPTANCE_FIRST_NOT: "Průměrné přijetí [CULTURE.GetCustom('CUL_ADJ_ee')] [RELIGION.GetName] [Concept('concept_pop', 'populace')] v [STATE.GetName] #bold není #!$COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_STATE_AVERAGE_CULTURE_AND_RELIGION_POP_ACCEPTANCE_THIRD: "Průměrné přijetí [CULTURE.GetCustom('CUL_ADJ_ee')] [RELIGION.GetName] [Concept('concept_pop', 'populace')] v [STATE.GetName] je $COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_STATE_AVERAGE_CULTURE_AND_RELIGION_POP_ACCEPTANCE_THIRD_NOT: "Průměrné přijetí [CULTURE.GetCustom('CUL_ADJ_ee')] [RELIGION.GetName] [Concept('concept_pop', 'populace')] v [STATE.GetName] #bold není #!$COMPARATOR$ #variable $NUM$#!"
+ NOT_TRIGGER_MARKET_ACCESS_GREATER_THAN: "[concept_market_access] #b není#! větší než $NUM|%0v$ (aktuálně: $CURRENT_VALUE|%0v$)"
+ NOT_TRIGGER_MARKET_ACCESS_LESS_THAN: "[concept_market_access] #b není#! menší než $NUM|%0v$ (aktuálně: $CURRENT_VALUE|%0v$)"
+ NOT_TRIGGER_MARKET_ACCESS_GREATER_OR_EQUAL: "[concept_market_access] #b není#! větší, nebo rovný $NUM|%0v$ (aktuálně: $CURRENT_VALUE|%0v$)"
+ NOT_TRIGGER_MARKET_ACCESS_LESS_OR_EQUAL: "[concept_market_access] #b není#! menší, nebo rovný $NUM|%0v$ (aktuálně: $CURRENT_VALUE|%0v$)"
+ NOT_TRIGGER_MARKET_ACCESS_EQUAL: "[concept_market_access] #b není#! $NUM|%0v$ (aktuálně: $CURRENT_VALUE|%0v$)"
+ NOT_TRIGGER_MARKET_ACCESS_NOT_EQUAL: "[concept_market_access] #bold není #!$NUM|%0v$ (aktuálně: $CURRENT_VALUE|%0v$)"
+ NOT_TRIGGER_MARKET_ACCESS_GREATER_THAN_THIRD: "[concept_market_access] v [State.GetName] #b není#! větší než $NUM|%0v$ (aktuálně: $CURRENT_VALUE|%0v$)"
+ NOT_TRIGGER_MARKET_ACCESS_LESS_THAN_THIRD: "[concept_market_access] v [State.GetName] #b není#! menší než $NUM|%0v$ (aktuálně: $CURRENT_VALUE|%0v$)"
+ NOT_TRIGGER_MARKET_ACCESS_GREATER_OR_EQUAL_THIRD: "[concept_market_access] v [State.GetName] #b není#! větší, nebo rovný $NUM|%0v$ (aktuálně: $CURRENT_VALUE|%0v$)"
+ NOT_TRIGGER_MARKET_ACCESS_LESS_OR_EQUAL_THIRD: "[concept_market_access] v [State.GetName] #b není#! menší, nebo rovný $NUM|%0v$ (aktuálně: $CURRENT_VALUE|%0v$)"
+ NOT_TRIGGER_MARKET_ACCESS_EQUAL_THIRD: "[concept_market_access] v [State.GetName] #b není#! $NUM|%0v$ (aktuálně: $CURRENT_VALUE|%0v$)"
+ NOT_TRIGGER_MARKET_ACCESS_NOT_EQUAL_THIRD: "[concept_market_access] v [State.GetName] #bold není #!$NUM|%0v$ (aktuálně: $CURRENT_VALUE|%0v$)"
+ TRIGGER_STATE_GDP_GREATER_THAN: "$GDP_SHORT$ státu [STATE.GetName] je větší než @money!$TARGET_VALUE|Dv$ (aktuálně: @money!$CURRENT_VALUE|Dv$)"
+ TRIGGER_STATE_GDP_GREATER_OR_EQUAL: "$GDP_SHORT$ státu [STATE.GetName] je větší nebo rovno @money!$TARGET_VALUE|Dv$ (aktuálně: @money!$CURRENT_VALUE|Dv$)"
+ TRIGGER_STATE_GDP_LESS_THAN: "$GDP_SHORT$ státu [STATE.GetName] je menší než @money!$TARGET_VALUE|Dv$ (aktuálně: @money!$CURRENT_VALUE|Dv$)"
+ TRIGGER_STATE_GDP_LESS_OR_EQUAL: "$GDP_SHORT$ státu [STATE.GetName] je menší nebo rovno @money!$TARGET_VALUE|Dv$ (aktuálně: @money!$CURRENT_VALUE|Dv$)"
+ TRIGGER_STATE_GDP_EQUAL: "$GDP_SHORT$ státu [STATE.GetName] je @money!$TARGET_VALUE|Dv$ (aktuálně: @money!$CURRENT_VALUE|Dv$)"
+ TRIGGER_STATE_GDP_NOT_EQUAL: "$GDP_SHORT$ státu [STATE.GetName] #bold není #!@money!$TARGET_VALUE|Dv$ (aktuálně: @money!$CURRENT_VALUE|Dv$)"
+ TRIGGER_PRESTIGE_GREATER_OR_EQUAL: "Prestiž [COUNTRY.GetName] je $COMPARATOR$ #v $NUM$#! (aktuálně: $CURRENT_VALUE|v$)"
+ TRIGGER_PRESTIGE_GREATER_OR_EQUAL_NOT: "Prestiž [COUNTRY.GetName] #bold není#! $COMPARATOR$ #v $NUM$#! (aktuálně: $CURRENT_VALUE|v$)"
+ TRIGGER_TOTAL_TRADE_VALUE_GREATER_THAN: "Celková hodnota [Concept('concept_trade','obchodu')] je větší než $TARGET_VALUE|0v$"
+ TRIGGER_TOTAL_TRADE_VALUE_GREATER_THAN_FIRST: "$TRIGGER_TOTAL_TRADE_VALUE_GREATER_THAN$"
+ TRIGGER_TOTAL_TRADE_VALUE_GREATER_OR_EQUAL: "Celková hodnota [Concept('concept_trade','obchodu')] je větší nebo rovna $TARGET_VALUE|0v$"
+ TRIGGER_TOTAL_TRADE_VALUE_GREATER_OR_EQUAL_FIRST: "$TRIGGER_TOTAL_TRADE_VALUE_GREATER_OR_EQUAL$"
+ TRIGGER_TOTAL_TRADE_VALUE_LESS_THAN: "Celková hodnota [Concept('concept_trade','obchodu')] je menší než $TARGET_VALUE|0v$"
+ TRIGGER_TOTAL_TRADE_VALUE_LESS_THAN_FIRST: "$TTRIGGER_TOTAL_TRADE_VALUE_LESS_THAN$"
+ TRIGGER_TOTAL_TRADE_VALUE_LESS_OR_EQUAL: "Celková hodnota [Concept('concept_trade','obchodu')] je menší nebo rovna $TARGET_VALUE|0v$"
+ TRIGGER_TOTAL_TRADE_VALUE_LESS_OR_EQUAL_FIRST: "$TRIGGER_TOTAL_TRADE_VALUE_LESS_OR_EQUAL$"
+ TRIGGER_TOTAL_TRADE_VALUE_EQUAL: "Celková hodnota [Concept('concept_trade','obchodu')] je rovna $TARGET_VALUE|0v$"
+ TRIGGER_TOTAL_TRADE_VALUE_EQUAL_FIRST: "$TRIGGER_TOTAL_TRADE_VALUE_EQUAL$"
+ TRIGGER_TOTAL_TRADE_VALUE_NOT_EQUAL: "Celková hodnota [Concept('concept_trade','obchodu')] #v není#! rovna $TARGET_VALUE|0v$"
+ TRIGGER_TOTAL_TRADE_VALUE_NOT_EQUAL_FIRST: "$TRIGGER_TOTAL_TRADE_VALUE_NOT_EQUAL$"
+ TRIGGER_ANY_COMPANY_FIRST: "Libovolná [concept_company|l]:"
+ TRIGGER_ANY_COMPANY_FIRST_NOT: "Žádná [concept_company|l]:"
+ TRIGGER_NUM_UNITS_SHARE: "Celkový podíl [Concept('concept_unit','$concept_units$')] kontrolovaný touto postavou je $COMPARATOR$ $TARGET_VALUE|0v$"
+ TRIGGER_NUM_UNITS_SHARE_NOT: "Celkový podíl [Concept('concept_unit','$concept_units$')] kontrolovaný touto postavou #bold není#! $COMPARATOR$ $TARGET_VALUE|0v$"
+ TRIGGER_NUM_UNITS_SHARE_LESS_THAN: "Celkový podíl [Concept('concept_unit','$concept_units$')] kontrolovaný touto postavou je menší než $TARGET_VALUE|0v$"
+ TRIGGER_NUM_UNITS_SHARE_LESS_THAN_NOT: "Celkový podíl [Concept('concept_unit','$concept_units$')] kontrolovaný touto postavou  #bold není#! menší než $TARGET_VALUE|0v$"
+ TRIGGER_NUM_UNITS_SHARE_LESS_THAN_THIRD: "Celkový podíl [Concept('concept_unit','$concept_units$')] kontrolovaný [Character.GetFullName] je menší než $TARGET_VALUE|0v$"
+ TRIGGER_NUM_UNITS_SHARE_LESS_THAN_THIRD_NOT: "Celkový podíl [Concept('concept_unit','$concept_units$')] kontrolovaný [Character.GetFullName] #bold není #! menší než $TARGET_VALUE|0v$"
+ TRIGGER_NUM_UNITS_SHARE_LESS_OR_EQUAL: "Celkový podíl [Concept('concept_unit','$concept_units$')] kontrolovaný touto postavou je menší nebo rovný $TARGET_VALUE|0v$"
+ TRIGGER_NUM_UNITS_SHARE_LESS_OR_EQUAL_NOT: "Celkový podíl [Concept('concept_unit','$concept_units$')] kontrolovaný touto postavou #bold není #! menší nebo rovný $TARGET_VALUE|0v$"
+ TRIGGER_NUM_UNITS_SHARE_LESS_OR_EQUAL_THIRD: "Celkový podíl [Concept('concept_unit','$concept_units$')] kontrolovaný [Character.GetFullName] je menší nebo rovný $TARGET_VALUE|0v$"
+ TRIGGER_NUM_UNITS_SHARE_LESS_OR_EQUAL_THIRD_NOT: "Celkový podíl [Concept('concept_unit','$concept_units$')] kontrolovaný [Character.GetFullName] #bold není#! menší nebo rovný $TARGET_VALUE|0v$"
+ TRIGGER_IS_NEGOTIATING: "[Concept('concept_negotiation', '$concept_negotiations$')] probíhají"
+ TRIGGER_IS_NEGOTIATING_NOT: "[Concept('concept_negotiation', '$concept_negotiations$')] #b nejsou#! v průběhu"
+ TRIGGER_HAS_NEGOTIATED: "[concept_interest_group] dokončila [Concept('concept_negotiation', 'vyjednávání')]"
+ TRIGGER_HAS_NEGOTIATED_NOT: "[concept_interest_group] #b nedokončila#! [Concept('concept_negotiation', 'vyjednávání')]"
+ TRIGGER_HAS_NEGOTIATED_THIRD: "[INTEREST_GROUP.GetName] dokončila [Concept('concept_negotiation', 'vyjednávání')]"
+ TRIGGER_HAS_NEGOTIATED_THIRD_NOT: "[INTEREST_GROUP.GetName] #b nedokončila#! [Concept('concept_negotiation', 'vyjednávání')]"
+ TRIGGER_HAS_AMENDMENT: "Má [concept_amendment|l] typu [AMENDMENT_TYPE.GetName]"
+ TRIGGER_HAS_AMENDMENT_NOT: "#b Nemá#! [concept_amendment] typu [AMENDMENT_TYPE.GetName]"
+ TRIGGER_HAS_AMENDMENT_THIRD: "[LAW.GetName] má [concept_amendment] typu [AMENDMENT_TYPE.GetName]"
+ TRIGGER_HAS_AMENDMENT_THIRD_NOT: "[LAW.GetName] #b nemá#! [concept_amendment|l] typu [AMENDMENT_TYPE.GetName]"
+ TRIGGER_WOULD_SPONSOR_AMENDMENT: "Sponzoroval by [concept_amendment|l] typu [AMENDMENT_TYPE.GetName]"
+ TRIGGER_WOULD_SPONSOR_AMENDMENT_NOT: "#b Nesponzoroval#! by [concept_amendment|l] typu [AMENDMENT_TYPE.GetName]"
+ TRIGGER_WOULD_SPONSOR_AMENDMENT_THIRD: "[INTEREST_GROUP.GetName] by sponzoroval [concept_amendment|l] typu [AMENDMENT_TYPE.GetName]"
+ TRIGGER_WOULD_SPONSOR_AMENDMENT_THIRD_NOT: "[INTEREST_GROUP.GetName] by #b nesponzorovala#! [concept_amendment|l] typu [AMENDMENT_TYPE.GetName]"
+ TRIGGER_AMENDMENT_STANCE: "Postoj k [AMENDMENT.GetName] $COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_AMENDMENT_STANCE_NOT: "Postoj k [AMENDMENT.GetName] #b není#! $COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_AMENDMENT_CAN_BE_REPEALED: "[AMENDMENT.GetName] lze zrušit"
+ TRIGGER_AMENDMENT_CAN_BE_REPEALED_NOT: "[AMENDMENT.GetName] #b nelze#! zrušit"
+ TRIGGER_AMENDMENT_COUNT: "[LAW.GetName] má $COMPARATOR$ $NUM|v$ [Concept('concept_amendment', 'dodatky')]"
+ TRIGGER_AMENDMENT_COUNT_NOT: "[LAW.GetName] #b nemá#! $COMPARATOR$ $NUM|v$ [Concept('concept_amendment', 'dodatky')]"
+ TRIGGER_HAS_PARENT_LAW: "[concept_amendment] má rodičovský [concept_law|l]"
+ TRIGGER_HAS_PARENT_LAW_NOT: "[concept_amendment] #b nemá#! rodičovský [concept_law|l]"
+ TRIGGER_LIBERTY_DESIRE_WEEKLY_PROGRESS: "[concept_liberty_desire] týdenní změna je $COMPARATOR$ $NUM|v$"
+ TRIGGER_LIBERTY_DESIRE_WEEKLY_PROGRESS_NOT: "[concept_liberty_desire] týdenní změna #b není#! $COMPARATOR$ $NUM|v$"
+ TRIGGER_LIBERTY_DESIRE_WEEKLY_PROGRESS_FIRST: "[COUNTRY.GetName] [concept_liberty_desire] týdenní změna je $COMPARATOR$ $NUM|v$"
+ TRIGGER_LIBERTY_DESIRE_WEEKLY_PROGRESS_FIRST_NOT: "[COUNTRY.GetName] [concept_liberty_desire] týdenní změna #b není#! $COMPARATOR$ $NUM|v$"
+ TRIGGER_LIBERTY_DESIRE_WEEKLY_PROGRESS_THIRD: "$TRIGGER_LIBERTY_DESIRE_WEEKLY_PROGRESS_FIRST$"
+ TRIGGER_LIBERTY_DESIRE_WEEKLY_PROGRESS_THIRD_NOT: "$TRIGGER_LIBERTY_DESIRE_WEEKLY_PROGRESS_FIRST_NOT$"
+ TRIGGER_GDP_RANKING: "[Concept('concept_gdp', '$concept_gdp_short$')] pořadí je $COMPARATOR$ $NUM|v$"
+ TRIGGER_GDP_RANKING_NOT: "[Concept('concept_gdp', '$concept_gdp_short$')] pořadí #b není#! $COMPARATOR$ $NUM|v$"
  TRIGGER_GDP_RANKING_FIRST: "[COUNTRY.GetAdjectiveNoFlag] [Concept('concept_gdp', '$concept_gdp_short$')] pořadí je $COMPARATOR$ $NUM|v$ (aktuálně [COUNTRY.GetGDPRanking])"
  TRIGGER_GDP_RANKING_FIRST_NOT: "[COUNTRY.GetAdjectiveNoFlag] [Concept('concept_gdp', '$concept_gdp_short$')] pořadí je #b not#! $COMPARATOR$ $NUM|v$ (aktuálně [COUNTRY.GetGDPRanking])"
  TRIGGER_GDP_RANKING_THIRD: "[COUNTRY.GetAdjective] [Concept('concept_gdp', '$concept_gdp_short$')] pořadí je $COMPARATOR$ $NUM|v$ (aktuálně [COUNTRY.GetGDPRanking])"
