@@ -133,9 +133,9 @@
  je_earn_recognition_tt: "Podepíšeme #bold [SCOPE.GetRootScope.GetCountry.GetCustom('treaty_names_custom_loc')]#! s relevantní [concept_great_power], což nám poskytne uznání ve světě."
  je_eastern_frontier: "Východní hranice"
  je_eastern_frontier_reason: "Velké části na našem východě, dominované dříve rušnými městy jako [SCOPE.sStateRegion('merv_scope').GetName] a [SCOPE.sStateRegion('herat_scope').GetName] se staly částí [SCOPE.GetRootScope.GetCountry.GetAdjective] Chorásán od dob Manochehra. Zatímco tyto země byly od nás vytrženy plynulostí času a dominací utiskujících a mocných vládců, už to nemůže pokračovat.\n\nMusí být učiněny rozhodující kroky k opětovnému začlenění těchto vzpurných zemí, aby žádná cizí moc nemohla znovu napadnout a podrobit je.\n\n#bold Turanská zajetí#!\nGenerace Turkmenů, které přepadávaly naše území, vedly ke vzniku velkých populací perských otroků, kteří pracují v oázách jako [SCOPE.sStateRegion('uzbekia_scope').GetName] a [SCOPE.sStateRegion('khiva_scope').GetName]. Dobytí těchto oblastí nám umožní osvobodit a #tooltippable #tooltip:je_eastern_frontier_tt_5 usídlit#!#! otročené perské komunity, pokud budeme chtít."
- je_eastern_frontier_tt_1: "[GetGeographicRegion('geographic_region_greater_khorasan').GetName] je vlastněn [SCOPE.GetRootScope.GetCountry.GetName] nebo jeho poddanými." # todo: CHANGED
- je_eastern_frontier_tt_2: "[GetGeographicRegion('geographic_region_chorasmia').GetName] je vlastněn [SCOPE.GetRootScope.GetCountry.GetName] nebo jeho poddanými." # todo: CHANGED
- je_eastern_frontier_tt_3: "[GetGeographicRegion('geographic_region_transoxiana').GetName] je vlastněn [SCOPE.GetRootScope.GetCountry.GetName] nebo jeho poddanými." # todo: CHANGED
+ je_eastern_frontier_tt_1: "[GetGeographicRegion('geographic_region_greater_khorasan').GetName] je vlastněn [SCOPE.GetRootScope.GetCountry.GetName] nebo jeho poddanými."
+ je_eastern_frontier_tt_2: "[GetGeographicRegion('geographic_region_chorasmia').GetName] je vlastněn [SCOPE.GetRootScope.GetCountry.GetName] nebo jeho poddanými."
+ je_eastern_frontier_tt_3: "[GetGeographicRegion('geographic_region_transoxiana').GetName] je vlastněn [SCOPE.GetRootScope.GetCountry.GetName] nebo jeho poddanými."
  je_eastern_frontier_tt_4: "Dobývali jsme a #bold obnovili#! [SCOPE.sStateRegion('merv_scope').GetName]."
  je_eastern_frontier_tt_5: "Použitím [GetDecreeType('decree_emergency_relief').GetName] [concept_decree] může být jakýkoli vlastněný [concept_state] určen jako cíl pro usídlení."
  je_secure_influence_over_persia: "Zajistit vliv nad Persií"
@@ -388,4 +388,4 @@
  we_chose_this_london_treaty_tt: "[ROOT.GetCountry.GetName] oficiálně upřednostňuje tento návrh."
  x_army_custom_loc: "armáda"
  x_navy_custom_loc: "námořnictvo"
- is_subject_of_great_power_tt: "Je přímým nebo nepřímým [concept_subject] #b [concept_great_power]#!" # todo: NEW TRANSLATION
+ is_subject_of_great_power_tt: "Je přímou nebo nepřímou [Concept('concept_subject','závislou zemí')] #b [Concept('concept_great_power','velmoci')]#!"
