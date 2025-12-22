@@ -103,7 +103,7 @@
  HOVER_STATE_DEBUG_TOOLTIP_PLAYER_INFO: "IsPlayer = #variable [SelectLocalization(STATE.GetOwner.IsPlayer, 'ANO', 'NE')]#!\nIsLocalPlayer = #variable [SelectLocalization(STATE.GetOwner.IsLocalPlayer, 'ANO', 'NE')]#!\nIsAI = #variable [SelectLocalization(STATE.GetOwner.IsAI, 'ANO', 'NE')]#!"
  HOVER_STATE_DIPLOMATIC_LENS: "[SelectLocalization(STATE.GetOwner.IsPlayer, '', 'AI_STRATEGIES_SUMMARY')]\n\n#title Kultura, která považuje [STATE.GetName] za svou domovinu:#!\n[STATE.GetHomelandsDesc] [ConcatIfNeitherEmpty('\n\n#title Země s nároky na tento stát:#!\n', STATE.GetClaimsDesc)]"
  HOVER_STATE_LOYALISTS: "[STATE.GetNumLoyalists] [Concept('concept_loyalist', '$concept_loyalists$')] v [STATE.GetName]"
- HOVER_STATE_MILITARY_LENS: "[STATE.GetBuilding('building_barrack').GetCombatUnitProduction] z [STATE.GetBuilding('building_barrack').GetName]\n[STATE.GetBuilding('building_naval_base').GetCombatUnitProduction] z [STATE.GetBuilding('building_naval_base').GetName]" # todo: CHANGED
+ HOVER_STATE_MILITARY_LENS: "[STATE.GetBuilding('building_barrack').GetCombatUnitProduction] z [STATE.GetBuilding('building_barrack').GetName]\n[STATE.GetBuilding('building_naval_base').GetCombatUnitProduction] z [STATE.GetBuilding('building_naval_base').GetName]"
  HOVER_STATE_NAME: "[STATE.GetCountry.GetFlagTextIcon] #variable [STATE.GetName]#! ([SelectLocalization(And(Not(State.IsCapitalState), State.IsIncorporated), 'incorporated_state', '')][SelectLocalization(State.IsCapitalState, 'CAPITAL_STATE', '')][SelectLocalization(Not(State.IsIncorporated), 'unincorporated_state', '')]) v #v [State.GetCountry.GetNameNoFlag]#![AddLocalizationIf(Not(State.GetCountry.IsLocalPlayer), ConcatIfNeitherEmpty('\n', State.GetCountry.GetPlayedByDesc))][ConcatIfNeitherEmpty( '\n', State.GetCountry.GetLabel(GetPlayer.Self) )]"
  HOVER_STATE_POLITICAL_LENS: "Průměrný životní standard: #bold [STATE.GetFormattedStandardOfLivingAll|v]#!\nPopulace: #BOLD [STATE.GetPopulationSize|Kv] [GetArrowIcon_int64( STATE.GetPopTotalChange )]#!\nVládní výdaje: #variable @money![STATE.GetGovernmentExpenses|+d]#!\nDaňové příjmy: #variable @money![STATE.GetTaxationRevenue|=+D]#!\n[concept_bureaucracy] náklady: @bur![STATE.GetBureaucracyCost|dv]"
  HOVER_STATE_PRODUCTION_LENS: "$GDP_SHORT$: #variable @money![STATE.GetGDPContribution|K]#! (#variable [STATE.GetGDPContributionPercentage|%1]#! z HDP v [STATE.GetOwner.GetName] minulý týden)\n$JOBSEEKERS$#variable [State.GetNumJobseekers|D]#!\n[concept_unemployed]: [State.GetNumUnemployedWorkingAdults|Kv]\n[GetPopType('peasants').GetName]: [State.GetNumSubsistenceWorkingAdults|Kv]\n[concept_arable_land]: [State.GetSubsistenceBuilding.GetExpansionLevelBreakdownDesc]"
@@ -124,8 +124,8 @@
  INTEREST_GROUP_AFFILIATION_TOOLTIP_LIST: "#tooltippable #tooltip:[Party.GetTooltipTag]|[InterestGroup.GetTooltipTag],INTEREST_GROUP_AFFILIATION_BREAKDOWN $AFFILIATION_VALUE|+=0$#!#! s [Party.GetName] [Party.GetMembersSummary]"
  INTEREST_GROUP_AFFILIATION_TOOLTIP_NONE: "#HEADER Není spojena s žádnou [Concept('concept_party','$concept_party$')]#!\n$TOOLTIP_DELIMITER$\n$AFFILIATION_DETAILS$"
  INTEREST_GROUP_STATE_TOOLTIP: "#variable [INTEREST_GROUP.GetName]#! v #variable [STATE.GetName]#!\n[concept_political_strength]: #variable [INTEREST_GROUP.GetPoliticalStrengthInState(STATE.Self)|D]#!\n$TOOLTIP_DELIMITER$\n[Concept('concept_pop','$concept_population$')]: #variable [INTEREST_GROUP.GetPopulationInState(STATE.Self)|D]#!"
- INTEREST_GROUP_WILL_JOIN_PARTY: "Připojí se k [PARTY.GetNameNoFormatting] při příštích [concept_election]" # todo: CHANGED
- INTEREST_GROUP_WILL_JOIN_PARTY_TOOLTIP: "[InterestGroup.GetName] se rozhodli, že se připojí k [PARTY.GetName] na začátku příští kampaně [concept_election] ([GetPlayer.GetNextStartOfCampaignDate|v])" # todo: CHANGED
+ INTEREST_GROUP_WILL_JOIN_PARTY: "Připojí se k [PARTY.GetNameNoFormatting] při příštích [concept_election]"
+ INTEREST_GROUP_WILL_JOIN_PARTY_TOOLTIP: "[InterestGroup.GetName] se rozhodli, že se připojí k [PARTY.GetName] na začátku příští kampaně [concept_election] ([GetPlayer.GetNextStartOfCampaignDate|v])"
  Ideology: "Ideologie"
  LAUNCHER_SAVE_DESCRIPTION: "Hrajete jako $COUNTRY$"
  LAUNCHER_SAVE_DESCRIPTION_OBSERVER: "$concept_observing$ $COUNTRY$"
@@ -224,5 +224,5 @@
  top_prestige_ranking: "[concept_prestige] hodnocení v #v Top-[GetDefine('NDiplomacy','TOP_PRESTIGE_RANK_BONUS_THRESHOLD')]#!"
  unemployment_birth_penalty_state: "Nezaměstnanost"
  state_obstinance: "Tvrdohlavost"
- NO_EFFECTS: "Žádné účinky" # todo: NEW TRANSLATION
- country_gdp_construction: "$country_gdp$" # todo: NEW TRANSLATION
+ NO_EFFECTS: "Žádné účinky"
+ country_gdp_construction: "$country_gdp$"

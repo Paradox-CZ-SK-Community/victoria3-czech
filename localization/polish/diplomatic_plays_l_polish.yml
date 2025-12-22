@@ -113,7 +113,7 @@
  DIPLO_PLAY_SUPPORT: "Podporovat"
  DIPLO_PLAY_SWAY_COUNTRY_DESC: "#header Ovlivněte [COUNTRY.GetAltAdjective('A')]#!\nAktuálně #b [DiplomaticPlay.GetSupportStanceDesc( Country.Self )]#!\n$TOOLTIP_DELIMITER$\nPokuste se [Concept('concept_sway','ovlivnit')] [COUNTRY.GetAltAdjective('A')] na svou stranu v [Concept('concept_diplomatic_play','diplomatický hře')][ConcatIfNeitherEmpty( '\n\n', '$ERRORS$' )]"
  DIPLO_PLAY_SWAY_OFFER_DESC: "#header Ovlivnit s $SWAY_OFFER|v$#![ConcatIfNeitherEmpty('\n', SelectLocalization( And(SwayOffer.GetOfferedWarGoal.IsValid,GreaterThan_CFixedPoint(SwayOffer.GetOfferedWarGoal.GetInfamyAmount, '(CFixedPoint)0')), 'SWAY_OFFER_MANEUVERS_AND_INFAMY_COST', 'SWAY_OFFER_MANEUVERS_COST_ONLY'))][ConcatIfNeitherEmpty( '\n\n', '$ERRORS$' )]"
- DIPLO_PLAY_SWITCH_COUNTRY_ESCALATION: "Přepnout [concept_country] lze pouze pokud je eskalace nižší než #variable $VALUE$#!" # todo: CHANGED
+ DIPLO_PLAY_SWITCH_COUNTRY_ESCALATION: "Přepnout [concept_country] lze pouze pokud je eskalace nižší než #variable $VALUE$#!"
  DIPLO_PLAY_SWITCH_COUNTRY_NOT_AI: "Lze přepnout pouze na uměle řízenou zemi"
  DIPLO_PLAY_SWITCH_COUNTRY_NOT_TARGET: "Jenom cíl [Concept('concept_diplomatic_play','diplomatické hry')] může změnit zemi"
  DIPLO_PLAY_TRUCE_EXPIRATION: "[COUNTRY.GetName] má príměří s [TARGET_COUNTRY.GetAltAdjective('I')] do #v $EXPIRATION_DATE$#! ($TIME_LEFT_FORMATTED$ zbývá)"
@@ -178,12 +178,12 @@
  JOIN_DIPLO_PLAY_FACTOR_VALUE_OF_OFFERED_SUBJECT: "#bold $VALUE|+=$#! z hodnota nabízené [Concept('concept_subject','závislé země')]"
  JOIN_DIPLO_PLAY_FACTOR_WANTS_CALL_IN_OBLIGATION: "#bold $VALUE|+=$#! chtěl by využít [Concept('concept_obligation','obligaci')]"
  JOIN_DIPLO_PLAY_FACTOR_WANTS_OBLIGATION: "#bold $VALUE|+=$#! chtěl by dlužit [Concept('concept_obligation','obligaci')]"
- JOIN_DIPLO_PLAY_SCORE_DESC: "#title #bold $VALUE|+$#! skóre přijetí je způsobeno:#!" # todo: CHANGED
- MAKE_REVERSE_SWAY_OFFER_DESC: "$WILL_ACCEPT$\n#indent_newline:3 $DETAILS$#!" # todo: CHANGED
- MAKE_SWAY_OFFER_DESC: "$WILL_ACCEPT$\n#indent_newline:3 $DETAILS$#!" # todo: CHANGED
+ JOIN_DIPLO_PLAY_SCORE_DESC: "#title #bold $VALUE|+$#! skóre přijetí je způsobeno:#!"
+ MAKE_REVERSE_SWAY_OFFER_DESC: "$WILL_ACCEPT$\n#indent_newline:3 $DETAILS$#!"
+ MAKE_SWAY_OFFER_DESC: "$WILL_ACCEPT$\n#indent_newline:3 $DETAILS$#!"
  MUST_SUPPORT_OVERLORD: "[COUNTRY.GetName] je $SUBJECT_TYPE|v$ [COUNTRY.GetAltAdjective('G')] a může přejít na druhou stranu jen pokud jsou #v $ai_attitude_rebellious$#! a cíleny s [Concept('concept_war_goal','válečným cílem')] nebo [Concept('concept_sway','ovlivnění')], které by je učinily nezávislými"
  MUST_SUPPORT_UNIFICATION: "[TARGET_COUNTRY.GetName] zpočátku podpořil [COUNTRY.GetName] jako [Concept('concept_unification_candidate','kanidáta pro sjednocení')]"
- OTHER_WARGOAL_ON_SAME_TARGET: " #variable [COUNTRY.GetName]#! má vzájemně vylučující [concept_war_goal] namířený na #variable [TARGET.GetName]#!" # todo: CHANGED
+ OTHER_WARGOAL_ON_SAME_TARGET: " #variable [COUNTRY.GetName]#! má vzájemně vylučující [concept_war_goal] namířený na #variable [TARGET.GetName]#!"
  OWES_OBLIGATION_TO_TARGET: "[COUNTRY.GetName] dluží [concept_obligation|l] [TARGET_COUNTRY.GetAltAdjective('D')|v]"
  RIVALS_WITH_TARGET: "[COUNTRY.GetName] má [Concept('concept_rivalry','rivalitu')] s [TARGET_COUNTRY.GetAltAdjective('I')|v]"
  SWAY_COUNTRY: "[concept_sway]"
@@ -196,7 +196,7 @@
  SWAY_OFFER_MANEUVERS_AND_INFAMY_COST_SELECTOR: "[SelectLocalization( And(SwayOffer.GetOfferedWarGoal.IsValid,GreaterThan_CFixedPoint(SwayOffer.GetOfferedWarGoal.GetInfamyAmount, '(CFixedPoint)0')), 'SWAY_OFFER_MANEUVERS_AND_INFAMY_COST', 'SWAY_OFFER_MANEUVERS_COST_ONLY')]"
  SWAY_OFFER_MANEUVERS_COST_ONLY: "Nabídnutí tohoto cíle použije @maneuvers! #v #tooltippable #tooltip:[SwayOffer.GetTooltipTag],SWAY_OFFER_MANEUVERS_COST_TOOLTIP [SwayOffer.CalcManeuversCost(GetPlayer.Self, SwayCountryPanel.GetCountry, SwayCountryPanel.GetDiplomaticPlay)]#!#!#! [Concept('concept_maneuver', '$concept_maneuvers$')]"
  SWAY_OFFER_MANEUVERS_COST_TOOLTIP: "[SwayOffer.GetManeuversCostDesc(GetPlayer.Self, SwayCountryPanel.GetCountry, SwayCountryPanel.GetDiplomaticPlay)]"
- SWAY_OFFER_TOOLTIP: "[SwayCountryPanel.GetDiplomaticPlay.GetCanSendSwayOfferDesc( GetPlayer.Self, SwayCountryPanel.GetCountry, SwayOffer.Self )]\n$TOOLTIP_DELIMITER$\n[SwayOffer.GetWouldAcceptSwayDesc(SwayCountryPanel.GetDiplomaticPlay.Self, GetPlayer.Self, SwayCountryPanel.GetCountry)]" # todo: CHANGED
+ SWAY_OFFER_TOOLTIP: "[SwayCountryPanel.GetDiplomaticPlay.GetCanSendSwayOfferDesc( GetPlayer.Self, SwayCountryPanel.GetCountry, SwayOffer.Self )]\n$TOOLTIP_DELIMITER$\n[SwayOffer.GetWouldAcceptSwayDesc(SwayCountryPanel.GetDiplomaticPlay.Self, GetPlayer.Self, SwayCountryPanel.GetCountry)]"
  TARGET_CIVIL_WAR_DIPLOMATIC_PLAY: "Nelze cílit [Concept('concept_diplomatic_play', 'diplomatickou hru')] na země v občanské válce"
  TARGET_IS_OUR_SUBJECT: "[TARGET_COUNTRY.GetName|v] je [Concept('concept_subject','závislou zemí')] [COUNTRY.GetName]"
  TRUCE_WITH_TARGET: "[COUNTRY.GetName] má [concept_truce|l] s [TARGET_COUNTRY.GetAltAdjective('I')] až do #variable [COUNTRY.GetTruceDate(TARGET_COUNTRY.Self)]#!"
@@ -390,163 +390,163 @@
  dp_war_reparations_tooltip: "#header Zahajte $dp_war_reparations$ [concept_diplomatic_play|l]#!\n$TOOLTIP_DELIMITER$\n$dp_war_reparations_desc$"
  indian_primary_culture_tt: "[SCOPE.sCountry('target_country').GetName] má indickou [Concept('concept_primary_cultures','primární kulturu')]"
  texan_war_of_independence: "Texaská válka za nezávislost"
- war_goal_annex_country: "Anexovat [WAR_GOAL_DRAFT.GetTarget.GetName]" # todo: CHANGED
- war_goal_annex_country_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] anektuje [concept_country] [WAR_GOAL_DRAFT.GetTarget.GetName]" # todo: CHANGED
- war_goal_annex_country_sway_desc: "Snažte se přesvědčit [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že mu umožníte anektovat [WAR_GOAL_DRAFT.GetTarget.GetName]." # todo: CHANGED
- war_goal_annex_country_type_desc: "Anexovat celé jiné [concept_country]." # todo: CHANGED
+ war_goal_annex_country: "Anexovat [WAR_GOAL_DRAFT.GetTarget.GetName]"
+ war_goal_annex_country_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] anektuje [concept_country] [WAR_GOAL_DRAFT.GetTarget.GetName]"
+ war_goal_annex_country_sway_desc: "Snažte se přesvědčit [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že mu umožníte anektovat [WAR_GOAL_DRAFT.GetTarget.GetName]."
+ war_goal_annex_country_type_desc: "Anexovat celé jiné [concept_country]."
  war_goal_annex_country_type_name: "Anektovat zemi"
- war_goal_ban_slavery: "Zákaz otroctví v [WAR_GOAL_DRAFT.GetTarget.GetName]" # todo: CHANGED
- war_goal_ban_slavery_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] přinutí [WAR_GOAL_DRAFT.GetTarget.GetName] [Concept('concept_enactment_of_laws', '$concept_enactment_of_laws_enact$')] [GetLawType('law_slavery_banned').GetName]." # todo: CHANGED
- war_goal_ban_slavery_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že přinutíte [WAR_GOAL_DRAFT.GetTarget.GetName] [Concept('concept_enactment_of_laws', '$concept_enactment_of_laws_enact$')] [GetLawType('law_slavery_banned').GetName]." # todo: CHANGED
- war_goal_ban_slavery_type_desc: "Přinutit jiné [concept_country] zrušit jejich zaostalou a nelidskou praxi [GetLawGroup('lawgroup_slavery').GetName] tím, že [Concept('concept_enactment_of_laws', '$concept_enactment_of_laws_enacting$')] [GetLawType('law_slavery_banned').GetName]." # todo: CHANGED
+ war_goal_ban_slavery: "Zákaz otroctví v [WAR_GOAL_DRAFT.GetTarget.GetName]"
+ war_goal_ban_slavery_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] přinutí [WAR_GOAL_DRAFT.GetTarget.GetName] [Concept('concept_enactment_of_laws', '$concept_enactment_of_laws_enact$')] [GetLawType('law_slavery_banned').GetName]."
+ war_goal_ban_slavery_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že přinutíte [WAR_GOAL_DRAFT.GetTarget.GetName] [Concept('concept_enactment_of_laws', '$concept_enactment_of_laws_enact$')] [GetLawType('law_slavery_banned').GetName]."
+ war_goal_ban_slavery_type_desc: "Přinutit jiné [concept_country] zrušit jejich zaostalou a nelidskou praxi [GetLawGroup('lawgroup_slavery').GetName] tím, že [Concept('concept_enactment_of_laws', '$concept_enactment_of_laws_enacting$')] [GetLawType('law_slavery_banned').GetName]."
  war_goal_ban_slavery_type_name: "Zrušit otroctví"
- war_goal_colonization_rights: "[WAR_GOAL_DRAFT.GetHolder.GetAdjectiveNoFormatting] [concept_colonization_rights]" # todo: CHANGED
- war_goal_colonization_rights_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] získává [concept_colonization_rights] na [WAR_GOAL_DRAFT.GetTarget.GetName]." # todo: CHANGED
+ war_goal_colonization_rights: "[WAR_GOAL_DRAFT.GetHolder.GetAdjectiveNoFormatting] [concept_colonization_rights]"
+ war_goal_colonization_rights_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] získává [concept_colonization_rights] na [WAR_GOAL_DRAFT.GetTarget.GetName]."
  war_goal_colonization_rights_type_desc: "Zrychlit kolonizaci [concept_decentralized_nation]."
  war_goal_colonization_rights_type_name: "Práva na kolonizaci"
- war_goal_conquer_state: "Dobýt [WAR_GOAL_DRAFT.GetTargetState.GetCountry.GetFlagTextIcon] [WAR_GOAL_DRAFT.GetTargetState.GetName]" # todo: CHANGED
- war_goal_conquer_state_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] dobyde [concept_state] [WAR_GOAL_DRAFT.GetTargetState.GetName] od [WAR_GOAL_DRAFT.GetTarget.GetName]" # todo: CHANGED
- war_goal_conquer_state_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu, tím že přinutíte [WAR_GOAL_DRAFT.GetWarGoalStakeholder.GetName] postoupit jim [WAR_GOAL_DRAFT.GetTargetState.GetName]." # todo: CHANGED
+ war_goal_conquer_state: "Dobýt [WAR_GOAL_DRAFT.GetTargetState.GetCountry.GetFlagTextIcon] [WAR_GOAL_DRAFT.GetTargetState.GetName]"
+ war_goal_conquer_state_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] dobyde [concept_state] [WAR_GOAL_DRAFT.GetTargetState.GetName] od [WAR_GOAL_DRAFT.GetTarget.GetName]"
+ war_goal_conquer_state_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu, tím že přinutíte [WAR_GOAL_DRAFT.GetWarGoalStakeholder.GetName] postoupit jim [WAR_GOAL_DRAFT.GetTargetState.GetName]."
  war_goal_conquer_state_type_desc: "Dobýt [concept_state|l] jiné [Concept('concept_country','země')]."
  war_goal_conquer_state_type_name: "Dobýt stát"
- war_goal_contain_threat: "Zmenšit [WAR_GOAL_DRAFT.GetTarget.GetName]" # todo: CHANGED
- war_goal_contain_threat_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] přinutí [WAR_GOAL_DRAFT.GetTarget.GetName] uvolnit všechny státy a podřízené, které získal dobytím v posledních #v [GetDefine('NDiplomacy', 'WAR_GOAL_CONTAIN_THREAT_YEARS_SINCE_CONQUEST')]#! letech." # todo: CHANGED
- war_goal_contain_threat_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že přinutíte [WAR_GOAL_DRAFT.GetWarGoalStakeholder.GetName] uvolnit všechny jejich nedávné dobytí." # todo: CHANGED
- war_goal_contain_threat_type_desc: "Přinutit ohrožující [concept_country] vydat své nedávné dobytí." # todo: CHANGED
+ war_goal_contain_threat: "Zmenšit [WAR_GOAL_DRAFT.GetTarget.GetName]"
+ war_goal_contain_threat_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] přinutí [WAR_GOAL_DRAFT.GetTarget.GetName] uvolnit všechny státy a podřízené, které získal dobytím v posledních #v [GetDefine('NDiplomacy', 'WAR_GOAL_CONTAIN_THREAT_YEARS_SINCE_CONQUEST')]#! letech."
+ war_goal_contain_threat_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že přinutíte [WAR_GOAL_DRAFT.GetWarGoalStakeholder.GetName] uvolnit všechny jejich nedávné dobytí."
+ war_goal_contain_threat_type_desc: "Přinutit ohrožující [concept_country] vydat své nedávné dobytí."
  war_goal_contain_threat_type_name: "Zmenšit na velikost"
- war_goal_enforce_treaty_article: "Vynutit [WAR_GOAL_DRAFT.GetArticleType.GetNameNoFormatting]" # todo: CHANGED
- war_goal_enforce_treaty_article_desc: "• Přinutit [WAR_GOAL_DRAFT.GetTarget.GetName] podepsat [concept_treaty] obsahující [WAR_GOAL_DRAFT.GetArticleType.GetName] [concept_article]" # todo: CHANGED
+ war_goal_enforce_treaty_article: "Vynutit [WAR_GOAL_DRAFT.GetArticleType.GetNameNoFormatting]"
+ war_goal_enforce_treaty_article_desc: "• Přinutit [WAR_GOAL_DRAFT.GetTarget.GetName] podepsat [concept_treaty] obsahující [WAR_GOAL_DRAFT.GetArticleType.GetName] [concept_article]"
  war_goal_enforce_treaty_article_type_desc: "Přinutit [Concept('concept_country','zemi')] podepsat [Concept('concept_treaty','smlouvu')], která obsahuje konkrétní [Concept('concept_article','článek')]"
  war_goal_enforce_treaty_article_type_name: "Vynucení smluvního článku"
- war_goal_force_nationalization: "Znárodnit všechny [WAR_GOAL_DRAFT.GetHolder.GetAdjectiveNoFormatting] budovy" # todo: CHANGED
- war_goal_force_nationalization_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] znárodní všechny vlastnické úrovně budov [WAR_GOAL_DRAFT.GetTarget.GetName] ve všech [WAR_GOAL_DRAFT.GetHolder.GetAdjective] [Concept('concept_state', '$concept_states$')]. \n(Celkem #variable [WAR_GOAL_DRAFT.GetHolder.GetInvestmentLevelsInCountry(WAR_GOAL_DRAFT.GetTarget)]#! [Concept('concept_building_level', '$concept_building_levels$')], #variable [WAR_GOAL_DRAFT.GetHolder.GetInvestmentGdpFractionInCountry(WAR_GOAL_DRAFT.GetTarget)|%2]#! of [WAR_GOAL_DRAFT.GetHolder.GetAdjective] [Concept('concept_gdp', '$concept_gdp_short$')].)" # todo: CHANGED
- war_goal_force_nationalization_type_desc: "Válečný cíl znárodnit všechny úrovně vlastněné cílovým [concept_country] v naší [concept_country] a odvolat [concept_foreign_investment_rights]." # todo: CHANGED
+ war_goal_force_nationalization: "Znárodnit všechny [WAR_GOAL_DRAFT.GetHolder.GetAdjectiveNoFormatting] budovy"
+ war_goal_force_nationalization_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] znárodní všechny vlastnické úrovně budov [WAR_GOAL_DRAFT.GetTarget.GetName] ve všech [WAR_GOAL_DRAFT.GetHolder.GetAdjective] [Concept('concept_state', '$concept_states$')]. \n(Celkem #variable [WAR_GOAL_DRAFT.GetHolder.GetInvestmentLevelsInCountry(WAR_GOAL_DRAFT.GetTarget)]#! [Concept('concept_building_level', '$concept_building_levels$')], #variable [WAR_GOAL_DRAFT.GetHolder.GetInvestmentGdpFractionInCountry(WAR_GOAL_DRAFT.GetTarget)|%2]#! of [WAR_GOAL_DRAFT.GetHolder.GetAdjective] [Concept('concept_gdp', '$concept_gdp_short$')].)"
+ war_goal_force_nationalization_type_desc: "Válečný cíl znárodnit všechny úrovně vlastněné cílovým [concept_country] v naší [concept_country] a odvolat [concept_foreign_investment_rights]."
  war_goal_force_nationalization_type_name: "Nutit nacionalizaci"
- war_goal_force_recognition: "Uznat [WAR_GOAL_DRAFT.GetHolder.GetName]" # todo: CHANGED
- war_goal_force_recognition_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] přinutí [WAR_GOAL_DRAFT.GetTarget.GetName] zrušit status 'neuznané' u [WAR_GOAL_DRAFT.GetHolder.GetName]." # todo: CHANGED
- war_goal_force_recognition_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že přinutíte [WAR_GOAL_DRAFT.GetWarGoalStakeholder.GetName] zrušit jejich status 'neuznané'." # todo: CHANGED
+ war_goal_force_recognition: "Uznat [WAR_GOAL_DRAFT.GetHolder.GetName]"
+ war_goal_force_recognition_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] přinutí [WAR_GOAL_DRAFT.GetTarget.GetName] zrušit status 'neuznané' u [WAR_GOAL_DRAFT.GetHolder.GetName]."
+ war_goal_force_recognition_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že přinutíte [WAR_GOAL_DRAFT.GetWarGoalStakeholder.GetName] zrušit jejich status 'neuznané'."
  war_goal_force_recognition_type_desc: "Nutit velmoc odstranit status neuznané země."
  war_goal_force_recognition_type_name: "Nutit uznání"
- war_goal_foreign_investment_rights: "[WAR_GOAL_DRAFT.GetHolder.GetAdjectiveNoFormatting] [concept_foreign_investment_rights]" # todo: CHANGED
- war_goal_foreign_investment_rights_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] získává [concept_foreign_investment_rights] u [WAR_GOAL_DRAFT.GetTarget.GetName]. Pokud má [WAR_GOAL_DRAFT.GetTarget.GetNameNoFormatting] [GetLawType('law_isolationism').GetName] [concept_law], musí místo toho přijmout [GetLawType('law_free_trade').GetName]" # todo: CHANGED
+ war_goal_foreign_investment_rights: "[WAR_GOAL_DRAFT.GetHolder.GetAdjectiveNoFormatting] [concept_foreign_investment_rights]"
+ war_goal_foreign_investment_rights_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] získává [concept_foreign_investment_rights] u [WAR_GOAL_DRAFT.GetTarget.GetName]. Pokud má [WAR_GOAL_DRAFT.GetTarget.GetNameNoFormatting] [GetLawType('law_isolationism').GetName] [concept_law], musí místo toho přijmout [GetLawType('law_free_trade').GetName]"
  war_goal_foreign_investment_rights_type_desc: "[concept_war_goal] vynucení [Concept('concept_foreign_investment_rights','práva na zahraniční investice')] s cílovou [Concept('concept_country','zemí')]. Cíl musí rovněž přijmout [GetLawType('law_free_trade').GetName]."
  war_goal_foreign_investment_rights_type_name: "Práva na investice"
- war_goal_humiliation: "Ponížit [WAR_GOAL_DRAFT.GetTarget.GetName]" # todo: CHANGED
- war_goal_humiliation_desc: "Snižuje prestiž [WAR_GOAL_DRAFT.GetTarget.GetName] a zabraňuje jim v oponování [WAR_GOAL_DRAFT.GetHolder.GetName] v [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] po dobu #v [GetDefine('NDiplomacy','WAR_GOAL_HUMILIATION_MONTHS')|0]#! měsíců.\n\n$concept_humiliation_desc_added$" # todo: CHANGED
- war_goal_humiliation_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že snížíte prestiž [WAR_GOAL_DRAFT.GetTarget.GetName] a zabráníte jim v oponování [WAR_GOAL_DRAFT.GetHolder.GetName] v [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] po dobu 5 let.$concept_humiliation_desc_added$" # todo: CHANGED
+ war_goal_humiliation: "Ponížit [WAR_GOAL_DRAFT.GetTarget.GetName]"
+ war_goal_humiliation_desc: "Snižuje prestiž [WAR_GOAL_DRAFT.GetTarget.GetName] a zabraňuje jim v oponování [WAR_GOAL_DRAFT.GetHolder.GetName] v [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] po dobu #v [GetDefine('NDiplomacy','WAR_GOAL_HUMILIATION_MONTHS')|0]#! měsíců.\n\n$concept_humiliation_desc_added$"
+ war_goal_humiliation_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že snížíte prestiž [WAR_GOAL_DRAFT.GetTarget.GetName] a zabráníte jim v oponování [WAR_GOAL_DRAFT.GetHolder.GetName] v [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] po dobu 5 let.$concept_humiliation_desc_added$"
  war_goal_humiliation_type_desc: "[Concept('concept_humiliation', '$concept_humiliate$')] jinou zemi."
  war_goal_humiliation_type_name: "Ponížení"
- war_goal_increase_autonomy: "Zvýšit [WAR_GOAL_DRAFT.GetHolder.GetAdjective] autonomii" # todo: CHANGED
- war_goal_increase_autonomy_desc: "[WAR_GOAL_DRAFT.GetTarget.GetName] zvýší [concept_autonomy] [WAR_GOAL_DRAFT.GetHolder.GetName], čímž je promění v [WAR_GOAL_DRAFT.GetSubjectTypeName]." # todo: CHANGED
- war_goal_increase_autonomy_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že zvýšíte jejich [concept_autonomy], čímž je proměníte v [WAR_GOAL_DRAFT.GetSubjectTypeName]." # todo: CHANGED
+ war_goal_increase_autonomy: "Zvýšit [WAR_GOAL_DRAFT.GetHolder.GetAdjective] autonomii"
+ war_goal_increase_autonomy_desc: "[WAR_GOAL_DRAFT.GetTarget.GetName] zvýší [concept_autonomy] [WAR_GOAL_DRAFT.GetHolder.GetName], čímž je promění v [WAR_GOAL_DRAFT.GetSubjectTypeName]."
+ war_goal_increase_autonomy_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že zvýšíte jejich [concept_autonomy], čímž je proměníte v [WAR_GOAL_DRAFT.GetSubjectTypeName]."
  war_goal_increase_autonomy_type_desc: "Změňte typ [Concept('concept_subject','závislé země')] držitele na jeden s menší [Concept('concept_autonomy','autonomii')]."
  war_goal_increase_autonomy_type_name: "Zvýšit autonomii"
  war_goal_independence: "Nezávislost"
- war_goal_independence_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] přinutí [WAR_GOAL_DRAFT.GetWarGoalStakeholder.GetName] udělit nezávislost [WAR_GOAL_DRAFT.GetHolder.GetName]. Pokud bude tento $concept_war_goal$ vynucen v rámci mírové dohody nebo kapitulace, budou rovněž znárodněny všechny [WAR_GOAL_DRAFT.GetWarGoalStakeholder.GetAdjectiveNoFormatting]-vlastněné úrovně [concept_building]." # todo: CHANGED
- war_goal_independence_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že přinutíte [WAR_GOAL_DRAFT.GetWarGoalStakeholder.GetName] udělit jim nezávislost. Pokud bude tento $concept_war_goal$ vynucen v rámci mírové dohody nebo kapitulace, budou rovněž znárodněny všechny [WAR_GOAL_DRAFT.GetWarGoalStakeholder.GetAdjectiveNoFormatting]-vlastněné úrovně [concept_building]." # todo: CHANGED
+ war_goal_independence_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] přinutí [WAR_GOAL_DRAFT.GetWarGoalStakeholder.GetName] udělit nezávislost [WAR_GOAL_DRAFT.GetHolder.GetName]. Pokud bude tento $concept_war_goal$ vynucen v rámci mírové dohody nebo kapitulace, budou rovněž znárodněny všechny [WAR_GOAL_DRAFT.GetWarGoalStakeholder.GetAdjectiveNoFormatting]-vlastněné úrovně [concept_building]."
+ war_goal_independence_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že přinutíte [WAR_GOAL_DRAFT.GetWarGoalStakeholder.GetName] udělit jim nezávislost. Pokud bude tento $concept_war_goal$ vynucen v rámci mírové dohody nebo kapitulace, budou rovněž znárodněny všechny [WAR_GOAL_DRAFT.GetWarGoalStakeholder.GetAdjectiveNoFormatting]-vlastněné úrovně [concept_building]."
  war_goal_independence_type_desc: "Přinutit svého suzeréna udělit nezávislost vaší zemi a znárodnit všechny úrovně budov, které vlastní."
  war_goal_independence_type_name: "Nezávislost"
- war_goal_join_power_bloc: "Připojit se k [WAR_GOAL_DRAFT.GetHolder.GetPowerBloc.GetName]" # todo: CHANGED
- war_goal_join_power_bloc_desc: "[WAR_GOAL_DRAFT.GetTarget.GetName] je nucen vstoupit do [WAR_GOAL_DRAFT.GetHolder.GetPowerBloc.GetName]." # todo: CHANGED
+ war_goal_join_power_bloc: "Připojit se k [WAR_GOAL_DRAFT.GetHolder.GetPowerBloc.GetName]"
+ war_goal_join_power_bloc_desc: "[WAR_GOAL_DRAFT.GetTarget.GetName] je nucen vstoupit do [WAR_GOAL_DRAFT.GetHolder.GetPowerBloc.GetName]."
  war_goal_join_power_bloc_type_desc: "[concept_war_goal] nutit cílovou [Concept('concept_country','zemi'] ke vstupu do [Concept('concept_power_bloc','mocenského bloku')] držitele."
  war_goal_join_power_bloc_type_name: "Připojte se k mocenskému bloku"
  war_goal_leave_power_bloc: "Opustit mocenský blok"
- war_goal_leave_power_bloc_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] opouští [SelectLocalization(WAR_GOAL_DRAFT.GetWarGoalStakeholder.GetPowerBloc.IsValid,WAR_GOAL_DRAFT.GetWarGoalStakeholder.GetPowerBloc.GetName,'$concept_power_bloc$')]." # todo: CHANGED
- war_goal_leave_power_bloc_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že je přinutíte opustit [WAR_GOAL_DRAFT.GetWarGoalStakeholder.GetPowerBloc.GetName]." # todo: CHANGED
+ war_goal_leave_power_bloc_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] opouští [SelectLocalization(WAR_GOAL_DRAFT.GetWarGoalStakeholder.GetPowerBloc.IsValid,WAR_GOAL_DRAFT.GetWarGoalStakeholder.GetPowerBloc.GetName,'$concept_power_bloc$')]."
+ war_goal_leave_power_bloc_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že je přinutíte opustit [WAR_GOAL_DRAFT.GetWarGoalStakeholder.GetPowerBloc.GetName]."
  war_goal_leave_power_bloc_type_desc: "Nutit lídra mocenského bloku povolit členovi opustit ho."
  war_goal_leave_power_bloc_type_name: "Opustit mocenský blok"
- war_goal_liberate_country: "Osvobodit [WAR_GOAL_DRAFT.GetCountryCreation.GetName]" # todo: CHANGED
- war_goal_liberate_country_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] přinutí [WAR_GOAL_DRAFT.GetTarget.GetName] uvolnit [concept_country] [WAR_GOAL_DRAFT.GetCountryCreation.GetName].\n\n#title Následující [Concept('concept_state', '$concept_states$')] budou osvobozeny:#!#indent_newline:3 \n[WAR_GOAL_DRAFT.GetCountryCreation.ListReleasableStates( WAR_GOAL_DRAFT.GetTarget )]#!" # todo: CHANGED
- war_goal_liberate_country_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že přinutíte [WAR_GOAL_DRAFT.GetWarGoalStakeholder.GetName] uvolnit [concept_country] [WAR_GOAL_DRAFT.GetCountryCreation.GetName]." # todo: CHANGED
- war_goal_liberate_country_type_desc: "Přinutit [concept_country] udělit nezávislost jinému národu." # todo: CHANGED
+ war_goal_liberate_country: "Osvobodit [WAR_GOAL_DRAFT.GetCountryCreation.GetName]"
+ war_goal_liberate_country_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] přinutí [WAR_GOAL_DRAFT.GetTarget.GetName] uvolnit [concept_country] [WAR_GOAL_DRAFT.GetCountryCreation.GetName].\n\n#title Následující [Concept('concept_state', '$concept_states$')] budou osvobozeny:#!#indent_newline:3 \n[WAR_GOAL_DRAFT.GetCountryCreation.ListReleasableStates( WAR_GOAL_DRAFT.GetTarget )]#!"
+ war_goal_liberate_country_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že přinutíte [WAR_GOAL_DRAFT.GetWarGoalStakeholder.GetName] uvolnit [concept_country] [WAR_GOAL_DRAFT.GetCountryCreation.GetName]."
+ war_goal_liberate_country_type_desc: "Přinutit [concept_country] udělit nezávislost jinému národu."
  war_goal_liberate_country_type_name: "Osvobodit zemi"
- war_goal_liberate_subject: "Osvobodit [WAR_GOAL_DRAFT.GetTarget.GetName]" # todo: CHANGED
- war_goal_liberate_subject_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] přinutí [WAR_GOAL_DRAFT.GetWarGoalStakeholder.GetName] udělit nezávislost [WAR_GOAL_DRAFT.GetTarget.GetName]." # todo: CHANGED
- war_goal_liberate_subject_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že přinutíte [WAR_GOAL_DRAFT.GetWarGoalStakeholder.GetName] udělit nezávislost [WAR_GOAL_DRAFT.GetTarget.GetName]." # todo: CHANGED
- war_goal_liberate_subject_type_desc: "Přinutit [concept_country] udělit nezávislost jednomu ze svých [Concept('concept_subject', '$concept_subjects$')]." # todo: CHANGED
+ war_goal_liberate_subject: "Osvobodit [WAR_GOAL_DRAFT.GetTarget.GetName]"
+ war_goal_liberate_subject_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] přinutí [WAR_GOAL_DRAFT.GetWarGoalStakeholder.GetName] udělit nezávislost [WAR_GOAL_DRAFT.GetTarget.GetName]."
+ war_goal_liberate_subject_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že přinutíte [WAR_GOAL_DRAFT.GetWarGoalStakeholder.GetName] udělit nezávislost [WAR_GOAL_DRAFT.GetTarget.GetName]."
+ war_goal_liberate_subject_type_desc: "Přinutit [concept_country] udělit nezávislost jednomu ze svých [Concept('concept_subject', '$concept_subjects$')]."
  war_goal_liberate_subject_type_name: "Osvobození subjektu"
- war_goal_make_dominion: "[WAR_GOAL_DRAFT.GetTarget.GetName] [concept_dominion]" # todo: CHANGED
- war_goal_make_dominion_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] přinutí [WAR_GOAL_DRAFT.GetTarget.GetName] stát se [concept_dominion]." # todo: CHANGED
- war_goal_make_dominion_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že přinutíte [WAR_GOAL_DRAFT.GetTarget.GetName] stát se vaším [concept_dominion]." # todo: CHANGED
- war_goal_make_dominion_type_desc: "Přinutit jiné [concept_country] stát se [concept_dominion]." # todo: CHANGED
+ war_goal_make_dominion: "[WAR_GOAL_DRAFT.GetTarget.GetName] [concept_dominion]"
+ war_goal_make_dominion_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] přinutí [WAR_GOAL_DRAFT.GetTarget.GetName] stát se [concept_dominion]."
+ war_goal_make_dominion_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že přinutíte [WAR_GOAL_DRAFT.GetTarget.GetName] stát se vaším [concept_dominion]."
+ war_goal_make_dominion_type_desc: "Přinutit jiné [concept_country] stát se [concept_dominion]."
  war_goal_make_dominion_type_name: "Udělat dominium"
- war_goal_make_protectorate: "[WAR_GOAL_DRAFT.GetTarget.GetName] [concept_protectorate]" # todo: CHANGED
- war_goal_make_protectorate_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] přinutí [WAR_GOAL_DRAFT.GetTarget.GetName] stát se [concept_protectorate]." # todo: CHANGED
- war_goal_make_protectorate_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že přinutíte [WAR_GOAL_DRAFT.GetTarget.GetName] stát se vaším [concept_protectorate]." # todo: CHANGED
- war_goal_make_protectorate_type_desc: "Přinutit jiné [concept_country] stát se [concept_protectorate]." # todo: CHANGED
+ war_goal_make_protectorate: "[WAR_GOAL_DRAFT.GetTarget.GetName] [concept_protectorate]"
+ war_goal_make_protectorate_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] přinutí [WAR_GOAL_DRAFT.GetTarget.GetName] stát se [concept_protectorate]."
+ war_goal_make_protectorate_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že přinutíte [WAR_GOAL_DRAFT.GetTarget.GetName] stát se vaším [concept_protectorate]."
+ war_goal_make_protectorate_type_desc: "Přinutit jiné [concept_country] stát se [concept_protectorate]."
  war_goal_make_protectorate_type_name: "Udělat protektorát"
- war_goal_make_tributary: "[WAR_GOAL_DRAFT.GetTarget.GetAdjective] [concept_tributary]" # todo: CHANGED
- war_goal_make_tributary_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] přinutí [WAR_GOAL_DRAFT.GetTarget.GetName] stát se [concept_tributary]." # todo: CHANGED
- war_goal_make_tributary_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že přinutíte [WAR_GOAL_DRAFT.GetTarget.GetName] stát se vaším [concept_tributary]." # todo: CHANGED
- war_goal_make_tributary_type_desc: "Přinutit jiné [concept_country] stát se [concept_tributary]." # todo: CHANGED
+ war_goal_make_tributary: "[WAR_GOAL_DRAFT.GetTarget.GetAdjective] [concept_tributary]"
+ war_goal_make_tributary_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] přinutí [WAR_GOAL_DRAFT.GetTarget.GetName] stát se [concept_tributary]."
+ war_goal_make_tributary_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že přinutíte [WAR_GOAL_DRAFT.GetTarget.GetName] stát se vaším [concept_tributary]."
+ war_goal_make_tributary_type_desc: "Přinutit jiné [concept_country] stát se [concept_tributary]."
  war_goal_make_tributary_type_name: "Udělat tributár"
- war_goal_open_market: "[Concept('concept_open_market', '$concept_open_market_short$')] [WAR_GOAL_DRAFT.GetTarget.GetAdjectiveNoFormatting] trh" # todo: CHANGED
- war_goal_open_market_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] vynucuje [concept_open_market] na [WAR_GOAL_DRAFT.GetTarget.GetName]." # todo: CHANGED
- war_goal_open_market_sway_desc: "Snažte se přesvědčit [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že přinutíte [WAR_GOAL_DRAFT.GetTarget.GetName] přijmout zákony volného obchodu a otevřít svůj trh zahraničnímu obchodu." # todo: CHANGED
+ war_goal_open_market: "[Concept('concept_open_market', '$concept_open_market_short$')] [WAR_GOAL_DRAFT.GetTarget.GetAdjectiveNoFormatting] trh"
+ war_goal_open_market_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] vynucuje [concept_open_market] na [WAR_GOAL_DRAFT.GetTarget.GetName]."
+ war_goal_open_market_sway_desc: "Snažte se přesvědčit [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že přinutíte [WAR_GOAL_DRAFT.GetTarget.GetName] přijmout zákony volného obchodu a otevřít svůj trh zahraničnímu obchodu."
  war_goal_open_market_type_desc: "Nutit [Concept('concept_open_market','otevření trhu')] na jinou zemi."
  war_goal_open_market_type_name: "Otevřít trh"
- war_goal_reduce_autonomy: "Snížit [WAR_GOAL_DRAFT.GetTarget.GetAdjective] autonomii" # todo: CHANGED
- war_goal_reduce_autonomy_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] sníží [concept_autonomy] [WAR_GOAL_DRAFT.GetTarget.GetName], čímž je promění v [WAR_GOAL_DRAFT.GetSubjectTypeName]." # todo: CHANGED
- war_goal_reduce_autonomy_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že snížíte [concept_autonomy] [WAR_GOAL_DRAFT.GetTarget.GetName], čímž je proměníte v [WAR_GOAL_DRAFT.GetSubjectTypeName]." # todo: CHANGED
+ war_goal_reduce_autonomy: "Snížit [WAR_GOAL_DRAFT.GetTarget.GetAdjective] autonomii"
+ war_goal_reduce_autonomy_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] sníží [concept_autonomy] [WAR_GOAL_DRAFT.GetTarget.GetName], čímž je promění v [WAR_GOAL_DRAFT.GetSubjectTypeName]."
+ war_goal_reduce_autonomy_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že snížíte [concept_autonomy] [WAR_GOAL_DRAFT.GetTarget.GetName], čímž je proměníte v [WAR_GOAL_DRAFT.GetSubjectTypeName]."
  war_goal_reduce_autonomy_type_desc: "Změnit typ [Concept('concept_subject','závislé země')] na takovou s menší autonomií."
  war_goal_reduce_autonomy_type_name: "Snížit autonomii"
- war_goal_regime_change: "Změna režimu v [WAR_GOAL_DRAFT.GetTarget.GetName]" # todo: CHANGED
- war_goal_regime_change_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] přinutí [WAR_GOAL_DRAFT.GetTarget.GetName] změnit jejich [concept_government] a $POWER_STRUCTURE$ [Concept('concept_law', '$concept_laws$')] tak, aby byly více podobné těm jejich.[ConcatIfNeitherEmpty(' ',WAR_GOAL_DRAFT.GetRegimeChangeLawsEnactedDesc)] " # todo: CHANGED
- war_goal_regime_change_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že přinutíte [WAR_GOAL_DRAFT.GetTarget.GetName] změnit jejich [concept_government] a $POWER_STRUCTURE$ [Concept('concept_law', '$concept_laws$')] tak, aby byly více podobné těm [WAR_GOAL_DRAFT.GetHolder.GetName].[ConcatIfNeitherEmpty(' ',WAR_GOAL_DRAFT.GetRegimeChangeLawsEnactedDesc)] " # todo: CHANGED
- war_goal_regime_change_type_desc: "Přinutit jiné [concept_country] změnit jejich [concept_government] a $POWER_STRUCTURE$ [Concept('concept_law', '$concept_laws$')] tak, aby byly více podobné vašim" # todo: CHANGED
+ war_goal_regime_change: "Změna režimu v [WAR_GOAL_DRAFT.GetTarget.GetName]"
+ war_goal_regime_change_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] přinutí [WAR_GOAL_DRAFT.GetTarget.GetName] změnit jejich [concept_government] a $POWER_STRUCTURE$ [Concept('concept_law', '$concept_laws$')] tak, aby byly více podobné těm jejich.[ConcatIfNeitherEmpty(' ',WAR_GOAL_DRAFT.GetRegimeChangeLawsEnactedDesc)] "
+ war_goal_regime_change_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že přinutíte [WAR_GOAL_DRAFT.GetTarget.GetName] změnit jejich [concept_government] a $POWER_STRUCTURE$ [Concept('concept_law', '$concept_laws$')] tak, aby byly více podobné těm [WAR_GOAL_DRAFT.GetHolder.GetName].[ConcatIfNeitherEmpty(' ',WAR_GOAL_DRAFT.GetRegimeChangeLawsEnactedDesc)] "
+ war_goal_regime_change_type_desc: "Přinutit jiné [concept_country] změnit jejich [concept_government] a $POWER_STRUCTURE$ [Concept('concept_law', '$concept_laws$')] tak, aby byly více podobné vašim"
  war_goal_regime_change_type_name: "Změna režimu"
- war_goal_return_state: "Vrátit [WAR_GOAL_DRAFT.GetTargetState.GetName]" # todo: CHANGED
- war_goal_return_state_desc: "[WAR_GOAL_DRAFT.GetTarget.GetName] vrací [concept_state] [WAR_GOAL_DRAFT.GetTargetState.GetName] [WAR_GOAL_DRAFT.GetHolder.GetName]" # todo: CHANGED
- war_goal_return_state_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu, tím že přinutíte [WAR_GOAL_DRAFT.GetWarGoalStakeholder.GetName] vrátit jim [WAR_GOAL_DRAFT.GetTargetState.GetName]." # todo: CHANGED
+ war_goal_return_state: "Vrátit [WAR_GOAL_DRAFT.GetTargetState.GetName]"
+ war_goal_return_state_desc: "[WAR_GOAL_DRAFT.GetTarget.GetName] vrací [concept_state] [WAR_GOAL_DRAFT.GetTargetState.GetName] [WAR_GOAL_DRAFT.GetHolder.GetName]"
+ war_goal_return_state_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu, tím že přinutíte [WAR_GOAL_DRAFT.GetWarGoalStakeholder.GetName] vrátit jim [WAR_GOAL_DRAFT.GetTargetState.GetName]."
  war_goal_return_state_type_desc: "Nutit je vrátit [concept_state|l], který je váš právoplatným nárokem."
  war_goal_return_state_type_name: "Vrátit stát"
- war_goal_revoke_all_claims: "Zrušit [WAR_GOAL_DRAFT.GetTarget.GetAdjectiveNoFormatting] [Concept('concept_claim', '$concept_claims$')]" # todo: CHANGED
- war_goal_revoke_all_claims_desc: "[WAR_GOAL_DRAFT.GetTarget.GetName] je přinucen zrušit všechny jejich [Concept('concept_claim', '$concept_claims$')] na [WAR_GOAL_DRAFT.GetHolder.GetName]." # todo: CHANGED
- war_goal_revoke_all_claims_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu, tím že přinutíte [WAR_GOAL_DRAFT.GetWarGoalStakeholder.GetName] zrušit všechny [Concept('concept_claim', '$concept_claims$')] na ně." # todo: CHANGED
- war_goal_revoke_all_claims_type_desc: "Přinutit [concept_country] zrušit všechny [Concept('concept_claim', '$concept_claims$')] na našich státních regionech." # todo: CHANGED
+ war_goal_revoke_all_claims: "Zrušit [WAR_GOAL_DRAFT.GetTarget.GetAdjectiveNoFormatting] [Concept('concept_claim', '$concept_claims$')]"
+ war_goal_revoke_all_claims_desc: "[WAR_GOAL_DRAFT.GetTarget.GetName] je přinucen zrušit všechny jejich [Concept('concept_claim', '$concept_claims$')] na [WAR_GOAL_DRAFT.GetHolder.GetName]."
+ war_goal_revoke_all_claims_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu, tím že přinutíte [WAR_GOAL_DRAFT.GetWarGoalStakeholder.GetName] zrušit všechny [Concept('concept_claim', '$concept_claims$')] na ně."
+ war_goal_revoke_all_claims_type_desc: "Přinutit [concept_country] zrušit všechny [Concept('concept_claim', '$concept_claims$')] na našich státních regionech."
  war_goal_revoke_all_claims_type_name: "Zrušit všechny nároky"
- war_goal_revoke_claim: "Zrušit nárok na [WAR_GOAL_DRAFT.GetTargetState.GetStateRegion.GetName]" # todo: CHANGED
- war_goal_revoke_claim_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] přinutí [WAR_GOAL_DRAFT.GetTarget.GetName] zrušit jejich nárok na [WAR_GOAL_DRAFT.GetTargetState.GetStateRegion.GetName]." # todo: CHANGED
- war_goal_revoke_claim_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu, tím že přinutíte [WAR_GOAL_DRAFT.GetWarGoalStakeholder.GetName] zrušit jejich nárok na [WAR_GOAL_DRAFT.GetTargetState.GetStateRegion.GetName]." # todo: CHANGED
- war_goal_revoke_claim_type_desc: "Přinutit [concept_country] zrušit nárok na [concept_state_region]." # todo: CHANGED
+ war_goal_revoke_claim: "Zrušit nárok na [WAR_GOAL_DRAFT.GetTargetState.GetStateRegion.GetName]"
+ war_goal_revoke_claim_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] přinutí [WAR_GOAL_DRAFT.GetTarget.GetName] zrušit jejich nárok na [WAR_GOAL_DRAFT.GetTargetState.GetStateRegion.GetName]."
+ war_goal_revoke_claim_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu, tím že přinutíte [WAR_GOAL_DRAFT.GetWarGoalStakeholder.GetName] zrušit jejich nárok na [WAR_GOAL_DRAFT.GetTargetState.GetStateRegion.GetName]."
+ war_goal_revoke_claim_type_desc: "Přinutit [concept_country] zrušit nárok na [concept_state_region]."
  war_goal_revoke_claim_type_name: "Odvolat nárok"
- war_goal_revolution: "Potlačit [WAR_GOAL_DRAFT.GetTarget.GetAdjectiveNoFormatting] [concept_revolution]" # todo: CHANGED
- war_goal_revolution_desc: "Potlačit [WAR_GOAL_DRAFT.GetTarget.GetAdjectiveNoFormatting] [concept_revolution]" # todo: CHANGED
- war_goal_revolution_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že mu pomůžete potlačit [WAR_GOAL_DRAFT.GetTarget.GetAdjectiveNoFormatting] [concept_revolution]." # todo: CHANGED
+ war_goal_revolution: "Potlačit [WAR_GOAL_DRAFT.GetTarget.GetAdjectiveNoFormatting] [concept_revolution]"
+ war_goal_revolution_desc: "Potlačit [WAR_GOAL_DRAFT.GetTarget.GetAdjectiveNoFormatting] [concept_revolution]"
+ war_goal_revolution_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že mu pomůžete potlačit [WAR_GOAL_DRAFT.GetTarget.GetAdjectiveNoFormatting] [concept_revolution]."
  war_goal_revolution_type_desc: "Pokuste se svrhnout [Concept('concept_government','vládu')]."
  war_goal_revolution_type_name: "Revoluce"
- war_goal_secession: "Potlačit [WAR_GOAL_DRAFT.GetTarget.GetAdjectiveNoFormatting] secesi" # todo: CHANGED
- war_goal_secession_desc: "Vrátit všechny [WAR_GOAL_DRAFT.GetTarget.GetAdjectiveNoFormatting] [Concept('concept_state', '$concept_states$')] které se od nás odtrhly." # todo: CHANGED
- war_goal_secession_sway_desc: "Snažte se přesvědčit [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že jim vrátíte všechny [WAR_GOAL_DRAFT.GetTarget.GetAdjectiveNoFormatting] [Concept('concept_state', '$concept_states$')] které se od nich odtrhly." # todo: CHANGED
+ war_goal_secession: "Potlačit [WAR_GOAL_DRAFT.GetTarget.GetAdjectiveNoFormatting] secesi"
+ war_goal_secession_desc: "Vrátit všechny [WAR_GOAL_DRAFT.GetTarget.GetAdjectiveNoFormatting] [Concept('concept_state', '$concept_states$')] které se od nás odtrhly."
+ war_goal_secession_sway_desc: "Snažte se přesvědčit [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že jim vrátíte všechny [WAR_GOAL_DRAFT.GetTarget.GetAdjectiveNoFormatting] [Concept('concept_state', '$concept_states$')] které se od nich odtrhly."
  war_goal_secession_type_desc: "Pokouší se o odtržení od [Concept('concept_country','země')]."
  war_goal_secession_type_name: "Secese"
- war_goal_take_treaty_port: "[WAR_GOAL_DRAFT.GetTargetState.GetStateRegion.GetName] [concept_treaty_port]" # todo: CHANGED
- war_goal_take_treaty_port_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] přinutí [WAR_GOAL_DRAFT.GetTarget.GetName] postoupit [concept_treaty_port] v [WAR_GOAL_DRAFT.GetTargetState.GetStateRegion.GetName] [concept_state_region]." # todo: CHANGED
- war_goal_take_treaty_port_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že přinutíte [WAR_GOAL_DRAFT.GetWarGoalStakeholder.GetName] postoupit jim [concept_treaty_port] v [WAR_GOAL_DRAFT.GetTargetState.GetStateRegion.GetName] [concept_state_region]." # todo: CHANGED
- war_goal_take_treaty_port_type_desc: "Přinutit jiné [concept_country] postoupit [concept_treaty_port] v [concept_state]." # todo: CHANGED
+ war_goal_take_treaty_port: "[WAR_GOAL_DRAFT.GetTargetState.GetStateRegion.GetName] [concept_treaty_port]"
+ war_goal_take_treaty_port_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] přinutí [WAR_GOAL_DRAFT.GetTarget.GetName] postoupit [concept_treaty_port] v [WAR_GOAL_DRAFT.GetTargetState.GetStateRegion.GetName] [concept_state_region]."
+ war_goal_take_treaty_port_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že přinutíte [WAR_GOAL_DRAFT.GetWarGoalStakeholder.GetName] postoupit jim [concept_treaty_port] v [WAR_GOAL_DRAFT.GetTargetState.GetStateRegion.GetName] [concept_state_region]."
+ war_goal_take_treaty_port_type_desc: "Přinutit jiné [concept_country] postoupit [concept_treaty_port] v [concept_state]."
  war_goal_take_treaty_port_type_name: "Získat smluvní přístav"
- war_goal_transfer_subject: "Převést [WAR_GOAL_DRAFT.GetTarget.GetName]" # todo: CHANGED
- war_goal_transfer_subject_desc: "Převést suverenitu nad [WAR_GOAL_DRAFT.GetTarget.GetName] na [WAR_GOAL_DRAFT.GetHolder.GetName]." # todo: CHANGED
- war_goal_transfer_subject_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že přinutíte [WAR_GOAL_DRAFT.GetWarGoalStakeholder.GetName] převést jim suverenitu nad [WAR_GOAL_DRAFT.GetTarget.GetName]" # todo: CHANGED
+ war_goal_transfer_subject: "Převést [WAR_GOAL_DRAFT.GetTarget.GetName]"
+ war_goal_transfer_subject_desc: "Převést suverenitu nad [WAR_GOAL_DRAFT.GetTarget.GetName] na [WAR_GOAL_DRAFT.GetHolder.GetName]."
+ war_goal_transfer_subject_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že přinutíte [WAR_GOAL_DRAFT.GetWarGoalStakeholder.GetName] převést jim suverenitu nad [WAR_GOAL_DRAFT.GetTarget.GetName]"
  war_goal_transfer_subject_type_desc: "Udělat se suverénem jednoho z jejich subjektů."
  war_goal_transfer_subject_type_name: "Převést závislou zemi"
- war_goal_unification: "Sjednotit se s [WAR_GOAL_DRAFT.GetTargetState.GetName]" # todo: CHANGED
- war_goal_unification_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] anektuje [WAR_GOAL_DRAFT.GetCountryFormation.GetAdjective] domovinu [WAR_GOAL_DRAFT.GetTargetState.GetName]." # todo: CHANGED
- war_goal_unification_leadership: "[WAR_GOAL_DRAFT.GetCountryFormation.GetAdjective] vedení" # todo: CHANGED
- war_goal_unification_leadership_desc: "Přinutit [WAR_GOAL_DRAFT.GetTarget.GetName] vzdát se jejich ambicí sjednotit [WAR_GOAL_DRAFT.GetCountryFormation.GetName]" # todo: CHANGED
- war_goal_unification_leadership_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že přinutíte [WAR_GOAL_DRAFT.GetTarget.GetName] vzdát se jejich ambicí sjednotit [WAR_GOAL_DRAFT.GetCountryFormation.GetName]" # todo: CHANGED
- war_goal_unification_leadership_type_desc: "Přinutit jiné [concept_country] vzdát se jejich ambicí sjednotit národ." # todo: CHANGED
+ war_goal_unification: "Sjednotit se s [WAR_GOAL_DRAFT.GetTargetState.GetName]"
+ war_goal_unification_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] anektuje [WAR_GOAL_DRAFT.GetCountryFormation.GetAdjective] domovinu [WAR_GOAL_DRAFT.GetTargetState.GetName]."
+ war_goal_unification_leadership: "[WAR_GOAL_DRAFT.GetCountryFormation.GetAdjective] vedení"
+ war_goal_unification_leadership_desc: "Přinutit [WAR_GOAL_DRAFT.GetTarget.GetName] vzdát se jejich ambicí sjednotit [WAR_GOAL_DRAFT.GetCountryFormation.GetName]"
+ war_goal_unification_leadership_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že přinutíte [WAR_GOAL_DRAFT.GetTarget.GetName] vzdát se jejich ambicí sjednotit [WAR_GOAL_DRAFT.GetCountryFormation.GetName]"
+ war_goal_unification_leadership_type_desc: "Přinutit jiné [concept_country] vzdát se jejich ambicí sjednotit národ."
  war_goal_unification_leadership_type_name: "Vedení unifikace"
- war_goal_unification_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že anektuje [WAR_GOAL_DRAFT.GetCountryFormation.GetAdjective] domovinu [WAR_GOAL_DRAFT.GetTargetState.GetName]." # todo: CHANGED
+ war_goal_unification_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že anektuje [WAR_GOAL_DRAFT.GetCountryFormation.GetAdjective] domovinu [WAR_GOAL_DRAFT.GetTargetState.GetName]."
  war_goal_unification_type_desc: "Anektujte všechny požadované [Concept('concept_state', 'státy')] pro [Concept('concept_unification','sjednocení'], které nejsou vlastněny [Concept('concept_unification_supporter','podporovateli sjednocení')], [Concept('concept_subject','závislými zeměmi')] nebo spojenci."
  war_goal_unification_type_name: "Sjednocení"
- war_goal_war_reparations: "[WAR_GOAL_DRAFT.GetTarget.GetAdjectiveNoFormatting] [concept_war_reparations]" # todo: CHANGED
- war_goal_war_reparations_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] přinutí [WAR_GOAL_DRAFT.GetTarget.GetName] platit #variable 10%#! jejich daňových příjmů jako [concept_war_reparations] po dobu 5 let." # todo: CHANGED
- war_goal_war_reparations_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že přinutíte [WAR_GOAL_DRAFT.GetWarGoalStakeholder.GetName] platit jim #variable 10%#! jejich daňových příjmů jako [concept_war_reparations] po dobu 5 let." # todo: CHANGED
- war_goal_war_reparations_type_desc: "Přinutit jiné [concept_country] platit [concept_war_reparations]." # todo: CHANGED
+ war_goal_war_reparations: "[WAR_GOAL_DRAFT.GetTarget.GetAdjectiveNoFormatting] [concept_war_reparations]"
+ war_goal_war_reparations_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] přinutí [WAR_GOAL_DRAFT.GetTarget.GetName] platit #variable 10%#! jejich daňových příjmů jako [concept_war_reparations] po dobu 5 let."
+ war_goal_war_reparations_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že přinutíte [WAR_GOAL_DRAFT.GetWarGoalStakeholder.GetName] platit jim #variable 10%#! jejich daňových příjmů jako [concept_war_reparations] po dobu 5 let."
+ war_goal_war_reparations_type_desc: "Přinutit jiné [concept_country] platit [concept_war_reparations]."
  war_goal_war_reparations_type_name: "Válečné reparace"
  dp_leadership_italy_tooltip_desc: "Nastaví iniciační [Concept('concept_war_goal','válečný cíl')] tak, aby vyhnal cílovou [Concept('concept_country','zemi')] jako [Concept('concept_unification_candidate','kandidáta')] italského [Concept('concept_unification', 'významného sjednocení')]."
  dp_leadership_scandinavia_tooltip_desc: "Nastaví iniciační [Concept('concept_war_goal','válečný cíl')] tak, aby vyhnal cílovou [Concept('concept_country','zemi')] jako [Concept('concept_unification_candidate','kandidáta')] skandinávského [Concept('concept_unification', 'významného sjednocení')]."
- CLICK_TO_SELECT_ARTICLE_INPUT_COUNTRY: "Klikněte pro výběr [concept_country]" # todo: NEW TRANSLATION
- DIPLO_PLAY_INVALID_WARGOAL_DESC: "Neplatný [concept_diplomatic_play]" # todo: NEW TRANSLATION
- WARGOAL_DIPLOMATIC_PLAY_DOES_NOT_EXIST: " Toto [concept_war_goal] nemá platný [concept_diplomatic_play]" # todo: NEW TRANSLATION
+ CLICK_TO_SELECT_ARTICLE_INPUT_COUNTRY: "Klikněte pro výběr [concept_country]"
+ DIPLO_PLAY_INVALID_WARGOAL_DESC: "Neplatný [concept_diplomatic_play]"
+ WARGOAL_DIPLOMATIC_PLAY_DOES_NOT_EXIST: " Toto [concept_war_goal] nemá platný [concept_diplomatic_play]"

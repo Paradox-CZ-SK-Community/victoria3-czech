@@ -120,7 +120,7 @@
  ADD_LOYALISTS_FIRST: "$VALUE|+=1%$ z $FILTER_DESC$ v [COUNTRY.GetNameNoFlag] se stávají více [concept_loyalist|l]"
  ADD_LOYALISTS_IN_STATE_THIRD: "$VALUE|+=1%$ $FILTER_DESC$ v [STATE.GetName] se stávají více [concept_loyalist|l]"
  ADD_LOYALISTS_THIRD: "$VALUE|+=1%$ z $FILTER_DESC$ v [COUNTRY.GetName] se stává více [concept_loyalist|l]"
- ADD_MODIFIER: "Získá #tooltippable #tooltip:[GetRawTextTooltipTag('$ADD_MODIFIER_BREAKDOWN$')] $MODIFIER_NAME$#!#! $MAYBE_DECAYING_WITH_SPACE_AFTER$$DURATION$\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!" # todo: CHANGED
+ ADD_MODIFIER: "Získá #tooltippable #tooltip:[GetRawTextTooltipTag('$ADD_MODIFIER_BREAKDOWN$')] $MODIFIER_NAME$#!#! $MAYBE_DECAYING_WITH_SPACE_AFTER$$DURATION$\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!"
  ADD_MODIFIER_BREAKDOWN: "#header $MODIFIER_NAME$#!\n$MODIFIER_DESC$"
  ADD_MODIFIER_FIRST: "$SUBJECT_NAME$ získává #tooltippable #tooltip:[GetRawTextTooltipTag('$ADD_MODIFIER_BREAKDOWN$')] $MODIFIER_NAME$#!#! $MAYBE_DECAYING_WITH_SPACE_AFTER$$DURATION$\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!"
  ADD_MODIFIER_THIRD: "$SUBJECT_NAME$ získává #tooltippable #tooltip:[GetRawTextTooltipTag('$ADD_MODIFIER_BREAKDOWN$')] $MODIFIER_NAME$#!#! $MAYBE_DECAYING_WITH_SPACE_AFTER$$DURATION$\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!"
@@ -148,8 +148,8 @@
  ADD_RELIGION_SOL_MODIFIER_THIRD: "$ADD_DYNAMIC_SOL_MODIFIER$"
  ADD_RELIGION_STANDARD_OF_LIVING_MODIFIER: "Přidá $MODIFIER_DESC$ [Concept('concept_pop', '$concept_pops$')] v [State.GetName] $DURATION$"
  ADD_RULING_INTEREST_GROUP: "[INTEREST_GROUP.GetName] se stává součástí [concept_government|l]"
- ADD_STATE_TRAIT: "Státy v [STATE_REGION.GetName] získají #tooltippable;tooltip:[STATE_TRAIT.GetTooltipTag],TOOLTIP_STATE_TRAIT [STATE_TRAIT.GetName]#! vlastnost" # todo: CHANGED
- ADD_STATE_TRAIT_GLOBAL: "Získá #tooltippable;tooltip:[STATE_TRAIT.GetTooltipTag],TOOLTIP_STATE_TRAIT [STATE_TRAIT.GetName]#! vlastnost" # todo: CHANGED
+ ADD_STATE_TRAIT: "Státy v [STATE_REGION.GetName] získají #tooltippable;tooltip:[STATE_TRAIT.GetTooltipTag],TOOLTIP_STATE_TRAIT [STATE_TRAIT.GetName]#! vlastnost"
+ ADD_STATE_TRAIT_GLOBAL: "Získá #tooltippable;tooltip:[STATE_TRAIT.GetTooltipTag],TOOLTIP_STATE_TRAIT [STATE_TRAIT.GetName]#! vlastnost"
  ADD_TARGET_BACKERS: "[COUNTRY.GetName] se připojuje k [TARGET_DIPLOMATIC_PLAY.GetName] na straně cílů"
  ADD_TAXED_GOODS: "[COUNTRY.GetName] začíná vybírat [Concept('concept_consumption_tax', '$concept_consumption_taxes$')] na [TARGET_GOODS.GetName]"
  ADD_TAXED_GOODS_FIRST: "[COUNTRY.GetNameNoFlag] začíná vybírat [Concept('concept_consumption_tax', '$concept_consumption_taxes$')] na [TARGET_GOODS.GetName]"
@@ -172,15 +172,15 @@
  ADD_TREASURY_EFFECT_THIRD_POSITIVE: "[COUNTRY.GetName] získává @money!$VALUE|+=$"
  ADD_WAR_EXHAUSTION: "[Country.GetAdjectiveNoFormatting] [concept_war_exhaustion|l] zisk v [War.GetName] se zvyšuje o $VALUE|+$"
  ADD_WAR_EXHAUSTION_NEG: "[Country.GetAdjectiveNoFormatting] [concept_war_exhaustion|l] zisk v [War.GetName] klesá o $VALUE|+$"
- ADD_WAR_GOAL: "[COUNTRY.GetName] přidává [WAR_GOAL_DRAFT.GetName] [concept_war_goal] do [DIPLOMATIC_PLAY_TYPE.GetName] [concept_diplomatic_play]" # todo: CHANGED
- ADD_WAR_GOAL_FIRST: "[COUNTRY.GetNameNoFlag] přidává [WAR_GOAL_DRAFT.GetName] [concept_war_goal] do [DIPLOMATIC_PLAY_TYPE.GetName] [concept_diplomatic_play]" # todo: CHANGED
- ADD_WAR_GOAL_THIRD: "[COUNTRY.GetName] přidává [WAR_GOAL_DRAFT.GetName] [concept_war_goal] do [DIPLOMATIC_PLAY_TYPE.GetName] [concept_diplomatic_play]" # todo: CHANGED
+ ADD_WAR_GOAL: "[COUNTRY.GetName] přidává [WAR_GOAL_DRAFT.GetName] [concept_war_goal] do [DIPLOMATIC_PLAY_TYPE.GetName] [concept_diplomatic_play]"
+ ADD_WAR_GOAL_FIRST: "[COUNTRY.GetNameNoFlag] přidává [WAR_GOAL_DRAFT.GetName] [concept_war_goal] do [DIPLOMATIC_PLAY_TYPE.GetName] [concept_diplomatic_play]"
+ ADD_WAR_GOAL_THIRD: "[COUNTRY.GetName] přidává [WAR_GOAL_DRAFT.GetName] [concept_war_goal] do [DIPLOMATIC_PLAY_TYPE.GetName] [concept_diplomatic_play]"
  ADD_WAR_WAR_SUPPORT: "[Country.GetAdjectiveNoFormatting] [concept_war_support|l] v [War.GetName] se zvyšuje o $VALUE|+$"
  ADD_WAR_WAR_SUPPORT_NEG: "[Country.GetAdjectiveNoFormatting] [concept_war_support|l] v [War.GetName] klesá o $VALUE|+$"
  ANNEX_EFFECT: "[COUNTRY.GetName] anektuje [TARGET_COUNTRY.GetName]"
  ANNEX_EFFECT_FIRST: "[COUNTRY.GetNameNoFlag] anektuje [TARGET_COUNTRY.GetName]"
  ANNEX_EFFECT_THIRD: "[COUNTRY.GetName] anektuje [TARGET_COUNTRY.GetName]"
- CALL_ELECTION: "Proběhnou volby za #variable $MONTHS$ měsíců#!" # todo: CHANGED
+ CALL_ELECTION: "Proběhnou volby za #variable $MONTHS$ měsíců#!"
  CANCEL_ENACTMENT: "Zruší [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enactment$')] [Law.GetFullNameWithStatus]"
  CANCEL_ENACTMENT_FIRST: "[COUNTRY.GetNameNoFlag] ruší [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enactment$')] [Law.GetFullNameWithStatus]"
  CANCEL_ENACTMENT_THIRD: "[COUNTRY.GetName] ruší [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enactment$')] [Law.GetFullNameWithStatus]"
@@ -202,12 +202,12 @@
  CHANGE_POPTYPE: "[Pop.GetName] v [Pop.GetState.GetName] se stává #variable [POP_TYPE.GetName]#!"
  CHANGE_POP_CULTURE: "$VALUE|0v%$ z [Pop.GetName] v [Pop.GetState.GetName] se asimiluje do kultury [Culture.GetName]"
  CHANGE_POP_RELIGION: "$VALUE|0v%$ obyvatel [Pop.GetName] v [Pop.GetState.GetName] bude následovat náboženství [Religion.GetName]"
- CHANGE_RELATIONS: "[concept_relations] vůči [TARGET_COUNTRY.GetName] se zlepší o $VALUE|0+$" # todo: CHANGED
- CHANGE_RELATIONS_FIRST: "[COUNTRY.GetAdjectiveNoFlag] [concept_relations] vůči [TARGET_COUNTRY.GetName] se zlepší o $VALUE|0+$" # todo: CHANGED
- CHANGE_RELATIONS_FIRST_NEG: "[COUNTRY.GetAdjectiveNoFlag] [concept_relations] vůči [TARGET_COUNTRY.GetName] se zhorší o $VALUE|0-$" # todo: CHANGED
- CHANGE_RELATIONS_NEG: "[concept_relations] vůči [TARGET_COUNTRY.GetName] se zhorší o $VALUE|0-$" # todo: CHANGED
- CHANGE_RELATIONS_THIRD: "[COUNTRY.GetAdjective] [concept_relations] vůči [TARGET_COUNTRY.GetName] se zlepší o $VALUE|0+$" # todo: CHANGED
- CHANGE_RELATIONS_THIRD_NEG: "[COUNTRY.GetAdjective] [concept_relations] vůči [TARGET_COUNTRY.GetName] se zhorší o $VALUE|0-$" # todo: CHANGED
+ CHANGE_RELATIONS: "[concept_relations] vůči [TARGET_COUNTRY.GetName] se zlepší o $VALUE|0+$"
+ CHANGE_RELATIONS_FIRST: "[COUNTRY.GetAdjectiveNoFlag] [concept_relations] vůči [TARGET_COUNTRY.GetName] se zlepší o $VALUE|0+$"
+ CHANGE_RELATIONS_FIRST_NEG: "[COUNTRY.GetAdjectiveNoFlag] [concept_relations] vůči [TARGET_COUNTRY.GetName] se zhorší o $VALUE|0-$"
+ CHANGE_RELATIONS_NEG: "[concept_relations] vůči [TARGET_COUNTRY.GetName] se zhorší o $VALUE|0-$"
+ CHANGE_RELATIONS_THIRD: "[COUNTRY.GetAdjective] [concept_relations] vůči [TARGET_COUNTRY.GetName] se zlepší o $VALUE|0+$"
+ CHANGE_RELATIONS_THIRD_NEG: "[COUNTRY.GetAdjective] [concept_relations] vůči [TARGET_COUNTRY.GetName] se zhorší o $VALUE|0-$"
  CHANGE_SUBJECT_TYPE: "Stává se [SUBJECT_TYPE.GetName] [Country.GetOverlord.GetName]"
  CHANGE_TAG: "[COUNTRY.GetName] se stává $NEW_TAG|v$"
  CHANGE_TAG_FIRST: "[COUNTRY.GetNameNoFlag] se stává $NEW_TAG|v$"
@@ -308,8 +308,8 @@
  EXILE_CHARACTER_THIRD_NEG: "[CHARACTER.GetFullName] NENÍ [Concept('concept_exile', '$concept_exiled$')]"
  FINISH_HARVEST_CONDITION: "Dokončit [HarvestConditionType.GetName] v [StateRegion.GetName]"
  FINISH_HARVEST_CONDITION_GLOBAL: "Dokončit [HarvestConditionType.GetName]"
- FORCE_RESOURCE_DEPLETION: "Vyčerpá ložiska surovin pro #variable $BUILDING_TYPE$#! v [State.GetName]" # todo: CHANGED
- FORCE_RESOURCE_DISCOVERY: "Odhalí ložiska surovin pro #variable $BUILDING_TYPE$#! v [State.GetName]" # todo: CHANGED
+ FORCE_RESOURCE_DEPLETION: "Vyčerpá ložiska surovin pro #variable $BUILDING_TYPE$#! v [State.GetName]"
+ FORCE_RESOURCE_DISCOVERY: "Odhalí ložiska surovin pro #variable $BUILDING_TYPE$#! v [State.GetName]"
  FREE_CHARACTER_FROM_VOID: "[CHARACTER.GetFullName] je nalezen jako živý"
  FREE_CHARACTER_FROM_VOID_NEG: "[CHARACTER.GetFullName] již není znovu nalezen"
  FULLY_MOBILIZE_ARMY_GLOBAL: "[concept_military_formation] je okamžitě plně [Concept('concept_mobilize_army','$concept_mobilize_army_mobilized$')]"
@@ -327,8 +327,8 @@
  JOIN_WAR_GLOBAL: "[concept_country] se připojí k [Concept('concept_war','$concept_wars$')] [COUNTRY.GetName]"
  JOIN_WAR_THIRD: "[TARGET_COUNTRY.GetNameNoFlag] se připojuje k [Concept('concept_war','$concept_wars$')] [COUNTRY.GetName]"
  KILL_CHARACTER: "[CHARACTER.GetFullName] umírá"
- KILL_CHARACTER_GLOBAL: "[concept_character] umírá" # todo: CHANGED
- KILL_CHARACTER_GLOBAL_NEG: "[concept_character] žije" # todo: CHANGED
+ KILL_CHARACTER_GLOBAL: "[concept_character] umírá"
+ KILL_CHARACTER_GLOBAL_NEG: "[concept_character] žije"
  KILL_CHARACTER_NEG: "[CHARACTER.GetFullName] žije"
  KILL_POPULATION: "$VALUE|0v$ $FILTER_DESC$ ztrácí životy"
  KILL_POPULATION_IN_STATE_THIRD: "$VALUE|0v$ $FILTER_DESC$ ve [STATE.GetName] ztrácí životy"
@@ -411,8 +411,8 @@
  REMOVE_PRINCIPLE_POWER_BLOC: "Odstranění $POWER_BLOC_PRINCIPLE$ z [concept_power_bloc|l]"
  REMOVE_PRINCIPLE_POWER_BLOC_THIRD: "Odstraňuje $POWER_BLOC_PRINCIPLE$ z [POWER_BLOC.GetName]"
  REMOVE_RULING_INTEREST_GROUP: "[INTEREST_GROUP.GetName] je odstraněna z [concept_government|l]"
- REMOVE_STATE_TRAIT: "Státy v [STATE_REGION.GetName] ztratí #tooltippable;tooltip:[STATE_TRAIT.GetTooltipTag],TOOLTIP_STATE_TRAIT [STATE_TRAIT.GetName]#! vlastnost" # todo: CHANGED
- REMOVE_STATE_TRAIT_GLOBAL: "Ztratí #tooltippable;tooltip:[STATE_TRAIT.GetTooltipTag],TOOLTIP_STATE_TRAIT [STATE_TRAIT.GetName]#! vlastnost" # todo: CHANGED
+ REMOVE_STATE_TRAIT: "Státy v [STATE_REGION.GetName] ztratí #tooltippable;tooltip:[STATE_TRAIT.GetTooltipTag],TOOLTIP_STATE_TRAIT [STATE_TRAIT.GetName]#! vlastnost"
+ REMOVE_STATE_TRAIT_GLOBAL: "Ztratí #tooltippable;tooltip:[STATE_TRAIT.GetTooltipTag],TOOLTIP_STATE_TRAIT [STATE_TRAIT.GetName]#! vlastnost"
  REMOVE_TARGET_BACKERS: "[COUNTRY.GetName] opouští [TARGET_DIPLOMATIC_PLAY.GetName]"
  REMOVE_TAXED_GOODS: "[COUNTRY.GetName] přestává vybírat [Concept('concept_consumption_tax', '$concept_consumption_taxes$')] na [TARGET_GOODS.GetName]"
  REMOVE_TAXED_GOODS_FIRST: "[COUNTRY.GetNameNoFlag] zastavuje sběr [Concept('concept_consumption_tax', '$concept_consumption_taxes$')] na [TARGET_GOODS.GetName]"
@@ -520,8 +520,8 @@
  SET_POP_QUALIFICATIONS: "[Pop.GetName] v [POP.GetState.GetName] [POP_TYPE.GetName] [concept_pop_qualifications|l] nastavena na $VALUE|+0%$"
  SET_POP_WEALTH: "[Pop.GetName] v [POP.GetState.GetName] bohatství nastaveno na $VALUE|+$ bohatství"
  SET_RELATIONS: "#variable [COUNTRY.GetAdjectiveNoFormatting]#! vztahy vůči #variable [TARGET_COUNTRY.GetName]#! jsou nastaveny na #variable $VALUE|0$#!"
- SET_RULING_INTEREST_GROUPS: "Určené zájmové skupiny jsou přidány do [concept_government], zatímco všichni ostatní jsou odstraněni" # todo: CHANGED
- SET_RULING_PARTY: "[PARTY.GetName] [Party.GetMembersSummary] je přidána do [concept_government], zatímco všichni ostatní jsou odstraněni" # todo: CHANGED
+ SET_RULING_INTEREST_GROUPS: "Určené zájmové skupiny jsou přidány do [concept_government], zatímco všichni ostatní jsou odstraněni"
+ SET_RULING_PARTY: "[PARTY.GetName] [Party.GetMembersSummary] je přidána do [concept_government], zatímco všichni ostatní jsou odstraněni"
  SET_SECRET_GOAL: "[COUNTRY.GetName] přijímá"
  SET_SOCIAL_HIERARCHY: "[SOCIAL_HIERARCHY.GetName] se přijímá"
  SET_SOCIAL_HIERARCHY_FIRST: "[COUNTRY.GetNameNoFlag] přijímá [SOCIAL_HIERARCHY.GetName]"

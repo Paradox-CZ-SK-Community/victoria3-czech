@@ -11,7 +11,7 @@
  je_matter_of_hungary_fail_hungary_is_free: "#bold $HUN$#! se osvobodilo spod [ROOT.GetCountry.GetAltAdjective('ee')|l] kontroly"
  je_matter_of_hungary_fail_not_at_war_with_hungary: "#bold $HUN$#! #bold není#! v opozici vůči [ROOT.GetCountry.GetAltAdjective('L')] v [Concept('concept_diplomatic_play','diplomatické hře')]"
  je_matter_of_hungary_on_fail_lose_control: "Veškerá zbývající území v Maďarsku pod kontrolou [ROOT.GetCountry.GetName] nebo jejích [Concept('concept_subject','$concept_subjects$')] #bold odtrhnou se#!. Nacionalističtí rebelové povstanou v našich negermánských zemích."
- hungarian_above_80_acceptance_for_a_while_tt: "Průměrné [concept_acceptance] [GetCulture('hungarian').GetName] [Concept('concept_pop', '$concept_pops$')] v [ROOT.GetCountry.GetNameNoFlag] bylo větší než nebo rovno #v 80#! po dobu #b 60 měsíců#! (aktuálně [ROOT.GetCountry.MakeScope.Var('hungarian_acceptance_var').GetValue|v0])" # todo: CHANGED
+ hungarian_above_80_acceptance_for_a_while_tt: "Průměrné [concept_acceptance] [GetCulture('hungarian').GetName] [Concept('concept_pop', '$concept_pops$')] v [ROOT.GetCountry.GetNameNoFlag] bylo větší než nebo rovno #v 80#! po dobu #b 60 měsíců#! (aktuálně [ROOT.GetCountry.MakeScope.Var('hungarian_acceptance_var').GetValue|v0])"
  hungarian_movements_pacified_tt: "Žádná [GetCulture('hungarian').GetCustom('CUL_ADJ_ee')|l] #v $movement_cultural_minority$#! nemá [Concept('concept_activism','$concept_activism_short$')] $RADICALISM_AGITATING$ (#v 25%#!) nebo více"
  je_austrian_neo_absolutism: "Autokracie v době svobody"
  je_austrian_neo_absolutism_reason: "#italic „Pilíře bachovského systému spočívají na jeho čtyřech armádách: stojící armádě vojáků, sedící armádě úředníků, klečící armádě kněží a plazivé armádě udavačů.“ #!\n\nHrozba revoluce zdola vyžaduje, aby [ROOT.GetCountry.GetCapital.GetCityHubName] provedla svou vlastní revoluci shora. Zavedením centralizovaného, racionálního a efektivního státního aparátu - obsazeného loajálními a schopnými byrokraty - bude země modernizována, aby čelila výzvám současné doby.\n\n[concept_austrian_constitutional_pressure]:\nPokud se odpor proti rakouskému neoabsolutistickému projektu stane příliš silným, bude [ROOT.GetCountry.GetCapital.GetCityHubName] nucena ustoupit požadavkům na reformu a udělit ústavu omezující pravomoci státu."
@@ -265,7 +265,7 @@
  notification_hungarian_king_elected_from_our_country_desc: "V nedávném hlasování [SCOPE.sCountry('hungary_scope').GetAdjective] sněm zvolil [ROOT.GetCountry.GetAdjective] prince jako [SCOPE.sCountry('hungary_scope').GetPrimaryRoleTitle], který nyní bude vládnout zemi jako [SCOPE.sCountry('hungary_scope').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('hungary_scope').GetRuler.GetFullName]"
  notification_hungarian_king_elected_from_our_country_tooltip: "#header $notification_hungarian_king_elected_from_our_country_name$#!\n$TOOLTIP_DELIMITER$\n$notification_hungarian_king_elected_from_our_country_desc$"
  je_grunderzeit: "Gründerzeit"
- je_grunderzeit_reason: "An #bold investiční horečka#! zachvátila #bold německé#! země, protože kapitál se s horečnou intenzitou hrne do železnic, továren a bank — hnán bezmez optimismem, spekulativní ambicí a slibem #bold nové průmyslové éry#!. Špekulanti radostně vsází jmění na cíle, které den ode dne nabývají fantastičtějších rozměrů. Jak dlouho může toto euforické opojení trvat?\n\nNěmecké [Concept('concept_gdp', '$concept_gdp_short$')], poslední čtvrtletní výsledek: @gdp!#variable [GetGlobalVariable('grunderzeit_combined_gdp_global_var_baseline').GetValue|K]#!\nNěmecké [Concept('concept_gdp', '$concept_gdp_short$')], aktuálně: @gdp![JournalEntry.GetCustom('get_grunderzeit_gdp')]\nNěmecké [Concept('concept_gdp', '$concept_gdp_short$')], čtvrtletní cíl: @gdp!#variable [GetGlobalVariable('grunderzeit_combined_gdp_global_var_goal').GetValue|K]#!\n\n#bold Tempo zakládacích let#!\nThe #bold $je_grunderzeit$#! [concept_journal_entry] je organizován do #bold finančních čtvrtletí#!. Každé #v 3#! měsíce musí kombinované [Concept('concept_gdp', '$concept_gdp_short$')] všech #bold německých#! [Concept('concept_country', '$concept_countries$')] v #bold Evropě#! růst nejméně o #v 2#! procenta. Pokud se to nepodaří, #n se vyčerpá#! #bold ukazatel postupu#! o #v 1#!, zatímco úspěch jej naopak #g zvýší#! o #v 1#!. Pokud ukazatel postupu dosáhne #v 0#!, dojde k #n finančnímu krachu#!." # todo: CHANGED
+ je_grunderzeit_reason: "An #bold investiční horečka#! zachvátila #bold německé#! země, protože kapitál se s horečnou intenzitou hrne do železnic, továren a bank — hnán bezmez optimismem, spekulativní ambicí a slibem #bold nové průmyslové éry#!. Špekulanti radostně vsází jmění na cíle, které den ode dne nabývají fantastičtějších rozměrů. Jak dlouho může toto euforické opojení trvat?\n\nNěmecké [Concept('concept_gdp', '$concept_gdp_short$')], poslední čtvrtletní výsledek: @gdp!#variable [GetGlobalVariable('grunderzeit_combined_gdp_global_var_baseline').GetValue|K]#!\nNěmecké [Concept('concept_gdp', '$concept_gdp_short$')], aktuálně: @gdp![JournalEntry.GetCustom('get_grunderzeit_gdp')]\nNěmecké [Concept('concept_gdp', '$concept_gdp_short$')], čtvrtletní cíl: @gdp!#variable [GetGlobalVariable('grunderzeit_combined_gdp_global_var_goal').GetValue|K]#!\n\n#bold Tempo zakládacích let#!\nThe #bold $je_grunderzeit$#! [concept_journal_entry] je organizován do #bold finančních čtvrtletí#!. Každé #v 3#! měsíce musí kombinované [Concept('concept_gdp', '$concept_gdp_short$')] všech #bold německých#! [Concept('concept_country', '$concept_countries$')] v #bold Evropě#! růst nejméně o #v 2#! procenta. Pokud se to nepodaří, #n se vyčerpá#! #bold ukazatel postupu#! o #v 1#!, zatímco úspěch jej naopak #g zvýší#! o #v 1#!. Pokud ukazatel postupu dosáhne #v 0#!, dojde k #n finančnímu krachu#!."
  je_grunderzeit_fail_tt: "Ukazatel #bold postupu#! dosáhl #v 0#!"
  grunderzeit_possible_tt: "#v 75%#! nebo více všech #bold německých#! [Concept('concept_country', '$concept_countries$')] v #bold Evropě#! prozkoumalo [GetTechnology('mutual_funds').GetName] a má alespoň jednu úroveň [GetBuildingType('building_railway').GetName] (aktuálně [GetGlobalVariable('grunderzeit_countries_percent').GetValue|v%0])"
  grunderzeit_progress_bar: "Gründerzeit"
@@ -301,7 +301,7 @@
  grunderzeit_participant_high: "Bonusy #bold $je_grunderzeit$#! [concept_journal_entry] budou #g silnější#!, ale stejně tak bude jakýkoli následný #n krach#!"
  grunderzeit_participant_low: "Bonusy #bold $je_grunderzeit$#! [concept_journal_entry] budou #n slabší#!, ale stejně tak bude jakýkoli následný #n krach#! slabší"
  grunderzeit_bonus_last_tt: "Následující [concept_modifier] bude aktivní po dobu trvání #bold $je_grunderzeit$#! [concept_journal_entry]"
- grunderzeit_expectations_tt: "@warning! Aby byla zachována důvěra investorů, musí kombinované [Concept('concept_gdp', '$concept_gdp_short$')] všech #bold německých#! [Concept('concept_country', '$concept_countries$')] růst o #v 2%#! za čtvrtletí." # todo: CHANGED
+ grunderzeit_expectations_tt: "@warning! Aby byla zachována důvěra investorů, musí kombinované [Concept('concept_gdp', '$concept_gdp_short$')] všech #bold německých#! [Concept('concept_country', '$concept_countries$')] růst o #v 2%#! za čtvrtletí."
  grunderzeit_status_desc_default_key: "Německý ekonomický zázrak je teprve na obzoru."
  grunderzeit_status_desc_key_1: "Ekonomika je #n v úpadku#!"
  grunderzeit_status_desc_key_2: "Ekonomika #n stagnuje#!"
@@ -309,9 +309,9 @@
  grunderzeit_status_desc_key_4: "Ekonomika #g kvete#!"
  grunderzeit_status_desc_key_0: "Ekonomika #bold zkolabovala#!"
  je_bavarocracy: "Bavarokracie"
- je_bavarocracy_reason: "Od svého vzniku v roce 1832 je zrodivší se [ROOT.GetCountry.GetAdjective] království — první skutečně nezávislý řecký stát od dob Konstantina XI. — pod nadvládou [SCOPE.sCharacter('king_otto_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('king_otto_scope').GetFirstName] a jeho bavorských regentů.\n\nPokud si mladý král chce dokázat, že je hoden vládnout Hellenům, bude muset učinit odvážné kroky, aby zvládl [Concept('concept_bavarocratic_ire', '$concept_bavarocratic_ire_short$')] svých nových poddaných." # todo: CHANGED
- je_bavarocracy_complete_tt: "[concept_bavarocratic_ire] je pod #v 10#!" # todo: CHANGED
- je_bavarocracy_fail_tt: "[concept_bavarocratic_ire] bylo #v 80#! nebo více po dobu #v 50#! měsíců. V současnosti to platí již #v [GetPlayer.MakeScope.Var('je_bavarocracy_timer_var').GetValue]#! měsíců." # todo: CHANGED
+ je_bavarocracy_reason: "Od svého vzniku v roce 1832 je zrodivší se [ROOT.GetCountry.GetAdjective] království — první skutečně nezávislý řecký stát od dob Konstantina XI. — pod nadvládou [SCOPE.sCharacter('king_otto_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('king_otto_scope').GetFirstName] a jeho bavorských regentů.\n\nPokud si mladý král chce dokázat, že je hoden vládnout Hellenům, bude muset učinit odvážné kroky, aby zvládl [Concept('concept_bavarocratic_ire', '$concept_bavarocratic_ire_short$')] svých nových poddaných."
+ je_bavarocracy_complete_tt: "[concept_bavarocratic_ire] je pod #v 10#!"
+ je_bavarocracy_fail_tt: "[concept_bavarocratic_ire] bylo #v 80#! nebo více po dobu #v 50#! měsíců. V současnosti to platí již #v [GetPlayer.MakeScope.Var('je_bavarocracy_timer_var').GetValue]#! měsíců."
  modifier_foreign_administration: "Zahraniční správa"
  bavarocracy_german_characters_tt: "[GetCulture('south_german').GetName] [Concept('concept_commander','$concept_commanders$')] nebo [Concept('concept_character', '$concept_characters$')] v [concept_in_government]"
  bavarocracy_catholic_ruler_tt: "#bold nemá#! [GetReligion('orthodox').GetName] [concept_ruler]"
@@ -330,7 +330,7 @@
  je_bavarocracy_convert_button_desc: "Ačkoliv je [ROOT.GetCountry.GetName] pevně [GetReligion('orthodox').GetName] země, [SCOPE.sCharacter('king_otto_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('king_otto_scope').GetFirstName] neochvějně lpí na své rodné [GetReligion('catholic').GetName] víře, což vyvolává mezi jeho novými poddanými značné rozhořčení.\n\nPokud má Othonova vláda přetrvat mezi Řeky, možná bude třeba učinit některé osobní oběti?"
  modifier_suspected_crypto_catholic: "Podezření na skrytého katolíka"
  je_bavarocracy_convert_possible: "[SCOPE.sCharacter('king_otto_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('king_otto_scope').GetFirstName] vyznává [GetReligion('catholic').GetName]"
- bavarocracy_progress_bar_decrease_10_tt: "#bold Snižuje#! [concept_bavarocratic_ire] o #variable 10#!" # todo: CHANGED
+ bavarocracy_progress_bar_decrease_10_tt: "#bold Snižuje#! [concept_bavarocratic_ire] o #variable 10#!"
  bavarocracy_progress_bar: "Bavorské rozhořčení"
  bavarocracy_progress_bar_desc: "[concept_bavarocratic_ire]: ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)]/100)"
  bavarocracy_events.1.t: "Civilizační král Helénů"
@@ -368,45 +368,45 @@
  bavarocracy_expell_tt: "#b Král Otto#! a jeho #b bavorští#! rádci půjdou do #b exilu#!"
  bavarocracy_fail_tt: "Pád [SCOPE.sCharacter('king_otto_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('king_otto_scope').GetFirstName] může otevřít #tooltippable #tooltip:bavarocracy_fail_explanation_tt nové politické příležitosti#!#!"
  bavarocracy_fail_explanation_tt: "Konec bavarokracie nám umožní dosadit na trůn #b $DEN_ADJ$#! prince, přijatelného pro [Concept('concept_great_power', '$concept_great_powers$')], nebo založit #b Druhou helénskou republiku#!\n\n#b $FRA$#!, #b $GBR$#! nebo #b $RUS$#!, které nám dluží [concept_obligation], přinutí ignorovat ustanovení #b Londýnské konference z roku 1832#! a dovolí nám zvolit jednoho z jejich princů jako Krále Helénů.\n\nPotenciální zahraniční král přijde s následující [Concept('concept_ideology', '$concept_ideologies$')]:\n• $DEN_ADJ$: [GetIdeology('ideology_reformer').GetName]\n• $GBR_ADJ$: [GetIdeology('ideology_market_liberal').GetName]\n• $RUS_ADJ$: [GetIdeology('ideology_royalist').GetName]\n• $FRA_ADJ$ Oreanisté: [GetIdeology('ideology_market_liberal').GetName]\n• $FRA_ADJ$ Legitimisté: [GetIdeology('ideology_traditionalist').GetName]\n• $FRA_ADJ$ Bonapartisté: [GetIdeology('ideology_jingoist_leader').GetName]"
- je_grunderzeit_fail_header: "Dojde k #b recesi#!, pokud:\n" # todo: NEW TRANSLATION
- je_grunderzeit_on_fail_header: "Pokud #b recese#! nastane:\n$EFFECT$" # todo: NEW TRANSLATION
- grunderzeit_gdp_target_met: "#variable [GetPlayer.MakeScope.ScriptValue('grunderzeit_actual_gdp_script_value')|gK]#!" # todo: NEW TRANSLATION
- grunderzeit_gdp_target_not_met: "#variable [GetPlayer.MakeScope.ScriptValue('grunderzeit_actual_gdp_script_value')|rK]#!" # todo: NEW TRANSLATION
- spooky_halloween_events.4.t: "Prometheánské vize" # todo: NEW TRANSLATION
- spooky_halloween_events.4.d: "Mladý ženevský student jménem [SCOPE.sCharacter('frankenstein_scope').GetFullName] se obrátil na vládu se žádostí o skromné stipendium a pracovní prostor. Na oplátku sebejistě tvrdí, že překoná samu hranici mezi životem a smrtí." # todo: NEW TRANSLATION
- spooky_halloween_events.4.f: ""Pokud lze oživit neživou hmotu, možná by se dal život obnovit tam, kde si smrt vyžádala své. Kolik z vás ztratilo někoho blízkého kvůli nemoci, nebo kvůli kruté ruce člověka? Co kdyby to šlo zvrátit? Nebo co kdyby něco nového mohlo zaujmout jeho místo? Nový druh, který by nás uctíval jako tvůrce a pána."" # todo: NEW TRANSLATION
- spooky_halloween_events.4.a: "Velmi zajímavé. Informujte ho, že má naši podporu." # todo: NEW TRANSLATION
- spooky_halloween_events.4.b: "Pohrdněte tímto nekřesťanským šarlatánem a uložte ho do ústavu." # todo: NEW TRANSLATION
- spooky_halloween_events.4.tt_1: "[SCOPE.sCharacter('frankenstein_scope').GetFullName] byl uvězněn a už o něm nikdy neuslyšíme." # todo: NEW TRANSLATION
- spooky_halloween_events.4.tt_2: "[SCOPE.sCharacter('frankenstein_scope').GetFullName] uteče z místnosti dříve, než k němu stráže dorazí." # todo: NEW TRANSLATION
- spooky_halloween_events.4.tt_3: "Plody experimentů pana [SCOPE.sCharacter('frankenstein_scope').GetLastName] se nám časem odhalí." # todo: NEW TRANSLATION
- modifier_ungodly_experiments: "Bezbožné experimenty" # todo: NEW TRANSLATION
- modifier_experiment_expenses: "Financování nekonvenčního výzkumu" # todo: NEW TRANSLATION
- spooky_halloween_events.5.t: "Bůh a stroj" # todo: NEW TRANSLATION
- spooky_halloween_events.5.d: "[SCOPE.sCharacter('frankenstein_scope').GetFullName]ův výzkum přinesl ovoce. S patrným neklidem popisuje své metody shromážděným představitelům a tvrdí, že je připraven rozšířit svou činnost. Jako důkaz předkládá své první stvoření jako ověření konceptu." # todo: NEW TRANSLATION
- spooky_halloween_events.5.f: ""Obrovské stvoření vtrhne dovnitř, jeho pohyby jsou trhané a křečovité, jako by se poprvé učilo používat končetiny, přesto s vodnatýma, zvědavýma očima, téměř jako oči dítěte.\n\n"Ve jménu Boha! Co to #italic je#?!?"\n\n"Toto, pánové, je budoucnost. #italic homo novus#! v tom nejdoslovnějším smyslu toho slova."" # todo: NEW TRANSLATION
- spooky_halloween_events.5.a: "Jsem si jistý, že pro stvoření takového... kalibru najdeme využití." # todo: NEW TRANSLATION
- spooky_halloween_events.5.b: "Dobře, ale dejte tomu chudákovi společníka." # todo: NEW TRANSLATION
- spooky_halloween_events.5.c: "To už šlo příliš daleko. Okamžitě to vše zastavte!" # todo: NEW TRANSLATION
- spooky_halloween_events.5.tt_1: "Umožní založení #b $company_ingolstadt_electrical_company$#! jako [concept_company]" # todo: NEW TRANSLATION
- modifier_frankenstein_1: "Nadlidské schopnosti" # todo: NEW TRANSLATION
- modifier_frankenstein_2: "Znepokojující obr" # todo: NEW TRANSLATION
- modifier_frankenstein_3: "Zrychlený intelektuální růst" # todo: NEW TRANSLATION
- adam_1_alive_tt: "[SCOPE.sCharacter('adam_1_scope').GetFullName] je #b naživu#!! Je #italic #b naživu#!#!!" # todo: NEW TRANSLATION
- adam_2_alive_tt: "[SCOPE.sCharacter('adam_2_scope').GetFullName] je #b naživu#!! Je #italic #b naživu#!#!!" # todo: NEW TRANSLATION
- spooky_halloween_events.6.t: "Ecce Monstrum" # todo: NEW TRANSLATION
- spooky_halloween_events.6.d: "Vyděšená rostoucí přítomnost [GetCulture('promethean').GetName] v [SCOPE.sState('relevant_state_scope').GetName] vyprovokovala zuřivý dav, který se vyřádil v ulicích [SCOPE.sState('relevant_state_scope').GetCityHubName]. [SCOPE.sCompany('frankenstein_company_scope').GetName] odmítla situaci komentovat." # todo: NEW TRANSLATION
- spooky_halloween_events.6.f: ""Dav obklíčil stvoření u staré fontány, kruh pochodní a vidlí vytvořil hrozivou zeď a uvěznil vysokou bledou postavu uprostřed.\n\n"Zabijte ho! Sražte monstrum!"\n\n"Monstrum? Jak se opovažujete mě nazvat monstrem, vy, kteří bez důvodu a bez slitování pronásledujete mé příbuzné? Jakou škodu jsme vám kdy bez provokace způsobili? Zvednete proti mně ruku a vězte, že vás srazím, ale přesto mě to nedělá víc příšerou než muže, který se brání před zuřivým útokem zločince."" # todo: NEW TRANSLATION
- spooky_halloween_events.6.a: "Dav dělá, co dav dělá." # todo: NEW TRANSLATION
- spooky_halloween_events.6.b: "[SCOPE.sCharacter('frankenstein_executive_scope').GetFullName] and [SCOPE.sCharacter('frankenstein_executive_scope').GetHerHis] společnost musí být pohnána k odpovědnosti." # todo: NEW TRANSLATION
- modifier_widespread_pogroms: "Rozsáhlé pogromy" # todo: NEW TRANSLATION
- modifier_frankestein_blame: "Obviněn z pogromů" # todo: NEW TRANSLATION
- company_ingolstadt_electrical_company: "Frankenstein et Cie., Établ. Électriques d’Ingolstadt" # todo: NEW TRANSLATION
- funded_frankensteins_work_tt: "Financovali jsme výzkum pana Frankensteina" # todo: NEW TRANSLATION
- promethean: "Promethean" # todo: NEW TRANSLATION
- language_group_promethean: "Promethean" # todo: NEW TRANSLATION
- language_promethean: "Promethean" # todo: NEW TRANSLATION
- heritage_group_promethean: "Promethean" # todo: NEW TRANSLATION
- heritage_promethean: "Promethean" # todo: NEW TRANSLATION
- country_frankenstein_company_bool: "Experimentální moduly v provozu" # todo: NEW TRANSLATION
- country_frankenstein_company_bool_desc: "Ze #b Ingolstadt Electrical Factories#! se ozývají podivné zvěsti. Velké bzučivé stroje – jejichž účel nikdo nechce blíže vysvětlit – pracují na plný výkon až do pozdních nočních hodin." # todo: NEW TRANSLATION
+ je_grunderzeit_fail_header: "Dojde k #b recesi#!, pokud:\n"
+ je_grunderzeit_on_fail_header: "Pokud #b recese#! nastane:\n$EFFECT$"
+ grunderzeit_gdp_target_met: "#variable [GetPlayer.MakeScope.ScriptValue('grunderzeit_actual_gdp_script_value')|gK]#!"
+ grunderzeit_gdp_target_not_met: "#variable [GetPlayer.MakeScope.ScriptValue('grunderzeit_actual_gdp_script_value')|rK]#!"
+ spooky_halloween_events.4.t: "Prometheánské vize"
+ spooky_halloween_events.4.d: "Mladý ženevský student jménem [SCOPE.sCharacter('frankenstein_scope').GetFullName] se obrátil na vládu se žádostí o skromné stipendium a pracovní prostor. Na oplátku sebejistě tvrdí, že překoná samu hranici mezi životem a smrtí."
+ spooky_halloween_events.4.f: ""Pokud lze oživit neživou hmotu, možná by se dal život obnovit tam, kde si smrt vyžádala své. Kolik z vás ztratilo někoho blízkého kvůli nemoci, nebo kvůli kruté ruce člověka? Co kdyby to šlo zvrátit? Nebo co kdyby něco nového mohlo zaujmout jeho místo? Nový druh, který by nás uctíval jako tvůrce a pána.""
+ spooky_halloween_events.4.a: "Velmi zajímavé. Informujte ho, že má naši podporu."
+ spooky_halloween_events.4.b: "Pohrdněte tímto nekřesťanským šarlatánem a uložte ho do ústavu."
+ spooky_halloween_events.4.tt_1: "[SCOPE.sCharacter('frankenstein_scope').GetFullName] byl uvězněn a už o něm nikdy neuslyšíme."
+ spooky_halloween_events.4.tt_2: "[SCOPE.sCharacter('frankenstein_scope').GetFullName] uteče z místnosti dříve, než k němu stráže dorazí."
+ spooky_halloween_events.4.tt_3: "Plody experimentů pana [SCOPE.sCharacter('frankenstein_scope').GetLastName] se nám časem odhalí."
+ modifier_ungodly_experiments: "Bezbožné experimenty"
+ modifier_experiment_expenses: "Financování nekonvenčního výzkumu"
+ spooky_halloween_events.5.t: "Bůh a stroj"
+ spooky_halloween_events.5.d: "[SCOPE.sCharacter('frankenstein_scope').GetFullName]ův výzkum přinesl ovoce. S patrným neklidem popisuje své metody shromážděným představitelům a tvrdí, že je připraven rozšířit svou činnost. Jako důkaz předkládá své první stvoření jako ověření konceptu."
+ spooky_halloween_events.5.f: ""Obrovské stvoření vtrhne dovnitř, jeho pohyby jsou trhané a křečovité, jako by se poprvé učilo používat končetiny, přesto s vodnatýma, zvědavýma očima, téměř jako oči dítěte.\n\n"Ve jménu Boha! Co to #italic je#?!?"\n\n"Toto, pánové, je budoucnost. #italic homo novus#! v tom nejdoslovnějším smyslu toho slova.""
+ spooky_halloween_events.5.a: "Jsem si jistý, že pro stvoření takového... kalibru najdeme využití."
+ spooky_halloween_events.5.b: "Dobře, ale dejte tomu chudákovi společníka."
+ spooky_halloween_events.5.c: "To už šlo příliš daleko. Okamžitě to vše zastavte!"
+ spooky_halloween_events.5.tt_1: "Umožní založení #b $company_ingolstadt_electrical_company$#! jako [concept_company]"
+ modifier_frankenstein_1: "Nadlidské schopnosti"
+ modifier_frankenstein_2: "Znepokojující obr"
+ modifier_frankenstein_3: "Zrychlený intelektuální růst"
+ adam_1_alive_tt: "[SCOPE.sCharacter('adam_1_scope').GetFullName] je #b naživu#!! Je #italic #b naživu#!#!!"
+ adam_2_alive_tt: "[SCOPE.sCharacter('adam_2_scope').GetFullName] je #b naživu#!! Je #italic #b naživu#!#!!"
+ spooky_halloween_events.6.t: "Ecce Monstrum"
+ spooky_halloween_events.6.d: "Vyděšená rostoucí přítomnost [GetCulture('promethean').GetName] v [SCOPE.sState('relevant_state_scope').GetName] vyprovokovala zuřivý dav, který se vyřádil v ulicích [SCOPE.sState('relevant_state_scope').GetCityHubName]. [SCOPE.sCompany('frankenstein_company_scope').GetName] odmítla situaci komentovat."
+ spooky_halloween_events.6.f: ""Dav obklíčil stvoření u staré fontány, kruh pochodní a vidlí vytvořil hrozivou zeď a uvěznil vysokou bledou postavu uprostřed.\n\n"Zabijte ho! Sražte monstrum!"\n\n"Monstrum? Jak se opovažujete mě nazvat monstrem, vy, kteří bez důvodu a bez slitování pronásledujete mé příbuzné? Jakou škodu jsme vám kdy bez provokace způsobili? Zvednete proti mně ruku a vězte, že vás srazím, ale přesto mě to nedělá víc příšerou než muže, který se brání před zuřivým útokem zločince.""
+ spooky_halloween_events.6.a: "Dav dělá, co dav dělá."
+ spooky_halloween_events.6.b: "[SCOPE.sCharacter('frankenstein_executive_scope').GetFullName] and [SCOPE.sCharacter('frankenstein_executive_scope').GetHerHis] společnost musí být pohnána k odpovědnosti."
+ modifier_widespread_pogroms: "Rozsáhlé pogromy"
+ modifier_frankestein_blame: "Obviněn z pogromů"
+ company_ingolstadt_electrical_company: "Frankenstein et Cie., Établ. Électriques d’Ingolstadt"
+ funded_frankensteins_work_tt: "Financovali jsme výzkum pana Frankensteina"
+ promethean: "Promethean"
+ language_group_promethean: "Promethean"
+ language_promethean: "Promethean"
+ heritage_group_promethean: "Promethean"
+ heritage_promethean: "Promethean"
+ country_frankenstein_company_bool: "Experimentální moduly v provozu"
+ country_frankenstein_company_bool_desc: "Ze #b Ingolstadt Electrical Factories#! se ozývají podivné zvěsti. Velké bzučivé stroje – jejichž účel nikdo nechce blíže vysvětlit – pracují na plný výkon až do pozdních nočních hodin."
