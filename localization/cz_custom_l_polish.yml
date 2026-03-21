@@ -1,2 +1,10 @@
 ﻿l_polish:
  CZ_SPLIT_STATE_OWNER: "[AddTextIf(EqualTo_string('Anhaltsko', '$REGION$'), ConcatIfNeitherEmpty(State.GetOwner.GetAltAdjectiveNoFormatting('ee'), ' '))][AddTextIf(EqualTo_string('Kongo', '$REGION$'), ConcatIfNeitherEmpty(State.GetOwner.GetAltAdjectiveNoFormatting('ee'), ' '))][AddTextIf(EqualTo_string('Senegal', '$REGION$'), ConcatIfNeitherEmpty(State.GetOwner.GetAltAdjectiveNoFormatting('yy'), ' '))][AddTextIf(EqualTo_string('Smluvní pobřeží', '$REGION$'), ConcatIfNeitherEmpty(State.GetOwner.GetAltAdjectiveNoFormatting('ee'), ' '))][AddTextIf(EqualTo_string('Hail', '$REGION$'), ConcatIfNeitherEmpty(State.GetOwner.GetAltAdjectiveNoFormatting('yy'), ' '))][AddTextIf(EqualTo_string('Adana', '$REGION$'), ConcatIfNeitherEmpty(State.GetOwner.GetAltAdjectiveNoFormatting('aa'), ' '))][AddTextIf(EqualTo_string('Jemen', '$REGION$'), ConcatIfNeitherEmpty(State.GetOwner.GetAltAdjectiveNoFormatting('yy'), ' '))][AddTextIf(EqualTo_string('Guatemala', '$REGION$'), ConcatIfNeitherEmpty(State.GetOwner.GetAltAdjectiveNoFormatting('aa'), ' '))]"
+
+ CZ_FOR_SINGLE_ARMY: "vybranou [Concept('concept_army', 'armádu')]"
+ CZ_FOR_MORE_ARMY: "vybrané [Concept('concept_army', 'armády')]"
+ CZ_FOR_OTHER_ARMY: "vybraných [Concept('concept_army', 'armád')]"
+
+ CZ_SINGLE_BATALION: "[Concept('concept_battalion', 'prapor')]"
+ CZ_MORE_BATALION: "[Concept('concept_battalion', 'prapory')]"
+ CZ_OTHER_BATALION: "[Concept('concept_battalion', 'praporů')]"

@@ -226,7 +226,7 @@
  je_divided_monarchists: "Rozdělení monarchisté"
  je_divided_monarchists_01_fail_tt: "Dokončeno #BOLD Vykoupení monarchismu#! [concept_journal_entry]."
  je_divided_monarchists_02_fail_2_tt: "Nepodporujeme aktivně dům [SCOPE.GetRootScope.GetCountry.GetCustom('french_dynasty')] jako jedinou pravou francouzskou dynastii"
- je_divided_monarchists_02_fail_tt: "Monarcha z vnějšího domu [SCOPE.GetRootScope.GetCountry.GetCustom('french_dynasty')] sedí na trůně"
+ je_divided_monarchists_02_fail_tt: "Monarcha z vnějšího rodu [SCOPE.GetRootScope.GetCountry.GetCustom('french_dynasty')] sedí na trůně"
  je_divided_monarchists_02_tt: "Jedna ze tří soupeřících dynastií upevnila svou vládu nad Francií."
  je_divided_monarchists_03_tt: "#bold Vedoucí dynastická ideologie#! bude mít událost, aby umístila svého vlastního kandidáta na francouzský trůn."
  je_divided_monarchists_bonapartist_var_tooltip: "#tooltip_header Změny měsíčně z následujících důvodů:#!\n$TOOLTIP_DELIMITER$\n#variable [Country.MakeScope.Var('bonapartist_progress_from_characters').GetValue|+=]#! z kombinované [concept_popularity] postav bonapartistů\n#variable [Country.MakeScope.Var('bonapartist_progress_from_igs').GetValue|+=]#! z [concept_clout] bonapartistických [Concept('concept_interest_group', '$concept_interest_groups$')]\n#variable [Country.MakeScope.Var('bonapartist_progress_from_military').GetValue|+=]#! z vojenských [Concept('concept_building_level', '$concept_building_levels$')]\n#variable [Country.MakeScope.Var('bonapartist_progress_from_legitimacy').GetValue|+=]#! z [concept_government] [concept_legitimacy]\n#variable [Country.MakeScope.Var('bonapartist_progress_from_effects').GetValue|+=]#! z událostí a dalších efektů"
