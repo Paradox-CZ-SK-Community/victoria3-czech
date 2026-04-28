@@ -478,7 +478,6 @@
   CHANGE_TAG: "[COUNTRY.GetName] se stává $NEW_TAG|v$"
   CHANGE_TAG_FIRST: "[COUNTRY.GetNameNoFlag] se stává $NEW_TAG|v$"
   CHANGE_TAG_THIRD: "[COUNTRY.GetNameNoFlag] se stává $NEW_TAG|v$"
-  ADD_DECLARED_INTEREST: "Přidává [concept_declared_interest|l] na $REGION_NAME|v$"
   CHANGE_SUBJECT_TYPE: "Stává se [SUBJECT_TYPE.GetName] [Country.GetOverlord.GetName]"
   PARTIES_EMERGENCE: "To způsobí vznik stran."
   PARTIES_DISAPPEARENCE: "To způsobí zmizení stran."
@@ -601,8 +600,6 @@
   ADD_LEVERAGE_FIRST_NEG: "[POWER_BLOC.GetName] ztrácí #negative_value $VALUE$#! [concept_power_bloc_leverage|l] v [TARGET_COUNTRY.GetAltAdjective('G')]"
   ADD_LEVERAGE_THIRD: "[POWER_BLOC.GetName] získává #positive_value $VALUE$#! [concept_power_bloc_leverage|l] v [TARGET_COUNTRY.GetAltAdjective('G')]"
   ADD_LEVERAGE_THIRD_NEG: "[POWER_BLOC.GetName] ztrácí #negative_value $VALUE$#! [concept_power_bloc_leverage|l] v [TARGET_COUNTRY.GetAltAdjective('G')]"
-  TRANSFER_TO_FORMATION_GLOBAL: "[concept_commander] je převeden do nové [concept_military_formation|l]"
-  TRANSFER_TO_FORMATION_THIRD: "[CHARACTER.GetFullName] je převeden do [TARGET_MILITARY_FORMATION.GetName]"
   DEPLOY_TO_FRONT_THIRD: "[MILITARY_FORMATION.GetName] je nasazen na [TARGET_FRONT.GetName]"
   DEPLOY_TO_FRONT_GLOBAL: "[concept_military_formation] je nasazen do [concept_front|l]"
   INCREASE_AUTONOMY: "[concept_autonomy] se zvyšuje na $SUBJECT_TYPE.GetName$"
@@ -665,3 +662,64 @@
   SET_ELECTORAL_CONFIDENCE: "[concept_electoral_confidence] je nastavena na #variable $VALUE|0%$#!"
   SET_ELECTORAL_CONFIDENCE_FIRST: "[COUNTRY.GetAltAdjectiveNoFlag('aa')] [concept_electoral_confidence|l] je nastavena na #variable $VALUE|0%$#!"
   SET_ELECTORAL_CONFIDENCE_THIRD: "[COUNTRY.GetAltAdjective('aa')] [concept_electoral_confidence|l] je nastavena na #variable $VALUE|0%$#!"
+  ADD_CULTURAL_TABOO_GLOBAL: "[GOODS.GetName] je nyní považováno za [concept_taboo]" # todo: NEW TRANSLATION
+  ADD_CULTURAL_TABOO_THIRD: "[CULTURE.GetName] bude nyní považovat [GOODS.GetName] za [concept_taboo]" # todo: NEW TRANSLATION
+  REMOVE_CULTURAL_TABOO_GLOBAL: "[GOODS.GetName] již není považováno za [concept_taboo]" # todo: NEW TRANSLATION
+  REMOVE_CULTURAL_TABOO_THIRD: "[CULTURE.GetName] již nebude považovat [GOODS.GetName] za [concept_taboo]" # todo: NEW TRANSLATION
+  SET_NAME_FORMAT: "[CULTURE.GetName] mění formát jmen" # todo: NEW TRANSLATION
+  SET_NAME_FORMAT_GLOBAL: "Mění formát jmen" # todo: NEW TRANSLATION
+  ADD_INVOLVEMENT: "[Country.GetName] získává $VALUE|+v0$ [concept_involvement] v [StrategicRegion.GetName]" # todo: NEW TRANSLATION
+  ADD_INVOLVEMENT_FIRST: "[Country.GetNameNoFlag] získává $VALUE|+v0$ [concept_involvement] v [StrategicRegion.GetName]" # todo: NEW TRANSLATION
+  ADD_INVOLVEMENT_THIRD: "[Country.GetName] získává $VALUE|+v0$ [concept_involvement] v [StrategicRegion.GetName]" # todo: NEW TRANSLATION
+  SET_AS_ADULT: "[CHARACTER.GetFullName] se stává dospělým" # todo: NEW TRANSLATION
+  SET_AS_ADULT_NEG: "[CHARACTER.GetFullName] se nestává dospělým" # todo: NEW TRANSLATION
+  SET_AS_ADULT_GLOBAL: "Stává se dospělým" # todo: NEW TRANSLATION
+  SET_AS_ADULT_GLOBAL_NEG: "Nestane se dospělým" # todo: NEW TRANSLATION
+  SET_IS_NOBLE: "[CHARACTER.GetFullName] se stává šlechticem" # todo: NEW TRANSLATION
+  SET_IS_NOBLE_NEG: "[CHARACTER.GetFullName] už není šlechticem" # todo: NEW TRANSLATION
+  SET_IS_NOBLE_GLOBAL: "Stává se šlechticem" # todo: NEW TRANSLATION
+  SET_IS_NOBLE_GLOBAL_NEG: "Už není šlechticem" # todo: NEW TRANSLATION
+  ADD_ARABLE_LAND_POSITIVE_EFFECT_THIRD: "[STATE_REGION.GetName] získává $VALUE|+0$ [concept_arable_land]" # todo: NEW TRANSLATION
+  ADD_ARABLE_LAND_NEGATIVE_EFFECT_THIRD: "[STATE_REGION.GetName] ztrácí $VALUE|-0$ [concept_arable_land]" # todo: NEW TRANSLATION
+  START_HARVEST_CONDITION_WITH_PARAMS_GLOBAL: "Spustit [HARVEST_CONDITION_TYPE.GetName] v [STATE_REGION.GetName]" # todo: NEW TRANSLATION
+  START_HARVEST_CONDITION_WITH_PARAMS: "Spustit [HARVEST_CONDITION_TYPE.GetName] v [STATE_REGION.GetName]" # todo: NEW TRANSLATION
+  ADD_RESOURCE_POTENTIAL_GLOBAL: "Zdroj [BUILDING_TYPE.GetName] je nyní dostupný" # todo: NEW TRANSLATION
+  ADD_RESOURCE_POTENTIAL: "Zdroj [BUILDING_TYPE.GetName] je nyní dostupný v [STATE_REGION.GetName]" # todo: NEW TRANSLATION
+  REMOVE_RESOURCE_POTENTIAL_GLOBAL: "Zdroj [BUILDING_TYPE.GetName] již není dostupný" # todo: NEW TRANSLATION
+  REMOVE_RESOURCE_POTENTIAL: "Zdroj [BUILDING_TYPE.GetName] již není dostupný v [STATE_REGION.GetName]" # todo: NEW TRANSLATION
+  CHANGE_RESOURCE_POTENTIAL_GLOBAL: "Potenciál zdroje [BUILDING_TYPE.GetName] se změní o $VALUE|+=v$" # todo: NEW TRANSLATION
+  CHANGE_RESOURCE_POTENTIAL: "Potenciál zdroje [BUILDING_TYPE.GetName] v [STATE_REGION.GetName] se změní o $VALUE|+=v$" # todo: NEW TRANSLATION
+  SET_HOME_STATE: "[Character.GetFullName] mění své [concept_home_state] na [TARGET_STATE.GetName]" # todo: NEW TRANSLATION
+  SET_FIRST_NAME_FIRST: "Křestní jméno se mění na $NAME|v$" # todo: NEW TRANSLATION
+  SET_FIRST_NAME_GLOBAL: "[CHARACTER.GetFullName] mění své křestní jméno na $NAME|v$" # todo: NEW TRANSLATION
+  SET_LAST_NAME_FIRST: "Příjmení se mění na $NAME|v$" # todo: NEW TRANSLATION
+  SET_LAST_NAME_GLOBAL: "[CHARACTER.GetFullName] mění své příjmení na $NAME|v$" # todo: NEW TRANSLATION
+  SET_CAREER_LENGTH_THIRD: "[CHARACTER.GetFullName] bude sloužit jako $ROLE$ do $DATE|v$" # todo: NEW TRANSLATION
+  SET_CAREER_LENGTH_GLOBAL: "Působení jako $ROLE$ nastaveno do $DATE|v$" # todo: NEW TRANSLATION
+  ADD_CAREER_LENGTH_THIRD: "[CHARACTER.GetFullName] má prodlouženo působení jako $ROLE$ do $DATE|v$" # todo: NEW TRANSLATION
+  ADD_CAREER_LENGTH_GLOBAL: "Působení jako $ROLE$ prodlouženo do $DATE|v$" # todo: NEW TRANSLATION
+  ALL_ROLES: "všechny role" # todo: NEW TRANSLATION
+  EFFECT_UNASSIGN_FROM_FORMATION_THIRD: "[CHARACTER.GetFullName] je odvolán ze svého [concept_military_formation]" # todo: NEW TRANSLATION
+  EFFECT_UNASSIGN_FROM_FORMATION_GLOBAL: "Velitel je odvolán ze svého [concept_military_formation]" # todo: NEW TRANSLATION
+  IMPROVE_STANCE_GLOBAL_NEG: "Skupina zájmů [concept_interest_group] dočasně zaujme méně příznivý postoj k právě schvalovanému [concept_law]" # todo: NEW TRANSLATION
+  IMPROVE_STANCE_THIRD_NEG: "[INTEREST_GROUP.GetName] dočasně zaujme méně příznivý postoj k právě schvalovanému [concept_law]" # todo: NEW TRANSLATION
+  EFFECT_KILL_SHIP: "Jeden [concept_ship] je zničen" # todo: NEW TRANSLATION
+  EFFECT_KILL_SHIP_THIRD: "[SHIP.GetName] je zničen" # todo: NEW TRANSLATION
+  EFFECT_DAMAGE_SHIP: "Jeden [concept_ship] utrpí $VALUE|0v$ poškození" # todo: NEW TRANSLATION
+  EFFECT_DAMAGE_SHIP_THIRD: "[SHIP.GetName] utrpí $VALUE|0v$ poškození" # todo: NEW TRANSLATION
+  EFFECT_DAMAGE_SHIP_PERCENT: "Jeden [concept_ship] utrpí $VALUE|0v%$ poškození" # todo: NEW TRANSLATION
+  EFFECT_DAMAGE_SHIP_PERCENT_THIRD: "[SHIP.GetName] utrpí $VALUE|0%v$ poškození" # todo: NEW TRANSLATION
+  EFFECT_KILL_CREW: "$VALUE|0v$ členů posádky [concept_ship] je zabito" # todo: NEW TRANSLATION
+  EFFECT_KILL_CREW_THIRD: "$VALUE|0v$ členů posádky lodi [SHIP.GetName] je zabito" # todo: NEW TRANSLATION
+  EFFECT_KILL_CREW_PERCENT: "$VALUE|0v%$ členů posádky [concept_ship] je zabito" # todo: NEW TRANSLATION
+  EFFECT_KILL_CREW_PERCENT_THIRD: "$VALUE|0v%$ členů posádky lodi @ships! [SHIP.GetName] je zabito" # todo: NEW TRANSLATION
+  EFFECT_SET_SHIP_OWNER: "[TARGET_COUNTRY.GetName] se stává vlastníkem lodi @ships! [SHIP.GetName]" # todo: NEW TRANSLATION
+  EFFECT_SET_SHIP_OWNER_MULTIPLE: "$EFFECT_SET_SHIP_OWNER$" # todo: NEW TRANSLATION
+  EFFECT_SET_AS_FLAGSHIP: "[Ship.GetName] #p becomes#! [concept_flagship] země [Ship.GetCountry.GetName]" # todo: NEW TRANSLATION
+  EFFECT_SET_AS_FLAGSHIP_NEG: "[Ship.GetName] is #n no longer#! [concept_flagship] země [Ship.GetCountry.GetName]" # todo: NEW TRANSLATION
+  ENABLE_TEMPORARY_HOSTILITIES: "Vstupuje do stavu dočasných nepřátelství s [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
+  ENABLE_TEMPORARY_HOSTILITIES_FIRST: "[COUNTRY.GetNameNoFlag] vstupuje do stavu dočasných nepřátelství s [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
+  ENABLE_TEMPORARY_HOSTILITIES_THIRD: "[COUNTRY.GetName] vstupuje do stavu dočasných nepřátelství s [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
+  DISABLE_TEMPORARY_HOSTILITIES: "Ukončuje stav dočasných nepřátelství s [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
+  DISABLE_TEMPORARY_HOSTILITIES_FIRST: "[COUNTRY.GetNameNoFlag] ukončuje stav dočasných nepřátelství s [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
+  DISABLE_TEMPORARY_HOSTILITIES_THIRD: "[COUNTRY.GetName] ukončuje stav dočasných nepřátelství s [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION

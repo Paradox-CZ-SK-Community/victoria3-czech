@@ -143,8 +143,6 @@
   battle_combat_width_mult_desc: "Bonus nebo penalizace pro [Concept('concept_combat_width','šířku bojiště')] na této straně [Concept('concept_battle','bitvy')]"
   battle_total_combat_width_mult: "Celková [concept_combat_width]"
   battle_total_combat_width_mult_desc: "Bonus nebo penalizace k celkové [concept_combat_width] pro tuto stranu [concept_battle]"
-  character_supply_route_cost_mult: "Náklady na [Concept('concept_supply_route','zásobovací trasu')]"
-  character_supply_route_cost_mult_desc: "Kolik konvojů je potřeba na zásobování jednotek"
   state_conscription_rate_add: "Míra odvodů"
   state_conscription_rate_add_desc: "Podíl [concept_workforce], který jsou [Concept('concept_potential_battalions','$concept_potential_conscripts$')]"
   state_conscription_rate_mult: "Povolatelné prapory"
@@ -237,8 +235,6 @@
   character_command_limit_combat_unit_regular_add_desc: "Počet [Concept('concept_unit','vojenských jednotek')] kterým tato [concept_character|l] může velit.\n\n$concept_command_limit_desc$"
   character_command_limit_combat_unit_conscript_add: "Limit velení u odvedeného pluku"
   character_command_limit_combat_unit_conscript_add_desc: "Počet [Concept('concept_unit','vojenských jednotek')] kterým tato [concept_character|l] může velit.\n\n$concept_command_limit_desc$"
-  character_command_limit_combat_unit_flotilla_add: "Limita příkazu flotily"
-  character_command_limit_combat_unit_flotilla_add_desc: "$character_command_limit_combat_unit_regular_add_desc$"
   character_command_limit_add: "$concept_command_limit$"
   character_command_limit_add_desc: "$concept_command_limit_desc$"
   character_command_limit_mult: "Limit příkazů"
@@ -250,10 +246,6 @@
   building_economy_of_scale_level_cap_add_desc: "Maximální počet úrovní [Concept('concept_building','budov')], které mohou přinést efekty [concept_economy_of_scale|l]."
   country_prestige_add: "Prestíž"
   country_prestige_add_desc: "Kolik [Concept('concept_prestige','prestiže')] má země."
-  country_max_declared_interests_add: "Maximální deklarované zájmy"
-  country_max_declared_interests_add_desc: "Zvýšení nebo snížení počtu [Concept('concept_interest', 'zájmů')] které může země deklarovat mimo své kontrolované území"
-  country_max_declared_interests_mult: "$country_max_declared_interests_add$"
-  country_max_declared_interests_mult_desc: "$country_max_declared_interests_add_desc$"
   country_prestige_mult: "Prestíž"
   country_prestige_mult_desc: "Kolik [Concept('concept_prestige','prestiže')] má země."
   country_bureaucracy_add: "@bur![Nbsp][concept_bureaucracy]"
@@ -466,8 +458,6 @@
   commander_battle_end_loss_desc: "Účinky [Concept('concept_commander','velitele')] ztrátou [Concept('concept_battle','bitev')]"
   opposition_agitator_popularity: "[Concept('concept_popularity','Popularita')] [Concept('concept_agitator', 'agitátorů')] [Concept('concept_in_opposition','v opozici')]"
   opposition_agitator_popularity_desc: "Účinky na [Concept('concept_popularity','popularitu')] [Concept('concept_agitator', 'agitátořů')] patřících do [Concept('concept_interest_group','zájmové skupiny')] [Concept('concept_in_opposition','v opozici')]"
-  low_organization: "Nízká [concept_organization|l]"
-  low_organization_desc: "Dopady na [Concept('concept_military_formation','formaci')] z toho, že má [Concept('concept_organization','organizaci')] pod maximem [GetDefine('NMilitary','MILITARY_FORMATION_ORGANIZATION_MAX')|v0]"
   blockaded: "Pod blokádou"
   blockaded_desc: "Efekt na [Concept('concept_state','stát')] když je pod [Concept('concept_blockade', 'blokádou')] nepřátelské flotily"
   low_command_limit: "Nízký [concept_command_limit|l]"
@@ -711,8 +701,6 @@
   state_building_barrack_max_level_add_desc: "Bonus nebo penalizace k maximální úrovni budov $building_barrack$."
   state_building_conscription_center_max_level_add: "Maximální limit odvodů"
   state_building_conscription_center_max_level_add_desc: "Bonus nebo penalizace k absolutnímu maximálnímu počtu povolaných [Concept('concept_battalion','praporů')] z jednoho [Concept('concept_state','státu')], bez ohledu na míru odvodů."
-  state_building_naval_base_max_level_add: "Max Úroveň námořních základní"
-  state_building_naval_base_max_level_add_desc: "Bonus nebo penalizace k maximální úrovni námořních základní."
   state_colony_growth_creation_factor: "Generace kolonialního růstu"
   state_colony_growth_creation_factor_desc: "Množství koloniálního růstu generovaného [Concept('concept_pop', '$concept_pops$')] z [Concept('concept_incorporated_state', '$concept_incorporated_states$')]."
   state_colony_growth_speed_mult: "Rychlost růstu kolonií"
@@ -1179,9 +1167,7 @@
   building_group_bg_ranching_farmers_mortality_mult_desc: "Zvýšení nebo snížení $building_group_bg_ranching_farmers_mortality_mult$"
   building_group_bg_plantations_laborers_mortality_mult: "[Concept('concept_pop_growth', '$concept_pop_growth_mortality$')] @laborers! dělníků zaměstnaných na plantážích"
   building_group_bg_rubber_laborers_mortality_mult: "[Concept('concept_pop_growth', '$concept_pop_growth_mortality$')] @laborers! dělníků zaměstnaných na plantážích kaučuku"
-  building_group_bg_rubber_laborers_mortality_mult_desc: "Zvýšení nebo snížení $building_group_bg_rubber_laborers_mortality_mult$"
   building_group_bg_rubber_slaves_mortality_mult: "[Concept('concept_pop_growth', '$concept_pop_growth_mortality$')] @slaves! otroků zaměstnaných na plantážích kaučuku"
-  building_group_bg_rubber_slaves_mortality_mult_desc: "Zvýšení nebo snížení $building_group_bg_rubber_slaves_mortality_mult$"
   building_group_bg_plantations_laborers_mortality_mult_desc: "Zvýšení nebo snížení $building_group_bg_plantations_laborers_mortality_mult$"
   building_group_bg_plantations_smallholders_mortality_mult: "[Concept('concept_pop_growth', '$concept_pop_growth_mortality$')] velkostatkářů zaměstnaných na plantážích"
   building_group_bg_plantations_smallholders_mortality_mult_desc: "Zvýšení nebo snížení $building_group_bg_plantations_smallholders_mortality_mult$"
@@ -1659,7 +1645,7 @@
   goods_input_ammunition_add_desc: "Množství @ammunition! munice spotřebované budovami"
   goods_input_artillery_add: "@artillery! vstup dělostřelectva"
   goods_input_artillery_add_desc: "Množství @artillery! dělostřelectva spotřebovaného budovami"
-  goods_input_small_arms_add: "@small_arms! vstup mlaých zbraní"
+  goods_input_small_arms_add: "@small_arms! vstup malých zbraní"
   goods_input_small_arms_add_desc: "Množství @small_arms! malých zbraní spotřebovaných budovami"
   goods_input_clothes_add: "@clothes! vstup oděvů"
   goods_input_clothes_add_desc: "Množství @clothes! oblečení spotřebovaného budovami"
@@ -1863,8 +1849,6 @@
   building_banana_plantation_throughput_add_desc: "Bonus nebo penalizace k vstupu a výstupu banánových plantáží"
   building_barrack_throughput_add: "$building_barrack$ [concept_throughput] budovy"
   building_barrack_throughput_add_desc: "Bonus nebo penalizace k vstupu i výstupu $building_barrack$"
-  building_naval_base_throughput_add: "[concept_throughput] námořních základní"
-  building_naval_base_throughput_add_desc: "Bonus nebo penalizace k vstupu a výstupu námorních základní"
   building_urban_center_throughput_add: "[concept_throughput] městských center"
   building_urban_center_throughput_add_desc: "Bonus nebo penalizace k vstupu a výstupu městských center"
   building_construction_sector_throughput_add: "[concept_throughput] stavebních sektorů"
@@ -2140,8 +2124,6 @@
   country_enactment_success_chance_law_anarchy_add_desc: "Přímé zvýšení v proc. bodech pravděpodobnosti schválení konkrétního zákona"
   country_enactment_success_chance_law_single_party_state_add: "[concept_enactment_success] šance pro [GetLawType('law_single_party_state').GetName]"
   country_enactment_success_chance_law_single_party_state_add_desc: "Přímé zvýšení v proc. bodech pravděpodobnosti schválení konkrétního zákona"
-  country_convoy_contribution_to_market_owner_add: "@convoys![Nbsp][concept_convoys] přínos [Concept('concept_market_owner','majiteli trhu')]"
-  country_convoy_contribution_to_market_owner_add_desc: "Procento @convoys![Nbsp][Concept('concept_convoys','Konvojů')], které člen [Concept('concept_customs_union','celní unie')] musí přispět [Concept('concept_market_owner','majiteli trhu')]"
   country_enactment_time_law_technocracy_mult: "Čas uplatnění pro [GetLawType('law_technocracy').GetName]"
   country_enactment_time_law_technocracy_mult_desc: "Snížení nebo zvýšení doby potřebné pro legislativní přijetí konkrétního zákona"
   country_enactment_time_law_public_schools_mult: "Čas na uvalení pro [GetLawType('law_public_schools').GetName]"
@@ -2343,14 +2325,8 @@
   country_secession_progress_add_desc: "$country_secession_progress_mult_desc$"
   modifier_failed_expedition: "Neúspěšná expedice"
   modifier_failed_expedition_desc: "Tato země nedávno neuspěla v expedici."
-  country_convoys_capacity_add: "@convoys! [concept_convoys]"
-  country_convoys_capacity_add_desc: "$concept_convoys_desc$"
-  country_convoys_capacity_mult: "$country_convoys_capacity_add$"
-  country_convoys_capacity_mult_desc: "$concept_convoys_desc$"
   country_convoy_damage_taken_mult: "Obdržené poškození konvojů"
   country_convoy_damage_taken_mult_desc: "Bonus nebo penalizace jak moc poškození utrpí [Concept('concept_convoys','konvoje')] [Concept('concept_country','země')] z [Concept('concept_raid_convoys', 'útoků na ně')]"
-  modifier_country_convoys_capacity_add_pre_fix: "@convoys!"
-  modifier_country_convoys_capacity_mult_pre_fix: "$modifier_country_convoys_capacity_add_pre_fix$"
   country_max_companies_add: "Maximální počet [Concept('concept_company','společností')]"
   country_max_companies_add_desc: "Počet [Concept('concept_company','společností')], které může [Concept('concept_country','země')] založit"
   country_company_throughput_bonus_add: "Bonus na průtok podniku"
@@ -2446,8 +2422,6 @@
   political_movement_agitator_attraction_mult_desc: "Zvýšení nebo snížení přitažlivosti pro [Concept('concept_agitators', 'agitátory')] k připojení se k [Concept('concept_political_movement','politickým hnutím')]."
   political_movement_radicalism_add: "Politická aktivita hnutí"
   political_movement_radicalism_add_desc: "Zvýšení nebo snížení [Concept('concept_activism','aktivizmu hnutí')]"
-  political_movement_radicalism_mult: "$political_movement_radicalism_add$"
-  political_movement_radicalism_mult_desc: "$political_movement_radicalism_add_desc$"
   state_pop_support_movement_pro_slavery_add: "Přitažlivost [Concept('concept_pop','populace')] k pro-otrokářskému hnutí"
   state_pop_support_movement_pro_slavery_add_desc: "$political_movement_pop_attraction_mult_desc$"
   state_pop_support_movement_pro_slavery_mult: "$state_pop_support_movement_pro_slavery_add$"
@@ -2640,10 +2614,6 @@
   unit_defense_water_add_desc: "$unit_defense_add_desc$ v $label_water_desc$"
   unit_defense_water_mult: "$unit_defense_mult$ ve $label_water_desc$"
   unit_defense_water_mult_desc: "$unit_defense_add_desc$ ve $label_water_desc$"
-  unit_blockade_add: "Síla [Concept('concept_blockade','blokády')|l]"
-  unit_blockade_add_desc: "Schopnost [Concept('concept_unit','jednotek')] uvalit [Concept('concept_blockade', 'blokádu')] na nepřítelský přístav"
-  unit_blockade_mult: "$unit_blockade_add$"
-  unit_blockade_mult_desc: "$unit_blockade_add_desc$"
   unit_offense_add: "[concept_offense]"
   unit_offense_add_desc: "[concept_offense] [Concept('concept_unit','$concept_unit_possessive$')|l]"
   unit_defense_add: "[concept_defense]"
@@ -2660,32 +2630,16 @@
   unit_army_offense_mult_desc: "$unit_offense_mult_desc$ (pouze armáda)"
   unit_army_defense_mult: "$unit_defense_mult$ armády"
   unit_army_defense_mult_desc: "$unit_defense_mult_desc$ (pouze armáda)"
-  unit_navy_offense_add: "$unit_offense_add$ námořnictva"
-  unit_navy_offense_add_desc: "$unit_offense_add_desc$ (pouze námořnictvo)"
-  unit_navy_defense_add: "$unit_defense_add$ námořnictva"
-  unit_navy_defense_add_desc: "$unit_defense_add_desc$ (pouze námořnictvo)"
-  unit_navy_offense_mult: "$unit_offense_mult$ námořnictva"
-  unit_navy_offense_mult_desc: "$unit_offense_mult_desc$ (pouze námořnictvo)"
-  unit_navy_defense_mult: "$unit_defense_mult$ námořnictva"
-  unit_navy_defense_mult_desc: "$unit_defense_mult_desc$ (pouze námořnictvo)"
   battle_army_offense: "$unit_army_offense_add$"
   battle_army_offense_desc: "$unit_army_offense_add_desc$"
-  battle_navy_offense: "$unit_navy_offense_add$"
-  battle_navy_offense_desc: "$unit_navy_offense_add_desc$"
   battle_army_defense: "$unit_army_defense_add$"
   battle_army_defense_desc: "$unit_army_defense_add_desc$"
-  battle_navy_defense: "$unit_navy_defense_add$"
-  battle_navy_defense_desc: "$unit_navy_defense_add_desc$"
   unit_combat_unit_type_siege_artillery_offense_mult: "$unit_offense_mult$ obléhacího dělostřelectva"
   unit_combat_unit_type_siege_artillery_offense_mult_desc: "$unit_offense_mult$ obléhacího dělostřelectva"
   unit_combat_unit_type_shrapnel_artillery_offense_mult: "$unit_offense_mult$ šrapnelové artilerie"
   unit_combat_unit_type_shrapnel_artillery_offense_mult_desc: "$unit_offense_mult$ šrapnelové artilerie"
-  unit_combat_unit_type_submarine_offense_mult: "$unit_offense_mult$ ponorek"
-  unit_combat_unit_type_submarine_offense_mult_desc: "$unit_offense_mult$ ponorek"
   unit_combat_unit_type_heavy_tank_offense_mult: "$unit_offense_mult$ těžkých tanků"
   unit_combat_unit_type_heavy_tank_offense_mult_desc: "$unit_offense_mult$ těžkých tanků"
-  unit_combat_unit_type_carrier_offense_mult: "$unit_offense_mult$ letadlové lodě"
-  unit_combat_unit_type_carrier_offense_mult_desc: "$unit_offense_mult$ letadlové lodě"
   unit_combat_unit_type_cannon_artillery_offense_mult: "$unit_offense_mult$ dělostreleckých kanónů"
   unit_combat_unit_type_cannon_artillery_offense_mult_desc: "$unit_offense_mult$ dělostreleckých kanónů"
   unit_combat_unit_type_mobile_artillery_offense_mult: "$unit_offense_mult$ mobilního dělostřelectva"
@@ -2722,12 +2676,6 @@
   unit_advancement_speed_mult_desc: "Upravit [concept_advancement_speed|l] na [Concept('concept_front','frontě')]"
   unit_convoy_requirements_mult: "[concept_convoys] požadavek"
   unit_convoy_requirements_mult_desc: "Kolik [Concept('concept_convoys','konvojů')] je potřeba k udržení [Concept('concept_supply','zásobovaní')] [Concept('concept_unit','jednotek')] v zahraničí"
-  unit_convoy_raiding_mult: "Účinnost útočení na konvoje"
-  unit_convoy_raiding_mult_desc: "Zvýšení nebo snížení účinnosti naší [Concept('concept_flotilla','flotily')] pro [Concept('concept_raid_convoys','napádání konvojů')]."
-  unit_convoy_defense_mult: "Ochrana konvojů"
-  unit_convoy_defense_mult_desc: "Zvýšení nebo snížení ochrany poskytované proti [Concept('concept_raid_convoys', 'útoku na konvoje')] doprovodem [Concept('concept_flotilla','flotil')]."
-  unit_convoy_raiding_interception_mult: "Přerušení konvoje raiderů"
-  unit_convoy_raiding_interception_mult_desc: "Zvyšuje nebo snižuje šanci na přerušení a zasažení nepřátelských [Concept('concept_flotilla','flotil')] zapojených do [Concept('concept_raid_convoys', 'útoku na konvoje')]."
   unit_supply_consumption_mult: "Spotřeba dodávek"
   unit_supply_consumption_mult_desc: "Kolik [Concept('concept_good', 'zboží')] je potřeba k udržení [Concept('concept_unit','jednotky')]"
   battle_offense_owned_province_mult: "Domácí [concept_offense|l]"
@@ -2736,10 +2684,6 @@
   battle_defense_owned_province_mult_desc: "Změní [Concept('concept_defense','obranu')] [Concept('concept_unit','vojenské jednotky')] bojující na území vlastněném jejich [Concept('concept_country','zemí')]"
   unit_mobilization_speed_mult: "[Concept('concept_mobilize_battalion','$concept_mobilize_battalion_mobilization$')] Rychlost"
   unit_mobilization_speed_mult_desc: "Jak rychle [Concept('concept_battalion','$concept_battalions$')] [Concept('concept_mobilize_battalion','$concept_mobilize_battalion_mobilize$')]"
-  military_formation_movement_speed_add: "Rychlost [Concept('concept_military_formation','formace')]"
-  military_formation_movement_speed_add_desc: "Jak rychle může [concept_military_formation|l] cestovat, aby dosáhla nového cíle"
-  military_formation_movement_speed_mult: "$military_formation_movement_speed_add$"
-  military_formation_movement_speed_mult_desc: "$military_formation_movement_speed_add_desc$"
   military_formation_mobilization_speed_add: "Rychlost [Concept('concept_mobilize_army', 'mobilizace')] [concept_military_formation|l]"
   military_formation_mobilization_speed_add_desc: "Jak rychle [Concept('concept_military_formation','formace')] [Concept('concept_mobilize_army', 'mobilizuje')] své jednotky"
   military_formation_mobilization_speed_mult: "$military_formation_mobilization_speed_add$"
@@ -2750,14 +2694,10 @@
   military_formation_organization_gain_mult_desc: "$military_formation_organization_gain_add_desc$"
   unit_army_experience_gain_add: "Týdenní zisk $concept_unit_experience$ pro armády"
   unit_army_experience_gain_add_desc: "Kolik $concept_unit_experience$ získávají armády každý týden, aby mohly zvýšit svou $concept_veterancy_level$"
-  unit_navy_experience_gain_add: "Týdenní zisk $concept_unit_experience$ pro námořnictva"
-  unit_navy_experience_gain_add_desc: "Kolik $concept_unit_experience$ se získá námořnictvem každý týden, aby mohlo zvýšit svou $concept_veterancy_level$"
   unit_experience_gain_add: "Týdenní zisk zkušeností pro armádu a námořnictvo"
   unit_experience_gain_add_desc: "Kolik zkušeností získá armáda a námořnictvo každý týden, aby mohli zvýšit svou úroveň veteránství"
   unit_army_experience_gain_mult: "$unit_army_experience_gain_add$"
   unit_army_experience_gain_mult_desc: "$unit_army_experience_gain_add_desc$"
-  unit_navy_experience_gain_mult: "$unit_navy_experience_gain_add$"
-  unit_navy_experience_gain_mult_desc: "$unit_navy_experience_gain_add_desc$"
   unit_experience_gain_mult: "$unit_experience_gain_add$"
   unit_experience_gain_mult_desc: "$unit_experience_gain_add_desc$"
   modifier_character_battle_condition_suffix: " šance"
@@ -3624,3 +3564,431 @@
   country_financial_districts_buy_farms_likelihood: "Investice [GetBuildingType('building_financial_district').GetName] do $bg_plantations$, $bg_ranching$ a $bg_agriculture$"
   country_financial_districts_buy_farms_likelihood_desc: "Zvýšení nebo snížení šance, že [GetBuildingType('building_financial_district').GetName] investuje do $bg_plantations$, $bg_ranching$ a $bg_agriculture$ [Concept('concept_building','$concept_buildings$')]"
   state_free_state_pop_support_movement_anti_slavery_mult: "Přitažlivost [Concept('concept_pop','populace')] k protiotrockému hnutí v státech bez otroctví"
+  country_general_rank_impact_mult: "$concept_general$ $concept_rank$ Dopad" # todo: NEW TRANSLATION
+  country_general_rank_impact_mult_desc: "Zvýšení nebo snížení výhody, kterou [concept_general] získává (např. zvýšení [concept_command_limit]) díky svému [concept_rank]." # todo: NEW TRANSLATION
+  country_admiral_rank_impact_mult: "$concept_admiral$ $concept_rank$ Dopad" # todo: NEW TRANSLATION
+  country_admiral_rank_impact_mult_desc: "Zvýšení nebo snížení výhody, kterou [concept_admiral] získává (např. zvýšení [concept_command_limit]) díky svému [concept_rank]." # todo: NEW TRANSLATION
+  battle_naval_invasion_fortification_defense: "Pevnosti námořního vylodění" # todo: NEW TRANSLATION
+  battle_naval_invasion_fortification_defense_desc: "Vaše bránící se [Concept('concept_battalion','$concept_battalions$')] bojují s výhodou silných opevnění" # todo: NEW TRANSLATION
+  battle_naval_invasion_fleet_efficiency: "Podpora flotily při vylodění" # todo: NEW TRANSLATION
+  battle_naval_invasion_fleet_efficiency_desc: "Průměrná účinnost [concept_naval_invasion] napříč [Concept('concept_ship','$concept_ships$')] flotily" # todo: NEW TRANSLATION
+  character_max_offensive_battles_add: "Maximální počet útočných bitev" # todo: NEW TRANSLATION
+  character_max_offensive_battles_add_desc: "Maximální počet útočných bitev, kterých se tento [concept_character] může současně účastnit." # todo: NEW TRANSLATION
+  character_naval_mission_area_add: "Velikost oblasti námořní mise" # todo: NEW TRANSLATION
+  character_naval_mission_area_add_desc: "Zvyšuje maximální počet $concept_sea_regions$, které lze přiřadit k $concept_naval_mission_short$." # todo: NEW TRANSLATION
+  country_max_unassigned_generals_add: "Maximální počet nevyužitých generálů" # todo: NEW TRANSLATION
+  country_max_unassigned_generals_add_desc: "Maximální počet nevyužitých [Concept('concept_general', '$concept_generals$')], které může mít [concept_country] současně." # todo: NEW TRANSLATION
+  country_max_unassigned_admirals_add: "Maximální počet nevyužitých admirálů" # todo: NEW TRANSLATION
+  country_max_unassigned_admirals_add_desc: "Maximální počet nevyužitých [Concept('concept_admiral', '$concept_admirals$')], které může mít [concept_country] současně." # todo: NEW TRANSLATION
+  country_diplomatic_play_maneuvers_mult: "[Concept('concept_maneuver', '$concept_maneuvers$')] na diplomatickou akci" # todo: NEW TRANSLATION
+  country_diplomatic_play_maneuvers_mult_desc: "Násobitel počtu [Concept('concept_maneuver', '$concept_maneuvers$')], které země může provést během diplomatické akce." # todo: NEW TRANSLATION
+  flagship_battle_won: "[concept_flagship] Bitva vyhrána" # todo: NEW TRANSLATION
+  flagship_battle_won_desc: "Důsledky vítězství [concept_flagship] v [Concept('concept_battle','$concept_battles$')]" # todo: NEW TRANSLATION
+  flagship_battle_lost: "[concept_flagship] Bitva prohrána" # todo: NEW TRANSLATION
+  flagship_battle_lost_desc: "Důsledky prohry [concept_flagship] v [Concept('concept_battle','$concept_battles$')]" # todo: NEW TRANSLATION
+  flagship_destroyed: "[concept_flagship] Zničen" # todo: NEW TRANSLATION
+  flagship_destroyed_desc: "Důsledky zničení [concept_flagship] v [Concept('concept_battle','$concept_battles$')]" # todo: NEW TRANSLATION
+  flagship_interest_gain: "[concept_flagship] Zisk zainteresovanosti" # todo: NEW TRANSLATION
+  flagship_interest_gain_desc: "Efekty na [concept_involvement], které [concept_flagship] vyvolává svou přítomností ve flotile." # todo: NEW TRANSLATION
+  military_formation_interest_gain_mult: "Generování zapojení flotily" # todo: NEW TRANSLATION
+  military_formation_interest_gain_mult_desc: "Upravuje, kolik [concept_involvement] tato flotila generuje pro své strategické oblasti." # todo: NEW TRANSLATION
+  ship_interest_gain_add: "Generování [concept_involvement] lodí" # todo: NEW TRANSLATION
+  ship_interest_gain_add_desc: "Bonus nebo penalizace k [concept_involvement] generovanému touto $concept_ship$ pro její strategické regiony." # todo: NEW TRANSLATION
+  ship_interest_gain_mult: "$ship_interest_gain_add$" # todo: NEW TRANSLATION
+  ship_interest_gain_mult_desc: "$ship_interest_gain_add_desc$" # todo: NEW TRANSLATION
+  country_flagship_interest_gain_mult: "$flagship_interest_gain$" # todo: NEW TRANSLATION
+  country_flagship_interest_gain_mult_desc: "Bonus nebo penalizace k [concept_involvement] generovanému [concept_flagship]." # todo: NEW TRANSLATION
+  low_organization_army: "Nízké [concept_organization]" # todo: NEW TRANSLATION
+  low_organization_army_desc: "Důsledky pro [concept_military_formation] způsobené tím, že má [concept_organization] pod maximem [GetDefine('NMilitary','MILITARY_FORMATION_ORGANIZATION_MAX')|v0]" # todo: NEW TRANSLATION
+  low_organization_fleet: "$low_organization_army$" # todo: NEW TRANSLATION
+  low_organization_fleet_desc: "$low_organization_army_desc$" # todo: NEW TRANSLATION
+  INSURRECTIONARY_CARLISTS: "Probíhající karlistická válka" # todo: NEW TRANSLATION
+  trade_distance: "Průměrná obchodní vzdálenost" # todo: NEW TRANSLATION
+  state_control_strait_bool: "Kontrola průlivu" # todo: NEW TRANSLATION
+  state_control_strait_bool_desc: "Určuje, zda stát ovládá průliv, což ovlivňuje obchod a přesun vojsk." # todo: NEW TRANSLATION
+  state_building_naval_administration_max_level_add: "$building_naval_administration$ Maximální úroveň" # todo: NEW TRANSLATION
+  state_building_naval_administration_max_level_add_desc: "Bonus nebo penalizace k maximální úrovni budov $building_naval_administration$." # todo: NEW TRANSLATION
+  state_building_naval_fortification_max_level_add: "$building_naval_fortification$ Maximální úroveň" # todo: NEW TRANSLATION
+  state_building_naval_fortification_max_level_add_desc: "Bonus nebo penalizace k maximální úrovni budov $building_naval_fortification$." # todo: NEW TRANSLATION
+  state_fortification_naval_invasion_add: "$building_naval_fortification$ Obrana proti vylodění" # todo: NEW TRANSLATION
+  state_fortification_naval_invasion_add_desc: "Bonus nebo penalizace k obraně proti námořní invazi, kterou v [concept_state] poskytují $building_naval_fortification$." # todo: NEW TRANSLATION
+  state_fortification_naval_battle_mult: "$building_naval_fortification$ Obranný bonus v bitvě" # todo: NEW TRANSLATION
+  state_fortification_naval_battle_mult_desc: "Bonus nebo penalizace pro bránící se jednotky v námořní invazní bitvě poskytovaný $building_naval_fortification$ v [concept_state]." # todo: NEW TRANSLATION
+  state_fortification_bombardment_resistance_add: "$building_naval_fortification$ Odolnost vůči bombardování" # todo: NEW TRANSLATION
+  state_fortification_bombardment_resistance_add_desc: "Odolnost vůči ostřelování přístavu poskytovaná $building_naval_fortification$ v [concept_state]. Vyšší hodnoty snižují účinnost nepřátelského námořního bombardování." # todo: NEW TRANSLATION
+  state_literacy_growth_add: "Růst gramotnosti" # todo: NEW TRANSLATION
+  state_literacy_growth_add_desc: "Bonus nebo penalizace k růstu [concept_literacy] v [concept_state]." # todo: NEW TRANSLATION
+  building_naval_administration_throughput_add: "$building_naval_administration$ budova [concept_throughput]" # todo: NEW TRANSLATION
+  building_naval_administration_throughput_add_desc: "Bonus nebo penalizace k jak vstupu, tak výstupu $building_naval_administration$." # todo: NEW TRANSLATION
+  building_naval_administration_training_rate_add: "$building_naval_administration$ [concept_training_rate]" # todo: NEW TRANSLATION
+  building_naval_administration_training_rate_add_desc: "Kolik [concept_manpower] lze týdně cvičit v budovách $building_naval_administration$" # todo: NEW TRANSLATION
+  building_naval_administration_training_rate_mult: "$building_naval_administration_training_rate_add$" # todo: NEW TRANSLATION
+  building_naval_administration_training_rate_mult_desc: "$building_naval_administration_training_rate_add_desc$" # todo: NEW TRANSLATION
+  building_naval_administration_hiring_rate_mult: "$building_naval_administration$ Rychlost náboru" # todo: NEW TRANSLATION
+  building_naval_administration_hiring_rate_mult_desc: "Jak rychle mohou budovy [GetBuildingType('building_naval_administration').GetName] najímat nové [Concept('concept_sailor', '$concept_sailors$')]" # todo: NEW TRANSLATION
+  character_prominence_add: "$concept_prominence$" # todo: NEW TRANSLATION
+  character_prominence_add_desc: "Zvýšení nebo snížení [concept_prominence] [Concept('concept_character','$concept_character_possessive$')]." # todo: NEW TRANSLATION
+  character_loyalty_add: "$concept_loyalty$" # todo: NEW TRANSLATION
+  character_loyalty_add_desc: "Zvýšení nebo snížení [concept_loyalty] [Concept('concept_character','$concept_character_possessive$')]." # todo: NEW TRANSLATION
+  character_commander_loyalty_add: "$concept_commander$ $concept_loyalty$" # todo: NEW TRANSLATION
+  character_commander_loyalty_add_desc: "Zvýšení nebo snížení [concept_loyalty] [Concept('concept_commander','$concept_commander_possessive$')]." # todo: NEW TRANSLATION
+  character_loyalty_mult: "$character_loyalty_add$" # todo: NEW TRANSLATION
+  character_loyalty_mult_desc: "$character_loyalty_add_desc$" # todo: NEW TRANSLATION
+  country_disallow_trade_outside_kyushu_bool: "Zakázat obchodní centra mimo $STATE_KYUSHU$" # todo: NEW TRANSLATION
+  country_disallow_trade_outside_kyushu_bool_desc: "Zakazuje výstavbu obchodních center v $concept_states$ mimo #v $STATE_KYUSHU$#!" # todo: NEW TRANSLATION
+  political_movement_activism_growth_mult: "Růst aktivismu politického hnutí" # todo: NEW TRANSLATION
+  political_movement_activism_growth_mult_desc: "Zvýšení nebo snížení míry, jakou roste [concept_activism] u [concept_political_movement]" # todo: NEW TRANSLATION
+  state_allow_assimilation_without_presence_bool: "Asimilace na primární kulturu vždy povolena" # todo: NEW TRANSLATION
+  state_allow_assimilation_without_presence_bool_desc: "[concept_assimilation] na [Concept('concept_primary_cultures','$concept_primary_culture$')] je povolena i když v [concept_state] nejsou přítomni žádní [Concept('concept_pop','$concept_pops$')] dané [concept_culture]" # todo: NEW TRANSLATION
+  state_allow_conversion_without_presence_bool: "Konverze na státní náboženství vždy povolena" # todo: NEW TRANSLATION
+  state_allow_conversion_without_presence_bool_desc: "[concept_conversion] na [concept_state_religion] je povolena i když v [concept_state] nejsou přítomni žádní [Concept('concept_pop','$concept_pops$')] vyznávající [concept_religion]" # todo: NEW TRANSLATION
+  country_sailors_max_add: "Maximální počet [Concept('concept_sailor', '$concept_sailors$')]" # todo: NEW TRANSLATION
+  country_sailors_max_add_desc: "Maximální množství [Concept('concept_sailor', '$concept_sailors$')], které [Concept('concept_building', '$concept_buildings$')] poskytují k obsazení [Concept('concept_ship', '$concept_ships$')] v [concept_country]." # todo: NEW TRANSLATION
+  country_ship_construction_add: "@ship_construction![Nbsp][concept_ship_construction]" # todo: NEW TRANSLATION
+  country_ship_construction_add_desc: "Množství @ship_construction! konstrukce, které může [concept_country] týdně použít na stavbu lodí" # todo: NEW TRANSLATION
+  country_supply_ship_construction_ratio_add: "Poměr stavby zásobovacích lodí" # todo: NEW TRANSLATION
+  country_supply_ship_construction_ratio_add_desc: "Podíl celkové @ship_construction! konstrukce, který [concept_country] přiděluje na stavbu zásobovacích lodí" # todo: NEW TRANSLATION
+  country_supply_ship_construction_progress_max_add: "$ship_type_supply_ship$ Maximální pokrok stavby" # todo: NEW TRANSLATION
+  country_supply_ship_construction_progress_max_add_desc: "Maximální množství pokroku ve stavbě, které může [concept_country] týdně věnovat jednomu projektu stavby $ship_type_supply_ship$" # todo: NEW TRANSLATION
+  country_supply_ship_construction_progress_max_mult: "$country_supply_ship_construction_progress_max_add$" # todo: NEW TRANSLATION
+  country_supply_ship_construction_progress_max_mult_desc: "$country_supply_ship_construction_progress_max_add_desc$" # todo: NEW TRANSLATION
+  country_ship_group_capital_ships_construction_progress_max_add: "$ship_group_capital_ships$ Maximální pokrok stavby" # todo: NEW TRANSLATION
+  country_ship_group_capital_ships_construction_progress_max_add_desc: "Maximální množství pokroku ve stavbě, které může [concept_country] týdně věnovat jednomu projektu stavby $ship_group_capital_ships$" # todo: NEW TRANSLATION
+  country_ship_group_capital_ships_construction_progress_max_mult: "$country_ship_group_capital_ships_construction_progress_max_add$" # todo: NEW TRANSLATION
+  country_ship_group_capital_ships_construction_progress_max_mult_desc: "$country_ship_group_capital_ships_construction_progress_max_add_desc$" # todo: NEW TRANSLATION
+  country_ship_group_cruisers_construction_progress_max_add: "$ship_group_cruisers$ Maximální pokrok stavby" # todo: NEW TRANSLATION
+  country_ship_group_cruisers_construction_progress_max_add_desc: "Maximální množství pokroku ve stavbě, které může [concept_country] týdně věnovat jednomu projektu stavby $ship_group_cruisers$" # todo: NEW TRANSLATION
+  country_ship_group_cruisers_construction_progress_max_mult: "$country_ship_group_cruisers_construction_progress_max_add$" # todo: NEW TRANSLATION
+  country_ship_group_cruisers_construction_progress_max_mult_desc: "$country_ship_group_cruisers_construction_progress_max_add_desc$" # todo: NEW TRANSLATION
+  country_ship_group_torpedo_craft_construction_progress_max_add: "$ship_group_torpedo_craft$ Maximální pokrok stavby" # todo: NEW TRANSLATION
+  country_ship_group_torpedo_craft_construction_progress_max_add_desc: "Maximální množství pokroku ve stavbě, které může [concept_country] týdně věnovat jednomu projektu stavby $ship_group_torpedo_craft$" # todo: NEW TRANSLATION
+  country_ship_group_torpedo_craft_construction_progress_max_mult: "$country_ship_group_torpedo_craft_construction_progress_max_add$" # todo: NEW TRANSLATION
+  country_ship_group_torpedo_craft_construction_progress_max_mult_desc: "$country_ship_group_torpedo_craft_construction_progress_max_add_desc$" # todo: NEW TRANSLATION
+  country_ship_construction_efficiency_add: "Efektivita stavby lodí" # todo: NEW TRANSLATION
+  country_ship_construction_efficiency_add_desc: "Efektivita všech @ship_construction! [concept_ship_construction], ovlivňující, kolik [concept_ship_construction] je potřeba na jednotku pokroku" # todo: NEW TRANSLATION
+  country_ship_group_capital_ships_construction_efficiency_add: "$ship_group_capital_ships$ Efektivita stavby" # todo: NEW TRANSLATION
+  country_ship_group_capital_ships_construction_efficiency_add_desc: "Efektivita [Concept('concept_ship_group', '$ship_group_capital_ships$')] @ship_construction! [concept_ship_construction]" # todo: NEW TRANSLATION
+  country_ship_group_cruisers_construction_efficiency_add: "$ship_group_cruisers$ Efektivita stavby" # todo: NEW TRANSLATION
+  country_ship_group_cruisers_construction_efficiency_add_desc: "Efektivita [Concept('concept_ship_group', '$ship_group_cruisers$')] @ship_construction! [concept_ship_construction]" # todo: NEW TRANSLATION
+  country_ship_group_torpedo_craft_construction_efficiency_add: "$ship_group_torpedo_craft$ Efektivita stavby" # todo: NEW TRANSLATION
+  country_ship_group_torpedo_craft_construction_efficiency_add_desc: "Efektivita [Concept('concept_ship_group', '$ship_group_torpedo_craft$')] @ship_construction! [concept_ship_construction]" # todo: NEW TRANSLATION
+  country_ship_group_supply_ships_construction_efficiency_add: "$ship_group_supply_ships$ Efektivita stavby" # todo: NEW TRANSLATION
+  country_ship_group_supply_ships_construction_efficiency_add_desc: "Efektivita [Concept('concept_ship_group', '$ship_group_supply_ships$')] @ship_construction! [concept_ship_construction]" # todo: NEW TRANSLATION
+  country_ship_type_troop_ship_construction_efficiency_add: "$ship_type_troop_ship$ Efektivita stavby" # todo: NEW TRANSLATION
+  country_ship_type_troop_ship_construction_efficiency_add_desc: "Efektivita [Concept('concept_ship_type', '$ship_type_troop_ship$')] @ship_construction! [concept_ship_construction]" # todo: NEW TRANSLATION
+  country_ship_type_protected_cruiser_construction_efficiency_add: "$ship_type_protected_cruiser$ Efektivita stavby" # todo: NEW TRANSLATION
+  country_ship_type_protected_cruiser_construction_efficiency_add_desc: "Efektivita [Concept('concept_ship_type', '$ship_type_protected_cruiser$')] @ship_construction! [concept_ship_construction]" # todo: NEW TRANSLATION
+  country_ship_type_armored_cruiser_construction_efficiency_add: "$ship_type_armored_cruiser$ Efektivita stavby" # todo: NEW TRANSLATION
+  country_ship_type_armored_cruiser_construction_efficiency_add_desc: "Efektivita [Concept('concept_ship_type', '$ship_type_armored_cruiser$')] @ship_construction! [concept_ship_construction]" # todo: NEW TRANSLATION
+  country_ship_type_light_cruiser_construction_efficiency_add: "$ship_type_light_cruiser$ Efektivita stavby" # todo: NEW TRANSLATION
+  country_ship_type_light_cruiser_construction_efficiency_add_desc: "Efektivita [Concept('concept_ship_type', '$ship_type_light_cruiser$')] @ship_construction! [concept_ship_construction]" # todo: NEW TRANSLATION
+  country_ship_construction_progress_max_add: "Maximální pokrok stavby lodi" # todo: NEW TRANSLATION
+  country_ship_construction_progress_max_add_desc: "Maximální množství pokroku ve stavbě, které může [concept_country] týdně věnovat jednomu projektu stavby lodi" # todo: NEW TRANSLATION
+  country_ship_construction_goods_cost_mult: "[concept_ship_construction] náklady na [Concept('concept_good', '$concept_goods$')]" # todo: NEW TRANSLATION
+  country_ship_construction_goods_cost_mult_desc: "Bonus nebo penalizace k peněžním nákladům materiálních potřeb [concept_ship_construction]." # todo: NEW TRANSLATION
+  country_navy_goods_cost_mult: "Náklady námořnictva na [Concept('concept_good', '$concept_goods$')]" # todo: NEW TRANSLATION
+  country_navy_goods_cost_mult_desc: "Bonus nebo penalizace k peněžním nákladům [Concept('concept_good', '$concept_goods$')] spotřebovaných námořnictvem." # todo: NEW TRANSLATION
+  ship_accuracy_add: "[concept_accuracy]" # todo: NEW TRANSLATION
+  ship_accuracy_add_desc: "Zvýšení nebo snížení pravděpodobnosti, že $concept_ship$ zasáhne při útoku" # todo: NEW TRANSLATION
+  ship_accuracy_mult: "$ship_accuracy_add$" # todo: NEW TRANSLATION
+  ship_accuracy_mult_desc: "$ship_accuracy_add_desc$" # todo: NEW TRANSLATION
+  ship_armor_add: "[concept_ship_armor]" # todo: NEW TRANSLATION
+  ship_armor_add_desc: "Zvýšení nebo snížení množství pancéřování, kterým je $concept_ship$ vybavena, čímž se snižuje poškození způsobené jejím trupem" # todo: NEW TRANSLATION
+  ship_armor_mult: "$ship_armor_add$" # todo: NEW TRANSLATION
+  ship_armor_mult_desc: "$ship_armor_add_desc$" # todo: NEW TRANSLATION
+  ship_blockade_strength_add: "$concept_blockade$ Síla" # todo: NEW TRANSLATION
+  ship_blockade_strength_add_desc: "Schopnost $concept_ship_possessive$ blokovat nepřátelské přístavy" # todo: NEW TRANSLATION
+  ship_blockade_strength_mult: "$ship_blockade_strength_add$" # todo: NEW TRANSLATION
+  ship_blockade_strength_mult_desc: "$ship_blockade_strength_add_desc$" # todo: NEW TRANSLATION
+  ship_carrying_capacity_add: "[concept_carrying_capacity]" # todo: NEW TRANSLATION
+  ship_carrying_capacity_add_desc: "Kolik [Concept('concept_battalion', '$concept_battalions$')] může jedna $concept_ship$ přepravit, aby podpořila [concept_naval_invasion]" # todo: NEW TRANSLATION
+  ship_carrying_capacity_mult: "$ship_carrying_capacity_add$" # todo: NEW TRANSLATION
+  ship_carrying_capacity_mult_desc: "$ship_carrying_capacity_add_desc$" # todo: NEW TRANSLATION
+  ship_construction_progress_max_add: "Maximální pokrok stavby lodi" # todo: NEW TRANSLATION
+  ship_construction_progress_max_add_desc: "Maximální množství pokroku ve stavbě, které může [concept_country] týdně věnovat jednomu projektu stavby lodi" # todo: NEW TRANSLATION
+  ship_construction_progress_max_mult: "$ship_construction_progress_max_add$" # todo: NEW TRANSLATION
+  ship_construction_progress_max_mult_desc: "$ship_construction_progress_max_add_desc$" # todo: NEW TRANSLATION
+  ship_crew_damage_add: "[concept_crew_attack_damage]" # todo: NEW TRANSLATION
+  ship_crew_damage_add_desc: "Zvýšení nebo snížení množství poškození, které může $concept_ship$ způsobit posádce jiné $concept_ship_possessive$." # todo: NEW TRANSLATION
+  ship_crew_damage_mult: "$ship_crew_damage_add$" # todo: NEW TRANSLATION
+  ship_crew_damage_mult_desc: "$ship_crew_damage_add_desc$" # todo: NEW TRANSLATION
+  ship_crew_max_add: "[concept_ship_crew]" # todo: NEW TRANSLATION
+  ship_crew_max_add_desc: "Zvýšení nebo snížení počtu [Concept('concept_sailor', '$concept_sailors$')], které $concept_ship$ potřebuje k plnému obsazení posádkou" # todo: NEW TRANSLATION
+  ship_crew_max_mult: "$ship_crew_max_add$" # todo: NEW TRANSLATION
+  ship_crew_max_mult_desc: "$ship_crew_max_add_desc$" # todo: NEW TRANSLATION
+  ship_critical_hit_chance_add: "[concept_critical_hit_chance]" # todo: NEW TRANSLATION
+  ship_critical_hit_chance_add_desc: "Zvýšení nebo snížení pravděpodobnosti, že $concept_ship$ při útoku způsobí kritický zásah" # todo: NEW TRANSLATION
+  ship_critical_hit_chance_mult: "$ship_critical_hit_chance_add$" # todo: NEW TRANSLATION
+  ship_critical_hit_chance_mult_desc: "$ship_critical_hit_chance_add_desc$" # todo: NEW TRANSLATION
+  ship_critical_hit_multiplier_add: "[concept_critical_hit_multiplier]" # todo: NEW TRANSLATION
+  ship_critical_hit_multiplier_add_desc: "Bonus nebo penalizace k množství poškození způsobeného při kritickém zásahu $concept_ship$ při útoku" # todo: NEW TRANSLATION
+  ship_critical_hit_multiplier_mult: "$ship_critical_hit_multiplier_add$" # todo: NEW TRANSLATION
+  ship_critical_hit_multiplier_mult_desc: "$ship_critical_hit_multiplier_add_desc$" # todo: NEW TRANSLATION
+  ship_detection_add: "[concept_detection]" # todo: NEW TRANSLATION
+  ship_detection_add_desc: "Zvýšení nebo snížení, jak snadno $concept_ship$ odhalí jiné $concept_ships$" # todo: NEW TRANSLATION
+  ship_detection_mult: "$ship_detection_add$" # todo: NEW TRANSLATION
+  ship_detection_mult_desc: "$ship_detection_add_desc$" # todo: NEW TRANSLATION
+  ship_hit_points_max_add: "Maximální [concept_ship_hit_points]" # todo: NEW TRANSLATION
+  ship_hit_points_max_add_desc: "Zvýšení nebo snížení maximálního množství poškození, které může $concept_ship_possessive$ trup utrpět před zničením" # todo: NEW TRANSLATION
+  ship_hit_points_max_mult: "$ship_hit_points_max_add$" # todo: NEW TRANSLATION
+  ship_hit_points_max_mult_desc: "$ship_hit_points_max_add_desc$" # todo: NEW TRANSLATION
+  ship_hull_damage_add: "[concept_hull_attack_damage]" # todo: NEW TRANSLATION
+  ship_hull_damage_add_desc: "Zvýšení nebo snížení poškození, které může $concept_ship$ způsobit trupu jiné $concept_ship_possessive$." # todo: NEW TRANSLATION
+  ship_hull_damage_mult: "$ship_hull_damage_add$" # todo: NEW TRANSLATION
+  ship_hull_damage_mult_desc: "$ship_hull_damage_add_desc$" # todo: NEW TRANSLATION
+  ship_marine_capacity_add: "[concept_marine_capacity]" # todo: NEW TRANSLATION
+  ship_marine_capacity_add_desc: "Zvýšení nebo snížení počtu mariňáků, které může $concept_ship$ nést, což ovlivňuje jeho schopnost podporovat [Concept('concept_naval_invasion', '$concept_naval_invasions$')] a další amfibiální operace" # todo: NEW TRANSLATION
+  ship_marine_capacity_mult: "$ship_marine_capacity_add$" # todo: NEW TRANSLATION
+  ship_marine_capacity_mult_desc: "$ship_marine_capacity_add_desc$" # todo: NEW TRANSLATION
+  ship_readiness_gain_add: "[concept_readiness]" # todo: NEW TRANSLATION
+  ship_readiness_gain_add_desc: "Zvýšení nebo snížení rychlosti, jakou je $concept_ship$ schopen jednat během bitvy" # todo: NEW TRANSLATION
+  ship_readiness_gain_mult: "$ship_readiness_gain_add$" # todo: NEW TRANSLATION
+  ship_readiness_gain_mult_desc: "$ship_readiness_gain_add_desc$" # todo: NEW TRANSLATION
+  ship_screening_add: "[concept_screening]" # todo: NEW TRANSLATION
+  ship_screening_add_desc: "Zvýšení nebo snížení toho, do jaké míry může $concept_ship$ krytí [concept_vulnerability] jiných $concept_ships$" # todo: NEW TRANSLATION
+  ship_screening_mult: "$ship_screening_add$" # todo: NEW TRANSLATION
+  ship_screening_mult_desc: "$ship_screening_add_desc$" # todo: NEW TRANSLATION
+  ship_movement_speed_add: "[concept_ship_speed]" # todo: NEW TRANSLATION
+  ship_movement_speed_add_desc: "Zvýšení nebo snížení rychlosti pohybu lodí. Nejpomalejší loď ve [concept_fleet] určuje rychlost celé flotily" # todo: NEW TRANSLATION
+  ship_movement_speed_mult: "$ship_movement_speed_add$" # todo: NEW TRANSLATION
+  ship_movement_speed_mult_desc: "$ship_movement_speed_add_desc$" # todo: NEW TRANSLATION
+  ship_supply_capacity_add: "[concept_supply_capacity]" # todo: NEW TRANSLATION
+  ship_supply_capacity_add_desc: "Zvýšení nebo snížení maximálního množství zásob, které může [concept_ship] nést" # todo: NEW TRANSLATION
+  ship_supply_capacity_mult: "$ship_supply_capacity_add$" # todo: NEW TRANSLATION
+  ship_supply_capacity_mult_desc: "$ship_supply_capacity_add_desc$" # todo: NEW TRANSLATION
+  ship_supply_efficiency_add: "[concept_supply_efficiency]" # todo: NEW TRANSLATION
+  ship_supply_efficiency_add_desc: "Zvýšení nebo snížení toho, jak efektivně $concept_ship$ používá své zásoby" # todo: NEW TRANSLATION
+  ship_supply_efficiency_mult: "$ship_supply_efficiency_add$" # todo: NEW TRANSLATION
+  ship_supply_efficiency_mult_desc: "$ship_supply_efficiency_add_desc$" # todo: NEW TRANSLATION
+  ship_visibility_add: "[concept_visibility]" # todo: NEW TRANSLATION
+  ship_visibility_add_desc: "Zvýšení nebo snížení toho, jak těžké je $concept_ship$ odhalit" # todo: NEW TRANSLATION
+  ship_visibility_mult: "$ship_visibility_add$" # todo: NEW TRANSLATION
+  ship_visibility_mult_desc: "$ship_visibility_add_desc$" # todo: NEW TRANSLATION
+  ship_vulnerability_add: "[concept_vulnerability]" # todo: NEW TRANSLATION
+  ship_vulnerability_add_desc: "Zvýšení nebo snížení zranitelnosti $concept_ship$ vůči útokům" # todo: NEW TRANSLATION
+  ship_vulnerability_mult: "$ship_vulnerability_add$" # todo: NEW TRANSLATION
+  ship_vulnerability_mult_desc: "$ship_vulnerability_add_desc$" # todo: NEW TRANSLATION
+  ship_max_distance_to_port_add: "Maximální vzdálenost od přístavu" # todo: NEW TRANSLATION
+  ship_max_distance_to_port_add_desc: "Zvýšení nebo snížení maximální vzdálenosti, kterou se může $concept_ship$ vzdálit od přístavu bez postihů" # todo: NEW TRANSLATION
+  ship_max_distance_to_port_mult: "$ship_max_distance_to_port_add$" # todo: NEW TRANSLATION
+  ship_max_distance_to_port_mult_desc: "$ship_max_distance_to_port_add_desc$" # todo: NEW TRANSLATION
+  ship_ship_type_submarine_hull_damage_mult: "$ship_type_submarine$ $ship_hull_damage_mult$" # todo: NEW TRANSLATION
+  ship_ship_type_submarine_hull_damage_mult_desc: "$ship_type_submarine_desc$" # todo: NEW TRANSLATION
+  ship_ship_type_aircraft_carrier_hull_damage_mult: "$ship_type_aircraft_carrier$ $ship_hull_damage_mult$" # todo: NEW TRANSLATION
+  ship_ship_type_aircraft_carrier_hull_damage_mult_desc: "$ship_type_aircraft_carrier_desc$" # todo: NEW TRANSLATION
+  ship_battle_condition_accuracy_penalty_mult: "Postih [concept_accuracy] kvůli bojovým podmínkám" # todo: NEW TRANSLATION
+  ship_battle_condition_accuracy_penalty_mult_desc: "Zvýšení nebo snížení postihu [concept_accuracy] způsobeného nepříznivými [Concept('concept_naval_battle_condition', '$concept_naval_battle_conditions$')]" # todo: NEW TRANSLATION
+  ship_naval_invasion_efficiency_mult: "Účinnost [concept_naval_invasion]" # todo: NEW TRANSLATION
+  ship_naval_invasion_efficiency_mult_desc: "Kolik přispívá $concept_ship$ k účinnosti, s jakou [Concept('concept_battalion', '$concept_battalions$')] provádějí [concept_naval_invasion]" # todo: NEW TRANSLATION
+  ship_suffered_accuracy_mult: "Utrpěné [concept_accuracy]" # todo: NEW TRANSLATION
+  ship_suffered_accuracy_mult_desc: "Zvýšení nebo snížení efektivního [concept_accuracy] nepřátelských $concept_ships$, které útočí na tento $concept_ship$" # todo: NEW TRANSLATION
+  ship_suffered_crew_damage_mult: "Utrpěné [concept_crew_attack_damage]" # todo: NEW TRANSLATION
+  ship_suffered_crew_damage_mult_desc: "Zvýšení nebo snížení [concept_crew_attack_damage], které tento $concept_ship$ utrpí při zásahu" # todo: NEW TRANSLATION
+  ship_suffered_crit_chance_mult: "Utrpěné [concept_critical_hit_chance]" # todo: NEW TRANSLATION
+  ship_suffered_crit_chance_mult_desc: "Zvýšení nebo snížení [concept_critical_hit_chance] nepřátelských útoků proti tomuto $concept_ship$" # todo: NEW TRANSLATION
+  ship_suffered_crit_damage_mult: "Utrpěné [concept_critical_hit_multiplier]" # todo: NEW TRANSLATION
+  ship_suffered_crit_damage_mult_desc: "Zvýšení nebo snížení bonusu k poškození, které tento $concept_ship$ utrpí při kritickém zásahu" # todo: NEW TRANSLATION
+  ship_suffered_hull_damage_mult: "Utrpěné [concept_hull_attack_damage]" # todo: NEW TRANSLATION
+  ship_suffered_hull_damage_mult_desc: "Zvýšení nebo snížení [concept_hull_attack_damage], které tento $concept_ship$ utrpí při zásahu" # todo: NEW TRANSLATION
+  ship_battle_against_ship_type_torpedo_boat_accuracy_add: "$ship_type_torpedo_boat$ $ship_accuracy_add$" # todo: NEW TRANSLATION
+  ship_battle_against_ship_type_torpedo_boat_accuracy_add_desc: "$ship_accuracy_add_desc$" # todo: NEW TRANSLATION
+  ship_battle_against_ship_type_torpedo_boat_accuracy_mult: "$ship_type_torpedo_boat$ $ship_accuracy_add$" # todo: NEW TRANSLATION
+  ship_battle_against_ship_type_torpedo_boat_accuracy_mult_desc: "$ship_accuracy_add_desc$" # todo: NEW TRANSLATION
+  ship_battle_against_ship_type_torpedo_boat_destroyer_accuracy_add: "$ship_type_torpedo_boat_destroyer$ $ship_accuracy_add$" # todo: NEW TRANSLATION
+  ship_battle_against_ship_type_torpedo_boat_destroyer_accuracy_add_desc: "$ship_accuracy_add_desc$" # todo: NEW TRANSLATION
+  ship_battle_against_ship_type_torpedo_boat_destroyer_accuracy_mult: "$ship_type_torpedo_boat_destroyer$ $ship_accuracy_add$" # todo: NEW TRANSLATION
+  ship_battle_against_ship_type_torpedo_boat_destroyer_accuracy_mult_desc: "$ship_accuracy_add_desc$" # todo: NEW TRANSLATION
+  ship_battle_against_ship_type_submarine_accuracy_add: "$ship_type_submarine$ $ship_accuracy_add$" # todo: NEW TRANSLATION
+  ship_battle_against_ship_type_submarine_accuracy_add_desc: "$ship_accuracy_add_desc$" # todo: NEW TRANSLATION
+  ship_battle_against_ship_type_submarine_accuracy_mult: "$ship_type_submarine$ $ship_accuracy_add$" # todo: NEW TRANSLATION
+  ship_battle_against_ship_type_submarine_accuracy_mult_desc: "$ship_accuracy_add_desc$" # todo: NEW TRANSLATION
+  ship_battle_against_ship_type_destroyer_accuracy_add: "$ship_type_destroyer$ $ship_accuracy_add$" # todo: NEW TRANSLATION
+  ship_battle_against_ship_type_destroyer_accuracy_add_desc: "$ship_accuracy_add_desc$" # todo: NEW TRANSLATION
+  ship_battle_against_ship_type_destroyer_accuracy_mult: "$ship_type_destroyer$ $ship_accuracy_add$" # todo: NEW TRANSLATION
+  ship_battle_against_ship_type_destroyer_accuracy_mult_desc: "$ship_accuracy_add_desc$" # todo: NEW TRANSLATION
+  ship_battle_against_ship_type_modern_ironclad_hull_damage_mult: "$ship_type_modern_ironclad$ $ship_hull_damage_add$" # todo: NEW TRANSLATION
+  ship_battle_against_ship_type_modern_ironclad_hull_damage_mult_desc: "$ship_hull_damage_add_desc$" # todo: NEW TRANSLATION
+  ship_battle_against_ship_type_pre_dreadnought_hull_damage_mult: "$ship_type_pre_dreadnought$ $ship_hull_damage_add$" # todo: NEW TRANSLATION
+  ship_battle_against_ship_type_pre_dreadnought_hull_damage_mult_desc: "$ship_hull_damage_add_desc$" # todo: NEW TRANSLATION
+  ship_battle_against_ship_type_dreadnought_hull_damage_mult: "$ship_type_dreadnought$ $ship_hull_damage_add$" # todo: NEW TRANSLATION
+  ship_battle_against_ship_type_dreadnought_hull_damage_mult_desc: "$ship_hull_damage_add_desc$" # todo: NEW TRANSLATION
+  ship_battle_against_ship_type_super_dreadnought_hull_damage_mult: "$ship_type_super_dreadnought$ $ship_hull_damage_add$" # todo: NEW TRANSLATION
+  ship_battle_against_ship_type_super_dreadnought_hull_damage_mult_desc: "$ship_hull_damage_add_desc$" # todo: NEW TRANSLATION
+  ship_ship_type_supply_ship_supply_capacity_mult: "$ship_type_supply_ship$ $ship_supply_capacity_add$" # todo: NEW TRANSLATION
+  ship_ship_type_supply_ship_supply_capacity_mult_desc: "$ship_supply_capacity_add_desc$" # todo: NEW TRANSLATION
+  unit_naval_invasion_efficiency_mult: "Účinnost námořního vylodění" # todo: NEW TRANSLATION
+  unit_naval_invasion_efficiency_mult_desc: "Bonus nebo penalizace k hodnotám útoku a obrany při provádění [concept_naval_invasion]" # todo: NEW TRANSLATION
+  unnecessary_promotion: "Zbytečné povýšení" # todo: NEW TRANSLATION
+  recently_promoted: "Nedávno povýšen" # todo: NEW TRANSLATION
+  military_formation_army_movement_speed_add: "Rychlost [concept_army]" # todo: NEW TRANSLATION
+  military_formation_army_movement_speed_add_desc: "Jak rychle se [concept_army] může přesunout, aby dosáhl nového cíle" # todo: NEW TRANSLATION
+  military_formation_army_movement_speed_mult: "$military_formation_army_movement_speed_add$" # todo: NEW TRANSLATION
+  military_formation_army_movement_speed_mult_desc: "$military_formation_army_movement_speed_add_desc$" # todo: NEW TRANSLATION
+  military_formation_fleet_movement_speed_add: "Rychlost [concept_fleet]" # todo: NEW TRANSLATION
+  military_formation_fleet_movement_speed_add_desc: "Jak rychle se [concept_fleet] může přesunout, aby dosáhl nového cíle" # todo: NEW TRANSLATION
+  military_formation_fleet_movement_speed_mult: "$military_formation_fleet_movement_speed_add$" # todo: NEW TRANSLATION
+  military_formation_fleet_movement_speed_mult_desc: "$military_formation_fleet_movement_speed_add_desc$" # todo: NEW TRANSLATION
+  ship_crew_experience_gain_add: "Týdenní zisk $concept_unit_experience$ pro $concept_ship_crew$" # todo: NEW TRANSLATION
+  ship_crew_experience_gain_add_desc: "Kolik $concept_unit_experience$ získává $concept_ship_crew$ každý týden, aby mohli zvýšit svou úroveň $concept_veterancy_level$" # todo: NEW TRANSLATION
+  ship_crew_experience_gain_mult: "$ship_crew_experience_gain_add$" # todo: NEW TRANSLATION
+  ship_crew_experience_gain_mult_desc: "$ship_crew_experience_gain_add_desc$" # todo: NEW TRANSLATION
+  character_raid_supply_add: "$concept_admiral$ Šance rabování zásob" # todo: NEW TRANSLATION
+  character_raid_supply_add_desc: "Šance, že [Concept('concept_admiral','$concept_admiral_possessive$')] [concept_fleet] přepadne zásobovací lodě [Concept('concept_fleet', '$concept_fleets$')] každé čtvrtiny dne" # todo: NEW TRANSLATION
+  state_harvest_condition_earthquake_impact_mult: "[GetHarvestConditionType('earthquake').GetName] [concept_harvest_condition] Dopad" # todo: NEW TRANSLATION
+  state_harvest_condition_earthquake_impact_mult_desc: "Zvýšení nebo snížení dopadu [GetHarvestConditionType('earthquake').GetName]." # todo: NEW TRANSLATION
+  state_harvest_condition_earthquake_duration_mult: "[GetHarvestConditionType('earthquake').GetName] [concept_harvest_condition] Trvání" # todo: NEW TRANSLATION
+  state_harvest_condition_earthquake_duration_mult_desc: "Zvýšení nebo snížení trvání [GetHarvestConditionType('earthquake').GetName]." # todo: NEW TRANSLATION
+  state_harvest_condition_tsunami_impact_mult: "[GetHarvestConditionType('tsunami').GetName] [concept_harvest_condition] Dopad" # todo: NEW TRANSLATION
+  state_harvest_condition_tsunami_impact_mult_desc: "Zvýšení nebo snížení dopadu [GetHarvestConditionType('tsunami').GetName]." # todo: NEW TRANSLATION
+  state_harvest_condition_tsunami_duration_mult: "[GetHarvestConditionType('tsunami').GetName] [concept_harvest_condition] Trvání" # todo: NEW TRANSLATION
+  state_harvest_condition_tsunami_duration_mult_desc: "Zvýšení nebo snížení trvání [GetHarvestConditionType('tsunami').GetName]." # todo: NEW TRANSLATION
+  power_bloc_allow_port_access_bool: "Umožňuje přístup k přístavům mezi členy [concept_power_bloc]" # todo: NEW TRANSLATION
+  power_bloc_allow_port_access_bool_desc: "Dává členům [concept_power_bloc] přístup k přístavům v rámci $concept_power_bloc_short$, i když nemají [concept_military_access]" # todo: NEW TRANSLATION
+  country_strata_samurai_high_acceptance_min_add: "Minimální [concept_acceptance] pro $strata_samurai_high$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_samurai_high_acceptance_min_add_desc: "Prahová hodnota popisující hodnotu [concept_acceptance], pod kterou [Concept('concept_pop', '$concept_pops$')] v $strata_samurai_high$ [concept_social_class] nemohou klesnout" # todo: NEW TRANSLATION
+  country_strata_samurai_low_acceptance_min_add: "Minimální [concept_acceptance] pro $strata_samurai_low$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_samurai_low_acceptance_min_add_desc: "Prahová hodnota popisující hodnotu [concept_acceptance], pod kterou [Concept('concept_pop', '$concept_pops$')] v $strata_samurai_low$ [concept_social_class] nemohou klesnout" # todo: NEW TRANSLATION
+  country_strata_religious_acceptance_min_add: "Minimální [concept_acceptance] pro $strata_religious$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_religious_acceptance_min_add_desc: "Prahová hodnota popisující hodnotu [concept_acceptance], pod kterou [Concept('concept_pop', '$concept_pops$')] v $strata_religious$ [concept_social_class] nemohou klesnout" # todo: NEW TRANSLATION
+  country_strata_commoners_peasants_acceptance_min_add: "Minimální [concept_acceptance] pro $strata_commoners_peasants$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_commoners_peasants_acceptance_min_add_desc: "Prahová hodnota popisující hodnotu [concept_acceptance], pod kterou [Concept('concept_pop', '$concept_pops$')] v $strata_commoners_peasants$ [concept_social_class] nemohou klesnout" # todo: NEW TRANSLATION
+  country_strata_commoners_townspeople_acceptance_min_add: "Minimální [concept_acceptance] pro $strata_commoners_townspeople$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_commoners_townspeople_acceptance_min_add_desc: "Prahová hodnota popisující hodnotu [concept_acceptance], pod kterou [Concept('concept_pop', '$concept_pops$')] v $strata_commoners_townspeople$ [concept_social_class] nemohou klesnout" # todo: NEW TRANSLATION
+  country_strata_outcastes_acceptance_min_add: "Minimální [concept_acceptance] pro $strata_outcastes$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_outcastes_acceptance_min_add_desc: "Prahová hodnota popisující hodnotu [concept_acceptance], pod kterou [Concept('concept_pop', '$concept_pops$')] v $strata_outcastes$ [concept_social_class] nemohou klesnout" # todo: NEW TRANSLATION
+  country_strata_samurai_high_acceptance_max_add: "Maximální [concept_acceptance] pro $strata_samurai_high$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_samurai_high_acceptance_max_add_desc: "Prahová hodnota popisující hodnotu [concept_acceptance], kterou [Concept('concept_pop', '$concept_pops$')] v $strata_samurai_high$ [concept_social_class] nebudou moci překročit" # todo: NEW TRANSLATION
+  country_strata_samurai_low_acceptance_max_add: "Maximální [concept_acceptance] pro $strata_samurai_low$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_samurai_low_acceptance_max_add_desc: "Prahová hodnota popisující hodnotu [concept_acceptance], kterou [Concept('concept_pop', '$concept_pops$')] v $strata_samurai_low$ [concept_social_class] nebudou moci překročit" # todo: NEW TRANSLATION
+  country_strata_religious_acceptance_max_add: "Maximální [concept_acceptance] pro $strata_religious$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_religious_acceptance_max_add_desc: "Prahová hodnota popisující hodnotu [concept_acceptance], kterou [Concept('concept_pop', '$concept_pops$')] v $strata_religious$ [concept_social_class] nebudou moci překročit" # todo: NEW TRANSLATION
+  country_strata_commoners_peasants_acceptance_max_add: "Maximální [concept_acceptance] pro $strata_commoners_peasants$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_commoners_peasants_acceptance_max_add_desc: "Prahová hodnota popisující hodnotu [concept_acceptance], kterou [Concept('concept_pop', '$concept_pops$')] v $strata_commoners_peasants$ [concept_social_class] nebudou moci překročit" # todo: NEW TRANSLATION
+  country_strata_commoners_townspeople_acceptance_max_add: "Maximální [concept_acceptance] pro $strata_commoners_townspeople$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_commoners_townspeople_acceptance_max_add_desc: "Prahová hodnota popisující hodnotu [concept_acceptance], kterou [Concept('concept_pop', '$concept_pops$')] v $strata_commoners_townspeople$ [concept_social_class] nebudou moci překročit" # todo: NEW TRANSLATION
+  country_strata_outcastes_acceptance_max_add: "Maximální [concept_acceptance] pro $strata_outcastes$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_outcastes_acceptance_max_add_desc: "Prahová hodnota popisující hodnotu [concept_acceptance], kterou [Concept('concept_pop', '$concept_pops$')] v $strata_outcastes$ [concept_social_class] nebudou moci překročit" # todo: NEW TRANSLATION
+  country_strata_samurai_high_cultural_acceptance_add: "Kulturní [concept_acceptance] pro $strata_samurai_high$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_samurai_high_cultural_acceptance_add_desc: "Přímé zvýšení nebo snížení kulturního [concept_acceptance] pro $strata_samurai_high$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_samurai_low_cultural_acceptance_add: "Kulturní [concept_acceptance] pro $strata_samurai_low$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_samurai_low_cultural_acceptance_add_desc: "Přímé zvýšení nebo snížení kulturního [concept_acceptance] pro $strata_samurai_low$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_religious_cultural_acceptance_add: "Kulturní [concept_acceptance] pro $strata_religious$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_religious_cultural_acceptance_add_desc: "Přímé zvýšení nebo snížení kulturního [concept_acceptance] pro $strata_religious$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_commoners_peasants_cultural_acceptance_add: "Kulturní [concept_acceptance] pro $strata_commoners_peasants$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_commoners_peasants_cultural_acceptance_add_desc: "Přímé zvýšení nebo snížení kulturního [concept_acceptance] pro $strata_commoners_peasants$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_commoners_townspeople_cultural_acceptance_add: "Kulturní [concept_acceptance] pro $strata_commoners_townspeople$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_commoners_townspeople_cultural_acceptance_add_desc: "Přímé zvýšení nebo snížení kulturního [concept_acceptance] pro $strata_commoners_townspeople$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_outcastes_cultural_acceptance_add: "Kulturní [concept_acceptance] pro $strata_outcastes$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_outcastes_cultural_acceptance_add_desc: "Přímé zvýšení nebo snížení kulturního [concept_acceptance] pro $strata_outcastes$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_samurai_high_cultural_acceptance_mult: "Kulturní [concept_acceptance] pro $strata_samurai_high$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_samurai_high_cultural_acceptance_mult_desc: "Procentuální zvýšení nebo snížení kulturního [concept_acceptance] pro $strata_samurai_high$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_samurai_low_cultural_acceptance_mult: "Kulturní [concept_acceptance] pro $strata_samurai_low$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_samurai_low_cultural_acceptance_mult_desc: "Procentuální zvýšení nebo snížení kulturního [concept_acceptance] pro $strata_samurai_low$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_religious_cultural_acceptance_mult: "Kulturní [concept_acceptance] pro $strata_religious$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_religious_cultural_acceptance_mult_desc: "Procentuální zvýšení nebo snížení kulturního [concept_acceptance] pro $strata_religious$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_commoners_peasants_cultural_acceptance_mult: "Kulturní [concept_acceptance] pro $strata_commoners_peasants$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_commoners_peasants_cultural_acceptance_mult_desc: "Procentuální zvýšení nebo snížení kulturního [concept_acceptance] pro $strata_commoners_peasants$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_commoners_townspeople_cultural_acceptance_mult: "Kulturní [concept_acceptance] pro $strata_commoners_townspeople$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_commoners_townspeople_cultural_acceptance_mult_desc: "Procentuální zvýšení nebo snížení kulturního [concept_acceptance] pro $strata_commoners_townspeople$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_outcastes_cultural_acceptance_mult: "Kulturní [concept_acceptance] pro $strata_outcastes$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_outcastes_cultural_acceptance_mult_desc: "Procentuální zvýšení nebo snížení kulturního [concept_acceptance] pro $strata_outcastes$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_samurai_high_education_access_add: "[concept_education_access] pro $strata_samurai_high$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_samurai_high_education_access_add_desc: "Přímé zvýšení nebo snížení [concept_education_access] pro $strata_samurai_high$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_samurai_low_education_access_add: "[concept_education_access] pro $strata_samurai_low$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_samurai_low_education_access_add_desc: "Přímé zvýšení nebo snížení [concept_education_access] pro $strata_samurai_low$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_religious_education_access_add: "[concept_education_access] pro $strata_religious$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_religious_education_access_add_desc: "Přímé zvýšení nebo snížení [concept_education_access] pro $strata_religious$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_commoners_peasants_education_access_add: "[concept_education_access] pro $strata_commoners_peasants$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_commoners_peasants_education_access_add_desc: "Přímé zvýšení nebo snížení [concept_education_access] pro $strata_commoners_peasants$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_commoners_townspeople_education_access_add: "[concept_education_access] pro $strata_commoners_townspeople$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_commoners_townspeople_education_access_add_desc: "Přímé zvýšení nebo snížení [concept_education_access] pro $strata_commoners_townspeople$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_outcastes_education_access_add: "[concept_education_access] pro $strata_outcastes$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_outcastes_education_access_add_desc: "Přímé zvýšení nebo snížení [concept_education_access] pro $strata_outcastes$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_samurai_high_education_access_mult: "[concept_education_access] pro $strata_samurai_high$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_samurai_high_education_access_mult_desc: "Procentuální zvýšení nebo snížení [concept_education_access] pro $strata_samurai_high$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_samurai_low_education_access_mult: "[concept_education_access] pro $strata_samurai_low$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_samurai_low_education_access_mult_desc: "Procentuální zvýšení nebo snížení [concept_education_access] pro $strata_samurai_low$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_religious_education_access_mult: "[concept_education_access] pro $strata_religious$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_religious_education_access_mult_desc: "Procentuální zvýšení nebo snížení [concept_education_access] pro $strata_religious$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_commoners_peasants_education_access_mult: "[concept_education_access] pro $strata_commoners_peasants$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_commoners_peasants_education_access_mult_desc: "Procentuální zvýšení nebo snížení [concept_education_access] pro $strata_commoners_peasants$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_commoners_townspeople_education_access_mult: "[concept_education_access] pro $strata_commoners_townspeople$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_commoners_townspeople_education_access_mult_desc: "Procentuální zvýšení nebo snížení [concept_education_access] pro $strata_commoners_townspeople$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_outcastes_education_access_mult: "[concept_education_access] pro $strata_outcastes$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_outcastes_education_access_mult_desc: "Procentuální zvýšení nebo snížení [concept_education_access] pro $strata_outcastes$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_samurai_high_qualification_growth_add: "Růst kvalifikace pro $strata_samurai_high$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_samurai_high_qualification_growth_add_desc: "Přímé zvýšení nebo snížení růstu kvalifikace pro $strata_samurai_high$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_samurai_low_qualification_growth_add: "Růst kvalifikace pro $strata_samurai_low$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_samurai_low_qualification_growth_add_desc: "Přímé zvýšení nebo snížení růstu kvalifikace pro $strata_samurai_low$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_religious_qualification_growth_add: "Růst kvalifikace pro $strata_religious$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_religious_qualification_growth_add_desc: "Přímé zvýšení nebo snížení růstu kvalifikace pro $strata_religious$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_commoners_peasants_qualification_growth_add: "Růst kvalifikace pro $strata_commoners_peasants$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_commoners_peasants_qualification_growth_add_desc: "Přímé zvýšení nebo snížení růstu kvalifikace pro $strata_commoners_peasants$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_commoners_townspeople_qualification_growth_add: "Růst kvalifikace pro $strata_commoners_townspeople$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_commoners_townspeople_qualification_growth_add_desc: "Přímé zvýšení nebo snížení růstu kvalifikace pro $strata_commoners_townspeople$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_outcastes_qualification_growth_add: "Růst kvalifikace pro $strata_outcastes$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_outcastes_qualification_growth_add_desc: "Přímé zvýšení nebo snížení růstu kvalifikace pro $strata_outcastes$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_samurai_high_qualification_growth_mult: "Růst kvalifikace pro $strata_samurai_high$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_samurai_high_qualification_growth_mult_desc: "Procentuální zvýšení nebo snížení růstu kvalifikace pro $strata_samurai_high$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_samurai_low_qualification_growth_mult: "Růst kvalifikace pro $strata_samurai_low$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_samurai_low_qualification_growth_mult_desc: "Procentuální zvýšení nebo snížení růstu kvalifikace pro $strata_samurai_low$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_religious_qualification_growth_mult: "Růst kvalifikace pro $strata_religious$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_religious_qualification_growth_mult_desc: "Procentuální zvýšení nebo snížení růstu kvalifikace pro $strata_religious$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_commoners_peasants_qualification_growth_mult: "Růst kvalifikace pro $strata_commoners_peasants$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_commoners_peasants_qualification_growth_mult_desc: "Procentuální zvýšení nebo snížení růstu kvalifikace pro $strata_commoners_peasants$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_commoners_townspeople_qualification_growth_mult: "Růst kvalifikace pro $strata_commoners_townspeople$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_commoners_townspeople_qualification_growth_mult_desc: "Procentuální zvýšení nebo snížení růstu kvalifikace pro $strata_commoners_townspeople$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_outcastes_qualification_growth_mult: "Růst kvalifikace pro $strata_outcastes$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_outcastes_qualification_growth_mult_desc: "Procentuální zvýšení nebo snížení růstu kvalifikace pro $strata_outcastes$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_samurai_high_qualification_growth_same_class_mult: "Růst kvalifikace uvnitř $strata_samurai_high$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_samurai_high_qualification_growth_same_class_mult_desc: "Procentuální zvýšení nebo snížení růstu kvalifikace pro $strata_samurai_high$ [concept_social_class] směrem k [Concept('concept_profession', '$concept_professions$')] v $strata_samurai_high$ $concept_social_class$" # todo: NEW TRANSLATION
+  country_strata_samurai_low_qualification_growth_same_class_mult: "Růst kvalifikace uvnitř $strata_samurai_low$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_samurai_low_qualification_growth_same_class_mult_desc: "Procentuální zvýšení nebo snížení růstu kvalifikace pro $strata_samurai_low$ [concept_social_class] směrem k [Concept('concept_profession', '$concept_professions$')] v $strata_samurai_low$ $concept_social_class$" # todo: NEW TRANSLATION
+  country_strata_religious_qualification_growth_same_class_mult: "Růst kvalifikace uvnitř $strata_religious$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_religious_qualification_growth_same_class_mult_desc: "Procentuální zvýšení nebo snížení růstu kvalifikace pro $strata_religious$ [concept_social_class] směrem k [Concept('concept_profession', '$concept_professions$')] v $strata_religious$ $concept_social_class$" # todo: NEW TRANSLATION
+  country_strata_commoners_peasants_qualification_growth_same_class_mult: "Růst kvalifikace uvnitř $strata_commoners_peasants$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_commoners_peasants_qualification_growth_same_class_mult_desc: "Procentuální zvýšení nebo snížení růstu kvalifikace pro $strata_commoners_peasants$ [concept_social_class] směrem k [Concept('concept_profession', '$concept_professions$')] v $strata_commoners_peasants$ $concept_social_class$" # todo: NEW TRANSLATION
+  country_strata_commoners_townspeople_qualification_growth_same_class_mult: "Růst kvalifikace uvnitř $strata_commoners_townspeople$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_commoners_townspeople_qualification_growth_same_class_mult_desc: "Procentuální zvýšení nebo snížení růstu kvalifikace pro $strata_commoners_townspeople$ [concept_social_class] směrem k [Concept('concept_profession', '$concept_professions$')] v $strata_commoners_townspeople$ $concept_social_class$" # todo: NEW TRANSLATION
+  country_strata_outcastes_qualification_growth_same_class_mult: "Růst kvalifikace uvnitř $strata_outcastes$ [concept_social_class]" # todo: NEW TRANSLATION
+  country_strata_outcastes_qualification_growth_same_class_mult_desc: "Procentuální zvýšení nebo snížení růstu kvalifikace pro $strata_outcastes$ [concept_social_class] směrem k [Concept('concept_profession', '$concept_professions$')] v $strata_outcastes$ $concept_social_class$" # todo: NEW TRANSLATION
+  country_strata_samurai_high_qualification_growth_other_class_mult: "Růst kvalifikace mimo $strata_samurai_high$ [concept_social_class] pro $strata_samurai_high$" # todo: NEW TRANSLATION
+  country_strata_samurai_high_qualification_growth_other_class_mult_desc: "Procentuální zvýšení nebo snížení růstu kvalifikace pro $strata_samurai_high$ směrem k [Concept('concept_profession', '$concept_professions$')] v jiných [Concept('concept_social_class', '$concept_social_classes$')]" # todo: NEW TRANSLATION
+  country_strata_samurai_low_qualification_growth_other_class_mult: "Růst kvalifikace mimo $strata_samurai_low$ [concept_social_class] pro $strata_samurai_low$" # todo: NEW TRANSLATION
+  country_strata_samurai_low_qualification_growth_other_class_mult_desc: "Procentuální zvýšení nebo snížení růstu kvalifikace pro $strata_samurai_low$ směrem k [Concept('concept_profession', '$concept_professions$')] v jiných [Concept('concept_social_class', '$concept_social_classes$')]" # todo: NEW TRANSLATION
+  country_strata_religious_qualification_growth_other_class_mult: "Růst kvalifikace mimo $strata_religious$ [concept_social_class] pro $strata_religious$" # todo: NEW TRANSLATION
+  country_strata_religious_qualification_growth_other_class_mult_desc: "Procentuální zvýšení nebo snížení růstu kvalifikace pro $strata_religious$ směrem k [Concept('concept_profession', '$concept_professions$')] v jiných [Concept('concept_social_class', '$concept_social_classes$')]" # todo: NEW TRANSLATION
+  country_strata_commoners_peasants_qualification_growth_other_class_mult: "Růst kvalifikace mimo $strata_commoners_peasants$ [concept_social_class] pro $strata_commoners_peasants$" # todo: NEW TRANSLATION
+  country_strata_commoners_peasants_qualification_growth_other_class_mult_desc: "Procentuální zvýšení nebo snížení růstu kvalifikace pro $strata_commoners_peasants$ směrem k [Concept('concept_profession', '$concept_professions$')] v jiných [Concept('concept_social_class', '$concept_social_classes$')]" # todo: NEW TRANSLATION
+  country_strata_commoners_townspeople_qualification_growth_other_class_mult: "Růst kvalifikace mimo $strata_commoners_townspeople$ [concept_social_class] pro $strata_commoners_townspeople$" # todo: NEW TRANSLATION
+  country_strata_commoners_townspeople_qualification_growth_other_class_mult_desc: "Procentuální zvýšení nebo snížení růstu kvalifikace pro $strata_commoners_townspeople$ směrem k [Concept('concept_profession', '$concept_professions$')] v jiných [Concept('concept_social_class', '$concept_social_classes$')]" # todo: NEW TRANSLATION
+  country_strata_outcastes_qualification_growth_other_class_mult: "Růst kvalifikace mimo $strata_outcastes$ [concept_social_class] pro $strata_outcastes$" # todo: NEW TRANSLATION
+  country_strata_outcastes_qualification_growth_other_class_mult_desc: "Procentuální zvýšení nebo snížení růstu kvalifikace pro $strata_outcastes$ směrem k [Concept('concept_profession', '$concept_professions$')] v jiných [Concept('concept_social_class', '$concept_social_classes$')]" # todo: NEW TRANSLATION
+  country_limit_officers_qualifications_to_upper_strata: "[GetPopType('officers').GetName] kvalifikace omezeny na [concept_upper_strata]" # todo: NEW TRANSLATION
+  country_limit_officers_qualifications_to_upper_strata_desc: "Kvalifikace [GetPopType('officers').GetName] [concept_pop_qualifications] budou výhradně pocházet z [concept_upper_strata]" # todo: NEW TRANSLATION
+  country_cannot_be_subjugated_bool: "Nelze být [Concept('concept_subject','Subjugated')]" # todo: NEW TRANSLATION
+  country_cannot_be_subjugated_bool_desc: "Tato země nedávno deklarovala své [concept_neutrality] a nemůže být [Concept('concept_subject','Subjugated')]" # todo: NEW TRANSLATION
+  country_cannot_join_power_bloc_bool: "Nemůže se připojit k [Concept('concept_power_bloc','Power Blocks')]" # todo: NEW TRANSLATION
+  country_cannot_join_power_bloc_bool_desc: "Tato země nedávno deklarovala své [concept_neutrality] a nemůže se připojit k žádnému [concept_power_bloc]" # todo: NEW TRANSLATION
+  country_lobby_support: "Podpora lobbování" # todo: NEW TRANSLATION
+  country_lobby_support_desc: "Bonus nebo penalizace k pravděpodobnosti, že se [concept_interest_group] udrží ve svém [concept_political_lobby]" # todo: NEW TRANSLATION
+  state_trade_center_max_limit_add: "Maximální úroveň obchodního centra" # todo: NEW TRANSLATION
+  state_trade_center_max_limit_add_desc: "Bonus nebo penalizace k maximální úrovni budov $building_trade_center$." # todo: NEW TRANSLATION
+  character_piracy_goods_capacity_mult: "Kapacita pirátství" # todo: NEW TRANSLATION
+  character_piracy_goods_capacity_mult_desc: "Zvýšení nebo snížení počtu zboží, které může tento admirál během týdne zajmout." # todo: NEW TRANSLATION
+  country_piracy_income_add: "Příjem z pirátství" # todo: NEW TRANSLATION
+  country_piracy_income_add_desc: "Zvýšení nebo snížení hodnoty, kterou můžeme získat z ukořistěného zboží." # todo: NEW TRANSLATION
+  battle_naval_condition_strong_winds_chance_mult: "[GetNavalBattleCondition('naval_condition_strong_winds').GetName]$modifier_character_battle_condition_suffix$" # todo: NEW TRANSLATION
+  battle_naval_condition_strong_winds_chance_mult_desc: "$modifier_character_battle_condition_desc_prefix$[GetNavalBattleCondition('naval_condition_strong_winds').GetName]$modifier_character_battle_condition_desc_suffix$" # todo: NEW TRANSLATION
+  battle_naval_condition_calm_waters_chance_mult: "[GetNavalBattleCondition('naval_condition_calm_waters').GetName]$modifier_character_battle_condition_suffix$" # todo: NEW TRANSLATION
+  battle_naval_condition_calm_waters_chance_mult_desc: "$modifier_character_battle_condition_desc_prefix$[GetNavalBattleCondition('naval_condition_calm_waters').GetName]$modifier_character_battle_condition_desc_suffix$" # todo: NEW TRANSLATION
+  battle_naval_condition_fog_chance_mult: "[GetNavalBattleCondition('naval_condition_fog').GetName]$modifier_character_battle_condition_suffix$" # todo: NEW TRANSLATION
+  battle_naval_condition_fog_chance_mult_desc: "$modifier_character_battle_condition_desc_prefix$[GetNavalBattleCondition('naval_condition_fog').GetName]$modifier_character_battle_condition_desc_suffix$" # todo: NEW TRANSLATION
+  battle_naval_condition_cyclone_chance_mult: "[GetNavalBattleCondition('naval_condition_cyclone').GetName]$modifier_character_battle_condition_suffix$" # todo: NEW TRANSLATION
+  battle_naval_condition_cyclone_chance_mult_desc: "$modifier_character_battle_condition_desc_prefix$[GetNavalBattleCondition('naval_condition_cyclone').GetName]$modifier_character_battle_condition_desc_suffix$" # todo: NEW TRANSLATION
+  battle_naval_condition_ice_chance_mult: "[GetNavalBattleCondition('naval_condition_ice').GetName]$modifier_character_battle_condition_suffix$" # todo: NEW TRANSLATION
+  battle_naval_condition_ice_chance_mult_desc: "$modifier_character_battle_condition_desc_prefix$[GetNavalBattleCondition('naval_condition_ice').GetName]$modifier_character_battle_condition_desc_suffix$" # todo: NEW TRANSLATION
+  battle_naval_condition_rough_waters_chance_mult: "[GetNavalBattleCondition('naval_condition_rough_waters').GetName]$modifier_character_battle_condition_suffix$" # todo: NEW TRANSLATION
+  battle_naval_condition_rough_waters_chance_mult_desc: "$modifier_character_battle_condition_desc_prefix$[GetNavalBattleCondition('naval_condition_rough_waters').GetName]$modifier_character_battle_condition_desc_suffix$" # todo: NEW TRANSLATION
+  battle_naval_condition_tropical_storm_chance_mult: "[GetNavalBattleCondition('naval_condition_tropical_storm').GetName]$modifier_character_battle_condition_suffix$" # todo: NEW TRANSLATION
+  battle_naval_condition_tropical_storm_chance_mult_desc: "$modifier_character_battle_condition_desc_prefix$[GetNavalBattleCondition('naval_condition_tropical_storm').GetName]$modifier_character_battle_condition_desc_suffix$" # todo: NEW TRANSLATION

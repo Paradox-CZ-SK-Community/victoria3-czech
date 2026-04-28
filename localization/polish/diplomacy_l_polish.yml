@@ -200,7 +200,7 @@
   TREATY_COUNTRY_HAS_OWED_OBLIGATION: "[Country.GetName] dluží @obligation! [Concept('concept_obligation','závazek')] vůči [Treaty.GetOtherCountry(Country.Self).GetAltAdjective('D')]"
   TREATY_COUNTRY_WILL_CALL_IN_OBLIGATION: "[Country.GetName] si uplatní @obligation! [Concept('concept_obligation','závazek')] vůči [Treaty.GetOtherCountry(Country.Self).GetAltAdjective('D')]"
   TREATY_COUNTRY_WILL_OWE_OBLIGATION: "[Country.GetName] bude dlužit @obligation! [Concept('concept_obligation','závazek')] vůči [Treaty.GetOtherCountry(Country.Self).GetAltAdjective('D')]"
-  OBLIGATION_DELAY_EXPLANATION: "[concept_obligation] se stane skutečností po skončení [Concept('concept_binding_period','závazného období')] [Concept('concept_treaty','smlouvy'))], nebo nejpozději za #v [Divide_int32(GetDefine('NDiplomacy', 'MAX_TREATY_OBLIGATIONS_DELAY_DAYS'), '(int32)365')|0]#! let od data podpisu [Treaty.GetStartDate]"
+  OBLIGATION_DELAY_EXPLANATION: "[concept_obligation] se stane skutečností po skončení [Concept('concept_binding_period','závazného období')] [Concept('concept_treaty','smlouvy')], nebo nejpozději za #v [Divide_int32(GetDefine('NDiplomacy', 'MAX_TREATY_OBLIGATIONS_DELAY_DAYS'), '(int32)365')|0]#! let od data podpisu [Treaty.GetStartDate]"
   TREATY_COUNTRY_HAS_OWED_OBLIGATION_WITH_EXPLANATION: "#header $TREATY_COUNTRY_HAS_OWED_OBLIGATION$#!\n$TOOLTIP_DELIMITER$\n$OBLIGATION_DELAY_EXPLANATION$"
   TREATY_COUNTRY_WILL_OWE_OBLIGATION_WITH_EXPLANATION: "#header $TREATY_COUNTRY_WILL_OWE_OBLIGATION$#!\n$TOOLTIP_DELIMITER$\n$OBLIGATION_DELAY_EXPLANATION$"
   TREATY_HAS_OR_WILL_CALL_IN_OBLIGATION: "[SelectLocalization(Treaty.AreObligationsEffectuated, 'TREATY_COUNTRY_HAS_CALLED_IN_OBLIGATION', 'TREATY_COUNTRY_WILL_CALL_IN_OBLIGATION')]"
@@ -395,7 +395,6 @@
   DIPLO_PACT_RELATIONS_CHANGE_POS: "[concept_relations] se zlepší o #g +1#! za $DAYS|v$ dní. Celkový postup je #v $PROGRESS_DAILY|%+=2$#! za den"
   DIPLO_PACT_RELATIONS_CHANGE_NEG: "[concept_relations] se zhorší o #r -1#! za $DAYS|v$ dní. Celkový postup je #v $PROGRESS_DAILY|%+=2$#! za den"
   DIPLO_PACT_RELATIONS_NO_CHANGE: "[concept_relations] momentálně zůstanou beze změny. Celkový pokrok je #v $PROGRESS_DAILY|%+=0$#! za den"
-  DIPLO_ACTION_FORCED_DURATION: "Nemůžeme tento [Concept('concept_diplomatic_pact','pakt')] zrušit ještě $TIME_LEFT$ ($DATE$)"
   DIPLOMATIC_PACT_HEADER: "#header [DiplomaticPact.GetName]#!"
   DIPLOMATIC_PACT_DESC: "[DiplomaticPact.GetDesc]"
   DIPLOMATIC_PACT_TOOLTIP: "$DIPLOMATIC_PACT_HEADER$\n$TOOLTIP_DELIMITER$\n$DIPLOMATIC_PACT_DESC$"
@@ -1971,3 +1970,79 @@
   MANEUVERS_TARGET_COUNTRY_POPULATION_FACTOR: "Celková [Concept('concept_pop', '$concept_population$')|l] [SCOPE.sCountry('target_country').GetAltAdjectiveNoFormatting('G')] ve výši [SCOPE.sCountry('target_country').GetTotalPopulation|Dv]"
   MANEUVERS_QUANTITY_FACTOR: "Vstupní množství"
   MANEUVERS_TARGET_STATE_POPULATION_FACTOR: "[SCOPE.sState('target_state').GetName] celkem [Concept('concept_pop', '$concept_population$')] z [SCOPE.sState('target_state').GetPopulationSize|Dv]"
+  AI_REGION_STANCE_STRATEGY_VALUE_FORMAT: "$VALUE|+=0$ z $KEY$" # todo: NEW TRANSLATION
+  DIPLOMATIC_ACCEPTANCE_SHIP_VALUE: "z hodnoty $concept_construction$ lodi" # todo: NEW TRANSLATION
+  DIPLOMATIC_ACCEPTANCE_SHIP_OBSOLETE: "z toho, že loď je pro ně zastaralá" # todo: NEW TRANSLATION
+  DIPLOMATIC_ACCEPTANCE_ONE_SIDED_SHIP_TRADE: "z odmítnutí vyměnit loď bez protihodnoty" # todo: NEW TRANSLATION
+  DIPLOMATIC_ACCEPTANCE_NAVAL_HOSTILITIES_PAST_DAMAGE: "poškození způsobené [SCOPE.sCountry('other_country').GetName] během předchozích [concept_naval_hostilities]" # todo: NEW TRANSLATION
+  DIPLOMATIC_ACCEPTANCE_NAVAL_HOSTILITIES_RANK: "vyšší [concept_rank] než [SCOPE.sCountry('other_country').GetName]" # todo: NEW TRANSLATION
+  DIPLOMATIC_ACCEPTANCE_NAVAL_VULNERABILITY: "závislost na [concept_world_market], pobřežní $GDP_SHORT$ a námořní [concept_prestige]" # todo: NEW TRANSLATION
+  DIPLOMATIC_ACCEPTANCE_OPIUM_DEALER: "z #b 'Ne, chceme vám prodávat opium'#!" # todo: NEW TRANSLATION
+  DIPLO_PACT_INVOLVEMENT_CHANGE: "Aktuálně zvyšuje [concept_involvement] [TARGET_COUNTRY.GetName] maximálně o $AMOUNT|v0$ ve všech [Concept('concept_strategic_region', '$concept_strategic_regions$')] kde [COUNTRY.GetName] je [Concept('concept_local_country', '$concept_local_country_short$')]" # todo: NEW TRANSLATION
+  strait_access: "Přístup k průlivu" # todo: NEW TRANSLATION
+  strait_access_desc: "" # todo: NEW TRANSLATION
+  strait_access_effects_desc: "• Zřizuje dohodu mezi dvěma [Concept('concept_country', '$concept_countries$')], kde jednomu $concept_country$ je udělen plný přístup přes průlivy kontrolované druhým $concept_country$" # todo: NEW TRANSLATION
+  strait_access_article_short_desc: "[TARGET_COUNTRY.GetNameNoFormatting] má poskytnut přístup přes $concept_straits$ kontrolované [SOURCE_COUNTRY.GetNameNoFormatting]" # todo: NEW TRANSLATION
+  TREATY_DRAFT_ARTICLE_FLAG_IS_STRAIT_ACCESS_EFFECT: "• [TARGET_COUNTRY.GetName] má poskytnut přístup přes $concept_straits$ kontrolované [SOURCE_COUNTRY.GetName]" # todo: NEW TRANSLATION
+  TREATY_ARTICLE_FLAG_IS_STRAIT_ACCESS_EFFECT: "• [TARGET_COUNTRY.GetName] má poskytnut přístup přes [Concept('concept_strait', '$concept_straits$')] kontrolované [SOURCE_COUNTRY.GetName]" # todo: NEW TRANSLATION
+  no_strait_closure: "Zákaz uzavírání průlivů" # todo: NEW TRANSLATION
+  no_strait_closure_desc: "" # todo: NEW TRANSLATION
+  no_strait_closure_effects_desc: "• Zřizuje dohodu mezi dvěma [Concept('concept_country', '$concept_countries$')], kde se jedno $concept_country$ zavazuje neomezovat přístup k žádnému [Concept('concept_strait', '$concept_straits$')] které kontroluje." # todo: NEW TRANSLATION
+  no_strait_closure_article_short_desc: "[SOURCE_COUNTRY.GetNameNoFormatting] #bold_black nebude#! omezovat přístup k $concept_straits$ které kontroluje" # todo: NEW TRANSLATION
+  TREATY_DRAFT_ARTICLE_FLAG_IS_NO_STRAIT_CLOSURE_EFFECT: "• [SOURCE_COUNTRY.GetName] #bold_black nebude#! omezovat přístup k [Concept('concept_strait', '$concept_straits$')] které kontroluje" # todo: NEW TRANSLATION
+  TREATY_ARTICLE_FLAG_IS_NO_STRAIT_CLOSURE_EFFECT: "• [SOURCE_COUNTRY.GetName] #bold_black nebude#! omezovat přístup k [Concept('concept_strait', '$concept_straits$')] které kontroluje" # todo: NEW TRANSLATION
+  toll_exemption: "Osvobození od mýtného" # todo: NEW TRANSLATION
+  toll_exemption_desc: "" # todo: NEW TRANSLATION
+  toll_exemption_effects_desc: "• Osvobozuje [concept_country] od placení [concept_tolls] druhému $concept_country$." # todo: NEW TRANSLATION
+  toll_exemption_article_short_desc: "Osvobozuje [TARGET_COUNTRY.GetNameNoFormatting] od placení $concept_tolls$ [SOURCE_COUNTRY.GetNameNoFormatting]" # todo: NEW TRANSLATION
+  TREATY_DRAFT_ARTICLE_FLAG_IS_TOLL_EXEMPTION_EFFECT: "• Osvobozuje [TARGET_COUNTRY.GetName] od placení [concept_tolls] druhému [SOURCE_COUNTRY.GetName]" # todo: NEW TRANSLATION
+  TREATY_ARTICLE_FLAG_IS_TOLL_EXEMPTION_EFFECT: "• Osvobozuje [TARGET_COUNTRY.GetName] od placení [concept_tolls] druhému [SOURCE_COUNTRY.GetName]" # todo: NEW TRANSLATION
+  no_tolls: "Žádné mýtné" # todo: NEW TRANSLATION
+  no_tolls_desc: "" # todo: NEW TRANSLATION
+  no_tolls_effects_desc: "• Zřizuje dohodu mezi dvěma [Concept('concept_country', '$concept_countries$')], kde se jedno $concept_country$ zavazuje nevybírat [concept_tolls] na žádných [Concept('concept_strait', '$concept_straits$')] které kontroluje." # todo: NEW TRANSLATION
+  no_tolls_article_short_desc: "[SOURCE_COUNTRY.GetNameNoFormatting] #bold_black nebude#! uvalovat $concept_tolls$ na žádné $concept_straits$ které kontroluje" # todo: NEW TRANSLATION
+  TREATY_DRAFT_ARTICLE_FLAG_IS_NO_TOLLS_EFFECT: "• [SOURCE_COUNTRY.GetName] #b nebude#! uvalovat [concept_tolls] na [Concept('concept_strait', '$concept_straits$')]" # todo: NEW TRANSLATION
+  TREATY_ARTICLE_FLAG_IS_NO_TOLLS_EFFECT: "• [SOURCE_COUNTRY.GetName] #b nebude#! uvalovat [concept_tolls] na [Concept('concept_strait', '$concept_straits$')]" # todo: NEW TRANSLATION
+  non_piracy_agreement: "Dohoda proti pirátství" # todo: NEW TRANSLATION
+  non_piracy_agreement_desc: "" # todo: NEW TRANSLATION
+  non_piracy_agreement_effects_desc: "• Dohoda, ve které se jedno $concept_country$ přestane zapojovat do [concept_piracy] vůči druhému [concept_country]" # todo: NEW TRANSLATION
+  non_piracy_agreement_article_short_desc: "[SOURCE_COUNTRY.GetNameNoFormatting] přestane páchat $concept_piracy$ vůči [TARGET_COUNTRY.GetNameNoFormatting]" # todo: NEW TRANSLATION
+  TREATY_DRAFT_ARTICLE_FLAG_IS_NON_PIRACY_AGREEMENT_EFFECT: "• $non_piracy_agreement_article_short_desc$" # todo: NEW TRANSLATION
+  TREATY_ARTICLE_FLAG_IS_NON_PIRACY_AGREEMENT_EFFECT: "• $non_piracy_agreement_article_short_desc$" # todo: NEW TRANSLATION
+  abandon_piracy: "Zanechat pirátství" # todo: NEW TRANSLATION
+  abandon_piracy_desc: "" # todo: NEW TRANSLATION
+  abandon_piracy_effects_desc: "• Dohoda, ve které se jedno $concept_country$ vzdá $concept_piracy$." # todo: NEW TRANSLATION
+  abandon_piracy_article_short_desc: "[SOURCE_COUNTRY.GetNameNoFormatting] se vzdává $concept_piracy$" # todo: NEW TRANSLATION
+  TREATY_DRAFT_ARTICLE_FLAG_IS_ABANDON_PIRACY_GLOBAL_EFFECT: "• $abandon_piracy_article_short_desc$" # todo: NEW TRANSLATION
+  TREATY_ARTICLE_FLAG_IS_ABANDON_PIRACY_GLOBAL_EFFECT: "• $abandon_piracy_article_short_desc$" # todo: NEW TRANSLATION
+  ARTICLE_TYPE_INVOLVEMENT_EFFECT_SOURCE: "• Zvyšuje [concept_involvement] cílového [concept_country] maximálně o $AMOUNT|v0$ ve všech [Concept('concept_strategic_region', '$concept_strategic_regions$')] kde je zdrojové $concept_country$ [Concept('concept_local_country', '$concept_local_country_short$')]" # todo: NEW TRANSLATION
+  ARTICLE_TYPE_INVOLVEMENT_EFFECT_TARGET: "• Zvyšuje [concept_involvement] zdrojového [concept_country] maximálně o $AMOUNT|v0$ ve všech [Concept('concept_strategic_region', '$concept_strategic_regions$')] kde je cílové $concept_country$ [Concept('concept_local_country', '$concept_local_country_short$')]" # todo: NEW TRANSLATION
+  ARTICLE_TYPE_INVOLVEMENT_EFFECT_MUTUAL: "• Zvyšuje [concept_involvement] obou [Concept('concept_country', '$concept_countries$')] maximálně o $AMOUNT|v0$ ve všech [Concept('concept_strategic_region', '$concept_strategic_regions$')] kde je druhé $concept_country$ [Concept('concept_local_country', '$concept_local_country_short$')]" # todo: NEW TRANSLATION
+  ARTICLE_INVOLVEMENT_EFFECT: "• Zvyšuje [concept_involvement] [TARGET_COUNTRY.GetName] maximálně o $AMOUNT|v0$ ve všech [Concept('concept_strategic_region', '$concept_strategic_regions$')] kde [SOURCE_COUNTRY.GetName] je [Concept('concept_local_country', '$concept_local_country_short$')]" # todo: NEW TRANSLATION
+  THREATEN_NAVAL_HOSTILITIES: "Vyhrožovat [concept_naval_hostilities]" # todo: NEW TRANSLATION
+  THREATEN_NAVAL_HOSTILITIES_TOOLTIP: "#header Vyhrožovat [COUNTRY.GetName] [concept_naval_hostilities]#!\n#tooltippable;tooltip:$ACCEPTANCE_BREAKDOWN$ $ACCEPTANCE_VAL|+=$#! k přijetí ze strany [COUNTRY.GetAdjective]\n\n$INCIDENT_DESC$\n\nPokud bude náš návrh zamítnut, dojde k dočasným [concept_naval_hostilities] na $DURATION|v$ dní.\n\n@information! $THREATEN_HOSTILITIES_NO_NEGOTIATION$" # todo: NEW TRANSLATION
+  THREATEN_NAVAL_HOSTILITIES_ACCEPTANCE: "#tooltippable;tooltip:$BREAKDOWN$ $VALUE|D+=$#! z vyhrožování [concept_naval_hostilities]" # todo: NEW TRANSLATION
+  THREATEN_NAVAL_HOSTILITIES_ALREADY_PENDING: "Již máme čekající návrh [concept_treaty], který vyhrožuje [concept_naval_hostilities]" # todo: NEW TRANSLATION
+  THREATEN_NAVAL_HOSTILITIES_ON_COOLDOWN: "Nedávno jsme této zemi vyhrožovali [concept_naval_hostilities], znovu to můžeme udělat $DATE|v$ (za $DAYS|v$ dní)" # todo: NEW TRANSLATION
+  THREATEN_NAVAL_HOSTILITIES_SUBJECT_PROTECTED: "[TARGET_COUNTRY.GetName] je pod ochranou [COUNTRY.GetName]" # todo: NEW TRANSLATION
+  THREATEN_NAVAL_HOSTILITIES_NOTIFICATION: "[COUNTRY.GetName] zahájí [concept_naval_hostilities], pokud bude tento návrh [concept_treaty] odmítnut!" # todo: NEW TRANSLATION
+  THREATEN_HOSTILITIES_NO_NEGOTIATION: "Vyjednávání je u návrhů podpořených hrozbami zakázáno. Návrh musí být buď přijat, nebo odmítnut." # todo: NEW TRANSLATION
+  THREATEN_NAVAL_HOSTILITIES_NAVY_MUST_BE_STRONGER: "Musíme mít silnější námořnictvo než [SCOPE.sCountry('other_country').GetName] (aktuálně [SCOPE.GetRootScope.GetCountry.GetRelativeNavyCombatPower(SCOPE.sCountry('other_country'))|%v] jejich síly)" # todo: NEW TRANSLATION
+  THREATEN_NAVAL_HOSTILITIES_NOT_LANDLOCKED: "[SCOPE.sCountry('other_country').GetName] musí mít $coastal_state$" # todo: NEW TRANSLATION
+  orchestrate_coup: "Organizovat převrat" # todo: NEW TRANSLATION
+  orchestrate_coup_action_name: "Organizovat převrat" # todo: NEW TRANSLATION
+  orchestrate_coup_action_propose_name: "Organizovat převrat" # todo: NEW TRANSLATION
+  orchestrate_coup_desc: "Organizuje pokus o [concept_coup] provedený přátelským [concept_political_lobby] v cílové zemi, za cenu [concept_infamy]." # todo: NEW TRANSLATION
+  orchestrate_coup_action_notification_name: "Převrat zorganizován" # todo: NEW TRANSLATION
+  orchestrate_coup_action_notification_desc: "[INITIATOR_COUNTRY.GetName] spolupracuje s pro-[INITIATOR_COUNTRY.GetAdjectiveNoFlag] [concept_political_lobby] na zorganizování [concept_coup] v naší zemi. Jejich [concept_attitude] vůči [GetPlayer.GetName] je #tooltippable #tooltip:[INITIATOR_COUNTRY.GetTooltipTag],COUNTRY_ATTITUDE_TOOLTIP [INITIATOR_COUNTRY.GetAttitudeTowards(GetPlayer).GetName]#!#!." # todo: NEW TRANSLATION
+  orchestrate_coup_action_break_name: "Ukončit organizování převratu" # todo: NEW TRANSLATION
+  orchestrate_coup_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] spolupracuje s pro-[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetAdjectiveNoFlag] [concept_political_lobby] na zorganizování [concept_coup] v [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName]." # todo: NEW TRANSLATION
+  orchestrate_coup_action_notification_break_name: "[INITIATOR_COUNTRY.GetName] přestal organizovat [concept_coup]" # todo: NEW TRANSLATION
+  orchestrate_coup_action_notification_break_desc: "[INITIATOR_COUNTRY.GetName] přestal organizovat [concept_coup] v naší [concept_country]." # todo: NEW TRANSLATION
+  COUP_IS_ONGOING_TT: "Organizovaný [concept_coup] probíhá" # todo: NEW TRANSLATION
+  begin_coup_tt: "[SCOPE.sCharacter('orchestrated_coupist').GetPrimaryRoleTitle] [SCOPE.sCharacter('orchestrated_coupist').GetFullName] zahájí [concept_coup], aby v [SCOPE.sCountry('target_country').GetName] dosadil pro-[ROOT.GetCountry.GetName]" # todo: NEW TRANSLATION
+  begin_coup_scopeless_tt: "Jeden [SCOPE.sCountry('target_country').GetAdjective] [concept_commander] zahájí [concept_coup], aby v [SCOPE.sCountry('target_country').GetNameNoFlag] dosadil vládu pro-[ROOT.GetCountry.GetAdjective]" # todo: NEW TRANSLATION
+  lobby_is_friendly_tt: "[Concept('concept_political_lobby', '$concept_political_lobby_short$')] podporuje [ROOT.GetCountry.GetName]" # todo: NEW TRANSLATION
+  HAS_PRO_LOBBY: "[SCOPE.sCountry('target_country').GetName] má pro-[SCOPE.sCountry('actor').GetAdjective] [concept_political_lobby]" # todo: NEW TRANSLATION
+  revoke_coup_support_tt: "Zruší podporu pro probíhající [concept_coup], což pravděpodobně povede k tomu, že $concept_coup$ bude #b neúspěšný#! nebo #b přerušen#!" # todo: NEW TRANSLATION
+  orchestrate_coup_warning_tt: "@warning! Pokud [concept_coup] #b selže#! nebo bude #b přerušen#!, bude vyvolán negativní [concept_diplomatic_catalyst] vůči [SCOPE.sCountry('target_country').GetName]" # todo: NEW TRANSLATION

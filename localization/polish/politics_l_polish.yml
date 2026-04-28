@@ -193,3 +193,101 @@
   AMENDMENTS_CONCEPT: "[Concept('concept_amendment','$concept_amendments$')]"
   ACTIVE_LAW_AMENDMENTS: "#title [Law.GetName] má #v [GetDataModelSize(Law.GetAllAmendments)]#!#! [SelectLocalization(EqualTo_int32(GetDataModelSize(Law.GetAllAmendments), '(int32)1'), 'AMENDMENT_CONCEPT', 'AMENDMENTS_CONCEPT')]:"
   AMENDMENT_TYPE_SPONSOR_MODIFIER_NAME: "$KEY$ Sponzor"
+  POLITICAL_MOVEMENT_WEEKLY_RADICALISM: "#indent_newline:3 #title $VALUE|-=%$ [concept_activism] za týden#!" # todo: NEW TRANSLATION
+  POLITICAL_MOVEMENT_WEEKLY_RADICALISM_DEFINE: "$BASE|-=%$ základní hodnota" # todo: NEW TRANSLATION
+  COUNTRY_LOYALISTS: "Podíl [concept_loyalist] v zemi" # todo: NEW TRANSLATION
+  COUNTRY_RADICALS: "Podíl [concept_radical] v zemi" # todo: NEW TRANSLATION
+  IG_APPROVAL_BELOW_UNHAPPY: "[concept_approval] je $ig_approval_unhappy$ (#v [GetDefine('NPolitics','APPROVAL_THRESHOLD_UNHAPPY')|0=+]#!) nebo méně" # todo: NEW TRANSLATION
+  IG_APPROVAL_ABOVE_HAPPY: "[concept_approval] je $ig_approval_happy$ (#v [GetDefine('NPolitics','APPROVAL_THRESHOLD_HAPPY')|0=+]#!) nebo více" # todo: NEW TRANSLATION
+  ALEXANDER_III: "Car Alexandr III" # todo: NEW TRANSLATION
+  ALEXANDER_II: "Car Alexandr II" # todo: NEW TRANSLATION
+  DREYFUSARD_VICTORY: "Vítězství dreyfusardů v #v $je_dreyfus_affair$#!" # todo: NEW TRANSLATION
+  ANTI_DREYFUSARD_VICTORY: "Vítězství anti-dreyfusardů v #v $je_dreyfus_affair$#!" # todo: NEW TRANSLATION
+  FAVORED_LAWS: "Preferované současné zákony" # todo: NEW TRANSLATION
+  DISFAVORED_LAWS: "Neoblíbené současné zákony" # todo: NEW TRANSLATION
+  POWERFUL_INDUSTRIALISTS: "Mocní $ig_industrialists$" # todo: NEW TRANSLATION
+  TRADITIONAL_ECONOMY: "Tradiční ekonomika" # todo: NEW TRANSLATION
+  NON_URBANIZED_COUNTRY: "Neurbanizovaná země" # todo: NEW TRANSLATION
+  CONSERVATIVE_IG: "Konzervativní tendence" # todo: NEW TRANSLATION
+  CURRENT_RULER: "Současný vládce" # todo: NEW TRANSLATION
+  SPA_LIBERAL_VICTORY: "Liberální vítězství v #v $je_the_two_spains$#!" # todo: NEW TRANSLATION
+  SPA_CONSERVATIVE_VICTORY: "Konzervativní vítězství v #v $je_the_two_spains$#!" # todo: NEW TRANSLATION
+  POR_LIBERAL_VICTORY: "Vítězství konstitucionalistů v #v $je_second_liberalism$#!" # todo: NEW TRANSLATION
+  UNHAPPY_WITH_NON_MIGUELIST_MONARCHY: "Nespokojeni s monarchií, která není [GetIdeology('ideology_miguelist').GetName]" # todo: NEW TRANSLATION
+  HUNGARIAN_REVOLUTION: "Dokončeno #v $je_hungarian_revolution$#!" # todo: NEW TRANSLATION
+  CHOSE_A_DIFFERENT_PATH: "Zvolena jiná cesta" # todo: NEW TRANSLATION
+  POWERFUL_DEVOUT: "Mocní $ig_devout$" # todo: NEW TRANSLATION
+  UNHAPPY_INTELLIGENTSIA: "[concept_approval] je $ig_approval_unhappy$ (#v [GetDefine('NPolitics','APPROVAL_THRESHOLD_UNHAPPY')|0=+]#!) nebo méně" # todo: NEW TRANSLATION
+  FACTORY_COUNCILS_LAW: "[GetLawType('law_factory_councils').GetName] [concept_law]" # todo: NEW TRANSLATION
+  COMBINATION_ACTS_LAW: "[GetLawType('law_combination_acts').GetName] [concept_law]" # todo: NEW TRANSLATION
+  GUILDS_OR_ANTI_STRIKE_LAW: "[GetLawType('law_guild_system').GetName] nebo [GetLawType('law_anti_strike_laws').GetName]" # todo: NEW TRANSLATION
+  RIGHT_TO_ASSOCIATE_LAW: "[GetLawType('law_right_to_associate').GetName] [concept_law]" # todo: NEW TRANSLATION
+  CORPORATIZED_UNIONS_LAW: "[GetLawType('law_corporatized_unions').GetName] [concept_law]" # todo: NEW TRANSLATION
+  DISAPPROVES_OF_MONARCHY: "[concept_approval] pod #v 0#! s aktivním [GetLawType('law_monarchy').GetName] [concept_law]" # todo: NEW TRANSLATION
+  BRZ_ENDURING_EMPIRE: "Dokončeno #v $je_pedro_brazil$#!" # todo: NEW TRANSLATION
+  SPRINGTIME_OF_THE_PEOPLES_RADICAL_VICTORY: "Radikální vítězství v #v $je_springtime_of_the_peoples$#!" # todo: NEW TRANSLATION
+  SPRINGTIME_OF_THE_PEOPLES_CONSERVATIVE_VICTORY: "Konzervativní vítězství v #v $je_springtime_of_the_peoples$#!" # todo: NEW TRANSLATION
+  SOCIALISM_RESEARCHED: "Výzkum [GetTechnology('socialism').GetName] dokončen" # todo: NEW TRANSLATION
+  UNHAPPY_INTELLIGENTSIA_OR_TU: "[concept_approval] pod #v 0#! s prozkoumaným [GetTechnology('socialism').GetName]" # todo: NEW TRANSLATION
+  HUMANITARIAN_AVAILABLE: "[GetIdeology('ideology_humanitarian').GetName] [concept_ideology] dostupná" # todo: NEW TRANSLATION
+  FEMALE_IG_LEADER: "Ženský [concept_interest_group] [concept_leader] s prozkoumaným [GetTechnology('mass_propaganda').GetName]" # todo: NEW TRANSLATION
+  ACW_COUNTDOWN: "#v $je_acw_countdown$#! [concept_journal_entry]" # todo: NEW TRANSLATION
+  INTELLIGENTSIA_OR_PB_IG: "$ig_intelligentsia$ nebo $ig_petty_bourgeoisie$" # todo: NEW TRANSLATION
+  RURAL_FOLK_OR_ARMED_FORCES_IG: "$ig_rural_folk$ nebo $ig_armed_forces$" # todo: NEW TRANSLATION
+  POWERFUL_ARMED_FORCES: "Mocné $ig_armed_forces$" # todo: NEW TRANSLATION
+  LOSING_WAR: "Nízký [concept_war_support]" # todo: NEW TRANSLATION
+  DEVASTATED_STATES: "Stát [concept_devastation]" # todo: NEW TRANSLATION
+  NEARBY_DECENTRALIZED_COUNTRY: "Blízký [concept_decentralized_nation]" # todo: NEW TRANSLATION
+  BORDERS_RIVAL: "Hraničí s [Concept('concept_rivalry','$concept_rival$')]" # todo: NEW TRANSLATION
+  DEFENDING_IN_WAR: "Obranná válka" # todo: NEW TRANSLATION
+  ALEXEI_II: "Car Alexej II" # todo: NEW TRANSLATION
+  THEOCRACY_LAW: "[GetLawType('law_theocracy').GetName] [concept_law]" # todo: NEW TRANSLATION
+  HAPPY_IN_REPUBLIC: "[concept_approval] je #v 0#! nebo více bez aktivního [GetLawType('law_monarchy').GetName] [concept_law]" # todo: NEW TRANSLATION
+  HAPPY_IN_MONARCHY: "[concept_approval] je $ig_approval_happy$ (#v [GetDefine('NPolitics','APPROVAL_THRESHOLD_HAPPY')|0=+]#!) nebo více s aktivním [GetLawType('law_monarchy').GetName] [concept_law]" # todo: NEW TRANSLATION
+  CONTENT_IN_CR: "[concept_approval] je nad #v 0#! s aktivním [GetLawType('law_council_republic').GetName] [concept_law]" # todo: NEW TRANSLATION
+  CONTENT_TU: "[concept_approval] je nad #v 0#! bez aktivního [GetLawType('law_council_republic').GetName] [concept_law]" # todo: NEW TRANSLATION
+  COUNCIL_REPUBLIC_LAW: "[GetLawType('law_council_republic').GetName] [concept_law]" # todo: NEW TRANSLATION
+  NATIONAL_LIBERATION_ALLIANCE: "Aliance národního osvobození" # todo: NEW TRANSLATION
+  INTERNATIONAL_SUPPORT: "Mezinárodní podpora" # todo: NEW TRANSLATION
+  COMMUNISM_1_COMPLETE: "Komunistické vítězství v #v $je_communism_1$#!" # todo: NEW TRANSLATION
+  AUTOCRACY_OR_OLIGARCHY_LAW: "[GetLawType('law_autocracy').GetName] nebo [GetLawType('law_oligarchy').GetName] [concept_law]" # todo: NEW TRANSLATION
+  AUTOCRACY_OLIGARCHY_SPS_TECHNOCRACY_LAW: "[concept_in_government] s aktivním [GetLawType('law_council_republic').GetName] [concept_law]" # todo: NEW TRANSLATION
+  HAPPY_WITHOUT_FASCISM: "[concept_approval] je #v 0#! nebo více bez aktivních [GetLawType('law_corporate_state').GetName] nebo [GetLawType('law_ethnostate').GetName] [concept_law]" # todo: NEW TRANSLATION
+  WAR_REPARATIONS: "[Concept('concept_enforced_treaty', '$concept_enforced_treaty_short$')] $war_reparations$ [concept_treaty] [concept_article]" # todo: NEW TRANSLATION
+  PRESENT_MINORITIES: "Diskriminované menšiny v [Concept('concept_incorporated_state', '$concept_incorporated_states$')]" # todo: NEW TRANSLATION
+  BANKRUPTCY: "V [concept_bankruptcy]" # todo: NEW TRANSLATION
+  PB_OR_ARMED_FORCES: "$ig_petty_bourgeoisie$ nebo $ig_armed_forces$" # todo: NEW TRANSLATION
+  TU_OR_INTELLIGENTSIA: "$ig_intelligentsia$ nebo $ig_trade_unions$" # todo: NEW TRANSLATION
+  GOVERNING_ETHNOSTATE_OR_CS: "[concept_in_government] s aktivním [GetIdeology('ideology_fascist').GetName] [Concept('concept_law', '$concept_laws$')]" # todo: NEW TRANSLATION
+  RED_SCARE: "Obviňování z komunismu" # todo: NEW TRANSLATION
+  FASCISM_JE: "Aktivní nebo dokončeno #v $je_fascism_1$#! [concept_journal_entry]" # todo: NEW TRANSLATION
+  IN_GOVERNMENT_ANARCHY: "„[concept_in_government]“ s aktivním [GetLawType('law_anarchy').GetName] [concept_law]" # todo: NEW TRANSLATION
+  UNOWNED_CLAIMS: "Neobsazené nároky" # todo: NEW TRANSLATION
+  HEAVY_INDUSTRIES: "Těžký průmysl" # todo: NEW TRANSLATION
+  HEAVY_INDUSTRIES_UNEMPLOYMENT: "Vysoká [concept_unemployment] s $bg_heavy_industry$" # todo: NEW TRANSLATION
+  POLLUTION: "[concept_generated_pollution]" # todo: NEW TRANSLATION
+  ARMED_FORCES_OR_PB_OR_LANDOWNERS: "$ig_armed_forces$, $ig_petty_bourgeoisie$, nebo $ig_landowners$" # todo: NEW TRANSLATION
+  PB_OR_INDUSTRIALISTS_OR_INTELLIGENTSIA: "$ig_petty_bourgeoisie$, $ig_industrialists$, nebo $ig_intelligentsia$" # todo: NEW TRANSLATION
+  CATHOLIC_OR_EX_CATHOLIC: "[GetReligion('catholic').GetName] nebo dříve $catholic$" # todo: NEW TRANSLATION
+  IG_APPROVAL_W_TECHNOCRACY: "[concept_interest_group] [concept_approval] s [GetLawType('law_technocracy').GetName] [concept_law]" # todo: NEW TRANSLATION
+  CONSTITUTIONAL_MONARCHY: "[GetLawType('law_monarchy').GetName] s [concept_election_voting_franchise]" # todo: NEW TRANSLATION
+  PRACTISING_POSITIVISTS: "Praktikující pozitivisté" # todo: NEW TRANSLATION
+  POSITIVIST_OFFICERS: "Pozitivistická vojenská věda" # todo: NEW TRANSLATION
+  COMPLETED_POSITIVIST_MOVEMENT: "Dokončeno #v $je_positivist_movement$#! [concept_journal_entry]" # todo: NEW TRANSLATION
+  UNHAPPY_RF: "[concept_approval] pod #v 0#! s aktivními [GetLawType('law_serfdom').GetName], [GetLawType('law_tenant_farmers').GetName] nebo [GetLawType('law_land_based_taxation').GetName] [concept_law]" # todo: NEW TRANSLATION
+  POWERFUL_LANDOWNERS: "Mocní $ig_landowners$" # todo: NEW TRANSLATION
+  AGRARIAN_ECONOMY: "Agrární ekonomika" # todo: NEW TRANSLATION
+  LAND_REFORM_COMPLETED: "Dokončena pozemková reforma" # todo: NEW TRANSLATION
+  PB_DEVOUT_OR_ARMED_FORCES: "$ig_petty_bourgeoisie$, $ig_devout$ nebo $ig_armed_forces$" # todo: NEW TRANSLATION
+  GOVERNING_INTEGRALIST_STATE: "[concept_in_government] s aktivní [GetIdeology('ideology_integralist').GetName] [Concept('concept_law', '$concept_laws$')]" # todo: NEW TRANSLATION
+  NEW_REPUBLIC_JE: "#v $je_new_republic$#!" # todo: NEW TRANSLATION
+  MONARCHY_LAW: "[GetLawType('law_monarchy').GetName] nebo [GetLawType('law_social_monarchy').GetName] [concept_law]" # todo: NEW TRANSLATION
+  NO_MONARCHY_LAW: "Bez aktivního [GetLawType('law_monarchy').GetName] nebo [GetLawType('law_social_monarchy').GetName] [concept_law]" # todo: NEW TRANSLATION
+  IG_APPROVAL_W_DEMOCRACY: "[concept_interest_group] [concept_approval] s [concept_election_voting_franchise]" # todo: NEW TRANSLATION
+  POR_INCREASED_REGENERATOR_CHANCE: "Aktivní nebo dokončeno #v $je_portugal_regeneration$#! [concept_journal_entry]" # todo: NEW TRANSLATION
+  DEVOUT_OR_LANDOWNERS: "$ig_devout$ nebo $ig_landowners$" # todo: NEW TRANSLATION
+  UNHAPPY_WITH_NON_CARLIST_MONARCHY: "[concept_approval] pod #v 0#! s [GetLawType('law_monarchy').GetName], která není [GetIdeology('ideology_carlist').GetName]" # todo: NEW TRANSLATION
+  APPROVAL_BELOW_ZERO: "[concept_approval] pod #v 0#!" # todo: NEW TRANSLATION
+  UNHAPPY_WITH_NON_ORLEANIST_MONARCHY: "[concept_approval] pod #v 0#! s [GetLawType('law_monarchy').GetName], která není [GetIdeology('ideology_orleanist').GetName]" # todo: NEW TRANSLATION
+  UNHAPPY_WITH_NON_LEGITIMIST_MONARCHY: "[concept_approval] pod #v 0#! s [GetLawType('law_monarchy').GetName], která není [GetIdeology('ideology_legitimist').GetName]" # todo: NEW TRANSLATION
+  UNHAPPY_WITH_NON_BONAPARTIST_MONARCHY: "[concept_approval] pod #v 0#! s [GetLawType('law_monarchy').GetName], která není [GetIdeology('ideology_bonapartist').GetName]" # todo: NEW TRANSLATION

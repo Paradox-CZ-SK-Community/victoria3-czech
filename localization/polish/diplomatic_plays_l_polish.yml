@@ -87,7 +87,7 @@
   DIPLO_PLAY_CONFIDENCE_VERY_HIGH_DESC: "#header [Country.GetAltAdjective('ee')] [concept_confidence|l] úroveň: #P Arogantní#! ($SCORE|v$)#!\n$TOOLTIP_DELIMITER$\n$DETAILS$\n\n@information![Country.GetName] se cítí #P velmi optimisticky#! o svých šancích vyjít vítězně v této [Concept('concept_diplomatic_play','diplomatický hře')] za současných okolností. Není žádná šance, že ustoupí, pokud nedojde ke změně v současné rovnováze sil na každé straně."
   DIPLO_PLAY_CONFIDENCE_VERY_LOW: "#N Vyděšený#!"
   DIPLO_PLAY_CONFIDENCE_VERY_LOW_DESC: "#header [Country.GetAltAdjective('ee')] [concept_confidence|l] úroveň: #N Ustrašený#! ($SCORE|v$)#!\n$TOOLTIP_DELIMITER$\n$DETAILS$\n\n@information! [Country.GetName] se cítí #N velmi pesimisticky#! ohledně jejich šancí vyjít vítězně v této [Concept('concept_diplomatic_play','diplomatický hře')] za současných okolností. Je téměř jisté, že ustoupí, pokud nedojde ke změně v současné rovnováze sil na každé straně."
-  DIPLO_PLAY_COUNTRY_TOOLTIP: "#header [Country.GetName]#!\n[DiplomaticPlay.GetSupportStanceDesc( Country.Self )]\n$TOOLTIP_DELIMITER$\n@battalions! #v #tooltippable #tooltip:[Country.GetTooltipTag],PANEL_MILITARY_ARMY_OVERVIEW_TOOLTIP [Country.GetBattalions|0]#!#!#! [Concept('concept_battalion', '$concept_battalions$')] (#v [Country.GetMobilizationRatio|0%]#! @mobilization! [Concept('concept_mobilize_battalion', '$concept_mobilize_battalion_mobilized$')])\n@flotillas! #v #tooltippable #tooltip:[Country.GetTooltipTag],PANEL_MILITARY_NAVY_CURRENT_FLOTILLAS_TOOLTIP [Country.GetWarships]#!#!#! [Concept('concept_flotilla', '$concept_flotillas$')]"
+  DIPLO_PLAY_COUNTRY_TOOLTIP: "#header [Country.GetName]#!\n[DiplomaticPlay.GetSupportStanceDesc( Country.Self )]\n$TOOLTIP_DELIMITER$\n@battalions! #v #tooltippable #tooltip:[Country.GetTooltipTag],PANEL_MILITARY_ARMY_OVERVIEW_TOOLTIP [Country.GetBattalions|0]#!#!#! [Concept('concept_battalion', '$concept_battalions$')] (#v [Country.GetMobilizationRatio|0%]#! @mobilization! [Concept('concept_mobilize_battalion', '$concept_mobilize_battalion_mobilized$')])\n@ships! #v #tooltippable #tooltip:[Country.GetTooltipTag],PANEL_MILITARY_NAVY_CURRENT_SHIPS_TOOLTIP [Country.GetNumShips]#!#!#! [Concept('concept_ship', '$concept_ships$')]"
   DIPLO_PLAY_DECLARE_NEUTRALITY: "Vyhlásit neutralitu"
   DIPLO_PLAY_GIVE_IN: "Ustoupit"
   DIPLO_PLAY_HUMILIATED_BY: "Země [COUNTRY.GetName] byla [Concept('concept_humiliation', 'ponížena')] [TARGET_COUNTRY.GetAltAdjective('I')|v]"
@@ -548,3 +548,11 @@
   CLICK_TO_SELECT_ARTICLE_INPUT_COUNTRY: "Klikněte pro výběr [concept_country]"
   DIPLO_PLAY_INVALID_WARGOAL_DESC: "Neplatný [concept_diplomatic_play]"
   WARGOAL_DIPLOMATIC_PLAY_DOES_NOT_EXIST: " Toto [concept_war_goal] nemá platný [concept_diplomatic_play]"
+  war_goal_restore_union_type_name: "Obnova unie" # todo: NEW TRANSLATION
+  war_goal_restore_union_type_desc: "Přinutit jiný [concept_country], aby znovu uvedl našeho [concept_ruler] na trůn." # todo: NEW TRANSLATION
+  war_goal_restore_union: "Obnovit [concept_personal_union]" # todo: NEW TRANSLATION
+  war_goal_restore_union_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] nutí [WAR_GOAL_DRAFT.GetTarget.GetName] obnovit [WAR_GOAL_DRAFT.GetHolder.GetAdjectiveNoFormatting] [concept_ruler] na trůn." # todo: NEW TRANSLATION
+  war_goal_restore_union_sway_desc: "Snažte se přesvědčit [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že přinutíte [WAR_GOAL_DRAFT.GetTarget.GetName] obnovit [WAR_GOAL_DRAFT.GetHolder.GetAdjectiveNoFormatting] [concept_ruler] na trůn." # todo: NEW TRANSLATION
+  dp_restore_union: "$war_goal_restore_union_type_name$" # todo: NEW TRANSLATION
+  dp_restore_union_tooltip: "#header Zahajte $dp_restore_union$ [concept_diplomatic_play]#!\n$TOOLTIP_DELIMITER$\n$dp_restore_union_desc$" # todo: NEW TRANSLATION
+  dp_restore_union_desc: "Nastaví zahajující [concept_war_goal] tak, aby přinutil cílový [concept_country] obnovit [WAR_GOAL_DRAFT.GetHolder.GetAdjectiveNoFormatting] [concept_ruler] na trůn." # todo: NEW TRANSLATION
