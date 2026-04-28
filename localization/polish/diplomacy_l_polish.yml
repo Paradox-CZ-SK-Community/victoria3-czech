@@ -200,7 +200,7 @@
   TREATY_COUNTRY_HAS_OWED_OBLIGATION: "[Country.GetName] dluží @obligation! [Concept('concept_obligation','závazek')] vůči [Treaty.GetOtherCountry(Country.Self).GetAltAdjective('D')]"
   TREATY_COUNTRY_WILL_CALL_IN_OBLIGATION: "[Country.GetName] si uplatní @obligation! [Concept('concept_obligation','závazek')] vůči [Treaty.GetOtherCountry(Country.Self).GetAltAdjective('D')]"
   TREATY_COUNTRY_WILL_OWE_OBLIGATION: "[Country.GetName] bude dlužit @obligation! [Concept('concept_obligation','závazek')] vůči [Treaty.GetOtherCountry(Country.Self).GetAltAdjective('D')]"
-  OBLIGATION_DELAY_EXPLANATION: "[concept_obligation] se stane skutečností po skončení [Concept('concept_binding_period','závazného období')] [Concept('concept_treaty','smlouvy'))], nebo nejpozději za #v [Divide_int32(GetDefine('NDiplomacy', 'MAX_TREATY_OBLIGATIONS_DELAY_DAYS'), '(int32)365')|0]#! let od data podpisu [Treaty.GetStartDate]"
+  OBLIGATION_DELAY_EXPLANATION: "[concept_obligation] se stane skutečností po skončení [Concept('concept_binding_period','závazného období')] [Concept('concept_treaty','smlouvy')], nebo nejpozději za #v [Divide_int32(GetDefine('NDiplomacy', 'MAX_TREATY_OBLIGATIONS_DELAY_DAYS'), '(int32)365')|0]#! let od data podpisu [Treaty.GetStartDate]"
   TREATY_COUNTRY_HAS_OWED_OBLIGATION_WITH_EXPLANATION: "#header $TREATY_COUNTRY_HAS_OWED_OBLIGATION$#!\n$TOOLTIP_DELIMITER$\n$OBLIGATION_DELAY_EXPLANATION$"
   TREATY_COUNTRY_WILL_OWE_OBLIGATION_WITH_EXPLANATION: "#header $TREATY_COUNTRY_WILL_OWE_OBLIGATION$#!\n$TOOLTIP_DELIMITER$\n$OBLIGATION_DELAY_EXPLANATION$"
   TREATY_HAS_OR_WILL_CALL_IN_OBLIGATION: "[SelectLocalization(Treaty.AreObligationsEffectuated, 'TREATY_COUNTRY_HAS_CALLED_IN_OBLIGATION', 'TREATY_COUNTRY_WILL_CALL_IN_OBLIGATION')]"
