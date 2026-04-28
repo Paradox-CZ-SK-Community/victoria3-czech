@@ -589,7 +589,7 @@
   DATA_GOODS_STATE_CONTEXT_BALANCE_LABEL: "Bilance [State.GetName]"
   DATA_GOODS_STATE_CONTEXT_PRICE_LABEL: "Cena [State.GetName]"
   DATA_MOBILIZATION_OPTION_NAME_TOOLTIP: "[MobilizationOption.GetTooltip]"
-  DATA_MILITARY_FORMATION_UNITS: "[MilitaryFormation.GetUnitIcon] #v #tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],MILITARY_FORMATION_TOTAL_NUMBER_OF_UNITS_TOOLTIP [AddLocalizationIf(LessThan_int32(MilitaryFormation.GetCommandLimitRaw, MilitaryFormation.GetNumCombatUnits), '@warning! ')][MilitaryFormation.GetNumCombatUnits]#!#!#! / [MilitaryFormation.GetCommandLimit] [SelectLocalization(MilitaryFormation.IsArmy, 'BATTALIONS_CONCEPT', 'FLOTILLAS_CONCEPT')] $INCOMING_NUMBER_OF_REGULARS_LABEL$"
+  DATA_MILITARY_FORMATION_UNITS: "[MilitaryFormation.GetUnitIcon] #v #tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],MILITARY_FORMATION_TOTAL_NUMBER_OF_UNITS_TOOLTIP [AddLocalizationIf(LessThan_int32(MilitaryFormation.GetCommandLimitRaw, MilitaryFormation.GetNumCombatUnits), '@warning! ')][MilitaryFormation.GetNumCombatUnits]#!#!#! / [MilitaryFormation.GetCommandLimit] [SelectLocalization(MilitaryFormation.IsArmy, 'BATTALIONS_CONCEPT', 'SHIPS_CONCEPT')] $INCOMING_NUMBER_OF_REGULARS_LABEL$"
   DATA_MILITARY_FORMATION_UPKEEP: "@money!#v #tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],MILITARY_FORMATION_EXPENSE_TOOLTIP_TAG [MilitaryFormation.GetGoodsConsumptionCostRaw|0-K]#!#!#! Údržba"
   DATA_MILITARY_FORMATION_ATTRITION: "\n$MILITARY_FORMATION_ATTRITION_VALUE_TOOLTIPPABLE$ [concept_attrition]"
   DATA_MILITARY_FORMATION_MANPOWER: "@manpower! [MilitaryFormation.GetCurrentManpower|kV] / #maximum [MilitaryFormation.GetMaxManpower|k]#! [concept_manpower]"
