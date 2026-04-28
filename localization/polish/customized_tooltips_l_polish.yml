@@ -178,7 +178,7 @@
   CHARACTER_TOOLTIP_HEADER_NAME: "[Character.GetFullNameWithTitleNoFormatting] [AddLocalizationIf( Character.IsInExilePool, 'CHARACTER_IS_IN_EXILE')]"
   CHARACTER_TOOLTIP_HEADER_NONE: "Chybí $concept_character$"
   AGITATOR_EXILE_POOL_NOTIFICATION: "[Character.GetFullName] se nyní nachází v [Character.GetHomeCountry.GetAltAdjective('L')]!\nProtože nemá žádné [Concept('concept_political_movement','politické hnutí'], uchýlil se do dobrovolného [Concept('concept_exile','exilu')]"
-  AGITATOR_POLITICAL_MOVEMENT_NOTIFICATION: "[Character.GetFullName] se objevil v [Character.GetCountry.GetNameNoFlag]!\n$AGITATOR_POLITICAL_MOVEMENT_IN_COUNTRY$"
+  AGITATOR_POLITICAL_MOVEMENT_NOTIFICATION: "[Character.GetFullName] se objevil v [Character.GetCountry.GetAltAdjectiveNoFlag('L')]!\n$AGITATOR_POLITICAL_MOVEMENT_IN_COUNTRY$"
   AGITATOR_POLITICAL_MOVEMENT_PREDICTION_INVITE_START: "Začal by [PoliticalMovementType.GetName] pokud by byl pozván"
   AGITATOR_POLITICAL_MOVEMENT_PREDICTION_INVITE_JOIN: "Připojil by se k [PoliticalMovement.GetName] pokud by byl pozván"
   AGITATOR_POLITICAL_MOVEMENT_PREDICTION_INVITE_NONE: "Nezačal by ani se nepřipojil k [concept_political_movement] pokud by byl pozván"
