@@ -3,7 +3,7 @@
  ALERT_PEACE_PROPOSED_ENTRY: "[WAR.GetName|b] - [WAR.GetDaysUntilPeaceDealFails|v] den/dny do vyhození mírové dohody"
  ALERT_TOOLTIP_FORMAT: "#header [Alert.GetName]#!\n$TOOLTIP_DELIMITER$\n[ConcatIfNeitherEmpty(Alert.GetDescription, '\n\n')]@information! [Alert.GetHint]\n\n#instruction Klikněte pro otevření [Alert.GetAction]#!"
  EXPANDABLE_IMPORTANT_ACTION_ITEM: "[Alert.GetToolTip]$notification_tooltip_footer$"
- HAS_CONVOYS_BEING_SUNK_HEADER: "Naše [concept_convoys|l] jsou potápěny nepřátelskými [Concept('concept_admiral', 'admirály')]. Věříme, že útoky probíhají alespoň v jedné z těchto mořských zón:"
+ HAS_CONVOYS_BEING_SUNK_HEADER: "Naše [GetGoods('merchant_marine').GetName] jsou potápěny nepřátelskými [Concept('concept_admiral', '$concept_admirals$')]. Věříme, že útoky probíhají alespoň v jedné z těchto mořských zón:" # todo: CHANGED
  MP_CLIENT_DATE: "$NAME$: $DATE_STR$"
  MP_CLIENT_GRACEFUL_EXIT: "$NAME$ opustil hru"
  MP_CLIENT_LAGGING_PAUSE: "$NAME$ má prodlevu delší než $DAYS$. Pozastavuji."
@@ -14,7 +14,6 @@
  STATE_GOODS_BUILDING_SHORTAGE_ENTRY: "[Building.GetName] v [Building.GetState.GetName]"
  above_company_limit_setting_name: "Nad limit společnosti"
  active_peace_deal_alert_setting_name: "Aktivní mírová dohoda"
- admiral_with_no_flotillas_setting_name: "Admirál bez flotil"
  ag_blockaded_hubs_desc: "Máme centra světového trhu které jsou zablokována."
  ag_blockaded_hubs_name: "[Concept('concept_blockade', '$concept_blockaded$')] [Concept('concept_world_market_hub', '$concept_world_market_hubs_short$')|l]"
  ag_blockaded_hubs_tooltip: "#header $ag_blockaded_hubs_name$#!\n$TOOLTIP_DELIMITER$\n$ag_blockaded_hubs_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
@@ -24,7 +23,7 @@
  ag_can_decrease_subject_autonomy_desc: "Existují [Concept('concept_subject','závislé')] [Concept('concept_country', 'země')] které můžeme [GetDiplomaticActionType('da_decrease_autonomy').GetName]"
  ag_can_decrease_subject_autonomy_name: "Může [GetDiplomaticActionType('da_decrease_autonomy').GetName]"
  ag_can_decrease_subject_autonomy_tooltip: "#header $ag_can_decrease_subject_autonomy_name$#!\n$TOOLTIP_DELIMITER$\n$ag_can_decrease_subject_autonomy_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
- ag_companies_losing_prosperity_desc: "Máme $COMPANIES$, které jsou v ohrožení ztráty jejich bonusů z [Concept('concept_prosperity','prosperity']."
+ ag_companies_losing_prosperity_desc: "Máme $COMPANIES$, které jsou v ohrožení ztráty jejich bonusů z [Concept('concept_prosperity','prosperity')]."
  ag_companies_losing_prosperity_name: "$COMPANIES$ ztrácející [Concept('concept_prosperity','prosperitu')]"
  ag_companies_losing_prosperity_tooltip: "#header $ag_companies_losing_prosperity_name$#!\n$TOOLTIP_DELIMITER$\n$ag_companies_losing_prosperity_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
  ag_diplomatic_pact_in_danger_desc: "Existují [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')|l], které jsou ohroženy"
@@ -83,10 +82,6 @@
  alert_active_peace_deal_alert_desc: "Existuje navržená mírová dohoda ve [Concept('concept_war','válce')], ve které jste součástí a bude #b odmítnuta#! nebo #b přijata#! v závislosti na reakcích všech vyjednávajících účastníků.\n[GetPlayer.GetActivePeaceDealDesc]"
  alert_active_peace_deal_alert_hint: "Pokud jste vyjednávajícím partnerem [Concept('concept_war','války')], můžete naznačit své přání s mírovou dohodou ukončit [Concept('concept_war','válku')] nebo pokračovat v konfliktu k dalšímu kolu vyjednávání."
  alert_active_peace_deal_alert_name: "[concept_peace_deal] navrhováno"
- alert_admiral_with_no_flotillas_action: "Panel velitele"
- alert_admiral_with_no_flotillas_desc: "Jeden z našich [Concept('concept_admiral','admirálů')] v současnosti nemá žádné [Concept('concept_flotilla','flotily')] přidělené k sobě."
- alert_admiral_with_no_flotillas_hint: "Měli bychom rozšířit naše námořnictvo, aby tento admirál měl velení."
- alert_admiral_with_no_flotillas_name: "[SCOPE.GetRootScope.GetCharacter.GetFullName] nemá žádné [Concept('concept_flotilla','flotily')]"
  alert_article_contravened_action: "Panel smlouvy"
  alert_article_contravened_desc: "[SCOPE.GetRootScope.GetTreatyArticle.GetNonFulfillmentDescFor(SCOPE.sCountry('actor'))]"
  alert_article_contravened_hint: "Pokud nepřestaneme [Concept('concept_contravention', 'porušovat')] [Concept('concept_article','článek')] [SCOPE.GetRootScope.GetTreatyArticle.GetName], může se stát [Concept('concept_non_fulfillment', 'nesplněnou')] a vést k pozastavení nebo zrušení [Concept('concept_treaty','smlouvy')]."
@@ -145,11 +140,7 @@
  alert_has_convoys_being_sunk_action: "Panel vojenského námořnictva"
  alert_has_convoys_being_sunk_desc: "Konvoje jsou napadány v následujících námořních uzlech:[SCOPE.GetRootScope.GetCountry.GetSeaNodesMightBeConvoyRaidedInDesc]. \n\nTo znamená, že všechny spojení k zámořskému území, obchod s jinými trhy a zásoby pro naše expediční síly procházející těmito námořními uzly jsou přerušeny, což může mít katastrofické důsledky pro naši ekonomickou a vojenskou sílu."
  alert_has_convoys_being_sunk_hint: "Můžete tomu čelit přidělením [Concept('concept_admiral','admirála')] k [Concept('concept_escort_convoys','doprovodu konvojů')] podél [Concept('concept_shipping_lane','námořních tras')] procházejících mořským uzlem."
- alert_has_convoys_being_sunk_name: "[concept_convoys] napadáno"
- alert_has_decreasing_interests_alert_action: "Diplomatický panel"
- alert_has_decreasing_interests_alert_desc: "Máme [Concept('concept_interest', '$concept_interests$')|l] které brzy zmizí:\n[GetPlayer.GetDecreasingInterestsDesc]"
- alert_has_decreasing_interests_alert_hint: "Můžete tomuto zabránit použitím akce [Concept('concept_declared_interest','$concept_declare_interests$')|l] v [Concept('concept_diplomatic_lens','diplomatické čočce')], pokud jste ještě nedosáhli svých maximálních prohlášených zájmů, nebo můžete své prohlášené zájmy přehodnotit aby odpovídaly vašim aktuálním diplomatickým ambicím."
- alert_has_decreasing_interests_alert_name: "Zanikající [Concept('concept_interest', '$concept_interests$')|l]"
+ alert_has_convoys_being_sunk_name: "[GetGoods('merchant_marine').GetName] Přepadány" # todo: CHANGED
  alert_has_low_liberty_desire_action: "Panel diplomacie"
  alert_has_low_liberty_desire_desc: "[SCOPE.GetRootScope.GetCountry.GetOverlord.GetName] může [GetDiplomaticActionType('da_decrease_autonomy').GetName] na nás."
  alert_has_low_liberty_desire_hint: "Můžete využít panel diplomacie, abyste viděli, které [Concept('concept_subject_action','$concept_subject_actions$')|l] jsou dostupné pro zvýšení naší [Concept('concept_liberty_desire','touhy po svobodě')]."
@@ -212,7 +203,7 @@
  alert_low_expected_sol_in_state_name: "[SCOPE.GetRootScope.GetState.GetPopulationRatioBelowExpectedStandardOfLiving|%v1] z [Concept('concept_pop', 'populace')] pod [Concept('concept_expected_sol','očekávaným minimálním životním standardem')] v [SCOPE.GetRootScope.GetState.GetName]"
  alert_low_legitimacy_alert_hint: "Zvyšte svou legitimitu přidáním nebo odebráním [Concept('concept_interest_group', 'zájmových skupin')] ze své vlády. To lze provést na politickém panelu nebo v detailech [Concept('concept_interest_group','zájmové skupiny')]. Můžete také změnit vaše [Concept('concept_law', 'zákony')], což lze provést na záložce ústavních zákonů na politickém panelu."
  alert_low_market_access_alert_action: "Státní panel pro [SCOPE.GetRootScope.GetState.GetName]"
- alert_low_market_access_alert_hint: "Můžete zlepšit [concept_market_access|l] [SCOPE.GetRootScope.GetState.GetName] tím, že buď zvýšíte jeho [Concept('concept_infrastructure','infrastrukturu')] (což lze provést stavbou [GetBuildingType('building_port').GetName] nebo [GetBuildingType('building_railway').GetName]), pomocí [Concept('concept_decree', 'dekrétů')] jako [GetDecreeType('decree_road_maintenance').GetName], nebo zajištěním toho, že bude dostatek [Concept('concept_convoys','konvojů')] pro propojení [SCOPE.GetRootScope.GetState.GetName] s jeho [Concept('concept_market_capital','hlavním tržním centrem')] v zahraničí."
+ alert_low_market_access_alert_hint: "Můžete zlepšit [concept_market_access] [SCOPE.GetRootScope.GetState.GetName] buď zvýšením jejího [concept_infrastructure] (což lze provést výstavbou [GetBuildingType('building_port').GetName] nebo [GetBuildingType('building_railway').GetName]), pomocí [Concept('concept_decree', '$concept_decrees$')] jako [GetDecreeType('decree_road_maintenance').GetName], nebo zajištěním dostatečného množství [GetGoods('merchant_marine').GetName] na [concept_market], aby bylo [SCOPE.GetRootScope.GetState.GetName] spojeno se svým [concept_market_capital] v zámoří." # todo: CHANGED
  alert_low_market_access_alert_name: "[concept_market_access] v [SCOPE.GetRootScope.GetState.GetName] je na [SCOPE.GetRootScope.GetState.GetMarketAccess|%0v]"
  alert_low_organization_active_action: "Panel vojenských formací"
  alert_low_organization_active_desc: "[SCOPE.GetRootScope.GetMilitaryFormation.GetName] má [SCOPE.GetRootScope.GetMilitaryFormation.GetOrganization] [Concept('concept_organization','organizaci')], což způsobuje těžké tresty."
@@ -224,7 +215,7 @@
  alert_low_organization_idle_name: "Nízká [concept_organization|l]: [SCOPE.GetRootScope.GetMilitaryFormation.GetName]"
  alert_low_supply_action: "Panel velitele"
  alert_low_supply_desc: "Náš [concept_commander|l] má nízké zásobování ve svých batalionech."
- alert_low_supply_hint: "Můžeme to opravit tím, že zajistíme dostupnost [Concept('concept_convoys','konvojů')] pro správné zásobování našich sil, nebo tím, že zajistíme, že máme flotilu k zabezpečení našich zásobovacích linií."
+ alert_low_supply_hint: "Můžeme to vyřešit zajištěním dostatečného množství [GetGoods('merchant_marine').GetName] na [concept_market], aby byly naše síly řádně zásobovány, nebo zajištěním flotily, která zabezpečí naše zásobovací trasy." # todo: CHANGED
  alert_low_supply_name: "Nízké zásobování"
  alert_market_goods_shortage_action: "Panel trhu pro [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] v [SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName]"
  alert_market_goods_shortage_affected_building_entry: "[Building.GetName] v [Building.GetState.GetName]"
@@ -327,10 +318,6 @@
  alert_unhealthy_economy_alert_desc: "[GetPlayer.PredictEconomyHealthDesc]"
  alert_unhealthy_economy_alert_hint: "Můžete zlepšit svou finanční situaci zvýšením svých příjmů nebo snížením výdajů. Pro zvýšení příjmů můžete krátkodobě zvýšit současnou daňovou sazbu, zavést nové spotřební daně nebo zvýšit cla, abyste generovali nové příjmy. Pro snížení výdajů můžete zvážit snížení mezd buď ve svých vojenských nebo vládních budovách, snížení cen zboží, které konzumují, nebo pozastavení výstavby, dokud se vaše finance neuzdraví."
  alert_unhealthy_economy_alert_name: "Nevyvážená ekonomika"
- alert_unused_interests_alert_action: "Diplomatický panel"
- alert_unused_interests_alert_desc: "Používáme pouze [GetPlayer.GetNumDeclaredInterests|v]/#tooltippable #tooltip:[GetPlayer.GetTooltipTag],MAX_DECLARED_INTERESTS_TOOLTIP [GetPlayer.CalcMaxNumDeclaredInterests|v]#!#! z [Concept('concept_declared_interest','vyhlášených zájmů')] které jsme schopni podpořit"
- alert_unused_interests_alert_hint: "Můžete [Concept('concept_declared_interest','vyhlásit zájem')] v [Concept('concept_strategic_region','strategickém regiónu')] prostřednictvím [Concept('concept_diplomatic_lens','diplomatické čočky')]."
- alert_unused_interests_alert_name: "Můžete vyhlásit více [Concept('concept_declared_interest','zájmů')]"
  alert_vulnerable_front_action: "Panel fronty"
  alert_vulnerable_front_desc: "Nemáme žádné [Concept('concept_general', 'generály')] ani [Concept('concept_battalion', 'bataliony')] bránící [SCOPE.GetRootScope.GetFront.GetName] a je zde alespoň jeden nepřátelský generál přidělený k tomu."
  alert_vulnerable_front_hint: "Můžete najmout [Concept('concept_general', 'generály')] nebo jim dát příkazy v panelu vojenského."
@@ -351,7 +338,6 @@
  free_government_reform_setting_name: "Bezplatná vládní reformace"
  general_can_be_demobilized_setting_name: "Generál může být demobilizován"
  has_convoys_being_sunk: "Má konvoje potápěné"
- has_decreasing_interests_alert_setting_name: "Má klesající zájmy"
  has_low_liberty_desire_setting_name: "Může mít vlastní [Concept('concept_autonomy','autonomií')] sníženou"
  has_no_research_alert_setting_name: "Nemá žádný výzkum"
  has_no_war_goal_alert_setting_name: "Nemá válečný cíl"
@@ -397,7 +383,7 @@
  unused_interests_alert_setting_name: "Nepoužité zájmy"
  vulnerable_front_setting_name: "Zranitelný front"
  alert_may_be_annexed_by_austria_name: "Riziko anexe ze strany [SCOPE.GetRootScope.GetCountry.GetTopOverlord.GetName]"
- alert_may_be_annexed_by_austria_desc: "Kvůli naší nízký [Concept('concept_liberty_desire','touhy po svobodě'] nás [SCOPE.GetRootScope.GetCountry.GetTopOverlord.GetName] může anektovat bez [Concept('concept_diplomatic_play','diplomatické hry')]"
+ alert_may_be_annexed_by_austria_desc: "Kvůli naší nízký [Concept('concept_liberty_desire','touhy po svobodě')] nás [SCOPE.GetRootScope.GetCountry.GetTopOverlord.GetName] může anektovat bez [Concept('concept_diplomatic_play','diplomatické hry')]"
  alert_may_be_annexed_by_austria_hint: "Můžete použít panel diplomacie, abyste zjistili, které [Concept('concept_subject_action','$concept_subject_actions$')|l] jsou k dispozici, abyste zvýšili naši [Concept('concept_liberty_desire','touhu po svobodě')]."
  alert_may_be_annexed_by_austria_action: "Panel diplomacie"
  may_be_annexed_by_austria_setting_name: "Vládce pravděpodobně anektuje"
@@ -409,7 +395,7 @@
  alert_major_formable_possible_desc: "$alert_formable_possible_desc$"
  alert_major_formable_possible_hint: "$alert_formable_possible_hint$"
  alert_major_formable_possible_action: "$alert_formable_possible_action$"
- alert_can_take_decisions_desc: "[SCOPE.GetRootScope.GetDecisionType.GetDesc]"
+ alert_can_take_decisions_desc: "[SCOPE.GetRootScope.GetDecisionType.GetEffects( GetPlayer.Self )]\n\n[SCOPE.GetRootScope.GetDecisionType.GetDesc]" # todo: CHANGED
  ag_formables_possible_name: "Možné [Concept('concept_nation_formation','$concept_nation_formations$')|l]"
  ag_formables_possible_desc: "Máme možnost vytvořit jeden nebo více nových států."
  ag_formables_possible_tooltip: "#header $ag_formables_possible_name$#!\n$TOOLTIP_DELIMITER$\n$ag_formables_possible_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
@@ -418,3 +404,59 @@
  ag_can_take_decisions_tooltip: "#header $ag_can_take_decisions_name$#!\n$TOOLTIP_DELIMITER$\n$ag_can_take_decisions_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
  formable_possible_setting_name: "Zakládání států"
  major_formable_possible_setting_name: "Hlavní formování států"
+ alert_naval_mission_invalid_area_alert_name: "Neplatná oblast $concept_naval_mission$" # todo: NEW TRANSLATION
+ alert_naval_mission_invalid_area_alert_desc: "Oblast námořní mise pro [SCOPE.GetRootScope.GetMilitaryFormation.GetName] již není platná. Flotila nebude schopna misi provést." # todo: NEW TRANSLATION
+ alert_naval_mission_invalid_area_alert_hint: "Zkontrolujte přidělenou oblast mise flotily a odstraňte jakékoli nedosažitelné nebo odpojené mořské oblasti." # todo: NEW TRANSLATION
+ alert_naval_mission_invalid_area_alert_action: "Panel vojenské formace" # todo: NEW TRANSLATION
+ alert_invalid_naval_mission_grace_period_alert_name: "Neplatné $concept_naval_mission$" # todo: NEW TRANSLATION
+ alert_invalid_naval_mission_grace_period_alert_desc: "Námořní mise pro [SCOPE.GetRootScope.GetMilitaryFormation.GetName] [SelectLocalization(SCOPE.GetRootScope.GetMilitaryFormation.HasNavalMission, 'is no longer valid', 'no longer exists')]. Flotila se brzy vrátí do přístavu." # todo: NEW TRANSLATION
+ alert_invalid_naval_mission_grace_period_alert_hint: "[SelectLocalization(SCOPE.GetRootScope.GetMilitaryFormation.HasNavalMission, 'Fix the issues with the naval mission', 'Assign a new naval mission to the fleet')] před vypršením lhůty milosti, aby se zabránilo návratu flotily do přístavu." # todo: NEW TRANSLATION
+ alert_invalid_naval_mission_grace_period_alert_action: "Panel vojenské formace" # todo: NEW TRANSLATION
+ alert_ship_outside_max_port_distance_alert_name: "Lodě mimo dosah přístavu" # todo: NEW TRANSLATION
+ alert_ship_outside_max_port_distance_alert_desc: "[SCOPE.GetRootScope.GetMilitaryFormation.GetName] má lodě, které jsou mimo maximální vzdálenost od přátelského přístavu, což může způsobit provozní problémy." # todo: NEW TRANSLATION
+ alert_ship_outside_max_port_distance_alert_hint: "Přesuňte flotilu blíže k přátelskému přístavu, nebo odstraňte postižené lodě z flotily." # todo: NEW TRANSLATION
+ alert_ship_outside_max_port_distance_alert_action: "Panel vojenské formace" # todo: NEW TRANSLATION
+ alert_naval_hostilities_alert_name: "[concept_naval_hostilities]" # todo: NEW TRANSLATION
+ alert_naval_hostilities_alert_desc: "Jsme ve stavu [concept_naval_hostilities] s jiným [concept_country], aniž bychom s ním byli ve [concept_war]. Během této doby budou naše [Concept('concept_fleet','$concept_fleets$')] schopny provádět nepřátelské akce (například [Concept('concept_blockade','$concept_blockades$')]) proti sobě.\n\n$concept_naval_hostilities$ s:\n[GetPlayer.GetNavalHostilitiesCountriesDesc]" # todo: NEW TRANSLATION
+ alert_naval_hostilities_alert_hint: "[concept_naval_hostilities] jsou obvykle dočasné a samy skončí." # todo: NEW TRANSLATION
+ alert_naval_hostilities_alert_action: "Panel námořnictva" # todo: NEW TRANSLATION
+ alert_insufficient_military_maintenance_alert_name: "Nedostatečná vojenská údržba [Concept('concept_ship', '$concept_ship$')]" # todo: NEW TRANSLATION
+ alert_insufficient_military_maintenance_alert_desc: "Naše $concept_ships$ ztrácejí týdně [Concept('concept_ship_hit_points', '$concept_ship_hit_points_short$')] kvůli nedostatečné údržbě.\n\n#v [GetPlayer.GetMilitaryMaintenanceFulfillment|%]#! plnění údržby\n@ship_construction! #v [GetPlayer.GetMilitaryMaintenanceDemand|0]#! poptávka po údržbě\n@ship_construction! #v [GetPlayer.GetMilitaryConstructionCapacity|0]#! přiděleno vojenským $concept_ships$" # todo: NEW TRANSLATION
+ alert_insufficient_military_maintenance_alert_hint: "Zvyšte [Concept('concept_ship_construction', '$concept_ship_construction$')] stavbou více [GetBuildingType('building_shipyard').GetName], zmenšte velikost [Concept('concept_fleet', '$concept_fleet$')] pro snížení nákladů na údržbu, nebo upravte rozdělení stavebních bodů pro [Concept('concept_supply_ship', '$concept_supply_ship$')] tak, aby bylo více alokováno na vojenské." # todo: NEW TRANSLATION
+ alert_insufficient_military_maintenance_alert_action: "Panel stavby lodí" # todo: NEW TRANSLATION
+ alert_insufficient_ship_crew_alert_name: "Nedostatečný [concept_ship_crew]" # todo: NEW TRANSLATION
+ alert_insufficient_ship_crew_alert_desc: "[SCOPE.GetRootScope.GetMilitaryFormation.GetName] má [Concept('concept_ship', '$concept_ships$')] s nedostatečným obsazením. Lodě bez dostatečného $concept_ship_crew$ budou méně efektivní v boji a dalších operacích." # todo: NEW TRANSLATION
+ alert_insufficient_ship_crew_alert_hint: "Počet dostupných [Concept('concept_sailor', '$concept_sailors$')] můžete zvýšit stavbou více [GetBuildingType('building_naval_administration').GetName] [Concept('concept_building', '$concept_buildings$')], nebo rozšířením stávajících." # todo: NEW TRANSLATION
+ alert_insufficient_ship_crew_alert_action: "Panel vojenské formace" # todo: NEW TRANSLATION
+ alert_insufficient_supply_maintenance_alert_name: "Nedostatečná údržba [Concept('concept_supply_ship', '$concept_supply_ship$')]" # todo: NEW TRANSLATION
+ alert_insufficient_supply_maintenance_alert_desc: "Naše $concept_supply_ships$ jsou ztráceny týdně kvůli nedostatečné údržbě.\n\n#v [GetPlayer.GetSupplyMaintenanceFulfillment|%]#! plnění údržby\n@ship_construction! #v [GetPlayer.GetSupplyMaintenanceDemand|0]#! poptávka po údržbě\n@ship_construction! #v [GetPlayer.GetSupplyConstructionCapacity|0]#! přiděleno na $concept_supply_ships$" # todo: NEW TRANSLATION
+ alert_insufficient_supply_maintenance_alert_hint: "Zvyšte [Concept('concept_ship_construction', '$concept_ship_construction$')] postavením o [Concept('concept_building', '$concept_building$')] více [GetBuildingType('building_shipyard').GetName], snižte počet $concept_supply_ships$ nebo upravte rozdělení stavebních bodů $concept_supply_ship$, aby se více alokovalo na zásobování." # todo: NEW TRANSLATION
+ alert_insufficient_supply_maintenance_alert_action: "Panel stavby lodí" # todo: NEW TRANSLATION
+ NAVAL_HOSTILITIES_COUNTRY_ENTRY: "[COUNTRY.GetName] (@ships! [Country.GetNumShips|0v])\n[GetPlayer.GetNavalHostilitiesDamageAgainst(COUNTRY)]\n[COUNTRY.GetNavalHostilitiesDamageAgainst(GetPlayer)]" # todo: NEW TRANSLATION
+ NAVAL_HOSTILITIES_COUNTRY_ENTRY_TEMPORARY: "[COUNTRY.GetName] (@ships! [Country.GetNumShips|0v]) until $END_DATE|v$ ($DAYS|v$ days)\n[GetPlayer.GetNavalHostilitiesDamageAgainst(COUNTRY.Self)]\n[COUNTRY.GetNavalHostilitiesDamageAgainst(GetPlayer)]" # todo: NEW TRANSLATION
+ NAVAL_HOSTILITIES_DAMAGE_ENTRY: " [COUNTRY.GetAdjective] $concept_fleets$ způsobily $DAMAGE|v1$/$MAX_DAMAGE|v1$ poškození" # todo: NEW TRANSLATION
+ alert_port_bombardment_alert_name: "[SCOPE.GetRootScope.GetState.GetName] je pod [GetNavalMissionType('naval_mission_type_port_bombardment').GetName]" # todo: NEW TRANSLATION
+ alert_port_bombardment_alert_desc: "[SCOPE.GetRootScope.GetState.GetName] je bombardován nepřátelskou [concept_fleet]. $port_bombardment$ způsobuje [concept_devastation] a může zničit pobřežní [Concept('concept_building', '$concept_buildings$')]." # todo: NEW TRANSLATION
+ alert_port_bombardment_alert_hint: "Můžete zastavit $port_bombardment$ odesláním [concept_fleet] s $interception_coast$ [Concept('concept_order','$concept_orders$')] do příslušného [concept_sea_node], aby se setkal a porazil nepřátelské flotily, nebo zmírnit následky výstavbou námořních opevnění v [SCOPE.GetRootScope.GetState.GetName], čímž zvýšíte odolnost proti bombardování." # todo: NEW TRANSLATION
+ alert_port_bombardment_alert_action: "Panel státu pro [SCOPE.GetRootScope.GetState.GetName]" # todo: NEW TRANSLATION
+ ag_secession_growing_name: "$alert_secession_growing_alert_name$" # todo: NEW TRANSLATION
+ ag_secession_growing_desc: "$alert_secession_growing_alert_desc$" # todo: NEW TRANSLATION
+ ag_secession_growing_alert_name: "$alert_secession_growing_alert_name$" # todo: NEW TRANSLATION
+ ag_secession_growing_alert_desc: "$alert_secession_growing_alert_desc$" # todo: NEW TRANSLATION
+ ag_secession_growing_tooltip: "#header $ag_secession_growing_alert_name$#!\n$TOOLTIP_DELIMITER$\n$ag_secession_growing_alert_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$" # todo: NEW TRANSLATION
+ ag_insufficient_ship_crew_name: "Nedostatečný [concept_ship_crew]" # todo: NEW TRANSLATION
+ ag_insufficient_ship_crew_desc: "Máme [Concept('concept_ship', '$concept_ships$')] s nedostatečným obsazením." # todo: NEW TRANSLATION
+ ag_insufficient_ship_crew_tooltip: "#header $ag_insufficient_ship_crew_name$#!\n$TOOLTIP_DELIMITER$\n$ag_insufficient_ship_crew_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$" # todo: NEW TRANSLATION
+ alert_admiral_with_no_ships_name: "[SCOPE.GetRootScope.GetCharacter.GetFullName] nemá žádné [Concept('concept_ship','$concept_ships$')]" # todo: NEW TRANSLATION
+ alert_admiral_with_no_ships_desc: "Jeden z našich [Concept('concept_admiral','$concept_admirals$')] momentálně nemá žádné [Concept('concept_ship','$concept_ships$')] přiřazeny." # todo: NEW TRANSLATION
+ alert_admiral_with_no_ships_hint: "Měli bychom rozšířit naše námořnictvo, aby měl tento $concept_admiral$ velení." # todo: NEW TRANSLATION
+ alert_admiral_with_no_ships_action: "Panel velitele" # todo: NEW TRANSLATION
+ naval_mission_invalid_area_alert_setting_name: "Neplatná oblast $concept_naval_mission$" # todo: NEW TRANSLATION
+ invalid_naval_mission_grace_period_alert_setting_name: "Lhůta milosti pro neplatné $concept_naval_mission$" # todo: NEW TRANSLATION
+ ship_outside_max_port_distance_alert_setting_name: "Lodě mimo dosah přístavu" # todo: NEW TRANSLATION
+ admiral_with_no_ships_setting_name: "Admirál bez lodí" # todo: NEW TRANSLATION
+ naval_hostilities_alert_setting_name: "[concept_naval_hostilities]" # todo: NEW TRANSLATION
+ insufficient_military_maintenance_alert_setting_name: "Nedostatečná vojenská údržba $concept_ship$" # todo: NEW TRANSLATION
+ insufficient_ship_crew_alert_setting_name: "Nedostatečný $concept_ship_crew$" # todo: NEW TRANSLATION
+ insufficient_supply_maintenance_alert_setting_name: "Nedostatečná údržba $concept_supply_ship$" # todo: NEW TRANSLATION
+ port_bombardment_alert_setting_name: "$port_bombardment$" # todo: NEW TRANSLATION

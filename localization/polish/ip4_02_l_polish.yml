@@ -20,7 +20,7 @@
   je_spa_economic_regeneration_master_timeout_tt_1: "Pokud dokončíme #bold více než polovinu#! z #variable [ROOT.GetCountry.MakeScope.Var('spa_economic_regeneration_goal_var').GetValue]#! plánovaných #bold $je_group_spa_economic_regeneration$#! reforem, tento trest bude #g zmírněn#!"
   je_spa_economic_regeneration_master_timeout_tt_2: "Jelikož jsme dokončili #bold více než polovinu#! z #variable [ROOT.GetCountry.MakeScope.Var('spa_economic_regeneration_goal_var').GetValue]#! plánovaných #bold $je_group_spa_economic_regeneration$#! reforem, tento trest byl #g zmírněn#!"
   je_spa_economic_regeneration_master: "Ekonomické oživení"
-  je_spa_economic_regeneration_master_reason: "Dávno pryč jsou časy, kdy bylo [ROOT.GetCountry.GetName] synonymem bohatství. Století špatného hospodaření a neštěstí proměnila [ROOT.GetCountry.GetAdjectiveNoFormatting] ekonomiku v stín její bývalé slávy — neschopnou uspokojit ani ty nejzákladnější požadavky moderní doby. \n\nAle jako Ježíš vzkřísil Lazara z hrobu, tak i dobří muži z Hacienda pozvednou [ROOT.GetCountry.GetAdjectiveNoFormatting] ekonomiku z jejího dlouhého spánku. Osud [ROOT.GetCountry.GetNameNoFormatting] neleží v rozpadlých impériích minulosti, ale v síle zítřka."
+  je_spa_economic_regeneration_master_reason: "Dávno pryč jsou časy, kdy [ROOT.GetCountry.GetName] bylo synonymem bohatství. Staletí špatného řízení a neštěstí proměnila [ROOT.GetCountry.GetAdjectiveNoFormatting] ekonomiku v stín svého bývalého já — neschopnou naplnit ani ty nejzákladnější požadavky moderní doby. \n\nAle jako Ježíš vzkřísil Lazara z hrobu, tak i poctiví muži Haciendy vzkřísí [ROOT.GetCountry.GetAdjectiveNoFormatting] ekonomiku z jejího dlouhého spánku. Osud [ROOT.GetCountry.GetNameNoFormatting] není ukryt v rozpadlých říších minulosti, nýbrž v síle zítřka." # todo: CHANGED
   modifier_economic_regeneration_reward_greater: "Zázrak Mesety"
   modifier_economic_regeneration_reward_lesser: "Komplexní ekonomické oživení"
   je_spa_economic_regeneration_land_reform: "Oživení: Pozemková reforma"
@@ -36,9 +36,9 @@
   modifier_population_boom: "Demografický boom"
   modifier_falling_birthrates: "Klesající porodnost"
   je_spa_economic_regeneration_mining: "Oživení: Důlnictví"
-  je_spa_economic_regeneration_mining_reason: "Iberský poloostrov je domovem rozsáhlých, nevyužitých ložisek surovin, vhodných k těžbě.\n\nAčkoliv je tento sektor nyní nedostatečně rozvinut, naši hlavní geologové trvají na tom, že půda skrývá dost bohatství, aby posunula národ do nové zlaté éry těžby — překonávající i dny římské Hispánie."
-  je_spa_economic_regeneration_mining_upgrade_state_trait_tt_1: "Budeme schopni #g zdvojnásobit#! účinky jedné z #tooltippable;TOOLTIP:je_spa_economic_regeneration_mining_upgrade_iberian_state_traits_tt #bold státních rysů souvisejících s hornictvím#!#! v [GetStrategicRegion('region_iberia').GetName]"
-  je_spa_economic_regeneration_mining_upgrade_state_trait_tt_2: "Budeme schopni udělit #g pozitivní#! #b dočasný efekt#! jako doplněk k jednomu z #tooltippable;TOOLTIP:je_spa_economic_regeneration_mining_upgrade_iberian_state_traits_tt #bold státních rysů souvisejících s hornictvím#!#! v [GetStrategicRegion('region_iberia').GetName]"
+  je_spa_economic_regeneration_mining_reason: "Iberský poloostrov je domovem rozsáhlých, nevyužitých ložisek surových nerostů, připravených k těžbě.\n\nZatímco tento sektor je v současnosti nedostatečně rozvinutý, naši hlavní geologové trvají na tom, že půda ukrývá dostatek bohatství, aby posunula národ do nové zlaté éry těžby — překonávající dokonce časy římské Hispánie." # todo: CHANGED
+  je_spa_economic_regeneration_mining_upgrade_state_trait_tt_1: "Budeme schopni #g zdvojnásobit#! účinky jednoho z #tooltippable;TOOLTIP:je_spa_economic_regeneration_mining_upgrade_iberian_state_traits_tt #bold státních vlastností souvisejících s těžbou#!#! v [GetGeographicRegion('region_iberia').GetName]" # todo: CHANGED
+  je_spa_economic_regeneration_mining_upgrade_state_trait_tt_2: "Budeme schopni udělit #g pozitivní#! #b dočasný efekt#! k doplnění jedné z #tooltippable;TOOLTIP:je_spa_economic_regeneration_mining_upgrade_iberian_state_traits_tt #bold státních vlastností souvisejících s těžbou#!#! v [GetGeographicRegion('region_iberia').GetName]" # todo: CHANGED
   je_spa_economic_regeneration_mining_upgrade_iberian_state_traits_tt: "\n• $STATE_BASQUE_COUNTRY$: #bold $state_trait_somorrostro_valley$#!\n• $STATE_ASTURIAS$: #bold $state_trait_cuencas_mineras$#!\n• $STATE_LOWER_ANDALUSIA$: #bold $state_trait_riotinto_basin$#!\n• $STATE_MURCIA$: #bold $state_trait_sierra_minera_de_cartagena$#!"
   modifier_spa_mineral_boom: "Dobytí podzemí"
   modifier_local_mining_boom: "Hornický boom"
@@ -98,7 +98,7 @@
   modifier_capable_reformer: "Schopný reformátor"
   spa_economic_regeneration_events.6.t: "Degenerace"
   spa_economic_regeneration_events.6.d: "Neschopnost vlády realizovat reformy oživení vyvolala veřejné pobouření. Rozzuřené davy se shromažďují před Haciendou, zatímco tisk prohlašuje selhání za národní ponížení."
-  spa_economic_regeneration_events.6.f: "Kolik ponížení musí tato země ještě snést? Nestačily události minulého století? Ministr odhrnul závěs a pohlédl do ulice, kde dav postavil figurínu v jeho podobě — hrubou postavu visící na špatně uvázaném provazu. Její tvář byla zvrácenou parodií toho samého kníru, který ho vítal každé ráno, kýval se v rytmu šílených fanatiků pod ním.\n\nOtočil se na svého komorníka. \"Pošlete kočár, prosím. A pošlete zprávu mému holiči, že ho musím dnes odpoledne navštívit.\""
+  spa_economic_regeneration_events.6.f: "How many humiliations must this country bear? Were the events of the last century not enough? The minister drew the curtain aside and peered into the street, where the crowd had raised an effigy in his likeness—a crude figure dangling from a poorly knotted rope. Its face bore a twisted parody of the same mustache that greeted him every morning, bobbing up and down to the rhythm of the crazed lunatics below him.\n\nOtočil se k svému komorníkovi. \"Pošli kočár, prosím. A pošli zprávu mému holiči, že ho dnes odpoledne musím vidět.\" # todo: CHANGED
   spa_economic_regeneration_events.6.a: "Karty byly proti nám naskládané."
   spanish_new_world_events.1.t: "Španělské Hlavní moře"
   spanish_new_world_events.1.d: "Poté, co je pořádek doma obnoven, musí [ROOT.GetCountry.GetName] rozhodnout o svém postoji vůči bývalým povstaleckým koloniím v Americe, jejichž nezávislost zůstává neuznána v [ROOT.GetCountry.GetCapital.GetCityHubName]."
@@ -238,7 +238,7 @@
   modifier_spanish_academy: "Rozšíření Academia Española"
   vernacular_events.3.t: "Království mnoha jazyků"
   vernacular_events.3.d: "Se statutem regionálních jazyků [ROOT.GetCountry.GetName] nyní uznaným a právně chráněným, se napjatý vztah země k regionálním identitám konečně usmířil."
-  vernacular_events.3.f: "Zpracovávání místních petic nikdy nebylo snadné, ale po zavedení nových předpisů se to stalo noční můrou. Každý venkovan s haléřem na kontě nyní posílal své myšlenky v písemné podobě: zmatečný kakofon slov a výrazů, které žádný džentlmen z [ROOT.GetCountry.GetCapital.GetCityHubName] by si nikdy nedovolil vyslovit!\n\n'Ne,' pomyslel si a potřásl hlavou. V dobrých starých časech by takoví muži nikdy neodvážili zapojit se do státního aparátu."
+  vernacular_events.3.f: "Zpracovávání místních petic nikdy nebývalo snadné, ale po zavedení nových předpisů se to změnilo v noční můru. Každý venkovan s několika haléři při sobě mu nyní posílal své myšlenky písemně: zatracená kakofonie slov a výrazů, které by se žádný džentlmen z [ROOT.GetCountry.GetCapital.GetCityHubName] nikdy neodvážil vyslovit!\n\n'Ne,' pomyslel si a potřásl hlavou. V dobrých starých časech by se tací muži nikdy neodvážili jednat se státním aparátem." # todo: CHANGED
   vernacular_events.3.a: "Jednota v rozmanitosti."
   vernacular_events.3.b: "V jednotě je síla."
   modifier_cultural_dynamism: "Kulturní dynamika"
@@ -304,7 +304,7 @@
   modifier_galician_literary_revival: "Galicijské literární obrození"
   spanish_events.3.t: "El Surdimientu"
   spanish_events.3.d: "Aby napravili staletí diglosie, intelektuálové [GetCulture('asturleonese').GetName] začali pracovat na obnovení astursko-leonského jazyka jako literárního a kulturního jazyka."
-  spanish_events.3.f: ""Ó pramene Fascury!\nčelo mé již zbělo,\na přesto, když na tebe myslím,\nneznám, co se děje,\nzda spím či bdím,\nzda je to pravda či sen.\nSnít! Ach, kdyby štěstí,\i kdyby jen sněné,\nmohlo trvat bez konce,\npřej, ať se nikdy neprobudím!"\n\n— Xuan María Acebal, #italic La Fonte de Fascura#!"
+  spanish_events.3.f: ""Ó pramene Fascury!\nčelo mé již zbělo,\na přesto, když na tebe myslím,\nneznám, co se děje,\nzda spím či bdím,\nzda je to pravda či sen.\nSnít! Ach, kdyby štěstí,\n kdyby jen sněné,\nmohlo trvat bez konce,\npřej, ať se nikdy neprobudím!"\n\n— Xuan María Acebal, #italic La Fonte de Fascura#!"
   spanish_events.3.a: "Velmi zajímavé..."
   spanish_events.3.b: "Podvratná činnost musí být potlačena."
   spanish_events.3.c: "Co je Španělsko než spolek národů spojených korunou."

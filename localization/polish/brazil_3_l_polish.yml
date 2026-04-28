@@ -29,7 +29,7 @@
  culture_brazil.5.t: "Integrace Amazoniků"
  culture_brazil.6.a: "Ó milovaná, idolizovaná vlast! Ať žije, ať žije!"
  culture_brazil.6.d: "Lidé [SCOPE.sCulture('nordestino_culture').GetName] z Bahie, Pernambuca a celého severovýchodu se smířili se centrální vládou a rostoucím národním hnutím [SCOPE.sCulture('brazilian_culture').GetName]."
- culture_brazil.6.f: ""Náboženství, nezávislost, jednota, svoboda — to jsou hesla Brazílie. Teď jistě všichni přemýšlíte, co tu dělá kněz a sběrač kávy. Kdo má odpověď?"\n\n"Jsme Brazilci. Země to od nás žádá."\n\n"Dal bych za půl bodu. Ano, jsme všichni Brazilci. Ale ne, země od nás žádá, abychom si vážili všeho, co máme. Protože jsme #italic vše#!, co máme.""
+ culture_brazil.6.f: ""Náboženství, Nezávislost, Jednota, Svoboda—to jsou hesla Brazílie. Teď jsem si jistý, že vás všechny zajímá, co tu dělá kněz a sběrač kávy. Kdo má odpověď?"\n\n"Jsme Brazilci. To je to, co země po nás žádá."\n\n"Dala bych poloviční známku. Ano, jsme všichni Brazilci. Ale ne, země požaduje, abychom si vážili všeho, co máme. Protože jsme #italic vším#!, co máme." # todo: CHANGED
  culture_brazil.6.t: "Integrace Nordestinů"
  culture_south_america.1.a: "[SCOPE.sCulture('old_south_american_culture').GetName] už ne—jsme nyní lidé [SCOPE.sCulture('new_national_culture').GetName]!"
  culture_south_america.1.b: "Jsme dědici většího ideálu!"
@@ -85,4 +85,4 @@
  75_percent_of_upper_pops_assimilate_tt: "#v 75%#! z [SCOPE.sCulture('old_south_american_culture').GetName] [Concept('concept_upper_strata','Upper Strata')] [Concept('concept_pop', '$concept_pops$')] v [ROOT.GetCountry.GetCapital.GetName] se asimilují do [SCOPE.sCulture('new_national_culture').GetName] [concept_culture]"
  75_percent_of_upper_pops_assimilate_global_tt: "#v 75%#! z [SCOPE.sCulture('old_south_american_culture').GetName] [Concept('concept_upper_strata','Upper Strata')] [Concept('concept_pop', '$concept_pops$')] v tomto [concept_state] se asimilují do [SCOPE.sCulture('new_national_culture').GetName] [concept_culture]"
  is_university_gov_admin_or_urban_center_tt: "Budova je [GetBuildingType('building_urban_center').GetName], [GetBuildingType('building_university').GetName] nebo [GetBuildingType('building_government_administration').GetName]"
- is_barracks_or_naval_base_tt: "Budova je [GetBuildingType('building_barrack').GetName] nebo [GetBuildingType('building_naval_base').GetName]"
+ is_barracks_or_naval_administration_tt: "Budova je [GetBuildingType('building_barrack').GetName] nebo [GetBuildingType('building_naval_administration').GetName]" # todo: NEW TRANSLATION

@@ -48,7 +48,7 @@
  BRZ_vargas.1.a: "Nová Brazílie přichází do existence."
  BRZ_vargas.1.d: "Po rychlém uchopení moci prvky armády sympatizující s reformistickým cílem byl [SCOPE.sCharacter('vargas_scope').GetFullName] vyhlášen prezidentem [ROOT.GetCountry.GetNameNoFormatting]. [SCOPE.sCharacter('vargas_scope').GetHerHis|U] program volá po modernizaci a rychlé obnově pořádku v národě."
  BRZ_vargas.1.f: "Začalo to v malém státě, zbaveném podílu v oligarchii. Poté, pomocí chytrých slov po atentátu, to rozkvétlo. Ale až poté, co byla sama oligarchie podvedena jednou ze svých polovin, když vzpoura zesílila. Nyní byli její aktéři shromážděni: První republika byla připravena padnout. Pouze rychlejší jednání by zastavilo krvavou občanskou válku."
- BRZ_vargas.1.t: "Nová republika"
+ BRZ_vargas.1.t: "Nová [ROOT.GetCountry.GetCustom('brz_republic_or_state')]" # todo: CHANGED
  BRZ_vargas.2.a: "Ať žije brazilský národ!"
  BRZ_vargas.2.b: "Musíme dát kredit našim integralistickým partnerům."
  BRZ_vargas.2.d: "Sérií represí proti levici a mnoha dekrety posilujícími moc státu [SCOPE.sCharacter('vargas_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('vargas_scope').GetFullName] plně zpečetil své panství v [ROOT.GetCountry.GetName]."
@@ -98,7 +98,7 @@
  andean_federation_b_tt: "The"
  andean_federation_reqs_tt: "Vytvořeno #v $PBC$#!, #v $PLT$#! nebo #v $GCO$#!"
  andean_major_formation_available_tt: "The"
- anl_more_leftists_tt: "Levné postavy budou mnohem pravděpodobněji objevovat, dokud #variable Nová republika#! nebude úspěšně dokončena"
+ anl_more_leftists_tt: "Levicové osobnosti se budou mnohem častěji objevovat, dokud #v $je_new_republic$#! nebude úspěšně dokončeno" # todo: CHANGED
  anticommunists_more_fascist_tt: "[SCOPE.gsInterestGroup('anticommunist_ig').GetName] budou o něco pravděpodobnější vybírat #variable fašistické#! postavy"
  armed_forces_positivists_large_tt: "Skupina [SCOPE.gsInterestGroup('armed_forces_ig').GetName] bude mnohem pravděpodobněji vybírat pozitivistické vůdce, když [Concept('concept_political_movement_pressure', '$concept_political_movement_pressured_short$')] z využitelného [concept_political_movement]"
  armed_forces_positivists_tt: "Skupina [SCOPE.gsInterestGroup('armed_forces_ig').GetName] bude pravděpodobněji vybírat pozitivistické vůdce v budoucnu."
@@ -107,7 +107,7 @@
  bp1_misc.3.d: "Vliv filozofie pozitivismu na [ROOT.GetCountry.GetAdjective] společnost se rozšířil až k postojům [SCOPE.gsInterestGroup('landowners_ig').GetName] vůči státní moci."
  bp1_misc.3.f: "Slogan již předtím viděl, ale nikdy takto. Byl vyražen ve zlatě na bohatém mramoru, na dveřích domu plantáže, třpytící se z procesu jeho instalace.\n\n\"Láska jako princip a pořádek jako základ; pokrok jako cíl.\""
  bp1_misc.3.t: "Moderní oligarchie"
- brz_integralist_action_tt: "Budeme mít příležitost dále přijmout #bold integralistickou#! ideologii, pokud #variable Nová republika#! bude úspěšně dokončena"
+ brz_integralist_action_tt: "Budeme mít příležitost dále přijmout #bold integralistickou ideologii#!, pokud bude #v $je_new_republic$#! úspěšně dokončeno" # todo: CHANGED
  change_misc_populism_drift_1_down_tt: "Měsíční #variable Populist Unrest#! pokrok bude #bold snížen#! o #bold 1#!"
  change_misc_populism_drift_1_up_tt: "Měsíční #variable populistická nepokoj#! pokrok bude #bold zvýšen#! o #bold 1#!"
  change_misc_populism_drift_2_down_tt: "Měsíční #variable Populist Unrest#! pokrok bude #bold snížen#! o #bold 2#!"
@@ -273,7 +273,7 @@
  je_gran_colombia_reason: "Rozpad státu Gran Colombia, roztrženého separatismem v 30. letech 19. století, byl tragédií jak pro [ROOT.GetCountry.GetName], tak pro naše bolivarské národy. Hledání jeho návratu může vzbudit hněv těch, kteří nejsou tolik nadšení ze sjednocení - ale úspěšná obnova Gran Colombie by byla obrovským přínosem pro všechny jeho zakládající národy."
  je_la_plata: "Rio de la Plata"
  je_la_plata_reason: "Anarchie dvacátých let pohřbila jakékoliv naděje, že staré Spojené provincie Río de la Plata se budou sjednocovat pod jednou vládou, a vedla k vzestupu [ROOT.GetCountry.GetName] z jejích popelů. Usilování o její návrat může vyvolat hněv těch, kteří nejsou příliš nadšení z unifikace - ale úspěšná obnova Río de la Plata by byla obrovským přínosem pro všechny její zakládající národy."
- je_new_republic: "Nová republika"
+ je_new_republic: "Nová [ROOT.GetCountry.GetCustom('brz_republic_or_state')]" # todo: CHANGED
  je_new_republic_reason: "[SCOPE.sCharacter('vargas_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('vargas_scope').GetFullName] a [SCOPE.sCharacter('vargas_scope').GetHerHis] podporovatelé svrhli předchozí vládu [ROOT.GetCountry.GetName] a založili nový režim založený na nacionalismu a modernizaci státu."
  je_populist_unrest: "Populistická nespokojenost"
  je_populist_unrest_reason: "Dominance [ROOT.GetCountry.GetAdjective] politiky ze strany [SCOPE.gsInterestGroup('landowners_ig').GetName] vyvolala nespokojenost v celé zemi. Populistické postavy podporované [SCOPE.gsInterestGroup('pb_ig').GetName] agitují proti současné vládě na ulicích a liberální vojenské organizace se dívají na příklad tenentů, kteří se v minulosti postavili agrární oligarchii. Pokud se tento neklid nenaviguje úspěšně, umírající [ROOT.GetCountry.GetGovernment.GetName] čelí násilné změně moci."
@@ -518,7 +518,7 @@
  peru_bolivia_events.6.t: "Panování míru"
  peru_bolivia_events.7.a: "Jsme nuceni čelit novému rivalovi."
  peru_bolivia_events.7.d: "The [SCOPE.sCountry('peru_bolivia_scope').GetName] úspěšně konsolidovalo svou moc, stabilizovalo svou politiku a přijalo ústavu. Stát stojící proti bujícímu titánu se zdá být brzy beznadějné."
- peru_bolivia_events.7.f: "Špehové posílali dopisy - rozzuření, poražení a ohromení všichni - že jakýkoliv rozruch v nové konfederaci byl dávno vyčerpán. Bez přetrvávajících resentimentů, aby se podněcovalo, nebo nejistot, které by se vyvolávaly, nebo rozdělení mezi jejími legislativami, lidé Peru-Bolívie by viděli [ROOT.GetCountry.GetNameNoFormatting] pouze jako jednu věc: žárlivé vetřelce."
+ peru_bolivia_events.7.f: "Špioni posílali dopisy—rozzuření, poražení i zděšení zároveň—že jakýkoli rozruch v nové konfederaci už dávno pominul. Bez přetrvávajících záští, které by podněcovaly, nejistot, jež by vyvolávaly, nebo rozdělení mezi jejími zákonodárnými sbory, by lidé z Peru-Bolívie viděli [ROOT.GetCountry.GetNameNoFormatting] jen jako jedno: žárlivé vetřelce." # todo: CHANGED
  peru_bolivia_events.7.t: "Triumf konfederace"
  peru_bolivia_events.8.a: "Peru bude jedným, a nedělitelným."
  peru_bolivia_events.8.b: "Naše národ bude sjednocen pod naši současnou ústavu."
@@ -541,7 +541,7 @@
  positivism.1.b: "Jeho pojetí sociální fyziky by mělo být bližší analýze."
  positivism.1.c: "Pokud chce změnit společnost, je vítán, aby se pokusil."
  positivism.1.d: "[SCOPE.sCharacter('comte_scope').GetFullName], filozof věd na École Polytechnique ve [SCOPE.sState('paris_scope').GetName], publikoval traktát o reorganizaci společnosti podle pozitivistických principů."
- positivism.1.f: "\"Z morálního, vědeckého nebo básnického hlediska je to stejně hodnotné; a je to jediný princip, který může přivést lidstvo bezpečně přes nejformidabilnější krizi, kterou dosud podstoupilo. Nyní je všem jasné, že síla demonstrace, síla příznačná moderním dobám, která stále zachovává mnoho svého destruktivního charakteru, se stává zralou a povýšenou pozitivismem.\""
+ positivism.1.f: ""Z morálního, vědeckého či poetického hlediska je stejně hodnotný; a je to jediný princip, který může lidstvo bezpečně provést tou nejobávanější krizí, kterou dosud kdy podstoupilo. Nyní bude každému jasné, že síla demonstrace, síla příznačná pro moderní dobu, která si stále zachovává mnoho ze svého ničivého charakteru, dozrává a povznáší se díky pozitivismu."\n\n—Auguste Comte, #italic Obecný pohled na pozitivismus#!" # todo: CHANGED
  positivism.1.t: "Uctívat lidstvo"
  positivism.2.a: "Zajímavá instituce."
  positivism.2.b: "Další eklektický, krátkodobý kult."
@@ -704,3 +704,9 @@
  peru_bolivia_events.9.f_2: "Byla obsazena pouze čtvrtina křesel Generálního kongresu. Polovina sálu, kterou dříve obsazovali bolivijští zástupci, byla ponechána bez osvětlení — čímž se ušetřily svíčky. V chudém ostrůvku světla, který tvořil peruánský kvadrant, senátoři ústně schválili pravidla zasedání.\n\nRáno byl návrh předložen poloprázdnému výboru. Odpoledne prošel sněmovnou. Večer byl položen na stůl [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] a Konfederace přestala existovat."
  peru_bolivia_events.9.a: "$BOL$ je vše, co zůstalo."
  peru_bolivia_events.9.b: "$PEU$ je vše, co zůstalo."
+ modifier_new_dictatorship_brazil_monarchy: "Nový stát" # todo: NEW TRANSLATION
+ all_socialists_marginalized_tt: "Každá zájmová skupina s #tooltippable;tooltip:[GetPlayer.GetTooltipTag],socialist_ideologies_list_tt socialistickou#! [concept_leader] je [concept_marginalized]" # todo: NEW TRANSLATION
+ add_je_new_republic_tt: "Přidá #v Nový [ROOT.GetCountry.GetCustom('brz_republic_or_state')]#! do deníku [ROOT.GetCountry.GetNameNoFlag|U]" # todo: NEW TRANSLATION
+ brz_republic: "Republika" # todo: NEW TRANSLATION
+ brz_state: "Stát" # todo: NEW TRANSLATION
+ vargas_not_pm_tt: "[SCOPE.gsInterestGroup('pb_scope').GetName] nejsou [concept_in_government]" # todo: NEW TRANSLATION

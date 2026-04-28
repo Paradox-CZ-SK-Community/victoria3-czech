@@ -56,11 +56,11 @@
   expedition_events.502.c: "[SCOPE.sCharacter('expedition_leader_3').GetPrimaryRoleTitle] [SCOPE.sCharacter('expedition_leader_3').GetFullName]"
   expedition_events.504.t: "Expedice odplouvá"
   expedition_events.504.d: "Po několika týdnech přípravy a cestování expedice vedená [SCOPE.sCharacter('expedition_leader').GetFullName] dorazila do Zanzibaru. Odtud zahájí svou cestu k objevení tajemného zdroje řeky Nil."
-  expedition_events.504.f: ""Pobřeží bylo méně písečné, než se očekávalo. Na kopci, který vedl do města, se shromáždila skupina místních, aby sledovala naši expedici, více pobavená než zaujatá. V jazyce, kterému jsme nerozuměli, na nás křičeli. Jeden z našich mužů gestooval zpět a výstřel do vzduchu vyřešil spor.\n\nNa druhé straně moře se písek leskl - vrstva leštěného slunečního světla.""
+  expedition_events.504.f: ""Pobřeží bylo méně písčité, než jsme čekali. Na kopci vedoucím do města se shromáždila skupina místních, aby pozorovala naši výpravu, spíše pobaveně než zvědavě. V jazyce, kterému jsme nerozuměli, nám křičeli. Jeden z našich mužů pokynul nazpět a výstřelem do vzduchu bylo sporu učiněno zadost.\n\nNa druhé straně moře se písek leskl — vrstva vyleštěného slunečního světla." # todo: CHANGED
   expedition_events.504.a: "Vpřed!"
   expedition_events.511.t: "Úspěšná expedice"
   expedition_events.511.d: "[SCOPE.sCharacter('expedition_leader').GetFullName] se vrátil triumfálně, byl objeven zdroj řeky Nil. Ukazuje se, že zdroj je vynikajícími jezery Afriky."
-  expedition_events.511.f: ""Hřmění vody mi připomínalo dětství. Vzdálená a rozmazaná čára, kterou už nikdy nebylo možné překročit. Ve svých nočních murách jsem se utopil. Průtok pokračoval a pokračoval, jako otevřená rána - vykrvácí. Srdce Afriky odhaleno před námi, disekce kontinentu s pečlivou péčí.\n\nVe svých nočních murách se pořád topím.""
+  expedition_events.511.f: ""Hřmění vody mi připomnělo dětství. Vzdálená a rozmazaná čára, kterou už nikdy nelze překročit. Ve svých nočních můrách jsem se topil. Proud pokračoval a pokračoval, jako otevřená rána — krvácela. Srdce Afriky se nám odhalovalo, rozpitvání kontinentu s pečlivou přesností.\n\nVe svých nočních můrách se stále topím." # todo: CHANGED
   expedition_events.511.a: "Skvělá zpráva!"
   expedition_events.512.t: "Neúspěšná expedice"
   expedition_events.512.d: "Poté, co jsme několik měsíců nedostali žádné zprávy, se stalo jasným, že expedice do nitra Afriky selhala a [SCOPE.sCharacter('expedition_leader').GetFullName] byla ztracena spolu s ní."
@@ -93,7 +93,7 @@
   expedition_events.542.d: "Člen expedice byl zraněn při neúspěšném lovu na nosorožce a nějaký čas bude potřeba na to, aby se uzdravil."
   expedition_events.542.f: ""Bohužel má puška v klíčovém okamžiku selhala a jeden z lovců byl ... no, asi se dá použít termín probodnut. Chudák bude potřebovat pár dní na uzdravení.""
   expedition_events.542.a: "Co za katastrofu."
-  expedition_events.550.t: "Brouk v ruce je cennější než dva za uchem."
+  expedition_events.550.t: "Brouk v ruce je lepší než dva v uchu" # todo: CHANGED
   expedition_events.550.d: "Brouk se dostal do ucha [SCOPE.sCharacter('expedition_leader').GetFullName]. Bez okamžité lékařské pomoci by to mohlo bránit postupu expedice."
   expedition_events.550.f: ""Hmyz hmyz, svědění neustávalo. "VEN. VEN. VEN." Zakroutil jsem hlavou a křičel bolestí. "DOSTAT TO VEN. VEN." Cítil jsem, jak se jeho křídla pohybují uvnitř mého ucha, snaží se prolézt hlouběji. "[SCOPE.sCharacter('expedition_leader').GetCustom('getSirMadam')]!," jeden z členů expedice se pokouší uchopit mou ruku, když sahám po noži.\n\n"VEN! VEN!!"""
   expedition_events.550.a: "Zastavíme a získáme správnou pomoc."
@@ -114,7 +114,7 @@
   NO_EFFECT: "#italic Nic se nestane#! "
   expedition_events.570.t: "Geografická studie"
   expedition_events.570.d: "Bylo navrženo, abychom se zastavili a provedli geografickou studii oblasti, abychom zvýšili naše místní znalosti."
-  expedition_events.570.f: ""První sluneční paprsky padly z nebe kolmo na suchou, polotmavou půdu. Blikaly na hladině řeky, pohybující vodní hladinu jako křehké větve zkrachovaného stromu.\n\nTéměř záře se vkradla do kamenů; podivná krajina, kde se život jevil tak odlišný, tak cizí - tak živý.""
+  expedition_events.570.f: ""První paprsky slunce dopadaly z nebe kolmo na suchou půdu v pološeru. Zableskovaly na hladině řeky, hýbajíce vodou jako křehké větve nemocného stromu.\n\nTo téměř třpytivé světlo se vsakovalo do skal; rozverná krajina, kde se život zdál být tak odlišný, tak cizí — tak živý." # todo: CHANGED
   expedition_events.570.a: "Dobrá myšlenka."
   expedition_events.570.b: "Nemáme čas."
   modifier_expedition_geographic_study: "Prováděná geografická studie"
@@ -124,7 +124,7 @@
   modifier_expedition_rhino_hunt: "Trofej z lovu na nosorožce"
   crime_events.1.t: "Velké [SCOPE.sState('train_robbery_state').GetNameNoFormatting] vlakové loupeže"
   crime_events.1.d: "Pár odvážných gangů spáchalo sérii vlakových loupeží v [SCOPE.sState('train_robbery_state').GetName], což ohrozilo zákon, pořádek a peněženky bohatých po celém státě."
-  crime_events.1.f: ""Přišli a cinkali se po vagonu, jednoho jsem rozpoznal z plakátu s vyhlášením. Žádné pochybnosti nemám, že to byl [SCOPE.sCharacter('suitable_name').GetLastNameNoFormatting] [SCOPE.GetRootScope.GetCountry.GetCustom('outlaw_gang_type')].""
+  crime_events.1.f: ""Vstoupili do vozu pyšně se vší parádou, jednoho z nich jsem poznal z pátracího plakátu. Neměl jsem o tom žádné pochybnosti — byl to [SCOPE.sCharacter('name_a_scope').GetLastNameNoFormatting] [SCOPE.GetRootScope.GetCountry.GetCustom('outlaw_gang_type')]." # todo: CHANGED
   crime_events.1.a: "Naši maršálové se jich rychle zbaví."
   crime_events.1.b: "Kdo má na starosti vlak nebo dva?"
   custom_gang: "Gang"
@@ -160,7 +160,7 @@
   crime_events.12.c: "Tajné symboly jsou nečitelná."
   crime_events.13.t: "Zabiják: Nové oběti"
   crime_events.13.d: "Další těla v [SCOPE.sState('serial_killer_state_scope').GetName] byla identifikována jako oběti [SCOPE.sState('serial_killer_state_scope').GetCityHubName] Rippera. Pečlivé a odhodlané vyšetřování může poskytnout stopy k identitě vraha."
-  crime_events.13.f: "Mrtvola leží tváří dolů znovu. Na zemi je dlouhá, tmavá skvrna, která se za noc vyštípila. Inspektor se přiblíží. Vnitřnosti oběti jsou rozptýleny kolem místa jako masový salát.\n\n "Všichni vypadají stejně — [SCOPE.GetRootScope.GetCountry.GetCustom('serial_killer_modus_operandi')]."\n\nZnepokojující pohled; oči bílé a shnilé jako zkažené mléko, chlapec vesele sleduje scénu z jednoho z střech, inspektor si podává ruku, aby ho poslal pryč. Hromada těl se stále zvětšuje jako nedokončený obraz."
+  crime_events.13.f: "Mrtvola leží znovu tváří dolů. Je tu dlouhá tmavá skvrna, která přes noc zaschla. Inspektor se přiblíží. Vnitřnosti oběti jsou rozházené kolem jako masový salát.\n\n\"Všichni vypadají stejně—[SCOPE.GetRootScope.GetCountry.GetCustom('serial_killer_modus_operandi')].\"\n\nZnepokojivý pohled; oči bílé a zhnilé jako zkyslé mléko, chlapec dál špehuje scénu z jedné střechy, inspektor zvedne ruku, aby ho zahnal. Hromada těl roste dál jako nedokončený obraz." # todo: CHANGED
   crime_events.13.a: "Financujte větší vyšetřování."
   crime_events.13.b: "Žádné důkazy nespojují tyto zločiny."
   modifier_public_worried: "Ripper: Veřejná panika"
@@ -339,7 +339,7 @@
   congo_free_state_events.5.d: "Po zmizení monarchie se stalo jasným, že [SCOPE.sCountry('free_state').GetNameNoFlag] je reliktem minulosti. Mohli bychom nyní reintegraci státu následovat novým směrem pod vedením [SCOPE.sCharacter('free_state_monarch').GetPrimaryRoleTitle]."
   congo_free_state_events.5.d2: "Mezinárodní názor na [SCOPE.sCountry('free_state').GetNameNoFlag] se po odhalení jeho zvěrstev stal velmi nepříznivým. Mohli bychom nyní reintegraci státu s velmi malou opozicí ze strany [SCOPE.sCharacter('free_state_monarch').GetPrimaryRoleTitle]."
   congo_free_state_events.5.f: ""Je děsivé si i pomyslet, že se něco takového může stát. Úmrtí, masakry a hladomor. Vše jménem zisku — a radosti. Úředníci soutěží, kdo je nejbrutálnější, vystavující jizvy místních jako válečné trofeje.\n\nPorušili všechny zákony lidstva. Vetřelci z nejhlubších pekel, jejichž i nehmotné spojení s lidmi je nám urážkou."
-  congo_free_state_events.5.f2: "Že se to všechno stalo se souhlasem [SCOPE.sCharacter('free_state_monarch').GetPrimaryRoleTitle] je zjevně absurdní. Myslet si, že [SCOPE.sCharacter('free_state_monarch').GetWomanMan] může vlastnit celou národ jako [SCOPE.sCharacter('free_state_monarch').GetSheHe] vlastní dům na venkově, je naše nejhlubší a nejludicrousní chyba.\n\nÚmrtí, masakry a hladomor. Vše jménem osobního zisku — a morbidní radosti."
+  congo_free_state_events.5.f2: "To, že se to všechno přihodilo se souhlasem [SCOPE.sCharacter('free_state_monarch').GetPrimaryRoleTitle], je naprosto směšné. Myslet si, že [SCOPE.sCharacter('free_state_monarch').GetWomanMan] může vlastnit celý národ, jako [SCOPE.sCharacter('free_state_monarch').GetSheHe] vlastní chalupu na venkově, je naše nejhlubší a nejabsurdnější chyba.\n\nÚmrtí, masakry a hladomory. To vše ve jménu osobního zisku — a morbidní radosti." # todo: CHANGED
   congo_free_state_events.5.a: "Integrujeme stát."
   congo_free_state_events.5.b: "Možná je čas, aby to byla skutečně 'svobodná' země."
   free_state_monarch_modifier: "Monarch svobodného státu"
@@ -677,7 +677,7 @@
   won_ragamuffin_war_ostracize: "Ostrakizovat ragamuffiny"
   south_america.6.t: "Porážka rebelů"
   south_america.6.d: "Jak se očekávalo, ragamuffínske povstání bylo potlačeno. Jak budeme zacházet se zbývajícími přeživšími?"
-  south_america.6.f: ""Ne všechny návrhy byly obzvláště šlechetné. Válka má na muže tendenci takto působit. Někteří velitelé se usmívají vedle stanů, jejich rty jsou ohnuté s triumfálním potěšením. Někteří jiní tvrdí, že už bylo prolití dost krve — jsou zesměšňováni další večer.\n\nOstatní sledují v tichosti, což může být, možná, horší."""
+  south_america.6.f: ""Ne všechny návrhy byly zvlášť milosrdné. Válka má tendenci měnit muže. Někteří velitelé se u stanů usmívají, rty jim hrály triumfálním potěšením. Jiní namítají, že už bylo prolito dost krve — následující večer jsou vysmíváni.\n\nOstatní sledují v tichosti, což by se dalo považovat za ještě horší." # todo: CHANGED
   south_america.6.a: "Integrujte je."
   south_america.6.b: "Vyloučit je."
   won_ragamuffin_war: "Vyhraná ragamuffin válka"

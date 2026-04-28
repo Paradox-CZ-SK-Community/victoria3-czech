@@ -46,7 +46,7 @@
  Meiji: "Meidži"
  Mpande: "Mpande"
  Showa: "Šówaa"
- Taisho: "Taišo"
+ Taisho: "Taishō" # todo: CHANGED
  Tewodros: "Tewodros"
  Zulu: "Zulu"
  activate_british_raj: "Východoindická společnost bude reformována na Britský rádž"
@@ -112,7 +112,7 @@
  anarchy.2.d: "Kolonialismus je pohromou lidstva!"
  anarchy.2.desc: "Zatímco [ROOT.GetCountry.GetName] směřuje k [SCOPE.sLaw('current_law_scope').GetName], [SCOPE.gsInterestGroup('anarchists_scope').GetName] volají po zrušení státních institucí."
  anarchy.2.e: "Stát se pomalu rozpadne."
- anarchy.2.f: ""Jak můžeme nazývat sami sebe anarchistickou společností, zatímco nadále podporujeme tyranii státu? Pachateli státního násilí se stále volně pohybují mezi námi; policie, odvodoví úředníci, koloniální administrátoři — všichni třídní zrádci. Kradou produkt naší poctivé práce a používají jej k financování našeho vlastního útlaku!""
+ anarchy.2.f: ""Jak se můžeme nazývat anarchistickou společností, když stále podporujeme tyranii státu? Pachatelé státního násilí stále běsní mezi námi; policie, odvodní úředníci, koloniální administrátoři—všichni zrádci třídy. Kradou produkt naší poctivé práce a používají ho k financování našeho vlastního útlaku! " # todo: CHANGED
  anarchy.2.t: "Demontáž státu"
  anarchy.3.a: "Jsme silnější dohromady."
  anarchy.3.b: "Mají fascinující přístup k zemědělství."
@@ -154,7 +154,7 @@
  autocracy.3.b: "Odpusťte se nečistým myšlenkám."
  autocracy.3.d: "[SCOPE.gsInterestGroup('church_scope').GetName] ve [SCOPE.sState('religious_serfs_state').GetName] ujišťují [SCOPE.sPop('religious_serf_pop').GetName], že navzdory tvrdým podmínkám jejich života slouží většímu dobru národa [ROOT.GetCountry.GetAdjective]. Nevolníci budou odměněni v záhrobí za své služby."
  autocracy.3.f: ""Blahoslavení tiší,\nneboť oni zdědí zemi,\nBlahoslavení ti, kdo lační a žízní po spravedlnosti\nneboť oni budou nasyceni,\nBlahoslavení milosrdní\nneboť jim bude projeveno milosrdenství." \n\n–#italic Kázání na hoře#!, Matouš 5: 5-7"
- autocracy.3.t: "Požehnáni jsou tichí"
+ autocracy.3.t: "Blahoslavení tichí" # todo: CHANGED
  ban_liquor: "Zákaz alkoholu"
  ban_liquor_desc: "Konzumace alkoholu sráží naše občany k jejich základním pudům. Alkohol musí být zakázán, aby se zajistila morální a civilizovaná společnost."
  bank_robberies: "Bankovní loupeže"
@@ -340,7 +340,7 @@
  communism_1_progress_bar: "Duch, který straší svět"
  communism_1_progress_bar_desc: "Pokrok:"
  communism_progress_bar_at_full_tt: "#variable $communism_1_progress_bar$#! ukazatel postupu dosáhl #variable 100%#!"
- communism_progress_from_characters_tt: "popularita [Concept('concept_character', '$concept_characters$')] podporujících [GetLawType('law_council_republic').GetName]"
+ communism_progress_from_characters_tt: "[concept_popularity] z [Concept('concept_character', '$concept_characters$')] podporujících [GetLawType('law_council_republic').GetName]" # todo: CHANGED
  communism_progress_from_events_tt: "události a další účinky"
  communism_progress_from_interest_groups_tt: "[Concept('concept_interest_group','$concept_interest_groups$')] podporující [GetLawType('law_council_republic').GetName]"
  communism_progress_from_laws_tt: "úroveň #bold Pořádkových sil#! a #bold Vnitřních záležitostí#! [Concept('concept_institution', '$concept_institutions$')]"
@@ -442,10 +442,6 @@
  dual_monarchy.1.t: "Duální monarchie"
  dual_monarchy_compromise: "Austro-uherský kompromis"
  dual_monarchy_compromise_rejected: "Odmítnutý maďarský kompromis"
- dyn_c_empire_of_japan: "Japonské impérium"
- dyn_c_empire_of_japan_adj: "Japonský"
- dyn_c_japan_shogunate: "Japonský šogunát"
- dyn_c_japan_shogunate_adj: "Japonský"
  dyn_c_peru_bolivia: "Peru-Bolívie"
  dyn_c_peru_bolivia_adj: "Peruánsko-bolivijský"
  dyn_c_welsh_patagonia: "Y Wladfa"
@@ -702,7 +698,7 @@
  investigating_foreign_murder: "Dlouhé vyšetřování vraždy"
  iron_horse_raids: "Loupeže železného koně"
  is_in_civil_war_tt: "Je v [concept_civil_war]"
- is_meiji_japan: "Bylo dokončeno čestné vstupní záznam do obnovy."
+ is_meiji_japan: "Dokončil #v $je_meiji_restoration$#! zápis do deníku" # todo: CHANGED
  is_not_doing_anti_strike_tt: "Neprovádějí protiopatření proti stávkám"
  is_not_negotiating_with_strikers_tt: "Nedohadujeme se se stávkujícími"
  isolation.1.a: "To je skandální!"
@@ -813,12 +809,11 @@
  je_meiji_diplomacy_reason: "Japonsko se izolovalo po staletí, aby odolalo cizím vlivům. Ale nyní je čas se otevřít světu. Naším cílem je však nejen otevřít Japonsko, ale i učinit naši zemi mocností na světovém jevišti."
  je_meiji_economy: "Obnova: Industrializovat Japonsko"
  je_meiji_economy_reason: "Japonsko musí modernizovat svůj průmysl, aby konkurovalo národům, které usilují o kontrolu a vykořisťování nás."
- je_meiji_main: "Obnova [ROOT.GetCountry.GetRuler.GetFirstName]"
- je_meiji_main_goal: "Dokončit 3 restaurace [Concept('concept_journal_entry', '$concept_journal_entries$')]"
- je_meiji_main_reason: "Císař byl obnoven v moci, a proces modernizace začíná. Je toho hodně, co je třeba udělat."
+ je_meiji_main: "Obnovení moci [ROOT.Var('emperor_var').GetCharacter.GetFirstName]" # todo: CHANGED
+ je_meiji_main_goal: "Dokončete všech 3 restaurovací [Concept('concept_journal_entry', '$concept_journal_entries$')]" # todo: CHANGED
+ je_meiji_main_reason: "Císař byl obnoven u moci a proces znovuvýstavby $JAP$ může nyní začít. Je toho mnoho k vykonání. Cizí mocnosti na nás hledí hladovýma očima. Musíme být schopni odolat náporu těchto států nejen vojensky, ale i ekonomicky a politicky:\n\n• [SCOPE.GetRootScope.GetCountry.GetCustom('meiji_je_conditions_army')]\n• [SCOPE.GetRootScope.GetCountry.GetCustom('meiji_je_conditions_economy')]\n• [SCOPE.GetRootScope.GetCountry.GetCustom('meiji_je_conditions_diplomacy')]\n\nMusíme vybudovat toto nové $JAP$ dokud je železo žhavé a využít tuto příležitost k utváření země způsoby, o kterých naši předkové nikdy nesnili." # todo: CHANGED
  je_meiji_restoration: "Cenná obnova"
- je_meiji_restoration_goal: "Následující musí být pravdivé po dobu 10 let:"
- je_meiji_restoration_reason: "Šógunát vládl nad izolovaným a stagnujícím Japonskem po staletí. Pokud si přejeme mít místo v rychle modernizujícím světě, musíme obnovit moc skutečnému císaři."
+ je_meiji_restoration_reason: "The opening of #v $JAP$#! has unleashed forces beyond the control of the ruling #b Shogunate#!. Enraged by the encroachment of predatory foreign powers, militants of the [SelectLocalization(SCOPE.sPoliticalMovement('meiji_movement_scope').IsValid, SCOPE.sPoliticalMovement('meiji_movement_scope').GetName, 'movement_meiji_restorationist_name')] demand the deposition of the $RULER_TITLE_SHOGUN$, restoration of the power of the #b $RULER_TITLE_EMPEROR$#!, and the expulsion of foreigners. All the while, ambitious [SCOPE.gsInterestGroup('daimyo_ig').GetName] seek to use the weakness of the Shogunate to advance their own interests.\n\nIf Japan is to find a place in the world, she must realize the reform necessary to defend herself, and settle the conflict between her de jure and de facto sovereigns. Whether alone or alongside the Shōgun, the Emperor must rule.\n\n@warning! As the [Concept('concept_activism', '$concept_activism_short$')] of the [SelectLocalization(SCOPE.sPoliticalMovement('meiji_movement_scope').IsValid, SCOPE.sPoliticalMovement('meiji_movement_scope').GetName, 'movement_meiji_restorationist_name')] increases, factions loyal to the Imperial Court will seek more forceful means to restore the Emperor." # todo: CHANGED
  je_munitions_factories: "Zbrojní průmysl"
  je_munitions_factories_reason: "Pokroky ve zbraních vedly k potřebě výroby více municí než pušních koulí. Pokud vyvineme průmysl zaměřený na výrobu nábojů, mohli bychom zásobovat naše vlastní vojáky a potenciálně prodávat i jiným národům."
  je_north_german_status: "Severoněmecké malé národy se s námi sjednotí, pokud se staneme jediným [concept_unification_candidate]."
@@ -1029,9 +1024,9 @@
  mass_reconversion_tt: "#proměnná 10%"
  meiji.1.a: "Průmyslová síla nás provede."
  meiji.1.b: "Musíme se obrátit na intelektuály."
- meiji.1.d: "[SCOPE.gsInterestGroup('shogunate_ig').GetName] padl z mocnosti a [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstName] obnovil politickou primární moc monarchie. Tento významný okamžik znamená konec staletí vlády šógunátu v [ROOT.GetCountry.GetName], a oznámí novou éru modernizace a reforem. [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] si musí pečlivě vybírat své politické spojence."
- meiji.1.f: "Bývalý šógun se s respektem a ostudou klaní, jak předává své sídlo a místo moci, mocný Edo hrad, obnovenému císaři. Renovace se mají začít okamžitě; starý hrad bude nahrazen slavnostním císařským palácem. I když exteriér bude vypadat téměř stejně jako bývalý císařský rezidenci v Kjótu, císař plánuje sloučit bohaté dekorativní tradice Japonska se zvláštními západními módami. Možná metafora pro budoucí tvar Japonska."
- meiji.1.t: "Obnova [ROOT.GetCountry.GetCustom('JAP_historical_emperor')]"
+ meiji.1.d: "[GetLawType('law_bakufu').GetName] padl z moci a [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstName] obnovil politickou převahu monarchie. Tato významná událost znamená konec staletí vojenské vlády v #v $JAP$#! a zvěstuje novou éru modernizace a reforem. [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] musí pečlivě volit [ROOT.GetCountry.GetRuler.GetHerHis] politické spojence." # todo: CHANGED
+ meiji.1.f: "Bývalý Shōgun se s úctou a hanbou sklání, když předává své sídlo a centrum moci, mocný Edo Castle, obnovenému císaři. Renovace mají začít okamžitě; starý hrad bude nahrazen slavnostním císařským palácem. Ač se exteriér bude podobat bývalému císařskému sídlu v Kyoto, císař plánuje spojit bohaté japonské dekorativní tradice se zvláštními západními módami. Možná metafora pro budoucí podobu Japonska." # todo: CHANGED
+ meiji.1.t: "Obnovení moci [ROOT.Var('emperor_var').GetCharacter.GetFirstName]" # todo: CHANGED
  meiji.13.a: "Musíme se přizpůsobit našim novým okolnostem."
  meiji.13.d: "Donucen být otevřen světu, [ROOT.GetCountry.GetName] nyní musí čelit hospodářskému zásahu jiných mocností. Autorita klanu [SCOPE.sCharacter('shogun_scope').GetLastName] a [SCOPE.gsInterestGroup('shogunate_ig').GetName] byla tedy silně narušena."
  meiji.13.f: "Změny větru času hučí na naše dveře a k zachování našeho zřízení musíme ohnout a otevřít je rozmarům světa."
@@ -1045,7 +1040,7 @@
  meiji.3.a: "Nechme je udržet jejich status jako důstojníci a šlechtici."
  meiji.3.b: "Éra samurajů skončila."
  meiji.3.d: "[ROOT.GetCountry.GetName] se podařilo reformovat ozbrojené síly a ukončit zaostalý systém feudalismu. Vojenská kast [SCOPE.gsInterestGroup('samurai_ig').GetName] se zdá být již bez místa v naší modernizující se společnosti."
- meiji.3.f: "Šógun velel loajalitě daimyo, kteří se zase spoléhali na své samuraje, aby pomohli vynucení jejich vlády nad nevolníky. To bylo základem japonského feudalismu – nyní relikvie minulosti. Existují ti, kteří jsou stále loajální ideálům samurajů, kódům a ctnostem známým jako bushido, a tato dědictví určitě přetrvá. Ale samurajové padli a již jejich podobu neuvidíme."
+ meiji.3.f: "Shōgun velel věrnosti daimjóů, kteří se zase spoléhali na své samuraje, aby jim pomáhali vynucovat jejich vládu nad poddanými. To bylo základem japonského feudalismu—nyní reliktem minulosti. Jsou tací, kteří jsou stále věrní samurajským ideálům, kódům a cnostem známým jako Bushido, a toto dědictví jistě přetrvá. Ale samurajové zanikli a už jejich podobu nikdy neuvidíme." # todo: CHANGED
  meiji.3.t: "Pád samurajů"
  meiji.4.a: "Vítáme [SCOPE.sCountry('military_consultant_country').GetAdjectiveNoFormatting] pomoc."
  meiji.4.b: "Nechceme jejich otrávený kalich."
@@ -1111,9 +1106,6 @@
  no_buying_serfs: "Odmítnuto platit za emancipaci"
  no_more_royalists: "[concept_interest_group] vůdci již nebudou mít ideologii [GetIdeology('ideology_royalist').GetName]"
  no_new_constitution: "Spravedlivý proces"
- notification_ig_leader_memento_mori_desc: "[SCOPE.sCharacter('memento_mori_leader').GetFullName], vůdce [SCOPE.gsInterestGroup('memento_mori_ig').GetName], se stáhl z politického života. [SCOPE.gsInterestGroup('memento_mori_ig').GetLeader.GetFullName], známý [SCOPE.gsInterestGroup('memento_mori_ig').GetLeader.GetIdeology.GetName], nyní vede tuto zájmovou skupinu."
- notification_ig_leader_memento_mori_name: "[SCOPE.sCharacter('memento_mori_leader').GetFullName] ([SCOPE.gsInterestGroup('memento_mori_ig').GetTextIcon]) Odchází do důchodu"
- notification_ig_leader_memento_mori_tooltip: "#header $notification_ig_leader_memento_mori_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ig_leader_memento_mori_desc$"
  notification_law_notification_advance_desc: "[SCOPE.sLaw('current_law_scope').GetName] přitáhla nové podporovatele, čímž zvýšila [concept_enactment_success] o 15%"
  notification_law_notification_advance_name: "Pokrok zákona"
  notification_law_notification_advance_tooltip: "#header $notification_law_notification_advance_name$#!\n$TOOLTIP_DELIMITER$\n$notification_law_notification_advance_desc$"
@@ -1164,7 +1156,7 @@
  opium_wars.2.a: "Budou užívat opium a budou ho mít rádi!"
  opium_wars.2.b: "Máme jiné záležitosti, kterým se musíme věnovat."
  opium_wars.2.d: "[SCOPE.sCountry('opium_wars_target_country').GetAdjectiveNoFormatting] vláda oznámila svůj záměr ukončit obchod s opiem v [SCOPE.sCountry('opium_wars_target_country').GetName]. Jako hlavní vývozce opia je [ROOT.GetCountry.GetName] ohrožena velkým ekonomickým problémem."
- opium_wars.2.f: ""Někteří kritizují takzvané morální zlo obchodu s opiem; říkám jim, kdo jste, abyste stáli v cestě volnému obchodu a volbě spotřebitele? Poptávka existuje, a my poskytujeme — pokud ne my, pak nějaký jiný národ by zbohatl na zádech [SCOPE.sCulture('opium_addicted_culture').GetNameNoFormatting] opiových maniaků. Měl by být každý člověk zbaven opia jen proto, že někteří nezodpovědní lidé jej zneužívají? A měla by každá [ROOT.GetCountry.GetAdjectiveNoFormatting] rodina být zbavena bohatství, které nám opium přináší?""
+ opium_wars.2.f: ""Jsou tací, kdo hlučí proti údajné mravní zkaženosti obchodu s opiem; já jim říkám, kdo jste vy, abyste stáli v cestě svobodnému obchodu a svobodným rozhodnutím spotřebitele? Poptávka existuje, a tak dodáváme—pokud ne my, nějaký jiný národ by zbohatl na zádech [SCOPE.sCulture('opium_addicted_culture').GetNameNoFormatting] opiových šílenců. Měl by být každý muž připraven o opium jen proto, že nějací nezodpovědní hlupáci ho zneužívají? A měla by být každá [ROOT.GetCountry.GetAdjectiveNoFormatting] rodina ochuzena o bohatství, které opium našemu státu přináší? " # todo: CHANGED
  opium_wars.2.t: "Opiové války"
  opium_wars.3.a: "Suverenita [ROOT.GetCountry.GetName] je absolutní."
  opium_wars.3.b: "Harmonie se vrátí do [ROOT.GetCountry.GetName]."
@@ -1445,11 +1437,10 @@
  shinto_decision_desc: "S obnovením císařské domácnosti k politické moci by bylo moudré integrovat místní víry do oficiální státní kultury, která zdůrazňuje božství císaře."
  shogun_forced_to_open_market: "Nucen otevřít Japonsko"
  shogun_ig_forced_to_open_market: "Nucen otevřít Japonsko"
- shogunate_rename.tt: "Zájmová skupina šógunátu bude přeorganizována na pozemkové vlastníky."
  siberia_infrastructure: "Sibiřské železnice"
  siberia_mines.tt: "Každý vlastněný stát ve východní Sibiři a západní Sibiři dostane:"
  siberia_mining: "Bohatství Sibiře"
- siberia_tt: "Každý vlastněný stát v [SCOPE.sStrategicRegion('east_siberia').GetName], [SCOPE.sStrategicRegion('west_siberia').GetName] a [SCOPE.sStrategicRegion('manchuria').GetName] s železnicí získá:"
+ siberia_tt: "Každý vlastněný stát v [SCOPE.sStrategicRegion('west_siberia').GetName], a [SCOPE.sStrategicRegion('manchuria').GetName] s železnicí získá:" # todo: CHANGED
  sick_man.1.a: "Velká reforma je potřebná."
  sick_man.1.d: "Stát [ROOT.GetCountry.GetName] prochází obdobím stabilního úpadku. Pokud neobnovíme [ROOT.GetCountry.GetAdjectiveNoFormatting] suverenitu a nevrátíme se na místo mezi mocnostmi světa, riskujeme katastrofu."
  sick_man.1.f: "Klesli jsme, ale můžeme se znovu vzchopit. Při příznivém incidentu jsme sesadili janissary, kteří si po staletí udržovali chudou moc, což konečně umožnilo reformu. Ještě mnohem víc je třeba udělat. Nejdříve samozřejmě potřebujeme nahradit janissary skutečně moderní vojenskou silou. Ale navíc musíme obnovit postavení Sublimního Porte jako výška civilizace. Vzdělání, urbanizace a suverenita budou hlavními body agendy [ROOT.GetCountry.GetAdjectiveNoFormatting]."
@@ -1740,3 +1731,22 @@
  generic_revolt_miguelist_adj: "Miguelistická $ADJECTIVE$"
  generic_revolt_slave_revolt: "$ADJECTIVE$ povstání otroků"
  generic_revolt_slave_revolt_adj: "Revoluční $ADJECTIVE$"
+ je_meiji_status_has_completed_meiji_army_je: "Je #g dokončeno#! #b $je_meiji_army$#!\n" # todo: NEW TRANSLATION
+ je_meiji_status_has_completed_meiji_economy_je: "Je #g dokončeno#! #b $je_meiji_economy$#!\n" # todo: NEW TRANSLATION
+ je_meiji_status_has_completed_meiji_diplomacy_je: "Je #g dokončeno#! #b $je_meiji_diplomacy$#!" # todo: NEW TRANSLATION
+ je_meiji_status_has_completed_iwakura_mission_je: "Je #g dokončeno#! #b Obnovení: Mise na Západ#!" # todo: NEW TRANSLATION
+ je_meiji_status_has_not_completed_meiji_army_je: "Ještě #warning nedokončeno#! #b $je_meiji_army$#!" # todo: NEW TRANSLATION
+ je_meiji_status_has_not_completed_meiji_economy_je: "Ještě #warning nedokončeno#! #b $je_meiji_economy$#!" # todo: NEW TRANSLATION
+ je_meiji_status_has_not_completed_meiji_diplomacy_je: "Ještě #warning nedokončeno#! #b $je_meiji_diplomacy$#!" # todo: NEW TRANSLATION
+ je_meiji_status_has_not_completed_iwakura_mission_fake_je: "Ještě #warning nedokončeno#! #b Obnovení: Mise na Západ#!" # todo: NEW TRANSLATION
+ je_meiji_status_has_not_completed_iwakura_mission_real_je: "Ještě #warning nedokončeno#! #b $je_iwakura_mission$#!" # todo: NEW TRANSLATION
+ adds_mission_to_the_west_je_tt: "Aktivuje #b Obnovení: Mise na Západ#! [concept_journal_entry]" # todo: NEW TRANSLATION
+ meiji_timeout_some_progress: "Alespoň #b 1#! položka deníku Obnovy bude dokončena, až uplyne #b 12 let#!" # todo: NEW TRANSLATION
+ meiji_timeout_no_progress: "Žádné položky deníku Obnovy nejsou dokončeny po uplynutí #b 12 let#!" # todo: NEW TRANSLATION
+ generic_revolt_meiji_restorationist: "$ADJECTIVE$ Obnovenecká aliance" # todo: NEW TRANSLATION
+ generic_revolt_meiji_restorationist_adj: "Císařský $ADJECTIVE$" # todo: NEW TRANSLATION
+ generic_revolt_meiji_restorationist_satcho: "Satchō aliance" # todo: NEW TRANSLATION
+ generic_revolt_meiji_restorationist_satcho_adj: "Satchōdo" # todo: NEW TRANSLATION
+ generic_revolt_tokugawa_loyalist: "$ADJECTIVE$ Šógunát" # todo: NEW TRANSLATION
+ generic_revolt_tokugawa_loyalist_adj: "Šógunát" # todo: NEW TRANSLATION
+ shogun_forced_to_open_market_character: "$shogun_ig_forced_to_open_market$" # todo: NEW TRANSLATION

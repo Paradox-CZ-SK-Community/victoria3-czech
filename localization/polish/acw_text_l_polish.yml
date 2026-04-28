@@ -62,7 +62,7 @@
  acw_followup_events.4.a: "Povolit omezenou redistribuci půdy."
  acw_followup_events.4.b: "Hospodářská opatření mohou způsobit potíže."
  acw_followup_events.4.d: "V válce proti secesionistům mnoho zotročených lidí věřilo, že jakmile budou osvobozeni, budou mít právo vlastnit půdu, na které byli nuceni pracovat jako otroci. Lidé v [SCOPE.sState('land_redistribution_state').GetName] tlačili na místní úřady, které se obracejí na nás pro směr."
- acw_followup_events.4.f: ""Půda! Půda je to, co potřebujeme! Nemohu se živit hlasovacím lístkem — dejte mi kus země, na kterém už pracuji, abych mohl živit svou rodinu.""
+ acw_followup_events.4.f: ""Země! Země je to, co potřebujeme! Nemohu se uživit volební urnou—dejte mi ten pozemek, na kterém už pracuji, abych mohl uživit rodinu." # todo: CHANGED
  acw_followup_events.4.t: "Čtyřicet akrů a mule."
  acw_followup_events.5.a: "Vyberte plnou sílu vlády na ochranu osvobozených."
  acw_followup_events.5.b: "Nemůžeme odcizit místní vůdce použitím vojsk."
@@ -88,7 +88,7 @@
  acw_je_events.1.b: "Raději bych nazval naši věc právem států."
  acw_je_events.1.d1: "Konvence pro-otrokářských států vyhlásila svou nezávislost na nás jako [SCOPE.sCountry('csa_scope').GetName]. Unie byla vyzvána, ale nebude snadno ustupovat."
  acw_je_events.1.d2: "Konvence abolicionistických států vyhlásila svou nezávislost na nás jako [SCOPE.sCountry('fsa_scope').GetName]. Unie byla vyzvána, ale nebude snadno ustupovat."
- acw_je_events.1.f1: ""V okamžiku ohromného kroku, který jsme učinili při rozpuštění našeho spojení s vládou, jejíž součástí jsme tak dlouho byli, je jen spravedlivé, abychom prohlásili hlavní důvody, které nás vedly k tomuto rozhodnutí.\n\nNaše pozice je plně spjata s institucí otroctví - velkým materiálním zájmem světa.""
+ acw_je_events.1.f1: ""V tom významném kroku, který jsme podnikli rozpouštěním našeho spojení s vládou, jejíž jsme tak dlouho byli součástí, je spravedlivé, abychom oznámili hlavní důvody, které nás k tomuto kroku přiměly.\n\nNaše postavení je zcela spjato s institucí otroctví—velkým materiálním zájmem světa." # todo: CHANGED
  acw_je_events.1.f2: ""V okamžiku ohromného kroku, který jsme učinili při rozpuštění našeho spojení s vládou, jejíž součástí jsme tak dlouho byli, je jen spravedlivé, abychom prohlásili hlavní důvody, které nás vedly k tomuto rozhodnutí.\n\nNaše pozice je plně spjata s institucí otroctví - institucí bezprecedentního zla, kterou je nutné zrušit.""
  acw_je_events.1.t1: "Jižní deklarace o secesi"
  acw_je_events.1.t2: "Severní deklarace o secesi"
@@ -184,7 +184,7 @@
  unreconstructed_state: "Nezrekonstruovaný stát"
  wartime_need_for_police: "Potřeba policie v době války"
  wild_west.1.a: "Nechte místního šerifa, ať to vyřeší."
- wild_west.1.b: "Najměte Pinkertony — ví, jak být drsní."
+ wild_west.1.b: "Najměte Pinkertons—umějí být drsní." # todo: CHANGED
  wild_west.1.c: "Zbraně národní gardy zastaví zločince."
  wild_west.1.d: "Pověstná banda zločinců terorizovala slušné osady v [SCOPE.sState('bank_robbery_state').GetName]."
  wild_west.1.f: "Drsný muž zamkl svou zbraň a kopl tělo zástupce na stranu. "Říkal jsem jim," zasmál se, "říkal jsem jim, že pokud budu někdy svobodný, [SCOPE.GetRootScope.GetCountry.GetCustom('american_outlaw_gang')] jim ukáže, co to znamená.""
@@ -197,7 +197,7 @@
  wild_west.2.t: "Nájezdy na Železného koně"
  wild_west.3.a: "Zákonodárci jsou zákon, a my nemůžeme zastavit zákon."
  wild_west.3.b: "Dočasně odvolat maršály z [SCOPE.sState('OK_corral_state').GetName]."
- wild_west.3.d: "Místní policejní v [SCOPE.sState('OK_corral_state').GetName] se zapojili do přestřelky s několika kovboji. Následující vyšetřování ukázalo, že přestřelka byla pravděpodobně způsobena osobním sporem mezi americkými maršály a zapojenými občany, spíše než jako pronásledování zákona. Lidé požadují spravedlnost — proti zákonodárcům."
+ wild_west.3.d: "Muži zákona v [SCOPE.sState('OK_corral_state').GetName] se dostali do přestřelky s několika kovboji. Následující vyšetřování odhalilo, že přestřelka pravděpodobně vznikla kvůli osobnímu sporu mezi americkými maršály a zúčastněnými občany, spíše než kvůli prosazování práva. Lidé požadují spravedlnost—vůči mužům zákona." # todo: CHANGED
  wild_west.3.f: ""No tak, chce ještě někdo zkusit své štěstí? Vidíte tuhle odznak? Znamená to, že jsem tady v čele! Jsem spravedlnost! Teď se hýbejte, tady není nic k vidění.""
  wild_west.3.t: "Přestřelka u corralu"
  ACW_DIXIE_STATES_HEADER: "Všechny tyhle [Concept('concept_state', '$concept_states$')|l] jsou [Concept('concept_incorporated_state','začleněny')] a mají alespoň [GetPlayer.MakeScope.ScriptValue('acw_reincorporate_dixie_loyalist_min')|0v%] [GetCulture('dixie').GetName] [Concept('concept_loyalist', 'loajalistů')]:"

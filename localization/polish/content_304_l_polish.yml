@@ -52,8 +52,8 @@
  austrian_radicals_cooldown_tt: "V minulosti nevyužil rozhodnutí #bold Podporovat italský nacionalismus#! poslední #v [GetPlayer.MakeScope.ScriptValue('risorgimento_action_cooldown_years')]#!"
  caudillo.6.a: "Důvěřuj v hrdinství [SCOPE.sCharacter('leadership_challenge_commander').GetPrimaryRoleTitle] [SCOPE.sCharacter('leadership_challenge_commander').GetLastName]."
  caudillo.6.b: "[SCOPE.gsInterestGroup('leadership_challenge_ig').GetName] musí zůstat pod civilní kontrolou."
- caudillo.6.d: "[SCOPE.sCharacter('leadership_challenge_commander').GetPrimaryRoleTitle] [SCOPE.sCharacter('leadership_challenge_commander').GetFullName], populární vojenský velitel, začal vyzývat na civilní vedení [SCOPE.gsInterestGroup('leadership_challenge_ig').GetName] pod [SCOPE.sCharacter('leadership_challenge_politician').GetFullName]. Ambice [SCOPE.sCharacter('leadership_challenge_commander').GetPrimaryRoleTitle] hrozí rozšířit vládu caudilla do dalšího sektoru společnosti."
- caudillo.6.f: "#bold Nová vojenská ofenzíva: Civilní úřady pod palbou! #!\n\nZvláštní signál zazněl dnes ráno, když [SCOPE.sCharacter('leadership_challenge_commander').GetPrimaryRoleTitle] [SCOPE.sCharacter('leadership_challenge_commander').GetFullNameNoFormatting] oznámil [SCOPE.sCharacter('leadership_challenge_commander').GetHerHis] záměr zavést rozsáhlé reformy mezi současným politickým uspořádáním pod [SCOPE.sCharacter('leadership_challenge_politician').GetFullNameNoFormatting]. Šuškání z ulic [ROOT.GetCountry.GetCapital.GetCityHubName] o [SCOPE.sCharacter('leadership_challenge_politician').GetFullNameNoFormatting]vedení se stala křiky po odstoupení, vyzývající k krokům proti [SCOPE.sCharacter('leadership_challenge_commander').GetPrimaryRoleTitle] [SCOPE.sCharacter('leadership_challenge_commander').GetLastNameNoFormatting]. (Pokračování na str. 3)"
+ caudillo.6.d: "[SCOPE.sCharacter('leadership_challenge_commander').GetPrimaryRoleTitle] [SCOPE.sCharacter('leadership_challenge_commander').GetFullName], prominentní vojenský velitel, začal zpochybňovat civilní vedení [SCOPE.gsInterestGroup('leadership_challenge_ig').GetName] pod vedením [SCOPE.sCharacter('leadership_challenge_politician').GetFullName]. Ambice [SCOPE.sCharacter('leadership_challenge_commander').GetPrimaryRoleTitle] hrozí rozšířením caudillo vlády do další oblasti společnosti." # todo: CHANGED
+ caudillo.6.f: "#bold Nové vojenské tažení: Civilní úřady pod palbou! #!\n\nDnes ráno zazněla zvláštní znělka, když [SCOPE.sCharacter('leadership_challenge_commander').GetPrimaryRole.GetName] [SCOPE.sCharacter('leadership_challenge_commander').GetFullNameNoFormatting] oznámil[a] [SCOPE.sCharacter('leadership_challenge_commander').GetHerHis] záměry zavést rozsáhlé reformy v současném politickém uspořádání pod vedením [SCOPE.sCharacter('leadership_challenge_politician').GetFullNameNoFormatting]. Šeptání z ulic [ROOT.GetCountry.GetCapital.GetCityHubName] o vedení [SCOPE.sCharacter('leadership_challenge_politician').GetFullNameNoFormatting] se proměnilo v volání po odstoupení, rostoucí v chóru s odsudky vůči [SCOPE.sCharacter('leadership_challenge_commander').GetPrimaryRole.GetName] [SCOPE.sCharacter('leadership_challenge_commander').GetLastNameNoFormatting]. (Pokrač. str. 3)" # todo: CHANGED
  caudillo.6.t: "Výzva k vedení"
  central_government_defeated_tt: "#bold centrální vláda#! v [GetGlobalVariable('chinese_central_government').GetCountry.GetName|v] byla poražena"
  charles_xv_death_tt: "Karel XV. umírá."
@@ -123,7 +123,7 @@
  expedition_status_loc_blank: "Výprava [ROOT.Var('expedition_leader_storage_var').GetCharacter.GetFullName] dorazila do [ROOT.Var('current_expedition_location_var').GetState.GetStateRegion.GetName]"
  expedition_status_loc_leader: "Výprava [ROOT.Var('expedition_leader_storage_var').GetCharacter.GetFullName] právě vyrazila"
  expedition_status_loc_leader_and_location: "Výprava [ROOT.Var('expedition_leader_storage_var').GetCharacter.GetFullName] dorazila do [ROOT.Var('current_expedition_location_var').GetState.GetStateRegion.GetName]"
- expedition_status_loc_location: "Výprava dorazila do [ROOT.Var('current_expedition_location_var').GetState.GetStateRegion.Name]"
+ expedition_status_loc_location: "Expedice dorazila do [ROOT.Var('current_expedition_location_var').GetState.GetStateRegion.GetName]" # todo: CHANGED
  foster_national_agitation: "Podnítit národní agitaci"
  foster_national_agitation_desc: "#lore Úkol [Character.GetFullName] agitovat mezi [Character.GetCulture.GetName] populací cizí mocnosti#!"
  friendly_nation_with_interest_in_alaska_tt: "Přátelská #bold severoamerická#! [concept_great_power|l] s [Concept('concept_incorporated_state','začleněnými státy')] v #bold Tichém pobřeží#! má pozitivní [concept_relations|l] s námi"
@@ -141,7 +141,7 @@
  great_reformer.1.t: "Velký reformátor"
  has_alaska_sale_cooldown_tt: "Tuto akci ještě v minulém roce nevyužil#!"
  has_formed_china_tt: "Vytvořil národ #v $CHI$#!"
- ideology_not_too_close_tt: "Ideologie této postavy není příliš podobná té naší [concept_ruler]"
+ ideology_not_too_close_tt: "Toto [Concept('concept_character','$concept_character_possessive$')] [concept_ideology] #b ne#! je příliš podobné ideologii našeho [concept_ruler]" # todo: CHANGED
  inherit_characters_from_athabaska_tt: "Dědí všechny [Concept('concept_character', '$concept_characters$')] z #v $ATB$#!"
  is_in_other_market_tt: "Je [concept_junior_partner] v jiném [concept_customs_union] země"
  is_italy_tt: "Vytvořil národ #bold Itálie#!"
@@ -223,8 +223,6 @@
  je_sale_of_alaska_reason: "[SCOPE.sState('alaska_scope').GetName], izolované území na okraji [SCOPE.sCountry('alaska_owner_scope').GetName], se v posledních letech stalo cílem nebezpečných zahraničních mocností.\n\nAbychom z území dostali nějaký zisk a vyhnuli se ponížení útokem našich nepřátel v případě války, úředníci ve vládě [SCOPE.sCharacter('ruler_scope').GetPrimaryRoleTitle] navrhli najít kupce pro [SCOPE.sState('alaska_scope').GetName]."
  je_sell_alaska_button: "Najít kupce"
  je_sell_alaska_button_desc: "Území Aljašky představuje pro náš stát spíše závazek než prospěch. Nalezení kupce pro Aljašku poslouží jako výhoda pro naši pokladnu i národní bezpečnost."
- je_terakoya: "Systém terakoya"
- je_terakoya_reason: "Období Tokugawa bylo poznamenáno programy, které měly pomoci s vzděláním populace šógunátu. I přes absenci oficiálního státního školského systému, decentralizované a soukromé terakoya, nebo školní chrámy, poskytují praktické vzdělání prostým lidem po celé zemi.\n\nZatímco systém terakoya zajišťuje základní úroveň gramotnosti a praktického vzdělání, není organizován pro pokročilý národní curriculum. Pokud chce stát centralizovat svůj systém vzdělávání, bude třeba reformovat na formálnější školní systém."
  king_of_sweden_and_norway_key: "Švédska a Norska"
  king_of_sweden_denmark_and_norway_key: "Švédska, Dánska a Norska"
  king_of_sweden_key: "Švédska"
@@ -232,9 +230,9 @@
  korea.1.d: "Na nově postaveném svatostánku Hwangudan nově korunovaný císař [SCOPE.sCharacter('korea_emperor_scope').GetFullName] vyhlásil konec éry [ROOT.GetCountry.GetName] a založení nového Korejského impéria."
  korea.1.f: "Desítky šepotu, roky plánování, a měsíce přípravy se všechny spojily do tohoto okamžiku: velkého zrození ducha lidu. Uprostřed ohňostrojů, jemných hedvábí a lidových písní domova, několika zahraničních diplomatů, kteří zúčastnili ceremoniálu, zvedli své poháry s tacitním uznáním a ostrými pohledy."
  korea.1.t: "Éra Gwangmu"
- leader_abdicates_the_throne_display_tt: "Náš [concept_ruler] abdikuje z trůnu a odchází z politiky"
+ leader_abdicates_the_throne_display_tt: "Náš [concept_ruler] se vzdá trůnu" # todo: CHANGED
  leader_abdicates_the_throne_tt: "[SCOPE.sCharacter('abdicating_monarch').GetPrimaryRoleTitle] [SCOPE.sCharacter('abdicating_monarch').GetFullName] abdikuje z trůnu [SCOPE.sCountry('country_scope').GetName]"
- leader_resigns_from_office_tt: "[SCOPE.sCharacter('resigning_politician').GetFullName] rezignuje na úřad a odejde z politické činnosti"
+ leader_resigns_from_office_tt: "[SCOPE.sCharacter('resigning_politician').GetFullName] odstoupí z úřadu [SCOPE.sCharacter('resigning_politician').GetPrimaryRoleTitle]" # todo: CHANGED
  michael_becomes_heir_tt: "#variable Mikhail Romanov#! se stává dědicem [SCOPE.sCountry('rus_scope').GetAdjective] trůnu"
  missionaries_enough_time_tt: "[GetReligion('protestant').GetName] misionáři byli v naší zemi aktivní minimálně #bold několik let#!"
  missionaries_forbidden_10_years_tt: "Zahraniční misionáři nebudou usilovat o přístup do [SCOPE.sState('forbidden_state').GetName] po následujících #variable 10#! let"
@@ -285,10 +283,8 @@
  modifier_india_company_rule: "Zpráva společnosti"
  modifier_india_crown_rule: "Krále"
  modifier_italian_unificationist_sentiment: "Italské nacionalistické cítění"
- modifier_jap_terakoya: "Terakoya"
  modifier_korean_empire: "Poslové éry Gwangmu"
  modifier_last_minute_compromise: "Kompro-mis v poslední době"
- modifier_legacy_of_terakoya: "Integrace Terakoya"
  modifier_michael_ii: "Zoufalý vlastenec"
  modifier_nicholas_ii: "Car z jiného času"
  modifier_nicholas_tsesarevich: "Koruna dokonalosti"
@@ -348,11 +344,11 @@
  paralegal_discrimination.1.b: "Musíme podporovat harmonii mezi národy, ať už [SCOPE.sCulture('newcomer_culture').GetName] nebo [SCOPE.sCulture('biggest_primary_culture').GetName]."
  paralegal_discrimination.1.c: "Staré způsoby [SCOPE.sCulture('biggest_primary_culture').GetName] nemohou nadále řídit náš moderní národ."
  paralegal_discrimination.1.d: "Na území [ROOT.GetState.GetName] se nedávno usadila [SCOPE.sCulture('newcomer_culture').GetName] menšina, která zde hledá lepší budoucnost. Místní [SCOPE.sCulture('greatest_primary_culture').GetName] elity však vyvolávají odpor a tvrdí, že [SCOPE.sCulture('newcomer_culture').GetNameNoFormatting] nověpříchozí zničí tradiční způsob života."
- paralegal_discrimination.1.f: ""Nepatří sem. Naše [SCOPE.sCulture('greatest_primary_culture').GetNameNoFormatting] zvyky, náš způsob života - o ty přijdeme, když dovolíme, aby se tu usadili [SCOPE.sCulture('newcomer_culture').GetNameNoFormatting] cizáci," prohlásil významný statkář a jeho slova se ozývala v krčmách a na trzích v [ROOT.GetState.GetCityHubName]. Nově příchozí, plní naděje, ale unavení, šeptají o příležitostech, ale čelí zavřeným dveřím a nepřátelským pohledům."
+ paralegal_discrimination.1.f: ""Nejsou tady vítáni! Naše [SCOPE.sCulture('biggest_primary_culture').GetNameNoFormatting] zvyky, náš způsob života... budou ztraceny, pokud dovolíme, aby se usadili [SCOPE.sCulture('newcomer_culture')GetCustom('getPluralDemonym')]!" Slova, vyslovená prominentním vlastníkem pozemků, se ozývala [ROOT.GetState.GetCityHubName] hospodou. Následující den se rozšířila po tržišti a den poté byla na rtech tajemníků radnice. Když se noví příchozí procházeli ulicemi, setkali se s uzavřenými dveřmi a chladnými pohledy." # todo: CHANGED
  paralegal_discrimination.1.t: "Noví sousedé, nová nevraživost"
  patagonia_campaign: "Patagonská kampaň"
  pb_utopians_go_corporatist_tt: "Všichni [GetIdeology('ideology_utopian').GetName] [Concept('concept_character', '$concept_characters$')] spjatí s [GetInterestGroupVariant('ig_petty_bourgeoisie',GetPlayer).GetName] přijmou [GetIdeology('ideology_corporatist').GetName] [concept_ideology]"
- politician_gets_pushed_out_tt: "[SCOPE.sCharacter('leadership_challenge_politician').GetFullName] bude nucen opustit politiku"
+ politician_gets_pushed_out_tt: "[SCOPE.sCharacter('leadership_challenge_politician').GetFullName] se stane [concept_politician]" # todo: CHANGED
  resign_from_office: "Rezignovat na úřad"
  resign_from_office_desc: "Tato postava odstoupí ze [Character.GetHerHis] postavení jako [Character.GetPrimaryRoleTitle] země [Character.GetCountry.GetName]"
  resignation.1.a: "Přejte [SCOPE.sCharacter('resigning_politician').GetHerHis] nástupci dobré zdraví a štěstí."
@@ -362,7 +358,7 @@
  resignation.1.d2: "Po sérii devastujících skandálů a tristní veřejné podpoře, [SCOPE.sCharacter('resigning_politician').GetFullName] oznámil [SCOPE.sCharacter('resigning_politician').GetHerHis] rezignaci z kanceláře [SCOPE.sCharacter('resigning_politician').GetPrimaryRoleTitle]."
  resignation.1.d3: "Vzhledem k špatnému zdraví, [SCOPE.sCharacter('resigning_politician').GetFullName] oznámil [SCOPE.sCharacter('resigning_politician').GetHerHis] rezignaci na úřad [SCOPE.sCharacter('resigning_politician').GetPrimaryRoleTitle]."
  resignation.1.d4: "Cituje touhu trávit více času se [SCOPE.sCharacter('resigning_politician').GetHerHis] rodinou, [SCOPE.sCharacter('resigning_politician').GetFullName] oznámil [SCOPE.sCharacter('resigning_politician').GetHerHis] rezignaci z kanceláře [SCOPE.sCharacter('resigning_politician').GetPrimaryRoleTitle]."
- resignation.1.f: "Reakce na oznámení byla rozmanitá. Příznivci [SCOPE.sCharacter('resigning_politician').GetPrimaryRoleTitle] se snažili potlačit svou porážku a obavy. Opozice se dělila mezi projevy sympatie a vzrušení ohledně vyhlídky na převzetí místa [SCOPE.sCharacter('resigning_politician').GetHerHis]. Pro personál to však znamenalo další dlouhý týden úniků před reportéry a stěhování nábytku."
+ resignation.1.f: "Reakce na oznámení byly různorodé. Stoupenci [SCOPE.sCharacter('resigning_politician').GetPrimaryRole.GetName] se snažili potlačit pocit porážky a obavy. Opozice byla rozdělena mezi projevy soucitu a nadšením z vyhlídky obsadit [SCOPE.sCharacter('resigning_politician').GetHerHis] křeslo. Pro personál sněmovny to však znamenalo jen další dlouhý týden vyhýbání se novinářům a přeskupování nábytku." # todo: CHANGED
  resignation.1.t: "Dopisy rezignace"
  resignation.2.a: "[SCOPE.sCharacter('resigning_politician').GetSheHe|U] se vzdal, ale [ROOT.GetCountry.GetName] ne."
  resignation.2.b: "Jsme bezmocní před blížící se bouří."
@@ -381,7 +377,7 @@
  rhine_confederation.1.a: "[ROOT.GetCountry.GetAdjectiveNoFormatting] moc se stále rozšiřuje k východu."
  rhine_confederation.1.b: "Nové ráno pro Německo."
  rhine_confederation.1.d: "S podpisem nové Rheinbundakte pod [ROOT.GetCountry.GetAdjective] dohledem se [SCOPE.sCountry('rhine_scope').GetName] opět spojilo z rozptýlených německých států."
- rhine_confederation.1.f: "Čelící nejisté budoucnosti, jednota je připravenou medicínou proti mnoha hrozbám u našich dveří. Tato řeka - náš život, náš domov, naše srdce! - by měla být naším příkladem, jak jít do nové éry. Pohneme se jako jeden k většímu cíli. Budeme se zvedat a krmit, dokud nedosáhneme tohoto cíle. A jestli nás zasáhnou vrhací zbraně a šípy, najdeme úkryt v jejím náručí."
+ rhine_confederation.1.f: "Tváří v tvář nejisté budoucnosti je jednota hotovým lékem proti nesčetným hrozbám u našich dveří. Tato řeka — náš život, náš domov, naše samotné srdce! — by měla být naším příkladem, když vkročíme do nové éry. Půjdeme jednotně k vyššímu cíli. Budeme se navzájem vychovávat a živit až do onoho cíle. A pokud nás zasáhnou praky a šípy, nalezneme útočiště v jejím klíně." # todo: CHANGED
  rhine_confederation.1.t: "Druhá Rheinbundakte"
  rhine_expansion_cooldown_tt: "Toto rozhodnutí nebylo použito v posledních #bold 3#! letech"
  rhine_formed_tt: "Sponzorovali jsme vytvoření #bold Římského spolku#! jako subjekt [SCOPE.sCountry('rhine_overlord').GetName]"
@@ -435,7 +431,7 @@
  russia_monarchy.8.a: "Najděte ho a vraťte ho domů."
  russia_monarchy.8.b: "Nechejte ho spěchat do našich nových nemocnic."
  russia_monarchy.8.d: "[SCOPE.sCharacter('georgy_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('georgy_scope').GetFullName], známý pro svou slabou konstituci, zmizel na venkově s jeho motocyklem. Domácí personál se obává o jeho zdraví."
- russia_monarchy.8.f: "Zvuk motoru slábnul a slábnul, když se motocykl dostal na jedno z kopců a zmizel za ním. Do zelené propasti zmizel [SCOPE.sCharacter('georgy_scope').GetPrimaryRoleTitle], závodící, aby unikl pomalým, teplým kapkám bolesti ve svém hrudníku."
+ russia_monarchy.8.f: "Zvuk motoru slábl čím dál víc, když motorka vystoupala na jeden z vlnitých kopců a zmizela za ním. Do zelené propasti zmizel [SCOPE.sCharacter('georgy_scope').GetPrimaryRole.GetName], uhánějící, aby unikl pomalým, teplým stékajícím bolestem v hrudi." # todo: CHANGED
  russia_monarchy.8.t: "Terminální jízda"
  russia_monarchy.9.a: "Vykáže nedůstojné a udělí nám sílu!"
  russia_monarchy.9.d: "S koncem vlády Mikuláše II, jeho prvního a jediného syna, [SCOPE.sCharacter('tsar_scope').GetFullName] usedl na [ROOT.GetCountry.GetAdjective] trůn jako Alexej II. Mladý a militantní car vyhlásil svůj úmysl rozšířit dlouhé rolí [ROOT.GetCountry.GetAdjectiveNoFormatting] vojenské slávy."
@@ -502,3 +498,4 @@
  sweden_law.1.b: "Musíme tuto situaci kontrolovat."
  sweden_law_birth: "Pýcha národa"
  sweden_law_birth_two: "Kniha hanby"
+ ideology_not_too_far_tt: "Tato [Concept('concept_character','$concept_character_possessive$')] [concept_ideology] #b není#! příliš odlišná od ideologie našeho [concept_ruler]" # todo: NEW TRANSLATION

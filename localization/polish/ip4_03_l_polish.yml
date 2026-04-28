@@ -152,7 +152,7 @@
  pena_palace_rejected: "Zamítnutá stavba paláce"
  pena_palace.2.t: "Klenot Sintry"
  pena_palace.2.d: "Renovace $building_pena_palace$ jsou nyní dokončeny. Ruiny bývalého konventu byly důkladně přeměněny."
- pena_palace.2.f: "Za jasného dne, když se mlha nad pohořím Sintra zvedne, je stavba na kopci viditelná z [SCOPE.sState('relevant_state').GetCityHubName]. Vzniklá z královy fantazie a přetvořená romantickým architektem, jasně červené a žluté fasády $building_pena_palace$ jsou zářivé — pravý [ROOT.GetCountry.GetAdjectiveNoFormatting] poklad."
+ pena_palace.2.f: "Za jasného dne, když se mlha nad pohořím Sintra rozplyne, lze stavbu na kopcích spatřit z [SCOPE.sState('relevant_state').GetCityHubName]. Vznikla z královy představivosti a byla přetvořena romantickým architektem, jasně červené a žluté fasády $building_pena_palace$ září — skutečný [ROOT.GetCountry.GetAdjectiveNoFormatting] poklad." # todo: CHANGED
  pena_palace.2.a: "Krása paláce je nesporná."
  pena_palace.2.b: "Svět bude žasnout nad naším uměleckým dílem."
  pena_palace_reward_loc: "Palácový ráj"
@@ -163,7 +163,7 @@
  gran_teatro_populated_tt: "Pracovní síla $building_gran_teatro_de_la_habana$ [concept_occupancy] je větší nebo rovna #variable 50%#!"
  rejected_gran_teatro_project_tt: "Návrh na výstavbu $building_gran_teatro_de_la_habana$ byl odmítnut"
  does_not_have_state_western_cuba_tt: "[ROOT.GetCountry.GetNameNoFormatting] nemá $STATE_WESTERN_CUBA$"
- gran_teatro.1.t:1 "Rozšiřování umění v $HUB_NAME_STATE_WESTERN_CUBA_city$"
+ gran_teatro.1.t: "Rozšiřování umění v $HUB_NAME_STATE_WESTERN_CUBA_city$"
  gran_teatro.1.d: "Členové [GetCulture('galician').GetName] z [SCOPE.gsInterestGroup('relevant_ig').GetName] předložili návrh na výstavbu $building_gran_teatro_de_la_habana$ v srdci [SCOPE.sState('relevant_state').GetName] na místě Teatro Tacón. Skupina sesbírala značnou sumu peněz, která má být použita na tento renovační podnik."
  gran_teatro.1.f: ""Proslulé divadlo Tacon čelí Paseo de Isabella a stojí na rohu ulice San Rafael. Je to prostorná stavba, ale na vnějšku velmi jednoduchá a nepůsobivá. ... Fresky jsou v dobrém stylu a ozdoby, aniž by byly přehnané, jsou vynikajícího a harmonického vkusu. Velký, nádherný skleněný lustr osvětlený plynem a četné menší lustry vycházející z lóží dávají tomuto elegantnímu domu jasné světlo; je to jedno z největších divadel na světě."\n\n— Maturin Murray Ballou"
  gran_teatro.1.a: "Velkolepost $building_gran_teatro_de_la_habana$ bude nepopiratelná."
@@ -180,7 +180,7 @@
  gran_teatro_reward_loc: "Kvetoucí umění"
  gran_teatro_reward_int: "Přítomnost na jevišti"
  je_atocha_railway: "Atocha Railway Station"
- je_atocha_railway_reason: "Po mnoho let se [SCOPE.gsInterestGroup('relevant_ig').GetName] snažili postavit $building_estacion_de_madrid_atocha$ v [SCOPE.sState('relevant_state').GetName]. Jejich snahy byly zmařeny protichůdnými požadavky a zájmy — od zásahů vlády až po smrt najatého architekta, který měl dohlížet na stavbu. Žádný návrh dosud nesplňoval všechna kritéria.\n\nNaděje [SCOPE.gsInterestGroup('relevant_ig').GetNameNoFormatting] na vybudování stanice však neutuchly. Věří, že $building_estacion_de_madrid_atocha$ bude klíčovou institucí pro [ROOT.GetCountry.GetNameNoFormatting] nejen v rámci [SCOPE.sState('relevant_state').GetNameNoFormatting], ale i v celém kontinentu."
+ je_atocha_railway_reason: "Po mnoho let se [SCOPE.gsInterestGroup('relevant_ig').GetName] snažili postavit $building_estacion_de_madrid_atocha$ v [SCOPE.sState('relevant_state').GetName]. Jejich snahy byly zmařeny protichůdnými požadavky a zájmy — od zásahů vlády až po smrt najatého architekta, který měl dohlížet na stavbu. Žádný návrh dosud nesplnil všechna kritéria.\n\nNaděje [SCOPE.gsInterestGroup('relevant_ig').GetNameNoFormatting] na vybudování stanice nevyhasly. Věří, že $building_estacion_de_madrid_atocha$ bude klíčovou institucí pro [ROOT.GetCountry.GetNameNoFormatting], a to nejen v rámci [SCOPE.sState('relevant_state').GetNameNoFormatting], ale i na celém kontinentu." # todo: CHANGED
  atocha_railway_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má $building_railway$ v [Concept('concept_state_region','$concept_state_region$')] $STATE_NEW_CASTILE$"
  atocha_railway_complete_tt: "[ROOT.GetCountry.GetNameNoFormatting] postavil $building_estacion_de_madrid_atocha$ v [Concept('concept_state_region','$concept_state_region$')] $STATE_NEW_CASTILE$"
  atocha_railway_populated_tt: "Pracovní síla $building_estacion_de_madrid_atocha$ [concept_occupancy] je větší nebo rovna #variable 50%#!"
@@ -210,10 +210,10 @@
  rejected_manila_cathedral_project_tt: "[ROOT.GetCountry.GetNameNoFormatting] odmítá návrh na obnovení $building_manila_cathedral_monument$"
  does_not_have_state_luzon_tt: "[ROOT.GetCountry.GetNameNoFormatting] nemá $STATE_LUZON$"
  manila_cathedral.1.t: "Zemětřesení v [SelectLocalization(SCOPE.sState('relevant_state').IsValid, SCOPE.sState('relevant_state').GetNameNoFormatting, 'STATE_LUZON')]"
- manila_cathedral.1.d:1 "$building_manila_cathedral_original$ je nyní v troskách poté, co intenzivní zemětřesení zasáhlo [SCOPE.sState('relevant_state').GetName]. [GetPopType('clergymen').GetName] z [SCOPE.gsInterestGroup('relevant_ig').GetName] předložili návrh na znovuvybudování katedrály. Skupina sesbírala značnou sumu peněz, která bude použita na její výstavbu."
+ manila_cathedral.1.d: "$building_manila_cathedral_original$ je nyní v troskách poté, co intenzivní zemětřesení zasáhlo [SCOPE.sState('relevant_state').GetName]. [GetPopType('clergymen').GetName] z [SCOPE.gsInterestGroup('relevant_ig').GetName] předložili návrh na znovuvybudování katedrály. Skupina sesbírala značnou sumu peněz, která bude použita na její výstavbu."
  manila_cathedral.1.f: ""Destruktivní zpustošení a změny způsobené zemětřeseními nejsou nikde patrnější než na Filipínách. Převrací hory, zaplňují údolí, zpustošují rozsáhlé pláně; otevírají průchody moři do vnitrozemí a z jezer do moře. Existuje mnoho tradičních příběhů o těchto územních revolucích, ale u nedávných pohrom jsou záznamy důvěryhodné. ... Postupná zemětřesení přinesla na Luzon řadu pohrom."\n\n— John Bowring"
  manila_cathedral.1.a: "Musíme katedrálu rychle obnovit."
- manila_cathedral.1.b:1 "[SCOPE.sState('relevant_state').GetNameNoFormatting] má mnohem naléhavější problémy."
+ manila_cathedral.1.b: "[SCOPE.sState('relevant_state').GetNameNoFormatting] má mnohem naléhavější problémy."
  manila_cathedral_construct_tt: "$building_manila_cathedral_monument$ lze postavit v panelu státu pro [SelectLocalization(SCOPE.sState('relevant_state').IsValid, SCOPE.sState('relevant_state').GetName, 'STATE_LUZON')]"
  dismissed_manila_cathedral_je_tt: "#r Koncept #bold $je_manila_cathedral$#! [concept_journal_entry] bude odvolán#!"
  pedro_pelaez_dies_tt: "[SCOPE.sCharacter('relevant_character').GetLastName] zemřel při zřícení manilské katedrály."
@@ -235,3 +235,6 @@
  notification_manila_cathedral_rebuilt_tooltip: "#header $notification_manila_cathedral_rebuilt_name$#!\n$TOOLTIP_DELIMITER$\n$notification_manila_cathedral_rebuilt_desc$"
  seventh_manila_cathedral_loc: "Sedmý"
  eighth_manila_cathedral_loc: "Osmý"
+ notification_filipino_mestizo_now_primary_culture_name: "[GetCulture('spanish').GetName] už není [Concept('concept_primary_cultures','$concept_primary_culture$')]" # todo: NEW TRANSLATION
+ notification_filipino_mestizo_now_primary_culture_desc: "Nyní, když už nejsme pod nadvládou $SPA_ADJ$, je [GetCulture('filipino_mestizo').GetName] naší [Concept('concept_primary_cultures','$concept_primary_culture$')]." # todo: NEW TRANSLATION
+ notification_filipino_mestizo_now_primary_culture_tooltip: "#header $notification_filipino_mestizo_now_primary_culture_name$#!\n$TOOLTIP_DELIMITER$\n$notification_filipino_mestizo_now_primary_culture_desc$" # todo: NEW TRANSLATION

@@ -462,7 +462,7 @@
   law_mercantilism_desc: "Ekonomika zaměřená na vývoz s důrazem na udržení kladného bilančního schodku a konkurenci s ostatními zeměmi."
   law_canton_system: "Kantonský systém"
   law_canton_system_desc: "Varianta pro $law_isolationism$, kdy je obchod povolen pouze v jediném pobřežním státě."
-  canton_system_trade_center_trigger_tt: "Pod [concept_law] [GetLawType('law_canton_system').GetName], Obchodní centra mohu být budovány pouze v in #v $STATE_GUANGDONG$#! po úroveň #v 50#!"
+  canton_system_trade_center_trigger_tt: "Pod [GetLawType('law_canton_system').GetName] [concept_law] lze obchodní centra stavět pouze do úrovně [Building.GetState.GetModifier.GetNonFormattedValueWithBreakdownAndNoDecimalsFor('state_trade_center_max_limit_add')|v] v #v $STATE_GUANGDONG$#!" # todo: CHANGED
   lawgroup_taxation: "Zdanění"
   lawgroup_taxation_desc: "Jak stát získává příjmy z daní na své občany."
   law_consumption_based_taxation: "Zdanění na základě spotřeby"
@@ -490,7 +490,7 @@
   law_no_health_system: "Žádný zdravotní systém"
   law_no_health_system_desc: "Vláda nefinancuje žádný systém zdravotní péče."
   law_charitable_health_system: "Dobročinné nemocnice"
-  law_charitable_health_system_desc: "Dobročinné organizace - často náboženské - poskytují v rámci svých možností určitou pomoc všem nemocným nebo umírajícím."
+  law_charitable_health_system_desc: "Dobročinné organizace—často náboženské—poskytují určitou pomoc komukoli, kdo je nemocný nebo umírá, v rozsahu svých možností." # todo: CHANGED
   law_private_health_insurance: "Soukromé zdravotní pojištění"
   law_private_health_insurance_desc: "Zdraví obyvatelstva je spravováno prostřednictvím systému soukromě vlastněných nemocnic, placených prostřednictvím programů soukromého zdravotního pojištění, čímž se zajišťuje blaho těch, kteří si to mohou dovolit, s minimálním dopadem na vládní pokladnu."
   law_public_health_insurance: "Veřejné zdravotní pojištění"
@@ -637,3 +637,66 @@
   enactment_phase_2_generic: "Hlasování"
   law_frontier_colonization: "Pohraniční kolonizace"
   law_frontier_colonization_desc: "Divoké hranice na našich hranicích jsou zralé k osídlení, pokud se je podaří nejprve zkrotit a zpacifikovat."
+  ideology_carlist_2: "$ideology_carlist$" # todo: NEW TRANSLATION
+  ideology_carlist_2_desc: "$ideology_carlist_desc$" # todo: NEW TRANSLATION
+  ideology_miguelist_2: "$ideology_miguelist$" # todo: NEW TRANSLATION
+  ideology_miguelist_2_desc: "$ideology_miguelist_desc$" # todo: NEW TRANSLATION
+  ideology_mitogaku: "Mitogaku" # todo: NEW TRANSLATION
+  ideology_mitogaku_desc: "#lore Tento vůdce je přívržencem studií Mito, vlastenecké akademické a politické doktríny pocházející z domény Mito. Uctívá Císaře jako vládce světa a usiluje o reformu Japonska, aby odolalo cizímu vnikání.#!" # todo: NEW TRANSLATION
+  ideology_shojoi: "Shōjōi" # todo: NEW TRANSLATION
+  ideology_shojoi_desc: "#lore Tento vůdce požaduje okamžité vypuzení cizinců ze země a podporuje jednostranné zrušení všech obchodních smluv s cizími mocnostmi.#!" # todo: NEW TRANSLATION
+  ideology_carlist_ig_2: "$ideology_carlist_ig$" # todo: NEW TRANSLATION
+  ideology_carlist_ig_2_desc: "$ideology_carlist_ig_desc$" # todo: NEW TRANSLATION
+  ideology_interventionist: "Intervencionista" # todo: NEW TRANSLATION
+  ideology_interventionist_desc: "#lore Tato skupina podporuje úzkou spolupráci mezi státem a soukromým podnikáním a nahlíží příznivě na politiku aktivně investující do průmyslového rozvoje.#!" # todo: NEW TRANSLATION
+  carlist_amended_tt: "Postoje [GetIdeology('ideology_carlist').GetName] [concept_ideology] k $lawgroup_economic_system$ a $lawgroup_distribution_of_power$ se změní" # todo: NEW TRANSLATION
+  miguelist_amended_tt: "Postoje [GetIdeology('ideology_miguelist').GetName] [concept_ideology] k $lawgroup_economic_system$ a $lawgroup_distribution_of_power$ se změní" # todo: NEW TRANSLATION
+  ideology_rangaku: "Rangaku" # todo: NEW TRANSLATION
+  ideology_rangaku_desc: "#lore Tato skupina podporuje ukončení mezinárodní izolace a upřednostňuje přijetí západních způsobů vládnutí.#!" # todo: NEW TRANSLATION
+  ideology_mercantile: "Merkantilní" # todo: NEW TRANSLATION
+  ideology_mercantile_desc: "#lore Tato skupina usiluje o právní rámec, který dává uznání a podporu obchodním zájmům.#!" # todo: NEW TRANSLATION
+  ideology_japan_hierarchic: "Bakuhan" # todo: NEW TRANSLATION
+  ideology_japan_hierarchic_desc: "#lore Tato skupina prosazuje Edo #italic bakuhan#! systém, v němž samosprávné domény daimjó sdílejí moc s vládnoucím šógunátem.#!" # todo: NEW TRANSLATION
+  ideology_japan_hierarchic_2: "$ideology_japan_hierarchic$" # todo: NEW TRANSLATION
+  ideology_japan_hierarchic_2_desc: "$ideology_japan_hierarchic_desc$" # todo: NEW TRANSLATION
+  ideology_carlist_movement_2: "$ideology_carlist_movement$" # todo: NEW TRANSLATION
+  ideology_carlist_movement_2_desc: "$ideology_carlist_movement_desc$" # todo: NEW TRANSLATION
+  ideology_miguelist_movement_2: "$ideology_miguelist_movement$" # todo: NEW TRANSLATION
+  ideology_miguelist_movement_2_desc: "$ideology_miguelist_movement_desc$" # todo: NEW TRANSLATION
+  ideology_meiji_restorationist_movement_shojoi: "Shōjōi" # todo: NEW TRANSLATION
+  ideology_meiji_restorationist_movement_shojoi_desc: "#lore Toto hnutí usiluje o svržení vládnoucího šógunátu, obnovení moci Císaře a provedení okamžitého vypuzení zahraničních zájmů z Japonska.#!" # todo: NEW TRANSLATION
+  ideology_meiji_restorationist_movement_daijoi: "Daijōi" # todo: NEW TRANSLATION
+  ideology_meiji_restorationist_movement_daijoi_desc: "#lore Toto hnutí usiluje o svržení vládnoucího šógunátu, obnovení moci Císaře a využití západních metod k rozvoji vojenské a ekonomické síly Japonska.#!" # todo: NEW TRANSLATION
+  ideology_tokugawa_loyalist_movement: "Bakufu" # todo: NEW TRANSLATION
+  ideology_tokugawa_loyalist_movement_desc: "#lore Toto hnutí podporuje přísnou edskou třídní hierarchii s privilegiovaným postavením samurajů a primátem šógunátu.#!" # todo: NEW TRANSLATION
+  ideology_tokugawa_loyalist_movement_2: "$ideology_tokugawa_loyalist_movement$" # todo: NEW TRANSLATION
+  ideology_tokugawa_loyalist_movement_2_desc: "$ideology_tokugawa_loyalist_movement_desc$" # todo: NEW TRANSLATION
+  ideology_japan_paternalistic: "$ideology_paternalistic$" # todo: NEW TRANSLATION
+  ideology_japan_paternalistic_desc: "$ideology_paternalistic_desc$" # todo: NEW TRANSLATION
+  law_social_monarchy: "Sociální monarchie" # todo: NEW TRANSLATION
+  law_social_monarchy_desc: "Politický systém, v němž se stát staví do role konečného prostředníka mezi národními korporátními skupinami. Monarchie je považována za symbol národní identity země." # todo: NEW TRANSLATION
+  lawgroup_navy_model: "Model námořnictva" # todo: NEW TRANSLATION
+  lawgroup_navy_model_desc: "Organizace a doktrína vašich námořních sil." # todo: NEW TRANSLATION
+  law_merchant_navy: "Obchodní loďstvo" # todo: NEW TRANSLATION
+  law_merchant_navy_desc: "Flotila se zaměřuje na podporu a ochranu zámořského obchodu a zásobování." # todo: NEW TRANSLATION
+  law_jeune_ecole: "Jeune École" # todo: NEW TRANSLATION
+  law_jeune_ecole_desc: "Námořní model upřednostňující použití menších, silně vyzbrojených lodí k boji proti většímu nepříteli." # todo: NEW TRANSLATION
+  law_professional_navy: "Hlavní flotila" # todo: NEW TRANSLATION
+  law_professional_navy_desc: "Zaměřeno na stavbu a údržbu mohutné bitevní flotily za účelem imponování a odstrašení soupeřů." # todo: NEW TRANSLATION
+  law_diplomatic_navy: "Diplomatická flotila" # todo: NEW TRANSLATION
+  law_diplomatic_navy_desc: "Upřednostňuje dálkové plavby, aby vybudovalo a udrželo globální diplomatickou přítomnost." # todo: NEW TRANSLATION
+  law_bakufu: "Bakufu" # todo: NEW TRANSLATION
+  law_bakufu_desc: "Absolutní moc je svěřena šógunovi, který oficiálně slouží jménem císaře." # todo: NEW TRANSLATION
+  law_warrior_caste: "Válečnická kasta" # todo: NEW TRANSLATION
+  law_warrior_caste_desc: "Nošení zbraní je privilegium omezené na elitní válečnickou vrstvu. Prostí občané jsou vyloučeni ze služeb v bojových rolích." # todo: NEW TRANSLATION
+  law_sakoku: "Sakoku" # todo: NEW TRANSLATION
+  law_sakoku_desc: "Variant $law_isolationism$, kde je kontakt s jinými zeměmi silně omezen a obchod je omezen jen na několik vyhrazených přístavů." # todo: NEW TRANSLATION
+  sakoku_trade_center_trigger_tt: "Pod [GetLawType('law_sakoku').GetName] [concept_law], Obchodní centra mohou být postavena pouze do úrovně [Building.GetState.GetModifier.GetNonFormattedValueWithBreakdownAndNoDecimalsFor('state_trade_center_max_limit_add')|v] v #v $STATE_KYUSHU$#!, kde lze obchod se zahraničními zájmy udržet pod přísným dohledem." # todo: NEW TRANSLATION
+  internal_controls_relaxed_tt: "Kontroly vnitřního pohybu budou uvolněny, což nás přinutí přijmout [GetLawType('law_migration_controls').GetName]" # todo: NEW TRANSLATION
+  law_terakoya: "Terakoya" # todo: NEW TRANSLATION
+  law_terakoya_desc: "Vzdělávání prostých lidí je ponecháno decentralizovanému systému soukromých terakoya, neboli chrámových škol." # todo: NEW TRANSLATION
+  law_shinsengumi: "Shinsengumi" # todo: NEW TRANSLATION
+  law_shinsengumi_desc: "Stát zřizuje elitní organizaci mečových bojovníků k ochraně státních úředníků a udržování pořádku v hlavním městě." # todo: NEW TRANSLATION
+  law_peasant_proprietorship: "Rolnické vlastnictví" # todo: NEW TRANSLATION
+  law_peasant_proprietorship_desc: "Zemědělská půda je z velké části ve vlastnictví nezávislých rolníků-vlastníků, s několika většími komerčními statky." # todo: NEW TRANSLATION
+  pm_peasant_proprietorship_building_subsistence: "$law_peasant_proprietorship$" # todo: NEW TRANSLATION

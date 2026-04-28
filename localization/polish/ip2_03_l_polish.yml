@@ -4,7 +4,7 @@
  allahabad_bombay_line_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má všechny [Concept('concept_state_region','$concept_state_regions$')] k vybudování #tooltippable #tooltip:indian_railway_allahabad_bombay_tt #bold dráhy Allahabad-Bombaj#! #!#!"
  an_agitator_appears_tt: "Objevuje se [concept_agitator] v [ROOT.GetCountry.GetNameNoFormatting]"
  annex_neighbor_princely_state: "Sousední princový stát se sdíleným #bold dědictvím#! rysem a #green #bold přátelskou#!#! vztahovou nebo lepší bude anexován [ROOT.GetCountry.GetName]."
- argument_to_be_made: "Argument k vyvození"
+ argument_to_be_made: "Argument, který je třeba vznést" # todo: CHANGED
  bic_by_the_book: "Podle knihy"
  bic_collapse_var_tt: "[ROOT.GetCountry.GetName] už není [concept_subject]"
  bombay_madras_line_complete_tt: "Všechny [Concept('concept_state_region','$concept_state_regions$')] v #tooltippable #tooltip:indian_railway_bombay_madras_tt #bold linii Bombaj-Madras#! #!#! mají $building_railway$"
@@ -70,7 +70,7 @@
  india_railway.2.b: "Dodržujte spravedlivý proces a objednávejte."
  india_railway.2.d: "Zahájila se jednání v soudu se žalobcovými revolucionáři, kteří byli obviněni z loupeže a vraždy."
  india_railway.2.f: "Řev davu shromážděného před soudní síní hřeje srdce obžalovaných. Stejné hrozné hlasy ztěžují slyšení žalobce. Neúnavně vytrvává.\n\n\"Přepadení, držení nezákonných zbraní a vražda. Tyto jsou samy o sobě strašným činem, ctihodnosti. Ale tito bezuzdní muži udělali všechno, jen aby spáchali ještě strašnější zločin. Snažili se ukrást od samotné koruny, která se o ně stará. Dav venku by je nazval hrdiny, já věřím, že zákon by je nazval zrádci.\""
- india_railway.2.t: "Kradení od koruny"
+ india_railway.2.t: "Okrádání Koruny" # todo: CHANGED
  india_railway.3.a: "Použijte železniční dopravu pro dodání potravin."
  india_railway.3.b: "Nemůžeme si dovolit taková opatření."
  india_railway.3.d: "Hromadné exporty obilí a plodin zanechaly lidem [SCOPE.sState('relevant_state').GetNameNoFormatting] zranitelné během regionální hladomoru."
@@ -167,7 +167,7 @@
  notification_verge_of_collapse_desc: "Agenda Dravidského hnutí ztratila dynamiku. [SCOPE.sCharacter('rural_folk_leader_scope').GetFullName] odstoupil jako vůdce [SCOPE.gsInterestGroup('rural_folk_ig_scope').GetName]."
  notification_verge_of_collapse_name: "[SCOPE.sCharacter('rural_folk_leader_scope').GetFullNameNoFormatting] rezignuje"
  notification_verge_of_collapse_tooltip: "#header $notification_verge_of_collapse_name$#!\n$TOOLTIP_DELIMITER$\n$notification_verge_of_collapse_desc$"
- opposition_to_untouchability: "Opoziční vůči nedotknutelnosti"
+ opposition_to_untouchability: "Opozice proti nedotknutelnosti" # todo: CHANGED
  overlord_lackey: "Pánův poníženec"
  persuasive_util_pamphlet_attract: "Přesvědčování veřejnosti"
  persuasive_util_pamphlet_pol_str: "Síla v politice"
@@ -232,7 +232,7 @@
  sikh_empire.1.b: "Zabezpečte naši roli na světové královské scéně."
  sikh_empire.1.d: "V úspěšném diplomatickém a politickém vystoupení, [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] pozval elitu země a zahraniční zástupce na bohatou svatbu pro prince."
  sikh_empire.1.f: "Dvořanský kronikář v službách Maharaji pečlivě zaznamenává slavnosti:\n\n#italic \"Ohňostroje všech druhů byly vystaveny. Pohyblivý trůn a 'Shalabagh', který byl zdobený a ozdobený různými druhy květin... byl nesen přes ramena asi 100 mužů.\""
- sikh_empire.1.t: "Více než Svatební"
+ sikh_empire.1.t: "Více než svatba" # todo: CHANGED
  sikh_empire.10.a: "\"Jaká zrada!\""
  sikh_empire.10.d1: "[SCOPE.sCharacter('relevant_ruler').GetFullName] byl zavražděn při inspekci zbraně [SCOPE.sCharacter('assassin_scope').GetFullName]. Když se [SCOPE.sCharacter('relevant_ruler').GetPrimaryRoleTitle] zahleděl dolů hlaveň [SCOPE.sCharacter('assassin_scope').GetHerHis] brokovnice, [SCOPE.sCharacter('assassin_scope').GetFirstName] stiskl spoušť."
  sikh_empire.10.d2: "[SCOPE.sCharacter('relevant_ruler').GetFullName] byl zavražděn dvorním hodnostářem s importovanou brokovnicí. Když se [SCOPE.sCharacter('relevant_ruler').GetPrimaryRoleTitle] zahleděl dolů do hlavně brokovnice, dvorní hodnostář stiskl spoušť."
@@ -305,7 +305,7 @@
  utilitarian.1.d: "Principy [GetIdeology('ideology_utilitarian_millian').GetName] ideologie nyní hrají centrální roli v [ROOT.GetCountry.GetAdjective] politickém rozhodování. Administrativa byla reformována, aby fungovala jako dobře namazaný stroj."
  utilitarian.1.f2: "Závazek administrativy k utilitarismu se prohloubil s tímto úspěchem v řízení vývoje [ROOT.GetCountry.GetNameNoFormatting]. Zatímco někteří stále zpochybňují hodnotu tohoto přístupu k koloniální administrativě, pevní podporovatelé se postavili dopředu, aby obhajovali utilitaristický přístup.\n\nJak lidé v Indii pokračují ve svých životech, čas ukáže, zda budou výsledky administrativní práce tak trvalé a dalekosáhlé, jak všichni doufají. Úspěch je majákem pro budoucí reformy."
  utilitarian.1.f: "[SCOPE.sCharacter('relevant_character').GetFullNameNoFormatting] závazek k utilitarismu se prohloubil s tímto úspěchem v řízení [ROOT.GetCountry.GetNameNoFormatting] rozvoje. Zatímco někteří stále pochybují o hodnotě [SCOPE.sCharacter('relevant_character').GetLastNameNoFormatting] přístupu k koloniální administraci, [SCOPE.gsInterestGroup('relevant_ig').GetNameNoFormatting] vystoupili vpřed, aby podporovali utilitaristický přístup.\n\nJak lidé v Indii pokračují ve svém životě, čas ukáže, zda plody administrativní práce budou trvalé a dalekosáhlé, jak všichni doufají. Úspěch je majákem pro budoucí reformu."
- utilitarian.1.t: "Dobré vládnutí pro všechny"
+ utilitarian.1.t: "Dobré vládnutí pro všechny" # todo: CHANGED
  utilitarian.10.a: "Pokračujte v sčítání lidu."
  utilitarian.10.b: "Jaký by to mělo účel?"
  utilitarian.10.d: "Bylo navrženo uspořádat organizované sčítání, aby se vytvořilo komplexní pochopení populace v [ROOT.GetCountry.GetName]."
@@ -351,7 +351,7 @@
  utilitarian.9.f: "\"To je velký podnik, jeden z nejvyšší důležitosti. Bude vyžadovat společné úsilí každého loajálního poddaného, když se snažíme proměnit tento národ do něčeho, co je podobné pořádku. Lidé, a ti, k nimž vzhlížejí, musí poslechnout naše rady.\"\n\n\"Ale na koho se obrátit nejdřív? Obrátí se lidé na své vůdce ke naší věci? Nebo bychom se měli obrátit na ně a doufat, že mohou ukázat svým následovníkům hodnotu naší cesty? Vždyť všechno, co děláme, děláme pro dobro všech.\""
  utilitarian.9.t: "Extrémně náročná vize"
  utilitarian_bonus: "Utilitaristický vliv"
- utilitarian_census_in_progress_cost: "Sčítání lidu probíhá"
+ utilitarian_census_in_progress_cost: "Sčítání probíhá" # todo: CHANGED
  utilitarian_character_trigger: "Jakýkoli [concept_agitator] nebo [concept_leader] má [GetIdeology('ideology_utilitarian_leader').GetName] [concept_ideology]."
  utilitarian_malus: "Zlomené sliby"
  utilitarian_no_census: "Odmítnutý návrh"
@@ -376,3 +376,4 @@
  victoria_terminus_reward_loc: "Nové městské křižovatky"
  wedding_prestige: "Královská svatba"
  owns_bombay_province_tt: "Vlastní město $HUB_NAME_STATE_BOMBAY_city$"
+ bureaucrats_no_shortage_trigger: "[ROOT.GetCountry.GetAdjectiveNoFlag] [concept_bureaucracy] je větší nebo rovno #v 0#! a země je #bold not#! na pokraji vstupu do deficitu [concept_bureaucracy]" # todo: NEW TRANSLATION

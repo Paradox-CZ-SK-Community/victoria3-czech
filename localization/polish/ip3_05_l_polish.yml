@@ -66,7 +66,7 @@
  serbian_throne.6.a: "Pošlete jim pomoc k odporu."
  serbian_throne.6.b: "Pozvěte je do jejich pravé vlasti a pomozte jim při obnově."
  serbian_throne.6.b_move_pops_tt: "10% of Serbians in [SCOPE.sState('delvidek_scope').GetName] will move to [SCOPE.sState('capital_state').GetName]."
- serbian_throne.9.t: "Zůstanou zde"
+ serbian_throne.9.t: "Tady zůstaneme" # todo: CHANGED
  serbian_throne.9.d: "Jeden po druhém byli panoši [ROOT.GetCountry.GetCustom('serbia_rival_dynasty')] zrazeni na cestě k hroznému osudu. Všichni spatřili nepopiratelné; [ROOT.GetCountry.GetName] patří [ROOT.GetCountry.GetCustom('serbia_ruling_dynasty')]!"
  serbian_throne.9.f: "\"Takto zacházíte se svými spasiteli?\" panika a zoufalství se rozléhaly sálem. \"Můj otec dovedl tuto zemi ke svobodě, zatímco vy jste všichni hromadili bohatství. Nikdy nepochopíte, co znamená nést krev hrdiny!\"\n\nLoajální psi čekali na rozsudek.\n\n\"Nikdy!\""
  serbian_throne.9.a: "Podělíte se o osud svého otce."
@@ -168,7 +168,7 @@
  serbia_greatly_aided_magyarized_serbs_mod: "Evakuovaní maďarizovaní Srbové"
  serbia_no_more_blood_feud_mod: "Konec vendety"
  serbia_karadordevic_changover_mod: "Dynastické převzetí"
- serbia_karadordevic_slandered_mod: "Očerněni letáky"
+ serbia_karadordevic_slandered_mod: "Pošpiněn letáky" # todo: CHANGED
  serbia_campaign_auth_fund_mod: "Nucená kampaň"
  serbia_campaign_med_fund_mod: "Střední financování kampaně"
  serbia_campaign_high_fund_mod: "Nákladné financování kampaně"
@@ -178,22 +178,22 @@
  serbia_ig_campaign_promotion_mod: "Propagováno pro kampaň"
  serbia_auth_fund_campaigned_state_a_mod: "Standardy z nucené kampaně"
  serbia_auth_fund_campaigned_state_b_mod: "Základy z nucené kampaně"
- serbia_auth_fund_campaigned_state_c_mod: "Sociální opatření z nucené kampaně"
- serbia_auth_fund_campaigned_state_e_mod: "Inkluzivita z nucené kampaně"
- serbia_med_fund_campaigned_state_a_mod: "Standardy z umírněné kampaně"
- serbia_med_fund_campaigned_state_b_mod: "Základ z umírněné kampaně"
- serbia_med_fund_campaigned_state_c_mod: "Sociální péče z umírněné kampaně"
- serbia_med_fund_campaigned_state_e_mod: "Inkluzivita z umírněné kampaně"
- serbia_high_fund_campaigned_state_a_mod: "Standardy z okázalé kampaně"
- serbia_high_fund_campaigned_state_b_mod: "Základ z okázalé kampaně"
- serbia_high_fund_campaigned_state_c_mod: "Sociální péče z okázalé kampaně"
- serbia_high_fund_campaigned_state_e_mod: "Inkluzivita z okázalé kampaně"
+ serbia_auth_fund_campaigned_state_c_mod: "Sociální zabezpečení z nucené kampaně" # todo: CHANGED
+ serbia_auth_fund_campaigned_state_e_mod: "Inkluze z nucené kampaně" # todo: CHANGED
+ serbia_med_fund_campaigned_state_a_mod: "Standardy z umírněné kampaně" # todo: CHANGED
+ serbia_med_fund_campaigned_state_b_mod: "Základy z umírněné kampaně" # todo: CHANGED
+ serbia_med_fund_campaigned_state_c_mod: "Sociální zabezpečení z umírněné kampaně" # todo: CHANGED
+ serbia_med_fund_campaigned_state_e_mod: "Inkluze z umírněné kampaně" # todo: CHANGED
+ serbia_high_fund_campaigned_state_a_mod: "Standardy z přepychové kampaně" # todo: CHANGED
+ serbia_high_fund_campaigned_state_b_mod: "Základy z přepychové kampaně" # todo: CHANGED
+ serbia_high_fund_campaigned_state_c_mod: "Sociální zabezpečení z přepychové kampaně" # todo: CHANGED
+ serbia_high_fund_campaigned_state_e_mod: "Inkluze z přepychové kampaně" # todo: CHANGED
  serbia_auth_fund_campaign_end_mod: "Sklizeň z nucené kampaně"
  serbia_med_fund_campaign_end_mod: "Sklizeň z umírněné kampaně"
  serbia_high_fund_campaign_end_mod: "Sklizeň z okázalé kampaně"
- serbia_auth_fund_campaign_end_karadordevic_mod: "Mírně ponížen rivalem"
- serbia_med_fund_campaign_end_karadordevic_mod: "Ponížen rivalem"
- serbia_high_fund_campaign_end_karadordevic_mod: "Silně ponížen rivalem"
+ serbia_auth_fund_campaign_end_karadordevic_mod: "Lehce ponížen rivalem" # todo: CHANGED
+ serbia_med_fund_campaign_end_karadordevic_mod: "Ponižen rivalem" # todo: CHANGED
+ serbia_high_fund_campaign_end_karadordevic_mod: "Těžce ponižen rivalem" # todo: CHANGED
  je_the_balkan_league: "Balkánská liga"
  je_the_balkan_league_reason: "Nyní, když jsou balkánské národy osvobozeny z moci Velké Porte, panuje shoda na vytvoření aliance, která je jednou provždy odvrhne. Tato shoda však nebude trvat věčně a naše okno příležitosti je omezené. \n\nVšechny naše národy doufají, že [SCOPE.sStrategicRegion('balkans_scope').GetName] jednoho dne bude patřit svým pravým obyvatelům!"
  balkan_league_timeout_bar: "Okno příležitosti"
@@ -359,7 +359,7 @@
  the_grand_collapse.2.e: "Opportunisté si nezaslouží naši pozornost."
  the_grand_collapse.3.t: "Zoufalá opatření"
  the_grand_collapse.3.d: "Při hledání možných lidových vůdců, které bychom mohli přesvědčit na naši stranu, operativci předložili několik možností."
- the_grand_collapse.3.f: "Ziyâfet-i Hükûmet — česky Vládní banket — je událost, kdy [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] může předvést svou okázalost všem významným hostům.\n\nZruční služebníci, hudebníci a kuchaři ze všech koutů světa usilují o to, aby ve jménu svého pána zanechali trvalý dojem.\n\nJe to také neopakovatelná příležitost pro pozvané významné osobnosti, neboť se pouštějí do nevyslovené války výhod."
+ the_grand_collapse.3.f: "Ziyâfet-i Hükûmet—or the Government Banquet, in foreign tongue—is when the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] gets to show off his grandeur to all important guests.\n\nZkušenÍ služebníci, hudebníci a kuchaři ze všech koutů světa usilují o to, aby ve jménu svého pána zanechali trvalý dojem.\n\nJe to také nepřehlédnutelná příležitost pro pozvané významné osobnosti, které se pouštějí do nevyřčeného boje o výsady." # todo: CHANGED
  the_grand_collapse.3.a: "Pochválit [SCOPE.sCharacter('lobbied_ig_leader_1').GetFullName], vůdce [SCOPE.gsInterestGroup('lobbied_ig_1').GetName]."
  the_grand_collapse.3.b: "Oslovit [SCOPE.sCharacter('lobbied_ig_leader_2').GetFullName], vůdce [SCOPE.gsInterestGroup('lobbied_ig_2').GetName]."
  the_grand_collapse.3.c: "Přilákat [SCOPE.sCharacter('lobbied_ig_leader_3').GetFullName], vůdce [SCOPE.gsInterestGroup('lobbied_ig_3').GetName]."

@@ -31,7 +31,7 @@
  africa_colonial_events.40.t: "Nezbedný jingoista"
  africa_colonial_events.41.a: "Přijměte tvrzení na [SCOPE.sState('rogue_imperialist_state').GetName] a rozhádejte [SCOPE.sCountry('rogue_imperialist_target').GetName]."
  africa_colonial_events.41.b: "Odmítnout objevitele a rozrušit naše vlastní jingoisty."
- africa_colonial_events.41.c: "Tento muž je vzorem! Měl by vést [SCOPE.gsInterestGroup('rogue_imperialist_ig').GetName]"
+ africa_colonial_events.41.c: "Tento muž je vzorem! Měl by vstoupit do politiky!" # todo: CHANGED
  africa_colonial_events.41.d: "Patriotický objevitel a příslušník [SCOPE.gsInterestGroup('rogue_imperialist_ig').GetName] zkoumá země v [SCOPE.sState('rogue_imperialist_state').GetName] a podepisuje smlouvy s místními vůdci jménem našeho národa, ale [SCOPE.sCountry('rogue_imperialist_target').GetName] již v této oblasti vytvořilo přítomnost. Pokud budou uznána tvrzení objevitele, [SCOPE.sCountry('rogue_imperialist_target').GetName] se na nás rozčílí."
  africa_colonial_events.41.f: "\"Ten chlápek je maniak! Snažíme se hrát opatrnou, jemnou hru, a ten chlápek musí převrátit stůl a způsobit bolest hlavy nám všem, a kvůli čemu? Národu? Prosím! Neuvědomuje si ten chlápek škody, které způsobuje?\""
  africa_colonial_events.41.t: "Povstalecký imperialista"
@@ -52,13 +52,13 @@
  anti_state_religion.3.a: "Okouzlující. Zatkněte toho muže."
  anti_state_religion.3.b: "Opravdu? Nechte ho být."
  anti_state_religion.3.d: "Ohnivý [SCOPE.sReligion('country_religion_pop').GetName] kazatel se objevil v hlavním městě, vyvolávající násilí s strážemi a křičící nejvíce podnětnou rétoriku. Zjevně se snaží být zatčen a vytvořit si 'mučedníka' víry."
- anti_state_religion.3.f: "\"Tato vláda je protikladná k přirozené víře všech mužů! Její koncept společnosti je zcela cizí duchovním pravdám. Myslí si, že mezi naší vírou a [ROOT.GetCountry.GetAdjectiveNoFormatting] světonázorem je neřešitelný konflikt - a věří, že může nějak rozhodnout o osudu našich duší. Ridiculous! Tato vláda je obscénní fraška, která se rouha proti všemu dobrému.\""
+ anti_state_religion.3.f: ""Tato vláda je v rozporu s přirozenou vírou všech lidí! Její pojetí společnosti je zcela cizí duchovním pravdám. Věří, že mezi naší vírou a [ROOT.GetCountry.GetAdjectiveNoFormatting] světonázorem existuje neřešitelný rozpor—a věří, že nějak může rozhodovat o osudech našich duší. Absurdní! Tato vláda je hanebná fraška rouhající se proti všemu dobrému." # todo: CHANGED
  anti_state_religion.3.t: "Mučedník"
  attracting_notables: "Přitahování významných osobností"
  aviation.1.a: "Hrdinská oddanost pomůže v domácnosti."
  aviation.1.b: "Váleční hrdinové musí zůstat v boji."
  aviation.1.d: "[SCOPE.sCharacter('flying_circus_general').GetFullName] získal renomé nejen kvůli využívání letadel v boji, ale i díky tomu, že sám lítal nad [SCOPE.sState('flying_circus_state').GetName]."
- aviation.1.f: ""Noviny nazývají [SCOPE.sCharacter('flying_circus_general').GetHerHim] '[SCOPE.sCharacter('flying_circus_general').GetCustom('air_ace_adjective_loc')] [SCOPE.sCharacter('flying_circus_general').GetCustom('air_ace_noun_loc')]'! [SCOPE.sCharacter('flying_circus_general').GetSheHe|U] úžasné - nemohu říct, zda by bylo lepší vystavit [SCOPE.sCharacter('flying_circus_general').GetHerHim] doma nebo je nechat útočit na každého v [SCOPE.sState('flying_circus_state').GetNameNoFormatting].""
+ aviation.1.f: ""Noviny nazývají [SCOPE.sCharacter('flying_circus_general').GetHerHim] '[SCOPE.sCharacter('flying_circus_general').GetCustom('air_ace_adjective_loc')] [SCOPE.sCharacter('flying_circus_general').GetCustom('air_ace_noun_loc')]'! [SCOPE.sCharacter('flying_circus_general').GetSheHe|U] je ohromující—nemohu říct, jestli by bylo lepší předvádět [SCOPE.sCharacter('flying_circus_general').GetHerHim] doma, nebo dál posílat [SCOPE.sCharacter('flying_circus_general').GetHerHim] na všechny v [SCOPE.sState('flying_circus_state').GetNameNoFormatting]." # todo: CHANGED
  aviation.1.t: "Důstojnícke eso"
  changing_policies_electoral_support: "Volební podpora pro změnu zákonů"
  command_economy_debate: "Debaty o vnitrostranických politikách"
@@ -99,13 +99,13 @@
  economy_laws.6.d: "Konkurující zboží ze zahraničí vedlo k poklesu poptávky po výrobcích z [SCOPE.sState('industrial_protectionist_state').GetName], což vzbudilo obavy ve státě ohledně našich plánovaných reforem."
  economy_laws.6.f: "\"Volný zahraniční obchod dává naše peníze a naše trhy ostatním, poškozuje naši práci, náš průmysl a naše lidi. Jaký smysl mají tyto politiky, pokud nám nepřinášejí prospěch?\""
  economy_laws.6.t: "Průmysl trpí v [SCOPE.sState('industrial_protectionist_state').GetName]"
- egyptian_crisis_events.1.a.tt: "[THIS.GetCountry.GetName] bude nabídnuta [concept_active_interest] v regionu."
+ egyptian_crisis_events.1.a.tt: "[THIS.GetCountry.GetName] bude nabídnuta [concept_interest] v regionu." # todo: CHANGED
  egyptian_crisis_events.1.a: "Musíme se ujistit, že jsou na naší straně."
  egyptian_crisis_events.1.b: "Nehledáme jejich schválení k tomu, abychom vzali to, co je naše."
  egyptian_crisis_events.1.d: "Egypt vzal většinu našich levantských provincií v roce 1833 poté, co se jeho guvernér pokusil a neúspěšně svrhnout celou císařskou vládu. Čas na obnovení ztracených zemí v této válce je už dlouho přlužící.\n\nNicméně, toto pravděpodobně přitáhne pozornost jakékoli [Concept('concept_great_power', '$concept_great_powers$')] v Evropě."
  egyptian_crisis_events.1.f: ""Co bylo kdysi naše, bude opět naše. Otisk, který jsme zanechali v Egyptě a Levantě, nelze ignorovat. Jako linie, které čas vyryje na horu, jsme také vyryli svůj osud na jejich půdu s otisky našich předků.\n\nJděte, jděte nyní, děti Slunce!""
  egyptian_crisis_events.1.t: "Obnovení naší autority v Sýrii"
- egyptian_crisis_events.2.a.tt: "Všem evropským [Concept('concept_great_power', 'velmocím')] budou nabídnuty [Concept('concept_active_interest', 'aktivní zájmy')] v naší oblasti."
+ egyptian_crisis_events.2.a.tt: "Všem evropským [Concept('concept_great_power', '$concept_great_powers$')] bude nabídnuto [concept_interest] v našem regionu." # todo: CHANGED
  egyptian_crisis_events.2.a: "Musíme této agresi odolat!"
  egyptian_crisis_events.2.d: "Osmanská říše začala své machinace, aby znovu získala území, která jsme vyhráli v roce 1833. To porušuje naši svrchovanost! Nicméně, to pravděpodobně přitáhne pozornost jakékoli [Concept('concept_great_power', 'velmoci')] v Evropě, což nám dává šanci získat mocné spojence v konfliktu."
  egyptian_crisis_events.2.f: ""Myslím, že sultán a já máme nějaké nevyřízené záležitosti.""
@@ -123,18 +123,18 @@
  election_neutral.1.f: "\"Ano, ano, jsem ochoten prodiskutovat obsah těchto dopisů s výborem, pokud mi bude dána chvíle na studium obsahu těchto dopisů ve svých osobních komnatách nejdříve. Samozřejmě, na svou čest, nebudu měnit nebo ničit žádný z důkazů. Poctivě.\""
  election_neutral.1.t: "Laskavě spalte tento dopis"
  election_neutral.2.a: "[SCOPE.sCharacter('electioneering_commander').GetFullName] může říct, co [SCOPE.sCharacter('electioneering_commander').GetSheHe] chce."
- election_neutral.2.b: "Napomenout [SCOPE.sCharacter('electioneering_commander').GetHerHim] — dobří vojáci nevydávají rozkazy, dostávají je!"
+ election_neutral.2.b: "Pokárat [SCOPE.sCharacter('electioneering_commander').GetHerHim]—dobří vojáci nedávají rozkazy, přijímají je!" # todo: CHANGED
  election_neutral.2.c.tt: "[SCOPE.sCharacter('electioneering_commander').GetFullName] nemá vlastnost politika."
  election_neutral.2.c: "Pokud [SCOPE.sCharacter('electioneering_commander').GetFullName] tolik miluje politiku, [SCOPE.sCharacter('electioneering_commander').GetSheHe] by se měl více angažovat."
  election_neutral.2.d: "[SCOPE.sCharacter('electioneering_commander').GetPrimaryRoleTitle] [SCOPE.sCharacter('electioneering_commander').GetLastName] vydal veřejné prohlášení na podporu [SCOPE.sParty('electioneering_commander_party').GetName], což vyvolává otázky o politické neutralitě armády."
- election_neutral.2.f: ""Moje povinnost je bránit národ a jeho zájmy. Politika je stejně důležitou součástí války jako bitvy a logistika - nevidím v tom problém plnit své povinnosti a dělat, co mohu, abych zajistil, že ti, kteří jsou nejlépe vhodní k ochraně národa, skončí v čele.""
+ election_neutral.2.f: ""Je mou povinností bránit národ a jeho zájmy. Politika je stejně součástí války jako bitvy a logistika—nevidím problém v tom plnit svou povinnost a dělat, co můžu, aby ti, kdo jsou nejlépe způsobilí chránit národ, skončili v čele." # todo: CHANGED
  election_neutral.2.t: "Velitel chválí občanskou koalici"
  election_neutral.3.a: "Kampanění po železnici je chytrý tah."
  election_neutral.3.b.tt: "Zájem skupina podporující [SCOPE.sParty('whistle_stop_party').GetName] není ve vládě."
  election_neutral.3.b: "Byla by škoda, kdyby vlak kampaně stále měl zpoždění."
  election_neutral.3.c: "Osud národa závisí na tom, že ten vlak dorazí včas!"
  election_neutral.3.d: "[SCOPE.sCharacter('whistle_stop_leader').GetFullName] má v úmyslu cestovat přes [SCOPE.sState('whistle_stop_state').GetName] vlakem, aby kampanil za [SCOPE.sParty('whistle_stop_party').GetName]."
- election_neutral.3.f: "\"Všechno, co mám v úmyslu udělat, je představit se lidem - jsem prostě obyčejný [SCOPE.sCharacter('whistle_stop_leader').GetWomanMan] snažící se dostat zprávu naší strany ven nejlepším možným způsobem.\""
+ election_neutral.3.f: ""Všechno, co hodlám udělat, je představit se lidu—jsem jen prostý [SCOPE.sCharacter('whistle_stop_leader').GetWomanMan], který se snaží dostat poselství naší strany ven nejlepšími dostupnými prostředky." # todo: CHANGED
  election_neutral.3.t: "Whistle-Stop Tour"
  election_neutral.4.a: "Možná má mluvčí z [SCOPE.sParty('opposition_party').GetName] pravdu."
  election_neutral.4.b: "Pokud se vláda distancuje od [SCOPE.sCountry('midlothian_campaign_ally_country').GetName], argument [SCOPE.sParty('opposition_party').GetName] bude zpochybněn."
@@ -279,7 +279,7 @@
  je_unite_the_principalities_amicable_or_better_relations_tt: "[SCOPE.GetRootScope.GetCountry.GetName] má #bold přátelské#! nebo lepší vztahy s dalším #bold rumunským#! státem, a buď oba státy jsou nezávislé, nebo jsou poddanými stejného pána, který může mít sám poddané."
  je_unite_the_principalities_button: "Tlačit za unii"
  je_unite_the_principalities_button_desc: "Prvním krokem k sjednocení rumunského národa je ustanovení jednoho vládce mezi našimi lidmi. Zajištění společného vedení, i když naše státy zůstanou na papíře oddělené, bude pro věc unifikace velmi přínosné."
- je_unite_the_principalities_friend_with_all_great_powers_tt: "[SCOPE.GetRootScope.GetCountry.GetName] má #bold pozitivní#! vztahy se všemi [concept_great_power], které mají [concept_active_interest] v regionu."
+ je_unite_the_principalities_friend_with_all_great_powers_tt: "[SCOPE.GetRootScope.GetCountry.GetName] má #bold pozitivní#! vztahy se všemi [concept_great_power], které mají v regionu [concept_interest]." # todo: CHANGED
  je_unite_the_principalities_no_other_romanians_tt: "Neexistují žádné jiné #bold rumunské#! země, se kterými bychom se mohli spojit."
  je_unite_the_principalities_reason: "Dunajská knížectví se probudila ze svého dlouhého letargu. Práva a zájmy vlasti volají po osvobození; blaho a štěstí rumunského národa vyžadují akci! Musíme usilovat o sjednocení a pomoci vybudovat jednotný stát pro náš lid. Je však třeba postupovat opatrně — nesmíme rozhněvat žádnou [Concept('concept_great_power', '$concept_great_powers$')] v tomto procesu."
  je_unite_the_principalities_romania_is_real_tt: "#bold Rumunsko#! se již formovalo."
@@ -338,7 +338,7 @@
  monarchy_law_events.4.a: "Ta koruna je jen symbolem! Ehm..."
  monarchy_law_events.4.b: "Ta koruna JE symbolem! Symbol národní lásky k monarchii!"
  monarchy_law_events.4.d: "Někteří monarchisté diskutovali o tom, jak by měly vypadat královské insignie, a došli k poznání, že země nemá nic, co by se opravdu hodilo pro monarha. Jedna snaha o domácí korunu, vyrobenou z plechu a zlaté fólie, byla zabavena jako symbol 'od přírody tuctové' povahy navrhované monarchie."
- monarchy_law_events.4.f: ""Naše krásná monarchie — pro monarchii musíme mít — volá po jisté důstojnosti skromných a okouzlujících insignií. K tomu jsem již kontaktoval několik zlatníků, brusičů drahokamů, klenotníků a obchod, který může vyrobit správné královské sedadlo s tím, co mi říkají, je jemná korintská kůže. Mezitím...""
+ monarchy_law_events.4.f: ""Naše krásná monarchie—monarchie musíme mít—vyžaduje jistou důstojnost skromné a půvabné regálie. Za tímto účelem jsem již kontaktoval několik zlatníků, brousičů drahokamů, klenotníků a obchod, který může vyrobit náležité trůnní sedadlo z toho, co mi říkají, že je kvalitní korintská kůže. Mezitím..." # todo: CHANGED
  monarchy_law_events.4.t: "Zlatá fóliová koruna"
  mysteriously_mismanaged_rail_network: "Tajemně špatně řízená železniční síť"
  native_resettlement.1.a: "Je to vůbec legální?"
@@ -358,7 +358,7 @@
  native_resettlement.4.a: "Udělali jsme, co jsme mohli."
  native_resettlement.4.b: "Jejich krev je na našich rukou."
  native_resettlement.4.d: "Naše úsilí o odstranění [SCOPE.sCulture('cherokee_culture').GetName] z východních zemí vedlo k úmrtím mnoha z nich během jejich pozemního marchu na západ."
- native_resettlement.4.f: "\"Spalničky, cholera, hlad - tato odstranění vytvořila stopu slz a smrti pro náš lid.\""
+ native_resettlement.4.f: ""Spalničky, cholera, hlad—toto vysídlení vytvořilo stezku slz a smrti pro náš lid." # todo: CHANGED
  native_resettlement.4.t: "Stezka slz"
  native_resettlement.5.a: "Modleme se, aby se to nikdy nestalo znovu."
  native_resettlement.5.d: "Odstranění [SCOPE.sCulture('cherokee_culture').GetName] do [SCOPE.sCountry('indian_territory_scope').GetName] je kompletní. Ať už dobré nebo špatné, záležitost je vyřešena."
@@ -381,7 +381,7 @@
  naval_tech_events.5.c: "[SCOPE.sCharacter('aviator_commander').GetFullName] by mohl lépe podporovat svou věc v vládě."
  naval_tech_events.5.d: "Významný zastánce námořního letectva, [SCOPE.sCharacter('aviator_commander').GetFullName], uspořádal sérii námořních cvičení, efektivně bombardujících opuštěné trupy z výšky s letadly vypuštěnými z jiných lodí."
  naval_tech_events.5.e: "Pozemní síly musí držet krok s námořní technologií."
- naval_tech_events.5.f: "\"Žádná loď se nemůže vyhnout devastaci letadel útočících z výšky - nejúčinnější námořní munice budoucnosti bude bomba z nebe, ne náboj vystřelený z paluby. Tento cvičení jasně ukázalo, že letadla budou mečem a štítem námořnictva zítřka.\""
+ naval_tech_events.5.f: ""Žádná loď neunikne zdevastování letadly útočícími z výšky—nejúčinnější námořní munice budoucnosti bude bomba seslaná z nebe, ne granát vystřelený z paluby. Toto cvičení prokázalo bez stínu pochybností, že letadla budou mečem i štítem námořnictva zítřka." # todo: CHANGED
  naval_tech_events.5.t: "Demonstrace bombardování"
  naval_traditions_upheld: "Námořní tradice podpořeny"
  no_free_exchange: "Omezená výměna myšlenek"
@@ -480,12 +480,12 @@
  slavery_law_events.5.a: "Veřejná debata riskuje příliš mnoho. Nemůžeme to dovolit."
  slavery_law_events.5.b: "Povolit veřejné debaty o výhodách zrušení."
  slavery_law_events.5.d: "[SCOPE.sCharacter('abolitionist_ig_scope')] navrhl uspořádat sérii debat, které by argumentovaly výhody zrušení. Pokud [SCOPE.sCharacter('slaver_ig_leader_scope').GetHerHis] debaty dopadnou dobře, [SCOPE.gsInterestGroup('abolitionist_ig_scope').GetName] a otázka zrušení budou prosperovat."
- slavery_law_events.5.f: "\"Je to věčný boj mezi těmito dvěma principy - správným a nesprávným - po celém světě. Tento otroctví je stejný špatný tyranský princip, bez ohledu na to, v jaké podobě přichází.\""
+ slavery_law_events.5.f: ""Je to věčný souboj mezi těmito dvěma principy—správným a nesprávným—na celém světě. Toto otroctví je ten samý nespravedlivý tyranský princip, ať už se objeví v jakékoli podobě." # todo: CHANGED
  slavery_law_events.5.t: "Velké debaty"
  slavery_law_events.6.a: "Nechte otrokáře mluvit prázdná slova, plné nic."
  slavery_law_events.6.b: "Tyto publikace jsou plné zla a lží a musí být zpochybněny."
  slavery_law_events.6.d: "Obhájci pokračujícího otroctví publikovali vlnu diatrib, traktátů a senzacechtivých fiktivních narativů, aby podpořili svou věc. Množství, pokud ne kvalita, těchto děl otřáslo veřejnou důvěrou v abolitionismus."
- slavery_law_events.6.f: ""Je mojí povinností a je to nezbytné pro veřejný zájem, abych odstranil předsudky vůči zvláštním institucím našeho národa co nejdříve. Zrušit instituci, která existovala po celé věky - proč! Taková úsilí nemůže být ničím jiným než jeho pošetilostí.""
+ slavery_law_events.6.f: ""Je mou povinností, a pro veřejný zájem nezbytné, co nejdříve odstranit předsudky vůči zvláštním institucím našeho národa. Zrušit instituci, která existovala po celé věky—proč! Předpoklad takového pokusu se může rovnat pouze jeho bláznovství." # todo: CHANGED
  slavery_law_events.6.t: "Život mezi spodními vrstvami"
  soft_approach_to_slaves: "Měkká taktika vůči povstalcům"
  state_dizzy_with_success: "Závratě z hospodářského úspěchu"
@@ -508,13 +508,13 @@
  trains.1.a: "Všichni si užijte představení!"
  trains.1.b: "Zakázat [SCOPE.sCharacter('train_crash_attendee').GetFullName] riskovat [SCOPE.sCharacter('train_crash_attendee').GetHerHis] život tím, že se toho zúčastní!"
  trains.1.d: "Podnikavý zábavníků uspořádal, aby se dva stárnoucí lokomotivy srazily na místní pouti. Výsledná srážka může ohrozit davy, i když to nezastavilo [SCOPE.sCharacter('train_crash_attendee').GetFullName], vůdce [SCOPE.gsInterestGroup('train_crash_attendee_ig').GetName], od toho, aby prohlásil, že [SCOPE.sCharacter('train_crash_attendee').GetSheHe] bude mít místo v první řadě na akci."
- trains.1.f: "\"Proboha, proč? Proč chcete vidět srážku tak silně?\"\n\n\"Odpovědí? Věřím, že někde ve složení každého normálního člověka - včetně mě - se skrývá potlačovaná touha rozbít věci.\""
+ trains.1.f: ""Prosím vás, proč? Proč tak moc chcete vidět srážku?"\n\n"Upřímně? Věřím, že v nitru každého normálního člověka—včetně mě—číhá potlačená touha něco rozbít." # todo: CHANGED
  trains.1.t: "Velká vlaková srážka"
  trench_warfare.1.a: "Musíme se dále ukotvit v [SCOPE.sState('trench_warfare_state').GetName]."
  trench_warfare.1.b: "Nemůžeme nechat naše obranné opatření stagnovat."
  trench_warfare.1.c: "Potřebujeme proražení."
  trench_warfare.1.d: "Intenzivní používání zákopů v [SCOPE.sState('trench_warfare_state').GetName] [SCOPE.sCharacter('trench_warfare_general').GetFullName] přetvořilo zemi v spálenou pekelnou krajinu. Zápletka nemůže trvat navždy, ale není jasné, jaká je nejlepší cesta vpřed."
- trench_warfare.1.f: "\"Byl jsi někdy tam, v zákopech? Je to méně osamělé, než bys myslel. Máš přátele všude - potkani budou s tebou každý den a noc, a i když tvoji kamarádi umírají, zůstanou s tebou, jen dolů v bahně.\""
+ trench_warfare.1.f: ""Byl jsi někdy v zákopu? Není to tak osamělé, jak bys čekal. Máš přátele všude—krysy budou s tebou každý den i noc, a i když tví druzi zemřou, zůstanou tam s tebou, právě dole v blátě." # todo: CHANGED
  trench_warfare.1.t: "Zakorenená fronta"
  turtle_island_state_of_nations: "Stav Mnoha Národů"
  under_suspicion_ig: "Pod podezřením"
@@ -543,7 +543,7 @@
  je_lion_of_the_zanj_fail: "Jakýkoli stát s hlavním městem mimo Afriku ovládá nějaký stát nebo má podřízeného, který má stát v:\n• [SCOPE.sStateRegion('kenya_region').GetName]\n• [SCOPE.sStateRegion('rift_valley_region').GetName]\n• [SCOPE.sStateRegion('zanzibar_region').GetName]\n• [SCOPE.sStateRegion('tanganyika_region').GetName]\n• [SCOPE.sStateRegion('lindi_region').GetName]"
  je_lion_of_the_zanj_loss_of_territory: "Postoupí kontrolu nad každým státem, který není hlavním městem, sousední kolonizující mocnosti ve stejném [concept_state_region], pokud je taková přítomna; jinak se každý takový stát stane samostatným válečnickým státem."
  zanzibar.2.t: "[SCOPE.sCountry('deag_scope').GetAdjective] Východoafrická společnost"
- zanzibar.2.d: "Někteří podnikaví průzkumníci a obchodníci spříznění s kolonialními zájmy tvrdí, že by bylo snadné podkopat autoritu [SCOPE.sCountry('zanzibar_scope').GetAdjectiveNoFormatting] v Africe přímo uzavřením smluv s místními náčelníky v regionu. Podle všeho je autorita [SCOPE.sCountry('zanzibar_scope').GetNameNoFormatting] extrémně slabá — pokud k tomu dojde, získáme [SCOPE.sStateRegion('zanzibar_tanganyika_scope').GetName] a [SCOPE.sCountry('zanzibar_scope').GetNameNoFormatting] se přes noc zcela rozpadne."
+ zanzibar.2.d: "Někteří podnikaví průzkumníci a obchodníci spjatí s koloniálními zájmy tvrdí, že by bylo triviální podkopat autoritu [SCOPE.sCountry('zanzibar_scope').GetAdjectiveNoFormatting] v Africe tím, že přímo získáme smlouvy s místními náčelníky v regionu. Podle všeho je autorita [SCOPE.sCountry('zanzibar_scope').GetNameNoFormatting] extrémně slabá—když k tomu dojde, získáme [SCOPE.sStateRegion('zanzibar_tanganyika_scope').GetName] a [SCOPE.sCountry('zanzibar_scope').GetNameNoFormatting] se přes noc úplně zhroutí." # todo: CHANGED
  zanzibar.2.f: ""Říkám vám, ten muž je poloviční šílenec! Celý jeho plán ztroskotá ve chvíli, kdy mu pustíme ruku!"\n\nDým z doutníků se v jemném světle salonu vznášel, zatímco si ti dva tiše rozvažovali, co dělat. "Možná," zamyslel se druhý hlas, "to jen znamená, že mu ruku nesmíme pustit." Následovalo krátké ticho, přerušené chichotem. "Zanj je na jaře nádherný, slyšel jsem.""
  zanzibar.2.a: "Zánik [SCOPE.sCountry('zanzibar_scope').GetNameNoFormatting] nám může přinést mnoho."
  zanzibar_2_notification: "[SelectLocalization(SCOPE.sCountry('zanzibar_scope').IsValid,'scoped_zanzibar_notification','dead_zanzibar_notification')]"
@@ -568,7 +568,7 @@
  zanzibar.4.a: "Slavný den pro nás všechny!"
  zanzibar.5.t: "Tippu Tip"
  zanzibar.5.d: "Ambiciózní obchodník s otroky a slonovinou jménem Hamad ibn Muhammad al Murjabi žádá podporu [ROOT.GetCountry.GetName] pro koloniální podnik. Navrhuje založení nové vlády v $STATE_CONGO_ORIENTALE$. Pokud ho podpoříme, jeho stát se stane naším vazalem, ale velmoci budou nesouhlasit a naše snaha stát se [Concept('concept_recognized_power','$concept_recognized_power_short$')] bude značně zbrzděna."
- zanzibar.5.f: ""Proč tě vlastně, Hamade, nazývají 'Tippu Tip'?“ zeptal se cizinec, když karavana slonoviny začala brodit další řeku.\n\nObchodník se usmál. \"Je to kvůli zvuku mých zbraní, víš — ach, sakra, podívej!\"\n\nVyrazil k vodě a volal o pomoc karavanu.\n\n\"Loďka plná otroků se potopila!\" vykřikl. \"Jaká škoda! To byla pěkná kanoe.\""
+ zanzibar.5.f: ""Proč #italic vlastně#! ti říkají 'Tippu Tip', Hamad?" zeptal se cizinec, když karavana slonoviny začínala brodit další řeku.\n\nObchodník se usmál. "Je to kvůli zvuku mých zbraní, víte—oh, sakra, podívejte!"\n\nVyrazil k vodě a volal o pomoc ze své karavany.\n\n"Loď plná otroků se potopila!" zakřičel. "To je škoda! Byla to pěkná kanoe." # todo: CHANGED
  zanzibar.5.a: "Tippu Tipovi nelze poskytnout podporu, ale neodvážíme se ho odsoudit."
  zanzibar.5.b: "Vítáme tento průnik do Konga."
  zanzibar.5.c: "Zadržte Tippu Tip a ukončete to dřív, než to vůbec začne!"
@@ -577,10 +577,10 @@
  zanzibar.6.d: "Vzestup [SCOPE.sCharacter('zan_ruler').GetFullName], významné postavy [SCOPE.sCulture('zan_ruler_culture').GetName], značí konec staletí arabské vlády. Vůdci [SCOPE.sCulture('zan_swahili_culture').GetName] požadují, aby byla tato monumentální událost využita k oficiálnímu zvrácení dominance [SCOPE.sCulture('zan_omani_culture').GetName] v rámci [ROOT.GetCountry.GetName]."
  zanzibar.6.f: "Ulice staré čtvrti Stone Town na Zanzibaru byly pusté. Všichni měli zatlučené okenice a čekali, co přinese zítřek.\n\nZpočátku někteří slavili a tvrdili, že zatímco stovky kmenů před staletími ztratily svobodu, národ ji dnes znovu získal. Jiní se zadívali na ostrov bílých písků a modrých vod a obávali se, že pokud dnes nic neudělají, zítra o všechno přijdou. Všichni na okamžik vběhli do ulic a brzy se navzájem setkali.\n\nPříliš mnoho lidí si náhle uvědomilo, že jejich sousedé jsou jim cizí, a tak teď čekali sami, vedle sebe."
  zanzibar.6.a: "[ROOT.GetCountry.GetName] patří národu [SCOPE.sCulture('zan_swahili_culture').GetName]!"
- zanzibar.6.b: "Jeden [SCOPE.sCulture('zan_ruler_culture').GetName] [SCOPE.sCharacter('zan_ruler').GetPrimaryRoleTitle|l] nic neznamená — [ROOT.GetCountry.GetName] zůstává [SCOPE.sCulture('zan_omani_culture').GetName]."
+ zanzibar.6.b: "Jeden [SCOPE.sCulture('zan_ruler_culture').GetName] [SCOPE.sCharacter('zan_ruler').GetPrimaryRoleTitle|l] je bezvýznamný—[ROOT.GetCountry.GetName] zůstává [SCOPE.sCulture('zan_omani_culture').GetName]." # todo: CHANGED
  can_reformer_movement_fury: "Hněv reformního hnutí"
  je_struggle_for_the_highveld: "Boje o Highveld"
- je_struggle_for_the_highveld_reason: "Vnitrozemské oblasti veldu na první pohled vypadají jako pustý křovinatý kraj, ale mezi poli jsou úrodné pozemky a skalní výchozy lákavě září. Pořádek — náš pořádek — musí být nastolen, aby tato bohatá země mohla spatřit mír, který tak zoufale potřebuje, aby odhalila svůj plný potenciál."
+ je_struggle_for_the_highveld_reason: "Vnitrozemské oblasti veldu se na první pohled jeví jako nehostinné křovinaté území, ale mezi poli jsou úrodné půdy a útesy svítí lákavě. Pořádek—náš pořádek—musí být zaveden, aby toto bohaté území mohlo zažít mír, který tak zoufale potřebuje k tomu, aby odhalilo svůj plný potenciál." # todo: CHANGED
  je_struggle_for_the_highveld_saf_states: "[ROOT.GetCountry.GetName] vlastní alespoň #b 4#! států v [concept_georegion_south_africa]"
  je_struggle_for_the_highveld_saf_success: "Každá jiná země s hlavním městem v [concept_georegion_south_africa] je buď leníkem [SCOPE.sCountry('cape_colony_scope').GetName] nebo sdílí stejného vrchního pána jako [SCOPE.sCountry('cape_colony_scope').GetNameNoFormatting]."
  je_struggle_for_the_highveld_saf_fail: "Každá jiná země s hlavním městem v [concept_georegion_south_africa] se stane nezávislou [concept_recognized_power] s pobřežním [concept_incorporated_state]."
@@ -602,7 +602,7 @@
  highveld_offer_griqua_confederation_effect_tt: "[ROOT.GetCountry.GetNameNoFlag] anektuje sousední zemi [SCOPE.sCulture('griqua_culture').GetName]"
  struggle_for_the_highveld.1.t: "Bitva u Vegkopu"
  struggle_for_the_highveld.1.d: "Silně ozbrojená skupina boerských trekkerů úspěšně odrazila velký #italic amabutho#! nájezd [SCOPE.sCountry('ndebele').GetAdjective], čímž jim vážně oslabila moc. S nadvládou [SCOPE.sCountry('ndebele').GetAdjectiveNoFormatting] otřesenou touto porážkou nařídil jejich král, [SCOPE.sCharacter('mzilikazi').GetFirstName], ústup z [SCOPE.sStateRegion('transvaal_region').GetName] a přesun celého národa na sever."
- struggle_for_the_highveld.1.f: "Válečníci bušili na své štíty, utišovali roztřesené nervy, než znovu zařvali a vrhli se na tábor, křičíc jméno svého [SCOPE.sCharacter('mzilikazi').GetPrimaryRoleTitle|l]. Když tak učinili, oheň a hromy z tábora se zesílily. Muškety se vynořily zpoza vozů a střílely kulky, volný brok, cokoliv, co se dalo zběsile nabít a házet na útočící nepřátele. Každý válečník, který projel tímto deštěm ohně a vyšplhal přes trnité keře k vozům, byl setkán sekyry. Dým z pušek se smíchal s rozlité krví a vytvořil hustou mlhu, která dělala z dechu smrt.\n\nKdyž výkřiky bitvy ustaly a dým se rozptýlil, mezi rozervanými těly ležely na bitevním poli také ambice [SCOPE.sCharacter('mzilikazi').GetFirstNameNoFormatting], mrtvé stejně jako válečníci, kteří ten den zaútočili na tábor."
+ struggle_for_the_highveld.1.f: "Bojovníci bušili do svých štítů, utišovali svá rozrušená nervy, než znovu zaútočili na tábor, křičíc jméno svého [SCOPE.sCharacter('mzilikazi').GetPrimaryRole.GetName|l]. Když to udělali, oheň a hřmění z tábora zesílily. Mušketýři vyšli zpoza vozů a stříleli kulkami, volným brokem, čímkoli, co šlo zběsile nabít a vrhnout na dobíhajícího nepřítele. Každého bojovníka, který překonal tento liják ohně a vyšplhal přes trnité křoví k vozům, potkalo bušení sekerami. Kouř z pušek se smísil s vylitou krví a vytvořil hustou oparu, který útočníkům i obráncům přinášel smrt.\n\nKdyž výkřiky bitvy utichly a kouř se rozptýlil, mezi zmasakrovanými těly rozházenými na bojišti ležely ambice [SCOPE.sCharacter('mzilikazi').GetFirstNameNoFormatting], mrtvé jako bojovníci, kteří toho dne zaútočili na tábor." # todo: CHANGED
  struggle_for_the_highveld.1.a: "Proveďte nájezd na [SCOPE.sCountry('ndebele').GetNameNoFormatting], když prchají na sever."
  struggle_for_the_highveld.1.b: "Přiveďte některé z [SCOPE.sCountry('ndebele').GetNameNoFormatting] k nám."
  struggle_for_the_highveld.1.c: "Hrozba Boerů je odhalena! Musíme [SCOPE.sCharacter('mzilikazi').GetFirstNameNoFormatting] pomáhat, ne škodit."
@@ -626,11 +626,11 @@
  struggle_for_the_highveld.3.d: "[SCOPE.sCharacter('piet_retief').GetFullName] věří, že [SCOPE.sCharacter('dingane').GetFirstName], [SCOPE.sCharacter('dingane').GetPrimaryRoleTitle] [SCOPE.sCountry('zulu').GetName], lze přesvědčit, aby odstoupil jižní polovinu [SCOPE.sStateRegion('zululand_region').GetName] [ROOT.GetCountry.GetName]. [SCOPE.sCharacter('piet_retief').GetSheHe|U] věří, že se může dosáhnout dohody, pokud [SCOPE.sCharacter('piet_retief').GetSheHe] bude jednat osobně na dvoře [SCOPE.sCharacter('dingane').GetPrimaryRoleTitle] [SCOPE.sCharacter('dingane').GetFirstName]. Někteří varují, že [SCOPE.sCharacter('dingane').GetPrimaryRoleTitle] je nebezpečný, pokud s ním jednáte."
  struggle_for_the_highveld.3.f: ""Je to jednoduché," zašklebil se [SCOPE.sCharacter('piet_retief').GetFullNameNoFormatting] a mával v ruce dopisem. "Musíme jen ukázat [SCOPE.sCharacter('dingane').GetPrimaryRoleTitle], že jsme důvěryhodní, a brzy budeme mít vlastní přístav!"\n\nLid kolem něj šuměl smíšeným vzrušením a obavami.\n\n"Nový domov! Země, naše k zisku!"\n\n"Nejsem si jistý, že [SCOPE.sCharacter('dingane').GetPrimaryRoleTitle] [SCOPE.sCharacter('dingane').GetFirstNameNoFormatting] se s tím dá tak snadno vyřídit."\n\n"Pfah! To je pro [SCOPE.sCharacter('piet_retief').GetFirstNameNoFormatting], ať si to vyzkouší on, ne my!""
  struggle_for_the_highveld.3.a: "[SCOPE.sCharacter('piet_retief').GetFullName] získá [SCOPE.sStateRegion('zululand_region').GetName] pro [ROOT.GetCountry.GetNameNoFormatting]!"
- struggle_for_the_highveld.3.b: "[SCOPE.sCharacter('dingane').GetFirstName] je nebezpečný — [SCOPE.sCharacter('piet_retief').GetLastName] musí od tohoto nápadu upustit."
+ struggle_for_the_highveld.3.b: "[SCOPE.sCharacter('dingane').GetFirstName] je nebezpečný—[SCOPE.sCharacter('piet_retief').GetLastName] musí tuto myšlenku opustit." # todo: CHANGED
  ora_natalia_venture_rejected: "Plán na Natal odmítnut"
  struggle_for_the_highveld.4.t: "Boerové požadují Thukela"
  struggle_for_the_highveld.4.d: "Delegace boerských osadníků vedená [SCOPE.sCharacter('piet_retief').GetFullName] dorazila do [ROOT.GetCountry.GetCapital.GetCityHubName] a žádá, abychom jim postoupili země jižně od Thukela, polovinu všech území [SCOPE.sStateRegion('zululand_region').GetName]. Tento návrh je urážkou a provokací, ale existuje mnoho dalších dobře ozbrojených Boerů, odkud tato delegace přišla."
- struggle_for_the_highveld.4.f: "[SCOPE.sCharacter('piet_retief').GetFullNameNoFormatting] stál před [SCOPE.sCharacter('dingane').GetPrimaryRoleTitle] s úsměvem, bez sebemenší známky nejistoty na [SCOPE.sCharacter('piet_retief').GetHerHis] tváři nebo v postoji. [SCOPE.sCharacter('piet_retief').GetSheHe|U] mluvil o přátelství a respektu, řekl překladatel [SCOPE.sCharacter('dingane').GetFirstNameNoFormatting], ale už přicházely zprávy o zmizelém dobytku a záhadných hlídkách, které utíkaly, když se jim kdokoli přiblížil. Dobytek mohl vzít nějaký soupeřící náčelník — nebo postava, která nyní mluvila před [SCOPE.sCharacter('dingane').GetHerHim]. Důvěra byla v těchto dnech #italic natolik#! vzácná..."
+ struggle_for_the_highveld.4.f: "[SCOPE.sCharacter('piet_retief').GetFullNameNoFormatting] stál před [SCOPE.sCharacter('dingane').GetPrimaryRoleTitle] s úsměvem, aniž by na [SCOPE.sCharacter('piet_retief').GetHerHis] tváři nebo v postoji bylo patrné sebemenší rozrušení. [SCOPE.sCharacter('piet_retief').GetSheHe|U] říkal něco o přátelství a úctě, překládal tlumočník [SCOPE.sCharacter('dingane').GetFirstNameNoFormatting], ale už přicházely zprávy o zmizelém dobytku a záhadných průzkumných družinách, které utekly, když se jich někdo pokusil přiblížit. Dobytek mohl odnést nějaký soupeřící náčelník—nebo postava, která právě před [SCOPE.sCharacter('dingane').GetHerHim] stála. Důvěra byla v těchto dnech #italic tak#! vzácná..." # todo: CHANGED
  struggle_for_the_highveld.4.a: "Tento požadavek je směšný. Zabijte celou delegaci [SCOPE.sCharacter('piet_retief').GetLastName]."
  notification_piet_retief_killed_name: "[SCOPE.sCharacter('piet_retief').GetFullName] zabit"
  notification_piet_retief_killed_desc: "[SCOPE.sCharacter('piet_retief').GetLastName] byl zabit na příkaz [SCOPE.sCharacter('dingane').GetPrimaryRoleTitle] [SCOPE.sCharacter('dingane').GetFirstName] z [SCOPE.sCountry('zulu').GetName]."
@@ -646,13 +646,13 @@
  notification_natal_ceded_tooltip: "#header $notification_natal_ceded_name$#!\n$TOOLTIP_DELIMITER$\n$notification_natal_ceded_desc$"
  struggle_for_the_highveld.5.t: "Řeka Krve"
  struggle_for_the_highveld.5.d: "Napětí mezi migrujícími boerskými Voortrekkery a [SCOPE.sCountry('zulu').GetName] neustále rostlo. Pokus o vyhnání velké boerské skupiny na březích řeky Ncome skončil katastrofálně. [SCOPE.sCharacter('mpande').GetPrimaryRoleTitle] [SCOPE.sCharacter('mpande').GetFirstName] věří, že jižní část [SCOPE.sStateRegion('zululand_region').GetName] může být postoupena Boerům výměnou za mír, ale k tomu nedojde, pokud [SCOPE.sCharacter('dingane').GetFirstName] zůstane [SCOPE.sCharacter('dingane').GetPrimaryRoleTitle|l]."
- struggle_for_the_highveld.5.f: "Další armáda — rozprášena. Kolik krve bylo prolito? Kolik mužů zbylo k velení? Kolik zbývajících mužů by #italic přijalo#! rozkaz od svého [SCOPE.sCharacter('dingane').GetPrimaryRoleTitle|l]? [SCOPE.sCharacter('mpande').GetPrimaryRoleTitle] [SCOPE.sCharacter('mpande').GetFirstNameNoFormatting] navrhoval nepředstavitelné věci, zcela nepřijatelné, byly by smrtí království... nebo alespoň smrtí [SCOPE.sCharacter('dingane').GetPrimaryRoleTitle]."
+ struggle_for_the_highveld.5.f: "Další armáda—rozprášená. Kolik krve bylo prolito? Kolik mužů zbylo, aby veleli? Kolik zbylých mužů by #italic přijalo#! rozkaz od svého [SCOPE.sCharacter('dingane').GetPrimaryRole.GetName|l]? [SCOPE.sCharacter('mpande').GetPrimaryRoleTitle] [SCOPE.sCharacter('mpande').GetFirstNameNoFormatting] navrhoval přehnané myšlenky, zcela nepřijatelné, byly by smrtí království... nebo alespoň smrtí [SCOPE.sCharacter('dingane').GetPrimaryRoleTitle]." # todo: CHANGED
  struggle_for_the_highveld.5.a: "Udělejte z [SCOPE.sCharacter('mpande').GetPrimaryRoleTitle] [SCOPE.sCharacter('mpande').GetFirstName] nového [SCOPE.sCharacter('dingane').GetPrimaryRoleTitle|l] a podepište smlouvu."
  struggle_for_the_highveld.5.a.tt: "Polovina [SCOPE.sStateRegion('zululand_region').GetName] bude postoupena novému boerskému státu."
  notification_blood_river_mpande_rules_natalia_founded_name: "Boerská republika v Natalu"
  notification_blood_river_mpande_rules_natalia_founded_desc: "$ZUL$ postoupil svá jižní území nové boerské republice."
  notification_blood_river_mpande_rules_natalia_founded_tooltip: "#header $notification_blood_river_mpande_rules_natalia_founded_name$#!\n$TOOLTIP_DELIMITER$\n$notification_blood_river_mpande_rules_natalia_founded_desc$"
- struggle_for_the_highveld.5.b: "[SCOPE.sCharacter('mpande').GetFirstName] je zrádce! Zajměte [SCOPE.sCharacter('mpande').GetHerHim] — pouze [SCOPE.sCharacter('dingane').GetFirstName] nás může vést."
+ struggle_for_the_highveld.5.b: "[SCOPE.sCharacter('mpande').GetFirstName] je zrádce! Chyťte [SCOPE.sCharacter('mpande').GetHerHim]—pouze [SCOPE.sCharacter('dingane').GetFirstName] nás může vést." # todo: CHANGED
  struggle_for_the_highveld.5.b.tt: "Území [SCOPE.sCountry('zulu').GetName] zůstanou sjednocená, ale jeho vedení bylo již zpochybněno."
  zul_desperately_clinging_to_power: "Zoufalé lpění na osobní moci"
  zul_desperately_clinging_to_power_ig: "Zoufalé lpění na politické moci"
@@ -664,5 +664,5 @@
  struggle_for_the_highveld.6.a: "Ať se roh [SCOPE.sCountry('highveld_winner').GetNameNoFormatting] pozvedne vysoko!"
  struggle_for_the_highveld.7.t: "Nejnižší na Highveldu"
  struggle_for_the_highveld.7.d: "Navzdory našemu nejlepšímu úsilí je [SCOPE.sCountry('highveld_winner').GetName] nyní nepochybně nejvyšší mocí v Jižní Africe."
- struggle_for_the_highveld.7.f: "Nová vlajka vlála napříč Jižní Afrikou — vlajka [SCOPE.sCountry('highveld_winner').GetNameNoFormatting]. [SCOPE.sCountry('highveld_loser').GetNameNoFormatting] může ještě přetrvávat, ale budoucnost patřila [SCOPE.sCountry('highveld_winner').GetAdjectiveNoFormatting]."
+ struggle_for_the_highveld.7.f: "Nová vlajka se vlnila po celé Jižní Africe—vlajka [SCOPE.sCountry('highveld_winner').GetNameNoFormatting]. [SCOPE.sCountry('highveld_loser').GetNameNoFormatting] možná ještě přetrvá, ale budoucnost byla na straně [SCOPE.sCountry('highveld_winner').GetAdjectiveNoFormatting]." # todo: CHANGED
  struggle_for_the_highveld.7.a: "Pláčeme nad tebou, [SCOPE.sCountry('highveld_loser').GetNameNoFormatting]."

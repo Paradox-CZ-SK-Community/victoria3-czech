@@ -145,7 +145,7 @@
   brazil_navy.4.a: "Výborně!"
   dom_key: "Dom"
   dona_key: "Dona"
-  brz_navy_loyalists: "Všechny [Concept('concept_state', '$concept_states$')] s alespoň úrovní #Bold 5#! [GetBuildingType('building_naval_base').GetName] dostanou:"
+  brz_navy_loyalists: "Všechny [Concept('concept_state', '$concept_states$')] s úrovní alespoň #Bold 5#! [GetBuildingType('building_naval_administration').GetName] dostanou:" # todo: CHANGED
   je_caudillo: "Doba Caudillů"
   je_caudillo_reason: "Stav #bold Ukazatel průběhu#! bude určen různými #tooltippable;tooltip:[Country.GetTooltipTag],je_caudillo_special_tooltip_advance positive#! nebo #tooltippable;tooltip:[Country.GetTooltipTag],je_caudillo_special_tooltip_deplete negative#! podmínkami. #bold Ukazatel průběhu#! dosažení #bold 100#! upevní moc vojenských vůdců v [SCOPE.sCountry('caudillo_country_scope').GetName].\n\nVyčerpání ukazatele průběhu a udržení [GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant] mimo vládu zničí #bold Caudillismo#! v [GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant] a ukončí hrozbu vojenských mocipánů v zemi.\n\n$je_coup_loc$\n\nPo našem osamostatnění od Španělska zůstalo místo rozpuštěných koloniálních vlád mocenské vakuum, které rychle zaplnili charismatičtí vojenskí vůdci. Tito \"caudillos\" začali určovat velkou část politiky Jižní Ameriky."
   je_coup_loc: "Dokud je tento [concept_journal_entry] aktivní, naše země bude mít zvýšenou šanci na [concept_coup], a jakýkoli zákon [Concept('concept_votes','$concept_voting$')] přijatý získá #b $amendment_electoral_clientelism$#! [concept_amendment]."
@@ -225,7 +225,7 @@
   acre_dispute.1.a: "Acre je právoplatně [ROOT.GetCountry.GetAdjective]"
   acre_dispute.3.t: "Deset tisíc akrů lesa"
   acre_dispute.3.d: "[ROOT.GetCountry.GetName] vyšlo vítězně v sporu o [SCOPE.sState('acre_state').GetName]. [ROOT.GetCountry.GetAdjective] osadníci jsou připraveni tuto zemi vzít za svou."
-  acre_dispute.3.f: "Jedním tahem pera bylo po všem. Acre byla nyní mandatorním odpovědností [ROOT.GetCountry.GetNameNoFormatting]. Rivalové - nadějní náročníci i předchozí ošetřovatelé se rozkmitali vůči nahým radostem delegátů [ROOT.GetCountry.GetAdjectiveNoFormatting]."
+  acre_dispute.3.f: "Stačil jediný tah perem a bylo hotovo. Acre nyní spadala do mandátu [ROOT.GetCountry.GetNameNoFormatting]. Rivalové—jak nadějní nárokovatelé, tak předchozí správci—vřeli vzteky nad nezakrytou radostí delegátů [ROOT.GetCountry.GetAdjectiveNoFormatting]." # todo: CHANGED
   acre_dispute.3.a: "Vítězství pro [ROOT.GetCountry.GetName]!"
   acre_dispute.4.t: "Nepříznivé usnesení"
   acre_dispute.4.d: "Naše snahy o získání státu [SCOPE.sState('acre_state').GetName] selhaly, a příležitost se vytratila. [ROOT.GetCountry.GetName] již nemůže nárokovat svrchovanost nad státem."

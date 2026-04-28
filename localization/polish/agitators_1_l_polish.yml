@@ -22,7 +22,7 @@
  accused_of_subversion: "Obviněn z podvracení"
  agitated_food_riots: "Rozzuřené potravinové nepokoje"
  all_worked_up: "Všechno rozrušené"
- alone_with_principles: "Introvert s principy"
+ alone_with_principles: "Sám s principy" # todo: CHANGED
  apprentice_becomes_the_master: "Učeň se stává mistrem"
  bargain_with_the_government: "Vyjednávání s vládou"
  bargain_with_the_opposition: "Vyjednávání s opozicí"
@@ -52,7 +52,7 @@
  conquered_indochina_target_blank_tt: "Dobyli jsme všechna území, která dříve patřila iniciační zemi"
  conquered_indochina_target_tt: "Dobyli jsme všechna území, která v současnosti patří [SCOPE.sCountry('indochina_conquest_target').GetName]"
  crisis_averted: "Krize odvrácena"
- cryptomonarchists_in_our_ranks: "Crypto-monarchisté v našich řadách"
+ cryptomonarchists_in_our_ranks: "Krypto-monarchisté v našich řadách" # todo: CHANGED
  dejected_tryhard: "Zklamaný tryhard"
  deliberate_deliberations: "Zamýšlená jednání"
  directionless_frustration: "Frustrace bez směru"
@@ -102,7 +102,7 @@
  exiles_more_events.4.b: "Nemáme důvod vyzývat narušitele."
  exiles_more_events.4.d: "S [ROOT.GetCountry.GetNameNoFormatting] sjednoceným pod naší vládou, důstojníci a disidenti z našich rozdělených předchůdců byli přitahováni do našich zemí. [SCOPE.sCharacter('post_unification_agitator').GetFullName] nyní usiluje o to, aby se stal [ROOT.GetCountry.GetNameNoFormatting] domovem [SCOPE.sCharacter('post_unification_agitator').GetHerHis]."
  exiles_more_events.4.f: ""Moji krajani! Díky milosti a štěstí byla naše země sjednocena pod správou [ROOT.GetCountry.GetNameNoFormatting]! Necháme tuto jednota ducha dovést k smrti myšlenky? Ne, říkám! Ne! Pokud se skutečně chceme sjednotit, musíme přijmout, že v této velké mase lidí bude oceán zvláštních myšlenek! Vím, že to je pravda, protože jsem jednou z těch zvláštních myšlenek. Tak, prosím, moji podobní duchové, dovolíte mi vstoupit?""
- exiles_more_events.4.t: "Spojení lidu a osoby"
+ exiles_more_events.4.t: "Sjednocení lidu a jedince" # todo: CHANGED
  exiles_more_events.5.a: "Rozloučíme se s [SCOPE.sCharacter('experienced_exile').GetFullName]."
  exiles_more_events.5.b: "Možná to může fungovat, pokud se [SCOPE.sCharacter('experienced_exile').GetSheHe] pokusí ještě jednou."
  exiles_more_events.5.d: "[SCOPE.sCharacter('experienced_exile').GetFullName], zkušený aktivista, který už strávil čas mimo zemi, údajně zvažuje nad návratem do exilu v obraně před rostoucími výzvami v [ROOT.GetCountry.GetNameNoFormatting]."
@@ -138,8 +138,8 @@
  failed_relaunch: "Neúspěšné znovuotevření"
  farming_incentives: "Zemědělské pobídky"
  fence_sitter_encourages_reconciliation: "Váhavý podporuje smíření"
- fence_sitter_sides_with_revolutionaries: "Hlava dřevěné lavice se postavila na stranu revolucionářů"
- filled_with_determination: "Naplněn odhodláním"
+ fence_sitter_sides_with_revolutionaries: "Neutrální přiklání se k revolucionářům" # todo: CHANGED
+ filled_with_determination: "Plný odhodlání" # todo: CHANGED
  foiled_again: "Zmařeno znovu!"
  french_pretenders.6.a: "Ať žije republika!"
  french_pretenders.6.d: "Krize v celé [ROOT.GetCountry.GetName] se ukázala jako příliš velká pro [SCOPE.sCharacter('old_ruler_scope').GetFullName] na zvládnutí. [SCOPE.sCharacter('monarch_scope').GetSheHe|U] byl nucen abdikovat a utéct ze země a byla vyhlášena prozatímní republikánská vláda."
@@ -258,7 +258,7 @@
  maintained_by_the_metropole: "Udržováno metropolí"
  marginalized_by_war: "Marginalizováni válkou"
  membership_arrested: "Členství zatčeno"
- messed_with_the_wrong_ig: "Nahráno s špatnými lidmi"
+ messed_with_the_wrong_ig: "Pustili jsme se do špatných lidí" # todo: CHANGED
  moving_government_functions: "Přesouvání vládních funkcí"
  muzzled_activists: "Cenzurovaní aktivisté"
  national_hero_rejected: "Národní hrdina odmítl"
@@ -311,7 +311,7 @@
  orleanist_progress_increase_5_tt: "#bold Zvyšuje#! #bold Pokrok#! #bold Orleanistů#! o #variable 5#!"
  orleanist_progress_increase_tick_05_tt: "Pokrok #bold Orléanistů#! se #bold zvýší#! o #variable 0.5#! každý měsíc"
  orleanist_progress_increase_tick_1_tt: "Pokrok #bold Orléanistů#! se #bold zvýší#! o #variable 1#! každý měsíc"
- our_general_is_disrespected: "Náš generál je nedoceněn"
+ our_general_is_disrespected: "Náš generál je nerespektován" # todo: CHANGED
  out_of_the_spotlight: "Mimo pozornost"
  pawns_of_a_greater_mind: "Figurky větší mysli"
  poorly_worded_pamphlets: "Špatně formulované letáky"
@@ -463,7 +463,8 @@
  violent_confrontations: "Násilné konfrontace"
  void_of_law: "Prázdnota zákona"
  we_are_listened_to: "Jsme posloucháni"
- withdrawn_from_the_public: "Stažený z veřejnosti"
+ withdrawn_from_the_public: "Stažen z veřejného života" # todo: CHANGED
  you_will_regret_this: "#color:Red;bold Persekce by mohly vyprovokovat reakce katolických mocností v zahraničí.#!"
  NON_CARLIST_MONARCH: "Ne[GetIdeology('ideology_carlist').GetName|l] monarcha"
  NON_MIGUELIST_MONARCH: "Ne[GetIdeology('ideology_miguelist').GetName|l] monarcha"
+ POOR_RELATIONS_WITH_PAPACY: "Špatné [concept_relations] s #b Papežskými státy#!" # todo: NEW TRANSLATION

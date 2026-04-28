@@ -31,12 +31,12 @@
  CHARACTER_WOMAN: "žena"
  COMMANDER_TRAIT: "Vlastnost velitele - $TRAIT_NAME$"
  COMMAND_CONFIRMATION_DEPLOY_MILITARY_FORMATION_TO_FRONT: "Nasadit $FORMATION_NAME$ na $FRONT_NAME$"
- COMMAND_CONFIRMATION_DEPLOY_MILITARY_FORMATION_TO_SEA_NODE: "Nasadit $FORMATION_NAME$ na $SEA_NODE_NAME$"
+ COMMAND_CONFIRMATION_DEPLOY_MILITARY_FORMATION_TO_SEA_NODE: "#header Nasadit do [Province.GetStateRegion.GetName]#!\n$TOOLTIP_DELIMITER$\n#title Doba cesty:#!\n[MilitaryFormation.GetPredictedTravelDaysToSeaNode(Province.Self)|v] dní[ConcatIfNeitherEmpty('\n\n', AddLocalizationIf(Not(EqualTo_int32(MilitaryFormation.GetPredictedSupplyShipsDelta(Province.Self), '(int32)0')), 'COMMAND_CONFIRMATION_DEPLOY_SEA_NODE_SUPPLY_SHIP_PREDICTION'))]" # todo: CHANGED
  COMMAND_CONFIRMATION_DEPLOY_MULTIPLE_MILITARY_FORMATIONS_TO_FRONT: "Nasadit vybrané [Concept('concept_military_formation', '$concept_military_formations$')] na [concept_front]"
  COMMAND_CONFIRMATION_DEPLOY_MULTIPLE_MILITARY_FORMATIONS_TO_SEA_NODE: "Nasadit vybrané [Concept('concept_military_formation', '$concept_military_formations$')] do [concept_sea_node]"
  COMMAND_CONFIRMATION_REHOME_MILITARY_FORMATION: "Domov [MILITARY_FORMATION.GetName] v [HQ.GetName]"
- COMMAND_CONFIRMATION_STATION_MILITARY_FORMATION: "Umístěte $FORMATION_NAME$ v $HQ_NAME$"
- COMMAND_CONFIRMATION_STATION_MULTIPLE_MILITARY_FORMATIONS: "Umístěte vybrané [Concept('concept_military_formation', '$concept_military_formations$')] v [concept_hq]"
+ COMMAND_CONFIRMATION_STATION_MILITARY_FORMATION: "Umístit [MilitaryFormation.GetName] v [State.GetName]" # todo: CHANGED
+ COMMAND_CONFIRMATION_STATION_MULTIPLE_MILITARY_FORMATIONS: "Umístit vybrané [Concept('concept_military_formation', '$concept_military_formations$')] v [concept_state]" # todo: CHANGED
  COMPARATOR_ACCEPTANCE_STATUS_ABOVE: "lepší než"
  COMPARATOR_ACCEPTANCE_STATUS_ABOVE_OR_WITHIN: "lepší než nebo v rámci"
  COMPARATOR_ACCEPTANCE_STATUS_BELOW: "horší než"
@@ -57,7 +57,7 @@
  DEPLOY_MILITARY_FORMATION_TO_SEA_NODE_BATTLING: "$FORMATION_NAME$ #b nemůže#! být nasazen na $SEA_NODE_NAME$, protože se účastní aktivního [concept_battle]"
  DEPLOY_MILITARY_FORMATION_TO_SEA_NODE_INVADING: "$FORMATION_NAME$ #b nelze#! nasadit do $SEA_NODE_NAME$, protože se účastní probíhající [concept_invasion]"
  DEPLOY_MILITARY_FORMATION_TO_SEA_NODE_NOT_A_SEA_NODE: "Nelze nasadit $FORMATION_NAME$ do $STATE_REGION$: $STATE_REGION$ není [concept_sea_node]"
- DEPLOY_MILITARY_FORMATION_TO_SEA_NODE_NO_ADMIRALS: "$FORMATION_NAME$ #b nemůže#! být nasazen na $SEA_NODE_NAME$, protože nemá žádné velící [Concept('concept_admiral','$concept_admirals$')]"
+ DEPLOY_MILITARY_FORMATION_TO_SEA_NODE_NO_ADMIRALS: "$FORMATION_NAME$ #b nelze nasadit#! do $SEA_NODE_NAME$ protože nemá velitelského [concept_admiral]" # todo: CHANGED
  DEPLOY_MILITARY_FORMATION_TO_SEA_NODE_REDUNDANT: "$FORMATION_NAME$ již je nasazen na $SEA_NODE_NAME$"
  DEPLOY_MILITARY_FORMATION_TO_SEA_NODE_UNREACHABLE: "$FORMATION_NAME$ #b nemůže#! dosáhnout $SEA_NODE_NAME$"
  DIPLOMACY_COUNTRY: "Země"
@@ -103,14 +103,14 @@
  HOVER_STATE_DEBUG_TOOLTIP_PLAYER_INFO: "IsPlayer = #variable [SelectLocalization(STATE.GetOwner.IsPlayer, 'ANO', 'NE')]#!\nIsLocalPlayer = #variable [SelectLocalization(STATE.GetOwner.IsLocalPlayer, 'ANO', 'NE')]#!\nIsAI = #variable [SelectLocalization(STATE.GetOwner.IsAI, 'ANO', 'NE')]#!"
  HOVER_STATE_DIPLOMATIC_LENS: "[SelectLocalization(STATE.GetOwner.IsPlayer, '', 'AI_STRATEGIES_SUMMARY')]\n\n#title Kultura, která považuje [STATE.GetName] za svou domovinu:#!\n[STATE.GetHomelandsDesc] [ConcatIfNeitherEmpty('\n\n#title Země s nároky na tento stát:#!\n', STATE.GetClaimsDesc)]"
  HOVER_STATE_LOYALISTS: "[STATE.GetNumLoyalists] [Concept('concept_loyalist', '$concept_loyalists$')] v [STATE.GetName]"
- HOVER_STATE_MILITARY_LENS: "[STATE.GetBuilding('building_barrack').GetCombatUnitProduction] z [STATE.GetBuilding('building_barrack').GetName]\n[STATE.GetBuilding('building_naval_base').GetCombatUnitProduction] z [STATE.GetBuilding('building_naval_base').GetName]"
+ HOVER_STATE_MILITARY_LENS: "[STATE.GetBuilding('building_barrack').GetCombatUnitProduction] z [STATE.GetBuilding('building_barrack').GetName]\n[STATE.GetBuilding('building_naval_administration').GetCombatUnitProduction] z [STATE.GetBuilding('building_naval_administration').GetName]" # todo: CHANGED
  HOVER_STATE_NAME: "[STATE.GetCountry.GetFlagTextIcon] #variable [STATE.GetName]#! ([SelectLocalization(And(Not(State.IsCapitalState), State.IsIncorporated), 'incorporated_state', '')][SelectLocalization(State.IsCapitalState, 'CAPITAL_STATE', '')][SelectLocalization(Not(State.IsIncorporated), 'unincorporated_state', '')]) v #v [State.GetCountry.GetNameNoFlag]#![AddLocalizationIf(Not(State.GetCountry.IsLocalPlayer), ConcatIfNeitherEmpty('\n', State.GetCountry.GetPlayedByDesc))][ConcatIfNeitherEmpty( '\n', State.GetCountry.GetLabel(GetPlayer.Self) )]"
  HOVER_STATE_POLITICAL_LENS: "Průměrný životní standard: #bold [STATE.GetFormattedStandardOfLivingAll|v]#!\nPopulace: #BOLD [STATE.GetPopulationSize|Kv] [GetArrowIcon_int64( STATE.GetPopTotalChange )]#!\nVládní výdaje: #variable @money![STATE.GetGovernmentExpenses|+d]#!\nDaňové příjmy: #variable @money![STATE.GetTaxationRevenue|=+D]#!\n[concept_bureaucracy] náklady: @bur![STATE.GetBureaucracyCost|dv]"
  HOVER_STATE_PRODUCTION_LENS: "$GDP_SHORT$: #variable @money![STATE.GetGDPContribution|K]#! (#variable [STATE.GetGDPContributionPercentage|%1]#! z HDP v [STATE.GetOwner.GetName] minulý týden)\n$JOBSEEKERS$#variable [State.GetNumJobseekers|D]#!\n[concept_unemployed]: [State.GetNumUnemployedWorkingAdults|Kv]\n[GetPopType('peasants').GetName]: [State.GetNumSubsistenceWorkingAdults|Kv]\n[concept_arable_land]: [State.GetSubsistenceBuilding.GetExpansionLevelBreakdownDesc]"
  HOVER_STATE_RADICALS: "[STATE.GetNumRadicals] [Concept('concept_radical', '$concept_radicals$')] v [STATE.GetName]"
  HOVER_STATE_REGION_ADJACENCY_LAND_DEBUG_INFO: "Sousední pozemní státní regiony: "
  HOVER_STATE_REGION_ADJACENCY_SEA_DEBUG_INFO: "Sousední mořské státní regiony: "
- HOVER_STATE_REGION_ENTRY: "[StateRegion.GetName|v] ([StateRegion.GetID|v])"
+ HOVER_STATE_REGION_ENTRY: "[StateRegion.GetName|v] [AddLocalizationIf(InDebugMode, 'HOVER_STATE_REGION_ENTRY_REGION_ID' )]" # todo: CHANGED
  HOVER_STATE_REGION_NAVAL_EXIT_DEBUG_INFO: "Námořní výstup: $REGION$"
  HOVER_STATE_TOOLTIP_COLONIZABLE: "#BOLD #V [GetPlayer.GetAltAdjectiveNoFormatting('ee')]#!#! [concept_tension|l] s #variable [STATE.GetCountry.GetAltAdjective('I')]#!: [STATE.GetOwner.GetTensionWithDesc( GetPlayer.Self )|+] (#BOLD [STATE.GetCountry.GetTensionWith( GetPlayer.Self )|-]#!)\n"
  HOVER_STATE_TOOLTIP_NON_COLONIZABLE: "#tooltippable #tooltip:[STATE.GetCountry.GetTooltipTag],COUNTRY_ATTITUDE_TOOLTIP [STATE.GetCountry.GetAttitudeTowards(GetPlayer.Self).GetName]#!#! (#tooltippable #tooltip:[STATE.GetCountry.GetTooltipTag],COUNTRY_ATTITUDE_SCORE_TOOLTIP [STATE.GetCountry.GetAttitudeTowards(GetPlayer.Self).CalcScore|+=0]#!#!) [concept_attitude] vůči [AddLocalizationIf(ObjectsEqual(GetPlayer.GetYouOrCountryName, 'vy'), 'vám')][AddLocalizationIf(Not(ObjectsEqual(GetPlayer.GetYouOrCountryName, 'vy')), GetPlayer.GetYouOrCountryName)]"
@@ -131,10 +131,9 @@
  LAUNCHER_SAVE_DESCRIPTION_OBSERVER: "$concept_observing$ $COUNTRY$"
  LEDGER_HUB_NAME: "Městský uzel"
  MARKET_NAME: "$NAME$ Trh"
- MERGE_MILITARY_FORMATIONS_DESC: "[ConcatIfNeitherEmpty('$ERRORS$', '\n\n')][Concept('concept_unit','$concept_units$')] a [Concept('concept_commander','$concept_commanders$')] budou převedeni do [MilitaryFormation.GetName]"
+ MERGE_MILITARY_FORMATIONS_DESC: "[ConcatIfNeitherEmpty('$ERRORS$', '\n\n')][Concept('concept_military_formation','$concept_military_formations$')] a [Concept('concept_commander','$concept_commanders$')] budou převedeny do [MilitaryFormation.GetName]" # todo: CHANGED
  MERGE_MILITARY_FORMATIONS_FORMATION_ERRORS: "@red_cross! [MilitaryFormation.GetName] nelze sloučit[AddTextIf(Not(StringIsEmpty('$ERRORS$')), '\n #indent_newline:3 $ERRORS$#!')]"
  MERGE_MILITARY_FORMATIONS_SOURCE_IS_DEMOBILIZING: "Nelze převést [Concept('concept_battalion', '$concept_battalions$')] během ochlazení demobilizace na mobilizovanou [concept_army]"
- MERGE_MILITARY_FORMATIONS_TARGET_WILL_EXCEED_COMMANDER_LIMIT: "Nelze převést další [Concept('concept_commander', '$concept_commanders$')]: cíl [concept_military_formation] překročí limit [concept_commander]"
  MERGE_MILITARY_FORMATIONS_UNREACHABLE: "$FORMATION_NAME$ #b nemůže#! dosáhnout $TARGET_FORMATION_NAME$"
  MILITARY_THEATER_DEBUG_ENTRY_TOOLTIP: "#variable - ([THEATER.GetID]) [THEATER.GetName]#! (#variable [THEATER.GetOwner.GetName]#!)"
  MILITARY_THEATER_DEBUG_TOOLTIP: "#variable ([THEATER.GetID]) [THEATER.GetName]#! (#variable [THEATER.GetOwner.GetName]#!) - sousední divadla:"
@@ -149,7 +148,6 @@
  NONE: "Žádný"
  OBSERVER: "[Concept('concept_observer_mode','$concept_observer$')]"
  OK: "OK"
- PROVTIP_NAVAL_BASE: "Nejbližší námořní základna: "
  RANDOM_EFFECT: "#variable $CHANCE|%0$#! šance na:"
  RANDOM_LIST_EFFECT: "Jedna z #variable $SIZE$#! možností se stane:"
  REGION_NAME: "$NAME$ Region"
@@ -163,7 +161,7 @@
  RENAME_STRING_STARTS_WITH_SPACE: "@warning! Název začíná mezerou"
  RENAME_STRING_TOO_LONG: "@warning! Název je příliš dlouhý"
  REPOSITION_MILITARY_FORMATION_BATTILING: "[MilitaryFormation.GetName] se účastní aktivní [concept_battle]"
- REPOSITION_MILITARY_FORMATION_BUSY_COMMANDERS: "Všichni velitelé ve [MilitaryFormation.GetName] jsou [concept_busy]"
+ REPOSITION_MILITARY_FORMATION_BUSY_COMMANDERS: "Velitel [MilitaryFormation.GetName] je [concept_busy]" # todo: CHANGED
  REPOSITION_MILITARY_FORMATION_EXILED: "[MilitaryFormation.GetName] se vrátila na přátelské území z [Concept('concept_exiled_army','$concept_exiled_army_exile$')]"
  REPOSITION_MILITARY_FORMATION_INVADING: "[MilitaryFormation.GetName] se účastní probíhající [concept_invasion]"
  RULER_TRAIT: "Vlastnost vládce - $TRAIT_NAME$"
@@ -174,7 +172,6 @@
  SET_CHARACTER_ORDER_UNABLE_TO_ORDER_X_CHARACTERS: "Nelze změnit [concept_order] pro $NUM_UNABLE|v$ [Concept('concept_commander', '$concept_commanders$')]"
  SET_GAME_SPEED: "Rychlost hry musí být mezi $MIN_SPEED$ a $MAX_SPEED$ (předáno $SET_SPEED$)"
  SORT_COST: "Cena"
- SPLIT_MILITARY_FORMATION_FLEET_NO_REMAINING_ADMIRALS: "Nemůžete #b převést#! všechny [Concept('concept_admiral','$concept_admirals$')] z $FORMATION_NAME$ bez také převodu všech jeho [Concept('concept_flotilla','$concept_flotillas$')]"
  SPLIT_MILITARY_FORMATION_INVADING: "Nelze rozdělit [concept_military_formation], protože se účastní probíhající [concept_invasion]"
  SPLIT_STATE_FORMAT: "$CZ_SPLIT_STATE_OWNER$$REGION$"
  SPLIT_STATE_REGION: "[concept_state_region]: [State.GetStateRegion.GetName]\n"
@@ -211,7 +208,7 @@
  market_capital_state: "[concept_market_capital]"
  moved_capital_recently: "Nedávno přesunutý [concept_capital_state]"
  moved_market_capital_recently: "Nedávno přesunutý [concept_market_capital]"
- prestige_ranking: "[concept_prestige] hodnocení"
+ prestige_ranking: "[concept_prestige] žebříček" # todo: CHANGED
  ruler_left_interest_group: "Vládce opustil zájmovou skupinu"
  state_region_devastation: "Zničení státního regionu"
  state_region_infrastructure: "[concept_infrastructure]"
@@ -221,8 +218,25 @@
  state_turmoil_extreme: "Neklid (Extrémní)"
  state_turmoil_high: "Neklid (Vysoký)"
  terrain: "Terén"
- top_prestige_ranking: "[concept_prestige] hodnocení v #v Top-[GetDefine('NDiplomacy','TOP_PRESTIGE_RANK_BONUS_THRESHOLD')]#!"
+ top_prestige_ranking: "[concept_prestige] žebříček v #v Top-[GetDefine('NDiplomacy','TOP_PRESTIGE_RANK_BONUS_THRESHOLD')]#!" # todo: CHANGED
  unemployment_birth_penalty_state: "Nezaměstnanost"
  state_obstinance: "Tvrdohlavost"
  NO_EFFECTS: "Žádné účinky"
  country_gdp_construction: "$country_gdp$"
+ HOVER_STATE_REGION_ENTRY_REGION_ID: "([StateRegion.GetID|v])" # todo: NEW TRANSLATION
+ INTEREST_GROUP_WILL_LEAVE_PARTY: "Opustí [PARTY.GetNameNoFormatting] při příštích [concept_election]" # todo: NEW TRANSLATION
+ INTEREST_GROUP_WILL_LEAVE_PARTY_TOOLTIP: "[InterestGroup.GetName] se rozhodla, že opustí [PARTY.GetName] na začátku příští kampaně [concept_election] ([GetPlayer.GetNextStartOfCampaignDate|v])" # todo: NEW TRANSLATION
+ prominence_ig_modifier: "[concept_prominence]" # todo: NEW TRANSLATION
+ MERGE_MILITARY_FORMATIONS_TARGET_NAVAL_INVADING: "Nelze sloučit [concept_military_formation], protože cíl je zapojen do probíhající [concept_naval_invasion]" # todo: NEW TRANSLATION
+ STATION_MILITARY_FORMATION_IN_STATE_REDUNDANT: "[MilitaryFormation.GetName] je již dislokována v #b [State.GetName]#!" # todo: NEW TRANSLATION
+ STATION_MILITARY_FORMATION_IN_STATE_INVADING: "[MilitaryFormation.GetName] #b cannot#! být umístěna v #b [State.GetName]#!, protože je zapojena do probíhající [concept_invasion]" # todo: NEW TRANSLATION
+ STATION_MILITARY_FORMATION_IN_STATE_BATTLING: "[MilitaryFormation.GetName] #b cannot#! být umístěna v #b [State.GetName]#!, protože je zapojena do probíhající [concept_battle]" # todo: NEW TRANSLATION
+ STATION_MILITARY_FORMATION_COUNTRY_DOES_NOT_OWN_STATE: "Nelze umístit [MilitaryFormation.GetName] do #b [State.GetName]#!: $FORMATION_COUNTRY_NAME$ nevlastní #b [State.GetName]#!, kterou vlastní $STATE_OWNER_COUNTRY_NAME$" # todo: NEW TRANSLATION
+ STATION_MILITARY_FORMATION_IN_STATE_UNREACHABLE: "[MilitaryFormation.GetName] #b cannot#! dosáhnout [State.GetName]" # todo: NEW TRANSLATION
+ STATION_MILITARY_FORMATION_TRANSPORT_AVAILABLE: "Zajistit námořní přepravu pro [MilitaryFormation.GetName] do [State.GetName]" # todo: NEW TRANSLATION
+ STATION_MILITARY_FORMATION_CTRL_TRANSPORT_HINT: "#i Ctrl + kliknutí#! pro zajištění námořní přepravy místo toho" # todo: NEW TRANSLATION
+ TRANSPORT_ARMY_TO_FRONT_NO_FLEET_PATH: "Nelze najít cestu pro [MilitaryFormation.GetName] k vylodění na tomto místě" # todo: NEW TRANSLATION
+ COMMAND_CONFIRMATION_DEPLOY_SEA_NODE_SUPPLY_SHIP_PREDICTION: "@supply! [MilitaryFormation.GetPredictedSupplyShipsDelta(Province.Self)|D=-] potřebných [Concept('concept_supply_ship', '$concept_supply_ships$')]" # todo: NEW TRANSLATION
+ REHOME_MILITARY_FORMATION_TRANSPORT_AVAILABLE: "Zajistit námořní přepravu pro [MILITARY_FORMATION.GetName] do [HQ.GetName]" # todo: NEW TRANSLATION
+ REHOME_MILITARY_FORMATION_CTRL_TRANSPORT_HINT: "#i Ctrl + kliknutí#! pro zajištění námořní přepravy místo toho" # todo: NEW TRANSLATION
+ TINTED_TEXT_ICON: "#color:{$R$,$G$,$B$,$A$} @$ICON_KEY$:inherit_color!#!" # todo: NEW TRANSLATION
