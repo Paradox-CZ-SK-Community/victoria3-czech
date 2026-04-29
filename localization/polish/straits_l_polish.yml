@@ -1,82 +1,82 @@
 ﻿l_polish:
-  DATA_STRAIT_NAME_FORMAT: "#tooltippable_name #tooltip:$TAG$,EMPTY_STRING,StraitTooltip $NAME$#!#!"
-  strait_gibraltar: "Gibraltarský průliv"
-  strait_bosporus: "Bospor"
-  strait_oresund: "Öresund"
-  strait_malacca: "Malacký průliv"
-  strait_hormuz: "Hormuzský průliv"
-  strait_bab_el_mandeb: "Bab al-Mandeb"
-  strait_tsugaru: "Cugarský průliv"
-  strait_sunda: "Sundský průliv"
-  strait_lombok: "Lombocký průliv"
-  strait_ombai: "Ombaiský průliv"
-  TOOLTIP_TYPE_STRAIT: "[concept_strait]"
-  ALLOWED_COUNTRIES_SHORT_CONCEPT: "[Concept('concept_strait_allowed_countries','$concept_strait_allowed_countries_short$')]"
-  building_fortification: "Námořní opevnění"
-  pmg_base_building_fortification: "Výcvik posádky" # todo: CHANGED
-  pm_fortification: "Pravidelný výcvik posádky" # todo: CHANGED
-  TOLL_BUDGET_ENTRY: "@money!#variable $VALUE|D$#!: [STATE.GetName] dováží #variable $QTY$#! (@money!#variable $GOODS_PRICE|D$#!, celkem @money!#variable $GOODS_VALUE|D$#!) [GOODS.GetName] přes [COUNTRY.GetFlagTextIcon][STRAIT.GetName] s #variable $TOLL_RATE|%0$#! sazbou mýtného" # todo: CHANGED
-  TAX_INCOME_TOLLS: "$TAB$#tooltippable #tooltip:[GetPlayer.GetTooltipTag],TOLLS_BREAKDOWN,TariffsTooltip @money![GetPlayer.PredictTolls|D+=]#!#! [concept_tolls]"
-  TOLLS_BREAKDOWN: "#tooltip_header [concept_tolls]#!\nCelkem: #v @money![GetPlayer.PredictTolls|K+=]#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.PredictTollsDesc]"
-  STRAIT_ACCESS_PLAYER: "#b [Strait.GetAccessStatusFor(GetPlayer.Self)]#! [concept_strait_access] pro [GetPlayer.GetName] $YOU$" # todo: CHANGED
-  STRAIT_TOLLS_PLAYER: "@money!#v [Strait.GetTollsFor(GetPlayer.Self)|D+]#! příjem z $concept_tolls$ za týden" # todo: CHANGED
-  TOLL_RATE_REDUNDANT: "Aktuální sazba mýtného"
-  TOLL_RATE_HEADER_no_tolls: "Žádné"
-  TOLL_RATE_HEADER_low_tolls: "Nízké"
-  TOLL_RATE_HEADER_medium_tolls: "Střední"
-  TOLL_RATE_HEADER_high_tolls: "Vysoké"
-  STRAIT_NO_TOLLS_TOOLTIP: "#header Žádné [concept_tolls]#![ConcatIfNeitherEmpty(' ', AddLocalizationIf(Strait.StateHasNoTolls(State.Self), 'TAX_OR_EXPENSE_LEVEL_CURRENT'))][ConcatIfNeitherEmpty('\n', GetDesc( Strait.SetControllerTollRateNoTolls( Country.Self )))]\n[SelectLocalization(Strait.StateHasNoTolls(State.Self), 'STRAIT_CURRENT_REVENUE', 'STRAIT_PREDICTED_REVENUE_NO_TOLLS')]" # todo: CHANGED
-  STRAIT_LOW_TOLLS_TOOLTIP: "#header Nízké [concept_tolls]#![ConcatIfNeitherEmpty(' ', AddLocalizationIf(Strait.StateHasLowTolls(State.Self), 'TAX_OR_EXPENSE_LEVEL_CURRENT'))][ConcatIfNeitherEmpty('\n', GetDesc( Strait.SetControllerTollRateLowTolls( Country.Self )))]\n[SelectLocalization(Strait.StateHasLowTolls(State.Self), 'STRAIT_CURRENT_REVENUE', 'STRAIT_PREDICTED_REVENUE_LOW')]" # todo: CHANGED
-  STRAIT_MEDIUM_TOLLS_TOOLTIP: "#header Střední [concept_tolls]#![ConcatIfNeitherEmpty(' ', AddLocalizationIf(Strait.StateHasMediumTolls(State.Self), 'TAX_OR_EXPENSE_LEVEL_CURRENT'))][ConcatIfNeitherEmpty('\n', GetDesc( Strait.SetControllerTollRateMediumTolls( Country.Self )))]\n[SelectLocalization(Strait.StateHasMediumTolls(State.Self), 'STRAIT_CURRENT_REVENUE', 'STRAIT_PREDICTED_REVENUE_MEDIUM')]" # todo: NEW TRANSLATION
-  STRAIT_HIGH_TOLLS_TOOLTIP: "#header Vysoké [concept_tolls]#![ConcatIfNeitherEmpty(' ', AddLocalizationIf(Strait.StateHasHighTolls(State.Self), 'TAX_OR_EXPENSE_LEVEL_CURRENT'))][ConcatIfNeitherEmpty('\n', GetDesc( Strait.SetControllerTollRateHighTolls( Country.Self )))]\n[SelectLocalization(Strait.StateHasHighTolls(State.Self), 'STRAIT_CURRENT_REVENUE', 'STRAIT_PREDICTED_REVENUE_HIGH')]" # todo: NEW TRANSLATION
-  STRAIT_PREDICTED_REVENUE_NO_TOLLS: "@money!#v [Strait.GetStateTollProfitChangeNoTolls(State.Self)|D+]#! změna výnosu z aktuálního $concept_tolls$" # todo: CHANGED
-  STRAIT_PREDICTED_REVENUE_LOW: "@money!#v [Strait.GetStatePredictedTollProfitLow(State.Self)|D+]#! předpokládaný výnos z [Concept('concept_ship', '$concept_ships$')] procházejících [Strait.GetName]\n@money!#v [Strait.GetStateTollProfitChangeLow(State.Self)|D+]#! změna výnosu z aktuálního $concept_tolls$" # todo: CHANGED
-  STRAIT_PREDICTED_REVENUE_MEDIUM: "@money!#v [Strait.GetStatePredictedTollProfitMedium(State.Self)|D+]#! předpokládaný výnos z [Concept('concept_ship', '$concept_ships$')] procházejících [Strait.GetName]\n@money!#v [Strait.GetStateTollProfitChangeMedium(State.Self)|D+]#! změna výnosu z aktuálního $concept_tolls$" # todo: CHANGED
-  STRAIT_PREDICTED_REVENUE_HIGH: "@money!#v [Strait.GetStatePredictedTollProfitHigh(State.Self)|D+]#! předpokládaný výnos z [Concept('concept_ship', '$concept_ships$')] procházejících [Strait.GetName]\n@money!#v [Strait.GetStateTollProfitChangeHigh(State.Self)|D+]#! změna výnosu z aktuálního $concept_tolls$" # todo: CHANGED
-  STRAIT_CURRENT_REVENUE: "@money!#v [Strait.GetStateTollRevenue(State.Self)|D+]#! aktuální výnos" # todo: CHANGED
-  STRAIT_TOLL_TOOLTIP: "#header [Strait.GetName] [concept_tolls]#!\n[SelectLocalization(And( State.GetBuilding('building_naval_fortification').IsValid, Country.IsValid ), 'STRAIT_TOLL_TOOLTIP_ACTIVE', 'STRAIT_TOLL_TOOLTIP_INACTIVE')]" # todo: NEW TRANSLATION
-  STRAIT_TOLL_TOOLTIP_ACTIVE: "[Strait.GetStateTollTextIcon(State.Self)] #b [Strait.GetStateTollStatus(State.Self)]#! ([SelectLocalization(Country.IsLocalPlayer, 'POSITIVE_TOLL', 'NEGATIVE_TOLL')]) $concept_tolls$ vybrané [Country.GetName]" # todo: CHANGED
-  STRAIT_TOLL_TOOLTIP_INACTIVE: "Žádné $concept_tolls$ nejsou vybírány [Country.GetName] kvůli #b nemá#! [GetBuildingType('building_naval_fortification').GetName]" # todo: CHANGED
-  POSITIVE_TOLL: "@money!#v [Strait.GetStateTollProfit(State.Self)|D=+]#!" # todo: NEW TRANSLATION
-  NEGATIVE_TOLL: "@money!#v [Strait.GetStateTollProfit(State.Self)|D=-]#!" # todo: NEW TRANSLATION
-  STRAIT_ACCESS_STATUS_open: "Otevřený"
-  STRAIT_ACCESS_STATUS_no_military: "Zákaz vojenských" # todo: CHANGED
-  STRAIT_ACCESS_STATUS_closed: "Uzavřený"
-  STRAIT_ALLOWED_COUNTRIES_STATUS_all: "Všichni" # todo: NEW TRANSLATION
-  STRAIT_ALLOWED_COUNTRIES_STATUS_no_enemies: "Žádní nepřátelé" # todo: NEW TRANSLATION
-  STRAIT_ALLOWED_COUNTRIES_STATUS_only_allies: "Pouze spojenci" # todo: NEW TRANSLATION
-  STRAIT_ALLOWED_COUNTRIES_STATUS_only_controller: "Pouze ovládající" # todo: NEW TRANSLATION
-  STRAIT_ACCESS_TOOLTIP: "#header [Strait.GetName] [concept_strait_access]#!\n[SelectLocalization( And( State.GetBuilding('building_naval_fortification').IsValid, Country.IsValid ), 'STRAIT_ACCESS_TOOLTIP_ACTIVE', 'STRAIT_ACCESS_TOOLTIP_INACTIVE')]" # todo: NEW TRANSLATION
-  STRAIT_ACCESS_TOOLTIP_ACTIVE: "[Strait.GetStateStraitAccessTextIcon(State.Self)] #b [Strait.GetStateStraitAccessStatus(State.Self)]#! $concept_strait_access$ nastaveno [Country.GetName]\n$TOOLTIP_DELIMITER$\n#title Účinky:#! #indent_newline:3 \n[Strait.GetStateStraitAccessStatusDesc(State.Self)]#![ConcatIfNeitherEmpty('\n\n', AddLocalizationIf(Strait.StateStraitAccessIsOverruled(State.Self), 'STRAIT_ACCESS_OVERRIDDEN'))]" # todo: CHANGED
-  STRAIT_ACCESS_OVERRIDDEN: "@warning! Toto $concept_strait_access$ je přepsáno statusem #b [Strait.GetActiveStraitAccessStatus]#! nastaveným [Strait.GetOtherController(State.Self).GetName]" # todo: CHANGED
-  STRAIT_ACCESS_TOOLTIP_INACTIVE: "Žádná omezení $concept_strait_access$ nejsou uplatňována [Country.GetName] kvůli #b nemá#! [GetBuildingType('building_naval_fortification').GetName]" # todo: CHANGED
-  STRAIT_ACCESS_OPEN_TOOLTIP: "#header Otevřeno#!\n[ConcatIfNeitherEmpty(' ', AddLocalizationIf(Strait.StateHasAccessOpen(State.Self), 'CURRENT_ACCESS'))][ConcatIfNeitherEmpty('\n', GetDesc( Strait.SetStateAccessOpen( State.Self )))]\nVšechna [Concept('concept_ship', '$concept_ships$')] mohou proplout [Strait.GetName]" # todo: CHANGED
-  STRAIT_ACCESS_NO_MILITARY_TOOLTIP: "#header Zákaz vojenských#!\n[ConcatIfNeitherEmpty(' ', AddLocalizationIf(Strait.StateHasAccessNoMilitary(State.Self), 'CURRENT_ACCESS'))][ConcatIfNeitherEmpty('\n', GetDesc( Strait.SetStateAccessNoMilitary( State.Self )))]\nŽádná vojenská [Concept('concept_ship', '$concept_ships$')] nesmí proplout [Strait.GetName] kromě $concept_ships$ z [concept_strait_allowed_countries]" # todo: CHANGED
-  STRAIT_ACCESS_CLOSED_TOOLTIP: "#header Uzavřeno#!\n[ConcatIfNeitherEmpty(' ', AddLocalizationIf(Strait.StateHasAccessClosed(State.Self), 'CURRENT_ACCESS'))][ConcatIfNeitherEmpty('\n', GetDesc( Strait.SetStateAccessClosed( State.Self )))]\nŽádná [Concept('concept_ship', '$concept_ships$')] nesmí proplout [Strait.GetName] kromě [concept_strait_allowed_countries]" # todo: CHANGED
-  CURRENT_ACCESS: "#i #b (Aktuální $concept_strait_access_short$)#!#!" # todo: NEW TRANSLATION
-  STRAIT_ALLOWED_COUNTRIES_TOOLTIP: "#header [Strait.GetName] [concept_strait_allowed_countries]#!\n[SelectLocalization( And( State.GetBuilding('building_naval_fortification').IsValid, Country.IsValid ), 'STRAIT_ALLOWED_COUNTRIES_ACTIVE', 'STRAIT_ALLOWED_COUNTRIES_INACTIVE')]" # todo: NEW TRANSLATION
-  STRAIT_ALLOWED_COUNTRIES_ACTIVE: "[Strait.GetStateAllowedCountriesTextIcon(State.Self)] #b [Strait.GetStateAllowedCountriesStatus(State.Self)]#! povoleno [Country.GetName]\n$TOOLTIP_DELIMITER$\n#title Účinky:#! #indent_newline:3 \n[Strait.GetStateAllowedCountriesStatusDesc(State.Self)]#!" # todo: CHANGED
-  STRAIT_ALLOWED_COUNTRIES_INACTIVE: "Žádná omezení nejsou uplatňována [Country.GetName] kvůli #b nemá#! [GetBuildingType('building_naval_fortification').GetName]" # todo: CHANGED
-  STRAIT_NO_ENEMIES_TOOLTIP: "#header Žádní nepřátelé#!\n[ConcatIfNeitherEmpty(' ', AddLocalizationIf(Strait.StateHasAllowedCountriesNoEnemies(State.Self), 'TAX_OR_EXPENSE_LEVEL_CURRENT'))][ConcatIfNeitherEmpty('\n', GetDesc( Strait.SetStateAllowedCountriesNoEnemies( State.Self )))]\nSoučasné [concept_strait_access] (#b [Strait.GetStateStraitAccessStatus(State.Self)]#!) se bude vztahovat pouze na [Concept('concept_ship', '$concept_ships$')] z nepřátel státu [Country.GetName]" # todo: CHANGED
-  STRAIT_ONLY_ALLIES_TOOLTIP: "#header Pouze spojenci#!\n[ConcatIfNeitherEmpty(' ', AddLocalizationIf(Strait.StateHasAllowedCountriesOnlyAllies(State.Self), 'TAX_OR_EXPENSE_LEVEL_CURRENT'))][ConcatIfNeitherEmpty('\n', GetDesc( Strait.SetStateAllowedCountriesOnlyAllies( State.Self )))]\nPouze spojenci státu [Country.GetName] jsou osvobozeni od současných omezení [concept_strait_access] (#b [Strait.GetStateStraitAccessStatus(State.Self)]#!), pokud nějaká existují" # todo: CHANGED
-  STRAIT_ONLY_CONTROLLER_TOOLTIP: "#header Pouze [Concept('concept_strait_control', '$concept_strait_controller$')]#!\n[ConcatIfNeitherEmpty(' ', AddLocalizationIf(Strait.StateHasAllowedCountriesOnlyController(State.Self), 'TAX_OR_EXPENSE_LEVEL_CURRENT'))][ConcatIfNeitherEmpty('\n', GetDesc( Strait.SetStateAllowedCountriesOnlyController( State.Self )))]\nPouze [Country.GetName] a [Concept('concept_subject', '$concept_subjects$')] jsou osvobozeni od současných omezení [concept_strait_access] (#b [Strait.GetStateStraitAccessStatus(State.Self)]#!), pokud nějaká existují" # todo: CHANGED
-  STRAIT_NO_CONTROL: "Mít alespoň #v 1#! [Concept('concept_building_level', '$concept_building_level_short$')] [GetBuildingType('building_naval_fortification').GetName]" # todo: CHANGED
-  STRAIT_TOTAL_BLOCK_REQUIRES_FULL_CONTROL: "Vyžaduje [Concept('concept_strait_control', '$concept_strait_control$')] na obou stranách [concept_strait]" # todo: CHANGED
-  STRAIT_MILITARY_BLOCK_REQUIRES_FULL_CONTROL: "$STRAIT_TOTAL_BLOCK_REQUIRES_FULL_CONTROL$" # todo: NEW TRANSLATION
-  STRAIT_ACCESS_SETTING_REDUNDANT: "Aktuální nastavení [concept_strait_access]" # todo: NEW TRANSLATION
-  STRAIT_ACCESS_SETTING_NOT_ALLOWED: "#todo PRCAL-44101 Is this error needed?#!" # todo: NEW TRANSLATION
-  TOLL_RATE_NOT_ALLOWED: "#todo PRCAL-44101 Is this error needed?#!" # todo: NEW TRANSLATION
-  STRAIT_STATES_HEADER: "$concept_states$ spojené tímto $concept_strait$" # todo: CHANGED
-  NO_NAVAL_FORTIFICATION_TOOLTIP: "[Country.GetName] dosud nevybudoval [GetBuildingType('building_naval_fortification').GetName] v [State.GetName] a nemá žádnou kontrolu nad [Strait.GetName]" # todo: CHANGED
-  STRAIT_ACCESS_OPEN: "Všechna [Concept('concept_ship', '$concept_ships$')] mohou proplout [Strait.GetName]" # todo: CHANGED
-  STRAIT_ACCESS_NO_MILITARY_NO_ENEMIES: "Žádná vojenská [Concept('concept_ship', '$concept_ships$')] od #r nepřátel#! státu [Country.GetName] nesmí proplout [Strait.GetName]" # todo: CHANGED
-  STRAIT_ACCESS_NO_MILITARY_ALLIES: "Pouze vojenská [Concept('concept_ship', '$concept_ships$')] od #g spojenců#! státu [Country.GetName] mohou proplout [Strait.GetName]" # todo: CHANGED
-  STRAIT_ACCESS_NO_MILITARY_ONLY_CONTROLLER: "Pouze vojenská [Concept('concept_ship', '$concept_ships$')] od [Country.GetName] a jeho [Concept('concept_subject', '$concept_subjects$')] mohou proplout [Strait.GetName]" # todo: CHANGED
-  STRAIT_ACCESS_CLOSED_NO_ENEMIES: "Žádná [Concept('concept_ship', '$concept_ships$')] od #r nepřátel#! státu [Country.GetName] nesmí proplout [Strait.GetName]" # todo: CHANGED
-  STRAIT_ACCESS_CLOSED_ALLIES: "Pouze [Concept('concept_ship', '$concept_ships$')] od #g spojenců#! státu [Country.GetName] mohou proplout [Strait.GetName]" # todo: CHANGED
-  STRAIT_ACCESS_CLOSED_ONLY_CONTROLLER: "Pouze [Concept('concept_ship', '$concept_ships$')] od [Country.GetName] a jeho [Concept('concept_subject', '$concept_subjects$')] mohou proplout [Strait.GetName]" # todo: CHANGED
-  STRAIT_TRADE_HEADER: "[concept_trade] přes tento [concept_strait]" # todo: CHANGED
-  STRAIT_NO_TRADE: "Žádný [concept_trade]" # todo: CHANGED
-  STRAIT_TRADE_TOOLTIP: "[StraitPanel.GetTradeBreakdown(Goods.Self)]"
-  STRAIT_TRADE_BREAKDOWN: "#header [GOODS.GetName] [concept_trade] přes $STRAIT_NAME$#!\nCelkový obchod: $TOTAL|v0D$\n$DETAILS$"
-  STRAIT_TRADE_BREAKDOWN_ENTRY: "$AMOUNT|v0D$ obchodováno s [STATE.GetOwner.GetFlagTextIcon] [STATE.GetName]" # todo: CHANGED
+ DATA_STRAIT_NAME_FORMAT: "#tooltippable_name #tooltip:$TAG$,EMPTY_STRING,StraitTooltip $NAME$#!#!"
+ strait_gibraltar: "Gibraltarský průliv"
+ strait_bosporus: "Bospor"
+ strait_oresund: "Öresund"
+ strait_malacca: "Malacký průliv"
+ strait_hormuz: "Hormuzský průliv"
+ strait_bab_el_mandeb: "Bab al-Mandeb"
+ strait_tsugaru: "Cugarský průliv"
+ strait_sunda: "Sundský průliv"
+ strait_lombok: "Lombocký průliv"
+ strait_ombai: "Ombaiský průliv"
+ TOOLTIP_TYPE_STRAIT: "[concept_strait]"
+ ALLOWED_COUNTRIES_SHORT_CONCEPT: "[Concept('concept_strait_allowed_countries','$concept_strait_allowed_countries_short$')]"
+ building_fortification: "Námořní opevnění"
+ pmg_base_building_fortification: "Výcvik posádky" # todo: CHANGED
+ pm_fortification: "Pravidelný výcvik posádky" # todo: CHANGED
+ TOLL_BUDGET_ENTRY: "@money!#variable $VALUE|D$#!: [STATE.GetName] dováží #variable $QTY$#! (@money!#variable $GOODS_PRICE|D$#!, celkem @money!#variable $GOODS_VALUE|D$#!) [GOODS.GetName] přes [COUNTRY.GetFlagTextIcon][STRAIT.GetName] s #variable $TOLL_RATE|%0$#! sazbou mýtného" # todo: CHANGED
+ TAX_INCOME_TOLLS: "$TAB$#tooltippable #tooltip:[GetPlayer.GetTooltipTag],TOLLS_BREAKDOWN,TariffsTooltip @money![GetPlayer.PredictTolls|D+=]#!#! [concept_tolls]"
+ TOLLS_BREAKDOWN: "#tooltip_header [concept_tolls]#!\nCelkem: #v @money![GetPlayer.PredictTolls|K+=]#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.PredictTollsDesc]"
+ STRAIT_ACCESS_PLAYER: "#b [Strait.GetAccessStatusFor(GetPlayer.Self)]#! [concept_strait_access] pro [GetPlayer.GetName] $YOU$" # todo: CHANGED
+ STRAIT_TOLLS_PLAYER: "@money!#v [Strait.GetTollsFor(GetPlayer.Self)|D+]#! příjem z $concept_tolls$ za týden" # todo: CHANGED
+ TOLL_RATE_REDUNDANT: "Aktuální sazba mýtného"
+ TOLL_RATE_HEADER_no_tolls: "Žádné"
+ TOLL_RATE_HEADER_low_tolls: "Nízké"
+ TOLL_RATE_HEADER_medium_tolls: "Střední"
+ TOLL_RATE_HEADER_high_tolls: "Vysoké"
+ STRAIT_NO_TOLLS_TOOLTIP: "#header Žádné [concept_tolls]#![ConcatIfNeitherEmpty(' ', AddLocalizationIf(Strait.StateHasNoTolls(State.Self), 'TAX_OR_EXPENSE_LEVEL_CURRENT'))][ConcatIfNeitherEmpty('\n', GetDesc( Strait.SetControllerTollRateNoTolls( Country.Self )))]\n[SelectLocalization(Strait.StateHasNoTolls(State.Self), 'STRAIT_CURRENT_REVENUE', 'STRAIT_PREDICTED_REVENUE_NO_TOLLS')]" # todo: CHANGED
+ STRAIT_LOW_TOLLS_TOOLTIP: "#header Nízké [concept_tolls]#![ConcatIfNeitherEmpty(' ', AddLocalizationIf(Strait.StateHasLowTolls(State.Self), 'TAX_OR_EXPENSE_LEVEL_CURRENT'))][ConcatIfNeitherEmpty('\n', GetDesc( Strait.SetControllerTollRateLowTolls( Country.Self )))]\n[SelectLocalization(Strait.StateHasLowTolls(State.Self), 'STRAIT_CURRENT_REVENUE', 'STRAIT_PREDICTED_REVENUE_LOW')]" # todo: CHANGED
+ STRAIT_MEDIUM_TOLLS_TOOLTIP: "#header Střední [concept_tolls]#![ConcatIfNeitherEmpty(' ', AddLocalizationIf(Strait.StateHasMediumTolls(State.Self), 'TAX_OR_EXPENSE_LEVEL_CURRENT'))][ConcatIfNeitherEmpty('\n', GetDesc( Strait.SetControllerTollRateMediumTolls( Country.Self )))]\n[SelectLocalization(Strait.StateHasMediumTolls(State.Self), 'STRAIT_CURRENT_REVENUE', 'STRAIT_PREDICTED_REVENUE_MEDIUM')]" # todo: NEW TRANSLATION
+ STRAIT_HIGH_TOLLS_TOOLTIP: "#header Vysoké [concept_tolls]#![ConcatIfNeitherEmpty(' ', AddLocalizationIf(Strait.StateHasHighTolls(State.Self), 'TAX_OR_EXPENSE_LEVEL_CURRENT'))][ConcatIfNeitherEmpty('\n', GetDesc( Strait.SetControllerTollRateHighTolls( Country.Self )))]\n[SelectLocalization(Strait.StateHasHighTolls(State.Self), 'STRAIT_CURRENT_REVENUE', 'STRAIT_PREDICTED_REVENUE_HIGH')]" # todo: NEW TRANSLATION
+ STRAIT_PREDICTED_REVENUE_NO_TOLLS: "@money!#v [Strait.GetStateTollProfitChangeNoTolls(State.Self)|D+]#! změna výnosu z aktuálního $concept_tolls$" # todo: CHANGED
+ STRAIT_PREDICTED_REVENUE_LOW: "@money!#v [Strait.GetStatePredictedTollProfitLow(State.Self)|D+]#! předpokládaný výnos z [Concept('concept_ship', '$concept_ships$')] procházejících [Strait.GetName]\n@money!#v [Strait.GetStateTollProfitChangeLow(State.Self)|D+]#! změna výnosu z aktuálního $concept_tolls$" # todo: CHANGED
+ STRAIT_PREDICTED_REVENUE_MEDIUM: "@money!#v [Strait.GetStatePredictedTollProfitMedium(State.Self)|D+]#! předpokládaný výnos z [Concept('concept_ship', '$concept_ships$')] procházejících [Strait.GetName]\n@money!#v [Strait.GetStateTollProfitChangeMedium(State.Self)|D+]#! změna výnosu z aktuálního $concept_tolls$" # todo: CHANGED
+ STRAIT_PREDICTED_REVENUE_HIGH: "@money!#v [Strait.GetStatePredictedTollProfitHigh(State.Self)|D+]#! předpokládaný výnos z [Concept('concept_ship', '$concept_ships$')] procházejících [Strait.GetName]\n@money!#v [Strait.GetStateTollProfitChangeHigh(State.Self)|D+]#! změna výnosu z aktuálního $concept_tolls$" # todo: CHANGED
+ STRAIT_CURRENT_REVENUE: "@money!#v [Strait.GetStateTollRevenue(State.Self)|D+]#! aktuální výnos" # todo: CHANGED
+ STRAIT_TOLL_TOOLTIP: "#header [Strait.GetName] [concept_tolls]#!\n[SelectLocalization(And( State.GetBuilding('building_naval_fortification').IsValid, Country.IsValid ), 'STRAIT_TOLL_TOOLTIP_ACTIVE', 'STRAIT_TOLL_TOOLTIP_INACTIVE')]" # todo: NEW TRANSLATION
+ STRAIT_TOLL_TOOLTIP_ACTIVE: "[Strait.GetStateTollTextIcon(State.Self)] #b [Strait.GetStateTollStatus(State.Self)]#! ([SelectLocalization(Country.IsLocalPlayer, 'POSITIVE_TOLL', 'NEGATIVE_TOLL')]) $concept_tolls$ vybrané [Country.GetName]" # todo: CHANGED
+ STRAIT_TOLL_TOOLTIP_INACTIVE: "Žádné $concept_tolls$ nejsou vybírány [Country.GetName] kvůli #b nemá#! [GetBuildingType('building_naval_fortification').GetName]" # todo: CHANGED
+ POSITIVE_TOLL: "@money!#v [Strait.GetStateTollProfit(State.Self)|D=+]#!" # todo: NEW TRANSLATION
+ NEGATIVE_TOLL: "@money!#v [Strait.GetStateTollProfit(State.Self)|D=-]#!" # todo: NEW TRANSLATION
+ STRAIT_ACCESS_STATUS_open: "Otevřený"
+ STRAIT_ACCESS_STATUS_no_military: "Zákaz vojenských" # todo: CHANGED
+ STRAIT_ACCESS_STATUS_closed: "Uzavřený"
+ STRAIT_ALLOWED_COUNTRIES_STATUS_all: "Všichni" # todo: NEW TRANSLATION
+ STRAIT_ALLOWED_COUNTRIES_STATUS_no_enemies: "Žádní nepřátelé" # todo: NEW TRANSLATION
+ STRAIT_ALLOWED_COUNTRIES_STATUS_only_allies: "Pouze spojenci" # todo: NEW TRANSLATION
+ STRAIT_ALLOWED_COUNTRIES_STATUS_only_controller: "Pouze ovládající" # todo: NEW TRANSLATION
+ STRAIT_ACCESS_TOOLTIP: "#header [Strait.GetName] [concept_strait_access]#!\n[SelectLocalization( And( State.GetBuilding('building_naval_fortification').IsValid, Country.IsValid ), 'STRAIT_ACCESS_TOOLTIP_ACTIVE', 'STRAIT_ACCESS_TOOLTIP_INACTIVE')]" # todo: NEW TRANSLATION
+ STRAIT_ACCESS_TOOLTIP_ACTIVE: "[Strait.GetStateStraitAccessTextIcon(State.Self)] #b [Strait.GetStateStraitAccessStatus(State.Self)]#! $concept_strait_access$ nastaveno [Country.GetName]\n$TOOLTIP_DELIMITER$\n#title Účinky:#! #indent_newline:3 \n[Strait.GetStateStraitAccessStatusDesc(State.Self)]#![ConcatIfNeitherEmpty('\n\n', AddLocalizationIf(Strait.StateStraitAccessIsOverruled(State.Self), 'STRAIT_ACCESS_OVERRIDDEN'))]" # todo: CHANGED
+ STRAIT_ACCESS_OVERRIDDEN: "@warning! Toto $concept_strait_access$ je přepsáno statusem #b [Strait.GetActiveStraitAccessStatus]#! nastaveným [Strait.GetOtherController(State.Self).GetName]" # todo: CHANGED
+ STRAIT_ACCESS_TOOLTIP_INACTIVE: "Žádná omezení $concept_strait_access$ nejsou uplatňována [Country.GetName] kvůli #b nemá#! [GetBuildingType('building_naval_fortification').GetName]" # todo: CHANGED
+ STRAIT_ACCESS_OPEN_TOOLTIP: "#header Otevřeno#!\n[ConcatIfNeitherEmpty(' ', AddLocalizationIf(Strait.StateHasAccessOpen(State.Self), 'CURRENT_ACCESS'))][ConcatIfNeitherEmpty('\n', GetDesc( Strait.SetStateAccessOpen( State.Self )))]\nVšechna [Concept('concept_ship', '$concept_ships$')] mohou proplout [Strait.GetName]" # todo: CHANGED
+ STRAIT_ACCESS_NO_MILITARY_TOOLTIP: "#header Zákaz vojenských#!\n[ConcatIfNeitherEmpty(' ', AddLocalizationIf(Strait.StateHasAccessNoMilitary(State.Self), 'CURRENT_ACCESS'))][ConcatIfNeitherEmpty('\n', GetDesc( Strait.SetStateAccessNoMilitary( State.Self )))]\nŽádná vojenská [Concept('concept_ship', '$concept_ships$')] nesmí proplout [Strait.GetName] kromě $concept_ships$ z [concept_strait_allowed_countries]" # todo: CHANGED
+ STRAIT_ACCESS_CLOSED_TOOLTIP: "#header Uzavřeno#!\n[ConcatIfNeitherEmpty(' ', AddLocalizationIf(Strait.StateHasAccessClosed(State.Self), 'CURRENT_ACCESS'))][ConcatIfNeitherEmpty('\n', GetDesc( Strait.SetStateAccessClosed( State.Self )))]\nŽádná [Concept('concept_ship', '$concept_ships$')] nesmí proplout [Strait.GetName] kromě [concept_strait_allowed_countries]" # todo: CHANGED
+ CURRENT_ACCESS: "#i #b (Aktuální $concept_strait_access_short$)#!#!" # todo: NEW TRANSLATION
+ STRAIT_ALLOWED_COUNTRIES_TOOLTIP: "#header [Strait.GetName] [concept_strait_allowed_countries]#!\n[SelectLocalization( And( State.GetBuilding('building_naval_fortification').IsValid, Country.IsValid ), 'STRAIT_ALLOWED_COUNTRIES_ACTIVE', 'STRAIT_ALLOWED_COUNTRIES_INACTIVE')]" # todo: NEW TRANSLATION
+ STRAIT_ALLOWED_COUNTRIES_ACTIVE: "[Strait.GetStateAllowedCountriesTextIcon(State.Self)] #b [Strait.GetStateAllowedCountriesStatus(State.Self)]#! povoleno [Country.GetName]\n$TOOLTIP_DELIMITER$\n#title Účinky:#! #indent_newline:3 \n[Strait.GetStateAllowedCountriesStatusDesc(State.Self)]#!" # todo: CHANGED
+ STRAIT_ALLOWED_COUNTRIES_INACTIVE: "Žádná omezení nejsou uplatňována [Country.GetName] kvůli #b nemá#! [GetBuildingType('building_naval_fortification').GetName]" # todo: CHANGED
+ STRAIT_NO_ENEMIES_TOOLTIP: "#header Žádní nepřátelé#!\n[ConcatIfNeitherEmpty(' ', AddLocalizationIf(Strait.StateHasAllowedCountriesNoEnemies(State.Self), 'TAX_OR_EXPENSE_LEVEL_CURRENT'))][ConcatIfNeitherEmpty('\n', GetDesc( Strait.SetStateAllowedCountriesNoEnemies( State.Self )))]\nSoučasné [concept_strait_access] (#b [Strait.GetStateStraitAccessStatus(State.Self)]#!) se bude vztahovat pouze na [Concept('concept_ship', '$concept_ships$')] z nepřátel státu [Country.GetName]" # todo: CHANGED
+ STRAIT_ONLY_ALLIES_TOOLTIP: "#header Pouze spojenci#!\n[ConcatIfNeitherEmpty(' ', AddLocalizationIf(Strait.StateHasAllowedCountriesOnlyAllies(State.Self), 'TAX_OR_EXPENSE_LEVEL_CURRENT'))][ConcatIfNeitherEmpty('\n', GetDesc( Strait.SetStateAllowedCountriesOnlyAllies( State.Self )))]\nPouze spojenci státu [Country.GetName] jsou osvobozeni od současných omezení [concept_strait_access] (#b [Strait.GetStateStraitAccessStatus(State.Self)]#!), pokud nějaká existují" # todo: CHANGED
+ STRAIT_ONLY_CONTROLLER_TOOLTIP: "#header Pouze [Concept('concept_strait_control', '$concept_strait_controller$')]#!\n[ConcatIfNeitherEmpty(' ', AddLocalizationIf(Strait.StateHasAllowedCountriesOnlyController(State.Self), 'TAX_OR_EXPENSE_LEVEL_CURRENT'))][ConcatIfNeitherEmpty('\n', GetDesc( Strait.SetStateAllowedCountriesOnlyController( State.Self )))]\nPouze [Country.GetName] a [Concept('concept_subject', '$concept_subjects$')] jsou osvobozeni od současných omezení [concept_strait_access] (#b [Strait.GetStateStraitAccessStatus(State.Self)]#!), pokud nějaká existují" # todo: CHANGED
+ STRAIT_NO_CONTROL: "Mít alespoň #v 1#! [Concept('concept_building_level', '$concept_building_level_short$')] [GetBuildingType('building_naval_fortification').GetName]" # todo: CHANGED
+ STRAIT_TOTAL_BLOCK_REQUIRES_FULL_CONTROL: "Vyžaduje [Concept('concept_strait_control', '$concept_strait_control$')] na obou stranách [concept_strait]" # todo: CHANGED
+ STRAIT_MILITARY_BLOCK_REQUIRES_FULL_CONTROL: "$STRAIT_TOTAL_BLOCK_REQUIRES_FULL_CONTROL$" # todo: NEW TRANSLATION
+ STRAIT_ACCESS_SETTING_REDUNDANT: "Aktuální nastavení [concept_strait_access]" # todo: NEW TRANSLATION
+ STRAIT_ACCESS_SETTING_NOT_ALLOWED: "#todo PRCAL-44101 Is this error needed?#!" # todo: NEW TRANSLATION
+ TOLL_RATE_NOT_ALLOWED: "#todo PRCAL-44101 Is this error needed?#!" # todo: NEW TRANSLATION
+ STRAIT_STATES_HEADER: "$concept_states$ spojené tímto $concept_strait$" # todo: CHANGED
+ NO_NAVAL_FORTIFICATION_TOOLTIP: "[Country.GetName] dosud nevybudoval [GetBuildingType('building_naval_fortification').GetName] v [State.GetName] a nemá žádnou kontrolu nad [Strait.GetName]" # todo: CHANGED
+ STRAIT_ACCESS_OPEN: "Všechna [Concept('concept_ship', '$concept_ships$')] mohou proplout [Strait.GetName]" # todo: CHANGED
+ STRAIT_ACCESS_NO_MILITARY_NO_ENEMIES: "Žádná vojenská [Concept('concept_ship', '$concept_ships$')] od #r nepřátel#! státu [Country.GetName] nesmí proplout [Strait.GetName]" # todo: CHANGED
+ STRAIT_ACCESS_NO_MILITARY_ALLIES: "Pouze vojenská [Concept('concept_ship', '$concept_ships$')] od #g spojenců#! státu [Country.GetName] mohou proplout [Strait.GetName]" # todo: CHANGED
+ STRAIT_ACCESS_NO_MILITARY_ONLY_CONTROLLER: "Pouze vojenská [Concept('concept_ship', '$concept_ships$')] od [Country.GetName] a jeho [Concept('concept_subject', '$concept_subjects$')] mohou proplout [Strait.GetName]" # todo: CHANGED
+ STRAIT_ACCESS_CLOSED_NO_ENEMIES: "Žádná [Concept('concept_ship', '$concept_ships$')] od #r nepřátel#! státu [Country.GetName] nesmí proplout [Strait.GetName]" # todo: CHANGED
+ STRAIT_ACCESS_CLOSED_ALLIES: "Pouze [Concept('concept_ship', '$concept_ships$')] od #g spojenců#! státu [Country.GetName] mohou proplout [Strait.GetName]" # todo: CHANGED
+ STRAIT_ACCESS_CLOSED_ONLY_CONTROLLER: "Pouze [Concept('concept_ship', '$concept_ships$')] od [Country.GetName] a jeho [Concept('concept_subject', '$concept_subjects$')] mohou proplout [Strait.GetName]" # todo: CHANGED
+ STRAIT_TRADE_HEADER: "[concept_trade] přes tento [concept_strait]" # todo: CHANGED
+ STRAIT_NO_TRADE: "Žádný [concept_trade]" # todo: CHANGED
+ STRAIT_TRADE_TOOLTIP: "[StraitPanel.GetTradeBreakdown(Goods.Self)]"
+ STRAIT_TRADE_BREAKDOWN: "#header [GOODS.GetName] [concept_trade] přes $STRAIT_NAME$#!\nCelkový obchod: $TOTAL|v0D$\n$DETAILS$"
+ STRAIT_TRADE_BREAKDOWN_ENTRY: "$AMOUNT|v0D$ obchodováno s [STATE.GetOwner.GetFlagTextIcon] [STATE.GetName]" # todo: CHANGED
