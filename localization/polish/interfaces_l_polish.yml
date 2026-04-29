@@ -1186,6 +1186,7 @@
  REGULARS_AND_CONSCRIPTS: "Regularní a odvedenci"
  MILITARY_FORMATION_TOTAL_NUMBER_OF_UNITS_WITH_ICON: "[MilitaryFormation.GetUnitIcon]$MILITARY_FORMATION_TOTAL_NUMBER_OF_UNITS$"
  MILITARY_FORMATION_CARRYING_CAPACITY_WITH_ICON: "@ship_carrying_capacity! [MilitaryFormation.GetCarryingCapacity]" # todo: NEW TRANSLATION
+ MILITARY_FORMATION_MARINE_CAPACITY_WITH_ICON: "@ship_marine_capacity! [MilitaryFormation.GetMarineCapacity]"
  MILITARY_FORMATION_TOTAL_NUMBER_OF_UNITS: "#v [MilitaryFormation.GetNumCombatUnits]#!/[SelectLocalization(LessThan_int32(MilitaryFormation.GetCommandLimitRaw, MilitaryFormation.GetNumCombatUnits), 'INSUFFICIENT_COMMAND_LIMIT', 'SUFFICIENT_COMMAND_LIMIT')]"
  MILITARY_FORMATION_TOTAL_NUMBER_OF_UNITS_NO_LIMIT: "#v [MilitaryFormation.GetNumCombatUnits]#!"
  INSUFFICIENT_COMMAND_LIMIT: "#r [MilitaryFormation.GetCommandLimitRaw]#!"
@@ -9749,4 +9750,3 @@
  COUNTRY_SAILORS_VALUE: "[Concept('concept_sailor', '$concept_sailors$')]: [Country.GetCurrentSailors|v0K] / [Country.GetModifier.GetValueFor('country_sailors_max_add')|v0K][AddLocalizationIf( Country.HasInsufficientMaxSailors, 'COUNTRY_SAILORS_VALUE_NEED_MORE_THAN_MAX' )]" # todo: NEW TRANSLATION
  COUNTRY_SAILORS_VALUE_NEED_MORE_THAN_MAX: " (@warning! Potřeba: [Country.GetNeededSailors|v0K])" # todo: NEW TRANSLATION
  SHIP_MOD_GOODS_COST: "[Concept('concept_good', '$concept_budget_construction_goods$')]: #indent_newline:3 \n[ShipModificationType.GetConstructionGoodsModifier.GetDesc]#!" # todo: NEW TRANSLATION
- MILITARY_FORMATION_MARINE_CAPACITY_WITH_ICON: "@ship_marine_capacity! [MilitaryFormation.GetMarineCapacity]"
