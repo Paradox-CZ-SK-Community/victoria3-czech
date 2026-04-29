@@ -520,7 +520,7 @@
  bht_end_privy_purse_payments: "Ukončit platby privy penze"
  bht_end_privy_purse_payments_desc: "Platby #b $modifier_privy_purse_payments$#!, které vyplácíme bývalým vládnoucím rodinám #b knížecích států#!, které jsme anektovali, představují značnou část našeho rozpočtu. Můžeme tyto platby předčasně ukončit, což však vyvolá hněv aristokratů, kteří se na nich spoléhají."
  warning_may_cause_massive_debt_tt: "@warning! Způsobí dodatečné #b $modifier_privy_purse_payments$#! až do výše @money![GetPlayer.MakeScope.ScriptValue('privy_purse_value_potential')|D-]"
- add_claims_on_india_tt: "[ROOT.GetCountry.GetName] získává [Concept('concept_claim', '$concept_claims$')] na všech [Concept('concept_georegion_india', '$concept_georegion_indian$')] [Concept('concept_state', '$concept_states$')]"
+ add_claims_on_india_tt: "[ROOT.GetCountry.GetName] získá [Concept('concept_claim', 'nároky')] na všechny [Concept('concept_state', 'státy')] v [GetGeographicRegion('geographic_region_india').GetName]"
  no_federation_je_tt: "Nemá aktivní #v Federaci Indie#! [concept_journal_entry]"
  no_union_je_tt: "Nemá aktivní #v Unii Indie#! [concept_journal_entry]"
  all_princely_states_get_invitation_tt: "Všechny způsobilé [Concept('concept_princely_state','$concept_princely_states$')] budou pozvány, aby se připojily k [ROOT.GetCountry.GetNameNoFlag]"

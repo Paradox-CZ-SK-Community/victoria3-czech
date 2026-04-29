@@ -64,8 +64,8 @@
  alert_stalled_invasion_hint: "Můžete změnit rozkazy svých generálů na takové, které jim umožní zahájit bitvy, například [GetCommanderOrderType('advance').GetName]."
  alert_stalled_invasion_action: "Panel invaze"
  alert_stalled_naval_invasion_name: "Uvíznutá [concept_naval_invasion|l]"
- alert_stalled_naval_invasion_desc: "Vaše [SCOPE.GetRootScope.GetInvasion.GetName] nebude moci postupovat k přistání jednotek, protože žádný útočící [concept_admiral|l] nemá [Concept('concept_order','$concept_orders$')|l] které by jim umožnili zahájit [Concept('concept_battle','bitvu')]."
- alert_stalled_naval_invasion_hint: "Můžete změnit rozkazy svých admirálů na takové, které jim umožní zahájit vylodění, například [GetCommanderOrderType('interception_coast').GetName]."
+ alert_stalled_naval_invasion_desc: "Váš [SCOPE.GetRootScope.GetInvasion.GetName] nebude schopen postoupit k vylodění jednotek, protože žádný z útočících [concept_general] nemá [Concept('concept_order','$concept_orders$')] umožňující zahájit [concept_battle]." # todo: CHANGED
+ alert_stalled_naval_invasion_hint: "Můžete změnit $concept_orders$ vašich $concept_generals$ na Advance, což jim umožní zahajovat bitvy." # todo: CHANGED
  alert_stalled_naval_invasion_action: "Panel invaze"
  alert_low_organization_active_name: "Nízká [concept_organization|l]: [SCOPE.GetRootScope.GetMilitaryFormation.GetName] na [Concept('concept_front','fronte')]"
  alert_low_organization_active_desc: "[SCOPE.GetRootScope.GetMilitaryFormation.GetName] má [SCOPE.GetRootScope.GetMilitaryFormation.GetOrganization] [Concept('concept_organization','organizaci')], což způsobuje těžké tresty."
@@ -112,8 +112,8 @@
  alert_insufficient_military_maintenance_alert_desc: "Naše $concept_ships$ každý týden ztrácejí [Concept('concept_ship_hit_points', '$concept_ship_hit_points_short$')] kvůli nedostatečné údržbě.\n\n#v [GetPlayer.GetMilitaryMaintenanceFulfillment|%]#! plnění údržby\n@ship_construction! #v [GetPlayer.GetMilitaryMaintenanceDemand|0]#! požadavek na údržbu\n@ship_construction! #v [GetPlayer.GetMilitaryConstructionCapacity|0]#! přiřazeno k vojenským $concept_ships$" # todo: NEW TRANSLATION
  alert_insufficient_military_maintenance_alert_hint: "Zvyšte [Concept('concept_ship_construction', '$concept_ship_construction$')] stavbou více [GetBuildingType('building_shipyard').GetName], zmenšte velikost [Concept('concept_fleet', '$concept_fleet$')] pro snížení nákladů na údržbu, nebo změňte rozdělení stavebních bodů [Concept('concept_supply_ship', '$concept_supply_ship$')] tak, aby se více přidělovalo na vojenské." # todo: NEW TRANSLATION
  alert_insufficient_military_maintenance_alert_action: "Panel stavby lodí" # todo: NEW TRANSLATION
- alert_insufficient_ship_crew_alert_name: "Nedostatek [concept_ship_crew]" # todo: NEW TRANSLATION
- alert_insufficient_ship_crew_alert_desc: "[SCOPE.GetRootScope.GetMilitaryFormation.GetName] má [Concept('concept_ship', '$concept_ships$')] které jsou nedostatečně obsazené. Lodě bez dostatečného $concept_ship_crew$ budou méně účinné v boji a dalších operacích." # todo: NEW TRANSLATION
+ alert_insufficient_ship_crew_alert_name: "Nedostatek $concept_ship_crew_short$ v [SCOPE.GetRootScope.GetMilitaryFormation.GetName]" # todo: CHANGED
+ alert_insufficient_ship_crew_alert_desc: "[SCOPE.GetRootScope.GetMilitaryFormation.GetName] má [Concept('concept_ship', '$concept_ships$')], které jsou nedostatečně obsazeny. Lodě bez adekvátního $concept_ship_crew$ budou méně efektivní v boji a při ostatních operacích.\n@information! Aby se mohla posádka nalodit na loď, musí být loď v přístavu." # todo: CHANGED
  alert_insufficient_ship_crew_alert_hint: "Počet dostupných [Concept('concept_sailor', '$concept_sailors$')] můžete zvýšit stavbou více [GetBuildingType('building_naval_administration').GetName] [Concept('concept_building', '$concept_buildings$')], nebo rozšířením stávajících." # todo: NEW TRANSLATION
  alert_insufficient_ship_crew_alert_action: "Panel vojenské formace" # todo: NEW TRANSLATION
  alert_insufficient_supply_maintenance_alert_name: "Nedostatečná údržba [Concept('concept_supply_ship', '$concept_supply_ship$')]" # todo: NEW TRANSLATION
