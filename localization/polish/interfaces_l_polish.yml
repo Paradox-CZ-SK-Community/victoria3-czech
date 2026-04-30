@@ -1317,9 +1317,9 @@
  TRANSPORT_PLANNER_CONFIRM_TOOLTIP: "#header Potvrdit tuto přepravu#!\n[TransportPlannerPopup.GetCommandValidityDesc]" # todo: NEW TRANSLATION
  TRANSPORT_SELECT_FLEET: "Vyberte [concept_fleet] k přepravě tohoto [concept_army]" # todo: NEW TRANSLATION
  TRANSPORT_FLEET_ALREADY_TRANSPORTING: "Tento [concept_fleet] již přepravuje [concept_army]" # todo: NEW TRANSLATION
- TRANSPORT_FLEET_CANNOT_DEPLOY_TO_SEA_NODE: "[MilitaryFormation.GetName] #b nemůže#! hlídkovat při přepravě [concept_army]" # todo: NEW TRANSLATION
+ TRANSPORT_FLEET_CANNOT_DEPLOY_TO_SEA_NODE: "[MilitaryFormation.GetName] #b cannot#! právě přepravuje [concept_army]" # todo: CHANGED
  TRANSPORT_FLEET_CANNOT_START_NAVAL_MISSION: "[MilitaryFormation.GetName] #b nemůže#! zahájit $concept_naval_mission$, když přepravuje [concept_army]" # todo: NEW TRANSLATION
- INVASION_FLEET_CANNOT_DEPLOY_TO_SEA_NODE: "[MilitaryFormation.GetName] #b nemůže#! hlídkovat během $concept_naval_invasion$" # todo: NEW TRANSLATION
+ INVASION_FLEET_CANNOT_DEPLOY_TO_SEA_NODE: "[MilitaryFormation.GetName] #b cannot#! právě se účastní $concept_naval_invasion$" # todo: CHANGED
  INVASION_FLEET_CANNOT_START_NAVAL_MISSION: "[MilitaryFormation.GetName] #b nemůže#! zahájit $concept_naval_mission$ během $concept_naval_invasion$" # todo: NEW TRANSLATION
  TRANSPORT_FLEET_IN_NAVAL_INVASION: "[MilitaryFormation.GetName] je v $concept_naval_mission$" # todo: NEW TRANSLATION
  REHOME_FLEET_TRANSPORTING_ARMIES: "[MilitaryFormation.GetName] #b nelze#! přesunout, když přepravuje [concept_army]" # todo: NEW TRANSLATION
@@ -1328,7 +1328,8 @@
  DISEMBARK_ARMY_BEING_TRANSPORTED: "Toto [concept_army] je přepravováno a nelze jej ručně vyložit" # todo: NEW TRANSLATION
  EMBARK_ARMY_HAS_NON_MARINE_UNITS: "[MilitaryFormation.GetName] má #v [MilitaryFormation.GetNonMarineUnitCount|v]#! ne-[GetCombatUnitGroup('combat_unit_group_marines').GetName] [SelectLocalization(EqualTo_int32(MilitaryFormation.GetNonMarineUnitCount, '(int32)1'), 'concept_unit', 'concept_units')]" # todo: NEW TRANSLATION
  TRANSPORT_FLEET_NO_CAPACITY: "[concept_fleet] nemá žádnou kapacitu pro přepravu" # todo: NEW TRANSLATION
- TRANSPORT_FLEET_WILL_SPLIT_ARMY: "@information! [concept_fleet] může nést pouze #v [MILITARY_FORMATION.GetCarryingCapacity]#! z #v [TARGET_MILITARY_FORMATION.GetNumCombatUnits]#! jednotek. Zbylé jednotky budou rozděleny do samostatného [concept_army]." # todo: NEW TRANSLATION
+ TRANSPORT_FLEET_WILL_SPLIT_ARMY: "@information! [concept_fleet] může přepravit jen #v [MILITARY_FORMATION.GetCarryingCapacity]#! z #v [TARGET_MILITARY_FORMATION.GetNumCombatUnits]#! jednotek. Flotila bude muset provést #v $TRIP_COUNT$#! cest k přepravě všech jednotek." # todo: CHANGED
+ TRANSPORT_FLEET_MULTI_TRIP_RETURNING: "Vrací se pro zbývající jednotky (zbývá #v [MilitaryFormation.GetTransportMissionQueueCount]#! cest)" # todo: NEW TRANSLATION
  EMBARK_FLEET_INSUFFICIENT_MARINE_CAPACITY: "Kapacita námořních jednotek [concept_fleet] #v [MILITARY_FORMATION.GetMarineCapacity]#! nestačí pro #v [TARGET_MILITARY_FORMATION.GetNumTotalUnits]#! jednotek" # todo: NEW TRANSLATION
  INVASION_MARINES_ATTACHED_TO_DIFFERENT_FLEET: "Marines jsou přiděleni k jiné [concept_fleet]" # todo: NEW TRANSLATION
  DEPLOY_MILITARY_FORMATION_TO_FRONT_TRANSPORT_AVAILABLE: "Klikněte pro výběr [concept_fleet], který přepraví [MilitaryFormation.GetName] na [Front.GetName]" # todo: NEW TRANSLATION
@@ -9663,7 +9664,7 @@
  PROGRESS_BAR_VALUE_FORMAT_MONTHLY_NEGATIVE: "$VALUE|-=1$ z $KEY$"
  PROGRESS_BAR_VALUE_FORMAT_YEARLY_NEGATIVE: "$VALUE|-=1$ z $KEY$"
  DIPLO_PLAY_COUNTRY_WARSHIPS_BREAKDOWN: "[Country.GetName] má @flotillas![Country.GetWarships|v] [Concept('concept_ship', '$concept_ships$')]"
- MOVE_MILITARY_FORMATION: "Přesunout [SelectLocalization(MilitaryFormation.IsArmy, 'MILITARY_FORMATION_ARMY_CONCEPT', 'MILITARY_FORMATION_FLEET_CONCEPT')]" # todo: NEW TRANSLATION
+ MOVE_MILITARY_FORMATION: "Další akce" # todo: CHANGED
  DEPLOY_MILITARY_FORMATION_TO_FRONT_TEXT: "Nasadit na [Concept('concept_front','frontu')]"
  DEPLOY_MILITARY_FORMATION_TO_FRONT_TOOLTIP: "#header Nasadit na [Concept('concept_front','frontu')]#!\n[SelectLocalization(MilitaryFormation.IsMobilized, 'MILITARY_FORMATION_TOOLTIP_IS_MOBILIZED', 'MILITARY_FORMATION_TOOLTIP_IS_NOT_MOBILIZED')]$MILITARY_FORMATION_GENERIC_ERRORS$[ConcatIfNeitherEmpty('\n', AddLocalizationIf(Not(MilitaryFormation.CanDeployToFront), 'NO_VALID_OPTIONS_FOR_DEPLOY_TO_FRONT'))]\n\n@information! Toto určuje polohu [MilitaryFormation.GetName], zatímco můžete změnit konkrétní [Concept('concept_order', '$concept_orders$')] na přiděleném [Concept('concept_general', '$concept_generals$')]"
  MILITARY_FORMATION_TOOLTIP_IS_MOBILIZED: "@green_checkmark_box! [MilitaryFormation.GetName] je [Concept('concept_mobilize_army', '$concept_mobilize_army_mobilized$')]"
@@ -9732,10 +9733,11 @@
  INVOLVEMENT_FLEET_MISSION_VALUE_ENTRY: "$TAB$ $VALUE|v0$ z #tooltippable;tooltip:[GetRawTextTooltipTag('$TOTAL_BREAKDOWN$')] $TOTAL|v0$#! celkem z [MILITARY_FORMATION.GetName] (na [Concept('concept_naval_mission', '$concept_naval_mission_short$')])" # todo: NEW TRANSLATION
  INVOLVEMENT_FLEET_MISSION_FLAGSHIP_VALUE_ENTRY: "$TAB$ $VALUE|v0$ z #tooltippable;tooltip:[GetRawTextTooltipTag('$TOTAL_BREAKDOWN$')] $TOTAL|v0$#! celkem z [MILITARY_FORMATION.GetName] (na [Concept('concept_naval_mission', '$concept_naval_mission_short$')], $FLAGSHIP_MULT|0%+=$ z [concept_flagship])" # todo: NEW TRANSLATION
  INVOLVEMENT_FLEET_MISSION_TOTAL_BREAKDOWN: "$BASE|v0$ základ\n#p x$REGION_MULT|2$#! z cílení $NUM_REGIONS|v$ regionů" # todo: NEW TRANSLATION
- INVOLVEMENT_TREATIES_PACTS_TOTAL_VALUE: "$VALUE|v0$ z [Concept('concept_article', '$concept_articles$')] a [Concept('concept_diplomatic_pact', '$concept_diplomatic_pacts$')] (omezeno na $CAP|v0$)" # todo: NEW TRANSLATION
- INVOLVEMENT_TREATIES_PACTS_TOTAL_VALUE_NO_CAP: "$VALUE|v0$ z [Concept('concept_article', '$concept_articles$')] a [Concept('concept_diplomatic_pact', '$concept_diplomatic_pacts$')]" # todo: NEW TRANSLATION
+ INVOLVEMENT_TREATIES_PACTS_TOTAL_VALUE: "$VALUE|v0$ ze členství v [Concept('concept_article', '$concept_articles$')], [Concept('concept_diplomatic_pact', '$concept_diplomatic_pacts$')], a [Concept('concept_power_bloc', '$concept_power_bloc$')] (omezeno na $CAP|v0$)" # todo: CHANGED
+ INVOLVEMENT_TREATIES_PACTS_TOTAL_VALUE_NO_CAP: "$VALUE|v0$ ze členství v [Concept('concept_article', '$concept_articles$')], [Concept('concept_diplomatic_pact', '$concept_diplomatic_pacts$')], a [Concept('concept_power_bloc', '$concept_power_bloc$')]" # todo: CHANGED
  INVOLVEMENT_TREATY_ARTICLE_VALUE_ENTRY: "$TAB$ #tooltippable #tooltip:[GetRawTextTooltipTag('$BREAKDOWN$')] $VALUE|v0$#!#! z [TREATY_ARTICLE.GetName] v [TREATY.GetName]" # todo: NEW TRANSLATION
  INVOLVEMENT_PACT_VALUE_ENTRY: "#tooltippable #tooltip:[GetRawTextTooltipTag('$BREAKDOWN$')] $VALUE|v0$#!#! z [DIPLOMATIC_PACT.GetName] s [OTHER_COUNTRY.GetName]" # todo: NEW TRANSLATION
+ INVOLVEMENT_POWER_BLOC_MEMBER_VALUE_ENTRY: "#tooltippable #tooltip:[GetRawTextTooltipTag('$BREAKDOWN$')] $VALUE|v0$#!#! od člena $concept_power_bloc$ [COUNTRY.GetName]" # todo: NEW TRANSLATION
  INVOLVEMENT_SCALED_VALUE_BREAKDOWN: "#header Škálované [concept_involvement]#!\n$TOTAL|v0$ celkem\n$TOOLTIP_DELIMITER$\n$VALUE|v0$ základní hodnota\n$TAB$ $FACTOR|v0%$ z [COUNTRY.GetAdjective] [concept_locality] v [STRATEGIC_REGION.GetName]" # todo: NEW TRANSLATION
  HOW_TO_INCREASE_INVOLVEMENT: "#title You can #g increase#! $concept_involvement$ in a $concept_strategic_region$ by:#! #indent_newline:3 \n• Umístíte [Concept('concept_fleet','$concept_fleets$')] do námořního [concept_hq]\n• Umístíte [Concept('concept_army','$concept_armies$')] do pozemního $concept_hq$\n• Mít $concept_fleets$ vykonávající [Concept('concept_order','$concept_orders$')] v sousedním [concept_sea_node]\n• Mít $concept_armies$ bojující na [concept_front] v daném $concept_strategic_region_short$\n• Vlastnit [Concept('concept_state','$concept_states$')] v tomto $concept_strategic_region_short$\n• Mít [Concept('concept_claim','$concept_claims$')] na $concept_states$ v tomto $concept_strategic_region_short$\n• Přesunout tam svůj [concept_capital_state]\n• Podepsat [Concept('concept_treaty', '$concept_treaties$')] s $concept_countries$, které jsou [Concept('concept_local_country', '$concept_local_country_short$')]\n• Zapojit se do [Concept('concept_diplomatic_action','$concept_diplomatic_actions$')] s $concept_local_countries$#!" # todo: NEW TRANSLATION
  IMPERIAL_STATE: "Restaurátorská doména" # todo: NEW TRANSLATION
