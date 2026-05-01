@@ -7651,7 +7651,7 @@
  CHARACTER_PANEL_SUBTITLE_GENERAL_AT_FRONT_YES: "[Character.GetPrimaryRoleTitle] na [Character.GetFront.GetName]"
  CHARACTER_PANEL_SUBTITLE_ADMIRAL_RAIDING_SEA_REGION: "[SelectLocalization( And(Not( Character.IsInExilePool ), And(Character.IsAdmiral, Character.GetOrderType.IsRaidConvoys) ), 'CHARACTER_PANEL_SUBTITLE_ADMIRAL_RAIDING_SEA_REGION_YES' , 'CHARACTER_PANEL_SUBTITLE_OTHER') ]"
  CHARACTER_PANEL_SUBTITLE_ADMIRAL_RAIDING_SEA_REGION_YES: "[Character.GetPrimaryRoleTitle]"
- CHARACTER_PANEL_SUBTITLE_OTHER: "[Character.GetPrimaryRole.GetName] [Character.GetPrimaryRole.GetPreposition] [SelectLocalization(EqualTo_string(Character.GetPrimaryRole.GetPreposition,'z'),Character.GetCountry.GetAltAdjective('G'),Character.GetCountry.GetAltAdjective('L'))]"
+ CHARACTER_PANEL_SUBTITLE_OTHER: "[Character.GetPrimaryRole.GetName] [SelectLocalization(EqualTo_string(Character.GetPrimaryRole.GetPreposition,'z'),Character.GetCountry.GetAltAdjective('G'),Character.GetPrimaryRole.GetPreposition)] [SelectLocalization(EqualTo_string(Character.GetPrimaryRole.GetPreposition,'z'),'',Character.GetCountry.GetAltAdjective('L'))]"
  INSUFFICIENT_AUT: "Potřebujete #variable #N $VAL$#!#! $AUTHORITY$ ale máte pouze #variable $CURRENT$#!"
  INSUFFICIENT_BUR: "Potřebujete #variable #N $VAL$#!#! $BUREAUCRACY$ ale máte pouze #variable $CURRENT$#!"
  INSUFFICIENT_DIP: "Potřebujete #variable #N $VAL$#!#! $INFLUENCE$ ale máte pouze #variable $CURRENT$#!"
