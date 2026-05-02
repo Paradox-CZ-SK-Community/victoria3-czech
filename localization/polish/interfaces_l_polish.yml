@@ -7954,8 +7954,8 @@
  notification_interest_tier_decreased_third_party_name: "[concept_interest_tier] #r decreased#! pro [SCOPE.sCountry('actor').GetName]" # todo: NEW TRANSLATION
  notification_interest_tier_decreased_third_party_desc: "[SCOPE.sCountry('actor').GetName] #r decreased#! své [concept_interest_tier] v [SCOPE.GetRootScope.GetInterest.GetStrategicRegion.GetName] na [SCOPE.sInterestTierType('target').GetName]." # todo: NEW TRANSLATION
  notification_colony_created_tooltip: "#header $notification_colony_created_name$#!\n$TOOLTIP_DELIMITER$\n$notification_colony_created_desc$"
- notification_colony_created_name: "[SCOPE.sCountry('actor').GetName] kolonizoval [SCOPE.GetRootScope.GetState.GetStateRegion.GetName]"
- notification_colony_created_desc: "[SCOPE.sCountry('actor').GetName] založil [concept_colony] [SCOPE.GetRootScope.GetState.GetName]."
+ notification_colony_created_name: "[SCOPE.sCountry('actor').GetName] kolonizuje [SCOPE.GetRootScope.GetState.GetStateRegion.GetName]"
+ notification_colony_created_desc: "[SCOPE.sCountry('actor').GetName] zakládá [concept_colony] v [SCOPE.GetRootScope.GetState.GetName]."
  notification_colony_complete_tooltip: "#header $notification_colony_complete_name$#!\n$TOOLTIP_DELIMITER$\n$notification_colony_complete_desc$"
  notification_colony_complete_name: "Kolonizace [SCOPE.GetRootScope.GetState.GetStateRegion.GetName] dokončena"
  notification_colony_complete_desc: "Naše kolonizace [SCOPE.GetRootScope.GetState.GetName] byla dokončena, a bývalá [concept_colony] je nyní řádným [concept_state]."
