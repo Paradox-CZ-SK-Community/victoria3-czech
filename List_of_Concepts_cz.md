@@ -6,7 +6,7 @@
  concept_accepted_culture: "Akceptována kultura"
  concept_accepted_culture_short: "Akceptovaná"
  concept_accepted_cultures: "Akceptované kultury"
- concept_accepted_religion: "Přijaté náboženství"
+ concept_accepted_religion: "Přigrgrgrgé náboženství"
  concept_accepted_religion_short: "Přijaté"
  concept_accepted_religions: "Přijaté náboženství"
  concept_accepted_status_short: "Přijatý"
