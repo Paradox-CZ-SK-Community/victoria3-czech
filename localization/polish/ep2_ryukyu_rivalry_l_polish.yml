@@ -1,92 +1,92 @@
 ﻿l_polish:
- je_ryukyu_rivalry_score_bar: "#tooltippable;tooltip:ryukyu_rivalry_sway_tt #b Vliv#!#! nad [SCOPE.sCountry('ryukyu_scope').GetName]" # todo: CHANGED
- je_ryukyu_rivalry_score_bar_desc: "[SCOPE.sCountry('japan_scope').GetNameNoFormatting]" # todo: NEW TRANSLATION
- je_ryukyu_rivalry_score_bar_second_desc: "[SCOPE.sCountry('china_scope').GetNameNoFormatting]" # todo: NEW TRANSLATION
- je_ryukyu_rivalry_progress_bar: "Ryukyu #tooltippable;tooltip:ryukyu_rivalry_assertiveness_tt #b Prosazování#!#!" # todo: CHANGED
- je_ryukyu_rivalry_progress_bar_desc: "Ryukyu prohlašuje neutralitu #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#!" # todo: CHANGED
- je_ryukyu_rivalry_reaffirm_suzerainty_button: "[SCOPE.GetRootScope.GetCountry.GetCustom('ryukyu_rivalry_reaffirm_suzerainty')]" # todo: NEW TRANSLATION
- je_ryukyu_rivalry_reaffirm_suzerainty_japan: "Potvrdit svrchovanost" # todo: NEW TRANSLATION
- je_ryukyu_rivalry_reaffirm_suzerainty_china: "Potvrdit tributární svazky" # todo: CHANGED
- je_ryukyu_rivalry_reaffirm_suzerainty_button_desc: "Dvůr Ryukyu příznivě naklání k našemu protivníkovi. Musíme jim připomenout jejich povinnosti vůči naší sféře a přivést je zpět pod náš vliv." # todo: CHANGED
- ryukyu_rivalry_reaffirm_suzerainty_button_tt: "[ROOT.GetCountry.GetName] uplatňuje menší #tooltippable;tooltip:ryukyu_rivalry_sway_tt #b Vliv#!#! nad [SCOPE.sCountry('ryukyu_scope').GetName] než jeho protivník" # todo: CHANGED
- ryukyu_rivalry_small_influence_gain_self_tt: "[ROOT.GetCountry.GetName] získává #green 2#! #tooltippable;tooltip:ryukyu_rivalry_sway_tt #b Vliv#!#!" # todo: NEW TRANSLATION
- ryukyu_rivalry_medium_influence_gain_self_tt: "[ROOT.GetCountry.GetName] získává #green 3#! měsíčně #tooltippable;tooltip:ryukyu_rivalry_sway_tt #b Vliv#!#! po dobu #v 5 let#!" # todo: NEW TRANSLATION
- ryukyu_rivalry_large_influence_gain_self_tt: "[ROOT.GetCountry.GetName] získává #green 3#! měsíčně #tooltippable;tooltip:ryukyu_rivalry_sway_tt #b Vliv#!#! až do konce [concept_journal_entry]" # todo: NEW TRANSLATION
- ryukyu_rivalry_small_influence_loss_self_tt: "[ROOT.GetCountry.GetName] ztratilo #red 1#! #tooltippable;tooltip:ryukyu_rivalry_sway_tt #b Vliv#!#!" # todo: CHANGED
- ryukyu_rivalry_medium_influence_loss_self_tt: "[ROOT.GetCountry.GetName] ztratilo #red 2#! #tooltippable;tooltip:ryukyu_rivalry_sway_tt #b Vliv#!#!" # todo: CHANGED
- ryukyu_rivalry_large_influence_loss_self_tt: "[ROOT.GetCountry.GetName] ztratilo #red 10#! #tooltippable;tooltip:ryukyu_rivalry_sway_tt #b Vliv#!#!" # todo: CHANGED
- ryukyu_rivalry_large_influence_loss_japan_tt: "[SCOPE.sCountry('japan_scope').GetName] ztrácí #red 10#! #tooltippable;tooltip:ryukyu_rivalry_sway_tt #b Vliv#!#!" # todo: NEW TRANSLATION
- ryukyu_rivalry_large_influence_loss_china_tt: "[SCOPE.sCountry('china_scope').GetName] ztrácí #red 10#! #tooltippable;tooltip:ryukyu_rivalry_sway_tt #b Vliv#!#!" # todo: NEW TRANSLATION
- ryukyu_rivalry_send_general_tt: "[ROOT.GetCountry.GetName] natrvalo přiděluje [concept_general] do [SCOPE.sCountry('ryukyu_scope').GetName]" # todo: CHANGED
- je_ryukyu_rivalry_sway_merchants_button: "Poslat obchodní dozorce" # todo: CHANGED
- je_ryukyu_rivalry_sway_merchants_button_desc: "Dozorem nad přístavem Naha můžeme vyslat vyslance na dvůr, aby ovlivňovali, které zahraniční mocnosti získají přístup k obchodu a tributům." # todo: CHANGED
- ryukyu_rivalry_sway_merchants_button_tt: "[ROOT.GetCountry.GetName] vlastní úroveň #v 2#! nebo vyšší [GetBuildingType('building_port').GetName] v [SCOPE.sCountry('ryukyu_scope').GetAdjective] [concept_capital_state]" # todo: CHANGED
- je_ryukyu_rivalry_inspect_defenses_button: "Prohlédnout pobřežní opevnění" # todo: CHANGED
- je_ryukyu_rivalry_inspect_defenses_button_desc: "Po zajištění vojenského přístupu můžeme poslat důvěryhodného generála, aby prozkoumal opevnění Ryukyu a zajistil, že hradby a strážní věže odrážejí náš dohled a strategické záměry." # todo: CHANGED
- ryukyu_rivalry_inspect_defenses_button_tt: "[ROOT.GetCountry.GetName] má #v Military Access#! [concept_treaty] s [SCOPE.sCountry('ryukyu_scope').GetName]" # todo: NEW TRANSLATION
- je_ryukyu_rivalry_honor_kikoeogimi_button: "Uctít Kikoe-ōgimi" # todo: NEW TRANSLATION
- je_ryukyu_rivalry_honor_kikoeogimi_button_desc: "Přinést tribut Kikoe-ōgimi, jejíž autorita nad dvorskými rituály a posvátnými obřady může dodat váhu našemu vlivu v radách Ryukyu." # todo: CHANGED
- modifier_ryukyu_rivalry_overreach: "Přehnaná svrchovanost" # todo: CHANGED
- modifier_ryukyu_rivalry_landowner_discontent: "Znepokojení pozemkových vlastníků (Ryukyu)" # todo: CHANGED
- modifier_ryukyu_rivalry_merchant_influence_strain: "Zatížení přístavního vlivu" # todo: CHANGED
- modifier_ryukyu_strained_diplomatic_corps: "Zesílená diplomatická přítomnost" # todo: NEW TRANSLATION
- modifier_ryukyu_rivalry_failed_ryukyu: "Ztráta Ryukyu" # todo: CHANGED
- modifier_ryukyu_rivalry_succeeded_ryukyu: "Získání Ryukyu" # todo: CHANGED
- modifier_ryukyu_rivalry_officer_training: "Kontrola ryukyuanských opevnění" # todo: CHANGED
- modifier_ryukyu_rivalry_secured_neutrality: "Zajištěná neutralita" # todo: NEW TRANSLATION
- modifier_ryukyu_rivalry_southern_secured: "Jižní přístupy zajištěny" # todo: NEW TRANSLATION
- modifier_ryukyu_rivalry_scholars_pleased: "Tributární řád zachován" # todo: CHANGED
- modifier_ryukyu_rivalry_honor_kikoeogimi: "Ceremoniální vazby" # todo: CHANGED
- modifier_ryukyu_rivalry_diplomatic_appeasement: "Diplomatické umírnění" # todo: CHANGED
- modifier_ryukyu_rivalry_armed_forces_discontent: "Znepokojení kvůli nečinnosti" # todo: CHANGED
- ryukyu_rivalry.1.t: "Tributární úvahy" # todo: CHANGED
- ryukyu_rivalry.1.d: "[SCOPE.sCountry('ryukyu_scope').GetName] postupně upřednostňuje [ROOT.GetCountry.GetName]. V reakci [SCOPE.sCountry('rival_scope').GetName] urychlila své diplomatické snahy, projevujíc úctu a potichu posilujíc povinnosti tributárního vztahu [SCOPE.sCountry('ryukyu_scope').GetNameNoFormatting]." # todo: CHANGED
- ryukyu_rivalry.1.f: "Pečetěné krabice byly v ryukyuanské síni uloženy s velkou pečlivostí. Dvořané si šeptali za paravány, zatímco se dopisy četly nahlas: jeden zapečetěný červenou pečetí Číny, druhý nesoucí pečlivou kaligrafii Japonska. Každou větou vytyčovali povinnosti a sliby, když se dvě mocnosti snažily přitáhnout království na svou stranu." # todo: CHANGED
- ryukyu_rivalry.1.a: "Vystosovat formální protest [SCOPE.sCountry('rival_scope').GetName]." # todo: CHANGED
- ryukyu_rivalry.1.b: "Využít naše zavedené vazby v [SCOPE.sCountry('ryukyu_scope').GetName]." # todo: NEW TRANSLATION
- ryukyu_rivalry.1.c: "Připomenout dvoru naši dlouhodobou patronaci." # todo: CHANGED
- ryukyu_rivalry.1.e: "Tato záležitost nevyžaduje zásah." # todo: NEW TRANSLATION
- ryukyu_rivalry.1.tt1: "[SCOPE.sCountry('ryukyu_scope').GetName] je podřízené [ROOT.GetCountry.GetName] s [concept_liberty_desire] nižší než #v 25#!" # todo: CHANGED
- ryukyu_rivalry.1.tt2: "[SCOPE.sCountry('ryukyu_scope').GetName] není podřízené [ROOT.GetCountry.GetName] s alespoň #v Amicable#! [concept_relations]" # todo: CHANGED
- ryukyu_rivalry.1.tt3: "[ROOT.GetCountry.GetName] vlastní alespoň 3 [Concept('concept_building','$concept_buildings$')] v [SCOPE.sCountry('ryukyu_scope').GetCapital.GetName]" # todo: NEW TRANSLATION
- ryukyu_rivalry.2.t: "Rivalita v přístavech" # todo: CHANGED
- ryukyu_rivalry.2.d: "Přítomnost [SCOPE.sCountry('rival_scope').GetAdjective] vyslanců v přístavech [SCOPE.sCountry('ryukyu_scope').GetName] přilákala pozornost a spolupráci mnoha [GetCulture('ryukyuan').GetName] obchodníků, čímž posílila jejich postavení v očích dvora. Náš vlastní vliv se naopak snížil." # todo: CHANGED
- ryukyu_rivalry.2.f: "Obchodní knihy byly zavírány a znovu otevírány pod jinými pečetěmi. Ti, kdo kdysi hledali naše záruky, nyní setrvávali v jiných přijímacích síních, hovoříce o upravených clech a bezpečnějším průchodu. Zdálo se, že mince našly přesvědčivějšího správce." # todo: CHANGED
- ryukyu_rivalry.2.a: "Nekalá hra." # todo: CHANGED
- ryukyu_rivalry.3.t: "Návštěva generála v [SCOPE.sCountry('ryukyu_scope').GetNameNoFormatting]" # todo: NEW TRANSLATION
- ryukyu_rivalry.3.d: "Generál, [SCOPE.sCharacter('ryukyu_general_scope').GetFullName], se svým doprovodem důstojníků dorazil do [SCOPE.sCountry('ryukyu_scope').GetName], zjevně aby prověřil pobřežní opevnění. Jeho přítomnost byla přijata s úctivým podřízením, posilujíc vliv [SCOPE.sCountry('rival_scope').GetName] u dvora a nenápadně oslabujíc ten náš." # todo: CHANGED
- ryukyu_rivalry.3.f: "Generál kráčel po hradbách se svými [SCOPE.sCharacter('ryukyu_general_scope').GetHerHis] důstojníky, zapisujíc si každé dělo a strážní věž. Ryukyuanské síly se postavily do formace, dobře si vědomy hodnotících očí. Každý úkon a pozdrav pomáhal utužovat neviditelné nitě tkané mezi oběma mocnostmi." # todo: CHANGED
- ryukyu_rivalry.3.a: "Nebezpečné vyhrocení." # todo: CHANGED
- ryukyu_rivalry_risk_of_confrontation: "@warning! If forces from both [SCOPE.sCountry('china_scope').GetName] and [SCOPE.sCountry('japan_scope').GetName] are inspecting coastal defenses, a #r confrontation#! may break out" # todo: CHANGED
- ryukyu_rivalry.4.t: "Návštěva generála" # todo: NEW TRANSLATION
- ryukyu_rivalry.4.d: "Generál, [SCOPE.sCharacter('ryukyu_general_scope').GetFullName], se svým doprovodem důstojníků z [SCOPE.sCountry('from_scope').GetName] byl přijat v [SCOPE.sCountry('ryukyu_scope').GetName], připraven prověřit naše pobřežní opevnění. Jeho přítomnost byla přijata s úctivým podřízením." # todo: CHANGED
- ryukyu_rivalry.4.f: "$ryukyu_rivalry.3.f$" # todo: NEW TRANSLATION
- ryukyu_rivalry.4.a: "Pozorně je sledovat." # todo: CHANGED
- ryukyu_rivalry_officer_arrives: "[concept_general] z [SCOPE.sCountry('from_scope').GetName] je nyní k dispozici" # todo: CHANGED
- ryukyu_rivalry.5.t: "Osud [SCOPE.sCountry('ryukyu_scope').GetNameNoFormatting]" # todo: NEW TRANSLATION
- ryukyu_rivalry.5.d_victor: "Naše úsilí v [SCOPE.sCountry('ryukyu_scope').GetName] přineslo ovoce. Prostřednictvím trvalého diplomatického, ekonomického a politického tlaku nyní jejich dvůr hledí k nám pro vedení a otázka jejich suverenity byla vyřešena v náš prospěch." # todo: CHANGED
- ryukyu_rivalry.5.d_loser: "Navzdory našemu úsilí [SCOPE.sCountry('victor_scope').GetName] získala rozhodující vliv nad [SCOPE.sCountry('ryukyu_scope').GetName]. Jejich dvůr přijal novou politickou realitu, umisťujíc ostrovy pevně do sféry [SCOPE.sCountry('victor_scope').GetNameNoFormatting]." # todo: CHANGED
- ryukyu_rivalry.5.d_ryu: "Rovnováha, kterou jsme se snažili udržet, již není možná. Pod rostoucím tlakem [SCOPE.sCountry('victor_scope').GetName] náš dvůr přijal nové politické uspořádání. Budoucnost [SCOPE.sCountry('ryukyu_scope').GetName] se nyní bude odvíjet pod jejich vzestupem." # todo: CHANGED
- ryukyu_rivalry.5.f_annexed: "Proklamace, psané inkoustem ještě čerstvým na pečetích vydaných v [SCOPE.sCountry('victor_scope').GetCapital.GetName], byly přečteny na tržišti v Nahě. [SCOPE.sCountry('ryukyu_scope').GetAdjectiveNoFormatting] prapory byly staženy a nahrazeny standarem vládce. Do večera byla zřízena správní kancelář a vyvěšena nová nařízení." # todo: CHANGED
- ryukyu_rivalry.5.f_subject: "Proklamace, psané inkoustem ještě čerstvým na pečetích vydaných v [SCOPE.sCountry('victor_scope').GetCapital.GetNameNoFormatting], byly přečteny na tržišti v Nahě. Každý dekret vymezoval nové postavení [SCOPE.sCountry('ryukyu_scope').GetName] v rámci říše. Dlouho tributární k vzdáleným dvorům, království nyní vidělo své úředníky vázané formálními povinnostmi vůči větší moci. Do večera byl jeho směr určen." # todo: CHANGED
- ryukyu_rivalry_ryukyu_vassalise_tt: "[SCOPE.sCountry('ryukyu_scope').GetName] se stává [SCOPE.sCountry('victor_scope').GetName] [concept_puppet]" # todo: NEW TRANSLATION
- ryukyu_rivalry_ryukyu_transfer_subject_tt: "[SCOPE.sCountry('ryukyu_scope').GetName] je převedeno jako [concept_subject] na [SCOPE.sCountry('victor_scope').GetName]" # todo: NEW TRANSLATION
- ryukyu_rivalry_ryukyu_annex_tt: "[SCOPE.sCountry('victor_scope').GetName] anektuje [SCOPE.sCountry('ryukyu_scope').GetName]" # todo: CHANGED
- ryukyu_rivalry.5.a: "Tak je rozhodnuto." # todo: NEW TRANSLATION
- ryukyu_rivalry.6.t: "Konfrontace v [SCOPE.sCountry('ryukyu_scope').GetCapital.GetNameNoFormatting]" # todo: NEW TRANSLATION
- ryukyu_rivalry.6.d_brawl: "Důstojníci vyslaní [SCOPE.sCountry('japan_scope').GetName] a [SCOPE.sCountry('china_scope').GetName] se dali do potyčky při inspekci pobřežních opevnění [SCOPE.sCountry('ryukyu_scope').GetName]. Spor vyústil v jednu smrt, což vyvolalo úzkostné pohledy na dvoře Ryukyu." # todo: CHANGED
- ryukyu_rivalry.6.d_accident: "Síly z [SCOPE.sCountry('japan_scope').GetName] a [SCOPE.sCountry('china_scope').GetName] nasazené k inspekci pobřežních opevnění se překrývaly na stejných opevněních v [SCOPE.sCountry('ryukyu_scope').GetName], způsobujíc zmatek v posádce a krátkou výměnu palby." # todo: CHANGED
- ryukyu_rivalry.6.d_fire: "V ubytování přiděleném zahraničním inspekčním misím v [SCOPE.sCountry('ryukyu_scope').GetName] vypukl požár, který pohltil čtvrti [SCOPE.sCountry('japan_scope').GetAdjective] a [SCOPE.sCountry('china_scope').GetAdjective] kontingentů. Příčina zůstává nejasná, ač místní úředníci šeptají o špatně umístěných lucernách." # todo: CHANGED
- ryukyu_rivalry.6.f: "Důstojník Kaimon běhal mezi strážními věžemi a sklady, předávajíc rozkazy strážím. Každý pokyn byl vykřičen, popřen a rychle zopakován. Ač nakonec nastal klid, Kaimon si znovu uvědomil, jak mohou konkurenční mise mezi cizími mocnostmi odhalit křehkou situaci Ryukyu." # todo: CHANGED
- ryukyu_rivalry.6.a: "Napětí eskaluje." # todo: NEW TRANSLATION
- ryukyu_rivalry_ryukyu_confrontation_tt1: "[SCOPE.sCountry('japan_scope').GetAdjective] a [SCOPE.sCountry('china_scope').GetAdjective] [concept_infamy] se zvýšila o #v 6#!" # todo: CHANGED
- ryukyu_rivalry.7.t: "Ryukyuanské nařízení" # todo: CHANGED
- ryukyu_rivalry.7.d_ryukyu: "Po letech pečlivého sledování a nenápadné diplomacie náš dvůr oznámil úmysl spravovat své záležitosti bez vnějšího vměšování. Dvůr stanovil pevné hranice cizímu vlivu a zajistil prvenství vlastních rituálů, ministrů a tradičních rad. Království si nyní razí vlastní cestu." # todo: CHANGED
- ryukyu_rivalry.7.d: "Po letech pečlivého sledování a nenápadné diplomacie se [SCOPE.sCountry('ryukyu_scope').GetName] osvobodilo od našeho vlivu a prohlásilo úmysl spravovat své záležitosti bez vnějšího vměšování. Dvůr stanovil pevné limity naší přítomnosti, zachovávajíc své rituály, ministry a tradiční rady, zatímco se království odvrací od naší autority." # todo: CHANGED
- ryukyu_rivalry.7.f: "Pečeti a registry tributů byly roztrhány a rozházeny po leštěných podlahách hradu Shuri. V audienčních síních byl stále cítit vliv cizích mocností, ale už nediktoval kroky. Cesta Ryukyu by se rozvíjela jako křehká neutralita, získaná trpělivou diplomacií." # todo: CHANGED
- ryukyu_rivalry.7.a: "Otázka věrnosti je vyřešena." # todo: NEW TRANSLATION
- ryukyu_rivalry.7.b: "Možnost použití síly nám zůstává." # todo: CHANGED
- ryukyu_rivalry.8.t: "Skryté území" # todo: CHANGED
- ryukyu_rivalry.8.d: "S otevřením přístavů [SCOPE.sCountry('japan_scope').GetName] znovu vyvstala dávno spící otázka loajality [SCOPE.sCountry('ryukyu_scope').GetName]. Po generace království kráčelo opatrnou cestou: navenek tributární [SCOPE.sCountry('china_scope').GetName], přitom tiše udržující věrnost [SCOPE.sCountry('japan_scope').GetNameNoFormatting]. Obě mocnosti nyní musí zvážit, jak prosadit svůj vliv." # todo: CHANGED
- ryukyu_rivalry.8.f: "Lampiony zářily podél chodeb hradu Shuri, osvětlujíce vermilionové trámy, které králové Chūzan povýšili za svých velkých dnů. Pod malovanými stropy úředníci kladli tribut vedle dekretů Satsumy. Dvůr dlouho balancoval mezi investiturou ze Středního království a stínem Kagoshimy. Klid zatím přetrvával, ale otázka loajality brzy požádá o plnou pozornost." # todo: CHANGED
- ryukyu_rivalry.8.a: "Záležitost zůstává nevyřešená." # todo: NEW TRANSLATION
+ je_ryukyu_rivalry_score_bar: "#tooltippable;tooltip:ryukyu_rivalry_sway_tt #b Vliv#!#! na [SCOPE.sCountry('ryukyu_scope').GetName]"
+ je_ryukyu_rivalry_score_bar_desc: "[SCOPE.sCountry('japan_scope').GetNameNoFormatting]"
+ je_ryukyu_rivalry_score_bar_second_desc: "[SCOPE.sCountry('china_scope').GetNameNoFormatting]"
+ je_ryukyu_rivalry_progress_bar: "Rjúkjúská #tooltippable;tooltip:ryukyu_rivalry_assertiveness_tt #b asertivita#!#!"
+ je_ryukyu_rivalry_progress_bar_desc: "Rjúkjú prosazuje neutralitu #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#!"
+ je_ryukyu_rivalry_reaffirm_suzerainty_button: "[SCOPE.GetRootScope.GetCountry.GetCustom('ryukyu_rivalry_reaffirm_suzerainty')]"
+ je_ryukyu_rivalry_reaffirm_suzerainty_japan: "Znovu potvrdit svrchovanost"
+ je_ryukyu_rivalry_reaffirm_suzerainty_china: "Znovu potvrdit tributární vazby"
+ je_ryukyu_rivalry_reaffirm_suzerainty_button_desc: "Rjúkjúský dvůr upřednostňuje našeho protivníka. Musíme jim připomenout jejich závazky vůči naší doméně a vrátit je pod náš vliv."
+ ryukyu_rivalry_reaffirm_suzerainty_button_tt: "[ROOT.GetCountry.GetName] má menší #tooltippable;tooltip:ryukyu_rivalry_sway_tt #b vliv#!#! na [SCOPE.sCountry('ryukyu_scope').GetName] než její protivník"
+ ryukyu_rivalry_small_influence_gain_self_tt: "[ROOT.GetCountry.GetName] získá #green 2#! #tooltippable;tooltip:ryukyu_rivalry_sway_tt #b vlivu#!#!"
+ ryukyu_rivalry_medium_influence_gain_self_tt: "[ROOT.GetCountry.GetName] získá #green 3#! měsíčního #tooltippable;tooltip:ryukyu_rivalry_sway_tt #b vlivu#!#! po dobu #v 5 let#!"
+ ryukyu_rivalry_large_influence_gain_self_tt: "[ROOT.GetCountry.GetName] získá #green 3#! měsíčního #tooltippable;tooltip:ryukyu_rivalry_sway_tt #b vlivu#!#! až do konce [concept_journal_entry]"
+ ryukyu_rivalry_small_influence_loss_self_tt: "[ROOT.GetCountry.GetName] ztrácí #red 1#! #tooltippable;tooltip:ryukyu_rivalry_sway_tt #b vlivu#!#!"
+ ryukyu_rivalry_medium_influence_loss_self_tt: "[ROOT.GetCountry.GetName] ztrácí #red 2#! #tooltippable;tooltip:ryukyu_rivalry_sway_tt #b vlivu#!#!"
+ ryukyu_rivalry_large_influence_loss_self_tt: "[ROOT.GetCountry.GetName] ztrácí #red 10#! #tooltippable;tooltip:ryukyu_rivalry_sway_tt #b vlivu#!#!"
+ ryukyu_rivalry_large_influence_loss_japan_tt: "[SCOPE.sCountry('japan_scope').GetName] ztrácí #red 10#! #tooltippable;tooltip:ryukyu_rivalry_sway_tt #b vlivu#!#!"
+ ryukyu_rivalry_large_influence_loss_china_tt: "[SCOPE.sCountry('china_scope').GetName] ztrácí #red 10#! #tooltippable;tooltip:ryukyu_rivalry_sway_tt #b vlivu#!#!"
+ ryukyu_rivalry_send_general_tt: "[ROOT.GetCountry.GetName] trvale přidělí [concept_general] do [SCOPE.sCountry('ryukyu_scope').GetName]"
+ je_ryukyu_rivalry_sway_merchants_button: "Vyslat obchodní dozorce"
+ je_ryukyu_rivalry_sway_merchants_button_desc: "Dohledem nad přístavem Naha můžeme u dvora umístit vyslance, kteří ovlivní, které cizí mocnosti získají přístup k obchodu a tributu."
+ ryukyu_rivalry_sway_merchants_button_tt: "[ROOT.GetCountry.GetName] vlastní [GetBuildingType('building_port').GetName] úrovně #v 2#! nebo vyšší v [SCOPE.sCountry('ryukyu_scope').GetAdjective] [concept_capital_state]"
+ je_ryukyu_rivalry_inspect_defenses_button: "Prověřit pobřežní obranu"
+ je_ryukyu_rivalry_inspect_defenses_button_desc: "Se zajištěným vojenským přístupem můžeme vyslat důvěryhodného generála, aby prozkoumal rjúkjúská opevnění a zajistil, že hradby a strážní věže budou odrážet náš dohled a strategický záměr."
+ ryukyu_rivalry_inspect_defenses_button_tt: "[ROOT.GetCountry.GetName] má s [SCOPE.sCountry('ryukyu_scope').GetName] [concept_treaty] #v Vojenský přístup#!"
+ je_ryukyu_rivalry_honor_kikoeogimi_button: "Uctít Kikoe-ógimi"
+ je_ryukyu_rivalry_honor_kikoeogimi_button_desc: "Vzdejte poctu Kikoe-ógimi, jejíž autorita nad dvorními rituály a posvátnými obřady může dodat váhu našemu vlivu v rjúkjúských radách."
+ modifier_ryukyu_rivalry_overreach: "Přehnaná svrchovanost"
+ modifier_ryukyu_rivalry_landowner_discontent: "Obavy z rjúkjúské rivality"
+ modifier_ryukyu_rivalry_merchant_influence_strain: "Břemeno přístavního vlivu"
+ modifier_ryukyu_strained_diplomatic_corps: "Zesílená diplomatická přítomnost"
+ modifier_ryukyu_rivalry_failed_ryukyu: "Ztracené Rjúkjú"
+ modifier_ryukyu_rivalry_succeeded_ryukyu: "Získané Rjúkjú"
+ modifier_ryukyu_rivalry_officer_training: "Prověřování rjúkjúské obrany"
+ modifier_ryukyu_rivalry_secured_neutrality: "Zajištěná neutralita"
+ modifier_ryukyu_rivalry_southern_secured: "Zajištěné jižní přístupy"
+ modifier_ryukyu_rivalry_scholars_pleased: "Tributární řád zachován"
+ modifier_ryukyu_rivalry_honor_kikoeogimi: "Obřadní provázání"
+ modifier_ryukyu_rivalry_diplomatic_appeasement: "Diplomatické usmiřování"
+ modifier_ryukyu_rivalry_armed_forces_discontent: "Obavy z nečinnosti"
+ ryukyu_rivalry.1.t: "Tributární rokování"
+ ryukyu_rivalry.1.d: "[SCOPE.sCountry('ryukyu_scope').GetName] stále více upřednostňuje [ROOT.GetCountry.GetAltAdjective('A')]. V reakci na to [SCOPE.sCountry('rival_scope').GetName] urychlila své vlastní diplomatické úsilí, poskytuje projevy úcty a zároveň tiše posiluje závazky tributárního vztahu [SCOPE.sCountry('ryukyu_scope').GetNameNoFormatting]."
+ ryukyu_rivalry.1.f: "Zapečetěné schránky byly s velkou péčí rozmístěny v rjúkjúské síni. Dvořané šeptali za zástěnami, zatímco byly nahlas čteny dopisy: jeden zapečetěný rudě otisknutým písmem Číny, druhý nesoucí pečlivou kaligrafii Japonska. Každá fráze vymezovala povinnosti a sliby, zatímco se dvě mocnosti snažily přitáhnout království na svou stranu."
+ ryukyu_rivalry.1.a: "Podejte formální protest [SCOPE.sCountry('rival_scope').GetName]."
+ ryukyu_rivalry.1.b: "Využijte naše zavedené vazby v [SCOPE.sCountry('ryukyu_scope').GetName]."
+ ryukyu_rivalry.1.c: "Připomeňte dvoru naše dlouhodobé patronství."
+ ryukyu_rivalry.1.e: "Tato záležitost si nezaslouží zásah."
+ ryukyu_rivalry.1.tt1: "[SCOPE.sCountry('ryukyu_scope').GetName] je závislou zemí [ROOT.GetCountry.GetName] s [concept_liberty_desire] nižší než #v 25#!"
+ ryukyu_rivalry.1.tt2: "[SCOPE.sCountry('ryukyu_scope').GetName] není závislou zemí [ROOT.GetCountry.GetName] a má alespoň #v přátelské#! [concept_relations]"
+ ryukyu_rivalry.1.tt3: "[ROOT.GetCountry.GetName] vlastní alespoň 3 [Concept('concept_building','$concept_buildings$')] v [SCOPE.sCountry('ryukyu_scope').GetCapital.GetName]"
+ ryukyu_rivalry.2.t: "Rivalita v přístavech"
+ ryukyu_rivalry.2.d: "Přítomnost [SCOPE.sCountry('rival_scope').GetAdjective] vyslanců v přístavech [SCOPE.sCountry('ryukyu_scope').GetName] přitáhla pozornost a spolupráci mnoha [GetCulture('ryukyuan').GetName] obchodníků, čímž posílila jejich postavení v očích dvora. Náš vlastní vliv se naopak zmenšil."
+ ryukyu_rivalry.2.f: "Kupecké účetní knihy byly uzavřeny a znovu otevřeny pod jinými pečetěmi. Ti, kdo kdysi hledali naše záruky, nyní prodlévali v jiných přijímacích síních a mluvili o upravených clech a bezpečnějším průjezdu. Zdálo se, že mince našla přesvědčivějšího správce."
+ ryukyu_rivalry.2.a: "Nekalá hra."
+ ryukyu_rivalry.3.t: "Hostující generál v [SCOPE.sCountry('ryukyu_scope').GetNameNoFormatting]"
+ ryukyu_rivalry.3.d: "Do [SCOPE.sCountry('ryukyu_scope').GetName] dorazil generál [SCOPE.sCharacter('ryukyu_general_scope').GetFullName] s družinou důstojníků, údajně aby prověřil pobřežní obranu. Jejich přítomnost byla přijata s uctivou podřízeností, což posílilo vliv [SCOPE.sCountry('rival_scope').GetName] u dvora a nenápadně oslabilo náš vlastní."
+ ryukyu_rivalry.3.f: "Generál kráčel po hradbách se [SCOPE.sCharacter('ryukyu_general_scope').GetHerHis] důstojníky a zaznamenával si každé dělo i strážní věž. Rjúkjúské síly se řadily do formace, dobře si vědomy hodnotících pohledů. Každé gesto a každý salut pomáhaly utahovat neviditelná vlákna spletená mezi oběma mocnostmi."
+ ryukyu_rivalry.3.a: "Nebezpečná eskalace."
+ ryukyu_rivalry_risk_of_confrontation: "@warning! Pokud budou pobřežní obranu prověřovat síly z [SCOPE.sCountry('china_scope').GetName] i [SCOPE.sCountry('japan_scope').GetName], může vypuknout #r konfrontace#!"
+ ryukyu_rivalry.4.t: "Hostující generál"
+ ryukyu_rivalry.4.d: "V [SCOPE.sCountry('ryukyu_scope').GetName] byl přijat generál [SCOPE.sCharacter('ryukyu_general_scope').GetFullName] s družinou důstojníků ze země [SCOPE.sCountry('from_scope').GetName], dychtivý prověřit naši pobřežní obranu. Jejich přítomnost byla přijata s uctivou podřízeností."
+ ryukyu_rivalry.4.f: "$ryukyu_rivalry.3.f$"
+ ryukyu_rivalry.4.a: "Bedlivě je sledujte."
+ ryukyu_rivalry_officer_arrives: "[concept_general] ze země [SCOPE.sCountry('from_scope').GetName] se stane dostupným"
+ ryukyu_rivalry.5.t: "Osud [SCOPE.sCountry('ryukyu_scope').GetNameNoFormatting]"
+ ryukyu_rivalry.5.d_victor: "Naše úsilí v [SCOPE.sCountry('ryukyu_scope').GetName] přineslo ovoce. Díky trvalému diplomatickému, ekonomickému a politickému tlaku se jejich dvůr nyní obrací k nám pro vedení a otázka jejich svrchovanosti byla vyřešena v náš prospěch."
+ ryukyu_rivalry.5.d_loser: "Navzdory našemu úsilí si [SCOPE.sCountry('victor_scope').GetName] zajistila rozhodující vliv nad [SCOPE.sCountry('ryukyu_scope').GetName]. Jejich dvůr přijal novou politickou realitu, která ostrovy pevně zařazuje do sféry [SCOPE.sCountry('victor_scope').GetNameNoFormatting]."
+ ryukyu_rivalry.5.d_ryu: "Rovnováhu, kterou jsme se snažili udržet, již nelze zachovat. Pod rostoucím tlakem [SCOPE.sCountry('victor_scope').GetName] náš dvůr přijal nové politické uspořádání. Budoucnost [SCOPE.sCountry('ryukyu_scope').GetName] se nyní bude odvíjet pod jejich převahou."
+ ryukyu_rivalry.5.f_annexed: "Proklamace, psané inkoustem stále čerstvým na pečetích vydaných v [SCOPE.sCountry('victor_scope').GetCapital.GetName], byly čteny na tržním náměstí v Naze. [SCOPE.sCountry('ryukyu_scope').GetAdjectiveNoFormatting] prapory byly staženy a nahrazeny vladařskou standartou. Do setmění byl zřízen správní úřad a vyvěšeny nové edikty."
+ ryukyu_rivalry.5.f_subject: "Proklamace, psané inkoustem stále čerstvým na pečetích vydaných v [SCOPE.sCountry('victor_scope').GetCapital.GetNameNoFormatting], byly čteny na tržním náměstí v Naze. Každý dekret měl vymezit nové místo [SCOPE.sCountry('ryukyu_scope').GetName] v rámci říše. Království, dlouho tributární vůči vzdáleným dvorům, nyní vidělo své rychtáře svázané formálními závazky k větší mocnosti. Do setmění byl jeho směr určen."
+ ryukyu_rivalry_ryukyu_vassalise_tt: "[SCOPE.sCountry('ryukyu_scope').GetName] se stane [concept_puppet] země [SCOPE.sCountry('victor_scope').GetName]"
+ ryukyu_rivalry_ryukyu_transfer_subject_tt: "[SCOPE.sCountry('ryukyu_scope').GetName] bude převedena jako [concept_subject] k [SCOPE.sCountry('victor_scope').GetName]"
+ ryukyu_rivalry_ryukyu_annex_tt: "[SCOPE.sCountry('victor_scope').GetName] anektuje [SCOPE.sCountry('ryukyu_scope').GetName]"
+ ryukyu_rivalry.5.a: "Tak je rozhodnuto."
+ ryukyu_rivalry.6.t: "Konfrontace v [SCOPE.sCountry('ryukyu_scope').GetCapital.GetNameNoFormatting]"
+ ryukyu_rivalry.6.d_brawl: "Důstojníci vyslaní zeměmi [SCOPE.sCountry('japan_scope').GetName] a [SCOPE.sCountry('china_scope').GetName] se při prověřování pobřežní obrany [SCOPE.sCountry('ryukyu_scope').GetName] dostali do potyčky. Spor si vyžádal smrt a vyvolal znepokojené pohledy rjúkjúského dvora."
+ ryukyu_rivalry.6.d_accident: "Síly ze zemí [SCOPE.sCountry('japan_scope').GetName] a [SCOPE.sCountry('china_scope').GetName], vyslané k prověření pobřežní obrany, se střetly u stejných opevnění v [SCOPE.sCountry('ryukyu_scope').GetName], což způsobilo zmatek mezi posádkou a krátkou přestřelku."
+ ryukyu_rivalry.6.d_fire: "V ubikacích přidělených cizím inspekčním misím v [SCOPE.sCountry('ryukyu_scope').GetName] vypukl požár, který pohltil čtvrti [SCOPE.sCountry('japan_scope').GetAdjective] i [SCOPE.sCountry('china_scope').GetAdjective] kontingentů. Příčina zůstává nejasná, ačkoli místní úředníci šeptají o špatně umístěných lucernách."
+ ryukyu_rivalry.6.f: "Důstojník Kaimon běhal mezi strážními věžemi a skladišti a předával rozkazy strážím. Každý příkaz byl vykřičen, popřen a v rychlém sledu opakován. Ačkoli se nakonec vrátil klid, Kaimon si připomněl, jak soupeřící mise cizích mocností mohou odhalit křehkou situaci Rjúkjú."
+ ryukyu_rivalry.6.a: "Napětí se stupňuje."
+ ryukyu_rivalry_ryukyu_confrontation_tt1: "[SCOPE.sCountry('japan_scope').GetAdjective] a [SCOPE.sCountry('china_scope').GetAdjective] [concept_infamy] se zvýšila o #v 6#!"
+ ryukyu_rivalry.7.t: "Rjúkjúský dekret"
+ ryukyu_rivalry.7.d_ryukyu: "Po letech pečlivého pozorování a nenápadné diplomacie naše rada prohlásila svůj záměr spravovat své záležitosti bez vnějšího vměšování. Dvůr stanovil pevné hranice cizímu vlivu a zakotvil prvenství vlastních rituálů, ministrů a tradičních rad. Království nyní určuje svůj vlastní směr."
+ ryukyu_rivalry.7.d: "Po letech pečlivého pozorování a nenápadné diplomacie se [SCOPE.sCountry('ryukyu_scope').GetName] zbavila našeho vlivu a prohlásila svůj záměr spravovat své záležitosti bez vnějšího vměšování. Dvůr stanovil pevné hranice naší přítomnosti a zachovává své rituály, ministry a tradiční rady, zatímco se království odvrací od naší autority."
+ ryukyu_rivalry.7.f: "Pečeti a tributární registry byly roztrhány a rozházeny po vyleštěných podlahách hradu Šuri. V audienčních síních byly vlivy cizích mocností stále cítit, ale již nediktovaly jednání. Cesta Rjúkjú se měla odvíjet v podobě křehké neutrality získané trpělivou diplomacií."
+ ryukyu_rivalry.7.a: "Otázka loajality je vyřešena."
+ ryukyu_rivalry.7.b: "Použití síly nám zůstává k dispozici."
+ ryukyu_rivalry.8.t: "Skrytá doména"
+ ryukyu_rivalry.8.d: "S otevřením přístavů [SCOPE.sCountry('japan_scope').GetName] se znovu vynořila dlouho spící otázka loajality [SCOPE.sCountry('ryukyu_scope').GetName]. Po generace království kráčelo po opatrné hraně. Navenek bylo tributární vůči [SCOPE.sCountry('china_scope').GetName], a přesto tiše zachovávalo loajalitu k [SCOPE.sCountry('japan_scope').GetNameNoFormatting]. Obě mocnosti nyní musí zvážit, jak prosadit svůj vliv."
+ ryukyu_rivalry.8.f: "Lucerny zářily podél chodeb hradu Šuri a vrhaly světlo na rumělkové trámy, které králové Čúzanu vztyčili ve svých velkých dnech. Pod malovanými stropy písaři pokládali tribut vedle sacumských dekretů. Dvůr dlouho udržoval rovnováhu mezi investiturou ze Střední říše a stínem Kagošimy. Klid prozatím přetrvával, ale otázka loajality si brzy vyžádá plnou pozornost."
+ ryukyu_rivalry.8.a: "Záležitost zůstává nevyřešena."

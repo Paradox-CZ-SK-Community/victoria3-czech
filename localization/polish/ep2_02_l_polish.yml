@@ -1,225 +1,225 @@
 ﻿l_polish:
- edo_system: "Edo statusní systém" # todo: CHANGED
- strata_samurai_high: "Vyšší samurajové" # todo: CHANGED
- strata_samurai_high_desc: "Vysoce postavení válečníci, jako daimyō a starší vazalové; vrchní vrstvy samurajské třídy monopolizovaly většinu významných úřadů a těší se značnému dědičnému prestiži." # todo: CHANGED
- strata_samurai_low: "Nižší samurajové" # todo: CHANGED
- strata_samurai_low_desc: "Nižší válečníci a vazalové, jako gokenin a ashigaru, kteří slouží jako administrativní a vojenská pracovní síla pod samurajskou elitou." # todo: CHANGED
- strata_religious: "Jisha" # todo: NEW TRANSLATION
- strata_religious_desc: "Kněží šintoistických svatyní organizovaní skrze chrámové instituce a regulovaní úřady. Ačkoliv mají vliv na místní život, vzdělanost a náboženské obřady, existují částečně mimo právně vymezené statusní třídy." # todo: CHANGED
- strata_commoners_peasants: "Hyakushō" # todo: NEW TRANSLATION
- strata_commoners_peasants_desc: "Podskupina stavovské třídy; rolníci jsou nejpočetnější z japonských společenských vrstev. Členové rolnické třídy jsou registrováni ve vesnicích a jsou vázáni místními povinnostmi a daněmi. Jsou určeni svou registrací — nikoli povoláním — a zahrnují venkovské řemeslníky i obchodníky stejně jako farmáře." # todo: CHANGED
- strata_commoners_townspeople: "Chōnin" # todo: NEW TRANSLATION
- strata_commoners_townspeople_desc: "Podskupina stavovské třídy; měšťané jsou hlavními obyvateli japonských městských center. Členové měšťanské třídy jsou registrováni přes městské instituce a tradičně se spojují s řemesly a obchodem. Ačkoli mohou nashromáždit značné bohatství a vliv, jejich sociální mobilita je zpomalena tím, že nejsou válečníky." # todo: CHANGED
- strata_outcastes: "Eta-Hinin" # todo: NEW TRANSLATION
- strata_outcastes_desc: "Eta a Hinin tvoří nejnižší řady japonské společnosti. Silně diskriminovaní, jsou spojováni s „nečistými“ povoláními, jako jsou kopání hrobů, žebrání a pouliční vystoupení." # todo: CHANGED
- lawgroup_edo_social_system: "Edo statusní systém" # todo: CHANGED
- lawgroup_edo_social_system_desc: "Prosazování $lawgroup_edo_social_system$" # todo: NEW TRANSLATION
- law_strict_edo_system: "Strnulý statusní řád" # todo: CHANGED
- law_strict_edo_system_desc: "Vše od právních a profesních příležitostí až po počet obytných bran, které někomu jeho stav poskytuje, je přísně regulováno a vynucováno státem. Jakékoli porušení protokolu je tvrdě sankcionováno a měšťané a rolníci nemají žádnou formální cestu, jak vstoupit do řad samurajů." # todo: CHANGED
- law_intermediate_edo_system: "Uvolněný statusní řád" # todo: CHANGED
- law_intermediate_edo_system_desc: "Právní a sumptuární zákony byly uvolněny a obyčejní lidé získávají rostoucí vliv a postavení ve společnosti. Bohatí měšťané nebo rolníci se mohou koupí stát gokeninem — nízko postaveným samurajem." # todo: CHANGED
- law_lax_edo_system: "Volný statusní řád" # todo: CHANGED
- law_lax_edo_system_desc: "Pozice a role dříve vyhrazené samurajům jsou otevřeny i pro obyčejné lidi a vynucování zbývajících sumptuárních a profesních omezení probíhá jen selektivně, obvykle omezeně na nejzávažnější přestupky." # todo: CHANGED
- je_tenpo_crisis: "Tenpō krize" # todo: NEW TRANSLATION
- je_tenpo_crisis_reason: "Vyhlášená v roce 1830, éra Tenpō, nebo „Nebeské ochrany“, se zpočátku zdála naplňovat své příznivé jméno. Špatné počasí na [GetGeographicRegion('geographic_region_honshu').GetName] však brzy vedlo k prudkému zdražení rýže a hladomoru v celé zemi, zatímco rostoucí bohatství a vliv [GetInterestGroupVariant('ig_petty_bourgeoisie',GetPlayer).GetName] ohrožuje zavedený řád [GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetName].\n\nMezitím se na obzoru západní [Concept('concept_great_power','$concept_great_powers$')] chovají stále odvážněji a jejich obchodní lodě a kanonové čluny se přibližují k našim břehům.\n\nVe snaze řešit tyto problémy představili reformně smýšlející notabilitové své vize Bakufu.\n\n#tooltippable;tooltip:tenpo_reformer_tt #b Program reformátorů#!#!:\n• [SCOPE.GetRootScope.GetCountry.GetCustom('tenpo_checkbox_edo_system_lax')] [ROOT.GetCountry.GetNameNoFlag] přijal [GetLawType('law_lax_edo_system').GetName]\n• [SCOPE.GetRootScope.GetCountry.GetCustom('tenpo_checkbox_bureaucrats')] [ROOT.GetCountry.GetNameNoFlag] #b ne#! přijal [GetLawType('law_hereditary_bureaucrats').GetName]\n• [SCOPE.GetRootScope.GetCountry.GetCustom('tenpo_checkbox_urbanization')] [ROOT.GetCountry.GetNameNoFlag] má #v 3#! [Concept('concept_state', '$concept_states$')] s úrovní #v 3#! [GetBuildingType('building_urban_center').GetName]\n• [SCOPE.GetRootScope.GetCountry.GetCustom('tenpo_checkbox_clout')] [concept_clout] [GetInterestGroupVariant('ig_petty_bourgeoisie',GetPlayer).GetName] [concept_interest_group] je #v 10#! nebo více\n#tooltippable;tooltip:tenpo_hardliner_tt #b Program tvrdého křídla#!#!:\n• [SCOPE.GetRootScope.GetCountry.GetCustom('tenpo_checkbox_edo_system_strict')] [ROOT.GetCountry.GetNameNoFlag] přijal [GetLawType('law_strict_edo_system').GetName]\n• [SCOPE.GetRootScope.GetCountry.GetCustom('tenpo_checkbox_social_control')] [ROOT.GetCountry.GetNameNoFlag] přijal [GetLawType('law_shinsengumi').GetName]\n• [SCOPE.GetRootScope.GetCountry.GetCustom('tenpo_checkbox_rural')] [ROOT.GetCountry.GetNameNoFlag] má #v 40#! úrovní [GetBuildingType('building_rice_farm').GetName]\n• [SCOPE.GetRootScope.GetCountry.GetCustom('tenpo_checkbox_pb_marginalized')] [GetInterestGroupVariant('ig_petty_bourgeoisie',GetPlayer).GetName] [concept_interest_group] je [concept_marginalized]\n#tooltippable;tooltip:tenpo_shared_tt #b Sdílený program#!#!:\n• [SCOPE.GetRootScope.GetCountry.GetCustom('tenpo_checkbox_famine')] #b Žádný#! vlastněný [GetCulture('japanese').GetName] [concept_homeland] [concept_state] netrpí [concept_famine]\n• [SCOPE.GetRootScope.GetCountry.GetCustom('tenpo_checkbox_gdp')] [ROOT.GetCountry.GetNameNoFlag] má [Concept('concept_gdp', '$concept_gdp_short$')] @gdp!#v [Country.MakeScope.Var('tenpo_gdp_goal').GetValue|k0]#! nebo více\n• [SCOPE.GetRootScope.GetCountry.GetCustom('tenpo_checkbox_army_size')] armáda [ROOT.GetCountry.GetAdjectiveNoFlag] [concept_power_projection] je větší než #v 500#!\n• [SCOPE.GetRootScope.GetCountry.GetCustom('tenpo_checkbox_naval_size')] Máme #v 10#! nebo více úrovní [GetBuildingType('building_naval_fortification').GetName] v vlastněných [Concept('concept_state', '$concept_states$')]" # todo: CHANGED
- je_tenpo_crisis_complete_header: "Ukončí se úspěšnou Tenpō reformou pokud:\n" # todo: CHANGED
- je_tenpo_crisis_failure_header: "Ukončí se neúspěšnou Tenpō reformou pokud:\n" # todo: CHANGED
- je_tenpo_crisis_success_tt: "Dokončili jsme alespoň #v 8#! cílů agendy" # todo: CHANGED
- je_tenpo_crisis_success_2_tt: "V závislosti na počtu #tooltippable;tooltip:tenpo_shared_tt #b Sdílených#!#!, #tooltippable;tooltip:tenpo_reformer_tt #b Reformátorových#!#! nebo #tooltippable;tooltip:tenpo_hardliner_tt #b Tvrdého křídla#!#! cílů, se odměna změní" # todo: CHANGED
- je_tenpo_crisis_success_outcome_tt: "V závislosti na počtu #b Sdílených#!, #b Reformátorových#! nebo #b Tvrdého křídla#! dokončených cílů se odměna změní." # todo: CHANGED
- je_tenpo_crisis_success_outcome_1_tt: "Pokud jsme dokončili více #b cílů Tvrdého křídla#!:" # todo: CHANGED
- je_tenpo_crisis_success_outcome_2_tt: "Pokud jsme dokončili více #b cílů Reformátorů#!:" # todo: CHANGED
- je_tenpo_crisis_success_outcome_3_tt: "Pokud jsme dokončili stejný počet #b cílů Tvrdého křídla#! a #b Reformátorů#!:" # todo: CHANGED
- modifier_tenpo_crisis_reward_hardliner: "Návrat k řádu" # todo: CHANGED
- modifier_tenpo_crisis_reward_reformer: "Upevnění nového" # todo: CHANGED
- modifier_tenpo_crisis_reward_balanced: "Měřené reformy" # todo: NEW TRANSLATION
- modifier_rice_hoarding: "Masivní hromadění rýže" # todo: CHANGED
- tenpo_hardliner_tt: "Frakce #b Tvrdého křídla#! věří, že japonská společnost upadá v morální úpadek, a že tento úpadek lze zastavit pouze návratem k tradici.\n\nProsazuje zavedení přísnějších sumptuárních zákonů a aby samurajové opustili městské požitky a vrátili se ke své idealizované roli střídmých venkovských správců." # todo: CHANGED
- tenpo_reformer_tt: "Frakce #b Reformátorů#! věří, že japonská společnost se nevratně změnila a že zákony země by měly vycházet z aktuální situace místo ideálů romantizované minulosti.\n\nProsazuje politické povýšení japonských obyčejných lidí a podporu obchodu." # todo: CHANGED
- tenpo_shared_tt: "Obě frakce, #b Tvrdé křídlo#! i #b Reformátoři#!, se shodují, že je naléhavé ochránit Japonsko před vnějšími hrozbami a že je třeba řešit otázku potravinové bezpečnosti a ekonomiky." # todo: CHANGED
- button_je_tenpo_combat_rice_hoarding: "Zakažte hromadění rýže" # todo: CHANGED
- button_je_tenpo_combat_rice_hoarding_desc: "Politická a ekonomická nestabilita [ROOT.GetCountry.GetNameNoFlag] způsobila, že bezohlední aktéři nakupují a hromadí velké množství rýže, čímž zvyšují ceny. V důsledku toho si mnoho japonských rodin nyní nemůže dovolit koupit dostatek rýže na uživení." # todo: CHANGED
- button_je_tenpo_frugal_ordinance: "Vydat úsporný dekret" # todo: CHANGED
- button_je_tenpo_frugal_ordinance_desc: "Rostoucí rozmařilost městského [GetInterestGroupVariant('ig_petty_bourgeoisie',GetPlayer).GetName] ohrožuje stabilitu naší vlády. Začali se chovat nad svůj stav a okázale předvádějí své bohatství.\n\nMusíme jim připomenout jejich roli ve společnosti zavedením dalších právních omezení na luxusní zboží, zábavu a literaturu." # todo: CHANGED
- button_je_tenpo_confiscate_land: "Vydat rozkaz konfiskace Edo-Osaka" # todo: CHANGED
- button_je_tenpo_confiscate_land_desc: "Oblast do 10 #italic #tooltippable;tooltip:glossary_ri ri#!#! od Eda a Ósaky představuje složitou spleť tenryo-, daimyo- a hatamoto-vlastněných pozemků. Nedostatek jednotné administrativní struktury má závažné dopady na národní obranu a naši schopnost využít plný potenciál půdy; přední Rōjū proto navrhl její konfiskaci a konsolidaci.\n\nVysídlení zemědělci obdrží odškodnění v podobě pozemků jinde v Japonsku." # todo: CHANGED
- modifier_consolidation_payments: "Platby za konsolidaci pozemků" # todo: NEW TRANSLATION
- modifier_consolidated_state_land: "Zákon o konsolidaci 10 Ri" # todo: CHANGED
- glossary_ri: "#b #italic Ri#!#! je tradiční jednotka délky odvozená z čínského #italic li#!.\n\nDefinovaná délka ri se v průběhu času měnila, ale v pozdním éře Edo přibližně odpovídala 36 #italic chō#!, tedy asi 3,9 km." # todo: CHANGED
- modifier_tenpo_crisis_ongoing: "Turbulence éry Tenpō" # todo: CHANGED
- tenpo_events.1.t: "Éra Nebeské ochrany" # todo: NEW TRANSLATION
- tenpo_events.1.d: "Po letech nepříznivého počasí postihuje zemi [concept_famine] v [ROOT.GetCountry.GetNameNoFlag]. Chudí a ubogí se potýkají s přežitím a Bakufu čelí rostoucímu nespokojení těch, kdo věří, že vláda mohla udělat více." # todo: CHANGED
- tenpo_events.1.f: "Jeho ženiny tkaniny se vždy dobře prodávaly na trhu a v lepších časech jim dokonce umožnily občas koupit nějakou sladkost. Nyní za ně získal jen čtyři nebo pět gō rýže, jestli vůbec. Sotva jim to vystačí na den, pomyslel si, natož na týden, který potřebovali — i když ho doplnili nalezenými listy a plevelem.\n\nŠel domů, krátce se zastavil pohledem na starého Torova domu. Kopřivka už si vyžádala dva z jeho dětí — a pokud byly pravdivé drby o pláštěnkách, pravděpodobně si vezme další v následujících týdnech. Přidržujíc si pytel rýže, pomodlil se potichu a odešel." # todo: CHANGED
- tenpo_events.1.a: "Ó nebe, chraň nás!" # todo: NEW TRANSLATION
- tenpo_events.1.tt_1: "#r Prudké#! [GetHarvestConditionType('torrential_rains').GetName] zasáhly [GetGeographicRegion('geographic_region_honshu').GetName], #r zničily#! kriticky důležité #b sklizně rýže#! země a vážně zhoršily [ROOT.GetCountry.GetAdjectiveNoFlag] [concept_food_security]." # todo: CHANGED
- tenpo_events.1.tt_2: "Po celém [GetGeographicRegion('geographic_region_honshu').GetName] jsou domy lichvářů a podezřelých hromaditelů rýže terčem davů provádějících tzv. #italic #tooltippable;tooltip:glossary_uchikowashi uchikowashi#!#!, což vede k #r rozsáhlému zdevastování#!." # todo: CHANGED
- glossary_uchikowashi: "#b #italic Uchikowashi#!#! označuje jednání ničení majetku vnímaných amorálních aktérů, jako jsou lichváři, hromaditelé rýže a spekulanti s cenami, členy veřejnosti.\n\nAčkoli těmto činům často provázel plenění, v mnoha případech se pachatelé uchikowashi záměrně zdrželi plenění, aby zdůraznili legitimitu svého činu." # todo: CHANGED
- tenpo_events.2.t: "Vzpoura filozofického samuraje" # todo: CHANGED
- tenpo_events.2.d: "Znechucen vzatým pořádkem a jeho neschopností řešit [concept_famine], které sužuje [SCOPE.sState('osaka_scope').GetName], vzbouřil se magistrát a učenec [SCOPE.sCharacter('oshio_scope').GetFullName] proti místním úřadům. Velká část [SCOPE.sState('osaka_scope').GetCityHubName] už hoří, zatímco jeho příznivci vypalují místní vládní úřady." # todo: CHANGED
- tenpo_events.2.f: "„Ačkoli nemáme moc Tchangů a Wu, ani ctnost Konfucia a Meng-cua, nejde to jinak: pro dobro říše jsme se rozhodli jednat — přestože to na náš vlastní rod může přinést kletbu.\n\nPotrestáme a popravíme různé úředníky, kteří sužují a zneklidňují lid, a poté také potrestáme a popravíme bohaté měšťany Ósaky, kteří ztloustli rozmařilostí.\n\nPak zlato, stříbro a mince, které ukryli v tajných trezorech, a balíky rýže, jež schovali ve skladech a sídlech, budou rozděleny a přiděleny.„\n\n— Ōshio Heihachirō, #italic Výňatky z manifestu#!" # todo: CHANGED
- tenpo_events.2.a: "Povolat milici a přibít toho zrádce na kříž." # todo: CHANGED
- tenpo_events.2.b: "Zoufale, a přesto spravedlivě." # todo: CHANGED
- tenpo_events.2.c: "Rebelové přemohli místní posádku a zajali [SCOPE.sState('osaka_scope').GetCityHubName]." # todo: CHANGED
- tenpo_events.2.tt_1: "[SCOPE.sCharacter('oshio_scope').GetFullName] uniká zatčení a spáchá sebevraždu upálením." # todo: CHANGED
- tenpo_events.2.tt_2: "[SCOPE.sCharacter('oshio_scope').GetFullName] je mučen, osolen a ukřižován úřady." # todo: CHANGED
- tenpo_events.2.tt_3: "Místní milice #b potlačí povstání#! dříve, než se rozšíří." # todo: NEW TRANSLATION
- tenpo_events.2.tt_4: "Konfuziánský agitátor [SCOPE.sCharacter('oshio_scope').GetFullName] dostane lehký, symbolický trest a je mu dovoleno pokračovat v činnosti." # todo: CHANGED
- modifier_osaka_burning: "Kritika podepsaná krví" # todo: NEW TRANSLATION
- modifier_controversial_pardon: "Kontroverzní milost" # todo: NEW TRANSLATION
- tenpo_events.3.t: "Povinné reformy" # todo: NEW TRANSLATION
- tenpo_events.3.d: "Spokojen s tempem reforem, [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] poblahopřál předsedajícím radním k jejich pokroku — věříce, že [ROOT.GetCountry.GetAdjective] národ dokáže překonat jakoukoli nadcházející výzvu, ať už cizí či domácí." # todo: CHANGED
- tenpo_events.3.f: "„Dvanáct, pane,“ řekl hlavní radní a odložil štětec na stůl. „A zprávy z Kinai ukazují totéž, naše reformy se zdají zakořeňovat.“\n\nZ tribunyny [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] pokývl úsečným kývnutím. „Dobře. Chci, aby byl dvorec včas informován. Nyní ohledně zprávy z Nagasaki…“" # todo: CHANGED
- tenpo_events.3.a: "Ať to znamená konec [ROOT.GetCountry.GetAdjective] morálního a politického úpadku." # todo: CHANGED
- tenpo_events.3.b: "Od rolníka po samuraje, nejsme přece všichni poddaní císaře?" # todo: CHANGED
- tenpo_events.3.c: "Stabilita říše je prvořadá." # todo: CHANGED
- tenpo_outcome_hardliner_tt: "Dokončili jsme více #b cílů Tvrdého křídla#! než #b Reformátorů#!" # todo: CHANGED
- tenpo_outcome_reformer_tt: "Dokončili jsme více #b cílů Reformátorů#! než #b Tvrdého křídla#!" # todo: CHANGED
- tenpo_outcome_balanced_tt: "Dokončili jsme stejný počet #b cílů Tvrdého křídla#! a #b Reformátorů#!" # todo: CHANGED
- tenpo_events.4.t: "Akce a nečinnost" # todo: CHANGED
- tenpo_events.4.d: "Nespokojen s výsledky reforem a čelící rostoucí veřejné nevůli vůči hlavním radním, [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] odvolal [SCOPE.sCharacter('roju_scope').GetFullName] z jeho funkce." # todo: CHANGED
- tenpo_events.4.f: "Vyhnanství. Bývalý radní okusil to slovo a nijak mu nepřirostlo k srdci. Přesto bylo možná lepší než zůstávat v Eda po včerejších událostech. Jeho zbylí sluhové stále odstraňovali dlaždice a kamení z rybníka a nádvoří a některá z výhrůžných slov, která toho dne zaslechl, se už nikdy nedala nevyslyšet.\n\nSlovo znovu ochutnal a zjistil, že už mu není tak odporné. Kromě toho si pomyslel, vždycky toužil spatřit horu Gassan na vlastní oči." # todo: CHANGED
- tenpo_events.4.a: "Nechci už toho blázna nikdy v životě vidět." # todo: CHANGED
- tenpo_events.4.b: "Zvrátit jeho všechna rozhodnutí a dát to na vědomí veřejnosti." # todo: CHANGED
- tenpo_events.4.tt_1: "[SCOPE.sCharacter('roju_scope').GetFullName] je #r degradován#! a interně vyhnán do provincie #b Dewa#!" # todo: CHANGED
- modifier_tenpo_fail: "Tenpō reformy přerušeny" # todo: CHANGED
- tenpo_events_4_demotion_tt: "Vedoucí [concept_interest_group] v [concept_in_government] je degradován a interně vyhnán" # todo: CHANGED
- tenpo_events.5.t: "Pozemkoví držitelé odolávají centralizaci" # todo: CHANGED
- tenpo_events.5.d: "Náš krok ke konfiskaci země v [SCOPE.sState('kanto_scope').GetName] a [SCOPE.sState('kansai_scope').GetName] narazil na široký odpor místních držitelů půdy. Nejhlučnější nářky přicházejí od těch, jejichž pozemky byly uděleny jako odměna za vojenské služby." # todo: CHANGED
- tenpo_events.5.f: "„Vojenské zásluhy udělily mému předkovi půdu, kterou nyní držím. Od Sekigahary každá generace obdělávala pole — zvyšovala výnosy a odváděla našim pánům jejich podíl, vždy bez stížností.\n\nZaslouží si taková služba teď takové zacházení? Je přesun bez odpovídající kompenzace naší odměnou?„" # todo: CHANGED
- tenpo_events.5.a: "Zrušit centralizaci dříve, než se to vymkne kontrole." # todo: CHANGED
- tenpo_events.5.b: "Nabídnout přemístěným další pozemky jako kompenzaci." # todo: CHANGED
- tenpo_events.5.c: "Připomenout jim, že je to vůle [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]!" # todo: CHANGED
- modifier_heavy_handed_land_confiscations: "Tvrdé konfiskace pozemků" # todo: CHANGED
- modifier_promotions_and_koku_redistribution: "Povýšení a přerozdělení koku" # todo: NEW TRANSLATION
- modifier_reckless_roju: "Neopatrný Rōjū" # todo: CHANGED
- modifier_will_of_the_shogun: "Ve jménu šóguna" # todo: NEW TRANSLATION
- tenpo_events.6.t: "Lev v dračím doupěti" # todo: CHANGED
- tenpo_events.6.d: "Vítězství [SCOPE.sCountry('britain_scope').GetName] proti [SCOPE.sCountry('china_scope').GetAdjective] výrazně otřáslo naší zemí. Čínské junky a armády byly snadno poraženy nadřazenými [SCOPE.sCountry('britain_scope').GetAdjectiveNoFormatting] silami a mnoho lidí nyní zpochybňuje schopnost [ROOT.GetCountry.GetName] odrazit podobný útok." # todo: CHANGED
- tenpo_events.6.f: "„Od chrámu Ganlu na západě po chrám Jinshan na východě byly okolní země plné černých a bílých barbarů — jako kusy rozházené po go desce — a místní se divili, zda někdy odejdou.“\n\n— Mineta Fūkō, #italic Nové zprávy ze zámoří#!" # todo: CHANGED
- tenpo_events.6.a: "Nebe nás ochraňuj, naši samurajové možná ne." # todo: CHANGED
- tenpo_events.6.b: "Cenzurovat jakékoli negativní zprávy z Číny." # todo: NEW TRANSLATION
- tenpo_events.6.c: "Jsme útes, o který se vlny barbarů rozbijí." # todo: CHANGED
- modifier_opium_war_aftermath: "Barbaři u bran" # todo: NEW TRANSLATION
- modifier_defenses_strengthened: "Posílené pobřežní posádky" # todo: CHANGED
- tenpo_events.7.t: "Škola Takashima" # todo: NEW TRANSLATION
- tenpo_events.7.d: "Z obav o budoucnost Japonska po Opiumové válce zorganizoval nagaskijský magistrát [SCOPE.sCharacter('takashima_scope').GetFullName] moderní vojenskou jednotku podle holandského vzoru a vyzývá zbytek země, aby následoval." # todo: CHANGED
- tenpo_events.7.f: "„Jejich kulometní helmy připomínají zvláštní koruny a jejich rozkazy jsou křikem v drsné řeči Holanďanů. Přesto jsou jejich formace dobře cvičené a organizované a jsou schopny vést salva téměř dvakrát rychleji než moji vazalové, i když jejich přesnost je poněkud nižší.“\n\n„A co dělostřelectvo?“\n\n„Bezkonkurenční. Obávám se, že čím déle váháme s jeho přijetím, tím menší budou naše šance odrazit barbary.“" # todo: CHANGED
- tenpo_events.7.a: "Schválit přijetí barbarofilních zbraní a technik." # todo: CHANGED
- tenpo_events.7.b: "Dát přednost tradičním mušketýrským domům." # todo: CHANGED
- modifier_inoue_tatsuke_primacy: "Primát Inoue-Tatsuke" # todo: CHANGED
- modifier_favouring_traditional_musketry_houses: "Upřednostnění tradičních mušketýrských domů" # todo: CHANGED
- modifier_favouring_takashima: "Mušketýrské domy odsunuty" # todo: CHANGED
- modifier_takashima_school: "Podpora školy Takashima" # todo: NEW TRANSLATION
- tenpo_events.8.t: "Pro misku rýže" # todo: CHANGED
- tenpo_events.8.d: "Obvinění z hromadění rýže a manipulace cenami vyvolala napětí mezi rolníky a obchodníky v [SCOPE.sState('tenpo_unrest_state_scope').GetName], které vygradovalo. Se stoupajícími řadami zbídačených rolníků se místní úřady nyní potýkají s povstáním v celé provincii." # todo: CHANGED
- tenpo_events.8.f: "Byl jedním z prvních. Ti veselí, kteří napadli domov zlého obchodníka a rozdělili jeho nepoctivé zboží lidu. Ale když se jeho oči rozhlédly kolem ohniště, uvědomil si, kolik jich zůstalo. Eikichi a Matsuzō zůstali, i když už málo připomínali muže, které kdysi znal, planoucí spravedlivým hněvem. Fukumatsu ztratil život druhý den, následuje Takeshichi sedmého dne. Ostatní se rozptýlili jako listí, jak je pronásledovali úředníci.\n\nCharakter mužů, kteří je nahradili, ho naplnil hanbou a zoufalstvím, ale neviděl jinou cestu. I chudé společenství se mu zdálo božské ve srovnání s katařovým pilníkem." # todo: CHANGED
- tenpo_events.8.a: "Poslat muže, aby ty ničemní zpacifikovali." # todo: CHANGED
- tenpo_events.8.b: "Nechat neklid vyhasnout sám od sebe." # todo: CHANGED
- tenpo_events.8.c: "Podplatit místní vesnické hlavy, aby pomohly potlačit neklid." # todo: CHANGED
- modifier_consulted_headsmen: "Vesnické ústupky" # todo: NEW TRANSLATION
- modifier_lingering_brigandry: "Přeživší banditismus" # todo: CHANGED
- modifier_brutal_anti_bandit_campaigns: "Brutální protibanditní kampaně" # todo: CHANGED
- je_taming_the_north: "Přepracování severu" # todo: CHANGED
- je_taming_the_north_reason: "S vytvořením #b [SCOPE.sState('hokkaido_state_scope').GetName] Development Commission#!, běžně nazývané #b Kaitakushi#!, je toto bývalé pohraničí v ruchu. Každý den přijíždějí noví muži a ženy z jihu hledat nové pozemky a příležitosti.\n\nAvšak nejde o běžný příliv lidí. S osadníky přicházejí úředníci, intelektuálové a modernizační vizionáři s misí utvářet zemi — dychtiví spatřit svou vizi budoucnosti [ROOT.GetCountry.GetName] realizovanou v dnešním [SCOPE.sState('hokkaido_state_scope').GetName]." # todo: CHANGED
- taming_the_north_agriculture_potentials_goal_tt: "Použili jsme akci #b $button_je_taming_the_north_agriculture_potentials$#! #v 3#! krát" # todo: CHANGED
- taming_the_north_agriculture_arable_goal_tt: "Použili jsme akci #b $button_je_taming_the_north_agriculture_arable_land$#! #v 3#! krát" # todo: CHANGED
- taming_the_north_colonies_goal_tt: "Použili jsme akci #b $button_je_taming_the_north_establish_colonies$#!" # todo: NEW TRANSLATION
- je_taming_the_north_additional_goal_pre: "Pokud vlastníme celé #b $STATE_SAKHALIN$#!, platí #b $modifier_tamed_north$#! [concept_timed_modifier] také pro $STATE_SAKHALIN$ [concept_state_region]:" # todo: CHANGED
- je_taming_the_north_additional_goal: "Pokud vlastníme celé [SCOPE.sStateRegion('sakhalin_state_region_scope').GetName], platí #b $modifier_tamed_north$#! [concept_timed_modifier] také pro [SCOPE.sStateRegion('sakhalin_state_region_scope').GetName]:" # todo: CHANGED
- je_taming_the_north_additional_goal_completed: "Jelikož vlastníme celé [SCOPE.sStateRegion('sakhalin_state_region_scope').GetName], platí #b $modifier_tamed_north$#! [concept_timed_modifier] také pro [SCOPE.sStateRegion('sakhalin_state_region_scope').GetName]:" # todo: CHANGED
- modifier_tamed_north: "Vzorová kolonie" # todo: CHANGED
- modifier_northern_learnings: "Poučení Kaitakushi" # todo: CHANGED
- button_je_taming_the_north_establish_colonies: "Založit státem podporované osady" # todo: CHANGED
- button_je_taming_the_north_establish_colonies_desc: "Kolonie bez dostatečných osadníků jsou odsouzeny k neúspěchu. Měli bychom zvážit pobídky, které přilákají rodiny z celého [ROOT.GetCountry.GetName] k usazení na severu." # todo: CHANGED
- button_je_taming_the_north_integrate_ainu: "Zavést právní ochrany Ainu" # todo: CHANGED
- button_je_taming_the_north_integrate_ainu_desc: "Doposud byla pozice Komise vůči [GetCulture('ainu').GetName] násilná integrace a kulturní vymazání. Naše postupné kroky směrem k spravedlivějším vztahům s obyvateli severu z [GetCulture('ainu').GetNameNoFormatting] však vedly k oteplení vzájemných vztahů.\n\nByl proto předložen návrh [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle], aby byli [GetCulture('ainu').GetNameNoFormatting] právně uznáni jako chráněný bratrský národ podle [ROOT.GetCountry.GetAdjective] zákona, rovnoprávní v právech i povinnostech s [GetCulture('japanese').GetName]." # todo: CHANGED
- ainu_frenship_tt: "Důsledně jsme podporovali zájmy [GetCulture('ainu').GetName] v #b událostech#!" # todo: CHANGED
- button_je_taming_the_north_sapporo_agricultural_college: "Založit Sapporoský zemědělský kolegium" # todo: CHANGED
- button_je_taming_the_north_sapporo_agricultural_college_desc: "Sever je ideální pole pro testování nejnovějších teorií v zemědělství a správě půdy. Založíme špičkové zemědělské kolegium zaměstnávající zkušené cizince, které bude jádrem naší vědecké transformace krajiny." # todo: CHANGED
- sapporo_partner_positive_catalyst_tt: "S #g pozitivním#! [concept_diplomatic_catalyst] dojde k navázání náhodných kontaktů s vybranou zemí splňující požadavky" # todo: CHANGED
- button_je_taming_the_north_agriculture_potentials: "Zavést nové plodiny" # todo: NEW TRANSLATION
- button_je_taming_the_north_agriculture_potentials_desc: "Dostupné orné plochy na ostrově mohou být nesmírně důležité, ale skutečný ekonomický rozvoj nastane jen tehdy, když budeme pěstovat ty správné plodiny.\n\nNové objevy v zemědělství — vedené #b Sapporoským zemědělským kolegiem#! — nám umožňují zavést na tuto mrazivou hranici plodiny, které byly dosud považovány za nemožné.\n\nDostupné možnosti:\n• #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_opimizing_existing_variants_tt $modifier_opimizing_existing_variants$#! (škálování)\n• [GetBuildingType('building_rice_farm').GetName]\n• [GetBuildingType('building_dye_plantation').GetName]\n• [GetBuildingType('building_opium_plantation').GetName]\n• [GetBuildingType('building_vineyard').GetName]" # todo: CHANGED
- established_sapporo_college_tt: "Založili jsme #b Sapporoský zemědělský kolegium#!" # todo: CHANGED
- hokkaido_agriculture_potentials_tt: "Toto rozhodnutí lze učinit celkem #v 3#! krát. (aktuálně [ROOT.GetCountry.MakeScope.Var('hokkaido_agriculture_potentials_counter_var').GetValue|v0])" # todo: NEW TRANSLATION
- modifier_opimizing_existing_variants_tt: "[GetStaticModifier('modifier_opimizing_existing_variants').GetName|v]\n[GetStaticModifier('modifier_opimizing_existing_variants').GetDesc]" # todo: NEW TRANSLATION
- button_je_taming_the_north_agriculture_arable_land: "Pokračovat v odvodňování a melioracích" # todo: CHANGED
- button_je_taming_the_north_agriculture_arable_land_desc: "Ačkoli jsou tyto rozsáhlé pozemky zemědělsky málo rozvinuté, ukrývají velký potenciál. Velké horské pásy — odkud pramení hojná voda — nabízejí mnoho možností pro rozšíření orných ploch na sever.\n\nVyprázdníme mokřady, zavlažíme pole a zkrotíme zemi jako důkaz nezlomného [GetCulture('japanese').GetName] ducha." # todo: CHANGED
- hokkaido_agriculture_arable_tt: "Toto rozhodnutí lze učinit celkem #v 3#! krát. (aktuálně [ROOT.GetCountry.MakeScope.Var('hokkaido_agriculture_arable_counter_var').GetValue|v0])" # todo: NEW TRANSLATION
- hokkaido_events.1.t: "Osmý okruh" # todo: NEW TRANSLATION
- hokkaido_events.1.d: "S začleněním [SCOPE.sState('hokkaido_scope').GetName] — nebo zemí Ainu — do Japonska je třeba zvolit nové jméno, které odráží nový status této země. Nově ustavená Development Commission předložila několik návrhů k přezkoumání [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]." # todo: CHANGED
- hokkaido_events.1.f: "„Země divochů to je. Bažin a bláta. Chudých rybářů a pojídačů masa. Co od té prokleté země čekáš, co ti nemůže dát již naše [ROOT.GetCountry.GetCapital.GetCityHubName]?“\n\n„Smysl, matko. A něco vlastního.“" # todo: CHANGED
- hokkaido_events.1.a: "Bude se jmenovat #tooltippable;tooltip:hokkaido_events.1_tt_3 #b Hokkai-dō#!#!: Okruh Severního moře." # todo: CHANGED
- hokkaido_events.1.b: "#tooltippable;tooltip:hokkaido_events.1_tt_2 #b Hokkai-dō#!#!, na počest obyvatel této země." # todo: NEW TRANSLATION
- hokkaido_events.1.c: "#tooltippable;tooltip:hokkaido_events.1_tt_4 #b Kaitō-dō#!#!, Okruh mořských ostrovů, je zjevně lepší volba." # todo: CHANGED
- hokkaido_events.1.e: "#tooltippable;tooltip:hokkaido_events.1_tt_5 #b Hitakami-dō#!#! zní poněkud literárně." # todo: CHANGED
- hokkaido_events.1.tt_1: "Město #b Sapporo#! bylo založeno a stalo se novým správním centrem ostrova, nahrazující #b Hakodate#!" # todo: CHANGED
- modifier_ainu_heritage_aknowleged: "Země Kai" # todo: NEW TRANSLATION
- modifier_breaking_new_ground: "Dobývání nového území" # todo: CHANGED
- modifier_hokkaido_naval_connections: "Mořský okruh" # todo: NEW TRANSLATION
- modifier_call_of_the_frontier: "Volání hranice" # todo: NEW TRANSLATION
- the_ainu_will_appreciate_this_tt: "@information! [GetCulture('ainu').GetName] si toho bude pamatovat" # todo: NEW TRANSLATION
- hokkaido_events.1_tt_2: "#b Severní kai okruh#!\nSlovy člena komise Matsuura Takeshirō, #italic kai#! (加伊) je chápáno jako staré endonymum Ainu pro jejich vlastní národ." # todo: CHANGED
- hokkaido_events.1_tt_3: "#b Okruh Severního moře#!\nVládní proti návrhu Matsuura Takeshirō. Zde jsou znaky pro #italic kai#! (加伊) nahrazeny identicky znějícím znakem #italic kai#! (海), znamenajícím „moře“.\n\n@information! Toto je historicky vybraný návrh." # todo: CHANGED
- hokkaido_events.1_tt_4: "#b Okruh mořských ostrovů#!\nNad všechny ostatní věci ostrov definuje jeho vztah k moři — skutečnost, která by se měla projevit v novém jménu." # todo: CHANGED
- hokkaido_events.1_tt_5: "#b Okruh země vycházejícího slunce#!\nArchaické jméno z japonské doby Jamato pro severovýchodní pohraniční země. Volba této možnosti ukotvuje novou kolonii pevně v dávné japonské minulosti." # todo: CHANGED
- hokkaido_events.2.t: "Nové pohraničí" # todo: CHANGED
- hokkaido_events.2.d: "Otázka, jak nejlépe osídlit region, zaměstnávala členy Development Commission [SCOPE.sState('hokkaido_state_scope').GetName] už nějakou dobu. Netrpěliví správci nyní žádají, abychom dospěli k definitivnímu rozhodnutí." # todo: CHANGED
- hokkaido_events.2.f: "Vyrůstal, otec mu často vyprávěl o předcích. O hrdinných a vznešených válečnících období válčících států. O jejich strohé důstojnosti a velkých činech. Příběhy ho jako dítě fascinovaly, ale teď mu přinášely jen melancholii. Ironie otce, papírového úředníka a městského opilce, který držel meč jen kvůli důstojnosti, a chválil ctnosti minulosti, byla nesnesitelná.\n\nKdyž ho otec požádal, aby mu pomohl v podnikání, odmítl s opovržením a okamžitě se vydal na sever. Možná tam najde spásu pro svoji linii?" # todo: CHANGED
- hokkaido_events.2.a: "Upřednostnit osídlení vojáky-osadníky." # todo: NEW TRANSLATION
- hokkaido_events.2.b: "Prostý rolník je páteří [ROOT.GetCountry.GetName]." # todo: CHANGED
- hokkaido_events.2.c: "Omezit většinu [GetCulture('japanese').GetName] osad na oblasti nepoužívané [GetCulture('ainu').GetName]." # todo: CHANGED
- modifier_tondenhei_settlements: "Tondenhei osady" # todo: CHANGED
- modifier_peasant_settlements: "Osady rolníků" # todo: CHANGED
- modifier_restricted_settlements: "Zachování srdcí Ainu" # todo: CHANGED
- hokkaido_events.2.tt_1: "#v 1.5%#! všech [GetCulture('japanese').GetName] [Concept('concept_pop', '$concept_pops$')] z [concept_capital_state] se přestěhuje do [SCOPE.sState('hokkaido_state_scope').GetName]" # todo: NEW TRANSLATION
- hokkaido_events.2.tt_2: "#v 3%#! všech [GetCulture('japanese').GetName] [Concept('concept_pop', '$concept_pops$')] v [SCOPE.sState('hokkaido_migration_origin_scope').GetName] (jednom z [Concept('concept_state', '$concept_states$')] s nejnižším [Concept('concept_gdp','$concept_gdp_short$')] v [GetGeographicRegion('geographic_region_home_islands').GetName]) se přestěhuje do [SCOPE.sState('hokkaido_state_scope').GetName]" # todo: NEW TRANSLATION
- modifier_old_swords_in_new_lands: "Staří meče na nových půdách" # todo: CHANGED
- modifier_go_north_young_man: "Jdi na sever, mladý muži" # todo: NEW TRANSLATION
- hokkaido_events.3.t: "Semena pokroku" # todo: NEW TRANSLATION
- hokkaido_events.3.d: "Nedávné průlomy v Sapporoském zemědělském kolegiu podnítily návrhy zavést nové plodiny na polích [SCOPE.sState('hokkaido_state_scope').GetName]." # todo: CHANGED
- hokkaido_events.3.f: "#b Osobní zápis v laboratoři, 154#!\nOdrůdy z jižních oblastí byly nyní upřednostněny před západními variantami na základě posledních testů. Chlapci tvrdí, že hranice pěstování se očekává posunout značně severněji, možná i za Kamikawa. Další studie jsou potřeba pro posouzení výnosového potenciálu, ale cítíme se optimističtí. Požadováno setkání s vedoucím fakulty zítra. Potřebuji koupit novou kravatu." # todo: CHANGED
- hokkaido_events.3.a: "Zaměřit se na zlepšení stávajících plodin." # todo: CHANGED
- hokkaido_events.3.b: "Vyvinout odolné odrůdy, aby umožnily místní [GetBuildingType('building_rice_farm').GetName]." # todo: CHANGED
- hokkaido_events.3.c: "Nížiny jsou vhodné pro indigo [GetBuildingType('building_dye_plantation').GetName]." # todo: NEW TRANSLATION
- hokkaido_events.3.e: "Mák se zde dobře uchytil, [GetBuildingType('building_opium_plantation').GetName] jsou budoucnost." # todo: CHANGED
- hokkaido_events.3.g: "Založit [GetBuildingType('building_vineyard').GetName] se specializovanými odrůdami rév." # todo: CHANGED
- button_je_taming_the_north_complete: "Rozvíjeli jsme zemi tolik, kolik nám dovoluje technologie" # todo: CHANGED
- modifier_introducing_new_crops: "Zavádění nových plodin" # todo: NEW TRANSLATION
- modifier_opimizing_existing_variants: "Chladně optimalizované varianty plodin" # todo: CHANGED
- hokkaido_events.4.t: "Růst půdy" # todo: NEW TRANSLATION
- hokkaido_events.4.d: "Development Commission [SCOPE.sState('hokkaido_state_scope').GetName] dosáhla dalšího významného milníku, když velké plochy bývalých mokřadů byly přeměněny na cennou zemědělskou půdu." # todo: CHANGED
- hokkaido_events.4.f: "Bylo to opravdu působivé. Před deseti lety by největší loď, která by bezpečně projela řekou před ním, byla malá člun. Teď sledoval skupinu dělníků, jak vykládají bedny a pytle z masivního parního pramice chrlícího dým do čistého horského vzduchu. Materiál pro další zámek snad? Nebo pro další odvodňovací projekt výše po proudu? Nebo jen zásoby z nové vesnice v údolí za nimi? Nevěděl to, a vlastně na tom nesešlo — cokoliv to přiváží, přiváží budoucnost." # todo: CHANGED
- hokkaido_events.4.a: "S každým úderem motyky tvarujeme tuto zemi." # todo: CHANGED
- hokkaido_events.4.b: "A s každým novým domem ji rozšiřujeme." # todo: NEW TRANSLATION
- hokkaido_events.4.tt_1: "#v 2%#! všech [GetCulture('japanese').GetName] [Concept('concept_pop', '$concept_pops$')] v [SCOPE.sState('hokkaido_migration_origin_scope').GetName] (jednom z [Concept('concept_state', '$concept_states$')] s nejnižším [Concept('concept_gdp','$concept_gdp_short$')] v [GetGeographicRegion('geographic_region_home_islands').GetName]) se přestěhuje do [SCOPE.sState('hokkaido_state_scope').GetName]" # todo: NEW TRANSLATION
- modifier_immigration_burst: "Vlna imigrace" # todo: NEW TRANSLATION
- modifier_open_to_business: "Otevřeno podnikání" # todo: CHANGED
- hokkaido_events.5.t: "Chlapci, buďte ambiciózní..." # todo: NEW TRANSLATION
- hokkaido_events.5.d: "S ukončením první třídy Sapporoského zemědělského kolegia vedeného personálem ze [SCOPE.sCountry('sapporo_partner_country_scope').GetAdjective] jsou absolventi dychtiví uplatnit nové dovednosti. Mezitím správní rada kolegia zvažuje budoucí směřování a zaměření institutu." # todo: CHANGED
- hokkaido_events.5.f: "„...buďte ambiciózní ne pro peníze, ne pro sobecké zvýšení postavení, ne pro pomíjivou věc, které lidé říkají sláva. Buďte ambiciózní pro dosažení všeho, čím může člověk být.“\n\n— William Smith Clark, „Rozlučková řeč prezidenta Sapporoského zemědělského kolegia“" # todo: CHANGED
- hokkaido_events.5.a: "Zemědělské kolegium by se mělo primárně věnovat zemědělství." # todo: CHANGED
- hokkaido_events.5.b: "Měli bychom upřednostnit rozšíření inženýrské fakulty." # todo: NEW TRANSLATION
- hokkaido_events.5.c: "Zřídit fakultu humanitních věd a zahájit místní kulturní studie." # todo: CHANGED
- hokkaido_events.5.tt_1: "Vliv personálu ze [SCOPE.sCountry('sapporo_partner_country_scope').GetAdjective] v #b Sapporo#! vede ke vzniku místní [GetCulture('japanese').GetName] [SCOPE.sReligion('sapporo_partner_religion_scope').GetName] komunity" # todo: CHANGED
- hokkaido_events.5.tt_2: "Odemyká #b $button_je_taming_the_north_agriculture_potentials$#! a #b $button_je_taming_the_north_agriculture_arable_land$#! v #b $je_taming_the_north$#! [concept_journal_entry]" # todo: CHANGED
- modifier_sapporo_expanded_agricultural_faculty: "Inovativní zemědělské metody" # todo: NEW TRANSLATION
- modifier_sapporo_expanded_engineering_faculty: "Špičková inženýrská fakulta" # todo: NEW TRANSLATION
- modifier_sapporo_humanities_faculty: "Sapporoská skupina kulturních studií" # todo: CHANGED
- hokkaido_events.6.t: "Ainu Mosir, Sisam Mosir" # todo: NEW TRANSLATION
- hokkaido_events.6.d: "V atmosféře jisté domácí kontroverze vydalo [ROOT.GetCountry.GetCapital.GetCityHubName] nový dekret o právním statusu [SCOPE.sState('hokkaido_state_scope').GetName], formálně vymezující Ainu vlast a zakládající omezené instituce, které budou koexistovat paralelně s oficiálním [ROOT.GetCountry.GetAdjective] byrokratickým aparátem." # todo: CHANGED
- hokkaido_events.6.f: "„Hinna! Hinna!“ Se skoro bezzubým úsměvem stará Ainu čarodějka podala misku polévky. Podíval se na směs lovené zvěře a poděkoval nebesům, že jeho rodiče nejsou zde, aby ho soudili.\n\n„Co dělám pro mír,“ zamumlal si a přijal jídlo se strnule přinuceným úsměvem." # todo: CHANGED
- hokkaido_events.6.a: "„Tato země je dost velká pro oba.“" # todo: CHANGED
- modifier_opposes_ainu_rights: "Ústupky barbarům" # todo: NEW TRANSLATION
- modifier_supports_ainu_rights: "Práva Ainu zakotvena" # todo: CHANGED
- hokkaido_events.7.t: "Závěrečný akt komise" # todo: NEW TRANSLATION
- hokkaido_events.7.d: "Oficiálně oznamujíc úspěch svého vládou zadaného úkolu rozhodla Development Commission [SCOPE.sState('hokkaido_state_scope').GetName] předat své zbývající povinnosti státu." # todo: CHANGED
- hokkaido_events.7.f: "#b Proklamace č. 8#!\nDevelopment Commission [SCOPE.sState('hokkaido_state_scope').GetNameNoFormatting] je tímto zrušena a zřizují se tři prefektury Hakodate, Sapporo a Nemuro. Hranice jejich příslušných jurisdikcí budou stanovena později." # todo: CHANGED
- hokkaido_events.7.a: "Zářný příklad pro budoucí koloniální výpravy..." # todo: CHANGED
- hokkaido_events.7.b: "...a pro [GetGeographicRegion('geographic_region_home_islands').GetName], mimochodem." # todo: CHANGED
- modifier_external_applications: "Kaitakushi: zahraniční aplikace" # todo: CHANGED
- modifier_domestic_applications: "Kaitakushi: domácí aplikace" # todo: CHANGED
- hokkaido_events.8.t: "Komise bez cíle" # todo: NEW TRANSLATION
- hokkaido_events.8.d: "Ztráta [SCOPE.sStateRegion('hokkaido_state_region_scope').GetName] donutila Development Commission rozevřít se dříve, než dokončila své poslání. V reakci se rozzlobení občané vydali do ulic [ROOT.GetCountry.GetName] protestovat proti ztrátě národního prestiže a svých osobních investic." # todo: CHANGED
- hokkaido_events.8.f: "Vyčerpaný emeritní administrátor se sklátil do svého kancelářského křesla a nalil si vydatnou porci saké. Pohár vypil najednou a nechal oči spočinout na mapách rozložených na stole. Plné čmáranic, poznámek a značek, každá označovala samostatný plán, do kterého vložil svou životní energii. Teď už žádný plán ani energie nezbyly a implicitní optimismus v každé poznámce zněl posměšně.\n\nSakra to celé, pomyslel si, a nalil si další pohár." # todo: CHANGED
- hokkaido_events.8.a: "Litujeme, tento výsledek je mimo kontrolu vlády." # todo: CHANGED
- modifier_lost_northern_investments: "Ztracené severní investice" # todo: NEW TRANSLATION
+ edo_system: "Edský stavovský systém"
+ strata_samurai_high: "Vyšší samurajové"
+ strata_samurai_high_desc: "Vysoce postavené válečnické elity, jako jsou daimjó a starší vazalové, představují nejvyšší vrstvy samurajské třídy, monopolizovaly většinu významných úřadů a těší se značné dědičné prestiži."
+ strata_samurai_low: "Nižší samurajové"
+ strata_samurai_low_desc: "Níže postavení válečníci a vazalové, jako jsou gokenin a ašigaru, sloužící jako správní a vojenská pracovní síla pod samurajskou elitou."
+ strata_religious: "Džiša"
+ strata_religious_desc: "Svatyňové duchovenstvo organizované prostřednictvím chrámových institucí a regulované úřady. Ačkoli má vliv na místní život, vzdělanost a náboženské rituály, existuje poněkud mimo zákonem vymezené stavovské třídy."
+ strata_commoners_peasants: "Hjakušó"
+ strata_commoners_peasants_desc: "Podskupina třídy prostého lidu, rolníci jsou zdaleka nejpočetnější z japonských společenských tříd. Příslušníci rolnické třídy jsou registrováni ve vesnicích a vázáni místními povinnostmi a zdaněním. Jsou definováni svou registrací - nikoli povoláním - a zahrnují venkovské řemeslníky a obchodníky stejně jako zemědělce."
+ strata_commoners_townspeople: "Čónin"
+ strata_commoners_townspeople_desc: "Podskupina třídy prostého lidu, měšťané jsou hlavními obyvateli japonských městských center. Příslušníci měšťanské třídy jsou registrováni prostřednictvím městských institucí a tradičně spojováni s řemesly a obchodem. Ačkoli mohou nashromáždit značné bohatství a vliv, jejich společenský vzestup je brzděn jejich neválečnickým statusem."
+ strata_outcastes: "Eta-hinin"
+ strata_outcastes_desc: "Eta a hinin tvoří nejnižší vrstvy japonské společnosti. Jsou vystaveni těžké diskriminaci a spojováni s „nečistými“ povoláními, jako je kopání hrobů, žebrání a pouliční vystupování."
+ lawgroup_edo_social_system: "Edský stavovský systém"
+ lawgroup_edo_social_system_desc: "Prosazování $lawgroup_edo_social_system$"
+ law_strict_edo_system: "Pevný stavovský řád"
+ law_strict_edo_system_desc: "Vše od právních a profesních příležitostí až po počet obytných bran, které člověku umožňuje jeho status, je přísně regulováno a vynucováno státem. Jakékoli porušení protokolu je tvrdě trestáno a měšťané ani rolníci nemají žádný způsob, jak formálně vstoupit do řad samurajů."
+ law_intermediate_edo_system: "Uvolněný stavovský řád"
+ law_intermediate_edo_system_desc: "Právní a přepychové zákony byly uvolněny a prostému lidu je ve společnosti poskytován rostoucí vliv a status. Bohatí měšťané či rolníci se mohou koupí stát gokeniny - níže postavenými samuraji."
+ law_lax_edo_system: "Volný stavovský řád"
+ law_lax_edo_system_desc: "Pozice a role dříve vyhrazené samurajům jsou otevřeny prostému lidu a vynucování zbývajících přepychových a profesních omezení probíhá pouze selektivně, obvykle jen u nejzávažnějších přečinů."
+ je_tenpo_crisis: "Krize Tenpó"
+ je_tenpo_crisis_reason: "Éra Tenpó, neboli „Nebeská ochrana“, vyhlášená roku 1830, zpočátku dostála svému příznivému jménu. Špatné počasí na území [GetGeographicRegion('geographic_region_honshu').GetName] však brzy vedlo k prudkému růstu cen rýže a celostátnímu hladomoru, zatímco rostoucí bohatství a vliv [GetInterestGroupVariant('ig_petty_bourgeoisie',GetPlayer).GetName] ohrožují zavedený řád [GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetName].\n\nMezitím se na obzoru západní [Concept('concept_great_power','$concept_great_powers$')] stávají stále troufalejšími a jejich obchodní lodě i dělové čluny se přibližují k našim břehům.\n\nVe snaze tyto problémy řešit předložili reformně smýšlející významní činitelé bakufu své vize.\n\n#tooltippable;tooltip:tenpo_reformer_tt #b Agenda reformistů#!#!:\n• [SCOPE.GetRootScope.GetCountry.GetCustom('tenpo_checkbox_edo_system_lax')] [ROOT.GetCountry.GetNameNoFlag] uzákonila [GetLawType('law_lax_edo_system').GetName]\n• [SCOPE.GetRootScope.GetCountry.GetCustom('tenpo_checkbox_bureaucrats')] [ROOT.GetCountry.GetNameNoFlag] #b neuzákonila#! [GetLawType('law_hereditary_bureaucrats').GetName]\n• [SCOPE.GetRootScope.GetCountry.GetCustom('tenpo_checkbox_urbanization')] [ROOT.GetCountry.GetNameNoFlag] má #v 3#! [Concept('concept_state', '$concept_states$')] s úrovní #v 3#! budovy [GetBuildingType('building_urban_center').GetName]\n• [SCOPE.GetRootScope.GetCountry.GetCustom('tenpo_checkbox_clout')] [concept_clout] [concept_interest_group] [GetInterestGroupVariant('ig_petty_bourgeoisie',GetPlayer).GetName] je #v 10#! nebo vyšší\n#tooltippable;tooltip:tenpo_hardliner_tt #b Agenda zastánců tvrdé linie#!#!:\n• [SCOPE.GetRootScope.GetCountry.GetCustom('tenpo_checkbox_edo_system_strict')] [ROOT.GetCountry.GetNameNoFlag] uzákonila [GetLawType('law_strict_edo_system').GetName]\n• [SCOPE.GetRootScope.GetCountry.GetCustom('tenpo_checkbox_social_control')] [ROOT.GetCountry.GetNameNoFlag] uzákonila [GetLawType('law_shinsengumi').GetName]\n• [SCOPE.GetRootScope.GetCountry.GetCustom('tenpo_checkbox_rural')] [ROOT.GetCountry.GetNameNoFlag] má #v 40#! úrovní budovy [GetBuildingType('building_rice_farm').GetName]\n• [SCOPE.GetRootScope.GetCountry.GetCustom('tenpo_checkbox_pb_marginalized')] [concept_interest_group] [GetInterestGroupVariant('ig_petty_bourgeoisie',GetPlayer).GetName] je [concept_marginalized]\n#tooltippable;tooltip:tenpo_shared_tt #b Společná agenda#!#!:\n• [SCOPE.GetRootScope.GetCountry.GetCustom('tenpo_checkbox_famine')] #b Žádný#! vlastněný [GetCulture('japanese').GetName] [concept_homeland] [concept_state] netrpí [concept_famine]\n• [SCOPE.GetRootScope.GetCountry.GetCustom('tenpo_checkbox_gdp')] [ROOT.GetCountry.GetNameNoFlag] má [Concept('concept_gdp', '$concept_gdp_short$')] @gdp!#v [Country.MakeScope.Var('tenpo_gdp_goal').GetValue|k0]#! nebo vyšší\n• [SCOPE.GetRootScope.GetCountry.GetCustom('tenpo_checkbox_army_size')] [concept_power_projection] [ROOT.GetCountry.GetAdjectiveNoFlag] armády je vyšší než #v 500#!\n• [SCOPE.GetRootScope.GetCountry.GetCustom('tenpo_checkbox_naval_size')] Máme #v 10#! nebo více úrovní budovy [GetBuildingType('building_naval_fortification').GetName] ve vlastněných [Concept('concept_state', '$concept_states$')]"
+ je_tenpo_crisis_complete_header: "Skončí úspěšnou reformou Tenpó, pokud:\n"
+ je_tenpo_crisis_failure_header: "Skončí neúspěšnou reformou Tenpó, pokud:\n"
+ je_tenpo_crisis_success_tt: "Splnili jsme alespoň #v 8#! cílů agendy"
+ je_tenpo_crisis_success_2_tt: "Odměna se změní v závislosti na počtu splněných cílů #tooltippable;tooltip:tenpo_shared_tt #b společné#!#!, #tooltippable;tooltip:tenpo_reformer_tt #b reformistické#!#! nebo #tooltippable;tooltip:tenpo_hardliner_tt #b tvrdé linie#!#! agendy"
+ je_tenpo_crisis_success_outcome_tt: "Odměna se změní v závislosti na počtu splněných cílů #b společné#!, #b reformistické#! nebo #b tvrdé linie#! agendy."
+ je_tenpo_crisis_success_outcome_1_tt: "Pokud jsme splnili více agend #b tvrdé linie#!:"
+ je_tenpo_crisis_success_outcome_2_tt: "Pokud jsme splnili více #b reformistických#! agend:"
+ je_tenpo_crisis_success_outcome_3_tt: "Pokud jsme splnili stejný počet agend #b tvrdé linie#! a #b reformistických#! agend:"
+ modifier_tenpo_crisis_reward_hardliner: "Návrat k řádu"
+ modifier_tenpo_crisis_reward_reformer: "Zakotvení nového"
+ modifier_tenpo_crisis_reward_balanced: "Rozvážné reformy"
+ modifier_rice_hoarding: "Rozsáhlé hromadění rýže"
+ tenpo_hardliner_tt: "#b Frakce zastánců tvrdé linie#! věří, že japonská společnost je v morálním úpadku a že tento úpadek lze zastavit pouze návratem k tradici.\n\nVěří v zavedení přísnějších přepychových zákonů a v to, že se samurajové vzdají přepychu měst a vrátí se ke své idealizované roli strohých venkovských správců."
+ tenpo_reformer_tt: "#b Reformní frakce#! věří, že japonská společnost se nenávratně změnila a že zákony země by měly vycházet ze skutečného stavu země, nikoli z ideálů romantizované minulosti.\n\nVěří v politické povznesení japonského prostého lidu a podporu obchodu."
+ tenpo_shared_tt: "Frakce #b zastánců tvrdé linie#! i #b reformistů#! věří, že je nezbytné ochránit Japonsko před vnějšími hrozbami a že je nutné řešit otázku potravinové bezpečnosti a ekonomiky."
+ button_je_tenpo_combat_rice_hoarding: "Bojovat proti hromadění rýže"
+ button_je_tenpo_combat_rice_hoarding_desc: "Politická a ekonomická nestabilita [ROOT.GetCountry.GetNameNoFlag] způsobila, že bezohlední aktéři skupují a hromadí velké množství rýže, čímž ženou ceny vzhůru. V důsledku toho nyní mnoho japonských rodin nemá prostředky na nákup dostatečného množství rýže, aby se uživily."
+ button_je_tenpo_frugal_ordinance: "Vydat nařízení o střídmosti"
+ button_je_tenpo_frugal_ordinance_desc: "Rostoucí dekadence městské [GetInterestGroupVariant('ig_petty_bourgeoisie',GetPlayer).GetName] ohrožuje stabilitu naší vlády. Nyní se začali chovat nad své postavení a okázale dávat své bohatství všem na odiv.\n\nMusíme jim připomenout jejich roli ve společnosti uvalením dalších zákonných omezení na luxusní zboží, zábavu a literaturu."
+ button_je_tenpo_confiscate_land: "Vydat edsko-ósacký konfiskační příkaz"
+ button_je_tenpo_confiscate_land_desc: "Oblast do 10 #italic #tooltippable;tooltip:glossary_ri ri#!#! od Eda a Ósaky představuje složitou změť půdy držené jako tenrjó, daimjó a hatamoto. Protože absence jednotné správní struktury má vážné dopady na národní obranu i naši schopnost využít plný potenciál této půdy, přední ródžú navrhl její konfiskaci a konsolidaci.\n\nVysídleným držitelům půdy bude přidělena náhradní půda jinde v Japonsku."
+ modifier_consolidation_payments: "Platby za konsolidaci půdy"
+ modifier_consolidated_state_land: "Zákon o konsolidaci 10 ri"
+ glossary_ri: "#b #italic Ri#!#! je tradiční měrná jednotka odvozená z čínského #italic li#!.\n\nDefinovaná délka ri se v čase měnila, ale v pozdním období Edo zhruba odpovídala 36 #italic čó#!, tedy 3,9 km."
+ modifier_tenpo_crisis_ongoing: "Otřesy éry Tenpó"
+ tenpo_events.1.t: "Éra nebeské ochrany"
+ tenpo_events.1.d: "Po letech nepříznivého počasí svírá zemi [ROOT.GetCountry.GetNameNoFlag] [concept_famine]. Zatímco chudí a nuzní bojují o přežití, bakufu čelí rostoucí nespokojenosti těch, kdo věří, že vláda by mohla dělat více."
+ tenpo_events.1.f: "Tkaniny jeho ženy se na trhu vždy prodávaly za dobrou cenu a v lepších časech jim dokonce umožnily občasný kousek cukrovinky. Nyní za ně dostali jen čtyři nebo pět gó rýže, pokud vůbec. Sotva dost na to, aby se najedli na jeden den, pomyslel si, natož na celý týden, který potřebovali - i kdyby si pomohli nasbíraným listím a plevelem.\n\nVydal se cestou domů a krátce se zastavil s výhledem na dům starého Tory. Neštovice si už vyžádaly dvě z jeho dětí - a pokud byly zvěsti o pláštích proti dešti pravdivé, v příštích týdnech si jich nejspíš vyžádají víc. Pevně svíral svůj pytel rýže, pronesl tichou modlitbu a odešel."
+ tenpo_events.1.a: "Ó nebesa, ochraňte nás!"
+ tenpo_events.1.tt_1: "#r Silné#! [GetHarvestConditionType('torrential_rains').GetName] zasáhly [GetGeographicRegion('geographic_region_honshu').GetName], #r zničily#! kriticky důležitou #b sklizeň rýže#! v zemi a vážně zhoršily [ROOT.GetCountry.GetAdjectiveNoFlag] [concept_food_security]."
+ tenpo_events.1.tt_2: "Po celém území [GetGeographicRegion('geographic_region_honshu').GetName] se obydlí lichvářů a podezřelých hromaditelů rýže stávají terčem davů provádějících takzvané #italic #tooltippable;tooltip:glossary_uchikowashi učikowaši#!#!, což vede k #r celostátní#! [concept_devastation]."
+ glossary_uchikowashi: "#b #italic Učikowaši#!#! označuje ničení majetku osob veřejností vnímaných jako nemorální aktéři, například lichvářů, hromaditelů rýže a lichvářských obchodníků.\n\nAčkoli tyto činy často doprovázelo rabování, v mnoha případech se ho pachatelé učikowaši záměrně zdrželi, aby zdůraznili oprávněnost svého jednání."
+ tenpo_events.2.t: "Vzpoura filozofa-samuraje"
+ tenpo_events.2.d: "Rychtář a učenec [SCOPE.sCharacter('oshio_scope').GetFullName], rozčarovaný zavedeným řádem a jeho neschopností vypořádat se s [concept_famine], který sužuje [SCOPE.sState('osaka_scope').GetName], povstal proti místním úřadům. Velké části města [SCOPE.sState('osaka_scope').GetCityHubName] už hoří, zatímco [SCOPE.sCharacter('oshio_scope').GetHerHis] stoupenci zapalují místní vládní úřady."
+ tenpo_events.2.f: "„Ačkoli nemáme moc Tanga a Wua ani ctnost Konfucia a Mencia, není zbytí: v zájmu říše jsme se rozhodli jednat - navzdory kletbě, kterou to může přivolat na naši vlastní pokrevní linii.\n\nPotrestáme a popravíme různé úředníky, kteří trápí a sužují prostý lid, a poté stejně tak potrestáme a popravíme bohaté měšťany Ósaky, kteří ztučněli přepychem.\n\nPoté bude zlato, stříbro a mince, které ukryli ve skrytých trezorech, i balíky rýže, které schovali ve svých skladištích a sídlech, rozděleny a přiděleny.“\n\n—Óšio Heihačiró, #italic Úryvky z manifestu#!"
+ tenpo_events.2.a: "Svolejte milici a přibijte toho zrádce na kříž."
+ tenpo_events.2.b: "Zoufalý, ale spravedlivý čin."
+ tenpo_events.2.c: "Povstalci přemohou místní posádku a zmocní se města [SCOPE.sState('osaka_scope').GetCityHubName]."
+ tenpo_events.2.tt_1: "[SCOPE.sCharacter('oshio_scope').GetFullName] uniká zajetí a spáchá sebevraždu upálením." 
+ tenpo_events.2.tt_2: "[SCOPE.sCharacter('oshio_scope').GetFullName] je úřady mučen, posypán solí a ukřižován."
+ tenpo_events.2.tt_3: "Místní milice #b potlačí povstání#! dříve, než se může dále rozšířit."
+ tenpo_events.2.tt_4: "[concept_agitator] [SCOPE.sCharacter('oshio_scope').GetFullName] dostane mírný, symbolický trest a je mu dovoleno pokračovat ve své práci."
+ modifier_osaka_burning: "Kritika podepsaná krví"
+ modifier_controversial_pardon: "Kontroverzní omilostnění"
+ tenpo_events.3.t: "Povinné reformy"
+ tenpo_events.3.d: "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle], spokojený s tempem reforem, poblahopřál předsedajícím radním k jejich pokroku - v přesvědčení, že [ROOT.GetCountry.GetAdjective] národ dokáže překonat jakoukoli nadcházející výzvu, ať už zahraniční, nebo domácí."
+ tenpo_events.3.f: "„Dvanáct, pane,“ řekl hlavní radní a odložil štětec na stůl. „A zprávy z Kinai ukazují víceméně totéž, naše reformy zřejmě zapouštějí kořeny.“\n\nZ pódia [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] stručně přikývl. „Velmi dobře. Chci, aby byl dvůr v patřičném čase informován. A nyní, pokud jde o zprávu od nagasackého rychtáře…“"
+ tenpo_events.3.a: "Kéž to znamená konec [ROOT.GetCountry.GetAdjective] morálního a politického úpadku."
+ tenpo_events.3.b: "Od rolníka po samuraje, nejsme snad všichni poddanými císaře?"
+ tenpo_events.3.c: "Stabilita říše je prvořadá."
+ tenpo_outcome_hardliner_tt: "Splnili jsme více agend #b tvrdé linie#! než #b reformistických#! agend"
+ tenpo_outcome_reformer_tt: "Splnili jsme více #b reformistických#! agend než agend #b tvrdé linie#!"
+ tenpo_outcome_balanced_tt: "Splnili jsme stejný počet agend #b tvrdé linie#! a #b reformistických#! agend"
+ tenpo_events.4.t: "Činnost a nečinnost"
+ tenpo_events.4.d: "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle], nespokojený s výsledky reformního programu a čelící rostoucí veřejné nespokojenosti s hlavními radními, odvolal [SCOPE.sCharacter('roju_scope').GetFullName] z jeho funkce."
+ tenpo_events.4.f: "Vyhnanství. Bývalý radní ochutnal to slovo a příliš se mu nezamlouvalo. Možná však bylo lepší než zůstat v Edu vzhledem k událostem včerejšího dne. Jeho zbývající sluhové stále čistili jezírko a nádvoří od naházených tašek a kamenů a některé hrozby, které toho dne slyšel, už nikdy nemohl zapomenout.\n\nOchutnal to slovo znovu a shledal je o něco méně odpudivým. Kromě toho, pomyslel si, vždycky toužil spatřit horu Gassan na vlastní oči."
+ tenpo_events.4.a: "Toho hlupáka už v životě nechci vidět."
+ tenpo_events.4.b: "Zrušte každé jeho rozhodnutí a zajistěte, aby se to veřejnost dozvěděla."
+ tenpo_events.4.tt_1: "[SCOPE.sCharacter('roju_scope').GetFullName] je #r degradován#! a vnitřně vyhnán do provincie #b Dewa#!"
+ modifier_tenpo_fail: "Reformy Tenpó předčasně ukončeny"
+ tenpo_events_4_demotion_tt: "[concept_leader] [concept_interest_group] [concept_in_government] je degradován a vnitřně vyhnán" # tooltip for event_outcome_failed_effect_desc in je_tenpo_crisis
+ tenpo_events.5.t: "Držitelé půdy vzdorují centralizaci"
+ tenpo_events.5.d: "Náš krok ke konfiskaci půdy ve státech [SCOPE.sState('kanto_scope').GetName] a [SCOPE.sState('kansai_scope').GetName] narazil na rozsáhlý odpor místních držitelů půdy. Nejhlasitější stížnosti přicházejí od těch, jejichž půda byla udělena jako odměna za vojenskou službu."
+ tenpo_events.5.f: "„Vojenské zásluhy vynesly mému předkovi půdu, kterou nyní držím svým jménem. Od Sekigahary každá generace obdělávala zemi - zvyšovala její výnos a bez jediné stížnosti odváděla našim pánům, co jim náleželo.\n\nZaslouží si taková služba zacházení, kterého se nám nyní dostává? Má být naším údělem přesídlení bez náležité náhrady?“"
+ tenpo_events.5.a: "Zrušte centralizaci, než se to vymkne z rukou."
+ tenpo_events.5.b: "Nabídněte přesídleným další půdu jako náhradu."
+ tenpo_events.5.c: "Připomeňte jim, že toto je vůle [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]!"
+ modifier_heavy_handed_land_confiscations: "Tvrdé konfiskace půdy"
+ modifier_promotions_and_koku_redistribution: "Povýšení a přerozdělení koku"
+ modifier_reckless_roju: "Bezohledný ródžú"
+ modifier_will_of_the_shogun: "Ve jménu šóguna"
+ tenpo_events.6.t: "Lev v dračí noře"
+ tenpo_events.6.d: "Vítězství [SCOPE.sCountry('britain_scope').GetName] nad [SCOPE.sCountry('china_scope').GetAdjective] naší zemí hluboce otřáslo. Čínské džunky a armády byly snadno poraženy nadřazenými [SCOPE.sCountry('britain_scope').GetAdjectiveNoFormatting] silami a mnozí nyní zpochybňují schopnost [ROOT.GetCountry.GetName] odolat podobnému útoku."
+ tenpo_events.6.f: "„Od chrámu Kan-lu na západě po chrám Ťin-šan na východě byly země kolem Čen-ťiangu plné černých a bílých barbarů - jako kameny rozházené po desce go - a místní přemýšleli, zda vůbec někdy odejdou.“\n\n—Mineta Fúkó, #italic Nové příběhy ze zámoří#!"
+ tenpo_events.6.a: "Kéž nás chrání nebesa, když naši samurajové možná nedokážou."
+ tenpo_events.6.b: "Cenzurujte všechny negativní zprávy z Číny."
+ tenpo_events.6.c: "Jsme útes, o který se roztříští barbarské vlny."
+ modifier_opium_war_aftermath: "Barbaři před branami"
+ modifier_defenses_strengthened: "Posílené pobřežní posádky"
+ tenpo_events.7.t: "Škola Takašima"
+ tenpo_events.7.d: "Nagasacký rychtář [SCOPE.sCharacter('takashima_scope').GetFullName], obávající se o budoucnost Japonska po opiové válce, zorganizoval moderní vojenskou jednotku podle nizozemského vzoru a vyzývá zbytek země, aby jej následoval."
+ tenpo_events.7.f: "„Klobouky jeho mužů připomínají podivné koruny a rozkazy na ně štěkají drsným jazykem Holanďanů. Jejich formace jsou však dobře vycvičené a uspořádané a dokážou vést salvy téměř dvakrát rychleji než moji vlastní vazalové, i když jejich přesnost je poněkud menší.“\n\n„A co dělostřelectvo?“\n\n„Nemá obdoby. Obávám se, že čím déle budeme otálet s jeho přijetím, tím menší budou naše šance odrazit barbarský útok.“"
+ tenpo_events.7.a: "Povolte přijetí barbarských zbraní a technik."
+ tenpo_events.7.b: "Upřednostněte místo toho tradiční mušketýrské školy."
+ modifier_inoue_tatsuke_primacy: "Převaha školy Inoue-Tacuke"
+ modifier_favouring_traditional_musketry_houses: "Upřednostňování tradičních mušketýrských škol"
+ modifier_favouring_takashima: "Mušketýrské školy odsunuté stranou"
+ modifier_takashima_school: "Podpora školy Takašima"
+ tenpo_events.8.t: "Za misku rýže"
+ tenpo_events.8.d: "Obvinění z hromadění rýže a umělého navyšování cen způsobila, že napětí mezi zemědělci a obchodníky ve státě [SCOPE.sState('tenpo_unrest_state_scope').GetName] přerostlo v otevřený konflikt. Řady rolníků posílené loupežníky a žebráky nyní staví místní úřady před povstání v celé provincii."
+ tenpo_events.8.f: "Patřil k prvním. K té veselé hrstce, která zaútočila na dům podlého obchodníka a rozdělila jeho nepoctivě nabyté zboží mezi masy. Když však jeho pohled bloudil kolem táborového ohně, uvědomil si, jak málo jich zůstalo. Eikiči a Macuzó tu stále byli, ačkoli se jen málo podobali mužům, které kdysi znal, planoucím spravedlivým hněvem. Fukumacu přišel o život druhého dne, Takešiči sedmého. Zbytek se rozprchl jako listí, když je pronásledovali rychtářovi muži.\n\nPovaha mužů, kteří je nahradili, ho naplňovala hanbou a zoufalstvím, ale neviděl jinou cestu. I tak ubohá společnost, jako byla ta jejich, se totiž zdála božská ve srovnání s katovou pilou."
+ tenpo_events.8.a: "Vyšlete muže, aby tyto darebáky rozdrtili."
+ tenpo_events.8.b: "Nechte nepokoje samy odeznít."
+ tenpo_events.8.c: "Přimějte místní vesnické předáky, aby pomohli nepokoje potlačit."
+ modifier_consulted_headsmen: "Vesnické ústupky"
+ modifier_lingering_brigandry: "Přetrvávající loupežnictví"
+ modifier_brutal_anti_bandit_campaigns: "Brutální tažení proti banditům"
+ je_taming_the_north: "Zkrocení severu"
+ je_taming_the_north_reason: "Se zřízením #b Komise pro rozvoj [SCOPE.sState('hokkaido_state_scope').GetName]#!, běžně známé jako #b Kaitakuši#!, tento někdejší pohraniční kraj kypí činností. Každý den přicházejí z jihu noví muži a ženy, hledající novou půdu a příležitosti.\n\nNejde však o obyčejnou horečku osidlování. Se settlers přicházejí byrokraté, intelektuálové a modernizační vizionáři s posláním utvářet tuto zemi - dychtiví spatřit svou vizi budoucnosti [ROOT.GetCountry.GetName] zhmotněnou v dnešním [SCOPE.sState('hokkaido_state_scope').GetName]."
+ taming_the_north_agriculture_potentials_goal_tt: "Použili jsme akci #b $button_je_taming_the_north_agriculture_potentials$#! #v 3#!krát"
+ taming_the_north_agriculture_arable_goal_tt: "Použili jsme akci #b $button_je_taming_the_north_agriculture_arable_land$#! #v 3#!krát"
+ taming_the_north_colonies_goal_tt: "Použili jsme akci #b $button_je_taming_the_north_establish_colonies$#!"
+ je_taming_the_north_additional_goal_pre: "Pokud vlastníme celou #b $STATE_SAKHALIN$#!, #b $modifier_tamed_north$#! [concept_timed_modifier] se použije také na [concept_state_region] $STATE_SAKHALIN$:"
+ je_taming_the_north_additional_goal: "Pokud vlastníme celou [SCOPE.sStateRegion('sakhalin_state_region_scope').GetName], #b $modifier_tamed_north$#! [concept_timed_modifier] se použije také na [SCOPE.sStateRegion('sakhalin_state_region_scope').GetName]:"
+ je_taming_the_north_additional_goal_completed: "Protože vlastníme celý region [SCOPE.sStateRegion('sakhalin_state_region_scope').GetName], #b $modifier_tamed_north$#! [concept_timed_modifier] se použije také na [SCOPE.sStateRegion('sakhalin_state_region_scope').GetName]:"
+ modifier_tamed_north: "Vzorová kolonie"
+ modifier_northern_learnings: "Poznatky Kaitakuši"
+ button_je_taming_the_north_establish_colonies: "Zakládat státem podporované kolonie"
+ button_je_taming_the_north_establish_colonies_desc: "Kolonie bez dostatečného počtu kolonistů je odsouzena k nezdaru. Měli bychom zvážit pobídky, které pomohou přilákat rodiny z celé země [ROOT.GetCountry.GetName], aby se usadily na severu."
+ button_je_taming_the_north_integrate_ainu: "Zavést právní ochranu Ainuů"
+ button_je_taming_the_north_integrate_ainu_desc: "Dosud byl postoj Komise vůči [GetCulture('ainu').GetName] postojem násilné integrace a kulturního vymazávání. Naše postupné kroky směrem ke spravedlivějšímu vztahu s [GetCulture('ainu').GetNameNoFormatting] obyvateli severu však vedly k oteplení vztahů mezi našimi dvěma národy.\n\n[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] byl proto předložen návrh, aby byli [GetCulture('ainu').GetNameNoFormatting] právně zakotveni jako chráněný bratrský lid podle [ROOT.GetCountry.GetAdjective] práva, rovný [GetCulture('japanese').GetName] v právech i povinnostech."
+ ainu_frenship_tt: "V #b událostech#! jsme soustavně prosazovali zájmy [GetCulture('ainu').GetName]"
+ button_je_taming_the_north_sapporo_agricultural_college: "Založit Sapporskou zemědělskou školu"
+ button_je_taming_the_north_sapporo_agricultural_college_desc: "Sever je dokonalým prostorem pro testování nejnovějších teorií v oblasti zemědělství a správy půdy. Založíme špičkovou zemědělskou školu obsazenou kvalifikovanými cizinci, která poslouží jako jádro naší vědecké přeměny této země."
+ sapporo_partner_positive_catalyst_tt: "S náhodnou zemí splňující požadavky bude spuštěn #g pozitivní#! [concept_diplomatic_catalyst]"
+ button_je_taming_the_north_agriculture_potentials: "Zavést nové plodiny"
+ button_je_taming_the_north_agriculture_potentials_desc: "Dostupná výměra na ostrově může být nanejvýš důležitá, ale skutečný ekonomický rozvoj nastane pouze tehdy, budeme-li pěstovat také správné plodiny.\n\nNový vývoj v oblasti zemědělství - vedený #b Sapporskou zemědělskou školou#! - nám umožňuje zavést na této mrazivé hranici plodiny, které byly dosud považovány za nemožné.\n\nDostupné možnosti:\n• #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_opimizing_existing_variants_tt $modifier_opimizing_existing_variants$#! (škáluje se)\n• [GetBuildingType('building_rice_farm').GetName]\n• [GetBuildingType('building_dye_plantation').GetName]\n• [GetBuildingType('building_opium_plantation').GetName]\n• [GetBuildingType('building_vineyard').GetName]"
+ established_sapporo_college_tt: "Založili jsme #b Sapporskou zemědělskou školu#!"
+ hokkaido_agriculture_potentials_tt: "Toto rozhodnutí lze učinit celkem #v 3#!krát. (aktuálně [ROOT.GetCountry.MakeScope.Var('hokkaido_agriculture_potentials_counter_var').GetValue|v0])"
+ modifier_opimizing_existing_variants_tt: "[GetStaticModifier('modifier_opimizing_existing_variants').GetName|v]\n[GetStaticModifier('modifier_opimizing_existing_variants').GetDesc]"
+ button_je_taming_the_north_agriculture_arable_land: "Pokračovat v rekultivaci půdy"
+ button_je_taming_the_north_agriculture_arable_land_desc: "Ačkoli jsou tyto rozsáhlé země zemědělsky nerozvinuté, skrývají velký potenciál. Velká horská pásma, z nichž proudí hojnost vody, nabízejí dostatek příležitostí k rozšíření obdělávatelné půdy směrem na sever.\n\nOdvodníme mokřady, zavlažíme pole a zkrotíme zemi jako svědectví nezlomného [GetCulture('japanese').GetName] ducha."
+ hokkaido_agriculture_arable_tt: "Toto rozhodnutí lze učinit celkem #v 3#!krát. (aktuálně [ROOT.GetCountry.MakeScope.Var('hokkaido_agriculture_arable_counter_var').GetValue|v0])"
+ hokkaido_events.1.t: "Osmý obvod"
+ hokkaido_events.1.d: "Se začleněním [SCOPE.sState('hokkaido_scope').GetName] - neboli zemí Ainuů - do vlastního Japonska musí být zvoleno nové jméno, které bude odrážet nový status této země. Nově zřízená Komise pro rozvoj předložila [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] řadu návrhů k posouzení."
+ hokkaido_events.1.f: "„Je to země divochů, nic víc. Bažin a bahna. Zbídačených rybářů a pojídačů masa. Co vůbec doufáš najít v té bohem zapomenuté zemi, co ti [ROOT.GetCountry.GetCapital.GetCityHubName] už nemůže poskytnout?“\n\n„Smysl, matko. A něco, co bude mé vlastní.“"
+ hokkaido_events.1.a: "Její jméno bude #tooltippable;tooltip:hokkaido_events.1_tt_3 #b Hokkai-dó#!#!: Severomořský obvod." # 北加伊道
+ hokkaido_events.1.b: "#tooltippable;tooltip:hokkaido_events.1_tt_2 #b Hokkai-dó#!#!, na počest obyvatel této země." # 北海道
+ hokkaido_events.1.c: "#tooltippable;tooltip:hokkaido_events.1_tt_4 #b Kaitó-dó#!#!, Mořsko-ostrovní obvod, je zjevně lepší možnost."
+ hokkaido_events.1.e: "#tooltippable;tooltip:hokkaido_events.1_tt_5 #b Hitakami-dó#!#! má jistý literární zvuk."
+ hokkaido_events.1.tt_1: "Město #b Sapporo#! je založeno a ustanoveno novým správním hlavním městem ostrova, čímž nahrazuje #b Hakodate#!"
+ modifier_ainu_heritage_aknowleged: "Země Kai"
+ modifier_breaking_new_ground: "Průlom na nové půdě"
+ modifier_hokkaido_naval_connections: "Obvod spjatý s mořem"
+ modifier_call_of_the_frontier: "Volání pohraničí"
+ the_ainu_will_appreciate_this_tt: "@information! [GetCulture('ainu').GetName] si to zapamatují"
+ hokkaido_events.1_tt_2: "#b Severní obvod Kai#!\nSlovy člena komise Macuury Takeširóa je #italic kai#! (加伊) chápáno jako staré ainské endonymum pro jejich lid."
+ hokkaido_events.1_tt_3: "#b Severomořský obvod#!\nVládní protinávrh k původnímu návrhu Macuury Takeširóa. Zde jsou znaky pro #italic kai#! (加伊) nahrazeny stejně znějícím znakem #italic kai#! (海), který znamená „moře“.\n\n@information! Toto je návrh, který byl vybrán historicky."
+ hokkaido_events.1_tt_4: "#b Mořsko-ostrovní obvod#!\nOstrov je nade vše ostatní vymezen svým vztahem k moři - a tato skutečnost by měla být vyjádřena v jeho novém jménu."
+ hokkaido_events.1_tt_5: "#b Obvod země vycházejícího slunce#!\nArchaický název z období Jamato pro severovýchodní pohraniční země. Volba této možnosti pevně zakořeňuje novou kolonii ve starobylé minulosti Japonska."
+ hokkaido_events.2.t: "Nové pohraničí"
+ hokkaido_events.2.d: "Otázka, jak nejlépe osídlit tento region, zaměstnává mysl Komise pro rozvoj [SCOPE.sState('hokkaido_state_scope').GetName] už nějakou dobu. Netrpěliví správci nyní požadují, abychom dospěli ke konečnému rozhodnutí."
+ hokkaido_events.2.f: "Když vyrůstal, jeho otec často mluvil o jejich předcích. O hrdých a urozených válečnících období válčících států. O jejich strohé důstojnosti a velkých válečných činech. Jako dítě ho ty příběhy uchvacovaly, ale teď, když byl starší, ho naplňovaly jen melancholií. Ironie jeho otce, papíry přehazujícího městského opilce, který nosil meč jen kvůli důstojnosti, již mu propůjčoval, a přitom velebil ctnosti minulosti, byla nesnesitelná.\n\nKdyž ho tedy otec požádal, aby pomohl se správou podniku, pohrdavě odmítl a okamžitě se vydal na sever. Možná tam najde spásu pro svůj rod?"
+ hokkaido_events.2.a: "Upřednostněte osidlování vojenskými kolonisty."
+ hokkaido_events.2.b: "Prostý rolník je páteří země [ROOT.GetCountry.GetName]."
+ hokkaido_events.2.c: "Omezte většinu [GetCulture('japanese').GetName] osad na oblasti nevyužívané [GetCulture('ainu').GetName]."
+ modifier_tondenhei_settlements: "Osady tondenhei"
+ modifier_peasant_settlements: "Rolnické osady"
+ modifier_restricted_settlements: "Zachované ainské domoviny"
+ hokkaido_events.2.tt_1: "#v 1.5%#! všech [GetCulture('japanese').GetName] [Concept('concept_pop', '$concept_pops$')] z [concept_capital_state] se přestěhuje do [SCOPE.sState('hokkaido_state_scope').GetName]"
+ hokkaido_events.2.tt_2: "#v 3%#! všech [GetCulture('japanese').GetName] [Concept('concept_pop', '$concept_pops$')] ve státě [SCOPE.sState('hokkaido_migration_origin_scope').GetName] (jeden ze [Concept('concept_state', '$concept_states$')] s nejnižším [Concept('concept_gdp','$concept_gdp_short$')] v [GetGeographicRegion('geographic_region_home_islands').GetName]) se přestěhuje do [SCOPE.sState('hokkaido_state_scope').GetName]"
+ modifier_old_swords_in_new_lands: "Staré meče v nových zemích"
+ modifier_go_north_young_man: "Jdi na sever, mladý muži"
+ hokkaido_events.3.t: "Semena pokroku"
+ hokkaido_events.3.d: "Nedávné průlomy na Sapporské zemědělské škole podnítily návrhy na zavedení nových plodin na pole [SCOPE.sState('hokkaido_state_scope').GetName]."
+ hokkaido_events.3.f: "#b Osobní laboratorní deník, 154#!\nŠtěpy západních odrůd nyní opuštěny ve prospěch jižních kvůli nejnovějším výsledkům testů. Chlapci tvrdí, že hranice pěstování se má posunout výrazně na sever, snad dokonce až za Kamikawu. K posouzení výnosového potenciálu jsou potřeba další studie, ale jsem optimistický. Požádal jsem o zítřejší schůzku s vedoucím fakulty. Musím koupit novou kravatu."
+ hokkaido_events.3.a: "Zaměřme úsilí na zlepšení již přítomných plodin."
+ hokkaido_events.3.b: "Vyviňte odrůdy odolné vůči chladu, které umožní místní [GetBuildingType('building_rice_farm').GetName]."
+ hokkaido_events.3.c: "Nížiny se dobře hodí pro indigové [GetBuildingType('building_dye_plantation').GetName]."
+ hokkaido_events.3.e: "Mák se zde dobře ujímá, [GetBuildingType('building_opium_plantation').GetName] jsou budoucností."
+ hokkaido_events.3.g: "Zřiďte [GetBuildingType('building_vineyard').GetName] se specializovanými odrůdami hroznů."
+ button_je_taming_the_north_complete: "Rozvinuli jsme zemi natolik, jak nám naše technologie umožňují"
+ modifier_introducing_new_crops: "Zavádění nových plodin"
+ modifier_opimizing_existing_variants: "Plodiny optimalizované pro chlad"
+ hokkaido_events.4.t: "Růst půdy"
+ hokkaido_events.4.d: "Komise pro rozvoj [SCOPE.sState('hokkaido_state_scope').GetName] dosáhla dalšího významného milníku: rozsáhlé plochy bývalých mokřadů byly přeměněny na cennou zemědělskou půdu."
+ hokkaido_events.4.f: "Bylo to opravdu působivé. Před deseti lety by největší plavidlo schopné bezpečně plout po řece před ním byla malá veslice. Nyní sledoval skupinu dělníků, jak vykládají bedny a jutové pytle z mohutného parního prámu, který chrlil kouř do svěžího horského vzduchu nad nimi. Materiál pro další zdymadlo? Nebo pro odvodňovací projekt výše proti proudu? Nebo jen zásoby z nové vesnice v údolí za nimi? Nedokázal říct, a popravdě na tom nezáleželo, protože ať vezl cokoli, vezl budoucnost."
+ hokkaido_events.4.a: "S každým máchnutím motyky tvarujeme tuto zemi."
+ hokkaido_events.4.b: "A s každým novým domovem ji rozvíjíme."
+ hokkaido_events.4.tt_1: "#v 2%#! všech [GetCulture('japanese').GetName] [Concept('concept_pop', '$concept_pops$')] ve státě [SCOPE.sState('hokkaido_migration_origin_scope').GetName] (jeden ze [Concept('concept_state', '$concept_states$')] s nejnižším [Concept('concept_gdp','$concept_gdp_short$')] v [GetGeographicRegion('geographic_region_home_islands').GetName]) se přestěhuje do [SCOPE.sState('hokkaido_state_scope').GetName]"
+ modifier_immigration_burst: "Imigrační vlna"
+ modifier_open_to_business: "Otevřeno podnikání"
+ hokkaido_events.5.t: "Chlapci, buďte ambiciózní..."
+ hokkaido_events.5.d: "S absolvováním prvního ročníku Sapporské zemědělské školy, obsazené [SCOPE.sCountry('sapporo_partner_country_scope').GetAdjective] personálem, se její absolventi dychtivě chystají uvést své nově nabyté dovednosti do praxe. Mezitím rada školy projednává budoucí směřování a zaměření instituce."
+ hokkaido_events.5.f: "„... buďte ambiciózní nikoli kvůli penězům, nikoli kvůli sobeckému povyšování, nikoli kvůli pomíjivé věci, které lidé říkají sláva. Buďte ambiciózní v dosažení všeho, čím člověk může být.“\n\n—William Smith Clark, „Rozlučkový projev prezidenta Sapporské zemědělské školy“"
+ hokkaido_events.5.a: "Zemědělská škola by se měla soustředit především na zemědělství."
+ hokkaido_events.5.b: "Měli bychom upřednostnit rozšíření technické fakulty."
+ hokkaido_events.5.c: "Založte humanitní fakultu a zahajte místní kulturní studia."
+ hokkaido_events.5.tt_1: "Vliv [SCOPE.sCountry('sapporo_partner_country_scope').GetAltAdjective('eeho')] personálu v #b Sapporu#! vede ke vzniku místní [GetCulture('japanese').GetName] [SCOPE.sReligion('sapporo_partner_religion_scope').GetName] komunity"
+ hokkaido_events.5.tt_2: "Odemkne #b $button_je_taming_the_north_agriculture_potentials$#! a #b $button_je_taming_the_north_agriculture_arable_land$#! v [concept_journal_entry] #b $je_taming_the_north$#!"
+ modifier_sapporo_expanded_agricultural_faculty: "Inovativní zemědělské metody"
+ modifier_sapporo_expanded_engineering_faculty: "Špičková technická fakulta"
+ modifier_sapporo_humanities_faculty: "Sapporská skupina kulturních studií"
+ hokkaido_events.6.t: "Ainu Mosir, Sisam Mosir"
+ hokkaido_events.6.d: "V atmosféře jistých domácích sporů vydalo město [ROOT.GetCountry.GetCapital.GetCityHubName] nový dekret o právním statusu [SCOPE.sState('hokkaido_state_scope').GetName], který formálně vymezuje ainskou domovinu a zřizuje omezené instituce existující souběžně s oficiálním [ROOT.GetCountry.GetAdjective] byrokratickým aparátem."
+ hokkaido_events.6.f: "„Hinna! Hinna!“ Se skoro bezzubým úsměvem mu stará ainská babice podala misku polévky. Pohlédl na směs zvěřiny, kterou obsahovala, a poděkoval nebesům, že tu nejsou jeho rodiče, aby ho soudili.\n\n„Co všechno člověk neudělá pro mír,“ zamumlal si pro sebe a s nuceným úsměvem pokrm přijal."
+ hokkaido_events.6.a: "„Tato země je dost velká pro oba.“"
+ modifier_opposes_ainu_rights: "Ústupky barbarům"
+ modifier_supports_ainu_rights: "Zakotvená práva Ainuů"
+ hokkaido_events.7.t: "Poslední akt Komise"
+ hokkaido_events.7.d: "Komise pro rozvoj [SCOPE.sState('hokkaido_state_scope').GetName] po formálním oznámení úspěchu své vládou svěřené mise rozhodla převést své zbývající odpovědnosti na stát."
+ hokkaido_events.7.f: "#b Vyhláška č. 8#!\nKomise pro rozvoj [SCOPE.sState('hokkaido_state_scope').GetNameNoFormatting] se tímto ruší a zřizují se tři prefektury Hakodate, Sapporo a Nemuro. Hranice jejich příslušných jurisdikcí budou vyhlášeny později."
+ hokkaido_events.7.a: "Zářný příklad pro budoucí koloniální snahy..."
+ hokkaido_events.7.b: "...a koneckonců i pro [GetGeographicRegion('geographic_region_home_islands').GetName]."
+ modifier_external_applications: "Kaitakuši: vnější využití"
+ modifier_domestic_applications: "Kaitakuši: domácí využití"
+ hokkaido_events.8.t: "Komise bez poslání"
+ hokkaido_events.8.d: "Ztráta [SCOPE.sStateRegion('hokkaido_state_region_scope').GetName] donutila Komisi pro rozvoj rozpustit se, aniž by dokončila své poslání. Pobouření občané v reakci na to vyšli do ulic země [ROOT.GetCountry.GetName] a protestují proti ztrátě národní prestiže i svých osobních investic."
+ hokkaido_events.8.f: "Vyčerpaný vysloužilý správce se sesul do kancelářského křesla a nalil si štědrou číši saké. Vypil ji naráz a nechal oči spočinout na mapách rozložených před sebou na stole. Byly plné čmáranic, poznámek a značek, z nichž každá označovala samostatný plán, do kterého vložil svou životní energii. Teď nezůstal ani plán, ani energie, a naznačený optimismus v každé poznámce zněl posměšně.\n\nK čertu s tím vším, pomyslel si a nalil si další číši."
+ hokkaido_events.8.a: "Bohužel je tento výsledek mimo kontrolu vlády."
+ modifier_lost_northern_investments: "Ztracené severní investice"
