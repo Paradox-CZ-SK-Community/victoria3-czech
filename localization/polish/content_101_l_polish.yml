@@ -302,8 +302,6 @@
  dp_annex_war: "Anexe země"
  dp_annex_war_tooltip: "Zahájit $dp_annex_war$ [concept_diplomatic_play]"
  modifier_destroy_guerillas: "Ničení geril"
- dyn_c_confederate_state_of_america: "Konfederovaný stát americký"
- dyn_c_united_state: "Spojený stát americký"
  congo_free_state_events.1.t: "[SCOPE.sCountry('free_state').GetNameNoFlag]"
  congo_free_state_events.1.d: "[SCOPE.sCharacter('free_state_monarch').GetPrimaryRoleTitle] [SCOPE.sCharacter('free_state_monarch').GetFullName] prohlásil, že tato země bude nyní svobodným státem pod [SCOPE.sCharacter('free_state_monarch').GetHerHis] kontrolou v personální unii s naší zemí."
  congo_free_state_events.1.f: "[SCOPE.sCharacter('free_state_monarch').GetPrimaryRoleTitle] má tvář strnulou v nehybném úsměvu jako mramorová socha. [SCOPE.sCharacter('free_state_monarch').GetSheHe|U] mluví sametovým hlasem, po němž stěny rudnou a útulní: „Nechci riskovat, že propásneme skvělou příležitost zajistit si pro sebe kus tohoto velkolepého afrického koláče.“\n\nObrazy za [SCOPE.sCharacter('free_state_monarch').GetHerHim] všechny zobrazují společné téma; plátno se třpytí v místech s krví."
@@ -312,7 +310,7 @@
  congo_free_state_events.2.d: "Ve vládních kruzích se mluví o tom, že [SCOPE.sCountry('free_state').GetNameNoFlag], vlastněný osobně [SCOPE.sCharacter('free_state_monarch').GetPrimaryRoleTitle] [SCOPE.sCharacter('free_state_monarch').GetFullName], se ke svým lidem nechová příliš dobře."
  congo_free_state_events.2.f: "„Lodě připlouvající do přístavu předvádějí podezřelý, a přece odvážný třpyt. Rubíny a diamanty, planoucí jako pochodně, koketně vstupují do země. Lodě vracející se zpět, ach, to je jiná věc.\n\nPušky, střelný prach a vojáci. Rád bych to řekl mírněji, příteli, věř mi. Rád bych.“"
  congo_free_state_events.2.a: "Není se čeho obávat."
- congo_free_state_events.2.b: "Promluvíme si s [SCOPE.sCharacter('free_state_monarch').GetFullName]." 
+ congo_free_state_events.2.b: "Promluvíme si s [SCOPE.sCharacter('free_state_monarch').GetFullName]."
  congo_free_state_events.3.t: "Znepokojivý úbytek populace"
  congo_free_state_events.3.d: "Misionáři i laici vyjádřili své nejhlubší znepokojení nad rostoucím počtem úmrtí v [SCOPE.sCountry('free_state').GetNameNoFlag]."
  congo_free_state_events.3.f: "„V tuhle chvíli je to všechno. Jsou to nemoci, hladovění, válka, špatná voda. Ach, vždycky je to válka, že? Jsou to důstojníci. Nejsou nakonec i všechny ostatní věci také důstojníci? A především je to [SCOPE.sCharacter('free_state_monarch').GetPrimaryRoleTitle].“"
@@ -351,7 +349,7 @@
  congo_free_state_events.6.a: "Musíme to odsoudit."
  congo_free_state_events.6.b: "Nešťastné, ale patří to [SCOPE.sCharacter('free_state_monarch').GetPrimaryRoleTitle]."
  free_state_international_opinion_tooltip: "Mezinárodní mínění je proti Svobodnému státu."
- free_state_monarch_dead_tooltip: "Panovník, který Svobodný stát vytvořil, již nevládne." 
+ free_state_monarch_dead_tooltip: "Panovník, který Svobodný stát vytvořil, již nevládne."
  free_state_immediate_tooltip: "Spustí událost #bold Svobodný stát#!."
  modifier_tangena_ordeal: "Ordál tangena"
  abolish_tangena_ordeal: "Zrušit ordál tangena"
@@ -550,7 +548,7 @@
  free_speech_book_burning_risk_fail: "Neoblíbené vládní pálení knih"
  free_speech_laws.3.t: "Přehnaně horlivá cenzura"
  free_speech_laws.3.d: "Zákon [SCOPE.sLaw('current_law_scope').GetName] má potíže získat lidovou podporu, protože zmínky o něm potlačuje současný cenzurní aparát."
- free_speech_laws.3.f: "„Cokoli, co se týká cenzury, je okamžitě cenzurováno, tak jak o tom proboha máme vést otevřenou diskusi?“\n\n „Poprvé, co? Jsou jen tak chytří, jak tomu rozumějí. Pokud nejsou zrovna sečtělí, můžete jim propašovat pár metafor a přirovnání.“\n\n„Co k čertu je přirovnání? Nějaký pokřivený úsměv?“"
+ free_speech_laws.3.f: ""Všechno, co se týká cenzury, je okamžitě cenzurováno, takže jak máme vůbec o tom vést otevřenou diskusi?"\n\n "Poprvé, co? Jsou jen tak chytří, jak tomu rozumějí. Když nejsou příliš gramotní, můžete jim propašovat pár metafor a přirovnání."\n\n"Co to, do čerta, je přirovnání? Nějaký pokřivený úsměv?" # todo: CHANGED
  free_speech_laws.3.a: "Moc s tím nenaděláme."
  free_speech_laws.3.b: "Možná můžeme zákony trochu obejít."
  free_speech_censorship_stall: "Svoboda projevu cenzurována"
@@ -725,3 +723,16 @@
  ig_placated_bureaucracy_cost: "Náklady byrokracie na uklidnění zájmové skupiny"
  ig_demand_not_met: "Požadavek zájmové skupiny nesplněn"
  ig_placated_completion: "Zájmová skupina uklidněna"
+ oscar_wilde_events.1.t: "Každý muž zabíjí to, co miluje" # todo: MOVED KEY
+ oscar_wilde_events.1.wilde: "Nechvalně proslulý dandy a dramatik [SCOPE.sCharacter('oscar_wilde').GetFullName] byl odsouzen ke dvěma letům nucených prací na základě obvinění z homosexuality. Pokud neobdrží milost, můžeme rovnou říci, že jsme spolu s [Select_CString(SCOPE.sCharacter('oscar_wilde').IsFemale,'ní','ním')] odsoudili i umění v [ROOT.GetCountry.GetAltAdjectiveNoFlag('L')]." # todo: MOVED KEY
+ oscar_wilde_events.1.flavor_wilde: "„[Select_CString(SCOPE.sCharacter('oscar_wilde').IsFemale,'Její','Jeho')] dílo představuje to nejlepší z tradice satiry a břitkého důvtipu našeho národa.\n\n" # todo: MOVED KEY
+ oscar_wilde_events.1.flavor_author: "„Má všechnu strašlivou krásu řecké tragédie, tragédie, v níž jsem hrál velkou roli.\n\n" # todo: MOVED KEY
+ oscar_wilde_events.1.flavor_quote: "Knihy, které svět nazývá nemravnými, jsou knihy, které světu ukazují jeho vlastní hanbu.“" # todo: MOVED KEY
+ oscar_wilde_tt: "[SCOPE.sCharacter('oscar_wilde').GetFullName] bude [Select_CString(SCOPE.sCharacter('oscar_wilde').IsFemale,'propuštěna','propuštěn')] na svobodu." # todo: MOVED KEY
+ oscar_wilde_events.1.a: "Génius si zaslouží výjimku." # todo: MOVED KEY
+ oscar_wilde_events.1.b: "Nemůžeme být viděni, jak podkopáváme verdikty našich soudců." # todo: MOVED KEY
+ oscar_wilde_events.1.c: "Je barbarské, aby to vůbec bylo trestným činem..." # todo: MOVED KEY
+ happy_arts_protected: "Souhlasí s ochranou umělců" # todo: MOVED KEY
+ unhappy_defended_homosexuality: "Nesouhlasí s tolerancí homosexuality" # todo: MOVED KEY
+ imprisoning_gentlemen: "Věznění džentlmeni" # todo: MOVED KEY
+ upheld_ruling: "Verdikt potvrzen" # todo: MOVED KEY

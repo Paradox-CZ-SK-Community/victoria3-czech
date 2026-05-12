@@ -2,6 +2,10 @@
  japan_earthquakes.1.t: "Velká zemětřesení éry [ROOT.GetCountry.GetCustom('JAP_era_name')]"
  japan_earthquakes.1.d: "Během čtyř dnů způsobila tři zemětřesení u pobřeží škody v rozsáhlé oblasti a následné přílivové vlny jejich dopad v pobřežních oblastech ještě zhoršily."
  japan_earthquakes.1.f: "Během velmi krátké chvíle si tohoto jevu všimla celá vesnice. Zdálo se, že předchozí pohyb země nikdo nepocítil, ale pohyb vody všechny zjevně ohromil. Běželi na pláž, a dokonce až za ni, aby ho sledovali. Takový odliv na tomto pobřeží nepamatoval nikdo z žijících lidí. Objevovaly se věci dosud neviděné; neznámé plochy rýhovaného písku a pásy skal porostlých chaluhami zůstávaly obnažené právě ve chvíli, kdy na ně Hamaguči hleděl. A nikdo z lidí dole zřejmě netušil, co ten obludný odliv znamená.\n\n—Lafcadio Hearn, #italic Živoucí bůh #!"
+ japan_earthquakes.1.a: "Požádejte o pomoc sousedních Daimyō." # todo: NEW TRANSLATION
+ japan_earthquakes.1.b: "Nechte místní vládcové zajistit pomoc." # todo: NEW TRANSLATION
+ earthquake_assisting_daimyo: "Pomoc sousedním Daimyō" # todo: NEW TRANSLATION
+ earthquake_affected_daimyo: "Následky zemětřesení" # todo: NEW TRANSLATION
  japan_earthquakes.2.t: "Zemětřesení v [SCOPE.sState('japan_earthquake_state').GetCityHubName] éry [ROOT.GetCountry.GetCustom('JAP_era_name')]"
  japan_earthquakes.2.d: "Poblíž pobřeží v [SCOPE.sState('japan_earthquake_state').GetName] udeřilo velké zemětřesení, které způsobilo rozsáhlé škody v [SCOPE.sState('japan_earthquake_state').GetCityHubName] a na jeho hradu."
  japan_earthquakes.2.f: "Když po zemětřesení začaly získávat oblibu tisky velkého sumce Namazu, zdály se být v souladu s tradičními příběhy. Tvor byl zobrazován, jak jej bohové podrobují, aby mu zabránili způsobit další zemětřesení.\n\nPostupem času se však jeho vyobrazení proměňovala. Jeden tisk ukazoval Namazua, jak si rozřezává břicho a krvácí mince. Jiný jej ukazoval, jak sdílí nápoje se staviteli. Do umění pronikl satirický tón naznačující, že navzdory pohromě, kterou tato bestie přinesla, možná také něco napravovala."
@@ -45,6 +49,7 @@
  je_shinbutsu_bunri_reason: "S obnovením moci císaře musíme odlišit a povznést domácí náboženské tradice, které považují císařskou linii za posvátnou. Abychom toho dosáhli, musí být odděleny od cizího vlivu buddhismu, který byl po stovky let prostřednictvím synkretických tradic neoddělitelně spjat s uctíváním kami. Využitím nespokojenosti s buddhistickými institucemi kvůli jejich vazbám na šógunát můžeme otevřít cestu šintó jako vyššímu vůdčímu principu."
  je_taikyo_proclamation_button: "Proklamace Taikjó"
  je_taikyo_proclamation_button_desc: "Učinit šintó, uctívání kami a úctu k císaři, principem státu"
+ je_taikyo_proclamation_conversion_tt: "Každý vůdce [concept_interest_group] má #v 75%#! šanci přestoupit na [GetReligion('shinto').GetName]." # todo: NEW TRANSLATION
  je_elevate_buddhism: "Povznést buddhismus"
  je_elevate_buddhism_reason: "Buddhistické náboženské instituce v $JAP$ mají silné historické vazby na správní rameno šógunátu. Když jsme jednou odvrátili konec šógunátu, posílení těchto institucí by nám mohlo pomoci udržet jeho moc a posílit náboženské tradice $JAP$, které se nesoustředí na uctívání císaře."
  je_elevate_buddhism_goal: "$je_communism_2_goal$"
@@ -60,14 +65,17 @@
  monks_stripped_of_titles_opinion: "$monks_stripped_of_titles$"
  monks_stripped_of_titles: "Mniši zbavení titulů"
  monks_left_to_duties: "Mniši ponecháni svým povinnostem"
+ japan_religion.1.a.tt: "[GetPlayer.MakeScope.ScriptValue('japan_religion_pop_converts')|0v%] z [GetPopType('clergymen').GetName] přestoupí na [GetReligion('shinto').GetName]" # todo: NEW TRANSLATION
  japan_religion.2.t: "Hondži suidžaku"
- japan_religion.2.d: "Je dobře zavedenou představou, že buddhové se v Japonsku zjevili jako kami, což se odráží v terminologii, jako je gongen, která je pokládá za dvě části téže bytosti. Taková terminologie posiluje vliv buddhismu."
+ japan_religion.2.d: "Je dobře zavedený názor, že buddhové se v Japonsku zjevili jako kami, což se odráží v terminologii jako [concept_gongen], která je považuje za dvě části téže bytosti. Taková terminologie posiluje vliv buddhismu." # todo: CHANGED
  japan_religion.2.f: "„Kdysi to muselo dávat smysl. Amaterasu je slunce. Dainiči Nyorai, Vairóčana, je slunce. Slunce však není rozdělené, ani není odrazem či projevem světla někoho jiného. Září sama a vlastní silou. A dnes má [ROOT.GetCountry.GetNameNoFormatting] místo jen pro jedno slunce.“"
- japan_religion.2.a: "Zakažte pojem gongen."
- japan_religion.2.b: "Zakažte označovat Hačimana za bódhisattvu."
+ japan_religion.2.a: "Zakažte pojem [concept_gongen]." # todo: CHANGED
+ japan_religion.2.b: "Zakažte označování Hachimana jako [concept_boddhisattva]." # todo: CHANGED
  japan_religion.2.c: "Zdržte se regulace terminologie."
  banned_syncretic_terminology: "Zakázaná synkretická terminologie"
  retained_syncretic_terminology: "Zachovaná synkretická terminologie"
+ japan_religion.2.a.tt: "[GetPlayer.MakeScope.ScriptValue('japan_religion_pop_converts')|0v%] z [GetPopType('farmers').GetName] přestoupí na [GetReligion('shinto').GetName]" # todo: NEW TRANSLATION
+ japan_religion.2.b.tt: "[GetPlayer.MakeScope.ScriptValue('japan_religion_pop_converts')|0v%] z [GetPopType('soldiers').GetName] přestoupí na [GetReligion('shinto').GetName]" # todo: NEW TRANSLATION
  japan_religion.3.t: "Komu zvoní hrana"
  japan_religion.3.d: "Pokus vytlačit vliv buddhismu zmobilizoval obecné protibuddhistické nálady. Chrámový majetek je zabavován a poškozován, některé chrámy jsou přímo ničeny, zatímco jiné jsou zbavovány buddhistické ikonografie."
  japan_religion.3.f: "Když se přiblížil ke svatyni, zarazil se. Dva Nió, mocné Buddhovy sochy, které stály na stráži před vchodem, byly odstraněny. Na jejich místě nebylo nic.\n\nKdyž vešel dovnitř, nemohl se zbavit pocitu, že přes veškerou svou čistotu už svatyně není tak bezpečná jako kdysi. Nestřežená brána."
@@ -103,7 +111,7 @@
  permitted_christianity: "Povolené křesťanství"
  christianity_disallowed: "Křesťanství zakázáno"
  japan_religion.7.t: "Linie myšlení"
- japan_religion.7.d: "[ROOT.GetCountry.GetName] má dlouhou tradici různých škol buddhismu, z nichž mnohé mají vliv dodnes. S rostoucí politickou mocí [SCOPE.gsInterestGroup('devout_ig').GetName] jedna škola vystupuje do popředí."
+ japan_religion.7.d: "[ROOT.GetCountry.GetName] má dlouhou tradici různých buddhistických škol, z nichž mnohé si dodnes zachovávají vliv. S tím, jak [SCOPE.gsInterestGroup('devout_ig').GetName] nabývá politické síly, jedna škola vyčnívá." # todo: CHANGED
  japan_religion.7.f: "„V [ROOT.GetCountry.GetAltAdjectiveNoFormatting('L')] po staletí vznikaly nové školy buddhismu. Není důvod si myslet, že by jedna z nich vytlačila ostatní. Současný okamžik však vyžaduje vedení a politické směřování a je pravděpodobné, že někteří se jej chopí více než jiní.“"
  japan_religion.7.a: "Škola Čisté země."
  japan_religion.7.b: "Škola zenu."
@@ -132,5 +140,19 @@
  japan_religion.10.b: "Nedovolíme, aby se tato barbarská praktika uchytila!"
  maintained_meat_ban: "Zachovaný zákaz masa"
  maintained_meat_ban_opinion: "$maintained_meat_ban$"
-
-
+ japan_religion.11.t: "Cesta kami" # todo: NEW TRANSLATION
+ japan_religion.11.d: "Oddělení šintoistických a buddhistických praktik se podařilo. Vliv starých náboženských institucí slábne a nastává nová éra oddanosti bohům, císaři a [ROOT.GetCountry.GetName]." # todo: NEW TRANSLATION
+ japan_religion.11.f: ""[ROOT.GetCountry.GetNameNoFormatting] je domovem mnoha vyznání, mnoha rituálů. Některé staré, některé nové. Naším cílem nebylo vytlačit některé na úkor jiných. Šlo o vytyčení hranice mezi milovanými vírami a nezpochybnitelnými pravdami."" # todo: NEW TRANSLATION
+ japan_religion.11.a: "Božství je absolutní." # todo: NEW TRANSLATION
+ japan_religion.12.t: "Střední cesta" # todo: NEW TRANSLATION
+ japan_religion.12.d: "Po překonání bouřlivého období otřesů pro [ROOT.GetCountry.GetName] se [SCOPE.gsInterestGroup('devout_ig').GetName] podařilo znovu prosadit jako náboženskou autoritu země a posílit své vazby na [ROOT.GetCountry.GetGovernment.GetName]." # todo: NEW TRANSLATION
+ japan_religion.12.f: ""Lidé mluví o cestě bohů. Jestliže taková existuje,\nnení pro lidi, aby po ní kráčeli; pouze bohové\nmohou kráčet po posvátné cestě bohů".\n—Hagura Toman" # todo: NEW TRANSLATION
+ japan_religion.12.a: "Cesta je jasná." # todo: NEW TRANSLATION
+ japan_religion.13.t: "$je_taikyo_proclamation_button$" # todo: NEW TRANSLATION
+ japan_religion.13.d: "Proklamace Velkého učení, prohlašující uctívání kami a úctu k božskému císaři za zásady [ROOT.GetCountry.GetAdjective] státu a povinnost jeho občanů." # todo: NEW TRANSLATION
+ japan_religion.13.f: ""Úcta ke kami a láska k naší zemi jsou neoddělitelně spjaty; to je první učení.\n\nZásady nebe a cesta člověka jsou neoddělitelně spjaty; to je druhé učení.\n\nÚcta k císaři a poslušnost vůli dvora jsou neoddělitelně spjaty; to je třetí učení."" # todo: NEW TRANSLATION
+ japan_religion.13.a: "Musí být slyšena po celé zemi!" # todo: NEW TRANSLATION
+ concept_gongen: "Gongen" # todo: NEW TRANSLATION
+ concept_gongen_desc: "Buddha zjevující se jako kami, spojující místní božstvo s přinášečem buddhistického osvícení." # todo: NEW TRANSLATION
+ concept_boddhisattva: "Bodhisattva" # todo: NEW TRANSLATION
+ concept_boddhisattva_desc: "V buddhismu osvícená bytost a učitel, který pomáhá ostatním dosáhnout nirvány." # todo: NEW TRANSLATION

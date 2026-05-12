@@ -595,8 +595,8 @@
  je_meiji_main: "Restaurace [ROOT.Var('emperor_var').GetCharacter.GetFirstName]"
  je_meiji_main_reason: "Císař byl navrácen k moci a proces znovuvybudování $JAP$#! může začít. Čeká nás mnoho práce. Zahraniční mocnosti nás sledují s dychtivým zájmem. Musíme být schopni odolat jejich tlaku nejen vojensky, ale i ekonomicky a politicky:\n\n• [SCOPE.GetRootScope.GetCountry.GetCustom('meiji_je_conditions_army')]\n• [SCOPE.GetRootScope.GetCountry.GetCustom('meiji_je_conditions_economy')]\n• [SCOPE.GetRootScope.GetCountry.GetCustom('meiji_je_conditions_diplomacy')]\n\nMusíme vybudovat nové $JAP$#!, dokud je železo žhavé, a využít této příležitosti k utváření země způsoby, o nichž naši předkové ani nesnili."
  je_meiji_main_goal: "Dokončete všechny 3 restaurace [Concept('concept_journal_entry', '$concept_journal_entries$')]"
- je_meiji_status_has_completed_meiji_army_je: "Máme #g dokončeno#! #b $je_meiji_army$#!\n"
- je_meiji_status_has_completed_meiji_economy_je: "Máme #g dokončeno#! #b $je_meiji_economy$#!\n"
+ je_meiji_status_has_completed_meiji_army_je: "#g Dokončeno#! #b $je_meiji_army$#!" # todo: CHANGED
+ je_meiji_status_has_completed_meiji_economy_je: "#g Dokončeno#! #b $je_meiji_economy$#!" # todo: CHANGED
  je_meiji_status_has_completed_meiji_diplomacy_je: "Máme #g dokončeno#! #b $je_meiji_diplomacy$#!"
  je_meiji_status_has_completed_iwakura_mission_je: "Máme #g dokončeno#! #b Restaurace: Mise na Západ#!"
  je_meiji_status_has_not_completed_meiji_army_je: "Nemáme #warning dokončeno#! #b $je_meiji_army$#!"
@@ -609,8 +609,8 @@
  je_meiji_economy_reason: "Japonsko musí modernizovat svůj průmysl, aby mohlo konkurovat národům, které se nás snaží ovládnout a vykořisťovat."
  je_meiji_army: "Restaurace: Konec samurajů"
  je_meiji_army_reason: "Samurajové jsou naše starobylá feudální dědičná válečnická kasta. Po staletí za nás bojovali a veleli našim armádám. V dlouhém období relativního míru však zapomněli na umění války a stali se zátěží pro stát."
- je_meiji_diplomacy: "Restaurace: Konec sakoku"
- je_meiji_diplomacy_reason: "Japonsko se po staletí izolovalo, aby odolalo cizím vlivům. Nyní je však čas otevřít se světu. Naším cílem není pouze otevření Japonska, ale také jeho prosazení jako mocnosti na světové scéně."
+ je_meiji_diplomacy: "Obnova: Získat uznání" # todo: CHANGED
+ je_meiji_diplomacy_reason: "Japonsko se po staletí izolovalo, aby odolalo zahraničnímu vlivu. Nyní je čas otevřít se světu a prosadit naši zemi jako rovnocennou mocnost na světové scéně." # todo: CHANGED
  has_completed_meiji_army_je_tt: "Má dokončeno #b $je_meiji_army$#!"
  has_completed_meiji_economy_je_tt: "Má dokončeno #b $je_meiji_economy$#!"
  has_completed_meiji_diplomacy_je_tt: "Má dokončeno #b $je_meiji_diplomacy$#!"
@@ -1050,7 +1050,7 @@
  communism.9.b: "[SCOPE.sState('coop_state').GetName] je skvělé místo k životu."
  path_to_vanguardism: "Cesta k avantgardismu"
  je_consolidate_colonial_rule: "Upevnit koloniální nadvládu"
- je_consolidate_colonial_rule_reason:3 "Hranice našich indických území představují trvalé riziko. Musíme zajistit stabilitu a potlačit odpor.\n\nPři rozšiřování správy můžeme vytvářet nové [Concept('concept_princely_state', '$concept_princely_states$')]."
+ je_consolidate_colonial_rule_reason: "Hranice našich indických území představují trvalé riziko. Musíme zajistit stabilitu a potlačit odpor.\n\nPři rozšiřování správy můžeme vytvářet nové [Concept('concept_princely_state', '$concept_princely_states$')]."
  je_consolidate_colonial_rule_goal: "Nejvyšší [Country.GetAdjectiveNoFlag] [concept_secession] méně než #variable 30%#! po dobu #v 120#! měsíců\n• (Aktuálně #variable [ROOT.GetCountry.MakeScope.Var('east_indies_revolt_var').GetValue]#! měsíců)"
  je_reform_indies: "Reformovat Indii"
  je_reform_indies_reason: "Staré metody vykořisťování nejsou udržitelné. Musíme transformovat ekonomiku."
@@ -1110,7 +1110,8 @@
  1848.4.a: "Podpořit konzervativní řád."
  1848.4.b: "Podpořit radikální hnutí."
  modifier_springtime_of_the_peoples: "Jaro národů"
- peoples_springtime_underway_tt: "Jakákoli #b evropská#! [concept_country] s [concept_rank] alespoň [concept_major_power] prožívá #tooltippable;tooltip:[GetPlayer.GetTooltipTag],liberal_movements_list_tt liberální#! nebo #tooltippable;tooltip:[GetPlayer.GetTooltipTag],socialist_movements_list_tt socialistickou#! [concept_revolution]"
+ peoples_springtime_underway_tt: "Každá #b evropská#! [concept_country] s [concept_rank] [concept_major_power] nebo vyšším zažívá #tooltippable;tooltip:[GetPlayer.GetTooltipTag],liberal_movements_list_tt Liberální#! nebo #tooltippable;tooltip:[GetPlayer.GetTooltipTag],socialist_movements_list_tt Socialistická#! [concept_revolution] ve svém [Concept('concept_capital_state','$concept_capital_state_short$')]" # todo: CHANGED
+ caused_by_liberal_or_socialist_movement_tt: "[Concept('concept_revolution', '$concept_revolutionary$')] [concept_political_movement] je #tooltippable;tooltip:[GetPlayer.GetTooltipTag],liberal_movements_list_tt Liberální#! nebo #tooltippable;tooltip:[GetPlayer.GetTooltipTag],socialist_movements_list_tt Socialistické#!" # todo: NEW TRANSLATION
  modifier_radical_movement_enhancement: "Radikální nálady"
  suppressing_radicals: "Potlačování radikálů"
  1848_popular_radical: "Populární radikál"
@@ -1361,8 +1362,6 @@
  je_peru_bolivia_on_restorer_victory: "Při vítězství #b Obnovitele#!:\n$EFFECT$"
  je_peru_bolivia_confederation_victory: "Pro dosažení vítězství #b Konfederace#!:\n"
  je_peru_bolivia_on_confederation_victory: "Při vítězství #b Konfederace#!:\n$EFFECT$"
- dyn_c_peru_bolivia: "Peru-Bolívie"
- dyn_c_peru_bolivia_adj: "Peruánsko-bolivijský"
  je_autocracy: "Náboženství, autokracie, národnost"
  je_autocracy_reason: "Naše země je definována absolutní autoritou našeho milovaného vládce. Jsme jedna rodina s jedním otcem a jednou vlastí; jednotní a silní. Pokud si přejeme tyto hodnoty zachovat, musí být autokracie udržena."
  je_autocracy_goal: "Následující musí platit po celkem 30 let:"
@@ -1703,8 +1702,6 @@
  end_strike_tt: "Stávka skončí"
  strike_negotiate_tooltip: "Budeme muset prosadit [concept_law] nebo rozšířit [concept_institution] příznivou pro odbory"
  general_strike_effect_tt: "Všechny [Concept('concept_incorporated_state', '$concept_incorporated_states$')] získají:"
- dyn_c_welsh_patagonia: "Y Wladfa"
- dyn_c_welsh_patagonia_adj: "Velšsko-patagonský"
  scramble_for_africa_complete_tt: "Ovládá #variable [JournalEntry.GetTotalGoalValue]#! nebo více [Concept('concept_state','$concept_states$')] v [GetGeographicRegion('geographic_region_africa').GetName] prostřednictvím [Concept('concept_unincorporated_state','$concept_unincorporated_states$')] nebo [Concept('concept_subject','$concept_subjects$')]"
  bank_robberies: "Bankovní loupeže"
  frontier_military_aid: "Vojenská pomoc na hranici"

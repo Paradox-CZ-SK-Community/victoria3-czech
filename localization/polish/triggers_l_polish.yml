@@ -2601,8 +2601,8 @@
  TRIGGER_ANY_SCOPE_STATE: "Jakýkoli [concept_state|l]:"
  TRIGGER_ANY_SCOPE_STATE_ALL: "Všechny [Concept('concept_state', '$concept_states$')|l]:"
  TRIGGER_ANY_SCOPE_STATE_ALL_NOT: "Žádný [Concept('concept_state', '$concept_states$')|l]:"
- TRIGGER_ANY_SCOPE_STATE_ALL_FIRST: "Všechny [Country.GetAdjectiveNoFlag] [Concept('concept_state', '$concept_states$')|l]"
- TRIGGER_ANY_SCOPE_STATE_ALL_FIRST_NOT: "Žádný [Country.GetAdjectiveNoFlag] [concept_state|l]"
+ TRIGGER_ANY_SCOPE_STATE_ALL_FIRST: "Všechny $FILTER$[Country.GetAdjectiveNoFlag] [Concept('concept_state', '$concept_states$')]" # todo: CHANGED
+ TRIGGER_ANY_SCOPE_STATE_ALL_FIRST_NOT: "Žádné $FILTER$[Country.GetAdjectiveNoFlag] [concept_state]" # todo: CHANGED
  TRIGGER_ANY_SCOPE_STATE_ALL_THIRD: "Všechny [Concept('concept_state', '$concept_states$')|l] v [Country.GetAltAdjective('L')]"
  TRIGGER_ANY_SCOPE_STATE_ALL_THIRD_NOT: "Žádný [concept_state|l] není řízen [Country.GetName]"
  TRIGGER_ANY_SCOPE_STATE_COUNT: "$PARAMETERS$ $FILTER$[Concept('concept_state', '$concept_states$')|l]:"
@@ -4159,6 +4159,10 @@
  TRIGGER_HAS_TREATY_FOREIGN_INVESTMENT_RIGHTS_WITH_NOT: "[COUNTRY.GetName] #b nemá#! [GetArticleType('foreign_investment_rights').GetNameNoIcon] s [TARGET_COUNTRY.GetAltAdjective('I')]"
  TRIGGER_HAS_TREATY_TRADE_PRIVILEGE_WITH: "[COUNTRY.GetName] má [GetArticleType('trade_privilege').GetNameNoIcon] s [TARGET_COUNTRY.GetAltAdjective('I')]"
  TRIGGER_HAS_TREATY_TRADE_PRIVILEGE_WITH_NOT: "[COUNTRY.GetName] #b nemá#! [GetArticleType('trade_privilege').GetNameNoIcon] s [TARGET_COUNTRY.GetAltAdjective('I')]"
+ TRIGGER_HAS_TREATY_GUARANTEE_INDEPENDENCE_WITH: "[TARGET_COUNTRY.GetName] poskytuje [GetArticleType('guarantee_independence').GetNameNoIcon] [COUNTRY.GetName]" # todo: NEW TRANSLATION
+ TRIGGER_HAS_TREATY_GUARANTEE_INDEPENDENCE_WITH_NOT: "[TARGET_COUNTRY.GetName] #b neposkytuje#! [GetArticleType('guarantee_independence').GetNameNoIcon] [COUNTRY.GetName]" # todo: NEW TRANSLATION
+ TRIGGER_HAS_TREATY_SUPPORT_INDEPENDENCE_WITH: "[TARGET_COUNTRY.GetName] podporuje [GetArticleType('support_independence').GetNameNoIcon] [COUNTRY.GetName]" # todo: NEW TRANSLATION
+ TRIGGER_HAS_TREATY_SUPPORT_INDEPENDENCE_WITH_NOT: "[TARGET_COUNTRY.GetName] #b nepodporuje#! [GetArticleType('support_independence').GetNameNoIcon] [COUNTRY.GetName]" # todo: NEW TRANSLATION
  TRIGGER_IS_NEGOTIATING: "[Concept('concept_negotiation', '$concept_negotiations$')] probíhají"
  TRIGGER_IS_NEGOTIATING_NOT: "[Concept('concept_negotiation', '$concept_negotiations$')] #b nejsou#! v průběhu"
  TRIGGER_HAS_NEGOTIATED: "[concept_interest_group] dokončila [Concept('concept_negotiation', 'vyjednávání')]"

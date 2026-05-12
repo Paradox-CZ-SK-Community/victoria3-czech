@@ -1,13 +1,13 @@
 ﻿l_polish:
  je_ip4_coup: "Puč!"
  je_ip4_coup_reason: "[SCOPE.sCharacter('golpista_general').GetCustom('ordered_personality_traits_loc')|l] [SCOPE.sCharacter('golpista_general').GetRankName] [SCOPE.sCharacter('golpista_general').GetFullName], osobnost respektovaná mezi [SCOPE.gsInterestGroup('golpista_ig').GetName], začal manévrovat směrem k uchvácení státní moci ozbrojenou silou.\n\nDokud je tento [concept_journal_entry] aktivní, bude rychlost, s jakou se $concept_coup$ bude #tooltippable;tooltip:[GetPlayer.GetTooltipTag],coup_progress_factors_tt zrychlovat#! nebo #tooltippable;tooltip:[GetPlayer.GetTooltipTag],coup_regress_factors_tt zpomalovat#!, určena rozdílem mezi [concept_coup_strength] [SCOPE.sCharacter('golpista_general').GetPrimaryRoleTitle] [SCOPE.sCharacter('golpista_general').GetLastName] ([SCOPE.sCharacter('golpista_general').MakeScope.Var('monthly_cached_commander_coup_strength').GetValue|v2]) a [concept_coup_resistance] státu [ROOT.GetCountry.GetName] ([SCOPE.ScriptValue('country_coup_resistance')|v2]). Pokud #b postup#! dosáhne #v 100 %#! a [SCOPE.sCharacter('golpista_general').GetLastNameNoFormatting] bude schopen zahájit [SCOPE.sCharacter('golpista_general').GetHerHis] [concept_coup], hrozí svržení naší vlády."
- coup_je_reason_text_1: "Snaží se zabránit přijetí [SCOPE.sLaw('current_law_scope').GetName]" # todo: NEW TRANSLATION
+ coup_je_reason_text_1: "Snaží se zabránit schválení [ROOT.Var('coup_loc_law_var').GetLaw.GetName]" # todo: CHANGED
  coup_je_reason_text_2: "Rozzuřeni neschopností úřadující vlády prosadit jejich legislativní agendu" # todo: NEW TRANSLATION
  coup_je_reason_text_3: "Na odplatu za to, že úřadující vláda zradila své závazky" # todo: NEW TRANSLATION
- coup_je_reason_text_4: "Ve snaze naplnit [SCOPE.sCharacter('golpista_general').GetHerHis] osobní ambice" # todo: NEW TRANSLATION
+ coup_je_reason_text_4: "Ve snaze naplnit [ROOT.Var('coup_loc_char_var').GetCharacter.GetHerHis] osobní ambice" # todo: CHANGED
  coup_je_reason_text_5: "Ve jménu svržení a nahrazení vládnoucí dynastie [ROOT.GetCountry.GetRuler.GetLastName]" # todo: NEW TRANSLATION
- coup_je_reason_text_6: "Snaží se dosadit režim příznivější k [SCOPE.sCountry('coup_lobby_country').GetName]" # todo: NEW TRANSLATION
- coup_je_reason_text_7: "V [SCOPE.sCharacter('golpista_general').GetHerHis] neúnavném usilování o Republiku práce" # todo: NEW TRANSLATION
+ coup_je_reason_text_6: "Usiluje o nastolení režimu vstřícnějšího vůči [ROOT.Var('coup_loc_lobby_country_var').GetCountry.GetName]" # todo: CHANGED
+ coup_je_reason_text_7: "Ve [ROOT.Var('coup_loc_char_var').GetCharacter.GetHerHis] neúnavném usilování o Republiku práce" # todo: CHANGED
  coup_je_reason_text_0: "V nestydatém projevu ctižádosti" # todo: NEW TRANSLATION
  coup_progress_factors_tt: "Faktory, které #b urychlí#! postup [concept_coup], zahrnují:\n• Nízkou [concept_legitimacy] [concept_government]\n• Vysokou [concept_popularity] pučistických velitelů\n• Podíl celkových [Concept('concept_unit','$concept_units$')] ovládaných pučistickým [concept_commander]\n• [concept_clout] $ig_approval_unhappy$ [Concept('concept_interest_group','$concept_interest_groups$')] podporujících $concept_coup$\n• Blízkost [concept_military_formation] pučistického [concept_commander] k [concept_capital_state]"
  coup_regress_factors_tt: "Faktory, které #b sníží#! postup [concept_coup], zahrnují:\n• Vysokou [concept_legitimacy] [concept_government]\n• Nízkou [concept_popularity] pučistických velitelů\n• Úroveň investic do [GetInstitutionType('institution_home_affairs').GetName] při zákonech [GetLawType('law_secret_police').GetName] nebo [GetLawType('law_national_guard').GetName] [Concept('concept_law', '$concept_laws$')]\n• Zvyšování [concept_approval] [Concept('concept_interest_group','$concept_interest_groups$')] podporujících $concept_coup$\n• Vzdálenost [concept_military_formation] pučistického [concept_commander] od [concept_capital_state]"
@@ -51,10 +51,12 @@
  coup_commander_num_army_units_tt: "podíl celkových armádních [Concept('concept_unit','$concept_units$')] ovládaných pučistickým [concept_commander]"
  coup_commander_num_navy_units_tt: "podíl celkových námořních [Concept('concept_unit','$concept_units$')] ovládaných pučistickým [concept_commander]"
  coup_popularity_vs_legitimacy_tt: "[concept_popularity] pučistického [concept_commander]"
+ coup_commander_rank_progress_tt: "[Concept('concept_commander_rank', '$Rank$')] povstalce [concept_commander]" # todo: NEW TRANSLATION
  coup_commander_core_location_progress_tt: "pučistický [concept_commander] se nachází v [concept_capital_state] [concept_strategic_region]"
  coup_commander_periphery_location_progress_tt: "pučistický [concept_commander] se nachází v [concept_strategic_region] s vlastněnými [Concept('concept_incorporated_state', '$concept_incorporated_states$')]"
  coup_commander_colony_location_progress_tt: "pučistický [concept_commander] se nachází v [concept_strategic_region] bez vlastněných [Concept('concept_incorporated_state', '$concept_incorporated_states$')]"
  coup_commander_no_location_progress_tt: "pučistický [concept_commander] je na přesunu nebo na [concept_front]"
+ coup_commander_unassigned_location_progress_tt: "povstalec [concept_commander] byl odvolán z [Concept('concept_incorporated_state', 'Field Command')]" # todo: NEW TRANSLATION
  appeased_golpista_igs_tt: "uklidněné podporující [Concept('concept_interest_group','$concept_interest_groups$')]"
  secret_police_coup_effect_tt: "úroveň investic do [GetInstitutionType('institution_home_affairs').GetName] při zákonu [GetLawType('law_secret_police').GetName] [concept_law]"
  national_guard_coup_effect_tt: "úroveň investic do [GetInstitutionType('institution_home_affairs').GetName] při zákonu [GetLawType('law_national_guard').GetName] [concept_law]"
@@ -749,32 +751,32 @@
  modifier_one_way_out_slave_revolt_state: "Jediná cesta ven"
  modifier_one_way_out_slave_revolt: "Jediná cesta ven"
  je_iberia: "Iberská unie"
- je_iberia_reason: "Jak se německé národy snaží o sjednocení #v $GER$#! a Italové touží po #v $ITA$#!, tak i nesčetné národy Iberského poloostrova hledí k jednotné [GetGeographicRegion('geographic_region_iberia').GetName]. [GetPlayer.GetCustom('iberian_union_political_text')]\n\nOficiální podpora unifikace jedním či více mocnostmi poloostrova proměnila sjednocený $geographic_region_iberia$ z vzdáleného snu v reálně dosažitelný cíl—pokud bude možné sladit všechny mocnosti poloostrova.\n\n@information! Všechny [Concept('concept_country','$concept_countries$')] zapojené do tohoto [concept_journal_entry] jsou obecně otevřeny nějaké formě [Concept('concept_unification','$concept_unification_short$')]. Pro diplomatické sjednocení poloostrova musí všechny jeho politické útvary harmonizovat své [Concept('concept_law','$concept_laws$')], a mít kompatibilní #b zásady vlády#!."
+ je_iberia_reason: "Zatímco německé národy usilují o sjednocené #v $GER$#! a Italové touží po #v $ITA$#!, mnohé národy Pyrenejského poloostrova rovněž hledí ke sjednocené [GetGeographicRegion('geographic_region_iberia_old').GetName]. [GetPlayer.GetCustom('iberian_union_political_text')]\n\nOficiální podpora sjednocení jedním či více mocnostmi poloostrova proměnila sjednocený $geographic_region_iberia$ z dávného snu v cíl, který je na dosah—pokud dokážeme sladit všechny mocnosti poloostrova.\n\n@information! Všechny [Concept('concept_country','$concept_countries$')] zapojené do tohoto [concept_journal_entry] jsou obecně příznivě nakloněny určité formě [Concept('concept_unification','$concept_unification_short$')]. Aby byl poloostrov diplomaticky sjednocen, musí všechny jeho politické celky harmonizovat své [Concept('concept_law','$concept_laws$')] a mít kompatibilní #b Governance Principles#!." # todo: CHANGED
  iberia_union_political_text_monarchy: "Na vrcholu španělské a portugalské říše byla celá Iberie svázána pod #v Iberian Union#!. Dynastičtí unionisté volají po obnovení této Unie, usilují o odstranění ekonomických bariér oddělujících Španělsko a Portugalsko a o uskutečnění nové zlaté éry."
  iberia_union_political_text_theocracy: "Všeobecná katolická církev stojí nad všemi národy. Horliví univerzalisté volají po #v Iberian Concordat#!, aby přivedli celý poloostrov do posvátného svazku."
  iberia_union_political_text_republic: "Inspirujíc se příkladem evropských liberálních revolucí, radikální republikáni volají po sjednocení všech národů poloostrova pod jedním #v Iberian Federation#!."
  iberia_union_political_communist: "Proletariát nezná národ—feudální a buržoazní konstrukty, které po staletí ovládaly poloostrov, musí být zničeny, a socialistická #v Iberian Federation#! musí vzniknout z jejich popela."
  iberia_exists_tt: "#v $IBE$#! bylo [Concept('concept_nation_formation','$concept_nation_formation_short_past$')]"
  pursued_iberian_unification_tt: "Rozhodl se usilovat o #v $IBE_ADJ$#! [Concept('concept_unification','$concept_unification_short$')]"
- je_iberia_activate_tt: "#v $je_iberia$#! Globální [concept_journal_entry] bude přidán do deníku všech [Concept('concept_country','$concept_countries$')] v [GetGeographicRegion('geographic_region_iberia').GetName]"
- upon_researching_pan_nationalism_iberia_tt: "Po výzkumu #v $pan-nationalism$#! bude #v $je_iberia$#! Globální [concept_journal_entry] přidán do deníku všech [Concept('concept_country','$concept_countries$')] v [GetGeographicRegion('geographic_region_iberia').GetName]"
+ je_iberia_activate_tt: "#v $je_iberia$#! Globální [concept_journal_entry] bude přidán do deníku všech [Concept('concept_country','$concept_countries$')] v [GetGeographicRegion('geographic_region_iberia_old').GetName]" # todo: CHANGED
+ upon_researching_pan_nationalism_iberia_tt: "Po výzkumu #v $pan-nationalism$#! bude #v $je_iberia$#! globální [concept_journal_entry] přidán do deníku všech [Concept('concept_country','$concept_countries$')] v [GetGeographicRegion('geographic_region_iberia_old').GetName]" # todo: CHANGED
  je_iberia_discard_tt: "Rozhodneme se neusilovat o #v $IBE_ADJ$#! [Concept('concept_unification','$concept_unification_short$')]"
- je_iberia_may_activate_again_warning_tt: "@warning! Pokud se jakékoli jiné [concept_country] v [GetGeographicRegion('geographic_region_iberia').GetName] rozhodne usilovat o #v $IBE_ADJ$#! [Concept('concept_unification','$concept_unification_short$')], bude #v $je_iberia$#! Globální [concept_journal_entry] přidán do deníku"
+ je_iberia_may_activate_again_warning_tt: "@warning! Pokud kterákoliv jiná [concept_country] v [GetGeographicRegion('geographic_region_iberia_old').GetName] zvolí cestu #v $IBE_ADJ$#! [Concept('concept_unification','$concept_unification_short$')], bude přidán #v $je_iberia$#! globální [concept_journal_entry] do deníku" # todo: CHANGED
  je_iberia_made_visible_tt: "#v $je_iberia$#! Globální [concept_journal_entry] bude viditelný v deníku"
  iberia.1.t: "Jeden poloostrov"
- iberia.1.d: "Vzestup pan-nacionálních sentimentů šířících se po [GetGeographicRegion('geographic_region_europe').GetName] dorazil i do [ROOT.GetCountry.GetName]. Dynastičtí unionisté i internacionalističtí radikálové vyzývají ke sjednocení [GetGeographicRegion('geographic_region_iberia').GetName] pod svou preferovanou formu vlády."
+ iberia.1.d: "Vzrůstající pan-nacionalistické nálady, které se šíří po [GetGeographicRegion('geographic_region_europe').GetName], dosáhly i [ROOT.GetCountry.GetName]. Jak dynastičtí unionisté, tak internacionalističtí radikálové volají po sjednocení [GetGeographicRegion('geographic_region_iberia_old').GetName] pod formou vlády, kterou preferují." # todo: CHANGED
  iberia.1.f: "„Sjednocení Španělska a Portugalska je výhodné pro obě země: je to přirozené, spravedlivé, legitimní, nezbytné—a více řekneme, je to nevyhnutelné. Cokoli, co tomu brání, škodí oběma národům; cokoli, co to posiluje, je prospěšné. Obtížnost spočívá pouze v nalezení prostředků k uskutečnění této veliké myšlenky způsobem spontánním, svobodným a čestným pro obě strany.“\n\n—Fernández Cuesta"
  iberia.1.a_1: "Byli jsme příliš dlouho rozděleni."
  iberia.1.a_2: "Dělníci světa, spojte se!"
  iberia.1.b: "[ROOT.GetCountry.GetNameNoFormatting] je suverénní národ a zůstane jím."
  iberia.11.t: "Jeden poloostrov"
- iberia.11.d: "S nástupem pan-nacionálních sentimentů po [GetGeographicRegion('geographic_region_iberia').GetName] vláda [SCOPE.sCountry('iberia_forming_country').GetName] prohlásila sjednocení poloostrova za oficiální politiku. Když je postoj [SCOPE.sCountry('iberia_forming_country').GetNameNoFormatting] jasný, musíme vyhlásit i ten náš."
+ iberia.11.d: "S narůstajícími pan-nacionálními náladami napříč [GetGeographicRegion('geographic_region_iberia_old').GetName] vláda [SCOPE.sCountry('iberia_forming_country').GetName] prohlásila sjednocení poloostrova za oficiální politiku. Jakmile je postoj [SCOPE.sCountry('iberia_forming_country').GetNameNoFormatting] jasný, musíme vyslovit i ten náš." # todo: CHANGED
  iberia.11.f: "„Sjednocení Španělska a Portugalska je výhodné pro obě země: je to přirozené, spravedlivé, legitimní, nezbytné—a více řekneme, je to nevyhnutelné. Cokoli, co tomu brání, škodí oběma národům; cokoli, co to posiluje, je prospěšné. Obtížnost spočívá pouze v nalezení prostředků k uskutečnění této veliké myšlenky způsobem spontánním, svobodným a čestným pro obě strany.“\n\n—Fernández Cuesta"
- iberia_shared_governance_principles_laws_tt: "Všechny zapojené [Concept('concept_country','$concept_countries$')] v [GetGeographicRegion('geographic_region_iberia').GetName] mají stejné $lawgroup_governance_principles$ [concept_law]"
- iberia_sufficient_shared_laws_tt: "Všechny zapojené [Concept('concept_country','$concept_countries$')] v [GetGeographicRegion('geographic_region_iberia').GetName] sdílí alespoň [SCOPE.ScriptValue('iberia_shared_law_requirement')|v0] aktivních [Concept('concept_law','$concept_laws$')] (aktuálně [GetGlobalVariable('iberia_shared_laws_var').GetValue|v0])"
- all_iberian_subjects_below_75_ld_tt: "Všechny [concept_subject] [Concept('concept_country','$concept_countries$')] v [GetGeographicRegion('geographic_region_iberia').GetName] mají [concept_liberty_desire] pod #v 75#!"
- all_independent_iberian_countries_above_50_relations_tt: "Všechny nezávislé [Concept('concept_country','$concept_countries$')] v [GetGeographicRegion('geographic_region_iberia').GetName] mají s [ROOT.GetCountry.GetNameNoFlag] [concept_relations] nad [GetDefine('NDiplomacy', 'RELATIONS_THRESHOLD_AMICABLE')|v0]"
- iberia_all_countries_involved_tt: "Všechny [Concept('concept_country','$concept_countries$')] v [GetGeographicRegion('geographic_region_iberia').GetName] jsou zapojené do tohoto [concept_journal_entry]"
+ iberia_shared_governance_principles_laws_tt: "Všechny zapojené [Concept('concept_country','$concept_countries$')] v [GetGeographicRegion('geographic_region_iberia_old').GetName] mají stejné $lawgroup_governance_principles$ [concept_law]" # todo: CHANGED
+ iberia_sufficient_shared_laws_tt: "Všechny zapojené [Concept('concept_country','$concept_countries$')] v [GetGeographicRegion('geographic_region_iberia_old').GetName] sdílí nejméně [SCOPE.ScriptValue('iberia_shared_law_requirement')|v0] aktivních [Concept('concept_law','$concept_laws$')] (aktuálně [GetGlobalVariable('iberia_shared_laws_var').GetValue|v0])" # todo: CHANGED
+ all_iberian_subjects_below_75_ld_tt: "Všechny [concept_subject] [Concept('concept_country','$concept_countries$')] v [GetGeographicRegion('geographic_region_iberia_old').GetName] mají [concept_liberty_desire] nižší než #v 75#!" # todo: CHANGED
+ all_independent_iberian_countries_above_50_relations_tt: "Všechny nezávislé [Concept('concept_country','$concept_countries$')] v [GetGeographicRegion('geographic_region_iberia_old').GetName] mají [concept_relations] nad [GetDefine('NDiplomacy', 'RELATIONS_THRESHOLD_AMICABLE')|v0] vůči [ROOT.GetCountry.GetNameNoFlag]" # todo: CHANGED
+ iberia_all_countries_involved_tt: "Všechny [Concept('concept_country','$concept_countries$')] v [GetGeographicRegion('geographic_region_iberia_old').GetName] jsou zapojeny do tohoto [concept_journal_entry]" # todo: CHANGED
  has_formed_iberia_tt: "Byl vytvořen #v $IBE$#!"
  ruler_is_borbon_tt: "[concept_ruler] je #v $de_Borbon$#!"
  je_iberia_union_button: "Ustanovit [ROOT.GetCountry.GetCustom('iberia_union_name')]"
@@ -791,9 +793,9 @@
  iberia_union_desc_anarchy: "Iberské komuny dostatečně harmonizovaly své politiky a dosáhly širokého konsensu směrem k sjednocení. Nyní je můžeme považovat za jednotky v rámci jediné Iberské konfederace."
  je_iberia_preserve_union_button: "Zachovat personální unii"
  je_iberia_preserve_union_button_desc: "Personální unie, která momentálně existuje mezi iberskými státy, je dostatečným základem pro politickou organizaci poloostrova. Vydáme ústavu, která tuto volnou unii trvale zakotví a zajistí plnou vnitřní autonomii jejích součástí."
- retained_personal_union_tt: "Všechny zapojené [Concept('concept_country','$concept_countries$')] v [GetGeographicRegion('geographic_region_iberia').GetName] se rozhodly zachovat svou [concept_personal_union]"
+ retained_personal_union_tt: "Všechny zapojené [Concept('concept_country','$concept_countries$')] v [GetGeographicRegion('geographic_region_iberia_old').GetName] se rozhodly zachovat své [concept_personal_union]" # todo: CHANGED
  end_iberia_je_tt: "#v $je_iberia$#! [concept_journal_entry] skončí zachováním stávající [concept_personal_union]"
- create_iberia_tt: "Všechny zapojené [Concept('concept_country','$concept_countries$')] v [GetGeographicRegion('geographic_region_iberia').GetName] budou sjednoceny jako [SCOPE.sCountry('iberia_root_country').GetCustom('iberia_name_to_be')], pod [SCOPE.sCountry('iberia_root_country').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('iberia_root_country').GetRuler.GetFullName]"
+ create_iberia_tt: "Všechny zapojené [Concept('concept_country','$concept_countries$')] v [GetGeographicRegion('geographic_region_iberia_old').GetName] budou sjednoceny jako [SCOPE.sCountry('iberia_root_country').GetCustom('iberia_name_to_be')], pod [SCOPE.sCountry('iberia_root_country').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('iberia_root_country').GetRuler.GetFullName]" # todo: CHANGED
  iberia_laws_origin_tt: "#v $IBE$#! zdědí všechny [SCOPE.sCountry('iberia_root_country').GetAdjectiveNoFlag] [Concept('concept_law','$concept_laws$')] a [Concept('concept_character', '$concept_characters$')]"
  iberia_adopts_esperanto_tt: "Po dokončení tohoto [concept_journal_entry] se [GetCulture('iberian').GetName] stane [Concept('concept_primary_cultures','$concept_primary_culture$')] #v $IBE$#!"
  esperanto_optional_tt: "Po dokončení tohoto [concept_journal_entry] se $esperanto_optional_on_complete_tt$"
@@ -801,7 +803,7 @@
  esperanto_optional_on_complete_tt: "[GetCulture('iberian').GetName] se stane [Concept('concept_primary_cultures','$concept_primary_culture$')] #v $IBE$#!"
  esperanto_mandatory_on_complete_tt: "[GetCulture('iberian').GetName] se stane výlučným [Concept('concept_primary_cultures','$concept_primary_culture$')] #v $IBE$#!"
  gain_variable_radicals_tt: "@warning! Proměnlivé množství našich [Concept('concept_pop', '$concept_pops$')] se stane více [concept_radical]"
- all_iberian_states_become_esperanto_tt: "Všechny [Concept('concept_state_region', '$concept_state_regions$')] v [GetGeographicRegion('geographic_region_iberia').GetName] se stanou [GetCulture('iberian').GetName] [Concept('concept_homeland','$concept_homelands$')]"
+ all_iberian_states_become_esperanto_tt: "Všechny [Concept('concept_state_region', '$concept_state_regions$')] v [GetGeographicRegion('geographic_region_iberia_old').GetName] se stanou [GetCulture('iberian').GetName] [Concept('concept_homeland','$concept_homelands$')]" # todo: CHANGED
  remove_all_non_esperanto_primaries_tt: "Všechny ne-[GetCulture('iberian').GetName] [Concept('concept_culture', '$concept_cultures$')] přestanou být [concept_primary_cultures] #v $IBE$#!"
  25_percent_of_bureaucrats_and_academics_assimilate_esperanto_tt: "#v 25%#! [GetPopType('bureaucrats').GetName] a [GetPopType('academics').GetName] [Concept('concept_pop', '$concept_pops$')] se asimilují do [GetCulture('iberian').GetName] [concept_culture]"
  1_percent_of_pops_assimilate_esperanto_tt: "#v 1%#! všech #v $IBE_ADJ$#! [Concept('concept_pop', '$concept_pops$')] se asimilují do [GetCulture('iberian').GetName] [concept_culture]"
@@ -818,7 +820,7 @@
  iberia.2.e: "Mír mezi námi, válka tyranům!"
  iberia.2.g: "¡Viva Ibérica!"
  iberia.3.t: "Všichni lidé jsou bratři"
- iberia.3.d: "Pro sjednocení [GetGeographicRegion('geographic_region_iberia').GetName] usilujeme vytvořit novou společnost na principech proletářského internacionalismu. Konstruovaný jazyk #b $language_esperanto$#!, oblíbený mezi iberskými socialisty, může sloužit jako vhodný mezinárodní administrativní jazyk."
+ iberia.3.d: "Sjednocením [GetGeographicRegion('geographic_region_iberia_old').GetName] usilujeme o vybudování nové společnosti na principech proletářského internacionalismu. Konstruovaný jazyk #b $language_esperanto$#!, oblíbený mezi iberskými socialisty, může posloužit jako vhodný mezinárodní správní jazyk." # todo: CHANGED
  iberia.3.f: "„Bude to obtížné,“ začal řečník. „Budeme se muset pustit do velkého úsilí, abychom jazyk naučili. Reakcionáři budou tvrdohlavě lpět na starých národních jazycích a maskovat se za masy, které se ještě esperanta nenaučily. Ale Revoluce byla také velkým úsilím, nebyla to? A nepoddali jsme se jí kvůli odporu, kterému jsme čelili. Nabádám vás, radní, dovolte nám učinit tento příspěvek k běhu Revoluce a k rozpadu staré společnosti. V nadcházejících letech neť naše děti řeknou—#italic proletoj de la mondo, unuiĝu!#!“"
  iberia.3.a: "Prohlásit esperanto za úřední jazyk."
  iberia.3.b: "Národní jazyky, buržoazní kultury... to vše musí pryč."
@@ -826,8 +828,8 @@
  je_iberia_adopt_esperanto_language: "Přijmout esperanto jako úřední jazyk"
  je_iberia_adopt_esperanto_language_desc: "Iberskí socialisté mají historii zájmu o #b $language_esperanto$#!, konstruovaný jazyk zamýšlený jako mezinárodní pomocný jazyk. Přijetí $language_esperanto$ jako úředního jazyka bude velkým krokem k založení skutečně mezinárodní federace."
  je_iberia_forsake_unification: "Zřeknout se sjednocení"
- je_iberia_forsake_unification_desc: "Sjednocení [GetGeographicRegion('geographic_region_iberia').GetName] je ztracená věc. Soustřeďme se na záležitosti s větší šancí na úspěch."
- nobody_cares_about_iberia_tt: "Žádný [concept_country] v [GetGeographicRegion('geographic_region_iberia').GetName] není zapojen do tohoto [concept_journal_entry]"
+ je_iberia_forsake_unification_desc: "Sjednocení [GetGeographicRegion('geographic_region_iberia_old').GetName] je ztracená věc. Soustřeďme své úsilí na záležitosti s větší šancí na úspěch." # todo: CHANGED
+ nobody_cares_about_iberia_tt: "Žádný [concept_country] v [GetGeographicRegion('geographic_region_iberia_old').GetName] není zapojen do tohoto [concept_journal_entry]" # todo: CHANGED
  flag_texticon_blanks: "                            "
  ibe_republic_1_tt: "$flag_texticon_blanks$\n\n@ibe_republic_1_flag!"
  ibe_republic_2_tt: "$flag_texticon_blanks$\n\n@ibe_republic_2_flag!"
@@ -835,19 +837,7 @@
  iberia_with_union_flag_tt: "[ROOT.GetCountry.GetNameNoFlag] bude vlát @ibe_republic_1_flag_small! #tooltippable;tooltip:[GetPlayer.GetTooltipTag],ibe_republic_1_tt vlajka unie#!"
  iberia_with_tricolor_flag_tt: "[ROOT.GetCountry.GetNameNoFlag] bude vlát @ibe_republic_2_flag_small! #tooltippable;tooltip:[GetPlayer.GetTooltipTag],ibe_republic_2_tt trikolóra#!"
  iberia_with_federal_flag_tt: "[ROOT.GetCountry.GetNameNoFlag] bude vlát @ibe_republic_3_flag_small! #tooltippable;tooltip:[GetPlayer.GetTooltipTag],ibe_republic_3_tt federální vlajka#!"
- dyn_c_iberian_union: "Iberská unie"
- dyn_c_iberian_union_def: "#v $dyn_c_iberian_union$#!"
- dyn_c_iberian_federation: "Iberská federace"
- dyn_c_iberian_federation_def: "$dyn_c_iberian_federation$"
- dyn_c_iberian_confederation: "Iberská konfederace"
- dyn_c_iberian_confederation_def: "$dyn_c_iberian_confederation$"
- dyn_c_iberian_concordat: "Iberský konkordát"
- dyn_c_iberian_concordat_def: "$dyn_c_iberian_concordat$"
- dyn_c_esperantia: "Esperantie"
- dyn_c_esperantia_adj: "Esperantský"
  the: ""
- dyn_c_aggressor: "Agresor"
- dyn_c_aggressor_adj: "Agresorský"
  esperantia_tt: "#v $IBE$#! bude znám jako #v Esperantie#!"
  ruler_is_bonapartist_claimant_tt: "[concept_ruler] státu [ROOT.GetCountry.GetName] je $bonapartist_claimant$"
  ruler_is_orleanist_claimant_tt: "[concept_ruler] státu [ROOT.GetCountry.GetName] je $orleanist_claimant$"
@@ -872,10 +862,12 @@
  coup_popularity_tt: "[concept_popularity] [concept_commander]"
  coup_num_army_units_tt: "zlomek celkového počtu armádních [Concept('concept_unit','$concept_units$')] pod velením"
  coup_num_navy_units_tt: "zlomek celkového počtu námořních [Concept('concept_unit','$concept_units$')] pod velením"
+ coup_commander_rank_tt: "[Concept('concept_commander_rank', '$Rank$')] [concept_commander]" # todo: NEW TRANSLATION
  coup_commander_core_location_tt: "nachází se v [concept_capital_state] [concept_strategic_region]"
  coup_commander_periphery_location_tt: "nachází se v [concept_strategic_region], která vlastní [Concept('concept_incorporated_state', '$concept_incorporated_states$')]"
  coup_commander_colony_location_tt: "nachází se v [concept_strategic_region] bez vlastněných [Concept('concept_incorporated_state', '$concept_incorporated_states$')]"
  coup_commander_no_location_tt: "je na cestě nebo na [concept_front]"
+ coup_commander_unassigned_location_tt: "odvolán z [Concept('concept_incorporated_state', 'Field Command')]" # todo: NEW TRANSLATION
  coup_clout_tt: "[concept_clout] [concept_interest_group]"
  coup_legitimacy_tt: "[concept_legitimacy] [concept_government]"
  coup_strength_modifier_tt: "$character_coup_strength_mult$ modifikátory"
@@ -949,7 +941,7 @@
  modifier_enthroned_preferred_candidate: "Dosazení preferovaného kandidáta"
  modifier_recent_election_initialisation: "$setting_up_election_system$"
  decision_reorganize_iberian_crowns: "Přeorganizovat iberské koruny"
- decision_reorganize_iberian_crowns_desc: "S bývalou korunou Kastilie pod naší kontrolou máme příležitost rozhodnout o budoucím tvaru [GetGeographicRegion('geographic_region_iberia').GetNameNoFormatting]. Jednou z možností je umístit [GetPlayer.GetRuler.GetLastNameNoFormatting] na trůn #v $SPA$#!, čímž založíme rovnoprávné Království #v $SPA$#! v unii s #v $POR$#!."
+ decision_reorganize_iberian_crowns_desc: "S bývalou korunou Kastilie pod naší kontrolou máme příležitost určit budoucí podobu [GetGeographicRegion('geographic_region_iberia_old').GetNameNoFormatting]. Jednou z možností je umístit [GetPlayer.GetRuler.GetLastNameNoFormatting] na trůn #v $SPA$#! a založit tak rovnocenné Království #v $SPA$#! v unii s #v $POR$#!" # todo: CHANGED
  decision_restore_kingdom_of_brazil: "Obnovit Království Brazílie"
  decision_restore_kingdom_of_brazil_desc: "Znovu se #v $BRZ$#! ocitl pod suserénitou $POR_ADJ$. Abychom snížili zátěž transoceánské správy a uklidnili ty, kdo žádají $BRZ_ADJ$ autonomii, můžeme znovu ustavit rovnoprávné Království #v $BRZ$#! v unii s #v $POR$#!."
  spa_does_not_exist_tt: "#v $SPA$#! #b neexistuje#!"

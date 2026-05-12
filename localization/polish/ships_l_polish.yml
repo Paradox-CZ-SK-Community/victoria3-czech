@@ -101,7 +101,8 @@
  SET_AS_FLAGSHIP_ON_COOLDOWN: "$concept_flagship$ nelze změnit do [Date.GetString|v]" # todo: NEW TRANSLATION
  SET_AS_FLAGSHIP_NOT_FLAGSHIP: "[Ship.GetName] není $concept_flagship$ [Ship.GetCountry.GetName]" # todo: NEW TRANSLATION
  ASSIGN_AS_FLAGSHIP_BUTTON: "Udělat [Concept('concept_flagship','vlajkovou lodí')]"
- ASSIGN_AS_FLAGSHIP_BUTTON_TOOLTIP: "#header Nastavit jako [concept_flagship]#![ConcatIfNeitherEmpty('\n', AddLocalizationIf(Not(IsValid(Ship.AssignAsFlagship)), GetDesc(Ship.AssignAsFlagship)))][ConcatIfNeitherEmpty('\n', AddLocalizationIf(Ship.GetCountry.GetFlagship.IsValid, 'ASSIGN_AS_FLAGSHIP_CONFIRMATION_REPLACING'))]\n$TOOLTIP_DELIMITER$\n$FLAGSHIP_EFFECT_DESC$" # todo: CHANGED
+ ASSIGN_AS_FLAGSHIP_INVALID_TEXT: "@red_cross! [Ship.GetType.GetName] nemůže být určen jako [concept_flagship]" # todo: NEW TRANSLATION
+ ASSIGN_AS_FLAGSHIP_BUTTON_TOOLTIP: "#header Přiřadit jako [concept_flagship]#![ConcatIfNeitherEmpty('\n', AddLocalizationIf(Not(IsValid(Ship.AssignAsFlagship)), GetDesc(Ship.AssignAsFlagship)))][ConcatIfNeitherEmpty('\n', AddLocalizationIf(Ship.GetCountry.GetFlagship.IsValid, 'ASSIGN_AS_FLAGSHIP_CONFIRMATION_REPLACING'))]\n[AddLocalizationIf(Not(IsValid(Ship.AssignAsFlagship)), 'ASSIGN_AS_FLAGSHIP_INVALID_TEXT')][AddLocalizationIf(Not(IsValid(Ship.AssignAsFlagship)), '\n')]$TOOLTIP_DELIMITER$\n$FLAGSHIP_EFFECT_DESC$" # todo: CHANGED
  ASSIGN_AS_FLAGSHIP_CONFIRMATION: "Nastavit [Ship.GetName] jako [concept_flagship] [Country.GetName]?[ConcatIfNeitherEmpty('\n\n', AddLocalizationIf(Country.GetFlagship.IsValid, 'ASSIGN_AS_FLAGSHIP_CONFIRMATION_REPLACING'))]\n\n$FLAGSHIP_EFFECT_DESC$\n\n@information! Tato akce může být provedena pouze jednou za [GetDefine('NMilitary', 'FLAGSHIP_CHANGE_COOLDOWN_MONTHS')|v] měsíců" # todo: CHANGED
  ASSIGN_AS_FLAGSHIP_CONFIRMATION_REPLACING: "@warning! [Ship.GetCountry.GetFlagship.GetName] je momentálně $concept_flagship$ [Ship.GetCountry.GetNameNoFormatting]. Nastavení nového $concept_flagship$ jej nahradí." # todo: CHANGED
  UNASSIGN_AS_FLAGSHIP_BUTTON: "Zrušit [Concept('concept_flagship','vlajkovou loď')]"
@@ -214,10 +215,13 @@
  MILITARY_FORMATION_SPEED_DAILY_MULTIPLIER: "$MULT_ICON$$VALUE|v0$ denní násobitel rychlosti" # todo: NEW TRANSLATION
  SHIP_SPEED_TOOLTIP: "#header [concept_ship_speed]#!\n@ship_speed! #v [Ship.GetMovementSpeed|0]#! pro [Ship.GetName]\n$TOOLTIP_DELIMITER$\n[Ship.GetMovementSpeedBreakdown]" # todo: NEW TRANSLATION
  SHIP_BLOCKADE_TOOLTIP: "#header [concept_blockade] Síla#!\n@blockade_strength! #v [Ship.GetBlockadeStrength|D]#! pro [Ship.GetName]\n$TOOLTIP_DELIMITER$\n#v [MilitaryFormation.GetBlockadeStrength|D]#! aktuální síla díky #v [Ship.GetFleet.GetSeaPresence|%0]#! [concept_presence].\n[Ship.GetFleet.GetName] musí dosáhnout alespoň #b 50%#! $concept_presence$, než bude blokáda efektivní" # todo: CHANGED
- SHIP_ARMOR_TOOLTIP: "#header $ship_armor_add$#!\n@ship_armor! #v [Ship.GetArmor|0]#! $concept_ship_armor_short$\n$TOOLTIP_DELIMITER$\n@ship_armor! #v [Ship.GetArmor|0]#! $concept_ship_armor_short$ při plném [concept_ship_crew]" # todo: NEW TRANSLATION
+ SHIP_ARMOR_TOOLTIP: "#header [concept_ship_armor]#!\n@ship_armor! #v [Ship.GetArmor|0]#! pro [Ship.GetName]\n$TOOLTIP_DELIMITER$\n[Ship.GetArmorBreakdown]" # todo: CHANGED
  SHIP_HIT_POINTS_TOOLTIP: "#header [Ship.GetName] [Concept('concept_ship_hit_points','$concept_ship_hit_points_short$')]#!\n@ship_hp! #BOLD #[GetMoraleColorString( Ship.GetHitPointsPercentage)] [Ship.GetHitPoints|0]#!#!/[Ship.GetHitPointsMax|0] $concept_ship_hit_points_short$" # todo: NEW TRANSLATION
  SHIP_UPKEEP_TOOLTIP: "#header [concept_ship_upkeep]#!\n@ship_upkeep! #v [Ship.GetUpkeepCost|D-=]#! aktuální týdenní náklad\n$TOOLTIP_DELIMITER$\n[Ship.GetUpkeepCostBreakdown]" # todo: CHANGED
  SHIP_CREW_STATE_TOOLTIP: "#header [concept_ship_crew]#!\n@crew! #v [Ship.GetNumCrewFromState(State.Self)|D]#! z [SelectLocalization(State.HasBuilding('building_naval_administration'), 'SHIP_CREW_BUILDING_LABEL', 'SHIP_CREW_STATE_LABEL')]" # todo: NEW TRANSLATION
+ SHIP_VETERANCY_TOOLTIP: "#header [Ship.GetVeterancyLevel.GetName]#!\nCelkem [Concept('concept_unit_experience','$concept_experience$')]: [Ship.GetVeterancyExperience|v0][AddLocalizationIf( Not(Ship.IsAtMaxVeterancy), 'SHIP_VETERANCY_TOOLTIP_NEXT_LEVEL')][AddLocalizationIf(Not(StringIsEmpty(Ship.GetVeterancyLevel.GetModifierDesc)), 'SHIP_VETERANCY_TOOLTIP_DESC')]" # todo: NEW TRANSLATION
+ SHIP_VETERANCY_TOOLTIP_NEXT_LEVEL: " ([Ship.GetVeterancyExperienceNeededForNextLevel|v0] do dalšího $concept_veterancy_level_short$)\n[Ship.GetVeterancyLevel.GetNextLevel.GetName] Prahová hodnota $concept_experience$: [Ship.GetVeterancyLevel.GetNextLevel.GetExperienceThreshold|v0]" # todo: NEW TRANSLATION
+ SHIP_VETERANCY_TOOLTIP_DESC: "\n$TOOLTIP_DELIMITER$\n[Ship.GetVeterancyLevel.GetModifierDesc]" # todo: NEW TRANSLATION
  SHIPLIST_CREW_TOOLTIP: "#header @ships! [Concept('concept_ship', '$concept_ships$')] with @crew! $SHIP_CREW_SHORT_CONCEPT$ from [State.GetName] #! \n@ships! [MilitaryFormation.GetShipList.GetNumShipsFromState(State.Self)|Dv] [Concept('concept_ship', '$concept_ships$')] aktuálně\n@crew! [MilitaryFormation.GetShipList.GetNumCrewFromState(State.Self)|Dv] $concept_ship_crew_short$ celkem\n $TOOLTIP_DELIMITER$ \n$SHIPLIST_CREW_PAGED_LIST$" # todo: CHANGED
  SHIPLIST_CREW_PAGED_LIST: "[MilitaryFormation.GetShipList.GetShipCrewBreakdown(State.Self)]" # todo: NEW TRANSLATION
  SHIPLIST_CREW_TOOLTIP_BREAKDOWN_FORMAT: "@crew! #v $VALUE$#! na [SHIP.GetName]" # todo: NEW TRANSLATION
@@ -253,8 +257,9 @@
  SHIP_UPKEEP_EXPENSES_DESC: "#title @money!$GOODS|0-K$ náklady ze [Concept('concept_good','$concept_goods$')]:#!#indent_newline:3 \n$BREAKDOWN_BY_GOODS$#!\n\n#title @money!$WAGES|0-K$ náklady ze mzd:#!#indent_newline:3 \n$BREAKDOWN_BY_WAGES$#!" # todo: CHANGED
  SHIP_UPKEEP_EXPENSES_DOCKED_DESC: "$MULT|0-%$ $concept_goods$ spotřebováno z důvodu pobytu v přístavu" # todo: CHANGED
  SHIP_UPKEEP_EXPENSES_RESUPPLYING_DESC: "$MULT|0-%$ $concept_goods$ spotřebováno kvůli doplňování zásob" # todo: NEW TRANSLATION
- SHIP_UPKEEP_EXPENSES_INSUFFICIENT_SUPPLY_SHIPS_DESC: "$MULT|0-%$ $concept_goods$ spotřebováno kvůli nedostatku [concept_supply_ship]" # todo: NEW TRANSLATION
+ SHIP_UPKEEP_EXPENSES_INSUFFICIENT_SUPPLY_SHIPS_DESC: "$MULT|0+%$ $concept_goods$ spotřebováno kvůli nedostatku [concept_supply_ship]" # todo: CHANGED
  SUPPLY_NO_ROUTE_DESC: "#n Žádná zásobovací trasa dostupná#!" # todo: NEW TRANSLATION
+ SUPPLY_GOODS_SHORTAGE_DESC: "Dodávky zásob na #[GetMoraleColorString( MilitaryFormation.GetLogisticsCenterSupplyAvailability )] [MilitaryFormation.GetLogisticsCenterSupplyAvailability|%0]#! kvůli [Concept('concept_shortage','$concept_input_goods_shortages$')]" # todo: NEW TRANSLATION
  FRIENDLY_PORT_SUPPLY_DISCOUNT_DESC: "#p -[MilitaryFormation.GetFriendlyPortDiscount|0+%]#! z blízkého přátelského přístavu" # todo: NEW TRANSLATION
  SHIP_WAGE_COST_ENTRY: "@money!#v $VAL|0-$#! z #v $NUM_CREW$#! $concept_ship_crew_short$ z [BUILDING.GetName] v [STATE.GetName]" # todo: NEW TRANSLATION
  MILITARY_FORMATION_SHIPS_HEADER: "Lodě [MilitaryFormation.GetUnitIcon] $FLEET_TOTAL_NUMBER_OF_SHIPS$" # todo: NEW TRANSLATION
@@ -472,6 +477,9 @@
  SHIP_DESIGNER_DELETE_EXISTING_TEMPLATE_CONFIRMATION: "Smazat šablonu [SHIP_TEMPLATE.GetName]?" # todo: NEW TRANSLATION
  SHIP_DESIGNER_SELECT_SHIP_TYPE: "Vybrat [Concept('concept_ship_type','typ lodě')]"
  SHIP_DESIGNER_SELECT_SHIP_TYPE_BUTTON: "#header Změnit typ lodi#!\nKlikněte pro zobrazení dostupných [Concept('concept_ship_type','typů')]"
+ SHIP_DESIGNER_SELECT_EXISTING_TEMPLATE: "Vybrat existující [concept_ship_template]" # todo: NEW TRANSLATION
+ SHIP_DESIGNER_SELECT_TEMPLATE: "Vybrat [concept_ship_template]" # todo: NEW TRANSLATION
+ SHIP_DESIGNER_SELECT_TEMPLATE_TOOLTIP: "#header Načíst šablonu#!\nKliknutím načtěte existující [concept_ship_template].\nTímto se zahodí všechny neuložené změny." # todo: NEW TRANSLATION
  SHIP_DESIGNER_SKINS_HEADER: "Vzhledy pro [ShipType.GetName]"
  SHIP_DESIGNER_SKINS_BUTTON_TEXT: "Vzhledy (#todo 999#!)"
  SHIP_DESIGNER_SKINS_BUTTON_TOOLTIP: "Zobrazit dostupné vzhledy pro [ShipType.GetName]"
@@ -488,6 +496,10 @@
  UNAVAILABLE_SHIP_TYPES: "Nedostupné typy lodí"
  SHOW_UNAVAILABLE_SHIP_TYPES_OF_GROUP: "Zobrazit nedostupné (#b [GetDataModelSize(ShipTemplateList.GetTypesUnavailableOfGroup(ShipGroup.Self))]#!)" # todo: NEW TRANSLATION
  SHOW_UNAVAILABLE_SHIP_TYPES_TOOLTIP: "Zobrazit všechny nedostupné $SHIP_TYPES_CONCEPT$" # todo: NEW TRANSLATION
+ OBSOLETE_SHIP_TYPES: "Zastaralé $concept_ship_types$" # todo: NEW TRANSLATION
+ SHOW_OBSOLETE_SHIP_TYPES_OF_GROUP: "Zobrazit zastaralé (#b [GetDataModelSize(ShipTemplateList.GetTypesObsoleteOfGroup(ShipGroup.Self))]#!)" # todo: NEW TRANSLATION
+ SHOW_OBSOLETE_SHIP_TYPES: "Zobrazit zastaralé" # todo: NEW TRANSLATION
+ SHOW_OBSOLETE_SHIP_TYPES_TOOLTIP: "Zobrazit všechny zastaralé $SHIP_TYPES_CONCEPT$" # todo: NEW TRANSLATION
  NO_AVAILABLE_SHIP_TYPES: "Žádné dostupné [Concept('concept_ship_type', 'typy')]"
  NO_AVAILABLE_SHIP_TEMPLATES: "Žádné dostupné $SHIP_TEMPLATES_CONCEPT$" # todo: NEW TRANSLATION
  SHIP_TEMPLATE_AUTOMATIC_NAME: "Mod. $YEAR$" # todo: NEW TRANSLATION
@@ -505,11 +517,15 @@
  SHIP_DESIGNER_CREATE_TEMPLATE_TOOLTIP: "#header Vytvořit novou šablonu lodě#!\n$TOOLTIP_DELIMITER$\nVytvoří novou vlastní šablonu lodě se zvolenými modifikacemi.\n\n[GetDesc(ShipDesignerPopup.CreateTemplate)]" # todo: CHANGED
  SHIP_DESIGNER_EDIT_TEMPLATE: "Potvrdit změny" # todo: NEW TRANSLATION
  SHIP_DESIGNER_EDIT_TEMPLATE_TOOLTIP: "#header Upravit existující šablonu lodě#!\n$TOOLTIP_DELIMITER$\nPotvrdí změny provedené na vybrané šabloně lodě.\n\n[GetDesc(ShipDesignerPopup.EditTemplate)]" # todo: CHANGED
- SHIP_TEMPLATE_ATTACK_DAMAGE_TOOLTIP: "#header [concept_attack_damage]#!\n@hull_attack_damage! #tooltippable;tooltip:[Modifier.GetTooltipTag],SHIP_HULL_DAMAGE_TOOLTIP [Modifier.GetShipHullDamage|0]#! [concept_hull_attack_damage] v průměru při plném [concept_ship_crew]\n@crew_attack_damage! #tooltippable;tooltip:[Modifier.GetTooltipTag],SHIP_CREW_DAMAGE_TOOLTIP [Modifier.GetShipCrewDamage|0]#! [concept_crew_attack_damage] v průměru při plném [concept_ship_crew]" # todo: NEW TRANSLATION
+ SHIP_TEMPLATE_ATTACK_DAMAGE_TOOLTIP: "#header [concept_attack_damage]#!\n@ship_damage! [Modifier.GetShipAverageDamage|v^2] v průměru\n$TOOLTIP_DELIMITER$\n@hull_attack_damage! #tooltippable;tooltip:[Modifier.GetTooltipTag],SHIP_HULL_DAMAGE_TOOLTIP [Modifier.GetShipHullDamage|0]#! [concept_hull_attack_damage] při plném [concept_ship_crew]\n@crew_attack_damage! #tooltippable;tooltip:[Modifier.GetTooltipTag],SHIP_CREW_DAMAGE_TOOLTIP [Modifier.GetShipCrewDamage|0]#! [concept_crew_attack_damage] při plném [concept_ship_crew]" # todo: CHANGED
+ SHIP_ATTACK_DAMAGE_TOOLTIP: "#header [concept_attack_damage]#!\n@ship_damage! [Ship.GetAverageAttackDamage|v^2] v průměru pro [Ship.GetName]\n$TOOLTIP_DELIMITER$\n@hull_attack_damage! #tooltippable;tooltip:[Ship.GetTooltipTag],SHIP_HULL_DAMAGE_DESC [Ship.GetHullDamage|0]#! [concept_hull_attack_damage]\n@crew_attack_damage! #tooltippable;tooltip:[Ship.GetTooltipTag],SHIP_CREW_DAMAGE_DESC [Ship.GetCrewDamage|0]#! [concept_crew_attack_damage]" # todo: NEW TRANSLATION
  SHIP_HULL_DAMAGE_TOOLTIP: "[Modifier.GetShipHullDamageTooltip]" # todo: NEW TRANSLATION
  SHIP_CREW_DAMAGE_TOOLTIP: "[Modifier.GetShipCrewDamageTooltip]" # todo: NEW TRANSLATION
+ SHIP_HULL_DAMAGE_DESC: "#header [concept_hull_attack_damage]#!\n@hull_attack_damage! [Ship.GetHullDamage|v0] pro [Ship.GetName]\n$TOOLTIP_DELIMITER$\n[Ship.GetHullDamageBreakdown]" # todo: NEW TRANSLATION
+ SHIP_CREW_DAMAGE_DESC: "#header [concept_crew_attack_damage]#!\n@crew_attack_damage! [Ship.GetCrewDamage|v0] pro [Ship.GetName]\n$TOOLTIP_DELIMITER$\n[Ship.GetCrewDamageBreakdown]" # todo: NEW TRANSLATION
  EDIT_SHIP_TEMPLATE_NO_CHANGE: "U [concept_ship_template] nebyly provedeny žádné změny" # todo: CHANGED
  SHIP_DISTANCE_FROM_PORT_MODIFIER_ENTRY_TITLE: "překračující maximální vzdálenost od přístavu" # todo: CHANGED
+ SHIP_VETERANCY_MODIFIER_ENTRY_TITLE: "[SHIP_VETERANCY_LEVEL.GetName]" # todo: NEW TRANSLATION
  SHIP_DESIGNER_COST_IN_WEEKS: "Odhadováno [ShipDesignerPopup.GetConstructionWeeksForLevel(ShipCostPoint.GetModificationLevel)|V] týdnů při plném [concept_ship_construction_capacity] (@ship_construction! [ShipDesignerPopup.GetTemplate.GetConstructionProgressMax|V0])" # todo: CHANGED
  SHIP_DESIGNER_COST_POINT_TOOLTIP: "#header [concept_ship_complexity]#!\n[ShipCostPoint.GetModificationLevel|V] aktuálně\n@ship_construction! [ShipDesignerPopup.GetCostForLevel(ShipCostPoint.GetModificationLevel)|V0] [concept_ship_construction]\n$SHIP_DESIGNER_COST_IN_WEEKS$\n$TOOLTIP_DELIMITER$\n#title Díky:#!#indent_newline:3 \n[ShipDesignerPopup.GetCostDescForLevel(ShipCostPoint.GetModificationLevel)]#!" # todo: CHANGED
  SHIP_RETROFIT_COST_CHANGED_DESC: "$BREAKDOWN$" # todo: NEW TRANSLATION

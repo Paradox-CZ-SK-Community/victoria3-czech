@@ -79,18 +79,24 @@
  je_india_railway: "Dodavatel pokroku"
  je_india_railway_reason: "Velkolepá železniční síť nás všechny propojí. Přinese zemi velký pokrok a utváří budoucnost našeho národa!"
  je_india_railway_status: "Vybudujte velkolepou síť $building_railway$, která propojí Indii."
- delhi_calcutta_line_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má všechny [Concept('concept_state_region','$concept_state_regions$')] potřebné k vybudování #tooltippable #tooltip:indian_railway_delhi_calcutta_tt #bold trati Dillí–Kalkata#! #!#!"
- allahabad_bombay_line_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má všechny [Concept('concept_state_region','$concept_state_regions$')] potřebné k vybudování #tooltippable #tooltip:indian_railway_allahabad_bombay_tt #bold trati Iláhábád–Bombaj#! #!#!"
- bombay_madras_line_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má všechny [Concept('concept_state_region','$concept_state_regions$')] potřebné k vybudování #tooltippable #tooltip:indian_railway_bombay_madras_tt #bold trati Bombaj–Madrás#! #!#!"
- gujarat_bombay_line_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má všechny [Concept('concept_state_region','$concept_state_regions$')] potřebné k vybudování #tooltippable #tooltip:indian_railway_gujarat_bombay_tt #bold trati Gudžarát–Bombaj#! #!#!"
- delhi_calcutta_line_complete_tt: "Všechny [Concept('concept_state_region','$concept_state_regions$')] na #tooltippable #tooltip:indian_railway_delhi_calcutta_tt #bold trati Dillí–Kalkata#! #!#! mají $building_railway$"
- allahabad_bombay_line_complete_tt: "Všechny [Concept('concept_state_region','$concept_state_regions$')] na #tooltippable #tooltip:indian_railway_allahabad_bombay_tt #bold trati Iláhábád–Bombaj#! #!#! mají $building_railway$"
- bombay_madras_line_complete_tt: "Všechny [Concept('concept_state_region','$concept_state_regions$')] na #tooltippable #tooltip:indian_railway_bombay_madras_tt #bold trati Bombaj–Madrás#! #!#! mají $building_railway$"
- gujarat_bombay_line_complete_tt: "Všechny [Concept('concept_state_region','$concept_state_regions$')] na #tooltippable #tooltip:indian_railway_gujarat_bombay_tt #bold trati Gudžarát–Bombaj#! #!#! mají $building_railway$"
+ delhi_calcutta_line_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má všechny [Concept('concept_state_region','$concept_state_regions$')] potřebné k vybudování [GetGeographicRegion('geographic_region_delhi_calcutta_line').GetName]" # todo: CHANGED
+ allahabad_bombay_line_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má všechny [Concept('concept_state_region','$concept_state_regions$')] potřebné k vybudování [GetGeographicRegion('geographic_region_allahabad_bombay_line').GetName]" # todo: CHANGED
+ bombay_madras_line_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má všechny [Concept('concept_state_region','$concept_state_regions$')] potřebné k vybudování [GetGeographicRegion('geographic_region_bombay_madras_line').GetName]" # todo: CHANGED
+ gujarat_bombay_line_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má všechny [Concept('concept_state_region','$concept_state_regions$')] potřebné k vybudování [GetGeographicRegion('geographic_region_gujarat_bombay_line').GetName]" # todo: CHANGED
+ delhi_calcutta_line_status_tt: "$delhi_calcutta_line_complete_tt$: #indent_newline:3 \n[GetScriptedGui('je_india_railway_delhi_calcutta_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)]#!" # todo: NEW TRANSLATION
+ allahabad_bombay_line_status_tt: "$allahabad_bombay_line_complete_tt$: #indent_newline:3 \n[GetScriptedGui('je_india_railway_allahabad_bombay_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)]#!" # todo: NEW TRANSLATION
+ bombay_madras_line_status_tt: "$bombay_madras_line_complete_tt$: #indent_newline:3 \n[GetScriptedGui('je_india_railway_bombay_madras_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)]#!" # todo: NEW TRANSLATION
+ gujarat_bombay_line_status_tt: "$gujarat_bombay_line_complete_tt$: #indent_newline:3 \n[GetScriptedGui('je_india_railway_gujarat_bombay_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)]#!" # todo: NEW TRANSLATION
+ delhi_calcutta_line_complete_tt: "Všechny [Concept('concept_state_region','$concept_state_regions$')] v [GetGeographicRegion('geographic_region_delhi_calcutta_line').GetName] mají $building_railway$" # todo: CHANGED
+ allahabad_bombay_line_complete_tt: "Všechny [Concept('concept_state_region','$concept_state_regions$')] v [GetGeographicRegion('geographic_region_allahabad_bombay_line').GetName] mají $building_railway$" # todo: CHANGED
+ bombay_madras_line_complete_tt: "Všechny [Concept('concept_state_region','$concept_state_regions$')] v [GetGeographicRegion('geographic_region_bombay_madras_line').GetName] mají $building_railway$" # todo: CHANGED
+ gujarat_bombay_line_complete_tt: "Všechny [Concept('concept_state_region','$concept_state_regions$')] v [GetGeographicRegion('geographic_region_gujarat_bombay_line').GetName] mají $building_railway$" # todo: CHANGED
+ INDIAN_RAILWAY_ENTRY: "$checkbox_ticked$ [SCOPE.sStateRegion('state_region_to_display').GetName] má [GetBuildingType('building_railway').GetName]" # todo: NEW TRANSLATION
+ INDIAN_RAILWAY_ENTRY_NO: "$checkbox_unticked$ [SCOPE.sStateRegion('state_region_to_display').GetName] má [GetBuildingType('building_railway').GetName]" # todo: NEW TRANSLATION
  indian_railway_delhi_calcutta_tt: "Trať Dillí–Kalkata zahrnuje $concept_state_regions$:\n$STATE_WEST_BENGAL$\n$STATE_BIHAR$\n$STATE_AWADH$\n$STATE_AGRA$\n$STATE_DELHI$"
  indian_railway_allahabad_bombay_tt: "Trať Iláhábád–Bombaj zahrnuje $concept_state_regions$:\n$STATE_AGRA$\n$STATE_BUNDELKHAND$\n$STATE_CENTRAL_PROVINCES$\n$STATE_MALWA$\n$STATE_BOMBAY$"
  indian_railway_bombay_madras_tt: "Trať Bombaj–Madrás zahrnuje $concept_state_regions$:\n$STATE_BOMBAY$\n$STATE_HYDERABAD$\n$STATE_KURNOOL$\n$STATE_MADRAS$"
- indian_railway_gujarat_bombay_tt: "Trať Gudžarát–Bombaj zahrnuje $concept_state_regions$:\n$STATE_BOMBAY$\n$STATE_GUJARAT$" 
+ indian_railway_gujarat_bombay_tt: "Trať Gudžarát–Bombaj zahrnuje $concept_state_regions$:\n$STATE_BOMBAY$\n$STATE_GUJARAT$"
  india_railway.1.t: "Vlaková loupež ve státě [SCOPE.sState('relevant_state').GetNameNoFormatting]"
  india_railway.1.d: "Mezinárodní tisk přináší zprávy o vlakové loupeži ve státě [SCOPE.sState('relevant_state').GetNameNoFormatting], kterou vedli agitátoři kultury [SCOPE.sCulture('discriminated_culture').GetNameNoFormatting]."
  india_railway.1.f: "„Kdyby to byli dakoité, zemřelo by mnohem víc lidí. Tito mladí muži kradli NAŠE peníze zpět pro NÁS. Udělali chyby, ale jejich úmysly jsou ušlechtilé.“\n\n„Pokud jsou tak ušlechtilí, co tedy dělali, když mávali zbraněmi na své krajany? Teď je nevinný muž mrtvý. Nikdy nezapomenu na zvuk pláče jeho ženy.“"
@@ -201,7 +207,7 @@
  show_of_strength: "Síla ve strategii"
  notification_pan_encroaching_neighbor_message_name: "Zajištění hranice"
  notification_pan_encroaching_neighbor_message_desc: "[SCOPE.sCountry('relevant_country').GetName] se pokusila zabrat území ve státě [SCOPE.sState('relevant_state').GetName]. Musíme reagovat."
- notification_pan_encroaching_neighbor_message_tooltip: "#header $notification_pan_encroaching_neighbor_message_name$#!\n$TOOLTIP_DELIMITER$\n$notification_pan_encroaching_neighbor_message_desc$" 
+ notification_pan_encroaching_neighbor_message_tooltip: "#header $notification_pan_encroaching_neighbor_message_name$#!\n$TOOLTIP_DELIMITER$\n$notification_pan_encroaching_neighbor_message_desc$"
  sikh_empire.3.t: "Smrt Šér-e-Pandžába"
  sikh_empire.3.d: "Mahárádža náhle zemřel ve spánku. Národ oplakává naši ztrátu."
  sikh_empire.3.f: "Na dvoře titulu [SCOPE.sCountry('relevant_country').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('relevant_country').GetRuler.GetFullNameNoFormatting] byla zpráva o smrti osoby [SCOPE.sCharacter('relevant_ruler').GetFullNameNoFormatting] oslavována. „Lev je mrtev,“ jásali ministři, „Paňdžáb bude náš.“\n\nMnozí si však všimli, že [SCOPE.sCountry('relevant_country').GetRuler.GetPrimaryRoleTitle] se k oslavám nepřipojil. „Lev Paňdžábu po sobě zanechal silná lvíčata, ale obstojí proti Společnosti?“ zaslechla jedna z [SCOPE.sCountry('relevant_country').GetRuler.GetHerHis] manželek, jak [SCOPE.sCountry('relevant_country').GetRuler.GetHerHim] přemítá. „Nebo nám brzy budou na dveře klepat Britové?“"

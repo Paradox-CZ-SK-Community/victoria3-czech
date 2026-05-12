@@ -486,6 +486,10 @@
  ship_interest_gain_add_desc: "Bonus nebo penalizace k [concept_involvement] generovanému touto $concept_ship$ pro její strategické regiony." # todo: NEW TRANSLATION
  ship_interest_gain_mult: "$ship_interest_gain_add$" # todo: NEW TRANSLATION
  ship_interest_gain_mult_desc: "$ship_interest_gain_add_desc$" # todo: NEW TRANSLATION
+ country_ship_crew_starting_veterancy_experience_add: "Počáteční zkušenost námořní posádky $concept_unit_experience$" # todo: NEW TRANSLATION
+ country_ship_crew_starting_veterancy_experience_add_desc: "Bonus nebo penalizace k počátečnímu [concept_unit_experience] posádek lodí." # todo: NEW TRANSLATION
+ country_ship_crew_starting_veterancy_experience_mult: "$country_ship_crew_starting_veterancy_experience_add$" # todo: NEW TRANSLATION
+ country_ship_crew_starting_veterancy_experience_mult_desc: "$country_ship_crew_starting_veterancy_experience_add_desc$" # todo: NEW TRANSLATION
  country_flagship_interest_gain_mult: "$flagship_interest_gain$" # todo: NEW TRANSLATION
  country_flagship_interest_gain_mult_desc: "Bonus nebo penalizace k [concept_involvement] generovanému [concept_flagship]." # todo: NEW TRANSLATION
  commander_battle_end_loss: "Porážka na bojišti"
@@ -2397,8 +2401,6 @@
  country_secession_progress_add_desc: "$country_secession_progress_mult_desc$"
  modifier_failed_expedition: "Neúspěšná expedice"
  modifier_failed_expedition_desc: "Tato země nedávno neuspěla v expedici."
- country_convoy_damage_taken_mult: "Obdržené poškození konvojů"
- country_convoy_damage_taken_mult_desc: "Bonus nebo penalizace jak moc poškození utrpí [GetGoods('merchant_marine').GetName|l] [Concept('concept_country','země')] z [Concept('concept_raid_convoys', 'útoků na ně')]"
  country_max_companies_add: "Maximální počet [Concept('concept_company','společností')]"
  country_max_companies_add_desc: "Počet [Concept('concept_company','společností')], které může [Concept('concept_country','země')] založit"
  country_company_throughput_bonus_add: "Bonus na průtok podniku"
@@ -2460,6 +2462,8 @@
  country_institution_impact_institution_health_system_mult_desc: "Zvýšení nebo snížení #v dopadu#! přivedení [GetInstitutionType('institution_health_system').GetName] k občanům"
  country_institution_cost_institution_social_security_mult: "@bur![Nbsp][concept_bureaucracy] Náklady na [GetInstitutionType('institution_social_security').GetName]"
  country_institution_cost_institution_social_security_mult_desc: "Zvýšení nebo snížení @bur![Nbsp][concept_bureaucracy] nákladů na zavedení [GetInstitutionType('institution_social_security').GetName] pro občany"
+ country_institution_cost_institution_home_affairs_mult: "@bur![Nbsp][concept_bureaucracy] Náklady na [GetInstitutionType('institution_home_affairs').GetName]" # todo: NEW TRANSLATION
+ country_institution_cost_institution_home_affairs_mult_desc: "Zvýšení nebo snížení @bur![Nbsp][concept_bureaucracy] nákladů na zavedení [GetInstitutionType('institution_home_affairs').GetName] pro občany" # todo: NEW TRANSLATION
  country_support_independence_weekly_liberty_desire_add: "[GetArticleType('support_independence').GetName] k týdenní [Concept('concept_liberty_desire','touhy po svobodě')]"
  country_support_independence_weekly_liberty_desire_add_desc: "Nárůst nebo pokles týdenní [Concept('concept_liberty_desire','touhy po svobodě')] [Concept('concept_country', 'země')], kterou tato krajina podporuje skrz [GetArticleType('support_independence').GetName]"
  state_institution_impact_add: "Dopad [Concept('concept_institution', 'institucí')]"
@@ -3992,3 +3996,5 @@
  battle_naval_condition_rough_waters_chance_mult_desc: "$modifier_character_battle_condition_desc_prefix$[GetNavalBattleCondition('naval_condition_rough_waters').GetName]$modifier_character_battle_condition_desc_suffix$" # todo: NEW TRANSLATION
  battle_naval_condition_tropical_storm_chance_mult: "[GetNavalBattleCondition('naval_condition_tropical_storm').GetName]$modifier_character_battle_condition_suffix$" # todo: NEW TRANSLATION
  battle_naval_condition_tropical_storm_chance_mult_desc: "$modifier_character_battle_condition_desc_prefix$[GetNavalBattleCondition('naval_condition_tropical_storm').GetName]$modifier_character_battle_condition_desc_suffix$" # todo: NEW TRANSLATION
+ country_convoy_damage_taken_mult: "Obdržené poškození konvojů"
+ country_convoy_damage_taken_mult_desc: "Bonus nebo penalizace jak moc poškození utrpí [GetGoods('merchant_marine').GetName|l] [Concept('concept_country','země')] z [Concept('concept_raid_convoys', 'útoků na ně')]"

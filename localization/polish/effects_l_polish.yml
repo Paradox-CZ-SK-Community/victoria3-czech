@@ -303,7 +303,7 @@
  SET_POP_HAPPINESS: "[Pop.GetName] v [POP.GetState.GetName] štěstí nastaveno na $VALUE|+$"
  CHANGE_POPTYPE: "[Pop.GetName] v [Pop.GetState.GetName] se stává #variable [POP_TYPE.GetName]#!"
  CHANGE_POP_RELIGION: "$VALUE|0v%$ obyvatel [Pop.GetName] v [Pop.GetState.GetName] bude následovat náboženství [Religion.GetName]"
- CONVERT_POPULATION: "$VALUE|0v%$ na ne [Religion.GetName] v [STATE.GetName] se poddá [Religion.GetName] náboženství"
+ CONVERT_POPULATION: "$VALUE|0v%$ z ne-[Religion.GetName] populace ve [STATE.GetName] bude vyznávat náboženství [Religion.GetName]" # todo: CHANGED
  CHANGE_POP_CULTURE: "$VALUE|0v%$ z [Pop.GetName] v [Pop.GetState.GetName] se asimiluje do kultury [Culture.GetName]"
  MOVE_POP: "$VALUE|vD$ [POP.GetName] v [POP.GetState.GetName] se přesune na [TARGET_STATE.GetName]"
  EFFECT_CREATE_ASSIGNMENT: "Přiřaďte [CHARACTER.GetFullName] k [STRATEGIC_REGION.GetName]"
