@@ -51,12 +51,13 @@
  interest_tier_effect_can_sign_support_independence: "@checkmark! Umožňuje podepsat [GetArticleType('support_independence').GetName] [Concept('concept_article', '$concept_treaties$')]" # todo: NEW TRANSLATION
  interest_tier_effect_can_sign_guarantee_independence: "@checkmark! Umožňuje podepsat [GetArticleType('guarantee_independence').GetName] [Concept('concept_article', '$concept_treaties$')]" # todo: NEW TRANSLATION
  interest_tier_effect_stake_colonial_claim_unrecognized: "@checkmark! Umožňuje [GetDiplomaticActionType('da_stake_colonial_claim').GetName] [concept_diplomatic_action] vůči [Concept('concept_decentralized_nation', '$concept_decentralized_nations$')] a [Concept('concept_unrecognized_power', '$concept_unrecognized_powers$')]" # todo: CHANGED
+ interest_tier_effect_can_sign_foreign_investment_rights: "@checkmark! Umožňuje podepsat [GetArticleType('foreign_investment_rights').GetName] [Concept('concept_article', '$concept_treaties$')]" # todo: NEW TRANSLATION
  da_stake_colonial_claim: "Uplatnit koloniální nárok" # todo: NEW TRANSLATION
  da_stake_colonial_claim_desc: "Uplatní [concept_claim] na zámořském [concept_state_region]." # todo: NEW TRANSLATION
  da_stake_colonial_claim_action_notification_name: "[INITIATOR_COUNTRY.GetName] uplatnil koloniální [concept_claim|l] na [TARGET_STATE.GetStateRegion.GetName]" # todo: NEW TRANSLATION
  da_stake_colonial_claim_action_notification_desc: "[INITIATOR_COUNTRY.GetName] si nárokoval [TARGET_STATE.GetStateRegion.GetName] v rámci svých rostoucích koloniálních ambicí!" # todo: CHANGED
  DA_STAKE_COLONIAL_CLAIM_COOLDOWN: "Tuto akci nelze provést znovu dříve než #v [TimeKeeper.GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope, 'da_stake_colonial_claim_cooldown') )]#!" # todo: CHANGED
- DA_STAKE_COLONIAL_CLAIM_EMPTY_EFFECT: "Vyberte [concept_state_region] na jiném kontinentu pro [concept_claim|l]" # todo: NEW TRANSLATION
+ DA_STAKE_COLONIAL_CLAIM_EMPTY_EFFECT: "Vyberte [concept_state_region] na jiném kontinentu než vaše [concept_capital_state], abyste [concept_claim|l]" # todo: CHANGED
  notification_colonial_claim_generated_name: "[SCOPE.sState('colony_notification_state').GetName] se stala #bold hlavní kolonií#!" # todo: CHANGED
  notification_colonial_claim_generated_desc: "[SCOPE.sState('colony_notification_state').GetName] vyrostla natolik, že nám uděluje [concept_claim] na celé území [SCOPE.sState('colony_notification_state').GetStateRegion.GetName]." # todo: CHANGED
  notification_colonial_claim_generated_tooltip: "#header $notification_colonial_claim_generated_name$#!\n$TOOLTIP_DELIMITER$\n$notification_colonial_claim_generated_desc$" # todo: NEW TRANSLATION

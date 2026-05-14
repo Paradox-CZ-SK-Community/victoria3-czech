@@ -125,11 +125,11 @@
  NAVAL_HOSTILITIES_DAMAGE_ENTRY: " [COUNTRY.GetAdjective] $concept_fleets$ způsobili $DAMAGE|v1$/$MAX_DAMAGE|v1$ poškození" # todo: NEW TRANSLATION
  alert_port_bombardment_alert_name: "[SCOPE.GetRootScope.GetState.GetName] je pod [GetNavalMissionType('naval_mission_type_port_bombardment').GetName]" # todo: NEW TRANSLATION
  alert_port_bombardment_alert_desc: "[SCOPE.GetRootScope.GetState.GetName] je bombardován nepřátelskou [concept_fleet]. $port_bombardment$ způsobuje [concept_devastation] a může zničit pobřežní [Concept('concept_building', '$concept_buildings$')]." # todo: NEW TRANSLATION
- alert_port_bombardment_alert_hint: "Můžete zastavit $port_bombardment$ zasláním [concept_fleet] s $interception_coast$ [Concept('concept_order','$concept_orders$')] do příslušného [concept_sea_node], aby se zapojil a porazil nepřátelské flotily, nebo zmírnit účinky stavbou námořních opevnění v [SCOPE.GetRootScope.GetState.GetName], čímž zvýšíte odolnost proti bombardování." # todo: NEW TRANSLATION
+ alert_port_bombardment_alert_hint: "Můžete zastavit $port_bombardment$ odesláním [concept_fleet] na [GetNavalMissionType('naval_mission_type_intercept').GetName] [Concept('concept_naval_mission','$concept_naval_mission_short$')] do příslušného [concept_sea_node], aby zasáhla a porazila nepřátelské loďstvo, nebo zmírnit účinky vybudováním námořních opevnění v [SCOPE.GetRootScope.GetState.GetName] pro zvýšení odolnosti proti bombardování." # todo: CHANGED
  alert_port_bombardment_alert_action: "Panel státu pro [SCOPE.GetRootScope.GetState.GetName]" # todo: NEW TRANSLATION
  alert_blockaded_state_alert_name: "[SCOPE.GetRootScope.GetState.GetName] má [SCOPE.GetRootScope.GetState.GetBlockadeLevel|%-0] [Concept('concept_blockade', '$concept_blockaded$')]"
  alert_blockaded_state_alert_desc: "[SCOPE.GetRootScope.GetState.GetBlockadeEffectsDesc]"
- alert_blockaded_state_alert_hint: "Můžete prolomit blokádu vysláním [Concept('concept_fleet','flotily')] s rozkazem „$interception_coast$“ do příslušného [Concept('concept_sea_node','námořního uzlu')], pokud je schopna porazit nepřátelskou flotilu (nebo flotily) v boji."
+ alert_blockaded_state_alert_hint: "Můžete prolomit $concept_blockade$ odesláním [concept_fleet] na [GetNavalMissionType('naval_mission_type_intercept').GetName] [Concept('concept_naval_mission','$concept_naval_mission_short$')] do příslušného [concept_sea_node], pokud bude schopna porazit nepřátelské loďstvo v bitvě." # todo: CHANGED
  alert_blockaded_state_alert_action: "Panel státu pre [SCOPE.GetRootScope.GetState.GetName]"
  alert_isolated_state_alert_name: "[SCOPE.GetRootScope.GetState.GetName] je [Concept('concept_isolated_state', '$concept_isolated_state_short$')]"
  alert_isolated_state_alert_desc: "[Concept('concept_isolated_state', '$concept_isolated_state_short$')] nemůže nakupovat a prodávat zboží z většího trhu. [Concept('concept_pop_needs','$concept_pops$')] bude muset zakoupit své potřeby z místní dodávky v rámci státu, což může mít významný vliv na [concept_sol|l] populace v důsledku změn cen."
@@ -175,10 +175,6 @@
  alert_has_low_liberty_desire_desc: "[SCOPE.GetRootScope.GetCountry.GetOverlord.GetName] může [GetDiplomaticActionType('da_decrease_autonomy').GetName] na nás."
  alert_has_low_liberty_desire_hint: "Můžete využít panel diplomacie, abyste viděli, které [Concept('concept_subject_action','$concept_subject_actions$')|l] jsou dostupné pro zvýšení naší [Concept('concept_liberty_desire','touhy po svobodě')]."
  alert_has_low_liberty_desire_action: "Panel diplomacie"
- alert_has_convoys_being_sunk_name: "[GetGoods('merchant_marine').GetName] potopeno"
- alert_has_convoys_being_sunk_desc: "Konvoje jsou napadány v následujících námořních uzlech:[SCOPE.GetRootScope.GetCountry.GetSeaNodesMightBeConvoyRaidedInDesc]. \n\nTo znamená, že všechny spojení k zámořskému území, obchod s jinými trhy a zásoby pro naše expediční síly procházející těmito námořními uzly jsou přerušeny, což může mít katastrofické důsledky pro naši ekonomickou a vojenskou sílu."
- alert_has_convoys_being_sunk_hint: "Můžete tomu čelit přidělením [Concept('concept_admiral','admirála')] k [Concept('concept_escort_convoys','doprovodu konvojů')] podél [Concept('concept_shipping_lane','námořních tras')] procházejících mořským uzlem."
- alert_has_convoys_being_sunk_action: "Panel vojenského námořnictva"
  alert_above_company_limit_name: "Nad limit [Concept('concept_company','společností')]"
  alert_above_company_limit_desc: "Máte více společností než váš limit povoluje. To způsobuje, že všechny vaše společnosti trpí těžkými tresty k [Concept('concept_throughput','efektivite')], které poskytují."
  alert_above_company_limit_hint: "Můžete rozpustit [concept_company|l] v panelu společnosti, abyste se dostali pod povolený limit znovu. Alternativně je můžete zachovat a žít s pokutami nebo prozkoumat technologii, která zvyšuje limit."
@@ -460,3 +456,7 @@
  insufficient_ship_crew_alert_setting_name: "Nedostatek $concept_ship_crew$" # todo: NEW TRANSLATION
  insufficient_supply_maintenance_alert_setting_name: "Nedostatečná údržba $concept_supply_ship$" # todo: NEW TRANSLATION
  port_bombardment_alert_setting_name: "$port_bombardment$" # todo: NEW TRANSLATION
+ alert_has_convoys_being_sunk_name: "[GetGoods('merchant_marine').GetName] potopeno"
+ alert_has_convoys_being_sunk_desc: "Konvoje jsou napadány v následujících námořních uzlech:[SCOPE.GetRootScope.GetCountry.GetSeaNodesMightBeConvoyRaidedInDesc]. \n\nTo znamená, že všechny spojení k zámořskému území, obchod s jinými trhy a zásoby pro naše expediční síly procházející těmito námořními uzly jsou přerušeny, což může mít katastrofické důsledky pro naši ekonomickou a vojenskou sílu."
+ alert_has_convoys_being_sunk_hint: "Můžete tomu čelit přidělením [Concept('concept_admiral','admirála')] k [Concept('concept_escort_convoys','doprovodu konvojů')] podél [Concept('concept_shipping_lane','námořních tras')] procházejících mořským uzlem."
+ alert_has_convoys_being_sunk_action: "Panel vojenského námořnictva"

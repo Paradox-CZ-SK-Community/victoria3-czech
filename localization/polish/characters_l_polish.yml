@@ -2,7 +2,7 @@
  CHARACTERS_HEADER: "[Concept('concept_character', '$NATIONAL_CAST$')]"
  ALL_CHARACTERS: "Všechny postavy"
  NATIONAL_CAST: "Národní obsazení"
- CHARACTERS_FILTER_COUNT: "[PopsOverviewPanel.GetNumFilteredCharacters|0]/[PopsOverviewPanel.GetNumTotalCharacters|0] $concept_characters$"
+ CHARACTERS_FILTER_COUNT: "[CharacterFilter.GetNumFilteredCharacters|0]/[CharacterFilter.GetNumTotalCharacters|0] $concept_characters$" # todo: CHANGED
  MILITARY_ROLE_FILTER_NAME: "Vojenský"
  POLITICAL_ROLE_FILTER_NAME: "Politický"
  OTHER_ROLE_FILTER_NAME: "Ostatní"
@@ -30,11 +30,11 @@
  character_title_marquess: "Markýz" # todo: CHANGED
  character_title_count: "Hrabě" # todo: NEW TRANSLATION
  character_title_countess: "Hraběnka" # todo: NEW TRANSLATION
- character_title_gentlewoman: "Dáma" # todo: NEW TRANSLATION
- character_title_gentleman: "Džentlmen" # todo: NEW TRANSLATION
+ character_title_gentlewoman: "Lady" # todo: NEW TRANSLATION
+ character_title_gentleman: "Sir" # todo: NEW TRANSLATION
  character_noble: "Je šlechtic" # todo: CHANGED
  character_historical: "$CHARACTER_HISTORICAL_HEADER$" # todo: NEW TRANSLATION
- LOYALTY_VALUE_WITH_KEY: "$VAL|+=0$ from $KEY$" # todo: NEW TRANSLATION
+ LOYALTY_VALUE_WITH_KEY: "$VAL|+=0$ z $KEY$" # todo: NEW TRANSLATION
  LOYALTY_FAITHLESS: "#n Věrolomný#!"
  LOYALTY_UNCERTAIN: "#n Nejistý#!"
  LOYALTY_NEUTRAL: "#v Neutrální#!"

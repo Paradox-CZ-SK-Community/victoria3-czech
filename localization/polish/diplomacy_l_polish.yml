@@ -1484,9 +1484,9 @@
  colony_effect_desc_third: "[AddTextIf(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self),TARGET_COUNTRY.GetNameNoFlag)][AddTextIf(Not(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self)),TARGET_COUNTRY.GetName)] se stává [concept_colony_subject] [COUNTRY.GetName]"
  colony_trigger_desc_global: "Je [Concept('concept_colony_subject','kolonii')]"
  colony_trigger_false_desc_global: "#b Není#! [Concept('concept_colony_subject','kolonii')]"
- colony_trigger_desc_first: "[TARGET_COUNTRY.GetName] je [COUNTRY.GetAltAdjectiveNoFlag('G')] [Concept('concept_colony_subject','kolonie')]"
- colony_trigger_false_desc_first: "[TARGET_COUNTRY.GetName] #b není#! [COUNTRY.GetAltAdjectiveNoFlag('ou')|l] [Concept('concept_colony_subject','kolonii')]"
- colony_trigger_desc_third: "[COUNTRY.GetName] je [Concept('concept_colony_subject','kolonie')] [AddTextIf(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self),TARGET_COUNTRY.GetNameNoFlag)][AddTextIf(Not(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self)),TARGET_COUNTRY.GetName)]"
+ colony_trigger_desc_first: "[TARGET_COUNTRY.GetNameNoFlag] je [COUNTRY.GetAdjectiveNoFlag] [concept_colony_subject]" # todo: CHANGED
+ colony_trigger_false_desc_first: "[TARGET_COUNTRY.GetNameNoFlag] #b není#! [COUNTRY.GetAdjectiveNoFlag] [concept_colony_subject]" # todo: CHANGED
+ colony_trigger_desc_third: "[COUNTRY.GetNameNoFlag] je [concept_colony_subject] od [AddTextIf(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self),TARGET_COUNTRY.GetNameNoFlag)][AddTextIf(Not(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self)),TARGET_COUNTRY.GetName)]" # todo: CHANGED
  colony_trigger_false_desc_third: "[COUNTRY.GetNameNoFlag] #b není#! [Concept('concept_colony_subject','kolonii')] [AddTextIf(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self),TARGET_COUNTRY.GetName)][AddTextIf(Not(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self)),TARGET_COUNTRY.GetName)]"
  become_colony: "Žádat o status kolonie"
  become_colony_action_name: "Žádost o stání se kolonii"
@@ -1585,6 +1585,12 @@
  crown_land_effect_desc_global: "Stane se [concept_crown_land_subject]"
  crown_land_effect_desc_first: "[TARGET_COUNTRY.GetName] se stává [COUNTRY.GetAdjectiveNoFlag] [Concept('concept_crown_land_subject','korunním územím')]"
  crown_land_effect_desc_third: "[AddTextIf(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self),TARGET_COUNTRY.GetNameNoFlag)][AddTextIf(Not(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self)),TARGET_COUNTRY.GetName)] se stává [Concept('concept_crown_land_subject','korunním územím')] státu [COUNTRY.GetName]"
+ crown_land_trigger_desc_global: "Je [concept_crown_land_subject]" # todo: NEW TRANSLATION
+ crown_land_trigger_false_desc_global: "#b není#! [concept_crown_land_subject]" # todo: NEW TRANSLATION
+ crown_land_trigger_desc_first: "[TARGET_COUNTRY.GetNameNoFlag] je [COUNTRY.GetAdjectiveNoFlag] [concept_crown_land_subject]" # todo: NEW TRANSLATION
+ crown_land_trigger_false_desc_first: "[TARGET_COUNTRY.GetNameNoFlag] #b není#! [COUNTRY.GetAdjectiveNoFlag] [concept_crown_land_subject]" # todo: NEW TRANSLATION
+ crown_land_trigger_desc_third: "[COUNTRY.GetNameNoFlag] je [concept_crown_land_subject] od [AddTextIf(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self),TARGET_COUNTRY.GetNameNoFlag)][AddTextIf(Not(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self)),TARGET_COUNTRY.GetName)]" # todo: NEW TRANSLATION
+ crown_land_trigger_false_desc_third: "[COUNTRY.GetNameNoFlag] #b není#! [concept_crown_land_subject] od [AddTextIf(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self),TARGET_COUNTRY.GetName)][AddTextIf(Not(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self)),TARGET_COUNTRY.GetName)]" # todo: NEW TRANSLATION
  violate_sovereignty: "Porušení suverenity"
  violate_sovereignty_action_name: "Porušení suverenity"
  violate_sovereignty_action_propose_name: "Porušit suverenitu"
