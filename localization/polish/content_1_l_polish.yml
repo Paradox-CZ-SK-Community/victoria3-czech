@@ -595,8 +595,8 @@
  je_meiji_main: "Restaurace [ROOT.Var('emperor_var').GetCharacter.GetFirstName]"
  je_meiji_main_reason: "Císař byl navrácen k moci a proces znovuvybudování $JAP$#! může začít. Čeká nás mnoho práce. Zahraniční mocnosti nás sledují s dychtivým zájmem. Musíme být schopni odolat jejich tlaku nejen vojensky, ale i ekonomicky a politicky:\n\n• [SCOPE.GetRootScope.GetCountry.GetCustom('meiji_je_conditions_army')]\n• [SCOPE.GetRootScope.GetCountry.GetCustom('meiji_je_conditions_economy')]\n• [SCOPE.GetRootScope.GetCountry.GetCustom('meiji_je_conditions_diplomacy')]\n\nMusíme vybudovat nové $JAP$#!, dokud je železo žhavé, a využít této příležitosti k utváření země způsoby, o nichž naši předkové ani nesnili."
  je_meiji_main_goal: "Dokončete všechny 3 restaurace [Concept('concept_journal_entry', '$concept_journal_entries$')]"
- je_meiji_status_has_completed_meiji_army_je: "#g Dokončeno#! #b $je_meiji_army$#!" # todo: CHANGED
- je_meiji_status_has_completed_meiji_economy_je: "#g Dokončeno#! #b $je_meiji_economy$#!" # todo: CHANGED
+ je_meiji_status_has_completed_meiji_army_je: "Máme #g dokončeno#! #b $je_meiji_army$#!\n"
+ je_meiji_status_has_completed_meiji_economy_je: "Máme #g dokončeno#! #b $je_meiji_economy$#!\n"
  je_meiji_status_has_completed_meiji_diplomacy_je: "Máme #g dokončeno#! #b $je_meiji_diplomacy$#!"
  je_meiji_status_has_completed_iwakura_mission_je: "Máme #g dokončeno#! #b Restaurace: Mise na Západ#!"
  je_meiji_status_has_not_completed_meiji_army_je: "Nemáme #warning dokončeno#! #b $je_meiji_army$#!"
