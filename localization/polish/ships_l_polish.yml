@@ -140,7 +140,7 @@
  ship_type_aircraft_carrier_desc: "Loď, ze které mohou startovat a přistávat letadla; její úkoly zahrnují průzkum i některé útočné operace." # todo: CHANGED
  ship_type_torpedo_boat: "Torpédový člun" # todo: NEW TRANSLATION
  ship_type_torpedo_boat_desc: "Malá, obratná plavidla navržená k vykonání ničivých útoků na větší, pomalejší válečné lodě." # todo: CHANGED
- ship_type_torpedo_boat_destroyer: "Skorý torpédoborec" # todo: CHANGED
+ ship_type_torpedo_boat_destroyer: "Raný torpédoborec"
  ship_type_torpedo_boat_destroyer_desc: "Plavidlo navržené k potírání menších torpédových člunů, zároveň schopné samostatně spouštět torpéda." # todo: CHANGED
  ship_type_light_cruiser: "Lehký křižník" # todo: NEW TRANSLATION
  ship_type_light_cruiser_desc: "Lehce obrněné křižníky stavěné pro dlouhodobé hlídkování, ochranu obchodních cest a projekci síly." # todo: NEW TRANSLATION
@@ -154,7 +154,7 @@
  ship_type_early_ironclad_desc: "Silné oceánské parou poháněné plavidlo s železným pancířem." # todo: CHANGED
  ship_type_modern_ironclad: "Moderní obrněnec" # todo: CHANGED
  ship_type_modern_ironclad_desc: "Evoluce tradičního železňáku, moderní verze integruje mnohé" # todo: CHANGED
- ship_type_pre_dreadnought: "Predreadnought" # todo: NEW TRANSLATION
+ ship_type_pre_dreadnought: "Predreadnought"
  ship_type_pre_dreadnought_desc: "Výkonná bitevní loď nesoucí smíšenou baterii těžkých děl." # todo: CHANGED
  ship_type_dreadnought: "Dreadnought" # todo: NEW TRANSLATION
  ship_type_dreadnought_desc: "Revoluční bitevní loď postavená kolem jednotné baterie těžkých děl." # todo: CHANGED
@@ -166,10 +166,10 @@
  ship_type_troop_ship_desc: "Speciálně postavená zásobovací loď určená k přepravě mužstva a materiálu po celém světě." # todo: NEW TRANSLATION
  ship_type_supply_ship: "Zásobovací loď" # todo: NEW TRANSLATION
  ship_type_supply_ship_desc: "Loď, která přepravuje vojenské zboží z jednoho místa na druhé." # todo: NEW TRANSLATION
- ship_graphics_type_borodino: "Borodino" # todo: NEW TRANSLATION
- ship_graphics_type_borodino_desc: "Třída prémiových před-dreadnoughtů Borodino byly nejnovější bitevní lodě Ruského impériálního námořnictva v době rusko-japonské války. Čtyři z nich byly potopeny nebo zajaty v bitvě u Cušimy." # todo: CHANGED
- ship_graphics_type_mikasa: "Mikasa" # todo: NEW TRANSLATION
- ship_graphics_type_mikasa_desc: "Vlajková loď admirála Tōgōa během rusko-japonské války, před-dreadnought Mikasa bojoval ve všech hlavních námořních bitvách války – stal se trvalým symbolem japonské námořní převahy." # todo: CHANGED
+ ship_graphics_type_borodino: "Borodino"
+ ship_graphics_type_borodino_desc: "Třída prémiových predreadnoughtů Borodino byly nejnovější bitevní lodě Ruského impériálního námořnictva v době rusko-japonské války. Čtyři z nich byly potopeny nebo zajaty v bitvě u Cušimy."
+ ship_graphics_type_mikasa: "Mikasa"
+ ship_graphics_type_mikasa_desc: "Vlajková loď admirála Tógóa během rusko-japonské války, předreadnought Mikasa bojoval ve všech hlavních námořních bitvách války - stal se trvalým symbolem japonské námořní převahy."
  ship_graphics_type_dingyuan: "Dingyuan" # todo: NEW TRANSLATION
  ship_graphics_type_dingyuan_desc: "Pýcha Beiyangské flotily, železné bitevní lodě Dingyuan a Zhenyuan byly nejvýraznějšími symboly vojenské modernizace pozdní říše Čching. Bojovaly statečně v bitvě u řeky Yalu, jejich výkon však omezovalo chronické podfinancování čínského císařského námořnictva." # todo: CHANGED
  ship_group_capital_ships: "Hlavní lodě" # todo: NEW TRANSLATION
@@ -405,81 +405,81 @@
  ship_transfer_effects_desc: "• Naváže dohodu mezi dvěma [Concept('concept_country', '$concept_countries$')], kde jedna $concept_country$ převede vlastnictví [concept_ship] druhé $concept_country$" # todo: CHANGED
  ship_transfer_article_short_desc: "[SOURCE_COUNTRY.GetNameNoFormatting] převede $concept_ship$ na [TARGET_COUNTRY.GetNameNoFormatting]" # todo: CHANGED
  TREATY_DRAFT_ARTICLE_FLAG_IS_SHIP_TRANSFER_EFFECT: "• @ships! [SelectLocalization(ArticleDraft.HasInputValue('ship'), ArticleDraft.GetShip.GetName, 'NONE')] bude převedena na [TARGET_COUNTRY.GetName]" # todo: CHANGED
- SELECT_A_SHIP: "Vyberte [concept_ship]" # todo: CHANGED
- ship_mod_ironclad_wooden_hull: "Dřevěný trup" # todo: NEW TRANSLATION
- ship_mod_full_waterline_armor: "Pancéřování vodorysky" # todo: CHANGED
- ship_mod_light_engine: "Lehký stroj" # todo: CHANGED
- ship_mod_medium_engine: "Střední stroj" # todo: CHANGED
- ship_mod_slot_armor: "Pancéřování" # todo: NEW TRANSLATION
- ship_mod_slot_armor_button_0: "Lehký" # todo: CHANGED
- ship_mod_slot_armor_button_1: "Střední" # todo: NEW TRANSLATION
- ship_mod_slot_armor_button_2: "Těžký" # todo: CHANGED
- ship_mod_slot_guns: "Výzbroj" # todo: NEW TRANSLATION
- ship_mod_slot_guns_button_0: "Lehká" # todo: CHANGED
- ship_mod_slot_guns_button_1: "Střední" # todo: NEW TRANSLATION
- ship_mod_slot_guns_button_2: "Těžká" # todo: CHANGED
- ship_mod_slot_propulsion: "Pohon" # todo: NEW TRANSLATION
- ship_mod_slot_propulsion_button_0: "Lehký" # todo: NEW TRANSLATION
- ship_mod_slot_propulsion_button_1: "Střední" # todo: NEW TRANSLATION
- ship_mod_slot_propulsion_button_2: "Těžký" # todo: NEW TRANSLATION
- ship_mod_slot_range: "Dopravní kapacita" # todo: CHANGED
- ship_mod_slot_range_button_0: "Krátká" # todo: CHANGED
- ship_mod_slot_range_button_1: "Střední" # todo: NEW TRANSLATION
- ship_mod_slot_range_button_2: "Dlouhá" # todo: CHANGED
- ship_mod_slot_utility_1: "Užitkový slot 1" # todo: CHANGED
- ship_mod_slot_utility_2: "Užitkový slot 2" # todo: CHANGED
- ship_mod_slot_utility_3: "Užitkový slot 3" # todo: CHANGED
- utility_mod_patrol_boats: "Hlídací čluny" # todo: NEW TRANSLATION
- utility_mod_patrol_boats_desc: "Malé čluny používané k vyhledávání nepřátel" # todo: CHANGED
- utility_mod_extended_sick_bay: "Rozšířená zdravotní ošetřovna" # todo: CHANGED
- utility_mod_extended_sick_bay_desc: "Rozšířená ošetřovna pro ošetření ran a nemocí" # todo: CHANGED
- utility_mod_fire_suppression: "Hašení požárů" # todo: CHANGED
- utility_mod_fire_suppression_desc: "Používá chemikálie k účinnějšímu hašení požárů" # todo: NEW TRANSLATION
- utility_mod_landing_skiffs: "Přistávací čluny" # todo: NEW TRANSLATION
- utility_mod_landing_skiffs_desc: "Veslovací čluny používané k vylodění na nepřátelské pobřeží" # todo: NEW TRANSLATION
- utility_mod_torpedo_nets: "Protitorpédové sítě" # todo: CHANGED
- utility_mod_torpedo_nets_desc: "Velké sítě používající se k zachycení torpéd před tím, než zasáhnou trup lodi" # todo: CHANGED
- utility_mod_large_carronades: "Velké karonády" # todo: NEW TRANSLATION
- utility_mod_large_carronades_desc: "Velká extra děla namontovaná na palubě k prorážení nepřátelského pancíře" # todo: CHANGED
- utility_mod_fire_control_system: "Systém řízení palby" # todo: NEW TRANSLATION
- utility_mod_fire_control_system_desc: "Systém pro koordinaci a zvýšení přesnosti děl lodi" # todo: CHANGED
- utility_mod_range_finder: "Dálkoměr" # todo: NEW TRANSLATION
- utility_mod_range_finder_desc: "Přístroje pro výpočet vzdálenosti k cíli" # todo: CHANGED
- utility_mod_searchlights: "Reflektory" # todo: NEW TRANSLATION
- utility_mod_searchlights_desc: "Navrženo pro dlouhodobou viditelnost k odhalení cílů" # todo: CHANGED
- utility_mod_advanced_explosives: "Pokročilá výbušnina" # todo: CHANGED
- utility_mod_advanced_explosives_desc: "Různé výbušniny, které zvyšují schopnost lodi způsobit poškození" # todo: CHANGED
- utility_mod_camouflage: "Kamo" # todo: CHANGED
- utility_mod_camouflage_desc: "Použití určitých barevných vzorů nebo schémat pro znesnadnění zamíření nepřítele na loď" # todo: CHANGED
- ship_mod_armor_high: "Těžký pancíř" # todo: CHANGED
- ship_mod_armor_medium: "Střední pancíř" # todo: CHANGED
- ship_mod_armor_light: "Lehký pancíř" # todo: CHANGED
- ship_mod_guns_high: "Těžká děla" # todo: NEW TRANSLATION
- ship_mod_guns_medium: "Střední děla" # todo: NEW TRANSLATION
- ship_mod_guns_light: "Lehká děla" # todo: NEW TRANSLATION
- ship_mod_propulsion_light: "Lehký pohon" # todo: NEW TRANSLATION
- ship_mod_propulsion_medium: "Střední pohon" # todo: NEW TRANSLATION
+ SELECT_A_SHIP: "Vyberte [concept_ship|l]"
+ ship_mod_ironclad_wooden_hull: "Dřevěný trup"
+ ship_mod_full_waterline_armor: "Pancéřování na vodorysce"
+ ship_mod_light_engine: "Lehký stroj"
+ ship_mod_medium_engine: "Střední stroj"
+ ship_mod_slot_armor: "Pancíř"
+ ship_mod_slot_armor_button_0: "Lehký"
+ ship_mod_slot_armor_button_1: "Střední"
+ ship_mod_slot_armor_button_2: "Těžký"
+ ship_mod_slot_guns: "Výzbroj"
+ ship_mod_slot_guns_button_0: "Lehká"
+ ship_mod_slot_guns_button_1: "Střední"
+ ship_mod_slot_guns_button_2: "Těžká"
+ ship_mod_slot_propulsion: "Pohon"
+ ship_mod_slot_propulsion_button_0: "Lehký"
+ ship_mod_slot_propulsion_button_1: "Střední"
+ ship_mod_slot_propulsion_button_2: "Těžký"
+ ship_mod_slot_range: "Zásobovací kapacita"
+ ship_mod_slot_range_button_0: "Krátká"
+ ship_mod_slot_range_button_1: "Střední"
+ ship_mod_slot_range_button_2: "Dlouhá"
+ ship_mod_slot_utility_1: "Pomocný slot 1"
+ ship_mod_slot_utility_2: "Pomocný slot 2"
+ ship_mod_slot_utility_3: "Pomocný slot 3"
+ utility_mod_patrol_boats: "Hlídkové čluny"
+ utility_mod_patrol_boats_desc: "Malé čluny používané k průzkumu nepřátel"
+ utility_mod_extended_sick_bay: "Rozšířená ošetřovna"
+ utility_mod_extended_sick_bay_desc: "Rozšířená ošetřovna pro péči o zranění i nemoci"
+ utility_mod_fire_suppression: "Hašení požárů"
+ utility_mod_fire_suppression_desc: "Využívá chemikálie k účinnějšímu hašení požárů"
+ utility_mod_landing_skiffs: "Vyloďovací čluny"
+ utility_mod_landing_skiffs_desc: "Veslice používané k vylodění na nepřátelském pobřeží"
+ utility_mod_torpedo_nets: "Torpédové sítě"
+ utility_mod_torpedo_nets_desc: "Velké sítě používané k zachycení torpéd před zásahem lodního trupu"
+ utility_mod_large_carronades: "Velké karonády"
+ utility_mod_large_carronades_desc: "Velká dodatečná děla umístěná na palubě k prorážení nepřátelského pancíře"
+ utility_mod_fire_control_system: "Systém řízení palby"
+ utility_mod_fire_control_system_desc: "Systém ke koordinaci a zvýšení přesnosti lodních děl"
+ utility_mod_range_finder: "Dálkoměr"
+ utility_mod_range_finder_desc: "Přístroje k výpočtu vzdálenosti k cíli"
+ utility_mod_searchlights: "Světlomety"
+ utility_mod_searchlights_desc: "Navrženy pro viditelnost na velkou vzdálenost a odhalování cílů"
+ utility_mod_advanced_explosives: "Pokročilé výbušniny"
+ utility_mod_advanced_explosives_desc: "Různé výbušniny, které zlepšují schopnost lodi způsobovat poškození"
+ utility_mod_camouflage: "Kamufláž"
+ utility_mod_camouflage_desc: "Použití určitých barevných vzorů nebo schémat ke ztížení nepřátelského zamíření na loď"
+ ship_mod_armor_high: "Těžký pancíř"
+ ship_mod_armor_medium: "Střední pancíř"
+ ship_mod_armor_light: "Lehký pancíř"
+ ship_mod_guns_high: "Těžká děla"
+ ship_mod_guns_medium: "Střední děla"
+ ship_mod_guns_light: "Lehká děla"
+ ship_mod_propulsion_light: "Lehký pohon"
+ ship_mod_propulsion_medium: "Střední pohon"
  ship_mod_propulsion_high: "Výkonný pohon"
- ship_mod_range_light: "Krátký dolet"
- ship_mod_range_medium: "Střední dolet"
- ship_mod_range_high: "Dlouhý dolet"
- SHIP_DESIGNER_POPUP_TITLE: "Návrhář lodí" # todo: CHANGED
- SHIP_DESIGNER_POPUP_SUBTITLE: "[AddLocalizationIf(ShipDesignerPopup.IsCreating, 'SHIP_DESIGNER_IS_CREATING_SUBTITLE')][AddLocalizationIf(ShipDesignerPopup.IsEditing, 'SHIP_DESIGNER_IS_EDITING_SUBTITLE')]" # todo: NEW TRANSLATION
+ ship_mod_range_light: "Krátký dosah"
+ ship_mod_range_medium: "Střední dosah"
+ ship_mod_range_high: "Dlouhý dosah"
+ SHIP_DESIGNER_POPUP_TITLE: "Návrhář lodí"
+ SHIP_DESIGNER_POPUP_SUBTITLE: "[AddLocalizationIf(ShipDesignerPopup.IsCreating, 'SHIP_DESIGNER_IS_CREATING_SUBTITLE')][AddLocalizationIf(ShipDesignerPopup.IsEditing, 'SHIP_DESIGNER_IS_EDITING_SUBTITLE')]"
  SHIP_DESIGNER_IS_CREATING_SUBTITLE: "Nová [Concept('concept_ship_template','šablona lodě')]"
- SHIP_DESIGNER_IS_EDITING_SUBTITLE: "Upravit [ShipDesignerPopup.GetChosenName] [concept_ship_template]" # todo: NEW TRANSLATION
- SHIP_DESIGNER_POPUP_CONFIRM_BUTTON_TOOLTIP: "Potvrdit změny provedené na této šabloně" # todo: CHANGED
- SHIP_DESIGNER_CREATE_NEW_TEMPLATE: "#header Vytvořit novou [concept_ship_template]#!\nOtevřít #b Návrháře lodí#!" # todo: CHANGED
- SHIP_DESIGNER_EDIT_EXISTING_TEMPLATE: "Upravit tuto [concept_ship_template]" # todo: NEW TRANSLATION
- SHIP_DESIGNER_DELETE_EXISTING_TEMPLATE: "Smazat tuto [concept_ship_template]\n[GetDesc(ShipTemplate.DeleteTemplate)]" # todo: NEW TRANSLATION
- SHIP_DESIGNER_DELETE_EXISTING_TEMPLATE_LAST_OF_TYPE: "Nelze smazat poslední šablonu typu [concept_ship_type]." # todo: CHANGED
- SHIP_DESIGNER_DELETE_EXISTING_TEMPLATE_STILL_USED: "[SHIP.GetName] stále používá tuto šablonu." # todo: NEW TRANSLATION
- SHIP_DESIGNER_DELETE_EXISTING_TEMPLATE_IN_CONSTRUCTION: "[MILITARY_FORMATION.GetName] má novou stavbu této šablony." # todo: CHANGED
- SHIP_DESIGNER_DELETE_EXISTING_TEMPLATE_CONFIRMATION: "Smazat šablonu [SHIP_TEMPLATE.GetName]?" # todo: NEW TRANSLATION
+ SHIP_DESIGNER_IS_EDITING_SUBTITLE: "Upravit [ShipDesignerPopup.GetChosenName] [Concept('concept_ship_template','šablonu lodě')]"
+ SHIP_DESIGNER_POPUP_CONFIRM_BUTTON_TOOLTIP: "Potvrdit změny provedené na této šabloně"
+ SHIP_DESIGNER_CREATE_NEW_TEMPLATE: "#header Vytvořit novou [Concept('concept_ship_template','šablonu lodě')]#!\nOtevřít #b Návrháře lodí#!"
+ SHIP_DESIGNER_EDIT_EXISTING_TEMPLATE: "Upravit tuto [Concept('concept_ship_template','šablonu lodě')]"
+ SHIP_DESIGNER_DELETE_EXISTING_TEMPLATE: "Smazat tuto [Concept('concept_ship_template','šablonu lodě')]\n[GetDesc(ShipTemplate.DeleteTemplate)]"
+ SHIP_DESIGNER_DELETE_EXISTING_TEMPLATE_LAST_OF_TYPE: "Nelze smazat poslední šablonu [Concept('concept_ship_type','typu lodě')]."
+ SHIP_DESIGNER_DELETE_EXISTING_TEMPLATE_STILL_USED: "[SHIP.GetName] stále používá tuto šablonu."
+ SHIP_DESIGNER_DELETE_EXISTING_TEMPLATE_IN_CONSTRUCTION: "[MILITARY_FORMATION.GetName] má novou konstrukci této šablony."
+ SHIP_DESIGNER_DELETE_EXISTING_TEMPLATE_CONFIRMATION: "Smazat šablonu [SHIP_TEMPLATE.GetName]?"
  SHIP_DESIGNER_SELECT_SHIP_TYPE: "Vybrat [Concept('concept_ship_type','typ lodě')]"
  SHIP_DESIGNER_SELECT_SHIP_TYPE_BUTTON: "#header Změnit typ lodi#!\nKlikněte pro zobrazení dostupných [Concept('concept_ship_type','typů')]"
- SHIP_DESIGNER_SELECT_EXISTING_TEMPLATE: "Vybrat existující [concept_ship_template]" # todo: NEW TRANSLATION
- SHIP_DESIGNER_SELECT_TEMPLATE: "Vybrat [concept_ship_template]" # todo: NEW TRANSLATION
- SHIP_DESIGNER_SELECT_TEMPLATE_TOOLTIP: "#header Načíst šablonu#!\nKliknutím načtěte existující [concept_ship_template].\nTímto se zahodí všechny neuložené změny." # todo: NEW TRANSLATION
+ SHIP_DESIGNER_SELECT_EXISTING_TEMPLATE: "Vybrat existující [concept_ship_template|l]"
+ SHIP_DESIGNER_SELECT_TEMPLATE: "Vybrat [concept_ship_template|l]"
+ SHIP_DESIGNER_SELECT_TEMPLATE_TOOLTIP: "#header Načíst šablonu#!\nKliknutím načtěte existující [concept_ship_template|l].\nTímto se zahodí všechny neuložené změny."
  SHIP_DESIGNER_SKINS_HEADER: "Vzhledy pro [ShipType.GetName]"
  SHIP_DESIGNER_SKINS_BUTTON_TEXT: "Vzhledy (#todo 999#!)"
  SHIP_DESIGNER_SKINS_BUTTON_TOOLTIP: "Zobrazit dostupné vzhledy pro [ShipType.GetName]"
@@ -490,53 +490,53 @@
  ADD_TEMPLATE: "Přidat šablonu"
  ADD_NEW_TEMPLATE: "Vytvořit šablonu"
  SHIP_MODIFICATION_TECH_REQUIREMENTS_DESC: "#title Vyžaduje jednu z následujících:#!#indent_newline:3 \n[ShipModificationType.GetTechRequirements(GetPlayer.Self)]#!"
- SHIP_MODIFICATION_APPLICABLE_SHIP_TYPES_DESC: "#title Použitelné pro [Concept('concept_ship_type','$concept_ship_types$')]:#!#indent_newline:3 \n[ShipModificationType.GetApplicableShipTypesString]#!"
+ SHIP_MODIFICATION_APPLICABLE_SHIP_TYPES_DESC: "#title Použitelné pro [Concept('concept_ship_type','typy lodí')]:#!#indent_newline:3 \n[ShipModificationType.GetApplicableShipTypesString]#!"
  TOOLTIP_UNLOCK_SHIP_MODIFICATION_TYPE: "Odemkne [ShipModificationType.GetName] ([concept_ship_modification])"
  RANDOMIZE_SHIP_TEMPLATE_NAME: "Náhodný název [Concept('concept_ship_template','šablony')]"
  UNAVAILABLE_SHIP_TYPES: "Nedostupné typy lodí"
- SHOW_UNAVAILABLE_SHIP_TYPES_OF_GROUP: "Zobrazit nedostupné (#b [GetDataModelSize(ShipTemplateList.GetTypesUnavailableOfGroup(ShipGroup.Self))]#!)" # todo: NEW TRANSLATION
- SHOW_UNAVAILABLE_SHIP_TYPES_TOOLTIP: "Zobrazit všechny nedostupné $SHIP_TYPES_CONCEPT$" # todo: NEW TRANSLATION
- OBSOLETE_SHIP_TYPES: "Zastaralé $concept_ship_types$" # todo: NEW TRANSLATION
- SHOW_OBSOLETE_SHIP_TYPES_OF_GROUP: "Zobrazit zastaralé (#b [GetDataModelSize(ShipTemplateList.GetTypesObsoleteOfGroup(ShipGroup.Self))]#!)" # todo: NEW TRANSLATION
- SHOW_OBSOLETE_SHIP_TYPES: "Zobrazit zastaralé" # todo: NEW TRANSLATION
- SHOW_OBSOLETE_SHIP_TYPES_TOOLTIP: "Zobrazit všechny zastaralé $SHIP_TYPES_CONCEPT$" # todo: NEW TRANSLATION
+ SHOW_UNAVAILABLE_SHIP_TYPES_OF_GROUP: "Zobrazit nedostupné (#b [GetDataModelSize(ShipTemplateList.GetTypesUnavailableOfGroup(ShipGroup.Self))]#!)"
+ SHOW_UNAVAILABLE_SHIP_TYPES_TOOLTIP: "Zobrazit všechny nedostupné $SHIP_TYPES_CONCEPT$"
+ OBSOLETE_SHIP_TYPES: "Zastaralé typy lodí"
+ SHOW_OBSOLETE_SHIP_TYPES_OF_GROUP: "Zobrazit zastaralé (#b [GetDataModelSize(ShipTemplateList.GetTypesObsoleteOfGroup(ShipGroup.Self))]#!)"
+ SHOW_OBSOLETE_SHIP_TYPES: "Zobrazit zastaralé"
+ SHOW_OBSOLETE_SHIP_TYPES_TOOLTIP: "Zobrazit všechny zastaralé $SHIP_TYPES_CONCEPT$"
  NO_AVAILABLE_SHIP_TYPES: "Žádné dostupné [Concept('concept_ship_type', 'typy')]"
- NO_AVAILABLE_SHIP_TEMPLATES: "Žádné dostupné $SHIP_TEMPLATES_CONCEPT$" # todo: NEW TRANSLATION
- SHIP_TEMPLATE_AUTOMATIC_NAME: "Mod. $YEAR$" # todo: NEW TRANSLATION
- SHIP_TEMPLATE_AUTOMATIC_NAME_NUMBERED: "Mod. $YEAR$ Mk.[GetRomanNumeral('(int32)$NUM$')]" # todo: NEW TRANSLATION
+ NO_AVAILABLE_SHIP_TEMPLATES: "Žádné dostupné $SHIP_TEMPLATES_CONCEPT$"
+ SHIP_TEMPLATE_AUTOMATIC_NAME: "Model $YEAR$"
+ SHIP_TEMPLATE_AUTOMATIC_NAME_NUMBERED: "Model $YEAR$ typ [GetRomanNumeral('(int32)$NUM$')]"
  SHIP_TEMPLATE_NAME_FALLBACK: "Šablona lodě"
- SHIP_TEMPLATE_IS_DEFAULT: "@green_checkmark! Je #b vybraná#! $concept_ship_template_short$ pro [ShipTemplate.GetType.GetName]" # todo: CHANGED
- SHIP_TEMPLATE_IS_DEFAULT_FOR_FLEET: "@green_checkmark! Je #b vybraná#! $concept_ship_template_short$ pro [ShipTemplate.GetType.GetName] v [MilitaryFormation.GetName]" # todo: CHANGED
- SHIP_TEMPLATE_IS_NOT_DEFAULT: "Kliknutím udělat z [ShipTemplate.GetName] #b vybranou#! $concept_ship_template_short$ pro [ShipTemplate.GetType.GetName]" # todo: CHANGED
- SHIP_TEMPLATE_IS_NOT_DEFAULT_FOR_FLEET: "Kliknutím udělat z [ShipTemplate.GetName] #b vybranou#! $concept_ship_template_short$ pro [ShipTemplate.GetType.GetName] v [MilitaryFormation.GetName]" # todo: CHANGED
- SHIP_TEMPLATE_CONSTRUCTION_COST_IN_WEEKS: "Odhadováno [ShipTemplate.GetConstructionWeeks|V] týdnů při plném [concept_ship_construction_capacity] (@ship_construction! [ShipTemplate.GetConstructionProgressMax|V0])" # todo: CHANGED
- SHIP_TEMPLATE_CONSTRUCTION_COST_TOOLTIP: "#header [concept_ship_construction]#!\n@ship_construction! [ShipTemplate.GetConstructionCost|V0] $concept_ship_construction_short$ pro postavení této [concept_ship_template]\n$SHIP_TEMPLATE_CONSTRUCTION_COST_IN_WEEKS$\n$TOOLTIP_DELIMITER$\n#title Díky:#!#indent_newline:3 \n[ShipTemplate.GetConstructionCostDesc]#!" # todo: CHANGED
- SHIP_TEMPLATE_CONSTRUCTION_GOODS_COST: "@money! #v [ShipTemplate.GetConstructionGoodsCost|D]#!" # todo: NEW TRANSLATION
- SHIP_TEMPLATE_CONSTRUCTION_GOODS_COST_TOOLTIP: "#header Konstrukční [Concept('concept_good', '$concept_goods$')]#!\n@money! #v [ShipTemplate.GetConstructionGoodsCost|D-]#! odhadované náklady pro jednu [concept_ship]\n$TOOLTIP_DELIMITER$\n#title [Concept('concept_good', '$concept_goods$')] požadováno:#!#indent_newline:3 \n[ShipTemplate.GetConstructionGoodsCostDesc]#!" # todo: CHANGED
- SHIP_DESIGNER_CREATE_TEMPLATE: "Vytvořit šablonu" # todo: NEW TRANSLATION
- SHIP_DESIGNER_CREATE_TEMPLATE_TOOLTIP: "#header Vytvořit novou šablonu lodě#!\n$TOOLTIP_DELIMITER$\nVytvoří novou vlastní šablonu lodě se zvolenými modifikacemi.\n\n[GetDesc(ShipDesignerPopup.CreateTemplate)]" # todo: CHANGED
- SHIP_DESIGNER_EDIT_TEMPLATE: "Potvrdit změny" # todo: NEW TRANSLATION
- SHIP_DESIGNER_EDIT_TEMPLATE_TOOLTIP: "#header Upravit existující šablonu lodě#!\n$TOOLTIP_DELIMITER$\nPotvrdí změny provedené na vybrané šabloně lodě.\n\n[GetDesc(ShipDesignerPopup.EditTemplate)]" # todo: CHANGED
- SHIP_TEMPLATE_ATTACK_DAMAGE_TOOLTIP: "#header [concept_attack_damage]#!\n@ship_damage! [Modifier.GetShipAverageDamage|v^2] v průměru\n$TOOLTIP_DELIMITER$\n@hull_attack_damage! #tooltippable;tooltip:[Modifier.GetTooltipTag],SHIP_HULL_DAMAGE_TOOLTIP [Modifier.GetShipHullDamage|0]#! [concept_hull_attack_damage] při plném [concept_ship_crew]\n@crew_attack_damage! #tooltippable;tooltip:[Modifier.GetTooltipTag],SHIP_CREW_DAMAGE_TOOLTIP [Modifier.GetShipCrewDamage|0]#! [concept_crew_attack_damage] při plném [concept_ship_crew]" # todo: CHANGED
- SHIP_ATTACK_DAMAGE_TOOLTIP: "#header [concept_attack_damage]#!\n@ship_damage! [Ship.GetAverageAttackDamage|v^2] v průměru pro [Ship.GetName]\n$TOOLTIP_DELIMITER$\n@hull_attack_damage! #tooltippable;tooltip:[Ship.GetTooltipTag],SHIP_HULL_DAMAGE_DESC [Ship.GetHullDamage|0]#! [concept_hull_attack_damage]\n@crew_attack_damage! #tooltippable;tooltip:[Ship.GetTooltipTag],SHIP_CREW_DAMAGE_DESC [Ship.GetCrewDamage|0]#! [concept_crew_attack_damage]" # todo: NEW TRANSLATION
- SHIP_HULL_DAMAGE_TOOLTIP: "[Modifier.GetShipHullDamageTooltip]" # todo: NEW TRANSLATION
- SHIP_CREW_DAMAGE_TOOLTIP: "[Modifier.GetShipCrewDamageTooltip]" # todo: NEW TRANSLATION
- SHIP_HULL_DAMAGE_DESC: "#header [concept_hull_attack_damage]#!\n@hull_attack_damage! [Ship.GetHullDamage|v0] pro [Ship.GetName]\n$TOOLTIP_DELIMITER$\n[Ship.GetHullDamageBreakdown]" # todo: NEW TRANSLATION
- SHIP_CREW_DAMAGE_DESC: "#header [concept_crew_attack_damage]#!\n@crew_attack_damage! [Ship.GetCrewDamage|v0] pro [Ship.GetName]\n$TOOLTIP_DELIMITER$\n[Ship.GetCrewDamageBreakdown]" # todo: NEW TRANSLATION
- EDIT_SHIP_TEMPLATE_NO_CHANGE: "U [concept_ship_template] nebyly provedeny žádné změny" # todo: CHANGED
- SHIP_DISTANCE_FROM_PORT_MODIFIER_ENTRY_TITLE: "překračující maximální vzdálenost od přístavu" # todo: CHANGED
- SHIP_VETERANCY_MODIFIER_ENTRY_TITLE: "[SHIP_VETERANCY_LEVEL.GetName]" # todo: NEW TRANSLATION
- SHIP_DESIGNER_COST_IN_WEEKS: "Odhadováno [ShipDesignerPopup.GetConstructionWeeksForLevel(ShipCostPoint.GetModificationLevel)|V] týdnů při plném [concept_ship_construction_capacity] (@ship_construction! [ShipDesignerPopup.GetTemplate.GetConstructionProgressMax|V0])" # todo: CHANGED
- SHIP_DESIGNER_COST_POINT_TOOLTIP: "#header [concept_ship_complexity]#!\n[ShipCostPoint.GetModificationLevel|V] aktuálně\n@ship_construction! [ShipDesignerPopup.GetCostForLevel(ShipCostPoint.GetModificationLevel)|V0] [concept_ship_construction]\n$SHIP_DESIGNER_COST_IN_WEEKS$\n$TOOLTIP_DELIMITER$\n#title Díky:#!#indent_newline:3 \n[ShipDesignerPopup.GetCostDescForLevel(ShipCostPoint.GetModificationLevel)]#!" # todo: CHANGED
- SHIP_RETROFIT_COST_CHANGED_DESC: "$BREAKDOWN$" # todo: NEW TRANSLATION
- SHIP_RETROFIT_COST_COMPLEXITY_DESC: "@ship_construction![Nbsp]$COST|V0$ z komplexity nových [Concept('concept_ship_modification', '$concept_ship_modifications$')] ($PERCENTAGE|%-=0$)" # todo: CHANGED
- SHIP_RETROFIT_COST_COMPLEXITY_INCREASE_DESC: "@ship_construction![Nbsp]$COST|V0$ z obecného nárůstu [concept_ship_complexity] ($UNCHANGED_COST_MULTIPLIER|%=0-$)" # todo: CHANGED
- SHIP_RETROFIT_COST_COMPLEXITY_COMBINED: "@ship_construction![Nbsp]$COST|V0$ z [concept_ship_complexity]#indent_newline:3 \n$FROM_MULTIPLIER$\n$FROM_COMPLEXITY$#!" # todo: NEW TRANSLATION
- SHIP_RETROFIT_COST_TOP: "@ship_construction![Nbsp]$COST|V0$ z nových [Concept('concept_ship_modification', '$concept_ship_modifications$')] ($LEVEL|V$ úrovně x $COST_PER_LEVEL|V0$)"
+ SHIP_TEMPLATE_IS_DEFAULT: "@green_checkmark! Je #b vybraná#! šablona pro [ShipTemplate.GetType.GetName]"
+ SHIP_TEMPLATE_IS_DEFAULT_FOR_FLEET: "@green_checkmark! Je #b vybraná#! šablona pro [ShipTemplate.GetType.GetName] v [MilitaryFormation.GetName]"
+ SHIP_TEMPLATE_IS_NOT_DEFAULT: "Kliknutím udělat z [ShipTemplate.GetName] #b vybranou#! šablonu pro [ShipTemplate.GetType.GetName]"
+ SHIP_TEMPLATE_IS_NOT_DEFAULT_FOR_FLEET: "Kliknutím udělat z [ShipTemplate.GetName] #b vybranou#! šablonu pro [ShipTemplate.GetType.GetName] v [MilitaryFormation.GetName]"
+ SHIP_TEMPLATE_CONSTRUCTION_COST_IN_WEEKS: "Odhadováno [ShipTemplate.GetConstructionWeeks|V] týdnů při plné [Concept('concept_ship_construction_capacity','kapacitě stavby lodí')] (@ship_construction! [ShipTemplate.GetConstructionProgressMax|V0])"
+ SHIP_TEMPLATE_CONSTRUCTION_COST_TOOLTIP: "#header [concept_ship_construction]#!\n@ship_construction! [ShipTemplate.GetConstructionCost|V0] $concept_ship_construction_short$ pro postavení této [Concept('concept_ship_template','šablony')]\n$SHIP_TEMPLATE_CONSTRUCTION_COST_IN_WEEKS$\n$TOOLTIP_DELIMITER$\n#title Díky:#!#indent_newline:3 \n[ShipTemplate.GetConstructionCostDesc]#!"
+ SHIP_TEMPLATE_CONSTRUCTION_GOODS_COST: "@money! #v [ShipTemplate.GetConstructionGoodsCost|D]#!"
+ SHIP_TEMPLATE_CONSTRUCTION_GOODS_COST_TOOLTIP: "#header Konstrukční [Concept('concept_good', '$concept_goods$')|l]#!\n@money! #v [ShipTemplate.GetConstructionGoodsCost|D-]#! odhadované náklady pro jednu [concept_ship|l]\n$TOOLTIP_DELIMITER$\n#title [Concept('concept_good', '$concept_goods$')] požadováno:#!#indent_newline:3 \n[ShipTemplate.GetConstructionGoodsCostDesc]#!"
+ SHIP_DESIGNER_CREATE_TEMPLATE: "Vytvořit šablonu"
+ SHIP_DESIGNER_CREATE_TEMPLATE_TOOLTIP: "#header Vytvořit novou šablonu lodě#!\n$TOOLTIP_DELIMITER$\nVytvoří novou vlastní šablonu lodě se zvolenými modifikacemi.\n\n[GetDesc(ShipDesignerPopup.CreateTemplate)]"
+ SHIP_DESIGNER_EDIT_TEMPLATE: "Potvrdit změny"
+ SHIP_DESIGNER_EDIT_TEMPLATE_TOOLTIP: "#header Upravit existující šablonu lodě#!\n$TOOLTIP_DELIMITER$\nPotvrdí změny provedené na vybrané šabloně lodě.\n\n[GetDesc(ShipDesignerPopup.EditTemplate)]"
+ SHIP_TEMPLATE_ATTACK_DAMAGE_TOOLTIP: "#header [concept_attack_damage]#!\n@ship_damage! [Modifier.GetShipAverageDamage|v^2] v průměru\n$TOOLTIP_DELIMITER$\n@hull_attack_damage! #tooltippable;tooltip:[Modifier.GetTooltipTag],SHIP_HULL_DAMAGE_TOOLTIP [Modifier.GetShipHullDamage|0]#! [concept_hull_attack_damage] při plné [Concept('concept_ship_crew', 'posádce lodi')]\n@crew_attack_damage! #tooltippable;tooltip:[Modifier.GetTooltipTag],SHIP_CREW_DAMAGE_TOOLTIP [Modifier.GetShipCrewDamage|0]#! [concept_crew_attack_damage] při plné [Concept('concept_ship_crew', 'posádce lodi')]"
+ SHIP_ATTACK_DAMAGE_TOOLTIP: "#header [concept_attack_damage]#!\n@ship_damage! [Ship.GetAverageAttackDamage|v^2] v průměru pro [Ship.GetName]\n$TOOLTIP_DELIMITER$\n@hull_attack_damage! #tooltippable;tooltip:[Ship.GetTooltipTag],SHIP_HULL_DAMAGE_DESC [Ship.GetHullDamage|0]#! [concept_hull_attack_damage]\n@crew_attack_damage! #tooltippable;tooltip:[Ship.GetTooltipTag],SHIP_CREW_DAMAGE_DESC [Ship.GetCrewDamage|0]#! [concept_crew_attack_damage]"
+ SHIP_HULL_DAMAGE_TOOLTIP: "[Modifier.GetShipHullDamageTooltip]"
+ SHIP_CREW_DAMAGE_TOOLTIP: "[Modifier.GetShipCrewDamageTooltip]"
+ SHIP_HULL_DAMAGE_DESC: "#header [concept_hull_attack_damage]#!\n@hull_attack_damage! [Ship.GetHullDamage|v0] pro [Ship.GetName]\n$TOOLTIP_DELIMITER$\n[Ship.GetHullDamageBreakdown]"
+ SHIP_CREW_DAMAGE_DESC: "#header [concept_crew_attack_damage]#!\n@crew_attack_damage! [Ship.GetCrewDamage|v0] pro [Ship.GetName]\n$TOOLTIP_DELIMITER$\n[Ship.GetCrewDamageBreakdown]"
+ EDIT_SHIP_TEMPLATE_NO_CHANGE: "U [Concept('concept_ship_template', 'šablony')] nebyly provedeny žádné změny"
+ SHIP_DISTANCE_FROM_PORT_MODIFIER_ENTRY_TITLE: "překračující maximální vzdálenost od přístavu"
+ SHIP_VETERANCY_MODIFIER_ENTRY_TITLE: "[SHIP_VETERANCY_LEVEL.GetName]"
+ SHIP_DESIGNER_COST_IN_WEEKS: "Odhadováno [ShipDesignerPopup.GetConstructionWeeksForLevel(ShipCostPoint.GetModificationLevel)|V] týdnů při plné [Concept('concept_ship_construction_capacity', 'kapacitě stavby lodí')] (@ship_construction! [ShipDesignerPopup.GetTemplate.GetConstructionProgressMax|V0])"
+ SHIP_DESIGNER_COST_POINT_TOOLTIP: "#header [concept_ship_complexity]#!\n[ShipCostPoint.GetModificationLevel|V] aktuálně\n@ship_construction! [ShipDesignerPopup.GetCostForLevel(ShipCostPoint.GetModificationLevel)|V0] [concept_ship_construction|l]\n$SHIP_DESIGNER_COST_IN_WEEKS$\n$TOOLTIP_DELIMITER$\n#title Díky:#!#indent_newline:3 \n[ShipDesignerPopup.GetCostDescForLevel(ShipCostPoint.GetModificationLevel)]#!"
+ SHIP_RETROFIT_COST_CHANGED_DESC: "$BREAKDOWN$"
+ SHIP_RETROFIT_COST_COMPLEXITY_DESC: "@ship_construction![Nbsp]$COST|V0$ z komplexity nových [Concept('concept_ship_modification', 'úprav lodí')] ($PERCENTAGE|%-=0$)"
+ SHIP_RETROFIT_COST_COMPLEXITY_INCREASE_DESC: "@ship_construction![Nbsp]$COST|V0$ z obecného nárůstu [Concept('concept_ship_complexity', 'komplexnosti lodí')] ($UNCHANGED_COST_MULTIPLIER|%=0-$)"
+ SHIP_RETROFIT_COST_COMPLEXITY_COMBINED: "@ship_construction![Nbsp]$COST|V0$ z [Concept('concept_ship_complexity', 'komplexnosti lodí')]#indent_newline:3 \n$FROM_MULTIPLIER$\n$FROM_COMPLEXITY$#!"
+ SHIP_RETROFIT_COST_TOP: "@ship_construction![Nbsp]$COST|V0$ z nových [Concept('concept_ship_modification', 'úprav lodí')] ($LEVEL|V$ úrovně x $COST_PER_LEVEL|V0$)"
  SHIP_RETROFIT_COST_MODIFICATION_ITEM: "@ship_construction![Nbsp]$COST|V0$ z [ShipModificationType.GetName] (úroveň $LEVEL|V$)"
  SHIP_CONSTRUCTION_COST_BASE_AND_MODIFICATION_DESC: "$SHIP_CONSTRUCTION_COST_ONLY_BASE_DESC$\n$SHIP_CONSTRUCTION_COST_ONLY_MODIFICATION_DESC$"
- SHIP_CONSTRUCTION_COST_ONLY_MODIFICATION_DESC: "@ship_construction![Nbsp]$MODIFICATION_COST|V0$ z [Concept('concept_ship_modification', '$concept_ship_modifications$')] ($LEVEL|V$ úrovně x $COST_PER_LEVEL|V0$)"
+ SHIP_CONSTRUCTION_COST_ONLY_MODIFICATION_DESC: "@ship_construction![Nbsp]$MODIFICATION_COST|V0$ z [Concept('concept_ship_modification', 'úprav lodí')] ($LEVEL|V$ úrovně x $COST_PER_LEVEL|V0$)"
  SHIP_CONSTRUCTION_COST_ONLY_BASE_DESC: "@ship_construction![Nbsp]$BASE|0V$ Základní cena"
- SHIP_CONSTRUCTION_COST_COMPLEXITY_INCREASE_DESC: "@ship_construction![Nbsp]$COST|V0$ z [concept_ship_complexity] ($PERCENTAGE|%-=0$)"
+ SHIP_CONSTRUCTION_COST_COMPLEXITY_INCREASE_DESC: "@ship_construction![Nbsp]$COST|V0$ z [Concept('concept_ship_complexity', 'komplexnosti lodí')] ($PERCENTAGE|%-=0$)"
  SHIP_TEMPLATE_GOODS_ENTRY: "[Goods.GetName] $VAL|v$"
- SHIP_TEMPLATE_GOODS_COST_ENTRY: "@money!$COST|D-$ z [Goods.GetName] ($VAL|v$)"
+ SHIP_TEMPLATE_GOODS_COST_ENTRY: "@money!$COST|D-$ díky [Goods.GetName] ($VAL|v$)"
