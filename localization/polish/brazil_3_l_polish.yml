@@ -1,8 +1,8 @@
 ﻿l_polish:
  je_brazilian_nation_building: "Integrace brazilského národa"
  je_brazilian_nation_building_reason: "Brazílie je kolonie bez mateřské země; stát bez národa. Vytvořit jednotnou identitu ze všech národů obývajících tuto rozlehlou zemi bude vyžadovat pečlivé úvahy, splnění herkulovských úkolů a pevnou ruku. Je skutečně možné vytvořit jednotnou Brazílii?"
- je_brazilian_nation_building_ragamuffin_war_south: "#bold Válka Farrapů#! skončila a #tooltippable_name #tooltip:[SCOPE.sCulture('sulista_culture').GetTooltipTag],DATA_CULTURE_NAME_TOOLTIP,CultureTooltip [SCOPE.sCulture('sulista_culture').GetCustom('CUL_ADJ_ee')|l]#!#! kulturní nepokoje v jejich domovinách klesly pod #bold 10%#!."
- je_brazilian_nation_building_ragamuffin_war_done: "#bold Válka Farrapů#! skončila a [Concept('concept_devastation', '$concept_devastation$')|l] ve všech státech s #tooltippable_name #tooltip:[SCOPE.sCulture('amazonic_culture').GetTooltipTag],DATA_CULTURE_NAME_TOOLTIP,CultureTooltip [SCOPE.sCulture('amazonic_culture').GetCustom('CUL_ADJ_yymi')|l]#!#! domovinami klesla pod #bold 5#!."
+ je_brazilian_nation_building_ragamuffin_war_south: "#bold $ragamuffin_war$#! skončila a #tooltippable_name #tooltip:[SCOPE.sCulture('sulista_culture').GetTooltipTag],DATA_CULTURE_NAME_TOOLTIP,CultureTooltip [SCOPE.sCulture('sulista_culture').GetCustom('CUL_ADJ_ee')|l]#!#! kulturní nepokoje v jejich domovinách klesly pod #bold 10%#!."
+ je_brazilian_nation_building_ragamuffin_war_done: "#bold $ragamuffin_war$#! skončila a [Concept('concept_devastation', '$concept_devastation$')|l] ve všech státech s #tooltippable_name #tooltip:[SCOPE.sCulture('amazonic_culture').GetTooltipTag],DATA_CULTURE_NAME_TOOLTIP,CultureTooltip [SCOPE.sCulture('amazonic_culture').GetCustom('CUL_ADJ_yymi')|l]#!#! domovinami klesla pod #bold 5#!."
  je_brazilian_nation_building_brazilian_national_hero_owned: "Byl vyhlášen regionální #bold [Concept('concept_brz_national_hero', '$concept_brz_national_hero$')|l]#! a může být využit v propagandě."
  concept_brz_national_hero: "Národní hrdina"
  concept_brz_national_hero_desc: "#bold Národní hrdina#! je generál, který vyhrál bitvu proti státu, jenž není brazilský, a byl oslavován jako hrdina v události '#bold Nový národní hrdina#!'."
@@ -69,7 +69,7 @@
  culture_south_america.1.t: "Základy národa"
  culture_south_america.1.d: "Národní obrození v naší zemi vedlo ke vzniku svébytné #tooltippable_name #tooltip:[SCOPE.sCulture('new_national_culture').GetTooltipTag],DATA_CULTURE_NAME_TOOLTIP,CultureTooltip [SCOPE.sCulture('new_national_culture').GetCustom('CUL_ADJ_ee')|l]#!#! identity mezi předními nacionalisty."
  culture_south_america.1.f: "„Náš posvátný výkřik patří jen nám! Slyšte zvuk zlomených řetězů a spatřete chrám zasvěcený právu, míru a jednotě! Jak modrá je obloha, jak slavná je vlast!“"
- culture_south_america.1.a: "Již ne [SCOPE.sCulture('old_south_american_culture').GetCustom('getPluralDemonym')]#!#! - nyní jsme [SCOPE.sCulture('new_national_culture').GetCustom('getPluralDemonym')]!"
+ culture_south_america.1.a: "Již ne [SCOPE.sCulture('old_south_american_culture').GetCustom('getPluralDemonym')] - nyní jsme [SCOPE.sCulture('new_national_culture').GetCustom('getPluralDemonym')]!"
  culture_south_america.1.b: "Jsme dědici vyššího ideálu!"
  culture_south_america.2.t: "Národní hodnoty"
  culture_south_america.2.d: "Nárůst počtu lidí v regionech sousedících s [SCOPE.sState('south_american_culture_state').GetName] vedl k tomu, že přijali svou novou #tooltippable_name #tooltip:[SCOPE.sCulture('new_national_culture').GetTooltipTag],DATA_CULTURE_NAME_TOOLTIP,CultureTooltip [SCOPE.sCulture('new_national_culture').GetCustom('CUL_ADJ_ou')|l]#!#! identitu."
@@ -86,4 +86,3 @@
  75_percent_of_upper_pops_assimilate_global_tt: "#v 75%#! #tooltippable_name #tooltip:[SCOPE.sCulture('old_south_american_culture').GetTooltipTag],DATA_CULTURE_NAME_TOOLTIP,CultureTooltip [SCOPE.sCulture('old_south_american_culture').GetCustom('CUL_ADJ_aa')|l]#!#! [Concept('concept_pop', '$concept_pops$')|l] z [Concept('concept_upper_strata','vyšších vrstvev')] v tomto [Concept('concept_state', 'státě')] se asimiluje do #tooltippable_name #tooltip:[SCOPE.sCulture('new_national_culture').GetTooltipTag],DATA_CULTURE_NAME_TOOLTIP,CultureTooltip [SCOPE.sCulture('new_national_culture').GetCustom('CUL_ADJ_ee')|l]#!#! [Concept('concept_culture', 'kultury')]"
  is_university_gov_admin_or_urban_center_tt: "Budova je [GetBuildingType('building_urban_center').GetName], [GetBuildingType('building_university').GetName] nebo [GetBuildingType('building_government_administration').GetName]"
  is_barracks_or_naval_administration_tt: "Budova je [GetBuildingType('building_barrack').GetName] nebo [GetBuildingType('building_naval_administration').GetName]"
- 
