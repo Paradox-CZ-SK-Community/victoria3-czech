@@ -80,9 +80,9 @@
  sepoy_mutiny_events.2.b: "Fort William nesmí padnout. Přesměrujte všechny síly do Kalkaty."
  sepoy_mutiny_events.2.c: "Vláda Společnosti přetrvá na jihu. Stáhněte se do Madrásu."
  sepoy_mutiny_events.2.e: "Bombaj odolává! Nasměrujte všechny zbývající síly na západ."
- india_retreat_to_bengal_tt: "Všechny [concept_subject] mimo [concept_georegion] [GetGeographicRegion('geographic_region_bengal_old').GetName] získají nezávislost a všechny [Concept('concept_state', '$concept_states$')], které tam držíme, budou mezi ně rozděleny."
- india_retreat_to_bombay_tt: "Všechny [concept_subject] mimo [concept_georegion] [GetGeographicRegion('geographic_region_bombay_old').GetName] získají nezávislost a všechny [Concept('concept_state', '$concept_states$')], které tam držíme, budou mezi ně rozděleny."
- india_retreat_to_madras_tt: "Všechny [concept_subject] mimo [concept_georegion] [GetGeographicRegion('geographic_region_madras_old').GetName] získají nezávislost a všechny [Concept('concept_state', '$concept_states$')], které tam držíme, budou mezi ně rozděleny."
+ india_retreat_to_bengal_tt: "Všechny [Concept('concept_subject','závislou zemi')] mimo [Concept('concept_georegion','geografického regionu')] [GetGeographicRegion('geographic_region_bengal_old').GetName] získají nezávislost a všechny [Concept('concept_state','státy')], které tam držíme, budou mezi ně rozděleny." # todo: CONCEPT CASE
+ india_retreat_to_bombay_tt: "Všechny [Concept('concept_subject','závislou zemi')] mimo [Concept('concept_georegion','geografického regionu')] [GetGeographicRegion('geographic_region_bombay_old').GetName] získají nezávislost a všechny [Concept('concept_state','státy')], které tam držíme, budou mezi ně rozděleny." # todo: CONCEPT CASE
+ india_retreat_to_madras_tt: "Všechny [Concept('concept_subject','závislou zemi')] mimo [Concept('concept_georegion','geografického regionu')] [GetGeographicRegion('geographic_region_madras_old').GetName] získají nezávislost a všechny [Concept('concept_state','státy')], které tam držíme, budou mezi ně rozděleny." # todo: CONCEPT CASE
  sepoy_mutiny_events.3.t: "Vzpoura!"
  sepoy_mutiny_events.3.d: "Bylo dosaženo bodu zlomu. Po celé Indii sipáhíové opouštějí své plukovní zástavy a chopí se zbraní proti Společnosti. Přidali se k nim nespokojení místní všech hodností a společně převzali moc ve městech po celém subkontinentu."
  sepoy_mutiny_events.3.f: "Když sipáhí z Puné vystřelí na svého kapitána, muslimský mladík mu podá další náboje. Sikhský sipáhí, krvácející ze svých ran, ten výjev sleduje. Co by řekli jejich předkové, kdyby je viděli bojovat bok po boku, místo proti sobě? A pak, když z něj vyprchává život, ho napadne naléhavější myšlenka: co o jejich dnešních činech řeknou jejich vnuci? Váhigurú, budou hrdí? Budou se stydět? Budou si vůbec pamatovat?"
@@ -92,8 +92,8 @@
  sepoy_mutiny_events.3.e: "Vandé Mátaram! Vyžeňte Lal Patan z našich břehů!"
  sepoy_mutiny_events.3.g: "Khalsa Ji Di Sarkar! Sikhská říše znovu povstane!"
  sepoy_mutiny_events.3.h: "Vpřed, očistěme Dakšin od firangijské metly. "
- sepoy_mutiny_events.3.tt_1: "Indičtí vzbouřenci vyhlásí [concept_war] zemi [ROOT.GetCountry.GetName]"
- sepoy_mutiny_events.3.tt_2: "Následující bude platit pro všechny [Concept('concept_presidency', '$concept_presidencies$')] na základě jejich [Concept('concept_presidency_stability','$concept_presidency_stability_short$')]:\n• Indičtí vzbouřenci převezmou kontrolu nad příslušnými [Concept('concept_state', '$concept_states$')]\n• Ve všech tvořících [Concept('concept_state', '$concept_states$')] budou přidáni radikálové a negativní [Concept('concept_modifier','$concept_modifiers$')]\n• Náhodná nehlavní $building_barrack$ bude zničena"
+ sepoy_mutiny_events.3.tt_1: "Indičtí vzbouřenci vyhlásí [Concept('concept_war','válka')] zemi [ROOT.GetCountry.GetAltAdjective('A')]" # todo: CONCEPT CASE # todo: COUNTRY CASE
+ sepoy_mutiny_events.3.tt_2: "Následující bude platit pro všechna [Concept('concept_presidency','prezidentství')] na základě jejich [Concept('concept_presidency_stability','stabilita')]:\n• Indičtí vzbouřenci převezmou kontrolu nad příslušnými [Concept('concept_state','státy')]\n• Ve všech tvořících [Concept('concept_state','států')] budou přidáni radikálové a negativní [Concept('concept_modifier','modifikátory')]\n• Náhodná nehlavní $building_barrack$ bude zničena" # todo: CONCEPT CASE
  sepoy_mutiny_events.4.t: "Indie v plamenech"
  sepoy_mutiny_events.4.d: "Sipáhíové ve službách země [SCOPE.sCountry('eic_scope').GetName] se vzbouřili proti svým starým pánům a uvrhli Britskou Indii do zmatku. Jestřábí členové [ROOT.GetCountry.GetAdjective] dvora hlasitě prosazují, abychom se přidali k věci vzbouřenců a společně vyhnali Brity z Indie."
  sepoy_mutiny_events.4.f: "Málokdo chápe tíhu koruny. I když se každý člen jeho dvora pře, princ ví, že čekají na jeho rozhodnutí. Mohou volat po válce nebo si přát žádat o mír, ale činí tak svobodně, protože vědí, že pokud to selže, vždy to mohou svalit na něj. A na koho to může svalit on? Kdo ho utěší, až bude ležet vzhůru a slyšet výkřiky vojáků, kteří zemřeli pro jeho slib svobody?"
@@ -116,7 +116,7 @@
  sepoy_mutiny_events.8.f: "Mladý subédár celou noc nespal. Znovu se pozvracel, zatímco mu panika svírala vnitřnosti. „Co když byly ty zvěsti pravdivé? Opravdu se zakousl do kravského tuku?“ Podíval se na chrám přes cestu. „Budou ho tam ještě vítat? A co doma? Co se stane s jeho ženou? S jejich synem? Nebo snad nebyl důvod k obavám – kapitán je ujistil, že je to jen chemikálie. Kapitán by jim nelhal!“"
  sepoy_mutiny_events.8.a: "Ujistěte vojáky, že to není živočišný tuk."
  sepoy_mutiny_events.8.b: "Navrhněte vojákům, aby náboje otevírali rukama, pokud jim vadí jejich chuť."
- sepoy_mutiny_timer_decrease_5_months: "Posune časovač [concept_journal_entry] $je_uneasy_raj$ o #variable 5#! měsíců."
+ sepoy_mutiny_timer_decrease_5_months: "Posune časovač [Concept('concept_journal_entry','záznam v deníku')] $je_uneasy_raj$ o #variable 5#! měsíců." # todo: CONCEPT CASE
  sepoy_mutiny_alternative_cartridge_handling: "Alternativní zacházení s náboji"
  sepoy_mutiny_alternative_cartridge_debacle: "Ústupek požadavkům sipáhíů"
  sepoy_mutiny_events.9.t: "Nevyhnutelný zmatek"
@@ -131,11 +131,11 @@
  sepoy_mutiny_events.10.f: "Posádka v Kánpuru.\nGenerálu [SCOPE.sCharacter('sepoy_general_scope').GetLastNameNoFormatting]\n\nNaléhavé.\n\nAsi 50 sipáhíů se zabarikádovalo ve skladu munice a střílí na všechny důstojníky, kteří se přiblíží. Potíže začaly o půlnoci, když se opili a napadli svého nadřízeného důstojníka. Zbývající pluky byly odzbrojeny a požádány, aby zůstaly v kasárnách. Loajální mezi nimi sdělili, že vzbouřenci hodlají osvobodit vojáky odsouzené k těžké práci.\n\nProsím o radu!"
  sepoy_mutiny_events.10.a: "Potrestejte všechny, kdo se zapojili."
  sepoy_mutiny_events.10.b: "Potrestejte všechny vojáky."
- sepoy_mutiny_progress_bar_bengal_name: "Bengálské prezidentství [Concept('concept_presidency_stability','$concept_presidency_stability_short$')]"
+ sepoy_mutiny_progress_bar_bengal_name: "Bengálské prezidentství [Concept('concept_presidency_stability','stabilita')]" # todo: CONCEPT CASE
  sepoy_mutiny_progress_bar_bengal_desc: "#bold Bengálské prezidentství#![JournalEntry.GetCustom('get_sepoy_mutiny_progress_bengal')]"
- sepoy_mutiny_progress_bar_bombay_name: "Bombajské prezidentství [Concept('concept_presidency_stability','$concept_presidency_stability_short$')]"
+ sepoy_mutiny_progress_bar_bombay_name: "Bombajské prezidentství [Concept('concept_presidency_stability','stabilita')]" # todo: CONCEPT CASE
  sepoy_mutiny_progress_bar_bombay_desc: "#bold Bombajské prezidentství#![JournalEntry.GetCustom('get_sepoy_mutiny_progress_bombay')]"
- sepoy_mutiny_progress_bar_madras_name: "Madráské prezidentství [Concept('concept_presidency_stability','$concept_presidency_stability_short$')]"
+ sepoy_mutiny_progress_bar_madras_name: "Madráské prezidentství [Concept('concept_presidency_stability','stabilita')]" # todo: CONCEPT CASE
  sepoy_mutiny_progress_bar_madras_desc: "#bold Madráské prezidentství#![JournalEntry.GetCustom('get_sepoy_mutiny_progress_madras')]"
  je_avert_sepoy_mutiny: "Nestabilní Rádž"
  je_avert_sepoy_mutiny_reason: "Odpor vůči vládě Společnosti na indickém subkontinentu sílí, a to dokonce i v řadách našich vlastních místních vojáků. Povstání lze ještě odvrátit."
@@ -143,57 +143,57 @@
  je_sepoy_mutiny: "Sipáhíjské povstání"
  je_sepoy_mutiny_reason: "Proti Společnosti vypukla vzpoura a povstání. Máme-li si udržet autoritu, musí být zcela rozdrceno."
  je_uneasy_raj_tt_1: "Zreformovali jsme svou koloniální správu"
- je_uneasy_raj_tt_2: "[Concept('concept_presidency_stability','$concept_presidency_stability_short$')] kterékoli [concept_presidency] byla #bold střední#! ([GetPlayer.MakeScope.ScriptValue('uneasy_raj_stability_medium_upper_bound')]) nebo nižší po dobu #variable 100#! měsíců"
- je_uneasy_raj_tt_3: "#bold Bengálské prezidentství#!\nSkládá se z [Concept('concept_georegion','$concept_georegions$')] [GetGeographicRegion('geographic_region_bengal').GetName], [GetGeographicRegion('geographic_region_central_india').GetName] a [GetGeographicRegion('geographic_region_punjab').GetName].\n\n#bold Bombajské prezidentství#!\nSkládá se z [concept_georegion] [GetGeographicRegion('geographic_region_bombay').GetName].\n\n#bold Madráské prezidentství#!\nSkládá se z [concept_georegion] [GetGeographicRegion('geographic_region_madras').GetName]."
- je_uneasy_raj_tt_4: "Závažnost povstání bude určena podle [Concept('concept_presidency_stability','$concept_presidency_stability_short$')] každé ze tří [Concept('concept_presidency', '$concept_presidencies$')], od menších nepokojů a dezercí až po úplný kolaps britské autority.\n\nAž povstání vypukne, [Concept('concept_princely_state','$concept_princely_states$')] s #bold vysokou#! [concept_liberty_desire] se přidají ke vzbouřencům, ty se #bold střední#! zůstanou neutrální a ty s #bold nízkou#! budou aktivně bojovat na naší straně."
+ je_uneasy_raj_tt_2: "[Concept('concept_presidency_stability','Stabilita prezidentství')] kterékoli [Concept('concept_presidency','prezidentství')] byla #bold střední#! ([GetPlayer.MakeScope.ScriptValue('uneasy_raj_stability_medium_upper_bound')]) nebo nižší po dobu #variable 100#! měsíců" # todo: CONCEPT CASE
+ je_uneasy_raj_tt_3: "#bold Bengálské prezidentství#!\nSkládá se z [Concept('concept_georegion','geografického regionu')] [GetGeographicRegion('geographic_region_bengal').GetName], [GetGeographicRegion('geographic_region_central_india').GetName] a [GetGeographicRegion('geographic_region_punjab').GetName].\n\n#bold Bombajské prezidentství#!\nSkládá se z [Concept('concept_georegion','geografického regionu')] [GetGeographicRegion('geographic_region_bombay').GetName].\n\n#bold Madráské prezidentství#!\nSkládá se z [Concept('concept_georegion','geografického regionu')] [GetGeographicRegion('geographic_region_madras').GetName]." # todo: CONCEPT CASE
+ je_uneasy_raj_tt_4: "Závažnost povstání bude určena podle [Concept('concept_presidency_stability','stability prezidentství')] každé ze tří [Concept('concept_presidency','prezidentství')], od menších nepokojů a dezercí až po úplný kolaps britské autority.\n\nAž povstání vypukne, [Concept('concept_princely_state','knížecí státy')] s #bold vysokou#! [Concept('concept_liberty_desire','touhou po svobodě')] se přidají ke vzbouřencům, ty se #bold střední#! zůstanou neutrální a ty s #bold nízkou#! budou aktivně bojovat na naší straně." # todo: CONCEPT CASE
  je_uneasy_raj: "Nestabilní Rádž"
- je_uneasy_raj_reason: "Ve třech [Concept('concept_presidency', '$concept_presidencies$')] země [SCOPE.sCountry('raj_scope').GetName] doutnají nepokoje.\n\nIndický odpor vůči vládě Společnosti v posledních letech sílí kvůli tvrdým režimům [Concept('concept_taxes','$concept_taxation$')], rostoucí neúctě k místním zvyklostem a územní expanzi na úkor domorodých knížat.\n\nJeště horší je, že rozkol lze nalézt dokonce i v hrdých řadách domorodých sipáhíjských pluků, které nelibě nesou jakékoli ohrožení svého tradičního postavení a výsad.\n\n#bold Sipáhíjské povstání#!\nPokud [Concept('concept_presidency_stability','$concept_presidency_stability_short$')] kterékoli $concept_presidency$ bude #bold střední#! ([GetPlayer.MakeScope.ScriptValue('uneasy_raj_stability_medium_upper_bound')]) nebo nižší po dobu #variable 100#! měsíců, Indie propukne v #tooltippable #tooltip:je_uneasy_raj_tt_4 #bold otevřené povstání#!#!#!. V současnosti to platí již #variable [SCOPE.sCountry('raj_scope').MakeScope.Var('sepoy_mutiny_timer_var').GetValue]#! měsíců."
- sepoy_mutiny_very_low_key: " [Concept('concept_presidency_stability','$concept_presidency_stability_short$')]: #bold kritická#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|0]/300)"
- sepoy_mutiny_low_key: " [Concept('concept_presidency_stability','$concept_presidency_stability_short$')]: #bold nízká#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|0]/300)"
- sepoy_mutiny_medium_key: " [Concept('concept_presidency_stability','$concept_presidency_stability_short$')]: #bold střední#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|0]/300)"
- sepoy_mutiny_high_key: " [Concept('concept_presidency_stability','$concept_presidency_stability_short$')]: #bold vysoká#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|0]/300)"
- bengal_progress_from_radicals_tt: "[Concept('concept_state', '$concept_states$')] v [concept_turmoil] v #bold Bengálském [concept_presidency]#!"
- bengal_progress_from_loyalists_tt: "[Concept('concept_state', '$concept_states$')] s [Concept('concept_loyalist','$concept_loyalists$')] v #bold Bengálském [concept_presidency]#!"
- bengal_progress_from_high_liberty_desire_tt: "[Concept('concept_subject', '$concept_subjects$')] s #bold vysokou#! [concept_liberty_desire] v #bold Bengálském [concept_presidency]#!"
- bengal_progress_from_low_liberty_desire_tt: "[Concept('concept_subject', '$concept_subjects$')] s #bold nízkou#! [concept_liberty_desire] v #bold Bengálském [concept_presidency]#!"
- bombay_progress_from_radicals_tt: "[Concept('concept_state', '$concept_states$')] v [concept_turmoil] v #bold Bombajském [concept_presidency]#!"
- bombay_progress_from_loyalists_tt: "[Concept('concept_state', '$concept_states$')] s [Concept('concept_loyalist','$concept_loyalists$')] v #bold Bombajském [concept_presidency]#!"
- bombay_progress_from_high_liberty_desire_tt: "[Concept('concept_subject', '$concept_subjects$')] s #bold vysokou#! [concept_liberty_desire] v #bold Bombajském [concept_presidency]#!"
- bombay_progress_from_low_liberty_desire_tt: "[Concept('concept_subject', '$concept_subjects$')] s #bold nízkou#! [concept_liberty_desire] v #bold Bombajském [concept_presidency]#!"
- madras_progress_from_radicals_tt: "[Concept('concept_state', '$concept_states$')] v [concept_turmoil] v #bold Madráském [concept_presidency]#!"
- madras_progress_from_loyalists_tt: "[Concept('concept_state', '$concept_states$')] s [Concept('concept_loyalist','$concept_loyalists$')] v #bold Madráském [concept_presidency]#!"
- madras_progress_from_high_liberty_desire_tt: "[Concept('concept_subject', '$concept_subjects$')] s #bold vysokou#! [concept_liberty_desire] v #bold Madráském [concept_presidency]#!"
- madras_progress_from_low_liberty_desire_tt: "[Concept('concept_subject', '$concept_subjects$')] s #bold nízkou#! [concept_liberty_desire] v #bold Madráském [concept_presidency]#!"
+ je_uneasy_raj_reason: "Ve třech [Concept('concept_presidency','prezidentství')] země [SCOPE.sCountry('raj_scope').GetName] doutnají nepokoje.\n\nIndický odpor vůči vládě Společnosti v posledních letech sílí kvůli tvrdým režimům [Concept('concept_taxes','zdanění')], rostoucí neúctě k místním zvyklostem a územní expanzi na úkor domorodých knížat.\n\nJeště horší je, že rozkol lze nalézt dokonce i v hrdých řadách domorodých sipáhíjských pluků, které nelibě nesou jakékoli ohrožení svého tradičního postavení a výsad.\n\n#bold Sipáhíjské povstání#!\nPokud [Concept('concept_presidency_stability','stabilita')] kterékoli $concept_presidency$ bude #bold střední#! ([GetPlayer.MakeScope.ScriptValue('uneasy_raj_stability_medium_upper_bound')]) nebo nižší po dobu #variable 100#! měsíců, Indie propukne v #tooltippable #tooltip:je_uneasy_raj_tt_4 #bold otevřené povstání#!#!#!. V současnosti to platí již #variable [SCOPE.sCountry('raj_scope').MakeScope.Var('sepoy_mutiny_timer_var').GetValue]#! měsíců." # todo: CONCEPT CASE
+ sepoy_mutiny_very_low_key: " [Concept('concept_presidency_stability','Stabilita prezidentství')]: #bold kritická#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|0]/300)" # todo: CONCEPT CASE
+ sepoy_mutiny_low_key: " [Concept('concept_presidency_stability','Stabilita prezidentství')]: #bold nízká#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|0]/300)" # todo: CONCEPT CASE
+ sepoy_mutiny_medium_key: " [Concept('concept_presidency_stability','Stabilita prezidentství')]: #bold střední#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|0]/300)" # todo: CONCEPT CASE
+ sepoy_mutiny_high_key: " [Concept('concept_presidency_stability','Stabilita prezidentství')]: #bold vysoká#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|0]/300)" # todo: CONCEPT CASE
+ bengal_progress_from_radicals_tt: "[Concept('concept_state','Stát')] v [Concept('concept_turmoil','nepokojích')] v #bold Bengálském [Concept('concept_presidency','prezidentství')]#!" # todo: CONCEPT CASE
+ bengal_progress_from_loyalists_tt: "[Concept('concept_state','Stát')] s [Concept('concept_loyalist','loajalistou')] v #bold Bengálském [Concept('concept_presidency','prezidentství')]#!" # todo: CONCEPT CASE
+ bengal_progress_from_high_liberty_desire_tt: "[Concept('concept_subject','Závislá země')] s #bold vysokou#! [Concept('concept_liberty_desire','touhou po svobodě')] v #bold Bengálském [Concept('concept_presidency','prezidentství')]#!" # todo: CONCEPT CASE
+ bengal_progress_from_low_liberty_desire_tt: "[Concept('concept_subject','Závislá země')] s #bold nízkou#! [Concept('concept_liberty_desire','touhou po svobodě')] v #bold Bengálském [Concept('concept_presidency','prezidentství')]#!" # todo: CONCEPT CASE
+ bombay_progress_from_radicals_tt: "[Concept('concept_state','Stát')] v [Concept('concept_turmoil','nepokojích')] v #bold Bombajském [Concept('concept_presidency','prezidentství')]#!" # todo: CONCEPT CASE
+ bombay_progress_from_loyalists_tt: "[Concept('concept_state','Stát')] s [Concept('concept_loyalist','loajalistou')] v #bold Bombajském [Concept('concept_presidency','prezidentství')]#!" # todo: CONCEPT CASE
+ bombay_progress_from_high_liberty_desire_tt: "[Concept('concept_subject','Závislá země')] s #bold vysokou#! [Concept('concept_liberty_desire','touhou po svobodě')] v #bold Bombajském [Concept('concept_presidency','prezidentství')]#!" # todo: CONCEPT CASE
+ bombay_progress_from_low_liberty_desire_tt: "[Concept('concept_subject','Závislá země')] s #bold nízkou#! [Concept('concept_liberty_desire','touhou po svobodě')] v #bold Bombajském [Concept('concept_presidency','prezidentství')]#!" # todo: CONCEPT CASE
+ madras_progress_from_radicals_tt: "[Concept('concept_state','Stát')] v [Concept('concept_turmoil','nepokojích')] v #bold Madráském [Concept('concept_presidency','prezidentství')]#!" # todo: CONCEPT CASE
+ madras_progress_from_loyalists_tt: "[Concept('concept_state','Stát')] s [Concept('concept_loyalist','loajalistou')] v #bold Madráském [Concept('concept_presidency','prezidentství')]#!" # todo: CONCEPT CASE
+ madras_progress_from_high_liberty_desire_tt: "[Concept('concept_subject','Závislá země')] s #bold vysokou#! [Concept('concept_liberty_desire','touhou po svobodě')] v #bold Madráském [Concept('concept_presidency','prezidentství')]#!" # todo: CONCEPT CASE
+ madras_progress_from_low_liberty_desire_tt: "[Concept('concept_subject','Závislá země')] s #bold nízkou#! [Concept('concept_liberty_desire','touhou po svobodě')] v #bold Madráském [Concept('concept_presidency','prezidentství')]#!" # todo: CONCEPT CASE
  sepoy_mutiny_events_6_result_tt: "odmítnutá zlepšení nábojů"
  sepoy_mutiny_events_8_result_tt: "šířící se zvěsti o nábojích"
  sepoy_mutiny_events_9_result_tt: "potrestaní znepokojení vojáci"
  sepoy_mutiny_events_10_result_tt: "bouřící se vojáci"
  raj_4_result_tt: "vyžadována služba v zámoří"
  raj_5_result_tt: "povoleny misionářské aktivity"
- presidencies_progress_from_indian_igs_in_government_tt: "domorodé #b indické#! [Concept('concept_interest_group', '$concept_interest_groups$')] [concept_in_government]"
- presidencies_progress_from_zamindars_tt: "[concept_approval] skupiny [GetInterestGroupVariant('ig_landowners',GetPlayer).GetNameWithCountryVariant]"
+ presidencies_progress_from_indian_igs_in_government_tt: "domorodé #b indické#! [Concept('concept_interest_group','zájmové skupiny')] [Concept('concept_in_government','ve vládě')]" # todo: CONCEPT CASE
+ presidencies_progress_from_zamindars_tt: "[Concept('concept_approval','Spokojenost')] skupiny [GetInterestGroupVariant('ig_landowners',GetPlayer).GetNameWithCountryVariant]" # todo: CONCEPT CASE
  presidencies_progress_from_events_tt: "události a další efekty"
- presidencies_very_high_military_wages_tt: "#bold velmi vysoké#! [Concept('concept_military_wage','$concept_military_wages$')]"
- presidencies_high_military_wages_tt: "#bold vysoké#! [Concept('concept_military_wage','$concept_military_wages$')]"
- presidencies_low_military_wages_tt: "#bold nízké#! [Concept('concept_military_wage','$concept_military_wages$')]"
- presidencies_very_low_military_wages_tt: "#bold velmi nízké#! [Concept('concept_military_wage','$concept_military_wages$')]"
- presidencies_very_high_taxation_tt: "#bold velmi vysoké#! [concept_taxes]"
- presidencies_high_taxation_tt: "#bold vysoké#! [concept_taxes]"
- presidencies_low_taxation_tt: "#bold nízké#! [concept_taxes]"
- presidencies_very_low_taxation_tt: "#bold velmi nízké#! [concept_taxes]"
- presidencies_utilitarian_leaders_tt: "vůdci s ideologií [GetIdeology('ideology_utilitarian_leader').GetName] v [concept_government]"
- presidencies_religious_laws_tt: "#bold nemá#! [concept_law] [GetLawType('law_total_separation').GetName]"
- presidencies_military_laws_tt: "#bold nemá#! [concept_law] [GetLawType('law_professional_army').GetName]"
- presidencies_je_indian_famines_tt: "má #bold $je_indian_famines$ [concept_journal_entry]#!"
- sepoy_mutiny_progress_from_events_tt: "[concept_presidency_stability] se ve všech #b třech [Concept('concept_presidency', '$concept_presidencies$')]#! bude po dobu #variable 1#! roku každý měsíc #bold snižovat#! o #variable 1#!"
- sepoy_mutiny_progress_from_events_2_tt: "[concept_presidency_stability] se ve všech #b třech [Concept('concept_presidency', '$concept_presidencies$')]#! bude po dobu #variable 1#! roku každý měsíc #bold snižovat#! o #variable 2#!"
- sepoy_mutiny_progress_from_events_bombay_1_year: "[concept_presidency_stability] se v #bold Bombajském [concept_presidency]#! bude po dobu #variable 1#! roku každý měsíc #bold snižovat#! o #variable 1#!"
- sepoy_mutiny_progress_from_events_madras_1_year: "[concept_presidency_stability] se v #bold Madráském [concept_presidency]#! bude po dobu #variable 1#! roku každý měsíc #bold snižovat#! o #variable 1#!"
- sepoy_mutiny_progress_from_events_bengal_1_year: "[concept_presidency_stability] se v #bold Bengálském [concept_presidency]#! bude po dobu #variable 1#! roku každý měsíc #bold snižovat#! o #variable 1#!"
- sepoy_mutiny_progress_from_events_bengal_2_year: "[concept_presidency_stability] se v #bold Bengálském [concept_presidency]#! bude po dobu #variable 1#! roku každý měsíc #bold snižovat#! o #variable 2#!"
- bombay_progress_bar_moderating_factor_tt: "základní posun směrem k #b vysoké#! [Concept('concept_presidency_stability','$concept_presidency_stability_short$')] ([GetPlayer.MakeScope.ScriptValue('indian_uprising_baseline_drift_target')])"
- bengal_progress_bar_moderating_factor_tt: "základní posun směrem k #b vysoké#! [Concept('concept_presidency_stability','$concept_presidency_stability_short$')] ([GetPlayer.MakeScope.ScriptValue('indian_uprising_baseline_drift_target')])"
- madras_progress_bar_moderating_factor_tt: "základní posun směrem k #b vysoké#! [Concept('concept_presidency_stability','$concept_presidency_stability_short$')] ([GetPlayer.MakeScope.ScriptValue('indian_uprising_baseline_drift_target')])"
+ presidencies_very_high_military_wages_tt: "#bold velmi vysoké#! [Concept('concept_military_wage','vojenské mzdy')]" # todo: CONCEPT CASE
+ presidencies_high_military_wages_tt: "#bold vysoké#! [Concept('concept_military_wage','vojenské mzdy')]" # todo: CONCEPT CASE
+ presidencies_low_military_wages_tt: "#bold nízké#! [Concept('concept_military_wage','vojenské mzdy')]" # todo: CONCEPT CASE
+ presidencies_very_low_military_wages_tt: "#bold velmi nízké#! [Concept('concept_military_wage','vojenské mzdy')]" # todo: CONCEPT CASE
+ presidencies_very_high_taxation_tt: "#bold velmi vysoké#! [Concept('concept_taxes','daně')]" # todo: CONCEPT CASE
+ presidencies_high_taxation_tt: "#bold vysoké#! [Concept('concept_taxes','daně')]" # todo: CONCEPT CASE
+ presidencies_low_taxation_tt: "#bold nízké#! [Concept('concept_taxes','daně')]" # todo: CONCEPT CASE
+ presidencies_very_low_taxation_tt: "#bold velmi nízké#! [Concept('concept_taxes','daně')]" # todo: CONCEPT CASE
+ presidencies_utilitarian_leaders_tt: "vůdci s ideologií [GetIdeology('ideology_utilitarian_leader').GetName] v [Concept('concept_government','vládě')]" # todo: CONCEPT CASE
+ presidencies_religious_laws_tt: "#bold nemá#! [Concept('concept_law','zákon')] [GetLawType('law_total_separation').GetName]" # todo: CONCEPT CASE
+ presidencies_military_laws_tt: "#bold nemá#! [Concept('concept_law','zákon')] [GetLawType('law_professional_army').GetName]" # todo: CONCEPT CASE
+ presidencies_je_indian_famines_tt: "má #bold $je_indian_famines$ [Concept('concept_journal_entry','záznamu v deníku')]#!" # todo: CONCEPT CASE
+ sepoy_mutiny_progress_from_events_tt: "[Concept('concept_presidency_stability','Stabilita prezidentství')] se ve všech #b třech [Concept('concept_presidency','prezidentství')]#! bude po dobu #variable 1#! roku každý měsíc #bold snižovat#! o #variable 1#!" # todo: CONCEPT CASE
+ sepoy_mutiny_progress_from_events_2_tt: "[Concept('concept_presidency_stability','Stabilita prezidentství')] se ve všech #b třech [Concept('concept_presidency','prezidentství')]#! bude po dobu #variable 1#! roku každý měsíc #bold snižovat#! o #variable 2#!" # todo: CONCEPT CASE
+ sepoy_mutiny_progress_from_events_bombay_1_year: "[Concept('concept_presidency_stability','Stabilita prezidentství')] se v #bold Bombajském [Concept('concept_presidency','prezidentství')]#! bude po dobu #variable 1#! roku každý měsíc #bold snižovat#! o #variable 1#!" # todo: CONCEPT CASE
+ sepoy_mutiny_progress_from_events_madras_1_year: "[Concept('concept_presidency_stability','Stabilita prezidentství')] se v #bold Madráském [Concept('concept_presidency','prezidentství')]#! bude po dobu #variable 1#! roku každý měsíc #bold snižovat#! o #variable 1#!" # todo: CONCEPT CASE
+ sepoy_mutiny_progress_from_events_bengal_1_year: "[Concept('concept_presidency_stability','Stabilita prezidentství')] se v #bold Bengálském [Concept('concept_presidency','prezidentství')]#! bude po dobu #variable 1#! roku každý měsíc #bold snižovat#! o #variable 1#!" # todo: CONCEPT CASE
+ sepoy_mutiny_progress_from_events_bengal_2_year: "[Concept('concept_presidency_stability','Stabilita prezidentství')] se v #bold Bengálském [Concept('concept_presidency','prezidentství')]#! bude po dobu #variable 1#! roku každý měsíc #bold snižovat#! o #variable 2#!" # todo: CONCEPT CASE
+ bombay_progress_bar_moderating_factor_tt: "základní posun směrem k #b vysoké#! [Concept('concept_presidency_stability','stabilitě prezidentství')] ([GetPlayer.MakeScope.ScriptValue('indian_uprising_baseline_drift_target')])" # todo: CONCEPT CASE
+ bengal_progress_bar_moderating_factor_tt: "základní posun směrem k #b vysoké#! [Concept('concept_presidency_stability','stabilitě prezidentství')] ([GetPlayer.MakeScope.ScriptValue('indian_uprising_baseline_drift_target')])" # todo: CONCEPT CASE
+ madras_progress_bar_moderating_factor_tt: "základní posun směrem k #b vysoké#! [Concept('concept_presidency_stability','stabilitě prezidentství')] ([GetPlayer.MakeScope.ScriptValue('indian_uprising_baseline_drift_target')])" # todo: CONCEPT CASE
  je_uneasy_raj_fail_header: "#title Spustí #b Indické povstání#!, pokud:#!\n"
  je_uneasy_raj_on_fail_header: "#title Pokud bude spuštěno #b Indické povstání#!:#!\n$EFFECT$"
  je_uneasy_raj_complete_header: "#title Upevní #b vládu Společnosti#!, pokud:#!\n"
@@ -213,12 +213,12 @@
  sepoy_mutiny_bengal_tt: "$BGL$ povstane proti naší vládě"
  sepoy_mutiny_sikh_tt: "$PAN$ povstane proti naší vládě"
  je_indian_famines: "[ROOT.GetCountry.GetCustom('get_indian_famine_name')]"
- je_indian_famines_reason: "#italic „Smrt a hlad na každé straně, a po dešti nikde ani stopy\nKosti těch, kdo hladem zemřeli, nepohřbené leží na pláni.“#!\n\nIndii postihla veliká a strašlivá pohroma. Kvůli sérii špatných sklizní, zhoršené všeobecnou chudobou a špatnou správou vlády, se podmínky zhoršily natolik, že v zemi [ROOT.GetCountry.GetName] byl oficiálně vyhlášen stav hladomoru.\n\nDokud bude #bold [ROOT.GetCountry.GetCustom('get_indian_famine_name')]#! přetrvávat, můžeme očekávat #tooltippable #tooltip:je_indian_famines_tt #bold vyšší míru agitace#!#!#! ze strany sil nepřátelských naší vládě.\n\n#bold Hladomor v Indii#!\nVelká část Indie je kvůli své vysoké závislosti na příznivých monzunových deštích pro zavlažování obzvláště zranitelná vůči suchům a dalším nepříznivým [Concept('concept_harvest_condition', '$concept_harvest_conditions$')]. Abychom tomu čelili, ministerstvo vnitra doporučilo, abychom #tooltippable #tooltip:je_indian_famines_tt_2 #bold zavlažili vnitrozemské suché oblasti#!#!#! a zmírnili tak dopady sucha."
- je_indian_famines_tt: "Hladomor bude mít po dobu svého trvání následující účinky, pokud budou použitelné:\n• [concept_journal_entry] #bold $je_uneasy_raj$#! bude negativně ovlivněn\n• [concept_journal_entry] #bold $je_india_home_rule$#! bude negativně ovlivněn"
+ je_indian_famines_reason: "#italic „Smrt a hlad na každé straně, a po dešti nikde ani stopy\nKosti těch, kdo hladem zemřeli, nepohřbené leží na pláni.“#!\n\nIndii postihla veliká a strašlivá pohroma. Kvůli sérii špatných sklizní, zhoršené všeobecnou chudobou a špatnou správou vlády, se podmínky zhoršily natolik, že v zemi [ROOT.GetCountry.GetAltAdjective('A')] byl oficiálně vyhlášen stav hladomoru.\n\nDokud bude #bold [ROOT.GetCountry.GetCustom('get_indian_famine_name')]#! přetrvávat, můžeme očekávat #tooltippable #tooltip:je_indian_famines_tt #bold vyšší míru agitace#!#!#! ze strany sil nepřátelských naší vládě.\n\n#bold Hladomor v Indii#!\nVelká část Indie je kvůli své vysoké závislosti na příznivých monzunových deštích pro zavlažování obzvláště zranitelná vůči suchům a dalším nepříznivým [Concept('concept_harvest_condition','podmínkami sklizně')]. Abychom tomu čelili, ministerstvo vnitra doporučilo, abychom #tooltippable #tooltip:je_indian_famines_tt_2 #bold zavlažili vnitrozemské suché oblasti#!#!#! a zmírnili tak dopady sucha." # todo: CONCEPT CASE # todo: COUNTRY CASE
+ je_indian_famines_tt: "Hladomor bude mít po dobu svého trvání následující účinky, pokud budou použitelné:\n• [Concept('concept_journal_entry','záznam v deníku')] #bold $je_uneasy_raj$#! bude negativně ovlivněn\n• [Concept('concept_journal_entry','záznam v deníku')] #bold $je_india_home_rule$#! bude negativně ovlivněn" # todo: CONCEPT CASE
  je_indian_famines_completion_tt: "Země [ROOT.GetCountry.GetName] již nebude trpět #tooltippable #tooltip:je_indian_famines_tt #bold vyšší mírou agitace#!#!#!"
  india_famine_radicals_modifier: "Rozhořčení kvůli nečinnosti vlády"
  indian_famine_cooldown_tt: "V poslední době jsme netrpěli velkým hladomorem."
- je_indian_famines_tt_2: "Vyšší úroveň [concept_infrastructure] ve zranitelných [Concept('concept_state','$concept_states$')] pomůže zmírnit účinky negativních [Concept('concept_harvest_condition', '$concept_harvest_conditions$')]."
+ je_indian_famines_tt_2: "Vyšší úroveň [Concept('concept_infrastructure','infrastruktura')] ve zranitelných [Concept('concept_state','státech')] pomůže zmírnit účinky negativních [Concept('concept_harvest_condition','podmínek sklizně')]." # todo: CONCEPT CASE
  default_famine_key: "Indické hladomory"
  bengal_famine_key: "Bengálský hladomor"
  madras_famine_key: "Hladomor v jižní Indii"
@@ -227,20 +227,20 @@
  central_india_famine_key: "Středoindický hladomor"
  great_indian_famine_key: "Velký indický hladomor"
  je_indian_famines_button_relief_kitchens: "Zřídit vývařovny"
- je_indian_famines_button_relief_kitchens_desc: "Ačkoli je to nákladné, logickým a možná nejúčinnějším způsobem boje proti hladomorům je prostě nasytit hladovějící.\n\nTakové výdaje si nás však nejspíš neoblíbí u dobrých mužů státní pokladny a účinnost jakékoli pomoci bude omezena kapacitou státu a místní infrastrukturou.\n\n#bold Železnice#!\nPřítomnost [GetBuildingType('building_railway').GetName] v [Concept('concept_state','$concept_states$')] postižených [concept_famine] zdvojnásobí účinky tohoto opatření."
+ je_indian_famines_button_relief_kitchens_desc: "Ačkoli je to nákladné, logickým a možná nejúčinnějším způsobem boje proti hladomorům je prostě nasytit hladovějící.\n\nTakové výdaje si nás však nejspíš neoblíbí u dobrých mužů státní pokladny a účinnost jakékoli pomoci bude omezena kapacitou státu a místní infrastrukturou.\n\n#bold Železnice#!\nPřítomnost [GetBuildingType('building_railway').GetName] v [Concept('concept_state','státě')] postižených [Concept('concept_famine','hladomoru')] zdvojnásobí účinky tohoto opatření." # todo: CONCEPT CASE
  je_indian_famines_button_relief_kitchens_tt: "V uplynulém #bold roce#! nebylo použito rozhodnutí #bold $je_indian_famines_button_relief_kitchens$#!"
  relief_kitchens_costs_modifier: "Organizace vývařoven"
  relief_kitchens_effect_modifier: "Základní vývařovny"
  improved_relief_kitchens_effect_modifier: "Vylepšené vývařovny"
- every_state_suffers_following_modifier: "Každý [concept_state], který trpí [concept_famine], získá následující modifikátor:\n(vylepšeno přítomností [GetBuildingType('building_railway').GetName]):"
+ every_state_suffers_following_modifier: "Každý [Concept('concept_state','stát')], který trpí [Concept('concept_famine','hladomor')], získá následující modifikátor:\n(vylepšeno přítomností [GetBuildingType('building_railway').GetName]):" # todo: CONCEPT CASE
  je_indian_famines_button_work_camps: "Zavést pracovní tábory"
- je_indian_famines_button_work_camps_desc: "Nevytvoříme třídu závislých žijících ze státní almužny. Zřídíme pracovní tábory, kde si chudáci bez prostředků budou moci vydělat životní mzdu, aby si mohli koupit vlastní jídlo.\n\n#bold Železnice#!\nPřítomnost [GetBuildingType('building_railway').GetName] v [Concept('concept_state','$concept_states$')] postižených [concept_famine] zdvojnásobí účinky tohoto opatření."
+ je_indian_famines_button_work_camps_desc: "Nevytvoříme třídu závislých žijících ze státní almužny. Zřídíme pracovní tábory, kde si chudáci bez prostředků budou moci vydělat životní mzdu, aby si mohli koupit vlastní jídlo.\n\n#bold Železnice#!\nPřítomnost [GetBuildingType('building_railway').GetName] v [Concept('concept_state','státě')] postižených [Concept('concept_famine','hladomoru')] zdvojnásobí účinky tohoto opatření." # todo: CONCEPT CASE
  work_camps_costs_modifier: "Organizace pracovních táborů"
  je_indian_famines_button_work_camps_tt: "V uplynulém #bold roce#! nebylo použito rozhodnutí #bold $je_indian_famines_button_work_camps$#!"
  work_camps_effect_modifier: "Základní pracovní tábory"
  improved_work_camps_effect_modifier: "Vylepšené pracovní tábory"
  je_indian_famines_button_epidemic_control: "Očkování a karanténní tábory"
- je_indian_famines_button_epidemic_control_desc: "Ačkoli hlad a podvýživa zůstávají hlavní příčinou, většina chudáků bez prostředků přijde o život kvůli nemocem, jako jsou mor a cholera.\n\nZavedením systémů hromadného očkování a přísné karantény můžeme zmírnit některé z nejhorších nárůstů úmrtnosti.\n\n#bold Železnice#!\nPřítomnost [GetBuildingType('building_railway').GetName] v [Concept('concept_state','$concept_states$')] postižených [concept_famine] zdvojnásobí účinky tohoto opatření."
+ je_indian_famines_button_epidemic_control_desc: "Ačkoli hlad a podvýživa zůstávají hlavní příčinou, většina chudáků bez prostředků přijde o život kvůli nemocem, jako jsou mor a cholera.\n\nZavedením systémů hromadného očkování a přísné karantény můžeme zmírnit některé z nejhorších nárůstů úmrtnosti.\n\n#bold Železnice#!\nPřítomnost [GetBuildingType('building_railway').GetName] v [Concept('concept_state','státě')] postižených [Concept('concept_famine','hladomoru')] zdvojnásobí účinky tohoto opatření." # todo: CONCEPT CASE
  je_indian_famines_button_epidemic_control_tt: "V uplynulém #bold roce#! nebylo použito rozhodnutí #bold $je_indian_famines_button_epidemic_control$#!"
  epidemic_control_costs_modifier: "Organizace kontroly epidemií"
  epidemic_control_effect_modifier: "Základní kontrola epidemií"
@@ -264,10 +264,10 @@
  indian_famines.2.b: "Pšenici může pěstovat každý na světě. My jsme sem přišli pro indigo a bavlnu."
  temporary_switch_to_food_crops: "Povolení potravinářských plodin"
  bowed_to_food_crop_demands: "Povoleno omezení tržních plodin"
- indian_famines.2.tt: "Následující se bude vztahovat na každý #bold indický#! [concept_state], který trpí [concept_famine]:"
- following_applied_to_every_owned_state: "Následující se bude vztahovat na každý vlastněný [concept_state]:"
+ indian_famines.2.tt: "Následující se bude vztahovat na každý #bold indický#! [Concept('concept_state','stát')], který trpí [Concept('concept_famine','hladomor')]:" # todo: CONCEPT CASE
+ following_applied_to_every_owned_state: "Následující se bude vztahovat na každý vlastněný [Concept('concept_state','stát')]:" # todo: CONCEPT CASE
  indian_famines.3.t: "Půst za ukončení hladu"
- indian_famines.3.d: "[SCOPE.sCharacter('hunger_strike_agitator_scope').GetFullName] zahájil hladovku až do smrti, aby přesvědčil zemi [SCOPE.GetRootScope.GetCountry.GetName], aby dovolila nahradit tržní plodiny potravinářskými."
+ indian_famines.3.d: "[SCOPE.sCharacter('hunger_strike_agitator_scope').GetFullName] zahájil hladovku až do smrti, aby přesvědčil zemi [SCOPE.GetRootScope.GetCountry.GetAltAdjective('A')], aby dovolila nahradit tržní plodiny potravinářskými." # todo: COUNTRY CASE
  indian_famines.3.f: "Když se generální guvernér procházel po celé délce kanceláře, jeho tajemník se nemohl ubránit úsměvu. Generál velel armádě tisíců mužů, a přesto jeho největší hrozbou byl hladovějící muž. Pokud ten muž zemře, bude to mít strašlivé následky. Pokud přežije, bude je stejným způsobem šikanovat znovu. Takovou váhu měly jen životy králů a královen. Jak dopustili, aby se obyčejný člověk stal tak důležitým?"
  indian_famines.3.a: "Možná mohou půst praktikovat i farmáři."
  indian_famines.3.b: "Přistupme na kompromis."
@@ -282,25 +282,25 @@
  tax_breaks_for_warehouses: "Daňové úlevy pro sklady"
  allowed_farmers_into_cities: "Příliv zbídačených farmářů"
  je_communal_divides: "Komunitní rozpory"
- je_communal_divides_reason: "#italic „Je možné, aby dva národy – muslimové a hinduisté – seděly na témže trůnu a zůstaly si rovny v moci?“#!\n\nDějiny #bold hinduisticko-muslimských#! vztahů v Indii jsou bohaté i složité, s obdobími spolupráce a soužití propletenými s obdobími nesnášenlivosti a krutosti. Po celá staletí však obě komunity nějak přežívaly pod záštitou svých feudálních pánů.\n\nS nástupem nových #bold národních identit#! a rostoucím šířením #bold etnonáboženského nacionalismu#! je však zřejmé, že staré způsoby musí ustoupit novým. Jen málokteré hlasy se ovšem shodnou na tom, co by takové nové způsoby měly obnášet.\n\nNárod v rozkolu nemůže doufat, že přetrvá. Tak či onak musí být dosaženo jednoty.\n\n#bold Teorie dvou národů#!\nTakzvaná teorie dvou národů, založená na přesvědčení, že ani muslimové, ani hinduisté nemohou vládnout, aniž by utlačovali ty druhé, v posledních letech získává na síle. Dokud je [concept_journal_entry] #bold $je_communal_divides$#! aktivní, přitažlivost #tooltippable #tooltip:religious_nationalist_groups_tt #bold nábožensky nacionalistických#!#!#! [Concept('concept_political_movement','$concept_political_movements$')] bude zvýšena."
+ je_communal_divides_reason: "#italic „Je možné, aby dva národy – muslimové a hinduisté – seděly na témže trůnu a zůstaly si rovny v moci?“#!\n\nDějiny #bold hinduisticko-muslimských#! vztahů v Indii jsou bohaté i složité, s obdobími spolupráce a soužití propletenými s obdobími nesnášenlivosti a krutosti. Po celá staletí však obě komunity nějak přežívaly pod záštitou svých feudálních pánů.\n\nS nástupem nových #bold národních identit#! a rostoucím šířením #bold etnonáboženského nacionalismu#! je však zřejmé, že staré způsoby musí ustoupit novým. Jen málokteré hlasy se ovšem shodnou na tom, co by takové nové způsoby měly obnášet.\n\nNárod v rozkolu nemůže doufat, že přetrvá. Tak či onak musí být dosaženo jednoty.\n\n#bold Teorie dvou národů#!\nTakzvaná teorie dvou národů, založená na přesvědčení, že ani muslimové, ani hinduisté nemohou vládnout, aniž by utlačovali ty druhé, v posledních letech získává na síle. Dokud je [Concept('concept_journal_entry','záznam v deníku')] #bold $je_communal_divides$#! aktivní, přitažlivost #tooltippable #tooltip:religious_nationalist_groups_tt #bold nábožensky nacionalistických#!#!#! [Concept('concept_political_movement','politického hnutí')] bude zvýšena." # todo: CONCEPT CASE
  je_communal_divides_goal_tt: "Indickým provinciím s muslimskou většinou byla udělena autonomie v rámci konfederativního systému."
- create_indusstan_bangla_tt: "#tooltippable #tooltip:indusstan_tt #bold Indusstan#!#!#! a #tooltippable #tooltip:bengal_tt #bold Bengálsko#!#!#! budou zřízeny jako autonomní [Concept('concept_subject','$concept_subjects$')] v rámci země [SCOPE.GetRootScope.GetCountry.GetName]"
- break_confederation_promise_tt: "#bold Konec konfederace#!\nPokud bychom porušili svůj slib a násilně znovu začlenili #bold $dyn_c_indusstan_federation$#! nebo #bold $dyn_c_bengal_federation$#!, můžeme očekávat #bold masivní nepokoje#! mezi našimi muslimskými [Concept('concept_pop','$concept_pops$')]."
- indusstan_tt: "Industán se bude skládat ze [Concept('concept_state','$concept_states$')] $STATE_PUNJAB$, $STATE_SINDH$, $STATE_KASHMIR$, $STATE_PASHTUNISTAN$, $STATE_BALUCHISTAN$ a $STATE_QUETTA$."
- bengal_tt: "Bengálsko se bude skládat ze [concept_state] $STATE_EAST_BENGAL$."
+ create_indusstan_bangla_tt: "#tooltippable #tooltip:indusstan_tt #bold Indusstan#!#!#! a #tooltippable #tooltip:bengal_tt #bold Bengálsko#!#!#! budou zřízeny jako autonomní [Concept('concept_subject','závislé země')] v rámci země [SCOPE.GetRootScope.GetCountry.GetName]" # todo: CONCEPT CASE
+ break_confederation_promise_tt: "#bold Konec konfederace#!\nPokud bychom porušili svůj slib a násilně znovu začlenili #bold $dyn_c_indusstan_federation$#! nebo #bold $dyn_c_bengal_federation$#!, můžeme očekávat #bold masivní nepokoje#! mezi našimi muslimskými [Concept('concept_pop','populacemi')]." # todo: CONCEPT CASE
+ indusstan_tt: "Industán se bude skládat ze [Concept('concept_state','státu')] $STATE_PUNJAB$, $STATE_SINDH$, $STATE_KASHMIR$, $STATE_PASHTUNISTAN$, $STATE_BALUCHISTAN$ a $STATE_QUETTA$." # todo: CONCEPT CASE
+ bengal_tt: "Bengálsko se bude skládat ze [Concept('concept_state','státu')] $STATE_EAST_BENGAL$." # todo: CONCEPT CASE
  confederacy_of_india: "Budeme známí jako #bold $dyn_c_confederacy_of_india$#!"
  modifier_hightened_intercommunal_tension: "Zvýšené mezikomunitní napětí"
- religious_nationalist_groups_tt: "#bold $movement_muslim_nationalist$#! a #bold $movement_hindu_nationalist$#! získají významné bonusy k přitažlivosti, dokud bude [concept_journal_entry] #bold $je_communal_divides$#! aktivní."
+ religious_nationalist_groups_tt: "#bold $movement_muslim_nationalist$#! a #bold $movement_hindu_nationalist$#! získají významné bonusy k přitažlivosti, dokud bude [Concept('concept_journal_entry','záznam v deníku')] #bold $je_communal_divides$#! aktivní." # todo: CONCEPT CASE
  granted_home_rule_tt: "Byla nám udělena #bold samospráva#!"
- je_communal_divides_fail_tt: "Země [SCOPE.GetRootScope.GetCountry.GetName] ani její [Concept('concept_subject','$concept_subjects$')] nemají žádné [Concept('concept_state','$concept_states$')] v [Concept('concept_state_region','$concept_state_regions$')] [SCOPE.sStateRegion('east_bengal_scope').GetName], [SCOPE.sStateRegion('punjab_scope').GetName], [SCOPE.sStateRegion('sindh_scope').GetName] a [SCOPE.sStateRegion('kashmir_scope').GetName]."
- hindu_nationalist_movement_below_25_tt: "[concept_activism] #v $movement_hindu_nationalist$#! je nižší než #b 25 %#!"
- muslim_nationalist_movement_below_25_tt: "[concept_activism] #v $movement_muslim_nationalist$#! je nižší než #b 25 %#!"
- hindu_nationalist_movement_above_50_tt: "[concept_activism] #v $movement_hindu_nationalist$#! je vyšší nebo rovna #b 50 %#!"
- muslim_nationalist_movement_above_50_tt: "[concept_activism] #v $movement_muslim_nationalist$#! je vyšší nebo rovna #b 50 %#!"
- hindu_nationalist_support_below_5_tt: "[Concept('concept_political_movement_support', '$concept_political_movement_support_short$')] identifikujících se [concept_pop] pro #v $movement_hindu_nationalist$#! je nižší než #b 5 %#!"
- muslim_nationalist_support_below_5_tt: "[Concept('concept_political_movement_support', '$concept_political_movement_support_short$')] identifikujících se [concept_pop] pro #v $movement_muslim_nationalist$#! je nižší než #b 5 %#!"
- hindu_nationalist_support_above_5_tt: "[Concept('concept_political_movement_support', '$concept_political_movement_support_short$')] identifikujících se [concept_pop] pro #v $movement_hindu_nationalist$#! je vyšší nebo rovna #b 5 %#!"
- muslim_nationalist_support_above_5_tt: "[Concept('concept_political_movement_support', '$concept_political_movement_support_short$')] identifikujících se [concept_pop] pro #v $movement_muslim_nationalist$#! je vyšší nebo rovna #b 5 %#!"
+ je_communal_divides_fail_tt: "Země [SCOPE.GetRootScope.GetCountry.GetName] ani její [Concept('concept_subject','závislé země')] nemají žádné [Concept('concept_state','státy')] v [Concept('concept_state_region','státní oblasti')] [SCOPE.sStateRegion('east_bengal_scope').GetName], [SCOPE.sStateRegion('punjab_scope').GetName], [SCOPE.sStateRegion('sindh_scope').GetName] a [SCOPE.sStateRegion('kashmir_scope').GetName]." # todo: CONCEPT CASE
+ hindu_nationalist_movement_below_25_tt: "[Concept('concept_activism','Aktivismus hnutí')] #v $movement_hindu_nationalist$#! je nižší než #b 25 %#!" # todo: CONCEPT CASE
+ muslim_nationalist_movement_below_25_tt: "[Concept('concept_activism','Aktivismus hnutí')] #v $movement_muslim_nationalist$#! je nižší než #b 25 %#!" # todo: CONCEPT CASE
+ hindu_nationalist_movement_above_50_tt: "[Concept('concept_activism','Aktivismus hnutí')] #v $movement_hindu_nationalist$#! je vyšší nebo rovna #b 50 %#!" # todo: CONCEPT CASE
+ muslim_nationalist_movement_above_50_tt: "[Concept('concept_activism','Aktivismus hnutí')] #v $movement_muslim_nationalist$#! je vyšší nebo rovna #b 50 %#!" # todo: CONCEPT CASE
+ hindu_nationalist_support_below_5_tt: "[Concept('concept_political_movement_support','Podpora politického hnutí')] identifikujících se [Concept('concept_pop','populacemi')] pro #v $movement_hindu_nationalist$#! je nižší než #b 5 %#!" # todo: CONCEPT CASE
+ muslim_nationalist_support_below_5_tt: "[Concept('concept_political_movement_support','Podpora politického hnutí')] identifikujících se [Concept('concept_pop','populacemi')] pro #v $movement_muslim_nationalist$#! je nižší než #b 5 %#!" # todo: CONCEPT CASE
+ hindu_nationalist_support_above_5_tt: "[Concept('concept_political_movement_support','Podpora politického hnutí')] identifikujících se [Concept('concept_pop','populacemi')] pro #v $movement_hindu_nationalist$#! je vyšší nebo rovna #b 5 %#!" # todo: CONCEPT CASE
+ muslim_nationalist_support_above_5_tt: "[Concept('concept_political_movement_support','Podpora politického hnutí')] identifikujících se [Concept('concept_pop','populacemi')] pro #v $movement_muslim_nationalist$#! je vyšší nebo rovna #b 5 %#!" # todo: CONCEPT CASE
  je_communal_divides_federal_solution: "Zřídit Indickou konfederaci"
  je_communal_divides_federal_solution_desc: "Konflikt mezi hinduisty a muslimy zakořenil příliš hluboko na polovičatá opatření. Zřízení dvou výslovně muslimských autonomních států v Bengálsku a na západě vytvoří oblasti, kde se muslimové nemusí obávat pronásledování, a zároveň bude představovat minimální riziko pro naši územní celistvost."
  make_delhi_capital: "Založit Nové Dillí"
@@ -363,13 +363,13 @@
  achievement_on_the_edge_tt: "Byl dokončen záznam v deníku $je_sikh_sovereignty$"
  achievement_azadi_tt: "Byl dokončen záznam v deníku $je_mughal_hindustan$"
  achievement_azadi_2_tt: "Není v mocenském bloku vedeném zemí $GBR$"
- achievement_azadi_bengal_tt: "Každý stát v [concept_georegion] [GetGeographicRegion('geographic_region_bengal_old').GetName] je vlastněn touto zemí nebo jejími závislými zeměmi"
- achievement_azadi_bombay_tt: "Každý stát v [concept_georegion] [GetGeographicRegion('geographic_region_bombay_old').GetName] je vlastněn touto zemí nebo jejími závislými zeměmi"
- achievement_azadi_madras_tt: "Každý stát v [concept_georegion] [GetGeographicRegion('geographic_region_south_india').GetName] je vlastněn touto zemí nebo jejími závislými zeměmi"
- achievement_azadi_central_india_tt: "Každý stát v [concept_georegion] [GetGeographicRegion('geographic_region_north_india').GetName] je vlastněn touto zemí nebo jejími závislými zeměmi"
- achievement_azadi_punjab_tt: "Každý stát v [concept_georegion] [GetGeographicRegion('geographic_region_punjab_old').GetName] je vlastněn touto zemí nebo jejími závislými zeměmi"
- achievement_prolecorp_tt: "Má libovolnou [concept_company] s [concept_prosperity] vyšší než #v 100#!"
- achievement_the_man_who_would_be_king_1_tt: "[concept_ruler] je $Josiah$ $Harlan$"
+ achievement_azadi_bengal_tt: "Každý stát v [Concept('concept_georegion','geografickém regionu')] [GetGeographicRegion('geographic_region_bengal_old').GetName] je vlastněn touto zemí nebo jejími závislými zeměmi" # todo: CONCEPT CASE
+ achievement_azadi_bombay_tt: "Každý stát v [Concept('concept_georegion','geografickém regionu')] [GetGeographicRegion('geographic_region_bombay_old').GetName] je vlastněn touto zemí nebo jejími závislými zeměmi" # todo: CONCEPT CASE
+ achievement_azadi_madras_tt: "Každý stát v [Concept('concept_georegion','geografickém regionu')] [GetGeographicRegion('geographic_region_south_india').GetName] je vlastněn touto zemí nebo jejími závislými zeměmi" # todo: CONCEPT CASE
+ achievement_azadi_central_india_tt: "Každý stát v [Concept('concept_georegion','geografickém regionu')] [GetGeographicRegion('geographic_region_north_india').GetName] je vlastněn touto zemí nebo jejími závislými zeměmi" # todo: CONCEPT CASE
+ achievement_azadi_punjab_tt: "Každý stát v [Concept('concept_georegion','geografickém regionu')] [GetGeographicRegion('geographic_region_punjab_old').GetName] je vlastněn touto zemí nebo jejími závislými zeměmi" # todo: CONCEPT CASE
+ achievement_prolecorp_tt: "Má libovolnou [Concept('concept_company','společnosti')] s [Concept('concept_prosperity','prosperitou')] vyšší než #v 100#!" # todo: CONCEPT CASE
+ achievement_the_man_who_would_be_king_1_tt: "[Concept('concept_ruler','Vládce')] je $Josiah$ $Harlan$" # todo: CONCEPT CASE
  achievement_the_man_who_would_be_king_2_tt: "Vytvořil #v $AFG$#! z #v $KAF$#!"
  india_events.18.t: "Správa Beraru"
  india_events.18.d: "S odvoláním na vysokou míru banditismu a nepokojů v Beraru požádala země [SCOPE.sCountry('bic_scope').GetName], aby mohla naším jménem spravovat stát [SCOPE.sState('berar_scope').GetName] výměnou za značnou každoroční platbu."
@@ -381,5 +381,5 @@
  pressure_to_sell_berar_province: "Pronajmout hajdarábádský Berar"
  pressure_to_sell_berar_province_desc: "Hajdarábád dlouho zanedbával řádné prosazování své vlády v Beraru, takže provincie trpí banditismem a obecnou bezprávností. Ministerstvo vnitra doporučuje, abychom v Beraru převzali přímou kontrolu výměnou za každoroční platbu jeho současnému vládci."
  indian_uprising_triggered_tt: "Bude spuštěno #b Indické povstání#!"
- accepts_south_asian_culture_tt: "Libovolná [concept_culture] skupiny $heritage_group_south_asian$ má průměrné [concept_acceptance] #v 60#! nebo vyšší."
+ accepts_south_asian_culture_tt: "Libovolná [Concept('concept_culture','kultura')] skupiny $heritage_group_south_asian$ má průměrné [Concept('concept_acceptance','přijetí')] #v 60#! nebo vyšší." # todo: CONCEPT CASE
  hokkaido_colonization_modifier: "Systém smluvního rybolovu na Ezu"

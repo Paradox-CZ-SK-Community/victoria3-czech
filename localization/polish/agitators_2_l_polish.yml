@@ -39,7 +39,7 @@
  french_pretenders.2.b: "Naším cílem je náboženské znovudobytí země [ROOT.GetCountry.GetNameNoFormatting]."
  french_pretenders.2.c: "Pouze [SCOPE.gsInterestGroup('moral_order_government_ig_scope').GetLeader.GetIdeology.GetNameNoFormatting]ové nás mohou ochránit před radikalismem."
  french_pretenders.2.e: "Společně budeme... ehm, pane, jsme to opravdu my?"
- french_pretenders.2.tt: "[SCOPE.gsInterestGroup('moral_order_opposition_ig_scope').GetLeader.GetFullName] má [SCOPE.gsInterestGroup('moral_order_opposition_ig_scope').GetLeader.GetIdeology.GetName] [concept_ideology]"
+ french_pretenders.2.tt: "[SCOPE.gsInterestGroup('moral_order_opposition_ig_scope').GetLeader.GetFullName] má [SCOPE.gsInterestGroup('moral_order_opposition_ig_scope').GetLeader.GetIdeology.GetName] [Concept('concept_ideology','ideologii')]" # todo: CONCEPT CASE
  empowered_by_monarchists: "Dynastické přízně"
  controversial_compromises: "Kontroverzní kompromisy"
  french_pretenders.3.t: "Země v rozkolu"
@@ -51,7 +51,7 @@
  french_pretenders.3.h: "Zbohatlí bandité? Zapomněli ti hlavy děravé na Červencovou revoluci?"
  french_pretenders.3.e: "Má snad potomek Korsického obra větší legitimitu?"
  french_pretenders.3.g: "Urážka majestátu, říkáte? Tak [SCOPE.gsInterestGroup('oppoisition_french_monarchist_ig_scope').GetLeader.GetHerHim] umlčte!"
- french_pretenders.3.tt: "[SCOPE.gsInterestGroup('oppoisition_french_monarchist_ig_scope').GetLeader.GetFullName] má [SCOPE.gsInterestGroup('oppoisition_french_monarchist_ig_scope').GetLeader.GetIdeology.GetName] [concept_ideology]"
+ french_pretenders.3.tt: "[SCOPE.gsInterestGroup('oppoisition_french_monarchist_ig_scope').GetLeader.GetFullName] má [SCOPE.gsInterestGroup('oppoisition_french_monarchist_ig_scope').GetLeader.GetIdeology.GetName] [Concept('concept_ideology','ideologii')]" # todo: CONCEPT CASE
  accused_of_lese_majeste: "Oběť právního přehmatu"
  shaky_dynastic_foundation: "Křehké dynastické základy"
  victim_of_legal_overreach: "Vůdce obviněný z urážky majestátu"
@@ -72,8 +72,8 @@
  je_conquest_of_algeria_tt: "Události o rozsáhlých nájezdech se již nebudou objevovat."
  je_the_algerian_departements: "Alžírské departementy"
  je_the_algerian_departements_reason: "Proměna Alžírska z koloniálního pohraničí ovládaného šavlí v nedílnou součást metropolitní země [ROOT.GetCountry.GetNameNoFormatting] započala.\n\nJak však naši správci zjistili již během dobývání, loajalita domorodého obyvatelstva je draze vykoupená a nestálá. Abychom mohli plně využít bohaté zdroje Alžírska, musíme buď přivést loajálnější populaci, nebo přijmout drastická opatření k zajištění věrnosti té stávající."
- je_the_algerian_departements_tt_1: "Státní regiony [SCOPE.sState('je_algiers_state_scope').GetStateRegion.GetName], [SCOPE.sState('je_oran_state_scope').GetStateRegion.GetName] a [SCOPE.sState('je_constantine_state_scope').GetStateRegion.GetName] musí být plně vlastněny a [Concept('concept_incorporated_state','$concept_incorporated$')|l], s hodnotou [concept_turmoil|l] pod #bold 10%#!."
- je_the_algerian_departements_tt_3: "Podíl [SCOPE.sCulture('french_culture_scope').GetName] [Concept('concept_pop','$concept_population$')|l] v regionech [SCOPE.sState('je_algiers_state_scope').GetStateRegion.GetName], [SCOPE.sState('je_oran_state_scope').GetStateRegion.GetName] a [SCOPE.sState('je_constantine_state_scope').GetStateRegion.GetName] je alespoň #bold 20%#!."
+ je_the_algerian_departements_tt_1: "Státní regiony [SCOPE.sState('je_algiers_state_scope').GetStateRegion.GetName], [SCOPE.sState('je_oran_state_scope').GetStateRegion.GetName] a [SCOPE.sState('je_constantine_state_scope').GetStateRegion.GetName] musí být plně vlastněny a [Concept('concept_incorporated_state','začlenen')|l], s hodnotou [Concept('concept_turmoil','nepokoji')|l] pod #bold 10%#!." # todo: CONCEPT CASE
+ je_the_algerian_departements_tt_3: "Podíl [SCOPE.sCulture('french_culture_scope').GetName] [Concept('concept_pop','populace')|l] v regionech [SCOPE.sState('je_algiers_state_scope').GetStateRegion.GetName], [SCOPE.sState('je_oran_state_scope').GetStateRegion.GetName] a [SCOPE.sState('je_constantine_state_scope').GetStateRegion.GetName] je alespoň #bold 20%#!." # todo: CONCEPT CASE
  je_reconquest_of_algeria: "Alžírská válka odporu"
  je_reconquest_of_algeria_reason: "V roce 1830 padl #bold Alžírský bejlik#! do rukou prokletých Francouzů. Jejich vítězství však nebylo úplné a vnitrozemí Alžírska zůstává nepokořené. S pomocí Boží zatlačíme vetřelce zpět do moře a sjednotíme tři #bold bejliky#! pod naší dobrotivou vládou."
  je_reconquest_of_algeria_tt: "Vytvořili jsme Alžírsko."
@@ -101,7 +101,7 @@
  algeria_events.4.f: "Ó, lítost nad Alžírem a jeho poklady,\njejich stopy již neexistují!\nJaké nepravosti spáchali ti prokletí!\nAl-Qaisariya byla přejmenována na Plaza\na pomyslete, že se tam prodávaly a vázaly svaté knihy.\nProhledali hroby našich otců\na jejich kosti rozházeli,\naby přes ně mohly jezdit jejich vozy."
  algeria_events.4.a: "Civilizace dorazila na barbarské pobřeží."
  algeria_events.4.b: "Alžírsko bude stejně francouzské jako Champagne."
- algeria_events.4.c: "Co [ROOT.GetCountry.GetNameNoFormatting] požaduje, to Alžírsko poskytne."
+ algeria_events.4.c: "Co [ROOT.GetCountry.GetAltAdjectiveNoFormatting('A')] požaduje, to Alžírsko poskytne." # todo: COUNTRY CASE
  evolues_focus: "Podpora Évolués"
  colons_focus: "Podpora kolonistů"
  algerian_industry_focus: "Podpora využívání zdrojů"
@@ -155,7 +155,7 @@
  je_dreyfus_affair_reason: "Od vydání „J'accuse...!“ narůstá rozkol, který hrozí roztrhnout společenskou a politickou strukturu Francie. To, co začalo jako debata o vině či nevině jednoho muže, nabylo mnohem širších rozměrů:\n\nMonarchisté proti republikánům, liberálové proti konzervativcům a zbožní katolíci proti sekularistům. Všichni se snaží jednou provždy vyřešit #bold otázku#!: Je naše země Francií svatého Ludvíka, nebo Francií Voltaira?"
  je_dreyfus_status: "Aktuální síla případu je [SCOPE.GetRootScope.GetCountry.GetCustom('dynamic_dreyfus_case_strength')]"
  je_dreyfus_affair_tt.1: "Osud Dreyfuse bude záviset na důkladnosti případu budovaného na jeho podporu.\n\n- Síla případu #bold 10#! nebo více povede k plnému očištění.\n- Síla případu mezi #bold 5#! a #bold 9#! povede k mírnějšímu trestu.\n- Síla případu #bold 4#! nebo méně povede k opětovnému uvěznění.\n"
- je_dreyfus_affair_tt.3: "Podpora pro nové projednání případu v zemi [SCOPE.GetRootScope.GetCountry.GetNameNoFlag] postupně roste a pravděpodobně k němu dojde během #bold 5 let#!, pokud jej neovlivní jiné události.\n"
+ je_dreyfus_affair_tt.3: "Podpora pro nové projednání případu v zemi [SCOPE.GetRootScope.GetCountry.GetAltAdjectiveNoFlag('A')] postupně roste a pravděpodobně k němu dojde během #bold 5 let#!, pokud jej neovlivní jiné události.\n" # todo: COUNTRY CASE
  je_dreyfus_affair_tt.4: "Výsledek nového procesu bude mít širší dopady na francouzskou společnost."
  je_dreyfus_affair_goal: "Cíl je nám jasný."
  custom_dreyfus_case_weak: "#bold Slabý#!.\nTo pravděpodobně povede k #bold opětovnému uvěznění#!"
@@ -241,8 +241,8 @@
  dreyfus.8.e: "Neuspokojivý konec neuspokojivé aféry."
  dreyfus.8.g: "Zdá se, že pochod „pravdy“ se náhle zastavil."
  dreyfus.8.h: "Triumf sil tradice."
- dreyfus.8.tt_1: "Všechny [Concept('concept_interest_group', '$concept_interest_groups$')] budou mít vyšší šanci generovat konzervativní a reakční [Concept('concept_leader', '$concept_leaders$')]."
- dreyfus.8.tt_2: "Všechny [Concept('concept_interest_group', '$concept_interest_groups$')] budou mít vyšší šanci generovat liberální a radikální [Concept('concept_leader', '$concept_leaders$')]."
+ dreyfus.8.tt_1: "Všechny [Concept('concept_interest_group','zájmovou skupinu')] budou mít vyšší šanci generovat konzervativní a reakční [Concept('concept_leader','vůdci')]." # todo: CONCEPT CASE
+ dreyfus.8.tt_2: "Všechny [Concept('concept_interest_group','zájmovou skupinu')] budou mít vyšší šanci generovat liberální a radikální [Concept('concept_leader','vůdci')]." # todo: CONCEPT CASE
  dreyfus_army_triumphant: "Triumf armády"
  dreyfus_army_sanization: "Očista vrchního velení"
  dreyfus_pen_triumphant: "Triumf pera"
@@ -252,7 +252,7 @@
  dreyfus_legacy_modifier: "Nevyřešená aféra"
  dreyfus_legacy_disc_modifier: "Nevyřešená aféra"
  dreyfus.9.t: "[SCOPE.sCharacter('ferdinand_esterhazy_scope').GetLastNameNoFormatting] přiznává vinu v rozhovoru"
- dreyfus.9.d: "V rozhovoru s místním novinářem [SCOPE.sCharacter('ferdinand_esterhazy_scope').GetFullName], nyní žijící v exilu v [SCOPE.sCountry('ferdinand_esterhazy_country_scope').GetNameNoFlag], a mnohými považovaný za skutečného viníka Dreyfusovy aféry, zjevně přiznal svou vinu a uvedl, že byl skutečným autorem bordereau."
+ dreyfus.9.d: "V rozhovoru s místním novinářem [SCOPE.sCharacter('ferdinand_esterhazy_scope').GetFullName], nyní žijící v exilu v [SCOPE.sCountry('ferdinand_esterhazy_country_scope').GetAltAdjectiveNoFlag('L')], a mnohými považovaný za skutečného viníka Dreyfusovy aféry, zjevně přiznal svou vinu a uvedl, že byl skutečným autorem bordereau." # todo: COUNTRY CASE
  dreyfus.9.f: "„Napsal jsem bordereau na žádost plukovníka Sandherra, který dnes zemřel. Je nešťastné, že plukovník Sandherr zemřel, protože znal pravdu. Přesto mohu dokázat, že jsem lístek napsal já, navzdory zmizení tohoto svědka.\n\nBordereau mělo sloužit jako hmotný důkaz viny [SCOPE.sCharacter('alfred_dreyfus_scope').GetLastNameNoFormatting], protože zpravodajská služba měla proti němu pouze morální důkazy. Bylo však známo prostřednictvím francouzské špionáže, že generální štáb [SCOPE.sCountry('dreyfus_rival_country_scope').GetAdjectiveNoFormatting] měl k dispozici dokumenty, které mu mohl předat pouze [SCOPE.sCharacter('alfred_dreyfus_scope').GetLastNameNoFormatting].“"
  dreyfus.9.a: "Skutečně světlo do případu [SCOPE.sCharacter('alfred_dreyfus_scope').GetLastNameNoFormatting]."
  dreyfus.9.b: "Nic než lži z [SCOPE.sCountry('ferdinand_esterhazy_country_scope').GetAdjectiveNoFormatting], které mají zasít rozkol."
@@ -262,11 +262,11 @@
  dreyfus_aknowledged_evidence: "Uznané důkazy"
  slave_revolt_events.1.t: "Ústava svobody"
  slave_revolt_events.1.d: "Po staletí lid [SCOPE.sCulture('freed_slave_culture_scope').GetName] dřel pod jařmem biče a neustále toužil po svobodě. Se vznikem nezávislé [SCOPE.GetRootScope.GetCountry.GetNameNoFlag] je tato slabá naděje nyní jen krůček od naplnění, neboť [SCOPE.GetRootScope.GetCountry.GetRuler.GetPrimaryRoleTitle]ovi byl předložen návrh osvobozující ústavy."
- slave_revolt_events.1.f: "(1) Lid obývající [SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFormatting('A')] se tímto usnáší vytvořit svobodný stát, svrchovaný a nezávislý na jakékoli jiné moci ve vesmíru.\n\n(2) Každý obyvatel území [SCOPE.GetRootScope.GetCountry.GetNameNoFormatting] je plně svobodný.\n\n(3) Otroctví v [SCOPE.GetRootScope.GetCountry.GetNameNoFormatting] je navždy zrušeno."
+ slave_revolt_events.1.f: "(1) Lid obývající [SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFormatting('A')] se tímto usnáší vytvořit svobodný stát, svrchovaný a nezávislý na jakékoli jiné moci ve vesmíru.\n\n(2) Každý obyvatel území [SCOPE.GetRootScope.GetCountry.GetNameNoFormatting] je plně svobodný.\n\n(3) Otroctví v [SCOPE.GetRootScope.GetCountry.GetAltAdjectiveNoFormatting('L')] je navždy zrušeno." # todo: COUNTRY CASE
  slave_revolt_events.1.a: "Svoboda od otroctví bude zakotvena v ústavě."
  slave_revolt_events.1.b: "A kdo pak bude pracovat na polích? To rozhodně ne."
  revolution_pulse2_events.1.t: "V zájmu národa"
- revolution_pulse2_events.1.d: "S důrazem na nutnost držet krok s moderními vojenskými pokroky vláda navrhla vyslat [SCOPE.sCharacter('army_lad_leader_scope').GetFullName] na průzkumnou vojenskou misi do [SCOPE.sCountry('fact_finding_mission_country_scope').GetName]—jen slabě zastřený pokus, jak vzdálit hašteřivého generála od jeho stále více vzpurných stoupenců."
+ revolution_pulse2_events.1.d: "S důrazem na nutnost držet krok s moderními vojenskými pokroky vláda navrhla vyslat [SCOPE.sCharacter('army_lad_leader_scope').GetFullName] na průzkumnou vojenskou misi do [SCOPE.sCountry('fact_finding_mission_country_scope').GetAltAdjective('G')]—jen slabě zastřený pokus, jak vzdálit hašteřivého generála od jeho stále více vzpurných stoupenců." # todo: COUNTRY CASE
  revolution_pulse2_events.1.f: "Přibližně ve chvíli, kdy pára zmizela ze zrcadla, došlo [SCOPE.sCharacter('army_lad_leader_scope').GetHerHim], že vláda po [SCOPE.sCharacter('army_lad_leader_scope').GetHerHim] vlastně chce něco stejně nemožného jako najít sníh v poušti. Kdyby na to přišel dříve, [SCOPE.sCharacter('army_lad_leader_scope').GetSheHe] by měl dost rozumu prostě říct „Ne.“ Říct to teď by z něj jen udělalo hlupáka."
  revolution_pulse2_events.1.a: "Ať si [SCOPE.sCharacter('army_lad_leader_scope').GetHerHim] sbalí kufry. Vlastně mu je sbalte vy."
  revolution_pulse2_events.1.b: "Platiti [SCOPE.sCharacter('army_lad_leader_scope').GetHerHim] cestování po [SCOPE.sCountry('fact_finding_mission_country_scope').GetCapital.GetCityHubName]? Děkuji, nechci."
@@ -275,7 +275,7 @@
  sent_leader_on_military_mission_movement: "Odstraněný opoziční vůdce"
  sent_leader_on_military_mission_ig: "Záludná průzkumná mise"
  revolution_pulse2_events.2.t: "Důstojník a gentleman"
- revolution_pulse2_events.2.d: "Po návratu z průzkumné mise do [SCOPE.sCountry('fact_finding_mission_country_scope').GetName] s hlavou plnou nápadů a kufrem plným drahého alkoholu je [SCOPE.sCharacter('army_lad_leader_scope').GetFullName] opět volný věnovat se svým domácím ambicím."
+ revolution_pulse2_events.2.d: "Po návratu z průzkumné mise do [SCOPE.sCountry('fact_finding_mission_country_scope').GetAltAdjective('G')] s hlavou plnou nápadů a kufrem plným drahého alkoholu je [SCOPE.sCharacter('army_lad_leader_scope').GetFullName] opět volný věnovat se svým domácím ambicím." # todo: COUNTRY CASE
  revolution_pulse2_events.2.f: "Když člověk dostatečně dlouho honí divokou husu, něco se přece jen naučí: zaprvé, že většina tvorů se unaví dříve než člověk. A zadruhé, že je víc než jen jedna věc, kterou lze lovit. V tomto případě všechno požadované a ještě víc na stříbrném podnose.\n\nA se správným nápojem by každý rozumný vůdce chtěl slyšet o těchto nových a hrozivých zázracích."
  revolution_pulse2_events.2.a: "Ať už v dobrém či zlém, [SCOPE.sCharacter('army_lad_leader_scope').GetLastName] je zpět."
  results_of_the_fact_finding_mission: "Výsledky průzkumné mise"
@@ -300,7 +300,7 @@
  abolished_scrip_wages: "Zrušeny skriptové mzdy"
  revolution_pulse2_events.5.t: "Posádka v [SCOPE.sState('garrison_refusal_state').GetCityHubName] odmítá rozkaz"
  revolution_pulse2_events.5.d: "Prapor posádky ze [SCOPE.sState('garrison_refusal_state').GetName], který byl pověřen násilným potlačením lidového nepokoje v [SCOPE.sState('garrison_refusal_state').GetCityHubName], odmítl splnit rozkazy s tvrzením, že vykonání takového příkazu by bylo v rozporu se zákony lidí i [SCOPE.GetRootScope.GetCountry.GetCustom('GetDivinity')]."
- revolution_pulse2_events.5.f: "„Vlastenectví? Rád pozvednu pušku proti nepřátelům [SCOPE.GetRootScope.GetCountry.GetNameNoFormatting]. Pokud [SCOPE.sCountry('garrison_refusal_rival').GetAdjectiveNoFormatting] zaklepe na dveře, splním svou povinnost, stejně jako my všichni.\nAle pozvednout zbraň proti vlastním? Proti bratrům krve a víry? Pane, tohle, tohle nemůžeme udělat.“"
+ revolution_pulse2_events.5.f: "„Vlastenectví? Rád pozvednu pušku proti nepřátelům [SCOPE.GetRootScope.GetCountry.GetAltAdjectiveNoFormatting('D')]. Pokud [SCOPE.sCountry('garrison_refusal_rival').GetAdjectiveNoFormatting] zaklepe na dveře, splním svou povinnost, stejně jako my všichni.\nAle pozvednout zbraň proti vlastním? Proti bratrům krve a víry? Pane, tohle, tohle nemůžeme udělat.“" # todo: COUNTRY CASE
  revolution_pulse2_events.5.a: "Vzpoura! Vůdce pověsit a ostatní uvěznit."
  revolution_pulse2_events.5.b: "Ututlat to. Posádku časem vystřídáme."
  seditious_garrison: "Vzbouřená posádka"
@@ -427,14 +427,14 @@
  garibaldi_popularity_modifier_tier_4: "Generál"
  garibaldi_popularity_modifier_tier_5: "Hrdina dvou světů"
  garibaldi_events.1.t: "Garibaldi nabízí své služby"
- garibaldi_events.1.d: "Italský revolucionář a nacionalista [SCOPE.sCharacter('garibaldi_scope').GetFullName] považuje náš boj proti [SCOPE.sCountry('garibaldi_spawn_foe_scope').GetName] za spravedlivý, a proto se rozhodl připojit k naší věci a nabídnout své služby jako generál."
+ garibaldi_events.1.d: "Italský revolucionář a nacionalista [SCOPE.sCharacter('garibaldi_scope').GetFullName] považuje náš boj proti [SCOPE.sCountry('garibaldi_spawn_foe_scope').GetAltAdjective('D')] za spravedlivý, a proto se rozhodl připojit k naší věci a nabídnout své služby jako generál." # todo: COUNTRY CASE
  garibaldi_events.1.f: "„Nenabízím ani žold, ani ubytování, ani jídlo;\nnabízím jen hlad, žízeň, nucené pochody, bitvy a smrt.\nKdo miluje svou vlast srdcem, a ne jen slovy, ať mě následuje.“"
  garibaldi_events.1.a: "Pověřte [SCOPE.sCharacter('garibaldi_scope').GetFullName], aby vedl naše armády."
  garibaldi_events.1.b: "Takového buřiče nepotřebujeme."
  rejected_garibaldi_modifier: "Odmítnuta pomoc Garibaldiho"
  garibaldi_events.2.t: "Garibaldi se loučí"
- garibaldi_events.2.d_1: "Po vypuknutí války mezi [SCOPE.sCountry('garibaldi_italian_nation_scope').GetName] a [SCOPE.sCountry('garibaldi_foreign_nation_scope').GetName] se [SCOPE.sCharacter('garibaldi_scope').GetFullName] rozhodl opustit [SCOPE.GetRootScope.GetCountry.GetNameNoFlag] a chopit se zbraní proti nepřátelům Itálie."
- garibaldi_events.2.d_2: "Vzhledem k tomu, že v [SCOPE.GetRootScope.GetCountry.GetNameNoFlag] panuje mír a boj proti tyranům je alespoň prozatím u konce, rozhodl se [SCOPE.sCharacter('garibaldi_scope').GetFullName] zemi opustit a hledat další hodnou věc."
+ garibaldi_events.2.d_1: "Po vypuknutí války mezi [SCOPE.sCountry('garibaldi_italian_nation_scope').GetAltAdjective('I')] a [SCOPE.sCountry('garibaldi_foreign_nation_scope').GetName] se [SCOPE.sCharacter('garibaldi_scope').GetFullName] rozhodl opustit [SCOPE.GetRootScope.GetCountry.GetNameNoFlag] a chopit se zbraní proti nepřátelům Itálie." # todo: COUNTRY CASE
+ garibaldi_events.2.d_2: "Vzhledem k tomu, že v [SCOPE.GetRootScope.GetCountry.GetAltAdjectiveNoFlag('L')] panuje mír a boj proti tyranům je alespoň prozatím u konce, rozhodl se [SCOPE.sCharacter('garibaldi_scope').GetFullName] zemi opustit a hledat další hodnou věc." # todo: COUNTRY CASE
  garibaldi_events.2.f: "„Kdekoliv bratři bojují za svobodu Itálie - tam musíme spěchat.“"
  garibaldi_events.2.a: "Šťastnou cestu, generále [SCOPE.sCharacter('garibaldi_scope').GetLastName]."
  garibaldi_events.3.t: "Italská dobrovolnická legie"
@@ -468,7 +468,7 @@
  zealous_advocates_modifier: "Horliví zastánci"
  widespread_dogmatic_intolerance: "Rozšířená dogmatická nesnášenlivost"
  luddite_law_events.3.t: "Furor Technophobicus"
- luddite_law_events.3.d: "To, co začalo jako protest proti možné automatizaci některých pracovních činností v [SCOPE.sBuilding('technophobic_fury_building_scope').GetName] v [SCOPE.sState('technophobic_fury_state_scope').GetName], se rychle změnilo v nepokoje, když radikalizovaný předák s palicí odemkl dveře tovární haly. Zprávy o rozbitých strojích i zlomených kostech se rychle šíří po [SCOPE.GetRootScope.GetCountry.GetNameNoFlag] a zhoršují debatu o [SCOPE.sLaw('current_law_scope').GetName]."
+ luddite_law_events.3.d: "To, co začalo jako protest proti možné automatizaci některých pracovních činností v [SCOPE.sBuilding('technophobic_fury_building_scope').GetName] v [SCOPE.sState('technophobic_fury_state_scope').GetName], se rychle změnilo v nepokoje, když radikalizovaný předák s palicí odemkl dveře tovární haly. Zprávy o rozbitých strojích i zlomených kostech se rychle šíří po [SCOPE.GetRootScope.GetCountry.GetAltAdjectiveNoFlag('L')] a zhoršují debatu o [SCOPE.sLaw('current_law_scope').GetName]." # todo: COUNTRY CASE
  luddite_law_events.3.f: "„Až bude naše síť hotova,\na člunek vyměněn za meč,\nvrhneme rubáš\nna despotu u našich nohou\na zbarvíme jej krví, kterou prolil.“"
  luddite_law_events.3.a: "Nešťastná událost v nevhodnou dobu."
  luddite_law_events.3.b: "Zatkněte jak výtržníky, tak jejich vůdce. Nereprezentují nás."
@@ -479,7 +479,7 @@
  yeet_agitator_events.1.d: "Poté, co zjistil, že jak [ROOT.GetCountry.GetAdjectiveNoFlag] veřejnost, tak i domnělí političtí spojenci nejsou vnímaví k jeho myšlenkám, se [SCOPE.sCharacter('yeeted_agitator_scope_1').GetFullName] rozhodl znechucen odejít z politiky a strávit zbytek svých dnů psaním zatrpklých úvah o tom, co mohlo být."
  yeet_agitator_events.1.f: "„Dávám těmhle balíkům pravdu, a jaká je má odměna?\nOhlušující ticho!\nA oni nazývají [ROOT.GetCountry.GetCapital.GetCityHubName] městem myšlenek? Městem #italic kultury#!?\nJediný důkaz kultivace, který jsem v té stokě našel, pocházel z polí za městem— a i #italic ta#! byla zanedbaná.\nTáhněte k čertu, pánové!\nTáhněte k čertu všichni!“"
  yeet_agitator_events.1.a: "Nechte [SCOPE.sCharacter('yeeted_agitator_scope_1').GetHerHim], ať si své myšlenky šíří v klidu, daleko od [ROOT.GetCountry.GetCapital.GetCityHubName]."
- yeet_agitator_events.1.b: "Zdvořile mu sdělte, že jeho přítomnost není v [ROOT.GetCountry.GetNameNoFormatting] žádoucí."
+ yeet_agitator_events.1.b: "Zdvořile mu sdělte, že jeho přítomnost není v [ROOT.GetCountry.GetAltAdjectiveNoFormatting('L')] žádoucí." # todo: COUNTRY CASE
  yeet_agitator_events.1.c: "Tenhle [SCOPE.sCharacter('yeeted_agitator_scope_1').GetWomanMan] potřebuje jen malé „postrčení“, aby se vrátil do hry."
  yeet_agitator_events.1.tt_1: "[SCOPE.sCharacter('yeeted_agitator_scope_1').GetFullName] odchází z politiky a usazuje se doma."
  yeet_agitator_events.1.tt_2: "[SCOPE.sCharacter('yeeted_agitator_scope_1').GetFullName] odchází z politiky a usazuje se v zahraničí."
@@ -488,12 +488,12 @@
  yellow_press_adovacte_modifier: "Podpora žlutého tisku"
  newspaper_campaign_modifier: "Financování tiskové kampaně"
  yeet_agitator_events.2.t: "Na zelenější pastviny"
- yeet_agitator_events.2.d: "Spokojen se stavem politiky v [ROOT.GetCountry.GetNameNoFlag] a hledající nové příležitosti k agitaci v zahraničí oznámil [SCOPE.sCharacter('yeeted_agitator_scope_2').GetFullName] svůj záměr opustit zemi—přeje jejím současným správcům hodně štěstí do budoucna."
- yeet_agitator_events.2.f: "„Přátelé, to, čeho jsme zde v [ROOT.GetCountry.GetNameNoFormatting] dosáhli, je nic menšího než ohromující. Věc [SCOPE.sCharacter('yeeted_agitator_scope_2').GetIdeology.GetNameNoFormatting] je věcí [ROOT.GetCountry.GetNameNoFormatting] a naše úsilí i výsledky jsou toho důkazem.\n\nAle v oslavě našeho úspěchu nesmíme zapomínat na ty v zahraničí, jejichž [SCOPE.sCharacter('yeeted_agitator_scope_2').GetIdeology.GetNameNoFormatting] aspirace jsou stále jen slabou nadějí, drcenou pod botami našich nepřátel.\n\nDokud jejich věc trvá, trvá i ta moje. Nemohu s čistým svědomím odpočívat na vavřínech v [ROOT.GetCountry.GetNameNoFormatting] a ignorovat jejich volání po spravedlnosti.“"
+ yeet_agitator_events.2.d: "Spokojen se stavem politiky v [ROOT.GetCountry.GetAltAdjectiveNoFlag('L')] a hledající nové příležitosti k agitaci v zahraničí oznámil [SCOPE.sCharacter('yeeted_agitator_scope_2').GetFullName] svůj záměr opustit zemi—přeje jejím současným správcům hodně štěstí do budoucna." # todo: COUNTRY CASE
+ yeet_agitator_events.2.f: "„Přátelé, to, čeho jsme zde v [ROOT.GetCountry.GetAltAdjectiveNoFormatting('L')] dosáhli, je nic menšího než ohromující. Věc [SCOPE.sCharacter('yeeted_agitator_scope_2').GetIdeology.GetNameNoFormatting] je věcí [ROOT.GetCountry.GetAltAdjectiveNoFormatting('G')] a naše úsilí i výsledky jsou toho důkazem.\n\nAle v oslavě našeho úspěchu nesmíme zapomínat na ty v zahraničí, jejichž [SCOPE.sCharacter('yeeted_agitator_scope_2').GetIdeology.GetNameNoFormatting] aspirace jsou stále jen slabou nadějí, drcenou pod botami našich nepřátel.\n\nDokud jejich věc trvá, trvá i ta moje. Nemohu s čistým svědomím odpočívat na vavřínech v [ROOT.GetCountry.GetAltAdjectiveNoFormatting('L')] a ignorovat jejich volání po spravedlnosti.“" # todo: COUNTRY CASE
  yeet_agitator_events.2.a: "Sbohem, [SCOPE.sCharacter('yeeted_agitator_scope_2').GetLastNameNoFormatting]. Ať vaše myšlenky najdou v zahraničí vnímavé uši."
  agitator_proof_modifier: "Konec dějin?"
  yeet_agitator_events.3.t: "Plody tvé práce"
- yeet_agitator_events.3.d: "Spokojen s novým stavem věcí v [ROOT.GetCountry.GetNameNoFlag] a neochoten či neschopen čelit nejistotám života v zahraničí oznámil [SCOPE.sCharacter('yeeted_agitator_scope_3').GetFullName] svůj odchod z politického života."
+ yeet_agitator_events.3.d: "Spokojen s novým stavem věcí v [ROOT.GetCountry.GetAltAdjectiveNoFlag('L')] a neochoten či neschopen čelit nejistotám života v zahraničí oznámil [SCOPE.sCharacter('yeeted_agitator_scope_3').GetFullName] svůj odchod z politického života." # todo: COUNTRY CASE
  yeet_agitator_events.3.f: "„Tak už je pryč. Do [SCOPE.sState('retirement_state_scope').GetFarmHubName], pokud jsou zvěsti pravdivé—malovat, pít a chovat slepice. Zdá se, že vedení lidí člověku dá chuť starat se i o jednodušší tvory [SCOPE.GetRootScope.GetCountry.GetCustom('GetDivinity')].“\n\n„Možná má prostě rád slepice, [SCOPE.sCharacter('walter_scope').GetFirstNameNoFormatting]?“\n\n„Drž svou #bold zatracenou#! hubu, [SCOPE.sCharacter('donny_scope').GetFirstNameNoFormatting].“"
  yeet_agitator_events.3.a: "Zdá se, že i ti největší radikálové nakonec vychladnou."
  yeet_agitator_events.3.b: "Uctěme jeho památku. Možná busta v [ROOT.GetCountry.GetCapital.GetCityHubName]?"
@@ -534,7 +534,7 @@
  wages_of_pragmatism_modifier: "Pragmatická obrana"
  modifier_popular_defense_commune: "Občanská milice"
  paris_commune_pulse_events.4.t: "Petrolejové ženy"
- paris_commune_pulse_events.4.d: "Veřejné budovy, sochy a domy spojené s monarchií jsou zapalovány. Svědci přičítají vinu ženám v [SCOPE.sCountry('paris_commune_nation_scope').GetName]."
+ paris_commune_pulse_events.4.d: "Veřejné budovy, sochy a domy spojené s monarchií jsou zapalovány. Svědci přičítají vinu ženám v [SCOPE.sCountry('paris_commune_nation_scope').GetAltAdjective('L')]." # todo: COUNTRY CASE
  paris_commune_pulse_events.4.f: "Nad Paříží se černají oblaka kouře. Mnozí to považují za velké vítězství Komuny.\nJiní za bezohledné znesvěcení dlouhé historie Francie.\nPopel ve vzduchu je nepopiratelný: vládne chaos, zatímco lidé propadají ničení."
  paris_commune_pulse_events.4.a: "Vedlejší škody se ve válce stávají."
  paris_commune_pulse_events.4.b: "V takových časech vzplanou mužské vášně."
@@ -614,7 +614,7 @@
  child_soldiery_modifier: "Dětští vojáci"
  a_learning_future_modifier: "Vzdělaná budoucnost"
  to_inherit_the_earth_char_modifier: "Zastánce vzdělání"
- possible_radical_agitator_spawn: "V [SCOPE.sCountry('france_scope').GetName] se může objevit #bold radikální#! agitátor"
+ possible_radical_agitator_spawn: "V [SCOPE.sCountry('france_scope').GetAltAdjective('L')] se může objevit #bold radikální#! agitátor" # todo: COUNTRY CASE
  paris_commune_pulse_events.13.t: "Trest smrti"
  paris_commune_pulse_events.13.d: "Navzdory dekretu [SCOPE.sCountry('paris_commune_nation_scope').GetAdjective] Ústředního výboru, který trest smrti zrušil, se mnozí zadržení duchovní obávají, že se na ně toto pravidlo nevztahuje."
  paris_commune_pulse_events.13.f: "Modlitba. To bylo jediné, co biskup doporučil, když byli duchovní uvrženi do cel plných blech a dostávali zkažené jídlo.\nVenku se ozýval jásot: trest smrti byl zrušen.\nUvnitř vězení však byly chtivé pohledy mužů dychtících sledovat smrt kněží."
@@ -649,18 +649,18 @@
  modifier_woman_soldiers: "Militantní feminismus"
  modifier_progressives_stalled: "Progresivní síly zablokovány"
  je_haitian_debt: "Ohavný dluh"
- je_haitian_debt_reason: "Vyhlášená roku 1804, nezávislost Haiti na [SCOPE.sCountry('france_scope').GetName] byla nejen těžce vybojována, ale také draze zaplacena. Diplomaticky izolovaná a obávající se další invaze se haitská vláda roku 1825 zavázala odškodnit Francii za její ztracený majetek, včetně lidských životů, a za škody vzniklé během #bold Haitského masakru roku 1804#!. Na oplátku Haiti získalo diplomatické uznání.\n\nObrovská náhrada ve výši 150 milionů #italic franků#! donutila zemi přijmout vysoce úročené půjčky od francouzských soukromých bank, a od té doby se Haiti ocitá ve spirále rostoucího odškodnění, dluhu a úrokových plateb.\n\nMá-li být Haiti opět známo jako #bold Perla Antil#!, musí být naše finanční závazky vyřešeny, tak či onak."
+ je_haitian_debt_reason: "Vyhlášená roku 1804, nezávislost Haiti na [SCOPE.sCountry('france_scope').GetAltAdjective('A')] byla nejen těžce vybojována, ale také draze zaplacena. Diplomaticky izolovaná a obávající se další invaze se haitská vláda roku 1825 zavázala odškodnit Francii za její ztracený majetek, včetně lidských životů, a za škody vzniklé během #bold Haitského masakru roku 1804#!. Na oplátku Haiti získalo diplomatické uznání.\n\nObrovská náhrada ve výši 150 milionů #italic franků#! donutila zemi přijmout vysoce úročené půjčky od francouzských soukromých bank, a od té doby se Haiti ocitá ve spirále rostoucího odškodnění, dluhu a úrokových plateb.\n\nMá-li být Haiti opět známo jako #bold Perla Antil#!, musí být naše finanční závazky vyřešeny, tak či onak." # todo: COUNTRY CASE
  je_haitian_debt_status_4: "Naše současná úroveň dluhu je: #bold Obrovská#!"
  je_haitian_debt_status_3: "Naše současná úroveň dluhu je: #bold Velká#!"
  je_haitian_debt_status_2: "Naše současná úroveň dluhu je: #bold Významná#!"
  je_haitian_debt_status_1: "Naše současná úroveň dluhu je: #bold Malá#!"
  je_haitian_debt_negotiation_button: "Vyjednat snížení odškodnění"
- je_haitian_debt_negotiation_button_desc: "Pokud budou diplomatické podmínky příznivé, můžeme zahájit jednání s [SCOPE.sCountry('france_scope').GetNameNoFlag] o snížení odškodnění dlužného jejich věřitelům. O to lze požádat pouze #bold jednou#! a v případě souhlasu [SCOPE.sCountry('france_scope').GetNameNoFormatting] to bude za cenu [concept_obligation|l]."
+ je_haitian_debt_negotiation_button_desc: "Pokud budou diplomatické podmínky příznivé, můžeme zahájit jednání s [SCOPE.sCountry('france_scope').GetAltAdjectiveNoFlag('I')] o snížení odškodnění dlužného jejich věřitelům. O to lze požádat pouze #bold jednou#! a v případě souhlasu [SCOPE.sCountry('france_scope').GetAltAdjectiveNoFormatting('G')] to bude za cenu [Concept('concept_obligation','závazek')|l]." # todo: CONCEPT CASE # todo: COUNTRY CASE
  je_haitian_debt_payment_button: "Uhradit část dluhu"
  je_haitian_debt_payment_button_desc: "Schválit velkou platbu [SCOPE.sCountry('france_scope').GetAdjectiveNoFlag] #italic Caisse des dépôts et consignations#!."
  je_haitian_cancel_debt_button: "Jednostranně zrušit dluh"
  je_haitian_cancel_debt_button_desc: "Dost bylo dost. Raději zaplatíme za svou nezávislost krví, než abychom vykrváceli naše pokladny kvůli zatraceným [SCOPE.sCountry('france_scope').GetAdjectiveNoFlag]."
- je_haitian_cancel_debt_button_tt: "Toto rozhodnutí nebude v [SCOPE.sCountry('france_scope').GetName] přijato dobře a jejich ochota vést proti nám válku výrazně vzroste."
+ je_haitian_cancel_debt_button_tt: "Toto rozhodnutí nebude v [SCOPE.sCountry('france_scope').GetAltAdjective('L')] přijato dobře a jejich ochota vést proti nám válku výrazně vzroste." # todo: COUNTRY CASE
  modifier_cancelled_haiti_debt_1: "Jednostranně zrušený dluh"
  modifier_cancelled_haiti_debt_2: "$modifier_cancelled_haiti_debt_1$"
  modifier_cancelled_haiti_debt_3: "$modifier_cancelled_haiti_debt_1$"
@@ -676,7 +676,7 @@
  modifier_french_independence_payments_4: "Obrovské francouzské platby za nezávislost"
  modifier_haitian_independence_payments_4: "Obrovské haitské platby za nezávislost"
  notification_haiti_stops_paying_france_name: "Haiti zastavuje platby odškodnění"
- notification_haiti_stops_paying_france_desc: "Haiti odmítlo provádět další platby naší zemi a jednostranně zrušilo veškeré dluhy vůči nám.\n\nPožadavky na trestnou výpravu jsou rozšířené a nyní máme [concept_claim|l] na naši bývalou kolonii."
+ notification_haiti_stops_paying_france_desc: "Haiti odmítlo provádět další platby naší zemi a jednostranně zrušilo veškeré dluhy vůči nám.\n\nPožadavky na trestnou výpravu jsou rozšířené a nyní máme [Concept('concept_claim','nárok')|l] na naši bývalou kolonii." # todo: CONCEPT CASE
  notification_haiti_stops_paying_france_tooltip: "#header $notification_haiti_stops_paying_france_name$#!\n$TOOLTIP_DELIMITER$\n$notification_haiti_stops_paying_france_desc$"
  notification_haiti_pays_off_debt_name: "Haiti splácí část odškodnění"
  notification_haiti_pays_off_debt_desc: "Haiti splatilo část odškodnění, které nám dluží, přičemž pařížská #italic Caisse des dépôts et consignations#! obdržela splátku dnes ráno."
@@ -699,7 +699,7 @@
  hispaniola_events.3.a: "Schváleno. Vliv je také formou měny."
  hispaniola_events.3.b: "Zamítnuto. Haiťané zaplatí, co dluží."
  hispaniola_events.4.t: "Francie souhlasí se snížením odškodnění"
- hispaniola_events.4.d: "Naše jednání s [SCOPE.sCountry('france_scope').GetName] přinesla ovoce. V oficiálním komuniké podepsaném [SCOPE.sCountry('france_scope').GetRuler.GetPrimaryRoleTitle]em [SCOPE.sCountry('france_scope').GetRuler.GetFullName] bylo odpuštěno čtvrtina dlužného odškodnění, i když s určitými diplomatickými podmínkami."
+ hispaniola_events.4.d: "Naše jednání s [SCOPE.sCountry('france_scope').GetAltAdjective('I')] přinesla ovoce. V oficiálním komuniké podepsaném [SCOPE.sCountry('france_scope').GetRuler.GetPrimaryRoleTitle]em [SCOPE.sCountry('france_scope').GetRuler.GetFullName] bylo odpuštěno čtvrtina dlužného odškodnění, i když s určitými diplomatickými podmínkami." # todo: COUNTRY CASE
  hispaniola_events.4.f: "Váš dopis jsem obdržel v dobré víře a musím říci, že mě zarmoutil. Byli jsme ujištěni, že váš ostrovní stát je schopen uhradit naše ztráty. Ujišťuji vás však, že jsem se tím osobně zabýval já, [SCOPE.sCountry('france_scope').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('france_scope').GetRuler.GetFullNameNoFormatting]. Parlament dospěl k nové dohodě pro váš lid."
  hispaniola_events.4.a: "#italic Trè byen, gras a Dye!#!"
  hispaniola_events.5.t: "Francie odmítá snížení odškodnění"

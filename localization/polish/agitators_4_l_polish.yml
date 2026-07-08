@@ -102,9 +102,9 @@
  nihilism.13.f: "„Co lze rozbít, musí být rozbito. To, co úder vydrží, je hodno přežít; co se rozpadne na kusy, je bezcenné. V každém případě udeřte napravo i nalevo — nic zlého z toho nevzejde.“\n\n—Dmitrij Pisarev"
  nihilism.13.a: "[SCOPE.gsInterestGroup('devout_ig').GetName] zaniknou, neboť stojí proti samotné realitě!"
  nihilism.13.b: "Tato cesta je odsouzena k nezdaru!"
- all_non_tu_nihilists_become_anarchist_tt: "Všichni zbývající [GetIdeology('ideology_nihilist').GetName] [Concept('concept_character', '$concept_characters$')] přejdou na [GetIdeology('ideology_anarchist').GetName] [concept_ideology]" # todo: NEW TRANSLATION
- all_tu_nihilists_become_communist_tt: "Všichni [GetInterestGroupVariant('ig_trade_unions',GetPlayer).GetName] [GetIdeology('ideology_nihilist').GetName] [Concept('concept_character', '$concept_characters$')] přejdou na [GetIdeology('ideology_communist').GetName] [concept_ideology]" # todo: NEW TRANSLATION
- all_nihilists_become_radical_tt: "Všichni [GetIdeology('ideology_nihilist').GetName] [Concept('concept_character', '$concept_characters$')] přejdou na [GetIdeology('ideology_radical').GetName] [concept_ideology]" # todo: NEW TRANSLATION
+ all_non_tu_nihilists_become_anarchist_tt: "Všichni zbývající [GetIdeology('ideology_nihilist').GetName] [Concept('concept_character','postavy')] přejdou na [GetIdeology('ideology_anarchist').GetName] [Concept('concept_ideology','ideologii')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ all_tu_nihilists_become_communist_tt: "Všichni [GetInterestGroupVariant('ig_trade_unions',GetPlayer).GetName] [GetIdeology('ideology_nihilist').GetName] [Concept('concept_character','postavy')] přejdou na [GetIdeology('ideology_communist').GetName] [Concept('concept_ideology','ideologii')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ all_nihilists_become_radical_tt: "Všichni [GetIdeology('ideology_nihilist').GetName] [Concept('concept_character','postavy')] přejdou na [GetIdeology('ideology_radical').GetName] [Concept('concept_ideology','ideologii')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  modifier_persecuted_general: "Pronásledovaný generál"
  modifier_uncertain_loyalties_country: "Nejistá loajalita armády"
  modifier_conflicted_about_coup: "Rozpolcená loajalita"
@@ -158,7 +158,7 @@
  coup_pulse_events.1.d: "[SCOPE.sCharacter('accused_general').GetFullName], generál spojený se [SCOPE.gsInterestGroup('accused_general_ig').GetName], byl obviněn ze závažné neloajality. [SCOPE.sCharacter('accused_general').GetFullName] tvrdí, že jde pouze o spiknutí podvratných živlů s cílem odstranit překážku jejich vládě."
  coup_pulse_events.1.f: "„Ujišťuji vás, pánové, že nemám žádné povědomí o činech popsaných v těchto údajných dopisech. Pokud musíte prohledat mé osobní věci, abyste mě očistili, vítám to.“"
  coup_pulse_events.1.a: "Nemůžeme riskovat loajalitu našich generálů."
- coup_pulse_events.1.a.tt: "[SCOPE.sCharacter('accused_general').GetFullName] přestane být [concept_general]"
+ coup_pulse_events.1.a.tt: "[SCOPE.sCharacter('accused_general').GetFullName] přestane být [Concept('concept_general','generál')]" # todo: CONCEPT CASE
  coup_pulse_events.1.b: "Kdo přesně toto obvinění vznesl?"
  coup_pulse_events.2.t: "Rostoucí rozkol"
  coup_pulse_events.2.d: "[SCOPE.gsInterestGroup('conflicted_loyalty_ig').GetName], přestože jsou úzce spojeni s [SCOPE.sCharacter('golpista_general').GetPrimaryRoleTitle]em [SCOPE.sCharacter('golpista_general').GetLastName]a ze [SCOPE.sParty('conflicted_loyalty_party').GetName], odmítají myšlenku svrhnout vládu silou."
@@ -230,7 +230,7 @@
  coup_pulse_events.15.f: "„Neřest může na čas zvítězit, zločin se může chlubit svými úspěchy před poctivými lidmi, ale nakonec zákon dostihne viníka a hanba i trest postihnou ty, kdo hřeší.“\n\n— Allan Pinkerton"
  coup_pulse_events.15.a: "Jejich úkolem je zákon dodržovat, ne ho určovat."
  coup_pulse_events.15.b: "Kým jsme, pokud nemáme ani důvěru policie?"
- state_radicals_increase_coup_tt: "[Concept('concept_pop', '$concept_pops$')] ve státech s více než 20% politickou silou [SCOPE.gsInterestGroup('golpista_ig').GetName] se stanou více [concept_radical]"
+ state_radicals_increase_coup_tt: "[Concept('concept_pop','Populace')] ve státech s více než 20% politickou silou [SCOPE.gsInterestGroup('golpista_ig').GetName] se stanou více [Concept('concept_radical','radikál')]" # todo: CONCEPT CASE
  coup_pulse_events.16.t: "Nový Prométheus"
  coup_pulse_events.16.d: "[SCOPE.sCharacter('enlightened_despot_scope').GetFullName], významný člen [SCOPE.gsInterestGroup('golpista_ig').GetName], vydal politický manifest předpovídající blízký kolaps společnosti a nutnost osvíceného režimu, který by jej odvrátil."
  coup_pulse_events.16.f: "„Cílem našeho založení je poznání příčin a skrytých pohybů věcí a rozšiřování hranic lidské říše až k uskutečnění všeho možného.“\n\n— Francis Bacon, #italic Nová Atlantida#!"
@@ -569,7 +569,7 @@
  silkworm_diseases.7.f: "„...znovu vzniká ze špatných vajíček, která jsou připravena nebo dovezena, a v den, kdy budeme chovat pouze vajíčka bez těchto částic, budou téměř všechny generace chráněny před pébrinou...“\n\n— Louis Pasteur"
  silkworm_diseases.7.a: "Opět stojíme v čele světové vědy."
  silkworm_diseases.7.b: "Podělme se o lék s ostatními zeměmi."
- pebrine_foreign_aid_tt: "Všechny země postižené #bold pébrinou#! obdrží prostředky k vyřešení epidemie výměnou za zlepšení [concept_relations] a možnost vzniku [Concept('concept_obligation', '$concept_obligations$')]"
+ pebrine_foreign_aid_tt: "Všechny země postižené #bold pébrinou#! obdrží prostředky k vyřešení epidemie výměnou za zlepšení [Concept('concept_relations','vztahy')] a možnost vzniku [Concept('concept_obligation','závazku')]" # todo: CONCEPT CASE
  silkworm_diseases.8.t: "[SCOPE.sCountry('cure_sponsor_scope').GetName] sdílí řešení pébriny"
  silkworm_diseases.8.d: "Po objevu metody spolehlivého oddělování vajíček nakažených pébrinou zveřejnila [SCOPE.sCountry('cure_sponsor_scope').GetName] tento postup mezinárodně. Dodržováním kroků uvedených v publikovaných materiálech jsme nyní schopni napodobit [SCOPE.sCountry('cure_sponsor_scope').GetAdjectiveNoFormatting] úspěchy v této oblasti."
  silkworm_diseases.8.f: "„Od 4 do 6 hodin večer jsou všechny páry odděleně umístěny na malé látky, poté jsou samci okamžitě odstraněni, aniž by se přihlíželo k jejich více či méně zrnitému stavu. Poté, co samice nakladou vajíčka, jsou jednotlivě upevněny v rohu svého plátna pomocí špendlíku, nejlépe propíchnutím křídel, aby se motýl nemohl pohybovat.“\n\n— Louis Pasteur"
@@ -1181,8 +1181,8 @@
  historical_agitators.17.a: "Vive la France! Nikdo se jí nepostaví!"
  historical_agitators.17.b: "Každý má právo pomstít svou zemi."
  historical_agitators.17.c: "Odstraňte toho válečného štváče z úřadu."
- lv_4_general_tt: "[SCOPE.sCharacter('historic_agitator_scope').GetFullName] bude povýšen na [Concept('concept_commander_rank', 'hodnost')] $commander_rank_4_general$"
- lv_2_general_tt: "[SCOPE.sCharacter('historic_agitator_scope').GetFullName] bude povýšen na [Concept('concept_commander_rank', 'hodnost')] $commander_rank_2_general$"
+ lv_4_general_tt: "[SCOPE.sCharacter('historic_agitator_scope').GetFullName] bude povýšen na [Concept('concept_commander_rank','hodnost velitele')] $commander_rank_4_general$" # todo: CONCEPT CASE
+ lv_2_general_tt: "[SCOPE.sCharacter('historic_agitator_scope').GetFullName] bude povýšen na [Concept('concept_commander_rank','hodnost velitele')] $commander_rank_2_general$" # todo: CONCEPT CASE
  historical_agitators.18.t: "Syn obchodníka s hedvábím"
  historical_agitators.18.d: "Po návratu do politiky byl [SCOPE.sCharacter('historic_agitator_scope').GetFullName] pozván k veřejným projevům o ústavě [ROOT.GetCountry.GetAdjective] státu."
  historical_agitators.18.f: "Revoluce, bez ohledu na své mírové úmysly či míru násilí, si vždy vybírá svou daň. Pro některé je cena jednoduchá: boty a krev. Jiní nesou méně zjevné ztráty: vyhaslé vášně, pohaslé radosti a ideály proměněné v pouhé vzpomínky. Přesto s dostatkem času a péče existuje naděje na obnovu."
@@ -1248,15 +1248,15 @@
  ig_national_guard: "Národní garda"
  ig_national_guard_desc: "Národní garda je součástí francouzské armády, sloužící jako záložní vojenská a četnická síla tvořená běžnými občany. Historicky loajální liberálním a republikánským myšlenkám jako armáda lidu, se Národní garda stala hlavní silou stojící za vznikem Komuny."
  communard_effects_header_tt: "#header Na [SCOPE.sCountry('paris_commune_nation_scope').GetName] se uplatní následující efekty:#!"
- lost_war_tt: "Tato [concept_country] byla nedávno poražena ve [concept_war]"
- wargoal_pressed_by_recognized_power_tt: "Na tuto [Concept('concept_country','zemi')] byl vynucen [Concept('concept_war_goal','$concept_pops$')|l] [Concept('concept_recognized_power','uznanou mocností')]."
- lacks_homeland_tt: "Tato [concept_country] nemá kontrolu nad žádným [concept_homeland] svého [concept_primary_cultures]"
- socialist_revolution_ongoing_tt: "V této zemi právě probíhá #bold socialistická#! [concept_revolution]"
- liberal_revolution_ongoing_tt: "V této zemi právě probíhá #bold liberální#! [concept_revolution]"
- reactionary_revolution_ongoing_tt: "V této zemi právě probíhá #bold reakční#! [concept_revolution]"
+ lost_war_tt: "Tato [Concept('concept_country','země')] byla nedávno poražena ve [Concept('concept_war','válce')]" # todo: CONCEPT CASE
+ wargoal_pressed_by_recognized_power_tt: "Na tuto [Concept('concept_country','zemi')] byl vynucen [Concept('concept_war_goal','populace')|l] [Concept('concept_recognized_power','uznanou mocností')]." # todo: CONCEPT CASE
+ lacks_homeland_tt: "Tato [Concept('concept_country','země')] nemá kontrolu nad žádným [Concept('concept_homeland','domovinou')] svého [Concept('concept_primary_cultures','primárními kulturami')]" # todo: CONCEPT CASE
+ socialist_revolution_ongoing_tt: "V této zemi právě probíhá #bold socialistická#! [Concept('concept_revolution','revoluce')]" # todo: CONCEPT CASE
+ liberal_revolution_ongoing_tt: "V této zemi právě probíhá #bold liberální#! [Concept('concept_revolution','revoluce')]" # todo: CONCEPT CASE
+ reactionary_revolution_ongoing_tt: "V této zemi právě probíhá #bold reakční#! [Concept('concept_revolution','revoluce')]" # todo: CONCEPT CASE
  je_the_paris_commune_france_spawned: "Město #bold Paříž#! povstalo proti naší vládě"
  je_the_paris_commune_france: "Pařížská komuna"
- je_the_paris_commune_france_reason: "Skupina socialistických, anarchistických a radikálně republikánských revolucionářů obsadila město Paříž a vyhlásila konkurenční vládu nad [SCOPE.sCountry('france_scope').GetName].\n\nDokud [SCOPE.sCountry('commune_scope').GetName] existuje, představuje zásadní hrozbu pro naši vládu. Pokud postup Komuny klesne na #bold 0#!, naše síly ji budou schopny potlačit, ale pokud dosáhne #bold 100#!, revolucionáři provedou pochod na Versailles a zcela ukončí naši vládu. Pokud během existence této vlády vypukne [concept_revolution], přísahá věrnost [SCOPE.sCountry('commune_scope').GetName].\n\nPostup #bold Pařížské komuny#! se mění o #tooltippable;tooltip:[Country.GetTooltipTag],je_paris_commune_drift_special_tooltip [GetGlobalVariable( 'paris_commune_drift_final_var' ).GetValue]#! každý měsíc.\n\n#italic Efekty tohoto záznamu v deníku odečítají @money! #variable [Country.MakeScope.Var('PRC_money_transfer').GetValue|-D]#! z naší pokladny každý týden.#!"
+ je_the_paris_commune_france_reason: "Skupina socialistických, anarchistických a radikálně republikánských revolucionářů obsadila město Paříž a vyhlásila konkurenční vládu nad [SCOPE.sCountry('france_scope').GetName].\n\nDokud [SCOPE.sCountry('commune_scope').GetName] existuje, představuje zásadní hrozbu pro naši vládu. Pokud postup Komuny klesne na #bold 0#!, naše síly ji budou schopny potlačit, ale pokud dosáhne #bold 100#!, revolucionáři provedou pochod na Versailles a zcela ukončí naši vládu. Pokud během existence této vlády vypukne [Concept('concept_revolution','revoluce')], přísahá věrnost [SCOPE.sCountry('commune_scope').GetName].\n\nPostup #bold Pařížské komuny#! se mění o #tooltippable;tooltip:[Country.GetTooltipTag],je_paris_commune_drift_special_tooltip [GetGlobalVariable( 'paris_commune_drift_final_var' ).GetValue]#! každý měsíc.\n\n#italic Efekty tohoto záznamu v deníku odečítají @money! #variable [Country.MakeScope.Var('PRC_money_transfer').GetValue|-D]#! z naší pokladny každý týden.#!" # todo: CONCEPT CASE
  je_the_paris_commune_communards: "Pařížská komuna"
  je_the_paris_commune_communards_reason: "Proletariát Paříže povstal a obsadil hlavní město, čímž vyhlásil konkurenční vládu nad [SCOPE.sCountry('france_scope').GetName].\n\nDokud naše [SCOPE.sCountry('commune_scope').GetName] existuje, představuje zásadní hrozbu pro buržoazní vládu ve Versailles. Pokud postup Komuny dosáhne #bold 100#!, naše síly budou schopny provést pochod na Versailles a zcela ukončit nepřátelskou vládu, ale pokud klesne na #bold 0#!, vláda ve Versailles napadne Paříž a zcela ukončí naši vládu.\n\n#italic Efekty tohoto záznamu v deníku přidávají @money! #variable [Country.MakeScope.Var('PRC_money_transfer').GetValue|+D]#! do naší pokladny každý týden.#!"
  je_paris_commune_drift_special_tooltip: "Tato míra je určena následujícím:\n#variable [Country.MakeScope.Var('PRC_recognition_level').GetValue]#! ze zahraničního uznání #bold Pařížské komuny#!\n#variable [GetGlobalVariable('paris_commune_progress_drift').GetValue]#! z událostí a dalších efektů"
@@ -1332,7 +1332,7 @@
  luddite_law_events.6.a: "Možná jsme jednali ukvapeně."
  luddite_law_events.6.b: "Stačí jednoho odlákat od druhého."
  luddite_law_events.6.c: "Peníze rozhýbou každé soukolí."
- belle_epoque_fail_tt: "Nepřátelský [concept_front] dosáhl [SCOPE.sState('belle_epoque_state').GetName]"
+ belle_epoque_fail_tt: "Nepřátelský [Concept('concept_front','fronta')] dosáhl [SCOPE.sState('belle_epoque_state').GetName]" # todo: CONCEPT CASE
  belle_epoque_invalid_tt: "[SCOPE.sState('belle_epoque_state').GetName] není pod kontrolou této země"
  modifier_minority_self_defense_tolerated: "Tolerovaná etnická sebeobrana"
  modifier_subversion_of_monopoly_on_violence: "Legitimizovaná etnická sebeobrana"
@@ -1656,7 +1656,7 @@
  revolution_pulse_events.38.a: "Soustřeďte se na obranu měst."
  revolution_pulse_events.38.b: "Zažeňte je do hor."
  revolution_pulse_events.38.c: "Policie musí být lépe vyzbrojena!"
- agitator_spawn_tt: "V [SCOPE.sCountry('agitator_country_scope').GetName] se objeví [concept_agitator] z [SCOPE.gsInterestGroup('trade_unions_ig').GetName]"
+ agitator_spawn_tt: "V [SCOPE.sCountry('agitator_country_scope').GetName] se objeví [Concept('concept_agitator','agitátorem')] z [SCOPE.gsInterestGroup('trade_unions_ig').GetName]" # todo: CONCEPT CASE
  revolution_pulse_events.39.t: "Supové nad mršinou"
  revolution_pulse_events.39.d: "Oportunističtí členové [SCOPE.gsInterestGroup('defecting_ig').GetName] přešli na stranu [SCOPE.gsInterestGroup('revolting_ig').GetName]."
  revolution_pulse_events.39.f: "Mrchožravé vrány klovou do čerstvých mrtvol bez ohledu na příčinu. Některé však vycítí, když se ještě živé zvíře chystá zemřít. Takový tvor pak čeká, jak dlouho bude třeba, než kořist zahyne. Je však lepší být u toho první a vybrat si nejlepší kusy masa, než doufat ve zbytky."
@@ -1790,25 +1790,25 @@
  government_petition_events.1.c2: "Musí pochopit, že současná situace to neumožňuje."
  government_petition_already_enacting_law_tt: "Zákon #b není#! již prosazován"
  has_been_abandoned_tt: "Petice byla #b opuštěna#!"
- add_additional_three_years_to_petition_tt: "Přidá dalších #v 3 roky#! k časovému limitu [concept_journal_entry]"
+ add_additional_three_years_to_petition_tt: "Přidá dalších #v 3 roky#! k časovému limitu [Concept('concept_journal_entry','záznam v deníku')]" # todo: CONCEPT CASE
  je_government_petition_go_away_button: "Zahodit petici"
  je_government_petition_go_away_button_desc: "Splnění tohoto slibu je buď nemožné, nebo není v našem zájmu. Pokud chceme, můžeme svůj závazek zrušit a nést důsledky neúspěchu."
  discard_petition_tt: "#b $je_government_petition$#! bude #b zrušena#!"
- will_fail_petition_warning_tt: "@warning! Poneseme všechny postihy za #b nesplnění#! tohoto [concept_journal_entry]"
+ will_fail_petition_warning_tt: "@warning! Poneseme všechny postihy za #b nesplnění#! tohoto [Concept('concept_journal_entry','záznam v deníku')]" # todo: CONCEPT CASE
  je_government_petition_extension_button: "Požádat o odklad"
  je_government_petition_extension_button_desc: "V případě potřeby můžeme požádat o více času na splnění závazku. Tím sice snížíme získanou přízeň, ale je to lepší než přiznat porážku."
- will_halve_petition_warning_tt: "Efekty za #b splnění#! tohoto [concept_journal_entry] budou #b poloviční#!"
+ will_halve_petition_warning_tt: "Efekty za #b splnění#! tohoto [Concept('concept_journal_entry','záznam v deníku')] budou #b poloviční#!" # todo: CONCEPT CASE
  already_asked_for_extension_tt: "Dosud nebylo požádáno o odklad"
  modifier_active_government_petition: "Klíčová legislativa"
- government_petition_active_warning_tt: "@warning! Dokud je tento [concept_journal_entry] aktivní, nebudeme moci [Concept('concept_government_reform','$concept_government_reform_short$')] naši [concept_government]"
+ government_petition_active_warning_tt: "@warning! Dokud je tento [Concept('concept_journal_entry','záznam v deníku')] aktivní, nebudeme moci [Concept('concept_government_reform','reforma')] naši [Concept('concept_government','vládu')]" # todo: CONCEPT CASE
  political_operator_trait_tt: "vždy efektivní"
  charismatic_trait_tt: "charismatický"
  ambitious_trait_tt: "ambiciózní"
  persistent_trait_tt: "vytrvalý"
  modifier_reasserted_position_petition: "Potvrzené stanovisko"
  modifier_served_constituents_petition: "Spolehlivý zástupce"
- government_petition_blown_off_tt: "Petice bude #bold zamítnuta#!. Opakované provedení pro stejnou [concept_interest_group] povede k horším následkům."
- government_petition_blown_off_2_tt: "Petice bude #bold zamítnuta#! za značnou politickou cenu. Opakované provedení pro stejnou [concept_interest_group] povede k horším následkům."
+ government_petition_blown_off_tt: "Petice bude #bold zamítnuta#!. Opakované provedení pro stejnou [Concept('concept_interest_group','zájmovou skupinu')] povede k horším následkům." # todo: CONCEPT CASE
+ government_petition_blown_off_2_tt: "Petice bude #bold zamítnuta#! za značnou politickou cenu. Opakované provedení pro stejnou [Concept('concept_interest_group','zájmovou skupinu')] povede k horším následkům." # todo: CONCEPT CASE
  modifier_petition_rejected_legitimacy: "Nereagující vláda"
  modifier_petition_rejected_ig_opinion: "Zamítnutá petice"
  modifier_reasonable_monarchist_partisan: "Respektovaná stranickost"

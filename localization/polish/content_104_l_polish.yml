@@ -150,10 +150,10 @@
  modifier_ditched_marx: "Odmítnut socialismus"
  Karl_Heinrich: "Karl Heinrich"
  Marx: "Marx"
- exile_communist_agitator_tt: "[GetIdeology('ideology_communist').GetName] [concept_agitator] se objeví v [concept_exile]"
+ exile_communist_agitator_tt: "[GetIdeology('ideology_communist').GetName] [Concept('concept_agitator','Agitátor')] se objeví v [Concept('concept_exile','exulantovi')]" # todo: CONCEPT CASE
  je_sol_1: "Krize chudoby"
- je_sol_1_goal: "Zlepšete [concept_sol] ve své zemi."
- je_sol_goal_desc: "Zlepšete [concept_sol] ve své zemi o 3."
+ je_sol_1_goal: "Zlepšete [Concept('concept_sol','životní standard')] ve své zemi." # todo: CONCEPT CASE
+ je_sol_goal_desc: "Zlepšete [Concept('concept_sol','životní standard')] ve své zemi o 3." # todo: CONCEPT CASE
  je_sol_1_reason: "Nižší třídy vyjádřily své obavy, že si nemohou dovolit důstojný život."
  je_sol_invalid_desc: "Odmítli jste protesty proti chudobě v události $sol_events.1.t$."
  sol_events.1.t: "Znamení doby"
@@ -232,7 +232,7 @@
  whaling_admiral_modifier: "Velrybářská opatření"
  je_ig_suppression_1: "Zajištění moci"
  je_ig_suppression_1_reason: "[SCOPE.gsInterestGroup('target').GetName] se stali příliš mocnými pro své vlastní dobro, vzhledem k názoru, který na nás mají, a ohrožují naši pokojnou vládu."
- je_ig_suppression_1_goal_desc: "[SCOPE.gsInterestGroup('target').GetName] nesmí být [concept_powerful]."
+ je_ig_suppression_1_goal_desc: "[SCOPE.gsInterestGroup('target').GetName] nesmí být [Concept('concept_powerful','silná')]." # todo: CONCEPT CASE
  je_ig_suppression_1_invalidad_desc: "Odmítli jste pomoc nabídnutou v události $With Friends Like These...$."
  je_ig_suppression_status_1: "O nemorálních činech vůdce skupiny [SCOPE.gsInterestGroup('target').GetName] se rozšířily zvěsti, které podkopávají jeho pověst."
  je_ig_suppression_status_2: "Vůdce skupiny [SCOPE.gsInterestGroup('target').GetName] se po zvěstech o nemorálních činech rozhodl odstoupit."
@@ -286,8 +286,8 @@
  founded_fear_legitimacy: "Poklidný stát"
  je_famine: "Velký hladomor"
  je_famine_reason: "Velká neúroda přinesla našemu lidu nezměrné utrpení a ten naši vládu prosí, aby v této záležitosti přijala zvláštní opatření."
- je_famine_goal: "Počkejte, až hladomor skončí, nebo zvyšte [concept_sol] ve své zemi o 3 body."
- je_major_famines_success: "Počkejte, až hladomor skončí, nebo zvyšte [concept_sol] ve své zemi o 3 body."
+ je_famine_goal: "Počkejte, až hladomor skončí, nebo zvyšte [Concept('concept_sol','životní standard')] ve své zemi o 3 body." # todo: CONCEPT CASE
+ je_major_famines_success: "Počkejte, až hladomor skončí, nebo zvyšte [Concept('concept_sol','životní standard')] ve své zemi o 3 body." # todo: CONCEPT CASE
  natural_disaster_variable: "Utrpěla přírodní katastrofu"
  natural_disaster_events.7.t: "Erupce ve státě [SCOPE.sState('volcanic_state').GetName]"
  natural_disaster_events.7.d: "Státem [SCOPE.sState('volcanic_state').GetName] otřásla prudká erupce. Úlomky tefry a sopečný popel zničily budovy i úrodu a vyžádaly si životy některých našich lidí."
@@ -377,14 +377,14 @@
  romantic_building_modifier: "Romantická architektura"
  preraphaelites_modifier: "Financovaní umělci"
  je_fascism_1: "Síla a velikost"
- je_fascism_1_reason: "Ať už pochází od cizích mocností, nebo od nespokojenců uvnitř našich hranic, hrozba socialismu ohrožuje zničením [ROOT.GetCountry.GetAdjective] národ. Všichni musíme pochodovat pod stejným praporem. Nesmíme zapomenout, kdo jsou naši vůdci a jak jejich síla představuje naši jedinou obranu proti této hrozbě.\n\nDokud je tento [concept_journal_entry] aktivní, rychlost, s jakou se objevují #tooltippable;tooltip:[GetPlayer.GetTooltipTag],fascist_ideologies_list_tt fašistické#! postavy, bude zvýšena."
+ je_fascism_1_reason: "Ať už pochází od cizích mocností, nebo od nespokojenců uvnitř našich hranic, hrozba socialismu ohrožuje zničením [ROOT.GetCountry.GetAdjective] národ. Všichni musíme pochodovat pod stejným praporem. Nesmíme zapomenout, kdo jsou naši vůdci a jak jejich síla představuje naši jedinou obranu proti této hrozbě.\n\nDokud je tento [Concept('concept_journal_entry','záznam v deníku')] aktivní, rychlost, s jakou se objevují #tooltippable;tooltip:[GetPlayer.GetTooltipTag],fascist_ideologies_list_tt fašistické#! postavy, bude zvýšena." # todo: CONCEPT CASE
  fascism_1_tt: "Má #bold fašistického#! vůdce nebo agitátora"
- integralist_agitator_appears_tt: "[GetIdeology('ideology_integralist').GetName] [concept_agitator] se objeví v zemi [ROOT.GetCountry.GetNameNoFlag]"
- fascist_agitator_appears_tt: "[GetIdeology('ideology_fascist').GetName] [concept_agitator] se objeví v zemi [ROOT.GetCountry.GetNameNoFlag]"
- fascists_in_government_tt: "#tooltippable;tooltip:[GetPlayer.GetTooltipTag],fascist_ideologies_list_tt fašističtí#! [Concept('concept_politician', '$concept_politicians$')] jsou nyní [concept_in_government]"
- fascists_out_of_government_tt: "#tooltippable;tooltip:[GetPlayer.GetTooltipTag],fascist_ideologies_list_tt fašističtí#! [Concept('concept_politician', '$concept_politicians$')] nyní nejsou#! [concept_in_government]"
+ integralist_agitator_appears_tt: "[GetIdeology('ideology_integralist').GetName] [Concept('concept_agitator','Agitátor')] se objeví v zemi [ROOT.GetCountry.GetAltAdjectiveNoFlag('A')]" # todo: CONCEPT CASE # todo: COUNTRY CASE
+ fascist_agitator_appears_tt: "[GetIdeology('ideology_fascist').GetName] [Concept('concept_agitator','Agitátor')] se objeví v zemi [ROOT.GetCountry.GetAltAdjectiveNoFlag('A')]" # todo: CONCEPT CASE # todo: COUNTRY CASE
+ fascists_in_government_tt: "#tooltippable;tooltip:[GetPlayer.GetTooltipTag],fascist_ideologies_list_tt fašističtí#! [Concept('concept_politician','politici')] jsou nyní [Concept('concept_in_government','ve vládě')]" # todo: CONCEPT CASE
+ fascists_out_of_government_tt: "#tooltippable;tooltip:[GetPlayer.GetTooltipTag],fascist_ideologies_list_tt fašističtí#! [Concept('concept_politician','politici')] nyní nejsou#! [Concept('concept_in_government','ve vládě')]" # todo: CONCEPT CASE
  blank_tt: ""
- fascist_ideologies_list_tt: "#bold Fašistické#! [Concept('concept_ideology','$concept_ideologies$')|l] zahrnují:\n• [GetIdeology('ideology_fascist').GetName]\n• [GetIdeology('ideology_integralist').GetName]"
+ fascist_ideologies_list_tt: "#bold Fašistické#! [Concept('concept_ideology','ideologie')|l] zahrnují:\n• [GetIdeology('ideology_fascist').GetName]\n• [GetIdeology('ideology_integralist').GetName]" # todo: CONCEPT CASE
  fascist_characters_return_to_normal_tt: "Rychlost, s jakou se objevují #tooltippable;tooltip:[GetPlayer.GetTooltipTag],fascist_ideologies_list_tt fašistické#! postavy, se vrátí do normálu"
  fascist_characters_stays_increased_tt: "Rychlost, s jakou se objevují #tooltippable;tooltip:[GetPlayer.GetTooltipTag],fascist_ideologies_list_tt fašistické#! postavy, zůstane zvýšená"
  fascism_events.1.t: "Noc dlouhých nožů"
@@ -418,8 +418,8 @@
  ignored_fascist_leader_ig_modifier: "Ignorován fašistický vůdce"
  je_fascism_2: "Národ nad jednotlivcem"
  je_fascism_2_reason: "Bezpečná země musí být bezpečná i zevnitř. Zrádci a spiklenci mohou být všude a my musíme být schopni se s nimi vypořádat."
- fascism_2_tt: "Každá zájmová skupina se #tooltippable;tooltip:[GetPlayer.GetTooltipTag],socialist_ideologies_list_tt socialistickým#! nebo [GetIdeology('ideology_radical').GetName] [concept_leader] je [concept_marginalized]"
- fascism_3_tt: "Každé #tooltippable;tooltip:[GetPlayer.GetTooltipTag],socialist_movements_list_tt socialistické#! nebo [GetIdeology('ideology_radical_movement').GetName] [concept_political_movement] je buď #bold marginalizováno#!, nebo je #bold potlačováno#!"
+ fascism_2_tt: "Každá zájmová skupina se #tooltippable;tooltip:[GetPlayer.GetTooltipTag],socialist_ideologies_list_tt socialistickým#! nebo [GetIdeology('ideology_radical').GetName] [Concept('concept_leader','vůdce')] je [Concept('concept_marginalized','marginalizována')]" # todo: CONCEPT CASE
+ fascism_3_tt: "Každé #tooltippable;tooltip:[GetPlayer.GetTooltipTag],socialist_movements_list_tt socialistické#! nebo [GetIdeology('ideology_radical_movement').GetName] [Concept('concept_political_movement','politické hnutí')] je buď #bold marginalizováno#!, nebo je #bold potlačováno#!" # todo: CONCEPT CASE
  fascism_events.3.t: "Organizovaná většina"
  fascism_events.3.d: "Naše ulice jsou bezpečným útočištěm pro náš lid, bezpečnostní složky zajišťují jeho bezpečí dnem i nocí a buřiči jsou na okraji naší fašistické vlády."
  fascism_events.3.f: "„Teplo dne nutí ptáky zpívat povinný chorál, rytmicky doprovázený policejními sirénami hlídkujícími v ulicích. Děti si hrají v parku, než nastane noční zákaz vycházení. Jiná — a bezpečnější — společnost je možná a jdeme správným směrem.“"
@@ -433,13 +433,13 @@
  fascism_events.4.a: "Vskutku, existuje jen jeden způsob."
  fascism_events.4.b: "Všechny cesty vedou do Říma."
  fascism_events.4.c: "Kapitulace je jen jiný druh smrti."
- fascism_leaders.tt: "[SCOPE.gsInterestGroup('new_fascist_ig').GetName] si bude mnohem častěji vybírat fašistické vůdce, když bude [Concept('concept_political_movement_pressure', '$concept_political_movement_pressured_short$')] příslušným [concept_political_movement]."
- conservative_leaders.tt: "[SCOPE.gsInterestGroup('new_fascist_ig').GetName] si bude mnohem častěji vybírat fašistické, tradicionalistické nebo etnonacionalistické vůdce, když bude [Concept('concept_political_movement_pressure', '$concept_political_movement_pressured_short$')] příslušným [concept_political_movement]."
+ fascism_leaders.tt: "[SCOPE.gsInterestGroup('new_fascist_ig').GetName] si bude mnohem častěji vybírat fašistické vůdce, když bude [Concept('concept_political_movement_pressure','pod tlakem')] příslušným [Concept('concept_political_movement','politickým hnutím')]." # todo: CONCEPT CASE
+ conservative_leaders.tt: "[SCOPE.gsInterestGroup('new_fascist_ig').GetName] si bude mnohem častěji vybírat fašistické, tradicionalistické nebo etnonacionalistické vůdce, když bude [Concept('concept_political_movement_pressure','pod tlakem')] příslušným [Concept('concept_political_movement','politickým hnutím')]." # todo: CONCEPT CASE
  modifier_repressed_by_fascists: "Potlačováni fašisty"
- generate_fascist_leader_tt: "[GetIdeology('ideology_fascist').GetName] [concept_politician] převezme vedení skupiny [SCOPE.gsInterestGroup('new_fascist_ig').GetName]"
- generate_integralist_leader_tt: "[GetIdeology('ideology_integralist').GetName] [concept_politician] převezme vedení skupiny [SCOPE.gsInterestGroup('new_fascist_ig').GetName]"
- generate_generically_chudded_leader_tt: "[GetIdeology('ideology_fascist').GetName], [GetIdeology('ideology_traditionalist').GetName] nebo [GetIdeology('ideology_ethno_nationalist').GetName] [concept_politician] převezme vedení skupiny [SCOPE.gsInterestGroup('new_fascist_ig').GetName]"
- generate_brazilian_generically_chudded_leader_tt: "[GetIdeology('ideology_integralist').GetName], [GetIdeology('ideology_traditionalist').GetName] nebo [GetIdeology('ideology_ethno_nationalist').GetName] [concept_politician] převezme vedení skupiny [SCOPE.gsInterestGroup('new_fascist_ig').GetName]"
+ generate_fascist_leader_tt: "[GetIdeology('ideology_fascist').GetName] [Concept('concept_politician','Politik')] převezme vedení skupiny [SCOPE.gsInterestGroup('new_fascist_ig').GetName]" # todo: CONCEPT CASE
+ generate_integralist_leader_tt: "[GetIdeology('ideology_integralist').GetName] [Concept('concept_politician','Politik')] převezme vedení skupiny [SCOPE.gsInterestGroup('new_fascist_ig').GetName]" # todo: CONCEPT CASE
+ generate_generically_chudded_leader_tt: "[GetIdeology('ideology_fascist').GetName], [GetIdeology('ideology_traditionalist').GetName] nebo [GetIdeology('ideology_ethno_nationalist').GetName] [Concept('concept_politician','politik')] převezme vedení skupiny [SCOPE.gsInterestGroup('new_fascist_ig').GetName]" # todo: CONCEPT CASE
+ generate_brazilian_generically_chudded_leader_tt: "[GetIdeology('ideology_integralist').GetName], [GetIdeology('ideology_traditionalist').GetName] nebo [GetIdeology('ideology_ethno_nationalist').GetName] [Concept('concept_politician','politik')] převezme vedení skupiny [SCOPE.gsInterestGroup('new_fascist_ig').GetName]" # todo: CONCEPT CASE
  je_modernization_program: "Program modernizace"
  je_modernization_program_reason: "Mocná země je mocná od samotných pilířů, které ji podpírají. Musíme rozšířit svou infrastrukturu, abychom rozšířili své bohatství."
  je_modernization_program_tt: "Infrastruktura v #bold hlavním městě#! je větší nebo rovna 150"
@@ -455,8 +455,8 @@
  fascism_events.6.f: "„Starobylé legendy minulosti brzy najdou svůj protějšek v našich vlastních nových legendách. Naši národní hrdinové na nás nyní hledí s úsměvem. Náš jazyk, naše kultura, vše, co nás spojuje, syny a dcery společného původu, to konečně uctíme.“"
  fascism_events.6.a: "Náš národ, naše kultura!"
  fascism_events.6.b: "Neměli bychom dopustit, aby nás toto vítězství rozptýlilo."
- ethno_nationalist_leaders.tt: "[SCOPE.gsInterestGroup('ethno_nationalist_ig').GetName] si bude mnohem častěji vybírat etnonacionalistické vůdce, když bude [Concept('concept_political_movement_pressure', '$concept_political_movement_pressured_short$')] příslušným [concept_political_movement]."
- ethno_conservative_leaders.tt: "[SCOPE.gsInterestGroup('ethno_nationalist_ig').GetName] si bude mnohem častěji vybírat etnonacionalistické, fašistické nebo tradicionalistické vůdce, když bude [Concept('concept_political_movement_pressure', '$concept_political_movement_pressured_short$')] příslušným [concept_political_movement]."
+ ethno_nationalist_leaders.tt: "[SCOPE.gsInterestGroup('ethno_nationalist_ig').GetName] si bude mnohem častěji vybírat etnonacionalistické vůdce, když bude [Concept('concept_political_movement_pressure','pod tlakem')] příslušným [Concept('concept_political_movement','politickým hnutím')]." # todo: CONCEPT CASE
+ ethno_conservative_leaders.tt: "[SCOPE.gsInterestGroup('ethno_nationalist_ig').GetName] si bude mnohem častěji vybírat etnonacionalistické, fašistické nebo tradicionalistické vůdce, když bude [Concept('concept_political_movement_pressure','pod tlakem')] příslušným [Concept('concept_political_movement','politickým hnutím')]." # todo: CONCEPT CASE
  je_ethno_nationalist: "Náš národ, naše kultura"
  je_ethno_nationalist_reason: "Domovina našich předků patří nám a nám se také navrátí."
  ethnonationalist_tt: "Má #bold etnonacionalistického nebo fašistického#! vůdce"
@@ -487,17 +487,17 @@
  fascism_events.9.a: "Není důvod zasahovat."
  fascism_events.9.b: "Tento [SCOPE.sCharacter('new_fascist_leader_scope').GetWomanMan] nesmí být vpuštěn k vládě."
  fascism_government_remains_tt: "[SCOPE.sCharacter('new_fascist_leader_scope').GetFullName] bude dovoleno zaujmout [SCOPE.sCharacter('new_fascist_leader_scope').GetHerHis] místo ve vládě"
- fascism_government_expelled_tt: "[GetIdeology('ideology_moderate').GetName] [concept_politician] převezme vedení skupiny [SCOPE.sCharacter('new_fascist_leader_scope').GetInterestGroup.GetName]"
- fascist_becomes_agitator_tt: "[SCOPE.sCharacter('new_fascist_leader_scope').GetFullName] se stane [concept_agitator]"
+ fascism_government_expelled_tt: "[GetIdeology('ideology_moderate').GetName] [Concept('concept_politician','Politik')] převezme vedení skupiny [SCOPE.sCharacter('new_fascist_leader_scope').GetInterestGroup.GetName]" # todo: CONCEPT CASE
+ fascist_becomes_agitator_tt: "[SCOPE.sCharacter('new_fascist_leader_scope').GetFullName] se stane [Concept('concept_agitator','agitátor')]" # todo: CONCEPT CASE
  modifier_government_refused_fascist_seat: "Odmítnuto posadit fašistu"
- fascism_progress_from_fascist_leaders_in_government_tt: "#tooltippable;tooltip:[GetPlayer.GetTooltipTag],fascist_ideologies_list_tt fašističtí#! [Concept('concept_politician', '$concept_politicians$')] [concept_in_government]"
- fascism_progress_from_movement_support_tt: "[Concept('concept_political_movement_support', '$concept_political_movement_support_short$')] [Concept('concept_political_movement','$concept_political_movements$')] ideologií [GetIdeology('ideology_fascist').GetName], [GetIdeology('ideology_reactionary').GetName] a [GetIdeology('ideology_corporatist').GetName]"
- fascism_progress_from_movement_activism_tt: "[Concept('concept_activism', '$concept_activism_short$')] [Concept('concept_political_movement','$concept_political_movements$')] ideologií [GetIdeology('ideology_fascist').GetName], [GetIdeology('ideology_reactionary').GetName] a [GetIdeology('ideology_corporatist').GetName]"
- fascism_progress_from_interest_groups_tt: "[concept_clout] [Concept('concept_interest_group', '$concept_interest_groups$')] s #tooltippable;tooltip:[GetPlayer.GetTooltipTag],fascist_ideologies_list_tt fašistickými#! [Concept('concept_leader', '$concept_leaders$')] nebo [concept_ideology] [GetIdeology('ideology_reactionary').GetName]"
- no_relevant_reactionary_igs_tt: "#bold žádné#! nemarginalizované [Concept('concept_interest_group', '$concept_interest_groups$')] s #tooltippable;tooltip:[GetPlayer.GetTooltipTag],fascist_ideologies_list_tt fašistickými#! [Concept('concept_leader', '$concept_leaders$')] nebo [concept_ideology] [GetIdeology('ideology_reactionary').GetName]"
- fascism_progress_from_characters_tt: "#tooltippable;tooltip:[GetPlayer.GetTooltipTag],fascist_ideologies_list_tt fašistické#! [Concept('concept_character', '$concept_characters$')]"
- fascism_progress_no_fascist_characters_tt: "#bold žádné#! #tooltippable;tooltip:[GetPlayer.GetTooltipTag],fascist_ideologies_list_tt fašistické#! [Concept('concept_character', '$concept_characters$')]"
- fascism_progress_from_state_claims_tt: "nevlastněné státy [concept_homeland] a územní [Concept('concept_claim', '$concept_claims$')]"
+ fascism_progress_from_fascist_leaders_in_government_tt: "#tooltippable;tooltip:[GetPlayer.GetTooltipTag],fascist_ideologies_list_tt fašističtí#! [Concept('concept_politician','politici')] [Concept('concept_in_government','ve vládě')]" # todo: CONCEPT CASE
+ fascism_progress_from_movement_support_tt: "[Concept('concept_political_movement_support','Podpora politického hnutí')] [Concept('concept_political_movement','Politické hnutí')] ideologií [GetIdeology('ideology_fascist').GetName], [GetIdeology('ideology_reactionary').GetName] a [GetIdeology('ideology_corporatist').GetName]" # todo: CONCEPT CASE
+ fascism_progress_from_movement_activism_tt: "[Concept('concept_activism','Aktivismus hnutí')] [Concept('concept_political_movement','Politické hnutí')] ideologií [GetIdeology('ideology_fascist').GetName], [GetIdeology('ideology_reactionary').GetName] a [GetIdeology('ideology_corporatist').GetName]" # todo: CONCEPT CASE
+ fascism_progress_from_interest_groups_tt: "[Concept('concept_clout','Politický vliv')] [Concept('concept_interest_group','Zájmová skupina')] s #tooltippable;tooltip:[GetPlayer.GetTooltipTag],fascist_ideologies_list_tt fašistickými#! [Concept('concept_leader','vůdci')] nebo [Concept('concept_ideology','ideologie')] [GetIdeology('ideology_reactionary').GetName]" # todo: CONCEPT CASE
+ no_relevant_reactionary_igs_tt: "#bold žádné#! nemarginalizované [Concept('concept_interest_group','zájmové skupiny')] s #tooltippable;tooltip:[GetPlayer.GetTooltipTag],fascist_ideologies_list_tt fašistickými#! [Concept('concept_leader','vůdci')] nebo [Concept('concept_ideology','ideologie')] [GetIdeology('ideology_reactionary').GetName]" # todo: CONCEPT CASE
+ fascism_progress_from_characters_tt: "#tooltippable;tooltip:[GetPlayer.GetTooltipTag],fascist_ideologies_list_tt fašistické#! [Concept('concept_character','postavy')]" # todo: CONCEPT CASE
+ fascism_progress_no_fascist_characters_tt: "#bold žádné#! #tooltippable;tooltip:[GetPlayer.GetTooltipTag],fascist_ideologies_list_tt fašistické#! [Concept('concept_character','postavy')]" # todo: CONCEPT CASE
+ fascism_progress_from_state_claims_tt: "nevlastněné státy [Concept('concept_homeland','domovina')] a územní [Concept('concept_claim','nároky')]" # todo: CONCEPT CASE
  fascist_leader_seizes_control_tt: "[SCOPE.sCharacter('fascist_leader').GetFullName] převezme kontrolu nad skupinou [SCOPE.gsInterestGroup('fascist_ig').GetName]"
  fascism_events.10.t: "Zaostávání"
  fascism_events.10.d: "Kdysi raketový vzestup hnutí [GetIdeology('ideology_fascist').GetName] se zdá být u konce. Ačkoli tato ideologie jistě přetrvá, setká se s méně vstřícnou veřejností a mnohem zkušenější opozicí."
@@ -505,12 +505,12 @@
  fascism_events.10.a: "Dobře, že je pryč."
  fascism_events.10.b: "Tohle není konec."
  fascism_events.11.t: "Pochod na [ROOT.GetCountry.GetCapital.GetCityHubName]"
- fascism_events.11.d: "[SCOPE.sCharacter('fascist_leader').GetFullName] oznámil [SCOPE.sCharacter('fascist_leader').GetHerHis] záměr pochodovat na [ROOT.GetCountry.GetCapital.GetCityHubName] ve jménu uchopení moci nad zemí [ROOT.GetCountry.GetName]. [SCOPE.sCharacter('fascist_leader').GetHerHis|U] stoupenci se shromažďují na okrajích města."
+ fascism_events.11.d: "[SCOPE.sCharacter('fascist_leader').GetFullName] oznámil [SCOPE.sCharacter('fascist_leader').GetHerHis] záměr pochodovat na [ROOT.GetCountry.GetCapital.GetCityHubName] ve jménu uchopení moci nad zemí [ROOT.GetCountry.GetAltAdjective('G')]. [SCOPE.sCharacter('fascist_leader').GetHerHis|U] stoupenci se shromažďují na okrajích města." # todo: COUNTRY CASE
  fascism_events.11.f: "„Nemáme v úmyslu dostat se k moci zadními dveřmi. Nemáme v úmyslu vzdát se svého ohromného a ideálního dědictví za ubohý talíř ministerské čočky. Buď nám vládu dají, nebo si ji vezmeme sami!“" #- Several amalgamated Mussolini speeches.
  fascism_events.11.a: "Pověřte [SCOPE.sCharacter('fascist_leader').GetHerHim] sestavením vlády."
  fascism_events.11.b: "Máme plné právo tento převrat zastavit."
  fascism_events.11.c: "Dost! Nařiďte deportaci tohoto [SCOPE.sCharacter('fascist_leader').GetWomanMan]."
- existent_fascist_character_tt: "#tooltippable;tooltip:[GetPlayer.GetTooltipTag],fascist_ideologies_list_tt Fašistické#! hnutí má [concept_character], za kterou se může semknout"
+ existent_fascist_character_tt: "#tooltippable;tooltip:[GetPlayer.GetTooltipTag],fascist_ideologies_list_tt Fašistické#! hnutí má [Concept('concept_character','postava')], za kterou se může semknout" # todo: CONCEPT CASE
  modifier_fading_fascism_character: "Slábnoucí demagog"
  modifier_fading_fascism: "Slábnoucí fašismus"
  modifier_fascists_welcomed_into_government: "Fašistický kabinet"
@@ -592,7 +592,7 @@
  rubber_events.1.c: "Ať kaučuk vždy pohání nový růst."
  rubber_events.1.e: "Vždy se soustřeďte na naše stávající plantáže."
  rubber_always_spread_tt: "Tato událost bude v budoucnu skryta a výše uvedené účinky se použijí automaticky vždy, když nastane kaučuková horečka."
- rubber_always_concentrate_tt: "Tato událost bude v budoucnu skryta a výše uvedené účinky se automaticky použijí na [concept_state] s největším počtem budov [SCOPE.sBuilding('rubber_plantation').GetName], kdykoli bude možná kaučuková horečka."
+ rubber_always_concentrate_tt: "Tato událost bude v budoucnu skryta a výše uvedené účinky se automaticky použijí na [Concept('concept_state','stát')] s největším počtem budov [SCOPE.sBuilding('rubber_plantation').GetName], kdykoli bude možná kaučuková horečka." # todo: CONCEPT CASE
  state_rubber_modifier: "Kaučuková horečka"
  state_rubber_nexus_modifier: "Nelítostný kaučuk"
  children_rights_events.1.t: "Neviditelný pláč"
@@ -821,7 +821,7 @@
  expedition_events.130.a: "Musíme tohoto muže dostat do bezpečí."
  expedition_events.130.b: "Jak víme, že nelže?"
  expedition_events.140.t: "Špatné zprávy"
- expedition_events.140.d: "Při dosažení jedné z enkláv čekal na [SCOPE.sCharacter('expedition_leader').GetFullName] dopis, v němž stálo, že jeho snoubenka doma v zemi [ROOT.GetCountry.GetName] si vzala jiného muže."
+ expedition_events.140.d: "Při dosažení jedné z enkláv čekal na [SCOPE.sCharacter('expedition_leader').GetFullName] dopis, v němž stálo, že jeho snoubenka doma v zemi [ROOT.GetCountry.GetAltAdjective('A')] si vzala jiného muže." # todo: COUNTRY CASE
  expedition_events.140.f: "„Ach, jak zarmoucené je srdce a těžká mysl! Tato zrádkyně očarovala můj rozum a otrávila mou duši! Ach, jaká bída! Ach, jaké zoufalství! Pokud jsou bohové osudu spravedliví a čestní, dopřejí této opovrženíhodné ženě její zasloužený konec!“"
  expedition_events.140.a: "Nechte muže truchlit."
  expedition_events.140.b: "Najde si jinou."
@@ -831,7 +831,7 @@
  expedition_events.150.a: "Potřebujeme každého muže."
  expedition_events.150.b: "Zloděj nám není k užitku."
  expedition_events.160.t: "Platebně neschopný podnik"
- expedition_events.160.d: "Poté, co se v zemi [ROOT.GetCountry.GetName] doslechli o mnoha nebezpečích, kterým expedice čelí, a o jejím malém pokroku, byla odeslána zpráva, že se výprava musí okamžitě vrátit."
+ expedition_events.160.d: "Poté, co se v zemi [ROOT.GetCountry.GetAltAdjective('A')] doslechli o mnoha nebezpečích, kterým expedice čelí, a o jejím malém pokroku, byla odeslána zpráva, že se výprava musí okamžitě vrátit." # todo: COUNTRY CASE
  expedition_events.160.f: "„Ti nafoukaní byrokraté pohodlně sedící za svými dubovými stoly, kouřící doutníky a popíjející starou whisky, znepokojení jen tím, jaký formulář pošlou své další oběti a jaké pekelné odysee nekonečného papírování ji vystaví.\n\nV poledne dorazil dopis: „Pane [SCOPE.sCharacter('expedition_leader').GetFullNameNoFormatting], byli jsme informováni, že vaše expedice nedosahuje očekávaných výsledků...“ Bůh ví, že kdybych ho mohl spálit, okamžitě bych to udělal. Jsem připraven jít kamkoli, pokud to bude vpřed!“"
  expedition_events.160.a: "Tohle je ztráta času."
  expedition_events.160.b: "Teď se nemůžeme vrátit!"
@@ -930,7 +930,7 @@
  freud_rejected_modifier: "Odmítnuta psychoanalýza"
  sigmun_freud_tt: "Sigmund Freud se stane vůdcem skupiny [SCOPE.gsInterestGroup('intelligentsia_ig').GetName] s vysokou popularitou."
  sigmun_freud_else_tt: "Výzkumník s vysokou popularitou se stane vůdcem skupiny [SCOPE.gsInterestGroup('intelligentsia_ig').GetName]."
- freud_agitator_tt: "[SCOPE.sCharacter('freud_scope').GetFullName], [SCOPE.gsInterestGroup('intelligentsia_ig').GetName] [SCOPE.sCharacter('freud_scope').GetIdeology.GetName] [concept_agitator], se objeví v [ROOT.GetCountry.GetName]" # todo: NEW TRANSLATION
+ freud_agitator_tt: "[SCOPE.sCharacter('freud_scope').GetFullName], [SCOPE.gsInterestGroup('intelligentsia_ig').GetName] [SCOPE.sCharacter('freud_scope').GetIdeology.GetName] [Concept('concept_agitator','agitátor')], se objeví v [ROOT.GetCountry.GetAltAdjective('L')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE # todo: COUNTRY CASE
  psychology_events.6.t: "Časopis filozofických studií"
  psychology_events.6.d: "Členové katedry filozofie z budovy [SCOPE.sBuilding('university_building').GetName] ve státě [SCOPE.sState('university_state').GetName] podepsali formální petici za vládní financování svého příštího projektu: vědeckého časopisu."
  psychology_events.6.f: "„Založením našich Filosofických studií vítáme novou éru zkoumání mysli! Éru důkladného výzkumu a seriózního experimentování, éru vědecké spolupráce s našimi zahraničními kolegy, bezpečné útočiště, v němž lze sdílet veškerá bádání týkající se tohoto tématu.“"
@@ -1020,13 +1020,13 @@
  titanic.3.a: "Byla to loď snů."
  titanic_good_modifier: "Úspěch zaoceánského parníku"
  je_krakatoa: "Erupce Krakatoa"
- je_krakatoa_reason: "Následky sopečné erupce ve státě [GetStateRegion('STATE_WEST_JAVA').GetName] stále ovlivňují světové klima a zvyšují četnost i závažnost [Concept('concept_harvest_condition', '$concept_harvest_conditions$')] jako [GetHarvestConditionType('frost').GetName], [GetHarvestConditionType('hailstorm').GetName], [GetHarvestConditionType('disease_outbreak').GetName] a [GetHarvestConditionType('torrential_rains').GetName], dokud se teploty nevrátí k normálu.\n$TSUNAMI_LIST_HEADER$$TSUNAMI_LIST_CONTENT$\n$TSUNAMI_LIST_AFTER$"
+ je_krakatoa_reason: "Následky sopečné erupce ve státě [GetStateRegion('STATE_WEST_JAVA').GetName] stále ovlivňují světové klima a zvyšují četnost i závažnost [Concept('concept_harvest_condition','podmínky sklizně')] jako [GetHarvestConditionType('frost').GetName], [GetHarvestConditionType('hailstorm').GetName], [GetHarvestConditionType('disease_outbreak').GetName] a [GetHarvestConditionType('torrential_rains').GetName], dokud se teploty nevrátí k normálu.\n$TSUNAMI_LIST_HEADER$$TSUNAMI_LIST_CONTENT$\n$TSUNAMI_LIST_AFTER$" # todo: CONCEPT CASE
  krakatoa_je_tt: "Sopka Krakatoa vybuchla."
- TSUNAMI_LIST_HEADER: "$TOOLTIP_DELIMITER$\nVaše [Concept('concept_state', '$concept_states$')], které jsou aktuálně postiženy [concept_devastation] způsobenou [GetHarvestConditionType('tsunami').GetName]:"
+ TSUNAMI_LIST_HEADER: "$TOOLTIP_DELIMITER$\nVaše [Concept('concept_state','státy')], které jsou aktuálně postiženy [Concept('concept_devastation','devastace')] způsobenou [GetHarvestConditionType('tsunami').GetName]:" # todo: CONCEPT CASE
  TSUNAMI_LIST_CONTENT: "#indent_newline:3 \n[GetScriptedGui('je_krakatoa_tsunami_states_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)]#!"
  TSUNAMI_LIST_ENTRY: "[THIS.GetState.GetName]: [THIS.GetState.GetDevastationLevel|-%0]"
- TSUNAMI_LIST_EMPTY_STATE: "Žádný [concept_state] není aktuálně postižen [GetHarvestConditionType('tsunami').GetNameNoFormatting|b]"
- TSUNAMI_LIST_AFTER: "@information! Použití [concept_decree] [GetDecreeType('decree_emergency_relief').GetName] v postižených $concept_states$ přidá každý měsíc #v [SCOPE.ScriptValue('krakatoa_decree_emergency_relief_devastation_recovery_chance')|0]%#! šanci snížit $concept_devastation$ o #v;P [SCOPE.ScriptValue('krakatoa_decree_emergency_relief_devastation_recovery_amount')|0]%#!!"
+ TSUNAMI_LIST_EMPTY_STATE: "Žádný [Concept('concept_state','stát')] není aktuálně postižen [GetHarvestConditionType('tsunami').GetNameNoFormatting|b]" # todo: CONCEPT CASE
+ TSUNAMI_LIST_AFTER: "@information! Použití [Concept('concept_decree','dekret')] [GetDecreeType('decree_emergency_relief').GetName] v postižených státech přidá každý měsíc #v [SCOPE.ScriptValue('krakatoa_decree_emergency_relief_devastation_recovery_chance')|0]%#! šanci snížit $concept_devastation$ o #v;P [SCOPE.ScriptValue('krakatoa_decree_emergency_relief_devastation_recovery_amount')|0]%#!!" # todo: CONCEPT CASE
  je_krakatoa_thermometer_progress_bar_name: "Obnova teploty"
  je_krakatoa_thermometer_progress_bar_desc: "Pokles teploty: #v;blue -[GetGlobalVariable('krakatoa_temperature_drop').GetValue|2] °C#!"
  KRAKATOA_THERMOMETER_MONTHLY_ADD: "$je_krakatoa_thermometer_progress_bar_name$"
@@ -1072,7 +1072,7 @@
  je_prohibition_reason: "Ačkoli jejich postoje vycházejí z velmi odlišných předpokladů, [SCOPE.gsInterestGroup('devout_ig').GetName] i [SCOPE.gsInterestGroup('intelligentsia_ig').GetName] se shodli, že alkohol je jedem pro mysl. Pouze vládní zákaz ukončí toto zlo."
  je_prohibition_goal: "Následující podmínky musí platit celkem 10 let (může být přerušeno):"
  prohibition_fail.tt: "Odmítnuto hnutí střídmosti v události Prohibice."
- prohibition_success.tt: "Likérová [concept_obsession] bude odstraněna z každé primární kultury."
+ prohibition_success.tt: "Likérová [Concept('concept_obsession','obsese')] bude odstraněna z každé primární kultury." # todo: CONCEPT CASE
  prohibition.1.t: "Prohibice"
  prohibition.1.d: "[SCOPE.gsInterestGroup('devout_ig').GetName] i [SCOPE.gsInterestGroup('intelligentsia_ig').GetName] vyjádřili přání zastavit znepokojivou spotřebu alkoholu v naší zemi a žádají vládu, aby jej zakázala."
  prohibition.1.f: "„Nepiji ani nekouřím, protože mi můj učitel vštípil tři základní ctnosti: čistotu těla, čistotu mysli a střídmost.“" #John Burns
@@ -1142,7 +1142,7 @@
  expedition_events.695.e: "Bandě [SCOPE.sCountry('lost_expedition_country').GetAdjectiveNoFormatting] mužů bychom nikdy nemohli věřit. Naostřete nože."
  killed_lost_expedition_tt: "Tento čin může mít následky."
  expedition_events.696.t: "Zpráva se rozšířila"
- expedition_events.696.d: "Krátce po triumfálním návratu byla expedice vedená [SCOPE.sCharacter('expedition_leader').GetFullName] odsouzena zemí [SCOPE.sCountry('lost_expedition_country').GetNameNoFormatting], když sílily zvěsti o její účasti na osudu ztracené expedice."
+ expedition_events.696.d: "Krátce po triumfálním návratu byla expedice vedená [SCOPE.sCharacter('expedition_leader').GetFullName] odsouzena zemí [SCOPE.sCountry('lost_expedition_country').GetAltAdjectiveNoFormatting('G')], když sílily zvěsti o její účasti na osudu ztracené expedice." # todo: COUNTRY CASE
  expedition_events.696.f: "„Bronzové skvrny na jejich šatech, sluncem vyžrané stopy, zoxidované. Jejich tváře zkřivené do dětské grimasy, teď se usmívají, teď se smějí, teď — litují. Snad. Krev zasychala celé týdny, možná měsíce. Nenáviděli to? Byli na své činy pyšní? Mohli se z toho někdy dostat? Zapomenout? Ošklivit si to? Zasychala celé týdny, možná měsíce.“"
  expedition_events.696.a: "[SCOPE.sCharacter('expedition_leader_cruel').GetSheHe|U] musí okamžitě odstoupit!"
  expedition_events.696.b: "Nemají žádný způsob, jak to dokázat."
@@ -1234,7 +1234,7 @@
  election_other_parties_events.5.c: "Někdo by je měl přesvědčit, aby přestali."
  stopped_radicals_modifier: "Postaveno se proti radikalismu"
  je_belle_epoque: "Belle Époque"
- je_belle_epoque_goal: "Veďte zemi [ROOT.GetCountry.GetName] po dobu #BOLD 10 let#! jako kulturní a technologické centrum světa."
+ je_belle_epoque_goal: "Veďte zemi [ROOT.GetCountry.GetAltAdjective('A')] po dobu #BOLD 10 let#! jako kulturní a technologické centrum světa." # todo: COUNTRY CASE
  je_belle_epoque_reason: "Dosáhli jsme tak vysokého uměleckého a společenského pokroku, že nastal čas uvolnit se a užívat si našich úspěchů."
  belle_epoque_sol_trigger: "Více než 50 % našich $concept_incorporated_state$s má $concept_sol$ vyšší než #BOLD 15#!."
  belle_epoque_events.1.t: "Eiffelova věž"
@@ -1304,7 +1304,7 @@
  modifier_cineorama_fire: "Požár Cinéoramy"
  belle_epoque_events.8.t: "Peugeot Serpollet"
  belle_epoque_events.8.t2: "Parní omnibus"
- belle_epoque_events.8.d: "Podnik Peugeot ve spolupráci s inženýrem Léonem Serpolletem vytvořil experimentální návrh parní tříkolky využívající Serpolletův „okamžitý parní generátor“. Přestože zařízení nebylo veřejně uvedeno, stalo se v zemi [ROOT.GetCountry.GetName] symbolem inovace."
+ belle_epoque_events.8.d: "Podnik Peugeot ve spolupráci s inženýrem Léonem Serpolletem vytvořil experimentální návrh parní tříkolky využívající Serpolletův „okamžitý parní generátor“. Přestože zařízení nebylo veřejně uvedeno, stalo se v zemi [ROOT.GetCountry.GetAltAdjective('A')] symbolem inovace." # todo: COUNTRY CASE
  belle_epoque_events.8.d2: "S uvolňováním vládních regulací mechanicky poháněných vozidel a vývojem účinnějších parních motorů začaly ve státě [SCOPE.sState('belle_epoque_state').GetName] stále častěji jezdit parní dopravní autobusy."
  belle_epoque_events.8.f: "„Výhody? Rychlý start, nízká hmotnost, malé rozměry, nízká spotřeba vody... a samozřejmě minimální riziko výbuchu.“"
  belle_epoque_events.8.f2: "„Motorové omnibusy jsou poháněny párou a — což je ve městě povahy [SCOPE.sState('belle_epoque_state').GetFarmHubName] důležité — jsou zcela bez zápachu, hluku a vibrací.“"
@@ -1382,7 +1382,7 @@
  modifier_new_century: "Nové století"
  belle_epoque_events.17.t: "Myšlení fin de siècle"
  belle_epoque_events.17.t2: "Konec století"
- belle_epoque_events.17.d: "S blížícím se koncem století se zemí [ROOT.GetCountry.GetName] přehnalo literární a umělecké hnutí vyjadřující pesimismus a strach ze společenské degenerace."
+ belle_epoque_events.17.d: "S blížícím se koncem století se zemí [ROOT.GetCountry.GetAltAdjective('G')] přehnalo literární a umělecké hnutí vyjadřující pesimismus a strach ze společenské degenerace." # todo: COUNTRY CASE
  belle_epoque_events.17.f: "„Doufám, že zítra bude hezký den, Lane.“\n\n„Nikdy nebývá, pane.“\n\n„Lane, vy jste dokonalý pesimista.“\n\n„Dělám, co mohu, abych uspokojil, pane.“\n\n— Oscar Wilde, #italic Jak je důležité míti Filipa#!"
  belle_epoque_events.17.a: "Svět se zlepšuje — copak neviděli naše údaje o HDP?"
  belle_epoque_events.17.b: "V srdci každého z nás je semínko pesimismu."

@@ -3,10 +3,10 @@
  je_portuguese_colonialism_reason: "Bylo by velkou ostudou a nespravedlností, kdyby naše staletá říše zaostala za říšemi jiných mocností.\n\nJelikož již máme opěrný bod na pobřežích Afriky, jsme odhodláni chopit se příležitosti a rozšířit vliv naší kultury.\n\nNaše první tažení má za cíl založit kolonie na jižních koncích strategických oblastí [SCOPE.sStrategicRegion('congo_scope').GetName] a [SCOPE.sStrategicRegion('zanj_scope').GetName], takže bychom mohli zvážit jejich prohlášení za naše strategické zájmy, pokud jsme tak již neučinili. Poté se zaměříme na propojení obou pobřeží uprostřed. Naši koloniální specialisté již pracují na mapování této oblasti, ale nejprve bychom měli v oblasti zanechat stopu prostřednictvím nově založených kolonií."
  je_the_pink_map: "Růžová mapa"
  je_the_pink_map_reason: "Poté, co se nám podařilo úspěšně založit několik kolonií na východním i západním pobřeží Afriky, můžeme využít příležitosti a propojit je koridorem v nitru kontinentu.\n\nVypracovali jsme návrh nazvaný #bold Růžová mapa#!, který vymezuje naše cíle ohledně oblastí určených ke kolonizaci. Splnění takového cíle z nás v koloniálním soupeření učiní nepřekonatelnou mocnost."
- owned_by_root_or_a_colonial_subject_tt: "Je vlastněno zemí [ROOT.GetCountry.GetName] nebo kteroukoli z jejích #v $colonial$#! či #v $company$#! [Concept('concept_subject', '$concept_subjects$')]"
- does_not_own_any_state_in_angola_or_mozambique_tt: "[ROOT.GetCountry.GetName] ani žádná z jejích #v $colonial$#! či #v $company$#! [Concept('concept_subject', '$concept_subjects$')] #b nevlastní#! žádné [Concept('concept_state', '$concept_states$')] v #v $geographic_region_angola$#! ani #v $geographic_region_mozambique$#!"
- does_not_own_any_state_in_angola_mozambique_or_zambezi_basin_tt: "[ROOT.GetCountry.GetName] ani žádná z jejích #v $colonial$#! či #v $company$#! [Concept('concept_subject', '$concept_subjects$')] #b nevlastní#! žádné [Concept('concept_state', '$concept_states$')] v #v $geographic_region_angola$#!, #v $geographic_region_mozambique$#! ani #v $geographic_region_zambezi_basin$#!"
- three_states_or_more_tt: "Alespoň #v 3#! [Concept('concept_state', '$concept_states$')]:"
+ owned_by_root_or_a_colonial_subject_tt: "Je vlastněno zemí [ROOT.GetCountry.GetAltAdjective('G')] nebo kteroukoli z jejích #v $colonial$#! či #v $company$#! [Concept('concept_subject','závislé země')]" # todo: CONCEPT CASE # todo: COUNTRY CASE
+ does_not_own_any_state_in_angola_or_mozambique_tt: "[ROOT.GetCountry.GetName] ani žádná z jejích #v $colonial$#! či #v $company$#! [Concept('concept_subject','závislé země')] #b nevlastní#! žádné [Concept('concept_state','státy')] v #v $geographic_region_angola$#! ani #v $geographic_region_mozambique$#!" # todo: CONCEPT CASE
+ does_not_own_any_state_in_angola_mozambique_or_zambezi_basin_tt: "[ROOT.GetCountry.GetName] ani žádná z jejích #v $colonial$#! či #v $company$#! [Concept('concept_subject','závislé země')] #b nevlastní#! žádné [Concept('concept_state','státy')] v #v $geographic_region_angola$#!, #v $geographic_region_mozambique$#! ani #v $geographic_region_zambezi_basin$#!" # todo: CONCEPT CASE
+ three_states_or_more_tt: "Alespoň #v 3#! [Concept('concept_state','státy')]:" # todo: CONCEPT CASE
  pink_map: "Navrhnout Růžovou mapu"
  pink_map_desc: "Vyslat delegaci diplomatů do Británie, aby vyjednala naše ambice ohledně Růžové mapy. Toto tažení, označované také jako #bold růžově zbarvená mapa#!, usiluje o vytvoření pozemního spojení mezi našimi koloniemi v oblastech [GetGeographicRegion('geographic_region_angola').GetNameNoFormatting] a [GetGeographicRegion('geographic_region_mozambique').GetNameNoFormatting]."
  pink_map_tt2: "Pokud se rozhodneme tento záměr sledovat, naši diplomaté připraví prezentaci a odcestují do #bold Británie#!, aby si vyžádali její souhlas. Může nám svůj souhlas jednoduše udělit, požádat o vzájemnou laskavost, nebo náš návrh odmítnout. Bez ohledu na její odpověď si ponecháme možnost v tažení pokračovat."
@@ -27,7 +27,7 @@
  portuguese_colonialism.2.a: "Musíme tyto kolonie rychle zalidnit."
  portuguese_colonialism.2.b: "Dejte našim odpůrcům vědět, že staré [SCOPE.sCountry('por_scope').GetName] je zpět."
  portuguese_colonialism.2.c: "Celý svět pozná naši velikost."
- portuguese_colonialism.2.the_pink_map_tt: "#b $pink_map$#! [concept_decision] je nyní dostupné"
+ portuguese_colonialism.2.the_pink_map_tt: "#b $pink_map$#! [Concept('concept_decision','rozhodnutí')] je nyní dostupné" # todo: CONCEPT CASE
  portuguese_colonialism.3.t: "Neplodné založení"
  portuguese_colonialism.3.d: "Naše pokusy kolonizovat africká pobřeží skončily nešťastným pochybením. Nepodařilo se nám založit ani udržet jedinou kolonii v okolí pevniny, na kterou jsme původně mířili."
  portuguese_colonialism.3.f: "„N'wanango, psi jsou konečně pryč. Hnáni lvy utekli, aniž by se ohlédli.“\n\nZvedla ruku, aby si zastínila oči, přimhouřila je směrem ke svému muži a řekla:\n\n„A vrátí se někdy, Mwanapwesi?“\n\n„Jako je tato země svědkem jejich zbabělosti a tyto stromy jejich chamtivosti, moji synové – naši synové – jim ukážou sílu smečky, pokud se o to někdy pokusí.“"
@@ -39,21 +39,21 @@
  portuguese_colonialism.4.a: "To nám nijak neuškodí."
  portuguese_colonialism.4.a_tt: "[SCOPE.sCountry('por_scope').GetName] obdrží naše požehnání pro #bold Růžovou mapu#!."
  portuguese_colonialism.4.b: "Můžeme tak učinit, s jednou výhradou."
- portuguese_colonialism.4.b_tt: "[SCOPE.sCountry('por_scope').GetName] obdrží událost týkající se našeho požadavku a pokud jej přijme, bude nám dlužit [concept_obligation]. Může také ustoupit, nebo náš požadavek ignorovat."
+ portuguese_colonialism.4.b_tt: "[SCOPE.sCountry('por_scope').GetName] obdrží událost týkající se našeho požadavku a pokud jej přijme, bude nám dlužit [Concept('concept_obligation','závazek')]. Může také ustoupit, nebo náš požadavek ignorovat." # todo: CONCEPT CASE
  portuguese_colonialism.4.c: "To je nepřijatelný požadavek."
- portuguese_colonialism.4.c_tt: "[SCOPE.sCountry('por_scope').GetName] obdrží událost týkající se našeho odmítnutí. Stále se může rozhodnout pokračovat, což poškodí naše [concept_relations]."
- might_get_additional_rewards_tt: "[SCOPE.sCountry('por_scope').GetName] může poslat další projev svého uznání, čímž nám poskytne zvýšenou [concept_prestige] a lepší [concept_relations] s #v $POR$#!"
+ portuguese_colonialism.4.c_tt: "[SCOPE.sCountry('por_scope').GetName] obdrží událost týkající se našeho odmítnutí. Stále se může rozhodnout pokračovat, což poškodí naše [Concept('concept_relations','vztahy')]." # todo: CONCEPT CASE
+ might_get_additional_rewards_tt: "[SCOPE.sCountry('por_scope').GetName] může poslat další projev svého uznání, čímž nám poskytne zvýšenou [Concept('concept_prestige','prestiž')] a lepší [Concept('concept_relations','vztahy')] s #v $POR$#!" # todo: CONCEPT CASE
  portuguese_colonialism.5.t: "[SCOPE.sCountry('gbr_scope').GetName] uznává Růžovou mapu"
  portuguese_colonialism.5.d: "[SCOPE.sCountry('gbr_scope').GetName] nám dala své požehnání pro tažení Růžové mapy. Zahájíme přípravy."
  portuguese_colonialism.5.f: "Pereira si naposledy upravil oděv, než vstoupil do pokoje vikomta Duarteho. Věděl, že zpráva o jeho úspěchu se rozšířila rychleji, než sem stačil dorazit, ale přesto se těšil, až se o svůj úspěch podělí, a očekával hrdý pohled otce na syna.\n\nA přesně to se stalo. Duarte byl nadšený, že jeho žák po letech plnění prostých úkolů konečně zažil diplomatický triumf."
  portuguese_colonialism.5.a: "Patří jim naše vděčnost."
  portuguese_colonialism.5.b: "Poslat jim na oplátku za jejich dobrou vůli něco hodnotného."
- portuguese_colonialism.5.b_tt: "Bude objednáno nádherné umělecké dílo a posláno zemi [SCOPE.sCountry('gbr_scope').GetName] jako dar. Získá posílení své [concept_prestige] a naše [concept_relations] s ní se zvýší o #bold 30#!."
+ portuguese_colonialism.5.b_tt: "Bude objednáno nádherné umělecké dílo a posláno zemi [SCOPE.sCountry('gbr_scope').GetAltAdjective('A')] jako dar. Získá posílení své [Concept('concept_prestige','prestiže')] a naše [Concept('concept_relations','vztahy')] s ní se zvýší o #bold 30#!." # todo: CONCEPT CASE # todo: COUNTRY CASE
  portuguese_colonialism.6.t: "[SCOPE.sCountry('gbr_scope').GetName] odmítá Růžovou mapu"
  portuguese_colonialism.6.d: "[SCOPE.sCountry('gbr_scope').GetName] nám odmítla dát své požehnání pro tažení Růžové mapy. Jaká bude naše odpověď?"
  portuguese_colonialism.6.f: "Majitel novinového tisku úzkostně čekal a ve stanovený čas příjezdu důstojníka a jeho lidí zůstával nehybný.\n\nPoté, co vydal varování, si uvědomil, že označit události v Británii v zítřejších novinách za „selhání“ by mohlo způsobit potíže. Přesto byl připraven čelit pokusům prospěchářů využít jeho mocenské postavení."
  portuguese_colonialism.6.a: "Neměli bychom dráždit šelmu."
- portuguese_colonialism.6.a_tt: "To nám navždy znemožní přidat záznam #bold Růžová mapa#! do našeho [concept_journal_entry]."
+ portuguese_colonialism.6.a_tt: "To nám navždy znemožní přidat záznam #bold Růžová mapa#! do našeho [Concept('concept_journal_entry','záznamu v deníku')]." # todo: CONCEPT CASE
  portuguese_colonialism.6.b: "Nu, alespoň jsme to zkusili."
  portuguese_colonialism.6.b_tt: "Agresivita země [SCOPE.sCountry('gbr_scope').GetName] vůči nám se zvýší."
  portuguese_colonialism.8.t: "Splněný sen"
@@ -70,23 +70,23 @@
  portuguese_colonialism.10.d: "[SCOPE.sCountry('gbr_scope').GetName] požádala o ústupky výměnou za svůj souhlas s tažením Růžové mapy."
  portuguese_colonialism.10.f: "„Vaše Excelence, je nepravděpodobné, že se postaví proti našim nárokům Růžové mapy, pokud nabídneme určité ústupky. Jak se říká, [SCOPE.sCountry('por_scope').GetNameNoFormatting] může nakreslit mapu, ale [SCOPE.sCountry('gbr_scope').GetAdjectiveNoFormatting] strana ovládá štětec. Říci ne by mohlo vést k izolaci; souhlas zajistí jejich podporu, ale v očích našich poddaných nás učiní slabými.\n\nČekáme na váš verdikt.“"
  portuguese_colonialism.10.a: "Tentokrát jim nechme jejich vůli."
- portuguese_colonialism.10.a_tt: "[SCOPE.sCountry('gbr_scope').GetName] vypracuje #bold [concept_treaty] Růžové mapy#! se zemí [SCOPE.sCountry('por_scope').GetName], který zaváže [SCOPE.sCountry('por_scope').GetName] platit tribut @money! #bold 200#! měsíčně po dobu #bold 24 měsíců#!."
+ portuguese_colonialism.10.a_tt: "[SCOPE.sCountry('gbr_scope').GetName] vypracuje #bold [Concept('concept_treaty','smlouva')] Růžové mapy#! se zemí [SCOPE.sCountry('por_scope').GetAltAdjective('G')], který zaváže [SCOPE.sCountry('por_scope').GetName] platit tribut @money! #bold 200#! měsíčně po dobu #bold 24 měsíců#!." # todo: CONCEPT CASE # todo: COUNTRY CASE
  portuguese_colonialism.10.b: "Začíná to působit jako bezúčelná ambice."
  portuguese_colonialism.10.c: "Co si vůbec myslí?"
  notification_pink_map_britain_portugal_intractable_name: "Neústupná země [SCOPE.sCountry('por_scope').GetName]"
- notification_pink_map_britain_portugal_intractable_desc: "Navzdory našemu postoji [SCOPE.sCountry('por_scope').GetName] prohlásila, že bude usilovat o svou ambici uskutečnit Růžovou mapu."
+ notification_pink_map_britain_portugal_intractable_desc: "Navzdory našemu postoji [SCOPE.sCountry('por_scope').GetAltAdjective('D')] prohlásila, že bude usilovat o svou ambici uskutečnit Růžovou mapu." # todo: COUNTRY CASE
  notification_pink_map_britain_portugal_intractable_tooltip: "#header $notification_pink_map_britain_portugal_intractable_name$#!\n$TOOLTIP_DELIMITER$\n$notification_pink_map_britain_portugal_intractable_desc$"
  notification_pink_map_britain_accepts_with_gift_name: "[SCOPE.sCountry('por_scope').GetName] posílá dar"
- notification_pink_map_britain_accepts_with_gift_desc: "[SCOPE.sCountry('por_scope').GetAdjective] úředníci nám poslali krásné umělecké dílo jako odměnu za naše požehnání Růžové mapě.\n\nNaše [concept_prestige] se odpovídajícím způsobem zvýšila."
+ notification_pink_map_britain_accepts_with_gift_desc: "[SCOPE.sCountry('por_scope').GetAdjective] úředníci nám poslali krásné umělecké dílo jako odměnu za naše požehnání Růžové mapě.\n\nNaše [Concept('concept_prestige','prestiž')] se odpovídajícím způsobem zvýšila." # todo: CONCEPT CASE
  notification_pink_map_britain_accepts_with_gift_tooltip: "#header $notification_pink_map_britain_accepts_with_gift_name$#!\n$TOOLTIP_DELIMITER$\n$notification_pink_map_britain_accepts_with_gift_desc$"
  notification_pink_map_britain_portugal_backs_down_name: "[SCOPE.sCountry('por_scope').GetName] opouští Růžovou mapu"
- notification_pink_map_britain_portugal_backs_down_desc: "[SCOPE.sCountry('por_scope').GetName] se rozhodla opustit Růžovou mapu. Kvůli expanzi se bude muset poohlédnout jinde.\n\nNaše [concept_prestige] se odpovídajícím způsobem zvýšila."
+ notification_pink_map_britain_portugal_backs_down_desc: "[SCOPE.sCountry('por_scope').GetName] se rozhodla opustit Růžovou mapu. Kvůli expanzi se bude muset poohlédnout jinde.\n\nNaše [Concept('concept_prestige','prestiž')] se odpovídajícím způsobem zvýšila." # todo: CONCEPT CASE
  notification_pink_map_britain_portugal_backs_down_tooltip: "#header $notification_pink_map_britain_portugal_backs_down_name$#!\n$TOOLTIP_DELIMITER$\n$notification_pink_map_britain_portugal_backs_down_desc$"
  notification_pink_map_britain_accepts_with_favor_name: "[SCOPE.sCountry('por_scope').GetName] poskytuje kompenzaci"
  notification_pink_map_britain_accepts_with_favor_desc: "[SCOPE.sCountry('por_scope').GetName] vyhověla naší žádosti o kompenzaci výměnou za náš souhlas s Růžovou mapou."
  notification_pink_map_britain_accepts_with_favor_tooltip: "#header $notification_pink_map_britain_accepts_with_favor_name$#!\n$TOOLTIP_DELIMITER$\n$notification_pink_map_britain_accepts_with_favor_desc$"
  notification_pink_map_britain_portugal_ignores_name: "[SCOPE.sCountry('por_scope').GetName] ignoruje náš požadavek"
- notification_pink_map_britain_portugal_ignores_desc: "[SCOPE.sCountry('por_scope').GetAdjective] strana odmítla náš požadavek a uvedla, že je odhodlána uskutečnit Růžovou mapu bez kompromisů.\n\nNaše [concept_prestige] se snížila a [concept_relations] se zemí [SCOPE.sCountry('por_scope').GetNameNoFormatting] utrpěly."
+ notification_pink_map_britain_portugal_ignores_desc: "[SCOPE.sCountry('por_scope').GetAdjective] strana odmítla náš požadavek a uvedla, že je odhodlána uskutečnit Růžovou mapu bez kompromisů.\n\nNaše [Concept('concept_prestige','prestiž')] se snížila a [Concept('concept_relations','vztahy')] se zemí [SCOPE.sCountry('por_scope').GetAltAdjectiveNoFormatting('G')] utrpěly." # todo: CONCEPT CASE # todo: COUNTRY CASE
  notification_pink_map_britain_portugal_ignores_tooltip: "#header $notification_pink_map_britain_portugal_ignores_name$#!\n$TOOLTIP_DELIMITER$\n$notification_pink_map_britain_portugal_ignores_desc$"
  portuguese_colonialism.15.t: "Stát Indie"
  portuguese_colonialism.15.d: "Nedávné sčítání ve státě [SCOPE.sState('goa_scope').GetName] jasně ukázalo, že si zaslouží oficiální uznání vlády a začlenění jako [SCOPE.sCountry('por_scope').GetAdjective] stát."

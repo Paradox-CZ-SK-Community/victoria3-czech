@@ -1,26 +1,26 @@
 ﻿l_polish:
  je_cuba_espanol: "Cuba es España"
- je_cuba_espanol_reason: "Kuba zůstává věrná zemi [ROOT.GetCountry.GetOverlord.GetNameNoFlag]. Natolik věrná, že reformisté mezi [SCOPE.gsInterestGroup('landholders').GetName] usilují o to, aby byla [ROOT.GetCountry.GetNameNoFlag] uznána jako formální [ROOT.GetCountry.GetOverlord.GetAdjectiveNoFormatting] provincie s odpovídajícím zastoupením v cortes a aby bílí [SCOPE.sCulture('caribeno').GetName] gentlemani byli od nynějška považováni za [SCOPE.sCulture('spanish').GetName]. Mnozí ostrovní [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]ové jejich nárok podporují.\n\nJak se Cubanos a Španělé stále více politicky i ekonomicky proplétají, existuje šance, že se sen reformistů naplní; Kuba už nebude kolonií, ale skutečnou součástí země [ROOT.GetCountry.GetOverlord.GetNameNoFormatting]."
- je_cuba_espanol_tracker: "[concept_liberty_desire] je #v [ROOT.GetCountry.GetLibertyDesireRaw|0]#! #tooltippable;tooltip:[ROOT.GetCountry.GetTooltipTag],liberty_desire_factors_tt (#v #blue [ROOT.GetCountry.GetWeeklyLibertyDesireChange|2]#!#!#! týdně)"
+ je_cuba_espanol_reason: "Kuba zůstává věrná zemi [ROOT.GetCountry.GetOverlord.GetAltAdjectiveNoFlag('A')]. Natolik věrná, že reformisté mezi [SCOPE.gsInterestGroup('landholders').GetName] usilují o to, aby byla [ROOT.GetCountry.GetNameNoFlag] uznána jako formální [ROOT.GetCountry.GetOverlord.GetAdjectiveNoFormatting] provincie s odpovídajícím zastoupením v cortes a aby bílí [SCOPE.sCulture('caribeno').GetName] gentlemani byli od nynějška považováni za [SCOPE.sCulture('spanish').GetName]. Mnozí ostrovní [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]ové jejich nárok podporují.\n\nJak se Cubanos a Španělé stále více politicky i ekonomicky proplétají, existuje šance, že se sen reformistů naplní; Kuba už nebude kolonií, ale skutečnou součástí země [ROOT.GetCountry.GetOverlord.GetNameNoFormatting]." # todo: COUNTRY CASE
+ je_cuba_espanol_tracker: "[Concept('concept_liberty_desire','Touha po svobodě')] je #v [ROOT.GetCountry.GetLibertyDesireRaw|0]#! #tooltippable;tooltip:[ROOT.GetCountry.GetTooltipTag],liberty_desire_factors_tt (#v #blue [ROOT.GetCountry.GetWeeklyLibertyDesireChange|2]#!#!#! týdně)" # todo: CONCEPT CASE
  je_cuba_espanol_completion_header: "Kuba se může spojit se Španělskem, pokud:\n"
  liberty_desire_factors_tt: "[Country.GetWeeklyLibertyDesireChangeDesc]"
  je_cuba_espanol_completion_header_victory_header: "#title Pokud se Kuba spojí se Španělskem:#!\n$EFFECT$"
- has_investment_rights_with_overlord: "[ROOT.GetCountry.GetName] získala od země [ROOT.GetCountry.GetOverlord.GetName] [concept_foreign_investment_rights]"
- join_with_spain_choice_tt: "[ROOT.GetCountry.GetName] se může připojit k zemi [ROOT.GetCountry.GetOverlord.GetName] jako jediný národ"
- join_with_spain_no_independence_tt: "#v $je_cuba_independencia$#! [concept_journal_entry] selže"
- CUB_espana_total_country_exports_greater_than_tt: "[ROOT.GetCountry.GetName] vyváží na [concept_world_market] více než #v [GetPlayer.MakeScope.ScriptValue('je_cuba_es_espana_export_target')|0]#! [Concept('concept_good', '$concept_goods$')]."
+ has_investment_rights_with_overlord: "[ROOT.GetCountry.GetName] získala od země [ROOT.GetCountry.GetOverlord.GetName] [Concept('concept_foreign_investment_rights','práva na zahraniční investice')]" # todo: CONCEPT CASE
+ join_with_spain_choice_tt: "[ROOT.GetCountry.GetName] se může připojit k zemi [ROOT.GetCountry.GetOverlord.GetAltAdjective('A')] jako jediný národ" # todo: COUNTRY CASE
+ join_with_spain_no_independence_tt: "#v $je_cuba_independencia$#! [Concept('concept_journal_entry','záznam v deníku')] selže" # todo: CONCEPT CASE
+ CUB_espana_total_country_exports_greater_than_tt: "[ROOT.GetCountry.GetName] vyváží na [Concept('concept_world_market','světový trh')] více než #v [GetPlayer.MakeScope.ScriptValue('je_cuba_es_espana_export_target')|0]#! [Concept('concept_good','zboží')]." # todo: CONCEPT CASE
  je_cuba_la_vida_dulce: "La Vida Dulce"
- je_cuba_la_vida_dulce_reason: "Kuba ovládla obchod s cukrem, z velké části díky pokračujícímu pašování [GetPopType('slaves').GetName]. Dlouhodobá prosperita národa bude záviset na rozšiřování těchto zavedených tras [concept_trade]. \n\nPokud bude otroctví zrušeno, možná se jednoho dne budou moci všichni Cubanos těšit ze sladšího života."
+ je_cuba_la_vida_dulce_reason: "Kuba ovládla obchod s cukrem, z velké části díky pokračujícímu pašování [GetPopType('slaves').GetName]. Dlouhodobá prosperita národa bude záviset na rozšiřování těchto zavedených tras [Concept('concept_trade','obchodu')]. \n\nPokud bude otroctví zrušeno, možná se jednoho dne budou moci všichni Cubanos těšit ze sladšího života." # todo: CONCEPT CASE
  je_cuba_la_vida_dulce_trade_tracker: "Celkem vyvezené zboží: #g [GetPlayer.MakeScope.ScriptValue('total_country_exports')|0]#!"
- la_vida_dulce_completed: "[ROOT.GetCountry.GetNameNoFlag] dokončila [concept_journal_entry] $je_cuba_la_vida_dulce$"
- slavery_abolished_for_more_tt: "Pokud je zrušeno [concept_slavery], [ROOT.GetCountry.GetName] získá #tooltippable;tooltip:[GetPlayer.GetTooltipTag],cuba_success_without_slavery_tt $cuba_success_without_slavery$ #!na #v 30#! let:\n[GetStaticModifier('cuba_success_without_slavery').GetDesc]"
+ la_vida_dulce_completed: "[ROOT.GetCountry.GetNameNoFlag] dokončila [Concept('concept_journal_entry','záznam v deníku')] $je_cuba_la_vida_dulce$" # todo: CONCEPT CASE
+ slavery_abolished_for_more_tt: "Pokud je zrušeno [Concept('concept_slavery','otroctví')], [ROOT.GetCountry.GetName] získá #tooltippable;tooltip:[GetPlayer.GetTooltipTag],cuba_success_without_slavery_tt $cuba_success_without_slavery$ #!na #v 30#! let:\n[GetStaticModifier('cuba_success_without_slavery').GetDesc]" # todo: CONCEPT CASE
  cuba_success_without_slavery_tt: "[GetStaticModifier('cuba_success_without_slavery').GetName|v]\n[GetStaticModifier('cuba_success_without_slavery').GetDesc]"
  cuba_dominate_market: "Dobře zavedené obchodní trasy"
  reformists_gone_pro_cuba: "Viva Cuba"
  cuba_dont_hurt_business: "Reformistické ústupky"
- CUB_total_country_exports_greater_than_tt: "[ROOT.GetCountry.GetName] vyváží na [concept_world_market] více než #v [GetPlayer.MakeScope.ScriptValue('je_cuba_la_vida_dulce_export_target')|0]#! [Concept('concept_good', '$concept_goods$')]."
+ CUB_total_country_exports_greater_than_tt: "[ROOT.GetCountry.GetName] vyváží na [Concept('concept_world_market','světový trh')] více než #v [GetPlayer.MakeScope.ScriptValue('je_cuba_la_vida_dulce_export_target')|0]#! [Concept('concept_good','zboží')]." # todo: CONCEPT CASE
  je_cuba_independencia: "Independencia"
- je_cuba_independencia_reason: "Kubánská touha po svobodě je rozdělená. \n\nNěkteří hledají spojence za Mexickým zálivem a doufají, že svobodu ostrova vykoupí americkými mincemi, nikoli kubánskou krví. Mezitím se na podlahách doutníkáren šeptá o svobodné Kubě, nespoutané žádnou mocí kromě vášně a vůle jejího lidu.\n\n#v Která cesta ke svobodě?#!\nNejprve musí národ získat dostatečný [concept_liberty_desire], jinak svoboda od země [ROOT.GetCountry.GetOverlord.GetName] zůstane pouhým snem. Poté různé #tooltippable;tooltip:[GetPlayer.GetTooltipTag],total_factors_tt faktory#! povedou hledače svobody buď k touze být odkoupeni zemí [SelectLocalization(SCOPE.sCountry('csa').Exists, SCOPE.sCountry('csa').GetNameNoFormatting, SCOPE.sCountry('usa').GetDefinition.GetName)], nebo k úsilí o skutečnou nezávislost."
+ je_cuba_independencia_reason: "Kubánská touha po svobodě je rozdělená. \n\nNěkteří hledají spojence za Mexickým zálivem a doufají, že svobodu ostrova vykoupí americkými mincemi, nikoli kubánskou krví. Mezitím se na podlahách doutníkáren šeptá o svobodné Kubě, nespoutané žádnou mocí kromě vášně a vůle jejího lidu.\n\n#v Která cesta ke svobodě?#!\nNejprve musí národ získat dostatečný [Concept('concept_liberty_desire','touha po svobodě')], jinak svoboda od země [ROOT.GetCountry.GetOverlord.GetName] zůstane pouhým snem. Poté různé #tooltippable;tooltip:[GetPlayer.GetTooltipTag],total_factors_tt faktory#! povedou hledače svobody buď k touze být odkoupeni zemí [SelectLocalization(SCOPE.sCountry('csa').Exists, SCOPE.sCountry('csa').GetNameNoFormatting, SCOPE.sCountry('usa').GetDefinition.GetName)], nebo k úsilí o skutečnou nezávislost." # todo: CONCEPT CASE
  je_cuba_custom_status_desc: "[ROOT.GetCountry.GetCustom('GetJoinUSALine')]"
  je_cuba_stay_status_desc: "Svoboda je jen snem..."
  je_cuba_neutral_status_desc: "Cesta ke svobodě není rozhodnuta"
@@ -47,24 +47,24 @@
  slave_revolt_inspired: "Naděje"
  american_florida_nextdoor_tt: "[SCOPE.sStateRegion('florida_region').GetName] je vlastněna zemí [SelectLocalization(SCOPE.sCountry('csa').Exists, SCOPE.sCountry('csa').GetName, '')][SelectLocalization(SCOPE.sCountry('csa').Exists, ' nebo ', '')][SelectLocalization(SCOPE.sCountry('usa').Exists, SCOPE.sCountry('usa').GetName, 'US')]"
  have_not_attempted_failed_negotiations_3_yrs_tt: "Během posledních 3 let jsme se nepokusili o podobná jednání."
- join_usa_same_slave_law_tt: "[SelectLocalization(SCOPE.sCountry('csa').Exists, 'CSA' , 'USA' )] také praktikuje [concept_slavery]"
- join_usa_free_slave_law_tt: "Kuba i [SelectLocalization(SCOPE.sCountry('csa').Exists, 'CSA', 'USA')] postavily [concept_slavery] mimo zákon"
- join_usa_different_slave_law_tt: "[SelectLocalization(SCOPE.sCountry('csa').Exists, 'CSA', 'USA')] má nekompatibilní [concept_law] týkající se [concept_slavery]"
- join_usa_economic_dependence_with_USA_tt: "[concept_economic_dependence] na [SelectLocalization(SCOPE.sCountry('csa').Exists, 'CSA', 'USA')]"
+ join_usa_same_slave_law_tt: "[SelectLocalization(SCOPE.sCountry('csa').Exists, 'CSA' , 'USA' )] také praktikuje [Concept('concept_slavery','otroctví')]" # todo: CONCEPT CASE
+ join_usa_free_slave_law_tt: "Kuba i [SelectLocalization(SCOPE.sCountry('csa').Exists, 'CSA', 'USA')] postavily [Concept('concept_slavery','otroctví')] mimo zákon" # todo: CONCEPT CASE
+ join_usa_different_slave_law_tt: "[SelectLocalization(SCOPE.sCountry('csa').Exists, 'CSA', 'USA')] má nekompatibilní [Concept('concept_law','zákona')] týkající se [Concept('concept_slavery','otroctvím')]" # todo: CONCEPT CASE
+ join_usa_economic_dependence_with_USA_tt: "[Concept('concept_economic_dependence','Ekonomická závislost')] na [SelectLocalization(SCOPE.sCountry('csa').Exists, 'CSA', 'USA')]" # todo: CONCEPT CASE
  usa_does_not_exist_tt: "Američané nám nemohou pomoci"
- join_usa_same_powerbloc_compared_to_spain_tt: "[concept_power_bloc_leverage] USA oproti [Concept('concept_power_bloc','$concept_power_blocs$')] země $SPA$"
- join_usa_usa_powerbloc_tt: "[concept_power_bloc_leverage] [Concept('concept_power_bloc', 'mocenského bloku')] země [SelectLocalization(SCOPE.sCountry('csa').Exists, 'CSA', 'USA')]"
- join_usa_no_powerblocs_tt: "[SelectLocalization(SCOPE.sCountry('csa').Exists, 'CSA', 'USA')] ještě nevytvořila [concept_power_bloc]"
- join_usa_sol_spa_tt: "[concept_sol] v [SelectLocalization(SCOPE.sCountry('csa').Exists, 'CSA', 'USA')] oproti Kubě"
- join_usa_sol_cub_tt: "Kuba má vyšší průměrnou [concept_sol] než [SelectLocalization(SCOPE.sCountry('csa').Exists, 'CSA', 'USA')]"
- independencia_sol_tt: "Průměrná [concept_sol] na Kubě oproti Španělsku"
- join_usa_prestige_tt: "[concept_prestige] země [SelectLocalization(SCOPE.sCountry('csa').Exists, 'CSA', 'USA')] oproti kubánským očekáváním"
- join_usa_relations_tt: "[concept_relations] se zemí [SelectLocalization(SCOPE.sCountry('csa').Exists, 'CSA', 'USA')]"
+ join_usa_same_powerbloc_compared_to_spain_tt: "[Concept('concept_power_bloc_leverage','Páka')] USA oproti [Concept('concept_power_bloc','mocenskému bloku')] země $SPA$" # todo: CONCEPT CASE
+ join_usa_usa_powerbloc_tt: "[Concept('concept_power_bloc_leverage','Páka')] [Concept('concept_power_bloc','Mocenský blok')] země [SelectLocalization(SCOPE.sCountry('csa').Exists, 'CSA', 'USA')]" # todo: CONCEPT CASE
+ join_usa_no_powerblocs_tt: "[SelectLocalization(SCOPE.sCountry('csa').Exists, 'CSA', 'USA')] ještě nevytvořila [Concept('concept_power_bloc','mocenský blok')]" # todo: CONCEPT CASE
+ join_usa_sol_spa_tt: "[Concept('concept_sol','Životní standard')] v [SelectLocalization(SCOPE.sCountry('csa').Exists, 'CSA', 'USA')] oproti Kubě" # todo: CONCEPT CASE
+ join_usa_sol_cub_tt: "Kuba má vyšší průměrnou [Concept('concept_sol','životní standard')] než [SelectLocalization(SCOPE.sCountry('csa').Exists, 'CSA', 'USA')]" # todo: CONCEPT CASE
+ independencia_sol_tt: "Průměrná [Concept('concept_sol','životní standard')] na Kubě oproti Španělsku" # todo: CONCEPT CASE
+ join_usa_prestige_tt: "[Concept('concept_prestige','Prestiž')] země [SelectLocalization(SCOPE.sCountry('csa').Exists, 'CSA', 'USA')] oproti kubánským očekáváním" # todo: CONCEPT CASE
+ join_usa_relations_tt: "[Concept('concept_relations','Vztahy')] se zemí [SelectLocalization(SCOPE.sCountry('csa').Exists, 'CSA', 'USA')]" # todo: CONCEPT CASE
  total_base_factor_tt: "Status quo"
- independencia_liberty_desire_factor_tt: "[concept_liberty_desire] o hodnotě #tooltippable;tooltip:[GetPlayer.GetTooltipTag],total_factor_factors_tt: [SCOPE.ScriptValue('liberty_desire_weekly_change')|2]#!"
+ independencia_liberty_desire_factor_tt: "[Concept('concept_liberty_desire','Touha po svobodě')] o hodnotě #tooltippable;tooltip:[GetPlayer.GetTooltipTag],total_factor_factors_tt: [SCOPE.ScriptValue('liberty_desire_weekly_change')|2]#!" # todo: CONCEPT CASE
  total_desire_to_join_the_USA_tt: "Touha připojit se k zemi [SelectLocalization(SCOPE.sCountry('csa').Exists, 'CSA', 'USA')]"
- cuba_slave_revolt_slaves_fervor_tt: "[concept_fervor] kultury [GetCulture('afro_caribeno').GetName]"
- independencia_caribeno_cultural_fervor_tt: "[concept_fervor] kultury [GetCulture('caribeno').GetName]"
+ cuba_slave_revolt_slaves_fervor_tt: "[Concept('concept_fervor','Horlivost')] kultury [GetCulture('afro_caribeno').GetName]" # todo: CONCEPT CASE
+ independencia_caribeno_cultural_fervor_tt: "[Concept('concept_fervor','Horlivost')] kultury [GetCulture('caribeno').GetName]" # todo: CONCEPT CASE
  je_cuba_total_drift_tt: "posun od současné hodnoty #variable [ROOT.GetCountry.MakeScope.Var('independencia_current').GetValue|0]#! směrem k cílové hodnotě #tooltippable;tooltip:[GetPlayer.GetTooltipTag],total_factors_tt [SCOPE.ScriptValue('je_cuba_independencia_bar_target')|0]#!:\n\nTato hodnota představuje vůli hledačů svobody, přičemž nižší konec škály (směrem k #v 0#!) znamená proamerické smýšlení a vyšší konec (směrem k #v 100#!) představuje touhu po úplné nezávislosti.\n\nCílová hodnota #v [SCOPE.ScriptValue('je_cuba_independencia_bar_target')|0]#! vychází z následujících faktorů:\n[GetPlayer.MakeScope.GetScriptValueDesc('je_cuba_independencia_bar_target')]"
  total_factors_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('je_cuba_independencia_bar_target')]"
  je_cuba_total_bar: "Vůle lidu"
@@ -77,18 +77,18 @@
  je_cuba_independencia_bar_desc: "Independencia"
  je_cuba_promise_freedom_button: "Slíbit svobodu otrokům"
  je_cuba_promise_freedom_button_desc: "Slibujeme, že během nadcházející války osvobodíme otroky ostrova, čímž přesvědčíme mnohem více radikálů kultury [GetCulture('afro_caribeno').GetName], aby se přidali k naší věci."
- slave_revolt_adds_ld_tt: "Politické hnutí otrockého povstání nyní bude k naší [concept_liberty_desire] přispívat, namísto toho aby ji snižovalo"
- slaves_will_be_freed_after_war_tt: "Pokud dosáhneme vítězství, [concept_slavery] bude zakázáno"
+ slave_revolt_adds_ld_tt: "Politické hnutí otrockého povstání nyní bude k naší [Concept('concept_liberty_desire','touze po svobodě')] přispívat, namísto toho aby ji snižovalo" # todo: CONCEPT CASE
+ slaves_will_be_freed_after_war_tt: "Pokud dosáhneme vítězství, [Concept('concept_slavery','otroctví')] bude zakázáno" # todo: CONCEPT CASE
  je_cuba_promise_freedom_bar_above_50: "Sentiment #v $je_cuba_total_bar$#! musí být vyšší než 50"
- afro_caribeno_fervor_factor_increase_tt: "[concept_fervor] kultury [GetCulture('afro_caribeno').GetName] nás posune ještě dále od připojení k zemi [SelectLocalization(SCOPE.sCountry('csa').Exists, 'CSA', 'USA')] a směrem ke skutečné nezávislosti"
+ afro_caribeno_fervor_factor_increase_tt: "[Concept('concept_fervor','Horlivost')] kultury [GetCulture('afro_caribeno').GetName] nás posune ještě dále od připojení k zemi [SelectLocalization(SCOPE.sCountry('csa').Exists, 'CSA', 'USA')] a směrem ke skutečné nezávislosti" # todo: CONCEPT CASE
  je_cuba_promise_equality_button: "Slíbit rovnost lidem [GetCulture('afro_caribeno').GetCustom('getPluralDemonym')]"
- je_cuba_promise_equality_button_desc: "Slibujeme, že v nezávislé zemi [ROOT.GetCountry.GetNameNoFormatting] dáme všem národům rovné postavení, čímž přesvědčíme mnohem více radikálů kultury [GetCulture('afro_caribeno').GetName], aby se přidali k naší věci."
- afro_caribeno_future_equality: "[GetCulture('afro_caribeno').GetName] se stane jednou z [Concept('concept_primary_cultures','$concept_primary_culture$')] země [ROOT.GetCountry.GetNameNoFlag], jakmile bude vítězství naše."
+ je_cuba_promise_equality_button_desc: "Slibujeme, že v nezávislé zemi [ROOT.GetCountry.GetAltAdjectiveNoFormatting('A')] dáme všem národům rovné postavení, čímž přesvědčíme mnohem více radikálů kultury [GetCulture('afro_caribeno').GetName], aby se přidali k naší věci." # todo: COUNTRY CASE
+ afro_caribeno_future_equality: "[GetCulture('afro_caribeno').GetName] se stane jednou z [Concept('concept_primary_cultures','primárních kultur')] země [ROOT.GetCountry.GetNameNoFlag], jakmile bude vítězství naše." # todo: CONCEPT CASE
  je_cuba_ask_usa_to_buy: "Vyjednat koupi Kuby"
  je_cuba_ask_usa_to_buy_desc: "„Koupě a anexe Louisiany vedla k nezbytnému důsledku v podobě Floridy a obě s neomylnou jistotou ukazují k získání Kuby.“ \n-John Slidell, senátor USA."
  cuba_must_want_to_join_usa_tt: "Hledači svobody se musí chtít připojit k zemi [SelectLocalization(SCOPE.sCountry('csa').Exists, 'CSA', 'USA')], namísto toho aby usilovali o skutečnou nezávislost."
  je_cuba_join_usa_base_price: "Základní cena"
- je_cuba_join_usa_cuba_value_price: "Kubánský [concept_gdp]"
+ je_cuba_join_usa_cuba_value_price: "Kubánský [Concept('concept_gdp','hrubý domácí produkt')]" # todo: CONCEPT CASE
  cuba_must_want_to_fight_tt: "Hledači svobody musí být připraveni bojovat za svou svobodu, namísto toho aby usilovali o odkoupení USA."
  cuba_prepare_for_war: "Připravit se na válku"
  je_cuba_independence_war: "Příprava na válku"
@@ -98,33 +98,33 @@
  cuba_independencia.1.f: "„Blízká budoucnost ukáže, zda je pravděpodobné dosažení nezbytné podmínky spravedlivého míru, stejně spravedlivého pro Kubánce i Španěly... Pokud ne, zůstane nutnost dalších a jiných kroků ze strany USA. Až ten čas přijde, budou tyto kroky určeny v souladu s nesporným právem a povinností.“ \n\n-William McKinley, 25. prezident Spojených států"
  cuba_independencia.1.a: "Kuba bude požehnána, ať už bude její budoucnost jakákoli."
  cuba_independencia.2.t: "Zahájení jednání"
- cuba_independencia.2.d: "S dostatečnou podporou doma jsme nyní v pozici, kdy můžeme usilovat o užší vztahy se zemí [SCOPE.sCountry('cuba_buyer').GetName] a uniknout [SCOPE.sCountry('cuba_overlord').GetAdjective] jhu. Vyjednavači jsou připraveni navrhnout plán [SCOPE.sCountry('cuba_buyer').GetAdjectiveNoFormatting] získání Kuby."
+ cuba_independencia.2.d: "S dostatečnou podporou doma jsme nyní v pozici, kdy můžeme usilovat o užší vztahy se zemí [SCOPE.sCountry('cuba_buyer').GetAltAdjective('G')] a uniknout [SCOPE.sCountry('cuba_overlord').GetAdjective] jhu. Vyjednavači jsou připraveni navrhnout plán [SCOPE.sCountry('cuba_buyer').GetAdjectiveNoFormatting] získání Kuby." # todo: COUNTRY CASE
  cuba_independencia.2.f: "„Naše země není kolonie určená k anexi!“ vykřikl řečník.\n\nTicho, které následovalo v této místnosti spiklenců, bylo smrtelné. Jeden muž se neklidně zavrtěl na židli. „Můj příteli...“ utěšoval ho, „všichni milujeme Kubu, ale co můžeme dokázat sami? Představ si, jakou #italic moc#! bychom mohli mít v té velké rodině států na severu!“\n\n„Moc!“ odfrkl si první řečník. „Možná moc pro #italic tebe#!.“ Temným pohledem přejel místnost. „Pokud je toto naše rozhodnutí, pak ať nás všechny Bůh chrání.“"
  cuba_independencia.2.a: "Uvidíme, zda tato jednání přinesou ovoce!"
  cuba_independencia.2.b: "Nebuďme ukvapení. Měli bychom to přehodnotit."
  cuba_negotiation_warning_tt: "#r Po dobu #b 3#! let se nebudeme moci znovu pokusit o jednání.#!"
  cuba_independencia.3.t: "Nabídka kubánských vyslanců"
- cuba_independencia.3.d: "Vyslanci zastupující mocné zájmy v zemi [SCOPE.sCountry('cuba').GetName] nás oslovili s příležitostí: podpora americké kontroly nad Kubou je dostatečně vysoká na to, že by mohlo být možné Kubu od země [SCOPE.sCountry('cuba_overlord').GetName] #italic odkoupit#!."
+ cuba_independencia.3.d: "Vyslanci zastupující mocné zájmy v zemi [SCOPE.sCountry('cuba').GetAltAdjective('A')] nás oslovili s příležitostí: podpora americké kontroly nad Kubou je dostatečně vysoká na to, že by mohlo být možné Kubu od země [SCOPE.sCountry('cuba_overlord').GetName] #italic odkoupit#!." # todo: COUNTRY CASE
  cuba_independencia.3.f: "„Samozřejmě, že bychom to měli udělat!“ zahřměl jeden hlas v zakouřené místnosti. „Kuba je pro nás stejně nezbytná jako kterýkoli člen, který je nyní součástí země, a přirozeně patří do naší velké rodiny států.“\n\nZakašlal a na okamžik jeho mávající ruka proťala kouř, svírajíc doutník. „Kromě toho je tam taková #italic příležitost#!.“"
- cuba_independencia.3.a: "Zajímavá nabídka! Promluvme si se zemí [SCOPE.sCountry('cuba_overlord').GetName] ihned."
+ cuba_independencia.3.a: "Zajímavá nabídka! Promluvme si se zemí [SCOPE.sCountry('cuba_overlord').GetAltAdjective('G')] ihned." # todo: COUNTRY CASE
  if_spain_accepts_purchase_tt: "#b Pokud bude dohoda přijata:#!"
  cuba_independencia.3.b: "Tento plán je v současnosti v našem zájmu."
  cuba_independencia.4.t: "[SCOPE.sCountry('cuba_buyer').GetAdjectiveNoFormatting] nabídka "
- cuba_independencia.4.d: "Diplomaté ze země [SCOPE.sCountry('cuba_buyer').GetName] nás oslovili s nabídkou odkoupit od nás [SCOPE.sCountry('cuba').GetName] za knížecí sumu. Podpora [SCOPE.sCountry('cuba_buyer').GetAdjectiveNoFormatting] věci je v zemi [SCOPE.sCountry('cuba').GetNameNoFormatting] vysoká a existuje šance, že celý tento plán podnítila nějaká frakce v kolonii. Nejprve však budeme muset zvážit [SCOPE.sCountry('cuba_buyer').GetAdjectiveNoFormatting] návrh."
+ cuba_independencia.4.d: "Diplomaté ze země [SCOPE.sCountry('cuba_buyer').GetName] nás oslovili s nabídkou odkoupit od nás [SCOPE.sCountry('cuba').GetAltAdjective('A')] za knížecí sumu. Podpora [SCOPE.sCountry('cuba_buyer').GetAdjectiveNoFormatting] věci je v zemi [SCOPE.sCountry('cuba').GetAltAdjectiveNoFormatting('A')] vysoká a existuje šance, že celý tento plán podnítila nějaká frakce v kolonii. Nejprve však budeme muset zvážit [SCOPE.sCountry('cuba_buyer').GetAdjectiveNoFormatting] návrh." # todo: COUNTRY CASE
  cuba_independencia.4.f: "#italic Kuba byla prvním korunním klenotem říše, Havana srdcem tolika podniků, tolika sláv. Je součástí základů všeho, na čem stojí velikost Španělska!#!\n\n#italic Ale... za tím číslem, které nám [SCOPE.sCountry('cuba_buyer').GetAdjectiveNoFormatting] diplomaté dali, následuje#! mnoho a mnoho #italic nul.#!"
  if_we_accept_purchase_tt: "#b Pokud Kubu prodáme:#!"
  cuba_independencia.4.a: "Kuba má cenu nečekaného bohatství!"
  cuba_independencia.4.b: "Kuba není na prodej!"
  cuba_independencia.5.t: "Kubánský plán odmítnut"
- cuba_independencia.5.d: "Jednání se zemí [SCOPE.sCountry('cuba_overlord').GetName] o koupi země [SCOPE.sCountry('cuba').GetName] selhala."
+ cuba_independencia.5.d: "Jednání se zemí [SCOPE.sCountry('cuba_overlord').GetAltAdjective('G')] o koupi země [SCOPE.sCountry('cuba').GetName] selhala." # todo: COUNTRY CASE
  cuba_independencia.5.f: "„Už si nemůžeme dovolit přehlížet mezinárodní rivality, když jsme se sami stali konkurentem v celosvětovém boji o obchod. Příležitost musí být #italic uchopena#! a už nikdy nesmíme dovolit, aby nám tak skvělé šance proklouzly mezi prsty.“"
  cuba_independencia.5.a: "Rozhodnutí země [SCOPE.sCountry('cuba_overlord').GetNameNoFormatting] je zklamáním."
  cuba_independencia.5.b: "Rozhodnutí země [SCOPE.sCountry('cuba_overlord').GetNameNoFormatting] je nešťastné."
  cuba_independencia.6.t: "[SCOPE.sCountry('cuba_buyer').GetAdjectiveNoFormatting] akvizice"
- cuba_independencia.6.d: "[SCOPE.sCountry('cuba_overlord').GetName] přijala nabídku prodat nás. Naše budoucnost nyní patří zemi [SCOPE.sCountry('cuba_buyer').GetName]."
+ cuba_independencia.6.d: "[SCOPE.sCountry('cuba_overlord').GetName] přijala nabídku prodat nás. Naše budoucnost nyní patří zemi [SCOPE.sCountry('cuba_buyer').GetAltAdjective('A')]." # todo: COUNTRY CASE
  cuba_independencia.6.f: "Spiklenci tiše seděli v temné místnosti. „Nuže, přátelé,“ zabručel jeden zasmušilý hlas, „dokázali jste to. Kuba je nyní [SCOPE.sCountry('cuba_buyer').GetAdjectiveNoFormatting]. Co teď?“\n\nPokračující ticho bylo jedinou odpovědí, které se mu dostalo."
  cuba_independencia.6.a: "Budoucnost je [SCOPE.sCountry('cuba_buyer').GetAdjectiveNoFormatting]!"
- cuba_independencia.6.b: "Připijme na nové partnerství se zemí [SCOPE.sCountry('cuba_buyer').GetNameNoFormatting]!"
+ cuba_independencia.6.b: "Připijme na nové partnerství se zemí [SCOPE.sCountry('cuba_buyer').GetAltAdjectiveNoFormatting('G')]!" # todo: COUNTRY CASE
  cuba_independencia.7.t: "Smlouva na Kubu"
  cuba_independencia.7.d: "Díky obratné diplomacii a podpoře [SelectLocalization(SCOPE.sCountry('cuba').Exists, SCOPE.sCountry('cuba').GetAdjectiveNoFormatting, 'kubánského')] lidu je [SelectLocalization(SCOPE.sCountry('cuba').Exists, SCOPE.sCountry('cuba').GetNameNoFormatting, 'Kuba')] nyní naše."
  cuba_independencia.7.f: "„Na Kubě se mnohé změní,“ usmál se [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullNameNoFormatting], „a změní se to díky #italic našemu#! úsilí. Stará říše se dnes hroutí a čeká nás krásný zítřek.“"
@@ -144,9 +144,9 @@
  cuba_events.2.b: "Jeden iberský národ."
  cuba_events.2.c: "Měli bychom si ponechat určitou oddělenost."
  cuba_events.2.e: "Vlastně je to hrozný nápad."
- cuba_if_spa_player_tt: "Pokud je [ROOT.GetCountry.GetOverlord.GetName] hráčem, budeme mít také možnost stát se [concept_dominion]"
+ cuba_if_spa_player_tt: "Pokud je [ROOT.GetCountry.GetOverlord.GetName] hráčem, budeme mít také možnost stát se [Concept('concept_dominion','dominiem')]" # todo: CONCEPT CASE
  cuba_events.3.t: "Un Camino Differente"
- cuba_events.3.d: "Reformističtí [SCOPE.gsInterestGroup('landholders').GetName] nedokázali přesvědčit své [ROOT.GetCountry.GetOverlord.GetAdjectiveNoFormatting] protějšky ani kubánské obyvatelstvo, že unie se zemí [ROOT.GetCountry.GetOverlord.GetName] bude uskutečnitelná. Národ nyní pevně usiluje o větší autonomii."
+ cuba_events.3.d: "Reformističtí [SCOPE.gsInterestGroup('landholders').GetName] nedokázali přesvědčit své [ROOT.GetCountry.GetOverlord.GetAdjectiveNoFormatting] protějšky ani kubánské obyvatelstvo, že unie se zemí [ROOT.GetCountry.GetOverlord.GetAltAdjective('G')] bude uskutečnitelná. Národ nyní pevně usiluje o větší autonomii." # todo: COUNTRY CASE
  cuba_events.3.f: "„Práva se berou, nežádá se o ně; uchvacují se, nevyprošují.“\n\n-José Martí"
  cuba_events.3.a: "¡Viva Cuba!"
  cuba_events.3.b: "Nemůžeme dopustit, aby to ovlivnilo obchod."

@@ -1,6 +1,6 @@
 ﻿l_polish:
  british_dictates.1.t: "[SCOPE.sCountry('overlord_scope').GetAdjectiveNoFormatting] nařízení"
- british_dictates.1.d: "[SCOPE.GetRootScope.GetCountry.GetCustom('india_governing_body')] v [SCOPE.sCountry('overlord_scope').GetCapital.GetCityHubName] nám vydal pokyny, abychom v zemi [ROOT.GetCountry.GetName] zvýšili počet [SCOPE.GetRootScope.GetCountry.GetCustom('eic_plantation_type')]."
+ british_dictates.1.d: "[SCOPE.GetRootScope.GetCountry.GetCustom('india_governing_body')] v [SCOPE.sCountry('overlord_scope').GetCapital.GetCityHubName] nám vydal pokyny, abychom v zemi [ROOT.GetCountry.GetAltAdjective('A')] zvýšili počet [SCOPE.GetRootScope.GetCountry.GetCustom('eic_plantation_type')]." # todo: COUNTRY CASE
  british_dictates.1.f: "Do vlastních rukou [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetLastNameNoFormatting],\n\nMám tu čest vás pro informaci ctihodného [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] informovat, že po období jednání s [SCOPE.GetRootScope.GetCountry.GetCustom('india_oversight_board')] vydal [SCOPE.GetRootScope.GetCountry.GetCustom('india_governing_body')] následující soubor směrnic, aby objasnil své současné priority v Indii. Další informace k této záležitosti naleznete v přiložených směrnicích.\n\nPodepsán,\n[SCOPE.sCharacter('board_of_control_character').GetFullNameNoFormatting]\n[SCOPE.GetRootScope.GetCountry.GetCustom('india_oversight_board')]"
  british_dictates.1.a: "Začneme okamžitě."
  british_dictates.1.b: "To není v našich současných možnostech."
@@ -11,7 +11,7 @@
  british_dictates.3.d: "[SCOPE.GetRootScope.GetCountry.GetCustom('india_governing_body')] v [SCOPE.sCountry('overlord_scope').GetCapital.GetCityHubName] projevil zájem o reformu naší správy nad Indií. Vydal nám pokyny, abychom přijali zákon [SCOPE.sLaw('foreign_imposition_law').GetName]."
  british_dictates.3.f: "Do vlastních rukou [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetLastNameNoFormatting],\n\nMám tu čest vás pro informaci ctihodného [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] informovat, že [SCOPE.GetRootScope.GetCountry.GetCustom('india_governing_body')] vydal následující soubor směrnic, aby objasnil své současné priority v Indii. Další informace k této záležitosti naleznete v přiložených směrnicích.\n\nPodepsán,\n[SCOPE.sCharacter('board_of_control_character').GetFullNameNoFormatting]\n[SCOPE.GetRootScope.GetCountry.GetCustom('india_oversight_board')]"
  british_dictates.3.a.1: "Začneme okamžitě."
- british_dictates.3.a.2: "Požadavky [SCOPE.GetRootScope.GetCountry.GetCustom('india_governing_body')] převažují nad potřebou zákona [ROOT.GetCountry.GetLawBeingEnacted.GetName]."
+ british_dictates.3.a.2: "Požadavky [SCOPE.GetRootScope.GetCountry.GetCustom('india_governing_body')] převažují nad potřebou zákona [ROOT.GetCountry.GetLawBeingEnacted.GetAltAdjective('G')]." # todo: COUNTRY CASE
  british_dictates.3.b: "Nyní na to není nejvhodnější doba."
  british_dictates.3.c: "Nemůžeme toto opatření s čistým svědomím podpořit."
  british_dictates.4.t: "[SCOPE.sCountry('overlord_scope').GetAdjectiveNoFormatting] nařízení"
@@ -19,15 +19,15 @@
  british_dictates.4.f: "Do vlastních rukou [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetLastNameNoFormatting],\n\nMám tu čest vás pro informaci ctihodného [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] informovat, že [SCOPE.GetRootScope.GetCountry.GetCustom('india_governing_body')] vydal následující soubor směrnic, aby objasnil své současné priority v Indii. Další informace k této záležitosti naleznete v přiložených směrnicích.\n\nPodepsán,\n[SCOPE.sCharacter('board_of_control_character').GetFullNameNoFormatting]\n[SCOPE.GetRootScope.GetCountry.GetCustom('india_oversight_board')]"
  je_british_dictate_plantations: "[SCOPE.sCountry('overlord_scope').GetAdjectiveNoFormatting] nařízení: Zemědělská výroba"
  je_british_dictate_plantations_reason: "#b [SCOPE.GetRootScope.GetCountry.GetCustom('india_governing_body')]#! v [SCOPE.sCountry('overlord_scope').GetCapital.GetCityHubName] běžně vydává nařízení týkající se směřování našich operací v Indii. Abychom splnili jeho současné nařízení, musíme své úsilí zaměřit na výstavbu dalších [SCOPE.GetRootScope.GetCountry.GetCustom('eic_plantation_type')]."
- je_british_dictate_plantations_goal: "Zvyšte počet [SCOPE.GetRootScope.GetCountry.GetCustom('eic_plantation_type')] v zemi [ROOT.GetCountry.GetName] o [Country.MakeScope.Var('count_relevant_plantations_increase_percent').GetValue|1V%]"
+ je_british_dictate_plantations_goal: "Zvyšte počet [SCOPE.GetRootScope.GetCountry.GetCustom('eic_plantation_type')] v zemi [ROOT.GetCountry.GetAltAdjective('A')] o [Country.MakeScope.Var('count_relevant_plantations_increase_percent').GetValue|1V%]" # todo: COUNTRY CASE
  je_british_dictate_military: "[SCOPE.sCountry('overlord_scope').GetAdjectiveNoFormatting] nařízení: Vojenská expanze"
  je_british_dictate_military_reason: "#b [SCOPE.GetRootScope.GetCountry.GetCustom('india_governing_body')]#! v [SCOPE.sCountry('overlord_scope').GetCapital.GetCityHubName] běžně vydává nařízení týkající se směřování našich operací v Indii. Abychom splnili jeho současné nařízení, musíme své úsilí zaměřit na zvýšení velikosti a kvality našich ozbrojených sil."
- je_british_dictate_military_goal: "Zvyšte armádní [concept_power_projection] o #v 25%#!, ať už vylepšením současných jednotek, nebo výstavbou nových"
+ je_british_dictate_military_goal: "Zvyšte armádní [Concept('concept_power_projection','projekce síly')] o #v 25%#!, ať už vylepšením současných jednotek, nebo výstavbou nových" # todo: CONCEPT CASE
  je_british_dictate_law: "[SCOPE.sCountry('overlord_scope').GetAdjectiveNoFormatting] nařízení: Prosazení zákona"
  je_british_dictate_law_reason: "#b [SCOPE.GetRootScope.GetCountry.GetCustom('india_governing_body')]#! v [SCOPE.sCountry('overlord_scope').GetCapital.GetCityHubName] běžně vydává nařízení týkající se směřování našich operací v Indii. Abychom splnili jeho současné nařízení, musíme své úsilí zaměřit na prosazení zákona [SCOPE.sLaw('foreign_imposition_law').GetName]."
  je_british_dictate_universities: "[SCOPE.sCountry('overlord_scope').GetAdjectiveNoFormatting] nařízení: Vyšší vzdělávání"
  je_british_dictate_universities_reason: "#b [SCOPE.GetRootScope.GetCountry.GetCustom('india_governing_body')]#! v [SCOPE.sCountry('overlord_scope').GetCapital.GetCityHubName] běžně vydává nařízení týkající se směřování našich operací v Indii. Abychom splnili jeho současné nařízení, musíme své úsilí zaměřit na rozšíření systému [GetBuildingType('building_university').GetName] v každém z našich měst Prezidentství."
- no_overlord_dictate_tt: "Nemá aktivní #v nařízení vládce#! [concept_journal_entry]"
+ no_overlord_dictate_tt: "Nemá aktivní #v nařízení vládce#! [Concept('concept_journal_entry','záznam v deníku')]" # todo: CONCEPT CASE
  adds_british_dictate_plantations_je_tt: "Přidá do deníku země [ROOT.GetCountry.GetNameNoFlag] #v [ROOT.GetCountry.GetTopOverlord.GetAdjectiveNoFormatting] nařízení: Zemědělská výroba#!"
  adds_british_dictate_military_je_tt: "Přidá do deníku země [ROOT.GetCountry.GetNameNoFlag] #v [ROOT.GetCountry.GetTopOverlord.GetAdjectiveNoFormatting] nařízení: Vojenská expanze#!"
  adds_british_dictate_law_je_tt: "Přidá do deníku země [ROOT.GetCountry.GetNameNoFlag] #v [ROOT.GetCountry.GetTopOverlord.GetAdjectiveNoFormatting] nařízení: Prosazení zákona#!"
@@ -71,13 +71,13 @@
  princely_state_creation.5.f: "„Tyto pohraniční oblasti jsou velkým zdrojem příjmů, ale jejich správa je obtížná. Jsou roztříštěné a hornaté, takže potrvá, než se naši lidé obeznámí s terénem.“\n\n„Možná si můžeme vzít příklad z dějin. Svažme šanské Saophy do federace. Mohou vládnout, jak chtějí, dokud centrální fond dostává svůj podíl. Jak časem naši výběrčí poznají cesty, federaci už nebudeme potřebovat.“"
  princely_state_creation.5.a: "Udělte jim autonomii pod jejich vlastními vládci se společným rezidentem."
  princely_state_creation.5.b: "Začleňte je jako Šanský distrikt."
- upset_every_princely_state_tt: "[concept_liberty_desire] každého [concept_princely_state] se zvýší o #r [SCOPE.ScriptValue('annex_subject_intermediate_desire_change')]#! a [concept_relations] se zhorší o #r [SCOPE.ScriptValue('basic_princely_state_relations_change')]#!"
- upset_every_princely_state_relations_tt: "[concept_relations] s každým [concept_princely_state] se zhorší o #negative_value [SCOPE.ScriptValue('basic_princely_state_relations_change')]#!"
- upset_every_princely_state_variable_liberty_desire_tt: "[concept_liberty_desire] každého [concept_princely_state] se zvýší o #negative_value [SCOPE.ScriptValue('variable_princely_state_liberty_desire_change')]#! kvůli:#indent_newline:3 \n[SCOPE.GetScriptValueDesc('variable_princely_state_liberty_desire_change')]#!"
- DOCTRINE_OF_LAPSE_PRESTIGE: "[concept_prestige] země [SCOPE.sC('target_country').GetName]"
- DOCTRINE_OF_LAPSE_NO_MALE_RULER: "[SCOPE.sC('target_country').GetName] nemá mužského [concept_ruler]"
- DOCTRINE_OF_LAPSE_OLD_WITH_NO_MALE_HEIR: "[SCOPE.sC('target_country').GetRuler.GetFullName] je starší než #v [GetDefine('NCharacters','OLD_AGE')]#! a nemá mužského [concept_heir]"
- DOCTRINE_OF_LAPSE_RADICALS: "[SCOPE.sC('target_country').GetName] má #negative_value [Nbsp][SCOPE.sC('target_country').GetNumRadicals|D]#! [Concept('concept_radical','$concept_radicals$')]"
+ upset_every_princely_state_tt: "[Concept('concept_liberty_desire','Touha po svobodě')] každého [Concept('concept_princely_state','knížecího státu')] se zvýší o #r [SCOPE.ScriptValue('annex_subject_intermediate_desire_change')]#! a [Concept('concept_relations','vztahy')] se zhorší o #r [SCOPE.ScriptValue('basic_princely_state_relations_change')]#!" # todo: CONCEPT CASE
+ upset_every_princely_state_relations_tt: "[Concept('concept_relations','Vztahy')] s každým [Concept('concept_princely_state','knížecím státem')] se zhorší o #negative_value [SCOPE.ScriptValue('basic_princely_state_relations_change')]#!" # todo: CONCEPT CASE
+ upset_every_princely_state_variable_liberty_desire_tt: "[Concept('concept_liberty_desire','Touha po svobodě')] každého [Concept('concept_princely_state','knížecího státu')] se zvýší o #negative_value [SCOPE.ScriptValue('variable_princely_state_liberty_desire_change')]#! kvůli:#indent_newline:3 \n[SCOPE.GetScriptValueDesc('variable_princely_state_liberty_desire_change')]#!" # todo: CONCEPT CASE
+ DOCTRINE_OF_LAPSE_PRESTIGE: "[Concept('concept_prestige','Prestiž')] země [SCOPE.sC('target_country').GetName]" # todo: CONCEPT CASE
+ DOCTRINE_OF_LAPSE_NO_MALE_RULER: "[SCOPE.sC('target_country').GetName] nemá mužského [Concept('concept_ruler','vládce')]" # todo: CONCEPT CASE
+ DOCTRINE_OF_LAPSE_OLD_WITH_NO_MALE_HEIR: "[SCOPE.sC('target_country').GetRuler.GetFullName] je starší než #v [GetDefine('NCharacters','OLD_AGE')]#! a nemá mužského [Concept('concept_heir','dědice')]" # todo: CONCEPT CASE
+ DOCTRINE_OF_LAPSE_RADICALS: "[SCOPE.sC('target_country').GetName] má #negative_value [Nbsp][SCOPE.sC('target_country').GetNumRadicals|D]#! [Concept('concept_radical','radikálu')]" # todo: CONCEPT CASE
  modifier_empress_of_india: "Císařovna Indie"
  modifier_emperor_of_india: "Císař Indie"
  modifier_empress_of_great_britain: "Císařovna Velké Británie"
@@ -123,7 +123,7 @@
  india_events.3.f: "„Milorde, podrobný soupis pokladnice v [SCOPE.sState('punjab_scope').GetCityHubName] je připraven. Za zmínku stojí tři drahokamy: Daria-i-Noor, Khiraj-i-Alam a samozřejmě Koh-i-Noor.“\n\n„Výborně. Tito Indové se mi zamlouvají mnohem více než ti za Atlantikem. Koneckonců diamant je do čepice daleko lepším doplňkem než pírko, nemyslíte?“\n\n„Zcela jistě, milorde.“\n\n„Připravte je k převozu. Musíme zajistit, aby byly přítomny na Světové výstavě. Důkaz našeho dobytí na východě.“"
  india_events.3.a: "Předložte diamant jako válečnou kořist [SCOPE.sCountry('overlord_scope').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('overlord_scope').GetRuler.GetFirstNameNoFormatting]."
  india_events.3.b: "Převezte diamant do naší pokladnice v [ROOT.GetCountry.GetCapital.GetCityHubName]."
- koh_i_noor_in_europe_tt: "#bold Evropská#! [concept_country] ukořistila diamant #bold Koh-i-Noor#!"
+ koh_i_noor_in_europe_tt: "#bold Evropská#! [Concept('concept_country','země')] ukořistila diamant #bold Koh-i-Noor#!" # todo: CONCEPT CASE
  owns_koh_i_noor_tt: "Vlastní diamant #bold Koh-i-Noor#!"
  demand_return_of_diamond_tt: "Budeme požadovat, aby [SCOPE.sCountry('diamond_country').GetName] vrátila diamant #bold Koh-i-Noor#!"
  returned_koh_i_noor_tt: "Diamant #bold Koh-i-Noor#! bude vrácen Indii"
@@ -207,28 +207,28 @@
  india_events.17.a: "Jeho zločiny si zaslouží popravu oběšením."
  india_events.17.b: "Doživotní vězení mu zabrání stát se mučedníkem."
  khudiram_in_jail_tt: "[SCOPE.sCharacter('khudiram_scope').GetFullName] bude odsouzen k doživotnímu vězení"
- krishnamurti_exile_tt: "[SCOPE.sCharacter('krishnamurti_scope').GetFullName] odejde do [concept_exile] a stane se naverbovatelným [concept_agitator]"
- krishnamurti_available_tt: "[SCOPE.sCharacter('krishnamurti_scope').GetFullName] se stane [concept_agitator] v zemi [ROOT.GetCountry.GetName]"
+ krishnamurti_exile_tt: "[SCOPE.sCharacter('krishnamurti_scope').GetFullName] odejde do [Concept('concept_exile','exulanta')] a stane se naverbovatelným [Concept('concept_agitator','agitátorem')]" # todo: CONCEPT CASE
+ krishnamurti_available_tt: "[SCOPE.sCharacter('krishnamurti_scope').GetFullName] se stane [Concept('concept_agitator','agitátor')] v zemi [ROOT.GetCountry.GetAltAdjective('A')]" # todo: CONCEPT CASE # todo: COUNTRY CASE
  krishnamurti_retirement_tt: "[SCOPE.sCharacter('krishnamurti_scope').GetFullName], kdysi oslavovaný jako mesiáš, upadne v zapomnění"
- add_small_indian_radicals_tt: "[SCOPE.ScriptValue('small_radicals')|-=1%] #bold jihoasijské#! [Concept('concept_pop', '$concept_pops$')|l] v zemi [ROOT.GetCountry.GetNameNoFlag] se stane více [concept_radical]"
- add_medium_indian_radicals_tt: "[SCOPE.ScriptValue('medium_radicals')|-=1%] #bold jihoasijské#! [Concept('concept_pop', '$concept_pops$')|l] v zemi [ROOT.GetCountry.GetNameNoFlag] se stane více [concept_radical]"
- add_large_indian_radicals_tt: "[SCOPE.ScriptValue('large_radicals')|-=1%] #bold jihoasijské#! [Concept('concept_pop', '$concept_pops$')|l] v zemi [ROOT.GetCountry.GetNameNoFlag] se stane více [concept_radical]"
- add_small_indian_loyalists_tt: "[SCOPE.ScriptValue('small_radicals')|+=1%] #bold jihoasijské#! [Concept('concept_pop', '$concept_pops$')|l] v zemi [ROOT.GetCountry.GetNameNoFlag] se stane více [concept_loyalist]"
- add_medium_indian_loyalists_tt: "[SCOPE.ScriptValue('medium_radicals')|+=1%] #bold jihoasijské#! [Concept('concept_pop', '$concept_pops$')|l] v zemi [ROOT.GetCountry.GetNameNoFlag] se stane více [concept_loyalist]"
- add_large_indian_loyalists_tt: "[SCOPE.ScriptValue('large_radicals')|+=1%] #bold jihoasijské#! [Concept('concept_pop', '$concept_pops$')|l] v zemi [ROOT.GetCountry.GetNameNoFlag] se stane více [concept_loyalist]"
- add_huge_indian_radicals_tt: "#v 20%#! #bold jihoasijské#! [Concept('concept_pop', '$concept_pops$')|l] ve státě [SCOPE.sState('swadeshi_state').GetName] se stane více [concept_radical]"
- add_small_indian_radicals_third_tt: "[SCOPE.ScriptValue('small_radicals')|-=1%] #bold jihoasijské#! [Concept('concept_pop', '$concept_pops$')|l] v této zemi se stane více [concept_radical]"
- add_medium_indian_radicals_third_tt: "[SCOPE.ScriptValue('medium_radicals')|-=1%] #bold jihoasijské#! [Concept('concept_pop', '$concept_pops$')|l] v této zemi se stane více [concept_radical]"
- add_large_indian_radicals_third_tt: "[SCOPE.ScriptValue('large_radicals')|-=1%] #bold jihoasijské#! [Concept('concept_pop', '$concept_pops$')|l] v této zemi se stane více [concept_radical]"
- add_small_indian_loyalists_third_tt: "[SCOPE.ScriptValue('small_radicals')|+=1%] #bold jihoasijské#! [Concept('concept_pop', '$concept_pops$')|l] v této zemi se stane více [concept_loyalist]"
- add_medium_indian_loyalists_third_tt: "[SCOPE.ScriptValue('medium_radicals')|+=1%] #bold jihoasijské#! [Concept('concept_pop', '$concept_pops$')|l] v této zemi se stane více [concept_loyalist]"
- add_large_indian_loyalists_third_tt: "[SCOPE.ScriptValue('large_radicals')|+=1%] #bold jihoasijské#! [Concept('concept_pop', '$concept_pops$')|l] v této zemi se stane více [concept_loyalist]"
- add_small_european_radicals_tt: "[SCOPE.ScriptValue('small_radicals')|-=1%] #bold evropské#! [Concept('concept_pop', '$concept_pops$')|l] v zemi [ROOT.GetCountry.GetNameNoFlag] se stane více [concept_radical]"
- add_medium_european_radicals_tt: "[SCOPE.ScriptValue('medium_radicals')|-=1%] #bold evropské#! [Concept('concept_pop', '$concept_pops$')|l] v zemi [ROOT.GetCountry.GetNameNoFlag] se stane více [concept_radical]"
- add_large_european_radicals_tt: "[SCOPE.ScriptValue('large_radicals')|-=1%] #bold evropské#! [Concept('concept_pop', '$concept_pops$')|l] v zemi [ROOT.GetCountry.GetNameNoFlag] se stane více [concept_radical]"
- add_small_european_loyalists_tt: "[SCOPE.ScriptValue('small_radicals')|+=1%] #bold evropské#! [Concept('concept_pop', '$concept_pops$')|l] v zemi [ROOT.GetCountry.GetNameNoFlag] se stane více [concept_loyalist]"
- add_medium_european_loyalists_tt: "[SCOPE.ScriptValue('medium_radicals')|+=1%] #bold evropské#! [Concept('concept_pop', '$concept_pops$')|l] v zemi [ROOT.GetCountry.GetNameNoFlag] se stane více [concept_loyalist]"
- add_large_european_loyalists_tt: "[SCOPE.ScriptValue('large_radicals')|+=1%] #bold evropské#! [Concept('concept_pop', '$concept_pops$')|l] v zemi [ROOT.GetCountry.GetNameNoFlag] se stane více [concept_loyalist]"
+ add_small_indian_radicals_tt: "[SCOPE.ScriptValue('small_radicals')|-=1%] #bold jihoasijské#! [Concept('concept_pop','populace')|l] v zemi [ROOT.GetCountry.GetAltAdjectiveNoFlag('A')] se stane více [Concept('concept_radical','radikál')]" # todo: CONCEPT CASE # todo: COUNTRY CASE
+ add_medium_indian_radicals_tt: "[SCOPE.ScriptValue('medium_radicals')|-=1%] #bold jihoasijské#! [Concept('concept_pop','populace')|l] v zemi [ROOT.GetCountry.GetAltAdjectiveNoFlag('A')] se stane více [Concept('concept_radical','radikál')]" # todo: CONCEPT CASE # todo: COUNTRY CASE
+ add_large_indian_radicals_tt: "[SCOPE.ScriptValue('large_radicals')|-=1%] #bold jihoasijské#! [Concept('concept_pop','populace')|l] v zemi [ROOT.GetCountry.GetAltAdjectiveNoFlag('A')] se stane více [Concept('concept_radical','radikál')]" # todo: CONCEPT CASE # todo: COUNTRY CASE
+ add_small_indian_loyalists_tt: "[SCOPE.ScriptValue('small_radicals')|+=1%] #bold jihoasijské#! [Concept('concept_pop','populace')|l] v zemi [ROOT.GetCountry.GetAltAdjectiveNoFlag('A')] se stane více [Concept('concept_loyalist','loajalista')]" # todo: CONCEPT CASE # todo: COUNTRY CASE
+ add_medium_indian_loyalists_tt: "[SCOPE.ScriptValue('medium_radicals')|+=1%] #bold jihoasijské#! [Concept('concept_pop','populace')|l] v zemi [ROOT.GetCountry.GetAltAdjectiveNoFlag('A')] se stane více [Concept('concept_loyalist','loajalista')]" # todo: CONCEPT CASE # todo: COUNTRY CASE
+ add_large_indian_loyalists_tt: "[SCOPE.ScriptValue('large_radicals')|+=1%] #bold jihoasijské#! [Concept('concept_pop','populace')|l] v zemi [ROOT.GetCountry.GetAltAdjectiveNoFlag('A')] se stane více [Concept('concept_loyalist','loajalista')]" # todo: CONCEPT CASE # todo: COUNTRY CASE
+ add_huge_indian_radicals_tt: "#v 20%#! #bold jihoasijské#! [Concept('concept_pop','populace')|l] ve státě [SCOPE.sState('swadeshi_state').GetName] se stane více [Concept('concept_radical','radikál')]" # todo: CONCEPT CASE
+ add_small_indian_radicals_third_tt: "[SCOPE.ScriptValue('small_radicals')|-=1%] #bold jihoasijské#! [Concept('concept_pop','populace')|l] v této zemi se stane více [Concept('concept_radical','radikál')]" # todo: CONCEPT CASE
+ add_medium_indian_radicals_third_tt: "[SCOPE.ScriptValue('medium_radicals')|-=1%] #bold jihoasijské#! [Concept('concept_pop','populace')|l] v této zemi se stane více [Concept('concept_radical','radikál')]" # todo: CONCEPT CASE
+ add_large_indian_radicals_third_tt: "[SCOPE.ScriptValue('large_radicals')|-=1%] #bold jihoasijské#! [Concept('concept_pop','populace')|l] v této zemi se stane více [Concept('concept_radical','radikál')]" # todo: CONCEPT CASE
+ add_small_indian_loyalists_third_tt: "[SCOPE.ScriptValue('small_radicals')|+=1%] #bold jihoasijské#! [Concept('concept_pop','populace')|l] v této zemi se stane více [Concept('concept_loyalist','loajalista')]" # todo: CONCEPT CASE
+ add_medium_indian_loyalists_third_tt: "[SCOPE.ScriptValue('medium_radicals')|+=1%] #bold jihoasijské#! [Concept('concept_pop','populace')|l] v této zemi se stane více [Concept('concept_loyalist','loajalista')]" # todo: CONCEPT CASE
+ add_large_indian_loyalists_third_tt: "[SCOPE.ScriptValue('large_radicals')|+=1%] #bold jihoasijské#! [Concept('concept_pop','populace')|l] v této zemi se stane více [Concept('concept_loyalist','loajalista')]" # todo: CONCEPT CASE
+ add_small_european_radicals_tt: "[SCOPE.ScriptValue('small_radicals')|-=1%] #bold evropské#! [Concept('concept_pop','populace')|l] v zemi [ROOT.GetCountry.GetAltAdjectiveNoFlag('A')] se stane více [Concept('concept_radical','radikál')]" # todo: CONCEPT CASE # todo: COUNTRY CASE
+ add_medium_european_radicals_tt: "[SCOPE.ScriptValue('medium_radicals')|-=1%] #bold evropské#! [Concept('concept_pop','populace')|l] v zemi [ROOT.GetCountry.GetAltAdjectiveNoFlag('A')] se stane více [Concept('concept_radical','radikál')]" # todo: CONCEPT CASE # todo: COUNTRY CASE
+ add_large_european_radicals_tt: "[SCOPE.ScriptValue('large_radicals')|-=1%] #bold evropské#! [Concept('concept_pop','populace')|l] v zemi [ROOT.GetCountry.GetAltAdjectiveNoFlag('A')] se stane více [Concept('concept_radical','radikál')]" # todo: CONCEPT CASE # todo: COUNTRY CASE
+ add_small_european_loyalists_tt: "[SCOPE.ScriptValue('small_radicals')|+=1%] #bold evropské#! [Concept('concept_pop','populace')|l] v zemi [ROOT.GetCountry.GetAltAdjectiveNoFlag('A')] se stane více [Concept('concept_loyalist','loajalista')]" # todo: CONCEPT CASE # todo: COUNTRY CASE
+ add_medium_european_loyalists_tt: "[SCOPE.ScriptValue('medium_radicals')|+=1%] #bold evropské#! [Concept('concept_pop','populace')|l] v zemi [ROOT.GetCountry.GetAltAdjectiveNoFlag('A')] se stane více [Concept('concept_loyalist','loajalista')]" # todo: CONCEPT CASE # todo: COUNTRY CASE
+ add_large_european_loyalists_tt: "[SCOPE.ScriptValue('large_radicals')|+=1%] #bold evropské#! [Concept('concept_pop','populace')|l] v zemi [ROOT.GetCountry.GetAltAdjectiveNoFlag('A')] se stane více [Concept('concept_loyalist','loajalista')]" # todo: CONCEPT CASE # todo: COUNTRY CASE
  notification_koh_i_noor_sent_name: "Diamant Koh-i-Noor předán panovníkovi"
  notification_koh_i_noor_sent_desc: "Legendární diamant Koh-i-Noor, dříve vlastněný Mughalskou, Perskou a Sikhskou říší, byl ukořistěn našimi silami a na rozkaz indického [SCOPE.sCountry('india_scope').GetRuler.GetPrimaryRoleTitle] odeslán do [SCOPE.sCountry('overlord_scope').GetCapital.GetCityHubName]. Diamant byl předán [SCOPE.sCountry('overlord_scope').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('overlord_scope').GetRuler.GetFullName] jako válečná kořist."
  notification_koh_i_noor_sent_tooltip: "#header $notification_koh_i_noor_sent_name$#!\n$TOOLTIP_DELIMITER$\n$notification_koh_i_noor_sent_desc$"
@@ -236,23 +236,23 @@
  notification_koh_i_noor_not_sent_desc: "Legendární diamant Koh-i-Noor, dříve vlastněný Mughalskou, Perskou a Sikhskou říší, byl ukořistěn našimi silami v Indii. Diamant byl odeslán do pokladnice v [SCOPE.sCountry('india_scope').GetCapital.GetCityHubName] jako válečná kořist."
  notification_koh_i_noor_not_sent_tooltip: "#header $notification_koh_i_noor_not_sent_name$#!\n$TOOLTIP_DELIMITER$\n$notification_koh_i_noor_not_sent_desc$"
  notification_koh_i_noor_returned_name: "[SCOPE.sCountry('koh_i_noor_owner_scope').GetName] vrací diamant Koh-i-Noor"
- notification_koh_i_noor_returned_desc: "[SCOPE.sCountry('koh_i_noor_owner_scope').GetAdjective] vláda souhlasila s vrácením diamantu Koh-i-Noor zemi [ROOT.GetCountry.GetNameNoFlag] jako symbolu usmíření mezi ní a jejími bývalými koloniálními poddanými."
+ notification_koh_i_noor_returned_desc: "[SCOPE.sCountry('koh_i_noor_owner_scope').GetAdjective] vláda souhlasila s vrácením diamantu Koh-i-Noor zemi [ROOT.GetCountry.GetAltAdjectiveNoFlag('A')] jako symbolu usmíření mezi ní a jejími bývalými koloniálními poddanými." # todo: COUNTRY CASE
  notification_koh_i_noor_returned_tooltip: "#header $notification_koh_i_noor_returned_name$#!\n$TOOLTIP_DELIMITER$\n$notification_koh_i_noor_returned_desc$"
  notification_koh_i_noor_not_returned_name: "[SCOPE.sCountry('koh_i_noor_owner_scope').GetName] odmítá vrátit diamant Koh-i-Noor"
- notification_koh_i_noor_not_returned_desc: "Současní držitelé diamantu Koh-i-Noor v zemi [SCOPE.sCountry('koh_i_noor_owner_scope').GetName] odmítli diamant Koh-i-Noor vrátit s tvrzením, že jim právem náleží podle podmínek smlouvy podepsané s jeho předchozími vlastníky."
+ notification_koh_i_noor_not_returned_desc: "Současní držitelé diamantu Koh-i-Noor v zemi [SCOPE.sCountry('koh_i_noor_owner_scope').GetAltAdjective('A')] odmítli diamant Koh-i-Noor vrátit s tvrzením, že jim právem náleží podle podmínek smlouvy podepsané s jeho předchozími vlastníky." # todo: COUNTRY CASE
  notification_koh_i_noor_not_returned_tooltip: "#header $notification_koh_i_noor_not_returned_name$#!\n$TOOLTIP_DELIMITER$\n$notification_koh_i_noor_not_returned_desc$"
  notification_combatting_hindu_german_conspiracy_name: "Odhaleno hindsko-[SCOPE.sCountry('enemy_great_power_scope').GetName] spiknutí"
- notification_combatting_hindu_german_conspiracy_desc: "Naše zpravodajská služba v zemi [SCOPE.sCountry('india_scope').GetName] odhalila spiknutí indických revolucionářů spolupracujících s agenty [SCOPE.sCountry('enemy_great_power_scope').GetAdjective] vlády. [SCOPE.sCountry('india_scope').GetAdjective] správa zahajuje zátah, aby podezřelé dopadla."
+ notification_combatting_hindu_german_conspiracy_desc: "Naše zpravodajská služba v zemi [SCOPE.sCountry('india_scope').GetAltAdjective('A')] odhalila spiknutí indických revolucionářů spolupracujících s agenty [SCOPE.sCountry('enemy_great_power_scope').GetAdjective] vlády. [SCOPE.sCountry('india_scope').GetAdjective] správa zahajuje zátah, aby podezřelé dopadla." # todo: COUNTRY CASE
  notification_combatting_hindu_german_conspiracy_tooltip: "#header $notification_combatting_hindu_german_conspiracy_name$#!\n$TOOLTIP_DELIMITER$\n$notification_combatting_hindu_german_conspiracy_desc$"
  notification_not_combatting_hindu_german_conspiracy_name: "Odhaleno hindsko-[SCOPE.sCountry('enemy_great_power_scope').GetName] spiknutí"
- notification_not_combatting_hindu_german_conspiracy_desc: "Naše zpravodajská služba v zemi [SCOPE.sCountry('india_scope').GetName] odhalila spiknutí indických revolucionářů spolupracujících s agenty [SCOPE.sCountry('enemy_great_power_scope').GetAdjective] vlády. [SCOPE.sCountry('india_scope').GetAdjective] správa při vyšetřování nepostupovala právě aktivně."
+ notification_not_combatting_hindu_german_conspiracy_desc: "Naše zpravodajská služba v zemi [SCOPE.sCountry('india_scope').GetAltAdjective('A')] odhalila spiknutí indických revolucionářů spolupracujících s agenty [SCOPE.sCountry('enemy_great_power_scope').GetAdjective] vlády. [SCOPE.sCountry('india_scope').GetAdjective] správa při vyšetřování nepostupovala právě aktivně." # todo: COUNTRY CASE
  notification_not_combatting_hindu_german_conspiracy_tooltip: "#header $notification_not_combatting_hindu_german_conspiracy_name$#!\n$TOOLTIP_DELIMITER$\n$notification_not_combatting_hindu_german_conspiracy_desc$"
  notification_besant_to_india_name: "[SCOPE.sCharacter('besant_scope').GetFullName] přijíždí do země [SCOPE.sCountry('india_scope').GetName]"
  notification_besant_to_india_desc: "Teosofická aktivistka [SCOPE.sCharacter('besant_scope').GetFullName] se přestěhovala do Indie, aby pokračovala ve svém reformním úsilí"
  notification_besant_to_india_tooltip: "#header $notification_besant_to_india_name$#!\n$TOOLTIP_DELIMITER$\n$notification_besant_to_india_desc$"
  demand_return_of_koh_i_noor: "Požadovat vrácení Koh-i-Nooru"
  demand_return_of_koh_i_noor_desc: "Naši bývalí koloniální páni během období své vlády odvezli z Indie legendární diamant Koh-i-Noor a uložili jej do vlastních trezorů. Vzneseme požadavek, aby nám byl ukradený majetek naší země vrácen."
- koh_i_noor_return_requested_too_recently_tt: "Indická [concept_country] v posledních #v 10#! letech nepožadovala vrácení #bold Koh-i-Nooru#!"
+ koh_i_noor_return_requested_too_recently_tt: "Indická [Concept('concept_country','země')] v posledních #v 10#! letech nepožadovala vrácení #bold Koh-i-Nooru#!" # todo: CONCEPT CASE
  not_at_war_with_koh_i_noor_owner_tt: "Není ve válce s vlastníkem #bold Koh-i-Nooru#!"
  modifier_disciplined_war_criminal: "Potrestaný pachatel masakru"
  modifier_disgrace_in_india: "Hanebný masakr"
@@ -260,21 +260,21 @@
  modifier_indian_national_movement_ig: "Indické národní hnutí"
  modifier_simon_commission_boycott: "Bojkotovaná statutární komise"
  modifier_simon_commission_embraced: "Uvítaná statutární komise"
- is_dominion_or_protectorate_tt: "Je [concept_dominion] nebo [concept_protectorate] země [ROOT.GetCountry.GetTopOverlord.GetName]"
+ is_dominion_or_protectorate_tt: "Je [Concept('concept_dominion','dominium')] nebo [Concept('concept_protectorate','protektorát')] země [ROOT.GetCountry.GetTopOverlord.GetName]" # todo: CONCEPT CASE
  indian_home_rule_granted_tt: "[GetPlayer.GetTopOverlord.GetName] udělí #v Indii#! #bold samosprávu#!"
- granted_india_home_rule_tt: "Rozhodli jsme se udělit zemi [SCOPE.sCountry('india_scope').GetName] #bold samosprávu#!"
- no_south_asian_primary_cultures_tt: "Žádná z našich [Concept('concept_primary_cultures','$concept_primary_cultures$')] nemá rys #v $heritage_group_south_asian$#!"
- south_asian_culture_over_60_tt: "Kterákoli kultura s rysem #v $heritage_group_south_asian$#! má základní [concept_acceptance] vyšší než #v 60#!"
+ granted_india_home_rule_tt: "Rozhodli jsme se udělit zemi [SCOPE.sCountry('india_scope').GetAltAdjective('A')] #bold samosprávu#!" # todo: COUNTRY CASE
+ no_south_asian_primary_cultures_tt: "Žádná z našich [Concept('concept_primary_cultures','primárních kultur')] nemá rys #v $heritage_group_south_asian$#!" # todo: CONCEPT CASE
+ south_asian_culture_over_60_tt: "Kterákoli kultura s rysem #v $heritage_group_south_asian$#! má základní [Concept('concept_acceptance','přijetí')] vyšší než #v 60#!" # todo: CONCEPT CASE
  je_india_home_rule: "Indická samospráva"
- je_india_home_rule_reason: "V celé zemi [SCOPE.sCountry('india_scope').GetName] mezi domorodou indickou populací sílí národní vědomí. Domorodí Indové vzdělaní v [SCOPE.sCountry('overlord_scope').GetAdjectiveNoFlag] školách a zaměstnaní koloniální vládou začali agitovat za rovné postavení v rámci imperiálních institucí, větší ekonomické příležitosti a konečné zřízení samosprávy pro celou Indii.\n\nDokud je tento [concept_journal_entry] aktivní, budeme mít příležitost žádat [SCOPE.sCountry('overlord_scope').GetName] o větší autonomii a další místní reformy. Šance na přijetí těchto žádostí závisí na stavu #bold ukazatele postupu#!."
+ je_india_home_rule_reason: "V celé zemi [SCOPE.sCountry('india_scope').GetAltAdjective('A')] mezi domorodou indickou populací sílí národní vědomí. Domorodí Indové vzdělaní v [SCOPE.sCountry('overlord_scope').GetAdjectiveNoFlag] školách a zaměstnaní koloniální vládou začali agitovat za rovné postavení v rámci imperiálních institucí, větší ekonomické příležitosti a konečné zřízení samosprávy pro celou Indii.\n\nDokud je tento [Concept('concept_journal_entry','záznamu v deníku')] aktivní, budeme mít příležitost žádat [SCOPE.sCountry('overlord_scope').GetName] o větší autonomii a další místní reformy. Šance na přijetí těchto žádostí závisí na stavu #bold ukazatele postupu#!." # todo: CONCEPT CASE # todo: COUNTRY CASE
  je_india_nationalism_britain: "Indické národní hnutí"
- je_india_nationalism_britain_reason: "V celé zemi [SCOPE.sCountry('india_scope').GetName] mezi domorodou indickou populací sílí národní vědomí. Domorodí Indové vzdělaní v [SCOPE.sCountry('overlord_scope').GetAdjectiveNoFlag] školách a zaměstnaní koloniální vládou začali agitovat za rovné postavení v rámci imperiálních institucí, větší ekonomické příležitosti a samosprávu pro Indii.\n\nDokud je tento [concept_journal_entry] aktivní, [SCOPE.sCountry('india_scope').GetAdjective] národní hnutí bude mít příležitost žádat nás o větší autonomii a další místní reformy. Důsledky odmítnutí těchto žádostí závisí na stavu #bold ukazatele postupu#!.\n\n@warning! Pokud [Concept('concept_activism','$concept_activism_short$')] indického národního hnutí vzroste příliš vysoko, hnutí přesune svou pozornost k #bold úplné nezávislosti#!."
+ je_india_nationalism_britain_reason: "V celé zemi [SCOPE.sCountry('india_scope').GetAltAdjective('A')] mezi domorodou indickou populací sílí národní vědomí. Domorodí Indové vzdělaní v [SCOPE.sCountry('overlord_scope').GetAdjectiveNoFlag] školách a zaměstnaní koloniální vládou začali agitovat za rovné postavení v rámci imperiálních institucí, větší ekonomické příležitosti a samosprávu pro Indii.\n\nDokud je tento [Concept('concept_journal_entry','záznamu v deníku')] aktivní, [SCOPE.sCountry('india_scope').GetAdjective] národní hnutí bude mít příležitost žádat nás o větší autonomii a další místní reformy. Důsledky odmítnutí těchto žádostí závisí na stavu #bold ukazatele postupu#!.\n\n@warning! Pokud [Concept('concept_activism','aktivismu hnutí')] indického národního hnutí vzroste příliš vysoko, hnutí přesune svou pozornost k #bold úplné nezávislosti#!." # todo: CONCEPT CASE # todo: COUNTRY CASE
  preserve_british_rule_forever_tt: "Zachovejte [ROOT.GetCountry.GetAdjective] vládu nad #v $BHT$#! co nejdéle"
  india_home_rule_events.1.t: "Zákon o indické samosprávě"
  india_home_rule_events.1.d: "Po dlouhém období reforem a vyjednávání s domorodými indickými vůdci přijal [ROOT.GetCountry.GetTopOverlord.GetAdjective] parlament zákon reorganizující bývalý Rádž na Dominium Indie."
  india_home_rule_events.1.f: "„Od tohoto dne bude kolonie Indie, která byla pod přímou vládou Koruny, tvořit Dominium Indie. Toto dominium pod korunou Spojeného království Velké Británie bude mít vlastní zákonodárnou moc, pokud nebude zasahovat do autority samotné Koruny, odporovat jí nebo jí čelit.“"
  india_home_rule_events.1.a: "Využili jsme své příležitosti."
- south_asian_primary_cultures_tt: "Všechny #bold jihoasijské#! [Concept('concept_culture', '$concept_cultures$')] s [Concept('concept_homeland','$concept_homelands$')] v našem národě se stanou [concept_primary_cultures]"
+ south_asian_primary_cultures_tt: "Všechny #bold jihoasijské#! [Concept('concept_culture','kultury')] s [Concept('concept_homeland','domovinou')] v našem národě se stanou [Concept('concept_primary_cultures','primárními kulturami')]" # todo: CONCEPT CASE
  india_home_rule_events.2.t: "Indická správa žádá o vládní reformu"
  india_home_rule_events.2.d: "Pod tlakem indického národního hnutí požádala vláda země [SCOPE.sCountry('india_scope').GetName] o náš souhlas s povolením demokratických voleb do funkcí v indické správě."
  india_home_rule_events.2.f: "Žádost byla ve Sněmovně lordů přijata s jistým pobavením.\n„Aby člověk mohl volit,“ poznamenal jeden lord, „musí být gramotný. Jak indická správa se svou propastně nízkou gramotností očekává, že lidé rozeznají Rádž od Rámy?“"
@@ -308,15 +308,15 @@
  india_home_rule_events.7.f: "Když jsem šel ke skladišti, zjistil jsem, že mi cestu zastoupili všichni dělníci. Nezaútočili na mě, ale jejich záměr byl jasný: dnes se pracovat nebude. Vědom si své křehkosti jsem ustoupil stranou a šel si dát druhý šálek čaje. Tam jsem zaslechl dva dělníky, muže, kteří kdysi sloužili pode mnou.\n\n„Žádali jsme o jídlo a oni nás nechali hladovět. Žádali jsme, aby nás vyslechli, a oni nás umlčeli kulkami. A přesto po nás chtějí, abychom sloužili? Abychom poslouchali? Tak to už ne. Uvidíme, co si počnou s Indií bez Indů.“"
  india_home_rule_events.7.a: "Musíme to sledovat."
  india_home_rule_events.7.b: "Jejich požadavky mohou mít jisté opodstatnění."
- independence_lobby_formed_tt: "Vznikla [SCOPE.sPoliticalLobby('relevant_lobby').GetName], která podporuje větší autonomii na [ROOT.GetCountry.GetOverlord.GetName]"
+ independence_lobby_formed_tt: "Vznikla [SCOPE.sPoliticalLobby('relevant_lobby').GetName], která podporuje větší autonomii na [ROOT.GetCountry.GetOverlord.GetAltAdjective('A')]" # todo: COUNTRY CASE
  india_home_rule_events.8.t: "Indické národní hnutí"
  india_home_rule_events.8.d: "Národní vědomí v Indii začíná růst mezi našimi domorodými [SCOPE.gsInterestGroup('intelligentsia_ig').GetName] a [SCOPE.gsInterestGroup('petty_bourgeoisie_ig').GetName], jejichž finanční zájmy se střetávají s [ROOT.GetCountry.GetAdjectiveNoFormatting] podniky. Jejich požadavky sahají od samosprávy až po úplnou nezávislost."
  india_home_rule_events.8.f: "#bold Indičtí poddaní se obracejí ke zradě! Volají po úplné nezávislosti#!\n\nZatímco mnoho byrokratů zůstává britské vládě loajální, široká veřejnost se obrátila ke zradě. Mnozí své zrádné úmysly ospravedlňují tvrzením, že samospráva je jejich rodným právem.\n\nSněmovna lordů o této věci debatovala. Někteří se domnívají, že jde o přirozené vyústění po neúspěšných debatách o samosprávě. Jiní tvrdí, že jde o dílo několika vzpurných podněcovatelů. Jeden člen, který si přál zůstat v anonymitě, řekl: „[SCOPE.gsInterestGroup('intelligentsia_ig').GetLeader.GetFullNameNoFormatting] nepovede Indii ke schopné samosprávě. Britský Rádž musí pokračovat, pevný a neochvějný ve své správě spravedlnosti pro všechny lidi.“"
  india_home_rule_events.8.a: "Pečlivě to sledujte."
  india_home_rule_events.8.b: "Bouří se proti samotné odpovědné vládě."
- affect_bar_india_policies_tt: "Dokud je #v $je_india_nationalism_britain$#! [concept_journal_entry] aktivní, můžeme obdržet žádosti o reformy od země [SCOPE.sCountry('india_scope').GetName]"
+ affect_bar_india_policies_tt: "Dokud je #v $je_india_nationalism_britain$#! [Concept('concept_journal_entry','záznam v deníku')] aktivní, můžeme obdržet žádosti o reformy od země [SCOPE.sCountry('india_scope').GetName]" # todo: CONCEPT CASE
  india_home_rule_events.9.t: "[SCOPE.sCharacter('montagu_scope').GetLastName]-[SCOPE.sCharacter('chelmsford_scope').GetLastName]ovy reformy"
- india_home_rule_events.9.d: "V reakci na rostoucí nacionalistickou agitaci proti [SCOPE.sCountry('overlord_scope').GetAdjective] vládě schválila [SCOPE.sCountry('overlord_scope').GetAdjectiveNoFormatting] vláda sérii vládních reforem v zemi [ROOT.GetCountry.GetName]. Zřizují několik volených orgánů, které mají pomáhat se správou Indie."
+ india_home_rule_events.9.d: "V reakci na rostoucí nacionalistickou agitaci proti [SCOPE.sCountry('overlord_scope').GetAdjective] vládě schválila [SCOPE.sCountry('overlord_scope').GetAdjectiveNoFormatting] vláda sérii vládních reforem v zemi [ROOT.GetCountry.GetAltAdjective('A')]. Zřizují několik volených orgánů, které mají pomáhat se správou Indie." # todo: COUNTRY CASE
  india_home_rule_events.9.f: "„VZHLEDEM K TOMU, že vyhlášenou politikou Parlamentu je zajistit rostoucí zapojení Indů do všech odvětví indické správy a postupný rozvoj samosprávných institucí s cílem postupného uskutečnění odpovědné vlády v [SCOPE.sCountry('overlord_scope').GetAdjectiveNoFormatting] Indii jako nedílné součásti impéria:\nA vzhledem k tomu, že pokroku v uskutečňování této politiky lze dosáhnout pouze postupnými kroky a že je vhodné nyní v tomto směru učinit podstatné kroky...“"
  india_home_rule_events.9.a: "Ukázka blahovůle."
  india_home_rule_events.9.b: "Příliš málo a příliš pozdě."
@@ -327,7 +327,7 @@
  india_home_rule_events.10.f: "„Jak můžete navrhovat takový postup? Pokud tvrdíme, že si přejeme, aby si vládli sami, musíme jim dát příležitost, aby se osvědčili.“\n\n„Musíte chápat, že pokud je zahrneme, celý účel komise bude ohrožen. Stane se z ní nejednotný orgán, rozdělený stranicky i nábožensky. Když posadíte dva Indy do jakéhokoli vládního orgánu, vrátí se se třemi názory a monoklem.“\n\n„Kandidáti, které jsem shromáždil, mají všichni vzdělání z Oxfordu, pane. Pokud je pravda, co říkáte, vina leží pouze na nás.“"
  india_home_rule_events.10.a: "Jsou [ROOT.GetCountry.GetAdjectiveNoFormatting] poddanými a budou mít [ROOT.GetCountry.GetAdjectiveNoFormatting] komisi."
  india_home_rule_events.10.b: "Indové musí mít roli ve své vlastní správě."
- ideology_sympathetic_to_indians_tt: "[concept_leader] této [concept_interest_group] má [concept_ideology] nakloněnou #v indické#! věci"
+ ideology_sympathetic_to_indians_tt: "[Concept('concept_leader','Vůdce')] této [Concept('concept_interest_group','zájmové skupině')] má [Concept('concept_ideology','ideologie')] nakloněnou #v indické#! věci" # todo: CONCEPT CASE
  commission_sent_conservative_tt: "Do země [SCOPE.sCountry('india_scope').GetName] bude vyslána čistě bělošská komise, aby projednala ústavní reformu"
  commission_sent_liberal_tt: "Do země [SCOPE.sCountry('india_scope').GetName] bude vyslána společná [ROOT.GetCountry.GetAdjectiveNoFormatting]-indická komise, aby projednala ústavní reformu"
  india_home_rule_events.11.t: "[SCOPE.sCharacter('simon_scope').GetLastNameNoFormatting]ova komise"
@@ -349,17 +349,17 @@
  dyer_fate_disciplined: "[SCOPE.sCharacter('dyer_scope').GetSheHe|U] se vrací domů v hanbě, zbaven hodnosti a vyznamenání."
  dyer_fate_unrepentant: "[SCOPE.sCharacter('dyer_scope').GetSheHe|U] byl proimperialistickými občany uvítán peněžním darem a mečem cti."
  home_rule_is_over_tt: "Veškeré naděje na #bold smíření#! mezi #bold britskými#! úřady a #bold indickými#! poddanými skončily."
- india_can_change_governance_principles_tt: "[SCOPE.sCountry('india_scope').GetName] bude moci změnit svůj [concept_law] #bold rozdělení moci#!"
+ india_can_change_governance_principles_tt: "[SCOPE.sCountry('india_scope').GetName] bude moci změnit svůj [Concept('concept_law','zákon')] #bold rozdělení moci#!" # todo: CONCEPT CASE
  je_india_home_rule_progressbar: "Samospráva"
  je_india_home_rule_progressbar_desc: "Postup: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)"
- home_rule_progress_from_reformist_government: "reformní vláda [concept_subject]"
+ home_rule_progress_from_reformist_government: "reformní vláda [Concept('concept_subject','závislá země')]" # todo: CONCEPT CASE
  home_rule_progress_from_imperialist_government: "agresivní vláda [Concept('concept_overlord','$suzerain$')]"
  home_rule_progress_from_pacifist_government: "pacifistická vláda [Concept('concept_overlord','$suzerain$')]"
- home_rule_progress_from_relations: "[concept_relations] suzeréna se závislou zemí"
- home_rule_progress_from_liberty_desire: "[concept_liberty_desire]"
- BIC_not_able_to_change_distribution_of_power_tt: "[ROOT.GetCountry.GetName] má zakázáno měnit svůj [concept_law] #bold rozdělení moci#! bez povolení svého [Concept('concept_overlord','$suzerain$')]"
+ home_rule_progress_from_relations: "[Concept('concept_relations','Vztahy')] suzeréna se závislou zemí" # todo: CONCEPT CASE
+ home_rule_progress_from_liberty_desire: "[Concept('concept_liberty_desire','Touha po svobodě')]" # todo: CONCEPT CASE
+ BIC_not_able_to_change_distribution_of_power_tt: "[ROOT.GetCountry.GetName] má zakázáno měnit svůj [Concept('concept_law','zákon')] #bold rozdělení moci#! bez povolení svého [Concept('concept_overlord','$suzerain$')]" # todo: CONCEPT CASE
  je_india_home_rule_request_democracy_permission: "Požádat o vládní reformu"
- je_india_home_rule_request_democracy_permission_desc: "Nacionalistická volání po samosprávě zesílila natolik, že je již nelze ignorovat. Musíme požádat svého suzeréna o povolení poskytnout potřebné ústupky tímto směrem.\nPokud [SCOPE.sCountry('overlord_scope').GetName] souhlasí, budeme moci prosazovat [Concept('concept_law', '$concept_laws$')] #b $lawgroup_distribution_of_power$#!"
+ je_india_home_rule_request_democracy_permission_desc: "Nacionalistická volání po samosprávě zesílila natolik, že je již nelze ignorovat. Musíme požádat svého suzeréna o povolení poskytnout potřebné ústupky tímto směrem.\nPokud [SCOPE.sCountry('overlord_scope').GetName] souhlasí, budeme moci prosazovat [Concept('concept_law','zákony')] #b $lawgroup_distribution_of_power$#!" # todo: CONCEPT CASE
  je_india_nationalism_britain_indian_self_governance: "Povolit indickou samosprávu"
  je_india_nationalism_britain_indian_self_governance_desc: "Despotická vláda v Indii je zjevně neudržitelná. Abychom v této oblasti zachovali naši koloniální vládu, musíme Indům nabídnout další příležitosti podílet se na vlastní správě."
  je_india_nationalism_britain_dispatch_simon_commission: "Vyslat statutární komisi"
@@ -374,17 +374,17 @@
  india_independence_movement_defeated_tt: "#b Indické národní hnutí#! se stalo politicky bezvýznamným"
  modifier_syrian_ambitions: "Ambice v Sýrii"
  invoke_doctrine_of_lapse: "Uplatnit doktrínu propadnutí"
- invoke_doctrine_of_lapse_desc: "Anektuje [concept_princely_state] pod záminkou chybějícího mužského dědice nebo neschopné vlády."
+ invoke_doctrine_of_lapse_desc: "Anektuje [Concept('concept_princely_state','knížecí stát')] pod záminkou chybějícího mužského dědice nebo neschopné vlády." # todo: CONCEPT CASE
  invoke_doctrine_of_lapse_action_name: "Uplatnit doktrínu propadnutí"
  invoke_doctrine_of_lapse_action_notification_name: "[INITIATOR_COUNTRY.GetName] uplatňuje doktrínu propadnutí"
- invoke_doctrine_of_lapse_action_notification_desc: "[INITIATOR_COUNTRY.GetName] prohlásila, že [concept_princely_state] země [TARGET_COUNTRY.GetName] je spravován neschopně, a nařídila jeho anexi podle doktríny propadnutí."
+ invoke_doctrine_of_lapse_action_notification_desc: "[INITIATOR_COUNTRY.GetName] prohlásila, že [Concept('concept_princely_state','knížecí stát')] země [TARGET_COUNTRY.GetName] je spravován neschopně, a nařídila jeho anexi podle doktríny propadnutí." # todo: CONCEPT CASE
  invoke_doctrine_of_lapse_action_notification_third_party_name: "[INITIATOR_COUNTRY.GetName] uplatňuje doktrínu propadnutí"
- invoke_doctrine_of_lapse_action_notification_third_party_desc: "[INITIATOR_COUNTRY.GetName] prohlásila, že [concept_princely_state] země [TARGET_COUNTRY.GetName] je spravován neschopně, a nařídila jeho anexi podle doktríny propadnutí."  
+ invoke_doctrine_of_lapse_action_notification_third_party_desc: "[INITIATOR_COUNTRY.GetName] prohlásila, že [Concept('concept_princely_state','knížecí stát')] země [TARGET_COUNTRY.GetName] je spravován neschopně, a nařídila jeho anexi podle doktríny propadnutí." # todo: CONCEPT CASE
  CAN_USE_DOCTRINE_OF_LAPSE_INSTEAD: "Místo toho můžete použít [GetDiplomaticActionType('invoke_doctrine_of_lapse').GetName]"
- britain_might_abandon_india_tt: "Pokud vypukne [concept_civil_war], [ROOT.GetCountry.GetTopOverlord.GetName] se může rozhodnout #b opustit Indii#!"
- princely_state_lapsed_tt: "[SCOPE.sCountry('target_country').GetName] obdrží [Concept('concept_diplomatic_demand', '$concept_diplomatic_demand_short$')] za účelem #b anexe#!"
+ britain_might_abandon_india_tt: "Pokud vypukne [Concept('concept_civil_war','občanská válka')], [ROOT.GetCountry.GetTopOverlord.GetName] se může rozhodnout #b opustit Indii#!" # todo: CONCEPT CASE
+ princely_state_lapsed_tt: "[SCOPE.sCountry('target_country').GetName] obdrží [Concept('concept_diplomatic_demand','požadavek')] za účelem #b anexe#!" # todo: CONCEPT CASE
  india_nationalism_events.1.t: "Anarchie"
- india_nationalism_events.1.d: "Nekontrolované nepokoje v zemi [SCOPE.sCountry('india_scope').GetName] vedly k vypuknutí občanské války napříč indickým subkontinentem. Osobnosti napříč [ROOT.GetCountry.GetAdjective] společností navrhují ponechat hroutící se subkontinent jeho osudu."
+ india_nationalism_events.1.d: "Nekontrolované nepokoje v zemi [SCOPE.sCountry('india_scope').GetAltAdjective('A')] vedly k vypuknutí občanské války napříč indickým subkontinentem. Osobnosti napříč [ROOT.GetCountry.GetAdjective] společností navrhují ponechat hroutící se subkontinent jeho osudu." # todo: COUNTRY CASE
  india_nationalism_events.1.f: "[SCOPE.sCharacter('british_politician_scope').GetFullNameNoFormatting], vysoce postavený politik a profesor orientálních studií, byl tázán na stav Indie a na to, zda existuje nějaká naděje na obnovení vlády. Řekl toto:\n\n„Jsou to starobylý lid, příliš starý na to, aby se naučil umění vládnout. Vedeni svými takzvanými vůdci, chaos je tím nejlepším, co od nich můžeme očekávat. Byli jsme jejich laskavými průvodci; bez nás jsou očividně ztraceni.“"
  india_nationalism_events.1.a: "Evakuujte náš personál a dejte od této záležitosti ruce pryč."
  india_nationalism_events.1.b: "Indie už byla pacifikována dříve. Bude znovu."
@@ -394,11 +394,11 @@
  india_nationalism_events.2.a: "Spalte naše dokumenty a zamiřte k přístavům."
  india_nationalism_events.2.b: "Oznamte oficiální předání moci [SCOPE.sCountry('revolution_scope').GetRuler.GetFullName]."
  india_nationalism_events.2.c: "Vybojujeme si vlastní zemi z [SCOPE.sState('calcutta_scope').GetCityHubName]."
- is_princely_state_tt: "Je [concept_princely_state]"
- every_indian_subject_made_independent_tt: "Naše #b indické#! [Concept('concept_subject','$concept_subjects$')] se stanou #b nezávislými#!"
- european_pops_may_flee_tt: "[Concept('concept_pop', '$concept_pops$')] v #bold Indii#! s [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] $heritage_group_european$ [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] mohou uprchnout na naše zbývající území"
- most_european_pops_abandon_india_tt: "Velké množství #bold evropských#! [Concept('concept_pop','$concept_pops$')] evakuuje [ROOT.GetCountry.GetName]"
- some_european_pops_abandon_india_tt: "Velká část naší #bold evropské#! [Concept('concept_pop','$concept_population$')] se evakuuje do [SCOPE.sState('calcutta_scope').GetName]"
+ is_princely_state_tt: "Je [Concept('concept_princely_state','knížecí stát')]" # todo: CONCEPT CASE
+ every_indian_subject_made_independent_tt: "Naše #b indické#! [Concept('concept_subject','závislé země')] se stanou #b nezávislými#!" # todo: CONCEPT CASE
+ european_pops_may_flee_tt: "[Concept('concept_pop','Populace')] v #bold Indii#! s [Concept('concept_discrimination_trait_group','skupinou rysů')] $heritage_group_european$ [Concept('concept_heritage_trait','původ')] mohou uprchnout na naše zbývající území" # todo: CONCEPT CASE
+ most_european_pops_abandon_india_tt: "Velké množství #bold evropských#! [Concept('concept_pop','populací')] evakuuje [ROOT.GetCountry.GetName]" # todo: CONCEPT CASE
+ some_european_pops_abandon_india_tt: "Velká část naší #bold evropské#! [Concept('concept_pop','populace')] se evakuuje do [SCOPE.sState('calcutta_scope').GetName]" # todo: CONCEPT CASE
  bengal_free_state_tt: "Vyhlásíme svou svrchovanost jako #bold $dyn_c_bengal_free_state$#!"
  india_nationalism_events.3.t: "Solný pochod"
  india_nationalism_events.3.d: "Indičtí aktivisté za nezávislost vedení [SCOPE.sCharacter('prisoner_scope').GetFullName] pochodovali k pobřeží státu [SCOPE.sState('salt_march_state').GetName], aby protestovali proti státnímu monopolu na sůl. Po příchodu na břeh úmyslně porušili zákon sběrem soli."
@@ -416,8 +416,8 @@
  india_nationalism_events.5.f: "Když advokát, nedávno navrácený ze svých cest v zahraničí, hovoří už šestou hodinu, shromáždění je netečné.\n\n„Bystrý mladík!“ utrousí člen Kongresu.\n\n„Za koho se považuje?“ odpoví jiný. „Zdá se, že se pokládá za nejchytřejšího v místnosti; každé jeho prohlášení zaručuje našim nepřátelům munici zdarma.“"
  india_nationalism_events.5.a: "Hrdina se vrací do své rodné země."
  india_nationalism_events.5.b: "Nařiďte novinám, aby o tom mlčely."
- notification_gandhi_leaves_name: "[SCOPE.sCharacter('gandhi_scope').GetLastName] opouští zemi [SCOPE.sCountry('gandhi_exit_scope').GetName]"
- notification_gandhi_leaves_desc: "[SCOPE.sCharacter('gandhi_scope').GetFullName] opustil zemi [SCOPE.sCountry('gandhi_exit_scope').GetName], aby pomohl indickému hnutí za nezávislost."
+ notification_gandhi_leaves_name: "[SCOPE.sCharacter('gandhi_scope').GetLastName] opouští zemi [SCOPE.sCountry('gandhi_exit_scope').GetAltAdjective('A')]" # todo: COUNTRY CASE
+ notification_gandhi_leaves_desc: "[SCOPE.sCharacter('gandhi_scope').GetFullName] opustil zemi [SCOPE.sCountry('gandhi_exit_scope').GetAltAdjective('A')], aby pomohl indickému hnutí za nezávislost." # todo: COUNTRY CASE
  notification_gandhi_leaves_tooltip: "#header $notification_gandhi_leaves_name$#!\n$TOOLTIP_DELIMITER$\n$notification_gandhi_leaves_desc$"
  modifier_father_of_satyagraha: "Otec satjágrahy"
  modifier_india_massacred_protesters: "Mučedníci Indie"
@@ -434,7 +434,7 @@
  india_nationalism_events.6.a: "Ušlechtilá věc."
  india_nationalism_events.6.b: "Jak... svérázné."
  india_nationalism_events.7.t: "Stav Indie"
- india_nationalism_events.7.d: "Indická liga zveřejnila zprávu o poměrech v zemi [SCOPE.sCountry('india_scope').GetName], v níž upozorňuje na krajní chudobu a politiku represí vůči nacionalistickým aktivistům."
+ india_nationalism_events.7.d: "Indická liga zveřejnila zprávu o poměrech v zemi [SCOPE.sCountry('india_scope').GetAltAdjective('A')], v níž upozorňuje na krajní chudobu a politiku represí vůči nacionalistickým aktivistům." # todo: COUNTRY CASE
  india_nationalism_events.7.f: "Důstojník si prohlížel telegram na stole a na rtech mu pohrával úšklebek. Generální guvernér mu napsal, aby si stěžoval na Indickou ligu a její obsáhlý dokument o zacházení s Indy v Indii. Guvernér zuřil, že ministerstvo vnitra dalo Lize jakýkoli prostor k nadechnutí. Důstojník s guvernérem soucítil, ale nemohl si pomoct a musel se zasmát. Jistěže indický lid znal svůj stav. Čeho chtěla Liga dosáhnout? Jejich věc by podpořil jen zrádce. Už to, že některým Indům dovolili přijít studovat do této velké země, bylo dostatečnou laskavostí."
  india_nationalism_events.7.a: "S tím se musí něco udělat."
  india_nationalism_events.7.b: "Nařiďte zákaz tohoto díla v Indii."
@@ -454,15 +454,15 @@
  jail.1.b: "Pětiletý trest dostane [SCOPE.sCharacter('prisoner_scope').GetHerHim] z očí veřejnosti."
  jail.1.c: "[SCOPE.sCharacter('prisoner_scope').GetSheHe|U] zkoušel naši trpělivost příliš dlouho. Deset let."
  jail.1.e: "Nechceme fiasko. Nechte [SCOPE.sCharacter('prisoner_scope').GetHerHim] odejít s varováním."
- indian_igs_change_ideologies_tt: "[Concept('concept_interest_group', '$concept_interest_groups$')] změní své [Concept('concept_ideology','$concept_ideologies$')], aby odrážely novou národní situaci"
- INDIA_SUBJECT: "Koloniální [concept_subject]"
- LIBERTY_DESIRE: "[concept_liberty_desire]"
+ indian_igs_change_ideologies_tt: "[Concept('concept_interest_group','Zájmová skupina')] změní své [Concept('concept_ideology','ideologii')], aby odrážely novou národní situaci" # todo: CONCEPT CASE
+ INDIA_SUBJECT: "Koloniální [Concept('concept_subject','závislá země')]" # todo: CONCEPT CASE
+ LIBERTY_DESIRE: "[Concept('concept_liberty_desire','Touha po svobodě')]" # todo: CONCEPT CASE
  at_least_ten_acceptance_5_pops_tt: "Má alespoň deset Pop různých kultur s @acceptance_status_5! $full_acceptance$"
- achievement_our_words_are_backed_1_tt: "[concept_ruler] je $Mohandas$ $Gandhi$"
- achievement_be_prepared_tt: "Libovolný stát má negativní [concept_harvest_condition] s [Concept('concept_harvest_condition_intensity','$concept_harvest_condition_intensity_short$')] vyšší než 5"
- achievement_be_prepared_2_tt: "Nemá aktivní [concept_famine] v žádném vlastněném [concept_state]"
- achievement_be_prepared_3_tt: "Má úroveň investic 3 nebo vyšší v [concept_institution], která pomáhá zmírnit dopady [Concept('concept_harvest_condition','$concept_harvest_conditions$')] nebo [Concept('concept_famine','$concept_famines$')]"
- real_movement_achievement_tt: "Má $movement_communist$ s [Concept('concept_political_movement_support','$concept_political_movement_support_short$')] nad #v 50%#!"
+ achievement_our_words_are_backed_1_tt: "[Concept('concept_ruler','Vládce')] je $Mohandas$ $Gandhi$" # todo: CONCEPT CASE
+ achievement_be_prepared_tt: "Libovolný stát má negativní [Concept('concept_harvest_condition','podmínek sklizně')] s [Concept('concept_harvest_condition_intensity','intenzitou podmínek sklízně')] vyšší než 5" # todo: CONCEPT CASE
+ achievement_be_prepared_2_tt: "Nemá aktivní [Concept('concept_famine','hladomor')] v žádném vlastněném [Concept('concept_state','státě')]" # todo: CONCEPT CASE
+ achievement_be_prepared_3_tt: "Má úroveň investic 3 nebo vyšší v [Concept('concept_institution','institucích')], která pomáhá zmírnit dopady [Concept('concept_harvest_condition','podmínky sklizně')] nebo [Concept('concept_famine','hladomory')]" # todo: CONCEPT CASE
+ real_movement_achievement_tt: "Má $movement_communist$ s [Concept('concept_political_movement_support','podporou politickým hnutí')] nad #v 50%#!" # todo: CONCEPT CASE
  sepoy_mutiny_events.11.t: "Ctihodná společnost"
  sepoy_mutiny_events.11.d: "Laskavý despotismus země [ROOT.GetCountry.GetName] vedl k výraznému zlepšení ve všech aspektech veřejného života. Bezprostřední hrozba domorodé vzpoury byla poražena a vláda Společnosti pevně upevněna."
  sepoy_mutiny_events.11.f: "„Jen málo vlád, dokonce i za mnohem příznivějších okolností, se pokusilo vykonat tolik pro dobro svých poddaných nebo dovedlo tolik svých pokusů ke zdárnému a prospěšnému výsledku. Vláda cizinců nad lidem, který je nanejvýš obtížné pochopit a ještě obtížnější zlepšit, má právo být na sebe hrdá za to, že dokázala tolik; a zcela jistě jí žádná existující vláda ani lid nemohou vytýkat, že nedosáhla ještě více.“\n\n— John Stuart Mill, #italic Memorandum o zlepšeních ve správě Indie během posledních třiceti let#!"
@@ -473,7 +473,7 @@
  modifier_east_india_company_triumphant: "Triumfující Společnost"
  modifier_india_company_rule_upgraded: "Vláda Společnosti"
  modifier_indian_imperial_police: "Indická imperiální policie"
- no_more_utilitarianism_tt: "#v $je_imperialism_of_promise$#! [concept_journal_entry] již nebude dostupný"
+ no_more_utilitarianism_tt: "#v $je_imperialism_of_promise$#! [Concept('concept_journal_entry','záznamu v deníku')] již nebude dostupný" # todo: CONCEPT CASE
  end_company_rule_made_available_tt: "Rozhodnutí #v $bic_end_company_rule$#! bude dostupné po vyzkoumání #b $civilizing_mission$#!"
  time_has_run_out_tt: "Čas vypršel"
  bic_end_company_rule: "Ukončit vládu Společnosti"
@@ -482,18 +482,18 @@
  remove_modifier_india_company_rule_upgraded_tt: "[ROOT.GetCountry.GetNameNoFlag] ztratí #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_india_company_rule_upgraded_tt $modifier_india_company_rule_upgraded$#!"
  add_modifier_india_crown_rule_tt: "[ROOT.GetCountry.GetNameNoFlag] získá #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_india_crown_rule_tt $modifier_india_crown_rule$#! natrvalo"
  je_federation_of_india: "Indická [SCOPE.GetRootScope.GetCountry.GetCustom('get_federation_union')]"
- je_federation_of_india_reason: "[SCOPE.GetRootScope.GetCountry.GetCustom('get_federation_of_india_intro_text')]\n\nDokud je tento [concept_journal_entry] aktivní, [concept_princely_state] [Concept('concept_subject', '$concept_subjects$')] s nízkou #r touhou po svobodě#! a vysokými #r vztahy#! příležitostně žádají o připojení do [SCOPE.GetRootScope.GetCountry.GetCustom('get_federation_union')].\n\n#b [concept_privy_purse]:#!\nBývalí vládci #b knížectví#! získají státní penzi jako kompenzaci za připojení do [SCOPE.GetRootScope.GetCountry.GetCustom('get_federation_union')]. Platby $concept_privy_purse$ zvýší #b národní výdaje#! o @money![GetPlayer.MakeScope.ScriptValue('privy_purse_multiplier_base')|D-] násobek počtu #b připojených knížectví#! v rámci tohoto [concept_journal_entry].[SCOPE.GetRootScope.GetCountry.GetCustom('get_federation_of_india_diploplay_text')]"
- je_federation_of_india_reason_intro_home_rule: "Podle podmínek #b Indického zákona o domácí správě#! může každé #b knížectví#! žádat o připojení k [ROOT.GetCountry.GetName]."
- je_federation_of_india_reason_intro_independence: "Proces naší nezávislosti zanechal na indickém subkontinentu množství autonomních #b knížectví#!. Pokud tyto koloniální zbytky nebudou integrovány do [ROOT.GetCountry.GetNameNoFlag], může jejich pokračující existence poskytnout záminku k dalšímu dělení našeho národa."
- je_federation_of_india_reason_diploplay_info_tt: "\n\n@information! Nezávislé indické národy lze připojit k [ROOT.GetCountry.GetName] pomocí $dp_unify_india$ [concept_diplomatic_play]"
- privy_purse_payments_total_tt: "Naše současné platby [concept_privy_purse] činí @money![GetPlayer.MakeScope.ScriptValue('privy_purse_value')|D-]"
+ je_federation_of_india_reason: "[SCOPE.GetRootScope.GetCountry.GetCustom('get_federation_of_india_intro_text')]\n\nDokud je tento [Concept('concept_journal_entry','záznam v deníku')] aktivní, [Concept('concept_princely_state','knížecí stát')] [Concept('concept_subject','závislé země')] s nízkou #r touhou po svobodě#! a vysokými #r vztahy#! příležitostně žádají o připojení do [SCOPE.GetRootScope.GetCountry.GetCustom('get_federation_union')].\n\n#b [Concept('concept_privy_purse','Knížecí apanáž')]:#!\nBývalí vládci #b knížectví#! získají státní penzi jako kompenzaci za připojení do [SCOPE.GetRootScope.GetCountry.GetCustom('get_federation_union')]. Platby $concept_privy_purse$ zvýší #b národní výdaje#! o @money![GetPlayer.MakeScope.ScriptValue('privy_purse_multiplier_base')|D-] násobek počtu #b připojených knížectví#! v rámci tohoto [Concept('concept_journal_entry','záznamu v deníku')].[SCOPE.GetRootScope.GetCountry.GetCustom('get_federation_of_india_diploplay_text')]" # todo: CONCEPT CASE
+ je_federation_of_india_reason_intro_home_rule: "Podle podmínek #b Indického zákona o domácí správě#! může každé #b knížectví#! žádat o připojení k [ROOT.GetCountry.GetAltAdjective('D')]." # todo: COUNTRY CASE
+ je_federation_of_india_reason_intro_independence: "Proces naší nezávislosti zanechal na indickém subkontinentu množství autonomních #b knížectví#!. Pokud tyto koloniální zbytky nebudou integrovány do [ROOT.GetCountry.GetAltAdjectiveNoFlag('G')], může jejich pokračující existence poskytnout záminku k dalšímu dělení našeho národa." # todo: COUNTRY CASE
+ je_federation_of_india_reason_diploplay_info_tt: "\n\n@information! Nezávislé indické národy lze připojit k [ROOT.GetCountry.GetAltAdjective('D')] pomocí $dp_unify_india$ [Concept('concept_diplomatic_play','diplomatickou hrou')]" # todo: CONCEPT CASE # todo: COUNTRY CASE
+ privy_purse_payments_total_tt: "Naše současné platby [Concept('concept_privy_purse','knížecí apanáž')] činí @money![GetPlayer.MakeScope.ScriptValue('privy_purse_value')|D-]" # todo: CONCEPT CASE
  je_federation_of_india_federation: "federace"
  je_federation_of_india_union: "unie"
  has_earned_home_rule_tt: "[ROOT.GetCountry.GetNameNoFlag] dosáhla #b domácí správy#!"
- all_princely_states_have_acceded_to_the_federation_tt: "Všechna [Concept('concept_princely_state','$concept_princely_states$')] se připojila k [ROOT.GetCountry.GetName]"
+ all_princely_states_have_acceded_to_the_federation_tt: "Všechny [Concept('concept_princely_state','knížecí stát')] se připojila k [ROOT.GetCountry.GetAltAdjective('D')]" # todo: CONCEPT CASE # todo: COUNTRY CASE
  invite_princely_states_cooldown_tt: "Neprovedl tuto akci za poslední #b rok#!"
  je_federation_of_india_invite_princely_states: "Pozvat knížecí státy"
- je_federation_of_india_invite_princely_states_desc: "Podle podmínek naší ústavy může každý knížecí stát, který si přeje přistoupit k [ROOT.GetCountry.GetNameNoFlag], tak učinit podle vlastní vůle. Pokud si to přejeme, můžeme tento proces urychlit hromadným rozesláním pozvánek těm knížecím státům, které s námi udržují obzvláště dobré vztahy."
+ je_federation_of_india_invite_princely_states_desc: "Podle podmínek naší ústavy může každý knížecí stát, který si přeje přistoupit k [ROOT.GetCountry.GetAltAdjectiveNoFlag('D')], tak učinit podle vlastní vůle. Pokud si to přejeme, můžeme tento proces urychlit hromadným rozesláním pozvánek těm knížecím státům, které s námi udržují obzvláště dobré vztahy." # todo: COUNTRY CASE
  federation_of_india.1.t: "[SCOPE.sCountry('india_scope').GetNameNoFlag] nabízí přistoupení"
  federation_of_india.1.d: "Vláda země [SCOPE.sCountry('india_scope').GetNameNoFlag] formálně vyzvala [ROOT.GetCountry.GetName] k přistoupení k [SCOPE.sCountry('india_scope').GetCustom('get_federation_union')] země [SCOPE.sCountry('india_scope').GetNameNoFormatting]. Ačkoli [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] a [ROOT.GetCountry.GetRuler.GetHerHis] rodina obdrží vládní apanáž, [ROOT.GetCountry.GetRuler.GetHerHis] doba nezávislé vlády skončí."
  federation_of_india.1.f: "„Já, _______, vládce _______, při výkonu své svrchovanosti ve svém zmíněném státě a nad ním tímto vydávám tuto listinu jako svůj Nástroj přistoupení a,\n\n1. Tímto prohlašuji, že přistupuji k [ROOT.GetCountry.GetCustom('get_federation_union')] země $BHT$ s úmyslem, aby [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle], federální zákonodárný sbor, federální soud a jakákoli jiná autorita zřízená pro účely [ROOT.GetCountry.GetCustom('get_federation_union')] na základě tohoto mého Nástroje přistoupení, vždy však za podmínek v něm uvedených a pouze pro účely [ROOT.GetCountry.GetCustom('get_federation_union')], vykonávaly ve vztahu ke státu _______.“"
@@ -504,14 +504,14 @@
  federation_of_india.2.f: "„Ty jsi vládce myslí všeho lidu,\nrozdavatel osudu Indie.\nTvé jméno rozechvívá srdce Paňdžábu, Sindhu, Gudžarátu a Maráthů,\nDrávidů, Urísy a Bengálska.\nOzývá se v pahorcích Vindhji a Himálaje, mísí se s hudbou Jamuny a Gangy\na zpívají je vlny Indického oceánu.\nModlí se za tvé požehnání a pějí tvou chválu.\nSpása všeho lidu čeká v tvých rukou,\nty rozdavateli osudu Indie.\nVítězství, vítězství, vítězství tobě.“\n\n— Rabíndranáth Thákur, „Džana Gana Mana“"
  federation_of_india.2.a: "Vítězství, vítězství, vítězství Tobě!"
  federation_of_india.3.t: "Žádný kompromis"
- federation_of_india.3.d_cr: "Vzestup komunistické vlády v zemi [ROOT.GetCountry.GetName] způsobil zhroucení vztahů se zbývajícími knížecími státy. Pokud mají být tyto koloniální přežitky vymazány z mapy, stane se tak na hrotu bajonetu."
+ federation_of_india.3.d_cr: "Vzestup komunistické vlády v zemi [ROOT.GetCountry.GetAltAdjective('A')] způsobil zhroucení vztahů se zbývajícími knížecími státy. Pokud mají být tyto koloniální přežitky vymazány z mapy, stane se tak na hrotu bajonetu." # todo: COUNTRY CASE
  federation_of_india.3.d_infamy: "Agrese [ROOT.GetCountry.GetAdjective] vlády způsobila zhroucení vztahů se zbývajícími knížecími státy. Pokud mají být začleněny do [SCOPE.sCountry('india_scope').GetCustom('get_federation_union')], stane se tak na hrotu bajonetu."
- federation_of_india.3.f: "„Povaha vlády, která se prohlašuje za zástupkyni celé Indie, je zásadně neslučitelná s povahou státu [SCOPE.sCountry('relevant_country').GetNameNoFormatting]. Prokázala, že není ochotna dosáhnout spravedlivých dohod s ostatními indickými státy. Obávám se, že bez zásadní změny diplomatického postoje vlády [ROOT.GetCountry.GetRuler.GetLastNameNoFormatting] nemůže žádná strana dosáhnout konstruktivního a trvalého urovnání, ať už pro [ROOT.GetCountry.GetCustom('get_federation_union')], nebo jinak.\n\nProto já, svrchovaný [SCOPE.sCountry('relevant_country').GetRuler.GetPrimaryRoleTitle] země [SCOPE.sCountry('relevant_country').GetNameNoFormatting], v souladu se svými rovnocennými protějšky mezi ostatními indickými státy oznamuji svou neurčitou neúčast na dotyčné [ROOT.GetCountry.GetCustom('get_federation_union')].“"
+ federation_of_india.3.f: "„Povaha vlády, která se prohlašuje za zástupkyni celé Indie, je zásadně neslučitelná s povahou státu [SCOPE.sCountry('relevant_country').GetAltAdjectiveNoFormatting('D')]. Prokázala, že není ochotna dosáhnout spravedlivých dohod s ostatními indickými státy. Obávám se, že bez zásadní změny diplomatického postoje vlády [ROOT.GetCountry.GetRuler.GetLastNameNoFormatting] nemůže žádná strana dosáhnout konstruktivního a trvalého urovnání, ať už pro [ROOT.GetCountry.GetCustom('get_federation_union')], nebo jinak.\n\nProto já, svrchovaný [SCOPE.sCountry('relevant_country').GetRuler.GetPrimaryRoleTitle] země [SCOPE.sCountry('relevant_country').GetNameNoFormatting], v souladu se svými rovnocennými protějšky mezi ostatními indickými státy oznamuji svou neurčitou neúčast na dotyčné [ROOT.GetCountry.GetCustom('get_federation_union')].“" # todo: COUNTRY CASE
  federation_of_india.3.a: "Indie bude jednotná, perem nebo mečem."
  federation_of_india.3.b: "Revoluci nelze provádět v hedvábných rukavicích."
  federation_of_india.4.t: "[SCOPE.sCountry('relevant_princely_state').GetName] žádá o přistoupení"
  federation_of_india.4.d: "[SCOPE.sCountry('relevant_princely_state').GetRuler.GetPrimaryRoleTitle] země [SCOPE.sCountry('relevant_princely_state').GetNameNoFlag] požádal o přistoupení [SCOPE.sCountry('relevant_princely_state').GetRuler.GetHerHis] státu k [ROOT.GetCountry.GetCustom('get_federation_union')] země $BHT$."
- federation_of_india.4.f: "„Já, [SCOPE.sCountry('relevant_princely_state').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('relevant_princely_state').GetRuler.GetLastNameNoFormatting], vládce země [SCOPE.sCountry('relevant_princely_state').GetNameNoFormatting], při výkonu své svrchovanosti ve svém zmíněném státě a nad ním tímto vydávám tuto listinu jako svůj Nástroj přistoupení a,\n\n1. Tímto prohlašuji, že přistupuji k [ROOT.GetCountry.GetCustom('get_federation_union')] země $BHT$ s úmyslem, aby [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle], federální zákonodárný sbor, federální soud a jakákoli jiná autorita zřízená pro účely [ROOT.GetCountry.GetCustom('get_federation_union')] na základě tohoto mého Nástroje přistoupení, vždy však za podmínek v něm uvedených a pouze pro účely [ROOT.GetCountry.GetCustom('get_federation_union')], vykonávaly ve vztahu ke státu [SCOPE.sCountry('relevant_princely_state').GetNameNoFormatting].“" #- Lightly modified version of the official Instrument of Accession.
+ federation_of_india.4.f: "„Já, [SCOPE.sCountry('relevant_princely_state').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('relevant_princely_state').GetRuler.GetLastNameNoFormatting], vládce země [SCOPE.sCountry('relevant_princely_state').GetNameNoFormatting], při výkonu své svrchovanosti ve svém zmíněném státě a nad ním tímto vydávám tuto listinu jako svůj Nástroj přistoupení a,\n\n1. Tímto prohlašuji, že přistupuji k [ROOT.GetCountry.GetCustom('get_federation_union')] země $BHT$ s úmyslem, aby [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle], federální zákonodárný sbor, federální soud a jakákoli jiná autorita zřízená pro účely [ROOT.GetCountry.GetCustom('get_federation_union')] na základě tohoto mého Nástroje přistoupení, vždy však za podmínek v něm uvedených a pouze pro účely [ROOT.GetCountry.GetCustom('get_federation_union')], vykonávaly ve vztahu ke státu [SCOPE.sCountry('relevant_princely_state').GetAltAdjectiveNoFormatting('D')].“" #- Lightly modified version of the official Instrument of Accession. # todo: COUNTRY CASE
  federation_of_india.4.a: "Moudrá volba."
  federation_of_india.4.b: "Další území nepotřebujeme."
  modifier_unification_of_india: "Sjednocení Indie"
@@ -520,23 +520,23 @@
  bht_end_privy_purse_payments: "Ukončit platby knížecí apanáže"
  bht_end_privy_purse_payments_desc: "#b $modifier_privy_purse_payments$#!, které vyplácíme bývalým vládnoucím rodinám #b knížecích států#!, jež jsme anektovali, dohromady tvoří značnou část našeho rozpočtu. Tyto platby můžeme předčasně ukončit za cenu rozhněvání aristokratů, kteří se na nich stali závislými."
  warning_may_cause_massive_debt_tt: "@warning! Způsobí dodatečné #b $modifier_privy_purse_payments$#! až do výše @money![GetPlayer.MakeScope.ScriptValue('privy_purse_value_potential')|D-]"
- add_claims_on_india_tt: "[ROOT.GetCountry.GetName] získá [Concept('concept_claim', '$concept_claims$')] na všechny [Concept('concept_state', '$concept_states$')] v oblasti [GetGeographicRegion('geographic_region_india').GetName]"
- no_federation_je_tt: "Nemá aktivní [concept_journal_entry] #v Indická federace#!"
- no_union_je_tt: "Nemá aktivní [concept_journal_entry] #v Indická unie#!"
- all_princely_states_get_invitation_tt: "Všechny způsobilé [Concept('concept_princely_state','$concept_princely_states$')] budou pozvány, aby se připojily k [ROOT.GetCountry.GetNameNoFlag]"
- eligible_states_include_tt: "Způsobilé [Concept('concept_princely_state','$concept_princely_states$')] zahrnují: #indent_newline:3 "
+ add_claims_on_india_tt: "[ROOT.GetCountry.GetName] získá [Concept('concept_claim','nároky')] na všechny [Concept('concept_state','stát')] v oblasti [GetGeographicRegion('geographic_region_india').GetName]" # todo: CONCEPT CASE
+ no_federation_je_tt: "Nemá aktivní [Concept('concept_journal_entry','záznam v deníku')] #v Indická federace#!" # todo: CONCEPT CASE
+ no_union_je_tt: "Nemá aktivní [Concept('concept_journal_entry','záznam v deníku')] #v Indická unie#!" # todo: CONCEPT CASE
+ all_princely_states_get_invitation_tt: "Všechny způsobilé [Concept('concept_princely_state','knížecí stát')] budou pozvány, aby se připojily k [ROOT.GetCountry.GetAltAdjectiveNoFlag('D')]" # todo: CONCEPT CASE # todo: COUNTRY CASE
+ eligible_states_include_tt: "Způsobilé [Concept('concept_princely_state','knížecí stát')] zahrnují: #indent_newline:3 " # todo: CONCEPT CASE
  eligible_country_entry_tt: "[THIS.GetCountry.GetName]"
- eligible_country_entry_last_tt: "[THIS.GetCountry.GetName]#!\n• A dalších [GetPlayer.MakeScope.ScriptValue('num_princely_state_subjects_eligible_for_federation_minus_three')|v0] (z celkového počtu [GetPlayer.MakeScope.ScriptValue('num_princely_state_subjects')|v0] [Concept('concept_subject', '$concept_subjects$')] typu [concept_princely_state])"
- notification_joins_union_of_india_name: "[SCOPE.sCountry('princely_state_scope').GetName] přistupuje k [SCOPE.sCountry('india_scope').GetNameNoFlag]"
- notification_joins_union_of_india_desc: "[SCOPE.sCountry('princely_state_scope').GetRuler.GetPrimaryRoleTitle] země [SCOPE.sCountry('princely_state_scope').GetName] podepsal nástroj přistoupení a připojil se k [SCOPE.sCountry('india_scope').GetNameNoFlag]."
+ eligible_country_entry_last_tt: "[THIS.GetCountry.GetName]#!\n• A dalších [GetPlayer.MakeScope.ScriptValue('num_princely_state_subjects_eligible_for_federation_minus_three')|v0] (z celkového počtu [GetPlayer.MakeScope.ScriptValue('num_princely_state_subjects')|v0] [Concept('concept_subject','závislé země')] typu [Concept('concept_princely_state','knížecího státu')])" # todo: CONCEPT CASE
+ notification_joins_union_of_india_name: "[SCOPE.sCountry('princely_state_scope').GetName] přistupuje k [SCOPE.sCountry('india_scope').GetAltAdjectiveNoFlag('D')]" # todo: COUNTRY CASE
+ notification_joins_union_of_india_desc: "[SCOPE.sCountry('princely_state_scope').GetRuler.GetPrimaryRoleTitle] země [SCOPE.sCountry('princely_state_scope').GetName] podepsal nástroj přistoupení a připojil se k [SCOPE.sCountry('india_scope').GetAltAdjectiveNoFlag('D')]." # todo: COUNTRY CASE
  notification_joins_union_of_india_tooltip: "#header $notification_joins_union_of_india_name$#!\n$TOOLTIP_DELIMITER$\n$notification_joins_union_of_india_desc$"
- notification_refuses_to_join_union_of_india_name: "[SCOPE.sCountry('princely_state_scope').GetName] odmítá přistoupit k [SCOPE.sCountry('india_scope').GetNameNoFlag]"
- notification_refuses_to_join_union_of_india_desc: "[SCOPE.sCountry('princely_state_scope').GetRuler.GetPrimaryRoleTitle] země [SCOPE.sCountry('princely_state_scope').GetName] odmítl nabídnuté pozvání k připojení k [SCOPE.sCountry('india_scope').GetNameNoFlag]. [concept_relations] mezi oběma státy se v důsledku toho zhoršily."
+ notification_refuses_to_join_union_of_india_name: "[SCOPE.sCountry('princely_state_scope').GetName] odmítá přistoupit k [SCOPE.sCountry('india_scope').GetAltAdjectiveNoFlag('D')]" # todo: COUNTRY CASE
+ notification_refuses_to_join_union_of_india_desc: "[SCOPE.sCountry('princely_state_scope').GetRuler.GetPrimaryRoleTitle] země [SCOPE.sCountry('princely_state_scope').GetName] odmítl nabídnuté pozvání k připojení k [SCOPE.sCountry('india_scope').GetAltAdjectiveNoFlag('D')]. [Concept('concept_relations','Vztahy')] mezi oběma státy se v důsledku toho zhoršily." # todo: CONCEPT CASE # todo: COUNTRY CASE
  notification_refuses_to_join_union_of_india_tooltip: "#header $notification_refuses_to_join_union_of_india_name$#!\n$TOOLTIP_DELIMITER$\n$notification_refuses_to_join_union_of_india_desc$"
- upset_every_princely_state_federation_tt: "[concept_liberty_desire] každého [concept_princely_state] se zvýší o #r 30#! a [concept_relations] se zhorší o #r 50#!"
+ upset_every_princely_state_federation_tt: "[Concept('concept_liberty_desire','Touha po svobodě')] každého [Concept('concept_princely_state','knížecího státu')] se zvýší o #r 30#! a [Concept('concept_relations','vztahy')] se zhorší o #r 50#!" # todo: CONCEPT CASE
  notification_overlord_government_reform_accepted_name: "[SCOPE.sCountry('india_overlord_scope').GetName] přijímá vládní reformu"
- notification_overlord_government_reform_accepted_desc: "[SCOPE.sCountry('india_overlord_scope').GetName] vyhověla naší žádosti o demokratizaci naší správy. Nyní můžeme prosazovat [Concept('concept_law', '$concept_laws$')] #b $lawgroup_distribution_of_power$#!"
+ notification_overlord_government_reform_accepted_desc: "[SCOPE.sCountry('india_overlord_scope').GetName] vyhověla naší žádosti o demokratizaci naší správy. Nyní můžeme prosazovat [Concept('concept_law','zákony')] #b $lawgroup_distribution_of_power$#!" # todo: CONCEPT CASE
  notification_overlord_government_reform_accepted_tooltip: "#header $notification_overlord_government_reform_accepted_name$#!\n$TOOLTIP_DELIMITER$\n$notification_overlord_government_reform_accepted_desc$"
  notification_overlord_government_reform_denied_name: "[SCOPE.sCountry('india_overlord_scope').GetName] odmítá vládní reformu"
- notification_overlord_government_reform_denied_desc: "[SCOPE.sCountry('india_overlord_scope').GetName] odmítla naši žádost o demokratizaci naší správy. V důsledku toho se mezi našimi #b $heritage_group_south_asian$#! [Concept('concept_pop','$concept_pops$')] zvýšil [Concept('concept_radical', '$concept_radicalism$')].\n\nO reformu můžeme požádat znovu za #v 5 let#!"
+ notification_overlord_government_reform_denied_desc: "[SCOPE.sCountry('india_overlord_scope').GetName] odmítla naši žádost o demokratizaci naší správy. V důsledku toho se mezi našimi #b $heritage_group_south_asian$#! [Concept('concept_pop','populace')] zvýšil [Concept('concept_radical','radikalismus')].\n\nO reformu můžeme požádat znovu za #v 5 let#!" # todo: CONCEPT CASE
  notification_overlord_government_reform_denied_tooltip: "#header $notification_overlord_government_reform_denied_name$#!\n$TOOLTIP_DELIMITER$\n$notification_overlord_government_reform_denied_desc$"

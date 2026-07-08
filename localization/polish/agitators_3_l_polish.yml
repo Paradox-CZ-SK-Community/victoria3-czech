@@ -9,14 +9,14 @@
  natural_borders.1.b: "To je absurdní představa."
  dismiss_natural_borders_tt: "Záznam v deníku „Přirozené hranice Francie“ bude zrušen"
  natural_borders.2.t: "Přirozené hranice Francie"
- natural_borders.2.d: "Nyní, když se [ROOT.GetCountry.GetName] rozprostírá až k vzdáleným oblastem Rýna a Alp, jsme dosáhli toho, co zastánci tohoto projektu nazývají „přirozenými hranicemi“. Nyní musíme spravovat nově získaná území."
+ natural_borders.2.d: "Nyní, když se [ROOT.GetCountry.GetAltAdjective('I')] rozprostírá až k vzdáleným oblastem Rýna a Alp, jsme dosáhli toho, co zastánci tohoto projektu nazývají „přirozenými hranicemi“. Nyní musíme spravovat nově získaná území." # todo: COUNTRY CASE
  natural_borders.2.f: "Rýnský úředník přivítal nově příchozího. V poslední době přicházelo mnoho lidí ze západu. Vytáhl formulář a začal psát.\n„Ano, herr—ehm, monsieur. Vaše jméno?“\n„Jean Robert.“\n„Věk?“\n„Třicet jedna.“\n„Povolání?“\n„Ah non, mon ami! Jen na návštěvě.“"
  natural_borders.2.a: "Musí se naučit být Francouzi."
- natural_borders.2.b: "Sláva hrdinům [ROOT.GetCountry.GetName]!"
+ natural_borders.2.b: "Sláva hrdinům [ROOT.GetCountry.GetAltAdjective('D')]!" # todo: COUNTRY CASE
  natural_borders.2.c: "Jsme osvoboditelé Galie."
  natural_borders.3.t: "Turínská smlouva"
  natural_borders.3.d: "[SCOPE.sCountry('savoy_country').GetName] souhlasilo s postoupením států [SCOPE.sState('savoy_state').GetName] a [SCOPE.sState('nice_state').GetName] [ROOT.GetCountry.GetName]."
- natural_borders.3.d2: "[SCOPE.sCountry('savoy_country').GetName] souhlasilo s postoupením státu [SCOPE.sState('savoy_state').GetName] [ROOT.GetCountry.GetName]."
+ natural_borders.3.d2: "[SCOPE.sCountry('savoy_country').GetName] souhlasilo s postoupením státu [SCOPE.sState('savoy_state').GetName] [ROOT.GetCountry.GetAltAdjective('D')]." # todo: COUNTRY CASE
  natural_borders.3.f: "„Nejmocnější důvody politické nutnosti, požadavky budoucnosti Itálie, pocit vděčnosti vůči našemu mocnému spojenci a konečně i výjimečné okolnosti naší země přiměly, byť s lítostí, našeho milovaného [SCOPE.sCharacter('savoy_ruler').GetPrimaryRoleTitle] k oddělení provincií, které byly po tolik století úzce spjaty s naším národem. Veškerý odpor musí ustoupit zájmům země a smyslu pro povinnost.“"
  natural_borders.3.a: "Okamžitě začlenit Savojsko."
  natural_borders.3.b: "Uspořádat plebiscit, aby se uklidnilo obyvatelstvo."
@@ -83,17 +83,17 @@
  wedding.2.b: "[SCOPE.sCharacter('foreign_ruler_2').GetPrimaryRoleTitle] ze země [SCOPE.sCountry('marriage_country_2').GetName] má vhodného příbuzného."
  wedding.2.c: "Královská rodina [SCOPE.sCountry('marriage_country_3').GetAdjective] by byla výbornou volbou."
  wedding.3.t: "Abdikace"
- wedding.3.d1: "Rozhořčen politickými událostmi, které znevýhodňují zájmovou skupinu [SCOPE.gsInterestGroup('monarch_ig').GetName] v zemi [ROOT.GetCountry.GetName], se [SCOPE.sCharacter('abdicating_monarch').GetPrimaryRoleTitle] [SCOPE.sCharacter('abdicating_monarch').GetFirstName] rozhodl abdikovat ve prospěch svého dědice, [SCOPE.sCharacter('heir_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('heir_scope').GetFullName]."
- wedding.3.d2: "Uvědomujíc si, že jeho nedostatek [concept_popularity] může instituci [SCOPE.sLawType('monarchy_law').GetName] spíše škodit než prospívat, se [SCOPE.sCharacter('abdicating_monarch').GetPrimaryRoleTitle] [SCOPE.sCharacter('abdicating_monarch').GetFirstName] rozhodl abdikovat ve prospěch [SCOPE.sCharacter('heir_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('heir_scope').GetFullName]."
+ wedding.3.d1: "Rozhořčen politickými událostmi, které znevýhodňují zájmovou skupinu [SCOPE.gsInterestGroup('monarch_ig').GetName] v zemi [ROOT.GetCountry.GetAltAdjective('A')], se [SCOPE.sCharacter('abdicating_monarch').GetPrimaryRoleTitle] [SCOPE.sCharacter('abdicating_monarch').GetFirstName] rozhodl abdikovat ve prospěch svého dědice, [SCOPE.sCharacter('heir_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('heir_scope').GetFullName]." # todo: COUNTRY CASE
+ wedding.3.d2: "Uvědomujíc si, že jeho nedostatek [Concept('concept_popularity','popularita')] může instituci [SCOPE.sLawType('monarchy_law').GetName] spíše škodit než prospívat, se [SCOPE.sCharacter('abdicating_monarch').GetPrimaryRoleTitle] [SCOPE.sCharacter('abdicating_monarch').GetFirstName] rozhodl abdikovat ve prospěch [SCOPE.sCharacter('heir_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('heir_scope').GetFullName]." # todo: CONCEPT CASE
  wedding.3.d3: "Zdravotní stav [SCOPE.sCharacter('abdicating_monarch').GetPrimaryRoleTitle] [SCOPE.sCharacter('abdicating_monarch').GetFirstName] způsobil, že se stal neschopným vládnout. Ve vzácném okamžiku jasnozřivosti [SCOPE.sCharacter('abdicating_monarch').GetSheHe] souhlasil s abdikací ve prospěch [SCOPE.sCharacter('heir_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('heir_scope').GetFullName]."
  wedding.3.f: "„Říká se, že [SCOPE.sCharacter('abdicating_monarch').GetPrimaryRoleTitle] se zbláznil. Prý se pokusil oženit se svým koněm nebo tak něco.“\n\n„Jaké nesmysly čteš v [SCOPE.GetRootScope.GetCountry.GetCustom('generic_newspaper_type')]? Jde o vznešenější záležitosti, zjevně související se situací [SCOPE.gsInterestGroup('monarch_ig').GetNameNoFormatting].“\n\n„Není to nic složitého. Všichni toho [SCOPE.sCharacter('abdicating_monarch').GetPrimaryRoleTitle] nenávidí, takže musí pryč. Prostá demokracie.“"
  wedding.3.a: "Uspořádat soukromou, elitní korunovaci."
  wedding.3.b: "Uspořádat velkolepou veřejnou korunovaci."
- ALL_POPS: "[Concept('concept_pop', '$concept_pops$')]"
+ ALL_POPS: "[Concept('concept_pop','Populace')]" # todo: CONCEPT CASE
  POP_ATHEISTS: "Ateisté"
- POP_MIDDLE_STRATA: "[concept_middle_strata]"
- POP_LOWER_STRATA: "[concept_lower_strata]"
- POP_UNEMPLOYED_STATE: "[Concept('concept_pop', '$concept_pops$')] žijící ve [Concept('concept_state', '$concept_states$')] s vysokou [Concept('concept_unemployed','$concept_unemployment$')]"
+ POP_MIDDLE_STRATA: "[Concept('concept_middle_strata','Střední třída')]" # todo: CONCEPT CASE
+ POP_LOWER_STRATA: "[Concept('concept_lower_strata','Nižší třída')]" # todo: CONCEPT CASE
+ POP_UNEMPLOYED_STATE: "[Concept('concept_pop','Populace')] žijící ve [Concept('concept_state','státě')] s vysokou [Concept('concept_unemployed','nezaměstnaností')]" # todo: CONCEPT CASE
  je_french_foreign_legion: "Francouzská cizinecká legie"
  je_french_foreign_legion_reason: "Pokud chceme vládnout v Africe, musíme na kontinentu vybudovat trvalou vojenskou přítomnost. Musíme být připraveni přijmout, že tyto jednotky budou rekrutovány z místního obyvatelstva i z odvážných či zoufalých vojáků cizích zemí."
  algeria_events.9.t: "Francouzská cizinecká legie"
@@ -144,12 +144,12 @@
  return_to_home_country: "Repatriovat agitátora"
  return_to_home_country_desc: "#lore Vrátit [Character.GetFullName] do země našeho [Concept('concept_rivalry','rivala')]#!"
  exiles_events.100.t: "Repatriace"
- exiles_events.100.d: "[SCOPE.sCharacter('repatriated_scope').GetFullName] se vrátil z exilu v zemi [SCOPE.sCountry('repatriator_country_scope').GetName] s podporou tamní vlády. Zdá se, že [SCOPE.sCountry('repatriator_country_scope').GetNameNoFormatting] mají důvod šířit ideologii [SCOPE.sCharacter('repatriated_scope').GetIdeology.GetName] v zemi [ROOT.GetCountry.GetName]."
+ exiles_events.100.d: "[SCOPE.sCharacter('repatriated_scope').GetFullName] se vrátil z exilu v zemi [SCOPE.sCountry('repatriator_country_scope').GetAltAdjective('A')] s podporou tamní vlády. Zdá se, že [SCOPE.sCountry('repatriator_country_scope').GetNameNoFormatting] mají důvod šířit ideologii [SCOPE.sCharacter('repatriated_scope').GetIdeology.GetName] v zemi [ROOT.GetCountry.GetAltAdjective('A')]." # todo: COUNTRY CASE
  exiles_events.100.f: "Druhé šance přicházejí zřídka. Domov, který byl [SCOPE.sCharacter('repatriated_scope').GetHerHim] kdysi odepřen, nyní otevírá své dveře s podporou cizí mocnosti. Dříve ho zavrhli a dali přednost falešnému nebi stále tyranštějších hlasů. Druhá šance pro něj však znamená i druhou šanci pro sen. Pro skutečné bratrství. Možná jeho velké dílo přece jen přinese ovoce."
  exiles_events.100.a: "Vyhostili jsme ho z dobrého důvodu."
  exiles_events.100.b: "Vítej doma!"
  repatriated_agitator: "Repatriovaný agitátor"
- exiling_dissident_radicals_factors: "Množství [Concept('concept_radical','$concept_radicals$')] závisí na našem zákonu o svobodě projevu [Concept('concept_law', '$concept_laws$')] a na [concept_popularity] [concept_character]"
+ exiling_dissident_radicals_factors: "Množství [Concept('concept_radical','radikálové')] závisí na našem zákonu o svobodě projevu [Concept('concept_law','zákonu')] a na [Concept('concept_popularity','popularitu')] [Concept('concept_character','postavu')]" # todo: CONCEPT CASE
  ideology_positivist: "Pozitivista"
  ideology_positivist_desc: "Tato postava je zapálený technokrat a antiklerikál, opovrhující jak svévolnou mocí panovníků, tak vrtkavými náladami veřejnosti."
  law_technocracy: "Technokracie"
@@ -178,7 +178,7 @@
  technocracy.3.b: "Alespoň se shodneme na odporu k $aristocrats$."
  technocracy_debate_enactment: "Debata o technokracii"
  anti_aristocratic_sentiment: "Protiaristokratické nálady"
- ATHEIST_CLERGYMEN: "Z ateistického [concept_religion|l]"
+ ATHEIST_CLERGYMEN: "Z ateistického [Concept('concept_religion','náboženství')|l]" # todo: CONCEPT CASE
  rally_against_france: "Sjednocení proti Francii"
  natural_borders.4.t: "Stráž na Rýně"
  natural_borders.4.d: "[SCOPE.sCountry('france_scope').GetName] oznámila své ambice rozšířit své hranice od Savojska po Rýn. To vystavuje [SCOPE.sState('french_claim_state').GetName] značnému riziku invaze."
@@ -192,7 +192,7 @@
  france_annex_luxembourg: "Koupě Lucemburska"
  france_annex_luxembourg_desc: "Lucembursko leží v našich přirozených hranicích a mělo by být součástí Francie. Možná by štědrá nabídka přesvědčila jeho vládce k prodeji."
  natural_borders.5.t: "Koupě Lucemburska"
- natural_borders.5.d: "[SCOPE.sCountry('lux_overlord').GetName] moudře souhlasil s našimi podmínkami pro koupi [SCOPE.sCountry('lux_scope').GetName]. Toto území se vrátilo na své právoplatné místo jako součást [ROOT.GetCountry.GetAdjective] země."
+ natural_borders.5.d: "[SCOPE.sCountry('lux_overlord').GetName] moudře souhlasil s našimi podmínkami pro koupi [SCOPE.sCountry('lux_scope').GetAltAdjective('A')]. Toto území se vrátilo na své právoplatné místo jako součást [ROOT.GetCountry.GetAdjective] země." # todo: COUNTRY CASE
  natural_borders.5.f: "Pozoruhodné věci, které lze dělat s penězi — kupovat půdu, umlčet kritiku, najmout pracovní sílu — jsou s tím správným přístupem neomezené. S dostatkem peněz by si člověk mohl koupit i celou zemi."
  natural_borders.5.a: "Přirozené rozšíření našich hranic."
  luxembourg_payment: "Platby za Lucembursko"

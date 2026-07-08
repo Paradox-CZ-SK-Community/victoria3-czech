@@ -4,7 +4,7 @@
  atheist: "Ateista"
  pm_no_urban_clergy: "Státní ateismus"
  state_atheism.1.t: "Opium mas"
- state_atheism.1.d: "S prosazením zákona [SCOPE.sLaw('current_law_scope').GetName] se objevují obavy, že bez víry v [ROOT.GetCountry.GetStateReligion.GetName|l] náboženství, které by poskytovalo duchovní naplnění, mohou stísněné masy upadnout do zoufalství."
+ state_atheism.1.d: "S prosazením zákona [SCOPE.sLaw('current_law_scope').GetName] se objevují obavy, že bez víry v [ROOT.GetCountry.GetStateReligion.GetAltAdjective('L')|l] náboženství, které by poskytovalo duchovní naplnění, mohou stísněné masy upadnout do zoufalství." # todo: COUNTRY CASE
  state_atheism.1.f: "Náboženství je vzdechem utlačovaného tvora, srdcem bezcitného světa a duší bezduchých poměrů. Je opiem mas."
  state_atheism.1.a: "Bůh je mrtev."
  state_atheism.1.b: "Nasytíme jejich břicha, ne jejich duše."
@@ -27,7 +27,7 @@
  godless_ig_leader: "[SCOPE.sCharacter('godless_leader').GetFullName] z #tooltippable_name #tooltip:[SCOPE.gsInterestGroup('godless_ig').GetTooltipTag],EMPTY_STRING,IGTooltip [SCOPE.gsInterestGroup('godless_ig').GetCustom('IG_ADJ_G')|l]#!#! je nahrazen ateistickým vůdcem"
  society_of_the_godless_mod: "Společnost bezbožníků"
  antireligious_policies: "Protináboženská politika"
- state_atheism_conversion_tt: "10 % z [Concept('concept_pop', 'populace')] ve vašich [Concept('concept_incorporated_state', 'začleněnych státech')] se stane ateisty"
+ state_atheism_conversion_tt: "10 % z [Concept('concept_pop','populací')] ve vašich [Concept('concept_incorporated_state','začleněného státu')] se stane ateisty" # todo: CONCEPT CASE
  unpopular_attacks_on_charities: "Neoblíbené útoky na charity"
  state_welfare_disparaged: "Znevažovaná státní sociální péče"
  state_welfare_promoted: "Propagovaná státní sociální péče"

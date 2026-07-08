@@ -41,12 +41,12 @@
  tibet_expedition_events.9.b: "Podejte protest na velvyslanectví země [SCOPE.sCountry('expedition_country').GetName]."
  tibet_expedition_events.9.c: "To je nepřijatelné! Pošlete posily do Lhasy a řekněte jim, že mají naši podporu."
  tibet_expedition_events.10.t: "[SCOPE.sCountry('expedition_country').GetCustom('getPluralDemonym')] přicházejí!"
- tibet_expedition_events.10.d: "Přicházejí zprávy o [SCOPE.sCountry('expedition_country').GetAdjective] jednotkách, které překročily hranici a postupují k hlavnímu městu. Jde o nestoudné narušení naší suverenity, ale vzdorovat zemi [SCOPE.sCountry('expedition_country').GetName] může být nad naše síly."
+ tibet_expedition_events.10.d: "Přicházejí zprávy o [SCOPE.sCountry('expedition_country').GetAdjective] jednotkách, které překročily hranici a postupují k hlavnímu městu. Jde o nestoudné narušení naší suverenity, ale vzdorovat zemi [SCOPE.sCountry('expedition_country').GetAltAdjective('A')] může být nad naše síly." # todo: COUNTRY CASE
  tibet_expedition_events.10.f: "„Ne, neodvážili jsme se na ně střílet!“ vykoktal strážný. „Vy jste tam nebyli! Neviděli jste, kolik mužů přicházelo! Neviděli jste jejich zbraně! Bylo nás jen tucet – museli jsme ustoupit!“"
  tibet_expedition_events.10.a: "Prozatím musíme přimhouřit oko."
  tibet_expedition_events.10.b: "Bez ohledu na jejich sílu musíme vzdorovat hned!"
  tibet_expedition_events.11.t: "Zablokovat [SCOPE.sCountry('expedition_country').GetAdjective] jednotky?"
- tibet_expedition_events.11.d: "[SCOPE.sCountry('expedition_country').GetAdjective] vpád dál postupuje k našemu hlavnímu městu. Abychom získali čas, mohli bychom nařídit hlídkám, aby zřídily jednoduché zátarasy na nejzřejmějších trasách [SCOPE.sCountry('expedition_country').GetAdjective] jednotek.\n\n#N To může vést k incidentům se zemí [SCOPE.sCountry('expedition_country').GetNameNoFormatting].#!"
+ tibet_expedition_events.11.d: "[SCOPE.sCountry('expedition_country').GetAdjective] vpád dál postupuje k našemu hlavnímu městu. Abychom získali čas, mohli bychom nařídit hlídkám, aby zřídily jednoduché zátarasy na nejzřejmějších trasách [SCOPE.sCountry('expedition_country').GetAdjective] jednotek.\n\n#N To může vést k incidentům se zemí [SCOPE.sCountry('expedition_country').GetAltAdjectiveNoFormatting('G')].#!" # todo: COUNTRY CASE
  tibet_expedition_events.11.f: "Na první pohled šlo o jednoduchý návrh. Pokud měl být nepřítel zastaven, musel narazit na skutečný odpor. Ale... mohli jsme si dovolit přímý střet? To byla otázka, která strašila v myslích každého ministra a generála, jenž se tímto problémem zabýval."
  tibet_expedition_events.11.a: "Nemůžeme riskovat boj. Nechte je projít."
  tibet_expedition_events.11.b: "Zátaras nemůže uškodit. Zdržte je při nejbližší příležitosti."
@@ -56,12 +56,12 @@
  tibet_expedition_events.12.a: "Nadělejte co největší škodu! Vpřed!"
  tibet_expedition_events.12.b: "Tohle by byl masakr – stáhněte se."
  tibet_expedition_events.13.t: "[SCOPE.sCountry('expedition_country').GetAdjective] střet v Tibetu"
- tibet_expedition_events.13.d: "Dorazily zprávy o krvavém střetu mezi [SCOPE.sCountry('expedition_country').GetAdjective] expedicí a místními tibetskými silami. Naše povinnost vůči zemi [SCOPE.sCountry('tibet_scope').GetName] nás zavazuje jí ulevit, ale někteří ministři vyjádřili neklid nad samotnou představou, že bychom vládu v [SCOPE.sCountry('tibet_scope').GetCapital.GetName] jakkoli posílili."
+ tibet_expedition_events.13.d: "Dorazily zprávy o krvavém střetu mezi [SCOPE.sCountry('expedition_country').GetAdjective] expedicí a místními tibetskými silami. Naše povinnost vůči zemi [SCOPE.sCountry('tibet_scope').GetAltAdjective('A')] nás zavazuje jí ulevit, ale někteří ministři vyjádřili neklid nad samotnou představou, že bychom vládu v [SCOPE.sCountry('tibet_scope').GetCapital.GetAltAdjective('L')] jakkoli posílili." # todo: COUNTRY CASE
  tibet_expedition_events.13.f: "„To, co se stalo v tom průsmyku, je hanba, tragédie!“\n\n„Je to těžká urážka jich i nás!“\n\n„Nuže, pánové, jaký bude náš další krok? Máme jim přímo pomoci? Táhnout k hranici? Dodat zbraně?“\n\nRozpačité ticho, které následovalo, přerušilo jen suché zakašlání."
  tibet_expedition_events.13.a: "Nemůžeme poskytnout žádnou materiální pomoc."
  tibet_expedition_events.13.b: "Podpoříme [SCOPE.sCountry('tibet_scope').GetAdjective] armádu."
  tibet_expedition_events.14.t: "Himálajská vánice"
- tibet_expedition_events.14.d: "Expedici, kterou vede [SCOPE.sCharacter('expedition_leader').GetPrimaryRoleTitle] [SCOPE.sCharacter('expedition_leader').GetLastName], zdrželo kruté a nečekané počasí na jedné ze zrádnějších cest k [SCOPE.sCountry('tibet_scope').GetCapital.GetName]. Zdržení by mohlo být nákladné, ale prodírat se tímto počasím by mohlo být ještě nákladnější."
+ tibet_expedition_events.14.d: "Expedici, kterou vede [SCOPE.sCharacter('expedition_leader').GetPrimaryRoleTitle] [SCOPE.sCharacter('expedition_leader').GetLastName], zdrželo kruté a nečekané počasí na jedné ze zrádnějších cest k [SCOPE.sCountry('tibet_scope').GetCapital.GetAltAdjective('D')]. Zdržení by mohlo být nákladné, ale prodírat se tímto počasím by mohlo být ještě nákladnější." # todo: COUNTRY CASE
  tibet_expedition_events.14.f: "Ledový vítr foukal pod botami [SCOPE.sCharacter('expedition_leader').GetLastNameNoFormatting] a kolem jeho prstů. Mráz se zakusoval do země pod nimi. Bylo hluboko pod nulou, a přesto [SCOPE.sCharacter('expedition_leader').GetSheHe] slyšel vojáka vykřiknout. [SCOPE.sCharacter('expedition_leader').GetSheHe|U] předpokládal, že jde o sníh, ale sotva viděl za špičku [SCOPE.sCharacter('expedition_leader').GetHerHis] nosu a nedokázal říct, kde ten voják je, natož co se kolem nich děje."
  tibet_expedition_events.14.a: "Musíme se sněhu postavit a pokračovat dál!"
  tibet_expedition_events.14.b: "Lepší bude hrát na jistotu a přečkat tuto bouři."
@@ -71,21 +71,21 @@
  tibet_expedition_events.18.a: "Dobýt tu pevnost hned!"
  tibet_expedition_events.18.b: "Nejsme tu kvůli krveprolití – vyjednejte jejich kapitulaci."
  tibet_expedition_events.19.t: "Neschválené plenění"
- tibet_expedition_events.19.d: "Jak se vojáci [SCOPE.sCharacter('expedition_leader').GetLastName] blíží k zemi [SCOPE.sCountry('tibet_scope').GetName], někteří z nich se utrhli ze řetězu. Dorazily zprávy o tlupách našich mužů, kteří vnikají do domů a klášterů a berou si vše, co se jim zalíbí."
+ tibet_expedition_events.19.d: "Jak se vojáci [SCOPE.sCharacter('expedition_leader').GetLastName] blíží k zemi [SCOPE.sCountry('tibet_scope').GetAltAdjective('A')], někteří z nich se utrhli ze řetězu. Dorazily zprávy o tlupách našich mužů, kteří vnikají do domů a klášterů a berou si vše, co se jim zalíbí." # todo: COUNTRY CASE
  tibet_expedition_events.19.f: "„Ujišťuji vás, pane, že to zcela spadá do přijatelných mezí. Koneckonců nám kladli odpor a dá se očekávat, že po takových událostech budou následovat určité kroky. Ačkoli zprávy z tamtoho jednoho kláštera jsou samozřejmě jistě přehnané.“"
  tibet_expedition_events.19.a: "A co? Tak už to u armád chodí."
  tibet_expedition_events.19.b: "Potrestat vojáky a nabídnout omluvu místním úředníkům."
  tibet_expedition_events.20.t: "Vydání ultimáta"
  tibet_expedition_events.20.d: "S naší expedicí poblíž [SCOPE.sCountry('tibet_scope').GetCapital.GetCityHubName] nastal čas vyřešit ožehavou otázku diplomatických kanálů. Musíme promluvit s tím, kdo má nad těmito zeměmi nejvyšší autoritu."
  tibet_expedition_events.20.f: "Našel důstojníka zhrouceného nad stolem, jak křičí do dlaní.\n\n„Promluvíte s jedním úředníkem a ten vás pošle za dalším. Pak promluvíte s #italic tímhle#! chlapíkem a #italic on#! řekne, že máte špatného člověka, a odkáže vás na třetího. A pak tenhle chlapík – ten chlapík řekne, že jste to celé špatně pochopili a že všechnu autoritu má ten #italic první#! chlapík.“\n\n„Ach, kde to končí? Kdo tomu velí? Velím tomu vůbec #italic já#!?“"
- tibet_expedition_events.20.a: "Samozřejmě předložte naše požadavky zemi [SCOPE.sCountry('tibet_scope').GetName]."
- tibet_expedition_events.20.b: "Promluvte přímo se zemí [SCOPE.sCountry('overlord_of_tibet').GetName]."
- sending_tibet_ultimatum_tt: "[SCOPE.sCharacter('expedition_leader').GetFullName] vstupuje do jednání se zemí [SCOPE.sCountry('tibet_scope').GetName]."
- sending_tibet_overlord_ultimatum_tt: "[SCOPE.sCharacter('expedition_leader').GetFullName] vstupuje do jednání se zemí [SCOPE.sCountry('overlord_of_tibet').GetName]."
+ tibet_expedition_events.20.a: "Samozřejmě předložte naše požadavky zemi [SCOPE.sCountry('tibet_scope').GetAltAdjective('A')]." # todo: COUNTRY CASE
+ tibet_expedition_events.20.b: "Promluvte přímo se zemí [SCOPE.sCountry('overlord_of_tibet').GetAltAdjective('G')]." # todo: COUNTRY CASE
+ sending_tibet_ultimatum_tt: "[SCOPE.sCharacter('expedition_leader').GetFullName] vstupuje do jednání se zemí [SCOPE.sCountry('tibet_scope').GetAltAdjective('G')]." # todo: COUNTRY CASE
+ sending_tibet_overlord_ultimatum_tt: "[SCOPE.sCharacter('expedition_leader').GetFullName] vstupuje do jednání se zemí [SCOPE.sCountry('overlord_of_tibet').GetAltAdjective('G')]." # todo: COUNTRY CASE
  tibet_expedition_events.21.t: "[SCOPE.sCountry('expedition_country').GetAdjective] ultimátum"
  tibet_expedition_events.21.d: "[SCOPE.sCountry('expedition_country').GetAdjective] expedice navzdory našemu nejlepšímu úsilí dorazila až k našemu hlavnímu městu. Jejich nákladné požadavky jsou přímočaré: podrobit se jejich autoritě."
  tibet_expedition_events.21.f: "„Je to vlastně docela jednoduché,“ ušklíbl se [SCOPE.sCountry('expedition_country').GetAdjectiveNoFormatting] vyslanec. „Štíra už znáte. Proč se místo toho neobrátit na nás? Přerušte vztahy s ostatními cizími mocnostmi a zbytek nechte na nás.“"
- tibet_expedition_events.21.a: "Podrobíme se zemi [SCOPE.sCountry('expedition_country').GetName]."
+ tibet_expedition_events.21.a: "Podrobíme se zemi [SCOPE.sCountry('expedition_country').GetAltAdjective('A')]." # todo: COUNTRY CASE
  tibet_expedition_events.21.b: "Vaše demonstrace síly nic neznamená! #bold Okamžitě odsud odejděte s prázdnou!#!"
  tibet_expedition_events.22.t: "[SCOPE.sCountry('expedition_country').GetAdjective] ultimátum"
  tibet_expedition_events.22.d: "[SCOPE.sCountry('expedition_country').GetAdjective] expedice do Tibetu podkopala naši autoritu v této oblasti a nyní požadují, abychom jim formálně postoupili kontrolu. Je to těžká urážka, ale odvážíme se jim teď postavit?"
@@ -96,7 +96,7 @@
  tibet_expedition_events.26.d: "[SCOPE.sCountry('expedition_country').GetAdjective] expedice přímo oslovila [SCOPE.sCountry('tibet_scope').GetAdjective] úředníky a donutila je uznat [SCOPE.sCountry('expedition_country').GetAdjective] svrchovanost. Nyní jsou závislou zemí země [SCOPE.sCountry('expedition_country').GetName]."
  tibet_expedition_events.26.f: "„Je to vlastně docela jednoduché,“ ušklíbl se [SCOPE.sCountry('expedition_country').GetAdjectiveNoFormatting] vyslanec. „Vedli jsme prostou rozpravu s lidmi, na kterých záleželo, a teď jsou naši. Znali štíra a nyní je čas, aby poznali nás.“ Zasmál se a mávnutím poslal [SCOPE.sCountry('ex_tibetan_overlord').GetAdjectiveNoFormatting] úředníky pryč."
  tibet_expedition_events.26.a: "[SCOPE.sCountry('tibet_scope').GetAdjective] země bude vždy naše!"
- tibet_expedition_events.26.b: "[SCOPE.sCountry('expedition_country').GetName] musí zemi [SCOPE.sCountry('tibet_scope').GetNameNoFormatting] vrátit #bold okamžitě.#!"
+ tibet_expedition_events.26.b: "[SCOPE.sCountry('expedition_country').GetName] musí zemi [SCOPE.sCountry('tibet_scope').GetAltAdjectiveNoFormatting('A')] vrátit #bold okamžitě.#!" # todo: COUNTRY CASE
  tibet_expedition_events.27.t: "Konvence z [SCOPE.sCountry('tibet_scope').GetCapital.GetCityHubName]"
  tibet_expedition_events.27.d: "Expedice do Tibetu vedená [SCOPE.sCharacter('expedition_leader').GetPrimaryRoleTitle] [SCOPE.sCharacter('expedition_leader').GetFullName] dosáhla ohromujícího úspěchu a tato strategická oblast je nyní pod naším palcem. [SCOPE.sCharacter('expedition_leader').GetLastName] je už oslavován v [ROOT.GetCountry.GetCapital.GetCityHubName] a [SCOPE.sCharacter('expedition_leader').GetSheHe] má před sebou zářnou budoucnost."
  tibet_expedition_events.27.f: "„Je to vlastně jednoduché.“ Doutníkový kouř se vznášel ve vzduchu, zatímco muž žhnoucím doutníkem ukazoval na mapu na zdi. „#italic To#! byla naše slabina. Bylo životně nezbytné, abychom vynaložili tolik mužů a zlata, kolik bylo třeba k zajištění, ehm...“ Odmlčel se, když se snažil prohlédnout skrz tabákový opar, „Tibetu! Museli jsme zajistit Tibet, abychom se zachránili.“\n\nOtočil se zpět k ostatním mužům v klubu. „Tak! Kdo si dá kulečník?“"
@@ -113,8 +113,8 @@
  je_tibet_expedition: "Expedice do Tibetu"
  je_tibet_expedition_reason: "V naší velké hře proti našim rivalům ční jedna říše nad ostatní svým potenciálním významem i hrozbou: Tibet. Jsme nuceni chránit své křídlo a zmařit ambice našeho nepřítele tím, že zajistíme své zájmy v této himálajské zemi."
  je_tibet_expedition_goal: "Zajistit naše zájmy v Tibetu"
- je_tibet_expedition_success_tt: "[SCOPE.sCharacter('expedition_leader').GetFullName] dorazí do Lhasy a dostane zemi [SCOPE.sCountry('tibet_scope').GetName] pod naši kontrolu."
- je_tibet_expedition_failure_tt: "Naše expedice může selhat, pokud:\n• [SCOPE.sCharacter('expedition_leader').GetFullName] zemře.\n• Jsme ve válce se zemí [SCOPE.sCountry('tibet_scope').GetName].\n• Země [SCOPE.sCountry('tibet_scope').GetName] už neexistuje.\n• Jednání mezi [SCOPE.sCharacter('expedition_leader').GetFullName] a [SCOPE.sCountry('tibet_scope').GetAdjective] autoritami selžou."
+ je_tibet_expedition_success_tt: "[SCOPE.sCharacter('expedition_leader').GetFullName] dorazí do Lhasy a dostane zemi [SCOPE.sCountry('tibet_scope').GetAltAdjective('A')] pod naši kontrolu." # todo: COUNTRY CASE
+ je_tibet_expedition_failure_tt: "Naše expedice může selhat, pokud:\n• [SCOPE.sCharacter('expedition_leader').GetFullName] zemře.\n• Jsme ve válce se zemí [SCOPE.sCountry('tibet_scope').GetAltAdjective('G')].\n• Země [SCOPE.sCountry('tibet_scope').GetName] už neexistuje.\n• Jednání mezi [SCOPE.sCharacter('expedition_leader').GetFullName] a [SCOPE.sCountry('tibet_scope').GetAdjective] autoritami selžou." # todo: COUNTRY CASE
  je_tibet_expedition_success_event_tt: "Spustí událost #bold #white Konvence z [SCOPE.sCountry('tibet_scope').GetCapital.GetCityHubName]#!#!"
  tibet_expedition_delayed: "Tibetská expedice je zpožděna o #bold 3#! měsíce."
  tibet_expedition_surveying: "[SCOPE.sCharacter('expedition_leader').GetFullName] mapuje trasu do Lhasy."
@@ -139,10 +139,10 @@
  himalayan_affairs: "Himálajské záležitosti"
  tibetan_restitution: "Tibetské restituce"
  notification_tibet_refuses_demands_name: "[SCOPE.sCountry('tibet_scope').GetName] se odmítá podrobit!"
- notification_tibet_refuses_demands_desc: "Naše ultimátum zemi [SCOPE.sCountry('tibet_scope').GetName] bylo [SCOPE.sCountry('tibet_scope').GetAdjectiveNoFormatting] vládou odmítnuto!"
+ notification_tibet_refuses_demands_desc: "Naše ultimátum zemi [SCOPE.sCountry('tibet_scope').GetAltAdjective('A')] bylo [SCOPE.sCountry('tibet_scope').GetAdjectiveNoFormatting] vládou odmítnuto!" # todo: COUNTRY CASE
  notification_tibet_refuses_demands_tooltip: "#header $notification_tibet_refuses_demands_name$#!\n$TOOLTIP_DELIMITER$\n$notification_tibet_refuses_demands_desc$"
  notification_tibet_overlord_refuses_demands_name: "[SCOPE.sCountry('tibetan_overlord').GetName] se odmítá podrobit!"
- notification_tibet_overlord_refuses_demands_desc: "Naše ultimátum zemi [SCOPE.sCountry('tibetan_overlord').GetName] bylo [SCOPE.sCountry('tibetan_overlord').GetAdjectiveNoFormatting] vládou odmítnuto!"
+ notification_tibet_overlord_refuses_demands_desc: "Naše ultimátum zemi [SCOPE.sCountry('tibetan_overlord').GetAltAdjective('A')] bylo [SCOPE.sCountry('tibetan_overlord').GetAdjectiveNoFormatting] vládou odmítnuto!" # todo: COUNTRY CASE
  notification_tibet_overlord_refuses_demands_tooltip: "#header $notification_tibet_overlord_refuses_demands_name$#!\n$TOOLTIP_DELIMITER$\n$notification_tibet_overlord_refuses_demands_desc$"
  notification_expedition_is_our_new_master_name: "[SCOPE.sCountry('expedition_country').GetName] je náš nový vládce!"
  notification_expedition_is_our_new_master_desc: "[SCOPE.sCountry('expedition_country').GetName] přinutil naše bývalé vládce vzdát se kontroly nad naší vládou."

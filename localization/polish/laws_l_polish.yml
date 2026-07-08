@@ -213,9 +213,9 @@
  ideology_cartist_desc: "#lore Tato skupina si cení národní stability a zastává mírnou formu liberalismu, jak ji vyjadřuje Portugalská ústava z roku 1826, s cílem tuto stabilitu udržet.#!"
  ideology_regenerator: "Regenerator"
  ideology_regenerator_desc: "#lore Tato skupina si přeje obnovit dřívější prestiž Portugalska jako významné mocnosti. Je odhodlána k radikálním institucionálním reformám, aby tohoto cíle dosáhla.#!"
- liberal_and_egalitarian_amended_tt: "Postoje [GetIdeology('ideology_liberal').GetName] a [GetIdeology('ideology_egalitarian').GetName] [Concept('concept_ideology','$concept_ideologies$')] se změní na $lawgroup_rights_of_women$"
- carlist_amended_tt: "Stanoviska [GetIdeology('ideology_carlist').GetName] [concept_ideology] ke $lawgroup_economic_system$ a $lawgroup_distribution_of_power$ se změní" # todo: NEW TRANSLATION
- miguelist_amended_tt: "Stanoviska [GetIdeology('ideology_miguelist').GetName] [concept_ideology] ke $lawgroup_economic_system$ a $lawgroup_distribution_of_power$ se změní" # todo: NEW TRANSLATION
+ liberal_and_egalitarian_amended_tt: "Postoje [GetIdeology('ideology_liberal').GetName] a [GetIdeology('ideology_egalitarian').GetName] [Concept('concept_ideology','ideologie')] se změní na $lawgroup_rights_of_women$" # todo: CONCEPT CASE
+ carlist_amended_tt: "Stanoviska [GetIdeology('ideology_carlist').GetName] [Concept('concept_ideology','ideologie')] ke $lawgroup_economic_system$ a $lawgroup_distribution_of_power$ se změní" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ miguelist_amended_tt: "Stanoviska [GetIdeology('ideology_miguelist').GetName] [Concept('concept_ideology','ideologie')] ke $lawgroup_economic_system$ a $lawgroup_distribution_of_power$ se změní" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ideology_russian_patriarch: "Ruský pravoslavný patriarchát"
  ideology_russian_patriarch_desc: "#lore Pravoslavný patriarchát se považuje za jeden ze tří pilířů země, věří, že car je nade vše, a že rolníci si zaslouží být nevolníky.#!"
  ideology_orthodox_patriarch: "Pravoslavný patriarchát"
@@ -404,9 +404,9 @@
  law_anarchy_desc: "Místní komunity spravují své vlastní záležitosti a vysílají zástupce, kteří vykonávají omezené funkční období v rámci větších kooperativních rad. Bez formálních hierarchií je uplatňování centrální autority obtížné."
  law_single_party_state: "Stát jedné strany"
  law_single_party_state_desc: "Stát je řízen jednou legální politickou stranou, která má monopol na veškerou politickou činnost v rámci národa."
- ruler_in_party_tt: "[concept_ruler] této země je členem [Concept('concept_interest_group','zájmové skupiny')], která má aktivní politickou [Concept('concept_party','stranu')]"
+ ruler_in_party_tt: "[Concept('concept_ruler','Vládce')] této země je členem [Concept('concept_interest_group','zájmové skupiny')], která má aktivní politickou [Concept('concept_party','strany')]" # todo: CONCEPT CASE
  sps_no_party_tt: "Tato země nemá žádnou aktivní [Concept('concept_party', 'politickou stranu')]"
- sps_government_reshuffle_tt: "[concept_government] bude aktualizována s členy jediné legální [Concept('concept_party','strany')]"
+ sps_government_reshuffle_tt: "[Concept('concept_government','Vláda')] bude aktualizována s členy jediné legální [Concept('concept_party','strany')]" # todo: CONCEPT CASE
  law_organic_regulation: "Organické nařízení"
  law_organic_regulation_desc: "Vláda této země je ustanovena souborem „organických nařízení“ uložených Velmocemi. Hlava státu je jmenována zástupci bojarové oligarchie."
  law_neo_absolutism: "Neoabsolutismus"
@@ -449,7 +449,7 @@
  law_legacy_slavery_desc: "Jako kompromis mezi abolicionisty a otrokáři může instituce otroctví pokračovat, dokud se nebude rozšiřovat."
  law_colonial_slavery: "Koloniální otroctví"
  law_colonial_slavery_desc: "Instituce otroctví je legální v koloniích této země. Každý otrok, který vstoupí na pevninu, je osvobozen."
- switch_from_colonial_slavery_to_pro_slavery_tt: "[SCOPE.gsInterestGroup('landowners_scope').GetName] se přepne na [GetIdeology('ideology_pro_slavery').GetName] [concept_ideology]"
+ switch_from_colonial_slavery_to_pro_slavery_tt: "[SCOPE.gsInterestGroup('landowners_scope').GetName] se přepne na [GetIdeology('ideology_pro_slavery').GetName] [Concept('concept_ideology','ideologii')]" # todo: CONCEPT CASE
  lawgroup_church_and_state: "Církev a stát"
  lawgroup_church_and_state_desc: "Vztah mezi fyzickými a duchovními vládci."
  law_state_religion: "Státní náboženství"
@@ -514,10 +514,10 @@
  law_mercantilism_desc: "Ekonomika zaměřená na vývoz s důrazem na udržení kladného bilančního schodku a konkurenci s ostatními zeměmi."
  law_canton_system: "Kantonský systém"
  law_canton_system_desc: "Varianta pro $law_isolationism$, kdy je obchod povolen pouze v jediném pobřežním státě."
- canton_system_trade_center_trigger_tt: "Pod [concept_law] [GetLawType('law_canton_system').GetName], Obchodní centra mohu být budovány pouze v in #v $STATE_GUANGDONG$#! po úroveň #v 50#!"
+ canton_system_trade_center_trigger_tt: "Pod [Concept('concept_law','zákonem')] [GetLawType('law_canton_system').GetName], Obchodní centra mohu být budovány pouze v in #v $STATE_GUANGDONG$#! po úroveň #v 50#!" # todo: CONCEPT CASE
  law_sakoku: "Sakoku" # todo: NEW TRANSLATION
  law_sakoku_desc: "Varianta $law_isolationism$, kde jsou kontakty s ostatními státy silně omezeny a obchod je limitován na několik vyhrazených přístavů." # todo: NEW TRANSLATION
- sakoku_trade_center_trigger_tt: "Pod [GetLawType('law_sakoku').GetName] [concept_law] lze obchodní centra stavět pouze do úrovně [Building.GetState.GetModifier.GetNonFormattedValueWithBreakdownAndNoDecimalsFor('state_trade_center_max_limit_add')|v] v #v $STATE_KYUSHU$#!, kde může být obchod se zahraničními zájmy přísně kontrolován." # todo: NEW TRANSLATION
+ sakoku_trade_center_trigger_tt: "Pod [GetLawType('law_sakoku').GetName] [Concept('concept_law','zákonem')] lze obchodní centra stavět pouze do úrovně [Building.GetState.GetModifier.GetNonFormattedValueWithBreakdownAndNoDecimalsFor('state_trade_center_max_limit_add')|v] v #v $STATE_KYUSHU$#!, kde může být obchod se zahraničními zájmy přísně kontrolován." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  internal_controls_relaxed_tt: "Kontroly vnitřního pohybu budou uvolněny, což nás přinutí přijmout [GetLawType('law_migration_controls').GetName]" # todo: NEW TRANSLATION
  internal_controls_strengthened_tt: "Budou zavedena omezení kontaktů se zahraničními státy, v důsledku čehož přijmeme [GetLawType('law_closed_borders').GetName]" # todo: NEW TRANSLATION
  lawgroup_taxation: "Zdanění"
@@ -599,7 +599,7 @@
  law_crownland_diets: "Sněmy korunních zemí"
  law_crownland_diets_desc: "Místní správu zajišťují tradiční sněmy volené z řad regionální šlechty."
  lawgroup_colonization: "Kolonizace"
- lawgroup_colonization_desc: "Váš postoj k zakládání kolonií za účelem vytlačení a ovládnutí [concept_decentralized_nation]."
+ lawgroup_colonization_desc: "Váš postoj k zakládání kolonií za účelem vytlačení a ovládnutí [Concept('concept_decentralized_nation','decentralizovaný národ')]." # todo: CONCEPT CASE
  law_no_colonial_affairs: "Žádné koloniální záležitosti"
  law_no_colonial_affairs_desc: "Země se nezapojuje do žádného formálního typu kolonizace a nemůže zakládat kolonie."
  law_colonial_resettlement: "Přesídlení do kolonií"
@@ -627,9 +627,9 @@
  law_closed_borders: "Zavřené hranice"
  law_closed_borders_desc: "Není povolena žádná migrace do země ani z ní."
  liberate_slaves_tt: "Všichni [GetPopType('slaves').GetName] budou osvobozeni"
- enslave_discriminated_farm_workers_tt: "Všichni $laborers$ s nízkou [concept_acceptance] pracující na farmách, rančích a plantážích v bývalých otrokářských státech budou [Concept('concept_slavery', '$concept_enslaved$')]."
- enact_law_radical_leftist_government_warning_desc: "@warning! Pokud přijmeme tenhle [concept_law], může se stát, že [Concept('concept_country', '$concept_countries$')] bez podobné formy $lawgroup_governance_principles$ se stane vůči nám agresivní."
- enact_law_radical_leftist_economy_warning_desc: "@warning! Pokud přijmeme tenhle [concept_law], může se stát, že [Concept('concept_country', '$concept_countries$')] bez podobné formy $lawgroup_economic_system$ se stane vůči nám agresivní."
+ enslave_discriminated_farm_workers_tt: "Všichni $laborers$ s nízkou [Concept('concept_acceptance','přijetím')] pracující na farmách, rančích a plantážích v bývalých otrokářských státech budou [Concept('concept_slavery','otroci')]." # todo: CONCEPT CASE
+ enact_law_radical_leftist_government_warning_desc: "@warning! Pokud přijmeme tenhle [Concept('concept_law','zákon')], může se stát, že [Concept('concept_country','země')] bez podobné formy $lawgroup_governance_principles$ se stane vůči nám agresivní." # todo: CONCEPT CASE
+ enact_law_radical_leftist_economy_warning_desc: "@warning! Pokud přijmeme tenhle [Concept('concept_law','zákon')], může se stát, že [Concept('concept_country','země')] bez podobné formy $lawgroup_economic_system$ se stane vůči nám agresivní." # todo: CONCEPT CASE
  lawgroup_labour_associations: "Pracovní sdružení"
  lawgroup_labour_associations_desc: "Předpisy vztahující se na sdružení dělníků a řemeslníků."
  law_guild_system: "Systém cechů"

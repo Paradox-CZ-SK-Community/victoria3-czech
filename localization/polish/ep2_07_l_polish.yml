@@ -28,14 +28,14 @@
  ep2_sakoku.2.b: "[GetLawType('law_free_trade').GetName] osvobodí [ROOT.GetCountry.GetNameNoFormatting]."
  ep2_sakoku.2.c: "[GetLawType('law_protectionism').GetName] nám umožní obchodovat s cizími zájmy opatrně."
  ep2_sakoku.3.t: "Incident [SCOPE.sCharacter('morrison_incident_country_namesake').GetLastNameNoFormatting]"
- ep2_sakoku.3.d: "Obchodník ze země [SCOPE.sCountry('morrison_incident_country').GetName] se pokusil ignorovat přísné protokoly [GetLawType('law_sakoku').GetName] a obchodovat v neschváleném přístavu. Jeho plavidlo, #italic [SCOPE.sCharacter('morrison_incident_country_namesake').GetLastNameNoFormatting]#!, bylo zahnáno palbou pobřežních baterií. Vztahy se zemí [SCOPE.sCountry('morrison_incident_country').GetNameNoFormatting], jaké vůbec byly, se zhoršily."
+ ep2_sakoku.3.d: "Obchodník ze země [SCOPE.sCountry('morrison_incident_country').GetName] se pokusil ignorovat přísné protokoly [GetLawType('law_sakoku').GetName] a obchodovat v neschváleném přístavu. Jeho plavidlo, #italic [SCOPE.sCharacter('morrison_incident_country_namesake').GetLastNameNoFormatting]#!, bylo zahnáno palbou pobřežních baterií. Vztahy se zemí [SCOPE.sCountry('morrison_incident_country').GetAltAdjectiveNoFormatting('G')], jaké vůbec byly, se zhoršily." # todo: COUNTRY CASE
  ep2_sakoku.3.f: "Velitel se ušklíbl, když dělová koule konečně zasáhla loď. Zákon byl naprosto jasný; loď neměla právo plout těmito vodami. Nezajímalo ho, co si myslí kapitán na palubě onoho plavidla. Chtěl jen, aby se ta loď otočila a odplula."
  ep2_sakoku.3.a: "Místní posádka udělala to, co měla."
- ep2_sakoku.3.b: "Měli bychom se zemi [SCOPE.sCountry('morrison_incident_country').GetNameNoFormatting] omluvit a obchodníkovi vyplatit náhradu, abychom věci urovnali."
+ ep2_sakoku.3.b: "Měli bychom se zemi [SCOPE.sCountry('morrison_incident_country').GetAltAdjectiveNoFormatting('A')] omluvit a obchodníkovi vyplatit náhradu, abychom věci urovnali." # todo: COUNTRY CASE
  ep2_sakoku.3.c: "Toto je příležitost, kterou potřebujeme k přehodnocení nezbytnosti [GetLawType('law_sakoku').GetName]."
  ep2_sakoku.4.t: "Vypáčený zámek"
  ep2_sakoku.4.d: "Při zvládání tlaků zevnitř i zvenčí bylo [GetLawType('law_sakoku').GetName] zrušeno. [ROOT.GetCountry.GetNameNoFormatting] si odemkla novou budoucnost."
- ep2_sakoku.4.f: "Úředník hleděl přes záliv. U doků stály nové lodě. Neznámé lodě, mávající vlajkami, které nikdy předtím neviděl. Co nabízely [ROOT.GetCountry.GetNameNoFormatting]? Co si chtěly od [ROOT.GetCountry.GetNameNoFormatting] vzít?\n\nJeho pohled setrval na zakotvených lodích dlouho, velmi dlouho, než se konečně odvrátil. Jeho oči mu dnes nemohly dát odpověď, po které toužil. Jen čas mu mohl říct, co tato nová éra dá jeho vlasti."
+ ep2_sakoku.4.f: "Úředník hleděl přes záliv. U doků stály nové lodě. Neznámé lodě, mávající vlajkami, které nikdy předtím neviděl. Co nabízely [ROOT.GetCountry.GetNameNoFormatting]? Co si chtěly od [ROOT.GetCountry.GetAltAdjectiveNoFormatting('G')] vzít?\n\nJeho pohled setrval na zakotvených lodích dlouho, velmi dlouho, než se konečně odvrátil. Jeho oči mu dnes nemohly dát odpověď, po které toužil. Jen čas mu mohl říct, co tato nová éra dá jeho vlasti." # todo: COUNTRY CASE
  ep2_sakoku.4.a: "Dnes se Japonsko otevírá!"
  ep2_sakoku.5.t: "Zrezivělé zavření"
  ep2_sakoku.5.d: "Pokračující dodržování [GetLawType('law_sakoku').GetName] v [ROOT.GetCountry.GetAltAdjectiveNoFormatting('L')], i když zemí otřásají zásadní politické změny, nevěstí nic dobrého pro jakoukoli naději na prolomení vlastní izolace země. Zdá se, že [GetLawType('law_sakoku').GetNameNoFormatting] tu zůstane."
@@ -50,6 +50,6 @@
  edo_system_not_support_enforcement_tt: "Nepodporuje prosazení zákona [GetLawType('law_intermediate_edo_system').GetName] ani [GetLawType('law_strict_edo_system').GetName]"
  edo_system_ends_tt: "[ROOT.GetCountry.GetNameNoFlag] zcela ruší [Concept('concept_social_hierarchy','$edo_system$')]"
  notification_edo_system_disappears_name: "Edský systém se hroutí"
- notification_edo_system_disappears_desc: "Kvůli nedávným kulturním a společenským změnám již edský systém není v zemi [SCOPE.sCountry('relevant_country_scope').GetName] uznávanou [concept_social_hierarchy]."
+ notification_edo_system_disappears_desc: "Kvůli nedávným kulturním a společenským změnám již edský systém není v zemi [SCOPE.sCountry('relevant_country_scope').GetAltAdjective('A')] uznávanou [Concept('concept_social_hierarchy','sociální hierarchii')]." # todo: CONCEPT CASE # todo: COUNTRY CASE
  notification_edo_system_disappears_tooltip: "#header $notification_edo_system_disappears_name$#!\n$TOOLTIP_DELIMITER$\n$notification_edo_system_disappears_desc$"
  je_meiji_army_barracks_condition: "Každé [ROOT.GetCountry.GetAdjectiveNoFlag] [GetBuildingType('building_barrack').GetName]:\n$EFFECT_LIST_BULLET$ Nemá aktivováno #yellow $pm_no_organization$#! ani #yellow $pm_samurai_training$#!"
