@@ -40,6 +40,8 @@
  NATIONALIZE: "$concept_nationalize$"
  CONSTRUCTION_CURRENT_PAGE: "Stránka [ConstructionPanel.AccessCurrentGovernmentConstructionQueuePage(GetMetaPlayer.GetPlayedOrObservedCountry)]/[ConstructionPanel.GetNumGovernmentConstructionQueuePages(GetMetaPlayer.GetPlayedOrObservedCountry)]"
  CONSTRUCTION_CURRENT_PAGE_PRIVATE: "Stránka [ConstructionPanel.AccessCurrentPrivateConstructionQueuePage(GetMetaPlayer.GetPlayedOrObservedCountry)]/[ConstructionPanel.GetNumPrivateConstructionQueuePages(GetMetaPlayer.GetPlayedOrObservedCountry)]"
+ CONSTRUCTION_CURRENT_PAGE_MILITARY_SHIP: "Strana [ConstructionPanel.AccessCurrentMilitaryShipConstructionQueuePage]/[ConstructionPanel.GetNumMilitaryShipConstructionQueuePages]" # todo: NEW TRANSLATION
+ CONSTRUCTION_CURRENT_PAGE_SUPPLY_SHIP: "Strana [ConstructionPanel.AccessCurrentSupplyShipConstructionQueuePage]/[ConstructionPanel.GetNumSupplyShipConstructionQueuePages]" # todo: NEW TRANSLATION
  CONSTRUCTION_NEXT_PAGE: "Další strana"
  CONSTRUCTION_PREVIOUS_PAGE: "Předchozí stránka"
  PRIVATELY_FUNDED_CONSTRUCTION: "#header [concept_private_construction]#!\n$TOOLTIP_DELIMITER$\nTento předmět [concept_construction_queue] je [concept_private_construction] a nelze jej zrušit nebo přehodnotit priority."
@@ -276,12 +278,7 @@
  COMMAND_CONFIRMATION_DISBAND_FORMATION: "Chcete #r rozpustit#! [MILITARY_FORMATION.GetName]?"
  DISBAND_COMMAND_HEADER: "#r Rozpuštění#! [MILITARY_FORMATION.GetName] bude mít následující efekty:"
  DISBAND_COMMAND_EFFECTS_SECTION: "#title Účinky:#!#indent_newline:3 \n$EFFECTS$#!" # todo: NEW TRANSLATION
- DISBAND_COMMAND_FORMATION_ENTRY_BEGINNING: "Bude převedeno do [MILITARY_FORMATION.GetName]:"
- DISBAND_COMMAND_FORMATION_ENTRY_COMMANDER: "* [CHARACTER.GetFullNameWithTitle]"
- DISBAND_COMMAND_FORMATION_ENTRY_UNIT: "* [COMBAT_UNIT_TYPE.GetIconString] $NUM_UNITS|v$ [COMBAT_UNIT_TYPE.GetName]"
- DISBAND_COMMAND_ENTRY_BEGINNING: "Převody "
  DISBAND_COMMAND_UNIT_ENTRY: "[COMBAT_UNIT_TYPE.GetIconString] $NUM_UNITS|v$ [COMBAT_UNIT_TYPE.GetName]"
- DISBAND_COMMAND_UNIT_ENTRY_END: " k [MILITARY_FORMATION.GetName]"
  DISBAND_COMMAND_DISBANDED_UNITS_END: " bude rozpuštěno"
  DISBAND_COMMAND_DISBAND_COMMANDER_ENTRY: "[Character.GetFullName] ([Character.GetRankName])"
  DISBAND_COMMAND_MENTION_THAT_TRACKING_FORMATIONS_WILL_GO_SOMEWHERE_ELSE: "Formace, které cestují za účelem sloučení do [MILITARY_FORMATION.GetName], se budou snažit najít jinou formaci k sloučení a pokud nebude nalezena, budou místo toho umístěny na nejbližší dostupné velitelství."
@@ -631,6 +628,8 @@
  SHRINK: "< Zmenšit"
  GROW: "Zvětšit >"
  TECH_TREE: "Technologický strom"
+ SEARCH_CLEAR: "Vymazat hledání" # todo: NEW TRANSLATION
+ SEARCHBAR_SEARCH_TEXT: "Hledat..." # todo: NEW TRANSLATION
  GRAPHLAYOUT_NODE_DEBUG: "#D Klíč: $KEY$\nId uzlu rozložení: $LAYOUT_NODE_ID$\nId základního uzlu: $BASE_NODE_ID$\nPříchozí uzly: $INCOMING$\nOdchozí uzly: $OUTGOING$\nVrstva: $LAYER$\nŠířka: $WIDTH$\nCenterX: $CENTER_X$\nPriorita: $PRIORITY$\nPozice: $POSITION$ #!"
  urban_capacity: "[concept_urbanization] státu"
  BUILDING_GROUP_TITLE: "#title $BUILDING_GROUP$#!"
@@ -1162,6 +1161,11 @@
  BUILDING_URBANIZATION: "[concept_urbanization]:"
  BUILDING_INFRA_USAGE_TOOLTIP: "[Building.GetInfrastructureUsageBreakdown]"
  BUILDING_URBANIZATION_TOOLTIP: "[Building.GetUrbanizationProvidedBreakdown]"
+ BUILDING_LOGISTICS_SUPPLY_VALUE: "[SelectLocalization(Building.HasAnyInputShortage, 'BUILDING_LOGISTICS_SUPPLY_REDUCED', 'BUILDING_LOGISTICS_SUPPLY_FULL')]" # todo: NEW TRANSLATION
+ BUILDING_LOGISTICS_SUPPLY_FULL: "#v [Building.GetProducedSupply|D]#!" # todo: NEW TRANSLATION
+ BUILDING_LOGISTICS_SUPPLY_REDUCED: "#negative_value [Building.GetProducedSupply|D]#!/#v [Building.GetSupplyWithoutShortage|D]#!" # todo: NEW TRANSLATION
+ BUILDING_LOGISTICS_SUPPLY_TOOLTIP: "#v [Building.GetProducedSupply|D]#! [Concept('concept_supply', '$concept_supplies$')] doručováno týdně [Concept('concept_military_formation', '$concept_military_formations$')] využívající tento [concept_state] jako svůj zásobovací uzel $concept_supply$.[AddLocalizationIf(Building.HasAnyInputShortage, 'BUILDING_LOGISTICS_SUPPLY_SHORTAGE_LINE')]" # todo: NEW TRANSLATION
+ BUILDING_LOGISTICS_SUPPLY_SHORTAGE_LINE: "\n@warning! Doručování zásob na #[GetMoraleColorString( Building.CalcInputAvailabilityOutputMult )] [Building.CalcInputAvailabilityOutputMult|%0]#! kvůli [Concept('concept_shortage','$concept_input_goods_shortages$')]" # todo: NEW TRANSLATION
  BUILDING_BATTALIONS_MOBILIZED: "[Concept('concept_mobilize_battalion', '$concept_mobilize_battalions_mobilized$')]:"
  PANEL_MILITARY_ARMY_POWER_PROJECTION_TOOLTIP: "[Country.GetArmyPowerProjectionDesc]"
  PANEL_MILITARY_ARMY_POWER_PROJECTION: "Celkový počet [Country.GetAltAdjective('yych')] [Concept('concept_battalion', 'praporů')] a jejich technologická sofistikovanost vedou k armadní [Concept('concept_power_projection','projekci síly')] #tooltippable #tooltip:[Country.GetTooltipTag],PANEL_MILITARY_ARMY_POWER_PROJECTION_TOOLTIP [Country.GetArmyPowerProjection|v0]#!#!"
@@ -1193,9 +1197,20 @@
  MILITARY_FORMATION_CARRYING_CAPACITY_WITH_ICON: "@ship_carrying_capacity! [MilitaryFormation.GetCarryingCapacity]" # todo: NEW TRANSLATION
  MILITARY_FORMATION_MARINE_CAPACITY_WITH_ICON: "@ship_marine_capacity! [MilitaryFormation.GetMarineCapacity]"
  MILITARY_FORMATION_TOTAL_NUMBER_OF_UNITS: "#v [MilitaryFormation.GetNumCombatUnits]#!/[SelectLocalization(LessThan_int32(MilitaryFormation.GetCommandLimitRaw, MilitaryFormation.GetNumCombatUnits), 'INSUFFICIENT_COMMAND_LIMIT', 'SUFFICIENT_COMMAND_LIMIT')]"
+ MILITARY_FORMATION_UNIT_COUNT_NO_CONSCRIPTS: "#v [MilitaryFormation.GetNumRegulars]#!/[SelectLocalization(LessThan_int32(MilitaryFormation.GetCommandLimitRaw, MilitaryFormation.GetCommandLimitUsage), 'INSUFFICIENT_COMMAND_LIMIT', 'SUFFICIENT_COMMAND_LIMIT')]" # todo: NEW TRANSLATION
+ MILITARY_FORMATION_UNIT_COUNT_WITH_CONSCRIPTS: "#v [MilitaryFormation.GetNumRegulars]#!/[SelectLocalization(LessThan_int32(MilitaryFormation.GetCommandLimitRaw, MilitaryFormation.GetCommandLimitUsage), 'INSUFFICIENT_COMMAND_LIMIT', 'SUFFICIENT_COMMAND_LIMIT')] @conscripts!#v [MilitaryFormation.GetNumConscripts|v]#!/[SelectLocalization(LessThan_int32(MilitaryFormation.GetCommandLimitRaw, MilitaryFormation.GetCommandLimitUsage), 'INSUFFICIENT_COMMAND_LIMIT', 'SUFFICIENT_COMMAND_LIMIT')]" # todo: NEW TRANSLATION
+ MILITARY_FORMATION_UNIT_COUNT_FLEET: "#v [MilitaryFormation.GetNumCombatUnits]#!/[SelectLocalization(LessThan_int32(MilitaryFormation.GetCommandLimitRaw, MilitaryFormation.GetCommandLimitUsage), 'INSUFFICIENT_COMMAND_LIMIT', 'SUFFICIENT_COMMAND_LIMIT')]" # todo: NEW TRANSLATION
  MILITARY_FORMATION_TOTAL_NUMBER_OF_UNITS_NO_LIMIT: "#v [MilitaryFormation.GetNumCombatUnits]#!"
  INSUFFICIENT_COMMAND_LIMIT: "#r [MilitaryFormation.GetCommandLimitRaw]#!"
  SUFFICIENT_COMMAND_LIMIT: "[MilitaryFormation.GetCommandLimitRaw]"
+ MILITARY_FORMATION_REGULARS_COUNT: "[MilitaryFormation.GetUnitIcon]$MILITARY_FORMATION_REGULARS_COUNT_NO_ICON$" # todo: NEW TRANSLATION
+ MILITARY_FORMATION_REGULARS_COUNT_NO_ICON: "#v [SelectLocalization(MilitaryFormation.IsFleet, 'MILITARY_FORMATION_NUM_COMBAT_UNITS', 'MILITARY_FORMATION_NUM_REGULARS')]#![ConcatIfNeitherEmpty('/', AddLocalizationIf(LessThan_int32(MilitaryFormation.GetCommandLimitRaw, MilitaryFormation.GetNumCombatUnits), 'INSUFFICIENT_COMMAND_LIMIT'))]" # todo: NEW TRANSLATION
+ MILITARY_FORMATION_NUM_REGULARS: "[MilitaryFormation.GetNumRegulars]" # todo: NEW TRANSLATION
+ MILITARY_FORMATION_NUM_COMBAT_UNITS: "[MilitaryFormation.GetNumCombatUnits]" # todo: NEW TRANSLATION
+ MILITARY_FORMATION_CONSCRIPTS_COUNT: "@conscripts!$MILITARY_FORMATION_CONSCRIPTS_COUNT_NO_ICON$" # todo: NEW TRANSLATION
+ MILITARY_FORMATION_CONSCRIPTS_COUNT_NO_ICON: "#v [SelectLocalization(MilitaryFormation.HasRaisedConscripts, 'MILITARY_FORMATION_NUM_CONSCRIPTS_RAISED', 'MILITARY_FORMATION_NUM_CONSCRIPTS_POTENTIAL')]#!" # todo: NEW TRANSLATION
+ MILITARY_FORMATION_NUM_CONSCRIPTS_RAISED: "[MilitaryFormation.GetNumConscripts|v][ConcatIfNeitherEmpty('/', AddLocalizationIf(LessThan_int32(MilitaryFormation.GetCommandLimitRaw, MilitaryFormation.GetNumConscripts), 'INSUFFICIENT_COMMAND_LIMIT'))]" # todo: NEW TRANSLATION
+ MILITARY_FORMATION_NUM_CONSCRIPTS_POTENTIAL: "[MilitaryFormation.GetMaxConscripts|v]" # todo: NEW TRANSLATION
  MILITARY_FORMATION_TOTAL_NUMBER_OF_UNITS_TOOLTIP: "[SelectLocalization(MilitaryFormation.IsArmy, 'MILITARY_FORMATION_BATTALIONS_TOOLTIP', 'MILITARY_FORMATION_FLOTILLAS_TOOLTIP')]\n$TOOLTIP_DELIMITER$\nTyto [Concept('concept_unit', 'jednotky')] pocházejí z:\n[MilitaryFormation.GetBuildingsDesc]"
  MILITARY_FORMATION_TOTAL_NUMBER_OF_UNITS_TOOLTIP_BUILDINGS: "\n$TOOLTIP_DELIMITER$\nTyto [Concept('concept_unit', '$concept_units_short$')] pocházejí z:\n[MilitaryFormation.GetBuildingsDesc]" # todo: NEW TRANSLATION
  POTENTIAL_CONSCRIPTS: "@conscripts!#v [Subtract_int32(MilitaryFormationUnitEntry.GetExpectedNumConscriptUnits, MilitaryFormationUnitEntry.GetCurrentNumConscriptUnits)]#! nevytažené [Concept('concept_conscript_battalion','prapory')]"
@@ -1206,6 +1221,9 @@
  ARMIES_IN_COUNTRY_TOOLTIP_BREAKDOWN: "[Country.GetArmiesBreakdown]"
  ARMY_ENTRY_FORMAT: "$TAB$@battalions!#tooltippable #tooltip:[MILITARY_FORMATION.GetTooltipTag],MILITARY_FORMATION_BATTALIONS_TOOLTIP $NUM_BATTALIONS|v$ #!#! $FORMATION_NAME$"
  MILITARY_FORMATION_BATTALIONS_TOOLTIP: "#header [Concept('concept_battalion', '$concept_battalions$')] v [MilitaryFormation.GetName]#!\n@battalions![MilitaryFormation.GetNumCombatUnits|v] celkem $INCOMING_NUMBER_OF_REGULARS_LABEL$\n@battalions!#tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],MILITARY_FORMATION_COMMAND_LIMIT_DESC [MilitaryFormation.GetCommandLimit|v]#!#![AddLocalizationIf(LessThan_int32(MilitaryFormation.GetCommandLimitRaw, MilitaryFormation.GetNumCombatUnits), ' @warning!')] [concept_command_limit]\n$TOOLTIP_DELIMITER$\n@battalions!#tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],MILITARY_FORMATION_REGULAR_BATTALIONS_TOOLTIP [MilitaryFormation.GetNumRegulars|v]#!#! Regular [Concept('concept_battalion', '$concept_battalions$')]\n@conscripts!#tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],MILITARY_FORMATION_CONSCRIPT_BATTALIONS_TOOLTIP [MilitaryFormation.GetNumConscripts|v]#!#! vychováno z #tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],MILITARY_FORMATION_CONSCRIPT_BATTALIONS_TOOLTIP [MilitaryFormation.GetMaxConscripts|v]#!#! potenciální [Concept('concept_conscript_battalion','$concept_conscript_battalions$')]"
+ MILITARY_FORMATION_CONSCRIPTS_TOOLTIP: "#header [Concept('concept_conscript_battalion', '$concept_conscript_battalions$')] v [MilitaryFormation.GetName]#!\n[SelectLocalization(GreaterThan_int32(MilitaryFormation.GetMaxConscripts, '(int32)0'), 'MILITARY_FORMATION_CONSCRIPTS_TOOLTIP_RAISED_LINE', 'MILITARY_FORMATION_CONSCRIPTS_TOOLTIP_NONE_LINE')]\n@conscripts!#tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],MILITARY_FORMATION_COMMAND_LIMIT_DESC [MilitaryFormation.GetCommandLimit|v]#!#![AddLocalizationIf(LessThan_int32(MilitaryFormation.GetCommandLimitRaw, MilitaryFormation.GetNumConscripts), ' @warning!')] [concept_command_limit]" # todo: NEW TRANSLATION
+ MILITARY_FORMATION_CONSCRIPTS_TOOLTIP_RAISED_LINE: "@conscripts!#tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],MILITARY_FORMATION_CONSCRIPT_BATTALIONS_TOOLTIP [MilitaryFormation.GetNumConscripts|v]#!#! povoláno z #tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],MILITARY_FORMATION_CONSCRIPT_BATTALIONS_TOOLTIP [MilitaryFormation.GetMaxConscripts|v]#!#! potenciálních [Concept('concept_conscript_battalion','$concept_conscript_battalions$')]" # todo: NEW TRANSLATION
+ MILITARY_FORMATION_CONSCRIPTS_TOOLTIP_NONE_LINE: "@conscripts!Žádní $CONSCRIPTS_CONCEPT$" # todo: NEW TRANSLATION
  MILITARY_FORMATION_REGULAR_BATTALIONS_TOOLTIP: "#header Regularní [Concept('concept_battalion', '$concept_battalions$')|l] v [MilitaryFormation.GetName]#!\n@battalions![MilitaryFormation.GetNumRegulars|v] celkem\n@battalions![MilitaryFormation.GetNumFullyMobilizedRegulars|v] [Concept('concept_mobilize_army', '$concept_mobilize_army_mobilized$')] ([MilitaryFormation.GetRegularsMobilizationPercentage|%v])\n$TOOLTIP_DELIMITER$\n[Concept('concept_combat_unit_group', '$concept_combat_unit_groups$')]:\n[MilitaryFormation.GetRegularsGroupsBreakdown]"
  INCOMING_NUMBER_OF_REGULARS_LABEL: "[SelectLocalization(NotZero(MilitaryFormation.GetIncomingNumRegulars), 'INCOMING_NUMBER_OF_REGULARS', 'NO_INCOMING_NUMBER_OF_REGULARS')]"
  INCOMING_NUMBER_OF_REGULARS: "(+[MilitaryFormation.GetUnitIcon][MilitaryFormation.GetIncomingNumRegulars|v] [Concept('concept_incoming_units', '$concept_incoming_units_short$')])"
@@ -1329,6 +1347,14 @@
  TRANSPORT_FLEET_IN_NAVAL_INVASION: "[MilitaryFormation.GetName] je v $concept_naval_mission$" # todo: NEW TRANSLATION
  REHOME_FLEET_TRANSPORTING_ARMIES: "[MilitaryFormation.GetName] #b nelze#! přesunout, když přepravuje [concept_army]" # todo: NEW TRANSLATION
  REHOME_FLEET_IN_NAVAL_INVASION: "[MilitaryFormation.GetName] #b nelze#! přesunout během $concept_naval_invasion$" # todo: NEW TRANSLATION
+ RECALL_FLEET_FOR_REPAIRS_NOT_A_FLEET: "[MilitaryFormation.GetName] není [concept_fleet]" # todo: NEW TRANSLATION
+ RECALL_FLEET_FOR_REPAIRS_ALREADY_RECALLED: "[MilitaryFormation.GetName] se již vrací do přístavu na opravy" # todo: NEW TRANSLATION
+ RECALL_FLEET_FOR_REPAIRS_IN_NAVAL_INVASION: "[MilitaryFormation.GetName] #b nelze#! odvolat během $concept_naval_invasion$" # todo: NEW TRANSLATION
+ RECALL_FLEET_FOR_REPAIRS_TRANSPORTING: "[MilitaryFormation.GetName] #b nelze#! odvolat při přepravě [concept_army]" # todo: NEW TRANSLATION
+ RECALL_FLEET_FOR_REPAIRS_ALREADY_IN_PORT: "[MilitaryFormation.GetName] je již v přístavu" # todo: NEW TRANSLATION
+ RECALL_FLEET_FOR_REPAIRS_NO_FRIENDLY_PORT: "[MilitaryFormation.GetName] nemá v dosahu žádný přátelský přístav" # todo: NEW TRANSLATION
+ RECALL_FLEET_FOR_REPAIRS_IN_COMBAT: "[MilitaryFormation.GetName] #b nelze#! odvolat, když je zapojen do boje" # todo: NEW TRANSLATION
+ RECALL_FLEET_FOR_REPAIRS_NO_REPAIRS_NEEDED: "[MilitaryFormation.GetName] je již plně opravena a obsazena posádkou" # todo: NEW TRANSLATION
  TRANSPORT_INVALID_FLEET: "Neplatné [concept_fleet]" # todo: NEW TRANSLATION
  DISEMBARK_ARMY_BEING_TRANSPORTED: "Toto [concept_army] je přepravováno a nelze jej ručně vyložit" # todo: NEW TRANSLATION
  EMBARK_ARMY_HAS_NON_MARINE_UNITS: "[MilitaryFormation.GetName] má #v [MilitaryFormation.GetNonMarineUnitCount|v]#! ne-[GetCombatUnitGroup('combat_unit_group_marines').GetName] [SelectLocalization(EqualTo_int32(MilitaryFormation.GetNonMarineUnitCount, '(int32)1'), 'concept_unit', 'concept_units')]" # todo: NEW TRANSLATION
@@ -1434,6 +1460,8 @@
  MILITARY_FORMATION_UNIT_GROUP_DEFAULT_UNIT_TOOLTIP: "#header Výchozí [concept_combat_unit_type|l]#!\nAktuální: #b [MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self).GetNameWithCulture(MilitaryFormation.GetPrimaryCultureForGroup(CombatUnitGroup.Self).Self)]#!\n$TOOLTIP_DELIMITER$\nToto je #b výchozí#! typ vojenské jednotky pro [CombatUnitGroup.GetName] který bude postaven, pokud budou přidány další jednotky do této [Concept('concept_combat_unit_group','skupiny vojenských jednotek')]."
  MILITARY_FORMATION_SUPPLY_FORMATTED: "#tooltippable #tooltip:$BREAKDOWN_TAG$ [SelectLocalization(LessThan_CFixedPoint('(CFixedPoint)$VALUE$', '(CFixedPoint)1'),'#negative_value $VALUE|%0$#!','#variable $VALUE|%0$#!')]#!#!"
  MILITARY_FORMATION_SUPPLY_TOOLTIP: "#header [Concept('concept_supply', '$concept_supplies$')] v [MilitaryFormation.GetName]#!\n@ship_supplies! #v [MilitaryFormation.GetCurrentSupplyAmount|D]#! skladem (@ship_supplies! [MilitaryFormation.GetSupplyWeeklyChange|+=D1] za týden)\n@ship_supplies! #tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],MILITARY_FORMATION_SUPPLY_CAPACITY_TOOLTIP #v [MilitaryFormation.GetSupplyCapacity|D]#!#!#! [concept_supply_capacity]\n$TOOLTIP_DELIMITER$[ConcatIfNeitherEmpty('\n', AddLocalizationIf(Not(MilitaryFormation.HasFullSupplyPath), 'SUPPLY_NO_ROUTE_DESC'))][ConcatIfNeitherEmpty('\n', AddLocalizationIf(MilitaryFormation.HasLogisticsCenterGoodsShortage, 'SUPPLY_GOODS_SHORTAGE_DESC'))]\n#title @ship_supplies! [MilitaryFormation.GetSupplyWeeklyChange|+=D1] $concept_supplies$ za týden z důvodu:#!#indent_newline:3 \n@ship_supplies! #tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],MILITARY_FORMATION_SUPPLY_CONSUMPTION_TOOLTIP #n -[MilitaryFormation.GetSupplyConsumption|D]#!#!#! spotřebováno\n@ship_supplies! #p +[MilitaryFormation.GetSupplyDelivered|D]#! doručeno @supply! #v [MilitaryFormation.GetNumAssignedSupplyShips]#! [Concept('concept_supply_ship', '$concept_supply_ships$')]#!\n\n@supply! #v [MilitaryFormation.GetNumWantedSupplyShipsForEquilibrium]#! $concept_supply_ships$ potřebných k udržení současných zásob $concept_supply$\n@supply! #v [MilitaryFormation.GetNumAssignedSupplyShips]#! $concept_supply_ships$ aktuálně přiřazáno" # todo: CHANGED
+ SUPPLY_DELIVERED_BY_SHIPS: "dodáno @supply! #v [MilitaryFormation.GetNumAssignedSupplyShips]#! [Concept('concept_supply_ship', '$concept_supply_ships$')]" # todo: NEW TRANSLATION
+ SUPPLY_DELIVERED_VIA_LAND: "dodáváno po pozemní zásobovací trase $concept_supply$" # todo: NEW TRANSLATION
  MILITARY_FORMATION_SUPPLY_COLORED: "[SelectLocalization(LessThan_CFixedPoint(MilitaryFormation.GetSupplyRaw, '(CFixedPoint)1'), 'MILITARY_FORMATION_SUPPLY_RED', 'MILITARY_FORMATION_SUPPLY_GREEN')]" # todo: NEW TRANSLATION
  MILITARY_FORMATION_SUPPLY_GREEN: "@supply! #g [MilitaryFormation.GetSupplyRaw|0%]#!" # todo: NEW TRANSLATION
  MILITARY_FORMATION_SUPPLY_RED: "@supply! #n [MilitaryFormation.GetSupplyRaw|0%]#!" # todo: NEW TRANSLATION
@@ -1479,6 +1507,7 @@
  MILITARY_FORMATION_MORALE: "@morale! #[GetMoraleColorString( MilitaryFormation.GetMorale )] [MilitaryFormation.GetMorale|0%]#!"
  MILITARY_FORMATION_MORALE_NO_ICON: "#[GetMoraleColorString( MilitaryFormation.GetMorale )] [MilitaryFormation.GetMorale|0%]#!"
  MILITARY_FORMATION_MORALE_TOOLTIP: "#header [concept_morale]#!\nPrůměrné $concept_morale$ [Concept('concept_unit','$concept_units$')] v [MilitaryFormation.GetName] je #BOLD #[GetMoraleColorString( MilitaryFormation.GetMorale )] [MilitaryFormation.GetMorale|0%]#!#!"
+ MILITARY_FORMATION_MORALE_UNIT_TYPE_ENTRY: "@morale! #[GetMoraleColorString('(CFixedPoint)$VALUE$')] $VALUE|%0$#! z #v $COUNT$#! [CombatUnitType.GetName]" # todo: NEW TRANSLATION
  MORALE_TOOLTIP: "[Country.GetAdjectiveNoFormatting|v] morálka je #BOLD #[GetMoraleColorString( FrontMarker.GetFront.GetMorale( Country.Self ) )] [FrontMarker.GetFront.GetMorale( Country.Self )|0%]#!#! v [FrontMarker.GetFront.GetName]"
  COMBAT_UNIT_MORALE_FORMATTED: "#tooltippable #tooltip:$BREAKDOWN_TAG$ #[GetMoraleColorString('(CFixedPoint)$VALUE$')] #variable $VALUE|0%$#!#!#!#!"
  COMBAT_UNIT_MORALE_RECOVERY_PER_DAY: "[CombatUnit.GetName] se každý den zotavuje o #v $VALUE|+1%$#! [concept_morale]"
@@ -1546,8 +1575,10 @@
  MILITARY_FORMATION_ADMIRALS_CONCEPT: "[Concept('concept_admiral','$concept_admirals$')]"
  MILITARY_FORMATION_NO_GENERALS: "Tato [concept_army] nemá [Concept('concept_general','$concept_generals$')], zvažte najmutí jednoho"
  MILITARY_FORMATION_RECRUIT_GENERAL: "Nábor [concept_general]"
+ MILITARY_FORMATION_RECRUIT_GENERAL_LIMIT: "@red_cross! #b Nelze#! najmout [Concept('concept_general', '$concept_general$')] protože [GetPlayer.GetName] již má $NUM_IDLE_GENERALS$/$MAX_IDLE_GENERALS$ volných $concept_generals$." # todo: NEW TRANSLATION
  MILITARY_FORMATION_NO_ADMIRALS: "Tento [concept_fleet] nemá žádné [Concept('concept_admiral','$concept_admirals$')], zvažte nábor jednoho"
  MILITARY_FORMATION_RECRUIT_ADMIRAL: "Naverbovat [concept_admiral]"
+ MILITARY_FORMATION_RECRUIT_ADMIRAL_LIMIT: "@red_cross! #b Nelze#! najmout [Concept('concept_admiral', '$concept_admiral$')] protože [GetPlayer.GetName] již má $NUM_IDLE_ADMIRALS$/$MAX_IDLE_ADMIRALS$ volných $concept_admirals$." # todo: NEW TRANSLATION
  MILITARY_FORMATION_IS_FULLY_MOBILIZED: "Plně mobilizována"
  MILITARY_FORMATION_IS_MOBILIZING: "Mobilizace: #v [MilitaryFormation.GetMobilizationPercentage|%0]#!"
  MILITARY_FORMATION_IS_MOBILIZING_TOOLTIP: "[MilitaryFormation.GetName] je [Concept('concept_mobilize_army', '$concept_mobilize_army_mobilizing$')]: #v [MilitaryFormation.GetMobilizationPercentage|%0]#!"
@@ -1636,6 +1667,8 @@
  CANNOT_UPGRADE_UNITS_IN_GROUP: "Neexistují žádné #b [COMBAT_UNIT_GROUP.GetName]#! jednotky, které lze vylepšit na [TARGET_COMBAT_UNIT_TYPE.GetName]."
  CANNOT_UPGRADE_UNITS_IN_GROUP_ALL_UPGRADING: "Všechny možné #b [COMBAT_UNIT_GROUP.GetName]#! jednotky se již aktualizují."
  UPGRADE_ALL_UNIT_GROUP: "Vylepšit všechny [CombatUnitGroup.GetName]"
+ COMBAT_UNIT_GROUP_TOOLTIP: "#header [CombatUnitGroup.GetName] [concept_combat_unit_group]#![ConcatIfNeitherEmpty('\n', AddLocalizationIf(Not(MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self).IsValid), 'NO_VALID_UNIT_TYPES_IN_GROUP'))]" # todo: NEW TRANSLATION
+ NO_VALID_UNIT_TYPES_IN_GROUP: "@red_cross! Nejsou k dispozici žádné [CombatUnitGroup.GetName] [Concept('concept_combat_unit_type', '$concept_combat_unit_types_short$')]" # todo: NEW TRANSLATION
  MILITARY_FORMATION_REMOVE_CONSCRIPT_UNIT_TOOLTIP: "#header Rozpustit jednu #b [Concept('concept_conscript_battalion','$concept_conscript_battalion_short$')] [CombatUnitType.GetName]#!#!\n[ConcatIfNeitherEmpty(GetDesc( MilitaryFormation.GetDisbandUnitTypeConscriptCommand( CombatUnitType.Self ) ),'\n')]$TOOLTIP_DELIMITER$\n#instruction Klikněte pro rozpuštění 1 [Concept('concept_unit','$concept_unit_short$')]\n#instruction $SHORTCUT_KEY_MOD_shift$Kliknout pro rozpuštění 5 $concept_units_short$\n#instruction $SHORTCUT_KEY_MOD_ctrl$Kliknout pro rozpuštění 10 jednotek#!"
  MILITARY_FORMATION_RECRUIT_CONSCRIPT_UNIT_TOOLTIP: "Nábor #b [Concept('concept_conscript_battalion','$concept_conscript_battalion_short$')] [CombatUnitType.GetName]#![ConcatIfNeitherEmpty('\n\n', MilitaryFormation.CanRecruitConscriptUnitTooltip( CombatUnitType.Self ) ) ]"
  MILITARY_FORMATION_UPGRADE_CONSCRIPT_UNIT_TOOLTIP: "Vylepšit #b [Concept('concept_conscript_battalion','$concept_conscript_battalion_short$')] [CombatUnitType.GetName]#![ConcatIfNeitherEmpty('\n\n', GetDesc( MilitaryFormation.GetUpgradeConscriptUnitTypeCommand( MilitaryFormationUnitEntry.GetUnitType.Self ) ))]"
@@ -1695,13 +1728,26 @@
  FORMATION_STATUS_AT_FRONT: "Na [Front.GetName]"
  FORMATION_STATUS_AT_HQ: "Umístěno v [HQ.GetName][AddLocalizationIf(MilitaryFormation.IsReadyToDefendNavalInvasion, 'ARMY_STATUS_READY_DEFEND_INVASION')]"
  FORMATION_STATUS_AT_SEA_NODE: "U [Province.GetStateRegion.GetName] ([concept_presence]: [MilitaryFormation.GetSeaPresence|v%0])[AddLocalizationIf(MilitaryFormation.IsReadyToDefendNavalInvasion, 'FLEET_STATUS_READY_DEFEND_INVASION')]"
- ARMY_STATUS_READY_DEFEND_INVASION: ", připraven bránit jakoukoli [Concept('concept_naval_invasion', '$concept_naval_invasions$')] namířenou na [MilitaryFormation.GetCurrentHQ.GetName]"
- FLEET_STATUS_READY_DEFEND_INVASION: ", připraveno bránit jakoukoliv [Concept('concept_naval_invasion', '$concept_naval_invasions$')] mířící na [MilitaryFormation.GetCurrentSeaNode.GetSeaNodeName]"
  FLEET_STATUS_PERFORMING_MISSION: ", na [MilitaryFormation.GetNavalMission.GetName] [Concept('concept_naval_mission', '$concept_naval_mission_short$')] v #tooltippable #tooltip:[GetRawTextTooltipTag(MilitaryFormation.GetNavalMission.GetSeaRegionBreakdown)] [MilitaryFormation.GetNavalMission.GetNumSeaRegions|v]#!#!/#tooltippable #tooltip:[GetRawTextTooltipTag(MilitaryFormation.GetNavalMission.GetMaxSeaRegionsDesc)] [MilitaryFormation.GetNavalMission.GetMaxSeaRegions|v]#!#! $concept_sea_regions_short$ ([concept_mission_efficiency]: #tooltippable #tooltip:[GetRawTextTooltipTag(MilitaryFormation.GetMissionEfficiencyDesc)] [MilitaryFormation.GetMissionEfficiency|v%0]#!#!)" # todo: NEW TRANSLATION
+ FLEET_STATUS_MISSION_EFFICIENCY: " ([concept_mission_efficiency]: #tooltippable #tooltip:[GetRawTextTooltipTag(MilitaryFormation.GetMissionEfficiencyDesc)] [MilitaryFormation.GetMissionEfficiency|v%0]#!#!)" # todo: NEW TRANSLATION
+ FLEET_STATUS_BLOCKADE_EFFICIENCY: " ([concept_blockade_efficiency]: #tooltippable #tooltip:[GetRawTextTooltipTag(MilitaryFormation.GetBlockadeEfficiencyDesc)] [MilitaryFormation.GetBlockadeEfficiency|v%0]#!#! → #tooltippable #tooltip:[GetRawTextTooltipTag(MilitaryFormation.GetBlockadeEfficiencyMaxDesc)] [MilitaryFormation.GetBlockadeEfficiencyMax|v%0]#!#!)" # todo: NEW TRANSLATION
+ BLOCKADE_EFFICIENCY_TOOLTIP: "#header [concept_blockade_efficiency]#!\n$VALUE|v%0$ aktuálně ($STRENGTH|vD$ [Concept('concept_blockade_strength','$concept_blockade_strength_short$')] oproti $TOTAL_RESISTANCE|vD$ [Concept('concept_blockade_resistance','$concept_blockade_resistance_short$')])\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$" # todo: NEW TRANSLATION
+ BLOCKADE_EFFICIENCY_MAX_TOOLTIP: "#header [concept_blockade_efficiency]#!\n$VALUE|v%0$ při plné [concept_presence] ($STRENGTH|vD$ [Concept('concept_blockade_strength','$concept_blockade_strength_short$')] oproti $TOTAL_RESISTANCE|vD$ [Concept('concept_blockade_resistance','$concept_blockade_resistance_short$')])\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$" # todo: NEW TRANSLATION
+ BLOCKADE_EFFICIENCY_STATE_ENTRY: "#tooltippable;tooltip:$RESISTANCE_DESC$ $RESISTANCE|vD$#! $concept_blockade_resistance_short$ v [State.GetName]" # todo: NEW TRANSLATION
+ BLOCKADE_EFFICIENCY_BELOW_THRESHOLD: "@information! [concept_blockade_strength] je #v 0#! protože [concept_presence] ($PRESENCE|v%0$) je pod minimálním prahem $THRESHOLD|v%0$" # todo: NEW TRANSLATION
+ BLOCKADE_RESISTANCE_SHIPPING_LANE: "$VALUE|D+=$ z místní [Concept('concept_shipping_lane', '$concept_shipping_lanes$')]" # todo: NEW TRANSLATION
+ BLOCKADE_RESISTANCE_BUILDINGS: "$VALUE|D+=$ z výstupu pobřežních [concept_building]" # todo: NEW TRANSLATION
+ BLOCKADE_RESISTANCE_TRADE: "$VALUE|D+=$ z místního [concept_trade]" # todo: NEW TRANSLATION
  MILITARY_FORMATION_OFFENSE: "@unit_offense! [MilitaryFormation.GetAverageOffenseExcludeUnavailableManpower|1v]"
  MILITARY_FORMATION_OFFENSE_TOOLTIP: "#header [concept_offense]#!\n@unit_offense! [MilitaryFormation.GetAverageOffenseExcludeUnavailableManpower|1v] [concept_offense] průměrně\n$TOOLTIP_DELIMITER$\n@unit_offense! [MilitaryFormation.GetAverageOffense|1v] [concept_offense] průměrně při plné [concept_manpower]"
+ MILITARY_FORMATION_OFFENSE_FULL_MANPOWER_ROW: "\n@unit_offense! #v [MilitaryFormation.GetAverageOffense|1]#! v průměru při plném [concept_manpower]" # todo: NEW TRANSLATION
  MILITARY_FORMATION_DEFENSE: "@unit_defense! [MilitaryFormation.GetAverageDefenseExcludeUnavailableManpower|1v]"
  MILITARY_FORMATION_DEFENSE_TOOLTIP: "#header [concept_defense]#!\n@unit_defense! [MilitaryFormation.GetAverageDefenseExcludeUnavailableManpower|1v] [concept_defense] průměrně\n$TOOLTIP_DELIMITER$\n@unit_defense! [MilitaryFormation.GetAverageDefense|1v] [concept_defense] průměrně při plném [concept_manpower]"
+ MILITARY_FORMATION_DEFENSE_FULL_MANPOWER_ROW: "\n@unit_defense! #v [MilitaryFormation.GetAverageDefense|1]#! v průměru při plném [concept_manpower]" # todo: NEW TRANSLATION
+ MILITARY_FORMATION_STAT_BREAKDOWN_SECTION: "\n$TOOLTIP_DELIMITER$\n#title Způsobeno:#!#indent_newline:3 \n$BREAKDOWN$#!" # todo: NEW TRANSLATION
+ FORMATION_COMMANDER_STAT_DECIMAL_BASE_ENTRY: "$VALUE|v1$ v průměru od $TITLE$" # todo: NEW TRANSLATION
+ FORMATION_COMMANDER_STAT_DECIMAL_COMMANDER_ENTRY: "$VALUE|v1=$ od [Character.GetFullName] jako [Character.GetPrimaryRoleTitle]" # todo: NEW TRANSLATION
+ MILITARY_FORMATION_STAT_FROM_UNITS: "všechny [Concept('concept_unit','$concept_units$')]" # todo: NEW TRANSLATION
  FORMATION_STATUS_TRAVELING_TO_FRONT_SHORT: "Cestování k [Front.GetName] ([MilitaryFormation.GetTravelDaysLeft|v]d)"
  FORMATION_STATUS_TRAVELING_TO_SEA_NODE_SHORT: "Cestuje do [Province.GetStateRegion.GetName] ([MilitaryFormation.GetTravelDaysLeft|v]d)"
  FORMATION_STATUS_TRAVELING_TO_HQ_SHORT: "Cestování do [HQ.GetName] ([MilitaryFormation.GetTravelDaysLeft|v]d)"
@@ -1720,12 +1766,31 @@
  FORMATION_STATUS_TRAVELING_TO_STATE_SHORT: "Cestuje do [State.GetName] ($TRAVEL_DAYS$d)" # todo: NEW TRANSLATION
  FORMATION_STATUS_RETROFITTING_SHIPS: "Modernizace $SHIPS_CONCEPT$ ([MilitaryFormation.GetRetrofitProgress|0%v])" # todo: NEW TRANSLATION
  FORMATION_STATUS_RETROFITTING_SHIPS_SHORT: "Modernizace $concept_ships$" # todo: NEW TRANSLATION
+ FORMATION_STATUS_TRAVELING_TO_PORT_FOR_REPAIRS: "Cestuje do [State.GetName] za účelem obnovení [concept_fleet_hit_points] a doplnění [concept_ship_crew] (zbývá $TRAVEL_DAYS$ dní, aktuálně v [MilitaryFormation.GetLocationString])" # todo: NEW TRANSLATION
+ FORMATION_STATUS_TRAVELING_TO_PORT_FOR_REPAIRS_SHORT: "Vrací se do [State.GetName] na opravy ($TRAVEL_DAYS$d)" # todo: NEW TRANSLATION
+ FORMATION_STATUS_REPAIRING_AT_PORT: "V přístavu, obnovuje [concept_fleet_hit_points] a doplňuje [concept_ship_crew]" # todo: NEW TRANSLATION
+ FORMATION_STATUS_REPAIRING_AT_PORT_SHORT: "Opravy a doplňování posádky" # todo: NEW TRANSLATION
+ FORMATION_STATUS_TRAVELING_TO_MERGE: "Cestuje, aby se spojila s [MILITARY_FORMATION.GetName] (zbývá $TRAVEL_DAYS$ dní, aktuálně v [MilitaryFormation.GetLocationString])" # todo: NEW TRANSLATION
+ FORMATION_STATUS_TRAVELING_TO_MERGE_SHORT: "Spojuje se s [MILITARY_FORMATION.GetName] ($TRAVEL_DAYS$d)" # todo: NEW TRANSLATION
+ FORMATION_STATUS_TRAVELING_TO_SUPPORT_INVASION: "Cestuje na podporu [MILITARY_FORMATION.GetName] pro $concept_naval_invasion$ (zbývá $TRAVEL_DAYS$ dní, aktuálně v [MilitaryFormation.GetLocationString])" # todo: NEW TRANSLATION
+ FORMATION_STATUS_TRAVELING_TO_SUPPORT_INVASION_SHORT: "Podporuje [MILITARY_FORMATION.GetName] při $concept_naval_invasion$ ($TRAVEL_DAYS$d)" # todo: NEW TRANSLATION
+ FORMATION_STATUS_TRAVELING_TO_NAVAL_MISSION: "Nasazování do oblasti $concept_naval_mission$ v [Province.GetStateRegion.GetName] (zbývá $TRAVEL_DAYS$ dní, aktuálně v [MilitaryFormation.GetLocationString])" # todo: NEW TRANSLATION
+ FORMATION_STATUS_TRAVELING_TO_NAVAL_MISSION_SHORT: "Nasazování do $concept_naval_mission_short$ v [Province.GetStateRegion.GetName] ($TRAVEL_DAYS$d)" # todo: NEW TRANSLATION
+ FORMATION_STATUS_TRANSPORTING_TO_STATE: "Přepravuje [concept_army] do [State.GetName] (zbývá $TRAVEL_DAYS$ dní, aktuálně v [MilitaryFormation.GetLocationString])" # todo: NEW TRANSLATION
+ FORMATION_STATUS_TRANSPORTING_TO_STATE_SHORT: "Přepravuje [concept_army] do [State.GetName] ($TRAVEL_DAYS$d)" # todo: NEW TRANSLATION
+ FORMATION_STATUS_AWAITING_NEW_FRONTS: "Krouží, čeká na $concept_front$, kam se nasadí" # todo: NEW TRANSLATION
+ FORMATION_STATUS_AWAITING_NEW_FRONTS_SHORT: "Čeká na $concept_front$" # todo: NEW TRANSLATION
+ FORMATION_STATUS_NO_PATH_FOUND: "Krouží, nelze najít cestu k cíli" # todo: NEW TRANSLATION
+ FORMATION_STATUS_NO_PATH_FOUND_SHORT: "Žádná cesta k cíli" # todo: NEW TRANSLATION
+ FORMATION_STATUS_AWAITING_EMBARKATION: "Krouží, čeká na nalodění na [concept_fleet]" # todo: NEW TRANSLATION
+ FORMATION_STATUS_AWAITING_EMBARKATION_SHORT: "Čeká na nalodění" # todo: NEW TRANSLATION
  TRAVEL_DAYS_LEFT_FORMATTED: "#v $VALUE$#!" # todo: NEW TRANSLATION
  FLEET_TRAVEL_DAYS_LEFT_FORMATTED: "#tooltippable #tooltip:$BREAKDOWN_TAG$ #v $VALUE$#!#!#!" # todo: NEW TRANSLATION
  FLEET_TRAVEL_DAYS_LEFT_TOOLTIP: "#header Doba cesty#!\n#v $VALUE$#! dní\n$TOOLTIP_DELIMITER$\n#v $DISTANCE|D$#! Vzdálenost\n#v $SPEED|D$#!/den [concept_ship_speed]" # todo: NEW TRANSLATION
  COMBAT_UNIT_TYPES_CONCEPT: "[Concept('concept_combat_unit_type', '$concept_combat_unit_types$')]"
  COMBAT_UNITS_CONCEPT: "[Concept('concept_unit', '$concept_units$')]"
  MILITARY_FORMATION_BLOCKADE_TOOLTIP: "#header Maximální síla [concept_blockade]#!\n[MilitaryFormation.GetMaxBlockadeStrength|vK] pro [MilitaryFormation.GetName]\n$TOOLTIP_DELIMITER$\n[MilitaryFormation.GetCurrentBlockadeStrength|vK] aktuální síla kvůli [MilitaryFormation.GetSeaPresence|v%0] [concept_presence].\n[MilitaryFormation.GetName] musí dosáhnout alespoň #variable 50%#! $concept_presence$, než budou mít efektivní $concept_blockade$."
+ MILITARY_FORMATION_BLOCKADE_CURRENT_ROW: "\n@blockade_strength! #v [MilitaryFormation.GetBlockadeStrength|D]#! aktuálně" # todo: NEW TRANSLATION
  MILITARY_FORMATION_ATTRITION_RISK_ICON: "[SelectLocalization(MilitaryFormation.IsArmy, 'MILITARY_FORMATION_ATTRITION_RISK_ICON_ARMY', 'MILITARY_FORMATION_ATTRITION_RISK_ICON_NAVY')]"
  MILITARY_FORMATION_ATTRITION_RISK_ICON_ARMY: "[SelectLocalization(GreaterThan_CFixedPoint(MilitaryFormation.GetAttritionRaw, GetStaticModifier('base_army_attrition').GetValueFor('military_formation_attrition_risk_add')), '@high_attrition!', '@attrition!')]"
  MILITARY_FORMATION_ATTRITION_RISK_ICON_NAVY: "[SelectLocalization(GreaterThan_CFixedPoint(MilitaryFormation.GetAttritionRaw, GetStaticModifier('base_army_attrition').GetValueFor('military_formation_attrition_risk_add')), '@high_attrition!', '@attrition!')]"
@@ -1753,6 +1818,7 @@
  SUPPLY_NETWORK_MAPMARKER_HEADER: "[GetPlayer.GetAdjectiveNoFormatting] [concept_supply_network] detaily:"
  SUPPLY_NETWORK_DESC: "$SUPPLY_NETWORK_MAPMARKER_HEADER$\n$NUM_CONVOYS_NO_DAMAGE$\n$USED_CONVOYS$\n$NUM_SEA_NODES$\n$SUPPLY_NETWORK_STRENGTH$"
  SEA_NODE_TOOLTIP: "#header [concept_sea_node] v [SeaNodeMarker.GetProvince.GetStateRegion.GetStrategicRegion.GetNameNoFormatting]#!\n$TOOLTIP_DELIMITER$\n[MakeParagraphIf(GetPlayer.HasAccessToFriendlyPort(SeaNodeMarker.GetProvince.Self), 'SEA_NODE_CLOSEST_FRIENDLY_PORT')][SeaNodeMarker.GetSupplyNetworkTooltip]"
+ SEA_NODE_STATUS_TOOLTIP: "#header [concept_sea_node] v [SeaNodeMarker.GetProvince.GetStateRegion.GetStrategicRegion.GetNameNoFormatting]#!\n$TOOLTIP_DELIMITER$\n[MakeParagraphIf(GetPlayer.HasAccessToFriendlyPort(SeaNodeMarker.GetProvince.Self), 'SEA_NODE_CLOSEST_FRIENDLY_PORT')][SeaNodeMarker.GetSupplyNetworkTooltip]" # todo: NEW TRANSLATION
  SEA_NODE_CLOSEST_FRIENDLY_PORT: "#title Nejbližší přátelský přístav:#!\n$TAB$[GetPlayer.GetClosestFriendlyPort(SeaNodeMarker.GetProvince.Self).GetState.GetOwner.GetFlagTextIcon] [GetPlayer.GetClosestFriendlyPort(SeaNodeMarker.GetProvince.Self).GetState.GetName] ([GetPlayer.GetDistanceToClosestFriendlyPort(SeaNodeMarker.GetProvince.Self)|v] [SelectLocalization(GreaterThan_int32(GetPlayer.GetDistanceToClosestFriendlyPort(SeaNodeMarker.GetProvince.Self), '(int32)1'), '$concept_sea_nodes$', '$concept_sea_node$')] vzdálený)" # todo: NEW TRANSLATION
  SEA_NODE_SUPPLY_NETWORK_DESC: "[ConcatIfNeitherEmpty('#title Přístavy připojené přes toto $concept_sea_node$:#!\n', '$CONNECTED_STATES$')]" # todo: NEW TRANSLATION
  MOVEMENT_MARKER_ALLIED_FLEETS_HEADER: "#title Spojenecké [Concept('concept_fleet', '$concept_fleets$')]:#!"
@@ -1779,6 +1845,13 @@
  SEA_NODE_TRAVEL_TIME: "#title Cestování sem, dorazí za:#!#indent_newline:3 \n[SeaNodeMovementMarker.GetTravelTimeBreakdown]#!"
  SEA_NODE_SUPPLY_SHIP_PREDICTION_SUMMARY: "@supply! #tooltippable #tooltip:[GetRawTextTooltipTag(SeaNodeMovementMarker.GetSupplyShipPredictionBreakdown)] [SeaNodeMovementMarker.GetSupplyShipPredictionTotalDelta|D=-]#!#! vyžadované [Concept('concept_supply_ship', '$concept_supply_ships$')]" # todo: NEW TRANSLATION
  SEA_NODE_SUPPLY_SHIP_PREDICTION_FLEET_ENTRY: "@supply! #v $DELTA|D=-$#! $MOVEMENT_MARKER_FORMATION_LIST_ENTRY$" # todo: NEW TRANSLATION
+ SEA_NODE_SUPPLY_RAID_SUMMARY: "#title Útoky na zásoby:#!\n[SelectLocalization(SeaNodeMovementMarker.HasSupplyRaidTargets, 'SEA_NODE_SUPPLY_RAID_VALUES', 'SEA_NODE_SUPPLY_RAID_EMPTY')]" # todo: NEW TRANSLATION
+ SEA_NODE_SUPPLY_RAID_VALUES: "@supply! #tooltippable #tooltip:[GetRawTextTooltipTag(SeaNodeMovementMarker.GetSupplyRaidTargetsBreakdown)] #v [SeaNodeMovementMarker.GetSupplyShipsPassingThroughNode]#!#!#! nepřátelské [Concept('concept_supply_ship', '$concept_supply_ships$')] procházející\naž @supply! #v [SeaNodeMovementMarker.GetMaxSupplyShipsDestroyablePerBattle]#! může být potopeno za jeden [Concept('concept_naval_battle', '$concept_naval_battle$')]" # todo: NEW TRANSLATION
+ SEA_NODE_SUPPLY_RAID_EMPTY: "@supply! #v 0#! nepřátelské [Concept('concept_supply_ship', '$concept_supply_ships$')] procházející" # todo: NEW TRANSLATION
+ SEA_NODE_SUPPLY_RAID_TARGET_ENTRY: "@supply! #v $SUPPLY_SHIPS$#! z [COUNTRY.GetName] (až #v $PER_BATTLE$#! na $concept_naval_battle$)" # todo: NEW TRANSLATION
+ SEA_NODE_SUPPLY_PROTECT_SUMMARY: "#title Ochrana zásob:#!\n[SelectLocalization(SeaNodeMovementMarker.HasOwnSupplyShipsPassingThrough, 'SEA_NODE_SUPPLY_PROTECT_VALUES', 'SEA_NODE_SUPPLY_PROTECT_EMPTY')]" # todo: NEW TRANSLATION
+ SEA_NODE_SUPPLY_PROTECT_VALUES: "@supply! #v [SeaNodeMovementMarker.GetOwnSupplyShipsPassingThroughNode]#! z vašich [Concept('concept_supply_ship', '$concept_supply_ships$')] procházejících\naž @supply! #v [SeaNodeMovementMarker.GetMaxSupplyShipsProtectablePerBattle]#! může být chráněno v každé [Concept('concept_naval_battle', '$concept_naval_battle$')]" # todo: NEW TRANSLATION
+ SEA_NODE_SUPPLY_PROTECT_EMPTY: "@supply! #v 0#! z vašich [Concept('concept_supply_ship', '$concept_supply_ships$')] procházejících" # todo: NEW TRANSLATION
  NO_ACTIVE_SUPPLY_NETWORK: "#title Nemáte zde aktivní [concept_supply_network]#!"
  SEA_NODE_MOVEMENT_MARKER_PRESENT_FORMATIONS: "#title Přítomné [Concept('concept_military_formation', '$concept_military_formations$')]:#indent_newline:3 \n[SeaNodeMovementMarker.GetPresentFormationsBreakdown]#!"
  HQ_MOVEMENT_MARKER_TOOLTIP: "#header [Hq.GetName]#!\n$TOOLTIP_DELIMITER$\n[GetDesc(Hq.GetStationSelectedFormationsCommand)][ConcatIfNeitherEmpty('\n\n', AddLocalizationIf(HQMovementMarker.IsAllSelectedFormationsTarget, 'HQ_TRAVEL_TIME'))][AddLocalizationIf(IsValid(Hq.GetStationSelectedFormationsCommand), 'HQ_MOVEMENT_MARKER_RIGHT_CLICK_PROMPT')][ConcatIfNeitherEmpty('\n\n', AddLocalizationIf(Not(StringIsEmpty(HQMovementMarker.GetPresentFormationsBreakdown)), 'HQ_MOVEMENT_MARKER_PRESENT_FORMATIONS'))]"
@@ -1809,6 +1882,9 @@
  SUPPLY_NETWORK_STRENGTH_TEXT: "Síla dodávkové sítě:"
  SUPPLY_NETWORK_STRENGTH_VALUE: "#$SUPPLY_NETWORK_STRENGTH_COLOR$ [Country.GetSupplyNetworkStrength|%0]#!"
  SUPPLY_NETWORK_STRENGTH_TOOLTIP: "#header [concept_shipping_lane_effectiveness]#!\nKolik je dostupných [GetGoods('merchant_marine').GetName] oproti požadovanému množství"
+ SUPPLY_NETWORK_TREND_DETAIL_TRENDING: "(Směřuje #v [Country.GetSupplyNetworkStrengthWeeklyChange|%0+]#! týdně k #tooltippable #tooltip:[Country.GetTooltipTag],SUPPLY_NETWORK_TARGET_BREAKDOWN_TOOLTIP #v [Country.GetSupplyNetworkStrengthTarget|%0]#!#!#!)" # todo: NEW TRANSLATION
+ SUPPLY_NETWORK_TREND_DETAIL_HOLDING: "(drží se na #v [Country.GetSupplyNetworkStrength|%0]#!)" # todo: NEW TRANSLATION
+ SUPPLY_NETWORK_TARGET_BREAKDOWN_TOOLTIP: "#header [Country.GetMarket.GetName]:#!\n#v [GetGoods('merchant_marine').WithMarketContext(Country.GetMarket.Self).GetMarketSellOrders|D]#! @merchant_marine! [GetGoods('merchant_marine').GetNameNoIcon] [concept_sell_orders]\n#v [GetGoods('merchant_marine').WithMarketContext(Country.GetMarket.Self).GetMarketBuyOrders|D]#! @merchant_marine! [GetGoods('merchant_marine').GetNameNoIcon] [concept_buy_orders]\n#v [GetGoods('merchant_marine').WithMarketContext(Country.GetMarket.Self).GetSupplyDemandRatio|%0]#! poměr nabídky/poptávky ( [concept_shortage] začíná pod prahem #v [GetDefine('NEconomy','SUPPLY_NETWORK_SHORTAGE_THRESHOLD')|%0]#! )\n#v [Country.GetMerchantMarineShortageTarget|%0]#! penalizace $concept_shortage$ (škáluje od #v [GetDefine('NEconomy','SUPPLY_NETWORK_SHORTAGE_PENALTY_MIN')|%0]#! do #v [GetDefine('NEconomy','SUPPLY_NETWORK_SHORTAGE_PENALTY_MAX')|%0]#! čím více dodávka klesne pod práh)\n#v [Country.GetSupplyNetworkStrengthTarget|%0]#! výsledný cílový [Concept('concept_shipping_lane_effectiveness', 'Effectiveness')] (#v 100%#! - #v [Country.GetMerchantMarineShortageTarget|%0]#!)" # todo: NEW TRANSLATION
  NUM_SEA_NODES: "Mořské uzly: #v [Country.GetSupplyNetworkNumSeaNodes]#!"
  NUM_SEA_NODES_TEXT: "Mořské uzly:"
  NUM_SEA_NODES_VALUE: "[Country.GetSupplyNetworkNumSeaNodes]"
@@ -2316,6 +2392,9 @@
  FRONT_PRESENT_ARMIES_ENEMY: "#v [GetDataModelSize(Front.GetPlayerEnemySide.GetArmies)]#! [Concept( 'concept_army', '$concept_armies$' )] (Nepřítel)"
  FRONT_PRESENT_ARMIES_INITIATOR: "#v [GetDataModelSize(Front.GetInitiatorSide.GetArmies)]#! [Concept( 'concept_army', '$concept_armies$' )] (Útočník)"
  FRONT_PRESENT_ARMIES_TARGET: "#v [GetDataModelSize(Front.GetTargetSide.GetArmies)]#! [Concept( 'concept_army', '$concept_armies$' )] (Cíl)"
+ FRONT_OCCUPATION_PROGRESS_SIDE_ADVANCING_DECISIVELY: "[COUNTRY.GetName] se #v rozhodně posouvá#! na této frontě" # todo: NEW TRANSLATION
+ FRONT_OCCUPATION_PROGRESS_SIDE_ADVANCING: "[COUNTRY.GetName] #v postupuje#! na této frontě" # todo: NEW TRANSLATION
+ FRONT_OCCUPATION_PROGRESS_NEITHER: "Na této frontě panuje pat" # todo: NEW TRANSLATION
  SEA_REGION_PANEL_NO_PRESENT_FLEETS: "Žádné přítomné [Concept( 'concept_fleet', '$concept_fleets$' )] na této straně"
  SEA_REGION_PANEL_NO_PRESENT_NEUTRAL_FLEETS: "Žádné přítomné neutrální [Concept( 'concept_fleet', '$concept_fleets$' )]"
  SEA_REGION_WAR_HEADER: "[SeaRegionWar.GetWar.GetName]"
@@ -2930,6 +3009,9 @@
  COMMA_SPACED: ", "
  MAP_INFO: "#header Mapa#!\n$TOOLTIP_DELIMITER$\nStiskněte a podržte #bold „Tab“#! pro úplné přiblížení. Uvolněním se vrátíte zpět na předchozí úroveň přiblížení."
  MAP_INFO_MAP_MODE_LOCKED: "$MAP_INFO$\n\n#instruction Klikněte pro zrušení uzamčeného režimu mapy.#!"
+ MAP_MODE_LOCK_TOOLTIP: "#bold Uzamknout režim mapy#!\n$TOOLTIP_DELIMITER$\nKdyž je uzamčeno, bude vybraný režim mapy vždy zobrazen bez ohledu na to, jaké panely jsou otevřeny.\n\nKdyž je odemčeno, bude použit jako výchozí režim mapy, ale panely ho mohou přepsat." # todo: NEW TRANSLATION
+ CLEAR_DEFAULT_MAP_MODE: "Obnovit režim mapy" # todo: NEW TRANSLATION
+ CLEAR_DEFAULT_MAP_MODE_TOOLTIP: "#header $CLEAR_DEFAULT_MAP_MODE$#!\n[GetSelectedMapModeName] je v současnosti vybrán." # todo: NEW TRANSLATION
  LOCATION_FINDER: "#header Vyhledávač polohy#!"
  ZOOM_TO_BUILDING_STATE: "Přiblížit na [Building.AccessState.GetName][AddLocalizationIf(Building.AccessState.IsZoomingToCapital, 'ZOOM_TO_DISABLED')]"
  ZOOM_TO_EVENT_WINDOW_STATE: "Přiblížit na [EventWindow.GetEvent.GetState.GetName][AddLocalizationIf( EventWindow.GetEvent.GetState.IsZoomingToCapital, 'ZOOM_TO_DISABLED' )]"
@@ -2998,6 +3080,15 @@
  ARMY_BREAKDOWN_FORMAT: "@battalions! #tooltippable #tooltip:$UNIT_BREAKDOWN_TAG$ [MILITARY_FORMATION.GetNumCombatUnits|v]#!#! [MILITARY_FORMATION.GetName]"
  THESE_FLEETS_HAVE: "Tyto flotily mají"
  THIS_FLEET_HAS: "Tato flotila má"
+ NAVAL_INVASION_FORTIFICATION_BUTTON_TITLE: "[Invasion.GetTargetState.GetBuilding('building_naval_fortification').GetNameNoFormatting] v [Invasion.GetTargetState.GetName]" # todo: NEW TRANSLATION
+ NAVAL_INVASION_FORTIFICATION_REQUIREMENTS: "[Invasion.GetTargetStateFortificationBreakdown]" # todo: NEW TRANSLATION
+ NAVAL_INVASION_ASSIGNED_POWER_PROJECTION: "#tooltippable #tooltip:[Invasion.GetTooltipTag],NAVAL_INVASION_PP_BREAKDOWN #v [Invasion.GetTotalPowerProjection|0]#!#!#! aktuálně" # todo: NEW TRANSLATION
+ NAVAL_INVASION_PP_BREAKDOWN: "#header #v [Invasion.GetTotalPowerProjection|0]#! Přiřazené [concept_power_projection]#!\n$TOOLTIP_DELIMITER$\n[Invasion.GetTotalPowerProjectionBreakdown]" # todo: NEW TRANSLATION
+ INVASION_POWER_PROJECTION_BREAKDOWN_ENTRY: "#indent_newline:3 #v [MilitaryFormation.GetPowerProjection]#! [MilitaryFormation.GetName]" # todo: NEW TRANSLATION
+ NAVAL_INVASION_NO_FORTIFICATION: "[Invasion.GetTargetState.GetBuilding('building_naval_fortification').GetName] v [Invasion.GetTargetState.GetName] by poskytla dodatečnou obranu proti vyloděním" # todo: NEW TRANSLATION
+ NAVAL_INVASION_REQUIRED_POWER_PROJECTION: "@green_checkmark_box! Útočná armáda má minimálně #v 100#! [concept_power_projection] k prolomení [Invasion.GetTargetState.GetBuilding('building_naval_fortification').GetName] ($NAVAL_INVASION_ASSIGNED_POWER_PROJECTION$)" # todo: NEW TRANSLATION
+ NAVAL_INVASION_NOT_REQUIRED_POWER_PROJECTION: "@simple_box! Útočná armáda má minimálně #v 100#! [concept_power_projection] k prolomení [Invasion.GetTargetState.GetBuilding('building_naval_fortification').GetName] (#v [Invasion.GetTotalPowerProjection|0]#! aktuálně)" # todo: NEW TRANSLATION
+ NAVAL_INVASION_STATE_UNIT_DEFENSE_HEADER: "[Invasion.GetTargetState.GetBuilding('building_naval_fortification').GetName] v [Invasion.GetTargetState.GetName] poskytují dodatečnou obranu proti vyloděním [Concept('concept_battle','$concept_battles$')]\n" # todo: NEW TRANSLATION
  CANCEL_INVASION: "Zrušit invazi"
  CANCEL_INVASION_TOOLTIP: "#header Zrušit tuto [Concept('concept_invasion','invazi')]#![ConcatIfNeitherEmpty('\n', GetDesc(Invasion.Cancel))]"
  CANCEL_INVASION_CONFIRMATION: "Zrušením [Invasion.GetName] zrušíte všechny probíhající pozemní a námořní [Concept('concept_battle','bitvy')] a pošlete své [Concept('concept_military_formation', 'formace')] zpět na jejich domovské [concept_hq].\nVeškerý dosažený [concept_landing_progress|l] bude ztracen.\n\nOpravdu to chcete udělat?"
@@ -3023,8 +3114,6 @@
  BUTTON_BUDGET: "#header Rozpočet#!"
  BUTTON_MILITARY: "#header Vojenské#!"
  BUTTON_TECHNOLOGY: "#header Technologie#!\n[SelectLocalization( Technology.IsValid, 'RESEARCHING', 'NOT_RESEARCHING' )]"
- UNLOCK_MAP_MODE: "Zrušit zamčený režim mapy"
- UNLOCK_MAP_MODE_TOOLTIP: "#header Odstranit uzamčený režim mapy#!\nRežim mapy [GetSelectedMapModeName] je v současnosti uzamčen."
  POWER_BLOC: "Mocenský blok"
  POWER_BLOC_SUBHEADER: "[SelectLocalization(PowerBlocPanel.IsPowerBlocSelected, 'POWER_BLOC_CONCEPT', 'IN_THE_WORLD')]"
  POWER_BLOC_CONCEPT: "[concept_power_bloc]"
@@ -3227,6 +3316,7 @@
  ADD_NEW_PRINCIPLE: "Přidat princip"
  NO_NEW_PRINCIPLE: "Žádný princip"
  LOCKED_PRINCIPLE_SLOT: "Zamčeno"
+ TOOLTIP_LOCK_TAB_LOCKED: "Uzamčeno" # todo: NEW TRANSLATION
  TOOLTIP_LOCKED_PRINCIPLE_SLOT: "Tento slot pro [Concept('concept_power_bloc_principle','princípy')] se uvolní, pokud:\n[PowerBlocPrincipleSlot.GetUnlockDesc]"
  TOOLTIP_LOCKED_PRINCIPLE_SLOT_DURING_FORMATION: "Více slotů [Concept('concept_power_bloc_principle','princípů')] se uvolní, jakmile váš [Concept('concept_power_bloc','mocenský blok')] dosáhne vyšší [Concept('concept_power_bloc_rank','hodnosti')] a získá více [Concept('concept_power_bloc_member','členů')]"
  TOOLTIP_LOCKED_PRINCIPLE_SLOT_3_DURING_FORMATION: "Dostupné, pokud vaše [concept_power_bloc_rank|l] je #v ##5#! nebo lepší a máte alespoň #v 5#! [Concept('concept_power_bloc_member', 'členů')]"
@@ -3299,6 +3389,7 @@
  POWER_BLOC_ADDED_LEVERAGE_GAIN_FROM_DIPLOMATIC_PACT: "#v $VALUE|+=0$#! z [DIPLOMATIC_PACT.GetName]"
  POWER_BLOC_LEVERAGE_GAIN_FROM_TREATY_ARTICLE: "#v $VALUE|%=+1$#! z [TREATY_ARTICLE.GetName]"
  POWER_BLOC_ADDED_LEVERAGE_GAIN_FROM_TREATY_ARTICLE: "#v $VALUE|+=0$#! z [TREATY_ARTICLE.GetName]"
+ POWER_BLOC_LEVERAGE_GAIN_FROM_INVOLVEMENT_MULT: "#v $VALUE|%=+0$#! z [INTEREST_TIER_TYPE.GetNameNoIcon] [concept_interest] v [COUNTRY.GetName]" # todo: NEW TRANSLATION
  POWER_BLOC_LEVERAGE_PENALTY_FROM_EXPELLED_DIPLOMATS: "Vyhoštění diplomatů"
  POWER_BLOC_LEVERAGE_GAIN_IN_COMMON_WAR: "Společná [concept_war|l]"
  POWER_BLOC_LEVERAGE_GAIN_NOT_IN_COMMON_WAR: "Žádná společná [concept_war|l]"
@@ -3417,6 +3508,7 @@
  TOTAL_TRADE_CENTER: "[GetBuildingType('building_trade_center').GetName] velikost:"
  TOTAL_MANOR_HOUSE: "[GetBuildingType('building_manor_house').GetName] velikost:"
  TOTAL_FINANCIAL_DISTRICT: "[GetBuildingType('building_financial_district').GetName] velikosti:"
+ TOTAL_HOLDING: "[Building.GetName] velikost:" # todo: NEW TRANSLATION
  TOTAL_BARRACKS: "[GetBuildingType('building_barrack').GetName] velikost:"
  TOTAL_CONSCRIPTION_CENTER: "[GetBuildingType('building_conscription_center').GetName] velikost:"
  TOTAL_NAVAL_ADMINISTRATION: "[GetBuildingType('building_naval_administration').GetName] size:" # todo: NEW TRANSLATION
@@ -3919,6 +4011,7 @@
  POTENTIAL_LEADER_IDEOLOGY_NON_SPECIFIC_LEADER: "a #b [IDEOLOGY.GetNameNoFormatting]#!" # todo: NEW TRANSLATION
  INTEREST_GROUP_NEXT_LEADER_POLITICAL_OUTSIDER: "Objeví se nový [Ideology.GetName] [concept_politician], který se stane vůdcem [concept_interest_group]." # todo: NEW TRANSLATION
  PROMINENCE_AND_ROLES_OF_CHARACTERS: "[concept_prominence] a [Concept( 'concept_character_role', '$concept_character_roles$' )] #b $IDEOLOGY$s#!" # todo: NEW TRANSLATION
+ PROMINENCE_AND_ROLES_WITH_BREAKDOWN: "$KEY$: #tooltippable #tooltip:$TOOLTIP_TAG$ $VALUE|+=0$#!#!" # todo: NEW TRANSLATION
  MOVEMENT_PRESSURE: "[concept_political_movement_pressure]" # todo: NEW TRANSLATION
  STATE_PANEL_POLLUTION: "[concept_pollution_impact]\n$STATE_POLLUTION_CONDENSED$"
  STATE_POLLUTION_CONDENSED: "#b [State.GetStateRegion.GetPollutionImpact|%R1]#!"
@@ -3955,6 +4048,10 @@
  STATE_DEVASTATION: "[concept_devastation]\n$STATE_DEVASTATION_CONDENSED$"
  TOOLTIP_STATE_DEVASTATION: "#BOLD #V [concept_devastation]#!#!\n #b [State.GetDevastationLevel|%R1]#! Aktuální devastace\n#b #tooltippable #tooltip:[GetRawTextTooltipTag(State.GetDevastationDailyChangeBreakdown)] [State.GetDevastationDailyChange|%-2]#!#!#! Denní změna\n$TOOLTIP_DELIMITER$\n[State.GetDevastationEffects]"
  DEVASTATION_DECAY_MULT_TOOLTIP_HEADER: "#header [concept_devastation] Obnova #!\n $DAILY_CHANGE|%-2$ Denní změna \n $TOOLTIP_DELIMITER$ \n #title Způsobeno:#! \n"
+ DEVASTATION_DAILY_CHANGE_RECOVERY: "#v #tooltippable #tooltip:$DETAIL$ $VALUE|%-2=$#!#!#! z obnovy [concept_devastation]" # todo: NEW TRANSLATION
+ DEVASTATION_DAILY_CHANGE_OCCUPATION: "#v $VALUE|%-2$#! z nepřátelské [concept_occupation]" # todo: NEW TRANSLATION
+ DEVASTATION_DAILY_CHANGE_FROM_BOMBARDMENT: "#v #tooltippable #tooltip:$DETAIL$ $VALUE|%-2=$#!#!#! z $port_bombardment$" # todo: NEW TRANSLATION
+ DEVASTATION_RECOVERY_BREAKDOWN: "#header Obnova [concept_devastation]#!\n#v $VALUE|%-2=$#! denně\n$TOOLTIP_DELIMITER$\n#v $BASE|%-3=$#! základní obnova\nZvýšeno o #v #tooltippable #tooltip:$DETAIL$ $MULT|%0=$#!#!#! rychlost obnovy" # todo: NEW TRANSLATION
  STATE_TURMOIL: "[concept_turmoil]\n$STATE_TURMOIL_CONDENSED$"
  TOOLTIP_STATE_TURMOIL: "#BOLD #V [concept_turmoil]#!#!\n[concept_turmoil] z [concept_radical] [Concept('concept_pop', '$concept_pops$')]: #b [State.CalcTurmoil|%2-]#!\n$TOOLTIP_DELIMITER$\n[State.GetTurmoilEffects]"
  STATE_TURMOIL_EFFECTS_MULT_DESC: "Účinky [concept_turmoil] vynásobené $MULT|%=-$ z důvodu:\n#b $MODIFIER_NAME$:#!\n$DETAILS$"
@@ -4713,6 +4810,8 @@
  WARGOAL_CONTESTATION_CONTROL_OWN_STATE: "#indent_newline:3 $TAB$$EFFECT_LIST_BULLET$[COUNTRY.GetName] a jeho [Concept('concept_ally', '$concept_allies$')] udrží $concept_control_war_goal_short$ [TARGET_STATE.GetCountry.GetFlagTextIcon] [TARGET_STATE.GetName]#!"
  WARGOAL_CONTESTATION_CONTROL_OWN_CAPITAL: "#indent_newline:3 $TAB$$EFFECT_LIST_BULLET$[COUNTRY.GetName] a jeho [Concept('concept_ally', '$concept_allies$')] udrží $concept_control_war_goal_short$ [COUNTRY.GetAdjective] [Concept('concept_capital_state','$concept_capital_state_short$')] ([COUNTRY.GetCapital.GetName])#!"
  WARGOAL_CONTESTATION_CONTROL_ALL_OWN_STATES: "#indent_newline:3 $TAB$$EFFECT_LIST_BULLET$[COUNTRY.GetName] a jeho [Concept('concept_ally', '$concept_allies$')] udrží $concept_control_war_goal_short$ všech [COUNTRY.GetAdjective] [Concept('concept_state','$concept_states$')]#!"
+ WARGOAL_CONTESTATION_CONTROL_HALF_OWN_STATES: "#indent_newline:3 $TAB$$EFFECT_LIST_BULLET$[COUNTRY.GetName] a jeho [Concept('concept_ally', '$concept_allies$')] si udržují $concept_control_war_goal_short$ alespoň #v 50%#! z [COUNTRY.GetAdjective] [Concept('concept_incorporated_state','$concept_incorporated_states$')]#!" # todo: NEW TRANSLATION
+ WARGOAL_CONTESTATION_CONTROL_HALF_TARGET_COUNTRY_STATES: "#indent_newline:3 $TAB$$EFFECT_LIST_BULLET$[COUNTRY.GetName] a jeho [Concept('concept_ally', '$concept_allies$')] mají $concept_control_war_goal_short$ alespoň #v 50%#! z [TARGET_COUNTRY.GetAdjective] [Concept('concept_incorporated_state','$concept_incorporated_states$')]#!" # todo: NEW TRANSLATION
  WARGOAL_CONTESTATION_CONTROL_ALL_CLAIMED_STATES: "#indent_newline:3 $TAB$$EFFECT_LIST_BULLET$[COUNTRY.GetName] a jeho [Concept('concept_ally', '$concept_allies$')] udrží $concept_control_war_goal_short$ všech [COUNTRY.GetAdjective] [Concept('concept_state','$concept_states$')] [Concept('concept_claim','$concept_claimed$')] nárokovaných [TARGET_COUNTRY.GetName] ($LIST$)#!"
  WARGOAL_CONTESTATION_CONTROL_ANY_RELEASABLE_STATE: "#indent_newline:3 $TAB$$EFFECT_LIST_BULLET$[COUNTRY.GetName] a jeho [Concept('concept_ally', '$concept_allies$')] $concept_control_war_goal_short$ alespoň jeden [TARGET_COUNTRY.GetAdjective] [concept_state], který lze uvolnit jako součást [COUNTRY_CREATION.GetName] ($LIST$)#!"
  TOOLTIP_COUNTRY: "#BOLD #V [GetPlayer.GetName]#!#!"
@@ -4866,6 +4965,7 @@
  OWNED: "Vlastněné úrovně"
  DIVIDENDS: "Dividendy"
  OWNERS: "Majitelé"
+ HOLDING: "[concept_holding]:" # todo: NEW TRANSLATION
  IN_TOTAL: "celkem"
  POP_WEEKLY_INCOME: "#bold Týdenní příjem: #variable @money!$VAL|+D$#!#!\n$BREAKDOWN$\n"
  POP_WEEKLY_EXPENSES: "#bold Týdenní výdaje: #variable @money!$VAL|+D$#!#!\n$BREAKDOWN$\n"
@@ -4996,6 +5096,7 @@
  CONSTRUCTION_WEEKLY_COST_IMPACT: "#v @money!$COST|K-=$#! týdenní náklady [concept_budget_construction_goods]"
  EXPAND_TOOLTIP_EXPAND_BUILD: "Stavět"
  EXPAND_TOOLTIP_EXPAND_EXPAND: "Rozšířit"
+ EXPAND_TOOLTIP_BUILDING_TYPE: "Rozbalit [BuildingType.GetName]" # todo: NEW TRANSLATION
  EXPAND_TOOLTIP_EXPAND: "#header $BUILD_OR_EXPAND$ [BUILDING_TYPE.GetName] ve [STATE.GetName]#!\nVelikost: [BUILDING.GetExpansionLevelBreakdownDesc]\n[STATE.GetMarketAccessStatus]\nDostupná pracovní síla: [State.GetNumSubsistenceWorkingAdults|Dv] [GetPopType('peasants').GetName] a [State.GetNumUnemployedWorkingAdults|Dv] [concept_unemployed]"
  EXPAND_BUILDING_MODIFIERS_INSTRUCTIONS: "#instruction Klikněte#! pro #v zařazení 1#! úrovně, #i $SHORTCUT_KEY_MOD_shift$Klikněte#! pro #v $SHIFT_NUM_LEVELS$#!, #i $SHORTCUT_KEY_MOD_ctrl$Klikněte#! pro #v $CTRL_NUM_LEVELS$#!\n#instruction $SHORTCUT_KEY_MOD_alt$Klikněte#! pro #v zařazení na vrchol#! [concept_construction_queue]"
  DOWNSIZE_BUILDING_MODIFIERS_INSTRUCTIONS: "#instruction Kliknutím zmenšíte o 1 úroveň#!\n#instruction $SHORTCUT_KEY_MOD_shift$Klikněte na zmenšení o $SHIFT_NUM_LEVELS$ úrovně#!\n#instruction $SHORTCUT_KEY_MOD_ctrl$Klikněte na zmenšení o $CTRL_NUM_LEVELS$ úrovně#!"
@@ -5098,6 +5199,7 @@
  BUDGET_GOVERNMENT_SLAVES: "[concept_budget_government_slaves]"
  BUDGET_MILITARY_SLAVES: "[concept_budget_military_slaves]"
  BUDGET_SUPPLY_SHIP_MAINTENANCE: "[Concept('concept_supply_ship', '$concept_supply_ships$')]" # todo: NEW TRANSLATION
+ BUDGET_SUPPLY_SHIP_CONSTRUCTION: "[Concept('concept_supply_ship', '$concept_supply_ship_construction$')]" # todo: NEW TRANSLATION
  BUDGET_MILITARY_SHIP_MAINTENANCE: "[Concept('concept_ship', '$concept_military_ships$')]" # todo: NEW TRANSLATION
  BUDGET_PORT_CONNECTION_EXPENSE: "[Concept('concept_shipping_lane', '$concept_shipping_lanes$')]" # todo: NEW TRANSLATION
  BUDGET_SUBSIDIES: "[concept_subsidies]"
@@ -5146,6 +5248,9 @@
  SHORTCUT_KEY_MOD_ctrl: "Ctrl+"
  SHORTCUT_KEY_MOD_os: "Os+"
  KEY_MB4: "Myš 4"
+ KEY_MOUSE_LEFT: "Levé tlačítko myši" # todo: NEW TRANSLATION
+ KEY_MOUSE_RIGHT: "Pravé tlačítko myši" # todo: NEW TRANSLATION
+ KEY_MOUSE_MIDDLE: "Střední tlačítko myši" # todo: NEW TRANSLATION
  KEY_MOUSE_X1: "Myš 4"
  KEY_MOUSE_X2: "Myš 5"
  KEY_ESCAPE: "Esc"
@@ -5365,11 +5470,25 @@
  PRIVATE_CONSTRUCTION_GOODS_BREAKDOWN: "\n[concept_private_construction]:\n Celkem: #v #N @money!-[GetPlayer.GetPrivateConstructionGoodsExpenses|D-]#!#!\n[GetPlayer.GetPrivateConstructionGoodsExpensesByGoodsDesc]" # todo: NEW TRANSLATION
  SHIP_CONSTRUCTION_GOODS_EXPENSES_BREAKDOWN: "[GetPlayer.GetShipConstructionGoodsExpensesByGoodsDesc]" # todo: NEW TRANSLATION
  SUPPLY_SHIP_MAINTENANCE_EXPENSES_BREAKDOWN: "#tooltip_header [Concept('concept_supply_ship', '$concept_supply_ships$')]#!\nCelkem: #v #N @money!-[GetPlayer.GetSupplyShipMaintenanceExpenses|D-]#!#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetSupplyShipMaintenanceExpensesDesc]" # todo: NEW TRANSLATION
- MILITARY_SHIP_MAINTENANCE_EXPENSES_BREAKDOWN: "#tooltip_header [Concept('concept_ship', '$concept_military_ships$')]#!\nCelkem: #v #N @money!-[GetPlayer.GetMilitaryShipMaintenanceExpenses|D-]#!#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetMilitaryShipMaintenanceExpensesDesc]" # todo: NEW TRANSLATION
  SUPPLY_SHIP_MAINTENANCE_DESC: "#v #N @money!-$TOTAL|K-$#!#! z #v $COUNT$#! $concept_supply_ships$" # todo: NEW TRANSLATION
+ SUPPLY_SHIP_BUILDING_MAINTENANCE_EXPENSES_BREAKDOWN: "#tooltip_header [Concept('concept_supply_ship', '$concept_supply_ships$')]#!\nCelkem: #variable @money![Building.GetSupplyShipMaintenanceRevenue|K]#! z #v [Building.GetNumSupplyShips]#! $concept_supply_ships$\n$TOOLTIP_DELIMITER$\n[Building.GetSupplyShipMaintenanceRevenueBreakdown]" # todo: NEW TRANSLATION
+ SUPPLY_SHIP_BUILDING_MAINTENANCE_EXPENSES_BREAKDOWN_ENTRY: "Z budovy úrovně #v $TOTAL_LEVELS$#!, s #v @money!$REVENUE_PER_LEVEL|0$#! výnosem za úroveň a #v $PREMIUM|%0$#! [Concept('concept_government_premium', '$concept_government_premium$')]." # todo: NEW TRANSLATION
+ MILITARY_SHIP_MAINTENANCE_EXPENSES_BREAKDOWN: "#tooltip_header [Concept('concept_ship', '$concept_military_ships$')]#!\nCelkem: #v #N @money!-[GetPlayer.GetMilitaryShipMaintenanceExpenses|D-]#!#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetMilitaryShipMaintenanceExpensesDesc]" # todo: NEW TRANSLATION
  MILITARY_SHIP_MAINTENANCE_DESC: "#v #N @money!-$TOTAL|K-$#!#! z #v [Concept('concept_ship', '$concept_military_ships$')]#!" # todo: NEW TRANSLATION
+ MILITARY_SHIP_BUILDING_MAINTENANCE_EXPENSES: "#tooltip_header [Concept('concept_ship', '$concept_military_ships$')]#!\nCelkem: #variable @money![Building.GetMilitaryShipMaintenanceRevenue|K]#!\n$TOOLTIP_DELIMITER$\n[Building.GetMilitaryShipMaintenanceRevenueBreakdown]" # todo: NEW TRANSLATION
+ MILITARY_SHIP_BUILDING_MAINTENANCE_EXPENSES_BREAKDOWN_ENTRY: "#v @money!$TOTAL|0$#! utraceno za #v $AMOUNT$#! [GOODS.GetName] $COST$" # todo: NEW TRANSLATION
+ MILITARY_SHIP_BUILDING_MAINTENANCE_EXPENSES_BREAKDOWN_PREMIUM_ENTRY: "#v @money!$COST|0$#! utraceno na [Concept('concept_government_premium', '$concept_government_premium$')] (#v $PREMIUM|%0$#!)" # todo: NEW TRANSLATION
+ SHIP_MAINTENANCE_NO_SHIPYARDS: "Žádné loděnice" # todo: NEW TRANSLATION
  PORT_CONNECTION_EXPENSES_BREAKDOWN: "#tooltip_header [Concept('concept_shipping_lane', '$concept_shipping_lanes$')]#!\nCelkem: #v #N @money!-[GetPlayer.GetPortConnectionExpenses|D-]#!#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetPortConnectionExpensesDesc]" # todo: NEW TRANSLATION
  PORT_CONNECTION_EXPENSE_LINE: "#v #N @money!-$COST|D-$#!#! z [SHIPPING_LANE.GetBeginState.GetName] do [SHIPPING_LANE.GetEndState.GetName]" # todo: NEW TRANSLATION
+ GOODS_TRANSFER_EXPENSE_LINE: "#v #N @money!-$COST|D-$#!#! [GetArticleType('goods_transfer').GetName] ([SHIPPING_LANE.GetGoodsListDesc]) z [SHIPPING_LANE.GetBeginState.GetName] do [SHIPPING_LANE.GetEndState.GetName]" # todo: NEW TRANSLATION
+ MARKET_FEES_INCOME_BREAKDOWN: "#tooltip_header Poplatky za využití $concept_supply_network$#!\nCelkem: #v @money![GetPlayer.GetMarketFeesIncome|K+]#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetMarketFeesIncomeDesc]" # todo: NEW TRANSLATION
+ TAX_INCOME_MARKET_FEES: "$TAB$#tooltippable #tooltip:[GetPlayer.GetTooltipTag],MARKET_FEES_INCOME_BREAKDOWN,MarketFeesIncomeTooltip @money![GetPlayer.GetMarketFeesIncome|D+=]#!#! [concept_supply_network]" # todo: NEW TRANSLATION
+ MARKET_PORT_CONNECTION_FEE: "#v #N @money!-$COST|D-$#!#! z #tooltippable #tooltip:$BREAKDOWN$ #v $DEFICIT_SHARE|%1$#!#!#! poplatky za využití $concept_supply_network$ pro [MARKET.GetOwner.GetName]" # todo: NEW TRANSLATION
+ MARKET_PORT_CONNECTION_FEE_INCOME: "#v #P @money!$FEE|D+$#!#! od [COUNTRY.GetName] (#tooltippable #tooltip:$BREAKDOWN$ #v $DEFICIT_SHARE|%1$#!#!#!)" # todo: NEW TRANSLATION
+ MARKET_OWNER_NETWORK_USAGE: "[COUNTRY.GetAdjective] využití $concept_supply_network$: #tooltippable #tooltip:$BREAKDOWN$ #v $SHARE|%1$#!#!#!" # todo: NEW TRANSLATION
+ DEFICIT_SHARE_BREAKDOWN: "#tooltip_header Podíl využití [concept_supply_network]#!\nNáklady: #v #N @money!$COST|-D$#!#! (#v $DEFICIT_SHARE|%1$#!)\nCelkové náklady [MARKET.GetName] $concept_supply_network_short$: #v #N @money!$TOTAL_COST|D-$#!#!\n$TOOLTIP_DELIMITER$\nPodíl #v $DEFICIT_SHARE|%1$#! je způsoben tím, že [COUNTRY.GetName] dováží následující [Concept('concept_good', '$concept_goods$')] z jiných [Concept('concept_country', '$concept_countries$')] nebo [Concept('concept_market_area','$concept_market_areas$')] v [MARKET.GetName]:\n$BREAKDOWN$" # todo: NEW TRANSLATION
+ DEFICIT_SHARE_BREAKDOWN_ITEM: "[GOODS.GetTextIcon][Nbsp]#v $AMOUNT|D$#! [GOODS.GetNameNoIcon]" # todo: NEW TRANSLATION
  PORT_CONNECTION_REVENUE: "[Concept('concept_shipping_lane', '$concept_shipping_lanes$')]" # todo: NEW TRANSLATION
  SUPPLY_SHIP_MAINTENANCE_REVENUE: "[Concept('concept_supply_ship', '$concept_supply_ship$')] Údržba" # todo: NEW TRANSLATION
  MILITARY_SHIP_MAINTENANCE_REVENUE: "[Concept('concept_ship', '$concept_military_ships$')] Údržba" # todo: NEW TRANSLATION
@@ -5427,6 +5546,8 @@
  EXPENSES_POWER_BLOC: "$TAB$#tooltippable #tooltip:[GetPlayer.GetTooltipTag],POWER_BLOC_EXPENSES_BREAKDOWN,PowerBlocExpenseTooltip #N @money!-[GetPlayer.GetPowerBlocExpenseRaw|D-]#!#!#! [concept_budget_power_bloc]"
  EXPENSES_CONSTRUCTION_GOODS: "$TAB$#tooltippable #tooltip:[GetPlayer.GetTooltipTag],CONSTRUCTION_GOODS_EXPENSES_BREAKDOWN,ConstructionGoodsExpenseTooltip #N @money!-[GetPlayer.GetConstructionGoodsExpenses|D-]#!#!#! [concept_budget_construction_goods]"
  EXPENSES_SHIP_CONSTRUCTION_GOODS: "$TAB$#tooltippable;tooltip:[GetPlayer.GetTooltipTag],SHIP_CONSTRUCTION_GOODS_EXPENSES_BREAKDOWN @money![Negate(GetPlayer.GetShipConstructionGoodsExpenses)|D+]#! [concept_ship_construction]" # todo: NEW TRANSLATION
+ EXPENSES_SUPPLY_SHIP_CONSTRUCTION_GOODS: "$TAB$#tooltippable;tooltip:[GetPlayer.GetTooltipTag],SHIP_CONSTRUCTION_GOODS_EXPENSES_BREAKDOWN @money![Negate(GetPlayer.GetSupplyShipConstructionGoodsExpenses)|D+]#! [Concept('concept_supply_ship', '$concept_supply_ship_construction$')]" # todo: NEW TRANSLATION
+ EXPENSES_MILITARY_SHIP_CONSTRUCTION_GOODS: "$TAB$#tooltippable;tooltip:[GetPlayer.GetTooltipTag],SHIP_CONSTRUCTION_GOODS_EXPENSES_BREAKDOWN @money![Negate(GetPlayer.GetMilitaryShipConstructionGoodsExpenses)|D+]#! [concept_ship_construction]" # todo: NEW TRANSLATION
  EXPENSES_INTEREST: "$TAB$#tooltippable #tooltip:[GetPlayer.GetTooltipTag],INTEREST_EXPENSE_TOOLTIP,InterestExpenseTooltip #N @money!-[GetPlayer.GetInterestPayment|D-]#!#!#! [concept_budget_interest]"
  ECONOMY_HEALTH: "Vaše ekonomika je $HEALTH$\n$TAB$$INCOME_RATIO$\n$TAB$$CREDIT_RATIO$ (Hlavní: #variable @money!$CURRENT_LOAN_BALANCE|D$#!)"
  HEALTH_GOOD: "[Concept('concept_economy_health','$concept_economy_health_healthy_short$')]"
@@ -5437,6 +5558,9 @@
  CREDIT_RATIO_BAD: "@red_cross! Úvěr použit: #variable #N $CREDITRATIO|%1$#!#!"
  TAX_INCOME: "Příjmy z daní"
  DECLARE_BANKRUPTCY: "Vyhlásit [concept_bankruptcy]"
+ DECLARED_BANKRUPTCY: "Vyhlášeno [concept_bankruptcy]" # todo: NEW TRANSLATION
+ BANKRUPTCY_AFFECTED_BY: "Ovlivněno $concept_bankruptcy$" # todo: NEW TRANSLATION
+ BANKRUPTCY_TIME_REMAINING: "#v [GetPlayer.GetTimedModifier('declared_bankruptcy').GetTimeLeftFormatted]#!" # todo: NEW TRANSLATION
  DECLARE_BANKRUPTCY_TOOLTIP: "[Country.GetDeclareBankruptcyDesc]"
  DECLARE_BANKRUPTCY_NOT_IN_DEFAULT: "Nejsme v [concept_default]"
  DECLARE_BANKRUPTCY_DESC: "#header Vyhlásit [concept_bankruptcy]#!\n$TOOLTIP_DELIMITER$\nVyhlášení [concept_bankruptcy] vymaže naše [concept_loans] a přivede [GetPlayer.GetName] z [concept_default], ale udělat tak bude mít vážné vnitřní důsledky pro naši [concept_country]:\n$EFFECTS$[ConcatIfNeitherEmpty('\n\nNení možné z důvodu:\n','$ERRORS$')]"
@@ -5495,6 +5619,7 @@
  WORLD_MARKET_TOTAL_TRADE_ADVANTAGE_ENTRY: "#tooltippable;tooltip:$BREAKDOWN_TAG$ $ADVANTAGE|vD$#! pro [STATE.GetName] ($RELATIVE_ADVANTAGE|=+%0$ $concept_relative_trade_advantage$)"
  WORLD_MARKET_TOTAL_TRADE_ADVANTAGE_BREAKDOWN: "#header Globální [concept_trade_advantage]#!\n$TOTAL_ADVANTAGE|vD$ pro [Goods.GetName] $DIRECTION$\n$TOOLTIP_DELIMITER$\n$DETAILS$"
  ADVANTAGE_FROM_CAPACITY: "$VAL|0%=+$ z $CAPACITY|v$ [concept_trade_capacity] (maximum $MAX|0%=+$)"
+ ADVANTAGE_FROM_PRESTIGE_MERCHANT_MARINE: "$VAL|0%=+$ [concept_trade_advantage] z $FRACTION|0v%$ [Concept('concept_prestige_good','$concept_prestige$')] [GetGoods('merchant_marine').GetName] vstupu" # todo: NEW TRANSLATION
  ADVANTAGE_FROM_WORLD_MARKET_ACCESS: "#n x$VAL|2$#! díky [concept_world_market_access]"
  ADVANTAGE_FROM_OPPOSITE_DIRECTION_TRADE: "#n x$VAL|2$#! díky obchodu v opačném směru [concept_trade] na stejném [concept_market]"
  ADVANTAGE_FROM_POWER_BLOC: "#tooltippable;tooltip:$BREAKDOWN_TAG$ $VAL|D=+v$#! z [concept_power_bloc]"
@@ -6208,6 +6333,7 @@
  POLITICAL_ACTION_EXPAND_MARKET_DESC: "rozšířit svou pokrytí trhu"
  POLITICAL_ACTION_EXPAND_MARKET_PAST_TENSE_DESC: "Rozšířil vaši tržní pokrytí"
  INTERACTION_NOT_ALLOWED_FOR: "Tato akce není povolena pro [COUNTRY.GetName]"
+ ACTION_REDUNDANT: "Tato akce je již v platnosti" # todo: NEW TRANSLATION
  CANNOT_AFFORD_LAW: "Nemůžete si dovolit @aut!#variable $VAL$#!"
  LAW_HAS_NOT_PASSED_COOLDOWN: "Musíte počkat, až do #variable $DATE$#! než můžete provést změny ve $TYPE$."
  LACKING_TECHNOLOGY_GLOBAL_SINGLE: "$TECHNOLOGY$ dosud nebyl vynalezen"
@@ -6707,6 +6833,11 @@
  NO_INVOLVEVMENT: "Žádné [GetPlayer.GetAdjective] [concept_involvement]" # todo: NEW TRANSLATION
  PLAYER_INVOLVEMENT: "[GetPlayer.GetAdjective] [concept_involvement]" # todo: NEW TRANSLATION
  NO_OTHER_COUNTRIES_INVOLVEMENT: "Žádné jiné [Concept('concept_country','$concept_countries$')] [Concept('concept_involvement','$concept_involved$')]" # todo: NEW TRANSLATION
+ TIER_1: "Úroveň 1" # todo: NEW TRANSLATION
+ TIER_2: "Úroveň 2" # todo: NEW TRANSLATION
+ TIER_3: "Úroveň 3" # todo: NEW TRANSLATION
+ TIER_4: "Úroveň 4" # todo: NEW TRANSLATION
+ TIER_5: "Úroveň 5" # todo: NEW TRANSLATION
  STRATEGIC_REGION_AI_STANCE_TYPE: "Postoj AI" # todo: NEW TRANSLATION
  ACTOR_COUNTRY_NOT_VALID: "Herecká země není platná."
  TARGET_COUNTRY_NOT_VALID: "#N Cílová země není platná.#!"
@@ -7077,6 +7208,7 @@
  NO_ACTIVE_DIPLOMATIC_PLAYS: "Žádné aktivní [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')|l]"
  DIPLOMATIC_PLAYS_AND_WARS: "$concept_wars$ & diplomatické hry"
  ONGOING_DIPLOMATIC_ACTIONS_CONCEPT: "[Concept('concept_ongoing_diplomatic_action', '$concept_ongoing_diplomatic_actions$')]"
+ ONGOING_DIPLOMATIC_PLAYS_CONCEPT: "Probíhající diplomatické akce" # todo: NEW TRANSLATION
  NO_WARS_OR_DIPLOMATIC_PLAYS: "Žádné aktivní [Concept('concept_war','$concept_wars$')|l] nebo \n[Concept('concept_diplomatic_play', 'diplomatické hry')]"
  DIPLOMATIC_ACTION_NAME: "[DiplomaticAction.GetNameNoFormatting]"
  DIPLOMATIC_ACTION_ACTIVE_AND_NON_ACTIVE_NAME: "[DiplomaticAction.GetNameWithContext]"
@@ -7705,6 +7837,7 @@
  outliner_title_heirs: "#outliner_header Dědicové#!" # todo: NEW TRANSLATION
  outliner_title_executives: "#outliner_header Výkonná moc#!" # todo: NEW TRANSLATION
  outliner_title_magnates: "#outliner_header Magnáti#!" # todo: NEW TRANSLATION
+ outliner_title_other: "#outliner_header Ostatní postavy#!" # todo: NEW TRANSLATION
  outliner_title_companies: "#outliner_header Společnosti#!"
  outliner_title_interest_groups: "#outliner_header Zájmové skupiny#!"
  outliner_title_marginalized_interest_groups: "#outliner_header Marginalizované skupiny#!"
@@ -7726,6 +7859,8 @@
  outliner_title_political_lobbies: "#outliner_header Politické lobby#!"
  outliner_title_non_revolutionary_political_movements: "#outliner_header Politické Hnutí#!"
  outliner_title_treaties: "#outliner_header Smlouvy#!"
+ OUTLINER_SUPPORT_SEPARATISM_EXISTING: "$NAME|v$" # todo: NEW TRANSLATION
+ OUTLINER_SUPPORT_SEPARATISM_FORMING: "$TYPE|v$" # todo: NEW TRANSLATION
  ADD_ANYTHING_TO_OUTLINER: "#title Můžete sem připnout více věcí!#!"
  POLITICS_PANEL_HEADER: "Politika"
  LAW_CATEGORIES_HEADER: "Právní kategorie#!"
@@ -9505,6 +9640,7 @@
  SOL_CONDENSED: "[LabelingHelper.GetLabelForStandardOfLivingNoIconCFixedPointFormatFromExpected(State.GetAverageStandardOfLivingAll,State.GetExpectedStandardOfLivingAll)|v] ([State.GetFormattedStandardOfLivingAll|v])"
  STATE_TURMOIL_CONDENSED: "#b [State.CalcTurmoil|%1-]#!"
  STATE_DEVASTATION_CONDENSED: "#b [State.GetDevastationLevel|%R1]#!"
+ BOMBARDMENT_STATE_DEVASTATION_WITH_DAILY_CHANGE: "#v [State.GetDevastationLevel|%1]#!" # todo: NEW TRANSLATION
  STATE_INFRASTRUCTURE_CONDENSED: "[SelectLocalization(GreaterThan_CFixedPoint(State.GetInfrastructureUsage,State.GetInfrastructure), 'WARNING', '')]Používá #tooltippable #tooltip:[State.GetTooltipTag],STATE_INFRASTRUCTURE_USAGE_TOOLTIP [State.GetInfrastructureUsage|0v]#!#! z #tooltippable #tooltip:[State.GetTooltipTag],STATE_INFRASTRUCTURE_TOOLTIP [State.GetInfrastructure|0v]#!#!"
  STATE_TAX_CAPACITY_CONDENSED: "[AddLocalizationIf(GreaterThan_CFixedPoint(State.CalcTaxCapacityUsage,State.CalcTaxCapacity), 'WARNING')]Používá #tooltippable #tooltip:[State.GetTooltipTag],STATE_TAX_CAPACITY_USAGE_TOOLTIP [State.CalcTaxCapacityUsage|0v]#!#! z #tooltippable #tooltip:[State.GetTooltipTag],STATE_TAX_CAPACITY_TOOLTIP [State.CalcTaxCapacity|0v]#!#! [AddLocalizationIf(GreaterThan_CFixedPoint(State.CalcTaxCapacityUsage, State.CalcTaxCapacity), 'STATE_TAX_CAPACITY_INSUFFICIENT')]"
  STATE_MARKET_CAPITAL_STATUS_CONDENSED: "[State.GetMarket.GetName]\n[State.GetMarketAccess|%v0]"
@@ -9667,6 +9803,8 @@
  MILITARY_FORMATION_DISEMBARK_TOOLTIP: "#header Vyložit toto [concept_army] z [concept_fleet]#![ConcatIfNeitherEmpty('\n', GetDesc(MilitaryFormation.DisembarkFormation))]" # todo: NEW TRANSLATION
  REHOME_MILITARY_FORMATION_TOOLTIP: "Nastavit domovské [concept_hq] [MilitaryFormation.GetName] na jiné $concept_hq$"
  REHOME_MILITARY_FORMATION_LABEL: "Přesunout domovské [concept_hq]"
+ RECALL_FLEET_FOR_REPAIRS_LABEL: "Odvolat na opravy" # todo: NEW TRANSLATION
+ RECALL_FLEET_FOR_REPAIRS_TOOLTIP: "#header Odvolat na opravy#!\n$TOOLTIP_DELIMITER$\n[ConcatIfNeitherEmpty(GetDesc(MilitaryFormation.RecallForRepairs),'\n\n')]Odeslat [MilitaryFormation.GetName] do nejbližšího přátelského přístavu k obnovení [concept_fleet_hit_points] a doplnění [concept_ship_crew]. Po úplném obnovení pokračuje v přiděleném $concept_naval_mission$." # todo: NEW TRANSLATION
  MAP_INTERACTION_DEPLOY_MILITARY_FORMATION_TO_FRONT_DESC: "Rozmístniť $FORMATION_NAME$ na [Concept('concept_front','frontu')]"
  MAP_INTERACTION_DEPLOY_MILITARY_FORMATION_TO_FRONT_PERFORMED: "$FORMATION_NAME$ nasazeno na [Concept('concept_front','frontu')]"
  MAP_INTERACTION_DEPLOY_MILITARY_FORMATION_TO_SEA_NODE_DESC: "Nasadit $FORMATION_NAME$ na [concept_sea_node|l]"
@@ -9726,6 +9864,16 @@
  COUNTRY_SAILORS_VALUE: "[Concept('concept_sailor', '$concept_sailors$')]: [Country.GetCurrentSailors|v0K] / [Country.GetModifier.GetValueFor('country_sailors_max_add')|v0K][AddLocalizationIf( Country.HasInsufficientMaxSailors, 'COUNTRY_SAILORS_VALUE_NEED_MORE_THAN_MAX' )]" # todo: NEW TRANSLATION
  COUNTRY_SAILORS_VALUE_NEED_MORE_THAN_MAX: " (@warning! Potřeba: [Country.GetNeededSailors|v0K])" # todo: NEW TRANSLATION
  SHIP_MOD_GOODS_COST: "[Concept('concept_good', '$concept_budget_construction_goods$')]: #indent_newline:3 \n[ShipModificationType.GetConstructionGoodsModifier.GetDesc]#!" # todo: NEW TRANSLATION
+ MOVEMENT_RADICALISM_UNOWNED_HOMELAND_STATES_FACTOR: "neovládané [Concept('concept_homeland', '$concept_homelands$')]" # todo: NEW TRANSLATION
+ DISBAND_COMMAND_FORMATION_ENTRY_BEGINNING: "Bude převedeno do [MILITARY_FORMATION.GetName]:"
+ DISBAND_COMMAND_FORMATION_ENTRY_COMMANDER: "* [CHARACTER.GetFullNameWithTitle]"
+ DISBAND_COMMAND_FORMATION_ENTRY_UNIT: "* [COMBAT_UNIT_TYPE.GetIconString] $NUM_UNITS|v$ [COMBAT_UNIT_TYPE.GetName]"
+ DISBAND_COMMAND_ENTRY_BEGINNING: "Převody "
+ DISBAND_COMMAND_UNIT_ENTRY_END: " k [MILITARY_FORMATION.GetName]"
+ ARMY_STATUS_READY_DEFEND_INVASION: ", připraven bránit jakoukoli [Concept('concept_naval_invasion', '$concept_naval_invasions$')] namířenou na [MilitaryFormation.GetCurrentHQ.GetName]"
+ FLEET_STATUS_READY_DEFEND_INVASION: ", připraveno bránit jakoukoliv [Concept('concept_naval_invasion', '$concept_naval_invasions$')] mířící na [MilitaryFormation.GetCurrentSeaNode.GetSeaNodeName]"
+ UNLOCK_MAP_MODE: "Zrušit zamčený režim mapy"
+ UNLOCK_MAP_MODE_TOOLTIP: "#header Odstranit uzamčený režim mapy#!\nRežim mapy [GetSelectedMapModeName] je v současnosti uzamčen."
  FLEET_STATUS_NAVAL_INVASION_TRYING_TO_INTERCEPT: "Snaží se zachytit a [concept_battle] nepřátelskou [Concept('concept_fleet', '$concept_fleets$')] v Baltském moři kvůli [Invasion.GetName]. Všechny nepřátelské [Concept('concept_fleet', '$concept_fleets$')] musí být [concept_admiral_defeated]"
  FLEET_STATUS_NAVAL_INVASION_TRYING_TO_INTERCEPT_SHORT: "Snaží se zachytit a [concept_battle] nepřátelskou [Concept('concept_fleet', '$concept_fleets$')] v [Invasion.GetSeaNodeName]"
  FLEET_STATUS_NAVAL_INVASION_NO_INTERCEPT: "@warning! V [MilitaryFormation.GetCurrentSeaNode.GetSeaNodeName] nemusí [Invasion.GetName] pokračovat, pokud některý [concept_admiral] nemá [concept_order] s #tooltippable_name #tooltip:character_interception_add_desc $character_interception_add$#!#!. Všechny nepřátelské [Concept('concept_fleet', '$concept_fleets$')] musí být [concept_admiral_defeated]"

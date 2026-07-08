@@ -184,6 +184,12 @@
  SET_KEY: "[DIPLOMATIC_PLAY.GetName] přejmenováno na #variable $KEY$#!"
  ADD_DIPLOMATIC_PLAY_WAR_SUPPORT: "[Country.GetAdjectiveNoFormatting] [concept_war_support|l] v [TARGET_DIPLOMATIC_PLAY.GetName] se zvýší o $VALUE|+$"
  ADD_DIPLOMATIC_PLAY_WAR_SUPPORT_NEG: "[Country.GetAdjectiveNoFormatting] [concept_war_support|l] v [TARGET_DIPLOMATIC_PLAY.GetName] klesne o $VALUE|+$"
+ ADD_MANEUVERS: "[Concept('concept_maneuver', '$concept_maneuvers$')] v [DiplomaticPlay.GetName] se zvyšuje o $VALUE|0+$" # todo: NEW TRANSLATION
+ ADD_MANEUVERS_NEG: "[Concept('concept_maneuver', '$concept_maneuvers$')] v [DiplomaticPlay.GetName] se snižuje o $VALUE|0-$" # todo: NEW TRANSLATION
+ ADD_MANEUVERS_FIRST: "Zvyšuje [Concept('concept_maneuver', '$concept_maneuvers$')] pro [TARGET_COUNTRY.GetNameNoFlag] v [DiplomaticPlay.GetName] o $VALUE|0+$" # todo: NEW TRANSLATION
+ ADD_MANEUVERS_FIRST_NEG: "Snižuje [Concept('concept_maneuver', '$concept_maneuvers$')] pro [TARGET_COUNTRY.GetNameNoFlag] v [DiplomaticPlay.GetName] o $VALUE|0-$" # todo: NEW TRANSLATION
+ ADD_MANEUVERS_THIRD: "Zvyšuje [Concept('concept_maneuver', '$concept_maneuvers$')] pro [TARGET_COUNTRY.GetName] v [DiplomaticPlay.GetName] o $VALUE|0+$" # todo: NEW TRANSLATION
+ ADD_MANEUVERS_THIRD_NEG: "Snižuje [Concept('concept_maneuver', '$concept_maneuvers$')] pro [TARGET_COUNTRY.GetName] v [DiplomaticPlay.GetName] o $VALUE|0-$" # todo: NEW TRANSLATION
  ADD_WAR_WAR_SUPPORT: "[Country.GetAdjectiveNoFormatting] [concept_war_support|l] v [War.GetName] se zvyšuje o $VALUE|+$"
  ADD_WAR_WAR_SUPPORT_NEG: "[Country.GetAdjectiveNoFormatting] [concept_war_support|l] v [War.GetName] klesá o $VALUE|+$"
  ADD_WAR_EXHAUSTION: "[Country.GetAdjectiveNoFormatting] [concept_war_exhaustion|l] zisk v [War.GetName] se zvyšuje o $VALUE|+$"
@@ -723,3 +729,7 @@
  DISABLE_TEMPORARY_HOSTILITIES: "Ukončuje stav dočasných nepřátelství s [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
  DISABLE_TEMPORARY_HOSTILITIES_FIRST: "[COUNTRY.GetNameNoFlag] ukončuje stav dočasných nepřátelství s [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
  DISABLE_TEMPORARY_HOSTILITIES_THIRD: "[COUNTRY.GetName] ukončuje stav dočasných nepřátelství s [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
+ SET_MOVEMENT_DEFEATED: "Nastavit [POLITICAL_MOVEMENT.GetName] jako poražené" # todo: NEW TRANSLATION
+ CLEAR_MOVEMENT_DEFEATED: "Zrušit stav poražení [POLITICAL_MOVEMENT.GetName]" # todo: NEW TRANSLATION
+ SET_MOVEMENT_DEFEATED_THIRD: "Nastavit [POLITICAL_MOVEMENT.GetName] jako poražené v této [concept_country]" # todo: NEW TRANSLATION
+ CLEAR_MOVEMENT_DEFEATED_THIRD: "Zrušit stav poražení [POLITICAL_MOVEMENT.GetName] v této [concept_country]" # todo: NEW TRANSLATION

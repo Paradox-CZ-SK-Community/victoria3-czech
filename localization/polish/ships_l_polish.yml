@@ -87,6 +87,8 @@
  CANCEL_SHIP_REPAIR_CONFIRMATION: "Opravdu chcete zrušit opravu [ShipConstruction.GetShip.GetName]? Pokrok bude ztracen" # todo: NEW TRANSLATION
  CANNOT_DECOMMISSION_SHIP_IN_BATTLE: "[SHIP.GetName] je momentálně v [concept_battle]" # todo: CHANGED
  CANNOT_DECOMMISSION_SHIPS_IN_BATTLE: "$SHIPS_CONCEPT$ jsou momentálně v [concept_battle]" # todo: CHANGED
+ CANNOT_DECOMMISSION_SHIP_TRANSPORTING_TROOPS: "[SHIP.GetName] má momentálně naloděné [Concept('concept_army','$concept_armies$')]" # todo: NEW TRANSLATION
+ CANNOT_DECOMMISSION_SHIPS_TRANSPORTING_TROOPS: "$SHIPS_CONCEPT$ mají momentálně naloděné [Concept('concept_army','$concept_armies$')]" # todo: NEW TRANSLATION
  DECOMMISSION_SHIP_TOOLTIP: "#r Vyřadit z provozu#! [Ship.GetName][ConcatIfNeitherEmpty('\n\n',GetDesc( Ship.Decommission ))]" # todo: NEW TRANSLATION
  RETROFIT_SHIP_CONFIRMATION: "Retrofitovat [Ship.GetName] tak, aby odpovídala nejnovější verzi šablony?" # todo: CHANGED
  RETROFIT_SHIP_CONFIRMATION_MULTIPLE: "Retrofitovat $COUNT_WITH_TT$ $SHIPS_CONCEPT$ tak, aby odpovídaly nejnovějším verzím jejich šablon?" # todo: CHANGED
@@ -111,6 +113,7 @@
  FLAGSHIP_ORNAMENT_NONE: "Žádný figurální věnec" # todo: CHANGED
  FLAGSHIP_ORNAMENT_PREV_TOOLTIP: "Předchozí figurka" # todo: CHANGED
  FLAGSHIP_ORNAMENT_NEXT_TOOLTIP: "Další figurka" # todo: CHANGED
+ FLAGSHIP_SIGNALFLAGS_LABEL: "Výzdoba vlajkami" # todo: NEW TRANSLATION
  SHIP_IS_NOT_A_FLAGSHIP: "Tato loď není vlajkovou lodí" # todo: NEW TRANSLATION
  figurehead_eagle: "Orel" # todo: NEW TRANSLATION
  figurehead_poseidon: "$Neptune$" # todo: NEW TRANSLATION
@@ -201,12 +204,32 @@
  MILITARY_FORMATION_HIT_POINTS_NO_ICON: "#[GetMoraleColorString(MilitaryFormation.GetHitPointsPercentage)] [MilitaryFormation.GetHitPointsPercentage|0%]#!" # todo: NEW TRANSLATION
  MILITARY_FORMATION_HIT_POINTS_TOOLTIP: "#header [concept_fleet_hit_points]#!\n@ship_hp! #BOLD #[GetMoraleColorString( MilitaryFormation.GetHitPointsPercentage)] [MilitaryFormation.GetHitPointsPercentage|0%]#!#! průměrné $concept_fleet_hit_points_short$ $SHIPS_CONCEPT$ v [MilitaryFormation.GetName]" # todo: CHANGED
  MILITARY_FORMATION_DAMAGE_TOOLTIP: "#header [concept_attack_damage]#!\n@hull_attack_damage! #v [MilitaryFormation.GetShipList.GetHullDamageAverage|0]#! [concept_hull_attack_damage] v průměru při plném [concept_ship_crew]\n@crew_attack_damage! #v [MilitaryFormation.GetShipList.GetCrewDamageAverage|0]#! [concept_crew_attack_damage] v průměru při plném [concept_ship_crew]" # todo: NEW TRANSLATION
+ MILITARY_FORMATION_HULL_DAMAGE_BREAKDOWN_SECTION: "#title @hull_attack_damage! #v [MilitaryFormation.GetShipList.GetHullDamageAverage|0]#! průměr způsobený:#!#indent_newline:3 \n$BREAKDOWN$#!" # todo: NEW TRANSLATION
+ MILITARY_FORMATION_CREW_DAMAGE_BREAKDOWN_SECTION: "#title @crew_attack_damage! #v [MilitaryFormation.GetShipList.GetCrewDamageAverage|0]#! průměr způsobený:#!#indent_newline:3 \n$BREAKDOWN$#!" # todo: NEW TRANSLATION
  MILITARY_FORMATION_HULL_DAMAGE_TOOLTIP: "#header [concept_hull_attack_damage]#!\n@hull_attack_damage! #v [MilitaryFormation.GetShipList.GetHullDamageAverage|0]#! [concept_hull_attack_damage] v průměru při plném [concept_ship_crew]" # todo: NEW TRANSLATION
  MILITARY_FORMATION_CREW_DAMAGE_TOOLTIP: "#header [concept_crew_attack_damage]#!\n@crew_attack_damage! #v [MilitaryFormation.GetShipList.GetCrewDamageAverage|0]#! [concept_crew_attack_damage] v průměru při plném [concept_ship_crew]" # todo: NEW TRANSLATION
  MILITARY_FORMATION_ARMOR_TOOLTIP: "#header $ship_armor_add$#!\n@ship_armor! [MilitaryFormation.GetShipList.GetArmorAverage|1v] $ship_armor_add$ v průměru při plném [concept_ship_crew]" # todo: NEW TRANSLATION
  MILITARY_FORMATION_SCREENING_RATIO_TOOLTIP: "[concept_screening] / [concept_vulnerability]" # todo: NEW TRANSLATION
+ MILITARY_FORMATION_SCREENING_RATIO_BREAKDOWN: "\n$TOOLTIP_DELIMITER$\n@ship_screening! #v $SCREENING|0$#! total $concept_screening$\n@ship_vulnerability! #v $VULNERABILITY|0$#! total $concept_vulnerability$\n\nPoměr je celkové $concept_screening$ flotily vydělené jejím celkovým $concept_vulnerability$. Při #v 100%#! nebo vyšším je dostatek $concept_screening$ k ochraně každé [Concept('concept_ship','$concept_ships$')]; pod tímto prahem budou častěji cílem ty s nejvyšším $concept_vulnerability$." # todo: NEW TRANSLATION
  MILITARY_FORMATION_AVERAGE_DETECTION_TOOLTIP: "Průměrné [concept_detection]" # todo: NEW TRANSLATION
  MILITARY_FORMATION_INVOLVEMENT_TOOLTIP: "[concept_involvement] generované při misi [concept_power_projection]" # todo: CHANGED
+ MILITARY_FORMATION_VISIBILITY_TOOLTIP: "#header [concept_visibility]#!\n@ship_visibility! #v [MilitaryFormation.GetTotalVisibility|D]#! celkem[MilitaryFormation.GetVisibilityBreakdown]" # todo: NEW TRANSLATION
+ MILITARY_FORMATION_CARRYING_CAPACITY_TOOLTIP: "#header [concept_carrying_capacity]#!\n@ship_carrying_capacity! #v [MilitaryFormation.GetCarryingCapacity|0]#! celkem[MilitaryFormation.GetCarryingCapacityBreakdown]" # todo: NEW TRANSLATION
+ MILITARY_FORMATION_MARINE_CAPACITY_TOOLTIP: "#header [concept_marine_capacity]#!\n@ship_marine_capacity! #v [MilitaryFormation.GetMarineCapacity|0]#! celkem[MilitaryFormation.GetMarineCapacityBreakdown]" # todo: NEW TRANSLATION
+ MILITARY_FORMATION_DETECTION_BREAKDOWN_ENTRY: "@ship_detection! #v $VALUE|0$#! z #v $COUNT$#! [ShipType.GetName]" # todo: NEW TRANSLATION
+ MILITARY_FORMATION_HULL_DAMAGE_BREAKDOWN_ENTRY: "@hull_attack_damage! #v $VALUE|0$#! z #v $COUNT$#! [ShipType.GetName]" # todo: NEW TRANSLATION
+ MILITARY_FORMATION_CREW_DAMAGE_BREAKDOWN_ENTRY: "@crew_attack_damage! #v $VALUE|0$#! z #v $COUNT$#! [ShipType.GetName]" # todo: NEW TRANSLATION
+ MILITARY_FORMATION_ARMOR_BREAKDOWN_ENTRY: "@ship_armor! #v $VALUE|0$#! z #v $COUNT$#! [ShipType.GetName]" # todo: NEW TRANSLATION
+ MILITARY_FORMATION_CARRYING_CAPACITY_BREAKDOWN_ENTRY: "@ship_carrying_capacity! #v $VALUE|0=$#! z #v $COUNT$#! [ShipType.GetName]" # todo: NEW TRANSLATION
+ MILITARY_FORMATION_MARINE_CAPACITY_BREAKDOWN_ENTRY: "@ship_marine_capacity! #v $VALUE|0=$#! z #v $COUNT$#! [ShipType.GetName]" # todo: NEW TRANSLATION
+ MILITARY_FORMATION_VISIBILITY_BREAKDOWN_ENTRY: "@ship_visibility! #v $VALUE|D=$#! z #v $COUNT$#! [ShipType.GetName]" # todo: NEW TRANSLATION
+ MILITARY_FORMATION_DETECTION_COMMANDER_ENTRY: "@ship_detection! #v $VALUE|0=$#! od [Character.GetFullName] jako [Character.GetPrimaryRoleTitle]" # todo: NEW TRANSLATION
+ MILITARY_FORMATION_HULL_DAMAGE_COMMANDER_ENTRY: "@hull_attack_damage! #v $VALUE|0=$#! od [Character.GetFullName] jako [Character.GetPrimaryRoleTitle]" # todo: NEW TRANSLATION
+ MILITARY_FORMATION_CREW_DAMAGE_COMMANDER_ENTRY: "@crew_attack_damage! #v $VALUE|0=$#! od [Character.GetFullName] jako [Character.GetPrimaryRoleTitle]" # todo: NEW TRANSLATION
+ MILITARY_FORMATION_ARMOR_COMMANDER_ENTRY: "@ship_armor! #v $VALUE|0=$#! od [Character.GetFullName] jako [Character.GetPrimaryRoleTitle]" # todo: NEW TRANSLATION
+ MILITARY_FORMATION_VISIBILITY_COMMANDER_ENTRY: "@ship_visibility! #v $VALUE|D=$#! od [Character.GetFullName] jako [Character.GetPrimaryRoleTitle]" # todo: NEW TRANSLATION
+ MILITARY_FORMATION_CREW_BREAKDOWN_ENTRY: "@crew! #v $VALUE|D=$#! z #v $COUNT$#! [ShipType.GetName]" # todo: NEW TRANSLATION
+ MILITARY_FORMATION_HIT_POINTS_BREAKDOWN_ENTRY: "@ship_hp! #[GetMoraleColorString('(CFixedPoint)$VALUE$')] $VALUE|%0$#! z #v $COUNT$#! [ShipType.GetName]" # todo: NEW TRANSLATION
  MILITARY_FORMATION_SPEED: "#v [MilitaryFormation.GetSpeed]#!" # todo: NEW TRANSLATION
  FLEET_SPEED_TOOLTIP: "#header [Concept('concept_ship_speed','$concept_ship_speed_short$')]#!\n@ship_speed! #v [MilitaryFormation.GetSpeed]#! / den pro [MilitaryFormation.GetName]\n$TOOLTIP_DELIMITER$\n#title Díky:#!#indent_newline:3 \n[MilitaryFormation.GetSpeedBreakdown]#!" # todo: NEW TRANSLATION
  SHIP_SPEED_BREAKDOWN_TOOLTIP: "#header Nejslabší [concept_ship_speed]#!\n@ship_speed! #v $VALUE|0$#! pro [MilitaryFormation.GetName]\n$TOOLTIP_DELIMITER$\n#title Založeno na nejslabší [Concept('concept_ship','$concept_ships$')] v tomto [concept_fleet]:#! #indent_newline:3 \n$BREAKDOWN$#!" # todo: CHANGED
@@ -220,6 +243,8 @@
  SHIP_UPKEEP_TOOLTIP: "#header [concept_ship_upkeep]#!\n@ship_upkeep! #v [Ship.GetUpkeepCost|D-=]#! aktuální týdenní náklad\n$TOOLTIP_DELIMITER$\n[Ship.GetUpkeepCostBreakdown]" # todo: CHANGED
  SHIP_CREW_STATE_TOOLTIP: "#header [concept_ship_crew]#!\n@crew! #v [Ship.GetNumCrewFromState(State.Self)|D]#! z [SelectLocalization(State.HasBuilding('building_naval_administration'), 'SHIP_CREW_BUILDING_LABEL', 'SHIP_CREW_STATE_LABEL')]" # todo: NEW TRANSLATION
  SHIP_VETERANCY_TOOLTIP: "#header [Ship.GetVeterancyLevel.GetName]#!\nCelkem [Concept('concept_unit_experience','$concept_experience$')]: [Ship.GetVeterancyExperience|v0][AddLocalizationIf( Not(Ship.IsAtMaxVeterancy), 'SHIP_VETERANCY_TOOLTIP_NEXT_LEVEL')][AddLocalizationIf(Not(StringIsEmpty(Ship.GetVeterancyLevel.GetModifierDesc)), 'SHIP_VETERANCY_TOOLTIP_DESC')]" # todo: NEW TRANSLATION
+ SHIP_VETERANCY_TREND_GAINING: "\n@arrow_up! [Ship.GetVeterancyExperienceWeeklyGain|+=0] $concept_experience$ za týden z aktivní [concept_naval_mission]" # todo: NEW TRANSLATION
+ SHIP_VETERANCY_TREND_LOSING: "\n@arrow_down! #n -[Ship.GetVeterancyExperienceWeeklyDecay|0]#! $concept_experience$ za týden kvůli žádné aktivní [concept_naval_mission]" # todo: NEW TRANSLATION
  SHIP_VETERANCY_TOOLTIP_NEXT_LEVEL: " ([Ship.GetVeterancyExperienceNeededForNextLevel|v0] do dalšího $concept_veterancy_level_short$)\n[Ship.GetVeterancyLevel.GetNextLevel.GetName] Prahová hodnota $concept_experience$: [Ship.GetVeterancyLevel.GetNextLevel.GetExperienceThreshold|v0]" # todo: NEW TRANSLATION
  SHIP_VETERANCY_TOOLTIP_DESC: "\n$TOOLTIP_DELIMITER$\n[Ship.GetVeterancyLevel.GetModifierDesc]" # todo: NEW TRANSLATION
  SHIPLIST_CREW_TOOLTIP: "#header @ships! [Concept('concept_ship', '$concept_ships$')] with @crew! $SHIP_CREW_SHORT_CONCEPT$ from [State.GetName] #! \n@ships! [MilitaryFormation.GetShipList.GetNumShipsFromState(State.Self)|Dv] [Concept('concept_ship', '$concept_ships$')] aktuálně\n@crew! [MilitaryFormation.GetShipList.GetNumCrewFromState(State.Self)|Dv] $concept_ship_crew_short$ celkem\n $TOOLTIP_DELIMITER$ \n$SHIPLIST_CREW_PAGED_LIST$" # todo: CHANGED
@@ -260,8 +285,11 @@
  SHIP_UPKEEP_EXPENSES_INSUFFICIENT_SUPPLY_SHIPS_DESC: "$MULT|0+%$ $concept_goods$ spotřebováno kvůli nedostatku [concept_supply_ship]" # todo: CHANGED
  SUPPLY_NO_ROUTE_DESC: "#n Žádná zásobovací trasa dostupná#!" # todo: NEW TRANSLATION
  SUPPLY_GOODS_SHORTAGE_DESC: "Dodávky zásob na #[GetMoraleColorString( MilitaryFormation.GetLogisticsCenterSupplyAvailability )] [MilitaryFormation.GetLogisticsCenterSupplyAvailability|%0]#! kvůli [Concept('concept_shortage','$concept_input_goods_shortages$')]" # todo: NEW TRANSLATION
+ SUPPLY_CURRENT_AMOUNT_NORMAL: "[MilitaryFormation.GetCurrentSupplyAmount|Dv]" # todo: NEW TRANSLATION
+ SUPPLY_CURRENT_AMOUNT_LOW: "#n [MilitaryFormation.GetCurrentSupplyAmount|D]#!" # todo: NEW TRANSLATION
  FRIENDLY_PORT_SUPPLY_DISCOUNT_DESC: "#p -[MilitaryFormation.GetFriendlyPortDiscount|0+%]#! z blízkého přátelského přístavu" # todo: NEW TRANSLATION
  SHIP_WAGE_COST_ENTRY: "@money!#v $VAL|0-$#! z #v $NUM_CREW$#! $concept_ship_crew_short$ z [BUILDING.GetName] v [STATE.GetName]" # todo: NEW TRANSLATION
+ SHIP_WAGE_COST_PREDICTED_ENTRY: "@money!#v $VAL|0-$#! z #v $NUM_CREW$#! $concept_ship_crew_short$ z $building_naval_administration$ v [STATE.GetName]" # todo: NEW TRANSLATION
  MILITARY_FORMATION_SHIPS_HEADER: "Lodě [MilitaryFormation.GetUnitIcon] $FLEET_TOTAL_NUMBER_OF_SHIPS$" # todo: NEW TRANSLATION
  FLEET_TRANSPORTED_ARMIES_HEADER: "Přepravované [Concept('concept_army','$concept_armies$')]" # todo: NEW TRANSLATION
  FLEET_EMBARKED_ARMIES_HEADER: "Naložené [Concept('concept_army','$concept_armies$')]" # todo: NEW TRANSLATION
@@ -269,6 +297,15 @@
  FLEET_NO_EMBARKED_ARMIES: "Žádné naložené armády" # todo: NEW TRANSLATION
  FLEET_PILFERED_GOODS_HEADER: "[Concept('concept_piracy','$concept_pirated$')] [Concept('concept_good','$concept_goods$')]" # todo: NEW TRANSLATION
  FLEET_NO_PILFERED_GOODS: "Žádné $FLEET_PILFERED_GOODS_HEADER$" # todo: NEW TRANSLATION
+ FLEET_SUPPLY_RAID_HEADER: "Nepřátelské [Concept('concept_supply_ship', '$concept_supply_ships$')]" # todo: NEW TRANSLATION
+ FLEET_SUPPLY_RAID_SUMMARY: "@supply! #tooltippable #tooltip:[GetRawTextTooltipTag(MilitaryFormation.GetSupplyRaidTargetsBreakdown)] #v [MilitaryFormation.GetSupplyShipsRaidableInArea]#!#!#! $concept_supply_ships$ projíždějících\naž @supply! #v [MilitaryFormation.GetMaxSupplyShipsDestroyablePerBattle]#! může být potopeno v rámci jednoho [Concept('concept_naval_battle', '$concept_naval_battle$')]" # todo: NEW TRANSLATION
+ FLEET_NO_SUPPLY_RAID_TARGETS: "Žádné nepřátelské $concept_supply_ships$ neprojíždějí nájezdový [Concept('concept_sea_node', '$concept_sea_regions$')]" # todo: NEW TRANSLATION
+ FLEET_SUPPLY_PROTECT_HEADER: "Vaše [Concept('concept_supply_ship', '$concept_supply_ships$')]" # todo: NEW TRANSLATION
+ FLEET_SUPPLY_PROTECT_SUMMARY: "@supply! #v [MilitaryFormation.GetOwnSupplyShipsInArea]#! $concept_supply_ships$ projíždějících\naž @supply! #v [MilitaryFormation.GetMaxSupplyShipsProtectablePerBattle]#! lze ochránit v rámci jednoho [Concept('concept_naval_battle', '$concept_naval_battle$')]" # todo: NEW TRANSLATION
+ FLEET_NO_OWN_SUPPLY_SHIPS: "Žádné $concept_supply_ships$ neprojíždějí chráněný [Concept('concept_sea_node', '$concept_sea_regions$')]" # todo: NEW TRANSLATION
+ FLEET_PORT_BOMBARDMENT_HEADER: "[MilitaryFormation.GetNavalMission.GetName] [Concept('concept_devastation', '$concept_devastation$')]" # todo: NEW TRANSLATION
+ FLEET_PORT_BOMBARDMENT_DEVASTATION: "#v [MilitaryFormation.GetDailyDevastationFromBombardment|-2]#! denně" # todo: NEW TRANSLATION
+ FLEET_NO_PORT_BOMBARDMENT_TARGETS: "Žádné $concept_states$ neutrpí [concept_devastation] z bombardovaného [Concept('concept_sea_node', '$concept_sea_regions$')]" # todo: NEW TRANSLATION
  FLEET_SORT_UNITS: "Jednotky" # todo: NEW TRANSLATION
  FLEET_TOTAL_NUMBER_OF_SHIPS: "#v [ShipList.GetNumShips]#![ConcatIfNeitherEmpty('+', AddLocalizationIf(ShipList.HasNewShipConstructionQueued, 'FLEET_SHIP_UNDER_CONSTRUCTION_NUMBER'))]/[SelectLocalization(LessThan_int32(MilitaryFormation.GetCommandLimitRaw, MilitaryFormation.GetNumCombatUnits), 'INSUFFICIENT_COMMAND_LIMIT', 'SUFFICIENT_COMMAND_LIMIT')]" # todo: NEW TRANSLATION
  FLEET_SHIP_UNDER_CONSTRUCTION_NUMBER: "#b [ShipList.GetNumNewShipsUnderConstruction]#!" # todo: NEW TRANSLATION

@@ -102,6 +102,9 @@
  nihilism.13.f: "„Co lze rozbít, musí být rozbito. To, co úder vydrží, je hodno přežít; co se rozpadne na kusy, je bezcenné. V každém případě udeřte napravo i nalevo — nic zlého z toho nevzejde.“\n\n—Dmitrij Pisarev"
  nihilism.13.a: "[SCOPE.gsInterestGroup('devout_ig').GetName] zaniknou, neboť stojí proti samotné realitě!"
  nihilism.13.b: "Tato cesta je odsouzena k nezdaru!"
+ all_non_tu_nihilists_become_anarchist_tt: "Všichni zbývající [GetIdeology('ideology_nihilist').GetName] [Concept('concept_character', '$concept_characters$')] přejdou na [GetIdeology('ideology_anarchist').GetName] [concept_ideology]" # todo: NEW TRANSLATION
+ all_tu_nihilists_become_communist_tt: "Všichni [GetInterestGroupVariant('ig_trade_unions',GetPlayer).GetName] [GetIdeology('ideology_nihilist').GetName] [Concept('concept_character', '$concept_characters$')] přejdou na [GetIdeology('ideology_communist').GetName] [concept_ideology]" # todo: NEW TRANSLATION
+ all_nihilists_become_radical_tt: "Všichni [GetIdeology('ideology_nihilist').GetName] [Concept('concept_character', '$concept_characters$')] přejdou na [GetIdeology('ideology_radical').GetName] [concept_ideology]" # todo: NEW TRANSLATION
  modifier_persecuted_general: "Pronásledovaný generál"
  modifier_uncertain_loyalties_country: "Nejistá loajalita armády"
  modifier_conflicted_about_coup: "Rozpolcená loajalita"
@@ -1764,6 +1767,7 @@
  je_government_petition_status: "[SCOPE.gsInterestGroup('government_petition_ig').GetName] žádají o přijetí zákona [SCOPE.sLaw('government_petition_law').GetName]."
  je_government_petition_reason: "Jako loajální součást vlády [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] podávají [SCOPE.gsInterestGroup('government_petition_ig').GetName] petici za přijetí zákona [SCOPE.sLaw('government_petition_law').GetName].\n\nPokud bude zákon [SCOPE.sLaw('government_petition_law').GetName] úspěšně přijat, [SCOPE.gsInterestGroup('government_petition_ig').GetName] budou velmi spokojeni. Pokud však bude petice ignorována, země bude čelit postihům, až po odchod [SCOPE.gsInterestGroup('government_petition_ig').GetName] z vlády."
  modifier_failed_to_meet_petition: "Neúspěšná petice"
+ modifier_successfully_met_petition: "Úspěšná petice" # todo: NEW TRANSLATION
  modifier_successfully_met_petition_legitimacy: "Reagující vláda"
  modifier_expelled_from_government_petition: "Vyloučeni z vlády"
  modifier_failed_to_meet_petition_legitimacy: "Nereagující vláda"

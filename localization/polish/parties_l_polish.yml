@@ -45,6 +45,8 @@
  party_labour_party: "Dělnická strana"
  party_hindu_mahasabha: "Všeindické hinduistické velké shromáždění"
  circle_trigon_party: "Strana Circle Trigon"
+ party_kokumin_domei: "Národní aliance občanů" # todo: NEW TRANSLATION
+ TAIKUNATE_TAIKUN_PARTY_NAME: "Onwahā" # todo: NEW TRANSLATION
  revolutionary_party_name: "Revoluční koalice"
  party_fatherland_front: "Vlastenecká fronta"
  integralist_action_party: "Strana integralistické akce"
@@ -73,6 +75,7 @@
  party_national_union_of_greece: "Národní unie Řecka"
  integralist_action: "Brazilská integralistická akce"
  national_syndicalist_movement: "Národně syndikalistická strana"
+ party_taikunate_fascist: "Frakce Sakura" # todo: NEW TRANSLATION
  party_moderate_party: "Umírněná strana"
  party_regenerator_party: "Regenerátorská strana"
  party_hoyre: "Høyre"
@@ -105,6 +108,14 @@
  party_republican_union_party: "Republikánská unie"
  party_national_republican_party: "Národní republikánská strana"
  party_nationalist_republican_party: "Nacionalistická republikánská strana"
+ party_kokumin_kyokai: "Národní sdružení" # todo: NEW TRANSLATION
+ party_seiyukai: "Sdružení ústavní vlády" # todo: NEW TRANSLATION
+ party_taikunate_conservative: "[GetScriptedGui('taikunate_conservative_party_name_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)] Frakce" # todo: NEW TRANSLATION
+ TAIKUNATE_CONSERVATIVE_PARTY_DOMAIN_NAME: "[THIS.GetInterestGroup.GetLeader.GetCustom('japan_domain_by_character')]" # todo: NEW TRANSLATION
+ TAIKUNATE_CONSERVATIVE_PARTY_LEADER_NAME: "[THIS.GetInterestGroup.GetLeader.GetLastNameNoFormatting]" # todo: NEW TRANSLATION
+ TAIKUNATE_CONSERVATIVE_PARTY_STATE_NAME: "[THIS.GetInterestGroup.GetLeader.GetHomeState.GetCustom('japan_state_get_wood_hub_name_absolute')]" # todo: NEW TRANSLATION
+ TAIKUNATE_CONSERVATIVE_PARTY_NAME_FALLBACK: "Edo" # todo: NEW TRANSLATION
+ party_ezo_conservative: "Frakce Onwahā" # todo: NEW TRANSLATION
  party_historic_party: "Historická strana"
  party_free_minded_venstre: "Svobodomyslná Venstre"
  party_old_lantmanna_party: "Stará strana Lantmanna"
@@ -118,6 +129,16 @@
  party_liberal_regenerator_party: "Liberální regenerátorská strana"
  party_vintista_party: "Vintistická strana"
  party_independent_party: "Nezávislá strana"
+ party_constitutional_reform_party: "Strana ústavní reformy"
+ party_shimpoto: "Pokroková strana" # todo: NEW TRANSLATION
+ party_seiyuhonto: "Ortodoxní strana ústavní vlády" # todo: NEW TRANSLATION
+ party_jitsugyo_doshikai: "Sdružení podnikatelů" # todo: NEW TRANSLATION
+ party_taikunate_free_trade: "[GetScriptedGui('taikunate_free_trade_party_name_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)] Frakce" # todo: NEW TRANSLATION
+ TAIKUNATE_FREE_TRADE_PARTY_DOMAIN_NAME: "[THIS.GetInterestGroup.GetLeader.GetCustom('japan_domain_by_character')]" # todo: NEW TRANSLATION
+ TAIKUNATE_FREE_TRADE_PARTY_LEADER_NAME: "[THIS.GetInterestGroup.GetLeader.GetLastNameNoFormatting]" # todo: NEW TRANSLATION
+ TAIKUNATE_FREE_TRADE_PARTY_STATE_NAME: "[THIS.GetInterestGroup.GetLeader.GetHomeState.GetCustom('japan_state_get_port_hub_name_absolute')]" # todo: NEW TRANSLATION
+ TAIKUNATE_FREE_TRADE_PARTY_NAME_FALLBACK: "Ōsaka" # todo: NEW TRANSLATION
+ party_ezo_free_trade: "Frakce Hakodate" # todo: NEW TRANSLATION
  party_progressive_party: "Progresivní strana"
  party_liberal_democrats: "Liberální demokraté"
  party_venstre: "Venstre"
@@ -127,7 +148,6 @@
  party_progress_party: "Strana pokroku"
  party_national_liberal_party: "Národně liberální strana"
  party_empire_reform_association: "Spolek pro reformu říše"
- party_constitutional_reform_party: "Strana ústavní reformy"
  party_society_for_progress: "Společnost pro pokrok"
  party_freedom_and_accord_party: "Strana svobody a shody"
  party_blue_party: "Modrá strana"
@@ -146,6 +166,15 @@
  party_evolutionist_party: "Evolucionistická strana"
  party_month_of_revolution: "[SCOPE.GetRootScope.GetCountry.GetCustom('getPortugalRevolutionMonthPartyName')] strana"
  party_septemberist_party: "Septemberistická strana"
+ party_aikoku_koto: "Vlastenecká lidová strana" # todo: NEW TRANSLATION
+ party_kenseito: "Ústavní strana" # todo: NEW TRANSLATION
+ party_minseito: "Ústavní demokratická strana" # todo: NEW TRANSLATION
+ party_taikunate_liberal: "[GetScriptedGui('taikunate_liberal_party_name_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)] Frakce" # todo: NEW TRANSLATION
+ TAIKUNATE_LIBERAL_PARTY_DOMAIN_NAME: "[THIS.GetInterestGroup.GetLeader.GetCustom('japan_domain_by_character')]" # todo: NEW TRANSLATION
+ TAIKUNATE_LIBERAL_PARTY_LEADER_NAME: "[THIS.GetInterestGroup.GetLeader.GetLastNameNoFormatting]" # todo: NEW TRANSLATION
+ TAIKUNATE_LIBERAL_PARTY_STATE_NAME: "[THIS.GetInterestGroup.GetLeader.GetHomeState.GetCustom('japan_state_get_city_hub_name_absolute')]" # todo: NEW TRANSLATION
+ TAIKUNATE_LIBERAL_PARTY_NAME_FALLBACK: "Satsuma" # todo: NEW TRANSLATION
+ party_ezo_liberal: "Frakce Sapporo" # todo: NEW TRANSLATION
  party_patriotic_union: "Vlastenecká unie"
  party_national_peoples_party: "Národní lidová strana"
  party_true_peoples_party: "Pravá lidová strana"
@@ -156,6 +185,14 @@
  party_russian_assembly: "Ruské shromáždění"
  party_russian_all_military_union: "Ruský vševojenský svaz"
  party_union_of_rights: "Unie práv"
+ party_dai_nippon_kyokai: "Sdružení Velkého Japonska" # todo: NEW TRANSLATION
+ party_teikokuto: "Císařská strana" # todo: NEW TRANSLATION
+ party_taikunate_military: "[GetScriptedGui('taikunate_military_party_name_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)] Frakce" # todo: NEW TRANSLATION
+ TAIKUNATE_MILITARY_PARTY_DOMAIN_NAME: "[THIS.GetInterestGroup.GetLeader.GetCustom('japan_domain_by_character')]" # todo: NEW TRANSLATION
+ TAIKUNATE_MILITARY_PARTY_LEADER_NAME: "[THIS.GetInterestGroup.GetLeader.GetLastNameNoFormatting]" # todo: NEW TRANSLATION
+ TAIKUNATE_MILITARY_PARTY_STATE_NAME: "[THIS.GetInterestGroup.GetLeader.GetHomeState.GetCustom('japan_state_get_mine_hub_name_absolute')]" # todo: NEW TRANSLATION
+ TAIKUNATE_MILITARY_PARTY_NAME_FALLBACK: "Sendai" # todo: NEW TRANSLATION
+ party_ezo_military: "Frakce Kameda" # todo: NEW TRANSLATION
  party_democratic_progressive_party: "Demokratická progresivní strana"
  party_progressive_dissidence: "Progresivní disidence"
  party_chartists: "Chartistická strana"
@@ -178,6 +215,12 @@
  party_farroupilha: "Strana Farroupilha"
  party_swaraj_party: "Svarádž"
  party_reformist_party: "Reformistická strana"
+ party_taikunate_radical: "Frakce Fukushima" # todo: NEW TRANSLATION
+ party_toyo_jiyuto: "Východní liberální strana" # todo: NEW TRANSLATION
+ party_yushinkai: "Společnost pro znovuzrození" # todo: NEW TRANSLATION
+ party_rikken_kokuminto: "Ústavní národní strana" # todo: NEW TRANSLATION
+ party_kakushinto: "Reformní strana" # todo: NEW TRANSLATION
+ party_ezo_radical: "Vlastenecká lidová strana" # todo: NEW TRANSLATION
  party_portuguese_catholic_centre: "Portugalské katolické centrum"
  party_catholic_right: "Katolická pravice"
  party_moderate_venstre: "Umírněná Venstre"
@@ -192,6 +235,8 @@
  party_conservative_catholics: "Konzervativní katolíci"
  party_traditionalist_communion: "Tradicionalistické společenství"
  party_nationalist_party: "Nacionalistická strana"
+ party_taikunate_religious: "Frakce Hiei" # todo: NEW TRANSLATION
+ party_ezo_religious: "Frakce Zenko" # todo: NEW TRANSLATION
  party_psoe: "PSOE"
  party_portuguese_socialist_party: "Portugalská socialistická strana"
  party_ftsf: "FTSF"
@@ -215,6 +260,10 @@
  party_seke: "SEKE"
  party_anl: "Aliance národního osvobození"
  party_inc: "Národní kongres"
+ party_shakai_to: "Rikšové sdružení" # todo: NEW TRANSLATION
+ party_rodonominto: "Dělnicko-rolnická strana" # todo: NEW TRANSLATION
+ party_shakai_taishuto: "Strana socialistických mas" # todo: NEW TRANSLATION
+ party_ezo_social_democrat: "Lidové sdružení" # todo: NEW TRANSLATION
  party_british_socialist_party: "Britská socialistická strana"
  party_pcf: "PCF"
  party_kps: "KPS"
@@ -249,6 +298,15 @@
  party_national_grange: "Národní grange"
  party_agrarian_and_farmer_party: "Agrární a farmářská strana"
  party_conservative_republican_party: "Konzervativní republikánská strana"
+ party_toyo_shakaito: "Východní socialistická strana" # todo: NEW TRANSLATION
+ party_nominrodoto: "Strana rolníků a dělníků" # todo: NEW TRANSLATION
+ party_nihon_nominto: "Japonská rolnická strana" # todo: NEW TRANSLATION
+ party_taikunate_agrarian: "[GetScriptedGui('taikunate_agrarian_party_name_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)] Frakce" # todo: NEW TRANSLATION
+ TAIKUNATE_AGRARIAN_PARTY_DOMAIN_NAME: "[THIS.GetInterestGroup.GetLeader.GetCustom('japan_domain_by_character')]" # todo: NEW TRANSLATION
+ TAIKUNATE_AGRARIAN_PARTY_LEADER_NAME: "[THIS.GetInterestGroup.GetLeader.GetLastNameNoFormatting]" # todo: NEW TRANSLATION
+ TAIKUNATE_AGRARIAN_PARTY_STATE_NAME: "[THIS.GetInterestGroup.GetLeader.GetHomeState.GetCustom('japan_state_get_farm_hub_name_absolute')]" # todo: NEW TRANSLATION
+ TAIKUNATE_AGRARIAN_PARTY_NAME_FALLBACK: "Kaga" # todo: NEW TRANSLATION
+ party_ezo_agrarian: "Frakce Asahikawa" # todo: NEW TRANSLATION
  party_young_socialists: "Mladí socialisté"
  party_cnt: "CNT"
  party_socialist_league: "Socialistická liga"
@@ -383,8 +441,7 @@
  from_archetype_party: "Přirozený člen strany"
  from_influential_supporting_member: "Vlivná podpůrná skupina"
  from_two_prior_members: "Dva další členové strany"
- from_three_prior_members: "Tři další členové strany"
- from_more_than_three_prior_members: "Více než tři další členové strany"
+ from_three_or_more_prior_members: "Tři nebo více dalších členů strany" # todo: NEW TRANSLATION
  from_authoritarian: "Ideologie autoritářského vůdce"
  from_protectionist_leader: "Ideologie protekcionistického vůdce"
  from_french_monarchist_rival: "Silní monarchističtí rivalové"
@@ -395,3 +452,5 @@
  from_jacksonian_democrat: "Z jacksonovského demokrata"
  from_traditionalist_monarchism: "Z tradicionalistického monarchismu"
  from_baldomero_espartero: "Od Baldomera Espartera"
+ from_three_prior_members: "Tři další členové strany"
+ from_more_than_three_prior_members: "Více než tři další členové strany"

@@ -25,6 +25,7 @@
  ruler_is_imperious_tt: "[concept_ruler] má rys [GetCharacterTrait('imperious').GetName]"
  tokugawa_in_government_tt: "členové klanu #b Tokugawa#! jsou [concept_in_government]"
  tokugawa_not_in_government_tt: "žádní členové klanu #b Tokugawa#! nejsou [concept_in_government]"
+ sonnojoi_opening_of_japan_tt: "[PoliticalMovement.GetCountry.MakeScope.Var('years_since_opening_of_japan_var').GetValue|v0] let bez vypuzování cizinců ([GetLawType('law_closed_borders').GetName])" # todo: NEW TRANSLATION
  modifier_meiji_interregnum: "Bakumacu"
  modifier_retreat_to_osaka: "Ústup do Ósaky"
  modifier_taikun_proposal: "Taikunát"
@@ -712,3 +713,35 @@
  jap_upgrade_the_shinsengumi_desc: "$law_shinsengumi$ se osvědčili při potlačování vzpurných aktivit v hlavním městě. S nedávnými zlepšeními v byrokratickém aparátu může jednotka nyní sloužit jako vzor pro celonárodní japonskou sílu podobně oddanou udržení pořádku." # todo: NEW TRANSLATION
  modifier_expanded_shinsengumi_positive: "Reformované Shinsengumi" # todo: NEW TRANSLATION
  modifier_expanded_shinsengumi_negative: "$modifier_expanded_shinsengumi_positive$" # todo: NEW TRANSLATION
+ ezo_republic.1.t: "Vláda Ezo" # todo: NEW TRANSLATION
+ ezo_republic.1.d: "[SCOPE.sCharacter('tokugawa_exile_leader_scope').GetFullName], bývalý [SCOPE.sCharacter('tokugawa_exile_leader_scope').GetCustom('getEzoCharacterTitle')] šógunátu, uprchl na ostrov [SCOPE.sState('ezo_state').GetName] spolu s několika tisíci věrných Tokugawa. [SCOPE.sCharacter('tokugawa_exile_leader_scope').GetSheHe|U] má v úmyslu postavit poslední odpor v pevnosti Goryōkaku, společně s [SCOPE.sCharacter('tokugawa_exile_leader_scope').GetHerHis] zahraničními poradci." # todo: NEW TRANSLATION
+ ezo_republic.1.d_1: "[SCOPE.sCharacter('tokugawa_exile_leader_scope').GetFullName], bývalý [SCOPE.sCharacter('tokugawa_exile_leader_scope').GetCustom('getEzoCharacterTitle')] šógunátu, uprchl na ostrov [SCOPE.sState('ezo_state').GetName] spolu s několika tisíci věrných Tokugawa. [SCOPE.sCharacter('tokugawa_exile_leader_scope').GetSheHe|U] požádal/a vládu [ROOT.GetCountry.GetCapital.GetCityHubName] o ukončení války a o možnost přispět úsilím Tokugawů k rozvoji ostrova." # todo: NEW TRANSLATION
+ ezo_republic.1.f: "Dalekohled Tetsutaróa zamířil na severní obzor. Vítr byl tvrdý, nasycený solí a mrazivou pohlazí, a každý stupeň víc na západ mu připadal jako suchá břitva přes tvář. Strážní věž, improvizovaná konstrukce, jejíž dřevo stále vonělo svěže, nabízela jen malou ochranu.\n\nTam. Na obzoru něco nebylo v pořádku. Zastavil se a mžoural. Tam, snad #italic ri#! z břehu, spatřil dva stěžně, polozahalené v oparu. Dále za nimi stoupaly nitkovité sloupce dýmu k nebi." # todo: NEW TRANSLATION
+ ezo_republic.1.f_1: ""Muži, kteří mají srdce samurajů, nemohou se stát zemědělci nebo obchodníky, takže se zdálo, že nám nezbývá nic jiného než hladovět. Avšak s ohledem na neobdělávaný stav ostrova Ezo, domnívali jsme se, že je lepší se tam přesídlit, aby i pod výdržením všech těžkostí mohli jsme urovnat strmé hory, obdělávat pustiny a zaměstnat dosud neužitečné lidi užitečnou prací, a tak odvděčit jednu miliontinu vaší laskavosti.\n\nV souladu s tím jsme dříve s pláčem prosili, abychom mohli získati takovéto udělení; když nám bylo odepřeno, zdálo se, že tři sta tisíc našich příbuzných musí jistě zemřít hlady. Z tohoto důvodu jsme ve desátém měsíci loňského roku vypluli z zálivu Shinagawa a dorazili sem, abychom se navzájem podporovali v obdělávání této oblasti a byli stráží severní brány.“\n\n—Petice Enomoto Takeakiho, 1868" # todo: NEW TRANSLATION
+ ezo_republic.1.a: "Zrádci nesmí být odměňováni za své zločiny." # todo: NEW TRANSLATION
+ ezo_republic.1.a_1: "Japonsko nebude rozděleno." # todo: NEW TRANSLATION
+ ezo_republic.1.b: "Pokud by to znamenalo rychlejší usmíření, je to spravedlivá cena." # todo: NEW TRANSLATION
+ ezo_republic.1.c: "Jejich iniciativa stojí za bližší sledování." # todo: NEW TRANSLATION
+ ezo_republic.2.t: "Hakodatská expedice" # todo: NEW TRANSLATION
+ ezo_republic.2.d: "Předvídajíc nevyhnutelný kolaps moci [ROOT.GetCountry.GetRuler.GetLastName], [SCOPE.sCharacter('tokugawa_exile_leader_scope').GetFullName] shromáždil sílu několika tisíc loajálních vojáků a pomocníků, aby se vylodil na ostrově [GetGeographicRegion('geographic_region_ezochi').GetName]. [SCOPE.sCharacter('tokugawa_exile_leader_scope').GetSheHe|U] stojí před rozhodnutím, zda pokračovat ve válce z Hakodate, nebo požádat vládu [SCOPE.sCountry('imperial_government_scope').GetCapital.GetCityHubName] o urovnání." # todo: NEW TRANSLATION
+ ezo_republic.2.f: ""Setkáme se s obtížemi; ale jsme odhodláni je překonat — silou zbraní, pokud jiné prostředky selžou. Odpuzujeme válku, a pokud nyní jsme nuceni bojovat, bojujeme pouze proto, abychom zajistili budoucí mír naší země. Naším cílem je odstranit stopy slabosti, lhostejnosti a rozmařilosti, které byly v naší zemi příliš zřetelné v posledních několika stoletích; a tím, že dosáhneme pokroku v civilizaci, učiníme náš národ snaživým tak, aby byl hodným spojencem cizích národů v umění, vědách a zbraních.\n\nTo je práce, kterou máme vykonat, a tuto práci vykonáme! Pozor! Všichni vrchní důstojníci, a vy všichni, kteří nyní žijete v ústraní, věnujte pozornost tomuto našemu Manifestu.“\n\n—Manifest šógunátního námořnictva v Edo, 1868" # todo: NEW TRANSLATION
+ ezo_republic.2.a: "Pošlete žádost. Samurajové setrvají na severu." # todo: NEW TRANSLATION
+ ezo_republic.2.b: "Žádný kompromis. Naše poslední bitva bude v Goryōkaku." # todo: NEW TRANSLATION
+ ezo_republic.2.c: "Zastavte v Sendai. Nebudeme se dál stahovat." # todo: NEW TRANSLATION
+ settle_tokugawa_here_after_the_war_tt: "@information! Po našem vítězství v [concept_civil_war] se [SCOPE.sCountry('ezo_scope').GetName] stane dědičnou [GetLawType('law_colonial_administration').GetName] pod klanem #b Tokugawa#!" # todo: NEW TRANSLATION
+ modifier_last_stand_goryokaku: "Poslední bitva" # todo: NEW TRANSLATION
+ shogunate_army: "Bakufu Rikugan" # todo: NEW TRANSLATION
+ chance_of_subjugation_tt: "Pokud [SCOPE.sCountry('imperial_government_scope').GetName] přijme, stane se naší [concept_overlord]" # todo: NEW TRANSLATION
+ tokugawa_settle_here_tt: "@information! Po [SCOPE.sCountry('imperial_government_scope').GetAdjective] vítězství v [concept_civil_war] se #v Ezo Government#! stane dědičnou [GetLawType('law_colonial_administration').GetName] pod klanem #b Tokugawa#!" # todo: NEW TRANSLATION
+ establish_ezo_republic_tt: "Ostrov [SCOPE.sCountry('ezo_scope').GetName] bude organizován jako #v Ezo Government#! pod vedením [SCOPE.sCharacter('tokugawa_exile_leader_scope').GetFullName]" # todo: NEW TRANSLATION
+ navy_defects_to_ezo_tt: "Naše [concept_fleet] bude převedena do [SCOPE.sCountry('ezo_scope').GetName]" # todo: NEW TRANSLATION
+ no_retreat_to_ezo_tt: "[SCOPE.sCharacter('tokugawa_exile_leader_scope').GetFullName] zůstane v [ROOT.GetCountry.GetName]" # todo: NEW TRANSLATION
+ generic_officer_title: "velitel" # todo: NEW TRANSLATION
+ notification_ezo_tokugawa_heir_arrives_name: "[SCOPE.sCharacter('shogun_scope').GetFullName] přijíždí do Ezo" # todo: NEW TRANSLATION
+ notification_ezo_tokugawa_heir_arrives_desc: "Vláda [SCOPE.sCountry('japan_scope').GetAdjective] povolila [SCOPE.sCharacter('shogun_scope').GetFullName], dědice klanu [SCOPE.sCharacter('shogun_scope').GetLastNameNoFormatting], usadit se v Ezo jako náš nový $RULER_TITLE_SOSAI$." # todo: NEW TRANSLATION
+ notification_ezo_tokugawa_heir_arrives_tooltip: "#header $notification_ezo_tokugawa_heir_arrives_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ezo_tokugawa_heir_arrives_desc$" # todo: NEW TRANSLATION
+ notification_ezo_japan_accepts_terms_name: "Vláda [SCOPE.sCountry('imperial_government_scope').GetAdjective] přijala petici" # todo: NEW TRANSLATION
+ notification_ezo_japan_accepts_terms_desc: "Vláda [SCOPE.sCountry('imperial_government_scope').GetName] přijala petici [SCOPE.sCharacter('tokugawa_exile_leader_scope').GetFullName], v níž žádal o povolení usadit bývalé tokugawské vazaly na [SCOPE.sState('ezo_state').GetName], výměnou za přísahu věrnosti od [SCOPE.sCharacter('tokugawa_exile_leader_scope').GetHerHis] následovníků." # todo: NEW TRANSLATION
+ notification_ezo_japan_accepts_terms_tooltip: "#header $notification_ezo_japan_accepts_terms_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ezo_japan_accepts_terms_desc$" # todo: NEW TRANSLATION
+ modifier_taikun: "Taikun Japonska" # todo: NEW TRANSLATION
+ absolute_HUB_NAME_STATE_KYOTO_mine_japanese: "Kameoka" # todo: NEW TRANSLATION
