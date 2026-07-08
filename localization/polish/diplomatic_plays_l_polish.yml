@@ -134,7 +134,6 @@
  WARGOAL_COUNTRY_HAS_NOT_LAW: " [COUNTRY.GetName] #b nezavedlo#! [LAW_TYPE.GetName]"
  WARGOAL_FORCE_NATIONALIZATION_INVESTMENT_RIGHTS: "[TARGET_COUNTRY.GetName] nesmí mít [Concept('concept_foreign_investment_rights','práva na zahraniční investice')] v [COUNTRY.GetAltAdjective('L')]"
  WARGOAL_FORCE_NATIONALIZATION_NOTHING: "[TARGET_COUNTRY.GetName] nevlastní žádné [Concept('concept_building', 'budovy')] v [COUNTRY.GetAltAdjective('L')]"
- WARGOAL_STAKEHOLDER_DOES_NOT_EXIST: " Tento [concept_war_goal|l] nemá platného zainteresovaného!"
  WARGOAL_TARGET_DOES_NOT_OWN_STATE: " #variable $COUNTRY_NAME$#! nevlastní #variable $STATE_NAME$#!"
  WARGOAL_NEEDS_INTEREST_MARKER_IN_REGION: "#variable $COUNTRY_NAME$#! má [concept_interest|l] v #variable $REGION_NAME$#!"
  OTHER_WARGOAL_ON_SAME_TARGET: " #variable [COUNTRY.GetName]#! má vzájemně vylučující [concept_war_goal] namířený na #variable [TARGET.GetName]#!"
@@ -362,6 +361,9 @@
  dp_unify_andes_tooltip: "#header Zahajte $dp_unify_andes$ [concept_diplomatic_play|l]#!\n$TOOLTIP_DELIMITER$\n$dp_unify_andes_desc$"
  dp_unify_andes_desc: "Nastavuje iniciující [concept_war_goal|l] na anexi všech menších andských zemí."
  FND_tt: "[SCOPE.sCountry('target_country').GetName] může vytvořit Federaci And"
+ dp_unify_yugoslavia: "Sjednotit Jugoslávii" # todo: NEW TRANSLATION
+ dp_unify_yugoslavia_tooltip: "#header Zahájit $dp_unify_yugoslavia$ [concept_diplomatic_play]#!\n$TOOLTIP_DELIMITER$\n$dp_unify_yugoslavia_desc$" # todo: NEW TRANSLATION
+ dp_unify_yugoslavia_desc: "Nastaví zahajovací [concept_war_goal] tak, aby anektoval všechny menší jugoslávské státy." # todo: NEW TRANSLATION
  dp_southern_secession: "Jihozápadní odtržení"
  dp_southern_secession_tooltip: "#header Zahajte $dp_southern_secession$ [concept_diplomatic_play|l]#!\n$TOOLTIP_DELIMITER$\n$dp_southern_secession_desc$"
  dp_southern_secession_desc: "Nastavuje iniciující [concept_war_goal|l] na rozdrtění jižního [Concept('concept_secession','odtržení')] a donucení je k vrácení všech [Concept('concept_state', 'států')], ze kterých se odtrhli."
@@ -390,9 +392,34 @@
  dp_give_foreign_investment_rights: "$war_goal_foreign_investment_rights_type_name$"
  dp_give_foreign_investment_rights_tooltip: "#header Zahajte $dp_give_foreign_investment_rights$ [concept_diplomatic_play|l]#!\n$TOOLTIP_DELIMITER$\n$dp_give_foreign_investment_rights_desc$"
  dp_give_foreign_investment_rights_desc: "Nastavuje iniciující [concept_war_goal|l] na donucení cílové [Concept('concept_country','země')] udělit vám [Concept('concept_foreign_investment_rights','práva na investice')]. Pokud mají [GetLawType('law_isolationism').GetName] [concept_law|l], musí místo toho schválit [GetLawType('law_free_trade').GetName]."
+ dp_demand_strait_access: "$war_goal_demand_strait_access_type_name$" # todo: NEW TRANSLATION
+ dp_demand_strait_access_tooltip: "#header Zahájit $dp_demand_strait_access$ [concept_diplomatic_play]#!\n$TOOLTIP_DELIMITER$\n$dp_demand_strait_access_desc$" # todo: NEW TRANSLATION
+ dp_demand_strait_access_desc: "Nastaví zahajovací [concept_war_goal], aby donutil cílovou [concept_country] udělit vám vojenský přístup přes jakýkoli [concept_strait], který ovládá." # todo: NEW TRANSLATION
+ dp_demand_strait_access_already_has_access_tt: "Musí #b ne#! mít již přístup přes [concept_strait] cílové [concept_country]" # todo: NEW TRANSLATION
+ dp_demand_toll_exemption_already_exempt_tt: "Musí #b ne#! již být osvobozen od [concept_tolls] na [concept_strait] cílové [concept_country]" # todo: NEW TRANSLATION
+ dp_demand_no_tolls_already_bound_tt: "Cílová [concept_country] musí stále mít možnost účtovat [concept_tolls] na [concept_strait], které ovládá" # todo: NEW TRANSLATION
+ dp_demand_no_strait_closure_already_bound_tt: "Cílová [concept_country] musí stále mít možnost uzavírat [concept_strait], které ovládá" # todo: NEW TRANSLATION
+ dp_demand_toll_exemption: "$war_goal_demand_toll_exemption_type_name$" # todo: NEW TRANSLATION
+ dp_demand_toll_exemption_tooltip: "#header Zahájit $dp_demand_toll_exemption$ [concept_diplomatic_play]#!\n$TOOLTIP_DELIMITER$\n$dp_demand_toll_exemption_desc$" # todo: NEW TRANSLATION
+ dp_demand_toll_exemption_desc: "Nastaví zahajovací [concept_war_goal], aby donutil cílovou [concept_country] osvobodit vás od [concept_tolls], které vybírá na jakémkoli [concept_strait], které ovládá." # todo: NEW TRANSLATION
+ dp_demand_no_tolls: "$war_goal_demand_no_tolls_type_name$" # todo: NEW TRANSLATION
+ dp_demand_no_tolls_tooltip: "#header Zahájit $dp_demand_no_tolls$ [concept_diplomatic_play]#!\n$TOOLTIP_DELIMITER$\n$dp_demand_no_tolls_desc$" # todo: NEW TRANSLATION
+ dp_demand_no_tolls_desc: "Nastaví zahajovací [concept_war_goal], aby donutil cílovou [concept_country] přestat vybírat [concept_tolls] na jakémkoli [concept_strait], které ovládá." # todo: NEW TRANSLATION
+ dp_demand_no_strait_closure: "$war_goal_demand_no_strait_closure_type_name$" # todo: NEW TRANSLATION
+ dp_demand_no_strait_closure_tooltip: "#header Zahájit $dp_demand_no_strait_closure$ [concept_diplomatic_play]#!\n$TOOLTIP_DELIMITER$\n$dp_demand_no_strait_closure_desc$" # todo: NEW TRANSLATION
+ dp_demand_no_strait_closure_desc: "Nastaví zahajovací [concept_war_goal], aby donutil cílovou [concept_country] udržet otevřené jakékoli [concept_strait], které ovládá." # todo: NEW TRANSLATION
  dp_sepoy_mutiny: "Sepoyské povstání"
  dp_sepoy_mutiny_tooltip: "#header Zahajte $dp_sepoy_mutiny$ [concept_diplomatic_play|l]#!\n$TOOLTIP_DELIMITER$\n$dp_sepoy_mutiny_desc$"
  dp_sepoy_mutiny_desc: "Nastavuje iniciující [concept_war_goal|l] na úplné anektování cílové [Concept('concept_country','země')]."
+ dp_taiping_rebellion: "Povstání tchaj-pchingů" # todo: MOVED KEY
+ dp_taiping_rebellion_tooltip: "Spustí $dp_taiping_rebellion$ [concept_diplomatic_play]" # todo: MOVED KEY
+ dp_native_uprising: "Domorodé povstání" # todo: MOVED KEY
+ dp_native_uprising_tooltip: "Spustí $dp_native_uprising$ [concept_diplomatic_play]" # todo: MOVED KEY
+ dp_annex_war: "Anexe země" # todo: MOVED KEY
+ dp_annex_war_tooltip: "Zahájit $dp_annex_war$ [concept_diplomatic_play]" # todo: MOVED KEY
+ dp_restore_union: "$war_goal_restore_union_type_name$" # todo: NEW TRANSLATION
+ dp_restore_union_tooltip: "#header Zahajte $dp_restore_union$ [concept_diplomatic_play]#!\n$TOOLTIP_DELIMITER$\n$dp_restore_union_desc$" # todo: NEW TRANSLATION
+ dp_restore_union_desc: "Nastaví zahajující [concept_war_goal] tak, aby přinutil cílový [concept_country] obnovit [WAR_GOAL_DRAFT.GetHolder.GetAdjectiveNoFormatting] [concept_ruler] na trůn." # todo: NEW TRANSLATION
  war_goal_conquer_state_type_name: "Dobýt stát"
  war_goal_conquer_state_type_desc: "Dobýt [concept_state|l] jiné [Concept('concept_country','země')]."
  war_goal_conquer_state: "Dobýt [WAR_GOAL_DRAFT.GetTargetState.GetCountry.GetFlagTextIcon] [WAR_GOAL_DRAFT.GetTargetState.GetName]"
@@ -434,6 +461,22 @@
  war_goal_foreign_investment_rights_type_desc: "[concept_war_goal] vynucení [Concept('concept_foreign_investment_rights','práva na zahraniční investice')] s cílovou [Concept('concept_country','zemí')]. Cíl musí rovněž přijmout [GetLawType('law_free_trade').GetName]."
  war_goal_foreign_investment_rights: "[WAR_GOAL_DRAFT.GetHolder.GetAdjectiveNoFormatting] [concept_foreign_investment_rights]"
  war_goal_foreign_investment_rights_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] získává [concept_foreign_investment_rights] u [WAR_GOAL_DRAFT.GetTarget.GetName]. Pokud má [WAR_GOAL_DRAFT.GetTarget.GetNameNoFormatting] [GetLawType('law_isolationism').GetName] [concept_law], musí místo toho přijmout [GetLawType('law_free_trade').GetName]"
+ war_goal_demand_strait_access_type_name: "Přístup přes průliv" # todo: NEW TRANSLATION
+ war_goal_demand_strait_access_type_desc: "Válečný cíl, který donutí cílovou [concept_country] udělit vojenský přístup přes jakýkoli [concept_strait], který ovládá." # todo: NEW TRANSLATION
+ war_goal_demand_strait_access: "[WAR_GOAL_DRAFT.GetHolder.GetAdjectiveNoFormatting] Přístup přes průliv" # todo: NEW TRANSLATION
+ war_goal_demand_strait_access_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] získává vojenský přístup přes jakýkoli [concept_strait] ovládaný [WAR_GOAL_DRAFT.GetTarget.GetName]." # todo: NEW TRANSLATION
+ war_goal_demand_toll_exemption_type_name: "Osvobození od mýtného" # todo: NEW TRANSLATION
+ war_goal_demand_toll_exemption_type_desc: "Válečný cíl, který donutí cílovou [concept_country] osvobodit držitele od [concept_tolls], které vybírá na jakémkoli [concept_strait], které ovládá." # todo: NEW TRANSLATION
+ war_goal_demand_toll_exemption: "[WAR_GOAL_DRAFT.GetHolder.GetAdjectiveNoFormatting] Osvobození od mýtného" # todo: NEW TRANSLATION
+ war_goal_demand_toll_exemption_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] je osvobozen od [concept_tolls], které [WAR_GOAL_DRAFT.GetTarget.GetName] vybírá na jakémkoli [concept_strait], které ovládá." # todo: NEW TRANSLATION
+ war_goal_demand_no_tolls_type_name: "Žádné mýtné" # todo: NEW TRANSLATION
+ war_goal_demand_no_tolls_type_desc: "Válečný cíl, který donutí cílovou [concept_country] přestat vybírat [concept_tolls] na jakémkoli [concept_strait], které ovládá." # todo: NEW TRANSLATION
+ war_goal_demand_no_tolls: "[WAR_GOAL_DRAFT.GetTarget.GetAdjectiveNoFormatting] [concept_tolls] zrušeny" # todo: NEW TRANSLATION
+ war_goal_demand_no_tolls_desc: "[WAR_GOAL_DRAFT.GetTarget.GetName] je nucen přestat vybírat [concept_tolls] na jakémkoli [concept_strait], které ovládá." # todo: NEW TRANSLATION
+ war_goal_demand_no_strait_closure_type_name: "Zákaz uzavírání průlivu" # todo: NEW TRANSLATION
+ war_goal_demand_no_strait_closure_type_desc: "Válečný cíl, který donutí cílovou [concept_country] udržet otevřené jakékoli [concept_strait], které ovládá." # todo: NEW TRANSLATION
+ war_goal_demand_no_strait_closure: "[WAR_GOAL_DRAFT.GetTarget.GetAdjectiveNoFormatting] [concept_strait] ponechány otevřené" # todo: NEW TRANSLATION
+ war_goal_demand_no_strait_closure_desc: "[WAR_GOAL_DRAFT.GetTarget.GetName] je nucen udržet otevřené jakékoli [concept_strait], které ovládá." # todo: NEW TRANSLATION
  war_goal_secession_type_name: "Secese"
  war_goal_secession_type_desc: "Pokouší se o odtržení od [Concept('concept_country','země')]."
  war_goal_secession: "Potlačit [WAR_GOAL_DRAFT.GetTarget.GetAdjectiveNoFormatting] secesi"
@@ -553,6 +596,4 @@
  war_goal_restore_union: "Obnovit [concept_personal_union]" # todo: NEW TRANSLATION
  war_goal_restore_union_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] nutí [WAR_GOAL_DRAFT.GetTarget.GetName] obnovit [WAR_GOAL_DRAFT.GetHolder.GetAdjectiveNoFormatting] [concept_ruler] na trůn." # todo: NEW TRANSLATION
  war_goal_restore_union_sway_desc: "Snažte se přesvědčit [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že přinutíte [WAR_GOAL_DRAFT.GetTarget.GetName] obnovit [WAR_GOAL_DRAFT.GetHolder.GetAdjectiveNoFormatting] [concept_ruler] na trůn." # todo: NEW TRANSLATION
- dp_restore_union: "$war_goal_restore_union_type_name$" # todo: NEW TRANSLATION
- dp_restore_union_tooltip: "#header Zahajte $dp_restore_union$ [concept_diplomatic_play]#!\n$TOOLTIP_DELIMITER$\n$dp_restore_union_desc$" # todo: NEW TRANSLATION
- dp_restore_union_desc: "Nastaví zahajující [concept_war_goal] tak, aby přinutil cílový [concept_country] obnovit [WAR_GOAL_DRAFT.GetHolder.GetAdjectiveNoFormatting] [concept_ruler] na trůn." # todo: NEW TRANSLATION
+ WARGOAL_STAKEHOLDER_DOES_NOT_EXIST: " Tento [concept_war_goal|l] nemá platného zainteresovaného!"

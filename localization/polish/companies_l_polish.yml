@@ -4,6 +4,11 @@
  company_category_shopkeeper_owned: "Částečné vlastnictví obchodníků"
  company_category_academic_owned: "Částečné akademické vlastnictví"
  company_category_bureaucrat_owned: "Částečné byrokratické vlastnictví"
+ company_category_capitalist_owned_desc: "Plně vlastněna [GetPopType('capitalists').GetName], kteří obdrží celý podíl z [concept_dividends]." # todo: NEW TRANSLATION
+ company_category_aristocrat_owned_desc: "Spoluvlastněna [GetPopType('aristocrats').GetName] a [GetPopType('capitalists').GetName], kteří si dělí [concept_dividends]." # todo: NEW TRANSLATION
+ company_category_shopkeeper_owned_desc: "Spoluvlastněna [GetPopType('shopkeepers').GetName] a [GetPopType('capitalists').GetName], s dalším podílem vypláceným pracovníkům jako [concept_dividends]." # todo: NEW TRANSLATION
+ company_category_academic_owned_desc: "Spoluvlastněna [GetPopType('academics').GetName] a [GetPopType('capitalists').GetName], s dalším podílem vypláceným pracovníkům jako [concept_dividends]." # todo: NEW TRANSLATION
+ company_category_bureaucrat_owned_desc: "Spoluvlastněna [GetPopType('bureaucrats').GetName] a [GetPopType('capitalists').GetName], s dalším podílem vypláceným jako [concept_government_dividends] do [concept_treasury]." # todo: NEW TRANSLATION
  COMPANY_ESTABLISHED: "Založeno dne #b [Company.GetEstablishmentDate.GetString]#!"
  COMPANIES: "[Concept('concept_company','$concept_companies$')]"
  COMPANIES_HEADER: "[SelectLocalization(GetVariableSystem.Exists('hide_current_companies'), 'SELECT_COMPANY', 'COMPANIES')]"
@@ -428,6 +433,9 @@
  company_white_star_line: "White Star Line"
  company_noda_shoyu: "Noda Shoyu Co. Ltd."
  FILTER_VISIBILITY: "Viditelnost"
+ COMPANY_AVAILABLE_FILTER_TITLE: "Dostupné" # todo: NEW TRANSLATION
+ COMPANY_POTENTIAL_FILTER_TITLE: "Potenciální" # todo: NEW TRANSLATION
+ COMPANY_ATTAINABLE_FILTER_TITLE: "Dosažitelné" # todo: NEW TRANSLATION
  COMPANY_AVAILABLE_FILTER_NAME: "Dostupné"
  COMPANY_POTENTIAL_FILTER_NAME: "Potenciální"
  COMPANY_ATTAINABLE_FILTER_NAME: "Dosažitelné"

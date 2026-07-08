@@ -224,6 +224,10 @@
  alert_market_goods_shortage_alert_affected_buildings_breakdown: "[MarketGoods.GetBreakdownOfBuildingsAffectedByShortage]"
  alert_market_goods_shortage_alert_affected_buildings_breakdown_data_version: "[Goods.GetBreakdownOfBuildingsAffectedByShortageInMarket]"
  alert_market_goods_shortage_alert_affected_building_entry: "[Building.GetName] v [Building.GetState.GetName]"
+ alert_merchant_marine_shortage_alert_name: "[SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] [concept_shortage] v [SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName]" # todo: NEW TRANSLATION
+ alert_merchant_marine_shortage_alert_desc: "Vaše [Concept('concept_shipping_lane', '$concept_shipping_lanes$')] jsou #negative_value -[GetPlayer.GetMerchantMarineShortage|%0]#! méně efektivní kvůli nedostatku [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName].\n\nJe #tooltippable #tooltip:[SCOPE.GetRootScope.GetMarketGoods.GetTooltipTag],alert_market_goods_shortage_affected_buildings_breakdown [SCOPE.GetRootScope.GetMarketGoods.GetNumBuildingsAffectedByShortage|v]#!#! budov postižených tímto nedostatkem." # todo: NEW TRANSLATION
+ alert_merchant_marine_shortage_alert_hint: "Tento nedostatek můžete vyřešit zvýšením počtu [concept_sell_orders] pro [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] v [SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName]. To lze provést buď výrobou více [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName], zlepšením [concept_infrastructure] v [Concept('concept_state', '$concept_states$')] s nízkým [concept_market_access], které jej produkují, nebo zvýšením obchodní kapacity pro jeho získání z [concept_world_market]." # todo: NEW TRANSLATION
+ alert_merchant_marine_shortage_alert_action: "Panel trhu pro [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] v [SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName]" # todo: NEW TRANSLATION
  alert_famine_alert_name: "[concept_famine] v [GetPlayer.GetName]"
  alert_famine_alert_hint: "Můžete zlepšit [Concept('concept_food_security','potravinovou bezpečnost')] [Concept('concept_pop','$concept_pops$')|l] žijící v postižených [Concept('concept_state','státech')] zvýšením dodávek [GetPopNeed('popneed_basic_food').GetName] [Concept('concept_good','$concept_goods$')|l]. To lze provést buď výstavbou [Concept('concept_building','budov')], které produkují některé ze zboží, které naplňují [GetPopNeed('popneed_basic_food').GetName] [Concept('concept_pop_needs','potřebu populace')], nebo to [Concept('concept_trade','dovážet')].\n\nNízký [concept_market_access|l] může také ovlivnit přístup k [GetPopNeed('popneed_basic_food').GetName] zboží.\n\n$concept_buildings$ a dovozy mohou nějakou dobu trvat, než začnou plně fungovat. [GetDecreeType('decree_emergency_relief').GetName] [concept_decree|l] může fungovat jako rychlejší, i když dočasné, řešení."
  alert_famine_alert_action: "[concept_food_security] karta pro [SCOPE.GetRootScope.GetMarket.GetName]"
@@ -399,6 +403,7 @@
  active_peace_deal_alert_setting_name: "Aktivní mírová dohoda"
  legitimacy_level_illegitimate_alert_setting_name: "Úroveň legitimity nelegitimní"
  market_goods_shortage_alert_setting_name: "Závažný nedostatek tržních zboží"
+ merchant_marine_shortage_alert_setting_name: "[GetGoods('merchant_marine').GetName] Nedostatek" # todo: NEW TRANSLATION
  low_supply_setting_name: "Nízký zásobování"
  isolated_state_alert_setting_name: "Izolovaný stát"
  secession_growing_alert_setting_name: "Rostoucí secesi"

@@ -208,11 +208,7 @@
  je_taiping_reason: "Fanatici povstali proti naší právoplatné vládě! Jejich povstání musí být zcela rozdrceno."
  taiping_destroyed: "[SCOPE.sCountry('taiping_scope').GetName] neexistuje"
  china_destroyed: "[SCOPE.sCountry('china_scope').GetName] neexistuje"
- dp_taiping_rebellion: "Povstání tchaj-pchingů"
- dp_taiping_rebellion_tooltip: "Spustí $dp_taiping_rebellion$ [concept_diplomatic_play]"
  taiping_rebellion: "Povstání tchaj-pchingů"
- dp_native_uprising: "Domorodé povstání"
- dp_native_uprising_tooltip: "Spustí $dp_native_uprising$ [concept_diplomatic_play]"
  god_worshippers: "Společenství uctívačů Boha"
  taiping_god_worshippers: "Evangelizace uctívačů Boha"
  taiping_taiping_revolution: "Sourozenci v revoluci"
@@ -310,6 +306,7 @@
  pass_regulation_or_else: "Musíme prosadit [GetLawType('law_regulatory_bodies').GetName] [concept_law] do 10 let, jinak čelíme generální stávce"
  pass_protections_or_else: "Musíme prosadit zákon [GetLawType('law_worker_protections').GetName] [concept_law] do 10 let, jinak čelíme generální stávce"
  pass_institution_or_else: "Musíme rozšířit [GetInstitutionType('institution_workplace_safety').GetName] [concept_institution] do 10 let, jinak čelíme generální stávce"
+ pass_institution_or_else_2: "Musíme do 10 let rozšířit [GetInstitutionType('institution_social_security').GetName] [concept_institution], jinak nám hrozí generální stávka" # todo: NEW TRANSLATION
  je_strike: "Stávka!"
  je_strike_reason: "Dělníci nespokojení se svými podmínkami zahájili stávku. Protože odmítají pracovat, jejich odvětví se fakticky zastavilo."
  je_fulfill_striker_promise_tt: "Splňte slib stávkujícím pomocí rozhodnutí Jednání s odbory"
@@ -1553,6 +1550,7 @@
  indian_removal_fail_tt: "Ve Spojených státech nezůstaly žádné čerokíjské [Concept('concept_pop', '$concept_pops$')]"
  native_american_rights: "Ukončení vystěhování Indiánů"
  movement_investigation_isolation: "Vyšetřování vraždy"
+ miraculous_healing: "Zázračné uzdravení" # todo: NEW TRANSLATION
  religious_education_modifier: "Náboženské vzdělávání"
  notification_victoria_notification_tooltip: "#header $notification_victoria_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_victoria_notification_desc$"
  notification_victoria_notification_name: "Unie [SCOPE.sCountry('britain_victoria_country_scope').GetName] s [SCOPE.sCountry('hannover_victoria_scope').GetName] skončila"

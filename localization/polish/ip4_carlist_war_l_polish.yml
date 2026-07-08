@@ -4,6 +4,7 @@
  je_the_first_carlist_war_status: "Válka je ve fázi [concept_guerilla_war]"
  je_the_first_carlist_war_status_royal_expedition: "#b Královská expedice#! začala!"
  je_the_first_carlist_war_complete: "Vyhrál Karlistickou válku"
+ first_carlist_war: "První karlistická válka" # todo: NEW TRANSLATION
  je_the_first_carlist_war_score_bar: "Partyzánská fáze"
  je_the_first_carlist_war_score_bar_desc: "Skóre cristinos: [GetGlobalVariable('spa_carlist_war_score').GetValue|v0]"
  je_the_first_carlist_war_score_bar_second_desc: "Skóre karlistů: [GetGlobalVariable('spc_carlist_war_score').GetValue|v0]"
@@ -13,8 +14,6 @@
  je_the_first_carlist_flush_them_out_desc: "Povstalecký nápor byl zlomen a nastal čas přejít do útoku."
  concept_bio_tomas_de_zumalacarregui: "Tomás de Zumalacárregui"
  concept_bio_tomas_de_zumalacarregui_desc: "#tooltip_header Tomas Zumalakarregi Imatz#!\n$TOOLTIP_DELIMITER$\nNarozen #v 29. prosince 1788#! v Ormaiztegi, Gipuzkoa\nZemřel #v 24. června 1835#! v Zegamě, Gipuzkoa\n\nTomás de Zumalacárregui e Imaz, svými vojáky nazývaný také „strýček Tomás“, byl baskický vojenský důstojník a jako generální kapitán karlistických sil v Navaře a Baskicku odpovídal za organizaci armády i za rozhodující raná vítězství karlistické věci.\nJeho náhlá smrt v důsledku střelného zranění na bojišti na počátku léta roku 1835 znamenala značnou ránu pro ambice dona Carlose."
- concept_guerilla_war: "Partyzánská válka"
- concept_guerilla_war_desc: "$concept_guerilla_war$ je zvláštní druh [concept_war], který podléhá souboru pravidel odlišných od běžného válčení. Jejich podrobnosti se mohou lišit od jedné $concept_guerilla_war$ k druhé.\n\nBěhem $concept_guerilla_war$ platí následující obecná pravidla:\n#indent_newline:2 $EFFECT_LIST_BULLET$ [Concept('concept_battle', '$concept_battles$')] jsou mnohem menší a vznikají pomaleji#! \n#indent_newline:2 $EFFECT_LIST_BULLET$ Mohou nastat [GetBattleCondition('battle_condition_guerilla_skirmish').GetName], [GetBattleCondition('battle_condition_guerilla_ambush').GetName] a [GetBattleCondition('battle_condition_guerilla_disarray').GetName] jako [Concept('concept_battle_condition', '$concept_battle_conditions$')]#!\n#indent_newline:2 $EFFECT_LIST_BULLET$ Vítězství neudělují skóre [concept_occupation]#!\n#indent_newline:2 $EFFECT_LIST_BULLET$ $concept_guerilla_war$ může eskalovat v běžnou $concept_war$, pokud jsou splněny podmínky specifické pro daný konflikt"
  battle_condition_guerilla_skirmish: "Potyčka"
  battle_condition_guerilla_skirmish_desc: "Tento velitel vede spojenecké jednotky v sérii menších potyček s nepřítelem."
  battle_condition_guerilla_ambush: "Léčka"

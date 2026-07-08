@@ -61,16 +61,17 @@
  UNASSIGN_NAVAL_MISSION_LABEL: "Zrušit přiřazení [NavalMissionType.GetNameNoFormatting]" # todo: NEW TRANSLATION
  CHANGE_MISSION: "Změnit $concept_naval_missions_short$" # todo: NEW TRANSLATION
  CHANGE_REGION: "Změnit $concept_sea_region_short$" # todo: NEW TRANSLATION
- NAVAL_MISSION_REGIONS: "[GetSelectedFleetsMissionRegionsDesc]" # todo: NEW TRANSLATION
- FLEET_NAVAL_MISSION_REGIONS: "[MilitaryFormation.GetNavalMissionRegionsDesc]" # todo: NEW TRANSLATION
  FLEET_HAS_NO_NAVAL_MISSION: "[MilitaryFormation.GetName] nemá $concept_naval_mission$" # todo: CHANGED
  NO_FLEET_HAS_NAVAL_MISSION: "Žádný [concept_fleet] nemá $concept_naval_mission$" # todo: NEW TRANSLATION
+ FLEET_NAVAL_MISSION_NO_SEA_REGIONS: "[MilitaryFormation.GetName] nemá přiřazené žádné $concept_sea_regions$" # todo: NEW TRANSLATION
+ SELECTED_FLEETS_NO_NAVAL_MISSION_SEA_REGIONS: "Nejsou přiřazena žádná $concept_sea_regions$" # todo: NEW TRANSLATION
  SEA_REGION_ALREADY_IN_NAVAL_MISSION: "$concept_naval_mission_short$ již obsahuje [StateRegion.GetName]" # todo: CHANGED
  SEA_REGION_ALREADY_IN_NAVAL_MISSION_MULTIPLE: "$concept_naval_mission_short$ již zahrnuje #tooltippable #tooltip:[GetRawTextTooltipTag('$BREAKDOWN$')] několik $concept_sea_regions$#!#!" # todo: CHANGED
  NAVAL_MISSION_AREA_MUST_BE_CONNECTED: "Oblast $concept_naval_mission_short$ musí být plně propojená" # todo: CHANGED
  NAVAL_MISSION_AREA_CAP: "Oblast $concept_naval_mission_short$ dosáhla limitu #v $MAX_SIZE$#! $concept_sea_regions$" # todo: CHANGED
  NAVAL_MISSION_MAX_SEA_REGIONS_TOOLTIP: "#header [concept_naval_mission_area_limit]#!\n#v $VALUE$#! aktuálně\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$" # todo: NEW TRANSLATION
  STATE_REGION_LIST_ENTRY: "[StateRegion.GetName]" # todo: NEW TRANSLATION
+ MORE_SEA_REGIONS_TOOLTIP: "#header Další $concept_sea_regions$#!" # todo: NEW TRANSLATION
  SEA_REGION_NOT_IN_NAVAL_MISSION: "$concept_naval_mission_short$ nezahrnuje $concept_sea_region$" # todo: NEW TRANSLATION
  SEA_REGION_UNREACHABLE_FOR_NAVAL_MISSION_SINGLE: "[MilitaryFormation.GetName] nemůže dosáhnout [StateRegion.GetName]" # todo: NEW TRANSLATION
  SEA_REGION_UNREACHABLE_FOR_NAVAL_MISSION_MULTIPLE: "#tooltippable #tooltip:[GetRawTextTooltipTag('$BREAKDOWN$')] Několik $concept_fleets$#!#! nemůže dosáhnout [StateRegion.GetName]" # todo: CHANGED
@@ -83,6 +84,10 @@
  FLEET_NAVAL_MISSION_BUTTON_TOOLTIP: "#header [concept_naval_mission]#!\n[SelectLocalization(MilitaryFormation.HasNavalMission, 'FLEET_HAS_NAVAL_MISSION', 'FLEET_HAS_NO_NAVAL_MISSION')]" # todo: NEW TRANSLATION
  FLEET_HAS_NAVAL_MISSION: "[MilitaryFormation.GetNavalMission.GetName]\n$TOOLTIP_DELIMITER$\n#title V následujících [Concept('concept_sea_node', '$concept_sea_regions$')]:#! #indent_newline:3 \n[MilitaryFormation.GetNavalMissionRegionsDesc]#!" # todo: NEW TRANSLATION
  ADD_SEA_REGION_TOOLTIP: "#header Přidat [StateRegion.GetName] do $concept_naval_mission_short$#!\n$TOOLTIP_DELIMITER$\n$TRAVEL_DETAILS$\n\n$SUPPLY_DETAILS$\n\n$MULTI_SELECT_DETAILS$" # todo: NEW TRANSLATION
+ ADD_SEA_REGION_TOOLTIP_SUPPLY_RAID_DETAILS: "#title Přepady zásob:#!#indent_newline:3 \n@supply! #v $PASSING_THROUGH$#! nepřátelské $concept_supply_ships$ procházející\naž @supply! #v $PER_BATTLE$#! mohou být potopeny během [Concept('concept_naval_battle', '$concept_naval_battle$')]#!" # todo: NEW TRANSLATION
+ ADD_SEA_REGION_TOOLTIP_SUPPLY_RAID_EMPTY: "#title Přepady zásob:#!#indent_newline:3 \n@supply! #v 0#! nepřátelské $concept_supply_ships$ procházející#!" # todo: NEW TRANSLATION
+ ADD_SEA_REGION_TOOLTIP_SUPPLY_PROTECT_DETAILS: "#title Ochrana zásob:#!#indent_newline:3 \n@supply! #v $PASSING_THROUGH$#! vašich $concept_supply_ships$ procházejících\naž @supply! #v $PER_BATTLE$#! může být ochráněno během [Concept('concept_naval_battle', '$concept_naval_battle$')]#!" # todo: NEW TRANSLATION
+ ADD_SEA_REGION_TOOLTIP_SUPPLY_PROTECT_EMPTY: "#title Ochrana zásob:#!#indent_newline:3 \n@supply! #v 0#! vašich $concept_supply_ships$ procházejících#!" # todo: NEW TRANSLATION
  ADD_SEA_REGION_TOOLTIP_TRAVEL_TIME_DETAILS: "#title Doba cestování:#!#indent_newline:3 \n$BREAKDOWN$#!" # todo: CHANGED
  ADD_SEA_REGION_TOOLTIP_TRAVEL_TIME_BREAKDOWN_ENTRY: "$DAYS|v0$ dní pro [MilitaryFormation.GetName]" # todo: NEW TRANSLATION
  ADD_SEA_REGION_TOOLTIP_SUPPLY_SHIP_DETAILS: "#title @supply! #v $DELTA|D=-$#! $concept_supply_ships$ požadováno:#!#indent_newline:3 \n$BREAKDOWN$#!" # todo: CHANGED
@@ -95,7 +100,11 @@
  MAP_INTERACTION_EDIT_NAVAL_MISSION_NO_MISSION_MULTIPLE_DESC: "Žádné [Concept('concept_naval_mission', '$concept_naval_missions$')] k dispozici pro $concept_fleets$" # todo: CHANGED
  MAP_INTERACTION_EDIT_NAVAL_MISSION_SEA_REGIONS_SINGLE_DESC: "Vyberte [Concept('concept_sea_node', '$concept_sea_regions$')] pro [NavalMission.GetName] [concept_naval_mission] pro [MilitaryFormation.GetName]" # todo: NEW TRANSLATION
  MAP_INTERACTION_EDIT_NAVAL_MISSION_SEA_REGIONS_MULTIPLE_DESC: "Vyberte [Concept('concept_sea_node', '$concept_sea_regions$')] pro #tooltippable #tooltip:[GetRawTextTooltipTag('$BREAKDOWN$')] několik#!#! [Concept('concept_naval_mission', '$concept_naval_missions$')]" # todo: CHANGED
- MAP_INTERACTION_EDIT_NAVAL_MISSION_SEA_REGIONS_EXTRA_DESC: "Celková oblast mise: $MISSION_AREA|v$\nPočet potřebných zásobovacích lodí: @supply! $SUPPLY_SHIPS|v$\nDoba cestování: $TRAVEL_TIME|v$ dní" # todo: CHANGED
+ MAP_INTERACTION_NAVAL_MISSION_AREA: "Celková oblast mise: $MISSION_AREA|v$" # todo: NEW TRANSLATION
+ MAP_INTERACTION_NAVAL_MISSION_SUPPLY_SHIPS: "Požadované zásobovací lodě: @supply! $SUPPLY_SHIPS|v$" # todo: NEW TRANSLATION
+ MAP_INTERACTION_NAVAL_MISSION_TRAVEL_TIME: "Doba cesty: $TRAVEL_TIME|v$ dní" # todo: NEW TRANSLATION
+ MAP_INTERACTION_BLOCKADE_EFFICIENCY: "[concept_blockade_efficiency]: #tooltippable #tooltip:[GetRawTextTooltipTag(MilitaryFormation.GetBlockadeEfficiencyDesc)] [MilitaryFormation.GetBlockadeEfficiency|v%0]#!#! → #tooltippable #tooltip:[GetRawTextTooltipTag(MilitaryFormation.GetBlockadeEfficiencyMaxDesc)] [MilitaryFormation.GetBlockadeEfficiencyMax|v%0]#!#!" # todo: NEW TRANSLATION
+ MAP_INTERACTION_POWER_PROJECTION_INVOLVEMENT: "[concept_involvement] při plné [concept_presence]: $INVOLVEMENT|v+D$ v $REGIONS$" # todo: NEW TRANSLATION
  FLEET_LIST_ENTRY: "[MilitaryFormation.GetName]" # todo: NEW TRANSLATION
  NAVAL_MISSION_LIST_ENTRY: "[NavalMission.GetName]" # todo: NEW TRANSLATION
  NAVAL_MISSION_TYPE_LIST_ENTRY: "[NavalMissionType.GetName]" # todo: NEW TRANSLATION
@@ -111,6 +120,8 @@
  UNASSIGN_NAVAL_MISSIONS_TOOLTIP: "#b Zrušit přiřazení#! [Concept('concept_fleet', '$concept_fleets$')] ze svých $concept_naval_missions$[ConcatIfNeitherEmpty('\n\n',GetDesc(RemoveSelectedFleetsMissions))]" # todo: CHANGED
  EDIT_NAVAL_MISSION_SEA_REGIONS_LABEL: "Upravit $concept_naval_mission_short$ $concept_sea_regions$" # todo: NEW TRANSLATION
  EDIT_NAVAL_MISSION_SEA_REGIONS_TOOLTIP: "#header Změnit [Concept('concept_sea_node', '$concept_sea_regions$')] pro aktuální [concept_naval_mission]#![ConcatIfNeitherEmpty('\n', MilitaryFormation.GetCanEditMissionSeaRegionsDesc)]" # todo: NEW TRANSLATION
+ EDIT_NAVAL_MISSION_SEA_REGIONS_COUNT: "#v [MilitaryFormation.GetNavalMission.GetNumSeaRegions]#!/#v [MilitaryFormation.GetNavalMission.GetMaxSeaRegions]#! $concept_sea_regions$ přiřazeno" # todo: NEW TRANSLATION
+ EDIT_NAVAL_MISSION_SEA_REGIONS_CURRENT: "#title Aktuálně působí v:#!#indent_newline:3 \n[MilitaryFormation.GetNavalMission.GetSeaRegionBreakdown]#!" # todo: NEW TRANSLATION
  EDIT_NAVAL_MISSION_SEA_REGIONS_TOOLTIP_MULTIPLE: "#header Změnit [Concept('concept_sea_node', '$concept_sea_regions$')] pro aktuální [Concept('concept_naval_mission', '$concept_naval_missions$')]#![ConcatIfNeitherEmpty('\n', GetCanEditMissionSeaRegionsForSelectedFleetsDesc)]" # todo: NEW TRANSLATION
  NOT_ALL_FLEETS_HAVE_SAME_NAVAL_MISSION: "Ne všechny vybrané [Concept('concept_fleet', '$concept_fleets$')] mají stejnou oblast $concept_naval_mission$" # todo: NEW TRANSLATION
  NAVAL_MISSION_TYPE_DESC: "Toto je mise typu [NavalMission.GetType.GetName]" # todo: NEW TRANSLATION
@@ -125,6 +136,8 @@
  COMMAND_CONFIRMATION_BLOCKADE_RUN_MULTIPLE: "Jedna nebo více vybraných flotil je zakotvena v obléhaných přístavech. $COMMAND_CONFIRMATION_BLOCKADE_RUN_COMMON$" # todo: CHANGED
  COMMAND_CONFIRMATION_BLOCKADE_RUN_COMMON: "#n Vyslání vyvolá bitvu s blokující flotilou.#!\n\nOpravdu chcete pokračovat?" # todo: CHANGED
  NAVAL_MISSION_MARKER_TOOLTIP: "[NavalMissionType.GetName] $concept_naval_mission_short$(s) v [NavalMissionMarker.GetProvince.GetStateRegion.GetName]" # todo: NEW TRANSLATION
+ NAVAL_MISSION_MARKER_RECALLED_FOR_REPAIRS: "\n@repairing! Všechny [Concept('concept_fleet', '$concept_fleets$')] na tomto $concept_naval_mission_short$ byly staženy na opravy." # todo: NEW TRANSLATION
+ NAVAL_MISSION_MARKER_SOME_RECALLED_FOR_REPAIRS: "\n@repairing! Některé [Concept('concept_fleet', '$concept_fleets$')] na tomto $concept_naval_mission_short$ byly staženy na opravy." # todo: NEW TRANSLATION
  FLEETS_ON_NAVAL_MISSION_IN_REGION_HEADER: "$concept_fleets$ na [NavalMissionType.GetName] $concept_naval_mission_short$(s) v [Province.GetStateRegion.GetName]" # todo: NEW TRANSLATION
  NAVAL_MISSION_LIST_PANEL_TRAVEL_TIME_HEADER: "Doba přesunu" # todo: CHANGED
  NAVAL_MISSION_LIST_PANEL_TRAVEL_TIME_HEADER_TOOLTIP: "#header Doba přesunu#!\n$TOOLTIP_DELIMITER$\nJak dlouho (v dnech) bude nejvzdálenější [concept_military_formation] potřebovat, aby se dostal na určené místo z aktuální pozice." # todo: CHANGED
@@ -162,3 +175,6 @@
  NAVAL_BATTLE_LOG_CONDITION_SUNK_SHIP: "[NAVAL_BATTLE_CONDITION.GetNameNoIcon] způsobil potopení [SHIP.GetName]!"
  NAVAL_BATTLE_LOG_CONDITION_EFFECT_TOTAL: "[NAVAL_BATTLE_CONDITION.GetName] způsobil poškození @ships! $NUM_AFFECTED_SHIPS|v$ lodím!"
  NAVAL_BATTLE_LOG_CURRENT_PAGE: "Strana [NavalBattle.GetCurrentLogPage]/[NavalBattle.GetNumLogPages]"
+ NAVAL_MISSION_REGIONS: "[GetSelectedFleetsMissionRegionsDesc]" # todo: NEW TRANSLATION
+ FLEET_NAVAL_MISSION_REGIONS: "[MilitaryFormation.GetNavalMissionRegionsDesc]" # todo: NEW TRANSLATION
+ MAP_INTERACTION_EDIT_NAVAL_MISSION_SEA_REGIONS_EXTRA_DESC: "Celková oblast mise: $MISSION_AREA|v$\nPočet potřebných zásobovacích lodí: @supply! $SUPPLY_SHIPS|v$\nDoba cestování: $TRAVEL_TIME|v$ dní" # todo: CHANGED

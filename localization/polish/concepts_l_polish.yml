@@ -217,6 +217,11 @@
  concept_regional_company_hq_short: "Regionální ředitelství"
  concept_regional_company_hqs_short: "Regionální ředitelství"
  concept_regional_company_hq_desc: "[concept_company] může zřídit regionální ředitelství společnosti na území cizí [concept_country|l], pokud jí byla její vlastní zemí udělena investiční [Concept('concept_company_charter','listina')]. Kromě toho musí mít přístup do cizí země prostřednictvím [Concept('concept_foreign_investment_rights','práv na zahraniční investice')] a již zavedenou přítomnost v podobě menšího počtu [Concept('concept_building_level','úrovní budov')]. $concept_regional_company_hq$ se chová převážně jako [concept_company_hq|l], avšak využívá [concept_investment_pool|l] cizí země k výstavbě dalších úrovní budov a část svých [Concept('concept_dividends','dividend')] přímo reinvestuje do investičního fondu své vlastní země."
+ concept_company_category: "Kategorie společnosti" # todo: NEW TRANSLATION
+ concept_company_categories: "Kategorie společností" # todo: NEW TRANSLATION
+ concept_company_category_short: "Kategorie" # todo: NEW TRANSLATION
+ concept_company_categories_short: "Kategorie" # todo: NEW TRANSLATION
+ concept_company_category_desc: "A $concept_company_category$ popisuje, které druhy [Concept('concept_pop','$concept_pops$')] se podílejí na vlastnictví [concept_company]. Určuje, které [Concept('concept_production_method','$concept_production_methods$')] jsou dostupné v [concept_company_hq], a tím formuje, které [Concept('concept_profession','$concept_professions$')] jsou tam zaměstnány. Také určuje, kdo obdrží podíl z [concept_dividends] a zda $concept_company$ platí [concept_government_dividends] nebo ne.\n\n#title Tyto $concept_company_categories_short$ jsou:#!#indent_newline:3 \n#b $company_category_capitalist_owned$#!#indent_newline:3 \n$company_category_capitalist_owned_desc$#!\n\n#b $company_category_aristocrat_owned$#!#indent_newline:3 \n$company_category_aristocrat_owned_desc$#!\n\n#b $company_category_shopkeeper_owned$#!#indent_newline:3 \n$company_category_shopkeeper_owned_desc$#!\n\n#b $company_category_bureaucrat_owned$#!#indent_newline:3 \n$company_category_bureaucrat_owned_desc$#!\n\n#b $company_category_academic_owned$#!#indent_newline:3 \n$company_category_academic_owned_desc$#!" # todo: NEW TRANSLATION
  concept_concept: "Koncept"
  concept_concepts: "Koncepty"
  concept_concept_desc: "Jedná se o herní koncept, který lze tzv. tooltipovat s jiným [Concept('concept_concept', 'konceptem')] uvnitř."
@@ -735,7 +740,13 @@
  concept_defense: "Obrana"
  concept_defense_desc: "Bojová schopnost [Concept('concept_unit','$concept_unit_possessive$')] v [Concept('concept_battle','bitvě')] při obraně proti nepřátelským vpádům."
  concept_blockade_strength: "Síla blokády"
+ concept_blockade_strength_short: "Síla" # todo: NEW TRANSLATION
  concept_blockade_strength_desc: "Určuje, do jaké míry je [concept_fleet] schopna úspěšně [concept_blockade] nepřátelské [Concept('concept_state', '$concept_states$')]."
+ concept_blockade_efficiency: "Účinnost blokády" # todo: NEW TRANSLATION
+ concept_blockade_efficiency_desc: "$concept_blockade_efficiency$ je průměrná úroveň [concept_blockade], které [concept_fleet] dosáhne ve všech nepřátelských přístavech v oblasti své [concept_naval_mission]. Závisí na poměru [concept_blockade_strength] vůči [concept_blockade_resistance] každého cílového přístavu a je rovnoměrně rozdělena mezi všechny cílené přístavy." # todo: NEW TRANSLATION
+ concept_blockade_resistance: "Odolnost proti blokádě" # todo: NEW TRANSLATION
+ concept_blockade_resistance_short: "Odolnost" # todo: NEW TRANSLATION
+ concept_blockade_resistance_desc: "$concept_blockade_resistance$ je množství [concept_blockade_strength] potřebné k úplnému [concept_blockade] [concept_state]. Závisí na faktorech jako výstup pobřežních [concept_building] a objemy místního [concept_trade]." # todo: NEW TRANSLATION
  concept_blockade: "Blokáda"
  concept_blockade_level: "Úroveň blokády"
  concept_blockades: "Blokády"
@@ -1234,6 +1245,13 @@
  concept_interest_tiers: "Úrovně zájmu"
  concept_interest_tier_short: "Úroveň"
  concept_interest_tier_desc: "[concept_interest_tier] označuje úroveň přítomnosti, kterou má [concept_country] v [concept_strategic_region], a může být povýšena zvýšením [concept_involvement] v daném $concept_strategic_region_short$.\nVyšší úrovně odemykají nové interakce a výhody."
+ concept_diplomatic_relevancy: "Diplomatická relevance" # todo: NEW TRANSLATION
+ concept_diplomatically_relevant: "Diplomaticky relevantní" # todo: NEW TRANSLATION
+ concept_diplomatically_irrelevant: "Diplomaticky nerelevantní" # todo: NEW TRANSLATION
+ concept_diplomatic_relevancy_desc: "Mít $concept_diplomatic_relevancy$ je vyžadováno, aby se [concept_country] mohl zapojit do určitých interakcí, jako je podepisování [Concept('concept_treaty', '$concept_treaties$')]. $concept_country$ je považován za $concept_diplomatically_relevant$ vůči jinému, pokud je splněna některá z následujících podmínek:\n$EFFECT_LIST_BULLET$Mají společnou přímou hranici\n$EFFECT_LIST_BULLET$Mezi nimi leží právě jeden [concept_sea_node]\n$EFFECT_LIST_BULLET$Jeden $concept_country$ sousedí s [concept_subject] druhého\n$EFFECT_LIST_BULLET$Jeden $concept_country_possessive$ $concept_subject$ sousedí s druhým $concept_country_possessive$ $concept_subject$\n$EFFECT_LIST_BULLET$Existující $concept_treaty$ mezi těmito dvěma $concept_countries$\n$EFFECT_LIST_BULLET$Obě $concept_countries$ jsou [Concept('concept_great_power','$concept_great_powers$')]\n$EFFECT_LIST_BULLET$Jeden z $concept_countries$ vyhlásí [concept_rivalry] vůči druhému\n$EFFECT_LIST_BULLET$Jeden z $concept_countries$ provádí [concept_piracy] cílenou proti druhému\n$EFFECT_LIST_BULLET$Obě $concept_countries$ mají překrývající se [Concept('concept_interest', '$concept_interests$')]" # todo: NEW TRANSLATION
+ concept_strategic_adjacency: "Strategická sousednost" # todo: NEW TRANSLATION
+ concept_strategically_adjacent: "Strategicky sousední" # todo: NEW TRANSLATION
+ concept_strategic_adjacency_desc: "$concept_strategic_adjacency$ je kontrola přilehlosti mezi dvěma [Concept('concept_country', '$concept_countries$')], která se používá k povolení určitých interakcí mezi nimi, pokud jsou splněny podmínky. Dvě $concept_countries$ se považují za $concept_strategically_adjacent$, pokud je splněna některá z těchto podmínek:\n$EFFECT_LIST_BULLET$Mají společnou přímou hranici\n$EFFECT_LIST_BULLET$Mezi nimi leží právě jeden [concept_sea_node]\n$EFFECT_LIST_BULLET$Jeden $concept_country$ sousedí s [concept_subject] druhého\n$EFFECT_LIST_BULLET$Jeden $concept_country_possessive$ $concept_subject$ sousedí s druhým $concept_country_possessive$ $concept_subject$\n$EFFECT_LIST_BULLET$Jeden $concept_country$ sousedí s neprosazeným [concept_war_goal]" # todo: NEW TRANSLATION
  concept_obligation: "Závazek"
  concept_obligations: "Závazky"
  concept_obligated: "Zavázaný"
@@ -1581,7 +1599,9 @@
  concept_life_experience: "Životní zkušenost"
  concept_life_experience_desc: "[Concept('concept_character', '$concept_characters$')] získávají časem a skrze speciální události tzv. životní zkušenosti. $concept_life_experience$ ovlivňuje možnost získání nových [Concept('concept_character_trait','charakterových rysů')]."
  concept_supply_network: "Zásobovací síť"
+ concept_supply_network_short: "Síť" # todo: NEW TRANSLATION
  concept_supply_networks: "Zásobovací sítě"
+ concept_supply_networks_short: "Sítě" # todo: NEW TRANSLATION
  concept_supply_network_desc: "Každá námořní [concept_country|l] potřebuje na [Concept('concept_market','trhu')] [GetGoods('merchant_marine').GetName|l], aby zajistila přepravní potřeby svých [Concept('concept_shipping_lane','námořních tras')]. Celková síla vaší zásobovací sítě je určena porovnáním nabídky [GetGoods('merchant_marine').GetName] s celkovou poptávkou napříč všemi vašimi námořními trasemi. Tato síla představuje základní [Concept('concept_shipping_lane_effectiveness','$concept_shipping_lane_effectiveness_short$')|l] všech vašich námořních tras."
  concept_ship: "Loď"
  concept_ships: "Lodě"
@@ -1676,6 +1696,7 @@
  concept_supply_priority_desc: "$concept_supply_priority$ [Concept('concept_military_formation','$concept_military_formation_possessive$')] určuje pořadí, v jakém obdrží [Concept('concept_supply_ship','$concept_supply_ships$')].\n\n$concept_supply_ships$ budou rozdělovány, dokud nebudou uspokojeny potřeby všech $concept_supply_priority_short$ nejvyšších [Concept('concept_fleet','$concept_fleets$')] a [Concept('concept_army','$concept_armies$')], poté bude distribuce pokračovat směrem k nižším $concept_supply_priority_short$ $concept_fleets$ a $concept_armies$."
  concept_supply_ship: "Zásobovací loď"
  concept_supply_ships: "Zásobovací lodě"
+ concept_supply_ship_construction: "Stavba zásobovacích lodí" # todo: NEW TRANSLATION
  concept_supply_ship_desc: "$concept_supply_ships$ slouží k dopravě zásob, přídělu a munice [Concept('concept_fleet','$concept_fleets$')] na moři a [Concept('concept_army','$concept_armies$')] v zámoří.\n\nStaví se v $building_shipyard$ podobně jako běžné [Concept('concept_ship','$concept_ships$')] a jsou udržovány v poolu, pokud nejsou právě potřeba."
  concept_critical_hit_chance: "Šance na kritický zásah"
  concept_critical_hit_chance_desc: "$ship_critical_hit_chance_add_desc$"
@@ -1707,6 +1728,7 @@
  concept_shipping_lane_desc: "$concept_shipping_lane$ je námořní spojení tvořené @merchant_marine! #tooltippable_name #tooltip:[GetGoods('merchant_marine').GetTooltipTag],DATA_GOODS_NAME_TOOLTIP,GoodsTooltip [GetGoods('merchant_marine').GetCustom('GDS_I')|l]#!#! mezi dvěma pobřežními [Concept('concept_state','státy')], které je zřízeno buď k přesunu [Concept('concept_good','zboží')] z místa na místo jako součást [Concept('concept_treaty','smlouvy')], nebo k [concept_supply|l] zámořských [Concept('concept_military_formation','formací')].\n\n$concept_shipping_lane$ může být buď [concept_supply_route|l], [concept_port_connection|l] nebo [GetArticleType('goods_transfer').GetNameNoIcon] smlouvy a jeho fungování závisí na [Concept('concept_shipping_lane_effectiveness','efektivite námořní trasy')], pokud jsou dostatečně pokryty jeho přepravní náklady."
  concept_tolls: "Mýtné"
  concept_toll: "Mýtné"
+ concept_toll_rate: "Sazba mýtného" # todo: NEW TRANSLATION
  concept_tolls_desc: "$concept_tolls$ může vybírat [Concept('concept_country', '$concept_countries$')], které [Concept('concept_strait_control', '$concept_strait_control_short$')] $concept_strait$. Přidávají náklad, který je podílem [concept_trade] procházejícího jimi. Tento náklad hradí postižené [GetBuildingType('building_trade_center').GetName] a snižuje jejich ziskovost, zatímco $concept_country$ ovládající $concept_strait$ získává dodatečný příjem. $concept_tolls$ může zvýšit každý ze správců $concept_strait$ samostatně a sčítají se."
  concept_strait: "Průliv"
  concept_straits: "Průlivy"
@@ -2108,6 +2130,8 @@
  concept_religious_movement_desc: "$concept_religious_movements$ jsou [Concept('concept_political_movement','$concept_political_movements$')], které usilují o lepší život pro lidi určité [concept_religion]. Pokud je tato $religion$ [concept_state_religion] [concept_country], hnutí bude prosazovat tradicionalistickou agendu. V opačném případě bude hnutí usilovat o [Concept('concept_law','$concept_laws$')], které poskytnou jejich lidem větší [concept_acceptance], nebo se dokonce pokusí o [concept_secession].\n\nPokud [concept_activism] $concept_religious_movement$ překročí @activism_red! $RADICALISM_PROTESTING$ (#v [GetDefine('NPolitics', 'RADICALISM_PROTESTING_THRESHOLD')|%0]#!), začne vytvářet [concept_obstinance] v $concept_states$ s $concept_political_movement_supporting$ $concept_pops$."
  concept_dynastic_loyalty: "Dynastická loajalita"
  concept_dynastic_loyalty_desc: "$concept_dynastic_loyalty$ představuje podporu srbského obyvatelstva pro udržení vládnoucí dynastie na trůnu oproti jejich rivalům. Vládnoucí dynastie musí získat dostatečnou podporu, aby zabránila opozici vznést nárok. Nepodaří-li se to, ztratí trůn a dojde ke stagnaci národního rozvoje.\n\nNásledující podmínky #bold zvýší#! $concept_dynastic_loyalty$:\n• Vysoká [concept_ruler] [concept_popularity]\n• Nízká [concept_popularity] soupeřících uchazečů\n• Vysoká [concept_legitimacy] \n• Vysoká [concept_sol]\n• Podíl [Concept('concept_loyalist','$concept_loyalists$')]\n• Ne-[concept_marginalized] [Concept('concept_interest_group','$concept_interest_groups$')] [concept_in_opposition] nad 4 [concept_approval] podle [concept_clout] \n• Má schválený [GetLawType('law_censorship').GetName] nebo [GetLawType('law_outlawed_dissent').GetName]\n• Není [concept_subject]\n• Každá [concept_major_power] nebo [concept_great_power] podporující naši nezávislost\n• Události nebo jiné volby\n\nNásledující podmínky #bold sníží#! $concept_dynastic_loyalty$:\n• Nízká [concept_ruler] [concept_popularity]\n• Vysoká [concept_popularity] soupeřících uchazečů\n• Nízká [concept_legitimacy]\n• Nízká [concept_sol]\n• Podíl [Concept('concept_radical','$concept_radicals$')]\n• Ne-[concept_marginalized] [Concept('concept_interest_group','$concept_interest_groups$')] [concept_in_opposition] pod -4 [concept_approval] podle [concept_clout] \n• Negativní [concept_authority]\n• Negativní [concept_bureaucracy]\n• Pozitivní [concept_relations] s [concept_overlord]\n• Události nebo jiné volby"
+ concept_brz_national_hero: "Národní hrdina" # todo: MOVED KEY
+ concept_brz_national_hero_desc: "#bold Národní hrdina#! je generál, který vyhrál bitvu proti státu, jenž není brazilský, a byl oslavován jako hrdina v události '#bold Nový národní hrdina#!'." # todo: MOVED KEY
  concept_house_of_obrenovic: "Rod Obrenović"
  concept_house_of_obrenovic_short: "Obrenović"
  concept_house_of_obrenovic_desc: "$concept_house_of_obrenovic$ je jeden ze dvou soupeřících $SER_ADJ$ královských rodů. Pochází z rodu #b Miloš Obrenović#!, vůdce Druhého srbského povstání a zakladatele autonomního Srbského knížectví. Stoupenci $concept_house_of_obrenovic_short$ obvykle podporují zlepšení [concept_relations] s #b Rakouskem#!."
@@ -2139,6 +2163,8 @@
  concept_negotiated: "Vyjednáno"
  concept_negotiate: "Vyjednávat"
  concept_negotiation_desc: "$concept_negotiate$ s [Concept('concept_interest_group','zájmovou skupinou')] během [Concept('concept_enactment_of_laws','schvalování')] za účelem přesvědčit je ke změně postoje k právě schvalovanému [Concept('concept_law','zákonu')]. Vůli $concept_interest_group_possessive$ k vyjednávání určuje jejich [concept_amenability]. Čím vyšší ochotu mají, tím přátelštější a ochotnější budou vyjednávat.\n\n@indifferent! [Concept('concept_endorse_oppose', 'Lhostejná')] zájmová skupina musí být @in_government! [concept_in_government|l], aby s nimi bylo možné vyjednávat, zatímco @disapproves! [Concept('concept_endorse_oppose', '$concept_opposing$')|l] zájmové skupiny můžou vyjednávat, i když jsou [concept_in_opposition|l].\n\nPřesvědčit $concept_interest_group$, aby přešlo ze stavu @disapproves! $concept_opposing$ na @indifferent! $concept_indifferent$ může být stejně účinné jako přesvědčit je, aby přešli z @indifferent! [Concept('concept_endorse_oppose', 'Lhostejná')] na @approves! [Concept('concept_endorse_oppose','podporující')]."
+ concept_guerilla_war: "Partyzánská válka" # todo: MOVED KEY
+ concept_guerilla_war_desc: "$concept_guerilla_war$ je zvláštní druh [concept_war], který podléhá souboru pravidel odlišných od běžného válčení. Jejich podrobnosti se mohou lišit od jedné $concept_guerilla_war$ k druhé.\n\nBěhem $concept_guerilla_war$ platí následující obecná pravidla:\n#indent_newline:2 $EFFECT_LIST_BULLET$ [Concept('concept_battle', '$concept_battles$')] jsou mnohem menší a vznikají pomaleji#! \n#indent_newline:2 $EFFECT_LIST_BULLET$ Mohou nastat [GetBattleCondition('battle_condition_guerilla_skirmish').GetName], [GetBattleCondition('battle_condition_guerilla_ambush').GetName] a [GetBattleCondition('battle_condition_guerilla_disarray').GetName] jako [Concept('concept_battle_condition', '$concept_battle_conditions$')]#!\n#indent_newline:2 $EFFECT_LIST_BULLET$ Vítězství neudělují skóre [concept_occupation]#!\n#indent_newline:2 $EFFECT_LIST_BULLET$ $concept_guerilla_war$ může eskalovat v běžnou $concept_war$, pokud jsou splněny podmínky specifické pro daný konflikt" # todo: MOVED KEY
  concept_amenability: "Ochota"
  concept_amenability_desc: "Jak ochotná je [concept_interest_group|l] [Concept('concept_negotiation','$concept_negotiate$')|l] během [Concept('concept_enactment_of_laws','přijímání zákonů')|l], vyšší hodnota znamená větší ochotu.\n\n#b 0 - [GetDefine('NPolitics', 'MIN_AMENABILITY_TENSE_NEGOTIATION')]#!:     Bude #r odmítnout#! $concept_negotiate$\n#b [GetDefine('NPolitics', 'MIN_AMENABILITY_TENSE_NEGOTIATION')] - [GetDefine('NPolitics', 'MIN_AMENABILITY_NORMAL_NEGOTIATION')]#!:   #v #r $negotiation_tier_3$#!#!\n#b [GetDefine('NPolitics', 'MIN_AMENABILITY_NORMAL_NEGOTIATION')] - [GetDefine('NPolitics', 'MIN_AMENABILITY_FRIENDLY_NEGOTIATION')]#!:   #v $negotiation_tier_2$#!\n#b [GetDefine('NPolitics', 'MIN_AMENABILITY_FRIENDLY_NEGOTIATION')] - 100#!: #v #g $negotiation_tier_1$#!#!"
  concept_obstinance: "Neústupnost"
@@ -2187,3 +2213,5 @@
  concept_russian_aid: "Ruská pomoc"
  concept_russian_aid_short: "Ruská pomoc"
  concept_russian_aid_desc: "$concept_russian_aid$ je podpora, kterou #v $RUS$#! posílá našim kmenům jako souvěrcům pravoslavné církve. \n\nZákladní částka, kterou dostáváme, závisí na našich [concept_relations] s #v $RUS$#!: \n\n• #v Neutrální vztahy#! (nebo horší): @money!200 \n• #v Srdečné vztahy#! : @money!400 \n• #v Přívětivé vztahy#! : @money!700 \n• #v Přátelské vztahy#! : @money!1000"
+ concept_government_premium: "Vládní prémie" # todo: NEW TRANSLATION
+ concept_government_premium_desc: "Úhrada za poskytované služby." # todo: NEW TRANSLATION

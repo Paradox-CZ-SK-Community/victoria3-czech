@@ -60,7 +60,7 @@
  tenpo_events.2.a: "Svolejte milici a přibijte toho zrádce na kříž."
  tenpo_events.2.b: "Zoufalý, ale spravedlivý čin."
  tenpo_events.2.c: "Povstalci přemohou místní posádku a zmocní se města [SCOPE.sState('osaka_scope').GetCityHubName]."
- tenpo_events.2.tt_1: "[SCOPE.sCharacter('oshio_scope').GetFullName] uniká zajetí a spáchá sebevraždu upálením." 
+ tenpo_events.2.tt_1: "[SCOPE.sCharacter('oshio_scope').GetFullName] uniká zajetí a spáchá sebevraždu upálením."
  tenpo_events.2.tt_2: "[SCOPE.sCharacter('oshio_scope').GetFullName] je úřady mučen, posypán solí a ukřižován."
  tenpo_events.2.tt_3: "Místní milice #b potlačí povstání#! dříve, než se může dále rozšířit."
  tenpo_events.2.tt_4: "[concept_agitator] [SCOPE.sCharacter('oshio_scope').GetFullName] dostane mírný, symbolický trest a je mu dovoleno pokračovat ve své práci."
@@ -127,6 +127,8 @@
  je_taming_the_north_additional_goal_pre: "Pokud vlastníme celou #b $STATE_SAKHALIN$#!, #b $modifier_tamed_north$#! [concept_timed_modifier] se použije také na [concept_state_region] $STATE_SAKHALIN$:"
  je_taming_the_north_additional_goal: "Pokud vlastníme celou [SCOPE.sStateRegion('sakhalin_state_region_scope').GetName], #b $modifier_tamed_north$#! [concept_timed_modifier] se použije také na [SCOPE.sStateRegion('sakhalin_state_region_scope').GetName]:"
  je_taming_the_north_additional_goal_completed: "Protože vlastníme celý region [SCOPE.sStateRegion('sakhalin_state_region_scope').GetName], #b $modifier_tamed_north$#! [concept_timed_modifier] se použije také na [SCOPE.sStateRegion('sakhalin_state_region_scope').GetName]:"
+ ezo_arrival_text: "nespokojení vazalové $Tokugawa$" # todo: NEW TRANSLATION
+ japan_arrival_text: "noví muži a ženy" # todo: NEW TRANSLATION
  modifier_tamed_north: "Vzorová kolonie"
  modifier_northern_learnings: "Poznatky Kaitakuši"
  button_je_taming_the_north_establish_colonies: "Zakládat státem podporované kolonie"
@@ -146,7 +148,9 @@
  button_je_taming_the_north_agriculture_arable_land_desc: "Ačkoli jsou tyto rozsáhlé země zemědělsky nerozvinuté, skrývají velký potenciál. Velká horská pásma, z nichž proudí hojnost vody, nabízejí dostatek příležitostí k rozšíření obdělávatelné půdy směrem na sever.\n\nOdvodníme mokřady, zavlažíme pole a zkrotíme zemi jako svědectví nezlomného [GetCulture('japanese').GetName] ducha."
  hokkaido_agriculture_arable_tt: "Toto rozhodnutí lze učinit celkem #v 3#!krát. (aktuálně [ROOT.GetCountry.MakeScope.Var('hokkaido_agriculture_arable_counter_var').GetValue|v0])"
  hokkaido_events.1.t: "Osmý obvod"
+ hokkaido_events.1.t_1: "Severní brána" # todo: NEW TRANSLATION
  hokkaido_events.1.d: "Se začleněním [SCOPE.sState('hokkaido_scope').GetName] - neboli zemí Ainuů - do vlastního Japonska musí být zvoleno nové jméno, které bude odrážet nový status této země. Nově zřízená Komise pro rozvoj předložila [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] řadu návrhů k posouzení."
+ hokkaido_events.1.d_1: "S upevněním kontroly [ROOT.GetCountry.GetName] nad [SCOPE.sState('hokkaido_scope').GetName] — neboli nad územím Ainu — musí být zvoleno nové jméno, které odráží nový status této oblasti. Nově zřízená Komise pro rozvoj předložila řadu návrhů k posouzení [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]." # todo: NEW TRANSLATION
  hokkaido_events.1.f: "„Je to země divochů, nic víc. Bažin a bahna. Zbídačených rybářů a pojídačů masa. Co vůbec doufáš najít v té bohem zapomenuté zemi, co ti [ROOT.GetCountry.GetCapital.GetCityHubName] už nemůže poskytnout?“\n\n„Smysl, matko. A něco, co bude mé vlastní.“"
  hokkaido_events.1.a: "Její jméno bude #tooltippable;tooltip:hokkaido_events.1_tt_3 #b Hokkai-dó#!#!: Severomořský obvod." # 北加伊道
  hokkaido_events.1.b: "#tooltippable;tooltip:hokkaido_events.1_tt_2 #b Hokkai-dó#!#!, na počest obyvatel této země." # 北海道
