@@ -176,6 +176,8 @@
  DATA_AMENDMENTS_SPONSOR_MODIFIERS_HEADER: "Modifikátory sponzora:"
  REPEAL_AMENDMENT_TOOLTIP: "#header Zrušit [concept_amendment|l] [Amendment.GetName] #!\n[ConcatIfNeitherEmpty('\n$DATA_AMENDMENTS_REPEAL_HEADER$\n', Amendment.GetOnRepealEffectsDesc)]"
  AMENDMENT_SPONSOR: "#title Sponzor:#!\n$TAB$[Amendment.GetSponsor.GetName]"
+ AMENDMENT_TIMEOUT_ACTIVE: "#title Dočasné:#!\n$TAB$Vyprší #variable [Amendment.GetTimeoutDate]#!" # todo: NEW TRANSLATION
+ AMENDMENT_TIMEOUT_ENACTING: "#title Dočasné:#!\n$TAB$Vyprší #variable [Amendment.GetTimeoutMonths]#! měsíců poté, co [concept_law] vstoupí v platnost" # todo: NEW TRANSLATION
  AMENDMENT_PARENT_LAW_TYPE_TITLE: "#title [concept_parent_law]:#!"
  AMENDMENT_PARENT_LAW_TYPE: "[Amendment.GetParentLawType.GetName]"
  AMENDMENT_EFFECTS_AND_MODIFIERS: "Účinky a modifikátory"

@@ -83,17 +83,59 @@
  SHOW_NAVAL_MISSIONS: "Zobrazit [Concept('concept_naval_mission', '$concept_naval_missions$')]" # todo: NEW TRANSLATION
  FLEET_NAVAL_MISSION_BUTTON_TOOLTIP: "#header [concept_naval_mission]#!\n[SelectLocalization(MilitaryFormation.HasNavalMission, 'FLEET_HAS_NAVAL_MISSION', 'FLEET_HAS_NO_NAVAL_MISSION')]" # todo: NEW TRANSLATION
  FLEET_HAS_NAVAL_MISSION: "[MilitaryFormation.GetNavalMission.GetName]\n$TOOLTIP_DELIMITER$\n#title V následujících [Concept('concept_sea_node', '$concept_sea_regions$')]:#! #indent_newline:3 \n[MilitaryFormation.GetNavalMissionRegionsDesc]#!" # todo: NEW TRANSLATION
- ADD_SEA_REGION_TOOLTIP: "#header Přidat [StateRegion.GetName] do $concept_naval_mission_short$#!\n$TOOLTIP_DELIMITER$\n$TRAVEL_DETAILS$\n\n$SUPPLY_DETAILS$\n\n$MULTI_SELECT_DETAILS$" # todo: NEW TRANSLATION
+ ADD_SEA_REGION_TOOLTIP: "#header Přidat [StateRegion.GetName] do $concept_naval_mission_short$#!\n$TOOLTIP_DELIMITER$\n$TRAVEL_DETAILS$\n\n$SUPPLY_DETAILS$[ConcatIfNeitherEmpty('\n\n', '$RAID_DETAILS$')][ConcatIfNeitherEmpty('\n\n', '$PROTECT_DETAILS$')][ConcatIfNeitherEmpty('\n\n', '$BLOCKADE_DETAILS$')]$INTERCEPT_DETAILS$[ConcatIfNeitherEmpty('\n\n', '$BOMBARDMENT_DETAILS$')][ConcatIfNeitherEmpty('\n\n', '$INVOLVEMENT_DETAILS$')]\n\n$MULTI_SELECT_DETAILS$" # todo: CHANGED
  ADD_SEA_REGION_TOOLTIP_SUPPLY_RAID_DETAILS: "#title Přepady zásob:#!#indent_newline:3 \n@supply! #v $PASSING_THROUGH$#! nepřátelské $concept_supply_ships$ procházející\naž @supply! #v $PER_BATTLE$#! mohou být potopeny během [Concept('concept_naval_battle', '$concept_naval_battle$')]#!" # todo: NEW TRANSLATION
  ADD_SEA_REGION_TOOLTIP_SUPPLY_RAID_EMPTY: "#title Přepady zásob:#!#indent_newline:3 \n@supply! #v 0#! nepřátelské $concept_supply_ships$ procházející#!" # todo: NEW TRANSLATION
  ADD_SEA_REGION_TOOLTIP_SUPPLY_PROTECT_DETAILS: "#title Ochrana zásob:#!#indent_newline:3 \n@supply! #v $PASSING_THROUGH$#! vašich $concept_supply_ships$ procházejících\naž @supply! #v $PER_BATTLE$#! může být ochráněno během [Concept('concept_naval_battle', '$concept_naval_battle$')]#!" # todo: NEW TRANSLATION
  ADD_SEA_REGION_TOOLTIP_SUPPLY_PROTECT_EMPTY: "#title Ochrana zásob:#!#indent_newline:3 \n@supply! #v 0#! vašich $concept_supply_ships$ procházejících#!" # todo: NEW TRANSLATION
+ ADD_SEA_REGION_TOOLTIP_BLOCKADE_DETAILS: "#title Odhadované účinky [Concept('concept_blockade','$concept_blockade$')]:#!#indent_newline:3 \n#v $MAX_LEVEL|%0$#! [concept_blockade_efficiency] ($EVENTUAL_STRENGTH|vK$ [Concept('concept_blockade_strength','$concept_blockade_strength_short$')] vs #tooltippable #tooltip:[GetRawTextTooltipTag('$BREAKDOWN$')] $REQUIRED_STRENGTH|vK$#!#! [Concept('concept_blockade_resistance','$concept_blockade_resistance_short$')])\n#v $AFFECTED_LANES$#! nepřátelské [Concept('concept_shipping_lane','$concept_shipping_lanes$')] narušeny\n#v $AFFECTED_BUILDINGS$#! [Concept('concept_coastal_building','$concept_coastal_buildings$')] ovlivněny#!\n\n@information! Přidělení [Concept('concept_fleet','$concept_fleet$')] do více [Concept('concept_sea_node','$concept_sea_regions$')] snižuje [concept_blockade_efficiency] v každém" # todo: NEW TRANSLATION
+ ADD_SEA_REGION_TOOLTIP_BLOCKADE_RESISTANCE_ENTRY: "$RESISTANCE|vK$ $concept_blockade_resistance_short$ ve [State.GetName]" # todo: NEW TRANSLATION
+ ADD_SEA_REGION_TOOLTIP_INTERCEPT_DETAILS: "#title Odhadované účinky $MISSION_NAME$ (při plném [Concept('concept_presence', '$concept_presence$')]):#!#indent_newline:3 \n$TARGETS_SECTION$$BLOCKED$\n#tooltippable #tooltip:[GetRawTextTooltipTag('$CHANCE_DESC$')] #v $CHANCE|%1$#!#!#! šance / den na vynucení [Concept('concept_naval_battle', '$concept_naval_battle$')]\n$EFFICIENCY_LINE$#!$HINT$" # todo: NEW TRANSLATION
+ ADD_SEA_REGION_TOOLTIP_INTERCEPT_EMPTY: "#title Odhadované účinky $MISSION_NAME$ (při plném [Concept('concept_presence', '$concept_presence$')]):#!#indent_newline:3 $BLOCKED$\n$EFFICIENCY_LINE$#!" # todo: NEW TRANSLATION
+ ADD_SEA_REGION_TOOLTIP_INTERCEPT_EFFICIENCY_LINE: "#tooltippable #tooltip:[GetRawTextTooltipTag('$EFFICIENCY_DESC$')] #v $VALUE|%0$#!#!#! [Concept('concept_mission_efficiency', '$concept_mission_efficiency$')]" # todo: NEW TRANSLATION
+ ADD_SEA_REGION_TOOLTIP_INTERCEPT_EFFICIENCY_LINE_RANGE: "#v $MIN|%0$#! – #v $MAX|%0$#! [Concept('concept_mission_efficiency', '$concept_mission_efficiency$')]" # todo: NEW TRANSLATION
+ ADD_SEA_REGION_TOOLTIP_INTERCEPT_NO_TARGETS: "\nŽádné nepřátelské [Concept('concept_fleet', '$concept_fleets$')] k zachycení" # todo: NEW TRANSLATION
+ ADD_SEA_REGION_TOOLTIP_INTERCEPT_EFFICIENCY_BREAKDOWN: "#header [concept_mission_efficiency] při plném [Concept('concept_presence', '$concept_presence$')]#!\n#v $VALUE|%0$#! po nasazení\n$TOOLTIP_DELIMITER$\n#title Vypočítáno jako:#!#indent_newline:3 \n$BREAKDOWN$#!" # todo: NEW TRANSLATION
+ ADD_SEA_REGION_TOOLTIP_INTERCEPT_TARGETS_SINGULAR: "#title #v $COUNT$#! nepřátelský [Concept('concept_fleet', '$concept_fleet$')] lze zachytit:#!#indent_newline:3 \n$BREAKDOWN$#!" # todo: NEW TRANSLATION
+ ADD_SEA_REGION_TOOLTIP_INTERCEPT_TARGETS_PLURAL: "#title #v $COUNT$#! nepřátelské [Concept('concept_fleet', '$concept_fleets$')] lze zachytit:#!#indent_newline:3 \n$BREAKDOWN$#!" # todo: NEW TRANSLATION
+ ADD_SEA_REGION_TOOLTIP_INTERCEPT_BLOCKED_SINGULAR: "\n#title #v $COUNT$#! nepřátelský [Concept('concept_fleet', '$concept_fleet$')] nelze zachytit:#!#indent_newline:3 \n$BREAKDOWN$#!" # todo: NEW TRANSLATION
+ ADD_SEA_REGION_TOOLTIP_INTERCEPT_BLOCKED_PLURAL: "\n#title #v $COUNT$#! nepřátelské [Concept('concept_fleet', '$concept_fleets$')] nelze zachytit:#!#indent_newline:3 \n$BREAKDOWN$#!" # todo: NEW TRANSLATION
+ ADD_SEA_REGION_TOOLTIP_INTERCEPT_BLOCKED_ENTRY: "[MilitaryFormation.GetName] [SelectLocalization( MilitaryFormation.IsInBattle, 'ADD_SEA_REGION_TOOLTIP_INTERCEPT_BLOCKED_IN_BATTLE', 'ADD_SEA_REGION_TOOLTIP_INTERCEPT_BLOCKED_NO_PRESENCE' )]" # todo: NEW TRANSLATION
+ ADD_SEA_REGION_TOOLTIP_INTERCEPT_BLOCKED_IN_BATTLE: "je již v $concept_naval_battle$" # todo: NEW TRANSLATION
+ ADD_SEA_REGION_TOOLTIP_INTERCEPT_BLOCKED_NO_PRESENCE: "nemá $concept_presence$" # todo: NEW TRANSLATION
+ ADD_SEA_REGION_TOOLTIP_INTERCEPT_COMMANDER_DETECTION_ENTRY: "#v $VALUE|0=$#! od [Character.GetPrimaryRoleTitle]" # todo: NEW TRANSLATION
+ ADD_SEA_REGION_TOOLTIP_INTERCEPT_COMMANDER_CHANCE_ENTRY: "#v $VALUE|%=1$#! šance za pokus od [Character.GetPrimaryRoleTitle]" # todo: NEW TRANSLATION
+ ADD_SEA_REGION_TOOLTIP_INTERCEPT_DETECTION_LINE: "#v $VALUE|v0$#! průměrný [Concept('concept_detection', '$concept_detection$')] na [Concept('concept_ship', '$concept_ship$')] ve vašem [Concept('concept_fleet', '$concept_fleet$')]" # todo: NEW TRANSLATION
+ ADD_SEA_REGION_TOOLTIP_INTERCEPT_VISIBILITY_LINE: "vynásobeno #v $VALUE|v0$#! průměrným [Concept('concept_visibility', '$concept_visibility$')] na $concept_ship$ nepřátelské $concept_fleet$" # todo: NEW TRANSLATION
+ ADD_SEA_REGION_TOOLTIP_INTERCEPT_VISIBILITY_LINE_RANGE: "vynásobeno #v $MIN|v0$#! – #v $MAX|v0$#! průměrným [Concept('concept_visibility', '$concept_visibility$')] na $concept_ship$ každé nepřátelské $concept_fleet$" # todo: NEW TRANSLATION
+ ADD_SEA_REGION_TOOLTIP_INTERCEPT_EFFICIENCY_PART: "\nvynásobeno #v $VALUE|%0$#! [concept_mission_efficiency]" # todo: NEW TRANSLATION
+ ADD_SEA_REGION_TOOLTIP_INTERCEPT_EFFICIENCY_PART_RANGE: "\nvynásobeno #v $MIN|%0$#! – #v $MAX|%0$#! [concept_mission_efficiency]" # todo: NEW TRANSLATION
+ ADD_SEA_REGION_TOOLTIP_INTERCEPT_DETECTION_LINE_RANGE: "#v $MIN|v0$#! – #v $MAX|v0$#! průměrný [Concept('concept_detection', '$concept_detection$')] na [Concept('concept_ship', '$concept_ship$')] napříč vašimi [Concept('concept_fleet', '$concept_fleets$')]" # todo: NEW TRANSLATION
+ ADD_SEA_REGION_TOOLTIP_INTERCEPT_CHANCE_BREAKDOWN: "#header Šance na vynucení [Concept('concept_naval_battle', '$concept_naval_battle$')]#!\n#v $VALUE|%1$#! šance / den\n$TOOLTIP_DELIMITER$\n#title Vypočítáno jako:#!#indent_newline:3 \n$DETECTION_LINE$[ConcatIfNeitherEmpty('\n', '$COMMANDER_DETECTION$')]\n$VISIBILITY_LINE$\n#v $BASE_CHANCE|%3$#! základní šance, #v $SCALING|%2$#! více za každý $concept_ship$ v obou $concept_fleets$[ConcatIfNeitherEmpty('\n', '$COMMANDER_CHANCE$')]$EFFICIENCY_PART$\n$ATTEMPTS_LINE$#!" # todo: NEW TRANSLATION
+ ADD_SEA_REGION_TOOLTIP_INTERCEPT_ATTEMPTS_LINE: "#v $ATTEMPTS$#! pokusů za den proti #v $TARGETS$#! nepřátelským $concept_fleets$" # todo: NEW TRANSLATION
+ ADD_SEA_REGION_TOOLTIP_INTERCEPT_ATTEMPTS_LINE_MULTI: "#v $ATTEMPTS$#! pokusů za den od každé z vašich #v $FLEETS$#! $concept_fleets$ proti #v $TARGETS$#! nepřátelským $concept_fleets$" # todo: NEW TRANSLATION
+ ADD_SEA_REGION_TOOLTIP_INTERCEPT_HINT_SEA_REGIONS: "\n\n@information! [concept_mission_efficiency] je rozdělena mezi #v $SEA_REGIONS$#! $concept_sea_regions$ v tomto $concept_naval_mission_short$ — přiřazení menšího počtu je zvýší" # todo: NEW TRANSLATION
+ ADD_SEA_REGION_TOOLTIP_PORT_BOMBARDMENT_DETAILS: "$ENEMY$\n\n#title Ostřelávání přístavu při 100% $concept_presence$:#!#indent_newline:3 \n$BREAKDOWN$#!" # todo: NEW TRANSLATION
+ ADD_SEA_REGION_TOOLTIP_PORT_BOMBARDMENT_EMPTY: "#title Ostřelávání přístavu při 100% $concept_presence$:#!#indent_newline:3 \nŽádné nepřátelské pobřežní [Concept('concept_state', '$concept_states$')] by nebyly bombardovány#!" # todo: NEW TRANSLATION
+ ADD_SEA_REGION_TOOLTIP_PORT_BOMBARDMENT_ENTRY: "[State.GetOwner.GetFlagTextIcon] #bold [State.GetName]#!#indent_newline:3 \n#tooltippable #tooltip:[GetRawTextTooltipTag('$DEVASTATION_DESC$')] #v $DEVASTATION|=-2$#!#!#! [concept_devastation] / den$CHANCE$$FORT$$AT_RISK$#!" # todo: NEW TRANSLATION
+ PORT_BOMBARDMENT_CHANCE_LINE: "\n#tooltippable #tooltip:[GetRawTextTooltipTag('$CHANCE_DESC$')] #v $CHANCE|%2$#!#!#! šance / den zničit úroveň [Concept('concept_coastal_building', '$concept_coastal_building$')]" # todo: NEW TRANSLATION
+ PORT_BOMBARDMENT_AT_RISK_BUILDINGS: "\n@coastal_building! Ohrožené: $BUILDINGS$" # todo: NEW TRANSLATION
+ PORT_BOMBARDMENT_STATE_FORT_LINE: "\n#v $RESISTANCE|v0$#! odolnost z [GetBuildingType('building_naval_fortification').GetName], omezující vás na #tooltippable #tooltip:[GetRawTextTooltipTag('$EFFECTIVENESS_DESC$')] #v $EFFECTIVENESS|%0$#!#!#! účinnost ostřelování" # todo: NEW TRANSLATION
+ PORT_BOMBARDMENT_DEVASTATION_BREAKDOWN: "#header [concept_devastation] za den při 100% $concept_presence$#!\n#v $VALUE|=-2$#! [concept_devastation] / den\n$TOOLTIP_DELIMITER$\n#title Vypočítáno jako:#!#indent_newline:3 \n#v $RATE|v2$#! maximální denní [concept_devastation]\nvynásobeno #v $EFFECTIVENESS|%0$#! účinností ostřelování#!" # todo: NEW TRANSLATION
+ PORT_BOMBARDMENT_CHANCE_BREAKDOWN: "#header Denní šance zničit úroveň [Concept('concept_coastal_building', '$concept_coastal_building$')]#!\n#v $VALUE|%2$#! šance / den\n$TOOLTIP_DELIMITER$\n#title Vypočítáno jako:#!#indent_newline:3 \n#v $BASE|%2$#! základní šance\nvynásobeno #v $EFFECTIVENESS|%2$#! účinností ostřelování#!" # todo: NEW TRANSLATION
+ PORT_BOMBARDMENT_EFFECTIVENESS_BREAKDOWN: "#header Účinnost ostřelování#!\n#v $VALUE|%0$#! účinné\n$TOOLTIP_DELIMITER$\n#title Vypočítáno jako:#!#indent_newline:3 \n#v $STRENGTH|v0$#! ostřelovací síla\nděleno #v $RESISTANCE|v0$#! odolností\nomezeno na #v 100%#!#!" # todo: NEW TRANSLATION
+ PORT_BOMBARDMENT_ENEMY_PRESENCE_LINE: "#v $PRESENCE|%0$#! [concept_presence] nyní (min #v $THRESHOLD|%0$#! pro ostřelování)\n$STRENGTH_LINE$\n$FLEETS_LINE$" # todo: NEW TRANSLATION
+ PORT_BOMBARDMENT_STRENGTH_LINE_DIVIDED: "#v $PER_STATE|v0$#! ostřelovací síla na [concept_state] (#v $TOTAL|v0$/$STATES$#!)" # todo: NEW TRANSLATION
+ PORT_BOMBARDMENT_STRENGTH_LINE: "#v $STRENGTH|v0$#! ostřelovací síla" # todo: NEW TRANSLATION
+ PORT_BOMBARDMENT_ENEMY_FLEETS_SINGULAR: "#v $FLEETS$#! nepřátelská [Concept('concept_fleet', '$concept_fleet$')] v regionu" # todo: NEW TRANSLATION
+ PORT_BOMBARDMENT_ENEMY_FLEETS_PLURAL: "#v $FLEETS$#! nepřátelské [Concept('concept_fleet', '$concept_fleets$')] v regionu" # todo: NEW TRANSLATION
  ADD_SEA_REGION_TOOLTIP_TRAVEL_TIME_DETAILS: "#title Doba cestování:#!#indent_newline:3 \n$BREAKDOWN$#!" # todo: CHANGED
  ADD_SEA_REGION_TOOLTIP_TRAVEL_TIME_BREAKDOWN_ENTRY: "$DAYS|v0$ dní pro [MilitaryFormation.GetName]" # todo: NEW TRANSLATION
  ADD_SEA_REGION_TOOLTIP_SUPPLY_SHIP_DETAILS: "#title @supply! #v $DELTA|D=-$#! $concept_supply_ships$ požadováno:#!#indent_newline:3 \n$BREAKDOWN$#!" # todo: CHANGED
  ADD_SEA_REGION_TOOLTIP_SUPPLY_SHIP_BREAKDOWN_ENTRY: "@supply! #v $DELTA|D=-$#! pro [MilitaryFormation.GetName]" # todo: NEW TRANSLATION
  ADD_SEA_REGION_TOOLTIP_MULTI_SELECT_INSTRUCTIONS: "#i Klikněte#! pro přidání [StateRegion.GetName], #i $SHORTCUT_KEY_MOD_shift$Klikněte#! pro přidání#indent_newline:3 \n$BREAKDOWN$#!" # todo: NEW TRANSLATION
- REMOVE_SEA_REGION_TOOLTIP: "#header Odebrat [StateRegion.GetName] z $concept_naval_mission_short$#!\n$TOOLTIP_DELIMITER$\n$MULTI_SELECT_DETAILS$[ConcatIfNeitherEmpty('\n\n', '$DISCONNECTED_REGIONS_DETAILS$')]" # todo: NEW TRANSLATION
+ ADD_SEA_REGION_TOOLTIP_MULTI_SELECT_BLOCKED: "#N $SHORTCUT_KEY_MOD_shift$Kliknutí nebude fungovat: přidání všech sousedních $concept_sea_regions$ by překročilo limit oblasti $concept_naval_mission_short$ (#v $NEW_SIZE$#! z #v $MAX_SIZE$#! $concept_sea_regions$)#!" # todo: NEW TRANSLATION
+ REMOVE_SEA_REGION_TOOLTIP: "#header Odebrat [StateRegion.GetName] z $concept_naval_mission_short$#!\n$TOOLTIP_DELIMITER$\n[ConcatIfNeitherEmpty('$RAID_DETAILS$', '\n\n')][ConcatIfNeitherEmpty('$PROTECT_DETAILS$', '\n\n')]$INTERCEPT_DETAILS$[ConcatIfNeitherEmpty('$BOMBARDMENT_DETAILS$', '\n\n')][ConcatIfNeitherEmpty('$DISCONNECTED_REGIONS_DETAILS$', '\n\n')]$MULTI_SELECT_DETAILS$" # todo: CHANGED
  REMOVE_SEA_REGION_TOOLTIP_DISCONNECTED_REGIONS: "$concept_sea_regions_short$, které budou odstraněny, protože již nejsou spojeny#indent_newline:3 \n$BREAKDOWN$#!" # todo: CHANGED
  REMOVE_SEA_REGION_TOOLTIP_MULTI_SELECT_INSTRUCTIONS: "#i Klikněte#! pro odebrání [StateRegion.GetName], #i $SHORTCUT_KEY_MOD_shift$Klikněte#! pro odebrání#indent_newline:3 \n$BREAKDOWN$#!" # todo: CHANGED
  MAP_INTERACTION_EDIT_NAVAL_MISSION_NO_MISSION_SINGLE_DESC: "Žádné [concept_naval_mission] k dispozici pro [MilitaryFormation.GetName]" # todo: CHANGED
@@ -104,6 +146,7 @@
  MAP_INTERACTION_NAVAL_MISSION_SUPPLY_SHIPS: "Požadované zásobovací lodě: @supply! $SUPPLY_SHIPS|v$" # todo: NEW TRANSLATION
  MAP_INTERACTION_NAVAL_MISSION_TRAVEL_TIME: "Doba cesty: $TRAVEL_TIME|v$ dní" # todo: NEW TRANSLATION
  MAP_INTERACTION_BLOCKADE_EFFICIENCY: "[concept_blockade_efficiency]: #tooltippable #tooltip:[GetRawTextTooltipTag(MilitaryFormation.GetBlockadeEfficiencyDesc)] [MilitaryFormation.GetBlockadeEfficiency|v%0]#!#! → #tooltippable #tooltip:[GetRawTextTooltipTag(MilitaryFormation.GetBlockadeEfficiencyMaxDesc)] [MilitaryFormation.GetBlockadeEfficiencyMax|v%0]#!#!" # todo: NEW TRANSLATION
+ MAP_INTERACTION_PORT_BOMBARDMENT_DEVASTATION: "[concept_devastation]: #v $DEVASTATION|=-2$#! za den" # todo: NEW TRANSLATION
  MAP_INTERACTION_POWER_PROJECTION_INVOLVEMENT: "[concept_involvement] při plné [concept_presence]: $INVOLVEMENT|v+D$ v $REGIONS$" # todo: NEW TRANSLATION
  FLEET_LIST_ENTRY: "[MilitaryFormation.GetName]" # todo: NEW TRANSLATION
  NAVAL_MISSION_LIST_ENTRY: "[NavalMission.GetName]" # todo: NEW TRANSLATION
@@ -135,10 +178,41 @@
  COMMAND_CONFIRMATION_BLOCKADE_RUN: "[MilitaryFormation.GetName] je zakotvena v obléhaném přístavu. $COMMAND_CONFIRMATION_BLOCKADE_RUN_COMMON$" # todo: CHANGED
  COMMAND_CONFIRMATION_BLOCKADE_RUN_MULTIPLE: "Jedna nebo více vybraných flotil je zakotvena v obléhaných přístavech. $COMMAND_CONFIRMATION_BLOCKADE_RUN_COMMON$" # todo: CHANGED
  COMMAND_CONFIRMATION_BLOCKADE_RUN_COMMON: "#n Vyslání vyvolá bitvu s blokující flotilou.#!\n\nOpravdu chcete pokračovat?" # todo: CHANGED
- NAVAL_MISSION_MARKER_TOOLTIP: "[NavalMissionType.GetName] $concept_naval_mission_short$(s) v [NavalMissionMarker.GetProvince.GetStateRegion.GetName]" # todo: NEW TRANSLATION
- NAVAL_MISSION_MARKER_RECALLED_FOR_REPAIRS: "\n@repairing! Všechny [Concept('concept_fleet', '$concept_fleets$')] na tomto $concept_naval_mission_short$ byly staženy na opravy." # todo: NEW TRANSLATION
- NAVAL_MISSION_MARKER_SOME_RECALLED_FOR_REPAIRS: "\n@repairing! Některé [Concept('concept_fleet', '$concept_fleets$')] na tomto $concept_naval_mission_short$ byly staženy na opravy." # todo: NEW TRANSLATION
- FLEETS_ON_NAVAL_MISSION_IN_REGION_HEADER: "$concept_fleets$ na [NavalMissionType.GetName] $concept_naval_mission_short$(s) v [Province.GetStateRegion.GetName]" # todo: NEW TRANSLATION
+ NAVAL_MISSION_MARKER_HEADER: "[NavalMissionType.GetName]" # todo: NEW TRANSLATION
+ NAVAL_MISSION_MARKER_SUBHEADER: "#v [NavalMissionMarker.GetNumFleetsOnMissionType(NavalMissionType.Self)]#! [SelectLocalization( EqualTo_int32( NavalMissionMarker.GetNumFleetsOnMissionType(NavalMissionType.Self), '(int32)1' ), 'NAVAL_MISSION_MARKER_FLEET_SINGULAR', 'NAVAL_MISSION_MARKER_FLEET_PLURAL' )] v [NavalMissionMarker.GetProvince.GetStateRegion.GetName]" # todo: NEW TRANSLATION
+ NAVAL_MISSION_MARKER_ENEMY_HEADER: "Nepřátelský [NavalMissionType.GetName]" # todo: NEW TRANSLATION
+ NAVAL_MISSION_MARKER_ENEMY_SUBHEADER: "#v [NavalMissionMarker.GetNumEnemyFleetsOnMissionType(NavalMissionType.Self)]#! [SelectLocalization( EqualTo_int32( NavalMissionMarker.GetNumEnemyFleetsOnMissionType(NavalMissionType.Self), '(int32)1' ), 'NAVAL_MISSION_MARKER_FLEET_SINGULAR', 'NAVAL_MISSION_MARKER_FLEET_PLURAL' )] v [NavalMissionMarker.GetProvince.GetStateRegion.GetName]" # todo: NEW TRANSLATION
+ NAVAL_MISSION_MARKER_FLEET_EFFICIENCY: "[SelectLocalization(MilitaryFormation.IsOnPortBombardmentMission, 'NAVAL_MISSION_MARKER_FLEET_BOMBARDMENT_VALUE', 'NAVAL_MISSION_MARKER_FLEET_EFFICIENCY_VALUE')]" # todo: NEW TRANSLATION
+ NAVAL_MISSION_MARKER_FLEET_BOMBARDMENT_VALUE: "@devastation! #v #tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],FLEET_BOMBARDMENT_DEVASTATION_TOOLTIP [MilitaryFormation.GetDailyDevastationFromBombardment|-2]#!#!#! (#tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],NAVAL_MISSION_MARKER_FLEET_EFFICIENCY_TOOLTIP [MilitaryFormation.GetMissionEfficiency|v%0]#!#!)" # todo: NEW TRANSLATION
+ NAVAL_MISSION_MARKER_FLEET_EFFICIENCY_VALUE: "#tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],NAVAL_MISSION_MARKER_FLEET_EFFICIENCY_TOOLTIP [MilitaryFormation.GetMissionEfficiency|v%0]#!#!" # todo: NEW TRANSLATION
+ NAVAL_MISSION_MARKER_FLEET_EFFICIENCY_TOOLTIP: "[MilitaryFormation.GetMissionEfficiencyDesc]" # todo: NEW TRANSLATION
+ FLEET_BOMBARDMENT_DEVASTATION_TOOLTIP: "[SelectLocalization(IsDataModelEmpty(MilitaryFormation.GetBombardedStates), 'FLEET_BOMBARDMENT_DEVASTATION_TOOLTIP_EMPTY', 'FLEET_BOMBARDMENT_DEVASTATION_TOOLTIP_FULL')]" # todo: NEW TRANSLATION
+ FLEET_BOMBARDMENT_DEVASTATION_TOOLTIP_FULL: "[MilitaryFormation.GetDailyDevastationFromBombardmentDesc]" # todo: NEW TRANSLATION
+ FLEET_BOMBARDMENT_DEVASTATION_TOOLTIP_EMPTY: "#header [concept_devastation]#!\n#v [MilitaryFormation.GetDailyDevastationFromBombardment|-2]#! za den\n$TOOLTIP_DELIMITER$\n[SelectLocalization(MilitaryFormation.HasCoastalBombardmentTargets, 'FLEET_BOMBARDMENT_EMPTY_REASON_WITH_TARGETS', 'FLEET_BOMBARDMENT_EMPTY_REASON_NO_TARGETS')]" # todo: NEW TRANSLATION
+ FLEET_BOMBARDMENT_EMPTY_REASON_NO_TARGETS: "Žádné nepřátelské pobřežní $concept_states$ nehraničí s $concept_sea_regions$ tohoto $concept_naval_mission_short$" # todo: NEW TRANSLATION
+ FLEET_BOMBARDMENT_EMPTY_REASON_WITH_TARGETS: "[SelectLocalization(MilitaryFormation.HasSufficientSeaPresenceForBombardment, 'FLEET_BOMBARDMENT_EMPTY_REASON_DEVASTATED', 'FLEET_BOMBARDMENT_EMPTY_REASON_PRESENCE')]" # todo: NEW TRANSLATION
+ FLEET_BOMBARDMENT_EMPTY_REASON_PRESENCE: "Je zapotřebí alespoň [GetDefine('NMilitary','BOMBARDMENT_SEA_PRESENCE_THRESHOLD')|v%0] [concept_presence] k zahájení ostřelování ([MilitaryFormation.GetSeaPresence|v%0] nyní)" # todo: NEW TRANSLATION
+ FLEET_BOMBARDMENT_EMPTY_REASON_DEVASTATED: "Nepřátelské pobřežní $concept_states$ jsou již plně [Concept('concept_devastation', '$concept_devastated$')]" # todo: NEW TRANSLATION
+ FLEET_BOMBARDMENT_DEVASTATION_BREAKDOWN: "#header [concept_devastation]#!\n#v $TOTAL|-2$#! za den\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$" # todo: NEW TRANSLATION
+ FLEET_BOMBARDMENT_DEVASTATION_BREAKDOWN_ENTRY: "#v $DEVASTATION|-2$#! [State.GetName]" # todo: NEW TRANSLATION
+ NAVAL_MISSION_MARKER_FLEET_SINGULAR: "[Concept('concept_fleet', '$concept_fleet$')]" # todo: NEW TRANSLATION
+ NAVAL_MISSION_MARKER_FLEET_PLURAL: "[Concept('concept_fleet', '$concept_fleets$')]" # todo: NEW TRANSLATION
+ NAVAL_MISSION_MARKER_TRAVEL_DAYS: "#v [MilitaryFormation.GetTravelDaysLeft] dnů#!" # todo: NEW TRANSLATION
+ NAVAL_MISSION_MARKER_TRAVEL_SOON: "#v <1 den#!" # todo: NEW TRANSLATION
+ NAVAL_MISSION_MARKER_PRESENT_TITLE: "Přítomné:" # todo: NEW TRANSLATION
+ NAVAL_MISSION_MARKER_TRAVELING_TITLE: "Na cestě:" # todo: NEW TRANSLATION
+ COASTAL_BUILDING_MARKER_HEADER: "#v [State.GetName]#! je ostřelován!" # todo: NEW TRANSLATION
+ COASTAL_BUILDING_MARKER_SUBHEADER: "@devastation! #v [State.GetDevastationLevel|%r1]#! (#v [State.GetDevastationDailyChange|%-2=]#!) [concept_devastation]" # todo: NEW TRANSLATION
+ COASTAL_BUILDING_MARKER_LEVELS: "[SelectLocalization(Building.ShowLevelAndMaxLevel, 'COASTAL_BUILDING_MARKER_LEVELS_MAX', 'COASTAL_BUILDING_MARKER_LEVELS_NOMAX')]" # todo: NEW TRANSLATION
+ COASTAL_BUILDING_MARKER_LEVELS_MAX: "#v [Building.GetTotalLevels]#! / #v [Building.GetMaxLevels]#!" # todo: NEW TRANSLATION
+ COASTAL_BUILDING_MARKER_LEVELS_NOMAX: "#v [Building.GetTotalLevels]#!" # todo: NEW TRANSLATION
+ COASTAL_BUILDING_MARKER_CHANCE: "#tooltippable #tooltip:[GetRawTextTooltipTag(Building.GetBombardmentDestructionChanceDesc)] #v [Building.GetBombardmentDestructionChancePerDay|%2]#! / den#!#!" # todo: NEW TRANSLATION
+ COASTAL_BUILDING_CHANCE_TOOLTIP: "#header Riziko zničení $BUILDING$#!\n#v $CHANCE|%2$#! riziko za den ztráty [concept_building_level]" # todo: NEW TRANSLATION
+ COASTAL_BUILDING_MARKER_COL_BUILDING: "[Concept('concept_coastal_building', '$concept_coastal_building$')]" # todo: NEW TRANSLATION
+ COASTAL_BUILDING_MARKER_COL_LEVELS: "[Concept('concept_building_level', 'Levels')]" # todo: NEW TRANSLATION
+ COASTAL_BUILDING_MARKER_COL_RISK: "Riziko" # todo: NEW TRANSLATION
+ FLEETS_ON_NAVAL_MISSION_IN_REGION_HEADER: "[NavalMissionType.GetName] $concept_naval_mission_short$(s)" # todo: CHANGED
+ ENEMY_FLEETS_ON_NAVAL_MISSION_IN_REGION_HEADER: "Nepřátelské [NavalMissionType.GetName] $concept_naval_mission_short$(s)" # todo: NEW TRANSLATION
  NAVAL_MISSION_LIST_PANEL_TRAVEL_TIME_HEADER: "Doba přesunu" # todo: CHANGED
  NAVAL_MISSION_LIST_PANEL_TRAVEL_TIME_HEADER_TOOLTIP: "#header Doba přesunu#!\n$TOOLTIP_DELIMITER$\nJak dlouho (v dnech) bude nejvzdálenější [concept_military_formation] potřebovat, aby se dostal na určené místo z aktuální pozice." # todo: CHANGED
  NAVAL_MISSION_LIST_PANEL_SUPPLY_SHIPS_HEADER: "Zásobovací lodě" # todo: NEW TRANSLATION
@@ -162,7 +236,7 @@
  naval_mission_type_project_power: "Projekce síly"
  naval_mission_type_project_power_desc: "Mise udělená [Concept('concept_fleet','flotile')], aby plula u pobřeží [Concept('concept_strategic_region','$concept_strategic_regions$')] a tím generovala [concept_involvement|l]."
  naval_mission_type_port_bombardment: "Bombardování přístavu"
- naval_mission_type_port_bombardment_desc: "Mise udělená [Concept('concept_fleet','flotile')] k bombardování nepřátelských pobřežních států přilehlých k mořskému uzlu, způsobující zkázu a potenciálně poškozující pobřežní budovy."
+ naval_mission_type_port_bombardment_desc: "Mise [concept_naval_mission] udělená [concept_fleet] k bombardování nepřátelských pobřežních států přiléhajících k této námořní oblasti, způsobující zkázu a potenciálně poškozující [Concept('concept_coastal_building','$concept_coastal_buildings$')]." # todo: CHANGED
  naval_mission_type_piracy: "Pirátství"
  naval_mission_type_piracy_desc: "Mise udělená [Concept('concept_fleet','flotile')] k zabavení [Concept('concept_good','zboží')] z nepřátelských nebo neutrálních zemí, které procházejí přiřazenými oblastmi."
  naval_mission_type_privateer: "Korzáření"
@@ -175,6 +249,3 @@
  NAVAL_BATTLE_LOG_CONDITION_SUNK_SHIP: "[NAVAL_BATTLE_CONDITION.GetNameNoIcon] způsobil potopení [SHIP.GetName]!"
  NAVAL_BATTLE_LOG_CONDITION_EFFECT_TOTAL: "[NAVAL_BATTLE_CONDITION.GetName] způsobil poškození @ships! $NUM_AFFECTED_SHIPS|v$ lodím!"
  NAVAL_BATTLE_LOG_CURRENT_PAGE: "Strana [NavalBattle.GetCurrentLogPage]/[NavalBattle.GetNumLogPages]"
- NAVAL_MISSION_REGIONS: "[GetSelectedFleetsMissionRegionsDesc]" # todo: NEW TRANSLATION
- FLEET_NAVAL_MISSION_REGIONS: "[MilitaryFormation.GetNavalMissionRegionsDesc]" # todo: NEW TRANSLATION
- MAP_INTERACTION_EDIT_NAVAL_MISSION_SEA_REGIONS_EXTRA_DESC: "Celková oblast mise: $MISSION_AREA|v$\nPočet potřebných zásobovacích lodí: @supply! $SUPPLY_SHIPS|v$\nDoba cestování: $TRAVEL_TIME|v$ dní" # todo: CHANGED

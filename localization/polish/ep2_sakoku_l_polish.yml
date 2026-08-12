@@ -1,0 +1,55 @@
+﻿l_polish:
+ je_sakoku: "Uzavřená země" # todo: NEW TRANSLATION
+ je_sakoku_reason: "Od období Kan'ei a nejranějších dnů Tokugawovy moci je $JAP$ zemí uzavřenou pro cizince. Pouhý přítok obchodu s několika vybranými státy v několika vyhrazených přístavech je vše, co bylo kdy povoleno. I když tento systém trvá více než dvě století, svět se začíná měnit způsoby, které ztěžují udržet zemi uzavřenou, i když zájmy uvnitř $JAP$ by si přály, aby věci zůstaly navždy stejné. Pokud nelze zastavit zahraniční snahy otevřít naše země, musíme dovážet jejich myšlenky stejně jako jejich zboží." # todo: NEW TRANSLATION
+ je_sakoku_meiji_restoration: "#b Císař#! byl znovu uveden do moci a #b Šógun#! svržen." # todo: NEW TRANSLATION
+ je_sakoku_stop_being_closed_button: "Zrušit [GetLawType('law_sakoku').GetName]" # todo: NEW TRANSLATION
+ je_sakoku_stop_being_closed_button_desc: "Zhoršující se situace a rostoucí tlaky ze zahraničí učinily konec [GetLawType('law_sakoku').GetName] skutečnou nouzovou situací. Za těchto okolností bychom mohli být schopni násilně ukončit starý systém izolace, ale tím rozzuříme všechny, kdo stále podporují staré zákony." # todo: NEW TRANSLATION
+ notification_morrison_incident_has_incidented_name: "Obchodník ostřelován $JAP$" # todo: NEW TRANSLATION
+ notification_morrison_incident_has_incidented_desc: "Odvážný obchodník z našich zemí se pokusil porušit $JAP_ADJ$ omezení týkající se cizích obchodních lodí a byl na něj otevřen oheň pobřežní baterií, což zhoršilo vztahy mezi našimi státy." # todo: NEW TRANSLATION
+ notification_morrison_incident_has_incidented_tooltip: "#header $notification_morrison_incident_has_incidented_name$#!\n$TOOLTIP_DELIMITER$\n$notification_morrison_incident_has_incidented_desc$" # todo: NEW TRANSLATION
+ light_hand_with_foreigners: "Mírný přístup k cizincům" # todo: NEW TRANSLATION
+ caved_to_foreign_pressure_opposition: "Ustoupení zahraničnímu tlaku" # todo: NEW TRANSLATION
+ caved_to_foreign_pressure_government: "Ustoupení zahraničnímu tlaku" # todo: NEW TRANSLATION
+ overdue_break_with_tradition: "Dlouho zpožděné odtržení od tradice" # todo: NEW TRANSLATION
+ forced_transition_from_tradition: "Nucený přechod od tradice" # todo: NEW TRANSLATION
+ the_picked_lock_modifier: "Odemčený zámek" # todo: NEW TRANSLATION
+ sakoku_entrenched_modifier: "Sakoku zakořeněné" # todo: NEW TRANSLATION
+ meiji_failure_modifier: "Neúspěšné reformy Meidžiho restaurace" # todo: NEW TRANSLATION
+ ep2_sakoku.1.t: "Znepokojivá [SCOPE.sCountry('opium_wars_loser').GetAdjectiveNoFormatting] porážka" # todo: NEW TRANSLATION
+ ep2_sakoku.1.d: "Náš rozsáhlý a vážený soused, [SCOPE.sCountry('opium_wars_loser').GetName], právě prohrál válku o opium a obchod proti nějakému zámořskému nováčkovi. Pokud [SCOPE.sCountry('opium_wars_loser').GetNameNoFormatting] nedokáže ovládnout svůj vlastní trh a udržet cizince venku, jak můžeme udržet [GetLawType('law_sakoku').GetName] v našich vlastních zemích?" # todo: NEW TRANSLATION
+ ep2_sakoku.1.f: ""Všechny ty země, všechno to bohatství, veškerá ta moc—nic se nevyrovná síle, která se proti nim postavila. Cizinci už prosí, aby jim bylo dovoleno vstoupit do naší země. Máme následovat příklad [SCOPE.sCountry('opium_wars_loser').GetNameNoFormatting] a, stejně jako [SCOPE.sCountry('opium_wars_loser').GetNameNoFormatting], snažit se je zadržet, dokud jejich děla nezačnou lítat oheň na naše města? Nebo hledáme vlastní cestu? Musíme se rozhodnout nyní, dříve než tyto síly železa a děl vstoupí do našich vod a rozhodnou za nás."" # todo: NEW TRANSLATION
+ ep2_sakoku.1.a: "Nyní je třeba zvážit to nemyslitelné." # todo: NEW TRANSLATION
+ ep2_sakoku.1.b: "Nyní je třeba přijmout to nemyslitelné." # todo: NEW TRANSLATION
+ end_sakoku_button_now_available: "Možnost násilně předčasně ukončit [GetLawType('law_sakoku').GetName] se nyní zobrazí v $je_sakoku$." # todo: NEW TRANSLATION
+ ep2_sakoku.2.t: "Vypáčení zámku" # todo: NEW TRANSLATION
+ ep2_sakoku.2.d: "S bouřemi nespokojenosti uvnitř i zvenčí se [GetLawType('law_bakufu').GetName] rozhodl prosazovat okamžité ukončení [GetLawType('law_sakoku').GetName]." # todo: NEW TRANSLATION
+ ep2_sakoku.2.f: "Dav obchodníků zaplavil celní úřad. Naproti nim stál jeden zkoušený úředník sám. \"Ano, samozřejmě to znamená, že země už nebude uzavřená.\"\n\nTucty otázek z houfu na administrátora dopadly jako řev. \"Co to tedy bude místo toho? Já... nejsem si jistý. Možná bude — ne, počkejte, jen proto, že — toto rozhodnutí není moje ani vaše, nemůžete prostě —\"\n\nKaždá jeho odpověď vyvolala desítky dalších otázek. #italic Práce byla mnohem snazší, když byla země ponechána sama sobě#!, pomyslel si." # todo: NEW TRANSLATION
+ ep2_sakoku.2.a: "Budoucnost [ROOT.GetCountry.GetNameNoFormatting] spočívá v [GetLawType('law_mercantilism').GetName]." # todo: NEW TRANSLATION
+ ep2_sakoku.2.b: "[GetLawType('law_free_trade').GetName] osvobodí [ROOT.GetCountry.GetNameNoFormatting]." # todo: NEW TRANSLATION
+ ep2_sakoku.2.c: "[GetLawType('law_protectionism').GetName] nám umožní opatrně obchodovat se zahraničními zájmy" # todo: NEW TRANSLATION
+ ep2_sakoku.3.t: "Incident [SCOPE.sCharacter('morrison_incident_country_namesake').GetLastNameNoFormatting]" # todo: NEW TRANSLATION
+ ep2_sakoku.3.d: "Obchodník z [SCOPE.sCountry('morrison_incident_country').GetName] se pokusil ignorovat přísné protokoly [GetLawType('law_sakoku').GetName] a obchodovat v neschváleném přístavu. Jeho loď, #italic [SCOPE.sCharacter('morrison_incident_country_namesake').GetLastNameNoFormatting]#!, byla odražena palbou pobřežních baterií. Vztahy, pokud se tomu tak dá říkat, s [SCOPE.sCountry('morrison_incident_country').GetNameNoFormatting] se zhoršily." # todo: NEW TRANSLATION
+ ep2_sakoku.3.f: "Velitel se ušklíbl, když granát konečně zasáhl loď. Zákon byl velmi jasný; loď neměla právo plout v těchto vodách. Nezajímalo ho, co si o tom myslel kapitán na palubě té lodi. Chtěl jen, aby se ta loď otočila a odplula pryč." # todo: NEW TRANSLATION
+ ep2_sakoku.3.a: "Místní posádka udělala, co měla." # todo: NEW TRANSLATION
+ ep2_sakoku.3.b: "Měli bychom se omluvit [SCOPE.sCountry('morrison_incident_country').GetNameNoFormatting] a odškodnit obchodníka, aby se situace urovnala." # todo: NEW TRANSLATION
+ ep2_sakoku.3.c: "Toto je příležitost, kterou potřebujeme k přehodnocení potřeby [GetLawType('law_sakoku').GetName]" # todo: NEW TRANSLATION
+ ep2_sakoku.4.t: "Odemčený zámek" # todo: NEW TRANSLATION
+ ep2_sakoku.4.d: "Čelící tlakům zvenčí i zevnitř bylo [GetLawType('law_sakoku').GetName] zrušeno. [ROOT.GetCountry.GetNameNoFormatting] si otevřela novou budoucnost." # todo: NEW TRANSLATION
+ ep2_sakoku.4.f: "Úředník hleděl na zátoku. U mol stály nové lodě. Neznámé lodě mávající prapory, které nikdy předtím neviděl. Co [ROOT.GetCountry.GetNameNoFormatting] nabízely? Co se snažily vzít od [ROOT.GetCountry.GetNameNoFormatting]?\n\nJeho pohled se dlouho, velmi dlouho zdržel na dokovaných lodích, než se konečně odvrátil. Jeho oči mu dnes nemohly dát odpověď, kterou chtěl. Jen čas mohl říci, co tato nová éra přinese jeho vlasti." # todo: NEW TRANSLATION
+ ep2_sakoku.4.a: "Dnes se Japonsko otevírá!" # todo: NEW TRANSLATION
+ ep2_sakoku.5.t: "Zrezivělé" # todo: NEW TRANSLATION
+ ep2_sakoku.5.d: "Pokračující uplatňování [GetLawType('law_sakoku').GetName] v [ROOT.GetCountry.GetNameNoFormatting], i když je země zmítána dramatickými politickými otřesy, není dobrým znamením pro naději na vyjití z vlastního izolacionismu země. Zdá se, že [GetLawType('law_sakoku').GetNameNoFormatting] je zde, aby zůstalo." # todo: NEW TRANSLATION
+ ep2_sakoku.5.f: "Úředník hleděl na zátoku. U mol stály staré lodě, stejné, které by viděl jeho otec, nebo jeho dědeček, nebo jejich předkové několik generací zpět. Uvidí jeho děti stejné lodě? Jeho vnuci? Změní se tento výhled někdy?\n\nJeho pohled se dlouho, velmi dlouho zdržel na dokovaných lodích, než se konečně odvrátil. Jeho oči mu dnes nemohly dát odpověď, kterou chtěl. Jen čas mohl říci, zda jeho vlast skutečně zůstane navždy stejná." # todo: NEW TRANSLATION
+ ep2_sakoku.5.a: "Zámek zůstává zavřený." # todo: NEW TRANSLATION
+ meiji.14.t: "Prázdná Meidžiho restaurace" # todo: NEW TRANSLATION
+ meiji.14.d: "Navzdory vzrušujícím slibům reforem prosazovaných novou vládou [ROOT.GetCountry.GetCustom('JAP_era_name')] [ROOT.GetCountry.GetNameNoFlag] neprošla žádnými zásadními změnami. Kritici lamentují, že stát je dnes málo odlišný od stavu před restaurací." # todo: NEW TRANSLATION
+ meiji.14.f: "Obrovský stroj funěl a bručel na podlaze továrny, roztočil obrovský setrvačník a poháněl mohutné soustruhy a vrtačky. Tyto stroje vyráběly nové hlavně, nové zámky, nové spouště pro obrovský arzenál zbraní. Brzy jeden národ ovládne tuto páru a železo a vtiskne svůj otisk do světa— a tímto národem nebude [ROOT.GetCountry.GetNameNoFormatting]." # todo: NEW TRANSLATION
+ meiji.14.a: "Dnes slunce spočívá na snu." # todo: NEW TRANSLATION
+ je_end_edo_system_button_name: "Ukončit edský stavový systém" # todo: NEW TRANSLATION
+ je_end_edo_system_button_desc: "V této éře reforem a obnovy nás starý kastovní systém brzdí. Každý občan může být cennou součástí státu, bez ohledu na své postavení v životě." # todo: NEW TRANSLATION
+ edo_system_not_support_enforcement_tt: "Neumožňuje přijetí [GetLawType('law_intermediate_edo_system').GetName] ani [GetLawType('law_strict_edo_system').GetName]" # todo: NEW TRANSLATION
+ edo_system_ends_tt: "[ROOT.GetCountry.GetNameNoFlag] zcela ruší [Concept('concept_social_hierarchy','$edo_system$')]" # todo: NEW TRANSLATION
+ notification_edo_system_disappears_name: "Edo systém se rozpadá" # todo: NEW TRANSLATION
+ notification_edo_system_disappears_desc: "V důsledku nedávných kulturních a společenských změn již systém Edo není uznávaným [concept_social_hierarchy] v [SCOPE.sCountry('relevant_country_scope').GetName]." # todo: NEW TRANSLATION
+ notification_edo_system_disappears_tooltip: "#header $notification_edo_system_disappears_name$#!\n$TOOLTIP_DELIMITER$\n$notification_edo_system_disappears_desc$" # todo: NEW TRANSLATION
+ je_meiji_army_barracks_condition: "Každý [ROOT.GetCountry.GetAdjectiveNoFlag] [GetBuildingType('building_barrack').GetName]:\n$EFFECT_LIST_BULLET$ #bold Není aktivován#! #yellow $pm_no_organization$#! ani #yellow $pm_samurai_training$#!" # todo: NEW TRANSLATION
