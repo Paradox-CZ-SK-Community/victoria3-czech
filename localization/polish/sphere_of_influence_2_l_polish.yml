@@ -5,7 +5,7 @@
  je_eastern_frontier_tt_2: "[GetGeographicRegion('geographic_region_chorasmia').GetName] je vlastněn zemí [SCOPE.GetRootScope.GetCountry.GetName] nebo jejími závislými zeměmi."
  je_eastern_frontier_tt_3: "[GetGeographicRegion('geographic_region_transoxiana').GetName] je vlastněn zemí [SCOPE.GetRootScope.GetCountry.GetName] nebo jejími závislými zeměmi."
  je_eastern_frontier_tt_4: "Dobyli jsme a #bold obnovili#! [SCOPE.sStateRegion('merv_scope').GetName]."
- je_eastern_frontier_tt_5: "Použitím [concept_decree] [GetDecreeType('decree_emergency_relief').GetName] lze kterýkoli vlastněný [concept_state] označit za cíl přesídlení." 
+ je_eastern_frontier_tt_5: "Použitím [concept_decree] [GetDecreeType('decree_emergency_relief').GetName] lze kterýkoli vlastněný [concept_state] označit za cíl přesídlení."
  khorasan_tt: "Vyžadované [Concept('concept_state_region','$concept_state_regions$')]:\n$STATE_HERAT$\n$STATE_KABUL$\n$STATE_KANDAHAR$\n$STATE_BALKH$\n$STATE_CENTRAL_HIGHLANDS$\n$STATE_MERZ$\n$STATE_NORTHERN_BALUCHISTAN$"
  chorasmia_tt: "Vyžadované [Concept('concept_state_region','$concept_state_regions$')]:\n$STATE_KHIVA$\n$STATE_TURKMENIA$"
  transoxiana_tt: "Vyžadované [Concept('concept_state_region','$concept_state_regions$')]:\n$STATE_FERGANA$\n$STATE_TAJIKISTAN$\n$STATE_UZBEKIA$"
@@ -88,7 +88,7 @@
  britain_wants_herat_tt: "[SCOPE.sCountry('britain_scope').GetName] vůči nám projeví zvýšenou míru agresivity."
  PER_appealed_to_rival_tt: "Nemá nevyřízenou ani přijatou žádost adresovanou evropské [concept_great_power]"
  PER_GBR_support_request_rejected_tt: "$GBR$ v posledních #variable 10 letech#! žádost o podporu #bold neodmítla#!"
- PER_RUS_support_request_rejected_tt: "$RUS$ v posledních #variable 10 letech#! žádost o podporu #bold neodmítlo#!" 
+ PER_RUS_support_request_rejected_tt: "$RUS$ v posledních #variable 10 letech#! žádost o podporu #bold neodmítlo#!"
  notification_persian_assistance_request_accepted_name: "[SCOPE.sCountry('relevant_country').GetName] přijímá žádost o podporu"
  notification_persian_assistance_request_accepted_desc: "[SCOPE.sCountry('relevant_country').GetName] přijala naši žádost o vojenskou misi."
  notification_persian_assistance_request_accepted_tooltip: "#header $notification_persian_assistance_request_accepted_name$#!\n$TOOLTIP_DELIMITER$\n$notification_persian_assistance_request_accepted_desc$"
@@ -121,20 +121,14 @@
  request_recognition_proposal_third_party_declined_name: "$request_recognition_action_name$ odmítnuto"
  request_recognition_proposal_third_party_declined_desc: "[TARGET_COUNTRY.GetName] odmítla žádost o vyslanectví od země [INITIATOR_COUNTRY.GetName]:\n$STATES_DESC$"
  request_recognition_proposal_notification_effects_desc: "Pokud přijmeme, jejich pokrok směrem k tomu, aby se stali [concept_recognized_power], se zvýší."
-
-
-
  je_earn_recognition: "Získávání uznání"
  je_earn_recognition_reason: "Stav #bold ukazatele pokroku#! bude na základě určitých podmínek #tooltippable;tooltip:[Country.GetTooltipTag],je_earn_recognition_advance postupovat#! nebo #tooltippable;tooltip:[Country.GetTooltipTag],je_earn_recognition_deplete ustupovat#!. Jakmile #bold ukazatel pokroku#! dosáhne hodnoty #bold 200#!, [SCOPE.GetRootScope.GetCountry.GetName] se stane [concept_recognized_power].\n\nPříliš dlouho bylo zemi [SCOPE.GetRootScope.GetCountry.GetNameNoFormatting] upíráno náležité diplomatické uznání takzvanými civilizovanými národy světa, což nás činilo zranitelnými vůči jejich postupům a bránilo nám řádně vykonávat vlastní svrchovaná práva.\n\nMěli bychom učinit vše, co je v našich silách, abychom tuto situaci napravili a získali si místo u jejich stolu jako respektovaní sobě rovní."
  je_earn_recognition_complete_tt: "#bold Ukazatel pokroku#! dosáhl hodnoty #bold 200#!, což značí, že naše mezinárodní postavení se v očích světa zlepšilo"
  is_subject_of_great_power_tt: "Je přímou nebo nepřímou [concept_subject] #b [concept_great_power]#!"
-
  je_earn_recognition_advance: "• Prosazení [concept_war_goal] proti [concept_major_power] nebo vyšší\n• [concept_gdp] v první desítce\n• [Concept('concept_gdp_per_capita','$concept_gdp_per_capita_short$')] v první dvacítce\n• [concept_sol] v první dvacítce\n• Míra [concept_literacy] nad 40 %\n• Má [Concept('concept_votes','$concept_voting_rights$')]\n• #bold $offer_embassy$#! [concept_article] je aktivní" ##bold Request Embassy#! [concept_diplomatic_action] is active
  je_earn_recognition_deplete: "• Byl proti vám prosazen [concept_war_goal]\n• [concept_gdp] mimo první třicítku\n• Míra [concept_literacy] pod 20 %\n• [concept_slavery] #bold není#! zrušeno.\n• Má [GetLawType('law_serfdom').GetName]\n• Má [GetLawType('law_traditionalism').GetName]\n• Má [GetLawType('law_isolationism').GetName]\n• Má [GetLawType('law_outlawed_dissent').GetName]"
-
  earning_recognition_progress_bar: "Získávání uznání"
  earning_recognition_progress_bar_desc: "Pokrok: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/200)"
-
  earning_recognition_progress_gdp_tt: "[concept_gdp] v první desítce"
  earning_recognition_progress_gdpc_tt: "[Concept('concept_gdp_per_capita','$concept_gdp_per_capita_short$')] v první dvacítce"
  earning_recognition_progress_voting_tt: "má [Concept('concept_votes','$concept_voting_rights$')]"
@@ -256,7 +250,7 @@
  dracula_coup_tt: "Jako v transu předává [SCOPE.GetRootScope.GetCountry.GetRuler.GetPrimaryRoleTitle] [SCOPE.GetRootScope.GetCountry.GetRuler.GetFirstName] otěže moci hraběti."
  umbral_coup_modifier: "Stínový převrat"
  dracula_leaves_tt: "Beze slova hrabě nastupuje do svého kočáru."
- dracula_passive_tt: "Drákula si ponechá svou současnou ideologii" 
+ dracula_passive_tt: "Drákula si ponechá svou současnou ideologii"
  spooky_halloween_events.2.t: "Půlnoční návštěvník"
  spooky_halloween_events.2.d: "[SCOPE.sCharacter('dracula_scope').GetFullName] nenápadně dorazil k sídlu [SCOPE.sCharacter('fair_maiden_scope').GetFullName], prošel kolem jeho malátných stráží a vstoupil do dlouhých temných chodeb vedoucích k její pracovně, kde nad hromadami korespondence stále svítilo osamělé světlo."
  spooky_halloween_events.2.f: "[SCOPE.sCharacter('fair_maiden_scope').GetFullNameNoFormatting] nepoznávala muže, který stál na jejím prahu, ani slova, která vycházela z jeho úst, i když zjevně zněla jejím vlastním jazykem. V mysli jí krátce probleskly výjevy formálních večeří a slavností, dokud se její mysl i pohled nezmocnily cizincovy oči.\n\nPlanuly tak strašlivým světlem, že se na ně nedokázala dívat, ale ani od nich nedokázala odvrátit zrak. Když cizinec vykročil o krok vpřed a pomalu obnažil zuby, vynaložila poslední úsilí, aby odvrátila oči, a snažila se přinutit slova, jakákoli slova, aby unikla z jejích úst."

@@ -1,20 +1,4 @@
 ﻿l_polish:
- je_risorgimento: "Risorgimento"
- je_risorgimento_reason: "Větry nacionalismu vanoucí Evropou začaly procházet i zemí [ROOT.GetCountry.GetName] a inspirovaly osobnosti uvnitř naší vlády i mimo ni, aby hleděly k obnově jediné, sjednocené Itálie.\n\nDokud je tento záznam v deníku aktivní, jakákoli aktivní [concept_revolution] způsobená hnutím [SelectLocalization(SCOPE.sPoliticalMovement('italian_national_movement').IsValid, SCOPE.sPoliticalMovement('italian_national_movement').GetName, 'movement_italian_national')] povede k uchopení vlády země [ROOT.GetCountry.GetAdjective] panitalskými revolucionáři[ROOT.GetCountry.GetCustom('italy_fate_loc')]."
- austrian_radicals_cooldown_tt: "V uplynulých #v [GetPlayer.MakeScope.ScriptValue('risorgimento_action_cooldown_years')]#! letech nebylo použito rozhodnutí #bold Podpořit italský nacionalismus#!"
- italian_radicals_cooldown_tt: "V uplynulých #v [GetPlayer.MakeScope.ScriptValue('risorgimento_action_cooldown_years')]#! letech nebylo použito rozhodnutí #bold Podpořit prosjednocovací nálady#!"
- is_italy_tt: "Vytvořila národ #bold Itálie#!"
- italy_will_get_couped_custom: " a nastolení #bold demokratické republiky#!"
- italy_will_get_annexed_custom: " a #red anexe#! vedoucím italským státem"
- owns_italian_homelands_tt: "Vlastní státy [concept_homeland] kultury [GetCulture('north_italian').GetName] nebo [GetCulture('south_italian').GetName]"
- je_risorgimento_italian_minors_tt: "#b $ITA_ADJ$#! menší národy se s námi mohou sjednotit, pokud se staneme jediným #b $ITA_ADJ$#! [concept_unification_candidate]"
- je_risorgimento_austrian_radicals_button: "Podpořit italský nacionalismus"
- je_risorgimento_austrian_radicals_button_desc: "Od konce napoleonských válek drží italská území cizí mocnosti. Naše cesta ke sjednocení poloostrova je může inspirovat, aby pozvedly zbraně proti vlastním utlačovatelům."
- je_risorgimento_italian_radicals_button: "Podnítit prosjednocovací nálady"
- je_risorgimento_italian_radicals_button_desc: "Po celém Apeninském poloostrově se masy pomalu probouzejí a obracejí k myšlence sjednocené Itálie. Pokud jejich vládci nejsou nakloněni následovat toto volání, možná jím budou jejich lidé."
- ausrad_cooldown_year_tt: "Toto rozhodnutí bude znovu dostupné za #v [GetPlayer.MakeScope.ScriptValue('risorgimento_action_cooldown_years')] let#!"
- itarad_cooldown_year_tt: "Toto rozhodnutí bude znovu dostupné za #v [GetPlayer.MakeScope.ScriptValue('risorgimento_action_cooldown_years')] let#!"
- owns_no_italian_homelands_tt: "#b Nevlastní#! žádné státy [concept_homeland] kultury [GetCulture('north_italian').GetName] ani [GetCulture('south_italian').GetName]"
  russia_monarchy.1.t: "Nástup Alexandra II."
  russia_monarchy.1.d: "Po skončení vlády Mikuláše I. nastoupil [SCOPE.sCharacter('tsar_scope').GetFullName] na trůn země [ROOT.GetCountry.GetAdjective] jako Alexandr II., car vší Rusi. Mnozí liberální byrokraté doufají, že [SCOPE.sCharacter('tsar_scope').GetHerHis|U] vláda přinese novou éru reforem."
  russia_monarchy.1.f: "„Tváří v tvář Bohu, který je neviditelně přítomen s námi, přijímáme posvátný slib mít vždy blaho naší vlasti za jediný cíl.\n\nAno, vedeni a chráněni Prozřetelností, která nás povolala k této veliké službě, pozvedněme Rusko na nejvyšší stupeň moci a slávy; nechť se skrze nás naplní stálá přání a záměry našich vznešených předchůdců, požehnaných a nezapomenutelných.“" #- Alexander's coronation manifesto
@@ -106,87 +90,10 @@
  king_of_sweden_denmark_and_norway_key: "Švédska, Dánska a Norska"
  oscar_i_death_tt: "Oskar I. zemře."
  charles_xv_death_tt: "Karel XV. zemře."
- unfriendly_nation_with_interest_in_alaska_tt: "Nepřátelská [concept_country] s [concept_rank] vyšším než náš má [concept_interest] ve #bold pacifickém pobřeží#! [concept_strategic_region]"
- friendly_nation_with_interest_in_alaska_tt: "#bold Severoamerická#! [concept_great_power] s [concept_incorporated_state] v #bold pacifickém pobřeží#! [concept_strategic_region] má s námi pozitivní [concept_relations]"
- sold_alaska_tt: "Úspěšně jsme prodali #bold Aljašku#!"
- not_sold_alaska_tt: "#bold Neprodali#! jsme úspěšně #bold Aljašku#!"
- alaska_transaction_ongoing_tt: "Žádná země momentálně nepodává nabídku na #b Aljašku#!" # todo: NEW TRANSLATION
- has_alaska_sale_cooldown_tt: "V uplynulém #bold roce#! nebyla tato akce použita"
- notification_alaska_negotiations_fail_name: "Nabídka na Aljašku odmítnuta"
- notification_alaska_negotiations_fail_desc: "[SCOPE.sCountry('alaska_buyer').GetName] odstoupila od jednání o prodeji Aljašky. Území zůstane pod naší kontrolou, dokud nebude učiněn další pokus."
- notification_alaska_negotiations_fail_tooltip: "#header $notification_alaska_negotiations_fail_name$#!\n$TOOLTIP_DELIMITER$\n$notification_alaska_negotiations_fail_desc$"
- je_sale_of_alaska: "Prodej Aljašky"
- je_sale_of_alaska_reason: "[SCOPE.sState('alaska_scope').GetName], izolované území na okraji země [SCOPE.sCountry('alaska_owner_scope').GetName], se v posledních letech ocitlo pod hrozbou zabrání nepřátelskými cizími mocnostmi.\n\nAby z tohoto území vytěžili alespoň nějaký zisk a vyhnuli se ponížení, že by je v případě války zabrali naši nepřátelé, úředníci ve vládě [SCOPE.sCharacter('ruler_scope').GetPrimaryRoleTitle] navrhli najít pro [SCOPE.sState('alaska_scope').GetName] kupce."
- je_sell_alaska_button: "Najít kupce"
- je_sell_alaska_button_desc: "Území Aljašky představuje pro náš stát spíše závazek než přínos. Nalezení kupce pro Aljašku prospěje jak naší pokladně, tak naší národní bezpečnosti."
- selling_alaska_tt: "Obdržíme významnou peněžní náhradu za [SCOPE.sState('alaska_scope').GetName] a zlepšené [concept_relations] s jejím #bold kupcem#!"
- je_buy_alaska_button: "Učinit nabídku na Aljašku"
- je_buy_alaska_button_desc: "Aljaška je v současnosti držena jako koloniální území spřátelenou zemí. Možná dokážeme využít naše vztahy k zakoupení tohoto území."
  foster_national_agitation: "Rozdmýchat národní agitaci"
  foster_national_agitation_desc: "#lore Pověřte [Character.GetFullName] agitací mezi populací kultury [Character.GetCulture.GetName] cizí mocnosti#!"
  not_homeland_of_states_tt: "Vlastník tohoto státu nemá kulturu [SCOPE.sCulture('agitator_culture').GetName] jako [Concept('concept_primary_cultures','$concept_primary_culture$')]"
  is_rival_of_owner_tt: "Vlastník tohoto státu má s námi [concept_rivalry]"
- italian_unification.4.t: "Trikolóry nad [SCOPE.sState('capital_scope').GetCityHubName]"
- italian_unification.4.d_annex: "Nacionalističtí rebelové, inspirovaní výzvami ke znovusjednocení Itálie, ovládli [SCOPE.sState('capital_scope').GetCityHubName] a přísahali věrnost sjednocené Itálii pod vládou [SCOPE.sCountry('italian_leader').GetRuler.GetFullName] ze země [SCOPE.sCountry('italian_leader').GetName]."
- italian_unification.4.d_coup: "Nacionalističtí rebelové, inspirovaní výzvami ke znovusjednocení Itálie, ovládli [SCOPE.sState('capital_scope').GetCityHubName] a prohlásili vládu [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullName] za svrženou."
- italian_unification.4.f: "„Zrádci! Zrádci mezi námi! Vyhlašte poplach, ihned zavolejte stráže!“\n\n„Myslíte ty muže v oblecích vedle mě, signore? Doufám, že ano, když jste byl natolik pošetilý, že jste oznámil svou přítomnost. Nyní to řeknu jasně, protože vaše běsnící neschopnost nás k tomu donutila: sjednocená Itálie povstává. Žádá si místo na světové scéně a nebude o ni pečováno muži vašeho nepadnoucího druhu.“"
- italian_unification.4.a: "Znovu povstaneme jako součást celku."
- italian_unification.4.b: "Ať žije Itálie!"
- italian_unification.4.c: "Znovu povstaneme jako součást celku."
- italian_unification.5.t: "Italští nacionalisté ovládli [SCOPE.sState('capital_scope').GetCityHubName]"
- italian_unification.5.d: "Nacionalističtí rebelové, inspirovaní výzvami k vytvoření jediného italského národa, ovládli zemi [SCOPE.sCountry('italian_pannational_country').GetName] a přísahali věrnost sjednocení Itálie pod praporem [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullName]."
- italian_unification.5.f: "Sjednocená Itálie nikdy nebyla daleko od rtů šílenců i ctižádostivců. Vskutku, nádherné znovuprobuzení poloostrova by přimělo k váhání i jediného Boha. Takové pokusy byly v minulosti pošetilostí. Přesto se v pokradmých šepotech ozývá víra, že snad existuje naděje, aby povstal nový Řím."
- italian_unification.5.a: "Vítáme své bratry a sestry."
- italian_unification.5.b: "Bude nejlepší neděsit naše sousedy."
- italian_unification.6.t: "Italští nacionalisté svrhli vládu země [SCOPE.sCountry('italian_pannational_country').GetAdjective]"
- italian_unification.6.d: "Nacionalističtí rebelové, inspirovaní výzvami ke znovusjednocení Itálie, ovládli [SCOPE.sCountry('italian_pannational_country').GetCapital.GetCityHubName] a nad jejími bývalými suverénními územími vyhlásili republiku."
- italian_unification.6.f: "To, co mu pobočník přinesl, bylo neuvěřitelné: další pokus sjednotit Apeninský poloostrov pod jedinou zástavou. Zdálo se to nemožné, rozdělené mezi nejméně půl tuctu drobných pánů a městských států, kteří by se nejraději navzájem škrtili stejně jako Evropa. Ale jak pobočník mluvil, bylo jasné, že to není plané chvástání. Ne, to si zasloužilo vyslance nesoucí buď gladius, nebo olivovou ratolest."
- italian_unification.6.a: "Nabídněte novému režimu naše sympatie."
- italian_unification.6.b: "S těmito teroristy nemáme společnou věc."
- italian_unification.7.t: "Pět dní v [SCOPE.sState('rsm_capital_scope').GetCityHubName]"
- italian_unification.7.d: "Po nepokojích mezi italským obyvatelstvem Lombardsko-benátska nacionalističtí rebelové vyhlásili vznik země [SCOPE.sCountry('rsm_scope').GetName], revolučního státu založeného s cílem získat nezávislost na vládě země [ROOT.GetCountry.GetAdjective]."
- italian_unification.7.f: "Jezdec v bílém na bílé klisně projel kolem pozemků poblíž místa, kde toho rána [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] snídal. Lokaj, který k [ROOT.GetCountry.GetRuler.GetHerHim] přistoupil s potem prosakujícím z každého popraskaného póru, nesl krvavě rudý dopis. Italská území vstoupila do vzpoury. Další zpocený pobočník přinesl další zprávu: tato vzbouřená území volají po posilách. Po posilách, o nichž [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstNameNoFormatting] věděl, že jistě přijdou."
- italian_unification.7.a: "Okamžitě se stáhněte do Kvadrilaterálu!"
- italian_unification.7.b: "Viva San Marco!"
- italian_states_choose_sides_tt: "#bold Italské#! státy dostanou příležitost podpořit zemi [SCOPE.sCountry('rsm_scope').GetName]"
- italian_states_choose_sides_danger_tt: "@warning! Vztahy s #bold italskými#! státy se mohou rychle zhoršit"
- italian_unification.8.t: "Italská válka za nezávislost"
- italian_unification.8.d: "Revolucionáři v [SCOPE.sCountry('rsm_scope').GetCapital.GetCityHubName] vyhlásili vznik země [SCOPE.sCountry('rsm_scope').GetName], nezávislé na vládě země [SCOPE.sCountry('rsm_revolted_scope').GetName]. Ve svém boji volají o pomoc všechny italské státy."
- italian_unification.8.f: "„Matko... rozhodl jsem se. Jdu do Benátek, s tvým požehnáním nebo bez něj.“\n\n„Dobrá, dobře, jdi! Žádný můj syn by nikdy nepromarnil život kvůli něčemu tak bezvýznamnému, jako je vlajka. Kvůli takovému zbytečnému poměřování délek penne jsem už ztratila bratry a strýce. Zůstaň tady a buď v bezpečí!“\n\n„Je to všechno možné, jen ne zbytečné, matko! Máme šanci být znovu jednou Itálií. Mohli bychom zase jít kamkoli, dělat cokoli. Znovu bychom měli #bold něco#!!“"
- italian_unification.8.a: "Stojí za nás a my za ně."
- italian_unification.8.b: "Nebudeme prolévat krev země [ROOT.GetCountry.GetAdjectiveNoFormatting] za [SCOPE.sCountry('rsm_scope').GetCapital.GetCityHubName]."
- italian_unification.10.t: "Šepot risorgimenta"
- italian_unification.10.d: "Větry nacionalismu začaly procházet dlouho rozdělenými státy Apeninského poloostrova. Vlastenci země [ROOT.GetCountry.GetAdjective] i romantičtí učenci začali volat po sjednocení jediného italského státu."
- italian_unification.10.f: "„Ne, signore. Nejsem cizinec a nejsem [ROOT.GetCountry.GetAdjectiveNoFormatting]. Jsem Ital a Ital v Itálii není nikdy cizincem.“"
- italian_unification.10.a: "Itálie musí být obnovena ze zapomnění."
- italian_unification.10.b: "Nevrhneme se kvůli tomu do větru."
- modifier_risorgimento_supporters: "Podpora risorgimenta"
- modifier_risorgimento_support: "Podpora risorgimenta"
- modifier_risorgimento_opponents: "Odpor vůči risorgimentu"
- modifier_risorgimento_opposition: "Odpor vůči risorgimentu"
- risorgimento_support: "podpora risorgimenta"
- veiled_protectorate_ottomans_support: "podpora osmanského znovudobytí Egypta"
- veiled_protectorate_egypt_support: "podpora egyptské nezávislosti"
- german_leadership_neutrality: "chybí důvod zapojit se do hry #v $dp_leadership_germany$#!"
- unlock_national_agitation_tt: "Odemkne interakci postavy „Rozdmýchat národní agitaci“ pro [Concept('concept_agitator','$concept_agitators$')]"
- risorgimento_unifying_stance_tt: "Rozhodli jsme se #bold podpořit#! risorgimento"
- risorgimento_unifying_stance_set_tt: "Budeme moci podniknout dodatečné kroky k #bold podpoře#! risorgimenta"
- risorgimento_opposing_stance_tt: "Nerozhodli jsme se #bold podpořit#! risorgimento"
- notification_ita_italian_unification_intent_name: "[SCOPE.sCountry('italian_unifier_candidate').GetName] podporuje sjednocení Itálie"
- notification_ita_italian_unification_intent_desc: "Vláda [SCOPE.sCountry('italian_unifier_candidate').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('italian_unifier_candidate').GetRuler.GetFullName] dala najevo podporu sjednocení Apeninského poloostrova do jediného národa."
- notification_ita_italian_unification_intent_tooltip: "#header $notification_ita_italian_unification_intent_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ita_italian_unification_intent_desc$"
- notification_nationalism_national_agitation_occurred_name: "Nepokoje kultury [SCOPE.sCulture('agitation_culture').GetName] ve státě [SCOPE.sState('agitation_state').GetName]"
- notification_nationalism_national_agitation_occurred_desc: "Nacionalistické nepokoje kultury [SCOPE.sCulture('agitation_culture').GetName] ve státě [SCOPE.sState('agitation_state').GetName] prudce vzrostly. Agenti země [SCOPE.sCountry('agitation_sponsor').GetName] jsou podezřelí z podněcování rozvratného chování."
- notification_nationalism_national_agitation_occurred_tooltip: "#header $notification_nationalism_national_agitation_occurred_name$#!\n$TOOLTIP_DELIMITER$\n$notification_nationalism_national_agitation_occurred_desc$"
- notification_nationalism_decision_agitation_occurred_name: "Nepokoje v #bold italských#! oblastech"
- notification_nationalism_decision_agitation_occurred_desc: "#bold Italský#! nacionalistický [Concept('concept_activism', '$concept_activism_short$')] na našich #bold italských#! územích prudce vzrostl. Za kořen nepokojů je považována propaganda země [SCOPE.sCountry('saboteur_country').GetAdjective]."
- notification_nationalism_decision_agitation_occurred_tooltip: "#header $notification_nationalism_decision_agitation_occurred_name$#!\n$TOOLTIP_DELIMITER$\n$notification_nationalism_decision_agitation_occurred_desc$"
- notification_sabotage_decision_agitation_occurred_name: "Prosjednocovací nepokoje zasáhly zemi [SCOPE.sCountry('victim_country').GetName]"
- notification_sabotage_decision_agitation_occurred_desc: "Pod vlivem výzev ke sjednocení Itálie ze strany země [SCOPE.sCountry('saboteur_country').GetName] vzrostl [Concept('concept_activism', '$concept_activism_short$')] hnutí [SCOPE.sPoliticalMovement('italian_nationalist_movement').GetName]."
- notification_sabotage_decision_agitation_occurred_tooltip: "#header $notification_sabotage_decision_agitation_occurred_name$#!\n$TOOLTIP_DELIMITER$\n$notification_sabotage_decision_agitation_occurred_desc$"
- italian_nationalist_movements_list_tt: "[Concept('concept_political_movement','$concept_political_movements$')] slučitelná se [concept_unification] #v $ITA_ADJ$#! zahrnují:\n• $movement_liberal$\n• $movement_radical$\n• $movement_anti_slavery$\n• $movement_positivist$\n• $movement_labor$\n• $movement_cultural_majority$\n• $movement_fascist$\n• $movement_modernizer$\n• $movement_socialist$\n• $movement_communist$\n• $movement_anarchist$\n• $movement_nihilist$"
- modifier_italian_unificationist_sentiment: "Italské nacionalistické nálady"
- movement_compatible_with_italian_unification_tt: "Hnutí je #tooltippable;tooltip:[GetPlayer.GetTooltipTag],italian_nationalist_movements_list_tt slučitelné#! se [concept_unification] #v $ITA_ADJ$#!"
  je_confederation_of_the_rhine: "Rýnský spolek"
  je_confederation_of_the_rhine_reason: "V letech 1806 až 1813 byly německé státy z vůle Napoleona Bonaparta sjednoceny pod jedinou vládou – #bold Rýnským spolkem#!. Tato konstrukce upevnila Napoleonovu nepřímou kontrolu nad Německem a omezila moc #bold Pruska#! i #bold Rakouska#!. Obnovení tohoto uspořádání zajistí moc země [SCOPE.sCountry('rhine_overlord').GetName] v Německu a odvrátí plán na nekontrolovatelné sjednocené Německo."
  rhine_formed_tt: "Podpořili jsme vytvoření #bold Rýnského spolku#! jako závislé země [SCOPE.sCountry('rhine_overlord').GetAltAdjective('G')]"
@@ -444,6 +351,22 @@
  great_reformer.1.a: "Car musí být za svou práci poctěn."
  great_reformer.1.b: "Po reformě revoluce."
  modifier_great_reforms_complete: "Velké reformy dokončeny"
+ unfriendly_nation_with_interest_in_alaska_tt: "Nepřátelská [concept_country] s [concept_rank] vyšším než náš má [concept_interest] ve #bold pacifickém pobřeží#! [concept_strategic_region]"
+ friendly_nation_with_interest_in_alaska_tt: "#bold Severoamerická#! [concept_great_power] s [concept_incorporated_state] v #bold pacifickém pobřeží#! [concept_strategic_region] má s námi pozitivní [concept_relations]"
+ sold_alaska_tt: "Úspěšně jsme prodali #bold Aljašku#!"
+ not_sold_alaska_tt: "#bold Neprodali#! jsme úspěšně #bold Aljašku#!"
+ alaska_transaction_ongoing_tt: "Žádná země momentálně nepodává nabídku na #b Aljašku#!" # todo: NEW TRANSLATION
+ has_alaska_sale_cooldown_tt: "V uplynulém #bold roce#! nebyla tato akce použita"
+ notification_alaska_negotiations_fail_name: "Nabídka na Aljašku odmítnuta"
+ notification_alaska_negotiations_fail_desc: "[SCOPE.sCountry('alaska_buyer').GetName] odstoupila od jednání o prodeji Aljašky. Území zůstane pod naší kontrolou, dokud nebude učiněn další pokus."
+ notification_alaska_negotiations_fail_tooltip: "#header $notification_alaska_negotiations_fail_name$#!\n$TOOLTIP_DELIMITER$\n$notification_alaska_negotiations_fail_desc$"
+ je_sale_of_alaska: "Prodej Aljašky"
+ je_sale_of_alaska_reason: "[SCOPE.sState('alaska_scope').GetName], izolované území na okraji země [SCOPE.sCountry('alaska_owner_scope').GetName], se v posledních letech ocitlo pod hrozbou zabrání nepřátelskými cizími mocnostmi.\n\nAby z tohoto území vytěžili alespoň nějaký zisk a vyhnuli se ponížení, že by je v případě války zabrali naši nepřátelé, úředníci ve vládě [SCOPE.sCharacter('ruler_scope').GetPrimaryRoleTitle] navrhli najít pro [SCOPE.sState('alaska_scope').GetName] kupce."
+ je_sell_alaska_button: "Najít kupce"
+ je_sell_alaska_button_desc: "Území Aljašky představuje pro náš stát spíše závazek než přínos. Nalezení kupce pro Aljašku prospěje jak naší pokladně, tak naší národní bezpečnosti."
+ selling_alaska_tt: "Obdržíme významnou peněžní náhradu za [SCOPE.sState('alaska_scope').GetName] a zlepšené [concept_relations] s jejím #bold kupcem#!"
+ je_buy_alaska_button: "Učinit nabídku na Aljašku"
+ je_buy_alaska_button_desc: "Aljaška je v současnosti držena jako koloniální území spřátelenou zemí. Možná dokážeme využít naše vztahy k zakoupení tohoto území."
  most_european_pops_abandon_alaska_tt: "Velký počet #bold evropských#! [Concept('concept_pop','$concept_pops$')] evakuuje [SCOPE.sState('capital_scope').GetName]"
  some_european_pops_abandon_alaska_tt: "Některé #bold evropské#! [Concept('concept_pop','$concept_pops$')] evakuují [SCOPE.sState('capital_scope').GetName]"
  inherit_characters_from_athabaska_tt: "Zdědí všechny [Concept('concept_character', '$concept_characters$')] od #v $ATB$#!"
@@ -457,6 +380,38 @@
  alk_breakup.1.c: "Přineste pero a psací potřeby. Učiníme tuto zemi svou vlastní!"
  alk_breakup.1.e: "Předejte zemi jejím domorodým národům."
  modifier_ryotwari_system: "Systém ryotwari"
+ sale_of_alaska_happened: "Prodej Aljašky proběhl" # todo: NEW TRANSLATION
+ usa_purchase_alaska: "Vyjednat koupi Aljašky" # todo: NEW TRANSLATION
+ usa_purchase_alaska_desc: "Ač někteří pochybují o strategické a hospodářské hodnotě rozlehlých oblastí Aljašky, neměli bychom propásnout příležitost posunout hranice svobody." # todo: NEW TRANSLATION
+ alaska.1.t: "Nabídka na Aljašku" # todo: NEW TRANSLATION
+ alaska.1.d: "[SCOPE.sCountry('alaska_buyer').GetName] nám učinil nabídku na koupi [SCOPE.sState('alaska_scope').GetName]." # todo: NEW TRANSLATION
+ alaska.1.f_ru: ""Jako zástupce [SCOPE.sCountry('alaska_buyer').GetNameNoFormatting] tímto souhlasíme zaplatit v pokladně v [SCOPE.sCountry('alaska_buyer').GetCapital.GetCityHubName], diplomatickému zástupci nebo jinému zástupci Jeho/Její Veličenstva, [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] všech Rusí, sedm milionů dvě stě tisíc dolarů ve zlatě."" # todo: NEW TRANSLATION
+ alaska.1.f: ""Jako zástupce [SCOPE.sCountry('alaska_buyer').GetNameNoFormatting] tímto souhlasíme zaplatit v pokladně v [SCOPE.sCountry('alaska_buyer').GetCapital.GetCityHubName], diplomatickému zástupci nebo jinému zástupci [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('alaska_seller').GetNameNoFormatting], sedm milionů dvě stě tisíc dolarů ve zlatě."" # todo: NEW TRANSLATION
+ alaska.1.a: "Ta země za nic nestojí, ať si ji vezmou [SCOPE.sCountry('alaska_buyer').GetAdjectiveNoFormatting]." # todo: NEW TRANSLATION
+ alaska.1.b: "[SCOPE.sState('alaska_scope').GetName] možná ještě skrývá bohatství." # todo: NEW TRANSLATION
+ alaska.2.t: "Koupě [SCOPE.sState('alaska_scope').GetName]" # todo: NEW TRANSLATION
+ alaska.2.d: "[SCOPE.sCountry('alaska_seller').GetName] souhlasilo s našimi podmínkami. Byla vypracována smlouva o koupi [SCOPE.sState('alaska_scope').GetName]." # todo: NEW TRANSLATION
+ alaska.2.f: ""Zítra, chcete‑li, přijdu na ministerstvo a můžeme začít jednat o smlouvě."\n"Proč čekat do zítřka, pane Stoeckl? Sepišme smlouvu ještě dnes večer!"" # todo: NEW TRANSLATION
+ alaska.2.a: "Jaké bohatství tato rozlehlá území skrývají?" # todo: NEW TRANSLATION
+ alaska.3.t: "Neúspěšný nákup [SCOPE.sState('alaska_scope').GetName]" # todo: NEW TRANSLATION
+ alaska.3.d: "Vyjednávání s [SCOPE.sCountry('alaska_seller').GetName] o koupi [SCOPE.sState('alaska_scope').GetName] selhalo." # todo: NEW TRANSLATION
+ alaska.3.f: ""Vidíme tedy, že válka není pouhým politickým aktem, ale také skutečným politickým nástrojem, pokračováním politického obchodu, uskutečněním téhož jinými prostředky."" # todo: NEW TRANSLATION
+ alaska.3.a: "Budeme pokračovat v diplomacii jinými prostředky." # todo: NEW TRANSLATION
+ alaska.3.b: "Stálo to za pokus." # todo: NEW TRANSLATION
+ alaska.4.t: "Nabídka na Aljašku" # todo: NEW TRANSLATION
+ alaska.4.d: "[SCOPE.sCountry('alaska_seller').GetName] shledalo, že není schopno ochránit svou severoamerickou kolonii [SCOPE.sState('alaska_scope').GetName] a zdá se být ochotno prodat toto území za přijatelnou částku." # todo: NEW TRANSLATION
+ alaska.4.f: ""Zástupce [SCOPE.sCountry('alaska_buyer').GetNameNoFormatting] souhlasí zaplatit v pokladně v [SCOPE.sCountry('alaska_buyer').GetCapital.GetCityHubName], diplomatickému zástupci nebo jinému zástupci [SCOPE.sCountry('alaska_seller').GetRuler.GetHerHis] Veličenstva, [SCOPE.sCountry('alaska_seller').GetRuler.GetPrimaryRoleTitle] všech [SCOPE.sCountry('alaska_seller').GetNameNoFormatting], sedm milionů dvě stě tisíc dolarů ve zlatě."" # todo: NEW TRANSLATION
+ alaska.4.a: "Proveďte nezbytná opatření." # todo: NEW TRANSLATION
+ alaska.4.c: "Takový výdaj si nyní nemůžeme dovolit." # todo: NEW TRANSLATION
+ alaska.4.tt1: "Nabídneme 3 miliony £ během 1 roku." # todo: NEW TRANSLATION
+ je_alaska: "Nabytí Aljašky" # todo: NEW TRANSLATION
+ je_alaska_reason: "Položené daleko na severu, [SCOPE.sState('alaska_state').GetStateRegion.GetName] je rozlehlé, neprobádané území, které může skrývat mnoho bohatství. Získání tohoto území výrazně rozšíří naše hranice, zvýší náš národní prestiž a umožní dominovat obchodu v severním Tichomoří." # todo: NEW TRANSLATION
+ alaska_usa_big_money: "Platba za Aljašku - Velké platby" # todo: NEW TRANSLATION
+ alaska_usa_medium_money: "Platba za Aljašku - Střední platby" # todo: NEW TRANSLATION
+ alaska_usa_small_money: "Platba za Aljašku - Skrovné platby" # todo: NEW TRANSLATION
+ alaska_rus_big_money: "Prodej Aljašky - Velké platby" # todo: NEW TRANSLATION
+ alaska_rus_medium_money: "Prodej Aljašky - Střední platby" # todo: NEW TRANSLATION
+ alaska_rus_small_money: "Prodej Aljašky - Skrovné platby" # todo: NEW TRANSLATION
  modifier_utopian_commune: "Utopické kolonie"
  utopian.1.t: "Okno do utopie"
  utopian.1.d: "Skupina lidí inspirovaných teoriemi [GetIdeology('ideology_utopian').GetName] [SCOPE.sCharacter('utopian_leader_scope').GetFullName] založila experimentální kolonii na venkově státu [SCOPE.sState('utopian_community_state_scope').GetName]. Kolonie se sama chápe jako okno do idylické společnosti budoucnosti."

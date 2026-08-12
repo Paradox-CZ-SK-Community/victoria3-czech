@@ -1,0 +1,255 @@
+﻿l_polish:
+ je_greek_nationalism: "Megali idea" # todo: NEW TRANSLATION
+ je_greek_nationalism_reason: "#italic "Řek není pouze ten, kdo obývá království, ale také ten, kdo žije v Janině, nebo Soluni, nebo Serres, nebo Edirne, nebo Konstantinopoli, nebo Trebizondě, nebo na Krétě, nebo na Samu, nebo v jakékoliv jiné zemi řecké historie či rasy..."\n—Ioannis Kolettis#!\n\nPřes vznik nezávislého řeckého státu většina Řeků stále žije pod cizí nadvládou. Musíme vyvinout soustředěné úsilí, diplomatickými i vojenskými prostředky, abychom začlenili celé [GetGeographicRegion('geographic_region_megali_greece').GetName] do naší správy.[SCOPE.GetRootScope.GetCountry.GetCustom('byzantium_reason_text')]" # todo: NEW TRANSLATION
+ greek_state_possible_tt: "Vlastnit alespoň #v [GetPlayer.MakeScope.ScriptValue('greek_homeland_states_owned_to_activate_min')]#! [Concept('concept_state','$concept_states$')] v [GetGeographicRegion('geographic_region_megali_greece').GetName] (Momentálně #v [ROOT.GetCountry.MakeScope.Var('greek_homeland_states_owned_var').GetValue|V0]#! splňuje tuto podmínku)" # todo: NEW TRANSLATION
+ greek_state_complete_tt: "Vlastnit alespoň #v [GetPlayer.MakeScope.ScriptValue('greek_homeland_states_owned_to_complete_min')]#! [Concept('concept_state','$concept_states$')] v [GetGeographicRegion('geographic_region_megali_greece').GetName] (Momentálně #v [ROOT.GetCountry.MakeScope.Var('greek_homeland_states_owned_var').GetValue|V0]#! splňuje tuto podmínku)" # todo: NEW TRANSLATION
+ greek_state_complete_tt_2: "Vlastnit alespoň #v [GetPlayer.MakeScope.ScriptValue('greek_homeland_states_owned_to_complete_max')]#! [Concept('concept_state','$concept_states$')] v [GetGeographicRegion('geographic_region_megali_greece').GetName] (Momentálně #v [ROOT.GetCountry.MakeScope.Var('greek_homeland_states_owned_var').GetValue|V0]#! splňuje tuto podmínku)" # todo: NEW TRANSLATION
+ greek_state_complete_tt_3: "Vlastnit alespoň #v [GetPlayer.MakeScope.ScriptValue('byzantium_state_region_owned_to_complete')]#! [Concept('concept_state','$concept_states$')] v [GetGeographicRegion('geographic_region_historic_byzantium').GetName] (Momentálně #v [ROOT.GetCountry.MakeScope.Var('byzantium_states_owned_var').GetValue|V0]#! splňuje tuto podmínku)" # todo: NEW TRANSLATION
+ byz_is_this_tt: "Vytvořil zemi #bold $BYZ$#! v [concept_nation_formation]" # todo: NEW TRANSLATION
+ greek_homeland_states_tt: "#title Následující [Concept('concept_state_region','$concept_state_regions$')] jsou [GetCulture('greek').GetName] [Concept('concept_homeland','$concept_homelands$')]:#! #indent_newline:3 \n• $STATE_EASTERN_THRACE$\n• $STATE_IONIAN_ISLANDS$\n• $STATE_PELOPONNESE$\n• $STATE_ATTICA$\n• $STATE_SKOPIA$\n• $STATE_MACEDONIA$\n• $STATE_THESSALIA$\n• $STATE_WESTERN_THRACE$\n• $STATE_HUDAVENDIGAR$\n• $STATE_AYDIN$\n• $STATE_CYPRUS$\n• $STATE_TRABZON$\n• $STATE_CRETE$\n• $STATE_WEST_AEGEAN_ISLANDS$\n• $STATE_EAST_AEGEAN_ISLANDS$" # todo: NEW TRANSLATION
+ byzantium_state_regions_tt: "#title Následující jsou $BYZ$ [Concept('concept_state_region','$concept_state_regions$')]:#! #indent_newline:3 \n• $STATE_EASTERN_THRACE$\n• $STATE_ATTICA$\n• $STATE_THESSALIA$\n• $STATE_MACEDONIA$\n• $STATE_SKOPIA$\n• $STATE_WESTERN_THRACE$\n• $STATE_NORTHERN_THRACE$\n• $STATE_HUDAVENDIGAR$\n• $STATE_AYDIN$\n• $STATE_WEST_AEGEAN_ISLANDS$\n• $STATE_EAST_AEGEAN_ISLANDS$\n• $STATE_ALBANIA$" # todo: NEW TRANSLATION
+ byzantium_snippet_text: "\n\n#b Byzantské ambice:#!\nPokud dosáhneme vysokého [concept_legitimacy] a zajistíme kontrolu nad [GetStateRegion('STATE_IONIAN_ISLANDS').GetName], získáme možnost usilovat o titul #b Východní Řím#!." # todo: NEW TRANSLATION
+ greek_nationalism_status_loc: "Usiluje o rozšíření řeckého státu" # todo: NEW TRANSLATION
+ megali_idea_status_loc: "Usiluje o #b Megali ideu#!" # todo: NEW TRANSLATION
+ byzantium_status_loc: "Usiluje o #b titul Východního Říma#!" # todo: NEW TRANSLATION
+ byzantium_button_check_tt: "Přijato rozhodnutí usilovat o titul #b Východní Řím#!" # todo: NEW TRANSLATION
+ greece.1.t: "Řecký stát" # todo: NEW TRANSLATION
+ greece.1.d: "Vzrůstající nacionalismus vyvolal mezi našimi občany irredentistické přání začlenit veškeré země lidu [SCOPE.sCulture('greek_culture_scope').GetName] pod jediný řecký stát." # todo: NEW TRANSLATION
+ greece.1.f: ""Odhodili jsme staletí osmanské nadvlády a uvedli jsme řecký stát v existenci. Přesto to nestačí. Mnozí z našich krajanů stále žijí pod útlakem cizí moci a touží po zemi, kterou by mohli nazvat svou. Tento sen lze uskutečnit pouze anexí všech řeckých zemí, čehož dosáhneme s nebo bez souhlasu jejich okupantů."" # todo: NEW TRANSLATION
+ greece.1.a: "Náš nárok na tuto zemi je nevyvratitelný." # todo: NEW TRANSLATION
+ greece.1.b: "Expanze nyní není prioritou." # todo: NEW TRANSLATION
+ embrace_megali_idea_tt: "#r #b Vybráním této možnosti se změní požadavky na dokončení $je_greek_nationalism$ [concept_journal_entry] na následující:#!#! #indent_newline:3 \n• [ROOT.GetCountry.GetName] bude muset vlastnit #b všechny#! [Concept('concept_state','$concept_states$')] v [GetGeographicRegion('geographic_region_megali_greece').GetName] (Momentálně #v [ROOT.GetCountry.MakeScope.Var('greek_homeland_states_owned_var').GetValue|V0]#! splňuje tuto podmínku)\n• [ROOT.GetCountry.GetNameNoFlag] je v míru\n• [ROOT.GetCountry.GetNameNoFlag] #b není#! subjekt jiné země\n• [concept_rank] [ROOT.GetCountry.GetNameNoFlag] je větší nebo roven [concept_minor_power]\n• [ROOT.GetCountry.GetAdjectiveNoFlag] [concept_gold_reserves] jsou větší než #v @money![GetPlayer.MakeScope.ScriptValue('greek_nationalism_gold_min')|2]#!\n• [concept_legitimacy] musí být #v [GetPlayer.MakeScope.ScriptValue('greek_nationalism_legitimacy_min')]#! nebo vyšší" # todo: NEW TRANSLATION
+ not_embrace_megali_idea_tt: "#r #b Požadavky na dokončení $je_greek_nationalism$ [concept_journal_entry] zůstanou nezměněny:#!#! #indent_newline:3 \n• [ROOT.GetCountry.GetName] bude muset vlastnit alespoň #b #v [GetPlayer.MakeScope.ScriptValue('greek_homeland_states_owned_to_complete_min')]#!#! [Concept('concept_state','$concept_states$')] v [GetGeographicRegion('geographic_region_megali_greece').GetName] (Momentálně #v [ROOT.GetCountry.MakeScope.Var('greek_homeland_states_owned_var').GetValue|V0]#! splňuje tuto podmínku)\n• [ROOT.GetCountry.GetNameNoFlag] je v míru\n• [ROOT.GetCountry.GetNameNoFlag] #b není#! subjekt jiné země\n• [concept_rank] [ROOT.GetCountry.GetNameNoFlag] je větší nebo roven [concept_minor_power]\n• [ROOT.GetCountry.GetAdjectiveNoFlag] [concept_gold_reserves] jsou větší než #v @money![GetPlayer.MakeScope.ScriptValue('greek_nationalism_gold_min')|2]#!\n• [ROOT.GetCountry.GetNameNoFlag] nemá #b žádné#! [Concept('concept_insurrection', '$concept_insurrectionary$')] [Concept('concept_political_movement', '$concept_political_movements$')]" # todo: NEW TRANSLATION
+ greece.2.t: "Titul Východního Říma" # todo: NEW TRANSLATION
+ greece.2.d: "Expandování řeckého státu vedlo některé z nejvřelejších nacionalistů k navržení ještě ambicióznějšího projektu: obnovy Byzantské říše prostřednictvím dobytí [SCOPE.sState('thrace_scope').GetStateRegion.GetName] a [SCOPE.sState('aydin_scope').GetStateRegion.GetName]." # todo: NEW TRANSLATION
+ greece.2.f: ""To, co by se včera zdálo absurdní utopií, je nyní v dosahu. Purpurový fénix znovu povstane!"" # todo: NEW TRANSLATION
+ greece.2.a: "Byzanc bude obnovena." # todo: NEW TRANSLATION
+ greece.2.b: "Tento plán je příliš ambiciózní." # todo: NEW TRANSLATION
+ embrace_ambitious_agenda_tt: "#r #b Vybráním této možnosti se změní požadavky na dokončení $je_greek_nationalism$ [concept_journal_entry] na následující:#!#! #indent_newline:3 \n• [ROOT.GetCountry.GetName] bude muset vytvořit $BYZ$ v [concept_nation_formation]\n• [ROOT.GetCountry.GetName] musí mít aktivní [GetLawType('law_monarchy').GetName]\n• [ROOT.GetCountry.GetName] musí vlastnit #v všechny#! #tooltippable #tooltip:[GetPlayer.GetTooltipTag],byzantium_state_regions_tt $BYZ$ státní regiony#!#! (Momentálně #v [ROOT.GetCountry.MakeScope.Var('byzantium_states_owned_var').GetValue|V0]#! splňuje tuto podmínku)\n• [concept_legitimacy] musí být #v [GetPlayer.MakeScope.ScriptValue('greek_nationalism_legitimacy_min')]#! nebo vyšší\n• [ROOT.GetCountry.GetNameNoFlag] je v míru\n• [ROOT.GetCountry.GetNameNoFlag] #b není#! subjekt jiné země\n• [concept_rank] [ROOT.GetCountry.GetNameNoFlag] je větší nebo roven [concept_minor_power]\n• [ROOT.GetCountry.GetAdjectiveNoFlag] [concept_gold_reserves] jsou větší než #v @money![GetPlayer.MakeScope.ScriptValue('greek_nationalism_gold_min')|2]#!" # todo: NEW TRANSLATION
+ not_embrace_ambitious_agenda_tt: "#r #b Požadavky na dokončení $je_greek_nationalism$ [concept_journal_entry] zůstanou beze změny#!#!" # todo: NEW TRANSLATION
+ greece.3.t: "Londýnská smlouva" # todo: NEW TRANSLATION
+ greece.3.d: "Díky pečlivým jednáním [SCOPE.sCountry('ionian_overlord').GetName] postoupil [SCOPE.sCountry('ionian_country').GetName] [ROOT.GetCountry.GetName]." # todo: NEW TRANSLATION
+ greece.3.f: ""Abychom podpořili dobrou vůli mezi našimi národy a posílili ducha [ROOT.GetCountry.GetAdjectiveNoFormatting] lidu, [SCOPE.sCountry('ionian_overlord').GetRuler.GetPrimaryRoleTitle] velkoryse postoupil Jónské ostrovy. Náš přátelský protektorát, pod kterým ostrovy těžily z naší opravdové a spravedlivé pomoci, považujeme za ukončený a doufáme, že lid těchto ostrovů vzkvétá pod laskavou ochranou našich důvěryhodných přátel."" # todo: NEW TRANSLATION
+ greece.3.a: "Velmi přijatelné řešení." # todo: NEW TRANSLATION
+ greece.4.t: "[ROOT.GetCountry.GetNameNoFormatting] opět povstává" # todo: NEW TRANSLATION
+ greece.4.d1: "Naše ambiciózní irredentistická agenda byla ohromným úspěchem. Nastává úsvit nové éry v [ROOT.GetCountry.GetNameNoFormatting]." # todo: NEW TRANSLATION
+ greece.4.d2: "Naše irredentistická agenda byla úspěšná. Lidé [ROOT.GetCountry.GetNameNoFormatting] slaví." # todo: NEW TRANSLATION
+ greece.4.f: " [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetNameNoFormatting] pronáší projev, který bude rezonovat v srdcích všech [ROOT.GetCountry.GetAdjectiveNoFormatting] lidí po generace:\n\n\"Národ, který svým pádem osvětlil mnoho jiných národů, dnes znovu vstává, a ne jako dříve, kdy byl rozdělen do mnoha malých států, ale jako jednotný stát se svou vládou, náboženstvím a politickou existencí navěky zaručenou ústavou.\"" # todo: NEW TRANSLATION
+ greece.4.a: "[ROOT.GetCountry.GetNameNoFormatting] bude i nadále vzkvétat." # todo: NEW TRANSLATION
+ greece.4.b: "[ROOT.GetCountry.GetNameNoFormatting] získal zasloužený respekt." # todo: NEW TRANSLATION
+ greece.4.c: "Repatsriovat naše lidi do [ROOT.GetCountry.GetNameNoFormatting]." # todo: NEW TRANSLATION
+ move_greeks_tt: "Všechny řecké populace se přesunou do našeho hlavního státu" # todo: NEW TRANSLATION
+ greek_nationalism_1: "Řecký nacionalismus" # todo: NEW TRANSLATION
+ greek_nationalism_clout_add_1: "Prosperující legitimita" # todo: NEW TRANSLATION
+ greek_nationalism_success_1: "Síla národa" # todo: NEW TRANSLATION
+ greek_nationalism_2: "Řecký nacionalismus" # todo: NEW TRANSLATION
+ greek_nationalism_clout_add_2: "Prosperující legitimita" # todo: NEW TRANSLATION
+ greek_nationalism_success_2: "Síla národa" # todo: NEW TRANSLATION
+ greek_nationalism_3: "Řecký nacionalismus" # todo: NEW TRANSLATION
+ greek_nationalism_clout_add_3: "Prosperující legitimita" # todo: NEW TRANSLATION
+ greek_nationalism_success_3: "Síla národa" # todo: NEW TRANSLATION
+ greece.5.t: "Neudržitelný projekt" # todo: NEW TRANSLATION
+ greece.5.d: "Agresivní prosazování irredentistického projektu [ROOT.GetCountry.GetNameNoFormatting] již není udržitelné." # todo: NEW TRANSLATION
+ greece.5.f: "Atmosféra v místnosti je napjatá. Politikové a rádci se přou o to, zda je únosné pokračovat v ambiciózní agendě [ROOT.GetCountry.GetNameNoFormatting]. Každý požaduje, aby byla zodpovědná strana pohnána k odpovědnosti za špatné hospodaření s [ROOT.GetCountry.GetAdjectiveNoFormatting] zdroji použitými v tomto irredentistickém pokusu, který se nezdařil." # todo: NEW TRANSLATION
+ greece.5.a: "Naše selhání je hanbou." # todo: NEW TRANSLATION
+ greece.5.b: "[ROOT.GetCountry.GetRuler.GetFullName] musí být pohnán k odpovědnosti." # todo: NEW TRANSLATION
+ greek_ruler_negative_popularity_1: "Neoblíbené vedení" # todo: NEW TRANSLATION
+ failed_je_greek_nationalism_1: "Neúspěšná agenda" # todo: NEW TRANSLATION
+ greek_nationalism_failure_1: "Byrokracie nese vinu" # todo: NEW TRANSLATION
+ greek_ruler_negative_popularity_2: "Neoblíbené vedení" # todo: NEW TRANSLATION
+ failed_je_greek_nationalism_2: "Neúspěšná agenda" # todo: NEW TRANSLATION
+ greek_nationalism_failure_2: "Byrokracie nese vinu" # todo: NEW TRANSLATION
+ greek_ruler_negative_popularity_3: "Neoblíbené vedení" # todo: NEW TRANSLATION
+ failed_je_greek_nationalism_3: "Neúspěšná agenda" # todo: NEW TRANSLATION
+ greek_nationalism_failure_3: "Byrokracie nese vinu" # todo: NEW TRANSLATION
+ failed_greek_je_ig_attraction: "Stagnující přitažlivost" # todo: NEW TRANSLATION
+ failed_greek_je_opposition_ig_pol_str: "Nově získaná opora" # todo: NEW TRANSLATION
+ greece.6.t: "Londýnská smlouva" # todo: NEW TRANSLATION
+ greece.6.d: "[SCOPE.sCountry('greek_country').GetAdjectiveNoFormatting] zástupci přišli vyjednávat podmínky postoupení [SCOPE.sCountry('ionian_country').GetName] [SCOPE.sCountry('greek_country').GetName]." # todo: NEW TRANSLATION
+ greece.6.f: "Zástupci [SCOPE.sCountry('greek_country').GetAdjectiveNoFormatting] předkládají svůj návrh na zasedání kabinetu [ROOT.GetCountry.GetAdjectiveNoFormatting]:\n\n\"Abychom podpořili dobrou vůli mezi našimi národy a posílili ducha [SCOPE.sCountry('greek_country').GetAdjectiveNoFormatting] lidu, náš [SCOPE.sCountry('greek_country').GetRuler.GetPrimaryRoleTitle] žádá, aby [SCOPE.sCountry('ionian_country').GetNameNoFormatting] byl propuštěn z přátelského protektorátu, pod kterým ostrovy těžily z vaší opravdové a spravedlivé pomoci.\"" # todo: NEW TRANSLATION
+ greece.6.a: "Velmi přijatelné řešení." # todo: NEW TRANSLATION
+ greece.6.b: "Naše pokračující zásahy jsou nezbytné." # todo: NEW TRANSLATION
+ ion_will_be_annexed: "Postoupíme [SCOPE.sCountry('ionian_country').GetNameNoFormatting] [SCOPE.sCountry('greek_country').GetName]" # todo: NEW TRANSLATION
+ notification_ion_proposal_rejected_message_name: "$ION$ návrh odmítnut" # todo: NEW TRANSLATION
+ notification_ion_proposal_rejected_message_desc: "[SCOPE.sCountry('ionian_overlord').GetNameNoFlag] odmítl návrh předložený zástupci [SCOPE.sCountry('greek_country').GetAdjective] na pokojné předání $ION$." # todo: NEW TRANSLATION
+ notification_ion_proposal_rejected_message_tooltip: "#header $notification_ion_proposal_rejected_message_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ion_proposal_rejected_message_desc$" # todo: NEW TRANSLATION
+ notification_trs_unification_rejected_message_name: "$TRS$ odmítá návrh na sjednocení s $HUN_ADJ$" # todo: NEW TRANSLATION
+ notification_trs_unification_rejected_message_desc: "Dieta [SCOPE.sCountry('transylvania_country_scope').GetAdjective] odmítla návrh [SCOPE.sCountry('hungary_country_scope').GetAdjective] na znovusjednocení [SCOPE.sCountry('transylvania_country_scope').GetNameNoFlag] s [SCOPE.sCountry('hungary_country_scope').GetNameNoFlag]." # todo: NEW TRANSLATION
+ notification_trs_unification_rejected_message_tooltip: "#header $notification_trs_unification_rejected_message_name$#!\n$TOOLTIP_DELIMITER$\n$notification_trs_unification_rejected_message_desc$" # todo: NEW TRANSLATION
+ notification_trs_unification_accepted_message_name: "$AUS$ přijímá $HUN_ADJ$ unii s $TRS$" # todo: NEW TRANSLATION
+ notification_trs_unification_accepted_message_desc: "Vláda [SCOPE.sCountry('austria_country_scope').GetAdjective] s neochotou přijala znovusjednocení $TRS$ s [SCOPE.sCountry('hungary_country_scope').GetName]." # todo: NEW TRANSLATION
+ notification_trs_unification_accepted_message_tooltip: "#header $notification_trs_unification_accepted_message_name$#!\n$TOOLTIP_DELIMITER$\n$notification_trs_unification_accepted_message_desc$" # todo: NEW TRANSLATION
+ je_yugoslavia: "Založení $YUG$" # todo: NEW TRANSLATION
+ je_yugoslavia_reason: "Vyhlídky [ROOT.GetCountry.GetNameNoFormatting] na založení jednotného jugoslávského státu jsou slibné. Lidé [SCOPE.sCulture('croatian_scope').GetName], [SCOPE.sCulture('serbian_scope').GetName], [SCOPE.sCulture('slovene_scope').GetName] a [SCOPE.sCulture('bosniak_scope').GetName] vyjádřili podporu tomuto novému [Concept('concept_unification', '$concept_major_unification$')] cíli.\n\nÚspěšné [concept_nation_formation] $YUG$ by mělo obrovský přínos, strategicky posílilo naši pozici na mezinárodní scéně a učinilo z naší země maják pro všechny jihozápadní slovanské národy žijící pod cizí nadvládou." # todo: NEW TRANSLATION
+ is_yugoslavia_tt: "Vytvořil národ #bold $YUG$#! v [concept_nation_formation]" # todo: NEW TRANSLATION
+ no_insurrectionary_movement_tt: "[ROOT.GetCountry.GetNameNoFlag] nemá #b žádné#! [Concept('concept_insurrection', '$concept_insurrectionary$')] [Concept('concept_political_movement', '$concept_political_movements$')]" # todo: NEW TRANSLATION
+ notification_yugoslavia_failed_message_name: "Závažné nezdary agendy $YUG_ADJ$" # todo: NEW TRANSLATION
+ notification_yugoslavia_failed_message_desc: "[SCOPE.sCountry('root_country_scope').GetName] zaznamenal vážné neúspěchy v projektu založení $YUG$. Možná se sen v budoucnu znovu objeví." # todo: NEW TRANSLATION
+ notification_yugoslavia_failed_message_tooltip: "#header $notification_yugoslavia_failed_message_name$#!\n$TOOLTIP_DELIMITER$\n$notification_yugoslavia_failed_message_desc$" # todo: NEW TRANSLATION
+ yugoslavia.1.t: "Argument pro $YUG$" # todo: NEW TRANSLATION
+ yugoslavia.1.d: "S nedávnými událostmi se vláda [SCOPE.sCharacter('ruler_scope').GetFullName] začala zajímat o snahu sjednotit jihoslovanské národy." # todo: NEW TRANSLATION
+ yugoslavia.1.f: " [SCOPE.sCharacter('ruler_scope').GetPrimaryRoleTitle] stojí před lidmi [SCOPE.sCountry('yugoslavia_seeker_scope').GetNameNoFormatting] a pronáší vášnivý projev.\n\n\"Je nevyhnutelné, že usilujeme o vznik a rozvoj $YUG$, které sjednotí všechny jihoslovanské národy. [SCOPE.sCountry('yugoslavia_seeker_scope').GetNameNoFormatting] určitě může vést tento úsilí.\"" # todo: NEW TRANSLATION
+ yugoslavia.1.a: "Náš [SCOPE.sCharacter('ruler_scope').GetPrimaryRoleTitle] povede toto úsilí." # todo: NEW TRANSLATION
+ yugoslavia.1.b: "Panuje příliš mnoho disharmonie na to, abychom v tom pokračovali." # todo: NEW TRANSLATION
+ je_yug_gain_claim_tt: "#g #b Získá#!#! nároky na #b každé#! [GetCulture('croat').GetName], [GetCulture('serb').GetName], [GetCulture('slovene').GetName] a [GetCulture('bosniak').GetName] [concept_homeland] [concept_state_region], které nevlastní [ROOT.GetCountry.GetNameNoFlag]" # todo: NEW TRANSLATION
+ seeking_yugoslavia: "Sjednocení jižních Slovanů" # todo: NEW TRANSLATION
+ notification_yugoslavia_seeking_warning_name: "[SCOPE.sCountry('yugoslavia_seeker_scope').GetName] usiluje o vznik $YUG$" # todo: NEW TRANSLATION
+ notification_yugoslavia_seeking_warning_desc: "[SCOPE.sCountry('yugoslavia_seeker_scope').GetName] oznámila svůj záměr založit a rozvíjet národ $YUG$, který sjednotí jižní Slovany." # todo: NEW TRANSLATION
+ notification_yugoslavia_seeking_warning_tooltip: "#header $notification_yugoslavia_seeking_warning_name$#!\n$TOOLTIP_DELIMITER$\n$notification_yugoslavia_seeking_warning_desc$" # todo: NEW TRANSLATION
+ yugoslavia.2.t: "Sjednotitel jihoslovanských národů" # todo: NEW TRANSLATION
+ yugoslavia.2.d: "Díky velkému úsilí [SCOPE.sCharacter('ruler_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('ruler_scope').GetFullName] je [SCOPE.sCountry('yug_scope').GetName] vzniklý stát sjednocující [SCOPE.sCulture('primary_culture_scope').GetName] a jiné jihoslovanské národy." # todo: NEW TRANSLATION
+ yugoslavia.2.f: "Když je sen o [SCOPE.sCountry('yug_scope').GetNameNoFormatting] realizován, [SCOPE.sCharacter('ruler_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('ruler_scope').GetFullNameNoFormatting] je připraven vést národ do nové éry prosperity a prestiže." # todo: NEW TRANSLATION
+ yugoslavia.2.a: "Budoucnost [SCOPE.sCountry('yug_scope').GetNameNoFormatting] je světlá." # todo: NEW TRANSLATION
+ unified_yugoslavia: "Maják Balkánu" # todo: NEW TRANSLATION
+ the_unifier_yug: "Schopný vůdce" # todo: NEW TRANSLATION
+ notification_yug_unification_name: "Vznik [SCOPE.sCountry('yug_scope').GetName]" # todo: NEW TRANSLATION
+ notification_yug_unification_desc: "Vláda [SCOPE.sCharacter('ruler_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('ruler_scope').GetFullName] založila [SCOPE.sCountry('yug_scope').GetName], rozsáhlý superstát sjednocující jihoslovanské národy na Balkáně." # todo: NEW TRANSLATION
+ notification_yug_unification_tooltip: "#header $notification_yug_unification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_yug_unification_desc$" # todo: NEW TRANSLATION
+ austria_events.30.t: "[SCOPE.sCharacter('relevant_ruler').GetPrimaryRoleTitle] [SCOPE.sCharacter('relevant_ruler').GetFullNameNoFormatting] abdikuje" # todo: NEW TRANSLATION
+ austria_events.30.d: "Vzhledem k tomu, že zdravotní stav [SCOPE.sCharacter('relevant_ruler').GetPrimaryRoleTitle] [SCOPE.sCharacter('relevant_ruler').GetFullName] se zhoršoval, [SCOPE.sCharacter('ig_leader_scope').GetFullName] přiměl [SCOPE.sCharacter('relevant_ruler').GetHerHim] abdikovat ve prospěch dědice, [SCOPE.sCharacter('relevant_heir').GetFullName]." # todo: NEW TRANSLATION
+ austria_events.30.f: "[SCOPE.sCharacter('relevant_heir').GetFullNameNoFormatting] klečí před [SCOPE.sCharacter('relevant_ruler').GetPrimaryRoleTitle] a žádá o požehnání, než [SCOPE.sCharacter('relevant_heir').GetSheHe] zaujme [ROOT.GetCountry.GetAdjectiveNoFormatting] trůn. [SCOPE.sCharacter('relevant_ruler').GetFullNameNoFormatting] uznává svého následníka a klade obě ruce na [SCOPE.sCharacter('relevant_heir').GetHerHis] hlavu. Se znamením Svatého kříže [SCOPE.sCharacter('relevant_heir').GetFirstNameNoFormatting] vstává. Dnes začíná nová kapitola pro [ROOT.GetCountry.GetNameNoFormatting]." # todo: NEW TRANSLATION
+ austria_events.30.a: "Ať je panování Jeho/Ijí Císařské a Královské Apoštolské Veličenstvo úspěšné." # todo: NEW TRANSLATION
+ ferdinand_I_abdicates_tt: "[SCOPE.sCharacter('relevant_ruler').GetFullName] abdikuje." # todo: NEW TRANSLATION
+ metternich_agenda_value_improves_tt: "Efekty dokončení $je_metternich$ [concept_journal_entry] se #g zlepší#!" # todo: NEW TRANSLATION
+ austria_events.31.t: "Narození dědice" # todo: NEW TRANSLATION
+ austria_events.31.d: "Manželka [SCOPE.sCharacter('relevant_ruler').GetPrimaryRoleTitle] [SCOPE.sCharacter('relevant_ruler').GetFullName] porodila [concept_heir] na [ROOT.GetCountry.GetAdjectiveNoFormatting] trůn." # todo: NEW TRANSLATION
+ austria_events.31.f: "Narození tolik očekávaného dědice je důvodem k oslavám po celém [ROOT.GetCountry.GetNameNoFormatting]. [SCOPE.sCharacter('new_heir').GetFullNameNoFormatting] bude vychováván jako budoucí [SCOPE.sCharacter('relevant_ruler').GetPrimaryRoleTitle] [ROOT.GetCountry.GetNameNoFormatting]. Toto dítě ponese dědictví rodu [SCOPE.sCharacter('relevant_ruler').GetLastNameNoFormatting] dál." # todo: NEW TRANSLATION
+ austria_events.31.a: "Budoucnost [ROOT.GetCountry.GetNameNoFormatting] je světlá." # todo: NEW TRANSLATION
+ rudolf_habsburg_becomes_heir_tt: "[SCOPE.sCharacter('new_heir').GetFullName] se stává [concept_heir] na [ROOT.GetCountry.GetAdjectiveNoFormatting] trůnu." # todo: NEW TRANSLATION
+ austria_events.32.t: "Tragédie v lese" # todo: NEW TRANSLATION
+ austria_events.32.d: "[SCOPE.sCharacter('relevant_heir').GetFullName] byl nalezen mrtvý se svým milencem v lovecké chatě." # todo: NEW TRANSLATION
+ austria_events.32.f: "S vervou a spěchem policie uzavřela hrozný děj na lovecké chatě a zahájila vyšetřování okolností smrti [SCOPE.sCharacter('relevant_heir').GetFullNameNoFormatting]. Veškeré důkazy a spis z vyšetřování musí být předány přímo ministrovi pro policii, než budou uloženy do státních archivů." # todo: NEW TRANSLATION
+ austria_events.32.a: "Za každou cenu zakrýt okolnosti smrti [SCOPE.sCharacter('relevant_heir').GetHerHis]." # todo: NEW TRANSLATION
+ austria_events.32.b: "Obvinit milence [SCOPE.sCharacter('relevant_heir').GetFullNameNoFormatting]." # todo: NEW TRANSLATION
+ rudolf_habsburg_death_tt: "[SCOPE.sCharacter('relevant_heir').GetFullName] umírá." # todo: NEW TRANSLATION
+ cover_up_death: "Královské zakrytí" # todo: NEW TRANSLATION
+ royal_family_scandal: "Skandál královské rodiny" # todo: NEW TRANSLATION
+ austria_events.33.t: "Světová výstava v [SCOPE.sState('relevant_state_scope').GetCityHubName]" # todo: NEW TRANSLATION
+ austria_events.33.d: "[SCOPE.sCountry('austria_scope').GetName] bude hostit Velkou výstavu v [SCOPE.sState('relevant_state_scope').GetCityHubName]. Poradcové doporučují účast [SCOPE.sCountry('japan_scope').GetName] na tomto velkém kulturním a hospodářském výměnném setkání za účelem navázání diplomatických vztahů mezi našimi zeměmi." # todo: NEW TRANSLATION
+ austria_events.33.f: "Mluvčí výboru pro kulturní záležitosti s velkým nadšením hovoří o výhodách účasti [SCOPE.sCountry('japan_scope').GetNameNoFormatting] na Velké výstavě.\n\n\"Tyto Velké výstavy byly proslavené přínosy pro prestiž a růst jiných zemí. Toto by mohla být první z mnoha výstav, jichž se naše vláda oficiálně účastní. Určitě to prospěje celému [SCOPE.sCountry('japan_scope').GetNameNoFormatting]. Zamyslete se nad pokrokem naší země.\"" # todo: NEW TRANSLATION
+ austria_events.33.a: "Poslat zástupce do [SCOPE.sState('relevant_state_scope').GetCityHubName]." # todo: NEW TRANSLATION
+ austria_events.33.b: "Na takové pošetilé záležitosti nemáme čas." # todo: NEW TRANSLATION
+ did_attend_worlds_fair_tt: "Zástupci [SCOPE.sCountry('japan_scope').GetAdjective] #bold #g budou#!#! poslání do [SCOPE.sState('relevant_state_scope').GetCityHubName]" # todo: NEW TRANSLATION
+ did_not_attend_worlds_fair_tt: "Zástupci [SCOPE.sCountry('japan_scope').GetAdjective] #bold #r nebudou#!#! poslání do [SCOPE.sState('relevant_state_scope').GetCityHubName]" # todo: NEW TRANSLATION
+ grand_exhibition_paticipation_cost: "Účast na Velké výstavě" # todo: NEW TRANSLATION
+ grand_exhibition_participation_prestige: "Vlivné umění" # todo: NEW TRANSLATION
+ notification_japan_austria_message_name: "[SCOPE.sCountry('japan_scope').GetName] se účastní Velké výstavy" # todo: NEW TRANSLATION
+ notification_japan_austria_message_desc: "[SCOPE.sCountry('japan_scope').GetName] se chce podílet na naší velké kulturní a hospodářské výměně, aby navázal diplomatické vztahy mezi [SCOPE.sCountry('austria_scope').GetName] a [SCOPE.sCountry('japan_scope').GetName]. Pošlou zástupce na Velkou výstavu v [SCOPE.sState('relevant_state_scope').GetCityHubName]." # todo: NEW TRANSLATION
+ notification_japan_austria_message_tooltip: "#header $notification_japan_austria_message_name$#!\n$TOOLTIP_DELIMITER$\n$notification_japan_austria_message_desc$" # todo: NEW TRANSLATION
+ austria_events.34.t: "Pavilon [SCOPE.sCountry('japan_scope').GetAdjective]" # todo: NEW TRANSLATION
+ austria_events.34.t2: "Japonský pavilon" # todo: NEW TRANSLATION
+ austria_events.34.d: "Účast [SCOPE.sCountry('japan_scope').GetName] na naší Velké výstavě jistě přispěje k úspěchu naší akce. Stavba [SCOPE.sCountry('japan_scope').GetAdjective] Pavilonu je nyní v plném proudu." # todo: NEW TRANSLATION
+ austria_events.34.f: "Kupole hlavního pavilonu Velké výstavy se leskne složitými, ručně zdobenými dekoracemi. Na místě se buduje svatyně a [SCOPE.sCountry('japan_scope').GetAdjectiveNoFormatting] zahrada. Dřevěná torii brána, svatyně a zakřivený most jsou také součástí pavilonu.\n\nRozdávají se vzorky něčeho nazývaného #italic sójová omáčka#! spolu s poutavým [SCOPE.sCountry('japan_scope').GetAdjectiveNoFormatting] uměním a kvalitními produkty přivezenými zástupci [SCOPE.sCountry('japan_scope').GetNameNoFormatting] pro zařazení do výstavy." # todo: NEW TRANSLATION
+ austria_events.34.a: "Vynikající." # todo: NEW TRANSLATION
+ austria_events.34.b: "[SCOPE.sCountry('austria_scope').GetAdjectiveNoFormatting] umělci a podnikatelé z toho budou mít velký prospěch." # todo: NEW TRANSLATION
+ cultural_exchange_prestige: "Umění diplomacie" # todo: NEW TRANSLATION
+ cultural_exchange_art: "Umění kulturní výměny" # todo: NEW TRANSLATION
+ cultural_exchange_research_speed: "Expertní kulturní výměna" # todo: NEW TRANSLATION
+ notification_austria_japan_message_name: "Úspěšná přehlídka v [SCOPE.sCountry('austria_scope').GetName]" # todo: NEW TRANSLATION
+ notification_austria_japan_message_desc: "Účast [SCOPE.sCountry('japan_scope').GetName] na Velké výstavě v [SCOPE.sCountry('austria_scope').GetName] vedla k úspěšné kulturní výměně." # todo: NEW TRANSLATION
+ notification_austria_japan_message_tooltip: "#header $notification_austria_japan_message_name$#!\n$TOOLTIP_DELIMITER$\n$notification_austria_japan_message_desc$" # todo: NEW TRANSLATION
+ je_great_eastern_crisis: "Velká východní krize" # todo: NEW TRANSLATION
+ je_great_eastern_crisis_reason: "V [GetStrategicRegion('region_balkans').GetName] se rýsuje krize, přičemž [Concept('concept_secession','$concept_secessionists$')] ohrožují vládu [SCOPE.sCountry('ottoman_scope').GetName] nad regionem. Jak se situace zhoršuje, [SCOPE.sCountry('ottoman_scope').GetAdjectiveNoFormatting] usilují stabilizovat nepokoje dříve, než pohlcují celý region. Mezitím oportunističtí poddaní a cizí mocnosti sledují nyní zranitelné balkánské území.\n\n#b Vlny rozporu:#!\nZatímco $je_great_eastern_crisis$ probíhá, všechny kulturní a náboženské [Concept('concept_political_movement','$concept_political_movements$')] v [SCOPE.sCountry('ottoman_scope').GetNameNoFormatting] budou přitahovat ještě více #tooltippable #tooltip:[GetPlayer.GetTooltipTag],eastern_crisis_movement_attraction_tt podpory#!#!." # todo: NEW TRANSLATION
+ failed_sick_man_main_tt: "Neuspěl #v $je_sick_man_main$#! nebo #v $je_sick_man_separatism$#! [Concept('concept_journal_entry','$concept_journal_entries$')]" # todo: NEW TRANSLATION
+ eastern_crisis_complete_tt: "[concept_ottoman_integrity] dosáhla #v 100%#!" # todo: NEW TRANSLATION
+ eastern_crisis_movement_attraction: "Vlny rozporu" # todo: NEW TRANSLATION
+ crisis_modifier_if_activated_tt: "Kulturní a náboženské [Concept('concept_political_movement','$concept_political_movements$')] získávají #tooltippable #tooltip:[GetPlayer.GetTooltipTag],eastern_crisis_movement_attraction_tt [GetStaticModifier('eastern_crisis_movement_attraction').GetName|v]#!#! zatímco $je_great_eastern_crisis$ [concept_journal_entry] je aktivní" # todo: NEW TRANSLATION
+ crisis_modifier_when_done_tt: "Kulturní a náboženské [Concept('concept_political_movement','$concept_political_movements$')] ztratí #tooltippable #tooltip:[GetPlayer.GetTooltipTag],eastern_crisis_movement_attraction_tt [GetStaticModifier('eastern_crisis_movement_attraction').GetName|v]#!#!" # todo: NEW TRANSLATION
+ eastern_crisis_movement_attraction_tt: "[GetStaticModifier('eastern_crisis_movement_attraction').GetName|v]\n[GetStaticModifier('eastern_crisis_movement_attraction').GetDesc]" # todo: NEW TRANSLATION
+ eastern_crisis_consequence_tt: "Pokud se aktivuje $je_great_eastern_crisis$ [concept_journal_entry], kulturní a náboženské [Concept('concept_political_movement','$concept_political_movements$')] budou získávat ještě více podpory" # todo: NEW TRANSLATION
+ control_eastern_crisis_bar: "Rumelská integrita" # todo: NEW TRANSLATION
+ control_eastern_crisis_bar_desc: "[concept_ottoman_integrity]: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('control_eastern_crisis_upper_bound')])" # todo: NEW TRANSLATION
+ progress_from_ottoman_legitimacy_tt: "$dyn_c_ottoman_empire$ [concept_legitimacy] rovná se nebo nad #v [GetPlayer.MakeScope.ScriptValue('control_eastern_crisis_legitimacy_min')]#!" # todo: NEW TRANSLATION
+ progress_from_being_at_peace_tt: "$dyn_c_ottoman_empire$ #r #b není#!#! ve stavu [concept_war]" # todo: NEW TRANSLATION
+ progress_from_being_at_war_tt: "$dyn_c_ottoman_empire$ je ve stavu [concept_war]" # todo: NEW TRANSLATION
+ progress_from_no_secessionists_growing: "$dyn_c_ottoman_empire$ #r #bold nemá#!#! žádné rostoucí [Concept('concept_secession','$concept_secessionist$')] [Concept('concept_political_movement','$concept_political_movements$')]" # todo: NEW TRANSLATION
+ progress_from_crushed_secession: "$dyn_c_ottoman_empire$ nedávno potlačil [concept_secession]" # todo: NEW TRANSLATION
+ je_eastern_crisis_tracker: "Velká východní krize" # todo: NEW TRANSLATION
+ je_eastern_crisis_tracker_reason: "V [GetStrategicRegion('region_balkans').GetName] se rýsuje krize a [SCOPE.sCountry('ottoman_scope').GetNameNoFormatting] se snaží udržet kontrolu nad svým územím, protože [Concept('concept_secession','$concept_secessionists$')] ohrožují jejich vládu. Jak se situace zhoršuje, snaží se stabilizovat narůstající nepokoje dříve, než se rozšíří po regionu. Zatímco $je_great_eastern_crisis$ probíhá, všechny kulturní a náboženské [Concept('concept_political_movement','$concept_political_movements$')] v [SCOPE.sCountry('ottoman_scope').GetNameNoFormatting] budou přitahovat ještě více #tooltippable #tooltip:[GetPlayer.GetTooltipTag],eastern_crisis_movement_attraction_tt podpory#!#!." # todo: NEW TRANSLATION
+ eastern_crisis_balkan_nations: "Vzpoury jako příležitost" # todo: NEW TRANSLATION
+ eastern_crisis.1.t: "Vyvíjející se krize" # todo: NEW TRANSLATION
+ eastern_crisis.1.d: "Budoucnost [SCOPE.sCountry('ottoman_scope').GetName] je na křižovatce. Stoupající počet [Concept('concept_secession','$concept_secessionist$')] [Concept('concept_political_movement','$concept_political_movements$')] ohrožuje stabilitu naší země." # todo: NEW TRANSLATION
+ eastern_crisis.1.d2: "Budoucnost [SCOPE.sCountry('ottoman_scope').GetName] je na křižovatce. Stoupající počet [Concept('concept_secession','$concept_secessionist$')] [Concept('concept_political_movement','$concept_political_movements$')] ohrožuje stabilitu jejich národa." # todo: NEW TRANSLATION
+ eastern_crisis.1.f: "Nejmladší vezír İsmail se třásl, když mluvil, s hlavou skloněnou: \"Nelze již popřít, že v naší kdysi velké říši vzkvétají nepokoje. Stoupenci $concept_secessionist$ jsou údajně k nalezení v každé kavárně v [SCOPE.sState('relevant_state_scope').GetCityHubName].\"\n\nOstatní vezíři přikývli, nevyvedeni z klidu. Nejstarší promluvil. \"Musíme pokračovat v našem programu, i kdyby [SCOPE.sCharacter('ruler_scope').GetPrimaryRoleTitle] nesdílel náš názor. Životy našich rodin jsou v sázce.\"" # todo: NEW TRANSLATION
+ eastern_crisis.1.a: "Důkladně sledovat vývoj situace." # todo: NEW TRANSLATION
+ negative_crisis_influence: "Diplomatická krize" # todo: NEW TRANSLATION
+ positive_crisis_influence: "Diplomatická příležitost" # todo: NEW TRANSLATION
+ eastern_crisis_subjects_modifier_tt: "Každý [SCOPE.sCountry('ottoman_scope').GetName] [concept_subject] obdrží #tooltippable;tooltip:[GetPlayer.GetTooltipTag],eastern_crisis_balkan_nations_tt $eastern_crisis_balkan_nations$#! \n[GetStaticModifier('eastern_crisis_balkan_nations').GetDesc]" # todo: NEW TRANSLATION
+ eastern_crisis_balkan_nations_tt: "[GetStaticModifier('eastern_crisis_balkan_nations').GetName|v]\n[GetStaticModifier('eastern_crisis_balkan_nations').GetDesc]" # todo: NEW TRANSLATION
+ eastern_crisis_subjects_modifier__ten_years_tt: "Každý [SCOPE.sCountry('ottoman_scope').GetName] [concept_subject] obdrží #tooltippable;tooltip:[GetPlayer.GetTooltipTag],eastern_crisis_balkan_nations_tt $eastern_crisis_balkan_nations$#! ([Concept('concept_decay','$concept_decaying$')]) po dobu #v 10 let#! \n[GetStaticModifier('eastern_crisis_balkan_nations').GetDesc]" # todo: NEW TRANSLATION
+ eastern_crisis.2.t: "Krize pod kontrolou" # todo: NEW TRANSLATION
+ eastern_crisis.2.d: "Díky silné [concept_ottoman_integrity] [SCOPE.sCountry('ottoman_scope').GetName] zvládl narůstající krizi v [GetStrategicRegion('region_balkans').GetName]." # todo: NEW TRANSLATION
+ eastern_crisis.2.f: "Vezíři se shromáždili v kavárně. Nejmladší poznamenal: \"To je přesně ten druh místa, kde bychom nalezli separatisty. Je moudré slavit v lví doupě?\"\n\n\"İsmaili, příliš se obáváš,\" promluvil nejstarší. \"Lvi tam stále jsou, to jistě, ale krize pominula. Nyní, vidíš, víme, kde nastražit pasti.\"\n\n\"Nicméně,\" zamumlal İsmail. \"Možná existovaly okolnosti, v nichž bylo loajální povstat...\"" # todo: NEW TRANSLATION
+ eastern_crisis.2.a: "S vládou [SCOPE.sCountry('ottoman_scope').GetAdjectiveNoFormatting] se nemá piplat." # todo: NEW TRANSLATION
+ eastern_crisis_controlled: "Kontrolovaná východní krize" # todo: NEW TRANSLATION
+ eastern_crisis.3.t: "Nezvládnutá krize" # todo: NEW TRANSLATION
+ eastern_crisis.3.d: "Kdysi velký [SCOPE.sCountry('ottoman_scope').GetName] nebyl schopen zvládnout narůstající nepokoje v [GetStrategicRegion('region_balkans').GetName]. Nepokoje se mohou dál zvětšovat." # todo: NEW TRANSLATION
+ eastern_crisis.3.f: "İsmail se stále třásl, když vedl ostatní vezíry skrz kouř z vodních dýmek do zadní místnosti kavárny. \n\n\"Čím jsi tak vyděšen, mladíku?\" nejstarší se zasmál. \"Vím, že naše říše se zdá v těžkých časech, ale přetrvala po staletí a vydrží…\" Vezír se odmlčel, když se z kouřových koutů vynořily široké postavy. \n\nİsmail zavřel dveře na západku. \"Jsou tací, kteří nesouhlasí, pašo, a naléhali, abychom se s tebou setkali.\"" # todo: NEW TRANSLATION
+ eastern_crisis.3.a: "Toto selhání ohrožuje budoucnost vlády [SCOPE.sCountry('ottoman_scope').GetAdjectiveNoFormatting]." # todo: NEW TRANSLATION
+ eastern_crisis_not_controlled: "Nezvládnutá východní krize" # todo: NEW TRANSLATION
+ eastern_crisis_movement_radicalism: "Disharmonická aktivita" # todo: NEW TRANSLATION
+ eastern_crisis_liberty_desire_increase: "Vzpoury poddaných" # todo: NEW TRANSLATION
+ ionian_island_overlord_not_at_war_with_root_tt: "Kontrahent $ION$ není ve válce s [ROOT.GetCountry.GetName]" # todo: NEW TRANSLATION
+ we_annex_ionian_islands_tt: "Náš návrh na jednání o přechodu moci bude odeslán $ION$'s [concept_overlord]" # todo: NEW TRANSLATION
+ transfer_ionian_islands_decision: "Anexovat Jónské ostrovy" # todo: NEW TRANSLATION
+ transfer_ionian_islands_decision_desc: "Jónské ostrovy několikrát změnily majitele během napoleonských válek a po získání nezávislosti nebyly integrovány do řeckého státu. Pokud získáme souhlas jak Jónského lidu, tak vlády jejich ochránců, můžeme vyjednat pokojný přechod moci." # todo: NEW TRANSLATION
+ je_kaiserforum: "Innere Stadt" # todo: NEW TRANSLATION
+ je_kaiserforum_reason: "V srdci [SCOPE.sState('relevant_state').GetCityHubName] se nachází Ringstrasse—velkorysá třída obkružující centrum města. Panel [ROOT.GetCountry.GetAdjectiveNoFormatting] porotců přezkoumal nespočet návrhů, které promění tento kout [SCOPE.sState('relevant_state').GetCityHubName] v císařské fórum, nová sídla vlády a vzorová kulturní zařízení. Nyní, když jsou staré městské hradby zbourány, tato iniciativa uvádí [ROOT.GetCountry.GetNameNoFormatting] do nové éry městské kultury.\n\n$building_kaiserforum_3$ bude třeba budovat ve fázích a může být postaven v panelu státu pro [SCOPE.sState('relevant_state').GetName]." # todo: NEW TRANSLATION
+ no_kaiserforum_status_loc: "" # todo: NEW TRANSLATION
+ kaiserforum_0_built_kaiserforum_1_ready_status_loc: "První fáze [GetBuildingType('building_kaiserforum_1').GetName] připravena ke stavbě" # todo: NEW TRANSLATION
+ kaiserforum_1_built_kaiserforum_2_ready_status_loc: "Druhá fáze [GetBuildingType('building_kaiserforum_2').GetName] připravena ke stavbě" # todo: NEW TRANSLATION
+ kaiserforum_2_built_kaiserforum_3_or_4_ready_status_loc: "Zkontrolujte #b $je_kaiserforum_kaisergelb_button$#! tlačítko pro další fázi stavby" # todo: NEW TRANSLATION
+ kaiserforum_3_ready_status_loc: "Třetí fáze [GetBuildingType('building_kaiserforum_3').GetName] připravena ke stavbě" # todo: NEW TRANSLATION
+ kaiserforum_4_ready_status_loc: "Třetí fáze [GetBuildingType('building_kaiserforum_4').GetName] připravena ke stavbě" # todo: NEW TRANSLATION
+ kaiserforum_3_built_complete_status_loc: "Poslední fáze výstavby $building_kaiserforum_3$ dokončena" # todo: NEW TRANSLATION
+ kaiserforum_4_built_complete_status_loc: "Poslední fáze výstavby $building_kaiserforum_4$ dokončena" # todo: NEW TRANSLATION
+ kaiserforum_complete_tt: "[ROOT.GetCountry.GetName] dokončil výstavbu $building_kaiserforum_3$ v [Concept('concept_state_region','$concept_state_region$')] $STATE_AUSTRIA$" # todo: NEW TRANSLATION
+ kaiserforum_populated_tt: "Pracovní síla $building_kaiserforum_3$ [concept_occupancy] je větší nebo rovna #variable 50%#!" # todo: NEW TRANSLATION
+ kaisergelb_kaiserforum_complete_tt: "[ROOT.GetCountry.GetName] dokončil výstavbu $building_kaiserforum_4$ v [Concept('concept_state_region','$concept_state_region$')] $STATE_AUSTRIA$" # todo: NEW TRANSLATION
+ kaisergelb_kaiserforum_populated_tt: "Pracovní síla $building_kaiserforum_4$ [concept_occupancy] je větší nebo rovna #variable 50%#!" # todo: NEW TRANSLATION
+ rejected_kaiserforum_project_tt: "[ROOT.GetCountry.GetName] odmítl návrh na výstavbu $building_kaiserforum_3$" # todo: NEW TRANSLATION
+ does_not_have_state_austria_tt: "[ROOT.GetCountry.GetName] nemá $STATE_AUSTRIA$" # todo: NEW TRANSLATION
+ kaiserforum_available_tt: "[GetBuildingType('building_kaiserforum_3').GetName] bude dostupný k výstavbě" # todo: NEW TRANSLATION
+ accepted_kaiserforum_tt: "Přijato: návrh výstavby [GetBuildingType('building_kaiserforum_3').GetName] v #b $je_kaiserforum$#! [concept_journal_entry]" # todo: NEW TRANSLATION
+ kaisergelb_kaiserforum_available_tt: "[GetBuildingType('building_kaiserforum_4').GetName] bude dostupný k výstavbě" # todo: NEW TRANSLATION
+ accepted_kaisergelb_kaiserforum_tt: "Přijato: návrh výstavby [GetBuildingType('building_kaiserforum_4').GetName] v #b $je_kaiserforum$#! [concept_journal_entry]" # todo: NEW TRANSLATION
+ je_kaiserforum_kaisergelb_button: "Závěrečné úpravy" # todo: NEW TRANSLATION
+ je_kaiserforum_kaisergelb_button_desc: "S dokončenými stavbami můžeme přezkoumat závěrečné plány pro centrum města a aplikovat příjemný nátěr Schönbrunner žluté na oficiální budovy." # todo: NEW TRANSLATION
+ kaiserforum.1.t: "Rozšíření centra města" # todo: NEW TRANSLATION
+ kaiserforum.1.d: "Předložen byl návrh na rozšíření centra města. Projekt by vyžadoval několik fází výstavby, ale proměnil by [SCOPE.sState('relevant_state').GetCityHubName]." # todo: NEW TRANSLATION
+ kaiserforum.1.f: ""Je mou vůlí, aby byla expanze vnitřního města ve Vídni provedena co nejdříve, s ohledem na vhodné propojení s předměstími. Při tom by se mělo uvažovat o regulaci a zvelebení mého sídla a císařského hlavního města. K tomu schvaluji odstranění obklopujících hradeb vnitřního města i suchých příkopů kolem nich.\" \n\n— Franz Joseph I" # todo: NEW TRANSLATION
+ kaiserforum.1.a: "Začněte práce okamžitě!" # todo: NEW TRANSLATION
+ kaiserforum.1.b: "Takové podnikání je nevhodné." # todo: NEW TRANSLATION
+ kaiserforum_1_construct_tt: "$building_kaiserforum_1$ může být postaven v panelu státu pro [SCOPE.sState('relevant_state').GetName]" # todo: NEW TRANSLATION
+ kaiserforum_2_construct_tt: "Stavba $building_kaiserforum_2$ může pokračovat v panelu státu pro [SCOPE.sState('relevant_state').GetName]" # todo: NEW TRANSLATION
+ kaiserforum_3_construct_tt: "Stavba $building_kaiserforum_3$ může pokračovat v panelu státu pro [SCOPE.sState('relevant_state').GetName]" # todo: NEW TRANSLATION
+ kaiserforum_4_construct_tt: "Stavba $building_kaiserforum_4$ může pokračovat v panelu státu pro [SCOPE.sState('relevant_state').GetName]" # todo: NEW TRANSLATION
+ dismissed_kaiserforum_je_tt: "#r #bold $je_kaiserforum$#! [concept_journal_entry] bude odmítnut#!" # todo: NEW TRANSLATION
+ kaiserforum_accepted: "Přijato: výstavba fóra" # todo: NEW TRANSLATION
+ kaiserforum_rejected: "Odmítnuto: výstavba fóra" # todo: NEW TRANSLATION
+ kaiserforum.2.t: "Kulturní vliv" # todo: NEW TRANSLATION
+ kaiserforum.2.d: "První fáze výstavby je dokončena a nyní stojí muzeum umění a přírodních dějin nedaleko Ringstrasse. Pokrok kultury a vzdělanosti v [SCOPE.sState('relevant_state').GetName] bude nepopiratelný." # todo: NEW TRANSLATION
+ kaiserforum.2.f: ""Co se týče města Vídně, nachází se v přechodovém stavu v důsledku odstranění jiných opevnění a vzniku bulvárů na jejich místě, nehorších než ty, které v Paříži zřídil baron Haussmann během existence Napoleonské dynastie. Pravdou je, že Vídeň lze přirovnat k druhé Paříži v miniatuře, s Dunajem namísto Seiny. A pokud Rakouské císařství zůstane nedotčeno, což je velmi pravděpodobné, může se za dvacet let pyšnit jedním z nejlépe plánovaných a nejlépe vybudovaných měst v Evropě.\" — By an Australian Colonist" # todo: NEW TRANSLATION
+ kaiserforum.2.a: "To bude součástí odkazu [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]." # todo: NEW TRANSLATION
+ modifier_kunsthistorisches: "Kunsthistorisches Museum Wien" # todo: NEW TRANSLATION
+ modifier_naturhistorisches: "Naturhistorisches Museum Wien" # todo: NEW TRANSLATION
+ kaiserforum.3.t: "Měnící se panorama" # todo: NEW TRANSLATION
+ kaiserforum.3.d: "Stavba podél Ringstrasse výrazně zlepšila dopravu zboží a osob v [SCOPE.sState('relevant_state').GetCityHubName]. Význam projektu není nedůležitý. Mnozí netrpělivě očekávají další fázi rozvoje." # todo: NEW TRANSLATION
+ kaiserforum.3.f: "Nyní, když je centrum města propojeno s předměstími na západě, proudí doprava stálým tempem srdcem [SCOPE.sState('relevant_state').GetCityHubName]. Nový povrch mírně utlumil rušný hluk z intenzivního provozu.\n\nV obnovených zdech komplexu vyjadřuje [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] spokojenost architektovi: \"Vývoj $building_kaiserforum_2$ jde velmi dobře. Řekni mi, co je ještě třeba doplnit?\"" # todo: NEW TRANSLATION
+ kaiserforum.3.a: "Pokrok na $building_kaiserforum_2$ je poctou píli [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] a [SCOPE.gsInterestGroup('relevant_ig').GetName]." # todo: NEW TRANSLATION
+ je_kaiserforum_kaisergelb_button_tt: "Zkontrolovat návrh #b $je_kaiserforum_kaisergelb_button$#! pro další fázi vývoje v #b $je_kaiserforum$#! [concept_journal_entry]" # todo: NEW TRANSLATION
+ modifier_neue_burg: "Neue Burg" # todo: NEW TRANSLATION
+ modifier_influential_improvements: "Vlivné zlepšení" # todo: NEW TRANSLATION
+ kaiserforum.4.t: "Schönbrunn žlutá" # todo: NEW TRANSLATION
+ kaiserforum.4.d: "V této závěrečné fázi rozvoje zbývá poslední otázka: Bude se v této expanzi metropole [SCOPE.sState('relevant_state').GetCityHubName] používat charakteristická císařská žlutá barva [ROOT.GetCountry.GetNameNoFormatting]?" # todo: NEW TRANSLATION
+ kaiserforum.4.f: "Zlatavě okrové měkké tóny Schönbrunn žluté malují majestátní vizi.\n\n\"Toto trvalé rozpoznatelné zbarvení jistě zanechá silný dojem,\" vykřikl jeden malíř při posuzování barvy.\n\nJiný umělec skepticky pohlíží a oponuje: \"Ale chceme lpět na takových ozvěnách minulosti?\"" # todo: NEW TRANSLATION
+ kaiserforum.4.a: "To může zůstat za námi v městské minulosti." # todo: NEW TRANSLATION
+ kaiserforum.4.b: "Musíme fórum natřít zlatavě okrovou!" # todo: NEW TRANSLATION
+ kaiserforum_second_stage_tt: "Postaven druhý stupeň $building_kaiserforum_2$" # todo: NEW TRANSLATION
+ kaiserforum.5.t: "Budovy nádhery" # todo: NEW TRANSLATION
+ kaiserforum.5.d: "Po mnoha letech vývoje je vize fóra plně realizována. Nádhera transformujícího designu je ohromující. Stavba v centru města [SCOPE.sState('relevant_state').GetCityHubName] je nyní dokončena." # todo: NEW TRANSLATION
+ kaiserforum.5.f: ""Umění nemůže být moderní. Umění je primárně věčné.\" \n\n—Egon Schiele" # todo: NEW TRANSLATION
+ kaiserforum.5.a: "Přínosy našeho počinu budou dlouhotrvající." # todo: NEW TRANSLATION
+ kaiserforum.5.b: "Náš architektonický výkon bude dobře hodnocen." # todo: NEW TRANSLATION
+ kaiserforum_loc_efforts: "Ringstrasse znovuobjevena" # todo: NEW TRANSLATION
+ kaiserforum_int_acclaim: "Architektonické ocenění" # todo: NEW TRANSLATION
