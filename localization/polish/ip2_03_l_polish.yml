@@ -58,7 +58,7 @@
  utilitarian.8.a: "[SCOPE.gsInterestGroup('relevant_ig').GetNameNoFormatting] mohou pomoci tyto změny prosadit."
  utilitarian.8.b: "Reagovat na depeši je nevýhodné."
  util_law_enactment_progress: "Prosazování změny"
- clerk_state_radicals_increase_tt: "[Concept('concept_pop','Populace')] ve státech s politickou silou [SCOPE.gsInterestGroup('relevant_ig').GetName] nad 10 % se stanou více [Concept('concept_radical','radikál')]"
+ clerk_state_radicals_increase_tt: "[Concept('concept_pop','Populace')] ve státech s politickou silou [SCOPE.gsInterestGroup('relevant_ig').GetCustom('IG_G_TT')] nad 10 % se stanou více [Concept('concept_radical','radikál')]" # todo: NAME CASE
  no_edu_change_stance_gain_pol_str: "Přetrvávající preference"
  utilitarian.9.t: "Mimořádně náročná vize"
  utilitarian.9.d: "Koloniální správci hlásící se k filozofii [GetIdeology('ideology_utilitarian_leader').GetName] vypracovali ambiciózní plány na úplnou racionalizaci společnosti země [ROOT.GetCountry.GetAdjective]. Jejich kritici ji označují za nemožnou, mimořádně náročnou vizi."
@@ -368,10 +368,10 @@
  rural_folk_ig_strong: "Důkaz moci"
  future_minds: "Mysli budoucnosti"
  notification_verge_of_collapse_name: "[SCOPE.sCharacter('rural_folk_leader_scope').GetFullNameNoFormatting] rezignuje"
- notification_verge_of_collapse_desc: "Agenda drávidského hnutí ztratila dynamiku. [SCOPE.sCharacter('rural_folk_leader_scope').GetFullName] odstoupil z vedení [SCOPE.gsInterestGroup('rural_folk_ig_scope').GetName]."
+ notification_verge_of_collapse_desc: "Agenda drávidského hnutí ztratila dynamiku. [SCOPE.sCharacter('rural_folk_leader_scope').GetFullName] odstoupil z vedení [SCOPE.gsInterestGroup('rural_folk_ig_scope').GetCustom('IG_G_TT')]." # todo: NAME CASE
  notification_verge_of_collapse_tooltip: "#header $notification_verge_of_collapse_name$#!\n$TOOLTIP_DELIMITER$\n$notification_verge_of_collapse_desc$"
  caste_conflict.4.t: "Nebrámanský manifest"
- caste_conflict.4.d: "V [ROOT.GetCountry.GetCapital.GetCityHubName] koluje Nebrámanský manifest, který vyvolává napětí mezi [SCOPE.gsInterestGroup('rural_folk_ig_scope').GetName] a [SCOPE.gsInterestGroup('intelligentsia_ig_scope').GetName]."
+ caste_conflict.4.d: "V [ROOT.GetCountry.GetCapital.GetCityHubName] koluje Nebrámanský manifest, který vyvolává napětí mezi [SCOPE.gsInterestGroup('rural_folk_ig_scope').GetCustom('IG_I_TT')] a [SCOPE.gsInterestGroup('intelligentsia_ig_scope').GetCustom('IG_I_TT')]." # todo: NAME CASE
  caste_conflict.4.f: "Dva straničtí vůdci seděli naproti sobě a jejich pobočníci napjatě naslouchali, zatímco se tyto dvě mysli střetávaly už druhou hodinu.\n\n„Prosím, musíte přesvědčit Stranu spravedlnosti, aby uznala rozum,“ naléhal [SCOPE.sCharacter('intelligentsia_leader_scope').GetFullNameNoFormatting]. „Musíme bojovat společně, jinak selžeme!“\n\n„Chcete, abychom po vašem boku čelili britským obuškům, ale řekněte mi, až přijde zítřek, dovolíte nám také vládnout po vašem boku? Britové mi neublížili o nic víc než vy. Vždyť mnoho jejich činů bylo vedeno právě vašima rukama.“"
  caste_conflict.4.a: "Ten manifest je nevlastenecký!"
  caste_conflict.4.b: "Možná manifest uvádí oprávněné body."

@@ -1,6 +1,6 @@
 ﻿l_polish:
  generic_laws.1.t: "Strhující projev uchvátil veřejnost"
- generic_laws.1.d: "Dnes odpoledne pronesl [SCOPE.sCharacter('orator_ig_leader_scope').GetFullName], vůdce [SCOPE.gsInterestGroup('orator_ig_scope').GetName], vášnivý projev podporující prosazení zákona [SCOPE.sLaw('current_law_scope').GetName]."
+ generic_laws.1.d: "Dnes odpoledne pronesl [SCOPE.sCharacter('orator_ig_leader_scope').GetFullName], vůdce [SCOPE.gsInterestGroup('orator_ig_scope').GetCustom('IG_G_TT')], vášnivý projev podporující prosazení zákona [SCOPE.sLaw('current_law_scope').GetName]." # todo: NAME CASE
  generic_laws.1.f: "Při vystoupení před veřejností na hlavním náměstí města [SCOPE.sCharacter('orator_ig_leader_scope').GetCountry.GetCapital.GetCityHubName] zanechala silná rétorika [SCOPE.sCharacter('orator_ig_leader_scope').GetFullNameNoFormatting] dojem i na [SCOPE.sCharacter('orator_ig_leader_scope').GetHerHis] nejzahořklejší politické odpůrce. Úryvky z projevu se již šíří po celé [ROOT.GetCountry.GetNameNoFormatting] a dále rozdmýchávají již tak bouřlivou debatu."
  generic_laws.1.a: "To by mělo výrazně usnadnit cestu k reformě."
  generic_laws.1.b: "Taková vystoupení vrhají dobré světlo na [SCOPE.sCharacter('orator_ig_leader_scope').GetFullNameNoFormatting] a [SCOPE.sCharacter('orator_ig_leader_scope').GetHerHis] věc."
@@ -9,7 +9,7 @@
  rising_support_for_ig_minor: "Rostoucí podpora veřejnosti"
  skilled_orator: "Uznávaný řečník"
  generic_laws.2.t: "Zákulisní dohody odhaleny"
- generic_laws.2.d: "Významní členové [SCOPE.gsInterestGroup('corrupt_ig_scope').GetName], včetně [SCOPE.gsInterestGroup('corrupt_ig_scope').GetLeader.GetFullName], byli odhaleni v korupčním skandálu, když si vyměňovali politické laskavosti za osobní „dary“."
+ generic_laws.2.d: "Významní členové [SCOPE.gsInterestGroup('corrupt_ig_scope').GetCustom('IG_G_TT')], včetně [SCOPE.gsInterestGroup('corrupt_ig_scope').GetLeader.GetFullName], byli odhaleni v korupčním skandálu, když si vyměňovali politické laskavosti za osobní „dary“." # todo: NAME CASE
  generic_laws.2.f: "Stačil jediný pomocník. Jeden mladík, který si ve správný čas a na správném místě mačkal akné, zaslechl burácející smích, ucítil bohatou směs tabáku a všiml si nových zlatých manžetových knoflíčků [SCOPE.sCharacter('corrupt_ig_leader_scope').GetFullNameNoFormatting]. Jedno poctivé svědectví správným uším — a vše bylo odhaleno."
  generic_laws.2.a: "Taková je politika."
  generic_laws.2.b: "Korupce? Žádnou nevidím..."
@@ -19,7 +19,7 @@
  corrupt_connections_exposed_minor: "Korupční vazby odhaleny"
  dealing_with_corruption: "Jaká korupce?"
  generic_laws.3.t: "Opozice předkládá požadavky"
- generic_laws.3.d: "Pragmatičtěji smýšlející členové [SCOPE.gsInterestGroup('opposition_demands_ig_scope').GetName], kteří jsou v současnosti proti schválení zákona [SCOPE.sLaw('current_law_scope').GetName], nabídli změnu postoje výměnou za určité politické ústupky. Tyto ústupky by však nebyly populární u [SCOPE.gsInterestGroup('opposition_demands_supporting_ig_scope').GetName]."
+ generic_laws.3.d: "Pragmatičtěji smýšlející členové [SCOPE.gsInterestGroup('opposition_demands_ig_scope').GetCustom('IG_G_TT')], kteří jsou v současnosti proti schválení zákona [SCOPE.sLaw('current_law_scope').GetName], nabídli změnu postoje výměnou za určité politické ústupky. Tyto ústupky by však nebyly populární u [SCOPE.gsInterestGroup('opposition_demands_supporting_ig_scope').GetCustom('IG_G_TT')]." # todo: NAME CASE
  generic_laws.3.f: "„Kompromis je dobrý deštník, ale špatná střecha; je to dočasné řešení, často moudré v stranické politice, ale téměř jistě nemoudré ve státnictví.“"
  generic_laws.3.a: "Ustupme jejich požadavkům, zákon musí projít."
  generic_laws.3.b: "Kompromis je nástroj slabých."
@@ -33,7 +33,7 @@
  generic_laws.4.d: "Uprostřed debaty o zákonu [SCOPE.sLaw('current_law_scope').GetName] uvedl jeden z předních dramatiků země, úzce spojený se skupinou [SCOPE.gsInterestGroup('playwright_ig_scope').GetName], velmi úspěšnou hru, jejíž politické poselství jasně vyjadřuje autorovu podporu přijetí zákona."
  generic_laws.4.f: "„Jeho názory mohou být poněkud zaujaté, ale, pane, jeho próze nelze nic vytknout!“"
  generic_laws.4.a: "[SCOPE.sLaw('current_law_scope').GetNameNoFormatting] bude teď na rtech všech."
- generic_laws.4.b: "To staví [SCOPE.gsInterestGroup('playwright_ig_scope').GetNameNoFormatting] do dobrého světla."
+ generic_laws.4.b: "To staví [SCOPE.gsInterestGroup('playwright_ig_scope').GetCustom('IG_A')] do dobrého světla." # todo: NAME CASE
  generic_laws.4.c: "Zajistěme, aby se hra dostala i na mezinárodní scénu."
  rising_support_for_ig: "Lichotivé zobrazení"
  popular_support_for_law: "Veřejná podpora zákona"
@@ -64,8 +64,8 @@
  grassroots_support_for_movement: "Podpora zdola"
  wave_of_popular_support: "Vlna veřejné podpory"
  generic_laws.8.t: "Veřejné vystoupení se nepovedlo"
- generic_laws.8.d: "To, co mělo být rutinním projevem o přednostech zákona [SCOPE.sLaw('current_law_scope').GetName] od [SCOPE.sCharacter('publicaddress_ig_leader_scope').GetFullName], se rychle změnilo v PR katastrofu pro [SCOPE.gsInterestGroup('publicaddress_ig_scope').GetName]."
- generic_laws.8.f: "Zmateně se prodírající špatně podanými argumenty, [SCOPE.sCharacter('publicaddress_ig_leader_scope').GetFullNameNoFormatting] nedokázal obstát — jeho argumenty byly jeho politickými oponenty nemilosrdně a přesvědčivě rozebrány. Otázka, kterou si nyní kladou všichni, zní, zda je toto selhání důsledkem inherentních nedostatků zákona [SCOPE.sLaw('current_law_scope').GetNameNoFormatting], nebo politické neschopnosti [SCOPE.gsInterestGroup('publicaddress_ig_scope').GetNameNoFormatting]."
+ generic_laws.8.d: "To, co mělo být rutinním projevem o přednostech zákona [SCOPE.sLaw('current_law_scope').GetName] od [SCOPE.sCharacter('publicaddress_ig_leader_scope').GetFullName], se rychle změnilo v PR katastrofu pro [SCOPE.gsInterestGroup('publicaddress_ig_scope').GetCustom('IG_A_TT')]." # todo: NAME CASE
+ generic_laws.8.f: "Zmateně se prodírající špatně podanými argumenty, [SCOPE.sCharacter('publicaddress_ig_leader_scope').GetFullNameNoFormatting] nedokázal obstát — jeho argumenty byly jeho politickými oponenty nemilosrdně a přesvědčivě rozebrány. Otázka, kterou si nyní kladou všichni, zní, zda je toto selhání důsledkem inherentních nedostatků zákona [SCOPE.sLaw('current_law_scope').GetNameNoFormatting], nebo politické neschopnosti [SCOPE.gsInterestGroup('publicaddress_ig_scope').GetCustom('IG_G')]." # todo: NAME CASE
  generic_laws.8.a: "Může za to tento špatně promyšlený návrh!"
  generic_laws.8.b: "[SCOPE.sCharacter('publicaddress_ig_leader_scope').GetFullNameNoFormatting] musí nést odpovědnost."
  generic_laws.8.c: "Zahoďme současný návrh a ukažme, že ho přepracujeme."
@@ -82,8 +82,8 @@
  displeased_establishment: "Nespokojené elity"
  forceful_approach: "Tvrdý postup"
  minority_protests: "Protesty menšin"
- generic_laws.10.t: "Rozkol v rámci [SCOPE.gsInterestGroup('defectors_ig_scope').GetNameNoFormatting]"
- generic_laws.10.d: "Vlivná frakce uvnitř [SCOPE.gsInterestGroup('defectors_ig_scope').GetName] začala být frustrovaná neutralitou svých kolegů v otázce zákona [SCOPE.sLaw('current_law_scope').GetName]. Jelikož sama zákon podporuje, rozhodla se nyní vytvořit samostatnou politickou frakci s cílem jeho prosazení."
+ generic_laws.10.t: "Rozkol v rámci [SCOPE.gsInterestGroup('defectors_ig_scope').GetCustom('IG_G')]" # todo: NAME CASE
+ generic_laws.10.d: "Vlivná frakce uvnitř [SCOPE.gsInterestGroup('defectors_ig_scope').GetCustom('IG_G_TT')] začala být frustrovaná neutralitou svých kolegů v otázce zákona [SCOPE.sLaw('current_law_scope').GetName]. Jelikož sama zákon podporuje, rozhodla se nyní vytvořit samostatnou politickou frakci s cílem jeho prosazení." # todo: NAME CASE
  generic_laws.10.f: "„Jak můžete jen nečinně stát a sledovat, jak vám svět uniká před očima? Nemáte snad žádný smysl pro čest? — pro povinnost vůči bližním? Takový nedostatek ambicí odmítám a troufám si říci, že nejsem sám.“"
  generic_laws.10.a: "S jejich podporou zákon projde."
  generic_laws.10.b: "[SCOPE.gsInterestGroup('defectors_support_ig_scope').GetName] podává těmto odpadlíkům pomocnou ruku."
@@ -121,8 +121,8 @@
  dead_man_of_europe: "Mrtvý muž Evropy"
  tanzimat_events.1.t: "Systém iltizám"
  tanzimat_events.1.d: "Po staletí naše správa spoléhá na výběr daní prostřednictvím daňového pachtu, avšak tento vysoce neefektivní systém zanechává mnoho nedostatků. Návrhy na reformu zaplavily stůl velkovezíra a národ netrpělivě očekává naši odpověď."
- tanzimat_events.1.f: "Od vlády Mehmeda II. jsou práva na výběr daní dražena nejvyšší nabídce, přičemž vítěz si ponechává část výnosu pro vlastní potřebu. Postupem času to vedlo ke vzniku vrstvy mocných, autonomních a často zkorumpovaných [SCOPE.gsInterestGroup('governors').GetNameNoFormatting], což výrazně snížilo příjmy státu.\n\nAčkoli většina souhlasí, že systém musí být změněn, jen málokdo se shodne jak, a ještě méně jich chce popudit pozemkovou elitu."
- tanzimat_events.1.a: "Zrušit daňový pacht, ale ponechat [SCOPE.gsInterestGroup('governors').GetNameNoFormatting] na místě."
+ tanzimat_events.1.f: "Od vlády Mehmeda II. jsou práva na výběr daní dražena nejvyšší nabídce, přičemž vítěz si ponechává část výnosu pro vlastní potřebu. Postupem času to vedlo ke vzniku vrstvy mocných, autonomních a často zkorumpovaných [SCOPE.gsInterestGroup('governors').GetCustom('IG_G')], což výrazně snížilo příjmy státu.\n\nAčkoli většina souhlasí, že systém musí být změněn, jen málokdo se shodne jak, a ještě méně jich chce popudit pozemkovou elitu." # todo: NAME CASE
+ tanzimat_events.1.a: "Zrušit daňový pacht, ale ponechat [SCOPE.gsInterestGroup('governors').GetCustom('IG_A')] na místě." # todo: NAME CASE
  tanzimat_events.1.b: "Nechme spící psy spát."
  tanzimat_events.1.c: "Zrušit systém jak formálně, tak fakticky."
  iltizam_abolished: "Iltizám zrušen"
@@ -232,19 +232,19 @@
  boxer_rebellion_events.4.a: "Jho [SCOPE.sCulture('manchu_culture').GetName] konečně skončilo."
  boxer_rebellion_events.4.b: "Nyní je čas na smíření."
  election_contextual_events.1.t: "Chléb, máslo a volební lístek"
- election_contextual_events.1.d: "S tím, jak ceny [SCOPE.sGoods('basic_foodstuff').GetName] po celé zemi prudce rostou, čelí [SCOPE.sParty('high_food_price_party').GetName] neustálému tlaku opozice — je obviňována z nezodpovědného hazardování s blahobytem svých občanů."
- election_contextual_events.1.f: "„Vysoké ceny [SCOPE.sGoods('basic_foodstuff').GetNameNoFormatting]? Nesmysl! V mém mládí jsme si vystačili s ještě menším množstvím a pracovali jsme dvakrát tolik! Tyhle ‚pobuřující‘ ceny potravin jsou jen výplody hysterických hospodyněk!“"
+ election_contextual_events.1.d: "S tím, jak ceny [SCOPE.sGoods('basic_foodstuff').GetCustom('GDS_G_TT')] po celé zemi prudce rostou, čelí [SCOPE.sParty('high_food_price_party').GetName] neustálému tlaku opozice — je obviňována z nezodpovědného hazardování s blahobytem svých občanů." # todo: NAME CASE
+ election_contextual_events.1.f: "„Vysoké ceny [SCOPE.sGoods('basic_foodstuff').GetCustom('GDS_G')]? Nesmysl! V mém mládí jsme si vystačili s ještě menším množstvím a pracovali jsme dvakrát tolik! Tyhle ‚pobuřující‘ ceny potravin jsou jen výplody hysterických hospodyněk!“" # todo: NAME CASE
  election_contextual_events.1.a: "Tak ať jedí něco jiného!"
  election_contextual_events.1.b: "Financovat polévkové kuchyně. Sytý člověk dělá méně chyb."
  alms_for_the_poor: "Almužny pro chudé"
  election_contextual_events.2.t: "Podvodná budoucnost"
- election_contextual_events.2.d: "Tvrzení, že politika rozsáhlého zadlužování [SCOPE.sParty('public_debt_party').GetName] zatížila budoucí generace nepřiměřeným břemenem, způsobila, že strana ztrácí voliče jako děravé síto."
+ election_contextual_events.2.d: "Tvrzení, že politika rozsáhlého zadlužování [SCOPE.sParty('public_debt_party').GetCustom('PARTY_G_TT')] zatížila budoucí generace nepřiměřeným břemenem, způsobila, že strana ztrácí voliče jako děravé síto." # todo: NAME CASE
  election_contextual_events.2.f: "„Blahoslavení mladí, neboť zdědí státní dluh.“"
  election_contextual_events.2.a: "Půjčky jsou základem každé zdravé ekonomiky!"
  election_contextual_events.2.b: "Najděte obětního beránka, veřejnost chce oběť."
  fiscally_irresponsible: "Fiskálně nezodpovědní"
  election_contextual_events.3.t: "Pacifista odsuzuje válku"
- election_contextual_events.3.d: "[SCOPE.sCharacter('pacifist_ig_leader').GetFullName], známý pacifista a vůdce [SCOPE.gsInterestGroup('opposition_pacifist_ig').GetName], ostře zaútočil na vládnoucí [SCOPE.sParty('government_war_party').GetName] a tvrdí, že vojáci [ROOT.GetCountry.GetAdjectiveNoFormatting] ve válce [SCOPE.sWar('pacifist_war').GetNameNoFormatting] páchali pod jejím dohledem závažná zvěrstva."
+ election_contextual_events.3.d: "[SCOPE.sCharacter('pacifist_ig_leader').GetFullName], známý pacifista a vůdce [SCOPE.gsInterestGroup('opposition_pacifist_ig').GetCustom('IG_G_TT')], ostře zaútočil na vládnoucí [SCOPE.sParty('government_war_party').GetCustom('PARTY_A_TT')] a tvrdí, že vojáci [ROOT.GetCountry.GetAdjectiveNoFormatting] ve válce [SCOPE.sWar('pacifist_war').GetNameNoFormatting] páchali pod jejím dohledem závažná zvěrstva." # todo: NAME CASE
  election_contextual_events.3.f: "„My... dostal jsem rozkaz shromáždit rukojmí, pane. Staré tváře, mladé tváře — někteří nebyli starší než můj vlastní syn. Takzvaní volní střelci napadali naše linie. ‚Vrazi‘ jim říkal můj velitel. ‚Loupežníci‘ se zlými úmysly a puškami v rukou. Rukojmí měli sloužit jako odstrašení!\n\nAle když toho večera padl třetí voják, velitel mi řekl, abych rukojmí odvedl... řekl mi, abych je zavedl do stodoly... a... Pane, odpusť mi.“"
  election_contextual_events.3.a: "Naši vojáci udělali co!? Komu!?"
  election_contextual_events.3.b: "Zajímavý názor. Cenzurujme to."
@@ -254,21 +254,21 @@
  election_contextual_events.3.tt.1: "Nepatriotická pomluva je skryta před veřejností."
  election_contextual_events.3.tt.2: "Informace unikne navzdory našemu úsilí."
  election_contextual_events.4.t: "Komu zvoní hrana"
- election_contextual_events.4.d: "Stárnoucí [SCOPE.sCharacter('decrepit_leader').GetFullName], vůdce [SCOPE.gsInterestGroup('decrepit_leader_ig').GetName], nečekaně zemřel uprostřed kampaně — a připravil tak [SCOPE.sParty('decrepit_leader_party').GetName] o klíčovou politickou postavu. Otázka jeho nástupce je nyní na rtech všech."
+ election_contextual_events.4.d: "Stárnoucí [SCOPE.sCharacter('decrepit_leader').GetFullName], vůdce [SCOPE.gsInterestGroup('decrepit_leader_ig').GetCustom('IG_G_TT')], nečekaně zemřel uprostřed kampaně — a připravil tak [SCOPE.sParty('decrepit_leader_party').GetCustom('PARTY_A_TT')] o klíčovou politickou postavu. Otázka jeho nástupce je nyní na rtech všech." # todo: NAME CASE
  election_contextual_events.4.f: "„Nečekaně? Ale prosím vás! Ta stará kostra už dávno měla potkat svého stvořitele. Je načase, aby ta strana dostala novou krev!“"
  election_contextual_events.4.a: "Zvolit populárního, ale neschopného kandidáta."
  election_contextual_events.4.b: "Odhodlaný, ale arogantní mladík se ujímá vedení."
  well_connected: "Dobře napojený"
  imperious_upstart: "Arogantní kariérista"
  election_contextual_events.5.t: "Země bídy"
- election_contextual_events.5.d: "[SCOPE.sCharacter('low_sol_opposition_leader').GetFullName], vůdce [SCOPE.gsInterestGroup('low_sol_opposition_ig').GetName], hlasitě obviňuje [SCOPE.sParty('low_sol_party').GetName] ze špatné správy vzhledem k nízké životní úrovni v zemi — tvrdí, že pouze [SCOPE.sParty('low_sol_opposition_party').GetName] má vůli situaci napravit."
- election_contextual_events.5.f: "„Cestou sem jsem viděl scény tak bezútěšné, že se téměř nedají popsat. Viděl jsem kdysi vážené vojáky, jak vrčí o zbytky v blátě — viděl jsem zoufalé rodiny namačkané v zaprášených činžácích — viděl jsem podvýživu, chudobu a beznaděj.\n\nObčané, toto je odkaz [SCOPE.sParty('low_sol_party').GetNameNoFormatting].“"
+ election_contextual_events.5.d: "[SCOPE.sCharacter('low_sol_opposition_leader').GetFullName], vůdce [SCOPE.gsInterestGroup('low_sol_opposition_ig').GetCustom('IG_G_TT')], hlasitě obviňuje [SCOPE.sParty('low_sol_party').GetCustom('PARTY_A_TT')] ze špatné správy vzhledem k nízké životní úrovni v zemi — tvrdí, že pouze [SCOPE.sParty('low_sol_opposition_party').GetName] má vůli situaci napravit." # todo: NAME CASE
+ election_contextual_events.5.f: "„Cestou sem jsem viděl scény tak bezútěšné, že se téměř nedají popsat. Viděl jsem kdysi vážené vojáky, jak vrčí o zbytky v blátě — viděl jsem zoufalé rodiny namačkané v zaprášených činžácích — viděl jsem podvýživu, chudobu a beznaděj.\n\nObčané, toto je odkaz [SCOPE.sParty('low_sol_party').GetCustom('PARTY_G')].“" # todo: NAME CASE
  election_contextual_events.5.a: "Proč bychom za to měli nést vinu? Zkusili být méně chudí?"
  election_contextual_events.5.b: "Jen pár špatných jablek ve správě, nic víc."
  indifferent_to_destitution: "Lhostejní k bídě"
  defender_of_the_downtrodden: "Obhájce utlačovaných"
  election_contextual_events.6.t: "Země hojnosti"
- election_contextual_events.6.d: "Vysoká životní úroveň v zemi vedla k široce rozšířenému pocitu spokojenosti se současným stavem, což v probíhajících volbách nahrává [SCOPE.sCharacter('high_sol_leader').GetFullName] a vládnoucí [SCOPE.sParty('high_sol_party').GetName]."
+ election_contextual_events.6.d: "Vysoká životní úroveň v zemi vedla k široce rozšířenému pocitu spokojenosti se současným stavem, což v probíhajících volbách nahrává [SCOPE.sCharacter('high_sol_leader').GetFullName] a vládnoucí [SCOPE.sParty('high_sol_party').GetCustom('PARTY_D_TT')]." # todo: NAME CASE
  election_contextual_events.6.f: "„Změna? Proč bych chtěl změnu? Mám plný žaludek, spokojenou ženu a dobrou práci. Proč bych to měl zahodit kvůli něčemu nejistému?“"
  election_contextual_events.6.a: "Když to funguje, proč to měnit?"
  election_contextual_events.6.b: "Vychvalte úspěchy [SCOPE.sCharacter('high_sol_leader').GetFullNameNoFormatting]."
@@ -282,7 +282,7 @@
  jingoist_rhetoric: "Šovinistická rétorika"
  dove_of_peace_in_time_of_war: "Holubice míru v čase války"
  election_contextual_events.8.t: "Proudy ginu a piva"
- election_contextual_events.8.d: "Protialkoholní politika [SCOPE.sParty('temperance_party').GetName] poškozuje její volební vyhlídky, protože množství žíznivých voličů přechází k [SCOPE.sParty('anti_temperance_party').GetName] — doufají, že změna vlády ukončí protialkoholní opatření."
+ election_contextual_events.8.d: "Protialkoholní politika [SCOPE.sParty('temperance_party').GetCustom('PARTY_G_TT')] poškozuje její volební vyhlídky, protože množství žíznivých voličů přechází k [SCOPE.sParty('anti_temperance_party').GetCustom('PARTY_D_TT')] — doufají, že změna vlády ukončí protialkoholní opatření." # todo: NAME CASE
  election_contextual_events.8.f: "„Odolat pokušení? Řeknu vám, co mě pokouší — narvat tuhle botu těm vašim moralizujícím abstinentům někam. Chci se napít, napiju se, a jestli mi to nedovolíte, půjdu za těmi, kdo dovolí.“"
  election_contextual_events.8.a: "Žádné pivo, žádný hlas!"
  election_contextual_events.8.b: "Spusťme očerňovací kampaň proti těmto nemravným požitkářům."
@@ -291,7 +291,7 @@
  je_machine_guns: "Automatické kulomety"
  je_machine_guns_reason: "Obsluhované jediným mužem a schopné vypálit stovky nábojů za minutu představují automatické kulomety téměř nepřekonatelnou překážku pro jakéhokoli útočníka čelícího opevněným pozicím."
  military_tech_events.401.t: "Modernizace arzenálu"
- military_tech_events.401.d: "Přechod velkovýroby od hladkohlavňových mušket k puškám v [SCOPE.sBuilding('rifle_factory').GetName] ve státě [SCOPE.sState('rifle_state').GetName] zahájil novou éru výroby [SCOPE.sGoods('small_arms_good').GetName] v [ROOT.GetCountry.GetAltAdjectiveNoFormatting('L')]." # todo: CONCEPT CASE
+ military_tech_events.401.d: "Přechod velkovýroby od hladkohlavňových mušket k puškám v [SCOPE.sBuilding('rifle_factory').GetName] ve státě [SCOPE.sState('rifle_state').GetName] zahájil novou éru výroby [SCOPE.sGoods('small_arms_good').GetCustom('GDS_G_TT')] v [ROOT.GetCountry.GetAltAdjectiveNoFormatting('L')]." # todo: CONCEPT CASE # todo: NAME CASE
  military_tech_events.401.f: "„I na vzdálenost jednoho tisíce yardů lze stále zasáhnout cíl.\n\nPředsunuté dělostřelecké pozice lze ostřelovat, bodákové útoky zastavit ještě před jejich začátkem.\n\nVýhody jsou nespočetné!\n\nPokud nevyvineme dostatečné výrobní kapacity k produkci těchto zbraní, čeká nás na bojišti katastrofa.“"
  military_tech_events.401.a: "Arzenál v [SCOPE.sState('rifle_state').GetCityHubName] bude proslulý po celém světě."
  military_tech_events.401.b: "[ROOT.GetCountry.GetNameNoFormatting] bude stát v čele vojenských inovací."

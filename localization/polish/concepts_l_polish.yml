@@ -1605,7 +1605,7 @@
  concept_supply_network_short: "Síť" # todo: NEW TRANSLATION
  concept_supply_networks: "Zásobovací sítě"
  concept_supply_networks_short: "Sítě" # todo: NEW TRANSLATION
- concept_supply_network_desc: "Každá námořní [Concept('concept_country','země')|l] potřebuje na [Concept('concept_market','trhu')] [GetGoods('merchant_marine').GetName|l], aby zajistila přepravní potřeby svých [Concept('concept_shipping_lane','námořních tras')]. Celková síla vaší zásobovací sítě je určena porovnáním nabídky [GetGoods('merchant_marine').GetName] s celkovou poptávkou napříč všemi vašimi námořními trasemi. Tato síla představuje základní [Concept('concept_shipping_lane_effectiveness','efektivita')|l] všech vašich námořních tras."
+ concept_supply_network_desc: "Každá námořní [Concept('concept_country','země')|l] potřebuje na [Concept('concept_market','trhu')] [GetGoods('merchant_marine').GetName|l], aby zajistila přepravní potřeby svých [Concept('concept_shipping_lane','námořních tras')]. Celková síla vaší zásobovací sítě je určena porovnáním nabídky [GetGoods('merchant_marine').GetCustom('GDS_G_TT')] s celkovou poptávkou napříč všemi vašimi námořními trasemi. Tato síla představuje základní [Concept('concept_shipping_lane_effectiveness','efektivita')|l] všech vašich námořních tras." # todo: NAME CASE
  concept_ship: "Loď"
  concept_ships: "Lodě"
  concept_military_ship: "Vojenská loď"

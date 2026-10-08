@@ -1,6 +1,6 @@
 ﻿l_polish:
  relevant_company_prosperity_over_100_tt: "[Concept('concept_prosperity','Prosperita')] společnosti [SCOPE.sCompany('relevant_company').GetName] je větší nebo rovna #v 100#!"
- relevant_goods_production_rank_tt: "[ROOT.GetCountry.GetAdjective] žebříček produkce pro [SCOPE.sGoods('relevant_goods').GetName] je v #b první trojce#!"
+ relevant_goods_production_rank_tt: "[ROOT.GetCountry.GetAdjective] žebříček produkce pro [SCOPE.sGoods('relevant_goods').GetCustom('GDS_A_TT')] je v #b první trojce#!" # todo: NAME CASE
  je_prestige_goods_clothes: "$prestige_good_generic_clothes$"
  je_prestige_goods_clothes_reason: "[SCOPE.sCompany('relevant_company').GetName] se etablovala jako významný hráč v naší ekonomice. Společnost chce využít svého současného blahobytu k vytvoření vlastní značky @prestige_good_generic_clothes! #b $prestige_good_generic_clothes$#! Pokud bude úspěšná, bude moci rozšířit svou konkurenceschopnost na globálním trhu s @clothes! #b $clothes$#!"
  je_prestige_goods_clothes_goal: "Udržujte následující po dobu #v [GetPlayer.MakeScope.ScriptValue('prestige_good_journal_entry_months')] měsíců#! (aktuálně #v [ROOT.GetCountry.MakeScope.Var('prestige_clothes_timer_var').GetValue]#!): #indent_newline:3 "

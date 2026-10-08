@@ -58,7 +58,7 @@
  utilitarian.8.a: "[SCOPE.gsInterestGroup('relevant_ig').GetNameNoFormatting] může pomoci prosadit tyto změny." # todo: NEW TRANSLATION
  utilitarian.8.b: "Reagovat na depeši je nevýhodné." # todo: NEW TRANSLATION
  util_law_enactment_progress: "Prosazování změn" # todo: NEW TRANSLATION
- clerk_state_radicals_increase_tt: "[Concept('concept_pop', '$concept_pops$')] ve státech s více než 10% politickou silou [SCOPE.gsInterestGroup('relevant_ig').GetName] se stanou více [concept_radical]" # todo: NEW TRANSLATION
+ clerk_state_radicals_increase_tt: "[Concept('concept_pop', '$concept_pops$')] ve státech s více než 10% politickou silou [SCOPE.gsInterestGroup('relevant_ig').GetCustom('IG_G_TT')] se stanou více [concept_radical]" # todo: NEW TRANSLATION # todo: NAME CASE
  no_edu_change_stance_gain_pol_str: "Trvající preference" # todo: NEW TRANSLATION
  utilitarian.9.t: "Nesmírně náročná vize" # todo: NEW TRANSLATION
  utilitarian.9.d: "Koloniální administrátoři vyznávající filozofii [GetIdeology('ideology_utilitarian_leader').GetName] vypracovali ambiciózní plány na zásadní racionalizaci [ROOT.GetCountry.GetAdjective] společnosti. Jejich kritici to nazývají nemožnou, nesmírně náročnou vizí." # todo: NEW TRANSLATION
@@ -135,7 +135,7 @@
  india_railway.5.a: "Nádhera." # todo: NEW TRANSLATION
  india_railway_reward: "Skvělé spojení" # todo: NEW TRANSLATION
  je_victoria_terminus: "Victoria Terminus" # todo: NEW TRANSLATION
- je_victoria_terminus_reason: "Příznivci [SCOPE.gsInterestGroup('relevant_terminus_ig').GetName] vybrali prostředky na #tooltippable #tooltip:victoria_terminus_construct_tt #bold vybudování velkého terminusu#! #!#!in $STATE_BOMBAY$. Tento elegantní terminus s přidanými železničními nástupišti a administrativními kancelářemi slibuje zlepšit veřejné mínění o Indii." # todo: NEW TRANSLATION
+ je_victoria_terminus_reason: "Příznivci [SCOPE.gsInterestGroup('relevant_terminus_ig').GetCustom('IG_G_TT')] vybrali prostředky na #tooltippable #tooltip:victoria_terminus_construct_tt #bold vybudování velkého terminusu#! #!#!in $STATE_BOMBAY$. Tento elegantní terminus s přidanými železničními nástupišti a administrativními kancelářemi slibuje zlepšit veřejné mínění o Indii." # todo: NEW TRANSLATION # todo: NAME CASE
  je_victoria_terminus_status: "Postavte $building_victoria_terminus$ v [Concept('concept_state_region','$concept_state_region$')|l] $STATE_BOMBAY$." # todo: NEW TRANSLATION
  victoria_terminus_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má $building_railway$ v [Concept('concept_state_region','$concept_state_region$')|l] $STATE_BOMBAY$." # todo: NEW TRANSLATION
  victoria_terminus_complete_tt: "[ROOT.GetCountry.GetNameNoFormatting] vybudoval $building_victoria_terminus$ v [Concept('concept_state_region','$concept_state_region$')|l] $STATE_BOMBAY$" # todo: NEW TRANSLATION
@@ -368,10 +368,10 @@
  rural_folk_ig_strong: "Důkaz moci" # todo: NEW TRANSLATION
  future_minds: "Budoucí mysli" # todo: NEW TRANSLATION
  notification_verge_of_collapse_name: "[SCOPE.sCharacter('rural_folk_leader_scope').GetFullNameNoFormatting] odstupuje" # todo: NEW TRANSLATION
- notification_verge_of_collapse_desc: "Agenda Dravidského hnutí ztratila hybnost. [SCOPE.sCharacter('rural_folk_leader_scope').GetFullName] odstoupil z funkce vůdce [SCOPE.gsInterestGroup('rural_folk_ig_scope').GetName]." # todo: NEW TRANSLATION
+ notification_verge_of_collapse_desc: "Agenda Dravidského hnutí ztratila hybnost. [SCOPE.sCharacter('rural_folk_leader_scope').GetFullName] odstoupil z funkce vůdce [SCOPE.gsInterestGroup('rural_folk_ig_scope').GetCustom('IG_G_TT')]." # todo: NEW TRANSLATION # todo: NAME CASE
  notification_verge_of_collapse_tooltip: "#header $notification_verge_of_collapse_name$#!\n$TOOLTIP_DELIMITER$\n$notification_verge_of_collapse_desc$" # todo: NEW TRANSLATION
  caste_conflict.4.t: "Manifest nebráhmínů" # todo: NEW TRANSLATION
- caste_conflict.4.d: "Manifest nebráhmínů koluje v [ROOT.GetCountry.GetCapital.GetCityHubName] a vyvolává napětí mezi [SCOPE.gsInterestGroup('rural_folk_ig_scope').GetName] a [SCOPE.gsInterestGroup('intelligentsia_ig_scope').GetName]." # todo: NEW TRANSLATION
+ caste_conflict.4.d: "Manifest nebráhmínů koluje v [ROOT.GetCountry.GetCapital.GetCityHubName] a vyvolává napětí mezi [SCOPE.gsInterestGroup('rural_folk_ig_scope').GetCustom('IG_I_TT')] a [SCOPE.gsInterestGroup('intelligentsia_ig_scope').GetCustom('IG_I_TT')]." # todo: NEW TRANSLATION # todo: NAME CASE
  caste_conflict.4.f: "Dva stranické vůdce seděli proti sobě a jejich pomocníci poslouchali, jak se už druhou hodinu duely bojují rozumy.\n\n\"Prosím, musíte přimět Justice Party, aby viděla rozum,\" naléhal [SCOPE.sCharacter('intelligentsia_leader_scope').GetFullNameNoFormatting]. \"Musíme bojovat spolu, nebo prohrajeme!\"\n\n\"Požádáte nás, abychom stáli po britské lathi po vašem boku, ale řekněte mi, až přijde zítra, budete také stát po našem boku při vládnutí? Britové mi neudělali větší křivdu než vy. Mnoho jejich skutků bylo vedeno vašima rukama.\"" # todo: NEW TRANSLATION
  caste_conflict.4.a: "Ten manifest je vlastizrádný!" # todo: NEW TRANSLATION
  caste_conflict.4.b: "Možná manifest obsahuje platné body." # todo: NEW TRANSLATION

@@ -624,4 +624,4 @@
  SHIP_CONSTRUCTION_COST_ONLY_BASE_DESC: "@ship_construction![Nbsp]$BASE|0V$ Základní cena"
  SHIP_CONSTRUCTION_COST_COMPLEXITY_INCREASE_DESC: "@ship_construction![Nbsp]$COST|V0$ z [Concept('concept_ship_complexity', 'komplexnosti lodí')] ($PERCENTAGE|%-=0$)"
  SHIP_TEMPLATE_GOODS_ENTRY: "[Goods.GetName] $VAL|v$"
- SHIP_TEMPLATE_GOODS_COST_ENTRY: "@money!$COST|D-$ díky [Goods.GetName] ($VAL|v$)"
+ SHIP_TEMPLATE_GOODS_COST_ENTRY: "@money!$COST|D-$ díky [Goods.GetCustom('GDS_D_TT')] ($VAL|v$)" # todo: NAME CASE

@@ -45,7 +45,7 @@
  serbian_throne.2.a: "Geniální."
  serbian_throne.2.b: "Zahajte výrobu, hned!"
  serbian_throne.3.t: "Odhalení pokrytců"
- serbian_throne.3.d: "Ukázalo se, že [SCOPE.sCharacter('serb_busted_ig_leader').GetFullName], vůdce [SCOPE.gsInterestGroup('serb_busted_ig').GetName], tajně pracoval na přesvědčování dalších politiků ve prospěch odporné kampaně [SCOPE.sCharacter('rival_dynasty_contender_scope').GetLastName]."
+ serbian_throne.3.d: "Ukázalo se, že [SCOPE.sCharacter('serb_busted_ig_leader').GetFullName], vůdce [SCOPE.gsInterestGroup('serb_busted_ig').GetCustom('IG_G_TT')], tajně pracoval na přesvědčování dalších politiků ve prospěch odporné kampaně [SCOPE.sCharacter('rival_dynasty_contender_scope').GetLastName]." # todo: NAME CASE
  serbian_throne.3.f: "Hostiny slouží jako důležitá shromáždění, kde se odehrávají různé nevyslovené dynamiky. Často zahrnují vyjednávání, předvádění vlivu, mlaskavé zvuky nenasytných megalomanů a všudypřítomné soupeření o udržení prestiže mezi sobě rovnými.\n\nOrientovat se ve složitostech jedinců, kteří ukazují různé stránky své osobnosti, je náročné i odměňující úsilí."
  serbian_throne.3.a: "Nechte ho zmizet."
  serbian_throne.3.b: "Přinuťte ho pracovat pro nás."
@@ -96,9 +96,9 @@
  serbian_throne.13.t: "Dohoda [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]"
  serbian_throne.13.d: "Naši organizátoři kampaně přišli s myšlenkou podpořit zájmovou skupinu, abychom získali větší loajalitu."
  serbian_throne.13.f: "Jeden po druhém vstupovali ke dvoru zástupci určitých kruhů, aby projednali své nedostatky. Vždy to byli ti samí.\n\nZvláštní okolností, které si poradci [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] během těchto schůzek všimli, bylo hektické soupeření mezi skupinami. Rychle si uvědomili možnost využít tento závod k získání větší politické moci a byli si plně vědomi, že jde o transakci, nikoli dar."
- serbian_throne.13.a: "Budeme prosazovat [SCOPE.gsInterestGroup('campaign_ig_1').GetName]."
- serbian_throne.13.b: "Vezměme s sebou [SCOPE.gsInterestGroup('campaign_ig_2').GetName]."
- serbian_throne.13.c: "Podpora [SCOPE.gsInterestGroup('campaign_ig_3').GetName] nám z dlouhodobého hlediska prospěje."
+ serbian_throne.13.a: "Budeme prosazovat [SCOPE.gsInterestGroup('campaign_ig_1').GetCustom('IG_A_TT')]." # todo: NAME CASE
+ serbian_throne.13.b: "Vezměme s sebou [SCOPE.gsInterestGroup('campaign_ig_2').GetCustom('IG_A_TT')]." # todo: NAME CASE
+ serbian_throne.13.c: "Podpora [SCOPE.gsInterestGroup('campaign_ig_3').GetCustom('IG_G_TT')] nám z dlouhodobého hlediska prospěje." # todo: NAME CASE
  serbian_throne.13.e: "Tato čest náleží pouze nám."
  serbian_throne.13.accord_chosen_tt: "Kampaň brzy začne"
  serbian_throne.14.t: "Kampaň ve státě [SCOPE.sState('campaign_state').GetName]"
@@ -362,9 +362,9 @@
  the_grand_collapse.3.t: "Zoufalá opatření"
  the_grand_collapse.3.d: "Při hledání možných lidových vůdců, které bychom mohli přesvědčit na naši stranu, předložili agenti několik možností."
  the_grand_collapse.3.f: "Ziyâfet-i Hükûmet - česky Vládní hostina - je chvíle, kdy [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] může ukázat svou velkolepost všem významným hostům.\n\nZdatní služebníci, hudebníci a kuchaři ze všech koutů světa se snaží zanechat trvalý dojem ve jménu svého pána.\n\nJe to také neopomenutelná příležitost pro pozvané významné osobnosti, které se pouštějí do nevyslovené války výhod."
- the_grand_collapse.3.a: "Pochválit [SCOPE.sCharacter('lobbied_ig_leader_1').GetFullName], vůdce [SCOPE.gsInterestGroup('lobbied_ig_1').GetName]."
- the_grand_collapse.3.b: "Oslovit [SCOPE.sCharacter('lobbied_ig_leader_2').GetFullName], vůdce [SCOPE.gsInterestGroup('lobbied_ig_2').GetName]."
- the_grand_collapse.3.c: "Nalákat [SCOPE.sCharacter('lobbied_ig_leader_3').GetFullName], vůdce [SCOPE.gsInterestGroup('lobbied_ig_3').GetName]."
+ the_grand_collapse.3.a: "Pochválit [SCOPE.sCharacter('lobbied_ig_leader_1').GetFullName], vůdce [SCOPE.gsInterestGroup('lobbied_ig_1').GetCustom('IG_G_TT')]." # todo: NAME CASE
+ the_grand_collapse.3.b: "Oslovit [SCOPE.sCharacter('lobbied_ig_leader_2').GetFullName], vůdce [SCOPE.gsInterestGroup('lobbied_ig_2').GetCustom('IG_G_TT')]." # todo: NAME CASE
+ the_grand_collapse.3.c: "Nalákat [SCOPE.sCharacter('lobbied_ig_leader_3').GetFullName], vůdce [SCOPE.gsInterestGroup('lobbied_ig_3').GetCustom('IG_G_TT')]." # todo: NAME CASE
  the_grand_collapse.4.t: "Vysoká porta"
  the_grand_collapse.4.d: "Pořádek byl obnoven a nikdo se nepostaví proti našemu právu vládnout, jak jsme činili po staletí. Velký kolaps byl odvrácen a my sklidíme plody své prozíravosti."
  the_grand_collapse.4.f: "„Ach, jak drahá jsi, ó naděje dnů dosud nezrozených -\nty osvobozuješ svět od žalu a zoufalství.\n\nTobě patří věk impéria; rozprostři moc po zemi.\nKéž Všemohoucí chrání tvůj osud před každou skrytou léčkou.\n\nPouště, které ti kdysi patřily, si nárokují psi tyranie.\nProbuď se, ó raněný lve, z tohoto bezstarostného spánku!“\n\n— Namık Kemal, „Óda na svobodu“"

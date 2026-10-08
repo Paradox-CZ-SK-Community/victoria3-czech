@@ -1,7 +1,7 @@
 ﻿l_polish:
  IG_TRAIT_NOT_MARGINAL_CHECK: "[InterestGroup.GetName] #b nejsou#! [Concept('concept_marginalized','marginalizována')]"
- IG_TRAIT_APPROVAL_THRESHOLD_MIN: "[Concept('concept_approval','Spokojenost')] [InterestGroup.GetName] je alespoň $THRESHOLD|+$ (aktuálně: #v #tooltippable #tooltip:[InterestGroup.GetTooltipTag],IG_APPROVAL_BREAKDOWN [InterestGroup.GetApprovalValue|+]#!#!#!)"
- IG_TRAIT_APPROVAL_THRESHOLD_MAX: "[Concept('concept_approval','Spokojenost')] [InterestGroup.GetName] je $THRESHOLD|+$ nebo horší (aktuálně: #v #tooltippable #tooltip:[InterestGroup.GetTooltipTag],IG_APPROVAL_BREAKDOWN [InterestGroup.GetApprovalValue|+]#!#!#!)"
+ IG_TRAIT_APPROVAL_THRESHOLD_MIN: "[Concept('concept_approval','Spokojenost')] [InterestGroup.GetCustom('IG_G_TT')] je alespoň $THRESHOLD|+$ (aktuálně: #v #tooltippable #tooltip:[InterestGroup.GetTooltipTag],IG_APPROVAL_BREAKDOWN [InterestGroup.GetApprovalValue|+]#!#!#!)" # todo: NAME CASE
+ IG_TRAIT_APPROVAL_THRESHOLD_MAX: "[Concept('concept_approval','Spokojenost')] [InterestGroup.GetCustom('IG_G_TT')] je $THRESHOLD|+$ nebo horší (aktuálně: #v #tooltippable #tooltip:[InterestGroup.GetTooltipTag],IG_APPROVAL_BREAKDOWN [InterestGroup.GetApprovalValue|+]#!#!#!)" # todo: NAME CASE
  ACTIVE_IG_GROUP_TRAITS: "#title Aktivní rysy zájmové skupiny#!"
  ELECTION: "Volby"
  CIVIL_WARS: "Občanské války"
@@ -77,7 +77,7 @@
  POLITICAL_MOVEMENT_TO_PRESERVE_NAME: "Zachovat [LawType.GetName]"
  POLITICAL_MOVEMENT_TO_RESTORE_NAME: "Obnovit [LawType.GetName]"
  POLITICAL_MOVEMENT_PRESSURE_ON_INTEREST_GROUP: "#v [InterestGroup.GetFractionOfCloutSupportingMovement(PoliticalMovement.Self)|%0]#!"
- POLITICAL_MOVEMENT_PRESSURE_ON_INTEREST_GROUP_LABEL: "[Concept('concept_political_movement_pressure','Politický tlak')] na [InterestGroup.GetName]"
+ POLITICAL_MOVEMENT_PRESSURE_ON_INTEREST_GROUP_LABEL: "[Concept('concept_political_movement_pressure','Politický tlak')] na [InterestGroup.GetCustom('IG_A_TT')]" # todo: NAME CASE
  POLITICAL_MOVEMENT_TOOLTIP_HEADER: "[PoliticalMovement.GetNameNoFormatting]"
  POLITICAL_MOVEMENT_IS_REVOLUTIONARY: "#r Tento $concept_political_movement$ je [Concept('concept_revolution','revoluční')]#!"
  POLITICAL_MOVEMENT_IS_SECESSIONIST: "#r Tento $concept_political_movement$ je [Concept('concept_secession','separatista')]#!"

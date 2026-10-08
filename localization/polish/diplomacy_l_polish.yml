@@ -337,8 +337,8 @@
  DIPLOMATIC_ACCEPTANCE_BASE_ADDITIONAL: "ze základní neochoty k tomuto článku"
  DIPLOMATIC_ACCEPTANCE_COLONIAL_INTEREST: "z koloniálního záujmu v [Concept('concept_strategic_region','strategickém regionu')]"
  DIPLOMATIC_ACCEPTANCE_INPUT_QUANTITY: "ze vstupní kvantity"
- DIPLOMATIC_ACCEPTANCE_INPUT_QUANTITY_GOODS: "z kvantity [SCOPE.sGoods('input').GetName]"
- DIPLOMATIC_ACCEPTANCE_INPUT_QUANTITY_GOODS_TOO_MUCH: "z velké kvantity [SCOPE.sGoods('input').GetName]"
+ DIPLOMATIC_ACCEPTANCE_INPUT_QUANTITY_GOODS: "z kvantity [SCOPE.sGoods('input').GetCustom('GDS_G_TT')]" # todo: NAME CASE
+ DIPLOMATIC_ACCEPTANCE_INPUT_QUANTITY_GOODS_TOO_MUCH: "z velké kvantity [SCOPE.sGoods('input').GetCustom('GDS_G_TT')]" # todo: NAME CASE
  DIPLOMATIC_ACCEPTANCE_DOES_NOT_WANT_ARTICLE: "z nezáujmu o tento článek"
  DIPLOMATIC_ACCEPTANCE_NO_LONGER_WANTS_ARTICLE: "již nemají záujem o tenhle článek"
  DIPLOMATIC_ACCEPTANCE_VALUE_OF_STATES_IN_REGION: "z hodnoty [SCOPE.GetRootScope.GetCountry.GetAltAdjective('yych')] [Concept('concept_state', 'států')] v oblasti [Concept('concept_strategic_region','strategického regionu')]"

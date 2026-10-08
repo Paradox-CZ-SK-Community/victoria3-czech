@@ -292,7 +292,7 @@
  india_home_rule_events.4.b: "Vyslat armádu k uklidnění nepokojů."
  india_home_rule_events.4.c: "Nasadit letectvo k rozehnání davů."
  india_home_rule_events.5.t: "Vyšetřovací výbor pro nepokoje"
- india_home_rule_events.5.d: "S narůstajícím pobouřením nad činy [SCOPE.gsInterestGroup('army_ig').GetName] byl ustaven vládní výbor k prošetření masakru v [SCOPE.sState('jallianwala_bagh_state').GetFarmHubName]. Rozhovor s [SCOPE.sCharacter('dyer_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('dyer_scope').GetLastName] odhalil [SCOPE.sCharacter('dyer_scope').GetHerHis] údajnou motivaci - zachovat [SCOPE.sCharacter('dyer_scope').GetHerHis] čest."
+ india_home_rule_events.5.d: "S narůstajícím pobouřením nad činy [SCOPE.gsInterestGroup('army_ig').GetCustom('IG_G_TT')] byl ustaven vládní výbor k prošetření masakru v [SCOPE.sState('jallianwala_bagh_state').GetFarmHubName]. Rozhovor s [SCOPE.sCharacter('dyer_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('dyer_scope').GetLastName] odhalil [SCOPE.sCharacter('dyer_scope').GetHerHis] údajnou motivaci - zachovat [SCOPE.sCharacter('dyer_scope').GetHerHis] čest." # todo: NAME CASE
  india_home_rule_events.5.f: ""Myslíte, že jste mohl rozptýlit dav bez palby?\"\n\n\"Kdybych je rozehnal bez palby a oni se vrátili, vypadal bych jako blázen. Smáli by se mi.\"\n\n\"Předpokládejme, že průchod do zahrady byl dostatečný pro průjezd obrněných vozů, otevřel byste s kulomety palbu?\"\n\n\"Myslím, že pravděpodobně ano.\"\n\n\"V tom případě by byly oběti mnohem vyšší?\"\n\n\"Ano.\""
  india_home_rule_events.5.a: "Okamžitě odvolat [SCOPE.sCharacter('dyer_scope').GetLastName] do [ROOT.GetCountry.GetTopOverlord.GetCapital.GetCityHubName]."
  india_home_rule_events.5.b: "Tento muž musí být potrestán."
@@ -304,13 +304,13 @@
  india_home_rule_events.6.a: "Můžeme považovat tuto záležitost za uzavřenou."
  india_home_rule_events.6.b: "Sbírka a meč? Jak zvrácené to je?"
  india_home_rule_events.7.t: "Indické národní hnutí"
- india_home_rule_events.7.d: "Nacionální vědomí v Indii začíná růst mezi [ROOT.GetCountry.GetAdjective]-vzdělanými [SCOPE.gsInterestGroup('intelligentsia_ig').GetName] a [SCOPE.gsInterestGroup('petty_bourgeoisie_ig').GetName], jejichž ekonomické zájmy se dostávají do rozporu s [ROOT.GetCountry.GetAdjectiveNoFormatting] podniky. Jejich požadavky sahají od větší samosprávy až po úplnou nezávislost."
+ india_home_rule_events.7.d: "Nacionální vědomí v Indii začíná růst mezi [ROOT.GetCountry.GetAdjective]-vzdělanými [SCOPE.gsInterestGroup('intelligentsia_ig').GetCustom('IG_I_TT')] a [SCOPE.gsInterestGroup('petty_bourgeoisie_ig').GetCustom('IG_I_TT')], jejichž ekonomické zájmy se dostávají do rozporu s [ROOT.GetCountry.GetAdjectiveNoFormatting] podniky. Jejich požadavky sahají od větší samosprávy až po úplnou nezávislost." # todo: NAME CASE
  india_home_rule_events.7.f: "Když jsem šel do skladu, našel jsem cestu zatarasenou všemi dělníky. Nezaútočili, ale jejich záměr byl jasný, dnes se nic neudělá. Uvědomil jsem si svou slabost, odstoupil a dal si druhý šálek čaje. Tam jsem slyšel dva dělníky, muže, kteří mi dříve sloužili.\n\n\"Žádali jsme o jídlo a oni nás nechali hladovět. Žádali jsme, abychom byli vyslyšeni, a umlčeli nás kulkami. A přesto po nás chtějí, abychom sloužili? Abychom poslouchali? Už ne. Uvidíme, co udělají bez Indů.\""
  india_home_rule_events.7.a: "Musíme to pozorně sledovat."
  india_home_rule_events.7.b: "Jejich požadavky mohou mít určité opodstatnění."
  independence_lobby_formed_tt: "[SCOPE.sPoliticalLobby('relevant_lobby').GetName] byla založena a podporuje větší autonomii od [ROOT.GetCountry.GetOverlord.GetName]"
  india_home_rule_events.8.t: "Indické národní hnutí"
- india_home_rule_events.8.d: "Národní vědomí v Indii začíná růst mezi našimi domorodými [SCOPE.gsInterestGroup('intelligentsia_ig').GetName] a [SCOPE.gsInterestGroup('petty_bourgeoisie_ig').GetName], jejichž ekonomické zájmy se střetávají s podniky [ROOT.GetCountry.GetAdjectiveNoFormatting]. Jejich požadavky sahají od samosprávy po úplnou nezávislost."
+ india_home_rule_events.8.d: "Národní vědomí v Indii začíná růst mezi našimi domorodými [SCOPE.gsInterestGroup('intelligentsia_ig').GetCustom('IG_I_TT')] a [SCOPE.gsInterestGroup('petty_bourgeoisie_ig').GetCustom('IG_I_TT')], jejichž ekonomické zájmy se střetávají s podniky [ROOT.GetCountry.GetAdjectiveNoFormatting]. Jejich požadavky sahají od samosprávy po úplnou nezávislost." # todo: NAME CASE
  india_home_rule_events.8.f: "#bold Indičtí poddaní se stávají zrádnými! Volají po úplné nezávislosti#!\n\nZatímco mnoho byrokratů zůstává věrno britské vládě, veřejnost se obrátila proti ní. Mnozí ospravedlňují svůj zrádný úmysl tvrzením, že samospráva je jejich vrozené právo.\n\nSněmovna lordů debatovala záležitost. Někteří věří, že jde o přirozené eskalování po neúspěchu debat o Domácím vládnutí. Jiní tvrdí, že je to práce několika rebelujících podněcovatelů. Jeden člen, který si přál zůstat v anonymitě, řekl: \"[SCOPE.gsInterestGroup('intelligentsia_ig').GetLeader.GetFullNameNoFormatting] nevede Indii k způsobilé samosprávě. Britský Raj musí pokračovat, pevný a neochvějný ve své správě spravedlnosti všem lidem.\""
  india_home_rule_events.8.a: "Pečlivě to sledujte."
  india_home_rule_events.8.b: "Vzpírají se odpovědné vládě samé."
@@ -369,7 +369,7 @@
  requested_dop_permission_tt: "Neprovedl toto opatření v posledních #Bold 5#! letech"
  india_colonial_government: "Koloniální guvernéři"
  je_india_nationalism: "Indický národ"
- je_india_nationalism_reason: "Zánik dobré vůle mezi umírněnými nacionalistickými vůdci a koloniální vládou [ROOT.GetCountry.GetTopOverlord.GetAdjectiveNoFormatting] vedl k radikalizaci indického národního hnutí směrem k #b úplné nezávislosti#!. Ti, kteří zůstali oddáni cíli [SCOPE.gsInterestGroup('government_scope').GetName], se obávají, že pokud nebudou učiněny mimořádné kroky, bude [ROOT.GetCountry.GetName] brzy #bold učiněn neovladatelným#!."
+ je_india_nationalism_reason: "Zánik dobré vůle mezi umírněnými nacionalistickými vůdci a koloniální vládou [ROOT.GetCountry.GetTopOverlord.GetAdjectiveNoFormatting] vedl k radikalizaci indického národního hnutí směrem k #b úplné nezávislosti#!. Ti, kteří zůstali oddáni cíli [SCOPE.gsInterestGroup('government_scope').GetCustom('IG_G_TT')], se obávají, že pokud nebudou učiněny mimořádné kroky, bude [ROOT.GetCountry.GetName] brzy #bold učiněn neovladatelným#!." # todo: NAME CASE
  india_independent_tt: "#v India#! dosáhla pokojně nezávislosti"
  india_independence_movement_defeated_tt: "#b Indické národní hnutí#! se stalo politicky irelevantním"
  modifier_syrian_ambitions: "Ambice v Sýrii"

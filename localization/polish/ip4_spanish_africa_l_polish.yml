@@ -2,7 +2,7 @@
  je_conquest_of_tetouan: "Oko za oko"
  je_conquest_of_tetouan_reason: "Poslední kapku, po níž pohár přetekl, přidali anjerští kmenoví příslušníci místní v oblasti [SelectLocalization(SCOPE.sState('al_rif').IsValid, SCOPE.sState('al_rif').GetName, 'STATE_AL_RIF')]. Nedávno provedli krvavý nájezd na jednu z našich pohraničních posádek.\n\n[SCOPE.gsInterestGroup('armed_forces_scope').GetName] a místní poddaní této oblasti požadují odplatu proti těmto nájezdníkům za hranicí země [SelectLocalization(SCOPE.sCountry('morocco_scope').IsValid, SCOPE.sCountry('morocco_scope').GetName, 'MOR')].\n\nPokud nebudou neprodleně přijata vojenská opatření, naše národní postavení se výrazně zhorší."
  je_western_saharan_conquest: "Saharský soumrak"
- je_western_saharan_conquest_reason: "Po vítězství ve státě [SCOPE.sStateRegion('al_rif_scope').GetName] určili zkušení generálové [SCOPE.gsInterestGroup('armed_forces_scope').GetName] strategickou polohu za obzorem. Spolu se svými přírodními zdroji nám tato část Afriky jistě pomůže v našem poslání získat zpět prestiž, kterou jsme kdysi měli."
+ je_western_saharan_conquest_reason: "Po vítězství ve státě [SCOPE.sStateRegion('al_rif_scope').GetName] určili zkušení generálové [SCOPE.gsInterestGroup('armed_forces_scope').GetCustom('IG_G_TT')] strategickou polohu za obzorem. Spolu se svými přírodními zdroji nám tato část Afriky jistě pomůže v našem poslání získat zpět prestiž, kterou jsme kdysi měli." # todo: NAME CASE
  je_guinean_conquest: "Rovníkový opěrný bod"
  je_guinean_conquest_reason: "Posílení pobřežní bezpečnosti západní Afriky a jejích izolovaných oblastí znovu roznítilo naši ambici obnovit naše imperiální postavení jako významné mocnosti na kontinentu.\n\nMusíme postupovat vpřed a rozšiřovat svůj vliv podél pobřeží oblasti [GetGeographicRegion('geographic_region_subsaharan_africa').GetName], protože naši imperiální soupeři také dychtí po zisku z bohatství tohoto regionu."
  je_moroccan_conquest: "Zahrada Maghrebu"
@@ -77,7 +77,7 @@
  spanish_africa.9.b: "Máme zde něco hmatatelného, co můžeme propagovat."
  spanish_africa.9.c: "Věnujme vítězství našemu lidu."
  spanish_africa.10.t: "Africké pochybení"
- spanish_africa.10.d: "Nesplnění našich expanzionistických vyhlídek v Africe silně rozrušilo [SCOPE.gsInterestGroup('armed_forces_scope').GetName] i její podporovatele."
+ spanish_africa.10.d: "Nesplnění našich expanzionistických vyhlídek v Africe silně rozrušilo [SCOPE.gsInterestGroup('armed_forces_scope').GetCustom('IG_A_TT')] i její podporovatele." # todo: NAME CASE
  spanish_africa.10.f: "„Pánové, národ, který se nerozšiřuje, umírá pomalou a bolestivou smrtí. Jsem si jistý, že se na tom všichni shodneme. Musíme si zajistit svůj osud silou, bude-li to nutné. To, čemu říkají naše ambice „bezohlednost“, nazýváme vizí a oprávněnou žízní po slávě, kterou si [ROOT.GetCountry.GetNameNoFormatting] už dlouho zaslouží. Dnes ten den nenastal, ale říkám vám, je blízko.“\n\nZkušení důstojníci na sebe kývali a vstřebávali ta slova. Člověk by skoro uvěřil, že si kvůli povýšení nevstřelí navzájem kulku do zad."
  spanish_africa.10.a: "Měli by znát své místo."
  spanish_africa.10.b: "Možná existuje kompromis?"

@@ -1047,10 +1047,10 @@
  TRIGGER_IS_IN_GOVERNMENT_NOT: "#bold Není#! součástí [Concept('concept_government','vlády')]"
  TRIGGER_IG_APPROVAL: "Schválení je $COMPARATOR$ #variable $NUM|0+=$#!"
  TRIGGER_IG_APPROVAL_NOT: "Schválení není #bold $COMPARATOR$ #variable $NUM|0+=$#!"
- TRIGGER_IG_APPROVAL_FIRST: "[Concept('concept_approval','Spokojenost')] [INTEREST_GROUP.GetName] je $COMPARATOR$ #variable $NUM|0+=$#!"
- TRIGGER_IG_APPROVAL_FIRST_NOT: "Schválení [Concept('concept_approval','spokojenost')|l] [INTEREST_GROUP.GetName] není #bold $COMPARATOR$ #variable $NUM|0+=$#!"
- TRIGGER_IG_APPROVAL_THIRD: "[Concept('concept_approval','Spokojenost')] [INTEREST_GROUP.GetName] je $COMPARATOR$ #variable $NUM|0+=$#!"
- TRIGGER_IG_APPROVAL_THIRD_NOT: "[Concept('concept_approval','Spokojenost')] [INTEREST_GROUP.GetName] #bold není#! $COMPARATOR$ #variable $NUM|0+=$#!"
+ TRIGGER_IG_APPROVAL_FIRST: "[Concept('concept_approval','Spokojenost')] [INTEREST_GROUP.GetCustom('IG_G_TT')] je $COMPARATOR$ #variable $NUM|0+=$#!" # todo: NAME CASE
+ TRIGGER_IG_APPROVAL_FIRST_NOT: "Schválení [Concept('concept_approval','spokojenost')|l] [INTEREST_GROUP.GetCustom('IG_G_TT')] není #bold $COMPARATOR$ #variable $NUM|0+=$#!" # todo: NAME CASE
+ TRIGGER_IG_APPROVAL_THIRD: "[Concept('concept_approval','Spokojenost')] [INTEREST_GROUP.GetCustom('IG_G_TT')] je $COMPARATOR$ #variable $NUM|0+=$#!" # todo: NAME CASE
+ TRIGGER_IG_APPROVAL_THIRD_NOT: "[Concept('concept_approval','Spokojenost')] [INTEREST_GROUP.GetCustom('IG_G_TT')] #bold není#! $COMPARATOR$ #variable $NUM|0+=$#!" # todo: NAME CASE
  TRIGGER_IG_CLOUT: "Ovlivnění je $COMPARATOR$ #variable $NUM|0%$#!"
  TRIGGER_IG_CLOUT_NOT: "Ovlivnění #bold není#! $COMPARATOR$ #variable $NUM|0%$#!"
  TRIGGER_IG_CLOUT_FIRST: "[INTEREST_GROUP.GetName] [Concept('concept_clout','Politický vliv')|l] je $COMPARATOR$ #variable $NUM|0%$#!"
@@ -1163,8 +1163,8 @@
  TRIGGER_IS_MONARCH_NOT: "#bold Není#! monarcha"
  TRIGGER_IS_INTEREST_GROUP_LEADER: "Je [Concept('concept_leader','vůdce')] svého [Concept('concept_interest_group','zájmové skupiny')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TRIGGER_IS_INTEREST_GROUP_LEADER_NOT: "Není #bold ne#! [Concept('concept_leader','vůdce')] svého [Concept('concept_interest_group','zájmové skupiny')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- TRIGGER_IS_INTEREST_GROUP_LEADER_THIRD: "[CHARACTER.GetFullName] je [Concept('concept_leader','vůdce')] [CHARACTER.GetInterestGroup.GetName]" # todo: NEW TRANSLATION
- TRIGGER_IS_INTEREST_GROUP_LEADER_THIRD_NOT: "[CHARACTER.GetFullName] není #bold ne#! [Concept('concept_leader','vůdce')] [CHARACTER.GetInterestGroup.GetName]" # todo: NEW TRANSLATION
+ TRIGGER_IS_INTEREST_GROUP_LEADER_THIRD: "[CHARACTER.GetFullName] je [Concept('concept_leader','vůdce')] [CHARACTER.GetInterestGroup.GetCustom('IG_G_TT')]" # todo: NEW TRANSLATION # todo: NAME CASE
+ TRIGGER_IS_INTEREST_GROUP_LEADER_THIRD_NOT: "[CHARACTER.GetFullName] není #bold ne#! [Concept('concept_leader','vůdce')] [CHARACTER.GetInterestGroup.GetCustom('IG_G_TT')]" # todo: NEW TRANSLATION # todo: NAME CASE
  TRIGGER_IS_RULER: "Je vládcem"
  TRIGGER_IS_RULER_NOT: "#bold Není#! vládcem"
  TRIGGER_IS_RULER_THIRD: "[CHARACTER.GetFullName] je vládcem"
@@ -1461,32 +1461,32 @@
  TRIGGER_WORLD_MARKET_DELTA_NOT: "[Concept('concept_world_market','Světový trh')] $CONCEPT_EXPORTS$ vůči $CONCEPT_IMPORTS$ delta #bold není #!$COMPARATOR$ #variable $NUM|0v$#! (aktuálně: $CURRENT_VALUE|0v$)"
  TRIGGER_WORLD_MARKET_DELTA_THIRD: "[GOODS.GetName][Nbsp][GOODS.GetName] [Concept('concept_world_market','Světový trh')|l] $CONCEPT_EXPORTS$ vůči $CONCEPT_IMPORTS$ delta je $COMPARATOR$ #variable $NUM|0v$#! (aktuálně: $CURRENT_VALUE|0v$)"
  TRIGGER_WORLD_MARKET_DELTA_THIRD_NOT: "[GOODS.GetName][Nbsp][GOODS.GetName] [Concept('concept_world_market','Světový trh')|l] $CONCEPT_EXPORTS$ vůči $CONCEPT_IMPORTS$ delta #bold není #!$COMPARATOR$ #variable $NUM|0v$#! (aktuálně: $CURRENT_VALUE|0v$)"
- TRIGGER_MARKET_GOODS_BUY_ORDERS: "Pohledávky na nákup [GOODS.GetName] v [MARKET.GetName] $COMPARATOR$ #variable $NUM$#!"
- TRIGGER_MARKET_GOODS_BUY_ORDERS_NOT: "Nákupní objednávky pro [GOODS.GetName] v [MARKET.GetName] #bold nejsou#! $COMPARATOR$ #variable $NUM$#!"
- TRIGGER_MARKET_GOODS_SELL_ORDERS: "[Concept('concept_sell_orders','Prodejní objednávky')] pro [GOODS.GetName] v [MARKET.GetName] $COMPARATOR$ #variable $NUM$#!"
- TRIGGER_MARKET_GOODS_SELL_ORDERS_NOT: "[Concept('concept_sell_orders','Prodejní objednávky')] pro [GOODS.GetName] v [MARKET.GetName] #bold ne#!$COMPARATOR$ #variable $NUM$#!"
- TRIGGER_MARKET_GOODS_SELL_ORDERS_FIRST: "[Concept('concept_sell_orders','Prodejní objednávky')] pro [GOODS.GetName] v [MARKET.GetName] $COMPARATOR$ #variable $NUM$#!"
- TRIGGER_MARKET_GOODS_SELL_ORDERS_FIRST_NOT: "[Concept('concept_sell_orders','Prodejní objednávky')] pro [GOODS.GetName] v [MARKET.GetName] #bold není #! $COMPARATOR$ #variable $NUM$#!"
- TRIGGER_MARKET_GOODS_SELL_ORDERS_THIRD: "[Concept('concept_sell_orders','Prodejní objednávky')] pro [GOODS.GetName] v [MARKET.GetName] $COMPARATOR$ #variable $NUM$#!"
- TRIGGER_MARKET_GOODS_SELL_ORDERS_THIRD_NOT: "[Concept('concept_sell_orders','Prodejní objednávky')] pro [GOODS.GetName] v [MARKET.GetName] #bold není #!$COMPARATOR$ #variable $NUM$#!"
- TRIGGER_MARKET_GOODS_CONSUMPTION: "Spotřeba pro [GOODS.GetName] v [MARKET.GetName] $COMPARATOR$ #variable $NUM$#!"
- TRIGGER_MARKET_GOODS_CONSUMPTION_NOT: "Konzumace pro [GOODS.GetName] v [MARKET.GetName] #bold není#! $COMPARATOR$ #variable $NUM$#!"
- TRIGGER_MARKET_GOODS_PRODUCTION: "Produkce pro [GOODS.GetName] v [MARKET.GetName] $COMPARATOR$ #variable $NUM$#!"
- TRIGGER_MARKET_GOODS_PRODUCTION_NOT: "Produkce pro [GOODS.GetName] v [MARKET.GetName] #bold není#! $COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_MARKET_GOODS_BUY_ORDERS: "Pohledávky na nákup [GOODS.GetCustom('GDS_G_TT')] v [MARKET.GetName] $COMPARATOR$ #variable $NUM$#!" # todo: NAME CASE
+ TRIGGER_MARKET_GOODS_BUY_ORDERS_NOT: "Nákupní objednávky pro [GOODS.GetCustom('GDS_A_TT')] v [MARKET.GetName] #bold nejsou#! $COMPARATOR$ #variable $NUM$#!" # todo: NAME CASE
+ TRIGGER_MARKET_GOODS_SELL_ORDERS: "[Concept('concept_sell_orders','Prodejní objednávky')] pro [GOODS.GetCustom('GDS_A_TT')] v [MARKET.GetName] $COMPARATOR$ #variable $NUM$#!" # todo: NAME CASE
+ TRIGGER_MARKET_GOODS_SELL_ORDERS_NOT: "[Concept('concept_sell_orders','Prodejní objednávky')] pro [GOODS.GetCustom('GDS_A_TT')] v [MARKET.GetName] #bold ne#!$COMPARATOR$ #variable $NUM$#!" # todo: NAME CASE
+ TRIGGER_MARKET_GOODS_SELL_ORDERS_FIRST: "[Concept('concept_sell_orders','Prodejní objednávky')] pro [GOODS.GetCustom('GDS_A_TT')] v [MARKET.GetName] $COMPARATOR$ #variable $NUM$#!" # todo: NAME CASE
+ TRIGGER_MARKET_GOODS_SELL_ORDERS_FIRST_NOT: "[Concept('concept_sell_orders','Prodejní objednávky')] pro [GOODS.GetCustom('GDS_A_TT')] v [MARKET.GetName] #bold není #! $COMPARATOR$ #variable $NUM$#!" # todo: NAME CASE
+ TRIGGER_MARKET_GOODS_SELL_ORDERS_THIRD: "[Concept('concept_sell_orders','Prodejní objednávky')] pro [GOODS.GetCustom('GDS_A_TT')] v [MARKET.GetName] $COMPARATOR$ #variable $NUM$#!" # todo: NAME CASE
+ TRIGGER_MARKET_GOODS_SELL_ORDERS_THIRD_NOT: "[Concept('concept_sell_orders','Prodejní objednávky')] pro [GOODS.GetCustom('GDS_A_TT')] v [MARKET.GetName] #bold není #!$COMPARATOR$ #variable $NUM$#!" # todo: NAME CASE
+ TRIGGER_MARKET_GOODS_CONSUMPTION: "Spotřeba pro [GOODS.GetCustom('GDS_A_TT')] v [MARKET.GetName] $COMPARATOR$ #variable $NUM$#!" # todo: NAME CASE
+ TRIGGER_MARKET_GOODS_CONSUMPTION_NOT: "Konzumace pro [GOODS.GetCustom('GDS_A_TT')] v [MARKET.GetName] #bold není#! $COMPARATOR$ #variable $NUM$#!" # todo: NAME CASE
+ TRIGGER_MARKET_GOODS_PRODUCTION: "Produkce pro [GOODS.GetCustom('GDS_A_TT')] v [MARKET.GetName] $COMPARATOR$ #variable $NUM$#!" # todo: NAME CASE
+ TRIGGER_MARKET_GOODS_PRODUCTION_NOT: "Produkce pro [GOODS.GetCustom('GDS_A_TT')] v [MARKET.GetName] #bold není#! $COMPARATOR$ #variable $NUM$#!" # todo: NAME CASE
  TRIGGER_LEADING_PRODUCER_OF: "[COUNTRY.GetName] je hlavním producentem [TARGET_GOODS.GetName]"
  TRIGGER_LEADING_PRODUCER_OF_NOT: "[COUNTRY.GetName] #bold není#! hlavním producentem [TARGET_GOODS.GetName]"
  TRIGGER_LEADING_PRODUCER_OF_FIRST: "[COUNTRY.GetNameNoFlag] je hlavním producentem [TARGET_GOODS.GetName]"
  TRIGGER_LEADING_PRODUCER_OF_FIRST_NOT: "[COUNTRY.GetNameNoFlag] #bold není#! hlavním producentem [TARGET_GOODS.GetName]"
- TRIGGER_MARKET_GOODS_IMPORTS: "Dovoz pro [GOODS.GetName] v [MARKET.GetName] $COMPARATOR$ #variable $NUM$#!"
- TRIGGER_MARKET_GOODS_IMPORTS_NOT: "Dovoz pro [GOODS.GetName] v [MARKET.GetName] není #bold $COMPARATOR$ #variable $NUM$#!"
- TRIGGER_MARKET_GOODS_IMPORTS_FIRST: "Dovoz zboží pro [GOODS.GetName] v [MARKET.GetName] $COMPARATOR$ #variable $NUM$#!"
- TRIGGER_MARKET_GOODS_IMPORTS_FIRST_NOT: "Dovoz pro [GOODS.GetName] v [MARKET.GetName] NE $COMPARATOR$ #variable $NUM$#!"
- TRIGGER_MARKET_GOODS_IMPORTS_THIRD: "Dovoz pro [GOODS.GetName] v [MARKET.GetName] $COMPARATOR$ #variable $NUM$#!"
- TRIGGER_MARKET_GOODS_IMPORTS_THIRD_NOT: "Importy pro [GOODS.GetName] v [MARKET.GetName] NE $COMPARATOR$ #variable $NUM$#!"
- TRIGGER_MARKET_GOODS_EXPORTS: "Exporty [GOODS.GetName] v [MARKET.GetName] $COMPARATOR$ #variable $NUM$#!"
- TRIGGER_MARKET_GOODS_EXPORTS_NOT: "Exporty pro [GOODS.GetName] v [MARKET.GetName] #bold nejsou#! $COMPARATOR$ #variable $NUM$#!"
- TRIGGER_MARKET_GOODS_DELTA: "Delta pro [GOODS.GetName] v [MARKET.GetName] $COMPARATOR$ #variable $NUM$#!"
- TRIGGER_MARKET_GOODS_DELTA_NOT: "Delta pro [GOODS.GetName] v [MARKET.GetName] #bold ne#! $COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_MARKET_GOODS_IMPORTS: "Dovoz pro [GOODS.GetCustom('GDS_A_TT')] v [MARKET.GetName] $COMPARATOR$ #variable $NUM$#!" # todo: NAME CASE
+ TRIGGER_MARKET_GOODS_IMPORTS_NOT: "Dovoz pro [GOODS.GetCustom('GDS_A_TT')] v [MARKET.GetName] není #bold $COMPARATOR$ #variable $NUM$#!" # todo: NAME CASE
+ TRIGGER_MARKET_GOODS_IMPORTS_FIRST: "Dovoz zboží pro [GOODS.GetCustom('GDS_A_TT')] v [MARKET.GetName] $COMPARATOR$ #variable $NUM$#!" # todo: NAME CASE
+ TRIGGER_MARKET_GOODS_IMPORTS_FIRST_NOT: "Dovoz pro [GOODS.GetCustom('GDS_A_TT')] v [MARKET.GetName] NE $COMPARATOR$ #variable $NUM$#!" # todo: NAME CASE
+ TRIGGER_MARKET_GOODS_IMPORTS_THIRD: "Dovoz pro [GOODS.GetCustom('GDS_A_TT')] v [MARKET.GetName] $COMPARATOR$ #variable $NUM$#!" # todo: NAME CASE
+ TRIGGER_MARKET_GOODS_IMPORTS_THIRD_NOT: "Importy pro [GOODS.GetCustom('GDS_A_TT')] v [MARKET.GetName] NE $COMPARATOR$ #variable $NUM$#!" # todo: NAME CASE
+ TRIGGER_MARKET_GOODS_EXPORTS: "Exporty [GOODS.GetCustom('GDS_G_TT')] v [MARKET.GetName] $COMPARATOR$ #variable $NUM$#!" # todo: NAME CASE
+ TRIGGER_MARKET_GOODS_EXPORTS_NOT: "Exporty pro [GOODS.GetCustom('GDS_A_TT')] v [MARKET.GetName] #bold nejsou#! $COMPARATOR$ #variable $NUM$#!" # todo: NAME CASE
+ TRIGGER_MARKET_GOODS_DELTA: "Delta pro [GOODS.GetCustom('GDS_A_TT')] v [MARKET.GetName] $COMPARATOR$ #variable $NUM$#!" # todo: NAME CASE
+ TRIGGER_MARKET_GOODS_DELTA_NOT: "Delta pro [GOODS.GetCustom('GDS_A_TT')] v [MARKET.GetName] #bold ne#! $COMPARATOR$ #variable $NUM$#!" # todo: NAME CASE
  TRIGGER_MARKET_GOODS_CHEAPER: "Tržní zboží je $COMPARATOR$ #variable $NUM|%0v$#! levnější než [Concept('concept_base_price','základní cena')|l]"
  TRIGGER_MARKET_GOODS_CHEAPER_NOT: "Tržní zboží #b není#! $COMPARATOR$ #variable $NUM|%0v$#! levnější než [Concept('concept_base_price','základní cena')|l]"
  TRIGGER_MARKET_GOODS_CHEAPER_THIRD: "[GOODS.GetName] ve [MARKET.GetName] je $COMPARATOR$ #variable $NUM|%0v$#! levnější než [Concept('concept_base_price','základní cena')|l]"
@@ -1497,16 +1497,16 @@
  TRIGGER_MARKET_GOODS_PRICIER_THIRD_NOT: "[GOODS.GetName] v [MARKET.GetName] #b ne#! $COMPARATOR$ #variable $NUM|%0v$#! dražší než [Concept('concept_base_price','základní cena')|l] "
  TRIGGER_STATE_GOODS_CONSUMPTION: "Spotřeba státních zboží je $COMPARATOR$ #variable $NUM$#!"
  TRIGGER_STATE_GOODS_CONSUMPTION_NOT: "Spotřeba státních zboží #bold není#! $COMPARATOR$ #variable $NUM$#!"
- TRIGGER_STATE_GOODS_CONSUMPTION_THIRD: "Konzumace pro [STATE_GOODS.GetGoods.GetName] v [STATE_GOODS.GetState.GetName] $COMPARATOR$ #variable $NUM$#!"
- TRIGGER_STATE_GOODS_CONSUMPTION_THIRD_NOT: "Spotřeba pro [STATE_GOODS.GetGoods.GetName] v [STATE_GOODS.GetState.GetName] #bold není#! $COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_STATE_GOODS_CONSUMPTION_THIRD: "Konzumace pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] v [STATE_GOODS.GetState.GetName] $COMPARATOR$ #variable $NUM$#!" # todo: NAME CASE
+ TRIGGER_STATE_GOODS_CONSUMPTION_THIRD_NOT: "Spotřeba pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] v [STATE_GOODS.GetState.GetName] #bold není#! $COMPARATOR$ #variable $NUM$#!" # todo: NAME CASE
  TRIGGER_STATE_GOODS_PRODUCTION: "Produkcí státního zboží je $COMPARATOR$ #variable $NUM$#!"
  TRIGGER_STATE_GOODS_PRODUCTION_NOT: "Výroba státních zboží #b není#! $COMPARATOR$ #variable $NUM$#!  "
- TRIGGER_STATE_GOODS_PRODUCTION_THIRD: "Produkcí pro [STATE_GOODS.GetGoods.GetName] ve [STATE_GOODS.GetState.GetName] je $COMPARATOR$ #variable $NUM$#!"
- TRIGGER_STATE_GOODS_PRODUCTION_THIRD_NOT: "Výroba pro [STATE_GOODS.GetGoods.GetName] v [STATE_GOODS.GetState.GetName] #bold není#! $COMPARATOR$ #variable $NUM$#!  "
+ TRIGGER_STATE_GOODS_PRODUCTION_THIRD: "Produkcí pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] ve [STATE_GOODS.GetState.GetName] je $COMPARATOR$ #variable $NUM$#!" # todo: NAME CASE
+ TRIGGER_STATE_GOODS_PRODUCTION_THIRD_NOT: "Výroba pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] v [STATE_GOODS.GetState.GetName] #bold není#! $COMPARATOR$ #variable $NUM$#!  " # todo: NAME CASE
  TRIGGER_STATE_GOODS_DELTA: "Delta pro státní zboží je $COMPARATOR$ #variable $NUM$#!"
  TRIGGER_STATE_GOODS_DELTA_NOT: "Delta pro státní zboží není #bold $COMPARATOR$ #variable $NUM$#!"
- TRIGGER_STATE_GOODS_DELTA_THIRD: "Delta pro [STATE_GOODS.GetGoods.GetName] ve [STATE_GOODS.GetState.GetName] $COMPARATOR$ je #variable $NUM$#!"
- TRIGGER_STATE_GOODS_DELTA_THIRD_NOT: "Delta pro [STATE_GOODS.GetGoods.GetName] v [STATE_GOODS.GetState.GetName] #bold není#! $COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_STATE_GOODS_DELTA_THIRD: "Delta pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] ve [STATE_GOODS.GetState.GetName] $COMPARATOR$ je #variable $NUM$#!" # todo: NAME CASE
+ TRIGGER_STATE_GOODS_DELTA_THIRD_NOT: "Delta pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] v [STATE_GOODS.GetState.GetName] #bold není#! $COMPARATOR$ #variable $NUM$#!" # todo: NAME CASE
  TRIGGER_STATE_GOODS_CHEAPER: "Státní zboží je $COMPARATOR$ #variable $NUM|%0v$#! levnější než [Concept('concept_base_price','základní cena')|l]"
  TRIGGER_STATE_GOODS_CHEAPER_NOT: "Státní zboží #b není#! $COMPARATOR$ #variable $NUM|%0v$#! levnější než [Concept('concept_base_price','základní cena')|l]"
  TRIGGER_STATE_GOODS_CHEAPER_THIRD: "[STATE_GOODS.GetGoods.GetName] v [STATE_GOODS.GetState.GetName] je $COMPARATOR$ #variable $NUM|%0v$#! levnější než [Concept('concept_base_price','základní cena')|l]"
@@ -1703,12 +1703,12 @@
  TRIGGER_SUPPLY_NETWORK_STRENGTH_THIRD_NOT: "Síla [COUNTRY.GetAltAdjective('ee')] dodavatelské sítě #bold není#! $COMPARATOR$ $NUM|v%0$"
  TRIGGER_IS_EMBARGOING_GOODS: "[COUNTRY.GetName] embargoje [TARGET_GOODS.GetName]"
  TRIGGER_IS_EMBARGOING_GOODS_NOT: "[COUNTRY.GetName] #bold neuvalil #! embargo [TARGET_GOODS.GetName]"
- TRIGGER_IS_PROMOTING_GOODS: "[COUNTRY.GetName] propaguje [GOODS.GetName]"
- TRIGGER_IS_PROMOTING_GOODS_NOT: "[COUNTRY.GetName] #bold není#! propagujícím [GOODS.GetName]"
- TRIGGER_IS_SUPPRESSING_GOODS: "[COUNTRY.GetName] potlačuje [GOODS.GetName]"
- TRIGGER_IS_SUPPRESSING_GOODS_NOT: "[COUNTRY.GetName] #bold ne#! potlačuje [GOODS.GetName]"
- TRIGGER_IS_TAXING_GOODS: "[COUNTRY.GetName] zdaní [GOODS.GetName]"
- TRIGGER_IS_TAXING_GOODS_NOT: "[COUNTRY.GetName] #bold nemá #! daně z [GOODS.GetName]"
+ TRIGGER_IS_PROMOTING_GOODS: "[COUNTRY.GetName] propaguje [GOODS.GetCustom('GDS_A_TT')]" # todo: NAME CASE
+ TRIGGER_IS_PROMOTING_GOODS_NOT: "[COUNTRY.GetName] #bold není#! propagujícím [GOODS.GetCustom('GDS_A_TT')]" # todo: NAME CASE
+ TRIGGER_IS_SUPPRESSING_GOODS: "[COUNTRY.GetName] potlačuje [GOODS.GetCustom('GDS_A_TT')]" # todo: NAME CASE
+ TRIGGER_IS_SUPPRESSING_GOODS_NOT: "[COUNTRY.GetName] #bold ne#! potlačuje [GOODS.GetCustom('GDS_A_TT')]" # todo: NAME CASE
+ TRIGGER_IS_TAXING_GOODS: "[COUNTRY.GetName] zdaní [GOODS.GetCustom('GDS_A_TT')]" # todo: NAME CASE
+ TRIGGER_IS_TAXING_GOODS_NOT: "[COUNTRY.GetName] #bold nemá #! daně z [GOODS.GetCustom('GDS_G_TT')]" # todo: NAME CASE
  TRIGGER_INSTITUTION_INVESTMENT_LEVEL: "Úroveň investic pro [INSTITUTION_TYPE.GetName] $COMPARATOR$ $NUM|v$"
  TRIGGER_INSTITUTION_INVESTMENT_LEVEL_NOT: "Úroveň investice pro [INSTITUTION_TYPE.GetName] #bold není#! $COMPARATOR$ $NUM|v$"
  TRIGGER_INSTITUTION_INVESTMENT_LEVEL_FIRST: "[COUNTRY.GetAdjectiveNoFlag] investiční úroveň pro [INSTITUTION_TYPE.GetName] $COMPARATOR$ $NUM|v$"
@@ -1797,18 +1797,18 @@
  TRIGGER_IT_IS_SUMMER_NOT: "Není léto"
  TRIGGER_IT_IS_AUTUMN: "Je podzim"
  TRIGGER_IT_IS_AUTUMN_NOT: "Není podzim"
- TRIGGER_HAS_CULTURAL_OBSESSION: "[CULTURE.GetName] je posedlý [GOODS.GetName]"
- TRIGGER_HAS_CULTURAL_OBSESSION_NOT: "[CULTURE.GetName] není #bold posedlá#! [GOODS.GetName]"
- TRIGGER_HAS_CULTURAL_OBSESSION_FIRST: "[CULTURE.GetName] je posedlé [GOODS.GetName]"
- TRIGGER_HAS_CULTURAL_OBSESSION_FIRST_NOT: "[CULTURE.GetName] není #bold posedlý#! [GOODS.GetName]"
- TRIGGER_HAS_CULTURAL_OBSESSION_THIRD: "[CULTURE.GetName] je posedlý [GOODS.GetName]"
- TRIGGER_HAS_CULTURAL_OBSESSION_THIRD_NOT: "[CULTURE.GetName] #bold není#! posedlý [GOODS.GetName]"
- TRIGGER_HAS_RELIGIOUS_TABOO: "[RELIGION.GetName] má tabu proti [GOODS.GetName]"
- TRIGGER_HAS_RELIGIOUS_TABOO_NOT: "[RELIGION.GetName] nemá #bold tabu#! proti [GOODS.GetName]"
- TRIGGER_HAS_RELIGIOUS_TABOO_FIRST: "[RELIGION.GetName] má [Concept('concept_taboo','tabu')|l] proti [GOODS.GetName]"
- TRIGGER_HAS_RELIGIOUS_TABOO_FIRST_NOT: "[RELIGION.GetName] nemá #bold [Concept('concept_taboo','tabu')|l] vůči [GOODS.GetName]"
- TRIGGER_HAS_RELIGIOUS_TABOO_THIRD: "[RELIGION.GetName] má [Concept('concept_taboo','tabu')|l] proti [GOODS.GetName]"
- TRIGGER_HAS_RELIGIOUS_TABOO_THIRD_NOT: "[RELIGION.GetName] #bold nemá#! [Concept('concept_taboo','tabu')|l] proti [GOODS.GetName]"
+ TRIGGER_HAS_CULTURAL_OBSESSION: "[CULTURE.GetName] je posedlý [GOODS.GetCustom('GDS_I_TT')]" # todo: NAME CASE
+ TRIGGER_HAS_CULTURAL_OBSESSION_NOT: "[CULTURE.GetName] není #bold posedlá#! [GOODS.GetCustom('GDS_I_TT')]" # todo: NAME CASE
+ TRIGGER_HAS_CULTURAL_OBSESSION_FIRST: "[CULTURE.GetName] je posedlé [GOODS.GetCustom('GDS_I_TT')]" # todo: NAME CASE
+ TRIGGER_HAS_CULTURAL_OBSESSION_FIRST_NOT: "[CULTURE.GetName] není #bold posedlý#! [GOODS.GetCustom('GDS_I_TT')]" # todo: NAME CASE
+ TRIGGER_HAS_CULTURAL_OBSESSION_THIRD: "[CULTURE.GetName] je posedlý [GOODS.GetCustom('GDS_I_TT')]" # todo: NAME CASE
+ TRIGGER_HAS_CULTURAL_OBSESSION_THIRD_NOT: "[CULTURE.GetName] #bold není#! posedlý [GOODS.GetCustom('GDS_I_TT')]" # todo: NAME CASE
+ TRIGGER_HAS_RELIGIOUS_TABOO: "[RELIGION.GetName] má tabu proti [GOODS.GetCustom('GDS_D_TT')]" # todo: NAME CASE
+ TRIGGER_HAS_RELIGIOUS_TABOO_NOT: "[RELIGION.GetName] nemá #bold tabu#! proti [GOODS.GetCustom('GDS_D_TT')]" # todo: NAME CASE
+ TRIGGER_HAS_RELIGIOUS_TABOO_FIRST: "[RELIGION.GetName] má [Concept('concept_taboo','tabu')|l] proti [GOODS.GetCustom('GDS_D_TT')]" # todo: NAME CASE
+ TRIGGER_HAS_RELIGIOUS_TABOO_FIRST_NOT: "[RELIGION.GetName] nemá #bold [Concept('concept_taboo','tabu')|l] vůči [GOODS.GetCustom('GDS_D_TT')]" # todo: NAME CASE
+ TRIGGER_HAS_RELIGIOUS_TABOO_THIRD: "[RELIGION.GetName] má [Concept('concept_taboo','tabu')|l] proti [GOODS.GetCustom('GDS_D_TT')]" # todo: NAME CASE
+ TRIGGER_HAS_RELIGIOUS_TABOO_THIRD_NOT: "[RELIGION.GetName] #bold nemá#! [Concept('concept_taboo','tabu')|l] proti [GOODS.GetCustom('GDS_D_TT')]" # todo: NAME CASE
  TRIGGER_RADICAL_FRACTION: "Frakce [Concept('concept_radical','radikál')|l] [SelectLocalization( StringIsEmpty( '$FILTER$' ), Concept('concept_pop', '$concept_pops$'), '$FILTER$')|l] je $COMPARATOR$ $NUM|v0%$"
  TRIGGER_RADICAL_FRACTION_NOT: "Frakce [Concept('concept_radical','radikál')|l] [SelectLocalization( StringIsEmpty( '$FILTER$' ), Concept('concept_pop', '$concept_pops$'), '$FILTER$')|l] #bold není#! $COMPARATOR$ $NUM|v0%$"
  TRIGGER_RADICAL_FRACTION_THIRD: "$COMPARATOR|U$ $NUM|v%0$ z [SelectLocalization( StringIsEmpty( '$FILTER$' ), Concept('concept_pop', '$concept_pops$'), '$FILTER$')|l] v zemi #y $NAME$#! jsou [Concept('concept_radical','radikálové')|l]"
@@ -1898,8 +1898,8 @@
  TRIGGER_HAS_ONGOING_CONVERSION_NOT: "[Pop.GetName] #bold nemá#! probíhající náboženskou konverzi"
  TRIGGER_HAS_ONGOING_ASSIMILATION: "[Pop.GetName] má probíhající kulturní asimilaci"
  TRIGGER_HAS_ONGOING_ASSIMILATION_NOT: "[Pop.GetName] #bold nemá#! probíhající kulturní asimilace"
- TRIGGER_LAW_APPROVED_BY: "[Law.GetName] je schválen [InterestGroup.GetName]"
- TRIGGER_LAW_APPROVED_BY_NOT: "[Law.GetName] #bold není#! schválen [InterestGroup.GetName]"
+ TRIGGER_LAW_APPROVED_BY: "[Law.GetName] je schválen [InterestGroup.GetCustom('IG_I_TT')]" # todo: NAME CASE
+ TRIGGER_LAW_APPROVED_BY_NOT: "[Law.GetName] #bold není#! schválen [InterestGroup.GetCustom('IG_I_TT')]" # todo: NAME CASE
  TRIGGER_HAS_WAR_SUPPORT: "[Country.GetAdjectiveNoFormatting] [Concept('concept_war_support','Válečná podpora')|l] ($CURRENT_VALUE$) je $COMPARATOR$ $NUM|v$"
  TRIGGER_HAS_WAR_SUPPORT_NOT: "[Country.GetAdjectiveNoFormatting] [Concept('concept_war_support','Válečná podpora')|l] #bold ne#! $COMPARATOR$ $NUM|v$"
  TRIGGER_HAS_WAR_EXHAUSTION: "[Country.GetAdjectiveNoFormatting] [Concept('concept_war_exhaustion','Válečná únava')|l] je $COMPARATOR$ $NUM|v$"
@@ -2030,14 +2030,14 @@
  TRIGGER_NATIONALIZATION_COST_FIRST_NOT: "Celkové náklady na [Concept('concept_nationalize','znárodnění')|l] všech [Concept('concept_building', 'budov')|l] v [Country.GetAltAdjectiveNoFlag('L')] vlastněných [Concept('concept_government','vládách')|l] nebo [TARGET_COUNTRY.GetAltAdjective('I')] [Concept('concept_pop', 'populací')|l] [TARGET_COUNTRY.GetName] #bold není#! $COMPARATOR$ $NUM|%2v$ (aktuálně: $CURRENT_VALUE|%2v$)" # todo: CONCEPT CASE
  TRIGGER_NATIONALIZATION_COST_THIRD: "Celkové náklady na [Concept('concept_nationalize','znárodnění')|l] všech [Concept('concept_building', 'budov')|l] v [Country.GetAltAdjective('L')], které vlastní [Concept('concept_government','vláda')|l] nebo [TARGET_COUNTRY.GetAltAdjective('I')] [Concept('concept_pop', 'populací')|l], je $COMPARATOR$ $NUM|%2v$ (aktuálně: $CURRENT_VALUE|%2v$)"
  TRIGGER_NATIONALIZATION_COST_THIRD_NOT: "Celkové náklady na [Concept('concept_nationalize','znárodnění')|l] všech [Concept('concept_building', 'budov')|l] v [Country.GetAltAdjective('L')] vlastněných [Concept('concept_government','vládou')|l] nebo [TARGET_COUNTRY.GetAltAdjective('I')] [Concept('concept_pop', 'populací')|l] #bold není#! $COMPARATOR$ $NUM|%2v$ (aktuálně: $CURRENT_VALUE|%2v$)"
- GOODS_PRODUCTION_RANK_PRODUCER: "#v ##$NUM|0$#! producent [Goods.GetName] (aktuálně: [SelectLocalization(BetweenInclusiveOfMax_CFixedPoint('(CFixedPoint)$CURRENT_VALUE$','(CFixedPoint)0', '(CFixedPoint)10'),'#v ##$CURRENT_VALUE|0$#!','none')])"
+ GOODS_PRODUCTION_RANK_PRODUCER: "#v ##$NUM|0$#! producent [Goods.GetCustom('GDS_G_TT')] (aktuálně: [SelectLocalization(BetweenInclusiveOfMax_CFixedPoint('(CFixedPoint)$CURRENT_VALUE$','(CFixedPoint)0', '(CFixedPoint)10'),'#v ##$CURRENT_VALUE|0$#!','none')])" # todo: NAME CASE
  TRIGGER_GOODS_PRODUCTION_RANK_EQUAL: "Je $GOODS_PRODUCTION_RANK_PRODUCER$"
  TRIGGER_GOODS_PRODUCTION_RANK_EQUAL_FIRST: "Jsme $GOODS_PRODUCTION_RANK_PRODUCER$"
  TRIGGER_GOODS_PRODUCTION_RANK_EQUAL_THIRD: "[COUNTRY.GetName] je $GOODS_PRODUCTION_RANK_PRODUCER$"
  TRIGGER_GOODS_PRODUCTION_RANK_NOT_EQUAL: "#b Není#! $GOODS_PRODUCTION_RANK_PRODUCER$"
  TRIGGER_GOODS_PRODUCTION_RANK_NOT_EQUAL_FIRST: "#b Nejsme#! $GOODS_PRODUCTION_RANK_PRODUCER$"
  TRIGGER_GOODS_PRODUCTION_RANK_NOT_EQUAL_THIRD: "[COUNTRY.GetName] #b není#! $GOODS_PRODUCTION_RANK_PRODUCER$"
- GOODS_PRODUCTION_RANK_ONE_OF_THE_TOP_PRODUCERS: "jeden z #v nejlepších $NUM|0$#! producentů [Goods.GetName] (aktuálně: [SelectLocalization(BetweenInclusiveOfMax_CFixedPoint('(CFixedPoint)$CURRENT_VALUE$','(CFixedPoint)0', '(CFixedPoint)10'),'#v ##$CURRENT_VALUE|0$#!','none')])"
+ GOODS_PRODUCTION_RANK_ONE_OF_THE_TOP_PRODUCERS: "jeden z #v nejlepších $NUM|0$#! producentů [Goods.GetCustom('GDS_G_TT')] (aktuálně: [SelectLocalization(BetweenInclusiveOfMax_CFixedPoint('(CFixedPoint)$CURRENT_VALUE$','(CFixedPoint)0', '(CFixedPoint)10'),'#v ##$CURRENT_VALUE|0$#!','none')])" # todo: NAME CASE
  TRIGGER_GOODS_PRODUCTION_RANK_GREATER_THAN: "#b Není#! $GOODS_PRODUCTION_RANK_ONE_OF_THE_TOP_PRODUCERS$"
  TRIGGER_GOODS_PRODUCTION_RANK_GREATER_THAN_FIRST: "#b Nejsme#! $GOODS_PRODUCTION_RANK_ONE_OF_THE_TOP_PRODUCERS$"
  TRIGGER_GOODS_PRODUCTION_RANK_GREATER_THAN_THIRD: "[COUNTRY.GetName] #b není#! $GOODS_PRODUCTION_RANK_ONE_OF_THE_TOP_PRODUCERS$"
@@ -2240,8 +2240,8 @@
  TRIGGER_IS_HOMELAND_OF_COUNTRY_CULTURES_NOT: "[STATE.GetName] není domovem pro primární kulturu [TARGET_COUNTRY.GetName]"
  TRIGGER_HAS_PARTY: "Má [Concept('concept_party','strana')|l]"
  TRIGGER_HAS_PARTY_NOT: "#bold Nemá #! politickou [Concept('concept_party','stranu')|l]" # todo: CONCEPT CASE
- TRIGGER_IS_MEMBER_OF_PARTY: "Je členem [Party.GetName]"
- TRIGGER_IS_MEMBER_OF_PARTY_NOT: "Není #bold členem #! [Party.GetName]"
+ TRIGGER_IS_MEMBER_OF_PARTY: "Je členem [Party.GetCustom('PARTY_G_TT')]" # todo: NAME CASE
+ TRIGGER_IS_MEMBER_OF_PARTY_NOT: "Není #bold členem #! [Party.GetCustom('PARTY_G_TT')]" # todo: NAME CASE
  TRIGGER_IS_PARTY: "Je [TARGET_PARTY.GetName]"
  TRIGGER_IS_PARTY_NOT: "#bold Není#! [TARGET_PARTY.GetName]"
  TRIGGER_IS_PARTY_TYPE: "Je to $PARTY_TYPE$"
@@ -2252,10 +2252,10 @@
  TRIGGER_IS_SAME_PARTY_TYPE_NOT: "#bold Není#! stejného typu jako [TARGET_PARTY.GetName]"
  TRIGGER_IS_SAME_PARTY_TYPE_THIRD: "[Party.GetName] je stejného typu jako [TARGET_PARTY.GetName]"
  TRIGGER_IS_SAME_PARTY_TYPE_THIRD_NOT: "[Party.GetName] #bold není#! stejného typu jako [TARGET_PARTY.GetName]"
- TRIGGER_HAS_PARTY_MEMBER: "Má [InterestGroup.GetName] jako člena [Concept('concept_party','strany')|l]" # todo: CONCEPT CASE
- TRIGGER_HAS_PARTY_MEMBER_NOT: "#bold Nemá#! [InterestGroup.GetName] jako člena [Concept('concept_party','strany')|l]" # todo: CONCEPT CASE
- TRIGGER_HAS_PARTY_MEMBER_THIRD: "[Party.GetName] má [InterestGroup.GetName] jako člena [Concept('concept_party','strany')|l]" # todo: CONCEPT CASE
- TRIGGER_HAS_PARTY_MEMBER_THIRD_NOT: "[Party.GetName] #bold nemá#! [InterestGroup.GetName] jako člena [Concept('concept_party','strany')|l]" # todo: CONCEPT CASE
+ TRIGGER_HAS_PARTY_MEMBER: "Má [InterestGroup.GetCustom('IG_A_TT')] jako člena [Concept('concept_party','strany')|l]" # todo: CONCEPT CASE # todo: NAME CASE
+ TRIGGER_HAS_PARTY_MEMBER_NOT: "#bold Nemá#! [InterestGroup.GetCustom('IG_A_TT')] jako člena [Concept('concept_party','strany')|l]" # todo: CONCEPT CASE # todo: NAME CASE
+ TRIGGER_HAS_PARTY_MEMBER_THIRD: "[Party.GetName] má [InterestGroup.GetCustom('IG_A_TT')] jako člena [Concept('concept_party','strany')|l]" # todo: CONCEPT CASE # todo: NAME CASE
+ TRIGGER_HAS_PARTY_MEMBER_THIRD_NOT: "[Party.GetName] #bold nemá#! [InterestGroup.GetCustom('IG_A_TT')] jako člena [Concept('concept_party','strany')|l]" # todo: CONCEPT CASE # todo: NAME CASE
  TRIGGER_ANY_MARKET: "Jakýkoli [Concept('concept_market','trh')|l]:"
  TRIGGER_ANY_MARKET_NOT: "Jakýkoli [Concept('concept_market','trh')|l] NE:"
  TRIGGER_ANY_MARKET_FIRST: "Jakýkoli [Concept('concept_market','trh')|l] v [Country.GetAltAdjectiveNoFlag('L')]:"
@@ -2317,11 +2317,11 @@
  TRIGGER_ANY_INTEREST_GROUP_COUNT_FIRST: "$PARAMETERS$ $FILTER$[Concept('concept_interest_group', '$concept_interest_groups$')|l] v [Country.GetAltAdjectiveNoFlag('L')]:"
  TRIGGER_ANY_INTEREST_GROUP_COUNT_THIRD: "$PARAMETERS$ $FILTER$[Concept('concept_interest_group', '$concept_interest_groups$')|l] v [Country.GetAltAdjective('L')]:"
  TRIGGER_ANY_MEMBER: "Jakákoli [Concept('concept_interest_group','zájmová skupina')|l]:"
- TRIGGER_ANY_MEMBER_THIRD: "Jakákoli [Concept('concept_interest_group','zájmová skupina')|l] v [Party.GetName]:"
+ TRIGGER_ANY_MEMBER_THIRD: "Jakákoli [Concept('concept_interest_group','zájmová skupina')|l] v [Party.GetCustom('PARTY_L_TT')]:" # todo: NAME CASE
  TRIGGER_ANY_MEMBER_ALL: "Všechny [Concept('concept_interest_group','zájmové skupiny')|l]:"
- TRIGGER_ANY_MEMBER_ALL_THIRD: "Všechny [Concept('concept_interest_group','zájmové skupiny')|l] v [Party.GetName]:"
+ TRIGGER_ANY_MEMBER_ALL_THIRD: "Všechny [Concept('concept_interest_group','zájmové skupiny')|l] v [Party.GetCustom('PARTY_L_TT')]:" # todo: NAME CASE
  TRIGGER_ANY_MEMBER_PERCENT: "$PARAMETERS$ z $FILTER$[Concept('concept_interest_group','zájmové skupiny')|l]:"
- TRIGGER_ANY_MEMBER_PERCENT_THIRD: "$PARAMETERS$ z $FILTER$[Concept('concept_interest_group','zájmové skupiny')|l] v [Party.GetName]:"
+ TRIGGER_ANY_MEMBER_PERCENT_THIRD: "$PARAMETERS$ z $FILTER$[Concept('concept_interest_group','zájmové skupiny')|l] v [Party.GetCustom('PARTY_L_TT')]:" # todo: NAME CASE
  TRIGGER_ANY_MEMBER_COUNT: "$PARAMETERS$ $FILTER$[Concept('concept_interest_group', '$concept_interest_groups$')|l]:"
  TRIGGER_ANY_MEMBER_COUNT_THIRD: "$PARAMETERS$ $FILTER$[Concept('concept_interest_group', '$concept_interest_groups$')|l] v [PoliticalLobby.GetName]:"
  TRIGGER_ANY_LOBBY_MEMBER: "Jakákoli [Concept('concept_interest_group','zájmová skupina')|l]:"
@@ -3378,10 +3378,10 @@
  TRIGGER_YEAR_LESS_THAN_OR_EQUAL: "V roce nebo před $NUM$"
  TRIGGER_YEAR_GREATER_THAN: "Po $NUM$"
  TRIGGER_YEAR_GREATER_THAN_OR_EQUAL: "V roce nebo po $NUM$"
- TRIGGER_EXPORT_TARIFF_LEVEL: "$CONCEPT_EXPORT$ [Concept('concept_tariffs','clo')|l] pro [STATE_GOODS.GetGoods.GetName] je $LEVEL|v$"
- TRIGGER_EXPORT_TARIFF_LEVEL_NOT: "$CONCEPT_EXPORT$ [Concept('concept_tariffs','clo')|l] pro [STATE_GOODS.GetGoods.GetName] #b není#! $LEVEL|v$"
- TRIGGER_IMPORT_TARIFF_LEVEL: "$CONCEPT_IMPORT$ [Concept('concept_tariffs','clo')|l] pro [STATE_GOODS.GetGoods.GetName] je $LEVEL|v$"
- TRIGGER_IMPORT_TARIFF_LEVEL_NOT: "$CONCEPT_IMPORT$ [Concept('concept_tariffs','clo')|l] pro [STATE_GOODS.GetGoods.GetName] #b není#! $LEVEL|v$"
+ TRIGGER_EXPORT_TARIFF_LEVEL: "$CONCEPT_EXPORT$ [Concept('concept_tariffs','clo')|l] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] je $LEVEL|v$" # todo: NAME CASE
+ TRIGGER_EXPORT_TARIFF_LEVEL_NOT: "$CONCEPT_EXPORT$ [Concept('concept_tariffs','clo')|l] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] #b není#! $LEVEL|v$" # todo: NAME CASE
+ TRIGGER_IMPORT_TARIFF_LEVEL: "$CONCEPT_IMPORT$ [Concept('concept_tariffs','clo')|l] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] je $LEVEL|v$" # todo: NAME CASE
+ TRIGGER_IMPORT_TARIFF_LEVEL_NOT: "$CONCEPT_IMPORT$ [Concept('concept_tariffs','clo')|l] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] #b není#! $LEVEL|v$" # todo: NAME CASE
  TRIGGER_COUNTRY_DIRECT_LINK_EQUAL: "Je [COUNTRY.GetName]"
  TRIGGER_COUNTRY_DIRECT_LINK_EQUAL_NOT: "#bold Není#! [COUNTRY.GetName]"
  TRIGGER_COUNTRY_DIRECT_LINK_FIRST_EQUAL: "Vaše země je [COUNTRY.GetName]"
@@ -3616,54 +3616,54 @@
  TRIGGER_BLOCKADE_LEVEL_LESS_OR_EQUAL_THIRD: "[Concept('concept_blockade','Blokáda')] úroveň ve [STATE.GetName] je nižší než nebo rovno $NUM|0%v$\n( v současnosti $CURRENT_VALUE|%0$)"
  TRIGGER_BLOCKADE_LEVEL_EQUAL_THIRD: "[Concept('concept_blockade','Blokáda')] úroveň ve [STATE.GetName] je rovno $NUM|0%v$\n( v současnosti $CURRENT_VALUE|%0$)"
  TRIGGER_BLOCKADE_LEVEL_NOT_EQUAL_THIRD: "[Concept('concept_blockade','Blokáda')] úroveň ve [STATE.GetName] #bold není #!rovno $NUM|0%v$\n( v současnosti $CURRENT_VALUE|%0$)"
- TRIGGER_IMPORT_ADVANTAGE_GREATER_THAN: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','dovozy')|l] je vyšší než $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)"
- TRIGGER_IMPORT_ADVANTAGE_LESS_THAN: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','dovozy')|l] je nižší než $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)"
- TRIGGER_IMPORT_ADVANTAGE_GREATER_OR_EQUAL: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','dovozy')|l] je vyšší než nebo rovno $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)"
- TRIGGER_IMPORT_ADVANTAGE_LESS_OR_EQUAL: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','dovozy')|l] je nižší než nebo rovno $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)"
- TRIGGER_IMPORT_ADVANTAGE_EQUAL: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','dovozy')|l] je rovno $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)"
- TRIGGER_IMPORT_ADVANTAGE_NOT_EQUAL: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','dovozy')|l] #bold není #!rovno #!$NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)"
- TRIGGER_IMPORT_ADVANTAGE_GREATER_THAN_THIRD: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','dovozy')|l] ve [STATE_GOODS.GetState.GetName] je vyšší než $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)"
- TRIGGER_IMPORT_ADVANTAGE_GREATER_OR_EQUAL_THIRD: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','dovozy')|l] ve [STATE_GOODS.GetState.GetName] je vyšší než nebo rovno $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)"
- TRIGGER_IMPORT_ADVANTAGE_LESS_THAN_THIRD: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','dovozy')|l] ve [STATE_GOODS.GetState.GetName] je nižší než $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)"
- TRIGGER_IMPORT_ADVANTAGE_LESS_OR_EQUAL_THIRD: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','dovozy')|l] ve [STATE_GOODS.GetState.GetName] je nižší než nebo rovno $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)"
- TRIGGER_IMPORT_ADVANTAGE_EQUAL_THIRD: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','dovozy')|l] ve [STATE_GOODS.GetState.GetName] je rovno $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)"
- TRIGGER_IMPORT_ADVANTAGE_NOT_EQUAL_THIRD: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','dovozy')|l] ve [STATE_GOODS.GetState.GetName] #bold není #!rovno #!$NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)"
- TRIGGER_EXPORT_ADVANTAGE_GREATER_THAN: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','vývozy')|l] je vyšší než $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)"
- TRIGGER_EXPORT_ADVANTAGE_LESS_THAN: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','vývozy')|l] je nižší než $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)"
- TRIGGER_EXPORT_ADVANTAGE_GREATER_OR_EQUAL: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','vývozy')|l] je vyšší než nebo rovno $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)"
- TRIGGER_EXPORT_ADVANTAGE_LESS_OR_EQUAL: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','vývozy')|l] je nižší než nebo rovno $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)"
- TRIGGER_EXPORT_ADVANTAGE_EQUAL: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','vývozy')|l] je rovno $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)"
- TRIGGER_EXPORT_ADVANTAGE_NOT_EQUAL: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','vývozy')|l] #bold není #!rovno #!$NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)"
- TRIGGER_EXPORT_ADVANTAGE_GREATER_THAN_THIRD: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','vývozy')|l] ve [STATE_GOODS.GetState.GetName] je vyšší než $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)"
- TRIGGER_EXPORT_ADVANTAGE_GREATER_OR_EQUAL_THIRD: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','vývozy')|l] ve [STATE_GOODS.GetState.GetName] je vyšší než nebo rovno $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)"
- TRIGGER_EXPORT_ADVANTAGE_LESS_THAN_THIRD: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','vývozy')|l] ve [STATE_GOODS.GetState.GetName] je nižší než $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)"
- TRIGGER_EXPORT_ADVANTAGE_LESS_OR_EQUAL_THIRD: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','vývozy')|l] ve [STATE_GOODS.GetState.GetName] je nižší než nebo rovno $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)"
- TRIGGER_EXPORT_ADVANTAGE_EQUAL_THIRD: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','vývozy')|l] ve [STATE_GOODS.GetState.GetName] je rovno $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)"
- TRIGGER_EXPORT_ADVANTAGE_NOT_EQUAL_THIRD: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','vývozy')|l] ve [STATE_GOODS.GetState.GetName] #bold není #!rovno $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)"
- TRIGGER_RELATIVE_IMPORT_ADVANTAGE_GREATER_THAN: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','dovozy')|l] je vyšší než $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)"
- TRIGGER_RELATIVE_IMPORT_ADVANTAGE_LESS_THAN: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','dovozy')|l] je nižší než $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)"
- TRIGGER_RELATIVE_IMPORT_ADVANTAGE_GREATER_OR_EQUAL: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','dovozy')|l] je vyšší než nebo rovno $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)"
- TRIGGER_RELATIVE_IMPORT_ADVANTAGE_LESS_OR_EQUAL: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','dovozy')|l] je nižší než nebo rovno $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)"
- TRIGGER_RELATIVE_IMPORT_ADVANTAGE_EQUAL: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','dovozy')|l] je rovno $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)"
- TRIGGER_RELATIVE_IMPORT_ADVANTAGE_NOT_EQUAL: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','dovozy')|l] #bold není #!rovno $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)"
- TRIGGER_RELATIVE_IMPORT_ADVANTAGE_GREATER_THAN_THIRD: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','dovozy')|l] ve [STATE_GOODS.GetState.GetName] je vyšší než $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)"
- TRIGGER_RELATIVE_IMPORT_ADVANTAGE_GREATER_OR_EQUAL_THIRD: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','dovozy')|l] ve [STATE_GOODS.GetState.GetName] je vyšší než nebo rovno $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)"
- TRIGGER_RELATIVE_IMPORT_ADVANTAGE_LESS_THAN_THIRD: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','dovozy')|l] ve [STATE_GOODS.GetState.GetName] je nižší než $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)"
- TRIGGER_RELATIVE_IMPORT_ADVANTAGE_LESS_OR_EQUAL_THIRD: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','dovozy')|l] ve [STATE_GOODS.GetState.GetName] je nižší než nebo rovno $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)"
- TRIGGER_RELATIVE_IMPORT_ADVANTAGE_EQUAL_THIRD: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','dovozy')|l] ve [STATE_GOODS.GetState.GetName] je rovno $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)"
- TRIGGER_RELATIVE_IMPORT_ADVANTAGE_NOT_EQUAL_THIRD: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','dovozy')|l] ve [STATE_GOODS.GetState.GetName] #bold není #!rovno $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)"
- TRIGGER_RELATIVE_EXPORT_ADVANTAGE_GREATER_THAN: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','vývozy')|l] je vyšší než $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)"
- TRIGGER_RELATIVE_EXPORT_ADVANTAGE_LESS_THAN: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','vývozy')|l] je nižší než $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)"
- TRIGGER_RELATIVE_EXPORT_ADVANTAGE_GREATER_OR_EQUAL: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','vývozy')|l] je vyšší než nebo rovno $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)"
- TRIGGER_RELATIVE_EXPORT_ADVANTAGE_LESS_OR_EQUAL: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','vývozy')|l] je nižší než nebo rovno $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)"
- TRIGGER_RELATIVE_EXPORT_ADVANTAGE_EQUAL: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','vývozy')|l] je rovno $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)"
- TRIGGER_RELATIVE_EXPORT_ADVANTAGE_NOT_EQUAL: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','vývozy')|l] #bold není #!rovno $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)"
- TRIGGER_RELATIVE_EXPORT_ADVANTAGE_GREATER_THAN_THIRD: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','vývozy')|l] ve [STATE_GOODS.GetState.GetName] je vyšší než $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)"
- TRIGGER_RELATIVE_EXPORT_ADVANTAGE_GREATER_OR_EQUAL_THIRD: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','vývozy')|l] ve [STATE_GOODS.GetState.GetName] je vyšší než nebo rovno $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)"
- TRIGGER_RELATIVE_EXPORT_ADVANTAGE_LESS_THAN_THIRD: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','vývozy')|l] ve [STATE_GOODS.GetState.GetName] je nižší než $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)"
- TRIGGER_RELATIVE_EXPORT_ADVANTAGE_LESS_OR_EQUAL_THIRD: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','vývozy')|l] ve [STATE_GOODS.GetState.GetName] je nižší než nebo rovno $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)"
- TRIGGER_RELATIVE_EXPORT_ADVANTAGE_EQUAL_THIRD: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','vývozy')|l] ve [STATE_GOODS.GetState.GetName] je rovno $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)"
- TRIGGER_RELATIVE_EXPORT_ADVANTAGE_NOT_EQUAL_THIRD: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetName] [Concept('concept_trade','vývozy')|l] ve [STATE_GOODS.GetState.GetName] #bold není #!rovno $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)"
+ TRIGGER_IMPORT_ADVANTAGE_GREATER_THAN: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','dovozy')|l] je vyšší než $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)" # todo: NAME CASE
+ TRIGGER_IMPORT_ADVANTAGE_LESS_THAN: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','dovozy')|l] je nižší než $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)" # todo: NAME CASE
+ TRIGGER_IMPORT_ADVANTAGE_GREATER_OR_EQUAL: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','dovozy')|l] je vyšší než nebo rovno $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)" # todo: NAME CASE
+ TRIGGER_IMPORT_ADVANTAGE_LESS_OR_EQUAL: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','dovozy')|l] je nižší než nebo rovno $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)" # todo: NAME CASE
+ TRIGGER_IMPORT_ADVANTAGE_EQUAL: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','dovozy')|l] je rovno $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)" # todo: NAME CASE
+ TRIGGER_IMPORT_ADVANTAGE_NOT_EQUAL: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','dovozy')|l] #bold není #!rovno #!$NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)" # todo: NAME CASE
+ TRIGGER_IMPORT_ADVANTAGE_GREATER_THAN_THIRD: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','dovozy')|l] ve [STATE_GOODS.GetState.GetName] je vyšší než $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)" # todo: NAME CASE
+ TRIGGER_IMPORT_ADVANTAGE_GREATER_OR_EQUAL_THIRD: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','dovozy')|l] ve [STATE_GOODS.GetState.GetName] je vyšší než nebo rovno $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)" # todo: NAME CASE
+ TRIGGER_IMPORT_ADVANTAGE_LESS_THAN_THIRD: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','dovozy')|l] ve [STATE_GOODS.GetState.GetName] je nižší než $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)" # todo: NAME CASE
+ TRIGGER_IMPORT_ADVANTAGE_LESS_OR_EQUAL_THIRD: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','dovozy')|l] ve [STATE_GOODS.GetState.GetName] je nižší než nebo rovno $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)" # todo: NAME CASE
+ TRIGGER_IMPORT_ADVANTAGE_EQUAL_THIRD: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','dovozy')|l] ve [STATE_GOODS.GetState.GetName] je rovno $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)" # todo: NAME CASE
+ TRIGGER_IMPORT_ADVANTAGE_NOT_EQUAL_THIRD: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','dovozy')|l] ve [STATE_GOODS.GetState.GetName] #bold není #!rovno #!$NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)" # todo: NAME CASE
+ TRIGGER_EXPORT_ADVANTAGE_GREATER_THAN: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','vývozy')|l] je vyšší než $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)" # todo: NAME CASE
+ TRIGGER_EXPORT_ADVANTAGE_LESS_THAN: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','vývozy')|l] je nižší než $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)" # todo: NAME CASE
+ TRIGGER_EXPORT_ADVANTAGE_GREATER_OR_EQUAL: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','vývozy')|l] je vyšší než nebo rovno $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)" # todo: NAME CASE
+ TRIGGER_EXPORT_ADVANTAGE_LESS_OR_EQUAL: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','vývozy')|l] je nižší než nebo rovno $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)" # todo: NAME CASE
+ TRIGGER_EXPORT_ADVANTAGE_EQUAL: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','vývozy')|l] je rovno $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)" # todo: NAME CASE
+ TRIGGER_EXPORT_ADVANTAGE_NOT_EQUAL: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','vývozy')|l] #bold není #!rovno #!$NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)" # todo: NAME CASE
+ TRIGGER_EXPORT_ADVANTAGE_GREATER_THAN_THIRD: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','vývozy')|l] ve [STATE_GOODS.GetState.GetName] je vyšší než $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)" # todo: NAME CASE
+ TRIGGER_EXPORT_ADVANTAGE_GREATER_OR_EQUAL_THIRD: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','vývozy')|l] ve [STATE_GOODS.GetState.GetName] je vyšší než nebo rovno $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)" # todo: NAME CASE
+ TRIGGER_EXPORT_ADVANTAGE_LESS_THAN_THIRD: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','vývozy')|l] ve [STATE_GOODS.GetState.GetName] je nižší než $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)" # todo: NAME CASE
+ TRIGGER_EXPORT_ADVANTAGE_LESS_OR_EQUAL_THIRD: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','vývozy')|l] ve [STATE_GOODS.GetState.GetName] je nižší než nebo rovno $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)" # todo: NAME CASE
+ TRIGGER_EXPORT_ADVANTAGE_EQUAL_THIRD: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','vývozy')|l] ve [STATE_GOODS.GetState.GetName] je rovno $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)" # todo: NAME CASE
+ TRIGGER_EXPORT_ADVANTAGE_NOT_EQUAL_THIRD: "[Concept('concept_trade_advantage','Obchodní výhoda')] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','vývozy')|l] ve [STATE_GOODS.GetState.GetName] #bold není #!rovno $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)" # todo: NAME CASE
+ TRIGGER_RELATIVE_IMPORT_ADVANTAGE_GREATER_THAN: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','dovozy')|l] je vyšší než $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)" # todo: NAME CASE
+ TRIGGER_RELATIVE_IMPORT_ADVANTAGE_LESS_THAN: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','dovozy')|l] je nižší než $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)" # todo: NAME CASE
+ TRIGGER_RELATIVE_IMPORT_ADVANTAGE_GREATER_OR_EQUAL: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','dovozy')|l] je vyšší než nebo rovno $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)" # todo: NAME CASE
+ TRIGGER_RELATIVE_IMPORT_ADVANTAGE_LESS_OR_EQUAL: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','dovozy')|l] je nižší než nebo rovno $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)" # todo: NAME CASE
+ TRIGGER_RELATIVE_IMPORT_ADVANTAGE_EQUAL: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','dovozy')|l] je rovno $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)" # todo: NAME CASE
+ TRIGGER_RELATIVE_IMPORT_ADVANTAGE_NOT_EQUAL: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','dovozy')|l] #bold není #!rovno $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)" # todo: NAME CASE
+ TRIGGER_RELATIVE_IMPORT_ADVANTAGE_GREATER_THAN_THIRD: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','dovozy')|l] ve [STATE_GOODS.GetState.GetName] je vyšší než $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)" # todo: NAME CASE
+ TRIGGER_RELATIVE_IMPORT_ADVANTAGE_GREATER_OR_EQUAL_THIRD: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','dovozy')|l] ve [STATE_GOODS.GetState.GetName] je vyšší než nebo rovno $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)" # todo: NAME CASE
+ TRIGGER_RELATIVE_IMPORT_ADVANTAGE_LESS_THAN_THIRD: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','dovozy')|l] ve [STATE_GOODS.GetState.GetName] je nižší než $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)" # todo: NAME CASE
+ TRIGGER_RELATIVE_IMPORT_ADVANTAGE_LESS_OR_EQUAL_THIRD: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','dovozy')|l] ve [STATE_GOODS.GetState.GetName] je nižší než nebo rovno $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)" # todo: NAME CASE
+ TRIGGER_RELATIVE_IMPORT_ADVANTAGE_EQUAL_THIRD: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','dovozy')|l] ve [STATE_GOODS.GetState.GetName] je rovno $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)" # todo: NAME CASE
+ TRIGGER_RELATIVE_IMPORT_ADVANTAGE_NOT_EQUAL_THIRD: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','dovozy')|l] ve [STATE_GOODS.GetState.GetName] #bold není #!rovno $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)" # todo: NAME CASE
+ TRIGGER_RELATIVE_EXPORT_ADVANTAGE_GREATER_THAN: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','vývozy')|l] je vyšší než $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)" # todo: NAME CASE
+ TRIGGER_RELATIVE_EXPORT_ADVANTAGE_LESS_THAN: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','vývozy')|l] je nižší než $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)" # todo: NAME CASE
+ TRIGGER_RELATIVE_EXPORT_ADVANTAGE_GREATER_OR_EQUAL: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','vývozy')|l] je vyšší než nebo rovno $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)" # todo: NAME CASE
+ TRIGGER_RELATIVE_EXPORT_ADVANTAGE_LESS_OR_EQUAL: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','vývozy')|l] je nižší než nebo rovno $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)" # todo: NAME CASE
+ TRIGGER_RELATIVE_EXPORT_ADVANTAGE_EQUAL: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','vývozy')|l] je rovno $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)" # todo: NAME CASE
+ TRIGGER_RELATIVE_EXPORT_ADVANTAGE_NOT_EQUAL: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','vývozy')|l] #bold není #!rovno $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)" # todo: NAME CASE
+ TRIGGER_RELATIVE_EXPORT_ADVANTAGE_GREATER_THAN_THIRD: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','vývozy')|l] ve [STATE_GOODS.GetState.GetName] je vyšší než $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)" # todo: NAME CASE
+ TRIGGER_RELATIVE_EXPORT_ADVANTAGE_GREATER_OR_EQUAL_THIRD: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','vývozy')|l] ve [STATE_GOODS.GetState.GetName] je vyšší než nebo rovno $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)" # todo: NAME CASE
+ TRIGGER_RELATIVE_EXPORT_ADVANTAGE_LESS_THAN_THIRD: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','vývozy')|l] ve [STATE_GOODS.GetState.GetName] je nižší než $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)" # todo: NAME CASE
+ TRIGGER_RELATIVE_EXPORT_ADVANTAGE_LESS_OR_EQUAL_THIRD: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','vývozy')|l] ve [STATE_GOODS.GetState.GetName] je nižší než nebo rovno $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)" # todo: NAME CASE
+ TRIGGER_RELATIVE_EXPORT_ADVANTAGE_EQUAL_THIRD: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','vývozy')|l] ve [STATE_GOODS.GetState.GetName] je rovno $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)" # todo: NAME CASE
+ TRIGGER_RELATIVE_EXPORT_ADVANTAGE_NOT_EQUAL_THIRD: "Relativní [Concept('concept_trade_advantage','obchodní výhoda')|l] pro [STATE_GOODS.GetGoods.GetCustom('GDS_A_TT')] [Concept('concept_trade','vývozy')|l] ve [STATE_GOODS.GetState.GetName] #bold není #!rovno $NUM|0+=%$\n( v současnosti $CURRENT_VALUE|0+=%$)" # todo: NAME CASE
  TRIGGER_MARKET_TRADE: "Obchod se $GOODS_NAME$ s $MARKET_NAME$ je $COMPARATOR$ $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)"
  TRIGGER_MARKET_TRADE_NOT: "Obchod se $GOODS_NAME$ s $MARKET_NAME$ #b není #! $COMPARATOR$ $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)"
  TRIGGER_MARKET_TRADE_THIRD: "Obchod se $GOODS_NAME$ mezi [MARKET.GetName] a $MARKET_NAME$ je $COMPARATOR$ $NUM|0v$\n( v současnosti $CURRENT_VALUE|0$)"
@@ -4006,10 +4006,10 @@
  TRIGGER_HAS_SOCIAL_CLASS_THIRD_NOT: "[POP.GetName] nepatří #bold ne#! [SOCIAL_CLASS.GetName]"
  TRIGGER_COMPANY_HAS_MONOPOLY: "Má [Concept('concept_monopoly','monopol')|l]"
  TRIGGER_COMPANY_HAS_MONOPOLY_NOT: "#bold Nemá#! [Concept('concept_monopoly','monopol')|l]"
- TRIGGER_CAN_POTENTIALLY_PRODUCE_PRESTIGE_GOOD: "Může potenciálně vyrábět [GOODS.GetName]"
- TRIGGER_CAN_POTENTIALLY_PRODUCE_PRESTIGE_GOOD_NOT: "Může #bold ne#! potenciálně vyrábět [GOODS.GetName]"
- TRIGGER_CAN_POTENTIALLY_PRODUCE_PRESTIGE_GOOD_THIRD: "[COMPANY.GetName] může potenciálně vyrábět [GOODS.GetName]"
- TRIGGER_CAN_POTENTIALLY_PRODUCE_PRESTIGE_GOOD_THIRD_NOT: "[COMPANY.GetName] může #bold ne#! potenciálně vyrábět [GOODS.GetName]"
+ TRIGGER_CAN_POTENTIALLY_PRODUCE_PRESTIGE_GOOD: "Může potenciálně vyrábět [GOODS.GetCustom('GDS_A_TT')]" # todo: NAME CASE
+ TRIGGER_CAN_POTENTIALLY_PRODUCE_PRESTIGE_GOOD_NOT: "Může #bold ne#! potenciálně vyrábět [GOODS.GetCustom('GDS_A_TT')]" # todo: NAME CASE
+ TRIGGER_CAN_POTENTIALLY_PRODUCE_PRESTIGE_GOOD_THIRD: "[COMPANY.GetName] může potenciálně vyrábět [GOODS.GetCustom('GDS_A_TT')]" # todo: NAME CASE
+ TRIGGER_CAN_POTENTIALLY_PRODUCE_PRESTIGE_GOOD_THIRD_NOT: "[COMPANY.GetName] může #bold ne#! potenciálně vyrábět [GOODS.GetCustom('GDS_A_TT')]" # todo: NAME CASE
  TRIGGER_IS_PRODUCING_PRESTIGE_GOODS: "Vyrábí [Concept('concept_prestige_good','prestižní zboží')|l]"
  TRIGGER_IS_PRODUCING_PRESTIGE_GOODS_NOT: "#bold Nevyrábí#! [Concept('concept_prestige_good','prestižní zboží')|l]"
  TRIGGER_IS_PRODUCING_PRESTIGE_GOODS_THIRD: "[COMPANY.GetName] vyrábí [Concept('concept_prestige_good','prestižní zboží')|l]"

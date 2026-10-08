@@ -41,7 +41,7 @@
  LOYALTY_NEUTRAL: "#v Neutrální#!"
  LOYALTY_RELIABLE: "#p Spolehlivý#!"
  LOYALTY_FAITHFUL: "#p Věrný#!"
- INTEREST_GROUP_APPROVAL: "[Concept('concept_approval','Spokojenost')] [INTEREST_GROUP.GetName]"
+ INTEREST_GROUP_APPROVAL: "[Concept('concept_approval','Spokojenost')] [INTEREST_GROUP.GetCustom('IG_G_TT')]" # todo: NAME CASE
  CHARACTER_IDEOLOGY_STANCES: "[IDEOLOGY.GetName] postoje k aktuálním a přijímaným [Concept('concept_law','zákonům')]" # todo: CHANGED # todo: CONCEPT CASE
  ASSIGN_COMMANDER_WRONG_TYPE: "[CHARACTER.GetFullName] nelze přiřadit k [MILITARY_FORMATION.GetName], protože nejsou správným typem velitele pro [MILITARY_FORMATION.GetName]." # todo: CHANGED
  ASSIGN_COMMANDER_ALREADY_ASSIGNED: "[CHARACTER.GetFullName] je již přiřazen k [MILITARY_FORMATION.GetName]." # todo: NEW TRANSLATION

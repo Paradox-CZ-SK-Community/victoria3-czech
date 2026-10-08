@@ -40,7 +40,7 @@
  coup_declining: "Očekává se, že puč bude ztrácet na síle"
  coup_success_tt: "Zájmová skupina [SCOPE.gsInterestGroup('golpista_ig').GetName] okamžitě prosadí zákon [SCOPE.sLaw('coup_desired_law').GetName]"
  coup.1.t: "Plánování puče"
- coup.1.d: "[SCOPE.sCharacter('coup_leader').GetFullName] začal být nespokojen s institucemi vlády [ROOT.GetCountry.GetAdjectiveNoFormatting]. Mezi [SCOPE.gsInterestGroup('golpista_ig').GetName] se formuje spiknutí s cílem provést puč proti vládě a zavést [SCOPE.sLaw('coup_desired_law').GetName]."
+ coup.1.d: "[SCOPE.sCharacter('coup_leader').GetFullName] začal být nespokojen s institucemi vlády [ROOT.GetCountry.GetAdjectiveNoFormatting]. Mezi [SCOPE.gsInterestGroup('golpista_ig').GetCustom('IG_I_TT')] se formuje spiknutí s cílem provést puč proti vládě a zavést [SCOPE.sLaw('coup_desired_law').GetName]." # todo: NAME CASE
  coup.1.f: "„Co si myslíš o tom projevu [SCOPE.sCharacter('coup_leader').GetFirstNameNoFormatting] před chvílí?“\n„Je to radikální návrh. Ale těžké časy vyžadují, aby se velcí muži ujali vedení.“\n„Uvidí to tak i lid?“\n„Musí to tak vidět.“"
  coup.1.a: "Ďábelsky půvabné."
  coup.1.b: "Pozorně sleduj [SCOPE.sCharacter('coup_leader').GetFullName]."
@@ -60,8 +60,8 @@
  coup.3.d: "[SCOPE.sCharacter('coup_leader').GetFullName] byl rázně odstraněn od moci ještě předtím, než mohl provést svůj puč a zavést [SCOPE.sLaw('coup_desired_law').GetName]. Demokracie sice prozatím přežila, ale [SCOPE.gsInterestGroup('golpista_ig').GetName] nesou svůj politický exil velmi nelibě."
  coup.3.f: "„Předpokládám, že když spolu mluvíme tak otevřeně, plán proběhl bez problémů?“\n\n„Bez problémů?! Zbláznil ses? Skončilo to dřív, než to vůbec začalo. A rozhodně ne bez tvé pomoci! Kde jsi sakra byl?“\n\n„Ach, prostě jsem nemohl přijít. Naléhavá rodinná záležitost, moje teta má dnu, víš. Ale zní to alespoň tak, že to mohlo dopadnout i hůř.“"
  coup.3.a: "Nech [SCOPE.sCharacter('coup_leader').GetFullName] zatknout a popravit."
- coup.3.b: "Odhal [SCOPE.gsInterestGroup('golpista_ig').GetName] jako zrádce [ROOT.GetCountry.GetName]."
- coup.3.c: "Vyhni se dalšímu popuzování [SCOPE.gsInterestGroup('golpista_ig').GetName]."
+ coup.3.b: "Odhal [SCOPE.gsInterestGroup('golpista_ig').GetCustom('IG_A_TT')] jako zrádce [ROOT.GetCountry.GetName]." # todo: NAME CASE
+ coup.3.c: "Vyhni se dalšímu popuzování [SCOPE.gsInterestGroup('golpista_ig').GetCustom('IG_G_TT')]." # todo: NAME CASE
  coup.5.t: "[SCOPE.gsInterestGroup('golpista_ig').GetName] opouští vládu"
  coup.5.d: "Zájmová skupina [SCOPE.gsInterestGroup('golpista_ig').GetName] zcela opustila vládu. Zavedení [SCOPE.sLaw('coup_desired_law').GetName] bude pravděpodobně prosazeno na bojišti spíše než v sálech vlády."
  coup.5.f: "„Vidíme tedy, že válka není pouze politickým aktem, ale také skutečným politickým nástrojem, pokračováním politického styku, jeho uskutečněním jinými prostředky. Vše ostatní, co je válce vlastní, se vztahuje pouze ke zvláštní povaze prostředků, které používá.“\n\n— Carl von Clausewitz, #italic O válce#!"
@@ -86,7 +86,7 @@
  wedding.3.d1: "Rozhořčen politickými událostmi, které znevýhodňují zájmovou skupinu [SCOPE.gsInterestGroup('monarch_ig').GetName] v zemi [ROOT.GetCountry.GetName], se [SCOPE.sCharacter('abdicating_monarch').GetPrimaryRoleTitle] [SCOPE.sCharacter('abdicating_monarch').GetFirstName] rozhodl abdikovat ve prospěch svého dědice, [SCOPE.sCharacter('heir_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('heir_scope').GetFullName]."
  wedding.3.d2: "Uvědomujíc si, že jeho nedostatek [Concept('concept_popularity','popularita')] může instituci [SCOPE.sLawType('monarchy_law').GetName] spíše škodit než prospívat, se [SCOPE.sCharacter('abdicating_monarch').GetPrimaryRoleTitle] [SCOPE.sCharacter('abdicating_monarch').GetFirstName] rozhodl abdikovat ve prospěch [SCOPE.sCharacter('heir_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('heir_scope').GetFullName]."
  wedding.3.d3: "Zdravotní stav [SCOPE.sCharacter('abdicating_monarch').GetPrimaryRoleTitle] [SCOPE.sCharacter('abdicating_monarch').GetFirstName] způsobil, že se stal neschopným vládnout. Ve vzácném okamžiku jasnozřivosti [SCOPE.sCharacter('abdicating_monarch').GetSheHe] souhlasil s abdikací ve prospěch [SCOPE.sCharacter('heir_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('heir_scope').GetFullName]."
- wedding.3.f: "„Říká se, že [SCOPE.sCharacter('abdicating_monarch').GetPrimaryRoleTitle] se zbláznil. Prý se pokusil oženit se svým koněm nebo tak něco.“\n\n„Jaké nesmysly čteš v [SCOPE.GetRootScope.GetCountry.GetCustom('generic_newspaper_type')]? Jde o vznešenější záležitosti, zjevně související se situací [SCOPE.gsInterestGroup('monarch_ig').GetNameNoFormatting].“\n\n„Není to nic složitého. Všichni toho [SCOPE.sCharacter('abdicating_monarch').GetPrimaryRoleTitle] nenávidí, takže musí pryč. Prostá demokracie.“"
+ wedding.3.f: "„Říká se, že [SCOPE.sCharacter('abdicating_monarch').GetPrimaryRoleTitle] se zbláznil. Prý se pokusil oženit se svým koněm nebo tak něco.“\n\n„Jaké nesmysly čteš v [SCOPE.GetRootScope.GetCountry.GetCustom('generic_newspaper_type')]? Jde o vznešenější záležitosti, zjevně související se situací [SCOPE.gsInterestGroup('monarch_ig').GetCustom('IG_G')].“\n\n„Není to nic složitého. Všichni toho [SCOPE.sCharacter('abdicating_monarch').GetPrimaryRoleTitle] nenávidí, takže musí pryč. Prostá demokracie.“" # todo: NAME CASE
  wedding.3.a: "Uspořádat soukromou, elitní korunovaci."
  wedding.3.b: "Uspořádat velkolepou veřejnou korunovaci."
  ALL_POPS: "[Concept('concept_pop','Populace')]"

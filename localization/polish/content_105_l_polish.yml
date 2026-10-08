@@ -44,7 +44,7 @@
  exclusive_wine: "Exkluzivní víno"
  popular_wine: "Oblíbené víno"
  obligation_events.1.t: "Upřednostněná strana"
- obligation_events.1.d: "To, že nám země [SCOPE.sC('obligation_request_target').GetName] dluží závazek, bychom mohli využít k nátlaku, aby do své vlády zahrnula [SCOPE.gsInterestGroup('obligation_request_ig').GetName]."
+ obligation_events.1.d: "To, že nám země [SCOPE.sC('obligation_request_target').GetName] dluží závazek, bychom mohli využít k nátlaku, aby do své vlády zahrnula [SCOPE.gsInterestGroup('obligation_request_ig').GetCustom('IG_A_TT')]." # todo: NAME CASE
  obligation_events.1.f: "„Nepřísluší mi říkat ctěnému [SCOPE.sC('obligation_request_target').GetRuler.GetPrimaryRoleTitle], jak má řídit [SCOPE.sC('obligation_request_target').GetRuler.GetHerHis] zemi,“ řekl [ROOT.GetCountry.GetRuler.GetFullNameNoFormatting] a mávl [ROOT.GetCountry.GetRuler.GetHerHis] rukou, „chci jen zmínit, že [SCOPE.gsInterestGroup('obligation_request_ig').GetLeader.GetFullNameNoFormatting] je velmi rozumný [SCOPE.gsInterestGroup('obligation_request_ig').GetLeader.GetWomanMan], který si zaslouží být vyslyšen!“"
  obligation_events.1.a: "Potřebují jen malé postrčení správným směrem!"
  obligation_events.a.tt: "Pokud přijmou:"
@@ -112,7 +112,7 @@
  je_build_local_arms_industry_reason: "Na žádost $ig_armed_forces$ jsme slíbili, že snížíme svou závislost na dovozu zahraničních zbraní financováním vlastní průmyslové výroby zbraní."
  je_set_up_grain_import: "Zřídit dovoz obilí"
  je_set_up_grain_import_status: "Snižte cenu $grain$ na našem [Concept('concept_market','trhu')]." # todo: CONCEPT CASE
- je_set_up_grain_import_reason: "Na žádost [JournalEntry.GetTarget.GetInterestGroup.GetName] jsme slíbili dovážet $grain$, abychom snížili ceny potravin pro chudé."
+ je_set_up_grain_import_reason: "Na žádost [JournalEntry.GetTarget.GetInterestGroup.GetCustom('IG_G_TT')] jsme slíbili dovážet $grain$, abychom snížili ceny potravin pro chudé." # todo: NAME CASE
  je_set_up_steel_import: "Zřídit dovoz oceli"
  je_set_up_steel_import_status: "Snižte cenu $steel$ na našem [Concept('concept_market','trhu')]." # todo: CONCEPT CASE
  je_set_up_steel_import_reason: "Na žádost $ig_industrialists$ jsme slíbili dovážet $steel$, abychom snížili ceny oceli pro průmyslové účely."

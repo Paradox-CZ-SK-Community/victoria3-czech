@@ -192,11 +192,11 @@
  amazon_border_treaty_button_2: "Podepsat smlouvu z Bogoty"
  amazon_border_treaty_button_2_desc: "Severní amazonské hranice [SCOPE.GetRootScope.GetCountry.GetAltAdjectiveNoFlag('G')] jsou vágní a otevřené zneužívání cizími státy i bandity. Jasně vymezené hranice a dohody se sousedy by výrazně posílily naši bezpečnost a přinesly řád do této pohraniční oblasti.\n\nJedna rozsáhlá smlouva by tento problém elegantně vyřešila pro [SCOPE.GetRootScope.GetCountry.GetAltAdjectiveNoFormatting('A')]."
  je_amazonas: "Využití Amazonie"
- je_amazonas_reason: "Ačkoli jsou nám [SCOPE.sGoods('rubber_scope').GetName] a jeho vlastnosti známy již dlouho, jeho využití bylo tradičně omezené, a tudíž i komerční poptávka nízká. S #bold průmyslovou revolucí#! v plném proudu a novými způsoby využití [SCOPE.sGoods('rubber_scope').GetNameNoFormatting], které vznikají každým týdnem, však volání po zvýšení produkce prudce vzrostlo.\n\nJe nutné podniknout kroky k přeměně Amazonie z nehostinné džungle na intenzivně rozvinutou oblast schopnou uspokojit požadavky obchodu."
+ je_amazonas_reason: "Ačkoli jsou nám [SCOPE.sGoods('rubber_scope').GetName] a jeho vlastnosti známy již dlouho, jeho využití bylo tradičně omezené, a tudíž i komerční poptávka nízká. S #bold průmyslovou revolucí#! v plném proudu a novými způsoby využití [SCOPE.sGoods('rubber_scope').GetCustom('GDS_G')], které vznikají každým týdnem, však volání po zvýšení produkce prudce vzrostlo.\n\nJe nutné podniknout kroky k přeměně Amazonie z nehostinné džungle na intenzivně rozvinutou oblast schopnou uspokojit požadavky obchodu." # todo: NAME CASE
  je_amazonas_tt: "Všechny amazonské [Concept('concept_state','státy')] produkující kaučuk musí mít svůj #bold státní rys#! vylepšen na #bold Využitý amazonský prales#!."
  amazon_development_cooldown_modifier: "Zkrocení Amazonie"
  amazonas.1.t: "Zkrocení Amazonie"
- amazonas.1.d: "V současnosti vlastníme rozsáhlé plochy nedotčené a nevyužité amazonské krajiny. Zatímco někteří obdivují její divokou krásu, jiní v ní vidí pouze nezkrocené pohraničí překypující [SCOPE.sGoods('rubber_scope').GetName] — toužící po jemném doteku pokroku a kapitálu."
+ amazonas.1.d: "V současnosti vlastníme rozsáhlé plochy nedotčené a nevyužité amazonské krajiny. Zatímco někteří obdivují její divokou krásu, jiní v ní vidí pouze nezkrocené pohraničí překypující [SCOPE.sGoods('rubber_scope').GetCustom('GDS_I_TT')] — toužící po jemném doteku pokroku a kapitálu." # todo: NAME CASE
  amazonas.1.f: "„Zapište si toto: stojíme na okraji něčeho, co by mohlo být samotnými plícemi této planety. Hrozivé divy, které se v ní skrývají, jsou naše — k obdivu, dobytí i podrobení. Tak jako Temná Afrika podlehla—“\n\n„Eh, pane, myslím, že jsem zapomněl pero. Možná bych to mohl nadiktovat po návratu do tábora?“\n\n„Imbécile. Bah, vezměte si moje. A začněte znovu, a nepřerušujte!“"
  amazonas.1.a: "Štěstí přeje odvážným..."
  amazonas.1.tt: "... a plivne na zbabělce."
@@ -213,7 +213,7 @@
  amazonic_indemnities_brazil_2: "Odškodnění ze smlouvy z Bogoty"
  amazonic_indemnities_recipient_2: "Odškodnění ze smlouvy z Bogoty"
  amazonas.4.t: "Manaus, srdce Amazonie"
- amazonas.4.d: "Město [SCOPE.sState('amazonas_state_scope').GetCityHubName] v [SCOPE.sState('amazonas_state_scope').GetName] se díky ziskům z rozvíjejícího se odvětví [SCOPE.sGoods('rubber_scope').GetName] stalo významným obchodním centrem s vybavením a infrastrukturou dosud v deštném pralese nevídanou."
+ amazonas.4.d: "Město [SCOPE.sState('amazonas_state_scope').GetCityHubName] v [SCOPE.sState('amazonas_state_scope').GetName] se díky ziskům z rozvíjejícího se odvětví [SCOPE.sGoods('rubber_scope').GetCustom('GDS_G_TT')] stalo významným obchodním centrem s vybavením a infrastrukturou dosud v deštném pralese nevídanou." # todo: NAME CASE
  amazonas.4.f: "#bold Míza roztáčí svět [SCOPE.sState('amazonas_state_scope').GetCityHubName]#!\nRostoucí obchod s kaučukem, získávaným přímo ze stromů amazonského pralesa, poskytl [SCOPE.sState('amazonas_state_scope').GetCityHubName] stabilní ekonomickou oporu. Zatímco káva a mléko dominují jiným částem [SCOPE.GetRootScope.GetCountry.GetNameNoFormatting], využitelnost kaučuku umožnila rozkvět dalších odvětví. Ševci, výrobci nástrojů i nemocnice dosahují nových zázraků s touto lepkavou látkou... (pokračování str. 68–69)"
  amazonas.4.a: "Stane se základem našeho [SCOPE.sGoods('rubber_scope').GetNameNoFormatting] impéria..."
  amazonas.4.b: "... a tropickou metropolí #italic sans pareil#!."
@@ -227,21 +227,21 @@
  amazonas.5.b: "Co by byla tropická Paříž bez světel?"
  amazonic_city_of_lights_modifier: "Tropické město světel"
  amazonas.6.t: "Výspa pokroku"
- amazonas.6.d: "Uprostřed deštných pralesů [SCOPE.sState('amazon_development_level_one_state_scope').GetName] se dříve ospalá vesnice [SCOPE.sState('amazon_development_level_one_state_scope').GetCityHubName] rozrostla v hlavní centrum těžby a přepravy [SCOPE.sGoods('rubber_scope').GetName]."
+ amazonas.6.d: "Uprostřed deštných pralesů [SCOPE.sState('amazon_development_level_one_state_scope').GetName] se dříve ospalá vesnice [SCOPE.sState('amazon_development_level_one_state_scope').GetCityHubName] rozrostla v hlavní centrum těžby a přepravy [SCOPE.sGoods('rubber_scope').GetCustom('GDS_G_TT')]." # todo: NAME CASE
  amazonas.6.f: "„Teď spát. Slunce zapadá. Ty i tvůj otec budete zítra potřebovat sílu na lov.“\n\n„Ale já jsem Señor Ramirez a stále mu poroučím—“\n\n„To jméno už nikdy nevyslovuj, chlapče. Nikdy. Nepřiváděj sem ty lidi... pokud vůbec ještě nějací zůstali.“"
  amazonas.6.a: "... a kaučukoví ‚baroni‘ potřebují více pracovní síly."
  amazonas.6.b: "Jejich obchodní důvtip zajistí rozkvět [SCOPE.sState('amazon_development_level_one_state_scope').GetCityHubName]."
  rubber_entrepot_modifier: "Kaučukový překladiště"
  rubber_barons_modifier: "Noví kaučukoví baroni"
  amazonas.7.t: "Perly v hrubém"
- amazonas.7.d: "Jako perly na niti se nyní podél železničních a říčních sítí [SCOPE.sState('amazon_development_level_two_state_scope').GetName] řadí města a překladiště [SCOPE.sGoods('rubber_scope').GetName], která přinášejí do džungle planoucí pochodeň civilizace výměnou za její bohatství."
+ amazonas.7.d: "Jako perly na niti se nyní podél železničních a říčních sítí [SCOPE.sState('amazon_development_level_two_state_scope').GetName] řadí města a překladiště [SCOPE.sGoods('rubber_scope').GetCustom('GDS_G_TT')], která přinášejí do džungle planoucí pochodeň civilizace výměnou za její bohatství." # todo: NAME CASE
  amazonas.7.f: "„Tentokrát jste si vzal pero? Ano, zapisujte vše. Eh... Amazonie, jak jsem předpověděl, se podvolila stejně jako kdysi Temná Afrika. Nic z kůry ani z lávy nezastaví kola pokroku. V této mocné— Proboha, ptal jsem se vás na pero? Ne, tohle #bold nepište#!! Přestaňte!“"
  amazonas.7.a: "Jsme předzvěstí řádu..."
  amazonas.7.b: "... a hlasateli pokroku."
  harbingers_of_order_modifier: "Předzvěsti řádu"
  heralds_of_progress_modifier: "Hlasatelé pokroku"
  amazonas.8.t: "Krok za krokem"
- amazonas.8.d: "Kaučukoví baroni, místní úřady i část [SCOPE.gsInterestGroup('devout_scope').GetName] se neshodují na tom, jak nejlépe formovat [SCOPE.sCulture('amazonian_culture_scope').GetName] obyvatelstvo v [SCOPE.sState('amazon_indian_exploitation_state').GetName]. Každý argument je však zakořeněn ve vlastním zájmu."
+ amazonas.8.d: "Kaučukoví baroni, místní úřady i část [SCOPE.gsInterestGroup('devout_scope').GetCustom('IG_G_TT')] se neshodují na tom, jak nejlépe formovat [SCOPE.sCulture('amazonian_culture_scope').GetName] obyvatelstvo v [SCOPE.sState('amazon_indian_exploitation_state').GetName]. Každý argument je však zakořeněn ve vlastním zájmu." # todo: NAME CASE
  amazonas.8.f: "Ruce jejího muže i syna byly zčervenalé. Kněží a jeptišky bili chlapce holí za tanec v chodbách a vyprávění starých příběhů. Dozorcové patrona věřili, že muž falšoval kaučuk, který sbíral. Pokud by je muži s biči neudřeli k smrti, pomyslela si, pak by jim muži jediného Boha zničili duši."
  amazonas.8.a: "Vzdělání je rozptýlení, jejich ruce jsou určeny k práci, ne k psaní."
  amazonas.8.b: "Ještě z nich uděláme [SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFormatting]y."
@@ -271,7 +271,7 @@
  humanita_fortress_modifier: "Pevnost Humaitá"
  establishing_humanity_modifier: "Výstavba Humaitá"
  ybycui_iron_works_button: "Založit slévárnu Rosada"
- ybycui_iron_works_button_desc: "Strategicky umístěné poblíž hlavních nalezišť [SCOPE.sGoods('iron_scope').GetName] v [SCOPE.GetRootScope.GetCountry.GetAltAdjectiveNoFlag('L')] a obklopené [SCOPE.sGoods('wood_scope').GetName] vhodným pro výrobu dřevěného uhlí, je Arroyo de Ybycuí ideálním místem pro vybudování velké moderní železárny.\n\nPozváním zahraničních odborníků k její výstavbě a provozu zajistíme, že paraguayské ozbrojené síly nebudou v případě války postrádat domácí kvalitní železo." # todo: CONCEPT CASE
+ ybycui_iron_works_button_desc: "Strategicky umístěné poblíž hlavních nalezišť [SCOPE.sGoods('iron_scope').GetCustom('GDS_G_TT')] v [SCOPE.GetRootScope.GetCountry.GetAltAdjectiveNoFlag('L')] a obklopené [SCOPE.sGoods('wood_scope').GetCustom('GDS_I_TT')] vhodným pro výrobu dřevěného uhlí, je Arroyo de Ybycuí ideálním místem pro vybudování velké moderní železárny.\n\nPozváním zahraničních odborníků k její výstavbě a provozu zajistíme, že paraguayské ozbrojené síly nebudou v případě války postrádat domácí kvalitní železo." # todo: CONCEPT CASE # todo: NAME CASE
  good_health_prg_button: "Podpořit růst populace"
  good_health_prg_button_desc: "Po staletí se paraguayský lid spoléhal na tradiční léčitele, zatímco nemoci jako neštovice decimovaly populaci, zejména v chudších čtvrtích.\n\nMá-li se Paraguay modernizovat a její populace růst podle potřeb státu, musí být do [SCOPE.GetRootScope.GetCountry.GetCapital.GetCityHubName] pozváni lékaři vzdělaní na Západě a musí být vybudován nový zdravotnický systém."
  army_git_good_button: "Reformovat paraguayskou armádu"
@@ -299,8 +299,8 @@
  paraguay.3.t: "Porúří tropů"
  paraguay.3.d: "S velkou slávou [SCOPE.GetRootScope.GetCountry.GetRuler.GetPrimaryRoleTitle] [SCOPE.GetRootScope.GetCountry.GetRuler.GetLastName] oficiálně zahájil provoz nového průmyslového komplexu v Ybycuí a zdůraznil jeho modernost a obrovský průmyslový potenciál před shromážděným davem."
  paraguay.3.f: "#bold Záznam ředitele: O železárnách v Ybycuí#!\nTakto vyrobené železo se ukázalo být nejvyšší kvality a již nějakou dobu se pro veřejné stavby nepoužívá žádné jiné. Železo tavené dřevěným uhlím je, jak známo, mnohem pevnější a kvalitnější než železo tavené uhlím.\n\nExistuje důvod doufat, že jakmile budou paraguayské doly řádně využívány a provozovány ve vhodném rozsahu, bude země schopna zásobovat La Platu železem nejvyšší kvality za nižší cenu než dosud dovážené méně kvalitní železo z Evropy..."
- paraguay.3.a: "Jeho uhlíkové pece zajistí nejvyšší kvalitu [SCOPE.sGoods('iron_scope').GetName]."
- paraguay.3.b: "Železo je dobré, ale budoucnost patří [SCOPE.sGoods('steel_scope').GetName]."
+ paraguay.3.a: "Jeho uhlíkové pece zajistí nejvyšší kvalitu [SCOPE.sGoods('iron_scope').GetCustom('GDS_G_TT')]." # todo: NAME CASE
+ paraguay.3.b: "Železo je dobré, ale budoucnost patří [SCOPE.sGoods('steel_scope').GetCustom('GDS_D_TT')]." # todo: NAME CASE
  paraguay.3.c: "Naše věznice jsou plné nevyužitých mužů — nabídněme jim „práci“."
  ybycui_prisoner_workforce_modifier: "Nucené pracovní tábory El Rosado"
  ybycui_iron_works_modifier: "Železárny El Rosado"

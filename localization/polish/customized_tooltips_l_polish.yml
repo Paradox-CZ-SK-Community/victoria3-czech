@@ -263,7 +263,7 @@
  CULTURAL_COMMUNITY_ACCEPTANCE_HOMELAND_DESC: "$VALUE|0+=$ z [Concept('concept_homeland','domoviny')]" # todo: CONCEPT CASE
  CULTURAL_COMMUNITY_ACCEPTANCE_NOT_HOMELAND_DESC: "$VALUE|0+=$ z toho, že není [Concept('concept_homeland','domovinou')]"
  DATA_GOODS_NAME_TOOLTIP: "[ConcatIfNeitherEmpty( Goods.GetStateGoodsShortageDesc, '\n\n')][AddLocalizationIf(And(Goods.GetState.IsValid, Not(Goods.IsLocal)), 'PRICE_SETTING_INFO')][SelectLocalization(And(Goods.HasMarketContext,Not(Goods.IsLocal)), 'GOODS_LEADERBOARD_STATUS', '')][ConcatIfNeitherEmpty('\n',Goods.GetPrestigeGoodTradeAdvantageEffectDesc)][ConcatIfNeitherEmpty('\n',Goods.GetPrestigeGoodThroughputEffectDesc)][ConcatIfNeitherEmpty('\n',Goods.GetPrestigeGoodSoLEffectDesc)][ConcatIfNeitherEmpty('\n',Goods.GetPrestigeGoodCombatUnitEffectDesc)][SelectLocalization(Goods.IsTradeable, '', 'NON_TRADEABLE_DESC')]"
- DATA_GOODS_POP_CONSUMPTION_NAME_TOOLTIP: "[ConcatIfNeitherEmpty( Goods.GetStateGoodsShortageDesc, '\n\n')]#v [PopConsumptionGoods.GetConsumptionRatio|1%v]#! z tohoto rozpočtu [Concept('concept_pop','populace')] je utraceno na [Goods.GetName]\nČást [PopConsumptionGoods.GetPopNeedsDesc] [Concept('concept_pop_needs','potřeb populace')]\n\n#v [PopConsumptionGoods.GetConsumptionAmount|D]#! [Concept('concept_good_consumption','spotřebováno')] od [Pop.GetName]\n\n[PopConsumptionGoods.GetPop.GetConsumptionFactorDesc]" # todo: CONCEPT CASE
+ DATA_GOODS_POP_CONSUMPTION_NAME_TOOLTIP: "[ConcatIfNeitherEmpty( Goods.GetStateGoodsShortageDesc, '\n\n')]#v [PopConsumptionGoods.GetConsumptionRatio|1%v]#! z tohoto rozpočtu [Concept('concept_pop','populace')] je utraceno na [Goods.GetCustom('GDS_A_TT')]\nČást [PopConsumptionGoods.GetPopNeedsDesc] [Concept('concept_pop_needs','potřeb populace')]\n\n#v [PopConsumptionGoods.GetConsumptionAmount|D]#! [Concept('concept_good_consumption','spotřebováno')] od [Pop.GetName]\n\n[PopConsumptionGoods.GetPop.GetConsumptionFactorDesc]" # todo: CONCEPT CASE # todo: NAME CASE
  GOODS_NAME_TOOLTIP_LEADERBOARD_RANKING_BREAKDOWN: "[Goods.GetLeaderboardSpotDesc(GetPlayer.Self)]"
  GOODS_LEADERBOARD_ENTRY: "$AMOUNT|vD$: [Country.GetName] $PRESTIGE_AWARD$"
  GOODS_LEADERBOARD: "$GOODS_LEADERBOARD_HEADER$\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
@@ -275,7 +275,7 @@
  GOODS_LEADERBOARD_HEADER_WITH_NEWLINES: "\n\n$GOODS_LEADERBOARD_HEADER$"
  GOODS_LEADERBOARD_HEADER_TOP_PRODUCER: "#v ##[Goods.GetLeaderboardSpot(Goods.GetMarket.GetOwner)]#! Výrobce na světě[Goods.GetPrestigeAwardForSpotDesc( Goods.GetLeaderboardSpot(Goods.GetMarket.GetOwner.Self) )]"
  GOODS_LEADERBOARD_HEADER_INSIGNIFICANT_PRODUCER: " Není významným producentem [Goods.GetBaseGoods.GetCustom('GDS_G')|l]"
- GOODS_PRESTIGE_AWARD: "#v $VAL|=+$#! [Concept('concept_prestige','prestiž')] od #v ##$SPOT|v$#! výrobce [Goods.GetName]"
+ GOODS_PRESTIGE_AWARD: "#v $VAL|=+$#! [Concept('concept_prestige','prestiž')] od #v ##$SPOT|v$#! výrobce [Goods.GetCustom('GDS_G_TT')]" # todo: NAME CASE
  GOODS_PRESTIGE_AWARD_FOR_PRESTIGE_GOOD: "#v $VAL|=+$#! [Concept('concept_prestige','prestiž')] z #v ##$SPOT|v$#! producent $LIST$"
  GOODS_PRESTIGE_AWARD_FOR_PRESTIGE_GOOD_ENTRY: "[Goods.GetName] ($VAL|D0v$)"
  GOODS_PRESTIGE_SUFFIX: " (#v $VAL|=+$#! [Concept('concept_prestige','prestiž')])"
@@ -615,7 +615,7 @@
  OFFENSE_AT_FULL_MANPOWER: "([MilitaryFormation.GetAverageOffense|v0] at full @manpower!)"
  DEFENSE_AT_FULL_MANPOWER: "([MilitaryFormation.GetAverageDefense|v0] at full @manpower!)"
  COUNTRY_RANK_BREAKDOWN: "[Country.GetRankTooltip]"
- IG_APPROVAL_BREAKDOWN: "#header [Concept('concept_approval','Spokojenost')]#!\n[Concept('concept_approval','Spokojenost')] [InterestGroup.GetName]  je [InterestGroup.GetApprovalRating|v] (#bold [InterestGroup.GetApprovalValue|+=]#!)\n$TOOLTIP_DELIMITER$\n[InterestGroup.GetApprovalValueDesc]"
+ IG_APPROVAL_BREAKDOWN: "#header [Concept('concept_approval','Spokojenost')]#!\n[Concept('concept_approval','Spokojenost')] [InterestGroup.GetCustom('IG_G_TT')]  je [InterestGroup.GetApprovalRating|v] (#bold [InterestGroup.GetApprovalValue|+=]#!)\n$TOOLTIP_DELIMITER$\n[InterestGroup.GetApprovalValueDesc]" # todo: NAME CASE
  IG_POL_STR_BREAKDOWN: "[InterestGroup.GetPoliticalStrengthDesc]"
  MARKET_BALANCE_BREAKDOWN: "[Market.GetBalanceDesc]"
  COUNTRY_MOBILIZATION_BREAKDOWN: "#header Mobilizační potenciál#!\n[Country.GetMobilizationBreakdownByState]"

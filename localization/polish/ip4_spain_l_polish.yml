@@ -25,8 +25,8 @@
  modifier_economic_regeneration_reward_lesser: "Komplexní ekonomická regenerace" # todo: NEW TRANSLATION
  je_spa_economic_regeneration_land_reform: "Regenerace: Pozemková reforma" # todo: NEW TRANSLATION
  je_spa_economic_regeneration_land_reform_reason: "Otázka pozemkové reformy je již dlouho na rtech [ROOT.GetCountry.GetAdjective] politiků; někteří usilují o prolomení moci velkých pozemkových elit na jihu, zatímco jiní se snaží tuto moc ještě upevnit.\n\nNastal čas, aby se vláda rozhodla a šla za svým kursu s neochvějným odhodláním." # todo: NEW TRANSLATION
- je_spa_economic_regeneration_land_reform_tt_1: "Pokud se rozhodneme postavit #b na stranu#! [SCOPE.gsInterestGroup('landowners_scope').GetName]:" # todo: NEW TRANSLATION
- je_spa_economic_regeneration_land_reform_tt_2: "Pokud se rozhodneme postavit #b proti#! [SCOPE.gsInterestGroup('landowners_scope').GetName]:" # todo: NEW TRANSLATION
+ je_spa_economic_regeneration_land_reform_tt_1: "Pokud se rozhodneme postavit #b na stranu#! [SCOPE.gsInterestGroup('landowners_scope').GetCustom('IG_G_TT')]:" # todo: NEW TRANSLATION # todo: NAME CASE
+ je_spa_economic_regeneration_land_reform_tt_2: "Pokud se rozhodneme postavit #b proti#! [SCOPE.gsInterestGroup('landowners_scope').GetCustom('IG_D_TT')]:" # todo: NEW TRANSLATION # todo: NAME CASE
  modifier_entrepreneurial_latifundistas: "Podnikaví Latifundistas" # todo: NEW TRANSLATION
  modifier_marginalized_latifundistas: "Marginalizovaní Latifundistas" # todo: NEW TRANSLATION
  je_spa_economic_regeneration_modernise_agriculture: "Regenerace: Zemědělství" # todo: NEW TRANSLATION
@@ -80,9 +80,9 @@
  spa_economic_regeneration_events.3.t: "Než se skřivan probudí" # todo: NEW TRANSLATION
  spa_economic_regeneration_events.3.d: "Rozsáhlé [ROOT.GetCountry.GetAdjective] investice do těžby přinesly ovoce a doly země jsou čileji vyhlášené než kdy dříve. Jedna mimořádně úspěšná společnost nyní oslovila vládu s návrhem na zlepšení těžební infrastruktury v jednom z našich hlavních těžařských distriktů." # todo: NEW TRANSLATION
  spa_economic_regeneration_events.3.f: "Dva ostré klepnutí na dveře přerušily horníkovu snídani. Ponechal ji příliš dlouho a foremanův chlapec obcházel vesnici. #italic Ten zatracený podliz#!. Políbil ženu na rozloučenou, hodil si přes rameno pytel a vykročil do chladného úsvitu. Ponurý průvod se vinul z dělnického městečka k jámě, ticho přerušovalo jen tupé klepání kovu o kov. Čekalo ho dvanáct hodin dřiny a tmy." # todo: NEW TRANSLATION
- spa_economic_regeneration_events.3.a: "Nasměrujte je na bohaté žíly [GetGoods('iron').GetName] v [SCOPE.sState('basque_country_scope').GetStateRegion.GetName]." # todo: NEW TRANSLATION
- spa_economic_regeneration_events.3.b: "Doly [GetGoods('sulfur').GetName] v [SCOPE.sState('lower_andalusia_scope').GetStateRegion.GetName] by mohly být rozšířeny." # todo: NEW TRANSLATION
- spa_economic_regeneration_events.3.c: "Starší doly na [GetGoods('lead').GetName] v [SCOPE.sState('murcia_scope').GetStateRegion.GetName] potřebují modernizaci." # todo: NEW TRANSLATION
+ spa_economic_regeneration_events.3.a: "Nasměrujte je na bohaté žíly [GetGoods('iron').GetCustom('GDS_G_TT')] v [SCOPE.sState('basque_country_scope').GetStateRegion.GetName]." # todo: NEW TRANSLATION # todo: NAME CASE
+ spa_economic_regeneration_events.3.b: "Doly [GetGoods('sulfur').GetCustom('GDS_G_TT')] v [SCOPE.sState('lower_andalusia_scope').GetStateRegion.GetName] by mohly být rozšířeny." # todo: NEW TRANSLATION # todo: NAME CASE
+ spa_economic_regeneration_events.3.c: "Starší doly na [GetGoods('lead').GetCustom('GDS_A_TT')] v [SCOPE.sState('murcia_scope').GetStateRegion.GetName] potřebují modernizaci." # todo: NEW TRANSLATION # todo: NAME CASE
  spa_economic_regeneration_events.3.e: "Co jiného než [GetGoods('coal').GetName], černé zlato [SCOPE.sState('asturias_scope').GetStateRegion.GetName]." # todo: NEW TRANSLATION
  spa_economic_regeneration_events.4.t: "Hacienda požaduje akci" # todo: NEW TRANSLATION
  spa_economic_regeneration_events.4.d: "S odkazem na ekonomický reformní program navržený před několika lety nyní ministr financí požaduje, abychom okamžitě zahájili jeho provádění, tvrdíce, že pokud vláda nebude jednat, [ROOT.GetCountry.GetName] skončí v prachu dějin." # todo: NEW TRANSLATION

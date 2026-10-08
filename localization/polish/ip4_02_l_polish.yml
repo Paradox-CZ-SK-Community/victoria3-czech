@@ -25,8 +25,8 @@
  modifier_economic_regeneration_reward_lesser: "Komplexní hospodářské oživení"
  je_spa_economic_regeneration_land_reform: "Oživení: Pozemková reforma"
  je_spa_economic_regeneration_land_reform_reason: "Otázka pozemkové reformy je již dlouho na rtech [ROOT.GetCountry.GetAdjective] politiků; někteří usilují o zlomení moci velkých pozemkových elit na jihu, zatímco jiní ji chtějí ještě více upevnit.\n\nNastal čas, aby se vláda rozhodla a s neochvějným odhodláním šla zvolenou cestou."
- je_spa_economic_regeneration_land_reform_tt_1: "Pokud se rozhodneme postavit #b na stranu#! [SCOPE.gsInterestGroup('landowners_scope').GetName]:"
- je_spa_economic_regeneration_land_reform_tt_2: "Pokud se rozhodneme postavit #b proti#! [SCOPE.gsInterestGroup('landowners_scope').GetName]:"
+ je_spa_economic_regeneration_land_reform_tt_1: "Pokud se rozhodneme postavit #b na stranu#! [SCOPE.gsInterestGroup('landowners_scope').GetCustom('IG_G_TT')]:" # todo: NAME CASE
+ je_spa_economic_regeneration_land_reform_tt_2: "Pokud se rozhodneme postavit #b proti#! [SCOPE.gsInterestGroup('landowners_scope').GetCustom('IG_D_TT')]:" # todo: NAME CASE
  modifier_entrepreneurial_latifundistas: "Podnikaví latifundisté"
  modifier_marginalized_latifundistas: "Marginalizovaní latifundisté"
  je_spa_economic_regeneration_modernise_agriculture: "Oživení: Zemědělství"
@@ -80,9 +80,9 @@
  spa_economic_regeneration_events.3.t: "Než se skřivan probudí"
  spa_economic_regeneration_events.3.d: "Rozsáhlé [ROOT.GetCountry.GetAdjective] investice do těžby přinesly ovoce a důlní jámy země kypí činností jako nikdy předtím. Obzvlášť úspěšná společnost nyní oslovila vládu s návrhem na zlepšení těžební infrastruktury jednoho z našich hlavních důlních okrsků."
  spa_economic_regeneration_events.3.f: "Dvě ostrá zaklepání na dveře přerušila horníkovu snídani. Zdržel se příliš dlouho a předákův poskok obcházel domy. #italic Ten zatracený patolízal#!. Políbil ženu na rozloučenou, přehodil si pytel přes záda a vykročil do chladu časného úsvitu. Ponurý průvod se vinul z podnikového městečka vzhůru k ústí šachty, mlčenlivý až na tlumené řinčení kovu o kov. Čekalo ho dvanáct hodin dřiny a tmy."
- spa_economic_regeneration_events.3.a: "Nasměrujte je k bohatým žilám [GetGoods('iron').GetName] v oblasti [SCOPE.sState('basque_country_scope').GetStateRegion.GetName]."
- spa_economic_regeneration_events.3.b: "Jámy na [GetGoods('sulfur').GetName] v oblasti [SCOPE.sState('lower_andalusia_scope').GetStateRegion.GetName] by se mohly rozšířit."
- spa_economic_regeneration_events.3.c: "Starší doly na [GetGoods('lead').GetName] v oblasti [SCOPE.sState('murcia_scope').GetStateRegion.GetName] potřebují modernizaci."
+ spa_economic_regeneration_events.3.a: "Nasměrujte je k bohatým žilám [GetGoods('iron').GetCustom('GDS_G_TT')] v oblasti [SCOPE.sState('basque_country_scope').GetStateRegion.GetName]." # todo: NAME CASE
+ spa_economic_regeneration_events.3.b: "Jámy na [GetGoods('sulfur').GetCustom('GDS_A_TT')] v oblasti [SCOPE.sState('lower_andalusia_scope').GetStateRegion.GetName] by se mohly rozšířit." # todo: NAME CASE
+ spa_economic_regeneration_events.3.c: "Starší doly na [GetGoods('lead').GetCustom('GDS_A_TT')] v oblasti [SCOPE.sState('murcia_scope').GetStateRegion.GetName] potřebují modernizaci." # todo: NAME CASE
  spa_economic_regeneration_events.3.e: "Co jiného než [GetGoods('coal').GetName], černé zlato oblasti [SCOPE.sState('asturias_scope').GetStateRegion.GetName]."
  spa_economic_regeneration_events.4.t: "Hacienda požaduje činy"
  spa_economic_regeneration_events.4.d: "Ministr financí se odvolává na program hospodářských reforem navržený před několika lety a nyní požaduje, abychom podnikli okamžité kroky k jeho zavedení. Tvrdí, že pokud bude vládní nečinnost pokračovat, [ROOT.GetCountry.GetName] skončí na smetišti dějin."

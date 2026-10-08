@@ -15,7 +15,7 @@
  pedro_je_royalists_more_common_tt: "[Concept('concept_interest_group','Zájmové skupiny')] budou mít větší sklon v budoucnu volit progresivní [Concept('concept_leader','vůdci')]"
  brz_regency: "Období regentství"
  pedro.1.t: "Císařovo regentství"
- pedro.1.d: "Triumvirátní regentství [SCOPE.gsInterestGroup('landowners_scope').GetName] a [SCOPE.gsInterestGroup('armed_forces_scope').GetName] bylo nedávno svrženo a nahrazeno demokraticky zvoleným regentstvím [SCOPE.sCharacter('feijo_regent').GetLastName]. Dokud [SCOPE.sCharacter('pedro_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('pedro_scope').GetFirstName] nedosáhne plnoletosti, Brazílii pravděpodobně pohltí politické nepokoje."
+ pedro.1.d: "Triumvirátní regentství [SCOPE.gsInterestGroup('landowners_scope').GetCustom('IG_G_TT')] a [SCOPE.gsInterestGroup('armed_forces_scope').GetCustom('IG_G_TT')] bylo nedávno svrženo a nahrazeno demokraticky zvoleným regentstvím [SCOPE.sCharacter('feijo_regent').GetLastName]. Dokud [SCOPE.sCharacter('pedro_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('pedro_scope').GetFirstName] nedosáhne plnoletosti, Brazílii pravděpodobně pohltí politické nepokoje." # todo: NAME CASE
  pedro.1.f: "Šachy, po více než tisíc let oslavované jako hra králů, zdůrazňují strategickou prozíravost. Dlouhodobé strategie vyžadují oběti, kalkulaci nákladů a bystrý úsudek. A jak jeden hráč zaváhá, druhý získává kontrolu nad šachovnicí.\n\nJenže šachovnicí této hry byl sám mladý císař. Kdo ví, jaké jizvy tyto intriky zanechají na chlapci?"
  pedro.1.a: "Copak se nikdy nepřestanou hádat?"
  pedro_regency_party_tt: "[SCOPE.sCharacter('feijo_regent').GetInterestGroup.GetName] pod vedením [SCOPE.sCharacter('feijo_regent').GetLastName] nebude ochoten vstoupit do politických [Concept('concept_party','stran')] dokud období regentství neskončí" # todo: CONCEPT CASE
@@ -25,7 +25,7 @@
  pedro.2.f2: "Ještě před chvílí ležely po stole senhora [SCOPE.sCharacter('landowner_leader').GetLastNameNoFormatting] rozházené účty a faktury. Imperiální daně byly jedna věc, dovoz a vývoz druhá a bezpečnost kávové plantáže třetí. Dohromady ničily celé panství. Císař nepodal pomocnou ruku, pouze bral. [SCOPE.sCharacter('landowner_leader').GetFirstNameNoFormatting] si byl jistý, že není jediný, kdo se pod tíhou zákonů hroutí.\n\nNyní, s rumem v jedné ruce a perem v druhé, psal svým sousedům. Možná i ostatní plantážníci cítili, že je třeba změny."
  pedro.2.a: "Znepokojivý vývoj."
  pedro.3.t: "Předčasná korunovace"
- pedro.3.d: "Regentství [SCOPE.gsInterestGroup('coronation_ig').GetName] se ve snaze získat politický kapitál rozhodlo korunovat [SCOPE.sCharacter('pedro_scope').GetFullName] jako [SCOPE.sCharacter('pedro_scope').GetPrimaryRoleTitle] [ROOT.GetCountry.GetName] výrazně dříve, než bylo plánováno."
+ pedro.3.d: "Regentství [SCOPE.gsInterestGroup('coronation_ig').GetCustom('IG_G_TT')] se ve snaze získat politický kapitál rozhodlo korunovat [SCOPE.sCharacter('pedro_scope').GetFullName] jako [SCOPE.sCharacter('pedro_scope').GetPrimaryRoleTitle] [ROOT.GetCountry.GetName] výrazně dříve, než bylo plánováno." # todo: NAME CASE
  pedro.3.f: "„I vlk bude přebývat s beránkem,\nlevhart bude odpočívat s kůzletem,\ntelete, lvíče i žírné dobytče budou spolu;\na malé dítě je povede.“ # Bible"
  pedro.3.a: "Tak začíná jeho vláda."
  pedro.4.t: "Zhoršující se zdraví císaře"
@@ -41,7 +41,7 @@
  brz_new_monarch_popular: "Populární monarcha"
  brz_new_monarch_popular_ig: "$brz_new_monarch_popular$"
  pedro.6.t: "Mocný nepřítel"
- pedro.6.d: "Rostoucí nevraživost [SCOPE.gsInterestGroup('powerful_ig_scope').GetName] je stále obtížnější přehlížet. Tyto mocné elity mají v [ROOT.GetCountry.GetAltAdjective('L')] značný vliv a jejich vyloučení z vlády je dále obrací proti [SCOPE.sCharacter('pedro_scope').GetFirstName]ovu [GetLawType('law_monarchy').GetName]." # todo: CONCEPT CASE
+ pedro.6.d: "Rostoucí nevraživost [SCOPE.gsInterestGroup('powerful_ig_scope').GetCustom('IG_G_TT')] je stále obtížnější přehlížet. Tyto mocné elity mají v [ROOT.GetCountry.GetAltAdjective('L')] značný vliv a jejich vyloučení z vlády je dále obrací proti [SCOPE.sCharacter('pedro_scope').GetFirstName]ovu [GetLawType('law_monarchy').GetName]." # todo: CONCEPT CASE # todo: NAME CASE
  pedro.6.f: "Generálové nosí okázalé uniformy a námořní důstojníci se chlubí přepychovými dary přesahujícími jejich postavení. Řadoví vojáci hovoří o civilních ministrech tak pochvalně, že by člověk mohl zpochybnit jejich skutečnou loajalitu. Mezitím titíž ministři začínají překračovat své pravomoci. Pokud jsou ozbrojené síly dostatečně vycvičené na to, aby se dívaly jinam, kdo jim zabrání vzít si, co požadují?"
  pedro.6.f2: "„Synu, pojď. Dospíváš a jednoho dne budu příliš starý na to, abych spravoval toto panství. Podívej se z tohoto balkonu a vnímej, co vidíš. To vše je tvoje. Dělníci na polích jsou tvoji. Káva na tomto poli i krávy na tom dalším jsou také tvoje. Město, jeho lidé i samotné lesy jsou tvoje. A slyším, že se ti na univerzitě daří. To ministerské křeslo, po kterém pokukuješ – pokud na něm budeš tvrdě pracovat – bude také tvoje. A jednou bude patřit i tvému synovi.“"
  pedro.6.a: "To vyžaduje pečlivou pozornost."
@@ -50,7 +50,7 @@
  pedro.7.f: "Staré příběhy tvrdily, že nebesa pláčou, když zemře velký muž. Když zemřel Dom Pedro z Braganzy, téměř nepřetržitě pršelo. Desítky tisíc lidí lemovaly jeho pohřební průvod, oděné v černém a s brazilskými vlajkami. Hodnostáři až z Japonska byli svědky této události a každý z nich vzdal svou poctu.\n\nTěžká koruna, která tížila jeho otce, nyní doléhá na [SCOPE.sCharacter('new_brz_monarch_scope').GetHerHis]. [SCOPE.sCharacter('new_brz_monarch_scope').GetFirstNameNoFormatting] čeká téměř nemožný úkol: vyrovnat se odkazu velkorysého Dom Pedra II."
  pedro.7.a: "Císař je mrtev. Ať žije [SCOPE.sCharacter('new_brz_monarch_scope').GetPrimaryRoleTitle]."
  pedro.8.t: "Vyhlášení republiky"
- pedro.8.d: "Při nekrvavém převratu [SCOPE.gsInterestGroup('armed_forces_ig').GetName] a [SCOPE.gsInterestGroup('landowners_ig').GetName] svrhly [GetLawType('law_monarchy').GetName] [SCOPE.sCharacter('pedro_scope').GetFullName] a vyhlásily [GetLawType('law_presidential_republic').GetName]. Ačkoli si mnozí přáli bojovat za obranu vlády i [SCOPE.sCharacter('pedro_scope').GetPrimaryRoleTitle], bývalý monarcha vyzval k míru a abdikoval."
+ pedro.8.d: "Při nekrvavém převratu [SCOPE.gsInterestGroup('armed_forces_ig').GetCustom('IG_G_TT')] a [SCOPE.gsInterestGroup('landowners_ig').GetCustom('IG_G_TT')] svrhly [GetLawType('law_monarchy').GetName] [SCOPE.sCharacter('pedro_scope').GetFullName] a vyhlásily [GetLawType('law_presidential_republic').GetName]. Ačkoli si mnozí přáli bojovat za obranu vlády i [SCOPE.sCharacter('pedro_scope').GetPrimaryRoleTitle], bývalý monarcha vyzval k míru a abdikoval." # todo: NAME CASE
  pedro.8.f: "„Takže takhle to končí?“\n\n„Ano, Pedro. Ty i tvoje rodina už nejste u moci. Bude republika. Nové vedení chce, abyste byli... přesunuti do Evropy, zatímco upevní svou moc.“\n\n„Dobrá. Pokud je tomu tak, bude to můj odchod do důchodu. Pracoval jsem příliš dlouho a jsem unavený. Půjdu si tedy odpočinout.“"
  pedro.8.a: "Miluji republiku."
  je_pedro_republic: "Republikánský návrh"
@@ -111,7 +111,7 @@
  bp1_misc.1.b: "Uspořádat skutečně velkolepý festival."
  carnaval_celebrations: "Karnevalové oslavy"
  bp1_misc.2.t: "Střední pražení"
- bp1_misc.2.d: "Klesající cena [SCOPE.sGoods('coffee_scope').GetName] přiměla [SCOPE.gsInterestGroup('plantation_owners').GetName] v [SCOPE.sState('coffee_state').GetName] [SCOPE.sBuilding('coffee_building').GetName] k prosazování radikálních opatření. Hodlají spálit přebytečné zásoby, aby zvýšili ceny."
+ bp1_misc.2.d: "Klesající cena [SCOPE.sGoods('coffee_scope').GetCustom('GDS_G_TT')] přiměla [SCOPE.gsInterestGroup('plantation_owners').GetCustom('IG_A_TT')] v [SCOPE.sState('coffee_state').GetName] [SCOPE.sBuilding('coffee_building').GetName] k prosazování radikálních opatření. Hodlají spálit přebytečné zásoby, aby zvýšili ceny." # todo: NAME CASE
  bp1_misc.2.f: "Účetní knihy byly dvě věci: stále znepokojivější a stále jasnější. Zisky nejen klesaly, ale do konce roku by nezbyly žádné. Pěstování kávy by se brzy stalo jen výstředním koníčkem bohatých.\n\nNebo, jak zjistil při pohledu do krbu, barbarským řešením složitého problému. Espresso vytvořené přímo pro farmáře i konzumenty."
  bp1_misc.2.a: "Spalte to!"
  bp1_misc.2.b: "Kávu bychom mohli využít jako palivo."
@@ -129,13 +129,13 @@
  brazil_navy.1.f: "„Můj [SCOPE.sCharacter('ruler_scope').GetPrimaryRoleTitle], dovolte mi vyzvat vás, abyste zvažoval více než jen vnitřní záležitosti. Pozemní armády vyhrávají bitvy, to ano, ale jsou to vaše lodě, které vám vyhrávají říše. Úspěch Británie stál právě na takové mocné flotile. A takovou flotilu rozhodně nenajdete mezi troskami ubohých lodí našeho otce. Vždyť sotva poslouží i jako palivo! A vaši kapitáni si zaslouží lepší lodě než hnijící vraky.“"
  brazil_navy.1.a: "Námořnictvo chrání naše bohatství a stará se o náš lid."
  brazil_navy.2.t: "Sporné vody"
- brazil_navy.2.d: "V ostré kritice vlády [SCOPE.sCharacter('admiral_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('admiral_scope').GetLastName] veřejně vyjádřil zklamání admirality nad tím, že naše námořnictvo zastínily tak nedůstojné mocnosti jako [SCOPE.sCountry('naval_rival').GetName]. Pro naši [SCOPE.gsInterestGroup('navy_scope').GetName] je to národní ponížení."
+ brazil_navy.2.d: "V ostré kritice vlády [SCOPE.sCharacter('admiral_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('admiral_scope').GetLastName] veřejně vyjádřil zklamání admirality nad tím, že naše námořnictvo zastínily tak nedůstojné mocnosti jako [SCOPE.sCountry('naval_rival').GetName]. Pro naši [SCOPE.gsInterestGroup('navy_scope').GetCustom('IG_A_TT')] je to národní ponížení." # todo: NAME CASE
  brazil_navy.2.f: "„To je skandál, pane, skandál! Ti nafoukaní [SCOPE.sCountry('naval_rival').GetAdjectiveNoFormatting] hlupáci si dovolují zesměšňovat Brazílii a ponižovat vaše muže. Naše [ROOT.GetCountry.GetGovernment.GetName] je přece hodna respektu, [SCOPE.sCharacter('ruler_scope').GetCustom('get_dom_dona')] [SCOPE.sCharacter('ruler_scope').GetFirstNameNoFormatting]! Vezměte jim to zpět!“"
  brazil_navy.2.a: "Musíme se zlepšit."
  brz_navy_advocate: "Hlas námořnictva"
  brz_eclipsed_navy: "Zastíněné námořnictvo"
  brazil_navy.3.t: "Plnou rychlost vpřed"
- brazil_navy.3.d: "[SCOPE.sCharacter('admiral_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('admiral_scope').GetLastName] se dostavil před vládu, aby oznámil, že [ROOT.GetCountry.GetAdjective] námořnictvo je dostatečně velké a moderní, aby se mohlo řadit mezi největší na světě. To se stalo zdrojem hrdosti pro naši [SCOPE.gsInterestGroup('navy_scope').GetName]."
+ brazil_navy.3.d: "[SCOPE.sCharacter('admiral_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('admiral_scope').GetLastName] se dostavil před vládu, aby oznámil, že [ROOT.GetCountry.GetAdjective] námořnictvo je dostatečně velké a moderní, aby se mohlo řadit mezi největší na světě. To se stalo zdrojem hrdosti pro naši [SCOPE.gsInterestGroup('navy_scope').GetCustom('IG_A_TT')]." # todo: NAME CASE
  brazil_navy.3.f: "„Tato loď, tato parní fregata, admirále... to, co říkáte, je pravda?“\n\n„Samozřejmě. Už jen díky svým schopnostem je ideální volbou pro vaše námořnictvo. Eskadra takových lodí a troufám si říci, že bych porazil jakoukoli flotilu na otevřeném moři.“\n\n„Ach. Vidím pro tyto lodě budoucnost. Vraťte se do Liverpoolu. Chci druhou.“"
  brazil_navy.3.a: "Rád to slyším."
  brz_strong_navy: "Silné námořnictvo"
@@ -164,7 +164,7 @@
  je_caudillo_progress_from_authoritarian_ruler: "[GetIdeology('ideology_authoritarian').GetName] [Concept('concept_ruler','vládce')]"
  je_caudillo_progress_from_democracy: "[GetLawType('law_census_voting').GetName] nebo [GetLawType('law_universal_suffrage').GetName] [Concept('concept_law','zákony')]"
  caudillo.1.t: "Věk caudillů"
- caudillo.1.d: "Po získání nezávislosti [ROOT.GetCountry.GetAdjective] na Španělsku vzniklo po koloniální vládě mocenské vakuum, které bylo rychle zaplněno charismatickými vůdci [SCOPE.gsInterestGroup('army_scope').GetName]. Tito „caudillové“ začali určovat velkou část politiky v Jižní Americe."
+ caudillo.1.d: "Po získání nezávislosti [ROOT.GetCountry.GetAdjective] na Španělsku vzniklo po koloniální vládě mocenské vakuum, které bylo rychle zaplněno charismatickými vůdci [SCOPE.gsInterestGroup('army_scope').GetCustom('IG_G_TT')]. Tito „caudillové“ začali určovat velkou část politiky v Jižní Americe." # todo: NAME CASE
  caudillo.1.f: "Kdysi existoval dekret, že všechny kolonie se podřídí vládě své mateřské země. Že veškeré jejich zboží i slova projdou jejími branami a ona je spravedlivě posoudí. Že ona jediná bude vším, co potřebují.\n\nPak přišel Bonaparte a mateřská země se stala jeho loutkou. Možná nadešel čas, aby děti vzlétly. A vzlétnou – pod železnou pěstí otce. Tento příběh však ještě neskončil."
  caudillo.1.a: "Síla dělá právo."
  caudillo.2.t: "Poslední caudillové"
@@ -172,7 +172,7 @@
  caudillo.2.f: "A tak se otec stal, jako všichni lidé, příliš starým a unaveným, aby pokračoval. Nyní, drahé dítě, je země připravena udělat své první skutečné kroky vpřed. Žijeme bez dohledu matky a bez otcova biče. Dnes si každý volí svou cestu. A tví vnuci se na nás podívají a řeknou: „a žili šťastně až do smrti.“"
  caudillo.2.a: "Velký den pro řád a disciplínu."
  caudillo.3.t: "Pěst se svírá"
- caudillo.3.d: "[ROOT.GetCountry.GetName] se plně ponořila do politiky caudillů. Osud národa je řízen rozmary nejvlivnějších členů [SCOPE.gsInterestGroup('army_scope').GetName]."
+ caudillo.3.d: "[ROOT.GetCountry.GetName] se plně ponořila do politiky caudillů. Osud národa je řízen rozmary nejvlivnějších členů [SCOPE.gsInterestGroup('army_scope').GetCustom('IG_G_TT')]." # todo: NAME CASE
  caudillo.3.f: "„Ale mami, co ta přehlídka v [SCOPE.sState('capital_scope').GetNameNoFormatting]? Stihneme tam být včas, abychom viděli Alfonse?\n\n„Zdá se, že ten příběh nikdy nedokončím. Dobře, ano, slibuji, že tam budeme včas. Ale co budeš dělat, když nebudeš moct pochodovat se svým bratrem, až vyrosteš? Dojit krávy?“\n\n„Mami, já vím, že mě [SCOPE.sCharacter('general_scope').GetLastNameNoFormatting] přijme. Budu silný pro [ROOT.GetCountry.GetAltAdjectiveNoFormatting('A')]!“" # todo: CONCEPT CASE
  caudillo.3.a: "Meč je mocnější než pero."
  caudillo_complete: "Ukazatel postupu je vyčerpán"
@@ -192,12 +192,12 @@
  retire_ruler: "[SCOPE.sCharacter('ruler_scope').GetFullName] odchází z politického života"
  caudillo_kingmaker_tt: "Nepodpořil žádnou [Concept('concept_party','stranu')]" # todo: CONCEPT CASE
  caudillo_kingmaker_effect_tt: "[Concept('concept_leader','Vůdce')] [GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant] rozhodne, kterou [Concept('concept_party','stranu')] podpoří" # todo: CONCEPT CASE
- armed_forces_support_conservative: "[SCOPE.gsInterestGroup('army_scope').GetName] podpoří [SCOPE.sParty('conservative_party').GetName] pod vedením [SCOPE.sCharacter('army_leader').GetFullName]"
- armed_forces_support_liberal: "[SCOPE.gsInterestGroup('army_scope').GetName] podpoří [SCOPE.sParty('liberal_party').GetName] pod vedením [SCOPE.sCharacter('army_leader').GetFullName]"
- armed_forces_support_communist: "[SCOPE.gsInterestGroup('army_scope').GetName] podpoří [SCOPE.sParty('communist_party').GetName] pod vedením [SCOPE.sCharacter('army_leader').GetFullName]"
- armed_forces_support_fascist: "[SCOPE.gsInterestGroup('army_scope').GetName] podpoří [SCOPE.sParty('fascist_party').GetName] pod vedením [SCOPE.sCharacter('army_leader').GetFullName]"
+ armed_forces_support_conservative: "[SCOPE.gsInterestGroup('army_scope').GetName] podpoří [SCOPE.sParty('conservative_party').GetCustom('PARTY_A_TT')] pod vedením [SCOPE.sCharacter('army_leader').GetFullName]" # todo: NAME CASE
+ armed_forces_support_liberal: "[SCOPE.gsInterestGroup('army_scope').GetName] podpoří [SCOPE.sParty('liberal_party').GetCustom('PARTY_A_TT')] pod vedením [SCOPE.sCharacter('army_leader').GetFullName]" # todo: NAME CASE
+ armed_forces_support_communist: "[SCOPE.gsInterestGroup('army_scope').GetName] podpoří [SCOPE.sParty('communist_party').GetCustom('PARTY_A_TT')] pod vedením [SCOPE.sCharacter('army_leader').GetFullName]" # todo: NAME CASE
+ armed_forces_support_fascist: "[SCOPE.gsInterestGroup('army_scope').GetName] podpoří [SCOPE.sParty('fascist_party').GetCustom('PARTY_A_TT')] pod vedením [SCOPE.sCharacter('army_leader').GetFullName]" # todo: NAME CASE
  caudillo.5.t: "Tvůrce králů"
- caudillo.5.desc: "Jako vůdce [SCOPE.gsInterestGroup('army_scope').GetName] musí [SCOPE.sCharacter('army_leader').GetFullName] rozhodnout, zda armáda podpoří [SCOPE.sParty('liberal_party').GetName], nebo [SCOPE.sParty('conservative_party').GetName]."
+ caudillo.5.desc: "Jako vůdce [SCOPE.gsInterestGroup('army_scope').GetCustom('IG_G_TT')] musí [SCOPE.sCharacter('army_leader').GetFullName] rozhodnout, zda armáda podpoří [SCOPE.sParty('liberal_party').GetCustom('PARTY_A_TT')], nebo [SCOPE.sParty('conservative_party').GetCustom('PARTY_A_TT')]." # todo: NAME CASE
  caudillo.5.f: "Žadatelé. To bylo slovo, které [SCOPE.sCharacter('army_leader').GetLastNameNoFormatting] napadlo, když se na něj obraceli zástupci. Lichotky, dary, odvolávání se na rodinu, skryté hrozby – vše tak sehrané jako přehlídky jednotek, které vedl. Otázka však zněla: co poslouží nejlépe jemu?"
  caudillo.5.a: "Armáda chrání zájmy elit."
  caudillo.5.b: "Reformy přijdou z hlavně pušky."

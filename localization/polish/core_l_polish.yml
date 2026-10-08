@@ -39,14 +39,14 @@
  HOVER_STATE_LOYALISTS: "[STATE.GetNumLoyalists] [Concept('concept_loyalist','loajalistů')] v [STATE.GetName]" # todo: CONCEPT CASE
  HOVER_STATE_RADICALS: "[STATE.GetNumRadicals] [Concept('concept_radical','radikálů')] v [STATE.GetName]" # todo: CONCEPT CASE
  INTEREST_GROUP_STATE_TOOLTIP: "#variable [INTEREST_GROUP.GetName]#! v #variable [STATE.GetName]#!\n[Concept('concept_political_strength','Politická síla')]: #variable [INTEREST_GROUP.GetPoliticalStrengthInState(STATE.Self)|D]#!\n$TOOLTIP_DELIMITER$\n[Concept('concept_pop','Populace')]: #variable [INTEREST_GROUP.GetPopulationInState(STATE.Self)|D]#!"
- INTEREST_GROUP_WILL_JOIN_PARTY: "Připojí se k [PARTY.GetNameNoFormatting] v příštích [Concept('concept_election','volbách')]"
- INTEREST_GROUP_WILL_JOIN_PARTY_TOOLTIP: "[InterestGroup.GetName] se rozhodli, že se připojí k [PARTY.GetName] na začátku příští [Concept('concept_election','volební')] kampaně ([GetPlayer.GetNextStartOfCampaignDate|v])"
- INTEREST_GROUP_WILL_LEAVE_PARTY: "Opustí [PARTY.GetNameNoFormatting] při příštích [Concept('concept_election','volbách')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- INTEREST_GROUP_WILL_LEAVE_PARTY_TOOLTIP: "[InterestGroup.GetName] se rozhodli, že opustí [PARTY.GetName] na začátku příští kampaně [Concept('concept_election','volby')] ([GetPlayer.GetNextStartOfCampaignDate|v])" # todo: NEW TRANSLATION
+ INTEREST_GROUP_WILL_JOIN_PARTY: "Připojí se k [PARTY.GetCustom('PARTY_D')] v příštích [Concept('concept_election','volbách')]" # todo: NAME CASE
+ INTEREST_GROUP_WILL_JOIN_PARTY_TOOLTIP: "[InterestGroup.GetName] se rozhodli, že se připojí k [PARTY.GetCustom('PARTY_D_TT')] na začátku příští [Concept('concept_election','volební')] kampaně ([GetPlayer.GetNextStartOfCampaignDate|v])" # todo: NAME CASE
+ INTEREST_GROUP_WILL_LEAVE_PARTY: "Opustí [PARTY.GetCustom('PARTY_A')] při příštích [Concept('concept_election','volbách')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE # todo: NAME CASE
+ INTEREST_GROUP_WILL_LEAVE_PARTY_TOOLTIP: "[InterestGroup.GetName] se rozhodli, že opustí [PARTY.GetCustom('PARTY_A_TT')] na začátku příští kampaně [Concept('concept_election','volby')] ([GetPlayer.GetNextStartOfCampaignDate|v])" # todo: NEW TRANSLATION # todo: NAME CASE
  AFFILIATION: "Afiliace"
  INTEREST_GROUP_AFFILIATION_TOOLTIP: "#HEADER Aktuální stranická afiliace#!\n[PARTY.GetName] [Party.GetMembersSummary]\n$TOOLTIP_DELIMITER$\n$AFFILIATION_DETAILS$"
  INTEREST_GROUP_AFFILIATION_TOOLTIP_NONE: "#HEADER Není spojena se žádnou [Concept('concept_party','stranou')]#!\n$TOOLTIP_DELIMITER$\n$AFFILIATION_DETAILS$"
- INTEREST_GROUP_AFFILIATION_TOOLTIP_LIST: "#tooltippable #tooltip:[Party.GetTooltipTag]|[InterestGroup.GetTooltipTag],INTEREST_GROUP_AFFILIATION_BREAKDOWN $AFFILIATION_VALUE|+=0$#!#! s [Party.GetName] [Party.GetMembersSummary]"
+ INTEREST_GROUP_AFFILIATION_TOOLTIP_LIST: "#tooltippable #tooltip:[Party.GetTooltipTag]|[InterestGroup.GetTooltipTag],INTEREST_GROUP_AFFILIATION_BREAKDOWN $AFFILIATION_VALUE|+=0$#!#! s [Party.GetCustom('PARTY_I_TT')] [Party.GetMembersSummary]" # todo: NAME CASE
  INTEREST_GROUP_AFFILIATION_BREAKDOWN: "[InterestGroup.GetAffiliationBreakdownForParty(Party.Self)]"
  CULTURE_STATE_TOOLTIP: "Lidé [CULTURE.GetName] kultury ve státě #variable [STATE.GetName]#!\nPopulace: #variable [STATE.GetPopulationForCulture(CULTURE.Self)|*1]#!"
  RELIGION_STATE_TOOLTIP: "Lidé [RELIGION.GetName] v #variable [STATE.GetName]#!\nPopulace: #variable [STATE.GetPopulationForReligion(RELIGION.Self)|*1]#!"

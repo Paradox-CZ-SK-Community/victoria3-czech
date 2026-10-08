@@ -111,13 +111,13 @@
  dynasty_bonaparte: "Bonaparte"
  dynasty_generic_royalist: "Pravý nárokovatel"
  french_pretenders_pulse.1.t: "Svět [SCOPE.sCharacter('french_royalist_writer').GetIdeology.GetNameNoFormatting]"
- french_pretenders_pulse.1.d: "[SCOPE.sCharacter('french_royalist_writer').GetFullName], výmluvný vůdce [SCOPE.gsInterestGroup('french_royalist_writer_ig').GetName], sepsal působivý traktát popisující politický program [SCOPE.GetRootScope.GetCountry.GetCustom('french_dynasty')]."
+ french_pretenders_pulse.1.d: "[SCOPE.sCharacter('french_royalist_writer').GetFullName], výmluvný vůdce [SCOPE.gsInterestGroup('french_royalist_writer_ig').GetCustom('IG_G_TT')], sepsal působivý traktát popisující politický program [SCOPE.GetRootScope.GetCountry.GetCustom('french_dynasty')]." # todo: NAME CASE
  french_pretenders_pulse.1.f: "„Přátelé! Musíme snít o lepším zítřku pro celou Francii. Co je současný režim než krutá karikatura francouzských dějin, všeho, za co kdy bojovala a čeho kdy dosáhla? Abychom národ obnovili a posunuli vpřed, musíme vytvořit novou společnost, která si vezme to nejlepší z naší historie a tradic a vytvoří řád, jenž obstojí v náporu modernity!“"
  french_pretenders_pulse.1.a: "Vytvořme nové zítřky s rodem [SCOPE.GetRootScope.GetCountry.GetCustom('french_dynasty')]!"
  french_pretenders_pulse.1.b: "Celý národ musí slyšet, co dynastie [SCOPE.GetRootScope.GetCountry.GetCustom('french_dynasty')] plánuje do budoucna!"
  french_pretenders_pulse.1.c: "[SCOPE.sCharacter('french_royalist_writer').GetLastName] a [SCOPE.gsInterestGroup('french_royalist_writer_ig').GetName] si za tuto práci zaslouží uznání!"
  french_pretenders_pulse.2.t: "Věrnost a křivopřísežnictví"
- french_pretenders_pulse.2.d: "Monarchisté mezi [SCOPE.gsInterestGroup('royalist_hardliners').GetName] odmítají složit přísahu věrnosti současné vládě. Ač ideologicky čistí, může to podkopat jejich snahu budovat politický kapitál v zemi."
+ french_pretenders_pulse.2.d: "Monarchisté mezi [SCOPE.gsInterestGroup('royalist_hardliners').GetCustom('IG_I_TT')] odmítají složit přísahu věrnosti současné vládě. Ač ideologicky čistí, může to podkopat jejich snahu budovat politický kapitál v zemi." # todo: NAME CASE
  french_pretenders_pulse.2.f: "„Jak mohu přísahat věrnost nějakému samozvanému režimu? Udělat to by znamenalo zradit korunu a přiznat této zvrácené karikatuře Francie legitimitu, kterou si nezaslouží. Ne, říkám! Nikdy tomuto bastardskému režimu sloužit nebudu.“"
  french_pretenders_pulse.2.a: "[SCOPE.gsInterestGroup('royalist_hardliners').GetName] prokazují obdivuhodnou oddanost svým ideálům."
  french_pretenders_pulse.2.b: "Realistický kompromis pomůže věci, ale rozhněvá radikály."
@@ -134,10 +134,10 @@
  french_pretenders_pulse.3.c: "Taková nepřirozená spolupráce nemůže dlouho vydržet."
  french_pretenders_pulse.4.t: "Republikánská apostaze"
  french_pretenders_pulse.4.d: "[SCOPE.gsInterestGroup('monarchist_french_ig').GetName] a [SCOPE.gsInterestGroup('republican_french_ig').GetName] si během společného působení v opozici vytvořily překvapivě blízký vztah. Po [SCOPE.sCharacter('monarchist_french_ig_leader').GetIdeology.GetNameNoFormatting] restauraci oznámil [SCOPE.sCharacter('republican_french_ig_leader').GetFullName] svůj přechod k monarchistické věci svých bývalých spojenců."
- french_pretenders_pulse.4.f: "„Obdivoval jsem odhodlání a houževnatost [SCOPE.gsInterestGroup('monarchist_french_ig').GetNameNoFormatting], když byli pronásledováni úřady, a rád vzpomínám na spolupráci s [SCOPE.sCharacter('monarchist_french_ig_leader').GetFullNameNoFormatting], výjimečnou a schopnou osobností. Je zřejmé, že jejich věc je i mou věcí, a vyzývám své krajany, aby následovali můj příklad.“"
- french_pretenders_pulse.4.a: "Tento „damašský obrat“ [SCOPE.gsInterestGroup('republican_french_ig').GetName] vítáme!"
+ french_pretenders_pulse.4.f: "„Obdivoval jsem odhodlání a houževnatost [SCOPE.gsInterestGroup('monarchist_french_ig').GetCustom('IG_G')], když byli pronásledováni úřady, a rád vzpomínám na spolupráci s [SCOPE.sCharacter('monarchist_french_ig_leader').GetFullNameNoFormatting], výjimečnou a schopnou osobností. Je zřejmé, že jejich věc je i mou věcí, a vyzývám své krajany, aby následovali můj příklad.“" # todo: NAME CASE
+ french_pretenders_pulse.4.a: "Tento „damašský obrat“ [SCOPE.gsInterestGroup('republican_french_ig').GetCustom('IG_G_TT')] vítáme!" # todo: NAME CASE
  french_pretenders_pulse.4.b: "Jednou republikán, navždy republikán — odmítněte [SCOPE.sCharacter('republican_french_ig_leader').GetHerHim]."
- french_pretenders_pulse.4.b.tt: "[SCOPE.sCharacter('republican_french_ig_leader').GetFullName] po tomto ponížení opustí [SCOPE.gsInterestGroup('republican_french_ig').GetName]."
+ french_pretenders_pulse.4.b.tt: "[SCOPE.sCharacter('republican_french_ig_leader').GetFullName] po tomto ponížení opustí [SCOPE.gsInterestGroup('republican_french_ig').GetCustom('IG_A_TT')]." # todo: NAME CASE
  french_pretenders_pulse.5.t: "Věčný rod [SCOPE.GetRootScope.GetCountry.GetCustom('french_dynasty')]"
  french_pretenders_pulse.5.d: "Dynastie [SCOPE.GetRootScope.GetCountry.GetCustom('french_dynasty')] upevnila svou moc nad francouzskou korunou natolik, že žádní jiní uchazeči již nepředstavují vážnou výzvu jejím monarchistickým nárokům."
  french_pretenders_pulse.5.f: "„Přátelé! Má náš velký panovník [SCOPE.sCharacter('monarch_of_france').GetFullNameNoFormatting] sobě rovného? Ne, říkám! [SCOPE.sCharacter('monarch_of_france').GetSheHe|U] je středem vesmíru, jediným skutečným pilířem řádu a národa. Rod [SCOPE.GetRootScope.GetCountry.GetCustom('french_dynasty')] nemá sobě rovného!“"
@@ -188,10 +188,10 @@
  indochinese_union_glory: "Sláva Indočínské unie"
  you_will_regret_this: "#color:Red;bold Pronásledování může vyvolat reakci zahraničních katolických mocností.#!"
  revolution_pulse1_events.1.t: "Seznamy členů odhaleny"
- revolution_pulse1_events.1.d: "Překvapivá policejní razie odhalila seznam radikálů spojených s [SCOPE.gsInterestGroup('membership_list_ig').GetName]. Existuje několik způsobů, jak lze tento seznam využít ve prospěch vlády."
+ revolution_pulse1_events.1.d: "Překvapivá policejní razie odhalila seznam radikálů spojených s [SCOPE.gsInterestGroup('membership_list_ig').GetCustom('IG_I_TT')]. Existuje několik způsobů, jak lze tento seznam využít ve prospěch vlády." # todo: NAME CASE
  revolution_pulse1_events.1.f: "„Přišli na nás příliš rychle! Neměli jsme čas všechno schovat!“\n\n„Díky tomu teď potřebujeme čas schovat #italic všechny#!!“"
  revolution_pulse1_events.1.a: "Vypátrejte každého člena na seznamu."
- revolution_pulse1_events.1.b: "Veřejně odhalte vazby mezi [SCOPE.gsInterestGroup('membership_list_ig').GetName] a radikály."
+ revolution_pulse1_events.1.b: "Veřejně odhalte vazby mezi [SCOPE.gsInterestGroup('membership_list_ig').GetCustom('IG_I_TT')] a radikály." # todo: NAME CASE
  revolution_pulse1_events.1.c: "Na tomto seznamu potřebujeme jen jedno jméno: [SCOPE.sCharacter('membership_list_agitator').GetFullName]."
  revolution_pulse1_events.2.t: "Hněv na frontě"
  revolution_pulse1_events.2.d: "Rostoucí ztráty na frontě vedly k šíření řečí o vzpouře mezi vojáky. Pokud se brzy nezakročí, situace se může stát kritickou."
@@ -200,7 +200,7 @@
  revolution_pulse1_events.2.b: "Nemůžeme si dovolit zadržovat vojáky."
  revolution_pulse1_events.2.c: "Musíme zastavit a nechat muže odpočinout."
  revolution_pulse1_events.3.t: "Stíhání vydavatelského výboru"
- revolution_pulse1_events.3.d: "Výbor vydavatelů spojený s [SCOPE.gsInterestGroup('publishing_committee_ig').GetName], který produkuje pobuřující pamflety, byl postaven před soud."
+ revolution_pulse1_events.3.d: "Výbor vydavatelů spojený s [SCOPE.gsInterestGroup('publishing_committee_ig').GetCustom('IG_I_TT')], který produkuje pobuřující pamflety, byl postaven před soud." # todo: NAME CASE
  revolution_pulse1_events.3.f: "„Tato skupina nebezpečných mužů musí být zastavena! Musíme jim odebrat prostředky k podněcování davu a srazit tyto arogantní hlupáky na jejich skutečnou úroveň — na pouhé bezvýznamné spiklence a zločince!“"
  revolution_pulse1_events.3.a: "Tlačte na jejich soudní proces."
  revolution_pulse1_events.3.b: "Potichu tyto vydavatele umlčte."
@@ -222,7 +222,7 @@
  revolution_pulse1_events.6.a: "Ve válce nalezneme mír."
  revolution_pulse1_events.6.b: "Není důvod posilovat oponenty prázdnými sliby."
  revolution_pulse1_events.7.t: "Kolísající revolucionář"
- revolution_pulse1_events.7.d: "[SCOPE.sCharacter('guglielmo_pepe').GetPrimaryRoleTitle] [SCOPE.sCharacter('guglielmo_pepe').GetLastName], spojenec revoluční [SCOPE.gsInterestGroup('guglielmo_pepe_ig').GetName], má podle všeho pochybnosti o svém přesvědčení. Tuto nerozhodnost lze možná využít ve prospěch vlády."
+ revolution_pulse1_events.7.d: "[SCOPE.sCharacter('guglielmo_pepe').GetPrimaryRoleTitle] [SCOPE.sCharacter('guglielmo_pepe').GetLastName], spojenec revoluční [SCOPE.gsInterestGroup('guglielmo_pepe_ig').GetCustom('IG_G_TT')], má podle všeho pochybnosti o svém přesvědčení. Tuto nerozhodnost lze možná využít ve prospěch vlády." # todo: NAME CASE
  revolution_pulse1_events.7.f: "„Přátelé! Není to tak, že bych nechtěl povstání... jen mám obavy, víte. Já... ehm... jsem v dobré pozici, jen... co mám dělat? Co mám dělat?“"
  revolution_pulse1_events.7.a: "Přesvědčte [SCOPE.sCharacter('guglielmo_pepe').GetPrimaryRoleTitle], aby podpořil vládu."
  revolution_pulse1_events.7.b: "[SCOPE.sCharacter('guglielmo_pepe').GetFullName] není důvěryhodný. Zatkněte [SCOPE.sCharacter('guglielmo_pepe').GetHerHim]!"
@@ -309,7 +309,7 @@
  revolution_pulse1_events.19.c: "Naši muži jsou profesionálové! Udrží disciplínu."
  revolution_pulse1_events.19.dd: "Armáda a lid jsou jedno — ať si to vyříkají."
  1848.10.t: "Rostoucí frustrace"
- 1848.10.d: "Nespokojení členové [SCOPE.gsInterestGroup('disgruntled_ig').GetName] jsou frustrováni tím, že jim stát odmítá poskytnout přístup k jakýmkoli orgánům vlády a zcela je ignoruje. Zejména [SCOPE.sCharacter('disgruntled_ig_leader').GetFullName] začal stupňovat svou protivládní rétoriku, přičemž do ní vnáší i překvapivé ideologické myšlenky."
+ 1848.10.d: "Nespokojení členové [SCOPE.gsInterestGroup('disgruntled_ig').GetCustom('IG_G_TT')] jsou frustrováni tím, že jim stát odmítá poskytnout přístup k jakýmkoli orgánům vlády a zcela je ignoruje. Zejména [SCOPE.sCharacter('disgruntled_ig_leader').GetFullName] začal stupňovat svou protivládní rétoriku, přičemž do ní vnáší i překvapivé ideologické myšlenky." # todo: NAME CASE
  1848.10.f: "„Tato vláda nemá obdoby v rozsahu svých křivopřísežností! Její odhodlání umlčet hlas lidu je doprovázeno řadou zločinů — krádežemi, ničením majetku, vraždami, zmrzačením a mnoha dalšími. Lidstvo se zachvěje, až bude číst tuto hanebnou kapitolu dějin!“"
  1848.10.a: "Odmítněme ustoupit těmto křiklounům."
  1848.10.b: "Alespoň jim dovolme podávat petice."
@@ -319,9 +319,9 @@
  1848.11.a: "[SCOPE.gsInterestGroup('squeezed_ig').GetName] se musí postarat sami o sebe."
  1848.11.b: "Můžeme jejich situaci alespoň částečně zmírnit."
  1848.12.t: "Chlebová krize"
- 1848.12.d: "Probíhající krize v [SCOPE.sState('1848_famine_state').GetName] vedla [SCOPE.gsInterestGroup('famine_radicalized_ig').GetName] k tomu, aby promluvily jménem regionu a ostře kritizovaly vládu."
+ 1848.12.d: "Probíhající krize v [SCOPE.sState('1848_famine_state').GetName] vedla [SCOPE.gsInterestGroup('famine_radicalized_ig').GetCustom('IG_A_TT')] k tomu, aby promluvily jménem regionu a ostře kritizovaly vládu." # todo: NAME CASE
  1848.12.f: "„To je nepřijatelné! Pokud vláda nedokáže nasytit vlastní lid, co vlastně dokáže?“"
- 1848.12.a: "Stížnosti [SCOPE.gsInterestGroup('famine_radicalized_ig').GetName] nás neovlivní."
+ 1848.12.a: "Stížnosti [SCOPE.gsInterestGroup('famine_radicalized_ig').GetCustom('IG_G_TT')] nás neovlivní." # todo: NAME CASE
  1848.12.b: "Můžeme zavést část jejich navrhované pomoci."
  government_support_to_financially_distressed: "Podpora finančně strádajících"
  exiles_more_events.1.t: "Vlastenecké usmíření"
@@ -355,12 +355,12 @@
  exiles_more_events.5.a: "Rozlučme se s [SCOPE.sCharacter('experienced_exile').GetFullName]."
  exiles_more_events.5.b: "Možná to ještě může vyjít."
  exiles_more_events.6.t: "Návrat obávaného [SCOPE.sCharacter('melodrama_villain').GetFullName]"
- exiles_more_events.6.d: "[SCOPE.sCharacter('melodrama_villain').GetFullName], nechvalně proslulý vyhnanec spojený s [SCOPE.gsInterestGroup('melodrama_villain_ig').GetName], oznámil svůj návrat. Vedení [SCOPE.gsInterestGroup('melodrama_villain_ig').GetNameNoFormatting] se obává jeho vlivu."
- exiles_more_events.6.f: "„#extrabold Blázni!#! Opovažujete se zasahovat do plánů [SCOPE.sCharacter('melodrama_villain').GetFullNameNoFormatting], #italic pravého vládce#! [SCOPE.gsInterestGroup('melodrama_villain_ig').GetNameNoFormatting]? Budete #extrabold litovat#! dne, kdy jste mě vyzvali! Můj návrat změní běh #bold dějin#!!“"
+ exiles_more_events.6.d: "[SCOPE.sCharacter('melodrama_villain').GetFullName], nechvalně proslulý vyhnanec spojený s [SCOPE.gsInterestGroup('melodrama_villain_ig').GetCustom('IG_I_TT')], oznámil svůj návrat. Vedení [SCOPE.gsInterestGroup('melodrama_villain_ig').GetCustom('IG_G')] se obává jeho vlivu." # todo: NAME CASE
+ exiles_more_events.6.f: "„#extrabold Blázni!#! Opovažujete se zasahovat do plánů [SCOPE.sCharacter('melodrama_villain').GetFullNameNoFormatting], #italic pravého vládce#! [SCOPE.gsInterestGroup('melodrama_villain_ig').GetCustom('IG_G')]? Budete #extrabold litovat#! dne, kdy jste mě vyzvali! Můj návrat změní běh #bold dějin#!!“" # todo: NAME CASE
  exiles_more_events.6.a: "Třeste se! Vrací se!"
  exiles_more_events.6.b: "Máme lepší vůdce než jeho."
  exiles_more_events.6.c: "[SCOPE.sCharacter('melodrama_villain').GetLastName] opět povstane!"
- exiles_more_events.6.c.tt: "[SCOPE.sCharacter('melodrama_villain').GetLastName] se stává vůdcem [SCOPE.gsInterestGroup('melodrama_villain_ig').GetName]"
+ exiles_more_events.6.c.tt: "[SCOPE.sCharacter('melodrama_villain').GetLastName] se stává vůdcem [SCOPE.gsInterestGroup('melodrama_villain_ig').GetCustom('IG_G_TT')]" # todo: NAME CASE
  exiles_more_events.6.dd: "I z ciziny může mít vliv."
  exiles_more_events.7.t: "Staré spory přetrvávají"
  exiles_more_events.7.d: "[SCOPE.sCharacter('first_ex_exile').GetFullName] a [SCOPE.sCharacter('second_ex_exile').GetFullName] si přinesli staré konflikty a opakovaně se kvůli nim střetávají."
@@ -374,9 +374,9 @@
  exiles_more_events.8.a: "Zastavení by bylo příliš nákladné."
  exiles_more_events.8.b: "Policie stále funguje!"
  exiles_more_events.8.b.tt: "[SCOPE.sCharacter('dgaf_exile_scope').GetFullName] bude zastaven."
- exiles_more_events.8.c: "Dohodněme se s [SCOPE.gsInterestGroup('dgaf_exile_home_ig').GetName]."
+ exiles_more_events.8.c: "Dohodněme se s [SCOPE.gsInterestGroup('dgaf_exile_home_ig').GetCustom('IG_I_TT')]." # todo: NAME CASE
  exiles_more_events.9.t: "Úrodná půda"
- exiles_more_events.9.d: "[SCOPE.sCharacter('fertile_ground_exile_scope').GetFullName] se rozhodl, že [ROOT.GetCountry.GetNameNoFormatting] je ideální místo k životu díky vlivu [SCOPE.gsInterestGroup('fertile_ground_ig').GetName]."
+ exiles_more_events.9.d: "[SCOPE.sCharacter('fertile_ground_exile_scope').GetFullName] se rozhodl, že [ROOT.GetCountry.GetNameNoFormatting] je ideální místo k životu díky vlivu [SCOPE.gsInterestGroup('fertile_ground_ig').GetCustom('IG_G_TT')]." # todo: NAME CASE
  exiles_more_events.9.f: "„Jaká země příležitostí! Připravená na mé myšlenky... ano, vydám se tam!“"
  exiles_more_events.9.a: "Není důvod mu bránit."
  exiles_more_events.9.b: "Musíme jeho příchodu zabránit."

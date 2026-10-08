@@ -13,7 +13,7 @@
  amenability_angry_and_opposing: "Rozhněvaný a proti zákonu"
  amenability_strongly_oppose: "Důrazně nesouhlasí se [Concept('concept_law','zákonem')]"
  amenability_ruler_popularity: "[Concept('concept_ruler','Vládce')] - [Concept('concept_popularity','popularita')]"
- amenability_ig_additional_adds: "#indent_newline:3 Další modifikátory u [InterestGroup.GetName]:\n[InterestGroup.GetModifier.GetDescFor('interest_group_amenability_add')]#!"
+ amenability_ig_additional_adds: "#indent_newline:3 Další modifikátory u [InterestGroup.GetCustom('IG_G_TT')]:\n[InterestGroup.GetModifier.GetDescFor('interest_group_amenability_add')]#!" # todo: NAME CASE
  amenability_country_additional_adds: "#indent_newline:3 Další modifikátory:\n[InterestGroup.GetCountry.GetModifier.GetDescFor('country_amenability_add')]#!"
  amenability_already_letting_go: "Už zákon propouštějí kvůli vysokému [Concept('concept_approval','spokojenosti')]" # todo: CONCEPT CASE
  amenability_too_large_gap: "[Concept('concept_endorse_oppose','Odporuje')] [Concept('concept_law','zákon')] o více než #v 2#! kroků"
@@ -34,9 +34,9 @@
  negotiation_extended_quest: "Vyjednávací závazek odložen"
  negotiation_pushing_for_law: "Slib: prosazení zákona"
  negotiate_promise_tt: "Dokud nebude závazek splněn:"
- FailurePromiseLine_1: "Neúspěch částečně [Concept('concept_radicalized_interest_group','radikalizovat')|l] [ROOT.GetInterestGroup.GetName], avšak postihy budou sníženy, pokud závazek částečně splníme.\n"
- FailurePromiseLine_2: "Neúspěch bude #r zásadně#! [Concept('concept_radicalized_interest_group','radikalizovat')|l] [ROOT.GetInterestGroup.GetName], avšak postihy budou sníženy, pokud závazek částečně splníme.\n"
- FailurePromiseLine_3: "Neúspěch #r zcela#! [Concept('concept_radicalized_interest_group','radikalizovat')|l] [ROOT.GetInterestGroup.GetName], avšak postihy budou sníženy, pokud závazek částečně splníme.\n"
+ FailurePromiseLine_1: "Neúspěch částečně [Concept('concept_radicalized_interest_group','radikalizovat')|l] [ROOT.GetInterestGroup.GetCustom('IG_A_TT')], avšak postihy budou sníženy, pokud závazek částečně splníme.\n" # todo: NAME CASE
+ FailurePromiseLine_2: "Neúspěch bude #r zásadně#! [Concept('concept_radicalized_interest_group','radikalizovat')|l] [ROOT.GetInterestGroup.GetCustom('IG_A_TT')], avšak postihy budou sníženy, pokud závazek částečně splníme.\n" # todo: NAME CASE
+ FailurePromiseLine_3: "Neúspěch #r zcela#! [Concept('concept_radicalized_interest_group','radikalizovat')|l] [ROOT.GetInterestGroup.GetCustom('IG_A_TT')], avšak postihy budou sníženy, pokud závazek částečně splníme.\n" # todo: NAME CASE
  will_not_negotiate_again_tt: "Nebude znovu vyjednávat, dokud nebude závazek dodržen"
  law_two_years_tt: "Postihy budou sníženy, pokud [ROOT.GetCountry.GetName] bude usilovat o přijetí [SCOPE.sLaw('government_petition_law').GetName] po dobu alespoň #v 24 měsíců#!. \n#v Aktuální dopady selhání:#!"
  closer_we_get_neg_tt: "Postihy budou sníženy, jak se přiblížíme ke splnění závazku. \n#v Aktuální dopady selhání:#!"
@@ -45,8 +45,8 @@
  negotiation_tier_1: "Kooperativní"
  notification_neg_failed_quest_toast_name: "Závazek selhal"
  notification_neg_failed_quest_toast_desc: "[SCOPE.gsInterestGroup('ig').GetName] jsou nespokojeni, že jsme nesplnili naše sliby."
- negotiation.1.t: "[SCOPE.gsInterestGroup('negotiating_interest_group').GetCustom('NegotiationLevelName')|U] jednání s [SCOPE.gsInterestGroup('negotiating_interest_group').GetName]"
- negotiation.1.d: "Uprostřed křiku, urážek a politováníhodných obratů se objevilo několik cest, které by přesvědčily [SCOPE.gsInterestGroup('ig').GetName], aby umožnili přijetí [SCOPE.sLaw('law').GetName]."
+ negotiation.1.t: "[SCOPE.gsInterestGroup('negotiating_interest_group').GetCustom('NegotiationLevelName')|U] jednání s [SCOPE.gsInterestGroup('negotiating_interest_group').GetCustom('IG_I_TT')]" # todo: NAME CASE
+ negotiation.1.d: "Uprostřed křiku, urážek a politováníhodných obratů se objevilo několik cest, které by přesvědčily [SCOPE.gsInterestGroup('ig').GetCustom('IG_A_TT')], aby umožnili přijetí [SCOPE.sLaw('law').GetName]." # todo: NAME CASE
  negotiation.1.f: "„Když muž řekne, že s něčím souhlasí v zásadě, znamená to, že nemá nejmenší úmysl to v praxi uskutečnit.“ \n\n—Otto Von Bismarck"
  negotiation.1.d2: " [SCOPE.gsInterestGroup('ig').GetName] souhlasili, že se setkají na místním trhu, aby tajně probrali změnu postoje k [SCOPE.sLaw('law').GetName]"
  negotiation.1.f2: "Procházel jsem náměstí několikrát, než jsem přistoupil ke stánku. Pronesl jsem klíčovou větu: „To jsou pěkné lampy.“ Dva muži se přisunuli po obou stranách. Za celou dobu služby mi srdce nikdy nebouchalo v tak zoufalém valčíku. Přesvědčen, že jsem ztracen, jako hadr jsem povadl v jejich pažích a dav mě donesl ke jejich vyjednavači. Přiznávám, že jsem souhlasil s vším, co bylo řečeno, a teď se ocitám v nejisté pozici, kdy musím přesvědčit své nadřízené o oprávněnosti takových návrhů, abych neskončil rozparáděný jako zboží rybářů."
@@ -56,11 +56,11 @@
  negotiation.1.f4: "„Veškerá legislativa, vláda a společnost stojí na principu vzájemných ústupků, slušnosti, zdvořilosti; na tom je vše postaveno... Kdo se povyšuje nad lidství, nad jeho slabosti, neduhy, potřeby, nechť řekne, že se nikdy nepřizpůsobí; ale nikdo, kdo není mimo slabosti naší společné přirozenosti, ať se nepovyšuje nad kompromisy.“ \n\n—Henry Clay"
  negotiation.1.d5: "Šeptání skrz závoj doutníkového dýmu v soukromé jídelně [SCOPE.gsInterestGroup('ig').GetLeader.GetFullName], kde [SCOPE.gsInterestGroup('ig').GetName] rozebírají, jaké kompromisy by mohli přijmout, aby změnili postoj k [SCOPE.sLaw('law').GetName]."
  negotiation.1.f5: "„Ač jsme konzervativci, s ohledem na současnou situaci se musíme změnit, abychom přežili.“\n\n—Li Hongzhang"
- negotiation.1.d6: " [ROOT.GetCountry.MakeScope.Var('supporting_ig').GetInterestGroup.GetName] vedli tajné rozhovory s [SCOPE.gsInterestGroup('ig').GetName] s cílem dosáhnout určité dohody ohledně [SCOPE.sLaw('law').GetName]."
+ negotiation.1.d6: " [ROOT.GetCountry.MakeScope.Var('supporting_ig').GetInterestGroup.GetName] vedli tajné rozhovory s [SCOPE.gsInterestGroup('ig').GetCustom('IG_I_TT')] s cílem dosáhnout určité dohody ohledně [SCOPE.sLaw('law').GetName]." # todo: NAME CASE
  negotiation.1.f6: "„Rozvášněná mysl nenávidí chladný dotek a neúprosné zkoumání logiky.“ \n\n—William E. Gladstone"
- negotiation.1.d7: "Významní členové [SCOPE.gsInterestGroup('ig').GetName] se setkávají v nejlepší kavárně [ROOT.GetCountry.GetCapital.GetCityHubName], aby diskutovali o [SCOPE.sLaw('law').GetName]. S vhodným vlivem by se jejich názory daly přetočit."
+ negotiation.1.d7: "Významní členové [SCOPE.gsInterestGroup('ig').GetCustom('IG_G_TT')] se setkávají v nejlepší kavárně [ROOT.GetCountry.GetCapital.GetCityHubName], aby diskutovali o [SCOPE.sLaw('law').GetName]. S vhodným vlivem by se jejich názory daly přetočit." # todo: NAME CASE
  negotiation.1.f7: "„Nejlépe své straně slouží ten, kdo nejlépe slouží své zemi.“\n\n—Rutherford B. Hayes, 19. prezident USA"
- negotiation.1.d8: "[SCOPE.gsInterestGroup('ig').GetLeader.GetFullName] souhlasil se soukromým setkáním, zjevně hledající cestu, která prospěje jak národu, tak zájmům [SCOPE.gsInterestGroup('ig').GetName] ve věci [SCOPE.sLaw('law').GetName]."
+ negotiation.1.d8: "[SCOPE.gsInterestGroup('ig').GetLeader.GetFullName] souhlasil se soukromým setkáním, zjevně hledající cestu, která prospěje jak národu, tak zájmům [SCOPE.gsInterestGroup('ig').GetCustom('IG_G_TT')] ve věci [SCOPE.sLaw('law').GetName]." # todo: NAME CASE
  negotiation.1.f8: "„Nemáme věčné spojence a nemáme věčné nepřátele. Naše zájmy jsou věčné a trvalé, a těmto zájmům je naší povinností sloužit.“ \n\n—Lord Palmerston"
  negotiation.1.d9: " [SCOPE.gsInterestGroup('ig').GetName] během zdvořilé debaty se zástupci vlády o [SCOPE.sLaw('law').GetName] nalévají jen své nejlepší ročníky a kouří jen svůj nejlepší tabák."
  negotiation.1.f9: "„Kompromis dělá dobrý deštník, ale špatnou střechu; je to dočasné opatření, často moudré v stranické politice, téměř jistě nemoudré ve státnictví.“ \n\n—James Russell Lowell"
@@ -73,7 +73,7 @@
  negotiation_go_away_button: "Zrušit závazek"
  negotiation_go_away_button_desc: "Z důvodu nečekaných okolností a s nejhlubší lítostí [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle|l] bude toto úsilí odloženo na pozdější dobu."
  has_been_abandoned_neg_tt: "Tento závazek byl #b zrušen#!"
- discard_petition_neg_tt: "Zrušíme náš závazek vůči [SCOPE.gsInterestGroup('ig').GetName]"
+ discard_petition_neg_tt: "Zrušíme náš závazek vůči [SCOPE.gsInterestGroup('ig').GetCustom('IG_D_TT')]" # todo: NAME CASE
  time_runs_out_tt: "Čas vyprší"
  already_asked_for_extension_neg_tt: "Ještě neoznámil zpoždění"
  negotiation_extension_button: "Ohlásit odklad"
@@ -82,7 +82,7 @@
  promise_grow_army_tt: "Zavazujeme se zvýšit naše [Concept('concept_army_power_projection','projekce síly armády')] z #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],PANEL_MILITARY_ARMY_POWER_PROJECTION_TOOLTIP [ROOT.GetCountry.GetArmyPowerProjection|v0]#!#! na [SCOPE.gsInterestGroup('ig').MakeScope.Var('desired_army_size').GetValue|v0] během #v 10 let#!. [SCOPE.gsInterestGroup('ig').GetCustom('FailurePromiseLine')]"
  je_negotiate_army_quest: "Závazek: Zvětšit armádu"
  je_negotiate_army_quest_status: "[Concept('concept_army_power_projection','Projekce síly armády')] je #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],PANEL_MILITARY_ARMY_POWER_PROJECTION_TOOLTIP  [ROOT.GetCountry.GetArmyPowerProjection|v0]#!#! / [SCOPE.gsInterestGroup('ig').MakeScope.Var('desired_army_size').GetValue|v0]"
- je_negotiate_army_quest_reason: "Dali jsme [SCOPE.gsInterestGroup('ig').GetName] slib, že zvýšíme sílu naší armády. \n\nBuď vyškolením více vojáků, nebo modernizací jejich výzbroje zajistíme, že [ROOT.GetCountry.GetName] bude připraven hájit své zájmy."
+ je_negotiate_army_quest_reason: "Dali jsme [SCOPE.gsInterestGroup('ig').GetCustom('IG_D_TT')] slib, že zvýšíme sílu naší armády. \n\nBuď vyškolením více vojáků, nebo modernizací jejich výzbroje zajistíme, že [ROOT.GetCountry.GetName] bude připraven hájit své zájmy." # todo: NAME CASE
  negotiation.1.o4: "Zavázat se, že jako další prosadíme [SCOPE.gsInterestGroup('ig').MakeScope.Var('desired_law_var').GetLaw.GetName]."
  promise_pass_law_tt: "Musíme schválit [SCOPE.gsInterestGroup('ig').MakeScope.Var('desired_law_var').GetLaw.GetName] do #v 7 let a 6 měsíců#!. [SCOPE.gsInterestGroup('ig').GetCustom('FailurePromiseLine')]"
  promise_pass_law_extra_help_tt: "[SCOPE.gsInterestGroup('ig').GetName] bude obzvlášť tlačit na prosazení [SCOPE.gsInterestGroup('ig').MakeScope.Var('desired_law_var').GetLaw.GetName] během jeho projednávání a občas zvýší šanci na přijetí."
@@ -98,7 +98,7 @@
  promise_build_tt: "Musíme zvýšit počet [SCOPE.gsInterestGroup('ig').MakeScope.Var('promised_building_type').GetBuildingType.GetName] v našich [Concept('concept_state', 'státech')] z [SCOPE.gsInterestGroup('ig').MakeScope.ScriptValue('building_levels_existing')|v0] na [SCOPE.gsInterestGroup('ig').MakeScope.Var('building_level_increase').GetValue|v0] během #v 10 let#!. [SCOPE.gsInterestGroup('ig').GetCustom('FailurePromiseLine')]"
  je_negotiate_buildings: "Závazek: Ceněné investice"
  je_negotiate_buildings_status: "Postavili jsme [SCOPE.gsInterestGroup('ig').MakeScope.ScriptValue('building_levels_existing')|v0] / [SCOPE.gsInterestGroup('ig').MakeScope.Var('building_level_increase').GetValue|v0] [SCOPE.gsInterestGroup('ig').MakeScope.Var('promised_building_type').GetBuildingType.GetName]"
- je_negotiate_buildings_reason: "Slibovali jsme [SCOPE.gsInterestGroup('ig').GetName], že postavíme více [SCOPE.gsInterestGroup('ig').MakeScope.Var('promised_building_type').GetBuildingType.GetName] v naší [Concept('concept_state','státech')], čin, který jistě zlepší [ROOT.GetCountry.GetAdjective] ekonomiku." # todo: CONCEPT CASE
+ je_negotiate_buildings_reason: "Slibovali jsme [SCOPE.gsInterestGroup('ig').GetCustom('IG_D_TT')], že postavíme více [SCOPE.gsInterestGroup('ig').MakeScope.Var('promised_building_type').GetBuildingType.GetName] v naší [Concept('concept_state','státech')], čin, který jistě zlepší [ROOT.GetCountry.GetAdjective] ekonomiku." # todo: CONCEPT CASE # todo: NAME CASE
  negotiation.1.o6: "Musíme investovat do [SCOPE.gsInterestGroup('ig').MakeScope.Var('promised_building_group').GetBuildingGroup.GetName]."
  promise_building_group_tt: "Musíme zvýšit počet [SCOPE.gsInterestGroup('ig').MakeScope.Var('promised_building_group').GetBuildingGroup.GetName] v naší [Concept('concept_state','státech')] z [SCOPE.gsInterestGroup('ig').MakeScope.ScriptValue('building_group_levels_existing')|v0] na [SCOPE.gsInterestGroup('ig').MakeScope.Var('building_group_level_increase').GetValue|v0] během #v 10 let#!. [SCOPE.gsInterestGroup('ig').GetCustom('FailurePromiseLine')]" # todo: CONCEPT CASE
  je_negotiate_building_group: "Závazek: Ekonomická iniciativa"
@@ -111,7 +111,7 @@
  tax_tier_very_low: "Zavazujeme se ponechat [Concept('concept_taxes','daně')|l] na #v velmi nízkej#! úrovni po dobu #v 4 let#!."
  je_negotiate_taxes: "Závazek: Snížení daní"
  je_negotiate_taxes_status: "[ROOT.GetCountry.MakeScope.Var('neg_taxes_remaining_months').GetValue|v0] zbývajících měsíců"
- je_negotiate_taxes_reason: "Uzavřeli jsme dohodu s [SCOPE.gsInterestGroup('ig').GetName], že snížíme daně, aby ekonomika mohla vzkvétat. Nyní musíme daně udržet na současné úrovni, ať jsou státní finance jakkoli, jinak riskujeme rozhořčení [SCOPE.gsInterestGroup('ig').GetNameNoIcon] a široké veřejnosti."
+ je_negotiate_taxes_reason: "Uzavřeli jsme dohodu s [SCOPE.gsInterestGroup('ig').GetCustom('IG_I_TT')], že snížíme daně, aby ekonomika mohla vzkvétat. Nyní musíme daně udržet na současné úrovni, ať jsou státní finance jakkoli, jinak riskujeme rozhořčení [SCOPE.gsInterestGroup('ig').GetNameNoIcon] a široké veřejnosti." # todo: NAME CASE
  neg_taxes_remain_low_tt: "[Concept('concept_taxes','Daně')] zůstávají na úrovni [SCOPE.GetRootScope.GetCountry.GetCustom('GetPromisedTaxLevelOneWord')] po dohodnutou dobu"
  neg_taxes_change_level_tt: "[Concept('concept_taxes','Daně')] jsou nastaveny výše než [SCOPE.GetRootScope.GetCountry.GetCustom('GetPromisedTaxLevelOneWord')|U]"
  neg_taxes_progress_bar: "Zbývající měsíce"
@@ -126,6 +126,6 @@
  promise_higher_sol_tt: "Zavazujeme se zvýšit průměrný [Concept('concept_sol','životní standard')|l] v [ROOT.GetCountry.GetAltAdjectiveNoFlag('L')] na [SCOPE.gsInterestGroup('ig').MakeScope.Var('promised_sol_level').GetValue|v1] během #v [SCOPE.gsInterestGroup('ig').GetCustom('SOL_commitment_duration')] let#!. [SCOPE.gsInterestGroup('ig').GetCustom('FailurePromiseLine')]"
  je_negotiate_sol: "Závazek: Obyčejní lidé"
  je_negotiate_sol_status: "Průměrný [Concept('concept_sol','životní standard')] je [ROOT.GetCountry.GetAverageSoLByPopulation|v1] / [SCOPE.gsInterestGroup('ig').MakeScope.Var('promised_sol_level').GetValue|v1]"
- je_negotiate_sol_reason: "Přísahali jsme [SCOPE.gsInterestGroup('ig').GetName], že zlepšíme životy obyčejných lidí. Pro vládců této země není žádný ušlechtilejší cíl než zvýšit [Concept('concept_sol','životní standard')] našich [ROOT.GetCountry.GetAltAdjective('yych')] občanů."
+ je_negotiate_sol_reason: "Přísahali jsme [SCOPE.gsInterestGroup('ig').GetCustom('IG_D_TT')], že zlepšíme životy obyčejných lidí. Pro vládců této země není žádný ušlechtilejší cíl než zvýšit [Concept('concept_sol','životní standard')] našich [ROOT.GetCountry.GetAltAdjective('yych')] občanů." # todo: NAME CASE
  neg_sol_short_time_loc: "7.5"
  neg_sol_long_time_loc: "10"

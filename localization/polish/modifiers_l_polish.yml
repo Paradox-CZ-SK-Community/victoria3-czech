@@ -788,11 +788,11 @@
  state_sell_orders_artillery_add: "Prodejní objednávky [GetGoods('artillery').GetTextIcon][Nbsp][GetGoods('artillery').GetNameNoFormatting]"
  state_sell_orders_artillery_add_desc: "Zvýšení nebo snížení [Concept('concept_sell_orders','prodejních objednávek')] [GetGoods('artillery').GetCustom('GDS_G')] v [Concept('concept_state','státě')]"
  state_buy_orders_ammunition_add: "[GetGoods('ammunition').GetTextIcon][Nbsp][GetGoods('ammunition').GetNameNoFormatting] Nákupní příkazy"
- state_buy_orders_ammunition_add_desc: "Zvýšení nebo snížení [Concept('concept_buy_orders','nákupní objednávky')] pro [GetGoods('ammunition').GetName] v [Concept('concept_state','státě')]" # todo: CONCEPT CASE
+ state_buy_orders_ammunition_add_desc: "Zvýšení nebo snížení [Concept('concept_buy_orders','nákupní objednávky')] pro [GetGoods('ammunition').GetCustom('GDS_A_TT')] v [Concept('concept_state','státě')]" # todo: CONCEPT CASE # todo: NAME CASE
  state_buy_orders_small_arms_add: "[GetGoods('small_arms').GetTextIcon][Nbsp][GetGoods('small_arms').GetNameNoFormatting] Nákupní příkazy"
- state_buy_orders_small_arms_add_desc: "Zvýšení nebo snížení [Concept('concept_buy_orders','nákupní objednávky')] pro [GetGoods('small_arms').GetName] v [Concept('concept_state','státě')]" # todo: CONCEPT CASE
+ state_buy_orders_small_arms_add_desc: "Zvýšení nebo snížení [Concept('concept_buy_orders','nákupní objednávky')] pro [GetGoods('small_arms').GetCustom('GDS_A_TT')] v [Concept('concept_state','státě')]" # todo: CONCEPT CASE # todo: NAME CASE
  state_buy_orders_artillery_add: "[GetGoods('artillery').GetTextIcon][Nbsp][GetGoods('artillery').GetNameNoFormatting] Nákupní příkazy"
- state_buy_orders_artillery_add_desc: "Zvýšení nebo snížení [Concept('concept_buy_orders','nákupní objednávky')] pro [GetGoods('artillery').GetName] v [Concept('concept_state','státě')]" # todo: CONCEPT CASE
+ state_buy_orders_artillery_add_desc: "Zvýšení nebo snížení [Concept('concept_buy_orders','nákupní objednávky')] pro [GetGoods('artillery').GetCustom('GDS_A_TT')] v [Concept('concept_state','státě')]" # todo: CONCEPT CASE # todo: NAME CASE
  goods_rations_output_mult: "$rations$ Výstup zboží" # HMM
  goods_rations_output_mult_desc: "Bonus nebo penalizace za produkci $rations$." # HMM
  goods_uniforms_output_mult: "$uniforms$ Výstup zboží" # HMM
@@ -846,7 +846,7 @@
  goods_grain_output_mult: "Výstup obilí"
  goods_grain_output_mult_desc: "Bonus nebo penalizace výroby obilí."
  state_sell_orders_grain_add: "[GetGoods('grain').GetTextIcon][Nbsp][GetGoods('grain').GetNameNoFormatting] Prodejní příkazy"
- state_sell_orders_grain_add_desc: "Zvýšení nebo snížení [Concept('concept_sell_orders','prodejní objednávky')] pro [GetGoods('grain').GetName] v [Concept('concept_state','státě')]" # todo: CONCEPT CASE
+ state_sell_orders_grain_add_desc: "Zvýšení nebo snížení [Concept('concept_sell_orders','prodejní objednávky')] pro [GetGoods('grain').GetCustom('GDS_A_TT')] v [Concept('concept_state','státě')]" # todo: CONCEPT CASE # todo: NAME CASE
  goods_fish_output_mult: "Výstup ryb"
  goods_fish_output_mult_desc: "Bonus nebo penalizace výroby ryb."
  goods_meat_output_mult: "Výstup masa"

@@ -23,7 +23,7 @@
  is_plantation_building: "Plantážní budova"
  is_raw_industries_building: "Průmysl surovin"
  production_tech_events.102.t: "Výbušná poptávka"
- production_tech_events.102.d: "Vývoj stabilnějších [SCOPE.sGoods('explosives_goods').GetName] vedl k nárůstu poptávky po výbušných materiálech. Náš vojenský i průmyslový sektor se pustily do dražební války o podíl na naší produkci."
+ production_tech_events.102.d: "Vývoj stabilnějších [SCOPE.sGoods('explosives_goods').GetCustom('GDS_G_TT')] vedl k nárůstu poptávky po výbušných materiálech. Náš vojenský i průmyslový sektor se pustily do dražební války o podíl na naší produkci." # todo: NAME CASE
  production_tech_events.102.f: "„‚Civilní využití‘? Opravdu? Na co civilní firma potřebuje dva tisíce tun dynamitu?“ generální intendant přecházel sem a tam a svíral složku u hrudi. „Kdybych měl dva tisíce tun dynamitu, vybavím dělostřelecký sbor na celý rok. Zaplním sklady granáty.“\n\n„Je to... politováníhodné,“ řekl úředník a opatrně volil každé slovo. „Kolem materiálu se rozpoutala nákupní horečka. Náš současný rozpočet by nám zajistil jen zlomek potřebného množství.“\n\nNení to ideální, pomyslel si intendant, ale přežijeme to. „Zadejte objednávku a sdělte mi částku. Požádám kabinet o dvojnásobek.“"
  production_tech_events.102.a: "Zvýšení nabídky pozvedne všechny."
  production_tech_events.102.b: "Průmysl to využije nejlépe."
@@ -89,7 +89,7 @@
  hawaii_coup_happened_tt: "[SCOPE.sCountry('hawaii_scope').GetAltAdjective('aa')] vláda byla svržena převratem"
  hawaii_government_secured_tt: "[SCOPE.sCountry('hawaii_scope').GetAltAdjective('aa')] vláda si upevnila svou pozici"
  conscription_laws.1.t: "Doplňování řad"
- conscription_laws.1.d: "Členové [SCOPE.gsInterestGroup('rural_folk_conscription').GetName] oslovili vládu ohledně zavedení zákona [SCOPE.sLaw('current_law_scope').GetName]. Domnívají se, že ještě potřebujeme více času, než budeme připraveni tento zákon prosadit."
+ conscription_laws.1.d: "Členové [SCOPE.gsInterestGroup('rural_folk_conscription').GetCustom('IG_G_TT')] oslovili vládu ohledně zavedení zákona [SCOPE.sLaw('current_law_scope').GetName]. Domnívají se, že ještě potřebujeme více času, než budeme připraveni tento zákon prosadit." # todo: NAME CASE
  conscription_laws.1.f: ""Byli byste ochotni dát cenu svobodě, kterou všichni máme? Ne! Ale cenu dáváte plodinám, které tihle dělníci pěstují. Naše svoboda a národní bezpečnost nejsou k diskusi a nelze je ocenit. Musíme zajistit přežití našeho národa a každý muž musí být připraven udělat, co je nutné k dosažení tohoto cíle." # todo: CHANGED
  conscription_laws.1.a: "Pokračujme v prosazení zákona."
  conscription_laws.1.b: "Dejme tomu více času."
@@ -99,7 +99,7 @@
  conscription_laws.2.a: "Potřebujeme každého vojáka."
  conscription_laws.2.b: "Měli bychom to ještě promyslet."
  conscription_laws.3.t: "Nepřipraveni na odvod"
- conscription_laws.3.d: "[SCOPE.sCharacter('anti_conscription_advocate').GetFullName], vůdce [SCOPE.gsInterestGroup('anti_conscription_ig').GetName], pronesl vášnivý projev o rizicích příliš rychlého zavedení zákona [SCOPE.sLaw('current_law_scope').GetName]."
+ conscription_laws.3.d: "[SCOPE.sCharacter('anti_conscription_advocate').GetFullName], vůdce [SCOPE.gsInterestGroup('anti_conscription_ig').GetCustom('IG_G_TT')], pronesl vášnivý projev o rizicích příliš rychlého zavedení zákona [SCOPE.sLaw('current_law_scope').GetName]." # todo: NAME CASE
  conscription_laws.3.f: "„Nemůžeme ignorovat, že na to nejsme připraveni. K čemu to bude, když se nám země zhroutí pod rukama? Pokud vyhlásíme mobilizaci nepřipraveni, nejenže budeme muset platit nové vojáky, ale zároveň přijdeme o pracovníky v továrnách i na polích. To znamená nižší produkci, nižší zisky a nakonec i nižší daňové příjmy. Jak ty nové vojáky zaplatíme?“"
  conscription_laws.3.a: "Vláda to zvládne."
  conscription_laws.3.b: "Držme kurz."
@@ -118,7 +118,7 @@
  decree_events.101.t: "Komu patří zásluhy"
  decree_events.101.d: "Nedávné investice do výroby ve [SCOPE.sState('decree_manufacturing_politics').GetName] v naší [SCOPE.sBuilding('manufacturing_building_production_politics').GetName] vyvolaly otázku, kdo by měl získat zásluhy za nárůst produkce."
  decree_events.101.f: "„Kde bychom byli bez našich peněz, továren a zboží? Ať celý národ ví, kolik práce a úsilí stálo za tímto velkým úspěchem.“"
- decree_events.101.a: "Zásluhy patří [SCOPE.gsInterestGroup('industrialists_ig_focus').GetName]."
+ decree_events.101.a: "Zásluhy patří [SCOPE.gsInterestGroup('industrialists_ig_focus').GetCustom('IG_D_TT')]." # todo: NAME CASE
  decree_events.101.b: "Je to vítězství pracujících."
  decree_events.101.c: "Připisujme zásluhy někomu jinému."
  decree_events.102.t: "Zemědělský rozmach"
@@ -214,7 +214,7 @@
  healthcare_laws.4.a: "Uvolněme trochu byrokracie."
  healthcare_laws.4.b: "Zaměřme se na prosazení zákona."
  healthcare_laws.5.t: "Dostupnost versus přístupnost"
- healthcare_laws.5.d: "[SCOPE.sCharacter('anti_public_healthcare_advocate').GetFullName], vůdce [SCOPE.gsInterestGroup('anti_public_healthcare_ig').GetName], dnes upozornil na riziko, že rozšíření přístupu ke zdravotní péči může snížit její dostupnost pro ty, kteří ji již mají."
+ healthcare_laws.5.d: "[SCOPE.sCharacter('anti_public_healthcare_advocate').GetFullName], vůdce [SCOPE.gsInterestGroup('anti_public_healthcare_ig').GetCustom('IG_G_TT')], dnes upozornil na riziko, že rozšíření přístupu ke zdravotní péči může snížit její dostupnost pro ty, kteří ji již mají." # todo: NAME CASE
  healthcare_laws.5.f: "„Co si myslíte, že se stane? Nemůžete čekat, že dostupnost zůstane stejná, když péči otevřeme všem. Lidé budou čekat dny, týdny, možná i měsíce na lékaře. Jak budeme určovat priority mezi pacienty?“"
  healthcare_laws.5.a: "Jejich obavy jsou neopodstatněné."
  healthcare_laws.5.b: "Jejich obavy je třeba zvážit."
@@ -246,7 +246,7 @@
  republic_laws.1.b: "Možná jen nechtěně zaspal."
  republic_laws.1.c: "Otiskněte to v novinách."
  republic_laws.2.t: "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] a [ROOT.GetCountry.GetRuler.GetHerHis] osud"
- republic_laws.2.d: "[SCOPE.sCharacter('monarchist_supporter').GetFullName] ze [SCOPE.gsInterestGroup('rulers_fate').GetName] se ptá, co se stane s [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle], pokud se vláda změní na [SCOPE.sLaw('current_law_scope').GetName]."
+ republic_laws.2.d: "[SCOPE.sCharacter('monarchist_supporter').GetFullName] ze [SCOPE.gsInterestGroup('rulers_fate').GetCustom('IG_G_TT')] se ptá, co se stane s [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle], pokud se vláda změní na [SCOPE.sLaw('current_law_scope').GetName]." # todo: NAME CASE
  republic_laws.2.f: "„Monarchie je jedním ze základních pilířů této země. Nemůžeme vážně uvažovat o jejím zrušení.“\n\n„Nemůžeme mít spravedlivý a rovný stát, pokud budeme jednoho člověka stavět nad ostatní. Pokud si chce ponechat šlechtický titul, pošleme ho někam daleko. [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] už v naší společnosti nemá místo.“"
  republic_laws.2.a: "Nechť [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] abdikuje."
  republic_laws.2.b: "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] půjde do exilu."

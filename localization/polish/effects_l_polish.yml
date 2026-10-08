@@ -24,7 +24,7 @@
  SET_TAX_LEVEL: "[COUNTRY.GetName] má svou celkovou úroveň [Concept('concept_taxes','zdanění')] nastavenu na #variable $TARIFF_LEVEL$#!"
  SET_TAX_LEVEL_FIRST: "[COUNTRY.GetName] má celkovou úroveň [Concept('concept_taxes','zdanění')] nastavenu na #variable $TARIFF_LEVEL$#!"
  SET_TAX_LEVEL_THIRD: "[COUNTRY.GetName] má svou celkovou úroveň [Concept('concept_taxes','zdanění')] nastavenu na"
- SET_TARIFF_FOCUS: "[COUNTRY.GetName] má svůj [Concept('concept_tariffs','$concept_tariff$')|l] zaměření pro [Goods.GetName] nastavenu na"
+ SET_TARIFF_FOCUS: "[COUNTRY.GetName] má svůj [Concept('concept_tariffs','$concept_tariff$')|l] zaměření pro [Goods.GetCustom('GDS_A_TT')] nastavenu na" # todo: NAME CASE
  SET_GOVERNMENT_WAGE_LEVEL: "[COUNTRY.GetName] má svou úroveň [Concept('concept_government_wage','vládní mzda')|l] nastavenu na"
  SET_MILITARY_WAGE_LEVEL: "[COUNTRY.GetName] má stanovenou úroveň [Concept('concept_military_wage','vojenská mzda')|l] na #v $WAGE_LEVEL$#!"
  ADD_CHANGE_RELATIONS_PROGRESS: "#variable [COUNTRY.GetAdjectiveNoFormatting]#! získává pokrok v změně vztahů #variable $VALUE$#! s [TARGET_COUNTRY.GetName]"
@@ -130,9 +130,9 @@
  ADD_CULTURAL_OBSESSION: "[CULTURE.GetName] kultura se stává posedlou na [GOODS.GetCustom('GDS_L')]"
  REMOVE_CULTURAL_OBSESSION: "[CULTURE.GetName] přestává být posedlý [GOODS.GetCustom('GDS_I')]"
  ADD_CULTURAL_TABOO_GLOBAL: "[GOODS.GetName] je nyní považováno za [concept_taboo]" # todo: NEW TRANSLATION
- ADD_CULTURAL_TABOO_THIRD: "[CULTURE.GetName] bude nyní považovat [GOODS.GetName] za [concept_taboo]" # todo: NEW TRANSLATION
+ ADD_CULTURAL_TABOO_THIRD: "[CULTURE.GetName] bude nyní považovat [GOODS.GetCustom('GDS_A_TT')] za [concept_taboo]" # todo: NEW TRANSLATION # todo: NAME CASE
  REMOVE_CULTURAL_TABOO_GLOBAL: "[GOODS.GetName] již není považováno za [concept_taboo]" # todo: NEW TRANSLATION
- REMOVE_CULTURAL_TABOO_THIRD: "[CULTURE.GetName] již nebude považovat [GOODS.GetName] za [concept_taboo]" # todo: NEW TRANSLATION
+ REMOVE_CULTURAL_TABOO_THIRD: "[CULTURE.GetName] již nebude považovat [GOODS.GetCustom('GDS_A_TT')] za [concept_taboo]" # todo: NEW TRANSLATION # todo: NAME CASE
  ADD_TRADITION_TRAIT: "[CULTURE.GetName] přijímá [DISCRIMINATION_TRAIT.GetName] [Concept('concept_tradition_trait','rys tradice')|l]"
  REMOVE_TRADITION_TRAIT: "[CULTURE.GetName] opouští [DISCRIMINATION_TRAIT.GetName] [Concept('concept_tradition_trait','rys tradice')|l]"
  ADD_CULTURAL_COMMUNITY: "Nová [CULTURE.GetName] [Concept('concept_cultural_community','kulturní komunita')|l] se objevuje"
@@ -501,10 +501,10 @@
  JOIN_WAR_THIRD: "[TARGET_COUNTRY.GetNameNoFlag] se připojuje k [Concept('concept_war','válkám')] [COUNTRY.GetName]" # todo: CONCEPT CASE
  SET_SUBSIDIZED: "Začít [Concept('concept_subsidies','dotování')] [Building.GetName]"
  SET_SUBSIDIZED_NEGATIVE: "Zastavit [Concept('concept_subsidies','dotování')] [Building.GetName]"
- ADD_MOMENTUM: "#v $VALUE|%+=0$#! [Concept('concept_momentum','momentum')|l] bude přidáno k [Party.GetName] [Party.GetMembersSummary]"
- ADD_MOMENTUM_FIRST: "#v $VALUE|%+=0$#! [Concept('concept_momentum','momentum')|l] bude přidáno k [Party.GetName] [Party.GetMembersSummary]"
- ADD_MOMENTUM_THIRD: "#v $VALUE|%+=0$#! [Concept('concept_momentum','momentum')|l] bude přidáno k [Party.GetName] [Party.GetMembersSummary]"
- ADD_MOMENTUM_THIRD_NEG: "#v $VALUE|%-0$#! [Concept('concept_momentum','momentum')|l] bude odečteno od [Party.GetName] [Party.GetMembersSummary]"
+ ADD_MOMENTUM: "#v $VALUE|%+=0$#! [Concept('concept_momentum','momentum')|l] bude přidáno k [Party.GetCustom('PARTY_D_TT')] [Party.GetMembersSummary]" # todo: NAME CASE
+ ADD_MOMENTUM_FIRST: "#v $VALUE|%+=0$#! [Concept('concept_momentum','momentum')|l] bude přidáno k [Party.GetCustom('PARTY_D_TT')] [Party.GetMembersSummary]" # todo: NAME CASE
+ ADD_MOMENTUM_THIRD: "#v $VALUE|%+=0$#! [Concept('concept_momentum','momentum')|l] bude přidáno k [Party.GetCustom('PARTY_D_TT')] [Party.GetMembersSummary]" # todo: NAME CASE
+ ADD_MOMENTUM_THIRD_NEG: "#v $VALUE|%-0$#! [Concept('concept_momentum','momentum')|l] bude odečteno od [Party.GetCustom('PARTY_G_TT')] [Party.GetMembersSummary]" # todo: NAME CASE
  RESOLVE_PLAY_FOR: "[Country.GetName] prosazuje své válečné cíle a opouští [TARGET_DIPLOMATIC_PLAY.GetName]"
  SET_HOME_STATE: "[Character.GetFullName] mění své [Concept('concept_home_state','domácí stát')] na [TARGET_STATE.GetName]" # todo: NEW TRANSLATION
  CHANGE_CHARACTER_RELIGION: "[Character.GetFullName] se stává [TARGET_RELIGION.GetName]"
@@ -522,9 +522,9 @@
  UPDATE_PARTY_SUPPORT_EFFECT_THIRD: "[Concept('concept_interest_group','Zájmové skupiny')] znovu vyhodnotí svou podporu [Concept('concept_party','stran')|l] v [COUNTRY.GetName]." # todo: CONCEPT CASE
  UPDATE_PARTY_SUPPORT_EFFECT_THIRD_NEG: "[Concept('concept_interest_group','Zájmové skupiny')] [Concept('concept_party','Strana')|l] podpora zůstane stejná v [COUNTRY.GetName]."
  ADD_IG_TO_PARTY_EFFECT_GLOBAL: "[InterestGroup.GetName] se připojuje"
- ADD_IG_TO_PARTY_EFFECT_THIRD: "[InterestGroup.GetName] se připojují k [PARTY.GetName]"
+ ADD_IG_TO_PARTY_EFFECT_THIRD: "[InterestGroup.GetName] se připojují k [PARTY.GetCustom('PARTY_D_TT')]" # todo: NAME CASE
  REMOVE_IG_FROM_PARTY_EFFECT_GLOBAL: "[InterestGroup.GetName] opouští"
- REMOVE_IG_FROM_PARTY_EFFECT_THIRD: "[InterestGroup.GetName] opouští [PARTY.GetName]"
+ REMOVE_IG_FROM_PARTY_EFFECT_THIRD: "[InterestGroup.GetName] opouští [PARTY.GetCustom('PARTY_A_TT')]" # todo: NAME CASE
  DISBAND_PARTY_EFFECT_GLOBAL: "Strana je rozpuštěna"
  DISBAND_PARTY_EFFECT_GLOBAL_NEG: "Strana NENÍ rozpuštěna"
  DISBAND_PARTY_EFFECT_THIRD: "[PARTY.GetName] je rozpuštěna"

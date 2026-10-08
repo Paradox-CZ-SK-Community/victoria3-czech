@@ -45,7 +45,7 @@
  serbian_throne.2.a: "Důmyslné." # todo: NEW TRANSLATION
  serbian_throne.2.b: "Zahajte výrobu, hned teď!" # todo: NEW TRANSLATION
  serbian_throne.3.t: "Odhalení pokrytců" # todo: NEW TRANSLATION
- serbian_throne.3.d: "Ukazuje se, že [SCOPE.sCharacter('serb_busted_ig_leader').GetFullName], vůdce [SCOPE.gsInterestGroup('serb_busted_ig').GetName], tajně pracoval na přesvědčování ostatních politiků ve prospěch hanebné kampaně [SCOPE.sCharacter('rival_dynasty_contender_scope').GetLastName]." # todo: NEW TRANSLATION
+ serbian_throne.3.d: "Ukazuje se, že [SCOPE.sCharacter('serb_busted_ig_leader').GetFullName], vůdce [SCOPE.gsInterestGroup('serb_busted_ig').GetCustom('IG_G_TT')], tajně pracoval na přesvědčování ostatních politiků ve prospěch hanebné kampaně [SCOPE.sCharacter('rival_dynasty_contender_scope').GetLastName]." # todo: NEW TRANSLATION # todo: NAME CASE
  serbian_throne.3.f: "Hostiny slouží jako důležitá shromáždění, kde se odehrávají různé nevyslovené dynamiky. Často zahrnují vyjednávání, projevy vlivu, zvuky hltání nenažraných megalomanů a stále přítomnou soutěž o udržení prestiže mezi rovnými.\n\nOrientovat se v komplexitě jednotlivců, kteří předvádějí různé stránky své povahy, je náročné i odměňující zároveň." # todo: NEW TRANSLATION
  serbian_throne.3.a: "Nechte ho zmizet." # todo: NEW TRANSLATION
  serbian_throne.3.b: "Násilím jej přimět pracovat pro nás." # todo: NEW TRANSLATION
@@ -96,9 +96,9 @@
  serbian_throne.13.t: "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]'s Accord" # todo: NEW TRANSLATION
  serbian_throne.13.d: "Naši organizátoři kampaně navrhli podpořit zájmovou skupinu, abychom získali více věrnosti." # todo: NEW TRANSLATION
  serbian_throne.13.f: "Jeden za druhým vstupovali zástupci určitých kruhů do dvora, aby hovořili o svých nedostatcích. Vždy to byli ti stejní. \n\nPeculiar okolnost, které si poradci [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] všimli během těchto setkání, byla hektická soutěž mezi skupinami. Rychle rozpoznali potenciál tuto soutěž využít k získání větší politické moci a byli si plně vědomi, že jde o transakci, nikoli o dar." # todo: NEW TRANSLATION
- serbian_throne.13.a: "Podpoříme [SCOPE.gsInterestGroup('campaign_ig_1').GetName]." # todo: NEW TRANSLATION
- serbian_throne.13.b: "Přivedeme [SCOPE.gsInterestGroup('campaign_ig_2').GetName] s sebou." # todo: NEW TRANSLATION
- serbian_throne.13.c: "Dlouhodobě nám prospěje podpora [SCOPE.gsInterestGroup('campaign_ig_3').GetName]." # todo: NEW TRANSLATION
+ serbian_throne.13.a: "Podpoříme [SCOPE.gsInterestGroup('campaign_ig_1').GetCustom('IG_A_TT')]." # todo: NEW TRANSLATION # todo: NAME CASE
+ serbian_throne.13.b: "Přivedeme [SCOPE.gsInterestGroup('campaign_ig_2').GetCustom('IG_A_TT')] s sebou." # todo: NEW TRANSLATION # todo: NAME CASE
+ serbian_throne.13.c: "Dlouhodobě nám prospěje podpora [SCOPE.gsInterestGroup('campaign_ig_3').GetCustom('IG_G_TT')]." # todo: NEW TRANSLATION # todo: NAME CASE
  serbian_throne.13.e: "Ta čest patří pouze nám." # todo: NEW TRANSLATION
  serbian_throne.13.accord_chosen_tt: "Kampaň brzy začne" # todo: NEW TRANSLATION
  serbian_throne.14.t: "Kampaň v [SCOPE.sState('campaign_state').GetName]" # todo: NEW TRANSLATION
@@ -362,9 +362,9 @@
  the_grand_collapse.3.t: "Zoufalá opatření" # todo: NEW TRANSLATION
  the_grand_collapse.3.d: "Při hledání potenciálních lidových vůdců, které bychom přesvědčili na naši stranu, předložili operativci několik možností." # todo: NEW TRANSLATION
  the_grand_collapse.3.f: "Ziyâfet-i Hükûmet — neboli Vládní banket — je chvíle, kdy [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] ukáže svou velkolepost všem důležitým hostům.\n\nZruční služebníci, hudebníci a kuchaři ze všech koutů světa se snaží zanechat trvalý dojem ve jménu svého pána.\n\nJe to také nevynechatelná příležitost pro pozvané notabili, když se zapojují do nevyřčené války konvencí." # todo: NEW TRANSLATION
- the_grand_collapse.3.a: "Chval [SCOPE.sCharacter('lobbied_ig_leader_1').GetFullName], vůdce [SCOPE.gsInterestGroup('lobbied_ig_1').GetName]." # todo: NEW TRANSLATION
- the_grand_collapse.3.b: "Oslovit [SCOPE.sCharacter('lobbied_ig_leader_2').GetFullName], vůdce [SCOPE.gsInterestGroup('lobbied_ig_2').GetName]." # todo: NEW TRANSLATION
- the_grand_collapse.3.c: "Nalákat [SCOPE.sCharacter('lobbied_ig_leader_3').GetFullName], vůdce [SCOPE.gsInterestGroup('lobbied_ig_3').GetName]." # todo: NEW TRANSLATION
+ the_grand_collapse.3.a: "Chval [SCOPE.sCharacter('lobbied_ig_leader_1').GetFullName], vůdce [SCOPE.gsInterestGroup('lobbied_ig_1').GetCustom('IG_G_TT')]." # todo: NEW TRANSLATION # todo: NAME CASE
+ the_grand_collapse.3.b: "Oslovit [SCOPE.sCharacter('lobbied_ig_leader_2').GetFullName], vůdce [SCOPE.gsInterestGroup('lobbied_ig_2').GetCustom('IG_G_TT')]." # todo: NEW TRANSLATION # todo: NAME CASE
+ the_grand_collapse.3.c: "Nalákat [SCOPE.sCharacter('lobbied_ig_leader_3').GetFullName], vůdce [SCOPE.gsInterestGroup('lobbied_ig_3').GetCustom('IG_G_TT')]." # todo: NEW TRANSLATION # todo: NAME CASE
  the_grand_collapse.4.t: "Vznešená Porta" # todo: NEW TRANSLATION
  the_grand_collapse.4.d: "Pořádek byl obnoven a nikdo nebude odporovat našemu právu vládnout, tak jak jsme činili po staletí. Velký pád byl odvrácen a sklízíme plody naší obratnosti." # todo: NEW TRANSLATION
  the_grand_collapse.4.f: "\"Ach, jak vzácný jsi, ó nadějo dni nevydaných—\nUvolňuješ svět od smutku a zoufalství.\n\nTvé je věk impéria; šíř svoji moc po zemi.\nAť Všemohoucí střeží tvůj osud před každou skrytou pastí.\n\nPouště, jež kdysi patřily tobě, jsou nyní v pazourech tyranie. Vzbuď se, ó zraněný lvě, z tohoto bezstarostného spánku!\"\n\n—Namık Kemal, \"Óda na svobodu\"" # todo: NEW TRANSLATION

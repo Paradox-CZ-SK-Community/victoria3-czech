@@ -243,7 +243,7 @@
  ig_suppression_events.1.a: "Jistě potřebují naše vedení."
  ig_suppression_events.1.b: "To je naprosto nemorální!"
  ig_suppression_tt: "To povede k událostem o oslabení moci skupiny [SCOPE.gsInterestGroup('suppressed_ig').GetName]."
- dismissed_ig_suppression_tt: "Příležitost je odmítnuta a [SCOPE.gsInterestGroup('suppressed_ig').GetName] potlačíme běžnými prostředky."
+ dismissed_ig_suppression_tt: "Příležitost je odmítnuta a [SCOPE.gsInterestGroup('suppressed_ig').GetCustom('IG_A_TT')] potlačíme běžnými prostředky." # todo: NAME CASE
  ig_suppression_events.2.t: "Proslýchá se"
  ig_suppression_events.2.d: "Zvěsti o hříšném životě postavy [SCOPE.sCharacter('suppressed_leader').GetFullName] ze skupiny [SCOPE.gsInterestGroup('target').GetName] byly vykonstruovány a jsou připraveny šířit se mezi masami jako požár."
  ig_suppression_events.2.f: "„Že udělali co komu? Tomu se nedá věřit! Takové skandální chování nelze v této zbožné zemi tolerovat! A potom na to navázali čím? Už to nedokážu poslouchat! Prosím, ušetřete mě toho utrpení! Skončete to už, zapřísahám vás! Zapřísahám vás!“"
@@ -740,7 +740,7 @@
  children_rights_events.6.d: "Někteří členové skupiny [SCOPE.gsInterestGroup('gatekeeper_ig').GetName] vyjádřili obavy ohledně prosazení zákona [SCOPE.sLaw('current_law_scope').GetName], protože se domnívají, že by ovlivnil zaměstnanost a podpořil agitaci mezi nižšími třídami."
  children_rights_events.6.f: "„Každý má své místo, že? Myslím, že na tom se všichni shodneme. Pokud tyto děti naučíme totéž, co učíme své vlastní děti, kdo jim zabrání chtít stejná zaměstnání?\n\nA kdo pak bude dělat to, co mají dělat ony? Vzdělávání pro vzdělávání je nesmysl, idylická utopie, která povede jen k bídě, prázdným továrnám a líným pracovníkům.“"
  children_rights_events.6.a: "Každý si zaslouží šanci."
- children_rights_events.6.b: "Řekněte [SCOPE.gsInterestGroup('gatekeeper_ig').GetName], že mají pravdu. Pak pokračujte v našem plánu."
+ children_rights_events.6.b: "Řekněte [SCOPE.gsInterestGroup('gatekeeper_ig').GetCustom('IG_D_TT')], že mají pravdu. Pak pokračujte v našem plánu." # todo: NAME CASE
  children_rights_events.6.c: "Měli by to považovat za akt dobročinnosti."
  gatekeeping_education_no: "Povinné vzdělávání"
  no_gatekeeping: "Povinné vzdělávání"
@@ -964,14 +964,14 @@
  exhibition_events.3.f: "„A tuto sochu jsme zachránili z moře,“ a poté byla vystavena poblíž ústřední fontány, stále poznamenaná vodou. „Odvážíš-li se pohlédnout skrz toto sklo, má drahá, spatříš ta nejopuštěnější souhvězdí.“\n\nNa druhé straně sálu vítal[ROOT.GetCountry.GetRuler.GetFullNameNoFormatting] všechny návštěvníky, celý v bílém.\n\nZněly trubky a jásot, hudba a kouř, úžas a ohromení — a byl tam život, tak zářivý."
  exhibition_events.3.a: "Úžasné. Prostě... úžasné."
  exhibition_events.4.t: "Doutnající podezření"
- exhibition_events.4.d: "Plánování výstavy vyvolává s blížícím se zahájením kontroverze. Členové [SCOPE.gsInterestGroup('conservative_ig').GetName] vyjádřili své obavy, že masa návštěvníků by se mohla stát potenciálním revolučním davem."
+ exhibition_events.4.d: "Plánování výstavy vyvolává s blížícím se zahájením kontroverze. Členové [SCOPE.gsInterestGroup('conservative_ig').GetCustom('IG_G_TT')] vyjádřili své obavy, že masa návštěvníků by se mohla stát potenciálním revolučním davem." # todo: NAME CASE
  exhibition_events.4.f: "„Pošetilost a nesmyslnost, s níž [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] dovoluje tuto cetku, musí udeřit do očí každému rozumnému a soudnému člověku, a jsem ohromen, že ministři sami netrvají na tom, aby [ROOT.GetCountry.GetRuler.GetHerHim] během výstavy alespoň odjel[ROOT.GetCountry.GetRuler.GetHerHis] do [SCOPE.sState('grand_exhibition_state').GetNameNoFormatting], neboť žádná lidská bytost nemůže ručit za to, co se při takové příležitosti může stát.\n\nTa představa... musí šokovat každého poctivého a dobře smýšlejícího [ROOT.GetCountry.GetAdjectiveNoFormatting] muže. Zdá se však, že všechno se spiklo, aby nás ponížilo v očích Evropy.“" #Ernest Augustus I of Hanover
  exhibition_events.4.a: "Jejich obavy jsou neopodstatněné."
  exhibition_events.4.b: "Velký příliv návštěvníků může způsobit určité problémy."
  ignored_conservatives_modifier: "Ignorované obavy ohledně výstavy"
  exhibition_controversy_tt: "Snižuje body #bold Světové výstavy#! o #bold 1#!"
  exhibition_events.5.t: "Za pár drobných"
- exhibition_events.5.d: "Členové [SCOPE.gsInterestGroup('anti_toilet_ig').GetName] výslovně prohlásili, že instalace veřejných toalet na výstavě poškodí její dobrou vůni i pověst."
+ exhibition_events.5.d: "Členové [SCOPE.gsInterestGroup('anti_toilet_ig').GetCustom('IG_G_TT')] výslovně prohlásili, že instalace veřejných toalet na výstavě poškodí její dobrou vůni i pověst." # todo: NAME CASE
  exhibition_events.5.f: "„Maminko, maminko! Musím na záchod! Kdyby tak vláda této země nainstalovala nějaké veřejné toalety!“\n\nAch, bože. Na tohle jsme nebyli připraveni."
  exhibition_events.5.a: "Její dobrá vůně a pověst by utrpěly víc, kdybychom je nenainstalovali."
  exhibition_events.5.b: "Kvůli tomu bychom neměli výstavu ohrozit."
@@ -992,7 +992,7 @@
  exhibition_events.7.b: "Pár drobných navíc se může hodit každému..."
  titanic.1.t: "Titanic"
  titanic.1.t2: "[SCOPE.GetRootScope.GetCountry.GetCustom('dynamic_titanic')]"
- titanic.1.d: "[SCOPE.sCharacter('titanic_leader').GetFullName] ze [SCOPE.gsInterestGroup('titanic_ig').GetName] se rozhodl sponzorovat výstavbu pamětihodného zaoceánského parníku v loděnicích státu [SCOPE.sState('titanic_state').GetName]. Bude to něco, co dosud nikdo neviděl."
+ titanic.1.d: "[SCOPE.sCharacter('titanic_leader').GetFullName] ze [SCOPE.gsInterestGroup('titanic_ig').GetCustom('IG_G_TT')] se rozhodl sponzorovat výstavbu pamětihodného zaoceánského parníku v loděnicích státu [SCOPE.sState('titanic_state').GetName]. Bude to něco, co dosud nikdo neviděl." # todo: NAME CASE
  titanic.1.f: "„Majestátnost, dokonalý odraz světla na jeho čtyřech černých komínech, stačily samy o sobě. Několik z nás, kteří si užívali svěží vzduch, se procházelo po palubě. Večer se nás zmocňuje pocit prázdnoty. Dítě stálo mlčky. Poté jsme už nedokázali promluvit.\n\nLoď, západ slunce — a nestoudný sen o budoucnosti, vykrystalizovaný.“"
  titanic.1.a: "Lidé budou mluvit o luxusu této lodi!"
  titanic.1.b: "Měli bychom její výstavbu zefektivnit."
@@ -1259,7 +1259,7 @@
  art_nouveau_strike_modifier: "Art Nouveau strefuje vkus"
  art_nouveau_love_modifier: "Okouzlení Art Nouveau"
  belle_epoque_events.3.t: "Les symbolů" #Baudelaire reference
- belle_epoque_events.3.d: "Po úspěšných publikacích symbolistického hnutí se [SCOPE.sCharacter('symbolist_leader').GetFullName] rozhodl vydat vlastní cestou a pustit se do své vlastní literární pouti, což je zdrojem obav pro [SCOPE.gsInterestGroup('symbolist_ig').GetName]."
+ belle_epoque_events.3.d: "Po úspěšných publikacích symbolistického hnutí se [SCOPE.sCharacter('symbolist_leader').GetFullName] rozhodl vydat vlastní cestou a pustit se do své vlastní literární pouti, což je zdrojem obav pro [SCOPE.gsInterestGroup('symbolist_ig').GetCustom('IG_A_TT')]." # todo: NAME CASE
  belle_epoque_events.3.f: "„A přece\ndávám přednost před vínem, ba i opiem,\nelixíru tvých rtů, na nichž se láska pyšní;\na v pustině touhy\nmi tvé oči skýtají studny, jež hasí mou žízeň.“" #Baudelaire again / forgive me for these events I've quoted way too much
  belle_epoque_events.3.a: "Zaslouží si mít soukromý život."
  belle_epoque_events.3.b: "To je neslýchané! Básník-politik!"
@@ -1389,7 +1389,7 @@
  modifier_fin_de_sicle: "Myšlení fin de siècle"
  modifier_fin_de_sicle_more: "Zesílené myšlení fin de siècle"
  belle_epoque_events.18.t: "Dekadence ve městě [SCOPE.sState('belle_epoque_state').GetCityHubName]"
- belle_epoque_events.18.d: "Umělci a autoři napojení na [SCOPE.gsInterestGroup('decadent_ig').GetName] začali čerpat uměleckou inspiraci z „dekadentního“ románu Jorise-Karla Huysmanse „Naruby“, který popisuje zážitky muže, jenž se uchyluje k hyperestetickým smyslovým prožitkům a idealistickému umění, aby unikl světu."
+ belle_epoque_events.18.d: "Umělci a autoři napojení na [SCOPE.gsInterestGroup('decadent_ig').GetCustom('IG_A_TT')] začali čerpat uměleckou inspiraci z „dekadentního“ románu Jorise-Karla Huysmanse „Naruby“, který popisuje zážitky muže, jenž se uchyluje k hyperestetickým smyslovým prožitkům a idealistickému umění, aby unikl světu." # todo: NAME CASE
  belle_epoque_events.18.f: "„Neexistuje jediný její výtvor, jakkoli jemný či působivý, který by lidský génius nedokázal vytvořit... O tom nemůže být pochyb: tuto věčnou, žvanivou stařenu již skuteční umělci neobdivují a nadešel čas nahradit ji umělostí.“"
  belle_epoque_events.18.a: "Samotná příručka dekadence."
  belle_epoque_events.18.b: "Jedovatý, rozkladný text."
