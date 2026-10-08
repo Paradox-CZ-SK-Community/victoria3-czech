@@ -230,7 +230,7 @@
  je_meiji_restoration_imperial_marriage: "Sjednat císařský sňatek"
  je_meiji_restoration_imperial_marriage_desc: "Projekt #b Kóbu gattai#! vyžaduje sjednocení v tom nejdoslovnějším smyslu – politický sňatek mezi vládnoucím $RULER_TITLE_SHOGUN$ a císařskou princeznou. Aby bylo možné toto spojení uskutečnit, musí být $RULER_TITLE_SHOGUN$ připraven splnit zásadní podmínky stanovené císařským dvorem."
  je_meiji_restoration_imperial_marriage_conditions_tt: "K dokončení [Concept('concept_journal_entry','záznamu v deníku')] #v $je_meiji_imperial_marriage$#!:\n• $im_closed_borders_tt$\n• $im_free_trade_tt$\n• $im_treaty_port_tt$\n• Pokud platí: #indent_newline:3 \n• $im_broken_applicable_treaty_tt$" # todo: CONCEPT CASE
- im_treaty_port_tt: "Žádný [Concept('concept_state','stát')] v [GetGeographicRegion('geographic_region_home_islands').GetName] není [Concept('concept_treaty_port','smluvním přístavě')]" # todo: CONCEPT CASE
+ im_treaty_port_tt: "Žádný [Concept('concept_state','stát')] v [GetGeographicRegion('geographic_region_home_islands').GetName] není [Concept('concept_treaty_port','smluvním přístavem')]" # todo: CONCEPT CASE
  im_closed_borders_tt: "Uzákonil jakoukoli variantu zákona [GetLawType('law_closed_borders').GetName]"
  im_free_trade_tt: "#b Neuzákonil#! žádnou variantu zákona [GetLawType('law_free_trade').GetName]"
  im_broken_applicable_treaty_tt: "Porušil [Concept('concept_treaty','smlouva')] s cizí [Concept('concept_country','zemí')], který obsahuje $trade_privilege$, $foreign_investment_rights$ nebo $law_commitment$" # todo: CONCEPT CASE
@@ -700,7 +700,7 @@
  all_has_unnecessary_promotion_tt: "Alespoň #v 7#! [Concept('concept_interest_group', '$concept_interest_groups$')] v [ROOT.GetCountry.GetName] mají #v $unnecessary_promotion$#!" # todo: CHANGED
  is_france_or_spain_tt: "Má [Concept('concept_primary_cultures','primární kultury')] [GetCulture('french').GetName] nebo [GetCulture('spanish').GetName]"
  is_producing_3_prestige_goods_tt: "#v 3#! [ROOT.GetCountry.GetAdjective] [Concept('concept_company', '$concept_companies$')] vyrábějí [Concept('concept_prestige_good', '$concept_prestige_goods$')]"
- achievement_knock_knock_tt: "Vynutila si [Concept('concept_treaty','smlouvě')] s jinou [Concept('concept_country','zemí')] hrozbou [Concept('concept_naval_hostilities','námořním nepřátelstvím')]" # todo: CONCEPT CASE
+ achievement_knock_knock_tt: "Vynutila si [Concept('concept_treaty','smlouvu')] s jinou [Concept('concept_country','zemí')] hrozbou [Concept('concept_naval_hostilities','námořním nepřátelstvím')]" # todo: CONCEPT CASE
  jap_abolish_edo_system: "$je_end_edo_system_button_name$" # todo: NEW TRANSLATION
  jap_abolish_edo_system_desc: "Starý kastovní systém brání sociální mobilitě potřebné pro moderní ekonomiku. Každý občan může být cennou součástí státu, bez ohledu na své postavení v životě." # todo: NEW TRANSLATION
  modifier_abolished_edo_system_positive: "Zrušen edský systém" # todo: NEW TRANSLATION

@@ -92,7 +92,7 @@
  NON_CARLIST_MONARCH: "Ne[GetIdeology('ideology_carlist').GetName|l] monarcha"
  NON_MIGUELIST_MONARCH: "Ne[GetIdeology('ideology_miguelist').GetName|l] monarcha"
  POOR_RELATIONS_WITH_PAPACY: "Špatné [Concept('concept_relations','vztahy')] s #b Papežskými státy#!"
- exile_old_ruler_tt: "[SCOPE.sCharacter('old_ruler_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('old_ruler_scope').GetFullName] uprchl do [Concept('concept_exile','exulanta')]" # todo: CONCEPT CASE
+ exile_old_ruler_tt: "[SCOPE.sCharacter('old_ruler_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('old_ruler_scope').GetFullName] uprchl do [Concept('concept_exile','exilu')]" # todo: CONCEPT CASE
  french_pretenders.6.t: "Prozatímní vláda"
  french_pretenders.6.d: "Krize v celé zemi [ROOT.GetCountry.GetName] se ukázala být nad síly [SCOPE.sCharacter('old_ruler_scope').GetFullName]. [SCOPE.sCharacter('monarch_scope').GetSheHe|U] byl nucen abdikovat a uprchnout ze země a byla vyhlášena prozatímní republikánská vláda."
  french_pretenders.6.f: "„Od toho dne vycházely z myslí inovátorů tisíce podivných systémů a šířily se v neklidných myslích davu. Všechno stále stálo kromě monarchie a parlamentu a zdálo se, že otřesem revoluce byla sama společnost rozprášena v prach a že nová podoba, kterou měla společnost získat, byla vystavena soutěži.“\n\n— Alexis de Tocqueville"
@@ -325,7 +325,7 @@
  1848.12.b: "Můžeme zavést část jejich navrhované pomoci."
  government_support_to_financially_distressed: "Podpora finančně strádajících"
  exiles_more_events.1.t: "Vlastenecké usmíření"
- exiles_more_events.1.d: "Tváří v tvář útoku na naši zemi nabídl [SCOPE.sCharacter('patriotic_exile_scope').GetFullName] své služby státu, který ho kdysi vyhnal do [Concept('concept_exile','exulanta')]. [SCOPE.gsInterestGroup('patriotic_exile_home_ig').GetName] tuto myšlenku obzvlášť nadšeně podporují." # todo: CONCEPT CASE
+ exiles_more_events.1.d: "Tváří v tvář útoku na naši zemi nabídl [SCOPE.sCharacter('patriotic_exile_scope').GetFullName] své služby státu, který ho kdysi vyhnal do [Concept('concept_exile','exilu')]. [SCOPE.gsInterestGroup('patriotic_exile_home_ig').GetName] tuto myšlenku obzvlášť nadšeně podporují." # todo: CONCEPT CASE
  exiles_more_events.1.f: "„V těchto těžkých časech musíme setřít rozdíly mezi lidmi. V obleženém táboře nemůže být vnitřní nepřítel. Pouze bratři ve zbrani mohou odolat náporu, kterému nyní naše země čelí.“"
  exiles_more_events.1.a: "Návrat [SCOPE.sCharacter('patriotic_exile_scope').GetLastName] vítáme!"
  exiles_more_events.1.b: "[SCOPE.sCharacter('patriotic_exile_scope').GetLastName] chce sloužit vlasti? Dejte [SCOPE.sCharacter('patriotic_exile_scope').GetHerHim] zbraň."
@@ -350,7 +350,7 @@
  exiles_more_events.4.a: "Vítáme [SCOPE.sCharacter('post_unification_agitator').GetFullName] s otevřenou náručí."
  exiles_more_events.4.b: "Nemáme důvod zvát potížisty."
  exiles_more_events.5.t: "Zvykání na odchod"
- exiles_more_events.5.d: "[SCOPE.sCharacter('experienced_exile').GetFullName], zkušený aktivista, zvažuje další odchod do [Concept('concept_exile','exulanta')] kvůli rostoucím problémům v [ROOT.GetCountry.GetAltAdjectiveNoFormatting('L')]." # todo: CONCEPT CASE
+ exiles_more_events.5.d: "[SCOPE.sCharacter('experienced_exile').GetFullName], zkušený aktivista, zvažuje další odchod do [Concept('concept_exile','exilu')] kvůli rostoucím problémům v [ROOT.GetCountry.GetAltAdjectiveNoFormatting('L')]." # todo: CONCEPT CASE
  exiles_more_events.5.f: "„Je zvláštní,“ povzdechl si, „že čím častěji odcházíte, tím méně to bolí.“ Usmál se, ale oči se mu zalily slzami."
  exiles_more_events.5.a: "Rozlučme se s [SCOPE.sCharacter('experienced_exile').GetFullName]."
  exiles_more_events.5.b: "Možná to ještě může vyjít."

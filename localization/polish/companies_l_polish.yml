@@ -42,8 +42,8 @@
  COMPANY_IS_NOT_PROSPEROUS: "@simple_box! $COMPANY_NAME$ je [Concept('concept_prosperity','$concept_prosperous$')]"
  COMPANY_PROSPERITY_SCRIPT_VALUE_FORMAT: "$VALUE|+=$ z $KEY$"
  COMPANY_EXECUTIVE_POPULARITY: "[Concept('concept_popularity','Popularita')] postavy [Company.GetExecutive.GetFullName] ([Company.GetExecutive.GetPopularity|v0])"
- COMPANY_EMPLOYED_LEVELS: "[Company.GetNumEmployedBuildingLevels|v] obsazených úrovní [Concept('concept_building','budovou')]" # todo: CONCEPT CASE
- COMPANY_CANNOT_DISBAND_COUNTRY_OWNER: "Tato [Concept('concept_company','společnost')] je vlastníkem [Concept('concept_country','zeměmi')] ([Country.GetName])" # todo: CONCEPT CASE
+ COMPANY_EMPLOYED_LEVELS: "[Company.GetNumEmployedBuildingLevels|v] obsazených úrovní [Concept('concept_building','budov')]" # todo: CONCEPT CASE
+ COMPANY_CANNOT_DISBAND_COUNTRY_OWNER: "Tato [Concept('concept_company','společnost')] je vlastníkem [Concept('concept_country','země')] ([Country.GetName])" # todo: CONCEPT CASE
  COMPANY_CANNOT_DISBAND_ON_COOLDOWN: "Tato [Concept('concept_company','společnost')] byla nedávno založena, nemůžeme ji rozpustit do [Date.GetString|v]"
  MAX_COMPANIES_DESC: "#header Maximální povolený počet $COMPANIES$: $MAX|v$#!\n$TOOLTIP_DELIMITER$\n$DETAILS$"
  MAX_COMPANIES_EMPTY: "Momentálně nemůžeme podporovat žádné $COMPANIES$"
@@ -87,7 +87,7 @@
  COMPANY_PROSPERITY_CHANGE_TOOLTIP: "[Company.GetProsperityChangeDesc]"
  PLUS_MINUS_ZERO: "#v +/-0#!"
  PROSPERITY_CHANGE: "[Company.GetProsperityChange|=+]"
- COMPANY_TYPE_NUM_BUILDING_LEVELS: "[CompanyType.GetNumBuildingLevels|v] úrovní [Concept('concept_building','budovou')]" # todo: CONCEPT CASE
+ COMPANY_TYPE_NUM_BUILDING_LEVELS: "[CompanyType.GetNumBuildingLevels|v] úrovní [Concept('concept_building','budov')]" # todo: CONCEPT CASE
  COMPANY_TYPE_PRODUCTIVITY: "@money![CompanyType.GetProductivity|1v] [Concept('concept_productivity','produktivita')]"
  COMPANY_TYPE_PRODUCTIVITY_TOOLTIP: "#header [Concept('concept_productivity','Produktivita')]#!: @money![CompanyType.GetProductivity|1v]\n$TOOLTIP_DELIMITER$\nCelosvětová průměrná produktivita: @money![CompanyType.GetAverageProductivity|v1]"
  COMPANY_PROSPERITY_MODIFIER: "[Company.GetCompanyType.GetProsperityModifier.GetDesc]"
@@ -224,7 +224,7 @@
  company_general_electric: "General Electric"
  company_us_steel: "Carnegie Steel Company"
  company_united_fruit: "United Fruit Company"
- company_united_fruit_possible_tt: "Jedna z následujících možností:\n• [Concept('concept_state','Státu')] je v oblasti [GetGeographicRegion('geographic_region_central_america').GetName]\n• [Concept('concept_state','Stát')] je v oblasti [GetGeographicRegion('geographic_region_south_america').GetName]" # todo: CONCEPT CASE
+ company_united_fruit_possible_tt: "Jedna z následujících možností:\n• [Concept('concept_state','Stát')] je v oblasti [GetGeographicRegion('geographic_region_central_america').GetName]\n• [Concept('concept_state','Stát')] je v oblasti [GetGeographicRegion('geographic_region_south_america').GetName]" # todo: CONCEPT CASE
  company_standard_oil: "Standard Oil"
  company_william_cramp: "William Cramp a synové"
  company_ford_motor: "Ford Motor Company"

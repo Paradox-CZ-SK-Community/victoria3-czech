@@ -923,7 +923,7 @@
  anarchy.1.a: "Nedostali víc, než si zasloužili."
  anarchy.1.b: "Terorismus nemůžeme tolerovat."
  anarchy.2.t: "Rozbití státu"
- anarchy.2.desc: "Jak se [ROOT.GetCountry.GetAltAdjective('I')] posouvá k [SCOPE.sLaw('current_law_scope').GetName], [SCOPE.gsInterestGroup('anarchists_scope').GetName] požadují zrušení státních institucí." # todo: CONCEPT CASE
+ anarchy.2.desc: "Jak se [ROOT.GetCountry.GetName] posouvá k [SCOPE.sLaw('current_law_scope').GetName], [SCOPE.gsInterestGroup('anarchists_scope').GetName] požadují zrušení státních institucí." # todo: CONCEPT CASE
  anarchy.2.f: "„Jak se můžeme nazývat anarchistickou společností, když stále udržujeme tyranii státu? Pachatelé státního násilí mezi námi nadále působí - policie, úředníci odvodu, koloniální správci - samí zrádci své třídy. Kradou plody naší práce a používají je k financování našeho vlastního útlaku!“"
  anarchy.2.a: "Pryč s policií!"
  anarchy.2.c: "Stát nemá právo nás ovládat!"
@@ -1209,7 +1209,7 @@
  1848.4.a: "Podpořit konzervativní řád."
  1848.4.b: "Podpořit radikální hnutí."
  modifier_springtime_of_the_peoples: "Jaro národů"
- peoples_springtime_underway_tt: "Každá #b evropská#! [Concept('concept_country','země')] s [Concept('concept_rank','hodností')] [Concept('concept_major_power','regionální mocností')] nebo vyšším zažívá #tooltippable;tooltip:[GetPlayer.GetTooltipTag],liberal_movements_list_tt Liberální#! nebo #tooltippable;tooltip:[GetPlayer.GetTooltipTag],socialist_movements_list_tt Socialistická#! [Concept('concept_revolution','revoluce')] ve svém [Concept('concept_capital_state','$concept_capital_state_short$')]" # todo: CHANGED # todo: CONCEPT CASE
+ peoples_springtime_underway_tt: "Každá #b evropská#! [Concept('concept_country','země')] s [Concept('concept_rank','hodností')] [Concept('concept_major_power','regionální mocnosti')] nebo vyšším zažívá #tooltippable;tooltip:[GetPlayer.GetTooltipTag],liberal_movements_list_tt Liberální#! nebo #tooltippable;tooltip:[GetPlayer.GetTooltipTag],socialist_movements_list_tt Socialistická#! [Concept('concept_revolution','revoluce')] ve svém [Concept('concept_capital_state','$concept_capital_state_short$')]" # todo: CHANGED # todo: CONCEPT CASE
  caused_by_liberal_or_socialist_movement_tt: "[Concept('concept_revolution', '$concept_revolutionary$')] [Concept('concept_political_movement','politické hnutí')] je #tooltippable;tooltip:[GetPlayer.GetTooltipTag],liberal_movements_list_tt Liberální#! nebo #tooltippable;tooltip:[GetPlayer.GetTooltipTag],socialist_movements_list_tt Socialistické#!" # todo: NEW TRANSLATION
  modifier_radical_movement_enhancement: "Radikální nálady"
  suppressing_radicals: "Potlačování radikálů"
@@ -1702,13 +1702,13 @@
  coop_migration_modifier: "Atraktivní družstva"
  the_navy_of_tomorrow: "Námořnictvo zítřka"
  notification_law_notification_advance_name: "Postup zákona"
- notification_law_notification_advance_desc: "[SCOPE.sLaw('current_law_scope').GetName] získal nové podporovatele, čímž se [Concept('concept_enactment_success','úspěšným uzákoněním zákona')] zvyšuje o 15 %" # todo: CONCEPT CASE
+ notification_law_notification_advance_desc: "[SCOPE.sLaw('current_law_scope').GetName] získal nové podporovatele, čímž se [Concept('concept_enactment_success','úspěšné uzákonění zákona')] zvyšuje o 15 %" # todo: CONCEPT CASE
  notification_law_notification_advance_tooltip: "#header $notification_law_notification_advance_name$#!\n$TOOLTIP_DELIMITER$\n$notification_law_notification_advance_desc$"
  notification_law_notification_debate_success_name: "Úspěšná debata o zákonu"
- notification_law_notification_debate_success_desc: "[SCOPE.sLaw('current_law_scope').GetName] byl projednán v politických kruzích s pozitivním výsledkem, čímž se [Concept('concept_enactment_success','úspěšným uzákoněním zákona')] zvyšuje o 10 %" # todo: CONCEPT CASE
+ notification_law_notification_debate_success_desc: "[SCOPE.sLaw('current_law_scope').GetName] byl projednán v politických kruzích s pozitivním výsledkem, čímž se [Concept('concept_enactment_success','úspěšné uzákonění zákona')] zvyšuje o 10 %" # todo: CONCEPT CASE
  notification_law_notification_debate_success_tooltip: "#header $notification_law_notification_debate_success_name$#!\n$TOOLTIP_DELIMITER$\n$notification_law_notification_debate_success_desc$"
  notification_law_notification_debate_fail_name: "Neúspěšná debata o zákonu"
- notification_law_notification_debate_fail_desc: "[SCOPE.sLaw('current_law_scope').GetName] si ve veřejných debatách vedl špatně, čímž se [Concept('concept_enactment_success','úspěšným uzákoněním zákona')] snižuje o 10 %" # todo: CONCEPT CASE
+ notification_law_notification_debate_fail_desc: "[SCOPE.sLaw('current_law_scope').GetName] si ve veřejných debatách vedl špatně, čímž se [Concept('concept_enactment_success','úspěšné uzákonění zákona')] snižuje o 10 %" # todo: CONCEPT CASE
  notification_law_notification_debate_fail_tooltip: "#header $notification_law_notification_debate_fail_name$#!\n$TOOLTIP_DELIMITER$\n$notification_law_notification_debate_fail_desc$"
  notification_law_notification_stall_name: "Zákon se zasekl"
  notification_law_notification_stall_desc: "[SCOPE.sLaw('current_law_scope').GetName] se nedaří získat podporu, postup se zastavil a [Concept('concept_enactment_success','úspěšné uzákonění zákona')] se snižuje o 15 %"
@@ -1747,12 +1747,12 @@
  protected_speech_tt: "Nelze [Concept('concept_bolster','posílení')] ani [Concept('concept_suppress','potlačení')] [Concept('concept_political_movement','$concept_political_movements$')|l]"
  heavenly.4.b: "Bůh je na jejich straně!"
  bic_breakup.1.t: "Konec britské nadvlády?"
- bic_breakup.1.d: "Bez vedení a podpory svého koloniálního vládce se [ROOT.GetCountry.GetAltAdjective('I')] nachází na pokraji zhroucení. Zdá se, že vláda [SCOPE.sCulture('british_culture').GetName] končí." # todo: CONCEPT CASE
+ bic_breakup.1.d: "Bez vedení a podpory svého koloniálního vládce se [ROOT.GetCountry.GetName] nachází na pokraji zhroucení. Zdá se, že vláda [SCOPE.sCulture('british_culture').GetName] končí." # todo: CONCEPT CASE
  bic_breakup.1.f: "„Opustit stanoviště? Jaké stanoviště, jaká armáda? Za pár hodin bude tohle místo zaplaveno hinduisty, nebo v plamenech, nebo obojí. Tak přestaň si stěžovat a vezmi ten pytel. Vezmi všechno cenné, co není přibité, a já zajistím cestu do Londýna.“"
  bic_breakup.1.a: "Indie bude rozdělena mezi knížata."
  bic_breakup.1.b: "Toto je zrození indického národa."
  bic_breakup.1.c: "Britská nadvláda musí být zachována za každou cenu."
- india_princes_independent_tt: "Všechny [Concept('concept_subject','závislou zemi')] země se stanou nezávislými a naše [Concept('concept_state', '$concept_states$')] budou mezi ně rozděleny." # todo: CONCEPT CASE
+ india_princes_independent_tt: "Všechny [Concept('concept_subject','závislé')] země se stanou nezávislými a naše [Concept('concept_state', '$concept_states$')] budou mezi ně rozděleny." # todo: CONCEPT CASE
  warlord_china_implosion_tt: "Naše [Concept('concept_state', '$concept_states$')] budou rozděleny mezi válečníky"
  dei_breakup.1.t: "Konec Východní Indie"
  dei_breakup.1.d: "Po ztrátě podpory svého koloniálního vládce se správa [ROOT.GetCountry.GetAltAdjective('G')] napříč indonéským souostrovím začala hroutit. Zdá se, že koloniální nadvláda konečně končí."
@@ -1760,6 +1760,6 @@
  dei_breakup.1.a: "Národy souostroví si vzaly své právo."
  dei_breakup.1.b: "Jedna vlast, jeden národ, jeden jazyk!"
  dei_breakup.1.c: "Budeme vzdorovat bouři, dokud nebudeme zachráněni."
- dei_vassals_independent_tt: "Všechny [Concept('concept_subject','závislou zemi')] země se stanou nezávislými a naše [Concept('concept_state', '$concept_states$')] budou mezi ně rozděleny." # todo: CONCEPT CASE
+ dei_vassals_independent_tt: "Všechny [Concept('concept_subject','závislé')] země se stanou nezávislými a naše [Concept('concept_state', '$concept_states$')] budou mezi ně rozděleny." # todo: CONCEPT CASE
  je_qa_test: "QA TEST"
  je_qa_test_reason: "Miluji QA"

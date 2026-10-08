@@ -349,7 +349,7 @@
  dp_unify_arabia_desc: "Nastavuje iniciující [Concept('concept_war_goal','válečný cíl')|l] na anexi všech menších arabských zemí."
  ARA_tt: "[SCOPE.sCountry('target_country').GetName] může vytvořit Arabii"
  dp_unify_india: "Spojit Indii"
- dp_unify_india_tooltip: "#header Zahajte $dp_unify_india$ [Concept('concept_diplomatic_play','diplomatickou hrou')|l]#!\n$TOOLTIP_DELIMITER$\n$dp_unify_india_desc$" # todo: CONCEPT CASE
+ dp_unify_india_tooltip: "#header Zahajte $dp_unify_india$ [Concept('concept_diplomatic_play','diplomatickou hru')|l]#!\n$TOOLTIP_DELIMITER$\n$dp_unify_india_desc$" # todo: CONCEPT CASE
  dp_unify_india_desc: "Nastavuje iniciující [Concept('concept_war_goal','válečný cíl')|l] na anexi všech menších indických zemí."
  BHT_tt: "[SCOPE.sCountry('target_country').GetName] může vytvořit Indii"
  indian_primary_culture_tt: "[SCOPE.sCountry('target_country').GetName] má indickou [Concept('concept_primary_cultures','primární kulturu')]"
@@ -412,7 +412,7 @@
  dp_sepoy_mutiny_tooltip: "#header Zahajte $dp_sepoy_mutiny$ [Concept('concept_diplomatic_play','diplomatická hra')|l]#!\n$TOOLTIP_DELIMITER$\n$dp_sepoy_mutiny_desc$"
  dp_sepoy_mutiny_desc: "Nastavuje iniciující [Concept('concept_war_goal','válečný cíl')|l] na úplné anektování cílové [Concept('concept_country','země')]."
  dp_taiping_rebellion: "Povstání tchaj-pchingů" # todo: MOVED KEY
- dp_taiping_rebellion_tooltip: "Spustí $dp_taiping_rebellion$ [Concept('concept_diplomatic_play','diplomatické hry')]" # todo: MOVED KEY # todo: CONCEPT CASE
+ dp_taiping_rebellion_tooltip: "Spustí $dp_taiping_rebellion$ [Concept('concept_diplomatic_play','diplomatickou hru')]" # todo: MOVED KEY # todo: CONCEPT CASE
  dp_native_uprising: "Domorodé povstání" # todo: MOVED KEY
  dp_native_uprising_tooltip: "Spustí $dp_native_uprising$ [Concept('concept_diplomatic_play','diplomatická hra')]" # todo: MOVED KEY
  dp_annex_war: "Anexe země" # todo: MOVED KEY
@@ -450,7 +450,7 @@
  war_goal_colonization_rights: "[WAR_GOAL_DRAFT.GetHolder.GetAdjectiveNoFormatting] [Concept('concept_colonization_rights','práva na kolonizaci')]"
  war_goal_colonization_rights_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] získává [Concept('concept_colonization_rights','práva na kolonizaci')] na [WAR_GOAL_DRAFT.GetTarget.GetName]."
  war_goal_force_nationalization_type_name: "Nutit nacionalizaci"
- war_goal_force_nationalization_type_desc: "Válečný cíl znárodnit všechny úrovně vlastněné cílovým [Concept('concept_country','zemím')] v naší [Concept('concept_country','zemi')] a odvolat [Concept('concept_foreign_investment_rights','práva na zahraniční investice')]." # todo: CONCEPT CASE
+ war_goal_force_nationalization_type_desc: "Válečný cíl znárodnit všechny úrovně vlastněné cílovým [Concept('concept_country','zemí')] v naší [Concept('concept_country','zemi')] a odvolat [Concept('concept_foreign_investment_rights','práva na zahraniční investice')]." # todo: CONCEPT CASE
  war_goal_force_nationalization: "Znárodnit všechny [WAR_GOAL_DRAFT.GetHolder.GetAdjectiveNoFormatting] budovy"
  war_goal_force_nationalization_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] znárodní všechny vlastnické úrovně budov [WAR_GOAL_DRAFT.GetTarget.GetName] ve všech [WAR_GOAL_DRAFT.GetHolder.GetAdjective] [Concept('concept_state', '$concept_states$')]. \n(Celkem #variable [WAR_GOAL_DRAFT.GetHolder.GetInvestmentLevelsInCountry(WAR_GOAL_DRAFT.GetTarget)]#! [Concept('concept_building_level', '$concept_building_levels$')], #variable [WAR_GOAL_DRAFT.GetHolder.GetInvestmentGdpFractionInCountry(WAR_GOAL_DRAFT.GetTarget)|%2]#! of [WAR_GOAL_DRAFT.GetHolder.GetAdjective] [Concept('concept_gdp', '$concept_gdp_short$')].)"
  war_goal_join_power_bloc_type_name: "Připojte se k mocenskému bloku"
@@ -526,7 +526,7 @@
  war_goal_take_treaty_port_type_desc: "Přinutit jiné [Concept('concept_country','země')] postoupit [Concept('concept_treaty_port','smluvní přístav')] v [Concept('concept_state','státě')]." # todo: CONCEPT CASE
  war_goal_take_treaty_port: "[WAR_GOAL_DRAFT.GetTargetState.GetStateRegion.GetName] [Concept('concept_treaty_port','smluvní přístav')]"
  war_goal_take_treaty_port_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] přinutí [WAR_GOAL_DRAFT.GetTarget.GetName] postoupit [Concept('concept_treaty_port','smluvní přístav')] v [WAR_GOAL_DRAFT.GetTargetState.GetStateRegion.GetName] [Concept('concept_state_region','státní oblasti')]." # todo: CONCEPT CASE
- war_goal_take_treaty_port_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že přinutíte [WAR_GOAL_DRAFT.GetWarGoalStakeholder.GetName] postoupit jim [Concept('concept_treaty_port','smluvnímu přístavu')] v [WAR_GOAL_DRAFT.GetTargetState.GetStateRegion.GetName] [Concept('concept_state_region','státní oblasti')]." # todo: CONCEPT CASE
+ war_goal_take_treaty_port_sway_desc: "Snažte se přimět [WAR_GOAL_DRAFT.GetHolder.GetName], aby se přidal na vaši stranu tím, že přinutíte [WAR_GOAL_DRAFT.GetWarGoalStakeholder.GetName] postoupit jim [Concept('concept_treaty_port','smluvní přístav')] v [WAR_GOAL_DRAFT.GetTargetState.GetStateRegion.GetName] [Concept('concept_state_region','státní oblasti')]." # todo: CONCEPT CASE
  war_goal_independence_type_name: "Nezávislost"
  war_goal_independence_type_desc: "Přinutit svého suzeréna udělit nezávislost vaší zemi a znárodnit všechny úrovně budov, které vlastní."
  war_goal_independence: "Nezávislost"

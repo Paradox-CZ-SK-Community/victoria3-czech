@@ -6,7 +6,7 @@
  has_any_secessionists_fail_tt: "Od země [ROOT.GetCountry.GetName] se odtrhly nějaké odštěpující se země."
  bic_collapse_var_tt: "[ROOT.GetCountry.GetName] již není [Concept('concept_subject','závislá země')]"
  secession_war_in_progress_tt: "[Concept('concept_political_movement','$movement_cultural_minority$')] se [Concept('concept_secession','odtrhává')]"
- bureaucrats_no_shortage_trigger: "[ROOT.GetCountry.GetAdjectiveNoFlag] [Concept('concept_bureaucracy','byrokracie')] je vyšší nebo rovna #v 0#! a země se #bold nechystá#! vstoupit do deficitu [Concept('concept_bureaucracy','byrokracii')]" # todo: CONCEPT CASE
+ bureaucrats_no_shortage_trigger: "[ROOT.GetCountry.GetAdjectiveNoFlag] [Concept('concept_bureaucracy','byrokracie')] je vyšší nebo rovna #v 0#! a země se #bold nechystá#! vstoupit do deficitu [Concept('concept_bureaucracy','byrokracie')]" # todo: CONCEPT CASE
  utilitarian.1.t: "Dobrá vláda pro všechny"
  utilitarian.1.d: "Principy ideologie [GetIdeology('ideology_utilitarian_millian').GetName] nyní hrají ústřední roli v tvorbě politiky země [ROOT.GetCountry.GetAdjective]. Správa byla zreformována tak, aby fungovala jako dobře promazaný stroj."
  utilitarian.1.f: "Oddanost osoby [SCOPE.sCharacter('relevant_character').GetFullNameNoFormatting] utilitarismu se prohloubila díky tomuto úspěchu při řízení rozvoje země [ROOT.GetCountry.GetNameNoFormatting]. Ačkoli někteří stále zpochybňují hodnotu přístupu osoby [SCOPE.sCharacter('relevant_character').GetLastNameNoFormatting] ke koloniální správě, [SCOPE.gsInterestGroup('relevant_ig').GetNameNoFormatting] vystoupili, aby se zasadili o utilitaristický přístup.\n\nZatímco lid Indie pokračuje ve svém životě, čas ukáže, zda plody práce správy budou tak trvalé a dalekosáhlé, jak všichni doufají. Tento úspěch je majákem pro budoucí reformu."
@@ -341,10 +341,10 @@
  notification_doctrine_of_lapse_reaction_message_desc: "Vztahy mezi zeměmi [ROOT.GetCountry.GetName] a [SCOPE.sCountry('bic_scope').GetName] se zhoršily poté, co země [SCOPE.sCountry('bic_scope').GetName] použila doktrínu odúmrti k anexi knížecího státu."
  notification_doctrine_of_lapse_reaction_message_tooltip: "#header $notification_doctrine_of_lapse_reaction_message_name$#!\n$TOOLTIP_DELIMITER$\n$notification_doctrine_of_lapse_reaction_message_desc$"
  notification_caste_hierarchy_appears_name: "Uznána nová sociální hierarchie"
- notification_caste_hierarchy_appears_desc: "Kastovní systém je uznanou [Concept('concept_social_hierarchy','sociální hierarchii')] v zemi [SCOPE.sCountry('relevant_country_scope').GetName]." # todo: CONCEPT CASE
+ notification_caste_hierarchy_appears_desc: "Kastovní systém je uznanou [Concept('concept_social_hierarchy','sociální hierarchií')] v zemi [SCOPE.sCountry('relevant_country_scope').GetName]." # todo: CONCEPT CASE
  notification_caste_hierarchy_appears_tooltip: "#header $notification_caste_hierarchy_appears_name$#!\n$TOOLTIP_DELIMITER$\n$notification_caste_hierarchy_appears_desc$"
  notification_caste_hierarchy_disappears_name: "Sociální hierarchie již není uznána"
- notification_caste_hierarchy_disappears_desc: "Kvůli nedávným kulturním a společenským změnám již kastovní systém není uznanou [Concept('concept_social_hierarchy','sociální hierarchii')] v zemi [SCOPE.sCountry('relevant_country_scope').GetName]." # todo: CONCEPT CASE
+ notification_caste_hierarchy_disappears_desc: "Kvůli nedávným kulturním a společenským změnám již kastovní systém není uznanou [Concept('concept_social_hierarchy','sociální hierarchií')] v zemi [SCOPE.sCountry('relevant_country_scope').GetName]." # todo: CONCEPT CASE
  notification_caste_hierarchy_disappears_tooltip: "#header $notification_caste_hierarchy_disappears_name$#!\n$TOOLTIP_DELIMITER$\n$notification_caste_hierarchy_disappears_desc$"
  je_dravidian_movement: "Drávidské hnutí"
  je_dravidian_movement_reason: "Prostý lid země [ROOT.GetCountry.GetName] zareagoval na neúměrné zastoupení a politickou moc bráhmanů. Po sérii protibráhmanských konferencí vzniklo drávidské hnutí a stanovilo si novou agendu odporu proti bráhmanské dominanci. Usiluje o odstranění kastovních rozdílů ze zákona a státní správy."
@@ -358,7 +358,7 @@
  current_system_supported: "Podpořena bráhmanská dominance"
  liberty_desire_hit: "Agenda vládce"
  erode_venkatappa_ramasamy_appears_tt: "E. V. Ramasamy se objeví v zemi [ROOT.GetCountry.GetNameNoFormatting]"
- an_agitator_appears_tt: "V zemi [ROOT.GetCountry.GetNameNoFormatting] se objeví [Concept('concept_agitator','agitátorem')]" # todo: CONCEPT CASE
+ an_agitator_appears_tt: "V zemi [ROOT.GetCountry.GetNameNoFormatting] se objeví [Concept('concept_agitator','agitátor')]" # todo: CONCEPT CASE
  caste_conflict.2.t: "Konečně rovnost"
  caste_conflict.2.d: "Úspěch agendy drávidského hnutí dohlédl na přijetí nového zákona a zlepšení kvality života nebráhmanů."
  caste_conflict.2.f: "Boj zdaleka neskončil, to Praveen Pallar věděl. Přesto se neubránil úsměvu, když se posadil v prosté vládní kanceláři a ventilátor nad ním mu jemně ochlazoval zpocená záda.\n\nNaproti sobě viděl pana Iyera a po levici seděl pan Agastya. Oba bráhmani z vysoké kasty. A tady byl on, Pallar, se stejným postavením a platem jako oni. Ani jeden se mu nezdál ochotný pohlédnout do očí. Ano, stále bylo co dělat, ale pro dnešek to stačilo. Poděkoval svým spojencům, kteří s ním pochodovali a protestovali, a otevřel svůj první spis."

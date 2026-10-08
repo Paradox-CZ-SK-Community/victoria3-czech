@@ -280,7 +280,7 @@
  secession_events.3.f: "„Slyšeli jste, kdo mluvil na jejich posledním shromáždění? Představte si, že opozice teď dodává věrohodnost propagandě kultury [SCOPE.sCulture('secessionist_culture').GetNameNoFormatting]! Úřadující vláda by takového řečníka nikdy nehostila. Což byl mimochodem přesně argument, který zazněl v samotném projevu.“"
  secession_events.3.a: "Politický vůdce z kultury [SCOPE.sCulture('secessionist_culture').GetName]? Nemyslitelné!"
  secession_events.3.b: "V zemi [ROOT.GetCountry.GetName] se může prosadit kdokoli."
- secessionist_agitator_tt: "V zemi [ROOT.GetCountry.GetName] se objeví [Concept('concept_agitator','agitátorem')] z kultury [SCOPE.sCulture('secessionist_culture').GetName]" # todo: CONCEPT CASE
+ secessionist_agitator_tt: "V zemi [ROOT.GetCountry.GetName] se objeví [Concept('concept_agitator','agitátor')] z kultury [SCOPE.sCulture('secessionist_culture').GetName]" # todo: CONCEPT CASE
  secessionist_leader_tt: "[Concept('concept_politician','Politik')] z kultury [SCOPE.sCulture('secessionist_culture').GetName] převezme vedení skupiny [SCOPE.gsInterestGroup('secessionist_ig').GetName]"
  secession_events.4.t: "Separatisté protestují"
  secession_events.4.d: "Zastánci separatistického hnutí kultury [SCOPE.sCulture('secessionist_culture').GetName] se shromáždili k veřejnému protestu."
@@ -496,7 +496,7 @@
  notification_colonial_conflict_demands_refused_desc: "[SCOPE.sCountry('african_colony_conflict_recipient').GetName] odmítla ustoupit a trvá na svém právu rozšířit svou kolonii ve státě [SCOPE.sState('african_colony_state_recipient').GetName]."
  notification_colonial_conflict_demands_refused_tooltip: "#header $notification_colonial_conflict_demands_refused_name$#!\n$TOOLTIP_DELIMITER$\n$notification_colonial_conflict_demands_refused_desc$"
  notification_colonial_conflict_region_demands_met_name: "[SCOPE.sCountry('african_colony_conflict_recipient').GetName] splnila naše požadavky!"
- notification_colonial_conflict_region_demands_met_desc: "[SCOPE.sCountry('african_colony_conflict_recipient').GetName] ustoupila od své expanze ve státě [SCOPE.sState('african_colony_state_recipient').GetName] a dala nám [Concept('concept_claim','nároku')] na svou kolonii." # todo: CONCEPT CASE
+ notification_colonial_conflict_region_demands_met_desc: "[SCOPE.sCountry('african_colony_conflict_recipient').GetName] ustoupila od své expanze ve státě [SCOPE.sState('african_colony_state_recipient').GetName] a dala nám [Concept('concept_claim','nárok')] na svou kolonii." # todo: CONCEPT CASE
  notification_colonial_conflict_region_demands_met_tooltip: "#header $notification_colonial_conflict_region_demands_met_name$#!\n$TOOLTIP_DELIMITER$\n$notification_colonial_conflict_region_demands_met_desc$"
  notification_colonial_conflict_region_demands_refused_name: "[SCOPE.sCountry('african_colony_conflict_recipient').GetName] odmítla naše požadavky!"
  notification_colonial_conflict_region_demands_refused_desc: "[SCOPE.sCountry('african_colony_conflict_recipient').GetName] neuznala náš oprávněný nárok na kolonii ve státě [SCOPE.sState('african_colony_state_recipient').GetName]."
@@ -1014,7 +1014,7 @@
  corn_laws.2.f: "„Ve principu volného obchodu spatřuji to, co bude působit na mravní svět tak, jako působí gravitační princip ve vesmíru — přitahovat lidi k sobě, odsouvat stranou nepřátelství rasy, vyznání a jazyka a spojovat nás pouty věčného míru. Pohlédl jsem ještě dál. Spekuloval jsem, a pravděpodobně snil, v mlhavé budoucnosti — ano, za tisíc let — spekuloval jsem o tom, jaký může být účinek vítězství tohoto principu. Věřím, že jeho účinkem bude proměnit tvář světa tak, aby byl zaveden systém vlády zcela odlišný od toho, který převládá nyní.“\n\n— Richard Cobden" # Richard Cobden
  corn_laws.2.a: "Inspirace pro naši dobu!"
  corn_laws.2.b: "Štvavé řečnění tuto politiku nezmění."
- corn_laws_agitator_appears_tt: "V zemi [ROOT.GetCountry.GetName] se objeví [Concept('concept_agitator','agitátorem')] skupiny [SCOPE.gsInterestGroup('pb_ig').GetName] s ideologií [GetIdeology('ideology_market_liberal').GetName]" # todo: CONCEPT CASE
+ corn_laws_agitator_appears_tt: "V zemi [ROOT.GetCountry.GetName] se objeví [Concept('concept_agitator','agitátor')] skupiny [SCOPE.gsInterestGroup('pb_ig').GetName] s ideologií [GetIdeology('ideology_market_liberal').GetName]" # todo: CONCEPT CASE
  corn_laws.3.t: "Zrno moci"
  corn_laws.3.d: "Obilní zákony, naše daně z dovozu obilí, poskytly třídám vlastníků půdy značnou hospodářskou páku, kterou využívají k udržení svého vlivu na politiku země [ROOT.GetCountry.GetAdjectiveNoFormatting]."
  corn_laws.3.f: "„Debatovat o hospodářské teorii je hezké, ale nesmíme odvracet zrak od reality, kterou tato teorie vytváří. Sliby obilních zákonů, že budou chránit zájmy země [ROOT.GetCountry.GetNameNoFormatting], znějí čím dál prázdněji. Spíše se zdá, že chrání zájmy několika vybraných občanů země [ROOT.GetCountry.GetAdjectiveNoFormatting]. Člověk se může ptát, kolik dalších zákonů je stejných.“"

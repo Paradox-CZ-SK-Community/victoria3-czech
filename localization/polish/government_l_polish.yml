@@ -353,7 +353,7 @@
  gov_oriental_orthodox_theocracy: "Orientální pravoslavná teokracie"
  gov_oriental_orthodox_theocracy_desc: "[Concept('concept_government_type','Typ vlády')] řízený orientální pravoslavnou církví. Veden [Concept('concept_ruler','$RULER_PATRIARCH$')], církev ovládá všechny aspekty státu.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_sunni_theocracy: "Imámat"
- gov_sunni_theocracy_desc: "Teokratické [Concept('concept_government_type','typ vlády')], ovládané vůdci sunnitské muslimské víry. Vyšší [Concept('concept_ruler','$RULER_IMAM$')] zaujímá roli [Concept('concept_head_of_state','hlavu státu')].\n\n$TRANSFER_OF_POWER_NAME_DESC$" # todo: CONCEPT CASE
+ gov_sunni_theocracy_desc: "Teokratické [Concept('concept_government_type','typ vlády')], ovládané vůdci sunnitské muslimské víry. Vyšší [Concept('concept_ruler','$RULER_IMAM$')] zaujímá roli [Concept('concept_head_of_state','hlavy státu')].\n\n$TRANSFER_OF_POWER_NAME_DESC$" # todo: CONCEPT CASE
  gov_papacy: "Papežství"
  gov_papacy_desc: "[Concept('concept_government_type','Typ vlády')], řízené [Concept('concept_ruler','$RULER_POPE$')], nejvyšším pontifikem, biskupem Říma a hlavou Katolické církve.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_jewish_theocracy: "Rabbínský stát"
@@ -363,7 +363,7 @@
  gov_zaidi_imamate: "Zaidi imámet"
  gov_zaidi_imamate_desc: "[Concept('concept_government_type','Typ vlády')], kde moc spočívá v rukou polo-dědičném [Concept('concept_ruler','$RULER_IMAM$')] patřícímu k zaiditské větvi šíitského islámu.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_shiite_theocracy: "Šíitská teokracie"
- gov_shiite_theocracy_desc: "Teokratické [Concept('concept_government_type','typ vlády')], ovládané vůdci šíitské muslimské víry. Vyšší [Concept('concept_ruler','$RULER_AYATOLLAH$')] zaujímá roli [Concept('concept_head_of_state','hlavu státu')].\n\n$TRANSFER_OF_POWER_NAME_DESC$" # todo: CONCEPT CASE
+ gov_shiite_theocracy_desc: "Teokratické [Concept('concept_government_type','typ vlády')], ovládané vůdci šíitské muslimské víry. Vyšší [Concept('concept_ruler','$RULER_AYATOLLAH$')] zaujímá roli [Concept('concept_head_of_state','hlavy státu')].\n\n$TRANSFER_OF_POWER_NAME_DESC$" # todo: CONCEPT CASE
  gov_bhutanese_dual_system_dharma: "Bhutánská diarchie"
  gov_bhutanese_dual_system_dharma_desc: "[Concept('concept_government_type','Typ vlády')], kde si duchovní a světské autority dělí moc, ale duchovní [Concept('concept_ruler','$RULER_TITLE_DHARMA_RAJA$')] má větší vliv.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_dalai_lama: "Náboženské království"
@@ -901,7 +901,7 @@
  transfer_of_power_parliamentary_elective: "Parlamentní výběr"
  transfer_of_power_parliamentary_elective_desc: "Pod parlamentní volbou [Concept('concept_transfer_of_power','přenosem moci')], [Concept('concept_ruler', '$concept_rulers$')] jsou vybráni z vůdce [Concept('concept_interest_group','zájmová skupina')] v [Concept('concept_government_type','typu vlády')] s největším [Concept('concept_clout','politickým vlivem')]." # todo: CONCEPT CASE
  transfer_of_power_dictatorial: "Diktátorské"
- transfer_of_power_dictatorial_desc: "Pod diktátorským [Concept('concept_transfer_of_power','přenosem moci')], [Concept('concept_ruler', '$concept_rulers$')] vládnou po celý život. Po smrti $concept_ruler$ je nový $concept_ruler$ vybrán z lídra [Concept('concept_interest_group','zájmovou skupinu')] s největším [Concept('concept_clout','politickým vlivem')]." # todo: CONCEPT CASE
+ transfer_of_power_dictatorial_desc: "Pod diktátorským [Concept('concept_transfer_of_power','přenosem moci')], [Concept('concept_ruler', '$concept_rulers$')] vládnou po celý život. Po smrti $concept_ruler$ je nový $concept_ruler$ vybrán z lídra [Concept('concept_interest_group','zájmové skupiny')] s největším [Concept('concept_clout','politickým vlivem')]." # todo: CONCEPT CASE
  transfer_of_power_default: "Náhodně"
  transfer_of_power_default_desc: "Pod náhodným [Concept('concept_transfer_of_power','přenosem moci')], [Concept('concept_ruler', '$concept_rulers$')] vládnou po celý život. Po smrti $concept_ruler$ je nový $concept_ruler$ náhodně generován." # todo: CONCEPT CASE
  TRANSFER_OF_POWER_NAME_DESC: "Tento typ vlády přijímá #tooltippable #tooltip:[GovernmentType.GetTooltipTag],TRANSFER_OF_POWER_TOOLTIP_DESC [GovernmentType.GetTransferOfPowerName|l]#!#! [Concept('concept_transfer_of_power','přenos moci')|l]"

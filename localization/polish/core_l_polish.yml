@@ -41,7 +41,7 @@
  INTEREST_GROUP_STATE_TOOLTIP: "#variable [INTEREST_GROUP.GetName]#! v #variable [STATE.GetName]#!\n[Concept('concept_political_strength','Politická síla')]: #variable [INTEREST_GROUP.GetPoliticalStrengthInState(STATE.Self)|D]#!\n$TOOLTIP_DELIMITER$\n[Concept('concept_pop','$concept_population$')]: #variable [INTEREST_GROUP.GetPopulationInState(STATE.Self)|D]#!"
  INTEREST_GROUP_WILL_JOIN_PARTY: "Připojí se k [PARTY.GetNameNoFormatting] v příštích [Concept('concept_election','volbách')]"
  INTEREST_GROUP_WILL_JOIN_PARTY_TOOLTIP: "[InterestGroup.GetName] se rozhodli, že se připojí k [PARTY.GetName] na začátku příští [Concept('concept_election','volební')] kampaně ([GetPlayer.GetNextStartOfCampaignDate|v])"
- INTEREST_GROUP_WILL_LEAVE_PARTY: "Opustí [PARTY.GetNameNoFormatting] při příštích [Concept('concept_election','voleb')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ INTEREST_GROUP_WILL_LEAVE_PARTY: "Opustí [PARTY.GetNameNoFormatting] při příštích [Concept('concept_election','volbách')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  INTEREST_GROUP_WILL_LEAVE_PARTY_TOOLTIP: "[InterestGroup.GetName] se rozhodli, že opustí [PARTY.GetName] na začátku příští kampaně [Concept('concept_election','volby')] ([GetPlayer.GetNextStartOfCampaignDate|v])" # todo: NEW TRANSLATION
  AFFILIATION: "Afiliace"
  INTEREST_GROUP_AFFILIATION_TOOLTIP: "#HEADER Aktuální stranická afiliace#!\n[PARTY.GetName] [Party.GetMembersSummary]\n$TOOLTIP_DELIMITER$\n$AFFILIATION_DETAILS$"
@@ -182,13 +182,13 @@
  DEPLOY_MILITARY_FORMATION_TO_FRONT_INVADING: "$FORMATION_NAME$ #b nelze#! nasadit na $FRONT_NAME$, protože se účastní probíhající [Concept('concept_invasion','invaze')|l]"
  DEPLOY_MILITARY_FORMATION_TO_FRONT_UNREACHABLE: "$FORMATION_NAME$ #b nemůže#! dosáhnout $FRONT_NAME$"
  DEPLOY_MILITARY_FORMATION_TO_FRONT_NOT_A_PARTICIPANT: "Nelze nasadit $FORMATION_NAME$ na $FRONT_NAME$: $COUNTRY_NAME$ není účastníkem na $FRONT_NAME$"
- DEPLOY_MILITARY_FORMATION_TO_FRONT_INVASION_IS_NOT_PREPARED: "Nelze nasadit [Concept('concept_military_formation', 'formaci')] na [Front.GetName]: [Concept('concept_front','frontu')] [Concept('concept_naval_invasion','námořní invazi')|l] ještě není připravena" # todo: CONCEPT CASE
+ DEPLOY_MILITARY_FORMATION_TO_FRONT_INVASION_IS_NOT_PREPARED: "Nelze nasadit [Concept('concept_military_formation', 'formaci')] na [Front.GetName]: [Concept('concept_front','frontu')] [Concept('concept_naval_invasion','námořní invaze')|l] ještě není připravena" # todo: CONCEPT CASE
  DEPLOY_MILITARY_FORMATION_TO_FRONT_INVADER_ALLY: "Nelze nasadit formace k spojenecké [Concept('concept_naval_invasion','námořní invazi')]"
  DEPLOY_MILITARY_FORMATION_TO_SEA_NODE_REDUNDANT: "$FORMATION_NAME$ již je nasazen na $SEA_NODE_NAME$"
  DEPLOY_MILITARY_FORMATION_TO_SEA_NODE_INVADING: "$FORMATION_NAME$ #b nelze#! nasadit do $SEA_NODE_NAME$, protože se účastní probíhající [Concept('concept_invasion','invaze')]"
  DEPLOY_MILITARY_FORMATION_TO_SEA_NODE_UNREACHABLE: "$FORMATION_NAME$ #b nemůže#! dosáhnout $SEA_NODE_NAME$"
  DEPLOY_MILITARY_FORMATION_TO_SEA_NODE_BATTLING: "$FORMATION_NAME$ #b nemůže#! být nasazen na $SEA_NODE_NAME$, protože se účastní aktivního [Concept('concept_battle','bitvy')]" # todo: CONCEPT CASE
- DEPLOY_MILITARY_FORMATION_TO_SEA_NODE_NOT_A_SEA_NODE: "Nelze nasadit $FORMATION_NAME$ do $STATE_REGION$: $STATE_REGION$ není [Concept('concept_sea_node','námořního uzlu')]" # todo: CONCEPT CASE
+ DEPLOY_MILITARY_FORMATION_TO_SEA_NODE_NOT_A_SEA_NODE: "Nelze nasadit $FORMATION_NAME$ do $STATE_REGION$: $STATE_REGION$ není [Concept('concept_sea_node','námořním uzlem')]" # todo: CONCEPT CASE
  DEPLOY_MILITARY_FORMATION_TO_SEA_NODE_NO_ADMIRALS: "$FORMATION_NAME$ #b nemůže#! být nasazen na $SEA_NODE_NAME$, protože nemá žádné velící [Concept('concept_admiral','admíraly')]"
  SPLIT_MILITARY_FORMATION_INVADING: "Nelze rozdělit [Concept('concept_military_formation','formaci')], protože se účastní probíhající [Concept('concept_invasion','invaze')]"
  MERGE_MILITARY_FORMATIONS_DESC: "[ConcatIfNeitherEmpty('$ERRORS$', '\n\n')][Concept('concept_unit','$concept_units$')] a [Concept('concept_commander','$concept_commanders$')|l] budou převedeni do [MilitaryFormation.GetName]"

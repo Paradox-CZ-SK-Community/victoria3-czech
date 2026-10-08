@@ -2,14 +2,14 @@
  ld_level_low: "Nízká"
  ld_level_moderate: "Mírná"
  ld_level_high: "Vysoká"
- LIBERTY_DESIRE_LEVEL_BOUNDS_DESC: "Platí mezi [LibertyDesireLevel.GetLowerBound|v0] a [LibertyDesireLevel.GetUpperBound|v0] [Concept('concept_liberty_desire','touhou po svobodě')]" # todo: CONCEPT CASE
+ LIBERTY_DESIRE_LEVEL_BOUNDS_DESC: "Platí mezi [LibertyDesireLevel.GetLowerBound|v0] a [LibertyDesireLevel.GetUpperBound|v0] [Concept('concept_liberty_desire','touhy po svobodě')]" # todo: CONCEPT CASE
  LIBERTY_DESIRE_LEVEL_NO_EFFECT: "#italic Žádný účinek#!"
  LIBERTY_DESIRE_LEVEL_ACTIVE: "#i #b (Aktivní v současnosti)#!#!"
  LIBERTY_DESIRE_LEVEL_TOOLTIP: "[SelectLocalization( LibertyDesireLevel.IsActive( Country.GetLibertyDesireRaw ), 'LIBERTY_DESIRE_LEVEL_ACTIVE_TOOLTIP', 'LIBERTY_DESIRE_LEVEL_INACTIVE_TOOLTIP' )]"
  LIBERTY_DESIRE_LEVEL_INACTIVE_TOOLTIP: "#header [LibertyDesireLevel.GetNameNoFormatting]#!\n$LIBERTY_DESIRE_LEVEL_BOUNDS_DESC$\n$TOOLTIP_DELIMITER$\n#title Účinky na [Country.GetName]:#!#indent_newline:2 \n[LibertyDesireLevel.GetEffects]#!"
  LIBERTY_DESIRE_LEVEL_ACTIVE_TOOLTIP: "#header [LibertyDesireLevel.GetNameNoFormatting]#! $LIBERTY_DESIRE_LEVEL_ACTIVE$\n$LIBERTY_DESIRE_LEVEL_BOUNDS_DESC$\n$LIBERTY_DESIRE_LEVEL_CURRENT_LIBERTY_DESIRE_DESC$\n$TOOLTIP_DELIMITER$\n[Country.GetWeeklyLibertyDesireChangeDesc]\n\nÚčinky na [Country.GetName]:#indent_newline:2 \n[LibertyDesireLevel.GetEffects]#!"
  LIBERTY_DESIRE_LEVEL_CURRENT_LIBERTY_DESIRE_DESC: "Aktuální hodnota [Concept('concept_liberty_desire','touha po svobodě')]: [Country.GetLibertyDesireRaw|v0]"
- COUNTRY_LIBERTY_DESIRE_ACTIVE_LEVEL_BOUNDS_DESC: "Platí mezi [Country.CalcLibertyDesireLevel.GetLowerBound|v0] a [Country.CalcLibertyDesireLevel.GetUpperBound|v0] [Concept('concept_liberty_desire','touhou po svobodě')]" # todo: CONCEPT CASE
+ COUNTRY_LIBERTY_DESIRE_ACTIVE_LEVEL_BOUNDS_DESC: "Platí mezi [Country.CalcLibertyDesireLevel.GetLowerBound|v0] a [Country.CalcLibertyDesireLevel.GetUpperBound|v0] [Concept('concept_liberty_desire','touhy po svobodě')]" # todo: CONCEPT CASE
  COUNTRY_LIBERTY_DESIRE_ACTIVE_LEVEL_TOOLTIP: "#header [Country.GetAltAdjective('aa')] touha po svobodě je [Country.CalcLibertyDesireLevel.GetNameNoFormatting|l]#!\n$COUNTRY_LIBERTY_DESIRE_ACTIVE_LEVEL_BOUNDS_DESC$\n$LIBERTY_DESIRE_LEVEL_CURRENT_LIBERTY_DESIRE_DESC$\n$TOOLTIP_DELIMITER$\n[Country.GetWeeklyLibertyDesireChangeDesc]\n\n#title Účinky na [Country.GetName]:#!#indent_newline:2 \n[Country.CalcLibertyDesireLevel.GetEffects]#!"
  LIBERTY_DESIRE_LEVEL_SWAY_WAR_GOAL_DESC: "Umožňuje vyžadovat #b $WAR_GOAL$#! jako [Concept('concept_war_goal','válečný cíl')]"
  TOOLTIP_TYPE_LIBERTY_DESIRE_LEVEL: "Úroveň touhy po svobodě"
