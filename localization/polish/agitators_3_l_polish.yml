@@ -89,11 +89,11 @@
  wedding.3.f: "„Říká se, že [SCOPE.sCharacter('abdicating_monarch').GetPrimaryRoleTitle] se zbláznil. Prý se pokusil oženit se svým koněm nebo tak něco.“\n\n„Jaké nesmysly čteš v [SCOPE.GetRootScope.GetCountry.GetCustom('generic_newspaper_type')]? Jde o vznešenější záležitosti, zjevně související se situací [SCOPE.gsInterestGroup('monarch_ig').GetNameNoFormatting].“\n\n„Není to nic složitého. Všichni toho [SCOPE.sCharacter('abdicating_monarch').GetPrimaryRoleTitle] nenávidí, takže musí pryč. Prostá demokracie.“"
  wedding.3.a: "Uspořádat soukromou, elitní korunovaci."
  wedding.3.b: "Uspořádat velkolepou veřejnou korunovaci."
- ALL_POPS: "[Concept('concept_pop', '$concept_pops$')]"
+ ALL_POPS: "[Concept('concept_pop','Populace')]"
  POP_ATHEISTS: "Ateisté"
  POP_MIDDLE_STRATA: "[Concept('concept_middle_strata','Střední třída')]"
  POP_LOWER_STRATA: "[Concept('concept_lower_strata','Nižší třída')]"
- POP_UNEMPLOYED_STATE: "[Concept('concept_pop', '$concept_pops$')] žijící ve [Concept('concept_state', '$concept_states$')] s vysokou [Concept('concept_unemployed','$concept_unemployment$')]"
+ POP_UNEMPLOYED_STATE: "[Concept('concept_pop','Populace')] žijící ve [Concept('concept_state','státech')] s vysokou [Concept('concept_unemployed','nezaměstnaností')]" # todo: CONCEPT CASE
  je_french_foreign_legion: "Francouzská cizinecká legie"
  je_french_foreign_legion_reason: "Pokud chceme vládnout v Africe, musíme na kontinentu vybudovat trvalou vojenskou přítomnost. Musíme být připraveni přijmout, že tyto jednotky budou rekrutovány z místního obyvatelstva i z odvážných či zoufalých vojáků cizích zemí."
  algeria_events.9.t: "Francouzská cizinecká legie"
@@ -149,7 +149,7 @@
  exiles_events.100.a: "Vyhostili jsme ho z dobrého důvodu."
  exiles_events.100.b: "Vítej doma!"
  repatriated_agitator: "Repatriovaný agitátor"
- exiling_dissident_radicals_factors: "Množství [Concept('concept_radical','$concept_radicals$')] závisí na našem zákonu o svobodě projevu [Concept('concept_law', '$concept_laws$')] a na [Concept('concept_popularity','popularitu')] [Concept('concept_character','postavy')]" # todo: CONCEPT CASE
+ exiling_dissident_radicals_factors: "Množství [Concept('concept_radical','radikálové')] závisí na našem zákonu o svobodě projevu [Concept('concept_law', '$concept_laws$')] a na [Concept('concept_popularity','popularitu')] [Concept('concept_character','postavy')]" # todo: CONCEPT CASE
  ideology_positivist: "Pozitivista"
  ideology_positivist_desc: "Tato postava je zapálený technokrat a antiklerikál, opovrhující jak svévolnou mocí panovníků, tak vrtkavými náladami veřejnosti."
  law_technocracy: "Technokracie"

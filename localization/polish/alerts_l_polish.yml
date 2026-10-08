@@ -11,7 +11,7 @@
  alert_formable_possible_desc: "Můžeme vytvořit nový národ [SCOPE.GetRootScope.GetCountryFormation.GetName|v]."
  alert_formable_possible_hint: "Nový národ můžete vytvořit v panelu diplomacie"
  alert_formable_possible_action: "Panel diplomacie"
- alert_major_formable_possible_name: "Možné [Concept('concept_unification', '$concept_major_unification$')|l]: [SCOPE.GetRootScope.GetCountryFormation.GetName]"
+ alert_major_formable_possible_name: "Možné [Concept('concept_unification','významné sjednocení')|l]: [SCOPE.GetRootScope.GetCountryFormation.GetName]"
  alert_major_formable_possible_desc: "$alert_formable_possible_desc$"
  alert_major_formable_possible_hint: "$alert_formable_possible_hint$"
  alert_major_formable_possible_action: "$alert_formable_possible_action$"
@@ -52,24 +52,24 @@
  alert_vulnerable_front_hint: "Můžete najmout [Concept('concept_general', 'generály')] nebo jim dát příkazy v panelu vojenského."
  alert_vulnerable_front_action: "Panel fronty"
  alert_invasion_name: "[SCOPE.GetRootScope.GetInvasion.GetName]"
- alert_invasion_desc: "Jste aktuálně [Concept('concept_invasion','$concept_invaded$')|l] [SCOPE.GetRootScope.GetInvasion.GetInvaderCountry.GetName] v [SCOPE.GetRootScope.GetInvasion.GetEnemyState.GetName]."
+ alert_invasion_desc: "Jste aktuálně [Concept('concept_invasion','napadený')|l] [SCOPE.GetRootScope.GetInvasion.GetInvaderCountry.GetName] v [SCOPE.GetRootScope.GetInvasion.GetEnemyState.GetName]."
  alert_invasion_hint: "Můžete poslat další [Concept('concept_army','armády')] do #v [SCOPE.GetRootScope.GetInvasion.GetFront.GetName]#! a/nebo poslat [Concept('concept_mobilize_army','mobilizované')] [Concept('concept_army','armády')] chránit [SCOPE.GetRootScope.GetInvasion.GetDefenderHQ.GetName]."
  alert_invasion_action: "Panel invaze"
  alert_naval_invasion_name: "[SCOPE.GetRootScope.GetInvasion.GetName]"
- alert_naval_invasion_desc: "Jste aktuálně [Concept('concept_naval_invasion','$concept_naval_invaded$')|l] [SCOPE.GetRootScope.GetInvasion.GetInvaderCountry.GetName] v [SCOPE.GetRootScope.GetInvasion.GetEnemyState.GetName]."
+ alert_naval_invasion_desc: "Jste aktuálně [Concept('concept_naval_invasion','napaden z moře')|l] [SCOPE.GetRootScope.GetInvasion.GetInvaderCountry.GetName] v [SCOPE.GetRootScope.GetInvasion.GetEnemyState.GetName]."
  alert_naval_invasion_hint: "Můžete poslat další [Concept('concept_fleet','flotily')] do #v [SCOPE.GetRootScope.GetInvasion.GetSeaNodeName]#! a potopit nepřátelské flotily, a/nebo poslat [Concept('concept_mobilize_army','mobilizované')] [Concept('concept_army','armády')] chránit [SCOPE.GetRootScope.GetInvasion.GetDefenderHQ.GetName]."
  alert_naval_invasion_action: "Panel invaze"
  alert_stalled_invasion_name: "Uvíznutá [Concept('concept_invasion','invaze')|l]"
- alert_stalled_invasion_desc: "Vaše [SCOPE.GetRootScope.GetInvasion.GetName] nebude moci postoupit, protože žádný z útočících [Concept('concept_general','generálů')|l] nemá [Concept('concept_order','$concept_orders$')|l], které by mu umožňovalo zahájit [Concept('concept_battle','bitvu')]." # todo: CONCEPT CASE
+ alert_stalled_invasion_desc: "Vaše [SCOPE.GetRootScope.GetInvasion.GetName] nebude moci postoupit, protože žádný z útočících [Concept('concept_general','generálů')|l] nemá [Concept('concept_order','rozkazy')|l], které by mu umožňovalo zahájit [Concept('concept_battle','bitvu')]." # todo: CONCEPT CASE
  alert_stalled_invasion_hint: "Můžete změnit rozkazy svých generálů na takové, které jim umožní zahájit bitvy, například [GetCommanderOrderType('advance').GetName]."
  alert_stalled_invasion_action: "Panel invaze"
  alert_stalled_naval_invasion_name: "Uvíznutá [Concept('concept_naval_invasion','námořní invaze')|l]"
- alert_stalled_naval_invasion_desc: "Váš [SCOPE.GetRootScope.GetInvasion.GetName] nebude schopen postoupit k vylodění jednotek, protože žádný z útočících [Concept('concept_general','generálů')] nemá [Concept('concept_order','$concept_orders$')] umožňující zahájit [Concept('concept_battle','bitva')]." # todo: CHANGED # todo: CONCEPT CASE
+ alert_stalled_naval_invasion_desc: "Váš [SCOPE.GetRootScope.GetInvasion.GetName] nebude schopen postoupit k vylodění jednotek, protože žádný z útočících [Concept('concept_general','generálů')] nemá [Concept('concept_order','rozkazy')] umožňující zahájit [Concept('concept_battle','bitva')]." # todo: CHANGED # todo: CONCEPT CASE
  alert_stalled_naval_invasion_hint: "Můžete změnit $concept_orders$ vašich $concept_generals$ na Advance, což jim umožní zahajovat bitvy." # todo: CHANGED
  alert_stalled_naval_invasion_action: "Panel invaze"
  alert_low_organization_active_name: "Nízká [Concept('concept_organization','organizace')|l]: [SCOPE.GetRootScope.GetMilitaryFormation.GetName] na [Concept('concept_front','fronte')]"
  alert_low_organization_active_desc: "[SCOPE.GetRootScope.GetMilitaryFormation.GetName] má [SCOPE.GetRootScope.GetMilitaryFormation.GetOrganization] [Concept('concept_organization','organizaci')], což způsobuje těžké tresty."
- alert_low_organization_active_hint: "Můžete zvýšit [Concept('concept_organization','organizaci')] [Concept('concept_military_formation','formace')|l] tím, že zajistíte dostatečný [Concept('concept_command_limit','velitelský limit')|l] pro všechny její [Concept('concept_unit','$concept_units$')|l]. Zatímco je $concept_military_formation$ s dostatečným $concept_command_limit$ nehybný, během času obnoví $concept_organization$. Přepínání [Concept('concept_mobilization_option','$concept_mobilization_options$')] zatímco je $concept_military_formation$ v terénu může vést k dočasné ztrátě $concept_organization$."
+ alert_low_organization_active_hint: "Můžete zvýšit [Concept('concept_organization','organizaci')] [Concept('concept_military_formation','formace')|l] tím, že zajistíte dostatečný [Concept('concept_command_limit','velitelský limit')|l] pro všechny její [Concept('concept_unit','vojenské jednotky')|l]. Zatímco je $concept_military_formation$ s dostatečným $concept_command_limit$ nehybný, během času obnoví $concept_organization$. Přepínání [Concept('concept_mobilization_option','mobilizační možnosti')] zatímco je $concept_military_formation$ v terénu může vést k dočasné ztrátě $concept_organization$."
  alert_low_organization_active_action: "Panel vojenských formací"
  alert_low_organization_idle_name: "Nízká [Concept('concept_organization','organizace')|l]: [SCOPE.GetRootScope.GetMilitaryFormation.GetName]"
  alert_low_organization_idle_desc: "[SCOPE.GetRootScope.GetMilitaryFormation.GetName] má [SCOPE.GetRootScope.GetMilitaryFormation.GetOrganization] [Concept('concept_organization','organizaci')], což způsobuje těžké tresty."
@@ -98,27 +98,27 @@
  ALERT_PEACE_PROPOSED_ENTRY: "[WAR.GetName|b] - [WAR.GetDaysUntilPeaceDealFails|v] den/dny do vyhození mírové dohody"
  alert_insufficient_construction_for_investment_name: "Nedostatečná [Concept('concept_construction','výstavba')|l] pro [Concept('concept_investment_pool','investiční fond')|l]"
  alert_insufficient_construction_for_investment_desc: "Nemáme dostatek [Concept('concept_construction','výstavby')] k úplnému využití prostředků, které přicházejí do [Concept('concept_investment_pool','investičního fondu')]."
- alert_insufficient_construction_for_investment_hint: "Můžete postavit další [GetBuildingType('building_construction_sector').GetName] [Concept('concept_building', '$concept_buildings$')|l] nebo přejít na pokročilejší [Concept('concept_production_method','výrobní metody')] pro více [Concept('concept_construction','výstavby')]."
+ alert_insufficient_construction_for_investment_hint: "Můžete postavit další [GetBuildingType('building_construction_sector').GetName] [Concept('concept_building','budovy')|l] nebo přejít na pokročilejší [Concept('concept_production_method','výrobní metody')] pro více [Concept('concept_construction','výstavby')]."
  alert_insufficient_construction_for_investment_action: "Panel výstavby"
  alert_blockaded_hub_alert_name: "[SCOPE.GetRootScope.GetState.GetName] [Concept('concept_world_market_hub','Centrum světového trhu')|l] je [SCOPE.GetRootScope.GetState.GetBlockadeLevel|%-0] [Concept('concept_blockade', 'zablokován')]"
  alert_blockaded_hub_alert_desc: "$alert_blockaded_state_alert_desc$"
  alert_blockaded_hub_alert_hint: "$alert_blockaded_state_alert_hint$"
  alert_blockaded_hub_alert_action: "$alert_blockaded_state_alert_action$"
  alert_naval_hostilities_alert_name: "[Concept('concept_naval_hostilities','Námořní nepřátelství')]" # todo: NEW TRANSLATION
- alert_naval_hostilities_alert_desc: "Jsme ve stavu [Concept('concept_naval_hostilities','námořního nepřátelství')] s jiným [Concept('concept_country','zemí')], aniž bychom s nimi byli ve stavu [Concept('concept_war','války')]. Během trvání budou naše [Concept('concept_fleet','$concept_fleets$')] schopny provádět nepřátelské akce (např. [Concept('concept_blockade','$concept_blockades$')]) proti sobě navzájem.\n\n$concept_naval_hostilities$ s:\n[GetPlayer.GetNavalHostilitiesCountriesDesc]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ alert_naval_hostilities_alert_desc: "Jsme ve stavu [Concept('concept_naval_hostilities','námořního nepřátelství')] s jiným [Concept('concept_country','zemí')], aniž bychom s nimi byli ve stavu [Concept('concept_war','války')]. Během trvání budou naše [Concept('concept_fleet','loďstva')] schopny provádět nepřátelské akce (např. [Concept('concept_blockade','Blokády')]) proti sobě navzájem.\n\n$concept_naval_hostilities$ s:\n[GetPlayer.GetNavalHostilitiesCountriesDesc]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  alert_naval_hostilities_alert_hint: "[Concept('concept_naval_hostilities','Námořní nepřátelství')] jsou obvykle dočasné a samy od sebe skončí." # todo: NEW TRANSLATION
  alert_naval_hostilities_alert_action: "Panel námořnictva" # todo: NEW TRANSLATION
- alert_insufficient_military_maintenance_alert_name: "Nedostatečná vojenská údržba [Concept('concept_ship', '$concept_ship$')]" # todo: NEW TRANSLATION
- alert_insufficient_military_maintenance_alert_desc: "Naše $concept_ships$ každý týden ztrácejí [Concept('concept_ship_hit_points', '$concept_ship_hit_points_short$')] kvůli nedostatečné údržbě.\n\n#v [GetPlayer.GetMilitaryMaintenanceFulfillment|%]#! plnění údržby\n@ship_construction! #v [GetPlayer.GetMilitaryMaintenanceDemand|0]#! požadavek na údržbu\n@ship_construction! #v [GetPlayer.GetMilitaryConstructionCapacity|0]#! přiřazeno k vojenským $concept_ships$" # todo: NEW TRANSLATION
- alert_insufficient_military_maintenance_alert_hint: "Zvyšte [Concept('concept_ship_construction', '$concept_ship_construction$')] stavbou více [GetBuildingType('building_shipyard').GetName], zmenšte velikost [Concept('concept_fleet', '$concept_fleet$')] pro snížení nákladů na údržbu, nebo změňte rozdělení stavebních bodů [Concept('concept_supply_ship', '$concept_supply_ship$')] tak, aby se více přidělovalo na vojenské." # todo: NEW TRANSLATION
+ alert_insufficient_military_maintenance_alert_name: "Nedostatečná vojenská údržba [Concept('concept_ship','loď')]" # todo: NEW TRANSLATION
+ alert_insufficient_military_maintenance_alert_desc: "Naše $concept_ships$ každý týden ztrácejí [Concept('concept_ship_hit_points','životy')] kvůli nedostatečné údržbě.\n\n#v [GetPlayer.GetMilitaryMaintenanceFulfillment|%]#! plnění údržby\n@ship_construction! #v [GetPlayer.GetMilitaryMaintenanceDemand|0]#! požadavek na údržbu\n@ship_construction! #v [GetPlayer.GetMilitaryConstructionCapacity|0]#! přiřazeno k vojenským $concept_ships$" # todo: NEW TRANSLATION
+ alert_insufficient_military_maintenance_alert_hint: "Zvyšte [Concept('concept_ship_construction','stavba lodí')] stavbou více [GetBuildingType('building_shipyard').GetName], zmenšte velikost [Concept('concept_fleet','loďstvo')] pro snížení nákladů na údržbu, nebo změňte rozdělení stavebních bodů [Concept('concept_supply_ship','zásobovací lodě')] tak, aby se více přidělovalo na vojenské." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  alert_insufficient_military_maintenance_alert_action: "Panel stavby lodí" # todo: NEW TRANSLATION
  alert_insufficient_ship_crew_alert_name: "Nedostatek $concept_ship_crew_short$ v [SCOPE.GetRootScope.GetMilitaryFormation.GetName]" # todo: CHANGED
- alert_insufficient_ship_crew_alert_desc: "[SCOPE.GetRootScope.GetMilitaryFormation.GetName] má [Concept('concept_ship', '$concept_ships$')], které jsou nedostatečně obsazeny. Lodě bez adekvátního $concept_ship_crew$ budou méně efektivní v boji a při ostatních operacích.\n@information! Aby se mohla posádka nalodit na loď, musí být loď v přístavu." # todo: CHANGED
- alert_insufficient_ship_crew_alert_hint: "Počet dostupných [Concept('concept_sailor', '$concept_sailors$')] můžete zvýšit stavbou více [GetBuildingType('building_naval_administration').GetName] [Concept('concept_building', '$concept_buildings$')], nebo rozšířením stávajících." # todo: NEW TRANSLATION
+ alert_insufficient_ship_crew_alert_desc: "[SCOPE.GetRootScope.GetMilitaryFormation.GetName] má [Concept('concept_ship','lodě')], které jsou nedostatečně obsazeny. Lodě bez adekvátního $concept_ship_crew$ budou méně efektivní v boji a při ostatních operacích.\n@information! Aby se mohla posádka nalodit na loď, musí být loď v přístavu." # todo: CHANGED
+ alert_insufficient_ship_crew_alert_hint: "Počet dostupných [Concept('concept_sailor','námořníků')] můžete zvýšit stavbou více [GetBuildingType('building_naval_administration').GetName] [Concept('concept_building','budovy')], nebo rozšířením stávajících." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  alert_insufficient_ship_crew_alert_action: "Panel vojenské formace" # todo: NEW TRANSLATION
- alert_insufficient_supply_maintenance_alert_name: "Nedostatečná údržba [Concept('concept_supply_ship', '$concept_supply_ship$')]" # todo: NEW TRANSLATION
+ alert_insufficient_supply_maintenance_alert_name: "Nedostatečná údržba [Concept('concept_supply_ship','zásobovací loď')]" # todo: NEW TRANSLATION
  alert_insufficient_supply_maintenance_alert_desc: "Naše $concept_supply_ships$ se každý týden ztrácejí kvůli nedostatečné údržbě.\n\n#v [GetPlayer.GetSupplyMaintenanceFulfillment|%]#! plnění údržby\n@ship_construction! #v [GetPlayer.GetSupplyMaintenanceDemand|0]#! požadavek na údržbu\n@ship_construction! #v [GetPlayer.GetSupplyConstructionCapacity|0]#! přiřazeno k $concept_supply_ships$" # todo: NEW TRANSLATION
- alert_insufficient_supply_maintenance_alert_hint: "Zvyšte [Concept('concept_ship_construction', '$concept_ship_construction$')] o [Concept('concept_building', '$concept_building$')] více [GetBuildingType('building_shipyard').GetName], snižte počet $concept_supply_ships$, nebo změňte rozdělení stavebních bodů $concept_supply_ship$, aby se více přidělovalo na zásobování." # todo: NEW TRANSLATION
+ alert_insufficient_supply_maintenance_alert_hint: "Zvyšte [Concept('concept_ship_construction','stavba lodí')] o [Concept('concept_building','budov')] více [GetBuildingType('building_shipyard').GetName], snižte počet $concept_supply_ships$, nebo změňte rozdělení stavebních bodů $concept_supply_ship$, aby se více přidělovalo na zásobování." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  alert_insufficient_supply_maintenance_alert_action: "Panel stavby lodí" # todo: NEW TRANSLATION
  alert_unreachable_ship_construction_fleet_alert_name: "Nově postavené [Concept('concept_ship', '$concept_ships$')] se nemohou dostat ke své cílové [Concept('concept_fleet', '$concept_fleet$')]" # todo: NEW TRANSLATION
  alert_unreachable_ship_construction_fleet_alert_desc: "Naše nově postavené $concept_ships$ se nebudou moci dostat ke svým cílovým $concept_fleets$ a uvíznou v [GetBuildingType('building_shipyard').GetName], kde byly postaveny:#indent_newline:3 [GetPlayer.GetUnreachableConstructionFleetsDesc]#!" # todo: NEW TRANSLATION
@@ -131,21 +131,21 @@
  NAVAL_HOSTILITIES_DAMAGE_ENTRY: " [COUNTRY.GetAdjective] $concept_fleets$ způsobili $DAMAGE|v1$/$MAX_DAMAGE|v1$ poškození" # todo: NEW TRANSLATION
  alert_port_bombardment_alert_name: "[SCOPE.GetRootScope.GetState.GetName] je pod [GetNavalMissionType('naval_mission_type_port_bombardment').GetName]" # todo: NEW TRANSLATION
  alert_port_bombardment_alert_desc: "[SCOPE.GetRootScope.GetState.GetName] je bombardováno nepřátelskou [Concept('concept_fleet','loďstvo')]. $port_bombardment$ způsobuje [Concept('concept_devastation','devastace')] a může zničit [Concept('concept_coastal_building', '$concept_coastal_buildings$')]." # todo: CHANGED
- alert_port_bombardment_alert_hint: "Můžete zastavit $port_bombardment$ odesláním [Concept('concept_fleet','loďstva')] na [GetNavalMissionType('naval_mission_type_intercept').GetName] [Concept('concept_naval_mission','$concept_naval_mission_short$')] do příslušného [Concept('concept_sea_node','námořního uzlu')], aby zasáhla a porazila nepřátelské loďstvo, nebo zmírnit účinky vybudováním námořních opevnění v [SCOPE.GetRootScope.GetState.GetName] pro zvýšení odolnosti proti bombardování." # todo: CHANGED # todo: CONCEPT CASE
+ alert_port_bombardment_alert_hint: "Můžete zastavit $port_bombardment$ odesláním [Concept('concept_fleet','loďstva')] na [GetNavalMissionType('naval_mission_type_intercept').GetName] [Concept('concept_naval_mission','misi')] do příslušného [Concept('concept_sea_node','námořního uzlu')], aby zasáhla a porazila nepřátelské loďstvo, nebo zmírnit účinky vybudováním námořních opevnění v [SCOPE.GetRootScope.GetState.GetName] pro zvýšení odolnosti proti bombardování." # todo: CHANGED # todo: CONCEPT CASE
  alert_port_bombardment_alert_action: "Panel státu pro [SCOPE.GetRootScope.GetState.GetName]" # todo: NEW TRANSLATION
  alert_blockaded_state_alert_name: "[SCOPE.GetRootScope.GetState.GetName] má [SCOPE.GetRootScope.GetState.GetBlockadeLevel|%-0] [Concept('concept_blockade', '$concept_blockaded$')]"
  alert_blockaded_state_alert_desc: "[SCOPE.GetRootScope.GetState.GetBlockadeEffectsDesc]"
- alert_blockaded_state_alert_hint: "Můžete prolomit $concept_blockade$ odesláním [Concept('concept_fleet','loďstva')] na [GetNavalMissionType('naval_mission_type_intercept').GetName] [Concept('concept_naval_mission','$concept_naval_mission_short$')] do příslušného [Concept('concept_sea_node','námořního uzlu')], pokud bude schopna porazit nepřátelské loďstvo v bitvě." # todo: CHANGED # todo: CONCEPT CASE
+ alert_blockaded_state_alert_hint: "Můžete prolomit $concept_blockade$ odesláním [Concept('concept_fleet','loďstva')] na [GetNavalMissionType('naval_mission_type_intercept').GetName] [Concept('concept_naval_mission','misi')] do příslušného [Concept('concept_sea_node','námořního uzlu')], pokud bude schopna porazit nepřátelské loďstvo v bitvě." # todo: CHANGED # todo: CONCEPT CASE
  alert_blockaded_state_alert_action: "Panel státu pre [SCOPE.GetRootScope.GetState.GetName]"
- alert_isolated_state_alert_name: "[SCOPE.GetRootScope.GetState.GetName] je [Concept('concept_isolated_state', '$concept_isolated_state_short$')]"
- alert_isolated_state_alert_desc: "[Concept('concept_isolated_state', '$concept_isolated_state_short$')] nemůže nakupovat a prodávat zboží z většího trhu. [Concept('concept_pop_needs','$concept_pops$')] bude muset zakoupit své potřeby z místní dodávky v rámci státu, což může mít významný vliv na [Concept('concept_sol','životní standard')|l] populace v důsledku změn cen."
+ alert_isolated_state_alert_name: "[SCOPE.GetRootScope.GetState.GetName] je [Concept('concept_isolated_state','izolovaný')]"
+ alert_isolated_state_alert_desc: "[Concept('concept_isolated_state','Izolovaný státní region')] nemůže nakupovat a prodávat zboží z většího trhu. [Concept('concept_pop_needs','Populace')] bude muset zakoupit své potřeby z místní dodávky v rámci státu, což může mít významný vliv na [Concept('concept_sol','životní standard')|l] populace v důsledku změn cen." # todo: CONCEPT CASE
  alert_isolated_state_alert_hint: "Můžete spojit [SCOPE.GetRootScope.GetState.GetName] s [SCOPE.GetRootScope.GetState.GetMarket.GetName] tím, že zvýšíte [Concept('concept_infrastructure','infrastrukturu')], což lze provést stavbou budov, které poskytují [Concept('concept_infrastructure','infrastrukturu')], jako jsou přístavy nebo železnice, nebo použitím #v $decree_road_maintenance$#! [Concept('concept_decree','dekretu')|l]." # todo: CONCEPT CASE
  alert_isolated_state_alert_action: "Panel státu pro [SCOPE.GetRootScope.GetState.GetName]"
  alert_state_in_turmoil_alert_name: "[SCOPE.GetRootScope.GetState.GetName] je v [Concept('concept_turmoil','nepokojích')]"
  alert_state_in_turmoil_alert_desc: "[SCOPE.GetRootScope.GetState.GetName] je ve stavu [Concept('concept_turmoil','nepokojů')|l] kvůli přítomnosti $RADICALS$" # todo: CONCEPT CASE
  alert_state_in_turmoil_alert_hint: "Můžete snížit počet svých $RADICALS$ tím, že zajistíte splnění potřeb vaší [Concept('concept_pop', 'populace')]. Zajištění pracovních míst a možnosti financování [Concept('concept_expected_sol','očekávaného minimálního životního standardu')] pro vaši populaci je hlavním způsobem, jak toho dosáhnout. Však, populační skupiny, které mají nízké přijetí nebo mají neuspokojená [Concept('concept_political_movement','politická hnutí')] také zvýší [Concept('concept_activism','aktivismus')] a [Concept('concept_political_movement_support', 'podporu')].\n\nPro zmírnění těchto problémů v krátkodobém horizontu, můžete zvážit vydání [Concept('concept_decree', 'dekrétů')] jako [GetDecreeType('decree_emergency_relief').GetName] nebo [GetDecreeType('decree_violent_suppression').GetName] specificky v [SCOPE.GetRootScope.GetState.GetName], zatímco pracujete na dlouhodobějších řešeních."
  alert_state_in_turmoil_alert_action: "Státní panel pro [SCOPE.GetRootScope.GetState.GetName]"
- alert_high_tension_alert_name: "Vysoké [Concept('concept_tension', '$concept_tensions$')|l] mezi [SCOPE.GetRootScope.GetDiplomaticRelations.GetFirstCountry.GetName] a [SCOPE.GetRootScope.GetDiplomaticRelations.GetSecondCountry.GetName]"
+ alert_high_tension_alert_name: "Vysoké [Concept('concept_tension','napětí')|l] mezi [SCOPE.GetRootScope.GetDiplomaticRelations.GetFirstCountry.GetName] a [SCOPE.GetRootScope.GetDiplomaticRelations.GetSecondCountry.GetName]"
  alert_high_tension_alert_desc: "[Concept('concept_tension', 'Napětí')] se zvyšuje kvůli našemu [Concept('concept_colony', 'koloniálnímu')] zasahování do území [SCOPE.GetRootScope.GetDiplomaticRelations.GetSecondCountry.GetName]. Pokud toto napětí bude pokračovat, může vyvolat [Concept('concept_native_uprising','domorodé povstání')|l]."
  alert_high_tension_alert_hint: "Napětí se postupně rozptylují, můžete dočasně zastavit svoje [Concept('concept_colonial','koloniální')|l] expanze, abyste dále neprovokovali [Concept('concept_pop', 'populaci')] a snížili šanci na domorodé povstání, nebo můžete usilovat o umístění svých [Concept('concept_army','armád')] do [Concept('concept_hq','HQ')] koloniálního [Concept('concept_strategic_region','strategického regionu')] připravit se na vzpouru."
  alert_high_tension_alert_action: "Diplomatická panel"
@@ -179,7 +179,7 @@
  alert_subject_can_increase_autonomy_action: "Diplomatický panel"
  alert_has_low_liberty_desire_name: "Může utrpět [GetDiplomaticActionType('da_decrease_autonomy').GetName] podle [SCOPE.GetRootScope.GetCountry.GetOverlord.GetName]"
  alert_has_low_liberty_desire_desc: "[SCOPE.GetRootScope.GetCountry.GetOverlord.GetName] může [GetDiplomaticActionType('da_decrease_autonomy').GetName] na nás."
- alert_has_low_liberty_desire_hint: "Můžete využít panel diplomacie, abyste viděli, které [Concept('concept_subject_action','$concept_subject_actions$')|l] jsou dostupné pro zvýšení naší [Concept('concept_liberty_desire','touhy po svobodě')]."
+ alert_has_low_liberty_desire_hint: "Můžete využít panel diplomacie, abyste viděli, které [Concept('concept_subject_action','akce závislé země')|l] jsou dostupné pro zvýšení naší [Concept('concept_liberty_desire','touhy po svobodě')]."
  alert_has_low_liberty_desire_action: "Panel diplomacie"
  alert_above_company_limit_name: "Nad limit [Concept('concept_company','společností')]"
  alert_above_company_limit_desc: "Máte více společností než váš limit povoluje. To způsobuje, že všechny vaše společnosti trpí těžkými tresty k [Concept('concept_throughput','efektivite')], které poskytují."
@@ -231,11 +231,11 @@
  alert_market_goods_shortage_alert_affected_buildings_breakdown_data_version: "[Goods.GetBreakdownOfBuildingsAffectedByShortageInMarket]"
  alert_market_goods_shortage_alert_affected_building_entry: "[Building.GetName] v [Building.GetState.GetName]"
  alert_merchant_marine_shortage_alert_name: "[SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] [Concept('concept_shortage','nedostatek')] v [SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName]" # todo: NEW TRANSLATION
- alert_merchant_marine_shortage_alert_desc: "Vaše [Concept('concept_shipping_lane', '$concept_shipping_lanes$')] jsou #negative_value -[GetPlayer.GetMerchantMarineShortage|%0]#! méně efektivní kvůli nedostatku [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName].\n\nJe #tooltippable #tooltip:[SCOPE.GetRootScope.GetMarketGoods.GetTooltipTag],alert_market_goods_shortage_affected_buildings_breakdown [SCOPE.GetRootScope.GetMarketGoods.GetNumBuildingsAffectedByShortage|v]#!#! budov postižených tímto nedostatkem." # todo: NEW TRANSLATION
- alert_merchant_marine_shortage_alert_hint: "Tento nedostatek můžete vyřešit zvýšením počtu [Concept('concept_sell_orders','prodejní objednávky')] pro [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] v [SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName]. To lze provést buď výrobou více [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName], zlepšením [Concept('concept_infrastructure','infrastruktury')] v [Concept('concept_state', '$concept_states$')] s nízkým [Concept('concept_market_access','přístupem na trh')], které jej produkují, nebo zvýšením obchodní kapacity pro jeho získání z [Concept('concept_world_market','světového trhu')]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ alert_merchant_marine_shortage_alert_desc: "Vaše [Concept('concept_shipping_lane','námořní trasy')] jsou #negative_value -[GetPlayer.GetMerchantMarineShortage|%0]#! méně efektivní kvůli nedostatku [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName].\n\nJe #tooltippable #tooltip:[SCOPE.GetRootScope.GetMarketGoods.GetTooltipTag],alert_market_goods_shortage_affected_buildings_breakdown [SCOPE.GetRootScope.GetMarketGoods.GetNumBuildingsAffectedByShortage|v]#!#! budov postižených tímto nedostatkem." # todo: NEW TRANSLATION
+ alert_merchant_marine_shortage_alert_hint: "Tento nedostatek můžete vyřešit zvýšením počtu [Concept('concept_sell_orders','prodejní objednávky')] pro [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] v [SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName]. To lze provést buď výrobou více [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName], zlepšením [Concept('concept_infrastructure','infrastruktury')] v [Concept('concept_state','státě')] s nízkým [Concept('concept_market_access','přístupem na trh')], které jej produkují, nebo zvýšením obchodní kapacity pro jeho získání z [Concept('concept_world_market','světového trhu')]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  alert_merchant_marine_shortage_alert_action: "Panel trhu pro [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] v [SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName]" # todo: NEW TRANSLATION
  alert_famine_alert_name: "[Concept('concept_famine','Hladomor')] v [GetPlayer.GetName]"
- alert_famine_alert_hint: "Můžete zlepšit [Concept('concept_food_security','potravinovou bezpečnost')] [Concept('concept_pop','$concept_pops$')|l] žijící v postižených [Concept('concept_state','státech')] zvýšením dodávek [GetPopNeed('popneed_basic_food').GetName] [Concept('concept_good','$concept_goods$')|l]. To lze provést buď výstavbou [Concept('concept_building','budov')], které produkují některé ze zboží, které naplňují [GetPopNeed('popneed_basic_food').GetName] [Concept('concept_pop_needs','potřebu populace')], nebo to [Concept('concept_trade','dovážet')].\n\nNízký [Concept('concept_market_access','přístup na trh')|l] může také ovlivnit přístup k [GetPopNeed('popneed_basic_food').GetName] zboží.\n\n$concept_buildings$ a dovozy mohou nějakou dobu trvat, než začnou plně fungovat. [GetDecreeType('decree_emergency_relief').GetName] [Concept('concept_decree','Dekret')|l] může fungovat jako rychlejší, i když dočasné, řešení."
+ alert_famine_alert_hint: "Můžete zlepšit [Concept('concept_food_security','potravinovou bezpečnost')] [Concept('concept_pop','populace')|l] žijící v postižených [Concept('concept_state','státech')] zvýšením dodávek [GetPopNeed('popneed_basic_food').GetName] [Concept('concept_good','zboží')|l]. To lze provést buď výstavbou [Concept('concept_building','budov')], které produkují některé ze zboží, které naplňují [GetPopNeed('popneed_basic_food').GetName] [Concept('concept_pop_needs','potřebu populace')], nebo to [Concept('concept_trade','dovážet')].\n\nNízký [Concept('concept_market_access','přístup na trh')|l] může také ovlivnit přístup k [GetPopNeed('popneed_basic_food').GetName] zboží.\n\n$concept_buildings$ a dovozy mohou nějakou dobu trvat, než začnou plně fungovat. [GetDecreeType('decree_emergency_relief').GetName] [Concept('concept_decree','Dekret')|l] může fungovat jako rychlejší, i když dočasné, řešení."
  alert_famine_alert_action: "[Concept('concept_food_security','Potravinová bezpečnost')] karta pro [SCOPE.GetRootScope.GetMarket.GetName]"
  alert_low_market_access_alert_name: "[Concept('concept_market_access','Přístup na trh')] v [SCOPE.GetRootScope.GetState.GetName] je na [SCOPE.GetRootScope.GetState.GetMarketAccess|%0v]"
  alert_low_market_access_alert_hint: "Můžete zlepšit [Concept('concept_market_access','přístup na trh')|l] [SCOPE.GetRootScope.GetState.GetName] tím, že buď zvýšíte jeho [Concept('concept_infrastructure','infrastrukturu')] (což lze provést stavbou [GetBuildingType('building_port').GetName] nebo [GetBuildingType('building_railway').GetName]), pomocí [Concept('concept_decree', 'dekrétů')] jako [GetDecreeType('decree_road_maintenance').GetName], nebo zajištěním toho, že bude dostatek @merchant_marine! #tooltippable_name #tooltip:[GetGoods('merchant_marine').GetTooltipTag],DATA_GOODS_NAME_TOOLTIP,GoodsTooltip [GetGoods('merchant_marine').GetCustom('GDS_G')|l]#!#! pro propojení [SCOPE.GetRootScope.GetState.GetName] s jeho [Concept('concept_market_capital','hlavním tržním centrem')] v zahraničí."
@@ -254,7 +254,7 @@
  alert_expensive_military_goods_alert_hint: "$alert_expensive_goods_alert_hint_common$"
  alert_expensive_military_goods_alert_action: "Panel zboží pro [SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName] na [SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName]"
  alert_isolated_colony_alert_name: "[SCOPE.GetRootScope.GetState.GetName] je [Concept('concept_isolated_state', 'izolovaná')] [Concept('concept_colony','kolonie')|l]"
- alert_isolated_colony_alert_desc: "[Concept('concept_isolated_state', '$concept_isolated_state_short$')] není schopna kupovat a prodávat zboží z většího trhu. [Concept('concept_pop_needs','$concept_pops$')] bude muset získávat své potřeby z místního zásobování v rámci státu, což může mít významný dopad na [Concept('concept_sol','životní standard')|l] populace kvůli vznikajícím změnám cen."
+ alert_isolated_colony_alert_desc: "[Concept('concept_isolated_state','Izolovaný státní region')] není schopna kupovat a prodávat zboží z většího trhu. [Concept('concept_pop_needs','Populace')] bude muset získávat své potřeby z místního zásobování v rámci státu, což může mít významný dopad na [Concept('concept_sol','životní standard')|l] populace kvůli vznikajícím změnám cen." # todo: CONCEPT CASE
  alert_isolated_colony_alert_hint: "Můžete spojit [SCOPE.GetRootScope.GetState.GetName] s [SCOPE.GetRootScope.GetState.GetMarket.GetName] tím, že postavíte [GetBuildingType('building_port').GetName]."
  alert_isolated_colony_alert_action: "Panel státu pro [SCOPE.GetRootScope.GetState.GetName]"
  alert_power_struggle_leader_name: "Probíhající [Concept('concept_power_struggle','mocenský boj')|l]"
@@ -266,11 +266,11 @@
  alert_power_struggle_contender_hint: "Držte svojí [Concept('concept_prestige','prestiž')|l] vyšší než [SCOPE.GetRootScope.GetCountry.GetPowerBloc.GetLeader.GetName] po dobu #v [SCOPE.GetRootScope.GetCountry.GetMaxPowerStruggleMonth] měsíců#! a stanete se novým [Concept('concept_power_bloc_leader','lídrem mocenského bloku')]."
  alert_power_struggle_contender_action: "Panel mocenského bloku"
  alert_power_bloc_mandates_available_name: "[SCOPE.GetRootScope.GetCountry.GetPowerBloc.GetNumMandates|v] dostupné [SelectLocalization(EqualTo_int32(SCOPE.GetRootScope.GetCountry.GetPowerBloc.GetNumMandates, '(int32)1'), 'MANDATE_CONCEPT', 'MANDATES_CONCEPT')]"
- alert_power_bloc_mandates_available_desc: "Jako [Concept('concept_power_bloc_leader','$concept_power_bloc_leader_short$')|l] [SCOPE.GetRootScope.GetCountry.GetPowerBloc.GetName] můžete provést změny [Concept('concept_power_bloc_mandate','mandátů')] vašich [Concept('concept_power_bloc_principle', 'princípů')] [Concept('concept_power_bloc', 'mocenského bloku')]."
+ alert_power_bloc_mandates_available_desc: "Jako [Concept('concept_power_bloc_leader','vůdce bloku')|l] [SCOPE.GetRootScope.GetCountry.GetPowerBloc.GetName] můžete provést změny [Concept('concept_power_bloc_mandate','mandátů')] vašich [Concept('concept_power_bloc_principle', 'princípů')] [Concept('concept_power_bloc', 'mocenského bloku')]."
  alert_power_bloc_mandates_available_hint: "Používejte dostupné mandáty k provedení změn, vylepšení nebo přidání nových princípů v panelu mocenského bloku"
  alert_power_bloc_mandates_available_action: "Panel mocenského bloku"
  alert_power_bloc_invite_available_name: "Může pozvat [Concept('concept_country','zemi')] do [Concept('concept_power_bloc','mocenského bloku')|l]" # todo: CONCEPT CASE
- alert_power_bloc_invite_available_desc: "Jako [Concept('concept_power_bloc_leader','$concept_power_bloc_leader_short$')|l] [SCOPE.GetRootScope.GetCountry.GetPowerBloc.GetName] můžete pozvat [Concept('concept_country','zemi')], aby se připojila."
+ alert_power_bloc_invite_available_desc: "Jako [Concept('concept_power_bloc_leader','vůdce bloku')|l] [SCOPE.GetRootScope.GetCountry.GetPowerBloc.GetName] můžete pozvat [Concept('concept_country','zemi')], aby se připojila."
  alert_power_bloc_invite_available_hint: "Používejte panel mocenského bloku k pozvání nového člena."
  alert_power_bloc_invite_available_action: "Panel mocenského bloku"
  alert_can_take_decisions_name: "[SCOPE.GetRootScope.GetDecisionType.GetName]"
@@ -286,44 +286,44 @@
  MP_CLIENT_UNGRACEFUL_EXIT: "$NAME$ ztratil připojení ke hře"
  MP_HOST_DATE: "$NAME$(#V Hostitel#!): $DATE_STR$"
  MP_CLIENT_DATE: "$NAME$: $DATE_STR$"
- ag_isolated_states_name: "Izolované [Concept('concept_isolated_state', '$concept_isolated_states$')|l]"
- ag_isolated_states_desc: "Máme [GetPlayer.GetNumIsolatedStates] [Concept('concept_isolated_state', '$concept_isolated_states$')] v naší zemi."
+ ag_isolated_states_name: "Izolované [Concept('concept_isolated_state','izolované státy')|l]"
+ ag_isolated_states_desc: "Máme [GetPlayer.GetNumIsolatedStates] [Concept('concept_isolated_state','izolovaných států')] v naší zemi." # todo: CONCEPT CASE
  ag_isolated_states_tooltip: "#header $ag_isolated_states_name$#!\n$TOOLTIP_DELIMITER$\n$ag_isolated_states_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
- ag_blockaded_states_name: "[Concept('concept_blockade', '$concept_blockaded$')] [Concept('concept_state', '$concept_states$')|l]"
+ ag_blockaded_states_name: "[Concept('concept_blockade','Zablokovaný')] [Concept('concept_state','stát')|l]" # todo: CONCEPT CASE
  ag_blockaded_states_desc: "Máme zablokované státy."
  ag_blockaded_states_tooltip: "#header $ag_blockaded_states_name$#!\n$TOOLTIP_DELIMITER$\n$ag_blockaded_states_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
- ag_blockaded_hubs_name: "[Concept('concept_blockade', '$concept_blockaded$')] [Concept('concept_world_market_hub', '$concept_world_market_hubs_short$')|l]"
+ ag_blockaded_hubs_name: "[Concept('concept_blockade','Zablokovaný')] [Concept('concept_world_market_hub','centrum světového trhu')|l]" # todo: CONCEPT CASE
  ag_blockaded_hubs_desc: "Máme centra světového trhu které jsou zablokována."
  ag_blockaded_hubs_tooltip: "#header $ag_blockaded_hubs_name$#!\n$TOOLTIP_DELIMITER$\n$ag_blockaded_hubs_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
- ag_formables_possible_name: "Možné [Concept('concept_nation_formation','$concept_nation_formations$')|l]"
+ ag_formables_possible_name: "Možné [Concept('concept_nation_formation','národní formace')|l]"
  ag_formables_possible_desc: "Máme možnost vytvořit jeden nebo více nových států."
  ag_formables_possible_tooltip: "#header $ag_formables_possible_name$#!\n$TOOLTIP_DELIMITER$\n$ag_formables_possible_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
- ag_isolated_colony_name: "[Concept('concept_colony', '$concept_colonies$')]"
- ag_isolated_colony_desc: "Máme izolované [Concept('concept_colony', '$concept_colonies$')|l] za mořem."
+ ag_isolated_colony_name: "[Concept('concept_colony','Kolonie')]"
+ ag_isolated_colony_desc: "Máme izolované [Concept('concept_colony','kolonie')|l] za mořem."
  ag_isolated_colony_tooltip: "#header $ag_isolated_colony_name$#!\n$TOOLTIP_DELIMITER$\n$ag_isolated_colony_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
- ag_states_in_turmoil_name: "[Concept('concept_state', '$concept_states$')] s [Concept('concept_turmoil','nepokoji')]"
+ ag_states_in_turmoil_name: "[Concept('concept_state','Státy')] s [Concept('concept_turmoil','nepokoji')]"
  ag_states_in_turmoil_desc: "Máme [GetPlayer.GetNumTurmoilStates] [Concept('concept_state', 'státy')|l] s [Concept('concept_turmoil','nepokoji')] v naší zemi."
  ag_states_in_turmoil_tooltip: "#header $ag_states_in_turmoil_name$#!\n$TOOLTIP_DELIMITER$\n$ag_states_in_turmoil_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
- ag_high_tensions_name: "Vysoké [Concept('concept_tension', '$concept_tensions$')|l]"
- ag_high_tensions_desc: "Máme vysoké [Concept('concept_tension', '$concept_tensions$')|l] s [Concept('concept_decentralized_nation', 'decentralizovaným národem')]."
+ ag_high_tensions_name: "Vysoké [Concept('concept_tension','napětí')|l]"
+ ag_high_tensions_desc: "Máme vysoké [Concept('concept_tension','napětí')|l] s [Concept('concept_decentralized_nation', 'decentralizovaným národem')]."
  ag_high_tensions_tooltip: "#header $ag_high_tensions_name$#!\n$TOOLTIP_DELIMITER$\n$ag_high_tensions_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
- ag_insurrectionary_alerts_name: "[Concept('concept_revolution','$concept_revolutions$')] probíhá"
- ag_insurrectionary_alerts_desc: "Existují vzbouřenecké zájmové skupiny, které plánují [Concept('concept_revolution','$concept_revolutions$')|l] v naší zemi!"
+ ag_insurrectionary_alerts_name: "[Concept('concept_revolution','Revoluce')] probíhá"
+ ag_insurrectionary_alerts_desc: "Existují vzbouřenecké zájmové skupiny, které plánují [Concept('concept_revolution','revoluce')|l] v naší zemi!"
  ag_insurrectionary_alerts_tooltip: "#header $ag_insurrectionary_alerts_name$#!\n$TOOLTIP_DELIMITER$\n$ag_insurrectionary_alerts_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
  ag_diplomatic_pact_in_danger_name: "[Concept('concept_diplomatic_pact','Diplomatický pakt')] v ohrožení"
- ag_diplomatic_pact_in_danger_desc: "Existují [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')|l], které jsou ohroženy"
+ ag_diplomatic_pact_in_danger_desc: "Existují [Concept('concept_diplomatic_pact','diplomatické pakty')|l], které jsou ohroženy"
  ag_diplomatic_pact_in_danger_tooltip: "#header $ag_diplomatic_pact_in_danger_name$#!\n$TOOLTIP_DELIMITER$\n$ag_diplomatic_pact_in_danger_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
  ag_treaty_article_in_danger_name: "[Concept('concept_article','Článek')] v ohrožení porušení"
- ag_treaty_article_in_danger_desc: "Existují [Concept('concept_article','$concept_articles$')|l], které jsou v ohrožení porušení"
+ ag_treaty_article_in_danger_desc: "Existují [Concept('concept_article','články')|l], které jsou v ohrožení porušení"
  ag_treaty_article_in_danger_tooltip: "#header $ag_treaty_article_in_danger_name$#!\n$TOOLTIP_DELIMITER$\n$ag_treaty_article_in_danger_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
  ag_can_decrease_subject_autonomy_name: "Může [GetDiplomaticActionType('da_decrease_autonomy').GetName]"
  ag_can_decrease_subject_autonomy_desc: "Existují [Concept('concept_subject','závislé')] [Concept('concept_country', 'země')] které můžeme [GetDiplomaticActionType('da_decrease_autonomy').GetName]"
  ag_can_decrease_subject_autonomy_tooltip: "#header $ag_can_decrease_subject_autonomy_name$#!\n$TOOLTIP_DELIMITER$\n$ag_can_decrease_subject_autonomy_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
  ag_formation_low_organization_name: "Nízká [Concept('concept_organization','organizace')|l] [Concept('concept_military_formation','formace')]"
- ag_formation_low_organization_desc: "Existují [Concept('concept_military_formation','$concept_military_formations$')|l] s velmi nízkou [Concept('concept_organization','organizacií')]"
+ ag_formation_low_organization_desc: "Existují [Concept('concept_military_formation','formace')|l] s velmi nízkou [Concept('concept_organization','organizacií')]"
  ag_formation_low_organization_tooltip: "#header $ag_formation_low_organization_name$#!\n$TOOLTIP_DELIMITER$\n$ag_formation_low_organization_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
- ag_expiring_obligations_name: "Blížící se [Concept('concept_obligation', '$concept_obligations$')|l]"
- ag_expiring_obligations_desc: "Máme [Concept('concept_obligation', '$concept_obligations$')|l] které brzy vyprší."
+ ag_expiring_obligations_name: "Blížící se [Concept('concept_obligation','závazek')|l]" # todo: CONCEPT CASE
+ ag_expiring_obligations_desc: "Máme [Concept('concept_obligation','závazky')|l] které brzy vyprší."
  ag_expiring_obligations_tooltip: "#header $ag_expiring_obligations_name$#!\n$TOOLTIP_DELIMITER$\n$ag_expiring_obligations_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
  ag_secession_growing_name: "$alert_secession_growing_alert_name$" # todo: NEW TRANSLATION
  ag_secession_growing_desc: "$alert_secession_growing_alert_desc$" # todo: NEW TRANSLATION
@@ -331,31 +331,31 @@
  ag_secession_growing_alert_desc: "$alert_secession_growing_alert_desc$" # todo: NEW TRANSLATION
  ag_secession_growing_tooltip: "#header $ag_secession_growing_alert_name$#!\n$TOOLTIP_DELIMITER$\n$ag_secession_growing_alert_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$" # todo: NEW TRANSLATION
  ag_market_goods_shortages_name: "[Concept('concept_shortage','Nedostatek')]"
- ag_market_goods_shortages_desc: "Existují [Concept('concept_shortage', '$concept_shortages$')|l] na našem [Concept('concept_market','trhu')]."
+ ag_market_goods_shortages_desc: "Existují [Concept('concept_shortage','nedostatky')|l] na našem [Concept('concept_market','trhu')]."
  ag_market_goods_shortages_tooltip: "#header $ag_market_goods_shortages_name$#!\n$TOOLTIP_DELIMITER$\n$ag_market_goods_shortages_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
  ag_state_goods_shortages_name: "Místní [Concept('concept_shortage','nedostatek')|l]"
- ag_state_goods_shortages_desc: "V některých našich [Concept('concept_state', 'státech')|l] jsou [Concept('concept_shortage', '$concept_shortages$')|l]."
+ ag_state_goods_shortages_desc: "V některých našich [Concept('concept_state', 'státech')|l] jsou [Concept('concept_shortage','nedostatky')|l]."
  ag_state_goods_shortages_tooltip: "#header $ag_state_goods_shortages_name$#!\n$TOOLTIP_DELIMITER$\n$ag_state_goods_shortages_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
  ag_can_take_decisions_name: "Dostupná rozhodnutí"
- ag_can_take_decisions_desc: "Máme [Concept('concept_decision', '$concept_decisions$')], která lze přijmout."
+ ag_can_take_decisions_desc: "Máme [Concept('concept_decision','rozhodnutí')], která lze přijmout."
  ag_can_take_decisions_tooltip: "#header $ag_can_take_decisions_name$#!\n$TOOLTIP_DELIMITER$\n$ag_can_take_decisions_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
  ag_low_market_access_states_name: "Nízký [Concept('concept_market_access','přístup na trh')|l]"
- ag_low_market_access_states_desc: "Máme #v [GetPlayer.GetNumLowMarketAccessStates]#! [Concept('concept_state', '$concept_states$')|l] s nízkým [Concept('concept_market_access','přístupem na trh')]"
+ ag_low_market_access_states_desc: "Máme #v [GetPlayer.GetNumLowMarketAccessStates]#! [Concept('concept_state','států')|l] s nízkým [Concept('concept_market_access','přístupem na trh')]" # todo: CONCEPT CASE
  ag_low_market_access_states_tooltip: "#header $ag_low_market_access_states_name$#!\n$TOOLTIP_DELIMITER$\n$ag_low_market_access_states_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
  ag_insufficient_tax_capacity_states_name: "Nedostatečná [Concept('concept_tax_capacity','daňová kapacita')|l]"
- ag_insufficient_tax_capacity_states_desc: "Máme [GetPlayer.GetNumInsufficientTaxCapacityStates] [Concept('concept_state', '$concept_states$')] s nedostatečnou [Concept('concept_tax_capacity','kapacitou zdanění')]"
+ ag_insufficient_tax_capacity_states_desc: "Máme [GetPlayer.GetNumInsufficientTaxCapacityStates] [Concept('concept_state','států')] s nedostatečnou [Concept('concept_tax_capacity','kapacitou zdanění')]" # todo: CONCEPT CASE
  ag_insufficient_tax_capacity_states_tooltip: "#header $ag_insufficient_tax_capacity_states_name$#!\n$TOOLTIP_DELIMITER$\n$ag_insufficient_tax_capacity_states_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
- ag_expensive_government_goods_name: "Drahé [Concept('concept_government_good', '$concept_government_goods$')]"
- ag_expensive_government_goods_desc: "Máme drahé [Concept('concept_government_good', '$concept_government_goods$')] v nejméně jednom z našich [Concept('concept_market', 'trhů')]."
+ ag_expensive_government_goods_name: "Drahé [Concept('concept_government_good','vládní zboží')]"
+ ag_expensive_government_goods_desc: "Máme drahé [Concept('concept_government_good','vládní zboží')] v nejméně jednom z našich [Concept('concept_market', 'trhů')]."
  ag_expensive_government_goods_tooltip: "#header $ag_expensive_government_goods_name$#!\n$TOOLTIP_DELIMITER$\n$ag_expensive_government_goods_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
- ag_expensive_military_goods_name: "Drahé [Concept('concept_military_good', '$concept_military_goods$')|l]"
- ag_expensive_military_goods_desc: "Máme drahé [Concept('concept_military_good', '$concept_military_goods$')|l] alespoň v jedném z našich [Concept('concept_market', 'trhů')] ."
+ ag_expensive_military_goods_name: "Drahé [Concept('concept_military_good','vojenské zboží')|l]"
+ ag_expensive_military_goods_desc: "Máme drahé [Concept('concept_military_good','vojenské zboží')|l] alespoň v jedném z našich [Concept('concept_market', 'trhů')] ."
  ag_expensive_military_goods_tooltip: "#header $ag_expensive_military_goods_name$#!\n$TOOLTIP_DELIMITER$\n$ag_expensive_military_goods_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
  ag_companies_losing_prosperity_name: "$COMPANIES$ ztrácející [Concept('concept_prosperity','prosperitu')]"
  ag_companies_losing_prosperity_desc: "Máme $COMPANIES$, které jsou v ohrožení ztráty jejich bonusů z [Concept('concept_prosperity','prosperity')]."
  ag_companies_losing_prosperity_tooltip: "#header $ag_companies_losing_prosperity_name$#!\n$TOOLTIP_DELIMITER$\n$ag_companies_losing_prosperity_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
  ag_insufficient_ship_crew_name: "Nedostatek [Concept('concept_ship_crew','posádka lodi')]" # todo: NEW TRANSLATION
- ag_insufficient_ship_crew_desc: "Máme [Concept('concept_ship', '$concept_ships$')] které jsou nedostatečně obsazené." # todo: NEW TRANSLATION
+ ag_insufficient_ship_crew_desc: "Máme [Concept('concept_ship','lodě')] které jsou nedostatečně obsazené." # todo: NEW TRANSLATION
  ag_insufficient_ship_crew_tooltip: "#header $ag_insufficient_ship_crew_name$#!\n$TOOLTIP_DELIMITER$\n$ag_insufficient_ship_crew_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$" # todo: NEW TRANSLATION
  alert_company_losing_prosperity_name: "#v [SCOPE.GetRootScope.GetCompany.GetCompanyType.GetName]#! ztrácí [Concept('concept_prosperity','prosperitu')]"
  alert_company_losing_prosperity_desc: "#v [SCOPE.GetRootScope.GetCompany.GetCompanyType.GetName]#! má negativní růst [Concept('concept_prosperity','prosperita')|l] a je v nebezpečí ztráty svého bonusu prosperity."
@@ -373,12 +373,12 @@
  alert_training_rate_low_desc: "Jsme ve válce a [Concept('concept_training_rate','míra výcviku')|l] byla snížena v našich [Concept('concept_military_building','vojenských budovách')] kvůli snížení našich [Concept('concept_military_wage','vojenských mezd')]."
  alert_training_rate_low_hint: "Můžeme to napravit zvýšením vojenský mzdy v panelu rozpočtu."
  alert_training_rate_low_action: "Panel rozpočtu"
- alert_admiral_with_no_ships_name: "[SCOPE.GetRootScope.GetCharacter.GetFullName] nemá žádné [Concept('concept_ship','$concept_ships$')]" # todo: NEW TRANSLATION
- alert_admiral_with_no_ships_desc: "Jeden z našich [Concept('concept_admiral','$concept_admirals$')] momentálně nemá žádné [Concept('concept_ship','$concept_ships$')] přiřazené." # todo: NEW TRANSLATION
+ alert_admiral_with_no_ships_name: "[SCOPE.GetRootScope.GetCharacter.GetFullName] nemá žádné [Concept('concept_ship','lodě')]" # todo: NEW TRANSLATION
+ alert_admiral_with_no_ships_desc: "Jeden z našich [Concept('concept_admiral','admirálů')] momentálně nemá žádné [Concept('concept_ship','lodě')] přiřazené." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  alert_admiral_with_no_ships_hint: "Měli bychom rozšířit naše námořnictvo, aby tento $concept_admiral$ měl velení." # todo: NEW TRANSLATION
  alert_admiral_with_no_ships_action: "Panel velitele" # todo: NEW TRANSLATION
  ag_low_sol_in_state_name: "Nízký [Concept('concept_sol','životní standard')|l]"
- ag_low_sol_in_state_desc: "Máme [Concept('concept_state', '$concept_states$')|l] hlásící, že alespoň 10 % [Concept('concept_pop','$concept_population$')|l] je pod očekávaným [Concept('concept_sol','životním standardem')]."
+ ag_low_sol_in_state_desc: "Máme [Concept('concept_state','státy')|l] hlásící, že alespoň 10 % [Concept('concept_pop','populace')|l] je pod očekávaným [Concept('concept_sol','životním standardem')]."
  ag_low_sol_in_state_tooltip: "#header $ag_low_sol_in_state_name$#!\n$TOOLTIP_DELIMITER$\n$ag_low_sol_in_state_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
  alert_treaty_not_fulfilled_name: "[SCOPE.GetRootScope.GetTreaty.GetName] [Concept('concept_non_fulfillment', 'něsplněna')]"
  alert_treaty_not_fulfilled_desc: "[SCOPE.GetRootScope.GetTreaty.GetNonFulfillmentDescFor(SCOPE.sCountry('actor'))]"
@@ -390,7 +390,7 @@
  alert_article_contravened_action: "Panel smlouvy"
  alert_may_be_annexed_by_austria_name: "Riziko anexe ze strany [SCOPE.GetRootScope.GetCountry.GetTopOverlord.GetName]"
  alert_may_be_annexed_by_austria_desc: "Kvůli naší nízké [Concept('concept_liberty_desire','touze po svobodě')] nás [SCOPE.GetRootScope.GetCountry.GetTopOverlord.GetName] může anektovat bez [Concept('concept_diplomatic_play','diplomatické hry')]"
- alert_may_be_annexed_by_austria_hint: "Můžete použít panel diplomacie, abyste zjistili, které [Concept('concept_subject_action','$concept_subject_actions$')|l] jsou k dispozici, abyste zvýšili naši [Concept('concept_liberty_desire','touhu po svobodě')]."
+ alert_may_be_annexed_by_austria_hint: "Můžete použít panel diplomacie, abyste zjistili, které [Concept('concept_subject_action','akce závislé země')|l] jsou k dispozici, abyste zvýšili naši [Concept('concept_liberty_desire','touhu po svobodě')]."
  alert_may_be_annexed_by_austria_action: "Panel diplomacie"
  country_default_setting_name: "Země v defaultu"
  has_no_research_alert_setting_name: "Nemá žádný výzkum"

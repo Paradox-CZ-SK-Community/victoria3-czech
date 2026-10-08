@@ -381,10 +381,10 @@
  fascism_1_tt: "Má #bold fašistického#! vůdce nebo agitátora"
  integralist_agitator_appears_tt: "[GetIdeology('ideology_integralist').GetName] [Concept('concept_agitator','agitátor')] se objeví v zemi [ROOT.GetCountry.GetNameNoFlag]"
  fascist_agitator_appears_tt: "[GetIdeology('ideology_fascist').GetName] [Concept('concept_agitator','agitátor')] se objeví v zemi [ROOT.GetCountry.GetNameNoFlag]"
- fascists_in_government_tt: "#tooltippable;tooltip:[GetPlayer.GetTooltipTag],fascist_ideologies_list_tt fašističtí#! [Concept('concept_politician', '$concept_politicians$')] jsou nyní [Concept('concept_in_government','ve vládě')]"
- fascists_out_of_government_tt: "#tooltippable;tooltip:[GetPlayer.GetTooltipTag],fascist_ideologies_list_tt fašističtí#! [Concept('concept_politician', '$concept_politicians$')] nyní nejsou#! [Concept('concept_in_government','ve vládě')]"
+ fascists_in_government_tt: "#tooltippable;tooltip:[GetPlayer.GetTooltipTag],fascist_ideologies_list_tt fašističtí#! [Concept('concept_politician','politici')] jsou nyní [Concept('concept_in_government','ve vládě')]"
+ fascists_out_of_government_tt: "#tooltippable;tooltip:[GetPlayer.GetTooltipTag],fascist_ideologies_list_tt fašističtí#! [Concept('concept_politician','politici')] nyní nejsou#! [Concept('concept_in_government','ve vládě')]"
  blank_tt: ""
- fascist_ideologies_list_tt: "#bold Fašistické#! [Concept('concept_ideology','$concept_ideologies$')|l] zahrnují:\n• [GetIdeology('ideology_fascist').GetName]\n• [GetIdeology('ideology_integralist').GetName]"
+ fascist_ideologies_list_tt: "#bold Fašistické#! [Concept('concept_ideology','ideologie')|l] zahrnují:\n• [GetIdeology('ideology_fascist').GetName]\n• [GetIdeology('ideology_integralist').GetName]"
  fascist_characters_return_to_normal_tt: "Rychlost, s jakou se objevují #tooltippable;tooltip:[GetPlayer.GetTooltipTag],fascist_ideologies_list_tt fašistické#! postavy, se vrátí do normálu"
  fascist_characters_stays_increased_tt: "Rychlost, s jakou se objevují #tooltippable;tooltip:[GetPlayer.GetTooltipTag],fascist_ideologies_list_tt fašistické#! postavy, zůstane zvýšená"
  fascism_events.1.t: "Noc dlouhých nožů"
@@ -433,8 +433,8 @@
  fascism_events.4.a: "Vskutku, existuje jen jeden způsob."
  fascism_events.4.b: "Všechny cesty vedou do Říma."
  fascism_events.4.c: "Kapitulace je jen jiný druh smrti."
- fascism_leaders.tt: "[SCOPE.gsInterestGroup('new_fascist_ig').GetName] si bude mnohem častěji vybírat fašistické vůdce, když bude [Concept('concept_political_movement_pressure', '$concept_political_movement_pressured_short$')] příslušným [Concept('concept_political_movement','politickým hnutím')]." # todo: CONCEPT CASE
- conservative_leaders.tt: "[SCOPE.gsInterestGroup('new_fascist_ig').GetName] si bude mnohem častěji vybírat fašistické, tradicionalistické nebo etnonacionalistické vůdce, když bude [Concept('concept_political_movement_pressure', '$concept_political_movement_pressured_short$')] příslušným [Concept('concept_political_movement','politickým hnutím')]." # todo: CONCEPT CASE
+ fascism_leaders.tt: "[SCOPE.gsInterestGroup('new_fascist_ig').GetName] si bude mnohem častěji vybírat fašistické vůdce, když bude [Concept('concept_political_movement_pressure','pod tlakem')] příslušným [Concept('concept_political_movement','politickým hnutím')]." # todo: CONCEPT CASE
+ conservative_leaders.tt: "[SCOPE.gsInterestGroup('new_fascist_ig').GetName] si bude mnohem častěji vybírat fašistické, tradicionalistické nebo etnonacionalistické vůdce, když bude [Concept('concept_political_movement_pressure','pod tlakem')] příslušným [Concept('concept_political_movement','politickým hnutím')]." # todo: CONCEPT CASE
  modifier_repressed_by_fascists: "Potlačováni fašisty"
  generate_fascist_leader_tt: "[GetIdeology('ideology_fascist').GetName] [Concept('concept_politician','politik')] převezme vedení skupiny [SCOPE.gsInterestGroup('new_fascist_ig').GetName]"
  generate_integralist_leader_tt: "[GetIdeology('ideology_integralist').GetName] [Concept('concept_politician','politik')] převezme vedení skupiny [SCOPE.gsInterestGroup('new_fascist_ig').GetName]"
@@ -455,8 +455,8 @@
  fascism_events.6.f: "„Starobylé legendy minulosti brzy najdou svůj protějšek v našich vlastních nových legendách. Naši národní hrdinové na nás nyní hledí s úsměvem. Náš jazyk, naše kultura, vše, co nás spojuje, syny a dcery společného původu, to konečně uctíme.“"
  fascism_events.6.a: "Náš národ, naše kultura!"
  fascism_events.6.b: "Neměli bychom dopustit, aby nás toto vítězství rozptýlilo."
- ethno_nationalist_leaders.tt: "[SCOPE.gsInterestGroup('ethno_nationalist_ig').GetName] si bude mnohem častěji vybírat etnonacionalistické vůdce, když bude [Concept('concept_political_movement_pressure', '$concept_political_movement_pressured_short$')] příslušným [Concept('concept_political_movement','politickým hnutím')]." # todo: CONCEPT CASE
- ethno_conservative_leaders.tt: "[SCOPE.gsInterestGroup('ethno_nationalist_ig').GetName] si bude mnohem častěji vybírat etnonacionalistické, fašistické nebo tradicionalistické vůdce, když bude [Concept('concept_political_movement_pressure', '$concept_political_movement_pressured_short$')] příslušným [Concept('concept_political_movement','politickým hnutím')]." # todo: CONCEPT CASE
+ ethno_nationalist_leaders.tt: "[SCOPE.gsInterestGroup('ethno_nationalist_ig').GetName] si bude mnohem častěji vybírat etnonacionalistické vůdce, když bude [Concept('concept_political_movement_pressure','pod tlakem')] příslušným [Concept('concept_political_movement','politickým hnutím')]." # todo: CONCEPT CASE
+ ethno_conservative_leaders.tt: "[SCOPE.gsInterestGroup('ethno_nationalist_ig').GetName] si bude mnohem častěji vybírat etnonacionalistické, fašistické nebo tradicionalistické vůdce, když bude [Concept('concept_political_movement_pressure','pod tlakem')] příslušným [Concept('concept_political_movement','politickým hnutím')]." # todo: CONCEPT CASE
  je_ethno_nationalist: "Náš národ, naše kultura"
  je_ethno_nationalist_reason: "Domovina našich předků patří nám a nám se také navrátí."
  ethnonationalist_tt: "Má #bold etnonacionalistického nebo fašistického#! vůdce"
@@ -490,14 +490,14 @@
  fascism_government_expelled_tt: "[GetIdeology('ideology_moderate').GetName] [Concept('concept_politician','politik')] převezme vedení skupiny [SCOPE.sCharacter('new_fascist_leader_scope').GetInterestGroup.GetName]"
  fascist_becomes_agitator_tt: "[SCOPE.sCharacter('new_fascist_leader_scope').GetFullName] se stane [Concept('concept_agitator','agitátor')]"
  modifier_government_refused_fascist_seat: "Odmítnuto posadit fašistu"
- fascism_progress_from_fascist_leaders_in_government_tt: "#tooltippable;tooltip:[GetPlayer.GetTooltipTag],fascist_ideologies_list_tt fašističtí#! [Concept('concept_politician', '$concept_politicians$')] [Concept('concept_in_government','ve vládě')]"
- fascism_progress_from_movement_support_tt: "[Concept('concept_political_movement_support', '$concept_political_movement_support_short$')] [Concept('concept_political_movement','$concept_political_movements$')] ideologií [GetIdeology('ideology_fascist').GetName], [GetIdeology('ideology_reactionary').GetName] a [GetIdeology('ideology_corporatist').GetName]"
- fascism_progress_from_movement_activism_tt: "[Concept('concept_activism', '$concept_activism_short$')] [Concept('concept_political_movement','$concept_political_movements$')] ideologií [GetIdeology('ideology_fascist').GetName], [GetIdeology('ideology_reactionary').GetName] a [GetIdeology('ideology_corporatist').GetName]"
- fascism_progress_from_interest_groups_tt: "[Concept('concept_clout','Politický vliv')] [Concept('concept_interest_group', '$concept_interest_groups$')] s #tooltippable;tooltip:[GetPlayer.GetTooltipTag],fascist_ideologies_list_tt fašistickými#! [Concept('concept_leader', '$concept_leaders$')] nebo [Concept('concept_ideology','ideologie')] [GetIdeology('ideology_reactionary').GetName]"
- no_relevant_reactionary_igs_tt: "#bold žádné#! nemarginalizované [Concept('concept_interest_group', '$concept_interest_groups$')] s #tooltippable;tooltip:[GetPlayer.GetTooltipTag],fascist_ideologies_list_tt fašistickými#! [Concept('concept_leader', '$concept_leaders$')] nebo [Concept('concept_ideology','ideologie')] [GetIdeology('ideology_reactionary').GetName]"
- fascism_progress_from_characters_tt: "#tooltippable;tooltip:[GetPlayer.GetTooltipTag],fascist_ideologies_list_tt fašistické#! [Concept('concept_character', '$concept_characters$')]"
- fascism_progress_no_fascist_characters_tt: "#bold žádné#! #tooltippable;tooltip:[GetPlayer.GetTooltipTag],fascist_ideologies_list_tt fašistické#! [Concept('concept_character', '$concept_characters$')]"
- fascism_progress_from_state_claims_tt: "nevlastněné státy [Concept('concept_homeland','domovina')] a územní [Concept('concept_claim', '$concept_claims$')]"
+ fascism_progress_from_fascist_leaders_in_government_tt: "#tooltippable;tooltip:[GetPlayer.GetTooltipTag],fascist_ideologies_list_tt fašističtí#! [Concept('concept_politician','politici')] [Concept('concept_in_government','ve vládě')]"
+ fascism_progress_from_movement_support_tt: "[Concept('concept_political_movement_support','Podpora politického hnutí')] [Concept('concept_political_movement','politická hnutí')] ideologií [GetIdeology('ideology_fascist').GetName], [GetIdeology('ideology_reactionary').GetName] a [GetIdeology('ideology_corporatist').GetName]" # todo: CONCEPT CASE
+ fascism_progress_from_movement_activism_tt: "[Concept('concept_activism','Aktivismus hnutí')] [Concept('concept_political_movement','politická hnutí')] ideologií [GetIdeology('ideology_fascist').GetName], [GetIdeology('ideology_reactionary').GetName] a [GetIdeology('ideology_corporatist').GetName]" # todo: CONCEPT CASE
+ fascism_progress_from_interest_groups_tt: "[Concept('concept_clout','Politický vliv')] [Concept('concept_interest_group','zájmových skupin')] s #tooltippable;tooltip:[GetPlayer.GetTooltipTag],fascist_ideologies_list_tt fašistickými#! [Concept('concept_leader','vůdci')] nebo [Concept('concept_ideology','ideologie')] [GetIdeology('ideology_reactionary').GetName]" # todo: CONCEPT CASE
+ no_relevant_reactionary_igs_tt: "#bold žádné#! nemarginalizované [Concept('concept_interest_group','zájmové skupiny')] s #tooltippable;tooltip:[GetPlayer.GetTooltipTag],fascist_ideologies_list_tt fašistickými#! [Concept('concept_leader','vůdci')] nebo [Concept('concept_ideology','ideologie')] [GetIdeology('ideology_reactionary').GetName]"
+ fascism_progress_from_characters_tt: "#tooltippable;tooltip:[GetPlayer.GetTooltipTag],fascist_ideologies_list_tt fašistické#! [Concept('concept_character','postavy')]"
+ fascism_progress_no_fascist_characters_tt: "#bold žádné#! #tooltippable;tooltip:[GetPlayer.GetTooltipTag],fascist_ideologies_list_tt fašistické#! [Concept('concept_character','postavy')]"
+ fascism_progress_from_state_claims_tt: "nevlastněné státy [Concept('concept_homeland','domovina')] a územní [Concept('concept_claim','nároky')]"
  fascist_leader_seizes_control_tt: "[SCOPE.sCharacter('fascist_leader').GetFullName] převezme kontrolu nad skupinou [SCOPE.gsInterestGroup('fascist_ig').GetName]"
  fascism_events.10.t: "Zaostávání"
  fascism_events.10.d: "Kdysi raketový vzestup hnutí [GetIdeology('ideology_fascist').GetName] se zdá být u konce. Ačkoli tato ideologie jistě přetrvá, setká se s méně vstřícnou veřejností a mnohem zkušenější opozicí."
@@ -1020,9 +1020,9 @@
  titanic.3.a: "Byla to loď snů."
  titanic_good_modifier: "Úspěch zaoceánského parníku"
  je_krakatoa: "Erupce Krakatoa"
- je_krakatoa_reason: "Následky sopečné erupce ve státě [GetStateRegion('STATE_WEST_JAVA').GetName] stále ovlivňují světové klima a zvyšují četnost i závažnost [Concept('concept_harvest_condition', '$concept_harvest_conditions$')] jako [GetHarvestConditionType('frost').GetName], [GetHarvestConditionType('hailstorm').GetName], [GetHarvestConditionType('disease_outbreak').GetName] a [GetHarvestConditionType('torrential_rains').GetName], dokud se teploty nevrátí k normálu.\n$TSUNAMI_LIST_HEADER$$TSUNAMI_LIST_CONTENT$\n$TSUNAMI_LIST_AFTER$"
+ je_krakatoa_reason: "Následky sopečné erupce ve státě [GetStateRegion('STATE_WEST_JAVA').GetName] stále ovlivňují světové klima a zvyšují četnost i závažnost [Concept('concept_harvest_condition','podmínky sklizně')] jako [GetHarvestConditionType('frost').GetName], [GetHarvestConditionType('hailstorm').GetName], [GetHarvestConditionType('disease_outbreak').GetName] a [GetHarvestConditionType('torrential_rains').GetName], dokud se teploty nevrátí k normálu.\n$TSUNAMI_LIST_HEADER$$TSUNAMI_LIST_CONTENT$\n$TSUNAMI_LIST_AFTER$"
  krakatoa_je_tt: "Sopka Krakatoa vybuchla."
- TSUNAMI_LIST_HEADER: "$TOOLTIP_DELIMITER$\nVaše [Concept('concept_state', '$concept_states$')], které jsou aktuálně postiženy [Concept('concept_devastation','devastace')] způsobenou [GetHarvestConditionType('tsunami').GetName]:"
+ TSUNAMI_LIST_HEADER: "$TOOLTIP_DELIMITER$\nVaše [Concept('concept_state','státy')], které jsou aktuálně postiženy [Concept('concept_devastation','devastace')] způsobenou [GetHarvestConditionType('tsunami').GetName]:"
  TSUNAMI_LIST_CONTENT: "#indent_newline:3 \n[GetScriptedGui('je_krakatoa_tsunami_states_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)]#!"
  TSUNAMI_LIST_ENTRY: "[THIS.GetState.GetName]: [THIS.GetState.GetDevastationLevel|-%0]"
  TSUNAMI_LIST_EMPTY_STATE: "Žádný [Concept('concept_state','stát')] není aktuálně postižen [GetHarvestConditionType('tsunami').GetNameNoFormatting|b]"

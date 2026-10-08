@@ -76,7 +76,7 @@
  plague.1.f: "„Epidemie chřipky na nás dolehla téměř přes noc jako přízrak smrti a tři dny poté, co byla nemoc zařazena mezi hlášené choroby, byla naše nemocnice přeplněna oběťmi této nákazy.“"
  plague.1.a: "Musíme doufat, že se nerozšíří!"
  plague_decisions_available.tt: "Rozhodnutí „Reakce na pandemii“ je dostupné, což může zmírnit její dopady a šíření."
- plague_state_mortality.tt: "[SCOPE.sCountry('plague_originator_country').GetAdjectiveNoFormatting] chřipka se objevuje ve státě [THIS.GetState.GetName], čímž zvyšuje [Concept('concept_pop_growth', '$concept_pop_growth_mortality$')] na následujících 6 měsíců; stát může být zasažen dalšími vlnami pandemie"
+ plague_state_mortality.tt: "[SCOPE.sCountry('plague_originator_country').GetAdjectiveNoFormatting] chřipka se objevuje ve státě [THIS.GetState.GetName], čímž zvyšuje [Concept('concept_pop_growth','úmrtnost')] na následujících 6 měsíců; stát může být zasažen dalšími vlnami pandemie"
  plague.2.t: "[SCOPE.sCountry('plague_originator_country').GetAdjectiveNoFormatting] chřipka se šíří"
  plague.2.d: "Smrtící [SCOPE.sCountry('plague_originator_country').GetAdjectiveNoFormatting] chřipka se objevila ve státě [SCOPE.sState('plague_spread_target').GetName]. Pandemie se rychle stává globální krizí."
  plague.2.f: "„Bylo to jako náhlý příval raněných z bojiště a dům byl téměř okamžitě zaplněn. Během několika dní bylo nutné otevřít oddělení v univerzitní tělocvičně, vybavené lůžky ze studentských kolejí.“"
@@ -160,7 +160,7 @@
  heavenly.5.d: "Nebeské království bylo poraženo. Musíme rozhodnout, jak naložit s následky povstání; stoupenci sekty jsou stále aktivní a mohou nám v budoucnu působit potíže."
  heavenly.5.f: "„Domnělý bratr Krista byl sťat a spálen. Jeho popel byl vystřelen z děla. Nenajde věčný klid, neboť zneuctil náš národ. Byl zcela zničen, a takový osud čeká všechny, kdo se nám postaví.“"
  heavenly.5.a: "Povraždit zbývající pohany."
- mass_reconversion_tt: "#variable 10%#! všech ne[SCOPE.sReligion('state_religion_scope').GetName] [Concept('concept_pop', '$concept_pops$')] v [SCOPE.sCountry('china_scope').GetAltAdjective('L')] konvertuje na [SCOPE.sReligion('state_religion_scope').GetName]." # todo: CONCEPT CASE
+ mass_reconversion_tt: "#variable 10%#! všech ne[SCOPE.sReligion('state_religion_scope').GetName] [Concept('concept_pop','populace')] v [SCOPE.sCountry('china_scope').GetAltAdjective('L')] konvertuje na [SCOPE.sReligion('state_religion_scope').GetName]." # todo: CONCEPT CASE
  heavenly.5.b: "Projevit milost a nabídnout bývalým povstalcům amnestii."
  heavenly.6.t: "Vzestup nebes"
  heavenly.6.d: "[ROOT.GetCountry.GetName] svrháví vládu kultury [SCOPE.sCulture('manchu_culture').GetName]. Náš stát musí přetrvat a šířit slovo Boží po celé Číně."
@@ -205,7 +205,7 @@
  british_raj_decision: "Vyhlásit Britský rádž"
  british_raj_decision_desc: "Špatná správa ze strany Východoindické společnosti trvá už příliš dlouho. Musíme zajistit naši vládu nad subkontinentem přímějšími prostředky."
  sepoy_mutiny_happened: "Povstání sipáhíů proběhlo"
- doctrine_of_lapse_disabled: "#b Doktrína zániku#! bude zrušena, čímž budou zachovány [Concept('concept_princely_state','$concept_princely_states$')]"
+ doctrine_of_lapse_disabled: "#b Doktrína zániku#! bude zrušena, čímž budou zachovány [Concept('concept_princely_state','knížecí státy')]"
  raj.1.t: "Klenot v koruně"
  raj.1.d: "Vláda [SCOPE.sCountry('company_country').GetName] skončila a vláda [SCOPE.sCountry('british_raj_country').GetAdjectiveNoFormatting] nyní převezme větší roli v indických záležitostech. Historie označí tento den za počátek Britského rádže."
  raj.1.f: "„Dokud vládneme Indii, jsme největší mocností na světě. Pokud ji ztratíme, okamžitě klesneme na druhořadou mocnost. Pouze despotickými metodami můžeme z Indie získat to, co Říše potřebuje.“"
@@ -218,8 +218,8 @@
  raj.2.a: "Nemáme žádnou možnost odporu."
  raj.2.b: "Svolejte naši armádu, zde se postavíme na odpor."
  if_accepted_by_target_country_tt: "Pokud [SCOPE.sCountry('target_country').GetName] přijme:"
- transfers_treasury_to_eic_tt: "Obsah [ROOT.GetCountry.GetAltAdjective('ee')] [Concept('concept_treasury','$concept_treasury_possessive$')|l] (@money![ROOT.GetCountry.GetGoldReserves|K]) bude převeden na [ROOT.GetCountry.GetOverlord.GetAltAdjective('A')]" # todo: CONCEPT CASE
- transfers_treasury_to_eic_diplo_tt: "Obsah [SCOPE.sCountry('target_country').GetAltAdjective('ee')] [Concept('concept_treasury','$concept_treasury_possessive$')|l] (@money![SCOPE.sCountry('target_country').GetGoldReserves|K]) bude převeden na [ROOT.GetCountry.GetAltAdjective('A')]" # todo: CONCEPT CASE
+ transfers_treasury_to_eic_tt: "Obsah [ROOT.GetCountry.GetAltAdjective('ee')] [Concept('concept_treasury','pokladny')|l] (@money![ROOT.GetCountry.GetGoldReserves|K]) bude převeden na [ROOT.GetCountry.GetOverlord.GetAltAdjective('A')]" # todo: CONCEPT CASE
+ transfers_treasury_to_eic_diplo_tt: "Obsah [SCOPE.sCountry('target_country').GetAltAdjective('ee')] [Concept('concept_treasury','pokladny')|l] (@money![SCOPE.sCountry('target_country').GetGoldReserves|K]) bude převeden na [ROOT.GetCountry.GetAltAdjective('A')]" # todo: CONCEPT CASE
  strike.1.t: "Stávka!"
  strike.1.d: "Dělníci v [SCOPE.sBuilding('prime_strike_workplace').GetName] už mají dost svých špatných podmínek. Ve spolupráci se [SCOPE.gsInterestGroup('unions_ig').GetName] zahájili odvětvovou stávku v [SCOPE.sState('strike_state').GetName]."
  strike.1.f: "„Zachránit pracujícího z moci sobectví je úkol hodný těch nejušlechtilejších z našeho rodu. Jste ochotni přijmout tuto odpovědnost a s důvěrou v podporu věrných rytířů pracovat podle svých schopností na vítězství těchto zásad mezi lidmi?“"
@@ -365,14 +365,14 @@
  communism_progress_bar_at_full_tt: "#variable $communism_1_progress_bar$#! ukazatel dosáhl #variable 100%#!"
  communism_1_progress_bar: "Přízrak obcházející svět"
  communism_1_progress_bar_desc: "Postup: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)"
- communism_progress_from_radicals_tt: "[Concept('concept_state', '$concept_states$')] v [Concept('concept_turmoil','nepokojích')]" # todo: CONCEPT CASE
- communism_progress_from_loyalists_tt: "[Concept('concept_state', '$concept_states$')] s [Concept('concept_loyalist','$concept_loyalists$')]"
- communism_progress_from_characters_tt: "[Concept('concept_popularity','Popularita')] [Concept('concept_character', '$concept_characters$')] podporujících [GetLawType('law_council_republic').GetName]"
- communism_progress_from_interest_groups_tt: "[Concept('concept_interest_group','$concept_interest_groups$')] podporující [GetLawType('law_council_republic').GetName]"
- communism_progress_from_laws_tt: "úroveň #bold Policejní správy#! a #bold Vnitřních záležitostí#! [Concept('concept_institution', '$concept_institutions$')]"
- communism_progress_from_no_laws_tt: "absence #bold Policejní správy#! nebo #bold Vnitřních záležitostí#! [Concept('concept_institution', '$concept_institutions$')]"
- communism_progress_from_movement_support_tt: "[Concept('concept_political_movement_support', '$concept_political_movement_support_short$')] [GetIdeology('ideology_socialist').GetName], [GetIdeology('ideology_communist').GetName] a [GetIdeology('ideology_anarchist').GetName] [Concept('concept_political_movement','$concept_political_movements$')]"
- communism_progress_from_movement_activism_tt: "[Concept('concept_activism', '$concept_activism_short$')] [GetIdeology('ideology_socialist').GetName], [GetIdeology('ideology_communist').GetName] a [GetIdeology('ideology_anarchist').GetName] [Concept('concept_political_movement','$concept_political_movements$')]"
+ communism_progress_from_radicals_tt: "[Concept('concept_state','Státy')] v [Concept('concept_turmoil','nepokojích')]" # todo: CONCEPT CASE
+ communism_progress_from_loyalists_tt: "[Concept('concept_state','Státy')] s [Concept('concept_loyalist','loajalisty')]" # todo: CONCEPT CASE
+ communism_progress_from_characters_tt: "[Concept('concept_popularity','Popularita')] [Concept('concept_character','postav')] podporujících [GetLawType('law_council_republic').GetName]" # todo: CONCEPT CASE
+ communism_progress_from_interest_groups_tt: "[Concept('concept_interest_group','Zájmové skupiny')] podporující [GetLawType('law_council_republic').GetName]"
+ communism_progress_from_laws_tt: "úroveň #bold Policejní správy#! a #bold Vnitřních záležitostí#! [Concept('concept_institution','institucí')]" # todo: CONCEPT CASE
+ communism_progress_from_no_laws_tt: "absence #bold Policejní správy#! nebo #bold Vnitřních záležitostí#! [Concept('concept_institution','institucí')]" # todo: CONCEPT CASE
+ communism_progress_from_movement_support_tt: "[Concept('concept_political_movement_support','Podpora politického hnutí')] [GetIdeology('ideology_socialist').GetName], [GetIdeology('ideology_communist').GetName] a [GetIdeology('ideology_anarchist').GetName] [Concept('concept_political_movement','politická hnutí')]" # todo: CONCEPT CASE
+ communism_progress_from_movement_activism_tt: "[Concept('concept_activism','Aktivismus hnutí')] [GetIdeology('ideology_socialist').GetName], [GetIdeology('ideology_communist').GetName] a [GetIdeology('ideology_anarchist').GetName] [Concept('concept_political_movement','politická hnutí')]" # todo: CONCEPT CASE
  communism_progress_from_events_tt: "události a další efekty"
  je_communism_2: "Revoluce lidu"
  je_communism_2_reason: "Lid stále trpí pod tyranskou patou králů, kněží a kapitalistů. Musíme svrhnout reakční vládu a nastolit dělnický ráj."
@@ -383,7 +383,7 @@
  communism.1.b: "Zbavme poslední otrokáře jejich trápení."
  communism.1.c: "Zaručit lepší podmínky pro dělníky."
  communism.1.d: "Nepodvolíme se!"
- communist_unions.tt: "[SCOPE.gsInterestGroup('unions').GetName] budou mnohem častěji volit vůdce s ideologií avantgardismu, komunismu nebo anarchismu, pokud budou [Concept('concept_political_movement_pressure', '$concept_political_movement_pressured_short$')] příslušným [Concept('concept_political_movement','politickým hnutím')].\nOstatní [Concept('concept_interest_group', '$concept_interest_groups$')] budou také častěji volit vůdce s ideologií avantgardismu, komunismu nebo anarchismu za stejných podmínek." # todo: CONCEPT CASE
+ communist_unions.tt: "[SCOPE.gsInterestGroup('unions').GetName] budou mnohem častěji volit vůdce s ideologií avantgardismu, komunismu nebo anarchismu, pokud budou [Concept('concept_political_movement_pressure','pod tlakem')] příslušným [Concept('concept_political_movement','politickým hnutím')].\nOstatní [Concept('concept_interest_group','zájmové skupiny')] budou také častěji volit vůdce s ideologií avantgardismu, komunismu nebo anarchismu za stejných podmínek." # todo: CONCEPT CASE
  communist_government_modifier: "Tvrdá nepřízeň"
  communism.2.t: "Dělnická republika"
  communism.2.d: "Dělníci v [ROOT.GetCountry.GetAltAdjective('L')] konečně svrhli buržoazní vládu a vytvořili radovou republiku. Stále však zbývá mnoho práce, než bude socialismus skutečně naplněn."
@@ -392,9 +392,9 @@
  communism.2.b: "Veškerá moc radám!"
  communism.2.b2: "Veškerá moc sovětům!"
  communism.2.c: "Žádní bohové! Žádní páni! Ať žije anarchie!"
- chose_vanguardism.tt: "[SCOPE.gsInterestGroup('unions').GetName] budou mnohem častěji volit [GetIdeology('ideology_vanguardist').GetName] vůdce, pokud budou [Concept('concept_political_movement_pressure', '$concept_political_movement_pressured_short$')] příslušným [Concept('concept_political_movement','politickým hnutím')]." # todo: CONCEPT CASE
- chose_communism.tt: "[SCOPE.gsInterestGroup('unions').GetName] budou mnohem častěji volit [GetIdeology('ideology_communist').GetName] vůdce, pokud budou [Concept('concept_political_movement_pressure', '$concept_political_movement_pressured_short$')] příslušným [Concept('concept_political_movement','politickým hnutím')]." # todo: CONCEPT CASE
- chose_anarchism.tt: "[SCOPE.gsInterestGroup('unions').GetName] budou mnohem častěji volit [GetIdeology('ideology_anarchist').GetName] vůdce, pokud budou [Concept('concept_political_movement_pressure', '$concept_political_movement_pressured_short$')] příslušným [Concept('concept_political_movement','politickým hnutím')]." # todo: CONCEPT CASE
+ chose_vanguardism.tt: "[SCOPE.gsInterestGroup('unions').GetName] budou mnohem častěji volit [GetIdeology('ideology_vanguardist').GetName] vůdce, pokud budou [Concept('concept_political_movement_pressure','pod tlakem')] příslušným [Concept('concept_political_movement','politickým hnutím')]." # todo: CONCEPT CASE
+ chose_communism.tt: "[SCOPE.gsInterestGroup('unions').GetName] budou mnohem častěji volit [GetIdeology('ideology_communist').GetName] vůdce, pokud budou [Concept('concept_political_movement_pressure','pod tlakem')] příslušným [Concept('concept_political_movement','politickým hnutím')]." # todo: CONCEPT CASE
+ chose_anarchism.tt: "[SCOPE.gsInterestGroup('unions').GetName] budou mnohem častěji volit [GetIdeology('ideology_anarchist').GetName] vůdce, pokud budou [Concept('concept_political_movement_pressure','pod tlakem')] příslušným [Concept('concept_political_movement','politickým hnutím')]." # todo: CONCEPT CASE
  je_anarchy: "Vzájemná pomoc"
  je_anarchy_reason: "Pokud existuje stát, musí existovat nadvláda jedné třídy nad druhou, a tedy i otroctví; stát bez otroctví je nemyslitelný - proto jsme nepřáteli státu."
  je_vanguard: "Stát a revoluce"
@@ -411,7 +411,7 @@
  communism.3.f: "„Diktatura proletariátu, tedy organizace avantgardy utlačovaných jako vládnoucí třídy za účelem potlačení utlačovatelů, nemůže vést pouze k rozšíření demokracie. Musí zavést řadu omezení svobody utlačovatelů, vykořisťovatelů a kapitalistů.“"
  communism.3.a: "Loajalita musí být absolutní."
  communism.3.b: "Mají důležitou roli."
- new_vanguard.tt: "[SCOPE.gsInterestGroup('new_vanguard_ig').GetName] budou mnohem častěji volit avantgardistické vůdce, pokud budou [Concept('concept_political_movement_pressure', '$concept_political_movement_pressured_short$')] příslušným [Concept('concept_political_movement','politickým hnutím')]." # todo: CONCEPT CASE
+ new_vanguard.tt: "[SCOPE.gsInterestGroup('new_vanguard_ig').GetName] budou mnohem častěji volit avantgardistické vůdce, pokud budou [Concept('concept_political_movement_pressure','pod tlakem')] příslušným [Concept('concept_political_movement','politickým hnutím')]." # todo: CONCEPT CASE
  new_vanguard_opinion: "Loajální avantgarda"
  new_vanguard_clout: "Integrace do avantgardy"
  communism.4.t: "Dobytí chleba"
@@ -516,7 +516,7 @@
  opium_wars.3.f: "Stejně jako se závislý na opiu zbaví své závislosti a vstane ze svého lože zahálky, tak i náš národ setřese nechtěné jho cizího vlivu a povstane jako suverénní stát. Naše řeky již nebudou zaplaveny opiem, ale stříbrem, a náš lid se vrátí k ctnostnému životu."
  opium_wars.3.a: "Suverenita [ROOT.GetCountry.GetName] je absolutní."
  opium_wars.3.b: "Harmonie se vrátí do [ROOT.GetCountry.GetAltAdjective('G')]." # todo: CONCEPT CASE
- opium_wars_fail_tt: "Žádná [SCOPE.sCountry('target').GetAdjective] [Concept('concept_primary_cultures','$concept_primary_culture$')] nemá [Concept('concept_obsession','obsese')] s opiem"
+ opium_wars_fail_tt: "Žádná [SCOPE.sCountry('target').GetAdjective] [Concept('concept_primary_cultures','primární kultura')] nemá [Concept('concept_obsession','obsese')] s opiem"
  china_authority: "Prosazená suverenita"
  china_welfare: "Obnova po opiu"
  opium_wars.4.t: "Opiové války: Porážka"
@@ -591,11 +591,11 @@
  dt_society_events.3.c: "Formalizovat lékařskou profesi."
  je_sick_man_main: "Nemocný muž Evropy"
  je_sick_man_main_reason: "Musíme modernizovat a obnovit Osmanskou říši."
- je_sick_man_main_goal: "Dokončete 4 „Tanzimat“ [Concept('concept_journal_entry', '$concept_journal_entries$')]"
- je_sick_man_main_failure_movements_tt: "Kulturní menšinová [Concept('concept_political_movement','$concept_political_movements$')] na Balkáně získají větší podporu"
+ je_sick_man_main_goal: "Dokončete 4 „Tanzimat“ [Concept('concept_journal_entry','Záznamy deníku')]"
+ je_sick_man_main_failure_movements_tt: "Kulturní menšinová [Concept('concept_political_movement','politická hnutí')] na Balkáně získají větší podporu"
  je_sick_man_syria: "Tanzimat: Znovuzískání Sýrie"
  je_sick_man_syria_reason: "Sýrie byla ztracena ve prospěch egyptského tyrana, který si ji uzurpoval z našich právoplatných rukou. Musíme ji získat zpět!"
- je_sick_man_syria_status: "Zahájení diplomatické hry proti Egyptu může přinést podporu evropských [Concept('concept_great_power', '$concept_great_powers$')]."
+ je_sick_man_syria_status: "Zahájení diplomatické hry proti Egyptu může přinést podporu evropských [Concept('concept_great_power','velmocí')]." # todo: CONCEPT CASE
  je_sick_man_egypt: "Tanzimat: Znovuzískání Egypta"
  je_sick_man_egypt_reason: "Po znovuzískání Sýrie bychom měli obrátit pozornost na Egypt. Právoplatně osmanské území se dostalo do rukou uzurpátora."
  je_sick_man_economy: "Tanzimat: Urbanizace"
@@ -628,10 +628,10 @@
  sick_man.3.f: "Vznešená Porta umlká. Jen několik dní poté, co oznámil [SCOPE.sCharacter('ottoman_sultan').GetHerHis] úmysl abdikovat, pravděpodobně pod tlakem svých ministrů, byl [SCOPE.sCharacter('ottoman_sultan').GetPrimaryRoleTitle] nalezen mrtvý ve svých komnatách. Stejně jako naše drahocenná říše trpěl dlouhou, plíživou nemocí, která ho nakonec učinila neschopným nést tíhu koruny. Zlomený a pomatený stín svého někdejšího já."
  sick_man.3.a: "Patříme Alláhovi a k Němu se vracíme."
  je_meiji_restoration: "Čestná restaurace"
- je_meiji_restoration_reason: "Otevření #v $JAP$#! uvolnilo síly, které jsou mimo kontrolu vládnoucího #b šógunátu#!. Pobouřeni pronikáním dravých cizích mocností požadují radikálové z [SelectLocalization(SCOPE.sPoliticalMovement('meiji_movement_scope').IsValid, SCOPE.sPoliticalMovement('meiji_movement_scope').GetName, 'movement_meiji_restorationist_name')] sesazení $RULER_TITLE_SHOGUN$, obnovení moci #b $RULER_TITLE_EMPEROR$#! a vyhnání cizinců. Zároveň ambiciózní [SCOPE.gsInterestGroup('daimyo_ig').GetName] usilují využít slabosti šógunátu k prosazení vlastních zájmů.\n\nMá-li Japonsko najít své místo ve světě, musí uskutečnit reformy nezbytné k vlastní obraně a vyřešit konflikt mezi svými de iure a de facto vládci. Ať už sám nebo po boku šóguna, císař musí vládnout.\n\n@warning! Jak roste [Concept('concept_activism', '$concept_activism_short$')] [SelectLocalization(SCOPE.sPoliticalMovement('meiji_movement_scope').IsValid, SCOPE.sPoliticalMovement('meiji_movement_scope').GetName, 'movement_meiji_restorationist_name')], frakce loajální císařskému dvoru se budou uchylovat k razantnějším prostředkům k obnovení císařovy moci."
+ je_meiji_restoration_reason: "Otevření #v $JAP$#! uvolnilo síly, které jsou mimo kontrolu vládnoucího #b šógunátu#!. Pobouřeni pronikáním dravých cizích mocností požadují radikálové z [SelectLocalization(SCOPE.sPoliticalMovement('meiji_movement_scope').IsValid, SCOPE.sPoliticalMovement('meiji_movement_scope').GetName, 'movement_meiji_restorationist_name')] sesazení $RULER_TITLE_SHOGUN$, obnovení moci #b $RULER_TITLE_EMPEROR$#! a vyhnání cizinců. Zároveň ambiciózní [SCOPE.gsInterestGroup('daimyo_ig').GetName] usilují využít slabosti šógunátu k prosazení vlastních zájmů.\n\nMá-li Japonsko najít své místo ve světě, musí uskutečnit reformy nezbytné k vlastní obraně a vyřešit konflikt mezi svými de iure a de facto vládci. Ať už sám nebo po boku šóguna, císař musí vládnout.\n\n@warning! Jak roste [Concept('concept_activism','aktivismus')] [SelectLocalization(SCOPE.sPoliticalMovement('meiji_movement_scope').IsValid, SCOPE.sPoliticalMovement('meiji_movement_scope').GetName, 'movement_meiji_restorationist_name')], frakce loajální císařskému dvoru se budou uchylovat k razantnějším prostředkům k obnovení císařovy moci."
  je_meiji_main: "Restaurace [ROOT.Var('emperor_var').GetCharacter.GetFirstName]"
  je_meiji_main_reason: "Císař byl navrácen k moci a proces znovuvybudování $JAP$#! může začít. Čeká nás mnoho práce. Zahraniční mocnosti nás sledují s dychtivým zájmem. Musíme být schopni odolat jejich tlaku nejen vojensky, ale i ekonomicky a politicky:\n\n• [SCOPE.GetRootScope.GetCountry.GetCustom('meiji_je_conditions_army')]\n• [SCOPE.GetRootScope.GetCountry.GetCustom('meiji_je_conditions_economy')]\n• [SCOPE.GetRootScope.GetCountry.GetCustom('meiji_je_conditions_diplomacy')]\n\nMusíme vybudovat nové $JAP$#!, dokud je železo žhavé, a využít této příležitosti k utváření země způsoby, o nichž naši předkové ani nesnili."
- je_meiji_main_goal: "Dokončete všechny 3 restaurace [Concept('concept_journal_entry', '$concept_journal_entries$')]"
+ je_meiji_main_goal: "Dokončete všechny 3 restaurace [Concept('concept_journal_entry','záznamy deníku')]"
  je_meiji_status_has_completed_meiji_army_je: "Máme #g dokončeno#! #b $je_meiji_army$#!\n"
  je_meiji_status_has_completed_meiji_economy_je: "Máme #g dokončeno#! #b $je_meiji_economy$#!\n"
  je_meiji_status_has_completed_meiji_diplomacy_je: "Máme #g dokončeno#! #b $je_meiji_diplomacy$#!"
@@ -1001,7 +1001,7 @@
  je_schleswig_holstein_question_reason: "Šlesvicko-holštýnská otázka nyní zaměstnává myšlenky i energii německých nacionalistů. Aby mohlo Německo pokročit k národnímu sjednocení, musí být německé obyvatelstvo v Holštýnsku nejprve osvobozeno od dánské nadvlády."
  je_schleswig_holstein_question_solved_trigger_desc: "Německá [Concept('concept_country','země')] musí vyřešit $je_schleswig_holstein_question$ [Concept('concept_journal_entry','záznam v deníku')]"
  je_schleswig_holstein_question_solved_fail_trigger_desc: "Jiná německá [Concept('concept_country','země')] vyřeší tento [Concept('concept_journal_entry','záznam v deníku')] před námi"
- je_german_unification_sole_candidate_trigger_desc: "Nesmí existovat žádný jiný německý [Concept('concept_unification_candidate', '$concept_unification_candidates$')] kromě [GetPlayer.GetName]"
+ je_german_unification_sole_candidate_trigger_desc: "Nesmí existovat žádný jiný německý [Concept('concept_unification_candidate','kandidáti pro sjednocení')] kromě [GetPlayer.GetName]"
  je_german_unification_idea_trigger_desc: "Má dokončen $je_german_unification_idea$ [Concept('concept_journal_entry','záznam v deníku')]"
  je_german_unification_idea: "Německá národní identita"
  je_german_unification_idea_reason: "Myšlenky nacionalismu se mezi německým lidem šíří jako požár. Jakmile tyto ideály dosáhnou kritického množství příznivců v roztříštěných státech Německého spolku, nevyhnutelně dojde k tlaku na národní sjednocení."
@@ -1149,7 +1149,7 @@
  italian_unifier_prestige: "Risorgimento"
  italian_unifiers_ig: "Italští sjednotitelé"
  je_consolidate_colonial_rule: "Upevnit koloniální nadvládu"
- je_consolidate_colonial_rule_reason: "Hranice našich indických území představují trvalé riziko. Musíme zajistit stabilitu a potlačit odpor.\n\nPři rozšiřování správy můžeme vytvářet nové [Concept('concept_princely_state', '$concept_princely_states$')]."
+ je_consolidate_colonial_rule_reason: "Hranice našich indických území představují trvalé riziko. Musíme zajistit stabilitu a potlačit odpor.\n\nPři rozšiřování správy můžeme vytvářet nové [Concept('concept_princely_state','knížecí státy')]."
  je_consolidate_colonial_rule_goal: "Nejvyšší [Country.GetAdjectiveNoFlag] [Concept('concept_secession','odtržení')] méně než #variable 30%#! po dobu #v 120#! měsíců\n• (Aktuálně #variable [ROOT.GetCountry.MakeScope.Var('east_indies_revolt_var').GetValue]#! měsíců)"
  je_reform_indies: "Reformovat Indii"
  je_reform_indies_reason: "Staré metody vykořisťování nejsou udržitelné. Musíme transformovat ekonomiku."
@@ -1209,8 +1209,8 @@
  1848.4.a: "Podpořit konzervativní řád."
  1848.4.b: "Podpořit radikální hnutí."
  modifier_springtime_of_the_peoples: "Jaro národů"
- peoples_springtime_underway_tt: "Každá #b evropská#! [Concept('concept_country','země')] s [Concept('concept_rank','hodností')] [Concept('concept_major_power','regionální mocnosti')] nebo vyšším zažívá #tooltippable;tooltip:[GetPlayer.GetTooltipTag],liberal_movements_list_tt Liberální#! nebo #tooltippable;tooltip:[GetPlayer.GetTooltipTag],socialist_movements_list_tt Socialistická#! [Concept('concept_revolution','revoluce')] ve svém [Concept('concept_capital_state','$concept_capital_state_short$')]" # todo: CHANGED # todo: CONCEPT CASE
- caused_by_liberal_or_socialist_movement_tt: "[Concept('concept_revolution', '$concept_revolutionary$')] [Concept('concept_political_movement','politické hnutí')] je #tooltippable;tooltip:[GetPlayer.GetTooltipTag],liberal_movements_list_tt Liberální#! nebo #tooltippable;tooltip:[GetPlayer.GetTooltipTag],socialist_movements_list_tt Socialistické#!" # todo: NEW TRANSLATION
+ peoples_springtime_underway_tt: "Každá #b evropská#! [Concept('concept_country','země')] s [Concept('concept_rank','hodností')] [Concept('concept_major_power','regionální mocnosti')] nebo vyšším zažívá #tooltippable;tooltip:[GetPlayer.GetTooltipTag],liberal_movements_list_tt Liberální#! nebo #tooltippable;tooltip:[GetPlayer.GetTooltipTag],socialist_movements_list_tt Socialistická#! [Concept('concept_revolution','revoluce')] ve svém [Concept('concept_capital_state','hlavním městě')]" # todo: CHANGED # todo: CONCEPT CASE
+ caused_by_liberal_or_socialist_movement_tt: "[Concept('concept_revolution','Revoluční')] [Concept('concept_political_movement','politické hnutí')] je #tooltippable;tooltip:[GetPlayer.GetTooltipTag],liberal_movements_list_tt Liberální#! nebo #tooltippable;tooltip:[GetPlayer.GetTooltipTag],socialist_movements_list_tt Socialistické#!" # todo: NEW TRANSLATION
  modifier_radical_movement_enhancement: "Radikální nálady"
  suppressing_radicals: "Potlačování radikálů"
  1848_popular_radical: "Populární radikál"
@@ -1429,8 +1429,8 @@
  central_america_capital_tt: "Po rozpadu Střední Ameriky budete hrát za zemi nejvíce odpovídající vašemu hlavnímu státu. Národní hlavní město můžete změnit prostřednictvím politického přehledu."
  central_america_breakup_status: "Státy Střední Ameriky s vysokými nepokoji se mohou odtrhnout"
  je_peru_bolivia: "Peruánsko-bolivijská konfederace"
- je_peru_bolivia_reason: "Bolivijská intervence do peruánské občanské války roku 1835 vedla k tomu, že území Peru se dostala pod kontrolu [SCOPE.sCountry('bolivia_scope').GetRuler.GetPrimaryRoleTitle] země [SCOPE.sCountry('bolivia_scope').GetName]. [SCOPE.sCountry('bolivia_scope').GetNameNoFormatting] se snaží tuto křehkou konfederaci udržet, aby se skutečné a úplné sjednocení jejích poddaných mohlo stát realitou.\n\n@information! Ambice #bold Peruánsko-bolivijské konfederace#! lze odvrátit tím, že je donutíte propustit jejich [Concept('concept_subject', '$concept_subjects$')] dříve, než ukazatel postupu dosáhne #variable 100%#!.\n\n@warning! Zatímco #b $BOL$#! usiluje o upevnění vlády #bold konfederace#!, bude čelit zvýšené agresi ze strany svých sousedů."
- je_peru_bolivia_goal: "[SCOPE.sCountry('bolivia_scope').GetNameNoFlag] úspěšně udržuje své [SCOPE.sCulture('south_andean_culture').GetName] a [SCOPE.sCulture('quechua_culture').GetName] [Concept('concept_subject', '$concept_subjects$')] a zároveň si udržuje [Concept('concept_legitimacy','legitimita')] nad #bold 50#! po dobu 10 let"
+ je_peru_bolivia_reason: "Bolivijská intervence do peruánské občanské války roku 1835 vedla k tomu, že území Peru se dostala pod kontrolu [SCOPE.sCountry('bolivia_scope').GetRuler.GetPrimaryRoleTitle] země [SCOPE.sCountry('bolivia_scope').GetName]. [SCOPE.sCountry('bolivia_scope').GetNameNoFormatting] se snaží tuto křehkou konfederaci udržet, aby se skutečné a úplné sjednocení jejích poddaných mohlo stát realitou.\n\n@information! Ambice #bold Peruánsko-bolivijské konfederace#! lze odvrátit tím, že je donutíte propustit jejich [Concept('concept_subject','závislé země')] dříve, než ukazatel postupu dosáhne #variable 100%#!.\n\n@warning! Zatímco #b $BOL$#! usiluje o upevnění vlády #bold konfederace#!, bude čelit zvýšené agresi ze strany svých sousedů."
+ je_peru_bolivia_goal: "[SCOPE.sCountry('bolivia_scope').GetNameNoFlag] úspěšně udržuje své [SCOPE.sCulture('south_andean_culture').GetName] a [SCOPE.sCulture('quechua_culture').GetName] [Concept('concept_subject','závislé země')] a zároveň si udržuje [Concept('concept_legitimacy','legitimita')] nad #bold 50#! po dobu 10 let"
  je_peru_bolivia_restorer_victory: "Pro dosažení vítězství #b Obnovitele#!:\n"
  je_peru_bolivia_on_restorer_victory: "Při vítězství #b Obnovitele#!:\n$EFFECT$"
  je_peru_bolivia_confederation_victory: "Pro dosažení vítězství #b Konfederace#!:\n"
@@ -1553,9 +1553,9 @@
  je_serial_killer_reason: "Nebezpečný vrah se potuluje ulicemi [SCOPE.sState('target').GetCityHubName] a děsí obyvatele [SCOPE.sState('target').GetName]. Musíme udělat vše, co je v našich silách, abychom zločince dopadli dříve, než znovu zabije."
  serial_killer_je_tt: "Vrah byl dopaden"
  serial_killer_highest_chance: "Policie je pachateli na stopě a je velmi pravděpodobné, že vraha dopadne."
- serial_killer_high_chance: "Policie zúžila okruh potenciálních podezřelých a je pravděpodobné, že vraha dopadne. Naše šance můžeme zvýšit investicemi do Police [Concept('concept_institution', '$concept_institution$')]."
- serial_killer_medium_chance: "Policie sleduje slibné stopy a má střední šanci vraha dopadnout. Naše šance můžeme zvýšit investicemi do Police [Concept('concept_institution', '$concept_institution$')]."
- serial_killer_low_chance: "Policie vraždy aktivně nevyšetřuje. Naše šance můžeme zvýšit investicemi do Police [Concept('concept_institution', '$concept_institution$')]."
+ serial_killer_high_chance: "Policie zúžila okruh potenciálních podezřelých a je pravděpodobné, že vraha dopadne. Naše šance můžeme zvýšit investicemi do Police [Concept('concept_institution','instituce')]."
+ serial_killer_medium_chance: "Policie sleduje slibné stopy a má střední šanci vraha dopadnout. Naše šance můžeme zvýšit investicemi do Police [Concept('concept_institution','instituce')]."
+ serial_killer_low_chance: "Policie vraždy aktivně nevyšetřuje. Naše šance můžeme zvýšit investicemi do Police [Concept('concept_institution','instituce')]."
  serial_killer_state_mod: "Rozparovač: Hrůzné vraždy"
  suspected_serial_killer: "Temné a znepokojivé zvěsti"
  serial_killer_active_investigation: "Vyšetřování hrůzných vražd"
@@ -1585,7 +1585,7 @@
  trail_of_tears_enactment: "Stezka slz: Politické pobouření"
  indian_removal_approval: "Vystěhování Indiánů"
  indian_removal_end: "Pokud nebude vystěhování zastaveno, budou Čerokíové nuceni migrovat za cenu velkých ztrát na životech."
- indian_removal_fail_tt: "Ve Spojených státech nezůstaly žádné čerokíjské [Concept('concept_pop', '$concept_pops$')]"
+ indian_removal_fail_tt: "Ve Spojených státech nezůstaly žádné čerokíjské [Concept('concept_pop','populace')]"
  native_american_rights: "Ukončení vystěhování Indiánů"
  movement_investigation_isolation: "Vyšetřování vraždy"
  miraculous_healing: "Zázračné uzdravení" # todo: NEW TRANSLATION
@@ -1717,10 +1717,10 @@
  notification_law_notification_setback_desc: "[SCOPE.sLaw('current_law_scope').GetName] se nedaří získat podporu, postup se zastavil a zákon utrpěl zpětný krok"
  notification_law_notification_setback_tooltip: "#header $notification_law_notification_setback_name$#!\n$TOOLTIP_DELIMITER$\n$notification_law_notification_setback_desc$"
  notification_law_notification_phase_forward_1_name: "Zákon postoupil do fáze [SCOPE.GetRootScope.GetCountry.GetCustom('enactment_phase_1')]"
- notification_law_notification_phase_forward_1_desc: "[SCOPE.sLaw('current_law_scope').GetName] úspěšně postoupil do fáze [SCOPE.GetRootScope.GetCountry.GetCustom('enactment_phase_1')] [Concept('concept_law','zákon')] [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enactment$')]"
+ notification_law_notification_phase_forward_1_desc: "[SCOPE.sLaw('current_law_scope').GetName] úspěšně postoupil do fáze [SCOPE.GetRootScope.GetCountry.GetCustom('enactment_phase_1')] [Concept('concept_law','zákon')] [Concept('concept_enactment_of_laws','uzákonění')]"
  notification_law_notification_phase_forward_1_tooltip: "#header $notification_law_notification_phase_forward_1_name$#!\n$TOOLTIP_DELIMITER$\n$notification_law_notification_phase_forward_1_desc$"
  notification_law_notification_phase_forward_2_name: "Zákon postoupil do fáze [SCOPE.GetRootScope.GetCountry.GetCustom('enactment_phase_2')]"
- notification_law_notification_phase_forward_2_desc: "[SCOPE.sLaw('current_law_scope').GetName] úspěšně postoupil do fáze [SCOPE.GetRootScope.GetCountry.GetCustom('enactment_phase_2')] [Concept('concept_law','zákon')] [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enactment$')]"
+ notification_law_notification_phase_forward_2_desc: "[SCOPE.sLaw('current_law_scope').GetName] úspěšně postoupil do fáze [SCOPE.GetRootScope.GetCountry.GetCustom('enactment_phase_2')] [Concept('concept_law','zákon')] [Concept('concept_enactment_of_laws','uzákonění')]"
  notification_law_notification_phase_forward_2_tooltip: "#header $notification_law_notification_phase_forward_2_name$#!\n$TOOLTIP_DELIMITER$\n$notification_law_notification_phase_forward_2_desc$"
  generic_law_advance: "Prosazení zákona pokročilo"
  generic_law_debate_success: "Prosazení zákona bylo úspěšně projednáno"
@@ -1734,8 +1734,8 @@
  opium_wars_fail_invalid_tt: "Zákaz opia bude pokračovat bez odporu."
  end_strike_tt: "Stávka skončí"
  strike_negotiate_tooltip: "Budeme muset prosadit [Concept('concept_law','zákon')] nebo rozšířit [Concept('concept_institution','instituce')] příznivou pro odbory"
- general_strike_effect_tt: "Všechny [Concept('concept_incorporated_state', '$concept_incorporated_states$')] získají:"
- scramble_for_africa_complete_tt: "Ovládá #variable [JournalEntry.GetTotalGoalValue]#! nebo více [Concept('concept_state','$concept_states$')] v [GetGeographicRegion('geographic_region_africa').GetName] prostřednictvím [Concept('concept_unincorporated_state','$concept_unincorporated_states$')] nebo [Concept('concept_subject','$concept_subjects$')]"
+ general_strike_effect_tt: "Všechny [Concept('concept_incorporated_state','začlenené státy')] získají:"
+ scramble_for_africa_complete_tt: "Ovládá #variable [JournalEntry.GetTotalGoalValue]#! nebo více [Concept('concept_state','státy')] v [GetGeographicRegion('geographic_region_africa').GetName] prostřednictvím [Concept('concept_unincorporated_state','nezačleněných států')] nebo [Concept('concept_subject','závislé země')]" # todo: CONCEPT CASE
  bank_robberies: "Bankovní loupeže"
  frontier_military_aid: "Vojenská pomoc na hranici"
  assassination_completion_tt: "Plán atentátu selhal"
@@ -1744,7 +1744,7 @@
  central_america_fail_tt: "Vlastní méně než 3 středoamerické státy"
  kill_own_ruler_tt: "Atentátníci budou postupovat mnohem rychleji"
  assassination_events.1.b: "Možná by to nebylo tak hrozné."
- protected_speech_tt: "Nelze [Concept('concept_bolster','posílení')] ani [Concept('concept_suppress','potlačení')] [Concept('concept_political_movement','$concept_political_movements$')|l]"
+ protected_speech_tt: "Nelze [Concept('concept_bolster','posílení')] ani [Concept('concept_suppress','potlačení')] [Concept('concept_political_movement','politická hnutí')|l]"
  heavenly.4.b: "Bůh je na jejich straně!"
  bic_breakup.1.t: "Konec britské nadvlády?"
  bic_breakup.1.d: "Bez vedení a podpory svého koloniálního vládce se [ROOT.GetCountry.GetName] nachází na pokraji zhroucení. Zdá se, že vláda [SCOPE.sCulture('british_culture').GetName] končí." # todo: CONCEPT CASE
@@ -1752,14 +1752,14 @@
  bic_breakup.1.a: "Indie bude rozdělena mezi knížata."
  bic_breakup.1.b: "Toto je zrození indického národa."
  bic_breakup.1.c: "Britská nadvláda musí být zachována za každou cenu."
- india_princes_independent_tt: "Všechny [Concept('concept_subject','závislé')] země se stanou nezávislými a naše [Concept('concept_state', '$concept_states$')] budou mezi ně rozděleny." # todo: CONCEPT CASE
- warlord_china_implosion_tt: "Naše [Concept('concept_state', '$concept_states$')] budou rozděleny mezi válečníky"
+ india_princes_independent_tt: "Všechny [Concept('concept_subject','závislé')] země se stanou nezávislými a naše [Concept('concept_state','státy')] budou mezi ně rozděleny." # todo: CONCEPT CASE
+ warlord_china_implosion_tt: "Naše [Concept('concept_state','státy')] budou rozděleny mezi válečníky"
  dei_breakup.1.t: "Konec Východní Indie"
  dei_breakup.1.d: "Po ztrátě podpory svého koloniálního vládce se správa [ROOT.GetCountry.GetAltAdjective('G')] napříč indonéským souostrovím začala hroutit. Zdá se, že koloniální nadvláda konečně končí."
  dei_breakup.1.f: "Napříč ostrovy se ticho zvedlo jako vlna. Přerušené telegrafní linky, dezertující policisté, farmy, které už nehlásily své sklizně. A pak se ticho prolomilo a s ním přišlo zničení."
  dei_breakup.1.a: "Národy souostroví si vzaly své právo."
  dei_breakup.1.b: "Jedna vlast, jeden národ, jeden jazyk!"
  dei_breakup.1.c: "Budeme vzdorovat bouři, dokud nebudeme zachráněni."
- dei_vassals_independent_tt: "Všechny [Concept('concept_subject','závislé')] země se stanou nezávislými a naše [Concept('concept_state', '$concept_states$')] budou mezi ně rozděleny." # todo: CONCEPT CASE
+ dei_vassals_independent_tt: "Všechny [Concept('concept_subject','závislé')] země se stanou nezávislými a naše [Concept('concept_state','státy')] budou mezi ně rozděleny." # todo: CONCEPT CASE
  je_qa_test: "QA TEST"
  je_qa_test_reason: "Miluji QA"

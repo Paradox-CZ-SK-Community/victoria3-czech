@@ -100,7 +100,7 @@
  ai_strategy_maintain_mandate_of_heaven: "Zachovat Mandát nebes"
  ai_strategy_maintain_mandate_of_heaven_desc: "[COUNTRY.GetName] se snaží udržet svou vládu zachováním Mandátu nebes."
  ai_strategy_economic_imperialism: "Hospodářský imperialismus"
- ai_strategy_economic_imperialism_desc: "[COUNTRY.GetName] chce rozšířit svůj [Concept('concept_market','trh')] a otevřít izolované [Concept('concept_country', '$concept_countries$')|l]."
+ ai_strategy_economic_imperialism_desc: "[COUNTRY.GetName] chce rozšířit svůj [Concept('concept_market','trh')] a otevřít izolované [Concept('concept_country','země')|l]."
  ai_strategy_unify_germany: "Sjednotit Německo"
  ai_strategy_unify_germany_desc: "[COUNTRY.GetName] chce sjednotit německé národy pod svým praporem."
  ai_strategy_unify_italy: "Sjednotit Itálii"
@@ -158,16 +158,16 @@
  ai_attitude_loyal_desc: "[COUNTRY.GetName] považuje [TARGET_COUNTRY.GetName] za jejich #P #bold spravedlivého suveréna#!#! v geopolitických záležitostech. Je pravděpodobné, že vyhoví žádostem na snížení [Concept('concept_autonomy','autonomie')] a mohli by dokonce souhlasit s anexí svým [Concept('concept_overlord','vládcem')]." # todo: CONCEPT CASE
  ai_attitude_loyal_tooltip: "#header $ai_attitude_loyal$ [Concept('concept_attitude','postoj')]#!\n$ai_attitude_loyal_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
  ai_attitude_protective: "#V #P Ochranný#!#!"
- ai_attitude_protective_desc: "[COUNTRY.GetName] považuje [TARGET_COUNTRY.GetName] za #P #bold potřebující jejich ochranu#!#! v geopolitických záležitostech. Je pravděpodobné, že zasáhnou na naší straně v [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] a mohou navrhnout [TARGET_COUNTRY.GetName], aby se stalo jejich [Concept('concept_subject','závislá země')]."
+ ai_attitude_protective_desc: "[COUNTRY.GetName] považuje [TARGET_COUNTRY.GetName] za #P #bold potřebující jejich ochranu#!#! v geopolitických záležitostech. Je pravděpodobné, že zasáhnou na naší straně v [Concept('concept_diplomatic_play','diplomatické hře')] a mohou navrhnout [TARGET_COUNTRY.GetName], aby se stalo jejich [Concept('concept_subject','závislá země')]." # todo: CONCEPT CASE
  ai_attitude_protective_tooltip: "#header $ai_attitude_protective$ [Concept('concept_attitude','postoj')]#!\n$ai_attitude_protective_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
  ai_attitude_wary: "#V #N Opatrný#!#!"
  ai_attitude_wary_desc: "[COUNTRY.GetName] považuje [TARGET_COUNTRY.GetName] za #N #bold potenciální hrozbu#!#! v geopolitických záležitostech. Zmíněný stát bude méně otevřený diplomacii a mohl by vyhledávat aliance k ochraně proti nám."
  ai_attitude_wary_tooltip: "#header $ai_attitude_wary$ [Concept('concept_attitude','postoj')]#!\n$ai_attitude_wary_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
  ai_attitude_antagonistic: "#V #N Antagonistický#!#!"
- ai_attitude_antagonistic_desc: "[COUNTRY.GetName] považuje [TARGET_COUNTRY.GetName] za #N #bold hrozivou sílu#!#! v geopolitických záležitostech. Je pravděpodobné, že vyhledají bližší vztahy se svými nepřáteli a mohou se připojit k [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] k odporu proti jejich expanze."
+ ai_attitude_antagonistic_desc: "[COUNTRY.GetName] považuje [TARGET_COUNTRY.GetName] za #N #bold hrozivou sílu#!#! v geopolitických záležitostech. Je pravděpodobné, že vyhledají bližší vztahy se svými nepřáteli a mohou se připojit k [Concept('concept_diplomatic_play','diplomatické hře')] k odporu proti jejich expanze." # todo: CONCEPT CASE
  ai_attitude_antagonistic_tooltip: "#header $ai_attitude_antagonistic$ [Concept('concept_attitude','postoj')]#!\n$ai_attitude_antagonistic_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
  ai_attitude_belligerent: "#V #N Nepřátelský#!#!"
- ai_attitude_belligerent_desc: "[COUNTRY.GetName] považuje [TARGET_COUNTRY.GetName] za #N #bold cíl dobytí#!#! v geopolitických záležitostech. Je pravděpodobné, že zahájí [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] proti [TARGET_COUNTRY.GetAltAdjective('D')], pokud se domnívají, že mají výhodu." # todo: CONCEPT CASE
+ ai_attitude_belligerent_desc: "[COUNTRY.GetName] považuje [TARGET_COUNTRY.GetName] za #N #bold cíl dobytí#!#! v geopolitických záležitostech. Je pravděpodobné, že zahájí [Concept('concept_diplomatic_play','diplomatické hry')] proti [TARGET_COUNTRY.GetAltAdjective('D')], pokud se domnívají, že mají výhodu." # todo: CONCEPT CASE
  ai_attitude_belligerent_tooltip: "#header $ai_attitude_belligerent$ [Concept('concept_attitude','postoj')]#!\n$ai_attitude_belligerent_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
  ai_attitude_domineering: "#V #N Dominantní#!#!"
  ai_attitude_domineering_desc: "[COUNTRY.GetName] považuje [TARGET_COUNTRY.GetName] za #N #bold přirozený subjekt#!#! v geopolitických záležitostech. Je pravděpodobné, že se pokusí učinit z nás [Concept('concept_subject','závislou zemi')], nebo dále integrovat [TARGET_COUNTRY.GetName], pokud jsme již jejich [Concept('concept_subject','závislá země')]." # todo: CONCEPT CASE

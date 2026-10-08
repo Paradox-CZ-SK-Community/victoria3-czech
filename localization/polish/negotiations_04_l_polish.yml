@@ -2,8 +2,8 @@
  amenability_base: "$MANEUVERS_BASE_VALUE$"
  amenability_legitimacy: "[InterestGroup.GetCountry.GetNameNoFlag] - [Concept('concept_legitimacy','legitimita')] ([InterestGroup.GetCountry.GetGovernmentLegitimacy])"
  amenability_clout: "[InterestGroup.GetNameNoIcon] - [Concept('concept_clout','politický vliv')] ([InterestGroup.GetClout|%1])"
- amenability_pressuring_supporting_movements: "[Concept('concept_political_movement_pressure','$concept_political_movement_pressured_short$')] ze strany [Concept('concept_political_movement','politických hnutí')] podporujících tento [Concept('concept_law','zákon')|l]"
- amenability_pressuring_opposing_movements: "[Concept('concept_political_movement_pressure','$concept_political_movement_pressured_short$')] ze strany [Concept('concept_political_movement','politických hnutí')] odporujících tomuto [Concept('concept_law','zákonu')|l]" # todo: CONCEPT CASE
+ amenability_pressuring_supporting_movements: "[Concept('concept_political_movement_pressure','Politický tlak')] ze strany [Concept('concept_political_movement','politických hnutí')] podporujících tento [Concept('concept_law','zákon')|l]" # todo: CONCEPT CASE
+ amenability_pressuring_opposing_movements: "[Concept('concept_political_movement_pressure','Politický tlak')] ze strany [Concept('concept_political_movement','politických hnutí')] odporujících tomuto [Concept('concept_law','zákonu')|l]" # todo: CONCEPT CASE
  amenability_approval: "[InterestGroup.GetNameNoIcon] - [Concept('concept_approval','spokojenost')|l] ([InterestGroup.GetApprovalValue|0])"
  amenability_law_likely_to_pass: "[Concept('concept_law','Zákon')] pravděpodobně stejně projde"
  amenability_law_worried_to_be_tie_breaker: "Může obrátit výsledek tohoto [Concept('concept_enactment_of_laws', 'schválení')]"
@@ -16,7 +16,7 @@
  amenability_ig_additional_adds: "#indent_newline:3 Další modifikátory u [InterestGroup.GetName]:\n[InterestGroup.GetModifier.GetDescFor('interest_group_amenability_add')]#!"
  amenability_country_additional_adds: "#indent_newline:3 Další modifikátory:\n[InterestGroup.GetCountry.GetModifier.GetDescFor('country_amenability_add')]#!"
  amenability_already_letting_go: "Už zákon propouštějí kvůli vysokému [Concept('concept_approval','spokojenosti')]" # todo: CONCEPT CASE
- amenability_too_large_gap: "[Concept('concept_endorse_oppose','$concept_opposes$')] [Concept('concept_law','zákon')] o více než #v 2#! kroků"
+ amenability_too_large_gap: "[Concept('concept_endorse_oppose','Odporuje')] [Concept('concept_law','zákon')] o více než #v 2#! kroků"
  bribed_ig_benefits: "Dary a dotace"
  failed_negotiations_ig: "Neúspěšná jednání"
  negotiation_bribes: "Chybějící prostředky"
@@ -34,9 +34,9 @@
  negotiation_extended_quest: "Vyjednávací závazek odložen"
  negotiation_pushing_for_law: "Slib: prosazení zákona"
  negotiate_promise_tt: "Dokud nebude závazek splněn:"
- FailurePromiseLine_1: "Neúspěch částečně [Concept('concept_radicalized_interest_group', '$concept_radicalize$')|l] [ROOT.GetInterestGroup.GetName], avšak postihy budou sníženy, pokud závazek částečně splníme.\n"
- FailurePromiseLine_2: "Neúspěch bude #r zásadně#! [Concept('concept_radicalized_interest_group', '$concept_radicalize$')|l] [ROOT.GetInterestGroup.GetName], avšak postihy budou sníženy, pokud závazek částečně splníme.\n"
- FailurePromiseLine_3: "Neúspěch #r zcela#! [Concept('concept_radicalized_interest_group', '$concept_radicalize$')|l] [ROOT.GetInterestGroup.GetName], avšak postihy budou sníženy, pokud závazek částečně splníme.\n"
+ FailurePromiseLine_1: "Neúspěch částečně [Concept('concept_radicalized_interest_group','radikalizovat')|l] [ROOT.GetInterestGroup.GetName], avšak postihy budou sníženy, pokud závazek částečně splníme.\n"
+ FailurePromiseLine_2: "Neúspěch bude #r zásadně#! [Concept('concept_radicalized_interest_group','radikalizovat')|l] [ROOT.GetInterestGroup.GetName], avšak postihy budou sníženy, pokud závazek částečně splníme.\n"
+ FailurePromiseLine_3: "Neúspěch #r zcela#! [Concept('concept_radicalized_interest_group','radikalizovat')|l] [ROOT.GetInterestGroup.GetName], avšak postihy budou sníženy, pokud závazek částečně splníme.\n"
  will_not_negotiate_again_tt: "Nebude znovu vyjednávat, dokud nebude závazek dodržen"
  law_two_years_tt: "Postihy budou sníženy, pokud [ROOT.GetCountry.GetName] bude usilovat o přijetí [SCOPE.sLaw('government_petition_law').GetName] po dobu alespoň #v 24 měsíců#!. \n#v Aktuální dopady selhání:#!"
  closer_we_get_neg_tt: "Postihy budou sníženy, jak se přiblížíme ke splnění závazku. \n#v Aktuální dopady selhání:#!"
@@ -98,9 +98,9 @@
  promise_build_tt: "Musíme zvýšit počet [SCOPE.gsInterestGroup('ig').MakeScope.Var('promised_building_type').GetBuildingType.GetName] v našich [Concept('concept_state', 'státech')] z [SCOPE.gsInterestGroup('ig').MakeScope.ScriptValue('building_levels_existing')|v0] na [SCOPE.gsInterestGroup('ig').MakeScope.Var('building_level_increase').GetValue|v0] během #v 10 let#!. [SCOPE.gsInterestGroup('ig').GetCustom('FailurePromiseLine')]"
  je_negotiate_buildings: "Závazek: Ceněné investice"
  je_negotiate_buildings_status: "Postavili jsme [SCOPE.gsInterestGroup('ig').MakeScope.ScriptValue('building_levels_existing')|v0] / [SCOPE.gsInterestGroup('ig').MakeScope.Var('building_level_increase').GetValue|v0] [SCOPE.gsInterestGroup('ig').MakeScope.Var('promised_building_type').GetBuildingType.GetName]"
- je_negotiate_buildings_reason: "Slibovali jsme [SCOPE.gsInterestGroup('ig').GetName], že postavíme více [SCOPE.gsInterestGroup('ig').MakeScope.Var('promised_building_type').GetBuildingType.GetName] v naší [Concept('concept_state', '$concept_states$')], čin, který jistě zlepší [ROOT.GetCountry.GetAdjective] ekonomiku."
+ je_negotiate_buildings_reason: "Slibovali jsme [SCOPE.gsInterestGroup('ig').GetName], že postavíme více [SCOPE.gsInterestGroup('ig').MakeScope.Var('promised_building_type').GetBuildingType.GetName] v naší [Concept('concept_state','státech')], čin, který jistě zlepší [ROOT.GetCountry.GetAdjective] ekonomiku." # todo: CONCEPT CASE
  negotiation.1.o6: "Musíme investovat do [SCOPE.gsInterestGroup('ig').MakeScope.Var('promised_building_group').GetBuildingGroup.GetName]."
- promise_building_group_tt: "Musíme zvýšit počet [SCOPE.gsInterestGroup('ig').MakeScope.Var('promised_building_group').GetBuildingGroup.GetName] v naší [Concept('concept_state', '$concept_states$')] z [SCOPE.gsInterestGroup('ig').MakeScope.ScriptValue('building_group_levels_existing')|v0] na [SCOPE.gsInterestGroup('ig').MakeScope.Var('building_group_level_increase').GetValue|v0] během #v 10 let#!. [SCOPE.gsInterestGroup('ig').GetCustom('FailurePromiseLine')]"
+ promise_building_group_tt: "Musíme zvýšit počet [SCOPE.gsInterestGroup('ig').MakeScope.Var('promised_building_group').GetBuildingGroup.GetName] v naší [Concept('concept_state','státech')] z [SCOPE.gsInterestGroup('ig').MakeScope.ScriptValue('building_group_levels_existing')|v0] na [SCOPE.gsInterestGroup('ig').MakeScope.Var('building_group_level_increase').GetValue|v0] během #v 10 let#!. [SCOPE.gsInterestGroup('ig').GetCustom('FailurePromiseLine')]" # todo: CONCEPT CASE
  je_negotiate_building_group: "Závazek: Ekonomická iniciativa"
  je_negotiate_building_group_status: "[SCOPE.gsInterestGroup('ig').MakeScope.ScriptValue('building_group_levels_existing')|v0] / [SCOPE.gsInterestGroup('ig').MakeScope.Var('building_group_level_increase').GetValue|v0] [SCOPE.gsInterestGroup('ig').MakeScope.Var('promised_building_group').GetBuildingGroup.GetName]"
  je_negotiate_building_group_reason: "Zavázali jsme se nasměrovat [ROOT.GetCountry.GetAdjective] investice do [SCOPE.gsInterestGroup('ig').MakeScope.Var('promised_building_group').GetBuildingGroup.GetName]. [SCOPE.gsInterestGroup('ig').GetName] netrpělivě očekávají výsledky iniciativy, kterou trvale považují za přínos pro zlepšení života všech [ROOT.GetCountry.GetAdjective] občanů."

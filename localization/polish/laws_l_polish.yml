@@ -213,7 +213,7 @@
  ideology_cartist_desc: "#lore Tato skupina si cení národní stability a zastává mírnou formu liberalismu, jak ji vyjadřuje Portugalská ústava z roku 1826, s cílem tuto stabilitu udržet.#!"
  ideology_regenerator: "Regenerator"
  ideology_regenerator_desc: "#lore Tato skupina si přeje obnovit dřívější prestiž Portugalska jako významné mocnosti. Je odhodlána k radikálním institucionálním reformám, aby tohoto cíle dosáhla.#!"
- liberal_and_egalitarian_amended_tt: "Postoje [GetIdeology('ideology_liberal').GetName] a [GetIdeology('ideology_egalitarian').GetName] [Concept('concept_ideology','$concept_ideologies$')] se změní na $lawgroup_rights_of_women$"
+ liberal_and_egalitarian_amended_tt: "Postoje [GetIdeology('ideology_liberal').GetName] a [GetIdeology('ideology_egalitarian').GetName] [Concept('concept_ideology','ideologie')] se změní na $lawgroup_rights_of_women$"
  carlist_amended_tt: "Stanoviska [GetIdeology('ideology_carlist').GetName] [Concept('concept_ideology','ideologie')] ke $lawgroup_economic_system$ a $lawgroup_distribution_of_power$ se změní" # todo: NEW TRANSLATION
  miguelist_amended_tt: "Stanoviska [GetIdeology('ideology_miguelist').GetName] [Concept('concept_ideology','ideologie')] ke $lawgroup_economic_system$ a $lawgroup_distribution_of_power$ se změní" # todo: NEW TRANSLATION
  ideology_russian_patriarch: "Ruský pravoslavný patriarchát"
@@ -627,9 +627,9 @@
  law_closed_borders: "Zavřené hranice"
  law_closed_borders_desc: "Není povolena žádná migrace do země ani z ní."
  liberate_slaves_tt: "Všichni [GetPopType('slaves').GetName] budou osvobozeni"
- enslave_discriminated_farm_workers_tt: "Všichni $laborers$ s nízkou [Concept('concept_acceptance','přijetím')] pracující na farmách, rančích a plantážích v bývalých otrokářských státech budou [Concept('concept_slavery', '$concept_enslaved$')]." # todo: CONCEPT CASE
- enact_law_radical_leftist_government_warning_desc: "@warning! Pokud přijmeme tenhle [Concept('concept_law','zákon')], může se stát, že [Concept('concept_country', '$concept_countries$')] bez podobné formy $lawgroup_governance_principles$ se stane vůči nám agresivní."
- enact_law_radical_leftist_economy_warning_desc: "@warning! Pokud přijmeme tenhle [Concept('concept_law','zákon')], může se stát, že [Concept('concept_country', '$concept_countries$')] bez podobné formy $lawgroup_economic_system$ se stane vůči nám agresivní."
+ enslave_discriminated_farm_workers_tt: "Všichni $laborers$ s nízkou [Concept('concept_acceptance','přijetím')] pracující na farmách, rančích a plantážích v bývalých otrokářských státech budou [Concept('concept_slavery','otroci')]." # todo: CONCEPT CASE
+ enact_law_radical_leftist_government_warning_desc: "@warning! Pokud přijmeme tenhle [Concept('concept_law','zákon')], může se stát, že [Concept('concept_country','země')] bez podobné formy $lawgroup_governance_principles$ se stane vůči nám agresivní."
+ enact_law_radical_leftist_economy_warning_desc: "@warning! Pokud přijmeme tenhle [Concept('concept_law','zákon')], může se stát, že [Concept('concept_country','země')] bez podobné formy $lawgroup_economic_system$ se stane vůči nám agresivní."
  lawgroup_labour_associations: "Pracovní sdružení"
  lawgroup_labour_associations_desc: "Předpisy vztahující se na sdružení dělníků a řemeslníků."
  law_guild_system: "Systém cechů"

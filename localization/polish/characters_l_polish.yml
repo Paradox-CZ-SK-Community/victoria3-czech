@@ -42,7 +42,7 @@
  LOYALTY_RELIABLE: "#p Spolehlivý#!"
  LOYALTY_FAITHFUL: "#p Věrný#!"
  INTEREST_GROUP_APPROVAL: "[Concept('concept_approval','Spokojenost')] [INTEREST_GROUP.GetName]"
- CHARACTER_IDEOLOGY_STANCES: "[IDEOLOGY.GetName] postoje k aktuálním a přijímaným [Concept('concept_law','$concept_laws$')]" # todo: CHANGED
+ CHARACTER_IDEOLOGY_STANCES: "[IDEOLOGY.GetName] postoje k aktuálním a přijímaným [Concept('concept_law','zákonům')]" # todo: CHANGED # todo: CONCEPT CASE
  ASSIGN_COMMANDER_WRONG_TYPE: "[CHARACTER.GetFullName] nelze přiřadit k [MILITARY_FORMATION.GetName], protože nejsou správným typem velitele pro [MILITARY_FORMATION.GetName]." # todo: CHANGED
  ASSIGN_COMMANDER_ALREADY_ASSIGNED: "[CHARACTER.GetFullName] je již přiřazen k [MILITARY_FORMATION.GetName]." # todo: NEW TRANSLATION
  ASSIGN_COMMANDER_BUSY: "[CHARACTER.GetFullName] je zaneprázdněn." # todo: CHANGED
@@ -75,6 +75,6 @@
  MAX_IDLE_GENERALS: "[GetPlayer.GetMaxUnassignedGenerals|v]" # todo: NEW TRANSLATION
  MAX_IDLE_ADMIRALS: "[GetPlayer.GetMaxUnassignedAdmirals|v]" # todo: NEW TRANSLATION
  PROMOTE_COMMANDER_RECENTLY_PROMOTED: "Efekty na [CHARACTER.GetFullName]:\n$EFFECT$ postupně slábnou během [GetDefine('NMilitary','RECENTLY_PROMOTED_YEARS')|v] let" # todo: CHANGED
- PROMOTE_COMMANDER_UNNECESSARY_WARNING: "@warning! Současní [Concept('concept_commander','$concept_commanders$')] jsou pro potřeby vašich [Concept('concept_military_formation','$concept_military_formations$')] dostateční. Toto povýšení je $INTEREST_GROUPS$ vnímáno jako zbytečné, což vede k:\n$EFFECT$ po dobu [GetDefine('NMilitary','UNNECESSARY_PROMOTION_PENALTY_YEARS')|v] let" # todo: CHANGED
- CHARACTER_IS_TRAVELLING_TO_FORMATION_TOOLTIP: "#header Na cestě [Concept('concept_commander','veliteli')]#!\n[Character.GetFullNameWithTitle] dorazí za [Character.GetTravelDaysLeft|v] dní ([Character.GetTravelArrivalDate|v])\n$TOOLTIP_DELIMITER$\nDokud [Character.GetSheHe] nedorazí, [Character.GetMilitaryFormation.GetName] nebude mít žádný prospěch z [Character.GetFullNamePossessive] #b dovednosti#! [Concept('concept_character_trait','$concept_character_traits_short$')]." # todo: CHANGED # todo: CONCEPT CASE
+ PROMOTE_COMMANDER_UNNECESSARY_WARNING: "@warning! Současní [Concept('concept_commander','velitelé')] jsou pro potřeby vašich [Concept('concept_military_formation','formací')] dostateční. Toto povýšení je $INTEREST_GROUPS$ vnímáno jako zbytečné, což vede k:\n$EFFECT$ po dobu [GetDefine('NMilitary','UNNECESSARY_PROMOTION_PENALTY_YEARS')|v] let" # todo: CHANGED # todo: CONCEPT CASE
+ CHARACTER_IS_TRAVELLING_TO_FORMATION_TOOLTIP: "#header Na cestě [Concept('concept_commander','veliteli')]#!\n[Character.GetFullNameWithTitle] dorazí za [Character.GetTravelDaysLeft|v] dní ([Character.GetTravelArrivalDate|v])\n$TOOLTIP_DELIMITER$\nDokud [Character.GetSheHe] nedorazí, [Character.GetMilitaryFormation.GetName] nebude mít žádný prospěch z [Character.GetFullNamePossessive] #b dovednosti#! [Concept('concept_character_trait','rysy')]." # todo: CHANGED # todo: CONCEPT CASE
  CHARACTER_IS_TRAVELLING_TO_FORMATION: "@information! [Character.GetFullNameWithTitle] cestuje, aby se připojil k [Character.GetMilitaryFormation.GetName] a dorazí za [Character.GetTravelDaysLeft|v] dní ([Character.GetTravelArrivalDate|v])" # todo: CHANGED

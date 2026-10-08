@@ -474,7 +474,7 @@
  naval_tech_events.5.e: "Pozemní síly musí držet krok s námořní technologií."
  naval_traditions_upheld: "Námořní tradice zachovány"
  je_unite_the_principalities: "Sjednotit knížectví"
- je_unite_the_principalities_reason: "Podunajská knížectví se probudila z dlouhé letargie. Práva a zájmy vlasti volají po osvobození; dobro a štěstí rumunského národa vyžaduje čin! Musíme usilovat o sjednocení a pomoci vybudovat jednotný stát. Je však třeba postupovat opatrně — nesmíme rozhněvat žádnou [Concept('concept_great_power', '$concept_great_powers$')]."
+ je_unite_the_principalities_reason: "Podunajská knížectví se probudila z dlouhé letargie. Práva a zájmy vlasti volají po osvobození; dobro a štěstí rumunského národa vyžaduje čin! Musíme usilovat o sjednocení a pomoci vybudovat jednotný stát. Je však třeba postupovat opatrně — nesmíme rozhněvat žádnou [Concept('concept_great_power','velmoc')]." # todo: CONCEPT CASE
  je_unite_the_principalities_button: "Prosadit sjednocení"
  je_unite_the_principalities_button_desc: "Prvním krokem ke sjednocení rumunského národa je ustanovení společného vládce. Společné vedení, i když státy zůstanou formálně oddělené, výrazně napomůže sjednocení."
  je_unite_the_principalities_united_two_principalities_tt: "[SCOPE.GetRootScope.GetCountry.GetName] vytvořil [Concept('concept_personal_union','personální unie')] s jinou #bold rumunskou#! zemí nebo ji učinil [Concept('concept_puppet','loutka')] zemí [SCOPE.GetRootScope.GetCountry.GetName]."
@@ -514,8 +514,8 @@
  romania.4.f: "„Jakým státem bychom byli bez přístupu k moři? Cahul, Bolgrad a Izmajil by výrazně přispěly k naší prosperitě i vaší budoucnosti.“"
  romania.4.a: "Postoupení [SCOPE.sState('south_bessarabia_cession').GetName] si můžeme dovolit."
  romania.4.b: "[SCOPE.sState('south_bessarabia_cession').GetName] je a zůstane naše, ne jejich!"
- scramble_for_africa_complete_2_tt: "#header 95%#! [Concept('concept_state_region','$concept_state_regions$')] v [GetGeographicRegion('geographic_region_africa').GetName] musí být plně vlastněno [Concept('concept_recognized_power','$concept_recognized_powers$')] nebo jejich [Concept('concept_subject','$concept_subjects$')]"
- scramble_for_africa_fail_tt: "[ROOT.GetCountry.GetName] nemá žádný [Concept('concept_unincorporated_state','$concept_unincorporated_states$')] ani [Concept('concept_subject','$concept_subjects$')] na africkém kontinentu"
+ scramble_for_africa_complete_2_tt: "#header 95%#! [Concept('concept_state_region','státní oblasti')] v [GetGeographicRegion('geographic_region_africa').GetName] musí být plně vlastněno [Concept('concept_recognized_power','uznané mocnosti')] nebo jejich [Concept('concept_subject','závislé země')]"
+ scramble_for_africa_fail_tt: "[ROOT.GetCountry.GetName] nemá žádný [Concept('concept_unincorporated_state','nezačleněné státy')] ani [Concept('concept_subject','závislé země')] na africkém kontinentu"
  je_unite_the_nations: "Národy Želvího ostrova"
  je_unite_the_nations_reason: "Abychom my i naši bratři přežili, musíme se spojit. Jen jednotní dokážeme odolat postupům kolonizačních mocností, diplomatickým i násilným."
  je_unite_the_nations_proclaim_turtle_island_button: "Vyhlásit Želví ostrov"
@@ -525,7 +525,7 @@
  je_unite_the_nations_offer_confederation_button: "Nabídnout konfederaci"
  je_unite_the_nations_offer_confederation_button_desc: "Naše věc je společnou věcí všech národů této země; je přirozené, že se k nám naši bratři připojí."
  supporting_reform_efforts_among_brothers: "Podpora reforem mezi bratry"
- je_unite_the_nations_complete_tt: "Všechny [Concept('concept_decentralized_nation','$concept_decentralized_nations$')] v #bold Severní Americe#! byly buď anektovány námi, nebo kolonizovány cizími mocnostmi."
+ je_unite_the_nations_complete_tt: "Všechny [Concept('concept_decentralized_nation','decentralizované národy')] v #bold Severní Americe#! byly buď anektovány námi, nebo kolonizovány cizími mocnostmi."
  je_unite_the_nations_organize_the_tribes_tt: "Převedeme sousední [Concept('concept_decentralized_nation','decentralizovaný národ')] s nejvyšším [Concept('concept_gdp','hrubým domácím produktem')], který s námi sousedí, na [Concept('concept_unrecognized_power','neuznávanou zemi')]." # todo: CONCEPT CASE
  je_unite_the_nations_offer_confederation_tt: "Nabídneme konfederaci domorodému národu s nejvyšším [Concept('concept_gdp','hrubým domácím produktem')], který s námi sousedí." # todo: CONCEPT CASE
  turtle_island_state_of_nations: "Stát mnoha národů"
@@ -540,8 +540,8 @@
  anti_expedition_war: "Válka proti expedici"
  je_lion_of_the_zanj: "Páni Zandže"
  je_lion_of_the_zanj_reason: "Naše kontrola nad východní Afrikou je spíše iluzorní než skutečná. Musíme ji upevnit diplomacií nebo silou, jinak se naše říše může zhroutit."
- je_lion_of_the_zanj_claims: "[ROOT.GetCountry.GetName] získá [Concept('concept_claim', '$concept_claims$')] na tyto [Concept('concept_state_region','státní oblast')], pokud nejsou plně vlastněny:\n• [SCOPE.sStateRegion('kenya_region').GetName]\n• [SCOPE.sStateRegion('rift_valley_region').GetName]\n• [SCOPE.sStateRegion('zanzibar_region').GetName]\n• [SCOPE.sStateRegion('tanganyika_region').GetName]\n• [SCOPE.sStateRegion('lindi_region').GetName]"
- je_lion_of_the_zanj_homelands_swahili: "Pokud všech pět [Concept('concept_state_region', '$concept_state_regions$')] plně ovládáme, některé se stanou [SCOPE.sCulture('swahili_scope').GetName] [Concept('concept_homeland','$concept_homelands$')]"
+ je_lion_of_the_zanj_claims: "[ROOT.GetCountry.GetName] získá [Concept('concept_claim','nároky')] na tyto [Concept('concept_state_region','státní oblast')], pokud nejsou plně vlastněny:\n• [SCOPE.sStateRegion('kenya_region').GetName]\n• [SCOPE.sStateRegion('rift_valley_region').GetName]\n• [SCOPE.sStateRegion('zanzibar_region').GetName]\n• [SCOPE.sStateRegion('tanganyika_region').GetName]\n• [SCOPE.sStateRegion('lindi_region').GetName]"
+ je_lion_of_the_zanj_homelands_swahili: "Pokud všech pět [Concept('concept_state_region','státní oblasti')] plně ovládáme, některé se stanou [SCOPE.sCulture('swahili_scope').GetName] [Concept('concept_homeland','domovinou')]" # todo: CONCEPT CASE
  je_lion_of_the_zanj_homelands_bedouin: "Pokud všech pět oblastí plně ovládáme, [SCOPE.sStateRegion('zanzibar_region').GetName] se stane [SCOPE.sCulture('omani_scope').GetName] [Concept('concept_homeland','domovina')]"
  je_lion_of_the_zanj_fail: "Jakýkoli stát mimo Afriku kontroluje území v těchto oblastech:"
  je_lion_of_the_zanj_loss_of_territory: "Ztratíme kontrolu nad územími ve prospěch kolonizátorů nebo vzniknou nezávislé státy."
@@ -570,7 +570,7 @@
  zanzibar.4.f: "Nový pamflet koloval mezi kavárnami a knihkupci v [ROOT.GetCountry.GetCapital.GetCityHubName]: #italic Pravé kroniky Zanzibaru#!. Lidová historie vyprávěla o slavných počátcích ostrova Unguja pod vedením královny Azizy, mytické postavy, na kterou se téměř zapomnělo. Stejně jako Aziza se i Zanzibar nyní vynořil ze stínů a znovu si vydobyl své místo na výsluní — a toto světlo bylo vidět na každé rozzářené tváři Zanzibaranů, když četli o své slavné minulosti a snili o své slavné budoucnosti."
  zanzibar.4.a: "Slavný den pro nás všechny!"
  zanzibar.5.t: "Tippu Tip"
- zanzibar.5.d: "Ambiciózní obchodník s otroky a slonovinou jménem Hamad ibn Muhammad al Murjabi žádá [ROOT.GetCountry.GetName] o podporu koloniální výpravy. Navrhuje založení nové vlády v $STATE_CONGO_ORIENTALE$. Pokud ho podpoříme, jeho stát se stane naší závislou zemí, ale velmoci to neschválí a náš postup k tomu stát se [Concept('concept_recognized_power','$concept_recognized_power_short$')] se výrazně zpomalí."
+ zanzibar.5.d: "Ambiciózní obchodník s otroky a slonovinou jménem Hamad ibn Muhammad al Murjabi žádá [ROOT.GetCountry.GetName] o podporu koloniální výpravy. Navrhuje založení nové vlády v $STATE_CONGO_ORIENTALE$. Pokud ho podpoříme, jeho stát se stane naší závislou zemí, ale velmoci to neschválí a náš postup k tomu stát se [Concept('concept_recognized_power','uznanou mocností')] se výrazně zpomalí." # todo: CONCEPT CASE
  zanzibar.5.f: "„Proč ti vlastně říkají ‚Tippu Tip‘, Hamade?“ zeptal se cizinec, když karavana se slonovinou začala brodit další řekou.\n\nObchodník se usmál. „Je to podle zvuku mých zbraní, protože víš — ach, k čertu, podívej!“\n\nRozběhl se k vodě a volal o pomoc na svou karavanu.\n\n„Loď plná otroků se potopila!“ zvolal. „Jaká škoda! To byla pěkná kánoe.“"
  zanzibar.5.a: "Tippu Tipa nemůžeme podpořit, ale neodvažujeme se ho odsoudit."
  zanzibar.5.b: "Vítáme toto opěrné místo v Kongu."
@@ -589,11 +589,11 @@
  je_struggle_for_the_highveld_saf_success: "Každá jiná země s hlavním městem v oblasti [GetGeographicRegion('geographic_region_south_africa').GetName] je buď závislou zemí [SCOPE.sCountry('cape_colony_scope').GetAltAdjective('G')], nebo sdílí stejného vládce jako [SCOPE.sCountry('cape_colony_scope').GetNameNoFormatting]."
  je_struggle_for_the_highveld_saf_fail: "Jakákoli jiná země s hlavním městem v oblasti [GetGeographicRegion('geographic_region_south_africa').GetName] se stane nezávislou [Concept('concept_recognized_power','uznanou mocností')] s pobřežním [Concept('concept_incorporated_state','začleněným státem')]." # todo: CONCEPT CASE
  je_struggle_for_the_highveld_anyone_else_wins_everyone_else_fail: "Jakákoli jiná země než [SCOPE.sCountry('cape_colony_scope').GetName], s hlavním městem v oblasti [GetGeographicRegion('geographic_region_south_africa').GetName], se stane [Concept('concept_recognized_power','uznaná mocnost')], která není [Concept('concept_subject','závislá země')] žádné jiné země a má pobřežní [Concept('concept_incorporated_state','začleněný stát')]." # todo: CONCEPT CASE
- je_struggle_for_the_highveld_saf_wins_everyone_else_fail: "Každý stát v oblasti [GetGeographicRegion('geographic_region_south_africa').GetName] je buď ovládán [SCOPE.sCountry('cape_colony_scope').GetName], nebo jinou zemí s hlavním městem v některém z těchto států, která není [Concept('concept_decentralized_nation', '$concept_decentralized$')] a je buď [Concept('concept_subject','závislá země')] [SCOPE.sCountry('cape_colony_scope').GetAltAdjectiveNoFormatting('G')], nebo vládce [SCOPE.sCountry('cape_colony_scope').GetAltAdjectiveNoFormatting('G')]."
- saf_highveld_add_boer_as_primary_button: "Přidat [SCOPE.sCulture('boer_culture').GetName] jako [Concept('concept_primary_cultures','$concept_primary_culture$')|U]"
+ je_struggle_for_the_highveld_saf_wins_everyone_else_fail: "Každý stát v oblasti [GetGeographicRegion('geographic_region_south_africa').GetName] je buď ovládán [SCOPE.sCountry('cape_colony_scope').GetName], nebo jinou zemí s hlavním městem v některém z těchto států, která není [Concept('concept_decentralized_nation','decentralizovaný')] a je buď [Concept('concept_subject','závislá země')] [SCOPE.sCountry('cape_colony_scope').GetAltAdjectiveNoFormatting('G')], nebo vládce [SCOPE.sCountry('cape_colony_scope').GetAltAdjectiveNoFormatting('G')]."
+ saf_highveld_add_boer_as_primary_button: "Přidat [SCOPE.sCulture('boer_culture').GetName] jako [Concept('concept_primary_cultures','primární kultura')|U]"
  saf_highveld_add_boer_as_primary_button_desc: "Pokud se podaří vyřešit obavy Búrů ohledně jejich postavení v naší zemi, bude možné integrovat búrskou kulturu do [ROOT.GetCountry.GetAltAdjective('G')]." # todo: CONCEPT CASE
  saf_struggle_for_the_highveld_boer_confederation_tt: "Bude dostupná možnost konfederace s búrskými státy, #n ale přidání Griqua jako primární kultury bude nemožné.#!"
- saf_highveld_add_griqua_as_primary_button: "Přidat [SCOPE.sCulture('griqua_culture').GetName] jako [Concept('concept_primary_cultures','$concept_primary_culture$')|U]"
+ saf_highveld_add_griqua_as_primary_button: "Přidat [SCOPE.sCulture('griqua_culture').GetName] jako [Concept('concept_primary_cultures','primární kultura')|U]"
  saf_highveld_add_griqua_as_primary_button_desc: "Pokud dokážeme podpořit přijetí Griquů v rámci [ROOT.GetCountry.GetName], bude možné integrovat griquskou kulturu do [ROOT.GetCountry.GetAltAdjective('G')]." # todo: CONCEPT CASE
  saf_struggle_for_the_highveld_griqua_confederation_tt: "Bude dostupná možnost konfederace s griquskými státy, #n ale přidání Búrů jako primární kultury bude nemožné.#!"
  highveld_offer_boer_confederation_button: "Nabídnout konfederaci [SCOPE.sCulture('boer_culture').GetName]"

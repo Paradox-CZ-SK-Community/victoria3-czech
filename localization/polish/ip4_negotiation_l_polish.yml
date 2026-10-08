@@ -3,10 +3,10 @@
  Option_1: "Možnost"
  NEGOTIATION_NO_ENACTING_LAW: "Není prosazován žádný [Concept('concept_law','zákon')]"
  NEGOTIATION_INTEREST_GROUP_MARGINALIZED: "[INTEREST_GROUP.GetName] je [Concept('concept_marginalized','marginalizována')]"
- NEGOTIATION_IG_REFUSES_TO_NEGOTIATE: "[INTEREST_GROUP.GetName] odmítá [Concept('concept_negotiation', '$concept_negotiate$')]"
+ NEGOTIATION_IG_REFUSES_TO_NEGOTIATE: "[INTEREST_GROUP.GetName] odmítá [Concept('concept_negotiation','vyjednávat')]"
  NEGOTIATION_IG_NOT_IN_GOVERNMENT_AND_INDIFFERENT: "[INTEREST_GROUP.GetName] #b není#! v [Concept('concept_government','vládě')]" # todo: CONCEPT CASE
- NEGOTIATION_IG_ALREADY_APPROVES: "[INTEREST_GROUP.GetName] již [Concept('concept_endorse_oppose', '$concept_endorse$')] prosazovaný [Concept('concept_law','zákon')]"
- NEGOTIATION_COUNTRY_IS_NEGOTIATING: "[GetPlayer.GetName] se již účastní [Concept('concept_negotiation', '$concept_negotiations$')]"
+ NEGOTIATION_IG_ALREADY_APPROVES: "[INTEREST_GROUP.GetName] již [Concept('concept_endorse_oppose','podpořit')] prosazovaný [Concept('concept_law','zákon')]"
+ NEGOTIATION_COUNTRY_IS_NEGOTIATING: "[GetPlayer.GetName] se již účastní [Concept('concept_negotiation','vyjednávání')]"
  AMENABILITY_LABEL_REFUSE: "#v #r Odmítá#!#![Nbsp](#r [INTEREST_GROUP.MakeScope.ScriptValue('amenability')]#!)"
  AMENABILITY_LABEL_TENSE: "#v #r [INTEREST_GROUP.GetCustom('NegotiationLevelName')]#!#![Nbsp](#r [INTEREST_GROUP.MakeScope.ScriptValue('amenability')]#!)"
  AMENABILITY_LABEL_NORMAL: "#v [INTEREST_GROUP.GetCustom('NegotiationLevelName')]#![Nbsp](#b [INTEREST_GROUP.MakeScope.ScriptValue('amenability')]#!)"
