@@ -725,7 +725,7 @@
  BUILDING_DETAILS_PANEL_MODIFIERS_TAB: "Modifikátory"
  BUILDING_DETAILS_PANEL_MODIFIERS_TAB_SELECTED: "#bold Modifikátory#!"
  CLICK_TO_CHANGE_RESPONSE: "#instruction Klikněte pro změnu naší odpovědi#!"
- COUNTRY_IN_MARKET_SUBTITLE: "[Concept('concept_country','Země')] v [CountryPanel.GetCountry.AccessFirstMarket.GetAltAdjective('L')]" # todo: CONCEPT CASE
+ COUNTRY_IN_MARKET_SUBTITLE: "[Concept('concept_country','Země')] v #tooltippable_name #tooltip:[CountryPanel.GetCountry.AccessFirstMarket.GetTooltipTag],DATA_MARKET_NAME_TOOLTIP,MarketTooltip [CountryPanel.GetCountry.AccessFirstMarket.GetOwner.GetAltAdjectiveNoFormatting('eem')] trhu#!#!" # todo: CONCEPT CASE
  STATE_IN_COUNTRY_SUBTITLE: "[Concept('concept_state','Stát')] v [State.GetCountry.GetAltAdjective('L')]"
  BATTLE_SUBTITLE: "[SelectLocalization(Battle.IsNavalBattle, 'NAVAL_BATTLE_IN_STATE_REGION_SUBTITLE', 'BATTLE_ON_FRONT_OR_STATE_SUBTITLE')]"
  NAVAL_BATTLE_IN_STATE_REGION_SUBTITLE: "Námořní [Concept('concept_battle','bitva')|l] v regionu [Battle.GetProvince.GetStateRegion.GetName]"
@@ -2425,8 +2425,8 @@
  BATTLE_DEFENDER_LIST_NAME: "Bránící jednotky"
  BATTLE_ATTACKER_STARTING_UNITS: "[Battle.GetAttacker.GetAltAdjectiveNoFormatting('aa')] strana: @battalions! [Battle.GetStartingAttackerUnits|v]#!"
  BATTLE_ATTACKER_ENDING_UNITS: "[Battle.GetAttacker.GetAltAdjectiveNoFormatting('aa')] strana: @battalions! [Battle.GetFinalAttackerUnits|v]#!"
- BATTLE_DEFENDER_STARTING_UNITS: "[Battle.GetAttacker.GetAltAdjectiveNoFormatting('aa')] strana: @battalions! [Battle.GetStartingDefenderUnits|v]#!"
- BATTLE_DEFENDER_ENDING_UNITS: "[Battle.GetAttacker.GetAltAdjectiveNoFormatting('aa')] strana: @battalions! [Battle.GetFinalDefenderUnits|v]#!"
+ BATTLE_DEFENDER_STARTING_UNITS: "[Battle.GetDefender.GetAltAdjectiveNoFormatting('aa')] strana: @battalions! [Battle.GetStartingDefenderUnits|v]#!"
+ BATTLE_DEFENDER_ENDING_UNITS: "[Battle.GetDefender.GetAltAdjectiveNoFormatting('aa')] strana: @battalions! [Battle.GetFinalDefenderUnits|v]#!"
  BATTLE_NO_ATTACKER_MODIFIERS: "Žádné modifikátory pro útočníka"
  BATTLE_NO_DEFENDER_MODIFIERS: "Žádné modifikátory pro obránce"
  BATTLE_NO_UNITS_UNDER_COMMAND: "Bez jednotek pod velením"
@@ -3398,7 +3398,7 @@
  POWER_BLOC_LEVERAGE_ENTRY: "#v [PowerBloc.GetLeverageAdvantage(Country.Self)|+=0]#! [PowerBloc.GetName]: #v $CURRENT_LEVERAGE|0$#! @arrow_right! #v #tooltippable #tooltip:$BREAKDOWN_TAG$ $TARGET_LEVERAGE|0$#!#!#! ($TARGET_LEVERAGE_SHARE|%1$)"
  POWER_BLOC_UNCLAIMED_LEVERAGE: "#tooltippable #tooltip:$BREAKDOWN_TAG$ $UNCLAIMED_LEVERAGE|v0$#!#! ($UNCLAIMED_LEVERAGE_SHARE|%1$) @arrow_right! [Country.GetUnclaimedLeverageTarget|v0] ([Country.GetUnclaimedLeverageShareTarget|%1]) [Concept('concept_power_bloc_unclaimed_leverage','nenárokovaná páka')]"
  POWER_BLOC_LEVERAGE_GAIN_FROM_INTEREST: "[SCOPE.GetRootScope.GetCountry.GetPowerBloc.GetName] [Concept('concept_power_bloc_member','člen mocenského bloku')] má [Concept('concept_interest','zájem')] v [SCOPE.sCountry('target').GetAltAdjective('L')]" # todo: CONCEPT CASE
- POWER_BLOC_LEVERAGE_GAIN_NO_CAPITAL_INTEREST: "Žádný [Concept('concept_power_bloc_member','člen')] z [SCOPE.GetRootScope.GetCountry.GetPowerBloc.GetAltAdjective('G')] nemá [Concept('concept_interest','zájem')] v [SCOPE.sCountry('target').GetAltAdjective('L')][Concept( 'concept_capital_state', '$concept_capital_state_short$' )|l] [SCOPE.sCountry('target').GetCapital.GetName]" # todo: CONCEPT CASE
+ POWER_BLOC_LEVERAGE_GAIN_NO_CAPITAL_INTEREST: "Žádný [Concept('concept_power_bloc_member','člen')] bloku [SCOPE.GetRootScope.GetCountry.GetPowerBloc.GetName] nemá [Concept('concept_interest','zájem')] v [Concept('concept_capital_state','hlavním státě')|l] [SCOPE.sCountry('target').GetCapital.GetName] země [SCOPE.sCountry('target').GetName]" # todo: CONCEPT CASE
  POWER_BLOC_LEVERAGE_GAIN_DECAY: "Žádný [Concept('concept_interest','zájem')] v [SCOPE.sCountry('target').GetAltAdjective('L')]" # todo: CONCEPT CASE
  POWER_BLOC_INACTIVE_LEVERAGE_GAIN_DECAY: "[SCOPE.GetRootScope.GetCountry.GetPowerBloc.GetName] nečinný stav"
  POWER_BLOC_LEVERAGE_GAIN_FORMAT: "$VALUE|+=0$ z $KEY$"
