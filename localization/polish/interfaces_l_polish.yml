@@ -35,7 +35,7 @@
  WORKER_OWNED: "Vlastněno pracovníky"
  PRIVATELY_OWNED_FILTER_BUTTON_TOOLTIP_WORKER_OWNED: "$PRIVATELY_OWNED_FILTER_TOOLTIP_HEADER$\n$PRIVATELY_OWNED_FILTER_TOOLTIP_WORKER_OWNED_SELECTED$"
  PRIVATELY_OWNED_FILTER_TOOLTIP_WORKER_OWNED: "#header Zobrazit pouze pracovníkem vlastněné [Concept('concept_building_level','úrovně budovy')]#!\n#v [NationalizeBuildingGroup.GetFilterNumSelectedLevels('self')]!/![NationalizeBuildingGroup.GetFilterMaxLevels('self')] vybrány $concept_building_levels_short$"
- PRIVATELY_OWNED_FILTER_TOOLTIP_WORKER_OWNED_SELECTED: "V současnosti se zobrazují pouze pracovními vlastními [Concept('concept_building_level','$concept_building_levels$')]\n#v [NationalizeBuildingGroup.GetFilterNumSelectedLevels('self')]#!/[NationalizeBuildingGroup.GetFilterMaxLevels('self')] vybrané $concept_building_levels_short$"
+ PRIVATELY_OWNED_FILTER_TOOLTIP_WORKER_OWNED_SELECTED: "V současnosti se zobrazují pouze pracovními vlastními [Concept('concept_building_level','$concept_building_levels$')|l]\n#v [NationalizeBuildingGroup.GetFilterNumSelectedLevels('self')]#!/[NationalizeBuildingGroup.GetFilterMaxLevels('self')] vybrané $concept_building_levels_short$"
  NATIONALIZE_BUILDING_HEADER: "$NATIONALIZE$"
  NATIONALIZE: "$concept_nationalize$"
  CONSTRUCTION_CURRENT_PAGE: "Stránka [ConstructionPanel.AccessCurrentGovernmentConstructionQueuePage(GetMetaPlayer.GetPlayedOrObservedCountry)]/[ConstructionPanel.GetNumGovernmentConstructionQueuePages(GetMetaPlayer.GetPlayedOrObservedCountry)]"
@@ -77,7 +77,7 @@
  BUILDING_NATIONALIZE_COMPENSATION_ENTRY_WITH_INVESTMENT_POOL: "@money!#r -$COST|D$#! pro [COUNTRY.GetAltAdjective('A')] (#v $POOL|D$#! do jejich [Concept('concept_investment_pool','investiční fond')])" # todo: CONCEPT CASE
  BUILDING_NATIONALIZE_COMPENSATION_ENTRY: "@money!#r -$COST|D$#! pro [COUNTRY.GetAltAdjective('A')]" # todo: CONCEPT CASE
  CANNOT_NATIONALIZE_FOREIGN_INVESTMENT_RIGHTS: "[COUNTRY.GetFlagTextIcon] [COUNTRY.GetAdjectiveNoFormatting] investoři mají práva na [Concept('concept_foreign_investment','zahraniční investice')]."
- CANNOT_NATIONALIZE_NATIONALLY_OWNED_BUILDING: "[COUNTRY.GetFlagTextIcon] [COUNTRY.GetAdjectiveNoFormatting] [Concept('concept_nationally_owned','národní vlastnictví')] [Concept('concept_building_level','$concept_building_levels$')] nemůže být [Concept('concept_nationalize','znárodněné')]"
+ CANNOT_NATIONALIZE_NATIONALLY_OWNED_BUILDING: "[COUNTRY.GetFlagTextIcon] [COUNTRY.GetAdjectiveNoFormatting] [Concept('concept_nationally_owned','národní vlastnictví')] [Concept('concept_building_level','$concept_building_levels$')|l] nemůže být [Concept('concept_nationalize','znárodněné')]"
  CANNOT_NATIONALIZE_NO_AVAILABLE_LEVELS: "Nejsou žádné [Concept('concept_building_level','úrovně')], které #tooltippable #tooltip:[BUILDING.GetTooltipTag],CANNOT_NATIONALIZE_NO_AVAILABLE_LEVELS_BREAKDOWN lze znárodnit#!#!"
  CANNOT_NATIONALIZE_NO_AVAILABLE_LEVELS_BREAKDOWN: "[Building.GetNoLevelsCanBeNationalizedDesc]"
  CANNOT_NATIONALIZE_UNDER_COLLECTIVIZATION: "Tato budova nemůže být znárodněna, protože nedosáhla minimální úrovně dělnického vlastnictví [Concept('concept_building_level', 'úrovní')]"
@@ -444,7 +444,7 @@
  TREATY_DRAFT_NO_BINDING_PERIOD: "Přidat závazné období"
  TREATY_BINDING_PERIOD_WHEN_DRAFT: "Bylo by [Concept('concept_binding_period', 'závazné')] po dobu [Treaty.GetBindingPeriodFormatted]"
  TREATY_IS_ENFORCED_ON: "je [Concept('concept_enforced_treaty', 'vynucená')] na [Treaty.GetEnforcedOnCountry.GetName]"
- TREATIES_WITH_COUNTRY_TOOLTIP: "#header [Concept('concept_treaty','Smlouva')] s [Country.GetAltAdjective('I')]#!\n#v [GetDataModelSize(CountryPanel.GetCountry.GetEnforcedTreatiesWith(Country.Self))]#! [Concept('concept_enforced_treaty', '$concept_enforced_treaty_short$')] [SelectLocalization(EqualTo_int32(GetDataModelSize(CountryPanel.GetCountry.GetEnforcedTreatiesWith(Country.Self)), '(int32)1'), 'concept_treaty', 'concept_treaties')]\n#v [GetDataModelSize(CountryPanel.GetCountry.GetUnenforcedTreatiesWith(Country.Self))]#! normal [SelectLocalization(EqualTo_int32(GetDataModelSize(CountryPanel.GetCountry.GetUnenforcedTreatiesWith(Country.Self)), '(int32)1'), 'concept_treaty', 'concept_treaties')]" # todo: CONCEPT CASE
+ TREATIES_WITH_COUNTRY_TOOLTIP: "#header [Concept('concept_treaty','Smlouva')] s [Country.GetAltAdjective('I')]#!\n#v [GetDataModelSize(CountryPanel.GetCountry.GetEnforcedTreatiesWith(Country.Self))]#! [Concept('concept_enforced_treaty', '$concept_enforced_treaty_short$')|l] [SelectLocalization(EqualTo_int32(GetDataModelSize(CountryPanel.GetCountry.GetEnforcedTreatiesWith(Country.Self)), '(int32)1'), 'concept_treaty', 'concept_treaties')]\n#v [GetDataModelSize(CountryPanel.GetCountry.GetUnenforcedTreatiesWith(Country.Self))]#! normal [SelectLocalization(EqualTo_int32(GetDataModelSize(CountryPanel.GetCountry.GetUnenforcedTreatiesWith(Country.Self)), '(int32)1'), 'concept_treaty', 'concept_treaties')]" # todo: CONCEPT CASE
  TREATY_TYPE: "[SelectLocalization(Treaty.IsEnforced, 'ENFORCED_TREATY_CONCEPT', 'TREATY_CONCEPT')]"
  ENFORCED_TREATY_CONCEPT: "[Concept('concept_enforced_treaty','Vynucená smlouva')]"
  TREATY_CONCEPT: "[Concept('concept_treaty','Smlouva')]"
@@ -806,10 +806,10 @@
  GOVERNMENT_OPTION_TEXT: "$LEGITIMACY|v0$: $BREAKDOWN$"
  GOVERNMENT_OPTION_LIST_ENTRY: "[InterestGroup.GetTextIcon]"
  GOVERNMENT_OPTION_LIST_ENTRY_DELIMITER: ""
- NUM_STATES_TOOLTIP_incorporated: "#header [SelectLocalization($MULTIPLE$,'[concept_incorporated_state]','[Concept('concept_incorporated_state','$concept_incorporated_states$')]')] v [Country.GetAltAdjectiveNoFlag('L')]: $VAL|0v$#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
- NUM_STATES_TOOLTIP_unincorporated: "#header [SelectLocalization($MULTIPLE$,'[concept_unincorporated_state]','[Concept('concept_unincorporated_state','$concept_unincorporated_states$')]')] v [Country.GetAltAdjectiveNoFlag('L')]: $VAL|0v$#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
- NUM_STATES_TOOLTIP_treaty_port: "#header [SelectLocalization($MULTIPLE$,'[concept_treaty_port]','[Concept('concept_treaty_port','$concept_treaty_ports$')]')] v [Country.GetAltAdjectiveNoFlag('L')]: $VAL|0v$#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
- NUM_STATES_TOOLTIP_count: "#header [SelectLocalization($MULTIPLE$,'[concept_state]','[Concept('concept_state','$concept_states$')]')] v [Country.GetAltAdjectiveNoFlag('L')]: $VAL|0v$#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
+ NUM_STATES_TOOLTIP_incorporated: "#header [SelectLocalization($MULTIPLE$,'[concept_incorporated_state]','[Concept('concept_incorporated_state','$concept_incorporated_states$')|l]')] v [Country.GetAltAdjectiveNoFlag('L')]: $VAL|0v$#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
+ NUM_STATES_TOOLTIP_unincorporated: "#header [SelectLocalization($MULTIPLE$,'[concept_unincorporated_state]','[Concept('concept_unincorporated_state','$concept_unincorporated_states$')|l]')] v [Country.GetAltAdjectiveNoFlag('L')]: $VAL|0v$#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
+ NUM_STATES_TOOLTIP_treaty_port: "#header [SelectLocalization($MULTIPLE$,'[concept_treaty_port]','[Concept('concept_treaty_port','$concept_treaty_ports$')|l]')] v [Country.GetAltAdjectiveNoFlag('L')]: $VAL|0v$#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
+ NUM_STATES_TOOLTIP_count: "#header [SelectLocalization($MULTIPLE$,'[concept_state]','[Concept('concept_state','$concept_states$')|l]')] v [Country.GetAltAdjectiveNoFlag('L')]: $VAL|0v$#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
  PROCESS_EXPENSES: "Náklady:"
  PROCESS_REVENUE: "Příjem:"
  PROCESS_BALANCE: "Týdenní [Concept('concept_building_balance','bilance')|l]:"
@@ -1260,9 +1260,9 @@
  NO_CONSCRIPT_UNITS_OF_UNIT_TYPE_FORMATION_CONTEXT: "$TAB$Žádné [Concept('concept_conscript_battalion','odvedenec')] [CombatUnitType.GetName] v [MilitaryFormation.GetName]"
  MILITARY_FORMATION_CONSCRIPT_BATTALIONS_TOOLTIP: "#header [Concept('concept_conscript_battalion','Odvedené prapory')] v [MilitaryFormation.GetName]#!\n@battalions![MilitaryFormation.GetNumConscripts|v] vzneseno z [MilitaryFormation.GetMaxConscripts|v] celkem\n$TOOLTIP_DELIMITER$\n[Concept('concept_combat_unit_group','Skupiny vojenských jednotek')]:\n[MilitaryFormation.GetConscriptsGroupsBreakdown]"
  UNIT_GROUP_ENTRY_FORMAT_CONSCRIPT_BATTALIONS: "$TAB$@battalions!#tooltippable #tooltip:$GROUP_BREAKDOWN_TAG$ $NUM_UNITS|v$#!#! $GROUP_NAME$"
- UNIT_GROUP_CONSCRIPT_BATTALIONS_TOOLTIP: "#header [COMBAT_UNIT_GROUP.GetName] v [MilitaryFormation.GetName] [Concept('concept_conscript_battalion', '$concept_conscript_battalion_short$')]#!\n@battalions![MilitaryFormation.GetNumConscripts|v] celkem\n$TOOLTIP_DELIMITER$\n[Concept('concept_combat_unit_type','Typy vojenských jednotek')]:\n[MilitaryFormation.GetUnitTypesByConscriptsGroupBreakdown( COMBAT_UNIT_GROUP.Self )]"
+ UNIT_GROUP_CONSCRIPT_BATTALIONS_TOOLTIP: "#header [COMBAT_UNIT_GROUP.GetName] v [MilitaryFormation.GetName] [Concept('concept_conscript_battalion', '$concept_conscript_battalion_short$')|l]#!\n@battalions![MilitaryFormation.GetNumConscripts|v] celkem\n$TOOLTIP_DELIMITER$\n[Concept('concept_combat_unit_type','Typy vojenských jednotek')]:\n[MilitaryFormation.GetUnitTypesByConscriptsGroupBreakdown( COMBAT_UNIT_GROUP.Self )]"
  UNIT_GROUP_CONSCRIPT_BATTALIONS_NO_ELIGIBLE_GROUPS: "$TAB$Neexistuje žádná způsobilá [Concept('concept_combat_unit_group','skupiny vojenských jednotek')] pro [Concept('concept_conscript_battalion','odvedence')] v [MilitaryFormation.GetName]" # todo: CONCEPT CASE
- UNIT_TYPE_CONSCRIPT_BATTALIONS_TOOLTIP: "#header [COMBAT_UNIT_TYPE.GetName] v [MilitaryFormation.GetName] [Concept('concept_conscript_battalion', '$concept_conscript_battalion_short$')]#!\n@battalions!$NUM_UNITS_OF_TYPE|v$ celkem\n$TOOLTIP_DELIMITER$\n[Concept('concept_unit','Vojenské jednotky')]:\n[MilitaryFormation.GetConscriptUnitsByTypeBreakdown( COMBAT_UNIT_TYPE.Self )]"
+ UNIT_TYPE_CONSCRIPT_BATTALIONS_TOOLTIP: "#header [COMBAT_UNIT_TYPE.GetName] v [MilitaryFormation.GetName] [Concept('concept_conscript_battalion', '$concept_conscript_battalion_short$')|l]#!\n@battalions!$NUM_UNITS_OF_TYPE|v$ celkem\n$TOOLTIP_DELIMITER$\n[Concept('concept_unit','Vojenské jednotky')]:\n[MilitaryFormation.GetConscriptUnitsByTypeBreakdown( COMBAT_UNIT_TYPE.Self )]"
  UNIT_TYPE_ENTRY_FORMAT_BATTALIONS: "$TAB$@battalions!#tooltippable #tooltip:$UNIT_TYPE_BREAKDOWN_TAG$ $NUM_UNITS_OF_TYPE|v$ #!#! $UNIT_TYPE_NAME$"
  UNIT_ENTRY_FORMAT: "$TAB$@manpower! #tooltippable #tooltip:$UNIT_MANPOWER_BREAKDOWN_TAG$ $UNIT_MANPOWER|v$#!#! $UNIT_NAME$"
  BATTLE_UNIT_TYPE_REGULARS_TOOLTIP: "V této bitvě je @battalions! [BattleUnitType.GetNumberOfRegularUnits|v] [CombatUnitType.GetName] [Concept('concept_battalion','prapory')]"
@@ -1367,7 +1367,7 @@
  TRANSPORT_FLEET_WILL_SPLIT_ARMY: "@information! [Concept('concept_fleet','Loďstvo')] může přepravit jen #v [MILITARY_FORMATION.GetCarryingCapacity]#! z #v [TARGET_MILITARY_FORMATION.GetNumCombatUnits]#! jednotek. Flotila bude muset provést #v $TRIP_COUNT$#! cest k přepravě všech jednotek." # todo: CHANGED
  TRANSPORT_FLEET_MULTI_TRIP_RETURNING: "Vrací se pro zbývající jednotky (zbývá #v [MilitaryFormation.GetTransportMissionQueueCount]#! cest)" # todo: NEW TRANSLATION
  EMBARK_FLEET_INSUFFICIENT_MARINE_CAPACITY: "Kapacita námořních jednotek [Concept('concept_fleet','loďstva')] #v [MILITARY_FORMATION.GetMarineCapacity]#! nestačí pro #v [TARGET_MILITARY_FORMATION.GetNumTotalUnits]#! jednotek" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- TRANSFER_SHIPS_INSUFFICIENT_ARMY_CAPACITY: "Zbývající $concept_ships$ v [MILITARY_FORMATION.GetName] by neměly dostatečnou kapacitu k přepravě naloděných [Concept('concept_army','$concept_armies$')]" # todo: NEW TRANSLATION
+ TRANSFER_SHIPS_INSUFFICIENT_ARMY_CAPACITY: "Zbývající $concept_ships$ v [MILITARY_FORMATION.GetName] by neměly dostatečnou kapacitu k přepravě naloděných [Concept('concept_army','$concept_armies$')|l]" # todo: NEW TRANSLATION
  TRANSFER_SHIPS_INSUFFICIENT_MARINE_CAPACITY: "Ani zbývající $concept_ships$ v [MILITARY_FORMATION.GetName], ani převáděné $concept_ships$ by neměly dostatečnou [concept_marine_capacity], aby udržely připojené námořní pěchoty pohromadě" # todo: NEW TRANSLATION
  INVASION_MARINES_ATTACHED_TO_DIFFERENT_FLEET: "Marines jsou přiděleni k jiné [Concept('concept_fleet','loďstvu')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  DEPLOY_MILITARY_FORMATION_TO_FRONT_TRANSPORT_AVAILABLE: "Klikněte pro výběr [Concept('concept_fleet','loďstvo')], který přepraví [MilitaryFormation.GetName] na [Front.GetName]" # todo: NEW TRANSLATION
@@ -1420,7 +1420,7 @@
  REMOVE_SOURCE_FORMATION: "Zrušit výběr [TransferFormationPopup.GetLeftFormation.GetName]"
  REMOVE_TARGET_FORMATION: "Zrušit výběr [TransferFormationPopup.GetRightFormation.GetName]"
  TRANSFER_FORMATION_MOVE_CONSCRIPT_BATTALIONS_TOOLTIP: "#header Přesuňte @conscripts! #v [StagedUnitsWithType.GetNumSelectedConscripts]#! k jinému [Concept('concept_military_formation','formacím')]#![ConcatIfNeitherEmpty( '\n\n', StagedUnitsWithType.GetInvalidConscriptTransferDesc )]" # todo: CONCEPT CASE
- TRANSFER_FORMATION_NO_CONSCRIPTS_SELECTED: "@simple_box! Vyberte alespoň @conscripts! #v 1#! [Concept('concept_conscript_battalion','odvedený prapor')] v této [Concept('concept_combat_unit_type','$concept_combat_unit_type_short$')] k přesunu"
+ TRANSFER_FORMATION_NO_CONSCRIPTS_SELECTED: "@simple_box! Vyberte alespoň @conscripts! #v 1#! [Concept('concept_conscript_battalion','odvedený prapor')] v této [Concept('concept_combat_unit_type','$concept_combat_unit_type_short$')|l] k přesunu"
  MOVE: "Pohyb"
  BY_NAME: "Jméno"
  BY_ALL_STATES: "Všechny [Concept('concept_state','státy')]"
@@ -1549,7 +1549,7 @@
  MILITARY_FORMATION_ORGANIZATION_GAIN_NO_UNITS: "[MilitaryFormation.GetName] nezíská [Concept('concept_organization','organizaci')] po dobu, co nemá žádné [Concept('concept_unit','jednotky')]."
  MILITARY_FORMATION_ORGANIZATION_GAIN_UNITS_IN_BATTLE: "$PERCENT_UNITS_IN_BATTLE|v%1$ z [Concept('concept_unit','vojenské jednotky')] ve [MilitaryFormation.GetName] je aktuálně v [Concept('concept_battle','bitvě')]."
  MILITARY_FORMATION_ORGANIZATION_SUPPLY_PENALTY: "$VAL|+=D$ z nedostatku [Concept('concept_supply','zásobování')|l] #tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],MILITARY_FORMATION_SUPPLY_TOOLTIP, $SUPPLY|%2-$#!#!"
- MILITARY_FORMATION_ORGANIZATION_GOODS_SHORTAGE_PENALTY: "$VAL|+=D$ z jednotek trpících [Concept('concept_shortage','$concept_input_goods_shortages$')]" # todo: NEW TRANSLATION
+ MILITARY_FORMATION_ORGANIZATION_GOODS_SHORTAGE_PENALTY: "$VAL|+=D$ z jednotek trpících [Concept('concept_shortage','$concept_input_goods_shortages$')|l]" # todo: NEW TRANSLATION
  MILITARY_FORMATION_ORGANIZATION_EXILE_PENALTY: "$VAL|0%+$ z být @exiled_state![Nbsp][Concept('concept_exiled_army','exilová')]"
  MILITARY_FORMATION_ORGANIZATION_EFFECT_FROM_COMMAND_LIMIT: "@organization![Nbsp]$concept_organization$: $VAL|+D$ (Aktuálně: $MILITARY_ORGANIZATION_VALUE_WITH_TARGET$)"
  MILITARY_FORMATION_ORGANIZATION_EFFECT_FROM_SPECIAL_UNITS: "@organization![Nbsp]$concept_organization$: $VAL|+D$ (Aktuálně: $MILITARY_ORGANIZATION_VALUE_WITH_TARGET$)"
@@ -1558,8 +1558,8 @@
  MILITARY_FORMATION_EXILED_ARMY_EFFECT_TOOLTIP: "#header @exiled_state![Nbsp][Concept('concept_exiled_army','Exilová armáda')]#!\n$TOOLTIP_DELIMITER$\n[MilitaryFormation.GetNameWithCountryFlag] nemá [Concept('concept_military_access','vojenský přístup')|l] v [MilitaryFormation.GetStateAtPosition.GetNameWithCountryFlag]. Bude trpět následujícími penalizacemi, dokud nebude vrácena na přátelské území:\n#indent_newline:2   [MilitaryFormation.GetEffectFromBeingExiledDesc]#!"
  MILITARY_FORMATION_EXILED_ARMY_SHORT: "#header @exiled_state![Nbsp][Concept('concept_exiled_army','Exilová armáda')]#!\nŽádný [Concept('concept_military_access','vojenský přístup')|l] v [MilitaryFormation.GetStateAtPosition.GetNameWithCountryFlag], což má za následek:\n#indent_newline:2   [MilitaryFormation.GetEffectFromBeingExiledDesc]#!" # todo: CONCEPT CASE
  TOO_MANY: "#r Příliš mnoho#!"
- ARMY_TOO_MANY_UNITS_OF_THIS_UNIT_GROUP_TOOLTIP: "@warning! Limit [Concept('concept_organization','organizace')|l] pro [MilitaryFormation.GetName] je ovlivněn kvůli většímu počtu #b [GetCombatUnitGroup('combat_unit_group_artillery').GetName]#! a #b [GetCombatUnitGroup('combat_unit_group_cavalry').GetName]#! dohromady než má #b [GetCombatUnitGroup('combat_unit_group_infantry').GetName]#!\n\n#title Celkový počet [Concept('concept_unit','jednotek')] v každé [Concept('concept_combat_unit_group','skupině jednotek')]\n(Aktuální + [Concept('concept_incoming_units', '$concept_incoming_units_short$')]):#!\n@battalions! #v [MilitaryFormation.GetNumTotalCombatUnitsExpectedInGroup(GetCombatUnitGroup('combat_unit_group_infantry').Self)]#! #b [GetCombatUnitGroup('combat_unit_group_infantry').GetName]#!\n@battalions! #v [MilitaryFormation.GetNumSpecialUnitsExpected]#! [Concept('concept_special_unit','speciálních jednotek')]\n$TAB$@battalions! #v [MilitaryFormation.GetNumTotalCombatUnitsExpectedInGroup(GetCombatUnitGroup('combat_unit_group_artillery').Self)]#! #b [GetCombatUnitGroup('combat_unit_group_artillery').GetName]#!\n$TAB$@battalions! #v [MilitaryFormation.GetNumTotalCombatUnitsExpectedInGroup(GetCombatUnitGroup('combat_unit_group_cavalry').Self)]#! #b [GetCombatUnitGroup('combat_unit_group_cavalry').GetName]#!\n\n[MilitaryFormation.GetEffectFromSpecialUnitsDesc]" # todo: CONCEPT CASE
- ARMY_TOO_MANY_EXPECTED_UNITS_OF_THIS_UNIT_GROUP_TOOLTIP: "@warning! Jakmile se připojí počet [Concept('concept_special_unit','speciální jednotky')] aktuálně [Concept('concept_incoming_units','nábor')], limit [Concept('concept_organization','organizace')] pro [MilitaryFormation.GetName] bude ovlivněn kvůli většímu počtu #b [GetCombatUnitGroup('combat_unit_group_artillery').GetName]#! a #b [GetCombatUnitGroup('combat_unit_group_cavalry').GetName]#! dohromady než má #b [GetCombatUnitGroup('combat_unit_group_infantry').GetName]#!\n\n#title Celkový počet [Concept('concept_unit','vojenské jednotky')] v každé [Concept('concept_combat_unit_group','skupině vojenských jednotek')]\n(Aktuální + [Concept('concept_incoming_units', '$concept_incoming_units_short$')]):#!\n@battalions! #v [MilitaryFormation.GetNumTotalCombatUnitsExpectedInGroup(GetCombatUnitGroup('combat_unit_group_infantry').Self)]#! #b [GetCombatUnitGroup('combat_unit_group_infantry').GetName]#!\n@battalions! #v [MilitaryFormation.GetNumSpecialUnitsExpected]#! [Concept('concept_special_unit','speciálních jednotek')]\n$TAB$@battalions! #v [MilitaryFormation.GetNumTotalCombatUnitsExpectedInGroup(GetCombatUnitGroup('combat_unit_group_artillery').Self)]#! #b [GetCombatUnitGroup('combat_unit_group_artillery').GetName]#!\n$TAB$@battalions! #v [MilitaryFormation.GetNumTotalCombatUnitsExpectedInGroup(GetCombatUnitGroup('combat_unit_group_cavalry').Self)]#! #b [GetCombatUnitGroup('combat_unit_group_cavalry').GetName]#!\n\n[MilitaryFormation.GetEffectFromSpecialUnitsDesc]" # todo: CONCEPT CASE
+ ARMY_TOO_MANY_UNITS_OF_THIS_UNIT_GROUP_TOOLTIP: "@warning! Limit [Concept('concept_organization','organizace')|l] pro [MilitaryFormation.GetName] je ovlivněn kvůli většímu počtu #b [GetCombatUnitGroup('combat_unit_group_artillery').GetName]#! a #b [GetCombatUnitGroup('combat_unit_group_cavalry').GetName]#! dohromady než má #b [GetCombatUnitGroup('combat_unit_group_infantry').GetName]#!\n\n#title Celkový počet [Concept('concept_unit','jednotek')] v každé [Concept('concept_combat_unit_group','skupině jednotek')]\n(Aktuální + [Concept('concept_incoming_units', '$concept_incoming_units_short$')|l]):#!\n@battalions! #v [MilitaryFormation.GetNumTotalCombatUnitsExpectedInGroup(GetCombatUnitGroup('combat_unit_group_infantry').Self)]#! #b [GetCombatUnitGroup('combat_unit_group_infantry').GetName]#!\n@battalions! #v [MilitaryFormation.GetNumSpecialUnitsExpected]#! [Concept('concept_special_unit','speciálních jednotek')]\n$TAB$@battalions! #v [MilitaryFormation.GetNumTotalCombatUnitsExpectedInGroup(GetCombatUnitGroup('combat_unit_group_artillery').Self)]#! #b [GetCombatUnitGroup('combat_unit_group_artillery').GetName]#!\n$TAB$@battalions! #v [MilitaryFormation.GetNumTotalCombatUnitsExpectedInGroup(GetCombatUnitGroup('combat_unit_group_cavalry').Self)]#! #b [GetCombatUnitGroup('combat_unit_group_cavalry').GetName]#!\n\n[MilitaryFormation.GetEffectFromSpecialUnitsDesc]" # todo: CONCEPT CASE
+ ARMY_TOO_MANY_EXPECTED_UNITS_OF_THIS_UNIT_GROUP_TOOLTIP: "@warning! Jakmile se připojí počet [Concept('concept_special_unit','speciální jednotky')] aktuálně [Concept('concept_incoming_units','nábor')], limit [Concept('concept_organization','organizace')] pro [MilitaryFormation.GetName] bude ovlivněn kvůli většímu počtu #b [GetCombatUnitGroup('combat_unit_group_artillery').GetName]#! a #b [GetCombatUnitGroup('combat_unit_group_cavalry').GetName]#! dohromady než má #b [GetCombatUnitGroup('combat_unit_group_infantry').GetName]#!\n\n#title Celkový počet [Concept('concept_unit','vojenské jednotky')] v každé [Concept('concept_combat_unit_group','skupině vojenských jednotek')]\n(Aktuální + [Concept('concept_incoming_units', '$concept_incoming_units_short$')|l]):#!\n@battalions! #v [MilitaryFormation.GetNumTotalCombatUnitsExpectedInGroup(GetCombatUnitGroup('combat_unit_group_infantry').Self)]#! #b [GetCombatUnitGroup('combat_unit_group_infantry').GetName]#!\n@battalions! #v [MilitaryFormation.GetNumSpecialUnitsExpected]#! [Concept('concept_special_unit','speciálních jednotek')]\n$TAB$@battalions! #v [MilitaryFormation.GetNumTotalCombatUnitsExpectedInGroup(GetCombatUnitGroup('combat_unit_group_artillery').Self)]#! #b [GetCombatUnitGroup('combat_unit_group_artillery').GetName]#!\n$TAB$@battalions! #v [MilitaryFormation.GetNumTotalCombatUnitsExpectedInGroup(GetCombatUnitGroup('combat_unit_group_cavalry').Self)]#! #b [GetCombatUnitGroup('combat_unit_group_cavalry').GetName]#!\n\n[MilitaryFormation.GetEffectFromSpecialUnitsDesc]" # todo: CONCEPT CASE
  MILITARY_FORMATION_ORGANIZATION_COMMAND_LIMIT_PENALTY: "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VAL|+=D$#!#! kvůli nedostatečnému [Concept('concept_command_limit','velitelskému limitu')]" # todo: CONCEPT CASE
  MILITARY_FORMATION_ORGANIZATION_COMMAND_LIMIT: "#header Nedostatečný [Concept('concept_command_limit','velitelský limit')]#!\n$TOOLTIP_DELIMITER$\n#indent_newline:3 Postih k max. [Concept('concept_organization','Organizace')]#! kvůli:\nSoučasný počet [Concept('concept_unit','vojenské jednotky')]: $NUM_UNITS|v$\nSoučasný [Concept('concept_command_limit','velitelský limit')]: $COMMAND_LIMIT|v$#!#!"
  MILITARY_FORMATION_ORGANIZATION_SPECIAL_UNITS_PENALTY: "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VAL|+=D$#!#! kvůli příliš mnoha [Concept('concept_special_unit','speciálním jednotkám')]" # todo: CONCEPT CASE
@@ -1599,15 +1599,15 @@
  DEMOBILIZE_ALL_MILITARY_FORMATIONS: "Demobilizovat všechny $concept_armies$"
  MOBILIZE_ARMY_COMMAND_ARMY_ERRORS: "[MilitaryFormation.GetName] nelze zmobilizovat[AddTextIf(Not(StringIsEmpty('$ERRORS$')), '\n #indent_newline:3 $ERRORS$#!')]"
  MOBILIZE_ALL_MILITARY_FORMATIONS_TOOLTIP: "$ERRORS$"
- MOBILIZE_ALL_MILITARY_FORMATIONS_BUTTON_TOOLTIP: "#header [Concept('concept_mobilize_army', '$concept_mobilize_army_mobilize$' )] všechny [Concept( 'concept_army', '$concept_armies$' )]#![ConcatIfNeitherEmpty('\n$TOOLTIP_DELIMITER$\n', GetDesc( Country.MobilizeAllArmies ))]"
+ MOBILIZE_ALL_MILITARY_FORMATIONS_BUTTON_TOOLTIP: "#header [Concept('concept_mobilize_army', '$concept_mobilize_army_mobilize$' )] všechny [Concept( 'concept_army', '$concept_armies$' )|l]#![ConcatIfNeitherEmpty('\n$TOOLTIP_DELIMITER$\n', GetDesc( Country.MobilizeAllArmies ))]"
  DEMOBILIZE_ARMY_COMMAND_ARMY_ERRORS: "[MilitaryFormation.GetName] nelze demobilizovat[AddTextIf(Not(StringIsEmpty('$ERRORS$')), '\n #indent_newline:3 $ERRORS$#!')]"
  DEMOBILIZE_ALL_MILITARY_FORMATIONS_TOOLTIP: "$ERRORS$"
- DEMOBILIZE_ALL_MILITARY_FORMATIONS_BUTTON_TOOLTIP: "#header [Concept('concept_mobilize_army', '$concept_mobilize_army_demobilize$' )] všechny [Concept( 'concept_army', '$concept_armies$' )]#![ConcatIfNeitherEmpty('\n$TOOLTIP_DELIMITER$\n', GetDesc( Country.DemobilizeAllArmies ))]"
+ DEMOBILIZE_ALL_MILITARY_FORMATIONS_BUTTON_TOOLTIP: "#header [Concept('concept_mobilize_army', '$concept_mobilize_army_demobilize$' )] všechny [Concept( 'concept_army', '$concept_armies$' )|l]#![ConcatIfNeitherEmpty('\n$TOOLTIP_DELIMITER$\n', GetDesc( Country.DemobilizeAllArmies ))]"
  MILITARY_FORMATION_PANEL_TITLE: "[SelectLocalization(GreaterThan_int32(GetDataModelSize(FormationPanel.GetSelectedFormations), '(int32)1'), 'MILITARY_FORMATION_PANEL_TITLE_MULTIPLE_FORMATIONS', 'MILITARY_FORMATION_PANEL_TITLE_SINGLE_FORMATION')]"
  MILITARY_FORMATION_PANEL_TITLE_SINGLE_FORMATION: "[LabelingHelper.CapitalizeOnlyFirst(FormationPanel.GetFormation.GetNameNoFormatting)]"
  MILITARY_FORMATION_PANEL_TITLE_MULTIPLE_FORMATIONS: "[SelectLocalization(FormationPanel.GetFormation.IsArmy, 'MILITARY_FORMATION_PANEL_TITLE_MULTIPLE_ARMIES', 'MILITARY_FORMATION_PANEL_TITLE_MULTIPLE_FLEETS')]"
- MILITARY_FORMATION_PANEL_TITLE_MULTIPLE_ARMIES: "#v [GetDataModelSize(FormationPanel.GetSelectedFormations)]#! [Concept( 'concept_army', '$concept_armies$' )]"
- MILITARY_FORMATION_PANEL_TITLE_MULTIPLE_FLEETS: "#v [GetDataModelSize(FormationPanel.GetSelectedFormations)]#! [Concept( 'concept_fleet', '$concept_fleets$' )]"
+ MILITARY_FORMATION_PANEL_TITLE_MULTIPLE_ARMIES: "#v [GetDataModelSize(FormationPanel.GetSelectedFormations)]#! [Concept( 'concept_army', '$concept_armies$' )|l]"
+ MILITARY_FORMATION_PANEL_TITLE_MULTIPLE_FLEETS: "#v [GetDataModelSize(FormationPanel.GetSelectedFormations)]#! [Concept( 'concept_fleet', '$concept_fleets$' )|l]"
  MILITARY_FORMATION_SUBTITLE: "[SelectLocalization(GreaterThan_int32(GetDataModelSize(FormationPanel.GetSelectedFormations), '(int32)1'), 'MILITARY_FORMATION_SUBTITLE_MULTIPLE_FORMATIONS_FROM_COUNTRY', 'MILITARY_FORMATION_SUBTITLE_SINGLE_FORMATION_FROM_COUNTRY')]"
  MILITARY_FORMATION_SUBTITLE_SINGLE_FORMATION_FROM_COUNTRY: "[SelectLocalization(FormationPanel.GetFormation.IsArmy, 'MILITARY_FORMATION_ARMY_CONCEPT', 'MILITARY_FORMATION_FLEET_CONCEPT')] z [FormationPanel.GetFormation.GetCountry.GetAltAdjective('G')]" # todo: CONCEPT CASE
  MILITARY_FORMATION_SUBTITLE_MULTIPLE_FORMATIONS_FROM_COUNTRY: "[SelectLocalization(FormationPanel.GetFormation.IsArmy, 'concept_armies', 'concept_fleets')] z [FormationPanel.GetFormation.GetCountry.GetAltAdjective('G')]" # todo: CONCEPT CASE
@@ -1675,7 +1675,7 @@
  UPGRADE_ALL_UNIT_GROUP: "Vylepšit všechny [CombatUnitGroup.GetName]"
  COMBAT_UNIT_GROUP_TOOLTIP: "#header [CombatUnitGroup.GetName] [Concept('concept_combat_unit_group','skupina vojenských jednotek')]#![ConcatIfNeitherEmpty('\n', AddLocalizationIf(Not(MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self).IsValid), 'NO_VALID_UNIT_TYPES_IN_GROUP'))]" # todo: NEW TRANSLATION
  NO_VALID_UNIT_TYPES_IN_GROUP: "@red_cross! Nejsou k dispozici žádné [CombatUnitGroup.GetName] [Concept('concept_combat_unit_type','typy jednotek')]" # todo: NEW TRANSLATION
- MILITARY_FORMATION_REMOVE_CONSCRIPT_UNIT_TOOLTIP: "#header Rozpustit jednu #b [Concept('concept_conscript_battalion','$concept_conscript_battalion_short$')] [CombatUnitType.GetName]#!#!\n[ConcatIfNeitherEmpty(GetDesc( MilitaryFormation.GetDisbandUnitTypeConscriptCommand( CombatUnitType.Self ) ),'\n')]$TOOLTIP_DELIMITER$\n#instruction Klikněte pro rozpuštění 1 [Concept('concept_unit','vojenské jednotky')]\n#instruction $SHORTCUT_KEY_MOD_shift$Kliknout pro rozpuštění 5 $concept_units_short$\n#instruction $SHORTCUT_KEY_MOD_ctrl$Kliknout pro rozpuštění 10 jednotek#!" # todo: CONCEPT CASE
+ MILITARY_FORMATION_REMOVE_CONSCRIPT_UNIT_TOOLTIP: "#header Rozpustit jednu #b [Concept('concept_conscript_battalion','$concept_conscript_battalion_short$')|l] [CombatUnitType.GetName]#!#!\n[ConcatIfNeitherEmpty(GetDesc( MilitaryFormation.GetDisbandUnitTypeConscriptCommand( CombatUnitType.Self ) ),'\n')]$TOOLTIP_DELIMITER$\n#instruction Klikněte pro rozpuštění 1 [Concept('concept_unit','vojenské jednotky')]\n#instruction $SHORTCUT_KEY_MOD_shift$Kliknout pro rozpuštění 5 $concept_units_short$\n#instruction $SHORTCUT_KEY_MOD_ctrl$Kliknout pro rozpuštění 10 jednotek#!" # todo: CONCEPT CASE
  MILITARY_FORMATION_RECRUIT_CONSCRIPT_UNIT_TOOLTIP: "Nábor #b [Concept('concept_conscript_battalion','odvedenec')] [CombatUnitType.GetName]#![ConcatIfNeitherEmpty('\n\n', MilitaryFormation.CanRecruitConscriptUnitTooltip( CombatUnitType.Self ) ) ]"
  MILITARY_FORMATION_UPGRADE_CONSCRIPT_UNIT_TOOLTIP: "Vylepšit #b [Concept('concept_conscript_battalion','odvedenec')] [CombatUnitType.GetName]#![ConcatIfNeitherEmpty('\n\n', GetDesc( MilitaryFormation.GetUpgradeConscriptUnitTypeCommand( MilitaryFormationUnitEntry.GetUnitType.Self ) ))]"
  MILITARY_FORMATION_RECRUIT_DEFAULT_UNIT_TYPE_TOOLTIP: "Naverbovat #b [MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self).GetNameWithCulture(MilitaryFormation.GetPrimaryCultureForGroup(CombatUnitGroup.Self).Self)]#![ConcatIfNeitherEmpty('\n\n', MilitaryFormation.CanRecruitRegularUnitTooltip( MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self).Self ) ) ]"
@@ -1712,7 +1712,7 @@
  FORMATION_STATUS_TRAVELING_TO_STATE_PICKUP_INVASION: "Připravuje se [Invasion.GetName], pluje do [STATE.GetName] k nalodění [MILITARY_FORMATION.GetName] ([LabelingHelper.GetDaysLocWithoutTooltip('(int32)$TRAVEL_DAYS$')])" # todo: NEW TRANSLATION
  FORMATION_STATUS_TRAVELING_TO_INVASION_FRONT: "Cestuje do [Invasion.GetSourceState.GetCountry.GetFlagTextIcon] [Invasion.GetSourceState.GetName] ([LabelingHelper.GetDaysLocWithoutTooltip(MilitaryFormation.GetTravelDaysLeft)]) za účelem [Concept('concept_invasion','napadnout')] [Invasion.GetTargetState.GetCountry.GetFlagTextIcon] [Invasion.GetTargetState.GetName]"
  FORMATION_STATUS_PREPARING_INVASION: "Připravuje [Concept('concept_invasion','invaze')] v [Invasion.GetTargetState.GetNameWithCountryFlag] ([LabelingHelper.GetDaysLocWithoutTooltip(Invasion.GetPreparationDaysLeftRaw)])"
- FORMATION_STATUS_ADVANCING_INVASION: "V [Invasion.GetSourceState.GetNameWithCountryFlag] probíhá [Concept('concept_invasion', '$concept_invading$')] do [Invasion.GetTargetState.GetNameWithCountryFlag]"
+ FORMATION_STATUS_ADVANCING_INVASION: "V [Invasion.GetSourceState.GetNameWithCountryFlag] probíhá [Concept('concept_invasion', '$concept_invading$')|l] do [Invasion.GetTargetState.GetNameWithCountryFlag]"
  FORMATION_STATUS_WAITING_DEFEAT_ENEMY_FLEETS_SHORT: "Připravená na [Concept('concept_naval_invasion','námořní invazi')], čeká na porážku nepřátelských [Concept('concept_fleet', 'lodí')]"
  FORMATION_STATUS_WAITING_DEFEAT_ENEMY_FLEETS: "Připraveno na [Invasion.GetName], čeká se na poražení nepřátelských [Concept('concept_fleet','loďstva')] a získání kontroly nad [Invasion.GetSeaNodeName] ze strany [MilitaryFormation.GetCountry.GetName]"
  FORMATION_STATUS_FIGHTING_CONTROL_SEA_NODE: "Snaží se získat kontrolu nad [Invasion.GetSeaNodeName] kvůli [Invasion.GetName]. Všechny nepřátelské [Concept('concept_fleet', 'flotily')] musí být [Concept('concept_admiral_defeated','poražen')|l]"
@@ -1741,10 +1741,10 @@
  FLEET_STATUS_BLOCKADE_EFFICIENCY: " ([Concept('concept_blockade_efficiency','účinnost blokády')]: #tooltippable #tooltip:[GetRawTextTooltipTag(MilitaryFormation.GetBlockadeEfficiencyDesc)] [MilitaryFormation.GetBlockadeEfficiency|v%0]#!#! → #tooltippable #tooltip:[GetRawTextTooltipTag(MilitaryFormation.GetBlockadeEfficiencyMaxDesc)] [MilitaryFormation.GetBlockadeEfficiencyMax|v%0]#!#!)" # todo: NEW TRANSLATION
  BLOCKADE_EFFICIENCY_TOOLTIP: "#header [Concept('concept_blockade_efficiency','Účinnost blokády')]#!\n$VALUE|v%0$ aktuálně\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$" # todo: CHANGED
  BLOCKADE_EFFICIENCY_MAX_TOOLTIP: "#header [Concept('concept_blockade_efficiency','Účinnost blokády')]#!\n$VALUE|v%0$ při plném [Concept('concept_presence','přítomnosti')]\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$" # todo: CHANGED # todo: CONCEPT CASE
- BLOCKADE_EFFICIENCY_STATE_ENTRY: "#tooltippable;tooltip:$RESISTANCE_DESC$ $RESISTANCE|vK$#! [Concept('concept_blockade_resistance','$concept_blockade_resistance_short$')] v [State.GetName]" # todo: CHANGED
+ BLOCKADE_EFFICIENCY_STATE_ENTRY: "#tooltippable;tooltip:$RESISTANCE_DESC$ $RESISTANCE|vK$#! [Concept('concept_blockade_resistance','$concept_blockade_resistance_short$')|l] v [State.GetName]" # todo: CHANGED
  BLOCKADE_EFFICIENCY_BELOW_THRESHOLD: "@information! [Concept('concept_blockade_strength','Síla blokády')] je #v 0#! protože [Concept('concept_presence','přítomnost')] ($PRESENCE|v%0$) je pod minimálním prahem $THRESHOLD|v%0$" # todo: NEW TRANSLATION
  BLOCKADE_RESISTANCE_SHIPPING_LANE: "$VALUE|D+=$ z místní [Concept('concept_shipping_lane','námořní trasy')]" # todo: NEW TRANSLATION
- BLOCKADE_RESISTANCE_BUILDINGS: "$VALUE|D+=$ z produkce [Concept('concept_coastal_building','$concept_coastal_building$')]" # todo: CHANGED
+ BLOCKADE_RESISTANCE_BUILDINGS: "$VALUE|D+=$ z produkce [Concept('concept_coastal_building','$concept_coastal_building$')|l]" # todo: CHANGED
  BLOCKADE_RESISTANCE_TRADE: "$VALUE|D+=$ z místního [Concept('concept_trade','obchodu')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  MILITARY_FORMATION_OFFENSE: "@unit_offense! [MilitaryFormation.GetAverageOffenseExcludeUnavailableManpower|1v]"
  MILITARY_FORMATION_OFFENSE_TOOLTIP: "#header [Concept('concept_offense','Útok')]#!\n@unit_offense! [MilitaryFormation.GetAverageOffenseExcludeUnavailableManpower|1v] [Concept('concept_offense','útok')] průměrně\n$TOOLTIP_DELIMITER$\n@unit_offense! [MilitaryFormation.GetAverageOffense|1v] [Concept('concept_offense','útok')] průměrně při plné [Concept('concept_manpower','personálu')]" # todo: CONCEPT CASE
@@ -2014,7 +2014,7 @@
  EVENT_LOCATION: "Místo: [Event.GetState.GetName]"
  LAW_EVENT_TOOLTIP: "[Concept('concept_enactment_of_laws','Uzákonění')] událost pro [GetPlayer.GetLawBeingEnacted.GetName][ConcatIfNeitherEmpty('\n' , SelectLocalization(GetPlayer.GetLawBeingEnacted.HasEnactmentLastCheckpoint, 'LAW_EVENT_OUTCOME', ''))]"
  LAW_EVENT_OUTCOME: "Výsledek: [GetPlayer.GetLawBeingEnacted.GetEnactmentLastCheckpointResult]"
- REVOLUTION_EVENT_TOOLTIP: "Událost pro [Concept('concept_insurrection', '$concept_insurrectionary$')] [Concept('concept_political_movement','politické hnutí')]"
+ REVOLUTION_EVENT_TOOLTIP: "Událost pro [Concept('concept_insurrection', '$concept_insurrectionary$')|l] [Concept('concept_political_movement','politické hnutí')]"
  EVENT_DEBUG_TOOLTIP: "$TOOLTIP_DELIMITER$\nID události: [EVENT.GetKey|v]"
  ADVANCEMENT_COMMANDER_CONTRIBUTION_ADD: "#tooltippable #tooltip:$BREAKDOWN_TAG$ #v $ADVANCEMENT_CONTRIBUTION|2+=$#!#!#!"
  ADVANCEMENT_COMMANDER_CONTRIBUTION_MULT: "#tooltippable #tooltip:$BREAKDOWN_TAG$ #v $ADVANCEMENT_CONTRIBUTION|%0=$#!#!#!"
@@ -2085,8 +2085,8 @@
  MILITARY_FORMATION_MARKER_FORMATION_ENTRY_OFFENSE: "[COUNTRY.GetFlagTextIcon] @unit_offense! [MILITARY_FORMATION.GetAverageOffense|1v] ([MILITARY_FORMATION.GetName])"
  MILITARY_FORMATION_MARKER_FORMATION_ENTRY_DEFENSE: "[COUNTRY.GetFlagTextIcon] @unit_defense! [MILITARY_FORMATION.GetAverageDefense|1v] ([MILITARY_FORMATION.GetName])"
  MILITARY_FORMATION_MARKER_FORMATION_ENTRY_ORGANIZATION: "[COUNTRY.GetFlagTextIcon] @organization![Nbsp]$MILITARY_ORGANIZATION_VALUE_FORMATTED$ ([MILITARY_FORMATION.GetName])"
- MILITARY_FORMATION_MARKER_ALLY_FORMATIONS: "Spojenecké [Concept( 'concept_military_formation', '$concept_military_formations$' )] $POSITION_DESC$"
- MILITARY_FORMATION_MARKER_ENEMY_FORMATIONS: "Nepřátelské [Concept( 'concept_military_formation', '$concept_military_formations$' )] $POSITION_DESC$"
+ MILITARY_FORMATION_MARKER_ALLY_FORMATIONS: "Spojenecké [Concept( 'concept_military_formation', '$concept_military_formations$' )|l] $POSITION_DESC$"
+ MILITARY_FORMATION_MARKER_ENEMY_FORMATIONS: "Nepřátelské [Concept( 'concept_military_formation', '$concept_military_formations$' )|l] $POSITION_DESC$"
  MILITARY_FORMATION_MARKER_POSITION_HQ: "v [HQ.GetName]"
  MILITARY_FORMATION_MARKER_POSITION_FRONT: "na [FRONT.GetName]"
  MILITARY_FORMATION_MARKER_POSITION_LOCATION: "v $LOCATION$"
@@ -2153,7 +2153,7 @@
  blockade_tooltip: "#header $blockade$#!"
  port_bombardment: "Bombardování přístavu" # todo: NEW TRANSLATION
  port_bombardment_gerund: "Bombardování" # todo: NEW TRANSLATION
- port_bombardment_desc: "Ostřelovat nepřátelské pobřežní státy sousedící s touto námořní oblastí, což vyvolá devastaci a může poškodit [Concept('concept_coastal_building','$concept_coastal_buildings$')]. Lze tomu čelit pomocí námořních opevnění." # todo: CHANGED
+ port_bombardment_desc: "Ostřelovat nepřátelské pobřežní státy sousedící s touto námořní oblastí, což vyvolá devastaci a může poškodit [Concept('concept_coastal_building','$concept_coastal_buildings$')|l]. Lze tomu čelit pomocí námořních opevnění." # todo: CHANGED
  port_bombardment_tooltip: "#header $port_bombardment$#!" # todo: NEW TRANSLATION
  standby_army: "V pohotovosti"
  standby_army_gerund: "Pohotovost"
@@ -2224,7 +2224,7 @@
  CONVOY_RAIDING_ENEMIES_TOOLTIP_ENTRY: "[Country.GetName]"
  INVASION_STATUS_WAITING_FOR_FORMATIONS_AT_FRONT: "Čeká se na příchod [Concept('concept_military_formation','formace')] na [Concept('concept_invasion','invazi')] [Concept('concept_front','frontu')]" # todo: CONCEPT CASE
  INVASION_STATUS_PREPARING: "Příprava na [Concept('concept_invasion','invazi')] ([LabelingHelper.GetDaysLocWithoutTooltip('(int32)$NUM_DAYS$')])" # todo: CONCEPT CASE
- INVASION_STATUS_STALLED: "@warning! [Concept('concept_invasion','Invaze')] je #n Zastavena#!, protože žádný [Concept('concept_general','generál')] momentálně [Concept('concept_advancement_progress', '$advance_gerund$')] [Concept('concept_front','fronta')]"
+ INVASION_STATUS_STALLED: "@warning! [Concept('concept_invasion','Invaze')] je #n Zastavena#!, protože žádný [Concept('concept_general','generál')] momentálně [Concept('concept_advancement_progress', '$advance_gerund$')|l] [Concept('concept_front','fronta')]"
  INVASION_STATUS_TRAVELING_SHORT: "Přesouvání $concept_armies$"
  INVASION_STATUS_PREPARING_SHORT: "Příprava ([LabelingHelper.GetDaysLocWithoutTooltip(Invasion.GetPreparationDaysLeftRaw)])"
  INVASION_STATUS_ADVANCING_SHORT: "Postup ([Invasion.GetAdvancementProgress|%0v])"
@@ -2232,8 +2232,8 @@
  NAVAL_BATTLE_MARKER: "$SEA_REGION$"
  INVASION_STATUS_WAITING_FOR_FORMATION_AT_SEA_REGION: "Čeká se, až [MilitaryFormation.GetName] dorazí do [Concept('concept_sea_node','námořního uzlu')] v oblasti $REGION_NAME$" # todo: CONCEPT CASE
  INVASION_STATUS_WAITING_FOR_MOBILIZATION: "Čeká se, až [MilitaryFormation.GetName] zmobilizuje své síly:\n$JOM_BULLET_WITH_TAB$[MilitaryFormation.GetMobilizationPercentageFormatted]#!"
- INVASION_STATUS_NAVAL_BATTLE: "Bojuje s nepřátelskými [Concept( 'concept_fleet', '$concept_fleets$' )] v [Battle.GetName|v]"
- INVASION_STATUS_LAND_BATTLE: "Bojuje s nepřátelskými [Concept( 'concept_army', '$concept_armies$' )] v [Battle.GetName|v]"
+ INVASION_STATUS_NAVAL_BATTLE: "Bojuje s nepřátelskými [Concept( 'concept_fleet', '$concept_fleets$' )|l] v [Battle.GetName|v]"
+ INVASION_STATUS_LAND_BATTLE: "Bojuje s nepřátelskými [Concept( 'concept_army', '$concept_armies$' )|l] v [Battle.GetName|v]"
  INVASION_STATUS_ADVANCING_WITH_PROGRESS: "Pokus o převzetí kontroly nad [State.GetNameWithCountryFlag] ($ADVANCEMENT|%0v$ [Concept('concept_advancement_progress','pokroku v postupu')])" # todo: CONCEPT CASE
  INVASION_STATUS_READY_FOR_NAVAL_BATTLE: "Pokus o převzetí kontroly nad [Concept('concept_sea_node','námořním uzlem')] v oblasti $REGION_NAME$" # todo: CONCEPT CASE
  INVASION_STATUS_READY_FOR_LAND_BATTLE: "Pokus o převzetí kontroly nad [STATE.GetName]"
@@ -2386,11 +2386,11 @@
  ACTIVE_FRONTS: "Aktivní [Concept('concept_front','fronty')]"
  FRONT_UNDEFENDED: "#header @warning! Tato [Concept('concept_front','fronta')|l] může být nebráněna!#!\n$TOOLTIP_DELIMITER$\nNemáte žádné [Concept('concept_army', 'armády')] přítomny na [Front.GetName]. Pokud žádní vaši spojenci nemají žádné armády na této frontě, váš nepřítel může pokročit po této frontě bez jakéhokoli odporu.\n\nZvažte vyslání armády na tuto frontu."
  FRONT_SIDE_NUM_UNITS_FORMAT: "@battalions! #variable #tooltippable #tooltip:$BREAKDOWN_TAG$ $NUM_UNITS$#!#!#!"
- FRONT_SIDE_LEFT_NUM_UNITS: "@battalions! [FrontSide.GetNumUnits|0v] z [Concept( 'concept_army', '$concept_armies$' )]"
+ FRONT_SIDE_LEFT_NUM_UNITS: "@battalions! [FrontSide.GetNumUnits|0v] z [Concept( 'concept_army', '$concept_armies$' )|l]"
  FRONT_SIDE_FORMATIONS_LEFT_NUM_UNITS: "@battalions! [Front.GetNumLeftCombatUnitsFromFormationsRaw|0v] Z formací"
- FRONT_SIDE_RIGHT_NUM_UNITS: "Z [Concept( 'concept_army', '$concept_armies$' )] [FrontSide.GetNumUnits|0v] @battalions!"
+ FRONT_SIDE_RIGHT_NUM_UNITS: "Z [Concept( 'concept_army', '$concept_armies$' )|l] [FrontSide.GetNumUnits|0v] @battalions!"
  FRONT_SIDE_FORMATION_RIGHT_NUM_UNITS: "Z formací [Front.GetNumRightCombatUnitsFromFormationsRaw|0v] @battalions!"
- FRONT_SIDE_NO_ARMIES: "Žádné [Concept( 'concept_army', '$concept_armies$' )]"
+ FRONT_SIDE_NO_ARMIES: "Žádné [Concept( 'concept_army', '$concept_armies$' )|l]"
  FRONT_SIDE_ADVANCING_UNITS_DESC: "#header @battalions! postupující#!\n\n$UNITS_BREAKDOWN$"
  FRONT_SIDE_DEFENDING_UNITS_DESC: "#header @battalions! bránící#!\n\n$UNITS_BREAKDOWN$"
  FRONT_SIDE_UNIT_ENTRY: "@battalions!$NUM_UNITS|v$ z $UNIT_ORIGIN|v$"
@@ -2404,17 +2404,17 @@
  FRONT_NO_ENDED_BATTLES: "Žádné ukončené [Concept('concept_battle', 'bitvy')]"
  NO_ACTIVE_FRONTS: "Aktuálně žádné aktivní [Concept('concept_front', 'fronty')]"
  FRONT_PANEL_BATTLES: "Bitvy"
- FRONT_PRESENT_ARMIES_PLAYER: "#v [GetDataModelSize(Front.GetPlayerSide.GetArmies)]#! [Concept( 'concept_army', '$concept_armies$' )] (Vy)"
- FRONT_PRESENT_ARMIES_ENEMY: "#v [GetDataModelSize(Front.GetPlayerEnemySide.GetArmies)]#! [Concept( 'concept_army', '$concept_armies$' )] (Nepřítel)"
- FRONT_PRESENT_ARMIES_INITIATOR: "#v [GetDataModelSize(Front.GetInitiatorSide.GetArmies)]#! [Concept( 'concept_army', '$concept_armies$' )] (Útočník)"
- FRONT_PRESENT_ARMIES_TARGET: "#v [GetDataModelSize(Front.GetTargetSide.GetArmies)]#! [Concept( 'concept_army', '$concept_armies$' )] (Cíl)"
+ FRONT_PRESENT_ARMIES_PLAYER: "#v [GetDataModelSize(Front.GetPlayerSide.GetArmies)]#! [Concept( 'concept_army', '$concept_armies$' )|l] (Vy)"
+ FRONT_PRESENT_ARMIES_ENEMY: "#v [GetDataModelSize(Front.GetPlayerEnemySide.GetArmies)]#! [Concept( 'concept_army', '$concept_armies$' )|l] (Nepřítel)"
+ FRONT_PRESENT_ARMIES_INITIATOR: "#v [GetDataModelSize(Front.GetInitiatorSide.GetArmies)]#! [Concept( 'concept_army', '$concept_armies$' )|l] (Útočník)"
+ FRONT_PRESENT_ARMIES_TARGET: "#v [GetDataModelSize(Front.GetTargetSide.GetArmies)]#! [Concept( 'concept_army', '$concept_armies$' )|l] (Cíl)"
  FRONT_OCCUPATION_PROGRESS_SIDE_ADVANCING_DECISIVELY: "[COUNTRY.GetName] se #v rozhodně posouvá#! na této frontě" # todo: NEW TRANSLATION
  FRONT_OCCUPATION_PROGRESS_SIDE_ADVANCING: "[COUNTRY.GetName] #v postupuje#! na této frontě" # todo: NEW TRANSLATION
  FRONT_OCCUPATION_PROGRESS_NEITHER: "Na této frontě panuje pat" # todo: NEW TRANSLATION
- SEA_REGION_PANEL_NO_PRESENT_FLEETS: "Žádné přítomné [Concept( 'concept_fleet', '$concept_fleets$' )] na této straně"
- SEA_REGION_PANEL_NO_PRESENT_NEUTRAL_FLEETS: "Žádné přítomné neutrální [Concept( 'concept_fleet', '$concept_fleets$' )]"
+ SEA_REGION_PANEL_NO_PRESENT_FLEETS: "Žádné přítomné [Concept( 'concept_fleet', '$concept_fleets$' )|l] na této straně"
+ SEA_REGION_PANEL_NO_PRESENT_NEUTRAL_FLEETS: "Žádné přítomné neutrální [Concept( 'concept_fleet', '$concept_fleets$' )|l]"
  SEA_REGION_WAR_HEADER: "[SeaRegionWar.GetWar.GetName]"
- NEUTRAL_FLEETS_HEADER: "Neutrální [Concept( 'concept_fleet', '$concept_fleets$' )] přítomny"
+ NEUTRAL_FLEETS_HEADER: "Neutrální [Concept( 'concept_fleet', '$concept_fleets$' )|l] přítomny"
  SUPPLY_NETWORK_WAR_HEADER: "[Concept('concept_supply_network','Zásobovací sítě')]"
  SUPPLY_NETWORK_COUNTRY: "[SelectLocalization(LessThan_CFixedPoint(Country.GetSupplyNetworkStrength, '(CFixedPoint)1'), '@warning! ', '')]$SUPPLY_NETWORK_STRENGTH_VALUE$ - [Country.GetName]"
  STRENGTH_SUPPLY_TOOLTIP: "[SeaRegionNavalPresence.GetCountry.GetAdjectiveNoFormatting|v] dodává flotilám sílu #BOLD #[GetMoraleColorString( SeaRegionNavalPresence.GetStrength )] [SeaRegionNavalPresence.GetStrength|0%]#!#! v [SeaRegionNavalPresence.GetProvince.GetStateRegion.GetName]"
@@ -2526,7 +2526,7 @@
  PRIORITY_HIGH: "#g Vysoké#!" # todo: NEW TRANSLATION
  SUPPLY_PRIORITY_LOW_TOOLTIP: "#header $PRIORITY_LOW$ [Concept('concept_supply_priority','priorita zásob')]#![ConcatIfNeitherEmpty('\n', AddLocalizationIf(MilitaryFormation.IsSupplyPrioritySelected('low'), 'CURRENT_PRIORITY'))]\n$TOOLTIP_DELIMITER$\n[MilitaryFormation.GetName] obdrží [Concept('concept_supply_ship','zásobovací lodě')] #b jako poslední#!, po tom co všechny ostatní [Concept('concept_military_formation','formace')] uspokojí svou potřebu.\n\n$concept_military_formations$ s vyšším $concept_supply_priority_short$ vezmou $concept_supply_ships$ od [MilitaryFormation.GetName], pokud to bude potřeba." # todo: NEW TRANSLATION
  SUPPLY_PRIORITY_MEDIUM_TOOLTIP: "#header $PRIORITY_MEDIUM$ [Concept('concept_supply_priority','priorita zásob')]#![ConcatIfNeitherEmpty('\n', AddLocalizationIf(MilitaryFormation.IsSupplyPrioritySelected('medium'), 'CURRENT_PRIORITY'))]\n$TOOLTIP_DELIMITER$\n[MilitaryFormation.GetName] obdrží [Concept('concept_supply_ship','zásobovací lodě')] úměrně k ostatním [Concept('concept_military_formation','formacím')] s $PRIORITY_MEDIUM$ $concept_supply_priority_short$, ale přednostně před $PRIORITY_LOW$ $concept_supply_priority_short$ $concept_military_formations$, avšak po $PRIORITY_HIGH$ $concept_supply_priority_short$ $concept_military_formations$." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- SUPPLY_PRIORITY_HIGH_TOOLTIP: "#header $PRIORITY_HIGH$ [Concept('concept_supply_priority','priorita zásob')]#![ConcatIfNeitherEmpty('\n', AddLocalizationIf(MilitaryFormation.IsSupplyPrioritySelected('high'), 'CURRENT_PRIORITY'))]\n$TOOLTIP_DELIMITER$\n[MilitaryFormation.GetName] obdrží [Concept('concept_supply_ship','zásobovací lodě')] #b jako první#!, před ostatními [Concept('concept_military_formation', '$concept_military_formations$')].\n\nVezme $concept_supply_ships$ od $PRIORITY_MEDIUM$ a $PRIORITY_LOW$ $concept_supply_priority_short$ $concept_military_formations$, pokud nebude dostatek nepřidělených $concept_supply_ships$." # todo: NEW TRANSLATION
+ SUPPLY_PRIORITY_HIGH_TOOLTIP: "#header $PRIORITY_HIGH$ [Concept('concept_supply_priority','priorita zásob')]#![ConcatIfNeitherEmpty('\n', AddLocalizationIf(MilitaryFormation.IsSupplyPrioritySelected('high'), 'CURRENT_PRIORITY'))]\n$TOOLTIP_DELIMITER$\n[MilitaryFormation.GetName] obdrží [Concept('concept_supply_ship','zásobovací lodě')] #b jako první#!, před ostatními [Concept('concept_military_formation', '$concept_military_formations$')|l].\n\nVezme $concept_supply_ships$ od $PRIORITY_MEDIUM$ a $PRIORITY_LOW$ $concept_supply_priority_short$ $concept_military_formations$, pokud nebude dostatek nepřidělených $concept_supply_ships$." # todo: NEW TRANSLATION
  CURRENT_PRIORITY: "#i (Aktuální $concept_supply_priority_short$)#!" # todo: NEW TRANSLATION
  CULTURE_GLOBAL_AVG_STANDARD_OF_LIVING: "[LabelingHelper.GetLabelForStandardOfLivingCFixedPoint(Culture.CalcAvgSoL)|v] (#v [Culture.CalcAvgSoL|1]#!)"
  CULTURE_GLOBAL_AVG_STANDARD_OF_LIVING_LOWER_CLASS: "[LabelingHelper.GetLabelForStandardOfLivingCFixedPoint(Culture.CalcAvgSoLForPoor)|v] (#v [Culture.CalcAvgSoLForPoor|1]#!)"
@@ -2577,8 +2577,8 @@
  IN_OPPOSITION_TITLE: "#title Opozice#!"
  IN_GOVERNMENT_TITLE: "#title Vláda#!"
  ELECTION_TITLE: "#title Volby#!"
- MARGINAL_TITLE: "#title [Concept('concept_marginalized','Marginalizována')] [Concept('concept_interest_group', '$concept_interest_groups$')]#!"
- MARGINAL_TITLE_ACCORDION: "[Concept('concept_marginalized','Marginalizované')] [Concept('concept_interest_group', '$concept_interest_groups$')] (#v [GetDataModelSize( AccessPlayer.AccessMarginalInterestGroups)]#!)"
+ MARGINAL_TITLE: "#title [Concept('concept_marginalized','Marginalizována')] [Concept('concept_interest_group', '$concept_interest_groups$')|l]#!"
+ MARGINAL_TITLE_ACCORDION: "[Concept('concept_marginalized','Marginalizované')] [Concept('concept_interest_group', '$concept_interest_groups$')|l] (#v [GetDataModelSize( AccessPlayer.AccessMarginalInterestGroups)]#!)"
  LAWS_TITLE: "#title Přijaté [Concept('concept_law','zákony')]#!"
  ABOLISHED_LAWS_TITLE: "#title Zrušené [Concept('concept_law', '$concept_laws$'|l]#!"
  STATE_TITLE: "#title [Concept('concept_state','Stát')]#!"
@@ -2895,7 +2895,7 @@
  LOYALISTS_DECREASE_low_standard_of_living: "#v #n -$AMOUNT|D$#!#! kvůli tomu, že mají [Concept('concept_sol','životní standard')] pod očekávaným minimem"
  LOYALISTS_DECREASE_political_movement_demands: "#v #n -$AMOUNT|D$#!#! z [Concept('concept_political_movement','politického hnutí')] s vysokým [Concept('concept_activism','aktivismem hnutí')]" # todo: CONCEPT CASE
  LOYALISTS_DECREASE_discrimination: "#v #n -$AMOUNT|D$#!#! z nízké [Concept('concept_acceptance','přijetí')]"
- LOYALISTS_DECREASE_slavery: "#v #n -$AMOUNT|D$#!#! z tohoto [Concept('concept_slavery', '$concept_enslaved$')]"
+ LOYALISTS_DECREASE_slavery: "#v #n -$AMOUNT|D$#!#! z tohoto [Concept('concept_slavery', '$concept_enslaved$')|l]"
  LOYALISTS_DECREASE_conquest: "#v #n -$AMOUNT|D$#!#! z dobytí cizí [Concept('concept_country','země')]"
  LOYALISTS_DECREASE_bankruptcy: "#v #n -$AMOUNT|D$#!#! z vyhlášení [Concept('concept_bankruptcy','bankrotu')]" # todo: CONCEPT CASE
  LOYALISTS_DECREASE_lost_job: "#v #n -$AMOUNT|D$#!#! ztrátou zaměstnání"
@@ -2915,12 +2915,12 @@
  DIPLOMATIC_PACT_BASE_COST: "Základní náklady: #variable $COST|0$#!"
  DIPLOMATIC_PACT_INFAMY_COST: "Naše [Concept('concept_infamy','infamia')]: $COST|=-0$"
  DIPLOMATIC_PACT_RANK_COST: "$OTHER$ $RANK_NAME$ Hodnost: $COST|=-0$"
- DIPLOMATIC_PACT_PRO_LOBBY_COST: "[Concept('concept_clout','Politický vliv')] pro Pro-[COUNTRY.GetAdjectiveNoFormatting] [Concept('concept_political_lobby', '$concept_political_lobbies_short$')]: $COST|=-0$"
- DIPLOMATIC_PACT_ANTI_LOBBY_COST: "[Concept('concept_clout','Politický vliv')] pro Proti-[COUNTRY.GetAdjectiveNoFormatting] [Concept('concept_political_lobby', '$concept_political_lobbies_short$')]: $COST|=-0$"
+ DIPLOMATIC_PACT_PRO_LOBBY_COST: "[Concept('concept_clout','Politický vliv')] pro Pro-[COUNTRY.GetAdjectiveNoFormatting] [Concept('concept_political_lobby', '$concept_political_lobbies_short$')|l]: $COST|=-0$"
+ DIPLOMATIC_PACT_ANTI_LOBBY_COST: "[Concept('concept_clout','Politický vliv')] pro Proti-[COUNTRY.GetAdjectiveNoFormatting] [Concept('concept_political_lobby', '$concept_political_lobbies_short$')|l]: $COST|=-0$"
  COUNTRY_INFAMY_MAP_TOOLTIP: "[SelectLocalization(State.GetCountry.IsColonizable, GetPlayer.GetTensionTooltip(State.GetCountry), State.GetCountry.GetInfamyDesc)]"
  TREATY_ARTICLE_EXPENSE_LIST_ITEM_BREAKDOWN: "#header [Country.GetName] – $ARTICLE$#!\nCelkové náklady #variable $COST|0$#! jsou způsobeny:\n$BREAKDOWN$"
  TREATY_ARTICLE_EXPENSE_LIST_ITEM: "#tooltippable #tooltip:$BREAKDOWN_TAG$ #variable $COST|+=0$#!#!#! z $ARTICLE$ se státem [Country.GetName]"
- BUREAUCRACY_EXPENSE_FROM_STATES_AND_POPULATION: "#tooltippable #tooltip:$BREAKDOWN_TAG$ $COST|+=0$#!#! ze $POPULATION|Kv$ lidí v $NUM_INCORPORATED_STATES|v$ [Concept('concept_incorporated_state', '$concept_incorporated_states$')]"
+ BUREAUCRACY_EXPENSE_FROM_STATES_AND_POPULATION: "#tooltippable #tooltip:$BREAKDOWN_TAG$ $COST|+=0$#!#! ze $POPULATION|Kv$ lidí v $NUM_INCORPORATED_STATES|v$ [Concept('concept_incorporated_state', '$concept_incorporated_states$')|l]"
  BUREAUCRACY_EXPENSE_FROM_INSTITUTIONS: "#tooltippable #tooltip:$BREAKDOWN_TAG$ $COST|+=0$#!#! z [Concept('concept_institution','institucí')] napříč $NUM_INCORPORATED_STATES|v$ [Concept('concept_incorporated_state','začlenené státy')]" # todo: CONCEPT CASE
  BUREAUCRACY_EXPENSE_FROM_COMMANDERS: "#tooltippable #tooltip:$BREAKDOWN_TAG$ $COST|+=0$#!#! z $NUM_GENERALS|v$ [Concept('concept_general','generálů')] a $NUM_ADMIRALS|v$ [Concept('concept_admiral','admirálů')]" # todo: CONCEPT CASE
  BUREAUCRACY_EXPENSE_FROM_BUILDINGS: "$COST|+=0$ z $NUM_LEVELS|v$ [Concept('concept_nationally_owned','národního vlastnictví')] [Concept('concept_building_level','úrovně budovy')]" # todo: CONCEPT CASE
@@ -2929,7 +2929,7 @@
  TOTAL_INSTITUTION_INVESTMENT_LEVELS: "Celkové instituční [Concept('concept_investment_level','úrovně investice')]: #v $LEVELS|0$#!"
  BUREAUCRACY_EXPENSE_INSTITUTIONS: "$INCORPORATEDCOST$\n$INSTITUTION_LEVELS$\n$BREAKDOWN$"
  BUREAUCRACY_EXPENSE_PER_STATE: "$TOTAL_COST|+=0$ z [State.GetName] ($STATE_COST|+=0$ základ, $POPULATION_COST|+=0$ z $POPULATION|Kv$ lidí)"
- BUREAUCRACY_EXPENSE_FROM_STATES_AND_POPULATION_TOOLTIP: "#header @bur![Concept('concept_bureaucracy','Byrokracie')] náklady na [Concept('concept_pop','populace')] v [Concept('concept_incorporated_state', '$concept_incorporated_states$')]: $COST|+=0$#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
+ BUREAUCRACY_EXPENSE_FROM_STATES_AND_POPULATION_TOOLTIP: "#header @bur![Concept('concept_bureaucracy','Byrokracie')] náklady na [Concept('concept_pop','populace')] v [Concept('concept_incorporated_state', '$concept_incorporated_states$')|l]: $COST|+=0$#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
  BUREAUCRACY_EXPENSE_PER_COMMANDER: "$COST|+=0$ z [Character.GetCombatUnitsTypeIcon] [Character.GetFullName]"
  BUREAUCRACY_EXPENSE_FROM_COMMANDERS_TOOLTIP: "#header @bur![Concept('concept_bureaucracy','Byrokracie')] náklady na [Concept('concept_commander','velitele')]: $COST|+=0$#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$" # todo: CONCEPT CASE
  BUREAUCRACY_EXPENSE_LIST_ITEM: "#tooltippable #tooltip:$TOOLTIP_TAG$ #variable $COST|+0$#!#!#! z [State.GetName]"
@@ -2953,7 +2953,7 @@
  MIGRATION_PULL_DESC: "[State.GetMigrationPullDesc]"
  STATE_MIGRATION_PULL_BREAKDOWN: "[State.GetMigrationPullDesc]"
  COUNTRY_MASS_MIGRATION_PULL_DESC: "[SelectLocalization(State.GetCountry.IsColonizable, State.GetMigrationPullDesc, State.GetCountry.GetMassMigrationAttractionDesc)]"
- MASS_MIGRATION_DESC_TOOLTIP: "#header [Concept('concept_mass_migration_pull','Přitažlivost hromadné migrace')]#!\n$TOOLTIP_DELIMITER$\n [Country.GetAdjective] $concept_mass_migration_pull$ #b $MASS_MIGRATION_ATTRACTION|1$#! je založena na průměrném [Concept('concept_migration_pull','migrační přitažlivosti')] následujících [Concept('concept_migration_target', '$concept_mass_migration_eligible$')] $concept_states$:\n\n[COUNTRY.GetMassMigrationAttractionBreakdown]\n\n$concept_countries$ s méně než #b $PENALTY_THRESHOLD$#! $concept_mass_migration_eligible$ $concept_states$ trpí dalším poklesem jejich $concept_mass_migration_pull$.\n\nVaše $concept_mass_migration_pull$ může být rovněž ovlivněna vaší aktuální [GetLawGroup('lawgroup_migration').GetName] a [GetLawGroup('lawgroup_citizenship').GetName] [Concept('concept_law','zákony')] pokud brání dotčené kultuře při migraci do vaší $concept_country$." # todo: CONCEPT CASE
+ MASS_MIGRATION_DESC_TOOLTIP: "#header [Concept('concept_mass_migration_pull','Přitažlivost hromadné migrace')]#!\n$TOOLTIP_DELIMITER$\n [Country.GetAdjective] $concept_mass_migration_pull$ #b $MASS_MIGRATION_ATTRACTION|1$#! je založena na průměrném [Concept('concept_migration_pull','migrační přitažlivosti')] následujících [Concept('concept_migration_target', '$concept_mass_migration_eligible$')|l] $concept_states$:\n\n[COUNTRY.GetMassMigrationAttractionBreakdown]\n\n$concept_countries$ s méně než #b $PENALTY_THRESHOLD$#! $concept_mass_migration_eligible$ $concept_states$ trpí dalším poklesem jejich $concept_mass_migration_pull$.\n\nVaše $concept_mass_migration_pull$ může být rovněž ovlivněna vaší aktuální [GetLawGroup('lawgroup_migration').GetName] a [GetLawGroup('lawgroup_citizenship').GetName] [Concept('concept_law','zákony')] pokud brání dotčené kultuře při migraci do vaší $concept_country$." # todo: CONCEPT CASE
  MASS_MIGRATION_ZERO_PULL_DESC_TOOLTIP: "#header [Concept('concept_mass_migration_pull','Přitažlivost hromadné migrace')]#!\n$TOOLTIP_DELIMITER$\n[Country.GetName] nemá atraktivní $concept_mass_migration_eligible$ $concept_states$ k cílení ze strany [Concept('concept_migration_target','hromadná migrace')]."
  STATE_MM_ENTRY_FORMAT: "[STATE.GetName]: [STATE.GetMigrationLabel]"
  MIGRATION_PULL_FROM_EMPTY_STATE: "$TAB$Odepopulovaný stát: #v $VAL|+=1$#!"
@@ -3067,7 +3067,7 @@
  LAND_INVASION_PROGRESS_BAR_TOOLTIP: "Postup invaze [Invasion.GetProgress|v%0]"
  NAVAL_INVASION_LANDING_PROGRESS: "[SelectLocalization(Invasion.IsFightingNavalBattle, 'NAVAL_INVASION_LANDING_PROGRESS_STALLED', 'NAVAL_INVASION_LANDING_PROGRESS_ONGOING')]"
  NAVAL_INVASION_LANDING_PROGRESS_ONGOING: "[Invasion.GetLandingProgress|v%0] [Invasion.GetInvaderCountry.GetAdjective] [Concept('concept_landing_progress','pokrok vylodění')]"
- NAVAL_INVASION_LANDING_PROGRESS_STALLED: "[Invasion.GetInvaderCountry.GetAdjective] [Concept('concept_landing_progress','pokrok vylodění')] je zastaven kvůli nepřátelské [Concept('concept_fleet', '$concept_fleets$')]!"
+ NAVAL_INVASION_LANDING_PROGRESS_STALLED: "[Invasion.GetInvaderCountry.GetAdjective] [Concept('concept_landing_progress','pokrok vylodění')] je zastaven kvůli nepřátelské [Concept('concept_fleet', '$concept_fleets$')|l]!"
  NAVAL_INVASION_LANDING_PROGRESS_BAR_TOOLTIP: "Postup přistání [Invasion.GetLandingProgress|v%0]"
  INVASION_STATUS_CONCLUDED: "Tato invaze byla ukončena."
  INVASION_SEA_REGION_STATUS: "[SelectLocalization(Invasion.HasBlockingEnemyFleetOnSeaNode, 'INVASION_SEA_REGION_CONTESTED', 'INVASION_SEA_REGION_CONTROLLED')]"
@@ -3109,7 +3109,7 @@
  NAVAL_INVASION_STATE_UNIT_DEFENSE_HEADER: "[Invasion.GetTargetState.GetBuilding('building_naval_fortification').GetName] v [Invasion.GetTargetState.GetName] poskytují dodatečnou obranu proti vyloděním [Concept('concept_battle','bitvám')]\n" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CANCEL_INVASION: "Zrušit invazi"
  CANCEL_INVASION_TOOLTIP: "#header Zrušit tuto [Concept('concept_invasion','invazi')]#![ConcatIfNeitherEmpty('\n', GetDesc(Invasion.Cancel))]"
- CANCEL_INVASION_CONFIRMATION: "Zrušením [Invasion.GetName] zrušíte všechny probíhající pozemní i námořní [Concept('concept_battle','bitvy')] a pošlete vaše [Concept('concept_military_formation','formace')] zpět do jejich domovského [Concept('concept_hq','HQ')].\n\nVeškerý získaný [Concept('concept_landing_progress','pokrok vylodění')|l] bude ztracen.\n\nÚčastnící se [Concept('concept_army', '$concept_armies$')][SelectLocalization(Invasion.IsNavalInvasion, 'CANCEL_INVASION_PARTICIPATING_FLEET_SUFFIX', '')]:\n[Invasion.GetParticipatingFormationsBreakdown]\n\nJste si jistí?" # todo: CHANGED
+ CANCEL_INVASION_CONFIRMATION: "Zrušením [Invasion.GetName] zrušíte všechny probíhající pozemní i námořní [Concept('concept_battle','bitvy')] a pošlete vaše [Concept('concept_military_formation','formace')] zpět do jejich domovského [Concept('concept_hq','HQ')].\n\nVeškerý získaný [Concept('concept_landing_progress','pokrok vylodění')|l] bude ztracen.\n\nÚčastnící se [Concept('concept_army', '$concept_armies$')|l][SelectLocalization(Invasion.IsNavalInvasion, 'CANCEL_INVASION_PARTICIPATING_FLEET_SUFFIX', '')]:\n[Invasion.GetParticipatingFormationsBreakdown]\n\nJste si jistí?" # todo: CHANGED
  CANCEL_INVASION_PARTICIPATING_FLEET_SUFFIX: "/[Concept('concept_fleet', '$concept_fleets$')]" # todo: NEW TRANSLATION
  INVASION_LOCKED_BY_BATTLE: "Probíhá [Concept('concept_battle','bitva')|l] v rámci [Concept('concept_invasion','invaze')|l]"
  ADD_DEFENDING_FLEET_TO_NAVAL_INVASION: "#b Nasadit#! [Concept('concept_fleet','flotilu')]"
@@ -3353,7 +3353,7 @@
  POWER_BLOC_ALREADY_HAS_PRINCIPLE_SAME_SLOT: "[PowerBlocPrinciple.GetName] je již aktivní v slotu [Concept('concept_power_bloc_principle','princípů')]"
  POWER_BLOC_HAS_PRINCIPLE_OF_SAME_GROUP: "Jeden z [Concept('concept_power_bloc_principle','princípů')] skupiny [PowerBlocPrincipleGroup.GetName] je již aktivní v jiném slotu [Concept('concept_power_bloc_principle','princípů')]"
  POWER_BLOC_NOT_ENOUGH_MANDATES: "Mít alespoň #v $COST|0$#! dostupné [SelectLocalization(EqualTo_int32('(int32)$COST$', '(int32)1'), 'MANDATE_CONCEPT', 'MANDATES_CONCEPT')]"
- POWER_BLOC_NO_PRIMARY_PRINCIPLES_SELECTED: "Žádné [Concept('concept_power_bloc_principle','principy')] z [Concept('concept_power_bloc_primary_principle_group','primární principiální skupiny')] pro identitu [POWER_BLOC_IDENTITY.GetName] [Concept('concept_power_bloc_identity','$concept_power_bloc_identity_extra_short$')] nebyly vybrány"
+ POWER_BLOC_NO_PRIMARY_PRINCIPLES_SELECTED: "Žádné [Concept('concept_power_bloc_principle','principy')] z [Concept('concept_power_bloc_primary_principle_group','primární principiální skupiny')] pro identitu [POWER_BLOC_IDENTITY.GetName] [Concept('concept_power_bloc_identity','$concept_power_bloc_identity_extra_short$')|l] nebyly vybrány"
  POWER_BLOC_PRINCIPLE_ON_COOLDOWN: "[POWER_BLOC_PRINCIPLE.GetName] byl nedávno změněn, nelze ho změnit až do [DATE.GetString|v]"
  POWER_BLOC_PRINCIPLE_IS_INCOMPATIBLE: "[POWER_BLOC_PRINCIPLE.GetName] není kompatibilní s [POWER_BLOC_PRINCIPLE_OTHER.GetName]"
  POWER_BLOC_LEADER_EXPENSE_LIST_ITEM: "#negative_value -$VAL|0$#! z [Concept('concept_power_bloc_leader','vůdce')|l] [PowerBloc.GetName]"
@@ -3398,7 +3398,7 @@
  POWER_BLOC_LEVERAGE_ENTRY: "#v [PowerBloc.GetLeverageAdvantage(Country.Self)|+=0]#! [PowerBloc.GetName]: #v $CURRENT_LEVERAGE|0$#! @arrow_right! #v #tooltippable #tooltip:$BREAKDOWN_TAG$ $TARGET_LEVERAGE|0$#!#!#! ($TARGET_LEVERAGE_SHARE|%1$)"
  POWER_BLOC_UNCLAIMED_LEVERAGE: "#tooltippable #tooltip:$BREAKDOWN_TAG$ $UNCLAIMED_LEVERAGE|v0$#!#! ($UNCLAIMED_LEVERAGE_SHARE|%1$) @arrow_right! [Country.GetUnclaimedLeverageTarget|v0] ([Country.GetUnclaimedLeverageShareTarget|%1]) [Concept('concept_power_bloc_unclaimed_leverage','nenárokovaná páka')]"
  POWER_BLOC_LEVERAGE_GAIN_FROM_INTEREST: "[SCOPE.GetRootScope.GetCountry.GetPowerBloc.GetName] [Concept('concept_power_bloc_member','člen mocenského bloku')] má [Concept('concept_interest','zájem')] v [SCOPE.sCountry('target').GetAltAdjective('L')]" # todo: CONCEPT CASE
- POWER_BLOC_LEVERAGE_GAIN_NO_CAPITAL_INTEREST: "Žádný [Concept('concept_power_bloc_member','člen')] z [SCOPE.GetRootScope.GetCountry.GetPowerBloc.GetAltAdjective('G')] nemá [Concept('concept_interest','zájem')] v [SCOPE.sCountry('target').GetAltAdjective('L')][Concept( 'concept_capital_state', '$concept_capital_state_short$' )] [SCOPE.sCountry('target').GetCapital.GetName]" # todo: CONCEPT CASE
+ POWER_BLOC_LEVERAGE_GAIN_NO_CAPITAL_INTEREST: "Žádný [Concept('concept_power_bloc_member','člen')] z [SCOPE.GetRootScope.GetCountry.GetPowerBloc.GetAltAdjective('G')] nemá [Concept('concept_interest','zájem')] v [SCOPE.sCountry('target').GetAltAdjective('L')][Concept( 'concept_capital_state', '$concept_capital_state_short$' )|l] [SCOPE.sCountry('target').GetCapital.GetName]" # todo: CONCEPT CASE
  POWER_BLOC_LEVERAGE_GAIN_DECAY: "Žádný [Concept('concept_interest','zájem')] v [SCOPE.sCountry('target').GetAltAdjective('L')]" # todo: CONCEPT CASE
  POWER_BLOC_INACTIVE_LEVERAGE_GAIN_DECAY: "[SCOPE.GetRootScope.GetCountry.GetPowerBloc.GetName] nečinný stav"
  POWER_BLOC_LEVERAGE_GAIN_FORMAT: "$VALUE|+=0$ z $KEY$"
@@ -3664,7 +3664,7 @@
  CONSTRUCTION_ALREADY_PAUSED: "Výstavba je již pozastavena."
  CONSTRUCTION_IN_DEFAULT: "Nelze pokračovat ve výstavbě, zatímco [COUNTRY.GetName] je v defaultu."
  CONSTRUCTION_ALREADY_RUNNING: "Výstavba již probíhá."
- CONSTRUCTION_SECTOR_BUTTON_PAUSE_TOOLTIP: "@money! #v [Building.GetConstructionGoodsExpenses|D]#! týdně [Concept('concept_good', '$concept_goods$')] [Concept('concept_government_expenses', '$concept_government_expenses_short$')] ušetřeno při pozastavení\n#instruction #bold Klikněte#! pro pozastavení [concept_construction] vyráběného touto budovou#!" # todo: NEW TRANSLATION
+ CONSTRUCTION_SECTOR_BUTTON_PAUSE_TOOLTIP: "@money! #v [Building.GetConstructionGoodsExpenses|D]#! týdně [Concept('concept_good', '$concept_goods$')|l] [Concept('concept_government_expenses', '$concept_government_expenses_short$')|l] ušetřeno při pozastavení\n#instruction #bold Klikněte#! pro pozastavení [concept_construction] vyráběného touto budovou#!" # todo: NEW TRANSLATION
  CONSTRUCTION_SECTOR_BUTTON_RESUME_TOOLTIP: "Vyrábění [concept_construction] touto budovou je pozastaveno\n#instruction #bold Klikněte#! pro obnovení#!" # todo: NEW TRANSLATION
  CONSTRUCTION_SECTOR_ALREADY_PAUSED: "[concept_construction] v této budově je již pozastaveno." # todo: NEW TRANSLATION
  CONSTRUCTION_SECTOR_ALREADY_RUNNING: "[concept_construction] v této budově již běží." # todo: NEW TRANSLATION
@@ -4037,7 +4037,7 @@
  POTENTIAL_LEADER_IDEOLOGY_SPECIFIC_LEADER: "[CHARACTER.GetFullNameWithTitle] (#b [CHARACTER.GetIdeology.GetNameNoFormatting]#!)" # todo: NEW TRANSLATION
  POTENTIAL_LEADER_IDEOLOGY_NON_SPECIFIC_LEADER: "a #b [IDEOLOGY.GetNameNoFormatting]#!" # todo: NEW TRANSLATION
  INTEREST_GROUP_NEXT_LEADER_POLITICAL_OUTSIDER: "Objeví se nový [Ideology.GetName] [Concept('concept_politician','politik')], který se stane vůdcem [Concept('concept_interest_group','zájmové skupiny')]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- PROMINENCE_AND_ROLES_OF_CHARACTERS: "[Concept('concept_prominence','Význam')] a [Concept( 'concept_character_role', '$concept_character_roles$' )] #b $IDEOLOGY$s#!" # todo: NEW TRANSLATION
+ PROMINENCE_AND_ROLES_OF_CHARACTERS: "[Concept('concept_prominence','Význam')] a [Concept( 'concept_character_role', '$concept_character_roles$' )|l] #b $IDEOLOGY$s#!" # todo: NEW TRANSLATION
  PROMINENCE_AND_ROLES_WITH_BREAKDOWN: "$KEY$: #tooltippable #tooltip:$TOOLTIP_TAG$ $VALUE|+=0$#!#!" # todo: NEW TRANSLATION
  MOVEMENT_PRESSURE: "[Concept('concept_political_movement_pressure','Politický tlak')]" # todo: NEW TRANSLATION
  STATE_PANEL_POLLUTION: "[Concept('concept_pollution_impact','Dopad znečištění')]\n$STATE_POLLUTION_CONDENSED$"
@@ -4050,9 +4050,9 @@
  STATE_BLOCKADE_SHIPPING_LANE_EFFECTS: "$VALUE|=%+0$ účinnost pro [Concept('concept_shipping_lane','námořní trasy')] začínající nebo končící v [State.GetNameNoFormatting]"
  STATE_BLOCKADE_BUILDING_THROUGHPUT_EFFECTS: "$VALUE|=%+0$ [Concept('concept_throughput','efektivita')] pro:\n$LIST$"
  STATE_BLOCKADE_LEVEL: "[Concept('concept_blockade','Úroveň blokády')]\n[State.GetBlockadeLevel|%-0]"
- TOOLTIP_STATE_BLOCKADE_LEVEL: "#header [Concept('concept_blockade','Úroveň blokády')]#!\n[State.GetBlockadeLevel|%-0] v [State.GetName] ([State.GetCurrentBlockadeStrength|vK]/[State.GetRequiredBlockadeStrength|vK] [Concept('concept_blockade_strength','$concept_blockade_strength$')])\n$TOOLTIP_DELIMITER$\n[State.GetBlockadeEffectsDesc]" # todo: CHANGED
+ TOOLTIP_STATE_BLOCKADE_LEVEL: "#header [Concept('concept_blockade','Úroveň blokády')]#!\n[State.GetBlockadeLevel|%-0] v [State.GetName] ([State.GetCurrentBlockadeStrength|vK]/[State.GetRequiredBlockadeStrength|vK] [Concept('concept_blockade_strength','$concept_blockade_strength$')|l])\n$TOOLTIP_DELIMITER$\n[State.GetBlockadeEffectsDesc]" # todo: CHANGED
  STATE_BOMBARDMENT: "$port_bombardment$" # todo: NEW TRANSLATION
- TOOLTIP_STATE_BOMBARDMENT: "#header $port_bombardment$#!\n[State.GetName] je bombardován nepřátelskými [Concept('concept_fleet','$concept_fleets$')]\n#v #tooltippable #tooltip:[GetRawTextTooltipTag(State.GetDailyDevastationIncreaseFromBombardmentBreakdown)] [State.GetDailyDevastationIncreaseFromBombardment|=-%/]#!#!#! denně [Concept('concept_devastation','devastace')] z bombardování\n$TOOLTIP_DELIMITER$\nBombardování způsobuje $concept_devastation$ a může poškodit [Concept('concept_coastal_building','$concept_coastal_buildings$')]\nLze tomu čelit pomocí [GetBuildingType('building_naval_fortification').GetName]\n\n$concept_devastation$ z bombardování je omezeno na maximum [GetDefine('NMilitary', 'BOMBARDMENT_DEVASTATION_MAX')|-0/%]" # todo: CHANGED
+ TOOLTIP_STATE_BOMBARDMENT: "#header $port_bombardment$#!\n[State.GetName] je bombardován nepřátelskými [Concept('concept_fleet','$concept_fleets$')|l]\n#v #tooltippable #tooltip:[GetRawTextTooltipTag(State.GetDailyDevastationIncreaseFromBombardmentBreakdown)] [State.GetDailyDevastationIncreaseFromBombardment|=-%/]#!#!#! denně [Concept('concept_devastation','devastace')] z bombardování\n$TOOLTIP_DELIMITER$\nBombardování způsobuje $concept_devastation$ a může poškodit [Concept('concept_coastal_building','$concept_coastal_buildings$')|l]\nLze tomu čelit pomocí [GetBuildingType('building_naval_fortification').GetName]\n\n$concept_devastation$ z bombardování je omezeno na maximum [GetDefine('NMilitary', 'BOMBARDMENT_DEVASTATION_MAX')|-0/%]" # todo: CHANGED
  NO_BOMBARDMENT_STRENGTH: "Žádná bombardovací síla [Concept('concept_fleet','loďstvo')]." # todo: NEW TRANSLATION
  DEVASTATION_FROM_FLEET_BOMBARDMENT_STRENGTH: "#header Denní nárůst [Concept('concept_devastation','devastace')] z bombardování#!\n[State.GetDailyDevastationIncreaseFromBombardment|=-%/] aktuálně\n$TOOLTIP_DELIMITER$\nOdvození:\n$DEVASTATION_FROM_FLEET_BOMBARDMENT_STRENGTH_BREAKDOWN$" # todo: NEW TRANSLATION
  DEVASTATION_FROM_FLEET_BOMBARDMENT_STRENGTH_BREAKDOWN: "#tooltippable #tooltip:$STRENGTH_DESC$ $STRENGTH|v0$#!#! [Concept('concept_fleet','loďstvo')] síla bombardování\nDělena [STATE.GetModifier.GetNonFormattedValueWithBreakdownAndNoDecimalsFor('state_fortification_bombardment_resistance_add')|v] $state_fortification_bombardment_resistance_add$\n= #v $EFFECTIVE$%#! efektivní bombardování (max 1%)#indent_newline:3 \nNakonec škálováno $SCALE|v$#!" # todo: NEW TRANSLATION
@@ -4328,7 +4328,7 @@
  POPS_RELIGION_POPULATION_PIECHART_TITLE: "#title Populace podle náboženství#!"
  POPS_RELIGION_POL_STR_PIECHART_TITLE: "#title Politická síla podle náboženství#!"
  POPULATION_PIECHART_HEADER: "[Concept('concept_pop','Populace')]"
- COUNTRY_OWNERSHIP_PIECHART_HEADER: "[Concept('concept_country','Země')] [Concept('concept_ownership_share','$concept_ownership_shares$')]"
+ COUNTRY_OWNERSHIP_PIECHART_HEADER: "[Concept('concept_country','Země')] [Concept('concept_ownership_share','$concept_ownership_shares$')|l]"
  OWNERSHIP_DISTRIBUTION_PIECHART_HEADER: "[GetPlayer.GetAltAdjective('em')] vlastněné [Concept('concept_building','budovy')] rozdělení"
  POLITICAL_STRENGTH_PIECHART_HEADER: "[Concept('concept_political_strength','Politická síla')]"
  POP_TYPE_HEADER: "#header [Concept('concept_profession','Profese')]#!"
@@ -4814,7 +4814,7 @@
  WAR_EXHAUSTION_FROM_CASUALTIES: "[SCOPE.sWar('war').GetCasualties(SCOPE.GetRootScope.GetCountry.Self)|Dv] [Concept('concept_casualties','ztráty')] utrpěné ve srovnání s maximální vojenskou velikostí #v [SCOPE.GetRootScope.GetCountry.GetNumCombatUnits|D]K#! a jejich strana ztratila [SCOPE.sWar('war').GetSizeWeightedLostBattlesFraction(SCOPE.GetRootScope.GetCountry.Self)|%1v] bitev (škálováno podle velikosti bitvy)"
  WAR_EXHAUSTION_FROM_ACCEPTANCE_OF_DEAD: "Kulturní [Concept('concept_acceptance','přijetí')] z #negative_value [SCOPE.sWar('war').GetTotalDeadWithWarExhaustionTooltip(SCOPE.GetRootScope.GetCountry.Self)]#! celkových úmrtí"
  WAR_EXHAUSTION_TOTAL_DEAD_FORMATTED: "#tooltippable #tooltip:$TOOLTIP_TAG$ $VALUE|D$#!#!"
- WAR_EXHAUSTION_FROM_CULTURAL_ACCEPTANCE: "#header [Concept('concept_war_exhaustion','Válečná únava')] z [Concept('concept_culture','$concept_cultural$')] [Concept('concept_acceptance','přijetí')]#!\n#negative_value $VALUE|=2$#! týdně\n$TOOLTIP_DELIMITER$\n$DEATHS|vK$ [Concept('concept_dead','mrtvý')] k dnešnímu dni\n$MOBILIZED|vK$ aktuální [Concept('concept_manpower','personál')] v [Concept('concept_war','válce')]\n\n#indent_newline:3 #title $concept_war_exhaustion$ ze smrti v každé [Concept('concept_culture','kultuře')]#!:\n$BREAKDOWN$#!" # todo: CONCEPT CASE
+ WAR_EXHAUSTION_FROM_CULTURAL_ACCEPTANCE: "#header [Concept('concept_war_exhaustion','Válečná únava')] z [Concept('concept_culture','$concept_cultural$')|l] [Concept('concept_acceptance','přijetí')]#!\n#negative_value $VALUE|=2$#! týdně\n$TOOLTIP_DELIMITER$\n$DEATHS|vK$ [Concept('concept_dead','mrtvý')] k dnešnímu dni\n$MOBILIZED|vK$ aktuální [Concept('concept_manpower','personál')] v [Concept('concept_war','válce')]\n\n#indent_newline:3 #title $concept_war_exhaustion$ ze smrti v každé [Concept('concept_culture','kultuře')]#!:\n$BREAKDOWN$#!" # todo: CONCEPT CASE
  WAR_EXHAUSTION_FROM_CULTURAL_ACCEPTANCE_ENTRY: "#indent_newline:3 #negative_value $VALUE|=2$#! z $DEATHS|vD$ [Culture.GetName] úmrtí ([AcceptanceStatus.GetName])\n$BREAKDOWN$#!"
  WAR_EXHAUSTION_FROM_CULTURAL_ACCEPTANCE_NO_IMPACT_ENTRY: "Žádný dopad z $DEATHS|vD$ [Culture.GetName] úmrtí ([AcceptanceStatus.GetName])"
  WAR_EXHAUSTION_FROM_CULTURAL_ACCEPTANCE_ENTRY_BREAKDOWN: "#negative_value $IMPACT|=2$#! z $DEATHS|vD$ mrtvých na straně [Country.GetAdjective]"
@@ -4838,9 +4838,9 @@
  WARGOAL_CONTESTATION_CONTROL_OWN_STATE: "#indent_newline:3 $TAB$$EFFECT_LIST_BULLET$[COUNTRY.GetName] a jeho [Concept('concept_ally','spojenci')] udrží $concept_control_war_goal_short$ [TARGET_STATE.GetCountry.GetFlagTextIcon] [TARGET_STATE.GetName]#!"
  WARGOAL_CONTESTATION_CONTROL_OWN_CAPITAL: "#indent_newline:3 $TAB$$EFFECT_LIST_BULLET$[COUNTRY.GetName] a jeho [Concept('concept_ally','spojenci')] udrží $concept_control_war_goal_short$ [COUNTRY.GetAdjective] [Concept('concept_capital_state','hlavní město')] ([COUNTRY.GetCapital.GetName])#!"
  WARGOAL_CONTESTATION_CONTROL_ALL_OWN_STATES: "#indent_newline:3 $TAB$$EFFECT_LIST_BULLET$[COUNTRY.GetName] a jeho [Concept('concept_ally','spojenci')] udrží $concept_control_war_goal_short$ všech [COUNTRY.GetAdjective] [Concept('concept_state','států')]#!" # todo: CONCEPT CASE
- WARGOAL_CONTESTATION_CONTROL_HALF_OWN_STATES: "#indent_newline:3 $TAB$$EFFECT_LIST_BULLET$[COUNTRY.GetName] a jeho [Concept('concept_ally','spojenci')] si udržují $concept_control_war_goal_short$ alespoň #v 50%#! z [COUNTRY.GetAdjective] [Concept('concept_incorporated_state','$concept_incorporated_states$')]#!" # todo: NEW TRANSLATION
- WARGOAL_CONTESTATION_CONTROL_HALF_TARGET_COUNTRY_STATES: "#indent_newline:3 $TAB$$EFFECT_LIST_BULLET$[COUNTRY.GetName] a jeho [Concept('concept_ally','spojenci')] mají $concept_control_war_goal_short$ alespoň #v 50%#! z [TARGET_COUNTRY.GetAdjective] [Concept('concept_incorporated_state','$concept_incorporated_states$')]#!" # todo: NEW TRANSLATION
- WARGOAL_CONTESTATION_CONTROL_ALL_CLAIMED_STATES: "#indent_newline:3 $TAB$$EFFECT_LIST_BULLET$[COUNTRY.GetName] a jeho [Concept('concept_ally','spojenci')] udrží $concept_control_war_goal_short$ všech [COUNTRY.GetAdjective] [Concept('concept_state','států')] [Concept('concept_claim','$concept_claimed$')] nárokovaných [TARGET_COUNTRY.GetName] ($LIST$)#!" # todo: CONCEPT CASE
+ WARGOAL_CONTESTATION_CONTROL_HALF_OWN_STATES: "#indent_newline:3 $TAB$$EFFECT_LIST_BULLET$[COUNTRY.GetName] a jeho [Concept('concept_ally','spojenci')] si udržují $concept_control_war_goal_short$ alespoň #v 50%#! z [COUNTRY.GetAdjective] [Concept('concept_incorporated_state','$concept_incorporated_states$')|l]#!" # todo: NEW TRANSLATION
+ WARGOAL_CONTESTATION_CONTROL_HALF_TARGET_COUNTRY_STATES: "#indent_newline:3 $TAB$$EFFECT_LIST_BULLET$[COUNTRY.GetName] a jeho [Concept('concept_ally','spojenci')] mají $concept_control_war_goal_short$ alespoň #v 50%#! z [TARGET_COUNTRY.GetAdjective] [Concept('concept_incorporated_state','$concept_incorporated_states$')|l]#!" # todo: NEW TRANSLATION
+ WARGOAL_CONTESTATION_CONTROL_ALL_CLAIMED_STATES: "#indent_newline:3 $TAB$$EFFECT_LIST_BULLET$[COUNTRY.GetName] a jeho [Concept('concept_ally','spojenci')] udrží $concept_control_war_goal_short$ všech [COUNTRY.GetAdjective] [Concept('concept_state','států')] [Concept('concept_claim','$concept_claimed$')|l] nárokovaných [TARGET_COUNTRY.GetName] ($LIST$)#!" # todo: CONCEPT CASE
  WARGOAL_CONTESTATION_CONTROL_ANY_RELEASABLE_STATE: "#indent_newline:3 $TAB$$EFFECT_LIST_BULLET$[COUNTRY.GetName] a jeho [Concept('concept_ally','spojenci')] $concept_control_war_goal_short$ alespoň jeden [TARGET_COUNTRY.GetAdjective] [Concept('concept_state','stát')], který lze uvolnit jako součást [COUNTRY_CREATION.GetName] ($LIST$)#!"
  TOOLTIP_COUNTRY: "#BOLD #V [GetPlayer.GetName]#!#!"
  TOOLTIP_COUNTRY_DELAYED: "\n$TOOLTIP_DELIMITER$\nKultury: #VARIABLE [GetPlayer.GetPrimaryCulturesDesc]#!\nNáboženství: #VARIABLE [GetPlayer.GetStateReligion.GetName]#!\nHlavní město: #VARIABLE [GetPlayer.GetCapital.GetName]#!\n\n[concept_country_desc]"
@@ -4917,7 +4917,7 @@
  DEATHS_FROM_SOL: "#v $VAL|D-=0$#! z [Concept('concept_sol','životního standardu')]" #Z [concept_sol]: #variable $VAL|-=0$#! # todo: CONCEPT CASE
  LITERACY_GROWTH: "#indent_newline:3 #title $VALUE|<+=%$ růst [Concept('concept_literacy','gramotnost')] za týden#!" # todo: NEW TRANSLATION
  LITERACY_DECLINE: "[Concept('concept_literacy','Gramotnost')] se bude postupně snižovat směrem k [Concept('concept_education_access','přístupu k vzdělání')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- CURRENTLITERACY: "$VAL|1*v$ [Concept('concept_literacy','gramotný')] [Concept('concept_individual','jednotlivců')] z celkového [Concept('concept_pop','$concept_population$')]\n$RATE|%2v$ $TRENDARROW$ míra [Concept('concept_literacy','gramotnost')]" #Gramotní členové celkové populace [concept_pop]: $VAL|1*v$\nMíra gramotnosti: $RATE|%2v$ $TRENDARROW$ # todo: CONCEPT CASE
+ CURRENTLITERACY: "$VAL|1*v$ [Concept('concept_literacy','gramotný')] [Concept('concept_individual','jednotlivců')] z celkového [Concept('concept_pop','$concept_population$')|l]\n$RATE|%2v$ $TRENDARROW$ míra [Concept('concept_literacy','gramotnost')]" #Gramotní členové celkové populace [concept_pop]: $VAL|1*v$\nMíra gramotnosti: $RATE|%2v$ $TRENDARROW$ # todo: CONCEPT CASE
  POP_ASSIMILATION: "#header [Concept('concept_assimilation','Asimilace')] z [Pop.GetCulture.GetName] do [CULTURE.GetName]#!\n@population! #v $TOTAL_ASSIMILATED_POPS|v0$#! [Concept('concept_individual','jednotlivců')] za měsíc\n$TOOLTIP_DELIMITER$\n#title Za tímto stojí:#! #indent_newline:3 \n@population! [Pop.GetTotalSize|Dv] celkem $concept_population$\n$BASE_RATE|v3%$ základní míra [Concept('concept_assimilation','asimilace')] [ConcatIfNeitherEmpty('\n','$MODIFIER_DESC$')]\nJelikož [Pop.GetName] mají dostatečně vysokou úroveň [Concept('concept_acceptance','přijetí')], žijí v [Concept('concept_incorporated_state','začleněném státě')] a nepovažují [Pop.GetState.GetName] za [Concept('concept_homeland','domovinu')], dochází k jejich $concept_assimilating$ do [CULTURE.GetName] $concept_culture$, protože jde o nejpřijatelnější $concept_culture$, se kterou sdílejí [Concept('concept_heritage_trait','rys původu')] v místě svého pobytu.#!" # todo: CONCEPT CASE
  POP_CONVERSION: "#header [Concept('concept_conversion','Konverze')] z [Pop.GetReligion.GetName] na [RELIGION.GetName]#!\n#v $TOTAL_CONVERTED_POPS|v0$#! [Concept('concept_individual','jednotlivců')] za měsíc\n$TOOLTIP_DELIMITER$\n#title Za tímto stojí:#! #indent_newline:3 \n@population! [Pop.GetTotalSize|Dv] $POPULATION$\n$TAB$$BASE_RATE|v3%$ základní míra [Concept('concept_conversion','konverze')][ConcatIfNeitherEmpty('\n','$MODIFIER_DESC$')]\n[RELIGION.GetName] je vybráno, protože je to nejvíce [Concept('concept_acceptance','akceptováno')] [Concept('concept_religion','náboženství')] v [Pop.GetState.GetName]" # todo: CONCEPT CASE
  POP_ASSIMILATION_RADICALS: "#v x$FACTOR|2$#! násobitel základní míry [Concept('concept_assimilation','asimilace')] kvůli #v $RADICALS_FRACTION|%$#! [Concept('concept_radical','radikálů')]\n" # todo: CONCEPT CASE
@@ -5039,11 +5039,11 @@
  JOB_SATISFACTION_PER_PERCENT_WAGE_RATE_ABOVE_NORMAL: "$VALUE|0+=$ z relativního rozdílu #variable $DIFF|1$%#! mezi [Concept('concept_building_wage','mzdou')] v [Pop.GetBuilding.GetName] (@money!$WORKPLACE_WAGE_RATE|v1$) a [Pop.GetCountry.GetName] (@money!$NORMAL_WAGE_RATE|v1$)" # todo: CONCEPT CASE
  JOB_SATISFACTION_DIVIDENDS: "$VALUE|0+=$ z poměru #variable $DIVIDENDS_WAGES_RATIO|0$%!# mezi vydělanými [Concept('concept_dividends','dividendami')] (@money!$POP_DIVIDENDS|v1$) a [Concept('concept_budget_wages','mzdami')] (@money!$POP_WAGES|v1$)" # todo: CONCEPT CASE
  JOB_SATISFACTION_LOSSES: "$VALUE|0+=$ z poměru #variable $LOSSES_WAGES_RATIO|0$%#! mezi ztrátami investic (@money!$POP_LOSSES|v1$) a [Concept('concept_budget_wages','mzdy')] (@money!$POP_WAGES|v1$)"
- JOB_SATISFACTION_FROM_CAN_AFFORD_EXPENSES: "$VALUE|0+=$ protože [Concept('concept_pop','populace')] si může dovolit své [Concept( 'concept_pop_income', '$concept_pop_income_expenses_short$' )] (@money!$EXPENSES|v1$) se svými současnými [Concept( 'concept_pop_income', '$concept_pop_income_short$')] (@money!$INCOME|v1$)"
- JOB_SATISFACTION_FROM_CAN_BARELY_AFFORD_EXPENSES: "$VALUE|0+=$ protože [Concept('concept_pop','populace')] sotva zvládá své [Concept( 'concept_pop_income', '$concept_pop_income_expenses_short$' )]"
- JOB_SATISFACTION_FROM_CANNOT_AFFORD_EXPENSES: "$VALUE|0+=$ protože [Concept('concept_pop','populace')] si nemůže dovolit své [Concept( 'concept_pop_income', '$concept_pop_income_expenses_short$' )] (@money!$EXPENSES|v1$) s aktuálním [Concept( 'concept_pop_income', '$concept_pop_income_short$')] (@money!$INCOME|v1$)"
+ JOB_SATISFACTION_FROM_CAN_AFFORD_EXPENSES: "$VALUE|0+=$ protože [Concept('concept_pop','populace')] si může dovolit své [Concept( 'concept_pop_income', '$concept_pop_income_expenses_short$' )|l] (@money!$EXPENSES|v1$) se svými současnými [Concept( 'concept_pop_income', '$concept_pop_income_short$')|l] (@money!$INCOME|v1$)"
+ JOB_SATISFACTION_FROM_CAN_BARELY_AFFORD_EXPENSES: "$VALUE|0+=$ protože [Concept('concept_pop','populace')] sotva zvládá své [Concept( 'concept_pop_income', '$concept_pop_income_expenses_short$' )|l]"
+ JOB_SATISFACTION_FROM_CANNOT_AFFORD_EXPENSES: "$VALUE|0+=$ protože [Concept('concept_pop','populace')] si nemůže dovolit své [Concept( 'concept_pop_income', '$concept_pop_income_expenses_short$' )|l] (@money!$EXPENSES|v1$) s aktuálním [Concept( 'concept_pop_income', '$concept_pop_income_short$')|l] (@money!$INCOME|v1$)"
  JOB_SATISFACTION_PER_PERCENT_HIGHER_SOL_QUALIFICATION: "$VALUE|0+=$ protože $RATIO|%v1$ [Concept('concept_pop_qualifications','kvalifikovat')] pro pracovní místa s vyšším základním [Concept('concept_sol','životním standardem')] než aktuální (#tooltippable #tooltip:[Pop.GetTooltipTag],TOOLTIP_POP_QOL [LabelingHelper.GetLabelForStandardOfLiving(Pop.GetCurrentStandardOfLiving)|v] ([Pop.GetCurrentStandardOfLiving|v])#!#!)" # todo: CONCEPT CASE
- JOB_SATISFACTION_FROM_EMPLOYMENT: "$VALUE|0+=$ za [Concept('concept_employment' ,'$concept_employed$')] s $ATTRACTIVENESS|%v0$ $building_job_attractiveness_mult$"
+ JOB_SATISFACTION_FROM_EMPLOYMENT: "$VALUE|0+=$ za [Concept('concept_employment' ,'$concept_employed$')|l] s $ATTRACTIVENESS|%v0$ $building_job_attractiveness_mult$"
  JOB_SATISFACTION_GOVERNMENT: "$VALUE|0+=$ za vybírání platu ve vládě"
  GROWTH_RATE_BREAKDOWN: "#header Růstová míra#!\n[Pop.GetPopGrowthDesc]"
  TOOLTIP_POP_EXPECTED_SOL: "#header Minimální očekávaná [Concept('concept_sol','životní standard')]#!\nCelkem: [Pop.GetExpectedStandardOfLiving]\n$TOOLTIP_DELIMITER$\n[Pop.GetExpectedStandardOfLivingDesc]"
@@ -5899,7 +5899,7 @@
  COMMANDER_ORDER_NAVAL_REPAIRING: "#N $ADMIRAL_REPAIRING_DATE$#!"
  COMMANDER_ORDER_NAVAL_NEED_GENERAL: "#N [Country.GetName] nemá žádného [Concept('concept_general','generála')] v pobřežním [Concept('concept_hq','HQ')] s jednotkami, aby provedl námořní invazi#!" # todo: CONCEPT CASE
  COMMANDER_ORDER_NAVAL_GENERAL_NOT_COASTAL: "#N [Concept('concept_general','Generál')] musí být umístěn v přímořském [Concept('concept_hq','HQ')] aby provedl námořní invazi#!"
- COMMANDER_ORDER_NAVAL_GENERAL_NO_TROOPS: "#N [Concept('concept_general','Generál')] nemá žádné [Concept( 'concept_battalion', '$concept_battalions$')] k provedení námořní invaze#!"
+ COMMANDER_ORDER_NAVAL_GENERAL_NO_TROOPS: "#N [Concept('concept_general','Generál')] nemá žádné [Concept( 'concept_battalion', '$concept_battalions$')|l] k provedení námořní invaze#!"
  COMMANDER_ORDER_POWER_PROJECTION_ALREADY_PRESENT: "#N Již přítomno v [STRATEGIC_REGION.GetName], což automaticky generuje [Concept('concept_interest','zájem')] tam.#!"
  COMMANDER_ORDER_POWER_PROJECTION_NOT_ADJACENT: "#N Není sousední #variable [Concept('concept_strategic_region','strategický region')]#!"
  COMMANDER_ORDER_ADVANCE_FRONT_FAIL_NOT_PARTICIPATING: "#N [Country.GetName] se nezúčastňuje [Front.GetName]#!"
@@ -5931,7 +5931,7 @@
  GOODS_PANEL_PRICE_RIGHT_NOW: "#variable [Goods.GetMarketPriceWithTooltip|1]#!"
  GOODS_PANEL_PRICE_COMPARE: "#v [Goods.GetPercentageDeltaAgainstBasePrice(Goods.GetMarketPrice)|%0=-]#! v porovnání s [Concept('concept_base_price','základní cenou')]\nTržní zůstatek: #variable [Goods.GetMarketBuyAndSellOrdersBalance|=D+]#!" # todo: CONCEPT CASE
  GOODS_LOCAL_PRICE_DIFF_AND_MARKET_PRICE_SHARE: "$GOODS_LOCAL_PRICE_DIFF$$GOODS_STATE_PANEL_PRICE_MARKET_SHARE$"
- GOODS_LOCAL_PRICE_DIFF: "[Goods.GetStateToMarketPriceDiff|%0=-] v [Goods.GetState.GetName] ve srovnání s [Goods.GetMarket.GetName] [Concept('concept_market_price', '$MARKET_PRICE$')]\n"
+ GOODS_LOCAL_PRICE_DIFF: "[Goods.GetStateToMarketPriceDiff|%0=-] v [Goods.GetState.GetName] ve srovnání s [Goods.GetMarket.GetName] [Concept('concept_market_price', '$MARKET_PRICE$')|l]\n"
  SOLD_BY: "#title Prodáno od#!"
  BOUGHT_BY: "#title Koupil(a)#!"
  PRODUCED_BY: "Vyrobeno"
@@ -6193,13 +6193,13 @@
  UPRISING_PROGRESS_TOOLTIP_STATE_ENTRY_GUARANTEED: "$TAB$[STATE.GetName]"
  UPRISING_PROGRESS_TOOLTIP_STATE_ENTRY_UNIT: "$ICON$ $VALUE|v$"
  UPRISING_PROGRESS_TOOLTIP_NUM_UNITS: "Podpořeno @battalions!$ARMY_UNITS|v$, @conscripts!$POTENTIAL_CONSCRIPTS|v$ a @flotillas!$NAVY_UNITS|v$"
- UPRISING_PROGRESS_TOOLTIP_CIVIL_WAR_CONSCRIPTION_RATE: "Bude moci vychovat další @conscripts!$NUM_UNITS|v$ díky $CONSCRIPTION_RATE|=v%$ [Concept('concept_conscription_center','$concept_conscription$')] míře z populační podpory a [Concept('concept_insurrection','vzpouřenecké')] [Concept('concept_interest_group','zájmová skupina')] [Concept('concept_clout','politický vliv')]"
+ UPRISING_PROGRESS_TOOLTIP_CIVIL_WAR_CONSCRIPTION_RATE: "Bude moci vychovat další @conscripts!$NUM_UNITS|v$ díky $CONSCRIPTION_RATE|=v%$ [Concept('concept_conscription_center','$concept_conscription$')|l] míře z populační podpory a [Concept('concept_insurrection','vzpouřenecké')] [Concept('concept_interest_group','zájmová skupina')] [Concept('concept_clout','politický vliv')]"
  CIVIL_WAR_MAX_PROGRESS_BREAKDOWN: "Maximální pokrok je #v $TOTAL_MAX|%0$#! kvůli: #indent_newline:3 \n$POLITICAL_MOVEMENT_RADICALISM_WITH_LABEL$"
  CIVIL_WAR_MAX_UNSUPPORTED_PROGRESS: "Tato revoluce nemůže udržovat pokrok nad [Multiply_CFixedPoint('(CFixedPoint)$PROGRESS_LIMIT$','(CFixedPoint)100')|0v], protože [Concept('concept_political_movement','politické hnutí')] postrádá podporu od [Concept('concept_interest_group','zájmové skupiny')]." # todo: CONCEPT CASE
  CIVIL_WAR_PROGRESS_AT_MAX_PROGRESS: "#header Týdenní pokrok\n$TOOLTIP_DELIMITER$\n[Concept('concept_revolution','Revoluce')] je na aktuálním maximálním pokroku #tooltippable #tooltip:$BREAKDOWN_TAG$ [Multiply_CFixedPoint('(CFixedPoint)$MAX_PROGRESS$','(CFixedPoint)100')|0]#!#!"
  CIVIL_WAR_PROGRESS_ABOVE_MAX_PROGRESS: "#header Týdenní pokrok\n$TOOLTIP_DELIMITER$\n[Concept('concept_revolution','Revoluce')] je nad maximálním pokrokem #tooltippable #tooltip:$BREAKDOWN_TAG$ [Multiply_CFixedPoint('(CFixedPoint)$MAX_PROGRESS$','(CFixedPoint)100')|0]#!#!"
  CIVIL_WAR_PROGRESS_AT_CHECKPOINT_TOOLTIP: "#header [Concept('concept_revolution','Revoluce')] Pokrok#!\n$PROGRESS|=%-1$ na další kontrolní bod\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
- CIVIL_WAR_PROGRESS_AT_CHECKPOINT_FROM_RADICALISM: "#v $PROGRESS|=%-1$#! z [Concept( 'concept_radical', '$concept_radicalism$' )]"
+ CIVIL_WAR_PROGRESS_AT_CHECKPOINT_FROM_RADICALISM: "#v $PROGRESS|=%-1$#! z [Concept( 'concept_radical', '$concept_radicalism$' )|l]"
  CIVIL_WAR_PROGRESS_AT_CHECKPOINT_NEAR_CAP: "\nTento [Concept('concept_political_movement','hnutí')] nemůže pokročit za $MAX_PROGRESS|%0v$ (aktuálně na $PROGRESS|1%v$) a pokrok na dalším kontrolním bodu je proto snížen na $MAX_DELTA|=%-1$"
  REVOLUTIONS_UPRISING_HEADER_LOYALIST: "Odpíráme [CivilWar.GetUprisingCountry.GetName]!"
  REVOLUTIONS_UPRISING_HEADER_REBEL: "Odpůrcové [CivilWar.GetOriginCountry.GetName]!"
@@ -6282,8 +6282,8 @@
  IG_LAW_CHANGES_HEADER: "#title Změny zákonů#!"
  IG_OTHER_FACTORS_HEADER: "#title Jiné faktory#!"
  IG_LOBBY_APPEASEMENT: "$VALUE|=+$ z [POLITICAL_LOBBY.GetName] $concept_political_lobby_appeasement$"
- IG_APPROVAL_FROM_APPEASEMENT: "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VALUE|=+$#!#! z [Concept('concept_political_lobby_appeasement','vyhovění')] [Concept('concept_political_lobby','$concept_political_lobbies$')]"
- IG_LOBBY_APPEASEMENT_NUM_LOBBIES_MULTIPLIER: "Násobeno #v x$MULTIPLIER$#! protože jsou součástí $NUM_LOBBIES|v$ [Concept('concept_political_lobby','$concept_political_lobbies$')]"
+ IG_APPROVAL_FROM_APPEASEMENT: "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VALUE|=+$#!#! z [Concept('concept_political_lobby_appeasement','vyhovění')] [Concept('concept_political_lobby','$concept_political_lobbies$')|l]"
+ IG_LOBBY_APPEASEMENT_NUM_LOBBIES_MULTIPLIER: "Násobeno #v x$MULTIPLIER$#! protože jsou součástí $NUM_LOBBIES|v$ [Concept('concept_political_lobby','$concept_political_lobbies$')|l]"
  IS_SUPPRESSED_ATTRACTION: "[Concept('concept_suppress','Potlačeno')]: #variable $VAL|+=%0$#!"
  IS_BOLSTERED_ATTRACTION: "[Concept('concept_bolster','Posíleno')]: #variable $VAL|+=%0$#!"
  PEOPLE_ABROAD_TOOLTIP: "#BOLD #V Nezařazená populace#!#!\n$TOOLTIP_DELIMITER$\n$ABROAD_POP_CONCEPT$"
@@ -6667,7 +6667,7 @@
  notification_country_nationalized_building_no_compensation_desc: "[SCOPE.GetRootScope.GetBuilding.GetState.GetCountry.GetName] [Concept('concept_nationalize','znárodněné')] [SCOPE.GetRootScope.GetBuilding.GetName] v [SCOPE.GetRootScope.GetBuilding.GetState.GetName] bez vyplacení peněžní náhrady\n\nJejich jednání snížilo naše vzájemné vztahy o [SCOPE.GetValue('relations')|=+0]"
  notification_country_nationalized_building_no_compensation_tooltip: "$notification_nationalized_building_notification_name$\n$notification_nationalized_building_notification_desc$"
  notification_building_destroyed_by_bombardment_name: "[SCOPE.GetRootScope.GetBuilding.GetName] zničeno [GetNavalMissionType('naval_mission_type_port_bombardment').GetName]" # todo: NEW TRANSLATION
- notification_building_destroyed_by_bombardment_desc: "Úroveň [SCOPE.GetRootScope.GetBuilding.GetName], [Concept('concept_coastal_building','$concept_coastal_building$')] v [SCOPE.GetRootScope.GetBuilding.GetState.GetName], byla zničena [Concept('concept_fleet','$concept_fleet$')], která prováděla [GetNavalMissionType('naval_mission_type_port_bombardment').GetName]." # todo: NEW TRANSLATION
+ notification_building_destroyed_by_bombardment_desc: "Úroveň [SCOPE.GetRootScope.GetBuilding.GetName], [Concept('concept_coastal_building','$concept_coastal_building$')|l] v [SCOPE.GetRootScope.GetBuilding.GetState.GetName], byla zničena [Concept('concept_fleet','$concept_fleet$')|l], která prováděla [GetNavalMissionType('naval_mission_type_port_bombardment').GetName]." # todo: NEW TRANSLATION
  notification_fleet_defeated_name: "[SCOPE.GetRootScope.GetMilitaryFormation.GetName] poražen"
  notification_fleet_defeated_desc: "[SCOPE.GetRootScope.GetMilitaryFormation.GetName] se musí vrátit do [SCOPE.sHQ('hq').GetName]."
  notification_fleet_defeated_tooltip: "$notification_fleet_defeated_notification_name$\n$notification_fleet_defeated_notification_desc$"
@@ -6800,7 +6800,7 @@
  MOVE_MARKET_CAPITAL_ALREADY_MOVED_RECENTLY: "#N Nedávno jsme změnili naše [Concept('concept_market_capital','hlavní centrum trhu')] a nemůžeme to znovu změnit, dokud $DATE|v$#!"
  MOVE_MARKET_CAPITAL_IS_ALREADY_CAPITAL: "#N [STATE.GetName] je již naším [Concept('concept_market_capital','hlavním centrem trhu')]#!" # todo: CONCEPT CASE
  MOVE_MARKET_CAPITAL_NOT_INCORPORATED: "#N Lze udělat [Concept('concept_incorporated_state','začleněný stát')] pouze na [Concept('concept_market_capital','hlavní centrum trhu')]#!"
- MOVE_MARKET_CAPITAL_NOT_MARKET_OWNER: "#N Jsme součástí jiného [Concept('concept_country','$concept_country_possessive$')] [Concept('concept_market','trhu')] a nemůžeme přesunout [Concept('concept_market_capital','hlavní centrum trhu')]#!" # todo: CONCEPT CASE
+ MOVE_MARKET_CAPITAL_NOT_MARKET_OWNER: "#N Jsme součástí jiného [Concept('concept_country','$concept_country_possessive$')|l] [Concept('concept_market','trhu')] a nemůžeme přesunout [Concept('concept_market_capital','hlavní centrum trhu')]#!" # todo: CONCEPT CASE
  INCORPORATE_STATE_NO_NEIGHBOUR: "Můžete začlenit pouze stát sousedící s již začleněným státem"
  INCORPORATE_STATE_COLONY_NOT_FINISHED: "Nelze začlenit [Concept('concept_colony','kolonie')], dokud stále roste"
  INCORPORATE_STATE_ALREADY_INCORPORATED: "Již začleněno"
@@ -6917,7 +6917,7 @@
  TREATY_ENFORCED_ON_COUNTRY_CANNOT_RENEGOTIATE: "Tato smlouva je vynucována na [Country.GetName], takže ji nelze znovu vyjednávat."
  TREATY_PROPOSAL_ALREADY_PENDING_WITH_COUNTRY: "[Country.GetName] již zvažuje návrh smlouvy od nás."
  TREATY_PROPOSAL_PENDING_FROM_COUNTRY: "[Country.GetName] má čekající návrh [Concept('concept_treaty','smlouva')], na který je třeba nejprve odpovědět." # todo: NEW TRANSLATION
- TREATY_PROPOSAL_DUPLICATE_TREATY: "S [Country.GetName] už máme [concept_treaty], který obsahuje stejné [Concept('concept_article','$concept_articles$')]." # todo: NEW TRANSLATION
+ TREATY_PROPOSAL_DUPLICATE_TREATY: "S [Country.GetName] už máme [concept_treaty], který obsahuje stejné [Concept('concept_article','$concept_articles$')|l]." # todo: NEW TRANSLATION
  TREATY_PROPOSAL_RENEGOTIATED_TREATY_INVALID: "Ten [concept_treaty], na němž byla tato renegociace s [Country.GetName] založena, už není v platnosti." # todo: NEW TRANSLATION
  TREATY_PROPOSAL_NO_BINDING_PERIOD: "Přidejte [Concept('concept_binding_period','závazné období')|l]"
  BUILD_URBAN_BUILDING: "Vybudovat novou městskou budovu\nTato akce má #v [StatesPanel.AccessState.GetNumConstructableUrbanBuildings|+]#! platné cíle"
@@ -7525,7 +7525,7 @@
  INTEREST_GROUP_AMENABILITY_FACTORS_TT: "#header [Concept('concept_amenability','Ochota')] pro [InterestGroup.GetName]#!\n@amenability![Nbsp][InterestGroup.GetAmenabilityLabel] aktuálně\n$TOOLTIP_DELIMITER$\n#title Způsobeno:#! #indent_newline:3 \n[InterestGroup.MakeScope.GetScriptValueDesc('amenability')]#!"
  NEGOTIATE_LAW_OUTCOME_EFFECTS: "#title Pokud bude úspěšné:#! #indent_newline:3 \n[SelectLocalization(InterestGroup.IsOpposingLawEnactment(Law.Self), 'NEGOTIATE_LAW_STALL_CHANCE_DECREASE', 'NEGOTIATE_LAW_SUCCESS_CHANCE_INCREASE')]#!"
  NEGOTIATE_LAW_OPPOSING_INTEREST_GROUP: "• [InterestGroup.GetName] se stává @indifferent! [Concept('concept_endorse_oppose','lhostejným')]\n$NEGOTIATE_LAW_STALL_CHANCE_DECREASE$" # todo: CONCEPT CASE
- NEGOTIATE_LAW_INDIFFERENT_INTEREST_GROUP: "• [InterestGroup.GetName] se stává @approves! [Concept('concept_endorse_oppose', '$concept_endorsing$')]\n$NEGOTIATE_LAW_SUCCESS_CHANCE_INCREASE$"
+ NEGOTIATE_LAW_INDIFFERENT_INTEREST_GROUP: "• [InterestGroup.GetName] se stává @approves! [Concept('concept_endorse_oppose', '$concept_endorsing$')|l]\n$NEGOTIATE_LAW_SUCCESS_CHANCE_INCREASE$"
  NEGOTIATE_LAW_SUCCESS_CHANCE_INCREASE: "• [Concept('concept_enactment_success','Úspěch')] šance se zvyšuje o #g [InterestGroup.MakeScope.ScriptValue('law_enactment_change')|=0%]#!"
  NEGOTIATE_LAW_STALL_CHANCE_DECREASE: "• [Concept('concept_enactment_stall','Obstrukce')] šance se snižuje o #g -[InterestGroup.MakeScope.ScriptValue('law_enactment_change')|0%]#!"
  NEGOTIATE_BUTTON_TOOLTIP: "#header [Concept('concept_negotiation','Vyjednávat')] [Law.GetName] s [Concept('concept_interest_group','zájmovou skupinou')]#!\n#v [GetPlayer.GetNumAvailableNegotiations|0+]#! k dispozici $concept_interest_groups$" # todo: CONCEPT CASE
@@ -7570,7 +7570,7 @@
  CHECKPOINT_DEBATE_CHANCE_BREAKDOWN_DUE_TO: "\n$TOOLTIP_DELIMITER$\n#title Toto je kvůli:#!\n[Law.GetCheckpointDebateBreakdown]"
  CHECKPOINT_STALL_CHANCE_BREAKDOWN: "#header [Concept( 'concept_enactment_stall', '$concept_enactment_stall_short$' )] Šance#!\nAktuálně: #v [Law.GetCheckpointStallChance|-%1]#![AddLocalizationIf(Not(StringIsEmpty(Law.GetCheckpointStallBreakdown)), 'CHECKPOINT_STALL_CHANCE_BREAKDOWN_DUE_TO')]"
  CHECKPOINT_STALL_CHANCE_BREAKDOWN_DUE_TO: "\n$TOOLTIP_DELIMITER$\n#title To je kvůli:#!\n[Law.GetCheckpointStallBreakdown]"
- ENACTMENT_SUPPORTING_IGS_BREAKDOWN_HEADER: "Z [Concept('concept_endorse_oppose','$concept_endorsing$')] [Concept('concept_interest_group','zájmové skupiny')] [Concept('concept_in_government','ve vládě')]:"
+ ENACTMENT_SUPPORTING_IGS_BREAKDOWN_HEADER: "Z [Concept('concept_endorse_oppose','$concept_endorsing$')|l] [Concept('concept_interest_group','zájmové skupiny')] [Concept('concept_in_government','ve vládě')]:"
  ENACTMENT_SUPPORTING_IGS_BREAKDOWN_ITEM: "$TAB$[InterestGroup.GetName]: [InterestGroup.GetClout|=v%1]"
  ENACTMENT_OPPOSING_IGS_BREAKDOWN_HEADER: "Z opačných [Concept('concept_interest_group','zájmové skupiny')] s nízkým [Concept('concept_approval','spokojeností')]:" # todo: CONCEPT CASE
  ENACTMENT_OPPOSING_IGS_BREAKDOWN_ITEM: "$TAB$[InterestGroup.GetName]: $VALUE|=v%1$ (#v x$MULTIPLIER|1$#! z $APPROVAL_RATING$)"
@@ -7613,7 +7613,7 @@
  LAW_NO_EFFECT: "#italic Žádný efekt#!\n"
  CANCEL_ENACTMENT_BUTTON: "Zrušit uzákonění"
  ENACT: "Uzákonit"
- ENACT_LAW: "#b Uzákonit#! s #v #tooltippable #tooltip:[Law.GetTooltipTag],CHECKPOINT_SUCCESS_CHANCE_BREAKDOWN [Law.GetCheckpointSuccessChance|+0%]#!#!#! [Concept( 'concept_enactment_success', '$concept_enactment_success_short$' )] šance a #tooltippable #tooltip:[Law.GetTooltipTag],CHECKPOINT_STALL_CHANCE_BREAKDOWN [Law.GetCheckpointStallChance|v0%]#!#! [Concept( 'concept_enactment_stall', '$concept_enactment_stall_short$' )] šance při prvním kontrolním bodu"
+ ENACT_LAW: "#b Uzákonit#! s #v #tooltippable #tooltip:[Law.GetTooltipTag],CHECKPOINT_SUCCESS_CHANCE_BREAKDOWN [Law.GetCheckpointSuccessChance|+0%]#!#!#! [Concept( 'concept_enactment_success', '$concept_enactment_success_short$' )|l] šance a #tooltippable #tooltip:[Law.GetTooltipTag],CHECKPOINT_STALL_CHANCE_BREAKDOWN [Law.GetCheckpointStallChance|v0%]#!#! [Concept( 'concept_enactment_stall', '$concept_enactment_stall_short$' )|l] šance při prvním kontrolním bodu"
  ENACT_LAW_CHANCES_HEADER: "#title Při prvním kontrolním bodě:#!"
  ENACT_LAW_SUCCESS_CHANCE: "@green_checkmark! #v [Law.GetCheckpointSuccessChance|+0%]#!"
  ENACT_LAW_STALL_CHANCE: "@red_cross! #v [Law.GetCheckpointStallChance|-0%]#!"
@@ -8348,8 +8348,8 @@
  SUBJECT_TYPE_UNIFICATION_HEADER_TOOLTIP: "#header $concept_unification$#!\nPokud [Concept('concept_subject_type','typ závislé země')] podpoří svého [Concept('concept_overlord','vládce')] v [Concept('concept_nation_formation','vytvoření národa')] nebo [Concept('concept_unification','sjednocení země')] procesu"
  SUBJECT_TYPE_INCOME_TRANSFER_HEADER_TOOLTIP: "#header Příjem z transferu na [Concept('concept_overlord','vládce')]#!\nVětšina [Concept('concept_subject_type','typů závislých zemí')] platí část svých [Concept('concept_taxes','daní')], [Concept('concept_budget_minting','ražby mincí')] a další příjmy [Concept('concept_government','vláda')] svému $concept_overlord$, ale #b ne#! z [Concept('concept_tariffs','cel')], převodů [Concept('concept_investment_pool','investičního fondu')] nebo příjmů [Concept('concept_diplomatic_pact','diplomatického paktu')].." # todo: CONCEPT CASE
  SUBJECT_TYPE_CONVOY_CONTRIBUTION_HEADER_TOOLTIP: "#header Příspěvek @merchant_marine! #tooltippable_name #tooltip:[GetGoods('merchant_marine').GetTooltipTag],DATA_GOODS_NAME_TOOLTIP,GoodsTooltip [GetGoods('merchant_marine').GetCustom('GDS_G')|l]#!#! [Concept('concept_overlord','vládce')]#!\n[Concept('concept_subject','Závislé země')] dávají procento svýho @merchant_marine! #tooltippable_name #tooltip:[GetGoods('merchant_marine').GetTooltipTag],DATA_GOODS_NAME_TOOLTIP,GoodsTooltip [GetGoods('merchant_marine').GetCustom('GDS_G')|l]#!#! svému nadvládci, protože jsou vlastníky [Concept('concept_market','trhu')]."
- SUBJECT_TYPE_OVERLORD_TYPE_HEADER_TOOLTIP: "#header [Concept('concept_overlord','Vládce')] typ#!\nNěkteré [Concept('concept_subject_type','typy závislých zemí')] jsou možné pouze pro [Concept('concept_recognized_power','$concept_recognized_power_short$')] $concept_overlords$, zatímco jiné jsou možné pouze pro [Concept('concept_unrecognized_power','neuznaný')] $concept_overlords$. Nicméně některé mohou být možné pro oba $concept_recognized_power_short$ a $concept_unrecognized_power_short$ $concept_overlords$."
- SUBJECT_TYPE_AUTONOMOUS_TOOLTIP: "@green_checkmark! #header Autonomní#!\n[SubjectType.GetName] může začít a připojit se s [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] sám"
+ SUBJECT_TYPE_OVERLORD_TYPE_HEADER_TOOLTIP: "#header [Concept('concept_overlord','Vládce')] typ#!\nNěkteré [Concept('concept_subject_type','typy závislých zemí')] jsou možné pouze pro [Concept('concept_recognized_power','$concept_recognized_power_short$')|l] $concept_overlords$, zatímco jiné jsou možné pouze pro [Concept('concept_unrecognized_power','neuznaný')] $concept_overlords$. Nicméně některé mohou být možné pro oba $concept_recognized_power_short$ a $concept_unrecognized_power_short$ $concept_overlords$."
+ SUBJECT_TYPE_AUTONOMOUS_TOOLTIP: "@green_checkmark! #header Autonomní#!\n[SubjectType.GetName] může začít a připojit se s [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')|l] sám"
  SUBJECT_TYPE_AUTONOMOUS_NOT_TOOLTIP: "@red_cross! #header Neautonomní#!\n[SubjectType.GetName]#b nemůže#! zahájit a přidat se k [Concept('concept_diplomatic_play','diplomatickým hrám')] sám" # todo: CONCEPT CASE
  SUBJECT_TYPE_ANNEX_TOOLTIP: "#header Anektování#!\nSnížení [Concept('concept_autonomy','autonomie')] [SubjectType.GetName] by vedlo k #b Anektování#!"
  SUBJECT_TYPE_INDEPENDENCE_TOOLTIP: "#header Nezávislost#!\nZvýšení [Concept('concept_autonomy','autonomie')] [SubjectType.GetName] by vedlo k #b Nezávislosti#!"
@@ -8404,7 +8404,7 @@
  SORT_BY_AI_STANCE: "Třídit podle #b postoje AI#!" # todo: NEW TRANSLATION
  SORT_BY_MAREKT_PRICE: "Řadit podle [Concept('concept_market_price','tržní ceny')]" # todo: CONCEPT CASE
  SORT_BY_AMOUNT_CONSUMED: "Třídit podle množství [Concept('concept_good','zboží')] [Concept('concept_good_consumption','spotřebováno')]"
- SORT_BY_BUDGET_EXPENDITURE: "Třídit podle procenta [Concept('concept_pop', '$concept_pop_possessive$')] rozpočtu vynaloženého na každý [Concept('concept_good','zboží')]"
+ SORT_BY_BUDGET_EXPENDITURE: "Třídit podle procenta [Concept('concept_pop', '$concept_pop_possessive$')|l] rozpočtu vynaloženého na každý [Concept('concept_good','zboží')]"
  SORT_BY_BUILDING: "Třídit podle [Concept('concept_building','budovy')]" # todo: CONCEPT CASE
  SORT_BY_STATE: "Řadit podle [Concept('concept_state','státu')]" # todo: CONCEPT CASE
  SORT_BY_STATE_TRAITS: "Seřadit podle #b státních rysů#!"
@@ -8576,8 +8576,8 @@
  FILTERED_BUILDINGS: "Filtrující $concept_buildings$"
  INCORPORATION: "Včlenění"
  STATE_PIECHART_HEADER: "[Concept('concept_state','Stát')]"
- FILTERED_COUNTRY_OWNERSHIP_PIECHART: "#header #todo PRCAL-32931 ShareHolder.GetName AddTextIf(ShareHolder.GetCountry.IsLocalPlayer, '(you)')#!#!\n#todo BuildingBrowserPanel.GetFilteredOwnershipByShareholder(Shareholder.Self)|%v#! z [Concept('concept_ownership_share','$concept_ownership_shares$')] je vlastněných #todo ShareHolder.GetName AddTextIf(ShareHolder.GetCountry.IsLocalPlayer, '(you)')#!.\n\nOdpovídá aktuálním filtrům."
- FILTERED_OWNERSHIP_DISTRIBUTION_PIECHART: "#header #todo PRCAL-32931 Country.GetName PřidatTextIf(Country.IsLocalPlayer, '(ty)')#!#!\n#todo BuildingBrowserPanel.GetFilteredDistributionPercentageInCountry(Country.Self)|%v#! z [GetPlayer.GetAdjective] vlastněných [Concept('concept_building','budov')] [Concept('concept_ownership_share','$concept_ownership_shares$')] je v #todo Country.GetName#!.\n\nOdpovídá aktuálním filtrům." # todo: CONCEPT CASE
+ FILTERED_COUNTRY_OWNERSHIP_PIECHART: "#header #todo PRCAL-32931 ShareHolder.GetName AddTextIf(ShareHolder.GetCountry.IsLocalPlayer, '(you)')#!#!\n#todo BuildingBrowserPanel.GetFilteredOwnershipByShareholder(Shareholder.Self)|%v#! z [Concept('concept_ownership_share','$concept_ownership_shares$')|l] je vlastněných #todo ShareHolder.GetName AddTextIf(ShareHolder.GetCountry.IsLocalPlayer, '(you)')#!.\n\nOdpovídá aktuálním filtrům."
+ FILTERED_OWNERSHIP_DISTRIBUTION_PIECHART: "#header #todo PRCAL-32931 Country.GetName PřidatTextIf(Country.IsLocalPlayer, '(ty)')#!#!\n#todo BuildingBrowserPanel.GetFilteredDistributionPercentageInCountry(Country.Self)|%v#! z [GetPlayer.GetAdjective] vlastněných [Concept('concept_building','budov')] [Concept('concept_ownership_share','$concept_ownership_shares$')|l] je v #todo Country.GetName#!.\n\nOdpovídá aktuálním filtrům." # todo: CONCEPT CASE
  FILTERED_POP_TYPE_PIECHART: "#header [PopType.GetName]#!\n[PopBrowserPanel.GetFilteredTotalSizeForPopType(PopType.Self)|Dv] [PopType.GetName] [Concept('concept_pop','populace')] odpovídá aktuálním filtrům"
  FILTERED_RELIGION_PIECHART: "#header [Religion.GetName]#!\n[PopBrowserPanel.GetFilteredTotalSizeForReligion(Religion.Self)|Dv] [Religion.GetName] [Concept('concept_pop','populace')] odpovídá aktuálním filtrům"
  FILTERED_CULTURE_PIECHART: "#header [Culture.GetName]#!\n[PopBrowserPanel.GetFilteredTotalSizeForCulture(Culture.Self)|Dv] [Culture.GetName] [Concept('concept_pop','populace')] odpovídá aktuálním filtrům"
@@ -8649,12 +8649,12 @@
  IG_AGITATORS: "[Concept( 'concept_agitator', '$concept_agitators$' )]"
  AGITATOR: "[Concept('concept_agitator','Agitátor')]"
  NO_AGITATORS: "Žádní $concept_agitators$"
- NO_AGITATOR_IN_MOVEMENT: "Žádné podporující [Concept( 'concept_agitator', '$concept_agitators$' )]"
+ NO_AGITATOR_IN_MOVEMENT: "Žádné podporující [Concept( 'concept_agitator', '$concept_agitators$' )|l]"
  IG_LOBBIES: "[Concept('concept_political_lobby','Politické lobby')]" # todo: CONCEPT CASE
  AVAILABLE_AGITATOR_SLOTS: "Potenciál pro #tooltippable #tooltip:[GetRawTextTooltipTag(Country.GetModifier.GetTooltipFor('country_agitator_slots_add'))] [Country.GetEmptyAgitatorSlots|v]#!#! [SelectLocalization(EqualTo_int32(Country.GetEmptyAgitatorSlots, '(int32)1'), 'AGITATOR', 'IG_AGITATORS')]"
  NO_AVAILABLE_AGITATOR_SLOTS: "Všechny sloty [Concept('concept_agitator','agitátor')] jsou obsazeny"
- CANNOT_SUPPORT_AGITATORS: "Nelze podpořit žádné [Concept( 'concept_agitator', '$concept_agitators$' )]"
- CANNOT_SUPPORT_AGITATORS_TOOLTIP: "#r Nelze podpořit žádné [Concept( 'concept_agitator', '$concept_agitators$' )]#!\n@red_cross! [Concept('concept_revolution','Revoluční')] země nemohou mít $concept_agitators$"
+ CANNOT_SUPPORT_AGITATORS: "Nelze podpořit žádné [Concept( 'concept_agitator', '$concept_agitators$' )|l]"
+ CANNOT_SUPPORT_AGITATORS_TOOLTIP: "#r Nelze podpořit žádné [Concept( 'concept_agitator', '$concept_agitators$' )|l]#!\n@red_cross! [Concept('concept_revolution','Revoluční')] země nemohou mít $concept_agitators$"
  EXILED_AGITATORS: "Vyhnaní agitátoři"
  LOYALISTS_AND_RADICALS: "Loajalisté a Radikálové"
  LOYALISTS_AND_RADICALS_IN_COUNTRY: "[Concept('concept_loyalist','Loajalisté')] a [Concept('concept_radical','radikálové')] v [Country.GetAltAdjective('L')]"
@@ -8708,7 +8708,7 @@
  TOOLTIP_UNLOCK_MOBILIZATION_OPTION: "Odemkne $MOBILIZATION_OPTION$ ([Concept('concept_mobilization_option','mobilizační možnost')])"
  TOOLTIP_UNLOCK_COMPANY_TYPE: "Odemkne [CompanyType.GetName] ([Concept('concept_company','společnost')])"
  TOOLTIP_UNLOCK_STATE_TRAIT_COLONIZATION: "Umožňuje založení [Concept('concept_colony','kolonie')] v [Concept('concept_state','státech')] s [STATE_TRAIT.GetName]" # todo: CONCEPT CASE
- TOOLTIP_DISABLE_STATE_TRAIT: "Odstraní všechny účinky z [STATE_TRAIT.GetName] ve vašem vlastněném [Concept('concept_colony','$concept_colonies$')] ve [Concept('concept_state','státech')]" # todo: CONCEPT CASE
+ TOOLTIP_DISABLE_STATE_TRAIT: "Odstraní všechny účinky z [STATE_TRAIT.GetName] ve vašem vlastněném [Concept('concept_colony','$concept_colonies$')|l] ve [Concept('concept_state','státech')]" # todo: CONCEPT CASE
  TOOLTIP_UNLOCK_LAW_TYPE: "Odemkne $LAW$"
  TOOLTIP_UNLOCK_PARTY: "Odemkne $PARTY$"
  TOOLTIP_UNLOCK_DECREE: "Odemkne [DECREE_TYPE.GetName] ([Concept('concept_decree','dekret')])"
@@ -8989,7 +8989,7 @@
  COLONY_GROWTH_COLONIZATION_RIGHTS: "[Concept('concept_colonial_growth','Koloniální růst')] vynásobený x$MULT|1v$ kvůli [Concept('concept_colonization_rights','právům na kolonizaci')]" # todo: CONCEPT CASE
  COLONY_GROWTH_COMPANY_COLONIZATION: "[Concept('concept_colonial_growth','Koloniální růst')] násobeno x$MULT|1v$ díky kolonizaci státu podle listiny společnosti"
  COLONY_GROWTH_REGION_SIZE: "[Concept('concept_colonial_growth','Koloniální růst')] vynásobené x$MULT|1v$ kvůli $NUM_PROVINCES|v$ [Concept('concept_province','provincií')] v [StateRegion.GetName]" # todo: CONCEPT CASE
- COLONY_GROWTH_POPULATION_SIZE: "[Concept('concept_colonial_growth','Koloniální růst')] vynásobený x$MULT|1v$ díky $POPULATION|Dv$ [Concept('concept_pop','$concept_population$')] v příslušném [Concept('concept_state','státě')] v [StateRegion.GetName]" # todo: CONCEPT CASE
+ COLONY_GROWTH_POPULATION_SIZE: "[Concept('concept_colonial_growth','Koloniální růst')] vynásobený x$MULT|1v$ díky $POPULATION|Dv$ [Concept('concept_pop','$concept_population$')|l] v příslušném [Concept('concept_state','státě')] v [StateRegion.GetName]" # todo: CONCEPT CASE
  MOBILIZED_BATTALIONS_WITH_GENERAL_FULL_COUNT: "S [Concept('concept_general','generálem')]: @battalions!$TOTAL|v$" # todo: CONCEPT CASE
  MOBILIZED_BATTALIONS_WITH_GENERAL_NOT_FULL_COUNT: "S [Concept('concept_general','generálem')]: @battalions!$FULLY_MOBILIZED|v$/$TOTAL|v$" # todo: CONCEPT CASE
  TOTAL_FLOTILLAS: "Celkové flotily"
@@ -9130,7 +9130,7 @@
  notification_enactment_failed_desc: "Vašemu zákonodárnému sboru se nepodařilo schválit [SCOPE.GetRootScope.GetCountry.GetLawBeingEnacted.GetName]."
  notification_enactment_failed_tooltip: "#header $notification_enactment_failed_name$#!\n$notification_enactment_failed_desc$"
  notification_harvest_condition_started_in_country_name: "[Concept('concept_harvest_condition','Podmínky sklizně')] začali v [SCOPE.GetRootScope.GetCountry.GetAltAdjective('L')]" # todo: CONCEPT CASE
- notification_harvest_condition_started_in_country_desc: "[SCOPE.sHCA('area').GetRemainingDurationLabel] [SCOPE.sHCA('area').GetType.GetName] začalo v [SCOPE.sS('state').GetCountry.GetFlagTextIcon] [SCOPE.sS('state').GetName] ovlivňující [SCOPE.GetValue('num_states')|0v] vaší [Concept('concept_state', '$concept_states$')] s [Concept('concept_harvest_condition_intensity','intenzitou podmínek sklízně')] o intenzitě [SCOPE.GetValue('intensity')|1v]." # todo: CONCEPT CASE
+ notification_harvest_condition_started_in_country_desc: "[SCOPE.sHCA('area').GetRemainingDurationLabel] [SCOPE.sHCA('area').GetType.GetName] začalo v [SCOPE.sS('state').GetCountry.GetFlagTextIcon] [SCOPE.sS('state').GetName] ovlivňující [SCOPE.GetValue('num_states')|0v] vaší [Concept('concept_state', '$concept_states$')|l] s [Concept('concept_harvest_condition_intensity','intenzitou podmínek sklízně')] o intenzitě [SCOPE.GetValue('intensity')|1v]." # todo: CONCEPT CASE
  notification_harvest_condition_started_in_country_tooltip: "#header $notification_harvest_condition_started_in_country_name$#!\n$notification_harvest_condition_started_in_country_desc$"
  notification_harvest_condition_started_in_country_important_name: "$notification_harvest_condition_started_in_country_name$"
  notification_harvest_condition_started_in_country_important_desc: "$notification_harvest_condition_started_in_country_desc$"
@@ -9232,10 +9232,10 @@
  notification_political_lobby_disbanded_with_reason_desc: "Tato [SCOPE.sPoliticalLobby('political_lobby').GetName|v] se rozpadla, protože následující podmínky již nejsou pravdivé:\n[SCOPE.sPoliticalLobby('political_lobby').GetDisbandReasonDesc]"
  notification_political_lobby_disbanded_with_reason_tooltip: "#header $notification_political_lobby_disbanded_name$#!\n$TOOLTIP_DELIMITER$\n$notification_political_lobby_disbanded_desc$"
  notification_foreign_political_lobby_created_from_catalyst_name: "Zahraniční [Concept('concept_political_lobby','politické lobby')|l] vznikla"
- notification_foreign_political_lobby_created_from_catalyst_desc: "Po politické lobby [SCOPE.sPoliticalLobby('political_lobby').GetName|v] v [SCOPE.sPoliticalLobby('political_lobby').GetCountry.GetAltAdjective('L')] vzniklo v důsledku [SCOPE.sDiplomaticCatalyst('diplomatic_catalyst').GetDesc]\n\nNové [Concept('concept_political_lobby','$concept_political_lobby_short$')] se skládá z [SCOPE.sPoliticalLobby('political_lobby').GetMembersDesc]" # todo: CONCEPT CASE
+ notification_foreign_political_lobby_created_from_catalyst_desc: "Po politické lobby [SCOPE.sPoliticalLobby('political_lobby').GetName|v] v [SCOPE.sPoliticalLobby('political_lobby').GetCountry.GetAltAdjective('L')] vzniklo v důsledku [SCOPE.sDiplomaticCatalyst('diplomatic_catalyst').GetDesc]\n\nNové [Concept('concept_political_lobby','$concept_political_lobby_short$')|l] se skládá z [SCOPE.sPoliticalLobby('political_lobby').GetMembersDesc]" # todo: CONCEPT CASE
  notification_foreign_political_lobby_created_from_catalyst_tooltip: "#header $notification_foreign_political_lobby_created_from_catalyst_name$#!\n$notification_foreign_political_lobby_created_from_catalyst_desc$"
  notification_foreign_political_lobby_created_name: "Zahraniční [Concept('concept_political_lobby','politické lobby')|l] vytvořena"
- notification_foreign_political_lobby_created_desc: "Politická lobby [SCOPE.sPoliticalLobby('political_lobby').GetName|v] byla vytvořena v [SCOPE.sPoliticalLobby('political_lobby').GetCountry.GetAltAdjective('L')]\n\nNová [Concept('concept_political_lobby','$concept_political_lobby_short$')] se skládá z [SCOPE.sPoliticalLobby('political_lobby').GetMembersDesc]" # todo: CONCEPT CASE
+ notification_foreign_political_lobby_created_desc: "Politická lobby [SCOPE.sPoliticalLobby('political_lobby').GetName|v] byla vytvořena v [SCOPE.sPoliticalLobby('political_lobby').GetCountry.GetAltAdjective('L')]\n\nNová [Concept('concept_political_lobby','$concept_political_lobby_short$')|l] se skládá z [SCOPE.sPoliticalLobby('political_lobby').GetMembersDesc]" # todo: CONCEPT CASE
  notification_foreign_political_lobby_created_tooltip: "#header $notification_foreign_political_lobby_created_name$#!\n$notification_foreign_political_lobby_created_desc$"
  notification_foreign_political_lobby_disbanded_name: "Zahraniční [Concept('concept_political_lobby','politické lobby')|l] rozpuštěna"
  notification_foreign_political_lobby_disbanded_desc: "Politická lobby [SCOPE.sPoliticalLobby('political_lobby').GetName|v] v [SCOPE.sPoliticalLobby('political_lobby').GetCountry.GetAltAdjective('L')] byla rozpuštěna" # todo: CONCEPT CASE
@@ -9482,7 +9482,7 @@
  SUPPORT_WITHOUT_CONDITION: "Podpora bezpodmínečně"
  DIPLO_PLAY_TOTAL_SHIPS_BREAKDOWN: "#header [Concept('concept_ship','Lodě')] pro stranu [Country.GetAdjective]#!\n@ships! [DiplomaticPlay.GetTotalNumWarshipsForSide( Country.Self )|v] celkem\n$TOOLTIP_DELIMITER$\n[DiplomaticPlay.GetTotalNumWarshipsForSideBreakdown( Country.Self )]" # todo: NEW TRANSLATION
  DIPLO_PLAY_TOTAL_MOBILIZED_BATTALIONS_BREAKDOWN: "#header [Concept('concept_mobilize_battalion', '$concept_mobilize_battalion_mobilized$')] [Concept('concept_battalion','prapory')] pro [Country.GetAdjective] stranu#!\n@battalions!#v [DiplomaticPlay.GetTotalNumMobilizedBattalionsForSide( Country.Self )]#! celkem\n$TOOLTIP_DELIMITER$\n[DiplomaticPlay.GetTotalNumMobilizedBattalionsForSideBreakdown( Country.Self )]"
- DIPLO_PLAY_COUNTRY_BATTALIONS_BREAKDOWN: "[Country.GetName] má @battalions!#v [Country.GetBattalions]#! [Concept('concept_battalion','praporů')] (#v [Country.GetMobilizationRatio|0%]#! @mobilization! [Concept('concept_mobilize_battalion', '$concept_mobilize_battalion_mobilized$')])" # todo: CONCEPT CASE
+ DIPLO_PLAY_COUNTRY_BATTALIONS_BREAKDOWN: "[Country.GetName] má @battalions!#v [Country.GetBattalions]#! [Concept('concept_battalion','praporů')] (#v [Country.GetMobilizationRatio|0%]#! @mobilization! [Concept('concept_mobilize_battalion', '$concept_mobilize_battalion_mobilized$')|l])" # todo: CONCEPT CASE
  DIPLO_PLAY_COUNTRY_SHIPS_BREAKDOWN: "[Country.GetName] má @ships! [Country.GetNumShips|v] [Concept('concept_ship','lodě')]" # todo: NEW TRANSLATION
  GOODS_INPUT_REQUIRED_FOR_NO_PENALTY: "Alespoň [GetDefine('NEconomy', 'GOODS_SHORTAGE_PENALTY_THRESHOLD')|v%0] z [Concept('concept_buy_orders','nákupních objednávek')] na [Goods.GetName] musí být uspokojeno, aby se zabránilo penalizaci výstupu."
  GOODS_INPUT_SHORTAGE_OUTPUT_PENALTY: "Aktuální sankce je [Building.GetInputShortagePenalty|%v0], a s časem se změní směrem k cílové sankci [Building.CalcInputGoodsShortageTargetPenalty|%v0]."
@@ -9852,12 +9852,12 @@
  MAP_INTERACTION_REHOME_MILITARY_FORMATION_PERFORMED: "$FORMATION_NAME$ převedeno"
  MAP_INTERACTION_TRAVEL_TIME_APPEND: "\nDoba cesty: $TRAVEL_TIME$" # todo: NEW TRANSLATION
  PRODUCTION_METHOD_CONFIRMATION_TITLE: "Přepnout na [ProductionMethod.GetName]"
- PRODUCTION_METHOD_CONFIRMATION_DESC: "Přepnutí na [ProductionMethod.GetName] by vedlo k velmi nízké [Concept('concept_productivity','produktivitě')] následujících [BuildingType.GetName] [Concept( 'concept_building', '$concept_buildings$' )]:\n\n[ProductionMethodConfirmationPopup.GetLowProductivityBreakdown]"
+ PRODUCTION_METHOD_CONFIRMATION_DESC: "Přepnutí na [ProductionMethod.GetName] by vedlo k velmi nízké [Concept('concept_productivity','produktivitě')] následujících [BuildingType.GetName] [Concept( 'concept_building', '$concept_buildings$' )|l]:\n\n[ProductionMethodConfirmationPopup.GetLowProductivityBreakdown]"
  PRODUCTION_METHOD_CONFIRMATION_LOW_PRODUCTIVITY_ENTRY: "[BUILDING.GetState.GetName]: #N $VALUE$#!"
  PRODUCTION_METHOD_CONFIRMATION_CONTINUE: "$CONTINUE$"
- PRODUCTION_METHOD_CONFIRMATION_CONTINUE_TOOLTIP: "Přepnout všechny [ProductionMethodConfirmationPopup.GetTotalBuildingCount|v] [BuildingType.GetName] [Concept( 'concept_building', '$concept_buildings$' )] na [ProductionMethod.GetName]"
+ PRODUCTION_METHOD_CONFIRMATION_CONTINUE_TOOLTIP: "Přepnout všechny [ProductionMethodConfirmationPopup.GetTotalBuildingCount|v] [BuildingType.GetName] [Concept( 'concept_building', '$concept_buildings$' )|l] na [ProductionMethod.GetName]"
  PRODUCTION_METHOD_CONFIRMATION_EXEMPT: "Výjimka"
- PRODUCTION_METHOD_CONFIRMATION_EXEMPT_TOOLTIP: "Přepněte pouze [Subtract_int32( ProductionMethodConfirmationPopup.GetTotalBuildingCount, ProductionMethodConfirmationPopup.GetExemptedBuildingCount )|v] [BuildingType.GetName] [Concept( 'concept_building', '$concept_buildings$' )] na [ProductionMethod.GetName]\n([ProductionMethodConfirmationPopup.GetExemptedBuildingCount|v] $concept_buildings$ uvedených výše zůstanou nezměněny)"
+ PRODUCTION_METHOD_CONFIRMATION_EXEMPT_TOOLTIP: "Přepněte pouze [Subtract_int32( ProductionMethodConfirmationPopup.GetTotalBuildingCount, ProductionMethodConfirmationPopup.GetExemptedBuildingCount )|v] [BuildingType.GetName] [Concept( 'concept_building', '$concept_buildings$' )|l] na [ProductionMethod.GetName]\n([ProductionMethodConfirmationPopup.GetExemptedBuildingCount|v] $concept_buildings$ uvedených výše zůstanou nezměněny)"
  PRODUCTION_METHOD_CONFIRMATION_CANCEL: "$CANCEL$"
  INFAMY_DESC: "@infamy! #tooltippable #tooltip:$BREAKDOWN_TAG$ $INFAMY|-1$#!#! [Concept('concept_infamy','infamia')]"
  TREATY_FALLBACK_NAME: "$ENTRY_INTO_FORCE_DATE$ dohoda [FIRST_COUNTRY.GetAltAdjectiveNoFormatting('o')]-[SECOND_COUNTRY.GetAltAdjectiveNoFormatting('ee')] z $SIGNING_LOCATION$"
@@ -9869,7 +9869,7 @@
  HAS_NATIONAL_AWAKENING: "Má @national_awakening! [Concept('concept_national_awakening','národní obrození')]" # todo: CONCEPT CASE
  NATIONAL_AWAKENING_CULTURE_TOOLTIP: "[Culture.GetName] [Concept('concept_culture','Kultura')|l] má [Concept('concept_national_awakening','národní obrození')|l], které zvyšuje jejich [Concept('concept_fervor','horlivost')|l] a atraktivitu populace do [Concept('concept_political_movement', 'politických hnutí')] u #tooltippable_name #tooltip:[Culture.GetTooltipTag],DATA_CULTURE_NAME_TOOLTIP,CultureTooltip [Culture.GetCustom('CUL_ADJ_ee')|l]#!#! [Concept('concept_pop', 'populace')]"
  INVOLVEMENT_CAPITAL_VALUE: "$VALUE|v0$ z [Concept('concept_capital_state','hlavního města')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- INVOLVEMENT_CAPITAL_NEIGHBOUR_VALUE: "$VALUE|v0$ z toho, že [Concept('concept_strategic_region','strategický region')] sousedí s vlastní [Concept('concept_capital_state', '$concept_capital_state_short$')] $concept_strategic_region$" # todo: NEW TRANSLATION
+ INVOLVEMENT_CAPITAL_NEIGHBOUR_VALUE: "$VALUE|v0$ z toho, že [Concept('concept_strategic_region','strategický region')] sousedí s vlastní [Concept('concept_capital_state', '$concept_capital_state_short$')|l] $concept_strategic_region$" # todo: NEW TRANSLATION
  INVOLVEMENT_OWNERSHIP_AND_CLAIMS_TOTAL_VALUE: "$VALUE|v0$ z vlastnictví a [Concept('concept_claim','nároků')] v tomto [Concept('concept_strategic_region','strategickém regionu')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  INVOLVEMENT_GDP_TOTAL_VALUE: "$VALUE|v0$ z [Concept('concept_gdp','HDP')] generovaného v tomto [Concept('concept_strategic_region','strategickém regionu')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  INVOLVEMENT_ARMIES_TOTAL_VALUE: "$VALUE|v0$ z [Concept('concept_army','armády')] (omezeno na $CAP|v0$)" # todo: NEW TRANSLATION

@@ -48,7 +48,7 @@
  je_end_edo_system_button_name: "Ukončit edský stavovský systém"
  je_end_edo_system_button_desc: "V této době reforem a obnovy nás starý kastovní systém brzdí. Každý občan může být cennou součástí státu, bez ohledu na své životní postavení."
  edo_system_not_support_enforcement_tt: "Nepodporuje prosazení zákona [GetLawType('law_intermediate_edo_system').GetName] ani [GetLawType('law_strict_edo_system').GetName]"
- edo_system_ends_tt: "[ROOT.GetCountry.GetNameNoFlag] zcela ruší [Concept('concept_social_hierarchy','$edo_system$')]"
+ edo_system_ends_tt: "[ROOT.GetCountry.GetNameNoFlag] zcela ruší [Concept('concept_social_hierarchy','$edo_system$')|l]"
  notification_edo_system_disappears_name: "Edský systém se hroutí"
  notification_edo_system_disappears_desc: "Kvůli nedávným kulturním a společenským změnám již edský systém není v zemi [SCOPE.sCountry('relevant_country_scope').GetName] uznávanou [Concept('concept_social_hierarchy','sociální hierarchií')]." # todo: CONCEPT CASE
  notification_edo_system_disappears_tooltip: "#header $notification_edo_system_disappears_name$#!\n$TOOLTIP_DELIMITER$\n$notification_edo_system_disappears_desc$"

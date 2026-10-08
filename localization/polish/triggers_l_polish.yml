@@ -1762,7 +1762,7 @@
  TRIGGER_BUILDING_HAS_GOODS_SHORTAGE: "Má [Concept('concept_shortage','nedostatek vstupních zboží')|l]"
  TRIGGER_BUILDING_HAS_GOODS_SHORTAGE_NOT: "#bold Nemá#! [Concept('concept_shortage','nedostatek vstupních zboží')|l]"
  TRIGGER_MARKET_HAS_GOODS_SHORTAGE: "Má [Concept('concept_shortage','nedostatky')|l]"
- TRIGGER_MARKET_HAS_GOODS_SHORTAGE_NOT: "Nemá [Concept('concept_shortage', '$concept_shortages$')]"
+ TRIGGER_MARKET_HAS_GOODS_SHORTAGE_NOT: "Nemá [Concept('concept_shortage', '$concept_shortages$')|l]"
  TRIGGER_MARKET_GOODS_HAS_GOODS_SHORTAGE: "Má [Concept('concept_shortage','nedostatky')|l]"
  TRIGGER_MARKET_GOODS_HAS_GOODS_SHORTAGE_NOT: "#bold Nemá#! [Concept('concept_shortage','nedostatky')|l]"
  TRIGGER_HAS_CONSUMPTION_TAX: "[TARGET_GOODS.GetName] má [Concept('concept_consumption_tax','spotřební daň')|l]"
@@ -2662,16 +2662,16 @@
  TRIGGER_ANY_SCOPE_HOMELAND_STATE_ALL_IN_COUNTRY_FIRST_NOT: "Žádné [Country.GetAdjectiveNoFlag] [Concept('concept_homeland','domovina')] [Concept('concept_state','státy')]:" # todo: NEW TRANSLATION
  TRIGGER_ANY_SCOPE_HOMELAND_STATE_ALL_IN_COUNTRY_THIRD: "Všechny [Concept('concept_homeland','domoviny')] [Concept('concept_state','státy')] [Country.GetName]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TRIGGER_ANY_SCOPE_HOMELAND_STATE_ALL_IN_COUNTRY_THIRD_NOT: "Žádné [Concept('concept_homeland','domovina')] [Concept('concept_state','státy')] [Country.GetName]:" # todo: NEW TRANSLATION
- TRIGGER_ANY_SCOPE_HOMELAND_STATE_COUNT: "$PARAMETERS$ $FILTER$[Concept('concept_homeland','domovina')] [Concept('concept_state', '$concept_states$')]:" # todo: NEW TRANSLATION
- TRIGGER_ANY_SCOPE_HOMELAND_STATE_COUNT_FIRST: "$PARAMETERS$ $FILTER$[Culture.GetName] [Concept('concept_homeland','domovina')] [Concept('concept_state', '$concept_states$')]:" # todo: NEW TRANSLATION
- TRIGGER_ANY_SCOPE_HOMELAND_STATE_COUNT_THIRD: "$PARAMETERS$ $FILTER$[Concept('concept_homeland','domovina')] [Concept('concept_state', '$concept_states$')] [Culture.GetName]:" # todo: NEW TRANSLATION
- TRIGGER_ANY_SCOPE_HOMELAND_STATE_COUNT_IN_COUNTRY_FIRST: "$PARAMETERS$ $FILTER$[Country.GetAdjectiveNoFlag] [Concept('concept_homeland','domovina')] [Concept('concept_state', '$concept_states$')]:" # todo: NEW TRANSLATION
- TRIGGER_ANY_SCOPE_HOMELAND_STATE_COUNT_IN_COUNTRY_THIRD: "$PARAMETERS$ $FILTER$[Concept('concept_homeland','domovina')] [Concept('concept_state', '$concept_states$')] [Country.GetName]:" # todo: NEW TRANSLATION
- TRIGGER_ANY_SCOPE_HOMELAND_STATE_PERCENT: "$PARAMETERS$ z $FILTER$[Concept('concept_homeland','domoviny')] [Concept('concept_state', '$concept_states$')]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- TRIGGER_ANY_SCOPE_HOMELAND_STATE_PERCENT_FIRST: "$PARAMETERS$ ze všech $FILTER$[Culture.GetName] [Concept('concept_homeland','domoviny')] [Concept('concept_state', '$concept_states$')]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- TRIGGER_ANY_SCOPE_HOMELAND_STATE_PERCENT_THIRD: "$PARAMETERS$ ze všech $FILTER$[Concept('concept_homeland','domoviny')] [Concept('concept_state', '$concept_states$')] [Culture.GetName]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- TRIGGER_ANY_SCOPE_HOMELAND_STATE_PERCENT_IN_COUNTRY_FIRST: "$PARAMETERS$ ze všech $FILTER$[Country.GetAdjectiveNoFlag] [Concept('concept_homeland','domoviny')] [Concept('concept_state', '$concept_states$')]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- TRIGGER_ANY_SCOPE_HOMELAND_STATE_PERCENT_IN_COUNTRY_THIRD: "$PARAMETERS$ ze všech $FILTER$[Concept('concept_homeland','domoviny')] [Concept('concept_state', '$concept_states$')] [Country.GetName]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ TRIGGER_ANY_SCOPE_HOMELAND_STATE_COUNT: "$PARAMETERS$ $FILTER$[Concept('concept_homeland','domovina')] [Concept('concept_state', '$concept_states$')|l]:" # todo: NEW TRANSLATION
+ TRIGGER_ANY_SCOPE_HOMELAND_STATE_COUNT_FIRST: "$PARAMETERS$ $FILTER$[Culture.GetName] [Concept('concept_homeland','domovina')] [Concept('concept_state', '$concept_states$')|l]:" # todo: NEW TRANSLATION
+ TRIGGER_ANY_SCOPE_HOMELAND_STATE_COUNT_THIRD: "$PARAMETERS$ $FILTER$[Concept('concept_homeland','domovina')] [Concept('concept_state', '$concept_states$')|l] [Culture.GetName]:" # todo: NEW TRANSLATION
+ TRIGGER_ANY_SCOPE_HOMELAND_STATE_COUNT_IN_COUNTRY_FIRST: "$PARAMETERS$ $FILTER$[Country.GetAdjectiveNoFlag] [Concept('concept_homeland','domovina')] [Concept('concept_state', '$concept_states$')|l]:" # todo: NEW TRANSLATION
+ TRIGGER_ANY_SCOPE_HOMELAND_STATE_COUNT_IN_COUNTRY_THIRD: "$PARAMETERS$ $FILTER$[Concept('concept_homeland','domovina')] [Concept('concept_state', '$concept_states$')|l] [Country.GetName]:" # todo: NEW TRANSLATION
+ TRIGGER_ANY_SCOPE_HOMELAND_STATE_PERCENT: "$PARAMETERS$ z $FILTER$[Concept('concept_homeland','domoviny')] [Concept('concept_state', '$concept_states$')|l]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ TRIGGER_ANY_SCOPE_HOMELAND_STATE_PERCENT_FIRST: "$PARAMETERS$ ze všech $FILTER$[Culture.GetName] [Concept('concept_homeland','domoviny')] [Concept('concept_state', '$concept_states$')|l]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ TRIGGER_ANY_SCOPE_HOMELAND_STATE_PERCENT_THIRD: "$PARAMETERS$ ze všech $FILTER$[Concept('concept_homeland','domoviny')] [Concept('concept_state', '$concept_states$')|l] [Culture.GetName]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ TRIGGER_ANY_SCOPE_HOMELAND_STATE_PERCENT_IN_COUNTRY_FIRST: "$PARAMETERS$ ze všech $FILTER$[Country.GetAdjectiveNoFlag] [Concept('concept_homeland','domoviny')] [Concept('concept_state', '$concept_states$')|l]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ TRIGGER_ANY_SCOPE_HOMELAND_STATE_PERCENT_IN_COUNTRY_THIRD: "$PARAMETERS$ ze všech $FILTER$[Concept('concept_homeland','domoviny')] [Concept('concept_state', '$concept_states$')|l] [Country.GetName]:" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TRIGGER_ANY_NEIGHBOURING_STATE: "Jakýkoli sousedící [Concept('concept_state','stát')|l]:"
  TRIGGER_ANY_NEIGHBOURING_STATE_ALL: "Všechny sousední [Concept('concept_state','státy')|l]:"
  TRIGGER_ANY_NEIGHBOURING_STATE_PERCENT: "$PARAMETERS$ z $FILTER$sousedních [Concept('concept_state', '$concept_states$')|l]:"
@@ -3827,13 +3827,13 @@
  TRIGGER_ANY_COMPANY_ALL_FIRST: "Všechny [COUNTRY.GetAdjectiveNoFlag] [Concept('concept_company','společnosti')]:" # todo: NEW TRANSLATION
  TRIGGER_ANY_COMPANY_PERCENT: "$PARAMETERS$ z $FILTER$[Concept('concept_company','společnosti')|l]:"
  TRIGGER_ANY_COMPANY_COUNT: "$PARAMETERS$ $FILTER$[Concept('concept_company','$concept_companies$')|l]:"
- TRIGGER_ANY_COMPANY_COUNT_FIRST: "$PARAMETERS$ $FILTER$ [COUNTRY.GetAdjectiveNoFlag] [Concept('concept_company','$concept_companies$')]:" # todo: NEW TRANSLATION
+ TRIGGER_ANY_COMPANY_COUNT_FIRST: "$PARAMETERS$ $FILTER$ [COUNTRY.GetAdjectiveNoFlag] [Concept('concept_company','$concept_companies$')|l]:" # todo: NEW TRANSLATION
  TRIGGER_ANY_COMPANY_NOT: "Žádná [Concept('concept_company','společnost')|l]:"
  TRIGGER_ANY_COMPANY_ALL_NOT: "Žádná [Concept('concept_company','společnosti')|l]:"
  TRIGGER_ANY_COMPANY_ALL_FIRST_NOT: "Všechny [COUNTRY.GetAdjectiveNoFlag] [Concept('concept_company','společnosti')] ne:" # todo: NEW TRANSLATION
  TRIGGER_ANY_COMPANY_PERCENT_NOT: "$PARAMETERS$ z $FILTER$[Concept('concept_company','společnosti')|l] ne:"
  TRIGGER_ANY_COMPANY_COUNT_NOT: "$PARAMETERS$ $FILTER$[Concept('concept_company','$concept_companies$')|l] ne:"
- TRIGGER_ANY_COMPANY_COUNT_FIRST_NOT: "$PARAMETERS$ $FILTER$ [COUNTRY.GetAdjectiveNoFlag] [Concept('concept_company','$concept_companies$')] ne:" # todo: NEW TRANSLATION
+ TRIGGER_ANY_COMPANY_COUNT_FIRST_NOT: "$PARAMETERS$ $FILTER$ [COUNTRY.GetAdjectiveNoFlag] [Concept('concept_company','$concept_companies$')|l] ne:" # todo: NEW TRANSLATION
  TRIGGER_ANY_COMPANY_FIRST: "Libovolná [Concept('concept_company','společnost')|l]:"
  TRIGGER_ANY_COMPANY_FIRST_NOT: "Žádná [Concept('concept_company','společnost')|l]:"
  TRIGGER_ANY_SCOPE_REGIONAL_HQS: "Jakákoli [Concept('concept_regional_company_hq','regionální ředitelství společnosti')|l]:"
@@ -3842,12 +3842,12 @@
  TRIGGER_ANY_SCOPE_REGIONAL_HQS_COUNT: "$PARAMETERS$ $FILTER$[Concept('concept_regional_company_hq','$concept_regional_company_hqs$')|l]:"
  TRIGGER_ANY_OWNED_COUNTRY: "Jakákoli vlastněná [Concept('concept_country','země')]:" # todo: NEW TRANSLATION
  TRIGGER_ANY_OWNED_COUNTRY_ALL: "Všechny vlastněné [Concept('concept_country','země')]:" # todo: NEW TRANSLATION
- TRIGGER_ANY_OWNED_COUNTRY_PERCENT: "$PARAMETERS$ z $FILTER$vlastněných [Concept('concept_country','$concept_countries$')]:" # todo: NEW TRANSLATION
- TRIGGER_ANY_OWNED_COUNTRY_COUNT: "$PARAMETERS$ $FILTER$vlastněných [Concept('concept_country','$concept_countries$')]:" # todo: NEW TRANSLATION
+ TRIGGER_ANY_OWNED_COUNTRY_PERCENT: "$PARAMETERS$ z $FILTER$vlastněných [Concept('concept_country','$concept_countries$')|l]:" # todo: NEW TRANSLATION
+ TRIGGER_ANY_OWNED_COUNTRY_COUNT: "$PARAMETERS$ $FILTER$vlastněných [Concept('concept_country','$concept_countries$')|l]:" # todo: NEW TRANSLATION
  TRIGGER_ANY_OWNED_COUNTRY_NOT: "Žádná vlastněná [Concept('concept_country','země')]:" # todo: NEW TRANSLATION
  TRIGGER_ANY_OWNED_COUNTRY_ALL_NOT: "Žádné vlastněné [Concept('concept_country','země')]:" # todo: NEW TRANSLATION
- TRIGGER_ANY_OWNED_COUNTRY_PERCENT_NOT: "$PARAMETERS$ z $FILTER$vlastněných [Concept('concept_country','$concept_countries$')] ne:" # todo: NEW TRANSLATION
- TRIGGER_ANY_OWNED_COUNTRY_COUNT_NOT: "$PARAMETERS$ $FILTER$vlastněných [Concept('concept_country','$concept_countries$')] ne:" # todo: NEW TRANSLATION
+ TRIGGER_ANY_OWNED_COUNTRY_PERCENT_NOT: "$PARAMETERS$ z $FILTER$vlastněných [Concept('concept_country','$concept_countries$')|l] ne:" # todo: NEW TRANSLATION
+ TRIGGER_ANY_OWNED_COUNTRY_COUNT_NOT: "$PARAMETERS$ $FILTER$vlastněných [Concept('concept_country','$concept_countries$')|l] ne:" # todo: NEW TRANSLATION
  TRIGGER_ANY_OWNED_COUNTRY_FIRST: "Jakákoli vlastněná [Concept('concept_country','země')]:" # todo: NEW TRANSLATION
  TRIGGER_ANY_OWNED_COUNTRY_FIRST_NOT: "Žádná vlastněná [Concept('concept_country','země')]:" # todo: NEW TRANSLATION
  TRIGGER_ANY_DIPLOMATIC_CATALYST: "Jakýkoli [Concept('concept_diplomatic_catalyst','diplomatický katalyzátor')|l]:"
@@ -3961,7 +3961,7 @@
  TRIGGER_ANY_SCOPE_BARRACKS_ALL: "Všechny [GetBuildingType('building_barrack').GetName] v [COUNTRY.GetNameNoFlag]:" # todo: NEW TRANSLATION
  TRIGGER_ANY_SCOPE_BARRACKS_ALL_NOT: "Žádné [GetBuildingType('building_barrack').GetName] v [COUNTRY.GetNameNoFlag]:" # todo: NEW TRANSLATION
  TRIGGER_ANY_SCOPE_BARRACKS_PERCENT: "$PARAMETERS$ z $FILTER$[GetBuildingType('building_barrack').GetName]:" # todo: NEW TRANSLATION
- TRIGGER_ANY_SCOPE_BARRACKS_COUNT: "$PARAMETERS$ $FILTER$[Concept('concept_princely_state','$concept_princely_states$')]:" # todo: NEW TRANSLATION
+ TRIGGER_ANY_SCOPE_BARRACKS_COUNT: "$PARAMETERS$ $FILTER$[Concept('concept_princely_state','$concept_princely_states$')|l]:" # todo: NEW TRANSLATION
  TRIGGER_ANY_SCOPE_BARRACKS_COUNT_FIRST: "$PARAMETERS$ $FILTER$[GetBuildingType('building_barrack').GetName]:" # todo: NEW TRANSLATION
  TRIGGER_ANY_SCOPE_BARRACKS_COUNT_THIRD: "$PARAMETERS$ $FILTER$[GetBuildingType('building_barrack').GetName]:" # todo: NEW TRANSLATION
  TRIGGER_COUNTRY_AVERAGE_CULTURAL_ACCEPTANCE: "Průměrná [Concept('concept_acceptance','přijetí')|l] je $COMPARATOR$ $NUM|v$"
@@ -4253,12 +4253,12 @@
  TRIGGER_OVERLAPPING_INTEREST_TIERS_THIRD_NOT: "Nejvyšší překrývající se úroveň [Concept('concept_interest','zájmy')] mezi [COUNTRY.GetName] a [TARGET_COUNTRY.GetName] je #b ne#! $COMPARATOR$ #v $NUM|0$#! (#v $CURRENT_VALUE|0$#! aktuálně)" # todo: NEW TRANSLATION
  TRIGGER_ANY_STRATEGIC_REGION: "Jakákoli [Concept('concept_strategic_region','strategický region')]:" # todo: NEW TRANSLATION
  TRIGGER_ANY_STRATEGIC_REGION_ALL: "Všechny [Concept('concept_strategic_region','strategické regiony')]:" # todo: NEW TRANSLATION
- TRIGGER_ANY_STRATEGIC_REGION_COUNT: "$PARAMETERS$ $FILTER$[Concept('concept_strategic_region', '$concept_strategic_regions$')]:" # todo: NEW TRANSLATION
- TRIGGER_ANY_STRATEGIC_REGION_PERCENT: "$PARAMETERS$ z $FILTER$[Concept('concept_strategic_region', '$concept_strategic_regions$')]:" # todo: NEW TRANSLATION
+ TRIGGER_ANY_STRATEGIC_REGION_COUNT: "$PARAMETERS$ $FILTER$[Concept('concept_strategic_region', '$concept_strategic_regions$')|l]:" # todo: NEW TRANSLATION
+ TRIGGER_ANY_STRATEGIC_REGION_PERCENT: "$PARAMETERS$ z $FILTER$[Concept('concept_strategic_region', '$concept_strategic_regions$')|l]:" # todo: NEW TRANSLATION
  TRIGGER_ANY_COUNTRY_STRATEGIC_REGION: "Jakákoli [Concept('concept_strategic_region','strategický region')], ve které jsme přítomni:" # todo: NEW TRANSLATION
  TRIGGER_ANY_COUNTRY_STRATEGIC_REGION_ALL: "Všechny [Concept('concept_strategic_region','strategické regiony')] v nichž jsme přítomni:" # todo: NEW TRANSLATION
- TRIGGER_ANY_COUNTRY_STRATEGIC_REGION_COUNT: "$PARAMETERS$ $FILTER$[Concept('concept_strategic_region', '$concept_strategic_regions$')] v nichž jsme přítomni:" # todo: NEW TRANSLATION
- TRIGGER_ANY_COUNTRY_STRATEGIC_REGION_PERCENT: "$PARAMETERS$ z $FILTER$[Concept('concept_strategic_region', '$concept_strategic_regions$')] v nichž jsme přítomni:" # todo: NEW TRANSLATION
+ TRIGGER_ANY_COUNTRY_STRATEGIC_REGION_COUNT: "$PARAMETERS$ $FILTER$[Concept('concept_strategic_region', '$concept_strategic_regions$')|l] v nichž jsme přítomni:" # todo: NEW TRANSLATION
+ TRIGGER_ANY_COUNTRY_STRATEGIC_REGION_PERCENT: "$PARAMETERS$ z $FILTER$[Concept('concept_strategic_region', '$concept_strategic_regions$')|l] v nichž jsme přítomni:" # todo: NEW TRANSLATION
  TRIGGER_IS_LOCAL_COUNTRY: "Je [Concept('concept_local_country','místní')] pro [TARGET_STRATEGIC_REGION.GetName]" # todo: NEW TRANSLATION
  TRIGGER_IS_LOCAL_COUNTRY_NOT: "Není #bold ne#! [Concept('concept_local_country','místní')] pro [TARGET_STRATEGIC_REGION.GetName]" # todo: NEW TRANSLATION
  TRIGGER_IS_LOCAL_COUNTRY_FIRST: "[COUNTRY.GetName] je [Concept('concept_local_country','místní')] pro [TARGET_STRATEGIC_REGION.GetName]" # todo: NEW TRANSLATION
@@ -4288,11 +4288,11 @@
  TRIGGER_ANY_SCOPE_SHIP: "Jakákoli [Concept('concept_ship','loď')]:" # todo: NEW TRANSLATION
  TRIGGER_ANY_SCOPE_SHIP_ALL: "Všechny [Concept('concept_ship','lodě')]:" # todo: NEW TRANSLATION
  TRIGGER_ANY_SCOPE_SHIP_PERCENT: "$PARAMETERS$ z $FILTER$[Concept('concept_ship','lodě')]:" # todo: NEW TRANSLATION
- TRIGGER_ANY_SCOPE_SHIP_COUNT: "$PARAMETERS$ $FILTER$[Concept('concept_ship','$concept_ships$')]:" # todo: NEW TRANSLATION
+ TRIGGER_ANY_SCOPE_SHIP_COUNT: "$PARAMETERS$ $FILTER$[Concept('concept_ship','$concept_ships$')|l]:" # todo: NEW TRANSLATION
  TRIGGER_ANY_SCOPE_FLEET: "Jakákoli [Concept('concept_fleet','loďstvo')]:" # todo: NEW TRANSLATION
  TRIGGER_ANY_SCOPE_FLEET_ALL: "Všechny [Concept('concept_fleet','loďstva')]:" # todo: NEW TRANSLATION
  TRIGGER_ANY_SCOPE_FLEET_PERCENT: "$PARAMETERS$ z $FILTER$[Concept('concept_fleet','loďstva')]:" # todo: NEW TRANSLATION
- TRIGGER_ANY_SCOPE_FLEET_COUNT: "$PARAMETERS$ $FILTER$[Concept('concept_fleet','$concept_fleets$')]:" # todo: NEW TRANSLATION
+ TRIGGER_ANY_SCOPE_FLEET_COUNT: "$PARAMETERS$ $FILTER$[Concept('concept_fleet','$concept_fleets$')|l]:" # todo: NEW TRANSLATION
  TRIGGER_IS_SHIP_TYPE: "Je typu [TARGET_SHIP_TYPE.GetName]" # todo: NEW TRANSLATION
  TRIGGER_IS_SHIP_TYPE_NOT: "Není #b ne#! typu [TARGET_SHIP_TYPE.GetName]" # todo: NEW TRANSLATION
  TRIGGER_IS_SHIP_TYPE_THIRD: "[SHIP.GetName] je typu [TARGET_SHIP_TYPE.GetName]" # todo: NEW TRANSLATION

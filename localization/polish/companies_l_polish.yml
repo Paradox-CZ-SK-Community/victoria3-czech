@@ -51,7 +51,7 @@
  COMPANY_CONSTRUCTION_EFFICIENCY_BONUS: "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VAL|=+1%$#!#! $country_company_construction_efficiency_bonus_add$"
  COMPANY_CONSTRUCTION_EFFICIENCY_BONUS_FORMATTED: "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VAL|=+1%$#!#!"
  COMPANY_CONSTRUCTION_EFFICIENCY_BONUS_DESC: "#header Bonus k výstavbě [Concept('concept_company','společnosti')]\n$VAL|+=0%$#! aktuálně\n$TOOLTIP_DELIMITER$\n[ConcatIfNeitherEmpty( '#title Kvůli:#!\n', ConcatIfNeitherEmpty('$BREAKDOWN$', '\n' ) )]\n$country_company_construction_efficiency_bonus_add_desc$" # todo: CONCEPT CASE
- COMPANY_CONSTRUCTION_EFFICIENCY_BONUS_MULTIPLIER_DESC: "Vynásobeno hodnotou $VAL|v$ kvůli: #indent_newline:3 \nBudující [Concept('concept_building', '$concept_building_industry$')] #b není#! pro $concept_company$ běžně dostupná#!"
+ COMPANY_CONSTRUCTION_EFFICIENCY_BONUS_MULTIPLIER_DESC: "Vynásobeno hodnotou $VAL|v$ kvůli: #indent_newline:3 \nBudující [Concept('concept_building', '$concept_building_industry$')|l] #b není#! pro $concept_company$ běžně dostupná#!"
  COMPANY_THROUGHPUT_BONUS_FORMATTED: "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VAL|=+1%$#!#!"
  COMPANY_THROUGHPUT_BONUS_MULT: "Násobitel $MULT|v$ z $LEVEL|v$ z celkových $TOTAL|v$ úrovní vlastněných budovou [GetBuildingType('building_company_headquarter').GetName]"
  COMPANY_THROUGHPUT_BONUS_DESC: "#header Bonus k průtoku [Concept('concept_company','společnosti')]: $VAL|=+1%$#!\n$TOOLTIP_DELIMITER$\n[ConcatIfNeitherEmpty('$BREAKDOWN$', '\n')]\n$country_company_construction_efficiency_bonus_add_desc$" # todo: CONCEPT CASE

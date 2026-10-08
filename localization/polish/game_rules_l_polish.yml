@@ -23,7 +23,7 @@
  setting_no_subject_map_color: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_no_subject_map_color_desc #high Žádné změny barev mapy#!#!#!"
  setting_no_subject_map_color_desc: "Barva mapy [Concept('concept_subject','závislá země')] [Concept('concept_country','země')] se #b nezmění#! podle toho, kdo je jejich $suzerain$."
  setting_allow_subject_map_color: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_allow_subject_map_color_desc Umožnit změny barev mapy#!#!"
- setting_allow_subject_map_color_desc: "Barva mapy určitých typů [Concept('concept_subject','závislých zemí')] [Concept('concept_country', '$concept_countries$')] se změní podle toho, kdo je jejich $suzerain$." # todo: CONCEPT CASE
+ setting_allow_subject_map_color_desc: "Barva mapy určitých typů [Concept('concept_subject','závislých zemí')] [Concept('concept_country', '$concept_countries$')|l] se změní podle toho, kdo je jejich $suzerain$." # todo: CONCEPT CASE
  rule_achievements: "Úspěchy"
  setting_achievements_allowed: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_achievements_allowed_desc Umožněno#!#!"
  setting_achievements_allowed_desc: "Úspěchy mohou být odemknuty během této kampaně."
@@ -41,9 +41,9 @@
  setting_plausible_releasable_nations_desc: "Umožnit pouze historicky pravděpodobné národy k uvolnění."
  rule_investment_pool: "Investiční fond"
  setting_autonomous_investment_pool: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_autonomous_investment_pool_desc Autonomní investiční fond#!#!"
- setting_autonomous_investment_pool_desc: "Investiční fond [Concept('concept_investment_pool','investiční fond')] bude použit k autonomnímu financování [Concept('concept_private_construction','soukromé stavby')] vhodných [Concept('concept_building','budov')] v závislosti na [Concept('concept_country', '$concept_country_possessive$')] [Concept('concept_law','$concept_laws$')]." # todo: CONCEPT CASE
+ setting_autonomous_investment_pool_desc: "Investiční fond [Concept('concept_investment_pool','investiční fond')] bude použit k autonomnímu financování [Concept('concept_private_construction','soukromé stavby')] vhodných [Concept('concept_building','budov')] v závislosti na [Concept('concept_country', '$concept_country_possessive$')|l] [Concept('concept_law','$concept_laws$')|l]." # todo: CONCEPT CASE
  setting_directly_controlled_investment_pool: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_directly_controlled_investment_pool_desc Přímo kontrolovaný investiční fond#!#!"
- setting_directly_controlled_investment_pool_desc: "Investiční fond [Concept('concept_investment_pool','investiční fond')] je přímo využíván každou [Concept('concept_country','zemí')] a může být použit k financování [Concept('concept_government_construction','vládní výstavby')] vhodných [Concept('concept_building','budov')] v závislosti na [Concept('concept_country', '$concept_country_possessive$')] [Concept('concept_law','$concept_laws$')]." # todo: CONCEPT CASE
+ setting_directly_controlled_investment_pool_desc: "Investiční fond [Concept('concept_investment_pool','investiční fond')] je přímo využíván každou [Concept('concept_country','zemí')] a může být použit k financování [Concept('concept_government_construction','vládní výstavby')] vhodných [Concept('concept_building','budov')] v závislosti na [Concept('concept_country', '$concept_country_possessive$')|l] [Concept('concept_law','$concept_laws$')|l]." # todo: CONCEPT CASE
  rule_monument_effects: "Efekty monumentů"
  setting_allow_monument_effects: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_allow_monument_effects_desc Povolené#!#!"
  setting_allow_monument_effects_desc: "[Concept('concept_monument','Monument')] může produkovat různé efekty v závislosti na své povaze a někdy angažovat [Concept('concept_pop','populace')] k jeho dosažení." # todo: CONCEPT CASE

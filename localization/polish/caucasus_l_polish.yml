@@ -244,7 +244,7 @@
  caucasuswar_end.5.b: "Musíme najít způsob, jak se přizpůsobit tomuto novému míru." # todo: NEW TRANSLATION
  russia_offer_circassia_recognition: "Nabídnout Čerkesku uznání" # todo: NEW TRANSLATION
  russia_offer_circassia_recognition_desc: "Žádosti o mezinárodní podporu, které mladý čerkeský národ posílá, představují vynikající příležitost rozšířit naši sféru vlivu na Kavkaze." # todo: NEW TRANSLATION
- circassia_recognition_tt: "Čerkesku bude nabídnuta šance stát se [Concept('concept_recognized_power','$concept_recognized_power$')], pokud dokáže #bold konsolidovat#! a #bold získat zpět své území#! od Ruska." # todo: NEW TRANSLATION
+ circassia_recognition_tt: "Čerkesku bude nabídnuta šance stát se [Concept('concept_recognized_power','$concept_recognized_power$')|l], pokud dokáže #bold konsolidovat#! a #bold získat zpět své území#! od Ruska." # todo: NEW TRANSLATION
  no_country_recognised_circassia_tt: "Žádná jiná země nenabídla #v $CIR$#! uznání" # todo: NEW TRANSLATION
  russia_out_of_kuban_tt: "#v $RUS$#! nemá [concept_state] v [SCOPE.sStateRegion('kuban_scope').GetName]" # todo: NEW TRANSLATION
  russia_out_of_north_caucasus_tt: "#v $RUS$#! nemá [concept_state] v [SCOPE.sStateRegion('north_caucasus_scope').GetName]" # todo: NEW TRANSLATION
@@ -279,7 +279,7 @@
  Murtazeki: "Murtazeki" # todo: NEW TRANSLATION
  Circassian_Army: "Čerkeská armáda" # todo: NEW TRANSLATION
  je_circassian_expulsions: "Vyhoštění Čerkesů" # todo: NEW TRANSLATION
- je_circassian_expulsions_reason: "Ambice vlády osídlit bývalé území Čerkeska loajálními kozáky vedly k nelítostné kampani vyhnat obyvatelstvo [SCOPE.sCulture('circassian_culture_scope').GetName] regionu za každou cenu.\n\nDokud bude tento [concept_journal_entry] aktivní, budou [SCOPE.sCulture('circassian_culture_scope').GetName] [Concept('concept_pop', '$concept_pops$')] deportováni z našich hranic, za cenu obrovských ztrát na životech." # todo: NEW TRANSLATION
+ je_circassian_expulsions_reason: "Ambice vlády osídlit bývalé území Čerkeska loajálními kozáky vedly k nelítostné kampani vyhnat obyvatelstvo [SCOPE.sCulture('circassian_culture_scope').GetName] regionu za každou cenu.\n\nDokud bude tento [concept_journal_entry] aktivní, budou [SCOPE.sCulture('circassian_culture_scope').GetName] [Concept('concept_pop', '$concept_pops$')|l] deportováni z našich hranic, za cenu obrovských ztrát na životech." # todo: NEW TRANSLATION
  circassia_defeated_tt: "#v $CIR$#! byl poražen" # todo: NEW TRANSLATION
  will_lead_to_expulsions_tt: "@warning! Toto povede k drastickým následkům pro populaci [SCOPE.sCulture('circassian_culture').GetName]" # todo: NEW TRANSLATION
  has_halted_deportations_tt: "Zastavil deportace lidí [SCOPE.sCulture('circassian_culture_scope').GetName]" # todo: NEW TRANSLATION
@@ -307,12 +307,12 @@
  circassian_refugees_deportations_tt: "[SCOPE.sCulture('circassian_culture_scope').GetName] uprchlíci začnou připlouvat do přístavů v severní Anatolii" # todo: NEW TRANSLATION
  circassian_refugees_warning_tt: "Podstatně větší procento uprchlíků [SCOPE.sCulture('circassian_culture_scope').GetName] bude na cestě zabito" # todo: NEW TRANSLATION
  hide_deportation_events_tt: "Budoucí události deportací budou skryty a objeví se jako #bold oznámení#!" # todo: NEW TRANSLATION
- circassians_below_5_percent: "Státní [Concept('concept_pop', '$concept_population$')] je méně než #v 5%#! [SCOPE.sCulture('circassian_culture_scope').GetName]" # todo: NEW TRANSLATION
- three_pops_deported_tt: "Několik [SCOPE.sCulture('circassian_culture_scope').GetName] [Concept('concept_pop', '$concept_pops$')] bude deportováno do [SCOPE.sState('expulsion_destination_state').GetName]" # todo: NEW TRANSLATION
+ circassians_below_5_percent: "Státní [Concept('concept_pop', '$concept_population$')|l] je méně než #v 5%#! [SCOPE.sCulture('circassian_culture_scope').GetName]" # todo: NEW TRANSLATION
+ three_pops_deported_tt: "Několik [SCOPE.sCulture('circassian_culture_scope').GetName] [Concept('concept_pop', '$concept_pops$')|l] bude deportováno do [SCOPE.sState('expulsion_destination_state').GetName]" # todo: NEW TRANSLATION
  notification_ottoman_circassian_refugees_arrived_name: "Připlouvají čerkesští uprchlíci" # todo: NEW TRANSLATION
  notification_ottoman_circassian_refugees_arrived_desc: "Lodě plné [SCOPE.sCulture('circassian_culture_scope').GetName] uprchlíků deportovaných z [SCOPE.sCountry('russia_scope').GetName] přistály na pobřeží [SCOPE.sState('expulsion_destination_state').GetName]. Mnozí již zemřeli na choroby během plavby." # todo: NEW TRANSLATION
  notification_ottoman_circassian_refugees_arrived_tooltip: "#header $notification_ottoman_circassian_refugees_arrived_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ottoman_circassian_refugees_arrived_desc$" # todo: NEW TRANSLATION
- notification_circassians_deported_message_name: "Vyhoštěni čerkesští [Concept('concept_pop', '$concept_pops$')]" # todo: NEW TRANSLATION
+ notification_circassians_deported_message_name: "Vyhoštěni čerkesští [Concept('concept_pop', '$concept_pops$')|l]" # todo: NEW TRANSLATION
  notification_circassians_deported_message_desc: "Lodě plné vyhoštěných [SCOPE.sCulture('circassian_culture_scope').GetName] vypluly směrem do [SCOPE.sState('expulsion_destination_state').GetName]. Mnozí již zemřeli na nemocích na březích Černého moře." # todo: NEW TRANSLATION
  notification_circassians_deported_message_tooltip: "#header $notification_ottoman_circassian_refugees_arrived_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ottoman_circassian_refugees_arrived_desc$" # todo: NEW TRANSLATION
  notification_ottoman_protest_notification_name: "[SCOPE.sCountry('ottoman_scope').GetName] protestuje proti vyhošťování" # todo: NEW TRANSLATION

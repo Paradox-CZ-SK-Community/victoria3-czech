@@ -79,18 +79,18 @@
  je_india_railway: "Poskytovatel pokroku" # todo: NEW TRANSLATION
  je_india_railway_reason: "Velkolepá železniční síť nás všechny propojí. Přinese zemi velký pokrok a utváří budoucnost našeho národa!" # todo: NEW TRANSLATION
  je_india_railway_status: "Postavte velkolepou síť $building_railway$, která spojí Indii." # todo: NEW TRANSLATION
- delhi_calcutta_line_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má všechny [Concept('concept_state_region','$concept_state_regions$')] pro výstavbu [GetGeographicRegion('geographic_region_delhi_calcutta_line').GetName]" # todo: NEW TRANSLATION
- allahabad_bombay_line_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má všechny [Concept('concept_state_region','$concept_state_regions$')] pro výstavbu [GetGeographicRegion('geographic_region_allahabad_bombay_line').GetName]" # todo: NEW TRANSLATION
- bombay_madras_line_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má všechny [Concept('concept_state_region','$concept_state_regions$')] pro výstavbu [GetGeographicRegion('geographic_region_bombay_madras_line').GetName]" # todo: NEW TRANSLATION
- gujarat_bombay_line_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má všechny [Concept('concept_state_region','$concept_state_regions$')] pro výstavbu [GetGeographicRegion('geographic_region_gujarat_bombay_line').GetName]" # todo: NEW TRANSLATION
+ delhi_calcutta_line_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má všechny [Concept('concept_state_region','$concept_state_regions$')|l] pro výstavbu [GetGeographicRegion('geographic_region_delhi_calcutta_line').GetName]" # todo: NEW TRANSLATION
+ allahabad_bombay_line_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má všechny [Concept('concept_state_region','$concept_state_regions$')|l] pro výstavbu [GetGeographicRegion('geographic_region_allahabad_bombay_line').GetName]" # todo: NEW TRANSLATION
+ bombay_madras_line_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má všechny [Concept('concept_state_region','$concept_state_regions$')|l] pro výstavbu [GetGeographicRegion('geographic_region_bombay_madras_line').GetName]" # todo: NEW TRANSLATION
+ gujarat_bombay_line_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má všechny [Concept('concept_state_region','$concept_state_regions$')|l] pro výstavbu [GetGeographicRegion('geographic_region_gujarat_bombay_line').GetName]" # todo: NEW TRANSLATION
  delhi_calcutta_line_status_tt: "$delhi_calcutta_line_complete_tt$: #indent_newline:3 \n[GetScriptedGui('je_india_railway_delhi_calcutta_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)]#!" # todo: NEW TRANSLATION
  allahabad_bombay_line_status_tt: "$allahabad_bombay_line_complete_tt$: #indent_newline:3 \n[GetScriptedGui('je_india_railway_allahabad_bombay_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)]#!" # todo: NEW TRANSLATION
  bombay_madras_line_status_tt: "$bombay_madras_line_complete_tt$: #indent_newline:3 \n[GetScriptedGui('je_india_railway_bombay_madras_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)]#!" # todo: NEW TRANSLATION
  gujarat_bombay_line_status_tt: "$gujarat_bombay_line_complete_tt$: #indent_newline:3 \n[GetScriptedGui('je_india_railway_gujarat_bombay_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)]#!" # todo: NEW TRANSLATION
- delhi_calcutta_line_complete_tt: "Všechny [Concept('concept_state_region','$concept_state_regions$')] na [GetGeographicRegion('geographic_region_delhi_calcutta_line').GetName] mají $building_railway$" # todo: NEW TRANSLATION
- allahabad_bombay_line_complete_tt: "Všechny [Concept('concept_state_region','$concept_state_regions$')] na [GetGeographicRegion('geographic_region_allahabad_bombay_line').GetName] mají $building_railway$" # todo: NEW TRANSLATION
- bombay_madras_line_complete_tt: "Všechny [Concept('concept_state_region','$concept_state_regions$')] na [GetGeographicRegion('geographic_region_bombay_madras_line').GetName] mají $building_railway$" # todo: NEW TRANSLATION
- gujarat_bombay_line_complete_tt: "Všechny [Concept('concept_state_region','$concept_state_regions$')] na [GetGeographicRegion('geographic_region_gujarat_bombay_line').GetName] mají $building_railway$" # todo: NEW TRANSLATION
+ delhi_calcutta_line_complete_tt: "Všechny [Concept('concept_state_region','$concept_state_regions$')|l] na [GetGeographicRegion('geographic_region_delhi_calcutta_line').GetName] mají $building_railway$" # todo: NEW TRANSLATION
+ allahabad_bombay_line_complete_tt: "Všechny [Concept('concept_state_region','$concept_state_regions$')|l] na [GetGeographicRegion('geographic_region_allahabad_bombay_line').GetName] mají $building_railway$" # todo: NEW TRANSLATION
+ bombay_madras_line_complete_tt: "Všechny [Concept('concept_state_region','$concept_state_regions$')|l] na [GetGeographicRegion('geographic_region_bombay_madras_line').GetName] mají $building_railway$" # todo: NEW TRANSLATION
+ gujarat_bombay_line_complete_tt: "Všechny [Concept('concept_state_region','$concept_state_regions$')|l] na [GetGeographicRegion('geographic_region_gujarat_bombay_line').GetName] mají $building_railway$" # todo: NEW TRANSLATION
  INDIAN_RAILWAY_ENTRY: "$checkbox_ticked$ [SCOPE.sStateRegion('state_region_to_display').GetName] má [GetBuildingType('building_railway').GetName]" # todo: NEW TRANSLATION
  INDIAN_RAILWAY_ENTRY_NO: "$checkbox_unticked$ [SCOPE.sStateRegion('state_region_to_display').GetName] nemá [GetBuildingType('building_railway').GetName]" # todo: NEW TRANSLATION
  indian_railway_delhi_calcutta_tt: "Trasa Delhi–Kalkata zahrnuje $concept_state_regions$:\n$STATE_WEST_BENGAL$\n$STATE_BIHAR$\n$STATE_AWADH$\n$STATE_AGRA$\n$STATE_DELHI$" # todo: NEW TRANSLATION
@@ -136,9 +136,9 @@
  india_railway_reward: "Skvělé spojení" # todo: NEW TRANSLATION
  je_victoria_terminus: "Victoria Terminus" # todo: NEW TRANSLATION
  je_victoria_terminus_reason: "Příznivci [SCOPE.gsInterestGroup('relevant_terminus_ig').GetName] vybrali prostředky na #tooltippable #tooltip:victoria_terminus_construct_tt #bold vybudování velkého terminusu#! #!#!in $STATE_BOMBAY$. Tento elegantní terminus s přidanými železničními nástupišti a administrativními kancelářemi slibuje zlepšit veřejné mínění o Indii." # todo: NEW TRANSLATION
- je_victoria_terminus_status: "Postavte $building_victoria_terminus$ v [Concept('concept_state_region','$concept_state_region$')] $STATE_BOMBAY$." # todo: NEW TRANSLATION
- victoria_terminus_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má $building_railway$ v [Concept('concept_state_region','$concept_state_region$')] $STATE_BOMBAY$." # todo: NEW TRANSLATION
- victoria_terminus_complete_tt: "[ROOT.GetCountry.GetNameNoFormatting] vybudoval $building_victoria_terminus$ v [Concept('concept_state_region','$concept_state_region$')] $STATE_BOMBAY$" # todo: NEW TRANSLATION
+ je_victoria_terminus_status: "Postavte $building_victoria_terminus$ v [Concept('concept_state_region','$concept_state_region$')|l] $STATE_BOMBAY$." # todo: NEW TRANSLATION
+ victoria_terminus_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má $building_railway$ v [Concept('concept_state_region','$concept_state_region$')|l] $STATE_BOMBAY$." # todo: NEW TRANSLATION
+ victoria_terminus_complete_tt: "[ROOT.GetCountry.GetNameNoFormatting] vybudoval $building_victoria_terminus$ v [Concept('concept_state_region','$concept_state_region$')|l] $STATE_BOMBAY$" # todo: NEW TRANSLATION
  victoria_terminus_populated_tt: "Obsazenost pracovní síly $building_victoria_terminus$ [concept_occupancy] je větší nebo rovna #variable 50%#!" # todo: NEW TRANSLATION
  rejected_victoria_terminus_project_tt: "[ROOT.GetCountry.GetNameNoFormatting] odmítl návrh na výstavbu $building_victoria_terminus$." # todo: NEW TRANSLATION
  does_not_have_state_bombay_tt: "[ROOT.GetCountry.GetNameNoFormatting] nemá $STATE_BOMBAY$." # todo: NEW TRANSLATION
@@ -168,16 +168,16 @@
  progress_from_khalsaji_is_powerful_tt: "[concept_powerful] [GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant] [concept_interest_group]" # todo: NEW TRANSLATION
  progress_from_khalsaji_not_in_government_tt: "[GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant] [concept_interest_group] není [concept_in_government]" # todo: NEW TRANSLATION
  progress_from_sikh_state_religion_tt: "[GetReligion('sikh').GetName] je [concept_state_religion]" # todo: NEW TRANSLATION
- progress_from_law_freedom_of_conscience_tt: "[GetLawType('law_freedom_of_conscience').GetName] [concept_law] je [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enacted$')]" # todo: NEW TRANSLATION
+ progress_from_law_freedom_of_conscience_tt: "[GetLawType('law_freedom_of_conscience').GetName] [concept_law] je [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enacted$')|l]" # todo: NEW TRANSLATION
  sikh_empire_intrigue_bar: "Dvorské intriky" # todo: NEW TRANSLATION
  sikh_empire_intrigue_bar_desc: "[Concept('concept_court_intrigue','$concept_court_intrigue_short$')]: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/60)" # todo: NEW TRANSLATION
  intrigue_from_ranjit_singh_tt: "$RULER_TITLE_MAHARAJA$ ([concept_ruler]) je #b $Ranjit$ $Singh$#!" # todo: NEW TRANSLATION
- intrigue_from_upset_government_ruthless_igs_tt: "[GetCharacterTrait('ruthless').GetName] [Concept('concept_leader', '$concept_leaders$')] [concept_in_government] s [concept_approval] pod #v 0#!" # todo: NEW TRANSLATION
- intrigue_from_upset_opposition_ruthless_igs_tt: "[GetCharacterTrait('ruthless').GetName] [Concept('concept_leader', '$concept_leaders$')] [concept_in_opposition] s [concept_approval] pod #v 0#!" # todo: NEW TRANSLATION
- intrigue_from_upset_government_ambitious_igs_tt: "[GetCharacterTrait('ambitious').GetName] [Concept('concept_leader', '$concept_leaders$')] [concept_in_government] s [concept_approval] pod #v 0#!" # todo: NEW TRANSLATION
- intrigue_from_upset_opposition_ambitious_igs_tt: "[GetCharacterTrait('ambitious').GetName] [Concept('concept_leader', '$concept_leaders$')] [concept_in_opposition] s [concept_approval] pod #v 0#!" # todo: NEW TRANSLATION
- intrigue_from_happy_government_ruthless_igs_tt: "[GetCharacterTrait('ruthless').GetName] [Concept('concept_leader', '$concept_leaders$')] [concept_in_government] s [concept_approval] nad #v 5#!" # todo: NEW TRANSLATION
- intrigue_from_compliant_igs_tt: "[GetCharacterTrait('compliant').GetName] [Concept('concept_leader', '$concept_leaders$')] [concept_in_government]" # todo: NEW TRANSLATION
+ intrigue_from_upset_government_ruthless_igs_tt: "[GetCharacterTrait('ruthless').GetName] [Concept('concept_leader', '$concept_leaders$')|l] [concept_in_government] s [concept_approval] pod #v 0#!" # todo: NEW TRANSLATION
+ intrigue_from_upset_opposition_ruthless_igs_tt: "[GetCharacterTrait('ruthless').GetName] [Concept('concept_leader', '$concept_leaders$')|l] [concept_in_opposition] s [concept_approval] pod #v 0#!" # todo: NEW TRANSLATION
+ intrigue_from_upset_government_ambitious_igs_tt: "[GetCharacterTrait('ambitious').GetName] [Concept('concept_leader', '$concept_leaders$')|l] [concept_in_government] s [concept_approval] pod #v 0#!" # todo: NEW TRANSLATION
+ intrigue_from_upset_opposition_ambitious_igs_tt: "[GetCharacterTrait('ambitious').GetName] [Concept('concept_leader', '$concept_leaders$')|l] [concept_in_opposition] s [concept_approval] pod #v 0#!" # todo: NEW TRANSLATION
+ intrigue_from_happy_government_ruthless_igs_tt: "[GetCharacterTrait('ruthless').GetName] [Concept('concept_leader', '$concept_leaders$')|l] [concept_in_government] s [concept_approval] nad #v 5#!" # todo: NEW TRANSLATION
+ intrigue_from_compliant_igs_tt: "[GetCharacterTrait('compliant').GetName] [Concept('concept_leader', '$concept_leaders$')|l] [concept_in_government]" # todo: NEW TRANSLATION
  ruler_interest_group_powerful_tt: "[concept_powerful] [ROOT.GetCountry.GetRuler.GetInterestGroup.GetName]" # todo: NEW TRANSLATION
  ruler_interest_group_marginal_tt: "[concept_marginalized] [ROOT.GetCountry.GetRuler.GetInterestGroup.GetName]" # todo: NEW TRANSLATION
  intrigue_from_reckless_tt: "[GetCharacterTrait('reckless').GetName] [concept_ruler]" # todo: NEW TRANSLATION

@@ -53,8 +53,8 @@
  coup_popularity_vs_legitimacy_tt: "[Concept('concept_popularity','Popularita')] pučistického [Concept('concept_commander','velitele')]" # todo: CONCEPT CASE
  coup_commander_rank_progress_tt: "[Concept('concept_commander_rank', '$Rank$')] pučistického [Concept('concept_commander','velitele')]" # todo: CONCEPT CASE
  coup_commander_core_location_progress_tt: "pučistický [Concept('concept_commander','velitel')] se nachází ve [Concept('concept_strategic_region', 'strategické oblasti')] [Concept('concept_capital_state', 'hlavního státu')]"
- coup_commander_periphery_location_progress_tt: "pučistický [Concept('concept_commander','velitel')] se nachází ve [Concept('concept_strategic_region', 'strategické oblasti')] s vlastněnými [Concept('concept_incorporated_state', '$concept_incorporated_states$')]"
- coup_commander_colony_location_progress_tt: "pučistický [Concept('concept_commander','velitel')] se nachází ve [Concept('concept_strategic_region', 'strategické oblasti')] bez vlastněných [Concept('concept_incorporated_state', '$concept_incorporated_states$')]"
+ coup_commander_periphery_location_progress_tt: "pučistický [Concept('concept_commander','velitel')] se nachází ve [Concept('concept_strategic_region', 'strategické oblasti')] s vlastněnými [Concept('concept_incorporated_state', '$concept_incorporated_states$')|l]"
+ coup_commander_colony_location_progress_tt: "pučistický [Concept('concept_commander','velitel')] se nachází ve [Concept('concept_strategic_region', 'strategické oblasti')] bez vlastněných [Concept('concept_incorporated_state', '$concept_incorporated_states$')|l]"
  coup_commander_no_location_progress_tt: "pučistický [Concept('concept_commander','velitel')] je na přesunu nebo na [Concept('concept_front','frontě')]" # todo: CONCEPT CASE
  coup_commander_unassigned_location_progress_tt: "pučistický [Concept('concept_commander','velitel')] není přiřazen k [Concept('concept_incorporated_state', 'polnímu velení')]"
  appeased_golpista_igs_tt: "uklidněný pučistický [Concept('concept_commander','velitel')]"
@@ -113,7 +113,7 @@
  proclaim_regent_monarch: "Prohlásit regenta panovníkem"
  proclaim_regent_monarch_desc: "Bez legitimního nárokovatele v linii následnictví čelíme nevděčnému úkolu vybrat nového panovníka, který bude vládnout zemi [Character.GetCountry.GetName]. Stávající [Character.GetPrimaryRoleTitle] je silným uchazečem o tuto pozici."
  no_heir_tt: "Neexistuje žádný legitimní [Concept('concept_heir','nárokovatel')] trůnu"
- eterna_regency_tt: "Stávající [Concept('concept_ruler','$RULER_TITLE_REGENT$')] je u moci déle než #v 10 let#! (aktuálně [Character.MakeScope.Var('regency_years').GetValue|v0])"
+ eterna_regency_tt: "Stávající [Concept('concept_ruler','$RULER_TITLE_REGENT$')|l] je u moci déle než #v 10 let#! (aktuálně [Character.MakeScope.Var('regency_years').GetValue|v0])"
  modifier_new_royal_dynasty: "Nová královská dynastie"
  effects_depend_on_popularity_tt: "Účinky této interakce se budou lišit podle [Concept('concept_popularity','popularity')] postavy [Character.GetFullName]" # todo: CONCEPT CASE
  espartero_becomes_monarch_tt: "[SCOPE.sCharacter('espartero_scope').GetFullName] bude korunován jako [SCOPE.sCharacter('espartero_scope').GetCountry.GetCustom('country_male_royal_title')] země [ROOT.GetCountry.GetName]"
@@ -559,7 +559,7 @@
  je_spain_provisional_government_bonaparte_button_desc: "Rod Bonapartů vládl nad $SPA_ADJ_I$ krátké období mezi lety 1808 a 1813. Král tohoto období, Josef I. Bonaparte, nebyl většinou španělské populace nikdy považován za legitimního a byl ze Španělska vyhnán lidovým povstáním. Minulé události však nezaručují budoucí výsledky. Pokud si prozatímní vláda přeje učinit vstřícný krok vůči $FRA$, může pozvat bonapartistického prince a doufat v lepší výsledek."
  je_spain_provisional_government_republic_button: "Vyhlásit republiku"
  je_spain_provisional_government_republic_button_desc: "Republikanismus je v $SPA_ADJ_L$ novým postojem, který se objevil teprve nedávno jako protiváha konstitučního monarchismu typického pro španělské doktrinářské liberály. Pokud nelze najít žádného krále, nebo pokud republikanismus politicky zastíní konstitucionalismus, může být vyhlášení republiky jedinou zbývající možností."
- successfully_crowned_a_king_tt: "Úspěšně korunován [Concept('concept_ruler','$RULER_TITLE_KING$')]"
+ successfully_crowned_a_king_tt: "Úspěšně korunován [Concept('concept_ruler','$RULER_TITLE_KING$')|l]"
  je_active_for_more_than_five_years_tt: "Tento [Concept('concept_journal_entry','záznam v deníku')] je aktivní déle než #v 5 let#!"
  activate_provisional_government_tt: "Bude svolána #b prozatímní vláda#!, aby zvolila $RULER_TITLE_KING$"
  already_couped_dynasty_tt: "Tato dynastie #b nebyla#! nedávno sesazena"
@@ -864,8 +864,8 @@
  coup_num_navy_units_tt: "podíl celkových námořních [Concept('concept_unit','vojenské jednotky')] pod velením"
  coup_commander_rank_tt: "[Concept('concept_commander_rank', '$Rank$')] [Concept('concept_commander','velitel')]"
  coup_commander_core_location_tt: "nachází se v [Concept('concept_capital_state','hlavním městě')] [Concept('concept_strategic_region','strategickém regionu')]" # todo: CONCEPT CASE
- coup_commander_periphery_location_tt: "nachází se ve [Concept('concept_strategic_region','strategickém regionu')] s vlastněnými [Concept('concept_incorporated_state', '$concept_incorporated_states$')]" # todo: CONCEPT CASE
- coup_commander_colony_location_tt: "nachází se ve [Concept('concept_strategic_region','strategickém regionu')] bez vlastněných [Concept('concept_incorporated_state', '$concept_incorporated_states$')]" # todo: CONCEPT CASE
+ coup_commander_periphery_location_tt: "nachází se ve [Concept('concept_strategic_region','strategickém regionu')] s vlastněnými [Concept('concept_incorporated_state', '$concept_incorporated_states$')|l]" # todo: CONCEPT CASE
+ coup_commander_colony_location_tt: "nachází se ve [Concept('concept_strategic_region','strategickém regionu')] bez vlastněných [Concept('concept_incorporated_state', '$concept_incorporated_states$')|l]" # todo: CONCEPT CASE
  coup_commander_no_location_tt: "je v přesunu nebo na [Concept('concept_front','frontě')]" # todo: CONCEPT CASE
  coup_commander_unassigned_location_tt: "není přiřazen k [Concept('concept_incorporated_state', 'polnímu velení')]"
  coup_clout_tt: "[Concept('concept_clout','Politický vliv')] [Concept('concept_interest_group','zájmová skupina')]"

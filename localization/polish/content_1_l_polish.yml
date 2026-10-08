@@ -1116,7 +1116,7 @@
  veiled_protectorate_ottomans_support: "podpora osmanského znovudobytí Egypta" # todo: NEW TRANSLATION
  veiled_protectorate_egypt_support: "podpora egyptské nezávislosti" # todo: NEW TRANSLATION
  german_leadership_neutrality: "postrádá důvod se zapojit do #v $dp_leadership_germany$#!" # todo: NEW TRANSLATION
- unlock_national_agitation_tt: "Odemkne postavovou interakci 'Rozdmýchat národní agitaci' pro [Concept('concept_agitator','$concept_agitators$')]" # todo: NEW TRANSLATION
+ unlock_national_agitation_tt: "Odemkne postavovou interakci 'Rozdmýchat národní agitaci' pro [Concept('concept_agitator','$concept_agitators$')|l]" # todo: NEW TRANSLATION
  risorgimento_unifying_stance_tt: "Rozhodl se #bold podpořit#! Risorgimento" # todo: NEW TRANSLATION
  risorgimento_unifying_stance_set_tt: "Budeme moci podniknout další kroky k #bold podpoře#! Risorgimenta" # todo: NEW TRANSLATION
  risorgimento_opposing_stance_tt: "Nezvolil si #bold podporu#! Risorgimentu" # todo: NEW TRANSLATION
@@ -1127,10 +1127,10 @@
  notification_nationalism_national_agitation_occurred_desc: "[SCOPE.sCulture('agitation_culture').GetName] nacionalistické nepokoje se rychle zvýšily v [SCOPE.sState('agitation_state').GetName]. Agenti [SCOPE.sCountry('agitation_sponsor').GetName] jsou podezřelí z podněcování vzpoury." # todo: NEW TRANSLATION
  notification_nationalism_national_agitation_occurred_tooltip: "#header $notification_nationalism_national_agitation_occurred_name$#!\n$TOOLTIP_DELIMITER$\n$notification_nationalism_national_agitation_occurred_desc$" # todo: NEW TRANSLATION
  notification_nationalism_decision_agitation_occurred_name: "Nepokoje v regionech #bold Italian#!" # todo: NEW TRANSLATION
- notification_nationalism_decision_agitation_occurred_desc: "#bold Italian#! nacionalistický [Concept('concept_activism', '$concept_activism_short$')] se výrazně zvýšil v našich #bold Italian#! územích. Za vznik nepokojů je podezřívána propaganda [SCOPE.sCountry('saboteur_country').GetAdjective]." # todo: NEW TRANSLATION
+ notification_nationalism_decision_agitation_occurred_desc: "#bold Italian#! nacionalistický [Concept('concept_activism', '$concept_activism_short$')|l] se výrazně zvýšil v našich #bold Italian#! územích. Za vznik nepokojů je podezřívána propaganda [SCOPE.sCountry('saboteur_country').GetAdjective]." # todo: NEW TRANSLATION
  notification_nationalism_decision_agitation_occurred_tooltip: "#header $notification_nationalism_decision_agitation_occurred_name$#!\n$TOOLTIP_DELIMITER$\n$notification_nationalism_decision_agitation_occurred_desc$" # todo: NEW TRANSLATION
  notification_sabotage_decision_agitation_occurred_name: "Nepokoje podporující sjednocení zasáhly [SCOPE.sCountry('victim_country').GetName]" # todo: NEW TRANSLATION
- notification_sabotage_decision_agitation_occurred_desc: "Inspirováno voláním po italském sjednocení ze strany [SCOPE.sCountry('saboteur_country').GetName], [Concept('concept_activism', '$concept_activism_short$')] hnutí [SCOPE.sPoliticalMovement('italian_nationalist_movement').GetName] se zvýšil." # todo: NEW TRANSLATION
+ notification_sabotage_decision_agitation_occurred_desc: "Inspirováno voláním po italském sjednocení ze strany [SCOPE.sCountry('saboteur_country').GetName], [Concept('concept_activism', '$concept_activism_short$')|l] hnutí [SCOPE.sPoliticalMovement('italian_nationalist_movement').GetName] se zvýšil." # todo: NEW TRANSLATION
  notification_sabotage_decision_agitation_occurred_tooltip: "#header $notification_sabotage_decision_agitation_occurred_name$#!\n$TOOLTIP_DELIMITER$\n$notification_sabotage_decision_agitation_occurred_desc$" # todo: NEW TRANSLATION
  italian_nationalist_movements_list_tt: "[Concept('concept_political_movement','$concept_political_movements$')] kompatibilní s #v $ITA_ADJ$#! [concept_unification] zahrnují:\n• $movement_liberal$\n• $movement_radical$\n• $movement_anti_slavery$\n• $movement_positivist$\n• $movement_labor$\n• $movement_cultural_majority$\n• $movement_fascist$\n• $movement_modernizer$\n• $movement_socialist$\n• $movement_communist$\n• $movement_anarchist$\n• $movement_nihilist$" # todo: NEW TRANSLATION
  modifier_italian_unificationist_sentiment: "Italské nacionalistické nálady" # todo: NEW TRANSLATION

@@ -668,7 +668,7 @@
  state_migration_pull_unincorporated_mult: "[Concept('concept_migration_pull','Migrační přitažlivost')] [Concept('concept_unincorporated_state', 'nezačleněných států')]"
  state_migration_pull_unincorporated_mult_desc: "Bonus nebo penalizace pro touhu migrovat do [Concept('concept_unincorporated_state', 'nezačleněných států')]"
  building_minimum_incorporated_subsistence_employment_add: "Chráněné zaměstnání na úrovni živobytí v $concept_incorporated_states$"
- building_minimum_incorporated_subsistence_employment_add_desc: "Zvýšení nebo snížení úrovně zaměstnanosti, pod kterou není možné, aby jiné [Concept('concept_building','budovy')] najímaly z [Concept('concept_subsistence_building','samozásobitelské budovy')] v [Concept('concept_incorporated_state', '$concept_incorporated_states$')]."
+ building_minimum_incorporated_subsistence_employment_add_desc: "Zvýšení nebo snížení úrovně zaměstnanosti, pod kterou není možné, aby jiné [Concept('concept_building','budovy')] najímaly z [Concept('concept_subsistence_building','samozásobitelské budovy')] v [Concept('concept_incorporated_state', '$concept_incorporated_states$')|l]."
  state_minimum_incorporated_subsistence_arable_land_add: "Minimální podíl půdy pro živobytí v $concept_incorporated_states$"
  state_minimum_incorporated_subsistence_arable_land_add_desc: "Zvýšení nebo snížení minimálního zlomku obdělávatelné půdy [Concept('concept_state','začleněného státu')], která je vyhrazena pro [Concept('concept_subsistence_building','samozásobitelské budovy')] a nelze ji použít pro jiné typy [Concept('concept_building','budovy')]."
  state_migration_quota_mult: "[Concept('concept_migration','Migrační')] kvóta"
@@ -764,7 +764,7 @@
  state_fortification_bombardment_resistance_add: "$building_naval_fortification$ Odolnost vůči bombardování" # todo: NEW TRANSLATION
  state_fortification_bombardment_resistance_add_desc: "Odolnost vůči ostřelování přístavu poskytovaná $building_naval_fortification$ v [Concept('concept_state','státě')]. Vyšší hodnoty snižují účinnost nepřátelského námořního bombardování." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  state_colony_growth_creation_factor: "Generace kolonialního růstu"
- state_colony_growth_creation_factor_desc: "Množství koloniálního růstu generovaného [Concept('concept_pop','populací')] z [Concept('concept_incorporated_state', '$concept_incorporated_states$')]." # todo: CONCEPT CASE
+ state_colony_growth_creation_factor_desc: "Množství koloniálního růstu generovaného [Concept('concept_pop','populací')] z [Concept('concept_incorporated_state', '$concept_incorporated_states$')|l]." # todo: CONCEPT CASE
  state_colony_growth_speed_mult: "Rychlost růstu kolonií"
  state_colony_growth_speed_mult_desc: "Bonus nebo penalizace k finální rychlosti koloniálního růstu v [Concept('concept_colony','kolonii')]." # todo: CONCEPT CASE
  state_non_homeland_colony_growth_speed_mult: "Rychlost růstu kolonií mimo [Concept('concept_homeland','domovských')] [Concept('concept_state', 'států')]"
@@ -2679,21 +2679,21 @@
  country_ship_construction_efficiency_add: "Efektivita stavby lodí" # todo: NEW TRANSLATION
  country_ship_construction_efficiency_add_desc: "Efektivita všech @ship_construction! [Concept('concept_ship_construction','stavby lodí')], ovlivňující, kolik [Concept('concept_ship_construction','stavby lodí')] je potřeba na jednotku pokroku" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  country_ship_group_capital_ships_construction_efficiency_add: "$ship_group_capital_ships$ Efektivita stavby" # todo: NEW TRANSLATION
- country_ship_group_capital_ships_construction_efficiency_add_desc: "Efektivita [Concept('concept_ship_group', '$ship_group_capital_ships$')] @ship_construction! [Concept('concept_ship_construction','stavba lodí')]" # todo: NEW TRANSLATION
+ country_ship_group_capital_ships_construction_efficiency_add_desc: "Efektivita [Concept('concept_ship_group', '$ship_group_capital_ships$')|l] @ship_construction! [Concept('concept_ship_construction','stavba lodí')]" # todo: NEW TRANSLATION
  country_ship_group_cruisers_construction_efficiency_add: "$ship_group_cruisers$ Efektivita stavby" # todo: NEW TRANSLATION
- country_ship_group_cruisers_construction_efficiency_add_desc: "Efektivita [Concept('concept_ship_group', '$ship_group_cruisers$')] @ship_construction! [Concept('concept_ship_construction','stavba lodí')]" # todo: NEW TRANSLATION
+ country_ship_group_cruisers_construction_efficiency_add_desc: "Efektivita [Concept('concept_ship_group', '$ship_group_cruisers$')|l] @ship_construction! [Concept('concept_ship_construction','stavba lodí')]" # todo: NEW TRANSLATION
  country_ship_group_torpedo_craft_construction_efficiency_add: "$ship_group_torpedo_craft$ Efektivita stavby" # todo: NEW TRANSLATION
- country_ship_group_torpedo_craft_construction_efficiency_add_desc: "Efektivita [Concept('concept_ship_group', '$ship_group_torpedo_craft$')] @ship_construction! [Concept('concept_ship_construction','stavba lodí')]" # todo: NEW TRANSLATION
+ country_ship_group_torpedo_craft_construction_efficiency_add_desc: "Efektivita [Concept('concept_ship_group', '$ship_group_torpedo_craft$')|l] @ship_construction! [Concept('concept_ship_construction','stavba lodí')]" # todo: NEW TRANSLATION
  country_ship_group_supply_ships_construction_efficiency_add: "$ship_group_supply_ships$ Efektivita stavby" # todo: NEW TRANSLATION
- country_ship_group_supply_ships_construction_efficiency_add_desc: "Efektivita [Concept('concept_ship_group', '$ship_group_supply_ships$')] @ship_construction! [Concept('concept_ship_construction','stavba lodí')]" # todo: NEW TRANSLATION
+ country_ship_group_supply_ships_construction_efficiency_add_desc: "Efektivita [Concept('concept_ship_group', '$ship_group_supply_ships$')|l] @ship_construction! [Concept('concept_ship_construction','stavba lodí')]" # todo: NEW TRANSLATION
  country_ship_type_troop_ship_construction_efficiency_add: "$ship_type_troop_ship$ Efektivita stavby" # todo: NEW TRANSLATION
- country_ship_type_troop_ship_construction_efficiency_add_desc: "Efektivita [Concept('concept_ship_type', '$ship_type_troop_ship$')] @ship_construction! [Concept('concept_ship_construction','stavba lodí')]" # todo: NEW TRANSLATION
+ country_ship_type_troop_ship_construction_efficiency_add_desc: "Efektivita [Concept('concept_ship_type', '$ship_type_troop_ship$')|l] @ship_construction! [Concept('concept_ship_construction','stavba lodí')]" # todo: NEW TRANSLATION
  country_ship_type_protected_cruiser_construction_efficiency_add: "$ship_type_protected_cruiser$ Efektivita stavby" # todo: NEW TRANSLATION
- country_ship_type_protected_cruiser_construction_efficiency_add_desc: "Efektivita [Concept('concept_ship_type', '$ship_type_protected_cruiser$')] @ship_construction! [Concept('concept_ship_construction','stavba lodí')]" # todo: NEW TRANSLATION
+ country_ship_type_protected_cruiser_construction_efficiency_add_desc: "Efektivita [Concept('concept_ship_type', '$ship_type_protected_cruiser$')|l] @ship_construction! [Concept('concept_ship_construction','stavba lodí')]" # todo: NEW TRANSLATION
  country_ship_type_armored_cruiser_construction_efficiency_add: "$ship_type_armored_cruiser$ Efektivita stavby" # todo: NEW TRANSLATION
- country_ship_type_armored_cruiser_construction_efficiency_add_desc: "Efektivita [Concept('concept_ship_type', '$ship_type_armored_cruiser$')] @ship_construction! [Concept('concept_ship_construction','stavba lodí')]" # todo: NEW TRANSLATION
+ country_ship_type_armored_cruiser_construction_efficiency_add_desc: "Efektivita [Concept('concept_ship_type', '$ship_type_armored_cruiser$')|l] @ship_construction! [Concept('concept_ship_construction','stavba lodí')]" # todo: NEW TRANSLATION
  country_ship_type_light_cruiser_construction_efficiency_add: "$ship_type_light_cruiser$ Efektivita stavby" # todo: NEW TRANSLATION
- country_ship_type_light_cruiser_construction_efficiency_add_desc: "Efektivita [Concept('concept_ship_type', '$ship_type_light_cruiser$')] @ship_construction! [Concept('concept_ship_construction','stavba lodí')]" # todo: NEW TRANSLATION
+ country_ship_type_light_cruiser_construction_efficiency_add_desc: "Efektivita [Concept('concept_ship_type', '$ship_type_light_cruiser$')|l] @ship_construction! [Concept('concept_ship_construction','stavba lodí')]" # todo: NEW TRANSLATION
  country_ship_construction_progress_max_add: "Maximální pokrok stavby lodi" # todo: NEW TRANSLATION
  country_ship_construction_progress_max_add_desc: "Maximální množství pokroku ve stavbě, které může [Concept('concept_country','země')] týdně věnovat jednomu projektu stavby lodi" # todo: NEW TRANSLATION
  country_ship_construction_goods_cost_mult: "[Concept('concept_ship_construction','Stavba lodí')] náklady na [Concept('concept_good','zboží')]" # todo: NEW TRANSLATION
@@ -3637,7 +3637,7 @@
  country_loyalism_increases_full_acceptance_mult: "[Concept('concept_loyalist','Loajalismus')] roste pro [Concept('concept_acceptance_status','status přijetí')|l] @acceptance_status_5! plné přijetí" # todo: CONCEPT CASE
  country_loyalism_increases_full_acceptance_mult_desc: "$country_loyalism_increases_generic_desc$"
  state_radicalism_increases_generic_desc: "Bonus nebo penalizace na zvýšení [Concept('concept_radical', 'radikálů')] [Concept('concept_pop', 'populace')] s týmto [Concept('concept_acceptance_status','statusem')|l]"
- state_loyalism_increases_generic_desc: "Bonus nebo penalizace ke zvýšení v [Concept('concept_loyalist', '$concept_loyalism$')] pro [Concept('concept_pop','populace')] mějící tenhle [Concept('concept_acceptance_status','status')|l]"
+ state_loyalism_increases_generic_desc: "Bonus nebo penalizace ke zvýšení v [Concept('concept_loyalist', '$concept_loyalism$')|l] pro [Concept('concept_pop','populace')] mějící tenhle [Concept('concept_acceptance_status','status')|l]"
  state_radicalism_increases_violent_hostility_mult: "Nárust [Concept('concept_radical', 'radikálů')] pro [Concept('concept_acceptance_status','status přijetí')|l] @acceptance_status_1! agresivní nenávist" # todo: CONCEPT CASE
  state_radicalism_increases_violent_hostility_mult_desc: "$state_radicalism_increases_generic_desc$"
  state_radicalism_increases_cultural_erasure_mult: "[Concept('concept_radical','Radikalismus')] se zvyšuje pro [Concept('concept_acceptance_status','status přijetí')|l] @acceptance_status_2! kulturní vymazání" # todo: CONCEPT CASE

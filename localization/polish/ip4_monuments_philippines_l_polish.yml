@@ -32,8 +32,8 @@
  je_philippines_main_ilustrado_button: "Podpořit Ilustrados" # todo: NEW TRANSLATION
  je_philippines_main_ilustrado_button_desc: "Mnoho vyšších a středních vrstev [GetCulture('filipino_mestizo').GetCustom('getPluralDemonym')] a takzvaní #italic Indios#! byly vystaveny ideálům [GetCulture('spanish').GetName] [GetIdeology('ideology_liberal').GetName]. Tato rychle rostoucí vzdělaná třída začala tíhnout k [GetInterestGroupVariant('ig_intelligentsia',GetPlayer).GetName]. Usilují o reformu zákonů a zavedení liberálnější agendy v [ROOT.GetCountry.GetName]." # todo: NEW TRANSLATION
  je_philippines_development_complete: "Dokončeno $je_philippines_development$ [concept_journal_entry]." # todo: NEW TRANSLATION
- notification_filipino_mestizo_now_primary_culture_name: "[GetCulture('spanish').GetName] již není [Concept('concept_primary_cultures','$concept_primary_culture$')]" # todo: NEW TRANSLATION
- notification_filipino_mestizo_now_primary_culture_desc: "Teď, když již nejsme pod vládou $SPA_ADJ$, je [GetCulture('filipino_mestizo').GetName] naším [Concept('concept_primary_cultures','$concept_primary_culture$')]." # todo: NEW TRANSLATION
+ notification_filipino_mestizo_now_primary_culture_name: "[GetCulture('spanish').GetName] již není [Concept('concept_primary_cultures','$concept_primary_culture$')|l]" # todo: NEW TRANSLATION
+ notification_filipino_mestizo_now_primary_culture_desc: "Teď, když již nejsme pod vládou $SPA_ADJ$, je [GetCulture('filipino_mestizo').GetName] naším [Concept('concept_primary_cultures','$concept_primary_culture$')|l]." # todo: NEW TRANSLATION
  notification_filipino_mestizo_now_primary_culture_tooltip: "#header $notification_filipino_mestizo_now_primary_culture_name$#!\n$TOOLTIP_DELIMITER$\n$notification_filipino_mestizo_now_primary_culture_desc$" # todo: NEW TRANSLATION
  philippines.1.t: "[ROOT.GetCountry.GetAdjective] identita" # todo: NEW TRANSLATION
  philippines.1.d: "Vzhledem k rostoucímu napětí více lidí usiluje o větší zastoupení ve vládě, zatímco jiní volají po nezávislosti na [ROOT.GetCountry.GetTopOverlord.GetName]. Převezme [ROOT.GetCountry.GetTopOverlord.GetAdjectiveNoFormatting] vláda otěže, nebo se lid [ROOT.GetCountry.GetName] prosadí a získá větší svobody?" # todo: NEW TRANSLATION
@@ -105,7 +105,7 @@
  cathedral_1_built_cathedral_2_ready_status_loc: "Druhá fáze [GetBuildingType('building_sagrada_familia_cathedral_2').GetName] je připravena ke stavbě" # todo: NEW TRANSLATION
  cathedral_2_built_cathedral_3_ready_status_loc: "Třetí fáze [GetBuildingType('building_sagrada_familia_cathedral_3').GetName] je připravena ke stavbě" # todo: NEW TRANSLATION
  cathedral_3_built_complete_status_loc: "$building_sagrada_familia_cathedral_3$ je dokončen" # todo: NEW TRANSLATION
- sagrada_familia_complete_tt: "[ROOT.GetCountry.GetNameNoFormatting] postavil tři fáze $building_sagrada_familia_cathedral_3$ v [Concept('concept_state_region','$concept_state_region$')] $STATE_CATALONIA$" # todo: NEW TRANSLATION
+ sagrada_familia_complete_tt: "[ROOT.GetCountry.GetNameNoFormatting] postavil tři fáze $building_sagrada_familia_cathedral_3$ v [Concept('concept_state_region','$concept_state_region$')|l] $STATE_CATALONIA$" # todo: NEW TRANSLATION
  sagrada_familia_populated_tt: "Pracovní síla $building_sagrada_familia_cathedral_3$ [concept_occupancy] je větší nebo rovna #variable 50%#!" # todo: NEW TRANSLATION
  rejected_sagrada_familia_project_tt: "[ROOT.GetCountry.GetNameNoFormatting] odmítá návrh na výstavbu $building_sagrada_familia_cathedral_3$" # todo: NEW TRANSLATION
  does_not_have_state_catalonia_tt: "[ROOT.GetCountry.GetNameNoFormatting] nemá $STATE_CATALONIA$" # todo: NEW TRANSLATION
@@ -139,8 +139,8 @@
  sagrada_familia_reward_int: "Architektonické uznání" # todo: NEW TRANSLATION
  je_pena_palace: "Slavný Eden" # todo: NEW TRANSLATION
  je_pena_palace_reason: "Choť [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullName] nedávno získal(a) starý klášter Pena na vrcholcích pohoří Sintra. S velkými uměleckými ambicemi se snaží přeměnit klášter na letní rezidenci královské rodiny." # todo: NEW TRANSLATION
- pena_palace_possible_tt: "[JournalEntry.GetCountry.GetName] má $building_pena_convent$ v [Concept('concept_state_region','$concept_state_region$')] $STATE_ESTREMADURA$" # todo: NEW TRANSLATION
- pena_palace_complete_tt: "[ROOT.GetCountry.GetNameNoFormatting] postavil $building_pena_palace$ v [Concept('concept_state_region','$concept_state_region$')] $STATE_ESTREMADURA$" # todo: NEW TRANSLATION
+ pena_palace_possible_tt: "[JournalEntry.GetCountry.GetName] má $building_pena_convent$ v [Concept('concept_state_region','$concept_state_region$')|l] $STATE_ESTREMADURA$" # todo: NEW TRANSLATION
+ pena_palace_complete_tt: "[ROOT.GetCountry.GetNameNoFormatting] postavil $building_pena_palace$ v [Concept('concept_state_region','$concept_state_region$')|l] $STATE_ESTREMADURA$" # todo: NEW TRANSLATION
  pena_palace_populated_tt: "Pracovní síla $building_pena_palace$ [concept_occupancy] je větší nebo rovna #variable 50%#!" # todo: NEW TRANSLATION
  rejected_pena_palace_project_tt: "[ROOT.GetCountry.GetNameNoFormatting] odmítá návrh na výstavbu a renovaci $building_pena_palace$" # todo: NEW TRANSLATION
  does_not_have_state_estremadura_tt: "[ROOT.GetCountry.GetNameNoFormatting] nemá $STATE_ESTREMADURA$" # todo: NEW TRANSLATION
@@ -162,7 +162,7 @@
  pena_palace_reward_int: "Král-umělec" # todo: NEW TRANSLATION
  je_gran_teatro: "Gran Teatro" # todo: NEW TRANSLATION
  je_gran_teatro_reason: "V srdci [SCOPE.sState('relevant_state').GetName] se nachází Plaza de Isabella, pečlivě udržované náměstí, kde lze najít některá z nejoblíbenějších kaváren a restaurací [SCOPE.sState('relevant_state').GetCityHubName]. Lidé všech tříd se zde scházejí od devíti hodin večer až do pozdních hodin, oživujíce náměstí. Teatro Tacón je mezi mnoha výbornými podniky naproti náměstí. Přes velkolepé vnitřní vybavení však jeho vnější vzhled nechává mnoho vylepšit.\n\nČlenové [GetCulture('galician').GetName] z [SCOPE.gsInterestGroup('relevant_ig').GetName] vypracovali návrh na rozšíření a přestavbu místa, kde stojí Teatro Tacón, na $building_gran_teatro_de_la_habana$ s nadějí, že bude v dalších desetiletích velmi oslavován." # todo: NEW TRANSLATION
- gran_teatro_complete_tt: "[ROOT.GetCountry.GetNameNoFormatting] postavil $building_gran_teatro_de_la_habana$ v [Concept('concept_state_region','$concept_state_region$')] $STATE_WESTERN_CUBA$" # todo: NEW TRANSLATION
+ gran_teatro_complete_tt: "[ROOT.GetCountry.GetNameNoFormatting] postavil $building_gran_teatro_de_la_habana$ v [Concept('concept_state_region','$concept_state_region$')|l] $STATE_WESTERN_CUBA$" # todo: NEW TRANSLATION
  gran_teatro_populated_tt: "Pracovní síla $building_gran_teatro_de_la_habana$ [concept_occupancy] je větší nebo rovna #variable 50%#!" # todo: NEW TRANSLATION
  rejected_gran_teatro_project_tt: "Návrh na výstavbu $building_gran_teatro_de_la_habana$ byl odmítnut" # todo: NEW TRANSLATION
  does_not_have_state_western_cuba_tt: "[ROOT.GetCountry.GetNameNoFormatting] nemá $STATE_WESTERN_CUBA$" # todo: NEW TRANSLATION
@@ -184,8 +184,8 @@
  gran_teatro_reward_int: "Přítomnost na jevišti" # todo: NEW TRANSLATION
  je_atocha_railway: "Železniční stanice Atocha" # todo: NEW TRANSLATION
  je_atocha_railway_reason: "Po mnoho let se [SCOPE.gsInterestGroup('relevant_ig').GetName] snažila postavit $building_estacion_de_madrid_atocha$ v [SCOPE.sState('relevant_state').GetName]. Jejich snahy byly zhatěny protichůdnými požadavky a zájmy — od zásahů vlády až po smrt najatého architekta, který měl dohlížet na stavbu. Žádný návrh dosud nesplnil všechna kritéria.\n\nNaděje [SCOPE.gsInterestGroup('relevant_ig').GetNameNoFormatting] na postavení stanice však neuvadly. Věří, že $building_estacion_de_madrid_atocha$ bude klíčovou institucí pro [ROOT.GetCountry.GetNameNoFormatting] nejen v rámci [SCOPE.sState('relevant_state').GetNameNoFormatting], ale i napříč celým kontinentem." # todo: NEW TRANSLATION
- atocha_railway_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má $building_railway$ v [Concept('concept_state_region','$concept_state_region$')] $STATE_NEW_CASTILE$" # todo: NEW TRANSLATION
- atocha_railway_complete_tt: "[ROOT.GetCountry.GetNameNoFormatting] postavil $building_estacion_de_madrid_atocha$ v [Concept('concept_state_region','$concept_state_region$')] $STATE_NEW_CASTILE$" # todo: NEW TRANSLATION
+ atocha_railway_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má $building_railway$ v [Concept('concept_state_region','$concept_state_region$')|l] $STATE_NEW_CASTILE$" # todo: NEW TRANSLATION
+ atocha_railway_complete_tt: "[ROOT.GetCountry.GetNameNoFormatting] postavil $building_estacion_de_madrid_atocha$ v [Concept('concept_state_region','$concept_state_region$')|l] $STATE_NEW_CASTILE$" # todo: NEW TRANSLATION
  atocha_railway_populated_tt: "Pracovní síla $building_estacion_de_madrid_atocha$ [concept_occupancy] je větší nebo rovna #variable 50%#!" # todo: NEW TRANSLATION
  rejected_atocha_railway_project_tt: "[ROOT.GetCountry.GetNameNoFormatting] odmítá návrh na výstavbu $building_estacion_de_madrid_atocha$." # todo: NEW TRANSLATION
  does_not_have_state_new_castile_tt: "[ROOT.GetCountry.GetNameNoFormatting] nemá $STATE_NEW_CASTILE$" # todo: NEW TRANSLATION
@@ -207,8 +207,8 @@
  atocha_railway_reward_int: "Pečlivě zpracované umění" # todo: NEW TRANSLATION
  je_manila_cathedral: "Přestavba manilské katedrály" # todo: NEW TRANSLATION
  je_manila_cathedral_reason: "Poškození způsobené velmi silným zemětřesením nechalo $building_manila_cathedral_original$ zřícený. Jak se [SCOPE.sState('relevant_state').GetNameNoFormatting] zotavuje z následků katastrofy, [GetPopType('clergymen').GetNameNoFormatting] z [SCOPE.gsInterestGroup('relevant_ig').GetNameNoFormatting] shromáždili prostředky a chtějí postoupit s rekonstrukcí katedrály." # todo: NEW TRANSLATION
- manila_cathedral_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má $building_manila_cathedral_ruins$ v [Concept('concept_state_region','$concept_state_region$')] $STATE_LUZON$" # todo: NEW TRANSLATION
- manila_cathedral_complete_tt: "[ROOT.GetCountry.GetNameNoFormatting] znovu postavil $building_manila_cathedral_monument$ v [Concept('concept_state_region','$concept_state_region$')] $STATE_LUZON$" # todo: NEW TRANSLATION
+ manila_cathedral_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má $building_manila_cathedral_ruins$ v [Concept('concept_state_region','$concept_state_region$')|l] $STATE_LUZON$" # todo: NEW TRANSLATION
+ manila_cathedral_complete_tt: "[ROOT.GetCountry.GetNameNoFormatting] znovu postavil $building_manila_cathedral_monument$ v [Concept('concept_state_region','$concept_state_region$')|l] $STATE_LUZON$" # todo: NEW TRANSLATION
  manila_cathedral_populated_tt: "Pracovní síla $building_manila_cathedral_monument$ [concept_occupancy] je větší nebo rovna #variable 50%#!" # todo: NEW TRANSLATION
  rejected_manila_cathedral_project_tt: "[ROOT.GetCountry.GetNameNoFormatting] odmítá návrh na obnovu $building_manila_cathedral_monument$" # todo: NEW TRANSLATION
  does_not_have_state_luzon_tt: "[ROOT.GetCountry.GetNameNoFormatting] nemá $STATE_LUZON$" # todo: NEW TRANSLATION
