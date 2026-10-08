@@ -1,7 +1,7 @@
 ﻿l_polish:
- upper_strata_concept: "[Concept('concept_upper_strata','Vyšší třída')]" # todo: CONCEPT CASE
- middle_strata_concept: "[Concept('concept_middle_strata','Střední třída')]" # todo: CONCEPT CASE
- lower_strata_concept: "[Concept('concept_lower_strata','Nižší třída')]" # todo: CONCEPT CASE
+ upper_strata_concept: "[Concept('concept_upper_strata','Vyšší třída')]"
+ middle_strata_concept: "[Concept('concept_middle_strata','Střední třída')]"
+ lower_strata_concept: "[Concept('concept_lower_strata','Nižší třída')]"
  default_social_hierarchy: "Základní hierarchie"
  default_social_hierarchy_desc: "Systém organizace, který klasifikuje členy společnosti do jasně definovaných kategorií a snaží se popsat sociální vztahy mezi jednotlivci a skupinami. Lidé ve skupinách s vyšším statusem mají k dispozici větší materiální a sociální zdroje než lidé v nižších skupinách, což vede k rozdílným výsledkům a příležitostem."
  upper_class: "Vyšší třída"
@@ -23,4 +23,4 @@
  shudras_desc: "Šúdrové jsou nejnižší třídou v rámci čtyř uznávaných kast. Jsou omezeni na pozice sluhů a dělníků odkázání na milost vyšších kast. Nemohou hromadit bohatství ani znalosti."
  dalit: "Dalitové"
  dalit_desc: "Termín používaný k popisu těch, kdo se narodili mimo čtyři kasty. Dalitové #i (Nedotknutelní)#! nemají žádný způsob, jak se zapojit do hierarchie. Jsou tedy a byly po generace ostrakizováni a marginalizováni. Nedotknutelní jsou nuceni vykonávat podřadné práce a nemají žádná práva ani privilegia."
- STRATA_CONCEPTS_DEPEND_ON_SOCIAL_HIERARCHY: "Které $concept_pops$ patří do této Straty závisí na [Concept('concept_country','země')] [Concept('concept_social_hierarchy','sociální hierarchii')]." # todo: CONCEPT CASE
+ STRATA_CONCEPTS_DEPEND_ON_SOCIAL_HIERARCHY: "Které $concept_pops$ patří do této Straty závisí na [Concept('concept_country','$concept_country_possessive$')] [Concept('concept_social_hierarchy','sociální hierarchii')]." # todo: CONCEPT CASE

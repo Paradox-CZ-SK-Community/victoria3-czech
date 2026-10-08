@@ -1,6 +1,6 @@
 ﻿l_polish:
  je_philippines_development: "Pokroky v souostroví"
- je_philippines_development_reason: "Ve vzdáleném souostroví země [ROOT.GetCountry.GetNameNoFlag] položil nárůst mezinárodního obchodu základy k tomu, aby rostoucí střední třída získala větší vliv navzdory pokračujícím politickým otřesům.\n\nRozvíjej domácí zemědělský sektor, zvyš [Concept('concept_sol','životní standard')] a buduj přístavy, aby byla zajištěna plodná budoucnost země [ROOT.GetCountry.GetNameNoFormatting]." # todo: CONCEPT CASE
+ je_philippines_development_reason: "Ve vzdáleném souostroví země [ROOT.GetCountry.GetNameNoFlag] položil nárůst mezinárodního obchodu základy k tomu, aby rostoucí střední třída získala větší vliv navzdory pokračujícím politickým otřesům.\n\nRozvíjej domácí zemědělský sektor, zvyš [Concept('concept_sol','životní standard')] a buduj přístavy, aby byla zajištěna plodná budoucnost země [ROOT.GetCountry.GetNameNoFormatting]."
  philippines10a_tt: "„$STATE_VISAYAS$ bude jistě prosperovat po celé příští generace.“"
  philippines10b_tt: "„$STATE_MINDANAO$ se bude nadále rozvíjet v prosperující oblast.“\n$TAB$#b #r Možnost dostupná pouze tehdy, pokud [JournalEntry.GetCountry.GetName] vlastní přístav Davao#! #!"
  modifier_archipelagic_anger: "Přerušené obchodní vazby"
@@ -15,12 +15,12 @@
  modifier_phi_indepenent_vision: "Svoboda, spravedlnost a rovnost"
  modifier_popular_genesis: "Lidová geneze"
  je_philippines_main: "Perla del Mar de Oriente"
- je_philippines_main_reason: "Vzestupná mobilita rostoucí střední třídy přispěla k sílícímu národnímu vědomí. Napětí v zemi [ROOT.GetCountry.GetAltAdjective('A')] roste. [GetCulture('spanish').GetName] [GetPopType('clergymen').GetName] ovládají světský i náboženský život, zatímco [GetCulture('filipino_mestizo').GetName] [GetPopType('clergymen').GetNameNoFormatting] vedou vzpoury proti jejich autoritě. [GetCulture('filipino_mestizo').GetNameNoFormatting] elity [SCOPE.gsInterestGroup('intelligentsia_ig').GetName] rovněž manévrují za větší zastoupení ve vládě.\n\n[SelectLocalization(ROOT.GetCountry.GetTopOverlord.IsValid, ROOT.GetCountry.GetTopOverlord.GetAdjective, 'SPA_ADJ')] vláda má nakonec vysoká očekávání, že [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] udrží železnou vládu nad svým územím v Pacifiku. Toto tření hrozí svrhnout naši stabilitu a ohrožuje budoucnost země [ROOT.GetCountry.GetName]." # todo: COUNTRY CASE
+ je_philippines_main_reason: "Vzestupná mobilita rostoucí střední třídy přispěla k sílícímu národnímu vědomí. Napětí v zemi [ROOT.GetCountry.GetName] roste. [GetCulture('spanish').GetName] [GetPopType('clergymen').GetName] ovládají světský i náboženský život, zatímco [GetCulture('filipino_mestizo').GetName] [GetPopType('clergymen').GetNameNoFormatting] vedou vzpoury proti jejich autoritě. [GetCulture('filipino_mestizo').GetNameNoFormatting] elity [SCOPE.gsInterestGroup('intelligentsia_ig').GetName] rovněž manévrují za větší zastoupení ve vládě.\n\n[SelectLocalization(ROOT.GetCountry.GetTopOverlord.IsValid, ROOT.GetCountry.GetTopOverlord.GetAdjective, 'SPA_ADJ')] vláda má nakonec vysoká očekávání, že [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] udrží železnou vládu nad svým územím v Pacifiku. Toto tření hrozí svrhnout naši stabilitu a ohrožuje budoucnost země [ROOT.GetCountry.GetName]."
  philippines2a_tt: "„Budoucnost země [JournalEntry.GetCountry.GetName] je jasná.“"
  philippines3a_tt: "„To skutečně znamená novou kapitolu pro naši zemi.“"
- spain_is_overlord_tt: "[Concept('concept_overlord','Vládce')] je #b $SPA$#!" # todo: CONCEPT CASE
- filipino_assimilation_tooltip: "Každý [Concept('concept_pop','populace')], [Concept('concept_character','postava')] a [Concept('concept_homeland','domovina')] kultury [GetCulture('filipino_mestizo').GetName] se stane kulturou [GetCulture('filipino').GetName]" # todo: CONCEPT CASE
- filipino_hispanophone_assimilation_tooltip: "Každý [Concept('concept_pop','populace')], [Concept('concept_character','postava')] a [Concept('concept_homeland','domovina')] kultury [GetCulture('filipino_mestizo').GetName] se stane kulturou [GetCulture('filipino_hispanophone').GetName]" # todo: CONCEPT CASE
+ spain_is_overlord_tt: "[Concept('concept_overlord','Vládce')] je #b $SPA$#!"
+ filipino_assimilation_tooltip: "Každý [Concept('concept_pop','populace')], [Concept('concept_character','postava')] a [Concept('concept_homeland','domovina')] kultury [GetCulture('filipino_mestizo').GetName] se stane kulturou [GetCulture('filipino').GetName]"
+ filipino_hispanophone_assimilation_tooltip: "Každý [Concept('concept_pop','populace')], [Concept('concept_character','postava')] a [Concept('concept_homeland','domovina')] kultury [GetCulture('filipino_mestizo').GetName] se stane kulturou [GetCulture('filipino_hispanophone').GetName]"
  je_philippines_main_header_independence_complete: "#title Bude zakončeno výsledkem #b filipínská nezávislost#!, pokud:#!\n"
  je_philippines_main_header_independence_on_complete: "#title Pokud bude zakončeno výsledkem #b filipínská nezávislost#!:#!\n$EFFECT$"
  je_philippines_main_header_reliance_complete: "#title Bude zakončeno výsledkem #b závislost#!, pokud:#!\n"
@@ -30,16 +30,16 @@
  je_philippines_ethnogenesis_header_reliance_complete: "#title Bude zakončeno výsledkem #b hispanofonní etnogeneze#!, pokud:#!\n"
  je_philippines_ethnogenesis_header_reliance_on_complete: "#title Pokud bude zakončeno výsledkem #b hispanofonní etnogeneze#!:#!\n$EFFECT$"
  je_philippines_main_ilustrado_button: "Podpořit ilustrados"
- je_philippines_main_ilustrado_button_desc: "Mnozí příslušníci vyšší a střední třídy [GetCulture('filipino_mestizo').GetCustom('getPluralDemonym')] a takzvaní #italic Indios#! byli vystaveni [GetCulture('spanish').GetName] ideálům [GetIdeology('ideology_liberal').GetName]. Tato rychle rostoucí vzdělaná třída se začala spojovat s [GetInterestGroupVariant('ig_intelligentsia',GetPlayer).GetName]. Usilují o reformu zákonů a nastavení liberálnější agendy v zemi [ROOT.GetCountry.GetAltAdjective('A')]." # todo: COUNTRY CASE
- je_philippines_development_complete: "Dokončen [Concept('concept_journal_entry','záznam v deníku')] $je_philippines_development$." # todo: CONCEPT CASE
- notification_filipino_mestizo_now_primary_culture_name: "[GetCulture('spanish').GetName] již není [Concept('concept_primary_cultures','primární kultura')]" # todo: CONCEPT CASE
- notification_filipino_mestizo_now_primary_culture_desc: "Nyní, když už nejsme pod vládou $SPA_ADJ$, je [GetCulture('filipino_mestizo').GetName] naší [Concept('concept_primary_cultures','primárních kultur')]." # todo: CONCEPT CASE
+ je_philippines_main_ilustrado_button_desc: "Mnozí příslušníci vyšší a střední třídy [GetCulture('filipino_mestizo').GetCustom('getPluralDemonym')] a takzvaní #italic Indios#! byli vystaveni [GetCulture('spanish').GetName] ideálům [GetIdeology('ideology_liberal').GetName]. Tato rychle rostoucí vzdělaná třída se začala spojovat s [GetInterestGroupVariant('ig_intelligentsia',GetPlayer).GetName]. Usilují o reformu zákonů a nastavení liberálnější agendy v zemi [ROOT.GetCountry.GetName]."
+ je_philippines_development_complete: "Dokončen [Concept('concept_journal_entry','záznam v deníku')] $je_philippines_development$."
+ notification_filipino_mestizo_now_primary_culture_name: "[GetCulture('spanish').GetName] již není [Concept('concept_primary_cultures','$concept_primary_culture$')]"
+ notification_filipino_mestizo_now_primary_culture_desc: "Nyní, když už nejsme pod vládou $SPA_ADJ$, je [GetCulture('filipino_mestizo').GetName] naší [Concept('concept_primary_cultures','$concept_primary_culture$')]."
  notification_filipino_mestizo_now_primary_culture_tooltip: "#header $notification_filipino_mestizo_now_primary_culture_name$#!\n$TOOLTIP_DELIMITER$\n$notification_filipino_mestizo_now_primary_culture_desc$"
  philippines.1.t: "[ROOT.GetCountry.GetAltAdjective('aa')] identita"
- philippines.1.d: "Uprostřed rostoucího napětí stále více lidí usiluje o větší zastoupení ve vládě, zatímco jiní volají po nezávislosti na zemi [ROOT.GetCountry.GetTopOverlord.GetAltAdjective('A')]. Převládne [ROOT.GetCountry.GetTopOverlord.GetAdjectiveNoFormatting] vláda, nebo lid země [ROOT.GetCountry.GetName] uspěje v získání větších svobod?" # todo: COUNTRY CASE
+ philippines.1.d: "Uprostřed rostoucího napětí stále více lidí usiluje o větší zastoupení ve vládě, zatímco jiní volají po nezávislosti na zemi [ROOT.GetCountry.GetTopOverlord.GetName]. Převládne [ROOT.GetCountry.GetTopOverlord.GetAdjectiveNoFormatting] vláda, nebo lid země [ROOT.GetCountry.GetName] uspěje v získání větších svobod?"
  philippines.1.f: "„Filipíny tedy zůstanou pod španělskou nadvládou, avšak s větší zákonností a větší svobodou, nebo se prohlásí za nezávislé poté, co sebe i mateřskou zemi zbrodí krví.\n\nProtože nikdo by si neměl přát ani doufat v tak nešťastný rozkol, který by byl zlem pro všechny a pouze posledním argumentem v nejzoufalejší situaci, podívejme se, jakými formami pokojného vývoje mohou ostrovy zůstat podřízeny španělské autoritě s co nejmenší újmou pro práva, zájmy a důstojnost obou stran.“\n\n—José Rizal, #italic Filipíny za sto let#!"
  philippines.1.a: "Získání nezávislosti je zásadní."
- philippines.1.b: "Nakonec se zodpovídáme zemi [ROOT.GetCountry.GetTopOverlord.GetAltAdjectiveNoFlag('A')]." # todo: COUNTRY CASE
+ philippines.1.b: "Nakonec se zodpovídáme zemi [ROOT.GetCountry.GetTopOverlord.GetNameNoFlag]."
  modifier_phi_lib_gain: "Rodící se hnutí za nezávislost"
  modifier_phi_lib_lose: "Španělsko-filipínské bratrské společnosti"
  philippines.2.t: "Milovaná země, vyvolená země"
@@ -51,7 +51,7 @@
  notification_filipino_culture_genesis_tooltip: "#header $notification_filipino_culture_genesis_name$#!\n$TOOLTIP_DELIMITER$\n$notification_filipino_culture_genesis_desc$"
  philippines.3.t: "Spoléhání na [SelectLocalization(ROOT.GetCountry.GetTopOverlord.IsValid, ROOT.GetCountry.GetTopOverlord.GetNameNoFormatting, 'SPA')]"
  philippines.3.d: "Nadále těžíme ze svých vazeb s metropolí, zatímco [ROOT.GetCountry.GetTopOverlord.GetAdjective] a [ROOT.GetCountry.GetAdjective] záležitosti se stále více prolínají."
- philippines.3.f: "[ROOT.GetCountry.GetTopOverlord.GetAdjectiveNoFormatting] vláda v tomto souostroví zůstává pevná, jako tomu bylo po staletí, a lid země [ROOT.GetCountry.GetNameNoFormatting] projevil rostoucí odhodlání posilovat vazby se zemí [ROOT.GetCountry.GetTopOverlord.GetAltAdjectiveNoFormatting('G')].\n\nPro některé členy [SCOPE.gsInterestGroup('ilustrado_ig_scope').GetNameNoFormatting] je to vítězství a příslib velkých věcí budoucích. Pro jiné jsou tato pevná pouta znepokojivá a představují hrozbu pro budoucnost země." # todo: COUNTRY CASE
+ philippines.3.f: "[ROOT.GetCountry.GetTopOverlord.GetAdjectiveNoFormatting] vláda v tomto souostroví zůstává pevná, jako tomu bylo po staletí, a lid země [ROOT.GetCountry.GetNameNoFormatting] projevil rostoucí odhodlání posilovat vazby se zemí [ROOT.GetCountry.GetTopOverlord.GetNameNoFormatting].\n\nPro některé členy [SCOPE.gsInterestGroup('ilustrado_ig_scope').GetNameNoFormatting] je to vítězství a příslib velkých věcí budoucích. Pro jiné jsou tato pevná pouta znepokojivá a představují hrozbu pro budoucnost země."
  philippines.3.a: "To skutečně znamená novou kapitolu pro naši zemi."
  modifier_metropole_business_networks: "Finanční vazby na metropoli"
  modifier_national_consolidation: "Úsilí o národní konsolidaci"
@@ -63,7 +63,7 @@
  philippines.4.f: "Noviny kolovaly po celém městě [ROOT.GetCountry.GetCapital.GetCityHubName] a pobouřily jak [GetCulture('spanish').GetNameNoFormatting] bratry, tak vládní správce.\n\n„Po desetiletí spravovali [GetCulture('filipino_mestizo').GetNameNoFormatting] bratři místní farnosti,“ tvrdil anonymní autor. „Proč musíme znovu předávat kontrolu [GetCulture('spanish').GetNameNoFormatting]?“"
  philippines.4.a: "[GetCulture('filipino_mestizo').GetNameNoFormatting] bratři jsou stejně schopní spravovat místní farnosti."
  philippines.4.b: "Přínos bratrů kultury [GetCulture('spanish').GetName] byl neocenitelný."
- pedro_pelaez_appears_tt: "Pedro Peláez se objeví v zemi [ROOT.GetCountry.GetAltAdjectiveNoFormatting('A')]" # todo: COUNTRY CASE
+ pedro_pelaez_appears_tt: "Pedro Peláez se objeví v zemi [ROOT.GetCountry.GetNameNoFormatting]"
  friar_agitator_popularity: "Podpora místního kléru"
  philippines.5.t: "Reformy ilustrados"
  philippines.5.d: "Díky našemu úsilí si ilustrados zajistili pevnější postavení ve [ROOT.GetCountry.GetAdjective] vládě."
@@ -85,10 +85,10 @@
  philippines_development_modifier_b: "Souostrovní zemědělství"
  philippines.10.t: "Působivý rozvoj"
  philippines.10.d: "Půda je nyní připravena pro to, aby rostoucí střední třída získala větší politický vliv. V rozvoji souostroví bylo dosaženo stabilního pokroku."
- philippines.10.f: "Ve městě [ROOT.GetCountry.GetCapital.GetCityHubName] je [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] ohromen rozvojem zemědělského sektoru a prosperujícími přístavy v zemi [ROOT.GetCountry.GetAltAdjectiveNoFormatting('A')].\n\nJak rozvoj země působí na [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] dojmem, životy mnoha lidí se zlepšují a peníze plní kapsy rostoucí střední třídy. Tyto společensky stoupající rodiny nyní posílají své děti na univerzity jak ve městě [ROOT.GetCountry.GetCapital.GetCityHubName], tak v zahraničí. Domácí vyhlídky se rozhodně zlepšují." # todo: COUNTRY CASE
+ philippines.10.f: "Ve městě [ROOT.GetCountry.GetCapital.GetCityHubName] je [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] ohromen rozvojem zemědělského sektoru a prosperujícími přístavy v zemi [ROOT.GetCountry.GetNameNoFormatting].\n\nJak rozvoj země působí na [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] dojmem, životy mnoha lidí se zlepšují a peníze plní kapsy rostoucí střední třídy. Tyto společensky stoupající rodiny nyní posílají své děti na univerzity jak ve městě [ROOT.GetCountry.GetCapital.GetCityHubName], tak v zahraničí. Domácí vyhlídky se rozhodně zlepšují."
  philippines.10.a: "[SCOPE.sState('visayas_scope').GetStateRegion.GetName] bude jistě prosperovat po celé příští generace."
  philippines.10.b: "[SCOPE.sState('mindanao_scope').GetStateRegion.GetName] se bude nadále rozvíjet v prosperující oblast."
- unlocks_je_philippines_main_ilustrado_button_tt: "Splní požadavek pro použití tlačítka #b $je_philippines_main_ilustrado_button$#! v #b $je_philippines_main$#! [Concept('concept_journal_entry','záznam v deníku')]" # todo: CONCEPT CASE
+ unlocks_je_philippines_main_ilustrado_button_tt: "Splní požadavek pro použití tlačítka #b $je_philippines_main_ilustrado_button$#! v #b $je_philippines_main$#! [Concept('concept_journal_entry','záznam v deníku')]"
  modifier_growth_of_the_middle_class: "Růst střední třídy"
  philippines.11.t: "Ostrovní identita"
  philippines.11.d: "Naše velké úsilí o vzdělávání [ROOT.GetCountry.GetAltAdjective('yych')] národů vedlo k vytvoření panfilipínské národní identity."
@@ -105,8 +105,8 @@
  cathedral_1_built_cathedral_2_ready_status_loc: "Druhá fáze budovy [GetBuildingType('building_sagrada_familia_cathedral_2').GetName] je připravena k výstavbě"
  cathedral_2_built_cathedral_3_ready_status_loc: "Třetí fáze budovy [GetBuildingType('building_sagrada_familia_cathedral_3').GetName] je připravena k výstavbě"
  cathedral_3_built_complete_status_loc: "$building_sagrada_familia_cathedral_3$ je dokončena"
- sagrada_familia_complete_tt: "[ROOT.GetCountry.GetNameNoFormatting] vybudovala tři fáze budovy $building_sagrada_familia_cathedral_3$ v [Concept('concept_state_region','státní oblasti')] $STATE_CATALONIA$" # todo: CONCEPT CASE
- sagrada_familia_populated_tt: "[Concept('concept_occupancy','Obsazenost')] pracovní síly budovy $building_sagrada_familia_cathedral_3$ je vyšší nebo rovna #variable 50 %#!" # todo: CONCEPT CASE
+ sagrada_familia_complete_tt: "[ROOT.GetCountry.GetNameNoFormatting] vybudovala tři fáze budovy $building_sagrada_familia_cathedral_3$ v [Concept('concept_state_region','$concept_state_region$')] $STATE_CATALONIA$"
+ sagrada_familia_populated_tt: "[Concept('concept_occupancy','Obsazenost')] pracovní síly budovy $building_sagrada_familia_cathedral_3$ je vyšší nebo rovna #variable 50 %#!"
  rejected_sagrada_familia_project_tt: "[ROOT.GetCountry.GetNameNoFormatting] odmítá návrh na výstavbu budovy $building_sagrada_familia_cathedral_3$"
  does_not_have_state_catalonia_tt: "[ROOT.GetCountry.GetNameNoFormatting] nemá $STATE_CATALONIA$"
  sagrada_familia.1.t: "Modernistická architektura"
@@ -117,7 +117,7 @@
  sagrada_familia_1_construct_tt: "$building_sagrada_familia_cathedral_1$ lze postavit v panelu státu [SelectLocalization(SCOPE.sState('relevant_state').IsValid, SCOPE.sState('relevant_state').GetName, 'STATE_CATALONIA')]"
  sagrada_familia_2_construct_tt: "$building_sagrada_familia_cathedral_2$ lze postavit v panelu státu [SelectLocalization(SCOPE.sState('relevant_state').IsValid, SCOPE.sState('relevant_state').GetName, 'STATE_CATALONIA')]"
  sagrada_familia_3_construct_tt: "Další fasádu budovy $building_sagrada_familia_cathedral_3$ lze postavit v panelu státu [SelectLocalization(SCOPE.sState('relevant_state').IsValid, SCOPE.sState('relevant_state').GetName, 'STATE_CATALONIA')]. Vyžaduje technologii $pneumatic_tools$."
- dismissed_sagrada_familia_je_tt: "#r #bold $je_sagrada_familia$#! [Concept('concept_journal_entry','záznam v deníku')] bude zrušen#!" # todo: CONCEPT CASE
+ dismissed_sagrada_familia_je_tt: "#r #bold $je_sagrada_familia$#! [Concept('concept_journal_entry','záznam v deníku')] bude zrušen#!"
  sagrada_familia_accepted: "Schválená výstavba katedrály"
  sagrada_familia_rejected: "Odmítnutá výstavba katedrály"
  sagrada_familia.2.t: "Fasáda Zrození"
@@ -139,9 +139,9 @@
  sagrada_familia_reward_int: "Architektonické uznání"
  je_pena_palace: "Nádherný Eden"
  je_pena_palace_reason: "Manžel [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullName] nedávno získal starý klášter Pena na vrcholu pohoří Sintra. S velkými uměleckými ambicemi usiluje o přeměnu kláštera v letní sídlo královské rodiny."
- pena_palace_possible_tt: "[JournalEntry.GetCountry.GetName] má $building_pena_convent$ v [Concept('concept_state_region','státní oblasti')] $STATE_ESTREMADURA$" # todo: CONCEPT CASE
- pena_palace_complete_tt: "[ROOT.GetCountry.GetNameNoFormatting] vybudovala $building_pena_palace$ v [Concept('concept_state_region','státní oblasti')] $STATE_ESTREMADURA$" # todo: CONCEPT CASE
- pena_palace_populated_tt: "[Concept('concept_occupancy','Obsazenost')] pracovní síly budovy $building_pena_palace$ je vyšší nebo rovna #variable 50 %#!" # todo: CONCEPT CASE
+ pena_palace_possible_tt: "[JournalEntry.GetCountry.GetName] má $building_pena_convent$ v [Concept('concept_state_region','$concept_state_region$')] $STATE_ESTREMADURA$"
+ pena_palace_complete_tt: "[ROOT.GetCountry.GetNameNoFormatting] vybudovala $building_pena_palace$ v [Concept('concept_state_region','$concept_state_region$')] $STATE_ESTREMADURA$"
+ pena_palace_populated_tt: "[Concept('concept_occupancy','Obsazenost')] pracovní síly budovy $building_pena_palace$ je vyšší nebo rovna #variable 50 %#!"
  rejected_pena_palace_project_tt: "[ROOT.GetCountry.GetNameNoFormatting] odmítá návrh na výstavbu a renovaci budovy $building_pena_palace$"
  does_not_have_state_estremadura_tt: "[ROOT.GetCountry.GetNameNoFormatting] nemá $STATE_ESTREMADURA$"
  pena_palace.1.t: "Nádherný Eden"
@@ -150,7 +150,7 @@
  pena_palace.1.a: "Palác bude uměleckým úspěchem země [ROOT.GetCountry.GetNameNoFormatting]!"
  pena_palace.1.b: "Jak lehkovážné."
  pena_palace_construct_tt: "$building_pena_palace$ lze postavit v panelu státu [SelectLocalization(SCOPE.sState('relevant_state').IsValid, SCOPE.sState('relevant_state').GetName, 'STATE_ESTREMADURA')]"
- dismissed_pena_palace_je_tt: "#r #bold $je_pena_palace$#! [Concept('concept_journal_entry','záznam v deníku')] bude zrušen#!" # todo: CONCEPT CASE
+ dismissed_pena_palace_je_tt: "#r #bold $je_pena_palace$#! [Concept('concept_journal_entry','záznam v deníku')] bude zrušen#!"
  pena_palace_accepted: "Schválená výstavba paláce"
  pena_palace_rejected: "Odmítnutá výstavba paláce"
  pena_palace.2.t: "Klenot Sintry"
@@ -162,8 +162,8 @@
  pena_palace_reward_int: "Král-umělec"
  je_gran_teatro: "Gran Teatro"
  je_gran_teatro_reason: "V srdci státu [SCOPE.sState('relevant_state').GetName] se nachází Plaza de Isabella, pečlivě udržované náměstí, kde lze nalézt některé z nejmódnějších kaváren a restaurací města [SCOPE.sState('relevant_state').GetCityHubName]. Od deváté hodiny večerní až do časných ranních hodin se zde shromažďují lidé všech vrstev a vdechují náměstí život. Teatro Tacón patří mezi mnohé vytříbené podniky naproti náměstí. Navzdory velkolepému interiéru však jeho vnější vzhled ponechává mnoho co přát.\n\n[GetCulture('galician').GetName] členové [SCOPE.gsInterestGroup('relevant_ig').GetName] vypracovali návrh na rozšíření a proměnu místa, kde stojí Teatro Tacón, v $building_gran_teatro_de_la_habana$ s nadějí, že bude v nadcházejících desetiletích velmi oslavováno."
- gran_teatro_complete_tt: "[ROOT.GetCountry.GetNameNoFormatting] vybudovala $building_gran_teatro_de_la_habana$ v [Concept('concept_state_region','státní oblasti')] $STATE_WESTERN_CUBA$" # todo: CONCEPT CASE
- gran_teatro_populated_tt: "[Concept('concept_occupancy','Obsazenost')] pracovní síly budovy $building_gran_teatro_de_la_habana$ je vyšší nebo rovna #variable 50 %#!" # todo: CONCEPT CASE
+ gran_teatro_complete_tt: "[ROOT.GetCountry.GetNameNoFormatting] vybudovala $building_gran_teatro_de_la_habana$ v [Concept('concept_state_region','$concept_state_region$')] $STATE_WESTERN_CUBA$"
+ gran_teatro_populated_tt: "[Concept('concept_occupancy','Obsazenost')] pracovní síly budovy $building_gran_teatro_de_la_habana$ je vyšší nebo rovna #variable 50 %#!"
  rejected_gran_teatro_project_tt: "Návrh na výstavbu budovy $building_gran_teatro_de_la_habana$ byl odmítnut"
  does_not_have_state_western_cuba_tt: "[ROOT.GetCountry.GetNameNoFormatting] nemá $STATE_WESTERN_CUBA$"
  gran_teatro.1.t: "Rozšíření umění ve městě $HUB_NAME_STATE_WESTERN_CUBA_city$"
@@ -172,7 +172,7 @@
  gran_teatro.1.a: "Velkolepost budovy $building_gran_teatro_de_la_habana$ bude nesporná."
  gran_teatro.1.b: "[SCOPE.sState('relevant_state').GetCityHubName] takový podnik nepotřebuje."
  gran_teatro_construct_tt: "$building_gran_teatro_de_la_habana$ lze postavit v panelu státu [SelectLocalization(SCOPE.sState('relevant_state').IsValid, SCOPE.sState('relevant_state').GetName, 'STATE_WESTERN_CUBA')]"
- dismissed_gran_teatro_je_tt: "#r #bold $je_gran_teatro$#! [Concept('concept_journal_entry','záznam v deníku')] bude zrušen#!" # todo: CONCEPT CASE
+ dismissed_gran_teatro_je_tt: "#r #bold $je_gran_teatro$#! [Concept('concept_journal_entry','záznam v deníku')] bude zrušen#!"
  gran_teatro_accepted: "Schválená výstavba divadla"
  gran_teatro_rejected: "Odmítnutá výstavba divadla"
  gran_teatro.2.t: "Palacio del Centro Gallego"
@@ -183,10 +183,10 @@
  gran_teatro_reward_loc: "Vzkvétající umění"
  gran_teatro_reward_int: "Přítomnost na jevišti"
  je_atocha_railway: "Železniční stanice Atocha"
- je_atocha_railway_reason: "[SCOPE.gsInterestGroup('relevant_ig').GetName] se po mnoho let snaží vybudovat $building_estacion_de_madrid_atocha$ ve státě [SCOPE.sState('relevant_state').GetName]. Jejich úsilí mařily protichůdné požadavky a zájmy - od zásahů vlády až po smrt najatého architekta, který měl dohlížet na výstavbu. Žádný návrh dosud nesplňoval všechna kritéria, až dosud.\n\nNaděje [SCOPE.gsInterestGroup('relevant_ig').GetNameNoFormatting] na výstavbu stanice neochably. Věří, že $building_estacion_de_madrid_atocha$ bude pro [ROOT.GetCountry.GetAltAdjectiveNoFormatting('A')] klíčovou institucí nejen ve státě [SCOPE.sState('relevant_state').GetNameNoFormatting], ale i napříč celým kontinentem." # todo: COUNTRY CASE
- atocha_railway_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má $building_railway$ v [Concept('concept_state_region','státní oblasti')] $STATE_NEW_CASTILE$" # todo: CONCEPT CASE
- atocha_railway_complete_tt: "[ROOT.GetCountry.GetNameNoFormatting] vybudovala $building_estacion_de_madrid_atocha$ v [Concept('concept_state_region','státní oblasti')] $STATE_NEW_CASTILE$" # todo: CONCEPT CASE
- atocha_railway_populated_tt: "[Concept('concept_occupancy','Obsazenost')] pracovní síly budovy $building_estacion_de_madrid_atocha$ je vyšší nebo rovna #variable 50 %#!" # todo: CONCEPT CASE
+ je_atocha_railway_reason: "[SCOPE.gsInterestGroup('relevant_ig').GetName] se po mnoho let snaží vybudovat $building_estacion_de_madrid_atocha$ ve státě [SCOPE.sState('relevant_state').GetName]. Jejich úsilí mařily protichůdné požadavky a zájmy - od zásahů vlády až po smrt najatého architekta, který měl dohlížet na výstavbu. Žádný návrh dosud nesplňoval všechna kritéria, až dosud.\n\nNaděje [SCOPE.gsInterestGroup('relevant_ig').GetNameNoFormatting] na výstavbu stanice neochably. Věří, že $building_estacion_de_madrid_atocha$ bude pro [ROOT.GetCountry.GetAltAdjectiveNoFormatting('A')] klíčovou institucí nejen ve státě [SCOPE.sState('relevant_state').GetNameNoFormatting], ale i napříč celým kontinentem." # todo: CONCEPT CASE
+ atocha_railway_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má $building_railway$ v [Concept('concept_state_region','$concept_state_region$')] $STATE_NEW_CASTILE$"
+ atocha_railway_complete_tt: "[ROOT.GetCountry.GetNameNoFormatting] vybudovala $building_estacion_de_madrid_atocha$ v [Concept('concept_state_region','$concept_state_region$')] $STATE_NEW_CASTILE$"
+ atocha_railway_populated_tt: "[Concept('concept_occupancy','Obsazenost')] pracovní síly budovy $building_estacion_de_madrid_atocha$ je vyšší nebo rovna #variable 50 %#!"
  rejected_atocha_railway_project_tt: "[ROOT.GetCountry.GetNameNoFormatting] odmítá návrh na výstavbu budovy $building_estacion_de_madrid_atocha$."
  does_not_have_state_new_castile_tt: "[ROOT.GetCountry.GetNameNoFormatting] nemá $STATE_NEW_CASTILE$"
  atocha_railway.1.t: "Přepracovaný návrh"
@@ -195,7 +195,7 @@
  atocha_railway.1.a: "To je jistě v souladu se zájmy všech."
  atocha_railway.1.b: "[SCOPE.gsInterestGroup('relevant_ig').GetNameNoFormatting] špatně odhadli poptávku po takové stavbě."
  atocha_railway_construct_tt: "$building_estacion_de_madrid_atocha$ lze postavit v panelu státu [SelectLocalization(SCOPE.sState('relevant_state').IsValid, SCOPE.sState('relevant_state').GetName, 'STATE_NEW_CASTILE')]"
- dismissed_atocha_railway_je_tt: "#r [Concept('concept_journal_entry','Záznam v deníku')] #bold $je_atocha_railway$#! bude zrušen#!" # todo: CONCEPT CASE
+ dismissed_atocha_railway_je_tt: "#r [Concept('concept_journal_entry','Záznam v deníku')] #bold $je_atocha_railway$#! bude zrušen#!"
  atocha_railway_accepted: "Schválená výstavba železnice"
  atocha_railway_rejected: "Odmítnutá výstavba železnice"
  atocha_railway.2.t: "$building_estacion_de_madrid_atocha$ otevřena"
@@ -207,9 +207,9 @@
  atocha_railway_reward_int: "Precizně zpracované umění"
  je_manila_cathedral: "Obnova manilské katedrály"
  je_manila_cathedral_reason: "Škody způsobené velmi silným zemětřesením zanechaly $building_manila_cathedral_original$ v troskách. Zatímco se [SCOPE.sState('relevant_state').GetNameNoFormatting] zotavuje ze zkázy způsobené katastrofou, [GetPopType('clergymen').GetNameNoFormatting] z [SCOPE.gsInterestGroup('relevant_ig').GetNameNoFormatting] shromáždili prostředky a chtějí pokročit s obnovou katedrály."
- manila_cathedral_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má $building_manila_cathedral_ruins$ v [Concept('concept_state_region','státní oblasti')] $STATE_LUZON$" # todo: CONCEPT CASE
- manila_cathedral_complete_tt: "[ROOT.GetCountry.GetNameNoFormatting] obnovila $building_manila_cathedral_monument$ v [Concept('concept_state_region','státní oblasti')] $STATE_LUZON$" # todo: CONCEPT CASE
- manila_cathedral_populated_tt: "[Concept('concept_occupancy','Obsazenost')] pracovní síly budovy $building_manila_cathedral_monument$ je vyšší nebo rovna #variable 50 %#!" # todo: CONCEPT CASE
+ manila_cathedral_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má $building_manila_cathedral_ruins$ v [Concept('concept_state_region','$concept_state_region$')] $STATE_LUZON$"
+ manila_cathedral_complete_tt: "[ROOT.GetCountry.GetNameNoFormatting] obnovila $building_manila_cathedral_monument$ v [Concept('concept_state_region','$concept_state_region$')] $STATE_LUZON$"
+ manila_cathedral_populated_tt: "[Concept('concept_occupancy','Obsazenost')] pracovní síly budovy $building_manila_cathedral_monument$ je vyšší nebo rovna #variable 50 %#!"
  rejected_manila_cathedral_project_tt: "[ROOT.GetCountry.GetNameNoFormatting] odmítá návrh na obnovu budovy $building_manila_cathedral_monument$"
  does_not_have_state_luzon_tt: "[ROOT.GetCountry.GetNameNoFormatting] nemá $STATE_LUZON$"
  manila_cathedral.1.t: "Zemětřesení ve státě [SelectLocalization(SCOPE.sState('relevant_state').IsValid, SCOPE.sState('relevant_state').GetNameNoFormatting, 'STATE_LUZON')]"
@@ -218,7 +218,7 @@
  manila_cathedral.1.a: "Musíme katedrálu rychle obnovit."
  manila_cathedral.1.b: "[SCOPE.sState('relevant_state').GetNameNoFormatting] má mnohem naléhavější problémy."
  manila_cathedral_construct_tt: "$building_manila_cathedral_monument$ lze postavit v panelu státu [SelectLocalization(SCOPE.sState('relevant_state').IsValid, SCOPE.sState('relevant_state').GetName, 'STATE_LUZON')]"
- dismissed_manila_cathedral_je_tt: "#r #bold $je_manila_cathedral$#! [Concept('concept_journal_entry','záznam v deníku')] bude zrušen#!" # todo: CONCEPT CASE
+ dismissed_manila_cathedral_je_tt: "#r #bold $je_manila_cathedral$#! [Concept('concept_journal_entry','záznam v deníku')] bude zrušen#!"
  pedro_pelaez_dies_tt: "[SCOPE.sCharacter('relevant_character').GetLastName] zemřel při zřícení manilské katedrály."
  pelaez_in_memoriam: "In memoriam"
  manila_cathedral_accepted: "Schválené opravy katedrály"
@@ -234,7 +234,7 @@
  notification_manila_cathedral_in_ruins_desc: "$building_manila_cathedral_monument$ je nyní v troskách poté, co stát [SCOPE.sState('relevant_state').GetName] zasáhlo zemětřesení. Můžeme ji znovu obnovit."
  notification_manila_cathedral_in_ruins_tooltip: "#header $notification_manila_cathedral_in_ruins_name$#!\n$TOOLTIP_DELIMITER$\n$notification_manila_cathedral_in_ruins_desc$"
  notification_manila_cathedral_rebuilt_name: "[SCOPE.GetRootScope.GetCountry.GetCustom('getManilaCathedralCount')] $building_manila_cathedral_monument$"
- notification_manila_cathedral_rebuilt_desc: "$building_manila_cathedral_monument$ byla obnovena ve státě [SCOPE.sState('relevant_state').GetName]. Její trvalý odkaz prospěje celé zemi [ROOT.GetCountry.GetAltAdjectiveNoFormatting('A')]." # todo: COUNTRY CASE
+ notification_manila_cathedral_rebuilt_desc: "$building_manila_cathedral_monument$ byla obnovena ve státě [SCOPE.sState('relevant_state').GetName]. Její trvalý odkaz prospěje celé zemi [ROOT.GetCountry.GetNameNoFormatting]."
  notification_manila_cathedral_rebuilt_tooltip: "#header $notification_manila_cathedral_rebuilt_name$#!\n$TOOLTIP_DELIMITER$\n$notification_manila_cathedral_rebuilt_desc$"
  seventh_manila_cathedral_loc: "Sedmá"
  eighth_manila_cathedral_loc: "Osmá"

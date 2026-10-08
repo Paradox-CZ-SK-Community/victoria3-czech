@@ -2,28 +2,28 @@
  GAME_RULES_PRESET_AI_BEHAVIOR: "Chování AI: [GameRuleSetting.GetName]"
  rule_ai_behavior: "AI chování vůči hráčům"
  setting_lenient_ai_behavior: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_lenient_ai_behavior_desc #high Mírné#!#!#!"
- setting_lenient_ai_behavior_desc: "AI země budou jednat přátelštěji vůči hráčským zemím a budou je v [Concept('concept_diplomatic_play','diplomatické hře')] posuzovat shovívavěji." # todo: CONCEPT CASE
+ setting_lenient_ai_behavior_desc: "AI země budou jednat přátelštěji vůči hráčským zemím a budou je v [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] posuzovat shovívavěji."
  setting_standard_ai_behavior: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_standard_ai_behavior_desc Standardní#!#!"
  setting_standard_ai_behavior_desc: "AI země budou hodnotit jak hráčské, tak AI země stejným způsobem, bez zvláštních ohledů na hráče."
  setting_harsh_ai_behavior: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_harsh_ai_behavior_desc #high Přísná#!#!#!"
- setting_harsh_ai_behavior_desc: "AI země budou více podezřívat úmysly hráčských států a budou je v [Concept('concept_diplomatic_play','diplomatické hře')] posuzovat přísněji." # todo: CONCEPT CASE
+ setting_harsh_ai_behavior_desc: "AI země budou více podezřívat úmysly hráčských států a budou je v [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] posuzovat přísněji."
  rule_ai_aggression: "Agrese AI"
  setting_low_ai_aggression: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_low_ai_aggression_desc #high Nízká#!#!#!"
- setting_low_ai_aggression_desc: "AI země budou zahajovat méně [Concept('concept_diplomatic_play','diplomatické hry')] a jsou méně nakloněny dobýt území." # todo: CONCEPT CASE
+ setting_low_ai_aggression_desc: "AI země budou zahajovat méně [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] a jsou méně nakloněny dobýt území."
  setting_standard_ai_aggression: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_standard_ai_aggression_desc Standardní#!#!"
  setting_standard_ai_aggression_desc: "AI země mají standardní agresivní nastavení založené na svých strategiích."
  setting_high_ai_aggression: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_high_ai_aggression_desc #high Vysoká#!#!#!"
- setting_high_ai_aggression_desc: "AI země budou zahajovat více [Concept('concept_diplomatic_play','diplomatické hry')] a budou více nakloněny dobýt území." # todo: CONCEPT CASE
+ setting_high_ai_aggression_desc: "AI země budou zahajovat více [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] a budou více nakloněny dobýt území."
  rule_subject_flags: "Vlajky pro subjekty"
  setting_no_subject_flags: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_no_subject_flags_desc #high Žádné změny vlajek#!#!#!"
- setting_no_subject_flags_desc: "Vlajky [Concept('concept_subject','závislá země')] [Concept('concept_country','země')] se #b nezmění#! podle toho, kdo je jejich $suzerain$." # todo: CONCEPT CASE
+ setting_no_subject_flags_desc: "Vlajky [Concept('concept_subject','závislá země')] [Concept('concept_country', '$concept_countries$')] se #b nezmění#! podle toho, kdo je jejich $suzerain$."
  setting_allow_subject_flags: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_allow_subject_flags_desc Umožnit změny vlajek#!#!"
- setting_allow_subject_flags_desc: "Vlajky [Concept('concept_subject','závislá země')] [Concept('concept_country','země')] se mohou změnit podle toho, kdo je jejich $suzerain$." # todo: CONCEPT CASE
+ setting_allow_subject_flags_desc: "Vlajky [Concept('concept_subject','závislá země')] [Concept('concept_country', '$concept_countries$')] se mohou změnit podle toho, kdo je jejich $suzerain$."
  rule_subject_map_color: "Barva mapy pro subjekty"
  setting_no_subject_map_color: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_no_subject_map_color_desc #high Žádné změny barev mapy#!#!#!"
- setting_no_subject_map_color_desc: "Barva mapy [Concept('concept_subject','závislá země')] [Concept('concept_country','země')] se #b nezmění#! podle toho, kdo je jejich $suzerain$." # todo: CONCEPT CASE
+ setting_no_subject_map_color_desc: "Barva mapy [Concept('concept_subject','závislá země')] [Concept('concept_country', '$concept_countries$')] se #b nezmění#! podle toho, kdo je jejich $suzerain$."
  setting_allow_subject_map_color: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_allow_subject_map_color_desc Umožnit změny barev mapy#!#!"
- setting_allow_subject_map_color_desc: "Barva mapy určitých typů [Concept('concept_subject','závislé země')] [Concept('concept_country','zemí')] se změní podle toho, kdo je jejich $suzerain$." # todo: CONCEPT CASE
+ setting_allow_subject_map_color_desc: "Barva mapy určitých typů [Concept('concept_subject','závislé země')] [Concept('concept_country', '$concept_countries$')] se změní podle toho, kdo je jejich $suzerain$." # todo: CONCEPT CASE
  rule_achievements: "Úspěchy"
  setting_achievements_allowed: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_achievements_allowed_desc Umožněno#!#!"
  setting_achievements_allowed_desc: "Úspěchy mohou být odemknuty během této kampaně."
@@ -41,41 +41,41 @@
  setting_plausible_releasable_nations_desc: "Umožnit pouze historicky pravděpodobné národy k uvolnění."
  rule_investment_pool: "Investiční fond"
  setting_autonomous_investment_pool: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_autonomous_investment_pool_desc Autonomní investiční fond#!#!"
- setting_autonomous_investment_pool_desc: "Investiční fond [Concept('concept_investment_pool','investiční fond')] bude použit k autonomnímu financování [Concept('concept_private_construction','soukromé stavby')] vhodných [Concept('concept_building','budov')] v závislosti na [Concept('concept_country','země')] [Concept('concept_law','zákon')]." # todo: CONCEPT CASE
+ setting_autonomous_investment_pool_desc: "Investiční fond [Concept('concept_investment_pool','investiční fond')] bude použit k autonomnímu financování [Concept('concept_private_construction', '$concept_private_constructions$')] vhodných [Concept('concept_building','$concept_buildings$')] v závislosti na [Concept('concept_country', '$concept_country_possessive$')] [Concept('concept_law','$concept_laws$')]."
  setting_directly_controlled_investment_pool: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_directly_controlled_investment_pool_desc Přímo kontrolovaný investiční fond#!#!"
- setting_directly_controlled_investment_pool_desc: "Investiční fond [Concept('concept_investment_pool','investiční fond')] je přímo využíván každou [Concept('concept_country','zemi')] a může být použit k financování [Concept('concept_government_construction','vládní výstavbě')] vhodných [Concept('concept_building','budovám')] v závislosti na [Concept('concept_country','země')] [Concept('concept_law','zákon')]." # todo: CONCEPT CASE
+ setting_directly_controlled_investment_pool_desc: "Investiční fond [Concept('concept_investment_pool','investiční fond')] je přímo využíván každou [Concept('concept_country','zemi')] a může být použit k financování [Concept('concept_government_construction', '$concept_government_constructions$')] vhodných [Concept('concept_building','$concept_buildings$')] v závislosti na [Concept('concept_country', '$concept_country_possessive$')] [Concept('concept_law','$concept_laws$')]." # todo: CONCEPT CASE
  rule_monument_effects: "Efekty monumentů"
  setting_allow_monument_effects: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_allow_monument_effects_desc Povolené#!#!"
- setting_allow_monument_effects_desc: "[Concept('concept_monument','Monument')] může produkovat různé efekty v závislosti na své povaze a někdy angažovat [Concept('concept_pop','populace')] k jeho dosažení." # todo: CONCEPT CASE
+ setting_allow_monument_effects_desc: "[Concept('concept_monument', '$concept_monuments$')] může produkovat různé efekty v závislosti na své povaze a někdy angažovat [Concept('concept_pop', '$concept_pops$')] k jeho dosažení."
  setting_prestige_only_monument_effects: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_prestige_only_monument_effects_desc $concept_prestige$ Pouze#!#!"
- setting_prestige_only_monument_effects_desc: "Všechny [Concept('concept_monument','monumenty')] generují fixní množství [Concept('concept_prestige','prestiž')] pro svou zemi. Žádné $concept_monument$ nezaměstnávají [Concept('concept_pop','populace')]." # todo: CONCEPT CASE
+ setting_prestige_only_monument_effects_desc: "Všechny [Concept('concept_monument', '$concept_monuments$')] generují fixní množství [Concept('concept_prestige','prestiž')] pro svou zemi. Žádné $concept_monument$ nezaměstnávají [Concept('concept_pop', '$concept_pops$')]."
  setting_no_monument_effects: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_no_monument_effects_desc Zakázáno#!#!"
- setting_no_monument_effects_desc: "[Concept('concept_monument','Monument')] jsou pouze dekorativní. Odměna za jejich stavbu je čistě vizuální." # todo: CONCEPT CASE
+ setting_no_monument_effects_desc: "[Concept('concept_monument', '$concept_monuments$')] jsou pouze dekorativní. Odměna za jejich stavbu je čistě vizuální."
  rule_loyalties_grace_period: "Období milosti loajalit"
  setting_loyalties_grace_period_none: "Žádná"
- setting_loyalties_grace_period_none_desc: "Od samého začátku nesete plnou tíhu jak [Concept('concept_radical','radikálové')] tak [Concept('concept_loyalist','loajalisté')]." # todo: CONCEPT CASE
+ setting_loyalties_grace_period_none_desc: "Od samého začátku nesete plnou tíhu jak [Concept('concept_radical','$concept_radicals$')] tak [Concept('concept_loyalist','$concept_loyalists$')]."
  setting_loyalties_grace_period_short: "Krátká"
- setting_loyalties_grace_period_short_desc: "[Concept('concept_radical','Radikál')] a [Concept('concept_loyalist','loajalista')] získání začíná nízko, ale postupně roste, s plným efektem #v 1 rok#! po začátku hry." # todo: CONCEPT CASE
+ setting_loyalties_grace_period_short_desc: "[Concept('concept_radical','Radikál')] a [Concept('concept_loyalist','loajalista')] získání začíná nízko, ale postupně roste, s plným efektem #v 1 rok#! po začátku hry."
  setting_loyalties_grace_period_long: "Dlouhá"
- setting_loyalties_grace_period_long_desc: "[Concept('concept_radical','Radikál')] a [Concept('concept_loyalist','loajalista')] získání začíná nízko, ale postupně se zvyšuje, s plným efektem #v 5 let#! po začátku hry." # todo: CONCEPT CASE
+ setting_loyalties_grace_period_long_desc: "[Concept('concept_radical','Radikál')] a [Concept('concept_loyalist','loajalista')] získání začíná nízko, ale postupně se zvyšuje, s plným efektem #v 5 let#! po začátku hry."
  setting_loyalties_grace_period_extra_long: "Extrémně dlouhá"
- setting_loyalties_grace_period_extra_long_desc: "[Concept('concept_radical','Radikál')] a [Concept('concept_loyalist','loajalista')] získání začíná nízko, ale postupně se zvyšuje s plným efektem #v 10 let#! po začátku hry." # todo: CONCEPT CASE
+ setting_loyalties_grace_period_extra_long_desc: "[Concept('concept_radical','Radikál')] a [Concept('concept_loyalist','loajalista')] získání začíná nízko, ale postupně se zvyšuje s plným efektem #v 10 let#! po začátku hry."
  rule_free_construction: "Základní kapacita výstavby"
  setting_free_construction_scaled_all: "Škálováno (všechny)"
- setting_free_construction_scaled_all_desc: "Všechny [Concept('concept_country','země')] začínají se základní kapacitou [Concept('concept_construction','výstavbou')] škálovanou podle jejich [Concept('concept_gdp','hrubý domácí produkt')]." # todo: CONCEPT CASE
+ setting_free_construction_scaled_all_desc: "Všechny [Concept('concept_country', '$concept_countries$')] začínají se základní kapacitou [Concept('concept_construction','výstavbou')] škálovanou podle jejich [Concept('concept_gdp','hrubý domácí produkt')]." # todo: CONCEPT CASE
  setting_free_construction_scaled_player_exemption: "Škálováno (výjimka pro hráče)"
- setting_free_construction_scaled_player_exemption_desc: "Státy ovládané hráčem vždy dostanou maximální množství základní [Concept('concept_construction','výstavba')], zatímco státy ovládané AI ([Concept('concept_country','země')]) mají tuto hodnotu škálovanou podle jejich [Concept('concept_gdp','hrubý domácí produkt')]." # todo: CONCEPT CASE
+ setting_free_construction_scaled_player_exemption_desc: "Státy ovládané hráčem vždy dostanou maximální množství základní [Concept('concept_construction','výstavba')], zatímco státy ovládané AI ([Concept('concept_country', '$concept_countries$')]) mají tuto hodnotu škálovanou podle jejich [Concept('concept_gdp','hrubý domácí produkt')]."
  setting_free_construction_unscaled: "Maximální"
- setting_free_construction_unscaled_desc: "Všechny státy obdrží maximální množství základní [Concept('concept_construction','výstavba')], bez ohledu na jejich [Concept('concept_gdp','hrubý domácí produkt')]." # todo: CONCEPT CASE
+ setting_free_construction_unscaled_desc: "Všechny státy obdrží maximální množství základní [Concept('concept_construction','výstavba')], bez ohledu na jejich [Concept('concept_gdp','hrubý domácí produkt')]."
  rule_pop_consolidation: "Konsolidace populace (výkon)"
  setting_no_consolidation: "Žádná"
- setting_no_consolidation_desc: "[Concept('concept_pop','Populace')] se nikdy nebudou konsolidovat mimo pravidla [Concept('concept_assimilation','asimilace')] nebo [Concept('concept_conversion','konverze')], bez ohledu na velikost.\n@warning! To by mohlo výrazně poškodit výkon ve střední až pozdní fázi hry." # todo: CONCEPT CASE
+ setting_no_consolidation_desc: "[Concept('concept_pop', '$concept_pops$')] se nikdy nebudou konsolidovat mimo pravidla [Concept('concept_assimilation','asimilace')] nebo [Concept('concept_conversion','konverze')], bez ohledu na velikost.\n@warning! To by mohlo výrazně poškodit výkon ve střední až pozdní fázi hry."
  setting_minor_consolidation: "Menší"
- setting_minor_consolidation_desc: "[Concept('concept_pop','Populace')] se budou konsolidovat pouze tehdy, pokud jsou velmi malé a neúčinné.\nMůže poškodit výkon ve střední až pozdní fázi hry." # todo: CONCEPT CASE
+ setting_minor_consolidation_desc: "[Concept('concept_pop', '$concept_pops$')] se budou konsolidovat pouze tehdy, pokud jsou velmi malé a neúčinné.\nMůže poškodit výkon ve střední až pozdní fázi hry."
  setting_moderate_consolidation: "Mírná"
- setting_moderate_consolidation_desc: "[Concept('concept_pop','Populace')] se mohou konsolidovat, pokud jsou celkově malé a mají omezený dopad na hru." # todo: CONCEPT CASE
+ setting_moderate_consolidation_desc: "[Concept('concept_pop', '$concept_pops$')] se mohou konsolidovat, pokud jsou celkově malé a mají omezený dopad na hru."
  setting_aggressive_consolidation: "Agresivní"
- setting_aggressive_consolidation_desc: "Za správných podmínek mohou dokonce [Concept('concept_pop','populace')] střední velikosti konsolidovat.\n@warning! Může zlepšit výkon, ale ovlivní rovnováhu hry." # todo: CONCEPT CASE
+ setting_aggressive_consolidation_desc: "Za správných podmínek mohou dokonce [Concept('concept_pop', '$concept_pops$')] střední velikosti konsolidovat.\n@warning! Může zlepšit výkon, ale ovlivní rovnováhu hry."
  DELETE_SELECTED_PRESET_BUTTON_TOOLTIP: "Smazat tento předvoleb"
  SAVE_PRESET_BUTTON_TOOLTIP: "Uložit tento předvoleb"
  rule_fantastical_content: "Fantastický obsah"
@@ -92,11 +92,11 @@
  RNG_SEED_CLICK_TO_CHANGE: "Kliknutím změňte seed..."
  rule_dynamic_naming: "Dynamické pojmenovávání"
  setting_allow_dynamic_naming: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_allow_dynamic_naming #high Zapnuto#!#!#!"
- setting_allow_dynamic_naming_desc: "[Concept('concept_state','Stát')] a #bold města#! budou měnit svá jména podle [Concept('concept_culture','kultury')] [Concept('concept_country','zemí')], která je vlastní." # todo: CONCEPT CASE
+ setting_allow_dynamic_naming_desc: "[Concept('concept_state', '$concept_states$')] a #bold města#! budou měnit svá jména podle [Concept('concept_culture','kultury')] [Concept('concept_country','zemí')], která je vlastní." # todo: CONCEPT CASE
  setting_no_dynamic_naming: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_no_dynamic_naming_desc #high Vypnuto#!#!#!"
- setting_no_dynamic_naming_desc: "[Concept('concept_state','Stát')] a #bold města#! nebudou měnit svá jména podle [Concept('concept_culture','kultury')] [Concept('concept_country','zemí')], která je vlastní." # todo: CONCEPT CASE
+ setting_no_dynamic_naming_desc: "[Concept('concept_state', '$concept_states$')] a #bold města#! nebudou měnit svá jména podle [Concept('concept_culture','kultury')] [Concept('concept_country','zemí')], která je vlastní." # todo: CONCEPT CASE
  rule_ruler_selector: "Výběr vládce"
  setting_allow_ruler_selector: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_allow_ruler_selector_desc #high Povoleno#!#!#!"
- setting_allow_ruler_selector_desc: "Povolit výběr [Concept('concept_ruler','vládce')] během této kampaně" # todo: CONCEPT CASE
+ setting_allow_ruler_selector_desc: "Povolit výběr [Concept('concept_ruler','vládce')] během této kampaně"
  setting_no_ruler_selector: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_no_ruler_selector_desc #high Zakázáno#!#!#!"
- setting_no_ruler_selector_desc: "Zakázat výběr [Concept('concept_ruler','vládce')] během této kampaně" # todo: CONCEPT CASE
+ setting_no_ruler_selector_desc: "Zakázat výběr [Concept('concept_ruler','vládce')] během této kampaně"

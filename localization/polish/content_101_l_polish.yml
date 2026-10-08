@@ -172,7 +172,7 @@
  custom_strangled: "vrah každého z nich uškrtí ve spánku a druhého rána jsou nalezeni."
  custom_stabbed: "ubodáni stovkami ran, až jsou téměř k nepoznání."
  ACTIVE_LAWS_DESC: "Aktuální platné zákony vaší země."
- decentralized_power: "[Concept('concept_decentralized_nation','Decentralizovaný národ')]" # todo: CONCEPT CASE
+ decentralized_power: "[Concept('concept_decentralized_nation', 'decentralizovaný národ')]"
  natural_disaster_events.1.t: "Zemětřesení ve státě [SCOPE.sState('earthquake_state').GetName]"
  natural_disaster_events.1.d: "Stát [SCOPE.sState('earthquake_state').GetName] zasáhlo zemětřesení, které zničilo budovy, zranilo lidi a dokonce si vyžádalo několik životů."
  natural_disaster_events.1.f: "„Připadalo mi, jako by končil celý svět. Naštěstí se nikomu z nás nic nestalo, ale náš dům byl zničen.“"
@@ -304,13 +304,13 @@
  congo_free_state_events.1.d: "[SCOPE.sCharacter('free_state_monarch').GetPrimaryRoleTitle] [SCOPE.sCharacter('free_state_monarch').GetFullName] prohlásil, že tato země bude nyní svobodným státem pod [SCOPE.sCharacter('free_state_monarch').GetHerHis] kontrolou v personální unii s naší zemí."
  congo_free_state_events.1.f: "[SCOPE.sCharacter('free_state_monarch').GetPrimaryRoleTitle] má tvář strnulou v nehybném úsměvu jako mramorová socha. [SCOPE.sCharacter('free_state_monarch').GetSheHe|U] mluví sametovým hlasem, po němž stěny rudnou a útulní: „Nechci riskovat, že propásneme skvělou příležitost zajistit si pro sebe kus tohoto velkolepého afrického koláče.“\n\nObrazy za [SCOPE.sCharacter('free_state_monarch').GetHerHim] všechny zobrazují společné téma; plátno se třpytí v místech s krví."
  congo_free_state_events.1.a: "Měli bychom to sledovat."
- congo_free_state_events.2.t: "Zvěsti z [SCOPE.sCountry('free_state').GetAltAdjectiveNoFlag('G')]" # todo: COUNTRY CASE
+ congo_free_state_events.2.t: "Zvěsti z [SCOPE.sCountry('free_state').GetAltAdjectiveNoFlag('G')]" # todo: CONCEPT CASE
  congo_free_state_events.2.d: "Ve vládních kruzích se mluví o tom, že [SCOPE.sCountry('free_state').GetNameNoFlag], vlastněný osobně [SCOPE.sCharacter('free_state_monarch').GetPrimaryRoleTitle] [SCOPE.sCharacter('free_state_monarch').GetFullName], se ke svým lidem nechová příliš dobře."
  congo_free_state_events.2.f: "„Lodě připlouvající do přístavu předvádějí podezřelý, a přece odvážný třpyt. Rubíny a diamanty, planoucí jako pochodně, koketně vstupují do země. Lodě vracející se zpět, ach, to je jiná věc.\n\nPušky, střelný prach a vojáci. Rád bych to řekl mírněji, příteli, věř mi. Rád bych.“"
  congo_free_state_events.2.a: "Není se čeho obávat."
  congo_free_state_events.2.b: "Promluvíme si s [SCOPE.sCharacter('free_state_monarch').GetFullName]."
  congo_free_state_events.3.t: "Znepokojivý úbytek populace"
- congo_free_state_events.3.d: "Misionáři i laici vyjádřili své nejhlubší znepokojení nad rostoucím počtem úmrtí v [SCOPE.sCountry('free_state').GetAltAdjectiveNoFlag('L')]." # todo: COUNTRY CASE
+ congo_free_state_events.3.d: "Misionáři i laici vyjádřili své nejhlubší znepokojení nad rostoucím počtem úmrtí v [SCOPE.sCountry('free_state').GetAltAdjectiveNoFlag('L')]." # todo: CONCEPT CASE
  congo_free_state_events.3.f: "„V tuhle chvíli je to všechno. Jsou to nemoci, hladovění, válka, špatná voda. Ach, vždycky je to válka, že? Jsou to důstojníci. Nejsou nakonec i všechny ostatní věci také důstojníci? A především je to [SCOPE.sCharacter('free_state_monarch').GetPrimaryRoleTitle].“"
  congo_free_state_events.3.a: "Nemůžeme jít proti vládě [SCOPE.sCharacter('free_state_monarch').GetPrimaryRoleTitle]."
  congo_free_state_events.3.b: "Tohle je masakr! Svět to musí vědět!"
@@ -327,7 +327,7 @@
  modifier_denied_monarch_colony_ig: "Odepřen panovníkův Svobodný stát"
  modifier_denied_monarch_colony_ig_desc: "Panovníkovi byl odepřen Svobodný stát, na který si činil nárok."
  congo_free_state_events.4.t: "Zničující článek"
- congo_free_state_events.4.d: "V [SCOPE.sCountry('newspaper_country').GetAdjectiveNoFormatting] novinách „[SCOPE.GetRootScope.GetCountry.GetCustom('generic_newspaper_type')]“ byl napsán zničující článek o zvěrstvech páchaných v [SCOPE.sCountry('free_state').GetAltAdjectiveNoFlag('L')]." # todo: COUNTRY CASE
+ congo_free_state_events.4.d: "V [SCOPE.sCountry('newspaper_country').GetAdjectiveNoFormatting] novinách „[SCOPE.GetRootScope.GetCountry.GetCustom('generic_newspaper_type')]“ byl napsán zničující článek o zvěrstvech páchaných v [SCOPE.sCountry('free_state').GetAltAdjectiveNoFlag('L')]." # todo: CONCEPT CASE
  congo_free_state_events.4.f: "„Náčelníci, kteří podepsali předání své země, nevěděli, co podepisují. Nebyly to rovnocenné a spravedlivé smlouvy, byla to fraška. Od té doby se zacházení s místními rovnalo otroctví.“"
  congo_free_state_events.4.a: "Nešťastné, ale patří to [SCOPE.sCharacter('free_state_monarch').GetPrimaryRoleTitle]."
  congo_free_state_events.4.b: "Musíme to odsoudit."
@@ -342,7 +342,7 @@
  free_state_monarchy_modifier: "Vláda panovníka Svobodného státu"
  modifier_condemned_colony: "Odsouzený Svobodný stát"
  congo_free_state_events.6.t: "Zpráva"
- congo_free_state_events.6.d: "Vláda země [SCOPE.sCountry('report_country').GetAdjective] zveřejnila zprávu o [SCOPE.sCountry('free_state').GetAltAdjectiveNoFlag('A')], která odhaluje strašlivé činy páchané místní správou." # todo: COUNTRY CASE
+ congo_free_state_events.6.d: "Vláda země [SCOPE.sCountry('report_country').GetAdjective] zveřejnila zprávu o [SCOPE.sCountry('free_state').GetAltAdjectiveNoFlag('A')], která odhaluje strašlivé činy páchané místní správou." # todo: CONCEPT CASE
  congo_free_state_events.6.f: "„Místní úředníci jsou jmenováni, aby zajistili sběr surovin. Nesplnění této kvóty znamená rozsudek smrti. Důkaz? Ruka oběti. Tyto ohavné skutky brutality už nemohou zůstat nenahlášeny.“"
  congo_free_state_events.6.a: "Musíme to odsoudit."
  congo_free_state_events.6.b: "Nešťastné, ale patří to [SCOPE.sCharacter('free_state_monarch').GetPrimaryRoleTitle]."
@@ -546,7 +546,7 @@
  free_speech_book_burning_risk_fail: "Neoblíbené vládní pálení knih"
  free_speech_laws.3.t: "Přehnaně horlivá cenzura"
  free_speech_laws.3.d: "Zákon [SCOPE.sLaw('current_law_scope').GetName] má potíže získat lidovou podporu, protože zmínky o něm potlačuje současný cenzurní aparát."
- free_speech_laws.3.f: ""Všechno, co se týká cenzury, je okamžitě cenzurováno, takže jak máme vůbec o tom vést otevřenou diskusi?"\n\n "Poprvé, co? Jsou jen tak chytří, jak tomu rozumějí. Když nejsou příliš gramotní, můžete jim propašovat pár metafor a přirovnání."\n\n"Co to, do čerta, je přirovnání? Nějaký pokřivený úsměv?" # todo: CHANGED
+ free_speech_laws.3.f: "„Všechno, co se týká cenzury, je okamžitě cenzurováno, takže jak máme vůbec o tom vést otevřenou diskusi?“\n\n „Poprvé, co? Jsou jen tak chytří, jak tomu rozumějí. Když nejsou příliš gramotní, můžete jim propašovat pár metafor a přirovnání.“\n\n„Co to, do čerta, je přirovnání? Nějaký pokřivený úsměv?“" # todo: CHANGED
  free_speech_laws.3.a: "Moc s tím nenaděláme."
  free_speech_laws.3.b: "Možná můžeme zákony trochu obejít."
  free_speech_censorship_stall: "Svoboda projevu cenzurována"

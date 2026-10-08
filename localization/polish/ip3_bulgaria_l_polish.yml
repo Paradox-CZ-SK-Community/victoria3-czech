@@ -9,11 +9,11 @@
  modifier_bul_ultranationalist_rhetoric: "Ultranacionalistická rétorika"
  modifier_bul_embraced_yugoslavism: "Přijatý jugoslavismus"
  je_prussia_of_the_balkans: "Prusko Balkánu"
- je_prussia_of_the_balkans_desc: "[Concept('concept_army_power_projection','Projekce síly armády')] je [SCOPE.GetRootScope.GetCountry.GetArmyPowerProjection|0] / 1000" # todo: CONCEPT CASE
+ je_prussia_of_the_balkans_desc: "[Concept('concept_army_power_projection','Projekce síly armády')] je [SCOPE.GetRootScope.GetCountry.GetArmyPowerProjection|0] / 1000"
  je_prussia_of_the_balkans_reason: "Bulharská říše se kdysi rozprostírala od Černého moře až k Jónskému a Egejskému moři. Náš lid je odhodlán obnovit naši někdejší slávu. \n\nNáš nově znovuzrozený národ se nemůže spoléhat na pomoc silných mužů zpoza našich hranic. Prostřednictvím technologie, síly zbraní a pouhých počtů vybudujeme armádu, která dokáže chránit naši nezávislost, naše zájmy i naše ambice."
  bularia_military_progress_bar: "Síla armády"
- bularia_military_progress_bar_desc: "[Concept('concept_army_power_projection','Projekce síly armády')]: [SCOPE.GetRootScope.GetCountry.GetArmyPowerProjection|0] / 1000" # todo: CONCEPT CASE
- bularia_military_progress_tt: "[SCOPE.GetRootScope.GetCountry.GetNameNoFlag] má [Concept('concept_army_power_projection','projekce síly armády')] alespoň #variable [GetPlayer.MakeScope.Var('army_projection_target').GetValue|0] #!" # todo: CONCEPT CASE
+ bularia_military_progress_bar_desc: "[Concept('concept_army_power_projection','Projekce síly armády')]: [SCOPE.GetRootScope.GetCountry.GetArmyPowerProjection|0] / 1000"
+ bularia_military_progress_tt: "[SCOPE.GetRootScope.GetCountry.GetNameNoFlag] má [Concept('concept_army_power_projection','projekce síly armády')] alespoň #variable [GetPlayer.MakeScope.Var('army_projection_target').GetValue|0] #!"
  bulgaria_events.1.t: "Prusko Balkánu"
  bulgaria_events.1.d: "Ostatní národy, ohromené velikostí a silou naší armády, nás znají jako „Prusko Balkánu“. Zbývá už jen rozhodnout, kam mají naši vojáci pochodovat."
  bulgaria_events.1.f: "„I kdyby mi usekli hlavu, stále budu volat: „Ať žije Bulharsko!““ \n\n - Nikolaj Chajtov"
@@ -22,8 +22,8 @@
  bulgaria_events.1.c: "Toto je začátek bulharské renesance!"
  bulgaria_pursued_greater_yugoslavism_tt: "Usilovali jsme o #v Velký jugoslavismus#! v události #v $bulgaria_events.1.t$#!"
  bulgaria_unlock_yugoslavia_tt: "Budeme moci vytvořit #v $YUG$#!"
- bulgarian_empire_homeland_tt: "[GetStateRegion('STATE_MACEDONIA').GetName], [GetStateRegion('STATE_EASTERN_SERBIA').GetName] a [GetStateRegion('STATE_EASTERN_THRACE').GetName] se po získání stanou [GetCulture('bulgarian').GetName] [Concept('concept_homeland','domovině')]" # todo: CONCEPT CASE
- bulgarian_empire_claims_tt: "[ROOT.GetCountry.GetName] získá [Concept('concept_claim','nárok')] na každý nevlastněný [Concept('concept_state','stát')] v [GetGeographicRegion('geographic_region_greater_bulgaria').GetName]" # todo: CONCEPT CASE
+ bulgarian_empire_homeland_tt: "[GetStateRegion('STATE_MACEDONIA').GetName], [GetStateRegion('STATE_EASTERN_SERBIA').GetName] a [GetStateRegion('STATE_EASTERN_THRACE').GetName] se po získání stanou [GetCulture('bulgarian').GetName] [Concept('concept_homeland','$concept_homelands$')]"
+ bulgarian_empire_claims_tt: "[ROOT.GetCountry.GetName] získá [Concept('concept_claim','nárok')] na každý nevlastněný [Concept('concept_state','stát')] v [GetGeographicRegion('geographic_region_greater_bulgaria').GetName]"
  bulgaria_events.2.t: "Konečně svobodní"
  bulgaria_events.2.d: "Bulharsko se konečně stalo nezávislým národem. Kdo by nám měl vládnout skrze zmatky změn vstříc prosperující budoucnosti?"
  bulgaria_events.2.f: "„Princ Ferdinand, který byl Koburkem, byl bratrancem mého otce, a pamatuji si, jak ten po návratu do hotelu říkal, že jako nejmladší ze své rodiny byl přirozeně považován za hlupáka. „Ale,“ řekl můj otec, „na rodinného hlupáka si nevedl vůbec špatně a nepřekvapilo by mě, kdyby jim všem dokázal opak.““ \n\n— Lady Helena Gleichen"
@@ -39,7 +39,7 @@
  bulgaria_events.3.f: "Počet dětí zabitých při těchto masakrech je obrovský. Často byly napichovány na bajonety a máme několik vyprávění očitých svědků, kteří viděli malé nemluvňata nesená ulicemi, zde i v Olluk-Kni, na hrotech bajonetů.\n\n— J. A. MacGahan, #italic The Daily News. #!"
  bulgaria_events.3.a: "To jsou hrůzné lži!"
  bulgaria_events.3.b: "Veřejně oběsit [SCOPE.sCharacter('scapegoat').GetFullName] za tyto zločiny."
- bulgaria_events.3.c: "Naše kontakty v [SCOPE.sCountry('closest_great_power').GetAltAdjectiveNoFlag('L')] se za nás zaručí." # todo: COUNTRY CASE
+ bulgaria_events.3.c: "Naše kontakty v [SCOPE.sCountry('closest_great_power').GetAltAdjectiveNoFlag('L')] se za nás zaručí." # todo: CONCEPT CASE
  bulgaria_events.3.e: "Příští rebelové dopadnou mnohem hůř."
  ai_strategy_prussia_of_the_balkans: "$je_prussia_of_the_balkans$"
  ai_strategy_prussia_of_the_balkans_desc: "$je_prussia_of_the_balkans_reason$"

@@ -1,0 +1,385 @@
+﻿l_polish:
+ je_imperialism_of_promise: "Imperialismus slibu" # todo: NEW TRANSLATION
+ je_imperialism_of_promise_reason: "Máme povinnost podporovat společné dobro za každou cenu. Základní svobody a rovné příležitosti hrají v tvorbě politiky ústřední roli. [GetIdeology('ideology_utilitarian_millian').GetName] přístup ke koloniální správě slibuje silnou sílu pokroku jak v [ROOT.GetCountry.GetName], tak po celém světě." # todo: NEW TRANSLATION
+ je_imperialism_of_promise_status: "Uplatňujte [GetIdeology('ideology_utilitarian_millian').GetName] přístup ke koloniální správě v [JournalEntry.GetCountry.GetName]." # todo: NEW TRANSLATION
+ utilitarian_character_trigger: "Každý [concept_agitator] nebo [concept_leader] má [GetIdeology('ideology_utilitarian_leader').GetName] [concept_ideology]." # todo: NEW TRANSLATION
+ has_any_secessionists_fail_tt: "Jakékoli odštěpené země se odtrhly od [ROOT.GetCountry.GetName]." # todo: NEW TRANSLATION
+ bic_collapse_var_tt: "[ROOT.GetCountry.GetName] už není [concept_subject]" # todo: NEW TRANSLATION
+ secession_war_in_progress_tt: "[Concept('concept_political_movement','$movement_cultural_minority$')] je [Concept('concept_secession','Seceding')]" # todo: NEW TRANSLATION
+ bureaucrats_no_shortage_trigger: "[ROOT.GetCountry.GetAdjectiveNoFlag] [concept_bureaucracy] je větší nebo rovno #v 0#! a země se #bold nechystá#! vstoupit do deficitu [concept_bureaucracy]" # todo: NEW TRANSLATION
+ utilitarian.1.t: "Dobrá správa pro všechny" # todo: NEW TRANSLATION
+ utilitarian.1.d: "Principy ideologie [GetIdeology('ideology_utilitarian_millian').GetName] nyní hrají ústřední roli v politice [ROOT.GetCountry.GetAdjective]. Administrativa byla reformována, aby fungovala jako dobře seřízený stroj." # todo: NEW TRANSLATION
+ utilitarian.1.f: "[SCOPE.sCharacter('relevant_character').GetFullNameNoFormatting]ův závazek k utilitarismu se po tomto úspěchu v řízení rozvoje [ROOT.GetCountry.GetNameNoFormatting] prohloubil. Zatímco někteří stále zpochybňují hodnotu [SCOPE.sCharacter('relevant_character').GetLastNameNoFormatting]ova přístupu ke koloniální správě, [SCOPE.gsInterestGroup('relevant_ig').GetNameNoFormatting] vystoupili na podporu utilitárního přístupu.\n\nZatímco lidé v Indii pokračují ve svých životech, čas ukáže, zda budou plody práce správy tak trvalé a dalekosáhlé, jak si všichni přejí. Tento úspěch je majákem pro budoucí reformy." # todo: NEW TRANSLATION
+ utilitarian.1.f2: "Závazek administrativy k utilitarismu se po tomto úspěchu v řízení rozvoje [ROOT.GetCountry.GetNameNoFormatting] prohloubil. Zatímco někteří stále zpochybňují hodnotu tohoto přístupu ke koloniální správě, odhodlaní zastánci vystoupili, aby prosazovali utilitární přístup.\n\nZatímco lidé v Indii pokračují ve svých životech, čas ukáže, zda budou plody práce správy tak trvalé a dalekosáhlé, jak si všichni přejí. Tento úspěch je majákem pro budoucí reformy." # todo: NEW TRANSLATION
+ utilitarian.1.a: "Budoucnost vypadá šťastně a světlé." # todo: NEW TRANSLATION
+ utilitarian_bonus: "Utilitární vliv" # todo: NEW TRANSLATION
+ util_colonial_admin_success: "Utilitární úspěch" # todo: NEW TRANSLATION
+ utilitarian.2.t: "Falešné sliby" # todo: NEW TRANSLATION
+ utilitarian.2.d: "Chaos pohlcující [ROOT.GetCountry.GetName] slouží jako důkaz selhání projektu [GetIdeology('ideology_utilitarian_millian').GetName]. Jeho zastánci byli obviněni, že nevratně destabilizovali administrativu." # todo: NEW TRANSLATION
+ utilitarian.2.f: "Příslib utilitárního přístupu ke koloniální správě se nevyplnil. Selhání zanechalo nejoddanější zastánce projektu zklamané a vysloužili si posměšné poznámky zaměřené proti nim.\n\n\"Vždy jsem věděl, že projekt selže. Celý přístup byl od začátku zásadně chybný. Pro takovou absurdní agendu tu není místo.\"" # todo: NEW TRANSLATION
+ utilitarian.2.a: "Zde nemají užitek." # todo: NEW TRANSLATION
+ utilitarian_malus: "Zlomené sliby" # todo: NEW TRANSLATION
+ util_colonial_admin_fail: "Oslabený vliv" # todo: NEW TRANSLATION
+ utilitarian.3.t: "Projekt bez pokroku" # todo: NEW TRANSLATION
+ utilitarian.3.d: "Zatímco utilitární přístup ke koloniální správě byl slibný, zde v [ROOT.GetCountry.GetName] neuchytil." # todo: NEW TRANSLATION
+ utilitarian.3.f: "[SCOPE.sCharacter('relevant_character').GetFullNameNoFormatting]ův závazek k utilitarismu polevil, jak projekt ztrácel hybnost. [SCOPE.gsInterestGroup('relevant_ig').GetNameNoFormatting] už nepovažují utilitární agendu za prioritu.\n\nNa chvíli [SCOPE.sCharacter('relevant_character').GetLastNameNoFormatting] tiše přemýšlí o lekcích celého úsilí. \"Možná musíme být praktičtější v tom, jak naše principy ovlivňují politiku,\" zamýšlí se." # todo: NEW TRANSLATION
+ utilitarian.3.f2: "Závazek administrativy k utilitarismu polevil, jak projekt přišel o své nejoddanější podporovatele.\n\nNa chvíli se jeden muž zadumá nad ponaučeními z celého úsilí. \"Možná musíme být praktičtější v tom, jak naše principy ovlivňují politiku,\" zamýšlí se." # todo: NEW TRANSLATION
+ utilitarian.3.a: "Náš lid bude i tak prosperovat." # todo: NEW TRANSLATION
+ utilitarian_partial_malus: "Nesplněné sliby" # todo: NEW TRANSLATION
+ util_colonial_admin_partial_success: "Slabý úspěch" # todo: NEW TRANSLATION
+ utilitarian.4.t: "Nevhodný vliv" # todo: NEW TRANSLATION
+ utilitarian.4.d: "[SCOPE.gsInterestGroup('relevant_ig').GetName] tvrdí, že veřejné mínění a tisk v [SCOPE.sCountry('relevant_overlord').GetName] negativně ovlivňují [ROOT.GetCountry.GetAdjective] politiku." # todo: NEW TRANSLATION
+ utilitarian.4.f: "\"Samozřejmě, The Times má názor. Jsem si jist, že i pekař Jan a švadlena Jana mají svůj názor. [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] by je měl všechny vyslechnout. Kdo se stará o to, jak málo informované jsou jejich představy o Indii? Třeba každou politiku lze rozhodovat všeobecným hlasováním.\"\n\n\"Kdy se naučí, že k vládnutí nad Indií musíte být v Indii?\"" # todo: NEW TRANSLATION
+ utilitarian.4.a: "Ovládněte narativ v tisku." # todo: NEW TRANSLATION
+ utilitarian.4.b: "Názory [SCOPE.sCountry('relevant_overlord').GetAdjective] veřejnosti jsou neškodné." # todo: NEW TRANSLATION
+ stop_meddlesome_affairs: "Veřejné mínění ovládnuto" # todo: NEW TRANSLATION
+ meddlesome_affairs: "Problémové veřejné mínění" # todo: NEW TRANSLATION
+ utilitarian.5.t: "Imperiální závazky" # todo: NEW TRANSLATION
+ utilitarian.5.d: "Postoje a činy [SCOPE.sCulture('not_discriminated_culture').GetName] administrátorů v [SCOPE.sState('relevant_state').GetName] vůči lidu [SCOPE.sCulture('discriminated_culture').GetName] ohrožují naši misi [GetIdeology('ideology_utilitarian_leader').GetName]." # todo: NEW TRANSLATION
+ utilitarian.5.f: "[SCOPE.sCharacter('relevant_character').GetFullNameNoFormatting] potvrzuje nedávné zprávy o násilí vůči [SCOPE.sCulture('discriminated_culture').GetNameNoFormatting] lidem v [SCOPE.sState('relevant_state').GetNameNoFormatting]:\n\n\"Neomezované chování [SCOPE.sCulture('not_discriminated_culture').GetNameNoFormatting] administrátorů, kteří přijeli do [ROOT.GetCountry.GetNameNoFormatting] hledat své zisky, podrývá úsilí naší mise [GetIdeology('ideology_utilitarian_leader').GetNameNoFormatting]. Lidé [SCOPE.sCulture('discriminated_culture').GetNameNoFormatting] potřebují ochranu před bezprávím, které na ně páchají ti, kteří honí svá bohatství.\"" # todo: NEW TRANSLATION
+ utilitarian.5.a: "Tito administrátoři musí projevovat zdrženlivost." # todo: NEW TRANSLATION
+ utilitarian.5.b: "Proč do toho zasahovat nyní?" # todo: NEW TRANSLATION
+ unrestrained_fortune_seekers: "Neomezení honiči zisku" # todo: NEW TRANSLATION
+ restrained_fortune_seekers: "Zdrženliví honiči zisku" # todo: NEW TRANSLATION
+ utilitarian.6.t: "Posilování vazeb" # todo: NEW TRANSLATION
+ utilitarian.6.d: "[SCOPE.sPoliticalLobby('relevant_lobby').GetName] aktivně zvyšuje své úsilí upevnit vazby, které má [ROOT.GetCountry.GetName] s [SCOPE.sCountry('relevant_lobby_country').GetName]." # todo: NEW TRANSLATION
+ utilitarian.6.f: "Portrét [SCOPE.sCountry('relevant_lobby_country').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('relevant_lobby_country').GetRuler.GetFullNameNoFormatting] visí nad dvěma váženými postavami, které se do noci hádají.\n\n\"Všichni jsme loajálními poddanými Impéria, [SCOPE.sCharacter('relevant_character').GetFullNameNoFormatting]. Žádná politika to nezmění. Ale zatímco pracujeme pro dobro všech poddaných, vy chcete pomoci jen svým vlastním vyhlídkám.\"\n\n\"Když mi [SCOPE.sCountry('relevant_lobby_country').GetRuler.GetPrimaryRoleTitle] důvěřuje, budu moci prosit o jeho pomoc.\"\n\n\"Když ti budou lidé věřit, nikdy ti pomoc nechybí.\"" # todo: NEW TRANSLATION
+ utilitarian.6.a: "Teď potřebujeme více autonomie." # todo: NEW TRANSLATION
+ utilitarian.6.b: "Dohlédněte, aby snahy [SCOPE.sPoliticalLobby('relevant_lobby').GetName] nebyly rušeny." # todo: NEW TRANSLATION
+ utilitarian.7.t: "Zpožděná rozhodnutí" # todo: NEW TRANSLATION
+ utilitarian.7.d: "Dopisy z [SCOPE.sCountry('relevant_overlord').GetCapital.GetCityHubName] dorazily s novými pokyny pro správu určenými pro [ROOT.GetCountry.GetAdjective] úředníky a činitele." # todo: NEW TRANSLATION
+ utilitarian.7.f: "Denní činnosti tohoto [SCOPE.sCulture('not_discriminated_culture').GetNameNoFormatting] úředníka mají často v jeho koutku [SCOPE.sState('relevant_state').GetNameNoFormatting] málo dohledu. Jeho činy dlouho nebyly kontrolovány. Dopisy z [SCOPE.sCountry('relevant_overlord').GetCapital.GetCityHubName] vymezují nová pravidla ohledně hlášení nesrovnalostí v papírování.\n\n\"Jaké obtěžování. Moji úředníci pilně pracují. Chyba tady a tam přece může být přehlédnuta.\"" # todo: NEW TRANSLATION
+ utilitarian.7.a: "Musíme plnit rozkazy." # todo: NEW TRANSLATION
+ utilitarian.7.b: "Nechte místní úředníky rozhodovat podle svého." # todo: NEW TRANSLATION
+ bic_by_the_book: "Podle pravidel" # todo: NEW TRANSLATION
+ utilitarian.8.t: "Rovné příležitosti" # todo: NEW TRANSLATION
+ utilitarian.8.d: "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] obdržel formální depeši od [SCOPE.sCountry('relevant_overlord').GetName] doporučující rozšíření vzdělání v [ROOT.GetCountry.GetName]." # todo: NEW TRANSLATION
+ utilitarian.8.f: "Telegraf dorazil pozdě v noci. Po jeho přečtení si [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] přál, aby ho ponechal na ráno.\n\n\"Takže nás vyzývají, abychom vzdělávali masy? To vyvolá otřesy. Buď bude mít můj nástupce spoustu písařů, kteří budou vykonávat jeho vůli, nebo bude mít dobře informovanou a promluvící opozici. Musíme být opatrní při tom, jak to provedeme.\"" # todo: NEW TRANSLATION
+ utilitarian.8.a: "[SCOPE.gsInterestGroup('relevant_ig').GetNameNoFormatting] může pomoci prosadit tyto změny." # todo: NEW TRANSLATION
+ utilitarian.8.b: "Reagovat na depeši je nevýhodné." # todo: NEW TRANSLATION
+ util_law_enactment_progress: "Prosazování změn" # todo: NEW TRANSLATION
+ clerk_state_radicals_increase_tt: "[Concept('concept_pop', '$concept_pops$')] ve státech s více než 10% politickou silou [SCOPE.gsInterestGroup('relevant_ig').GetName] se stanou více [concept_radical]" # todo: NEW TRANSLATION
+ no_edu_change_stance_gain_pol_str: "Trvající preference" # todo: NEW TRANSLATION
+ utilitarian.9.t: "Nesmírně náročná vize" # todo: NEW TRANSLATION
+ utilitarian.9.d: "Koloniální administrátoři vyznávající filozofii [GetIdeology('ideology_utilitarian_leader').GetName] vypracovali ambiciózní plány na zásadní racionalizaci [ROOT.GetCountry.GetAdjective] společnosti. Jejich kritici to nazývají nemožnou, nesmírně náročnou vizí." # todo: NEW TRANSLATION
+ utilitarian.9.f: "\"Toto je velkolepé podnikání, jedna z nejdůležitějších věcí. Bude vyžadovat společné úsilí každého loajálního poddaného, když budeme formovat tento národ k obrazu pořádku. Lidé, a ti, kterým naslouchají, musí uposlechnout naše rady.\"\n\n\"Ale komu se obrátit nejdříve? Obrátí se lidé ke svým vůdcům pro naši věc? Nebo bychom měli žádat o přízeň u nich a doufat, že ukážou svým následovníkům hodnotu naší cesty? Vždyť vše, co děláme, děláme pro dobro všech.\"" # todo: NEW TRANSLATION
+ utilitarian.9.a: "Musíme přesvědčit veřejnost." # todo: NEW TRANSLATION
+ utilitarian.9.b: "Přesvědčit více úředníků, aby se přidali k naší věci." # todo: NEW TRANSLATION
+ persuasive_util_pamphlet_attract: "Přesvědčit veřejnost" # todo: NEW TRANSLATION
+ persuasive_util_pamphlet_pol_str: "Síla v politice" # todo: NEW TRANSLATION
+ utilitarian.10.t: "Studium indické společnosti" # todo: NEW TRANSLATION
+ utilitarian.10.d: "Byl navržen organizovaný sčítání lidu, aby vytvořil komplexní přehled populace v [ROOT.GetCountry.GetName]." # todo: NEW TRANSLATION
+ utilitarian.10.f: "\"Studium Indie musí být profese samou o sobě, jako právo nebo medicína.\"\n\n\"K vládnutí je třeba znát ovládané. Je zázrak, že jsme se dostali tak daleko bez dokončeného sčítání. Ale jít dál by bylo nerozumné. Horší by to bylo jako bloudit v labyrintu plném pastí s povázkou přes oči. Ne, musíme znát jazyk, kastu, náboženství a pohlaví každého!\"" # todo: NEW TRANSLATION
+ utilitarian.10.a: "Pokračovat ve sčítání." # todo: NEW TRANSLATION
+ utilitarian.10.b: "K čemu by to sloužilo?" # todo: NEW TRANSLATION
+ utilitarian_census_in_progress_cost: "Sčítání v běhu" # todo: NEW TRANSLATION
+ utilitarian_no_census: "Odvolaný návrh" # todo: NEW TRANSLATION
+ util_caste_divisions: "Zvýraznění kastovního rozdělení" # todo: NEW TRANSLATION
+ util_authority: "Bez sčítání, žádný problém" # todo: NEW TRANSLATION
+ je_india_railway: "Poskytovatel pokroku" # todo: NEW TRANSLATION
+ je_india_railway_reason: "Velkolepá železniční síť nás všechny propojí. Přinese zemi velký pokrok a utváří budoucnost našeho národa!" # todo: NEW TRANSLATION
+ je_india_railway_status: "Postavte velkolepou síť $building_railway$, která spojí Indii." # todo: NEW TRANSLATION
+ delhi_calcutta_line_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má všechny [Concept('concept_state_region','$concept_state_regions$')] pro výstavbu [GetGeographicRegion('geographic_region_delhi_calcutta_line').GetName]" # todo: NEW TRANSLATION
+ allahabad_bombay_line_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má všechny [Concept('concept_state_region','$concept_state_regions$')] pro výstavbu [GetGeographicRegion('geographic_region_allahabad_bombay_line').GetName]" # todo: NEW TRANSLATION
+ bombay_madras_line_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má všechny [Concept('concept_state_region','$concept_state_regions$')] pro výstavbu [GetGeographicRegion('geographic_region_bombay_madras_line').GetName]" # todo: NEW TRANSLATION
+ gujarat_bombay_line_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má všechny [Concept('concept_state_region','$concept_state_regions$')] pro výstavbu [GetGeographicRegion('geographic_region_gujarat_bombay_line').GetName]" # todo: NEW TRANSLATION
+ delhi_calcutta_line_status_tt: "$delhi_calcutta_line_complete_tt$: #indent_newline:3 \n[GetScriptedGui('je_india_railway_delhi_calcutta_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)]#!" # todo: NEW TRANSLATION
+ allahabad_bombay_line_status_tt: "$allahabad_bombay_line_complete_tt$: #indent_newline:3 \n[GetScriptedGui('je_india_railway_allahabad_bombay_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)]#!" # todo: NEW TRANSLATION
+ bombay_madras_line_status_tt: "$bombay_madras_line_complete_tt$: #indent_newline:3 \n[GetScriptedGui('je_india_railway_bombay_madras_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)]#!" # todo: NEW TRANSLATION
+ gujarat_bombay_line_status_tt: "$gujarat_bombay_line_complete_tt$: #indent_newline:3 \n[GetScriptedGui('je_india_railway_gujarat_bombay_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)]#!" # todo: NEW TRANSLATION
+ delhi_calcutta_line_complete_tt: "Všechny [Concept('concept_state_region','$concept_state_regions$')] na [GetGeographicRegion('geographic_region_delhi_calcutta_line').GetName] mají $building_railway$" # todo: NEW TRANSLATION
+ allahabad_bombay_line_complete_tt: "Všechny [Concept('concept_state_region','$concept_state_regions$')] na [GetGeographicRegion('geographic_region_allahabad_bombay_line').GetName] mají $building_railway$" # todo: NEW TRANSLATION
+ bombay_madras_line_complete_tt: "Všechny [Concept('concept_state_region','$concept_state_regions$')] na [GetGeographicRegion('geographic_region_bombay_madras_line').GetName] mají $building_railway$" # todo: NEW TRANSLATION
+ gujarat_bombay_line_complete_tt: "Všechny [Concept('concept_state_region','$concept_state_regions$')] na [GetGeographicRegion('geographic_region_gujarat_bombay_line').GetName] mají $building_railway$" # todo: NEW TRANSLATION
+ INDIAN_RAILWAY_ENTRY: "$checkbox_ticked$ [SCOPE.sStateRegion('state_region_to_display').GetName] má [GetBuildingType('building_railway').GetName]" # todo: NEW TRANSLATION
+ INDIAN_RAILWAY_ENTRY_NO: "$checkbox_unticked$ [SCOPE.sStateRegion('state_region_to_display').GetName] nemá [GetBuildingType('building_railway').GetName]" # todo: NEW TRANSLATION
+ indian_railway_delhi_calcutta_tt: "Trasa Delhi–Kalkata zahrnuje $concept_state_regions$:\n$STATE_WEST_BENGAL$\n$STATE_BIHAR$\n$STATE_AWADH$\n$STATE_AGRA$\n$STATE_DELHI$" # todo: NEW TRANSLATION
+ indian_railway_allahabad_bombay_tt: "Trasa Allahabad–Bombaj zahrnuje $concept_state_regions$:\n$STATE_AGRA$\n$STATE_BUNDELKHAND$\n$STATE_CENTRAL_PROVINCES$\n$STATE_MALWA$\n$STATE_BOMBAY$" # todo: NEW TRANSLATION
+ indian_railway_bombay_madras_tt: "Trasa Bombaj–Madras zahrnuje $concept_state_regions$:\n$STATE_BOMBAY$\n$STATE_HYDERABAD$\n$STATE_KURNOOL$\n$STATE_MADRAS$" # todo: NEW TRANSLATION
+ indian_railway_gujarat_bombay_tt: "Trasa Gujarat–Bombaj zahrnuje $concept_state_regions$:\n$STATE_BOMBAY$\n$STATE_GUJARAT$" # todo: NEW TRANSLATION
+ india_railway.1.t: "Loupež na vlaku v [SCOPE.sState('relevant_state').GetNameNoFormatting]" # todo: NEW TRANSLATION
+ india_railway.1.d: "Mezinárodní tisk informuje o loupeži na vlaku v [SCOPE.sState('relevant_state').GetNameNoFormatting], vedené agitátory [SCOPE.sCulture('discriminated_culture').GetNameNoFormatting]." # todo: NEW TRANSLATION
+ india_railway.1.f: "\"Kdyby byli dacoiti, zemřelo by mnohem více lidí. Tito mladí muži nám kradli NAŠE peníze zpět PRO NÁS. Udělali chyby, ale jejich úmysly jsou ušlechtilé.\"\n\n\"Když jsou tak ušlechtilí, co dělali máváním zbraněmi na své spoluobčany? Nyní je mrtvý nevinný muž. Nikdy nezapomenu zvuk, jak jeho žena plakala.\"" # todo: NEW TRANSLATION
+ india_railway.1.a: "Popřít, že naši stráže [SCOPE.sCulture('not_discriminated_culture').GetNameNoFormatting] byli přemoženi." # todo: NEW TRANSLATION
+ india_railway.1.b: "Zatajování našich ztrát nemá smysl." # todo: NEW TRANSLATION
+ do_control_the_press: "Ovládání tisku" # todo: NEW TRANSLATION
+ not_control_the_press: "Špatný tisk" # todo: NEW TRANSLATION
+ india_railway.2.t: "Krádež Koruně" # todo: NEW TRANSLATION
+ india_railway.2.d: "Rozpravy začaly u soudu s obviněnými revolucionáři, kteří jsou obviněni z loupeže a vraždy." # todo: NEW TRANSLATION
+ india_railway.2.f: "Řev davu shromážděného před soudní síní hřeje srdce obžalovaných. Ten samý řev však znemožňuje slyšet žalobce. Neúnavně pokračuje.\n\n\"Únosy, držení nelegálních střelných zbraní a vražda. To jsou hrozné činy, vaše ctihodnosti. Ale tito nestydatí muži je spáchali a zároveň se dopustili ještě ohavnějšího zločinu. Pokusili se okrást samotnou korunu, která se o ně stará. Dav venku je nazve hrdiny, zákon je označí za zrádce.\"" # todo: NEW TRANSLATION
+ india_railway.2.a: "Udělat příklad - vyslýchat je." # todo: NEW TRANSLATION
+ india_railway.2.b: "Dodržet řádný proces a nařídit jej." # todo: NEW TRANSLATION
+ railway_trial_authority: "Autoritativní opatření" # todo: NEW TRANSLATION
+ railway_trial_legit: "Řádný proces" # todo: NEW TRANSLATION
+ india_railway.3.t: "Regionální hladomor" # todo: NEW TRANSLATION
+ india_railway.3.d: "Masivní vývoz obilí a plodin ponechal obyvatele [SCOPE.sState('relevant_state').GetNameNoFormatting] zranitelné během regionálního hladomoru." # todo: NEW TRANSLATION
+ india_railway.3.f: "#italic Milá Elizabeth,\n\nDoprovázel jsem nedávno sběry Koruny po Indii, když jsem spatřil hrozný pohled. Muž, hubený jako tyčka, stál na stráži před svou hladovějící ženou a dvěma dětmi. Když jsem se ptal spolubojovníků, co hlídá, vysvětlili mi, že vesnice se uchýlila ke kanibalismu. #!" # todo: NEW TRANSLATION
+ india_railway.3.a: "Použít železnici k dopravě potravin z přebytkových oblastí." # todo: NEW TRANSLATION
+ india_railway.3.b: "Taková opatření si nemůžeme dovolit." # todo: NEW TRANSLATION
+ state_grain_expensive_tt: "#variable Grain#! je dražší o více než #variable 70%#! než [concept_base_price]" # todo: NEW TRANSLATION
+ railway_famine: "Úmrtí v regionálním hladomoru" # todo: NEW TRANSLATION
+ railway_hunger_relief: "Odeslána pomoc proti hladu" # todo: NEW TRANSLATION
+ railway_hunger_no_relief: "Pomoc proti hladu zadržena" # todo: NEW TRANSLATION
+ railway_ig_disapproval: "Odmítnuté zájmy" # todo: NEW TRANSLATION
+ railway_ig_approval: "Zájmová skupina se zájmem o vlastní prospěch" # todo: NEW TRANSLATION
+ india_railway.4.t: "Plně vybavené první třídy" # todo: NEW TRANSLATION
+ india_railway.4.d: "Zatímco mnoho lidí vítá železniční cestování, napětí mezi komunitami je vysoké, protože segregace přetrvává." # todo: NEW TRANSLATION
+ india_railway.4.f: "Dva chlapci vystrkují hlavy z dveří vlaku, ostrý vítr je chladí v horkém úmorném dni.\n\n\"Slyšel jsem, že v první třídě mají stropní ventilátory, postele a jejich sedačky jsou čalouněné, takže můžete sedět celé hodiny!\"\n\n\"No, slyšel jsem, že mají své vlastní záchody.\"\n\n\"Tak to jste špatně slyšeli, pánové a paní si záchody nevyžadují.\"\n\n\"Je to proto, že náš vůz taky žádný nemá?\"" # todo: NEW TRANSLATION
+ india_railway.4.a: "Sociální otázky nejsou naléhavé." # todo: NEW TRANSLATION
+ india_railway.4.b: "Více čajových stánků sníží napětí." # todo: NEW TRANSLATION
+ rising_intracommunal_tension: "Rostoucí napětí" # todo: NEW TRANSLATION
+ india_railway.5.t: "Železnice pro prosperitu" # todo: NEW TRANSLATION
+ india_railway.5.d: "Velký železniční projekt byl konečně dokončen. Nová železnice otevírá lidem nové příležitosti cestovat, pracovat a spojovat se napříč zemí." # todo: NEW TRANSLATION
+ india_railway.5.f: "S dokončením této stanice je budoucnost Rádžu zajištěna. Naše síť vlaků bude páteří našeho obchodu, naší armády, naší vlády. Pára a uhlí budou proudit žilami impéria.\n\nA tato krásná stanice, pojmenovaná po našem velkém [SCOPE.sCountry('relevant_overlord').GetRuler.GetPrimaryRoleTitle], bude jejím bušícím srdcem." # todo: NEW TRANSLATION
+ india_railway.5.f2: "S dokončením této stanice je budoucnost Rádžu zajištěna. Naše síť vlaků bude páteří našeho obchodu, naší armády, naší vlády. Pára a uhlí budou proudit žilami impéria.\n\nA tato krásná stanice, pojmenovaná po našem velkém [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle], bude jejím bušícím srdcem." # todo: NEW TRANSLATION
+ india_railway.5.a: "Nádhera." # todo: NEW TRANSLATION
+ india_railway_reward: "Skvělé spojení" # todo: NEW TRANSLATION
+ je_victoria_terminus: "Victoria Terminus" # todo: NEW TRANSLATION
+ je_victoria_terminus_reason: "Příznivci [SCOPE.gsInterestGroup('relevant_terminus_ig').GetName] vybrali prostředky na #tooltippable #tooltip:victoria_terminus_construct_tt #bold vybudování velkého terminusu#! #!#!in $STATE_BOMBAY$. Tento elegantní terminus s přidanými železničními nástupišti a administrativními kancelářemi slibuje zlepšit veřejné mínění o Indii." # todo: NEW TRANSLATION
+ je_victoria_terminus_status: "Postavte $building_victoria_terminus$ v [Concept('concept_state_region','$concept_state_region$')] $STATE_BOMBAY$." # todo: NEW TRANSLATION
+ victoria_terminus_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má $building_railway$ v [Concept('concept_state_region','$concept_state_region$')] $STATE_BOMBAY$." # todo: NEW TRANSLATION
+ victoria_terminus_complete_tt: "[ROOT.GetCountry.GetNameNoFormatting] vybudoval $building_victoria_terminus$ v [Concept('concept_state_region','$concept_state_region$')] $STATE_BOMBAY$" # todo: NEW TRANSLATION
+ victoria_terminus_populated_tt: "Obsazenost pracovní síly $building_victoria_terminus$ [concept_occupancy] je větší nebo rovna #variable 50%#!" # todo: NEW TRANSLATION
+ rejected_victoria_terminus_project_tt: "[ROOT.GetCountry.GetNameNoFormatting] odmítl návrh na výstavbu $building_victoria_terminus$." # todo: NEW TRANSLATION
+ does_not_have_state_bombay_tt: "[ROOT.GetCountry.GetNameNoFormatting] nemá $STATE_BOMBAY$." # todo: NEW TRANSLATION
+ owns_bombay_province_tt: "Vlastní město $HUB_NAME_STATE_BOMBAY_city$" # todo: NEW TRANSLATION
+ victoria_terminus.1.t: "Terminál jako žádný jiný" # todo: NEW TRANSLATION
+ victoria_terminus.1.d: "([SCOPE.gsInterestGroup('relevant_terminus_ig').GetName]) předložili návrh na vybudování velkého terminusu v [SCOPE.sState('relevant_bombay_state').GetName]. Skupina shromáždila značnou sumu peněz k použití při stavbě." # todo: NEW TRANSLATION
+ victoria_terminus.1.f: "Dým z dýmek zaplňuje malou kancelář, zatímco skupina úředníků posuzuje návrhy na novou železniční stanici.\n\n\"Bude to dosti nákladné. Je přestavba stanice skutečně nejlepší využití našich zdrojů?\"\n\n\"Můj drahý, je to éra lokomotiv. Naše výdělky jsou úměrné rychlosti přepravy. A současná rychlost je srovnatelná s koňským povozem.\"" # todo: NEW TRANSLATION
+ victoria_terminus.1.a: "Začněte okamžitě se stavbou." # todo: NEW TRANSLATION
+ victoria_terminus.1.b: "Toto financování by mělo být přesměrováno tam, kde je potřeba." # todo: NEW TRANSLATION
+ victoria_terminus_construct_tt: "$building_victoria_terminus$ lze postavit pomocí [concept_political_lens] v $STATE_BOMBAY$." # todo: NEW TRANSLATION
+ dismissed_victoria_terminus_je_tt: "#bold $je_victoria_terminus$#! [concept_journal_entry] bude odmítnut" # todo: NEW TRANSLATION
+ victoria_terminus_accepted: "Schválená výstavba terminusu" # todo: NEW TRANSLATION
+ victoria_terminus_rejected: "Odmítnutá výstavba terminusu" # todo: NEW TRANSLATION
+ victoria_terminus.2.t: "Architektonické dílo" # todo: NEW TRANSLATION
+ victoria_terminus.2.d: "Dokončený $building_victoria_terminus$ je fúzí architektonických vlivů a znamená novou kapitolu pro [SCOPE.sState('relevant_bombay_state').GetName] i celou Indii." # todo: NEW TRANSLATION
+ victoria_terminus.2.f: "Dva Britové v oblecích stojí před nově postaveným terminusem, zatímco coolie nese jejich zavazadla.\n\n\"Kdyby to nebyla měsíční plavba lodí, myslel bych, že jsme zpět v Londýně.\"\n\n\"A v tom spočívá genialita jeho návrhu. Naši krajané ho vnímají jako rozšíření britské kultury. Místní ho vidí jako úctyhodné pokračování jejich mughalského dědictví. Všichni jsou spokojeni a nikdo se neurazí a obchod, především, kvete.\"" # todo: NEW TRANSLATION
+ victoria_terminus.2.a: "Tento terminus dobře poslouží celé Indii." # todo: NEW TRANSLATION
+ victoria_terminus.2.b: "Svět bude žasnout nad naším dílem." # todo: NEW TRANSLATION
+ victoria_terminus_reward_loc: "Nové městské uzly" # todo: NEW TRANSLATION
+ victoria_terminus_reward_int: "Symbolický růst" # todo: NEW TRANSLATION
+ je_sikh_sovereignty: "Sikhská suverenita" # todo: NEW TRANSLATION
+ je_sikh_sovereignty_reason: "Jsou to rané dny našeho nově nastoleného rodu. Naše vzrůstající království zažilo od doby, kdy #bold Sher-e-Punjab#! dobyl bývalé mughalské císařské hlavní město, velký úspěch.\n\nJe v této chvíli kritické, abychom chránili naše území před vnější agresí a ctěli zásady naší víry [GetReligion('sikh').GetName]. Ať je odkaz této dynastie dlouhotrvající!\n\n#b [concept_empire_stability] a [concept_court_intrigue]#!\n[ROOT.GetCountry.GetNameNoFormatting] čelí více než jen vnějším hrozbám. Síly uvnitř našeho dvora mohou spiknout proti našemu [concept_ruler] ve prospěch svého preferovaného kandidáta. Pokud náš #b $sikh_empire_intrigue_bar$#! dosáhne #v 100%#!, náš [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] ($concept_ruler$) bude zavražděn, #b $sikh_empire_progress_bar$#! bude #bold resetován#! na #v 0#!, $concept_court_intrigue_short$ se sníží a bude nastolen nový kandidát." # todo: NEW TRANSLATION
+ je_sikh_sovereignty_complete: "[concept_empire_stability] dosáhl #v 100%#!" # todo: NEW TRANSLATION
+ sikh_empire_progress_bar: "Stabilita impéria" # todo: NEW TRANSLATION
+ sikh_empire_progress_bar_desc: "[concept_empire_stability]: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/300)" # todo: NEW TRANSLATION
+ progress_from_khalsaji_in_government_tt: "[GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant] [concept_interest_group] [concept_in_government]" # todo: NEW TRANSLATION
+ progress_from_khalsaji_is_powerful_tt: "[concept_powerful] [GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant] [concept_interest_group]" # todo: NEW TRANSLATION
+ progress_from_khalsaji_not_in_government_tt: "[GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant] [concept_interest_group] není [concept_in_government]" # todo: NEW TRANSLATION
+ progress_from_sikh_state_religion_tt: "[GetReligion('sikh').GetName] je [concept_state_religion]" # todo: NEW TRANSLATION
+ progress_from_law_freedom_of_conscience_tt: "[GetLawType('law_freedom_of_conscience').GetName] [concept_law] je [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enacted$')]" # todo: NEW TRANSLATION
+ sikh_empire_intrigue_bar: "Dvorské intriky" # todo: NEW TRANSLATION
+ sikh_empire_intrigue_bar_desc: "[Concept('concept_court_intrigue','$concept_court_intrigue_short$')]: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/60)" # todo: NEW TRANSLATION
+ intrigue_from_ranjit_singh_tt: "$RULER_TITLE_MAHARAJA$ ([concept_ruler]) je #b $Ranjit$ $Singh$#!" # todo: NEW TRANSLATION
+ intrigue_from_upset_government_ruthless_igs_tt: "[GetCharacterTrait('ruthless').GetName] [Concept('concept_leader', '$concept_leaders$')] [concept_in_government] s [concept_approval] pod #v 0#!" # todo: NEW TRANSLATION
+ intrigue_from_upset_opposition_ruthless_igs_tt: "[GetCharacterTrait('ruthless').GetName] [Concept('concept_leader', '$concept_leaders$')] [concept_in_opposition] s [concept_approval] pod #v 0#!" # todo: NEW TRANSLATION
+ intrigue_from_upset_government_ambitious_igs_tt: "[GetCharacterTrait('ambitious').GetName] [Concept('concept_leader', '$concept_leaders$')] [concept_in_government] s [concept_approval] pod #v 0#!" # todo: NEW TRANSLATION
+ intrigue_from_upset_opposition_ambitious_igs_tt: "[GetCharacterTrait('ambitious').GetName] [Concept('concept_leader', '$concept_leaders$')] [concept_in_opposition] s [concept_approval] pod #v 0#!" # todo: NEW TRANSLATION
+ intrigue_from_happy_government_ruthless_igs_tt: "[GetCharacterTrait('ruthless').GetName] [Concept('concept_leader', '$concept_leaders$')] [concept_in_government] s [concept_approval] nad #v 5#!" # todo: NEW TRANSLATION
+ intrigue_from_compliant_igs_tt: "[GetCharacterTrait('compliant').GetName] [Concept('concept_leader', '$concept_leaders$')] [concept_in_government]" # todo: NEW TRANSLATION
+ ruler_interest_group_powerful_tt: "[concept_powerful] [ROOT.GetCountry.GetRuler.GetInterestGroup.GetName]" # todo: NEW TRANSLATION
+ ruler_interest_group_marginal_tt: "[concept_marginalized] [ROOT.GetCountry.GetRuler.GetInterestGroup.GetName]" # todo: NEW TRANSLATION
+ intrigue_from_reckless_tt: "[GetCharacterTrait('reckless').GetName] [concept_ruler]" # todo: NEW TRANSLATION
+ intrigue_from_low_popularity_tt: "nízká [concept_ruler] [concept_popularity]" # todo: NEW TRANSLATION
+ intrigue_legitimacy_tt: "[concept_legitimacy]" # todo: NEW TRANSLATION
+ modifier_favored_by_wazir: "Oblíbení vazíra" # todo: NEW TRANSLATION
+ sikh_empire.1.t: "Víc než svatba" # todo: NEW TRANSLATION
+ sikh_empire.1.d: "V skvělém diplomacickém a politickém výkonu pozval [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] elitu země a zahraniční zástupce na bohatou svatbu prince." # todo: NEW TRANSLATION
+ sikh_empire.1.f: "Dvorský kronikář v službách mahárádžy zaznamenává slavnosti do nejmenších detailů:\n\n#italic \"Byly vystaveny ohňostroje všech druhů. Pohyblivý trůn a 'Shalabagh' byly ozdobeny a vyzdobeny různými druhy květin ... neslo je asi 100 mužů. #!\"" # todo: NEW TRANSLATION
+ sikh_empire.1.a: "Přivítat zahraniční delegáty." # todo: NEW TRANSLATION
+ sikh_empire.1.b: "Zajistit naši roli na globálním královském jevišti." # todo: NEW TRANSLATION
+ intrigue_reduced_by_10_tt: "[concept_court_intrigue] se sníží o #v 10#!" # todo: NEW TRANSLATION
+ intrigue_reduced_by_20_tt: "[concept_court_intrigue] se sníží o #v 20#!" # todo: NEW TRANSLATION
+ intrigue_reduced_by_50_tt: "[concept_court_intrigue] se sníží o #v 50#!" # todo: NEW TRANSLATION
+ intrigue_increased_by_10_tt: "[concept_court_intrigue] se zvýší o #v 10#!" # todo: NEW TRANSLATION
+ SIKH_MILITANCY: "Sikhské militantství" # todo: NEW TRANSLATION
+ wedding_prestige: "Královská svatba" # todo: NEW TRANSLATION
+ notification_sikh_wedding_diplomacy_message_name: "Královská diplomacie" # todo: NEW TRANSLATION
+ notification_sikh_wedding_diplomacy_message_desc: "Vztahy mezi [SCOPE.sCountry('pan_scope').GetName] a [SCOPE.sCountry('bic_scope').GetName] se zlepšily po účasti na královské svatbě v [SCOPE.sCountry('pan_scope').GetCapital.GetCityHubName]." # todo: NEW TRANSLATION
+ notification_sikh_wedding_diplomacy_message_tooltip: "#header $sikh_wedding_diplomacy_message_name$#!\n$TOOLTIP_DELIMITER$\n$sikh_wedding_diplomacy_message_desc$" # todo: NEW TRANSLATION
+ sikh_empire.2.t: "Útoky [SCOPE.sCountry('relevant_country').GetName]" # todo: NEW TRANSLATION
+ sikh_empire.2.d: "Zatímco naši generálové navštěvovali královskou svatbu, jednotky z [SCOPE.sCountry('relevant_country').GetName] se pokusily obsadit území v [SCOPE.sState('relevant_state').GetName]." # todo: NEW TRANSLATION
+ sikh_empire.2.f: "Byl jsem v Lahore, když dorazila zpráva mahárádžovi o útoku emíra na jeho pevnosti. Dokázal bych určit hodinu, kdy slavnosti náhle skončily. Na chvíli celé město ztichlo.\n\nA pak jsem zaslechl hlasné, povzbuzující válečné zvolání, které už desítky let děsilo nepřátele Sikhů, \"Jo bole so Nihaal\"; ti, kdo ho vysloví, jsou požehnáni. A každý voják Khalsaji odpověděl známou formulí, \"Sat Sri Akal\", Bůh je konečnou pravdou." # todo: NEW TRANSLATION
+ sikh_empire.2.a: "Pobídnout další vojáky, aby se připojili k našim silám." # todo: NEW TRANSLATION
+ sikh_empire.2.b: "Nechat Khalsaji naplánovat náš další krok." # todo: NEW TRANSLATION
+ sikh_conscription: "Síla v počtech" # todo: NEW TRANSLATION
+ show_of_strength: "Projevení síly" # todo: NEW TRANSLATION
+ notification_pan_encroaching_neighbor_message_name: "Zajištění hranice" # todo: NEW TRANSLATION
+ notification_pan_encroaching_neighbor_message_desc: "[SCOPE.sCountry('relevant_country').GetName] se pokusila obsadit území v [SCOPE.sState('relevant_state').GetName]. Musíme reagovat." # todo: NEW TRANSLATION
+ notification_pan_encroaching_neighbor_message_tooltip: "#header $notification_pan_encroaching_neighbor_message_name$#!\n$TOOLTIP_DELIMITER$\n$notification_pan_encroaching_neighbor_message_desc$" # todo: NEW TRANSLATION
+ sikh_empire.3.t: "Smrt Sher-e-Punjabu" # todo: NEW TRANSLATION
+ sikh_empire.3.d: "Mahárádža náhle zemřel ve spánku. Národ oplakává naši ztrátu." # todo: NEW TRANSLATION
+ sikh_empire.3.f: "Na dvorech [SCOPE.sCountry('relevant_country').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('relevant_country').GetRuler.GetFullNameNoFormatting] byla zpráva o smrti [SCOPE.sCharacter('relevant_ruler').GetFullNameNoFormatting] oslavována. \"Lev je mrtev,\" křičeli ministři, \"Paňdžáb bude náš.\"\n\nAle mnozí si všimli, že [SCOPE.sCountry('relevant_country').GetRuler.GetPrimaryRoleTitle] se nezapojil. \"Lev Paňdžábu zanechal silné lvy, ale udrží se proti Company?\", slyšela jedna z [SCOPE.sCountry('relevant_country').GetRuler.GetHerHis] žen, jak [SCOPE.sCountry('relevant_country').GetRuler.GetHerHim] uvažuje, \"Nebo nám brzy budou Britové klepat na dveře?\"" # todo: NEW TRANSLATION
+ sikh_empire.3.a: "Ať žije odkaz mahárádži." # todo: NEW TRANSLATION
+ ranjit_singh_death_tt: "[SCOPE.sCharacter('relevant_ruler').GetFullName] zemře." # todo: NEW TRANSLATION
+ notification_eic_encroaching_pan_message_name: "[SCOPE.sCountry('pan_scope').GetAdjective] postavení na hranicích" # todo: NEW TRANSLATION
+ notification_eic_encroaching_pan_message_desc: "Jednotky [SCOPE.sCountry('pan_scope').GetAdjective] armády zaujaly po smrti Ranjita Singha nepřátelské postoje vůči nám." # todo: NEW TRANSLATION
+ notification_eic_encroaching_pan_message_tooltip: "#header $notification_eic_encroaching_pan_message_name$#!\n$TOOLTIP_DELIMITER$\n$notification_eic_encroaching_pan_message_desc$" # todo: NEW TRANSLATION
+ sikh_empire.4.t: "Hrozba vzpoury" # todo: NEW TRANSLATION
+ sikh_empire.4.d: "[SCOPE.sCharacter('relevant_general').GetFullName] otevřeně vyjadřuje své znepokojení nad vládou [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullName]." # todo: NEW TRANSLATION
+ sikh_empire.4.f: "Hodiny muži debatovali o zprávách z hranic Sikhů v kancelářích Britské východoindické společnosti v Dillí. Předseda výboru začal být unaven, ale pak ho napadla myšlenka.\n\n\"Nebo možná... nic neuděláme,\" navrhl.\n\n\"Nic?\" zeptal se mladík.\n\n\"Jak jsme se nedávno naučili, málo okamžiků je pro impérium riskantnějších než přechody moci. Platí to i pro Sikhy. Hlava jejich pýchy je mrtvá, mláďata musí dokázat svou hodnotu a hyeny už jim okusují paty. Proč bychom měli hrát naši kartu? Nechme je, ať se navzájem vyčerpají.\"" # todo: NEW TRANSLATION
+ sikh_empire.4.a: "Potlačit kritiku [SCOPE.sCharacter('relevant_general').GetHerHis]." # todo: NEW TRANSLATION
+ sikh_empire.4.b: "Nechte [SCOPE.sCharacter('relevant_general').GetHerHim] vyjádřit své znechucení." # todo: NEW TRANSLATION
+ sikh_empire.5.t: "Předčasný konec" # todo: NEW TRANSLATION
+ sikh_empire.5.d: "Tajemná, oslabující nemoc učinila [SCOPE.sCharacter('relevant_ruler').GetFullName] neschopným udržet si trůn. Mezi vládnoucí elitou kolují intenzivní spekulace o okolnostech." # todo: NEW TRANSLATION
+ sikh_empire.5.f: "Mladý palácový sluha se vrátil domů a našel celou svou rodinu pohromadě. Všichni měli na něj otázky.\n\n\"Otrávil [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [SCOPE.sCharacter('relevant_ruler').GetHerselfHimself] v pití?\" zeptala se jeho posuzující matka.\n\n\"Muselo to být atentát,\" prohlásil jeho horlivý otec.\n\nAle muž se nestaral o tyto otázky ani o dotazy svých sourozenců, strýců nebo tet. Chtěl jen spát a už nikdy se neprobudit. Teprve pak by přestal ptát se sám sebe - #italic co bylo v nápoji, který mu wazír dal dodat? #!\"" # todo: NEW TRANSLATION
+ sikh_empire.5.a: "Lid bude tuto ztrátu oplakávat." # todo: NEW TRANSLATION
+ kharak_singh_death_tt: "[SCOPE.sCharacter('relevant_ruler').GetFullName] je donucen abdikovat." # todo: NEW TRANSLATION
+ notification_pan_encroaching_eic_message_name: "Strach z agrese [SCOPE.sCountry('bic_scope').GetName]" # todo: NEW TRANSLATION
+ notification_pan_encroaching_eic_message_desc: "S ostudnou abdikací $Kharak$ $Singh$ vzrostl strach z možných nepřátelství s [SCOPE.sCountry('bic_scope').GetName]." # todo: NEW TRANSLATION
+ notification_pan_encroaching_eic_message_tooltip: "#header $notification_pan_encroaching_eic_message_name$#!\n$TOOLTIP_DELIMITER$\n$notification_pan_encroaching_eic_message_desc$" # todo: NEW TRANSLATION
+ sikh_empire.6.t: "Závažné zranění" # todo: NEW TRANSLATION
+ sikh_empire.6.d: "[SCOPE.sCharacter('relevant_ruler').GetPrimaryRoleTitle] [SCOPE.sCharacter('relevant_ruler').GetFullName] byl zasažen padajícím zdivem při návratu z pohřbu svého otce. Wazír trvá na tom, že [SCOPE.sCharacter('relevant_ruler').GetPrimaryRoleTitle] je vážně zraněn a není možné nic dělat." # todo: NEW TRANSLATION
+ sikh_empire.6.f: "Lidé se shromáždili na ulicích. Stejné myšlenky běžely hlavami všech. Ranjitova smrt byla chmurná, ale byl starý. Kharakova smrt byla znepokojující, ale Waheguru tomu tak snad určil. Ale pokud by [SCOPE.sCharacter('relevant_ruler').GetFirstNameNoFormatting] zemřel den po svém otci, bylo by čas na zoufalství. Jak by je měl dítě ochránit? Spadnou nejdříve do rukou Afghánů nebo Company?" # todo: NEW TRANSLATION
+ sikh_empire.6.a: "Poslouchejte wazíra." # todo: NEW TRANSLATION
+ sikh_empire.6.b: "Uděláme vše pro záchranu mahárádži." # todo: NEW TRANSLATION
+ nau_nihal_dies_tt: "[SCOPE.sCharacter('relevant_ruler').GetFullNameNoFormatting] zemře na následky zranění." # todo: NEW TRANSLATION
+ nau_nihal_lives_tt: "[SCOPE.sCharacter('relevant_ruler').GetFullNameNoFormatting] přežije, sotva." # todo: NEW TRANSLATION
+ notification_neighbor_encroaching_pan_message_name: "Strach z agrese [SCOPE.sCountry('relevant_country').GetName]" # todo: NEW TRANSLATION
+ notification_neighbor_encroaching_pan_message_desc: "Incident, který smrtelně zranil našeho vládcem, učinil naši zemi zranitelnou. Existuje strach, že [SCOPE.sCountry('relevant_country').GetName] zahájí kampaň proti nám." # todo: NEW TRANSLATION
+ notification_neighbor_encroaching_pan_message_tooltip: "#header $notification_neighbor_encroaching_pan_message_name$#!\n$TOOLTIP_DELIMITER$\n$notification_neighbor_encroaching_pan_message_desc$" # todo: NEW TRANSLATION
+ nau_nihal_survives: "Přežil pád sloupu" # todo: NEW TRANSLATION
+ sikh_empire.7.t: "Konec dynastie" # todo: NEW TRANSLATION
+ sikh_empire.7.t2: "Kolaps lvího odkazu" # todo: NEW TRANSLATION
+ sikh_empire.7.d: "Naše impérium už není nezávislé. To, co Sher-e-Punjab založil, je pryč." # todo: NEW TRANSLATION
+ sikh_empire.7.d2: "Smrt se stala stínem nad sídly našeho dvora. Nyní, s nedávnou smrtí našeho [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle], co Sher-e-Punjab založil, může být skutečně pryč." # todo: NEW TRANSLATION
+ sikh_empire.7.f: "\"Nazývali Ranjita Singha Sher-e-Punjab, Lvem Paňdžábu,\" řekl britský generál s úšklebkem, \"myslím, že to byla jejich první chyba.\"\n\nPo prstech přetáhl listy anexních dokumentů, na jejichž vrchu byl britský státní znak. \"Měli vědět, že lvi nesdílejí území.\"" # todo: NEW TRANSLATION
+ sikh_empire.7.f2: "\"Nazývali Ranjita Singha Sher-e-Punjab, Lvem Paňdžábu,\" řekl generál s úšklebkem, \"nevěděli?\"\n\nPřetáhl prstem po seznamu všech sikhských princů a generálů, kteří zemřeli v boji mezi sebou. \"Vzestup přichází před pádem.\"" # todo: NEW TRANSLATION
+ sikh_empire.7.a: "Bohužel, odkaz lva už není." # todo: NEW TRANSLATION
+ sikh_empire.8.t: "Odkaz lva" # todo: NEW TRANSLATION
+ sikh_empire.8.d: "Naše země přežila roky turbulence a není de jure připojena k jiné zemi. Odkaz Sher-e-Punjab bude žít dál." # todo: NEW TRANSLATION
+ sikh_empire.8.f: "\"Zajímalo by mě, co by Maharaj Ranjit Singh řekl, kdyby nás nyní viděl,\" zeptal se mladý voják v Khalsaji. \"Byl by hrdý na naši vytrvalost? Nebo by byl zklamaný našimi činy?\"\n\n\"Náš lid má domov a budoucnost, doufejme pokojnou,\" odpověděl kapitán. \"Myslím, že Lev by byl hrdý, že jeho práce zajistila domov pro jeho děti.\"" # todo: NEW TRANSLATION
+ sikh_empire.8.a: "Před námi jsou dny slávy." # todo: NEW TRANSLATION
+ sikh_sovereignty_success: "Impérium obstálo" # todo: NEW TRANSLATION
+ lions_legacy: "Odkaz lva" # todo: NEW TRANSLATION
+ sikh_empire.9.t: "Poslední mahárádža" # todo: NEW TRANSLATION
+ sikh_empire.9.d: "Mladý [SCOPE.sCharacter('duleep_character').GetFullName], který byl sesazen po pádu Sikhského impéria, se znovu objevil." # todo: NEW TRANSLATION
+ sikh_empire.9.f: "Dvůr byl v rozruchu z příchodu prince bez půdy, ačkoli mu do očí neříkali tuto přezdívku. Mladík byl pohledný a zdvořilý a měl sympatie dvora. Vyrůstal bez rodičů, byl princem, který neměl co vládnout. Přesto to zdá se mu nijak nevadilo. Někteří se však ptali, zda chápe skutečný rozsah toho, co ztratil." # todo: NEW TRANSLATION
+ sikh_empire.9.a: "Možná najde svůj účel." # todo: NEW TRANSLATION
+ sikh_empire.9.b: "Bude jistě vítán s otevřenou náručí." # todo: NEW TRANSLATION
+ duleep_goes_to_gbr_tt: "Odjíždí žít do $GBR$" # todo: NEW TRANSLATION
+ sikh_empire.10.t: "Odfouknut" # todo: NEW TRANSLATION
+ sikh_empire.10.d1: "[SCOPE.sCharacter('relevant_ruler').GetFullName] byl zavražděn při prohlídce zbraně [SCOPE.sCharacter('assassin_scope').GetFullName]. Když [SCOPE.sCharacter('relevant_ruler').GetPrimaryRoleTitle] hleděl do hlavně [SCOPE.sCharacter('assassin_scope').GetHerHis] brokovnice, [SCOPE.sCharacter('assassin_scope').GetFirstName] stiskl spoušť." # todo: NEW TRANSLATION
+ sikh_empire.10.d2: "[SCOPE.sCharacter('relevant_ruler').GetFullName] byl zavražděn dvořanem při předvádění dovezené brokovnice. Když [SCOPE.sCharacter('relevant_ruler').GetPrimaryRoleTitle] nahlédl do hlavně brokovnice, dvořan stiskl spoušť." # todo: NEW TRANSLATION
+ sikh_empire.10.f: "\"Waheguru, Waheguru, Waheguru\", opakovalo se, to byla jediná věc, kterou bylo slyšet na palácových nádvořích. Zvuk truchlení těch, kteří byli loajální k nyní beztvárnému [SCOPE.sCharacter('relevant_ruler').GetFullNameNoFormatting]. Ostatní byli ticho. Ti, kdo mu muže nenáviděli, se obávali následků. Ti, kteří byli loajální k Duleepovi, se báli o jeho bezpečí. A zbytek byl unavený, unavený z nekonečné smrti, která je jako by je pronásledovala." # todo: NEW TRANSLATION
+ sikh_empire.10.a: "\"Jaké zrádectví!\"" # todo: NEW TRANSLATION
+ sher_singh_death_tt: "[SCOPE.sCharacter('relevant_ruler').GetFullName] zemře" # todo: NEW TRANSLATION
+ sikh_empire.11.t: "Předčasný konec" # todo: NEW TRANSLATION
+ sikh_empire.11.d: "Brutální dvorské intriky pohlcující [ROOT.GetCountry.GetName] si vyžádaly dalšího oběti. Krátce vládnoucí [SCOPE.sCharacter('relevant_ruler').GetPrimaryRoleTitle] [SCOPE.sCharacter('relevant_ruler').GetFullName] byl nalezen mrtvý ve svých komnatách, [SCOPE.GetRootScope.GetCountry.GetCustom('sikh_ruler_death_reason')]" # todo: NEW TRANSLATION
+ sikh_empire.11.f: "\"Co tím myslíte, že tu nikdo nechce pracovat?\" vykřikl palácový kuchař. Jeho služebnice, matka dvou dětí, se mu odvážně podívala do očí. \"Myslí si, že je to místo prokleté,\" odpověděla, \"a no, nemůžete jim to mít za zlé. Žádné množství zlata nemůže odstranit zápach smrti, který visí nad těmito kameny.\"\n\nKuchař vydechl, \"Ne, ne může. Co navrhujete? Nechat nového krále hladovět?\"\n\n\"Všichni mohou jíst v langaru, král i sedlák,\" odpověděla žena. \"Když jídlo nedorazí k králi, možná král přijde k jídlu.\"" # todo: NEW TRANSLATION
+ sikh_empire.11.a: "Předčasný konec." # todo: NEW TRANSLATION
+ sikh_ruler_death_stab: "probodnut dýkou." # todo: NEW TRANSLATION
+ sikh_ruler_death_poison: "obětí otravy." # todo: NEW TRANSLATION
+ sikh_ruler_death_ceiling_drop: "rozmačkaný padajícím stropem." # todo: NEW TRANSLATION
+ sikh_ruler_death_fire: "udusen dýmem." # todo: NEW TRANSLATION
+ sikh_ruler_death_drowned: "obličejem dolů ve vaně." # todo: NEW TRANSLATION
+ five_deaths_in_a_row_tt: "#v 5#! [ROOT.GetCountry.GetAdjective] $RULER_TITLE_MAHARAJA$s zemřelo bez dokončení tohoto [concept_journal_entry] (aktuálně [ROOT.GetCountry.MakeScope.Var('sikh_dead_maharajas_var').GetValue|V0])" # todo: NEW TRANSLATION
+ ig_granthis: "Granthi" # todo: NEW TRANSLATION
+ ig_granthis_desc: "Granthi jsou náboženští úředníci v sikhismu, monoteistické víře, která považuje světské záležitosti za rozptýlení od jednoty Boha." # todo: NEW TRANSLATION
+ ig_trait_rehat: "Rehat" # todo: NEW TRANSLATION
+ ig_trait_rehat_desc: "Od dob prvních Panj Pyare naše víra povolává největší válečníky k službě naší spravedlivé věci. V těchto těžkých časech jsou vojáci opět vedení vírou, aby sloužili pod našimi prapory." # todo: NEW TRANSLATION
+ ig_khalsaji: "Khalsaji" # todo: NEW TRANSLATION
+ ig_khalsaji_desc: "Významná bojová síla Sikhského impéria, Khalsaji spojují sikhské khalsa tradice s modernizovanými franco-britskými principy." # todo: NEW TRANSLATION
+ ig_trait_khalsa: "Khalsa" # todo: NEW TRANSLATION
+ ig_trait_khalsa_desc: "Máme povinnost cvičit zbraně a chránit nevinné. Jako válečníci musíme bojovat statečně bez ohledu na šance a žít věrně tradicím Rehat." # todo: NEW TRANSLATION
+ ig_jats: "Jats" # todo: NEW TRANSLATION
+ ig_jats_desc: "Jats jsou tradiční rolníci a sedláci v regionu Paňdžáb s kořeny v pastevectví. Jejich zájmy jsou převážně agrární povahy." # todo: NEW TRANSLATION
+ ig_trait_khalsa_panth: "Khalsa Panth" # todo: NEW TRANSLATION
+ ig_trait_khalsa_panth_desc: "Pravdivý život a tvrdá práce. Žijeme způsobem svatých, vyhýbáme se extrémům a kráčíme střední cestou. Zboží, které vyrábíme, se dostává k těm, kdo ho potřebují." # todo: NEW TRANSLATION
+ princely_state_decision: "Usilovat o suverenitu" # todo: NEW TRANSLATION
+ princely_state_decision_desc: "Příliš dlouho nás Britové podceňovali a podrývali naši autoritu. Zahajte kampaň za zajištění nezávislosti" # todo: NEW TRANSLATION
+ je_princely_states: "Boj o suverenitu" # todo: NEW TRANSLATION
+ je_princely_states_reason: "Náš velký [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullNameNoFormatting] může vládnout nad [ROOT.GetCountry.GetNameNoFormatting], ale stále jsme podřízeni rozmarům a pochybením [SCOPE.sCountry('top_overlord_scope').GetNameNoFormatting]. Moc [SCOPE.sCountry('overlord_scope').GetNameNoFormatting] roste den za dnem, ale stále můžeme formovat svůj osud.\n\nPříliv je ve prospěch zvýšení autonomie [ROOT.GetCountry.GetNameNoFormatting] a hledání cesty k nezávislosti, aby [SCOPE.sCountry('top_overlord_scope').GetAdjectiveNoFormatting] nepřevzal úplnou kontrolu." # todo: NEW TRANSLATION
+ je_princely_states_status: "Získejte nezávislost pro [JournalEntry.GetCountry.GetNameNoFormatting]." # todo: NEW TRANSLATION
+ has_been_annexed_tt: "[ROOT.GetCountry.GetNameNoFormatting] byl anektován." # todo: NEW TRANSLATION
+ modifier_increase_autonomy: "Aktivní snaha o nezávislost" # todo: NEW TRANSLATION
+ notification_struggle_for_sovereignty_message_name: "Princely State: Vzdoruje vrchnosti" # todo: NEW TRANSLATION
+ notification_struggle_for_sovereignty_message_desc: "[SCOPE.sCountry('princely_state_scope').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('princely_state_scope').GetNameNoFormatting] oznámil své úmysly usilovat o nezávislost na [SCOPE.sCountry('overlord_scope').GetNameNoFormatting]." # todo: NEW TRANSLATION
+ notification_struggle_for_sovereignty_message_tooltip: "#header $notification_struggle_for_sovereignty_reaction_message_name$#!\n$TOOLTIP_DELIMITER$\n$notification_struggle_for_sovereignty_message_desc$" # todo: NEW TRANSLATION
+ princely_states.1.t: "Rozdílný osud" # todo: NEW TRANSLATION
+ princely_states.1.d: "Touha po nezávislosti je cítit v každém koutě [ROOT.GetCountry.GetName]. [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullNameNoFormatting] musí v této chvíli rozhodnout, jak jednat." # todo: NEW TRANSLATION
+ princely_states.1.f: "Touha osvobodit se od nadvlády [SCOPE.sCountry('overlord_scope').GetNameNoFormatting] roste. Je to v myslích [ROOT.GetCountry.GetAdjectiveNoFormatting] ze všech vrstev. Tato neklidnost mezi lidmi klade otázku, jak by si [ROOT.GetCountry.GetNameNoFormatting] mohlo vzít osud do vlastních rukou.\n\nCestovatel projíždějící [ROOT.GetCountry.GetCapital.GetCityHubName] nemůže uniknout šepotům o tom, jak lidé už nechtějí žít pod palcem [SCOPE.sCountry('overlord_scope').GetNameNoFormatting]." # todo: NEW TRANSLATION
+ princely_states.1.a: "[ROOT.GetCountry.GetNameNoFormatting] bude jednou svobodný." # todo: NEW TRANSLATION
+ princely_states.1.b: "Někdo se musí postavit proti [SCOPE.sCountry('overlord_scope').GetNameNoFormatting]." # todo: NEW TRANSLATION
+ liberty_desire_boost: "Vzpoura knížectví" # todo: NEW TRANSLATION
+ improve_relations_every_princely_state: "Vztahy [ROOT.GetCountry.GetNameNoFormatting] se všemi [concept_princely_state] se zvýší o #g [SCOPE.ScriptValue('basic_princely_state_relations_change')]#!" # todo: NEW TRANSLATION
+ princely_states.2.t: "Už ne knížectví" # todo: NEW TRANSLATION
+ princely_states.2.d: "Po těžkém boji za nezávislost není [ROOT.GetCountry.GetNameNoFormatting] už pouhý knížecí stát. Lidé slaví a [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] se dívá po rozšíření moci [ROOT.GetCountry.GetNameNoFormatting]." # todo: NEW TRANSLATION
+ princely_states.2.f: "Mubarak Ho!\n\nDne [TimeKeeper.GetCurrentDate.GetString] oslavil [ROOT.GetCountry.GetRuler.GetFullNameNoFormatting] své nově nabyté pravomoci bujnou přehlídkou zakončenou salva děla. Ve vzduchu panovala obecná radost, když se rozdělovalo jídlo mezi lid. Slíbilo to novou éru blahobytu. Pouze čas ukáže, zda [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] dodrží svá slova!" # todo: NEW TRANSLATION
+ princely_states.2.a: "Máme jasnou budoucnost pod vedením [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]." # todo: NEW TRANSLATION
+ princely_states.2.b: "Úspěchy [ROOT.GetCountry.GetNameNoFormatting] budou velkolepé!" # todo: NEW TRANSLATION
+ increase_autonomy_prestige_success: "Důvěryhodný vůdce" # todo: NEW TRANSLATION
+ increase_autonomy_auth_success: "Skutečná autorita" # todo: NEW TRANSLATION
+ annex_neighbor_princely_state: "Sousední knížecí stát se sdíleným #bold dědictvím#! a #green #bold srdečnými#!#! vztahy nebo lepší bude anektován [ROOT.GetCountry.GetName]." # todo: NEW TRANSLATION
+ princely_states.3.t: "Nedostatek zavazadlových zvířat" # todo: NEW TRANSLATION
+ princely_states.3.d: "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] plánuje poslat některé z našich nejlepších velbloudů na pomoc [SCOPE.sCountry('top_overlord_scope').GetAdjective], kteří mají nedostatek zavazadlových zvířat." # todo: NEW TRANSLATION
+ princely_states.3.f: "Dvůr debatoval hodiny o záležitosti. [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] tiše naslouchal, přikyvoval a dával najevo závažný výraz. Ale pro [ROOT.GetCountry.GetRuler.GetHerHim] byla volba iluzí pro ty, kdo popírají, kdo je skutečně u moci. Pomoci Britům nebo ne nebylo volbou mezi loajalitou k bývalým spojencům a penězi; byla to volba mezi bojem a prosperitou." # todo: NEW TRANSLATION
+ princely_states.3.a: "Pokud nás zaplatí, ať si to vezmou." # todo: NEW TRANSLATION
+ princely_states.3.b: "Jejich boj není náš boj." # todo: NEW TRANSLATION
+ prince_negative_popularity: "Nepřesvědčivé vedení" # todo: NEW TRANSLATION
+ princely_states_camel_stipend: "Půjčené velbloudy" # todo: NEW TRANSLATION
+ prince_positive_popularity: "Chvályhodné vedení" # todo: NEW TRANSLATION
+ princely_states_ld_action: "Nepodpořil vrchnost" # todo: NEW TRANSLATION
+ notification_pack_animal_loan_message_name: "Půjčené velbloudy" # todo: NEW TRANSLATION
+ notification_pack_animal_loan_message_desc: "Vztahy mezi [ROOT.GetCountry.GetName] a [SCOPE.sCountry('top_overlord_scope').GetName] se zlepšily poté, co [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] poslal velbloudy na pomoc [SCOPE.sCountry('top_overlord_scope').GetAdjective]." # todo: NEW TRANSLATION
+ notification_pack_animal_loan_message_tooltip: "#header $notification_pack_animal_loan_message_name$#!\n$TOOLTIP_DELIMITER$\n$notification_pack_animal_loan_message_desc$" # todo: NEW TRANSLATION
+ princely_states.4.t: "Nejvyšší řád Hvězdy Indie" # todo: NEW TRANSLATION
+ princely_states.4.d: "[SCOPE.sCountry('top_overlord_scope').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('top_overlord_scope').GetRuler.GetFullNameNoFormatting] poctí [SCOPE.sCharacter('award_winner_scope').GetFullName] jmenováním za Rytíře velkého komandéra Řádu Indické říše." # todo: NEW TRANSLATION
+ princely_states.4.f: "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] procházel síňmi své rodové rezidence. Malby [ROOT.GetCountry.GetRuler.GetHerHis] předků se mu vznášely všude kolem. Co by jim řekli, kdyby byli na jeho místě? Tito zuřiví muži a ženy, kteří neuznávali žádnou autoritu kromě božské? Poradili by [ROOT.GetCountry.GetRuler.GetHerHim], aby se uklonil? Nebo by mu připomněli, že někdo musí začít. Někdo musí vystoupit a říct ne." # todo: NEW TRANSLATION
+ princely_states.4.a: "Světlo nebes nechť nám svítí." # todo: NEW TRANSLATION
+ princely_states.4.b: "Taková pocta nic neznamená." # todo: NEW TRANSLATION
+ rejected_overlord_gesture: "Odmítnutá odměna" # todo: NEW TRANSLATION
+ princely_states.5.t: "[SCOPE.sCountry('bic_scope').GetName] anektuje knížecí stát" # todo: NEW TRANSLATION
+ princely_states.5.d: "Pomocí doktríny lapse [SCOPE.sCountry('bic_scope').GetName] převzal další knížecí stát." # todo: NEW TRANSLATION
+ princely_states.5.f: "Když rostl, učitelé [ROOT.GetCountry.GetRuler.GetHerHis] povzbuzovali, aby hrál šachy. S odstupem se ukázalo, že hra dobře vystihuje aspekt vládcovství. Vládce se nesměl pohybovat více než o krok. A přesto, když [ROOT.GetCountry.GetRuler.GetSheHe] padl, nikdo jiný už nehrálo roli. Dnes, když další z našich sousedů padl před [SCOPE.sCountry('bic_scope').GetNameNoFormatting], [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] se cítil jako král na šachovnici, obklopen nepřáteli a neschopný mnoho udělat. Přesto měl ještě jeden tah. [ROOT.GetCountry.GetRuler.GetSheHe|U] jen musel zajistit, že to bude ten správný." # todo: NEW TRANSLATION
+ princely_states.5.a: "Politika je ohavná!" # todo: NEW TRANSLATION
+ princely_states.5.b: "Možná v tom je moudrost." # todo: NEW TRANSLATION
+ doctrine_of_lapse_upset: "Regionální rozruch" # todo: NEW TRANSLATION
+ overlord_lackey: "Poddanec vrchnosti" # todo: NEW TRANSLATION
+ notification_doctrine_of_lapse_reaction_message_name: "Doktrína lapse" # todo: NEW TRANSLATION
+ notification_doctrine_of_lapse_reaction_message_desc: "Vztahy mezi [ROOT.GetCountry.GetName] a [SCOPE.sCountry('bic_scope').GetName] se zhoršily poté, co [SCOPE.sCountry('bic_scope').GetName] použila doktrínu lapse k anektování knížecího státu." # todo: NEW TRANSLATION
+ notification_doctrine_of_lapse_reaction_message_tooltip: "#header $notification_doctrine_of_lapse_reaction_message_name$#!\n$TOOLTIP_DELIMITER$\n$notification_doctrine_of_lapse_reaction_message_desc$" # todo: NEW TRANSLATION
+ notification_caste_hierarchy_appears_name: "Je uznána nová sociální hierarchie" # todo: NEW TRANSLATION
+ notification_caste_hierarchy_appears_desc: "Kastovní systém je uznaným [concept_social_hierarchy] v [SCOPE.sCountry('relevant_country_scope').GetName]." # todo: NEW TRANSLATION
+ notification_caste_hierarchy_appears_tooltip: "#header $notification_caste_hierarchy_appears_name$#!\n$TOOLTIP_DELIMITER$\n$notification_caste_hierarchy_appears_desc$" # todo: NEW TRANSLATION
+ notification_caste_hierarchy_disappears_name: "Sociální hierarchie již není uznávána" # todo: NEW TRANSLATION
+ notification_caste_hierarchy_disappears_desc: "V důsledku nedávných kulturních a společenských změn už Kastovní systém není uznávaným [concept_social_hierarchy] v [SCOPE.sCountry('relevant_country_scope').GetName]." # todo: NEW TRANSLATION
+ notification_caste_hierarchy_disappears_tooltip: "#header $notification_caste_hierarchy_disappears_name$#!\n$TOOLTIP_DELIMITER$\n$notification_caste_hierarchy_disappears_desc$" # todo: NEW TRANSLATION
+ je_dravidian_movement: "Dravidské hnutí" # todo: NEW TRANSLATION
+ je_dravidian_movement_reason: "Lid obyčejný v [ROOT.GetCountry.GetName] zareagoval na nepřiměřené zastoupení a politickou moc bráhmínů. Po řadě protibrahmínských konferencí vzniklo Dravidské hnutí a nastavilo novou agendu proti bráhmínské dominanci. Usilují odstranit kastovní rozlišení ze zákona a státní správy." # todo: NEW TRANSLATION
+ dravidian_movement_fail_tt: "Přijatý zákon o domácí vládě Indie" # todo: NEW TRANSLATION
+ caste_conflict.1.t: "Nerovné příležitosti" # todo: NEW TRANSLATION
+ caste_conflict.1.d: "Napětí mezi kastami se zvýšilo poté, co nedávné sčítání odhalilo nepřiměřené zastoupení bráhmínů ve vládních funkcích a zdůraznilo omezené kvalifikace pro nebráhmíny." # todo: NEW TRANSLATION
+ caste_conflict.1.f: "Praveenův životopis, jeho dva magisterské tituly z ekonomie a práva, se mu sroloval v rukou, když rozzuřeně odcházel po dalším odmítnutí.\n\nVěděl, že by neměl být tak rozzlobený ani překvapený. Věděl, že když se přestěhoval do [ROOT.GetCountry.GetCapital.GetCityHubName], bude daleko od podpory své pokrokové univerzity, a přesto ho šokovala zřejmá segregace. Přes své kvalifikace se obtížně uživil, zatímco jiní stejně vzdělaní popíjeli chai ve sídlech. Nejvíce ho rozčilovalo, jak ho stráže od sebe odháněly. Jako by byly v očích pánů lepší než on." # todo: NEW TRANSLATION
+ caste_conflict.1.a: "[SCOPE.gsInterestGroup('rural_folk_ig_scope').GetName] bude prosazovat změnu." # todo: NEW TRANSLATION
+ caste_conflict.1.b: "[SCOPE.sCountry('top_overlord_scope').GetName] má své důvody, proč to podporovat." # todo: NEW TRANSLATION
+ rural_folk_pol_str_gain: "Proti bráhmínské dominanci" # todo: NEW TRANSLATION
+ current_system_supported: "Podporována bráhmínská dominance" # todo: NEW TRANSLATION
+ liberty_desire_hit: "Agenda vrchnosti" # todo: NEW TRANSLATION
+ erode_venkatappa_ramasamy_appears_tt: "E. V. Ramasamy se objeví v [ROOT.GetCountry.GetNameNoFormatting]" # todo: NEW TRANSLATION
+ an_agitator_appears_tt: "V [ROOT.GetCountry.GetNameNoFormatting] se objeví [concept_agitator]" # todo: NEW TRANSLATION
+ caste_conflict.2.t: "Konečně rovnost" # todo: NEW TRANSLATION
+ caste_conflict.2.d: "Úspěch agendy Dravidského hnutí vedl k přijetí nového zákona a zlepšení kvality života nebráhmínů." # todo: NEW TRANSLATION
+ caste_conflict.2.f: "Boj byl daleko od konce, věděl Praveen Pallar. Přesto se nemohl ubránit úsměvu, když usedl do jednoduché úřední místnosti, větrák nad ním jemně chladil pot na jeho zádech.\n\nNaproti němu seděl pan Iyer a vlevo pan Agastya. Oba vysokokastoví bráhmíni. A on držel stejnou pozici a plat jako oni. Ani jeden se mu nevzhlédl do očí. Ano, práce stále před námi, ale dnes to stačilo. Poděkoval svým spojencům, kteří s ním pochodovali a protestovali, a otevřel svou první složku." # todo: NEW TRANSLATION
+ caste_conflict.2.a: "[SCOPE.gsInterestGroup('rural_folk_ig_scope').GetName] prokázal svou způsobilost." # todo: NEW TRANSLATION
+ caste_conflict.2.b: "Budoucnost nebráhmínů je světlá." # todo: NEW TRANSLATION
+ tides_of_change: "Příliv změny" # todo: NEW TRANSLATION
+ rural_folk_ig_strong: "Důkaz moci" # todo: NEW TRANSLATION
+ future_minds: "Budoucí mysli" # todo: NEW TRANSLATION
+ notification_verge_of_collapse_name: "[SCOPE.sCharacter('rural_folk_leader_scope').GetFullNameNoFormatting] odstupuje" # todo: NEW TRANSLATION
+ notification_verge_of_collapse_desc: "Agenda Dravidského hnutí ztratila hybnost. [SCOPE.sCharacter('rural_folk_leader_scope').GetFullName] odstoupil z funkce vůdce [SCOPE.gsInterestGroup('rural_folk_ig_scope').GetName]." # todo: NEW TRANSLATION
+ notification_verge_of_collapse_tooltip: "#header $notification_verge_of_collapse_name$#!\n$TOOLTIP_DELIMITER$\n$notification_verge_of_collapse_desc$" # todo: NEW TRANSLATION
+ caste_conflict.4.t: "Manifest nebráhmínů" # todo: NEW TRANSLATION
+ caste_conflict.4.d: "Manifest nebráhmínů koluje v [ROOT.GetCountry.GetCapital.GetCityHubName] a vyvolává napětí mezi [SCOPE.gsInterestGroup('rural_folk_ig_scope').GetName] a [SCOPE.gsInterestGroup('intelligentsia_ig_scope').GetName]." # todo: NEW TRANSLATION
+ caste_conflict.4.f: "Dva stranické vůdce seděli proti sobě a jejich pomocníci poslouchali, jak se už druhou hodinu duely bojují rozumy.\n\n\"Prosím, musíte přimět Justice Party, aby viděla rozum,\" naléhal [SCOPE.sCharacter('intelligentsia_leader_scope').GetFullNameNoFormatting]. \"Musíme bojovat spolu, nebo prohrajeme!\"\n\n\"Požádáte nás, abychom stáli po britské lathi po vašem boku, ale řekněte mi, až přijde zítra, budete také stát po našem boku při vládnutí? Britové mi neudělali větší křivdu než vy. Mnoho jejich skutků bylo vedeno vašima rukama.\"" # todo: NEW TRANSLATION
+ caste_conflict.4.a: "Ten manifest je vlastizrádný!" # todo: NEW TRANSLATION
+ caste_conflict.4.b: "Možná manifest obsahuje platné body." # todo: NEW TRANSLATION
+ argument_to_be_made: "Argument, který má být učiněn" # todo: NEW TRANSLATION
+ caste_conflict.5.t: "Nedotknutelní a vyvrženci" # todo: NEW TRANSLATION
+ caste_conflict.5.d: "Aby si prosadili svá práva, komunita dalitů pila z veřejné nádrže na vodu, ke které jim byl přístup odepřen. Tento nenásilný protest vedl [SCOPE.sCharacter('character_scope').GetFullName] a vyvolal protest bráhmínských kněží." # todo: NEW TRANSLATION
+ caste_conflict.5.f: "Mladá dalitská dívka Meena sledovala průvod z dálky, skrytá za velkým stromem. Přišla sem včera s matkou a pily z nádrže. Zdálo se to jako velká událost, ačkoli ona jen vynechala práci toho dne. Ale to, co nyní viděla, ji zděsilo; ti kněží lijí kravský moč a hnůj do vody. Pila Meena kravský moč? Tak či onak, už z této znečištěné nádrže pít nebude." # todo: NEW TRANSLATION
+ caste_conflict.5.a: "Chování kněží je nepřijatelné." # todo: NEW TRANSLATION
+ caste_conflict.5.b: "Nechme je navzájem se rozptylovat." # todo: NEW TRANSLATION
+ opposition_to_untouchability: "Opozice proti nedotknutelnosti" # todo: NEW TRANSLATION
+ priestly_polluted_water: "Znečištěná vodní nádrž" # todo: NEW TRANSLATION

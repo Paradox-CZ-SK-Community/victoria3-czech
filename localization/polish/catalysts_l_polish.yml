@@ -20,29 +20,29 @@
  catalyst_diplomatic_demand: "Vznesen diplomatický požadavek"
  catalyst_diplomatic_demand_desc: "vznesení [Concept('concept_diplomatic_demand','diplomatických požadavků')] proti [TARGET_COUNTRY.GetAltAdjective('D')]"
  catalyst_diplomatic_demand_target: "Cíl diplomatického požadavku"
- catalyst_diplomatic_demand_target_desc: "se stal cílem [Concept('concept_diplomatic_demand','diplomatickým požadavkem')] od [TARGET_COUNTRY.GetAltAdjective('G')]" # todo: CONCEPT CASE
+ catalyst_diplomatic_demand_target_desc: "se stal cílem [Concept('concept_diplomatic_demand','diplomatického požadavku')] od [TARGET_COUNTRY.GetAltAdjective('G')]"
  catalyst_diplomatic_play: "Diplomatická hra zahájena"
  catalyst_diplomatic_play_desc: "zahájení [Concept('concept_diplomatic_play','diplomatické hry')] proti [TARGET_COUNTRY.GetAltAdjective('D')]"
  catalyst_diplomatic_play_target: "Cíl diplomatické hry"
- catalyst_diplomatic_play_target_desc: "se stal cílem [Concept('concept_diplomatic_play','diplomatickou hrou')] od [TARGET_COUNTRY.GetAltAdjective('G')]" # todo: CONCEPT CASE
- catalyst_autonomy_level_increased: "Úroveň [Concept('concept_autonomy','autonomie')|l] zvýšena" # todo: CONCEPT CASE
+ catalyst_diplomatic_play_target_desc: "se stal cílem [Concept('concept_diplomatic_play','diplomatické hry')] od [TARGET_COUNTRY.GetAltAdjective('G')]"
+ catalyst_autonomy_level_increased: "Úroveň [Concept('concept_autonomy','autonomie')|l] zvýšena"
  catalyst_autonomy_level_increased_desc: "se stává více autonomním od [TARGET_COUNTRY.GetAltAdjective('G')]"
- catalyst_autonomy_level_decreased: "Úroveň [Concept('concept_autonomy','autonomie')|l] snížena" # todo: CONCEPT CASE
+ catalyst_autonomy_level_decreased: "Úroveň [Concept('concept_autonomy','autonomie')|l] snížena"
  catalyst_autonomy_level_decreased_desc: "se stává méně autonomní od [TARGET_COUNTRY.GetAltAdjective('G')]"
  catalyst_gained_independence: "Získaná nezávislost"
  catalyst_gained_independence_desc: "stává se plně nezávislým na [TARGET_COUNTRY.GetAltAdjective('L')]"
- catalyst_became_overlord: "Stal se vládcem" # todo: CONCEPT CASE
+ catalyst_became_overlord: "Stal se $concept_overlord$"
  catalyst_became_overlord_desc: "stává se [Concept('concept_overlord','vládcem')] [TARGET_COUNTRY.GetAltAdjective('G')]"
  catalyst_became_subject: "Stal se závislou zemí"
  catalyst_became_subject_desc: "stává se [Concept('concept_subject','závislou zemí')] [TARGET_COUNTRY.GetAltAdjective('G')]"
- catalyst_pact_formed: "Diplomatický pakt uzavřen" # todo: CONCEPT CASE
+ catalyst_pact_formed: "$concept_diplomatic_pact$ uzavřen"
  catalyst_pact_formed_desc: "uzavření [Concept('concept_diplomatic_pact','diplomatického paktu')] s [TARGET_COUNTRY.GetAltAdjective('I')]"
- catalyst_pact_broken: "Diplomatický pakt porušen" # todo: CONCEPT CASE
- catalyst_pact_broken_desc: "porušení [Concept('concept_diplomatic_pact','diplomatický pakt')] s [TARGET_COUNTRY.GetAltAdjective('I')]" # todo: CONCEPT CASE
- catalyst_alliance_formed: "Aliance vytvořena" # todo: CONCEPT CASE
- catalyst_alliance_formed_desc: "[TARGET_COUNTRY.GetName] s námi uzavřelo [Concept('concept_alliance','alianci')] nebo [Concept('concept_defensive_pact','obranný pakt')|l]" # todo: CONCEPT CASE
- catalyst_alliance_broken: "Aliance se rozpadla" # todo: CONCEPT CASE
- catalyst_alliance_broken_desc: "[TARGET_COUNTRY.GetName] již s náma nemá [Concept('concept_alliance','alianci')] nebo [Concept('concept_defensive_pact','obranný pakt')|l]" # todo: CONCEPT CASE
+ catalyst_pact_broken: "$concept_diplomatic_pact$ porušen"
+ catalyst_pact_broken_desc: "porušení [Concept('concept_diplomatic_pact','diplomatického paktu')] s [TARGET_COUNTRY.GetAltAdjective('I')]"
+ catalyst_alliance_formed: "$concept_alliance$ vytvořena"
+ catalyst_alliance_formed_desc: "[TARGET_COUNTRY.GetName] s námi uzavřelo [Concept('concept_alliance','alianci')] nebo [Concept('concept_defensive_pact','obranný pakt')|l]"
+ catalyst_alliance_broken: "$concept_alliance$ se rozpadla"
+ catalyst_alliance_broken_desc: "[TARGET_COUNTRY.GetName] již s náma nemá [Concept('concept_alliance','alianci')] nebo [Concept('concept_defensive_pact','obranný pakt')|l]"
  catalyst_rivalry_declared: "Vyhlášená rivalita"
  catalyst_rivalry_declared_desc: "[TARGET_COUNTRY.GetName] vyhlašuje [Concept('concept_rivalry','rivalitu')] s [COUNTRY.GetAltAdjective('I')]"
  catalyst_alliance_with_rival: "Spojenci s rivalem"
@@ -60,11 +60,11 @@
  catalyst_wargoal_enforced: "Cíl války prosazen"
  catalyst_wargoal_enforced_desc: "[TARGET_COUNTRY.GetName] prosazuje [Concept('concept_war_goal','válečný cíl')] vůči [COUNTRY.GetAltAdjective('D')]"
  catalyst_state_conquered: "Stát dobyt"
- catalyst_state_conquered_desc: "[TARGET_COUNTRY.GetName] dobyl [Concept('concept_state','stát')|l] od [COUNTRY.GetAltAdjective('G')]" # todo: CONCEPT CASE
+ catalyst_state_conquered_desc: "[TARGET_COUNTRY.GetName] dobyl [Concept('concept_state','stát')|l] od [COUNTRY.GetAltAdjective('G')]"
  catalyst_diplomatic_strategy_changed: "Diplomatická strategie změněna"
  catalyst_diplomatic_strategy_changed_desc: "[COUNTRY.GetName] mění svou [Concept('concept_ai_strategy','strategii')]"
  catalyst_declared_bankruptcy: "Vyhlášený bankrot"
- catalyst_declared_bankruptcy_desc: "[TARGET_COUNTRY.GetName] ukázalo svou slabost tím, že vyhlásilo [Concept('concept_bankruptcy','bankrot')|l]" # todo: CONCEPT CASE
+ catalyst_declared_bankruptcy_desc: "[TARGET_COUNTRY.GetName] ukázalo svou slabost tím, že vyhlásilo [Concept('concept_bankruptcy','bankrot')|l]"
  catalyst_ideological_drift: "Ideologický odklon"
  catalyst_ideological_drift_desc: "zvyšující se ideologické rozdíly s [TARGET_COUNTRY.GetAltAdjective('I')]"
  catalyst_ideological_alignment: "Ideologická podobnost"
@@ -79,13 +79,13 @@
  catalyst_unification_support_added_desc: "[TARGET_COUNTRY.GetName] se stává [COUNTRY.GetAltAdjective('G')] [Concept('concept_unification_supporter','podporovatelem sjednocení')]"
  catalyst_unification_support_removed: "Stažena podpora sjednocení"
  catalyst_unification_support_removed_desc: "[TARGET_COUNTRY.GetName] přestává být [COUNTRY.GetAltAdjective('G')] [Concept('concept_unification_supporter','podporovatelem sjednocení')]"
- catalyst_autonomy_increase_requested: "Požadováno zvýšení [Concept('concept_autonomy','autonomie')]" # todo: CONCEPT CASE
+ catalyst_autonomy_increase_requested: "Požadováno zvýšení [Concept('concept_autonomy','autonomie')]"
  catalyst_autonomy_increase_requested_desc: "[TARGET_COUNTRY.GetName] žádá o zvýšení autonomie"
  catalyst_autonomy_decrease_requested: "Žádost o snížení [Concept('concept_autonomy','autonomii')]" # todo: CONCEPT CASE
  catalyst_autonomy_decrease_requested_desc: "[TARGET_COUNTRY.GetName] žádá o snížení autonomie"
- catalyst_autonomy_change_imposed: "[Concept('concept_autonomy','Autonomie')] změněna" # todo: CONCEPT CASE
+ catalyst_autonomy_change_imposed: "[Concept('concept_autonomy','Autonomie')] změněna"
  catalyst_autonomy_change_imposed_desc: "[TARGET_COUNTRY.GetName] změnili úroveň autonomie [COUNTRY.GetAltAdjective('G')]"
- catalyst_autonomy_increase_denied: "[Concept('concept_autonomy','Autonomie')] nezměnena" # todo: CONCEPT CASE
+ catalyst_autonomy_increase_denied: "[Concept('concept_autonomy','Autonomie')] nezměnena"
  catalyst_autonomy_increase_denied_desc: "[TARGET_COUNTRY.GetName] odmítl zvýšit autonomii [COUNTRY.GetAltAdjective('G')]"
  catalyst_market_control_requested: "Žádost o kontrolu trhu"
  catalyst_market_control_requested_desc: "[TARGET_COUNTRY.GetName] žádá o kontrolu nad vlastním [Concept('concept_market','trhem')]"
@@ -94,17 +94,17 @@
  catalyst_support_regime_requested: "Žádost o podporu režimu"
  catalyst_support_regime_requested_desc: "[TARGET_COUNTRY.GetName] žádá o podporu svého režimu"
  catalyst_investment_rights_requested: "Požadována investiční práva"
- catalyst_investment_rights_requested_desc: "[TARGET_COUNTRY.GetName] žádá o [Concept('concept_foreign_investment_rights','práva na zahraniční investice')]" # todo: CONCEPT CASE
+ catalyst_investment_rights_requested_desc: "[TARGET_COUNTRY.GetName] žádá o [Concept('concept_foreign_investment_rights','práva na zahraniční investice')]"
  catalyst_knowledge_sharing_requested: "Žádost o sdílení znalostí"
  catalyst_knowledge_sharing_requested_desc: "[TARGET_COUNTRY.GetName] žádá [COUNTRY.GetAltAdjective('G')] o sdílení znalostí ohledně jejich [Concept('concept_technology','technologie')]"
  catalyst_diplomatic_incident: "Došlo k diplomatické události"
  catalyst_diplomatic_incident_desc: "diplomatická událost mezi [COUNTRY.GetAltAdjective('I')] a [TARGET_COUNTRY.GetAltAdjective('I')]"
  catalyst_friendly_lobby_in_government: "Spřátelená lobby ve vládě"
- catalyst_friendly_lobby_in_government_desc: "spřátelená [Concept('concept_political_lobby','politická lobby')] se stává součástí [COUNTRY.GetAltAdjective('ee')] [Concept('concept_government','vládou')]" # todo: CONCEPT CASE
+ catalyst_friendly_lobby_in_government_desc: "spřátelená [Concept('concept_political_lobby','politická lobby')] se stává součástí [COUNTRY.GetAltAdjective('ee')] [Concept('concept_government','vlády')]"
  catalyst_hostile_lobby_in_government: "Nepřátelská lobby ve vládě"
- catalyst_hostile_lobby_in_government_desc: "nepřátelská [Concept('concept_political_lobby','politická lobby')] se stává součástí [COUNTRY.GetAltAdjective('ee')] [Concept('concept_government','vládou')]" # todo: CONCEPT CASE
+ catalyst_hostile_lobby_in_government_desc: "nepřátelská [Concept('concept_political_lobby','politická lobby')] se stává součástí [COUNTRY.GetAltAdjective('ee')] [Concept('concept_government','vlády')]"
  catalyst_nationalized_building: "Znárodněna budova"
- catalyst_nationalized_building_desc: "[TARGET_COUNTRY.GetName] [Concept('concept_nationalize','Znárodnit')] [Concept('concept_building','Budova')] z rukou [COUNTRY.GetAltAdjective('yych')] majitelů." # todo: CONCEPT CASE
+ catalyst_nationalized_building_desc: "[TARGET_COUNTRY.GetName] [Concept('concept_nationalize','znárodnil')] [Concept('concept_building','budovu')] z rukou [COUNTRY.GetAltAdjective('yych')] majitelů."
  catalyst_declined_bloc_invite: "Odmítnutí pozvání do mocenského bloku"
  catalyst_declined_bloc_invite_desc: "[TARGET_COUNTRY.GetName] odmítl nabídku připojit se k [COUNTRY.GetPowerBloc.GetName]"
  catalyst_kicked_out_of_bloc: "Vyhozen z mocenského bloku"
@@ -112,15 +112,15 @@
  catalyst_left_power_bloc: "Opustil mocenský blok"
  catalyst_left_power_bloc_desc: "[COUNTRY.GetName] opustil [TARGET_COUNTRY.GetPowerBloc.GetName]"
  catalyst_exiled_culture_member: "Exilovaný občan s kulturou naší země"
- catalyst_exiled_culture_member_desc: "[TARGET_COUNTRY.GetName] vyhostil občana, který má jednu naši [Concept('concept_primary_cultures','primární kultury')]" # todo: CONCEPT CASE
+ catalyst_exiled_culture_member_desc: "[TARGET_COUNTRY.GetName] vyhostil občana, který má jednu naši [Concept('concept_primary_cultures','primární kulturu')]"
  catalyst_invited_exile_positive: "Pozvaný spřátelený politický exulant"
  catalyst_invited_exile_positive_desc: "[TARGET_COUNTRY.GetName] pozval spřáteleného [Concept('concept_exile','exulanta')] z naší země"
  catalyst_invited_exile_negative: "Pozvaný nepřátelský politický exulant"
  catalyst_invited_exile_negative_desc: "[TARGET_COUNTRY.GetName] pozval nepřátelského [Concept('concept_exile','exulanta')] z naší země"
- catalyst_overtaken_in_prestige_rank: "Předehnán v hodnocení [Concept('concept_prestige','prestiži')]" # todo: CONCEPT CASE
- catalyst_overtaken_in_prestige_rank_desc: "[TARGET_COUNTRY.GetName] předehnal [COUNTRY.GetAltAdjective('G')] v top #v [GetDefine('NDiplomacy','DIPLOMATIC_CATALYST_MIN_SCORE_POSITION_FOR_OVERTAKE')]#! žebříčcích [Concept('concept_prestige','prestiži')]" # todo: CONCEPT CASE
+ catalyst_overtaken_in_prestige_rank: "Předehnán v hodnocení [Concept('concept_prestige','prestiže')]"
+ catalyst_overtaken_in_prestige_rank_desc: "[TARGET_COUNTRY.GetName] předehnal [COUNTRY.GetAltAdjective('G')] v top #v [GetDefine('NDiplomacy','DIPLOMATIC_CATALYST_MIN_SCORE_POSITION_FOR_OVERTAKE')]#! žebříčcích [Concept('concept_prestige','prestiže')]"
  catalyst_revolution_successful: "Vítězná revoluce"
- catalyst_revolution_successful_desc: "[Concept('concept_government','Vláda')] v [TARGET_COUNTRY.GetAltAdjective('L')] byla svržena revolucí" # todo: CONCEPT CASE
+ catalyst_revolution_successful_desc: "[Concept('concept_government','Vláda')] v [TARGET_COUNTRY.GetAltAdjective('L')] byla svržena revolucí"
  catalyst_became_recognized: "Získal uznání"
  catalyst_became_recognized_desc: "[TARGET_COUNTRY.GetName] se stali [Concept('concept_recognized_power','uznanou mocností')]"
  catalyst_event_positive: "Pozitivní událost"
@@ -131,27 +131,27 @@
  catalyst_declined_military_assistance_desc: "[TARGET_COUNTRY.GetName] odmítá nabídku poskytnout [Concept('concept_military_assistance','vojenskou pomoc')] naší zemi"
  catalyst_granted_military_assistance: "Poskytnuta vojenská pomoc"
  catalyst_granted_military_assistance_desc: "[TARGET_COUNTRY.GetName] poskytuje [Concept('concept_military_assistance','vojenskou pomoc')] naší zemi"
- catalyst_orchestrate_coup_successful: "Úspěšný zinscenovaný [Concept('concept_coup','puč')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- catalyst_orchestrate_coup_successful_desc: "[TARGET_COUNTRY.GetName] zinscenoval úspěšný [Concept('concept_coup','puč')] v naší zemi" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- catalyst_orchestrate_coup_failed: "Neúspěšný zinscenovaný [Concept('concept_coup','puč')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- catalyst_orchestrate_coup_failed_desc: "[TARGET_COUNTRY.GetName] zinscenoval neúspěšný pokus o [Concept('concept_coup','puč')] v naší zemi" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- catalyst_orchestrate_coup_fizzled: "Ukončený zinscenovaný [Concept('concept_coup','puč')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- catalyst_orchestrate_coup_fizzled_desc: "[TARGET_COUNTRY.GetName] se pokusil zinscenovat [Concept('concept_coup','puč')] v naší zemi" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- catalyst_treaty_broken: "Smlouva přestala platit" # todo: CONCEPT CASE
+ catalyst_orchestrate_coup_successful: "Úspěšný zinscenovaný [Concept('concept_coup','puč')]" # todo: NEW TRANSLATION
+ catalyst_orchestrate_coup_successful_desc: "[TARGET_COUNTRY.GetName] zinscenoval úspěšný [Concept('concept_coup','puč')] v naší zemi" # todo: NEW TRANSLATION
+ catalyst_orchestrate_coup_failed: "Neúspěšný zinscenovaný [Concept('concept_coup','puč')]" # todo: NEW TRANSLATION
+ catalyst_orchestrate_coup_failed_desc: "[TARGET_COUNTRY.GetName] zinscenoval neúspěšný pokus o [Concept('concept_coup','puč')] v naší zemi" # todo: NEW TRANSLATION
+ catalyst_orchestrate_coup_fizzled: "Ukončený zinscenovaný [Concept('concept_coup','puč')]" # todo: NEW TRANSLATION
+ catalyst_orchestrate_coup_fizzled_desc: "[TARGET_COUNTRY.GetName] se pokusil zinscenovat [Concept('concept_coup','puč')] v naší zemi" # todo: NEW TRANSLATION
+ catalyst_treaty_broken: "$concept_treaty$ přestala platit"
  catalyst_treaty_broken_desc: "[COUNTRY.GetName] ruší [Concept('concept_treaty','smlouvu')] s [TARGET_COUNTRY.GetAltAdjective('I')]"
- catalyst_treaty_signed: "Smlouva podepsána" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- catalyst_treaty_signed_desc: "[COUNTRY.GetName] uzavřel [Concept('concept_treaty','smlouva')] s [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- catalyst_treaty_enforced: "Smlouva vynucena" # todo: CONCEPT CASE
+ catalyst_treaty_signed: "$concept_treaty$ podepsána" # todo: NEW TRANSLATION
+ catalyst_treaty_signed_desc: "[COUNTRY.GetName] uzavřel [Concept('concept_treaty','smlouva')] s [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
+ catalyst_treaty_enforced: "$concept_treaty$ vynucena"
  catalyst_treaty_enforced_desc: "[COUNTRY.GetName] vynucuje [Concept('concept_treaty','smlouvu')] s [TARGET_COUNTRY.GetAltAdjective('I')]"
- catalyst_strait_toll_high: "Vysoké $concept_tolls$ uvaleny na průliv" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- catalyst_strait_toll_high_desc: "[TARGET_COUNTRY.GetName] uvaluje vysoké [Concept('concept_tolls','mýtné')] na [Concept('concept_strait','průliv')], které používá [COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ catalyst_strait_toll_high: "Vysoké $concept_tolls$ uvaleny na $concept_strait$" # todo: NEW TRANSLATION
+ catalyst_strait_toll_high_desc: "[TARGET_COUNTRY.GetName] uvaluje vysoké [Concept('concept_tolls','mýtné')] na [Concept('concept_strait', '$concept_strait$')], které používá [COUNTRY.GetName]" # todo: NEW TRANSLATION
  catalyst_strait_toll_reduced: "Průlivové poplatky sníženy" # todo: NEW TRANSLATION
- catalyst_strait_toll_reduced_desc: "[TARGET_COUNTRY.GetName] snižuje [Concept('concept_tolls','mýtné')] na [Concept('concept_strait','průliv')], které používá [COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ catalyst_strait_toll_reduced_desc: "[TARGET_COUNTRY.GetName] snižuje [Concept('concept_tolls','mýtné')] na [Concept('concept_strait', '$concept_strait$')], které používá [COUNTRY.GetName]" # todo: NEW TRANSLATION
  catalyst_strait_no_military: "Průliv uzavřen pro vojenské lodě" # todo: NEW TRANSLATION
- catalyst_strait_no_military_desc: "[TARGET_COUNTRY.GetName] neumožňuje [COUNTRY.GetName] průchod vojenských plavidel přes [Concept('concept_strait','průliv')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ catalyst_strait_no_military_desc: "[TARGET_COUNTRY.GetName] neumožňuje [COUNTRY.GetName] průchod vojenských plavidel přes [Concept('concept_strait', '$concept_straits$')]" # todo: NEW TRANSLATION
  catalyst_strait_opened: "Průliv znovu otevřen" # todo: NEW TRANSLATION
- catalyst_strait_opened_desc: "[TARGET_COUNTRY.GetName] znovu otevřel [Concept('concept_strait','průliv')] pro [COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ catalyst_strait_opened_desc: "[TARGET_COUNTRY.GetName] znovu otevřel [Concept('concept_strait', '$concept_strait$')] pro [COUNTRY.GetName]" # todo: NEW TRANSLATION
  catalyst_strait_partially_opened: "Průliv částečně znovu otevřen" # todo: NEW TRANSLATION
- catalyst_strait_partially_opened_desc: "[TARGET_COUNTRY.GetName] částečně znovu otevřel [Concept('concept_strait','průliv')] pro obchod [COUNTRY.GetName] po úplném uzavření" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ catalyst_strait_partially_opened_desc: "[TARGET_COUNTRY.GetName] částečně znovu otevřel [Concept('concept_strait', '$concept_strait$')] pro obchod [COUNTRY.GetName] po úplném uzavření" # todo: NEW TRANSLATION
  catalyst_strait_closed: "Průliv zcela uzavřen" # todo: NEW TRANSLATION
- catalyst_strait_closed_desc: "[TARGET_COUNTRY.GetName] zcela uzavřel [Concept('concept_strait','průliv')] pro lodní dopravu [COUNTRY.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ catalyst_strait_closed_desc: "[TARGET_COUNTRY.GetName] zcela uzavřel [Concept('concept_strait', '$concept_strait$')] pro lodní dopravu [COUNTRY.GetName]" # todo: NEW TRANSLATION

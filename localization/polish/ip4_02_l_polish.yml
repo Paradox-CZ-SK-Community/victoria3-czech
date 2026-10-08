@@ -30,7 +30,7 @@
  modifier_entrepreneurial_latifundistas: "Podnikaví latifundisté"
  modifier_marginalized_latifundistas: "Marginalizovaní latifundisté"
  je_spa_economic_regeneration_modernise_agriculture: "Oživení: Zemědělství"
- je_spa_economic_regeneration_modernise_agriculture_reason: "Procházet méně rozvinutými oblastmi Meseta Central znamená vykročit zpět v čase. Pluhy a nástroje tamních rolníků se jen málo liší od těch, které používali jejich předkové; jejich výnosy dusí postupy, jež byly jinde dávno opuštěny.\n\nBez reformy nemůže země doufat, že udrží prosperitu [ROOT.GetCountry.GetAltAdjective('A')]." # todo: COUNTRY CASE
+ je_spa_economic_regeneration_modernise_agriculture_reason: "Procházet méně rozvinutými oblastmi Meseta Central znamená vykročit zpět v čase. Pluhy a nástroje tamních rolníků se jen málo liší od těch, které používali jejich předkové; jejich výnosy dusí postupy, jež byly jinde dávno opuštěny.\n\nBez reformy nemůže země doufat, že udrží prosperitu [ROOT.GetCountry.GetName]."
  je_spa_economic_regeneration_modernise_agriculture_tt_1: "Následující platí po #b 24#! po sobě jdoucích měsíců (aktuálně #v [ROOT.GetCountry.MakeScope.Var('je_spa_economic_regeneration_modernise_agriculture_timer_var').GetValue]#!):"
  je_spa_economic_regeneration_modernise_agriculture_tt_2: "Následující platí po #b 12#! po sobě jdoucích měsíců (aktuálně #v [ROOT.GetCountry.MakeScope.Var('je_spa_economic_regeneration_modernise_agriculture_timer_var').GetValue]#!):"
  modifier_population_boom: "Populační boom"
@@ -47,7 +47,7 @@
  je_spa_economic_regeneration_light_industry_reason: "Nikde není předmodernost země [ROOT.GetCountry.GetName] cítit tak silně jako v jejím výrobním sektoru. [ROOT.GetCountry.GetAdjectiveNoFormatting] manufaktury, stále převážně řemeslné povahy, mají potíže konkurovat levnému zahraničnímu zboží, s výjimkou několika vybraných lokalit, jako je Barcelona.\n\nVybudováním silného výrobního sektoru na klíčových místech naší říše můžeme zvrátit příliv zahraniční hospodářské nadvlády."
  modifier_industrial_investment_dearth: "Nespokojený výrobní sektor"
  modifier_manufactoring_boom: "Výrobní boom"
- every_state_following_requirements_tt: "Každý [Concept('concept_state','stát')] splňující požadavky získá následující modifikátor:" # todo: CONCEPT CASE
+ every_state_following_requirements_tt: "Každý [Concept('concept_state','stát')] splňující požadavky získá následující modifikátor:"
  modifier_facilitated_manufacturing_boom: "Mistři továrny"
  je_spa_economic_regeneration_railways: "Oživení: Železnice"
  je_spa_economic_regeneration_railways_reason: "Z mnoha velkých vynálezů této doby se jen málokterý vyrovná syrovému potenciálu parní lokomotivy. [ROOT.GetCountry.GetAdjective] vnitrozemí zůstávalo dlouho relativně izolované od zbytku země, sevřené hornatým terénem, špatnou silniční sítí a řekami, které jsou splavné jen zčásti.\n\nAle tam, kde selhaly vozy a čluny, parní lokomotiva zvítězí a každý coul [ROOT.GetCountry.GetAdjectiveNoFormatting] půdy bude propojen s širším trhem stejně jako dnes přístav Bilbao."
@@ -56,7 +56,7 @@
  modifier_entrenchment_of_local_power: "Izolovaná mocenská centra"
  je_spa_economic_regeneration_ultramar: "Oživení: Kolonie"
  je_spa_economic_regeneration_ultramar_reason: "Během takzvaného Zlatého století pocházela velká část bohatství země [ROOT.GetCountry.GetName] z jejích kolonií. Ačkoli se dynamika kolonialismu od té doby výrazně změnila, některé pravdy platí dnes stejně jako tehdy:\n\nUltramar obsahuje velké bohatství a byli bychom pošetilí, kdybychom ho nevyužili."
- every_colonial_subject_following_requirements_tt: "Každá #b koloniální#! [Concept('concept_subject','závislá země')] splňující požadavky získá následující modifikátor:" # todo: CONCEPT CASE
+ every_colonial_subject_following_requirements_tt: "Každá #b koloniální#! [Concept('concept_subject','závislá země')] splňující požadavky získá následující modifikátor:"
  modifier_integrated_colony: "Finančně integrovaná kolonie"
  modifier_neglected_colony: "Zanedbané ministerstvo zámoří"
  spa_economic_regeneration_events.1.t: "O obecném stavu veřejné pokladny"
@@ -66,7 +66,7 @@
  spa_economic_regeneration_events.1.b: "V tuto chvíli nejsme v postavení, kdy bychom se tím mohli zabývat."
  spa_economic_regeneration_events.1.tt_1: "#bold Program hospodářského oživení#! požaduje provedení série reforem během #v 20#! let."
  spa_economic_regeneration_events.1.tt_2: "Nesplnění cílů programu včas #r zhorší#! [ROOT.GetCountry.GetAdjective] politickou stabilitu"
- spa_economic_regeneration_events.1.tt_3: "#bold $je_spa_economic_regeneration_master$#! [Concept('concept_journal_entry','záznam v deníku')] bude prozatím #r deaktivován#!, ale po #v 5#! letech bude opět #g dostupný#!." # todo: CONCEPT CASE
+ spa_economic_regeneration_events.1.tt_3: "#bold $je_spa_economic_regeneration_master$#! [Concept('concept_journal_entry','záznam v deníku')] bude prozatím #r deaktivován#!, ale po #v 5#! letech bude opět #g dostupný#!."
  modifier_economic_regeneration_postponed: "Hospodářské oživení odloženo"
  spa_economic_regeneration_events.2.t: "Vládní manipulace odhalena"
  spa_economic_regeneration_events.2.d: "Neohrožení reportéři pracující pro [SCOPE.GetRootScope.GetCountry.GetCapital.GetCityHubName] [SCOPE.GetRootScope.GetCountry.GetCustom('generic_newspaper_type')] odhalili naše pokusy o manipulaci a zveřejnili zdrcující zprávu obviňující vládu z neschopnosti a klamu."
@@ -107,12 +107,12 @@
  spanish_new_world_events.1.b: "Zbabělci. Pošlete pro ministra války, zrada nesmí být odměněna."
  spanish_new_world_events.1.tt_1: "Tím se vydáme cestou #g normalizace#! vztahů s našimi bývalými koloniemi."
  spanish_new_world_events.1.tt_2: "Tím se vydáme #b obtížnou#! cestou #r dobývání#! zaměřenou na naše bývalé kolonie."
- spanish_new_world_events.1.tt_3: "[SCOPE.sCountry('britain_scope').GetName] a [SCOPE.sCountry('usa_scope').GetName] pravděpodobně #b zasáhnou proti nám#! v [Concept('concept_diplomatic_play','diplomatické hře')] zaměřených na naše bývalé kolonie, pokud s nimi nebudeme mít velmi dobré vztahy." # todo: CONCEPT CASE
- spanish_new_world_events.1.tt_4: "[ROOT.GetCountry.GetAdjective] [Concept('concept_relations','Vztahy')] se zeměmi [SCOPE.sCountry('britain_scope').GetAltAdjective('I')], [SCOPE.sCountry('usa_scope').GetAltAdjective('I')] a #b všemi bývalými [ROOT.GetCountry.GetAdjectiveNoFormatting] koloniemi#! se zhorší o #r 30#!" # todo: CONCEPT CASE # todo: COUNTRY CASE
- spanish_new_world_events.1.tt_5: "#b Zostudíme#! se v očích mezinárodního společenství a všechny jihoamerické země ztratí [Concept('concept_modifier','modifikátor')] #b $modifier_not_recognized_by_spain$#!" # todo: CONCEPT CASE
+ spanish_new_world_events.1.tt_3: "[SCOPE.sCountry('britain_scope').GetName] a [SCOPE.sCountry('usa_scope').GetName] pravděpodobně #b zasáhnou proti nám#! v [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] zaměřených na naše bývalé kolonie, pokud s nimi nebudeme mít velmi dobré vztahy."
+ spanish_new_world_events.1.tt_4: "[ROOT.GetCountry.GetAdjective] [Concept('concept_relations','vztahy')] se zeměmi [SCOPE.sCountry('britain_scope').GetName], [SCOPE.sCountry('usa_scope').GetName] a #b všemi bývalými [ROOT.GetCountry.GetAdjectiveNoFormatting] koloniemi#! se zhorší o #r 30#!"
+ spanish_new_world_events.1.tt_5: "#b Zostudíme#! se v očích mezinárodního společenství a všechny jihoamerické země ztratí [Concept('concept_modifier','modifikátor')] #b $modifier_not_recognized_by_spain$#!"
  modifier_spanish_infamy_reduction: "Diplomatické iniciativy v Novém světě"
- spanish_new_world_events.1.tt_3_event_insight: "#b $GBR$#! a #b $USA$#! pravděpodobně #b zasáhnou proti nám#! v [Concept('concept_diplomatic_play','diplomatické hře')] zaměřených na naše bývalé kolonie, pokud s nimi nebudeme mít velmi dobré vztahy." # todo: CONCEPT CASE
- spanish_new_world_events.1.tt_4_event_insight: "[ROOT.GetCountry.GetAdjective] [Concept('concept_relations','Vztahy')] s #b $GBR$#!, #b $USA$#! a #b všemi bývalými [ROOT.GetCountry.GetAdjectiveNoFormatting] koloniemi#! se zhorší o #r 30#!" # todo: CONCEPT CASE
+ spanish_new_world_events.1.tt_3_event_insight: "#b $GBR$#! a #b $USA$#! pravděpodobně #b zasáhnou proti nám#! v [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] zaměřených na naše bývalé kolonie, pokud s nimi nebudeme mít velmi dobré vztahy."
+ spanish_new_world_events.1.tt_4_event_insight: "[ROOT.GetCountry.GetAdjective] [Concept('concept_relations','vztahy')] s #b $GBR$#!, #b $USA$#! a #b všemi bývalými [ROOT.GetCountry.GetAdjectiveNoFormatting] koloniemi#! se zhorší o #r 30#!"
  spanish_new_world_events.2.t: "Naše americká říše"
  spanish_new_world_events.2.d: "Nemožné se stalo skutečností: vláda země [ROOT.GetCountry.GetName] nad Novým světem byla obnovena. Na oslavu této významné události byly v hlavních městech obnovených audiencií uspořádány velké triumfy."
  spanish_new_world_events.2.f: "Když toho rána zazněla polnice a nad pevností Castillo de San Felipe de Barajas byla vztyčena [ROOT.GetCountry.GetAdjectiveNoFormatting] vlajka, srdce mladého desátníka naplnila hrdost. I v ospalé asturské vesnici jeho mládí se vzpomínka na obranu Cartageny tyčila vysoko. Nyní z jejích hradeb znovu hrdě vlála [ROOT.GetCountry.GetAdjectiveNoFormatting] korouhev.\n\nTichým slibem sobě i Všemohoucímu přísahal, že dokud mu v těle zůstane dech, tato standarta už nikdy nepadne."
@@ -125,9 +125,9 @@
  spanish_new_world_events.3.f: "Když poslední delegát odešel, velvyslancova mysl se od praktických záležitostí zatoulala jinam. Před stoletím by takové setkání probíhalo mezi pánem a služebníkem; nyní se setkali jako rovní. Setrval u té myšlenky, nejistý, zda v něm probouzí hrdost, nebo žal. Jak by tento obrat osudu posoudili jeho dědové a jak jeho vnuci? A především, jak by ho posoudil Všemohoucí? Nebyly snad španělské državy kdysi považovány za Bohem dané?\n\nNa tom nezáleželo, nyní se mohl soustředit jen na jedinou prostou myšlenku:"
  spanish_new_world_events.3.a: "Matka a její děti, konečně usmířené."
  spanish_new_world_events.4.t: "Starý řád"
- spanish_new_world_events.4.d: "S obnovením země [SCOPE.sCountry('relevant_country_scope').GetName] se [ROOT.GetCountry.GetAltAdjective('I')] ocitá o krok blíže k obnově své dávné nadvlády. Nyní musíme rozhodnout o územním rozsahu naší [SCOPE.sCountry('relevant_country_scope').GetAdjectiveNoFormatting] závislé země." # todo: COUNTRY CASE
+ spanish_new_world_events.4.d: "S obnovením země [SCOPE.sCountry('relevant_country_scope').GetName] se [ROOT.GetCountry.GetAltAdjective('I')] ocitá o krok blíže k obnově své dávné nadvlády. Nyní musíme rozhodnout o územním rozsahu naší [SCOPE.sCountry('relevant_country_scope').GetAdjectiveNoFormatting] závislé země." # todo: CONCEPT CASE
  spanish_new_world_events.4.d_caribbean: "Když je [SCOPE.sCountry('new_spain_scope').GetName] znovu pod [ROOT.GetCountry.GetAdjective] kontrolou, někteří koloniální úředníci se vyslovili pro konsolidaci našich karibských kolonií."
- spanish_new_world_events.4.f: "Kolem něj se komnatou hemžili poslové, každý nesl listiny, které měly rozhodnout o osudu tisíců. Podepisoval je všechny bez přestávky, každý dekret nesl tíhu říše. Po léta byly pročesávány staré koloniální záznamy, svolávány rady a nasloucháno hlasům ze všech koutů španělských držav.\n\nNyní konečně práce přinesla ovoce: [SCOPE.sCountry('relevant_country_scope').GetAltAdjectiveNoFormatting('A')] se vrátila do lůna říše." # todo: COUNTRY CASE
+ spanish_new_world_events.4.f: "Kolem něj se komnatou hemžili poslové, každý nesl listiny, které měly rozhodnout o osudu tisíců. Podepisoval je všechny bez přestávky, každý dekret nesl tíhu říše. Po léta byly pročesávány staré koloniální záznamy, svolávány rady a nasloucháno hlasům ze všech koutů španělských držav.\n\nNyní konečně práce přinesla ovoce: [SCOPE.sCountry('relevant_country_scope').GetNameNoFormatting] se vrátila do lůna říše."
  spanish_new_world_events.4.f_caribbean: "„Promiňte, kolik pesos ročně jste říkal?“\n\n„Přesně to jsem si myslel, Vaše Excelence. Tato struktura paralelní správy slouží jen k vysávání našich pokladen a posilování rozvratníků.“"
  spanish_new_world_events.4.a_1: "Přidělit jim severoamerickou pevninu."
  spanish_new_world_events.4.a_2: "Budou vládnout celé oblasti [GetStrategicRegion('region_gran_colombia').GetName]."
@@ -139,16 +139,16 @@
  spanish_new_world_events.4.c: "Ponechat současné správy na místě."
  modifier_maintained_local_rule: "Zachovaná místní vláda"
  modifier_reformed_captaincy_general: "Reformované generální kapitanství"
- set_up_new_spain_default_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] obdrží každý [Concept('concept_state','stát')] v Severní Americe vlastněný zemí [ROOT.GetCountry.GetAltAdjective('G')] nebo jejími [Concept('concept_subject','závislou zemí')]" # todo: CONCEPT CASE # todo: COUNTRY CASE
- set_up_new_grenada_default_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] obdrží každý [Concept('concept_state','stát')] v oblasti [GetStrategicRegion('region_gran_colombia').GetName] vlastněný zemí [ROOT.GetCountry.GetAltAdjective('G')] nebo jejími [Concept('concept_subject','závislou zemí')]" # todo: CONCEPT CASE # todo: COUNTRY CASE
- set_up_peru_default_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] obdrží každý [Concept('concept_state','stát')] v oblasti [GetStrategicRegion('region_andes').GetName] vlastněný zemí [ROOT.GetCountry.GetAltAdjective('G')] nebo jejími [Concept('concept_subject','závislou zemí')]" # todo: CONCEPT CASE # todo: COUNTRY CASE
- set_up_la_plata_default_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] obdrží každý [Concept('concept_state','stát')] v oblasti [GetStrategicRegion('region_la_plata').GetName] vlastněný zemí [ROOT.GetCountry.GetAltAdjective('G')] nebo jejími [Concept('concept_subject','závislou zemí')]" # todo: CONCEPT CASE # todo: COUNTRY CASE
- set_up_caribbean_default_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] obdrží každý [Concept('concept_state','stát')] v oblasti [GetStrategicRegion('region_caribbean').GetName] vlastněný zemí [ROOT.GetCountry.GetAltAdjective('G')] nebo jejími [Concept('concept_subject','závislou zemí')]" # todo: CONCEPT CASE # todo: COUNTRY CASE
- set_up_new_spain_pre_napoleonic_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] obdrží každý [Concept('concept_state','stát')] v oblasti [GetGeographicRegion('geographic_region_colonial_new_spain').GetName] vlastněný zemí [ROOT.GetCountry.GetAltAdjective('G')] nebo jejími [Concept('concept_subject','závislou zemí')]" # todo: CONCEPT CASE # todo: COUNTRY CASE
- set_up_new_grenada_pre_napoleonic_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] obdrží každý [Concept('concept_state','stát')] v oblasti [GetGeographicRegion('geographic_region_colonial_new_grenada').GetName] vlastněný zemí [ROOT.GetCountry.GetAltAdjective('G')] nebo jejími [Concept('concept_subject','závislou zemí')]" # todo: CONCEPT CASE # todo: COUNTRY CASE
- set_up_peru_pre_napoleonic_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] obdrží každý [Concept('concept_state','stát')] v oblasti [GetGeographicRegion('geographic_region_colonial_peru').GetName] vlastněný zemí [ROOT.GetCountry.GetAltAdjective('G')] nebo jejími [Concept('concept_subject','závislou zemí')]" # todo: CONCEPT CASE # todo: COUNTRY CASE
- set_up_la_plata_pre_napoleonic_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] obdrží každý [Concept('concept_state','stát')] v oblasti [GetGeographicRegion('geographic_region_colonial_la_plata').GetName] vlastněný zemí [ROOT.GetCountry.GetAltAdjective('G')] nebo jejími [Concept('concept_subject','závislou zemí')]" # todo: CONCEPT CASE # todo: COUNTRY CASE
- set_up_caribbean_pre_napoleonic_tt: "[SCOPE.sCountry('new_spain_scope').GetName] obdrží každý [Concept('concept_state','stát')] v oblasti [GetStrategicRegion('region_caribbean').GetName] vlastněný zemí [ROOT.GetCountry.GetAltAdjective('G')] nebo jejími [Concept('concept_subject','závislou zemí')]" # todo: CONCEPT CASE # todo: COUNTRY CASE
+ set_up_new_spain_default_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] obdrží každý [Concept('concept_state','stát')] v Severní Americe vlastněný zemí [ROOT.GetCountry.GetName] nebo jejími [Concept('concept_subject','$concept_subjects$')]"
+ set_up_new_grenada_default_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] obdrží každý [Concept('concept_state','stát')] v oblasti [GetStrategicRegion('region_gran_colombia').GetName] vlastněný zemí [ROOT.GetCountry.GetName] nebo jejími [Concept('concept_subject','$concept_subjects$')]"
+ set_up_peru_default_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] obdrží každý [Concept('concept_state','stát')] v oblasti [GetStrategicRegion('region_andes').GetName] vlastněný zemí [ROOT.GetCountry.GetName] nebo jejími [Concept('concept_subject','$concept_subjects$')]"
+ set_up_la_plata_default_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] obdrží každý [Concept('concept_state','stát')] v oblasti [GetStrategicRegion('region_la_plata').GetName] vlastněný zemí [ROOT.GetCountry.GetName] nebo jejími [Concept('concept_subject','$concept_subjects$')]"
+ set_up_caribbean_default_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] obdrží každý [Concept('concept_state','stát')] v oblasti [GetStrategicRegion('region_caribbean').GetName] vlastněný zemí [ROOT.GetCountry.GetName] nebo jejími [Concept('concept_subject','$concept_subjects$')]"
+ set_up_new_spain_pre_napoleonic_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] obdrží každý [Concept('concept_state','stát')] v oblasti [GetGeographicRegion('geographic_region_colonial_new_spain').GetName] vlastněný zemí [ROOT.GetCountry.GetName] nebo jejími [Concept('concept_subject','$concept_subjects$')]"
+ set_up_new_grenada_pre_napoleonic_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] obdrží každý [Concept('concept_state','stát')] v oblasti [GetGeographicRegion('geographic_region_colonial_new_grenada').GetName] vlastněný zemí [ROOT.GetCountry.GetName] nebo jejími [Concept('concept_subject','$concept_subjects$')]"
+ set_up_peru_pre_napoleonic_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] obdrží každý [Concept('concept_state','stát')] v oblasti [GetGeographicRegion('geographic_region_colonial_peru').GetName] vlastněný zemí [ROOT.GetCountry.GetName] nebo jejími [Concept('concept_subject','$concept_subjects$')]"
+ set_up_la_plata_pre_napoleonic_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] obdrží každý [Concept('concept_state','stát')] v oblasti [GetGeographicRegion('geographic_region_colonial_la_plata').GetName] vlastněný zemí [ROOT.GetCountry.GetName] nebo jejími [Concept('concept_subject','$concept_subjects$')]"
+ set_up_caribbean_pre_napoleonic_tt: "[SCOPE.sCountry('new_spain_scope').GetName] obdrží každý [Concept('concept_state','stát')] v oblasti [GetStrategicRegion('region_caribbean').GetName] vlastněný zemí [ROOT.GetCountry.GetName] nebo jejími [Concept('concept_subject','$concept_subjects$')]"
  spanish_new_world_events.5.t: "Uznání"
  spanish_new_world_events.5.d: "Jelikož právní postavení země [ROOT.GetCountry.GetName] již není zpochybňováno, její přítomnost na mezinárodní scéně se nepochybně posílí."
  spanish_new_world_events.5.f: "Ačkoli skutečná nezávislost byla vybojována na hrotech bajonetů statečnými bojovníky osvobozeneckých válek, právní svrchovanost země [ROOT.GetCountry.GetAdjectiveNoFormatting] měla být zajištěna díky práci vzdělanců, jako byl on.\n\nBylo to stejně slavné jako hrdinná obrana nebo velkolepý útok? Možná ne.\n\nNáměstí a plazy města [ROOT.GetCountry.GetCapital.GetCityHubName] pravděpodobně nikdy neponesou jeho jméno, přesto ho naplňovalo velké uspokojení vědomí, že v opředených dějinách země [ROOT.GetCountry.GetNameNoFormatting] zanechal stopu právě #italic on#!."
@@ -163,7 +163,7 @@
  reestablish_new_grenada_goal_tt: "Obnovili jsme #b Novou Granadu#!"
  reestablish_peru_goal_tt: "Obnovili jsme #b Peru#!"
  reestablish_la_plata_goal_tt: "Obnovili jsme #b Río de la Plata#!"
- je_reconquista_goal_tt: "Pokud tento [Concept('concept_journal_entry','záznam v deníku')] dokončíš před #v 1. lednem 1880#!, tento [Concept('concept_modifier','modifikátor')] bude #g trvalý#!" # todo: CONCEPT CASE
+ je_reconquista_goal_tt: "Pokud tento [Concept('concept_journal_entry','záznam v deníku')] dokončíš před #v 1. lednem 1880#!, tento [Concept('concept_modifier','modifikátor')] bude #g trvalý#!"
  new_world_colonies_cooldown: "V uplynulém #bold roce#! nebyla znovu zřízena žádná americká kolonie"
  button_reestablish_new_spain: "Obnovit Nové Španělsko"
  button_reestablish_new_spain_desc: "Nové Španělsko, první a možná nejdůležitější španělské místokrálovství, bylo založeno roku 1535 na troskách staré aztécké říše. Zahrnovalo všechna španělská území a nároky v Severní Americe a zároveň mělo jurisdikci nad Karibikem a španělskými územími v Asii."
@@ -180,19 +180,19 @@
  button_proclaim_independence_desc: "Měsíc nedbá na štěkot psů. Pokud světu ukážeme, že moc Nového světa převyšuje moc Starého, úsudek naší staré, zanedbávající mateřské země nebude mít žádný význam."
  modifier_a_show_of_strength: "Ukázka síly"
  je_hispanoamerica: "Hispanoamerika"
- je_hispanoamerica_reason: "Nebudeme plýtvat muži a zdroji v marném pokusu obnovit to, co kdysi bylo. Místo toho budou srdečnost a vzájemný prospěch určovat [ROOT.GetCountry.GetAdjective] vztah s jejími bývalými koloniemi. Nařídíme svým diplomatům, aby s našimi bývalými poddanými vypracovali [Concept('concept_treaty','smlouvy')] o obchodu a přátelství, čímž světu vyšleme mocné poselství o své velkorysosti.\n\n#b Formální uznání#!\nAčkoli bývalé kolonie země [ROOT.GetCountry.GetNameNoFormatting] v Amerikách získaly #italic de facto#! nezávislost po #b španělsko-amerických válkách za nezávislost#! na počátku 19. století, žádné #italic de jure#! uznání tohoto nového postavení nenásledovalo.\n\nDokud [ROOT.GetCountry.GetNameNoFormatting] formálně neuzná nezávislost svých bývalých kolonií pomocí [Concept('concept_article','článku')] #b Uznat nezávislost#! v rámci [Concept('concept_treaty','smlouvy')], zůstanou dvoustranné diplomatické vztahy #b vážně omezeny#!." # todo: CONCEPT CASE
+ je_hispanoamerica_reason: "Nebudeme plýtvat muži a zdroji v marném pokusu obnovit to, co kdysi bylo. Místo toho budou srdečnost a vzájemný prospěch určovat [ROOT.GetCountry.GetAdjective] vztah s jejími bývalými koloniemi. Nařídíme svým diplomatům, aby s našimi bývalými poddanými vypracovali [Concept('concept_treaty','$concept_treaties$')] o obchodu a přátelství, čímž světu vyšleme mocné poselství o své velkorysosti.\n\n#b Formální uznání#!\nAčkoli bývalé kolonie země [ROOT.GetCountry.GetNameNoFormatting] v Amerikách získaly #italic de facto#! nezávislost po #b španělsko-amerických válkách za nezávislost#! na počátku 19. století, žádné #italic de jure#! uznání tohoto nového postavení nenásledovalo.\n\nDokud [ROOT.GetCountry.GetNameNoFormatting] formálně neuzná nezávislost svých bývalých kolonií pomocí [Concept('concept_article','článku')] #b Uznat nezávislost#! v rámci [Concept('concept_treaty','smlouvy')], zůstanou dvoustranné diplomatické vztahy #b vážně omezeny#!." # todo: CONCEPT CASE
  modifier_hispanoamerica_reward: "Nanejvýš zvláštní vztah"
- je_hispanoamerica_improve_relations: "[ROOT.GetCountry.GetAdjective] [Concept('concept_relations','Vztahy')] se #b všemi bývalými [ROOT.GetCountry.GetAdjectiveNoFormatting] koloniemi#! se zlepší o #g 30#!" # todo: CONCEPT CASE
- je_hispanoamerica_improve_leverage: "Pokud jsme vůdcem [Concept('concept_power_bloc','mocenským blokem')], [ROOT.GetCountry.GetAltAdjective('I')] získá #positive_value 100#! [Concept('concept_power_bloc_leverage','páka')] ve #b všech bývalých [ROOT.GetCountry.GetAdjectiveNoFormatting] koloniích#!" # todo: CONCEPT CASE # todo: COUNTRY CASE
+ je_hispanoamerica_improve_relations: "[ROOT.GetCountry.GetAdjective] [Concept('concept_relations','vztahy')] se #b všemi bývalými [ROOT.GetCountry.GetAdjectiveNoFormatting] koloniemi#! se zlepší o #g 30#!"
+ je_hispanoamerica_improve_leverage: "Pokud jsme vůdcem [Concept('concept_power_bloc','mocenským blokem')], [ROOT.GetCountry.GetName] získá #positive_value 100#! [Concept('concept_power_bloc_leverage','páka')] ve #b všech bývalých [ROOT.GetCountry.GetAdjectiveNoFormatting] koloniích#!" # todo: CONCEPT CASE
  modifier_not_recognized_by_spain: "Nezávislost neuznána Španělskem"
  je_spanish_american_independence: "Stará metropole"
  je_spanish_american_independence_reason: "Ačkoli [ROOT.GetCountry.GetName] vypadá i jedná jako plně svrchovaný národ, naše postavení v očích světa zůstane navždy nejisté, dokud nám naši bývalí vládci odpírají uznání. Měli bychom usilovat o navázání dobrých vztahů s Madridem, nebo světu předložit tak mocnou tvář, že se nikdo neodváží zpochybnit naši legitimitu.\n\n#b Formální uznání#!\nAčkoli bývalé španělské kolonie v Amerikách získaly #italic de facto#! nezávislost po #b španělsko-amerických válkách za nezávislost#! na počátku 19. století, žádné #italic de jure#! uznání tohoto nového postavení nenásledovalo.\n\nDokud Španělsko formálně neuzná nezávislost svých bývalých kolonií pomocí [Concept('concept_article','článku')] #b Uznat nezávislost#! v rámci [Concept('concept_treaty','smlouvy')], zůstanou dvoustranné diplomatické vztahy #b vážně omezeny#!." # todo: CONCEPT CASE
  modifier_renewed_diplomatic_efforts: "Obnovené diplomatické úsilí"
- je_spanish_american_reconquista_tt: "Pokud bude Španělsko prosazovat myšlenku #b americké reconquisty#!, #b zostudí#! se v očích mezinárodního společenství a my tento [Concept('concept_modifier','modifikátor')] ztratíme" # todo: CONCEPT CASE
- je_spanish_american_optional_tt: "Pokud jsou naše [Concept('concept_relations','vztahy')] se zemí [SCOPE.sCountry('spain_scope').GetAltAdjective('G')] rovny #v 80#! nebo vyšší, zahájí se [SCOPE.sCountry('spain_scope').GetAdjectiveNoFormatting] [Concept('concept_mass_migration','hromadnou migrací')] do našeho národa" # todo: CONCEPT CASE # todo: COUNTRY CASE
- je_spanish_american_optional_tt_2: "Protože jsou naše [Concept('concept_relations','vztahy')] se zemí [SCOPE.sCountry('spain_scope').GetAltAdjective('G')] rovny #v 80#! nebo vyšší, zahájí se [SCOPE.sCountry('spain_scope').GetAdjectiveNoFormatting] [Concept('concept_mass_migration','hromadnou migrací')] do našeho národa" # todo: CONCEPT CASE # todo: COUNTRY CASE
+ je_spanish_american_reconquista_tt: "Pokud bude Španělsko prosazovat myšlenku #b americké reconquisty#!, #b zostudí#! se v očích mezinárodního společenství a my tento [Concept('concept_modifier','modifikátor')] ztratíme"
+ je_spanish_american_optional_tt: "Pokud jsou naše [Concept('concept_relations','vztahy')] se zemí [SCOPE.sCountry('spain_scope').GetName] rovny #v 80#! nebo vyšší, zahájí se [SCOPE.sCountry('spain_scope').GetAdjectiveNoFormatting] [Concept('concept_mass_migration','hromadnou migrací')] do našeho národa" # todo: CONCEPT CASE
+ je_spanish_american_optional_tt_2: "Protože jsou naše [Concept('concept_relations','vztahy')] se zemí [SCOPE.sCountry('spain_scope').GetName] rovny #v 80#! nebo vyšší, zahájí se [SCOPE.sCountry('spain_scope').GetAdjectiveNoFormatting] [Concept('concept_mass_migration','hromadnou migrací')] do našeho národa" # todo: CONCEPT CASE
  je_vernacular_policy: "Postavení lidového jazyka"
- je_vernacular_policy_reason: "Po staletí byly [Concept('concept_homeland','domoviny')] kultury [SCOPE.sCulture('official_culture_scope').GetName] domovem mnoha [ROOT.GetCountry.GetCustom('getRegionalLanguagesType')]. Někteří je považují za svébytné kultury a jazyky, jiní za nic víc než zkažené varianty pravé kultury [SCOPE.sCulture('official_culture_scope').GetName], a jejich rozšíření vyvolalo ve městě [ROOT.GetCountry.GetCapital.GetCityHubName] vášnivé diskuse o „otázce lidového jazyka“.\n\nZatímco někteří tvrdí, že národ nemůže doufat ve skutečné sjednocení, dokud nebude regionalismus vymýcen, jiní oponují argumenty, že [ROOT.GetCountry.GetName] nikdy nebyla a nikdy nemůže být ničím jiným než směsicí regionálních jazyků a identit, z nichž žádná není ze své podstaty nadřazena jiné." # todo: CONCEPT CASE
+ je_vernacular_policy_reason: "Po staletí byly [Concept('concept_homeland','$concept_homelands$')] kultury [SCOPE.sCulture('official_culture_scope').GetName] domovem mnoha [ROOT.GetCountry.GetCustom('getRegionalLanguagesType')]. Někteří je považují za svébytné kultury a jazyky, jiní za nic víc než zkažené varianty pravé kultury [SCOPE.sCulture('official_culture_scope').GetName], a jejich rozšíření vyvolalo ve městě [ROOT.GetCountry.GetCapital.GetCityHubName] vášnivé diskuse o „otázce lidového jazyka“.\n\nZatímco někteří tvrdí, že národ nemůže doufat ve skutečné sjednocení, dokud nebude regionalismus vymýcen, jiní oponují argumenty, že [ROOT.GetCountry.GetName] nikdy nebyla a nikdy nemůže být ničím jiným než směsicí regionálních jazyků a identit, z nichž žádná není ze své podstaty nadřazena jiné."
  je_vernacular_policy_accept_catalan_button: "Přijmout [GetCulture('catalan').GetCustom('CUL_ADJ_yy')] jazyk"
  je_vernacular_policy_accept_catalan_button_desc: "Formálně uznat [GetCulture('catalan').GetCustom('CUL_ADJ_yy')] jazyk jako přijímaný vernakulární jazyk ve správě, vzdělávání a veřejném životě."
  je_vernacular_policy_accept_aragonese_button: "Přijmout [GetCulture('aragonese').GetCustom('CUL_ADJ_yy')] jazyk"
@@ -225,13 +225,13 @@
  modifier_france_breton_integration_aid: "Ústupky bretonským regionalistům"
  concept_patois: "#italic patois#!"
  concept_regional_languages: "regionálními jazyky"
- vernacular_events.2.t: "V zemi [ROOT.GetCountry.GetAltAdjectiveNoFormatting('A')] se mluví jazykem [SCOPE.sCulture('official_culture_scope').GetNameNoFormatting]" # todo: COUNTRY CASE
+ vernacular_events.2.t: "V zemi [ROOT.GetCountry.GetNameNoFormatting] se mluví jazykem [SCOPE.sCulture('official_culture_scope').GetNameNoFormatting]"
  vernacular_events.2.d: "Asimilační úsilí přineslo ovoce a kdysi převládající [ROOT.GetCountry.GetCustom('getRegionalLanguagesType')] se nyní objevují už jen na rtech venkovských poustevníků a zarputilých starých bab."
  vernacular_events.2.f: "„Můj dědeček mi jednou vyprávěl o této vesnici, když jí procházel podobně jako já teď: aby sepsal každého muže, ženu, nemluvně i zvíře známé Bohu Všemohoucímu a státu. ‚Tehdy,‘ říkal, ‚byla zvířata i nemluvňata srozumitelnější než jejich starší.‘ Ha! Kolik se toho může změnit za jednu či dvě generace, dobrý pane. Kolik jen...\n\n„...“\n\n„Co?“\n\n„Srozu#italic mitelnější#!, pane.“"
  vernacular_events.2.a: "Jeden lid."
  vernacular_events.2.b: "Jeden jazyk."
  modifier_assimilation_reward: "Asimilační školská politika"
- vernacular_events.2.b_tt: "Následující modifikátor bude použit na všechny [Concept('concept_state','stát')] [Concept('concept_homeland','domoviny')] kultury [SCOPE.sCulture('official_culture_scope').GetName]:" # todo: CONCEPT CASE
+ vernacular_events.2.b_tt: "Následující modifikátor bude použit na všechny [Concept('concept_state','$concept_states$')] [Concept('concept_homeland', 'domovin')] kultury [SCOPE.sCulture('official_culture_scope').GetName]:"
  modifier_academie_francaise: "Rozšířená Académie Française"
  modifier_increased_centralization: "Centralizace byrokracie"
  modifier_royal_spanish_academy: "Rozšířená Real Academia Española"
@@ -245,7 +245,7 @@
  modifier_strength_through_diversity: "Decentralizovaná plukovní velitelství"
  modifier_empowered_regional_administrations: "Posílené regionální správy"
  subject_interactions.1.t: "Jmenování guvernéra"
- subject_interactions.1.d: "Existuje několik možných typů kandidátů, které můžeme zvážit pro čelo správy v zemi [SCOPE.sCountry('target_country').GetAltAdjective('A')]. Jaký typ vůdce hledáme?" # todo: COUNTRY CASE
+ subject_interactions.1.d: "Existuje několik možných typů kandidátů, které můžeme zvážit pro čelo správy v zemi [SCOPE.sCountry('target_country').GetName]. Jaký typ vůdce hledáme?"
  subject_interactions.1.f: "„Vládnutí je velmi křehká věc. Každý stát má své vlastní přesné tlaky, své lobby a své starosti. Naším úkolem je zajistit, aby byly všechny tyto problémy účinně smeteny ze stolu a už nikdy nezasahovaly do našich cílů.“"
  subject_interactions.1.a: "Úřadu se ujme pan [SCOPE.sCharacter('colonial_governor_plantation_scope').GetLastName], [GetCharacterTrait('special_character_colonial_plantation').GetName]."
  subject_interactions.1.b: "Zvolme [GetCharacterTrait('special_character_colonial_local').GetName]: pana [SCOPE.sCharacter('colonial_governor_local_scope').GetLastName]."
@@ -255,13 +255,13 @@
  subject_interactions.2.t: "Změna režimů"
  subject_interactions.2.d: "Je naším právem napravit problémy ve správě země [SCOPE.sCountry('target_country').GetName]. Otázkou je pouze to, jaké změny je třeba provést."
  subject_interactions.2.f: "Postavy se tísnily kolem stolu a vyměňovaly si spisy. Bylo to mimořádné - stáli tady, přeskupovali slova a společným přikývnutím a tahem pera měli změnit samotnou podstatu národa."
- subject_interactions.2.a: "Změníme vládnoucí strany v zemi [SCOPE.sCountry('target_country').GetAltAdjective('A')]." # todo: COUNTRY CASE
+ subject_interactions.2.a: "Změníme vládnoucí strany v zemi [SCOPE.sCountry('target_country').GetName]."
  subject_interactions.2.b: "Zavést vládu jedné strany."
- subject_interactions.2.c: "Demokratizovat zemi [SCOPE.sCountry('target_country').GetAltAdjective('A')]." # todo: COUNTRY CASE
+ subject_interactions.2.c: "Demokratizovat zemi [SCOPE.sCountry('target_country').GetName]."
  subject_interactions.2.dd: "Musíme reformovat trhy země [SCOPE.sCountry('target_country').GetName]."
  subject_interactions.2.e: "[SCOPE.sCountry('target_country').GetName] se stane předvojem revoluce!"
  subject_interactions.3.t: "Žádost o guvernéra"
- subject_interactions.3.d: "Politické zřízení města [ROOT.GetCountry.GetCapital.GetCityHubName] považuje vedení [ROOT.GetCountry.GetAdjective] záležitostí ze strany [SCOPE.sCharacter('relevant_character').GetPrimaryRoleTitle] [SCOPE.sCharacter('relevant_character').GetLastName] za nedostatečné a požádalo zemi [SCOPE.sCountry('relevant_country').GetAltAdjective('A')], aby jmenovala nového guvernéra lépe sladěného s jeho cíli." # todo: COUNTRY CASE
+ subject_interactions.3.d: "Politické zřízení města [ROOT.GetCountry.GetCapital.GetCityHubName] považuje vedení [ROOT.GetCountry.GetAdjective] záležitostí ze strany [SCOPE.sCharacter('relevant_character').GetPrimaryRoleTitle] [SCOPE.sCharacter('relevant_character').GetLastName] za nedostatečné a požádalo zemi [SCOPE.sCountry('relevant_country').GetName], aby jmenovala nového guvernéra lépe sladěného s jeho cíli."
  subject_interactions.3.f: "„Vládnutí je velmi křehká věc. Každý stát má své vlastní přesné tlaky, své lobby a své starosti. Naším úkolem je zajistit, aby byly všechny tyto problémy účinně smeteny ze stolu a už nikdy nezasahovaly do našich cílů.“"
  subject_interactions.3.a: "Úřadu se ujme pan [SCOPE.sCharacter('colonial_governor_plantation_scope').GetLastName], [GetCharacterTrait('special_character_colonial_plantation').GetName]."
  subject_interactions.3.b: "Zvolme [GetCharacterTrait('special_character_colonial_local').GetName]: pana [SCOPE.sCharacter('colonial_governor_local_scope').GetLastName]."
@@ -347,23 +347,23 @@
  dominican_events.5.f: "„Jsem jen pokorným nástrojem dominikánského lidu, pane. Každá duše na tom ostrově touží po laskavém doteku města [ROOT.GetCountry.GetCapital.GetCityHubName]. Zbývá jen drobná otázka mého postavení v nové správě.“"
  dominican_events.5.a: "Přijmout [SCOPE.sCountry('dominican_scope').GetAdjective] návrh."
  dominican_events.5.b: "Odmítnout je. To by znamenalo jen potíže."
- samana_lease_tt: "#bold Poloostrov Samaná#! bude pronajat jako [Concept('concept_treaty_port','smluvní přístav')] na #v 100#! let výměnou za roční platbu @money!#v 2000#!" # todo: CONCEPT CASE
+ samana_lease_tt: "#bold Poloostrov Samaná#! bude pronajat jako [Concept('concept_treaty_port','smluvní přístav')] na #v 100#! let výměnou za roční platbu @money!#v 2000#!"
  treaty_name_treaty_of_samana: "Smlouva ze Samaná"
  modifier_cibao_unrest: "Povstání v Cibau"
  je_la_trinitaria: "Jedna a nedělitelná"
  je_la_trinitaria_reason: "Spojení západní a východní části Hispanioly - [SCOPE.sState('haiti_state_scope').GetName] a [SCOPE.sState('santo_domingo_state_scope').GetName] - nebylo šťastné. Bylo nastoleno silou zbraní roku 1822 a zpočátku se těšilo určité omezené podpoře vybraných elit a Afrodominikánců. Politika země [ROOT.GetCountry.GetName], založená na vysokém zdanění, přerozdělování půdy a masových konfiskacích, spolu s protikatolickými praktikami a obecně špatnou správou však brzy obrátila většinu populace proti vládě z města [ROOT.GetCountry.GetCapital.GetCityHubName].\n\nPokud nebudou přijaty rozhodné kroky, tato nespokojenost se v blízké budoucnosti pravděpodobně promění v ozbrojené povstání."
- dominican_movement_tt: "#v $movement_dominican_national$#! má [Concept('concept_activism','aktivismus')] na úrovni $RADICALISM_AGITATING$ (#v 25 %#!) nebo vyšší" # todo: CONCEPT CASE
- dominican_movement_suppressed_tt: "Neexistuje žádné #v $movement_dominican_national$#! s [Concept('concept_activism','aktivismem hnutí')] na úrovni $RADICALISM_AGITATING$ (#v 25 %#!) nebo vyšší" # todo: CONCEPT CASE
+ dominican_movement_tt: "#v $movement_dominican_national$#! má [Concept('concept_activism','$concept_activism_short$')] na úrovni $RADICALISM_AGITATING$ (#v 25 %#!) nebo vyšší"
+ dominican_movement_suppressed_tt: "Neexistuje žádné #v $movement_dominican_national$#! s [Concept('concept_activism','$concept_activism_short$')] na úrovni $RADICALISM_AGITATING$ (#v 25 %#!) nebo vyšší"
  modifier_a_marriage_at_gunpoint: "Unie pod namířenou zbraní"
- dominican_secession_tt: "Ve státě [GetStateRegion('STATE_SANTO_DOMINGO').GetName] začala [Concept('concept_secession','separatista')] [Concept('concept_diplomatic_play','diplomatická hra')]" # todo: CONCEPT CASE
+ dominican_secession_tt: "Ve státě [GetStateRegion('STATE_SANTO_DOMINGO').GetName] začala [Concept('concept_secession', '$concept_secessionist$')] [Concept('concept_diplomatic_play','diplomatická hra')]"
  modifier_french_independence_payments_1_desc: "$je_haitian_debt$: $modifier_french_independence_payments_1$"
  modifier_french_independence_payments_2_desc: "$je_haitian_debt$: $modifier_french_independence_payments_2$"
  modifier_french_independence_payments_3_desc: "$je_haitian_debt$: $modifier_french_independence_payments_3$"
  modifier_french_independence_payments_4_desc: "$je_haitian_debt$: $modifier_french_independence_payments_4$"
- HISPANOAMERICA_RECOGNITION_COUNTRIES_HEADER: "Zbývající [Concept('concept_country','země')]:" # todo: CONCEPT CASE
+ HISPANOAMERICA_RECOGNITION_COUNTRIES_HEADER: "Zbývající [Concept('concept_country', '$concept_countries$')]:"
  HISPANOAMERICA_RECOGNITION_COUNTRIES_TT: "$HISPANOAMERICA_RECOGNITION_COUNTRIES_HEADER$\n[GetScriptedGui('je_hispanoamerica_not_recognized_countries_sgui').ExecuteTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
  HISPANOAMERICA_RECOGNITION_COUNTRIES_LIST_ENTRY: "[AddLocalizationIf(THIS.GetCountry.Exists, THIS.GetCountry.GetName)]"
- FORMER_SPANISH_COLONY_TT: "Je bývalá $SPA_ADJ_aa$ [Concept('concept_colony','kolonie')]" # todo: CONCEPT CASE
- VERNACULAR_POLICY_ASSIMILATION_STATES_HEADER: "Zbývající [Concept('concept_state','státy')]:" # todo: CONCEPT CASE
+ FORMER_SPANISH_COLONY_TT: "Je bývalá $SPA_ADJ_aa$ [Concept('concept_colony','kolonie')]"
+ VERNACULAR_POLICY_ASSIMILATION_STATES_HEADER: "Zbývající [Concept('concept_state', '$concept_states$')]:"
  VERNACULAR_POLICY_ASSIMILATION_STATES_TT: "$VERNACULAR_POLICY_ASSIMILATION_STATES_HEADER$\n[GetScriptedGui('je_vernacular_policy_assimilation_states_sgui').ExecuteTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
  VERNACULAR_POLICY_ASSIMILATION_STATES_LIST_ENTRY: "[AddLocalizationIf(THIS.GetState.IsValid, THIS.GetState.GetName)] ([THIS.ScriptValue('official_culture_fraction')|%1])"

@@ -1,0 +1,364 @@
+﻿l_polish:
+ je_spa_economic_regeneration_master_completion_tt_1: "Dokončili jsme #v 6#! #bold $je_group_spa_economic_regeneration$#! reforem" # todo: NEW TRANSLATION
+ je_spa_economic_regeneration_master_completion_tt_2: "Dokončili jsme #v 3#! #bold $je_group_spa_economic_regeneration$#! reforem" # todo: NEW TRANSLATION
+ je_spa_economic_regeneration_reduce_economic_objectives_button: "Snížit ekonomické cíle" # todo: NEW TRANSLATION
+ je_spa_economic_regeneration_reduce_economic_objectives_button_desc: "Cíle uvedené v počáteční zprávě se jeví jako mírně příliš ambiciózní. Předefinováním našich ekonomických záměrů nyní se můžeme vyhnout nejhorším následkům nesplnění našich slibů." # todo: NEW TRANSLATION
+ je_spa_economic_regeneration_reduce_economic_objectives_button_tt_1: "Dokončili jsme #v 3#! nebo méně #bold $je_group_spa_economic_regeneration$#! reforem" # todo: NEW TRANSLATION
+ je_spa_economic_regeneration_reduce_economic_objectives_button_tt_2: "Budeme muset dokončit pouze #v 3#! #bold $je_group_spa_economic_regeneration$#! reformy" # todo: NEW TRANSLATION
+ je_spa_economic_regeneration_reduce_economic_objectives_button_tt_3: "#bold účinky#! a #bold trvání#! odměn #bold $je_spa_economic_regeneration_master$#! hlavního [concept_journal_entry] budou #r zmenšeny na polovinu#!" # todo: NEW TRANSLATION
+ modifier_reduced_economic_objectives: "Snížené ekonomické cíle" # todo: NEW TRANSLATION
+ je_spa_economic_regeneration_cheat_button: "Použít kreativní účetnictví" # todo: NEW TRANSLATION
+ je_spa_economic_regeneration_cheat_button_desc: "Nároky zaopatřených písařů #italic Hacienda#! jsou v lepším případě ambiciózní a v horším případě bludné. Nepatrnou manipulací v našich účetních knihách můžeme prosadit politiku ekonomických reforem více odpovídající skutečným schopnostem [ROOT.GetCountry.GetName].\n\nMusíme jen zajistit, aby žádný kompromitující materiál nedopadl do rukou tisku." # todo: NEW TRANSLATION
+ je_spa_economic_regeneration_cheat_button_caught_tt: "Váš pokus o #bold manipulaci#! byl #r odhalen#! veřejností." # todo: NEW TRANSLATION
+ je_spa_economic_regeneration_cheat_button_success_tt: "Podmínky dokončení a #bold odměny#! tohoto [concept_journal_entry] jsou #g sníženy#!" # todo: NEW TRANSLATION
+ je_spa_economic_regeneration_cheat_button_conditions_tt: "Základní šance na úspěch je určena vaším [GetLawGroup('lawgroup_free_speech').GetName] [concept_law]:\n• #v 90%#! za to, že máte [GetLawType('law_outlawed_dissent').GetName] [concept_law]\n• #v 70%#! za to, že máte [GetLawType('law_censorship').GetName] [concept_law]\n• #v 40%#! za to, že máte [GetLawType('law_right_of_assembly').GetName] [concept_law]\n• #v 20%#! za to, že máte [GetLawType('law_protected_speech').GetName] [concept_law]\nTuto šanci dále zvyšuje:\n• #g +10%#! #bold za každou úroveň#! [GetInstitutionType('institution_home_affairs').GetName], kterou vlastníte" # todo: NEW TRANSLATION
+ modifier_bureaucratic_interference: "Byrokratické machinace" # todo: NEW TRANSLATION
+ je_spa_economic_regeneration_master_status_loc_blank: "" # todo: NEW TRANSLATION
+ je_spa_economic_regeneration_master_status_loc: "Dokončili jsme #variable [ROOT.GetCountry.MakeScope.Var('spa_economic_regeneration_var').GetValue]#!/#variable [ROOT.GetCountry.MakeScope.Var('spa_economic_regeneration_goal_var').GetValue]#! reforem" # todo: NEW TRANSLATION
+ je_group_spa_economic_regeneration: "Ekonomická regenerace" # todo: NEW TRANSLATION
+ modifier_failed_economic_regeneration: "Neúspěšná ekonomická regenerace" # todo: NEW TRANSLATION
+ je_spa_economic_regeneration_master_timeout_tt_1: "Pokud dokončíme #bold více než polovinu#! ze #variable [ROOT.GetCountry.MakeScope.Var('spa_economic_regeneration_goal_var').GetValue]#! plánovaných #bold $je_group_spa_economic_regeneration$#! reforem, tento trest bude #g zmírněn#!" # todo: NEW TRANSLATION
+ je_spa_economic_regeneration_master_timeout_tt_2: "Vzhledem k tomu, že jsme dokončili #bold více než polovinu#! ze #variable [ROOT.GetCountry.MakeScope.Var('spa_economic_regeneration_goal_var').GetValue]#! plánovaných #bold $je_group_spa_economic_regeneration$#! reforem, tento trest byl #g zmírněn#!" # todo: NEW TRANSLATION
+ je_spa_economic_regeneration_master: "Ekonomická regenerace" # todo: NEW TRANSLATION
+ je_spa_economic_regeneration_master_reason: "Už dávno jsou pryč časy, kdy byla [ROOT.GetCountry.GetName] synonymem bohatství. Staletí špatného řízení a neštěstí proměnila [ROOT.GetCountry.GetAdjectiveNoFormatting] ekonomiku ve stín své bývalé velikosti – neschopnou naplnit i ty nejzákladnější požadavky moderní doby.\n\nAle stejně jako Ježíš vzkřísil Lazara z hrobu, tak i dobří muži z Hacienda pozvednou [ROOT.GetCountry.GetAdjectiveNoFormatting] ekonomiku z jejího dlouhého spánku. Osud [ROOT.GetCountry.GetNameNoFormatting] není v rozpadlých říších minulosti, nýbrž v síle zítřka." # todo: NEW TRANSLATION
+ modifier_economic_regeneration_reward_greater: "Zázrak Mesety" # todo: NEW TRANSLATION
+ modifier_economic_regeneration_reward_lesser: "Komplexní ekonomická regenerace" # todo: NEW TRANSLATION
+ je_spa_economic_regeneration_land_reform: "Regenerace: Pozemková reforma" # todo: NEW TRANSLATION
+ je_spa_economic_regeneration_land_reform_reason: "Otázka pozemkové reformy je již dlouho na rtech [ROOT.GetCountry.GetAdjective] politiků; někteří usilují o prolomení moci velkých pozemkových elit na jihu, zatímco jiní se snaží tuto moc ještě upevnit.\n\nNastal čas, aby se vláda rozhodla a šla za svým kursu s neochvějným odhodláním." # todo: NEW TRANSLATION
+ je_spa_economic_regeneration_land_reform_tt_1: "Pokud se rozhodneme postavit #b na stranu#! [SCOPE.gsInterestGroup('landowners_scope').GetName]:" # todo: NEW TRANSLATION
+ je_spa_economic_regeneration_land_reform_tt_2: "Pokud se rozhodneme postavit #b proti#! [SCOPE.gsInterestGroup('landowners_scope').GetName]:" # todo: NEW TRANSLATION
+ modifier_entrepreneurial_latifundistas: "Podnikaví Latifundistas" # todo: NEW TRANSLATION
+ modifier_marginalized_latifundistas: "Marginalizovaní Latifundistas" # todo: NEW TRANSLATION
+ je_spa_economic_regeneration_modernise_agriculture: "Regenerace: Zemědělství" # todo: NEW TRANSLATION
+ je_spa_economic_regeneration_modernise_agriculture_reason: "Projít méně rozvinutými oblastmi Mesety Centrální je jako vstoupit do minulosti. Pluhy a nástroje tamních rolníků se příliš neliší od těch jejich předků; jejich výnosy jsou omezené praktikami, které jinde už byly dávno opuštěny.\n\nBez reforem nemůže tato půda doufat, že udrží prosperitu [ROOT.GetCountry.GetName]." # todo: NEW TRANSLATION
+ je_spa_economic_regeneration_modernise_agriculture_tt_1: "Následující platí již #b 24#! po sobě jdoucích měsíců (aktuálně #v [ROOT.GetCountry.MakeScope.Var('je_spa_economic_regeneration_modernise_agriculture_timer_var').GetValue]#!):" # todo: NEW TRANSLATION
+ je_spa_economic_regeneration_modernise_agriculture_tt_2: "Následující platí již #b 12#! po sobě jdoucích měsíců (aktuálně #v [ROOT.GetCountry.MakeScope.Var('je_spa_economic_regeneration_modernise_agriculture_timer_var').GetValue]#!):" # todo: NEW TRANSLATION
+ modifier_population_boom: "Demografický boom" # todo: NEW TRANSLATION
+ modifier_falling_birthrates: "Klesající porodnost" # todo: NEW TRANSLATION
+ je_spa_economic_regeneration_mining: "Regenerace: Těžba" # todo: NEW TRANSLATION
+ je_spa_economic_regeneration_mining_reason: "Iberský poloostrov skrývá velká, nevyužitá ložiska surovin, připravená k vytěžení.\n\nZatímco sektor je dnes stále nedostatečně rozvinutý, naši hlavní geologové trvají na tom, že země skrývá tolik bohatství, že může národ vynést do nové zlaté éry těžby—převyšující dokonce i dny římské Hispánie." # todo: NEW TRANSLATION
+ je_spa_economic_regeneration_mining_upgrade_state_trait_tt_1: "Budeme schopni #g zdvojnásobit#! účinky jednoho z #tooltippable;TOOLTIP:je_spa_economic_regeneration_mining_upgrade_iberian_state_traits_tt #bold těžebně souvisejících státních rysů#!#! v [GetGeographicRegion('region_iberia').GetName]" # todo: NEW TRANSLATION
+ je_spa_economic_regeneration_mining_upgrade_state_trait_tt_2: "Budeme schopni udělit #g pozitivní#! #b dočasný efekt#! k doplnění jednoho z #tooltippable;TOOLTIP:je_spa_economic_regeneration_mining_upgrade_iberian_state_traits_tt #bold těžebně souvisejících státních rysů#!#! v [GetGeographicRegion('region_iberia').GetName]" # todo: NEW TRANSLATION
+ je_spa_economic_regeneration_mining_upgrade_iberian_state_traits_tt: "\n• $STATE_BASQUE_COUNTRY$: #bold $state_trait_somorrostro_valley$#!\n• $STATE_ASTURIAS$: #bold $state_trait_cuencas_mineras$#!\n• $STATE_LOWER_ANDALUSIA$: #bold $state_trait_riotinto_basin$#!\n• $STATE_MURCIA$: #bold $state_trait_sierra_minera_de_cartagena$#!" # todo: NEW TRANSLATION
+ modifier_spa_mineral_boom: "Dobytí podzemí" # todo: NEW TRANSLATION
+ modifier_local_mining_boom: "Těžební boom" # todo: NEW TRANSLATION
+ modifier_mineral_investment_dearth: "Nedostatek investic do surovin" # todo: NEW TRANSLATION
+ je_spa_economic_regeneration_light_industry: "Regenerace: Průmysl" # todo: NEW TRANSLATION
+ je_spa_economic_regeneration_light_industry_reason: "Nikde není předmodernost [ROOT.GetCountry.GetName] cítit tolik jako v jejím výrobním sektoru. Stále převážně řemeslná, [ROOT.GetCountry.GetAdjectiveNoFormatting] manufaktura se obtížně prosazuje proti levnému zahraničnímu zboží, s výjimkou několika lokalit jako Barcelona.\n\nVytvořením silného průmyslového sektoru v klíčových místech v celé zemi můžeme zvrátit tok zahraniční hospodářské dominance." # todo: NEW TRANSLATION
+ modifier_industrial_investment_dearth: "Nespokojený výrobní sektor" # todo: NEW TRANSLATION
+ modifier_manufactoring_boom: "Výrobní boom" # todo: NEW TRANSLATION
+ every_state_following_requirements_tt: "Každý [concept_state], který splní požadavky, obdrží následující modifikátor:" # todo: NEW TRANSLATION
+ modifier_facilitated_manufacturing_boom: "Mistři továrny" # todo: NEW TRANSLATION
+ je_spa_economic_regeneration_railways: "Regenerace: Železnice" # todo: NEW TRANSLATION
+ je_spa_economic_regeneration_railways_reason: "Z mnoha velkých vynálezů této doby jen málo měří surový potenciál parního lokomotivu. [ROOT.GetCountry.GetAdjective] vnitrozemí zůstalo dlouho relativně izolované od zbytku země, obklopené horským terénem, špatnými silničními sítěmi a řekami, které jsou plně splavné jen částečně.\n\nKde selhal vůz a člun, tam zvítězí parní lokomotiva a každý kousek [ROOT.GetCountry.GetAdjectiveNoFormatting] půdy bude stejně spojen s širším trhem jako dnes přístav v Bilbau." # todo: NEW TRANSLATION
+ modifier_arteries_of_the_nation: "Hlavní tepny národa" # todo: NEW TRANSLATION
+ modifier_railway_magnates: "Magnáti železnic" # todo: NEW TRANSLATION
+ modifier_entrenchment_of_local_power: "Izolovaná mocenská centra" # todo: NEW TRANSLATION
+ je_spa_economic_regeneration_ultramar: "Regenerace: Koloniální" # todo: NEW TRANSLATION
+ je_spa_economic_regeneration_ultramar_reason: "Během tzv. Zlatého století proudilo mnoho bohatství [ROOT.GetCountry.GetName] z jejích kolonií. Zatímco dynamika kolonialismu se od té doby změnila, některé pravdy platí i dnes:\n\nUltramar skrývá velké bohatství a byli bychom hloupí, kdybychom ho nevyužili." # todo: NEW TRANSLATION
+ every_colonial_subject_following_requirements_tt: "Každý #b koloniální#! [concept_subject], který splní požadavky, obdrží následující modifikátor:" # todo: NEW TRANSLATION
+ modifier_integrated_colony: "Finančně integrovaná kolonie" # todo: NEW TRANSLATION
+ modifier_neglected_colony: "Zanedbané ministerstvo zámoří" # todo: NEW TRANSLATION
+ spa_economic_regeneration_events.1.t: "O obecném stavu státní pokladny" # todo: NEW TRANSLATION
+ spa_economic_regeneration_events.1.d: "Ministr financí nastínil ambiciózní reformní plán zaměřený na opětovné zařazení země mezi přední světové ekonomiky a zdůraznil nedostatečný stav [ROOT.GetCountry.GetAdjective] ekonomiky." # todo: NEW TRANSLATION
+ spa_economic_regeneration_events.1.f: "#bold Ekonomická zpráva o obecném stavu státní pokladny nejuctívanějšímu [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] z [ROOT.GetCountry.GetNameNoFormatting]#!\nNesmí být žádným překvapením pro vážené pány z [ROOT.GetCountry.GetCapital.GetCityHubName], že vlny průmyslových a obchodních inovací, které tak proměnily naše bratří za Pyrenejemi, dosud nedopadly ve větším rozsahu na břehy našich vlastních domén. Hacienda je toho názoru, že pokud nebudou okamžitě přijata opatření k nápravě tohoto rostoucího nerovnovážného stavu, náš národ se nebude ubírat směrem k civilizaci a prosperitě, ale spíše k barbarství a bídě. Následující zpráva bude ..." # todo: NEW TRANSLATION
+ spa_economic_regeneration_events.1.a: "Náročné, možná. Ale nutné." # todo: NEW TRANSLATION
+ spa_economic_regeneration_events.1.b: "V tuto chvíli nejsme v pozici tímto směrem postupovat." # todo: NEW TRANSLATION
+ spa_economic_regeneration_events.1.tt_1: "Program #bold Ekonomické regenerace#! vyžaduje řadu reforem, které mají být provedeny během #v 20#! let." # todo: NEW TRANSLATION
+ spa_economic_regeneration_events.1.tt_2: "Nesplnění cílů programu včas #r zhorší#! politickou stabilitu [ROOT.GetCountry.GetAdjective]" # todo: NEW TRANSLATION
+ spa_economic_regeneration_events.1.tt_3: "#bold $je_spa_economic_regeneration_master$#! [concept_journal_entry] bude prozatím #r deaktivován#!, ale bude #g znovu dostupný#! po #v 5#! letech." # todo: NEW TRANSLATION
+ modifier_economic_regeneration_postponed: "Ekonomická regenerace odložena" # todo: NEW TRANSLATION
+ spa_economic_regeneration_events.2.t: "Odhalena vládní manipulace" # todo: NEW TRANSLATION
+ spa_economic_regeneration_events.2.d: "Neohrožení reportéři pracující pro [SCOPE.GetRootScope.GetCountry.GetCapital.GetCityHubName] [SCOPE.GetRootScope.GetCountry.GetCustom('generic_newspaper_type')] odhalili naše pokusy o manipulaci a publikovali tvrdou zprávu obviňující vládu z neschopnosti a klamání." # todo: NEW TRANSLATION
+ spa_economic_regeneration_events.2.f: "Káva dnes chutnala lépe. Vždy chutnala lépe, když měl dobrou náladu. A dnes měl dobrou náladu. Nic, alespoň nic, co by stálo za zveřejnění, mu nedělalo větší radost než vidět současnou vládu klopýtat ze skandálu do skandálu. \"Pořádní hlupáci,\" zamumlal a znovu si usrkl kávy." # todo: NEW TRANSLATION
+ spa_economic_regeneration_events.2.a: "Ať jsou zatraceni. Potvrďme náš závazek k původním cílům." # todo: NEW TRANSLATION
+ spa_economic_regeneration_events.2.b: "Uspořádejte masivní tiskovou kampaň k diskreditaci jejich tvrzení." # todo: NEW TRANSLATION
+ spa_economic_regeneration_events.2.tt_1: "Původní cíle zůstanou nezměněny a tuto manipulaci již nebudeme moci zkusit znovu." # todo: NEW TRANSLATION
+ modifier_regeneration_target_manipulations_revealed: "Odhalena manipulace s regenerací" # todo: NEW TRANSLATION
+ modifier_divisive_press_campaign: "Rozdělující tisková kampaň" # todo: NEW TRANSLATION
+ modifier_press_campaign_expenses: "Financování vládě nakloněných novin" # todo: NEW TRANSLATION
+ spa_economic_regeneration_events.3.t: "Než se skřivan probudí" # todo: NEW TRANSLATION
+ spa_economic_regeneration_events.3.d: "Rozsáhlé [ROOT.GetCountry.GetAdjective] investice do těžby přinesly ovoce a doly země jsou čileji vyhlášené než kdy dříve. Jedna mimořádně úspěšná společnost nyní oslovila vládu s návrhem na zlepšení těžební infrastruktury v jednom z našich hlavních těžařských distriktů." # todo: NEW TRANSLATION
+ spa_economic_regeneration_events.3.f: "Dva ostré klepnutí na dveře přerušily horníkovu snídani. Ponechal ji příliš dlouho a foremanův chlapec obcházel vesnici. #italic Ten zatracený podliz#!. Políbil ženu na rozloučenou, hodil si přes rameno pytel a vykročil do chladného úsvitu. Ponurý průvod se vinul z dělnického městečka k jámě, ticho přerušovalo jen tupé klepání kovu o kov. Čekalo ho dvanáct hodin dřiny a tmy." # todo: NEW TRANSLATION
+ spa_economic_regeneration_events.3.a: "Nasměrujte je na bohaté žíly [GetGoods('iron').GetName] v [SCOPE.sState('basque_country_scope').GetStateRegion.GetName]." # todo: NEW TRANSLATION
+ spa_economic_regeneration_events.3.b: "Doly [GetGoods('sulfur').GetName] v [SCOPE.sState('lower_andalusia_scope').GetStateRegion.GetName] by mohly být rozšířeny." # todo: NEW TRANSLATION
+ spa_economic_regeneration_events.3.c: "Starší doly na [GetGoods('lead').GetName] v [SCOPE.sState('murcia_scope').GetStateRegion.GetName] potřebují modernizaci." # todo: NEW TRANSLATION
+ spa_economic_regeneration_events.3.e: "Co jiného než [GetGoods('coal').GetName], černé zlato [SCOPE.sState('asturias_scope').GetStateRegion.GetName]." # todo: NEW TRANSLATION
+ spa_economic_regeneration_events.4.t: "Hacienda požaduje akci" # todo: NEW TRANSLATION
+ spa_economic_regeneration_events.4.d: "S odkazem na ekonomický reformní program navržený před několika lety nyní ministr financí požaduje, abychom okamžitě zahájili jeho provádění, tvrdíce, že pokud vláda nebude jednat, [ROOT.GetCountry.GetName] skončí v prachu dějin." # todo: NEW TRANSLATION
+ spa_economic_regeneration_events.4.f: "$spa_economic_regeneration_events.1.f$" # todo: NEW TRANSLATION
+ spa_economic_regeneration_events.4.a: "Dobře, udělejte potřebná oznámení." # todo: NEW TRANSLATION
+ spa_economic_regeneration_events.4.b: "Stále nejsme v pozici tomu čelit." # todo: NEW TRANSLATION
+ spa_economic_regeneration_events.4.tt: "Jelikož jsme již jednou #bold odložili#! reformy, #r tresty#! za jejich opětovné odložení budou #r zdvojnásobeny#!." # todo: NEW TRANSLATION
+ spa_economic_regeneration_events.5.t: "Plus Ultra" # todo: NEW TRANSLATION
+ spa_economic_regeneration_events.5.d: "Po úspěšném provedení programu Regenerace vláda sklízí chválu i od svých nejzuřivějších odpůrců." # todo: NEW TRANSLATION
+ spa_economic_regeneration_events.5.f: "S klidnou rukou ministr otevřel velký účetní knihu a znovu přelétl očima čísla v ní. Do jaké míry jim lze věřit, si nebyl zcela jist, ale to mělo menší váhu proti veřejnému nadšení, které jistě vyvolají. Ne, pomyslel si, to zúčtování lze nechat na dětech zítřka. Dnes patří jemu." # todo: NEW TRANSLATION
+ spa_economic_regeneration_events.5.a: "[ROOT.GetCountry.GetName] hrdě kráčí do budoucnosti." # todo: NEW TRANSLATION
+ modifier_great_reformer: "Velký reformátor" # todo: NEW TRANSLATION
+ modifier_capable_reformer: "Schopný reformátor" # todo: NEW TRANSLATION
+ spa_economic_regeneration_events.6.t: "Úpadek" # todo: NEW TRANSLATION
+ spa_economic_regeneration_events.6.d: "Neschopnost vlády prosadit reformy Regenerace vyvolala veřejné pobouření. Rozzuřené davy se shromažďují před Haciendou a tisk prohlašuje selhání za národní ostudu." # todo: NEW TRANSLATION
+ spa_economic_regeneration_events.6.f: "Kolik ponížení musí tato země ještě snést? Nebyla snad události minulého století dostačující? Ministr odhrnul závěs a pohlédl do ulice, kde dav vytvořil figurínu v jeho podobě—hrubá postava visící na špatně uvázaném provazu. Její tvář nesla zkreslenou parodii stejného kníru, který ho každé ráno vítal, kývala sem a tam v rytmu šílených davu dole.\n\nOtočil se na svého komorníka. \"Pošli pro kočár, prosím. A pošli také vzkaz mému holiči, že ho dnes odpoledne musím vidět.\"" # todo: NEW TRANSLATION
+ spa_economic_regeneration_events.6.a: "Karty byly proti nám." # todo: NEW TRANSLATION
+ spanish_new_world_events.1.t: "Španělské hlavní území" # todo: NEW TRANSLATION
+ spanish_new_world_events.1.d: "Po obnovení pořádku doma musí [ROOT.GetCountry.GetName] rozhodnout o svém postoji vůči bývalým povstaleckým koloniím v Americe, jejichž nezávislost není uznána v [ROOT.GetCountry.GetCapital.GetCityHubName]." # todo: NEW TRANSLATION
+ spanish_new_world_events.1.f: "\"Pánové, je nezbytné, abychom následovali Anglii. Když si uvědomila, že Třináct kolonií jsou navždy ztraceny, navázala s nimi silné obchodní a kulturní vazby. Dodnes to zůstává jedním z jejích největších zdrojů síly.\n\nProč bychom takovou příležitost zahodili kvůli špatně pochopené slávě nebo pomstě? Zvláště když naše současná situace je, jaká je?\"" # todo: NEW TRANSLATION
+ spanish_new_world_events.1.a: "Staré impérium je pryč. Je čas čelit realitě naší situace." # todo: NEW TRANSLATION
+ spanish_new_world_events.1.b: "Zbabělci. Zavolejte válečného ministra, velezrada nebude odměněna." # todo: NEW TRANSLATION
+ spanish_new_world_events.1.tt_1: "To nás nasměruje na cestu #g normalizace#! s našimi bývalými koloniemi." # todo: NEW TRANSLATION
+ spanish_new_world_events.1.tt_2: "To nás uvede na #b obtížnou#! cestu #r dobytí#! zaměřenou na naše bývalé kolonie." # todo: NEW TRANSLATION
+ spanish_new_world_events.1.tt_3: "[SCOPE.sCountry('britain_scope').GetName] a [SCOPE.sCountry('usa_scope').GetName] budou pravděpodobně #b zasahovat proti nám#! v [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] zaměřených na naše bývalé kolonie, pokud s nimi neudržíme velmi dobré vztahy." # todo: NEW TRANSLATION
+ spanish_new_world_events.1.tt_4: "[ROOT.GetCountry.GetAdjective] [concept_relations] s [SCOPE.sCountry('britain_scope').GetName], [SCOPE.sCountry('usa_scope').GetName] a #b všemi bývalými [ROOT.GetCountry.GetAdjectiveNoFormatting] koloniemi#! se zhorší o #r 30#!" # todo: NEW TRANSLATION
+ spanish_new_world_events.1.tt_5: "Ve světových očích se #b znemožníme#! a všechny jihoamerické země ztratí #b $modifier_not_recognized_by_spain$#! [concept_modifier]" # todo: NEW TRANSLATION
+ modifier_spanish_infamy_reduction: "Diplomatické iniciativy Nového světa" # todo: NEW TRANSLATION
+ spanish_new_world_events.1.tt_3_event_insight: "#b $GBR$#! a #b $USA$#! budou pravděpodobně #b zasahovat proti nám#! v [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] zaměřených na naše bývalé kolonie, pokud s nimi neudržíme velmi dobré vztahy." # todo: NEW TRANSLATION
+ spanish_new_world_events.1.tt_4_event_insight: "[ROOT.GetCountry.GetAdjective] [concept_relations] s #b $GBR$#!, #b $USA$#! a #b všemi bývalými [ROOT.GetCountry.GetAdjectiveNoFormatting] koloniemi#! se zhorší o #r 30#!" # todo: NEW TRANSLATION
+ spanish_new_world_events.2.t: "Naše americká říše" # todo: NEW TRANSLATION
+ spanish_new_world_events.2.d: "Nemožné se stalo skutečností: nadvláda [ROOT.GetCountry.GetName] v Novém světě byla obnovena. K této významné události byly v hlavních městech obnovených Audiencias připraveny velké triumfy." # todo: NEW TRANSLATION
+ spanish_new_world_events.2.f: "Když zazněla trubka a [ROOT.GetCountry.GetAdjectiveNoFormatting] vlajka byla toho rána vztyčena nad Castillo de San Felipe de Barajas, srdce mladého vojína se naplnilo hrdostí. I v ospalé asturské vesnici jeho mládí vzpomínka na obranu Cartageny hrála velkou roli. Nyní [ROOT.GetCountry.GetAdjectiveNoFormatting] prapor opět hrdě vlál ze svých hradeb.\n\nS tichým slibem sobě i Nejvyššímu přísahal, že dokud bude v jeho těle dech, ten prapor nikdy nespadne." # todo: NEW TRANSLATION
+ spanish_new_world_events.2.a: "Naše říše se opět táhne od pobřeží k pobřeží." # todo: NEW TRANSLATION
+ spanish_new_world_events.2.b: "Všichni poznají sílu [ROOT.GetCountry.GetAdjective] legií." # todo: NEW TRANSLATION
+ modifier_our_american_empire_reward_military: "Víra v říši" # todo: NEW TRANSLATION
+ modifier_our_american_empire_reward_regular: "Španělské jezero" # todo: NEW TRANSLATION
+ spanish_new_world_events.3.t: "O pánéch a služebnících" # todo: NEW TRANSLATION
+ spanish_new_world_events.3.d: "Podpisem poslední smlouvy byly diplomatické vztahy [ROOT.GetCountry.GetAdjective] s jejich bývalými poddanými jasně definovány, kde převládly hlasy srdečnosti a vzájemného prospěchu nad hlasy odplaty." # todo: NEW TRANSLATION
+ spanish_new_world_events.3.f: "Když se poslední delegát rozloučil, mysl velvyslance se zamyslela nad praktickými věcmi. Před sto lety by takové setkání bylo mezi pánem a služebníkem; nyní se setkali jako rovní. Zůstal u této myšlenky, nejistý, zda to vzbuzuje hrdost či smutek. Jak by to posoudili jeho pradědečkové a jak jeho vnuci? A především – jak by to hodnotil Nejvyšší? Nebyly snad španělské domény dříve držené jako božím právem?\n\nNicméně, prozatím se soustředil jen na jednu jednoduchou myšlenku:" # todo: NEW TRANSLATION
+ spanish_new_world_events.3.a: "Matka a její děti, konečně usmířeny." # todo: NEW TRANSLATION
+ spanish_new_world_events.4.t: "Starý řád" # todo: NEW TRANSLATION
+ spanish_new_world_events.4.d: "S obnovením [SCOPE.sCountry('relevant_country_scope').GetName] se [ROOT.GetCountry.GetName] ocitá o krok blíže k obnovení své dávné nadvlády. Nyní musíme rozhodnout územní rozsah našeho [SCOPE.sCountry('relevant_country_scope').GetAdjectiveNoFormatting] subjektu." # todo: NEW TRANSLATION
+ spanish_new_world_events.4.d_caribbean: "S [SCOPE.sCountry('new_spain_scope').GetName] opět pod [ROOT.GetCountry.GetAdjective] kontrolou někteří koloniální úředníci argumentovali ve prospěch konsolidace našich karibských kolonií." # todo: NEW TRANSLATION
+ spanish_new_world_events.4.f: "Kolem něj poslové pobíhali komnatou, každý nesl papíry, které rozhodnou osud tisíců. Podepsal je všechny bez přestávky, každý dekret nesl váhu říše. Po léta byly prohledávány staré koloniální záznamy, konány rady a vyslyšeny hlasy ze všech koutů španělské domény.\n\nA nyní konečně přinesla práce své ovoce: [SCOPE.sCountry('relevant_country_scope').GetNameNoFormatting] se vrátil do náruče." # todo: NEW TRANSLATION
+ spanish_new_world_events.4.f_caribbean: "\"Promiňte, kolik to bylo pesos ročně, prosím?\"\n\n\"Přesně to jsem si myslel, pane. Tento systém paralelní správy jen vysává naše pokladny a posiluje vzbouřence.\"" # todo: NEW TRANSLATION
+ spanish_new_world_events.4.a_1: "Přidělte jim severoamerickou pevninu." # todo: NEW TRANSLATION
+ spanish_new_world_events.4.a_2: "Budou vládnout nad celým [GetStrategicRegion('region_gran_colombia').GetName]." # todo: NEW TRANSLATION
+ spanish_new_world_events.4.a_3: "Budou vládnout nad celým [GetStrategicRegion('region_andes').GetName]." # todo: NEW TRANSLATION
+ spanish_new_world_events.4.a_4: "Budou vládnout nad celým [GetStrategicRegion('region_la_plata').GetName]." # todo: NEW TRANSLATION
+ spanish_new_world_events.4.a_5: "[SCOPE.sCountry('relevant_country_scope').GetName] bude vládnout nad celým [GetStrategicRegion('region_caribbean').GetName]." # todo: NEW TRANSLATION
+ spanish_new_world_events.4.b_1: "Před-napoleonské hranice musí být plně obnoveny." # todo: NEW TRANSLATION
+ spanish_new_world_events.4.b_2: "Oblast [GetStrategicRegion('region_caribbean').GetName] by měla být spravována z [SCOPE.sCountry('new_spain_scope').GetName]." # todo: NEW TRANSLATION
+ spanish_new_world_events.4.c: "Nechat současnou správu v platnosti." # todo: NEW TRANSLATION
+ modifier_maintained_local_rule: "Udržovaná místní správa" # todo: NEW TRANSLATION
+ modifier_reformed_captaincy_general: "Reformovaná generální kapitánie" # todo: NEW TRANSLATION
+ set_up_new_spain_default_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] obdrží každé [concept_state] v Severní Americe vlastněné [ROOT.GetCountry.GetName] nebo jejími [Concept('concept_subject','$concept_subjects$')]" # todo: NEW TRANSLATION
+ set_up_new_grenada_default_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] obdrží každé [concept_state] v [GetStrategicRegion('region_gran_colombia').GetName] vlastněné [ROOT.GetCountry.GetName] nebo jejími [Concept('concept_subject','$concept_subjects$')]" # todo: NEW TRANSLATION
+ set_up_peru_default_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] obdrží každé [concept_state] v [GetStrategicRegion('region_andes').GetName] vlastněné [ROOT.GetCountry.GetName] nebo jejími [Concept('concept_subject','$concept_subjects$')]" # todo: NEW TRANSLATION
+ set_up_la_plata_default_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] obdrží každé [concept_state] v [GetStrategicRegion('region_la_plata').GetName] vlastněné [ROOT.GetCountry.GetName] nebo jejími [Concept('concept_subject','$concept_subjects$')]" # todo: NEW TRANSLATION
+ set_up_caribbean_default_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] obdrží každé [concept_state] v [GetStrategicRegion('region_caribbean').GetName] vlastněné [ROOT.GetCountry.GetName] nebo jejími [Concept('concept_subject','$concept_subjects$')]" # todo: NEW TRANSLATION
+ set_up_new_spain_pre_napoleonic_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] obdrží každé [concept_state] v [GetGeographicRegion('geographic_region_colonial_new_spain').GetName] vlastněné [ROOT.GetCountry.GetName] nebo jejími [Concept('concept_subject','$concept_subjects$')]" # todo: NEW TRANSLATION
+ set_up_new_grenada_pre_napoleonic_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] obdrží každé [concept_state] v [GetGeographicRegion('geographic_region_colonial_new_grenada').GetName] vlastněné [ROOT.GetCountry.GetName] nebo jejími [Concept('concept_subject','$concept_subjects$')]" # todo: NEW TRANSLATION
+ set_up_peru_pre_napoleonic_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] obdrží každé [concept_state] v [GetGeographicRegion('geographic_region_colonial_peru').GetName] vlastněné [ROOT.GetCountry.GetName] nebo jejími [Concept('concept_subject','$concept_subjects$')]" # todo: NEW TRANSLATION
+ set_up_la_plata_pre_napoleonic_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] obdrží každé [concept_state] v [GetGeographicRegion('geographic_region_colonial_la_plata').GetName] vlastněné [ROOT.GetCountry.GetName] nebo jejími [Concept('concept_subject','$concept_subjects$')]" # todo: NEW TRANSLATION
+ set_up_caribbean_pre_napoleonic_tt: "[SCOPE.sCountry('new_spain_scope').GetName] obdrží každé [concept_state] v [GetStrategicRegion('region_caribbean').GetName] vlastněné [ROOT.GetCountry.GetName] nebo jejími [Concept('concept_subject','$concept_subjects$')]" # todo: NEW TRANSLATION
+ spanish_new_world_events.5.t: "Uznání" # todo: NEW TRANSLATION
+ spanish_new_world_events.5.d: "S právním statusem [ROOT.GetCountry.GetName] už nezpochybněným se zvýší i její postavení na mezinárodní scéně." # todo: NEW TRANSLATION
+ spanish_new_world_events.5.f: "Ačkoliv byla skutečná nezávislost vybojována u bodu bajonetu statečnými bojovníky osvobozeneckých válek, byla to práce lidí píšících, jako on, která zajistila právní suverenitu [ROOT.GetCountry.GetAdjectiveNoFormatting].\n\nJe to snad stejně oslavné jako hrdinská obrana či vznešený útok? Možná ne.\n\nNáměstí a plenéry [ROOT.GetCountry.GetCapital.GetCityHubName] mu patrně nikdy neponesou jeho jméno, přesto měl velkou útěchu v tom, že v dějinách [ROOT.GetCountry.GetNameNoFormatting] #italic on#! zanechal stopu." # todo: NEW TRANSLATION
+ spanish_new_world_events.5.a: "Tento den vstoupí do [ROOT.GetCountry.GetAdjective] dějin." # todo: NEW TRANSLATION
+ je_spanish_new_world_dummy: "Vzpomínky na Indie" # todo: NEW TRANSLATION
+ je_spanish_new_world_dummy_reason: "N/A" # todo: NEW TRANSLATION
+ je_spanish_new_world_dummy_status_desc: "Osud Nového světa zatím není rozhodnut." # todo: NEW TRANSLATION
+ je_spanish_new_world_dummy_tt: "Budeme se muset rozhodnout mezi normalizací a zlepšením vzájemných vztahů s našimi bývalými americkými koloniemi, nebo potrestáním těchto národů jako rebelů, kterými jsou." # todo: NEW TRANSLATION
+ je_reconquista: "Reconquista" # todo: NEW TRANSLATION
+ je_reconquista_reason: "V našem okamžiku největší potřeby, kdy armády zatraceného maršála plály cestu naší zemí, nevěrní a radikálové nejnižšího ražení využili příležitosti a odvrhli lásku a ochranu své #italic madre patria#!.\n\nTito zbloudění blázni se musí naučit znát následky svých činů. Neboť [ROOT.GetCountry.GetName] je věčná a její nadvláda nad Novým světem bude obnovena." # todo: NEW TRANSLATION
+ reestablish_new_spain_goal_tt: "Znovu jsme obnovili #b Nové Španělsko#!" # todo: NEW TRANSLATION
+ reestablish_new_grenada_goal_tt: "Znovu jsme obnovili #b Novou Granadu#!" # todo: NEW TRANSLATION
+ reestablish_peru_goal_tt: "Znovu jsme obnovili #b Peru#!" # todo: NEW TRANSLATION
+ reestablish_la_plata_goal_tt: "Znovu jsme obnovili #b River Plate#!" # todo: NEW TRANSLATION
+ je_reconquista_goal_tt: "Pokud dokončíte tento [concept_journal_entry] před #v 1. ledna 1880#!, tento [concept_modifier] bude #g trvalý#!" # todo: NEW TRANSLATION
+ new_world_colonies_cooldown: "Neznovustanovil americkou kolonii za poslední #bold rok#!" # todo: NEW TRANSLATION
+ button_reestablish_new_spain: "Znovuobnovit Nové Španělsko" # todo: NEW TRANSLATION
+ button_reestablish_new_spain_desc: "První a možná nejdůležitější španělské viceroyalty, Nové Španělsko bylo založeno v roce 1535 na troskách staré Aztécké říše. Zahrnovalo všechna španělská území a nároky v Severní Americe a také mělo jurisdikci nad Karibikem a španělskými územími v Asii." # todo: NEW TRANSLATION
+ button_reestablish_new_grenada: "Znovuobnovit Novou Granadu" # todo: NEW TRANSLATION
+ button_reestablish_new_grenada_desc: "Vzniklá v roce 1717 z nepohodlí spravovat obrovské španělské země v karibské pánvi a severních Andách z Limy, viceroyalty Nová Granada zažila krátkou a problematickou historii. Postrádala bohatství Nového Španělska nebo Peru a její příjmy pocházely převážně z zemědělství a obchodu." # todo: NEW TRANSLATION
+ button_reestablish_peru: "Znovuobnovit Peru" # todo: NEW TRANSLATION
+ button_reestablish_peru_desc: "Druhé nejstarší z španělských viceroyalt, Peru kdysi zahrnovalo všechna španělská území v Jižní Americe a bylo svědkem všeho od pádu Inků až po revoluce počátku 19. století. Tradičně známé pro své bohatství na nerosty, v 19. století je jeho ekonomika převážně ovlivněna zemědělstvím." # todo: NEW TRANSLATION
+ reestablish_peru_tt: "temp" # todo: NEW TRANSLATION
+ button_reestablish_la_plata: "Znovuobnovit River Plate" # todo: NEW TRANSLATION
+ button_reestablish_la_plata_desc: "Založená v roce 1776, Viceroyalty River Plate byla poslední svého druhu před zhroucením španělské autority v Novém světě. Rozprostírala se od bohatých zemědělských oblastí ústí Río de la Plata až po proslulé stříbrné doly Potosí a soustřeďovala některé z největších bohatství Nového světa." # todo: NEW TRANSLATION
+ button_reestablish_caribbean: "Reorganizovat Karibik" # todo: NEW TRANSLATION
+ button_reestablish_caribbean_desc: "Španělský Karibik byl místem, kde Španělsko první přistálo před čtyřmi stoletími, a právě zde španělská vláda přetrvala i po pádu pevniny.\n\nS obnovenou kontrolou nad pevninou musíme rozhodnout o osudu našich karibských správ." # todo: NEW TRANSLATION
+ button_proclaim_independence: "Ignorovat Španělsko" # todo: NEW TRANSLATION
+ button_proclaim_independence_desc: "Měsíc neposlouchá štěkání psů. Pokud světu ukážeme, že síla Nového světa převyšuje tu Stará, soudy naší staré, zanedbávající matky pro nás nebudou mít význam." # todo: NEW TRANSLATION
+ modifier_a_show_of_strength: "Ukázka síly" # todo: NEW TRANSLATION
+ je_hispanoamerica: "Hispanoamerica" # todo: NEW TRANSLATION
+ je_hispanoamerica_reason: "Neztrácíme lidi ani prostředky v marném pokusu obnovit to, co kdysi bylo. Místo toho budou hlásány slova srdečnosti a vzájemného prospěchu v našich vztazích s bývalými koloniemi. Naše diplomacie bude vypracovávat [Concept('concept_treaty','$concept_treaties$')] Smlouvy o obchodu a přátelství s našimi bývalými poddanými, vysílajíc světu mocný signál naší velkorysosti.\n\n#b Formální uznání#!\nZatímco bývalé kolonie [ROOT.GetCountry.GetNameNoFormatting] v Americe dosáhly #italic de facto#! nezávislosti po #b Španělsko-amerických válkách za nezávislost#! na počátku 19. století, nedošlo k #italic de jure#! uznání této nové situace.\n\nDokud [ROOT.GetCountry.GetNameNoFormatting] formálně neuzná nezávislost svých bývalých kolonií pomocí #b článku Smlouvy o uznání nezávislosti#! bilateralní diplomatické vztahy zůstanou #b výrazně omezeny#!." # todo: NEW TRANSLATION
+ modifier_hispanoamerica_reward: "Zvláštní vztah" # todo: NEW TRANSLATION
+ je_hispanoamerica_improve_relations: "[ROOT.GetCountry.GetAdjective] [concept_relations] se #b všemi bývalými [ROOT.GetCountry.GetAdjectiveNoFormatting] koloniemi#! se zlepší o #g 30#!" # todo: NEW TRANSLATION
+ je_hispanoamerica_improve_leverage: "Pokud jsme vůdcem [concept_power_bloc], [ROOT.GetCountry.GetName] získá #positive_value 100#! [concept_power_bloc_leverage] ve #b všech bývalých [ROOT.GetCountry.GetAdjectiveNoFormatting] koloniích#!" # todo: NEW TRANSLATION
+ modifier_not_recognized_by_spain: "Nezávislost neuznána Španělskem" # todo: NEW TRANSLATION
+ je_spanish_american_independence: "Stará metropole" # todo: NEW TRANSLATION
+ je_spanish_american_independence_reason: "Ačkoliv [ROOT.GetCountry.GetName] vypadá a jedná jako plně suverénní stát, naše postavení ve světě zůstane nejisté, dokud naši bývalí páni neudělí uznání. Měli bychom usilovat o dobré vztahy s Madridem, nebo se tak předvést světu, že nikdo nebude zpochybňovat naši legitimitu.\n\n#b Formální uznání#!\nZatímco bývalé kolonie Španělska v Americe dosáhly #italic de facto#! nezávislosti po #b Španělsko-amerických válkách za nezávislost#!, nedošlo k #italic de jure#! uznání této nové situace.\n\nDokud Španělsko formálně neuzná nezávislost svých bývalých kolonií pomocí #b článku Smlouvy o uznání nezávislosti#!, bilaterální diplomatické vztahy zůstanou #b výrazně omezeny#!." # todo: NEW TRANSLATION
+ modifier_renewed_diplomatic_efforts: "Obnovené diplomatické snahy" # todo: NEW TRANSLATION
+ je_spanish_american_reconquista_tt: "Pokud by Španělsko sledovalo myšlenku #b Americké Reconquisty#!, znemožnilo by se #b ve světových očích#! a my bychom ztratili tento [concept_modifier]" # todo: NEW TRANSLATION
+ je_spanish_american_optional_tt: "Pokud naše [concept_relations] s [SCOPE.sCountry('spain_scope').GetName] budou rovny nebo vyšší než #v 80#!, začne #b [SCOPE.sCountry('spain_scope').GetAdjectiveNoFormatting]![concept_mass_migration] do naší země" # todo: NEW TRANSLATION
+ je_spanish_american_optional_tt_2: "Vzhledem k tomu, že naše [concept_relations] s [SCOPE.sCountry('spain_scope').GetName] jsou rovny nebo vyšší než #v 80#!, začne [SCOPE.sCountry('spain_scope').GetAdjectiveNoFormatting] [concept_mass_migration] do naší země" # todo: NEW TRANSLATION
+ je_vernacular_policy: "Postavení nářečí" # todo: NEW TRANSLATION
+ je_vernacular_policy_reason: "Po staletí byly [SCOPE.sCulture('official_culture_scope').GetName] [Concept('concept_homeland','$concept_homelands$')] domovem mnoha [ROOT.GetCountry.GetCustom('getRegionalLanguagesType')]. Někteří je považují za samostatné kultury a jazyky, jiní za pouhé znetvořené varianty pravého [SCOPE.sCulture('official_culture_scope').GetName], a jejich rozšíření vyvolalo v [ROOT.GetCountry.GetCapital.GetCityHubName] tvrdé diskuse o otázce 'vernacular'.\n\nNěkteří tvrdí, že národ nemůže být skutečně jednotný, dokud regionalismus nebude vytlačen, jiní oponují, že [ROOT.GetCountry.GetName] nikdy nebyl a nikdy nebude ničím jiným než směsicí regionálních řečí a identit, z nichž žádná není vrozeně nadřazena jiné." # todo: NEW TRANSLATION
+ je_vernacular_policy_accept_catalan_button: "Uznat [GetCulture('catalan').GetName]" # todo: NEW TRANSLATION
+ je_vernacular_policy_accept_catalan_button_desc: "Formálně uznat [GetCulture('catalan').GetName] jako přijatý nářeční jazyk v administraci, vzdělávání a veřejném životě." # todo: NEW TRANSLATION
+ je_vernacular_policy_accept_aragonese_button: "Uznat [GetCulture('aragonese').GetName]" # todo: NEW TRANSLATION
+ je_vernacular_policy_accept_aragonese_button_desc: "Formálně uznat [GetCulture('aragonese').GetName] jako přijatý nářeční jazyk v administraci, vzdělávání a veřejném životě." # todo: NEW TRANSLATION
+ je_vernacular_policy_accept_asturleonese_button: "Uznat [GetCulture('asturleonese').GetName]" # todo: NEW TRANSLATION
+ je_vernacular_policy_accept_asturleonese_button_desc: "Formálně uznat [GetCulture('asturleonese').GetName] jako přijatý nářeční jazyk v administraci, vzdělávání a veřejném životě." # todo: NEW TRANSLATION
+ je_vernacular_policy_accept_galician_button: "Uznat [GetCulture('galician').GetName]" # todo: NEW TRANSLATION
+ je_vernacular_policy_accept_galician_button_desc: "Formálně uznat [GetCulture('galician').GetName] jako přijatý nářeční jazyk v administraci, vzdělávání a veřejném životě." # todo: NEW TRANSLATION
+ je_vernacular_policy_accept_basque_button: "Uznat [GetCulture('basque').GetName]" # todo: NEW TRANSLATION
+ je_vernacular_policy_accept_basque_button_desc: "Formálně uznat [GetCulture('basque').GetName] jako přijatý nářeční jazyk v administraci, vzdělávání a veřejném životě." # todo: NEW TRANSLATION
+ je_vernacular_policy_accept_francoprovencal_button: "Uznat [GetCulture('francoprovencal').GetName]" # todo: NEW TRANSLATION
+ je_vernacular_policy_accept_francoprovencal_button_desc: "Formálně uznat [GetCulture('francoprovencal').GetName] jako přijatý nářeční jazyk v administraci, vzdělávání a veřejném životě." # todo: NEW TRANSLATION
+ je_vernacular_policy_accept_breton_button: "Uznat [GetCulture('breton').GetName]" # todo: NEW TRANSLATION
+ je_vernacular_policy_accept_breton_button_desc: "Formálně uznat [GetCulture('breton').GetName] jako přijatý nářeční jazyk v administraci, vzdělávání a veřejném životě." # todo: NEW TRANSLATION
+ je_vernacular_policy_accept_occitan_button: "Uznat [GetCulture('occitan').GetName]" # todo: NEW TRANSLATION
+ je_vernacular_policy_accept_occitan_button_desc: "Formálně uznat [GetCulture('occitan').GetName] jako přijatý nářeční jazyk v administraci, vzdělávání a veřejném životě." # todo: NEW TRANSLATION
+ je_vernacular_policy_accept_wallonian_button: "Uznat [GetCulture('wallonian').GetName]" # todo: NEW TRANSLATION
+ je_vernacular_policy_accept_wallonian_button_desc: "Formálně uznat [GetCulture('wallonian').GetName] jako přijatý nářeční jazyk v administraci, vzdělávání a veřejném životě." # todo: NEW TRANSLATION
+ vernacular_events.1.t: "O postavení regionálních jazyků" # todo: NEW TRANSLATION
+ vernacular_events.1.d: "V zastání univerzalizace jazyka [SCOPE.sCulture('official_culture_scope').GetName] prominentní politikové a intelektuálové prosazují tvrdá asimilační opatření namířená proti mluvčím regionálních jazyků [ROOT.GetCountry.GetName]." # todo: NEW TRANSLATION
+ vernacular_events.1.f: "Ačkoliv by bylo skutečně osvěžující, kdyby existoval jediný globální jazyk, to není politicky proveditelné, ale jediný jazyk uvnitř státu by byl realistickým projektem.\n\n— Henri Grégoire, #italic Zpráva o nutnosti a prostředcích k zničení patois a universalizaci používání francouzského jazyka#!" # todo: NEW TRANSLATION
+ vernacular_events.1.a: "Mluv [SCOPE.sCulture('official_culture_scope').GetName], buď čistý." # todo: NEW TRANSLATION
+ vernacular_events.1.b: "Ne. Usilujme o udělení spoluzákonného statusu [ROOT.GetCountry.GetCustom('getRegionalLanguagesType')]." # todo: NEW TRANSLATION
+ vernacular_events.1.c: "Pokračovat v dosavadní politice, není třeba rozhýbávat loď." # todo: NEW TRANSLATION
+ vernacular_events.1.a_tt: "Budeme se snažit #r asimilovat#! mluvčí [ROOT.GetCountry.GetCustom('getRegionalLanguagesType')] a učinit z nich řádné [SCOPE.sCulture('official_culture_scope').GetCustom('getPluralDemonym')]. To nám poskytne #b silné bonusy#! k #b centralizaci#! a #b homogenizaci#! našeho státu" # todo: NEW TRANSLATION
+ vernacular_events.1.b_tt: "Budeme se snažit #g integrovat#! mluvčí [ROOT.GetCountry.GetCustom('getRegionalLanguagesType')], což nám přinese další [concept_primary_cultures]. To bude vyžadovat #b vysoké kulturní#! [concept_acceptance] a splnění různých #b regionálních agend#!" # todo: NEW TRANSLATION
+ vernacular_events.1.c_tt: "#b $je_vernacular_policy$#! [concept_journal_entry] bude #r navždy zrušen#!" # todo: NEW TRANSLATION
+ vernacular_events.2.t: "V [ROOT.GetCountry.GetNameNoFormatting] se mluví [SCOPE.sCulture('official_culture_scope').GetNameNoFormatting]" # todo: NEW TRANSLATION
+ vernacular_events.2.d: "Asimilační snahy přinesly ovoce a kdysi rozšířená [ROOT.GetCountry.GetCustom('getRegionalLanguagesType')] jsou nyní vyslovovány jen venkovskými poustevníky a tvrdohlavými starými bábičkami." # todo: NEW TRANSLATION
+ vernacular_events.2.f: "\"Můj dědeček mi kdysi vyprávěl o této vesnici, projížděl ji stejně jako já teď: aby zapsal každého muže, ženu, dítě i zvíře známé Všemohoucímu a státu. 'Dřív', říkal. 'zvířata a děti byly snáze pochopitelná než jejich staří.' Ha! Kolik se může změnit za jednu či dvě generace, pane. Jak moc...\n\n\"...\"\n\n\"Co?\"\n\n\"Compre#italic hensible#!, pane.\"" # todo: NEW TRANSLATION
+ vernacular_events.2.a: "Jeden národ." # todo: NEW TRANSLATION
+ vernacular_events.2.b: "Jeden jazyk." # todo: NEW TRANSLATION
+ modifier_assimilation_reward: "Asimilační školní politiky" # todo: NEW TRANSLATION
+ vernacular_events.2.b_tt: "Následující modifikátor bude aplikován na všechny [SCOPE.sCulture('official_culture_scope').GetName] [concept_homeland] [Concept('concept_state','$concept_states$')]:" # todo: NEW TRANSLATION
+ modifier_academie_francaise: "Rozšířená Académie Française" # todo: NEW TRANSLATION
+ modifier_increased_centralization: "Centralizace byrokracie" # todo: NEW TRANSLATION
+ modifier_royal_spanish_academy: "Rozšířená Real Academia Española" # todo: NEW TRANSLATION
+ modifier_spanish_academy: "Rozšířená Academia Española" # todo: NEW TRANSLATION
+ vernacular_events.3.t: "Říše mnoha jazyků" # todo: NEW TRANSLATION
+ vernacular_events.3.d: "Se statutem regionálních jazyků [ROOT.GetCountry.GetName] nyní uznaným a právně chráněným se dlouho nevyrovnaný vztah země k regionálním identitám konečně vyřešil." # todo: NEW TRANSLATION
+ vernacular_events.3.f: "Zpracovávání místních petic nikdy nebylo snadné, ale po zavedení nových předpisů to bylo noční můrou. Každý vesničan s haléřem posílal své podněty; kakofonie slov a výrazů, která žádný pán z [ROOT.GetCountry.GetCapital.GetCityHubName] nikdy nevysloví!\n\n\"Ne,\" pomyslel si a zavrtěl hlavou. V dobrých starých dobách by se tito lidé nikdy neodvážili zapojit do státního aparátu." # todo: NEW TRANSLATION
+ vernacular_events.3.a: "V rozmanitosti jednota." # todo: NEW TRANSLATION
+ vernacular_events.3.b: "V jednotě síla." # todo: NEW TRANSLATION
+ modifier_cultural_dynamism: "Kulturní dynamika" # todo: NEW TRANSLATION
+ modifier_strength_through_diversity: "Decentralizované velení regimentů" # todo: NEW TRANSLATION
+ modifier_empowered_regional_administrations: "Posílené regionální správy" # todo: NEW TRANSLATION
+ subject_interactions.1.t: "Jmenování guvernéra" # todo: NEW TRANSLATION
+ subject_interactions.1.d: "Existuje několik typů kandidátů, které můžeme zvážit pro hlavu správy v [SCOPE.sCountry('target_country').GetName]. Jaký typ vůdce hledáme?" # todo: NEW TRANSLATION
+ subject_interactions.1.f: "\"Správa věcí veřejných je velmi jemná záležitost. Každý stát má své vlastní tlaky, své lobby a své obavy. Naší prací je zajistit, aby všechny tyto otázky byly efektivně odstraněny z desky, aby se nikdy znovu nepostavily na odpor našim záměrům.\"" # todo: NEW TRANSLATION
+ subject_interactions.1.a: "Pan [SCOPE.sCharacter('colonial_governor_plantation_scope').GetLastName], [GetCharacterTrait('special_character_colonial_plantation').GetName], převezme vedení." # todo: NEW TRANSLATION
+ subject_interactions.1.b: "Zvolme [GetCharacterTrait('special_character_colonial_local').GetName]: pana [SCOPE.sCharacter('colonial_governor_local_scope').GetLastName]." # todo: NEW TRANSLATION
+ subject_interactions.1.c: "Udělíme úřad panu [SCOPE.sCharacter('colonial_governor_extraction_scope').GetLastName], [GetCharacterTrait('special_character_colonial_extraction').GetName]." # todo: NEW TRANSLATION
+ subject_interactions.1.e: "Pan [SCOPE.sCharacter('colonial_governor_business_scope').GetLastName], [GetCharacterTrait('special_character_colonial_business').GetName], je nejlepší volba." # todo: NEW TRANSLATION
+ subject_interactions.1.g: "[GetCharacterTrait('special_character_colonial_military').GetName] [SCOPE.sCharacter('colonial_governor_military_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('colonial_governor_military_scope').GetLastName] zajistí stabilitu." # todo: NEW TRANSLATION
+ subject_interactions.2.t: "Změna režimů" # todo: NEW TRANSLATION
+ subject_interactions.2.d: "Máme právo napravit problémy ve vládě [SCOPE.sCountry('target_country').GetName]. Otázkou zůstává, jakého typu změny jsou potřeba." # todo: NEW TRANSLATION
+ subject_interactions.2.f: "Postavy se shlukly kolem stolu a vyměňovaly spisy. Bylo to úžasné—tady byly, přehazovaly slova a kolektivním přikývnutím a pohybem pera měnily samotné jádro národa." # todo: NEW TRANSLATION
+ subject_interactions.2.a: "Změníme vládnoucí strany v [SCOPE.sCountry('target_country').GetName]." # todo: NEW TRANSLATION
+ subject_interactions.2.b: "Zavést jednopartijní vládu." # todo: NEW TRANSLATION
+ subject_interactions.2.c: "Zdemokratizovat [SCOPE.sCountry('target_country').GetName]." # todo: NEW TRANSLATION
+ subject_interactions.2.dd: "Musíme reformovat trhy [SCOPE.sCountry('target_country').GetName]." # todo: NEW TRANSLATION
+ subject_interactions.2.e: "[SCOPE.sCountry('target_country').GetName] se stane předvojem revoluce!" # todo: NEW TRANSLATION
+ subject_interactions.3.t: "Žádost o guvernéra" # todo: NEW TRANSLATION
+ subject_interactions.3.d: "Politická elita v [ROOT.GetCountry.GetCapital.GetCityHubName] považuje jednání [SCOPE.sCharacter('relevant_character').GetPrimaryRoleTitle] [SCOPE.sCharacter('relevant_character').GetLastName] za neadekvátní a požádala, aby [SCOPE.sCountry('relevant_country').GetName] jmenovala nového guvernéra více sladěného s jejím programem." # todo: NEW TRANSLATION
+ subject_interactions.3.f: "\"Správa věcí veřejných je velmi jemná záležitost. Každý stát má své vlastní tlaky, své lobby a své obavy. Naší prací je zajistit, aby všechny tyto otázky byly efektivně odstraněny z desky, aby se nikdy znovu nepostavily na odpor našim záměrům.\"" # todo: NEW TRANSLATION
+ subject_interactions.3.a: "Pan [SCOPE.sCharacter('colonial_governor_plantation_scope').GetLastName], [GetCharacterTrait('special_character_colonial_plantation').GetName], převezme vedení." # todo: NEW TRANSLATION
+ subject_interactions.3.b: "Zvolme [GetCharacterTrait('special_character_colonial_local').GetName]: pana [SCOPE.sCharacter('colonial_governor_local_scope').GetLastName]." # todo: NEW TRANSLATION
+ subject_interactions.3.c: "Udělíme úřad panu [SCOPE.sCharacter('colonial_governor_extraction_scope').GetLastName], [GetCharacterTrait('special_character_colonial_extraction').GetName]." # todo: NEW TRANSLATION
+ subject_interactions.3.e: "Pan [SCOPE.sCharacter('colonial_governor_business_scope').GetLastName], [GetCharacterTrait('special_character_colonial_business').GetName], je nejlepší volba." # todo: NEW TRANSLATION
+ subject_interactions.3.g: "[GetCharacterTrait('special_character_colonial_military').GetName] [SCOPE.sCharacter('colonial_governor_military_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('colonial_governor_military_scope').GetLastName] zajistí stabilitu." # todo: NEW TRANSLATION
+ modifier_requested_colonial_governor: "Požadovaný koloniální guvernér" # todo: NEW TRANSLATION
+ modifier_appointed_favourite: "Jmenován preferovaný kandidát" # todo: NEW TRANSLATION
+ special_character_colonial_plantation: "Vlivný plantážník" # todo: NEW TRANSLATION
+ special_character_colonial_plantation_desc: "Tato postava je významný koloniální plantážník, úzce spjatý se zemědělskou elitou země." # todo: NEW TRANSLATION
+ special_character_colonial_local: "Místní nominant" # todo: NEW TRANSLATION
+ special_character_colonial_local_desc: "Tato postava je zkušený administrátor vychovaný v místním politickém establishmentu." # todo: NEW TRANSLATION
+ special_character_colonial_extraction: "Zkušený těžař" # todo: NEW TRANSLATION
+ special_character_colonial_extraction_desc: "Tato postava je podnikatelský magnát silně zapojený do těžebního průmyslu země." # todo: NEW TRANSLATION
+ special_character_colonial_business: "Významný podnikatel" # todo: NEW TRANSLATION
+ special_character_colonial_business_desc: "Tato postava je vlivný obchodník s úzkými vazbami na širší finanční sítě světa." # todo: NEW TRANSLATION
+ special_character_colonial_military: "Vojenský guvernér" # todo: NEW TRANSLATION
+ special_character_colonial_military_desc: "Tato postava je zkušený vojenský důstojník zvyklý na službu v zahraničí." # todo: NEW TRANSLATION
+ notification_appointed_new_governor_notification_name: "[SCOPE.sCountry('source_country').GetName] jmenuje nového [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]" # todo: NEW TRANSLATION
+ notification_appointed_new_governor_notification_desc: "S odkazem na administrativní obavy [SCOPE.sCountry('source_country').GetCapital.GetCityHubName] nahradil našeho [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] novým kandidátem." # todo: NEW TRANSLATION
+ notification_appointed_new_governor_notification_tooltip: "#header $notification_appointed_new_governor_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_appointed_new_governor_notification_desc$" # todo: NEW TRANSLATION
+ notification_requested_new_governor_notification_name: "[SCOPE.sCountry('source_country').GetName] žádá o nového [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]" # todo: NEW TRANSLATION
+ notification_requested_new_governor_notification_desc: "Správa v [SCOPE.sCountry('source_country').GetCapital.GetCityHubName] požádala o jmenování nového [concept_ruler], čímž snížila jejich [concept_liberty_desire]." # todo: NEW TRANSLATION
+ notification_requested_new_governor_notification_tooltip: "#header $notification_requested_new_governor_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_requested_new_governor_notification_desc$" # todo: NEW TRANSLATION
+ spanish_events.1.t: "La Renaixensa" # todo: NEW TRANSLATION
+ spanish_events.1.d: "Snažíce se napravit staletí diglosie, intelektuálové [GetCulture('catalan').GetName] začali pracovat na oživení katalánštiny jako literárního a kulturního jazyka." # todo: NEW TRANSLATION
+ spanish_events.1.f: "\"Katalánsko může stále usilovat o nezávislost – ne politickou, protože má proti jiným národům s obrovskými armádami a námořnictvem příliš malou váhu, ale literární, mimo dosah politické rovnováhy.\"\n\n— Joaquín Rubió y Ors, 'Lo Gayter del Llobregat'" # todo: NEW TRANSLATION
+ spanish_events.1.a: "Velmi zajímavé..." # todo: NEW TRANSLATION
+ spanish_events.1.b: "Podvratnost musí být potlačena." # todo: NEW TRANSLATION
+ spanish_events.1.c: "Co je Španělsko než svazek národů, spojených korunou." # todo: NEW TRANSLATION
+ modifier_empowered_catalan_fueros: "Posílené katalánské svobody" # todo: NEW TRANSLATION
+ modifier_catalan_literary_revival: "Katalánské literární oživení" # todo: NEW TRANSLATION
+ spanish_events.2.t: "O Rexurdimento" # todo: NEW TRANSLATION
+ spanish_events.2.d: "Snažíce se napravit staletí diglosie, intelektuálové [GetCulture('galician').GetName] začali pracovat na oživení galicijštiny jako literárního a kulturního jazyka." # todo: NEW TRANSLATION
+ spanish_events.2.f: "\"Chudá Galicie, nikdy se\nneříkej Španělkou,\nprotože tě Španělsko zapomíná,\nbyla jsi tak krásná.\nJako bys se narodila ve studu,\nona v své bláhovosti se ostýchá tě přihlásit,\na matka, která pohrdá svým dítětem,\nje srdce bezcitné.\"\"\n\n— Rosalía de Castro, #italic The Galician Bagpipe#!" # todo: NEW TRANSLATION
+ spanish_events.2.a: "Velmi zajímavé..." # todo: NEW TRANSLATION
+ spanish_events.2.b: "Podvratnost musí být potlačena." # todo: NEW TRANSLATION
+ spanish_events.2.c: "Co je Španělsko než svazek národů, spojených korunou." # todo: NEW TRANSLATION
+ modifier_empowered_galician_fueros: "Posílené galicijské městské privilegia" # todo: NEW TRANSLATION
+ modifier_galician_literary_revival: "Galicijské literární oživení" # todo: NEW TRANSLATION
+ spanish_events.3.t: "El Surdimientu" # todo: NEW TRANSLATION
+ spanish_events.3.d: "Snažíce se napravit staletí diglosie, intelektuálové [GetCulture('asturleonese').GetName] začali pracovat na oživení asturleonského jako literárního a kulturního jazyka." # todo: NEW TRANSLATION
+ spanish_events.3.f: "\"Ó prameni Fascura!\nmé čelo je už bílé,\na přesto, když na tebe myslím,\nneví, co se děje,\nzdali spím nebo bdím,\nzdali je to pravda nebo sen.\nSnění! Ach, kdyby štěstí,\nalespoň sněné,\nmohlo trvat bez konce,\nprosím, ať se nikdy neprobudím!\"\n\n— Xuan María Acebal, #italic La Fonte de Fascura#!" # todo: NEW TRANSLATION
+ spanish_events.3.a: "Velmi zajímavé..." # todo: NEW TRANSLATION
+ spanish_events.3.b: "Podvratnost musí být potlačena." # todo: NEW TRANSLATION
+ spanish_events.3.c: "Co je Španělsko než svazek národů, spojených korunou." # todo: NEW TRANSLATION
+ modifier_empowered_asturleonese_fueros: "Posílené asturské městské privilegia" # todo: NEW TRANSLATION
+ modifier_asturleonese_literary_revival: "Asturleonské literární oživení" # todo: NEW TRANSLATION
+ dominican_events.1.t: "Přísaha" # todo: NEW TRANSLATION
+ dominican_events.1.d: "Sejdu se na tajném místě skupina revolucionářů zvaná La Trinitaria oznámila své úmysly osvobodit [SCOPE.sState('santo_domingo_state_scope').GetName] od [ROOT.GetCountry.GetAdjective] špatné správy." # todo: NEW TRANSLATION
+ dominican_events.1.f: "\"Jsme přesvědčeni, že mezi Dominikánci a Haiti nelze žádné sloučení. Jsme a budeme dva odlišné národy. Náš osud je být nezávislými, naprosto nezávislými.\n\nNaše společnost se bude jmenovat La Trinitaria, protože bude složena ze skupin po třech a umístíme ji pod ochranu Nejsvětější Trojice.\n\nNaše heslo: Bůh, Vlast a Svoboda.\" \n\n— Juan Pablo Duarte, #italic Úryvek z prvního setkání Trinitarios#!" # todo: NEW TRANSLATION
+ dominican_events.1.a: "Chci tyto zrádce dopadnout a pověsit. Hned!" # todo: NEW TRANSLATION
+ dominican_events.1.b: "Zvyšte financování našich východních oddělení." # todo: NEW TRANSLATION
+ modifier_birth_of_the_liberation_army: "Dominikánská osvobozenecká armáda" # todo: NEW TRANSLATION
+ modifier_funding_the_haitian_national_guard: "Financování východních posádek" # todo: NEW TRANSLATION
+ modifier_expanding_the_eastern_departments: "Rozšíření oddělení Cibao a Ozama" # todo: NEW TRANSLATION
+ dominican_events.2.t: "Rebelové obsazují Puerta del Conde" # todo: NEW TRANSLATION
+ dominican_events.2.d: "Skupina revolucionářů chytila [ROOT.GetCountry.GetAdjective] posádku naprosto nepřipravenou, vtrhli do hlavní pevnosti Santo Dominga a vyvěsili [SCOPE.sCountry('dominican_scope').GetAdjective] vlajku nad jejími břehy, signalizující začátek otevřeného nepřátelství proti [ROOT.GetCountry.GetCapital.GetCityHubName]." # todo: NEW TRANSLATION
+ dominican_events.2.f: "Ve stínu velké pevnosti Santo Domingo čekali konspirátoři. Bylo jich mnohem méně než těch, kdo před několika dni přísahali věrnost, a teď byli mnohem tišší. Najednou se rozběhl posel, zadýchaný: \"Myslím, že jsme byli odhaleni,\" říká, \"hlídka mě pronásledovala a musel jsem udělat dlouhou obcházku, abych se sem dostal.\"\n\nPanika je ochromila, ale když se skupina chystala se rozpadnout, pevné \"Ne!\" od Mella je přerušilo. \"Není čas se vracet: budeme svobodní nebo zemřeme.\" Zvedl svou mušketu do vzduchu a vyřkl hlasitý výkřik: \"Ať žije Dominikánská republika!\" a stiskl spoušť." # todo: NEW TRANSLATION
+ dominican_events.2.a: "Jsme slepí? Nasadit armádu!" # todo: NEW TRANSLATION
+ dominican_events.2.b: "Za Boha, zemi a svobodu!" # todo: NEW TRANSLATION
+ modifier_dominican_mutinies: "Dominikánské vojenské vzpoury" # todo: NEW TRANSLATION
+ modifier_rural_peon_levies: "Venkovské peonové oddíly" # todo: NEW TRANSLATION
+ modifier_defection_of_dominican_regiments: "Dezercí dominikánských pluků" # todo: NEW TRANSLATION
+ dominican_events.3.t: "Jednota, ne Trojice" # todo: NEW TRANSLATION
+ dominican_events.3.d: "Naše integrační snahy přinesly ovoce a kdysi mocní 'Trinitaristé' v [SCOPE.sState('santo_domingo_state_scope').GetName] ztratili většinu své podpory. Ostrov je konečně opět jednotný." # todo: NEW TRANSLATION
+ dominican_events.3.f: "Dominovat lidu je jedna věc, pomyslel si stárnoucí generál. Získat jejich srdce je věc druhá.\n\nTo první uměl dobře. Strach z jeho salv udržel mnohé nadějné povstalce doma. Musel však přiznat, že druhé mu vždy unikal – fakt, který mu [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetLastNameNoFormatting] rád připomínal.\n\nKdyž jeho prapor odcházel z kasáren naposled, nepřestalo ho tížit hořkost. Civilisté možná přičtou si slávu míru, ale oni dluží svou operační volnost jeho metodám." # todo: NEW TRANSLATION
+ dominican_events.3.a: "Podat olivovou ratolest těm, kdo ji uchopí." # todo: NEW TRANSLATION
+ dominican_events.3.b: "Musíme zajistit, že se nic takového už nikdy neobjeví." # todo: NEW TRANSLATION
+ modifier_breaking_dominicans: "Bičem a mrkví" # todo: NEW TRANSLATION
+ dominican_events.4.t: "Svoboda a bezpečí" # todo: NEW TRANSLATION
+ dominican_events.4.d: "[ROOT.GetCountry.GetName] je konečně osvobozena od haitského útlaku, přesto hrozby číhají na každém kroku. Může být moudré požádat o ochranu velmoci." # todo: NEW TRANSLATION
+ dominican_events.4.f: "\"Navrhuje pán z La Vega, že prodáme naši tvrdě vybojovanou svobodu tak lehce? Stála krev našich mučedníků opravdu méně než láhev levného vína?\"\n\n\"Lépe pána, kterého známe a zvolíme, než toho, který se vnucuje násilím. Ctím oběti našich mučedníků stejně jako vy, pane. Jen chci zajistit, aby naše děti neměly dělat ty samé oběti.\"" # todo: NEW TRANSLATION
+ dominican_events.4.a: "Naše nezávislost je absolutní, nelze ji kompromitovat." # todo: NEW TRANSLATION
+ dominican_events.4.b: "Znovu se staneme Kapitánskou generálií [SCOPE.sCountry('spain_scope').GetName]." # todo: NEW TRANSLATION
+ dominican_events.4.c: "Síla [SCOPE.sCountry('france_scope').GetName] nás ochrání." # todo: NEW TRANSLATION
+ dominican_events.4.e: "[SCOPE.sCountry('usa_scope').GetName] nás ochrání." # todo: NEW TRANSLATION
+ modifier_vanguards_of_independence: "Předvoj nezávislosti" # todo: NEW TRANSLATION
+ modifier_paranoid_landowners: "Podezřívaví pozemkoví vlastníci" # todo: NEW TRANSLATION
+ dominican_events.5.t: "Santo Domingo žádá ochranu" # todo: NEW TRANSLATION
+ dominican_events.5.d_1: "Z obavy o svou bezpečnost [SCOPE.sCountry('dominican_scope').GetName] požádala opět stát se Kapitánskou generálií [ROOT.GetCountry.GetName]." # todo: NEW TRANSLATION
+ dominican_events.5.d_2: "Z obavy o svou bezpečnost [SCOPE.sCountry('dominican_scope').GetName] požádala o zřízení [ROOT.GetCountry.GetAdjective] protektorátu nad zemí a nabídla poloostrov Samana ke stémuletému pronájmu." # todo: NEW TRANSLATION
+ dominican_events.5.f: "\"Jsem jen skromný nástroj dominikánského lidu, pane. Každá duše na tomto ostrově touží po blahodárné náruči [ROOT.GetCountry.GetCapital.GetCityHubName]. Zbývá tu jen malá otázka mého postavení v nové správě.\"" # todo: NEW TRANSLATION
+ dominican_events.5.a: "Přijmout návrh [SCOPE.sCountry('dominican_scope').GetAdjective]." # todo: NEW TRANSLATION
+ dominican_events.5.b: "Odmítnout. To by jen znamenalo potíže." # todo: NEW TRANSLATION
+ samana_lease_tt: "Poloostrov #bold Samana#! bude pronajat jako [concept_treaty_port] na #v 100#! let výměnou za roční platbu @money!#v 2000#!" # todo: NEW TRANSLATION
+ treaty_name_treaty_of_samana: "Smlouva ze Samaná" # todo: NEW TRANSLATION
+ modifier_cibao_unrest: "Povstání v Cibao" # todo: NEW TRANSLATION
+ je_la_trinitaria: "Jedna a nedělitelná" # todo: NEW TRANSLATION
+ je_la_trinitaria_reason: "Sjednocení západní a východní části Hispanioly; [SCOPE.sState('haiti_state_scope').GetName] a [SCOPE.sState('santo_domingo_state_scope').GetName], nebylo šťastné. Založené silou ruky v roce 1822 mělo zpočátku omezenou podporu u vybraných elit a afro-dominikánců. Avšak politiky [ROOT.GetCountry.GetName] – těžké daně, pozemkové redistribuce a masové konfiskace spolu s protikatolickými praktikami a obecnou špatnou správou – brzy obrátily většinu populace proti vládě z [ROOT.GetCountry.GetCapital.GetCityHubName].\n\nPokud nebudou podniknuty rozhodné kroky, toto nespokojení se brzy pravděpodobně promění v ozbrojené povstání." # todo: NEW TRANSLATION
+ dominican_movement_tt: "#v $movement_dominican_national$#! má [Concept('concept_activism','$concept_activism_short$')] $RADICALISM_AGITATING$ (#v 25%#!) nebo vyšší" # todo: NEW TRANSLATION
+ dominican_movement_suppressed_tt: "Neexistuje žádný #v $movement_dominican_national$#! s [Concept('concept_activism','$concept_activism_short$')] $RADICALISM_AGITATING$ (#v 25%#!) nebo vyšší" # todo: NEW TRANSLATION
+ modifier_a_marriage_at_gunpoint: "Sjednocení pod palbou" # todo: NEW TRANSLATION
+ dominican_secession_tt: "V [GetStateRegion('STATE_SANTO_DOMINGO').GetName] začalo [Concept('concept_secession', '$concept_secessionist$')] [concept_diplomatic_play]" # todo: NEW TRANSLATION
+ modifier_french_independence_payments_1_desc: "$je_haitian_debt$: $modifier_french_independence_payments_1$" # todo: NEW TRANSLATION
+ modifier_french_independence_payments_2_desc: "$je_haitian_debt$: $modifier_french_independence_payments_2$" # todo: NEW TRANSLATION
+ modifier_french_independence_payments_3_desc: "$je_haitian_debt$: $modifier_french_independence_payments_3$" # todo: NEW TRANSLATION
+ modifier_french_independence_payments_4_desc: "$je_haitian_debt$: $modifier_french_independence_payments_4$" # todo: NEW TRANSLATION
+ HISPANOAMERICA_RECOGNITION_COUNTRIES_HEADER: "Zbývající [Concept('concept_country', '$concept_countries$')]:" # todo: NEW TRANSLATION
+ HISPANOAMERICA_RECOGNITION_COUNTRIES_TT: "$HISPANOAMERICA_RECOGNITION_COUNTRIES_HEADER$\n[GetScriptedGui('je_hispanoamerica_not_recognized_countries_sgui').ExecuteTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" # todo: NEW TRANSLATION
+ HISPANOAMERICA_RECOGNITION_COUNTRIES_LIST_ENTRY: "[AddLocalizationIf(THIS.GetCountry.Exists, THIS.GetCountry.GetName)]" # todo: NEW TRANSLATION
+ FORMER_SPANISH_COLONY_TT: "Je bývalou $SPA_ADJ$ [concept_colony]" # todo: NEW TRANSLATION
+ VERNACULAR_POLICY_ASSIMILATION_STATES_HEADER: "Zbývající [Concept('concept_state', '$concept_states$')]:" # todo: NEW TRANSLATION
+ VERNACULAR_POLICY_ASSIMILATION_STATES_TT: "$VERNACULAR_POLICY_ASSIMILATION_STATES_HEADER$\n[GetScriptedGui('je_vernacular_policy_assimilation_states_sgui').ExecuteTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" # todo: NEW TRANSLATION
+ VERNACULAR_POLICY_ASSIMILATION_STATES_LIST_ENTRY: "[AddLocalizationIf(THIS.GetState.IsValid, THIS.GetState.GetName)] ([THIS.ScriptValue('official_culture_fraction')|%1])" # todo: NEW TRANSLATION

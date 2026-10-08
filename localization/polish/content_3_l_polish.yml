@@ -1,7 +1,7 @@
 ﻿l_polish:
  generic_laws.1.t: "Strhující projev uchvátil veřejnost"
  generic_laws.1.d: "Dnes odpoledne pronesl [SCOPE.sCharacter('orator_ig_leader_scope').GetFullName], vůdce [SCOPE.gsInterestGroup('orator_ig_scope').GetName], vášnivý projev podporující prosazení zákona [SCOPE.sLaw('current_law_scope').GetName]."
- generic_laws.1.f: "Při vystoupení před veřejností na hlavním náměstí města [SCOPE.sCharacter('orator_ig_leader_scope').GetCountry.GetCapital.GetCityHubName] zanechala silná rétorika [SCOPE.sCharacter('orator_ig_leader_scope').GetFullNameNoFormatting] dojem i na [SCOPE.sCharacter('orator_ig_leader_scope').GetHerHis] nejzahořklejší politické odpůrce. Úryvky z projevu se již šíří po celé [ROOT.GetCountry.GetAltAdjectiveNoFormatting('A')] a dále rozdmýchávají již tak bouřlivou debatu." # todo: COUNTRY CASE
+ generic_laws.1.f: "Při vystoupení před veřejností na hlavním náměstí města [SCOPE.sCharacter('orator_ig_leader_scope').GetCountry.GetCapital.GetCityHubName] zanechala silná rétorika [SCOPE.sCharacter('orator_ig_leader_scope').GetFullNameNoFormatting] dojem i na [SCOPE.sCharacter('orator_ig_leader_scope').GetHerHis] nejzahořklejší politické odpůrce. Úryvky z projevu se již šíří po celé [ROOT.GetCountry.GetNameNoFormatting] a dále rozdmýchávají již tak bouřlivou debatu."
  generic_laws.1.a: "To by mělo výrazně usnadnit cestu k reformě."
  generic_laws.1.b: "Taková vystoupení vrhají dobré světlo na [SCOPE.sCharacter('orator_ig_leader_scope').GetFullNameNoFormatting] a [SCOPE.sCharacter('orator_ig_leader_scope').GetHerHis] věc."
  rising_support_for_law_minor: "Veřejnost ovlivněna"
@@ -152,7 +152,7 @@
  promises_of_reform_ott: "Sliby reforem"
  establishment_favours_reform: "Elity podporují reformu"
  tanzimat_events.5.t: "Šepoty povstání"
- tanzimat_events.5.d: "Město [SCOPE.sState('paranoia_state_scope').GetCityHubName] zachvátila atmosféra paranoie poté, co místní imám obvinil komunitu [SCOPE.sReligion('discriminated_religion_scope').GetName] ze spiknutí s [SCOPE.sCountry('neighbor_country').GetAltAdjective('I')] s cílem podkopat autoritu [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]." # todo: COUNTRY CASE
+ tanzimat_events.5.d: "Město [SCOPE.sState('paranoia_state_scope').GetCityHubName] zachvátila atmosféra paranoie poté, co místní imám obvinil komunitu [SCOPE.sReligion('discriminated_religion_scope').GetName] ze spiknutí s [SCOPE.sCountry('neighbor_country').GetAltAdjective('I')] s cílem podkopat autoritu [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]." # todo: CONCEPT CASE
  tanzimat_events.5.f: "„Mají být nepřátelé Boha rovni islámu? Někteří zkorumpovaní paši v [ROOT.GetCountry.GetCapital.GetCityHubName] si to možná myslí, ale my pravověrní víme lépe. Zatímco mluvíme, nevěřící mezi námi kují pikle, spikají se se svými zahraničními pány, aby rozparcelovali naši velkou říši jako cukrář krájí baklavu.“"
  tanzimat_events.5.a: "Jsou to jen fámy, že?"
  tanzimat_events.5.b: "Tvrdě zakročit proti podezřelým zrádcům — opatrnosti není nikdy dost."
@@ -206,8 +206,8 @@
  notification_warlord_china_explosion_point_remove_tooltip: "#header $notification_warlord_china_explosion_point_remove_name$#!\n$TOOLTIP_DELIMITER$\n$notification_warlord_china_explosion_point_remove_desc$"
  je_boxer_rebellion: "Boxerské povstání"
  je_boxer_rebellion_reason: "Ponižující ztráta čínských území ve prospěch cizích „barbarů“ vedla ke vzniku mnoha milicí inspirovaných bojovými uměními, odhodlaných očistit zemi od jakéhokoli zahraničního vlivu.\n\nNeschopnost naplnit vizi těchto milicí by mohla mít dramatické důsledky pro [ROOT.GetCountry.GetAltAdjective('A')]."
- qing_owns_all_han_states_tt: "Vlastní všechny [GetCulture('han').GetName] [Concept('concept_homeland','domoviny')] a žádná [GetCulture('han').GetName] [Concept('concept_homeland','domovina')] není [Concept('concept_split_state','rozdělený stát')]" # todo: CONCEPT CASE
- qing_does_not_own_all_han_states_tt: "#b Nevlastní#! všechny [GetCulture('han').GetName] [Concept('concept_homeland','domoviny')]" # todo: CONCEPT CASE
+ qing_owns_all_han_states_tt: "Vlastní všechny [GetCulture('han').GetName] [Concept('concept_homeland','$concept_homelands$')] a žádná [GetCulture('han').GetName] [Concept('concept_homeland','domovina')] není [Concept('concept_split_state','rozdělený stát')]"
+ qing_does_not_own_all_han_states_tt: "#b Nevlastní#! všechny [GetCulture('han').GetName] [Concept('concept_homeland','$concept_homelands$')]"
  boxer_rebellion_events.1.t: "Hnutí I-che-tchuan"
  boxer_rebellion_events.1.d: "Rozzuřeni rostoucí přítomností cizinců v [ROOT.GetCountry.GetAltAdjective('L')] se poddaní [SCOPE.sCulture('han_culture').GetName] organizují do proticizineckých milicí odhodlaných zahnat „barbary“ zpět do moře. Mnozí nyní vyzývají [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullName], aby hnutí podpořil, jinak by se jejich zápal mohl obrátit proti vládě [SCOPE.sCulture('manchu_culture').GetName]."
  boxer_rebellion_events.1.f: "„Když cizí barbaři káží své náboženství, tvrdí, že vedou lidi k dobru, ale ve skutečnosti narušují naši vládu, vnášejí zmatek do našeho systému, ničí naše zvyky a klamou náš lid — jinými slovy chtějí proměnit lid Číny v barbary.“"
@@ -215,7 +215,7 @@
  boxer_rebellion_events.1.b: "Tito fanatici by znamenali naši zkázu."
  boxer_rebellion_events.2.t: "Mandát nebes"
  boxer_rebellion_events.2.d: "Žlutá dračí vlajka opět vlaje nad střechami všech měst Říše středu. Od zářících perel jižní delty až po velká města u Východního moře byla skvrna imperialismu smyta z našich břehů."
- boxer_rebellion_events.2.f: "„Až budou všichni cizí ďáblové\n\nvyhnáni do posledního muže\n\n[ROOT.GetCountry.GetAltAdjectiveNoFormatting('A')], sjednocená\n\npřinese mír této naší zemi.“" # todo: COUNTRY CASE
+ boxer_rebellion_events.2.f: "„Až budou všichni cizí ďáblové\n\nvyhnáni do posledního muže\n\n[ROOT.GetCountry.GetNameNoFormatting], sjednocená\n\npřinese mír této naší zemi.“"
  boxer_rebellion_events.2.a: "Ať [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullName] vládne deset tisíc let!"
  boxer_rebellion_events.2.b: "Ať [ROOT.GetCountry.GetName] trvá deset tisíc let!"
  revere_the_emperor: "Uctívat císaře"
@@ -224,10 +224,10 @@
  boxer_rebellion_events.3.d: "Tam, kde dříve zaznívaly nadšené výkřiky „Obnovte říši Čching“, nyní zaznívají proti-[SCOPE.sCulture('manchu_culture').GetName] slogany. Naše selhání naplnit vizi boxerů nenapravitelně přetrhlo naše vazby s poddanými [SCOPE.sCulture('han_culture').GetName]."
  boxer_rebellion_events.3.f: "„Neustále opakuji, že uvnitř jsme otroky Mandžuů a trpíme jejich tyranií, zatímco navenek jsme obtěžováni cizími mocnostmi — jsme zotročeni dvojnásob.“"
  boxer_rebellion_events.3.a: "Skončí tato ponížení někdy?"
- boxer_rebellion_events.3.b: "Posádka v [ROOT.GetCountry.GetCapital.GetAltAdjectiveNoFormatting('L')] se bouří a dobývá Zakázané město." # todo: COUNTRY CASE
+ boxer_rebellion_events.3.b: "Posádka v [ROOT.GetCountry.GetCapital.GetAltAdjectiveNoFormatting('L')] se bouří a dobývá Zakázané město." # todo: CONCEPT CASE
  boxer_rebellion_events.3.tt1: "Mandžuové jsou svrženi a vévoda Jan-šeng, hlavní potomek Konfucia, je prohlášen císařem."
  boxer_rebellion_events.4.t: "Pád dynastie Čching"
- boxer_rebellion_events.4.d: "Jedním tahem pera skončila dvě tisíciletí císařské vlády. Zatímco poslední císař [SCOPE.sCulture('manchu_culture').GetName] opouští Zakázané město, svět obrací svůj pohled na východ. Co přinese tato nová éra pro [ROOT.GetCountry.GetAltAdjective('A')]?" # todo: COUNTRY CASE
+ boxer_rebellion_events.4.d: "Jedním tahem pera skončila dvě tisíciletí císařské vlády. Zatímco poslední císař [SCOPE.sCulture('manchu_culture').GetName] opouští Zakázané město, svět obrací svůj pohled na východ. Co přinese tato nová éra pro [ROOT.GetCountry.GetAltAdjective('A')]?" # todo: CONCEPT CASE
  boxer_rebellion_events.4.f: "„Abychom obnovili naši národní nezávislost, musíme nejprve obnovit čínský národ. Abychom obnovili čínský národ, musíme zahnat barbarské Mandžuy zpět do pohoří Čchang-paj. Abychom se zbavili barbarů, musíme nejprve svrhnout současnou tyranskou, diktátorskou, ošklivou a zkorumpovanou vládu Čching.“"
  boxer_rebellion_events.4.a: "Jho [SCOPE.sCulture('manchu_culture').GetName] konečně skončilo."
  boxer_rebellion_events.4.b: "Nyní je čas na smíření."
@@ -291,7 +291,7 @@
  je_machine_guns: "Automatické kulomety"
  je_machine_guns_reason: "Obsluhované jediným mužem a schopné vypálit stovky nábojů za minutu představují automatické kulomety téměř nepřekonatelnou překážku pro jakéhokoli útočníka čelícího opevněným pozicím."
  military_tech_events.401.t: "Modernizace arzenálu"
- military_tech_events.401.d: "Přechod velkovýroby od hladkohlavňových mušket k puškám v [SCOPE.sBuilding('rifle_factory').GetName] ve státě [SCOPE.sState('rifle_state').GetName] zahájil novou éru výroby [SCOPE.sGoods('small_arms_good').GetName] v [ROOT.GetCountry.GetAltAdjectiveNoFormatting('L')]." # todo: COUNTRY CASE
+ military_tech_events.401.d: "Přechod velkovýroby od hladkohlavňových mušket k puškám v [SCOPE.sBuilding('rifle_factory').GetName] ve státě [SCOPE.sState('rifle_state').GetName] zahájil novou éru výroby [SCOPE.sGoods('small_arms_good').GetName] v [ROOT.GetCountry.GetAltAdjectiveNoFormatting('L')]." # todo: CONCEPT CASE
  military_tech_events.401.f: "„I na vzdálenost jednoho tisíce yardů lze stále zasáhnout cíl.\n\nPředsunuté dělostřelecké pozice lze ostřelovat, bodákové útoky zastavit ještě před jejich začátkem.\n\nVýhody jsou nespočetné!\n\nPokud nevyvineme dostatečné výrobní kapacity k produkci těchto zbraní, čeká nás na bojišti katastrofa.“"
  military_tech_events.401.a: "Arzenál v [SCOPE.sState('rifle_state').GetCityHubName] bude proslulý po celém světě."
  military_tech_events.401.b: "[ROOT.GetCountry.GetNameNoFormatting] bude stát v čele vojenských inovací."
@@ -338,19 +338,19 @@
  je_christ_of_nations_reason: "#italic Tak jako byl Kristus umučen Římany, tak i Polsko padlo rukou svých nepřátel, a stejně jako je Kristus předurčen znovu přijít ve své slávě, tak i Polsko je předurčeno učinit totéž.#!\n\nZatímco poslední nezávislý stát [SCOPE.sCulture('polish_culture_scope').GetName] zmizel z mapy po #bold trojím dělení Polska#! na konci 18. století, sen o jeho obnovení žije v myslích Poláků od Poznaně po Lvov.\n\n#bold Odkaz Rzeczpospolity#!\nPokud bude nějakým způsobem vytvořen plně nezávislý polský stát, budeme jej moci připojit k našemu, za předpokladu, že [SCOPE.GetRootScope.GetCountry.GetName] je sám nezávislý."
  christ_of_nations_button: "Podporovat polské radikály v zahraničí"
  christ_of_nations_button_desc: "Napříč územími bývalé Rzeczpospolity působí nespočet skupin, buněk a výborů usilujících o obnovení vlády [SCOPE.sCulture('polish_culture_scope').GetName]. Poskytnutím útočiště polským vlastencům a financováním jejich aktivit může [SCOPE.GetRootScope.GetCountry.GetNameNoFlag] připravit polská území mimo naši přímou kontrolu na budoucí osvobození."
- christ_of_nations_button_tt_1: "Vyberte cizí [Concept('concept_country','země')] s [SCOPE.sCulture('polish_culture_scope').GetName] [Concept('concept_homeland','domovinou')] a povzbuďte [SCOPE.sCulture('polish_culture_scope').GetName] [Concept('concept_radical','radikálové')] v jejich [Concept('concept_state','státy')]." # todo: CONCEPT CASE
+ christ_of_nations_button_tt_1: "Vyberte cizí [Concept('concept_country','země')] s [SCOPE.sCulture('polish_culture_scope').GetName] [Concept('concept_homeland','$concept_homelands$')] a povzbuďte [SCOPE.sCulture('polish_culture_scope').GetName] [Concept('concept_radical','$concept_radicals$')] v jejich [Concept('concept_state','$concept_states$')]."
  christ_of_nations_button_tt_2: "Tuto akci jste nepoužili během posledních #bold 5#! let"
  poland_events.1.t: "Polsko ještě nezahynulo"
  poland_events.1.d: "Komunity [SCOPE.sCulture('polish_culture_scope').GetName] vlastenců a exulantů v [SCOPE.GetRootScope.GetCountry.GetAdjective] jsou početné a silně motivované. Poskytnutím podpory a jasného vedení můžeme zajistit, že jejich odhodlání nepřijde vniveč."
  poland_events.1.f: "„Zprávy z vlasti, konečně. Možná budeme mít šanci se vrátit. Dobré jídlo, písně, tanec; všechno!“\n\n„Nedoufejme ve víc, než čeho můžeme dosáhnout. Co říkal posel?“\n\n„Do ulic. Budeme skandovat, pochodovat a odmítneme pracovat. A když na to přijde, budeme bojovat.“"
- poland_events.1.a: "Nechte je vyvolat nepokoje v [SCOPE.sCountry('polish_agitation_target_1_scope').GetAltAdjective('L')]." # todo: COUNTRY CASE
- poland_events.1.b: "Dejte jim pokyn působit v [SCOPE.sCountry('polish_agitation_target_2_scope').GetAltAdjective('L')]." # todo: COUNTRY CASE
- poland_events.1.c: "Poláci v [SCOPE.sCountry('polish_agitation_target_3_scope').GetAltAdjective('L')] touží po svobodě." # todo: COUNTRY CASE
+ poland_events.1.a: "Nechte je vyvolat nepokoje v [SCOPE.sCountry('polish_agitation_target_1_scope').GetAltAdjective('L')]." # todo: CONCEPT CASE
+ poland_events.1.b: "Dejte jim pokyn působit v [SCOPE.sCountry('polish_agitation_target_2_scope').GetAltAdjective('L')]." # todo: CONCEPT CASE
+ poland_events.1.c: "Poláci v [SCOPE.sCountry('polish_agitation_target_3_scope').GetAltAdjective('L')] touží po svobodě." # todo: CONCEPT CASE
  poland_events.1.e: "Propašujte je přes [SCOPE.sCountry('polish_agitation_target_4_scope').GetAdjective] hranici."
- poland_events.1.tt: "Volby cílového státu a jeho [Concept('concept_law','zákona')] mohou ovlivnit množství radikálů i změnu našich vztahů." # todo: CONCEPT CASE
+ poland_events.1.tt: "Volby cílového státu a jeho [Concept('concept_law','$concept_laws$')] mohou ovlivnit množství radikálů i změnu našich vztahů."
  funding_polish_radicals: "Financování polského odboje"
  poland_events.2.t: "Nezahynulo snad Polsko?"
- poland_events.2.d: "V komunitách [SCOPE.sCulture('polish_culture_scope').GetName] v [SCOPE.GetRootScope.GetCountry.GetAltAdjective('L')] vypukly rozsáhlé protesty požadující polskou státnost. Poradci se domnívají, že nepokoje mohou souviset s aktivitami vládou podporovaných skupin v [SCOPE.sCountry('sent_polish_agitators_country_scope').GetAltAdjective('L')]." # todo: COUNTRY CASE
+ poland_events.2.d: "V komunitách [SCOPE.sCulture('polish_culture_scope').GetName] v [SCOPE.GetRootScope.GetCountry.GetAltAdjective('L')] vypukly rozsáhlé protesty požadující polskou státnost. Poradci se domnívají, že nepokoje mohou souviset s aktivitami vládou podporovaných skupin v [SCOPE.sCountry('sent_polish_agitators_country_scope').GetAltAdjective('L')]." # todo: CONCEPT CASE
  poland_events.2.f: "Národy rozdělené země budou vždy toužit po slávě a identitě, kterou kdysi měly. Taková je moudrost starých říší: podmaněné národy si ponechávaly svá území i zvyky výměnou za poplatky a přijetí nových zákonů. Důsledkem odebrání identity národu je pak nevyhnutelně katastrofa."
  poland_events.2.a: "[SCOPE.sCountry('sent_polish_agitators_country_scope').GetCapital.GetCityHubName] za to musí nést odpovědnost."
  poland_events.2.b: "Infiltrovat je a pokusit se jejich skupiny rozbít."
@@ -360,7 +360,7 @@
  poland_events.3.d: "V poslední době sílí výzvy k politické unii mezi dvěma státy [SCOPE.sCulture('polish_culture_scope').GetName], [SCOPE.GetRootScope.GetCountry.GetName] a [SCOPE.sCountry('polish_union_target_scope').GetName]. Z [SCOPE.sCountry('polish_union_target_scope').GetCapital.GetCityHubName] již dorazil oficiální návrh a jejich delegace netrpělivě očekává naši odpověď."
  poland_events.3.f: "„Obviňujete nás z nelegitimity, ale nikdo z vás nemá vazby na starou šlechtu. Bah, lidové povstání a zapomněli jste na mnohé důležité osobnosti!“\n\n„A přesto tu oba sedíme a hádáme se o legitimitu jako děti. Měli bychom se soustředit na společný boj!“\n\n„#bold Bojujeme společně!#!“"
  poland_events.3.a: "Společně, za Polsko!"
- poland_events.3.b: "To není v zájmu [SCOPE.GetRootScope.GetCountry.GetAltAdjectiveNoFormatting('G')]" # todo: COUNTRY CASE
+ poland_events.3.b: "To není v zájmu [SCOPE.GetRootScope.GetCountry.GetNameNoFormatting]"
  integrating_polish_modifier: "Integrace regionálních správ"
  poland_events.4.t: "Druhý příchod"
  poland_events.4.d: "Navzdory dělením se Polsko zázračně vrátilo na světovou scénu. Zatímco se zraky národa upírají k jeho budoucnosti, [SCOPE.GetRootScope.GetCountry.GetRuler.GetPrimaryRoleTitle] [SCOPE.GetRootScope.GetCountry.GetRuler.GetLastName] se obrací k jeho minulosti. Polsko bylo znovuzrozeno — ale jaké?"
@@ -393,14 +393,14 @@
  plc_discrimination_tt_2: "Pokud #bold máme#! [GetLawType('law_national_supremacy').GetName] nebo [GetLawType('law_ethnostate').GetName]:"
  poland_events.7.t: "Velká Rzeczpospolita"
  poland_events.7.d: "Lidé [SCOPE.sCulture('ukrainian_culture').GetName] a [SCOPE.sCulture('byelorussian_culture').GetName] byli začleněni do naší Rzeczpospolity jako rovnocenní partneři v našem velkém svazku."
- poland_events.7.d2: "Území [SCOPE.sCulture('ukrainian_culture').GetName] a [SCOPE.sCulture('byelorussian_culture').GetName] byla připojena k naší říši, čímž se [ROOT.GetCountry.GetAltAdjective('I')] opět stává skutečnou evropskou mocností." # todo: COUNTRY CASE
+ poland_events.7.d2: "Území [SCOPE.sCulture('ukrainian_culture').GetName] a [SCOPE.sCulture('byelorussian_culture').GetName] byla připojena k naší říši, čímž se [ROOT.GetCountry.GetAltAdjective('I')] opět stává skutečnou evropskou mocností." # todo: CONCEPT CASE
  poland_events.7.f: "„Bratři, všichni! Přinášíme vám radostné zprávy. Kdysi jsme sdíleli velkou říši — domov míru a prosperity pod ochranou Páně. Ač jsme byli poraženi, rozptýleni a spoutáni, opět stojíme. Ve staré slávě, obnovení! Ve víře, odměněni! Zbývá nám jen dosáhnout bran nebes. Povstaňte s námi a přinesme znovu Boží mír na zem!“"
  poland_events.7.f2: "„Pozor, rolníci. Možná se ptáte, proč jsem dnes přivedl tolik pánů s puškami. Je to prosté: jsme tu, abychom vás osvobodili. Což začíná nedoplatky, které dlužíte Rzeczpospolitě. Časem možná mocní zváží řádnou správu vašeho kraje. Neodporujte. Nebo odporujte — alespoň to pomůže zbavit tohle hnojiště jeho zápachu.“"
  poland_events.7.a: "Vítejte, bratři."
  poland_events.7.b: "Naše říše roste."
  colonial_administration: "$gov_colonial_administration$"
  je_colonial_administration: "Zřídit koloniální správu"
- je_colonial_administration_reason: "Abychom co nejlépe využili naši vládu nad africkými državami, může být v dané oblasti kontinentu zřízena #bold koloniální správa#!. #bold Koloniální správy#! se budou samy rozšiřovat do sousedních [Concept('concept_decentralized_nation','decentralizovaného národa')] a mohou jim být svěřeny i naše další regionální državy.\n\n#lore Takzvaný boj o Afriku je v plném proudu. Každá mocnost, která za něco stojí, si chce ukrojit kus tohoto velkého kontinentu jako další klenot do své koruny. Bohatství nevyužitých zdrojů a lidé, kteří teprve čekají na zapojení do práce, slibují moc i prestiž vítězům. Není pochyb: než tento boj skončí, poteče krev. Afrika čeká.#!" # todo: CONCEPT CASE
+ je_colonial_administration_reason: "Abychom co nejlépe využili naši vládu nad africkými državami, může být v dané oblasti kontinentu zřízena #bold koloniální správa#!. #bold Koloniální správy#! se budou samy rozšiřovat do sousedních [Concept('concept_decentralized_nation', '$concept_decentralized_nations$')] a mohou jim být svěřeny i naše další regionální državy.\n\n#lore Takzvaný boj o Afriku je v plném proudu. Každá mocnost, která za něco stojí, si chce ukrojit kus tohoto velkého kontinentu jako další klenot do své koruny. Bohatství nevyužitých zdrojů a lidé, kteří teprve čekají na zapojení do práce, slibují moc i prestiž vítězům. Není pochyb: než tento boj skončí, poteče krev. Afrika čeká.#!"
  je_colonial_administration_button_senegal: "Zřídit kolonii v [SCOPE.sStateRegion('senegal_region_scope').GetStrategicRegion.GetName]"
  je_colonial_administration_button_senegal_desc: "Na severozápadě kontinentu se Senegal rozprostírá nad pozůstatky dávno zaniklých říší. Koření a kovy jsou zde hojné, stejně jako kakao a káva."
  je_colonial_administration_button_niger: "Zřídit kolonii v [SCOPE.sStateRegion('niger_region_scope').GetStrategicRegion.GetName]"
@@ -413,7 +413,7 @@
  je_colonial_administration_button_southern_africa_desc: "Jižní Afriku pokrývají hory, savany i pouště. Skrývají železo, drahé kovy, diamanty a další bohatství. Ovládnutí této oblasti zajistí naši průmyslovou budoucnost."
  je_colonial_administration_button_congo: "Zřídit kolonii v [SCOPE.sStateRegion('congo_region_scope').GetStrategicRegion.GetName]"
  je_colonial_administration_button_congo_desc: "Oblasti kolem konžské pánve hostí jedny z největších deštných pralesů světa. Dřevo a potraviny odtud významně posílí naši armádu."
- je_colonial_administration_button_tt_1: "Při zřízení místní koloniální správy budeme moci přizpůsobit její [Concept('concept_law','zákony')] a [Concept('concept_government','vláda')] potřebám metropole a jejích [Concept('concept_interest_group','zájmové skupiny')]." # todo: CONCEPT CASE
+ je_colonial_administration_button_tt_1: "Při zřízení místní koloniální správy budeme moci přizpůsobit její [Concept('concept_law', '$concept_laws$')] a [Concept('concept_government','vláda')] potřebám metropole a jejích [Concept('concept_interest_group','$concept_interest_groups$')]."
  je_colonial_administration_button_tt_2: "Veškerá [SCOPE.GetRootScope.GetCountry.GetAdjective] území v dané [Concept('concept_strategic_region','strategickém regionu')] budou převedena na naši novou koloniální [Concept('concept_subject','závislá země')]. Pokud má některý [Concept('concept_state','stát')] aktivní [GetDecreeType('decree_greener_grass_campaign').GetName] [Concept('concept_decree','dekret')], náhodný stát s tímto dekretem bude určen jako hlavní město." # todo: CONCEPT CASE
  je_colonial_administration_button_expand_senegal: "Rozšířit naši kolonii v [SCOPE.sStateRegion('senegal_region_scope').GetStrategicRegion.GetName]"
  je_colonial_administration_button_expand_senegal_desc: "V současnosti držíme území v [SCOPE.sStateRegion('senegal_region_scope').GetStrategicRegion.GetName], která by byla lépe spravována naší koloniální závislou zemí. Pokud máme v této [Concept('concept_strategic_region','strategickém regionu')] více než jednu koloniální [Concept('concept_subject','závislá země')], budou sloučeny." # todo: CONCEPT CASE
@@ -437,10 +437,10 @@
  colonial_administration_events.1.b: "[SCOPE.sPop('majority_religion').GetReligion.GetName] misie povznesou místní obyvatelstvo."
  colonial_administration_events.1.c: "V nejtemnější Africe vznikne nová [SCOPE.GetRootScope.GetCountry.GetNameNoFormatting]."
  colonial_administration_events.1.e: "Bič bude práskat a kolonie bude plodit."
- colonial_administration_events.1_tt_1: "[SCOPE.sCountry('newly_formed_colonial_nation_scope').GetAltAdjective('yy')] [Concept('concept_law','Zákon')|l] budou zaměřeny na #bold obchod#! a #bold soukromé podnikání.#!" # todo: CONCEPT CASE
- colonial_administration_events.1_tt_2: "[SCOPE.sCountry('newly_formed_colonial_nation_scope').GetAltAdjective('yy')] [Concept('concept_law','Zákon')|l] budou zaměřeny na #bold konverzi#! a #bold vzdělávání.#!" # todo: CONCEPT CASE
- colonial_administration_events.1_tt_3: "[SCOPE.sCountry('newly_formed_colonial_nation_scope').GetAltAdjective('yy')] [Concept('concept_law','Zákon')|l] budou zaměřeny na #bold imigraci#! a #bold koloniální osidlování.#!" # todo: CONCEPT CASE
- colonial_administration_events.1_tt_4: "[SCOPE.sCountry('newly_formed_colonial_nation_scope').GetAltAdjective('yy')] [Concept('concept_law','Zákon')|l] budou zaměřeny na #bold otrockou práci#! a #bold bezohledné vykořisťování.#!" # todo: CONCEPT CASE
+ colonial_administration_events.1_tt_1: "[SCOPE.sCountry('newly_formed_colonial_nation_scope').GetAltAdjective('yy')] [Concept('concept_law', '$concept_laws$')|l] budou zaměřeny na #bold obchod#! a #bold soukromé podnikání.#!"
+ colonial_administration_events.1_tt_2: "[SCOPE.sCountry('newly_formed_colonial_nation_scope').GetAltAdjective('yy')] [Concept('concept_law', '$concept_laws$')|l] budou zaměřeny na #bold konverzi#! a #bold vzdělávání.#!"
+ colonial_administration_events.1_tt_3: "[SCOPE.sCountry('newly_formed_colonial_nation_scope').GetAltAdjective('yy')] [Concept('concept_law', '$concept_laws$')|l] budou zaměřeny na #bold imigraci#! a #bold koloniální osidlování.#!"
+ colonial_administration_events.1_tt_4: "[SCOPE.sCountry('newly_formed_colonial_nation_scope').GetAltAdjective('yy')] [Concept('concept_law', '$concept_laws$')|l] budou zaměřeny na #bold otrockou práci#! a #bold bezohledné vykořisťování.#!"
  unbridled_profits_modifier: "Neomezené zisky"
  civilizing_mission_modifier: "Civilizační mise"
  colonial_enterprise_modifier: "Koloniální podnikání"
@@ -450,13 +450,13 @@
  religious_missions_colonial_modifier: "Misijní stanice"
  resource_extraction_charter_modifier: "Koloniální podniky"
  colonial_administration_events.2.t: "Oddělená končetina"
- colonial_administration_events.2.d: "Po přerušení správních vazeb s metropolí propukly v celé [ROOT.GetCountry.GetAltAdjective('A')] rozsáhlé protesty, které naše nedostatečně početné koloniální síly jen stěží zvládají." # todo: COUNTRY CASE
+ colonial_administration_events.2.d: "Po přerušení správních vazeb s metropolí propukly v celé [ROOT.GetCountry.GetName] rozsáhlé protesty, které naše nedostatečně početné koloniální síly jen stěží zvládají."
  colonial_administration_events.2.f: "„[SCOPE.GetRootScope.GetCountry.GetCustom('GetDivinity')] nás stvořil svobodné a neučinil z nás majetek ani dědictví. A tak při [SCOPE.GetRootScope.GetCountry.GetCustom('GetDivinity')] již nebudeme ani děděni, ani zotročeni.“"
  colonial_administration_events.2.a: "Kéž [SCOPE.GetRootScope.GetCountry.GetCustom('GetDivinity')] ochrání [ROOT.GetCountry.GetNameNoFormatting]."
  colonial_administration_events.2.b: "Koloniální správa již není udržitelná. Musíme zavést vládu většiny."
  colony_alone_modifier: "Kolonie bez pána"
- most_european_pops_abandon_africa_tt: "Velké množství #bold evropské#! [Concept('concept_pop','populace')|l] opustí [ROOT.GetCountry.GetAltAdjective('A')]" # todo: CONCEPT CASE
- some_european_pops_abandon_africa_tt: "Část #bold evropské#! [Concept('concept_pop','populace')|l] opustí [ROOT.GetCountry.GetAltAdjective('A')]" # todo: CONCEPT CASE
+ most_european_pops_abandon_africa_tt: "Velké množství #bold evropské#! [Concept('concept_pop','$concept_pops$')|l] opustí [ROOT.GetCountry.GetAltAdjective('A')]"
+ some_european_pops_abandon_africa_tt: "Část #bold evropské#! [Concept('concept_pop','$concept_pops$')|l] opustí [ROOT.GetCountry.GetAltAdjective('A')]"
  acw_events.9.t_1: "Hvězdy a pruhy"
  acw_events.9.t_2: "Svobody pro mne"
  acw_events.9.d_1: "Tímto konečným vítězstvím obklíčily armády [SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFlag] [SCOPE.sState('acw_victory_capital_scope').GetCityHubName]. Nezávislost je naše."

@@ -39,10 +39,10 @@
  notification_great_game_loss_to_natives_tooltip: "#header $notification_great_game_loss_to_natives_name$#!\n$TOOLTIP_DELIMITER$\n$notification_great_game_loss_to_natives_desc$"
  modifier_european_military_assistance: "Evropská vojenská pomoc"
  modifier_afghan_military_training_costs: "Podpora afghánského uchazeče"
- all_pashtun_or_tajik_countries_puppeted_tt: "Všechny [GetCulture('pashtun').GetName] nebo [GetCulture('tajik').GetName] [Concept('concept_country','země')] ve [Concept('concept_strategic_region', 'strategické oblasti')] [SCOPE.sStrategicRegion('persia_region').GetName] jsou našimi [Concept('concept_subject','závislé zemi')]" # todo: CONCEPT CASE
+ all_pashtun_or_tajik_countries_puppeted_tt: "Všechny [GetCulture('pashtun').GetName] nebo [GetCulture('tajik').GetName] [Concept('concept_country', '$concept_countries$')] ve [Concept('concept_strategic_region', 'strategické oblasti')] [SCOPE.sStrategicRegion('persia_region').GetName] jsou našimi [Concept('concept_subject', '$concept_subjects$')]"
  je_maintain_afghan_protectorate: "Zajistit afghánský protektorát"
- je_maintain_afghan_protectorate_reason: "Hornaté pohraničí mezi indickým subkontinentem a středoasijskými stepmi je klíčem k vytvoření pevné a výhodné hranice proti našemu rivalovi. Abychom zajistili ochranu svých zájmů a trasu k útoku na naše protivníky, musíme v celém afghánském regionu získat stabilní [Concept('concept_subject','závislé země')]." # todo: CONCEPT CASE
- je_maintain_afghan_protectorate_goal: "Navázat a udržet vztah [Concept('concept_subject','závislá země')] se všemi afghánskými národy po dobu #variable 10 let#!" # todo: CONCEPT CASE
+ je_maintain_afghan_protectorate_reason: "Hornaté pohraničí mezi indickým subkontinentem a středoasijskými stepmi je klíčem k vytvoření pevné a výhodné hranice proti našemu rivalovi. Abychom zajistili ochranu svých zájmů a trasu k útoku na naše protivníky, musíme v celém afghánském regionu získat stabilní [Concept('concept_subject', '$concept_subjects$')]."
+ je_maintain_afghan_protectorate_goal: "Navázat a udržet vztah [Concept('concept_subject','závislá země')] se všemi afghánskými národy po dobu #variable 10 let#!"
  je_consolidate_afghanistan_objective: "Konsolidovat Afghánistán"
  je_consolidate_afghanistan_objective_reason: "Nejasně vymezené hranice Afghánistánu představují příležitost ke krizi a ničivé válce v Pamíru. Abychom stabilizovali hranici mezi námi a naším protivníkem, musíme spolupracovat na upevnění afghánského státu."
  je_consolidate_afghanistan: "Pamírské vymezení hranic"
@@ -62,10 +62,10 @@
  je_unify_afghanistan_objective: "Sjednotit Afghánistán"
  je_unify_afghanistan_objective_reason: "Pád Durránské říše zanechal Afghánistán ve stavu neustálé občanské války mezi drobnými uchazeči o trůn. Abychom odvrátili zasahující evropské mocnosti, musíme vytvořit sjednocený a trvalý afghánský stát."
  je_unify_afghanistan: "Afghánské znovusjednocení"
- je_unify_afghanistan_reason: "Nástupnická krize vyvolaná smrtí Timúra Šáha Durráního v roce 1793 uvrhla bývalou Durránskou říši do období nekonečných vnitřních sporů. Vzhledem k hrozbě evropských mocností, které zasahují ze všech stran, se musíme sami ujmout úkolu ukončit toto období válčících knížectví a obnovit sjednocený Afghánistán.\n\nObrátit se na evropskou [Concept('concept_great_power','velmoc')] s žádostí o pomoc při znovusjednocení nám může zajistit její podporu, ale její #bold protivníci#! se vůči našim cílům stanou nepřátelštějšími." # todo: CONCEPT CASE
- state_is_bordering_afghanistan_tt: "Naše země nebo jedna z našich [Concept('concept_subject','závislé země')] má [Concept('concept_state','stát')] sousedící se zemí #v $AFG$#!" # todo: CONCEPT CASE
- is_bordering_afghanistan_tt: "Naše země nebo jedna z našich [Concept('concept_subject','závislé země')] sousedí se zemí #v $AFG$#!" # todo: CONCEPT CASE
- another_gp_is_bordering_afghanistan_tt: "Cizí [Concept('concept_great_power','velmoc')] nebo jedna z jejích [Concept('concept_subject','závislé země')] sousedí se zemí #v $AFG$#!" # todo: CONCEPT CASE
+ je_unify_afghanistan_reason: "Nástupnická krize vyvolaná smrtí Timúra Šáha Durráního v roce 1793 uvrhla bývalou Durránskou říši do období nekonečných vnitřních sporů. Vzhledem k hrozbě evropských mocností, které zasahují ze všech stran, se musíme sami ujmout úkolu ukončit toto období válčících knížectví a obnovit sjednocený Afghánistán.\n\nObrátit se na evropskou [Concept('concept_great_power','velmoc')] s žádostí o pomoc při znovusjednocení nám může zajistit její podporu, ale její #bold protivníci#! se vůči našim cílům stanou nepřátelštějšími."
+ state_is_bordering_afghanistan_tt: "Naše země nebo jedna z našich [Concept('concept_subject', '$concept_subjects$')] má [Concept('concept_state','stát')] sousedící se zemí #v $AFG$#!"
+ is_bordering_afghanistan_tt: "Naše země nebo jedna z našich [Concept('concept_subject', '$concept_subjects$')] sousedí se zemí #v $AFG$#!"
+ another_gp_is_bordering_afghanistan_tt: "Cizí [Concept('concept_great_power','velmoc')] nebo jedna z jejích [Concept('concept_subject', '$concept_subjects$')] sousedí se zemí #v $AFG$#!"
  first_gp_approves_tt: "[SCOPE.sCountry('gp_scope').GetName] schvaluje #bold smlouvu o vymezení hranic#!"
  second_gp_approves_tt: "[SCOPE.sCountry('rival_gp_scope').GetName] schvaluje #bold smlouvu o vymezení hranic#!"
  afghanistan_approves_tt: "[SCOPE.sCountry('afghanistan_scope').GetName] schvaluje #bold smlouvu o vymezení hranic#!"
@@ -95,7 +95,7 @@
  reset_afghan_treaty_tt: "Všechny současné #bold návrhy smlouvy#! budou #bold resetovány#!"
  approve_of_delimitation_treaty_tt: "Budeme #bold souhlasit#! s níže uvedenými podmínkami:"
  negotiations_failure_tt: "Jednání #bold zkrachují#!"
- if_treaty_process_succeeds_tt: "Pokud se tento [Concept('concept_journal_entry','záznam v deníku')|l] úspěšně #bold dokončí:#!" # todo: CONCEPT CASE
+ if_treaty_process_succeeds_tt: "Pokud se tento [Concept('concept_journal_entry','záznam v deníku')|l] úspěšně #bold dokončí:#!"
  if_treaty_process_fails_tt: "Pokud tomuto [Concept('concept_subject', 'záznamu v denníku')] #bold vyprší čas:#!"
  je_afghan_unification_appeal_to_russia_button: "Obrátit se na #v $RUS$#!"
  je_afghan_unification_appeal_to_russia_button_desc: "Požádat ruskou vládu, aby nám poskytla pomoc se znovusjednocením Afghánistánu."
@@ -112,7 +112,7 @@
  status_quo_southeast_tt: "Současná #bold jihovýchodní#! hranice země #v $AFG$#! zůstane nezměněna"
  harsh_relations_penalty_afghanistan_tt: "Obě vyjednávající mocnosti mohou naplnit své hrozby #bold vojenskou odvetou#!"
  harsh_relations_penalty_negotiating_power_tt: "#v $AFG$#! ignorovalo naše hrozby #bold vojenskou odvetou#!"
- if_treaty_process_fails_relations_hit_tt: "Pokud #v $AFG$#! odmítne tento #bold návrh smlouvy#!, naše [Concept('concept_relations','vztahy')] se výrazně zhorší" # todo: CONCEPT CASE
+ if_treaty_process_fails_relations_hit_tt: "Pokud #v $AFG$#! odmítne tento #bold návrh smlouvy#!, naše [Concept('concept_relations','vztahy')] se výrazně zhorší"
  conflicting_treaty_proposal_north_tt: "Náš #bold návrh smlouvy#! pro #bold severní hranici#! není v rozporu s [SCOPE.sCountry('rival_gp_scope').GetAdjective] návrhem"
  conflicting_treaty_proposal_southwest_tt: "Náš #bold návrh smlouvy#! pro #bold jihozápadní hranici#! není v rozporu s [SCOPE.sCountry('rival_gp_scope').GetAdjective] návrhem"
  is_not_already_negotiating_tt: "O tomto bodu se již nejedná"
@@ -120,8 +120,8 @@
  je_consolidate_afghanistan_resolve_northern_conflict_desc: "Sjednotit rozdíly mezi naším návrhem pro sever Afghánistánu a návrhem našeho protivníka."
  je_consolidate_afghanistan_resolve_southwest_conflict: "Vyřešit konflikt o jihozápadní hranici"
  je_consolidate_afghanistan_resolve_southwest_conflict_desc: "Sjednotit rozdíly mezi naším návrhem pro jihozápad Afghánistánu a návrhem našeho protivníka."
- AFG_no_other_afghan_nation_appealing_rus_tt: "Žádná jiná afghánská [Concept('concept_country','země')] se v současnosti neobrací na #v $RUS$#!" # todo: CONCEPT CASE
- AFG_no_other_afghan_nation_appealing_gbr_tt: "Žádná jiná afghánská [Concept('concept_country','země')] se v současnosti neobrací na #v $GBR$#!" # todo: CONCEPT CASE
+ AFG_no_other_afghan_nation_appealing_rus_tt: "Žádná jiná afghánská [Concept('concept_country','země')] se v současnosti neobrací na #v $RUS$#!"
+ AFG_no_other_afghan_nation_appealing_gbr_tt: "Žádná jiná afghánská [Concept('concept_country','země')] se v současnosti neobrací na #v $GBR$#!"
  not_receiving_aid_tt: "Již nepřijímá zahraniční vojenskou pomoc"
  abandon_proposed_torkestan_line_tt: "Náš #bold návrh smlouvy#! na získání #bold Torkestánských hor#! bude odstraněn"
  abandon_proposed_amu_darya_line_tt: "Náš #bold návrh smlouvy#! pro #bold hranici na Amudarji#! bude odstraněn"
@@ -139,9 +139,9 @@
  notification_afghanistan_assistance_request_rejected_tooltip: "#header $notification_afghanistan_assistance_request_rejected_name$#!\n$TOOLTIP_DELIMITER$\n$notification_afghanistan_assistance_request_rejected_desc$"
  AFG_GBR_support_request_rejected_tt: "V posledních #variable 10 letech#! se neobrátila na #v $GBR$#! s žádostí o podporu"
  AFG_RUS_support_request_rejected_tt: "V posledních #variable 10 letech#! se neobrátila na #v $RUS$#! s žádostí o podporu"
- AFG_appeal_accept_tt: "Bude pravděpodobnější, že s vámi budou usilovat o pozitivní vztahy, a budete jim dlužit [Concept('concept_obligation','závazek')]" # todo: CONCEPT CASE
+ AFG_appeal_accept_tt: "Bude pravděpodobnější, že s vámi budou usilovat o pozitivní vztahy, a budete jim dlužit [Concept('concept_obligation','závazek')]"
  gg_afghanistan.1.t: "[SCOPE.sCountry('gp_scope').GetAdjectiveNoFormatting]-[SCOPE.sCountry('rival_gp_scope').GetAdjectiveNoFormatting] dohoda"
- gg_afghanistan.1.d: "[Concept('concept_great_power','Velmoc')] zemí [SCOPE.sCountry('gp_scope').GetName] a [SCOPE.sCountry('rival_gp_scope').GetName] se vzájemně dohodly na plánu „vyřešit dlouhodobé hraniční spory v Afghánistánu“. Navrhovaná smlouva požaduje ústupky od našeho národa." # todo: CONCEPT CASE
+ gg_afghanistan.1.d: "[Concept('concept_great_power','$concept_great_powers$')] zemí [SCOPE.sCountry('gp_scope').GetName] a [SCOPE.sCountry('rival_gp_scope').GetName] se vzájemně dohodly na plánu „vyřešit dlouhodobé hraniční spory v Afghánistánu“. Navrhovaná smlouva požaduje ústupky od našeho národa."
  gg_afghanistan.1.f: "Tón odpovídal dokumentu, který otřese světem a přinese regionu mír na celá staletí. Každý ústupek ze strany [ROOT.GetCountry.GetNameNoFormatting] byl formulován jako laskavost jedné ze soupeřících mocností, jako převod země nárokované jednou z těch dvou lidem, kteří ji už obývali. Velvyslanec přemítal, že je s podivem, že [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] byl o této dohodě vůbec informován."
  gg_afghanistan.1.a: "Nemáme jinou možnost než přijmout."
  gg_afghanistan.1.b: "Vzneseme co nejdůraznější námitku."
@@ -182,11 +182,11 @@
  je_secure_persian_border_reason: "Přítomnost povstaleckých států na severním Kavkaze ohrožuje naši kontrolu nad regionem, a tím i naši schopnost promítat moc na Blízkém východě. Dlouhotrvající kavkazská válka musí skončit způsobem příznivým pro náš národ."
  je_codify_chinese_border: "Kodifikovat čínskou hranici"
  je_codify_chinese_border_reason: "Naše hranice s Čínou je dlouhá a neformalizovaná. Snaha vytyčit formální hranici mezi naším státem a Čínou by mohla umožnit štědré převody území pod naši kontrolu a přinést minimální riziko budoucích hraničních konfliktů."
- china_doesnt_have_claim_tt: "Žádná cizí [Concept('concept_country','země')] nemá [Concept('concept_claim','nárok')] na [SCOPE.sStateRegion('amur_scope').GetName], [SCOPE.sStateRegion('primorye_scope').GetName], [SCOPE.sStateRegion('jetisy_scope').GetName] ani [SCOPE.sStateRegion('altai_scope').GetName]" # todo: CONCEPT CASE
+ china_doesnt_have_claim_tt: "Žádná cizí [Concept('concept_country','země')] nemá [Concept('concept_claim','nárok')] na [SCOPE.sStateRegion('amur_scope').GetName], [SCOPE.sStateRegion('primorye_scope').GetName], [SCOPE.sStateRegion('jetisy_scope').GetName] ani [SCOPE.sStateRegion('altai_scope').GetName]"
  je_consolidate_central_asia: "Konsolidovat středoasijské državy"
- je_consolidate_central_asia_reason: "Region Střední Asie byl dlouho mimo naši kontrolu a spravovala jej směsice různorodých chanátů a emirátů. Abychom zajistili přístup k Indii, musíme zajistit podrobení středoasijských států, ať už jako [Concept('concept_subject','závislé země')], nebo přímým dobytím." # todo: CONCEPT CASE
- owned_by_this_country_or_subjects_tt: "Je vlastněno zemí [ROOT.GetCountry.GetName] nebo jejími [Concept('concept_subject','závislou zemí')]" # todo: CONCEPT CASE
- completely_owned_by_this_country_or_subjects_tt: "Je zcela vlastněno zemí [ROOT.GetCountry.GetName] nebo jejími [Concept('concept_subject','závislou zemí')]" # todo: CONCEPT CASE
+ je_consolidate_central_asia_reason: "Region Střední Asie byl dlouho mimo naši kontrolu a spravovala jej směsice různorodých chanátů a emirátů. Abychom zajistili přístup k Indii, musíme zajistit podrobení středoasijských států, ať už jako [Concept('concept_subject', '$concept_subjects$')], nebo přímým dobytím."
+ owned_by_this_country_or_subjects_tt: "Je vlastněno zemí [ROOT.GetCountry.GetName] nebo jejími [Concept('concept_subject', '$concept_subjects$')]"
+ completely_owned_by_this_country_or_subjects_tt: "Je zcela vlastněno zemí [ROOT.GetCountry.GetName] nebo jejími [Concept('concept_subject', '$concept_subjects$')]"
  je_chinese_concessions: "Získat mandžuské koncese"
  je_chinese_concessions_reason: "Region Mandžuska obsahuje několik oblastí, které mohou sloužit jako cenné nezamrzající přístavy. Získání smluvních koncesí a výstavba železnic v regionu nesmírně prospějí našemu promítání moci v Tichém oceánu."
  owned_by_russia_or_chinese_country: "Stát je vlastněn touto zemí nebo jinou zemí s $manchu$ či $han$ [Concept('concept_primary_cultures','primárními kulturami')]" # todo: CONCEPT CASE
@@ -199,8 +199,8 @@
  capital_in_various_east_asian_regions_tt: "[Concept('concept_capital_state','Hlavní město')] je ve [Concept('concept_strategic_region','strategickém regionu')] #bold Japonsko#!, #bold Mandžusko#!, #bold Severní Čína#!, #bold Jižní Čína#! nebo #bold Indonésie#!" # todo: CONCEPT CASE
  je_consolidate_british_india: "Rozšířit Britskou Indii"
  je_consolidate_british_india_reason: "Existence nezávislých států na okrajích země [SCOPE.sCountry('india_scope').GetName] představuje příležitost rozšířit a obohatit naše kolonie v regionu a zároveň odstranit možné cesty, kterými by naši protivníci mohli ohrozit vysoce výnosné země Indie."
- raj_expanded_westward_tt: "Všechny [Concept('concept_country','země')] v oblasti [GetGeographicRegion('geographic_region_india').GetName] jsou [Concept('concept_subject','závislé země')] země [SCOPE.sCountry('britain_scope').GetName] nebo jejích závislých zemí" # todo: CONCEPT CASE
- raj_expanded_eastwards_tt: "Všechny [Concept('concept_state','státy')] v oblasti [GetGeographicRegion('geographic_region_burma').GetName] jsou kontrolovány zemí [SCOPE.sCountry('britain_scope').GetName] nebo jejími [Concept('concept_subject','závislou zemí')]" # todo: CONCEPT CASE
+ raj_expanded_westward_tt: "Všechny [Concept('concept_country', '$concept_countries$')] v oblasti [GetGeographicRegion('geographic_region_india').GetName] jsou [Concept('concept_subject', '$concept_subjects$')] země [SCOPE.sCountry('britain_scope').GetName] nebo jejích závislých zemí"
+ raj_expanded_eastwards_tt: "Všechny [Concept('concept_state', '$concept_states$')] v oblasti [GetGeographicRegion('geographic_region_burma').GetName] jsou kontrolovány zemí [SCOPE.sCountry('britain_scope').GetName] nebo jejími [Concept('concept_subject', '$concept_subjects$')]"
  je_pamir_expedition_objective: "Zpochybnit ruský Pamír"
  je_pamir_expedition_objective_reason: "Nedávná ruská expanze do pamírských hor představuje nesnesitelnou hrozbu pro naše zájmy v Indii. Vytvoření nárazníkového státu v Tádžikistánu by ponížilo Rusko a poskytlo našim zájmům jižně od Pamíru trochu prostoru k nadechnutí, avšak za cenu vysokého rizika #bold přímé války#! mezi #v $RUS$#! a #v $GBR$#!.\n\nTuto možnost je třeba prozkoumat opatrně."
  pamir_expedition_dismissed_tt: "Tuto možnost #bold zavrhneme#!"
@@ -217,17 +217,17 @@
  great_game_core_progress_bar_russia_desc: "[GetGlobalVariable('great_game_rus_progress').GetValue|1]#!"
  je_great_game_control: "Velká hra"
  je_great_game_control_reason: "Postup směrem #bold vlevo#! na ukazateli bude prospívat #v $GBR$#!, zatímco postup směrem #bold vpravo#! bude prospívat #v $RUS$#!.\n\nPočátkem devatenáctého století se #bold Velká hra#! stala obecným označením pro konflikty mezi #v $GBR$#! a #v $RUS$#! o vliv nad oblastí [GetGeographicRegion('geographic_region_central_asia_old').GetName] a jejím okolím. Jelikož obě vlády považují úplné vojenské vítězství nad tou druhou za nemožné, začala se #bold Velká hra#! vést prostřednictvím řady nepřímých střetů o vliv nad zeměmi ležícími na linii mezi oběma národy.\n\n#bold Vítězství:#!\n[SCOPE.GetRootScope.GetCountry.GetCustom('great_game_victory_caucasus')][SCOPE.GetRootScope.GetCountry.GetCustom('great_game_victory_kazakhstan')][SCOPE.GetRootScope.GetCountry.GetCustom('great_game_victory_khanates')][SCOPE.GetRootScope.GetCountry.GetCustom('great_game_victory_afghanistan')][SCOPE.GetRootScope.GetCountry.GetCustom('great_game_victory_persia')][SCOPE.GetRootScope.GetCountry.GetCustom('great_game_victory_korea')]\n#bold Postupy:#!\n#variable Rusko#! - prosazena Turkmenčajská smlouva\n#variable Británie#! - úspěšná expedice do Buchary\n[SCOPE.GetRootScope.GetCountry.GetCustom('great_game_advance_chinese_border')][SCOPE.GetRootScope.GetCountry.GetCustom('great_game_advance_consolidated_british_india')][SCOPE.GetRootScope.GetCountry.GetCustom('great_game_advance_manchurian_railway')][SCOPE.GetRootScope.GetCountry.GetCustom('great_game_advance_contained_russian_pacific')][SCOPE.GetRootScope.GetCountry.GetCustom('great_game_advance_trans_siberian_railway')]"
- europeans_expelled_from_casia_tt: "Ani #v $RUS$#!, ani #v $GBR$#! nemají žádné [Concept('concept_subject','závislé země')] ani vlastněné [Concept('concept_state','státy')] ve [Concept('concept_strategic_region','strategickém regionu')] [GetGeographicRegion('geographic_region_central_asia_old').GetName] nebo [GetGeographicRegion('geographic_region_persia_old').GetName]" # todo: CONCEPT CASE
+ europeans_expelled_from_casia_tt: "Ani #v $RUS$#!, ani #v $GBR$#! nemají žádné [Concept('concept_subject', '$concept_subjects$')] ani vlastněné [Concept('concept_state', '$concept_states$')] ve [Concept('concept_strategic_region','$concept_strategic_regions$')] [GetGeographicRegion('geographic_region_central_asia_old').GetName] nebo [GetGeographicRegion('geographic_region_persia_old').GetName]"
  gg_drift_towards_britain: "#v $GBR$#!"
  gg_drift_towards_russia: "#v $RUS$#!"
  gg_drift_towards_nobody: "#v žádná strana#!"
- capital_in_persia_or_casia_tt: "[Concept('concept_capital_state','Hlavní město')] je v [SCOPE.sStrategicRegion('central_asia_region').GetName] nebo [SCOPE.sStrategicRegion('persia_region').GetName]" # todo: CONCEPT CASE
- any_casia_country_recognised_tt: "Země, jejíž [Concept('concept_capital_state','hlavní město')] je v [SCOPE.sStrategicRegion('central_asia_region').GetName] nebo [SCOPE.sStrategicRegion('persia_region').GetName], dosáhla statusu [Concept('concept_recognized_power','uznané mocnosti')] a hodnosti [Concept('concept_major_power','regionální mocnost')] nebo vyšší" # todo: CONCEPT CASE
- great_game_core_progress_bar_RUS_prestige: "#v Ruská#! [Concept('concept_prestige','prestiž')]" # todo: CONCEPT CASE
- great_game_core_progress_bar_GBR_prestige: "#v Britská#! [Concept('concept_prestige','prestiž')]" # todo: CONCEPT CASE
- great_game_core_progress_bar_military_balance: "Poměr armádní [Concept('concept_power_projection','projekce síly')]" # todo: CONCEPT CASE
- great_game_core_progress_bar_prestige_balance: "Poměr [Concept('concept_prestige','prestiž')]" # todo: CONCEPT CASE
- great_game_core_progress_passive_balance: "poměr přímo kontrolovaného nebo [Concept('concept_subject','závislá země')] kontrolovaného [Concept('concept_gdp','hrubého domácího produktu')] ve [Concept('concept_strategic_region','strategickém regionu')] #v Persie#! nebo #v Střední Asie#!\n(#v $GBR$#!: [GetGlobalVariable('great_game_british_passive_var').GetValue|v1%]#!, #v $RUS$#!: [GetGlobalVariable('great_game_russian_passive_var').GetValue|v1%]#!)" # todo: CONCEPT CASE
+ capital_in_persia_or_casia_tt: "[Concept('concept_capital_state','Hlavní město')] je v [SCOPE.sStrategicRegion('central_asia_region').GetName] nebo [SCOPE.sStrategicRegion('persia_region').GetName]"
+ any_casia_country_recognised_tt: "Země, jejíž [Concept('concept_capital_state','hlavní město')] je v [SCOPE.sStrategicRegion('central_asia_region').GetName] nebo [SCOPE.sStrategicRegion('persia_region').GetName], dosáhla statusu [Concept('concept_recognized_power','$concept_recognized_power_short$')] a hodnosti [Concept('concept_major_power','regionální mocnost')] nebo vyšší"
+ great_game_core_progress_bar_RUS_prestige: "#v Ruská#! [Concept('concept_prestige','prestiž')]"
+ great_game_core_progress_bar_GBR_prestige: "#v Britská#! [Concept('concept_prestige','prestiž')]"
+ great_game_core_progress_bar_military_balance: "Poměr armádní [Concept('concept_power_projection','projekce síly')]"
+ great_game_core_progress_bar_prestige_balance: "Poměr [Concept('concept_prestige','prestiž')]"
+ great_game_core_progress_passive_balance: "poměr přímo kontrolovaného nebo [Concept('concept_subject','závislá země')] kontrolovaného [Concept('concept_gdp','hrubého domácího produktu')] ve [Concept('concept_strategic_region','$concept_strategic_regions$')] #v Persie#! nebo #v Střední Asie#!\n(#v $GBR$#!: [GetGlobalVariable('great_game_british_passive_var').GetValue|v1%]#!, #v $RUS$#!: [GetGlobalVariable('great_game_russian_passive_var').GetValue|v1%]#!)" # todo: CONCEPT CASE
  great_game_complete_tt: "#bold Velká hra#! skončila, přičemž každá země v [Concept('concept_georegion','$concept_geogregions$')] [GetGeographicRegion('geographic_region_caucasus').GetName], [GetGeographicRegion('geographic_region_central_asia').GetName] a [GetGeographicRegion('geographic_region_greater_persia').GetName] je [Concept('concept_subject','závislá země')] nebo členem [Concept('concept_power_bloc','mocenského bloku')] buď #v $RUS$#!, nebo #v $GBR$#!" # todo: CONCEPT CASE
  outcome_depends_on_score_tt: "#bold Výsledek#! #bold Velké hry#! bude záviset na poměru #bold ukazatele pokroku#!"
  gg_caucasian_war_russian: "#bold Kavkazská válka#! - #variable ruské#! vítězství\n"
@@ -266,16 +266,16 @@
  gg_pacific_containment_british: "#variable Británie#! - dosáhla tichomořského obklíčení\n"
  gg_trans_siberian_railway_blank: ""
  gg_trans_siberian_railway_russian: "#variable Rusko#! - vybudovalo Transsibiřskou magistrálu\n"
- je_secure_persian_border_complete_tt: "[Concept('concept_journal_entry','Záznam v deníku')] #bold Kavkazská válka#! byl #bold úspěšně dokončen#!" # todo: CONCEPT CASE
- je_secure_persian_border_fail_tt: "[Concept('concept_journal_entry','Záznam v deníku')] #bold Kavkazská válka#! #bold selhal#!" # todo: CONCEPT CASE
- je_pacify_kazakh_steppes_success_tt: "[Concept('concept_journal_entry','Záznam v deníku')] #bold Pacifikace stepí#! byl #bold úspěšně dokončen#! nebo bylo #bold Kazašské povstání#! #bold poraženo#!" # todo: CONCEPT CASE
+ je_secure_persian_border_complete_tt: "[Concept('concept_journal_entry','Záznam v deníku')] #bold Kavkazská válka#! byl #bold úspěšně dokončen#!"
+ je_secure_persian_border_fail_tt: "[Concept('concept_journal_entry','Záznam v deníku')] #bold Kavkazská válka#! #bold selhal#!"
+ je_pacify_kazakh_steppes_success_tt: "[Concept('concept_journal_entry','Záznam v deníku')] #bold Pacifikace stepí#! byl #bold úspěšně dokončen#! nebo bylo #bold Kazašské povstání#! #bold poraženo#!"
  je_pacify_kazakh_steppes_fail_tt: "#bold Kazašské povstání#! úspěšně vypudilo #bold ruský#! vliv z #variable jednoho nebo více#! žüzů"
  pacify_the_steppe_modifier: "Ruský boj proti povstalcům"
  je_the_eastern_border_treaty_of_aigun: "Předložit Ajgunskou smlouvu"
  je_the_eastern_border_treaty_of_aigun_desc: "Území #bold Amuru#! je fakticky izolováno od zbytku Číny a zralé k osídlení. Vojenské posílení ve východní Sibiři by mělo představovat dostatečnou hrozbu, aby čínská vláda území vydala bez konfliktu."
  obligation_for_amur_tt: "Vyměníme náš závazek za #bold Amur#!."
  transfer_of_amur_tt: "Budeme požadovat předání #bold Amuru#! pod ruskou vládu."
- east_siberia_formation_tt: "Kterákoli [Concept('concept_army','armáda')] ve [Concept('concept_hq','HQ')] strategické oblasti [SCOPE.sStrategicRegion('east_siberia_region').GetName] má více než #variable 20#! [Concept('concept_unit','vojenské jednotky')]" # todo: CONCEPT CASE
+ east_siberia_formation_tt: "Kterákoli [Concept('concept_army','armáda')] ve [Concept('concept_hq','HQ')] strategické oblasti [SCOPE.sStrategicRegion('east_siberia_region').GetName] má více než #variable 20#! [Concept('concept_unit','$concept_units$')]"
  owes_russia_obligation_tt: "Dluží #bold Rusku#! závazek"
  great_game_points_russia_increases_10_tt: "Rovnováha #bold Velké hry#! se posune směrem k #v $RUS$#! o #variable 10#! bodů"
  great_game_points_russia_increases_15_tt: "Rovnováha #bold Velké hry#! se posune směrem k #v $RUS$#! o #variable 15#! bodů"
@@ -418,48 +418,48 @@
  movement_events.15.f: "Většina z nich měla alespoň jednu modřinu, rozseknutý ret nebo krvavý nos. Ten jeho byl získán mnohem méně čestně než u většiny ostatních. Při útěku k východu narazil bokem do rohu stolu, jen aby vzápětí málem vrazil přímo do blížícího se četníka. V mysli se mu vynořily dvě protichůdné verze. Jedna, kterou řekne detektivovi, a druhá, kterou řekne přátelům."
  movement_events.15.a: "Dejte jim všem den ve vězení, aby vychladli."
  movement_events.15.b: "Vznést obvinění proti organizátorům akce."
- preferred_igs_in_government: "Kompatibilní [Concept('concept_interest_group','zájmové skupiny')] [Concept('concept_in_government','ve vládě')]" # todo: CONCEPT CASE
+ preferred_igs_in_government: "Kompatibilní [Concept('concept_interest_group','$concept_interest_groups$')] [Concept('concept_in_government','ve vládě')]"
  member_of_lobby: "Již je členem tohoto $concept_political_lobby$"
- enacted_laws: "Přijaté [SCOPE.sCountry('target_country').GetAdjectiveNoFormatting] [Concept('concept_law','zákony')]" # todo: CONCEPT CASE
- primary_culture_similarity: "Kompatibilita [Concept('concept_primary_cultures','primární kultury')]" # todo: CONCEPT CASE
- religion_opinion: "[SCOPE.sCountry('target_country').GetAdjectiveNoFormatting] názor na [SCOPE.sCountry('country').GetAdjectiveNoFormatting] [Concept('concept_state_religion','státní náboženství')]" # todo: CONCEPT CASE
- aligned_igs_in_government: "Sladěné [Concept('concept_interest_group','zájmové skupiny')] [Concept('concept_in_government','ve vládě')]" # todo: CONCEPT CASE
+ enacted_laws: "Přijaté [SCOPE.sCountry('target_country').GetAdjectiveNoFormatting] [Concept('concept_law', '$concept_laws$')]"
+ primary_culture_similarity: "Kompatibilita [Concept('concept_primary_cultures','primární kultury')]"
+ religion_opinion: "[SCOPE.sCountry('target_country').GetAdjectiveNoFormatting] názor na [SCOPE.sCountry('country').GetAdjectiveNoFormatting] [Concept('concept_state_religion','státní náboženství')]"
+ aligned_igs_in_government: "Sladěné [Concept('concept_interest_group','$concept_interest_groups$')] [Concept('concept_in_government','ve vládě')]"
  communist_solidarity: "Komunistická solidarita"
  baseline_opposition_to_communism: "Ostražitost vůči komunismu"
  anti_communism: "Antikomunismus"
- relations_less_than_cordial: "Negativní [Concept('concept_relations','vztahy')]" # todo: CONCEPT CASE
- relations_cordial_or_better: "[Concept('concept_relations','Vztahy')] jsou #bold srdečné#! nebo lepší" # todo: CONCEPT CASE
+ relations_less_than_cordial: "Negativní [Concept('concept_relations','vztahy')]"
+ relations_cordial_or_better: "[Concept('concept_relations','Vztahy')] jsou #bold srdečné#! nebo lepší"
  republican_solidarity: "Republikánská solidarita"
  republican_anti_monarchism: "Republikánské nálady"
  orleanist_anglophilia: "Orléanistická anglofilie"
  bonapartist_revanchism: "Bonapartistický revanšismus"
  hostile_country_attitude: "Nepřátelský postoj"
  friendly_country_attitude: "Přátelský postoj"
- claimed_states: "[SCOPE.sCountry('country').GetAdjectiveNoFormatting] [Concept('concept_claim','Nárok')] na [SCOPE.sCountry('target_country').GetAdjectiveNoFormatting] [Concept('concept_state','stát')]" # todo: CONCEPT CASE
+ claimed_states: "[SCOPE.sCountry('country').GetAdjectiveNoFormatting] [Concept('concept_claim', '$concept_claims$')] na [SCOPE.sCountry('target_country').GetAdjectiveNoFormatting] [Concept('concept_state', '$concept_states$')]"
  pacifist_ideology: "Pacifistická ideologie"
  jingoist_ideology: "Šovinistická ideologie"
- target_power_rank: "[Concept('concept_rank','Hodnost')] země [SCOPE.sCountry('target_country').GetNameNoFormatting]" # todo: CONCEPT CASE
+ target_power_rank: "[Concept('concept_rank','Hodnost')] země [SCOPE.sCountry('target_country').GetNameNoFormatting]"
  target_higher_power_rank: "[SCOPE.sCountry('target_country').GetNameNoFormatting] má vyšší [Concept('concept_rank','hodnosti')] než [SCOPE.sCountry('country').GetNameNoFormatting]" # todo: CONCEPT CASE
  target_lower_power_rank: "[SCOPE.sCountry('target_country').GetNameNoFormatting] má nižší [Concept('concept_rank','hodnosti')] než [SCOPE.sCountry('country').GetNameNoFormatting]" # todo: CONCEPT CASE
- target_great_power_rank: "[SCOPE.sCountry('target_country').GetNameNoFormatting] je [Concept('concept_great_power','velmoc')]" # todo: CONCEPT CASE
- target_major_power_rank: "[SCOPE.sCountry('target_country').GetNameNoFormatting] je [Concept('concept_major_power','regionální mocnost')]" # todo: CONCEPT CASE
- target_minor_power_rank: "[SCOPE.sCountry('target_country').GetNameNoFormatting] je [Concept('concept_minor_power','lokální mocnost')] nebo nižší" # todo: CONCEPT CASE
+ target_great_power_rank: "[SCOPE.sCountry('target_country').GetNameNoFormatting] je [Concept('concept_great_power','velmoc')]"
+ target_major_power_rank: "[SCOPE.sCountry('target_country').GetNameNoFormatting] je [Concept('concept_major_power','regionální mocnost')]"
+ target_minor_power_rank: "[SCOPE.sCountry('target_country').GetNameNoFormatting] je [Concept('concept_minor_power','lokální mocnost')] nebo nižší"
  in_same_power_bloc: "Ve stejném [Concept('concept_power_bloc','mocenském bloku')]" # todo: CONCEPT CASE
  not_in_same_power_bloc: "V jiném [Concept('concept_power_bloc','mocenském bloku')]" # todo: CONCEPT CASE
- funding_lobbies: "[SCOPE.sCountry('target_country').GetNameNoFormatting] [Concept('concept_fund_lobbies','Financování lobbistů')] v zemi [SCOPE.sCountry('country').GetNameNoFormatting]" # todo: CONCEPT CASE
- rival_funding_lobbies: "[SCOPE.sCountry('target_country').GetAdjectiveNoFormatting] [Concept('concept_rivalry','Rival')] [Concept('concept_fund_lobbies','Financování lobbistů')] v zemi [SCOPE.sCountry('country').GetNameNoFormatting]" # todo: CONCEPT CASE
+ funding_lobbies: "[SCOPE.sCountry('target_country').GetNameNoFormatting] [Concept('concept_fund_lobbies','$concept_funding_lobbies$')] v zemi [SCOPE.sCountry('country').GetNameNoFormatting]"
+ rival_funding_lobbies: "[SCOPE.sCountry('target_country').GetAdjectiveNoFormatting] [Concept('concept_rivalry','$concept_rival$')] [Concept('concept_fund_lobbies','$concept_funding_lobbies$')] v zemi [SCOPE.sCountry('country').GetNameNoFormatting]"
  from_liberty_desire: "Z [Concept('concept_liberty_desire','touhy po svobodě')]" # todo: CONCEPT CASE
- low_liberty_desire: "Nízká [Concept('concept_liberty_desire','touha po svobodě')]" # todo: CONCEPT CASE
- relations_negative: "Negativní [Concept('concept_relations','vztahy')]" # todo: CONCEPT CASE
- is_power_bloc_leader: "[SCOPE.sCountry('target_country').GetNameNoFormatting] je [Concept('concept_power_bloc_leader','vůdce')] [Concept('concept_power_bloc','mocenský blok')], v němž je [SCOPE.sCountry('country').GetNameNoFormatting]" # todo: CONCEPT CASE
- economic_dependence_for_upper_classes: "Dopad [Concept('concept_economic_dependence','ekonomická závislost')] na [Concept('concept_upper_strata','vyšší třídu')] ze zvýšeného přístupu ke [Concept('concept_good','zboží')] ze země [SCOPE.sCountry('target_country').GetNameNoFormatting]" # todo: CONCEPT CASE
- economic_dependence_for_middle_classes: "Dopad [Concept('concept_economic_dependence','ekonomická závislost')] na [Concept('concept_middle_strata','střední třídu')] ze zvýšeného přístupu ke [Concept('concept_good','zboží')] ze země [SCOPE.sCountry('target_country').GetNameNoFormatting]" # todo: CONCEPT CASE
- economic_dependence_for_lower_classes: "Dopad [Concept('concept_economic_dependence','ekonomická závislost')] na [Concept('concept_lower_strata','nižší třídu')] z vytlačování v [Concept('concept_good','zboží')] ze strany země [SCOPE.sCountry('target_country').GetNameNoFormatting]" # todo: CONCEPT CASE
+ low_liberty_desire: "Nízká [Concept('concept_liberty_desire','touha po svobodě')]"
+ relations_negative: "Negativní [Concept('concept_relations','vztahy')]"
+ is_power_bloc_leader: "[SCOPE.sCountry('target_country').GetNameNoFormatting] je [Concept('concept_power_bloc_leader','$concept_power_bloc_leader_extra_short$')] [Concept('concept_power_bloc','mocenský blok')], v němž je [SCOPE.sCountry('country').GetNameNoFormatting]"
+ economic_dependence_for_upper_classes: "Dopad [Concept('concept_economic_dependence','ekonomická závislost')] na [Concept('concept_upper_strata','vyšší třídu')] ze zvýšeného přístupu ke [Concept('concept_good', '$concept_goods$')] ze země [SCOPE.sCountry('target_country').GetNameNoFormatting]" # todo: CONCEPT CASE
+ economic_dependence_for_middle_classes: "Dopad [Concept('concept_economic_dependence','ekonomická závislost')] na [Concept('concept_middle_strata','střední třídu')] ze zvýšeného přístupu ke [Concept('concept_good', '$concept_goods$')] ze země [SCOPE.sCountry('target_country').GetNameNoFormatting]" # todo: CONCEPT CASE
+ economic_dependence_for_lower_classes: "Dopad [Concept('concept_economic_dependence','ekonomická závislost')] na [Concept('concept_lower_strata','nižší třídu')] z vytlačování v [Concept('concept_good', '$concept_goods$')] ze strany země [SCOPE.sCountry('target_country').GetNameNoFormatting]" # todo: CONCEPT CASE
  colonial_rule: "Koloniální správci"
  colonial_subjects: "Koloniální subjekty"
- POP_ACCEPTANCE: "[Concept('concept_acceptance','Přijetí')] [Concept('concept_pop','Populace')|l]" # todo: CONCEPT CASE
- POP_HIGH_ACCEPTANCE: "Vysoké [Concept('concept_acceptance','přijetí')|l] [Concept('concept_pop','populace')|l]" # todo: CONCEPT CASE
- POP_LOW_ACCEPTANCE: "Nízké [Concept('concept_acceptance','přijetí')|l] [Concept('concept_pop','populace')|l]" # todo: CONCEPT CASE
+ POP_ACCEPTANCE: "[Concept('concept_acceptance','Přijetí')] [Concept('concept_pop','Populace')|l]"
+ POP_HIGH_ACCEPTANCE: "Vysoké [Concept('concept_acceptance','přijetí')|l] [Concept('concept_pop','populace')|l]"
+ POP_LOW_ACCEPTANCE: "Nízké [Concept('concept_acceptance','přijetí')|l] [Concept('concept_pop','populace')|l]"
  formation_reason_defense: "Národní obrana"
  formation_reason_defense_desc: "Lobby upřednostňuje $formation_reason_defense$"
  formation_reason_diplomacy: "Diplomatické vztahy"
@@ -480,7 +480,7 @@
  lobby_core.1.b: "Ručně spustit katalyzátor."
  lobby_core.1.c: "Ručně vytvořit lobby."
  lobby_core.1.d: "Ručně vytvořit lobby vládce."
- lobby_found_tt: "[Concept('concept_political_lobby','Politické lobby')] založeno v [SCOPE.sCountry('lobby_found_country').GetAltAdjective('L')]" # todo: CONCEPT CASE
+ lobby_found_tt: "[Concept('concept_political_lobby','Politické lobby')] založeno v [SCOPE.sCountry('lobby_found_country').GetAltAdjective('L')]"
  lobby_proposal.1.t: "[SCOPE.sPoliticalLobby('relevant_lobby').GetName] požaduje akci"
  lobby_proposal.1.d: "[SCOPE.sPoliticalLobby('relevant_lobby').GetName] požaduje, abychom [SCOPE.GetRootScope.GetCountry.GetCustom('pro_lobby_demand_text_def')] zemi [SCOPE.sCountry('third_party_country').GetName]. [SCOPE.sCountry('third_party_country').GetNameNoFormatting] je známým protivníkem [SCOPE.sCountry('relevant_country').GetAdjective] zájmů."
  lobby_proposal.1.f: "„Musíme postupovat co nejkomplexněji. Jakýkoli jiný přístup je nezodpovědný. [SCOPE.sCountry('third_party_country').GetAdjectiveNoFormatting] agrese je stará jako svět.“\n\n„Obávám se, že to může působit, jako bychom vlastní národ používali jako figurku na šachovnici ve prospěch cizí mocnosti. Co byste řekl, kdyby na vás naléhali?“\n\n„Okolnostní shoda zájmů nás nepodřídí. V tomto případě jsou [SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting] zájmy náhodou [ROOT.GetCountry.GetAdjectiveNoFormatting] zájmy. Je to tak prosté.“"
@@ -501,34 +501,34 @@
  lobby_proposal.4.f: "Byl to zastřený druh agrese, který by teoreticky mohl oslovit jak zapálené šovinisty, tak ty, kdo dávají přednost zmírňování ztrát. Donutil by nepřítele reagovat a možná by ho vehnal do bezohledného střetu v odpovědi na zdánlivě neškodný manévr.\n\n„Plán bojovat proti [SCOPE.sCountry('relevant_country').GetNameNoFormatting] do posledního [SCOPE.sCountry('third_party_country').GetAdjectiveNoFormatting],“ poznamenal jeden ministr. Zástupce zrudl. Nacvičil si odpovědi pro oba směry, ale žádná se sem docela nehodila."
  lobby_proposal.4.a: "Rádi se tím budeme zabývat."
  lobby_proposal.4.b: "To není v našem zájmu."
- anti_lobby_proposal_embargo_def: "zavést [Concept('concept_embargo','embargo')] proti" # todo: CONCEPT CASE
- anti_lobby_proposal_rivalry_def: "vyhlásit [Concept('concept_rivalry','rivalita')] se zemí" # todo: CONCEPT CASE
- anti_lobby_proposal_war_def: "zahájit [Concept('concept_diplomatic_play','diplomatická hra')] proti" # todo: CONCEPT CASE
- anti_lobby_proposal_leave_power_bloc_def: "opustit [Concept('concept_power_bloc','mocenský blok')] náležející zemi" # todo: CONCEPT CASE
+ anti_lobby_proposal_embargo_def: "zavést [Concept('concept_embargo','embargo')] proti"
+ anti_lobby_proposal_rivalry_def: "vyhlásit [Concept('concept_rivalry','rivalita')] se zemí"
+ anti_lobby_proposal_war_def: "zahájit [Concept('concept_diplomatic_play','diplomatická hra')] proti"
+ anti_lobby_proposal_leave_power_bloc_def: "opustit [Concept('concept_power_bloc','mocenský blok')] náležející zemi"
  anti_lobby_proposal_break_alliance_def: "rozpustit naši [Concept('concept_alliance','alianci')] se zemí" # todo: CONCEPT CASE
- anti_lobby_proposal_revoke_trade_privilege_def: "odebrat [Concept('concept_trade_privilege','obchodní privilegia')] zemi" # todo: CONCEPT CASE
- anti_lobby_proposal_break_defensive_pact_def: "rozpustit náš [Concept('concept_defensive_pact','obranný pakt')] se zemí" # todo: CONCEPT CASE
- pro_lobby_proposal_defensive_pact_def: "navázat [Concept('concept_defensive_pact','obranný pakt')] se zemí" # todo: CONCEPT CASE
- pro_lobby_proposal_alliance_def: "navázat [Concept('concept_alliance','aliance')] se zemí" # todo: CONCEPT CASE
- pro_lobby_proposal_trade_privilege_def: "získat [Concept('concept_trade_privilege','obchodní privilegia')] od země" # todo: CONCEPT CASE
+ anti_lobby_proposal_revoke_trade_privilege_def: "odebrat [Concept('concept_trade_privilege','$concept_trade_privileges$')] zemi"
+ anti_lobby_proposal_break_defensive_pact_def: "rozpustit náš [Concept('concept_defensive_pact','obranný pakt')] se zemí"
+ pro_lobby_proposal_defensive_pact_def: "navázat [Concept('concept_defensive_pact','obranný pakt')] se zemí"
+ pro_lobby_proposal_alliance_def: "navázat [Concept('concept_alliance','aliance')] se zemí"
+ pro_lobby_proposal_trade_privilege_def: "získat [Concept('concept_trade_privilege','$concept_trade_privileges$')] od země"
  pro_lobby_proposal_power_bloc_def: "vstoupit do [Concept('concept_power_bloc','mocenského bloku')] náležícího zemi" # todo: CONCEPT CASE
  pro_lobby_proposal_power_bloc_invite_def: "pozvat do našeho [Concept('concept_power_bloc','mocenského bloku')] zemi" # todo: CONCEPT CASE
- pro_lobby_proposal_investment_agreement_def: "uzavřít dohodu o [Concept('concept_foreign_investment_rights','práva na zahraniční investice')] se zemí" # todo: CONCEPT CASE
- pro_lobby_proposal_military_assistance_def: "poskytnout [Concept('concept_military_assistance','vojenská pomoc')] zemi" # todo: CONCEPT CASE
- lobby_request_ignored: "Požadavek [Concept('concept_political_lobby','lobby')] ignorován" # todo: CONCEPT CASE
- lobby_request_accepted: "Požadavek [Concept('concept_political_lobby','lobby')] přijat" # todo: CONCEPT CASE
+ pro_lobby_proposal_investment_agreement_def: "uzavřít dohodu o [Concept('concept_foreign_investment_rights','práva na zahraniční investice')] se zemí"
+ pro_lobby_proposal_military_assistance_def: "poskytnout [Concept('concept_military_assistance','vojenská pomoc')] zemi"
+ lobby_request_ignored: "Požadavek [Concept('concept_political_lobby','$concept_political_lobby_short$')] ignorován"
+ lobby_request_accepted: "Požadavek [Concept('concept_political_lobby','$concept_political_lobby_short$')] přijat"
  can_reach_country_tt: "Může dosáhnout této země"
  je_pro_lobby_opportunity: "Příležitost lobby"
  je_pro_lobby_opportunity_reason: "[SCOPE.sPoliticalLobby('relevant_lobby').GetName] využila své kontakty, aby naší vládě poskytla příležitost [SCOPE.GetRootScope.GetCountry.GetCustom('pro_lobby_opportunity_text_def')] zemi [SCOPE.sCountry('target').GetName].\n\nJejí úsilí zvýší [SCOPE.sCountry('target').GetAdjectiveNoFormatting] vstřícnost vůči této [Concept('concept_diplomatic_action','diplomatické akci')], ale okno pro tuto příležitost bude otevřené jen po omezenou dobu." # todo: CONCEPT CASE
  je_anti_lobby_opportunity: "Příležitost lobby"
  je_anti_lobby_opportunity_reason: "[SCOPE.sPoliticalLobby('relevant_lobby').GetName] využila své kontakty k vytvoření příležitosti [SCOPE.GetRootScope.GetCountry.GetCustom('anti_lobby_opportunity_text_def')] zemi [SCOPE.sCountry('third_party_country').GetName]. Pokud podle návrhu budeme jednat, pomůže to posílit náš vztah k nepřátelům země [SCOPE.sCountry('target').GetName] a podpoří cíl čelit [SCOPE.sCountry('target').GetAdjectiveNoFormatting] zájmům.\n\nJejí úsilí zvýší [SCOPE.sCountry('third_party_country').GetAdjectiveNoFormatting] vstřícnost vůči této [Concept('concept_diplomatic_action','diplomatické akci')], ale okno pro tuto příležitost bude otevřené jen po omezenou dobu." # todo: CONCEPT CASE
  je_pro_lobby_demand: "Požadavek lobby"
- je_pro_lobby_demand_reason: "[SCOPE.sPoliticalLobby('relevant_lobby').GetName] požaduje, abychom [SCOPE.GetRootScope.GetCountry.GetCustom('pro_lobby_demand_text_def')] zemi [SCOPE.sCountry('third_party_country').GetName], známému protivníkovi země [SCOPE.sCountry('target').GetName]. Pokud podle návrhu budeme jednat, pomůže to prosadit [SCOPE.sCountry('target').GetAdjectiveNoFormatting] zájmy.\n\nÚspěšné splnění jejich požadavku nám získá přízeň [Concept('concept_political_lobby','lobby')], zatímco nesplnění ve vymezeném čase je výrazně rozladí." # todo: CONCEPT CASE
+ je_pro_lobby_demand_reason: "[SCOPE.sPoliticalLobby('relevant_lobby').GetName] požaduje, abychom [SCOPE.GetRootScope.GetCountry.GetCustom('pro_lobby_demand_text_def')] zemi [SCOPE.sCountry('third_party_country').GetName], známému protivníkovi země [SCOPE.sCountry('target').GetName]. Pokud podle návrhu budeme jednat, pomůže to prosadit [SCOPE.sCountry('target').GetAdjectiveNoFormatting] zájmy.\n\nÚspěšné splnění jejich požadavku nám získá přízeň [Concept('concept_political_lobby','$concept_political_lobby_short$')], zatímco nesplnění ve vymezeném čase je výrazně rozladí."
  je_anti_lobby_demand: "Požadavek lobby"
- je_anti_lobby_demand_reason: "[SCOPE.sPoliticalLobby('relevant_lobby').GetName] požaduje, abychom [SCOPE.GetRootScope.GetCountry.GetCustom('anti_lobby_demand_text_def')] zemi [SCOPE.sCountry('target').GetName].\n\nÚspěšné splnění jejich požadavku nám získá přízeň [Concept('concept_political_lobby','lobby')], zatímco nesplnění ve vymezeném čase je výrazně rozladí." # todo: CONCEPT CASE
+ je_anti_lobby_demand_reason: "[SCOPE.sPoliticalLobby('relevant_lobby').GetName] požaduje, abychom [SCOPE.GetRootScope.GetCountry.GetCustom('anti_lobby_demand_text_def')] zemi [SCOPE.sCountry('target').GetName].\n\nÚspěšné splnění jejich požadavku nám získá přízeň [Concept('concept_political_lobby','$concept_political_lobby_short$')], zatímco nesplnění ve vymezeném čase je výrazně rozladí."
  enforced_wargoal_on_rival_tt: "[SCOPE.sCountry('relevant_country').GetName] ustoupila v [Concept('concept_diplomatic_play','diplomatické hře')] proti nám" # todo: CONCEPT CASE
  enforced_wargoal_on_rival_2_tt: "[SCOPE.sCountry('third_party_country').GetName] ustoupila v [Concept('concept_diplomatic_play','diplomatické hře')] proti nám" # todo: CONCEPT CASE
- religion_is_discriminated_tt: "[Concept('concept_religion','Náboženství')] je v této zemi diskriminováno" # todo: CONCEPT CASE
+ religion_is_discriminated_tt: "[Concept('concept_religion','Náboženství')] je v této zemi diskriminováno"
  modifier_lobby_attempt_failed: "Neúspěšné sladění s lobby"
  modifier_disparaged_lobby: "Odmítnutá obhajoba"
  modifier_party_position_rejected: "Stranická platforma odmítnuta"
@@ -734,13 +734,13 @@
  modifier_empress_myeongseong: "Královna Min"
  je_donghak_movement: "Hnutí Tonghak"
  je_donghak_movement_reason: "Tonghak neboli východní učení se začalo šířit mezi [GetPopType('peasants').GetName] země [ROOT.GetCountry.GetName] jako reakce na otevření země okolnímu světu. Stoupenci Tonghaku, často napojení na [SCOPE.gsInterestGroup('donghak_ig').GetName], prosazují rovnost a práva pro všechny a odmítání cizího vlivu.\n\nInfrastruktura, kterou stoupenci Tonghaku vytvořili, se šíří po celé zemi a v budoucnu může sloužit jako prostředek k rychlé organizaci povstání."
- donghak_petition_complete_tt: "Dokončilo [Concept('concept_journal_entry','záznam v deníku')] #bold Kjodžo sinwon#!" # todo: CONCEPT CASE
+ donghak_petition_complete_tt: "Dokončilo [Concept('concept_journal_entry','záznam v deníku')] #bold Kjodžo sinwon#!"
  je_gyojo_shinwon: "Kjodžo sinwon"
  je_gyojo_shinwon_reason: "Stoupenci Tonghaku mezi [SCOPE.gsInterestGroup('donghak_ig').GetName] předložili vládě petici požadující toleranci doktríny Tonghak, vyhnání cizinců a popravu zkorumpovaných členů [SCOPE.gsInterestGroup('yangban_ig').GetName].\n\nSlib vlády, že vyslechne požadavky hnutí, dočasně snížil společenský neklid mezi jeho stoupenci, ale obrátit se k petentům zády jistě povede k obnovení revoluční činnosti."
  je_korean_rebellion: "Korejské povstání"
  je_korean_rebellion_reason: "Povstání propukající napříč zemí [SCOPE.sCountry('korea_scope').GetName] ohrozilo rovnováhu moci v zemi. Svržení [SCOPE.sCharacter('korea_ruler_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('korea_ruler_scope').GetFullName] jistě povede k nezávislosti země [SCOPE.sCountry('korea_scope').GetNameNoFormatting] a k příležitostem pro evropské mocnosti získat vliv na poloostrově."
  korean_ruler_retained_tt: "[SCOPE.sCharacter('korea_ruler_scope').GetFullName] zůstává [SCOPE.sCharacter('korea_ruler_scope').GetPrimaryRoleTitle] země [SCOPE.sCountry('korea_scope').GetName]"
- korean_ruler_deposed_tt: "Vláda země [SCOPE.sCountry('korea_scope').GetName] byla svržena [Concept('concept_revolution','revoluce')]" # todo: CONCEPT CASE
+ korean_ruler_deposed_tt: "Vláda země [SCOPE.sCountry('korea_scope').GetName] byla svržena [Concept('concept_revolution','revoluce')]"
  japan_demands_korea_tt: "Budeme mít příležitost získat #bold dodatečný vliv#! v zemi [SCOPE.sCountry('korea_scope').GetName]"
  je_korean_rebellion_government_victory: "Pro vítězství #b vlády#!:\n" # todo: NEW TRANSLATION
  je_korean_rebellion_on_government_victory: "Při vítězství #b vlády#!:\n$EFFECT$" # todo: NEW TRANSLATION
@@ -753,7 +753,7 @@
  gg_korea.1.d: "[GetPopType('peasants').GetName] inspirovaní filozofií Tonghaku se začali organizovat napříč zemí [ROOT.GetCountry.GetName]. Jejich volání po sociální rovnosti, náboženské toleranci a vyhnání cizího vlivu je stále obtížnější ignorovat."
  gg_korea.1.f: "Když nastal rok Sinju, přicházeli ke mně učenci ze všech stran a ptali se: „Když sestupuje božský duch, mistře, co to znamená?“\n\nOdpověděl jsem: „Obsahuje princip nevyčerpatelného návratu.“\n\n„Jakým jménem tedy máme tuto cestu nazývat?“\n\n„Je to Cesta nebes.“\n\n„Liší se od západní cesty?“\n\n„Západní učení má své odlišnosti, podobné zaříkávadlům bez podstaty. Přesto je pohyb stejný, cesta je jednotná, ale princip nikoli.“" #- Donggyeong Daejeon
  gg_korea.1.a: "Rýsuje se další rolnická válka?"
- gg_korea_effect_tt: "Dokud je aktivní #v Hnutí Tonghak#!, [SCOPE.gsInterestGroup('donghak_ig').GetName] bude posílena a [Concept('concept_revolution','revoluce')] budou pro naši zemi představovat větší hrozbu" # todo: CONCEPT CASE
+ gg_korea_effect_tt: "Dokud je aktivní #v Hnutí Tonghak#!, [SCOPE.gsInterestGroup('donghak_ig').GetName] bude posílena a [Concept('concept_revolution','$concept_revolutions$')] budou pro naši zemi představovat větší hrozbu"
  gg_korea.2.t: "Povstání Tonghak"
  gg_korea.2.d: "Nespokojenost mezi [SCOPE.gsInterestGroup('donghak_ig').GetName] přerostla v počátek otevřeného konfliktu. Napříč zemí [ROOT.GetCountry.GetName] využili rolníci infrastrukturu Tonghaku k organizaci revoluce."
  gg_korea.2.f: "Rozkazy byly rozeslány všem ve městě. Měli co nejrychleji vyrazit do [ROOT.GetCountry.GetCapital.GetCityHubName], vyhnat cizince a zabít každého člena rodiny [SCOPE.sCharacter('gov_leader_scope').GetLastNameNoFormatting].\n\nMěl to být milosrdný pochod, který ušetří nevinné i jejich majetek, zaplatí za zásoby a všem, kdo je uvidí, ukáže jejich loajalitu a zbožnost. Od chování vládních vojáků to bylo tak daleko, jak jen mohlo být."
@@ -791,7 +791,7 @@
  gg_korea.8.f: "„Jangbanové jsou většinou beznadějní, ale někteří ministři jsou vnímaví k modernějším citům.“\n\n„Kdo?“\n\n„[SCOPE.sCharacter('industrialists_leader_scope').GetLastNameNoFormatting], [SCOPE.sCharacter('intelligentsia_leader_scope').GetLastNameNoFormatting], možná [SCOPE.sCharacter('pb_leader_scope').GetLastNameNoFormatting]. Máme spoustu kandidátů na nouzový kabinet. Budou nadšení, že dostanou příležitost prosadit, co se jim zlíbí.“"
  gg_korea.8.a: "Pošlete požadavky."
  gg_korea.8.b: "Neměli bychom ohrozit náš vztah s [SCOPE.sCountry('china_scope').GetAltAdjective('I')]."
- china_demanded_to_cede_korea_tt: "[SCOPE.sCountry('china_scope').GetName] bude muset postoupit #v $KOR$#!, nebo čelit [Concept('concept_war','válka')]" # todo: CONCEPT CASE
+ china_demanded_to_cede_korea_tt: "[SCOPE.sCountry('china_scope').GetName] bude muset postoupit #v $KOR$#!, nebo čelit [Concept('concept_war','válka')]"
  gg_korea.9.t: "[SCOPE.sCountry('japan_scope').GetName] požaduje stažení ze země [SCOPE.sCountry('korea_scope').GetName]"
  gg_korea.9.d: "[SCOPE.sCountry('japan_scope').GetAdjectiveNoFormatting] vláda nám zaslala seznam požadavků, z nichž hlavním je naše stažení ze země [SCOPE.sCountry('korea_scope').GetNameNoFormatting]. Jejich požadavky jsou podpořeny jejich zbývajícími silami na Korejském poloostrově, které se po porážce povstání odmítly stáhnout."
  gg_korea.9.f: "Tiskař hleděl na edikt s jistou hrůzou. Představoval valící se pás kouře, kde každý řádek působil stále zlověstněji. Události směřovaly k temnému crescendu, chaos se stáčel do vzpoury. [SCOPE.sCountry('japan_scope').GetAdjectiveNoFormatting] byli odsouzeni nejpřísnějšími slovy, jejich provinění vyložena jako pušky v popravčí četě.\n\n„Obtížné ospravedlnit“, „nevyprovokované“, „nedostatek uspokojivého vysvětlení“. Mučené eufemismy zneklidněné vlády. Vlády, která se bez náhlé změny kurzu neúprosně unášela k válce."

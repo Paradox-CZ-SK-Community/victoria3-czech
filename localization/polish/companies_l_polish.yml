@@ -5,53 +5,53 @@
  company_category_academic_owned: "Částečné akademické vlastnictví"
  company_category_bureaucrat_owned: "Částečné byrokratické vlastnictví"
  company_category_capitalist_owned_desc: "Plně vlastněna [GetPopType('capitalists').GetName], kteří obdrží celý podíl z [Concept('concept_dividends','dividend')]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- company_category_aristocrat_owned_desc: "Spoluvlastněna [GetPopType('aristocrats').GetName] a [GetPopType('capitalists').GetName], kteří si dělí [Concept('concept_dividends','dividendy')]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- company_category_shopkeeper_owned_desc: "Spoluvlastněna [GetPopType('shopkeepers').GetName] a [GetPopType('capitalists').GetName], s dalším podílem vypláceným pracovníkům jako [Concept('concept_dividends','dividendy')]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
- company_category_academic_owned_desc: "Spoluvlastněna [GetPopType('academics').GetName] a [GetPopType('capitalists').GetName], s dalším podílem vypláceným pracovníkům jako [Concept('concept_dividends','dividendy')]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ company_category_aristocrat_owned_desc: "Spoluvlastněna [GetPopType('aristocrats').GetName] a [GetPopType('capitalists').GetName], kteří si dělí [Concept('concept_dividends','dividendy')]." # todo: NEW TRANSLATION
+ company_category_shopkeeper_owned_desc: "Spoluvlastněna [GetPopType('shopkeepers').GetName] a [GetPopType('capitalists').GetName], s dalším podílem vypláceným pracovníkům jako [Concept('concept_dividends','dividendy')]." # todo: NEW TRANSLATION
+ company_category_academic_owned_desc: "Spoluvlastněna [GetPopType('academics').GetName] a [GetPopType('capitalists').GetName], s dalším podílem vypláceným pracovníkům jako [Concept('concept_dividends','dividendy')]." # todo: NEW TRANSLATION
  company_category_bureaucrat_owned_desc: "Spoluvlastněna [GetPopType('bureaucrats').GetName] a [GetPopType('capitalists').GetName], s dalším podílem vypláceným jako [Concept('concept_government_dividends','vládní dividendy')] do [Concept('concept_treasury','státní pokladny')]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  COMPANY_ESTABLISHED: "Založeno dne #b [Company.GetEstablishmentDate.GetString]#!"
- COMPANIES: "[Concept('concept_company','Společnost')]" # todo: CONCEPT CASE
+ COMPANIES: "[Concept('concept_company','$concept_companies$')]"
  COMPANIES_HEADER: "[SelectLocalization(GetVariableSystem.Exists('hide_current_companies'), 'SELECT_COMPANY', 'COMPANIES')]"
- SELECT_COMPANY: "Vybrat [Concept('concept_company','společnost')]" # todo: CONCEPT CASE
+ SELECT_COMPANY: "Vybrat [Concept('concept_company','společnost')]"
  NO_COMPANIES: "Žádné $COMPANIES$"
  NO_POTENTIAL_COMPANIES: "Žádné potenciální $COMPANIES$"
  COMPANIES_OVERVIEW: "Společnosti"
  POTENTIAL_COMPANIES_OVERVIEW: "Potenciální společnosti"
  BUTTON_COMPANIES_OVERVIEW: "#header Společnosti#!"
- COMPANY_MISSING_TECHNOLOGY_FOR_BUILDINGS: "Musíme mít [Concept('concept_technology','technologie')], abychom mohli postavit alespoň jednu z [Concept('concept_building','budovy')], na které se tato [Concept('concept_company','společnost')] specializuje" # todo: CONCEPT CASE
- COMPANY_MISSING_PRINCIPLE_FOR_BUILDINGS: "Musíme mít [Concept('concept_power_bloc_principle','princíp')], abychom mohli postavit alespoň jednu z [Concept('concept_building','budovy')], na které se tato [Concept('concept_company','společnost')] specializuje" # todo: CONCEPT CASE
+ COMPANY_MISSING_TECHNOLOGY_FOR_BUILDINGS: "Musíme mít [Concept('concept_technology','technologie')], abychom mohli postavit alespoň jednu z [Concept('concept_building', '$concept_buildings$')], na které se tato [Concept('concept_company','společnost')] specializuje"
+ COMPANY_MISSING_PRINCIPLE_FOR_BUILDINGS: "Musíme mít [Concept('concept_power_bloc_principle','princíp')], abychom mohli postavit alespoň jednu z [Concept('concept_building', '$concept_buildings$')], na které se tato [Concept('concept_company','společnost')] specializuje"
  COMPANIES_AMOUNT_HEADER: "[GetPlayer.GetNumCompanies|v]/#tooltippable #tooltip:[GetPlayer.GetTooltipTag],TOOLTIP_MAX_COMPANIES [GetPlayer.GetMaxNumCompanies|v]#!#!"
  TOOLTIP_MAX_COMPANIES: "[Country.GetMaxNumCompaniesDesc]"
  CAN_ESTABLISH_ADDITIONAL_COMPANY: "Můžeme založit další $COMPANIES$"
  CANNOT_ESTABLISH_ADDITIONAL_COMPANY: "Nemůžeme založit další $COMPANIES$"
- COMPANY_NEEDS_BUILDING_POTENTIAL: "Má surovinový potenciál pro alespoň jednu z [Concept('concept_building','budovy')], na které se tato [Concept('concept_company','společnost')] specializuje" # todo: CONCEPT CASE
- COMPANY_CANNOT_ESTABLISH_ON_COOLDOWN: "Tato [Concept('concept_company','společnost')] byla nedávno rozpuštěna, nemůžeme ji znovu založit do [Date.GetString|v]" # todo: CONCEPT CASE
+ COMPANY_NEEDS_BUILDING_POTENTIAL: "Má surovinový potenciál pro alespoň jednu z [Concept('concept_building', '$concept_buildings$')], na které se tato [Concept('concept_company','společnost')] specializuje"
+ COMPANY_CANNOT_ESTABLISH_ON_COOLDOWN: "Tato [Concept('concept_company','společnost')] byla nedávno rozpuštěna, nemůžeme ji znovu založit do [Date.GetString|v]"
  COMPANY_CANNOT_ESTABLISH_NOT_ENOUGH_ASSETS: "Vyžaduje $TOTAL|v$ [SelectLocalization(EqualTo_int32('(int32)$TOTAL$', '(int32)1'),'BUILDING_NATIONALIZE_LEVEL_SINGULAR','BUILDING_NATIONALIZE_LEVEL_PLURAL')] z [SelectLocalization( EqualTo_int32('(int32)$COUNT$', '(int32)1'), '', 'libovolné kombinace ' )]$LIST$ v jednom [Concept('concept_state','státě')], které jsou [Concept('concept_privately_owned','soukromě vlastněno')] nebo [Concept('concept_nationally_owned','národní vlastnictví')] zemí [COUNTRY.GetName] a nejsou vlastněny žádnou [Concept('concept_company','společnost')] (aktuálně $LEVEL|v$)" # todo: CONCEPT CASE
  COMPANY_BUILDING_TYPE_LIST_ITEM: "[BUILDING_TYPE.GetName]"
- COMPANY_CANNOT_ESTABLISH_NO_STATE: "Není k dispozici žádný [Concept('concept_state','stát')] pro [GetBuildingType('building_company_headquarter').GetName]" # todo: CONCEPT CASE
+ COMPANY_CANNOT_ESTABLISH_NO_STATE: "Není k dispozici žádný [Concept('concept_state','stát')] pro [GetBuildingType('building_company_headquarter').GetName]"
  COMPANY_CANNOT_ESTABLISH_BY_COMPANY: "#b Nepovoleno#! pro [GetSubjectType('subject_type_chartered_company').GetName], jako je [Country.GetName]"
- COMPANY_CANNOT_ESTABLISH_IS_INSURRECTIONARY: "[Concept('concept_insurrectionary','Vzpouřenecké')] [Concept('concept_country','Země')] nemohou zakládat [Concept('concept_company','společnosti')]" # todo: CONCEPT CASE
+ COMPANY_CANNOT_ESTABLISH_IS_INSURRECTIONARY: "[Concept('concept_insurrectionary','Vzpouřenecké')] [Concept('concept_country', '$concept_countries$')] nemohou zakládat [Concept('concept_company','$concept_companies$')]"
  COMPANY_FASTPROSPERITY_IS_ACTIVE: "„fastprosperity“ je aktivní"
  COMPANY_PRODUCING_PRESTIGE_GOODS_HEADER: "[SelectLocalization(Company.IsProducingPrestigeGoods,'COMPANY_PRESTIGE_GOODS_ENABLED','COMPANY_PRESTIGE_GOODS_DISABLED')]"
  COMPANY_PRESTIGE_GOODS_DISABLED: "@red_cross! $PRESTIGE_GOODS_CONCEPT$ (#n deaktivováno#!)"
  COMPANY_PRESTIGE_GOODS_ENABLED: "@green_checkmark! $PRESTIGE_GOODS_CONCEPT$"
  COMPANY_PRODUCING_PRESTIGE_GOODS_TOOLTIP: "[Company.GetIsProducingPrestigeGoodsDesc]"
- COMPANY_IS_PRODUCING_PRESTIGE_GOODS_DESC: "#header Výroba [Concept('concept_prestige_good','prestižní zboží')]#!\n@green_checkmark! Výroba $concept_prestige_good$ je pro $COMPANY_NAME$ #p aktivována#!\n$TOOLTIP_DELIMITER$\nVyrábí $PRODUCED_GOODS$\n\n@information! Jakmile bude výroba $concept_prestige_good$ pro společnost aktivována, zůstane od té chvíle trvale aktivní" # todo: CONCEPT CASE
- COMPANY_NOT_PRODUCING_PRESTIGE_GOODS_DESC: "#header Výroba [Concept('concept_prestige_good','prestižní zboží')]#!\n@red_cross! Výroba $concept_prestige_good$ je pro $COMPANY_NAME$ #r deaktivována#!\n$TOOLTIP_DELIMITER$\nBude vyrábět $PRODUCED_GOODS$, pokud budou splněny následující podmínky:\n$DETAILS$" # todo: CONCEPT CASE
- COMPANY_IS_PROSPEROUS: "@green_checkmark_box! $COMPANY_NAME$ je [Concept('concept_prosperity','prosperujúci')]" # todo: CONCEPT CASE
- COMPANY_IS_NOT_PROSPEROUS: "@simple_box! $COMPANY_NAME$ je [Concept('concept_prosperity','prosperujúci')]" # todo: CONCEPT CASE
+ COMPANY_IS_PRODUCING_PRESTIGE_GOODS_DESC: "#header Výroba [Concept('concept_prestige_good','prestižní zboží')]#!\n@green_checkmark! Výroba $concept_prestige_good$ je pro $COMPANY_NAME$ #p aktivována#!\n$TOOLTIP_DELIMITER$\nVyrábí $PRODUCED_GOODS$\n\n@information! Jakmile bude výroba $concept_prestige_good$ pro $concept_company$ aktivována, zůstane od té chvíle trvale aktivní"
+ COMPANY_NOT_PRODUCING_PRESTIGE_GOODS_DESC: "#header Výroba [Concept('concept_prestige_good','prestižní zboží')]#!\n@red_cross! Výroba $concept_prestige_good$ je pro $COMPANY_NAME$ #r deaktivována#!\n$TOOLTIP_DELIMITER$\nBude vyrábět $PRODUCED_GOODS$, pokud budou splněny následující podmínky:\n$DETAILS$"
+ COMPANY_IS_PROSPEROUS: "@green_checkmark_box! $COMPANY_NAME$ je [Concept('concept_prosperity','$concept_prosperous$')]"
+ COMPANY_IS_NOT_PROSPEROUS: "@simple_box! $COMPANY_NAME$ je [Concept('concept_prosperity','$concept_prosperous$')]"
  COMPANY_PROSPERITY_SCRIPT_VALUE_FORMAT: "$VALUE|+=$ z $KEY$"
- COMPANY_EXECUTIVE_POPULARITY: "[Concept('concept_popularity','Popularita')] postavy [Company.GetExecutive.GetFullName] ([Company.GetExecutive.GetPopularity|v0])" # todo: CONCEPT CASE
+ COMPANY_EXECUTIVE_POPULARITY: "[Concept('concept_popularity','Popularita')] postavy [Company.GetExecutive.GetFullName] ([Company.GetExecutive.GetPopularity|v0])"
  COMPANY_EMPLOYED_LEVELS: "[Company.GetNumEmployedBuildingLevels|v] obsazených úrovní [Concept('concept_building','budovou')]" # todo: CONCEPT CASE
  COMPANY_CANNOT_DISBAND_COUNTRY_OWNER: "Tato [Concept('concept_company','společnost')] je vlastníkem [Concept('concept_country','zeměmi')] ([Country.GetName])" # todo: CONCEPT CASE
- COMPANY_CANNOT_DISBAND_ON_COOLDOWN: "Tato [Concept('concept_company','společnost')] byla nedávno založena, nemůžeme ji rozpustit do [Date.GetString|v]" # todo: CONCEPT CASE
+ COMPANY_CANNOT_DISBAND_ON_COOLDOWN: "Tato [Concept('concept_company','společnost')] byla nedávno založena, nemůžeme ji rozpustit do [Date.GetString|v]"
  MAX_COMPANIES_DESC: "#header Maximální povolený počet $COMPANIES$: $MAX|v$#!\n$TOOLTIP_DELIMITER$\n$DETAILS$"
  MAX_COMPANIES_EMPTY: "Momentálně nemůžeme podporovat žádné $COMPANIES$"
  COMPANY_CONSTRUCTION_BONUS_HEADER: "[Country.GetCompanyConstructionEfficiencyBonusFormatted] $country_company_construction_efficiency_bonus_add$"
  COMPANY_CONSTRUCTION_EFFICIENCY_BONUS: "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VAL|=+1%$#!#! $country_company_construction_efficiency_bonus_add$"
  COMPANY_CONSTRUCTION_EFFICIENCY_BONUS_FORMATTED: "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VAL|=+1%$#!#!"
  COMPANY_CONSTRUCTION_EFFICIENCY_BONUS_DESC: "#header Bonus k výstavbě [Concept('concept_company','společnosti')]\n$VAL|+=0%$#! aktuálně\n$TOOLTIP_DELIMITER$\n[ConcatIfNeitherEmpty( '#title Kvůli:#!\n', ConcatIfNeitherEmpty('$BREAKDOWN$', '\n' ) )]\n$country_company_construction_efficiency_bonus_add_desc$" # todo: CONCEPT CASE
- COMPANY_CONSTRUCTION_EFFICIENCY_BONUS_MULTIPLIER_DESC: "Vynásobeno hodnotou $VAL|v$ kvůli: #indent_newline:3 \nBudující [Concept('concept_building','průmyslu')] #b není#! pro společnost běžně dostupná#!" # todo: CONCEPT CASE
+ COMPANY_CONSTRUCTION_EFFICIENCY_BONUS_MULTIPLIER_DESC: "Vynásobeno hodnotou $VAL|v$ kvůli: #indent_newline:3 \nBudující [Concept('concept_building', '$concept_building_industry$')] #b není#! pro $concept_company$ běžně dostupná#!"
  COMPANY_THROUGHPUT_BONUS_FORMATTED: "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VAL|=+1%$#!#!"
  COMPANY_THROUGHPUT_BONUS_MULT: "Násobitel $MULT|v$ z $LEVEL|v$ z celkových $TOTAL|v$ úrovní vlastněných budovou [GetBuildingType('building_company_headquarter').GetName]"
  COMPANY_THROUGHPUT_BONUS_DESC: "#header Bonus k průtoku [Concept('concept_company','společnosti')]: $VAL|=+1%$#!\n$TOOLTIP_DELIMITER$\n[ConcatIfNeitherEmpty('$BREAKDOWN$', '\n')]\n$country_company_construction_efficiency_bonus_add_desc$" # todo: CONCEPT CASE
@@ -60,36 +60,36 @@
  COMPANY_THROUGHPUT_BONUS: "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VALUE|=+1%$#!#! od [Company.GetName]"
  COUNTRY_THROUGHPUT_BONUS: "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VALUE|=+1%$#!#! od [Country.GetName]"
  COMPANY_BONUS_PENALTY_MULT: "Postih $VAL|=+0%$ od země [COUNTRY.GetName] za překročení limitu společností, které lze založit (aktuálně [COUNTRY.GetNumCompanies|v] z [COUNTRY.GetMaxNumCompanies|v], což vede k násobiteli #n x[Negate('(CFixedPoint)$PENALTY$')]#!)"
- ALREADY_ESTABLISHED_COMPANY: "Ještě nebyla založena [Concept('concept_company','společnost')] [COMPANY_TYPE.GetName|v]" # todo: CONCEPT CASE
- OTHER_COUNTRY_ALREADY_ESTABLISHED_COMPANY: "[COUNTRY.GetName] ještě nezaložila [Concept('concept_company','společnost')] [COMPANY_TYPE.GetName|v]" # todo: CONCEPT CASE
- HAS_NOT_ESTABLISHED_COMPANY: "Ještě jsme nezaložili [Concept('concept_company','společnost')] [COMPANY_TYPE.GetName|v]" # todo: CONCEPT CASE
- CREATE_COMPANY_DESC: "#header Založit [CompanyType.GetName|v]#!\n$TOOLTIP_DELIMITER$\nZaložit [Concept('concept_company','společnost')] [CompanyType.GetName|v][ConcatIfNeitherEmpty('\n\n', AddLocalizationIf(Not(IsValid(GetPlayer.CreateCompany(CompanyType.Self))), 'CREATE_COMPANY_ERRORS'))]" # todo: CONCEPT CASE
- REMOVE_COMPANY_DESC: "#header Rozpustit [CompanyType.GetName|v]#!\n$TOOLTIP_DELIMITER$\nRozpustit [Concept('concept_company','společnost')] [CompanyType.GetName|v][ConcatIfNeitherEmpty('\n\n', AddLocalizationIf(Not(IsValid(GetPlayer.RemoveCompany(CompanyType.Self))), 'REMOVE_COMPANY_ERRORS'))]" # todo: CONCEPT CASE
+ ALREADY_ESTABLISHED_COMPANY: "Ještě nebyla založena [Concept('concept_company','společnost')] [COMPANY_TYPE.GetName|v]"
+ OTHER_COUNTRY_ALREADY_ESTABLISHED_COMPANY: "[COUNTRY.GetName] ještě nezaložila [Concept('concept_company','společnost')] [COMPANY_TYPE.GetName|v]"
+ HAS_NOT_ESTABLISHED_COMPANY: "Ještě jsme nezaložili [Concept('concept_company','společnost')] [COMPANY_TYPE.GetName|v]"
+ CREATE_COMPANY_DESC: "#header Založit [CompanyType.GetName|v]#!\n$TOOLTIP_DELIMITER$\nZaložit [Concept('concept_company','společnost')] [CompanyType.GetName|v][ConcatIfNeitherEmpty('\n\n', AddLocalizationIf(Not(IsValid(GetPlayer.CreateCompany(CompanyType.Self))), 'CREATE_COMPANY_ERRORS'))]"
+ REMOVE_COMPANY_DESC: "#header Rozpustit [CompanyType.GetName|v]#!\n$TOOLTIP_DELIMITER$\nRozpustit [Concept('concept_company','společnost')] [CompanyType.GetName|v][ConcatIfNeitherEmpty('\n\n', AddLocalizationIf(Not(IsValid(GetPlayer.RemoveCompany(CompanyType.Self))), 'REMOVE_COMPANY_ERRORS'))]"
  CREATE_COMPANY_ERRORS: "[GetDesc(GetPlayer.CreateCompany(CompanyType.Self))]"
  REMOVE_COMPANY_ERRORS: "#n Nelze rozpustit kvůli:#!\n[GetDesc(GetPlayer.RemoveCompany(CompanyType.Self))]"
- COMPANY_PRODUCTIVITY: "@money![Company.GetFormattedProductivity] [Concept('concept_productivity','Produktivita')]" # todo: CONCEPT CASE
- COMPANY_PRODUCTIVITY_WITH_COMPARISON: "@money![Company.GetFormattedProductivity] [Concept('concept_productivity','Produktivita')] (@money![Company.GetGlobalProductivityComparison|v] u podobných [Concept('concept_building','budov')] globálně)" # todo: CONCEPT CASE
+ COMPANY_PRODUCTIVITY: "@money![Company.GetFormattedProductivity] [Concept('concept_productivity','produktivita')]"
+ COMPANY_PRODUCTIVITY_WITH_COMPARISON: "@money![Company.GetFormattedProductivity] [Concept('concept_productivity','produktivita')] (@money![Company.GetGlobalProductivityComparison|v] u podobných [Concept('concept_building','$concept_buildings$')] globálně)"
  COMPANY_PROSPERITY_CHANGE: " ([Company.GetProsperityChange|=+])"
  COMPANY_PROFIT_TITLE: "Zisk společnosti"
  COMPANY_PROFIT: "@money![Company.GetProfit|+k] $COMPANY_PROFIT_TITLE$"
- COMPANY_PROSPERITY: "@prosperity! [Company.GetProsperity|v0] [SelectLocalization(NotEqualTo_CFixedPoint(Company.GetProsperityChange,'(CFixedPoint)0'),'COMPANY_PROSPERITY_CHANGE','')] [Concept('concept_prosperity','Prosperita')]" # todo: CONCEPT CASE
+ COMPANY_PROSPERITY: "@prosperity! [Company.GetProsperity|v0] [SelectLocalization(NotEqualTo_CFixedPoint(Company.GetProsperityChange,'(CFixedPoint)0'),'COMPANY_PROSPERITY_CHANGE','')] [Concept('concept_prosperity','prosperita')]"
  COMPANY_HEADQUARTER_STATE: "Hlavní sídlo: [Company.GetState.GetName]"
  COMPANY_TYPE_HEADQUARTER_STATE: "Možné sídlo: [CompanyType.GetPotentialState.GetCountry.GetFlagTextIcon] [CompanyType.GetPotentialState.GetName]"
- COMPANY_PROSPERITY_MODIFIER_HEADER: "Aktivuje se, když je [Concept('concept_prosperity','prosperujúci')]:" # todo: CONCEPT CASE
+ COMPANY_PROSPERITY_MODIFIER_HEADER: "Aktivuje se, když je [Concept('concept_prosperity','$concept_prosperous$')]:"
  COMPANY_TYPE_PROSPERITY_MODIFIER: "[CompanyType.GetProsperityModifier.GetDesc]"
- COMPANY_PROSPERITY_TOOLTIP: "#header [Company.GetName] [Concept('concept_prosperity','Prosperita')]#!\n$COMPANY_PROSPERITY_FORMATTED$\n$TOOLTIP_DELIMITER$\nCíl je [Company.GetTargetProsperity|v0] kvůli:#indent_newline:2   \n[Company.GetTargetProsperityBreakdown]#!" # todo: CONCEPT CASE
+ COMPANY_PROSPERITY_TOOLTIP: "#header [Company.GetName] [Concept('concept_prosperity','prosperita')]#!\n$COMPANY_PROSPERITY_FORMATTED$\n$TOOLTIP_DELIMITER$\nCíl je [Company.GetTargetProsperity|v0] kvůli:#indent_newline:2   \n[Company.GetTargetProsperityBreakdown]#!"
  COMPANY_PROSPERITY_FORMATTED: "@prosperity! [Company.GetProsperity|v0] [AddLocalizationIf(NotEqualTo_CFixedPoint(Company.GetProsperity, Company.GetTargetProsperity), 'COMPANY_TARGET_PROSPERITY_LINE')]"
- COMPANY_TARGET_PROSPERITY_LINE: "@arrow_right! [Company.GetTargetProsperity|v0] [Concept('concept_prosperity','Prosperita')] $FORMATTED_PROSPERITY_CHANGE$" # todo: CONCEPT CASE
+ COMPANY_TARGET_PROSPERITY_LINE: "@arrow_right! [Company.GetTargetProsperity|v0] [Concept('concept_prosperity','prosperita')] $FORMATTED_PROSPERITY_CHANGE$"
  FORMATTED_PROSPERITY_CHANGE: "(#tooltippable;tooltip:[Company.GetTooltipTag],COMPANY_PROSPERITY_CHANGE_TOOLTIP [SelectLocalization(IsZero_CFixedPoint(Company.GetProsperityChange), 'PLUS_MINUS_ZERO', 'PROSPERITY_CHANGE')]#! každý týden)"
- COMPANY_TARGET_PROSPERITY_DESC: "#header Cíl [Concept('concept_prosperity','prosperita')]#!\nCíl: @prosperity! $VALUE|v1$\n$TOOLTIP_DELIMITER$\n$DETAILS$" # todo: CONCEPT CASE
- COMPANY_PROSPERITY_CHANGE_DESC: "#header Týdenní změna [Concept('concept_prosperity','prosperita')]#!\n$VALUE|v1$ pro $COMPANY_NAME$\n$TOOLTIP_DELIMITER$\n$DETAILS$" # todo: CONCEPT CASE
+ COMPANY_TARGET_PROSPERITY_DESC: "#header Cíl [Concept('concept_prosperity','prosperita')]#!\nCíl: @prosperity! $VALUE|v1$\n$TOOLTIP_DELIMITER$\n$DETAILS$"
+ COMPANY_PROSPERITY_CHANGE_DESC: "#header Týdenní změna [Concept('concept_prosperity','prosperita')]#!\n$VALUE|v1$ pro $COMPANY_NAME$\n$TOOLTIP_DELIMITER$\n$DETAILS$"
  COMPANY_TARGET_PROSPERITY_TOOLTIP: "[Company.GetTargetProsperityDesc]"
  COMPANY_PROSPERITY_CHANGE_TOOLTIP: "[Company.GetProsperityChangeDesc]"
  PLUS_MINUS_ZERO: "#v +/-0#!"
  PROSPERITY_CHANGE: "[Company.GetProsperityChange|=+]"
  COMPANY_TYPE_NUM_BUILDING_LEVELS: "[CompanyType.GetNumBuildingLevels|v] úrovní [Concept('concept_building','budovou')]" # todo: CONCEPT CASE
- COMPANY_TYPE_PRODUCTIVITY: "@money![CompanyType.GetProductivity|1v] [Concept('concept_productivity','Produktivita')]" # todo: CONCEPT CASE
- COMPANY_TYPE_PRODUCTIVITY_TOOLTIP: "#header [Concept('concept_productivity','Produktivita')]#!: @money![CompanyType.GetProductivity|1v]\n$TOOLTIP_DELIMITER$\nCelosvětová průměrná produktivita: @money![CompanyType.GetAverageProductivity|v1]" # todo: CONCEPT CASE
+ COMPANY_TYPE_PRODUCTIVITY: "@money![CompanyType.GetProductivity|1v] [Concept('concept_productivity','produktivita')]"
+ COMPANY_TYPE_PRODUCTIVITY_TOOLTIP: "#header [Concept('concept_productivity','Produktivita')]#!: @money![CompanyType.GetProductivity|1v]\n$TOOLTIP_DELIMITER$\nCelosvětová průměrná produktivita: @money![CompanyType.GetAverageProductivity|v1]"
  COMPANY_PROSPERITY_MODIFIER: "[Company.GetCompanyType.GetProsperityModifier.GetDesc]"
  DISBAND_COMPANY: "Rozpustit"
  ESTABLISH_COMPANY: "Založit"
@@ -224,7 +224,7 @@
  company_general_electric: "General Electric"
  company_us_steel: "Carnegie Steel Company"
  company_united_fruit: "United Fruit Company"
- company_united_fruit_possible_tt: "Jedna z následujících možností:\n• [Concept('concept_state','státu')] je v oblasti [GetGeographicRegion('geographic_region_central_america').GetName]\n• [Concept('concept_state','stát')] je v oblasti [GetGeographicRegion('geographic_region_south_america').GetName]" # todo: CONCEPT CASE
+ company_united_fruit_possible_tt: "Jedna z následujících možností:\n• [Concept('concept_state','Státu')] je v oblasti [GetGeographicRegion('geographic_region_central_america').GetName]\n• [Concept('concept_state','Stát')] je v oblasti [GetGeographicRegion('geographic_region_south_america').GetName]" # todo: CONCEPT CASE
  company_standard_oil: "Standard Oil"
  company_william_cramp: "William Cramp a synové"
  company_ford_motor: "Ford Motor Company"
@@ -322,8 +322,8 @@
  company_electricidad_de_caracas: "C.A. La Electricidad de Caracas"
  company_eea: "Empresas Eléctricas Asociadas"
  company_construction_power_bloc: "Spojený stavební konglomerát"
- company_national_iranian_oil_tt: "Nemáme #bold Anglo-perskou ropnou společnost#! jako aktivní [Concept('concept_company','společnost')]." # todo: CONCEPT CASE
- company_anglo_persian_oil_tt: "Nemáme #bold Národní íránskou ropnou společnost#! jako aktivní [Concept('concept_company','společnost')]." # todo: CONCEPT CASE
+ company_national_iranian_oil_tt: "Nemáme #bold Anglo-perskou ropnou společnost#! jako aktivní [Concept('concept_company','společnost')]."
+ company_anglo_persian_oil_tt: "Nemáme #bold Národní íránskou ropnou společnost#! jako aktivní [Concept('concept_company','společnost')]."
  CANNOT_TOGGLE_COMPANY_GRANTED_CHARTER: "$DESC$"
  COMPANY_CHARTER_INVESTMENT: "$NAME$"
  COMPANY_CHARTER_MONOPOLY: "$NAME$ pro [BUILDING_TYPE.GetName]"
@@ -332,41 +332,41 @@
  COMPANY_CHARTER_COLONIZATION: "$NAME$ ve státě [STATE_REGION.GetName]"
  COMPANY_CHARTER_ON_COOLDOWN: "#b Nelze#! odebrat do #b [DATE.GetString]#!"
  BUILDING_OWNED_BY_COMPANY: "Vlastněno společností [Company.GetNameNoFormatting]"
- PRODUCTIVITY_TREND: "[Concept('concept_productivity','Produktivita')]" # todo: CONCEPT CASE
- PROSPERITY_TREND: "[Concept('concept_prosperity','Prosperita')]" # todo: CONCEPT CASE
+ PRODUCTIVITY_TREND: "[Concept('concept_productivity','Produktivita')]"
+ PROSPERITY_TREND: "[Concept('concept_prosperity','Prosperita')]"
  PROFIT_TREND: "$COMPANY_PROFIT_TITLE$"
- SIZE_TREND: "Velikost (vlastněná [Concept('concept_building_level','úrovně budovy')])" # todo: CONCEPT CASE
- COMPANY_TREND_PROFIT_TOOLTIP: "#header Zisk [Concept('concept_company','společnost')]#!\n@money![Company.GetProfit|D+=] aktuálně\n$TOOLTIP_DELIMITER$\n#title Kvůli [Concept('concept_company_hq','ředitelství společnosti')]#!:\n[Company.GetHQProfitDescription]" # todo: CONCEPT CASE
- COMPANY_HQ_PROFIT_ENTRY: "• @money!#tooltippable #tooltip:[BUILDING.GetTooltipTag],BALANCE_DESC #v [BUILDING.GetBalance|D+=]#!#!#! z [Concept('concept_company_hq','ředitelství společnosti')] ve státě [BUILDING.GetState.GetName] (#v #tooltippable #tooltip:[BUILDING.GetTooltipTag],EMPTY_STRING,BuildingTooltip [BUILDING.GetExpansionLevel]#!#!#! [Concept('concept_building_level','úrovně')])" # todo: CONCEPT CASE
- REGIONAL_COMPANY_HQ_PROFIT_ENTRY: "• @money!#tooltippable #tooltip:[BUILDING.GetTooltipTag],BALANCE_DESC #v [BUILDING.GetBalance|D+=]#!#!#! z [Concept('concept_regional_company_hq','regionálního ředitelství společnosti')] ve státě [BUILDING.GetState.GetName] (#v #tooltippable #tooltip:[BUILDING.GetTooltipTag],EMPTY_STRING,BuildingTooltip [BUILDING.GetExpansionLevel]#!#!#! [Concept('concept_building_level','úrovně')])" # todo: CONCEPT CASE
- COMPANY_TREND_SIZE_TOOLTIP: "#header Velikost [Concept('concept_company','společnost')]#!\nCelkem vlastněno [Company.GetNumOwnedBuildingLevels|v] [Concept('concept_building_level','úrovně budovy')]\n$TOOLTIP_DELIMITER$\n[Company.GetBuildingTypesSizeDescription]" # todo: CONCEPT CASE
+ SIZE_TREND: "Velikost (vlastněné [Concept('concept_building_level','$concept_building_levels$')])"
+ COMPANY_TREND_PROFIT_TOOLTIP: "#header Zisk [Concept('concept_company','společnost')]#!\n@money![Company.GetProfit|D+=] aktuálně\n$TOOLTIP_DELIMITER$\n#title Kvůli [Concept('concept_company_hq','$concept_company_hqs$')]#!:\n[Company.GetHQProfitDescription]"
+ COMPANY_HQ_PROFIT_ENTRY: "• @money!#tooltippable #tooltip:[BUILDING.GetTooltipTag],BALANCE_DESC #v [BUILDING.GetBalance|D+=]#!#!#! z [Concept('concept_company_hq','$concept_company_hq_short$')] ve státě [BUILDING.GetState.GetName] (#v #tooltippable #tooltip:[BUILDING.GetTooltipTag],EMPTY_STRING,BuildingTooltip [BUILDING.GetExpansionLevel]#!#!#! [Concept('concept_building_level','$concept_building_levels_short$')])"
+ REGIONAL_COMPANY_HQ_PROFIT_ENTRY: "• @money!#tooltippable #tooltip:[BUILDING.GetTooltipTag],BALANCE_DESC #v [BUILDING.GetBalance|D+=]#!#!#! z [Concept('concept_regional_company_hq','$concept_regional_company_hq_short$')] ve státě [BUILDING.GetState.GetName] (#v #tooltippable #tooltip:[BUILDING.GetTooltipTag],EMPTY_STRING,BuildingTooltip [BUILDING.GetExpansionLevel]#!#!#! [Concept('concept_building_level','$concept_building_levels_short$')])"
+ COMPANY_TREND_SIZE_TOOLTIP: "#header Velikost [Concept('concept_company','společnost')]#!\nCelkem vlastněno [Company.GetNumOwnedBuildingLevels|v] [Concept('concept_building_level','$concept_building_levels$')]\n$TOOLTIP_DELIMITER$\n[Company.GetBuildingTypesSizeDescription]"
  COMPANY_BUILDING_TYPE_ENTRY: "$LEVELS|v$ úrovní budovy [BUILDING_TYPE.GetName]"
- COMPANY_TREND_BUILDING_TYPE_TOOLTIP: "#header [BuildingType.GetName] vlastněné společností#!\nCelkem [Company.GetBuildingTypeLevels(BuildingType.Self)|v] [Concept('concept_building_level','úrovně budovy')]\n$TOOLTIP_DELIMITER$\n[Company.GetBuildingTypeSizeDescription(BuildingType.Self)]" # todo: CONCEPT CASE
+ COMPANY_TREND_BUILDING_TYPE_TOOLTIP: "#header [BuildingType.GetName] vlastněné společností#!\nCelkem [Company.GetBuildingTypeLevels(BuildingType.Self)|v] [Concept('concept_building_level','$concept_building_levels$')]\n$TOOLTIP_DELIMITER$\n[Company.GetBuildingTypeSizeDescription(BuildingType.Self)]"
  COMPANY_BUILDING_COUNT_ENTRY: "#v #tooltippable #tooltip:[BUILDING.GetTooltipTag],EMPTY_STRING,BuildingTooltip $LEVELS|v$#!#!#! ve státě [BUILDING.GetState.GetName]"
- COMMAND_CONFIRMATION_ENABLE_CHARTER: "Chcete udělit chartu [CompanyCharterType.GetName] společnosti [Company.GetName]?\n\n@aut! #v [CompanyCharterType.GetAuthorityCost(Company.Self)|-0]#! náklady na údržbu\nAktuálně se využívá [Company.GetCountry.GetUsedFreeCharters|v]/[Company.GetCountry.GetModifier.GetNonFormattedValueWithBreakdownAndNoDecimalsFor('country_free_charters_add')] bezplatných [Concept('concept_company_charter','chartami společnosti')]\n\n#title Účinky:#!#indent_newline:3 \n$EFFECTS$#!" # todo: CONCEPT CASE
- COMMAND_CONFIRMATION_ENABLE_MONOPOLY_CHARTER: "Chcete udělit chartu [CompanyCharterType.GetName] společnosti [Company.GetName]?\n\n@aut! #v [CompanyCharterType.GetAuthorityCost(Company.Self)|-0]#! náklady na údržbu\nAktuálně se využívá [Company.GetCountry.GetUsedFreeCharters|v]/[Company.GetCountry.GetModifier.GetNonFormattedValueWithBreakdownAndNoDecimalsFor('country_free_charters_add')] bezplatných [Concept('concept_company_charter','chartami společnosti')]\n\n@warning! Po udělení ji nelze odvolat po dobu #v [GetDefine('NEconomy','COMPANY_MONOPOLY_COOLDOWN_MONTHS')] měsíců#!.\n\n#title Účinky:#!#indent_newline:3 \n$EFFECTS$#!" # todo: CONCEPT CASE
+ COMMAND_CONFIRMATION_ENABLE_CHARTER: "Chcete udělit chartu [CompanyCharterType.GetName] společnosti [Company.GetName]?\n\n@aut! #v [CompanyCharterType.GetAuthorityCost(Company.Self)|-0]#! náklady na údržbu\nAktuálně se využívá [Company.GetCountry.GetUsedFreeCharters|v]/[Company.GetCountry.GetModifier.GetNonFormattedValueWithBreakdownAndNoDecimalsFor('country_free_charters_add')] bezplatných [Concept('concept_company_charter','$concept_company_charters$')]\n\n#title Účinky:#!#indent_newline:3 \n$EFFECTS$#!"
+ COMMAND_CONFIRMATION_ENABLE_MONOPOLY_CHARTER: "Chcete udělit chartu [CompanyCharterType.GetName] společnosti [Company.GetName]?\n\n@aut! #v [CompanyCharterType.GetAuthorityCost(Company.Self)|-0]#! náklady na údržbu\nAktuálně se využívá [Company.GetCountry.GetUsedFreeCharters|v]/[Company.GetCountry.GetModifier.GetNonFormattedValueWithBreakdownAndNoDecimalsFor('country_free_charters_add')] bezplatných [Concept('concept_company_charter','$concept_company_charters$')]\n\n@warning! Po udělení ji nelze odvolat po dobu #v [GetDefine('NEconomy','COMPANY_MONOPOLY_COOLDOWN_MONTHS')] měsíců#!.\n\n#title Účinky:#!#indent_newline:3 \n$EFFECTS$#!"
  COMMAND_CONFIRMATION_DISABLE_CHARTER: "Chcete společnosti [Company.GetName] odebrat chartu [CompanyCharterType.GetName]?\n\nOdstraní náklady na údržbu ve výši @aut! #v [CompanyCharterType.GetAuthorityCost(Company.Self)|+0]#!\n\n#title Odstraní následující účinky:#!#indent_newline:3 \n$EFFECTS$#!"
  COMMAND_CONFIRMATION_DISABLE_CHARTER_WITH_REVOKE_EFFECTS: "$COMMAND_CONFIRMATION_DISABLE_CHARTER$\n\n$REVOKE_EFFECTS$"
- investment_charter_desc: "[CompanyCharter.GetType.GetNameNoFormatting] umožňuje [Concept('concept_company','společnost')] zakládat [Concept('concept_regional_company_hq','regionální ředitelství společností')], čímž rozšiřuje její vliv a působnost." # todo: CONCEPT CASE
- investment_charter_type_desc: "[CompanyCharterType.GetNameNoFormatting] umožňuje [Concept('concept_company','společnost')] zakládat [Concept('concept_regional_company_hq','regionální ředitelství společností')], čímž rozšiřuje její vliv a působnost." # todo: CONCEPT CASE
- investment_charter_effects: "Umožňuje výstavbu [Concept('concept_regional_company_hq','regionální ředitelství společnosti')], které přispívají do našeho [Concept('concept_investment_pool','investičního fondu')]" # todo: CONCEPT CASE
- monopoly_charter_desc: "[CompanyCharter.GetType.GetNameNoFormatting] dává [Concept('concept_company','společnost')] výhradní práva na [Concept('concept_construction','postavit')] konkrétních [Concept('concept_building','průmysly')], čímž zajišťuje dominanci na [Concept('concept_market','trh')]." # todo: CONCEPT CASE
- monopoly_charter_type_desc: "[CompanyCharterType.GetNameNoFormatting] dává [Concept('concept_company','společnost')] výhradní práva na [Concept('concept_construction','postavit')] konkrétních [Concept('concept_building','průmysly')], čímž zajišťuje dominanci na [Concept('concept_market','trh')]." # todo: CONCEPT CASE
- monopoly_charter_effects: "Dává [Concept('concept_company','společnost')] [Concept('concept_company_monopoly','monopol')] na konkrétní [Concept('concept_building','průmysl')]. Jakékoli budoucí [Concept('concept_building_level','úrovně budovy')] nemohou být vystavěny $concept_private$ subjekty kromě společnosti a jakékoli [Concept('concept_nationally_owned','národní vlastnictví')] $concept_building_levels_short$ budou pro společnost automaticky dostupné k [Concept('concept_privatize','privatizovat')]. Stávající [Concept('concept_privately_owned','soukromě vlastněno')] úrovni budovy nejsou ovlivněny." # todo: CONCEPT CASE
- industry_charter_desc: "[CompanyCharter.GetType.GetNameNoFormatting] rozšiřuje rozsah [Concept('concept_building','průmysly')], které smí [Concept('concept_company','společnost')] vystavět, čímž podporuje průmyslový růst." # todo: CONCEPT CASE
- industry_charter_type_desc: "[CompanyCharterType.GetNameNoFormatting] rozšiřuje rozsah [Concept('concept_building','průmysly')], které smí [Concept('concept_company','společnost')] vystavět, čímž podporuje průmyslový růst." # todo: CONCEPT CASE
- industry_charter_effects: "Umožňuje [Concept('concept_company','společnost')] [Concept('concept_construction','postavit')] [Concept('concept_building','budovy')] dalšího [Concept('concept_building','průmyslu')]" # todo: CONCEPT CASE
- trade_charter_desc: "[CompanyCharter.GetType.GetNameNoFormatting] umožňuje [Concept('concept_company','společnost')] stavět [GetBuildingType('building_trade_center').GetName], čímž usnadňuje obchod a směnu." # todo: CONCEPT CASE
- trade_charter_type_desc: "[CompanyCharterType.GetNameNoFormatting] umožňuje [Concept('concept_company','společnost')] stavět [GetBuildingType('building_trade_center').GetName], čímž usnadňuje obchod a směnu." # todo: CONCEPT CASE
- trade_charter_effects: "Umožňuje [Concept('concept_company','společnost')] [Concept('concept_construction','postavit')] [GetBuildingType('building_trade_center').GetName]" # todo: CONCEPT CASE
- colonization_charter_desc: "[CompanyCharter.GetType.GetNameNoFormatting] zahajuje [Concept('concept_colony','kolonizace')] nových území a rozšiřuje dosah $concept_company_possessive$." # todo: CONCEPT CASE
- colonization_charter_type_desc: "[CompanyCharterType.GetNameNoFormatting] zahajuje [Concept('concept_colony','kolonizace')] nových území a rozšiřuje dosah $concept_company_possessive$." # todo: CONCEPT CASE
- colonization_charter_effects: "Zahajuje proces [Concept('concept_colony','kolonizace')] ve vybrané [Concept('concept_state_region','státní oblasti')]" # todo: CONCEPT CASE
- COMPANY_CHARTER_INVESTMENT_EFFECTS: "@green_checkmark! Umožňuje společnosti [Company.GetNameNoIcon] [Concept('concept_construction','postavit')] [Concept('concept_regional_company_hq','regionální ředitelství společností')]\n@green_checkmark! Regionální ředitelství společností společnosti [Company.GetNameNoIcon] přispívají do našeho [Concept('concept_investment_pool','investičního fondu')]" # todo: CONCEPT CASE
- COMPANY_CHARTER_TRADE_EFFECTS: "@green_checkmark! Umožňuje [Concept('concept_company','společnost')] [Concept('concept_construction','postavit')] [BUILDING_TYPE.GetName]\n@green_checkmark! Poskytuje [Concept('concept_trade_advantage','obchodní výhoda')] pro vyráběné [Concept('concept_good','zboží')] [Concept('concept_country','země')] společnosti" # todo: CONCEPT CASE
- COMPANY_CHARTER_INDUSTRY_EFFECTS: "@green_checkmark! Umožňuje [Concept('concept_company','společnost')] [Concept('concept_construction','postavit')] [BUILDING_TYPE.GetName]" # todo: CONCEPT CASE
- COMPANY_CHARTER_MONOPOLY_EFFECTS: "@green_checkmark! Dává [Concept('concept_company','společnost')] [Concept('concept_company_monopoly','monopol')] na [BUILDING_TYPE.GetName] v [Concept('concept_country','zemích')] společnosti" # todo: CONCEPT CASE
- COMPANY_CHARTER_COLONIZATION_EFFECTS: "@green_checkmark! Zakládá [Concept('concept_colony','kolonie')] v [STATE_REGION.GetName], přičemž [Concept('concept_company','společnost')] dohlíží na expanzi\n@green_checkmark! Poskytuje $VALUE|v$x rychlejší $concept_colonization$ pro [STATE_REGION.GetName|v]\n@green_checkmark! Po dokončení vytvoří [GetSubjectType('subject_type_chartered_company').GetName]" # todo: CONCEPT CASE
+ investment_charter_desc: "[CompanyCharter.GetType.GetNameNoFormatting] umožňuje [Concept('concept_company','společnost')] zakládat [Concept('concept_regional_company_hq','$concept_regional_company_hqs$')], čímž rozšiřuje její vliv a působnost."
+ investment_charter_type_desc: "[CompanyCharterType.GetNameNoFormatting] umožňuje [Concept('concept_company','společnost')] zakládat [Concept('concept_regional_company_hq','$concept_regional_company_hqs$')], čímž rozšiřuje její vliv a působnost."
+ investment_charter_effects: "Umožňuje výstavbu [Concept('concept_regional_company_hq','$concept_regional_company_hqs$')], které přispívají do našeho [Concept('concept_investment_pool','investičního fondu')]" # todo: CONCEPT CASE
+ monopoly_charter_desc: "[CompanyCharter.GetType.GetNameNoFormatting] dává [Concept('concept_company','společnost')] výhradní práva na [Concept('concept_construction','$concept_construct$')] konkrétních [Concept('concept_building','$concept_building_industries$')], čímž zajišťuje dominanci na [Concept('concept_market','trh')]."
+ monopoly_charter_type_desc: "[CompanyCharterType.GetNameNoFormatting] dává [Concept('concept_company','společnost')] výhradní práva na [Concept('concept_construction','$concept_construct$')] konkrétních [Concept('concept_building','$concept_building_industries$')], čímž zajišťuje dominanci na [Concept('concept_market','trh')]."
+ monopoly_charter_effects: "Dává [Concept('concept_company','společnost')] [Concept('concept_company_monopoly','$concept_company_monopoly_short$')] na konkrétní [Concept('concept_building','$concept_building_industry$')]. Jakékoli budoucí [Concept('concept_building_level','$concept_building_levels$')] nemohou být vystavěny $concept_private$ subjekty kromě $concept_company$ a jakékoli [Concept('concept_nationally_owned','národní vlastnictví')] $concept_building_levels_short$ budou pro $concept_company$ automaticky dostupné k [Concept('concept_privatize','privatizovat')]. Stávající [Concept('concept_privately_owned','soukromě vlastněno')] $concept_building_levels$ nejsou ovlivněny."
+ industry_charter_desc: "[CompanyCharter.GetType.GetNameNoFormatting] rozšiřuje rozsah [Concept('concept_building','$concept_building_industries$')], které smí [Concept('concept_company','společnost')] vystavět, čímž podporuje průmyslový růst."
+ industry_charter_type_desc: "[CompanyCharterType.GetNameNoFormatting] rozšiřuje rozsah [Concept('concept_building','$concept_building_industries$')], které smí [Concept('concept_company','společnost')] vystavět, čímž podporuje průmyslový růst."
+ industry_charter_effects: "Umožňuje [Concept('concept_company','společnost')] [Concept('concept_construction','$concept_construct$')] [Concept('concept_building','$concept_buildings$')] dalšího [Concept('concept_building','$concept_building_industry$')]"
+ trade_charter_desc: "[CompanyCharter.GetType.GetNameNoFormatting] umožňuje [Concept('concept_company','společnost')] stavět [GetBuildingType('building_trade_center').GetName], čímž usnadňuje obchod a směnu."
+ trade_charter_type_desc: "[CompanyCharterType.GetNameNoFormatting] umožňuje [Concept('concept_company','společnost')] stavět [GetBuildingType('building_trade_center').GetName], čímž usnadňuje obchod a směnu."
+ trade_charter_effects: "Umožňuje [Concept('concept_company','společnost')] [Concept('concept_construction','$concept_construct$')] [GetBuildingType('building_trade_center').GetName]"
+ colonization_charter_desc: "[CompanyCharter.GetType.GetNameNoFormatting] zahajuje [Concept('concept_colony', '$concept_colonization$')] nových území a rozšiřuje dosah $concept_company_possessive$."
+ colonization_charter_type_desc: "[CompanyCharterType.GetNameNoFormatting] zahajuje [Concept('concept_colony', '$concept_colonization$')] nových území a rozšiřuje dosah $concept_company_possessive$."
+ colonization_charter_effects: "Zahajuje proces [Concept('concept_colony', '$concept_colonization$')] ve vybrané [Concept('concept_state_region','státní oblasti')]" # todo: CONCEPT CASE
+ COMPANY_CHARTER_INVESTMENT_EFFECTS: "@green_checkmark! Umožňuje společnosti [Company.GetNameNoIcon] [Concept('concept_construction','$concept_construct$')] [Concept('concept_regional_company_hq','$concept_regional_company_hqs$')]\n@green_checkmark! $concept_regional_company_hqs$ společnosti [Company.GetNameNoIcon] přispívají do našeho [Concept('concept_investment_pool','investičního fondu')]" # todo: CONCEPT CASE
+ COMPANY_CHARTER_TRADE_EFFECTS: "@green_checkmark! Umožňuje [Concept('concept_company','společnost')] [Concept('concept_construction','$concept_construct$')] [BUILDING_TYPE.GetName]\n@green_checkmark! Poskytuje [Concept('concept_trade_advantage','obchodní výhoda')] pro vyráběné [Concept('concept_good','zboží')] [Concept('concept_country','země')] $concept_company_possessive$"
+ COMPANY_CHARTER_INDUSTRY_EFFECTS: "@green_checkmark! Umožňuje [Concept('concept_company','společnost')] [Concept('concept_construction','$concept_construct$')] [BUILDING_TYPE.GetName]"
+ COMPANY_CHARTER_MONOPOLY_EFFECTS: "@green_checkmark! Dává [Concept('concept_company','společnost')] [Concept('concept_company_monopoly','$concept_company_monopoly_short$')] na [BUILDING_TYPE.GetName] v [Concept('concept_country','zemích')] $concept_company_possessive$" # todo: CONCEPT CASE
+ COMPANY_CHARTER_COLONIZATION_EFFECTS: "@green_checkmark! Zakládá [Concept('concept_colony','kolonie')] v [STATE_REGION.GetName], přičemž [Concept('concept_company','společnost')] dohlíží na expanzi\n@green_checkmark! Poskytuje $VALUE|v$x rychlejší $concept_colonization$ pro [STATE_REGION.GetName|v]\n@green_checkmark! Po dokončení vytvoří [GetSubjectType('subject_type_chartered_company').GetName]"
  investment_charter: "Investiční práva"
  monopoly_charter: "Monopolní práva"
  industry_charter: "Průmyslová práva"

@@ -1,0 +1,822 @@
+﻿l_polish:
+ objective_great_game: "Velká hra" # todo: NEW TRANSLATION
+ objective_great_game_desc: "Nové století znamená začátek dlouhého konfliktu vedeného přes největší kontinent světa, intrikami, válkou a obratnou diplomacií. Veďte Rusko a Británii k nadvládě v Asii, nebo dovedte Afghánistán či Persii na cestu svrchovanosti." # todo: NEW TRANSLATION
+ objective_great_game_idle_header: "Pokračujte svou cestou" # todo: NEW TRANSLATION
+ objective_great_game_idle_hint: "Další výzvy se časem objeví" # todo: NEW TRANSLATION
+ objective_great_game_name_RUS: "#v $RUS$#!" # todo: NEW TRANSLATION
+ objective_great_game_desc_RUS: "#lore $RUS_FLAVOR_TEXT$#!" # todo: NEW TRANSLATION
+ objective_great_game_name_GBR: "#v $GBR$#!" # todo: NEW TRANSLATION
+ objective_great_game_desc_GBR: "#lore $GBR_FLAVOR_TEXT$#!" # todo: NEW TRANSLATION
+ objective_great_game_name_PER: "#v $PER$#!" # todo: NEW TRANSLATION
+ objective_great_game_desc_PER: "#lore $PER_FLAVOR_TEXT$#!" # todo: NEW TRANSLATION
+ objective_great_game_name_KAB: "#v $KAB$#!" # todo: NEW TRANSLATION
+ objective_great_game_desc_KAB: "#lore $KAB_FLAVOR_TEXT$#!" # todo: NEW TRANSLATION
+ objective_great_game_name_KAN: "#v $KAN$#!" # todo: NEW TRANSLATION
+ objective_great_game_desc_KAN: "#lore $KAN_FLAVOR_TEXT$#!" # todo: NEW TRANSLATION
+ objective_great_game_name_HER: "#v $HER$#!" # todo: NEW TRANSLATION
+ objective_great_game_desc_HER: "#lore $HER_FLAVOR_TEXT$#!" # todo: NEW TRANSLATION
+ modifier_great_game_victor: "Vítěz ve Velké hře" # todo: NEW TRANSLATION
+ modifier_great_game_defeated: "Poražen ve Velké hře" # todo: NEW TRANSLATION
+ modifier_great_game_stalemate: "Pat ve Velké hře" # todo: NEW TRANSLATION
+ gg_core.1.t: "Velký triumf" # todo: NEW TRANSLATION
+ gg_core.1.d: "Prostřednictvím intrik, obratné diplomacie a rozhodných válečných činů jsme dovedli Velkou hru k příznivému závěru. Naše vítězství přineslo [ROOT.GetCountry.GetName] slávu a [SCOPE.sCountry('opponent_scope').GetName] ponížení na světové scéně." # todo: NEW TRANSLATION
+ gg_core.1.f: "I noviny [SCOPE.sCountry('opponent_scope').GetAdjectiveNoFormatting] to teď psaly. Titulky, které dříve otáčely i velká neúspěchy ve zdánlivá vítězství a výzvy po revanci, působily klidně a podle všeho vážně informovaly o zahraničních záležitostech, jako by hegemonie [ROOT.GetCountry.GetAdjectiveNoFormatting] byla něčím, co tu vždy bylo. Velvyslanec se zadíval na rozložené noviny a obrátil se na úředníka, který sotva skrýval své nadšení.\n\n\"Pošlete mi jednu kopii pro mě,\" řekl, \"rád bych si ji pověsil na zeď.\"" # todo: NEW TRANSLATION
+ gg_core.1.a: "Drahokam v naší koruně nemající obdoby." # todo: NEW TRANSLATION
+ gg_core.2.t: "Velká porážka" # todo: NEW TRANSLATION
+ gg_core.2.d: "Rozhodující vítězství [SCOPE.sCountry('opponent_scope').GetAdjective] na bojištích Velké hry přinesla [ROOT.GetCountry.GetName] obrovské ponížení na světové scéně. Konflikt skončil a skončil naší porážkou." # todo: NEW TRANSLATION
+ gg_core.2.f: "\"Poslední desetiletí jsme strávili v nádherném snu naší vlastní nekázně, bezcílně chybovali od jednoho nevkusného vměšování k druhému. Jednou rukou jsme švihali po cílech, které byly těsně mimo náš dosah, a druhou jsme odcizili ty, kteří byli kdysi nakloněni. Velká hra nemohla být nikdy vyhrána - naše rané omyly nás paralyzovaly dlouho předtím, než jsme je rozpoznali, dříve než jsme si vůbec uvědomili, že hrajeme.\"" # todo: NEW TRANSLATION
+ gg_core.2.a: "Uplynula naše zlatá doba?" # todo: NEW TRANSLATION
+ gg_core.3.t: "Pat" # todo: NEW TRANSLATION
+ gg_core.3.d: "Navzdory enormním výdajům v boji o mezinárodní vliv ani [ROOT.GetCountry.GetName] ani [SCOPE.sCountry('opponent_scope').GetName] nedosáhli rozhodujícího vítězství ve Velké hře. Obě strany z konfliktu vyšly potlučené a neschopné porazit druhou." # todo: NEW TRANSLATION
+ gg_core.3.f: "Ještě před tím, než byla hra v polovině, o ní už vycházely výklady. Cestovatelské deníky, rozjímání o tom, co viděli v Buchaře nebo Kábulu. Konsenzus nikdy nebyl dosažen, i když se objevily chvíle, kdy nějaké prchavé vítězství učinilo módním prohlašovat britskou či ruskou převahu.\n\nTeď se ale objevovalo jedno vyústění, které si ani jedna země nemohla hrdě přiznat. Velká hra jako bláznovství. Odtud už byl jen krůček k novému dramatu, hledání politika, na něhož by bylo možné svalit vinu." # todo: NEW TRANSLATION
+ gg_core.3.a: "Příliš málo na to, aby stálo za to." # todo: NEW TRANSLATION
+ gg_core.4.t: "Konec her" # todo: NEW TRANSLATION
+ gg_core.4.d: "Velká hra, která kdysi považovala naše domovy za hřiště mezi cizími mocnostmi, byla ukončena. Poslední [SCOPE.sCountry('russia_scope').GetAdjective] a [SCOPE.sCountry('britain_scope').GetAdjective] síly opustily Střední Asii, vyhnány nikoli machinacemi druhého, ale našimi vlastními činy." # todo: NEW TRANSLATION
+ gg_core.4.f: "V tento den se noviny daly snáze sehnat. Ministr jich nasbíral značnou sbírku - The Times z [SCOPE.sCountry('britain_scope').GetCapital.GetCityHubName], [SCOPE.sCountry('russia_scope').GetCapital.GetCityHubName] Record, Correspondent z Paříže. Minulý týden psaly o návratu vojenské výpravy. Tento týden o rezignaci jeho protějšku v [SCOPE.sCountry('britain_scope').GetAdjectiveNoFormatting]. Dvanáct menších zpráv, které napovídaly o jejich bolestivé realitě. Selhali a snažili se zachovat tvář. Mohou být pyšní a nechtít to vyslovit nahlas - ale on to věděl, a předpokládal, že i jejich vlastní lidé to vědí." # todo: NEW TRANSLATION
+ gg_core.4.a: "Teď nás budou navždy oslovovat jako sobě rovné." # todo: NEW TRANSLATION
+ notification_great_game_loss_to_natives_name: "Porážka ve Velké hře" # todo: NEW TRANSLATION
+ notification_great_game_loss_to_natives_desc: "Snahy [SCOPE.sCountry('gg_winner_scope').GetName] vedly k rozpadu našeho vlivu v #b Persii#! a #b Střední Asii#!. S tímto končí Velká hra." # todo: NEW TRANSLATION
+ notification_great_game_loss_to_natives_tooltip: "#header $notification_great_game_loss_to_natives_name$#!\n$TOOLTIP_DELIMITER$\n$notification_great_game_loss_to_natives_desc$" # todo: NEW TRANSLATION
+ modifier_european_military_assistance: "Evropská vojenská pomoc" # todo: NEW TRANSLATION
+ modifier_afghan_military_training_costs: "Sponzorování afghánského rivala" # todo: NEW TRANSLATION
+ all_pashtun_or_tajik_countries_puppeted_tt: "Všechny [GetCulture('pashtun').GetName] nebo [GetCulture('tajik').GetName] [Concept('concept_country', '$concept_countries$')] v [SCOPE.sStrategicRegion('persia_region').GetName] [concept_strategic_region] jsou naše [Concept('concept_subject', '$concept_subjects$')]" # todo: NEW TRANSLATION
+ je_maintain_afghan_protectorate: "Zajistit afghánský protektorát" # todo: NEW TRANSLATION
+ je_maintain_afghan_protectorate_reason: "Horské pohraničí mezi Indickým subkontinentem a stepemi Střední Asie ukrývá klíč k vytvoření pevné a výhodné hranice proti našemu rivalovi. Abychom zajistili ochranu svých zájmů a trasu k útoku na naše protivníky, musíme získat stabilní [Concept('concept_subject', '$concept_subjects$')] v celém afghánském regionu." # todo: NEW TRANSLATION
+ je_maintain_afghan_protectorate_goal: "Zřídit a udržet vztah [concept_subject] se všemi afghánskými státy po dobu #variable 10 let#!" # todo: NEW TRANSLATION
+ je_consolidate_afghanistan_objective: "Konsolidovat Afghánistán" # todo: NEW TRANSLATION
+ je_consolidate_afghanistan_objective_reason: "Nejasné hranice Afghánistánu představují příležitost pro krizi a ničivou válku v Pamíru. Abychom stabilizovali hranici mezi námi a naším protivníkem, musíme spolupracovat na upevnění afghánského státu." # todo: NEW TRANSLATION
+ je_consolidate_afghanistan: "Pamirská delimitace" # todo: NEW TRANSLATION
+ je_consolidate_afghanistan_reason: "Porézní a nejasné hranice afghánských států slouží jako záminka pro konflikty v oblasti Pamíru. Vyjednávání s [SCOPE.sCountry('rival_gp_scope').GetName] za účelem vymezení mezinárodně uznávaných hranic Afghánistánu výrazně sníží riziko války v Pamíru.\n\nNávrhy [ROOT.GetCountry.GetAdjective]:\n• #v $AFG$#! vzdá se všech nároků mimo své uznané hranice\n[SCOPE.GetRootScope.GetCountry.GetCustom('afghanistan_delineation_northern_proposal')]\n[SCOPE.GetRootScope.GetCountry.GetCustom('afghanistan_delineation_southeastern_proposal')][SCOPE.GetRootScope.GetCountry.GetCustom('afghanistan_delineation_offer_compensation')][SCOPE.GetRootScope.GetCountry.GetCustom('afghanistan_delineation_threaten_reprisals')]\n\nNávrhy [SCOPE.sCountry('rival_gp_scope').GetName]:\n• #v $AFG$#! vzdá se všech nároků mimo své uznané hranice\n[SCOPE.sCountry('rival_gp_scope').GetCustom('afghanistan_delineation_northern_proposal')]\n[SCOPE.sCountry('rival_gp_scope').GetCustom('afghanistan_delineation_southeastern_proposal')][SCOPE.sCountry('rival_gp_scope').GetCustom('afghanistan_delineation_offer_compensation')][SCOPE.sCountry('rival_gp_scope').GetCustom('afghanistan_delineation_threaten_reprisals')]" # todo: NEW TRANSLATION
+ afghanistan_delimitatation_no_proposal_southeast: "• Žádný návrh pro jihovýchod #v $AFG$#!" # todo: NEW TRANSLATION
+ afghanistan_delimitatation_durand_line: "• Jihovýchodní hranice #v $AFG$#! bude končit východně od #bold Pashtunistan#!, #bold Quetta#! a #bold Baluchistan#!" # todo: NEW TRANSLATION
+ afghanistan_delimitatation_indus_river_line: "• Jihovýchodní hranice #v $AFG$#! bude vedena podél řeky Indus" # todo: NEW TRANSLATION
+ afghanistan_delimitatation_status_quo_southeast: "• Současná jihovýchodní hranice #v $AFG$#! bude mezinárodně uznána" # todo: NEW TRANSLATION
+ afghanistan_delimitatation_no_proposal_north: "• Žádný návrh pro sever #v $AFG$#!" # todo: NEW TRANSLATION
+ afghanistan_delimitatation_torkestan_line: "• Severní hranice #v $AFG$#! bude končit jižně od pohoří Torkestan v #bold Balkh#!" # todo: NEW TRANSLATION
+ afghanistan_delimitatation_amu_darya_line: "• Severní hranice #v $AFG$#! bude vedena podél řeky Amu Darya a Garabilské plošiny" # todo: NEW TRANSLATION
+ afghanistan_delimitatation_status_quo_north: "• Současná severní hranice #v $AFG$#! bude mezinárodně uznána" # todo: NEW TRANSLATION
+ afghanistan_delimitatation_blank: "" # todo: NEW TRANSLATION
+ afghanistan_delimitatation_compensation: "\n• Afghánistánu (#v $AFG$#!) bude nabídnuto významné odškodnění výměnou za jakékoliv ztracené území" # todo: NEW TRANSLATION
+ afghanistan_delimitatation_reprisals: "\n• #v $AFG$#! bude informován, že další neochota vyjednávat může být setkána vojenskou silou k vynucení podmínek smlouvy" # todo: NEW TRANSLATION
+ retract_delimitation_treaty_tt: "" # todo: NEW TRANSLATION
+ je_unify_afghanistan_objective: "Sjednotit Afghánistán" # todo: NEW TRANSLATION
+ je_unify_afghanistan_objective_reason: "Pád Durraniovské říše nechal Afghánistán v konstantním občanském rozvratu mezi drobnými uchazeči o trůn. Abychom odvrátili přibližující se evropské mocnosti, musíme vytvořit jednotný a trvalý afghánský stát." # todo: NEW TRANSLATION
+ je_unify_afghanistan: "Afghánské znovusjednocení" # todo: NEW TRANSLATION
+ je_unify_afghanistan_reason: "Nástupnická krize po smrti Timura Šáha Durrani v roce 1793 vrhla bývalou Durraniovskou říši do období nekonečných občanských bojů. S hrozbou evropských mocností obcházejících ze všech stran musíme ukončit toto období bojujících knížectví a znovu vybudovat jednotný Afghánistán.\n\nAčkoliv požádání evropské [concept_great_power] o pomoc při znovusjednocení nám může zajistit jejich podporu, jejich #bold protivníci#! se stanou vůči našim cílům více nepřátelští." # todo: NEW TRANSLATION
+ state_is_bordering_afghanistan_tt: "Naše země, nebo jeden z našich [Concept('concept_subject', '$concept_subjects$')] má [concept_state] hraničící s #v $AFG$#!" # todo: NEW TRANSLATION
+ is_bordering_afghanistan_tt: "Naše země, nebo jeden z našich [Concept('concept_subject', '$concept_subjects$')] hraničí s #v $AFG$#!" # todo: NEW TRANSLATION
+ another_gp_is_bordering_afghanistan_tt: "Cizí [concept_great_power], nebo jeden z jejích [Concept('concept_subject', '$concept_subjects$')] hraničí s #v $AFG$#!" # todo: NEW TRANSLATION
+ first_gp_approves_tt: "[SCOPE.sCountry('gp_scope').GetName] schvaluje #bold delimitační smlouvu#!" # todo: NEW TRANSLATION
+ second_gp_approves_tt: "[SCOPE.sCountry('rival_gp_scope').GetName] schvaluje #bold delimitační smlouvu#!" # todo: NEW TRANSLATION
+ afghanistan_approves_tt: "[SCOPE.sCountry('afghanistan_scope').GetName] schvaluje #bold delimitační smlouvu#!" # todo: NEW TRANSLATION
+ je_consolidate_afghanistan_durand_line: "Rozdělit Pashtunistán" # todo: NEW TRANSLATION
+ je_consolidate_afghanistan_durand_line_desc: "Vytyčení partition uprostřed hovořícího pashtunsky regionu střední Asie udrží Afghánistán bez přístupu k moři a výrazně lépe spravovatelný." # todo: NEW TRANSLATION
+ je_consolidate_afghanistan_indus_line: "Navrhnout linii řeky Indus" # todo: NEW TRANSLATION
+ je_consolidate_afghanistan_indus_line_desc: "Vytyčení hranice zhruba podél západního břehu řeky Indus soustředí pashto-mluvící regiony Indie v Afghánistánu a umožní afghánskému státu přístup k moři." # todo: NEW TRANSLATION
+ je_consolidate_afghanistan_southeast_status_quo: "Navrhnout status quo na jihovýchodě" # todo: NEW TRANSLATION
+ je_consolidate_afghanistan_southeast_status_quo_desc: "Uznání současných de facto hranic Afghánistánu pomůže zabezpečit jeho spolupráci, za cenu potenciálních územních zisků." # todo: NEW TRANSLATION
+ je_consolidate_afghanistan_torkestan_line: "Požadovat pohoří Torkestan" # todo: NEW TRANSLATION
+ je_consolidate_afghanistan_torkestan_line_desc: "Vytyčení hranice podél pohoří Torkestan zajistí více jižního Pamíru a tádžickou část Afghánistánu pro nás, za cenu přímé hranice s Kašmírem." # todo: NEW TRANSLATION
+ je_consolidate_afghanistan_amu_darya_line: "Navrhnout linii Amu Darya" # todo: NEW TRANSLATION
+ je_consolidate_afghanistan_amu_darya_line_desc: "Vytyčení hranice podél řeky Amu Darya vytvoří pevný odstup mezi Tádžikistánem a Kašmírem, za cenu vzdání se jakéhokoli území, které bychom mohli kontrolovat jižně od řeky." # todo: NEW TRANSLATION
+ je_consolidate_afghanistan_north_status_quo: "Navrhnout status quo na severu" # todo: NEW TRANSLATION
+ je_consolidate_afghanistan_north_status_quo_desc: "Uznání současných de facto severních hranic Afghánistánu pomůže zabezpečit jeho spolupráci, za cenu potenciálních územních zisků." # todo: NEW TRANSLATION
+ je_consolidate_afghanistan_approve_of_treaty: "Schválit současný návrh" # todo: NEW TRANSLATION
+ je_consolidate_afghanistan_approve_of_treaty_desc: "Zaznamenali jsme všechny naše žádoucí #bold návrhy smlouvy#! a předložíme naši verzi k posouzení." # todo: NEW TRANSLATION
+ je_consolidate_afghanistan_retract_treaty: "Stáhnout současný návrh" # todo: NEW TRANSLATION
+ je_consolidate_afghanistan_retract_treaty_desc: "Chceme stáhnout naše současné #bold návrhy smlouvy#! a revidovat smlouvu." # todo: NEW TRANSLATION
+ je_consolidate_afghanistan_offer_compensation: "Nabídnout odškodnění" # todo: NEW TRANSLATION
+ je_consolidate_afghanistan_offer_compensation_desc: "Poskytnutí finanční pomoci afghánskému státu je motivuje tolerovat naši mediaci a pomůže kompenzovat možné územní ztráty." # todo: NEW TRANSLATION
+ je_consolidate_afghanistan_threaten_reprisals: "Hrozit odplatou" # todo: NEW TRANSLATION
+ je_consolidate_afghanistan_threaten_reprisals_desc: "Afghánský stát není v pozici vyjednávat. Musíme jim připomenout jejich místo na světě v porovnání s naším." # todo: NEW TRANSLATION
+ already_approved_of_treaty_tt: "Již ne #bold schválil#! žádný #bold návrh smlouvy#!" # todo: NEW TRANSLATION
+ proposed_partition_plan_tt: "Některá strana navrhla hranice #v $AFG$#!" # todo: NEW TRANSLATION
+ unlock_additional_proposals_for_afghanistan_tt: "Budou odemčeny další #bold návrhy smlouvy#! ohledně #v $AFG$#!" # todo: NEW TRANSLATION
+ reset_afghan_treaty_tt: "Všechny současné #bold návrhy smlouvy#! budou #bold resetovány#!" # todo: NEW TRANSLATION
+ approve_of_delimitation_treaty_tt: "Budeme #bold schvalovat#! níže uvedené podmínky:" # todo: NEW TRANSLATION
+ negotiations_failure_tt: "Vyjednávání se #bold zhroutí#!" # todo: NEW TRANSLATION
+ if_treaty_process_succeeds_tt: "Pokud tento [concept_journal_entry] #bold úspěšně dokončí:#!" # todo: NEW TRANSLATION
+ if_treaty_process_fails_tt: "Pokud tento [concept_journal_entry] #bold vyprší:#!" # todo: NEW TRANSLATION
+ je_afghan_unification_appeal_to_russia_button: "Obrátit se na #v $RUS$#!" # todo: NEW TRANSLATION
+ je_afghan_unification_appeal_to_russia_button_desc: "Požádat ruskou vládu o poskytnutí pomoci se znovusjednocením Afghánistánu." # todo: NEW TRANSLATION
+ je_afghan_unification_appeal_to_britain_button: "Žádat #v $GBR$#! o pomoc" # todo: NEW TRANSLATION
+ je_afghan_unification_appeal_to_britain_button_desc: "Požádat britskou vládu o poskytnutí pomoci se znovusjednocením Afghánistánu." # todo: NEW TRANSLATION
+ has_formed_afghanistan_tt: "Utvřil národ #v $AFG$#!" # todo: NEW TRANSLATION
+ afghanistan_exists_tt: "Národ #v $AFG$#! existuje" # todo: NEW TRANSLATION
+ afghanistan_borders_tt: "Hranice #v $AFG$#! byly mezinárodně uznány" # todo: NEW TRANSLATION
+ AFG_appealed_to_RUS_tt: "Nemá žádnou očekávající nebo přijatou žádost o pomoc od #v $RUS$#!" # todo: NEW TRANSLATION
+ AFG_appealed_to_GBR_tt: "Nemá žádnou očekávající nebo přijatou žádost o pomoc od #v $GBR$#!" # todo: NEW TRANSLATION
+ opposes_rus_in_diplo_play_tt: "Neodporuje #v $RUS$#! v [concept_diplomatic_play]" # todo: NEW TRANSLATION
+ opposes_gbr_in_diplo_play_tt: "Neodporuje #v $GBR$#! v [concept_diplomatic_play]" # todo: NEW TRANSLATION
+ status_quo_north_tt: "Současná #bold severní#! hranice #v $AFG$#! zůstane nezměněna" # todo: NEW TRANSLATION
+ status_quo_southeast_tt: "Současná #bold jihovýchodní#! hranice #v $AFG$#! zůstane nezměněna" # todo: NEW TRANSLATION
+ harsh_relations_penalty_afghanistan_tt: "Obě vyjednávající mocnosti mohou následovat své hrozby #bold vojenské odvety#!" # todo: NEW TRANSLATION
+ harsh_relations_penalty_negotiating_power_tt: "#v $AFG$#! ignoroval naše hrozby #bold vojenské odvety#!" # todo: NEW TRANSLATION
+ if_treaty_process_fails_relations_hit_tt: "Pokud #v $AFG$#! odmítne tento #bold návrh smlouvy#!, naše [concept_relations] utrpí značně" # todo: NEW TRANSLATION
+ conflicting_treaty_proposal_north_tt: "Náš #bold návrh smlouvy#! pro #bold severní hranici#! nekoliduje s návrhem [SCOPE.sCountry('rival_gp_scope').GetAdjective]" # todo: NEW TRANSLATION
+ conflicting_treaty_proposal_southwest_tt: "Náš #bold návrh smlouvy#! pro #bold jihozápadní hranici#! nekoliduje s návrhem [SCOPE.sCountry('rival_gp_scope').GetAdjective]" # todo: NEW TRANSLATION
+ is_not_already_negotiating_tt: "Není již projednáváno tento bod" # todo: NEW TRANSLATION
+ je_consolidate_afghanistan_resolve_northern_conflict: "Vyřešit konflikt severní hranice" # todo: NEW TRANSLATION
+ je_consolidate_afghanistan_resolve_northern_conflict_desc: "Usmířit rozdíly mezi naším návrhem pro sever Afghánistánu a návrhem našeho protivníka." # todo: NEW TRANSLATION
+ je_consolidate_afghanistan_resolve_southwest_conflict: "Vyřešit konflikt jihozápadní hranice" # todo: NEW TRANSLATION
+ je_consolidate_afghanistan_resolve_southwest_conflict_desc: "Usmířit rozdíly mezi naším návrhem pro jihozápad Afghánistánu a návrhem našeho protivníka." # todo: NEW TRANSLATION
+ AFG_no_other_afghan_nation_appealing_rus_tt: "Žádný jiný afghánský [concept_country] momentálně nevyzývá #v $RUS$#!" # todo: NEW TRANSLATION
+ AFG_no_other_afghan_nation_appealing_gbr_tt: "Žádný jiný afghánský [concept_country] momentálně nevyzývá #v $GBR$#!" # todo: NEW TRANSLATION
+ not_receiving_aid_tt: "Nepřijímá již zahraniční vojenskou pomoc" # todo: NEW TRANSLATION
+ abandon_proposed_torkestan_line_tt: "Náš #bold návrh smlouvy#! vzít #bold pohoří Torkestan#! bude odstraněn" # todo: NEW TRANSLATION
+ abandon_proposed_amu_darya_line_tt: "Náš #bold návrh smlouvy#! pro #bold linii Amu Darya#! bude odstraněn" # todo: NEW TRANSLATION
+ abandon_proposed_status_quo_north_tt: "Náš #bold návrh smlouvy#! pro #bold Status Quo na severu#! bude odstraněn" # todo: NEW TRANSLATION
+ abandon_proposed_durand_line_tt: "Náš #bold návrh smlouvy#! rozdělit #bold Pashtunistan#! bude odstraněn" # todo: NEW TRANSLATION
+ abandon_proposed_indus_line_tt: "Náš #bold návrh smlouvy#! pro #bold linii řeky Indus#! bude odstraněn" # todo: NEW TRANSLATION
+ abandon_proposed_status_quo_tt: "Náš #bold návrh smlouvy#! pro #bold Status Quo na jihovýchodě#! bude odstraněn" # todo: NEW TRANSLATION
+ force_opponent_to_renegotiate_tt: "[SCOPE.sCountry('sender_scope').GetName] bude nucen přehodnotit své #bold návrhy smlouvy#!" # todo: NEW TRANSLATION
+ afghanistan_abandon_claims_tt: "#v $AFG$#! se vzdá všech nároků mimo své uznané hranice" # todo: NEW TRANSLATION
+ notification_afghanistan_assistance_request_accepted_name: "[SCOPE.sCountry('relevant_country').GetName] přijímá žádost o podporu" # todo: NEW TRANSLATION
+ notification_afghanistan_assistance_request_accepted_desc: "[SCOPE.sCountry('relevant_country').GetName] přijal naši žádost o podporu při reunifikaci Afghánistánu. Nyní je pravděpodobnější, že nám pomůže." # todo: NEW TRANSLATION
+ notification_afghanistan_assistance_request_accepted_tooltip: "#header $notification_afghanistan_assistance_request_accepted_name$#!\n$TOOLTIP_DELIMITER$\n$notification_afghanistan_assistance_request_accepted_desc$" # todo: NEW TRANSLATION
+ notification_afghanistan_assistance_request_rejected_name: "[SCOPE.sCountry('relevant_country').GetName] odmítá žádost o podporu" # todo: NEW TRANSLATION
+ notification_afghanistan_assistance_request_rejected_desc: "[SCOPE.sCountry('relevant_country').GetName] poslal obecnou odpověď na naši žádost o podporu při reunifikaci Afghánistánu a uvedl, že se v tuto chvíli nemůže zavázat k pomoci." # todo: NEW TRANSLATION
+ notification_afghanistan_assistance_request_rejected_tooltip: "#header $notification_afghanistan_assistance_request_rejected_name$#!\n$TOOLTIP_DELIMITER$\n$notification_afghanistan_assistance_request_rejected_desc$" # todo: NEW TRANSLATION
+ AFG_GBR_support_request_rejected_tt: "Nevyžádal si podporu od #v $GBR$#! v posledních #variable 10 letech#!" # todo: NEW TRANSLATION
+ AFG_RUS_support_request_rejected_tt: "Nevyžádal si podporu od #v $RUS$#! v posledních #variable 10 letech#!" # todo: NEW TRANSLATION
+ AFG_appeal_accept_tt: "Budou mít větší tendenci usilovat o pozitivní vztahy s vámi a budete jim dlužni [concept_obligation]" # todo: NEW TRANSLATION
+ gg_afghanistan.1.t: "Dohoda [SCOPE.sCountry('gp_scope').GetAdjectiveNoFormatting]-[SCOPE.sCountry('rival_gp_scope').GetAdjectiveNoFormatting]" # todo: NEW TRANSLATION
+ gg_afghanistan.1.d: "[Concept('concept_great_power','$concept_great_powers$')] [SCOPE.sCountry('gp_scope').GetName] a [SCOPE.sCountry('rival_gp_scope').GetName] se vzájemně dohodly na plánu „vyřešit dlouhotrvající hraniční spory v Afghánistánu“. Navrhovaná smlouva vyžaduje ústupky od našeho státu." # todo: NEW TRANSLATION
+ gg_afghanistan.1.f: "Tón byl jako u dokumentu měnícího svět, který by přinesl regionu na staletí mír. Každý ústupek od [ROOT.GetCountry.GetName] byl formulován jako laskavost jedné z konkurenčních mocností, převod půdy nárokované jednou ze stran na lidi, kteří tam již žijí. Velvyslanec si s údivem pomyslel, že [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] byl o dohodě vůbec informován." # todo: NEW TRANSLATION
+ gg_afghanistan.1.a: "Nemáme jinou volbu než přijmout." # todo: NEW TRANSLATION
+ gg_afghanistan.1.b: "Odmítnout to v nejsilnějších možných termínech." # todo: NEW TRANSLATION
+ gg_afghanistan.2.t: "Afghánistán odmítá navrhovanou dohodu" # todo: NEW TRANSLATION
+ gg_afghanistan.2.d: "[SCOPE.sCountry('afghanistan_scope').GetRuler.GetPrimaryRoleTitle] poslal [SCOPE.sCountry('afghanistan_scope').GetRuler.GetHerHis] odpověď na navrhovanou [SCOPE.sCountry('gp_scope').GetAdjectiveNoFormatting]-[SCOPE.sCountry('rival_gp_scope').GetAdjectiveNoFormatting] dohodu - pevné zamítnutí. S afghánskou vládou neochotnou vynutit smlouvu v její současné podobě možná budeme muset provést úpravy." # todo: NEW TRANSLATION
+ gg_afghanistan.2.f: "Když odcházel, kurýr zcela očekával, že pohledy společníků [SCOPE.sCountry('afghanistan_scope').GetRuler.GetPrimaryRoleTitle] mu propálí ocas kabátu. Stál za ním tisíce pušek, miliony liber, flotily honosných plavidel - ale nic z toho v té chvíli nehrálo roli, daleko od jakéhokoliv pobřeží, s nejbližší posádkou na míle daleko." # todo: NEW TRANSLATION
+ gg_afghanistan.2.a: "Zpět k náčrtkům." # todo: NEW TRANSLATION
+ gg_afghanistan.3.t: "Afghánistán žádá o pomoc" # todo: NEW TRANSLATION
+ gg_afghanistan.3.d: "[SCOPE.sCountry('afghan_nation_scope').GetName] požádal o naši pomoc při reunifikaci Afghánistánu. Zajištění přátelského afghánského státu bude užitečné jako nástroj proti našim rivalům v regionu." # todo: NEW TRANSLATION
+ gg_afghanistan.3.f: "Mapa byla nejlépe řečeno volně definována. Výběr států vzniklých z rozpadu Durraniovské říše, znázorňující válející se větve Barakzaiů a Durraniů, stejně jako pokusy o znázornění oblastí ovládaných místními kmeny a povstaleckými provinciemi. Vyslanec položil dopis na blízký stůl a podíval se na brýlatého důstojníka, do kterého právě vstoupil.\n\n\"[SCOPE.sCountry('afghan_nation_scope').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('afghan_nation_scope').GetNameNoFormatting],\" začal, \"to je ten modrý, žádá naši pomoc při 'potlačení vzpurných provincií a obnovení legitimní vlády v Afghánistánu'. Máme se na to podívat, nebo mám připravit generickou odpověď?\"" # todo: NEW TRANSLATION
+ gg_afghanistan.3.a: "Výborná příležitost." # todo: NEW TRANSLATION
+ gg_afghanistan.3.b: "Nemáme o to zájem." # todo: NEW TRANSLATION
+ gg_afghanistan.4.t: "Afghánské znovusjednocení" # todo: NEW TRANSLATION
+ gg_afghanistan.4.d: "S porážkou poslední vzpurné provincie skončily občanské války vyvolané pádem Durraniovské říše. [ROOT.GetCountry.GetRuler.GetFullName] je nyní jediným legitimním [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetName]." # todo: NEW TRANSLATION
+ gg_afghanistan.4.f: "Války byly nejjednodušší částí, zamyslel se [ROOT.GetCountry.GetRuler.GetSheHe]. Řízení loajality kmenů a [ROOT.GetCountry.GetRuler.GetHerHis] podřízených bylo vždy složitější, a teď bude muset udělat totéž v celostátním měřítku. Kdyby vláda polevila, jak dlouho by trvalo, než přijde další vlna povstání? Je to vzácně, téměř neobyčejně, kdo dokáže zvítězit jak ve válce, tak v míru.\n\nProzatím je však čas slavit. Lidé jsou veselí a žádají projev. [ROOT.GetCountry.GetRuler.GetSheHe|U] jim ho pronesou." # todo: NEW TRANSLATION
+ gg_afghanistan.4.a: "Je ještě mnoho země k znovudobytí." # todo: NEW TRANSLATION
+ gg_afghanistan.4.b: "Udržíme náš stát tak dlouho, jak jen to půjde." # todo: NEW TRANSLATION
+ gg_afghanistan.5.t: "Překřížené čáry" # todo: NEW TRANSLATION
+ gg_afghanistan.5.d: "Náš návrh na severní hranici #v $AFG$#! je v rozporu s návrhem vyjednávacího týmu [SCOPE.sCountry('sender_scope').GetAdjective] natolik, že nelze dosáhnout kompromisu. Jedna strana se musí ustoupit, aby mohl vyjednávací proces pokračovat." # todo: NEW TRANSLATION
+ gg_afghanistan.5.f: "Na severním Afghánistánu byly nakresleny tři čáry různými barvami inkoustu. Divoce se rozcházely, klikatily se přes pohoří Torkestan a Amu Darya, turkmenskou poušť a jižní Pamír, depresivně málo překryvů se objevovalo jako duhové skvrny, kde inkoust úplně prosákl papír.\n\n\"Měli bychom to zkusit znovu,\" vykřikl jeden z představitelů a ostatní přikývli skrz sevřené zuby." # todo: NEW TRANSLATION
+ gg_afghanistan.5.a: "Přijmeme návrh [SCOPE.sCountry('sender_scope').GetAdjective]." # todo: NEW TRANSLATION
+ gg_afghanistan.5.b: "Přijmeme návrh [SCOPE.sCountry('sender_scope').GetAdjective]." # todo: NEW TRANSLATION
+ gg_afghanistan.5.c: "Přijmeme návrh [SCOPE.sCountry('sender_scope').GetAdjective]." # todo: NEW TRANSLATION
+ gg_afghanistan.5.e: "Naše rozhodnutí je konečné. [SCOPE.sCountry('sender_scope').GetAdjective] musí ustoupit." # todo: NEW TRANSLATION
+ gg_afghanistan.6.t: "Překřížené čáry" # todo: NEW TRANSLATION
+ gg_afghanistan.6.d: "Náš návrh pro jihozápadní hranici #v $AFG$#! je v rozporu s návrhem vyjednávacího týmu [SCOPE.sCountry('sender_scope').GetAdjective] natolik, že nelze dosáhnout kompromisu. Jedna strana se musí ustoupit, aby mohl vyjednávací proces pokračovat." # todo: NEW TRANSLATION
+ gg_afghanistan.6.f: "Na severovýchodní Indii byly nakresleny tři čáry různými barvami inkoustu. Divoce se rozcházely, klikatily se přes řeku Indus a Balúčskou poušť, tvoříc svévolné tvary, jak se kroutily přes vlnící se hory Kakar, depresivně málo překryvů se objevovalo jako duhové skvrny, kde inkoust úplně prosákl papír.\n\n\"Měli bychom to zkusit znovu,\" vykřikl jeden z představitelů a ostatní přikývli skrz sevřené zuby." # todo: NEW TRANSLATION
+ gg_afghanistan.6.a: "Přijmeme návrh [SCOPE.sCountry('sender_scope').GetAdjective]." # todo: NEW TRANSLATION
+ gg_afghanistan.6.b: "Přijmeme návrh [SCOPE.sCountry('sender_scope').GetAdjective]." # todo: NEW TRANSLATION
+ gg_afghanistan.6.c: "Přijmeme návrh [SCOPE.sCountry('sender_scope').GetAdjective]." # todo: NEW TRANSLATION
+ gg_afghanistan.6.e: "Naše rozhodnutí je konečné. [SCOPE.sCountry('sender_scope').GetAdjective] musí ustoupit." # todo: NEW TRANSLATION
+ sg_disrupt_russian_caucasus: "Narušit ruský Kavkaz" # todo: NEW TRANSLATION
+ sg_secure_persian_border: "Narušit ruský Kavkaz" # todo: NEW TRANSLATION
+ je_disrupt_russian_caucasus: "Narušit ruský Kavkaz" # todo: NEW TRANSLATION
+ je_disrupt_russian_caucasus_reason: "Zrodný stát Čečens, ležící na Černém moři v kavkazském regionu, představuje příležitost zbrzdit ruskou konsolidaci v regionu. Prodloužit uznání čečénského státu a zajistit jeho pokračující existenci musí být naší prioritou." # todo: NEW TRANSLATION
+ circassia_dead_tt: "#v $CIR$#! byl poražen" # todo: NEW TRANSLATION
+ je_secure_persian_border: "Zajistit perskou hranici" # todo: NEW TRANSLATION
+ je_secure_persian_border_reason: "Přítomnost povstaleckých států na Severním Kavkaze ohrožuje naši kontrolu nad regionem a tím i naši schopnost prosazovat moc na Blízkém východě. Dlouhotrvající kavkazská válka musí skončit ve prospěch našeho národa." # todo: NEW TRANSLATION
+ je_codify_chinese_border: "Kodifikovat čínskou hranici" # todo: NEW TRANSLATION
+ je_codify_chinese_border_reason: "Naše hranice s Čínou je dlouhá a neformalizovaná. Snažit se vytyčit formální hranici mezi naším státem a Čínou by mohlo umožnit štědré převody území do naší kontroly a minimalizovat riziko budoucích hraničních konfliktů." # todo: NEW TRANSLATION
+ china_doesnt_have_claim_tt: "Žádný zahraniční [concept_country] nemá [concept_claim] na [SCOPE.sStateRegion('amur_scope').GetName], [SCOPE.sStateRegion('primorye_scope').GetName], [SCOPE.sStateRegion('jetisy_scope').GetName], nebo [SCOPE.sStateRegion('altai_scope').GetName]" # todo: NEW TRANSLATION
+ je_consolidate_central_asia: "Konsolidovat državy ve Střední Asii" # todo: NEW TRANSLATION
+ je_consolidate_central_asia_reason: "Region Střední Asie byl dlouho mimo naši kontrolu, spravován roztroušenými chanáty a emiraty. Abychom zajistili přístup k Indii, musíme zajistit podřízenost středníchasijských států, ať už jako [Concept('concept_subject', '$concept_subjects$')] nebo přímou dobytím." # todo: NEW TRANSLATION
+ owned_by_this_country_or_subjects_tt: "Vlastněno [ROOT.GetCountry.GetName] nebo jejími [Concept('concept_subject', '$concept_subjects$')]" # todo: NEW TRANSLATION
+ completely_owned_by_this_country_or_subjects_tt: "Úplně vlastněno [ROOT.GetCountry.GetName] nebo jejími [Concept('concept_subject', '$concept_subjects$')]" # todo: NEW TRANSLATION
+ je_chinese_concessions: "Získat mandžuské koncese" # todo: NEW TRANSLATION
+ je_chinese_concessions_reason: "Region Mandžuska obsahuje několik oblastí, které mohou sloužit jako hodnotné přístavy s teplou vodou. Získání smluvních koncesí a výstavba železnic v regionu výrazně posílí naši projekci moci v Pacifiku." # todo: NEW TRANSLATION
+ owned_by_russia_or_chinese_country: "Stát je vlastněn touto zemí, nebo jinou zemí s $manchu$ nebo $han$ [concept_primary_cultures]" # todo: NEW TRANSLATION
+ je_pacify_kazakh_steppes: "Pacifikovat kazašskou step" # todo: NEW TRANSLATION
+ je_pacify_kazakh_steppes_reason: "Ačkoliv jsme formálně rozšířili naši autoritu nad různými kazašskými chanáty v raném osmnáctém století, efektivní správa kazašské stepi se ukázala být obtížná. Naše reorganizace regionu v roce 1828 oficiálně nahradila každého bývalého chána ruským jmenovaným [Concept('concept_ruler','$RULER_TITLE_SENIOR_SULTAN$')], ale problém banditství a široké nespokojenosti s jejich vládou přetrvává. Abychom to vyřešili, musí být tři żúzy úspěšně uklidněny a přivedeny pod přímou ruskou kontrolu." # todo: NEW TRANSLATION
+ je_acquire_korean_protectorate: "Zajistit korejský protektorát" # todo: NEW TRANSLATION
+ je_acquire_korean_protectorate_reason: "Korejský poloostrov představuje příležitost pro další rozšíření našeho vlivu do Východní Asie a Tichého oceánu. Správně rozvinuté Korea pod naším dohledem by mohla soupeřit s Japonskem a posílit naše dalekovýchodní državy proti cizí invazi." # todo: NEW TRANSLATION
+ je_counter_russian_pacific_influence: "Zadržet ruský pacifický vliv" # todo: NEW TRANSLATION
+ je_counter_russian_pacific_influence_reason: "Ruské získání kvalitních přístavů na jejich pacifickém pobřeží představuje nepřijatelné riziko ztráty námořní nadvlády v severním Pacifiku. Abychom omezili jejich vliv v regionu, musíme hledat spolehlivého spojence mezi nezávislými mocnostmi regionu." # todo: NEW TRANSLATION
+ capital_in_various_east_asian_regions_tt: "[concept_capital_state] je v #bold Japonsku#!, #bold Mandžusku#!, #bold Severní Číně#!, #bold Jižní Číně#! nebo #bold Indonésii#! [concept_strategic_region]" # todo: NEW TRANSLATION
+ je_consolidate_british_india: "Rozšířit Britskou Indii" # todo: NEW TRANSLATION
+ je_consolidate_british_india_reason: "Existence nezávislých států na okrajích [SCOPE.sCountry('india_scope').GetName] představuje příležitost rozšířit a obohatit naše kolonie v regionu a také odstranit možné cesty, jimiž by naši oponenti mohli ohrožovat vysoce ziskové země Indie." # todo: NEW TRANSLATION
+ raj_expanded_westward_tt: "Všechny [Concept('concept_country', '$concept_countries$')] v [GetGeographicRegion('geographic_region_india').GetName] jsou [Concept('concept_subject', '$concept_subjects$')] [SCOPE.sCountry('britain_scope').GetName] nebo jejích subjektů" # todo: NEW TRANSLATION
+ raj_expanded_eastwards_tt: "Všechny [Concept('concept_state', '$concept_states$')] v [GetGeographicRegion('geographic_region_burma').GetName] jsou kontrolovány [SCOPE.sCountry('britain_scope').GetName] nebo jejími [Concept('concept_subject', '$concept_subjects$')]" # todo: NEW TRANSLATION
+ je_pamir_expedition_objective: "Utkat se o ruské Pamíry" # todo: NEW TRANSLATION
+ je_pamir_expedition_objective_reason: "Nedávné ruské rozšíření do pohoří Pamir představuje nesnesitelnou hrozbu našim zájmům v Indii. Vytvoření nárazníkového státu v Tádžikistánu by Rusko ponížilo a poskytlo našim zájmům na jihu Pamíru trochu prostoru k nadechnutí, za cenu vysokého rizika #bold přímé války#! mezi #v $RUS$#! a #v $GBR$#!.\n\nTuto možnost je třeba zkoumat opatrně." # todo: NEW TRANSLATION
+ pamir_expedition_dismissed_tt: "Tuto možnost #bold zamítneme#!" # todo: NEW TRANSLATION
+ je_pamir_expedition_dismiss_button: "Odmítnout návrh" # todo: NEW TRANSLATION
+ je_pamir_expedition_dismiss_button_desc: "Tento návrh je téměř jistě vedením k zničující plnohodnotné válce proti Rusku. Je nejlepší, když se nikdy znovu nedostane na světlo." # todo: NEW TRANSLATION
+ does_not_own_tajikistan_tt: "#v $RUS$#! nevlastní stát v #bold Tádžikistánu#! [concept_state_region]" # todo: NEW TRANSLATION
+ does_not_own_tajikistan_subject_tt: "Nevlastní stát v #bold Tádžikistánu#! [concept_state_region]" # todo: NEW TRANSLATION
+ britain_owns_tajikistan_tt: "#v $GBR$#! má stát v #bold Tádžikistánu#! [concept_state_region]" # todo: NEW TRANSLATION
+ britain_owns_tajikistan_subject_tt: "Má stát v #bold Tádžikistánu#! [concept_state_region]" # todo: NEW TRANSLATION
+ has_not_cancelled_pamir_expedition_tt: "Tuto možnost #bold nezamítl#!" # todo: NEW TRANSLATION
+ has_cancelled_pamir_expedition_tt: "Tuto možnost #bold zamítl#!" # todo: NEW TRANSLATION
+ great_game_core_progress_bar_name: "Velká hra" # todo: NEW TRANSLATION
+ great_game_core_progress_bar_britain_desc: "[GetGlobalVariable('great_game_gbr_progress').GetValue|1]#!" # todo: NEW TRANSLATION
+ great_game_core_progress_bar_russia_desc: "[GetGlobalVariable('great_game_rus_progress').GetValue|1]#!" # todo: NEW TRANSLATION
+ je_great_game_control: "Velká hra" # todo: NEW TRANSLATION
+ je_great_game_control_reason: "Pokrok směrem k #bold levému#! konci lišty bude v prospěch #v $GBR$#!, zatímco pokrok směrem k #bold pravému#! konci bude v prospěch #v $RUS$#!.\n\nOd počátku devatenáctého století se #bold Velká hra#! stala obecně pojmenováním konfliktů mezi #v $GBR$#! a #v $RUS$#! o vliv nad [GetGeographicRegion('geographic_region_central_asia_old').GetName] a okolím. Obě vlády považovaly komplexní vojenské vítězství proti druhé za nemožné, a tak se #bold Velká hra#! vedla sérií nepřímých střetů o vliv nad zeměmi na linii mezi oběma státy.\n\n#bold Vítězství:#!\n[SCOPE.GetRootScope.GetCountry.GetCustom('great_game_victory_caucasus')][SCOPE.GetRootScope.GetCountry.GetCustom('great_game_victory_kazakhstan')][SCOPE.GetRootScope.GetCountry.GetCustom('great_game_victory_khanates')][SCOPE.GetRootScope.GetCountry.GetCustom('great_game_victory_afghanistan')][SCOPE.GetRootScope.GetCountry.GetCustom('great_game_victory_persia')][SCOPE.GetRootScope.GetCountry.GetCustom('great_game_victory_korea')]\n#bold Postupy:#!\n#variable Russia#! - Vynucení smlouvy z Turkmenčaje\n#variable Britain#! - Úspěšná expedice do Buchary\n[SCOPE.GetRootScope.GetCountry.GetCustom('great_game_advance_chinese_border')][SCOPE.GetRootScope.GetCountry.GetCustom('great_game_advance_consolidated_british_india')][SCOPE.GetRootScope.GetCountry.GetCustom('great_game_advance_manchurian_railway')][SCOPE.GetRootScope.GetCountry.GetCustom('great_game_advance_contained_russian_pacific')][SCOPE.GetRootScope.GetCountry.GetCustom('great_game_advance_trans_siberian_railway')]" # todo: NEW TRANSLATION
+ europeans_expelled_from_casia_tt: "Ani #v $RUS$#! ani #v $GBR$#! nemají žádné [Concept('concept_subject', '$concept_subjects$')] ani vlastněné [Concept('concept_state', '$concept_states$')] v [GetGeographicRegion('geographic_region_central_asia_old').GetName] nebo [GetGeographicRegion('geographic_region_persia_old').GetName] [Concept('concept_strategic_region','$concept_strategic_regions$')]" # todo: NEW TRANSLATION
+ gg_drift_towards_britain: "#v $GBR$#!" # todo: NEW TRANSLATION
+ gg_drift_towards_russia: "#v $RUS$#!" # todo: NEW TRANSLATION
+ gg_drift_towards_nobody: "#v neither party#!" # todo: NEW TRANSLATION
+ capital_in_persia_or_casia_tt: "[concept_capital_state] je v [SCOPE.sStrategicRegion('central_asia_region').GetName] nebo [SCOPE.sStrategicRegion('persia_region').GetName]" # todo: NEW TRANSLATION
+ any_casia_country_recognised_tt: "Země, jejíž [concept_capital_state] je v [SCOPE.sStrategicRegion('central_asia_region').GetName] nebo [SCOPE.sStrategicRegion('persia_region').GetName], dosáhla statusu [Concept('concept_recognized_power','$concept_recognized_power_short$')] a hodnosti [concept_major_power] nebo výše" # todo: NEW TRANSLATION
+ great_game_core_progress_bar_RUS_prestige: "#v Russian#! [concept_prestige]" # todo: NEW TRANSLATION
+ great_game_core_progress_bar_GBR_prestige: "#v British#! [concept_prestige]" # todo: NEW TRANSLATION
+ great_game_core_progress_bar_military_balance: "Balanc vojenské [concept_power_projection]" # todo: NEW TRANSLATION
+ great_game_core_progress_bar_prestige_balance: "Bilance [concept_prestige]" # todo: NEW TRANSLATION
+ great_game_core_progress_passive_balance: "bilance přímo kontrolovaného nebo [concept_subject]-kontrolovaného [concept_gdp] #v Persie#! nebo #v Střední Asie#! [Concept('concept_strategic_region','$concept_strategic_regions$')]\n(#v $GBR$#!: [GetGlobalVariable('great_game_british_passive_var').GetValue|v1%]#!, #v $RUS$#!: [GetGlobalVariable('great_game_russian_passive_var').GetValue|v1%]#!)" # todo: NEW TRANSLATION
+ great_game_complete_tt: "#bold Velká hra#! skončila, se všemi zeměmi v [GetGeographicRegion('geographic_region_caucasus').GetName], [GetGeographicRegion('geographic_region_central_asia').GetName] a [GetGeographicRegion('geographic_region_greater_persia').GetName] [Concept('concept_georegion','$concept_geogregions$')] jako [concept_subject] nebo členy [concept_power_bloc] buď #v $RUS$#! nebo #v $GBR$#!" # todo: NEW TRANSLATION
+ outcome_depends_on_score_tt: "Konečný #bold výsledek#! #bold Velké hry#! bude záviset na balanci #bold ukazatele pokroku#!" # todo: NEW TRANSLATION
+ gg_caucasian_war_russian: "#bold Kavkazská válka#! - #variable Ruské#! vítězství\n" # todo: NEW TRANSLATION
+ gg_caucasian_war_british: "#bold Kavkazská válka#! - #variable Britské#! vítězství\n" # todo: NEW TRANSLATION
+ gg_caucasian_war_inconclusive: "#bold Kavkazská válka#! - nerozhodná\n" # todo: NEW TRANSLATION
+ gg_caucasian_war_blank: "" # todo: NEW TRANSLATION
+ gg_kazakhstan_russian: "#bold Kazašské povstání#! - #variable Ruské#! vítězství\n" # todo: NEW TRANSLATION
+ gg_kazakhstan_british: "#bold Kazašské povstání#! - #variable Britské#! vítězství\n" # todo: NEW TRANSLATION
+ gg_kazakhstan_inconclusive: "#bold Kazašské povstání#! - nerozhodné\n" # todo: NEW TRANSLATION
+ gg_kazakhstan_blank: "" # todo: NEW TRANSLATION
+ gg_khanates_russian: "#bold Dobytí Střední Asie#! - #variable Ruské#! vítězství\n" # todo: NEW TRANSLATION
+ gg_khanates_british: "#bold Dobytí Střední Asie#! - #variable Britské#! vítězství\n" # todo: NEW TRANSLATION
+ gg_khanates_inconclusive: "#bold Dobytí Střední Asie#! - nerozhodné\n" # todo: NEW TRANSLATION
+ gg_khanates_blank: "" # todo: NEW TRANSLATION
+ gg_afghanistan_blank: "" # todo: NEW TRANSLATION
+ gg_afghanistan_russian: "#bold Afghánský protektorát#! - #variable Ruské#! vítězství\n" # todo: NEW TRANSLATION
+ gg_afghanistan_britain: "#bold Afghánský protektorát#! - #variable Britské#! vítězství\n" # todo: NEW TRANSLATION
+ gg_afghanistan_independent: "#bold Afghánský protektorát#! - #variable Afghánské#! vítězství\n" # todo: NEW TRANSLATION
+ gg_afghanistan_inconclusive: "#bold Afghánský protektorát#! - nerozhodné\n" # todo: NEW TRANSLATION
+ gg_persia_blank: "" # todo: NEW TRANSLATION
+ gg_persia_russian: "#bold Vliv v Persii#! - #variable Ruské#! vítězství\n" # todo: NEW TRANSLATION
+ gg_persia_britain: "#bold Vliv v Persii#! - #variable Britské#! vítězství\n" # todo: NEW TRANSLATION
+ gg_persia_independent: "#bold Vliv v Persii#! - #variable Perské#! vítězství\n" # todo: NEW TRANSLATION
+ gg_persia_inconclusive: "#bold Vliv v Persii#! - nerozhodné\n" # todo: NEW TRANSLATION
+ gg_korea_blank: "" # todo: NEW TRANSLATION
+ gg_korea_russian: "#bold Korejská nezávislost#! - #variable Ruské#! vítězství\n" # todo: NEW TRANSLATION
+ gg_korea_failure: "#bold Korejská nezávislost#! - #variable Ruské#! porážka\n" # todo: NEW TRANSLATION
+ gg_korea_inconclusive: "#bold Korejská nezávislost#! - nerozhodné\n" # todo: NEW TRANSLATION
+ gg_chinese_border_blank: "" # todo: NEW TRANSLATION
+ gg_chinese_border_russian: "#variable Russia#! - kodifikoval čínskou hranici\n" # todo: NEW TRANSLATION
+ gg_manchurian_railway_blank: "" # todo: NEW TRANSLATION
+ gg_manchurian_railway_russian: "#variable Russia#! - získal koncese v Mandžusku\n" # todo: NEW TRANSLATION
+ gg_india_consolidated_blank: "" # todo: NEW TRANSLATION
+ gg_india_consolidated_british: "#variable Britain#! - konsolidovala Britskou Indii\n" # todo: NEW TRANSLATION
+ gg_pacific_containment_blank: "" # todo: NEW TRANSLATION
+ gg_pacific_containment_british: "#variable Britain#! - dosáhla tichomořského obklíčení\n" # todo: NEW TRANSLATION
+ gg_trans_siberian_railway_blank: "" # todo: NEW TRANSLATION
+ gg_trans_siberian_railway_russian: "#variable Russia#! - postavila Transsibiřskou železnici\n" # todo: NEW TRANSLATION
+ je_secure_persian_border_complete_tt: "#bold Kavkazská válka#! [concept_journal_entry] byla #bold úspěšně dokončena#!" # todo: NEW TRANSLATION
+ je_secure_persian_border_fail_tt: "#bold Kavkazská válka#! [concept_journal_entry] selhala" # todo: NEW TRANSLATION
+ je_pacify_kazakh_steppes_success_tt: "#bold Pacifikace stepí#! [concept_journal_entry] byla #bold úspěšně dokončena#!, nebo #bold Kazašské povstání#! bylo #bold poraženo#!" # todo: NEW TRANSLATION
+ je_pacify_kazakh_steppes_fail_tt: " #bold Kazašské povstání#! úspěšně vyhnalo #bold ruský#! vliv z #variable jednoho nebo více#! žúzů" # todo: NEW TRANSLATION
+ pacify_the_steppe_modifier: "Ruská protiofenziva proti povstání" # todo: NEW TRANSLATION
+ je_the_eastern_border_treaty_of_aigun: "Předložit Smlouvu z Aigunu" # todo: NEW TRANSLATION
+ je_the_eastern_border_treaty_of_aigun_desc: "Území #bold Amur#! je prakticky izolované od zbytku Číny a vhodné k osídlení. Vojenské posílení ve východní Sibiři by mělo přimět čínskou vládu vzdát se území bez konfliktu." # todo: NEW TRANSLATION
+ obligation_for_amur_tt: "Vyměníme naši povinnost za #bold Amur#!." # todo: NEW TRANSLATION
+ transfer_of_amur_tt: "Požadujeme předání #bold Amuru#! pod ruskou správu." # todo: NEW TRANSLATION
+ east_siberia_formation_tt: "Jakákoli [concept_army] v [SCOPE.sStrategicRegion('east_siberia_region').GetName] [concept_hq] má více než #variable 20#! [Concept('concept_unit','$concept_units$')]" # todo: NEW TRANSLATION
+ owes_russia_obligation_tt: "Dluží #bold Rusku#! povinnost" # todo: NEW TRANSLATION
+ great_game_points_russia_increases_10_tt: "Bilance #bold Velké hry#! se posune směrem k #v $RUS$#! o #variable 10#! bodů" # todo: NEW TRANSLATION
+ great_game_points_russia_increases_15_tt: "Bilance #bold Velké hry#! se posune směrem k #v $RUS$#! o #variable 15#! bodů" # todo: NEW TRANSLATION
+ great_game_points_russia_increases_25_tt: "Bilance #bold Velké hry#! se posune směrem k #v $RUS$#! o #variable 25#! bodů" # todo: NEW TRANSLATION
+ great_game_points_britain_increases_10_tt: "Bilance #bold Velké hry#! se posune směrem k #v $GBR$#! o #variable 10#! bodů" # todo: NEW TRANSLATION
+ great_game_points_britain_increases_15_tt: "Bilance #bold Velké hry#! se posune směrem k #v $GBR$#! o #variable 15#! bodů" # todo: NEW TRANSLATION
+ great_game_points_britain_increases_25_tt: "Bilance #bold Velké hry#! se posune směrem k #v $GBR$#! o #variable 25#! bodů" # todo: NEW TRANSLATION
+ great_game_points_britain_increases_50_tt: "Bilance #bold Velké hry#! se posune směrem k #v $GBR$#! o #variable 50#! bodů" # todo: NEW TRANSLATION
+ russo_chinese.4.t: "Smlouva z Aigunu" # todo: NEW TRANSLATION
+ russo_chinese.4.d: "Intenzivní vojenské posílení na Sibiři podnítilo jednání mezi diplomaty zastupujícími [ROOT.GetCountry.GetAdjective] a [SCOPE.sCountry('china_scope').GetAdjective] státy. Byla sestavena smlouva, která zajistí vzájemná navigační práva na řece Amur a předá území [SCOPE.sState('amur_scope').GetName] státu [ROOT.GetCountry.GetName]." # todo: NEW TRANSLATION
+ russo_chinese.4.f: "\"Levý břeh řeky Amur, počínaje řekou Argun až k ústí řeky Amur, bude majetkem [ROOT.GetCountry.GetAdjectiveNoFormatting] státu, a pravý břeh po proudu až k řece Ussuri bude majetkem [SCOPE.sCountry('china_scope').GetAdjectiveNoFormatting] státu.\n\nOblasti a země od řeky Ussuri až k moři, až do vymezení hranice mezi oběma státy, budou společným majetkem [SCOPE.sCountry('china_scope').GetAdjectiveNoFormatting] a [ROOT.GetCountry.GetAdjectiveNoFormatting] států. Pouze plavidla [SCOPE.sCountry('china_scope').GetAdjectiveNoFormatting] a ruských států budou moci plout po Amuru, Sungari a Ussuri; plavidla všech ostatních cizích států tyto řeky nebudou plout...\"" # todo: NEW TRANSLATION
+ russo_chinese.4.a: "Ať je to provedeno přesně a nedotknutelně, navěky." # todo: NEW TRANSLATION
+ emu_war.1.t: "Válka s emu" # todo: NEW TRANSLATION
+ emu_war.1.d: "[GetPopType('farmers').GetName] v [SCOPE.sState('westralia_state').GetName] si stěžují, že [SCOPE.gsInterestGroup('armed_forces_ig').GetName] je nedostatečně chrání. Jméno jejich nejhroznějšího nepřítele: Dromaius novaehollandiae." # todo: NEW TRANSLATION
+ emu_war.1.f: "\"Připomeň mi znovu, proč nakládáme tolik nábojů na tuhle glorifikovanou honičku kachen.\"\n\n\"Kachny? Myslíš, že lovíme vodní ptactvo? Omyl, hlupáku. Kéž by ti Bůh pomohl, kdybys udělal chybu a měl se potkat s těmi drápy. A pokud jo, nebudu ti vracet vnitřnosti zpět.\" \n\n\"Dobře, dobře, sakra, chlape. Jen mi to připadá přehnané.\"" # todo: NEW TRANSLATION
+ emu_war.1.a: "Dobrá, pošlete tam #italic někoho#!." # todo: NEW TRANSLATION
+ emu_war.1.b: "Měli bychom jim taky vystavit formální deklaraci války?" # todo: NEW TRANSLATION
+ modifier_emu_war_pointless: "Bezcenná válka" # todo: NEW TRANSLATION
+ modifier_emu_war_stampeded_crops: "Ničení úrody při útěku" # todo: NEW TRANSLATION
+ modifier_emu_war_deferred_deployments: "Odložená nasazení" # todo: NEW TRANSLATION
+ modifier_movement_pamphlets_distributed: "Letáky rozdány" # todo: NEW TRANSLATION
+ modifier_movement_pamphlets_confiscated: "Letáky zabaveny" # todo: NEW TRANSLATION
+ modifier_movement_pamphlets_confiscated_arrests: "Tiskoví aktivisté perzekuováni" # todo: NEW TRANSLATION
+ modifier_movement_positive_influence: "Vlivný obhájce" # todo: NEW TRANSLATION
+ modifier_movement_society_benefits: "Organizovaná advokační společnost" # todo: NEW TRANSLATION
+ modifier_movement_society_repressed: "Advokační společnost potlačena" # todo: NEW TRANSLATION
+ modifier_movement_agitator_gaining_fame: "Ve světle reflektorů" # todo: NEW TRANSLATION
+ modifier_state_political_union_influence: "Aktivity politické unie" # todo: NEW TRANSLATION
+ modifier_movement_political_union_influence: "Organizace politické unie" # todo: NEW TRANSLATION
+ modifier_movement_petition_accepted: "Petice projednána" # todo: NEW TRANSLATION
+ modifier_movement_petition_accepted_movement: "Petice projednána" # todo: NEW TRANSLATION
+ modifier_movement_petition_rejected_movement: "Petice odmítnuta" # todo: NEW TRANSLATION
+ modifier_movement_petition_rejected_legitimacy: "Nezajímají se o občany" # todo: NEW TRANSLATION
+ modifier_movement_political_meeting_allowed: "Povoleno politické setkání" # todo: NEW TRANSLATION
+ modifier_movement_political_meeting_forbidden: "Politická setkání zakázána" # todo: NEW TRANSLATION
+ modifier_movement_rally_in_city_movement: "Úspěšné protestní shromáždění" # todo: NEW TRANSLATION
+ modifier_movement_rally_in_city: "Protestní shromáždění" # todo: NEW TRANSLATION
+ modifier_movement_rally_in_city_suppressed: "Potlačená protestní shromáždění" # todo: NEW TRANSLATION
+ modifier_movement_postering_campaign: "Národní kampaň vyvěšování plakátů" # todo: NEW TRANSLATION
+ modifier_movement_postering_campaign_suppressed_ig: "Kampaň vyvěšování plakátů potlačena" # todo: NEW TRANSLATION
+ modifier_movement_postering_campaign_suppressed_character: "Neúčinná kampaň" # todo: NEW TRANSLATION
+ modifier_disapproves_of_early_release: "Podlehli tlaku" # todo: NEW TRANSLATION
+ modifier_movement_supporter_release: "Stoupenec propuštěn" # todo: NEW TRANSLATION
+ modifier_movement_supporter_release_refused: "Propuštění odmítnuto" # todo: NEW TRANSLATION
+ modifier_approves_of_refused_release: "Tvrdošíjní v trestech" # todo: NEW TRANSLATION
+ modifier_movement_workers_emboldened: "Odbory legalizovány" # todo: NEW TRANSLATION
+ modifier_movement_worker_strikes: "Politické stávky" # todo: NEW TRANSLATION
+ modifier_movement_union_negotiations: "Vyjednávání s odbory" # todo: NEW TRANSLATION
+ modifier_movement_trade_unions_replaced: "Stávka poražena" # todo: NEW TRANSLATION
+ modifier_condemned_state_security: "Pustit důstojníky k volnosti" # todo: NEW TRANSLATION
+ modifier_stood_by_state_security: "Podpořil bezpečnostní síly" # todo: NEW TRANSLATION
+ modifier_movement_partisan_paper_founded: "Stranický tisk" # todo: NEW TRANSLATION
+ modifier_movement_partisan_paper_denied: "Tiskové licence odmítnuty" # todo: NEW TRANSLATION
+ modifier_movement_funding_depleted: "Prostředky vyčerpány" # todo: NEW TRANSLATION
+ modifier_movement_organizing_people_in_state: "Místní organizační snahy" # todo: NEW TRANSLATION
+ modifier_movement_organizing_people: "Místní organizační snahy" # todo: NEW TRANSLATION
+ modifier_movement_equal_treatment_given: "Žádné výjimky" # todo: NEW TRANSLATION
+ modifier_movement_arrested_for_brawl: "Zaujaté prosazování zákona" # todo: NEW TRANSLATION
+ modifier_movement_arrested_for_brawl_movement: "Organizátoři obviněni" # todo: NEW TRANSLATION
+ modifier_movement_student_protests: "Studentské protesty" # todo: NEW TRANSLATION
+ modifier_movement_student_protests_support: "Vlivné studentské protesty" # todo: NEW TRANSLATION
+ movement_events.1.t: "O politice vlády" # todo: NEW TRANSLATION
+ movement_events.1.d1: "[SCOPE.sCharacter('relevant_agitator').GetFullName], jménem [SCOPE.sPoliticalMovement('relevant_movement').GetName], vydal leták ostře kritizující vládní politiku. Leták [SCOPE.sCharacter('relevant_agitator').GetHerHis|U] se stal populárním mezi reformními kruhy." # todo: NEW TRANSLATION
+ movement_events.1.d2: "Spojenci [SCOPE.gsInterestGroup('relevant_ig').GetName] v [SCOPE.sPoliticalMovement('relevant_movement').GetName] vydali leták ostře kritizující vládní politiku. Leták se stal populárním mezi reformními kruhy." # todo: NEW TRANSLATION
+ movement_events.1.f: "#bold O politice [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]#!\n\nVelký projev přednesený před váženou [ROOT.GetCountry.GetCapital.GetCityHubName] Společností pro reformu v polovině října.\n\nCHYBA V SLOŽENÍ - Po přečtení první stránky projevu přejděte na stranu 5 a pak na strany 4 a 6." # todo: NEW TRANSLATION
+ movement_events.1.a: "Musíme respektovat zásadu svobodného vyjadřování." # todo: NEW TRANSLATION
+ movement_events.1.b: "Zabavte tento leták, kdekoliv se objeví." # todo: NEW TRANSLATION
+ movement_events.1.c: "Zahájit šetření k identifikaci autorů." # todo: NEW TRANSLATION
+ movement_events.2.t: "Reformní společnost [SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting]" # todo: NEW TRANSLATION
+ movement_events.2.d1: "[SCOPE.sCharacter('relevant_agitator').GetFullName] pomohl založit národní organizaci věnovanou sjednocení [SCOPE.sPoliticalMovement('relevant_movement').GetName] pod národním vedením." # todo: NEW TRANSLATION
+ movement_events.2.d2: "Agentky [SCOPE.gsInterestGroup('relevant_ig').GetName] založili národní organizaci věnovanou sjednocení [SCOPE.sPoliticalMovement('relevant_movement').GetName] pod národním vedením." # todo: NEW TRANSLATION
+ movement_events.2.f: "\"Stojí za zmínku, pokud uspějeme, co pak budeme dělat? Tato struktura, kterou budujeme, může přetrvat generace. Nechat ji zaniknout by byla tragédie.\"\n\n\"Nelze spoléhat na to, že všichni, kteří se přidají, budou nést pochodeň dál. Náš tábor obsahuje mnoho lidí, každý s vlastním důvodem proč naslouchat. Nesmíme jim naznačit, že po nich požadujeme poslušnost v jiných záležitostech.\"" # todo: NEW TRANSLATION
+ movement_events.2.a: "Jsou v nejhorším případě neškodní." # todo: NEW TRANSLATION
+ movement_events.2.b: "Pošlete jim tvrdé připomenutí našeho nesouhlasu." # todo: NEW TRANSLATION
+ movement_events.2.c: "[SCOPE.sCharacter('relevant_agitator').GetFullName] je [SCOPE.sCharacter('relevant_agitator').GetWomanMan] hodný sledování." # todo: NEW TRANSLATION
+ movement_events.3.t: "[SCOPE.sState('relevant_state').GetNameNoFormatting] politická unie" # todo: NEW TRANSLATION
+ movement_events.3.d: "Organizátoři napojení na [SCOPE.sPoliticalMovement('relevant_movement').GetName] založili organizaci věnovanou podpoře účasti obyvatel na politice v regionu [SCOPE.sState('relevant_state').GetNameNoFormatting]." # todo: NEW TRANSLATION
+ movement_events.3.f: "\"Přímou příčinou našich potíží,\" prohlásil řečník, \"je koncentrace moci v třídě, která je náchylná k lenivosti a spiknutí. Je naší povinností tedy sesbírat úsilí pracujících vrstev proti jejich manipulacím a přivést je k velkému morálnímu střetu - souboj politické pravdy a práva proti politickému rozvratu a nespravedlnosti.\"\n\nByl to dobrý sentiment, pomyslel si jeden posluchač, pokud byl náchylný k milosrdenství. Pokud nebyl... děsil se, jak špatně by šlo takové spiknutí interpretovat." # todo: NEW TRANSLATION
+ movement_events.3.a: "Lidé začali dát hlas." # todo: NEW TRANSLATION
+ movement_events.3.b: "Uzavřete to, než to vyroste mimo kontrolu." # todo: NEW TRANSLATION
+ movement_events.4.t: "Petenti oslovili vládu" # todo: NEW TRANSLATION
+ movement_events.4.d: "Několik prominentních podporovatelů [SCOPE.sPoliticalMovement('relevant_movement').GetName] se obrátilo na vládu s ambiciózní peticí k prosazení jejich agendy. Petice byla propagována jako nutný výchozí bod mezi členy hnutí." # todo: NEW TRANSLATION
+ movement_events.4.f: "Na papíře bylo alespoň sto podpisů, některé nezřetelně zdobené, jiné generická jména, která by úředník musel zázrakem dedukce zúžit. To je výhoda petice - po určitém počtu už je nemožné potrestat každý podpis.\n\nKdyž by jeden člověk nesouhlasil, bylo by snadné ho odhalit, ale když jich je tisíc, stává se to mnohem obtížnějším." # todo: NEW TRANSLATION
+ movement_events.4.a: "Umožnit debatu o vznesených otázkách." # todo: NEW TRANSLATION
+ movement_events.4.b: "Formální postupy vlády musí být dodrženy." # todo: NEW TRANSLATION
+ movement_events.4.c: "Zahajte vyšetřování tohoto pohodlného seznamu jmen." # todo: NEW TRANSLATION
+ movement_events.5.t: "Občanská konvence v [SCOPE.sState('relevant_state').GetCityHubName]" # todo: NEW TRANSLATION
+ movement_events.5.d: "[SCOPE.sPoliticalMovement('relevant_movement').GetName] se sešla v [SCOPE.sState('relevant_state').GetCityHubName] aby získala podporu a veřejně probrala specifika [SCOPE.sLawType('relevant_law').GetName]. Akce přilákala značnou pozornost místních obyvatel." # todo: NEW TRANSLATION
+ movement_events.5.f: "\"Rád vás znovu vidím. Měl jste dobrou cestu?\"\n\n\"Měl. Cesty jsou v této části roku hrozné. Málem jsem dorazil pozdě... pochvala řidiči.\"\n\n\"Zaslouží si zvýšení?\"\n\n\"Kéž by! Pokud mi zbyde něco v kapse, snad.\"" # todo: NEW TRANSLATION
+ movement_events.5.a: "Jak živá debata!" # todo: NEW TRANSLATION
+ movement_events.5.b: "Okamžitě to zakázat." # todo: NEW TRANSLATION
+ movement_events.6.t: "Protesty napříč [SCOPE.sState('relevant_state').GetNameNoFormatting]" # todo: NEW TRANSLATION
+ movement_events.6.d: "[SCOPE.sPoliticalMovement('relevant_movement').GetName] zorganizovalo masové protesty napříč regionem [SCOPE.sState('relevant_state').GetName]. I když protesty zatím zůstaly pokojné, místní úřady mají obavy z možné násilnosti." # todo: NEW TRANSLATION
+ movement_events.6.f: "Bylo to více lidí, než kdy viděl. [SCOPE.sState('relevant_state').GetFarmHubName], kdysi tiché a známé téměř venkovským charakterem, ožilo křičícími hlasy a vlajícími vlajkami. Přemýšlel, jestli někdo z jeho sousedů je v davu. Vždycky si myslel, že s nimi nemá nic společného. Možná se mýlil." # todo: NEW TRANSLATION
+ movement_events.6.a: "Nechte je vyjádřit své obavy." # todo: NEW TRANSLATION
+ movement_events.6.b: "Úřady musí zasáhnout a tyto projevy zastavit." # todo: NEW TRANSLATION
+ movement_events.7.t: "Zdi a lepidlo" # todo: NEW TRANSLATION
+ movement_events.7.d1: "[SCOPE.sCharacter('relevant_agitator').GetFullName] zorganizoval celonárodní kampaň vyvěšování plakátů za [SCOPE.sPoliticalMovement('relevant_movement').GetName]. V některých městech nebyla zeď neznačena pro [SCOPE.sLawType('relevant_law').GetName]." # todo: NEW TRANSLATION
+ movement_events.7.d2: "Stoupenci [SCOPE.gsInterestGroup('relevant_ig').GetFullName] zorganizovali celonárodní kampaň vyvěšování plakátů za [SCOPE.sPoliticalMovement('relevant_movement').GetName]. V některých městech nebyla zeď bez pro-[SCOPE.sLawType('relevant_law').GetName] plakátu." # todo: NEW TRANSLATION
+ movement_events.7.f: "#bold Neděle: Shromáždění za [SCOPE.sLawType('relevant_law').GetNameNoFormatting]#!\n\nSetkání ve VŠECH OBECNÍCH DOMÁCH, 19:00–20:00. PROKAŽTE PODPORU spravedlivé věci [SCOPE.sLawType('relevant_law').GetNameNoFormatting]!\n\n#italic Občerstvení k dispozici v 19:30 pro všechny účastníky. Předplatné místního \"Advokáta\" pro další informace.#!" # todo: NEW TRANSLATION
+ movement_events.7.a: "Opláchnou se deštěm." # todo: NEW TRANSLATION
+ movement_events.7.b: "Nechte tyto zdi okamžitě očistit." # todo: NEW TRANSLATION
+ movement_events.8.t: "Za mřížemi" # todo: NEW TRANSLATION
+ movement_events.8.d: "Zadržení a údajné špatné zacházení se neukázněným protestujícím napojeným na [SCOPE.sPoliticalMovement('relevant_movement').GetName] vyvolalo rozhořčení mezi jeho spolubojovníky. Byly domluveny další demonstrace žádající jeho propuštění." # todo: NEW TRANSLATION
+ movement_events.8.f: "Vězení bylo žalostné místo. Železné tyče, kamenné zdi a studené podlahy. V posledních týdnech si stráže zvykly tleskat občas hůlkami po mřížích, když procházely, což znemožňovalo spánek. Nemohl ani uniknout ve snech, protože napětí z bdělého světa začalo pronikat i do jeho spánku.\n\nA to vše za to, že strčil policistu pryč? Zpočátku toho litoval. Nyní však mohl říci, že každý z nich si to zasloužil, a víc." # todo: NEW TRANSLATION
+ movement_events.8.a: "Možná lze zařídit předčasné propuštění za dobré chování." # todo: NEW TRANSLATION
+ movement_events.8.b: "Neuděláme výjimky kvůli pár hulvátům." # todo: NEW TRANSLATION
+ movement_events.9.t: "Vlna stávky v [SCOPE.sState('relevant_state').GetName]" # todo: NEW TRANSLATION
+ movement_events.9.d: "Vlna pracovní stávky inspirovaná [SCOPE.sPoliticalMovement('relevant_movement').GetName] otřásla průmyslem v [SCOPE.sState('relevant_state').GetName]. Stávkující pracovníci se připojili k protestům ve více městech regionu." # todo: NEW TRANSLATION
+ movement_events.9.f: "Důstojník očekával, že dělníci budou jiní. Neumytí, znečištění průmyslovými výpary, promočení potem. Nebyli. Měli stejné oblečení jako o víkendech, čistí. V očích byla hrdost. Místo ustaraného výrazu vyčerpaných mužů stáli vzdorovitě, s tvářemi zatvrdlými, rukama svírajícími transparenty volající po světě a více." # todo: NEW TRANSLATION
+ movement_events.9.a: "Dejte na vědomí, že uznáváme jejich požadavky." # todo: NEW TRANSLATION
+ movement_events.9.b: "Dejte je zpět do práce!" # todo: NEW TRANSLATION
+ movement_events.10.t: "Nadouvaní pod nohama" # todo: NEW TRANSLATION
+ movement_events.10.d: "Demonstrace organizovaná [SCOPE.sPoliticalMovement('relevant_movement').GetName] v [SCOPE.sState('relevant_state').GetName] byla násilně rozehnána policií, což vedlo k několika úmrtím a těžkým zraněním. Vzpomínky na incident se staly bojovým pokřikem disidentů." # todo: NEW TRANSLATION
+ movement_events.10.f: "Usmíval se, když nařídil koni prorazit dav. Jeho výraz se jí vryl do paměti jako kyselina do kovu. Jaký to byl muž, který udržel takovou hrůznou klidnost mezi výkřiky, zlomenými kostmi, tryskající krví? Když lidé utíkali kolem něj, nařídil důstojníkům vpřed... a pak co?\n\nUprostřed rozmazané lidské hrůzy se schovala v ledabylé zavřené hospodě. Mnozí jiní neměli to štěstí. Když procházela místem, kde se demonstrace konala, nedokázala říci, kolik z lidí na dlažbě ještě dýchalo." # todo: NEW TRANSLATION
+ movement_events.10.a: "Pokárat důstojníky zodpovědné." # todo: NEW TRANSLATION
+ movement_events.10.b: "Dostali rozkaz rozehnat. Policie není vinná." # todo: NEW TRANSLATION
+ movement_events.11.t: "Advokát z [SCOPE.sState('relevant_state').GetCityHubName]" # todo: NEW TRANSLATION
+ movement_events.11.d: "Explicitně stranické noviny založené členy [SCOPE.sPoliticalMovement('relevant_movement').GetName] v [SCOPE.sState('relevant_state').GetCityHubName] vydaly své první číslo. Mezi reklamami a politickými karikaturami přinášejí nemilosrdnou kritiku vládní politiky." # todo: NEW TRANSLATION
+ movement_events.11.f: "Mělo to jistý génius. Tištěné na nejlevnějším papíře, šetří se inkoustem, zaplněné reklamami a velkým písmem, dalo se vydat ziskové vydání za jediný haléř, zatímco konkurence prodávala za pět až desetkrát více. Pokud noviny bezostyšně a neúnavně obhajovaly určitou myšlenku, mohl by každý dělník ve městě o nich vědět do večera. Pokud konkurenti odmítli klesnout tak nízko, byli odpovědní za své vlastní udusení." # todo: NEW TRANSLATION
+ movement_events.11.a: "Jak dlouho může stranický tisk vydržet?" # todo: NEW TRANSLATION
+ movement_events.11.b: "Cože? Odepřete jim tiskovou licenci." # todo: NEW TRANSLATION
+ movement_events.12.t: "Prázdné kapsy" # todo: NEW TRANSLATION
+ movement_events.12.d: "Řada vnímaných špatných rozhodnutí [SCOPE.sPoliticalMovement('relevant_movement').GetName] vedla k výraznému poklesu schopnosti hnutí získávat peníze. Mnozí bohatí sympatizanti tiše zastavili svou podporu." # todo: NEW TRANSLATION
+ movement_events.12.f: "\"Nechceme působit stranicky.\" Vždy stejné klišé. Organizátor přešel po svém malém kancelářském prostoru, sevřená pěst až do bodu, kdy měl pocit, že mu prsty prasknou. Občas mrkl na neotevřené obálky na stole, z nichž věděl, že každá zopakuje nějakou variaci téže věci.\n\n\"Stranický\" - co to vlastně znamená? Že jim na něčem záleží? Že si zvolili něco víc než počítání peněz ve svém trezoru? Má něco důležitého, co zlepší společnost. Mohli by učinit totéž. V tom světle jak může být stranickost špatná?" # todo: NEW TRANSLATION
+ movement_events.12.a: "Možná najdou alternativní zdroje financí." # todo: NEW TRANSLATION
+ movement_events.12.b: "Vše jednou umírá, některé dříve než jiné." # todo: NEW TRANSLATION
+ movement_events.13.t: "[SCOPE.sPoliticalMovement('relevant_movement').GetName] organizuje v [SCOPE.sState('relevant_state').GetName]" # todo: NEW TRANSLATION
+ movement_events.13.d: "Organizátoři napojení na [SCOPE.sPoliticalMovement('relevant_movement').GetName] zahájili cílenou kampaň k povzbuzení podpory [SCOPE.sLawType('relevant_law').GetNameNoFormatting] v [SCOPE.sState('relevant_state').GetName]." # todo: NEW TRANSLATION
+ movement_events.13.f: "Obyvatelé každého regionu rádi říkají, že jejich domov má dlouhou a jedinečnou historii pevné komunity. Organizátor téměř souhlasil. Problémem bylo, že tato komunita často neplatila k cizákům. Byl už mnohokrát vyhozen, ale pokračoval. Pokud by dokázal vnést správnou frázi do správných kruhů, i nápad, který byl zpočátku odmítnut, by mohl začít nacházet oporu." # todo: NEW TRANSLATION
+ movement_events.13.a: "V [SCOPE.sState('relevant_state').GetNameNoFormatting] je mnoho ochotných uší." # todo: NEW TRANSLATION
+ movement_events.13.b: "Musí se starat o praktičtější věci." # todo: NEW TRANSLATION
+ movement_events.14.t: "Studenti se přidávají k [SCOPE.sPoliticalMovement('relevant_movement').GetName]" # todo: NEW TRANSLATION
+ movement_events.14.d: "Skupina studentů z [SCOPE.sBuilding('relevant_university').GetName] v [SCOPE.sState('relevant_state').GetName] zorganizovala demonstraci na podporu [SCOPE.sPoliticalMovement('relevant_movement').GetName]. Projev inspiroval další studenty k připojení." # todo: NEW TRANSLATION
+ movement_events.14.f: "Přednáškový sál byl pustý. Vždy chyběl jeden nebo dva studenti pro nemoci, cesty či rodinné záležitosti, ale nic takovéhoto rozsahu. Byly tři nebo čtyři studenty na řadu, každý ostrými kontury proti prázdným sedadlům po stranách. Bylo to materiál na přednášku sám o sobě. Jako kupa písku, jejíž zrnka odfoukla vítr, dokud se její tvar náhle nezměnil, tak bylo dříve to, co bylo třídou." # todo: NEW TRANSLATION
+ movement_events.14.a: "Mládež povede [ROOT.GetCountry.GetNameNoFormatting] do budoucnosti!" # todo: NEW TRANSLATION
+ movement_events.14.b: "Měli by se soustředit na studium." # todo: NEW TRANSLATION
+ movement_events.15.t: "Kontroverzní témata" # todo: NEW TRANSLATION
+ movement_events.15.d: "Akce organizovaná [SCOPE.sPoliticalMovement('relevant_movement').GetName] se změnila v rvačku, když protivníci hnutí infiltraci dav. Když dorazila policie, žádný účastník nechtěl podat konzistentní výpověď." # todo: NEW TRANSLATION
+ movement_events.15.f: "Většina z nich měla alespoň jednu modřinu, rozříznuté rty nebo krvavý nos. Jeho zranění bylo méně čestné než většina. Narazil kyčlí do rohu stolu při spěchu k východu a málem narazil do přicházejícího žandára. Vznikly dvě rozporné verze událostí. Jednu řekne detektivovi a druhou přátelům." # todo: NEW TRANSLATION
+ movement_events.15.a: "Dejte jim den ve vězení, aby vychladli." # todo: NEW TRANSLATION
+ movement_events.15.b: "Usilovat o obvinění organizátorů akce." # todo: NEW TRANSLATION
+ preferred_igs_in_government: "Kompatibilní [Concept('concept_interest_group','$concept_interest_groups$')] [concept_in_government]" # todo: NEW TRANSLATION
+ member_of_lobby: "Již člen tohoto $concept_political_lobby$" # todo: NEW TRANSLATION
+ enacted_laws: "Schválené [SCOPE.sCountry('target_country').GetAdjectiveNoFormatting] [Concept('concept_law', '$concept_laws$')]" # todo: NEW TRANSLATION
+ primary_culture_similarity: "Kompatibilita [concept_primary_cultures]" # todo: NEW TRANSLATION
+ religion_opinion: "[SCOPE.sCountry('target_country').GetAdjectiveNoFormatting] názor na [SCOPE.sCountry('country').GetAdjectiveNoFormatting] [concept_state_religion]" # todo: NEW TRANSLATION
+ aligned_igs_in_government: "Sjednocené [Concept('concept_interest_group','$concept_interest_groups$')] [concept_in_government]" # todo: NEW TRANSLATION
+ communist_solidarity: "Komunistická solidarita" # todo: NEW TRANSLATION
+ baseline_opposition_to_communism: "Odzbrojenost vůči komunismu" # todo: NEW TRANSLATION
+ anti_communism: "Antikomunismus" # todo: NEW TRANSLATION
+ relations_less_than_cordial: "Negativní [concept_relations]" # todo: NEW TRANSLATION
+ relations_cordial_or_better: "[concept_relations] jsou #bold Srdečné#! nebo lepší" # todo: NEW TRANSLATION
+ republican_solidarity: "Republikánská solidarita" # todo: NEW TRANSLATION
+ republican_anti_monarchism: "Republikánské nálady proti monarchii" # todo: NEW TRANSLATION
+ orleanist_anglophilia: "Orleánské anglofilie" # todo: NEW TRANSLATION
+ bonapartist_revanchism: "Bonapartistický revanchismus" # todo: NEW TRANSLATION
+ hostile_country_attitude: "Nepřátelský postoj" # todo: NEW TRANSLATION
+ friendly_country_attitude: "Přátelský postoj" # todo: NEW TRANSLATION
+ claimed_states: "[SCOPE.sCountry('country').GetAdjectiveNoFormatting] [Concept('concept_claim', '$concept_claims$')] na [SCOPE.sCountry('target_country').GetAdjectiveNoFormatting] [Concept('concept_state', '$concept_states$')]" # todo: NEW TRANSLATION
+ pacifist_ideology: "Pacifistická ideologie" # todo: NEW TRANSLATION
+ jingoist_ideology: "Jingoistická ideologie" # todo: NEW TRANSLATION
+ target_power_rank: "[concept_rank] [SCOPE.sCountry('target_country').GetNameNoFormatting]" # todo: NEW TRANSLATION
+ target_higher_power_rank: "[SCOPE.sCountry('target_country').GetNameNoFormatting] má vyšší [concept_rank] než [SCOPE.sCountry('country').GetNameNoFormatting]" # todo: NEW TRANSLATION
+ target_lower_power_rank: "[SCOPE.sCountry('target_country').GetNameNoFormatting] má nižší [concept_rank] než [SCOPE.sCountry('country').GetNameNoFormatting]" # todo: NEW TRANSLATION
+ target_great_power_rank: "[SCOPE.sCountry('target_country').GetNameNoFormatting] je [concept_great_power]" # todo: NEW TRANSLATION
+ target_major_power_rank: "[SCOPE.sCountry('target_country').GetNameNoFormatting] je [concept_major_power]" # todo: NEW TRANSLATION
+ target_minor_power_rank: "[SCOPE.sCountry('target_country').GetNameNoFormatting] je [concept_minor_power] nebo níže" # todo: NEW TRANSLATION
+ in_same_power_bloc: "Ve stejném [concept_power_bloc]" # todo: NEW TRANSLATION
+ not_in_same_power_bloc: "VE jiném [concept_power_bloc]" # todo: NEW TRANSLATION
+ funding_lobbies: "[SCOPE.sCountry('target_country').GetNameNoFormatting] je [Concept('concept_fund_lobbies','$concept_funding_lobbies$')] v [SCOPE.sCountry('country').GetNameNoFormatting]" # todo: NEW TRANSLATION
+ rival_funding_lobbies: "Rivalující [SCOPE.sCountry('target_country').GetAdjectiveNoFormatting] [Concept('concept_rivalry','$concept_rival$')] je [Concept('concept_fund_lobbies','$concept_funding_lobbies$')] v [SCOPE.sCountry('country').GetNameNoFormatting]" # todo: NEW TRANSLATION
+ from_liberty_desire: "Z [concept_liberty_desire]" # todo: NEW TRANSLATION
+ low_liberty_desire: "Nízké [concept_liberty_desire]" # todo: NEW TRANSLATION
+ relations_negative: "Negativní [concept_relations]" # todo: NEW TRANSLATION
+ is_power_bloc_leader: "[SCOPE.sCountry('target_country').GetNameNoFormatting] je [Concept('concept_power_bloc_leader','$concept_power_bloc_leader_extra_short$')] [concept_power_bloc], ve kterém se nachází [SCOPE.sCountry('country').GetNameNoFormatting]" # todo: NEW TRANSLATION
+ economic_dependence_for_upper_classes: "Dopad [concept_economic_dependence] na [concept_upper_strata] z rozšířeného přístupu k [Concept('concept_good', '$concept_goods$')] od [SCOPE.sCountry('target_country').GetNameNoFormatting]" # todo: NEW TRANSLATION
+ economic_dependence_for_middle_classes: "Dopad [concept_economic_dependence] na [concept_middle_strata] z rozšířeného přístupu k [Concept('concept_good', '$concept_goods$')] od [SCOPE.sCountry('target_country').GetNameNoFormatting]" # todo: NEW TRANSLATION
+ economic_dependence_for_lower_classes: "Dopad [concept_economic_dependence] na [concept_lower_strata] z konkurování v [Concept('concept_good', '$concept_goods$')] od [SCOPE.sCountry('target_country').GetNameNoFormatting]" # todo: NEW TRANSLATION
+ colonial_rule: "Koloniální administrátoři" # todo: NEW TRANSLATION
+ colonial_subjects: "Koloniální subjekty" # todo: NEW TRANSLATION
+ POP_ACCEPTANCE: "[concept_pop] [concept_acceptance]" # todo: NEW TRANSLATION
+ POP_HIGH_ACCEPTANCE: "Vysoké [concept_pop] [concept_acceptance]" # todo: NEW TRANSLATION
+ POP_LOW_ACCEPTANCE: "Nízké [concept_pop] [concept_acceptance]" # todo: NEW TRANSLATION
+ formation_reason_defense: "Národní obrana" # todo: NEW TRANSLATION
+ formation_reason_defense_desc: "Lobbystický vznik upřednostňuje $formation_reason_defense$" # todo: NEW TRANSLATION
+ formation_reason_diplomacy: "Diplomatické vztahy" # todo: NEW TRANSLATION
+ formation_reason_diplomacy_desc: "Lobbystický vznik upřednostňuje $formation_reason_diplomacy$" # todo: NEW TRANSLATION
+ formation_reason_ideology: "Politická ideologie" # todo: NEW TRANSLATION
+ formation_reason_ideology_desc: "Lobbystický vznik upřednostňuje $formation_reason_ideology$" # todo: NEW TRANSLATION
+ formation_reason_funded: "Zahraniční financování" # todo: NEW TRANSLATION
+ formation_reason_funded_desc: "Lobbystický vznik v důsledku $formation_reason_funded$" # todo: NEW TRANSLATION
+ formation_reason_aggression: "Zahraniční konflikty" # todo: NEW TRANSLATION
+ formation_reason_aggression_desc: "Lobbystický vznik upřednostňuje $formation_reason_aggression$" # todo: NEW TRANSLATION
+ formation_reason_religion: "Náboženské záležitosti" # todo: NEW TRANSLATION
+ formation_reason_religion_desc: "Lobbystický vznik upřednostňuje $formation_reason_religion$" # todo: NEW TRANSLATION
+ formation_reason_technology: "Technologický postup" # todo: NEW TRANSLATION
+ formation_reason_technology_desc: "Lobbystický vznik upřednostňuje $formation_reason_technology$" # todo: NEW TRANSLATION
+ formation_reason_economy: "Ekonomická konkurence" # todo: NEW TRANSLATION
+ formation_reason_economy_desc: "Lobbystický vznik upřednostňuje $formation_reason_economy$" # todo: NEW TRANSLATION
+ lobby_core.1.a: "Najít loby." # todo: NEW TRANSLATION
+ lobby_core.1.b: "Manuálně spustit katalyzátor." # todo: NEW TRANSLATION
+ lobby_core.1.c: "Ručně vytvořit loby." # todo: NEW TRANSLATION
+ lobby_core.1.d: "Ručně vytvořit loby nadřazeného." # todo: NEW TRANSLATION
+ lobby_found_tt: "[concept_political_lobby] nalezen v [SCOPE.sCountry('lobby_found_country').GetName]" # todo: NEW TRANSLATION
+ lobby_proposal.1.t: "Požadavek [SCOPE.sPoliticalLobby('relevant_lobby').GetName]" # todo: NEW TRANSLATION
+ lobby_proposal.1.d: "[SCOPE.sPoliticalLobby('relevant_lobby').GetName] požádal, abychom [SCOPE.GetRootScope.GetCountry.GetCustom('pro_lobby_demand_text_def')] [SCOPE.sCountry('third_party_country').GetName]. [SCOPE.sCountry('third_party_country').GetNameNoFormatting] je známý protivník zájmů [SCOPE.sCountry('relevant_country').GetAdjective]." # todo: NEW TRANSLATION
+ lobby_proposal.1.f: "\"Musíme být co nejkomplexnější. Jakýkoli jiný přístup je nezodpovědný. Agrese [SCOPE.sCountry('third_party_country').GetAdjectiveNoFormatting] je stará jako hory.\"\n\n\"Obávám se, že by to mohlo vypadat, že používáme vlastní národ jako figuru na šachovnici pro zahraniční mocnost. Co byste řekl, kdyby nás někdo na to dotázal?\"\n\n\"Okolnostní slaďování nás nepodřídí. V tomto případě jsou zájmy [SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting] zároveň zájmy [ROOT.GetCountry.GetAdjectiveNoFormatting]. Je to tak jednoduché.\"" # todo: NEW TRANSLATION
+ lobby_proposal.1.a: "Zabýváme se tím." # todo: NEW TRANSLATION
+ lobby_proposal.1.b: "To není v našem zájmu." # todo: NEW TRANSLATION
+ lobby_proposal.2.t: "Požadavek [SCOPE.sPoliticalLobby('relevant_lobby').GetName]" # todo: NEW TRANSLATION
+ lobby_proposal.2.d: "[SCOPE.sPoliticalLobby('relevant_lobby').GetName] požádal, abychom [SCOPE.GetRootScope.GetCountry.GetCustom('anti_lobby_demand_text_def')] [SCOPE.sCountry('relevant_country').GetName]. Úspěšné provedení návrhu získá vládě značné sympatie od loby." # todo: NEW TRANSLATION
+ lobby_proposal.2.f: "\"A těm, kteří by odmítli a upřednostnili zachování statusu quo?\"\n\nNebyla žádná váhání. Odpověď zněla procvičeně, protože byla. Tento člověk byl proaktivní, trávil hodiny přemítáním a předvídáním možných útoků.\n\n\"Odpověděl bych, že bychom je nikdy neměli nechat, aby se k nám přiblížili natolik. Přátelství postavené na klamu je nicotné a získané dobré úmysly jsou iluzorní.\"" # todo: NEW TRANSLATION
+ lobby_proposal.2.a: "Prozkoumáme to." # todo: NEW TRANSLATION
+ lobby_proposal.2.b: "To není v našem zájmu." # todo: NEW TRANSLATION
+ lobby_proposal.3.t: "[SCOPE.sPoliticalLobby('relevant_lobby').GetName] nabízí příležitost" # todo: NEW TRANSLATION
+ lobby_proposal.3.d: "[SCOPE.sPoliticalLobby('relevant_lobby').GetName] nám nabídl příležitost [SCOPE.GetRootScope.GetCountry.GetCustom('pro_lobby_opportunity_text_def')] [SCOPE.sCountry('relevant_country').GetName]. Loby nabízí využít své kontakty k usnadnění vyjednávacího procesu." # todo: NEW TRANSLATION
+ lobby_proposal.3.f: "Vyjednávání, vedená pod stolem s představitelem [SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting] vlády, byla dlouhá a náročná. Představitel věděl, že jedná s skupinou bez moci odpovídající jejich vlastní, a podle toho upravil strategii. Přesto se dohodli. Nic nebylo písemně potvrzeno, ale to nebylo důležité. Když vláda poslala oficiální kopii - pokud ji poslala -, našla by již připravenou odpověď v [SCOPE.sCountry('relevant_country').GetCapital.GetCityHubName]." # todo: NEW TRANSLATION
+ lobby_proposal.3.a: "Rádi to prozkoumáme." # todo: NEW TRANSLATION
+ lobby_proposal.3.b: "To není v našem zájmu." # todo: NEW TRANSLATION
+ lobby_proposal.4.t: "[SCOPE.sPoliticalLobby('relevant_lobby').GetName] nabízí příležitost" # todo: NEW TRANSLATION
+ lobby_proposal.4.d: "[SCOPE.sPoliticalLobby('relevant_lobby').GetName] nám nabídl příležitost [SCOPE.GetRootScope.GetCountry.GetCustom('anti_lobby_opportunity_text_def')] [SCOPE.sCountry('third_party_country').GetName]. Jejich návrh, pokud bude přijat, je zamýšlen k oslabování zájmů [SCOPE.sCountry('relevant_country').GetAdjective]." # todo: NEW TRANSLATION
+ lobby_proposal.4.f: "Byla to zahalená agrese, která by teoreticky mohla oslovit jak horlivé jingoisty, tak ty, kteří preferují zmírnění ztrát. Donutila by nepřítele reagovat a možná by ho to přimělo k nepřiměřenému střetu na podnětné manévry.\n\n\"Plán bojovat s [SCOPE.sCountry('relevant_country').GetNameNoFormatting] až do posledního [SCOPE.sCountry('third_party_country').GetAdjectiveNoFormatting],\" poznamenal jeden ministr. Zástupce zrudl. Připravil si odpovědi, ale žádná z nich se nehodila úplně." # todo: NEW TRANSLATION
+ lobby_proposal.4.a: "Rádi to provedeme." # todo: NEW TRANSLATION
+ lobby_proposal.4.b: "To není v našem zájmu." # todo: NEW TRANSLATION
+ anti_lobby_proposal_embargo_def: "zřídit [concept_embargo] proti" # todo: NEW TRANSLATION
+ anti_lobby_proposal_rivalry_def: "vyhlásit [concept_rivalry] s" # todo: NEW TRANSLATION
+ anti_lobby_proposal_war_def: "zahájit [concept_diplomatic_play] proti" # todo: NEW TRANSLATION
+ anti_lobby_proposal_leave_power_bloc_def: "opustit [concept_power_bloc] patřící" # todo: NEW TRANSLATION
+ anti_lobby_proposal_break_alliance_def: "rozvázat naši [concept_alliance] s" # todo: NEW TRANSLATION
+ anti_lobby_proposal_revoke_trade_privilege_def: "odvolat [Concept('concept_trade_privilege','$concept_trade_privileges$')] od" # todo: NEW TRANSLATION
+ anti_lobby_proposal_break_defensive_pact_def: "rozvázat naši [concept_defensive_pact] s" # todo: NEW TRANSLATION
+ pro_lobby_proposal_defensive_pact_def: "zřídit [concept_defensive_pact] s" # todo: NEW TRANSLATION
+ pro_lobby_proposal_alliance_def: "zřídit [concept_alliance] s" # todo: NEW TRANSLATION
+ pro_lobby_proposal_trade_privilege_def: "získat [Concept('concept_trade_privilege','$concept_trade_privileges$')] od" # todo: NEW TRANSLATION
+ pro_lobby_proposal_power_bloc_def: "připojit se k [concept_power_bloc] patřícímu" # todo: NEW TRANSLATION
+ pro_lobby_proposal_power_bloc_invite_def: "rozšířit pozvání do našeho [concept_power_bloc] k" # todo: NEW TRANSLATION
+ pro_lobby_proposal_investment_agreement_def: "zřídit [concept_foreign_investment_rights] dohodu s" # todo: NEW TRANSLATION
+ pro_lobby_proposal_military_assistance_def: "poskytnout [concept_military_assistance] pro" # todo: NEW TRANSLATION
+ lobby_request_ignored: "Požadavek [Concept('concept_political_lobby','$concept_political_lobby_short$')] ignorován" # todo: NEW TRANSLATION
+ lobby_request_accepted: "Požadavek [Concept('concept_political_lobby','$concept_political_lobby_short$')] přijat" # todo: NEW TRANSLATION
+ can_reach_country_tt: "Lze dosáhnout této země" # todo: NEW TRANSLATION
+ je_pro_lobby_opportunity: "Příležitost od loby" # todo: NEW TRANSLATION
+ je_pro_lobby_opportunity_reason: "[SCOPE.sPoliticalLobby('relevant_lobby').GetName] využila své kontakty, aby vládě poskytla příležitost [SCOPE.GetRootScope.GetCountry.GetCustom('pro_lobby_opportunity_text_def')] [SCOPE.sCountry('target').GetName].\n\nJejich úsilí zvýší ochotu [SCOPE.sCountry('target').GetAdjectiveNoFormatting] k tomuto [concept_diplomatic_action], ale okno této příležitosti bude otevřeno jen po omezenou dobu." # todo: NEW TRANSLATION
+ je_anti_lobby_opportunity: "Příležitost od loby" # todo: NEW TRANSLATION
+ je_anti_lobby_opportunity_reason: "[SCOPE.sPoliticalLobby('relevant_lobby').GetName] využila své kontakty, aby vytvořila příležitost [SCOPE.GetRootScope.GetCountry.GetCustom('anti_lobby_opportunity_text_def')] [SCOPE.sCountry('third_party_country').GetName]. Pokud bude využita, návrh pomůže posílit naše vztahy s odpůrci [SCOPE.sCountry('target').GetName] a přispěje k omezení zájmů [SCOPE.sCountry('target').GetAdjectiveNoFormatting].\n\nJejich úsilí zvýší ochotu [SCOPE.sCountry('third_party_country').GetAdjectiveNoFormatting] k tomuto [concept_diplomatic_action], ale okno této příležitosti bude otevřeno jen po omezenou dobu." # todo: NEW TRANSLATION
+ je_pro_lobby_demand: "Požadavek loby" # todo: NEW TRANSLATION
+ je_pro_lobby_demand_reason: "[SCOPE.sPoliticalLobby('relevant_lobby').GetName] požádala, abychom [SCOPE.GetRootScope.GetCountry.GetCustom('pro_lobby_demand_text_def')] [SCOPE.sCountry('third_party_country').GetName], známého protivníka [SCOPE.sCountry('target').GetName]. Pokud bude proveden, návrh pomůže prosadit zájmy [SCOPE.sCountry('target').GetAdjectiveNoFormatting].\n\nÚspěšné vyhovění jejich požadavku nám získá sympatie [Concept('concept_political_lobby','$concept_political_lobby_short$')], neúspěch v časovém limitu je značně rozhněvá." # todo: NEW TRANSLATION
+ je_anti_lobby_demand: "Požadavek loby" # todo: NEW TRANSLATION
+ je_anti_lobby_demand_reason: "[SCOPE.sPoliticalLobby('relevant_lobby').GetName] požádala, abychom [SCOPE.GetRootScope.GetCountry.GetCustom('anti_lobby_demand_text_def')] [SCOPE.sCountry('target').GetName].\n\nÚspěšné vyhovění jejich požadavku nám získá sympatie [Concept('concept_political_lobby','$concept_political_lobby_short$')], neúspěch v časovém limitu je značně rozhněvá." # todo: NEW TRANSLATION
+ enforced_wargoal_on_rival_tt: "[SCOPE.sCountry('relevant_country').GetName] ustoupil v [concept_diplomatic_play] proti nám" # todo: NEW TRANSLATION
+ enforced_wargoal_on_rival_2_tt: "[SCOPE.sCountry('third_party_country').GetName] ustoupil v [concept_diplomatic_play] proti nám" # todo: NEW TRANSLATION
+ religion_is_discriminated_tt: "[concept_religion] je v této zemi diskriminováno" # todo: NEW TRANSLATION
+ modifier_lobby_attempt_failed: "Neúspěšný pokus o sladění loby" # todo: NEW TRANSLATION
+ modifier_disparaged_lobby: "Odmítnutá podpora" # todo: NEW TRANSLATION
+ modifier_party_position_rejected: "Stranová platforma odmítnuta" # todo: NEW TRANSLATION
+ modifier_rejected_military_support: "Odmítnutá vojenská inspirace" # todo: NEW TRANSLATION
+ modifier_closer_western_ties: "Západní fascinace" # todo: NEW TRANSLATION
+ modifier_rejected_western_ties: "Odmítnutá západní fascinace" # todo: NEW TRANSLATION
+ modifier_hasty_lobby_creation: "Unáhlené přeskupení" # todo: NEW TRANSLATION
+ modifier_lobby_philistinism: "Obklopen philistiny" # todo: NEW TRANSLATION
+ modifier_lobby_membership_forced: "Proti masám" # todo: NEW TRANSLATION
+ modifier_commercial_lobby_disregarded: "Ignorovaná obchodní loby" # todo: NEW TRANSLATION
+ modifier_xenophobic_lobby_rejected: "Znevažena xenofobie" # todo: NEW TRANSLATION
+ modifier_suspected_of_disloyalty: "Podezření z neoddání" # todo: NEW TRANSLATION
+ modifier_jingoism_not_wanted: "Jingoismus nevyžádán" # todo: NEW TRANSLATION
+ modifier_ig_spread_thin: "Příliš mnoho lobbystických závazků" # todo: NEW TRANSLATION
+ lobby_events.1.t: "Revoluce zrazena" # todo: NEW TRANSLATION
+ lobby_events.1.d_join: "Aby se vyhnuli obviněním z komunismu a zaujali tvrdou zahraniční politiku, vedení [GetIdeology('ideology_social_democrat').GetName] v [SCOPE.gsInterestGroup('relevant_ig').GetName] začalo se přibližovat k [SCOPE.sPoliticalLobby('relevant_lobby').GetName]." # todo: NEW TRANSLATION
+ lobby_events.1.d_form: "Aby se vyhnuli obviněním z komunismu a zaujali tvrdou zahraniční politiku, vedení [GetIdeology('ideology_social_democrat').GetName] v [SCOPE.gsInterestGroup('relevant_ig').GetName] připravilo půdu pro loby vystupující proti zájmům [SCOPE.sCountry('relevant_country').GetAdjective]." # todo: NEW TRANSLATION
+ lobby_events.1.f: "\"Spojili jsme se, abychom bojovali proti komunismu,\" řekl [SCOPE.gsInterestGroup('relevant_ig').GetLeader.GetSheHe], \"protože jej označili jako nepřítele demokracie. Bez demokracie není svoboda. Násilí, ať ho používá kdokoli, je vždy reakční.\"\n\nOdezva byla chabá, potlesk roztroušený natolik, že šlo identifikovat jednotlivé účastníky. Ale bylo to více, než [SCOPE.gsInterestGroup('relevant_ig').GetLeader.GetSheHe] kdy od tohoto publika dostal." # todo: NEW TRANSLATION
+ lobby_events.1.a: "Jejich vlastenectví dává dobrý příklad." # todo: NEW TRANSLATION
+ lobby_events.1.b: "Jejich vlastenectví dává dobrý příklad." # todo: NEW TRANSLATION
+ lobby_events.1.c: "Měli by se vyhnout těmto zahraničním zapletením." # todo: NEW TRANSLATION
+ lobby_events.2.t: "Naše utlačované sourozence" # todo: NEW TRANSLATION
+ lobby_events.2.d_join: "Zveřejněná svědectví diskriminace [SCOPE.sReligion('relevant_religion').GetName] v [SCOPE.sCountry('relevant_country').GetName] přiměla [SCOPE.gsInterestGroup('relevant_ig').GetName] přidat se k [SCOPE.sPoliticalLobby('relevant_lobby').GetName]." # todo: NEW TRANSLATION
+ lobby_events.2.d_form: "Zveřejněná svědectví diskriminace [SCOPE.sReligion('relevant_religion').GetName] v [SCOPE.sCountry('relevant_country').GetName] přiměla [SCOPE.gsInterestGroup('relevant_ig').GetName] začít lobbovat za nepřátelský postoj vůči [SCOPE.sCountry('relevant_country').GetName]." # todo: NEW TRANSLATION
+ lobby_events.2.f: "\"I oni mohou najít odpuštění, ano, ale taková věc vyžaduje pokání, a vláda [SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting] je definicí neodpuštěné arogance.\"\n\n\"Jak milosrdné.\"\n\n\"A přesto já ukazuji daleko více než jejich [SCOPE.sCountry('relevant_country').GetRuler.GetPrimaryRoleTitle]!\"\n\nByl naštvaný - to bylo jasné přislušnému atašé. A pokud by měl volbu, brzy by zemi srovnal se zemí." # todo: NEW TRANSLATION
+ lobby_events.2.a: "Když slova selžou, musíme přinést meč." # todo: NEW TRANSLATION
+ lobby_events.2.b: "Když slova selžou, musíme přinést meč." # todo: NEW TRANSLATION
+ lobby_events.2.c: "Chtějí způsobit mezinárodní incident kvůli #italic tomuto#!?" # todo: NEW TRANSLATION
+ lobby_events.3.t: "Technické talenty" # todo: NEW TRANSLATION
+ lobby_events.3.d_join: "Inspirováni zručností [SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting] [GetPopType('engineers').GetName] a [GetPopType('academics').GetName], technicky založení členové [SCOPE.gsInterestGroup('relevant_ig').GetName] se začali přibližovat k [SCOPE.sPoliticalLobby('relevant_lobby').GetName]." # todo: NEW TRANSLATION
+ lobby_events.3.d_form: "Inspirováni zručností [SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting] [GetPopType('engineers').GetName] a [GetPopType('academics').GetName], technicky založení členové [SCOPE.gsInterestGroup('relevant_ig').GetName] začali lobbovat ve prospěch bližších vazeb s [SCOPE.sCountry('relevant_country').GetName]." # todo: NEW TRANSLATION
+ lobby_events.3.f: "\"Podle našich měřítek? S metodami, které používají v továrnách, často ušetří polovinu člověkodiny na výrobu stejného výstupu. Budova, kterou jsem navštívil, měla docela inovativní osvětlení. Představte si, že směny mohou být denně o hodinu delší...\"\n\nJeho vousatý druh už vytahoval papír a rýsoval propojení mezi různými sadami výpočtů. Když byly dvě sumy postaveny vedle sebe, vypustil nízké písknutí." # todo: NEW TRANSLATION
+ lobby_events.3.a: "Společně uděláme velké kroky." # todo: NEW TRANSLATION
+ lobby_events.3.b: "Společně uděláme velké kroky." # todo: NEW TRANSLATION
+ lobby_events.3.c: "Naše výtvory výrazně převyšují ty levné [SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting] hračky." # todo: NEW TRANSLATION
+ lobby_events.4.t: "Už to není stejné" # todo: NEW TRANSLATION
+ lobby_events.4.d: "Porážka [SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting] [SCOPE.gsInterestGroup('relevant_foreign_ig').GetName] v revoluci zlomila zájem [SCOPE.gsInterestGroup('relevant_ig').GetNameNoFormatting] o podporu [SCOPE.sPoliticalLobby('relevant_lobby').GetName]. Přestali prosazovat bližší vazby s [SCOPE.sCountry('relevant_country').GetName]." # todo: NEW TRANSLATION
+ lobby_events.4.f: "Dopisy, které posílali, zůstaly nezodpovězené. Diskrétní návštěva potvrdila jejich nejhorší obavy - budova, kterou kdysi vlastnili, byla zkonfiskována a nyní v ní sídlil apatický advokát, jeho praxe a rozšířená rodina. Ten nový muž byl přítel ministra - ten, který právě bojoval o svou pozici v doslovném smyslu. Okamžité náznaky kulek stále zanechávaly rány na fasádě a dávaly definitivní důkaz, že náhrada nebude poskytnuta." # todo: NEW TRANSLATION
+ lobby_events.4.a: "Veškerá jejich práce byla ztracena během okamžiku." # todo: NEW TRANSLATION
+ lobby_events.4.b: "Zdá se, že jsou jen první z mnoha." # todo: NEW TRANSLATION
+ many_igs_leave_lobby_tt: "[SCOPE.gsInterestGroup('leaving_ig').GetName] opouští [SCOPE.sPoliticalLobby('relevant_lobby').GetName]" # todo: NEW TRANSLATION
+ lobby_events.5.t: "Kapitalní zájmy" # todo: NEW TRANSLATION
+ lobby_events.5.d_join: "Zájem [SCOPE.gsInterestGroup('relevant_ig').GetName] na ziskovém obchodu s [SCOPE.sGoods('relevant_goods').GetName] s [SCOPE.sCountry('relevant_country').GetName] přiměl je přidat se k [SCOPE.sPoliticalLobby('relevant_lobby').GetName]." # todo: NEW TRANSLATION
+ lobby_events.5.d_form: "Zájem [SCOPE.gsInterestGroup('relevant_ig').GetName] na ziskovém obchodu s [SCOPE.sGoods('relevant_goods').GetName] s [SCOPE.sCountry('relevant_country').GetName] přiměl je začít lobbovat pro bližší vazby s [SCOPE.sCountry('relevant_country').GetNameNoFormatting]." # todo: NEW TRANSLATION
+ lobby_events.5.f: "\"Zvýšený objem neumožňuje více rizika?\"\n\n\"Právě naopak. Když do kapes vstoupí příval peněz, člověk sklidí mánii. Jeden další groš číšníkovi, dříve šokující poplatek uhrazen s úsměvem. Pokud si člověk nedá pozor, přestane se dívat do svých účetních knih. Platí #italic více#! než dříve - a to je cesta k zhroucení.\"\n\n\"Výborný bod. Opraví to nasazení válečných lodí?\"\n\n\"Lépe doufat. Pokud ne, možná nějaké dary pomohou.\"" # todo: NEW TRANSLATION
+ lobby_events.5.a: "Na zdraví naší prosperity." # todo: NEW TRANSLATION
+ lobby_events.5.b: "Na zdraví naší prosperity." # todo: NEW TRANSLATION
+ lobby_events.5.c: "Náš vztah by měl zůstat přísně transakční." # todo: NEW TRANSLATION
+ lobby_events.6.t: "Bývalí přátelé" # todo: NEW TRANSLATION
+ lobby_events.6.d: "Dezerenti vedení [SCOPE.gsInterestGroup('relevant_ig').GetName] se valí pryč z [SCOPE.sPoliticalLobby('relevant_lobby').GetName], odcizeni komunistickou vládou v [SCOPE.sCountry('relevant_country').GetName]." # todo: NEW TRANSLATION
+ lobby_events.6.f: "\"Během měsíců Komunisté uhasili ducha [SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting] národa. Vykořenili starý společenský řád a strhli památky kultury. Naši muži v [SCOPE.sCountry('relevant_country').GetCapital.GetCityHubName] sotva unikli živí.\"\n\nAtašé tomu věřil. Slova muže jako by řezala vzduch obrazem rudých vlajek, bajonetů, kouře vystupujícího z komína ambasády.\n\n\"Vidím,\" řekl, tón cvičené uctivosti. \"Srazím výbor hned.\"" # todo: NEW TRANSLATION
+ lobby_events.6.a: "To by nemělo překvapit." # todo: NEW TRANSLATION
+ lobby_events.6.b: "Můžeme omezit rozsah tohoto odchodu?" # todo: NEW TRANSLATION
+ lobby_events.7.t: "Proletářská solidarita" # todo: NEW TRANSLATION
+ lobby_events.7.d_join_defect: "Ideologicky [SCOPE.sIdeology('relevant_ideology').GetName] orientovaná [SCOPE.gsInterestGroup('relevant_ig').GetName] se od [SCOPE.sPoliticalLobby('old_lobby').GetName] odvrátila k [SCOPE.sPoliticalLobby('relevant_lobby').GetName] ve jménu mezinárodní solidarity s proletariátem [SCOPE.sCountry('relevant_country').GetName]." # todo: NEW TRANSLATION
+ lobby_events.7.d_join: "Ideologicky [SCOPE.sIdeology('relevant_ideology').GetName] orientovaná [SCOPE.gsInterestGroup('relevant_ig').GetName] se přidala k [SCOPE.sPoliticalLobby('relevant_lobby').GetName], cítí mezinárodní solidaritu s proletariátem [SCOPE.sCountry('relevant_country').GetName]." # todo: NEW TRANSLATION
+ lobby_events.7.d_defect: "Ideologicky [SCOPE.sIdeology('relevant_ideology').GetName] orientovaná [SCOPE.gsInterestGroup('relevant_ig').GetName] se odvrátila od [SCOPE.sPoliticalLobby('old_lobby').GetName] a připojila se k podpoře jejich [SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting] spojenců." # todo: NEW TRANSLATION
+ lobby_events.7.d_form: "Ideologicky [SCOPE.sIdeology('relevant_ideology').GetName] orientovaná [SCOPE.gsInterestGroup('relevant_ig').GetName] začala lobbovat ve prospěch podpory svých [SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting] spojenců." # todo: NEW TRANSLATION
+ lobby_events.7.f: "\"Komunisté opovrhují, že skrývají své názory a cíle. Otevřeně prohlašují, že svého cíle lze dosáhnout pouze násilným svržení všech stávajících společenských podmínek. Nechť vládnoucí třídy se třesou před komunistickou revolucí. Pracující mají co ztratit kromě řetězů. Mají svět k získání.\n\nPracující všech zemí, spojte se!\"" # todo: NEW TRANSLATION
+ lobby_events.7.a: "Solidarita navěky!" # todo: NEW TRANSLATION
+ lobby_events.7.b: "Jejich pravé loajality se odkrývají." # todo: NEW TRANSLATION
+ lobby_events.7.c: "Ať dělají, co chtějí, neposloucháme je." # todo: NEW TRANSLATION
+ lobby_events.8.t: "Sjednocení" # todo: NEW TRANSLATION
+ lobby_events.8.d: "[SCOPE.gsInterestGroup('first_party_member').GetName], významní podporovatelé [SCOPE.sParty('relevant_party').GetName], navrhují zařadit podporu [SCOPE.sPoliticalLobby('relevant_lobby').GetName] do oficiální stranické platformy." # todo: NEW TRANSLATION
+ lobby_events.8.f: "\"Zvážil jsem rizika a jsem ochoten to prosadit. Fakt je ten, že voliči se nikdy nezajímali o nic mimo naše hranice. I kdyby klima silně změnilo postoj vůči [SCOPE.sCountry('relevant_country').GetNameNoFormatting] v nadcházejících měsících, můžeme se stále ucházet s vnitřní politikou bez kompromisů s širšími principy.\"\n\n\"Vidím důvod. Přesto bych se chtěl dozvědět víc před závazkem. Postoj naší země nesmí být veden ideologickými náladami, ale tvrdou potřebou.\"" # todo: NEW TRANSLATION
+ lobby_events.8.a: "Strana stojí spolu v tom." # todo: NEW TRANSLATION
+ lobby_events.8.b: "A budeme obviněni z cizí manipulace?" # todo: NEW TRANSLATION
+ lobby_events.8.c: "To by mohlo prospět předvolební kampani strany." # todo: NEW TRANSLATION
+ lobby_events.9.t: "Použití zbraní" # todo: NEW TRANSLATION
+ lobby_events.9.d_join: "Imponováni využitím sofistikovaných [SCOPE.GetRootScope.GetCountry.GetCustom('impressive_miltech_text')] armádou [SCOPE.sCountry('relevant_country').GetAdjective], [SCOPE.gsInterestGroup('relevant_ig').GetName] se začali přibližovat k [SCOPE.sPoliticalLobby('relevant_lobby').GetName]." # todo: NEW TRANSLATION
+ lobby_events.9.d_form: "Imponováni využitím sofistikovaných #v [SCOPE.GetRootScope.GetCountry.GetCustom('impressive_miltech_text')]#! armádou [SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting], [SCOPE.gsInterestGroup('relevant_ig').GetName] začali lobbovat pro bližší vazby s [SCOPE.sCountry('relevant_country').GetNameNoFormatting]." # todo: NEW TRANSLATION
+ lobby_events.9.f: "Zprávy z [SCOPE.sCountry('relevant_country').GetNameNoFormatting] obíhaly místnost tak často, že hrany papírů změkly. Někteří byli v úžasu, jiní opatrnější. Někteří prostě odmítali věřit napsanému.\n\n\"Věřím,\" řekl důstojník na konci stolu, \"že pokud to dokážou oni, dokážeme to i my. Do té doby bychom měli zajistit, aby ty zbraně nebyly namířeny proti nám.\"" # todo: NEW TRANSLATION
+ lobby_events.9.a: "[SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting] model stojí za následování." # todo: NEW TRANSLATION
+ lobby_events.9.b: "[SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting] model stojí za následování." # todo: NEW TRANSLATION
+ lobby_events.9.c: "Neměli by být tolik ohromeni." # todo: NEW TRANSLATION
+ impressive_miltech_tanks: "Pohyblivá pancéřová vozidla" # todo: NEW TRANSLATION
+ impressive_miltech_breech_loading_artillery: "Zadní nabíjení dělostřelectva" # todo: NEW TRANSLATION
+ impressive_miltech_ironclads: "Železné lodě" # todo: NEW TRANSLATION
+ impressive_miltech_auto_machine_guns: "Automatické kulomety" # todo: NEW TRANSLATION
+ lobby_events.10.t: "Zahraniční inspirace" # todo: NEW TRANSLATION
+ lobby_events.10.d: "[SCOPE.gsInterestGroup('relevant_ig').GetName] získala fascinaci [SCOPE.sCountry('relevant_country').GetName], považuje jej za vzor modernizace státu [ROOT.GetCountry.GetAdjective]. Analýzy zákonů a technologií [SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting] zaplňují jejich publikace." # todo: NEW TRANSLATION
+ lobby_events.10.f: "[SCOPE.gsInterestGroup('relevant_ig').GetLeader.GetSheHe|U] vyvinul vizi. Železnice z [ROOT.GetCountry.GetCapital.GetCityHubName] k [ROOT.GetCountry.GetCapital.GetFarmHubName], plánovaná města se širokými, plynově osvícenými bulváry, zdravá a profesionální byrokracie. Západní státy a jejich spojenci to měli, mezi mnoha dalšími věcmi. [ROOT.GetCountry.GetNameNoFormatting] by to také mohl mít - nic mu v tom nebránilo.\n\nAle to nebyla celá pravda a [SCOPE.gsInterestGroup('relevant_ig').GetLeader.GetSheHe] to dobře věděl. Každý importovaný vynález nese s sebou břemeno, riziko stát se provincií [SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting]. Jak má [SCOPE.gsInterestGroup('relevant_ig').GetLeader.GetSheHe] nalézt rovnováhu?" # todo: NEW TRANSLATION
+ lobby_events.10.a: "Můžeme mnoho získat z bližších vztahů se Západem." # todo: NEW TRANSLATION
+ lobby_events.10.b: "Můžeme mnoho získat z bližších vztahů se Západem." # todo: NEW TRANSLATION
+ lobby_events.10.c: "Jejich posedlost ohrožuje naši suverenitu." # todo: NEW TRANSLATION
+ lobby_events.11.t: "Koncert přerušen" # todo: NEW TRANSLATION
+ lobby_events.11.d_leave: "Ohrané agresivní narušení Koncertu evropských mocností [SCOPE.sCountry('relevant_country').GetName] pobouřilo dříve pro-[SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting] [SCOPE.gsInterestGroup('relevant_ig').GetName] a opustili [SCOPE.sPoliticalLobby('relevant_lobby').GetName]." # todo: NEW TRANSLATION
+ lobby_events.11.d_join: "Ohrané agresivní narušení Koncertu evropských mocností [SCOPE.sCountry('relevant_country').GetName] pobouřilo [SCOPE.gsInterestGroup('relevant_ig').GetName] a přimělo je přidat se k [SCOPE.sPoliticalLobby('relevant_lobby').GetName]." # todo: NEW TRANSLATION
+ lobby_events.11.d_form: "Vypuknutí války v Evropě, vyvolané agresí [SCOPE.sCountry('relevant_country').GetName], přimělo [SCOPE.gsInterestGroup('relevant_ig').GetName] začít lobbovat proti zájmům [SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting]." # todo: NEW TRANSLATION
+ lobby_events.11.f: "\"Ti zatracení blázni! Měl jsem tam investice! Myslí si jejich [SCOPE.sCountry('relevant_country').GetRuler.GetPrimaryRoleTitle], že je Napoleon? Kdo bude další, aby toho využil?\"\n\n\"Dánové, tipuji.\"\n\n\"Ano, ano, Dánové... asi tak. Každopádně, víte, co dělat.\"\n\nOdešel s bouchnutými dveřmi a mračivým výrazem. Sekretář zůstal a už připravil obálku adresovanou [SCOPE.sCountry('relevant_country').GetCapital.GetCityHubName]. S trochou štěstí dorazí během měsíce a něco z toho bude možné zachránit." # todo: NEW TRANSLATION
+ lobby_events.11.a: "[SCOPE.sCountry('relevant_country').GetNameNoFormatting] měl vždy možnost zvolit jinak." # todo: NEW TRANSLATION
+ lobby_events.11.b: "[SCOPE.sCountry('relevant_country').GetNameNoFormatting] měl vždy možnost zvolit jinak." # todo: NEW TRANSLATION
+ lobby_events.11.c: "Bude potřeba mnohem víc, aby to odčinili." # todo: NEW TRANSLATION
+ lobby_events.11.e: "Jak rychle couvají." # todo: NEW TRANSLATION
+ has_war_with_cover_tt: "Je ve válce s touto zemí" # todo: NEW TRANSLATION
+ is_valid_lobby_target_tt: "Je platným cílem [concept_political_lobby]" # todo: NEW TRANSLATION
+ lobby_events.12.t: "Umělecká inspirace" # todo: NEW TRANSLATION
+ lobby_events.12.d_join: "Okouzleni nádhernou [SCOPE.GetRootScope.GetCountry.GetCustom('impressive_cultech_text')] produkcí [SCOPE.sCountry('relevant_country').GetAdjective] umělců, [SCOPE.gsInterestGroup('relevant_ig').GetName] se přidali k [SCOPE.sPoliticalLobby('relevant_lobby').GetName]." # todo: NEW TRANSLATION
+ lobby_events.12.d_form: "Okouzleni krásnou [SCOPE.GetRootScope.GetCountry.GetCustom('impressive_cultech_text')] produkcí [SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting] umělců, [SCOPE.gsInterestGroup('relevant_ig').GetName] začali lobbovat pro bližší vztahy s [SCOPE.sCountry('relevant_country').GetName]." # todo: NEW TRANSLATION
+ lobby_events.12.f: "[SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting] impresionismus. Slova do sebe zapadala jako francouzské víno nebo čínské hedvábí, nabývajíc význam větší než součet částí. Mohl by strávit zbytek života v této galerii, dovézt dost děl na pokrytí každé stěny svého domu a přesto zůstat stejně ohromen jako při prvním pohledu.\n\nKaždý obraz byl oknem do kultury, které by mohl strávit život pokusem porozumět, každý tah štětcem naplněný vitalitou z cizího semene. Kolik o [SCOPE.sCountry('relevant_country').GetNameNoFormatting] by mohl pochopit skrze tato díla, kdyby měl čas a schopnosti?" # todo: NEW TRANSLATION
+ lobby_events.12.a: "Co za kulturu!" # todo: NEW TRANSLATION
+ lobby_events.12.b: "Co za kulturu!" # todo: NEW TRANSLATION
+ lobby_events.12.c: "Co za kulturu?" # todo: NEW TRANSLATION
+ impressive_cultech_romanticism: "romantické umění" # todo: NEW TRANSLATION
+ impressive_cultech_realism: "realistické umění" # todo: NEW TRANSLATION
+ impressive_cultech_camera: "fotografie" # todo: NEW TRANSLATION
+ impressive_cultech_film: "filmy" # todo: NEW TRANSLATION
+ lobby_events.13.t: "Nestálé davy" # todo: NEW TRANSLATION
+ lobby_events.13.d: "Populistická základna [SCOPE.gsInterestGroup('relevant_ig').GetName] se obrátila proti podpoře zahraničních zapojení. Tlak zevnitř přiměl skupinu vzdálit se od [SCOPE.sPoliticalLobby('relevant_lobby').GetName]." # todo: NEW TRANSLATION
+ lobby_events.13.f: "#bold [ROOT.GetCountry.GetAdjectiveNoFormatting] na prvním místě#!\n\nLidé říkají - NE zahraničním zapojením a NE zahraničním smlouvám!\n\n#italic PROSPERITA doma, nebo CHAOS v zahraničí? ŽÁDNÁ ZAHRANIČNÍ MOC by úspěšně neudržela útok na opevněný [ROOT.GetCountry.GetNameNoFormatting]!#!" # todo: NEW TRANSLATION
+ lobby_events.13.a: "Bylo chybou spoléhat na ně." # todo: NEW TRANSLATION
+ lobby_events.13.b: "Musí se držet dál od těchto populistických přílivů." # todo: NEW TRANSLATION
+ lobby_events.14.t: "Kupujte, nebo jinak" # todo: NEW TRANSLATION
+ lobby_events.14.d: "Skupina zastupující ty z [SCOPE.gsInterestGroup('relevant_ig').GetName], kteří mají zájem na obchodu [SCOPE.sGoods('relevant_goods').GetName], začala tlačit vládu k akci proti [SCOPE.sCountry('relevant_country').GetName], cituje jejich nepřátelské obchodní praktiky." # todo: NEW TRANSLATION
+ lobby_events.14.f: "Všichni byli celý den v kanceláři ministra zahraničí. Muži bohatí a vlivní, známí ministerstvu, opakující stejné stížnosti: \"[SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting] obchodní válka\", \"omezení volného pohybu zboží\" a \"zabavení nerealizovaných zisků\".\n\nJen co se chystal zamknout dveře na konci dne, zazvonil zvonek. Energie z něj vyprchala, téměř spadl na koberec. S grimassou udělal další krok a otevřel dveře.\n\n\"Ano pane. Pokud byste si sedl...\"" # todo: NEW TRANSLATION
+ lobby_events.14.a: "Je to pochopitelné." # todo: NEW TRANSLATION
+ lobby_events.14.b: "Nebudeme měnit postoj na povel." # todo: NEW TRANSLATION
+ lobby_events.15.t: "Dobré, ne cizí" # todo: NEW TRANSLATION
+ lobby_events.15.d_join: "Příliv zahraničních investic od [SCOPE.sCountry('relevant_country').GetName] vyvolal obavy nacionalistických skupin. [SCOPE.gsInterestGroup('relevant_ig').GetName] se obávali zahraniční subverze a přidali se k [SCOPE.sPoliticalLobby('relevant_lobby').GetName]." # todo: NEW TRANSLATION
+ lobby_events.15.d_form: "Příliv zahraničních investic od [SCOPE.sCountry('relevant_country').GetName] vyvolal obavy nacionalistických skupin. [SCOPE.gsInterestGroup('relevant_ig').GetName] začali lobbovat proti zájmům [SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting]." # todo: NEW TRANSLATION
+ lobby_events.15.f: "\"Staví všechny své továrny z lepenky a olověných čipů, a jejich ocel je vhodná jen na břitvy. A i tak, pokud je použijete, můžete mít modřiny!\"\n\nKruh mužů u stolu se rozesmál. Muž s červenou mašlí dal vědět, a pokračoval. \"Když jim dovolíme kupovat naše pozemky, do roka bude [SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting] špión v každém dívčím pokoji. Znám je dobře. Strávil jsem měsíc v [SCOPE.sCountry('relevant_country').GetCapital.GetCityHubName], víte...\"" # todo: NEW TRANSLATION
+ lobby_events.15.a: "Co s tím uděláme?" # todo: NEW TRANSLATION
+ lobby_events.15.b: "Sbírka paranoidních dětí." # todo: NEW TRANSLATION
+ lobby_events.16.t: "Těžké milovat" # todo: NEW TRANSLATION
+ lobby_events.16.d: "Vypuknutí ozbrojených střetů mezi [ROOT.GetCountry.GetName] a [SCOPE.sCountry('relevant_country').GetName] mělo katastrofální dopad na [SCOPE.sPoliticalLobby('relevant_lobby').GetName]. Jeho kdysi věrní podporovatelé začali odcházet." # todo: NEW TRANSLATION
+ lobby_events.16.f: "První střely padly, když spali, a probudili se v odlišném světě. Do týdne se veškerá solidarita mezi stranami rozplynula a na ulici získali nepřátelské pohledy, kdykoli přišli do své kanceláře. Po třetím přísném policistovi, který přišel zajistit, že jsou v souladu s požárními předpisy, i ti nejoddanější praskli. Všechno bylo vyklizeno a kufry byly naplněny, sedadla ponechána nakřivo." # todo: NEW TRANSLATION
+ lobby_events.16.a: "Měli by prchnout, dokud si zachovají reputaci." # todo: NEW TRANSLATION
+ lobby_events.16.b: "Je nejlepší připravit se na den, kdy tato válka skončí." # todo: NEW TRANSLATION
+ lobby_events.17.t: "Kam dál" # todo: NEW TRANSLATION
+ lobby_events.17.d: "S měnícím se postojem [SCOPE.gsInterestGroup('relevant_ig').GetName] vůči [SCOPE.sCountry('relevant_country').GetName] začalo vedení zvažovat přehodnocení podpory pro [SCOPE.sPoliticalLobby('relevant_lobby').GetName]." # todo: NEW TRANSLATION
+ lobby_events.17.f: "Bylo obtížnější získat schůzky na ministerstvu zahraničí. Počáteční zájem vyprchal a aktivity loby se staly šumem na pozadí [ROOT.GetCountry.GetCapital.GetCityHubName]. [SCOPE.gsInterestGroup('relevant_ig').GetNameNoFormatting] byli první, kdo o zájem přišli, jejich zástupci zklamaní nedostatkem novinek a pak už ani nechtěli číst noviny.\n\n\"Proč bychom se měli starat o dění v [SCOPE.sCountry('relevant_country').GetCapital.GetCityHubName]?\" tázali se mladší členové. Staří nevěděli, jak odpovědět." # todo: NEW TRANSLATION
+ lobby_events.17.a: "Je čas na změnu kurzu." # todo: NEW TRANSLATION
+ lobby_events.17.b: "Proč měnit něco, co funguje?" # todo: NEW TRANSLATION
+ remains_in_lobby_tt: "[SCOPE.gsInterestGroup('relevant_ig').GetName] zůstane v [SCOPE.sPoliticalLobby('relevant_lobby').GetName]" # todo: NEW TRANSLATION
+ lobby_events.18.t: "Právé hranice" # todo: NEW TRANSLATION
+ lobby_events.18.d_join: "Ferventně nacionalistický [SCOPE.gsInterestGroup('relevant_ig').GetName] obrátil rétoriku směrem k [SCOPE.sCountry('relevant_country').GetName] a její provincii [SCOPE.sState('revanchist_state').GetName]. Přidali se k [SCOPE.sPoliticalLobby('relevant_lobby').GetName] v naději uskutečnit územní ambice." # todo: NEW TRANSLATION
+ lobby_events.18.d_form: "Ferventně nacionalistický [SCOPE.gsInterestGroup('relevant_ig').GetName] obrátil rétoriku směrem k [SCOPE.sCountry('relevant_country').GetName] a její provincii [SCOPE.sState('revanchist_state').GetName]. Začali lobbovat za nepřátelské kroky vůči [SCOPE.sCountry('relevant_country').GetNameNoFormatting] k dosažení územních ambicí." # todo: NEW TRANSLATION
+ lobby_events.18.f: "\"Je nezpochybnitelné, že [SCOPE.sState('revanchist_state').GetNameNoFormatting] má zřetelně [ROOT.GetCountry.GetAdjectiveNoFormatting] charakter. Ve skutečnosti tato oblast patřila několika předchůdcům států, jejichž dědictví dnes ztělesňujeme. Zaprvé...\"\n\nÚředník seděl zdvořile, když muž u předního pódia představil svůj výklad. Když vytáhl starodávný mince, která prý byla nalezena pod [SCOPE.sState('revanchist_state').GetCityHubName], publikum vybuchlo v jásot. Tleskal přesto mechanicky. Jeho mysl už byla pryč v době mečů a plachetnic. Vzít [SCOPE.sState('revanchist_state').GetNameNoFormatting] zpět byl záležitostí současnosti, dělostřelectva a granátů. Vše ostatní by se dalo domluvit později." # todo: NEW TRANSLATION
+ lobby_events.18.a: "[SCOPE.sState('revanchist_state').GetNameNoFormatting] je právoplatně [ROOT.GetCountry.GetAdjectiveNoFormatting]!" # todo: NEW TRANSLATION
+ lobby_events.18.b: "Tvrdě odmítáme toto šermování." # todo: NEW TRANSLATION
+ lobby_events.19.t: "Mraky na obzoru" # todo: NEW TRANSLATION
+ lobby_events.19.d_join_country: "Podřízení [SCOPE.sCountry('relevant_subject').GetName] [SCOPE.sCountry('relevant_country').GetName] vyvolalo obavy v [SCOPE.gsInterestGroup('relevant_ig').GetName], že i náš stát se může stát obětí. Jejich obavy je přiměly přidat se k [SCOPE.sPoliticalLobby('relevant_lobby').GetName]." # todo: NEW TRANSLATION
+ lobby_events.19.d_form_country: "Podřízení [SCOPE.sCountry('relevant_subject').GetName] [SCOPE.sCountry('relevant_country').GetName] vyvolalo obavy v [SCOPE.gsInterestGroup('relevant_ig').GetName], že i náš stát se může stát obětí. Jejich obavy je přiměly začít lobbovat proti zájmům [SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting]." # todo: NEW TRANSLATION
+ lobby_events.19.d_join_state: "Přítomnost nedaleké [SCOPE.sCountry('relevant_country').GetAdjective] kolonie [SCOPE.sState('relevant_colonial_state').GetName] vyvolala obavy v [SCOPE.gsInterestGroup('relevant_ig').GetName], že i náš stát může být podobně pohlcen. To je přimělo přidat se k [SCOPE.sPoliticalLobby('relevant_lobby').GetName]." # todo: NEW TRANSLATION
+ lobby_events.19.d_form_state: "Přítomnost nedaleké [SCOPE.sCountry('relevant_country').GetAdjective] kolonie [SCOPE.sState('relevant_colonial_state').GetName] vyvolala obavy v [SCOPE.gsInterestGroup('relevant_ig').GetName], že i náš stát může být podobně pohlcen. To je přimělo začít lobbovat proti zájmům [SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting]." # todo: NEW TRANSLATION
+ lobby_events.19.f: "\"Je vše dobře naplněno strachem. Není to hanba. Jejich dosah se rozprostírá po celém světě jako mořský příšera a pojídá, co je zranitelné. Dosahují bez selhání a hrozí nám skoro ze všech stran. Ještě jsme nespadli, a to má svůj důvod.\"\n\nByla to křehká naděje. [SCOPE.gsInterestGroup('relevant_ig').GetLeader.GetLastNameNoFormatting] mohl vidět jen jedinou trávovou stéblo po lesním požáru.\n\n\"Musíme se soustředit na tyto důvody a použít je jako zbraň. Potřebujeme čas a musíte nám ho koupit.\"" # todo: NEW TRANSLATION
+ lobby_events.19.a: "Měli pravdu ve své obavě z hrozby [SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting]." # todo: NEW TRANSLATION
+ lobby_events.19.b: "Nepřátelství by mohlo vyprovokovat to, čeho se bojí." # todo: NEW TRANSLATION
+ lobby_events.20.t: "Rozprostření" # todo: NEW TRANSLATION
+ lobby_events.20.d: "Omezené politické zdroje [SCOPE.gsInterestGroup('relevant_ig').GetName] přiměly vedení zpochybnit členství jak v [SCOPE.sPoliticalLobby('relevant_lobby_1').GetName], tak v [SCOPE.sPoliticalLobby('relevant_lobby_2').GetName]." # todo: NEW TRANSLATION
+ lobby_events.20.f: "\"A na kancelářské potřeby průměrně...\" Auditor otočil stránku na příslušný záznam a proběhl sloupec očima. \"Tři sta korun měsíčně.\"\n\nPro muže přes stůl začal svět točit. \"Jste si jist?\"\n\n\"A tisíc dvě stě za služební cesty.\"\n\n\"...prosím?\" požádal. \"Mohu mít kopii manifestu? Potřebuji se setkat s kolegy.\"" # todo: NEW TRANSLATION
+ lobby_events.20.a: "Není důvod zůstávat v [SCOPE.sPoliticalLobby('relevant_lobby_1').GetNameNoFormatting]." # todo: NEW TRANSLATION
+ lobby_events.20.b: "Členství v [SCOPE.sPoliticalLobby('relevant_lobby_2').GetNameNoFormatting] již není užitečné." # todo: NEW TRANSLATION
+ lobby_events.20.c: "Opustit kterékoliv by bylo nerozumné." # todo: NEW TRANSLATION
+ modifier_no_honest_politicians: "Apatická populace" # todo: NEW TRANSLATION
+ modifier_foreign_owned_accusations: "Nedůvěra v lobbing" # todo: NEW TRANSLATION
+ modifier_foreign_influence_concerns: "Obvinění ze zahraniční podpory" # todo: NEW TRANSLATION
+ modifier_foreign_influence_concerns_dismissed: "Neopodstatněná obvinění" # todo: NEW TRANSLATION
+ modifier_foreign_influence_ignored: "Chrání vláda" # todo: NEW TRANSLATION
+ modifier_accused_of_blatant_opportunism: "Očividný oportunismus" # todo: NEW TRANSLATION
+ modifier_accepted_blatant_opportunism: "Strana moci" # todo: NEW TRANSLATION
+ fund_lobbies_events.1.t: "Síť nedůvěry" # todo: NEW TRANSLATION
+ fund_lobbies_events.1.d: "Příliv lobbystických peněz z [SCOPE.sCountry('relevant_country').GetAdjective] do [ROOT.GetCountry.GetAdjective] politiky výrazně zvýšil domácí napětí. Fámy a obvinění, že určité politické osobnosti jsou agenty [SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting], se staly běžnými." # todo: NEW TRANSLATION
+ fund_lobbies_events.1.f: "\"Mám často pocit, že se dnes nedá nic udělat. Ptali se mě na nákup jednoho mého bratrance - ženy, kterou jsem potkal jen jednou.\"\n\n\"Kdo se ptal?\"\n\n\"Jeden z mužů z pokladny. Řekl jsem mu přesně to, co vám teď říkám.\"\n\n\"Jsou napjatí. Přisuzuji to tomu blbci dole. Stříbro z [SCOPE.sCountry('relevant_country').GetCapital.GetFarmHubName], a on to použil pro schůzku s ministrem? Pustili jsme ho k dobré věci a teď to kazí druhým.\"" # todo: NEW TRANSLATION
+ fund_lobbies_events.1.a: "Jste [ROOT.GetCountry.GetAdjectiveNoFormatting], pane, nebo [SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting]?" # todo: NEW TRANSLATION
+ fund_lobbies_events.1.b: "Kdo kdy slyšel o poctivém politikovi?" # todo: NEW TRANSLATION
+ fund_lobbies_events.2.t: "Komu odpovídáte?" # todo: NEW TRANSLATION
+ fund_lobbies_events.2.d: "Anonymní autor spojený s [SCOPE.gsInterestGroup('opposing_ig').GetName] napsal polemiku útočící na vazby [SCOPE.gsInterestGroup('relevant_ig').GetName] na [SCOPE.sPoliticalLobby('relevant_lobby').GetName]. Dokument je obviňuje ze stání na straně cizí zpravodajské služby [SCOPE.sCountry('relevant_country').GetAdjective]." # todo: NEW TRANSLATION
+ fund_lobbies_events.2.f: "\"Máme sklony předpokládat nejlepší záměry, a to je atribut, který jsme poslední, kdo by odsoudil. Představme si svět bez [SCOPE.sCountry('relevant_country').GetNameNoFormatting] a tedy bez [SCOPE.sPoliticalLobby('relevant_lobby').GetNameNoFormatting]. V tom světě bychom věřili, že [SCOPE.gsInterestGroup('relevant_ig').GetLeader.GetCustom('getMsMr')] [SCOPE.gsInterestGroup('relevant_ig').GetLeader.GetLastNameNoFormatting] jedná plně poctivě.\n\n[SCOPE.gsInterestGroup('relevant_ig').GetLeader.GetSheHe|U] si zaslouží dobrý první dojem. Nicméně je na nás objektivně upozornit na nedostatky. Proto za každou korunu, kterou [SCOPE.gsInterestGroup('relevant_ig').GetLeader.GetSheHe] přijme od [SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting] ambasády, musíme upravit náš dobrý první dojem...\"" # todo: NEW TRANSLATION
+ fund_lobbies_events.2.a: "Tyto pomluvy nemají místo ve společnosti." # todo: NEW TRANSLATION
+ fund_lobbies_events.2.b: "Je to pravda, víte." # todo: NEW TRANSLATION
+ fund_lobbies_events.2.c: "Vyšetřili jsme to sami a nenašli nic." # todo: NEW TRANSLATION
+ fund_lobbies_events.3.t: "Důkaz pravdy" # todo: NEW TRANSLATION
+ fund_lobbies_events.3.d: "Zprávy o penězích [SCOPE.sCountry('relevant_country').GetAdjective] končících v rukou domácích aktérů nakloněných k nim vedly [SCOPE.sPoliticalLobby('relevant_lobby').GetName] k sérii odsudků namířených proti oponentům." # todo: NEW TRANSLATION
+ fund_lobbies_events.3.f: "Potvrzení bylo pocitem, který [SCOPE.gsInterestGroup('relevant_ig').GetLeader.GetLastNameNoFormatting] pociťoval čím dál častěji. Zprávy na jeho stole potvrdily to, co varoval roky - pronikání [SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting] vlivu do nejvyšších míst vedení. Rivalové [SCOPE.gsInterestGroup('relevant_ig').GetLeader.GetHerHis] se stali podezřelými a spojenci vnímáni jako chytré insidery.\n\nBude to vyžadovat práci. Tato potvrzení půjdou i jinam a jiní budou mít stejný nápad. Je to závod a kdo začne první, má velkou šanci vyhrát." # todo: NEW TRANSLATION
+ fund_lobbies_events.3.a: "Získali statuse autority." # todo: NEW TRANSLATION
+ fund_lobbies_events.3.b: "I rozbitý hodiny někdy ukazují správný čas." # todo: NEW TRANSLATION
+ fund_lobbies_events.4.t: "Nad poměry" # todo: NEW TRANSLATION
+ fund_lobbies_events.4.d: "[SCOPE.sCharacter('relevant_character').GetFullName], prominentní spojenec [SCOPE.sPoliticalLobby('relevant_lobby').GetName], byl nedávno spatřen žijící nad své možnosti. Oponenti tvrdí, že jeho životní styl je umořen dary od [SCOPE.sCountry('relevant_country').GetAdjective]." # todo: NEW TRANSLATION
+ fund_lobbies_events.4.f: "Nové bydlení [SCOPE.sCharacter('relevant_character').GetFullNameNoFormatting] bylo ihned viditelné. Čerstvě vyleštěný štuk se lišil od opotřebovaných fasád sousedů, které vyzařovaly tichou důstojnost. U něj nic takového nebylo. Uspořádal bujarou hostinu, která splývala dny bez přestávky.\n\nPohled na to vyvolal otázku u všech pozorovatelů. Vznášela se v ovzduší, jasná a naléhavá. Jak je to možné?" # todo: NEW TRANSLATION
+ fund_lobbies_events.4.a: "Zahajte vyšetřování zdroje tohoto bohatství." # todo: NEW TRANSLATION
+ fund_lobbies_events.4.b: "Možná [SCOPE.sCharacter('relevant_character').GetSheHe] prostě udělal(a) nějaké dobré investice." # todo: NEW TRANSLATION
+ fund_lobbies_events.4.c: "Proč by si někdo kdy zvolil být chudý?" # todo: NEW TRANSLATION
+ character_sent_to_jail_tt: "[SCOPE.sCharacter('relevant_character').GetFullName] bude shledán vinným z korupce a uvězněn" # todo: NEW TRANSLATION
+ character_exonerated_tt: "[SCOPE.sCharacter('relevant_character').GetFullName] bude zproštěn všech obvinění" # todo: NEW TRANSLATION
+ fund_lobbies_events.5.t: "Nestydatý oportunismus" # todo: NEW TRANSLATION
+ fund_lobbies_events.5.d: "S přílivem [SCOPE.sCountry('relevant_country').GetAdjective] peněz na lobbování pocítily prvky [SCOPE.gsInterestGroup('relevant_ig').GetName] příležitost obohatit se a posílit svou moc. Začaly se přibližovat k [SCOPE.sPoliticalLobby('relevant_lobby').GetName]." # todo: NEW TRANSLATION
+ fund_lobbies_events.5.f: "Malá část z nich si našla výmluvy. Ještě menší část si našla dobré výmluvy, eseje představující řetězce argumentů rozprostírající se na stovkách stran. Většina z nich to však neudělala. Tvrdili, že jejich volba byla ovlivněna přáteli, nebo zvěrstvy nepřátel [SCOPE.sCountry('relevant_country').GetNameNoFormatting], nebo jejich neomylným smyslem pro spravedlnost.\n\nAle proč tedy, ptali se jejich kritici, k této epifanii došli až nyní? Proč ne tehdy, když byly jejich pokladnice chudé a jediné, co měli, byly jejich zásady?\n\nNikdo z nich na to nedokázal odpovědět." # todo: NEW TRANSLATION
+ fund_lobbies_events.5.a: "Měli by se stydět." # todo: NEW TRANSLATION
+ fund_lobbies_events.5.b: "Je nejlepší předpokládat, že mají k tomu lepší důvod." # todo: NEW TRANSLATION
+ fund_lobbies_events.5.c: "Pokud se naskytne příležitost - využijte ji!" # todo: NEW TRANSLATION
+ modifier_donghak_founder: "Nebeské srdce" # todo: NEW TRANSLATION
+ modifier_donghak_founder_hunted: "Nebeské srdce" # todo: NEW TRANSLATION
+ modifier_donghak_petition_rejected: "Nespokojení rolníci" # todo: NEW TRANSLATION
+ modifier_donghak_petition_accepted: "Uspokojené hnutí Donghak" # todo: NEW TRANSLATION
+ modifier_donghak_movement: "Hnutí Donghak" # todo: NEW TRANSLATION
+ modifier_donghak_peasant_revolts: "Donghakské povstání" # todo: NEW TRANSLATION
+ modifier_donghak_peace_and_fellowship: "Spravedlnost a bratrství" # todo: NEW TRANSLATION
+ modifier_donghak_heaven_on_earth: "Ráj na zemi" # todo: NEW TRANSLATION
+ modifier_donghak_movement_betrayed: "Porušené sliby" # todo: NEW TRANSLATION
+ modifier_failed_korean_intervention: "Ponižující selhání v Koreji" # todo: NEW TRANSLATION
+ modifier_victory_in_korean_intervention: "Vítězství v Koreji" # todo: NEW TRANSLATION
+ modifier_empress_myeongseong: "Královna Min" # todo: NEW TRANSLATION
+ je_donghak_movement: "Hnutí Donghak" # todo: NEW TRANSLATION
+ je_donghak_movement_reason: "Donghak, neboli Východní učení, se začalo šířit mezi [GetPopType('peasants').GetName] v [ROOT.GetCountry.GetName] jako reakce na otevření země vnějšímu světu. Následovníci Donghak, často spjatí s [SCOPE.gsInterestGroup('donghak_ig').GetName], prosazují rovnost a práva pro všechny a odmítnutí cizího vlivu.\n\nInfrastruktura, kterou následovníci Donghak vytvořili, se rozšiřuje po celé zemi a může posloužit jako prostředek k rychlé organizaci povstání v budoucnu." # todo: NEW TRANSLATION
+ donghak_petition_complete_tt: "Dokončil #bold Gyojo Shinwon#! [concept_journal_entry]" # todo: NEW TRANSLATION
+ je_gyojo_shinwon: "Gyojo Shinwon" # todo: NEW TRANSLATION
+ je_gyojo_shinwon_reason: "Následovníci Donghak mezi [SCOPE.gsInterestGroup('donghak_ig').GetName] předložili vládě petici, v níž žádají toleranci doktríny Donghak, vypovězení cizinců a popravu zkorumpovaných členů [SCOPE.gsInterestGroup('yangban_ig').GetName].\n\nVláda, která slíbila vyslechnout požadavky hnutí, dočasně snížila sociální neklid ze strany jeho přívrženců, ale otočit se zády k petentům jistě povede k obnovené revoluční činnosti." # todo: NEW TRANSLATION
+ je_korean_rebellion: "Korejské povstání" # todo: NEW TRANSLATION
+ je_korean_rebellion_reason: "Povstání, které vypuklo napříč [SCOPE.sCountry('korea_scope').GetName], ohrožuje rovnováhu moci v zemi. Svržení [SCOPE.sCharacter('korea_ruler_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('korea_ruler_scope').GetFullName] jistě povede k nezávislosti [SCOPE.sCountry('korea_scope').GetNameNoFormatting] a vytvoří příležitosti pro evropské mocnosti získat vliv na poloostrově." # todo: NEW TRANSLATION
+ korean_ruler_retained_tt: "[SCOPE.sCharacter('korea_ruler_scope').GetFullName] zůstává [SCOPE.sCharacter('korea_ruler_scope').GetPrimaryRoleTitle] [SCOPE.sCountry('korea_scope').GetName]" # todo: NEW TRANSLATION
+ korean_ruler_deposed_tt: "Vláda [SCOPE.sCountry('korea_scope').GetName] byla sesazena [concept_revolution]" # todo: NEW TRANSLATION
+ japan_demands_korea_tt: "[SCOPE.sCountry('japan_scope').GetName] bude mít možnost získat #bold další vliv#! v [SCOPE.sCountry('korea_scope').GetName]" # todo: NEW TRANSLATION
+ je_korean_rebellion_government_victory: "Pro dosažení #b vládního#! vítězství:\n" # todo: NEW TRANSLATION
+ je_korean_rebellion_on_government_victory: "Při #b vládním#! vítězství:\n$EFFECT$" # todo: NEW TRANSLATION
+ je_korean_rebellion_rebel_victory: "Pro dosažení #b povstaleckého#! vítězství:\n" # todo: NEW TRANSLATION
+ je_korean_rebellion_on_rebel_victory: "Při #b povstaleckém#! vítězství:\n$EFFECT$" # todo: NEW TRANSLATION
+ korea_fail_condition_war_tt: "[SCOPE.sCountry('korea_rebellion_scope').GetName] je ve [concept_war] s [SCOPE.sCountry('korea_scope').GetName]" # todo: NEW TRANSLATION
+ korea_fail_condition_rebels_tt: "Nestanuli jsme na straně [SCOPE.sCountry('korea_rebellion_scope').GetName] ve jeho [concept_diplomatic_play] proti [SCOPE.sCountry('korea_scope').GetName]" # todo: NEW TRANSLATION
+ korea_fail_condition_gov_tt: "Nestanuli jsme na straně [SCOPE.sCountry('korea_scope').GetName] ve jeho [concept_diplomatic_play] proti [SCOPE.sCountry('korea_rebellion_scope').GetName]" # todo: NEW TRANSLATION
+ gg_korea.1.t: "Donghak" # todo: NEW TRANSLATION
+ gg_korea.1.d: "[GetPopType('peasants').GetName] inspirovaní filosofií Donghak se začali organizovat po celém [ROOT.GetCountry.GetName]. Jejich volání po sociální rovnosti, náboženské toleranci a vypuzení cizího vlivu je stále těžší ignorovat." # todo: NEW TRANSLATION
+ gg_korea.1.f: "Přecházejíce do roku Xinyou, přicházeli ke mně učenci ze všech stran a ptali se, \"S božským duchem sestupujícím, mistře, co to znamená?\"\n\nOdpověděl jsem, \"To obsahuje princip nevyčerpatelného návratu.\"\n\n\"Jak tedy nazveme tuto cestu?\"\n\n\"Je to Cesta Nebes.\"\n\n\"Je odlišná od Západní cesty?\"\n\n\"Západní učení má své odlišnosti, jako zaklínadla bez obsahu. Přesto je hnutí stejné, cesta jednotná, ale princip nikoli.\"" # todo: NEW TRANSLATION
+ gg_korea.1.a: "Hrozí další rolnické povstání?" # todo: NEW TRANSLATION
+ gg_korea_effect_tt: "Zatímco #v Hnutí Donghak#! je aktivní, [SCOPE.gsInterestGroup('donghak_ig').GetName] bude posílena a [Concept('concept_revolution','$concept_revolutions$')] představuje větší hrozbu pro naši zemi" # todo: NEW TRANSLATION
+ gg_korea.2.t: "Donghakské povstání" # todo: NEW TRANSLATION
+ gg_korea.2.d: "Nespokojenost mezi [SCOPE.gsInterestGroup('donghak_ig').GetName] vyústila v začátky otevřeného konfliktu. Napříč [ROOT.GetCountry.GetName] rolníci využili infrastrukturu Donghak k organizaci revoluce." # todo: NEW TRANSLATION
+ gg_korea.2.f: "Příkazy byly rozšířeny všem ve městě. Měli se co nejrychleji dostat do [ROOT.GetCountry.GetCapital.GetCityHubName], vyhnat cizince a zabít každého člena rodiny [SCOPE.sCharacter('gov_leader_scope').GetLastNameNoFormatting].\n\nMělo jít o milosrdný pochod, šetřící nevinné a jejich majetek, platící za své zásoby a prokazující všem svou věrnost a zbožnost. Bylo to co nejdále od chování vládních vojáků." # todo: NEW TRANSLATION
+ gg_korea.2.a: "Povolat vojsko a připravit se na bitvu." # todo: NEW TRANSLATION
+ gg_korea.3.t: "Východní učení" # todo: NEW TRANSLATION
+ gg_korea.3.d: "Nová doktrína, Donghak, se objevila v provincii [SCOPE.sState('choi_je_woo_state').GetName], prosazovaná [SCOPE.sCharacter('choi_je_woo_scope').GetFullName]. Volá po rovnosti pro všechny a zřízení ráje na Zemi." # todo: NEW TRANSLATION
+ gg_korea.3.f: "\"S vítězstvími a dobytím Západu se zdá úspěch nevyhnutelný, přesto přináší zkázu všeho, nářek nevyhnutelného pádu. Jak tedy zajistíme národ a přineseme lidem mír? Ach, v této době lidé nevědí o svém štěstí; slyšíce tato slova, někteří souhlasí, jiní nesouhlasí, diskutují v uličkách, strach vyplývá z nedostatku ctnosti.\"" # todo: NEW TRANSLATION
+ gg_korea.3.a: "Balzám na trápení lidu." # todo: NEW TRANSLATION
+ gg_korea.3.b: "Podvodník a hrozba pro svět." # todo: NEW TRANSLATION
+ gg_korea.4.ta: "Petice Samrye" # todo: NEW TRANSLATION
+ gg_korea.4.tb: "Petice [SCOPE.sState('petition_state').GetFarmHubName]" # todo: NEW TRANSLATION
+ gg_korea.4.d: "Věřící Donghak předložili vládě [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetLastName] seznam reforem. Patří mezi ně náboženská tolerance, vypovězení cizinců a poprava zkorumpovaných úředníků." # todo: NEW TRANSLATION
+ gg_korea.4.f: "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] se seznámil s následovníky Donghak skrze zprávy o jejich organizování na venkově a z početných malých petic a dopisů, které byly posílány jak [ROOT.GetCountry.GetRuler.GetHerselfHimself], tak [ROOT.GetCountry.GetRuler.GetHerHis] úředníkům. Vše mělo stejný ráz – prohlášení o nejvyšší loajalitě vůči [ROOT.GetCountry.GetRuler.GetHerHim], následované vysvětlením jejich požadavků.\n\nNebyla to první svého druhu, zamyslel se [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle], ale rozhodně nejvíc viditelná. Jeho možnosti byly dvě. Odstřihnout nově organizované rolnictvo, nebo si popudit vlastní dvůr?" # todo: NEW TRANSLATION
+ gg_korea.4.a: "Hrozit odvetou, pokud se nerozptýlí." # todo: NEW TRANSLATION
+ gg_korea.4.b: "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] vyslechne tuto petici." # todo: NEW TRANSLATION
+ gg_korea.5.t: "Nebe díky trpělivosti" # todo: NEW TRANSLATION
+ gg_korea.5.d: "Pečlivými reformami a spoluprací s [SCOPE.gsInterestGroup('donghak_ig').GetName] se nám podařilo uklidnit hnutí Donghak. [ROOT.GetCountry.GetName] zůstane izolované od světa, ale učiní tak v harmonii." # todo: NEW TRANSLATION
+ gg_korea.5.f: "Poslední lodě opustily přístavy a brány byly zavřeny. Kdesi nad mořem nějaký evropský obchodník jistě upadl v šok a posílal dopisy každému vládnímu činiteli, kterého znal. Západoevropané se vrátí – to bylo jisté, a je stejně jisté, že se vrátí ozbrojení.\n\nBylo na lidech [ROOT.GetCountry.GetCapital.GetPortHubName] něco nového, jakési neviditelné napětí, které je provázelo v každodenním životě. Už se nebáli lodí a děl a už se navzájem nepovažovali za největší hrozbu. Až se Západoevropané vrátí, nebude tam vnitřní rozkol, který by šlo využít – a jaká expedice si poradí s rezervní armádou milionů?" # todo: NEW TRANSLATION
+ gg_korea.5.a: "Prosadili jsme spravedlnost a bratrství." # todo: NEW TRANSLATION
+ gg_korea.5.b: "Postavíme ráj mezi horami." # todo: NEW TRANSLATION
+ gg_korea.6.t: "Nechat na pospas" # todo: NEW TRANSLATION
+ gg_korea.6.d: "Po nepřiměřeně dlouhém čekání na slibované reformy došla trpělivost hnutí Donghak. Postoj [SCOPE.gsInterestGroup('donghak_ig').GetName] je nyní zrazený a klíčí v něm povstání." # todo: NEW TRANSLATION
+ gg_korea.6.f: "Ztratili dalšího poslové. Přes naděje jeho rodiny inspektor předpokládal, že ho už nikdy neuvidí. Výběrčí daní, sčítací komisaři, poslové, policisté – všichni začali v této oblasti mizet, pokud se příliš vzdálili od silnic. Nebývalo to vždy se všemi, ale bylo to dost – atmosféra v posádkách se změnila z chladné lhostejnosti na teror, a to se zdálo trvalé.\n\nMísto jednotného státu se [ROOT.GetCountry.GetNameNoFormatting] začala jevit jako souostroví měst spojených nejtenčím vláknem, obklopené obrovským a hrozným mořem opovržení." # todo: NEW TRANSLATION
+ gg_korea.6.a: "Musíme žít s následky." # todo: NEW TRANSLATION
+ gg_korea.7.ta: "Donghakské povstání" # todo: NEW TRANSLATION
+ gg_korea.7.tb: "Povstání v [SCOPE.sState('korea_rebellion_capital').GetCityHubName]" # todo: NEW TRANSLATION
+ gg_korea.7.d.japan: "Povstání explodovalo napříč [SCOPE.sCountry('korea_scope').GetName], ohrožujíc vládu [SCOPE.sCountry('korea_scope').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('korea_scope').GetRuler.GetFullName]. Povstání představuje vynikající příležitost zvýšit náš vliv v [SCOPE.sCountry('korea_scope').GetNameNoFormatting] na úkor [SCOPE.sCountry('china_scope').GetName]." # todo: NEW TRANSLATION
+ gg_korea.7.d.china: "Povstání explodovalo napříč [SCOPE.sCountry('korea_scope').GetName], ohrožujíc vládu loajálního [SCOPE.sCountry('korea_scope').GetRuler.GetPrimaryRoleTitle]. Pokud povstání svrhne vládu, [SCOPE.sCountry('korea_scope').GetNameNoFormatting] se jistě stane bezbrannou vůči cizím mocnostem." # todo: NEW TRANSLATION
+ gg_korea.7.f: "Jakmile telegraf dorazil, celá místnost se vzbudila k činnosti. Zpráva z [SCOPE.sCountry('korea_scope').GetNameNoFormatting] byla dlouhá a bolestná - za jiných okolností by ti, kdo ji četli, pocítili, že jim ubývá vzduchu. Teď už ne. Věděli, že nejsou jediní, kdo ji čte, a že na druhé straně Východního moře se jejich rivalové připravují stejně. Ať po zemi, či po moři, šlo nyní o to, kdo mobilizuje rychleji." # todo: NEW TRANSLATION
+ gg_korea.7.a: "Je třeba udržet [SCOPE.sCountry('korea_scope').GetAdjective] vládu." # todo: NEW TRANSLATION
+ gg_korea.7.b: "Vítězství povstalců by napomohlo našim zájmům." # todo: NEW TRANSLATION
+ gg_korea.7.c: "Nemáme o to zájem." # todo: NEW TRANSLATION
+ gg_korea.8.t: "Příležitosti v [SCOPE.sCountry('korea_scope').GetName]" # todo: NEW TRANSLATION
+ gg_korea.8.d: "Naše porážka povstání v [SCOPE.sCountry('korea_scope').GetNameNoFormatting] nám poskytla možnost diktovat příznivé poválečné uspořádání. Nárokovat, aby [SCOPE.sCountry('china_scope').GetName] oficiálně uznala nezávislost [SCOPE.sCountry('korea_scope').GetNameNoFormatting], nám umožní efektivněji konsolidovat vliv v regionu." # todo: NEW TRANSLATION
+ gg_korea.8.f: "\"Yangban jsou z velké části beznadějní, ale někteří ministři jsou vnímaví k modernějším směrům.\"\n\n\"Kdo?\"\n\n\"[SCOPE.sCharacter('industrialists_leader_scope').GetLastNameNoFormatting], [SCOPE.sCharacter('intelligentsia_leader_scope').GetLastNameNoFormatting], možná [SCOPE.sCharacter('pb_leader_scope').GetLastNameNoFormatting]. Máme spoustu kandidátů do nouzové vlády. Budou nadšení, že dostanou šanci prosadit, co chtějí.\"" # todo: NEW TRANSLATION
+ gg_korea.8.a: "Poslat požadavky." # todo: NEW TRANSLATION
+ gg_korea.8.b: "Neměli bychom ohrozit náš vztah s [SCOPE.sCountry('china_scope').GetName]." # todo: NEW TRANSLATION
+ china_demanded_to_cede_korea_tt: "[SCOPE.sCountry('china_scope').GetName] bude nucena postoupit #v $KOR$#!, nebo čelit [concept_war]" # todo: NEW TRANSLATION
+ gg_korea.9.t: "[SCOPE.sCountry('japan_scope').GetName] požaduje stažení z [SCOPE.sCountry('korea_scope').GetName]" # todo: NEW TRANSLATION
+ gg_korea.9.d: "Vláda [SCOPE.sCountry('japan_scope').GetAdjectiveNoFormatting] nám poslala seznam požadavků, z nichž hlavním je naše stažení z [SCOPE.sCountry('korea_scope').GetNameNoFormatting]. Jejich požadavky podpořily zbývající síly na korejském poloostrově, které odmítly stáhnout se po porážce povstání." # todo: NEW TRANSLATION
+ gg_korea.9.f: "Tiskař pohlížel na edikt s jistým děsem. Představoval se mu jako valící se mrak dýmu, každý řádek temnější než ten předchozí. Události gradovaly do temného crescenda, chaos se stočil v povstání. [SCOPE.sCountry('japan_scope').GetAdjectiveNoFormatting] byli tvrdě odsouzeni, jejich přestupky byly vypsány jako pušky v popravčím čtverci.\n\n\"Těžko racionálně vysvětlitelné\", \"nevyprovokované\", \"nedostatečné zdůvodnění\". Trýznivá eufemismy rozrušené vlády. Jedna, která, pokud náhle nezmění kurz, nevyhnutelně směřovala k válce." # todo: NEW TRANSLATION
+ gg_korea.9.a: "Korea je zátěží, které bychom se rádi zbavili." # todo: NEW TRANSLATION
+ gg_korea.9.b: "Nepřijmeme další cizí ústupek." # todo: NEW TRANSLATION
+ korea_monarchy.1.t: "Nemocný král" # todo: NEW TRANSLATION
+ korea_monarchy.1.d: "Navzdory svému mládí byl [SCOPE.sCharacter('heonjong_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('heonjong_scope').GetFullName] zasažen těžkou nemocí. [SCOPE.sCharacter('heonjong_scope').GetHerHis|U] rychlé zhoršení vyvolalo obavy, že [SCOPE.sCharacter('heonjong_scope').GetSheHe] nemá už dlouho co dělat na tomto světě." # todo: NEW TRANSLATION
+ korea_monarchy.1.f: "Nebyla to první nemoc, které čelil, ani pátá. Stav krále začal od chvíle, kdy nastoupil na trůn, zrcadlit stav země - jak ji sužovaly povodně a monzuny, tak on chorobami, nebo zprávami o korupci a velezradě na dvoře. Někdy se bál, že nezanechá žádné dědictví, že vláda strávená pouze bojem s krizemi bude jeho nástupci připadat jako plýtvání. Možná se mýlil, pomyslel si, neboť možná nebude mít žádné nástupce." # todo: NEW TRANSLATION
+ korea_monarchy.1.a: "Linie Jeongjo končí." # todo: NEW TRANSLATION
+ korea_monarchy.1.b: "[SCOPE.sCharacter('heonjong_scope').GetHerHis|U] lékaři musí vědět o nějaké léčbě." # todo: NEW TRANSLATION
+ korea_monarchy.2.t: "Prázdný dům" # todo: NEW TRANSLATION
+ korea_monarchy.2.d: "Úmrtí všech mužských dětí [SCOPE.sCharacter('cheoljong_scope').GetFullName] a nedostatek blízkých příbuzných, kteří by mohli nárokovat trůn, zanechaly nástupnictví nemocného [SCOPE.sCharacter('cheoljong_scope').GetPrimaryRoleTitle] nejisté. Klán Andong Kim nominoval [SCOPE.sCharacter('gojong_scope').GetFullName] jako nástupce [SCOPE.sCharacter('cheoljong_scope').GetHerHis]." # todo: NEW TRANSLATION
+ korea_monarchy.2.f: "\"Opět upoután na lůžko, bez dědice. Je ještě nějaká naděje?\"\n\n\"Dělá, co může, ale naše naděje mohou být marné. Slyšela jsi o události před pár dny, s magistrátem?\"\n\n\"Ne, pověz mi.\"\n\n\"Musel králi připomenout, kdo je, a prosil ho, aby zachoval svou vládu. Nejprve jsem byl naštvaný - ale teď mu to nemohu vyčítat.\"" # todo: NEW TRANSLATION
+ korea_monarchy.2.a: "Ród Yi přetrvá." # todo: NEW TRANSLATION
+ korea_monarchy.3.t: "Královna Min" # todo: NEW TRANSLATION
+ korea_monarchy.3.d: "[SCOPE.sCharacter('myeongseong_scope').GetFullName], politicky průbojná úřední manželka [SCOPE.sCharacter('gojong_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('gojong_scope').GetFullName], si vybudovala pevné postavení na [ROOT.GetCountry.GetAdjective] dvoře. Její patronát silně prospěje [SCOPE.sCharacter('myeongseong_scope').GetInterestGroup.GetName]." # todo: NEW TRANSLATION
+ korea_monarchy.3.f: "\"Při každé příležitosti jsem byl ohromen půvabem a milým vystupováním královny, její pozornou laskavostí, výjimečným intelektem a silou, a její pozoruhodnou schopností konverzace i přes prostředníka. Není divu, že měla výjimečný politický vliv a vliv na [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] a mnohé další. Byla obklopena nepřáteli, všichni hořcí proti ní, protože díky svému talentu a síle dosadila členy své rodiny téměř do všech hlavních úřadů státu.\n\nJejí život byl bojem. Bojovala se vším svým půvabem, mazaností a moudrostí o moc, o důstojnost a bezpečí svého muže a syna a za pád těch, kteří jí odporovali.\"" # todo: NEW TRANSLATION
+ korea_monarchy.3.a: "Její patronát bude zásadní pro modernizaci." # todo: NEW TRANSLATION
+ korea_monarchy.3.b: "Měla by se soustředit na své dvorské povinnosti." # todo: NEW TRANSLATION
+ heonjong_recovers_tt: "[SCOPE.sCharacter('heonjong_scope').GetFullName] se zotavuje ze [SCOPE.sCharacter('heonjong_scope').GetHerHis] nemoci" # todo: NEW TRANSLATION
+ support_for_afghan_claimant: "podpora afghánského uchazeče" # todo: NEW TRANSLATION
+ overlord_support_for_afghan_claimant: "#bold suzerén#! podporuje afghánského uchazeče" # todo: NEW TRANSLATION
+ defending_against_great_game_rival: "postavit se #bold Great Game#! soupeři" # todo: NEW TRANSLATION
+ committed_to_upholding_korean_government: "podpora #v Korean#! vlády" # todo: NEW TRANSLATION
+ committed_to_overthrowing_korean_government: "podpora #v Korean#! povstalců" # todo: NEW TRANSLATION
+ defending_korea: "postavit se zahraničnímu vlivu v #v Korea#!" # todo: NEW TRANSLATION
+ RUSSIA_WANTS_INFLUENCE_IN_MANCHURIA: "usiluje o vliv v #bold Manchuria#!" # todo: NEW TRANSLATION
+ supporting_kenesary: "podpora #bold Kazakh#! nezávislosti" # todo: NEW TRANSLATION

@@ -231,7 +231,7 @@
  ig_leaders.2.c: "Klid, ponechte [SCOPE.gsInterestGroup('reckless_ig').GetName] ve vedení."
  ig_leaders.2.b.tt: "[SCOPE.sCharacter('reckless_leader').GetFullName] odstoupí."
  ig_leaders.3.t: "Velký plán se vyplatil"
- ig_leaders.3.d: "[SCOPE.sCharacter('meticulous_leader').GetFullName], metodický vůdce [SCOPE.gsInterestGroup('meticulous_ig').GetName], pilně pracoval na zvýšení kreditu země. Konečně se všechna [SCOPE.sCharacter('meticulous_leader').GetHerHis] práce vyplatila, ale pro [SCOPE.gsInterestGroup('meticulous_ig').GetName], nebo pro [ROOT.GetCountry.GetAltAdjective('A')]?" # todo: COUNTRY CASE
+ ig_leaders.3.d: "[SCOPE.sCharacter('meticulous_leader').GetFullName], metodický vůdce [SCOPE.gsInterestGroup('meticulous_ig').GetName], pilně pracoval na zvýšení kreditu země. Konečně se všechna [SCOPE.sCharacter('meticulous_leader').GetHerHis] práce vyplatila, ale pro [SCOPE.gsInterestGroup('meticulous_ig').GetName], nebo pro [ROOT.GetCountry.GetAltAdjective('A')]?" # todo: CONCEPT CASE
  ig_leaders.3.f: "[SCOPE.sCharacter('meticulous_leader').GetWomanMan] je svými činy tak potěšen, že [SCOPE.sCharacter('meticulous_leader').GetSheHe] vypadá, jako by měl co nevidět vzplanout zadržovanými emocemi. Jak okouzlující. Z profesionálního hlediska to však není zrovna nejchytřejší tah.\n\n„Ano! Přesně podle plánu!“"
  ig_leaders.3.a: "[SCOPE.gsInterestGroup('meticulous_ig').GetNameNoFormatting] sklidí odměnu."
  ig_leaders.3.b: "[ROOT.GetCountry.GetNameNoFormatting] sklidí odměnu."
@@ -241,7 +241,7 @@
  ig_leaders.4.d: "Vládnoucí [SCOPE.gsInterestGroup('charismatic_ig').GetName], vedená charismatickým [SCOPE.sCharacter('charismatic_leader').GetFullName], zahájila velké propagační turné. Rozhodnutí, zda zaměřit úsilí doma, nebo v zahraničí, však bylo ponecháno na poslední chvíli a není jasné, zda [SCOPE.gsInterestGroup('charismatic_ig').GetName] udělá více pro sebe, nebo pro zemi jako celek."
  ig_leaders.4.f: "„Na troše sebepropagace není nic špatného, pokud je to pro dobrou věc.“\n\n„A jak byste určil povahu té věci? Podle toho, jak vám dozrává měšec?“\n\n„Ale podle její samé podstaty! Vždyť i věc otrhanců může mít na stát blahodárný účinek, pokud má srdce na správném místě.“"
  ig_leaders.4.a: "Turné by mělo získat podporu pro [SCOPE.gsInterestGroup('charismatic_ig').GetName]."
- ig_leaders.4.b: "Turné by mělo získat podporu pro [ROOT.GetCountry.GetAltAdjective('A')]." # todo: COUNTRY CASE
+ ig_leaders.4.b: "Turné by mělo získat podporu pro [ROOT.GetCountry.GetAltAdjective('A')]." # todo: CONCEPT CASE
  ig_leaders.5.t: "Buď já, nebo oni"
  ig_leaders.5.d: "[SCOPE.sCharacter('smug_leader').GetFullName], vůdce vládnoucí [SCOPE.gsInterestGroup('smug_ig').GetName], už má dost kompromisů se svými koaličními partnery. [SCOPE.sCharacter('meticulous_leader').GetSheHe|U] požaduje, aby buď [SCOPE.sCharacter('smug_leader').GetHerHis] spolupracovníci následovali [SCOPE.sCharacter('smug_leader').GetHerHis] rozkazy, nebo [SCOPE.gsInterestGroup('smug_ig').GetName] nikdy neschválí jejich změny."
  ig_leaders.5.f: "„K tomu přece vůdci jsou, ne? Já vedu, vy následujete. Mně to zní docela jednoduše. Kdyby chtěli vést, mohli být vůdci sami, ale asi si nikdo jiný nemyslel, že by to dokázali.\n\nBuď bude po mém, nebo můžete jít!“"
@@ -263,8 +263,8 @@
  neighbor_events.1.a: "Navzdory rozdílům si musíme vážit společných hodnot."
  neighbor_events.1.b: "Jsme nejprve [ROOT.GetCountry.GetAdjectiveNoFormatting] a teprve potom [ROOT.GetCountry.GetStateReligion.GetName]!"
  notification_neighbor_events_1_tooltip: "#header $notification_neighbor_events_1_name$#!\n$TOOLTIP_DELIMITER$\n$notification_neighbor_events_1_desc$"
- notification_neighbor_events_1_name: " [Concept('concept_relations','Vztahy')] s [SCOPE.sC('originator').GetName ] se zlepšily" # todo: CONCEPT CASE
- notification_neighbor_events_1_desc: "[SCOPE.sC('originator').GetName] zlepšil naše [Concept('concept_relations','vztahy')] tím, že se odvolal na naši společnou víru [SCOPE.sC('originator').GetStateReligion.GetName]." # todo: CONCEPT CASE
+ notification_neighbor_events_1_name: " [Concept('concept_relations','Vztahy')] s [SCOPE.sC('originator').GetName ] se zlepšily"
+ notification_neighbor_events_1_desc: "[SCOPE.sC('originator').GetName] zlepšil naše [Concept('concept_relations','vztahy')] tím, že se odvolal na naši společnou víru [SCOPE.sC('originator').GetStateReligion.GetName]."
  neighbor_events.2.t: "Chceš-li mír"
  neighbor_events.2.d: "[SCOPE.gsInterestGroup('armed_forces_ig').GetName] kvůli našim špatným vztahům navrhují tvrdší zahraniční politiku vůči [SCOPE.sC('neighbor_country').GetName]."
  neighbor_events.2.f: "„Jestli je pravda jen polovina toho, co říkáš, nechtěla bych tě mít poblíž té hranice,“ řekla, „ale nemyslím si, že je.“\n„Matko, vždycky jsi říkala, že [SCOPE.sC('neighbor_country').GetAdjectiveNoFormatting] nelze věřit. Proč bys jim věřila, že budou respektovat naše hranice? Nikdo nechce, aby to dělal jeho syn, protože ví, že je to nebezpečné. Právě proto to musíme udělat.“"
@@ -290,7 +290,7 @@
  neighbor_events.6.d: "Kniha odmítnutá k vydání v [SCOPE.sC('neighbor_country').GetName] kvůli tamním restriktivním zákonům byla přijata [ROOT.GetCountry.GetAdjectiveNoFormatting] nakladatelem."
  neighbor_events.6.f: "Tiskařský učeň zvedl neznámé písmo. Jeho mistr si všiml jeho zvědavosti a kývl k němu.\n„To je pro [SCOPE.sC('neighbor_country').GetAdjectiveNoFormatting] knihu, kterou tiskneme.“\n„Proč tady tiskneme [SCOPE.sC('neighbor_country').GetAdjectiveNoFormatting] knihy?“\nTiskař pokrčil rameny.\n„Je to svobodná země.“"
  neighbor_events.6.a: "Nakladatel by měl projevit více taktu a respektovat naše sousedy."
- neighbor_events.6.b: "Podle zákonů [ROOT.GetCountry.GetAltAdjective('G')] mají právo ji vytisknout." # todo: COUNTRY CASE
+ neighbor_events.6.b: "Podle zákonů [ROOT.GetCountry.GetName] mají právo ji vytisknout."
  neighbor_events.7.t: "Na druhé straně plotu"
  neighbor_events.7.d: "Lidé si stěžují na rozdíl v životní úrovni mezi námi a našimi sousedy v [SCOPE.sC('neighbor_country').GetName]."
  neighbor_events.7.f: "Když se dveře obchodu zavřely, vyměnili si významný pohled.\n\n„Ani si nevšimla, že jsi jí špatně vrátil.“\n\n„Proč myslíš, že to dělám? Její sorta si to může dovolit. Ať mě vezme čert, jestli si [SCOPE.sC('neighbor_country').GetAdjectiveNoFormatting] myslí, že sem mohou přijít, okázale dávat najevo své bohatství a čekat, že to budeme prostě trpět.“"
@@ -471,6 +471,19 @@
  civil_war_events.1.f: "„Duše národa je rozpolcena! Hranice mezi našimi zeměmi je krutým řezem přímo do srdce našeho lidu. Všem je zřejmé, že nyní nastal čas sjednocení!“"
  civil_war_events.1.a: "Anektujte zemi"
  civil_war_events.1.b: "Nechte je být"
+ treaty_port_inheritance_events.1.t: "Děděná koncese" # todo: NEW TRANSLATION
+ treaty_port_inheritance_events.1.d: "Poté, co byl starý režim odstraněn, přešly do naší správy přístavy, které dříve udělil [SCOPE.sC('target_country').GetName]. Jejich obchodníci stále vyvěšují cizí vlajku nad našimi přístavy na základě dohod, které jsme nikdy nepodepsali. Můžeme ctít to, co jsme zdědili, nebo cizince vyhnat a znovu získat tyto přístavy pro [ROOT.GetCountry.GetName]." # todo: NEW TRANSLATION
+ treaty_port_inheritance_events.1.f: ""Inkoust dávno zaschnul, ještě než jsme se chopili moci, přesto jsou řetězy, které vytvořil, nyní naše — nosit je nebo je zlomit."" # todo: NEW TRANSLATION
+ treaty_port_inheritance_events.1.a: "Dodržet dohody" # todo: NEW TRANSLATION
+ treaty_port_inheritance_events.1.b: "Znovu získat naše přístavy" # todo: NEW TRANSLATION
+ treaty_port_inheritance_events.2.t: "Koncesím vyhověno" # todo: NEW TRANSLATION
+ treaty_port_inheritance_events.2.d: "V zemích kolem našich koncesních přístavů došlo k převratu. Po pádu předchozího režimu se [SCOPE.sC('new_host').GetName] rozhodlo ctít dohody uzavřené těmi, kdo byli před ním. Naši obchodníci mohou nadále vyvěšovat naši vlajku nad jejich přístavy." # todo: NEW TRANSLATION
+ treaty_port_inheritance_events.2.f: ""Noví pánové, přesto ta samá stará dohoda. Jak příjemně rozumné."" # todo: NEW TRANSLATION
+ treaty_port_inheritance_events.2.a: "Moudré rozhodnutí" # todo: NEW TRANSLATION
+ treaty_port_inheritance_events.3.t: "Zrušení koncesí" # todo: NEW TRANSLATION
+ treaty_port_inheritance_events.3.d: "V zemích kolem našich koncesních přístavů došlo k převratu. Po pádu předchozího režimu [SCOPE.sC('new_host').GetName] vypověděl dohody uzavřené těmi, kdo byli před ním. Naše přístavy byly zabrány a naši obchodníci vyhozeni do ulic. Tato urážka nebude brzy zapomenuta." # todo: NEW TRANSLATION
+ treaty_port_inheritance_events.3.f: ""Chtějí nám odepřít to, co bylo slíbeno těmi, kteří tu byli dříve. Ať si pamatují, že naše děla mají dlouhou paměť."" # todo: NEW TRANSLATION
+ treaty_port_inheritance_events.3.a: "Neslýchané!" # todo: NEW TRANSLATION
  diplomatic_events.1.t: "Porušení suverenity"
  diplomatic_events.1.d: "[SCOPE.sC('initiator').GetName] zaslal [SCOPE.sC('target_country').GetName] ultimátum požadující, aby se k nim připojili ve válce [SCOPE.sW('war').GetName|v].\nOdmítli a postavili se na stranu [SCOPE.sW('war').GetLeaderOfOppositeSide( SCOPE.sC('initiator') ).GetName]!\nCo uděláme?"
  diplomatic_events.1.f: "Kouř z krbu stačí k tomu, aby zbarvil okna kanceláře bledým smogem, když se už blíží západ slunce. Pouliční lampy se rozsvěcují a dva muži si vymění znepokojený pohled.\n\n„Lampy zhasínají po celém světě a my je za svého života už znovu rozsvícené nespatříme.“"
@@ -601,7 +614,7 @@
  expedition_events.240.a: "Skvělý nápad."
  expedition_events.240.b: "Na to není čas."
  expedition_events.250.t: "Spatřena hora"
- expedition_events.250.d: "Jeden člen expedice navrhl, abychom si udělali odbočku, vystoupili na horu a zabrali ji jménem [ROOT.GetCountry.GetAltAdjective('I')]." # todo: COUNTRY CASE
+ expedition_events.250.d: "Jeden člen expedice navrhl, abychom si udělali odbočku, vystoupili na horu a zabrali ji jménem [ROOT.GetCountry.GetName]."
  expedition_events.250.f: "„Jeden z členů expedice upírá oči na horu. „Je to dobré riziko, příteli,“ říká, „myslím, že tuhle si ještě nikdo nenárokoval, chápete, představte si, jak by nám doma zaplatili - to všechno za tuhle bezvýznamnou skálu.“ Sníh klouže po úbočí hory, rozpuštěný jako vlákna šedé bavlny.“"
  expedition_events.250.a: "Výborný nápad"
  expedition_events.250.b: "Nemůžeme si dovolit ztrácet čas."
@@ -611,7 +624,7 @@
  expedition_events.251.f: "„Měli jsme vědět, že tu nebudeme první.“\n\n„U vás všech cítím opakující se motiv. Vy a vaši lidé jdete na západ v domnění, že jste našli něco velkolepého, jen abyste zjistili, že tam někdo jiný dorazil první.“\n\n„Jestli je to další přednáška o tom, jak se dějiny opakují, pošlu vás nahoru, abyste tu horu zabral. Sám. S ohnutou vidličkou. To jsme ještě nezkoušeli, že ne?“"
  expedition_events.251.a: "Politováníhodné."
  expedition_events.252.t: "Hora nárokována"
- expedition_events.252.d: "Expedice zdolala horu a nárokovala ji jménem [ROOT.GetCountry.GetAltAdjective('I')]. Také se rozhodli pojmenovat ji „Mount [SCOPE.sCharacter('expedition_leader').GetLastName]“." # todo: COUNTRY CASE
+ expedition_events.252.d: "Expedice zdolala horu a nárokovala ji jménem [ROOT.GetCountry.GetName]. Také se rozhodli pojmenovat ji „Mount [SCOPE.sCharacter('expedition_leader').GetLastName]“."
  expedition_events.252.f: "S jedním posledním vypětím se [SCOPE.sCharacter('expedition_leader').GetFullNameNoFormatting] přehoupl přes okraj posledního útesu. Když [SCOPE.sCharacter('expedition_leader').GetSheHe] narovnal postoj i zasněžené šaty, za nimi prorazilo první světlo nového dne. Hrdinské přivítání na západě a hora nárokována. A jako třešnička na dortu vlajka [ROOT.GetCountry.GetAdjectiveNoFormatting], kterou přinesl mladší člen expedice."
  expedition_events.252.a: "Výborně."
  expedition_events.253.t: "Potíže na úbočí"
@@ -676,13 +689,13 @@
  ig_revolutions.1.b: "Nedáme jim nic než chladnou ocel!"
  ig_revolutions.2.t: "[SCOPE.gsInterestGroup('ig_lo_on_the_edge').GetName] mají požadavky!"
  ig_revolutions.2.d: "[SCOPE.gsInterestGroup('ig_lo_on_the_edge').GetName] stojí na pokraji vzpoury a hrozí, že se přidají k revoluci, pokud nebudou splněny určité požadavky."
- ig_revolutions.2.f: "„Vláda nad [ROOT.GetCountry.GetAltAdjectiveNoFormatting('I')] proklouzává mezi prsty této slabé a netečné vlády. Někdo ji musí získat zpět. Víme, jak vládnout, ale pokud nedáte na naše rady, věc je ztracena.“" # todo: COUNTRY CASE
+ ig_revolutions.2.f: "„Vláda nad [ROOT.GetCountry.GetAltAdjectiveNoFormatting('I')] proklouzává mezi prsty této slabé a netečné vlády. Někdo ji musí získat zpět. Víme, jak vládnout, ale pokud nedáte na naše rady, věc je ztracena.“" # todo: CONCEPT CASE
  ig_revolutions.2.a: "Ať už uspokojí jejich takzvanou „důstojnost“ cokoli, dejte jim to."
  ig_revolutions.2.b: "Směšné! Nemají právo o cokoli žádat."
  ig_revolutions.2.c: "Důstojní mohou být v poutech."
  ig_revolutions.3.t: "[SCOPE.gsInterestGroup('ig_rf_on_the_edge').GetName] rozsévají svár!"
  ig_revolutions.3.d: "[SCOPE.gsInterestGroup('ig_rf_on_the_edge').GetName] zuří na vládu a zdá se, že se mohou přidat k současné revoluci, pokud je nedokážeme uchlácholit."
- ig_revolutions.3.f: "„My lépe než kdokoli jiný známe cenu války, zpustošená vypálená pole a vyrabované chalupy. Nechopili bychom se zbraní, kdybychom neměli jinou možnost. Nepoužívejte to jako záminku ke zkoušení naší trpělivosti - bez nás [ROOT.GetCountry.GetAltAdjectiveNoFormatting('A')] vyhladoví.“" # todo: COUNTRY CASE
+ ig_revolutions.3.f: "„My lépe než kdokoli jiný známe cenu války, zpustošená vypálená pole a vyrabované chalupy. Nechopili bychom se zbraní, kdybychom neměli jinou možnost. Nepoužívejte to jako záminku ke zkoušení naší trpělivosti - bez nás [ROOT.GetCountry.GetNameNoFormatting] vyhladoví.“"
  ig_revolutions.3.a: "Doufejme, že nynější ústupky mohou být semenem budoucího míru."
  ig_revolutions.3.b: "Od nás nedostanou nic!"
  ig_revolutions.3.c: "Když sejí vítr, ať sklidí vichřici!"
@@ -700,7 +713,7 @@
  ig_revolutions.5.c: "Myslím, že nastal čas, aby naši chlapci v modrém sloužili zemi."
  ig_revolutions.6.t: "[SCOPE.gsInterestGroup('ig_in_on_the_edge').GetName] se bouří!"
  ig_revolutions.6.d: "Nespokojené konsorcium [SCOPE.gsInterestGroup('ig_in_on_the_edge').GetName], rozzlobené na vládu, požaduje „odškodnění“. Pokud odmítneme, hrozí, že spojí svůj osud s revolucí."
- ig_revolutions.6.f: "„Povstání by bylo nezdarem, zastavením [ROOT.GetCountry.GetAltAdjectiveNoFormatting('I')] na cestě k moderní zemi, ale možná nevyhnutelným. Pokud má dojít k válce, rozhodně by bylo lepší, aby byla rychlá. Dokázali byste ji udělat rychlou?“" # todo: COUNTRY CASE
+ ig_revolutions.6.f: "„Povstání by bylo nezdarem, zastavením [ROOT.GetCountry.GetNameNoFormatting] na cestě k moderní zemi, ale možná nevyhnutelným. Pokud má dojít k válce, rozhodně by bylo lepší, aby byla rychlá. Dokázali byste ji udělat rychlou?“"
  ig_revolutions.6.a: "Přijměme tuto dohodu."
  ig_revolutions.6.b: "Odmítněme - jejich cena je příliš vysoká."
  ig_revolutions.6.c: "Jediné, co dostanou, je čas ve vězení."

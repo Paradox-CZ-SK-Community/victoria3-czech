@@ -1,34 +1,34 @@
 ﻿l_polish:
- TRIGGER_ANY_STATE_IN_GEOGRAPHIC_REGION: "Libovolný [Concept('concept_state','stát')|l] v [GeographicRegion.GetName]:" # todo: CONCEPT CASE
- TRIGGER_ANY_STATE_IN_GEOGRAPHIC_REGION_NOT: "Žádný [Concept('concept_state','stát')|l] v [GeographicRegion.GetName]:" # todo: CONCEPT CASE
- TRIGGER_ANY_STATE_IN_GEOGRAPHIC_REGION_ALL: "Všechny [Concept('concept_state','státy')|l] v [GeographicRegion.GetName]:" # todo: CONCEPT CASE
- TRIGGER_ANY_STATE_IN_GEOGRAPHIC_REGION_ALL_NOT: "Žádné [Concept('concept_state','státy')|l] v [GeographicRegion.GetName]:" # todo: CONCEPT CASE
- TRIGGER_ANY_STATE_IN_GEOGRAPHIC_REGION_COUNT: "$PARAMETERS$ $FILTER$[Concept('concept_state','Stát')|l] v [GeographicRegion.GetName]:" # todo: CONCEPT CASE
- TRIGGER_ANY_STATE_IN_GEOGRAPHIC_REGION_PERCENT: "$PARAMETERS$ z $FILTER$[Concept('concept_state','státu')|l] v [GeographicRegion.GetName]:" # todo: CONCEPT CASE
- TRIGGER_ANY_STATE_REGION_IN_GEOGRAPHIC_REGION: "Libovolný [Concept('concept_state_region','státní oblast')|l] v [GeographicRegion.GetName]:" # todo: CONCEPT CASE
- TRIGGER_ANY_STATE_REGION_IN_GEOGRAPHIC_REGION_NOT: "Žádný [Concept('concept_state_region','státní oblast')|l] v [GeographicRegion.GetName]:" # todo: CONCEPT CASE
- TRIGGER_ANY_STATE_REGION_IN_GEOGRAPHIC_REGION_ALL: "Všechny [Concept('concept_state_region','státní oblast')|l] v [GeographicRegion.GetName]:" # todo: CONCEPT CASE
- TRIGGER_ANY_STATE_REGION_IN_GEOGRAPHIC_REGION_ALL_NOT: "Žádné [Concept('concept_state_region','státní oblasti')|l] v [GeographicRegion.GetName]:" # todo: CONCEPT CASE
- TRIGGER_ANY_STATE_REGION_IN_GEOGRAPHIC_REGION_COUNT: "$PARAMETERS$ $FILTER$[Concept('concept_state_region','Státní oblast')|l] v [GeographicRegion.GetName]:" # todo: CONCEPT CASE
- TRIGGER_ANY_STATE_REGION_IN_GEOGRAPHIC_REGION_PERCENT: "$PARAMETERS$ z $FILTER$[Concept('concept_state_region','státní oblasti')|l] v [GeographicRegion.GetName]:" # todo: CONCEPT CASE
- TRIGGER_ANY_STRATEGIC_REGION_IN_GEOGRAPHIC_REGION: "Libovolný [Concept('concept_strategic_region','strategický region')|l] v [GeographicRegion.GetName]:" # todo: CONCEPT CASE
- TRIGGER_ANY_STRATEGIC_REGION_IN_GEOGRAPHIC_REGION_NOT: "Žádný [Concept('concept_strategic_region','strategický region')|l] v [GeographicRegion.GetName]:" # todo: CONCEPT CASE
- TRIGGER_ANY_STRATEGIC_REGION_IN_GEOGRAPHIC_REGION_ALL: "Všechny [Concept('concept_strategic_region','strategický region')|l] v [GeographicRegion.GetName]:" # todo: CONCEPT CASE
- TRIGGER_ANY_STRATEGIC_REGION_IN_GEOGRAPHIC_REGION_ALL_NOT: "Žádné [Concept('concept_strategic_region','strategické regiony')|l] v [GeographicRegion.GetName]:" # todo: CONCEPT CASE
- TRIGGER_ANY_STRATEGIC_REGION_IN_GEOGRAPHIC_REGION_COUNT: "$PARAMETERS$ $FILTER$[Concept('concept_strategic_region','Strategický region')|l] v [GeographicRegion.GetName]:" # todo: CONCEPT CASE
- TRIGGER_ANY_STRATEGIC_REGION_IN_GEOGRAPHIC_REGION_PERCENT: "$PARAMETERS$ z $FILTER$[Concept('concept_strategic_region','strategického regionu')|l] v [GeographicRegion.GetName]:" # todo: CONCEPT CASE
- TRIGGER_ANY_PROVINCE_IN_GEOGRAPHIC_REGION: "Libovolný [Concept('concept_province','provincie')|l] v [GeographicRegion.GetName]:" # todo: CONCEPT CASE
- TRIGGER_ANY_PROVINCE_IN_GEOGRAPHIC_REGION_NOT: "Žádný [Concept('concept_province','provincie')|l] v [GeographicRegion.GetName]:" # todo: CONCEPT CASE
- TRIGGER_ANY_PROVINCE_IN_GEOGRAPHIC_REGION_ALL: "Všechny [Concept('concept_province','provincie')|l] v [GeographicRegion.GetName]:" # todo: CONCEPT CASE
- TRIGGER_ANY_PROVINCE_IN_GEOGRAPHIC_REGION_ALL_NOT: "Žádné [Concept('concept_province','provincie')|l] v [GeographicRegion.GetName]:" # todo: CONCEPT CASE
- TRIGGER_ANY_PROVINCE_IN_GEOGRAPHIC_REGION_COUNT: "$PARAMETERS$ $FILTER$[Concept('concept_province','Provincie')|l] v [GeographicRegion.GetName]:" # todo: CONCEPT CASE
- TRIGGER_ANY_PROVINCE_IN_GEOGRAPHIC_REGION_PERCENT: "$PARAMETERS$ z $FILTER$[Concept('concept_province','provincie')|l] v [GeographicRegion.GetName]:" # todo: CONCEPT CASE
- TRIGGER_ANY_COUNTRY_IN_GEOGRAPHIC_REGION: "Libovolný [Concept('concept_country','země')|l] v [GeographicRegion.GetName]:" # todo: CONCEPT CASE
- TRIGGER_ANY_COUNTRY_IN_GEOGRAPHIC_REGION_NOT: "Žádný [Concept('concept_country','země')|l] v [GeographicRegion.GetName]:" # todo: CONCEPT CASE
- TRIGGER_ANY_COUNTRY_IN_GEOGRAPHIC_REGION_ALL: "Všechny [Concept('concept_country','země')|l] v [GeographicRegion.GetName]:" # todo: CONCEPT CASE
- TRIGGER_ANY_COUNTRY_IN_GEOGRAPHIC_REGION_ALL_NOT: "Žádné [Concept('concept_country','země')|l] v [GeographicRegion.GetName]:" # todo: CONCEPT CASE
- TRIGGER_ANY_COUNTRY_IN_GEOGRAPHIC_REGION_COUNT: "$PARAMETERS$ $FILTER$[Concept('concept_country','Země')|l] v [GeographicRegion.GetName]:" # todo: CONCEPT CASE
- TRIGGER_ANY_COUNTRY_IN_GEOGRAPHIC_REGION_PERCENT: "$PARAMETERS$ z $FILTER$[Concept('concept_country','zemí')|l] v [GeographicRegion.GetName]:" # todo: CONCEPT CASE
+ TRIGGER_ANY_STATE_IN_GEOGRAPHIC_REGION: "Libovolný [Concept('concept_state','stát')|l] v [GeographicRegion.GetName]:"
+ TRIGGER_ANY_STATE_IN_GEOGRAPHIC_REGION_NOT: "Žádný [Concept('concept_state','stát')|l] v [GeographicRegion.GetName]:"
+ TRIGGER_ANY_STATE_IN_GEOGRAPHIC_REGION_ALL: "Všechny [Concept('concept_state', '$concept_states$')|l] v [GeographicRegion.GetName]:"
+ TRIGGER_ANY_STATE_IN_GEOGRAPHIC_REGION_ALL_NOT: "Žádné [Concept('concept_state', '$concept_states$')|l] v [GeographicRegion.GetName]:"
+ TRIGGER_ANY_STATE_IN_GEOGRAPHIC_REGION_COUNT: "$PARAMETERS$ $FILTER$[Concept('concept_state', '$concept_states$')|l] v [GeographicRegion.GetName]:"
+ TRIGGER_ANY_STATE_IN_GEOGRAPHIC_REGION_PERCENT: "$PARAMETERS$ z $FILTER$[Concept('concept_state', '$concept_states$')|l] v [GeographicRegion.GetName]:"
+ TRIGGER_ANY_STATE_REGION_IN_GEOGRAPHIC_REGION: "Libovolný [Concept('concept_state_region','státní oblast')|l] v [GeographicRegion.GetName]:"
+ TRIGGER_ANY_STATE_REGION_IN_GEOGRAPHIC_REGION_NOT: "Žádný [Concept('concept_state_region','státní oblast')|l] v [GeographicRegion.GetName]:"
+ TRIGGER_ANY_STATE_REGION_IN_GEOGRAPHIC_REGION_ALL: "Všechny [Concept('concept_state_region', '$concept_state_regions$')|l] v [GeographicRegion.GetName]:"
+ TRIGGER_ANY_STATE_REGION_IN_GEOGRAPHIC_REGION_ALL_NOT: "Žádné [Concept('concept_state_region', '$concept_state_regions$')|l] v [GeographicRegion.GetName]:"
+ TRIGGER_ANY_STATE_REGION_IN_GEOGRAPHIC_REGION_COUNT: "$PARAMETERS$ $FILTER$[Concept('concept_state_region', '$concept_state_regions$')|l] v [GeographicRegion.GetName]:"
+ TRIGGER_ANY_STATE_REGION_IN_GEOGRAPHIC_REGION_PERCENT: "$PARAMETERS$ z $FILTER$[Concept('concept_state_region', '$concept_state_regions$')|l] v [GeographicRegion.GetName]:"
+ TRIGGER_ANY_STRATEGIC_REGION_IN_GEOGRAPHIC_REGION: "Libovolný [Concept('concept_strategic_region','strategický region')|l] v [GeographicRegion.GetName]:"
+ TRIGGER_ANY_STRATEGIC_REGION_IN_GEOGRAPHIC_REGION_NOT: "Žádný [Concept('concept_strategic_region','strategický region')|l] v [GeographicRegion.GetName]:"
+ TRIGGER_ANY_STRATEGIC_REGION_IN_GEOGRAPHIC_REGION_ALL: "Všechny [Concept('concept_strategic_region', '$concept_strategic_regions$')|l] v [GeographicRegion.GetName]:"
+ TRIGGER_ANY_STRATEGIC_REGION_IN_GEOGRAPHIC_REGION_ALL_NOT: "Žádné [Concept('concept_strategic_region', '$concept_strategic_regions$')|l] v [GeographicRegion.GetName]:"
+ TRIGGER_ANY_STRATEGIC_REGION_IN_GEOGRAPHIC_REGION_COUNT: "$PARAMETERS$ $FILTER$[Concept('concept_strategic_region', '$concept_strategic_regions$')|l] v [GeographicRegion.GetName]:"
+ TRIGGER_ANY_STRATEGIC_REGION_IN_GEOGRAPHIC_REGION_PERCENT: "$PARAMETERS$ z $FILTER$[Concept('concept_strategic_region', '$concept_strategic_regions$')|l] v [GeographicRegion.GetName]:"
+ TRIGGER_ANY_PROVINCE_IN_GEOGRAPHIC_REGION: "Libovolný [Concept('concept_province','provincie')|l] v [GeographicRegion.GetName]:"
+ TRIGGER_ANY_PROVINCE_IN_GEOGRAPHIC_REGION_NOT: "Žádný [Concept('concept_province','provincie')|l] v [GeographicRegion.GetName]:"
+ TRIGGER_ANY_PROVINCE_IN_GEOGRAPHIC_REGION_ALL: "Všechny [Concept('concept_province', '$concept_provinces$')|l] v [GeographicRegion.GetName]:"
+ TRIGGER_ANY_PROVINCE_IN_GEOGRAPHIC_REGION_ALL_NOT: "Žádné [Concept('concept_province', '$concept_provinces$')|l] v [GeographicRegion.GetName]:"
+ TRIGGER_ANY_PROVINCE_IN_GEOGRAPHIC_REGION_COUNT: "$PARAMETERS$ $FILTER$[Concept('concept_province', '$concept_provinces$')|l] v [GeographicRegion.GetName]:"
+ TRIGGER_ANY_PROVINCE_IN_GEOGRAPHIC_REGION_PERCENT: "$PARAMETERS$ z $FILTER$[Concept('concept_province', '$concept_provinces$')|l] v [GeographicRegion.GetName]:"
+ TRIGGER_ANY_COUNTRY_IN_GEOGRAPHIC_REGION: "Libovolný [Concept('concept_country','země')|l] v [GeographicRegion.GetName]:"
+ TRIGGER_ANY_COUNTRY_IN_GEOGRAPHIC_REGION_NOT: "Žádný [Concept('concept_country','země')|l] v [GeographicRegion.GetName]:"
+ TRIGGER_ANY_COUNTRY_IN_GEOGRAPHIC_REGION_ALL: "Všechny [Concept('concept_country', '$concept_countries$')|l] v [GeographicRegion.GetName]:"
+ TRIGGER_ANY_COUNTRY_IN_GEOGRAPHIC_REGION_ALL_NOT: "Žádné [Concept('concept_country', '$concept_countries$')|l] v [GeographicRegion.GetName]:"
+ TRIGGER_ANY_COUNTRY_IN_GEOGRAPHIC_REGION_COUNT: "$PARAMETERS$ $FILTER$[Concept('concept_country', '$concept_countries$')|l] v [GeographicRegion.GetName]:"
+ TRIGGER_ANY_COUNTRY_IN_GEOGRAPHIC_REGION_PERCENT: "$PARAMETERS$ z $FILTER$[Concept('concept_country', '$concept_countries$')|l] v [GeographicRegion.GetName]:"
  SCOPE_DEBUG_GEOGRAPHIC_REGION: "Geografický region ($KEY$)"
  TRIGGER_COUNTRY_IS_ON_SAME_CONTINENT: "[COUNTRY.GetNameNoFlag] je na stejném kontinentu jako [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
  TRIGGER_COUNTRY_IS_ON_SAME_CONTINENT_NOT: "[COUNTRY.GetNameNoFlag] #bold není#! na stejném kontinentu jako [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION

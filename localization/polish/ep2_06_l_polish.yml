@@ -49,7 +49,7 @@
  je_shinbutsu_bunri_reason: "S obnovením moci císaře musíme odlišit a povznést domácí náboženské tradice, které považují císařskou linii za posvátnou. Abychom toho dosáhli, musí být odděleny od cizího vlivu buddhismu, který byl po stovky let prostřednictvím synkretických tradic neoddělitelně spjat s uctíváním kami. Využitím nespokojenosti s buddhistickými institucemi kvůli jejich vazbám na šógunát můžeme otevřít cestu šintó jako vyššímu vůdčímu principu."
  je_taikyo_proclamation_button: "Proklamace Taikjó"
  je_taikyo_proclamation_button_desc: "Učinit šintó, uctívání kami a úctu k císaři, principem státu"
- je_taikyo_proclamation_conversion_tt: "Každý vůdce [Concept('concept_interest_group','zájmová skupina')] má #v 75%#! šanci přestoupit na [GetReligion('shinto').GetName]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ je_taikyo_proclamation_conversion_tt: "Každý vůdce [Concept('concept_interest_group','zájmová skupina')] má #v 75%#! šanci přestoupit na [GetReligion('shinto').GetName]." # todo: NEW TRANSLATION
  je_elevate_buddhism: "Povznést buddhismus"
  je_elevate_buddhism_reason: "Buddhistické náboženské instituce v $JAP$ mají silné historické vazby na správní rameno šógunátu. Když jsme jednou odvrátili konec šógunátu, posílení těchto institucí by nám mohlo pomoci udržet jeho moc a posílit náboženské tradice $JAP$, které se nesoustředí na uctívání císaře."
  je_elevate_buddhism_goal: "$je_communism_2_goal$"
@@ -103,7 +103,7 @@
  japan_religion.5.b: "Musíme obnovit šintó v jeho starobylých tradicích."
  fukko_shinto: "Fukko šintó"
  japan_religion.6.t: "Křesťanství v otevřené zemi"
- japan_religion.6.d: "Ačkoli se [ROOT.GetCountry.GetAltAdjective('I')] otevírá cizincům, náboženství zůstává regulováno. Křesťanské země mohou svobodný dovoz své víry považovat za stejně důležitý jako dovoz svého zboží." # todo: COUNTRY CASE
+ japan_religion.6.d: "Ačkoli se [ROOT.GetCountry.GetAltAdjective('I')] otevírá cizincům, náboženství zůstává regulováno. Křesťanské země mohou svobodný dovoz své víry považovat za stejně důležitý jako dovoz svého zboží." # todo: CONCEPT CASE
  japan_religion.6.f: "„Křesťanství nejvíce miluje své následovníky ve smrti, ve smrti především pro víru. Každý misionář přibitý na kříž či vydaný ohni se stává další kapitolou příběhu, který začal mužem na kříži. Možná je čas přestat jim dávat mučedníky?“"
  japan_religion.6.a: "Misionářům musí být dovoleno hlásat svou víru."
  japan_religion.6.b: "Smí být praktikováno, ale nemělo by se šířit."
@@ -142,15 +142,15 @@
  maintained_meat_ban_opinion: "$maintained_meat_ban$"
  japan_religion.11.t: "Cesta kami" # todo: NEW TRANSLATION
  japan_religion.11.d: "Oddělení šintoistických a buddhistických praktik se podařilo. Vliv starých náboženských institucí slábne a nastává nová éra oddanosti bohům, císaři a [ROOT.GetCountry.GetName]." # todo: NEW TRANSLATION
- japan_religion.11.f: ""[ROOT.GetCountry.GetNameNoFormatting] je domovem mnoha vyznání, mnoha rituálů. Některé staré, některé nové. Naším cílem nebylo vytlačit některé na úkor jiných. Šlo o vytyčení hranice mezi milovanými vírami a nezpochybnitelnými pravdami."" # todo: NEW TRANSLATION
+ japan_religion.11.f: "„[ROOT.GetCountry.GetNameNoFormatting] je domovem mnoha vyznání, mnoha rituálů. Některé staré, některé nové. Naším cílem nebylo vytlačit některé na úkor jiných. Šlo o vytyčení hranice mezi milovanými vírami a nezpochybnitelnými pravdami.“" # todo: NEW TRANSLATION
  japan_religion.11.a: "Božství je absolutní." # todo: NEW TRANSLATION
  japan_religion.12.t: "Střední cesta" # todo: NEW TRANSLATION
- japan_religion.12.d: "Po překonání bouřlivého období otřesů pro [ROOT.GetCountry.GetAltAdjective('A')] se [SCOPE.gsInterestGroup('devout_ig').GetName] podařilo znovu prosadit jako náboženskou autoritu země a posílit své vazby na [ROOT.GetCountry.GetGovernment.GetAltAdjective('A')]." # todo: NEW TRANSLATION # todo: COUNTRY CASE
- japan_religion.12.f: ""Lidé mluví o cestě bohů. Jestliže taková existuje,\nnení pro lidi, aby po ní kráčeli; pouze bohové\nmohou kráčet po posvátné cestě bohů".\n—Hagura Toman" # todo: NEW TRANSLATION
+ japan_religion.12.d: "Po překonání bouřlivého období otřesů pro [ROOT.GetCountry.GetAltAdjective('A')] se [SCOPE.gsInterestGroup('devout_ig').GetName] podařilo znovu prosadit jako náboženskou autoritu země a posílit své vazby na [ROOT.GetCountry.GetGovernment.GetAltAdjective('A')]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ japan_religion.12.f: "„Lidé mluví o cestě bohů. Jestliže taková existuje,\nnení pro lidi, aby po ní kráčeli; pouze bohové\nmohou kráčet po posvátné cestě bohů“.\n—Hagura Toman" # todo: NEW TRANSLATION
  japan_religion.12.a: "Cesta je jasná." # todo: NEW TRANSLATION
  japan_religion.13.t: "$je_taikyo_proclamation_button$" # todo: NEW TRANSLATION
  japan_religion.13.d: "Proklamace Velkého učení, prohlašující uctívání kami a úctu k božskému císaři za zásady [ROOT.GetCountry.GetAdjective] státu a povinnost jeho občanů." # todo: NEW TRANSLATION
- japan_religion.13.f: ""Úcta ke kami a láska k naší zemi jsou neoddělitelně spjaty; to je první učení.\n\nZásady nebe a cesta člověka jsou neoddělitelně spjaty; to je druhé učení.\n\nÚcta k císaři a poslušnost vůli dvora jsou neoddělitelně spjaty; to je třetí učení."" # todo: NEW TRANSLATION
+ japan_religion.13.f: "„Úcta ke kami a láska k naší zemi jsou neoddělitelně spjaty; to je první učení.\n\nZásady nebe a cesta člověka jsou neoddělitelně spjaty; to je druhé učení.\n\nÚcta k císaři a poslušnost vůli dvora jsou neoddělitelně spjaty; to je třetí učení.“" # todo: NEW TRANSLATION
  japan_religion.13.a: "Musí být slyšena po celé zemi!" # todo: NEW TRANSLATION
  concept_gongen: "Gongen" # todo: NEW TRANSLATION
  concept_gongen_desc: "Buddha zjevující se jako kami, spojující místní božstvo s přinášečem buddhistického osvícení." # todo: NEW TRANSLATION
