@@ -16,34 +16,34 @@
  lobby_category_foreign_neutral: "Zahraniční politické loby"
  lobby_category_domestic: "Domácí loby"
  POLITICAL_LOBBY_SUPPORTERS: "Podporovatelé"
- POLITICAL_LOBBY_APPEASEMENT_VALUE: "[concept_political_lobby_appeasement]: #v #tooltippable #tooltip:[PoliticalLobby.GetTooltipTag],POLITICAL_LOBBY_APPEASEMENT_TOOLTIP [PoliticalLobby.GetAppeasement|=+0]#!#!#!"
+ POLITICAL_LOBBY_APPEASEMENT_VALUE: "[Concept('concept_political_lobby_appeasement','Vyhovění')]: #v #tooltippable #tooltip:[PoliticalLobby.GetTooltipTag],POLITICAL_LOBBY_APPEASEMENT_TOOLTIP [PoliticalLobby.GetAppeasement|=+0]#!#!#!"
  POLITICAL_LOBBY_TARGET_COUNTRY_RELATION: "[SelectLocalization(EqualTo_string(PoliticalLobby.GetType.GetCategory,'foreign_pro_country'),'POLITICAL_LOBBY_TARGET_COUNTRY_RELATION_PRO','POLITICAL_LOBBY_TARGET_COUNTRY_RELATION_ANTI')]"
  POLITICAL_LOBBY_TARGET_COUNTRY_RELATION_ANTI: "Odmítá [PoliticalLobby.GetTargetCountry.GetName]"
  POLITICAL_LOBBY_TARGET_COUNTRY_RELATION_PRO: "Podporuje [PoliticalLobby.GetTargetCountry.GetName]"
- POLITICAL_LOBBY_HOME_COUNTRY: "Z [PoliticalLobby.GetCountry.GetName]"
- POLITICAL_LOBBY_APPEASEMENT_IMPACT: "[PoliticalLobby.GetAppeasement|=+v] [concept_approval] od [concept_political_lobby_appeasement]"
+ POLITICAL_LOBBY_HOME_COUNTRY: "Z [PoliticalLobby.GetCountry.GetAltAdjective('G')]" # todo: CONCEPT CASE
+ POLITICAL_LOBBY_APPEASEMENT_IMPACT: "[PoliticalLobby.GetAppeasement|=+v] [Concept('concept_approval','spokojenost')] od [Concept('concept_political_lobby_appeasement','vyhovění')]"
  POLITICAL_LOBBY_APPEASEMENT_FACTORS: "Akce cílené na [PoliticalLobby.GetTargetCountry.GetAltAdjective('A')]"
  POLITICAL_LOBBY_TOTAL_CLOUT: "Vliv lobby: #tooltippable #tooltip:[PoliticalLobby.GetTooltipTag],POLITICAL_LOBBY_TOTAL_CLOUT_BREAKDOWN_TOOLTIP [PoliticalLobby.GetTotalClout|%1v]#!#!"
- POLITICAL_LOBBY_TOTAL_CLOUT_BREAKDOWN_TOOLTIP: "#header [concept_clout] lobby#!\n[PoliticalLobby.GetTotalClout|%1v] celkem\n$TOOLTIP_DELIMITER$\n[PoliticalLobby.GetTotalCloutBreakdown]"
- POLITICAL_LOBBY_APPEASEMENT_INCREASE: "Zvyšuje [concept_political_lobby_appeasement|l]"
- POLITICAL_LOBBY_APPEASEMENT_DECREASE: "Snižuje [concept_political_lobby_appeasement|l]"
+ POLITICAL_LOBBY_TOTAL_CLOUT_BREAKDOWN_TOOLTIP: "#header [Concept('concept_clout','Politický vliv')] lobby#!\n[PoliticalLobby.GetTotalClout|%1v] celkem\n$TOOLTIP_DELIMITER$\n[PoliticalLobby.GetTotalCloutBreakdown]"
+ POLITICAL_LOBBY_APPEASEMENT_INCREASE: "Zvyšuje [Concept('concept_political_lobby_appeasement','vyhovění')|l]"
+ POLITICAL_LOBBY_APPEASEMENT_DECREASE: "Snižuje [Concept('concept_political_lobby_appeasement','vyhovění')|l]"
  POLITICAL_LOBBY_APPEASEMENT: "$concept_political_lobby_appeasement$ [PoliticalLobby.GetAppeasement|=+]"
- POLITICAL_LOBBY_APPEASEMENT_TOOLTIP: "#header [concept_political_lobby_appeasement]#!\n[PoliticalLobby.GetAppeasement|=+] v [PoliticalLobby.GetName]\n$TOOLTIP_DELIMITER$\n#title Efekty:#! #indent_newline:3 \n[PoliticalLobby.GetAppeasementEffectsDesc]#!\n\n#title Nedávné změny:#! #indent_newline:3 \n[PoliticalLobby.GetAppeasementChangesDesc]#!"
+ POLITICAL_LOBBY_APPEASEMENT_TOOLTIP: "#header [Concept('concept_political_lobby_appeasement','Vyhovění')]#!\n[PoliticalLobby.GetAppeasement|=+] v [PoliticalLobby.GetName]\n$TOOLTIP_DELIMITER$\n#title Efekty:#! #indent_newline:3 \n[PoliticalLobby.GetAppeasementEffectsDesc]#!\n\n#title Nedávné změny:#! #indent_newline:3 \n[PoliticalLobby.GetAppeasementChangesDesc]#!"
  POLITICAL_LOBBY_APPEASEMENT_CHANGE: "$AMOUNT|=+$ od [POLITICAL_LOBBY_APPEASEMENT_FACTOR.GetDesc|v] ($DATE|v$)"
- POLITICAL_LOBBY_APPEASEMENT_APPROVAL_IMPACT: "$IMPACT|=+$ [concept_approval] členů [concept_interest_group]"
- POLITICAL_LOBBY_MEMBER_CLOUT: "$CLOUT|1%v$ od [INTEREST_GROUP.GetName]"
+ POLITICAL_LOBBY_APPEASEMENT_APPROVAL_IMPACT: "$IMPACT|=+$ [Concept('concept_approval','spokojenost')] členů [Concept('concept_interest_group','zájmové skupiny')]" # todo: CONCEPT CASE
+ POLITICAL_LOBBY_MEMBER_CLOUT: "$CLOUT|1%v$ od [INTEREST_GROUP.GetCustom('IG_G_TT')]" # todo: NAME CASE
  POLITICAL_LOBBY_MEMBER_SUPPORT: "[SelectLocalization(GreaterThan_CFixedPoint(PoliticalLobby.CalcJoinWeight(InterestGroup.Self),'(CFixedPoint)10'), 'POLITICAL_LOBBY_MEMBER_SUPPORT_SOLID', 'POLITICAL_LOBBY_MEMBER_SUPPORT_FAILING')]"
  POLITICAL_LOBBY_MEMBER_SUPPORT_TT: "#T Podpora lobby#!\n[PoliticalLobby.CalcJoinWeight(InterestGroup.Self)|v0] ($POLITICAL_LOBBY_MEMBER_SUPPORT$)\n\nPokud podpora klesne na #v 0#!, [InterestGroup.GetName] pravděpodobně opustí [PoliticalLobby.GetName]\n$TOOLTIP_DELIMITER$\n#title Tato podpora je způsobena:#!#indent_newline:3 \n[PoliticalLobby.CalcJoinWeightDesc(InterestGroup.Self)]#!"
  POLITICAL_LOBBY_MEMBER_SUPPORT_SOLID: "Silná"
  POLITICAL_LOBBY_MEMBER_SUPPORT_FAILING: "#n Slabý#!"
  lobby_events.40.t: "Pozoruhodná daňová reforma" # todo: NEW TRANSLATION
- lobby_events.40.d: "Schválení zákona [SCOPE.sLaw('relevant_law_scope').GetName] v [SCOPE.sCountry('relevant_lobby_country').GetName] zapůsobilo na [SCOPE.gsInterestGroup('relevant_ig').GetNameNoFormatting]. [SCOPE.gsInterestGroup('relevant_ig').GetName] se přidávají k [SCOPE.sPoliticalLobby('relevant_lobby').GetName]." # todo: NEW TRANSLATION
- lobby_events.40.f: "Členové [SCOPE.gsInterestGroup('relevant_ig').GetNameNoFormatting] pozorovali emisary [SCOPE.sPoliticalLobby('relevant_lobby').GetNameNoFormatting], jak provádějí machinace, aby ovlivnili zákonodárce ve svůj prospěch.\n\n"[SCOPE.sCountry('relevant_lobby_country').GetNameNoFormatting] se zdá být na naší straně, že? Podívej se na ně."" # todo: NEW TRANSLATION
- lobby_events.40.a: "Z podpory [SCOPE.gsInterestGroup('relevant_ig').GetNameNoFormatting] budou těžit [SCOPE.sPoliticalLobby('relevant_lobby').GetNameNoFormatting]." # todo: NEW TRANSLATION
+ lobby_events.40.d: "Schválení zákona [SCOPE.sLaw('relevant_law_scope').GetName] v [SCOPE.sCountry('relevant_lobby_country').GetName] zapůsobilo na [SCOPE.gsInterestGroup('relevant_ig').GetCustom('IG_A')]. [SCOPE.gsInterestGroup('relevant_ig').GetName] se přidávají k [SCOPE.sPoliticalLobby('relevant_lobby').GetName]." # todo: NEW TRANSLATION # todo: NAME CASE
+ lobby_events.40.f: "Členové [SCOPE.gsInterestGroup('relevant_ig').GetCustom('IG_G')] pozorovali emisary [SCOPE.sPoliticalLobby('relevant_lobby').GetNameNoFormatting], jak provádějí machinace, aby ovlivnili zákonodárce ve svůj prospěch.\n\n"[SCOPE.sCountry('relevant_lobby_country').GetNameNoFormatting] se zdá být na naší straně, že? Podívej se na ně."" # todo: NEW TRANSLATION # todo: NAME CASE
+ lobby_events.40.a: "Z podpory [SCOPE.gsInterestGroup('relevant_ig').GetCustom('IG_G')] budou těžit [SCOPE.sPoliticalLobby('relevant_lobby').GetNameNoFormatting]." # todo: NEW TRANSLATION # todo: NAME CASE
  lobby_events.40.b: "Výborně. [SCOPE.gsInterestGroup('relevant_ig').GetNameNoFormatting] si získá mocné přátele." # todo: NEW TRANSLATION
  lobby_events.31.t: "Přes rozdíly" # todo: NEW TRANSLATION
- lobby_events.31.d: "Ohromeni díly dováženými od [SCOPE.sCountry('relevant_lobby_country').GetAdjective] filmařů, [SCOPE.gsInterestGroup('relevant_ig').GetName] plánují vstoupit do [SCOPE.sPoliticalLobby('relevant_lobby').GetName]. Jsou ochotni spolupracovat s [SCOPE.gsInterestGroup('relevant_lobby_member').GetName] na prosazení svých zájmů." # todo: NEW TRANSLATION
- lobby_events.31.f: "[SCOPE.sCharacter('relevant_ig_leader').GetFullNameNoFormatting] je neochvějný ve [SCOPE.sCharacter('relevant_ig_leader').GetHerHis] rozhovorech s [SCOPE.gsInterestGroup('relevant_lobby_member').GetNameNoFormatting].\n\n"We can be powerful friends to the [SCOPE.sPoliticalLobby('relevant_lobby').GetNameNoFormatting]. I've seen how in [SCOPE.sCountry('relevant_lobby_country').GetNameNoFormatting] they make use of films to shape the public's imagination. We, too, can leverage this technology."" # todo: NEW TRANSLATION
+ lobby_events.31.d: "Ohromeni díly dováženými od [SCOPE.sCountry('relevant_lobby_country').GetAdjective] filmařů, [SCOPE.gsInterestGroup('relevant_ig').GetName] plánují vstoupit do [SCOPE.sPoliticalLobby('relevant_lobby').GetName]. Jsou ochotni spolupracovat s [SCOPE.gsInterestGroup('relevant_lobby_member').GetCustom('IG_I_TT')] na prosazení svých zájmů." # todo: NEW TRANSLATION # todo: NAME CASE
+ lobby_events.31.f: "[SCOPE.sCharacter('relevant_ig_leader').GetFullNameNoFormatting] je neochvějný ve [SCOPE.sCharacter('relevant_ig_leader').GetHerHis] rozhovorech s [SCOPE.gsInterestGroup('relevant_lobby_member').GetCustom('IG_I')].\n\n"We can be powerful friends to the [SCOPE.sPoliticalLobby('relevant_lobby').GetNameNoFormatting]. I've seen how in [SCOPE.sCountry('relevant_lobby_country').GetNameNoFormatting] they make use of films to shape the public's imagination. We, too, can leverage this technology."" # todo: NEW TRANSLATION # todo: NAME CASE
  lobby_events.31.a: "Dobře, uvidíme, co z toho vzejde." # todo: NEW TRANSLATION
  lobby_events.31.b: "Toto nebude plodné partnerství." # todo: NEW TRANSLATION
  ig_join_pol_str_negative: "Podkopané cíle" # todo: NEW TRANSLATION
@@ -51,12 +51,12 @@
  lobby_events_ig_blocked: "Zablokované snahy" # todo: NEW TRANSLATION
  lobby_events.32.t: "Zářný příklad" # todo: NEW TRANSLATION
  lobby_events.32.d: "[SCOPE.gsInterestGroup('relevant_ig').GetName] považují [SCOPE.sCountry('relevant_lobby_country').GetName] za silný vzor svých hodnot, s řádným vedením, jímž by se [ROOT.GetCountry.GetNameNoFormatting] měl řídit. Snaží se připojit k [SCOPE.sPoliticalLobby('relevant_lobby').GetName]." # todo: NEW TRANSLATION
- lobby_events.32.f: ""Mám naději pro budoucnost naší země. Nesmíme opustit naše hodnoty. Musíme [SCOPE.sPoliticalLobby('relevant_lobby').GetNameNoFormatting] udělit plnou podporu."\n\nNěkteří členové [SCOPE.gsInterestGroup('relevant_ig').GetNameNoFormatting] se zamysleli nad slovy řečníka. Jak by vstoupení do [SCOPE.sPoliticalLobby('relevant_lobby').GetNameNoFormatting] mohlo být využito v jejich prospěch? Někteří členové tvrdili, že [SCOPE.sCountry('relevant_lobby_country').GetNameNoFormatting] se v budoucnu ukáže jako spolehlivý spojenec." # todo: NEW TRANSLATION
+ lobby_events.32.f: ""Mám naději pro budoucnost naší země. Nesmíme opustit naše hodnoty. Musíme [SCOPE.sPoliticalLobby('relevant_lobby').GetNameNoFormatting] udělit plnou podporu."\n\nNěkteří členové [SCOPE.gsInterestGroup('relevant_ig').GetCustom('IG_G')] se zamysleli nad slovy řečníka. Jak by vstoupení do [SCOPE.sPoliticalLobby('relevant_lobby').GetNameNoFormatting] mohlo být využito v jejich prospěch? Někteří členové tvrdili, že [SCOPE.sCountry('relevant_lobby_country').GetNameNoFormatting] se v budoucnu ukáže jako spolehlivý spojenec." # todo: NEW TRANSLATION # todo: NAME CASE
  lobby_events.32.a: "Výborně. Máme se od [SCOPE.sCountry('relevant_lobby_country').GetNameNoFormatting] mnoho co naučit." # todo: NEW TRANSLATION
  lobby_events.32.b: "Co je na [SCOPE.sCountry('relevant_lobby_country').GetNameNoFormatting] tak skvělého?" # todo: NEW TRANSLATION
  lobby_events.33.t: "Méně je více" # todo: NEW TRANSLATION
  lobby_events.33.d: "Při příliš mnoha stranách, z nichž každá sleduje vlastní agendu, se [SCOPE.gsInterestGroup('relevant_ig').GetName] snaží distancovat od [SCOPE.sPoliticalLobby('relevant_lobby').GetName]." # todo: NEW TRANSLATION
- lobby_events.33.f: ""Přátelé [SCOPE.gsInterestGroup('other_ig').GetNameNoFormatting] přehluší naše vlastní hlasy. Už nám to neslouží zůstat zapojeni v [SCOPE.sPoliticalLobby('relevant_lobby').GetNameNoFormatting]."\n\nNávrh řečníka byl přijat s nadšením ostatních členů [SCOPE.gsInterestGroup('relevant_ig').GetNameNoFormatting]." # todo: NEW TRANSLATION
+ lobby_events.33.f: ""Přátelé [SCOPE.gsInterestGroup('other_ig').GetCustom('IG_G')] přehluší naše vlastní hlasy. Už nám to neslouží zůstat zapojeni v [SCOPE.sPoliticalLobby('relevant_lobby').GetNameNoFormatting]."\n\nNávrh řečníka byl přijat s nadšením ostatních členů [SCOPE.gsInterestGroup('relevant_ig').GetCustom('IG_G')]." # todo: NEW TRANSLATION # todo: NAME CASE
  lobby_events.33.a: "Dobrá, [SCOPE.gsInterestGroup('other_ig').GetNameNoFormatting] převezme vedení." # todo: NEW TRANSLATION
  lobby_events.33.b: "[SCOPE.sPoliticalLobby('relevant_lobby').GetNameNoFormatting] potřebuje jejich pokračující podporu." # todo: NEW TRANSLATION
  lobby_events.33.c: "[SCOPE.sPoliticalLobby('relevant_lobby').GetNameNoFormatting] potřebuje jejich pokračující podporu." # todo: NEW TRANSLATION
@@ -67,7 +67,7 @@
  lobby_events.34.b: "Co je na [SCOPE.sCountry('relevant_lobby_country').GetNameNoFormatting] tak příkladného?" # todo: NEW TRANSLATION
  lobby_events.35.t: "Nepříznivé mínění" # todo: NEW TRANSLATION
  lobby_events.35.d: "[SCOPE.gsInterestGroup('relevant_ig').GetName] považují [SCOPE.sCountry('relevant_lobby_country').GetName] nepříznivě po nedávných zákonech tam přijatých. Snaží se vstoupit do [SCOPE.sPoliticalLobby('relevant_lobby').GetName]." # todo: NEW TRANSLATION
- lobby_events.35.f: ""Myslím, že je povinností všech solidních členů [SCOPE.gsInterestGroup('relevant_ig').GetNameNoFormatting] podporovat naše zájmy zde v [ROOT.GetCountry.GetNameNoFormatting] i v zahraničí."\n\n"Nemůžeme podporovat šíření [SCOPE.sCountry('relevant_lobby_country').GetAdjectiveNoFormatting] [SCOPE.gsInterestGroup('relevant_ruler_ig').GetLeader.GetIdeology.GetNameNoFormatting] ideologie."" # todo: NEW TRANSLATION
+ lobby_events.35.f: ""Myslím, že je povinností všech solidních členů [SCOPE.gsInterestGroup('relevant_ig').GetCustom('IG_G')] podporovat naše zájmy zde v [ROOT.GetCountry.GetNameNoFormatting] i v zahraničí."\n\n"Nemůžeme podporovat šíření [SCOPE.sCountry('relevant_lobby_country').GetAdjectiveNoFormatting] [SCOPE.gsInterestGroup('relevant_ruler_ig').GetLeader.GetIdeology.GetNameNoFormatting] ideologie."" # todo: NEW TRANSLATION # todo: NAME CASE
  lobby_events.35.a: "[SCOPE.sPoliticalLobby('relevant_lobby').GetNameNoFormatting] bude z jejich podpory těžit." # todo: NEW TRANSLATION
  lobby_events.35.b: "[SCOPE.sPoliticalLobby('relevant_lobby').GetNameNoFormatting] teď jejich podporu nepotřebuje." # todo: NEW TRANSLATION
  appeasement_lobby_pleased: "Růst vlivu lobby" # todo: NEW TRANSLATION
@@ -90,8 +90,8 @@
  ig_law_enactment_speed_good: "Hybná síla schvalování" # todo: NEW TRANSLATION
  lobby_events.38.t: "Nežádoucí legislativa" # todo: NEW TRANSLATION
  lobby_events.38.d: "[SCOPE.gsInterestGroup('relevant_ig').GetName] jsou nespokojeni s navrhovaným zákonem [SCOPE.sLaw('relevant_law_scope').GetName]. Připojili se k [SCOPE.sPoliticalLobby('relevant_lobby').GetName] a kritizují přijetí podobného zákona v [SCOPE.sCountry('relevant_lobby_country').GetName]." # todo: NEW TRANSLATION
- lobby_events.38.f: ""Nemůžeme v žádném případě podpořit navrhovaný zákon [SCOPE.sLaw('relevant_law_scope').GetNameNoFormatting]. Podívejte, jak zklamal lidi v [SCOPE.sCountry('relevant_lobby_country').GetNameNoFormatting]."\n\nJeden z členů [SCOPE.gsInterestGroup('relevant_ig').GetNameNoFormatting] souhlasil: "Musíme použít jakékoli prostředky k poražení celého projektu [SCOPE.sLaw('relevant_law_scope').GetNameNoFormatting]."" # todo: NEW TRANSLATION
- lobby_events.38.a: "Chvalte [SCOPE.gsInterestGroup('relevant_ig').GetNameNoFormatting] za jejich snahy." # todo: NEW TRANSLATION
+ lobby_events.38.f: ""Nemůžeme v žádném případě podpořit navrhovaný zákon [SCOPE.sLaw('relevant_law_scope').GetNameNoFormatting]. Podívejte, jak zklamal lidi v [SCOPE.sCountry('relevant_lobby_country').GetNameNoFormatting]."\n\nJeden z členů [SCOPE.gsInterestGroup('relevant_ig').GetCustom('IG_G')] souhlasil: "Musíme použít jakékoli prostředky k poražení celého projektu [SCOPE.sLaw('relevant_law_scope').GetNameNoFormatting]."" # todo: NEW TRANSLATION # todo: NAME CASE
+ lobby_events.38.a: "Chvalte [SCOPE.gsInterestGroup('relevant_ig').GetCustom('IG_A')] za jejich snahy." # todo: NEW TRANSLATION # todo: NAME CASE
  lobby_events.38.b: "Nemají [SCOPE.gsInterestGroup('relevant_ig').GetNameNoFormatting] jiné záležitosti k řešení?" # todo: NEW TRANSLATION
  lobby_events.39.t: "Obchodování s nadšením" # todo: NEW TRANSLATION
  lobby_events.39.d: "Schválení zákona [SCOPE.sLaw('relevant_law_scope').GetName] v [SCOPE.sCountry('relevant_lobby_country').GetName] bylo [SCOPE.gsInterestGroup('relevant_ig').GetName] přijato s velkým nadšením. [SCOPE.gsInterestGroup('relevant_ig').GetNameNoFormatting] nyní lobbuje za bližší vazby s [SCOPE.sCountry('relevant_lobby_country').GetName]." # todo: NEW TRANSLATION
@@ -149,15 +149,15 @@
  lobby_events.58.f: "Vedoucí vyšetřování popisuje svá zjištění: "Nemá [SCOPE.sCharacter('relevant_lobby_leader').GetFullNameNoFormatting] žádnou integritu? Mezi zaslanými dary byly nalezeny následující – půl tuctu balíků látky, vyřezávací nůž, kapesní nůž, pět párů rukavic, třiadvacet sudů soli a tucet lahví nejlepší kolínské vody [ROOT.GetCountry.GetAdjectiveNoFormatting]. Není to úplatek na podporu [SCOPE.sPoliticalLobby('relevant_lobby').GetNameNoFormatting]?"" # todo: NEW TRANSLATION
  lobby_events.58.a: "[SCOPE.sPoliticalLobby('relevant_lobby').GetNameNoFormatting] nedopustila nic podezřelého." # todo: NEW TRANSLATION
  lobby_events.58.b: "Možná by jejich vůdce měl odstoupit." # todo: NEW TRANSLATION
- lobby_member_resigns: "[SCOPE.sCharacter('relevant_lobby_leader').GetFullName] rezignuje z [SCOPE.gsInterestGroup('relevant_lobby_member').GetName]" # todo: NEW TRANSLATION
+ lobby_member_resigns: "[SCOPE.sCharacter('relevant_lobby_leader').GetFullName] rezignuje z [SCOPE.gsInterestGroup('relevant_lobby_member').GetCustom('IG_G_TT')]" # todo: NEW TRANSLATION # todo: NAME CASE
  lobby_events.59.t: "Přednášky lobbisty v [SCOPE.sState('relevant_state').GetStateRegion.GetCityHubName]" # todo: NEW TRANSLATION
  lobby_events.59.d: "Muž zaměstnaný mocným členem [SCOPE.sPoliticalLobby('relevant_lobby').GetName] pořádá přednášky a rozdává brožury adresované cílovým voličským skupinám v [SCOPE.sState('relevant_state').GetStateRegion.GetCityHubName]." # todo: NEW TRANSLATION
  lobby_events.59.f: "Jeden zákonodárce píše kolegovi: "Každý den mě najde. Nevím jak. Jsem znepokojen. Jaké jsou jeho cíle? Ten najatý emisář [SCOPE.sPoliticalLobby('relevant_lobby').GetNameNoFormatting] straší dveře [ROOT.GetCountry.GetAdjectiveNoFormatting] shromáždění, podobně jako duch zavražděného Banqua."" # todo: NEW TRANSLATION
  lobby_events.59.a: "Dejte jasně najevo, že lobby jsou odpovědné za emisary, které najímají." # todo: NEW TRANSLATION
  lobby_events.59.b: "Jakékoli obavy o chování emisáře jsou neopodstatněné." # todo: NEW TRANSLATION
  lobby_events.60.t: "Náhodná pozitivní publicita pro [SCOPE.sCountry('relevant_lobby_country').GetNameNoFormatting]" # todo: NEW TRANSLATION
- lobby_events.60.d: "Soukromá korespondence členů [SCOPE.sPoliticalLobby('relevant_lobby').GetName] byla vydána v brožurách. Dopisy chválí [SCOPE.sCountry('relevant_lobby_country').GetName], v rozporu se záměry [SCOPE.gsInterestGroup('relevant_lobby_member').GetName]." # todo: NEW TRANSLATION
- lobby_events.60.f: "Na shromáždění všech členů [SCOPE.sPoliticalLobby('relevant_lobby').GetNameNoFormatting] houstne frustrace. Mnozí rychle viní [SCOPE.gsInterestGroup('relevant_lobby_member').GetNameNoFormatting] za tento průšvih s řadou brožur distribuovaných bez jejich souhlasu.\n\nJeden člen zpochybňuje horlivost skupiny: "Ano, toto nebylo naším záměrem. Ale není to jenom menší klopýtnutí v našem velkém podniku?"" # todo: NEW TRANSLATION
+ lobby_events.60.d: "Soukromá korespondence členů [SCOPE.sPoliticalLobby('relevant_lobby').GetName] byla vydána v brožurách. Dopisy chválí [SCOPE.sCountry('relevant_lobby_country').GetName], v rozporu se záměry [SCOPE.gsInterestGroup('relevant_lobby_member').GetCustom('IG_G_TT')]." # todo: NEW TRANSLATION # todo: NAME CASE
+ lobby_events.60.f: "Na shromáždění všech členů [SCOPE.sPoliticalLobby('relevant_lobby').GetNameNoFormatting] houstne frustrace. Mnozí rychle viní [SCOPE.gsInterestGroup('relevant_lobby_member').GetCustom('IG_A')] za tento průšvih s řadou brožur distribuovaných bez jejich souhlasu.\n\nJeden člen zpochybňuje horlivost skupiny: "Ano, toto nebylo naším záměrem. Ale není to jenom menší klopýtnutí v našem velkém podniku?"" # todo: NEW TRANSLATION # todo: NAME CASE
  lobby_events.60.a: "Dobrá publicita pro [SCOPE.sCountry('relevant_lobby_country').GetNameNoFormatting] je neškodná." # todo: NEW TRANSLATION
  lobby_events.60.b: "[SCOPE.gsInterestGroup('relevant_lobby_member').GetNameNoFormatting] by měl stáhnout všechny zbývající brožury." # todo: NEW TRANSLATION
  appeasement_baseline_decay: "Základní úpadek směrem k [GetDefine('NPolitics','POLITICAL_LOBBY_BASELINE_APPEASEMENT')]"
@@ -168,72 +168,72 @@
  appeasement_trade_agreement_formed_desc: "Vytvoření [Concept('concept_trade_privilege','obchodního privilegia')]"
  appeasement_trade_agreement_broken: "Zrušení [Concept('concept_trade_privilege','obchodního privilegia')]"
  appeasement_trade_agreement_broken_desc: "Zrušení [Concept('concept_trade_privilege','obchodního privilegia')]"
- appeasement_alliance_formed: "[concept_alliance] vytvořena"
- appeasement_alliance_formed_desc: "Vytvoření [concept_alliance|l]"
- appeasement_alliance_broken: "[concept_alliance] zrušena"
- appeasement_alliance_broken_desc: "Zrušení [concept_alliance|l]"
- appeasement_defensive_pact_formed: "[concept_defensive_pact] vytvořen"
+ appeasement_alliance_formed: "[Concept('concept_alliance','Aliance')] vytvořena"
+ appeasement_alliance_formed_desc: "Vytvoření [Concept('concept_alliance','aliance')|l]"
+ appeasement_alliance_broken: "[Concept('concept_alliance','Aliance')] zrušena"
+ appeasement_alliance_broken_desc: "Zrušení [Concept('concept_alliance','aliance')|l]"
+ appeasement_defensive_pact_formed: "[Concept('concept_defensive_pact','Obranný pakt')] vytvořen"
  appeasement_defensive_pact_formed_desc: "Vytvoření [Concept('concept_defensive_pact','obranného paktu')]"
- appeasement_defensive_pact_broken: "[concept_defensive_pact] porušen"
+ appeasement_defensive_pact_broken: "[Concept('concept_defensive_pact','Obranný pakt')] porušen"
  appeasement_defensive_pact_broken_desc: "Zrušení [Concept('concept_defensive_pact','obranného paktu')]"
  appeasement_military_assistance_started: "Zahájení [Concept('concept_military_assistance','vojenské pomoci')]"
- appeasement_military_assistance_started_desc: "Zahájení [concept_military_assistance]"
- appeasement_military_assistance_broken: "[concept_military_assistance] ukončena"
+ appeasement_military_assistance_started_desc: "Zahájení [Concept('concept_military_assistance','vojenská pomoc')]"
+ appeasement_military_assistance_broken: "[Concept('concept_military_assistance','Vojenská pomoc')] ukončena"
  appeasement_military_assistance_broken_desc: "Ukončení [Concept('concept_military_assistance','vojenské pomoci')]"
- appeasement_foreign_investment_agreement_formed: "Pakt [concept_foreign_investment_rights] vytvořen"
+ appeasement_foreign_investment_agreement_formed: "Pakt [Concept('concept_foreign_investment_rights','práva na zahraniční investice')] vytvořen"
  appeasement_foreign_investment_agreement_formed_desc: "Vytvoření vzájemného paktu [Concept('concept_foreign_investment_rights','práv na zahraniční investice')]"
- appeasement_foreign_investment_agreement_broken: "Pakt [concept_foreign_investment_rights] zrušen"
+ appeasement_foreign_investment_agreement_broken: "Pakt [Concept('concept_foreign_investment_rights','práva na zahraniční investice')] zrušen"
  appeasement_foreign_investment_agreement_broken_desc: "Porušení vzájemného paktu [Concept('concept_foreign_investment_rights','práv na zahraniční investice')]"
- appeasement_rivalry_declared: "[concept_rivalry] vyhlášena"
+ appeasement_rivalry_declared: "[Concept('concept_rivalry','Rivalita')] vyhlášena"
  appeasement_rivalry_declared_desc: "Vyhlášení jich za svoje [Concept('concept_rivalry','rivaly')]"
- appeasement_rivalry_ended: "[concept_rivalry] ukončena"
+ appeasement_rivalry_ended: "[Concept('concept_rivalry','Rivalita')] ukončena"
  appeasement_rivalry_ended_desc: "Ukončení [Concept('concept_rivalry','rivality')]"
- appeasement_embargo_declared: "[concept_embargo] vyhlášeno"
+ appeasement_embargo_declared: "[Concept('concept_embargo','Embargo')] vyhlášeno"
  appeasement_embargo_declared_desc: "Vyhlášení [Concept('concept_embargo','embarga')]"
- appeasement_embargo_ended: "[concept_embargo] ukončeno"
+ appeasement_embargo_ended: "[Concept('concept_embargo','Embargo')] ukončeno"
  appeasement_embargo_ended_desc: "Ukončení [Concept('concept_embargo','embarga')]"
- appeasement_overtook_in_prestige_rank: "Předbehl je v top #v [GetDefine('NDiplomacy','DIPLOMATIC_CATALYST_MIN_SCORE_POSITION_FOR_OVERTAKE')]#! [concept_prestige|l] řebříčku"
- appeasement_overtook_in_prestige_rank_desc: "Převzetí jich v top #v [GetDefine('NDiplomacy','DIPLOMATIC_CATALYST_MIN_SCORE_POSITION_FOR_OVERTAKE')]#! [concept_prestige|l] řebříčku"
- appeasement_overtaken_in_prestige_rank: "Předbehl jimi v top #v [GetDefine('NDiplomacy','DIPLOMATIC_CATALYST_MIN_SCORE_POSITION_FOR_OVERTAKE')]#! [concept_prestige|l] řebříčku"
- appeasement_overtaken_in_prestige_rank_desc: "Předbehnutí jich v top #v [GetDefine('NDiplomacy','DIPLOMATIC_CATALYST_MIN_SCORE_POSITION_FOR_OVERTAKE')]#! [concept_prestige|l] řebříčku"
- appeasement_knowledge_sharing_started: "[concept_overlord] začal sdílení znalostí"
- appeasement_knowledge_sharing_started_desc: "Sdílení znalostí od [concept_overlord]"
- appeasement_knowledge_sharing_ended: "[concept_overlord] ukončil sdílení znalostí"
- appeasement_knowledge_sharing_ended_desc: "[concept_overlord] zrušil sdílení znalostí"
- appeasement_support_regime_started: "[concept_overlord] začal režim podpory"
- appeasement_support_regime_started_desc: "Režim podpory od [concept_overlord]"
- appeasement_support_regime_ended: "[concept_overlord] ukončil režim podpory"
- appeasement_support_regime_ended_desc: "[concept_overlord] zrušil režim podpory"
- appeasement_rival_surpassed: "[Concept('concept_rivalry','$concept_rival$')] Předči"
- appeasement_rival_surpassed_desc: "Předčí je jako [Concept('concept_rivalry','$concept_rival$')]"
+ appeasement_overtook_in_prestige_rank: "Předbehl je v top #v [GetDefine('NDiplomacy','DIPLOMATIC_CATALYST_MIN_SCORE_POSITION_FOR_OVERTAKE')]#! [Concept('concept_prestige','prestiž')|l] řebříčku"
+ appeasement_overtook_in_prestige_rank_desc: "Převzetí jich v top #v [GetDefine('NDiplomacy','DIPLOMATIC_CATALYST_MIN_SCORE_POSITION_FOR_OVERTAKE')]#! [Concept('concept_prestige','prestiž')|l] řebříčku"
+ appeasement_overtaken_in_prestige_rank: "Předbehl jimi v top #v [GetDefine('NDiplomacy','DIPLOMATIC_CATALYST_MIN_SCORE_POSITION_FOR_OVERTAKE')]#! [Concept('concept_prestige','prestiž')|l] řebříčku"
+ appeasement_overtaken_in_prestige_rank_desc: "Předbehnutí jich v top #v [GetDefine('NDiplomacy','DIPLOMATIC_CATALYST_MIN_SCORE_POSITION_FOR_OVERTAKE')]#! [Concept('concept_prestige','prestiž')|l] řebříčku"
+ appeasement_knowledge_sharing_started: "[Concept('concept_overlord','Vládce')] začal sdílení znalostí"
+ appeasement_knowledge_sharing_started_desc: "Sdílení znalostí od [Concept('concept_overlord','vládce')]"
+ appeasement_knowledge_sharing_ended: "[Concept('concept_overlord','Vládce')] ukončil sdílení znalostí"
+ appeasement_knowledge_sharing_ended_desc: "[Concept('concept_overlord','Vládce')] zrušil sdílení znalostí"
+ appeasement_support_regime_started: "[Concept('concept_overlord','Vládce')] začal režim podpory"
+ appeasement_support_regime_started_desc: "Režim podpory od [Concept('concept_overlord','vládce')]"
+ appeasement_support_regime_ended: "[Concept('concept_overlord','Vládce')] ukončil režim podpory"
+ appeasement_support_regime_ended_desc: "[Concept('concept_overlord','Vládce')] zrušil režim podpory"
+ appeasement_rival_surpassed: "[Concept('concept_rivalry','Rival')] Předči"
+ appeasement_rival_surpassed_desc: "Předčí je jako [Concept('concept_rivalry','rival')]"
  appeasement_relations_increased: "Úroveň [Concept('concept_relations','vztahů')] zlepšena"
  appeasement_relations_increased_desc: "Zlepšování našich [Concept('concept_relations','vztahů')] na vyšší úroveň"
  appeasement_relations_decreased: "Úroveň [Concept('concept_relations','vztahů')] snížena"
  appeasement_relations_decreased_desc: "Zhoršování našich [Concept('concept_relations','vztahů')] na nižší úroveň"
- appeasement_diplomatic_demand_made: "[concept_diplomatic_demand] vytvořen"
- appeasement_diplomatic_demand_made_desc: "Vytvoření [concept_diplomatic_demand|l]"
- appeasement_diplomatic_play_started: "[concept_diplomatic_play] zahájena"
+ appeasement_diplomatic_demand_made: "[Concept('concept_diplomatic_demand','Diplomatický požadavek')] vytvořen"
+ appeasement_diplomatic_demand_made_desc: "Vytvoření [Concept('concept_diplomatic_demand','diplomatický požadavek')|l]"
+ appeasement_diplomatic_play_started: "[Concept('concept_diplomatic_play','Diplomatická hra')] zahájena"
  appeasement_diplomatic_play_started_desc: "Zahájení [Concept('concept_diplomatic_play','diplomatické hry')]"
- appeasement_lobby_request_ignored: "[concept_political_lobby_demand] ignorován"
+ appeasement_lobby_request_ignored: "[Concept('concept_political_lobby_demand','Požadavek lobbistů')] ignorován"
  appeasement_lobby_request_ignored_desc: "Ignorování [Concept('concept_political_lobby_demand','požadavku lobbistů')]"
- appeasement_lobby_request_accepted: "[concept_political_lobby_demand] splněn"
+ appeasement_lobby_request_accepted: "[Concept('concept_political_lobby_demand','Požadavek lobbistů')] splněn"
  appeasement_lobby_request_accepted_desc: "Splnění [Concept('concept_political_lobby_demand','požadavku lobbistů')]"
- appeasement_lobby_request_failed: "[concept_political_lobby_demand] odmítnut"
+ appeasement_lobby_request_failed: "[Concept('concept_political_lobby_demand','Požadavek lobbistů')] odmítnut"
  appeasement_lobby_request_failed_desc: "Odmítnutí [Concept('concept_political_lobby_demand','požadavku lobbistů')]"
- appeasement_autonomy_increased: "[concept_autonomy] zvýšená"
- appeasement_autonomy_increased_desc: "Zvyšování naší úrovně [concept_autonomy|l]"
- appeasement_autonomy_decreased: "[concept_autonomy] snížená"
- appeasement_autonomy_decreased_desc: "Snižování naší úrovně [concept_autonomy|l]"
+ appeasement_autonomy_increased: "[Concept('concept_autonomy','Autonomie')] zvýšená"
+ appeasement_autonomy_increased_desc: "Zvyšování naší úrovně [Concept('concept_autonomy','autonomie')|l]"
+ appeasement_autonomy_decreased: "[Concept('concept_autonomy','Autonomie')] snížená"
+ appeasement_autonomy_decreased_desc: "Snižování naší úrovně [Concept('concept_autonomy','autonomie')|l]"
  appeasement_gained_independence: "Získána nezávislost"
  appeasement_gained_independence_desc: "Získání plné nezávislosti"
  appeasement_became_subject: "Stala se [Concept('concept_subject','závislou zemí')]"
  appeasement_became_subject_desc: "Stání se jejich [Concept('concept_subject','závislou zemí')]"
  appeasement_independence_supported: "Podporována nezávislost"
- appeasement_independence_supported_desc: "Podpora nezávislosti od jiných [Concept('concept_country', '$concept_countries$')]"
+ appeasement_independence_supported_desc: "Podpora nezávislosti od jiných [Concept('concept_country','zemí')]" # todo: CONCEPT CASE
  appeasement_imposed_law_enacted: "Uplatněný zákon byl schválen"
- appeasement_imposed_law_enacted_desc: "[Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enacted$')] [concept_law], který na ně byl uplatněn"
+ appeasement_imposed_law_enacted_desc: "[Concept('concept_enactment_of_laws','Uzákoněn')] [Concept('concept_law','zákon')], který na ně byl uplatněn"
  appeasement_imposed_law_rejected: "Uplatněný zákon byl odmítnut"
- appeasement_imposed_law_rejected_desc: "Odmítnutí [concept_law], který na ně byl uplatněn"
+ appeasement_imposed_law_rejected_desc: "Odmítnutí [Concept('concept_law','zákon')], který na ně byl uplatněn"
  appeasement_special_events_positive: "Z událostí"
  appeasement_special_events_positive_desc: "Z událostí nebo jiných důvodů"
  appeasement_special_events_negative: "Z událostí"
@@ -244,7 +244,7 @@
  appeasement_british_dictate_rejected_desc: "Odmítnutí diktátu od našeho suzeréna"
  appeasement_british_dictate_succeeded: "Splněn suverénní diktát"
  appeasement_british_dictate_succeeded_desc: "Úspěšné splnění diktátu od našeho suzeréna"
- appeasement_orchestrate_coup_started: "Zorganizoval [concept_coup]" # todo: NEW TRANSLATION
- appeasement_orchestrate_coup_started_desc: "Zorganizoval [concept_coup] proti jejich [concept_government]" # todo: NEW TRANSLATION
- appeasement_orchestrate_coup_ended: "Odvolal podporu pro [concept_coup]" # todo: NEW TRANSLATION
- appeasement_orchestrate_coup_ended_desc: "Odvolal podporu pro [concept_coup] proti jejich [concept_government]" # todo: NEW TRANSLATION
+ appeasement_orchestrate_coup_started: "Zorganizoval [Concept('concept_coup','puč')]" # todo: NEW TRANSLATION
+ appeasement_orchestrate_coup_started_desc: "Zorganizoval [Concept('concept_coup','puč')] proti jejich [Concept('concept_government','vláda')]" # todo: NEW TRANSLATION
+ appeasement_orchestrate_coup_ended: "Odvolal podporu pro [Concept('concept_coup','puč')]" # todo: NEW TRANSLATION
+ appeasement_orchestrate_coup_ended_desc: "Odvolal podporu pro [Concept('concept_coup','puč')] proti jejich [Concept('concept_government','vláda')]" # todo: NEW TRANSLATION

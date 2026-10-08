@@ -17,10 +17,10 @@
  NON_HISTORICAL_FILTER_NAME: "Nehistorický" # todo: CHANGED
  ideology_child: "Dítě" # todo: NEW TRANSLATION
  ideology_child_desc: "Tato postava je dítě a ještě si nevyvinula politickou ideologii." # todo: CHANGED
- character_role_ig_leader: "[concept_leader]" # todo: NEW TRANSLATION
- character_role_magnate: "[concept_magnate]" # todo: NEW TRANSLATION
+ character_role_ig_leader: "[Concept('concept_leader','Vůdce')]" # todo: NEW TRANSLATION
+ character_role_magnate: "[Concept('concept_magnate','Magnát')]" # todo: NEW TRANSLATION
  character_role_other: "Ostatní" # todo: NEW TRANSLATION
- holding_revenue_magnate_scale: "[concept_holding] [concept_revenue]" # todo: NEW TRANSLATION
+ holding_revenue_magnate_scale: "[Concept('concept_holding','Držení')] [Concept('concept_revenue','příjmy')]" # todo: NEW TRANSLATION
  PREP_IN: "v" # todo: NEW TRANSLATION
  PREP_OF: "z" # todo: NEW TRANSLATION
  character_title_lord: "Pán" # todo: CHANGED
@@ -41,40 +41,40 @@
  LOYALTY_NEUTRAL: "#v Neutrální#!"
  LOYALTY_RELIABLE: "#p Spolehlivý#!"
  LOYALTY_FAITHFUL: "#p Věrný#!"
- INTEREST_GROUP_APPROVAL: "[concept_approval] [INTEREST_GROUP.GetName]"
- CHARACTER_IDEOLOGY_STANCES: "[IDEOLOGY.GetName] postoje k aktuálním a přijímaným [Concept('concept_law','$concept_laws$')]" # todo: CHANGED
+ INTEREST_GROUP_APPROVAL: "[Concept('concept_approval','Spokojenost')] [INTEREST_GROUP.GetCustom('IG_G_TT')]" # todo: NAME CASE
+ CHARACTER_IDEOLOGY_STANCES: "[IDEOLOGY.GetName] postoje k aktuálním a přijímaným [Concept('concept_law','zákonům')]" # todo: CHANGED # todo: CONCEPT CASE
  ASSIGN_COMMANDER_WRONG_TYPE: "[CHARACTER.GetFullName] nelze přiřadit k [MILITARY_FORMATION.GetName], protože nejsou správným typem velitele pro [MILITARY_FORMATION.GetName]." # todo: CHANGED
  ASSIGN_COMMANDER_ALREADY_ASSIGNED: "[CHARACTER.GetFullName] je již přiřazen k [MILITARY_FORMATION.GetName]." # todo: NEW TRANSLATION
  ASSIGN_COMMANDER_BUSY: "[CHARACTER.GetFullName] je zaneprázdněn." # todo: CHANGED
- ASSIGN_COMMANDER_NOT_RECRUITED: "[CHARACTER.GetFullName] musí být rekrutován, než může být přiřazen k [concept_military_formation]." # todo: CHANGED
+ ASSIGN_COMMANDER_NOT_RECRUITED: "[CHARACTER.GetFullName] musí být rekrutován, než může být přiřazen k [Concept('concept_military_formation','formacím')]." # todo: CHANGED # todo: CONCEPT CASE
  ASSIGN_COMMANDER_MENU_TITLE: "[SelectLocalization(MilitaryFormation.IsArmy, 'MILITARY_FORMATION_GENERALS_CONCEPT', 'MILITARY_FORMATION_ADMIRALS_CONCEPT')]" # todo: NEW TRANSLATION
  ASSIGN_COMMANDER_ASSIGNED_HEADER: "Již přiřazeno" # todo: CHANGED
  ASSIGN_COMMANDER_UNASSIGNED_HEADER: "Volný" # todo: NEW TRANSLATION
  ASSIGN_COMMANDER_RECRUITABLE_HEADER: "K rekrutaci" # todo: CHANGED
- ASSIGN_COMMANDER_TOOLTIP: "#header Přiřadit [Character.GetFullName]#!\n[Character.GetCommandLimit] [concept_command_limit][ConcatIfNeitherEmpty('\n', GetDesc(Character.AssignToFormation(MilitaryFormation.Self)))]\n$TOOLTIP_DELIMITER$\n[Character.GetFirstName] bude přiřazen k [MilitaryFormation.GetName][ConcatIfNeitherEmpty('\n', AddLocalizationIf(MilitaryFormation.GetCommander.IsValid, 'CURRENT_COMMANDER_IDLE_TOOLTIP'))]" # todo: NEW TRANSLATION
- ASSIGN_COMMANDER_SWAP_TOOLTIP: "#header Vyměnit s [Character.GetFullName]#!\n[Character.GetCommandLimit] [concept_command_limit][ConcatIfNeitherEmpty('\n', GetDesc(Character.AssignToFormation(MilitaryFormation.Self)))]\n$TOOLTIP_DELIMITER$\n[Character.GetFirstName] bude přiřazen k [MilitaryFormation.GetName][ConcatIfNeitherEmpty('\n', AddLocalizationIf(MilitaryFormation.GetCommander.IsValid, 'CURRENT_COMMANDER_SWAP_TOOLTIP'))]" # todo: CHANGED
+ ASSIGN_COMMANDER_TOOLTIP: "#header Přiřadit [Character.GetFullName]#!\n[Character.GetCommandLimit] [Concept('concept_command_limit','velitelský limit')][ConcatIfNeitherEmpty('\n', GetDesc(Character.AssignToFormation(MilitaryFormation.Self)))]\n$TOOLTIP_DELIMITER$\n[Character.GetFirstName] bude přiřazen k [MilitaryFormation.GetName][ConcatIfNeitherEmpty('\n', AddLocalizationIf(MilitaryFormation.GetCommander.IsValid, 'CURRENT_COMMANDER_IDLE_TOOLTIP'))]" # todo: NEW TRANSLATION
+ ASSIGN_COMMANDER_SWAP_TOOLTIP: "#header Vyměnit s [Character.GetFullName]#!\n[Character.GetCommandLimit] [Concept('concept_command_limit','velitelský limit')][ConcatIfNeitherEmpty('\n', GetDesc(Character.AssignToFormation(MilitaryFormation.Self)))]\n$TOOLTIP_DELIMITER$\n[Character.GetFirstName] bude přiřazen k [MilitaryFormation.GetName][ConcatIfNeitherEmpty('\n', AddLocalizationIf(MilitaryFormation.GetCommander.IsValid, 'CURRENT_COMMANDER_SWAP_TOOLTIP'))]" # todo: CHANGED
  CURRENT_COMMANDER_SWAP_TOOLTIP: "[MilitaryFormation.GetCommander.GetFullName] will be assigned to [Character.GetMilitaryFormation.GetName]" # todo: CHANGED
- ASSIGN_COMMANDER_RECRUIT_TOOLTIP: "#header Najmout [Character.GetFullName]#!\n[Character.GetCommandLimit] [concept_command_limit][ConcatIfNeitherEmpty('\n', GetDesc(Character.GetRecruitCommand(MilitaryFormation.Self)))]\n$TOOLTIP_DELIMITER$\n[Character.GetFirstName] bude přiřazen k [MilitaryFormation.GetName][ConcatIfNeitherEmpty('\n', AddLocalizationIf(MilitaryFormation.GetCommander.IsValid, 'CURRENT_COMMANDER_IDLE_TOOLTIP'))]" # todo: CHANGED
+ ASSIGN_COMMANDER_RECRUIT_TOOLTIP: "#header Najmout [Character.GetFullName]#!\n[Character.GetCommandLimit] [Concept('concept_command_limit','velitelský limit')][ConcatIfNeitherEmpty('\n', GetDesc(Character.GetRecruitCommand(MilitaryFormation.Self)))]\n$TOOLTIP_DELIMITER$\n[Character.GetFirstName] bude přiřazen k [MilitaryFormation.GetName][ConcatIfNeitherEmpty('\n', AddLocalizationIf(MilitaryFormation.GetCommander.IsValid, 'CURRENT_COMMANDER_IDLE_TOOLTIP'))]" # todo: CHANGED
  CURRENT_COMMANDER_IDLE_TOOLTIP: "[MilitaryFormation.GetCommander.GetFullName] se stane #b volným#!" # todo: NEW TRANSLATION
  ASSIGN_COMMANDER_CHARACTER_ENTRY: "[SelectLocalization(Character.HasMilitaryFormation,'ASSIGN_COMMANDER_CHARACTER_ENTRY_ASSIGNED','ASSIGN_COMMANDER_CHARACTER_ENTRY_UNASSIGNED')]" # todo: NEW TRANSLATION
  ASSIGN_COMMANDER_CHARACTER_ENTRY_ASSIGNED: "[Character.GetMilitaryFormation.GetTextIcon] [Character.GetFullNameNoFormatting]" # todo: NEW TRANSLATION
  ASSIGN_COMMANDER_CHARACTER_ENTRY_UNASSIGNED: "[Character.GetFullNameNoFormatting]" # todo: NEW TRANSLATION
- UNASSIGN_COMMANDER_NO_FORMATION: "[Character.GetFullName] není přiřazen k žádné [concept_military_formation]." # todo: NEW TRANSLATION
+ UNASSIGN_COMMANDER_NO_FORMATION: "[Character.GetFullName] není přiřazen k žádné [Concept('concept_military_formation','formaci')]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  UNASSIGN_COMMANDER_TOOLTIP: "Odebrat [Character.GetFullName] z [Character.GetMilitaryFormation.GetName][ConcatIfNeitherEmpty('\n\n', GetDesc(Character.UnassignFromFormation))]" # todo: CHANGED
  UNASSIGN_COMMANDER_TEXT: "Odebrat přiřazení [Character.GetFullNameNoFormatting]" # todo: CHANGED
  UNASSIGN_COMMANDER_WITH_FORMATION: "Odebrat z [Character.GetMilitaryFormation.GetName]" # todo: CHANGED
  ASSIGN_OR_RECRUIT_CHARACTER: "[SelectLocalization(MilitaryFormation.IsFleet,'ASSIGN_OR_RECRUIT_CHARACTER_ADMIRAL','ASSIGN_OR_RECRUIT_CHARACTER_GENERAL')]" # todo: NEW TRANSLATION
- ASSIGN_OR_RECRUIT_CHARACTER_GENERAL: "Přiřadit nebo najmout [concept_general] pro [MilitaryFormation.GetName]" # todo: CHANGED
- ASSIGN_OR_RECRUIT_CHARACTER_ADMIRAL: "Přiřadit nebo najmout [concept_admiral] pro [MilitaryFormation.GetName]" # todo: CHANGED
+ ASSIGN_OR_RECRUIT_CHARACTER_GENERAL: "Přiřadit nebo najmout [Concept('concept_general','generál')] pro [MilitaryFormation.GetName]" # todo: CHANGED
+ ASSIGN_OR_RECRUIT_CHARACTER_ADMIRAL: "Přiřadit nebo najmout [Concept('concept_admiral','admirál')] pro [MilitaryFormation.GetName]" # todo: CHANGED
  RECRUIT_COMMANDER_UNASSIGNED_LIMIT: "Nelze najmout [CHARACTER.GetFullName], protože [COUNTRY.GetName] již má [SelectLocalization(MILITARY_FORMATION.IsFleet,'NUM_IDLE_ADMIRALS','NUM_IDLE_GENERALS')]/[SelectLocalization(MILITARY_FORMATION.IsFleet,'MAX_IDLE_ADMIRALS','MAX_IDLE_GENERALS')] volných [SelectLocalization(MilitaryFormation.IsArmy, 'MILITARY_FORMATION_GENERALS_CONCEPT', 'MILITARY_FORMATION_ADMIRALS_CONCEPT')]." # todo: CHANGED
  UNASSIGN_COMMANDER_LIMIT: "Nelze odebrat přiřazení [CHARACTER.GetFullName], protože [COUNTRY.GetName] již má [SelectLocalization(CHARACTER.IsAdmiral,'NUM_IDLE_ADMIRALS','NUM_IDLE_GENERALS')]/[SelectLocalization(CHARACTER.IsAdmiral,'MAX_IDLE_ADMIRALS','MAX_IDLE_GENERALS')] volných [SelectLocalization(MilitaryFormation.IsArmy, 'MILITARY_FORMATION_GENERALS_CONCEPT', 'MILITARY_FORMATION_ADMIRALS_CONCEPT')]." # todo: CHANGED
- DISBAND_FORMATION_UNASSIGNED_COMMANDER_LIMIT: "Nelze rozpustit [MILITARY_FORMATION.GetName], protože jeho [concept_commander] by zůstal volný a [COUNTRY.GetName] již má [SelectLocalization(MILITARY_FORMATION.IsFleet,'NUM_IDLE_ADMIRALS','NUM_IDLE_GENERALS')]/[SelectLocalization(MILITARY_FORMATION.IsFleet,'MAX_IDLE_ADMIRALS','MAX_IDLE_GENERALS')] volných [SelectLocalization(MilitaryFormation.IsArmy, 'MILITARY_FORMATION_GENERALS_CONCEPT', 'MILITARY_FORMATION_ADMIRALS_CONCEPT')]." # todo: CHANGED
- MERGE_FORMATION_UNASSIGNED_COMMANDER_LIMIT: "Nelze sloučit [MILITARY_FORMATION.GetName], protože [concept_commander] by zůstal volný a [COUNTRY.GetName] již má [SelectLocalization(MILITARY_FORMATION.IsFleet,'NUM_IDLE_ADMIRALS','NUM_IDLE_GENERALS')]/[SelectLocalization(MILITARY_FORMATION.IsFleet,'MAX_IDLE_ADMIRALS','MAX_IDLE_GENERALS')] volných [SelectLocalization(MilitaryFormation.IsArmy, 'MILITARY_FORMATION_GENERALS_CONCEPT', 'MILITARY_FORMATION_ADMIRALS_CONCEPT')]." # todo: CHANGED
+ DISBAND_FORMATION_UNASSIGNED_COMMANDER_LIMIT: "Nelze rozpustit [MILITARY_FORMATION.GetName], protože jeho [Concept('concept_commander','velitel')] by zůstal volný a [COUNTRY.GetName] již má [SelectLocalization(MILITARY_FORMATION.IsFleet,'NUM_IDLE_ADMIRALS','NUM_IDLE_GENERALS')]/[SelectLocalization(MILITARY_FORMATION.IsFleet,'MAX_IDLE_ADMIRALS','MAX_IDLE_GENERALS')] volných [SelectLocalization(MilitaryFormation.IsArmy, 'MILITARY_FORMATION_GENERALS_CONCEPT', 'MILITARY_FORMATION_ADMIRALS_CONCEPT')]." # todo: CHANGED # todo: CONCEPT CASE
+ MERGE_FORMATION_UNASSIGNED_COMMANDER_LIMIT: "Nelze sloučit [MILITARY_FORMATION.GetName], protože [Concept('concept_commander','velitel')] by zůstal volný a [COUNTRY.GetName] již má [SelectLocalization(MILITARY_FORMATION.IsFleet,'NUM_IDLE_ADMIRALS','NUM_IDLE_GENERALS')]/[SelectLocalization(MILITARY_FORMATION.IsFleet,'MAX_IDLE_ADMIRALS','MAX_IDLE_GENERALS')] volných [SelectLocalization(MilitaryFormation.IsArmy, 'MILITARY_FORMATION_GENERALS_CONCEPT', 'MILITARY_FORMATION_ADMIRALS_CONCEPT')]." # todo: CHANGED
  NUM_IDLE_GENERALS: "[GetPlayer.GetNumUnassignedGenerals|v]" # todo: NEW TRANSLATION
  NUM_IDLE_ADMIRALS: "[GetPlayer.GetNumUnassignedAdmirals|v]" # todo: NEW TRANSLATION
  MAX_IDLE_GENERALS: "[GetPlayer.GetMaxUnassignedGenerals|v]" # todo: NEW TRANSLATION
  MAX_IDLE_ADMIRALS: "[GetPlayer.GetMaxUnassignedAdmirals|v]" # todo: NEW TRANSLATION
  PROMOTE_COMMANDER_RECENTLY_PROMOTED: "Efekty na [CHARACTER.GetFullName]:\n$EFFECT$ postupně slábnou během [GetDefine('NMilitary','RECENTLY_PROMOTED_YEARS')|v] let" # todo: CHANGED
- PROMOTE_COMMANDER_UNNECESSARY_WARNING: "@warning! Současní [Concept('concept_commander','$concept_commanders$')] jsou pro potřeby vašich [Concept('concept_military_formation','$concept_military_formations$')] dostateční. Toto povýšení je $INTEREST_GROUPS$ vnímáno jako zbytečné, což vede k:\n$EFFECT$ po dobu [GetDefine('NMilitary','UNNECESSARY_PROMOTION_PENALTY_YEARS')|v] let" # todo: CHANGED
- CHARACTER_IS_TRAVELLING_TO_FORMATION_TOOLTIP: "#header Na cestě [concept_commander]#!\n[Character.GetFullNameWithTitle] dorazí za [Character.GetTravelDaysLeft|v] dní ([Character.GetTravelArrivalDate|v])\n$TOOLTIP_DELIMITER$\nDokud [Character.GetSheHe] nedorazí, [Character.GetMilitaryFormation.GetName] nebude mít žádný prospěch z [Character.GetFullNamePossessive] #b dovednosti#! [Concept('concept_character_trait','$concept_character_traits_short$')]." # todo: CHANGED
+ PROMOTE_COMMANDER_UNNECESSARY_WARNING: "@warning! Současní [Concept('concept_commander','velitelé')] jsou pro potřeby vašich [Concept('concept_military_formation','formací')] dostateční. Toto povýšení je $INTEREST_GROUPS$ vnímáno jako zbytečné, což vede k:\n$EFFECT$ po dobu [GetDefine('NMilitary','UNNECESSARY_PROMOTION_PENALTY_YEARS')|v] let" # todo: CHANGED # todo: CONCEPT CASE
+ CHARACTER_IS_TRAVELLING_TO_FORMATION_TOOLTIP: "#header Na cestě [Concept('concept_commander','veliteli')]#!\n[Character.GetFullNameWithTitle] dorazí za [Character.GetTravelDaysLeft|v] dní ([Character.GetTravelArrivalDate|v])\n$TOOLTIP_DELIMITER$\nDokud [Character.GetSheHe] nedorazí, [Character.GetMilitaryFormation.GetName] nebude mít žádný prospěch z [Character.GetFullNamePossessive] #b dovednosti#! [Concept('concept_character_trait','rysy')]." # todo: CHANGED # todo: CONCEPT CASE
  CHARACTER_IS_TRAVELLING_TO_FORMATION: "@information! [Character.GetFullNameWithTitle] cestuje, aby se připojil k [Character.GetMilitaryFormation.GetName] a dorazí za [Character.GetTravelDaysLeft|v] dní ([Character.GetTravelArrivalDate|v])" # todo: CHANGED

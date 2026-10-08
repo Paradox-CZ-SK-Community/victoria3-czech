@@ -1,0 +1,106 @@
+﻿# Automaticky generovane: debug skloňovania strán (cz_party_debug)
+
+CZDBG_TYPE = {
+  type = party
+  log_loc_errors = yes
+  text = {
+    trigger = { is_party_type = agrarian_party }
+    localization_key = cz_dbg_type_agrarian_party
+  }
+  text = {
+    trigger = { is_party_type = anarchist_party }
+    localization_key = cz_dbg_type_anarchist_party
+  }
+  text = {
+    trigger = { is_party_type = communist_party }
+    localization_key = cz_dbg_type_communist_party
+  }
+  text = {
+    trigger = { is_party_type = conservative_party }
+    localization_key = cz_dbg_type_conservative_party
+  }
+  text = {
+    trigger = { is_party_type = fascist_party }
+    localization_key = cz_dbg_type_fascist_party
+  }
+  text = {
+    trigger = { is_party_type = free_trade_party }
+    localization_key = cz_dbg_type_free_trade_party
+  }
+  text = {
+    trigger = { is_party_type = liberal_party }
+    localization_key = cz_dbg_type_liberal_party
+  }
+  text = {
+    trigger = { is_party_type = military_party }
+    localization_key = cz_dbg_type_military_party
+  }
+  text = {
+    trigger = { is_party_type = radical_party }
+    localization_key = cz_dbg_type_radical_party
+  }
+  text = {
+    trigger = { is_party_type = religious_party }
+    localization_key = cz_dbg_type_religious_party
+  }
+  text = {
+    trigger = { is_party_type = revolutionary_party }
+    localization_key = cz_dbg_type_revolutionary_party
+  }
+  text = {
+    trigger = { is_party_type = social_democrat_party }
+    localization_key = cz_dbg_type_social_democrat_party
+  }
+  text = {
+    trigger = { always = yes }
+    localization_key = cz_dbg_no
+  }
+}
+
+CZDBG_MEMBER_OWNER = {
+  type = party
+  log_loc_errors = yes
+  text = {
+    trigger = { any_member = { owner = { exists = this } } }
+    localization_key = cz_dbg_yes
+  }
+  text = {
+    trigger = { always = yes }
+    localization_key = cz_dbg_no
+  }
+}
+
+CZDBG_OWNER = {
+  type = party
+  log_loc_errors = yes
+  text = {
+    trigger = { owner = { exists = this } }
+    localization_key = cz_dbg_yes
+  }
+  text = {
+    trigger = { always = yes }
+    localization_key = cz_dbg_no
+  }
+}
+
+CZDBG_SCOPE_SEEN = {
+  type = country
+  log_loc_errors = yes
+  text = {
+    trigger = { exists = scope:cz_dbg_party_test }
+    localization_key = cz_dbg_yes
+  }
+  text = {
+    trigger = { always = yes }
+    localization_key = cz_dbg_no
+  }
+}
+
+CZDBG_ROOT_PARTY = {
+  type = party
+  log_loc_errors = yes
+  text = {
+    trigger = { always = yes }
+    localization_key = czdbg_root_party
+  }
+}

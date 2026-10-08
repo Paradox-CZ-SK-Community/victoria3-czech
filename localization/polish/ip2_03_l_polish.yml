@@ -2,11 +2,11 @@
  je_imperialism_of_promise: "Imperialismus příslibu"
  je_imperialism_of_promise_reason: "Máme povinnost podporovat obecné dobro všemi nezbytnými prostředky. Základní svobody a rovné příležitosti hrají v tvorbě politiky ústřední roli. [GetIdeology('ideology_utilitarian_millian').GetName] přístup ke koloniální správě slibuje silnou sílu pokroku jak v zemi [ROOT.GetCountry.GetName], tak po celém světě."
  je_imperialism_of_promise_status: "Dohlížejte na [GetIdeology('ideology_utilitarian_millian').GetName] přístup ke koloniální správě v zemi [JournalEntry.GetCountry.GetName]."
- utilitarian_character_trigger: "Libovolný [concept_agitator] nebo [concept_leader] má [concept_ideology] [GetIdeology('ideology_utilitarian_leader').GetName]."
+ utilitarian_character_trigger: "Libovolný [Concept('concept_agitator','agitátor')] nebo [Concept('concept_leader','vůdce')] má [Concept('concept_ideology','ideologie')] [GetIdeology('ideology_utilitarian_leader').GetName]."
  has_any_secessionists_fail_tt: "Od země [ROOT.GetCountry.GetName] se odtrhly nějaké odštěpující se země."
- bic_collapse_var_tt: "[ROOT.GetCountry.GetName] již není [concept_subject]"
+ bic_collapse_var_tt: "[ROOT.GetCountry.GetName] již není [Concept('concept_subject','závislá země')]"
  secession_war_in_progress_tt: "[Concept('concept_political_movement','$movement_cultural_minority$')] se [Concept('concept_secession','odtrhává')]"
- bureaucrats_no_shortage_trigger: "[ROOT.GetCountry.GetAdjectiveNoFlag] [concept_bureaucracy] je vyšší nebo rovna #v 0#! a země se #bold nechystá#! vstoupit do deficitu [concept_bureaucracy]"
+ bureaucrats_no_shortage_trigger: "[ROOT.GetCountry.GetAdjectiveNoFlag] [Concept('concept_bureaucracy','byrokracie')] je vyšší nebo rovna #v 0#! a země se #bold nechystá#! vstoupit do deficitu [Concept('concept_bureaucracy','byrokracie')]" # todo: CONCEPT CASE
  utilitarian.1.t: "Dobrá vláda pro všechny"
  utilitarian.1.d: "Principy ideologie [GetIdeology('ideology_utilitarian_millian').GetName] nyní hrají ústřední roli v tvorbě politiky země [ROOT.GetCountry.GetAdjective]. Správa byla zreformována tak, aby fungovala jako dobře promazaný stroj."
  utilitarian.1.f: "Oddanost osoby [SCOPE.sCharacter('relevant_character').GetFullNameNoFormatting] utilitarismu se prohloubila díky tomuto úspěchu při řízení rozvoje země [ROOT.GetCountry.GetNameNoFormatting]. Ačkoli někteří stále zpochybňují hodnotu přístupu osoby [SCOPE.sCharacter('relevant_character').GetLastNameNoFormatting] ke koloniální správě, [SCOPE.gsInterestGroup('relevant_ig').GetNameNoFormatting] vystoupili, aby se zasadili o utilitaristický přístup.\n\nZatímco lid Indie pokračuje ve svém životě, čas ukáže, zda plody práce správy budou tak trvalé a dalekosáhlé, jak všichni doufají. Tento úspěch je majákem pro budoucí reformu."
@@ -58,7 +58,7 @@
  utilitarian.8.a: "[SCOPE.gsInterestGroup('relevant_ig').GetNameNoFormatting] mohou pomoci tyto změny prosadit."
  utilitarian.8.b: "Reagovat na depeši je nevýhodné."
  util_law_enactment_progress: "Prosazování změny"
- clerk_state_radicals_increase_tt: "[Concept('concept_pop', '$concept_pops$')] ve státech s politickou silou [SCOPE.gsInterestGroup('relevant_ig').GetName] nad 10 % se stanou více [concept_radical]"
+ clerk_state_radicals_increase_tt: "[Concept('concept_pop','Populace')] ve státech s politickou silou [SCOPE.gsInterestGroup('relevant_ig').GetCustom('IG_G_TT')] nad 10 % se stanou více [Concept('concept_radical','radikál')]" # todo: NAME CASE
  no_edu_change_stance_gain_pol_str: "Přetrvávající preference"
  utilitarian.9.t: "Mimořádně náročná vize"
  utilitarian.9.d: "Koloniální správci hlásící se k filozofii [GetIdeology('ideology_utilitarian_leader').GetName] vypracovali ambiciózní plány na úplnou racionalizaci společnosti země [ROOT.GetCountry.GetAdjective]. Jejich kritici ji označují za nemožnou, mimořádně náročnou vizi."
@@ -79,18 +79,18 @@
  je_india_railway: "Dodavatel pokroku"
  je_india_railway_reason: "Velkolepá železniční síť nás všechny propojí. Přinese zemi velký pokrok a utváří budoucnost našeho národa!"
  je_india_railway_status: "Vybudujte velkolepou síť $building_railway$, která propojí Indii."
- delhi_calcutta_line_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má všechny [Concept('concept_state_region','$concept_state_regions$')] potřebné k vybudování [GetGeographicRegion('geographic_region_delhi_calcutta_line').GetName]" # todo: CHANGED
- allahabad_bombay_line_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má všechny [Concept('concept_state_region','$concept_state_regions$')] potřebné k vybudování [GetGeographicRegion('geographic_region_allahabad_bombay_line').GetName]" # todo: CHANGED
- bombay_madras_line_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má všechny [Concept('concept_state_region','$concept_state_regions$')] potřebné k vybudování [GetGeographicRegion('geographic_region_bombay_madras_line').GetName]" # todo: CHANGED
- gujarat_bombay_line_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má všechny [Concept('concept_state_region','$concept_state_regions$')] potřebné k vybudování [GetGeographicRegion('geographic_region_gujarat_bombay_line').GetName]" # todo: CHANGED
+ delhi_calcutta_line_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má všechny [Concept('concept_state_region','státní oblasti')] potřebné k vybudování [GetGeographicRegion('geographic_region_delhi_calcutta_line').GetName]" # todo: CHANGED
+ allahabad_bombay_line_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má všechny [Concept('concept_state_region','státní oblasti')] potřebné k vybudování [GetGeographicRegion('geographic_region_allahabad_bombay_line').GetName]" # todo: CHANGED
+ bombay_madras_line_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má všechny [Concept('concept_state_region','státní oblasti')] potřebné k vybudování [GetGeographicRegion('geographic_region_bombay_madras_line').GetName]" # todo: CHANGED
+ gujarat_bombay_line_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má všechny [Concept('concept_state_region','státní oblasti')] potřebné k vybudování [GetGeographicRegion('geographic_region_gujarat_bombay_line').GetName]" # todo: CHANGED
  delhi_calcutta_line_status_tt: "$delhi_calcutta_line_complete_tt$: #indent_newline:3 \n[GetScriptedGui('je_india_railway_delhi_calcutta_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)]#!" # todo: NEW TRANSLATION
  allahabad_bombay_line_status_tt: "$allahabad_bombay_line_complete_tt$: #indent_newline:3 \n[GetScriptedGui('je_india_railway_allahabad_bombay_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)]#!" # todo: NEW TRANSLATION
  bombay_madras_line_status_tt: "$bombay_madras_line_complete_tt$: #indent_newline:3 \n[GetScriptedGui('je_india_railway_bombay_madras_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)]#!" # todo: NEW TRANSLATION
  gujarat_bombay_line_status_tt: "$gujarat_bombay_line_complete_tt$: #indent_newline:3 \n[GetScriptedGui('je_india_railway_gujarat_bombay_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)]#!" # todo: NEW TRANSLATION
- delhi_calcutta_line_complete_tt: "Všechny [Concept('concept_state_region','$concept_state_regions$')] v [GetGeographicRegion('geographic_region_delhi_calcutta_line').GetName] mají $building_railway$" # todo: CHANGED
- allahabad_bombay_line_complete_tt: "Všechny [Concept('concept_state_region','$concept_state_regions$')] v [GetGeographicRegion('geographic_region_allahabad_bombay_line').GetName] mají $building_railway$" # todo: CHANGED
- bombay_madras_line_complete_tt: "Všechny [Concept('concept_state_region','$concept_state_regions$')] v [GetGeographicRegion('geographic_region_bombay_madras_line').GetName] mají $building_railway$" # todo: CHANGED
- gujarat_bombay_line_complete_tt: "Všechny [Concept('concept_state_region','$concept_state_regions$')] v [GetGeographicRegion('geographic_region_gujarat_bombay_line').GetName] mají $building_railway$" # todo: CHANGED
+ delhi_calcutta_line_complete_tt: "Všechny [Concept('concept_state_region','státní oblasti')] v [GetGeographicRegion('geographic_region_delhi_calcutta_line').GetName] mají $building_railway$" # todo: CHANGED
+ allahabad_bombay_line_complete_tt: "Všechny [Concept('concept_state_region','státní oblasti')] v [GetGeographicRegion('geographic_region_allahabad_bombay_line').GetName] mají $building_railway$" # todo: CHANGED
+ bombay_madras_line_complete_tt: "Všechny [Concept('concept_state_region','státní oblasti')] v [GetGeographicRegion('geographic_region_bombay_madras_line').GetName] mají $building_railway$" # todo: CHANGED
+ gujarat_bombay_line_complete_tt: "Všechny [Concept('concept_state_region','státní oblasti')] v [GetGeographicRegion('geographic_region_gujarat_bombay_line').GetName] mají $building_railway$" # todo: CHANGED
  INDIAN_RAILWAY_ENTRY: "$checkbox_ticked$ [SCOPE.sStateRegion('state_region_to_display').GetName] má [GetBuildingType('building_railway').GetName]" # todo: NEW TRANSLATION
  INDIAN_RAILWAY_ENTRY_NO: "$checkbox_unticked$ [SCOPE.sStateRegion('state_region_to_display').GetName] má [GetBuildingType('building_railway').GetName]" # todo: NEW TRANSLATION
  indian_railway_delhi_calcutta_tt: "Trať Dillí–Kalkata zahrnuje $concept_state_regions$:\n$STATE_WEST_BENGAL$\n$STATE_BIHAR$\n$STATE_AWADH$\n$STATE_AGRA$\n$STATE_DELHI$"
@@ -116,7 +116,7 @@
  india_railway.3.f: "#italic Drahá Elizabeth,\n\nOnehdy jsem doprovázel zásilky Koruny napříč Indií, když jsem spatřil ten nejstrašnější výjev. Muž, hubený jako hůl, kterou držel, stál na stráži před svou hladovějící ženou a dvěma dětmi. Když jsem se svých druhů zeptal, co hlídá, vysvětlili mi, že vesnice se uchýlila ke kanibalismu. #!"
  india_railway.3.a: "Použijte železniční dopravu k zásobování potravinovými přebytky."
  india_railway.3.b: "Taková opatření si nemůžeme dovolit."
- state_grain_expensive_tt: "#variable Obilí#! je o více než #variable 70 %#! dražší než [concept_base_price]"
+ state_grain_expensive_tt: "#variable Obilí#! je o více než #variable 70 %#! dražší než [Concept('concept_base_price','základní cena')]"
  railway_famine: "Úmrtí při regionálním hladomoru"
  railway_hunger_relief: "Odeslána pomoc proti hladu"
  railway_hunger_no_relief: "Pomoc proti hladu odepřena"
@@ -136,10 +136,10 @@
  india_railway_reward: "Skvělá spojení"
  je_victoria_terminus: "Victoria Terminus"
  je_victoria_terminus_reason: "Přívrženci skupiny [SCOPE.gsInterestGroup('relevant_terminus_ig').GetName] vybrali prostředky na #tooltippable #tooltip:victoria_terminus_construct_tt #bold vytvoření velkolepého terminálu#! #!#!ve státě $STATE_BOMBAY$. Tento elegantní terminál s dalšími železničními nástupišti a správními kancelářemi slibuje pozvednout veřejné mínění o Indii."
- je_victoria_terminus_status: "Postavte $building_victoria_terminus$ v [Concept('concept_state_region','$concept_state_region$')] $STATE_BOMBAY$."
- victoria_terminus_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má $building_railway$ v [Concept('concept_state_region','$concept_state_region$')] $STATE_BOMBAY$."
- victoria_terminus_complete_tt: "[ROOT.GetCountry.GetNameNoFormatting] postavila $building_victoria_terminus$ v [Concept('concept_state_region','$concept_state_region$')] $STATE_BOMBAY$"
- victoria_terminus_populated_tt: "[concept_occupancy] pracovní síly budovy $building_victoria_terminus$ je vyšší nebo rovna #variable 50 %#!"
+ je_victoria_terminus_status: "Postavte $building_victoria_terminus$ v [Concept('concept_state_region','státní oblasti')] $STATE_BOMBAY$." # todo: CONCEPT CASE
+ victoria_terminus_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] má $building_railway$ v [Concept('concept_state_region','státní oblasti')] $STATE_BOMBAY$." # todo: CONCEPT CASE
+ victoria_terminus_complete_tt: "[ROOT.GetCountry.GetNameNoFormatting] postavila $building_victoria_terminus$ v [Concept('concept_state_region','státní oblasti')] $STATE_BOMBAY$" # todo: CONCEPT CASE
+ victoria_terminus_populated_tt: "[Concept('concept_occupancy','Obsazenost')] pracovní síly budovy $building_victoria_terminus$ je vyšší nebo rovna #variable 50 %#!"
  rejected_victoria_terminus_project_tt: "[ROOT.GetCountry.GetNameNoFormatting] odmítá návrh na výstavbu $building_victoria_terminus$."
  does_not_have_state_bombay_tt: "[ROOT.GetCountry.GetNameNoFormatting] nemá $STATE_BOMBAY$."
  owns_bombay_province_tt: "Vlastní město $HUB_NAME_STATE_BOMBAY_city$"
@@ -148,8 +148,8 @@
  victoria_terminus.1.f: "Malou kancelář plní kouř z dýmek, zatímco skupina úředníků posuzuje návrhy nového železničního terminálu.\n\n„Vypadá to na poměrně nákladnou záležitost. Je přestavba stanice opravdu nejlepším využitím našich zdrojů?“\n\n„Můj drahý příteli, toto je éra lokomotiv. Naše výdělky jsou úměrné rychlosti doručování. A naše současná rychlost doručování je srovnatelná s koňským povozem.“"
  victoria_terminus.1.a: "Okamžitě zahajte výstavbu."
  victoria_terminus.1.b: "Tyto prostředky by měly být přesměrovány tam, kde jsou potřeba."
- victoria_terminus_construct_tt: "$building_victoria_terminus$ může být postaven pomocí [concept_political_lens] ve státě $STATE_BOMBAY$."
- dismissed_victoria_terminus_je_tt: "[concept_journal_entry] #bold $je_victoria_terminus$#! bude zrušen"
+ victoria_terminus_construct_tt: "$building_victoria_terminus$ může být postaven pomocí [Concept('concept_political_lens','politické čočky')] ve státě $STATE_BOMBAY$." # todo: CONCEPT CASE
+ dismissed_victoria_terminus_je_tt: "[Concept('concept_journal_entry','Záznam v deníku')] #bold $je_victoria_terminus$#! bude zrušen"
  victoria_terminus_accepted: "Přijata výstavba terminálu"
  victoria_terminus_rejected: "Odmítnuta výstavba terminálu"
  victoria_terminus.2.t: "Architektonický div"
@@ -160,39 +160,39 @@
  victoria_terminus_reward_loc: "Nový městský uzel"
  victoria_terminus_reward_int: "Symbolický růst"
  je_sikh_sovereignty: "Sikhská suverenita"
- je_sikh_sovereignty_reason: "Toto jsou první dny naší nově založené dynastie. Naše rozvíjející se království se těší velkým úspěchům v letech od chvíle, kdy #bold Šér-e-Pandžáb#! dobyl bývalé mughalské císařské hlavní město.\n\nV této době je zásadní, abychom chránili své území před vnější agresí a ctili zásady naší víry [GetReligion('sikh').GetName]. Kéž je odkaz této dynastie dlouhotrvající!\n\n#b [concept_empire_stability] a [concept_court_intrigue]#!\nZemě [ROOT.GetCountry.GetNameNoFormatting] čelí více než jen vnějším hrozbám. Síly uvnitř našeho dvora se mohou spiknout, aby svrhly našeho [concept_ruler] ve prospěch svého vybraného kandidáta. Pokud náš #b $sikh_empire_intrigue_bar$#! dosáhne #v 100 %#!, náš [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] ($concept_ruler$) bude zavražděn, #b $sikh_empire_progress_bar$#! bude #bold resetována#! na #v 0#!, $concept_court_intrigue_short$ se sníží a na trůn nastoupí nový kandidát."
- je_sikh_sovereignty_complete: "[concept_empire_stability] dosáhla #v 100 %#!"
+ je_sikh_sovereignty_reason: "Toto jsou první dny naší nově založené dynastie. Naše rozvíjející se království se těší velkým úspěchům v letech od chvíle, kdy #bold Šér-e-Pandžáb#! dobyl bývalé mughalské císařské hlavní město.\n\nV této době je zásadní, abychom chránili své území před vnější agresí a ctili zásady naší víry [GetReligion('sikh').GetName]. Kéž je odkaz této dynastie dlouhotrvající!\n\n#b [Concept('concept_empire_stability','Stabilita říše')] a [Concept('concept_court_intrigue','dvorní intrika')]#!\nZemě [ROOT.GetCountry.GetNameNoFormatting] čelí více než jen vnějším hrozbám. Síly uvnitř našeho dvora se mohou spiknout, aby svrhly našeho [Concept('concept_ruler','vládce')] ve prospěch svého vybraného kandidáta. Pokud náš #b $sikh_empire_intrigue_bar$#! dosáhne #v 100 %#!, náš [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] ($concept_ruler$) bude zavražděn, #b $sikh_empire_progress_bar$#! bude #bold resetována#! na #v 0#!, $concept_court_intrigue_short$ se sníží a na trůn nastoupí nový kandidát."
+ je_sikh_sovereignty_complete: "[Concept('concept_empire_stability','Stabilita říše')] dosáhla #v 100 %#!"
  sikh_empire_progress_bar: "Stabilita říše"
- sikh_empire_progress_bar_desc: "[concept_empire_stability]: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/300)"
- progress_from_khalsaji_in_government_tt: "[GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant] jako [concept_interest_group] [concept_in_government]"
- progress_from_khalsaji_is_powerful_tt: "[concept_powerful] [concept_interest_group] [GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant]"
- progress_from_khalsaji_not_in_government_tt: "[GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant] jako [concept_interest_group] není [concept_in_government]"
- progress_from_sikh_state_religion_tt: "[GetReligion('sikh').GetName] je [concept_state_religion]"
- progress_from_law_freedom_of_conscience_tt: "[concept_law] [GetLawType('law_freedom_of_conscience').GetName] je [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enacted$')]"
+ sikh_empire_progress_bar_desc: "[Concept('concept_empire_stability','Stabilita říše')]: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/300)"
+ progress_from_khalsaji_in_government_tt: "[GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant] jako [Concept('concept_interest_group','zájmová skupina')] [Concept('concept_in_government','ve vládě')]"
+ progress_from_khalsaji_is_powerful_tt: "[Concept('concept_powerful','Silná')] [Concept('concept_interest_group','zájmová skupina')] [GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant]"
+ progress_from_khalsaji_not_in_government_tt: "[GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant] jako [Concept('concept_interest_group','zájmová skupina')] není [Concept('concept_in_government','ve vládě')]"
+ progress_from_sikh_state_religion_tt: "[GetReligion('sikh').GetName] je [Concept('concept_state_religion','státní náboženství')]"
+ progress_from_law_freedom_of_conscience_tt: "[Concept('concept_law','Zákon')] [GetLawType('law_freedom_of_conscience').GetName] je [Concept('concept_enactment_of_laws','uzákoněn')]"
  sikh_empire_intrigue_bar: "Dvorní intriky"
- sikh_empire_intrigue_bar_desc: "[Concept('concept_court_intrigue','$concept_court_intrigue_short$')]: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/60)"
- intrigue_from_ranjit_singh_tt: "$RULER_TITLE_MAHARAJA$ ([concept_ruler]) je #b $Ranjit$ $Singh$#!"
- intrigue_from_upset_government_ruthless_igs_tt: "[Concept('concept_leader', '$concept_leaders$')] s vlastností [GetCharacterTrait('ruthless').GetName], kteří jsou [concept_in_government] a mají [concept_approval] nižší než #v 0#!"
- intrigue_from_upset_opposition_ruthless_igs_tt: "[Concept('concept_leader', '$concept_leaders$')] s vlastností [GetCharacterTrait('ruthless').GetName], kteří jsou [concept_in_opposition] a mají [concept_approval] nižší než #v 0#!"
- intrigue_from_upset_government_ambitious_igs_tt: "[Concept('concept_leader', '$concept_leaders$')] s vlastností [GetCharacterTrait('ambitious').GetName], kteří jsou [concept_in_government] a mají [concept_approval] nižší než #v 0#!"
- intrigue_from_upset_opposition_ambitious_igs_tt: "[Concept('concept_leader', '$concept_leaders$')] s vlastností [GetCharacterTrait('ambitious').GetName], kteří jsou [concept_in_opposition] a mají [concept_approval] nižší než #v 0#!"
- intrigue_from_happy_government_ruthless_igs_tt: "[Concept('concept_leader', '$concept_leaders$')] s vlastností [GetCharacterTrait('ruthless').GetName], kteří jsou [concept_in_government] a mají [concept_approval] vyšší než #v 5#!"
- intrigue_from_compliant_igs_tt: "[Concept('concept_leader', '$concept_leaders$')] s vlastností [GetCharacterTrait('compliant').GetName], kteří jsou [concept_in_government]"
- ruler_interest_group_powerful_tt: "[concept_powerful] [ROOT.GetCountry.GetRuler.GetInterestGroup.GetName]"
- ruler_interest_group_marginal_tt: "[concept_marginalized] [ROOT.GetCountry.GetRuler.GetInterestGroup.GetName]"
- intrigue_from_reckless_tt: "[concept_ruler] s vlastností [GetCharacterTrait('reckless').GetName]"
- intrigue_from_low_popularity_tt: "nízká [concept_popularity] [concept_ruler]"
- intrigue_legitimacy_tt: "[concept_legitimacy]"
+ sikh_empire_intrigue_bar_desc: "[Concept('concept_court_intrigue','Dvorní intrika')]: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/60)" # todo: CONCEPT CASE
+ intrigue_from_ranjit_singh_tt: "$RULER_TITLE_MAHARAJA$ ([Concept('concept_ruler','vládce')]) je #b $Ranjit$ $Singh$#!"
+ intrigue_from_upset_government_ruthless_igs_tt: "[Concept('concept_leader','Vůdce')] s vlastností [GetCharacterTrait('ruthless').GetName], kteří jsou [Concept('concept_in_government','ve vládě')] a mají [Concept('concept_approval','spokojenost')] nižší než #v 0#!" # todo: CONCEPT CASE
+ intrigue_from_upset_opposition_ruthless_igs_tt: "[Concept('concept_leader','Vůdce')] s vlastností [GetCharacterTrait('ruthless').GetName], kteří jsou [Concept('concept_in_opposition','v opozici')] a mají [Concept('concept_approval','spokojenost')] nižší než #v 0#!" # todo: CONCEPT CASE
+ intrigue_from_upset_government_ambitious_igs_tt: "[Concept('concept_leader','Vůdce')] s vlastností [GetCharacterTrait('ambitious').GetName], kteří jsou [Concept('concept_in_government','ve vládě')] a mají [Concept('concept_approval','spokojenost')] nižší než #v 0#!" # todo: CONCEPT CASE
+ intrigue_from_upset_opposition_ambitious_igs_tt: "[Concept('concept_leader','Vůdce')] s vlastností [GetCharacterTrait('ambitious').GetName], kteří jsou [Concept('concept_in_opposition','v opozici')] a mají [Concept('concept_approval','spokojenost')] nižší než #v 0#!" # todo: CONCEPT CASE
+ intrigue_from_happy_government_ruthless_igs_tt: "[Concept('concept_leader','Vůdce')] s vlastností [GetCharacterTrait('ruthless').GetName], kteří jsou [Concept('concept_in_government','ve vládě')] a mají [Concept('concept_approval','spokojenost')] vyšší než #v 5#!" # todo: CONCEPT CASE
+ intrigue_from_compliant_igs_tt: "[Concept('concept_leader','Vůdce')] s vlastností [GetCharacterTrait('compliant').GetName], kteří jsou [Concept('concept_in_government','ve vládě')]" # todo: CONCEPT CASE
+ ruler_interest_group_powerful_tt: "[Concept('concept_powerful','Silná')] [ROOT.GetCountry.GetRuler.GetInterestGroup.GetName]"
+ ruler_interest_group_marginal_tt: "[Concept('concept_marginalized','Marginalizována')] [ROOT.GetCountry.GetRuler.GetInterestGroup.GetName]"
+ intrigue_from_reckless_tt: "[Concept('concept_ruler','Vládce')] s vlastností [GetCharacterTrait('reckless').GetName]"
+ intrigue_from_low_popularity_tt: "nízká [Concept('concept_popularity','popularita')] [Concept('concept_ruler','vládce')]"
+ intrigue_legitimacy_tt: "[Concept('concept_legitimacy','Legitimita')]"
  modifier_favored_by_wazir: "Oblíbenci vezíra"
  sikh_empire.1.t: "Víc než svatba"
  sikh_empire.1.d: "V mimořádném diplomatickém a politickém vystoupení pozval [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] elitu země a zahraniční zástupce na velkolepou princovu svatbu."
  sikh_empire.1.f: "Dvorní kronikář ve službách mahárádži zaznamenává slavnosti velmi podrobně:\n\n#italic „Byly předvedeny ohňostroje všeho druhu. Pohyblivý trůn a „Shalabagh“, ozdobené a vyzdobené různými druhy květin ... neslo na ramenou asi 100 mužů. #!" # Sohan Lal Suri
  sikh_empire.1.a: "Přivítejte zahraniční delegáty."
  sikh_empire.1.b: "Zajistěte naši roli na světové královské scéně."
- intrigue_reduced_by_10_tt: "[concept_court_intrigue] se sníží o #v 10#!"
- intrigue_reduced_by_20_tt: "[concept_court_intrigue] se sníží o #v 20#!"
- intrigue_reduced_by_50_tt: "[concept_court_intrigue] se sníží o #v 50#!"
- intrigue_increased_by_10_tt: "[concept_court_intrigue] se zvýší o #v 10#!"
+ intrigue_reduced_by_10_tt: "[Concept('concept_court_intrigue','Dvorní intrika')] se sníží o #v 10#!"
+ intrigue_reduced_by_20_tt: "[Concept('concept_court_intrigue','Dvorní intrika')] se sníží o #v 20#!"
+ intrigue_reduced_by_50_tt: "[Concept('concept_court_intrigue','Dvorní intrika')] se sníží o #v 50#!"
+ intrigue_increased_by_10_tt: "[Concept('concept_court_intrigue','Dvorní intrika')] se zvýší o #v 10#!"
  SIKH_MILITANCY: "Sikhská bojovnost"
  wedding_prestige: "Královská svatba"
  notification_sikh_wedding_diplomacy_message_name: "Královská diplomacie"
@@ -274,7 +274,7 @@
  sikh_ruler_death_ceiling_drop: "rozdrcen spadlým stropem."
  sikh_ruler_death_fire: "udušen kouřem."
  sikh_ruler_death_drowned: "obličejem dolů ve vaně."
- five_deaths_in_a_row_tt: "#v 5#! [ROOT.GetCountry.GetAltAdjective('yych')|l] $RULER_TITLE_MAHARAJA$ zemřeli bez dokončení tohoto [concept_journal_entry] (aktuálně [ROOT.GetCountry.MakeScope.Var('sikh_dead_maharajas_var').GetValue|V0])"
+ five_deaths_in_a_row_tt: "#v 5#! [ROOT.GetCountry.GetAltAdjective('yych')|l] $RULER_TITLE_MAHARAJA$ zemřeli bez dokončení tohoto [Concept('concept_journal_entry','záznamu v deníku')] (aktuálně [ROOT.GetCountry.MakeScope.Var('sikh_dead_maharajas_var').GetValue|V0])" # todo: CONCEPT CASE
  ig_granthis: "Granthíové"
  ig_granthis_desc: "Granthíové jsou náboženští představitelé sikhismu, monoteistické víry, podle níž jsou světské záležitosti rozptýlením od jednoty Boha."
  ig_trait_rehat: "Rehat"
@@ -303,7 +303,7 @@
  princely_states.1.a: "[ROOT.GetCountry.GetNameNoFormatting] bude jednoho dne svobodná."
  princely_states.1.b: "Někdo se musí zemi [SCOPE.sCountry('overlord_scope').GetNameNoFormatting] postavit."
  liberty_desire_boost: "Knížecí povstání"
- improve_relations_every_princely_state: "[concept_relations] země [ROOT.GetCountry.GetNameNoFormatting] s každým [concept_princely_state] se zvýší o #g [SCOPE.ScriptValue('basic_princely_state_relations_change')]#!"
+ improve_relations_every_princely_state: "[Concept('concept_relations','Vztahy')] země [ROOT.GetCountry.GetNameNoFormatting] s každým [Concept('concept_princely_state','knížecím státem')] se zvýší o #g [SCOPE.ScriptValue('basic_princely_state_relations_change')]#!" # todo: CONCEPT CASE
  princely_states.2.t: "Už žádný knížecí stát"
  princely_states.2.d: "Po tvrdém boji za nezávislost už [ROOT.GetCountry.GetNameNoFormatting] není pouhým knížecím státem. Lid slaví a [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] se chystá rozšířit moc země [ROOT.GetCountry.GetNameNoFormatting]."
  princely_states.2.f: "Mubarak Ho!\n\nDne [TimeKeeper.GetCurrentDate.GetString] oslavil [ROOT.GetCountry.GetRuler.GetFullNameNoFormatting] svou nově nabytou moc okázalým průvodem, který vyvrcholil dělovou salvou. Ve vzduchu panovala všeobecná veselost, zatímco se mezi lid rozdávalo jídlo a sliboval se nový věk hojnosti. Jen čas ukáže, zda [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] své sliby splní!"
@@ -341,10 +341,10 @@
  notification_doctrine_of_lapse_reaction_message_desc: "Vztahy mezi zeměmi [ROOT.GetCountry.GetName] a [SCOPE.sCountry('bic_scope').GetName] se zhoršily poté, co země [SCOPE.sCountry('bic_scope').GetName] použila doktrínu odúmrti k anexi knížecího státu."
  notification_doctrine_of_lapse_reaction_message_tooltip: "#header $notification_doctrine_of_lapse_reaction_message_name$#!\n$TOOLTIP_DELIMITER$\n$notification_doctrine_of_lapse_reaction_message_desc$"
  notification_caste_hierarchy_appears_name: "Uznána nová sociální hierarchie"
- notification_caste_hierarchy_appears_desc: "Kastovní systém je uznanou [concept_social_hierarchy] v zemi [SCOPE.sCountry('relevant_country_scope').GetName]."
+ notification_caste_hierarchy_appears_desc: "Kastovní systém je uznanou [Concept('concept_social_hierarchy','sociální hierarchií')] v zemi [SCOPE.sCountry('relevant_country_scope').GetName]." # todo: CONCEPT CASE
  notification_caste_hierarchy_appears_tooltip: "#header $notification_caste_hierarchy_appears_name$#!\n$TOOLTIP_DELIMITER$\n$notification_caste_hierarchy_appears_desc$"
  notification_caste_hierarchy_disappears_name: "Sociální hierarchie již není uznána"
- notification_caste_hierarchy_disappears_desc: "Kvůli nedávným kulturním a společenským změnám již kastovní systém není uznanou [concept_social_hierarchy] v zemi [SCOPE.sCountry('relevant_country_scope').GetName]."
+ notification_caste_hierarchy_disappears_desc: "Kvůli nedávným kulturním a společenským změnám již kastovní systém není uznanou [Concept('concept_social_hierarchy','sociální hierarchií')] v zemi [SCOPE.sCountry('relevant_country_scope').GetName]." # todo: CONCEPT CASE
  notification_caste_hierarchy_disappears_tooltip: "#header $notification_caste_hierarchy_disappears_name$#!\n$TOOLTIP_DELIMITER$\n$notification_caste_hierarchy_disappears_desc$"
  je_dravidian_movement: "Drávidské hnutí"
  je_dravidian_movement_reason: "Prostý lid země [ROOT.GetCountry.GetName] zareagoval na neúměrné zastoupení a politickou moc bráhmanů. Po sérii protibráhmanských konferencí vzniklo drávidské hnutí a stanovilo si novou agendu odporu proti bráhmanské dominanci. Usiluje o odstranění kastovních rozdílů ze zákona a státní správy."
@@ -358,7 +358,7 @@
  current_system_supported: "Podpořena bráhmanská dominance"
  liberty_desire_hit: "Agenda vládce"
  erode_venkatappa_ramasamy_appears_tt: "E. V. Ramasamy se objeví v zemi [ROOT.GetCountry.GetNameNoFormatting]"
- an_agitator_appears_tt: "V zemi [ROOT.GetCountry.GetNameNoFormatting] se objeví [concept_agitator]"
+ an_agitator_appears_tt: "V zemi [ROOT.GetCountry.GetNameNoFormatting] se objeví [Concept('concept_agitator','agitátor')]" # todo: CONCEPT CASE
  caste_conflict.2.t: "Konečně rovnost"
  caste_conflict.2.d: "Úspěch agendy drávidského hnutí dohlédl na přijetí nového zákona a zlepšení kvality života nebráhmanů."
  caste_conflict.2.f: "Boj zdaleka neskončil, to Praveen Pallar věděl. Přesto se neubránil úsměvu, když se posadil v prosté vládní kanceláři a ventilátor nad ním mu jemně ochlazoval zpocená záda.\n\nNaproti sobě viděl pana Iyera a po levici seděl pan Agastya. Oba bráhmani z vysoké kasty. A tady byl on, Pallar, se stejným postavením a platem jako oni. Ani jeden se mu nezdál ochotný pohlédnout do očí. Ano, stále bylo co dělat, ale pro dnešek to stačilo. Poděkoval svým spojencům, kteří s ním pochodovali a protestovali, a otevřel svůj první spis."
@@ -368,10 +368,10 @@
  rural_folk_ig_strong: "Důkaz moci"
  future_minds: "Mysli budoucnosti"
  notification_verge_of_collapse_name: "[SCOPE.sCharacter('rural_folk_leader_scope').GetFullNameNoFormatting] rezignuje"
- notification_verge_of_collapse_desc: "Agenda drávidského hnutí ztratila dynamiku. [SCOPE.sCharacter('rural_folk_leader_scope').GetFullName] odstoupil z vedení [SCOPE.gsInterestGroup('rural_folk_ig_scope').GetName]."
+ notification_verge_of_collapse_desc: "Agenda drávidského hnutí ztratila dynamiku. [SCOPE.sCharacter('rural_folk_leader_scope').GetFullName] odstoupil z vedení [SCOPE.gsInterestGroup('rural_folk_ig_scope').GetCustom('IG_G_TT')]." # todo: NAME CASE
  notification_verge_of_collapse_tooltip: "#header $notification_verge_of_collapse_name$#!\n$TOOLTIP_DELIMITER$\n$notification_verge_of_collapse_desc$"
  caste_conflict.4.t: "Nebrámanský manifest"
- caste_conflict.4.d: "V [ROOT.GetCountry.GetCapital.GetCityHubName] koluje Nebrámanský manifest, který vyvolává napětí mezi [SCOPE.gsInterestGroup('rural_folk_ig_scope').GetName] a [SCOPE.gsInterestGroup('intelligentsia_ig_scope').GetName]."
+ caste_conflict.4.d: "V [ROOT.GetCountry.GetCapital.GetCityHubName] koluje Nebrámanský manifest, který vyvolává napětí mezi [SCOPE.gsInterestGroup('rural_folk_ig_scope').GetCustom('IG_I_TT')] a [SCOPE.gsInterestGroup('intelligentsia_ig_scope').GetCustom('IG_I_TT')]." # todo: NAME CASE
  caste_conflict.4.f: "Dva straničtí vůdci seděli naproti sobě a jejich pobočníci napjatě naslouchali, zatímco se tyto dvě mysli střetávaly už druhou hodinu.\n\n„Prosím, musíte přesvědčit Stranu spravedlnosti, aby uznala rozum,“ naléhal [SCOPE.sCharacter('intelligentsia_leader_scope').GetFullNameNoFormatting]. „Musíme bojovat společně, jinak selžeme!“\n\n„Chcete, abychom po vašem boku čelili britským obuškům, ale řekněte mi, až přijde zítřek, dovolíte nám také vládnout po vašem boku? Britové mi neublížili o nic víc než vy. Vždyť mnoho jejich činů bylo vedeno právě vašima rukama.“"
  caste_conflict.4.a: "Ten manifest je nevlastenecký!"
  caste_conflict.4.b: "Možná manifest uvádí oprávněné body."

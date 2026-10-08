@@ -227,8 +227,8 @@
  warlord_china_events.110.f: "„Víš, proč mi někteří říkají Starý šestaosmdesát? Je to kvůli velikosti mého...“ \n\n Zbytek slov, která [SCOPE.sCharacter('prisoner_killing_warlord').GetPrimaryRoleTitle] pronáší, přehluší výkřiky a křupání kostí, když [SCOPE.sCharacter('prisoner_killing_warlord').GetSheHe] spustí svůj meč na hlavu vězně.\n\n „...přesně osmdesáti šesti mexických stříbrných dolarů.“ "
  warlord_china_events.110.a: "Lidé by to měli vědět."
  warlord_china_events.110.b: "Nejlepší bude to ututlat."
- notification_ig_leader_steps_down_name: "Vůdce [SCOPE.gsInterestGroup('stepping_down_leader_ig').GetName] odstupuje."
- notification_ig_leader_steps_down_desc: "[SCOPE.sCharacter('stepping_down_leader').GetFullName], vůdce [SCOPE.gsInterestGroup('stepping_down_leader_ig').GetName], odstoupil [SCOPE.sCharacter('stepping_down_leader').GetCustom('stepping_down_reason')]"
+ notification_ig_leader_steps_down_name: "Vůdce [SCOPE.gsInterestGroup('stepping_down_leader_ig').GetCustom('IG_G_TT')] odstupuje." # todo: NAME CASE
+ notification_ig_leader_steps_down_desc: "[SCOPE.sCharacter('stepping_down_leader').GetFullName], vůdce [SCOPE.gsInterestGroup('stepping_down_leader_ig').GetCustom('IG_G_TT')], odstoupil [SCOPE.sCharacter('stepping_down_leader').GetCustom('stepping_down_reason')]" # todo: NAME CASE
  notification_ig_leader_steps_down_tooltip: "#header $notification_ig_leader_steps_down_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ig_leader_steps_down_desc$"
  custom_loc_personal_reasons: "z osobních důvodů."
  custom_loc_health_reasons: "kvůli zhoršujícímu se zdraví."
@@ -304,13 +304,13 @@
  congo_free_state_events.1.d: "[SCOPE.sCharacter('free_state_monarch').GetPrimaryRoleTitle] [SCOPE.sCharacter('free_state_monarch').GetFullName] prohlásil, že tato země bude nyní svobodným státem pod [SCOPE.sCharacter('free_state_monarch').GetHerHis] kontrolou v personální unii s naší zemí."
  congo_free_state_events.1.f: "[SCOPE.sCharacter('free_state_monarch').GetPrimaryRoleTitle] má tvář strnulou v nehybném úsměvu jako mramorová socha. [SCOPE.sCharacter('free_state_monarch').GetSheHe|U] mluví sametovým hlasem, po němž stěny rudnou a útulní: „Nechci riskovat, že propásneme skvělou příležitost zajistit si pro sebe kus tohoto velkolepého afrického koláče.“\n\nObrazy za [SCOPE.sCharacter('free_state_monarch').GetHerHim] všechny zobrazují společné téma; plátno se třpytí v místech s krví."
  congo_free_state_events.1.a: "Měli bychom to sledovat."
- congo_free_state_events.2.t: "Zvěsti z [SCOPE.sCountry('free_state').GetNameNoFlag]"
+ congo_free_state_events.2.t: "Zvěsti z [SCOPE.sCountry('free_state').GetAltAdjectiveNoFlag('G')]" # todo: CONCEPT CASE
  congo_free_state_events.2.d: "Ve vládních kruzích se mluví o tom, že [SCOPE.sCountry('free_state').GetNameNoFlag], vlastněný osobně [SCOPE.sCharacter('free_state_monarch').GetPrimaryRoleTitle] [SCOPE.sCharacter('free_state_monarch').GetFullName], se ke svým lidem nechová příliš dobře."
  congo_free_state_events.2.f: "„Lodě připlouvající do přístavu předvádějí podezřelý, a přece odvážný třpyt. Rubíny a diamanty, planoucí jako pochodně, koketně vstupují do země. Lodě vracející se zpět, ach, to je jiná věc.\n\nPušky, střelný prach a vojáci. Rád bych to řekl mírněji, příteli, věř mi. Rád bych.“"
  congo_free_state_events.2.a: "Není se čeho obávat."
  congo_free_state_events.2.b: "Promluvíme si s [SCOPE.sCharacter('free_state_monarch').GetFullName]."
  congo_free_state_events.3.t: "Znepokojivý úbytek populace"
- congo_free_state_events.3.d: "Misionáři i laici vyjádřili své nejhlubší znepokojení nad rostoucím počtem úmrtí v [SCOPE.sCountry('free_state').GetNameNoFlag]."
+ congo_free_state_events.3.d: "Misionáři i laici vyjádřili své nejhlubší znepokojení nad rostoucím počtem úmrtí v [SCOPE.sCountry('free_state').GetAltAdjectiveNoFlag('L')]." # todo: CONCEPT CASE
  congo_free_state_events.3.f: "„V tuhle chvíli je to všechno. Jsou to nemoci, hladovění, válka, špatná voda. Ach, vždycky je to válka, že? Jsou to důstojníci. Nejsou nakonec i všechny ostatní věci také důstojníci? A především je to [SCOPE.sCharacter('free_state_monarch').GetPrimaryRoleTitle].“"
  congo_free_state_events.3.a: "Nemůžeme jít proti vládě [SCOPE.sCharacter('free_state_monarch').GetPrimaryRoleTitle]."
  congo_free_state_events.3.b: "Tohle je masakr! Svět to musí vědět!"
@@ -327,7 +327,7 @@
  modifier_denied_monarch_colony_ig: "Odepřen panovníkův Svobodný stát"
  modifier_denied_monarch_colony_ig_desc: "Panovníkovi byl odepřen Svobodný stát, na který si činil nárok."
  congo_free_state_events.4.t: "Zničující článek"
- congo_free_state_events.4.d: "V [SCOPE.sCountry('newspaper_country').GetAdjectiveNoFormatting] novinách „[SCOPE.GetRootScope.GetCountry.GetCustom('generic_newspaper_type')]“ byl napsán zničující článek o zvěrstvech páchaných v [SCOPE.sCountry('free_state').GetNameNoFlag]."
+ congo_free_state_events.4.d: "V [SCOPE.sCountry('newspaper_country').GetAdjectiveNoFormatting] novinách „[SCOPE.GetRootScope.GetCountry.GetCustom('generic_newspaper_type')]“ byl napsán zničující článek o zvěrstvech páchaných v [SCOPE.sCountry('free_state').GetAltAdjectiveNoFlag('L')]." # todo: CONCEPT CASE
  congo_free_state_events.4.f: "„Náčelníci, kteří podepsali předání své země, nevěděli, co podepisují. Nebyly to rovnocenné a spravedlivé smlouvy, byla to fraška. Od té doby se zacházení s místními rovnalo otroctví.“"
  congo_free_state_events.4.a: "Nešťastné, ale patří to [SCOPE.sCharacter('free_state_monarch').GetPrimaryRoleTitle]."
  congo_free_state_events.4.b: "Musíme to odsoudit."
@@ -342,7 +342,7 @@
  free_state_monarchy_modifier: "Vláda panovníka Svobodného státu"
  modifier_condemned_colony: "Odsouzený Svobodný stát"
  congo_free_state_events.6.t: "Zpráva"
- congo_free_state_events.6.d: "Vláda země [SCOPE.sCountry('report_country').GetAdjective] zveřejnila zprávu o [SCOPE.sCountry('free_state').GetNameNoFlag], která odhaluje strašlivé činy páchané místní správou."
+ congo_free_state_events.6.d: "Vláda země [SCOPE.sCountry('report_country').GetAdjective] zveřejnila zprávu o [SCOPE.sCountry('free_state').GetAltAdjectiveNoFlag('L')], která odhaluje strašlivé činy páchané místní správou." # todo: CONCEPT CASE
  congo_free_state_events.6.f: "„Místní úředníci jsou jmenováni, aby zajistili sběr surovin. Nesplnění této kvóty znamená rozsudek smrti. Důkaz? Ruka oběti. Tyto ohavné skutky brutality už nemohou zůstat nenahlášeny.“"
  congo_free_state_events.6.a: "Musíme to odsoudit."
  congo_free_state_events.6.b: "Nešťastné, ale patří to [SCOPE.sCharacter('free_state_monarch').GetPrimaryRoleTitle]."
@@ -358,7 +358,7 @@
  stop_paying_france: "Přestat platit Francii"
  stop_paying_france_desc: "Po francouzské vojenské expedici na Haiti v roce 1825 uzavřel Senát s Francií dohodu o vyplácení odškodnění za uznání naší nezávislosti. Pokud však přestaneme platit, co s tím asi mohou dělat?"
  character_events.2.t: "Dar vědění"
- character_events.2.d: "[SCOPE.sCharacter('university_benefactor').GetFullName] nabídl, že vynaloží část svého osobního bohatství na financování založení univerzity ve státě [SCOPE.sState('university_state').GetName]. To však pravděpodobně poskytne [SCOPE.sCharacter('university_benefactor').GetInterestGroup.GetName] určitý vliv."
+ character_events.2.d: "[SCOPE.sCharacter('university_benefactor').GetFullName] nabídl, že vynaloží část svého osobního bohatství na financování založení univerzity ve státě [SCOPE.sState('university_state').GetName]. To však pravděpodobně poskytne [SCOPE.sCharacter('university_benefactor').GetInterestGroup.GetCustom('IG_D_TT')] určitý vliv." # todo: NAME CASE
  character_events.2.f: "„Univerzita [SCOPE.sCharacter('university_benefactor').GetFullNameNoFormatting] bude hrdou baštou vzdělanosti v těchto časech rychlého pokroku, kdy vědění je skutečně moc.“"
  character_events.2.a: "Skvělý nápad."
  character_events.2.b: "Ne, nemůžeme jim dát platformu."
@@ -380,7 +380,7 @@
  banned_duels_tt: "Souboje budou ve vaší země zakázány."
  character_events.4.t: "Cirkevní skandál"
  character_events.4.d: "Bylo odhaleno, že [SCOPE.sCharacter('devout_scandal').GetFullName] ze skupiny [SCOPE.sCharacter('devout_scandal').GetInterestGroup.GetName] udržoval tajný poměr se členem duchovenstva. Je požadována [SCOPE.sCharacter('devout_scandal').GetHerHis|U] rezignace."
- character_events.4.f: "„Už samotný fakt, že si tenhle úskočný parchant myslel, že mu projde tak hrubé zneužití [SCOPE.sCharacter('devout_scandal').GetHerHis] moci, ukazuje všechno, co je špatně na vedení [SCOPE.sCharacter('devout_scandal').GetInterestGroup.GetNameNoFormatting].“"
+ character_events.4.f: "„Už samotný fakt, že si tenhle úskočný parchant myslel, že mu projde tak hrubé zneužití [SCOPE.sCharacter('devout_scandal').GetHerHis] moci, ukazuje všechno, co je špatně na vedení [SCOPE.sCharacter('devout_scandal').GetInterestGroup.GetCustom('IG_G')].“" # todo: NAME CASE
  character_events.4.a: "Donuťte [SCOPE.sCharacter('devout_scandal').GetHerHim], aby odstoupil."
  character_events.4.b: "„Kdo je bez hříchu, ať první hodí kamenem.“"
  character_events.4.a.tt: "[SCOPE.sCharacter('devout_scandal').GetFullName] hanebně rezignuje."
@@ -460,8 +460,8 @@
  production_tech_events.210.b: "Měli bychom tyto znalosti šířit."
  radio_production_modifier: "Podpora výroby rádií"
  ig_suppression_events.1000.t: "Nelichotivý článek"
- ig_suppression_events.1000.d: "Najali jsme bezskrupulózní novináře, aby napsali zničující články o [SCOPE.gsInterestGroup('negative_article_ig').GetName], čímž poškodí její pověst."
- ig_suppression_events.1000.f: "Reportér [ROOT.GetCountry.GetAdjectiveNoFormatting] novin „[SCOPE.GetRootScope.GetCountry.GetCustom('generic_newspaper_type')]“ si nervózně kroutil palci: „Jen jeden článek a splatíte všechny mé dluhy?“ \n\n „Jen jeden článek, ale musí být na titulní straně a musí zcela rozcupovat [SCOPE.gsInterestGroup('negative_article_ig').GetNameNoFormatting].“"
+ ig_suppression_events.1000.d: "Najali jsme bezskrupulózní novináře, aby napsali zničující články o [SCOPE.gsInterestGroup('negative_article_ig').GetCustom('IG_L_TT')], čímž poškodí její pověst." # todo: NAME CASE
+ ig_suppression_events.1000.f: "Reportér [ROOT.GetCountry.GetAdjectiveNoFormatting] novin „[SCOPE.GetRootScope.GetCountry.GetCustom('generic_newspaper_type')]“ si nervózně kroutil palci: „Jen jeden článek a splatíte všechny mé dluhy?“ \n\n „Jen jeden článek, ale musí být na titulní straně a musí zcela rozcupovat [SCOPE.gsInterestGroup('negative_article_ig').GetCustom('IG_A')].“" # todo: NAME CASE
  ig_suppression_events.1000.a: "Pero #BOLD je#! mocnější."
  ig_suppression_events.1000.a.1: "Pero #BOLD je#! mocnější než pán."
  ig_suppression_events.1000.a.2: "Pero #BOLD je#! mocnější než tykev."
@@ -472,7 +472,7 @@
  modifier_paying_journalist: "Placení novináře."
  modifier_article_damages_ig_reputation: "Článek poškozuje pověst."
  ig_suppression_events.1001.t: "Přátelské povzbuzení"
- ig_suppression_events.1001.d: "Zastrašováním členů [SCOPE.gsInterestGroup('suppressed_ig').GetName] můžeme učinit jejich aktivní podporu mnohem méně přitažlivou vyhlídkou. "
+ ig_suppression_events.1001.d: "Zastrašováním členů [SCOPE.gsInterestGroup('suppressed_ig').GetCustom('IG_G_TT')] můžeme učinit jejich aktivní podporu mnohem méně přitažlivou vyhlídkou. " # todo: NAME CASE
  ig_suppression_events.1001.f: "„Jistě, možná neodradíme vůdce, ideologické křižáky, ale řadové členy? Těm záleží na vlastním blahu mnohem víc než na nějaké mizerné věci.“"
  ig_suppression_events.1001.a: "Když nebude moct chodit, jak se dostane do volební místnosti?"
  ig_suppression_events.1001.b: "Tohle se nezdá být zrovna morální."
@@ -480,15 +480,15 @@
  modifier_intimidating_ig_cost: "Zastrašování členů zájmové skupiny"
  modifier_intimidating_ig: "Členové jsou zastrašováni"
  ig_suppression_events.1003.t: "Změna ve vedení"
- ig_suppression_events.1003.d: "Odstraněním [SCOPE.sCharacter('suppressed_ig_leader').GetFullName], vůdce [SCOPE.gsInterestGroup('target').GetName], bychom mohli jejich rozmach zastavit přímo v zárodku. "
+ ig_suppression_events.1003.d: "Odstraněním [SCOPE.sCharacter('suppressed_ig_leader').GetFullName], vůdce [SCOPE.gsInterestGroup('target').GetCustom('IG_G_TT')], bychom mohli jejich rozmach zastavit přímo v zárodku. " # todo: NAME CASE
  ig_suppression_events.1003.f: "„Když máte jednoho vzteklého psa, nenecháte ho šířit jeho nemoc. Utratíte ho. Tentýž princip platí i zde.“"
  ig_suppression_events.1003.a: "Pokusíme se o to."
  ig_suppression_events.1003.b: "Vražda v ulicích? Nemyslitelné."
- notification_ig_leader_assassination_name: "Zavražděn vůdce [SCOPE.gsInterestGroup('target').GetName]"
- notification_ig_leader_assassination_desc: "[SCOPE.sCharacter('suppressed_ig_leader').GetFullName], vůdce [SCOPE.gsInterestGroup('target').GetName], byl úspěšně zavražděn"
+ notification_ig_leader_assassination_name: "Zavražděn vůdce [SCOPE.gsInterestGroup('target').GetCustom('IG_G_TT')]" # todo: NAME CASE
+ notification_ig_leader_assassination_desc: "[SCOPE.sCharacter('suppressed_ig_leader').GetFullName], vůdce [SCOPE.gsInterestGroup('target').GetCustom('IG_G_TT')], byl úspěšně zavražděn" # todo: NAME CASE
  notification_ig_leader_assassination_tooltip: "#header $notification_ig_leader_assassination_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ig_leader_assassination_desc$"
- notification_ig_leader_assassination_failed_name: "Atentát na vůdce [SCOPE.gsInterestGroup('target').GetName] selhal."
- notification_ig_leader_assassination_failed_desc: "Pokus o zavraždění vůdce [SCOPE.gsInterestGroup('target').GetName] selhal."
+ notification_ig_leader_assassination_failed_name: "Atentát na vůdce [SCOPE.gsInterestGroup('target').GetCustom('IG_G_TT')] selhal." # todo: NAME CASE
+ notification_ig_leader_assassination_failed_desc: "Pokus o zavraždění vůdce [SCOPE.gsInterestGroup('target').GetCustom('IG_G_TT')] selhal." # todo: NAME CASE
  notification_ig_leader_assassination_failed_tooltip: "#header $notification_ig_leader_assassination_failed_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ig_leader_assassination_failed_desc$"
  je_central_archives: "Centrální archivy"
  je_central_archives_reason: "Tak prostou změnou, jako je způsob ukládání dokumentů, je možné způsobit revoluci v celém našem organizačním systému."
@@ -537,7 +537,7 @@
  free_speech_pamphlet_risk_fail: "Další letáky za svobodu projevu selhaly"
  free_speech_pamphlet_risk_success_movement: "$free_speech_pamphlet_risk_success$"
  free_speech_laws.2.t: "Pálení knih"
- free_speech_laws.2.d: "Členové [SCOPE.gsInterestGroup('book_burning_ig').GetName] zorganizovali pálení knih s materiálem považovaným za proti-[ROOT.GetCountry.GetAdjectiveNoFormatting]. Tím se normalizuje podpora zákona [SCOPE.sLaw('current_law_scope').GetName]."
+ free_speech_laws.2.d: "Členové [SCOPE.gsInterestGroup('book_burning_ig').GetCustom('IG_G_TT')] zorganizovali pálení knih s materiálem považovaným za proti-[ROOT.GetCountry.GetAdjectiveNoFormatting]. Tím se normalizuje podpora zákona [SCOPE.sLaw('current_law_scope').GetName]." # todo: NAME CASE
  free_speech_laws.2.f: "„Knihy jsou tesáky jedovatého hada propagandy, který šíří své lži krevním oběhem společnosti. Jejich pálení je velmi účinný způsob, jak tyto tesáky otupit.“"
  free_speech_laws.2.a: "To je vynikající."
  free_speech_laws.2.b: "Co kdybychom zorganizovali státem řízené pálení knih?"
@@ -585,7 +585,7 @@
  free_speech_lewd_book_success: "Úspěch skandálu s nemravnou knihou"
  free_speech_lewd_book_fail: "Selhání skandálu s nemravnou knihou"
  free_speech_laws.6.t: "Urážlivá kresba"
- free_speech_laws.6.d: "Po celé zemi byla rozšířena neslušná kresba [SCOPE.sCharacter('ig_leader_scope').GetFullName], vůdce [SCOPE.gsInterestGroup('free_speech_ig').GetName]."
+ free_speech_laws.6.d: "Po celé zemi byla rozšířena neslušná kresba [SCOPE.sCharacter('ig_leader_scope').GetFullName], vůdce [SCOPE.gsInterestGroup('free_speech_ig').GetCustom('IG_G_TT')]." # todo: NAME CASE
  free_speech_laws.6.f: "„No, není zrovna lichotivá, že?“ řekl pobočník a zamyšleně si kresbu prohlížel. \n\n„Ne zrovna... vždyť je to detailní kresba mě při obcování s oslem, proboha! Proč by měla být lichotivá?“ odpověděl [SCOPE.sCharacter('ig_leader_scope').GetFullNameNoFormatting] a rozhodil rukama. \n\n„To tedy je, ale nemůžete popřít, že vaši podobu vystihli.“"
  free_speech_laws.6.a: "Přesně o tom mluvíme!"
  free_speech_laws.6.b: "No, tahle kresba *je* docela zábavná."
@@ -596,7 +596,7 @@
  rights_of_women_laws.1.d: "V soudním případu, který upoutal pozornost celé země, soudce rozhodl, že domácí násilí je důvodem k rozvodu."
  rights_of_women_laws.1.f: "„Znovu a znovu ji bil jen proto, že upustila talíř. Bylo to jen nejnovější z řady bití, táhnoucích se od líbánek až po současnost. Jak můžeme jakoukoli ženu odsoudit k tomuto nekonečnému trestu? Rozvod pro ženy v násilných situacích není jen spravedlivý, je samotným ztělesněním spravedlnosti.“"
  rights_of_women_laws.1.a: "To nesmírně podporuje náš případ."
- rights_of_women_laws.1.b: "Neslavme příliš hlasitě, abychom nerozrušili [SCOPE.gsInterestGroup('anti_women_ig').GetName]."
+ rights_of_women_laws.1.b: "Neslavme příliš hlasitě, abychom nerozrušili [SCOPE.gsInterestGroup('anti_women_ig').GetCustom('IG_A_TT')]." # todo: NAME CASE
  womens_rights_divorce_advance: "Přelomový rozvodový případ"
  womens_rights_divorce_lesser_advance: "Přelomový rozvodový případ"
  womens_rights_divorce_ig_anger: "Hněv kvůli přelomovému rozvodovému případu"
