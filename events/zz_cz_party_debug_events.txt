@@ -176,6 +176,51 @@ cz_party_debug.4 = {
 	}
 
 	option = {
+		name = cz_party_debug.next
+		trigger_event = { id = cz_party_debug.5 days = 0 popup = yes }
+	}
+
+	option = {
+		name = cz_party_debug.close
+		default_option = yes
+	}
+}
+
+cz_party_debug.5 = {
+	type = country_event
+	placement = root
+	title = cz_party_debug.5.t
+	desc = cz_party_debug.5.d
+	flavor = cz_party_debug.f
+
+	event_image = {
+		video = "southamerica_election"
+	}
+	icon = "gfx/interface/icons/event_icons/event_election.dds"
+
+	duration = 3
+
+	immediate = {
+		py:agrarian_party ?= { save_scope_as = cz_dbg_agrarian_party }
+		py:anarchist_party ?= { save_scope_as = cz_dbg_anarchist_party }
+		py:communist_party ?= { save_scope_as = cz_dbg_communist_party }
+		py:conservative_party ?= { save_scope_as = cz_dbg_conservative_party }
+		py:fascist_party ?= { save_scope_as = cz_dbg_fascist_party }
+		py:free_trade_party ?= { save_scope_as = cz_dbg_free_trade_party }
+		py:liberal_party ?= { save_scope_as = cz_dbg_liberal_party }
+		py:military_party ?= { save_scope_as = cz_dbg_military_party }
+		py:radical_party ?= { save_scope_as = cz_dbg_radical_party }
+		py:religious_party ?= { save_scope_as = cz_dbg_religious_party }
+		py:revolutionary_party ?= { save_scope_as = cz_dbg_revolutionary_party }
+		py:social_democrat_party ?= { save_scope_as = cz_dbg_social_democrat_party }
+		random_interest_group = {
+			limit = { has_party = yes }
+			party = { save_scope_as = cz_dbg_party_test }
+		}
+		random_interest_group = { save_scope_as = cz_dbg_ig }
+	}
+
+	option = {
 		name = cz_party_debug.close
 		default_option = yes
 	}
