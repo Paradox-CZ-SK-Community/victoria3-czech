@@ -43,7 +43,7 @@
  lobby_events.40.b: "Výborně. [SCOPE.gsInterestGroup('relevant_ig').GetNameNoFormatting] si získá mocné přátele." # todo: NEW TRANSLATION
  lobby_events.31.t: "Přes rozdíly" # todo: NEW TRANSLATION
  lobby_events.31.d: "Ohromeni díly dováženými od [SCOPE.sCountry('relevant_lobby_country').GetAdjective] filmařů, [SCOPE.gsInterestGroup('relevant_ig').GetName] plánují vstoupit do [SCOPE.sPoliticalLobby('relevant_lobby').GetName]. Jsou ochotni spolupracovat s [SCOPE.gsInterestGroup('relevant_lobby_member').GetCustom('IG_I_TT')] na prosazení svých zájmů." # todo: NEW TRANSLATION # todo: NAME CASE
- lobby_events.31.f: "[SCOPE.sCharacter('relevant_ig_leader').GetFullNameNoFormatting] je neochvějný ve [SCOPE.sCharacter('relevant_ig_leader').GetHerHis] rozhovorech s [SCOPE.gsInterestGroup('relevant_lobby_member').GetCustom('IG_I')].\n\n"We can be powerful friends to the [SCOPE.sPoliticalLobby('relevant_lobby').GetNameNoFormatting]. I've seen how in [SCOPE.sCountry('relevant_lobby_country').GetNameNoFormatting] they make use of films to shape the public's imagination. We, too, can leverage this technology."" # todo: NEW TRANSLATION # todo: NAME CASE
+ lobby_events.31.f: "[SCOPE.sCharacter('relevant_ig_leader').GetFullNameNoFormatting] je neochvějný ve [SCOPE.sCharacter('relevant_ig_leader').GetHerHis] rozhovorech s [SCOPE.gsInterestGroup('relevant_lobby_member').GetCustom('IG_I')].\n\n„Můžeme být pro [SCOPE.sPoliticalLobby('relevant_lobby').GetNameNoFormatting] mocnými přáteli. Viděl jsem, jak v [SCOPE.sCountry('relevant_lobby_country').GetNameNoFormatting] využívají filmy k utváření představ veřejnosti. I my můžeme tuto technologii využít.“" # todo: NEW TRANSLATION # todo: NAME CASE
  lobby_events.31.a: "Dobře, uvidíme, co z toho vzejde." # todo: NEW TRANSLATION
  lobby_events.31.b: "Toto nebude plodné partnerství." # todo: NEW TRANSLATION
  ig_join_pol_str_negative: "Podkopané cíle" # todo: NEW TRANSLATION
@@ -71,9 +71,9 @@
  lobby_events.35.a: "[SCOPE.sPoliticalLobby('relevant_lobby').GetNameNoFormatting] bude z jejich podpory těžit." # todo: NEW TRANSLATION
  lobby_events.35.b: "[SCOPE.sPoliticalLobby('relevant_lobby').GetNameNoFormatting] teď jejich podporu nepotřebuje." # todo: NEW TRANSLATION
  appeasement_lobby_pleased: "Růst vlivu lobby" # todo: NEW TRANSLATION
- appeasement_lobby_pleased_desc: "Podpora růstu této [concept_political_lobby]" # todo: NEW TRANSLATION
+ appeasement_lobby_pleased_desc: "Podpora růstu této [Concept('concept_political_lobby','lobby')]" # todo: NEW TRANSLATION
  appeasement_lobby_displeased: "Zbržděný růst lobby" # todo: NEW TRANSLATION
- appeasement_lobby_displeased_desc: "Oponování růstu této [concept_political_lobby]" # todo: NEW TRANSLATION
+ appeasement_lobby_displeased_desc: "Oponování růstu této [Concept('concept_political_lobby','lobby')]" # todo: NEW TRANSLATION
  lobby_events.36.t: "Proti návrhu na volný obchod" # todo: NEW TRANSLATION
  lobby_events.36.d: "Nespokojeni s navrhovaným zákonem [SCOPE.sLaw('relevant_law_scope').GetName], [SCOPE.gsInterestGroup('relevant_ig').GetName] lobbuje za to, aby se [ROOT.GetCountry.GetNameNoFormatting] distancovala od [SCOPE.sCountry('relevant_lobby_country').GetName] – země, kde se [SCOPE.sLaw('relevant_law_scope').GetNameNoFormatting] uplatňuje." # todo: NEW TRANSLATION
  lobby_events.36.f: "[SCOPE.sCharacter('relevant_ig_leader').GetFullNameNoFormatting] hovořil naléhavě: "Oponujeme navrhovanému zákonu [SCOPE.sLaw('relevant_law_scope').GetNameNoFormatting] a měli bychom být stejně proti této doktríně v [SCOPE.sCountry('relevant_lobby_country').GetNameNoFormatting]."" # todo: NEW TRANSLATION
@@ -106,9 +106,9 @@
  lobby_member_approval_lost: "Pochybná spojení lobbistů" # todo: NEW TRANSLATION
  lobby_member_approval_gained: "Lobbisté se stříbrným jazykem" # todo: NEW TRANSLATION
  appeasement_lobby_gain: "Ústupek lobby se zvyšuje" # todo: NEW TRANSLATION
- appeasement_lobby_gain_desc: "Podpora aktivit této [concept_political_lobby]" # todo: NEW TRANSLATION
+ appeasement_lobby_gain_desc: "Podpora aktivit této [Concept('concept_political_lobby','lobby')]" # todo: NEW TRANSLATION
  appeasement_lobby_loss: "Ústupek lobby klesá" # todo: NEW TRANSLATION
- appeasement_lobby_loss_desc: "Oponování aktivitám této [concept_political_lobby]" # todo: NEW TRANSLATION
+ appeasement_lobby_loss_desc: "Oponování aktivitám této [Concept('concept_political_lobby','lobby')]" # todo: NEW TRANSLATION
  lobby_events.52.t: "Obchod kolem zákonodárství" # todo: NEW TRANSLATION
  lobby_events.52.d: "Častější pozorování členů [SCOPE.sPoliticalLobby('relevant_lobby').GetName] při družení se se zákonodárci v restauracích a zábavních podnicích vyvolává obavy o chování lobbistů." # todo: NEW TRANSLATION
  lobby_events.52.f: "Lobbista podává politikovi nápoj a poplácává ho po zádech. Tekutý jantar víří v jejich sklenicích. Veselým tónem mu říká: "Výborně! Jste tu mezi přáteli [SCOPE.sPoliticalLobby('relevant_lobby').GetNameNoFormatting]. Teď, když byly projednány záležitosti týkající se [SCOPE.sCountry('relevant_lobby_country').GetNameNoFormatting], odložme řeči o obchodu na zbytek večera."" # todo: NEW TRANSLATION
@@ -152,9 +152,9 @@
  lobby_member_resigns: "[SCOPE.sCharacter('relevant_lobby_leader').GetFullName] rezignuje z [SCOPE.gsInterestGroup('relevant_lobby_member').GetCustom('IG_G_TT')]" # todo: NEW TRANSLATION # todo: NAME CASE
  lobby_events.59.t: "Přednášky lobbisty v [SCOPE.sState('relevant_state').GetStateRegion.GetCityHubName]" # todo: NEW TRANSLATION
  lobby_events.59.d: "Muž zaměstnaný mocným členem [SCOPE.sPoliticalLobby('relevant_lobby').GetName] pořádá přednášky a rozdává brožury adresované cílovým voličským skupinám v [SCOPE.sState('relevant_state').GetStateRegion.GetCityHubName]." # todo: NEW TRANSLATION
- lobby_events.59.f: "Jeden zákonodárce píše kolegovi: "Každý den mě najde. Nevím jak. Jsem znepokojen. Jaké jsou jeho cíle? Ten najatý emisář [SCOPE.sPoliticalLobby('relevant_lobby').GetNameNoFormatting] straší dveře [ROOT.GetCountry.GetAdjectiveNoFormatting] shromáždění, podobně jako duch zavražděného Banqua."" # todo: NEW TRANSLATION
+ lobby_events.59.f: "Jeden zákonodárce píše kolegovi: "Každý den mě najde. Nevím jak. Jsem znepokojen. Jaké jsou jeho cíle? Ten najatý emisar [SCOPE.sPoliticalLobby('relevant_lobby').GetNameNoFormatting] straší dveře [ROOT.GetCountry.GetAdjectiveNoFormatting] shromáždění, podobně jako duch zavražděného Banqua."" # todo: CHANGED (predtym: Jeden zákonodárce píše kolegovi: Každý den mě najde. Nevím jak. Jsem znepokojen. Jaké jsou jeho cíle? Ten najatý emisář )
  lobby_events.59.a: "Dejte jasně najevo, že lobby jsou odpovědné za emisary, které najímají." # todo: NEW TRANSLATION
- lobby_events.59.b: "Jakékoli obavy o chování emisáře jsou neopodstatněné." # todo: NEW TRANSLATION
+ lobby_events.59.b: "Jakékoli obavy o chování emisaře jsou neopodstatněné." # todo: CHANGED (predtym: Jakékoli obavy o chování emisáře jsou neopodstatněné.)
  lobby_events.60.t: "Náhodná pozitivní publicita pro [SCOPE.sCountry('relevant_lobby_country').GetNameNoFormatting]" # todo: NEW TRANSLATION
  lobby_events.60.d: "Soukromá korespondence členů [SCOPE.sPoliticalLobby('relevant_lobby').GetName] byla vydána v brožurách. Dopisy chválí [SCOPE.sCountry('relevant_lobby_country').GetName], v rozporu se záměry [SCOPE.gsInterestGroup('relevant_lobby_member').GetCustom('IG_G_TT')]." # todo: NEW TRANSLATION # todo: NAME CASE
  lobby_events.60.f: "Na shromáždění všech členů [SCOPE.sPoliticalLobby('relevant_lobby').GetNameNoFormatting] houstne frustrace. Mnozí rychle viní [SCOPE.gsInterestGroup('relevant_lobby_member').GetCustom('IG_A')] za tento průšvih s řadou brožur distribuovaných bez jejich souhlasu.\n\nJeden člen zpochybňuje horlivost skupiny: "Ano, toto nebylo naším záměrem. Ale není to jenom menší klopýtnutí v našem velkém podniku?"" # todo: NEW TRANSLATION # todo: NAME CASE

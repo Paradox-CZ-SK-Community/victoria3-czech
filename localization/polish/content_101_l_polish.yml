@@ -124,7 +124,7 @@
  modifier_expedition_rhino_hunt: "Trofej z lovu nosorožce"
  crime_events.1.t: "Velká vlaková loupež v [SCOPE.sState('train_robbery_state').GetNameNoFormatting]"
  crime_events.1.d: "Po celém státě [SCOPE.sState('train_robbery_state').GetName] spáchaly odvážné gangy sérii vlakových loupeží, čímž ohrožují zákon, pořádek i měšce bohatých v celém státě."
- crime_events.1.f: "„Procházeli se po vagónu s namyšleným výrazem, jednoho z nich jsem poznal z plákátu s hledanými osobami. Nepochyboval jsem, že je za tým [SCOPE.sCharacter('name_a_scope').GetLastNameNoFormatting] a [Select_CString(SCOPE.sCharacter('name_a_scope').IsFemale, 'její','jeho')] [SCOPE.GetRootScope.GetCountry.GetCustom('outlaw_gang_type')].“"
+ crime_events.1.f: "„Procházeli se po vagónu s namyšleným výrazem, jednoho z nich jsem poznal z plakátu s hledanými osobami. Nepochyboval jsem, že je za tým [SCOPE.sCharacter('name_a_scope').GetLastNameNoFormatting] a [Select_CString(SCOPE.sCharacter('name_a_scope').IsFemale, 'její','jeho')] [SCOPE.GetRootScope.GetCountry.GetCustom('outlaw_gang_type')].“" # todo: CHANGED (predtym: „Procházeli se po vagónu s namyšleným výrazem, jednoho z nich jsem poznal z plákátu s hledanými osobami. Nepochyboval js)
  crime_events.1.a: "Naši maršálové s nimi rychle zatočí."
  crime_events.1.b: "Koho zajímá jeden nebo dva vlaky?"
  custom_gang: "gang"

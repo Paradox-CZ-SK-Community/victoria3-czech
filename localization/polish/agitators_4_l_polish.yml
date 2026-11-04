@@ -1,7 +1,7 @@
 ﻿l_polish:
  je_nihilist_movement: "Nihilistické hnutí"
  je_nihilist_movement_goal: "Jedno z následujících:\n[SCOPE.GetRootScope.GetCountry.GetName] prosadila [GetLawType('law_censorship').GetName] nebo [GetLawType('law_outlawed_dissent').GetName] a všechny nihilistické zájmové skupiny jsou potlačeny po dobu delší než 5 let\n[SCOPE.GetRootScope.GetCountry.GetName] si udržela #bold pozitivní#! podporu [GetInterestGroupVariant('ig_intelligentsia',GetPlayer).GetName], nebo je držela marginalizované po dobu delší než 5 let"
- je_nihilist_movement_trigger_tt_1: "[SCOPE.GetRootScope.GetCountry.GetName] prosadzuje [GetLawType('law_censorship').GetName] nebo [GetLawType('law_outlawed_dissent').GetName] a #b $movement_nihilist$#! je potlačeno po dobu delší než 5 let"
+ je_nihilist_movement_trigger_tt_1: "[SCOPE.GetRootScope.GetCountry.GetName] prosazuje [GetLawType('law_censorship').GetName] nebo [GetLawType('law_outlawed_dissent').GetName] a #b $movement_nihilist$#! je potlačeno po dobu delší než 5 let" # todo: CHANGED (predtym: [SCOPE.GetRootScope.GetCountry.GetName] prosadzuje [GetLawType('law_censorship').GetName] nebo [GetLawType('law_outlawed)
  je_nihilist_movement_trigger_tt_2: "[SCOPE.GetRootScope.GetCountry.GetName] si udržuje #bold pozitivní#! podporu [GetInterestGroupVariant('ig_intelligentsia',GetPlayer).GetName], nebo je držela marginalizované po dobu delší než 5 let"
  je_nihilist_movement_reason: "Hnutí radikální [GetInterestGroupVariant('ig_intelligentsia',GetPlayer).GetName], které tvrdí, že usiluje o zrušení všeho považovaného za posvátné, začalo šířit spisy odsuzující božsky ustanovenou vládu. Toto hnutí svými kritikami ohrožuje samotné základy naší vlády."
  has_no_nihilist_movement_tt: " #b Nemá#! aktivní #v $movement_nihilist$#!"
@@ -230,7 +230,7 @@
  coup_pulse_events.15.f: "„Neřest může na čas zvítězit, zločin se může chlubit svými úspěchy před poctivými lidmi, ale nakonec zákon dostihne viníka a hanba i trest postihnou ty, kdo hřeší.“\n\n— Allan Pinkerton"
  coup_pulse_events.15.a: "Jejich úkolem je zákon dodržovat, ne ho určovat."
  coup_pulse_events.15.b: "Kým jsme, pokud nemáme ani důvěru policie?"
- state_radicals_increase_coup_tt: "[Concept('concept_pop','Populace')] ve státech s více než 20% politickou silou [SCOPE.gsInterestGroup('golpista_ig').GetCustom('IG_G_TT')] se stanou více [Concept('concept_radical','radikál')]" # todo: NAME CASE
+ state_radicals_increase_coup_tt: "[Concept('concept_pop','Populace')] ve státech s více než 20% politickou silou [SCOPE.gsInterestGroup('golpista_ig').GetCustom('IG_G_TT')] se stanou [Concept('concept_radical','radikály')]" # todo: NAME CASE
  coup_pulse_events.16.t: "Nový Prométheus"
  coup_pulse_events.16.d: "[SCOPE.sCharacter('enlightened_despot_scope').GetFullName], významný člen [SCOPE.gsInterestGroup('golpista_ig').GetCustom('IG_G_TT')], vydal politický manifest předpovídající blízký kolaps společnosti a nutnost osvíceného režimu, který by jej odvrátil." # todo: NAME CASE
  coup_pulse_events.16.f: "„Cílem našeho založení je poznání příčin a skrytých pohybů věcí a rozšiřování hranic lidské říše až k uskutečnění všeho možného.“\n\n— Francis Bacon, #italic Nová Atlantida#!"
@@ -579,7 +579,7 @@
  silkworm_diseases.9.d: "Díky usilovné práci našich vědců i chovatelů bource, kteří aplikovali jejich řešení, se náš hedvábnický průmysl zotavil z epidemie pébriny. Nové poznatky o příčinách nemoci nám budou přínosem po mnoho let."
  silkworm_diseases.9.f: "Buňky byly opět naplněny kokony, v nichž housenky nevědomky podstupovaly proměnu, která měla být brzy ukončena lázní vařící vody. Dělník procházel mezi řadami dřevěných buněk, stín napětí téměř zmizel z jeho čela.\n\nSeznam jeho úkolů se sice prodloužil a mzda vzrostla jen nepatrně — ale bylo to rozhodně lepší než nemít práci vůbec."
  silkworm_diseases.9.a: "Připijme na naše vědce!"
- silkworm_diseases.9.b: "Obnovme hedvábnický průmysl — není čas ztrácet čas."
+ silkworm_diseases.9.b: "Obnovme hedvábnický průmysl — nemáme čas nazbyt." # todo: CHANGED (predtym: Obnovme hedvábnický průmysl — není čas ztrácet čas.)
  modifier_agitator_left: "Odešlí spojenci"
  modifier_agitator_hopeless: "Smrt naděje"
  modifier_exile_ig_empowered: "Nadějný nováček"

@@ -69,7 +69,7 @@
  je_specialized_goods_reason: "Měli bychom dále diverzifikovat naši výrobu zboží. Začali jsme s výrobou jednoho zboží, ale pokud začneme vyrábět i dražší produkty, budeme je moci vyvážet do všech koutů světa." # todo: NEW TRANSLATION
  je_expanding_the_market: "Rozšiřování trhu" # todo: NEW TRANSLATION
  je_expanding_the_market_status: "Mít 8 států jako součást vašeho $concept_customs_union$." # todo: NEW TRANSLATION
- je_expanding_the_market_reason: "Měli bychom rozšířit naše $concept_customs_union$ o další státy. To umožní volnější a přímější obchod s jinými státy, aniž bychom museli [concept_trade] s [concept_world_market]." # todo: NEW TRANSLATION
+ je_expanding_the_market_reason: "Měli bychom rozšířit naše $concept_customs_union$ o další státy. To umožní volnější a přímější obchod s jinými státy, aniž bychom museli [Concept('concept_trade','obchod')] s [Concept('concept_world_market','světovým trhem')]." # todo: NEW TRANSLATION
  je_strong_market: "Silný trh" # todo: NEW TRANSLATION
  je_strong_market_reason: "Nastal čas etablovat se jako největší a nejsilnější trh na světě." # todo: NEW TRANSLATION
  economic_dominance_complete_1: "Hospodářská nadvláda dokončena" # todo: NEW TRANSLATION
@@ -85,11 +85,11 @@
  je_raise_exports_value_reason: "S naším zaměřením na export cenného zboží je nejlepším postupem zvýšit hodnotu těchto výrobků, aby se maximalizovaly zisky budov, které je vyrábějí." # todo: NEW TRANSLATION
  je_lower_production_costs: "Snižování cen spotřebních vstupů" # todo: NEW TRANSLATION
  je_lower_production_costs_reason: "S rostoucím průmyslem musíme zajistit stálý přísun vstupních surovin do továren a také dbát na to, aby tyto vstupní suroviny nebyly příliš drahé a neovlivňovaly negativně výrobu hodnotnějších produktů." # todo: NEW TRANSLATION
- tt_lower_production_costs_sub_obj: "Mějte [GetGoods('iron').GetCustom('GDS_A_TT')], [GetGoods('coal').GetCustom('GDS_A_TT')] a [GetGoods('steel').GetCustom('GDS_A_TT')] v [AccessPlayer.AccessFirstMarket.GetName] o 20 % levněji než jejich [concept_base_price]" # todo: NEW TRANSLATION # todo: NAME CASE
- tt_raise_exports_value_sub_obj: "Mějte [GetGoods('engines').GetCustom('GDS_A_TT')] v [AccessPlayer.AccessFirstMarket.GetName] o 50 % dražší než jejich [concept_base_price]" # todo: NEW TRANSLATION # todo: NAME CASE
- tt_utilizing_our_strength_sub_obj: "Mějte [GetGoods('engines').GetCustom('GDS_A_TT')] v [AccessPlayer.AccessFirstMarket.GetName] o 20 % levněji než jejich [concept_base_price]" # todo: NEW TRANSLATION # todo: NAME CASE
- je_african_colonies_own_a_colony: "Je [concept_colony] na africkém kontinentu" # todo: NEW TRANSLATION
- je_african_colonies_own_whole_state_region: "Zahrnuje celý [concept_state_region]" # todo: NEW TRANSLATION
+ tt_lower_production_costs_sub_obj: "Mějte [GetGoods('iron').GetCustom('GDS_A_TT')], [GetGoods('coal').GetCustom('GDS_A_TT')] a [GetGoods('steel').GetCustom('GDS_A_TT')] v [AccessPlayer.AccessFirstMarket.GetName] o 20 % levněji než jejich [Concept('concept_base_price','základní cena')]" # todo: NEW TRANSLATION # todo: NAME CASE
+ tt_raise_exports_value_sub_obj: "Mějte [GetGoods('engines').GetCustom('GDS_A_TT')] v [AccessPlayer.AccessFirstMarket.GetName] o 50 % dražší než jejich [Concept('concept_base_price','základní cena')]" # todo: NEW TRANSLATION # todo: NAME CASE
+ tt_utilizing_our_strength_sub_obj: "Mějte [GetGoods('engines').GetCustom('GDS_A_TT')] v [AccessPlayer.AccessFirstMarket.GetName] o 20 % levněji než jejich [Concept('concept_base_price','základní cena')]" # todo: NEW TRANSLATION # todo: NAME CASE
+ je_african_colonies_own_a_colony: "Je [Concept('concept_colony','kolonie')] na africkém kontinentu" # todo: NEW TRANSLATION
+ je_african_colonies_own_whole_state_region: "Zahrnuje celou [Concept('concept_state_region','státní oblast')]" # todo: NEW TRANSLATION
  je_objective_encourage_liberal_ideas: "Podpořit liberální myšlení" # todo: NEW TRANSLATION
  je_objective_encourage_liberal_ideas_reason: "První kroky k vytvoření jakékoli podoby egalitární společnosti by měly být získání správných lidí do vlády. Když budou mít moc provádět změny, můžeme učinit první kroky k rovnější společnosti." # todo: NEW TRANSLATION
  je_pass_laws: "Schválení zákonů" # todo: NEW TRANSLATION
@@ -117,7 +117,7 @@
  je_african_colonies: "Africké kolonie" # todo: NEW TRANSLATION
  je_african_colonies_reason: "Nyní, když naše zákony umožňují zakládat kolonie, měli bychom se jako první krok k rozšíření naší hegemonie zaměřit na získávání území na africkém kontinentě." # todo: NEW TRANSLATION
  je_expand_navy_and_army: "Posílení ozbrojených sil" # todo: NEW TRANSLATION
- je_expand_navy_and_army_reason: "S našimi prvními koloniemi bychom se měli připravit na nejhorší. Naše armáda nemusí být nejsilnější na světě, ale měla by odradit ostatní od pokusu o [concept_diplomatic_play] proti nám." # todo: NEW TRANSLATION
+ je_expand_navy_and_army_reason: "S našimi prvními koloniemi bychom se měli připravit na nejhorší. Naše armáda nemusí být nejsilnější na světě, ale měla by odradit ostatní od pokusu o [Concept('concept_diplomatic_play','diplomatickou hru')] proti nám." # todo: NEW TRANSLATION
  je_form_alliance: "Uzavírat aliance" # todo: NEW TRANSLATION
  je_form_alliance_reason: "Udržení silné armády je důležité, ale není to jediný způsob, jak zajistit naši bezpečnost. Měli bychom vytvořit aliance s dalšími mocnostmi po celém světě, které nám mohou pomoci, pokud se některý stát pokusí nás připravit o to, co je naše." # todo: NEW TRANSLATION
  je_take_subject: "Udržet podřízené" # todo: NEW TRANSLATION

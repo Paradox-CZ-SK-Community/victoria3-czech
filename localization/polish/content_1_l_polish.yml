@@ -243,7 +243,7 @@
  strike.3.a: "Katastrofa!"
  strike.4.t: "Stávka: Protiodborová opatření"
  strike.4.d: "Vláda, která není ochotna jednat s odbory, navrhla opatření zaměřená na ukončení stávky."
- strike.4.f: "Vláda má bezpochyby právo ve vlastním zájmu odrazovat a bránit použití síly a násilí k dosažení toho, čeho by mělo být dosaženo, pokud vůbec, parlamentními či politickými prostředky. Není čas ztrácet čas slovíčkařením o porušování svobody."
+ strike.4.f: "Vláda má bezpochyby právo ve vlastním zájmu odrazovat a bránit použití síly a násilí k dosažení toho, čeho by mělo být dosaženo, pokud vůbec, parlamentními či politickými prostředky. Není čas ztrácet slovíčkařením o porušování svobody." # todo: CHANGED (predtym: Vláda má bezpochyby právo ve vlastním zájmu odrazovat a bránit použití síly a násilí k dosažení toho, čeho by mělo být d)
  strike.4.a: "Udělit policii zvláštní pravomoci."
  strike.4.b: "Podporovat stávkokazectví."
  strike.4.c: "Měli bychom přehodnotit náš přístup."
@@ -1059,21 +1059,21 @@
  Tewodros: "Tewodros"
  tewodros_modifier: "Psanecký princ"
  je_risorgimento: "Risorgimento" # todo: NEW TRANSLATION
- je_risorgimento_reason: "Proudy nacionalismu, které se přehánějí Evropou, začaly procházet [ROOT.GetCountry.GetName], inspirovat osobnosti jak uvnitř naší vlády, tak i mimo ni k usilování o obnovení jediné sjednocené Itálie.\n\nDokud je tento zápis v deníku aktivní, jakákoli aktivní [concept_revolution] způsobená [SelectLocalization(SCOPE.sPoliticalMovement('italian_national_movement').IsValid, SCOPE.sPoliticalMovement('italian_national_movement').GetName, 'movement_italian_national')] povede k uchopení vlády [ROOT.GetCountry.GetAdjective] panitalskými revolucionáři[ROOT.GetCountry.GetCustom('italy_fate_loc')]." # todo: NEW TRANSLATION
+ je_risorgimento_reason: "Proudy nacionalismu, které se přehánějí Evropou, začaly procházet [ROOT.GetCountry.GetName], inspirovat osobnosti jak uvnitř naší vlády, tak i mimo ni k usilování o obnovení jediné sjednocené Itálie.\n\nDokud je tento zápis v deníku aktivní, jakákoli aktivní [Concept('concept_revolution','revoluce')] způsobená [SelectLocalization(SCOPE.sPoliticalMovement('italian_national_movement').IsValid, SCOPE.sPoliticalMovement('italian_national_movement').GetName, 'movement_italian_national')] povede k uchopení vlády [ROOT.GetCountry.GetAdjective] panitalskými revolucionáři[ROOT.GetCountry.GetCustom('italy_fate_loc')]." # todo: NEW TRANSLATION
  austrian_radicals_cooldown_tt: "Nepoužil rozhodnutí #bold Encourage Italian Nationalism#! v posledních #v [GetPlayer.MakeScope.ScriptValue('risorgimento_action_cooldown_years')]#! letech." # todo: NEW TRANSLATION
  italian_radicals_cooldown_tt: "Nepoužil rozhodnutí #bold Sponsor Pro-Unification Sentiment#! v posledních #v [GetPlayer.MakeScope.ScriptValue('risorgimento_action_cooldown_years')]#! letech." # todo: NEW TRANSLATION
  is_italy_tt: "Vytvořil národ #bold Italy#!" # todo: NEW TRANSLATION
- italy_will_get_couped_custom: " and the instatement of a #bold democratic republic#!" # todo: NEW TRANSLATION
- italy_will_get_annexed_custom: " and #red annexation#! into the leading Italian state" # todo: NEW TRANSLATION
- owns_italian_homelands_tt: "Vlastní [GetCulture('north_italian').GetName] nebo [GetCulture('south_italian').GetName] [concept_homeland] státy" # todo: NEW TRANSLATION
- je_risorgimento_italian_minors_tt: "Menší národy #b $ITA_ADJ$#! se s námi mohou sjednotit, pokud se staneme jediným #b $ITA_ADJ$#! [concept_unification_candidate]" # todo: NEW TRANSLATION
+ italy_will_get_couped_custom: " a nastolení #bold demokratické republiky#!" # todo: CHANGED (predtym: and the instatement of a bold democratic republic !)
+ italy_will_get_annexed_custom: " a #red anexe#! vedoucím italským státem" # todo: CHANGED (predtym: and red annexation ! into the leading Italian state)
+ owns_italian_homelands_tt: "Vlastní [GetCulture('north_italian').GetName] nebo [GetCulture('south_italian').GetName] [Concept('concept_homeland','domovina')] státy" # todo: NEW TRANSLATION
+ je_risorgimento_italian_minors_tt: "Menší národy #b $ITA_ADJ$#! se s námi mohou sjednotit, pokud se staneme jediným #b $ITA_ADJ$#! [Concept('concept_unification_candidate','kandidát pro sjednocení')]" # todo: NEW TRANSLATION
  je_risorgimento_austrian_radicals_button: "Podpořit italský nacionalismus" # todo: NEW TRANSLATION
  je_risorgimento_austrian_radicals_button_desc: "Od konce napoleonských válek jsou italská území držena cizími mocnostmi. Naše snaha sjednotit poloostrov je může inspirovat k tomu, aby se vzbouřili proti svým utlačovatelům." # todo: NEW TRANSLATION
  je_risorgimento_italian_radicals_button: "Podnítit podporu sjednocení" # todo: NEW TRANSLATION
  je_risorgimento_italian_radicals_button_desc: "Po celém italském poloostrově se masy pomalu probouzejí a obracejí se k myšlence sjednocené Itálie. Pokud jejich vládcové nebudou ochotni následovat tento hlas, možná to udělá jejich lid." # todo: NEW TRANSLATION
  ausrad_cooldown_year_tt: "Toto rozhodnutí bude opět dostupné za #v [GetPlayer.MakeScope.ScriptValue('risorgimento_action_cooldown_years')]#! let." # todo: NEW TRANSLATION
  itarad_cooldown_year_tt: "Toto rozhodnutí bude opět dostupné za #v [GetPlayer.MakeScope.ScriptValue('risorgimento_action_cooldown_years')]#! let." # todo: NEW TRANSLATION
- owns_no_italian_homelands_tt: "Nevlastní #b žádné#! [GetCulture('north_italian').GetName] nebo [GetCulture('south_italian').GetName] [concept_homeland] státy" # todo: NEW TRANSLATION
+ owns_no_italian_homelands_tt: "Nevlastní #b žádné#! [GetCulture('north_italian').GetName] nebo [GetCulture('south_italian').GetName] [Concept('concept_homeland','domovina')] státy" # todo: NEW TRANSLATION
  italian_unification.4.t: "Tříbarvy nad [SCOPE.sState('capital_scope').GetCityHubName]" # todo: NEW TRANSLATION
  italian_unification.4.d_annex: "Inspirováni voláním po znovusjednocení Itálie obsadili nacionalističtí rebelové [SCOPE.sState('capital_scope').GetCityHubName] a přísahali věrnost sjednocené Itálii pod vedením [SCOPE.sCountry('italian_leader').GetRuler.GetFullName] z [SCOPE.sCountry('italian_leader').GetName]." # todo: NEW TRANSLATION
  italian_unification.4.d_coup: "Inspirováni voláním po znovusjednocení Itálie obsadili nacionalističtí rebelové [SCOPE.sState('capital_scope').GetCityHubName] a prohlásili vládu [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullName] za svrženou." # todo: NEW TRANSLATION
@@ -1132,9 +1132,9 @@
  notification_sabotage_decision_agitation_occurred_name: "Nepokoje podporující sjednocení zasáhly [SCOPE.sCountry('victim_country').GetName]" # todo: NEW TRANSLATION
  notification_sabotage_decision_agitation_occurred_desc: "Inspirováno voláním po italském sjednocení ze strany [SCOPE.sCountry('saboteur_country').GetName], [Concept('concept_activism', '$concept_activism_short$')|l] hnutí [SCOPE.sPoliticalMovement('italian_nationalist_movement').GetName] se zvýšil." # todo: NEW TRANSLATION
  notification_sabotage_decision_agitation_occurred_tooltip: "#header $notification_sabotage_decision_agitation_occurred_name$#!\n$TOOLTIP_DELIMITER$\n$notification_sabotage_decision_agitation_occurred_desc$" # todo: NEW TRANSLATION
- italian_nationalist_movements_list_tt: "[Concept('concept_political_movement','$concept_political_movements$')] kompatibilní s #v $ITA_ADJ$#! [concept_unification] zahrnují:\n• $movement_liberal$\n• $movement_radical$\n• $movement_anti_slavery$\n• $movement_positivist$\n• $movement_labor$\n• $movement_cultural_majority$\n• $movement_fascist$\n• $movement_modernizer$\n• $movement_socialist$\n• $movement_communist$\n• $movement_anarchist$\n• $movement_nihilist$" # todo: NEW TRANSLATION
+ italian_nationalist_movements_list_tt: "[Concept('concept_political_movement','$concept_political_movements$')] kompatibilní s #v $ITA_ADJ$#! [Concept('concept_unification','sjednocení země')] zahrnují:\n• $movement_liberal$\n• $movement_radical$\n• $movement_anti_slavery$\n• $movement_positivist$\n• $movement_labor$\n• $movement_cultural_majority$\n• $movement_fascist$\n• $movement_modernizer$\n• $movement_socialist$\n• $movement_communist$\n• $movement_anarchist$\n• $movement_nihilist$" # todo: NEW TRANSLATION
  modifier_italian_unificationist_sentiment: "Italské nacionalistické nálady" # todo: NEW TRANSLATION
- movement_compatible_with_italian_unification_tt: "Hnutí je #tooltippable;tooltip:[GetPlayer.GetTooltipTag],italian_nationalist_movements_list_tt kompatibilní#! s #v $ITA_ADJ$#! [concept_unification]" # todo: NEW TRANSLATION
+ movement_compatible_with_italian_unification_tt: "Hnutí je #tooltippable;tooltip:[GetPlayer.GetTooltipTag],italian_nationalist_movements_list_tt kompatibilní#! s #v $ITA_ADJ$#! [Concept('concept_unification','sjednocení země')]" # todo: NEW TRANSLATION
  italian_unification.1.t: "Risorgimento"
  italian_unification.1.d: "Pod hrdinským vedením [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullName] se italský národ zrodil. Sjednocen pod jednou vlajkou bude Itálie nepochybně utvářet budoucnost Evropy i světa."
  italian_unification.1.f: "„Ano, mladí muži, Itálie vám vděčí za čin, který si zasloužil obdiv celého světa. Zvítězili jste a budete vítězit i nadále, protože jste připraveni na taktiku, která rozhoduje o osudu bitev. K této úžasné kapitole našich dějin přibude ještě slavnější a otrok konečně ukáže svým svobodným bratřím meč ukovaný z okovů svého zajetí.“"

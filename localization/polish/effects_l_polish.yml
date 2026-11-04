@@ -129,10 +129,10 @@
  SET_STATE_RELIGION_THIRD: "[TARGET_RELIGION.GetName] se stává [Concept('concept_state_religion','státním náboženstvím')|l] [COUNTRY.GetAltAdjective('G')]"
  ADD_CULTURAL_OBSESSION: "[CULTURE.GetName] kultura se stává posedlou na [GOODS.GetCustom('GDS_L')]"
  REMOVE_CULTURAL_OBSESSION: "[CULTURE.GetName] přestává být posedlý [GOODS.GetCustom('GDS_I')]"
- ADD_CULTURAL_TABOO_GLOBAL: "[GOODS.GetName] je nyní považováno za [concept_taboo]" # todo: NEW TRANSLATION
- ADD_CULTURAL_TABOO_THIRD: "[CULTURE.GetName] bude nyní považovat [GOODS.GetCustom('GDS_A_TT')] za [concept_taboo]" # todo: NEW TRANSLATION # todo: NAME CASE
- REMOVE_CULTURAL_TABOO_GLOBAL: "[GOODS.GetName] již není považováno za [concept_taboo]" # todo: NEW TRANSLATION
- REMOVE_CULTURAL_TABOO_THIRD: "[CULTURE.GetName] již nebude považovat [GOODS.GetCustom('GDS_A_TT')] za [concept_taboo]" # todo: NEW TRANSLATION # todo: NAME CASE
+ ADD_CULTURAL_TABOO_GLOBAL: "[GOODS.GetName] je nyní považováno za [Concept('concept_taboo','tabu')]" # todo: NEW TRANSLATION
+ ADD_CULTURAL_TABOO_THIRD: "[CULTURE.GetName] bude nyní považovat [GOODS.GetCustom('GDS_A_TT')] za [Concept('concept_taboo','tabu')]" # todo: NEW TRANSLATION # todo: NAME CASE
+ REMOVE_CULTURAL_TABOO_GLOBAL: "[GOODS.GetName] již není považováno za [Concept('concept_taboo','tabu')]" # todo: NEW TRANSLATION
+ REMOVE_CULTURAL_TABOO_THIRD: "[CULTURE.GetName] již nebude považovat [GOODS.GetCustom('GDS_A_TT')] za [Concept('concept_taboo','tabu')]" # todo: NEW TRANSLATION # todo: NAME CASE
  ADD_TRADITION_TRAIT: "[CULTURE.GetName] přijímá [DISCRIMINATION_TRAIT.GetName] [Concept('concept_tradition_trait','rys tradice')|l]"
  REMOVE_TRADITION_TRAIT: "[CULTURE.GetName] opouští [DISCRIMINATION_TRAIT.GetName] [Concept('concept_tradition_trait','rys tradice')|l]"
  ADD_CULTURAL_COMMUNITY: "Nová [CULTURE.GetName] [Concept('concept_cultural_community','kulturní komunita')|l] se objevuje"
@@ -161,12 +161,12 @@
  CREATE_DIPLOMATIC_PACT: "[DIPLOMATIC_ACTION_TYPE.GetEffectDescriptionNoContext( COUNTRY.Self, TARGET_COUNTRY.Self )]"
  CREATE_DIPLOMATIC_PACT_FIRST: "[DIPLOMATIC_ACTION_TYPE.GetEffectDescriptionFirst( COUNTRY.Self, TARGET_COUNTRY.Self )]"
  CREATE_DIPLOMATIC_PACT_THIRD: "[DIPLOMATIC_ACTION_TYPE.GetEffectDescriptionThird( COUNTRY.Self, TARGET_COUNTRY.Self )]"
- CHANGE_INFAMY: "[Concept('concept_infamy','Infamia')] vzrostlo o #variable $VALUE$#!"
- CHANGE_INFAMY_NEG: "[Concept('concept_infamy','Infamia')] se snížil o #variable $VALUE$#!"
+ CHANGE_INFAMY: "[Concept('concept_infamy','Infamie')] vzrostlo o #variable $VALUE$#!" # todo: CHANGED (predtym: [Concept('concept_infamy','Infamia')] vzrostlo o variable $VALUE$ !)
+ CHANGE_INFAMY_NEG: "[Concept('concept_infamy','Infamie')] se snížil o #variable $VALUE$#!" # todo: CHANGED (predtym: [Concept('concept_infamy','Infamia')] se snížil o variable $VALUE$ !)
  CHANGE_INFAMY_FIRST: "[COUNTRY.GetAdjectiveNoFormatting] [Concept('concept_infamy','infamie')] se zvýší o #variable $VALUE$#!"
  CHANGE_INFAMY_FIRST_NEG: "[COUNTRY.GetAdjectiveNoFormatting] [Concept('concept_infamy','infamie')] se sníží o #variable $VALUE$#!"
- CHANGE_INFAMY_THIRD: "[COUNTRY.GetAdjective] [Concept('concept_infamy','Infamia')|l] se zvýšila o #variable $VALUE$#!"
- CHANGE_INFAMY_THIRD_NEG: "[COUNTRY.GetAdjective] [Concept('concept_infamy','Infamia')|l] snížena o #variable $VALUE$#!"
+ CHANGE_INFAMY_THIRD: "[COUNTRY.GetAdjective] [Concept('concept_infamy','Infamie')|l] se zvýšila o #variable $VALUE$#!" # todo: CHANGED (predtym: [COUNTRY.GetAdjective] [Concept('concept_infamy','Infamia')|l] se zvýšila o variable $VALUE$ !)
+ CHANGE_INFAMY_THIRD_NEG: "[COUNTRY.GetAdjective] [Concept('concept_infamy','Infamie')|l] snížena o #variable $VALUE$#!" # todo: CHANGED (predtym: [COUNTRY.GetAdjective] [Concept('concept_infamy','Infamia')|l] snížena o variable $VALUE$ !)
  CREATE_INCIDENT: "$DESC$"
  CREATE_INCIDENT_FIRST: "$DESC$"
  CREATE_INCIDENT_THIRD: "$DESC$"
@@ -660,7 +660,7 @@
  DECREASE_AUTONOMY_THIRD: "[COUNTRY.GetName] má sníženou autonomii, stává se $SUBJECT_TYPE|v$ [COUNTRY.GetOverlord.GetAltAdjective('G')]"
  DECREASE_AUTONOMY_THIRD_NEG: "[COUNTRY.GetName] autonomie zůstává nezměněna"
  TELEPORT_TO_FRONT_THIRD: "[MILITARY_FORMATION.GetName] se okamžitě přesune na [TARGET_FRONT.GetName]"
- TELEPORT_TO_FRONT_GLOBAL: "[Concept('concept_military_formation','Formace')] je okamžitě přesunut na [Concept('concept_front','frontu')]"
+ TELEPORT_TO_FRONT_GLOBAL: "[Concept('concept_military_formation','Formace')] je okamžitě přesunut na [Concept('concept_front','frontu')]" # todo: CHANGED (predtym: [Concept('concept_military_formation','Formace')] je okamžitě přesunut na [Concept('concept_front','frontu')])
  MOBILIZE_ARMY_THIRD: "[MILITARY_FORMATION.GetName] je [Concept('concept_mobilize_army','mobilizována')]"
  MOBILIZE_ARMY_GLOBAL: "[Concept('concept_military_formation','Formace')] je [Concept('concept_mobilize_army','mobilizována')]"
  FULLY_MOBILIZE_ARMY_THIRD: "[MILITARY_FORMATION.GetName] se okamžitě plně [Concept('concept_mobilize_army','mobilizuje')]"
@@ -694,9 +694,9 @@
  ADD_AMENDMENT_GLOBAL: "K [Concept('concept_law','zákonu')] je přidán [Concept('concept_amendment','dodatek')|l]"
  ADD_AMENDMENT_FIRST: "[AMENDMENT_TYPE.GetName] je přidán k [LAW.GetName]"
  ADD_AMENDMENT_THIRD: "[AMENDMENT_TYPE.GetNameWithLaw(LAW.Self)] je přidáno k [LAW.GetName]"
- ADD_AMENDMENT_TIMEOUT_GLOBAL: "Do [concept_law] je přidán dočasný [concept_amendment]" # todo: NEW TRANSLATION
- ADD_AMENDMENT_TIMEOUT_FIRST: "[AMENDMENT_TYPE.GetName] je dočasně přidán k [LAW.GetName], vyprší #b $TIMEOUT_MONTHS$ měsíců#! poté, co [concept_law] nabude účinnosti" # todo: NEW TRANSLATION
- ADD_AMENDMENT_TIMEOUT_THIRD: "[AMENDMENT_TYPE.GetNameWithLaw(LAW.Self)] je dočasně přidán k [LAW.GetName], vyprší #b $TIMEOUT_MONTHS$ měsíců#! poté, co [concept_law] nabude účinnosti" # todo: NEW TRANSLATION
+ ADD_AMENDMENT_TIMEOUT_GLOBAL: "Do [Concept('concept_law','zákona')] je přidán dočasný [Concept('concept_amendment','dodatek')]" # todo: NEW TRANSLATION
+ ADD_AMENDMENT_TIMEOUT_FIRST: "[AMENDMENT_TYPE.GetName] je dočasně přidán k [LAW.GetName], vyprší #b $TIMEOUT_MONTHS$ měsíců#! poté, co [Concept('concept_law','zákon')] nabude účinnosti" # todo: NEW TRANSLATION
+ ADD_AMENDMENT_TIMEOUT_THIRD: "[AMENDMENT_TYPE.GetNameWithLaw(LAW.Self)] je dočasně přidán k [LAW.GetName], vyprší #b $TIMEOUT_MONTHS$ měsíců#! poté, co [Concept('concept_law','zákon')] nabude účinnosti" # todo: NEW TRANSLATION
  REMOVE_AMENDMENT_GLOBAL: "[Concept('concept_amendment','Dodatek')] je odstraněn ze [Concept('concept_law','zákona')]"
  REMOVE_AMENDMENT_FIRST: "Dodatek [AMENDMENT.GetName] je odstraněn z [LAW.GetName]"
  REMOVE_AMENDMENT_THIRD: "Dodatek [AMENDMENT.GetName] je odstraněn z [LAW.GetName]"
