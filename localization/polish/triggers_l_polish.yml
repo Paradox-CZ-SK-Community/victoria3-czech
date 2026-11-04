@@ -133,7 +133,7 @@
  TRIGGER_CAN_HAVE_POLITICAL_MOVEMENT_THIRD: "[COUNTRY.GetName] může potenciálně získat [Concept('concept_political_movement','politické hnutí')|l] pro [TARGET_LAW_TYPE.GetName]"
  TRIGGER_CAN_HAVE_POLITICAL_MOVEMENT_THIRD_NOT: "[COUNTRY.GetName] nemůže #bold ne#! potenciálně získat [Concept('concept_political_movement','politické hnutí')|l] k [TARGET_LAW_TYPE.GetName]"
  TRIGGER_HAS_DECREE: "Má [DECREE_TYPE.GetName] [Concept('concept_decree','dekret')|l]"
- TRIGGER_HAS_DECREE_NOT: "#bold Nemá#! dekrét [DECREE_TYPE.GetName] [Concept('concept_decree','dekret')|l]"
+ TRIGGER_HAS_DECREE_NOT: "#bold Nemá#! dekret [DECREE_TYPE.GetName] [Concept('concept_decree','dekret')|l]" # todo: CHANGED (predtym: bold Nemá ! dekrét [DECREE_TYPE.GetName] [Concept('concept_decree','dekret')|l])
  TRIGGER_HAS_DECREE_THIRD: "[STATE.GetName] má [DECREE_TYPE.GetName] [Concept('concept_decree','dekret')|l]"
  TRIGGER_HAS_DECREE_THIRD_NOT: "[STATE.GetName] #bold nemá#! [DECREE_TYPE.GetName] [Concept('concept_decree','dekret')|l]"
  TRIGGER_HAS_INTEREST_MARKER_IN_REGION: "Má [Concept('concept_interest','zájem')|l] ve strategickém regionu [TARGET_STRATEGIC_REGION.GetName]"
@@ -239,7 +239,7 @@
  TRIGGER_HAS_PLAY_GOAL: "Má válečný cíl [WAR_GOAL_TYPE.GetName]"
  TRIGGER_HAS_PLAY_GOAL_NOT: "#bold Nemá#! válečný cíl [WAR_GOAL_TYPE.GetName]"
  TRIGGER_HAS_WAR_GOAL: "Má válečný cíl [WAR_GOAL_TYPE.GetName]"
- TRIGGER_HAS_WAR_GOAL_NOT: "Nemá #bold war goal#! [WAR_GOAL_TYPE.GetName]"
+ TRIGGER_HAS_WAR_GOAL_NOT: "#bold Nemá#! válečný cíl [WAR_GOAL_TYPE.GetName]" # todo: CHANGED (predtym: Nemá bold war goal ! [WAR_GOAL_TYPE.GetName])
  TRIGGER_WAR_PARTICIPANT_HAS_WAR_GOAL_OF_TYPE_AGAINST: "Drží [WAR_GOAL_TYPE.GetName] #v [Concept('concept_war_goal','válečný cíl')|l] cílící na [TARGET_COUNTRY.GetName] v [Concept('concept_war','válce')|l]" # todo: CONCEPT CASE
  TRIGGER_WAR_PARTICIPANT_HAS_WAR_GOAL_OF_TYPE_AGAINST_NOT: "#bold Není#! #v [WAR_GOAL_TYPE.GetName]#! [Concept('concept_war_goal','válečný cíl')|l] cílící na [TARGET_COUNTRY.GetName] v [Concept('concept_war','válce')|l]" # todo: CONCEPT CASE
  TRIGGER_WAR_PARTICIPANT_HAS_WAR_GOAL_OF_TYPE_AGAINST_FIRST: "[COUNTRY.GetNameNoFlag] drží [WAR_GOAL_TYPE.GetName] #! [Concept('concept_war_goal','válečný cíl')|l] cílený na [TARGET_COUNTRY.GetName] v [Concept('concept_war','válce')|l]" # todo: CONCEPT CASE
@@ -437,7 +437,7 @@
  TRIGGER_IN_DEFAULT_THIRD_NOT: "[Country.GetName] #bold není#! v [Concept('concept_default','platební neschopnosti')|l]"
  TRIGGER_IN_ELECTION_CAMPAIGN: "Je v období volební kampaně"
  TRIGGER_IN_ELECTION_CAMPAIGN_NOT: "#bold Nemá#! období volební kampaně"
- TRIGGER_IN_ELECTION_CAMPAIGN_FIRST: "[Country.GetNameNoFlag] má období [Concept('concept_election','volební')|l] kampaňe"
+ TRIGGER_IN_ELECTION_CAMPAIGN_FIRST: "[Country.GetNameNoFlag] má období [Concept('concept_election','volební')|l] kampaně" # todo: CHANGED (predtym: [Country.GetNameNoFlag] má období [Concept('concept_election','volební')|l] kampaňe)
  TRIGGER_IN_ELECTION_CAMPAIGN_FIRST_NOT: "[Country.GetNameNoFlag] #bold nemá#! období [Concept('concept_election','volební')|l] kampaně"
  TRIGGER_IN_ELECTION_CAMPAIGN_THIRD: "[Country.GetName] má období [Concept('concept_election','volební')|l] kampaně"
  TRIGGER_IN_ELECTION_CAMPAIGN_THIRD_NOT: "[Country.GetName] #bold není#! v období kampaně [Concept('concept_election','volby')|l]"
@@ -891,7 +891,7 @@
  TRIGGER_HAS_GLOBAL_HIGHEST_GDP: "Má nejvyšší [Concept('concept_gdp','HDP')|l]"
  TRIGGER_HAS_GLOBAL_HIGHEST_GDP_NOT: "Nemá nejvyšší [Concept('concept_gdp','HDP')|l]"
  TRIGGER_HAS_GLOBAL_HIGHEST_GDP_FIRST: "[COUNTRY.GetNameNoFlag] má nejvyšší [Concept('concept_gdp','HDP')|l]"
- TRIGGER_HAS_GLOBAL_HIGHEST_GDP_FIRST_NOT: "[COUNTRY.GetName.NoFlag] nemá nejvyšší [Concept('concept_gdp','HDP')|l]"
+ TRIGGER_HAS_GLOBAL_HIGHEST_GDP_FIRST_NOT: "[COUNTRY.GetNameNoFlag] nemá nejvyšší [Concept('concept_gdp', '$concept_gdp_short$')]" # todo: CHANGED (predtym: [COUNTRY.GetName.NoFlag] nemá nejvyšší [Concept('concept_gdp','HDP')|l])
  TRIGGER_HAS_GLOBAL_HIGHEST_GDP_THIRD: "[COUNTRY.GetName] má nejvyšší [Concept('concept_gdp','HDP')|l]"
  TRIGGER_HAS_GLOBAL_HIGHEST_GDP_THIRD_NOT: "[COUNTRY.GetName] nemá nejvyšší [Concept('concept_gdp','HDP')|l]"
  TRIGGER_GOVERNMENT_LEGITIMACY: "[Concept('concept_legitimacy','Legitimita')] je $COMPARATOR$ #variable $NUM$#!"
@@ -1261,7 +1261,7 @@
  TRIGGER_ACTIVE_LENS_NOT: "$LENS$ je #bold neaktivní #!"
  TRIGGER_IS_PANEL_OPEN: "$PANEL$ $TAB_NAME$ je otevřený"
  TRIGGER_IS_PANEL_OPEN_NOT: "$PANEL$ $TAB_NAME$ není #bold otevřený#!"
- TRIGGER_IS_PRODUCTION_METHOD_ACTIVE: "Má [BUILDING_TYPE.GetName], která používá [PRODUCTION_METHOD.GetName] výrobcí"
+ TRIGGER_IS_PRODUCTION_METHOD_ACTIVE: "Má [BUILDING_TYPE.GetName], která používá [PRODUCTION_METHOD.GetName] výrobci" # todo: CHANGED (predtym: Má [BUILDING_TYPE.GetName], která používá [PRODUCTION_METHOD.GetName] výrobcí)
  TRIGGER_IS_PRODUCTION_METHOD_ACTIVE_NOT: "Nemá [BUILDING_TYPE.GetName] používající [PRODUCTION_METHOD.GetName] výrobní metodu"
  TRIGGER_CAN_ACTIVATE_PRODUCTION_METHOD: "Má [BUILDING_TYPE.GetName] schopnou aktivovat [PRODUCTION_METHOD.GetName] výrobní metodu"
  TRIGGER_CAN_ACTIVATE_PRODUCTION_METHOD_NOT: "Nemá [BUILDING_TYPE.GetName] schopnou aktivovat [PRODUCTION_METHOD.GetName] výrobní metodu"
@@ -1701,7 +1701,7 @@
  TRIGGER_SUPPLY_NETWORK_STRENGTH_FIRST_NOT: "[COUNTRY.GetAltAdjectiveNoFlag('aa')] síla zásobovací sítě #bold není#! $COMPARATOR$ $NUM|v%0$"
  TRIGGER_SUPPLY_NETWORK_STRENGTH_THIRD: "Síla [COUNTRY.GetAltAdjective('ee')] dodavatelské sítě je $COMPARATOR$ $NUM|v%0$"
  TRIGGER_SUPPLY_NETWORK_STRENGTH_THIRD_NOT: "Síla [COUNTRY.GetAltAdjective('ee')] dodavatelské sítě #bold není#! $COMPARATOR$ $NUM|v%0$"
- TRIGGER_IS_EMBARGOING_GOODS: "[COUNTRY.GetName] embargoje [TARGET_GOODS.GetName]"
+ TRIGGER_IS_EMBARGOING_GOODS: "[COUNTRY.GetName] embarguje [TARGET_GOODS.GetName]" # todo: CHANGED (predtym: [COUNTRY.GetName] embargoje [TARGET_GOODS.GetName])
  TRIGGER_IS_EMBARGOING_GOODS_NOT: "[COUNTRY.GetName] #bold neuvalil #! embargo [TARGET_GOODS.GetName]"
  TRIGGER_IS_PROMOTING_GOODS: "[COUNTRY.GetName] propaguje [GOODS.GetCustom('GDS_A_TT')]" # todo: NAME CASE
  TRIGGER_IS_PROMOTING_GOODS_NOT: "[COUNTRY.GetName] #bold není#! propagujícím [GOODS.GetCustom('GDS_A_TT')]" # todo: NAME CASE
@@ -1907,7 +1907,7 @@
  TRIGGER_HAS_TRUCE_WITH: "[COUNTRY.GetName] má [Concept('concept_truce','příměří')|l] s [TARGET_COUNTRY.GetAltAdjective('I')]"
  TRIGGER_HAS_TRUCE_WITH_NOT: "[COUNTRY.GetName] nemá #bold žádný#! [Concept('concept_truce','příměří')|l] s [TARGET_COUNTRY.GetAltAdjective('I')]"
  TRIGGER_HAS_CONVOYS_BEING_SUNK: "[Country.GetName] je napadáno konvojem"
- TRIGGER_HAS_CONVOYS_BEING_SUNK_NOT: "[Country.GetName] #bold nemá#! napádané konvoje"
+ TRIGGER_HAS_CONVOYS_BEING_SUNK_NOT: "[Country.GetName] #bold nemá#! napadané konvoje" # todo: CHANGED (predtym: [Country.GetName] bold nemá ! napádané konvoje)
  TRIGGER_IS_VIOLATING_SOVEREIGNTY_OF: "[COUNTRY.GetName] porušuje [TARGET_COUNTRY.GetAdjectiveNoFormatting] [Concept('concept_sovereignty','suverenita')|l]"
  TRIGGER_IS_VIOLATING_SOVEREIGNTY_OF_NOT: "[COUNTRY.GetName] #bold není#! porušování [TARGET_COUNTRY.GetAdjectiveNoFormatting] [Concept('concept_sovereignty','suverenita')|l]"
  TRIGGER_IS_SUBSIDIZED: "Je [Concept('concept_subsidies','dotováno')|l]"
@@ -1953,7 +1953,7 @@
  TRIGGER_NUM_FRONT_CASUALTIES: "Celkový počet #v obětí#! [Country.GetAdjectiveNoFormatting] na [Front.GetName] ve válce [War.GetName] je $COMPARATOR$ #variable $NUM|0+=$#!"
  TRIGGER_NUM_FRONT_CASUALTIES_NOT: "Celkový počet #v obětí#! [Country.GetAdjectiveNoFormatting] na [Front.GetName] ve válce [War.GetName] #bold není #!$COMPARATOR$ #variable $NUM|0+=$#!"
  TRIGGER_NUM_FRONT_WOUNDED: "Celkový počet #v raněných#! [Country.GetAdjectiveNoFormatting] na [Front.GetName] ve válce [War.GetName] je $COMPARATOR$ #variable $NUM|0+=$#!"
- TRIGGER_NUM_FRONT_WOUNDED_NOT: "Celkový počet #v raněnýchd#! [Country.GetAdjectiveNoFormatting] na [Front.GetName] ve válce [War.GetName] #bold není #!$COMPARATOR$ #variable $NUM|0+=$#!"
+ TRIGGER_NUM_FRONT_WOUNDED_NOT: "Celkový počet #v raněných#! [Country.GetAdjectiveNoFormatting] na [Front.GetName] ve válce [War.GetName] #bold není #!$COMPARATOR$ #variable $NUM|0+=$#!" # todo: CHANGED (predtym: Celkový počet v raněnýchd ! [Country.GetAdjectiveNoFormatting] na [Front.GetName] ve válce [War.GetName] bold není !$COM)
  TRIGGER_NUM_FRONT_DEAD: "Celkový počet #v padlých#! [Country.GetAdjectiveNoFormatting] na [Front.GetName] ve válce [War.GetName] je $COMPARATOR$ #variable $NUM|0+=$#!"
  TRIGGER_NUM_FRONT_DEAD_NOT: "Celkový počet #v padlých#! [Country.GetAdjectiveNoFormatting] na [Front.GetName] ve válce [War.GetName] #bold není #!$COMPARATOR$ #variable $NUM|0+=$#!"
  TRIGGER_ECONOMIC_DEPENDENCE: "[Concept('concept_economic_dependence','Ekonomická závislost')] na [TARGET_COUNTRY.GetName] je $COMPARATOR$ $NUM|v1$"
@@ -2097,7 +2097,7 @@
  TRIGGER_POLITICAL_MOVEMENT_POPULAR_SUPPORT_THIRD: "Populární podpora pro [POLITICAL_MOVEMENT.GetName] je $COMPARATOR$ #variable $NUM|%0$#!"
  TRIGGER_POLITICAL_MOVEMENT_POPULAR_SUPPORT_THIRD_NOT: "Populární podpora pro [POLITICAL_MOVEMENT.GetName] #bold není#! $COMPARATOR$ #variable $NUM|%0$#!"
  TRIGGER_POLITICAL_MOVEMENT_WEALTH_SUPPORT: "Podpora bohatství je $COMPARATOR$ #variable $NUM|%0$#!"
- TRIGGER_POLITICAL_MOVEMENT_WEALTH_SUPPORT_NOT: "Podpora bohatsví #bold není#! $COMPARATOR$ #variable $NUM|%0$#!"
+ TRIGGER_POLITICAL_MOVEMENT_WEALTH_SUPPORT_NOT: "Podpora bohatství #bold není#! $COMPARATOR$ #variable $NUM|%0$#!" # todo: CHANGED (predtym: Podpora bohatsví bold není ! $COMPARATOR$ variable $NUM|%0$ !)
  TRIGGER_POLITICAL_MOVEMENT_WEALTH_SUPPORT_THIRD: "Podpora bohatství pro [POLITICAL_MOVEMENT.GetName] je $COMPARATOR$ #variable $NUM|%0$#!"
  TRIGGER_POLITICAL_MOVEMENT_WEALTH_SUPPORT_THIRD_NOT: "Podpora bohatství pro [POLITICAL_MOVEMENT.GetName] #bold není#! $COMPARATOR$ #variable $NUM|%0$#!"
  TRIGGER_POLITICAL_MOVEMENT_MILITARY_SUPPORT: "Vojenská podpora je $COMPARATOR$ #variable $NUM|%0$#!"
@@ -2360,7 +2360,7 @@
  TRIGGER_ANY_POLITICAL_MOVEMENT_NOT: "Žádné [Concept('concept_political_movement','politické hnutí')|l]:"
  TRIGGER_ANY_POLITICAL_MOVEMENT_FIRST: "Jakékoli [Country.GetAltAdjectiveNoFlag('ee')|l] [Concept('concept_political_movement','politické hnutí')|l]:"
  TRIGGER_ANY_POLITICAL_MOVEMENT_FIRST_NOT: "Žádné [Country.GetAltAdjectiveNoFlag('ee')|l] [Concept('concept_political_movement','politické hnutí')|l]:"
- TRIGGER_ANY_POLITICAL_MOVEMENT_ALL: "Všechny [Concept('concept_political_movement','politická hnutí')|l]:"
+ TRIGGER_ANY_POLITICAL_MOVEMENT_ALL: "Všechna [Concept('concept_political_movement','politická hnutí')|l]:" # todo: CHANGED (predtym: Všechny [Concept('concept_political_movement','politická hnutí')|l]:)
  TRIGGER_ANY_POLITICAL_MOVEMENT_ALL_NOT: "Žádné [Concept('concept_political_movement','politická hnutí')|l]:"
  TRIGGER_ANY_POLITICAL_MOVEMENT_ALL_FIRST: "Všechny [Country.GetAltAdjectiveNoFlag('ee')|l] [Concept('concept_political_movement','politická hnutí')|l]:"
  TRIGGER_ANY_POLITICAL_MOVEMENT_ALL_FIRST_NOT: "Žádné [Country.GetAltAdjectiveNoFlag('ee')|l] [Concept('concept_political_movement','politická hnutí')|l]:"
@@ -3354,7 +3354,7 @@
  TRIGGER_APPROACHING_BUREAUCRACY_SHORTAGE_FIRST_NOT: "Země #bold není#! na cestě k deficitu @bur![Nbsp][Concept('concept_bureaucracy','byrokracie')|l]" # todo: CONCEPT CASE
  TRIGGER_APPROACHING_BUREAUCRACY_SHORTAGE_THIRD: "Země se chystá vstoupit do deficitu @bur![Nbsp][Concept('concept_bureaucracy','byrokracie')|l]" # todo: CONCEPT CASE
  TRIGGER_APPROACHING_BUREAUCRACY_SHORTAGE_THIRD_NOT: "Země #bold není#! v deficitu @bur![Nbsp][Concept('concept_bureaucracy','byrokracie')|l]" # todo: CONCEPT CASE
- TRIGGER_IS_EMBARGOING_GOODS_FIRST: "[COUNTRY.GetNameNoFlag] embargoje [TARGET_GOODS.GetName]"
+ TRIGGER_IS_EMBARGOING_GOODS_FIRST: "[COUNTRY.GetNameNoFlag] embarguje [TARGET_GOODS.GetName]" # todo: CHANGED (predtym: [COUNTRY.GetNameNoFlag] embargoje [TARGET_GOODS.GetName])
  TRIGGER_IS_EMBARGOING_GOODS_FIRST_NOT: "[COUNTRY.GetNameNoFlag] #bold neuvalil#! embargo na [TARGET_GOODS.GetName]"
  TRIGGER_IS_EMBARGOING_GOODS_THIRD: "[COUNTRY.GetName] embarguje [TARGET_GOODS.GetName]"
  TRIGGER_IS_EMBARGOING_GOODS_THIRD_NOT: "[COUNTRY.GetName] #bold neuvalil#! embargo [TARGET_GOODS.GetName]"
@@ -3516,9 +3516,9 @@
  TRIGGER_EMPTY_AGITATOR_SLOTS_FIRST_NOT: "[COUNTRY.GetNameNoFlag] nemůže #bold podpořit#! $COMPARATOR$ $NUM|v$ dodatečných [Concept('concept_agitator','agitátorů')|l] (aktuálně $CURRENT_VALUE|v$)" # todo: CONCEPT CASE
  TRIGGER_EMPTY_AGITATOR_SLOTS_THIRD: "[COUNTRY.GetName] může podpořit $COMPARATOR$ $NUM|v$ dalších [Concept('concept_agitator','agitátorů')|l] (aktuálně $CURRENT_VALUE|v$)" # todo: CONCEPT CASE
  TRIGGER_EMPTY_AGITATOR_SLOTS_THIRD_NOT: "[COUNTRY.GetName]#b nemůže#! podpořit $COMPARATOR$ $NUM|v$ dodatečných [Concept('concept_agitator','agitátorů')|l] (aktuálně $CURRENT_VALUE|v$)" # todo: CONCEPT CASE
- TRIGGER_IS_STRONGEST_IG_IN_GOVERNMENT: "Je nejsilnější [Concept('concept_interest_group','zájmová skupina')|l] v [Concept('concept_government','vládě')|l]" # todo: CONCEPT CASE
+ TRIGGER_IS_STRONGEST_IG_IN_GOVERNMENT: "Je nejsilnější [Concept('concept_interest_group','zájmová skupina')|l] ve [Concept('concept_government','vládě')|l]" # todo: CONCEPT CASE
  TRIGGER_IS_STRONGEST_IG_IN_GOVERNMENT_NOT: "#bold Není#! nejsilnější [Concept('concept_interest_group','zájmová skupina')|l] ve [Concept('concept_government','vládě')|l]" # todo: CONCEPT CASE
- TRIGGER_IS_STRONGEST_IG_IN_GOVERNMENT_THIRD: "[INTEREST_GROUP.GetName] je nejsilnější [Concept('concept_interest_group','zájmová skupina')|l] v [Concept('concept_government','vládě')|l]" # todo: CONCEPT CASE
+ TRIGGER_IS_STRONGEST_IG_IN_GOVERNMENT_THIRD: "[INTEREST_GROUP.GetName] je nejsilnější [Concept('concept_interest_group','zájmová skupina')|l] ve [Concept('concept_government','vládě')|l]" # todo: CONCEPT CASE
  TRIGGER_IS_STRONGEST_IG_IN_GOVERNMENT_THIRD_NOT: "[INTEREST_GROUP.GetName] #bold není#! nejsilnější [Concept('concept_interest_group','zájmová skupina')|l] ve [Concept('concept_government','vládě')|l]" # todo: CONCEPT CASE
  TRIGGER_CAN_AGITATE: "Lze vytvořit nebo se připojit k [Concept('concept_political_movement','politickému hnutí')|l] v [TARGET_COUNTRY.GetAltAdjective('L')]" # todo: CONCEPT CASE
  TRIGGER_CAN_AGITATE_NOT: "Nelze vytvořit nebo se připojit k [Concept('concept_political_movement','politickému hnutí')|l] v [TARGET_COUNTRY.GetAltAdjective('L')]" # todo: CONCEPT CASE
@@ -3793,19 +3793,19 @@
  TRIGGER_IS_POLITICAL_LOBBY_TYPE: "Je [POLITICAL_LOBBY_TYPE.GetName]-typ [Concept('concept_political_lobby','politické lobby')|l]"
  TRIGGER_IS_POLITICAL_LOBBY_TYPE_NOT: "#bold Není#! [POLITICAL_LOBBY_TYPE.GetName]-typ [Concept('concept_political_lobby','politické lobby')|l]"
  TRIGGER_IS_POLITICAL_LOBBY_TYPE_THIRD: "[POLITICAL_LOBBY.GetName] je [POLITICAL_LOBBY_TYPE.GetName]-typ [Concept('concept_political_lobby','politické lobby')|l]"
- TRIGGER_IS_POLITICAL_LOBBY_TYPE_THIRD_NOT: "[POLITICAL_LOBBY.GetName] #bold není#! [POLITICAL_LOBBY_TYPE.GetName]-typu [concept_political_lobby|l]"
+ TRIGGER_IS_POLITICAL_LOBBY_TYPE_THIRD_NOT: "[POLITICAL_LOBBY.GetName] #bold není#! [POLITICAL_LOBBY_TYPE.GetName]-typu [Concept('concept_political_lobby','lobby')]" # todo: CHANGED (predtym: [POLITICAL_LOBBY.GetName] bold není ! [POLITICAL_LOBBY_TYPE.GetName]-typu [concept_political_lobby|l])
  TRIGGER_IS_DIPLOMATIC_CATALYST_TYPE: "Je typu $DIPLOMATIC_CATALYST_TYPE|v$ [Concept('concept_diplomatic_catalyst','diplomatického katalyzátoru')|l]" # todo: CONCEPT CASE
  TRIGGER_IS_DIPLOMATIC_CATALYST_TYPE_NOT: "#bold Není#! $DIPLOMATIC_CATALYST_TYPE|v$-typ [Concept('concept_diplomatic_catalyst','diplomatický katalyzátor')|l]"
  TRIGGER_IS_DIPLOMATIC_CATALYST_TYPE_THIRD: "[DIPLOMATIC_CATALYST.GetName] je #variable $DIPLOMATIC_CATALYST_TYPE$#!-typ [Concept('concept_diplomatic_catalyst','diplomatický katalyzátor')|l]"
  TRIGGER_IS_DIPLOMATIC_CATALYST_TYPE_THIRD_NOT: "[DIPLOMATIC_CATALYST.GetName] není #bold type#! [variable $DIPLOMATIC_CATALYST_TYPE$] type [Concept('concept_diplomatic_catalyst','diplomatický katalyzátor')|l]"
- TRIGGER_IS_MEMBER_OF_LOBBY: "Je členem [POLITICAL_LOBBY_TYPE.GetName]-typu [concept_political_lobby|l]"
- TRIGGER_IS_MEMBER_OF_LOBBY_NOT: "#bold Není#! členem [POLITICAL_LOBBY_TYPE.GetName]-typ [concept_political_lobby|l]"
- TRIGGER_IS_MEMBER_OF_LOBBY_THIRD: "[INTEREST_GROUP.GetName] je členem [POLITICAL_LOBBY_TYPE.GetName]-typu [concept_political_lobby|l]"
- TRIGGER_IS_MEMBER_OF_LOBBY_THIRD_NOT: "[INTEREST_GROUP.GetName] #bold není#! členem [POLITICAL_LOBBY_TYPE.GetName]-typu [concept_political_lobby|l]"
- TRIGGER_IS_MEMBER_OF_ANY_LOBBY: "Je členem [concept_political_lobby|l]"
+ TRIGGER_IS_MEMBER_OF_LOBBY: "Je členem [POLITICAL_LOBBY_TYPE.GetName]-typu [Concept('concept_political_lobby','lobby')]" # todo: CHANGED (predtym: Je členem [POLITICAL_LOBBY_TYPE.GetName]-typu [concept_political_lobby|l])
+ TRIGGER_IS_MEMBER_OF_LOBBY_NOT: "#bold Není#! členem [POLITICAL_LOBBY_TYPE.GetName]-typ [Concept('concept_political_lobby','lobby')]" # todo: CHANGED (predtym: bold Není ! členem [POLITICAL_LOBBY_TYPE.GetName]-typ [concept_political_lobby|l])
+ TRIGGER_IS_MEMBER_OF_LOBBY_THIRD: "[INTEREST_GROUP.GetName] je členem [POLITICAL_LOBBY_TYPE.GetName]-typu [Concept('concept_political_lobby','lobby')]" # todo: CHANGED (predtym: [INTEREST_GROUP.GetName] je členem [POLITICAL_LOBBY_TYPE.GetName]-typu [concept_political_lobby|l])
+ TRIGGER_IS_MEMBER_OF_LOBBY_THIRD_NOT: "[INTEREST_GROUP.GetName] #bold není#! členem [POLITICAL_LOBBY_TYPE.GetName]-typu [Concept('concept_political_lobby','lobby')]" # todo: CHANGED (predtym: [INTEREST_GROUP.GetName] bold není ! členem [POLITICAL_LOBBY_TYPE.GetName]-typu [concept_political_lobby|l])
+ TRIGGER_IS_MEMBER_OF_ANY_LOBBY: "Je členem [Concept('concept_political_lobby','lobby')]" # todo: CHANGED (predtym: Je členem [concept_political_lobby|l])
  TRIGGER_IS_MEMBER_OF_ANY_LOBBY_NOT: "#bold Není#! členem $concept_political_lobby$"
- TRIGGER_IS_MEMBER_OF_ANY_LOBBY_THIRD: "[INTEREST_GROUP.GetName] je členem [concept_political_lobby|l]"
- TRIGGER_IS_MEMBER_OF_ANY_LOBBY_THIRD_NOT: "[INTEREST_GROUP.GetName] #bold není#! členem [concept_political_lobby|l] "
+ TRIGGER_IS_MEMBER_OF_ANY_LOBBY_THIRD: "[INTEREST_GROUP.GetName] je členem [Concept('concept_political_lobby','lobby')]" # todo: CHANGED (predtym: [INTEREST_GROUP.GetName] je členem [concept_political_lobby|l])
+ TRIGGER_IS_MEMBER_OF_ANY_LOBBY_THIRD_NOT: "[INTEREST_GROUP.GetName] #bold není#! členem [Concept('concept_political_lobby','lobby')] " # todo: CHANGED (predtym: [INTEREST_GROUP.GetName] bold není ! členem [concept_political_lobby|l])
  TRIGGER_APPEASEMENT: "Uklidnění je $COMPARATOR$ $NUM|v$"
  TRIGGER_APPEASEMENT_NOT: "Usmiřování není #bold $COMPARATOR$ $NUM|v$"
  TRIGGER_APPEASEMENT_THIRD: "Uklidnění [POLITICAL_LOBBY.GetName] je $COMPARATOR$ $NUM|v$"
@@ -4319,8 +4319,8 @@
  TRIGGER_IS_IN_PORT_THIRD_NOT: "[SHIP.GetName] není #b ne#! v přístavu" # todo: NEW TRANSLATION
  TRIGGER_POWER_PROJECTION_VALUE: "Hodnota projekce síly [SHIP.GetName] $COMPARATOR$ $NUM|v0$" # todo: NEW TRANSLATION
  TRIGGER_POWER_PROJECTION_VALUE_NOT: "Hodnota projekce síly [SHIP.GetName] #b ne#! $COMPARATOR$ $NUM|v0$" # todo: NEW TRANSLATION
- TRIGGER_POLITICAL_LOBBY_TARGET: "Cílem [concept_political_lobby] je [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
- TRIGGER_POLITICAL_LOBBY_TARGET_NOT: "Cílem [concept_political_lobby] není #b ne#! [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
+ TRIGGER_POLITICAL_LOBBY_TARGET: "Cílem [Concept('concept_political_lobby','lobby')] je [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
+ TRIGGER_POLITICAL_LOBBY_TARGET_NOT: "Cílem [Concept('concept_political_lobby','lobby')] není #b ne#! [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
  TRIGGER_HAS_ANY_STRAIT: "Vlastní $concept_province$ s $concept_strait$" # todo: NEW TRANSLATION
  TRIGGER_HAS_ANY_STRAIT_NOT: "Nevlastní #b ne#! $concept_province$ s $concept_strait$" # todo: NEW TRANSLATION
  TRIGGER_HAS_ANY_STRAIT_FIRST: "[COUNTRY.GetNameNoFlag] vlastní $concept_province$ s $concept_strait$" # todo: NEW TRANSLATION

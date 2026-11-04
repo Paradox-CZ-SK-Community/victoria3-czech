@@ -190,7 +190,7 @@
  notification_power_struggle_succeeded_for_contender_name: "Mocenský boj uspěl"
  notification_power_struggle_succeeded_for_contender_desc: "Uspěli jste v [Concept('concept_power_struggle','mocenském boji')] s [SCOPE.sCountry('previous').GetAltAdjective('I')] a stali jste se [Concept('concept_power_bloc_leader','lídrem mocenského bloku')] [SCOPE.GetRootScope.GetPowerBloc.GetName]" # todo: CONCEPT CASE
  notification_power_struggle_succeeded_for_contender_tooltip: "#header $notification_power_struggle_succeeded_for_contender_name$#!\n$notification_power_struggle_succeeded_for_contender_desc$"
- notification_power_struggle_succeeded_for_looser_name: "[SCOPE.sCountry('next').GetName] vyhral [Concept('concept_power_struggle','mocenský boj')]"
+ notification_power_struggle_succeeded_for_looser_name: "[SCOPE.sCountry('next').GetName] vyhrál [Concept('concept_power_struggle','mocenský boj')]" # todo: CHANGED (predtym: [SCOPE.sCountry('next').GetName] vyhral [Concept('concept_power_struggle','mocenský boj')])
  notification_power_struggle_succeeded_for_looser_desc: "[SCOPE.sCountry('next').GetName] uspěl v [Concept('concept_power_struggle','mocenském boji')] nad vámi stát se [Concept('concept_power_bloc_leader','lídrem mocenského bloku')] [SCOPE.GetRootScope.GetPowerBloc.GetName]" # todo: CONCEPT CASE
  notification_power_struggle_succeeded_for_looser_tooltip: "#header $notification_power_struggle_succeeded_for_looser_name$#!\n$notification_power_struggle_succeeded_for_looser_desc$"
  notification_power_struggle_succeeded_name: "[SCOPE.GetRootScope.GetPowerBloc.GetPreviousName] se stává [SCOPE.GetRootScope.GetPowerBloc.GetName]"

@@ -1,30 +1,30 @@
 ﻿l_polish:
  je_serbian_throne: "Trůn z trní" # todo: NEW TRANSLATION
- je_serbian_throne_reason: "[ROOT.GetCountry.GetCustom('serbia_throne_of_thorns_house_loc')]\n\nIf [concept_dynastic_loyalty] reaches #v 0%#!, our [concept_ruler] and their dynasty will be overthrown and replaced by a member of the [ROOT.GetCountry.GetCustom('serbia_rival_dynasty')]." # todo: NEW TRANSLATION
+ je_serbian_throne_reason: "[ROOT.GetCountry.GetCustom('serbia_throne_of_thorns_house_loc')]\n\nPokud [Concept('concept_dynastic_loyalty','dynastická loajalita')] klesne na #v 0%#!, náš [Concept('concept_ruler','panovník')] i jeho dynastie budou svrženi a nahrazeni příslušníkem [ROOT.GetCountry.GetCustom('serbia_rival_dynasty')]." # todo: CHANGED (predtym: [ROOT.GetCountry.GetCustom('serbia_throne_of_thorns_house_loc')]\n\nIf [concept_dynastic_loyalty] reaches v 0% !, our [c)
  je_serbian_throne_invalidation_tt: "Žádná z postav z rodu [Concept('concept_house_of_obrenovic','$concept_house_of_obrenovic_short$')|l] nebo [Concept('concept_house_of_karadjordjevic','$concept_house_of_karadjordjevic_short$')|l] není naživu" # todo: NEW TRANSLATION
  je_serbian_throne_status_loc_karadordevic_dominance: "[Concept('concept_house_of_karadjordjevic','$concept_house_of_karadjordjevic_short$')] si získal širokou věrnost" # todo: NEW TRANSLATION
  je_serbian_throne_status_loc_karadordevic_leaning: "Lidé se přiklánějí k [Concept('concept_house_of_karadjordjevic','$concept_house_of_karadjordjevic_short$')|l]" # todo: NEW TRANSLATION
  je_serbian_throne_status_loc_neutral: "Lidé jsou rozděleni mezi [Concept('concept_house_of_obrenovic','$concept_house_of_obrenovic_short$')|l] a [Concept('concept_house_of_karadjordjevic','$concept_house_of_karadjordjevic_short$')|l]" # todo: NEW TRANSLATION
  je_serbian_throne_status_loc_obrenovic_leaning: "Lidé se přiklánějí k [Concept('concept_house_of_obrenovic','$concept_house_of_obrenovic_short$')|l]" # todo: NEW TRANSLATION
  je_serbian_throne_status_loc_obrenovic_dominance: "[Concept('concept_house_of_obrenovic','$concept_house_of_obrenovic_short$')] si získal širokou věrnost" # todo: NEW TRANSLATION
- je_serbian_throne_obrenovic_desc: "Dle našich informátorů se rod [concept_house_of_karadjordjevic], rodina jejíž zakladatel byl kdysi považován za hrdinu srbského lidu, spřádá spiknutí, aby sesadil [concept_house_of_obrenovic]. $concept_house_of_karadjordjevic_short$ osvobodil srbské provincie od tyranie zrádných janičářů a za svítání století rozžehnul světlo svobody.\n\nAvšak právě on utekl z bojiště, když byla situace zoufalá. Od té doby povstal $concept_house_of_obrenovic$, aby nesl prapor. Časem se spiklenci jistě pokusí podnítit lid, aby dosáhli svých zlomyslných cílů a svrhnuli $concept_house_of_obrenovic_short$." # todo: NEW TRANSLATION
- je_serbian_throne_karadjordjevic_desc: "Rod [concept_house_of_karadjordjevic] úspěšně svržel své rivály z [concept_house_of_obrenovic], čímž v očích národa napravil velkého Karađorđa. Opět je [ROOT.GetCountry.GetName] vládl dynastií, která stála v čele hrdinského Prvního povstání proti Turkům.\n\nNicméně spiklenci $concept_house_of_obrenovic_short$ obcházejí a usilují o obnovení své vlády a navrácení $SER$ do sféry $AUS_ADJ$. Pokud dynastie vykáže sebemenší známku slabosti, udeří a pokusí se poslat $concept_house_of_karadjordjevic_short$ do hanebného exilu." # todo: NEW TRANSLATION
+ je_serbian_throne_obrenovic_desc: "Dle našich informátorů se rod [Concept('concept_house_of_karadjordjevic','rod Karađorđević')], rodina jejíž zakladatel byl kdysi považován za hrdinu srbského lidu, spřádá spiknutí, aby sesadil [Concept('concept_house_of_obrenovic','rod Obrenovićů')]. $concept_house_of_karadjordjevic_short$ osvobodil srbské provincie od tyranie zrádných janičářů a za svítání století rozžehnul světlo svobody.\n\nAvšak právě on utekl z bojiště, když byla situace zoufalá. Od té doby povstal $concept_house_of_obrenovic$, aby nesl prapor. Časem se spiklenci jistě pokusí podnítit lid, aby dosáhli svých zlomyslných cílů a svrhnuli $concept_house_of_obrenovic_short$." # todo: NEW TRANSLATION
+ je_serbian_throne_karadjordjevic_desc: "Rod [Concept('concept_house_of_karadjordjevic','rod Karađorđević')] úspěšně svržel své rivály z [Concept('concept_house_of_obrenovic','rodu Obrenović')], čímž v očích národa napravil velkého Karađorđa. Opět je [ROOT.GetCountry.GetName] vládl dynastií, která stála v čele hrdinského Prvního povstání proti Turkům.\n\nNicméně spiklenci $concept_house_of_obrenovic_short$ obcházejí a usilují o obnovení své vlády a navrácení $SER$ do sféry $AUS_ADJ$. Pokud dynastie vykáže sebemenší známku slabosti, udeří a pokusí se poslat $concept_house_of_karadjordjevic_short$ do hanebného exilu." # todo: NEW TRANSLATION
  je_tot_slander_button: "Pomluvit rivalní dynastii" # todo: NEW TRANSLATION
  je_tot_slander_button_desc: "Máme moc obrazu — proč ji nevyužít pro vlastní prospěch?" # todo: NEW TRANSLATION
- je_tot_slander_button_custom_tt: "Zvyšuje [Concept('concept_dynastic_loyalty','$concept_dynastic_loyalty$')|l] na základě [concept_literacy] s #bold one#! z následujících výdajů:" # todo: NEW TRANSLATION
- je_tot_slander_button_cooldown_tt: "Has not used this decision in the past #bold four years#!." # todo: NEW TRANSLATION
+ je_tot_slander_button_custom_tt: "Zvyšuje [Concept('concept_dynastic_loyalty','$concept_dynastic_loyalty$')|l] na základě [Concept('concept_literacy','gramotnosti')] s #bold one#! z následujících výdajů:" # todo: NEW TRANSLATION
+ je_tot_slander_button_cooldown_tt: "Toto rozhodnutí nebylo použito v posledních #bold čtyřech letech#!." # todo: CHANGED (predtym: Has not used this decision in the past bold four years !.)
  je_tot_campaign_button: "Zahájit kampaň" # todo: NEW TRANSLATION
- je_tot_campaign_button_desc: "Shromažďuje královský doprovod, aby zorganizoval celonárodní tour prosazováním [concept_authority] nebo utrácením [concept_money]. Cílem je navštívit všechny [Concept('concept_state','$concept_states$')|l], hovořit s obyčejnými lidmi a nabídnout jim hmatatelné projekty výměnou za jejich cennou [Concept('concept_dynastic_loyalty','$concept_dynastic_loyalty$')|l]. Zároveň to zvýší naši [concept_popularity] a očerní našeho rivala." # todo: NEW TRANSLATION
+ je_tot_campaign_button_desc: "Shromažďuje královský doprovod, aby zorganizoval celonárodní tour prosazováním [Concept('concept_authority','autoritou')] nebo utrácením [Concept('concept_money','penězi')]. Cílem je navštívit všechny [Concept('concept_state','$concept_states$')|l], hovořit s obyčejnými lidmi a nabídnout jim hmatatelné projekty výměnou za jejich cennou [Concept('concept_dynastic_loyalty','$concept_dynastic_loyalty$')|l]. Zároveň to zvýší naši [Concept('concept_popularity','popularitu')] a očerní našeho rivala." # todo: NEW TRANSLATION
  je_tot_campaign_button_tt: "Začínají přípravy, a brzy budeme vyzváni, abychom nápad navždy opustili nebo zvolili #bold one#! z následujících výdajů až do konce kampaně:" # todo: NEW TRANSLATION
- je_tot_campaign_button_tt_2: "Zvolená úroveň výdajů určí efektivitu investic do navštívených [Concept('concept_state','$concept_states$')|l] a naši [concept_popularity] na mnoho let." # todo: NEW TRANSLATION
+ je_tot_campaign_button_tt_2: "Zvolená úroveň výdajů určí efektivitu investic do navštívených [Concept('concept_state','$concept_states$')|l] a naši [Concept('concept_popularity','popularitu')] na mnoho let." # todo: NEW TRANSLATION
  je_serbian_throne_fail_header: "#title Svrhne vládnoucí dynastii, pokud:#!\n" # todo: NEW TRANSLATION
- je_serbian_throne_on_fail_header: "#title Pokud [concept_dynastic_loyalty] klesne na nulu:#!\n$EFFECT$" # todo: NEW TRANSLATION
+ je_serbian_throne_on_fail_header: "#title Pokud [Concept('concept_dynastic_loyalty','dynastická loajalita')] klesne na nulu:#!\n$EFFECT$" # todo: NEW TRANSLATION
  obrenovic_concept_short: "[Concept('concept_house_of_obrenovic','$concept_house_of_obrenovic_short$')]" # todo: NEW TRANSLATION
  karadjordjevic_concept_short: "[Concept('concept_house_of_karadjordjevic','$concept_house_of_karadjordjevic_short$')]" # todo: NEW TRANSLATION
- obrenovic_concept: "[concept_house_of_obrenovic]" # todo: NEW TRANSLATION
- karadjordjevic_concept: "[concept_house_of_karadjordjevic]" # todo: NEW TRANSLATION
+ obrenovic_concept: "[Concept('concept_house_of_obrenovic','Rod Obrenović')]" # todo: NEW TRANSLATION
+ karadjordjevic_concept: "[Concept('concept_house_of_karadjordjevic','Rod Karađorđević')]" # todo: NEW TRANSLATION
  serbian_dethrone_progress_bar: "Věrnost" # todo: NEW TRANSLATION
- serbian_dethrone_progress_bar_desc: "[concept_dynastic_loyalty]: [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|v1%] ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/500)" # todo: NEW TRANSLATION
+ serbian_dethrone_progress_bar_desc: "[Concept('concept_dynastic_loyalty','Dynastická loajalita')]: [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|v1%] ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/500)" # todo: NEW TRANSLATION
  serbia.1.t: "Trůn z trní" # todo: NEW TRANSLATION
  serbia.1.d: "Míra moci se přelévá mezi rody [SCOPE.sCharacter('rival_dynasty_contender_scope').GetLastName] a vládnoucím rodem [ROOT.GetCountry.GetRuler.GetLastName]. Věrnosti byly slibovány zde a tam bez většího přemýšlení. Kdo je právoplatným vládcem [ROOT.GetCountry.GetName]?" # todo: NEW TRANSLATION
  serbia.1.f: "\"Nesporně, můj [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle], naše podpora je vám. Jak jsme byli svázáni vaším posvátným projevem pod dubem pro revoluci, postavíme se opět na vaši stranu pro slávu Srbska.\"\n\nJako přitakávač, jaký byl, mu sebevědomí šlo snadno. [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] se divil, jak to dokáže. Jeho nespolehlivá povaha byla již delší dobu veřejnou informací — zdálo se, že je v místnosti jediný, kdo věřil ve vlastní důvěryhodnost." # todo: NEW TRANSLATION
@@ -65,7 +65,7 @@
  serbian_throne.6.f: "Pomocník rozvázal provázek, který svazoval všechny obálky dohromady, a otevřel tu nejvrchnější, aby ji přečetl nahlas.\n\n\"Nejjasnějšímu veličenstvu, [ROOT.GetCountry.GetRuler.GetFirstNameNoFormatting] z rodu [ROOT.GetCountry.GetRuler.GetLastNameNoFormatting], [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]i všech ctihodných Srbů.\n\nProsíme, buďte tak laskav a přijměte tuto skromnou žádost jménem naší nehodné, ale věrné vesnice o vrácení přízně. Jak si možná vzpomínáte — i když možná ne — stáli jsme při vás během vašeho revolučního vítězství nad Osmany s tím, co jsme mohli poslat...\"" # todo: NEW TRANSLATION
  serbian_throne.6.a: "Pošlete jim pomoc, aby odolali." # todo: NEW TRANSLATION
  serbian_throne.6.b: "Pozvěte je do jejich skutečné vlasti a pomozte jim při obnově." # todo: NEW TRANSLATION
- serbian_throne.6.b_move_pops_tt: "10% of Serbians in [SCOPE.sState('delvidek_scope').GetName] will move to [SCOPE.sState('capital_state').GetName]." # todo: NEW TRANSLATION
+ serbian_throne.6.b_move_pops_tt: "10% Srbů ve státě [SCOPE.sState('delvidek_scope').GetName] se přestěhuje do státu [SCOPE.sState('capital_state').GetName]." # todo: CHANGED (predtym: 10% of Serbians in [SCOPE.sState('delvidek_scope').GetName] will move to [SCOPE.sState('capital_state').GetName].)
  serbian_throne.9.t: "Zůstanou zde" # todo: NEW TRANSLATION
  serbian_throne.9.d: "Jeden po druhém zrádci [ROOT.GetCountry.GetCustom('serbia_rival_dynasty')] je zradili na cestě k hroznému osudu. Všichni viděli nepopiratelné: [ROOT.GetCountry.GetName] patří [ROOT.GetCountry.GetCustom('serbia_ruling_dynasty')]!" # todo: NEW TRANSLATION
  serbian_throne.9.f: "\"Takto se chováte ke svým zachráncům?\" ozýval se v hale panický a zoufalý hlas. \"Můj otec vedl tuto zemi k svobodě, zatímco vy všichni hromadili bohatství. Nikdy nepochopíte, co znamená nést krev hrdiny!\"\n\nVěrní psi očekávali rozsudek.\n\n\"Nikdy!\"" # todo: NEW TRANSLATION
@@ -89,10 +89,10 @@
  serbian_throne.12.b: "Zaplaťte, co je nutné." # todo: NEW TRANSLATION
  serbian_throne.12.c: "Nešetřit náklady." # todo: NEW TRANSLATION
  serbian_throne.12.e: "Možná to nakonec není dobrá iniciativa." # todo: NEW TRANSLATION
- serbian_throne.12.e_tt: "The idea is shelved for next #v 5 years#!" # todo: NEW TRANSLATION
+ serbian_throne.12.e_tt: "Myšlenka je odložena na dalších #v 5 let#!" # todo: CHANGED (predtym: The idea is shelved for next v 5 years !)
  serbian_throne.12.prep_choice_tt: "Probíhají přípravy" # todo: NEW TRANSLATION
- each_monarch_may_only_do_this_once_tt: "Each [concept_ruler] may only take this action #b once#! per term" # todo: NEW TRANSLATION
- ser_campaign_not_on_cooldown_tt: "Has #b not#! aborted a campaign within the last #v 5 years#!" # todo: NEW TRANSLATION
+ each_monarch_may_only_do_this_once_tt: "Každý [Concept('concept_ruler','panovník')] může tuto akci provést během své vlády pouze #b jednou#!" # todo: CHANGED (predtym: Each [concept_ruler] may only take this action b once ! per term)
+ ser_campaign_not_on_cooldown_tt: "V posledních #v 5 letech#! #b nezrušil#! žádné tažení" # todo: CHANGED (predtym: Has b not ! aborted a campaign within the last v 5 years !)
  serbian_throne.13.t: "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]'s Accord" # todo: NEW TRANSLATION
  serbian_throne.13.d: "Naši organizátoři kampaně navrhli podpořit zájmovou skupinu, abychom získali více věrnosti." # todo: NEW TRANSLATION
  serbian_throne.13.f: "Jeden za druhým vstupovali zástupci určitých kruhů do dvora, aby hovořili o svých nedostatcích. Vždy to byli ti stejní. \n\nPeculiar okolnost, které si poradci [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] všimli během těchto setkání, byla hektická soutěž mezi skupinami. Rychle rozpoznali potenciál tuto soutěž využít k získání větší politické moci a byli si plně vědomi, že jde o transakci, nikoli o dar." # todo: NEW TRANSLATION
@@ -115,19 +115,19 @@
  serbian_throne.15.f: "Skřípění kol vozu na kamenné cestě mírně utlumilo hukot jásotu lidí, když se jejich nejvyšší [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] vrátil domů.\n\nDovolil si zavřít oči a zasnít se o tom, že si na chvíli poleží v posteli. Brzy se to však proměnilo v noční můru, připomínající mu hady pod ní, pracující pro [SCOPE.sCharacter('rival_dynasty_contender_scope').GetLastNameNoFormatting]." # todo: NEW TRANSLATION
  serbian_throne.15.a: "Určitě si vzpomněli, kdo je jejich pravý [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]." # todo: NEW TRANSLATION
  serbian_throne.15_tt: "Kampaň skončila." # todo: NEW TRANSLATION
- serbian_dethrone_ruler_popularity_tt: "ruler [concept_popularity]" # todo: NEW TRANSLATION
- serbian_dethrone_karadordevic_popularity_tt: "rival [concept_popularity]" # todo: NEW TRANSLATION
- serbian_dethrone_legitimacy_tt: "[concept_legitimacy]" # todo: NEW TRANSLATION
- serbian_dethrone_negative_bureaucracy_tt: "negative [concept_bureaucracy]" # todo: NEW TRANSLATION
- serbian_dethrone_negative_authority_tt: "negative [concept_authority]" # todo: NEW TRANSLATION
- serbian_dethrone_negative_influence_tt: "negative [concept_influence]" # todo: NEW TRANSLATION
- serbian_dethrone_sol_tt: "[concept_sol]" # todo: NEW TRANSLATION
- serbian_dethrone_low_ig_approval_tt: "nesouhlas ne-[concept_marginalized] [Concept('concept_interest_group','$concept_interest_groups$')|l] [concept_in_opposition]" # todo: NEW TRANSLATION
- serbian_dethrone_ig_approval_getting_better_tt: "podpora ne-[concept_marginalized] [Concept('concept_interest_group','$concept_interest_groups$')|l] [concept_in_opposition]" # todo: NEW TRANSLATION
+ serbian_dethrone_ruler_popularity_tt: "ruler [Concept('concept_popularity','popularita')]" # todo: NEW TRANSLATION
+ serbian_dethrone_karadordevic_popularity_tt: "rival [Concept('concept_popularity','popularita')]" # todo: NEW TRANSLATION
+ serbian_dethrone_legitimacy_tt: "[Concept('concept_legitimacy','Legitimita')]" # todo: NEW TRANSLATION
+ serbian_dethrone_negative_bureaucracy_tt: "negativní [Concept('concept_bureaucracy','byrokracie')]" # todo: NEW TRANSLATION
+ serbian_dethrone_negative_authority_tt: "negativní [Concept('concept_authority','autorita')]" # todo: NEW TRANSLATION
+ serbian_dethrone_negative_influence_tt: "negativní [Concept('concept_influence','vliv')]" # todo: NEW TRANSLATION
+ serbian_dethrone_sol_tt: "[Concept('concept_sol','Životní standard')]" # todo: NEW TRANSLATION
+ serbian_dethrone_low_ig_approval_tt: "nesouhlas ne-[Concept('concept_marginalized','marginalizována')] [Concept('concept_interest_group','$concept_interest_groups$')|l] [Concept('concept_in_opposition','V opozici')]" # todo: NEW TRANSLATION
+ serbian_dethrone_ig_approval_getting_better_tt: "podpora ne-[Concept('concept_marginalized','marginalizována')] [Concept('concept_interest_group','$concept_interest_groups$')|l] [Concept('concept_in_opposition','V opozici')]" # todo: NEW TRANSLATION
  serbian_dethrone_radical_fraction_tt: "[Concept('concept_radical','$concept_radicals$')]" # todo: NEW TRANSLATION
  serbian_dethrone_loyalist_fraction_tt: "[Concept('concept_loyalist','$concept_loyalists$')]" # todo: NEW TRANSLATION
  serbian_dethrone_stopped_hajduks_tt: "zastavení plenění hajduků" # todo: NEW TRANSLATION
- serbian_dethrone_independence_tt: "nebýt [concept_subject]" # todo: NEW TRANSLATION
+ serbian_dethrone_independence_tt: "nebýt [Concept('concept_subject','závislá země')]" # todo: NEW TRANSLATION
  serbian_dethrone_censorship_or_outlawed_tt: "přijal [GetLawType('law_censorship').GetName] nebo [GetLawType('law_outlawed_dissent').GetName]" # todo: NEW TRANSLATION
  serbian_dethrone_pamphlet_tt: "letáky upravené podle gramotnosti" # todo: NEW TRANSLATION
  serbian_dethrone_loyalty_progress_increase_tt: "To urychlí náš postup [Concept('concept_dynastic_loyalty','$concept_dynastic_loyalty$')|l]." # todo: NEW TRANSLATION
@@ -144,9 +144,9 @@
  serbia_aided_magyarized_serbs_tt: "pomoc maďarizovaným Srbům" # todo: NEW TRANSLATION
  serbia_greatly_aided_magyarized_serbs_tt: "evakuace maďarizovaných Srbů" # todo: NEW TRANSLATION
  serbian_dethrone_greatpower_supports_independence_tt: "[Concept('concept_major_power','$concept_major_powers$')] nebo [Concept('concept_great_power','$concept_great_powers$')|l] podporující naši nezávislost" # todo: NEW TRANSLATION
- serbian_dethrone_overlord_relations_tt: "[concept_overlord] vztahy" # todo: NEW TRANSLATION
+ serbian_dethrone_overlord_relations_tt: "[Concept('concept_overlord','Vládce')] vztahy" # todo: NEW TRANSLATION
  je_serbian_throne_complete_timer_tt: "[Concept('concept_dynastic_loyalty','$concept_dynastic_loyalty$')] has reached #v 100%#!" # todo: NEW TRANSLATION
- je_serbian_throne_dynasty_cement_tt: "The [ROOT.GetCountry.GetCustom('serbia_ruling_dynasty_concept')] keeps the throne, and an era of stability begins" # todo: NEW TRANSLATION
+ je_serbian_throne_dynasty_cement_tt: "[ROOT.GetCountry.GetCustom('serbia_ruling_dynasty_concept')] si udrží trůn a začíná éra stability" # todo: CHANGED (predtym: The [ROOT.GetCountry.GetCustom('serbia_ruling_dynasty_concept')] keeps the throne, and an era of stability begins)
  je_serbian_throne_cull_opponent_tt: "Osud [ROOT.GetCountry.GetCustom('serbia_rival_dynasty_short_concept')] bude rozhodnut" # todo: NEW TRANSLATION
  je_serbian_throne_fail_timer_tt: "[Concept('concept_dynastic_loyalty','$concept_dynastic_loyalty$')] has reached #v 0%#!" # todo: NEW TRANSLATION
  je_serbian_throne_dynasty_change_tt: "[ROOT.GetCountry.GetCustom('serbia_rival_dynasty_concept')] získává trůn a nastává období nepořádku" # todo: NEW TRANSLATION
@@ -199,39 +199,39 @@
  balkan_league_timeout_bar: "Okno příležitosti" # todo: NEW TRANSLATION
  balkan_league_timeout_bar_desc: "Window of Opportunity ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|0] months)" # todo: NEW TRANSLATION
  balkan_window_of_opportunity_closing: "time running out" # todo: NEW TRANSLATION
- ottoman_in_crisis_tt: "The $dyn_c_ottoman_empire$ is in crisis." # todo: NEW TRANSLATION
+ ottoman_in_crisis_tt: "$dyn_c_ottoman_empire$ je v krizi." # todo: CHANGED (predtym: The $dyn_c_ottoman_empire$ is in crisis.)
  je_spoils_of_war: "Válečná kořist" # todo: NEW TRANSLATION
  je_spoils_of_war_reason: "Jen pár dní po vyhlášení vítězství obrátili všichni zbývající členové Balkánské ligy svou pozornost k tomu, co tvrdí, že jsou nespravedlivě rozdělená území dobytá od Osmanů.\n\nVysocí důstojníci i politici, včetně našich, požadují nápravu, zatímco válka je stále ještě horká." # todo: NEW TRANSLATION
- je_spoils_of_war_timed_out_tt: "#b Completion#! will be evaluated when the #v $je_spoils_of_war$#! [concept_journal_entry] has #b timed out#!" # todo: NEW TRANSLATION
+ je_spoils_of_war_timed_out_tt: "#b Splnění#! bude vyhodnoceno, až #b vyprší čas#! [Concept('concept_journal_entry','záznamu v deníku')] #v $je_spoils_of_war$#!" # todo: CHANGED (predtym: b Completion ! will be evaluated when the v $je_spoils_of_war$ ! [concept_journal_entry] has b timed out !)
  notification_new_balkan_league_members_name: "Noví členové Balkánské ligy" # todo: NEW TRANSLATION
  notification_new_balkan_league_members_desc: "Poddaní $dyn_c_ottoman_empire$ byli oslovení s možností připojit se k naší věci." # todo: NEW TRANSLATION
  je_the_balkan_league_research_mil_tech_start_button: "Věnovat vojenský výzkum" # todo: NEW TRANSLATION
  je_the_balkan_league_research_mil_tech_start_button_desc: "Dohnat standardy mocného nepřítele je zásadní. Získání technologií od ostatních velmocí urychlí náš postup modernizace armády. Budou obzvlášť vstřícné, pokud $dyn_c_ottoman_empire$ má technologie, které jsme dosud nezískali." # todo: NEW TRANSLATION
- balkan_got_tech_cooldown_tt: "We must continue the program for at least #v five#! years to implement our newly received technology." # todo: NEW TRANSLATION
+ balkan_got_tech_cooldown_tt: "Program musíme provádět alespoň #v pět#! let, abychom zavedli nově získanou technologii." # todo: CHANGED (predtym: We must continue the program for at least v five ! years to implement our newly received technology.)
  hates_turkey_tt: "Musí mít #v poor#! vztahy nebo horší s $dyn_c_ottoman_empire$" # todo: NEW TRANSLATION
  je_the_balkan_league_invite_vassals_button: "Rozšířit ligu" # todo: NEW TRANSLATION
  je_the_balkan_league_invite_vassals_button_desc: "Mohou existovat národy podmaněné $dyn_c_ottoman_empire$, které by byly ochotny připojit se k naší věci." # todo: NEW TRANSLATION
  balkan_league_expanded_tt: "Balkánská liga se rozšíří o [SCOPE.sCountry('ottoman_empire_scope').GetAdjectiveNoFormatting] poddané, jejichž nezávislost podporujeme" # todo: NEW TRANSLATION
  balkan_league_invite_vassals_button_cooldown_tt: "Musíme počkat alespoň 3 měsíce, než začleníme stávající členy ligy" # todo: NEW TRANSLATION
- ottoman_subjects_we_support_tt: "Is supported by [SCOPE.GetRootScope.GetCountry.GetName] through [concept_guarantee_independence], an [concept_alliance] or [concept_defensive_pact]" # todo: NEW TRANSLATION
+ ottoman_subjects_we_support_tt: "Je podporována zemí [SCOPE.GetRootScope.GetCountry.GetName] prostřednictvím [Concept('concept_guarantee_independence','záruky nezávislosti')], [Concept('concept_alliance','spojenectví')] nebo [Concept('concept_defensive_pact','obranného paktu')]" # todo: CHANGED (predtym: Is supported by [SCOPE.GetRootScope.GetCountry.GetName] through [concept_guarantee_independence], an [concept_alliance] )
  je_the_balkan_league_research_mil_tech_stop_button: "Zastavit věnovaný výzkum" # todo: NEW TRANSLATION
  je_the_balkan_league_overwork_arms_industries_start_button: "Přetížit zbrojní průmysl" # todo: NEW TRANSLATION
  je_the_balkan_league_overwork_arms_industries_start_button_desc: "Krev, pot a slzy." # todo: NEW TRANSLATION
  je_the_balkan_league_overwork_arms_industries_stop_button: "Přestat přetěžovat zbrojní průmysl" # todo: NEW TRANSLATION
  je_the_balkan_league_muster_button: "Naverbovat brance" # todo: NEW TRANSLATION
  je_the_balkan_league_muster_button_desc: "Měli bychom zvážit odvod více mužů." # todo: NEW TRANSLATION
- je_the_balkan_league_muster_button_cooldown_tt: "Has not used this decision in the past #bold six years#!." # todo: NEW TRANSLATION
+ je_the_balkan_league_muster_button_cooldown_tt: "Toto rozhodnutí nebylo použito v posledních #bold šesti letech#!." # todo: CHANGED (predtym: Has not used this decision in the past bold six years !.)
  je_the_balkan_league_resign_button: "Rezignovat" # todo: NEW TRANSLATION
  je_the_balkan_league_resign_button_desc: "Formální rezignace z aliance zneutralizuje naši diplomatickou pozici, ale budeme považováni za zrádce ostatními #bold Balkan League#! zeměmi." # todo: NEW TRANSLATION
- je_the_balkan_wars_resign_button_tt: "Triggers a special event that causes the journal entry to fail." # todo: NEW TRANSLATION
+ je_the_balkan_wars_resign_button_tt: "Spustí zvláštní událost, která způsobí neúspěch záznamu v deníku." # todo: CHANGED (predtym: Triggers a special event that causes the journal entry to fail.)
  je_the_balkan_wars_resign_button_tt2: "Zvýší vztahy s [SCOPE.sCountry('ottoman_empire_scope').GetName], a sníží vztahy s následujícími zeměmi:" # todo: NEW TRANSLATION
  je_the_balkan_wars_resign_button_tt2_bl_members_list: "[THIS.GetCountry.GetName]" # todo: NEW TRANSLATION
  je_the_balkan_wars_resign_button_tt3: "Můžeme se rozhodnout stát se [Concept('concept_protectorate', '$concept_protectorate$')|l] vůči [SCOPE.sCountry('ottoman_empire_scope').GetName]." # todo: NEW TRANSLATION
  je_the_balkan_league_start_war: "Vyhlásit válku" # todo: NEW TRANSLATION
- je_the_balkan_league_start_war_desc: "Spustí #b special#! [concept_diplomatic_play] proti Vysoké Portě. Všichni členové #bold Balkan League#! se připojí na naši stranu. V tuto chvíli má [SCOPE.sCountry('ottoman_empire_scope').GetName] a jejich spojenci [concept_army_power_projection] #variable [ROOT.GetCountry.MakeScope.ScriptValue('ottoman_power_projection')|D] #!, zatímco #bold Balkan League#! a jejich spojenci dohromady #variable [ROOT.GetCountry.MakeScope.ScriptValue('balkan_league_power_projection')|D]#!.\n\nPokud vyhrajeme proti [SCOPE.sCountry('ottoman_empire_scope').GetName] pomocí #v Balkan War#! [concept_diplomatic_play], ztratí vlastnictví všech vlastněných [Concept('concept_state', '$concept_states$')|l] v [SCOPE.sStrategicRegion('balkans_scope').GetName]. Vyhrát tuto [concept_war] bez zásahu [concept_great_power] na naší straně nám udělí dodatečnou odměnu." # todo: NEW TRANSLATION
- balkan_league_members_start_the_war_header_tt: "Následující členové #bold Balkan League#! se připojí k našemu [concept_diplomatic_play]:" # todo: NEW TRANSLATION
+ je_the_balkan_league_start_war_desc: "Spustí #b special#! [Concept('concept_diplomatic_play','diplomatická hra')] proti Vysoké Portě. Všichni členové #bold Balkan League#! se připojí na naši stranu. V tuto chvíli má [SCOPE.sCountry('ottoman_empire_scope').GetName] a jejich spojenci [Concept('concept_army_power_projection','projekce síly armády')] #variable [ROOT.GetCountry.MakeScope.ScriptValue('ottoman_power_projection')|D] #!, zatímco #bold Balkan League#! a jejich spojenci dohromady #variable [ROOT.GetCountry.MakeScope.ScriptValue('balkan_league_power_projection')|D]#!.\n\nPokud vyhrajeme proti [SCOPE.sCountry('ottoman_empire_scope').GetName] pomocí #v Balkan War#! [Concept('concept_diplomatic_play','diplomatická hra')], ztratí vlastnictví všech vlastněných [Concept('concept_state', '$concept_states$')|l] v [SCOPE.sStrategicRegion('balkans_scope').GetName]. Vyhrát tuto [Concept('concept_war','válku')] bez zásahu [Concept('concept_great_power','velmoci')] na naší straně nám udělí dodatečnou odměnu." # todo: NEW TRANSLATION
+ balkan_league_members_start_the_war_header_tt: "Následující členové #bold Balkan League#! se připojí k naší [Concept('concept_diplomatic_play','diplomatické hře')]:" # todo: NEW TRANSLATION
  balkan_league_members_start_the_war_tt: "[THIS.GetCountry.GetName]" # todo: NEW TRANSLATION
- balkan_war_pp_comparison: "Kombinované [concept_army_power_projection] #bold Balkan League#! a jejich spojenců (#variable [ROOT.GetCountry.MakeScope.ScriptValue('balkan_league_power_projection')|D]#!) je alespoň polovina toho, co mají [SCOPE.sCountry('ottoman_empire_scope').GetName] a jejich spojenci (#variable [ROOT.GetCountry.MakeScope.ScriptValue('ottoman_power_projection')|D]#!)" # todo: NEW TRANSLATION
+ balkan_war_pp_comparison: "Kombinovaná [Concept('concept_army_power_projection','projekce síly armády')] #bold Balkan League#! a jejich spojenců (#variable [ROOT.GetCountry.MakeScope.ScriptValue('balkan_league_power_projection')|D]#!) je alespoň polovina toho, co mají [SCOPE.sCountry('ottoman_empire_scope').GetName] a jejich spojenci (#variable [ROOT.GetCountry.MakeScope.ScriptValue('ottoman_power_projection')|D]#!)" # todo: NEW TRANSLATION
  balkan_wars.1.t: "Balkánská liga" # todo: NEW TRANSLATION
  balkan_wars.1.d: "Byla nám nabídnuta možnost stát se členem aliance [SCOPE.sStrategicRegion('balkans_scope').GetName] proti [SCOPE.sCountry('ottoman_empire_scope').GetName]. Jednotná armáda s jediným cílem může být jediným prostředkem, jak je jednou provždy vyhnat z regionu." # todo: NEW TRANSLATION
  balkan_wars.1.f: "\"Pánové! Příležitost je nablízku. Toto může být naše jediná šance splatit veliký dluh našim předkům. Ať toto bratrstvo stojí jedno po staletí, až přijde den našeho společného triumfu.\"\n\nKomitét vstál a zatleskal. Bylo to, jako by vítězství už bylo dosaženo, navzdory veverkám v místnosti." # todo: NEW TRANSLATION
@@ -241,10 +241,10 @@
  balkan_wars.1.b: "To není řešení." # todo: NEW TRANSLATION
  balkan_wars.1.b_tt: "Nebudeme součástí #bold Balkan League#!." # todo: NEW TRANSLATION
  balkan_wars.2.t: "Konec éry" # todo: NEW TRANSLATION
- balkan_wars.2.d: "Je hotovo. [SCOPE.sCountry('ottoman_empire_scope').GetName] byl konečně vyhnán z [SCOPE.sStrategicRegion('balkans_scope').GetName], jeho bývalá území nyní patří svým právoplatným vlastníkůům. Balkánská liga se ukázala být úspěšným projektem." # todo: NEW TRANSLATION
+ balkan_wars.2.d: "Je hotovo. [SCOPE.sCountry('ottoman_empire_scope').GetName] byl konečně vyhnán z [SCOPE.sStrategicRegion('balkans_scope').GetName], jeho bývalá území nyní patří svým právoplatným vlastníkům. Balkánská liga se ukázala být úspěšným projektem." # todo: CHANGED (predtym: Je hotovo. [SCOPE.sCountry('ottoman_empire_scope').GetName] byl konečně vyhnán z [SCOPE.sStrategicRegion('balkans_scope')
  balkan_wars.2.f: "\"Matko! Matko! Zvon zvoní. Nechť nejsme pozdní!\"\n\nMalý chlapec, oblečený v nově ušitých místních krojích, prožíval nejvzrušující den svého života. Průvod, jenž se měl vydat do hlavního města, měl projít středem vesnice.\n\nBylo to už dlouho, co k nim dorazily zprávy o slávě, ale vzdát hold svým veteránským hrdinům byl pocit jako žádný jiný." # todo: NEW TRANSLATION
  balkan_wars.2.a: "Konečně, naše země nám patří!" # todo: NEW TRANSLATION
- balkan_wars.2.tt_1: "As we won the #v Balkan War#! [concept_diplomatic_play] without involving a [concept_great_power] we will get the following additional reward:" # todo: NEW TRANSLATION
+ balkan_wars.2.tt_1: "Protože jsme vyhráli [Concept('concept_diplomatic_play','diplomatickou hru')] #v Balkánská válka#! bez zapojení [Concept('concept_great_power','velmoci')], získáme následující dodatečnou odměnu:" # todo: CHANGED (predtym: As we won the v Balkan War ! [concept_diplomatic_play] without involving a [concept_great_power] we will get the followi)
  modifier_balkan_wars_won_alone: "Sláva hrdinům" # todo: NEW TRANSLATION
  balkan_wars.3.t: "Svoboda zrušena" # todo: NEW TRANSLATION
  balkan_wars.3.d: "Útlak nahradil naši touhu po slávě. Naše podrobení [ROOT.GetCountry.GetTopOverlord.GetName] nám ukončilo schopnost spočívat v jakékoli strategické koalici." # todo: NEW TRANSLATION
@@ -254,13 +254,13 @@
  balkan_wars.4.d: "S pádem Balkánské ligy už neexistuje dostatečně silná síla, která by za věc stála. Veškerá naděje na znovuzískání našich území je ztracena." # todo: NEW TRANSLATION
  balkan_wars.4.f: "Život se vrátil k monotónnosti pro obyčejné lidi na Balkáně. Zdají se být podvedeni a zlomeni sliby vůdců bez předvídavosti a odbornosti.\n\nV světě plném imperialistických kolosů je aliance oddělená hranicemi v těchto drsných krajích spíše snem než skutečnou ambicí.\n\nBoj pokračuje, tmavší než dříve." # todo: NEW TRANSLATION
  balkan_wars.4.a: "Jednoho dne..." # todo: NEW TRANSLATION
- balkan_wars.4.a_tt: "The #bold Balkan League#! has been disbanded." # todo: NEW TRANSLATION
+ balkan_wars.4.a_tt: "#bold Balkánská liga#! byla rozpuštěna." # todo: CHANGED (predtym: The bold Balkan League ! has been disbanded.)
  balkan_wars.5.t: "Vyměnitelná loajalita" # todo: NEW TRANSLATION
  balkan_wars.5.d: "Dobrovolně jsme rezignovali z Balkánské ligy. Pokud chceme budovat pevnou budoucnost, ukazovat se Ostřejší vůči [SCOPE.sCountry('ottoman_empire_scope').GetName] musí být na posledním místě našich starostí." # todo: NEW TRANSLATION
  balkan_wars.5.f: "V ovzduší byla cítit vzpoura, když prohlášení pronesl osobně [ROOT.GetCountry.GetRuler.GetFullNameNoFormatting]. Šlo o to, že možná je moudřejší zůstat klidný a nečinit prudká rozhodnutí, abychom nezpůsobili větší katastrofy honbou za iluzorními ambicemi.\n\nPublikum bylo čím dál přesvědčenější, jak řeč gradovala." # todo: NEW TRANSLATION
  balkan_wars.5.a: "Nebudeme se na tom podílet." # todo: NEW TRANSLATION
  balkan_wars.5.b: "Když je nemůžeme porazit, musíme se k nim přidat." # todo: NEW TRANSLATION
- balkan_wars_5.b_protectorate_tt: "[ROOT.GetCountry.GetName] becomes a [Concept('concept_protectorate', '$concept_protectorate$')|l] of [SCOPE.sCountry('ottoman_empire_scope').GetName] " # todo: NEW TRANSLATION
+ balkan_wars_5.b_protectorate_tt: "[ROOT.GetCountry.GetName] se stane [Concept('concept_protectorate','protektorátem')] země [SCOPE.sCountry('ottoman_empire_scope').GetName] " # todo: CHANGED (predtym: [ROOT.GetCountry.GetName] becomes a [Concept('concept_protectorate', '$concept_protectorate$')|l] of [SCOPE.sCountry('ot)
  balkan_wars.6.t: "Neuskutečněné ambice" # todo: NEW TRANSLATION
  balkan_wars.6.d: "Nepodařilo se nám dosáhnout cíle vyhnat [SCOPE.sCountry('ottoman_empire_scope').GetName] z [SCOPE.sStrategicRegion('balkans_scope').GetName], ale udrželi jsme si nezávislost." # todo: NEW TRANSLATION
  balkan_wars.6.f: "Matky a manželky prolévaly slzy a lamentovaly nad hromadami mladých mrtvých mužů. Opuštěné vesnice odcházely za chamtivostí a krví ve jménu expanzionismu politiků. Zbyly jen památníky a hromadné hroby. Neživé symboly národní ostudy.\n\n\"Tvrdý ořech je zvláštní plod, neotlučen, rozbije ti zuby!\"\n\n—Petar II Petrović Njegoš, #italic Gorski vijenac#!" # todo: NEW TRANSLATION
@@ -280,16 +280,16 @@
  balkan_wars.9.d: "[SCOPE.gsInterestGroup('armed_forces_scope').GetName], za pomoci místních, vyhání [SCOPE.sCulture('turkish_pop_scope').GetName] lidi z jejich domovů v [SCOPE.sState('caught_root_state_scope').GetName]. Pokud to nezastavíme, snadno se to může změnit v krveprolití." # todo: NEW TRANSLATION
  balkan_wars.9.f: "Sousedi se aktivně hledají příležitosti, jak zaútočit na nechráněné Turky. Při absenci sil [SCOPE.sCountry('ottoman_empire_scope').GetRuler.GetPrimaryRoleTitle] zůstávají zranitelné komunity denně obtěžovány a čelí hostilitě.\n\nEskalace napětí vedla k znepokojivému zmizení několika členů rodin v některých vesnicích, zatímco úřady vykazují zjevnou lhostejnost. Někteří úředníci jsou dokonce předvídatelně komplicitní v těchto nájezdech." # todo: NEW TRANSLATION
  balkan_wars.9.a: "Vytvořit koridor." # todo: NEW TRANSLATION
- balkan_wars.9.a_move_pops_tt: "All [SCOPE.sCulture('turkish_pop_scope').GetName] [Concept('concept_pop', '$concept_pops$')|l] in [SCOPE.sState('caught_root_state_scope').GetName] will safely emigrate to [SCOPE.sState('caught_ottoman_state_scope').GetName]." # todo: NEW TRANSLATION
+ balkan_wars.9.a_move_pops_tt: "Všechny [Concept('concept_pop', '$concept_pops$')|l] kultury [SCOPE.sCulture('turkish_pop_scope').GetName] ve státě [SCOPE.sState('caught_root_state_scope').GetName] bezpečně emigrují do státu [SCOPE.sState('caught_ottoman_state_scope').GetName]." # todo: CHANGED (predtym: All [SCOPE.sCulture('turkish_pop_scope').GetName] [Concept('concept_pop', '$concept_pops$')|l] in [SCOPE.sState('caught_)
  balkan_wars.9.b: "Nechat vojáky a místní na pokoji." # todo: NEW TRANSLATION
- balkan_wars.9.b_move_pops_tt: "75% of the [SCOPE.sCulture('turkish_pop_scope').GetName] [Concept('concept_pop', '$concept_pops$')|l] in [SCOPE.sState('caught_root_state_scope').GetName] will escape to [SCOPE.sState('caught_ottoman_state_scope').GetName]." # todo: NEW TRANSLATION
- balkan_wars.9.b_kill_pops_tt: "25% of the [SCOPE.sCulture('turkish_pop_scope').GetName] [Concept('concept_pop', '$concept_pops$')|l] in [SCOPE.sState('caught_root_state_scope').GetName] will be killed." # todo: NEW TRANSLATION
+ balkan_wars.9.b_move_pops_tt: "75% [Concept('concept_pop', '$concept_pops$')|l] kultury [SCOPE.sCulture('turkish_pop_scope').GetName] ve státě [SCOPE.sState('caught_root_state_scope').GetName] uteče do státu [SCOPE.sState('caught_ottoman_state_scope').GetName]." # todo: CHANGED (predtym: 75% of the [SCOPE.sCulture('turkish_pop_scope').GetName] [Concept('concept_pop', '$concept_pops$')|l] in [SCOPE.sState(')
+ balkan_wars.9.b_kill_pops_tt: "25% [Concept('concept_pop', '$concept_pops$')|l] kultury [SCOPE.sCulture('turkish_pop_scope').GetName] ve státě [SCOPE.sState('caught_root_state_scope').GetName] bude zabito." # todo: CHANGED (predtym: 25% of the [SCOPE.sCulture('turkish_pop_scope').GetName] [Concept('concept_pop', '$concept_pops$')|l] in [SCOPE.sState(')
  balkan_wars.9.c: "Povzbudit vojáky." # todo: NEW TRANSLATION
- balkan_wars.9.c_move_pops_tt: "Half of the [SCOPE.sCulture('turkish_pop_scope').GetName] [Concept('concept_pop', '$concept_pops$')|l] in [SCOPE.sState('caught_root_state_scope').GetName] will escape to [SCOPE.sState('cruelty_ottoman_state_scope').GetName]." # todo: NEW TRANSLATION
- balkan_wars.9.c_kill_pops_tt: "Half of the [SCOPE.sCulture('turkish_pop_scope').GetName] [Concept('concept_pop', '$concept_pops$')|l] in [SCOPE.sState('caught_root_state_scope').GetName] will be killed." # todo: NEW TRANSLATION
- balkan_wars.9.c_cruel_trait_tt: "This option is available because the ruler is #bold Cruel#!." # todo: NEW TRANSLATION
+ balkan_wars.9.c_move_pops_tt: "Polovina [Concept('concept_pop', '$concept_pops$')|l] kultury [SCOPE.sCulture('turkish_pop_scope').GetName] ve státě [SCOPE.sState('caught_root_state_scope').GetName] uteče do státu [SCOPE.sState('cruelty_ottoman_state_scope').GetName]." # todo: CHANGED (predtym: Half of the [SCOPE.sCulture('turkish_pop_scope').GetName] [Concept('concept_pop', '$concept_pops$')|l] in [SCOPE.sState()
+ balkan_wars.9.c_kill_pops_tt: "Polovina [Concept('concept_pop', '$concept_pops$')|l] kultury [SCOPE.sCulture('turkish_pop_scope').GetName] ve státě [SCOPE.sState('caught_root_state_scope').GetName] bude zabita." # todo: CHANGED (predtym: Half of the [SCOPE.sCulture('turkish_pop_scope').GetName] [Concept('concept_pop', '$concept_pops$')|l] in [SCOPE.sState()
+ balkan_wars.9.c_cruel_trait_tt: "Tato možnost je dostupná, protože panovník je #bold krutý#!." # todo: CHANGED (predtym: This option is available because the ruler is bold Cruel !.)
  balkan_wars.9.e: "Žili tu po staletí, to není správné." # todo: NEW TRANSLATION
- balkan_wars.9.e_kill_pops_tt: "5% of the [SCOPE.sCulture('turkish_pop_scope').GetName] [Concept('concept_pop', '$concept_pops$')|l] in [SCOPE.sState('caught_root_state_scope').GetName] will be killed." # todo: NEW TRANSLATION
+ balkan_wars.9.e_kill_pops_tt: "5% [Concept('concept_pop', '$concept_pops$')|l] kultury [SCOPE.sCulture('turkish_pop_scope').GetName] ve státě [SCOPE.sState('caught_root_state_scope').GetName] bude zabito." # todo: CHANGED (predtym: 5% of the [SCOPE.sCulture('turkish_pop_scope').GetName] [Concept('concept_pop', '$concept_pops$')|l] in [SCOPE.sState('c)
  balkan_wars.10.t: "Nakládání s přebytkem" # todo: NEW TRANSLATION
  balkan_wars.10.d: "V [SCOPE.sState('barracks_state_scope').GetName] vznikl přebytek v letošních výdajích fondu a správci se ptají, kam jej nasměrovat." # todo: NEW TRANSLATION
  balkan_wars.10.f: "Uprostřed chaosu by bylo docela snadné udělat 'chybu' v účetních zprávách. Navzdory pokušení se to však nezdálo být případ. Je to jasný znak národního ambiciózního úsilí a ukázka pravého charakteru.\n\nLidé zapojení do pohybu kapitálu podstupují největší riziko proti sobě. Národy vznikají na bedrech jedinců, kteří se neodklání od přímé cesty pravdivosti." # todo: NEW TRANSLATION
@@ -300,16 +300,16 @@
  balkan_wars.11.d: "Aliance našich bývalých poddaných v [SCOPE.sStrategicRegion('balkans_scope').GetName], #bold Balkánská liga#!, oficiálně vyhlásila povstání proti nám. Když vyhrají nadcházející válku, ztratíme všechna naše území v regionu a vzniknou nové státy." # todo: NEW TRANSLATION
  balkan_wars.11.f: "Starý imám se obrátil a postavil se před věřící na schodech minbaru a začal přednášet khutbu.\n\n„Ó věřící!\n\nVězte, že tento den, jako v dnech našich předků, nám sultán přikazuje povstat k obraně naší víry, našich zemí a naší cti. Tato válka není pouhý konflikt mužů, je to zkouška od Všemohoucího, boj na cestě pravdy proti tyranii a útlaku!\"" # todo: NEW TRANSLATION
  balkan_wars.11.a: "Budou toho litovat." # todo: NEW TRANSLATION
- balkan_wars.11.a_opener_tt: "The following countries of the #bold Balkan League#! have started a diplomatic play against us:" # todo: NEW TRANSLATION
+ balkan_wars.11.a_opener_tt: "Následující země #bold Balkánské ligy#! proti nám zahájily diplomatickou hru:" # todo: CHANGED (predtym: The following countries of the bold Balkan League ! have started a diplomatic play against us:)
  balkan_wars.11.a_league_members_list_tt: "[THIS.GetCountry.GetName]" # todo: NEW TRANSLATION
  balkan_wars.12.t: "Začíná válka" # todo: NEW TRANSLATION
  balkan_wars.12.d: "Jménem všech členů Balkánské ligy oficiálně oznámil [SCOPE.sCountry('first_balkan_war_initiator').GetName] přípravy na válku za znovuzískání všech území [SCOPE.sCountry('ottoman_empire_scope').GetName] v [SCOPE.sStrategicRegion('balkans_scope').GetName]." # todo: NEW TRANSLATION
  balkan_wars.12.f: "Stráženi několika žoldnéři, vyhlášení domovník bylo přijato se smíšenými pocity mezi vesničany všech vrstev.\n\n\"Slyšte, děti [ROOT.GetCountry.GetNameNoFormatting]!\n\nNa výslovné rozkazy ctihodného [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullNameNoFormatting] se naše armáda připravuje na posvátnou kampaň proti společnému nepříteli. Nechť je známo všem; v následujících měsících budou vybíráni stateční muži našich zemí, možná aby naposledy bojovali za očistu toho, co bývalo našimi vesnicemi, městy, loukami a horami a za uplatnění našich práv...\"" # todo: NEW TRANSLATION
  balkan_wars.12.a: "Je čas." # todo: NEW TRANSLATION
- joined_balkan_war_tt: "[ROOT.GetCountry.GetName] joins the Balkan War as a member or ally of the #v Balkan League#!" # todo: NEW TRANSLATION
+ joined_balkan_war_tt: "[ROOT.GetCountry.GetName] se zapojí do Balkánské války jako člen nebo spojenec #v Balkánské ligy#!" # todo: CHANGED (predtym: [ROOT.GetCountry.GetName] joins the Balkan War as a member or ally of the v Balkan League !)
  balkan_wars.13.t: "Kataklyzma" # todo: NEW TRANSLATION
  balkan_wars.13.d: "Ztratili jsme všechna území v [SCOPE.sStrategicRegion('balkans_scope').GetName] po úspěšné kampani vedené [SCOPE.sCountry('first_balkan_war_initiator').GetName]. Jakmile splnila svůj účel, Balkánská liga zanikla a z jejích popela vyrostly nové národy." # todo: NEW TRANSLATION
- balkan_wars.13.f: "\"We had struck a slap across the face of truth,\nWe had stood defiant against the rule of conscience.\nWe had built a bridge over the flames of Hell,\nThe craven’s bridge—swept away by the flood.\n\nHey, Rıza! This spilled blood was ours...\nThe beloved, now a servant to foes, was ours...\nThe land of Rum!... That cherished homeland was ours—\nBut we deemed it unworthy, and another claimed it.\"\n\n—Rıza Tevfik, \"For Rumeli\"" # todo: NEW TRANSLATION
+ balkan_wars.13.f: "„Vlepili jsme pravdě políček do tváře,\nvzepřeli jsme se vládě svědomí.\nPostavili jsme most nad plameny pekla,\nmost zbabělců – smetený povodní.\n\nHej, Rızo! Tahle prolitá krev byla naše...\nMilovaná, nyní služka nepřátel, byla naše...\nZemě Rúm!... Ta drahá vlast byla naše –\nale my ji měli za nehodnou, a tak si ji vzal jiný.“\n\n—Rıza Tevfik, „Za Rumélii“" # todo: CHANGED (predtym: \ We had struck a slap across the face of truth,\nWe had stood defiant against the rule of conscience.\nWe had built a b)
  balkan_wars.13.a: "Musíme se vzpamatovat." # todo: NEW TRANSLATION
  balkan_wars_traitor_mod: "Dezerter z Balkánské ligy" # todo: NEW TRANSLATION
  balkan_wars_victorious_balkan_league_mod: "Spojenec vítězné Balkánské ligy" # todo: NEW TRANSLATION
@@ -328,11 +328,11 @@
  the_cataclysm_partitioning: "Balkánská území budou rozděleny mezi národy a mohou vzniknout nové." # todo: NEW TRANSLATION
  homeland_states_spoils_of_war_header_tt: "Následující [Concept('concept_state', '$concept_states$')|l] jsou považovány za naše [Concept('concept_homeland', '$concept_homelands$')|l]: #indent_newline:3 " # todo: NEW TRANSLATION
  homeland_states_spoils_of_war_tt: "[THIS.GetStateRegion.GetName]" # todo: NEW TRANSLATION
- balkan_wars_league_fail_by_becoming_subject_tt: "[ROOT.GetCountry.GetName] is a [Concept('concept_subject', '$concept_subject$')|l] of another nation" # todo: NEW TRANSLATION
- balkan_wars_league_fail_timeout_tt: "Our #v Window of Opportunity#! closes" # todo: NEW TRANSLATION
+ balkan_wars_league_fail_by_becoming_subject_tt: "[ROOT.GetCountry.GetName] je [Concept('concept_subject','závislou zemí')] jiného národa" # todo: CHANGED (predtym: [ROOT.GetCountry.GetName] is a [Concept('concept_subject', '$concept_subject$')|l] of another nation)
+ balkan_wars_league_fail_timeout_tt: "Naše #v okno příležitosti#! se zavírá" # todo: CHANGED (predtym: Our v Window of Opportunity ! closes)
  balkan_wars_league_fail_by_rejecting_immediately_tt: "[ROOT.GetCountry.GetName] rejected to join the #bold Balkan League#!" # todo: NEW TRANSLATION
- aggresive_diplomatic_plays_permitted_tt: "[ROOT.GetCountry.GetName] is not a [Concept('concept_subject', '$concept_subject$')|l] or Subject agreement permits them to start [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')|l]" # todo: NEW TRANSLATION
- je_the_balkan_league_complete_header_tt: "The [GetStrategicRegion('region_balkans').GetName] [Concept('concept_state', '$concept_states$')|l] will be partitioned once #v $dyn_c_ottoman_empire$#! is completely eradicated from the region, and they currently own:" # todo: NEW TRANSLATION
+ aggresive_diplomatic_plays_permitted_tt: "[ROOT.GetCountry.GetName] není [Concept('concept_subject','závislou zemí')] nebo jí dohoda o závislosti umožňuje zahajovat [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')|l]" # todo: CHANGED (predtym: [ROOT.GetCountry.GetName] is not a [Concept('concept_subject', '$concept_subject$')|l] or Subject agreement permits them)
+ je_the_balkan_league_complete_header_tt: "[Concept('concept_state', '$concept_states$')] v regionu [GetStrategicRegion('region_balkans').GetName] budou rozděleny, jakmile bude #v $dyn_c_ottoman_empire$#! z regionu zcela vytlačena. Momentálně vlastní:" # todo: CHANGED (predtym: The [GetStrategicRegion('region_balkans').GetName] [Concept('concept_state', '$concept_states$')|l] will be partitioned )
  je_the_balkan_league_complete_tt: "[THIS.GetStateRegion.GetName]" # todo: NEW TRANSLATION
  je_the_grand_collapse: "İnhidam-ı Azîm" # todo: NEW TRANSLATION
  je_the_grand_collapse_reason: "S neklidem plížícím se žilami národa se naše dominie houpe na pokraji, a ukázka imperiální strategie jistě připomene všem našim poddaným moc její dřívější slávy.\n\nMusíme uplatnit smířlivou odbornost, abychom zajistili bezpečí našich hranic. Pokud takové zkoušky nezvrátí situaci, budou rozervány a zápal #r The Grand Collapse#! bude zapálen." # todo: NEW TRANSLATION
@@ -354,10 +354,10 @@
  the_grand_collapse.2.d: "Náš subjekt [SCOPE.sCountry('marketless_country_scope').GetName] nabízí v těchto těžkých časech svou loajalitu výměnou za tribut." # todo: NEW TRANSLATION
  the_grand_collapse.2.f: "Diplomatické dokumenty předložené Hariciye Nezâreti vykazovaly zjevných arogantní nároků skrytých pod královským uznáním. Jako hyeny obkličující vážně zraněného lva se naši poddaní snaží okusit cokoli, co mohou, zatímco příležitost je nablízku.\n\nKdyž [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullNameNoFormatting] přelétl očima přes dokumenty, zavřel oči a zamumlal modlitbu, než učinil konečné rozhodnutí." # todo: NEW TRANSLATION
  the_grand_collapse.2.a: "Udělit jim ekonomickou nezávislost." # todo: NEW TRANSLATION
- the_grand_collapse_2.a_tt: "[SCOPE.sCountry('marketless_country_scope').GetName] gains access to its own [Concept('concept_market', '$concept_market$')|l]" # todo: NEW TRANSLATION
+ the_grand_collapse_2.a_tt: "[SCOPE.sCountry('marketless_country_scope').GetName] získá přístup k vlastnímu [Concept('concept_market','trhu')]" # todo: CHANGED (predtym: [SCOPE.sCountry('marketless_country_scope').GetName] gains access to its own [Concept('concept_market', '$concept_market)
  the_grand_collapse.2.b: "Překreslit jejich hranice." # todo: NEW TRANSLATION
  the_grand_collapse.2.c: "Dejte jim více autonomie." # todo: NEW TRANSLATION
- the_grand_collapse_2.c_tt: "[SCOPE.sCountry('marketless_country_scope').GetName] gains access to its own [Concept('concept_market', '$concept_market$')|l]" # todo: NEW TRANSLATION
+ the_grand_collapse_2.c_tt: "[SCOPE.sCountry('marketless_country_scope').GetName] získá přístup k vlastnímu [Concept('concept_market','trhu')]" # todo: CHANGED (predtym: [SCOPE.sCountry('marketless_country_scope').GetName] gains access to its own [Concept('concept_market', '$concept_market)
  the_grand_collapse.2.e: "Opportunisté si nezaslouží naši pozornost." # todo: NEW TRANSLATION
  the_grand_collapse.3.t: "Zoufalá opatření" # todo: NEW TRANSLATION
  the_grand_collapse.3.d: "Při hledání potenciálních lidových vůdců, které bychom přesvědčili na naši stranu, předložili operativci několik možností." # todo: NEW TRANSLATION
@@ -375,10 +375,10 @@
  the_grand_collapse.5.f: "\"Jak vše, smrt a rozklad jsou konečné konce, synu. Hřbitovy jsou plné lidí, kteří kdysi byli ambiciózní a živí pro pomíjivé věci, nyní jsou hlídáni strážcem.\n\nTakový je osud národů, jednou vystavěných těmi pod hlínou, zoufale vyzdobených živými. Strážce se k nim brzy přidá, protože nic netrvá věčně.\"\n\n\"Nic?\"\n\n\"Kromě Něho.\"" # todo: NEW TRANSLATION
  the_grand_collapse.5.a: "Bylo nám to uloženo, ať se stane." # todo: NEW TRANSLATION
  grand_collapse_loyalist_req_tt: "[Concept('concept_loyalist','$concept_loyalists$')] převažují nad [Concept('concept_radical','$concept_radicals$')|l]" # todo: NEW TRANSLATION
- the_grand_collapse_recently_lobbied_ig_tt: "Has not used this decision in the past #bold two years#!." # todo: NEW TRANSLATION
+ the_grand_collapse_recently_lobbied_ig_tt: "Toto rozhodnutí nebylo použito v posledních #bold dvou letech#!." # todo: CHANGED (predtym: Has not used this decision in the past bold two years !.)
  the_grand_collapse_timeout_tt: "Byli jsme redukováni na srdce Anatolie a ztratili veškerou nadvládu nad ostatními národy." # todo: NEW TRANSLATION
- the_grand_collapse_not_succeeded_tanzimat_tt: "Has not completed #v $je_sick_man_main$#! [concept_journal_entry]" # todo: NEW TRANSLATION
- ten_years_to_collapse_tt: "[ROOT.GetCountry.GetName] will have #v 10 years#! to stabilize herself, lest she face #r The Grand Collapse#!" # todo: NEW TRANSLATION
+ the_grand_collapse_not_succeeded_tanzimat_tt: "Nedokončila [Concept('concept_journal_entry','záznam v deníku')] #v $je_sick_man_main$#!" # todo: CHANGED (predtym: Has not completed v $je_sick_man_main$ ! [concept_journal_entry])
+ ten_years_to_collapse_tt: "[ROOT.GetCountry.GetName] bude mít #v 10 let#! na stabilizaci, jinak ji čeká #r İnhidam-ı Azîm#!" # todo: CHANGED (predtym: [ROOT.GetCountry.GetName] will have v 10 years ! to stabilize herself, lest she face r The Grand Collapse !)
  the_grand_collapse_port_liberty_desire_mod: "Uklidnění myšlení poddaných" # todo: NEW TRANSLATION
  the_grand_collapse_port_opportunist_subject_mod: "Odmítnutý subjekt" # todo: NEW TRANSLATION
  the_grand_collapse_port_opportunist_ottoman_mod: "Neústupný vrchnost" # todo: NEW TRANSLATION

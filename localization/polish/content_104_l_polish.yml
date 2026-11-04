@@ -92,7 +92,7 @@
  expedition_events.690.d: "Expedice zastavila svou cestu přes stát [SCOPE.sState('current_expedition_location').GetName] v místní vesnici, kde [SCOPE.sCharacter('local_ruler').GetPrimaryRoleTitle] [SCOPE.sCharacter('local_ruler').GetFullName] laskavě nabídl výměnu darů jako znamení míru."
  expedition_events.690.f: "„Dorazili jsme za úsvitu. Uprostřed džungle jsme slyšeli zvuky a to, co jsme považovali za lidské hlasy. Naše unavená těla se dokázala soustředit jen na ty hlasy, jakékoli hlasy kromě našich vlastních.\n\nDorazili jsme za úsvitu a oni nás nečekali, ale už předtím viděli někoho našeho druhu. [SCOPE.sCharacter('local_ruler').GetWomanMan], který vypadal jako jejich vůdce, k nám přišel, oznámil, že [SCOPE.sCharacter('local_ruler').GetHerHis] jméno je [SCOPE.sCharacter('local_ruler').GetFullNameNoFormatting], a stručnými, přátelskými gesty nás pozval, abychom s nimi strávili den, přičemž mému překvapenému já podal náhrdelník.“"
  expedition_events.690.a: "Tento ohleduplný dar náležitě opětujeme."
- expedition_events.690.b: "Nemáme čas ztrácet čas bratříčkováním s místními."
+ expedition_events.690.b: "Nemáme čas ztrácet bratříčkováním s místními." # todo: CHANGED (predtym: Nemáme čas ztrácet čas bratříčkováním s místními.)
  urbanization_events.1.t: "Cesta k pokroku"
  urbanization_events.1.d: "[SCOPE.gsInterestGroup('industrialist_ig').GetName] vyjádřili spokojenost se směrem, kterým se země ubírá, i s jejími nově postavenými továrnami."
  urbanization_events.1.f: "„Existuje jen jeden možný směr: vpřed! Pokrok je jako vlak, který nezastavuje, na nikoho nečeká — buď jsi uvnitř, nebo venku.“"
@@ -246,7 +246,7 @@
  dismissed_ig_suppression_tt: "Příležitost je odmítnuta a [SCOPE.gsInterestGroup('suppressed_ig').GetCustom('IG_A_TT')] potlačíme běžnými prostředky." # todo: NAME CASE
  ig_suppression_events.2.t: "Proslýchá se"
  ig_suppression_events.2.d: "Zvěsti o hříšném životě postavy [SCOPE.sCharacter('suppressed_leader').GetFullName] ze skupiny [SCOPE.gsInterestGroup('target').GetName] byly vykonstruovány a jsou připraveny šířit se mezi masami jako požár."
- ig_suppression_events.2.f: "„Že udělali co komu? Tomu se nedá věřit! Takové skandální chování nelze v této zbožné zemi tolerovat! A potom na to navázali čím? Už to nedokážu poslouchat! Prosím, ušetřete mě toho utrpení! Skončete to už, zapřísahám vás! Zapřísahám vás!“"
+ ig_suppression_events.2.f: "„Že udělali co komu? Tomu se nedá věřit! Takové skandální chování nelze v této zbožné zemi tolerovat! A potom na to navázali čím? Už to nedokážu poslouchat! Prosím, ušetřte mě toho utrpení! Skončete to už, zapřísahám vás! Zapřísahám vás!“" # todo: CHANGED (predtym: „Že udělali co komu? Tomu se nedá věřit! Takové skandální chování nelze v této zbožné zemi tolerovat! A potom na to navá)
  ig_suppression_events.2.a: "Nejlepší zvěst nelze nikdy vysledovat."
  ig_suppression_events.2.b: "Tohle nakrmí nejeden ples vyšší společnosti."
  ig_suppression_events.2.c: "Lidé na předměstích dychtí po nějaké společenské munici."
@@ -488,7 +488,7 @@
  fascism_events.9.b: "Tento [SCOPE.sCharacter('new_fascist_leader_scope').GetWomanMan] nesmí být vpuštěn k vládě."
  fascism_government_remains_tt: "[SCOPE.sCharacter('new_fascist_leader_scope').GetFullName] bude dovoleno zaujmout [SCOPE.sCharacter('new_fascist_leader_scope').GetHerHis] místo ve vládě"
  fascism_government_expelled_tt: "[GetIdeology('ideology_moderate').GetName] [Concept('concept_politician','politik')] převezme vedení skupiny [SCOPE.sCharacter('new_fascist_leader_scope').GetInterestGroup.GetName]"
- fascist_becomes_agitator_tt: "[SCOPE.sCharacter('new_fascist_leader_scope').GetFullName] se stane [Concept('concept_agitator','agitátor')]"
+ fascist_becomes_agitator_tt: "[SCOPE.sCharacter('new_fascist_leader_scope').GetFullName] se stane [Concept('concept_agitator','agitátorem')]" # todo: CHANGED (predtym: [SCOPE.sCharacter('new_fascist_leader_scope').GetFullName] se stane [Concept('concept_agitator','agitátor')])
  modifier_government_refused_fascist_seat: "Odmítnuto posadit fašistu"
  fascism_progress_from_fascist_leaders_in_government_tt: "#tooltippable;tooltip:[GetPlayer.GetTooltipTag],fascist_ideologies_list_tt fašističtí#! [Concept('concept_politician','politici')] [Concept('concept_in_government','ve vládě')]"
  fascism_progress_from_movement_support_tt: "[Concept('concept_political_movement_support','Podpora politického hnutí')] [Concept('concept_political_movement','politická hnutí')] ideologií [GetIdeology('ideology_fascist').GetName], [GetIdeology('ideology_reactionary').GetName] a [GetIdeology('ideology_corporatist').GetName]" # todo: CONCEPT CASE
