@@ -1,0 +1,61 @@
+﻿##################################################
+# CZECH GRAMMAR - MACROS
+##################################################
+#
+# Short forms of declined names (customizable localization from
+# common/customizable_localization/99_pl_*.txt). XCASE is a quoted
+# case letter: 'N', 'G', 'D', 'A', 'L', 'I'.
+#
+#   [CZParty(XPARTY,'G')]    = [P.GetCustom('PARTY_G_TT')]  (tooltip like GetName)
+#   [CZPartyNF(XPARTY,'G')]  = [P.GetCustom('PARTY_G')]     (plain text)
+#
+# Same for CZGoods (GDS_*), CZIG (IG_*) and CZMarket (MARKET_*).
+##################################################
+
+macro = {
+	description = "Declined party name with tooltip, cases N G D A L I"
+	definition = "CZParty(XPARTY,XCASE)"
+	replace_with = "XPARTY.GetCustom(Concatenate('PARTY_',Concatenate(XCASE,'_TT')))"
+}
+
+macro = {
+	description = "Declined party name without formatting, cases N G D A L I"
+	definition = "CZPartyNF(XPARTY,XCASE)"
+	replace_with = "XPARTY.GetCustom(Concatenate('PARTY_',XCASE))"
+}
+
+macro = {
+	description = "Declined goods name with tooltip, cases N G D A L I"
+	definition = "CZGoods(XGOODS,XCASE)"
+	replace_with = "XGOODS.GetCustom(Concatenate('GDS_',Concatenate(XCASE,'_TT')))"
+}
+
+macro = {
+	description = "Declined goods name without formatting, cases N G D A L I"
+	definition = "CZGoodsNF(XGOODS,XCASE)"
+	replace_with = "XGOODS.GetCustom(Concatenate('GDS_',XCASE))"
+}
+
+macro = {
+	description = "Declined interest group name with tooltip, cases G D A L I (nominative is GetName)"
+	definition = "CZIG(XIG,XCASE)"
+	replace_with = "XIG.GetCustom(Concatenate('IG_',Concatenate(XCASE,'_TT')))"
+}
+
+macro = {
+	description = "Declined interest group name without formatting, cases G D A L I (nominative is GetName)"
+	definition = "CZIGNF(XIG,XCASE)"
+	replace_with = "XIG.GetCustom(Concatenate('IG_',XCASE))"
+}
+
+macro = {
+	description = "Declined market name with tooltip, cases N G D A L I"
+	definition = "CZMarket(XMARKET,XCASE)"
+	replace_with = "XMARKET.GetCustom(Concatenate('MARKET_',Concatenate(XCASE,'_TT')))"
+}
+
+macro = {
+	description = "Declined market name without formatting, cases N G D A L I"
+	definition = "CZMarketNF(XMARKET,XCASE)"
+	replace_with = "XMARKET.GetCustom(Concatenate('MARKET_',XCASE))"
+}

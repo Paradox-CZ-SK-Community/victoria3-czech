@@ -1,9 +1,9 @@
 ﻿l_polish:
  amendment_test: "Test $concept_amendment$"
  amendment_test_desc: "Toto je popis testovacího dodatku"
- REPEAL_AMENDMENT_PENDING: "Tento [concept_amendment] není součástí aktivního [concept_law]"
- REPEAL_AMENDMENT_NO_GOVERNMENT_OPPOSITION: "V [concept_government] žádné [Concept('concept_interest_group', '$concept_interest_groups$')] neodporují [concept_amendment]"
- REPEAL_AMENDMENT_WEAK_GOVERNMENT_OPPOSITION: "[Concept('concept_interest_group', '$concept_interest_groups$')] v [concept_government], které jsou proti [concept_amendment], mají menší [concept_clout] než ty, které jej podporují"
+ REPEAL_AMENDMENT_PENDING: "Tento [Concept('concept_amendment','dodatek')] není součástí aktivního [Concept('concept_law','zákona')]" # todo: CONCEPT CASE
+ REPEAL_AMENDMENT_NO_GOVERNMENT_OPPOSITION: "V [Concept('concept_government','vládě')] žádné [Concept('concept_interest_group','zájmové skupiny')] neodporují [Concept('concept_amendment','dodatku')]" # todo: CONCEPT CASE
+ REPEAL_AMENDMENT_WEAK_GOVERNMENT_OPPOSITION: "[Concept('concept_interest_group','Zájmové skupiny')] v [Concept('concept_government','vládě')], které jsou proti [Concept('concept_amendment','dodatku')], mají menší [Concept('concept_clout','politický vliv')] než ty, které jej podporují" # todo: CONCEPT CASE
  REPEAL_AMENDMENT_ON_COOLDOWN: "Nelze zrušit do $DATE|v$"
- REPEAL_AMENDEMENT_CONFIRMATION: "Opravdu chcete [Concept('concept_amendment_repeal', '$concept_repeal$')] [Amendment.GetName]?[ConcatIfNeitherEmpty('\n\n$DATA_AMENDMENTS_REPEAL_HEADER$\n', Amendment.GetOnRepealEffectsDesc)]  "
- SPONSOR_MODIFIER_HEADER: "#title Sponzorující [concept_interest_group]:#!"
+ REPEAL_AMENDEMENT_CONFIRMATION: "Opravdu chcete [Concept('concept_amendment_repeal','zrušení')] [Amendment.GetName]?[ConcatIfNeitherEmpty('\n\n$DATA_AMENDMENTS_REPEAL_HEADER$\n', Amendment.GetOnRepealEffectsDesc)]  "
+ SPONSOR_MODIFIER_HEADER: "#title Sponzorující [Concept('concept_interest_group','zájmová skupina')]:#!"
