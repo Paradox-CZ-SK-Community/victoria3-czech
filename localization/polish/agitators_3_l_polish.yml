@@ -20,6 +20,8 @@
  natural_borders.3.f: "„Nejmocnější důvody politické nutnosti, požadavky budoucnosti Itálie, pocit vděčnosti vůči našemu mocnému spojenci a konečně i výjimečné okolnosti naší země přiměly, byť s lítostí, našeho milovaného [SCOPE.sCharacter('savoy_ruler').GetPrimaryRoleTitle] k oddělení provincií, které byly po tolik století úzce spjaty s naším národem. Veškerý odpor musí ustoupit zájmům země a smyslu pro povinnost.“"
  natural_borders.3.a: "Okamžitě začlenit Savojsko."
  natural_borders.3.b: "Uspořádat plebiscit, aby se uklidnilo obyvatelstvo."
+ treaty_of_turin_tt: "[SCOPE.sCountry('savoy_country').GetName] postoupí [concept_state] [SCOPE.sState('savoy_state').GetName] zemi [ROOT.GetCountry.GetName]" # todo: NEW TRANSLATION
+ treaty_of_turin_nice_tt: "[SCOPE.sCountry('savoy_country').GetName] postoupí [Concept('concept_state', '$concept_states|q$')] [SCOPE.sState('savoy_state').GetName] a [SCOPE.sState('nice_state').GetName] zemi [ROOT.GetCountry.GetName]" # todo: NEW TRANSLATION
  france_natural_borders_pursuit: "Prosazování přirozených hranic"
  no_natural_borders: "Odmítnuté přirozené hranice Francie"
  natural_borders_assimilation: "Francouzská asimilace"
@@ -98,7 +100,7 @@
  je_french_foreign_legion_reason: "Pokud chceme vládnout v Africe, musíme na kontinentu vybudovat trvalou vojenskou přítomnost. Musíme být připraveni přijmout, že tyto jednotky budou rekrutovány z místního obyvatelstva i z odvážných či zoufalých vojáků cizích zemí."
  algeria_events.9.t: "Francouzská cizinecká legie"
  algeria_events.9.d: "Vybudováním stálé legionářské [SCOPE.sBuilding('legion_barracks').GetName] v [SCOPE.sState('algeria_state_scope').GetName], nazvané Quartier Viénot, byla [ROOT.GetCountry.GetAdjectiveNoFormatting] cizinecká legie ustanovena jako elitní bojová síla v Africe."
- algeria_events.9.f: "„Přišli jste přede mě jako Španělé, Němci či Italové. Někteří vedeni touhou po slávě, jiní povinností, další voláním po dobrodružství.\n\nVšichni však s ochotou prolévat krev za věc, která nebyla vaší vlastní.\n\nA co přede mnou stojí nyní? Legionáři! Muži s železnou vůlí, zocelenou pod spalujícím africkým sluncem. Muži, kteří by raději ztratili život než odvahu, i tváří v tvář nepřekonatelným překážkám. Muži, kteří přijímají naše motto nejen jako symbol, ale jako způsob života.“"
+ algeria_events.9.f: "„Přišli jste přede mě jako Španělé, Němci či Italové. Někteří vedeni touhou po slávě, jiní povinností, další voláním po dobrodružství.\n\nVšichni však s ochotou prolévat krev za věc, která nebyla vaší vlastní.\n\nA co přede mnou stojí nyní? Legionáři! Muži s železnou vůlí, zocelenou pod spalujícím africkým sluncem. Muži, kteří by raději ztratili život než odvahu, i tváří v tvář nepřekonatelným překážkám. Muži, kteří přijímají naše motto nejen jako symbol, ale jako způsob života.„"
  algeria_events.9.a: "Čest a věrnost."
  algeria_events.9.b: "Legie je naše země."
  french_foreign_legion_ig: "Čest a věrnost"
@@ -149,7 +151,7 @@
  exiles_events.100.a: "Vyhostili jsme ho z dobrého důvodu."
  exiles_events.100.b: "Vítej doma!"
  repatriated_agitator: "Repatriovaný agitátor"
- exiling_dissident_radicals_factors: "Množství [Concept('concept_radical','radikálové')] závisí na našem zákonu o svobodě projevu [Concept('concept_law', '$concept_laws$')|l] a na [Concept('concept_popularity','popularitu')] [Concept('concept_character','postavy')]" # todo: CONCEPT CASE
+ exiling_dissident_radicals_factors: "Množství [Concept('concept_radical','radikálové')] závisí na našem zákonu o svobodě projevu [Concept('concept_law', '$concept_laws|q$')|l] a na [Concept('concept_popularity','popularitu')] [Concept('concept_character','postavy')]" # todo: CHANGED (predtym: Množství [Concept('concept_radical','radikálové')] závisí na našem zákonu o svobodě projevu [Concept('concept_law', '$co)
  ideology_positivist: "Pozitivista"
  ideology_positivist_desc: "Tato postava je zapálený technokrat a antiklerikál, opovrhující jak svévolnou mocí panovníků, tak vrtkavými náladami veřejnosti."
  law_technocracy: "Technokracie"
@@ -188,7 +190,6 @@
  natural_borders.4.b: "Možná je uklidnění nejlepší cestou."
  notification_fra_natural_borders_notification_name: "Francouzské ambice"
  notification_fra_natural_borders_notification_desc: "[SCOPE.sCountry('france_scope').GetName] oznámila svůj záměr rozšířit se k „přirozeným hranicím“, od Atlantiku po Rýn."
- notification_fra_natural_borders_notification_tooltip: "#header $notification_fra_natural_borders_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_fra_natural_borders_notification_desc$"
  france_annex_luxembourg: "Koupě Lucemburska"
  france_annex_luxembourg_desc: "Lucembursko leží v našich přirozených hranicích a mělo by být součástí Francie. Možná by štědrá nabídka přesvědčila jeho vládce k prodeji."
  natural_borders.5.t: "Koupě Lucemburska"

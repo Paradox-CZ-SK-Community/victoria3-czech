@@ -144,7 +144,7 @@
  less_conscription_rural_folk_modifier: "Obavy z odvodu řešeny"
  ig_petitions.13.t: "Omezené vzdělání"
  ig_petitions.13.d: "Zástupci [SCOPE.gsInterestGroup('trade_unions_ig').GetCustom('IG_G_TT')] se obrátili na vládu a vyjádřili své zklamání z přijetí zákona [SCOPE.sLaw('current_law_scope').GetName]." # todo: NAME CASE
- ig_petitions.13.f: "„Přivedli s sebou své děti. Ach, [SCOPE.GetRootScope.GetCountry.GetCustom('GetDivinity')], to mi připomíná, proč děti nenávidím. Takový hluk, moje hlava, takový hluk. Tyhle už žádné vzdělání nikdy nenapraví, tím jsem si jistý.\n\n„Ano, ano, slyšíme vás, rozhodně vás slyšíme. Zůstaňte prosím za stolem, zpracováváme vaši petici.“\n\n#italic Povzdech#!.“"
+ ig_petitions.13.f: "„Přivedli s sebou své děti. Ach, [SCOPE.GetRootScope.GetCountry.GetCustom('GetDivinity')], to mi připomíná, proč děti nenávidím. Takový hluk, moje hlava, takový hluk. Tyhle už žádné vzdělání nikdy nenapraví, tím jsem si jistý.\n\n„Ano, ano, slyšíme vás, rozhodně vás slyšíme. Zůstaňte prosím za stolem, zpracováváme vaši petici.“\n\n#italic Povzdech#!.„"
  ig_petitions.13.a: "Měli bychom tyto lidi uklidnit, než budeme pokračovat."
  ig_petitions.13.b: "Nemůžeme dovolit, aby veřejné mínění ovlivňovalo naše rozhodnutí."
  trade_unions_placation_modifier: "Uklidnění veřejnosti"
@@ -201,7 +201,7 @@
  goldrush.3.b: "Omezte migraci do státu [SCOPE.sState('pb_gold_state').GetNameNoFormatting]."
  goldrush.4.t: "Doly se organizují"
  goldrush.4.d: "Horníci i majitelé dolů se ve státě [SCOPE.sState('gr4_gold_state').GetName] snaží chránit své zájmy tím, že formálně organizují sebe i svou práci. Přístupy [SCOPE.gsInterestGroup('trade_unions_ig').GetCustom('IG_G_TT')] a [SCOPE.gsInterestGroup('industrialists_ig').GetCustom('IG_G_TT')] však nemohou fungovat společně." # todo: NAME CASE
- goldrush.4.f: "„Jeden z [SCOPE.gsInterestGroup('industrialists_ig').GetCustom('IG_G')] lehce poklepe na sklo okna; zvuk zesílí prázdnota skladiště. „Chcete snad, abych jim předal i zlato? Část svého domu?“ zeptá se velkoryse, stále zády ke dveřím. „Co je moje, je moje, a co je vaše, je vaše. Doly jsou moje.““" # todo: NAME CASE
+ goldrush.4.f: "„Jeden z [SCOPE.gsInterestGroup('industrialists_ig').GetCustom('IG_G')] lehce poklepe na sklo okna; zvuk zesílí prázdnota skladiště. ‚Chcete snad, abych jim předal i zlato? Část svého domu?‘ zeptá se velkoryse, stále zády ke dveřím. ‚Co je moje, je moje, a co je vaše, je vaše. Doly jsou moje.‘“" # todo: NAME CASE
  goldrush.4.a: "Podpořte [SCOPE.gsInterestGroup('trade_unions_ig').GetCustom('IG_A_TT')]." # todo: NAME CASE
  goldrush.4.b: "Podpořte [SCOPE.gsInterestGroup('industrialists_ig').GetCustom('IG_A_TT')]." # todo: NAME CASE
  goldrush.5.t: "[SCOPE.sCountry('owner_country_scope').GetAdjective] sen"
@@ -244,7 +244,7 @@
  ig_leaders.4.b: "Turné by mělo získat podporu pro [ROOT.GetCountry.GetAltAdjective('A')]." # todo: CONCEPT CASE
  ig_leaders.5.t: "Buď já, nebo oni"
  ig_leaders.5.d: "[SCOPE.sCharacter('smug_leader').GetFullName], vůdce vládnoucí [SCOPE.gsInterestGroup('smug_ig').GetCustom('IG_G_TT')], už má dost kompromisů se svými koaličními partnery. [SCOPE.sCharacter('meticulous_leader').GetSheHe|U] požaduje, aby buď [SCOPE.sCharacter('smug_leader').GetHerHis] spolupracovníci následovali [SCOPE.sCharacter('smug_leader').GetHerHis] rozkazy, nebo [SCOPE.gsInterestGroup('smug_ig').GetName] nikdy neschválí jejich změny." # todo: NAME CASE
- ig_leaders.5.f: "„K tomu přece vůdci jsou, ne? Já vedu, vy následujete. Mně to zní docela jednoduše. Kdyby chtěli vést, mohli být vůdci sami, ale asi si nikdo jiný nemyslel, že by to dokázali.\n\nBuď bude po mém, nebo můžete jít!“"
+ ig_leaders.5.f: "„K tomu přece vůdci jsou, ne? Já vedu, vy následujete. Mně to zní docela jednoduše. Kdyby chtěli vést, mohli být vůdci sami, ale asi si nikdo jiný nemyslel, že by to dokázali.\n\nBuď bude po mém, nebo můžete jít!„"
  ig_leaders.5.a: "To je směšné prohlášení."
  ig_leaders.5.b: "Dobrá, [SCOPE.gsInterestGroup('smug_ig').GetName] bude vedoucí silou."
  imperious_leader_modifier: "Panovačný vůdce odmítnut"
@@ -262,7 +262,6 @@
  neighbor_events.1.f: "Na okamžik se zastavil a otřel si čelo, když si všiml, že [SCOPE.sC('neighbor_country').GetAdjectiveNoFormatting] čeledín na sousedním poli zřejmě klečí v brázdě.\n\nZmateně se naklonil, aby lépe viděl, a konečně si všiml, že se muž hluboce modlí. Měl to poznat, ale nikdy ho nenapadlo, co by mohli mít společného: několik těžkých let a víru, že se věci zlepší."
  neighbor_events.1.a: "Navzdory rozdílům si musíme vážit společných hodnot."
  neighbor_events.1.b: "Jsme nejprve [ROOT.GetCountry.GetAdjectiveNoFormatting] a teprve potom [ROOT.GetCountry.GetStateReligion.GetName]!"
- notification_neighbor_events_1_tooltip: "#header $notification_neighbor_events_1_name$#!\n$TOOLTIP_DELIMITER$\n$notification_neighbor_events_1_desc$"
  notification_neighbor_events_1_name: " [Concept('concept_relations','Vztahy')] s [SCOPE.sC('originator').GetName ] se zlepšily"
  notification_neighbor_events_1_desc: "[SCOPE.sC('originator').GetName] zlepšil naše [Concept('concept_relations','vztahy')] tím, že se odvolal na naši společnou víru [SCOPE.sC('originator').GetStateReligion.GetName]."
  neighbor_events.2.t: "Chceš-li mír"
@@ -313,7 +312,7 @@
  commander_kept: "Velitel ponechán"
  commander_events.5.t: "Válka pokroku"
  commander_events.5.d: "[SCOPE.sCharacter('commander_invention').GetFullName] přišel na to, jak vylepšit vynález #bold opakovaček#!."
- commander_events.5.f: "„[SCOPE.sCharacter('commander_invention').GetFullNameNoFormatting] si upraví brýle naplněné sebedůvěrou.\n\n„No, bylo to vlastně docela jednoduché, víte. Jen jsem pozoroval technologii, s níž muži právě pracovali, a uvědomil si, že bychom mohli tu a tam něco změnit.“\n\nNa způsobu, jakým [SCOPE.sCharacter('commander_invention').GetSheHe] mluví, je něco, co [SCOPE.sCharacter('commander_invention').GetHerHim] propůjčuje vznešené vystupování a značnou oblibu mezi masami, když [SCOPE.sCharacter('commander_invention').GetSheHe] drží tu pušku. Taková sebedůvěra!“"
+ commander_events.5.f: "„[SCOPE.sCharacter('commander_invention').GetFullNameNoFormatting] si upraví brýle naplněné sebedůvěrou.\n\n„No, bylo to vlastně docela jednoduché, víte. Jen jsem pozoroval technologii, s níž muži právě pracovali, a uvědomil si, že bychom mohli tu a tam něco změnit.“\n\nNa způsobu, jakým [SCOPE.sCharacter('commander_invention').GetSheHe] mluví, je něco, co [SCOPE.sCharacter('commander_invention').GetHerHim] propůjčuje vznešené vystupování a značnou oblibu mezi masami, když [SCOPE.sCharacter('commander_invention').GetSheHe] drží tu pušku. Taková sebedůvěra!„"
  commander_events.5.a: "Zaměřte se na palebnou sílu."
  commander_events.5.b: "Zaměřte se na přesnost."
  law_events.1.t: "Odpírači z důvodu svědomí"
@@ -344,13 +343,14 @@
  modifier_religious_schools_abolished_intelligentsia: "Vyslyšené obavy ohledně náboženských škol"
  religious_schools_bad_modifier: "Náboženské školy podpořeny"
  religious_schools_good_modifier: "Náboženské školy zpochybněny"
- notification_expedition_progress_average_desc: "Vaše současná expedice postupuje bez incidentů"
- notification_expedition_progress_average_tooltip: "Vaše expedice pokračuje stálým tempem"
- notification_expedition_progress_average_name: "Současná expedice"
+ notification_expedition_progress_average_desc: "Vaše současná expedice postupuje bez incidentů" # todo: CHANGED MINOR
+ notification_expedition_progress_average_name: "[SelectLocalization(SCOPE.sState('current_expedition_location').IsValid,'expedition_progress_located_name','expedition_progress_unlocated_name')]" # todo: CHANGED (predtym: Současná expedice)
+ expedition_progress_located_name: "Výprava pokračuje v [SCOPE.sState('current_expedition_location').GetName]" # todo: NEW TRANSLATION
+ expedition_progress_unlocated_name: "Výprava pokračuje" # todo: NEW TRANSLATION
  expedition_event_ongoing_tt: "Expedice pokračuje."
  expedition_events.1.t: "Expedice za zmapováním řeky Niger"
  expedition_events.1.d: "Navzdory mnoha pokusům o její splutí zůstává celý tok této řeky záhadou. Máme vyslat expedici, která se pokusí zmapovat průběh řeky?"
- expedition_events.1.f: "„Členové obchodních společností vyjádřili zájem prosazovat politiku „Nové Afriky“, založenou na rozšířeném obchodu a šíření [ROOT.GetCountry.GetAdjectiveNoFormatting] hodnot v této zemi.\n\nZdůraznili nutnost zmapovat řeku Niger kvůli jejímu využití jako obchodní tepny a navrhli za tímto účelem expedici.“"
+ expedition_events.1.f: "„Členové obchodních společností vyjádřili zájem prosazovat politiku ‚Nové Afriky‘, založenou na rozšířeném obchodu a šíření [ROOT.GetCountry.GetAdjectiveNoFormatting] hodnot v této zemi.\n\nZdůraznili nutnost zmapovat řeku Niger kvůli jejímu využití jako obchodní tepny a navrhli za tímto účelem expedici.„"
  expedition_events.1.a: "Znám osobu vhodnou pro tento úkol."
  expedition_events.1.b: "Teď ne."
  expedition_events.2.t: "Výběr vůdce"
@@ -384,12 +384,12 @@
  expedition_events.32.a: "To nás zdrží."
  expedition_events.40.t: "Člen expedice se utopil"
  expedition_events.40.d: "V noci spadl jeden člen expedice z lodi. Mohli bychom strávit čas jeho hledáním, nebo pokračovat dál."
- expedition_events.40.f: "„Nejprve přišel křik. Pak tonutí. A ta dlouhá, šťavnatá skvrna na vodě. Rudá jako jahodový sirup nebo poslední okamžiky úsvitu, když je obzor jasný a mraky vypadají jako obnošené obvazy.\n\n„Nejsem zrovna dobrý plavec, víte?“ pohlédl před několika dny na řeku s pokřiveným úsměvem, „je dobře, že už je to skoro za námi.““"
+ expedition_events.40.f: "„Nejprve přišel křik. Pak tonutí. A ta dlouhá, šťavnatá skvrna na vodě. Rudá jako jahodový sirup nebo poslední okamžiky úsvitu, když je obzor jasný a mraky vypadají jako obnošené obvazy.\n\n„Nejsem zrovna dobrý plavec, víte?“ pohlédl před několika dny na řeku s pokřiveným úsměvem, „je dobře, že už je to skoro za námi.“„"
  expedition_events.40.a: "Řekněte jim, ať pokračují."
  expedition_events.40.b: "Najděte ho!"
  expedition_events.41.t: "Expedici sužuje malárie"
  expedition_events.41.d: "Nejnovější zpráva z expedice nás informuje, že několik členů posádky onemocnělo malárií."
- expedition_events.41.f: "„Za úsvitu tam nebyli. Většina našich mužů byla stále ve stanech a ti nemnozí, kteří za mnou přišli, se k nim báli byť jen přiblížit. „Mají tu nemoc, [SCOPE.sCharacter('expedition_leader').GetCustom('getSirMadam')].“ Zamlžený vzduch kolem jejich siluet mi připomínal ducha. Jejich bledé tváře se třásly horečkou a v jejich hlasech nebylo nic, co by se byť vzdáleně zdálo živé.“"
+ expedition_events.41.f: "„Za úsvitu tam nebyli. Většina našich mužů byla stále ve stanech a ti nemnozí, kteří za mnou přišli, se k nim báli byť jen přiblížit. ‚Mají tu nemoc, [SCOPE.sCharacter('expedition_leader').GetCustom('getSirMadam')].‘ Zamlžený vzduch kolem jejich siluet mi připomínal ducha. Jejich bledé tváře se třásly horečkou a v jejich hlasech nebylo nic, co by se byť vzdáleně zdálo živé.“"
  expedition_events.41.a: "Řekněte jim, ať pokračují."
  expedition_events.41.b: "Řekněte jim, ať si chvíli odpočinou."
  expedition_events.50.t: "Útok na řece"
@@ -438,11 +438,11 @@
  expedition_events.83.a: "To je úleva."
  expedition_events.90.t: "Hrob padlých"
  expedition_events.90.d: "Expedice narazí na několik hrobů vykopaných na břehu řeky. Cetky a předměty zanechané na nich naznačují, že jde o vše, co zbylo z předchozí expedice."
- expedition_events.90.f: "„Malý zarámovaný obrázek dítěte, pokrytý hlínou. Známé jméno vyryté na zadní straně. Relikviář s pramenem světlých vlasů. Několik stránek deníku, které jsme se laskavě rozhodli nečíst. Dopis. Možná bychom ho měli vzít. Není dokončený. Jeden z mužů tiše promluví: „toho muže jsem znal.“ Vezme ho a složí si ho do kapsy.\n\nI tady pořád slyším jejich živé, jasné hlasy. „Pramen najdeme za méně než měsíc!“ Ano, i tady.“"
+ expedition_events.90.f: "„Malý zarámovaný obrázek dítěte, pokrytý hlínou. Známé jméno vyryté na zadní straně. Relikviář s pramenem světlých vlasů. Několik stránek deníku, které jsme se laskavě rozhodli nečíst. Dopis. Možná bychom ho měli vzít. Není dokončený. Jeden z mužů tiše promluví: ‚toho muže jsem znal.‘ Vezme ho a složí si ho do kapsy.\n\nI tady pořád slyším jejich živé, jasné hlasy. „Pramen najdeme za méně než měsíc!“ Ano, i tady.„"
  expedition_events.90.a: "I v Arkádii je stále zde."
  expedition_events.100.t: "Uneseni"
  expedition_events.100.d: "Z expedice dorazila zpráva, že několik jejích členů, včetně [SCOPE.sCharacter('expedition_leader').GetFullName], unesl místní král, který požaduje výkupné."
- expedition_events.100.f: "„Světlo v noci je jen zřídka dobrým znamením. Středověká představivost, která přiměla lidi mluvit o bludičkách, ignis fatuus, nebezpečných stvořeních vedoucích je na smrt, se nemýlila.\n\nPochodeň se změnila v lucernu a lucerna v člověka. Člověk se změnil v tucet a brzy nato nás drželi v zajetí. Kov jejich zbraní se v noci také leskl, nemohli jsme se jim postavit, ne za takových podmínek.“"
+ expedition_events.100.f: "„Světlo v noci je jen zřídka dobrým znamením. Středověká představivost, která přiměla lidi mluvit o bludičkách, ignis fatuus, nebezpečných stvořeních vedoucích je na smrt, se nemýlila.\n\nPochodeň se změnila v lucernu a lucerna v člověka. Člověk se změnil v tucet a brzy nato nás drželi v zajetí. Kov jejich zbraní se v noci také leskl, nemohli jsme se jim postavit, ne za takových podmínek.„"
  expedition_events.100.a: "Zaplatíme."
  expedition_events.100.b: "Budou si s tím muset poradit."
  expedition_leader_kidnap_modifier: "Výkupné za vůdce expedice"
@@ -456,15 +456,15 @@
  expedition_events.102.a: "Politováníhodné."
  expedition_events.110.t: "Smrt vůdce"
  expedition_events.110.d: "Během malé potyčky se [SCOPE.sCharacter('dead_expedition_leader').GetHerHis] do nohy zaryla mušketová koule. Samotné zranění nebylo vážné, ale infekce ano. [SCOPE.sCharacter('expedition_leader').GetFullName] převzal vedení jako nový vůdce."
- expedition_events.110.f: "„Teplo mě překvapilo. Bolest také. Po výstřelu jsem nemohl chodit a věděl jsem, že později už také nebudu. Tohle je poslední šance, kdy mohu psát o tom, co jsem vykonal. Jako Marco Polo ležím na lůžku a vyprávím o neviditelných městech, nesmrtelných divech; tomu, co jsem viděl, nikdo neuvěří. To mě rmoutí. Jako příčetný muž odložím pero.\n\nDžungle vás může překvapit stejně jako kulka, ale moudrý, jak jste se stal, říká básník, nakonec pochopíte, co cesta znamená.“"
+ expedition_events.110.f: "„Teplo mě překvapilo. Bolest také. Po výstřelu jsem nemohl chodit a věděl jsem, že později už také nebudu. Tohle je poslední šance, kdy mohu psát o tom, co jsem vykonal. Jako Marco Polo ležím na lůžku a vyprávím o neviditelných městech, nesmrtelných divech; tomu, co jsem viděl, nikdo neuvěří. To mě rmoutí. Jako příčetný muž odložím pero.\n\nDžungle vás může překvapit stejně jako kulka, ale moudrý, jak jste se stal, říká básník, nakonec pochopíte, co cesta znamená.„"
  expedition_events.110.a: "Doufejme, že nový vůdce je kompetentní."
  expedition_events.11.t: "Úspěšná expedice"
  expedition_events.11.d: "[SCOPE.sCharacter('expedition_leader').GetFullName] se triumfálně vrátil a tok i ústí řeky Niger byly zmapovány."
- expedition_events.11.f: "„Vždy jsem si představoval, že pocítím nesmírné štěstí. Štěstí tak jasné a hlasité, že byste ho téměř dokázali slyšet. Všechny řeky se tu sbíhají. Možná jsem očekával příval vody, sílu tak zjevnou, že by ji nešlo přehlédnout.\n\nAle Niger se rozbíhal do menších proudů a téměř ztrácel svou totožnost. Který z nich byl tou skutečnou řekou? Nebyly by skutečnými řekami všechny? Možná žádný. Jako u Théseovy lodi: kdy přestává být věc tou věcí?“"
+ expedition_events.11.f: "„Vždy jsem si představoval, že pocítím nesmírné štěstí. Štěstí tak jasné a hlasité, že byste ho téměř dokázali slyšet. Všechny řeky se tu sbíhají. Možná jsem očekával příval vody, sílu tak zjevnou, že by ji nešlo přehlédnout.\n\nAle Niger se rozbíhal do menších proudů a téměř ztrácel svou totožnost. Který z nich byl tou skutečnou řekou? Nebyly by skutečnými řekami všechny? Možná žádný. Jako u Théseovy lodi: kdy přestává být věc tou věcí?„"
  expedition_events.11.a: "Výborné zprávy!"
  expedition_events.12.t: "Neúspěšná expedice"
  expedition_events.12.d: "Po mnoha měsících bez jakýchkoli zpráv je jasné, že vaše expedice za nalezením pramene řeky Niger selhala a [SCOPE.sCharacter('expedition_leader').GetFullName] se ztratil spolu s ní."
- expedition_events.12.f: "„Myslím, že hluboko uvnitř jsme všichni věděli, že to přijde. I teď pořád mluvíme o tom, že dorazíme k ústí řeky. „Ještě pár dní,“ říkáme si a pokračujeme dál. Zpočátku někteří muži poznamenávali něco o přídělovém jídle. Teď už o tom nemluví. Řeku jsme dávno ztratili. „Ještě pár dní.““"
+ expedition_events.12.f: "„Myslím, že hluboko uvnitř jsme všichni věděli, že to přijde. I teď pořád mluvíme o tom, že dorazíme k ústí řeky. ‚Ještě pár dní,‘ říkáme si a pokračujeme dál. Zpočátku někteří muži poznamenávali něco o přídělovém jídle. Teď už o tom nemluví. Řeku jsme dávno ztratili. ‚Ještě pár dní.‘“"
  expedition_events.12.a: "Zatraceně!"
  civil_war_events.1.t: "Separatisté vítězí"
  civil_war_events.1.d: "Navzdory našim pesimistickým očekáváním naši národní soukmenovci vyhráli vlastní boj za nezávislost - bez naší pomoci."
@@ -473,16 +473,16 @@
  civil_war_events.1.b: "Nechte je být"
  treaty_port_inheritance_events.1.t: "Děděná koncese" # todo: NEW TRANSLATION
  treaty_port_inheritance_events.1.d: "Poté, co byl starý režim odstraněn, přešly do naší správy přístavy, které dříve udělil [SCOPE.sC('target_country').GetName]. Jejich obchodníci stále vyvěšují cizí vlajku nad našimi přístavy na základě dohod, které jsme nikdy nepodepsali. Můžeme ctít to, co jsme zdědili, nebo cizince vyhnat a znovu získat tyto přístavy pro [ROOT.GetCountry.GetName]." # todo: NEW TRANSLATION
- treaty_port_inheritance_events.1.f: ""Inkoust dávno zaschnul, ještě než jsme se chopili moci, přesto jsou řetězy, které vytvořil, nyní naše — nosit je nebo je zlomit."" # todo: NEW TRANSLATION
+ treaty_port_inheritance_events.1.f: "„Inkoust dávno zaschnul, ještě než jsme se chopili moci, přesto jsou řetězy, které vytvořil, nyní naše — nosit je nebo je zlomit.“" # todo: NEW TRANSLATION
  treaty_port_inheritance_events.1.a: "Dodržet dohody" # todo: NEW TRANSLATION
  treaty_port_inheritance_events.1.b: "Znovu získat naše přístavy" # todo: NEW TRANSLATION
  treaty_port_inheritance_events.2.t: "Koncesím vyhověno" # todo: NEW TRANSLATION
  treaty_port_inheritance_events.2.d: "V zemích kolem našich koncesních přístavů došlo k převratu. Po pádu předchozího režimu se [SCOPE.sC('new_host').GetName] rozhodlo ctít dohody uzavřené těmi, kdo byli před ním. Naši obchodníci mohou nadále vyvěšovat naši vlajku nad jejich přístavy." # todo: NEW TRANSLATION
- treaty_port_inheritance_events.2.f: ""Noví pánové, přesto ta samá stará dohoda. Jak příjemně rozumné."" # todo: NEW TRANSLATION
+ treaty_port_inheritance_events.2.f: "„Noví pánové, přesto ta samá stará dohoda. Jak příjemně rozumné.“" # todo: NEW TRANSLATION
  treaty_port_inheritance_events.2.a: "Moudré rozhodnutí" # todo: NEW TRANSLATION
  treaty_port_inheritance_events.3.t: "Zrušení koncesí" # todo: NEW TRANSLATION
  treaty_port_inheritance_events.3.d: "V zemích kolem našich koncesních přístavů došlo k převratu. Po pádu předchozího režimu [SCOPE.sC('new_host').GetName] vypověděl dohody uzavřené těmi, kdo byli před ním. Naše přístavy byly zabrány a naši obchodníci vyhozeni do ulic. Tato urážka nebude brzy zapomenuta." # todo: NEW TRANSLATION
- treaty_port_inheritance_events.3.f: ""Chtějí nám odepřít to, co bylo slíbeno těmi, kteří tu byli dříve. Ať si pamatují, že naše děla mají dlouhou paměť."" # todo: NEW TRANSLATION
+ treaty_port_inheritance_events.3.f: "„Chtějí nám odepřít to, co bylo slíbeno těmi, kteří tu byli dříve. Ať si pamatují, že naše děla mají dlouhou paměť.“" # todo: NEW TRANSLATION
  treaty_port_inheritance_events.3.a: "Neslýchané!" # todo: NEW TRANSLATION
  diplomatic_events.1.t: "Porušení suverenity"
  diplomatic_events.1.d: "[SCOPE.sC('initiator').GetName] zaslal [SCOPE.sC('target_country').GetName] ultimátum požadující, aby se k nim připojili ve válce [SCOPE.sW('war').GetName|v].\nOdmítli a postavili se na stranu [SCOPE.sW('war').GetLeaderOfOppositeSide( SCOPE.sC('initiator') ).GetName]!\nCo uděláme?"
@@ -507,12 +507,12 @@
  cultural_homeland_events.20.b: "Obchodníci mohou prodávat - nebo neprodávat - komu chtějí."
  cultural_homeland_events.30.t: "Předpojatí zaměstnavatelé"
  cultural_homeland_events.30.d: "[SCOPE.sCulture('state_minority_culture').GetName] lidé mají ve státě [SCOPE.sState('culture_state').GetName] potíže najít zaměstnání kvůli předsudkům některých [SCOPE.sCulture('state_majority_culture').GetName] zaměstnavatelů."
- cultural_homeland_events.30.f: "„Šel jsem se ucházet o práci ve skladu. Jen se na mě podívali a řekli mi, že ta práce není pro „můj druh“.“"
+ cultural_homeland_events.30.f: "„Šel jsem se ucházet o práci ve skladu. Jen se na mě podívali a řekli mi, že ta práce není pro ‚můj druh‘.“"
  cultural_homeland_events.30.a: "Práce je pro každého."
  cultural_homeland_events.30.b: "Je na šéfech, aby rozhodli, koho najmou."
  cultural_homeland_events.40.t: "Pronásledování [SCOPE.sCulture('state_minority_culture').GetName] lidí"
  cultural_homeland_events.40.d: "Podniky a domovy [SCOPE.sCulture('state_minority_culture').GetName] lidí byly po celém státě [SCOPE.sState('culture_state').GetName] napadeny skupinami [SCOPE.sCulture('state_majority_culture').GetName] lidí."
- cultural_homeland_events.40.f: "„Naházeli cihly do oken našeho obchodu! Byl k nim připevněn vzkaz, že máme „jít domů“, ale... tohle je jediný domov, který jsme kdy znali.“"
+ cultural_homeland_events.40.f: "„Naházeli cihly do oken našeho obchodu! Byl k nim připevněn vzkaz, že máme ‚jít domů‘, ale... tohle je jediný domov, který jsme kdy znali.“"
  cultural_homeland_events.40.a: "Tento vandalismus musí přestat."
  cultural_homeland_events.40.b: "Máme svázané ruce z... důvodů."
  cultural_homeland_events.50.t: "Násilí vůči [SCOPE.sCulture('state_minority_culture').GetName] lidem"
@@ -541,9 +541,8 @@
  custom_newspaper_sentinel: "Sentinel"
  custom_newspaper_informer: "Informer"
  custom_newspaper_bulletin: "Bulletin"
- notification_west_america_expedition_progress_average_name: "Expedice do Západní Ameriky pokračuje."
+ notification_west_america_expedition_progress_average_name: "Expedice do Západní Ameriky pokračuje." # todo: CHANGED MINOR
  notification_west_america_expedition_progress_average_desc: "Expedice do Západní Ameriky pokračuje bez problémů."
- notification_west_america_expedition_progress_average_tooltip: "Expedice do Západní Ameriky pokračuje bez problémů."
  expedition_events.200.t: "Expedice za zmapováním západního pohraničí"
  expedition_events.200.d: "Vyšlete expedici, aby zmapovala neznámou geografii západního pohraničí."
  expedition_events.200.f: "„Přímo na našem prahu leží země překypující přísliby! Měli bychom se těch příslibů chopit, dokud můžeme. A pokud ne teď, předstihnou nás orli a lvi a, chraň Bůh, hlemýždi!“"
@@ -560,7 +559,7 @@
  expedition_events.202.c: "Velkou částku."
  expedition_events.205.t: "Neúspěšná expedice"
  expedition_events.205.d: "Po několika týdnech ticha se expedice za zmapováním západního pohraničí vedená [SCOPE.sCharacter('expedition_leader').GetFullName] vrátila s prázdnýma rukama."
- expedition_events.205.f: "„Čekáme jeden den v táboře. Muži jsou unavení a už jsme ušli tolik. Čekáme další den. „Možná bychom tu prostě mohli zůstat,“ zamumlá jeden z nich, zašklebí se a vrátí se k táborovému ohni. Možná bychom mohli. „Poznáváte tyto hory, [SCOPE.sCharacter('expedition_leader').GetCustom('getSirMadam')]?“ ptají se. Další den. Je to už tak dlouho, že sotva poznávám sám sebe. Možná bychom tu prostě mohli zůstat.“"
+ expedition_events.205.f: "„Čekáme jeden den v táboře. Muži jsou unavení a už jsme ušli tolik. Čekáme další den. ‚Možná bychom tu prostě mohli zůstat,‘ zamumlá jeden z nich, zašklebí se a vrátí se k táborovému ohni. Možná bychom mohli. ‚Poznáváte tyto hory, [SCOPE.sCharacter('expedition_leader').GetCustom('getSirMadam')]?‘ ptají se. Další den. Je to už tak dlouho, že sotva poznávám sám sebe. Možná bychom tu prostě mohli zůstat.“"
  expedition_events.205.a: "Strašná škoda."
  expedition_events.300.t: "Řeka Buenaventura"
  expedition_events.300.d: "Po dlouhé a namáhavé cestě expedice konečně dospěla ke konci. Nejzajímavějším objevem této cesty bylo, že dlouho opředená řeka Buenaventura ve skutečnosti neexistuje!"
@@ -590,7 +589,7 @@
  expedition_events.222.a: "Politováníhodné."
  expedition_events.230.t: "Spatřen medvěd"
  expedition_events.230.d: "Před námi byl spatřen velký grizzly. Mohli bychom se držet zpátky a počkat, až odejde, nebo ho můžeme ulovit."
- expedition_events.230.f: "„Zdejší medvědi jsou vyhublí a vyhladovělí. Tím to ale není o nic lepší; bystré oči, lačné čelisti, kapky slin stékající po zažloutlých tesácích. Tady jsou vždy tak ostražití. Tak bdělí.\n\nAch, ale potravy je v těchto horách málo nejen pro ně.“"
+ expedition_events.230.f: "„Zdejší medvědi jsou vyhublí a vyhladovělí. Tím to ale není o nic lepší; bystré oči, lačné čelisti, kapky slin stékající po zažloutlých tesácích. Tady jsou vždy tak ostražití. Tak bdělí.\n\nAch, ale potravy je v těchto horách málo nejen pro ně.„"
  expedition_events.230.a: "Ulovíme ho."
  expedition_events.230.b: "Bude lepší počkat, až odejde."
  expedition_events.231.t: "Úspěšný lov na medvěda"
@@ -615,7 +614,7 @@
  expedition_events.240.b: "Na to není čas."
  expedition_events.250.t: "Spatřena hora"
  expedition_events.250.d: "Jeden člen expedice navrhl, abychom si udělali odbočku, vystoupili na horu a zabrali ji jménem [ROOT.GetCountry.GetName]."
- expedition_events.250.f: "„Jeden z členů expedice upírá oči na horu. „Je to dobré riziko, příteli,“ říká, „myslím, že tuhle si ještě nikdo nenárokoval, chápete, představte si, jak by nám doma zaplatili - to všechno za tuhle bezvýznamnou skálu.“ Sníh klouže po úbočí hory, rozpuštěný jako vlákna šedé bavlny.“"
+ expedition_events.250.f: "„Jeden z členů expedice upírá oči na horu. ‚Je to dobré riziko, příteli,‘ říká, ‚myslím, že tuhle si ještě nikdo nenárokoval, chápete, představte si, jak by nám doma zaplatili - to všechno za tuhle bezvýznamnou skálu.‘ Sníh klouže po úbočí hory, rozpuštěný jako vlákna šedé bavlny.“"
  expedition_events.250.a: "Výborný nápad"
  expedition_events.250.b: "Nemůžeme si dovolit ztrácet čas."
  expedition_events_mountain_claim_tt: "Naše expedice dosáhne vrcholu."
@@ -650,13 +649,13 @@
  expedition_events.263.a: "Skvělé zprávy."
  expedition_events.270.t: "Neobjevený druh rostliny"
  expedition_events.270.d: "Jeden člen expedice požádal o několik dní zastávky, aby mohl nasbírat vzorky dosud neznámého druhu rostliny."
- expedition_events.270.f: "„Barevné okvětní lístky této rostliny jistě ještě nikdo nikdy neviděl: nádech nejjasnější šarlatové, pár stop dobrodružného azuru. Trny! Ale tak malé, že riziko je žádoucí.\n\nBrzy budou nejluxusnější salony [ROOT.GetCountry.GetNameNoFormatting] překypovat vázami s těmito květinami a každá žena si bude přát, aby jí její milý nějaké přinesl. Fascinující! A jistě výnosné.“"
- expedition_events.270.f2: "„Barevné okvětní lístky této rostliny jistě ještě nikdo nikdy neviděl: nádech nejjasnější šarlatové, pár stop dobrodružného azuru. Trny! Ale tak malé, že riziko je žádoucí.\n\nVůně je však povědomá. Dětství na venkově. Léto, zcela jistě. Za úsvitu, nebo snad za soumraku. To první, ano, za soumraku. Viděl jsem na polích jasné barvy, jed, ostatní děti křičely, ty rostliny byly jedovaté. Oči členů expedice, ach, jejich oči upřené na květy.“"
+ expedition_events.270.f: "„Barevné okvětní lístky této rostliny jistě ještě nikdo nikdy neviděl: nádech nejjasnější šarlatové, pár stop dobrodružného azuru. Trny! Ale tak malé, že riziko je žádoucí.\n\nBrzy budou nejluxusnější salony [ROOT.GetCountry.GetNameNoFormatting] překypovat vázami s těmito květinami a každá žena si bude přát, aby jí její milý nějaké přinesl. Fascinující! A jistě výnosné.„"
+ expedition_events.270.f2: "„Barevné okvětní lístky této rostliny jistě ještě nikdo nikdy neviděl: nádech nejjasnější šarlatové, pár stop dobrodružného azuru. Trny! Ale tak malé, že riziko je žádoucí.\n\nVůně je však povědomá. Dětství na venkově. Léto, zcela jistě. Za úsvitu, nebo snad za soumraku. To první, ano, za soumraku. Viděl jsem na polích jasné barvy, jed, ostatní děti křičely, ty rostliny byly jedovaté. Oči členů expedice, ach, jejich oči upřené na květy.„"
  expedition_events.270.a: "Samozřejmě."
  expedition_events.270.b: "Co jsme zač, zahradníci?!"
  expedition_events.280.t: "Expedice v kruhu"
  expedition_events.280.d: "Expedice za zmapováním západu cestovala v kruzích. [SCOPE.sCharacter('expedition_leader').GetFullName] si může buď vybrat náhodný směr a pokračovat dál, nebo počkat na setmění a řídit se hvězdami."
- expedition_events.280.f: "„Poznal jsem značky, které jsme zanechali na trojúhelníkovém kameni. Pokračovali jsme v chůzi, protože jsem se rozhodl o nich nezmínit, ale podle šepotu mezi členy a jejich znepokojivých očí jsem si byl jistý, že to vědí také.\n\nProcházíme lesem jako podzimní listí, zlomené větve, zanedbaná toulavá zvířata; jako ty děti z pohádek, které zlé macechy poslaly do lesa. Kruh je kruh je kruh.“"
+ expedition_events.280.f: "„Poznal jsem značky, které jsme zanechali na trojúhelníkovém kameni. Pokračovali jsme v chůzi, protože jsem se rozhodl o nich nezmínit, ale podle šepotu mezi členy a jejich znepokojivých očí jsem si byl jistý, že to vědí také.\n\nProcházíme lesem jako podzimní listí, zlomené větve, zanedbaná toulavá zvířata; jako ty děti z pohádek, které zlé macechy poslaly do lesa. Kruh je kruh je kruh.„"
  expedition_events.280.f2: "„Jsme ztraceni. Jsme ztraceni. Jsme ztraceni. Jsme ztraceni. Jsme ztraceni. Jsme ztraceni. Jsme ztraceni. Jsme ztraceni. Jsme ztraceni. Jsme ztraceni. Jsme ztraceni. Jsme ztraceni. Jsme ztraceni. Jsme ztraceni.“"
  expedition_events.280.a: "Pokračujte dál."
  expedition_events.280.b: "Počkejte na soumrak."
@@ -673,18 +672,16 @@
  expedition_events.400.f: "„Dlouho panovalo přesvědčení, že hladiny vody na obou stranách Suezské šíje se výrazně liší. Nyní jsme prokázali, že tomu tak není.“"
  expedition_events.400.a: "Velmi dobře!"
  notification_suez_survey_started_desc: "Průzkum Suezské šíje zahájen"
- notification_suez_survey_started_tooltip: "Průzkum Suezské šíje zahájen"
  suez_survey_complete_tooltip: "Průzkum Suezu dokončen"
  expedition_events.410.t: "Panamská šíje prozkoumána"
  expedition_events.410.d: "Náš průzkum Panamské šíje je dokončen. Potvrdili jsme, že by bylo možné vybudovat průplav spojující Atlantský a Tichý oceán."
  expedition_events.410.f: "„Rychlejší cesta mezi Atlantikem a Pacifikem byla dlouho vyhledávána, ale nyní si ji vytvoříme sami.“"
  expedition_events.410.a: "Velmi dobře!"
  notification_panama_survey_started_desc: "Průzkum Panamské šíje zahájen"
- notification_panama_survey_started_tooltip: "Průzkum Panamské šíje zahájen"
  panama_survey_complete_tooltip: "Průzkum Panamy dokončen"
  ig_revolutions.1.t: "Na hraně"
  ig_revolutions.1.d: "[SCOPE.gsInterestGroup('ig_on_the_edge').GetName], vedená prohnaným [SCOPE.sCharacter('ig_on_the_edge_leader').GetFullName], pohrozila, že se přidá k revolučním silám, pokud nebudou splněny její požadavky. Ačkoli ústupky, které požadují, jsou malé, moc, kterou získají, pokud jim přiznáme svou slabost, bude ohromná."
- ig_revolutions.1.f: "„V dobách zmatků a bojů opatrní vždy tvrdí, že některé ideály musí být obětovány, některé reformy odloženy, aby se země nerozpadla. Ptám se jich: jakou cenu má země bez ideálů?\n\nAť se rozpadne, říkám! Z jejích vláken utkáme lepší zemi, kde budou naše ideály vnímány jako základ, nikoli jako hrozba.“"
+ ig_revolutions.1.f: "„V dobách zmatků a bojů opatrní vždy tvrdí, že některé ideály musí být obětovány, některé reformy odloženy, aby se země nerozpadla. Ptám se jich: jakou cenu má země bez ideálů?\n\nAť se rozpadne, říkám! Z jejích vláken utkáme lepší zemi, kde budou naše ideály vnímány jako základ, nikoli jako hrozba.„"
  ig_revolutions.1.a: "Dejte jim, oč žádají."
  ig_revolutions.1.b: "Nedáme jim nic než chladnou ocel!"
  ig_revolutions.2.t: "[SCOPE.gsInterestGroup('ig_lo_on_the_edge').GetName] mají požadavky!"
@@ -751,6 +748,34 @@
  punished_commander_modifier: "Vychválen za integritu"
  punched_commander_modifier: "Dostal pěstí"
  punching_leader_modifier: "Udeřil velitele"
+ commander_events.7.t: "Hrdina bez vousů" # todo: NEW TRANSLATION
+ commander_events.7.d: "Ve stanu polního chirurga se zjistilo, že se zraněný voják z [SCOPE.sState('beardless_soldier_home_state').GetNameNoFormatting] vydává za obyčejného muže. Předpisy ženám zakazují bojovat, ale voják, o něhož tu jde, trvá na tom, že existují výjimečné okolnosti." # todo: NEW TRANSLATION
+ commander_events.7.f: "Ostatní muži z roty o hrdinovi ve svých řadách mluvili jen v superlativech. „Vždycky to byl jeden z nás,“ zasmál se jeden z vojáků. „S bajonetem to nikdo neuměl lépe než on!“\n\nStarší důstojník se rozzuřil. „Na zásluhách nezáleží. Tenhle ‚hrdina‘ je lhář! Je to podvod, prostý a jasný zločin.“\n\nVoják se mezitím na svou obranu zmohl jen na málo. „Prosím,“ zapřísahal voják, „neoddělujte mě od mých druhů. Nechci se vrátit, nechci být — tedy, tohle není správné, já nechci, já nejsem…“ Voják koktal a marně hledal slova, která neexistovala." # todo: NEW TRANSLATION
+ commander_events.7.a: "Zavřete toho podvodníka." # todo: NEW TRANSLATION
+ commander_events.7.b: "Pošlete vojáka zpět do [SCOPE.sState('beardless_soldier_home_state').GetName] s penzí." # todo: NEW TRANSLATION
+ commander_events.7.c: "Nabídněte jí velení." # todo: NEW TRANSLATION
+ commander_events.7.c_uneasy: "#warning Vojákovi je zjevně překvapivě nepříjemné, když ho oslovují jako ženu v uniformě.#!" # todo: NEW TRANSLATION
+ commander_events.7.c_rejected: "Voják nabídku velení odmítá" # todo: NEW TRANSLATION
+ commander_events.7.c_accepted: "Voják nabídku přijímá bez valného nadšení" # todo: NEW TRANSLATION
+ commander_events.7.c_general: "$CHARACTER_WOMAN$ se neochotně stává [concept_general] v zemi [ROOT.GetCountry.GetName]\n" # todo: NEW TRANSLATION
+ serving_uncomfortably: "Nepříjemná role" # todo: NEW TRANSLATION
+ commander_events.7.dd: "Nabídněte mu velení." # todo: NEW TRANSLATION
+ commander_events.7.dd_general: "$CHARACTER_MAN$ se s radostí stává [concept_general] v zemi [ROOT.GetCountry.GetName]\n" # todo: NEW TRANSLATION
+ the_first_blast_of_the_trumpet: "První zatroubení" # todo: NEW TRANSLATION
+ against_the_monstruous_regiment: "Proti obludnému pluku" # todo: NEW TRANSLATION
+ pensioned_beardless_hero: "Hrdina bez vousů v penzi" # todo: NEW TRANSLATION
+ promoting_the_cause_of_women: "Podpora ženské věci" # todo: NEW TRANSLATION
+ uncomfortable_presentation: "Nepříjemné představení" # todo: NEW TRANSLATION
+ home_of_the_beardless_hero: "Hrdina v penzi" # todo: NEW TRANSLATION
+ promoted_a_challenge_to_old_norms: "Podnítil zpochybnění starých pořádků" # todo: NEW TRANSLATION
+ researched_mid_game_feminism: "#todo Prozkoumán feminismus v polovině hry#!" # todo: NEW TRANSLATION
+ researched_late_game_psychoanalysis: "#todo Prozkoumána psychoanalýza v pozdní fázi hry" # todo: NEW TRANSLATION
+ notification_beardless_no_general_name: "Nabídka velení odmítnuta" # todo: NEW TRANSLATION
+ notification_beardless_no_general_desc: "Voják z [SCOPE.sState('beardless_soldier_home_state').GetNameNoFormatting] beze stopy zmizel a zjevně odmítl nabídku otevřeně sloužit jako žena v armádě země [SCOPE.sCountry('beardless_soldier_country').GetAdjectiveNoFormatting]." # todo: NEW TRANSLATION
+ notification_beardless_reluctant_general_name: "Nabídka velení přijata" # todo: NEW TRANSLATION
+ notification_beardless_reluctant_general_desc: "[SCOPE.sCharacter('reluctant_general').GetFullName] přijal nabídku stát se velitelem v armádě země [SCOPE.sCountry('beardless_soldier_country').GetAdjectiveNoFormatting], byť s nevysvětlitelnou neochotou." # todo: NEW TRANSLATION
+ notification_beardless_happy_general_name: "Nabídka velení přijata" # todo: NEW TRANSLATION
+ notification_beardless_happy_general_desc: "[SCOPE.sCharacter('happy_general').GetFullName] s nadšením přijal nabídku stát se velitelem v armádě země [SCOPE.sCountry('beardless_soldier_country').GetAdjectiveNoFormatting]." # todo: NEW TRANSLATION
  unable_to_enact.1.t: "Legislativní selhání"
  unable_to_enact.1.d: "Navzdory mnoha snahám vlády úspěšně vyvést zákon [SCOPE.sLaw('current_law_scope').GetName] z jeho současné šlamastyky začal být tento zákon považován za nic jiného než nevyhnutelné selhání."
  unable_to_enact.1.f: "„#italic Tenhle#! návrh? Prosím, o tom se se mnou nebavte.“\n\n„Řekl bych, že bude lepší prostě předstírat, že se to nikdy nestalo, souhlasíte?“\n\n„Jistě, ale tomu hlupákovi to nezabrání, aby se na něj ptal každý den...“"
@@ -760,3 +785,4 @@
  unable_to_enact.2.d: "Po sérii nákladných a trapných nezdarů se úřadující [ROOT.GetCountry.GetAdjective] vláda rozhodla zastavit snahu o prosazení zákona [SCOPE.sLaw('current_law_scope').GetName]. Nějakou dobu potrvá, než se znovu objeví politická vůle to zkusit."
  unable_to_enact.2.f: "Porážka visela ve vzduchu spolu se zápachem spáleného tabáku a kazícího se alkoholu. Naděje rozdrcené, myšlenky roztříštěné a touha zkažená. Ať už v dobrém, nebo ve zlém, poselství bylo jasné: [SCOPE.sLaw('current_law_scope').GetNameNoFormatting] nechtěl nikdo kromě mužů v místnosti.\n\nPřed nimi ležela dlouhá a zrádná cesta, jak myšlence znovu získat přízeň."
  unable_to_enact.2.a: "Politováníhodné a trapné."
+ unable_to_enact.3.d: "Nová [ROOT.GetCountry.GetAdjective] vláda nemá pro [SCOPE.sLaw('current_law_scope').GetName] žádnou skutečnou podporu. Prosazování zákona bylo odvoláno." # todo: NEW TRANSLATION

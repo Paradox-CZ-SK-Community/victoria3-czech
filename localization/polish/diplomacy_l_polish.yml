@@ -6,13 +6,14 @@
  PRESTIGE_FROM_SUBJECT_GDP: "#variable $VALUE|+=$#! z [Concept('concept_gdp','hrubého domácího produktu')] [Concept('concept_subject', 'závislých zemí')]" # todo: CONCEPT CASE
  PRESTIGE_FROM_SUBJECT_ARMY_POWER_PROJECTION: "#variable $VALUE|+=$#! z [Concept('concept_power_projection','projekce síly')] armády [Concept('concept_subject', 'závislých zemí')]"
  PRESTIGE_FROM_SUBJECT_NAVY_POWER_PROJECTION: "#variable $VALUE|+=$#! z [Concept('concept_power_projection','projekce síly')] námořnictva [Concept('concept_subject', 'závislých zemí')]"
+ PRESTIGE_FROM_DISBANDED_UNITS: "#variable $VALUE|+=$#! z nedávno rozpuštěných [Concept('concept_battalion', '$concept_battalions|q$')] a [Concept('concept_ship', '$concept_ships|q$')]" # todo: NEW TRANSLATION
  PRESTIGE_FROM_GOODS_LEADERBOARDS: "#tooltippable #tooltip:[Country.GetTooltipTag],PRESTIGE_FROM_GOODS_LEADERBOARDS_BREAKDOWN #v $VAL|+=$#!#!#! za to, že je předním výrobcem zboží"
  PRESTIGE_FROM_GOODS_LEADERBOARDS_BREAKDOWN: "[Country.GetGoodsLeaderboardDesc]"
  PRESTIGE_FROM_PRESTIGE_GOODS_LEADERBOARDS: "#tooltippable #tooltip:[Country.GetTooltipTag],PRESTIGE_FROM_PRESTIGE_GOODS_LEADERBOARDS_BREAKDOWN #v $VAL|+=$#!#!#! za to, že je popředním výrobcem [Concept('concept_prestige_good','prestižního zboží')]" # todo: CONCEPT CASE
  PRESTIGE_FROM_PRESTIGE_GOODS_LEADERBOARDS_BREAKDOWN: "[Country.GetPrestigeGoodsLeaderboardDesc]"
  NO_PRESTIGE_RANKING: "Tato [Concept('concept_country','země')] nemá žádné [Concept('concept_prestige','prestižní')] hodnocení kvůli #variable $COUNTRY_TYPE$#! statusu"
- ARMY_POWER_PROJECTION_DESC: "#header [Concept('concept_power_projection','Projekce síly')] $ADJECTIVE$ armády: $VALUE|v0$"
- NAVY_POWER_PROJECTION_DESC: "#header [Concept('concept_power_projection','Projekce síly')] $ADJECTIVE$ námořnictva: $VALUE|v0$"
+ ARMY_POWER_PROJECTION_DESC: "#tooltip_header [concept_army_power_projection]#!\n$VALUE|Dv$ pro $ADJECTIVE$ armádu\n$TOOLTIP_DELIMITER$\n$DETAILS$" # todo: CHANGED (predtym: header [Concept('concept_power_projection','Projekce síly')] $ADJECTIVE$ armády: $VALUE|v0$)
+ NAVY_POWER_PROJECTION_DESC: "#tooltip_header [concept_naval_power_projection]#!\n$VALUE|Dv$ pro $ADJECTIVE$ námořnictvo\n$TOOLTIP_DELIMITER$\n$DETAILS$" # todo: CHANGED (predtym: header [Concept('concept_power_projection','Projekce síly')] $ADJECTIVE$ námořnictva: $VALUE|v0$)
  great_power: "[Concept('concept_great_power','Velmoc')]"
  great_power_desc: "[concept_great_power_desc]"
  major_power: "[Concept('concept_major_power','Regionální mocnost')]"
@@ -54,6 +55,7 @@
  DIPLOMATIC_PACT_REQUIREMENT_MORE_TECHS_RESEARCHED: "[SCOPE.sCountry('actor').GetName] musí mít odemčeno více [Concept('concept_technology', 'technologií')] než [SCOPE.sCountry('target_country').GetName]"
  DIPLOMATIC_PACT_REQUIREMENT_HIGH_LIBERTY_DESIRE: "[SCOPE.sCountry('source_country').GetAltAdjective('aa')] [Concept('concept_liberty_desire','touha po svobodě')] musí být alespoň #v 25#!, nebo mít stejného [Concept('concept_overlord','vládce')|l]"
  DIPLOMATIC_PACT_REQUIREMENT_HIGHER_RANK_OR_SAME_OVERLORD: "[SCOPE.sCountry('source_country').GetName] musí být [SCOPE.sCountry('target_country').GetRank] nebo vyšší, anebo mít stejného nadvládce"
+ DIPLOMATIC_PACT_REQUIREMENT_NOT_HUMILIATED_BY_OVERLORD: "[SCOPE.sCountry('source_country').GetName] nesmí být [Concept('concept_humiliation', '$concept_humiliated|q$')] od [SCOPE.sCountry('target_country').GetOverlord.GetName] nebo svého [concept_overlord]" # todo: NEW TRANSLATION
  DIPLOMATIC_PACT_REQUIREMENT_TARGET_HIGH_LIBERTY_DESIRE: "[SCOPE.sCountry('target_country').GetAltAdjective('aa')] [Concept('concept_liberty_desire','touha po svobodě')] musí být alespoň [GetDefine('NDiplomacy','WAR_GOAL_INCREASE_AUTONOMY_MIN_LIBERTY_DESIRE')]"
  DIPLOMATIC_PACT_REQUIREMENT_DURATION_NOT_EXPIRED: "Doba trvání vynuceného [Concept('concept_diplomatic_pact','diplomatického paktu')] ještě nevypršela"
  DIPLOMATIC_PACT_REQUIREMENT_NOT_DECENTRALIZED: "Ani jedna ze dvou [Concept('concept_country', 'zemí')] není [Concept('concept_decentralized_nation','decentralizovaným národem')]" # todo: CHANGED (predtym: Ani jedna ze dvou [Concept('concept_country', 'zemí')] není [Concept('concept_decentralized_nation','decentalizovaným ná)
@@ -63,6 +65,7 @@
  DIPLOMATIC_PACT_REQUIREMENT_AT_PEACE: "Obě [Concept('concept_country', 'země')] nesmí být na opačných stranách ve [Concept('concept_war','válce')]"
  DIPLOMATIC_PACT_REQUIREMENT_SUBJECT_WITH_INCOME_TRANSFER: "Tato [Concept('concept_subject','závislá země')] je typu, který platí tribut svému [Concept('concept_overlord','vládci')]"
  DIPLOMATIC_PACT_REQUIREMENT_NO_SUPPORT_FOR_INDEPENDENCE: "Nezávislost [Concept('concept_subject','závislých zemí')] je podporována"
+ DIPLOMATIC_PACT_REQUIREMENT_CAN_BE_SUBJUGATED: "Cílovou [concept_country] lze [Concept('concept_subject','podrobit')]" # todo: NEW TRANSLATION
  EQUAL_OR_BETTER_RANK_THAN_TARGET: "[SCOPE.sCountry('actor').GetName] má rovný nebo vyšší [Concept('concept_rank','hodnost')|l] než [SCOPE.sCountry('target_country').GetName] ([SCOPE.sCountry('target_country').GetRank])"
  DIPLO_ACTION_RELATIONS: "[Concept('concept_relations','Vztahy')] mezi [SCOPE.GetRootScope.GetCountry.GetAltAdjective('I')] a [SCOPE.sC('target_country').GetAltAdjective('I')]"
  DIPLO_ACTION_RELATIONS_CORDIAL: "$DIPLO_ACTION_RELATIONS$ jsou $relations_cordial$"
@@ -85,8 +88,8 @@
  DIPLO_ACTION_RELATIONS_POOR_OR_LESS_NOT: "$DIPLO_ACTION_RELATIONS$ jsou nad $relations_poor$"
  DIPLO_ACTION_RELATIONS_COLD_OR_LESS: "$DIPLO_ACTION_RELATIONS$ na nebo pod $relations_cold$"
  DIPLO_ACTION_RELATIONS_COLD_OR_LESS_NOT: "$DIPLO_ACTION_RELATIONS$ jsou nad $relations_cold$"
- DIPLO_ACTION_MARKET_CONNECTION_REQUIRED: "Musíme mít buď pozemní spojení mezi našimi [Concept('concept_market_capital','hlavními centrami trhu')] nebo být schopni vytvořit [Concept('concept_port_connection','přístavní spojení')|l] k [SCOPE.sC('target_country').GetCapital.GetMarket.GetName]"
- DIPLO_ACTION_MARKET_CONNECTION_REQUIRED_CHANGE: "Musíme mít buď pozemní spojení mezi našimi [Concept('concept_market_capital','hlavními centrami trhu')] nebo být schopni vytvořit [Concept('concept_port_connection','přístavní spojení')|l] k [SCOPE.sC('target_country').GetCapital.GetName]"
+ DIPLO_ACTION_MARKET_CONNECTION_REQUIRED: "Musíme mít buď pozemní spojení mezi našimi [Concept('concept_market_capital','hlavními centrami trhu')] nebo být schopni vytvořit [Concept('concept_port_connection','přístavní spojení')|l] k [SCOPE.sC('target_country').GetCapital.GetMarket.GetName]" # todo: CHANGED (predtym: Musíme mít buď pozemní spojení mezi našimi [Concept('concept_market_capital','hlavními centry trhu')] nebo být schopni v)
+ DIPLO_ACTION_MARKET_CONNECTION_REQUIRED_CHANGE: "Musíme mít buď pozemní spojení mezi našimi [Concept('concept_market_capital','hlavními centrami trhu')] nebo být schopni vytvořit [Concept('concept_port_connection','přístavní spojení')|l] k [SCOPE.sC('target_country').GetCapital.GetName]" # todo: CHANGED (predtym: Musíme mít buď pozemní spojení mezi našimi [Concept('concept_market_capital','hlavními centry trhu')] nebo být schopni v)
  DIPLO_ACTION_OVERLORD_RELATIONS: "[Concept('concept_relations','Vztahy')] mezi [SCOPE.GetRootScope.GetCountry.GetAltAdjective('I')] a [SCOPE.sC('target_country').GetOverlord.GetAltAdjective('I')]"
  DIPLO_ACTION_OVERLORD_RELATIONS_CORDIAL: "$DIPLO_ACTION_OVERLORD_RELATIONS$ jsou $relations_cordial$"
  DIPLO_ACTION_OVERLORD_RELATIONS_CORDIAL_NOT: "$DIPLO_ACTION_OVERLORD_RELATIONS$ NENÍ $relations_cordial$"
@@ -222,6 +225,111 @@
  AI_WILL_ACCEPT_ENTRY_FORMAT: "$SCRIPT_VALUE_KEY_AFTER_FORMAT$"
  AI_DIPLOMATIC_PLAY_SUPPORT_FORMAT: "$VALUE|+=0$ z $KEY$"
  AI_REGION_STANCE_STRATEGY_VALUE_FORMAT: "$VALUE|+=0$ z $KEY$" # todo: NEW TRANSLATION
+ STATE_VALUE_FORMAT: "$VALUE|+=0$ z: $KEY$" # todo: NEW TRANSLATION
+ STATE_VALUE_CLAMP_MIN: "Minimální hodnota" # todo: NEW TRANSLATION
+ STATE_VALUE_CLAMP_MAX: "Dosaženo maximální hodnoty pro [concept_state]" # todo: NEW TRANSLATION
+ STATE_VALUE_CLAMP_OWNED: "Maximální hodnota pro vlastní [concept_state]" # todo: NEW TRANSLATION
+ STATE_VALUE_CLAMP_FOREIGN: "Maximální hodnota pro cizí [concept_state]" # todo: NEW TRANSLATION
+ STATE_VALUE_BASE_DESIRE: "Základní hodnota" # todo: NEW TRANSLATION
+ STATE_VALUE_POPULATION: "[Concept('concept_pop', '$concept_population|q$')] státu" # todo: NEW TRANSLATION
+ STATE_VALUE_GDP: "[concept_gdp] státu" # todo: NEW TRANSLATION
+ STATE_VALUE_TREATY_PORT: "[concept_treaty_port]" # todo: NEW TRANSLATION
+ STATE_VALUE_CAN_INCORPORATE: "Lze [Concept('concept_incorporated_state', '$concept_incorporated|q$')]" # todo: NEW TRANSLATION
+ STATE_VALUE_CONTROLS_STRAIT: "Ovládá [concept_strait]" # todo: NEW TRANSLATION
+ STATE_VALUE_HOMELAND_FERVOR: "[concept_fervor] pro vlastní [concept_homeland]" # todo: NEW TRANSLATION
+ STATE_VALUE_INCORPORATED_HOMELAND_RELUCTANCE: "Vlastní [concept_homeland] v [Concept('concept_incorporated_state', '$concept_incorporated|q$')]" # todo: NEW TRANSLATION
+ STATE_VALUE_INCORPORATED_RELUCTANCE: "Vlastní $concept_state$ v [Concept('concept_incorporated_state', '$concept_incorporated|q$')]" # todo: NEW TRANSLATION
+ STATE_VALUE_NEXT_TO_INCORPORATED_HOMELAND: "Vlastní [concept_homeland] sousedící se [Concept('concept_incorporated_state', '$concept_incorporated|q$')] $concept_state$" # todo: NEW TRANSLATION
+ STATE_VALUE_NEXT_TO_INCORPORATED: "Vlastní stát sousedící se [Concept('concept_incorporated_state', '$concept_incorporated|q$')] státem" # todo: NEW TRANSLATION
+ STATE_VALUE_OWN_HOMELAND: "Vlastní [concept_homeland]" # todo: NEW TRANSLATION
+ STATE_VALUE_OWN_STATE: "Vlastní [concept_state]" # todo: NEW TRANSLATION
+ STATE_VALUE_ISOLATED_FROM_MARKET: "Izolován od [concept_market]" # todo: NEW TRANSLATION
+ STATE_VALUE_ISOLATED_NO_NEIGHBOUR: "Izolován, bez sousedního vlastního $concept_state$" # todo: NEW TRANSLATION
+ STATE_VALUE_SPLIT_STATE_OR_CLAIM: "Rozdělený $concept_state$ nebo [Concept('concept_claim', '$concept_claimed|q$')]" # todo: NEW TRANSLATION
+ STATE_VALUE_CLAIM: "[Concept('concept_claim', '$concept_claimed|q$')] $concept_state$" # todo: NEW TRANSLATION
+ STATE_VALUE_UNREACHABLE_INLAND: "$concept_state$ je vnitrozemský a nedosažitelný" # todo: NEW TRANSLATION
+ STATE_VALUE_UNREACHABLE: "$concept_state$ je nedosažitelný" # todo: NEW TRANSLATION
+ STATE_VALUE_DOES_NOT_WANT_THIS_STATE: "Tento $concept_state$ #b nechce#!" # todo: NEW TRANSLATION
+ STATE_VALUE_NOT_STRATEGICALLY_ADJACENT: "$concept_state$ nesousedí strategicky" # todo: NEW TRANSLATION
+ STATE_VALUE_NOT_ADJACENT_TO_STATE: "Nesousedí přímo se samotným $concept_state$" # todo: NEW TRANSLATION
+ STATE_VALUE_ALREADY_IN_PLAY_WEAK_DESIRE: "Již se účastní [concept_diplomatic_play] a o $concept_state$ nemá silný zájem" # todo: NEW TRANSLATION
+ STATE_VALUE_FOREIGN_HOMELAND: "Cizí $concept_state$ na našem [concept_homeland]" # todo: NEW TRANSLATION
+ STATE_VALUE_LENIENT_BEHAVIOR: "Shovívavý vůči [concept_homeland] vlastníka" # todo: NEW TRANSLATION
+ STATE_VALUE_ARMED_ISOLATIONISM: "#v $ai_strategy_armed_isolationism$#! [concept_ai_strategy]" # todo: NEW TRANSLATION
+ STATE_VALUE_NO_CHINESE_CORE: "Nezabírá čínské domovské $concept_states$" # todo: NEW TRANSLATION
+ STATE_VALUE_SCHLESWIG_HOLSTEIN: "#v $je_schleswig_holstein_question$#! [concept_journal_entry]" # todo: NEW TRANSLATION
+ STATE_VALUE_SCHLESWIG_HOLSTEIN_FOCUS: "Zaměřuje se na #v $je_schleswig_holstein_question$#! [concept_journal_entry]" # todo: NEW TRANSLATION
+ STATE_VALUE_JAPAN_CONSOLIDATION: "Sjednocování #b Japonska#!" # todo: NEW TRANSLATION
+ STATE_VALUE_RUSSIAN_STEPPE: "Ruská expanze do #b stepí#!" # todo: NEW TRANSLATION
+ STATE_VALUE_RUSSIAN_SUBJECT_ABSORPTION: "Sjednocování #b Kavkazu#!" # todo: NEW TRANSLATION
+ STATE_VALUE_RUSSIAN_STRAITS: "Ambice v oblasti #b průlivů#!" # todo: NEW TRANSLATION
+ STATE_VALUE_DEI_INDONESIA: "Sjednocování #b Indonésie#!" # todo: NEW TRANSLATION
+ STATE_VALUE_STRENGTHEN_SOUTH_AFRICA: "Posilování #b Jižní Afriky#!" # todo: NEW TRANSLATION
+ STATE_VALUE_PORTUGUESE_MOZAMBIQUE: "Ambice v #b Mosambiku#!" # todo: NEW TRANSLATION
+ STATE_VALUE_UNIFY_GERMANY: "#v $ai_strategy_unify_germany$#! [concept_ai_strategy]" # todo: NEW TRANSLATION
+ STATE_VALUE_UNIFY_ITALY: "#v $ai_strategy_unify_italy$#! [concept_ai_strategy]" # todo: NEW TRANSLATION
+ STATE_VALUE_UNIFY_ETHIOPIA: "#v $ai_strategy_unify_ethiopia$#! [concept_ai_strategy]" # todo: NEW TRANSLATION
+ STATE_VALUE_UNIFY_CHINA: "#v $ai_strategy_unify_china$#! [concept_ai_strategy]" # todo: NEW TRANSLATION
+ STATE_VALUE_PRUSSIA_OF_THE_BALKANS: "#v $ai_strategy_prussia_of_the_balkans$#! [concept_ai_strategy]" # todo: NEW TRANSLATION
+ STATE_VALUE_JE_BOXER_REBELLION: "#v $je_boxer_rebellion$#! [concept_journal_entry]" # todo: NEW TRANSLATION
+ STATE_VALUE_JE_GREEK_NATIONALISM: "#v $je_greek_nationalism$#! [concept_journal_entry]" # todo: NEW TRANSLATION
+ STATE_VALUE_JE_EASTERN_QUESTION: "#v $je_eastern_question_austria$#! [concept_journal_entry]" # todo: NEW TRANSLATION
+ STATE_VALUE_JE_CONSOLIDATE_COLONIAL_RULE: "#v $je_consolidate_colonial_rule$#! [concept_journal_entry]" # todo: NEW TRANSLATION
+ STATE_VALUE_JE_PARAGUAY_CORE: "#v $je_expanding_paraguay$#! [concept_journal_entry]" # todo: NEW TRANSLATION
+ STATE_VALUE_JE_PARAGUAY_SECONDARY: "$STATE_VALUE_JE_PARAGUAY_CORE$" # todo: NEW TRANSLATION
+ STATE_VALUE_JE_AGE_OF_PRINCES: "#v $je_age_of_princes$#! [concept_journal_entry]" # todo: NEW TRANSLATION
+ STATE_VALUE_JE_UNIFY_AFGHANISTAN: "#v $je_unify_afghanistan$#! [concept_journal_entry]" # todo: NEW TRANSLATION
+ STATE_VALUE_JE_EASTERN_FRONTIER: "#v $je_eastern_frontier$#! [concept_journal_entry]" # todo: NEW TRANSLATION
+ STATE_VALUE_JE_MANIFEST_DESTINY: "#v $manifest_destiny$#! [concept_journal_entry]" # todo: NEW TRANSLATION
+ STATE_VALUE_JE_MANIFEST_DESTINY_ADJACENT: "$STATE_VALUE_JE_MANIFEST_DESTINY$" # todo: NEW TRANSLATION
+ STATE_VALUE_JE_CONQUER_OREGON: "#v $je_conquer_oregon$#! [concept_journal_entry]" # todo: NEW TRANSLATION
+ STATE_VALUE_JE_ALASKA: "#v $je_alaska$#! [concept_journal_entry]" # todo: NEW TRANSLATION
+ STATE_VALUE_JE_EASTERN_BORDER: "#v $je_the_eastern_border$#! [concept_journal_entry]" # todo: NEW TRANSLATION
+ STATE_VALUE_JE_CONQUEST_OF_ALGERIA: "#v $je_conquest_of_algeria$#! [concept_journal_entry]" # todo: NEW TRANSLATION
+ STATE_VALUE_JE_CENTRAL_ASIA: "#v $je_conquest_of_central_asia$#! [concept_journal_entry]" # todo: NEW TRANSLATION
+ STATE_VALUE_JE_FRENCH_NATURAL_BORDERS: "#v $je_french_natural_borders$#! [concept_journal_entry]" # todo: NEW TRANSLATION
+ STATE_VALUE_JE_KRAKOW_UPRISING: "#v $je_the_krakow_uprising$#! [concept_journal_entry]" # todo: NEW TRANSLATION
+ STATE_VALUE_JE_CONQUEST_OF_TETOUAN: "#v $je_conquest_of_tetouan$#! [concept_journal_entry]" # todo: NEW TRANSLATION
+ STATE_VALUE_JE_HIGHVELD: "#v $je_struggle_for_the_highveld$#! [concept_journal_entry]" # todo: NEW TRANSLATION
+ STATE_VALUE_JE_OPIUM_WARS: "#v $je_opium_wars$#! [concept_journal_entry]" # todo: NEW TRANSLATION
+ STATE_VALUE_JE_HAWAII: "#v $je_hawaiian_interest$#! [concept_journal_entry]" # todo: NEW TRANSLATION
+ STATE_VALUE_AMBITION: "Proveditelnost dobytí $concept_state$" # todo: NEW TRANSLATION
+ STATE_VALUE_NOT_INTEREST_IN_REGION: "Nedostatečný zájem o [concept_strategic_region]" # todo: NEW TRANSLATION
+ STATE_VALUE_PRIMARY_CULTURES_PERCENT: "Podíl [Concept('concept_pop', '$concept_pops|q$')] [concept_primary_cultures] v $concept_state$" # todo: NEW TRANSLATION
+ STATE_VALUE_VALUABLE_RESOURCE_POTENTIAL: "Obsahuje cenné [Concept('concept_resource_potential', '$concept_resource_potentials|q$')]" # todo: NEW TRANSLATION
+ STATE_VALUE_INVALID_TARGET: "Hráčova země v #b tutoriálu#!" # todo: NEW TRANSLATION
+ STATE_VALUE_MAINTAIN_POWER_BALANCE_CLAIM: "Upřednostňuje nároky kvůli strategii #v $ai_strategy_maintain_power_balance$#! [concept_ai_strategy]" # todo: NEW TRANSLATION
+ STATE_VALUE_MAINTAIN_POWER_BALANCE_NO_OPPORTUNISM: "Upřednostňuje vyhýbání se přímým výbojům kvůli strategii #v $ai_strategy_maintain_power_balance$#! [concept_ai_strategy]" # todo: NEW TRANSLATION
+ STATE_VALUE_TERRITORIAL_EXPANSION_BORDER: "Upřednostňuje dobývání kvůli strategii #v $ai_strategy_territorial_expansion$#! [concept_ai_strategy]" # todo: NEW TRANSLATION
+ STATE_VALUE_TERRITORIAL_EXPANSION_HOMELAND: "Chce dobýt [Concept('concept_homeland','$concept_homelands|q$')] kvůli strategii #v $ai_strategy_territorial_expansion$#! [concept_ai_strategy]" # todo: NEW TRANSLATION
+ STATE_VALUE_COLONIAL_EXPANSION_COLONIAL_TARGET: "Usiluje o koloniální území kvůli strategii #v $ai_strategy_colonial_expansion$#! [concept_ai_strategy]" # todo: NEW TRANSLATION
+ STATE_VALUE_COLONIAL_EXPANSION_RECOGNISED_OWNER: "Snaží se vyhnout konfliktu s [Concept('concept_recognized_power','$concept_recognized_powers|q$')] kvůli strategii #v $ai_strategy_colonial_expansion$#! [concept_ai_strategy]" # todo: NEW TRANSLATION
+ STATE_VALUE_ARMED_ISOLATIONISM_NO_AMBITION: "Kvůli strategii #v $ai_strategy_armed_isolationism$#! [concept_ai_strategy]" # todo: NEW TRANSLATION
+ STATE_VALUE_ECONOMIC_IMPERIALISM_PREFERS_TRADE: "Raději by otevřel tento [concept_market], než aby ho dobyl, kvůli strategii #v $ai_strategy_economic_imperialism$#! [concept_ai_strategy]" # todo: NEW TRANSLATION
+ STATE_VALUE_SOCIALISM_IN_ONE_COUNTRY_NO_AMBITION: "Zaměřuje se na vnitřní záležitosti kvůli strategii #v $ai_strategy_socialism_in_one_country$#! [concept_ai_strategy]" # todo: NEW TRANSLATION
+ STATE_VALUE_ANTI_IMPERIALISM_NO_COLONIES: "Netouží po koloniích kvůli strategii #v $ai_strategy_anti_imperialism$#! [concept_ai_strategy]" # todo: NEW TRANSLATION
+ STATE_VALUE_RESTORE_NATURAL_BORDERS_HOMELAND: "Silně touží po [Concept('concept_homeland','$concept_homelands|q$')] kvůli strategii #v $ai_strategy_restore_natural_borders$#! [concept_ai_strategy]" # todo: NEW TRANSLATION
+ STATE_VALUE_RESTORE_NATURAL_BORDERS_CLAIM: "Silně touží po nárocích kvůli strategii #v $ai_strategy_restore_natural_borders$#! [concept_ai_strategy]" # todo: NEW TRANSLATION
+ STATE_VALUE_RESTORE_NATURAL_BORDERS_NOT_OURS: "Nemá zájem o žádné státy mimo $FRA_ADJ$ kvůli strategii #v $ai_strategy_restore_natural_borders$#! [concept_ai_strategy]" # todo: NEW TRANSLATION
+ AI_STRATEGY_SUPPORT_BALANCE_WEAKER_SIDE: "Má sklon podporovat slabší stranu kvůli strategii #v $ai_strategy_maintain_power_balance$#! [concept_ai_strategy]" # todo: NEW TRANSLATION
+ AI_STRATEGY_SUPPORT_BALANCE_RESTRAIN_INFAMOUS: "Chce omezovat hanebné země kvůli strategii #v $ai_strategy_maintain_power_balance$#! [concept_ai_strategy]" # todo: NEW TRANSLATION
+ AI_STRATEGY_SUPPORT_BALANCE_RIVAL_BLOC: "Méně ochotně pomáhá členovi konkurenčního [concept_power_bloc] kvůli strategii #v $ai_strategy_maintain_power_balance$#! [concept_ai_strategy]" # todo: NEW TRANSLATION
+ AI_STRATEGY_SUPPORT_EXPANSION_WEAKEN_NEIGHBOUR: "Méně ochotně podporuje potenciální cíl vlastních výbojů kvůli strategii #v $ai_strategy_territorial_expansion$#! [concept_ai_strategy]" # todo: NEW TRANSLATION
+ AI_STRATEGY_SUPPORT_EXPANSION_DISTANT_QUARREL: "Méně se zajímá o vzdálené konflikty kvůli strategii #v $ai_strategy_territorial_expansion$#! [concept_ai_strategy]" # todo: NEW TRANSLATION
+ AI_STRATEGY_SUPPORT_COLONIAL_DENY_RIVAL: "Chce zabránit rivalovi získat opěrný bod v potenciální kolonii kvůli strategii #v $ai_strategy_colonial_expansion$#! [concept_ai_strategy]" # todo: NEW TRANSLATION
+ AI_STRATEGY_SUPPORT_COLONIAL_NOT_OUR_CONCERN: "Méně se zajímá o nekoloniální konflikty kvůli strategii #v $ai_strategy_colonial_expansion$#! [concept_ai_strategy]" # todo: NEW TRANSLATION
+ AI_STRATEGY_SUPPORT_ISOLATIONIST_NOT_OUR_WAR: "Kvůli strategii #v $ai_strategy_armed_isolationism$#! [concept_ai_strategy]" # todo: NEW TRANSLATION
+ AI_STRATEGY_SUPPORT_ISOLATIONIST_UNEASY_NEIGHBOUR: "Znepokojuje ji silná mocnost v sousedství kvůli strategii #v $ai_strategy_armed_isolationism$#! [concept_ai_strategy]" # todo: NEW TRANSLATION
+ AI_STRATEGY_SUPPORT_SOCIALISM_FELLOW_RADICAL: "Má sklon podporovat ostatní socialisty kvůli strategii #v $ai_strategy_socialism_in_one_country$#! [concept_ai_strategy]" # todo: NEW TRANSLATION
+ AI_STRATEGY_SUPPORT_SOCIALISM_OLD_ORDER_QUARREL: "Méně ochotně se zapojuje do buržoazních konfliktů kvůli strategii #v $ai_strategy_socialism_in_one_country$#! [concept_ai_strategy]" # todo: NEW TRANSLATION
+ AI_STRATEGY_SUPPORT_WORLD_REVOLUTION_COMRADES: "Silně nakloněn podpoře ostatních socialistů kvůli #v $ai_strategy_world_revolution$#! [concept_ai_strategy]" # todo: NEW TRANSLATION
+ AI_STRATEGY_SUPPORT_WORLD_REVOLUTION_ANTI_EMPIRE: "Oponuje imperialistickým silám kvůli #v $ai_strategy_world_revolution$#! [concept_ai_strategy]" # todo: NEW TRANSLATION
+ AI_STRATEGY_SUPPORT_ANTI_IMPERIALISM_DEFEND_VICTIM: "Oponuje imperialistickým silám kvůli #v $ai_strategy_anti_imperialism$#! [concept_ai_strategy]" # todo: NEW TRANSLATION
+ AI_STRATEGY_SUPPORT_ANTI_IMPERIALISM_NOTORIOUS_AGGRESSOR: "Oponuje nechvalně známému agresorovi kvůli #v $ai_strategy_anti_imperialism$#! [concept_ai_strategy]" # todo: NEW TRANSLATION
+ AI_STRATEGY_SUPPORT_NATURAL_BORDERS_AGAINST_OCCUPIER: "Oponuje držitelům území $FRA_ADJ$ kvůli #v $ai_strategy_restore_natural_borders$#! [concept_ai_strategy]" # todo: NEW TRANSLATION
+ AI_STRATEGY_SUPPORT_BREAK_FREE_ENEMY_OF_OVERLORD: "Nakloněn podpoře nepřítele vlastního lenního pána kvůli #v $ai_strategy_subject_break_free$#! [concept_ai_strategy]" # todo: NEW TRANSLATION
+ AI_STRATEGY_SUPPORT_STRENGTHEN_SELF_OVERLORD_DISTRACTED: "Nakloněn podpoře nepřítele vlastního lenního pána kvůli #v $ai_strategy_subject_strengthen_self$#! [concept_ai_strategy]" # todo: NEW TRANSLATION
+ AI_STRATEGY_SUPPORT_COMPLIANCE_FOLLOW_OVERLORD: "Nakloněn podpoře vlastního lenního pána kvůli #v $ai_strategy_subject_overlord_compliance$#! [concept_ai_strategy]" # todo: NEW TRANSLATION
  DIPLOMATIC_ACCEPTANCE_TREATY_FAIRNESS: "za vnímanou spravedlnost aktuální [Concept('concept_treaty', 'smlouvy')]"
  DIPLOMATIC_ACCEPTANCE_RELATIONS: "z toho, že [SCOPE.GetRootScope.GetCountry.GetAltAdjectiveNoFormatting('o')]-[SCOPE.sCountry('actor').GetAltAdjectiveNoFormatting('ee')] [Concept('concept_relations','vztahy')] jsou [SCOPE.GetRootScope.GetCountry.GetRelationsWithDesc(SCOPE.sCountry('actor'))]"
  DIPLOMATIC_ACCEPTANCE_ARMY_STRENGTH: "z [Concept('concept_power_projection','projekce síly')] [SCOPE.sCountry('target').GetAltAdjectiveNoFormatting('ee')|l] armády v porovnání s naší"
@@ -272,7 +380,8 @@
  DIPLOMATIC_ACCEPTANCE_TARGET_ECONOMIC_DEPENDENCE: "z [Concept('concept_economic_dependence','ekonomické závislosti')] [SCOPE.GetRootScope.GetCountry.GetAltAdjectiveNoFormatting('A')] na [Concept('concept_overlord','vládci')]"
  DIPLOMATIC_ACCEPTANCE_ACTOR_LIBERTY_DESIRE: "z [Concept('concept_liberty_desire','touhy po svobodě')] [SCOPE.sCountry('actor').GetNameNoFormatting]" # todo: CONCEPT CASE
  DIPLOMATIC_ACCEPTANCE_TARGET_LIBERTY_DESIRE: "z [Concept('concept_liberty_desire','touhy po svobodě')] [SCOPE.GetRootScope.GetCountry.GetAltAdjectiveNoFormatting('G')]"
- DIPLOMATIC_ACCEPTANCE_ACTOR_CAPITAL_MARKET_ACCESS: "z přístupu na trh hlavního města [SCOPE.sCountry('other_country').GetCapital.GetNameNoFormatting]"
+ DIPLOMATIC_ACCEPTANCE_ACTOR_CAPITAL_MARKET_ACCESS: "z [concept_market_access] hlavního města [SCOPE.sCountry('actor').GetCapital.GetNameNoFormatting]" # todo: CHANGED (predtym: z přístupu na trh hlavního města [SCOPE.sCountry('other_country').GetCapital.GetNameNoFormatting])
+ DIPLOMATIC_ACCEPTANCE_PRESTIGE_DIFFERENCE: "na základě rozdílu v [concept_prestige] mezi [SCOPE.sCountry('actor').GetNameNoFormatting] ([SCOPE.sCountry('actor').GetPrestige|v]) a [SCOPE.GetRootScope.GetCountry.GetNameNoFormatting] ([SCOPE.GetRootScope.GetCountry .GetPrestige|v])" # todo: NEW TRANSLATION
  DIPLOMATIC_ACCEPTANCE_BASE: "Základní neochota"
  DIPLOMATIC_ACCEPTANCE_IDEOLOGICAL_OPINION: "ideologické podobnosti našich [Concept('concept_government','vlád')]"
  DIPLOMATIC_ACCEPTANCE_ISOLATIONIST: "usilují o [Concept('concept_ai_strategy','strategii')] #v $ai_strategy_armed_isolationism$#!"
@@ -281,6 +390,8 @@
  DIPLOMATIC_ACCEPTANCE_GDP_INVESTMENT: "z relativní velikosti [Concept('concept_gdp','hrubý domácí produkt')] [Concept('concept_subject','závislá země')]"
  DIPLOMATIC_ACCEPTANCE_DECREASED_COHESION: "ze snížení [Concept('concept_power_bloc_cohesion','soudružnosti')], pokud se [SCOPE.sCountry('target').GetName] připojí"
  DIPLOMATIC_ACCEPTANCE_ATTITUDE: "z [SCOPE.sCountry('target').GetAltAdjectiveNoFormatting('eeho')|l] [Concept('concept_attitude','postoje')] vůči [SCOPE.sCountry('actor').GetAltAdjective('D')], který je [SCOPE.sCountry('target').GetAttitudeTowards(SCOPE.sCountry('actor')).GetName]"
+ DIPLOMATIC_ACCEPTANCE_OVERLORD_ATTITUDE: "na základě [concept_attitude] [SCOPE.sCountry('target').GetTopOverlord.GetAdjectiveNoFormatting] vůči [SCOPE.sCountry('actor').GetName]" # todo: NEW TRANSLATION
+ DIPLOMATIC_ACCEPTANCE_WOULD_ISOLATE_STATES: "na základě vytvoření [Concept('concept_isolated_state', '$concept_isolated_states|q$')]" # todo: NEW TRANSLATION
  DIPLOMATIC_ACCEPTANCE_FROM_IDENTITY: "z [SCOPE.sCountry('actor').GetPowerBloc.GetIdentity.GetName]"
  DIPLOMATIC_ACCEPTANCE_RANK: "z [SCOPE.sCountry('target').GetAltAdjectiveNoFormatting('ee')|l] [Concept('concept_rank','hodnosti')] ([SCOPE.sCountry('target').GetRank]) ve srovnání s [SCOPE.sCountry('actor').GetAltAdjectiveNoFormatting('ou')|l] [Concept('concept_rank','hodností')] ([SCOPE.sCountry('actor').GetRank])"
  DIPLOMATIC_ACCEPTANCE_HIGH_GDP: "z rozdílu v HDP: [SCOPE.sCountry('target').GetAltAdjective('ee')] HDP přesahuje #v @money!2.0M#!"
@@ -295,13 +406,13 @@
  DIPLOMATIC_ACCEPTANCE_GDP: "z [SCOPE.sCountry('target').GetAltAdjectiveNoFormatting('eeho')|l] HDP (@money![SCOPE.sCountry('target').GetGDP|Dv]) ve srovnání s naším HDP (@money![SCOPE.sCountry('actor').GetGDP|Dv])"
  DIPLOMATIC_ACCEPTANCE_NEIGHBORS: "z toho že jsme [Concept('concept_neighbors','sousedi')] s [SCOPE.sCountry('target').GetAltAdjective('I')]"
  DIPLOMATIC_ACCEPTANCE_LOW_CONSTRUCTION: "z toho, že [SCOPE.sCountry('target').GetNameNoFormatting] má omezené stavební kapacity"
- DIPLOMATIC_ACCEPTANCE_ALLIED_TO_RIVALS: "z toho že máme [Concept('concept_alliance','aliance')|l] nebo [Concept('concept_defensive_pact','obranné pakty')|l] se spojenci [SCOPE.sCountry('target').GetAltAdjectiveNoFormatting('yych')] [Concept('concept_rivalry','rivalů')]"
- DIPLOMATIC_ACCEPTANCE_ALLIED_TO_ALLIES: "z toho že máme [Concept('concept_alliance','aliance')|l] nebo [Concept('concept_defensive_pact','obranné pakty')|l] s [SCOPE.sCountry('target').GetAltAdjectiveNoFormatting('yymi')] spojenci"
+ DIPLOMATIC_ACCEPTANCE_ALLIED_TO_RIVALS: "z toho že máme [Concept('concept_alliance','aliance')|l] nebo [Concept('concept_defensive_pact','obranné pakty')|l] se spojenci [SCOPE.sCountry('target').GetAltAdjectiveNoFormatting('yych')] [Concept('concept_rivalry','rivalů')]" # todo: CHANGED (predtym: z toho že máme [Concept('concept_alliance','aliance')|l] nebo [Concept('concept_defensive_pact','obranné pakty')|l] se s)
+ DIPLOMATIC_ACCEPTANCE_ALLIED_TO_ALLIES: "z toho že máme [Concept('concept_alliance','aliance')|l] nebo [Concept('concept_defensive_pact','obranné pakty')|l] s [SCOPE.sCountry('target').GetAltAdjectiveNoFormatting('yymi')] spojenci" # todo: CHANGED (predtym: z toho že máme [Concept('concept_alliance','aliance')|l] nebo [Concept('concept_defensive_pact','obranné pakty')|l] s [S)
  DIPLOMATIC_ACCEPTANCE_SHARED_RIVALS: "z toho, že máme společné [Concept('concept_rivalry','rivaly')]"
- DIPLOMATIC_ACCEPTANCE_NUM_ALLIES: "z počtu [SCOPE.sCountry('target').GetAltAdjectiveNoFormatting('yych')] [Concept('concept_alliance','alianci')]" # todo: CHANGED (predtym: z počtu [SCOPE.sCountry('target').GetAltAdjectiveNoFormatting('yych')] [Concept('concept_alliance','aliancii')])
+ DIPLOMATIC_ACCEPTANCE_NUM_ALLIES: "z počtu [SCOPE.sCountry('target').GetAltAdjectiveNoFormatting('yych')] [Concept('concept_alliance','alianci')]" # todo: CHANGED (predtym: z počtu [SCOPE.sCountry('target').GetAdjectiveNoFormatting] [Concept('concept_alliance','alianci')])
  DIPLOMATIC_ACCEPTANCE_NUM_MILITARY_ASSISTANCE_PACTS: "z počtu [SCOPE.sCountry('actor').GetAltAdjectiveNoFormatting('yych')] vojenských dohod o pomoci ([Concept('concept_military_assistance','vojenská pomoc')])"
  DIPLOMATIC_ACCEPTANCE_NUM_MILITARY_ASSISTANCE_PACTS_TARGET: "z počtu [SCOPE.sCountry('target').GetAltAdjectiveNoFormatting('yych')] vojenských dohod o pomoci ([Concept('concept_military_assistance','vojenská pomoc')])"
- DIPLOMATIC_ACCEPTANCE_NUM_DEFENSIVE_PACTS: "z počtu [SCOPE.sCountry('target').GetAltAdjectiveNoFormatting('yych')] [Concept('concept_defensive_pact','defenzivních paktů')]"
+ DIPLOMATIC_ACCEPTANCE_NUM_DEFENSIVE_PACTS: "z počtu [SCOPE.sCountry('target').GetAltAdjectiveNoFormatting('yych')] [Concept('concept_defensive_pact','defenzivních paktů')]" # todo: CHANGED (predtym: z počtu [SCOPE.sCountry('target').GetAdjectiveNoFormatting] [Concept('concept_defensive_pact','defenzivních paktů')])
  DIPLOMATIC_ACCEPTANCE_DEFENSIVE_PACT: "z existujícího [Concept('concept_defensive_pact','defenzivního paktu')]"
  DIPLOMATIC_ACCEPTANCE_ALLIANCE: "z existující [Concept('concept_alliance','aliance')]"
  DIPLOMATIC_ACCEPTANCE_TRADE_PRIVILEGES: "ze získání [Concept('concept_trade_privilege','obchodních privilegií')]"
@@ -319,12 +430,13 @@
  DIPLOMATIC_ACCEPTANCE_LIBERTY_DESIRE: "z [Concept('concept_liberty_desire','touhy po svobodě')] [Concept('concept_country','země')]"
  DIPLOMATIC_ACCEPTANCE_TRADE_STATE_SOURCE: "z nabídnutého státu"
  DIPLOMATIC_ACCEPTANCE_TRADE_STATE_TARGET: "ze vzdaní se státu"
+ DIPLOMATIC_ACCEPTANCE_REGIONAL_OBJECTIVE_ACQUIRE: "na základě zaměření na tento $concept_state$ v rámci #b $ai_regional_objective_acquire_states$#! [concept_regional_objective]" # todo: NEW TRANSLATION
+ DIPLOMATIC_ACCEPTANCE_REGIONAL_OBJECTIVE_PROTECT: "na základě naší touhy ochránit [SCOPE.sCountry('actor').GetName] v rámci #b $ai_regional_objective_protect_country$#! [concept_regional_objective]" # todo: NEW TRANSLATION
  DIPLOMATIC_ACCEPTANCE_TRADE_STATE_REJECT: "z nechtění tohoto státu"
- DIPLOMATIC_ACCEPTANCE_ALREADY_TRADED_STATE: "z #b neochoty#! znovu vyjednávat o předání státu"
- DIPLOMATIC_ACCEPTANCE_TARGET_PRO_LOBBY_CLOUT: "z [Concept('concept_economic_dependence','ekonomické závislosti')] Pro-[SCOPE.GetRootScope.GetCountry.GetAltAdjectiveNoFormatting('ee')] [Concept('concept_political_lobby', '$concept_political_lobbies_short$')|l] v [SCOPE.sCountry('other_country').GetAltAdjectiveNoFormatting('I')]"
- DIPLOMATIC_ACCEPTANCE_TARGET_ANTI_LOBBY_CLOUT: "z [Concept('concept_clout','politického vlivu')] Proti-[SCOPE.GetRootScope.GetCountry.GetAltAdjectiveNoFormatting('ee')] [Concept('concept_political_lobby', '$concept_political_lobbies_short$')|l] v [SCOPE.sCountry('other_country').GetAltAdjectiveNoFormatting('I')]"
- DIPLOMATIC_ACCEPTANCE_SOURCE_PRO_LOBBY_CLOUT: "z [Concept('concept_clout','politického vlivu')] Pro-[SCOPE.sCountry('other_country').GetAltAdjectiveNoFormatting('ee')] [Concept('concept_political_lobby', '$concept_political_lobbies_short$')|l] v [SCOPE.GetRootScope.GetCountry.GetAltAdjectiveNoFormatting('I')]"
- DIPLOMATIC_ACCEPTANCE_SOURCE_ANTI_LOBBY_CLOUT: "z [Concept('concept_clout','politického vlivu')] Proti-[SCOPE.sCountry('other_country').GetAltAdjectiveNoFormatting('ee')] [Concept('concept_political_lobby', '$concept_political_lobbies_short$')|l] v [SCOPE.GetRootScope.GetCountry.GetAltAdjectiveNoFormatting('I')]"
+ DIPLOMATIC_ACCEPTANCE_TARGET_PRO_LOBBY_CLOUT: "z [Concept('concept_economic_dependence','ekonomické závislosti')] Pro-[SCOPE.GetRootScope.GetCountry.GetAltAdjectiveNoFormatting('ee')] [Concept('concept_political_lobby', '$concept_political_lobbies_short|q$')|l] v [SCOPE.sCountry('other_country').GetAltAdjectiveNoFormatting('I')]" # todo: CHANGED (predtym: z [concept_clout] Pro-[SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFormatting] [Concept('concept_political_lobby', '$con)
+ DIPLOMATIC_ACCEPTANCE_TARGET_ANTI_LOBBY_CLOUT: "z [Concept('concept_clout','politického vlivu')] Proti-[SCOPE.GetRootScope.GetCountry.GetAltAdjectiveNoFormatting('ee')] [Concept('concept_political_lobby', '$concept_political_lobbies_short|q$')|l] v [SCOPE.sCountry('other_country').GetAltAdjectiveNoFormatting('I')]" # todo: CHANGED (predtym: z [Concept('concept_clout','politického vlivu')] Proti-[SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFormatting] [Concept)
+ DIPLOMATIC_ACCEPTANCE_SOURCE_PRO_LOBBY_CLOUT: "z [Concept('concept_clout','politického vlivu')] Pro-[SCOPE.sCountry('other_country').GetAltAdjectiveNoFormatting('ee')] [Concept('concept_political_lobby', '$concept_political_lobbies_short|q$')|l] v [SCOPE.GetRootScope.GetCountry.GetAltAdjectiveNoFormatting('I')]" # todo: CHANGED (predtym: z [Concept('concept_clout','politického vlivu')] Pro-[SCOPE.sCountry('other_country').GetAdjectiveNoFormatting] [Concept)
+ DIPLOMATIC_ACCEPTANCE_SOURCE_ANTI_LOBBY_CLOUT: "z [Concept('concept_clout','politického vlivu')] Proti-[SCOPE.sCountry('other_country').GetAltAdjectiveNoFormatting('ee')] [Concept('concept_political_lobby', '$concept_political_lobbies_short|q$')|l] v [SCOPE.GetRootScope.GetCountry.GetAltAdjectiveNoFormatting('I')]" # todo: CHANGED (predtym: z [Concept('concept_clout','politického vlivu')] Proti-[SCOPE.sCountry('other_country').GetAdjectiveNoFormatting] [Conce)
  DIPLOMATIC_ACCEPTANCE_NOT_RECOGNIZED_BY_SPAIN_TARGET: "[SCOPE.sCountry('actor').GetName] formálně neuznává nezávislost [SCOPE.sCountry('target').GetAdjective]"
  DIPLOMATIC_ACCEPTANCE_NOT_RECOGNIZED_BY_SPAIN_ACTOR: "[SCOPE.sCountry('target').GetName] formálně neuznává nezávislost [SCOPE.sCountry('actor').GetAdjective]"
  DIPLOMATIC_ACCEPTANCE_UNTRUSTWORTHY_COUNTRY: "$modifier_untrustworthy_country$"
@@ -332,8 +444,12 @@
  DIPLOMATIC_ACCEPTANCE_BINDING_PERIOD: "z doby trvání závazku"
  DIPLOMATIC_ACCEPTANCE_SHIP_VALUE: "z hodnoty $concept_construction$ lodi" # todo: NEW TRANSLATION
  DIPLOMATIC_ACCEPTANCE_SHIP_OBSOLETE: "z toho, že loď je pro ně zastaralá" # todo: NEW TRANSLATION
+ DIPLOMATIC_ACCEPTANCE_SHIP_CATEGORY_SHORTFALL: "na základě toho, jak moc jejich námořnictvo potřebuje tento druh lodí" # todo: NEW TRANSLATION
+ DIPLOMATIC_ACCEPTANCE_SHIP_CATEGORY_UNWANTED: "na základě toho, že jejich námořnictvo nemá pro tento druh lodí využití" # todo: NEW TRANSLATION
+ DIPLOMATIC_ACCEPTANCE_SHIP_CATEGORY_UNDERSTRENGTH: "na základě nedostatku tohoto druhu lodí v jejich námořnictvu" # todo: NEW TRANSLATION
  DIPLOMATIC_ACCEPTANCE_ONE_SIDED_SHIP_TRADE: "z odmítnutí vyměnit loď bez protihodnoty" # todo: NEW TRANSLATION
  DIPLOMATIC_ACCEPTANCE_DEAL_IS_WORSE: "z toho, že přejednaná smlouva je pro ně horší"
+ DIPLOMATIC_ACCEPTANCE_ONE_TIME_ARTICLES: "na základě odmítnutí znovu jednat o $concept_treaty$ s jednorázovými $concept_articles$" # todo: NEW TRANSLATION
  DIPLOMATIC_ACCEPTANCE_BASE_ADDITIONAL: "ze základní neochoty k tomuto článku"
  DIPLOMATIC_ACCEPTANCE_COLONIAL_INTEREST: "z koloniálního zájmu v [Concept('concept_strategic_region','strategickém regionu')]" # todo: CHANGED (predtym: z koloniálního záujmu v [Concept('concept_strategic_region','strategickém regionu')])
  DIPLOMATIC_ACCEPTANCE_INPUT_QUANTITY: "ze vstupní kvantity"
@@ -341,17 +457,18 @@
  DIPLOMATIC_ACCEPTANCE_INPUT_QUANTITY_GOODS_TOO_MUCH: "z velké kvantity [SCOPE.sGoods('input').GetCustom('GDS_G_TT')]" # todo: NAME CASE
  DIPLOMATIC_ACCEPTANCE_DOES_NOT_WANT_ARTICLE: "z nezájmu o tento článek" # todo: CHANGED (predtym: z nezáujmu o tento článek)
  DIPLOMATIC_ACCEPTANCE_NO_LONGER_WANTS_ARTICLE: "již nemají zájem o tenhle článek" # todo: CHANGED (predtym: již nemají záujem o tenhle článek)
- DIPLOMATIC_ACCEPTANCE_VALUE_OF_STATES_IN_REGION: "z hodnoty [SCOPE.GetRootScope.GetCountry.GetAltAdjective('yych')] [Concept('concept_state', 'států')] v oblasti [Concept('concept_strategic_region','strategického regionu')]"
+ DIPLOMATIC_ACCEPTANCE_VALUE_OF_STATES_IN_REGION: "z hodnoty [SCOPE.GetRootScope.GetCountry.GetAltAdjective('yych')] [Concept('concept_state', 'států')] v oblasti [Concept('concept_strategic_region','strategického regionu')]" # todo: CHANGED (predtym: z hodnoty [SCOPE.GetRootScope.GetCountry.GetAdjective] [Concept('concept_state', 'států')] v oblasti [Concept('concept_s)
  DIPLOMATIC_ACCEPTANCE_BUDGET_SURPLUS: "z [SCOPE.sCountry('target').GetAltAdjective('eeho')|l] přebytku rozpočtu"
  DIPLOMATIC_ACCEPTANCE_BUDGET_DEFICIT: "z [SCOPE.sCountry('target').GetAltAdjective('eeho')|l] rozpočtového schodku "
  DIPLOMATIC_ACCEPTANCE_MONEY_TRANSFER_CAP: "ze stávájícíh [SCOPE.GetRootScope.GetCountry.GetAltAdjective('yych')] výdajů na převod peněz"
  DIPLOMATIC_ACCEPTANCE_TRANSIT_RIGHTS_VALUE: "z hodnoty práv na tranzit"
  DIPLOMATIC_ACCEPTANCE_EQUAL_EXCHANGE: "z rovnocennosti výměny"
  DIPLOMATIC_ACCEPTANCE_VALUE_OF_BUILDING_TYPE: "z hodnoty [Concept('concept_building', 'průmyslu')]"
- DIPLOMATIC_ACCEPTANCE_WANTS_TO_EXPORT: "z ochoty exportovat"
- DIPLOMATIC_ACCEPTANCE_WANTS_TO_IMPORT: "z ochoty importovat"
+ DIPLOMATIC_ACCEPTANCE_WANTS_TO_EXPORT: "z ochoty exportovat" # todo: CHANGED (predtym: z ochoty exportovat [concept_trade])
+ DIPLOMATIC_ACCEPTANCE_WANTS_TO_IMPORT: "z ochoty importovat" # todo: CHANGED (predtym: z ochoty importovat [concept_trade])
  DIPLOMATIC_ACCEPTANCE_WANTS_TO_TRADE: "ze chtění volného obchodu s touto komoditou"
  DIPLOMATIC_ACCEPTANCE_DOMESTIC_PRODUCTION: "z ovlivnění domácí produkce"
+ DIPLOMATIC_ACCEPTANCE_TRADE_PARTNER_FOR_GOODS: "na základě našeho vzájemného obchodu s tímto [concept_good]" # todo: NEW TRANSLATION
  DIPLOMATIC_ACCEPTANCE_LIKES_LAW: "z podpory jejich vlády na uzákonění [SCOPE.sLawType('input').GetName]"
  DIPLOMATIC_ACCEPTANCE_ANTI_SLAVERY: "podporují zrušení otroctví"
  DIPLOMATIC_ACCEPTANCE_RECENTLY_TRADED_STATES: "z nedávného obchodu se státy" # todo: CHANGED (predtym: z nedávneho obchodu se státy)
@@ -360,11 +477,15 @@
  DIPLOMATIC_ACCEPTANCE_TRADE_SUBJECT_SOURCE: "z nabídnutého $concept_subject$"
  DIPLOMATIC_ACCEPTANCE_TRADE_SUBJECT_TARGET: "ze postoupení $concept_subject$"
  DIPLOMATIC_ACCEPTANCE_TRADE_SUBJECT_REJECT: "z toho, že #b nechtějí#! tento $concept_subject$"
- DIPLOMATIC_ACCEPTANCE_NAVAL_HOSTILITIES_PAST_DAMAGE: "poškození způsobené [SCOPE.sCountry('other_country').GetName] během předchozích [Concept('concept_naval_hostilities','námořního nepřátelství')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- DIPLOMATIC_ACCEPTANCE_NAVAL_HOSTILITIES_RANK: "vyšší [Concept('concept_rank','hodnost')] než [SCOPE.sCountry('other_country').GetName]" # todo: NEW TRANSLATION
+ DIPLOMATIC_ACCEPTANCE_NAVAL_HOSTILITIES_PAST_DAMAGE: "z poškození způsobeného [SCOPE.sCountry('other_country').GetName] během předchozích [Concept('concept_naval_hostilities','námořního nepřátelství')]" # todo: CHANGED (predtym: poškození způsobené [SCOPE.sCountry('other_country').GetName] během předchozích [Concept('concept_naval_hostilities','ná)
+ DIPLOMATIC_ACCEPTANCE_NAVAL_HOSTILITIES_RANK: "z vyšší [Concept('concept_rank','hodnosti')] než [SCOPE.sCountry('other_country').GetName]" # todo: CHANGED (predtym: vyšší [Concept('concept_rank','hodnost')] než [SCOPE.sCountry('other_country').GetName])
+ DIPLOMATIC_ACCEPTANCE_NAVY_COMBAT_POWER: "na základě relativní síly našich námořnictev" # todo: NEW TRANSLATION
  DIPLOMATIC_ACCEPTANCE_NAVAL_VULNERABILITY: "závislost na [Concept('concept_world_market','světový trh')], pobřežní $GDP_SHORT$ a námořní [Concept('concept_prestige','prestiž')]" # todo: NEW TRANSLATION
+ DIPLOMATIC_ACCEPTANCE_STRAIT_DEPENDENCE: "na základě závislosti na [concept_strait]" # todo: NEW TRANSLATION
+ DIPLOMATIC_ACCEPTANCE_NO_STRAIT_DEPENDENCE: "na základě nezávislosti na [concept_strait]" # todo: NEW TRANSLATION
+ DIPLOMATIC_ACCEPTANCE_PIRACY_GRIEVANCE: "na základě ztrát způsobených [concept_piracy]" # todo: NEW TRANSLATION
  DIPLOMATIC_ACCEPTANCE_OPIUM_DEALER: "z #b 'Ne, chceme vám prodávat opium'#!" # todo: NEW TRANSLATION
- LOBBY_OPPORTUNITY_BONUS: "z bonusu příležitosti od pro-[SCOPE.GetRootScope.GetCountry.GetAltAdjectiveNoFormatting('ee')] [Concept('concept_political_lobby', '$concept_political_lobbies_short$')|l]"
+ LOBBY_OPPORTUNITY_BONUS: "z bonusu příležitosti od pro-[SCOPE.GetRootScope.GetCountry.GetAltAdjectiveNoFormatting('ee')] [Concept('concept_political_lobby', '$concept_political_lobbies_short|q$')|l]" # todo: CHANGED (predtym: z bonusu příležitosti od pro-[SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFormatting] [Concept('concept_political_lobby')
  AT_WAR_WITH_UNFRIENDLY_COUNTRY: "Jsme ve [Concept('concept_war','válce')] s nepřátelským národem"
  AT_WAR_WITH_FRIENDLY_COUNTRY: "Jsme ve válce s národem, který je pro ně přátelský"
  GREAT_GAME_BONUS: "ze zájmů ve Velké hře"
@@ -374,7 +495,9 @@
  WARGOAL_BASE_TYPE_VALUE: "Základní hodnota pro $TYPE$:"
  WARGOAL_MULT_FROM_POPULATION: "Násobeno"
  WARGOAL_PRIMARY_IS_FREE: "První [Concept('concept_war_goal','válečný cíl')] nikdy nemá náklady na [Concept('concept_maneuver','manévry')]"
- INFAMY_EFFECT_FROM_RANK: "[COUNTRY.GetName] je $RANK_NAME|v$: $EFFECT|%=-$"
+ INFAMY_EFFECT_FROM_RANK: "$EFFECT|%=-$ za to, že [COUNTRY.GetName] je $RANK_NAME|v$" # todo: CHANGED (predtym: [COUNTRY.GetName] je $RANK_NAME|v$: $EFFECT|%=-$)
+ INFAMY_EFFECT_FROM_GENERATION_MULT: "$EFFECT|%=-$ z $country_infamy_generation_mult$" # todo: NEW TRANSLATION
+ INFAMY_EFFECT_FROM_GAME_RULE: "$EFFECT|%=-$ z herního pravidla $rule_infamy_generation$" # todo: NEW TRANSLATION
  WARGOAL_MULT_FROM_HOMELANDS: "Cíl je [Concept('concept_homeland','domovinou')] pro [COUNTRY.GetAltAdjective('A')]: $EFFECT|%=-$"
  WARGOAL_MULT_FROM_UNINCORPORATED_STATE: "Cíl je [Concept('concept_unincorporated_state','nezačleněný stát')]: $EFFECT|%=-$"
  WARGOAL_MULT_FROM_UNINCORPORATED_STATES: "Cíl obsahuje [Concept('concept_unincorporated_state','nezačleněné státy')]: $EFFECT|%=-$" # todo: CHANGED (predtym: Cíl obsahuje [Concept('concept_unincorporated_state','nezačlenené státy')]: $EFFECT|%=-$)
@@ -404,6 +527,7 @@
  DIPLO_PACT_RELATIONS_CHANGE_NEG: "[Concept('concept_relations','Vztahy')] se zhorší o #r -1#! za $DAYS|v$ dní. Celkový postup je #v $PROGRESS_DAILY|%+=2$#! za den"
  DIPLO_PACT_INVOLVEMENT_CHANGE: "Aktuálně zvyšuje [Concept('concept_involvement','zapojení')] [TARGET_COUNTRY.GetName] maximálně o $AMOUNT|v0$ ve všech [Concept('concept_strategic_region','strategických regionech')] kde [COUNTRY.GetName] je [Concept('concept_local_country','místní')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  DIPLO_PACT_RELATIONS_NO_CHANGE: "[Concept('concept_relations','Vztahy')] momentálně zůstanou beze změny. Celkový pokrok je #v $PROGRESS_DAILY|%+=0$#! za den"
+ DIPLO_ACTION_FORCED_DURATION: "Tento [Concept('concept_diplomatic_pact','$concept_diplomatic_pact_short|q$')] nemůžeme vypovědět po dobu dalších $TIME_LEFT$ ($DATE$)" # todo: NEW TRANSLATION
  DIPLOMATIC_PACT_HEADER: "#header [DiplomaticPact.GetName]#!"
  DIPLOMATIC_PACT_DESC: "[DiplomaticPact.GetDesc]"
  DIPLOMATIC_PACT_TOOLTIP: "$DIPLOMATIC_PACT_HEADER$\n$TOOLTIP_DELIMITER$\n$DIPLOMATIC_PACT_DESC$"
@@ -413,7 +537,7 @@
  DIPLO_PACT_RELATIONS_EFFECT_BASE_VALUE: "#v $VAL|%2=+$#! základní hodnota"
  DIPLO_PACT_RELATIONS_BREAKDOWN_FORMAT: "#header [Concept('concept_relations','Vztahy')] pokrok#!\n#v $DAYS$#! dnů do [SelectLocalization( LessThan_CFixedPoint( '(CFixedPoint)$PROGRESS_DAILY|5$', '(CFixedPoint)0' ), '#r -', '#g ' )]100%#!\n$TOOLTIP_DELIMITER$\n#v $PROGRESS_DAILY|%2=+$#! denní pokrok díky:\n$BREAKDOWN$"
  DIPLO_PACT_RELATIONS_CHANGE_TOTAL: "\n$DESC$, díky: #indent_newline:3 \n$DESC_DETAILS$#!"
- FORCE_REGIME_CHANGE_GOV_PRINCIPLES_DIST_POWER_PROGRESSIVENESS_DIFFERENCE: "#indent_newline:3 [SCOPE.GetRootScope.GetCountry.GetName] a [SCOPE.sC('target_country').GetName] má velmi odlišné [Concept('concept_law','zákony')] v kategoriích [GetLawGroup('lawgroup_governance_principles').GetName] a [GetLawGroup('lawgroup_distribution_of_power').GetName]\n[SCOPE.GetRootScope.GetCountry.GetName]: [SCOPE.GetRootScope.GetCountry.GetActiveLawFromGroup('lawgroup_governance_principles').GetName] a [SCOPE.GetRootScope.GetCountry.GetActiveLawFromGroup('lawgroup_distribution_of_power').GetName]\n[SCOPE.sC('target_country').GetName]: [SCOPE.sC('target_country').GetActiveLawFromGroup('lawgroup_governance_principles').GetName] a [SCOPE.sC('target_country').GetActiveLawFromGroup('lawgroup_distribution_of_power').GetName]"
+ FORCE_REGIME_CHANGE_GOV_PRINCIPLES_DIST_POWER_PROGRESSIVENESS_DIFFERENCE: "#indent_newline:3 [SCOPE.GetRootScope.GetCountry.GetName] a [SCOPE.sC('target_country').GetName] má velmi odlišné [Concept('concept_law','zákony')] v kategoriích [GetLawGroup('lawgroup_governance_principles').GetName] a [GetLawGroup('lawgroup_distribution_of_power').GetName]\n[SCOPE.GetRootScope.GetCountry.GetName]: [SCOPE.GetRootScope.GetCountry.GetActiveLawFromGroup('lawgroup_governance_principles').GetName] a [SCOPE.GetRootScope.GetCountry.GetActiveLawFromGroup('lawgroup_distribution_of_power').GetName]\n[SCOPE.sC('target_country').GetName]: [SCOPE.sC('target_country').GetActiveLawFromGroup('lawgroup_governance_principles').GetName] a [SCOPE.sC('target_country').GetActiveLawFromGroup('lawgroup_distribution_of_power').GetName]" # todo: CHANGED (predtym: indent_newline:3 [SCOPE.GetRootScope.GetCountry.GetName] a [SCOPE.sC('target_country').GetName] má velmi odlišné [Concep)
  increase_relations: "Zlepšit vztahy"
  increase_relations_action_name: "Zlepšit [Concept('concept_relations','vztahy')|l]"
  increase_relations_action_propose_name: "Začít zlepšovat [Concept('concept_relations','vztahy')|l]"
@@ -473,12 +597,12 @@
  rivalry_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] považuje [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName] za jejich [Concept('concept_rivalry', 'rivaly')]."
  rivalry_desc: "Zavádí [Concept('concept_rivalry','rivalitu')] s jinou [Concept('concept_country','zemí')]."
  rivalry_action_notification_name: "[INITIATOR_COUNTRY.GetName] vyhlásil [Concept('concept_rivalry','rivalita')|l]"
- rivalry_action_notification_desc: "[INITIATOR_COUNTRY.GetName] vyhlásil [GetPlayer.GetAltAdjective('A')] za svoje [Concept('concept_rivalry','rivaly')]. Jejich [Concept('concept_attitude','postoj')|l] vůči [GetPlayer.GetAltAdjective('D')] je #tooltippable #tooltip:[INITIATOR_COUNTRY.GetTooltipTag],COUNTRY_ATTITUDE_TOOLTIP [INITIATOR_COUNTRY.GetAttitudeTowards(GetPlayer).GetName]#!#!."
- rivalry_action_notification_third_party_name: "[INITIATOR_COUNTRY.GetAltAdjectiveNoFormatting('o')]-[TARGET_COUNTRY.GetAltAdjectiveNoFormatting('aa')] [Concept('concept_rivalry','rivalita')|l] vyhlášena"
- rivalry_action_notification_third_party_desc: "[INITIATOR_COUNTRY.GetName] vyhlásil [TARGET_COUNTRY.GetAltAdjective('A')] za jejich [Concept('concept_rivalry', 'rivaly')]."
+ rivalry_action_notification_desc: "[INITIATOR_COUNTRY.GetName] vyhlásil [GetPlayer.GetAltAdjective('A')] za svoje [Concept('concept_rivalry','rivaly')]. Jejich [Concept('concept_attitude','postoj')|l] vůči [GetPlayer.GetAltAdjective('D')] je #tooltippable #tooltip:[INITIATOR_COUNTRY.GetTooltipTag],COUNTRY_ATTITUDE_TOOLTIP [INITIATOR_COUNTRY.GetAttitudeTowards(GetPlayer).GetName]#!#!." # todo: CHANGED (predtym: [INITIATOR_COUNTRY.GetName] vyhlásil [GetPlayer.GetName] za své [Concept('concept_rivalry','rivaly')]. Jejich [Concept(')
+ rivalry_action_notification_third_party_name: "[INITIATOR_COUNTRY.GetAdjectiveNoFormatting]-[TARGET_COUNTRY.GetAdjectiveNoFormatting] [Concept('concept_rivalry','rivalita')|l] vyhlášena" # todo: CHANGED (predtym: [INITIATOR_COUNTRY.GetAltAdjectiveNoFormatting('o')]-[TARGET_COUNTRY.GetAltAdjectiveNoFormatting('aa')] [Concept('concep)
+ rivalry_action_notification_third_party_desc: "[INITIATOR_COUNTRY.GetName] vyhlásil [TARGET_COUNTRY.GetAltAdjective('A')] za jejich [Concept('concept_rivalry', 'rivaly')]." # todo: CHANGED (predtym: [INITIATOR_COUNTRY.GetName] vyhlásil [TARGET_COUNTRY.GetName] za jejich [Concept('concept_rivalry', 'rivaly')].)
  rivalry_action_notification_break_name: "[INITIATOR_COUNTRY.GetName] ukončil [Concept('concept_rivalry','rivalita')|l]"
- rivalry_action_notification_break_desc: "[INITIATOR_COUNTRY.GetName] již nepovažuje [GetPlayer.GetAltAdjective('A')] za [Concept('concept_rivalry', 'rivaly')]."
- rivalry_action_notification_third_party_break_name: "[INITIATOR_COUNTRY.GetAltAdjectiveNoFormatting('o')]-[TARGET_COUNTRY.GetAltAdjectiveNoFormatting('aa')] [Concept('concept_rivalry','rivalita')|l] skončila"
+ rivalry_action_notification_break_desc: "[INITIATOR_COUNTRY.GetName] již nepovažuje [GetPlayer.GetAltAdjective('A')] za [Concept('concept_rivalry', 'rivaly')]." # todo: CHANGED (predtym: [INITIATOR_COUNTRY.GetName] již nepovažuje [GetPlayer.GetName] za [Concept('concept_rivalry', 'rivaly')].)
+ rivalry_action_notification_third_party_break_name: "[INITIATOR_COUNTRY.GetAdjectiveNoFormatting]-[TARGET_COUNTRY.GetAdjectiveNoFormatting] [Concept('concept_rivalry','rivalita')|l] skončila" # todo: CHANGED (predtym: [INITIATOR_COUNTRY.GetAltAdjectiveNoFormatting('o')]-[TARGET_COUNTRY.GetAltAdjectiveNoFormatting('aa')] [Concept('concep)
  rivalry_action_notification_third_party_break_desc: "[INITIATOR_COUNTRY.GetName] ukončil jejich [Concept('concept_rivalry','rivalita')|l] s [TARGET_COUNTRY.GetAltAdjective('I')]."
  rivalry_effect_desc_global: "Vyhlásí [Concept('concept_rivalry','rivalitu')]"
  rivalry_effect_desc_first: "[COUNTRY.GetNameNoFlag] vyhlašuje [Concept('concept_rivalry','rivalitu')] [TARGET_COUNTRY.GetAltAdjective('D')]"
@@ -491,22 +615,22 @@
  rivalry_trigger_false_desc_third: "[COUNTRY.GetName] #b nemá#! [Concept('concept_rivalry','rivalitu')] s [AddTextIf(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self),TARGET_COUNTRY.GetNameNoFlag)][AddTextIf(Not(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self)),TARGET_COUNTRY.GetName)]"
  fund_lobbies_trigger_desc_global: "Má [Concept('concept_fund_lobbies', 'financované lobbisty')]"
  fund_lobbies_trigger_false_desc_global: "#b Nemá#! [Concept('concept_fund_lobbies', 'financované lobbisty')]"
- fund_lobbies_trigger_desc_first: "[COUNTRY.GetName] má [Concept('concept_fund_lobbies', 'financovaní lobbistů')] v [TARGET_COUNTRY.GetAltAdjective('L')]"
- fund_lobbies_trigger_false_desc_first: "[COUNTRY.GetName] [Concept('concept_fund_lobbies', 'nefinancuje lobbisty')] v [TARGET_COUNTRY.GetAltAdjective('L')]"
+ fund_lobbies_trigger_desc_first: "[COUNTRY.GetName] má [Concept('concept_fund_lobbies', 'financovaní lobbistů')] v [TARGET_COUNTRY.GetAltAdjective('L')]" # todo: CHANGED (predtym: [COUNTRY.GetName] má [Concept('concept_fund_lobbies', 'financovaní lobbistů')] v [TARGET_COUNTRY.GetName])
+ fund_lobbies_trigger_false_desc_first: "[COUNTRY.GetName] [Concept('concept_fund_lobbies', 'nefinancuje lobbisty')] v [TARGET_COUNTRY.GetAltAdjective('L')]" # todo: CHANGED (predtym: [COUNTRY.GetName] b [Concept('concept_fund_lobbies', 'nefinancuje lobbisty')] ! v [TARGET_COUNTRY.GetName])
  fund_lobbies_trigger_desc_third: "[COUNTRY.GetName] [Concept('concept_fund_lobbies', 'financuje lobbisty')] v [AddTextIf(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self),TARGET_COUNTRY.GetNameNoFlag)][AddTextIf(Not(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self)),TARGET_COUNTRY.GetName)]"
- fund_lobbies_trigger_false_desc_third: "[COUNTRY.GetName] [Concept('concept_fund_lobbies', 'nefinancuje lobbisty')] v [AddTextIf(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self),TARGET_COUNTRY.GetNameNoFlag)][AddTextIf(Not(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self)),TARGET_COUNTRY.GetName)]"
+ fund_lobbies_trigger_false_desc_third: "[COUNTRY.GetName] [Concept('concept_fund_lobbies', 'nefinancuje lobbisty')] v [AddTextIf(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self),TARGET_COUNTRY.GetNameNoFlag)][AddTextIf(Not(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self)),TARGET_COUNTRY.GetName)]" # todo: CHANGED (predtym: [COUNTRY.GetName] b [Concept('concept_fund_lobbies', 'nefinancuje lobbisty')] ! v [AddTextIf(ObjectsEqual(GetMetaPlayer.)
  embargo: "Embargo"
  embargo_action_name: "[Concept('concept_embargo','Embargo')]"
  embargo_action_propose_name: "[Concept('concept_embargo','Embargo')]"
  embargo_action_break_name: "Ukončit [Concept('concept_embargo','embargo')|l]"
- embargo_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] [Concept('concept_embargo', 'embarguje')] [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetAltAdjective('G')]."
+ embargo_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] [Concept('concept_embargo', 'embarguje')] [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetAltAdjective('G')]." # todo: CHANGED (predtym: [SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] [Concept('concept_embargo', 'embarguje')] [SCOPE.GetRootS)
  embargo_desc: "Uvaluje [Concept('concept_embargo','embargo')|l] na jinou [Concept('concept_country','zemi')]."
  embargo_action_notification_name: "[Concept('concept_embargo','Embargo')]"
- embargo_action_notification_desc: "[INITIATOR_COUNTRY.GetName] uvalili [Concept('concept_embargo','embargování')|l] na [GetPlayer.GetAltAdjective('A')]."
+ embargo_action_notification_desc: "[INITIATOR_COUNTRY.GetName] uvalili [Concept('concept_embargo','embargování')|l] na [GetPlayer.GetAltAdjective('A')]." # todo: CHANGED (predtym: [INITIATOR_COUNTRY.GetName] uvalili [Concept('concept_embargo','embargování')|l] na [GetPlayer.GetName].)
  embargo_action_notification_third_party_name: "[Concept('concept_embargo','Embargo')]"
- embargo_action_notification_third_party_desc: "[INITIATOR_COUNTRY.GetName] zahájilo [Concept('concept_embargo','embargování')] [TARGET_COUNTRY.GetAltAdjective('G')]."
- embargo_action_notification_break_name: "[Concept('concept_embargo','Embargo')] Ukončeno"
- embargo_action_notification_break_desc: "[INITIATOR_COUNTRY.GetName] zrušil [Concept('concept_embargo','embargování')|l] [GetPlayer.GetAltAdjective('G')]."
+ embargo_action_notification_third_party_desc: "[INITIATOR_COUNTRY.GetName] zahájilo [Concept('concept_embargo','embargování')] [TARGET_COUNTRY.GetAltAdjective('G')]." # todo: CHANGED (predtym: [INITIATOR_COUNTRY.GetName] zahájilo [Concept('concept_embargo','embargování')] [TARGET_COUNTRY.GetName].)
+ embargo_action_notification_break_name: "[Concept('concept_embargo','Embargo')] ukončeno" # todo: CHANGED (predtym: [Concept('concept_embargo','Embargo')] Ukončeno)
+ embargo_action_notification_break_desc: "[INITIATOR_COUNTRY.GetName] zrušil [Concept('concept_embargo','embargování')|l] [GetPlayer.GetAltAdjective('G')]." # todo: CHANGED (predtym: [INITIATOR_COUNTRY.GetName] zrušil [Concept('concept_embargo','embargování')|l] [GetPlayer.GetName].)
  embargo_action_notification_third_party_break_name: "[Concept('concept_embargo','Embargo')] ukončeno"
  embargo_action_notification_third_party_break_desc: "[INITIATOR_COUNTRY.GetName] ukončil jejich [Concept('concept_embargo','embargo')|l] na [TARGET_COUNTRY.GetAltAdjective('A')]."
  embargo_effect_desc_global: "Zahájí [Concept('concept_embargo','embargo')|l]"
@@ -593,7 +717,7 @@
  foreign_investment_rights_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] byly uděleny [Concept('concept_foreign_investment_rights','práva na zahraniční investice')|l] v [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetAltAdjective('L')]."
  foreign_investment_rights_proposal_notification_name: "Žádost o [Concept('concept_foreign_investment_rights','práva na zahraniční investice')|l]"
  foreign_investment_rights_proposal_notification_desc: "[INITIATOR_COUNTRY.GetName] žádá o [Concept('concept_foreign_investment_rights','práva na zahraniční investice')|l] v naší zemi."
- foreign_investment_rights_proposal_notification_effects_desc: "Pokud akceptujeme, budou mít možnost stavět a získávat [Concept('concept_building', 'budovy')] v naší zemi."
+ foreign_investment_rights_proposal_notification_effects_desc: "Pokud akceptujeme, budou mít možnost stavět a získávat [Concept('concept_building', 'budovy')] v naší zemi." # todo: CHANGED (predtym: Pokud akceptujeme, budou mít možnost stavět a získávat [Concept('concept_building', 'budovy')] v naší [concept_country].)
  foreign_investment_rights_proposal_accepted_name: "[Concept('concept_foreign_investment_rights','Práva na zahraniční investice')] přijaty"
  foreign_investment_rights_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] přijalo naši žádost o [Concept('concept_foreign_investment_rights','práva na zahraniční investice')|l] ve své zemi."
  foreign_investment_rights_proposal_declined_name: "[Concept('concept_foreign_investment_rights','Práva na zahraniční investice')] zamítnuty"
@@ -634,7 +758,7 @@
  foreign_investment_agreement_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] přijali naši nabídku na vzájemné [Concept('concept_foreign_investment_rights','práva na zahraniční investice')]."
  foreign_investment_agreement_proposal_declined_name: "$foreign_investment_agreement$ odmítnuty"
  foreign_investment_agreement_proposal_declined_desc: "[TARGET_COUNTRY.GetName] odmítla naši nabídku na vzájemná [Concept('concept_foreign_investment_rights','práva na zahraniční investice')]."
- foreign_investment_agreement_proposal_notification_name: "Vzájemná dohoda o [Concept('concept_foreign_investment_rights','právech na zahraniční investice')] s [INITIATOR_COUNTRY.GetAltAdjective('I')]"
+ foreign_investment_agreement_proposal_notification_name: "Vzájemná dohoda o [Concept('concept_foreign_investment_rights','právech na zahraniční investice')] s [INITIATOR_COUNTRY.GetName]" # todo: CHANGED (predtym: Vzájemná dohoda o [Concept('concept_foreign_investment_rights','právech na zahraniční investice')] s [INITIATOR_COUNTRY.)
  foreign_investment_agreement_proposal_notification_desc: "[INITIATOR_COUNTRY.GetName] navrhl vzájemnou dohodu o [Concept('concept_foreign_investment_rights','právech na zahraniční investice')] s námi."
  foreign_investment_agreement_proposal_notification_effects_desc: "$foreign_investment_agreement_desc$"
  foreign_investment_agreement_action_propose_name: "Navrhnout investiční dohodu"
@@ -652,11 +776,11 @@
  humiliation_action_name: "[Concept('concept_humiliation','Ponížení')]"
  humiliation_action_propose_name: "Požadovat [Concept('concept_humiliation','ponížení')|l]"
  humiliation_action_break_name: "Ukončit [Concept('concept_humiliation', 'ponižování')]"
- humiliation_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName] je [Concept('concept_humiliation','ponižováno')] [SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetAltAdjective('I')]."
+ humiliation_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName] je [Concept('concept_humiliation','ponižováno')] [SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetAltAdjective('I')]." # todo: CHANGED (predtym: [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName] je [Concept('concept_humiliation','ponižováno')] [SCOPE.)
  humiliation_desc: "Zabraňuje [Concept('concept_country', 'zemi')] se postavit proti jiným v [Concept('concept_diplomatic_play','diplomatických hrách')] po dobu trvání paktu."
  humiliation_type_break_desc: "Ukončit [Concept('concept_humiliation','ponižování')] jiné země."
  humiliation_action_notification_name: "Ponížení"
- humiliation_action_notification_desc: "[Concept('concept_humiliation', 'Ponižujeme')] [TARGET_COUNTRY.GetAltAdjective('A')]."
+ humiliation_action_notification_desc: "[Concept('concept_humiliation', 'Ponižujeme')] [TARGET_COUNTRY.GetAltAdjective('A')]." # todo: CHANGED (predtym: [Concept('concept_humiliation', 'Ponižujeme')] [TARGET_COUNTRY.GetName].)
  humiliation_action_notification_break_name: "[Concept('concept_humiliation', 'Ponižování')] ukončeno"
  humiliation_action_notification_break_desc: "[TARGET_COUNTRY.GetName] ukončuje naše probíhající [Concept('concept_humiliation', 'ponižování')]."
  guarantee_independence_action_name: "$guarantee_independence$"
@@ -665,7 +789,7 @@
  guarantee_independence_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] garantuje nezávislost [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetAltAdjective('G')]."
  guarantee_independence_action_notification_name: "[INITIATOR_COUNTRY.GetName] garantuje naši nezávislost"
  guarantee_independence_action_notification_desc: "[INITIATOR_COUNTRY.GetName] začíná garantovat nezávislost naší [Concept('concept_country','země')|l]. Budeme je moci přivolat na pomoc, pokud budeme cílem [Concept('concept_diplomatic_play','diplomatické hry')]."
- guarantee_independence_action_notification_break_name: "[INITIATOR_COUNTRY.GetName] ukončuje ručení za naší nezávislost"
+ guarantee_independence_action_notification_break_name: "[INITIATOR_COUNTRY.GetAdjective] ukončil záruku naší nezávislosti" # todo: CHANGED (predtym: [INITIATOR_COUNTRY.GetName] ukončuje ručení za naší nezávislost)
  guarantee_independence_action_notification_break_desc: "[INITIATOR_COUNTRY.GetName] již nezaručuje naši nezávislost."
  guarantee_independence_effect_desc_global: "Zahájí [Concept('concept_guarantee_independence','ručení za nezávislost')]"
  guarantee_independence_effect_desc_first: "[COUNTRY.GetName] začíná [Concept('concept_guarantee_independence','ručit za nezávislost')] [TARGET_COUNTRY.GetAltAdjective('G')]"
@@ -685,9 +809,9 @@
  bankroll_effect_desc_first: "[COUNTRY.GetAdjectiveNoFlag] začíná [Concept('concept_bankroll','financovat')] [TARGET_COUNTRY.GetAltAdjectiveNoFlag('A')]"
  bankroll_effect_desc_third: "[COUNTRY.GetName] začíná [Concept('concept_bankroll','financování')] [AddTextIf(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self),TARGET_COUNTRY.GetNameNoFlag)][AddTextIf(Not(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self)),TARGET_COUNTRY.GetName)]"
  bankroll_trigger_desc_global: "Je [Concept('concept_bankroll','financován')]"
- bankroll_trigger_false_desc_global: "[Concept('concept_bankroll','Nefinancuje')]"
- bankroll_trigger_desc_first: "[COUNTRY.GetAdjectiveNoFlag] [Concept('concept_bankroll','financuje')] [TARGET_COUNTRY.GetAltAdjectiveNoFlag('A')]"
- bankroll_trigger_false_desc_first: "[COUNTRY.GetAdjectiveNoFlag] #b není#! [Concept('concept_bankroll','financována')] [TARGET_COUNTRY.GetAltAdjectiveNoFlag('I')]"
+ bankroll_trigger_false_desc_global: "[Concept('concept_bankroll','Nefinancuje')]" # todo: CHANGED (predtym: b [Concept('concept_bankroll','Nefinancuje')] !)
+ bankroll_trigger_desc_first: "[COUNTRY.GetAdjectiveNoFlag] [Concept('concept_bankroll','financuje')] [TARGET_COUNTRY.GetAltAdjectiveNoFlag('A')]" # todo: CHANGED (predtym: [COUNTRY.GetAdjectiveNoFlag] [Concept('concept_bankroll','financuje')] [TARGET_COUNTRY.GetName])
+ bankroll_trigger_false_desc_first: "[COUNTRY.GetAdjectiveNoFlag] #b není#! [Concept('concept_bankroll','financována')] [TARGET_COUNTRY.GetAltAdjectiveNoFlag('I')]" # todo: CHANGED (predtym: [COUNTRY.GetAdjectiveNoFlag] b [Concept('concept_bankroll','není financována')] ! [TARGET_COUNTRY.GetName])
  bankroll_trigger_desc_third: "[COUNTRY.GetName] je [Concept('concept_bankroll','financována')] [AddTextIf(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self),TARGET_COUNTRY.GetNameNoFlag)][AddTextIf(Not(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self)),TARGET_COUNTRY.GetName)]"
  bankroll_trigger_false_desc_third: "[COUNTRY.GetName] #b [Concept('concept_bankroll','nefinancuje')]#! [AddTextIf(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self),TARGET_COUNTRY.GetNameNoFlag)][AddTextIf(Not(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self)),TARGET_COUNTRY.GetName)]"
  fund_lobbies: "Financovat lobbování"
@@ -697,14 +821,14 @@
  fund_lobbies_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] mají financovaní lobbistů v [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetAltAdjective('L')]."
  fund_lobbies_desc: "[concept_fund_lobbies_desc]"
  fund_lobbies_action_notification_name: "[INITIATOR_COUNTRY.GetName] $concept_funding_lobbies$"
- fund_lobbies_action_notification_desc: "[INITIATOR_COUNTRY.GetName] začali financovat lobbisty. Přes čas to může vytvořit a posílit [Concept('concept_political_lobby','lobby')|l] přátelské k nám v jejich [Concept('concept_country','zemi')]."
+ fund_lobbies_action_notification_desc: "[INITIATOR_COUNTRY.GetName] začali financovat lobbisty. Přes čas to může vytvořit a posílit [Concept('concept_political_lobby','lobby')|l] přátelské k nám v jejich [Concept('concept_country','zemi')]." # todo: CHANGED (predtym: [INITIATOR_COUNTRY.GetName] začali $fund_lobbies$. Přes čas to může vytvořit a posílit [Concept('concept_political_lobby)
  fund_lobbies_action_notification_break_name: "[INITIATOR_COUNTRY.GetName] zastavili financovaní lobbistů"
  fund_lobbies_action_notification_break_desc: "[INITIATOR_COUNTRY.GetName] přestali financovat lobbisty v naší [Concept('concept_country','zemi')]."
  fund_lobbies_weekly_create_lobby_effect: "Mezi #v 0.25%#! a #v 1%#! šance (v závislosti na [Concept('concept_rank','hodnosti')] a geografické blízkosti) vytvořit přátelskou [Concept('concept_political_lobby','politickou lobby')] v cílové [Concept('concept_country','zemi')], pokud existují [Concept('concept_interest_group','zájmové skupiny')] kteří mají zájem nás podpořit"
  fund_lobbies_increase_friendly_join_weight_effect: "Zvyšuje touhu [Concept('concept_interest_group','zájmových skupin')] touhu připojit se k politickým lobby, které jsou vůči nám přátelské"
  fund_lobbies_decrease_hostile_join_weight_effect: "Snižuje touhu [Concept('concept_interest_group','zájmových skupin')] připojit se k politickým lobby, kteří jsou k nám nepřátelští"
- fund_lobbies_decrease_rival_friendly_join_weight_effect: "Snižuje touhu [Concept('concept_interest_group','zájmových skupin')] připojit se k politickým lobby, které jsou přátelské vůči našemu [Concept('concept_rivalry','rivalovi')]"
- fund_lobbies_increase_rival_hostile_join_weight_effect: "Zvyšuje touhu [Concept('concept_interest_group','zájmových skupin')] připojit se k politickým lobby, které jsou hostil k našemu [Concept('concept_rivalry','rivalovi')]"
+ fund_lobbies_decrease_rival_friendly_join_weight_effect: "Snižuje touhu [Concept('concept_interest_group','zájmových skupin')] připojit se k politickým lobby, které jsou přátelské vůči našemu [Concept('concept_rivalry','rivalovi')]" # todo: CHANGED (predtym: Snižuje touhu [Concept('concept_interest_group','zájmových skupin')] připojit se k $concept_political_lobbies$, které js)
+ fund_lobbies_increase_rival_hostile_join_weight_effect: "Zvyšuje touhu [Concept('concept_interest_group','zájmových skupin')] připojit se k politickým lobby, které jsou hostil k našemu [Concept('concept_rivalry','rivalovi')]" # todo: CHANGED (predtym: Zvyšuje touhu [Concept('concept_interest_group','zájmových skupin')] připojit se k $concept_political_lobbies$, které js)
  take_on_debt_action_name: "Vzít [Concept('concept_credit','dluh')|l]"
  take_on_debt_action_propose_name: "Převzít [Concept('concept_credit','dluh')|l]"
  take_on_debt_proposal_notification_name: "$take_on_debt_action_name$ navržen"
@@ -715,7 +839,7 @@
  take_on_debt_proposal_declined_name: "$take_on_debt_action_name$ odmítnuto"
  take_on_debt_proposal_declined_desc: "[TARGET_COUNTRY.GetName] odmítla naši nabídku převzít jejich národní [Concept('concept_credit','dluh')|l]."
  take_on_debt_proposal_third_party_accepted_name: "$take_on_debt_action_name$ přijato"
- take_on_debt_proposal_third_party_accepted_desc: "[INITIATOR_COUNTRY.GetName] převzal národní [Concept('concept_credit','dluh')|l] [TARGET_COUNTRY.GetAltAdjective('G')]. Výsledkem je, že dluží [Concept('concept_obligation','závazek')|l]."
+ take_on_debt_proposal_third_party_accepted_desc: "[INITIATOR_COUNTRY.GetName] převzal národní [Concept('concept_credit','dluh')|l] [TARGET_COUNTRY.GetAltAdjective('G')]. Výsledkem je, že dluží [Concept('concept_obligation','závazek')|l]." # todo: CHANGED (predtym: [INITIATOR_COUNTRY.GetName] převzal národní [Concept('concept_credit','dluh')|l] [TARGET_COUNTRY.GetName]. Výsledkem je,)
  take_on_debt_proposal_third_party_declined_name: "$take_on_debt_action_name$ odmítnuto"
  take_on_debt_proposal_third_party_declined_desc: "[TARGET_COUNTRY.GetName] odmítlo, aby [INITIATOR_COUNTRY.GetName] převzalo jejich národní [Concept('concept_credit','dluh')|l]."
  trade_states: "Vyměnit území"
@@ -730,9 +854,9 @@
  trade_states_proposal_declined_name: "$trade_states_action_name$ odmítnut"
  trade_states_proposal_declined_desc: "[TARGET_COUNTRY.GetName] odmítla naši nabídku na převod [Concept('concept_state','států')]:\n$STATES_DESC$"
  trade_states_proposal_third_party_accepted_name: "$trade_states_action_name$ akceptován"
- trade_states_proposal_third_party_accepted_desc: "[TARGET_COUNTRY.GetName] přijal převod [Concept('concept_state','států')] s [INITIATOR_COUNTRY.GetAltAdjective('I')]:\n$STATES_DESC$"
+ trade_states_proposal_third_party_accepted_desc: "[TARGET_COUNTRY.GetName] přijal převod [Concept('concept_state','států')] s [INITIATOR_COUNTRY.GetAltAdjective('I')]:\n$STATES_DESC$" # todo: CHANGED (predtym: [TARGET_COUNTRY.GetName] přijal převod [Concept('concept_state','států')] s [INITIATOR_COUNTRY.GetName]:\n$STATES_DESC$)
  trade_states_proposal_third_party_declined_name: "$trade_states_action_name$ zamítnut"
- trade_states_proposal_third_party_declined_desc: "[TARGET_COUNTRY.GetName] odmítl převod [Concept('concept_state','států')] s [INITIATOR_COUNTRY.GetAltAdjective('I')]:\n$STATES_DESC$"
+ trade_states_proposal_third_party_declined_desc: "[TARGET_COUNTRY.GetName] odmítl převod [Concept('concept_state','států')] s [INITIATOR_COUNTRY.GetAltAdjective('I')]:\n$STATES_DESC$" # todo: CHANGED (predtym: [TARGET_COUNTRY.GetName] odmítl převod [Concept('concept_state','států')] s [INITIATOR_COUNTRY.GetName]:\n$STATES_DESC$)
  force_regime_change: "Vynutit změnu režimu"
  force_regime_change_action_name: "Nutit [Concept('concept_regime_change','změnu režimu')]"
  force_regime_change_desc: "Vynucení okamžité [Concept('concept_regime_change','změnu režimu')] u [Concept('concept_power_bloc_member','člena mocenského bloku')], jehož politika je v rozporu se zbytkem [Concept('concept_power_bloc','mocenského bloku')]."
@@ -770,7 +894,7 @@
  take_state_action_notification_third_party_desc: "[INITIATOR_COUNTRY.GetName] vzal [TARGET_STATE.GetName] od [TARGET_COUNTRY.GetAltAdjective('G')]"
  demand_state: "Požadavek na stát"
  demand_state_action_name: "Požadovat [Concept('concept_state','stát')|l]"
- demand_state_desc: "Požadovat, aby vám [Concept('concept_overlord','vládce')|l] váš dal jeden z jejich vlastních [Concept('concept_state','států')], nebo převede [Concept('concept_state','stát')|l] od jednoho z jejich závislých zemí k vám. To sníží vaši [Concept('concept_liberty_desire','touhu po svobodě')|l], pokud bude uděleno." # todo: CONCEPT CASE
+ demand_state_desc: "Požadovat, aby vám [Concept('concept_overlord','vládce')|l] váš dal jeden z jejich vlastních [Concept('concept_state','států')], nebo převede [Concept('concept_state','stát')|l] od jednoho z jejich závislých zemí k vám. To sníží vaši [Concept('concept_liberty_desire','touhu po svobodě')|l], pokud bude uděleno." # todo: CHANGED (predtym: Požadovat, aby vám [Concept('concept_overlord','vládce')|l] váš dal jeden z jejich vlastních [Concept('concept_state','s)
  demand_state_proposal_notification_name: "[INITIATOR_COUNTRY.GetName] požadoval stát"
  demand_state_proposal_notification_desc: "[INITIATOR_COUNTRY.GetName] požadoval $STATES_DESC$ od nás"
  demand_state_proposal_accepted_name: "$demand_state_action_name$ přijato"
@@ -835,13 +959,13 @@
  change_customs_union_proposal_notification_name: "Žádost o změnu [Concept('concept_customs_union','celní unie')]"
  change_customs_union_proposal_notification_desc: "[INITIATOR_COUNTRY.GetName] si přeje, abychom přešli na jejich celní unii"
  change_customs_union_proposal_notification_effects_desc: "Pokud přijmeme, opustíme naši aktuální [Concept('concept_customs_union','celni unii')] a připojíme se k [INITIATOR_COUNTRY.GetCapital.GetMarket.GetName]."
- change_customs_union_proposal_accepted_name: "Žádost o změnu na naší colní unii přijata"
+ change_customs_union_proposal_accepted_name: "$change_customs_union$ žádost přijata" # todo: CHANGED (predtym: Žádost o změnu na naší colní unii přijata)
  change_customs_union_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] přijala naši nabídku na změnu na naší #variable [Concept('concept_customs_union','celní unii')]#!."
- change_customs_union_proposal_declined_name: "Žádost o změnu na naší colní unii odmítnuta"
+ change_customs_union_proposal_declined_name: "$change_customs_union$ žádost odmítnuta" # todo: CHANGED (predtym: Žádost o změnu na naší colní unii odmítnuta)
  change_customs_union_proposal_declined_desc: "[TARGET_COUNTRY.GetName] odmítla naši nabídku změnit na naši celní unii"
- change_customs_union_proposal_third_party_accepted_name: "Žádost o změnu na naší colní unii přijata"
+ change_customs_union_proposal_third_party_accepted_name: "$change_customs_union$ přistoupila" # todo: CHANGED (predtym: Žádost o změnu na naší colní unii přijata)
  change_customs_union_proposal_third_party_accepted_desc: "[TARGET_COUNTRY.GetName] změnil [Concept('concept_customs_union','celni unii')] na tu od [INITIATOR_COUNTRY.GetAltAdjective('G')]."
- change_customs_union_proposal_third_party_declined_name: "Žádost o změnu na naší colní unii odmítnuta"
+ change_customs_union_proposal_third_party_declined_name: "$change_customs_union$ odmítnuta" # todo: CHANGED (predtym: Žádost o změnu na naší colní unii odmítnuta)
  change_customs_union_proposal_third_party_declined_desc: "[INITIATOR_COUNTRY.GetName] odmítl změnit jejich [Concept('concept_customs_union','celni unii')] na tu od [INITIATOR_COUNTRY.GetAltAdjective('G')]."
  alliance_action_name: "[Concept('concept_alliance','Aliance')]"
  alliance_action_propose_name: "Vytvořit [Concept('concept_alliance','alianci')]"
@@ -991,7 +1115,7 @@
  enforce_military_access: "Vynutit vojenský přístup"
  enforce_military_access_desc: "Dělá [Concept('concept_subject','závislou zemi')] účastníkem všech [Concept('concept_war','válek')], jichž se jeho [Concept('concept_overlord','vládcem')|l] účastní." # todo: CONCEPT CASE
  enforce_military_access_action_notification_name: "[INITIATOR_COUNTRY.GetName] vynucuje vojenský přístup"
- enforce_military_access_action_notification_desc: "Jsme nuceni připojit se ke všem aktuálním [Concept('concept_war','válkám')] iniciovaným [INITIATOR_COUNTRY.GetAltAdjective('I')]."
+ enforce_military_access_action_notification_desc: "Jsme nuceni připojit se ke všem aktuálním [Concept('concept_war','válkám')] iniciovaným [INITIATOR_COUNTRY.GetAltAdjective('I')]." # todo: CHANGED (predtym: Jsme nuceni připojit se ke všem aktuálním [Concept('concept_war','válkám')] iniciovaným [INITIATOR_COUNTRY.GetName].)
  enforce_military_access_action_notification_third_party_name: "Vynucení vojenského přístupu v [TARGET_COUNTRY.GetAltAdjective('L')]"
  enforce_military_access_action_notification_third_party_desc: "[INITIATOR_COUNTRY.GetName] prosazuje svůj vojenský přístup v [TARGET_COUNTRY.GetAltAdjective('L')]."
  da_evangelize: "Evangelizovat"
@@ -1003,9 +1127,9 @@
  da_evangelize_action_propose_name: "Evangelizace"
  da_evangelize_action_break_name: "Přestat evangelizovat"
  da_evangelize_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] používá svoji moc jako vládce k šíření svého vlastního [Concept('concept_religion','náboženství')] v [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetAltAdjective('L')]."
- da_evangelize_action_notification_break_name: "[INITIATOR_COUNTRY.GetAdjective] evangelizace končí."
+ da_evangelize_action_notification_break_name: "[INITIATOR_COUNTRY.GetAdjective] evangelizace končí." # todo: CHANGED MINOR
  da_evangelize_action_notification_break_desc: "[INITIATOR_COUNTRY.GetName] přestala evangelizovat."
- da_evangelize_action_notification_third_party_break_name: "[INITIATOR_COUNTRY.GetAdjective] evangelizace končí v [TARGET_COUNTRY.GetAltAdjective('L')]."
+ da_evangelize_action_notification_third_party_break_name: "[INITIATOR_COUNTRY.GetAdjective] evangelizace končí v [TARGET_COUNTRY.GetAltAdjective('L')]." # todo: CHANGED MINOR
  da_evangelize_action_notification_third_party_break_desc: "[INITIATOR_COUNTRY.GetName] přestala evangelizovat v [TARGET_COUNTRY.GetAltAdjective('L')]."
  da_evangelize_action_trigger_desc_global: "Evangelizuje ve svém subjektu"
  da_evangelize_action_trigger_false_desc_global: "Není #b neevangelizující#! v jejich subjekt"
@@ -1057,9 +1181,9 @@
  da_request_knowledge_sharing_proposal_declined_desc: "[TARGET_COUNTRY.GetName] odmítlo naši žádost o sdílení znalostí."
  da_request_knowledge_sharing_proposal_notification_name: "Žádost o sdílení znalostí"
  da_request_knowledge_sharing_proposal_notification_desc: "[INITIATOR_COUNTRY.GetName] žádá, abychom sdíleli naší [Concept('concept_technology','technologie')] s nimi."
- da_request_knowledge_sharing_proposal_third_party_accepted_name: "Sdílení znalostí uděleno [INITIATOR_COUNTRY.GetAltAdjectiveNoFormatting('D')]"
+ da_request_knowledge_sharing_proposal_third_party_accepted_name: "Sdílení znalostí uděleno [INITIATOR_COUNTRY.GetNameNoFormatting]" # todo: CHANGED (predtym: Sdílení znalostí uděleno [INITIATOR_COUNTRY.GetAltAdjectiveNoFormatting('D')])
  da_request_knowledge_sharing_proposal_third_party_accepted_desc: "[INITIATOR_COUNTRY.GetName] bylo uděleno znalost o [Concept('concept_technology','technologie')] známé [TARGET_COUNTRY.GetAltAdjective('D')]."
- da_request_knowledge_sharing_proposal_third_party_declined_name: "Sdílení znalostí odmítnuto [INITIATOR_COUNTRY.GetAltAdjectiveNoFormatting('D')]"
+ da_request_knowledge_sharing_proposal_third_party_declined_name: "Sdílení znalostí odmítnuto [INITIATOR_COUNTRY.GetNameNoFormatting]" # todo: CHANGED (predtym: Sdílení znalostí odmítnuto [INITIATOR_COUNTRY.GetAltAdjectiveNoFormatting('D')])
  da_request_knowledge_sharing_proposal_third_party_declined_desc: "[INITIATOR_COUNTRY.GetName] bylo odepřeno sdílení znalostí o [Concept('concept_technology','technologie')] známých [TARGET_COUNTRY.GetAltAdjective('D')]."
  request_market_control: "Žádost o kontrolu trhu"
  request_market_control_desc: "Žádat [Concept('concept_overlord','vládce')] k povolení jeho [Concept('concept_subject','závislé zemi')] o kontrolu nad jejich [Concept('concept_market','trhem')]."
@@ -1113,9 +1237,9 @@
  da_request_support_regime_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] přijala naši žádost o podporu našeho režimu. Naše [Concept('concept_legitimacy','legitimita')] se zlepšila.."
  da_request_support_regime_proposal_declined_name: "Podpora režimu odmítnuta"
  da_request_support_regime_proposal_declined_desc: "[TARGET_COUNTRY.GetName] odmítl naši žádost o podporu našeho režimu. Naše [Concept('concept_legitimacy','legitimita')] se zvýšila jako výsledek."
- da_request_support_regime_proposal_third_party_accepted_name: "[INITIATOR_COUNTRY.GetAltAdjectiveNoFormatting('aa')] podpora režimu umožněna"
+ da_request_support_regime_proposal_third_party_accepted_name: "[INITIATOR_COUNTRY.GetAdjectiveNoFormatting] podpora režimu umožněna" # todo: CHANGED (predtym: [INITIATOR_COUNTRY.GetAltAdjectiveNoFormatting('aa')] podpora režimu umožněna)
  da_request_support_regime_proposal_third_party_accepted_desc: "[INITIATOR_COUNTRY.GetName] byla udělena podpora pro jejich režim od jejich [Concept('concept_overlord','vládce')] [TARGET_COUNTRY.GetAltAdjective('G')]."
- da_request_support_regime_proposal_third_party_declined_name: "[INITIATOR_COUNTRY.GetAltAdjectiveNoFormatting('aa')] podpora režimu odmítnuta"
+ da_request_support_regime_proposal_third_party_declined_name: "[INITIATOR_COUNTRY.GetAdjectiveNoFormatting] podpora režimu odmítnuta" # todo: CHANGED (predtym: [INITIATOR_COUNTRY.GetAltAdjectiveNoFormatting('aa')] podpora režimu odmítnuta)
  da_request_support_regime_proposal_third_party_declined_desc: "[INITIATOR_COUNTRY.GetName] bylo odepřeno podpora pro jejich režim od jejich [Concept('concept_overlord','vládce')] [TARGET_COUNTRY.GetAltAdjective('G')]."
  da_subject_request_investment_rights: "Žádat o investiční práva"
  da_subject_request_investment_rights_desc: "[Concept('concept_foreign_investment_rights','Práva na zahraniční investice')] mohou krátkodobě snížit [Concept('concept_liberty_desire','touha po svobodě')], ale umožňují [Concept('concept_subject','závislá země')] usilovat o svobodu investováním do území [Concept('concept_overlord','vládce')], čímž rychle snižují jejich [Concept('concept_economic_dependence','ekonomická závislost')]."
@@ -1126,8 +1250,8 @@
  da_subject_request_investment_rights_action_propose_name: "Žádat o investiční práva"
  da_subject_request_investment_rights_action_break_name: "Vzdat se investičních práv"
  da_subject_request_investment_rights_pact_desc: "$da_subject_request_investment_rights_desc$"
- da_subject_request_investment_rights_action_notification_break_name: "[INITIATOR_COUNTRY.GetName] ztratil [Concept('concept_foreign_investment_rights','práva na zahraniční investice')] v [TARGET_COUNTRY.GetName], avšak nadále si udržuje vlastnictví stávajících nemovitostí."
- da_subject_request_investment_rights_action_notification_break_desc: "[INITIATOR_COUNTRY.GetName] již nemá [Concept('concept_foreign_investment_rights','práva na zahraniční investice')] v [TARGET_COUNTRY.GetName]"
+ da_subject_request_investment_rights_action_notification_break_name: "[INITIATOR_COUNTRY.GetName] ztratil [Concept('concept_foreign_investment_rights','práva na zahraniční investice')] v [TARGET_COUNTRY.GetName]" # todo: CHANGED (predtym: [INITIATOR_COUNTRY.GetName] ztratil [Concept('concept_foreign_investment_rights','práva na zahraniční investice')] v [TA)
+ da_subject_request_investment_rights_action_notification_break_desc: "[INITIATOR_COUNTRY.GetName] již nemá [Concept('concept_foreign_investment_rights','práva na zahraniční investice')] v [TARGET_COUNTRY.GetName]." # todo: CHANGED (predtym: [INITIATOR_COUNTRY.GetName] již nemá [Concept('concept_foreign_investment_rights','práva na zahraniční investice')] v [T)
  da_subject_request_investment_rights_action_notification_third_party_break_name: "[Concept('concept_foreign_investment_rights','Práva na zahraniční investice')] odstoupeno"
  da_subject_request_investment_rights_action_notification_third_party_break_desc: "[INITIATOR_COUNTRY.GetName] se vzdal(a) svých [Concept('concept_foreign_investment_rights','práv na zahraniční investice')] v [TARGET_COUNTRY.GetName]." # todo: CONCEPT CASE
  da_subject_request_investment_rights_proposal_notification_name: "$da_subject_request_investment_rights$"
@@ -1150,9 +1274,9 @@
  da_overlord_grant_investment_rights: "Investiční práva"
  da_overlord_grant_investment_rights_action_name: "$da_overlord_grant_investment_rights$"
  da_overlord_grant_investment_rights_desc: "$da_subject_request_investment_rights_desc$"
- da_overlord_grant_investment_rights_action_notification_name: "[INITIATOR_COUNTRY.GetName] získává [Concept('concept_foreign_investment_rights','práva na zahraniční investice')] v [TARGET_COUNTRY.GetName]"
+ da_overlord_grant_investment_rights_action_notification_name: "[INITIATOR_COUNTRY.GetName] získává [Concept('concept_foreign_investment_rights','$concept_foreign_investment_rights_short|q$')] v [TARGET_COUNTRY.GetName]" # todo: CHANGED (predtym: [INITIATOR_COUNTRY.GetName] získává [Concept('concept_foreign_investment_rights','práva na zahraniční investice')] v [TA)
  da_overlord_grant_investment_rights_action_notification_desc: "[INITIATOR_COUNTRY.GetName] má [Concept('concept_foreign_investment_rights','práva na zahraniční investice')] v [TARGET_COUNTRY.GetName]"
- da_overlord_grant_investment_rights_action_notification_third_party_name: "[INITIATOR_COUNTRY.GetName] získal [Concept('concept_foreign_investment_rights','práva na zahraniční investice')] v [TARGET_COUNTRY.GetName]"
+ da_overlord_grant_investment_rights_action_notification_third_party_name: "[INITIATOR_COUNTRY.GetName] získal [Concept('concept_foreign_investment_rights','$concept_foreign_investment_rights_short|q$')] v [TARGET_COUNTRY.GetName]" # todo: CHANGED (predtym: [INITIATOR_COUNTRY.GetName] získal [Concept('concept_foreign_investment_rights','práva na zahraniční investice')] v [TAR)
  da_overlord_grant_investment_rights_action_notification_third_party_desc: "[INITIATOR_COUNTRY.GetName] má [Concept('concept_foreign_investment_rights','práva na zahraniční investice')] v [TARGET_COUNTRY.GetName]"
  da_overlord_grant_investment_rights_action_propose_name: "Udělte investiční práva"
  da_overlord_grant_investment_rights_action_break_name: "Zrušit investiční práva"
@@ -1210,9 +1334,9 @@
  protectorate_proposal_third_party_accepted_desc: "[TARGET_COUNTRY.GetName] souhlasí, aby se stali [Concept('concept_protectorate','protektorátem')] [INITIATOR_COUNTRY.GetAltAdjective('G')]."
  protectorate_proposal_third_party_declined_name: "Podřízení odmítnuto"
  protectorate_proposal_third_party_declined_desc: "[TARGET_COUNTRY.GetName] odmítla stát se [Concept('concept_protectorate','protektorátem')] [INITIATOR_COUNTRY.GetAltAdjective('G')]."
- protectorate_action_third_party_notification_break_name: "Nezávislost udělena"
- protectorate_action_third_party_notification_break_desc: "[INITIATOR_COUNTRY.GetName] ukončila status [Concept('concept_protectorate','protektorátu')] [TARGET_COUNTRY.GetAltAdjective('G')], čímž jim udělila plnou nezávislost."
- protectorate_proposal_third_party_break_accepted_name: "Nezávislosť udělena"
+ protectorate_action_notification_third_party_break_name: "[TARGET_COUNTRY.GetName] získává nezávislost" # todo: NEW TRANSLATION
+ protectorate_action_notification_third_party_break_desc: "[INITIATOR_COUNTRY.GetName] ukončil status [concept_protectorate] země [TARGET_COUNTRY.GetName] a udělil jí plnou nezávislost." # todo: NEW TRANSLATION
+ protectorate_proposal_third_party_break_accepted_name: "[INITIATOR_COUNTRY.GetName] získává nezávislost" # todo: CHANGED (predtym: Nezávislosť udělena)
  protectorate_proposal_third_party_break_accepted_desc: "[TARGET_COUNTRY.GetName] ukončil status [Concept('concept_protectorate','protektorátu')] [INITIATOR_COUNTRY.GetAltAdjective('G')], čímž jim udělil plnou nezávislost."
  protectorate_proposal_third_party_break_declined_name: "Nezávislost odmítnuta"
  protectorate_proposal_third_party_break_declined_desc: "[TARGET_COUNTRY.GetName] odmítl ukončit status [Concept('concept_protectorate','protektorátu')] [INITIATOR_COUNTRY.GetAltAdjective('G')]."
@@ -1228,7 +1352,7 @@
  become_protectorate: "Požadovat stát se protektorátem"
  become_protectorate_action_name: "Žádat o stání se [Concept('concept_protectorate','protektorátem')]"
  become_protectorate_action_propose_name: "Žádat o stání se [Concept('concept_protectorate','protektorátem')]"
- become_protectorate_desc: "Umožňuje vztahu [Concept('concept_protectorate','protektorátu')] mezi dvěma [Concept('concept_country', 'zeměmi')], přičemž navrhující země se stává [Concept('concept_subject','závislou zemí')]." # todo: CHANGED (predtym: Umožňuje vztahu [Concept('concept_protectorate','protektorátu')] mezi dvěma [Concept('concept_country', 'zeměmi')], přič)
+ become_protectorate_desc: "Umožňuje vztahu [Concept('concept_protectorate','protektorátu')] mezi dvěma [Concept('concept_country', 'zeměmi')], přičemž navrhující země se stává [Concept('concept_subject','závislou zemí')]." # todo: CHANGED (predtym: Umožňuje vztahu [Concept('concept_protectorate','protektorátu')] [concept_subject_type] mezi dvěma [Concept('concept_cou)
  become_protectorate_proposal_notification_name: "Žádost o staní se [Concept('concept_protectorate','protektorátem')]"
  become_protectorate_proposal_notification_desc: "[INITIATOR_COUNTRY.GetName] se chce podřídit a stát se naším [Concept('concept_protectorate','protektorátem')]."
  become_protectorate_proposal_notification_effects_desc: "Pokud akceptujeme, stanou se naší závislou zemí."
@@ -1245,7 +1369,7 @@
  puppet_action_propose_name: "Udělat [Concept('concept_puppet','loutka')]"
  puppet_action_break_name: "Udělit nezávislost"
  puppet_action_ask_to_break_name: "Žádat o nezávislost"
- puppet_desc: "Zakládá vztah [Concept('concept_subject','závislé země')] [Concept('concept_puppet','loutka')]  mezi dvěma [Concept('concept_country', 'zěmemi')]."
+ puppet_desc: "Zakládá vztah [Concept('concept_subject','závislé země')] [Concept('concept_puppet','loutka')]  mezi dvěma [Concept('concept_country', 'zěmemi')]." # todo: CHANGED (predtym: Zakládá vztah [Concept('concept_subject_type','závislé země')] [Concept('concept_puppet','loutka')] mezi dvěma [Concept()
  puppet_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName] je [Concept('concept_puppet','loutka')] [SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName]."
  puppet_action_notification_name: "Požadovat stát se [Concept('concept_puppet','loutkou')]" # todo: CONCEPT CASE
  puppet_action_notification_desc: "[INITIATOR_COUNTRY.GetName] požaduje, abychom se podřídili a stali se [Concept('concept_puppet','loutkou')]."
@@ -1258,7 +1382,7 @@
  puppet_proposal_break_accepted_desc: "[TARGET_COUNTRY.GetName] přijala žádost o ukončení našeho statusu [Concept('concept_puppet','loutky')]. Znovu jsme nezávislí."
  puppet_proposal_break_declined_name: "Odmítnutí nezávislosti"
  puppet_proposal_break_declined_desc: "[TARGET_COUNTRY.GetName] odmítla požadavek ukončit náš status [Concept('concept_puppet','loutky')]."
- puppet_proposal_third_party_break_accepted_name: "Nezávislost udělena"
+ puppet_proposal_third_party_break_accepted_name: "[INITIATOR_COUNTRY.GetName] získává nezávislost" # todo: CHANGED (predtym: Nezávislost udělena)
  puppet_proposal_third_party_break_accepted_desc: "[TARGET_COUNTRY.GetName] ukončil jejich status [Concept('concept_puppet','loutky')] s [INITIATOR_COUNTRY.GetAltAdjective('I')], což jim udělilo plnou nezávislost."
  puppet_proposal_third_party_break_declined_name: "Nezávislost odmítnuta"
  puppet_proposal_third_party_break_declined_desc: "[TARGET_COUNTRY.GetName] odmítl ukončit svůj status [Concept('concept_puppet','loutky')] s [INITIATOR_COUNTRY.GetAltAdjective('I')]."
@@ -1279,7 +1403,7 @@
  tributary_action_propose_name: "Udělat [Concept('concept_tributary','tributářem')]"
  tributary_action_break_name: "Udělte nezávislost"
  tributary_action_ask_to_break_name: "Požadovat nezávislost"
- tributary_desc: "Umožňuje [Concept('concept_tributary','tributářství')] mezi dvěma [Concept('concept_country', 'zeměmi')]."
+ tributary_desc: "Umožňuje [Concept('concept_tributary','tributářství')] mezi dvěma [Concept('concept_country', 'zeměmi')]." # todo: CHANGED (predtym: Umožňuje [Concept('concept_tributary','tributářství')] [concept_subject_type] mezi dvěma [Concept('concept_country', 'ze)
  tributary_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName] je [Concept('concept_tributary','tributářem')] [SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetAltAdjective('G')]."
  tributary_action_notification_name: "$tributary_proposal_notification_name$"
  tributary_action_notification_desc: "$tributary_proposal_notification_desc$"
@@ -1303,9 +1427,9 @@
  tributary_proposal_third_party_accepted_desc: "[TARGET_COUNTRY.GetName] souhlasila stát se [Concept('concept_tributary','tributářem')] [INITIATOR_COUNTRY.GetAltAdjective('A')]."
  tributary_proposal_third_party_declined_name: "Podrobení odmítnuto"
  tributary_proposal_third_party_declined_desc: "[TARGET_COUNTRY.GetName] odmítl stát se [Concept('concept_tributary','tributářem')] [INITIATOR_COUNTRY.GetAltAdjective('A')]."
- tributary_action_third_party_notification_break_name: "Nezávislost udělena"
- tributary_action_third_party_notification_break_desc: "[INITIATOR_COUNTRY.GetName] ukončil status [Concept('concept_tributary','tributářství')] [TARGET_COUNTRY.GetAltAdjective('G')], udělující jim plnou nezávislost."
- tributary_proposal_third_party_break_accepted_name: "Nezávislost udělena"
+ tributary_action_notification_third_party_break_name: "[TARGET_COUNTRY.GetName] získává nezávislost" # todo: NEW TRANSLATION
+ tributary_action_notification_third_party_break_desc: "[INITIATOR_COUNTRY.GetName] ukončil status [concept_tributary] země [TARGET_COUNTRY.GetName] a udělil jí plnou nezávislost." # todo: NEW TRANSLATION
+ tributary_proposal_third_party_break_accepted_name: "[INITIATOR_COUNTRY.GetName] získává nezávislost" # todo: CHANGED (predtym: Nezávislost udělena)
  tributary_proposal_third_party_break_accepted_desc: "[TARGET_COUNTRY.GetName] ukončila status [Concept('concept_tributary','tributářství')] [INITIATOR_COUNTRY.GetAltAdjective('A')], čímž jim udělila plnou nezávislost."
  tributary_proposal_third_party_break_declined_name: "Odmítnutí nezávislosti"
  tributary_proposal_third_party_break_declined_desc: "[TARGET_COUNTRY.GetName] odmítlo ukončit status [Concept('concept_tributary','tributářství')] [INITIATOR_COUNTRY.GetAltAdjective('A')]."
@@ -1321,7 +1445,7 @@
  become_tributary: "Žádost o stát se tributárním"
  become_tributary_action_name: "Žádost o staní se [Concept('concept_tributary','tributářem')]"
  become_tributary_action_propose_name: "Žádost o status [Concept('concept_tributary','tributáře')]"
- become_tributary_desc: "Umožňuje [Concept('concept_tributary','tributářský')] vztah mezi dvěma [Concept('concept_country', 'zeměmi')], kde země nabízející se stává [Concept('concept_subject','závislou zemí')]."
+ become_tributary_desc: "Umožňuje [Concept('concept_tributary','tributářský')] vztah mezi dvěma [Concept('concept_country', 'zeměmi')], kde země nabízející se stává [Concept('concept_subject','závislou zemí')]." # todo: CHANGED (predtym: Umožňuje [Concept('concept_tributary','tributářský')] [concept_subject_type] vztah mezi dvěma [Concept('concept_country')
  become_tributary_proposal_notification_name: "Žádost o stání se [Concept('concept_tributary','tributářem')]"
  become_tributary_proposal_notification_desc: "[INITIATOR_COUNTRY.GetName] si přeje předložit, aby se stali naším [Concept('concept_tributary','tributářem')]."
  become_tributary_proposal_notification_effects_desc: "Pokud souhlasíme, stanou se naší závislou zemí."
@@ -1338,7 +1462,7 @@
  vassal_action_propose_name: "Změnit na [Concept('concept_vassal','vazalství')]"
  vassal_action_break_name: "Udělte nezávislost"
  vassal_action_ask_to_break_name: "Požadovat nezávislost"
- vassal_desc: "Umožňuje [Concept('concept_vassal','vazalský')] vztah mezi dvěma [Concept('concept_country', 'zeměmi')]."
+ vassal_desc: "Umožňuje [Concept('concept_vassal','vazalský')] vztah mezi dvěma [Concept('concept_country', 'zeměmi')]." # todo: CHANGED (predtym: Umožňuje [Concept('concept_vassal','vazalský')] [concept_subject_type] vztah mezi dvěma [Concept('concept_country', 'zem)
  vassal_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName] je [Concept('concept_vassal','vazalem')] [SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetAltAdjective('G')]."
  vassal_action_notification_name: "Žádat o staní se [Concept('concept_vassal','vazalem')]"
  vassal_action_notification_desc: "[INITIATOR_COUNTRY.GetName] požaduje, abychom se jim podřídili a stali se [Concept('concept_vassal','vazalem')]."
@@ -1351,7 +1475,7 @@
  vassal_proposal_break_accepted_desc: "[TARGET_COUNTRY.GetName] akceptovalo požadavek na ukončení našeho statutu [Concept('concept_vassal','vazalství')]. Znovu jsme nezávislí."
  vassal_proposal_break_declined_name: "Nezávislost odmítnuta"
  vassal_proposal_break_declined_desc: "[TARGET_COUNTRY.GetName] odmítla požadavek ukončit náš [Concept('concept_vassal','vazalský')] status."
- vassal_proposal_third_party_break_accepted_name: "Nezávislost udělena"
+ vassal_proposal_third_party_break_accepted_name: "[INITIATOR_COUNTRY.GetName] získává nezávislost" # todo: CHANGED (predtym: Nezávislost udělena)
  vassal_proposal_third_party_break_accepted_desc: "[TARGET_COUNTRY.GetName] ukončila status [Concept('concept_vassal','vazalství')] s [INITIATOR_COUNTRY.GetAltAdjective('I')], čímž jim udělila plnou nezávislost."
  vassal_proposal_third_party_break_declined_name: "Návrh na nezávislost odmítnut"
  vassal_proposal_third_party_break_declined_desc: "[TARGET_COUNTRY.GetName] odmítlo požadavek na ukončení jejich statusu [Concept('concept_vassal','vazalství')] s [INITIATOR_COUNTRY.GetAltAdjective('I')]."
@@ -1365,7 +1489,7 @@
  personal_union_action_ask_to_break_name: "Požadovat nezávislost"
  personal_union_desc: "Ustanovuje [Concept('concept_personal_union','personální unii')], [Concept('concept_subject_type','závislý')] vztah mezi dvěma [Concept('concept_country','zeměmi')]."
  personal_union_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName] je v [Concept('concept_personal_union','personální unii')] pod [SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetAltAdjective('I')]."
- personal_union_action_notification_name: "Požadavek na unii"
+ personal_union_action_notification_name: "Požadavek na [Concept('concept_personal_union','personální unii')]" # todo: CHANGED (predtym: Požadavek na unii)
  personal_union_action_notification_desc: "[INITIATOR_COUNTRY.GetName] požaduje, abychom se podřídili a vytvořili [Concept('concept_personal_union','personální unii')]."
  personal_union_action_notification_break_name: "Nezávislost udělena"
  personal_union_action_notification_break_desc: "[INITIATOR_COUNTRY.GetName] ukončuje naši [Concept('concept_personal_union','personální unii')]. Jsme znovu nezávislí."
@@ -1376,7 +1500,7 @@
  personal_union_proposal_break_accepted_desc: "[TARGET_COUNTRY.GetName] přijímá požadavek na ukončení naší [Concept('concept_personal_union','personální unie')|l]. Znovu jsme nezávislí." # todo: CONCEPT CASE
  personal_union_proposal_break_declined_name: "Odmítnutí nezávislosti"
  personal_union_proposal_break_declined_desc: "[TARGET_COUNTRY.GetName] odmítá požadavek na ukončení naší [Concept('concept_personal_union','personální unie')|l]." # todo: CONCEPT CASE
- personal_union_proposal_third_party_break_accepted_name: "Nezávislost udělena"
+ personal_union_proposal_third_party_break_accepted_name: "[INITIATOR_COUNTRY.GetName] získává nezávislost" # todo: CHANGED (predtym: Nezávislost udělena)
  personal_union_proposal_third_party_break_accepted_desc: "[TARGET_COUNTRY.GetName] ukončuje jejich [Concept('concept_personal_union','personální unií')] s [INITIATOR_COUNTRY.GetAltAdjectiveNoFlag('I')], čímž jim udělil plnou nezávislost."
  personal_union_proposal_third_party_break_declined_name: "Návrh na nezávislost odmítnuta"
  personal_union_proposal_third_party_break_declined_desc: "[TARGET_COUNTRY.GetName] odmítá ukončit svou [Concept('concept_personal_union','personální unií')] s [INITIATOR_COUNTRY.GetAltAdjectiveNoFlag('I')]."
@@ -1385,7 +1509,7 @@
  dominion_action_propose_name: "Udělat [Concept('concept_dominion','dominium')|l]"
  dominion_action_break_name: "Udělte nezávislost"
  dominion_action_ask_to_break_name: "Požadavek na nezávislost"
- dominion_desc: "Zakládá vztah [Concept('concept_dominion','dominium')] mezi dvěma [Concept('concept_country', 'zeměmi')]."
+ dominion_desc: "Zakládá vztah [Concept('concept_dominion','dominium')] mezi dvěma [Concept('concept_country', 'zeměmi')]." # todo: CHANGED (predtym: Zakládá vztah [Concept('concept_dominion','dominium')] [concept_subject_type] mezi dvěma [Concept('concept_country', 'ze)
  dominion_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName] je [Concept('concept_dominion','dominiem')] [SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetAltAdjective('G')]."
  dominion_action_notification_name: "Požadavek na [Concept('concept_dominion','dominium')|l]"
  dominion_action_notification_desc: "[INITIATOR_COUNTRY.GetName] požaduje, abychom se podřídili a stali se jejich [Concept('concept_dominion','dominiem')]."
@@ -1398,9 +1522,9 @@
  dominion_proposal_break_accepted_desc: "[TARGET_COUNTRY.GetName] přijalo požadavek na ukončení našeho statusu [Concept('concept_dominion','dominia')]. Znovu jsme nezávislí."
  dominion_proposal_break_declined_name: "Nezávislost odmítnuta"
  dominion_proposal_break_declined_desc: "[TARGET_COUNTRY.GetName] odmítlo požadavek na ukončení našeho statusu [Concept('concept_dominion','dominia')]."
- dominion_action_third_party_notification_break_name: "Nezávislost udělena"
- dominion_action_third_party_notification_break_desc: "[INITIATOR_COUNTRY.GetName] ukončila status [Concept('concept_dominion','dominia')] [TARGET_COUNTRY.GetAltAdjective('A')], čímž jim udělila plnou nezávislost."
- dominion_proposal_third_party_break_accepted_name: "Nezávislost udělena"
+ dominion_action_notification_third_party_break_name: "[TARGET_COUNTRY.GetName] získává nezávislost" # todo: NEW TRANSLATION
+ dominion_action_notification_third_party_break_desc: "[INITIATOR_COUNTRY.GetName] ukončil status [concept_dominion] země [TARGET_COUNTRY.GetName] a udělil jí plnou nezávislost." # todo: NEW TRANSLATION
+ dominion_proposal_third_party_break_accepted_name: "[INITIATOR_COUNTRY.GetName] získává nezávislost" # todo: CHANGED (predtym: Nezávislost udělena)
  dominion_proposal_third_party_break_accepted_desc: "[TARGET_COUNTRY.GetName] ukončila status [Concept('concept_dominion','dominia')] [INITIATOR_COUNTRY.GetAltAdjective('G')], čímž jim udělila plnou nezávislost."
  dominion_proposal_third_party_break_declined_name: "Nezávislost odmítnuta"
  dominion_proposal_third_party_break_declined_desc: "[TARGET_COUNTRY.GetName] odmítl ukončit stav [Concept('concept_dominion','dominia')] [INITIATOR_COUNTRY.GetAltAdjective('G')]."
@@ -1432,7 +1556,7 @@
  vassal_trigger_false_desc_third: "[COUNTRY.GetNameNoFlag] #b není#! [Concept('concept_vassal','vazalem')] [AddTextIf(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self),TARGET_COUNTRY.GetNameNoFlag)][AddTextIf(Not(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self)),TARGET_COUNTRY.GetName)]"
  become_dominion: "Žádost o stát se dominiem"
  become_dominion_action_name: "Požádat o stání se [Concept('concept_dominion','dominiem')]"
- become_dominion_desc: "Umožňuje vztah [Concept('concept_dominion','dominia')] mezi dvěma [Concept('concept_country', 'zeměmi')], přičemž navrhující země se stává [Concept('concept_subject','závislou zemí')]."
+ become_dominion_desc: "Umožňuje vztah [Concept('concept_dominion','dominia')] mezi dvěma [Concept('concept_country', 'zeměmi')], přičemž navrhující země se stává [Concept('concept_subject','závislou zemí')]." # todo: CHANGED (predtym: Umožňuje vztah [Concept('concept_dominion','dominia')] [concept_subject_type] mezi dvěma [Concept('concept_country', 'ze)
  become_dominion_proposal_notification_name: "Žádost o status [Concept('concept_dominion','dominia')]"
  become_dominion_proposal_notification_desc: "[INITIATOR_COUNTRY.GetName] si přeje podřídit se nám a stát se naším [Concept('concept_dominion','dominiem')]."
  become_dominion_proposal_notification_effects_desc: "Pokud souhlasíme, stanou se naší závislou zemí."
@@ -1449,7 +1573,7 @@
  colony_action_propose_name: "Změnit na [Concept('concept_colony_subject','kolonii')]"
  colony_action_break_name: "Udělit nezávislost"
  colony_action_ask_to_break_name: "Žádat o nezávislost"
- colony_desc: "Umožňuje [Concept('concept_colony_subject','koloniální')] vztah mezi dvěma [Concept('concept_country', 'zeměmi')]."
+ colony_desc: "Umožňuje [Concept('concept_colony_subject','koloniální')] vztah mezi dvěma [Concept('concept_country', 'zeměmi')]." # todo: CHANGED (predtym: Umožňuje [Concept('concept_colony_subject','koloniální')] [concept_subject_type] vztah mezi dvěma [Concept('concept_coun)
  colony_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName] je [Concept('concept_colony_subject','kolonii')] [SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetAltAdjective('G')]."
  colony_action_notification_name: "Požadavek na stání se [Concept('concept_colony_subject','kolonii')]"
  colony_action_notification_desc: "[INITIATOR_COUNTRY.GetName] požaduje, abychom se podrobili a stali se jejich [Concept('concept_colony_subject','kolonii')]."
@@ -1462,9 +1586,9 @@
  colony_proposal_break_accepted_desc: "[TARGET_COUNTRY.GetName] přijala požadavek na ukončení našeho statusu [Concept('concept_colony_subject','kolonie')|l]. Jsme znovu nezávislí."
  colony_proposal_break_declined_name: "Nezávislost odmítnuta"
  colony_proposal_break_declined_desc: "[TARGET_COUNTRY.GetName] odmítla požadavek ukončit náš status [Concept('concept_colony_subject','kolonie')|l]."
- colony_action_third_party_notification_break_name: "Nezávislost udělena"
- colony_action_third_party_notification_break_desc: "[INITIATOR_COUNTRY.GetName] ukončilo status [Concept('concept_colony_subject','kolonie')|l] [TARGET_COUNTRY.GetAltAdjective('G')], čímž jim udělilo plnou nezávislost."
- colony_proposal_third_party_break_accepted_name: "Nezávislost udělena"
+ colony_action_notification_third_party_break_name: "[TARGET_COUNTRY.GetName] získává nezávislost" # todo: NEW TRANSLATION
+ colony_action_notification_third_party_break_desc: "[INITIATOR_COUNTRY.GetName] ukončil status [concept_colony_subject] země [TARGET_COUNTRY.GetName] a udělil jí plnou nezávislost." # todo: NEW TRANSLATION
+ colony_proposal_third_party_break_accepted_name: "[INITIATOR_COUNTRY.GetName] získává nezávislost" # todo: CHANGED (predtym: Nezávislost udělena)
  colony_proposal_third_party_break_accepted_desc: "[TARGET_COUNTRY.GetName] ukončil status [Concept('concept_colony_subject','kolonie')] [INITIATOR_COUNTRY.GetAltAdjective('G')], čímž jim udělil plnou nezávislost."
  colony_proposal_third_party_break_declined_name: "Odmítnutí nezávislosti"
  colony_proposal_third_party_break_declined_desc: "[TARGET_COUNTRY.GetName] odmítlo ukončit status [Concept('concept_colony_subject','kolonie')] [INITIATOR_COUNTRY.GetAltAdjective('G')]."
@@ -1507,7 +1631,7 @@
  chartered_company_action_propose_name: "Udělat [Concept('concept_chartered_company','akciovou společnost')]"
  chartered_company_action_break_name: "Udělte nezávislost"
  chartered_company_action_ask_to_break_name: "Požadovat nezávislost"
- chartered_company_desc: "Navazuje vztah typu [Concept('concept_chartered_company','akciové společnosti')|l] mezi dvěma [Concept('concept_country', 'zeměmi')]." # todo: CONCEPT CASE
+ chartered_company_desc: "Navazuje vztah typu [Concept('concept_chartered_company','akciové společnosti')|l] mezi dvěma [Concept('concept_country', 'zeměmi')]." # todo: CHANGED (predtym: Navazuje vztah typu [Concept('concept_chartered_company','akciové společnosti')|l] [concept_subject_type] mezi dvěma [Co)
  chartered_company_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName] je [Concept('concept_chartered_company','akciovou společností')] [SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetAltAdjective('G')]."
  chartered_company_action_notification_name: "Požadavek na [Concept('concept_chartered_company','akciovou společnost')]"
  chartered_company_action_notification_desc: "[INITIATOR_COUNTRY.GetName] požaduje, abychom se podřídili a stali se jejich [Concept('concept_chartered_company','akciovou společností')]."
@@ -1520,9 +1644,9 @@
  chartered_company_proposal_break_accepted_desc: "[TARGET_COUNTRY.GetName] přijala požadavek na ukončení našeho statusu [Concept('concept_chartered_company','akciové společnosti')]. Znovu jsme nezávislí."
  chartered_company_proposal_break_declined_name: "Odmítnutí nezávislosti"
  chartered_company_proposal_break_declined_desc: "[TARGET_COUNTRY.GetName] odmítlo požadavek na ukončení našeho statusu [Concept('concept_chartered_company','akciové společnosti')]."
- chartered_company_action_third_party_notification_break_name: "Nezávislost udělena"
- chartered_company_action_third_party_notification_break_desc: "[INITIATOR_COUNTRY.GetName] ukončil status [Concept('concept_chartered_company','akciové společnosti')] [TARGET_COUNTRY.GetAltAdjective('A')], čímž jim udělila plnou nezávislost."
- chartered_company_proposal_third_party_break_accepted_name: "Nezávislosť udělena"
+ chartered_company_action_notification_third_party_break_name: "[TARGET_COUNTRY.GetName] získává nezávislost" # todo: NEW TRANSLATION
+ chartered_company_action_notification_third_party_break_desc: "[INITIATOR_COUNTRY.GetName] ukončil status [concept_chartered_company] země [TARGET_COUNTRY.GetName] a udělil jí plnou nezávislost." # todo: NEW TRANSLATION
+ chartered_company_proposal_third_party_break_accepted_name: "[INITIATOR_COUNTRY.GetName] získává nezávislost" # todo: CHANGED (predtym: Nezávislosť udělena)
  chartered_company_proposal_third_party_break_accepted_desc: "[TARGET_COUNTRY.GetName] ukončila status [Concept('concept_chartered_company','akciové společnosti')] [INITIATOR_COUNTRY.GetAltAdjective('G')], čímž jim udělila plnou nezávislost."
  chartered_company_proposal_third_party_break_declined_name: "Odmítnutí nezávislosti"
  chartered_company_proposal_third_party_break_declined_desc: "[TARGET_COUNTRY.GetName] odmítla ukončit status [Concept('concept_chartered_company','akciové společnosti')] [INITIATOR_COUNTRY.GetAltAdjective('G')]."
@@ -1578,7 +1702,7 @@
  crown_land_proposal_break_accepted_desc: "[TARGET_COUNTRY.GetName] přijal požadavek ukončit náš status [Concept('concept_crown_land_subject','korunního území')]. Jsme opět nezávislí."
  crown_land_proposal_break_declined_name: "Nezávislost odmítnuta"
  crown_land_proposal_break_declined_desc: "[TARGET_COUNTRY.GetName] odmítl požadavek ukončit náš status [Concept('concept_crown_land_subject','korunního území')]."
- crown_land_proposal_third_party_break_accepted_name: "Nezávislost udělena"
+ crown_land_proposal_third_party_break_accepted_name: "[INITIATOR_COUNTRY.GetName] získává nezávislost" # todo: CHANGED (predtym: Nezávislost udělena)
  crown_land_proposal_third_party_break_accepted_desc: "[TARGET_COUNTRY.GetName] ukončil svůj status [Concept('concept_crown_land_subject','korunního území')] u [INITIATOR_COUNTRY.GetName], čímž jim udělil plnou nezávislost."
  crown_land_proposal_third_party_break_declined_name: "Nezávislost odmítnuta"
  crown_land_proposal_third_party_break_declined_desc: "[TARGET_COUNTRY.GetName] odmítl ukončit svůj status [Concept('concept_crown_land_subject','korunního území')] vůči [INITIATOR_COUNTRY.GetName]."
@@ -1608,6 +1732,21 @@
  violate_sovereignty_proposal_third_party_accepted_desc: "[TARGET_COUNTRY.GetName] se připojilo k [Concept('concept_war','válce')] na straně [INITIATOR_COUNTRY.GetName]!"
  violate_sovereignty_proposal_third_party_declined_name: "[TARGET_COUNTRY.GetName] odmítla ultimátum [INITIATOR_COUNTRY.GetAltAdjective('G')]"
  violate_sovereignty_proposal_third_party_declined_desc: "[TARGET_COUNTRY.GetName] se přidala k [Concept('concept_war','válce')] proti [INITIATOR_COUNTRY.GetAltAdjective('D')]!"
+ seek_royal_marriage: "Navrhnout královský sňatek" # todo: NEW TRANSLATION
+ seek_royal_marriage_action_name: "Navrhnout královský sňatek" # todo: NEW TRANSLATION
+ seek_royal_marriage_action_propose_name: "Navrhnout královský sňatek" # todo: NEW TRANSLATION
+ seek_royal_marriage_desc: "Uspořádá sňatek mezi [concept_ruler] nebo [concept_heir] jedné [concept_country] a členem královského rodu jiné země." # todo: NEW TRANSLATION
+ seek_royal_marriage_proposal_accepted_name: "[TARGET_COUNTRY.GetName] přijímá náš sňatkový návrh" # todo: NEW TRANSLATION
+ seek_royal_marriage_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] přijal náš návrh, aby [INITIATOR_COUNTRY.GetCustom('ruler_or_heir')] vstoupil(a) do manželství s členem rodu [TARGET_COUNTRY.GetRuler.GetLastName]" # todo: NEW TRANSLATION
+ seek_royal_marriage_proposal_declined_name: "[TARGET_COUNTRY.GetName] odmítá náš sňatkový návrh" # todo: NEW TRANSLATION
+ seek_royal_marriage_proposal_declined_desc: "[TARGET_COUNTRY.GetName] odmítl náš návrh na sňatek mezi [INITIATOR_COUNTRY.GetCustom('ruler_or_heir')] a členem rodu [TARGET_COUNTRY.GetRuler.GetLastName]" # todo: NEW TRANSLATION
+ seek_royal_marriage_proposal_notification_name: "Sňatkový návrh" # todo: NEW TRANSLATION
+ seek_royal_marriage_proposal_notification_desc: "[INITIATOR_COUNTRY.GetName] si přeje uspořádat sňatek mezi [INITIATOR_COUNTRY.GetCustom('ruler_or_heir')] a členem rodu [TARGET_COUNTRY.GetRuler.GetLastName]" # todo: NEW TRANSLATION
+ seek_royal_marriage_proposal_notification_effects_desc: "Pokud souhlasíme, člen našeho královského rodu vstoupí do manželství s členem jejich rodu, čímž se zlepší [concept_relations] mezi našimi zeměmi" # todo: NEW TRANSLATION
+ ruler_marriage_string_tt: "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullName]" # todo: NEW TRANSLATION
+ heir_marriage_string_tt: "[ROOT.GetCountry.GetHeir.GetPrimaryRoleTitle] [ROOT.GetCountry.GetHeir.GetFullName]" # todo: NEW TRANSLATION
+ ruler_already_married_tt: "[concept_ruler] ještě #b není#! ženatý/vdaná" # todo: NEW TRANSLATION
+ heir_already_married_tt: "[concept_heir] ještě #b není#! ženatý/vdaná" # todo: NEW TRANSLATION
  personal_union_trigger_desc_global: "Je v [Concept('concept_personal_union','personální unií')]"
  personal_union_trigger_false_desc_global: "#b Není#! v [Concept('concept_personal_union','personální unií')]"
  personal_union_trigger_desc_first: "[TARGET_COUNTRY.GetName] je v [Concept('concept_personal_union','personální unií')] s [COUNTRY.GetAltAdjectiveNoFlag('I')]"
@@ -1694,9 +1833,9 @@
  da_increase_autonomy_of_self_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] akceptovalo naši žádost o zvýšení [Concept('concept_autonomy','autonomie')]. Nyní jsme považováni za [INITIATOR_COUNTRY.GetSubjectType.GetHigherAutonomySubjectType(INITIATOR_COUNTRY.Self).GetName]."
  da_increase_autonomy_of_self_proposal_declined_name: "Zvýšená autonomie odmítnuta"
  da_increase_autonomy_of_self_proposal_declined_desc: "[TARGET_COUNTRY.GetName] odmítl naši žádost o zvýšení [Concept('concept_autonomy','autonomie')]. Naše [Concept('concept_liberty_desire','touha po svobodě')|l] se zvýšila jako výsledek."
- da_increase_autonomy_of_self_proposal_third_party_accepted_name: "[INITIATOR_COUNTRY.GetAltAdjectiveNoFormatting('aa')] autonomie udělena"
+ da_increase_autonomy_of_self_proposal_third_party_accepted_name: "[INITIATOR_COUNTRY.GetAdjectiveNoFormatting] autonomie udělena" # todo: CHANGED (predtym: [INITIATOR_COUNTRY.GetAltAdjectiveNoFormatting('aa')] autonomie udělena)
  da_increase_autonomy_of_self_proposal_third_party_accepted_desc: "[INITIATOR_COUNTRY.GetAltAdjective('D')] byla povolena větší míra [Concept('concept_autonomy','autonomie')] od [Concept('concept_overlord','vládce')] [TARGET_COUNTRY.GetAltAdjective('G')] a nyní je považována za [INITIATOR_COUNTRY.GetSubjectType.GetHigherAutonomySubjectType(INITIATOR_COUNTRY.Self).GetName]."
- da_increase_autonomy_of_self_proposal_third_party_declined_name: "[INITIATOR_COUNTRY.GetAltAdjectiveNoFormatting('aa')] autonomie odmítnuta"
+ da_increase_autonomy_of_self_proposal_third_party_declined_name: "[INITIATOR_COUNTRY.GetAdjectiveNoFormatting] autonomie odmítnuta" # todo: CHANGED (predtym: [INITIATOR_COUNTRY.GetAltAdjectiveNoFormatting('aa')] autonomie odmítnuta)
  da_increase_autonomy_of_self_proposal_third_party_declined_desc: "[INITIATOR_COUNTRY.GetAltAdjective('D')] byla odmítnuta větší míra [Concept('concept_autonomy','autonomie')] od [Concept('concept_overlord','vládce')] [TARGET_COUNTRY.GetAltAdjective('G')]."
  da_increase_autonomy_of_subject_action_name: "$da_increase_autonomy_action_name$"
  da_increase_autonomy_of_subject: "$da_increase_autonomy$"
@@ -1744,6 +1883,11 @@
  request_support_independence_proposal_third_party_declined_name: "$request_support_independence$ odmítnuta"
  request_support_independence_proposal_third_party_declined_desc: "[INITIATOR_COUNTRY.GetName] odmítlo podpořit nezávislost [TARGET_COUNTRY.GetAltAdjective('G')]."
  ADD_LIBERTY_DESIRE_TO_ALL_SUBJECTS: "Zvyšuje [Concept('concept_liberty_desire','touha po svobodě')] ve všech ostatních přímých [Concept('concept_subject','závislých zemích')] o [SCOPE.ScriptValue('decrease_autonomy_liberty_desire_to_add')|bo0]" # todo: CONCEPT CASE
+ dp_annex_subject_start_effects_desc: "[GetScriptedGui('annex_subject_liberty_desire_sgui').ExecuteTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('target_country', COUNTRY.MakeScope).AddScope('annexing_overlord', GetPlayer.MakeScope).End)]" # todo: NEW TRANSLATION
+ ANNEX_SUBJECT_START_EFFECTS_LINE: "Všechny ostatní přímé [Concept('concept_subject','$concept_subjects|q$')] okamžitě získají #N #B [SCOPE.ScriptValue('annex_subject_base_liberty_desire_change')|0]#!#! [concept_liberty_desire] a #N #B [SCOPE.ScriptValue('annex_subject_liberty_desire_weekly_change')|=2]#!#!/týden po dobu #v [SCOPE.ScriptValue('annex_subject_liberty_desire_modifier_months')|0]#! měsíců, podle [concept_prestige] země [SCOPE.sC('target_country').GetAdjective]" # todo: NEW TRANSLATION
+ ANNEX_SUBJECT_RELATIVE_PRESTIGE: "[concept_prestige] země [SCOPE.sC('target_country').GetName] v porovnání se zemí [SCOPE.sC('annexing_overlord').GetName]" # todo: NEW TRANSLATION
+ ANNEX_SUBJECT_TARGET_PRESTIGE: "[concept_prestige] země [SCOPE.sC('target_country').GetName]" # todo: NEW TRANSLATION
+ ANNEX_SUBJECT_OVERLORD_PRESTIGE: "[concept_prestige] země [SCOPE.sC('annexing_overlord').GetName]" # todo: NEW TRANSLATION
  SELECT_BINDING_PERIOD: "Vyberte [Concept('concept_binding_period','závazné období')]"
  BINDING_PERIOD_BUTTON_TEXT_5_YEARS: "#b 5 let#!"
  BINDING_PERIOD_BUTTON_TEXT_10_YEARS: "#b 10 let#!"
@@ -1754,7 +1898,7 @@
  BINDING_PERIOD_BUTTON_TEXT_99_YEARS: "#b 99 let#!"
  alliance_multilateral_alliances_first_country_tt: "[SCOPE.sCountry('first_country').GetName] musí mít vyzkoumané #v mnohostranné aliance#!, aby mohl vytvořit další [Concept('concept_alliance','aliance')|l]"
  alliance_multilateral_alliances_second_country_tt: "[SCOPE.sCountry('second_country').GetName] musí mít vyzkoumané #v mnohostranné aliance#!, aby mohl vytvořit další [Concept('concept_alliance','aliance')|l]"
- military_assistance_limit_tt: "[SCOPE.sCountry('target_country').GetName] nesmí již přijímat vojenskou pomoc od #v 2#! dalších [Concept('concept_country','zemí')]"
+ military_assistance_limit_tt: "[SCOPE.sCountry('target_country').GetName] nesmí již přijímat vojenskou pomoc od #v 2#! dalších [Concept('concept_country','zemí')]" # todo: CHANGED (predtym: [SCOPE.sCountry('target_country').GetName] nesmí již přijímat $military_assistance$ od v 2 ! dalších [Concept('concept_c)
  free_text: "Dodatek"
  free_text_desc: "Dobrá komunikace je most mezi zmatením a jasností"
  free_text_effects_desc: "Navazuje komunikaci mezi našimi dvěma národy"
@@ -1764,44 +1908,44 @@
  transfer_subject_article_short_desc: "[SOURCE_COUNTRY.GetNameNoFormatting] předává $concept_subject$ [TARGET_COUNTRY.GetNameNoFormatting]"
  money_transfer: "Převod peněz"
  money_transfer_desc: ""
- money_transfer_effects_desc: "• Uvádí do praxe dohodu mezi dvěma [Concept('concept_country','zeměmi')], kde se jedna země zavazuje posílat pevně stanovenou částku [Concept('concept_money','peníze')] druhé zemi každý týden."
+ money_transfer_effects_desc: "• Uvádí do praxe dohodu mezi dvěma [Concept('concept_country','zeměmi')], kde se jedna země zavazuje posílat pevně stanovenou částku [Concept('concept_money','peníze')] druhé zemi každý týden." # todo: CHANGED (predtym: • Uvádí do praxe dohodu mezi dvěma [Concept('concept_country','zeměmi')], kde se jedna $concept_country$ zavazuje posíla)
  money_transfer_article_short_desc: "[SOURCE_COUNTRY.GetNameNoFormatting] převádí peníze do [TARGET_COUNTRY.GetAltAdjectiveNoFormatting('G')] každý týden"
  TREATY_DRAFT_ARTICLE_FLAG_IS_MONEY_TRANSFER_EFFECT: "• [SOURCE_COUNTRY.GetName] převádí @money!#v [ArticleDraft.GetQuantity|D]#! [TARGET_COUNTRY.GetAltAdjective('D')] každý týden"
  TREATY_ARTICLE_FLAG_IS_MONEY_TRANSFER_EFFECT: "• [SOURCE_COUNTRY.GetName] převádí @money!#v [Article.GetQuantity|D]#! [TARGET_COUNTRY.GetAltAdjective('D')] každý týden"
  MONEY_TRANSFER_INPUT_QUANTITY_INVALID: "Článek o převodu peněz má platné vstupní množství"
  state_transfer: "Převod státu"
  state_transfer_desc: ""
- state_transfer_effects_desc: "• Uvádí do praxe dohodu mezi dvěma [Concept('concept_country', 'zeměmi')], kde jedna země formálně postoupí [Concept('concept_state','stát')|l] druhé zemi"
+ state_transfer_effects_desc: "• Uvádí do praxe dohodu mezi dvěma [Concept('concept_country', 'zeměmi')], kde jedna země formálně postoupí [Concept('concept_state','stát')|l] druhé zemi" # todo: CHANGED (predtym: • Uvádí do praxe dohodu mezi dvěma [Concept('concept_country', 'zeměmi')], kde jedna $concept_country$ formálně postoupí)
  state_transfer_article_short_desc: "[SOURCE_COUNTRY.GetNameNoFormatting] převádí stát do [TARGET_COUNTRY.GetAltAdjectiveNoFormatting('G')]"
  TREATY_DRAFT_ARTICLE_FLAG_CAUSES_STATE_TRANSFER_EFFECT: "• [SelectLocalization(ArticleDraft.HasInputValue('state'), ArticleDraft.GetState.GetName, 'NONE')] bude převeden [TARGET_COUNTRY.GetAltAdjective('D')]"
  TREATY_ARTICLE_FLAG_CAUSES_STATE_TRANSFER_EFFECT: "• [Article.GetState.GetName] byl převeden [TARGET_COUNTRY.GetAltAdjective('D')]"
  goods_transfer: "Převod zboží"
  goods_transfer_desc: ""
- goods_transfer_effects_desc: "• Uvádí do praxe dohodu mezi dvěma [Concept('concept_country', 'zeměmi')], kde se jedna země zavazuje posílat pevně stanovené množství [Concept('concept_good', 'zboží')] druhé zemi každý týden"
+ goods_transfer_effects_desc: "• Uvádí do praxe dohodu mezi dvěma [Concept('concept_country', 'zeměmi')], kde se jedna země zavazuje posílat pevně stanovené množství [Concept('concept_good', 'zboží')] druhé zemi každý týden" # todo: CHANGED (predtym: • Uvádí do praxe dohodu mezi dvěma [Concept('concept_country', 'zeměmi')], kde se jedna $concept_country$ zavazuje posíl)
  goods_transfer_article_short_desc: "[SOURCE_COUNTRY.GetNameNoFormatting] převádí zboží do [TARGET_COUNTRY.GetAltAdjectiveNoFormatting('G')] každý týden"
  TREATY_DRAFT_ARTICLE_FLAG_IS_GOODS_TRANSFER_EFFECT: "• [SOURCE_COUNTRY.GetName] převádí [AddTextIf(ArticleDraft.GetGoods.IsValid, ArticleDraft.GetGoods.GetTextIcon)]#v [ArticleDraft.GetQuantity|D]#! [AddTextIf(ArticleDraft.GetGoods.IsValid, ArticleDraft.GetGoods.GetName)][AddLocalizationIf(Not(ArticleDraft.GetGoods.IsValid), 'concept_goods')] do [TARGET_COUNTRY.GetAltAdjective('G')] každý týden"
  TREATY_ARTICLE_FLAG_IS_GOODS_TRANSFER_EFFECT: "• [SOURCE_COUNTRY.GetName] převádí #v [Article.GetQuantity|D]#! [AddTextIf(Article.GetGoods.IsValid, Article.GetGoods.GetName)][AddLocalizationIf(Not(Article.GetGoods.IsValid), 'concept_goods')] do [TARGET_COUNTRY.GetAltAdjective('G')] každý týden"
  military_access: "Vojenský přístup"
  military_access_desc: ""
- military_access_effects_desc: "• Uvádí do praxe vojenskou dohodu mezi dvěmi [Concept('concept_country','zeměmi')], kde jedné zemi je dovoleno přesunovat své [Concept('concept_army','armády')|l] přes území druhé země"
+ military_access_effects_desc: "• Uvádí do praxe vojenskou dohodu mezi dvěmi [Concept('concept_country','zeměmi')], kde jedné zemi je dovoleno přesunovat své [Concept('concept_army','armády')|l] přes území druhé země" # todo: CHANGED (predtym: • Uvádí do praxe vojenskou dohodu mezi dvěmi [Concept('concept_country','zeměmi')], kde jedné $concept_country$ je dovol)
  military_access_article_short_desc: "[TARGET_COUNTRY.GetNameNoFormatting] může přesunout armády přes [SOURCE_COUNTRY.GetAltAdjectiveNoFormatting('L')]"
- TREATY_DRAFT_ARTICLE_FLAG_IS_MILITARY_ACCESS_EFFECT: "• [TARGET_COUNTRY.GetName] může přesunout [Concept('concept_army', 'armády')] přes [SOURCE_COUNTRY.GetAltAdjective('A')]"
- TREATY_ARTICLE_FLAG_IS_MILITARY_ACCESS_EFFECT: "• [TARGET_COUNTRY.GetName] může přesunout [Concept('concept_army', 'armády')] přes [SOURCE_COUNTRY.GetAltAdjective('A')]"
+ TREATY_DRAFT_ARTICLE_FLAG_IS_MILITARY_ACCESS_EFFECT: "• [TARGET_COUNTRY.GetName] může přesunout [Concept('concept_army', 'armády')] přes [SOURCE_COUNTRY.GetAltAdjective('A')]" # todo: CHANGED (predtym: • [TARGET_COUNTRY.GetName] může přesunout [Concept('concept_army', 'armády')] přes [SOURCE_COUNTRY.GetName])
+ TREATY_ARTICLE_FLAG_IS_MILITARY_ACCESS_EFFECT: "• [TARGET_COUNTRY.GetName] může přesunout [Concept('concept_army', 'armády')] přes [SOURCE_COUNTRY.GetAltAdjective('A')]" # todo: CHANGED (predtym: • [TARGET_COUNTRY.GetName] může přesunout [Concept('concept_army', 'armády')] přes [SOURCE_COUNTRY.GetName])
  offer_embassy: "Nabídka velvyslanectví"
  offer_embassy_desc: ""
- offer_embassy_effects_desc: "• Uvádí do praxe dohodu mezi dvěma [Concept('concept_country','zeměmi')], kde jedna země formálně zřídí velvyslanectví v [Concept('concept_unrecognized_power','neuznávané zemi')]"
+ offer_embassy_effects_desc: "• Uvádí do praxe dohodu mezi dvěma [Concept('concept_country','zeměmi')], kde jedna země formálně zřídí velvyslanectví v [Concept('concept_unrecognized_power','neuznávané zemi')]" # todo: CHANGED (predtym: • Uvádí do praxe dohodu mezi dvěma [Concept('concept_country','zeměmi')], kde jedna $concept_country$ formálně zřídí vel)
  offer_embassy_article_short_desc: "[TARGET_COUNTRY.GetNameNoFormatting] zřizuje velvyslanectví v [SOURCE_COUNTRY.GetAltAdjectiveNoFormatting('L')]"
  TREATY_DRAFT_ARTICLE_FLAG_IS_OFFER_EMBASSY_EFFECT: "• [TARGET_COUNTRY.GetName] zřizuje ambasádu v [SOURCE_COUNTRY.GetAltAdjective('L')]"
  TREATY_ARTICLE_FLAG_IS_OFFER_EMBASSY_EFFECT: "• [TARGET_COUNTRY.GetName] zřídila ambasádu v [SOURCE_COUNTRY.GetAltAdjective('L')]"
  treaty_port: "Smluvní přístav"
  treaty_port_desc: ""
- treaty_port_effects_desc: "• Dohoda mezi dvěma [Concept('concept_country', 'zeměmi')], kde jedna země oficiálně postoupí [Concept('concept_treaty_port','smluvní přístav')] druhé zemi"
+ treaty_port_effects_desc: "• Dohoda mezi dvěma [Concept('concept_country', 'zeměmi')], kde jedna země oficiálně postoupí [Concept('concept_treaty_port','smluvní přístav')] druhé zemi" # todo: CHANGED (predtym: • Dohoda mezi dvěma [Concept('concept_country', 'zeměmi')], kde jedna $concept_country$ oficiálně postoupí [Concept('con)
  treaty_port_article_short_desc: "[SOURCE_COUNTRY.GetNameNoFormatting] postoupí smluvní přístav [TARGET_COUNTRY.GetAltAdjective('D')]"
  TREATY_DRAFT_ARTICLE_FLAG_IS_TREATY_PORT_EFFECT: "• [SOURCE_COUNTRY.GetName] postoupí [SelectLocalization(ArticleDraft.HasInputValue('state'), ArticleDraft.GetState.GetName, 'NONE')] jako [Concept('concept_treaty_port','smluvní přístav')|l] [TARGET_COUNTRY.GetAltAdjective('D')]"
  TREATY_ARTICLE_FLAG_IS_TREATY_PORT_EFFECT: "• [SOURCE_COUNTRY.GetName] postoupila [Article.GetState.GetName] jako [Concept('concept_treaty_port','smluvní přístav')|l] do [TARGET_COUNTRY.GetAltAdjective('G')]"
  non_colonization_agreement: "Dohoda o zákazu kolonizace"
  non_colonization_agreement_desc: ""
- non_colonization_agreement_effects_desc: "• Ustanovuje dohodu mezi dvěma [Concept('concept_country','zeměmi')], ve které se jedna země zavazuje [Concept('concept_colony','nekolonizovat')] dohodnutý [Concept('concept_strategic_region','strategický region')|l]"
+ non_colonization_agreement_effects_desc: "• Ustanovuje dohodu mezi dvěma [Concept('concept_country','zeměmi')], ve které se jedna země zavazuje [Concept('concept_colony','nekolonizovat')] dohodnutý [Concept('concept_strategic_region','strategický region')|l]" # todo: CHANGED (predtym: • Ustanovuje dohodu mezi dvěma [Concept('concept_country','zeměmi')], ve které se jedna $concept_country$ zavazuje [Conc)
  non_colonization_agreement_article_short_desc: "[SOURCE_COUNTRY.GetNameNoFormatting] souhlasí, že #bold_black nebude#! kolonizovat strategický region"
  TREATY_DRAFT_ARTICLE_FLAG_IS_NON_COLONIZATION_AGREEMENT_EFFECT: "• [SOURCE_COUNTRY.GetName] souhlasí, že #b nebude#! [Concept('concept_colony','kolonizovat')] [SelectLocalization( ArticleDraft.GetStrategicRegion.IsValid , 'TREATY_DRAFT_ARTICLE_STRATEGIC_REGION_NAME', 'TREATY_ARTICLE_GENERAL_STRATEGIC_REGION_NAME' )]"
  TREATY_ARTICLE_FLAG_IS_NON_COLONIZATION_AGREEMENT_EFFECT: "• [SOURCE_COUNTRY.GetName] souhlasí, že #b nebude#! [Concept('concept_colony', 'kolonizovat')] [SelectLocalization( Article.GetStrategicRegion.IsValid , 'TREATY_DRAFT_ARTICLE_STRATEGIC_REGION_NAME', 'TREATY_ARTICLE_GENERAL_STRATEGIC_REGION_NAME' )]"
@@ -1812,35 +1956,35 @@
  prohibit_trade_with_global_market_desc: ""
  prohibit_trade_with_global_market_effects_desc: "• [Concept('concept_country','Země')] nesmí obchodovat s určitým [Concept('concept_good','zbožím')] na [Concept('concept_world_market','světovém trhu')]"
  prohibit_trade_with_global_market_article_short_desc: "[SOURCE_COUNTRY.GetNameNoFormatting] #bold_black nebude#! obchodovat se zbožím na světovém trhu"
- TREATY_DRAFT_ARTICLE_FLAG_IS_PROHIBIT_GOODS_TRADE_WITH_WORLD_MARKET_EFFECT: "• [SOURCE_COUNTRY.GetName] #b nebude#! obchodovat s žádným [AddTextIf(ArticleDraft.GetGoods.IsValid, ArticleDraft.GetGoods.GetTextIcon)] [AddTextIf(ArticleDraft.GetGoods.IsValid, ArticleDraft.GetGoods.GetName)][AddLocalizationIf(Not(ArticleDraft.GetGoods.IsValid), 'concept_goods')] na [Concept('concept_world_market','světovém trhu')]"
- TREATY_ARTICLE_FLAG_IS_PROHIBIT_GOODS_TRADE_WITH_WORLD_MARKET_EFFECT: "• [SOURCE_COUNTRY.GetName] #b nebude#! obchodovat se žádným [AddTextIf(Article.GetGoods.IsValid, Article.GetGoods.GetTextIcon)] [AddTextIf(Article.GetGoods.IsValid, Article.GetGoods.GetName)][AddLocalizationIf(Not(Article.GetGoods.IsValid), 'concept_goods')] na [Concept('concept_world_market','světovém trhu')]"
+ TREATY_DRAFT_ARTICLE_FLAG_IS_PROHIBIT_GOODS_TRADE_WITH_WORLD_MARKET_EFFECT: "• [SOURCE_COUNTRY.GetName] #b nebude#! obchodovat s žádným [AddTextIf(ArticleDraft.GetGoods.IsValid, ArticleDraft.GetGoods.GetName)][AddLocalizationIf(Not(ArticleDraft.GetGoods.IsValid), 'concept_goods')] na [Concept('concept_world_market','světovém trhu')]" # todo: CHANGED (predtym: • [SOURCE_COUNTRY.GetName] b nebude ! obchodovat s žádným [AddTextIf(ArticleDraft.GetGoods.IsValid, ArticleDraft.GetGood)
+ TREATY_ARTICLE_FLAG_IS_PROHIBIT_GOODS_TRADE_WITH_WORLD_MARKET_EFFECT: "• [SOURCE_COUNTRY.GetName] #b nebude#! obchodovat se žádným [AddTextIf(Article.GetGoods.IsValid, Article.GetGoods.GetName)][AddLocalizationIf(Not(Article.GetGoods.IsValid), 'concept_goods')] na [Concept('concept_world_market','světovém trhu')]" # todo: CHANGED (predtym: • [SOURCE_COUNTRY.GetName] b nebude ! obchodovat se žádným [AddTextIf(Article.GetGoods.IsValid, Article.GetGoods.GetText)
  acquire_monopoly_for_company: "Monopol společnosti"
  acquire_monopoly_for_company_desc: ""
- acquire_monopoly_for_company_effects_desc: "• Dohoda mezi dvěma [Concept('concept_country', 'zeměmi')], která uděluje [Concept('concept_company_monopoly','monopol společnosti')] na určitou [Concept('concept_building','budovu')] v druhé zemi."
+ acquire_monopoly_for_company_effects_desc: "• Dohoda mezi dvěma [Concept('concept_country', 'zeměmi')], která uděluje [Concept('concept_company_monopoly','monopol společnosti')] na určitou [Concept('concept_building','budovu')] v druhé zemi." # todo: CHANGED (predtym: • Dohoda mezi dvěma [Concept('concept_country', 'zeměmi')], která uděluje [Concept('concept_company_monopoly','monopol s)
  acquire_monopoly_for_company_article_short_desc: "[SOURCE_COUNTRY.GetNameNoFormatting] uděluje monopol společnosti [TARGET_COUNTRY.GetAltAdjectiveNoFormatting('G')]"
  TREATY_DRAFT_ARTICLE_FLAG_IS_MONOPOLY_FOR_COMPANY_EFFECT: "• [SOURCE_COUNTRY.GetName] uděluje [Concept('concept_company_monopoly','monopol společnosti')] na [SelectLocalization(ArticleDraft.HasInputValue('building_type'), ArticleDraft.GetBuildingType.GetName, 'concept_building_industry')] v [SOURCE_COUNTRY.GetName] pro [TARGET_COUNTRY.GetAltAdjective('ou')] [Concept('concept_company','společnost')|l] [SelectLocalization(ArticleDraft.GetCompany.IsValid, ArticleDraft.GetCompany.GetName, 'NONE')]"
  TREATY_ARTICLE_FLAG_IS_MONOPOLY_FOR_COMPANY_EFFECT: "• [SOURCE_COUNTRY.GetName] udělila [Concept('concept_company_monopoly','monopol společnosti')] na [Article.GetBuildingType.GetName] v [SOURCE_COUNTRY.GetAltAdjective('L')] pro [TARGET_COUNTRY.GetAltAdjective('ou')] [Concept('concept_company','společnost')|l] [Article.GetCompany.GetName]"
  enforce_embargo: "Vynucení embarga"
  enforce_embargo_desc: ""
- enforce_embargo_effects_desc: "• Dohoda mezi dvěma [Concept('concept_country', 'zeměmi')], ve které se jedna země zavazuje neobchodovat s určitým [Concept('concept_good','zbožím')] s jinou zemí."
+ enforce_embargo_effects_desc: "• Dohoda mezi dvěma [Concept('concept_country', 'zeměmi')], ve které se jedna země zavazuje neobchodovat s určitým [Concept('concept_good','zbožím')] s jinou zemí." # todo: CHANGED (predtym: • Dohoda mezi dvěma [Concept('concept_country', 'zeměmi')], ve které se jedna $concept_country$ zavazuje neobchodovat s )
  enforce_embargo_article_short_desc: "[SOURCE_COUNTRY.GetNameNoFormatting] #bold_black nebude#! obchodovat se zbožím s třetí zemí"
- TREATY_DRAFT_ARTICLE_FLAG_IS_ENFORCE_EMBARGO_EFFECT: "• [SOURCE_COUNTRY.GetName] #b nebude#! obchodovat s žádným [AddTextIf(ArticleDraft.GetGoods.IsValid, ArticleDraft.GetGoods.GetTextIcon)] [AddTextIf(ArticleDraft.GetGoods.IsValid, ArticleDraft.GetGoods.GetName)][AddLocalizationIf(Not(ArticleDraft.GetGoods.IsValid), 'concept_goods')] s [ArticleDraft.GetCountry.GetAltAdjective('I')]"
- TREATY_ARTICLE_FLAG_IS_ENFORCE_EMBARGO_EFFECT: "• [SOURCE_COUNTRY.GetName] #b nebude#! obchodovat se žádným [AddTextIf(Article.GetGoods.IsValid, Article.GetGoods.GetTextIcon)] [AddTextIf(Article.GetGoods.IsValid, Article.GetGoods.GetName)][AddLocalizationIf(Not(Article.GetGoods.IsValid), 'concept_goods')] s [Article.GetCountry.GetAltAdjective('I')]"
+ TREATY_DRAFT_ARTICLE_FLAG_IS_ENFORCE_EMBARGO_EFFECT: "• [SOURCE_COUNTRY.GetName] #b nebude#! obchodovat s žádným [AddTextIf(ArticleDraft.GetGoods.IsValid, ArticleDraft.GetGoods.GetName)][AddLocalizationIf(Not(ArticleDraft.GetGoods.IsValid), 'concept_goods')] s [ArticleDraft.GetCountry.GetName]" # todo: CHANGED (predtym: • [SOURCE_COUNTRY.GetName] b nebude ! obchodovat s žádným [AddTextIf(ArticleDraft.GetGoods.IsValid, ArticleDraft.GetGood)
+ TREATY_ARTICLE_FLAG_IS_ENFORCE_EMBARGO_EFFECT: "• [SOURCE_COUNTRY.GetName] #b nebude#! obchodovat se žádným [AddTextIf(Article.GetGoods.IsValid, Article.GetGoods.GetName)][AddLocalizationIf(Not(Article.GetGoods.IsValid), 'concept_goods')] s [Article.GetCountry.GetName]" # todo: CHANGED (predtym: • [SOURCE_COUNTRY.GetName] b nebude ! obchodovat se žádným [AddTextIf(Article.GetGoods.IsValid, Article.GetGoods.GetText)
  law_commitment: "Zákonný závazek"
  law_commitment_desc: ""
- law_commitment_effects_desc: "• Dohoda mezi dvěma [Concept('concept_country','zeměmi')], kde se jedna země zavazuje přijmout nebo zachovat určitý [Concept('concept_law','zákon')|l]."
+ law_commitment_effects_desc: "• Dohoda mezi dvěma [Concept('concept_country','zeměmi')], kde se jedna země zavazuje přijmout nebo zachovat určitý [Concept('concept_law','zákon')|l]." # todo: CHANGED (predtym: • Dohoda mezi dvěma [Concept('concept_country','zeměmi')], kde se jedna $concept_country$ zavazuje přijmout nebo zachova)
  law_commitment_article_short_desc: "[SOURCE_COUNTRY.GetNameNoFormatting] se zavazuje přijmout $concept_law$"
  TREATY_DRAFT_ARTICLE_FLAG_IS_LAW_COMMITMENT_EFFECT: "• [SOURCE_COUNTRY.GetName] se zavazuje přijmout [SelectLocalization(ArticleDraft.HasInputValue('law_type'), ArticleDraft.GetLawType.GetName, 'NONE')]"
  TREATY_ARTICLE_FLAG_IS_LAW_COMMITMENT_EFFECT: "• [SOURCE_COUNTRY.GetName] se zavázal přijmout [Article.GetLaw.GetName]"
  no_tariffs: "Zrušit cla"
  no_tariffs_desc: ""
- no_tariffs_effects_desc: "• Dohoda mezi dvěma [Concept('concept_country','zeměmi')], kde se jedna země zavazuje neukládat [Concept('concept_tariffs','cla')] na určité [Concept('concept_good','zboží')|l]."
+ no_tariffs_effects_desc: "• Dohoda mezi dvěma [Concept('concept_country','zeměmi')], kde se jedna země zavazuje neukládat [Concept('concept_tariffs','cla')] na určité [Concept('concept_good','zboží')|l]." # todo: CHANGED (predtym: • Dohoda mezi dvěma [Concept('concept_country','zeměmi')], kde se jedna $concept_country$ zavazuje neukládat [Concept('c)
  no_tariffs_article_short_desc: "[SOURCE_COUNTRY.GetNameNoFormatting] #bold_black nebude#! ukládat cla na zboží"
  TREATY_DRAFT_ARTICLE_FLAG_IS_NO_TARIFFS_EFFECT: "• [SOURCE_COUNTRY.GetName] nebude #b uvalovat#! [Concept('concept_tariffs','cla')] na [SelectLocalization(ArticleDraft.GetGoods.IsValid, ArticleDraft.GetGoods.GetName, 'concept_goods')]"
  TREATY_ARTICLE_FLAG_IS_NO_TARIFFS_EFFECT: "• [SOURCE_COUNTRY.GetName] nebude #b uvalovat#! [Concept('concept_tariffs','cla')] na [SelectLocalization(Article.GetGoods.IsValid, Article.GetGoods.GetName, 'concept_goods')]"
  transit_rights: "Práva tranzitu"
  transit_rights_desc: ""
- transit_rights_effects_desc: "• Ustanovuje dohodu mezi dvěma [Concept('concept_country', 'zeměmi')], kde jedný zemi je uděleno právo provozovat svůj [Concept('concept_trade','obchod')] přes [Concept('concept_world_market_hub', 'centra světového trhu')] druhé země."
+ transit_rights_effects_desc: "• Ustanovuje dohodu mezi dvěma [Concept('concept_country', 'zeměmi')], kde jedný zemi je uděleno právo provozovat svůj [Concept('concept_trade','obchod')] přes [Concept('concept_world_market_hub', 'centra světového trhu')] druhé země." # todo: CHANGED (predtym: • Ustanovuje dohodu mezi dvěma [Concept('concept_country', 'zeměmi')], kde jedné $concept_country$ je uděleno právo prov)
  transit_rights_article_short_desc: "[TARGET_COUNTRY.GetNameNoFormatting] může obchodovat přes [SOURCE_COUNTRY.GetAltAdjectiveNoFormatting('A')]"
  TREATY_DRAFT_ARTICLE_FLAG_IS_TRANSIT_RIGHTS_EFFECT: "• [TARGET_COUNTRY.GetName] může obchodovat přes [SOURCE_COUNTRY.GetAltAdjective('A')]"
  TREATY_ARTICLE_FLAG_IS_TRANSIT_RIGHTS_EFFECT: "• [TARGET_COUNTRY.GetName] může obchodovat přes [SOURCE_COUNTRY.GetAltAdjective('A')]"
@@ -1852,13 +1996,13 @@
  TREATY_ARTICLE_FLAG_IS_NO_SUBVENTIONS_EFFECT: "• [SOURCE_COUNTRY.GetName] nebude #b poskytovat#! [Concept('concept_subventions','subvence')] na [SelectLocalization(Article.GetGoods.IsValid, Article.GetGoods.GetName, 'concept_goods')]"
  trade_privilege: "Obchodní výsady"
  trade_privilege_desc: ""
- trade_privilege_effects_desc: "• Ustanovuje [Concept('concept_trade_privilege','obchodní privilegia')|l] mezi dvěma [Concept('concept_country', 'zeměmi')], kde jedna země poskytuje výhodné podmínky obchodníkům druhý zemi."
+ trade_privilege_effects_desc: "• Ustanovuje [Concept('concept_trade_privilege','obchodní privilegia')|l] mezi dvěma [Concept('concept_country', 'zeměmi')], kde jedna země poskytuje výhodné podmínky obchodníkům druhý zemi." # todo: CHANGED (predtym: • Ustanovuje [Concept('concept_trade_privilege','obchodní privilegia')|l] mezi dvěma [Concept('concept_country', 'zeměmi)
  trade_privilege_article_short_desc: "[TARGET_COUNTRY.GetNameNoFormatting] získává obchodní privilegia od [SOURCE_COUNTRY.GetAltAdjectiveNoFormatting('G')]"
- TREATY_DRAFT_ARTICLE_FLAG_IS_TRADE_PRIVILEGE_EFFECT: "• [TARGET_COUNTRY.GetName] ustanovuje [Concept('concept_trade_privilege','obchodní privilegia')|l] s [SOURCE_COUNTRY.GetAltAdjective('I')]"
- TREATY_ARTICLE_FLAG_IS_TRADE_PRIVILEGE_EFFECT: "• [TARGET_COUNTRY.GetName] ustanovil [Concept('concept_trade_privilege','obchodní privilegia')] s [SOURCE_COUNTRY.GetAltAdjective('I')]"
+ TREATY_DRAFT_ARTICLE_FLAG_IS_TRADE_PRIVILEGE_EFFECT: "• [TARGET_COUNTRY.GetName] ustanovuje [Concept('concept_trade_privilege','obchodní privilegia')|l] s [SOURCE_COUNTRY.GetAltAdjective('I')]" # todo: CHANGED (predtym: • [TARGET_COUNTRY.GetName] ustanovuje [Concept('concept_trade_privilege','obchodní privilegia')|l] s [SOURCE_COUNTRY.Get)
+ TREATY_ARTICLE_FLAG_IS_TRADE_PRIVILEGE_EFFECT: "• [TARGET_COUNTRY.GetName] ustanovil [Concept('concept_trade_privilege','obchodní privilegia')] s [SOURCE_COUNTRY.GetAltAdjective('I')]" # todo: CHANGED (predtym: • [TARGET_COUNTRY.GetName] ustanovil [Concept('concept_trade_privilege','obchodní privilegia')] s [SOURCE_COUNTRY.GetNam)
  foreign_investment_rights: "Práva investic"
  foreign_investment_rights_desc: ""
- foreign_investment_rights_effects_desc: "• Ustanovuje jednostranná [Concept('concept_foreign_investment_rights','práva na zahraniční investice')|l] v [Concept('concept_country','zemi')], která umožňuje stavět [Concept('concept_building', 'budovy')] v druhé zemi."
+ foreign_investment_rights_effects_desc: "• Ustanovuje jednostranná [Concept('concept_foreign_investment_rights','práva na zahraniční investice')|l] v [Concept('concept_country','zemi')], která umožňuje stavět [Concept('concept_building', 'budovy')] v druhé zemi." # todo: CHANGED (predtym: • Ustanovuje jednostranná [Concept('concept_foreign_investment_rights','práva na zahraniční investice')|l] v [Concept('c)
  foreign_investment_rights_article_short_desc: "Umožňuje [TARGET_COUNTRY.GetAltAdjectiveNoFormatting('D')] stavět v [SOURCE_COUNTRY.GetAltAdjectiveNoFormatting('L')]"
  TREATY_DRAFT_ARTICLE_FLAG_IS_INVESTMENT_RIGHTS_EFFECT: "• Umožňuje [TARGET_COUNTRY.GetAltAdjective('D')] stavět v [SOURCE_COUNTRY.GetAltAdjective('L')]"
  TREATY_ARTICLE_FLAG_IS_INVESTMENT_RIGHTS_EFFECT: "• Umožňuje [TARGET_COUNTRY.GetAltAdjective('D')] stavět v [SOURCE_COUNTRY.GetAltAdjective('L')]"
@@ -1930,7 +2074,7 @@
  TREATY_ARTICLE_FLAG_IS_TAKE_ON_DEBT_EFFECT: "• [SOURCE_COUNTRY.GetName] převezme dluh od [TARGET_COUNTRY.GetAltAdjective('G')]"
  military_assistance: "Vojenská pomoc"
  military_assistance_desc: ""
- military_assistance_effects_desc: "• Vojenská dohoda mezi dvěma [Concept('concept_country','zeměmi')], kde jedna země poskytne [Concept('concept_military_assistance','vojenskou pomoc')] druhé zemi, pomáhajíc ji s vylepšeným výcvikem a vojenskou expertízou"
+ military_assistance_effects_desc: "• Vojenská dohoda mezi dvěma [Concept('concept_country','zeměmi')], kde jedna země poskytne [Concept('concept_military_assistance','vojenskou pomoc')] druhé zemi, pomáhajíc ji s vylepšeným výcvikem a vojenskou expertízou" # todo: CHANGED (predtym: • Vojenská dohoda mezi dvěma [Concept('concept_country','zeměmi')], kde jedna $concept_country$ poskytne [Concept('conce)
  military_assistance_article_short_desc: "[SOURCE_COUNTRY.GetNameNoFormatting] poskytne vojenskou pomoc [TARGET_COUNTRY.GetAltAdjectiveNoFormatting('L')]"
  TREATY_DRAFT_ARTICLE_FLAG_IS_MILITARY_ASSISTANCE_EFFECT: "• [SOURCE_COUNTRY.GetName] poskytne vojenskou pomoc [TARGET_COUNTRY.GetAltAdjective('D')]"
  TREATY_ARTICLE_FLAG_IS_MILITARY_ASSISTANCE_EFFECT: "• [SOURCE_COUNTRY.GetName] poskytuje vojenskou pomoc [TARGET_COUNTRY.GetAltAdjective('D')]"
@@ -1966,6 +2110,19 @@
  ARTICLE_TYPE_INVOLVEMENT_EFFECT_MUTUAL: "• Zvyšuje [Concept('concept_involvement','zapojení')] obou [Concept('concept_country','zemí')] maximálně o $AMOUNT|v0$ ve všech [Concept('concept_strategic_region','strategických regionech')] kde je druhé $concept_country$ [Concept('concept_local_country','místní')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  ARTICLE_INVOLVEMENT_EFFECT: "• Zvyšuje [Concept('concept_involvement','zapojení')] [TARGET_COUNTRY.GetName] maximálně o $AMOUNT|v0$ ve všech [Concept('concept_strategic_region','strategických regionech')] kde [SOURCE_COUNTRY.GetName] je [Concept('concept_local_country','místní')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  TREATY_RELATIONS_EFFECT_BASE_VALUE: "#v $VAL|%2=+$#! základní hodnota"
+ STRAIT_GRIEVANCE_BASE_VALUE: "#v $VAL|%2=+$#! na základě $SETTING$" # todo: NEW TRANSLATION
+ STRAIT_GRIEVANCE_DEPENDENCE: "#v $VAL|%2=+$#! na základě závislosti na $STRAIT$ ve výši #v $DEPENDENCE|%0$#!" # todo: NEW TRANSLATION
+ STRAIT_GRIEVANCE_SOURCE: "$STRAIT$ $concept_strait$" # todo: NEW TRANSLATION
+ STRAIT_GRIEVANCE_ONE_SIDE: "#v $VAL|%2=+$#! na základě výběru mýta pouze na jedné straně $STRAIT$" # todo: NEW TRANSLATION
+ STRAIT_GRIEVANCE_STRAIT_IMPORTANCE: "#v $VAL|%2=+$#! na základě významu $STRAIT$" # todo: NEW TRANSLATION
+ PIRACY_GRIEVANCE_SOURCE: "[concept_piracy] ze strany $PIRATE$" # todo: NEW TRANSLATION
+ PIRACY_GRIEVANCE_BASE_VALUE: "#v $VAL|%2=+$#! základní hodnota" # todo: NEW TRANSLATION
+ PIRACY_GRIEVANCE_SEVERITY: "#v $VAL|%2=+$#! na základě zabavení zboží v hodnotě #v $GDP_SHARE|%2$#! ročního [concept_gdp]" # todo: NEW TRANSLATION
+ STRAIT_GRIEVANCE_SETTING_LOW_TOLLS: "nízké [concept_tolls]" # todo: NEW TRANSLATION
+ STRAIT_GRIEVANCE_SETTING_MEDIUM_TOLLS: "střední [concept_tolls]" # todo: NEW TRANSLATION
+ STRAIT_GRIEVANCE_SETTING_HIGH_TOLLS: "vysoké [concept_tolls]" # todo: NEW TRANSLATION
+ STRAIT_GRIEVANCE_SETTING_NO_MILITARY: "[concept_strait] uzavřený pro vojenskou plavbu" # todo: NEW TRANSLATION
+ STRAIT_GRIEVANCE_SETTING_CLOSED: "zcela uzavřený [concept_strait]" # todo: NEW TRANSLATION
  TREATY_RELATIONS_BREAKDOWN_FORMAT: "#header Pokrok ve [Concept('concept_relations','vztazích')]#!\n#v $DAYS$#! dní do [SelectLocalization( LessThan_CFixedPoint( '(CFixedPoint)$PROGRESS_DAILY|5$', '(CFixedPoint)0' ), '#r -', '#g ' )]100%#!\n$TOOLTIP_DELIMITER$\n#v $PROGRESS_DAILY|%2=+$#! denní pokrok díky:\n$BREAKDOWN$"
  TREATY_AGGREGATE_RELATIONS_CHANGE_NO_PROGRESS: "• Vztahy mezi [FIRST_COUNTRY.GetAltAdjective('I')] a [SECOND_COUNTRY.GetAltAdjective('I')] #tooltippable #tooltip:$BREAKDOWN_TAG$ se nezmění#!#!"
  TREATY_AGGREGATE_RELATIONS_CHANGE: "• Vztahy mezi [FIRST_COUNTRY.GetAltAdjective('I')] a [SECOND_COUNTRY.GetAltAdjective('I')] se změní o $CHANGE|+$ každých #tooltippable #tooltip:$BREAKDOWN_TAG$ $DAYS|v$#!#! dní"
@@ -1982,7 +2139,7 @@
  TREATY_DRAFT_OWE_OBLIGATION_ALREADY_ASKING: "@red_cross! [COUNTRY.GetName] nemůže současně slíbit [Concept('concept_obligation','závazek')|l] vůči [OTHER_COUNTRY.GetAltAdjective('L')] v době, kdy [OTHER_COUNTRY.GetName] slibuje závazek vůči [COUNTRY.GetAltAdjective('L')]"
  THREATEN_NAVAL_HOSTILITIES: "Vyhrožovat [Concept('concept_naval_hostilities','námořní nepřátelství')]" # todo: NEW TRANSLATION
  THREATEN_NAVAL_HOSTILITIES_TOOLTIP: "#header Vyhrožovat [COUNTRY.GetName] [Concept('concept_naval_hostilities','námořní nepřátelství')]#!\n#tooltippable;tooltip:$ACCEPTANCE_BREAKDOWN$ $ACCEPTANCE_VAL|+=$#! k přijetí ze strany [COUNTRY.GetAdjective]\n\n$INCIDENT_DESC$\n\nPokud bude náš návrh zamítnut, dojde k dočasným [Concept('concept_naval_hostilities','námořnímu nepřátelství')] na $DURATION|v$ dní.\n\n@information! $THREATEN_HOSTILITIES_NO_NEGOTIATION$" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- THREATEN_NAVAL_HOSTILITIES_ACCEPTANCE: "#tooltippable;tooltip:$BREAKDOWN$ $VALUE|D+=$#! z vyhrožování [Concept('concept_naval_hostilities','námořního nepřátelství')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ THREATEN_NAVAL_HOSTILITIES_ACCEPTANCE: "#tooltippable;tooltip:$BREAKDOWN$ $VALUE|0+=$#! z vyhrožování [Concept('concept_naval_hostilities','námořního nepřátelství')]" # todo: CHANGED (predtym: tooltippable;tooltip:$BREAKDOWN$ $VALUE|D+=$ ! z vyhrožování [Concept('concept_naval_hostilities','námořního nepřátelstv)
  THREATEN_NAVAL_HOSTILITIES_ALREADY_PENDING: "Již máme čekající návrh [Concept('concept_treaty','smlouva')], který vyhrožuje [Concept('concept_naval_hostilities','námořní nepřátelství')]" # todo: NEW TRANSLATION
  THREATEN_NAVAL_HOSTILITIES_ON_COOLDOWN: "Nedávno jsme této zemi vyhrožovali [Concept('concept_naval_hostilities','námořní nepřátelství')], znovu to můžeme udělat $DATE|v$ (za $DAYS|v$ dní)" # todo: NEW TRANSLATION
  THREATEN_NAVAL_HOSTILITIES_SUBJECT_PROTECTED: "[TARGET_COUNTRY.GetName] je pod ochranou [COUNTRY.GetName]" # todo: NEW TRANSLATION
@@ -1995,18 +2152,18 @@
  support_separatism_action_name: "$support_separatism$"
  support_separatism_action_propose_name: "Začít podporovat separatismus"
  support_separatism_action_break_name: "Přestat podporovat separatismus"
- support_separatism_desc: "Podporuje separatismus v cílové [Concept('concept_country','zemi')] zvýšením přitažlivosti [Concept('concept_pop','populace')|l] a [Concept('concept_activism','aktivismu')] pro #bold $movement_cultural_minority$#! našich [Concept('concept_primary_cultures','primárních kultur')]."
+ support_separatism_desc: "Podporuje separatismus v cílové [Concept('concept_country','zemi')] zvýšením přitažlivosti [Concept('concept_pop','populace')|l] a [Concept('concept_activism','aktivismu')] pro #bold $movement_cultural_minority$#! našich [Concept('concept_primary_cultures','primárních kultur')]." # todo: CHANGED (predtym: Podporuje separatismus v cílové [Concept('concept_country','zemi')] zvýšením přitažlivosti [Concept('concept_pop','popul)
  support_separatism_action_notification_name: "[INITIATOR_COUNTRY.GetName] podporuje separatismus"
  support_separatism_pact_desc: "$EFFECT_LIST_BULLET$$support_separatism_action_effect_breakdown$"
  support_separatism_action_notification_desc: "[INITIATOR_COUNTRY.GetName] začal podporovat separatismus mezi svým obyvatelstvem v našich hranicích."
  support_separatism_action_notification_break_name: "[INITIATOR_COUNTRY.GetName] přestal podporovat separatismus"
  support_separatism_action_notification_break_desc: "[INITIATOR_COUNTRY.GetName] přestal podporovat separatismus v našich hranicích."
- support_separatism_action_effect_breakdown: "Zvyšuje přitažlivost [Concept('concept_pop','populace')|l] a [Concept('concept_activism','aktivismu hnutí')] pro #bold $movement_cultural_minority|l$#! našich [Concept('concept_primary_cultures','primárních kultur')]"
+ support_separatism_action_effect_breakdown: "Zvyšuje přitažlivost [Concept('concept_pop','populace')|l] a [Concept('concept_activism','aktivismu hnutí')] pro #bold $movement_cultural_minority|l$#! našich [Concept('concept_primary_cultures','primárních kultur')]" # todo: CHANGED (predtym: Zvyšuje přitažlivost [Concept('concept_pop','populace')|l] a [Concept('concept_activism','aktivismu hnutí')] pro bold $m)
  SUPPORT_SEPARATISM_SUFFICIENT_POPS: "[SCOPE.sCountry('target_country').GetName] má dostatek [Concept('concept_pop','populace')] jedné z našich [Concept('concept_primary_cultures','primárních kultur')] v jednom z našich [Concept('concept_homeland','domovin')]"
  TREATY_ARTICLE_NON_FULFILLMENT_DESC_WEEKLY_TRIGGER: "Kontrolováno týdně:\n$TRIGGER_DESC$"
  TREATY_ARTICLE_NON_FULFILLMENT_DESC_MONTHLY_TRIGGER: "Kontrolováno měsíčně:\n$TRIGGER_DESC$"
  TREATY_ARTICLE_NON_FULFILLMENT_DESC_YEARLY_TRIGGER: "Kontrolováno ročně:\n$TRIGGER_DESC$"
- TREATY_ARTICLE_NOT_FULFILLED_BY: "[COUNTRY.GetName][ConcatIfNeitherEmpty(' ', AddLocalizationIf(ObjectsEqual(Country.Self, GetPlayer.Self), 'VY'))] porušuje [Article.GetName] [Concept('concept_article','smlouvu')] v [Article.GetTreaty.GetName]\n\n#tooltippable #tooltip:$BREAKDOWN_TAG$ $CURRENT_CONTRAVENTIONS|v$#!#! aktuálně $concept_contraventions$\n$MAX_CONTRAVENTIONS|v$ porušení způsobí, že smlouva bude [Concept('concept_non_fulfillment', 'nenaplněna')]"
+ TREATY_ARTICLE_NOT_FULFILLED_BY: "[COUNTRY.GetName][ConcatIfNeitherEmpty(' ', AddLocalizationIf(ObjectsEqual(Country.Self, GetPlayer.Self), 'VY'))] porušuje [Article.GetName] [Concept('concept_article','smlouvu')] v [Article.GetTreaty.GetName]\n\n#tooltippable #tooltip:$BREAKDOWN_TAG$ $CURRENT_CONTRAVENTIONS|v$#!#! aktuálně $concept_contraventions$\n$MAX_CONTRAVENTIONS|v$ porušení způsobí, že smlouva bude [Concept('concept_non_fulfillment', 'nenaplněna')]" # todo: CHANGED (predtym: [COUNTRY.GetName][ConcatIfNeitherEmpty(' ', AddLocalizationIf(ObjectsEqual(Country.Self, GetPlayer.Self), 'VY'))] [Conce)
  TREATY_DRAFT_ARTICLE_MUTUALLY_EXCLUSIVE: "@simple_box! Nepřidávej již vybraný [TREATY_ARTICLE_TYPE.GetName]"
  TREATY_DRAFT_ARTICLE_ONCE_PER_TREATY: "@green_checkmark_box! Toto je již přidáno v této [Concept('concept_treaty','smlouvě')]"
  TREATY_DRAFT_ARTICLE_ALREADY_IN_TREATY: "@green_checkmark_box! Identický článek již existuje ve [Concept('concept_treaty','smlouvě')]"
@@ -2018,23 +2175,55 @@
  TREATY_DRAFT_ARTICLE_ONCE_PER_SIDE: "@green_checkmark_box! Toto je již přidáno na [Country.GetAltAdjective('ee')] straně v této [Concept('concept_treaty','smlouvě')]"
  can_create_treaty_MILITARY_ASSISTANCE: "Můžeme podepsat s nimi [Concept('concept_treaty','smlouvu')] o #bold vojenské pomoci#!"
  TREATY_ARTICLE_TYPE_INFAMY_HEADER: "Celkem $VALUE|-=1$ [Concept('concept_infamy','infamie')] v důsledku:\n"
- TREATY_ARTICLE_TYPE_INFAMY_FORMAT: "$VALUE|-=1$: $KEY$"
+ TREATY_ARTICLE_TYPE_INFAMY_FORMAT: "$VALUE|-=1$ z $KEY$" # todo: CHANGED (predtym: $VALUE|-=1$: $KEY$)
  TREATY_ARTICLE_TYPE_MANEUVERS_HEADER: "Celkem $VALUE|v$ [Concept('concept_maneuver', 'manévrů')] v důsledku:\n"
  TREATY_ARTICLE_TYPE_MANEUVERS_FORMAT: "$VALUE|v1$: $KEY$"
  INFAMY_BASE_VALUE: "základní hodnota"
- INFAMY_TARGET_COUNTRY_POPULATION_FACTOR: "Celková [Concept('concept_pop','populace')|l] [SCOPE.sCountry('target_country').GetAltAdjectiveNoFormatting('G')] ve výši [SCOPE.sCountry('target_country').GetTotalPopulation|Dv]"
+ INFAMY_TARGET_COUNTRY_POPULATION_FACTOR: "Celková [Concept('concept_pop','populace')|l] [SCOPE.sCountry('target_country').GetAltAdjectiveNoFormatting('G')] ve výši [SCOPE.sCountry('target_country').GetTotalPopulation|Dv]" # todo: CHANGED (predtym: Celková [Concept('concept_pop','populace')|l] [SCOPE.sCountry('target_country').GetAdjectiveNoFormatting] ve výši [SCOPE)
  INFAMY_STATE_POPULATION_FACTOR: "[SCOPE.sState('target_state').GetNameNoFormatting] [Concept('concept_pop','populace')] z [SCOPE.sState('target_state').GetPopulationSize|Dv]"
  INFAMY_STATE_GDP_FACTOR: "[SCOPE.sState('target_state').GetNameNoFormatting] [Concept('concept_gdp','hrubý domácí produkt')] z [SCOPE.sState('target_state').GetYearlyGDP|Dv]"
  INFAMY_QUANTITY_FACTOR: "Vstupní množství"
- INFAMY_MONEY_TRANSFER_QUANTITY_ROOT_HAS_ALREADY_ESTABLISHED_FACTOR: "Vstupní množství peněžního převodu [Concept('concept_article', 'smlouv')] [SCOPE.GetRootScope.GetCountry.GetName]"
- INFAMY_TARGET_COUNTRY_DEDUCTION_FACTOR: "[Concept('concept_diplomatic_play','Diplomatické hry')] cílené na [SCOPE.GetRootScope.GetCountry.GetAltAdjectiveNoFormatting('A')] se [Concept('concept_article', 'smlouvami')] s vynucením peněžních převodů"
+ INFAMY_MONEY_TRANSFER_TARGET_SHARE: "podíl příjmů země [SCOPE.sCountry('target_country').GetAdjectiveNoFormatting], který je požadován" # todo: NEW TRANSLATION
+ INFAMY_MONEY_TRANSFER_SELF_SHARE: "peněžní převody do země [SCOPE.GetRootScope.GetCountry.GetNameNoFormatting] v porovnání s jejími daňovými příjmy" # todo: NEW TRANSLATION
+ INFAMY_GOODS_TRANSFER_TARGET_SHARE: "podíl zásob [SCOPE.sGoods('goods').GetName] země [SCOPE.sCountry('target_country').GetAdjectiveNoFormatting], který je požadován" # todo: NEW TRANSLATION
+ INFAMY_GOODS_TRANSFER_SELF_SHARE: "požadované množství v porovnání se zásobami [SCOPE.sGoods('goods').GetName] země [SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFormatting]" # todo: NEW TRANSLATION
+ INFAMY_GOODS_TRANSFER_FOOD: "[SCOPE.sGoods('goods').GetName] je základní potravinou" # todo: NEW TRANSLATION
+ INFAMY_NON_COLONIZATION_DECENTRALIZED: "nekolonizovaná půda v oblasti [SCOPE.sStrategicRegion('region').GetName]" # todo: NEW TRANSLATION
+ INFAMY_NON_COLONIZATION_TARGET_CLAIM: "země [SCOPE.sCountry('target_country').GetNameNoFormatting] má v oblasti [concept_claim]" # todo: NEW TRANSLATION
+ INFAMY_FORCE_NATIONALIZATION_OWNED_GDP: "[Concept('concept_gdp','$concept_gdp_short|q$')] vlastněný zemí [SCOPE.sCountry('target_country').GetName] v zemi [ROOT.GetCountry.GetName]" # todo: NEW TRANSLATION
+ INFAMY_TARGET_COUNTRY_DEDUCTION_FACTOR: "[SCOPE.sCountry('target_country').GetNameNoFormatting] je agresorem" # todo: CHANGED (predtym: [Concept('concept_diplomatic_play','Diplomatické hry')] cílené na [SCOPE.GetRootScope.GetCountry.GetAltAdjectiveNoFormat)
  INFAMY_FROM_LOYAL_SUBJECT: "[SCOPE.sCountry('target_country').GetName] je $ai_attitude_loyal$ poddaný [ROOT.GetCountry.GetName]"
  INFAMY_FROM_REBELLIOUS_SUBJECT: "[SCOPE.sCountry('target_country').GetName] je $ai_attitude_rebellious$ poddaný [ROOT.GetCountry.GetName]"
+ INFAMY_FROM_BAN_SLAVERY_NO_INFAMY: "$country_ban_slavery_no_infamy_bool$" # todo: NEW TRANSLATION
  INFAMY_MINIMUM_VALUE: "Bylo dosaženo minimálního $concept_infamy$ pro tento $concept_war_goal$"
+ INFAMY_STATE_POPULATION_SHARE: "[SCOPE.sState('infamy_target_state').GetPopulationSize|Dv] [Concept('concept_pop', '$concept_population|q$')] ([SCOPE.sState('infamy_target_state').MakeScope.ScriptValue('state_population_global_share')|v%2] celosvětového podílu)" # todo: NEW TRANSLATION
+ INFAMY_STATE_GDP_SHARE: "[SCOPE.sState('infamy_target_state').GetYearlyGDP|Dv] [Concept('concept_gdp','$concept_gdp_short|q$')] ([SCOPE.sState('infamy_target_state').MakeScope.ScriptValue('state_gdp_global_share')|v%2] celosvětového podílu)" # todo: NEW TRANSLATION
+ INFAMY_STANDING_INCORPORATED_CAPITAL: "[Concept('concept_incorporated_state', '$concept_incorporated|q$')] [Concept('concept_capital_state', '$concept_capital_state_short|q$')]" # todo: NEW TRANSLATION
+ INFAMY_STANDING_INCORPORATED_HOMELAND: "[Concept('concept_incorporated_state', '$concept_incorporated|q$')] [concept_homeland]" # todo: NEW TRANSLATION
+ INFAMY_STANDING_INCORPORATED: "[Concept('concept_incorporated_state', '$concept_incorporated|q$')] $concept_state$" # todo: NEW TRANSLATION
+ INFAMY_STANDING_UNINCORPORATED: "[concept_unincorporated_state]" # todo: NEW TRANSLATION
+ INFAMY_AGGRESSOR_HOMELAND: "[concept_homeland] země [ROOT.GetCountry.GetName]" # todo: NEW TRANSLATION
+ INFAMY_AGGRESSOR_HOMELAND_BONUS: "$country_homeland_infamy_reduction_bool$" # todo: NEW TRANSLATION
+ INFAMY_AGGRESSOR_SHARED_LANGUAGE: "[concept_homeland] kultury, která sdílí jazyk se zemí [ROOT.GetCountry.GetName]" # todo: NEW TRANSLATION
+ INFAMY_AGGRESSOR_SHARED_LANGUAGE_BONUS: "$country_shared_language_infamy_reduction_bool$" # todo: NEW TRANSLATION
+ INFAMY_AGGRESSOR_CLAIM: "[concept_claim] země [ROOT.GetCountry.GetName]" # todo: NEW TRANSLATION
+ INFAMY_SCRIPTED_UNIFICATION: "Sjednocovací válka země [ROOT.GetCountry.GetName]" # todo: NEW TRANSLATION
+ INFAMY_FROM_UNIFY_RUSSIA: "#b $je_russia_civil_war$#!" # todo: NEW TRANSLATION
+ INFAMY_AGGRESSOR_ADJACENT: "Sousedí po souši se zemí [ROOT.GetCountry.GetName]" # todo: NEW TRANSLATION
+ INFAMY_INTEREST_TIER: "Úroveň [concept_interest] země [ROOT.GetCountry.GetCurrentInterestTierTypeIn(SCOPE.sStrategicRegion('infamy_target_region').Self).GetName] v oblasti [SCOPE.sStrategicRegion('infamy_target_region').GetName]" # todo: NEW TRANSLATION
+ INFAMY_COUNTRY_TOTAL: "#tooltippable #tooltip:[SCOPE.sCountry('target_country').GetInfamyStatesTooltipTag(SCOPE.GetRootScope.GetCountry.Self)] $concept_states$ země [SCOPE.sCountry('target_country').GetAdjectiveNoFormatting]#!#!" # todo: NEW TRANSLATION
+ INFAMY_COUNTRY_STATE_ENTRY: "$VALUE$ z oblasti [STATE.GetName]" # todo: NEW TRANSLATION
+ INFAMY_COUNTRY_STATE_VALUE_FORMAT: "$VALUE|-=1$" # todo: NEW TRANSLATION
+ INFAMY_COUNTRY_STATE_TOOLTIP: "#header [STATE.GetName]#!\n$STRING$ $concept_infamy$\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$" # todo: NEW TRANSLATION
+ INFAMY_RELEASED_STATES: "[Concept('concept_state', '$concept_states|q$')], které by byly propuštěny" # todo: NEW TRANSLATION
+ INFAMY_WAR_GOAL_SEVERITY_FACTOR: "#v ×$VALUE|2$#! na základě závažnosti $concept_war_goal$" # todo: NEW TRANSLATION
+ INFAMY_CLAMPED_TO_MINIMUM: "Minimum $VALUE|0v$ $concept_infamy$ pro tento $concept_war_goal$" # todo: NEW TRANSLATION
+ INFAMY_CLAMPED_TO_MAXIMUM: "Maximum $VALUE|0v$ $concept_infamy$ pro tento $concept_war_goal$" # todo: NEW TRANSLATION
+ INFAMY_STATE_MINIMUM_VALUE: "Minimální $concept_infamy$ pro $concept_state$" # todo: NEW TRANSLATION
  MANEUVERS_BASE_VALUE: "Základní hodnota"
- MANEUVERS_TARGET_COUNTRY_POPULATION_FACTOR: "Celková [Concept('concept_pop','populace')|l] [SCOPE.sCountry('target_country').GetAltAdjectiveNoFormatting('G')] ve výši [SCOPE.sCountry('target_country').GetTotalPopulation|Dv]"
+ MANEUVERS_TARGET_COUNTRY_POPULATION_FACTOR: "Celková [Concept('concept_pop','populace')|l] [SCOPE.sCountry('target_country').GetAltAdjectiveNoFormatting('G')] ve výši [SCOPE.sCountry('target_country').GetTotalPopulation|Dv]" # todo: CHANGED (predtym: Celková [Concept('concept_pop','populace|q')|l] [SCOPE.sCountry('target_country').GetAdjectiveNoFormatting] ve výši [SCO)
  MANEUVERS_QUANTITY_FACTOR: "Vstupní množství"
- MANEUVERS_TARGET_STATE_POPULATION_FACTOR: "[SCOPE.sState('target_state').GetName] celkem [Concept('concept_pop','populace')] z [SCOPE.sState('target_state').GetPopulationSize|Dv]"
+ MANEUVERS_TARGET_STATE_POPULATION_FACTOR: "[SCOPE.sState('target_state').GetName] celkem [Concept('concept_pop','populace')] z [SCOPE.sState('target_state').GetPopulationSize|Dv]" # todo: CHANGED (predtym: [SCOPE.sState('target_state').GetName] celkem [Concept('concept_pop','populace|q')] z [SCOPE.sState('target_state').GetP)
  orchestrate_coup: "Organizovat převrat" # todo: NEW TRANSLATION
  orchestrate_coup_action_name: "Organizovat převrat" # todo: NEW TRANSLATION
  orchestrate_coup_action_propose_name: "Organizovat převrat" # todo: NEW TRANSLATION
@@ -2046,9 +2235,10 @@
  orchestrate_coup_action_notification_break_name: "[INITIATOR_COUNTRY.GetName] přestal organizovat [Concept('concept_coup','puč')]" # todo: NEW TRANSLATION
  orchestrate_coup_action_notification_break_desc: "[INITIATOR_COUNTRY.GetName] přestal organizovat [Concept('concept_coup','puč')] v naší [Concept('concept_country','zemi')]." # todo: NEW TRANSLATION # todo: CONCEPT CASE
  COUP_IS_ONGOING_TT: "Organizovaný [Concept('concept_coup','puč')] probíhá" # todo: NEW TRANSLATION
- begin_coup_tt: "[SCOPE.sCharacter('orchestrated_coupist').GetPrimaryRoleTitle] [SCOPE.sCharacter('orchestrated_coupist').GetFullName] zahájí [Concept('concept_coup','puč')], aby v [SCOPE.sCountry('target_country').GetName] dosadil pro-[ROOT.GetCountry.GetName]" # todo: NEW TRANSLATION
+ begin_coup_tt: "[SCOPE.sCharacter('orchestrated_coupist').GetPrimaryRoleTitle] [SCOPE.sCharacter('orchestrated_coupist').GetFullName] zahájí [Concept('concept_coup','puč')], aby v [SCOPE.sCountry('target_country').GetName] dosadil pro-[ROOT.GetCountry.GetName] vládu" # todo: CHANGED (predtym: [SCOPE.sCharacter('orchestrated_coupist').GetPrimaryRoleTitle] [SCOPE.sCharacter('orchestrated_coupist').GetFullName] za)
  begin_coup_scopeless_tt: "Jeden [SCOPE.sCountry('target_country').GetAdjective] [Concept('concept_commander','velitel')] zahájí [Concept('concept_coup','puč')], aby v [SCOPE.sCountry('target_country').GetNameNoFlag] dosadil vládu pro-[ROOT.GetCountry.GetAdjective]" # todo: NEW TRANSLATION
- lobby_is_friendly_tt: "[Concept('concept_political_lobby','Politické lobby')] podporuje [ROOT.GetCountry.GetName]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ lobby_is_friendly_tt: "[Concept('concept_political_lobby','Politické lobby')] podporuje [ROOT.GetCountry.GetName]" # todo: CHANGED (predtym: [Concept('concept_political_lobby','Politické lobby|q')] podporuje [ROOT.GetCountry.GetName])
  HAS_PRO_LOBBY: "[SCOPE.sCountry('target_country').GetName] má pro-[SCOPE.sCountry('actor').GetAdjective] [Concept('concept_political_lobby','lobby')]" # todo: NEW TRANSLATION
  revoke_coup_support_tt: "Zruší podporu pro probíhající [Concept('concept_coup','puč')], což pravděpodobně povede k tomu, že $concept_coup$ bude #b neúspěšný#! nebo #b přerušen#!" # todo: NEW TRANSLATION
  orchestrate_coup_warning_tt: "@warning! Pokud [Concept('concept_coup','puč')] #b selže#! nebo bude #b přerušen#!, bude vyvolán negativní [Concept('concept_diplomatic_catalyst','diplomatický katalyzátor')] vůči [SCOPE.sCountry('target_country').GetName]" # todo: NEW TRANSLATION
+ opposing_foreign_encroachment: "odpor proti zahraničnímu vměšování v Americe" # todo: NEW TRANSLATION

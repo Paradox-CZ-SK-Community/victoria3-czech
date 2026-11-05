@@ -132,9 +132,8 @@
  je_montenegrin_raiding_decrease_button_desc: "Donuťte kmeny omezit své nájezdy, čímž se [Concept('concept_raiding_frequency','nájezdnický zápal')] sníží o 25 %. #v [SelectLocalization(SCOPE.sCountry('russia').IsValid, SCOPE.sCountry('russia').GetName, 'RUS')]#! ocení tento krok k civilizovanosti vůči #v [SelectLocalization(SCOPE.sCountry('ottoman').IsValid, SCOPE.sCountry('ottoman').GetName, 'dyn_c_ottoman_empire')]#!." # todo: CONCEPT CASE
  mon_less_raiding_tt: "Musíme počkat alespoň šest měsíců, než budeme moci nájezdy znovu snížit."
  mon_discourage_raiding_tt: "Snižuje [Concept('concept_raiding_frequency','nájezdnický zápal')] o 25 %"
- notification_je_montenegrin_raiding_fail_name: "Ukončujeme nájezdy"
+ notification_je_montenegrin_raiding_fail_name: "Ukončujeme [concept_raiding]" # todo: CHANGED (predtym: Ukončujeme nájezdy)
  notification_je_montenegrin_raiding_fail_desc: "Bez území sousedícího s Osmany jsou naše kmeny nuceny své nájezdy zastavit."
- notification_je_montenegrin_raiding_fail_tooltip: "#header $notification_je_montenegrin_raiding_fail_name$#!\n$TOOLTIP_DELIMITER$\n$notification_je_montenegrin_raiding_fail_desc$"
  montenegrin_raiding.1.t: "Smrt bratra"
  montenegrin_raiding.1.d: "Smail-aga Čengić z [SelectLocalization(SCOPE.sCountry('ottoman').IsValid, SCOPE.sCountry('ottoman').GetName, 'dyn_c_ottoman_empire')] nalákal naše nájezdníky do léčky! Mezi našimi nesčetnými padlými leží i vlastní bratr [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullName]."
  montenegrin_raiding.1.f: "#italic Můj lid spí hlubokým a bezduchým spánkem; \nžádná rodičovská ruka mi neotře slzy.\nNade mnou se nebesa pevně uzavřela;\nneslyší můj nářek ani mé modlitby.#!\n\n–Petar II. Petrović-Njegoš, #italic Horský věnec#!"
@@ -190,7 +189,6 @@
  raiding_income_greater_tt: "Náš příjem z [Concept('concept_raiding','nájezdů')] musí být nižší než @money!+700" # todo: CONCEPT CASE
  notification_je_mon_austria_alliance_fail_name: "[SelectLocalization(SCOPE.sCountry('austria').IsValid, SCOPE.sCountry('austria').GetName, 'AUS')] stahuje svou nabídku"
  notification_je_mon_austria_alliance_fail_desc: "Po nedávných událostech už [SelectLocalization(SCOPE.sCountry('austria').IsValid, SCOPE.sCountry('austria').GetNameNoFlag, 'AUS')] není ochotno zvažovat navrácení našeho přístavu."
- notification_je_mon_austria_alliance_fail_tooltip: "#header $notification_je_mon_austria_alliance_fail_name$#!\n$TOOLTIP_DELIMITER$\n$notification_je_mon_austria_alliance_fail_desc$"
  mon_state_formation.4.t: "Černohorské pobřeží"
  mon_state_formation.4.d: "Černohorská plavidla znovu vyplouvají do Středomoří z přístavního města #v Cattaro#!, které nám vrátili naši noví spojenci [SelectLocalization(SCOPE.sCountry('austria').IsValid, SCOPE.sCountry('austria').GetName, 'AUS')]."
  mon_state_formation.4.f: "„Jak štědré od našich přátel, nemyslíte, vrátit nám to, co bylo vždy naše?“ \n\n„Přípitek! Přísahám, že jsem jediný muž z hor, který umí uvázat uzel, a zatraceně dobrý pocit být užitečný.“\n„Už nalévej. Víš, že pod rakouskou okupací žily tisíce dobrých Srbů, ano? Teď jsou s námi. A jejich čluny také.“\n„No ano. Na ně! A na tvé zdraví!“\n„Na Černou Horu! A na to, že se nebudeš vydávat za našeho jediného námořníka.“\n„Mmm. Jediný ne, ne ne. Jen ten nejvděčnější.“"

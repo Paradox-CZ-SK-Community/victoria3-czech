@@ -16,7 +16,7 @@
  earthquake_rebuilding_redistribution: "Náprava světa"
  japan_earthquakes.3.t: "Zemětřesení Mino-Owari"
  japan_earthquakes.3.d: "V srdci [ROOT.GetCountry.GetAltAdjective('G')] udeřilo velké zemětřesení, které zabilo tisíce lidí a vytvořilo v zemi neobvykle rozsáhlé zlomové trhliny."
- japan_earthquakes.3.f: "„Reakcí lidských bytostí vždy bylo vnímat katastrofy jako zločiny, často se ptát ‚kdo‘, a tím dávat vzniknout zástupům příšer a démonů z mytologie, o nichž se říká, že stojí za zemětřesením.\n\nModerní seismolog musí pověru odmítnout, ale ironicky se někdy ocitá v roli policejního detektiva vyšetřujícího místo činu. Které předměty spadly? Jak spadly? Všechny tyto otázky nakonec nesměřují k ‚kdo‘, ale k ‚jak‘ a ‚proč‘.“"
+ japan_earthquakes.3.f: "„Reakcí lidských bytostí vždy bylo vnímat katastrofy jako zločiny, často se ptát ‚kdo‘, a tím dávat vzniknout zástupům příšer a démonů z mytologie, o nichž se říká, že stojí za zemětřesením.\n\nModerní seismolog musí pověru odmítnout, ale ironicky se někdy ocitá v roli policejního detektiva vyšetřujícího místo činu. Které předměty spadly? Jak spadly? Všechny tyto otázky nakonec nesměřují k „kdo“, ale k „jak“ a „proč“.„"
  japan_earthquakes.3.a: "Pozvěte cizí učence, aby tyto zlomy studovali."
  japan_earthquakes.3.b: "Využijte tyto poznatky ke zřízení dalších meteorologických observatoří."
  japan_earthquakes.3.c: "Připravte se na možné následné otřesy."
@@ -67,10 +67,10 @@
  monks_left_to_duties: "Mniši ponecháni svým povinnostem"
  japan_religion.1.a.tt: "[GetPlayer.MakeScope.ScriptValue('japan_religion_pop_converts')|0v%] z [GetPopType('clergymen').GetName] přestoupí na [GetReligion('shinto').GetName]" # todo: NEW TRANSLATION
  japan_religion.2.t: "Hondži suidžaku"
- japan_religion.2.d: "Je dobře zavedený názor, že buddhové se v Japonsku zjevili jako kami, což se odráží v terminologii jako [Concept('concept_gongen','gongen')], která je považuje za dvě části téže bytosti. Taková terminologie posiluje vliv buddhismu." # todo: CHANGED
+ japan_religion.2.d: "Je dobře zavedený názor, že buddhové se v Japonsku zjevili jako kami, což se odráží v terminologii jako [Concept('glossary_gongen','gongen')], která je považuje za dvě části téže bytosti. Taková terminologie posiluje vliv buddhismu." # todo: CHANGED (predtym: Je dobře zavedený názor, že buddhové se v Japonsku zjevili jako kami, což se odráží v terminologii jako [Concept('concep)
  japan_religion.2.f: "„Kdysi to muselo dávat smysl. Amaterasu je slunce. Dainiči Nyorai, Vairóčana, je slunce. Slunce však není rozdělené, ani není odrazem či projevem světla někoho jiného. Září sama a vlastní silou. A dnes má [ROOT.GetCountry.GetNameNoFormatting] místo jen pro jedno slunce.“"
- japan_religion.2.a: "Zakažte pojem [Concept('concept_gongen','gongen')]." # todo: CHANGED
- japan_religion.2.b: "Zakažte označování Hachimana jako [Concept('concept_boddhisattva','bódhisattvu')]." # todo: CHANGED
+ japan_religion.2.a: "Zakažte pojem [Concept('glossary_gongen','gongen')]." # todo: CHANGED (predtym: Zakažte pojem [Concept('concept_gongen','gongen')].)
+ japan_religion.2.b: "Zakažte označování Hachimana jako [Concept('glossary_boddhisattva','bódhisattvu')]." # todo: CHANGED (predtym: Zakažte označování Hachimana jako [Concept('concept_boddhisattva','bódhisattvu')].)
  japan_religion.2.c: "Zdržte se regulace terminologie."
  banned_syncretic_terminology: "Zakázaná synkretická terminologie"
  retained_syncretic_terminology: "Zachovaná synkretická terminologie"
@@ -150,9 +150,5 @@
  japan_religion.12.a: "Cesta je jasná." # todo: NEW TRANSLATION
  japan_religion.13.t: "$je_taikyo_proclamation_button$" # todo: NEW TRANSLATION
  japan_religion.13.d: "Proklamace Velkého učení, prohlašující uctívání kami a úctu k božskému císaři za zásady [ROOT.GetCountry.GetAdjective] státu a povinnost jeho občanů." # todo: NEW TRANSLATION
- japan_religion.13.f: "„Úcta ke kami a láska k naší zemi jsou neoddělitelně spjaty; to je první učení.\n\nZásady nebe a cesta člověka jsou neoddělitelně spjaty; to je druhé učení.\n\nÚcta k císaři a poslušnost vůli dvora jsou neoddělitelně spjaty; to je třetí učení.“" # todo: NEW TRANSLATION
+ japan_religion.13.f: "„Úcta ke kami a láska k naší zemi jsou neoddělitelně spjaty; to je první učení.\n\nZásady nebe a cesta člověka jsou neoddělitelně spjaty; to je druhé učení.\n\nÚcta k císaři a poslušnost vůli dvora jsou neoddělitelně spjaty; to je třetí učení.„" # todo: NEW TRANSLATION
  japan_religion.13.a: "Musí být slyšena po celé zemi!" # todo: NEW TRANSLATION
- concept_gongen: "Gongen" # todo: NEW TRANSLATION
- concept_gongen_desc: "Buddha zjevující se jako kami, spojující místní božstvo s přinášečem buddhistického osvícení." # todo: NEW TRANSLATION
- concept_boddhisattva: "Bodhisattva" # todo: NEW TRANSLATION
- concept_boddhisattva_desc: "V buddhismu osvícená bytost a učitel, který pomáhá ostatním dosáhnout nirvány." # todo: NEW TRANSLATION

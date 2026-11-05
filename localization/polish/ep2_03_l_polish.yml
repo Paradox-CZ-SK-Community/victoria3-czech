@@ -78,3 +78,4 @@
  JE_COLONIZE_KOREA_STATES_LIST_ENTRY_INCORPORATED_STATE: "[THIS.GetState.GetCustom('colonize_korea_state_is_incorporated')] $TRIGGER_IS_INCORPORATED$"
  JE_COLONIZE_KOREA_STATES_LIST_ENTRY_TURMOIL: "[THIS.GetState.GetCustom('colonize_korea_state_turmoil')] Nepokoje jsou nižší než [THIS.ScriptValue('je_colonize_korea_state_turmoil_max')|v%1] ([THIS.GetState.CalcTurmoil|v%1])"
  JE_COLONIZE_KOREA_STATES_LIST_ENTRY_CULTURE: "[THIS.GetState.GetCustom('colonize_korea_state_is_assimilated')] [THIS.ScriptValue('je_colonize_korea_state_japanese_culture_min')|v%1] [GetCulture('japanese').GetName] [Concept('concept_culture','kultura')] ([THIS.ScriptValue('japanese_culture_fraction')|v%1])"
+ JE_COLONIZE_KOREA_STATES_LIST_ENTRY_COMPLETE: "$checkbox_ticked$ [THIS.GetState.GetName] splňuje všechny požadavky záznamu v deníku" # todo: NEW TRANSLATION

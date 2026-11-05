@@ -1,0 +1,16 @@
+﻿l_polish:
+ COLD_SEVERITY_NAME_INSIGNIFICANT: "$concept_cold_intensity_insignificant$" # todo: NEW TRANSLATION
+ COLD_SEVERITY_NAME_MODERATE: "$concept_cold_intensity_moderate$" # todo: NEW TRANSLATION
+ COLD_SEVERITY_NAME_SEVERE: "$concept_cold_intensity_severe$" # todo: NEW TRANSLATION
+ STATE_REGION_COLD_EFFECT_MAP_TOOLTIP: "#header [concept_cold_intensity]#!\n#b [STATE_REGION.GetColdSeverityName]#! (#v [STATE_REGION.GetColdEffect|%0]#!) v oblasti [STATE_REGION.GetName]\n$TOOLTIP_DELIMITER$\n#title Účinky:#!#indent_newline:3 \n$EFFECTS$#!" # todo: NEW TRANSLATION
+ STATE_REGION_COLD_EFFECT_MAP_TOOLTIP_SEA_EFFECTS: "@ship_speed! [STATE_REGION.GetColdFleetSpeedMultiplier|%0+=] [concept_ship_speed]\n@supply! [STATE_REGION.GetColdSupplyShipMultiplier|%0-=] [Concept('concept_supply_ship','$concept_supply_ships|q$')] potřebných pro [Concept('concept_supply_route','$concept_supply_routes|q$')] procházející touto oblastí" # todo: NEW TRANSLATION
+ STATE_REGION_COLD_EFFECT_MAP_TOOLTIP_LAND_EFFECTS: "[STATE.GetWorldMarketAccessColdMultiplier|%0+=] [concept_world_market_access] v oblasti [STATE.GetNameWithCountryFlag] kvůli #b [STATE.GetWorldMarketHub.GetStateRegion.GetNavalExitStateRegion.GetColdSeverityName]#! (#v [STATE.GetWorldMarketHub.GetStateRegion.GetNavalExitStateRegion.GetColdEffect|%0]#!) $concept_cold_intensity$ v oblasti [STATE.GetWorldMarketHub.GetStateRegion.GetNavalExitStateRegion.GetName], kde její [concept_world_market_hub] [STATE.GetWorldMarketHub.GetNameWithCountryFlag] dosahuje moře" # todo: NEW TRANSLATION
+ STATE_REGION_COLD_EFFECT_MAP_TOOLTIP_NO_EFFECTS: "#italic Žádné účinky#!" # todo: NEW TRANSLATION
+ STATE_STATUS_ITEM_COLD: "[concept_cold_intensity]\n#b [State.GetStateRegion.GetColdSeverityName]#! (#v [State.GetStateRegion.GetColdEffect|%0]#!)" # todo: NEW TRANSLATION
+ STATE_TT_COLD_INTENSITY: "[concept_cold_intensity]: #b [State.GetStateRegion.GetColdSeverityName]#! (#v [State.GetStateRegion.GetColdEffect|%0]#!)" # todo: NEW TRANSLATION
+ WORLD_MARKET_ACCESS_COLD_FACTOR: "#n x$VALUE|2$#! kvůli #b $COLD_SEVERITY$#! (#v [STATE_REGION.GetColdEffect|%0]#!) [concept_cold_intensity] v oblasti [STATE_REGION.GetName]" # todo: NEW TRANSLATION
+ MILITARY_FORMATION_COLD_SUPPLY_FACTOR_DESC: "#v [MilitaryFormation.GetColdSupplyFactor|%0-]#! kvůli #b [SelectLocalization(MilitaryFormation.IsSupplyRouteInSevereCold, 'concept_cold_intensity_severe', 'concept_cold_intensity_moderate')]#! (#v [MilitaryFormation.GetSupplyRouteColdEffect|%0]#!) [concept_cold_intensity] v [concept_sea_node] podél zásobovací trasy" # todo: NEW TRANSLATION
+ FLEET_TRAVEL_TIME_SPEED_BREAKDOWN_ENTRY_COLD: "@ship_speed! #v $SPEED|D$#!/den v oblasti [STATE_REGION.GetName] ($MULT|v%0+$ kvůli úrovni [concept_cold] [STATE_REGION.GetColdEffect|v%0])" # todo: NEW TRANSLATION
+ TRAVEL_TIME_WEATHER_WARNING: "@warning! Počasí podél trasy ovlivňuje [concept_ship_speed], takže se doba plavby mění podle ročního období" # todo: NEW TRANSLATION
+ TRAVEL_TIME_WEATHER_WARNING_SHORT: "@warning! Počasí ovlivňuje [concept_ship_speed]" # todo: NEW TRANSLATION
+ FLEET_SPEED_COLD_EFFECT_TITLE: "[concept_cold] v oblasti [STATE_REGION.GetName]" # todo: NEW TRANSLATION

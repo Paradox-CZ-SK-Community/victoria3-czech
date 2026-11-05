@@ -125,6 +125,10 @@
  ACW_DIXIE_STATES_HEADER: "Všechny tyto [Concept('concept_state','státy')] jsou [Concept('concept_incorporated_state','začlenen')] a mají alespoň [GetPlayer.MakeScope.ScriptValue('acw_reincorporate_dixie_loyalist_min')|0v%] [GetCulture('dixie').GetName] [Concept('concept_loyalist','loajalisté')]:"
  ACW_DIXIE_STATES_LIST_ENTRY: "[THIS.GetState.GetName]: $concept_incorporated$: [SelectLocalization(THIS.GetState.IsIncorporated,'@green_checkmark_box!','@simple_box!')] $dixie$ $concept_loyalists$: [SelectLocalization(GreaterThanOrEqualTo_CFixedPoint(THIS.ScriptValue('dixie_loyalist_fraction'), THIS.ScriptValue('acw_reincorporate_dixie_loyalist_min') ),'@green_checkmark_box!','@simple_box!')] ([THIS.ScriptValue('dixie_loyalist_fraction')|%+1])"
  ACW_REINCORPORATE_TT: "$ACW_DIXIE_STATES_HEADER$\n[GetScriptedGui('je_acw_reincoprorate_states_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)]"
+ je_acw_reincorporate_state_unionist: "[THIS.GetState.GetName] se přiklonil k Unii." # todo: NEW TRANSLATION
+ je_acw_reincorporate_state_completed: "Obnova státu [THIS.GetState.GetName] byla dokončena a stát byl znovu přijat do Unie.\n$ACW_DIXIE_STATES_LIST_ENTRY$" # todo: NEW TRANSLATION
+ je_acw_reincorporate_state_partial: "Obnova státu [ROOT.GetState.GetName] je částečně dokončena.\n$ACW_DIXIE_STATES_LIST_ENTRY$" # todo: NEW TRANSLATION
+ je_acw_reincorporate_state_not_completed: "Obnova státu [THIS.GetState.GetName] je stále v počáteční fázi.\n$ACW_DIXIE_STATES_LIST_ENTRY$" # todo: NEW TRANSLATION
  je_acw_war: "Americká občanská válka"
  je_acw_war_reason: "Válka mezi státy je tu. Nyní je čas zachovat Unii, nebo při tom zemřít."
  acw_war_tt_complete: "[Concept('concept_secession','Separatisté')] byli poraženi a znovu anektováni."
@@ -132,8 +136,8 @@
  acw_je_events.1.t2: "Severní deklarace secese"
  acw_je_events.1.d1: "Konvent otrokářských států vyhlásil nezávislost na nás jako [SCOPE.sCountry('csa_scope').GetName]. Unie byla vyzvána, ale tak snadno neustoupí."
  acw_je_events.1.d2: "Konvent abolicionistických států vyhlásil nezávislost na nás jako [SCOPE.sCountry('fsa_scope').GetName]. Unie byla vyzvána, ale tak snadno neustoupí."
- acw_je_events.1.f1: "„V tomto závažném kroku, který jsme učinili rozvázáním svého spojení s vládou, jejíž součástí jsme tak dlouho byli, je jen spravedlivé, abychom vyložili hlavní důvody, které nás k tomuto postupu vedly.\n\nNaše postavení je důkladně ztotožněno s institucí otroctví – velkým hmotným zájmem světa.“"
- acw_je_events.1.f2: "„V tomto závažném kroku, který jsme učinili rozvázáním svého spojení s vládou, jejíž součástí jsme tak dlouho byli, je jen spravedlivé, abychom vyložili hlavní důvody, které nás k tomuto postupu vedly.\n\nNaše postavení je důkladně ztotožněno s institucí otroctví – institucí bezpříkladného zla, která musí být zrušena.“"
+ acw_je_events.1.f1: "„V tomto závažném kroku, který jsme učinili rozvázáním svého spojení s vládou, jejíž součástí jsme tak dlouho byli, je jen spravedlivé, abychom vyložili hlavní důvody, které nás k tomuto postupu vedly.\n\nNaše postavení je důkladně ztotožněno s institucí otroctví – velkým hmotným zájmem světa.„"
+ acw_je_events.1.f2: "„V tomto závažném kroku, který jsme učinili rozvázáním svého spojení s vládou, jejíž součástí jsme tak dlouho byli, je jen spravedlivé, abychom vyložili hlavní důvody, které nás k tomuto postupu vedly.\n\nNaše postavení je důkladně ztotožněno s institucí otroctví – institucí bezpříkladného zla, která musí být zrušena.„"
  acw_je_events.1.a: "Dům rozdělený proti sobě nemůže obstát. Za Unii!"
  acw_je_events.1.b: "Raději bych naši věc nazval otázkou práv států."
  acw_je_events.2.t: "Rekonstrukce země"

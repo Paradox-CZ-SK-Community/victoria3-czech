@@ -49,10 +49,8 @@
  obligation_events.1.a: "Potřebují jen malé postrčení správným směrem!"
  obligation_events.a.tt: "Pokud přijmou:"
  obligation_events.b.tt: "Pokud nepřijmou:"
- notification_obligation_events_accepted_tooltip: "#header $notification_obligation_events_accepted_name$#!\n$TOOLTIP_DELIMITER$\n$notification_obligation_events_accepted_desc$"
  notification_obligation_events_accepted_name: "[SCOPE.sC('obligation_request_target').GetName] přijala návrh!"
  notification_obligation_events_accepted_desc: "[SCOPE.sC('obligation_request_target').GetName] přijala náš návrh."
- notification_obligation_events_rejected_tooltip: "#header $notification_obligation_events_rejected_name$#!\n$TOOLTIP_DELIMITER$\n$notification_obligation_events_rejected_desc$"
  notification_obligation_events_rejected_name: "[SCOPE.sC('obligation_request_target').GetName] odmítla návrh!"
  notification_obligation_events_rejected_desc: "[SCOPE.sC('obligation_request_target').GetName] odmítla náš návrh."
  obligation_events.1.b: "Měli bychom se držet stranou od jejich vnitřní politiky."
@@ -492,21 +490,16 @@
  scramble_for_africa_3_states: "Naše koloniální říše v Africe je stále v plenkách, ale vykazuje dostatečný příslib, abychom byli považováni za důležitého hráče v oblasti."
  scramble_for_africa_4_states: "Naše koloniální říše v Africe vyrostla ze svých skromných počátků a ukazuje příslib budoucích ambicí."
  scramble_for_africa_6_states: "Jsme blízko dosažení své ambice vybudovat na africkém kontinentu velkou, trvalou koloniální říši."
- notification_colonial_conflict_demands_refused_name: "[SCOPE.sCountry('african_colony_conflict_recipient').GetName] odmítla naše požadavky!"
+ notification_colonial_conflict_demands_refused_name: "[SCOPE.sCountry('african_colony_conflict_recipient').GetName] odmítla naše požadavky" # todo: CHANGED (predtym: [SCOPE.sCountry('african_colony_conflict_recipient').GetName] odmítla naše požadavky!)
  notification_colonial_conflict_demands_refused_desc: "[SCOPE.sCountry('african_colony_conflict_recipient').GetName] odmítla ustoupit a trvá na svém právu rozšířit svou kolonii ve státě [SCOPE.sState('african_colony_state_recipient').GetName]."
- notification_colonial_conflict_demands_refused_tooltip: "#header $notification_colonial_conflict_demands_refused_name$#!\n$TOOLTIP_DELIMITER$\n$notification_colonial_conflict_demands_refused_desc$"
- notification_colonial_conflict_region_demands_met_name: "[SCOPE.sCountry('african_colony_conflict_recipient').GetName] splnila naše požadavky!"
+ notification_colonial_conflict_region_demands_met_name: "[SCOPE.sCountry('african_colony_conflict_recipient').GetName] splnila naše požadavky" # todo: CHANGED (predtym: [SCOPE.sCountry('african_colony_conflict_recipient').GetName] splnila naše požadavky!)
  notification_colonial_conflict_region_demands_met_desc: "[SCOPE.sCountry('african_colony_conflict_recipient').GetName] ustoupila od své expanze ve státě [SCOPE.sState('african_colony_state_recipient').GetName] a dala nám [Concept('concept_claim','nárok')] na svou kolonii." # todo: CONCEPT CASE
- notification_colonial_conflict_region_demands_met_tooltip: "#header $notification_colonial_conflict_region_demands_met_name$#!\n$TOOLTIP_DELIMITER$\n$notification_colonial_conflict_region_demands_met_desc$"
- notification_colonial_conflict_region_demands_refused_name: "[SCOPE.sCountry('african_colony_conflict_recipient').GetName] odmítla naše požadavky!"
+ notification_colonial_conflict_region_demands_refused_name: "[SCOPE.sCountry('african_colony_conflict_recipient').GetName] odmítla naše požadavky" # todo: CHANGED (predtym: [SCOPE.sCountry('african_colony_conflict_recipient').GetName] odmítla naše požadavky!)
  notification_colonial_conflict_region_demands_refused_desc: "[SCOPE.sCountry('african_colony_conflict_recipient').GetName] neuznala náš oprávněný nárok na kolonii ve státě [SCOPE.sState('african_colony_state_recipient').GetName]."
- notification_colonial_conflict_region_demands_refused_tooltip: "#header $notification_colonial_conflict_region_demands_refused_name$#!\n$TOOLTIP_DELIMITER$\n$notification_colonial_conflict_region_demands_refused_desc$"
- notification_colonial_conflict_claim_demands_refused_name: "[SCOPE.sCountry('african_colony_claim_conflict_recipient').GetName] odmítla naše požadavky!"
+ notification_colonial_conflict_claim_demands_refused_name: "[SCOPE.sCountry('african_colony_claim_conflict_recipient').GetName] odmítla naše požadavky" # todo: CHANGED (predtym: [SCOPE.sCountry('african_colony_claim_conflict_recipient').GetName] odmítla naše požadavky!)
  notification_colonial_conflict_claim_demands_refused_desc: "[SCOPE.sCountry('african_colony_claim_conflict_recipient').GetName] odmítla uznat náš nárok a trvá na svém právu ponechat si kolonii ve státě [SCOPE.sState('african_colony_claim_state').GetName]."
- notification_colonial_conflict_claim_demands_refused_tooltip: "#header $notification_colonial_conflict_claim_demands_refused_name$#!\n$TOOLTIP_DELIMITER$\n$notification_colonial_conflict_claim_demands_refused_desc$"
- notification_colonial_conflict_claim_demands_met_name: "[SCOPE.sCountry('african_colony_claim_conflict_recipient').GetName] splnila naše požadavky!"
+ notification_colonial_conflict_claim_demands_met_name: "[SCOPE.sCountry('african_colony_claim_conflict_recipient').GetName] splnila naše požadavky" # todo: CHANGED (predtym: [SCOPE.sCountry('african_colony_claim_conflict_recipient').GetName] splnila naše požadavky!)
  notification_colonial_conflict_claim_demands_met_desc: "[SCOPE.sCountry('african_colony_claim_conflict_recipient').GetName] uznala náš oprávněný nárok a postoupila nám svou kolonii ve státě [SCOPE.sState('african_colony_claim_state').GetName]."
- notification_colonial_conflict_claim_demands_met_tooltip: "#header $notification_colonial_conflict_claim_demands_met_name$#!\n$TOOLTIP_DELIMITER$\n$notification_colonial_conflict_claim_demands_met_desc$"
  je_pumpjacks: "Rozšíření ropného průmyslu"
  je_pumpjacks_reason: "Teprve jsme začali objevovat využití ropy, ale už jsme objevili její určité zásoby. Musíme je bez prodlení využít."
  je_electrical_generation: "Rozšíření elektráren"
@@ -783,7 +776,7 @@
  education_laws.4.f: "„Zeptejte se kteréhokoli z mých sousedů a potvrdí vám, co jsem pro komunitu udělal, i bez formální kvalifikace! Všechny děti tady v okolí, které už umějí číst nebo psát, jsem to naučil já. Je to pro mě větší zdroj hrdosti než cokoli, co jsem vyrobil vlastníma rukama.“"
  education_laws.4.a: "Máme štěstí, že už máme vzdělané lidi!"
  education_laws.4.b: "Nesmíme dovolit, aby to odvádělo pozornost od jiné práce."
- education_laws.4.tt: "Dopad tohoto úsilí je úměrný [Concept('concept_literacy','gramotnost')] země [THIS.GetCountry.GetAdjectiveNoFormatting] v [Concept('concept_incorporated_state', '$concept_incorporated_states$')|l] země [THIS.GetCountry.GetIncorporatedLiteracyRate|%v]"
+ education_laws.4.tt: "Dopad tohoto úsilí je úměrný [Concept('concept_literacy','gramotnost')] země [THIS.GetCountry.GetAdjectiveNoFormatting] v [Concept('concept_incorporated_state', '$concept_incorporated_states|q$')|l] země [THIS.GetCountry.GetIncorporatedLiteracyRate|%v]" # todo: CHANGED (predtym: Dopad tohoto úsilí je úměrný [Concept('concept_literacy','gramotnost')] země [THIS.GetCountry.GetAdjectiveNoFormatting] )
  education_laws.5.t: "Chlapci a dívky"
  education_laws.5.d: "Debata o tom, zda by nový zákon [SCOPE.sLaw('current_law_scope').GetName] měl mít oddělené třídy pro studenty a studentky, a možná i rozdílné učební osnovy, vyvolává neshody ohledně toho, jak nový vzdělávací systém zavést."
  education_laws.5.f: "„Zpochybňoval by snad někdo vrozené rozdíly v povaze mezi pohlavími nebo jejich božsky určené role v naší společnosti? Jak bychom mohli očekávat, že vychováme řádné dámy a gentlemany, pokud v jejich vzdělávání nebudeme činit žádný takový rozdíl?“"
@@ -951,10 +944,10 @@
  administrative_assistance_for_elections: "Administrativní pomoc při volbách"
  setting_up_election_system: "Zavádění volebního systému"
  je_warlord_china: "Křehká jednota"
- je_warlord_china_reason: "Stav #bold ukazatele postupu#! se bude #tooltippable;tooltip:[Country.GetTooltipTag],je_warlord_china_special_tooltip_advance posouvat vpřed#! nebo #tooltippable;tooltip:[Country.GetTooltipTag],je_warlord_china_special_tooltip_deplete ustupovat#! na základě určitých podmínek. Pokud #bold ukazatel postupu#! dosáhne #variable 0 %#!, povede to k úplné ztrátě kontroly ústřední vlády a uchopení moci despotickými místními úřady.\n\nNavzdory období dočasné stability za císařů Jung-čeng a Čchien-lung se Čína vydala na setrvalý sestup ke kolapsu pod tíhou povstání, špatné správy a vnějšího tlaku. Pokud bude autorita ústřední vlády dostatečně narušena, místní vojenské mocnosti v zemi [SCOPE.GetRootScope.GetCountry.GetName] hrozí, že zemi roztrhají na drobná léna."
- je_warlord_china_special_tooltip_deplete: "Následující podmínky budou #bold snižovat#! #bold ukazatel postupu#!:\n• Prohrání #BOLD opiových válek#!\n• Nezastavení vzniku #BOLD Nebeské říše#!\n• Neznovudobytí #BOLD Nebeské říše#!\n• Selhání #BOLD Boxerského povstání#!\n• Upadnutí do dluhu a přijetí jakýchkoli [Concept('concept_loans','půjček')]\n• Probíhající [Concept('concept_civil_war','občanská válka')]\n• Stát se [Concept('concept_subject','závislou zemí')] jiné země\n• Zrušení zákona [GetLawType('law_monarchy').GetName]$warlord_china_coup_loc$" # todo: CONCEPT CASE
+ je_warlord_china_reason: "Pokud #bold ukazatel postupu#! dosáhne #variable 0 %#!, povede to k úplné ztrátě kontroly ústřední vlády a uchopení moci despotickými místními úřady.\n\nNavzdory období dočasné stability za císařů Jung-čeng a Čchien-lung se Čína vydala na setrvalý sestup ke kolapsu pod tíhou povstání, špatné správy a vnějšího tlaku. Pokud bude autorita ústřední vlády dostatečně narušena, místní vojenské mocnosti v zemi [SCOPE.GetRootScope.GetCountry.GetName] hrozí, že zemi roztrhají na drobná léna." # todo: CHANGED (predtym: Stav bold ukazatele postupu ! se bude tooltippable;tooltip:[Country.GetTooltipTag],je_warlord_china_special_tooltip_adva)
+ je_warlord_china_advance: "• Vítězství v #BOLD opiových válkách#!\n• Přestat být [concept_unrecognized_power]\n• Dokončit [concept_journal_entry] #BOLD Potlačit monarchismus#!" # todo: NEW TRANSLATION
+ je_warlord_china_deplete: "• Prohrát #BOLD opiové války#!\n• Nezabránit vzniku #BOLD Nebeského království#!\n• Znovu dobýt #BOLD Nebeské království#!\n• Selhat v #BOLD boxerském povstání#!\n• Zadlužit se a vzít si jakékoli [concept_loans]\n• Zažít [concept_civil_war]\n• Stát se [concept_subject] jiného státu\n• Zrušit [GetLawType('law_monarchy').GetName]$warlord_china_coup_loc$" # todo: NEW TRANSLATION
  warlord_china_coup_loc: "\n• Úspěšný [Concept('concept_coup','puč')]"
- je_warlord_china_special_tooltip_advance: "Následující podmínky budou #bold zvyšovat#! #bold ukazatel postupu#!:\n• Vítězství v #BOLD opiových válkách#!\n• Přestat být [Concept('concept_unrecognized_power','neuznávaná země')]\n• Dokončení záznamu v deníku #BOLD Vymýcení monarchismu#!"
  je_china_failure_tt: "#bold Ukazatel postupu#! dosáhl #variable 0 %#!"
  warlord_china_explosion_point_add_name: "Jednota zvýšena"
  warlord_china_explosion_point_add_desc: "#BOLD Křehká jednota#! země [SCOPE.GetRootScope.GetCountry.GetName] byla posílena."

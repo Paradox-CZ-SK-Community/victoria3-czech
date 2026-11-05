@@ -1,0 +1,135 @@
+﻿l_polish:
+ je_ukraine_cultural_renaissance: "Ukrajinské obrození" # todo: NEW TRANSLATION
+ je_ukraine_cultural_renaissance_reason: "Po potlačení hajdamáckých povstání se sen o nezávislém ukrajinském státě zdá vzdálenější než kdy dřív. Zatímco však meče selhaly, zastánci ukrajinské věci si brousili pera. Autoři, básníci a novináři, povzbuzení liberálním duchem doby, jsou ochotni riskovat vězení či vyhnanství, aby sen udrželi při životě. Možná se jim podaří znovu zažehnout plamen." # todo: NEW TRANSLATION
+ je_ukraine_cultural_renaissance_hromada_info: "@information! Spolky [concept_hromada] se budou objevovat v [GetCulture('ukrainian').GetName] [Concept('concept_homeland','$concept_homelands|q$')] v zemi [ROOT.GetCountry.GetName], dokud bude tento zápis v deníku aktivní." # todo: NEW TRANSLATION
+ je_ukraine_cultural_renaissance_prosvita_info: "@information! Spolky [concept_prosvita] se budou objevovat v [GetCulture('ukrainian').GetName] [Concept('concept_homeland','$concept_homelands|q$')] v zemi [ROOT.GetCountry.GetName], dokud bude tento zápis v deníku aktivní." # todo: NEW TRANSLATION
+ je_ukraine_cultural_renaissance_reason_hromada_permitted: "$je_ukraine_cultural_renaissance_reason$\n\n$je_ukraine_cultural_renaissance_hromada_info$ Bude jim dovoleno svobodně působit." # todo: NEW TRANSLATION
+ je_ukraine_cultural_renaissance_reason_hromada_surveilled: "$je_ukraine_cultural_renaissance_reason$\n\n$je_ukraine_cultural_renaissance_hromada_info$ Budou pod dohledem, což sníží účinky a dobu trvání modifikátoru." # todo: NEW TRANSLATION
+ je_ukraine_cultural_renaissance_reason_hromada_suppressed: "$je_ukraine_cultural_renaissance_reason$\n\n$je_ukraine_cultural_renaissance_hromada_info$ Budou potlačeny, což sníží účinky a dobu trvání modifikátoru." # todo: NEW TRANSLATION
+ je_ukraine_cultural_renaissance_reason_prosvita_state_funded: "$je_ukraine_cultural_renaissance_reason$\n\n$je_ukraine_cultural_renaissance_prosvita_info$ Budou financovány státem." # todo: NEW TRANSLATION
+ je_ukraine_cultural_renaissance_reason_prosvita_self_funded: "$je_ukraine_cultural_renaissance_reason$\n\n$je_ukraine_cultural_renaissance_prosvita_info$ Budou si zajišťovat financování samy." # todo: NEW TRANSLATION
+ je_ukraine_cultural_renaissance_reason_prosvita_suppressed: "$je_ukraine_cultural_renaissance_reason$\n\n$je_ukraine_cultural_renaissance_prosvita_info$ Budou potlačeny, což ve státě vyvolá [Concept('concept_radical','$concept_radicals|q$')]." # todo: NEW TRANSLATION
+ je_ukraine_cultural_renaissance_map_fervor: "[GetCulture('ukrainian').GetName] [concept_fervor]: [GetCulture('ukrainian').GetCurrentFervor|v0]" # todo: NEW TRANSLATION
+ je_ukraine_cultural_renaissance_map_homeland: "[ROOT.GetState.GetName] je [concept_homeland] kultury [GetCulture('ukrainian').GetName]" # todo: NEW TRANSLATION
+ je_ukraine_cultural_renaissance_map_culture_percent: "[SCOPE.GetValue('ukrainian_culture_percent')|v0%] [Concept('concept_pop','$concept_pops|q$')] ve státě [ROOT.GetState.GetName] jsou kultury [GetCulture('ukrainian').GetName]" # todo: NEW TRANSLATION
+ je_ukraine_cultural_renaissance_map_hromada: "Ve státě [ROOT.GetState.GetName] působí spolek [concept_hromada]" # todo: NEW TRANSLATION
+ je_ukraine_cultural_renaissance_map_prosvita: "Ve státě [ROOT.GetState.GetName] působí spolek [concept_prosvita]" # todo: NEW TRANSLATION
+ notification_hromada_appears_name: "Ve státě [SCOPE.GetRootScope.GetState.GetStateRegion.GetName] vznikla Hromada" # todo: NEW TRANSLATION
+ notification_hromada_appears_desc: "Ve státě [SCOPE.GetRootScope.GetState.GetStateRegion.GetName] vznikl nový spolek [concept_hromada]." # todo: NEW TRANSLATION
+ notification_prosvita_appears_name: "Ve státě [SCOPE.GetRootScope.GetState.GetStateRegion.GetName] vznikla Prosvita" # todo: NEW TRANSLATION
+ notification_prosvita_appears_desc: "Ve státě [SCOPE.GetRootScope.GetState.GetStateRegion.GetName] vznikl nový spolek [concept_prosvita]." # todo: NEW TRANSLATION
+ notification_hromada_appears_permitted_name: "$notification_hromada_appears_name$" # todo: NEW TRANSLATION
+ notification_hromada_appears_permitted_desc: "$notification_hromada_appears_desc$ Může svobodně působit." # todo: NEW TRANSLATION
+ notification_hromada_appears_surveilled_name: "$notification_hromada_appears_name$" # todo: NEW TRANSLATION
+ notification_hromada_appears_surveilled_desc: "$notification_hromada_appears_desc$ Je pod přísným dohledem." # todo: NEW TRANSLATION
+ notification_hromada_appears_suppressed_name: "Hromada ve státě [SCOPE.GetRootScope.GetState.GetStateRegion.GetName] potlačena" # todo: NEW TRANSLATION
+ notification_hromada_appears_suppressed_desc: "$notification_hromada_appears_desc$ Její známí členové byli zatčeni." # todo: NEW TRANSLATION
+ notification_prosvita_appears_state_funded_name: "$notification_prosvita_appears_name$" # todo: NEW TRANSLATION
+ notification_prosvita_appears_state_funded_desc: "$notification_prosvita_appears_desc$ Dostává finanční podporu od státu [SCOPE.GetRootScope.GetState.GetOwner.GetAdjective]." # todo: NEW TRANSLATION
+ notification_prosvita_appears_self_funded_name: "$notification_prosvita_appears_name$" # todo: NEW TRANSLATION
+ notification_prosvita_appears_self_funded_desc: "$notification_prosvita_appears_desc$ Je financována dobrovolníky." # todo: NEW TRANSLATION
+ notification_prosvita_appears_suppressed_name: "Prosvita ve státě [SCOPE.GetRootScope.GetState.GetStateRegion.GetName] potlačena" # todo: NEW TRANSLATION
+ notification_prosvita_appears_suppressed_desc: "$notification_prosvita_appears_desc$ Byla rozpuštěna státem [SCOPE.GetRootScope.GetState.GetOwner.GetAdjective]." # todo: NEW TRANSLATION
+ cultural_renaissance: "Kulturní obrození" # todo: NEW TRANSLATION
+ ukraine_national_movement: "$TAB$#T Národní hnutí kultury [GetCulture('ukrainian').GetName]#!" # todo: NEW TRANSLATION
+ belarus_national_movement: "$TAB$#T Národní hnutí kultury [GetCulture('byelorussian').GetName]#!" # todo: NEW TRANSLATION
+ je_cultural_renaissance_bar_desc: "Obrození: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%1]#!" # todo: NEW TRANSLATION
+ je_cultural_renaissance_bar_desc_2: "Úpadek: #v [Divide_CFixedPoint(Subtract_CFixedPoint(ScriptedProgressBar.GetMaxValue, JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)), Subtract_CFixedPoint(ScriptedProgressBar.GetMaxValue, ScriptedProgressBar.GetMinValue))|v%]#!" # todo: NEW TRANSLATION
+ je_cultural_renaissance_bar_max: "$poland_reds_max_strength$" # todo: NEW TRANSLATION
+ je_cultural_renaissance_bar_min: "$poland_whites_max_strength$" # todo: NEW TRANSLATION
+ je_cr_ukraine_bar_fervor: "#v 10 %#! [concept_fervor] kultury [GetCulture('ukrainian').GetName]" # todo: NEW TRANSLATION
+ je_cr_ukraine_bar_homeland_decree: "libovolný stát [concept_homeland] kultury [GetCulture('ukrainian').GetName] s [concept_decree] [GetDecreeType('decree_promote_national_values').GetName] nebo [GetDecreeType('decree_promote_national_values_tsarpoints').GetName]" # todo: NEW TRANSLATION
+ je_cr_ukraine_bar_homeland_decree_multiple: "5 států [concept_homeland] kultury [GetCulture('ukrainian').GetName] s [concept_decree] [GetDecreeType('decree_promote_national_values').GetName] nebo [GetDecreeType('decree_promote_national_values_tsarpoints').GetName]" # todo: NEW TRANSLATION
+ je_cultural_renaissance_ukraine_independent_modifier: "Pokud bude #v $UKR$#! někdy v budoucnu propuštěna, získá:" # todo: NEW TRANSLATION
+ je_cultural_renaissance_ukraine_event_independence: "Je pravděpodobnější, že se #v $UKR$#! v budoucích #b událostech#! osamostatní" # todo: NEW TRANSLATION
+ je_cr_belarus_bar_fervor: "#v 10 %#! [concept_fervor] kultury [GetCulture('byelorussian').GetName]" # todo: NEW TRANSLATION
+ je_cr_belarus_bar_homeland_decree: "libovolný stát [concept_homeland] kultury [GetCulture('byelorussian').GetName] s [concept_decree] [GetDecreeType('decree_promote_national_values').GetName] nebo [GetDecreeType('decree_promote_national_values_tsarpoints').GetName]" # todo: NEW TRANSLATION
+ je_cr_belarus_bar_homeland_decree_multiple: "4 státy [concept_homeland] kultury [GetCulture('byelorussian').GetName] s [concept_decree] [GetDecreeType('decree_promote_national_values').GetName] nebo [GetDecreeType('decree_promote_national_values_tsarpoints').GetName]" # todo: NEW TRANSLATION
+ je_cultural_renaissance_belarus_independent_modifier: "Pokud bude #v $BYE$#! někdy v budoucnu propuštěna, získá:" # todo: NEW TRANSLATION
+ je_cultural_renaissance_belarus_event_independence: "Je pravděpodobnější, že se #v $BYE$#! v budoucích #b událostech#! osamostatní" # todo: NEW TRANSLATION
+ cultural_foundation: "Kulturní základna" # todo: NEW TRANSLATION
+ culture_suppressed: "Potlačovaná kultura" # todo: NEW TRANSLATION
+ modifier_scaled_by_progress_bar: "Modifikátor se po vypršení času odvíjí od stavu ukazatele pokroku" # todo: NEW TRANSLATION
+ je_belarus_cultural_renaissance: "Běloruské obrození" # todo: NEW TRANSLATION
+ je_belarus_cultural_renaissance_reason: "Obyvatelé zemí zvaných Bílá Rus byli nejprve poddanými Polsko-litevského společenství a později Ruské říše, a jejich vlastní kulturní identita je proto zpochybňována. Z této bouřlivé doby však může vzejít něco nového: touha vytvořit vlastní národ." # todo: NEW TRANSLATION
+ je_belarus_cultural_renaissance_trigger_poland: "[concept_journal_entry] #v $je_congress_poland$#! skončil vítězstvím #b Červených#!" # todo: NEW TRANSLATION
+ je_belarus_cultural_renaissance_map_fervor: "[GetCulture('byelorussian').GetName] [concept_fervor]: [GetCulture('byelorussian').GetCurrentFervor|v0]" # todo: NEW TRANSLATION
+ je_belarus_cultural_renaissance_map_homeland: "[ROOT.GetState.GetName] je [concept_homeland] kultury [GetCulture('byelorussian').GetName]" # todo: NEW TRANSLATION
+ je_belarus_cultural_renaissance_map_culture_percent: "[SCOPE.GetValue('byelorussian_culture_percent')|v0%] [Concept('concept_pop','$concept_pops|q$')] ve státě [ROOT.GetState.GetName] jsou kultury [GetCulture('byelorussian').GetName]" # todo: NEW TRANSLATION
+ cultural_renaissances_events.1.t: "Nejvyšší rusínská rada" # todo: NEW TRANSLATION
+ cultural_renaissances_events.1.d: "Ve státě [SCOPE.sState('src_state').GetCityHubName] vznikla politická organizace, která prosazuje sjednocení ukrajinských zemí v rámci [ROOT.GetCountry.GetName] a širší používání ukrajinštiny i výuku v tomto jazyce." # todo: NEW TRANSLATION
+ cultural_renaissances_events.1.f: "„Do týdne od chvíle, kdy tato rada oznámila barvy své vlajky, už na věži radnice vlaje žlutomodrý prapor. Opravdu čekají, že uvěříme, že s tím neměli nic společného?“\n\n„Nemyslím, že chtějí, abychom něčemu věřili. Chtějí, abychom věděli přesně to, co už teď víme jistě: mají vlajku a její barvy jsou žlutá a modrá.“" # todo: NEW TRANSLATION
+ cultural_renaissances_events.1.a: "Dejte jim, co chtějí." # todo: NEW TRANSLATION
+ cultural_renaissances_events.1.bb: "Zkuste spolupracovat s jejich zástupci." # todo: NEW TRANSLATION
+ cultural_renaissances_events.1.c: "Poslední, co potřebujeme, jsou další separatisté." # todo: NEW TRANSLATION
+ supreme_ruthenian_council: "Nejvyšší rusínská rada" # todo: NEW TRANSLATION
+ ruthenian_representatives: "Rusínští zástupci" # todo: NEW TRANSLATION
+ cultural_renaissances_events.2.t: "Bratrstvo svatých Cyrila a Metoděje" # todo: NEW TRANSLATION
+ cultural_renaissances_events.2.d: "Ve státě [SCOPE.sState('boscam_state').GetCityHubName] vznikla politická společnost pojmenovaná po tvůrcích cyrilice. Prosazuje liberální reformy, vzdělávání širokých vrstev a nezávislý ukrajinský stát jako součást všeslovanské unie rovnoprávných národů." # todo: NEW TRANSLATION
+ cultural_renaissances_events.2.f: "„Poklidná země, milá vlasti,\nó, má drahá Ukrajino!\nProč tě, matko, oloupili?\nProč tak chřadneš, proč tak hyneš?“\n\n—Taras Ševčenko, #italic Vyrabovaný hrob #!" # todo: NEW TRANSLATION
+ cultural_renaissances_events.2.a: "Myšlenka všeslovanské unie stojí za zvážení." # todo: NEW TRANSLATION
+ cultural_renaissances_events.2.b: "Mezi básníky není třeba tajností!" # todo: NEW TRANSLATION
+ cultural_renaissances_events.2.c: "Zatkněte je, a pro jistotu i toho, kdo píše texty, které čtou." # todo: NEW TRANSLATION
+ cultural_renaissances_events.2.e: "Takové myšlenky je třeba vymýtit." # todo: NEW TRANSLATION
+ brotherhood_of_saints_cyril_and_methodius: "Bratrstvo svatých Cyrila a Metoděje" # todo: NEW TRANSLATION
+ ukrainophile_intelligentsia: "Ukrajinofilní inteligence" # todo: NEW TRANSLATION
+ cultural_renaissances_events.3.t: "Hromada" # todo: NEW TRANSLATION
+ cultural_renaissances_events.3.d: "Ve státě [SCOPE.sState('hromada_state').GetCityHubName] vznikla síť spolků zvaných „hromada“, které podporují ukrajinštinu a studium ukrajinského folklóru a poezie. Pořádají kulturní akce a šíří mezi rolníky vzdělávací materiály." # todo: NEW TRANSLATION
+ cultural_renaissances_events.3.f: "„Sláva a svoboda Ukrajiny ještě nezahynuly,\na nám, Ukrajincům, se osud opět usměje.\nNaši nepřátelé zmizí jako rosa na slunci.\nA my také budeme, bratři, vládnout vlastní vlasti.“\n\n—Pavlo Čubynskyj, #italic Sláva a svoboda Ukrajiny ještě nezahynuly #!" # todo: NEW TRANSLATION
+ cultural_renaissances_events.3.a: "Nechte je vzdělávat rolníky v jazyce, kterým mluví." # todo: NEW TRANSLATION
+ cultural_renaissances_events.3.b: "Podezřele podvratná činnost. Mějte je na očích." # todo: NEW TRANSLATION
+ cultural_renaissances_events.3.c: "Zjevně porušují zákon! Zatkněte je." # todo: NEW TRANSLATION
+ cultural_renaissances_events.3.tt: "Objeví se další Hromady a bude se s nimi zacházet stejně" # todo: NEW TRANSLATION
+ hromada: "Hromada" # todo: NEW TRANSLATION
+ cultural_renaissances_events.4.t: "Prosvita" # todo: NEW TRANSLATION
+ cultural_renaissances_events.4.d: "Ve státě [SCOPE.sState('prosvita_state').GetCityHubName] byla založena vzdělávací organizace zvaná „Prosvita“, která poskytuje vzdělávací a hospodářské zdroje a podporuje ukrajinský jazyk a kulturu." # todo: NEW TRANSLATION
+ cultural_renaissances_events.4.f: "„Někteří sem přicházejí číst a najdou tu společenství. Jiní přicházejí kvůli společenství a zjistí, že je čtení docela baví. Naším cílem není ani jedno, ani druhé — to, co tu budujeme, vyžaduje obojí.“" # todo: NEW TRANSLATION
+ cultural_renaissances_events.4.a: "Tohle je přesně ten typ iniciativy, který by měl [ROOT.GetCountry.GetName] financovat!" # todo: NEW TRANSLATION
+ cultural_renaissances_events.4.b: "Pokud si dokážou sehnat financování, jejich snahu vítáme." # todo: NEW TRANSLATION
+ cultural_renaissances_events.4.c: "Tuto líheň separatismu musíme rychle zavřít." # todo: NEW TRANSLATION
+ cultural_renaissances_events.4.tt: "Objeví se další Prosvity a bude se s nimi zacházet stejně" # todo: NEW TRANSLATION
+ government_funded_prosvita: "Prosvita financovaná vládou" # todo: NEW TRANSLATION
+ self_funded_prosvita: "Prosvita financovaná z vlastních zdrojů" # todo: NEW TRANSLATION
+ cultural_renaissances_events.5.t: "Chłopomania" # todo: NEW TRANSLATION
+ cultural_renaissances_events.5.d: "Polská a ukrajinská inteligence začala projevovat zvýšený zájem o kulturu a způsob života rolnictva, tráví čas zejména mezi ukrajinskými rolníky a zastává se jejich kultury." # todo: NEW TRANSLATION
+ cultural_renaissances_events.5.f: "„Lid! Všichni tvrdí, že ho milují, slouží mu a mluví za něj. Jen málokdo je však ochoten vyrazit mezi něj a žít s ním. Mnozí staří intelektuálové nikdy nepromluvili s rolníkem. My budeme jiní. Budeme žít prostým životem mezi prostými lidmi. Nebudeme muset říkat, že lid milujeme. To vám řekne lid sám.“" # todo: NEW TRANSLATION
+ cultural_renaissances_events.5.a: "Je inspirující vidět, že se mládež zajímá o kulturu a dějiny!" # todo: NEW TRANSLATION
+ cultural_renaissances_events.5.b: "Co přijde příště? Rekonstrukce rolnického povstání?" # todo: NEW TRANSLATION
+ encouraged_chlopomania: "Podporovaná Chłopomania" # todo: NEW TRANSLATION
+ discouraged_chlopomania: "Odradit od Chłopomanie" # todo: NEW TRANSLATION
+ cultural_renaissances_events.6.t: "$peasants_truth$" # todo: NEW TRANSLATION
+ cultural_renaissances_events.6.d: "[SCOPE.sCharacter('kalinowski_scope').GetFullName] začal vydávat první noviny v běloruštině. Věnují se těžkostem místního rolnictva a zaujímají proticarský postoj." # todo: NEW TRANSLATION
+ cultural_renaissances_events.6.f: "„Samotná volba jazyka je poselstvím, stejně jako volba latinské abecedy, kterou je text vytištěn. To, co sdělují samy o sobě, nám umožňuje nezastírat obsah: Dny, kdy se rolníci modlili za dobrého cara, jsou u konce. Žádný dobrý car neexistuje. Bůh stojí na straně rolníků.“" # todo: NEW TRANSLATION
+ cultural_renaissances_events.6.a: "Psát pro negramotné rolníky? Sotva to stojí za pozornost." # todo: NEW TRANSLATION
+ cultural_renaissances_events.6.b: "Zatkněte tyto revolucionáře a pošlete je do vyhnanství." # todo: NEW TRANSLATION
+ cultural_renaissances_events.6.c: "Za tento i předchozí zločiny musí být trestem smrt." # todo: NEW TRANSLATION
+ peasants_truth: "Pravda rolníků" # todo: NEW TRANSLATION
+ cultural_renaissances_events.7.t: "$letters_from_gallows$" # todo: NEW TRANSLATION
+ cultural_renaissances_events.7.d: "Zatímco čekal na popravu, Kanstancin Kalinoŭski napsal dva poslední dopisy, v nichž vyzýval běloruské nacionalisty k odporu proti nadvládě [ROOT.GetCountry.GetAdjective]. Dopisy vyšly v [SCOPE.sCountry('letters_publishing_country').GetCapital.GetCityHubName] a dostaly se k jeho příznivcům v domovině." # todo: NEW TRANSLATION
+ cultural_renaissances_events.7.f: "„Vyslechněte upřímně má poslední slova, můj lide, neboť jako by byla napsána na tomto světě jen pro vaše dobro. Nikdy nepoznáte větší štěstí na této zemi, bratři moji, dokud člověk nezíská rozum a vědomosti. Teprve potom si budou lidé rovni a budou žít v hojnosti, a teprve potom si mohou zasloužit nebe, když se budou modlit za Boží pravdu. Neboť až obohatí svůj rozum i srdce, budou moci skutečně milovat svou vlast.“\n\n—Kanstancin Kalinoŭski, #italic Dopisy zpod šibenice #!" # todo: NEW TRANSLATION
+ cultural_renaissances_events.7.a: "Musíme být opatrnější v tom, jaké publikace povolujeme dovážet ze země [SCOPE.sCountry('letters_publishing_country').GetName]." # todo: NEW TRANSLATION
+ cultural_renaissances_events.7.b: "Zatkněte všechny, kdo tyto dopisy vlastní." # todo: NEW TRANSLATION
+ cultural_renaissances_events.7.c: "Slova mrtvého muže. Jejich ozvěna brzy utichne." # todo: NEW TRANSLATION
+ letters_from_gallows: "Dopisy zpod šibenice" # todo: NEW TRANSLATION
+ cultural_renaissances_events.8.t: "Łacinka" # todo: NEW TRANSLATION
+ cultural_renaissances_events.8.d: "S tím, jak vychází stále více literárních děl v běloruštině, někteří básníci a spisovatelé se rozhodli zapisovat tento jazyk latinkou namísto cyrilicí." # todo: NEW TRANSLATION
+ cultural_renaissances_events.8.f: "„Ruthénština se po staletí zapisovala latinkou. Jen se snažím pomoci zavést nový standard.“\n\n„Vydal jste díla v jiných jazycích?“\n\n„To s tím souvisí?“\n\n„Prosím, odpovězte na otázku.“\n\n„V polštině.“\n\nDůstojník si udělal poznámku." # todo: NEW TRANSLATION
+ cultural_renaissances_events.8.a: "Ať už jakoukoli abecedou, jazyk zůstává stejný." # todo: NEW TRANSLATION
+ cultural_renaissances_events.8.b: "Není to nic než nástroj politické agitace. Zakažte ji." # todo: NEW TRANSLATION
+ latin_alphabet_permitted: "Latinka povolena" # todo: NEW TRANSLATION
+ latin_alphabet_banned: "Latinka zakázána" # todo: NEW TRANSLATION
+ cultural_renaissances_events.9.t: "Slovník místní běloruštiny" # todo: NEW TRANSLATION
+ cultural_renaissances_events.9.d: "Etnografický badatel na univerzitě v [SCOPE.sState('belarusian_dictionary_state').GetCityHubName] vydal slovník moderních běloruských slov a výrazů. Ačkoli měl zdokumentovat místní nářečí ruštiny, toto dílo se uvádí jako příklad běloruštiny coby samostatného jazyka a kultury." # todo: NEW TRANSLATION
+ cultural_renaissances_events.9.f: "„Studium mrtvého jazyka lze někdy učinit bezpečným. Studium živého jazyka nikoli. Jako každý živý tvor se pohybuje a odmítá se přizpůsobit badatelovým záměrům. A stejně jako každý živý tvor má co ztratit.“" # todo: NEW TRANSLATION
+ cultural_renaissances_events.9.a: "Musíme více zkoumat místní jazyky v celé zemi [ROOT.GetCountry.GetName]!" # todo: NEW TRANSLATION
+ cultural_renaissances_events.9.b: "Badatelé musí své závěry formulovat obezřetněji." # todo: NEW TRANSLATION
+ local_linguistics_research: "Výzkum místních jazyků" # todo: NEW TRANSLATION
+ restricted_linguistics_research: "Omezený výzkum místních jazyků" # todo: NEW TRANSLATION
+ cultural_renaissances_events.10.t: "$homan$" # todo: NEW TRANSLATION
+ cultural_renaissances_events.10.d: "V [SCOPE.sState('homan_state').GetCityHubName] se objevilo nové politické uskupení, které prosazuje běloruský separatismus a revoluční socialismus. Jeho členové šíří noviny propagující jejich názory a tajně vyrábějí jejich kopie pomocí hektografu." # todo: NEW TRANSLATION
+ cultural_renaissances_events.10.f: "„To se velice mýlíte. Sbírám lidové pohádky. Údajná společenská satira, kvůli níž byla tato díla zabavena, mi zcela uniká.“\n\n„A ten hektograf?“\n\n„Na tisk dalších pohádek. Nic víc.“" # todo: NEW TRANSLATION
+ cultural_renaissances_events.10.a: "K nezávislému Bělorusku není revoluce nutná." # todo: NEW TRANSLATION
+ cultural_renaissances_events.10.b: "Zabavte jejich publikace a tiskařské vybavení." # todo: NEW TRANSLATION
+ cultural_renaissances_events.10.c: "Najděte je všechny a zatkněte!" # todo: NEW TRANSLATION
+ hope_for_belarus: "Naděje pro Bělorusko" # todo: NEW TRANSLATION
+ homan: "Homan" # todo: NEW TRANSLATION

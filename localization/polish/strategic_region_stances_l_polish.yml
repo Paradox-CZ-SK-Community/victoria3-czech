@@ -3,14 +3,44 @@
  stance_conquer_region: "Dobýt region"
  stance_protect_region: "Chránit region"
  stance_colonize_region: "Kolonizovat region"
+ stance_none_desc: "Země [country] zastávající tento $concept_strategic_region_stance_short$ nemá v této [Concept('concept_strategic_region', '$concept_strategic_region_short|q$')] žádné zvláštní ambice, může však stále jednat oportunisticky." # todo: NEW TRANSLATION
+ stance_conquer_region_desc: "Země [country] zastávající tento $concept_strategic_region_stance_short$ usiluje o rozšíření svých územních ambicí a sféry vlivu do této [Concept('concept_strategic_region', '$concept_strategic_region_short|q$')]." # todo: NEW TRANSLATION
+ stance_protect_region_desc: "Země [country] zastávající tento $concept_strategic_region_stance_short$ se rozhodla zachovat status quo v [Concept('concept_strategic_region', '$concept_strategic_region_short|q$')] a bude chránit [Concept('concept_local_country', '$concept_local_countries|q$')] před [Concept('concept_rivalry','$concept_rivals|q$')]." # todo: NEW TRANSLATION
+ stance_colonize_region_desc: "Země [country] zastávající tento $concept_strategic_region_stance_short$ si přeje rozšířit své koloniální ambice v této [Concept('concept_strategic_region', '$concept_strategic_region_short|q$')], bez ohledu na [Concept('concept_local_country', '$concept_local_countries|q$')], které se tam již nacházejí." # todo: NEW TRANSLATION
+ stance_none_behavior: "$EFFECT_LIST_BULLET$Neprojevovat žádný zvláštní zájem o [STRATEGIC_REGION.GetName]" # todo: NEW TRANSLATION
+ stance_conquer_region_behavior: "$EFFECT_LIST_BULLET$Prosazovat své ambice vůči [Concept('concept_local_country', '$concept_local_countries|q$')] v oblasti [STRATEGIC_REGION.GetName]\n$EFFECT_LIST_BULLET$Zaujímat nepřátelštější [concept_attitude] vůči [Concept('concept_local_country', '$concept_local_countries|q$')]" # todo: NEW TRANSLATION
+ stance_protect_region_behavior: "$EFFECT_LIST_BULLET$Podporovat spřátelené [Concept('concept_local_country', '$concept_local_countries|q$')] v oblasti [STRATEGIC_REGION.GetName]\n$EFFECT_LIST_BULLET$Zaujímat přátelštější [concept_attitude] vůči [Concept('concept_local_country', '$concept_local_countries|q$')]\n$EFFECT_LIST_BULLET$Postavit se proti [Concept('concept_rivalry','$concept_rivals|q$')], které se tam snaží zahájit dobývání" # todo: NEW TRANSLATION
+ stance_colonize_region_behavior: "$EFFECT_LIST_BULLET$Osidlovat neosídlenou půdu v oblasti [STRATEGIC_REGION.GetName]\n$EFFECT_LIST_BULLET$Prosazovat své ambice vůči [Concept('concept_unrecognized_power', '$concept_unrecognized_power_short|q$')] [Concept('concept_local_country', '$concept_local_countries|q$')], které se tam nacházejí" # todo: NEW TRANSLATION
  AI_REGION_STANCE_BASE_VALUE: "#b Základní hodnota#!"
  AI_REGION_STANCE_NUMBER_OF_CLAIMS: "Počet [Concept('concept_claim','nároky')|l]"
  AI_REGION_STANCE_CAPITAL_REGION: "[Concept('concept_capital_state','Hlavní město')] [Concept('concept_strategic_region','strategický region')]" # todo: CONCEPT CASE
  AI_REGION_STANCE_WANTS_TO_OPEN_UP_JAPAN: "Chce otevřít #b $JAP$#!"
  AI_REGION_STANCE_IS_LOYAL_SUBJECT: "Je #b loajální#! [Concept('concept_subject','závislou zemí')]"
- AI_REGION_STANCE_FREE_REAL_ESTATE: "[Concept('concept_state','Státy')] držené [Concept('concept_decentralized_nation', 'decentralizovanými zeměmi')] a [Concept('concept_unrecognized_power', 'neuznanými zeměmi')]" # todo: CHANGED (predtym: [Concept('concept_state','Státy')] držené [Concept('concept_decentralized_nation', 'decentralizovánými zeměmi')] a [Conc)
+ AI_REGION_STANCE_FREE_REAL_ESTATE: "[Concept('concept_state', '$concept_states|q$')] držené $concept_decentralized_nations$ a [Concept('concept_unrecognized_power', '$concept_unrecognized_powers|q$')]" # todo: CHANGED (predtym: [Concept('concept_state','Státy')] držené [Concept('concept_decentralized_nation', 'decentralizovanými zeměmi')] a [Conc)
  AI_REGION_STANCE_CIVILIZING_MISSION_RESEARCHED: "[GetTechnology('civilizing_mission').GetName] vyzkoumána"
  AI_REGION_STANCE_QUININE_RESEARCHED: "[GetTechnology('quinine').GetName] vyzkoumán"
  AI_REGION_STANCE_EXISTING_REGION_STANCES: "Existující postoje"
- AI_REGION_STANCE_SMALL_COUNTRY: "#v [Country.GetNameNoFormatting]#! je malá [Concept('concept_country','země')]"
- AI_REGION_STANCE_COLONIAL_COUNTRY: "#v [Country.GetNameNoFormatting]#! je [Concept('concept_colony','kolonie')|l]"
+ AI_REGION_STANCE_SMALL_COUNTRY: "[Country.GetName] je malá $concept_country$" # todo: CHANGED (predtym: v [Country.GetNameNoFormatting] ! je malá [Concept('concept_country','země')])
+ AI_REGION_STANCE_COLONIAL_COUNTRY: "[Country.GetName] je $concept_colony$" # todo: CHANGED (predtym: v [Country.GetNameNoFormatting] ! je [Concept('concept_colony','kolonie')|l])
+ STRATEGIC_REGION_AI_STANCE_BEHAVIOR_TITLE: "#title [Country.GetName] bude:#!" # todo: NEW TRANSLATION
+ STRATEGIC_REGION_AI_STANCE_TT_HEADER: "[Country.GetNameNoFormatting] zaujalo #b [Country.GetAIStrategicRegionStanceTypeIn(StrategicRegion.Self).GetNameNoFormatting]#! [Concept('concept_strategic_region_stance','postoj')] v [StrategicRegion.GetName] z následujících důvodů:\n$TOOLTIP_DELIMITER$" # todo: CHANGED # todo: MOVED KEY
+ STRATEGIC_REGION_AI_STANCE_BREAKDOWN: "[Country.GetAIStrategicRegionStanceDescIn(StrategicRegion.Self)]" # todo: NEW TRANSLATION
+ STRATEGIC_REGION_AI_STANCE_ATTENTION_ELSEWHERE_TITLE: "#title [Country.GetName] se místo toho zaměřuje na tyto $concept_strategic_regions_short$:#!" # todo: NEW TRANSLATION
+ STRATEGIC_REGION_AI_STANCE_ATTENTION_ELSEWHERE_ENTRY: "[StrategicRegion.GetName]" # todo: NEW TRANSLATION
+ REGIONAL_OBJECTIVE_TYPE: "[Concept('concept_regional_objective', '$concept_regional_objective|q$')]" # todo: NEW TRANSLATION
+ REGIONAL_OBJECTIVE_STANCE_TITLE: "#title Sledováno v rámci tohoto [Concept('concept_strategic_region_stance', '$concept_strategic_region_stance_short|q$')]:#!" # todo: NEW TRANSLATION
+ REGIONAL_OBJECTIVE_STANCE_ENTRY: "[AIRegionalObjective.GetStance.GetNameNoFormatting] v oblasti [AIRegionalObjective.GetRegion.GetName]" # todo: NEW TRANSLATION
+ REGIONAL_OBJECTIVE_STARTED: "Zahájeno dne #v [AIRegionalObjective.GetStartDate]#!" # todo: NEW TRANSLATION
+ REGIONAL_OBJECTIVE_COMPLETED: "Dokončeno dne #v [AIRegionalObjective.GetConclusionDate]#!" # todo: NEW TRANSLATION
+ REGIONAL_OBJECTIVE_FAILED: "Selhalo dne #v [AIRegionalObjective.GetConclusionDate]#!" # todo: NEW TRANSLATION
+ REGIONAL_OBJECTIVE_CONCLUDED: "Časem může být v oblasti [AIRegionalObjective.GetRegion.GetName] místo něj přijat nový [concept_regional_objective]." # todo: NEW TRANSLATION
+ REGIONAL_OBJECTIVE_TARGETS_TITLE: "#title Cíl:#!" # todo: NEW TRANSLATION
+ REGIONAL_OBJECTIVE_TARGET_COUNTRY: "[Country.GetName]" # todo: NEW TRANSLATION
+ REGIONAL_OBJECTIVE_TARGET_STATE: "[State.GetName]" # todo: NEW TRANSLATION
+ REGIONAL_OBJECTIVE_ADDITIONAL_TARGET_COUNTRIES: "a dalších [GetDataModelSize(DataModelSkipFirst(AIRegionalObjective.GetTargetCountries, GetDefine('NGUI', 'REGIONAL_OBJECTIVE_MAX_TARGETS_SHOWN')))]..." # todo: NEW TRANSLATION
+ REGIONAL_OBJECTIVE_ADDITIONAL_TARGET_STATES: "a dalších [GetDataModelSize(DataModelSkipFirst(AIRegionalObjective.GetTargetStates, GetDefine('NGUI', 'REGIONAL_OBJECTIVE_MAX_TARGETS_SHOWN')))]..." # todo: NEW TRANSLATION
+ STRATEGIC_REGION_AI_STANCE_OBJECTIVE_TITLE: "#title [Country.GetName] sleduje tento cíl:#!" # todo: NEW TRANSLATION
+ STRATEGIC_REGION_AI_STANCE_OBJECTIVE_COMPLETED_TITLE: "#title [Country.GetName] #b dokončila#! dne #v [Country.GetRegionalObjectiveIn(StrategicRegion.Self).GetConclusionDate]#!:#!" # todo: NEW TRANSLATION
+ STRATEGIC_REGION_AI_STANCE_OBJECTIVE_FAILED_TITLE: "#title [Country.GetName] #b selhala#! dne #v [Country.GetRegionalObjectiveIn(StrategicRegion.Self).GetConclusionDate]#!:#!" # todo: NEW TRANSLATION
+ STRATEGIC_REGION_AI_STANCE_OBJECTIVE_ENTRY: "[Country.GetRegionalObjectiveIn(StrategicRegion.Self).GetName]" # todo: NEW TRANSLATION
+ STRATEGIC_REGION_AI_STANCE_OBJECTIVE_CONCLUDED: "Časem může [Country.GetName] hledat nový [concept_regional_objective], který by sledovala v oblasti [StrategicRegion.GetName]." # todo: NEW TRANSLATION
