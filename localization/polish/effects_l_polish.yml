@@ -24,7 +24,7 @@
  SET_TAX_LEVEL: "[COUNTRY.GetName] má svou celkovou úroveň [Concept('concept_taxes','zdanění')] nastavenu na #variable $TARIFF_LEVEL$#!"
  SET_TAX_LEVEL_FIRST: "[COUNTRY.GetName] má celkovou úroveň [Concept('concept_taxes','zdanění')] nastavenu na #variable $TARIFF_LEVEL$#!"
  SET_TAX_LEVEL_THIRD: "[COUNTRY.GetName] má svou celkovou úroveň [Concept('concept_taxes','zdanění')] nastavenu na" # todo: CHANGED (predtym: [COUNTRY.GetName] má svou celkovou úroveň [Concept('concept_taxes','$concept_taxation|q$')] nastavenu na variable $TARIF)
- SET_TARIFF_FOCUS: "[COUNTRY.GetName] má svůj [Concept('concept_tariffs','$concept_tariff|q$')|l] zaměření pro [Goods.GetCustom('GDS_A_TT')] nastavenu na" # todo: CHANGED (predtym: [COUNTRY.GetName] má svůj [Concept('concept_tariffs','$concept_tariff|q$')|l] zaměření pro [Goods.GetName] nastavenu na )
+ SET_TARIFF_FOCUS: "[COUNTRY.GetName] má svůj [Concept('concept_tariffs','$concept_tariff|q$')|l] zaměření pro [Goods.GetAltName('adj_A')] nastavenu na" # todo: CHANGED (predtym: [COUNTRY.GetName] má svůj [Concept('concept_tariffs','$concept_tariff|q$')|l] zaměření pro [Goods.GetName] nastavenu na )
  SET_GOVERNMENT_WAGE_LEVEL: "[COUNTRY.GetName] má svou úroveň [Concept('concept_government_wage','vládní mzda')|l] nastavenu na"
  SET_MILITARY_WAGE_LEVEL: "[COUNTRY.GetName] má stanovenou úroveň [Concept('concept_military_wage','vojenská mzda')|l] na #v $WAGE_LEVEL$#!"
  ADD_CHANGE_RELATIONS_PROGRESS: "#variable [COUNTRY.GetAdjectiveNoFormatting]#! získává pokrok v změně vztahů #variable $VALUE$#! s [TARGET_COUNTRY.GetName]"
@@ -129,12 +129,12 @@
  SET_STATE_RELIGION: "[TARGET_RELIGION.GetName] se stává státním náboženstvím [COUNTRY.GetAltAdjective('G')]"
  SET_STATE_RELIGION_FIRST: "[TARGET_RELIGION.GetName] se stává [Concept('concept_state_religion','státním náboženstvím')|l] [COUNTRY.GetAltAdjectiveNoFlag('G')]"
  SET_STATE_RELIGION_THIRD: "[TARGET_RELIGION.GetName] se stává [Concept('concept_state_religion','státním náboženstvím')|l] [COUNTRY.GetAltAdjective('G')]"
- ADD_CULTURAL_OBSESSION: "[CULTURE.GetName] kultura se stává posedlou na [GOODS.GetCustom('GDS_L')]"
- REMOVE_CULTURAL_OBSESSION: "[CULTURE.GetName] přestává být posedlý [GOODS.GetCustom('GDS_I')]"
+ ADD_CULTURAL_OBSESSION: "[CULTURE.GetName] kultura se stává posedlou na [GOODS.GetAltNameNoFormatting('adj_L')]"
+ REMOVE_CULTURAL_OBSESSION: "[CULTURE.GetName] přestává být posedlý [GOODS.GetAltNameNoFormatting('adj_I')]"
  ADD_CULTURAL_TABOO_GLOBAL: "[GOODS.GetName] je nyní považováno za [Concept('concept_taboo','tabu')]" # todo: NEW TRANSLATION
- ADD_CULTURAL_TABOO_THIRD: "[CULTURE.GetName] bude nyní považovat [GOODS.GetCustom('GDS_A_TT')] za [Concept('concept_taboo','tabu')]" # todo: NEW TRANSLATION # todo: NAME CASE
+ ADD_CULTURAL_TABOO_THIRD: "[CULTURE.GetName] bude nyní považovat [GOODS.GetAltName('adj_A')] za [Concept('concept_taboo','tabu')]" # todo: NEW TRANSLATION # todo: NAME CASE
  REMOVE_CULTURAL_TABOO_GLOBAL: "[GOODS.GetName] již není považováno za [Concept('concept_taboo','tabu')]" # todo: NEW TRANSLATION
- REMOVE_CULTURAL_TABOO_THIRD: "[CULTURE.GetName] již nebude považovat [GOODS.GetCustom('GDS_A_TT')] za [Concept('concept_taboo','tabu')]" # todo: NEW TRANSLATION # todo: NAME CASE
+ REMOVE_CULTURAL_TABOO_THIRD: "[CULTURE.GetName] již nebude považovat [GOODS.GetAltName('adj_A')] za [Concept('concept_taboo','tabu')]" # todo: NEW TRANSLATION # todo: NAME CASE
  ADD_TRADITION_TRAIT: "[CULTURE.GetName] přijímá [DISCRIMINATION_TRAIT.GetName] [Concept('concept_tradition_trait','rys tradice')|l]"
  REMOVE_TRADITION_TRAIT: "[CULTURE.GetName] opouští [DISCRIMINATION_TRAIT.GetName] [Concept('concept_tradition_trait','rys tradice')|l]"
  ADD_CULTURAL_COMMUNITY: "Nová [CULTURE.GetName] [Concept('concept_cultural_community','kulturní komunita')|l] se objevuje"
@@ -689,13 +689,13 @@
  INCREASE_AUTONOMY_NEG: "[Concept('concept_autonomy','Autonomie')] zůstává nezměněno"
  INCREASE_AUTONOMY_FIRST: "Zvyšujeme naši [Concept('concept_autonomy','autonomii')|l], stáváme se [SUBJECT_TYPE.GetName]" # todo: CHANGED (predtym: Zvyšujeme naši [Concept('concept_autonomy','autonomii')|l], stáváme se $SUBJECT_TYPE|v$)
  INCREASE_AUTONOMY_FIRST_NEG: "[Concept('concept_autonomy','Autonomie')] zůstává nezměněno"
- INCREASE_AUTONOMY_THIRD: "[COUNTRY.GetName] má zvýšenou autonomii, stává se [SUBJECT_TYPE.GetName] [COUNTRY.GetOverlord.GetName]" # todo: CHANGED (predtym: [COUNTRY.GetName] má zvýšenou autonomii, stává se $SUBJECT_TYPE|v$ [COUNTRY.GetOverlord.GetAltAdjective('G')])
+ INCREASE_AUTONOMY_THIRD: "[COUNTRY.GetName] má zvýšenou autonomii, stává se [SUBJECT_TYPE.GetName] [COUNTRY.GetOverlord.GetAltAdjective('G')]" # todo: CHANGED (predtym: [COUNTRY.GetName] má zvýšenou autonomii, stává se [SUBJECT_TYPE.GetName] [COUNTRY.GetOverlord.GetName])
  INCREASE_AUTONOMY_THIRD_NEG: "[COUNTRY.GetName] autonomie zůstává nezměněna"
  DECREASE_AUTONOMY: "[Concept('concept_autonomy','Autonomie')] se snižuje na [SUBJECT_TYPE.GetName]"
  DECREASE_AUTONOMY_NEG: "[Concept('concept_autonomy','Autonomie')] zůstává nezměněna"
  DECREASE_AUTONOMY_FIRST: "Snižujeme naši [Concept('concept_autonomy','autonomii')|l], stáváme se [SUBJECT_TYPE.GetName]" # todo: CHANGED (predtym: Snižujeme naši [Concept('concept_autonomy','autonomii')|l], stáváme se $SUBJECT_TYPE|v$)
  DECREASE_AUTONOMY_FIRST_NEG: "[Concept('concept_autonomy','Autonomie')] se nemění"
- DECREASE_AUTONOMY_THIRD: "[COUNTRY.GetName] má sníženou autonomii, stává se [SUBJECT_TYPE.GetName] [COUNTRY.GetOverlord.GetName]" # todo: CHANGED (predtym: [COUNTRY.GetName] má sníženou autonomii, stává se $SUBJECT_TYPE|v$ [COUNTRY.GetOverlord.GetAltAdjective('G')])
+ DECREASE_AUTONOMY_THIRD: "[COUNTRY.GetName] má sníženou autonomii, stává se [SUBJECT_TYPE.GetName] [COUNTRY.GetOverlord.GetAltAdjective('G')]" # todo: CHANGED (predtym: [COUNTRY.GetName] má sníženou autonomii, stává se [SUBJECT_TYPE.GetName] [COUNTRY.GetOverlord.GetName])
  DECREASE_AUTONOMY_THIRD_NEG: "[COUNTRY.GetName] autonomie zůstává nezměněna"
  TELEPORT_TO_FRONT_THIRD: "[MILITARY_FORMATION.GetName] se okamžitě přesune na [TARGET_FRONT.GetName]"
  TELEPORT_TO_FRONT_GLOBAL: "[Concept('concept_military_formation','Formace')] je okamžitě přesunut na [Concept('concept_front','frontu')]" # todo: CHANGED (predtym: [Concept('concept_military_formation','Formace')] je okamžitě přesunut na [Concept('concept_front','frontu')])

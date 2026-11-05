@@ -160,9 +160,9 @@
  minting: "Ražba"
  minting_desc: "[concept_minting_desc]"
  surplus_convoys: "Nadbytečné konvoje"
- surplus_convoys_desc: "Přebytek @merchant_marine! #tooltippable_name #tooltip:[GetGoods('merchant_marine').GetTooltipTag],DATA_GOODS_NAME_TOOLTIP,GoodsTooltip [GetGoods('merchant_marine').GetCustom('GDS_G')|l]#!#! zvyšuje naši [Concept('concept_trade_advantage','obchodní výhodu')]"
+ surplus_convoys_desc: "Přebytek @merchant_marine! #tooltippable_name #tooltip:[GetGoods('merchant_marine').GetTooltipTag],DATA_GOODS_NAME_TOOLTIP,GoodsTooltip [GetGoods('merchant_marine').GetAltNameNoFormatting('adj_G')|l]#!#! zvyšuje naši [Concept('concept_trade_advantage','obchodní výhodu')]"
  insufficient_convoys: "Nedostatečné konvoje"
- insufficient_convoys_desc: "Nedostatek potřebného @merchant_marine! #tooltippable_name #tooltip:[GetGoods('merchant_marine').GetTooltipTag],DATA_GOODS_NAME_TOOLTIP,GoodsTooltip [GetGoods('merchant_marine').GetCustom('GDS_G')|l]#!#! způsobuje penalizace na [Concept('concept_supply_network','zásobovací síť')]"
+ insufficient_convoys_desc: "Nedostatek potřebného @merchant_marine! #tooltippable_name #tooltip:[GetGoods('merchant_marine').GetTooltipTag],DATA_GOODS_NAME_TOOLTIP,GoodsTooltip [GetGoods('merchant_marine').GetAltNameNoFormatting('adj_G')|l]#!#! způsobuje penalizace na [Concept('concept_supply_network','zásobovací síť')]"
  efficient_bureaucracy: "Efektivní byrokracie"
  efficient_bureaucracy_desc: "Mít přebytek byrokratických úředníků pomáhá zrychlit projekty [Concept('concept_infrastructure','infrastruktury')]"
  administrative_overburden: "Administrativní zátěž"
@@ -801,21 +801,21 @@
  goods_ammunition_output_mult: "Výstup munice"
  goods_ammunition_output_mult_desc: "Bonus nebo penalizace výroby munice."
  state_sell_orders_ammunition_add: "Prodejní objednávky [GetGoods('ammunition').GetTextIcon][Nbsp][GetGoods('ammunition').GetNameNoFormatting]"
- state_sell_orders_ammunition_add_desc: "Zvýšení nebo snížení [Concept('concept_sell_orders','prodejních objednávek')] [GetGoods('ammunition').GetCustom('GDS_G')] v [Concept('concept_state','státě')]"
+ state_sell_orders_ammunition_add_desc: "Zvýšení nebo snížení [Concept('concept_sell_orders','prodejních objednávek')] [GetGoods('ammunition').GetAltNameNoFormatting('adj_G')] v [Concept('concept_state','státě')]"
  goods_small_arms_output_mult: "@small_arms! vystup malých zbraní"
  goods_small_arms_output_mult_desc: "Bonus nebo penalizace pro výrobu malých zbraní."
  state_sell_orders_small_arms_add: "Prodejní objednávky [GetGoods('small_arms').GetTextIcon][Nbsp][GetGoods('small_arms').GetNameNoFormatting]"
- state_sell_orders_small_arms_add_desc: "Zvýšení nebo snížení [Concept('concept_sell_orders','prodejních objednávek')] [GetGoods('small_arms').GetCustom('GDS_G')] v [Concept('concept_state','státě')]"
+ state_sell_orders_small_arms_add_desc: "Zvýšení nebo snížení [Concept('concept_sell_orders','prodejních objednávek')] [GetGoods('small_arms').GetAltNameNoFormatting('adj_G')] v [Concept('concept_state','státě')]"
  goods_artillery_output_mult: "Výstup děl"
  goods_artillery_output_mult_desc: "Bonus nebo penalizace výroby děl."
  state_sell_orders_artillery_add: "Prodejní objednávky [GetGoods('artillery').GetTextIcon][Nbsp][GetGoods('artillery').GetNameNoFormatting]"
- state_sell_orders_artillery_add_desc: "Zvýšení nebo snížení [Concept('concept_sell_orders','prodejních objednávek')] [GetGoods('artillery').GetCustom('GDS_G')] v [Concept('concept_state','státě')]"
+ state_sell_orders_artillery_add_desc: "Zvýšení nebo snížení [Concept('concept_sell_orders','prodejních objednávek')] [GetGoods('artillery').GetAltNameNoFormatting('adj_G')] v [Concept('concept_state','státě')]"
  state_buy_orders_ammunition_add: "[GetGoods('ammunition').GetTextIcon][Nbsp][GetGoods('ammunition').GetNameNoFormatting] Nákupní příkazy"
- state_buy_orders_ammunition_add_desc: "Zvýšení nebo snížení [Concept('concept_buy_orders','nákupní objednávky')] pro [GetGoods('ammunition').GetCustom('GDS_A_TT')] v [Concept('concept_state','státě')]" # todo: CONCEPT CASE # todo: NAME CASE
+ state_buy_orders_ammunition_add_desc: "Zvýšení nebo snížení [Concept('concept_buy_orders','nákupní objednávky')] pro [GetGoods('ammunition').GetAltName('adj_A')] v [Concept('concept_state','státě')]" # todo: CONCEPT CASE # todo: NAME CASE
  state_buy_orders_small_arms_add: "[GetGoods('small_arms').GetTextIcon][Nbsp][GetGoods('small_arms').GetNameNoFormatting] Nákupní příkazy"
- state_buy_orders_small_arms_add_desc: "Zvýšení nebo snížení [Concept('concept_buy_orders','nákupní objednávky')] pro [GetGoods('small_arms').GetCustom('GDS_A_TT')] v [Concept('concept_state','státě')]" # todo: CONCEPT CASE # todo: NAME CASE
+ state_buy_orders_small_arms_add_desc: "Zvýšení nebo snížení [Concept('concept_buy_orders','nákupní objednávky')] pro [GetGoods('small_arms').GetAltName('adj_A')] v [Concept('concept_state','státě')]" # todo: CONCEPT CASE # todo: NAME CASE
  state_buy_orders_artillery_add: "[GetGoods('artillery').GetTextIcon][Nbsp][GetGoods('artillery').GetNameNoFormatting] Nákupní příkazy"
- state_buy_orders_artillery_add_desc: "Zvýšení nebo snížení [Concept('concept_buy_orders','nákupní objednávky')] pro [GetGoods('artillery').GetCustom('GDS_A_TT')] v [Concept('concept_state','státě')]" # todo: CONCEPT CASE # todo: NAME CASE
+ state_buy_orders_artillery_add_desc: "Zvýšení nebo snížení [Concept('concept_buy_orders','nákupní objednávky')] pro [GetGoods('artillery').GetAltName('adj_A')] v [Concept('concept_state','státě')]" # todo: CONCEPT CASE # todo: NAME CASE
  goods_rations_output_mult: "$rations$ Výstup zboží" # HMM
  goods_rations_output_mult_desc: "Bonus nebo penalizace za produkci $rations$." # HMM
  goods_uniforms_output_mult: "$uniforms$ Výstup zboží" # HMM
@@ -869,7 +869,7 @@
  goods_grain_output_mult: "Výstup obilí"
  goods_grain_output_mult_desc: "Bonus nebo penalizace výroby obilí."
  state_sell_orders_grain_add: "[GetGoods('grain').GetTextIcon][Nbsp][GetGoods('grain').GetNameNoFormatting] Prodejní příkazy"
- state_sell_orders_grain_add_desc: "Zvýšení nebo snížení [Concept('concept_sell_orders','prodejní objednávky')] pro [GetGoods('grain').GetCustom('GDS_A_TT')] v [Concept('concept_state','státě')]" # todo: CONCEPT CASE # todo: NAME CASE
+ state_sell_orders_grain_add_desc: "Zvýšení nebo snížení [Concept('concept_sell_orders','prodejní objednávky')] pro [GetGoods('grain').GetAltName('adj_A')] v [Concept('concept_state','státě')]" # todo: CONCEPT CASE # todo: NAME CASE
  goods_fish_output_mult: "Výstup ryb"
  goods_fish_output_mult_desc: "Bonus nebo penalizace výroby ryb."
  goods_meat_output_mult: "Výstup masa"
@@ -2520,7 +2520,7 @@
  state_institution_impact_add: "Dopad [Concept('concept_institution', 'institucí')]"
  state_institution_impact_add_desc: "Zvýšení nebo snížení #v dopadu#! [Concept('concept_institution', 'institucí')] na [Concept('concept_state','stát')]"
  country_port_connection_cost_mult: "@merchant_marine![Nbsp]Náklady obchodního loďstva na přístavní spojení"
- country_port_connection_cost_mult_desc: "Nárůst nebo pokles v počtu lodí @merchant_marine![Nbsp]#tooltippable_name #tooltip:[GetGoods('merchant_marine').GetTooltipTag],DATA_GOODS_NAME_TOOLTIP,GoodsTooltip [GetGoods('merchant_marine').GetCustom('GDS_G')|l]#!#! potřebných k udržení [Concept('concept_port_connection','přístavních spojení')]" # todo: CHANGED (predtym: Nárůst nebo pokles v počtu lodí [GetGoods('merchant_marine').GetName] potřebných k udržení [Concept('concept_port_connec)
+ country_port_connection_cost_mult_desc: "Nárůst nebo pokles v počtu lodí @merchant_marine![Nbsp]#tooltippable_name #tooltip:[GetGoods('merchant_marine').GetTooltipTag],DATA_GOODS_NAME_TOOLTIP,GoodsTooltip [GetGoods('merchant_marine').GetAltNameNoFormatting('adj_G')|l]#!#! potřebných k udržení [Concept('concept_port_connection','přístavních spojení')]" # todo: CHANGED (predtym: Nárůst nebo pokles v počtu lodí [GetGoods('merchant_marine').GetName] potřebných k udržení [Concept('concept_port_connec)
  country_legitimacy_min_add: "Minimální [Concept('concept_legitimacy','legitimita')]"
  country_legitimacy_min_add_desc: "Nejnižší hodnota [Concept('concept_legitimacy','legitimity')], kterou může [Concept('concept_government','vláda')] mít"
  country_leverage_resistance_add: "Odpor vůči páce"
@@ -3006,7 +3006,7 @@
  unit_advancement_speed_mult: "[Concept('concept_advancement_speed','Rychlost postupu')]"
  unit_advancement_speed_mult_desc: "Upravit [Concept('concept_advancement_speed','rychlost postupu')|l] na [Concept('concept_front','frontě')]"
  unit_convoy_requirements_mult: "Požadavek obchodního loďstva"
- unit_convoy_requirements_mult_desc: "Kolik @merchant_marine! #tooltippable_name #tooltip:[GetGoods('merchant_marine').GetTooltipTag],DATA_GOODS_NAME_TOOLTIP,GoodsTooltip [GetGoods('merchant_marine').GetCustom('GDS_G')|l]#!#! je potřeba k udržení [Concept('concept_supply','zásobovaní')] [Concept('concept_unit','jednotek')] v zahraničí" # todo: CHANGED (predtym: Kolik [GetGoods('merchant_marine').GetName] je potřeba k udržení [Concept('concept_unit','$concept_units|q$')] s [concep)
+ unit_convoy_requirements_mult_desc: "Kolik @merchant_marine! #tooltippable_name #tooltip:[GetGoods('merchant_marine').GetTooltipTag],DATA_GOODS_NAME_TOOLTIP,GoodsTooltip [GetGoods('merchant_marine').GetAltNameNoFormatting('adj_G')|l]#!#! je potřeba k udržení [Concept('concept_supply','zásobovaní')] [Concept('concept_unit','jednotek')] v zahraničí" # todo: CHANGED (predtym: Kolik [GetGoods('merchant_marine').GetName] je potřeba k udržení [Concept('concept_unit','$concept_units|q$')] s [concep)
  unit_supply_consumption_mult: "Spotřeba dodávek"
  unit_supply_consumption_mult_desc: "Kolik [Concept('concept_good', 'zboží')] je potřeba k udržení [Concept('concept_unit','jednotky')]"
  battle_offense_owned_province_mult: "Domácí [Concept('concept_offense','útok')|l]"
@@ -3533,16 +3533,16 @@
  character_advancement_speed_add_desc: "Bonus nebo penalizace k rychlosti, s jakou [Concept('concept_general','generál')|l] shromažďuje [Concept('concept_advancement_progress','pokrok v postupu')|l]" # todo: CONCEPT CASE
  character_advancement_speed_mult: "$character_advancement_speed_add$"
  character_advancement_speed_mult_desc: "$character_advancement_speed_add_desc$"
- character_convoy_protection_mult: "[Concept('concept_admiral','Admirálová')] ochrana @merchant_marine! #tooltippable_name #tooltip:[GetGoods('merchant_marine').GetTooltipTag],DATA_GOODS_NAME_TOOLTIP,GoodsTooltip [GetGoods('merchant_marine').GetCustom('GDS_G')|l]#!#!"
- character_convoy_protection_mult_desc: "Bonus nebo penalizace za to, jak efektivně [Concept('concept_admiral','admirál')|l] chrání @merchant_marine! #tooltippable_name #tooltip:[GetGoods('merchant_marine').GetTooltipTag],DATA_GOODS_NAME_TOOLTIP,GoodsTooltip [GetGoods('merchant_marine').GetCustom('GDS_A')|l]#!#!"
+ character_convoy_protection_mult: "[Concept('concept_admiral','Admirálová')] ochrana @merchant_marine! #tooltippable_name #tooltip:[GetGoods('merchant_marine').GetTooltipTag],DATA_GOODS_NAME_TOOLTIP,GoodsTooltip [GetGoods('merchant_marine').GetAltNameNoFormatting('adj_G')|l]#!#!"
+ character_convoy_protection_mult_desc: "Bonus nebo penalizace za to, jak efektivně [Concept('concept_admiral','admirál')|l] chrání @merchant_marine! #tooltippable_name #tooltip:[GetGoods('merchant_marine').GetTooltipTag],DATA_GOODS_NAME_TOOLTIP,GoodsTooltip [GetGoods('merchant_marine').GetAltNameNoFormatting('adj_A')|l]#!#!"
  character_blockade_mult: "Síla [Concept('concept_blockade','blokády')|l] [Concept('concept_admiral','admirála')|l]"
  character_blockade_mult_desc: "Bonus nebo penalizace k efektivitě [Concept('concept_admiral','admirála')|l] uvalit [Concept('concept_blockade','blokádu')|l] na nepřátelský přístav" # todo: CHANGED (predtym: Bonus nebo penalizace k efektivitě [Concept('concept_admiral','admirála')|l] uvalit [Concept('concept_blockade','blokádu)
  character_interception_add: "Admirálova šance na zachycení"
  character_interception_add_desc: "Šance, že [Concept('concept_admiral','admirálove')] [Concept('concept_fleet','loďstvo')|l] přeruší cizí [Concept('concept_fleet', 'loďstvo')] každou čtvrtinu dne" # todo: CHANGED (predtym: Šance, že [Concept('concept_admiral','admirálove')] [Concept('concept_fleet','loďstvo')|l] přeruší cizí [Concept('concep)
  character_raid_supply_add: "$concept_admiral$ Šance rabování zásob" # todo: NEW TRANSLATION
  character_raid_supply_add_desc: "Šance, že [Concept('concept_admiral','admirálova')] [Concept('concept_fleet','loďstvo')] přepadne zásobovací lodě [Concept('concept_fleet','loďstva')] každé čtvrtiny dne" # todo: NEW TRANSLATION
- character_convoy_raiding_mult: "[Concept('concept_admiral','Admirálová')] účinnost přepadání @merchant_marine! #tooltippable_name #tooltip:[GetGoods('merchant_marine').GetTooltipTag],DATA_GOODS_NAME_TOOLTIP,GoodsTooltip [GetGoods('merchant_marine').GetCustom('GDS_G')|l]#!#!"
- character_convoy_raiding_mult_desc: "Bonus nebo penalizace za to, jak efektivně [Concept('concept_admiral','admirál')|l] napadá @merchant_marine! #tooltippable_name #tooltip:[GetGoods('merchant_marine').GetTooltipTag],DATA_GOODS_NAME_TOOLTIP,GoodsTooltip [GetGoods('merchant_marine').GetCustom('GDS_A')|l]#!#!" # todo: CHANGED (predtym: Bonus nebo penalizace za to, jak efektivně [Concept('concept_admiral','admirál')|l] napáda @merchant_marine! tooltippabl)
+ character_convoy_raiding_mult: "[Concept('concept_admiral','Admirálová')] účinnost přepadání @merchant_marine! #tooltippable_name #tooltip:[GetGoods('merchant_marine').GetTooltipTag],DATA_GOODS_NAME_TOOLTIP,GoodsTooltip [GetGoods('merchant_marine').GetAltNameNoFormatting('adj_G')|l]#!#!"
+ character_convoy_raiding_mult_desc: "Bonus nebo penalizace za to, jak efektivně [Concept('concept_admiral','admirál')|l] napadá @merchant_marine! #tooltippable_name #tooltip:[GetGoods('merchant_marine').GetTooltipTag],DATA_GOODS_NAME_TOOLTIP,GoodsTooltip [GetGoods('merchant_marine').GetAltNameNoFormatting('adj_A')|l]#!#!" # todo: CHANGED (predtym: Bonus nebo penalizace za to, jak efektivně [Concept('concept_admiral','admirál')|l] napáda @merchant_marine! tooltippabl)
  state_harvest_condition_drought_impact_mult: "Dopad [Concept('concept_harvest_condition','podmínek sklizně')] [GetHarvestConditionType('drought').GetName]"
  state_harvest_condition_drought_impact_mult_desc: "Zvýšení nebo snížení dopadu sucha."
  state_harvest_condition_drought_duration_mult: "Délka [Concept('concept_harvest_condition','podmínek sklizně')] [GetHarvestConditionType('drought').GetName]"

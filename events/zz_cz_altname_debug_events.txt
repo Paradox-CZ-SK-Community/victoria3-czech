@@ -1,0 +1,91 @@
+﻿namespace = cz_altname_debug
+
+# Debug skloňovania cez GetAltName (1.15): tovary, kultúry, záujmové skupiny.
+# Konzola: event cz_altname_debug.1
+
+cz_altname_debug.1 = {
+	type = country_event
+	placement = root
+	title = cz_altname_debug.1.t
+	desc = cz_altname_debug.1.d
+	flavor = cz_altname_debug.f
+
+	event_image = {
+		video = "unspecific_trains"
+	}
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	duration = 3
+
+	option = {
+		name = cz_altname_debug.next
+		trigger_event = { id = cz_altname_debug.2 days = 0 popup = yes }
+	}
+
+	option = {
+		name = cz_altname_debug.close
+		default_option = yes
+	}
+}
+
+cz_altname_debug.2 = {
+	type = country_event
+	placement = root
+	title = cz_altname_debug.2.t
+	desc = cz_altname_debug.2.d
+	flavor = cz_altname_debug.f
+
+	event_image = {
+		video = "unspecific_trains"
+	}
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	duration = 3
+
+	option = {
+		name = cz_altname_debug.next
+		trigger_event = { id = cz_altname_debug.3 days = 0 popup = yes }
+	}
+
+	option = {
+		name = cz_altname_debug.close
+		default_option = yes
+	}
+}
+
+cz_altname_debug.3 = {
+	type = country_event
+	placement = root
+	title = cz_altname_debug.3.t
+	desc = cz_altname_debug.3.d
+	flavor = cz_altname_debug.f
+
+	event_image = {
+		video = "southamerica_election"
+	}
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	duration = 3
+
+	immediate = {
+		# záujmové skupiny hráča
+		ig:ig_landowners ?= { save_scope_as = cz_dbg_ig_landowners }
+		ig:ig_rural_folk ?= { save_scope_as = cz_dbg_ig_rural_folk }
+		ig:ig_trade_unions ?= { save_scope_as = cz_dbg_ig_trade_unions }
+		ig:ig_armed_forces ?= { save_scope_as = cz_dbg_ig_armed_forces }
+		# varianty názvov podľa krajiny (kľúč <aktuálny názov>_G)
+		c:PRU ?= { ig:ig_landowners ?= { save_scope_as = cz_dbg_ig_pru_landowners } }
+		c:JAP ?= { ig:ig_armed_forces ?= { save_scope_as = cz_dbg_ig_jap_armed_forces } }
+		c:PAN ?= { ig:ig_rural_folk ?= { save_scope_as = cz_dbg_ig_pan_rural_folk } }
+	}
+
+	option = {
+		name = cz_altname_debug.restart
+		trigger_event = { id = cz_altname_debug.1 days = 0 popup = yes }
+	}
+
+	option = {
+		name = cz_altname_debug.close
+		default_option = yes
+	}
+}

@@ -1,6 +1,6 @@
 ﻿l_polish:
  industrial_accident_events.1.t: "Velký požár oděvní továrny"
- industrial_accident_events.1.d: "Smrtící požár zabil mnoho dělníků v [SCOPE.sState('triangle_shirtwaist_factory_state').GetName], částečně kvůli nebezpečným pracovním podmínkám a zamčeným nouzovým východům. Bylo odhaleno, že [SCOPE.sCharacter('guilty_factory_owner').GetFullName], významný člen [SCOPE.gsInterestGroup('guilty_factory_owner_ig').GetCustom('IG_G_TT')], byl vlastníkem nyní vyhořelé továrny." # todo: NAME CASE
+ industrial_accident_events.1.d: "Smrtící požár zabil mnoho dělníků v [SCOPE.sState('triangle_shirtwaist_factory_state').GetName], částečně kvůli nebezpečným pracovním podmínkám a zamčeným nouzovým východům. Bylo odhaleno, že [SCOPE.sCharacter('guilty_factory_owner').GetFullName], významný člen [SCOPE.gsInterestGroup('guilty_factory_owner_ig').GetAltName('G')], byl vlastníkem nyní vyhořelé továrny." # todo: NAME CASE
  industrial_accident_events.1.f: "Jeden z mužů, kteří se snažili požár uhasit, vypovídal při vyšetřování: „Myslel jsem si, že místnost je plná jen ohořelých strojů,“ řekl, „ale pak jsem šlápl na něco měkkého.“"
  industrial_accident_events.1.a: "To je prostě cena pokroku."
  industrial_accident_events.1.b: "[SCOPE.sCharacter('guilty_factory_owner').GetFullName] musí být za tyto smrti pohnán k odpovědnosti!"
@@ -109,12 +109,12 @@
  production_tech_events.501.c: "Neusínejme na vavřínech, ale hleďme do budoucnosti!"
  je_indian_removal_resolve_the_chain: "Ukončit probíhající proces vystěhování buď jeho zastavením, nebo dokončením."
  slavery_law_events.1.t: "Klasický argument pro okovy"
- slavery_law_events.1.d: "[SCOPE.sCharacter('slaver_ig_leader_scope').GetFullName], vůdce [SCOPE.gsInterestGroup('slaver_ig_scope').GetCustom('IG_G_TT')], pronesl dobře přijatý projev o klasických základech [SCOPE.sLaw('current_law_scope').GetName] a jeho historické legitimitě." # todo: NAME CASE
+ slavery_law_events.1.d: "[SCOPE.sCharacter('slaver_ig_leader_scope').GetFullName], vůdce [SCOPE.gsInterestGroup('slaver_ig_scope').GetAltName('G')], pronesl dobře přijatý projev o klasických základech [SCOPE.sLaw('current_law_scope').GetName] a jeho historické legitimitě." # todo: NAME CASE
  slavery_law_events.1.f: "„Od samého počátku civilizace člověk zotročoval člověka. To byl vždy přirozený řád věcí a nevidím důvod, proč bychom měli přírodu nyní opouštět.“"
  slavery_law_events.1.a: "Prosadit [SCOPE.sCharacter('slaver_ig_leader_scope').GetFullName] jako vůdce lidu."
- slavery_law_events.1.b: "Chválit [SCOPE.gsInterestGroup('slaver_ig_scope').GetCustom('IG_A_TT')] jako pěstitele velkých myslí." # todo: NAME CASE
+ slavery_law_events.1.b: "Chválit [SCOPE.gsInterestGroup('slaver_ig_scope').GetAltName('A')] jako pěstitele velkých myslí." # todo: NAME CASE
  slavery_law_events.2.t: "Hypoteticky o otroctví"
- slavery_law_events.2.d: "[SCOPE.sCharacter('slaver_ig_leader_scope')], vůdce [SCOPE.gsInterestGroup('slaver_ig_scope').GetCustom('IG_G_TT')], vyjádřil zájem obhajovat otroctví ve veřejné debatě. Teoretická debata však nemusí dopadnout tak dobře, jak [SCOPE.sCharacter('slaver_ig_leader_scope').GetSheHe] doufá." # todo: NAME CASE
+ slavery_law_events.2.d: "[SCOPE.sCharacter('slaver_ig_leader_scope')], vůdce [SCOPE.gsInterestGroup('slaver_ig_scope').GetAltName('G')], vyjádřil zájem obhajovat otroctví ve veřejné debatě. Teoretická debata však nemusí dopadnout tak dobře, jak [SCOPE.sCharacter('slaver_ig_leader_scope').GetSheHe] doufá." # todo: NAME CASE
  slavery_law_events.2.f: "„Diskutujte se mnou! Řekněme hypoteticky, že bych obhajoval otroctví a vy byste mi oponovali, i když byste se mýlili. Diskutujte se mnou!“"
  slavery_law_events.2.a: "Není třeba pořádat veřejnou debatu."
  slavery_law_events.2.b: "[SCOPE.sCharacter('slaver_ig_leader_scope').GetFullName] může mít svou veřejnou debatu."
@@ -124,10 +124,10 @@
  slavery_law_events.3.a: "To je jen drobná, snesitelná překážka v našich plánech."
  slavery_law_events.3.b: "Musíme tento pomlouvačný materiál veřejně zpochybnit!"
  slavery_law_events.4.t: "Život mezi poníženými"
- slavery_law_events.4.d: "[SCOPE.sCharacter('abolitionist_ig_leader_scope').GetFullName], vůdce [SCOPE.gsInterestGroup('abolitionist_ig_scope').GetCustom('IG_G_TT')], napsal senzační příběh o životě na otrokářské plantáži." # todo: NAME CASE
+ slavery_law_events.4.d: "[SCOPE.sCharacter('abolitionist_ig_leader_scope').GetFullName], vůdce [SCOPE.gsInterestGroup('abolitionist_ig_scope').GetAltName('G')], napsal senzační příběh o životě na otrokářské plantáži." # todo: NAME CASE
  slavery_law_events.4.f: "„Pozdě odpoledne chladného únorového dne seděli dva pánové blízko u sebe a zdálo se, že s velkou vážností diskutují. Pro pohodlí říkáme dva pánové. Jeden z nich však, jakmile začal mluvit o své plantáži, si označení ‚pán‘ příliš nezasloužil.“"
  slavery_law_events.4.a: "Oslavovat [SCOPE.sCharacter('abolitionist_ig_leader_scope').GetFullName] jako významného autora."
- slavery_law_events.4.b: "Podporovat [SCOPE.gsInterestGroup('abolitionist_ig_scope').GetCustom('IG_A_TT')] jako vydavatele protiotrokářských děl." # todo: NAME CASE
+ slavery_law_events.4.b: "Podporovat [SCOPE.gsInterestGroup('abolitionist_ig_scope').GetAltName('A')] jako vydavatele protiotrokářských děl." # todo: NAME CASE
  slavery_law_events.5.t: "Velké debaty"
  slavery_law_events.5.d: "[SCOPE.sCharacter('abolitionist_ig_scope')] navrhl uspořádat sérii debat o výhodách zrušení otroctví. Pokud debaty dopadnou dobře, [SCOPE.gsInterestGroup('abolitionist_ig_scope').GetName] i samotná věc abolicionismu posílí."
  slavery_law_events.5.f: "„Je to věčný boj mezi dvěma principy — správným a nesprávným — po celém světě. Otroctví je vždy tím stejným nesprávným a tyranským principem, bez ohledu na podobu.“"
@@ -186,7 +186,7 @@
  soft_approach_to_slaves: "Mírný přístup k povstalcům"
  tough_approach_to_slaves: "Tvrdý přístup k povstalcům"
  laws_police.1.t: "O vlásek"
- laws_police.1.d: "Kulka atentátníka dnes ráno jen těsně minula ministra z [SCOPE.gsInterestGroup('assassination_target_ig').GetCustom('IG_G_TT')], což vyvolalo výzvy k rychlému prosazení zákonů [SCOPE.sLaw('current_law_scope').GetName]. [SCOPE.gsInterestGroup('they_dont_like_laws_ig').GetName], odpůrci [SCOPE.sLaw('current_law_scope').GetName], jsou navíc obviňováni z nepřímé podpory atentátníka." # todo: NAME CASE
+ laws_police.1.d: "Kulka atentátníka dnes ráno jen těsně minula ministra z [SCOPE.gsInterestGroup('assassination_target_ig').GetAltName('G')], což vyvolalo výzvy k rychlému prosazení zákonů [SCOPE.sLaw('current_law_scope').GetName]. [SCOPE.gsInterestGroup('they_dont_like_laws_ig').GetName], odpůrci [SCOPE.sLaw('current_law_scope').GetName], jsou navíc obviňováni z nepřímé podpory atentátníka." # todo: NAME CASE
  laws_police.1.f: "„Tento téměř smrtelný incident je jen poslední z dlouhé řady. Pokud něco neuděláme dnes, tak kdy? Kolik lidí musí být ještě zraněno, než začneme jednat?“"
  laws_police.1.a: "Musíme chránit vlastní lidi."
  laws_police.1.b: "Ti, kdo se staví proti pořádku, musí být pokáráni."
@@ -244,7 +244,7 @@
  monarchist_stall_success: "Plechová koruna oslavována"
  monarchist_stall_fail: "Plechová koruna zesměšňována"
  trains.1.t: "Velká vlaková srážka"
- trains.1.d: "Podnikavý bavič uspořádal na místním veletrhu srážku dvou starých lokomotiv. Výsledná kolize může ohrozit dav, což však nezabránilo [SCOPE.sCharacter('train_crash_attendee').GetFullName], vůdci [SCOPE.gsInterestGroup('train_crash_attendee_ig').GetCustom('IG_G_TT')], aby si zajistil místo v první řadě." # todo: NAME CASE
+ trains.1.d: "Podnikavý bavič uspořádal na místním veletrhu srážku dvou starých lokomotiv. Výsledná kolize může ohrozit dav, což však nezabránilo [SCOPE.sCharacter('train_crash_attendee').GetFullName], vůdci [SCOPE.gsInterestGroup('train_crash_attendee_ig').GetAltName('G')], aby si zajistil místo v první řadě." # todo: NAME CASE
  trains.1.f: "„Proboha, proč? Proč chceš tak moc vidět srážku?“\n\n„Upřímně? Věřím, že někde v každém z nás — včetně mě — se skrývá potlačená touha něco rozbít.“"
  trains.1.a: "Všichni si užijte podívanou!"
  trains.1.b: "Zakázat [SCOPE.sCharacter('train_crash_attendee').GetFullName], aby riskoval [SCOPE.sCharacter('train_crash_attendee').GetHerHis] život!"
@@ -264,11 +264,11 @@
  economy_laws.2.c: "Promluvme si s našimi odpůrci."
  economy_laws.3.t: "Opilí úspěchem"
  economy_laws.3.d: "Naše snahy prosadit ekonomickou reformu vedly k nedostatkům a špatnému řízení v [SCOPE.sState('state_run_state').GetName]."
- economy_laws.3.f: "„Je faktem, že jsme naši plánovanou reformu ekonomiky splnili nad očekávání a naši přátelé z [SCOPE.gsInterestGroup('command_econ_proponent_ig').GetCustom('IG_G')] se opili úspěchem a na chvíli ztratili jasnost myšlení i střízlivost úsudku.“" # todo: NAME CASE
+ economy_laws.3.f: "„Je faktem, že jsme naši plánovanou reformu ekonomiky splnili nad očekávání a naši přátelé z [SCOPE.gsInterestGroup('command_econ_proponent_ig').GetAltNameNoFormatting('G')] se opili úspěchem a na chvíli ztratili jasnost myšlení i střízlivost úsudku.“" # todo: NAME CASE
  economy_laws.3.a: "Musíme přiznat své chyby."
  economy_laws.3.b: "Nemáme žádná selhání, jen úspěchy!"
  economy_laws.4.t: "Neobhajitelné vydírání"
- economy_laws.4.d: "Řečník z [SCOPE.gsInterestGroup('pro_free_trade_ig').GetCustom('IG_G_TT')] vyrazil na turné po celé zemi, kde kritizuje [SCOPE.sLaw('standing_law_scope').GetName] a vyzdvihuje hodnotu volného obchodu." # todo: NAME CASE
+ economy_laws.4.d: "Řečník z [SCOPE.gsInterestGroup('pro_free_trade_ig').GetAltName('G')] vyrazil na turné po celé zemi, kde kritizuje [SCOPE.sLaw('standing_law_scope').GetName] a vyzdvihuje hodnotu volného obchodu." # todo: NAME CASE
  economy_laws.4.f: "„Když si uvědomíme, že náš velký systém zaručuje každému plné užívání plodů jeho práce a podnikání, je zřejmé, že cokoli jiného než volný tok zboží je neobhajitelné vydírání a zavržení našich hodnot.“"
  economy_laws.4.a: "Pracujeme na společném cíli!"
  economy_laws.4.b: "[SCOPE.gsInterestGroup('pro_free_trade_ig').GetName] má skutečně pozoruhodného řečníka."
@@ -291,7 +291,7 @@
  africa_colonial_events.40.b: "Odvolejte důstojníka a ukončete toto šílenství!"
  africa_colonial_events.40.c: "Tenhle se mi líbí! Pokračujte v útoku a povyšte ho."
  africa_colonial_events.41.t: "Nezřízený imperialista"
- africa_colonial_events.41.d: "Vlastenecký průzkumník a stoupenec [SCOPE.gsInterestGroup('rogue_imperialist_ig').GetCustom('IG_G_TT')] zkoumal území v [SCOPE.sState('rogue_imperialist_state').GetName] a uzavíral smlouvy s místními vůdci jménem našeho státu, avšak [SCOPE.sCountry('rogue_imperialist_target').GetName] zde již má svou přítomnost. Pokud jeho nároky uznáme, [SCOPE.sCountry('rogue_imperialist_target').GetName] bude rozzuřen." # todo: NAME CASE
+ africa_colonial_events.41.d: "Vlastenecký průzkumník a stoupenec [SCOPE.gsInterestGroup('rogue_imperialist_ig').GetAltName('G')] zkoumal území v [SCOPE.sState('rogue_imperialist_state').GetName] a uzavíral smlouvy s místními vůdci jménem našeho státu, avšak [SCOPE.sCountry('rogue_imperialist_target').GetName] zde již má svou přítomnost. Pokud jeho nároky uznáme, [SCOPE.sCountry('rogue_imperialist_target').GetName] bude rozzuřen." # todo: NAME CASE
  africa_colonial_events.41.f: "„Ten člověk je šílenec! Snažíme se hrát opatrnou hru a on musí převrátit stůl a způsobit problémy — a kvůli čemu? Národu? Prosím vás! Neuvědomuje si, jaké škody napáchal?“"
  africa_colonial_events.41.a: "Uznat nárok na [SCOPE.sState('rogue_imperialist_state').GetName] a rozzlobit [SCOPE.sCountry('rogue_imperialist_target').GetName]."
  africa_colonial_events.41.b: "Odmítnout průzkumníka a rozzlobit vlastní šovinisty."
@@ -327,7 +327,7 @@
  anti_state_religion.1.a: "I víra může být zkažená!"
  anti_state_religion.1.b: "Děsivé! Možná je čas změnit směr."
  anti_state_religion.2.t: "Proti antiklerikalismu"
- anti_state_religion.2.d: "Snahy státu o omezení moci duchovenstva vyvolaly odpor mezi [SCOPE.gsInterestGroup('community_rel_ig_scope').GetCustom('IG_I_TT')], kteří požadují ukončení těchto antiklerikálních politik." # todo: NAME CASE
+ anti_state_religion.2.d: "Snahy státu o omezení moci duchovenstva vyvolaly odpor mezi [SCOPE.gsInterestGroup('community_rel_ig_scope').GetAltName('I')], kteří požadují ukončení těchto antiklerikálních politik." # todo: NAME CASE
  anti_state_religion.2.f: "„Národ potřebuje víru, která ho sjednocuje. Opustit naše tradice by znamenalo přijmout systém plný omylů a klamů! Vždyť by to... podkopalo společenský řád tím, že by zničilo samotné základy všeho, co je nám drahé!“"
  anti_state_religion.2.a: "Antiklerikalismus je nezbytný."
  anti_state_religion.2.b: "Měli bychom přehodnotit naše plány."
