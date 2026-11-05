@@ -11,15 +11,17 @@
  identity_ideological_union_desc: "Tato $concept_power_bloc_identity_extra_short$ hodnotí ideologickou soudržnost mezi svými [Concept('concept_power_bloc_member','členy mocenského bloku')], aniž by byla vázána na konkrétní politickou stranu nebo ideologii." # todo: CONCEPT CASE
  identity_religious_desc: "Tato $concept_power_bloc_identity_extra_short$ se zaměřuje na náboženskou jednotu. Vyžaduje náboženskou homogenitu."
  identity_cultural_desc: "Tato $concept_power_bloc_identity_extra_short$ se zaměřuje na kulturní jednotu. Daří se mu v kulturní homogenitě."
- PRINCIPLE_NAME_FORMAT: "$POWER_BLOC_PRINCIPLE_GROUP_NAME$ [GetRomanNumeral('(int32)$LEVEL$')]"
+ POWER_BLOC_MANDATE_CONCEPT: "[concept_power_bloc_mandate]" # todo: NEW TRANSLATION
+ POWER_BLOC_MANDATES_CONCEPT: "[Concept('concept_power_bloc_mandate', '$concept_power_bloc_mandates|q$')]" # todo: NEW TRANSLATION
+ PRINCIPLE_NAME_FORMAT: "$POWER_BLOC_PRINCIPLE_GROUP_NAME$ [GetRomanNumeral('(int32)$LEVEL$')]" # todo: CHANGED (predtym: $POWER_BLOC_PRINCIPLE_GROUP_NAME$ [GetRomanNumeral('(int32)$LEVEL|q$')])
  principle_group_construction: "Stavba"
  principle_group_construction_desc: "Úsilí v mocenském bloku $concept_power_bloc$ o zjednodušení [Concept('concept_construction','výstavby')] [Concept('concept_building','budov')] vedlo k vyšší efektivitě a dokonce k vytvoření specializovaných [Concept('concept_company','společností')]." # todo: CONCEPT CASE
  principle_group_internal_trade: "Interní obchod"
  principle_group_internal_trade_desc: "[Concept('concept_power_bloc_member','Členové mocenského bloku')] se dohodli na snížení [Concept('concept_tariffs','cla')] a harmonizaci regulací za účelem usnadnění volného pohybu [Concept('concept_good','zboží')] a služeb v rámci $concept_power_bloc$." # todo: CONCEPT CASE
  principle_group_market_unification: "Unifikace trhu"
- principle_group_market_unification_desc: "Unifikace [Concept('concept_market','trhy')] všech [Concept('concept_power_bloc_member','členů mocenského bloku')] pod vedením [Concept('concept_power_bloc_leader', '$concept_power_bloc_leader_possessive_short$')|l] vede k vyšší spolupráci uvnitř $concept_power_bloc$ a menší spolupráci s vnějším [Concept('concept_country', '$concept_countries$')|l]." # todo: CONCEPT CASE
+ principle_group_market_unification_desc: "Unifikace [Concept('concept_market','trhy')] všech [Concept('concept_power_bloc_member','členů mocenského bloku')] pod vedením [Concept('concept_power_bloc_leader', '$concept_power_bloc_leader_possessive_short|q$')|l] vede k vyšší spolupráci uvnitř $concept_power_bloc$ a menší spolupráci s vnějším [Concept('concept_country', '$concept_countries|q$')|l]." # todo: CHANGED (predtym: Unifikace [Concept('concept_market', '$concept_markets|q$')] všech [Concept('concept_power_bloc_member', '$concept_power)
  principle_group_vassalization: "Vazalizace"
- principle_group_vassalization_desc: "Výhody při přetváření důvěřivých [Concept('concept_power_bloc_member', '$concept_power_bloc_members_short$')|l] mocenského bloku na loajální služebníky."
+ principle_group_vassalization_desc: "Výhody při přetváření důvěřivých [Concept('concept_power_bloc_member', '$concept_power_bloc_members_short|q$')|l] mocenského bloku na loajální služebníky." # todo: CHANGED (predtym: Výhody při přetváření důvěřivých [Concept('concept_power_bloc_member', '$concept_power_bloc_members_short|q$')] $concept)
  principle_group_advanced_research: "Pokročilé výzkumy"
  principle_group_advanced_research_desc: "Interní komunikace pro výměnu vědeckých informací, které prospějí všem [Concept('concept_power_bloc_member','členům mocenského bloku')]." # todo: CONCEPT CASE
  principle_group_defensive_cooperation: "Obranná spolupráce"
@@ -131,71 +133,53 @@
  POWER_STRUGGLE_DURATION_BASE: "$TAB$Základ: $TIME$"
  POWER_STRUGGLE_DURATION_FOUNDER_MULT: "$TAB$[FactorToMult(GetDefine('NPowerBlocs','POWER_STRUGGLE_DURATION_FACTOR_FOR_FOUNDER'))|0%v=] kvůli tomu, že je kandidát zakládajícím členem"
  NO_POWER_STRUGGLE_BLOC_JOIN: "Musíte mít nižší [Concept('concept_prestige','prestiž')] nebo [Concept('concept_rank','hodnost')] než vedoucí [Concept('concept_power_bloc','mocenský blok')], abyste se připojili k bloku"
- power_bloc_formation: "Tvorba mocenského bloku"
+ power_bloc_formation: "Nové $concept_power_blocs$" # todo: CHANGED (predtym: Tvorba mocenského bloku)
+ power_bloc_disbanded_notification_group: "Rozpuštěny $concept_power_blocs$" # todo: NEW TRANSLATION
  power_bloc_activation: "Aktivace mocenského bloku"
- power_bloc_leadership: "Vedení mocenského bloku"
- power_bloc_membership: "Členství v mocenském bloku"
- power_struggle: "Mocenský boj"
- notification_power_bloc_principle_mandate_available_name: "Nový [Concept('concept_power_bloc_mandate','mandát')] k dispozici"
+ power_bloc_leadership: "Noví $concept_power_bloc_leaders$" # todo: CHANGED (predtym: Vedení mocenského bloku)
+ power_bloc_membership: "Odchod $concept_power_bloc_members$" # todo: CHANGED (predtym: Členství v mocenském bloku)
+ power_bloc_expelled_notification_group: "Vyloučen z $concept_power_bloc$" # todo: NEW TRANSLATION
+ power_struggle: "$concept_power_struggles$" # todo: CHANGED (predtym: Mocenský boj)
+ notification_power_bloc_principle_mandate_available_name: "Nový [Concept('concept_power_bloc_mandate','mandát')] v [SCOPE.GetRootScope.GetPowerBloc.GetName]" # todo: CHANGED (predtym: Nový [Concept('concept_power_bloc_mandate','mandát')] k dispozici)
  notification_power_bloc_principle_mandate_available_desc: "Jako [Concept('concept_power_bloc_leader','vůdce bloku')] [SCOPE.GetRootScope.GetPowerBloc.GetName] jste získali nový [Concept('concept_power_bloc_mandate','mandát')]"
- notification_power_bloc_principle_mandate_available_tooltip: "#header $notification_power_bloc_principle_mandate_available_name$#!\n$notification_power_bloc_principle_mandate_available_desc$"
- notification_power_bloc_principle_added_name: "[Concept('concept_power_bloc_mandate','Mandát')] Vynaložené za [SCOPE.sPowerBlocPrinciple('next').GetName]"
+ notification_power_bloc_principle_added_name: "[Concept('concept_power_bloc_mandate','Mandát')] Vynaložen na přidání [SCOPE.sPowerBlocPrinciple('next').GetName]" # todo: CHANGED (predtym: [Concept('concept_power_bloc_mandate','Mandát')] Vynaložené za [SCOPE.sPowerBlocPrinciple('next').GetName])
  notification_power_bloc_principle_added_desc: "[SCOPE.sCountry('country').GetName] [Concept('concept_power_bloc_mandate','mandátován')] přidání [Concept('concept_power_bloc_principle','princíp')] [SCOPE.sPowerBlocPrinciple('next').GetName] do [SCOPE.GetRootScope.GetPowerBloc.GetName]"
- notification_power_bloc_principle_added_tooltip: "#header $notification_power_bloc_principle_added_name$#!\n$notification_power_bloc_principle_added_desc$"
- notification_power_bloc_principle_removed_name: "[Concept('concept_power_bloc_mandate','Mandát')] Vynaložené za zrušení [SCOPE.sPowerBlocPrincipleGroup('group').GetName]"
+ notification_power_bloc_principle_removed_name: "[Concept('concept_power_bloc_mandate','Mandát')] Vynaložen na zrušení [SCOPE.sPowerBlocPrincipleGroup('group').GetName]" # todo: CHANGED (predtym: [Concept('concept_power_bloc_mandate','Mandát')] Vynaložené za zrušení [SCOPE.sPowerBlocPrincipleGroup('group').GetName])
  notification_power_bloc_principle_removed_desc: "[SCOPE.sCountry('country').GetName] [Concept('concept_power_bloc_mandate','mandátován')] odstranění [SCOPE.sPowerBlocPrincipleGroup('group').GetName] v [SCOPE.GetRootScope.GetPowerBloc.GetName]"
- notification_power_bloc_principle_removed_tooltip: "#header $notification_power_bloc_principle_removed_name$#!\n$notification_power_bloc_principle_removed_desc$"
- notification_power_bloc_principle_exchanged_name: "[Concept('concept_power_bloc_mandate','Mandát')] Vynaložené za [SCOPE.sPowerBlocPrinciple('next').GetName]"
+ notification_power_bloc_principle_exchanged_name: "[Concept('concept_power_bloc_mandate','Mandát')] Vynaložen na přechod na [SCOPE.sPowerBlocPrinciple('next').GetName]" # todo: CHANGED (predtym: [Concept('concept_power_bloc_mandate','Mandát')] Vynaložené za [SCOPE.sPowerBlocPrinciple('next').GetName])
  notification_power_bloc_principle_exchanged_desc: "[SCOPE.sCountry('country').GetName] [Concept('concept_power_bloc_mandate','mandátován')] změnil [Concept('concept_power_bloc_principle','princíp')] [SCOPE.sPowerBlocPrinciple('previous').GetName] na [SCOPE.sPowerBlocPrinciple('next').GetName] v [SCOPE.GetRootScope.GetPowerBloc.GetName]"
- notification_power_bloc_principle_exchanged_tooltip: "#header $notification_power_bloc_principle_exchanged_name$#!\n$notification_power_bloc_principle_exchanged_desc$"
- notification_power_bloc_principle_upgraded_name: "[Concept('concept_power_bloc_mandate','Mandát')] Vynaložené za [SCOPE.sPowerBlocPrinciple('next').GetName]"
+ notification_power_bloc_principle_upgraded_name: "[Concept('concept_power_bloc_mandate','Mandát')] Vynaložen na vylepšení na [SCOPE.sPowerBlocPrinciple('next').GetName]" # todo: CHANGED (predtym: [Concept('concept_power_bloc_mandate','Mandát')] Vynaložené za [SCOPE.sPowerBlocPrinciple('next').GetName])
  notification_power_bloc_principle_upgraded_desc: "[SCOPE.sCountry('country').GetName] povýšil [SCOPE.sPowerBlocPrinciple('previous').GetName] na [SCOPE.sPowerBlocPrinciple('next').GetName] jako princip pro [SCOPE.GetRootScope.GetPowerBloc.GetName]"
- notification_power_bloc_principle_upgraded_tooltip: "#header $notification_power_bloc_principle_upgraded_name$#!\n$notification_power_bloc_principle_upgraded_desc$"
- notification_power_bloc_principle_downgraded_name: "[Concept('concept_power_bloc_mandate','Mandát')] Vynaložené za odvolání [SCOPE.sPowerBlocPrinciple('previous').GetName]"
+ notification_power_bloc_principle_downgraded_name: "[Concept('concept_power_bloc_mandate','Mandát')] Vynaložen na snížení úrovně na [SCOPE.sPowerBlocPrinciple('next').GetName]" # todo: CHANGED (predtym: [Concept('concept_power_bloc_mandate','Mandát')] Vynaložené za odvolání [SCOPE.sPowerBlocPrinciple('previous').GetName])
  notification_power_bloc_principle_downgraded_desc: "[SCOPE.sCountry('country').GetName] degradoval [SCOPE.sPowerBlocPrinciple('previous').GetName] na [SCOPE.sPowerBlocPrinciple('next').GetName] jako princip pro [SCOPE.GetRootScope.GetPowerBloc.GetName]"
- notification_power_bloc_principle_downgraded_tooltip: "#header $notification_power_bloc_principle_downgraded_name$#!\n$notification_power_bloc_principle_downgraded_desc$"
  notification_power_bloc_formed_name: "[SCOPE.GetRootScope.GetPowerBloc.GetName] byla založena"
  notification_power_bloc_formed_desc: "Nový [Concept('concept_power_bloc','mocenský blok')] [SCOPE.GetRootScope.GetPowerBloc.GetName] byl založen [SCOPE.sCountry('country').GetName]."
- notification_power_bloc_formed_tooltip: "#header $notification_power_bloc_formed_name$#!\n$notification_power_bloc_formed_desc$"
  notification_power_bloc_disbanded_leader_left_name: "[SCOPE.GetRootScope.GetPowerBloc.GetName] byla rozpuštěna"
  notification_power_bloc_disbanded_leader_left_desc: "[SCOPE.GetRootScope.GetPowerBloc.GetName] byla rozpuštěna po opuštění [SCOPE.sCountry('country').GetName] a žádná jiná země nebyla vhodná jako vedoucí."
- notification_power_bloc_disbanded_leader_left_tooltip: "#header $notification_power_bloc_disbanded_leader_left_name$#!\n$notification_power_bloc_disbanded_leader_left_desc$"
  notification_power_bloc_disbanded_leader_not_eligible_name: "[SCOPE.GetRootScope.GetPowerBloc.GetName] byla rozpuštěna"
  notification_power_bloc_disbanded_leader_not_eligible_desc: "[SCOPE.GetRootScope.GetPowerBloc.GetName] byla rozpuštěna, protože [SCOPE.sCountry('country').GetName] už není způsobilá k vedení a žádná jiná země nebyla vhodná jako vedoucí."
- notification_power_bloc_disbanded_leader_not_eligible_tooltip: "#header $notification_power_bloc_disbanded_leader_not_eligible_name$#!\n$notification_power_bloc_disbanded_leader_not_eligible_desc$"
  notification_power_bloc_leader_left_name: "[SCOPE.sCountry('next').GetName] nyní vede [SCOPE.GetRootScope.GetPowerBloc.GetName]"
  notification_power_bloc_leader_left_desc: "[SCOPE.sCountry('previous').GetName] opustil [Concept('concept_power_bloc','mocenský blok')] a byl nahrazen [SCOPE.sCountry('next').GetName] jako [Concept('concept_power_bloc_leader','lídr mocenského bloku')] [SCOPE.GetRootScope.GetPowerBloc.GetName]"
- notification_power_bloc_leader_left_tooltip: "#header $notification_power_bloc_leader_left_name$#!\n$notification_power_bloc_leader_left_desc$"
  notification_power_bloc_leader_outranked_name: "[SCOPE.sCountry('next').GetName] nyní vede [SCOPE.GetRootScope.GetPowerBloc.GetName]"
  notification_power_bloc_leader_outranked_desc: "[SCOPE.sCountry('previous').GetName] už není [Concept('concept_major_power','regionální mocnost')] a je nahrazen [SCOPE.sCountry('next').GetName] jako [Concept('concept_power_bloc_leader','lídr mocenského bloku')] [SCOPE.GetRootScope.GetPowerBloc.GetName]"
- notification_power_bloc_leader_outranked_tooltip: "#header $notification_power_bloc_leader_outranked_name$#!\n$notification_power_bloc_leader_outranked_desc$"
  notification_power_bloc_member_left_name: "[SCOPE.sCountry('country').GetName] opustil [SCOPE.GetRootScope.GetPowerBloc.GetName]"
  notification_power_bloc_member_left_desc: "[SCOPE.sCountry('country').GetName] už není [Concept('concept_power_bloc_member','člen bloku')] [SCOPE.GetRootScope.GetPowerBloc.GetName]"
- notification_power_bloc_member_left_tooltip: "#header $notification_power_bloc_member_left_name$#!\n$notification_power_bloc_member_left_desc$"
  notification_power_bloc_member_kicked_name: "Vyloučen z [SCOPE.GetRootScope.GetPowerBloc.GetName]"
  notification_power_bloc_member_kicked_desc: "Naše členství v [SCOPE.GetRootScope.GetPowerBloc.GetName] bylo zrušeno [Concept('concept_power_bloc_leader','vůdce bloku')] [SCOPE.sCountry('actor').GetName]"
- notification_power_bloc_member_kicked_tooltip: "#header $notification_power_bloc_member_kicked_name$#!\n$notification_power_bloc_member_kicked_desc$"
- notification_power_struggle_started_for_contender_name: "Začal [Concept('concept_power_struggle','mocenský boj')]"
- notification_power_struggle_started_for_contender_desc: "Rozjeli jsme [Concept('concept_power_struggle','mocenský boj')] stát se [Concept('concept_power_bloc_leader','lídrem mocenského bloku')] [SCOPE.GetRootScope.GetPowerBloc.GetName]. Musíme udržet naši [Concept('concept_prestige','prestiž')] [FactorToMult(GetDefine('NPowerBlocs','POWER_STRUGGLE_PRESTIGE_THRESHOLD_FAIL'))|0%v=] nad aktuální prestiží vedoucího po [GetDefine('NPowerBlocs','POWER_STRUGGLE_DURATION_SUCCESS_MONTHS')|v0] měsíců, abychom mohli převzít vedení." # todo: CONCEPT CASE
- notification_power_struggle_started_for_contender_tooltip: "#header $notification_power_struggle_started_for_contender_name$#!\n$notification_power_struggle_started_for_contender_desc$"
+ notification_power_struggle_started_for_contender_name: "Zahájili jsme [Concept('concept_power_struggle','mocenský boj')] o [SCOPE.GetRootScope.GetPowerBloc.GetName]" # todo: CHANGED (predtym: Začal [Concept('concept_power_struggle','mocenský boj')])
+ notification_power_struggle_started_for_contender_desc: "Rozjeli jsme [Concept('concept_power_struggle','mocenský boj')] stát se [Concept('concept_power_bloc_leader','lídrem mocenského bloku')] [SCOPE.GetRootScope.GetPowerBloc.GetName]. Musíme udržet naši [Concept('concept_prestige','prestiž')] [FactorToMult(GetDefine('NPowerBlocs','POWER_STRUGGLE_PRESTIGE_THRESHOLD_FAIL'))|0%v=] nad aktuální prestiží vedoucího po [GetDefine('NPowerBlocs','POWER_STRUGGLE_DURATION_SUCCESS_MONTHS')|v0] měsíců, abychom mohli převzít vedení." # todo: CHANGED MINOR
  notification_power_struggle_started_for_leader_name: "[SCOPE.sCountry('country').GetName] zahájil [Concept('concept_power_struggle','mocenský boj')]"
- notification_power_struggle_started_for_leader_desc: "[SCOPE.sCountry('country').GetName] zahájil [Concept('concept_power_struggle','mocenský boj')] stát se [Concept('concept_power_bloc_leader','lídrem mocenského bloku')] [SCOPE.GetRootScope.GetPowerBloc.GetName]. Musíme zabránit tomu, aby jejich [Concept('concept_prestige','prestiž')] překročila naši o [FactorToMult(GetDefine('NPowerBlocs','POWER_STRUGGLE_PRESTIGE_THRESHOLD_FAIL'))|0%v=] během nadcházejících [GetDefine('NPowerBlocs','POWER_STRUGGLE_DURATION_SUCCESS_MONTHS')|v0] měsíců, abychom udrželi vedení." # todo: CONCEPT CASE
- notification_power_struggle_started_for_leader_tooltip: "#header $notification_power_struggle_started_for_leader_name$#!\n$notification_power_struggle_started_for_leader_desc$"
- notification_power_struggle_failed_for_contender_name: "Mocenský boj selhal"
- notification_power_struggle_failed_for_contender_desc: "Neuspěli jsme v [Concept('concept_power_struggle','mocenském boji')] stát se [Concept('concept_power_bloc_leader','lídrem mocenského bloku')] [SCOPE.GetRootScope.GetPowerBloc.GetName] kvůli našemu [Concept('concept_prestige','prestiži')], který klesl pod [FactorToMult(GetDefine('NPowerBlocs','POWER_STRUGGLE_PRESTIGE_THRESHOLD_FAIL'))|0%v=] aktuálních prestiž vedoucího." # todo: CONCEPT CASE
- notification_power_struggle_failed_for_contender_tooltip: "#header $notification_power_struggle_failed_for_contender_name$#!\n$notification_power_struggle_failed_for_contender_desc$"
+ notification_power_struggle_started_for_leader_desc: "[SCOPE.sCountry('country').GetName] zahájil [Concept('concept_power_struggle','mocenský boj')] stát se [Concept('concept_power_bloc_leader','lídrem mocenského bloku')] [SCOPE.GetRootScope.GetPowerBloc.GetName]. Musíme zabránit tomu, aby jejich [Concept('concept_prestige','prestiž')] překročila naši o [FactorToMult(GetDefine('NPowerBlocs','POWER_STRUGGLE_PRESTIGE_THRESHOLD_FAIL'))|0%v=] během nadcházejících [GetDefine('NPowerBlocs','POWER_STRUGGLE_DURATION_SUCCESS_MONTHS')|v0] měsíců, abychom udrželi vedení." # todo: CHANGED MINOR
+ notification_power_struggle_failed_for_contender_name: "Náš [Concept('concept_power_struggle','mocenský boj')] o [SCOPE.GetRootScope.GetPowerBloc.GetName] selhal" # todo: CHANGED (predtym: Mocenský boj selhal)
+ notification_power_struggle_failed_for_contender_desc: "Neuspěli jsme v [Concept('concept_power_struggle','mocenském boji')] stát se [Concept('concept_power_bloc_leader','lídrem mocenského bloku')] [SCOPE.GetRootScope.GetPowerBloc.GetName] kvůli našemu [Concept('concept_prestige','prestiži')], který klesl pod [FactorToMult(GetDefine('NPowerBlocs','POWER_STRUGGLE_PRESTIGE_THRESHOLD_FAIL'))|0%v=] aktuálních prestiž vedoucího." # todo: CHANGED MINOR
  notification_power_struggle_failed_for_leader_name: "[SCOPE.sCountry('country').GetName] selhal v [Concept('concept_power_struggle','mocenském boji')]" # todo: CONCEPT CASE
  notification_power_struggle_failed_for_leader_desc: "[SCOPE.sCountry('country').GetName] selhal v [Concept('concept_power_struggle','mocenském boji')] stát se [Concept('concept_power_bloc_leader','lídrem mocenského bloku')] [SCOPE.GetRootScope.GetPowerBloc.GetName]" # todo: CONCEPT CASE
- notification_power_struggle_failed_for_leader_tooltip: "#header $notification_power_struggle_failed_for_leader_name$#!\n$notification_power_struggle_failed_for_leader_desc$"
- notification_power_struggle_succeeded_for_contender_name: "Mocenský boj uspěl"
+ notification_power_struggle_succeeded_for_contender_name: "Nyní vedeme [SCOPE.GetRootScope.GetPowerBloc.GetName]" # todo: CHANGED (predtym: Mocenský boj uspěl)
  notification_power_struggle_succeeded_for_contender_desc: "Uspěli jste v [Concept('concept_power_struggle','mocenském boji')] s [SCOPE.sCountry('previous').GetAltAdjective('I')] a stali jste se [Concept('concept_power_bloc_leader','lídrem mocenského bloku')] [SCOPE.GetRootScope.GetPowerBloc.GetName]" # todo: CONCEPT CASE
- notification_power_struggle_succeeded_for_contender_tooltip: "#header $notification_power_struggle_succeeded_for_contender_name$#!\n$notification_power_struggle_succeeded_for_contender_desc$"
  notification_power_struggle_succeeded_for_looser_name: "[SCOPE.sCountry('next').GetName] vyhrál [Concept('concept_power_struggle','mocenský boj')]" # todo: CHANGED (predtym: [SCOPE.sCountry('next').GetName] vyhral [Concept('concept_power_struggle','mocenský boj')])
  notification_power_struggle_succeeded_for_looser_desc: "[SCOPE.sCountry('next').GetName] uspěl v [Concept('concept_power_struggle','mocenském boji')] nad vámi stát se [Concept('concept_power_bloc_leader','lídrem mocenského bloku')] [SCOPE.GetRootScope.GetPowerBloc.GetName]" # todo: CONCEPT CASE
- notification_power_struggle_succeeded_for_looser_tooltip: "#header $notification_power_struggle_succeeded_for_looser_name$#!\n$notification_power_struggle_succeeded_for_looser_desc$"
  notification_power_struggle_succeeded_name: "[SCOPE.GetRootScope.GetPowerBloc.GetPreviousName] se stává [SCOPE.GetRootScope.GetPowerBloc.GetName]"
  notification_power_struggle_succeeded_desc: "[SCOPE.sCountry('next').GetName] uspěl v [Concept('concept_power_struggle','mocenském boji')] s [SCOPE.sCountry('previous').GetAltAdjective('I')] a stal se novým [Concept('concept_power_bloc_leader','lídrem mocenského bloku')] [SCOPE.GetRootScope.GetPowerBloc.GetName]" # todo: CONCEPT CASE
- notification_power_struggle_succeeded_tooltip: "#header $notification_power_struggle_succeeded_name$#!\n$notification_power_struggle_succeeded_desc$"
  pb_top_00: "Dvojčata draci"
  pb_top_01: "Crescent"
  pb_top_02: "Lev"
@@ -634,3 +618,7 @@
  coalition_of_states: "Koalice států"
  glorious_union: "Slavná unie"
  workingmens_association: "Sdružení pracovníků"
+ comintern: "Kominterna" # todo: NEW TRANSLATION
+ labor_international: "Dělnická internacionála" # todo: NEW TRANSLATION
+ congress_of_independent_states: "Kongres nezávislých států" # todo: NEW TRANSLATION
+ great_indivisible_union: "Velký nedělitelný svaz" # todo: NEW TRANSLATION

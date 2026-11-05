@@ -53,59 +53,85 @@
  OBJECTIVE_TYPE_RECOMMENDED_GAME_RULE_ITEM_TEXT: "- [GameRuleSetting.GetGameRule.GetName]: #variable [GameRuleSetting.GetName]#!"
  SELECTED_OBJECTIVE_RECOMMENDED_GAME_RULE_DESC: "[GameRuleSetting.GetDescription]. Cíl „$NAME$“ navrhuje následující nastavení: #variable $RULE$#!."
  economic_dominance_welcome: "Ekonomická nadvláda" # todo: NEW TRANSLATION
- economic_dominance_welcome_desc: "Během plnění tohoto cíle obdržíte sérii [Concept('journal_entry','$Journal Entries$')], které je třeba dokončit. Způsob, jakým se rozhodnete tyto úkoly splnit, je na vás, hráči.\n\nPOZNÁMKA: Než obdržíte svůj první zápis do deníku, musíte mít v zemi železnou nebo uhlí těžbu." # todo: NEW TRANSLATION
+ economic_dominance_welcome_desc: "Během plnění tohoto cíle obdržíte sérii [Concept('journal_entry','$Journal Entries|q$')], které je třeba dokončit. Způsob, jakým se rozhodnete tyto úkoly splnit, je na vás, hráči.\n\nPOZNÁMKA: Než obdržíte svůj první zápis do deníku, musíte mít v zemi železnou nebo uhlí těžbu." # todo: CHANGED (predtym: Během plnění tohoto cíle obdržíte sérii [Concept('journal_entry','$Journal Entries$')], které je třeba dokončit. Způsob,)
  economic_dominance_lesson_button_skip: "Pokračovat!" # todo: NEW TRANSLATION
  je_objective_expand_goods_production: "Rozšiřme těžební průmysl" # todo: NEW TRANSLATION
  je_objective_expand_goods_production_status: "Rozšířit [JournalEntry.GetTarget.GetBuilding.GetName] v [JournalEntry.GetTarget.GetBuilding.GetState.GetName]" # todo: NEW TRANSLATION
  je_objective_expand_goods_production_reason: "Měli bychom učinit první kroky ke zvýšení naší domácí produkce. Rozšiřme [JournalEntry.GetTarget.GetBuilding.GetName] v [JournalEntry.GetTarget.GetBuilding.GetState.GetName]. To nám poskytne silnou pozici pro další rozšíření průmyslu v budoucnu." # todo: NEW TRANSLATION
  je_objective_expand_goods_production_goal: "Zvýšit [JournalEntry.GetTarget.GetBuilding.GetName] v [JournalEntry.GetTarget.GetBuilding.GetState.GetName] o jednu úroveň." # todo: NEW TRANSLATION
+ je_objective_expand_goods_production_activation_tt: "[GetPlayer.GetName] má [GetBuildingType('building_iron_mine').GetName] nebo [GetBuildingType('building_coal_mine').GetName]" # todo: NEW TRANSLATION
  expand_goods_production_complete_1: "Produkce zvýšena!" # todo: NEW TRANSLATION
- expand_goods_production_complete_1_desc: "Výborně! Dokončili jste první část cíle Ekonomické nadvlády. Pokračujte v plnění [Concept('journal_entry','$Journal Entries$')], abyste odemkli další úkoly." # todo: NEW TRANSLATION
+ expand_goods_production_complete_1_desc: "Výborně! Dokončili jste první část cíle Ekonomické nadvlády. Pokračujte v plnění [Concept('journal_entry','$Journal Entries|q$')], abyste odemkli další úkoly." # todo: CHANGED (predtym: Výborně! Dokončili jste první část cíle Ekonomické nadvlády. Pokračujte v plnění [Concept('journal_entry','$Journal Entr)
  je_refining_goods: "Zpracování výroby" # todo: NEW TRANSLATION
  je_refining_goods_status: "Mít v jednom státě [GetBuildingType('building_steel_mill').GetName] na úrovni 4." # todo: NEW TRANSLATION
- je_refining_goods_reason: "Po zvýšení produkce surového $concept_goods$ bychom se nyní měli zaměřit na zpracování těchto $concept_goods$, abychom zvýšili zisky napříč naší zemí. Proč nakupovat od jiných, když to můžeme vyrobit sami?" # todo: NEW TRANSLATION
+ je_refining_goods_reason: "Po zvýšení produkce surového $concept_goods$ bychom se nyní měli zaměřit na zpracování těchto $concept_goods$, abychom zvýšili zisky napříč naší zemí. Proč nakupovat od jiných, když to můžeme vyrobit sami?" # todo: CHANGED (predtym: Po zvýšení produkce surového [Concept('concept_good','$concept_goods|q$')] bychom se nyní měli zaměřit na zpracování těc)
+ je_refining_goods_activation_tt: "#v $je_objective_expand_goods_production$#! [concept_journal_entry] byl dokončen" # todo: NEW TRANSLATION
  je_specialized_goods: "Výroba specializovaného zboží" # todo: NEW TRANSLATION
  je_specialized_goods_status: "Mít v jednom státě [GetBuildingType('building_motor_industry').GetName] na úrovni 2." # todo: NEW TRANSLATION
  je_specialized_goods_reason: "Měli bychom dále diverzifikovat naši výrobu zboží. Začali jsme s výrobou jednoho zboží, ale pokud začneme vyrábět i dražší produkty, budeme je moci vyvážet do všech koutů světa." # todo: NEW TRANSLATION
+ je_specialized_goods_activation_tt: "#v $je_refining_goods$#! [concept_journal_entry] byl dokončen" # todo: NEW TRANSLATION
  je_expanding_the_market: "Rozšiřování trhu" # todo: NEW TRANSLATION
  je_expanding_the_market_status: "Mít 8 států jako součást vašeho $concept_customs_union$." # todo: NEW TRANSLATION
  je_expanding_the_market_reason: "Měli bychom rozšířit naše $concept_customs_union$ o další státy. To umožní volnější a přímější obchod s jinými státy, aniž bychom museli [Concept('concept_trade','obchod')] s [Concept('concept_world_market','světovým trhem')]." # todo: NEW TRANSLATION
+ je_expanding_the_market_activation_tt: "#v $je_specialized_goods$#! [concept_journal_entry] byl dokončen" # todo: NEW TRANSLATION
  je_strong_market: "Silný trh" # todo: NEW TRANSLATION
  je_strong_market_reason: "Nastal čas etablovat se jako největší a nejsilnější trh na světě." # todo: NEW TRANSLATION
+ je_strong_market_activation_tt: "#v $je_expanding_the_market$#! [concept_journal_entry] byl dokončen" # todo: NEW TRANSLATION
+ je_strong_market_activation_2_tt: "#v $je_lower_production_costs$#! [concept_journal_entry] byl dokončen" # todo: NEW TRANSLATION
+ je_strong_market_activation_3_tt: "Buď #v $je_raise_exports_value$#!, nebo #v $je_utilizing_our_strength$#! [concept_journal_entry] byl dokončen" # todo: NEW TRANSLATION
  economic_dominance_complete_1: "Hospodářská nadvláda dokončena" # todo: NEW TRANSLATION
  economic_dominance_complete_desc: "Výborně! Dokončili jste cíl Ekonomická nadvláda. Pokračujte ve hraní nebo vyzkoušejte jiný cíl." # todo: NEW TRANSLATION
  je_objective_expand_goods_production_invalid_tooltip: "[JournalEntry.GetTarget.GetBuilding.GetName] v [JournalEntry.GetTarget.GetBuilding.GetState.GetName] již nepatří [GetPlayer.GetName]" # todo: NEW TRANSLATION
  je_specialized_inputs: "Zlepšování výroby" # todo: NEW TRANSLATION
  je_specialized_inputs_reason: "S naším průmyslovým zbožím v plném proudu bychom měli tyto výrobky znovu investovat do našich ostatních továren. Uvolníme tak dělníky, aby mohli pracovat jinde.\n\nPOZNÁMKA: Dokončení tohoto zápisu do deníku zneplatní zápis Exportování našich zisků." # todo: NEW TRANSLATION
+ je_specialized_inputs_activation_tt: "#v $je_specialized_goods$#! [concept_journal_entry] byl dokončen" # todo: NEW TRANSLATION
  je_utilizing_our_strength: "Využití naší síly" # todo: NEW TRANSLATION
  je_utilizing_our_strength_reason: "Rozhodli jsme se používat naše průmyslové výrobky pro domácí potřebu. Bylo by nejlepší udržet jejich cenu co nejnižší, aby se nezvyšily náklady ostatních budov, které jsou na těchto výrobcích závislé." # todo: NEW TRANSLATION
+ je_utilizing_our_strength_activation_tt: "#v $je_specialized_inputs$#! [concept_journal_entry] byl splněn" # todo: NEW TRANSLATION
  je_exporting_profits: "Vývoz zisků" # todo: NEW TRANSLATION
  je_exporting_profits_reason: "Nyní, když máme velké zásoby zboží, můžeme začít tyto produkty vyvážet a zvýšit tak jejich ziskovost.\n\nPOZNÁMKA: Dokončení tohoto zápisu do deníku zneplatní zápis Zlepšování výroby." # todo: NEW TRANSLATION
+ je_exporting_profits_activation_tt: "#v $je_specialized_goods$#! [concept_journal_entry] byl dokončen" # todo: NEW TRANSLATION
  je_raise_exports_value: "Zvyšování hodnoty exportu" # todo: NEW TRANSLATION
  je_raise_exports_value_reason: "S naším zaměřením na export cenného zboží je nejlepším postupem zvýšit hodnotu těchto výrobků, aby se maximalizovaly zisky budov, které je vyrábějí." # todo: NEW TRANSLATION
+ je_raise_exports_value_activation_tt: "#v $je_exporting_profits$#! [concept_journal_entry] byl splněn" # todo: NEW TRANSLATION
  je_lower_production_costs: "Snižování cen spotřebních vstupů" # todo: NEW TRANSLATION
  je_lower_production_costs_reason: "S rostoucím průmyslem musíme zajistit stálý přísun vstupních surovin do továren a také dbát na to, aby tyto vstupní suroviny nebyly příliš drahé a neovlivňovaly negativně výrobu hodnotnějších produktů." # todo: NEW TRANSLATION
- tt_lower_production_costs_sub_obj: "Mějte [GetGoods('iron').GetCustom('GDS_A_TT')], [GetGoods('coal').GetCustom('GDS_A_TT')] a [GetGoods('steel').GetCustom('GDS_A_TT')] v [AccessPlayer.AccessFirstMarket.GetName] o 20 % levněji než jejich [Concept('concept_base_price','základní cena')]" # todo: NEW TRANSLATION # todo: NAME CASE
- tt_raise_exports_value_sub_obj: "Mějte [GetGoods('engines').GetCustom('GDS_A_TT')] v [AccessPlayer.AccessFirstMarket.GetName] o 50 % dražší než jejich [Concept('concept_base_price','základní cena')]" # todo: NEW TRANSLATION # todo: NAME CASE
- tt_utilizing_our_strength_sub_obj: "Mějte [GetGoods('engines').GetCustom('GDS_A_TT')] v [AccessPlayer.AccessFirstMarket.GetName] o 20 % levněji než jejich [Concept('concept_base_price','základní cena')]" # todo: NEW TRANSLATION # todo: NAME CASE
+ je_lower_production_costs_activation_tt: "#v $je_refining_goods$#! [concept_journal_entry] byl dokončen" # todo: NEW TRANSLATION
+ tt_lower_production_costs_sub_obj: "Mějte [GetGoods('iron').GetAltName('adj_A')], [GetGoods('coal').GetAltName('adj_A')] a [GetGoods('steel').GetAltName('adj_A')] v [AccessPlayer.AccessFirstMarket.GetName] o 20 % levněji než jejich [Concept('concept_base_price','základní cena')]" # todo: NEW TRANSLATION # todo: NAME CASE
+ tt_raise_exports_value_sub_obj: "Mějte [GetGoods('engines').GetAltName('adj_A')] v [AccessPlayer.AccessFirstMarket.GetName] o 50 % dražší než jejich [Concept('concept_base_price','základní cena')]" # todo: NEW TRANSLATION # todo: NAME CASE
+ tt_utilizing_our_strength_sub_obj: "Mějte [GetGoods('engines').GetAltName('adj_A')] v [AccessPlayer.AccessFirstMarket.GetName] o 20 % levněji než jejich [Concept('concept_base_price','základní cena')]" # todo: NEW TRANSLATION # todo: NAME CASE
  je_african_colonies_own_a_colony: "Je [Concept('concept_colony','kolonie')] na africkém kontinentu" # todo: NEW TRANSLATION
  je_african_colonies_own_whole_state_region: "Zahrnuje celou [Concept('concept_state_region','státní oblast')]" # todo: NEW TRANSLATION
  je_objective_encourage_liberal_ideas: "Podpořit liberální myšlení" # todo: NEW TRANSLATION
  je_objective_encourage_liberal_ideas_reason: "První kroky k vytvoření jakékoli podoby egalitární společnosti by měly být získání správných lidí do vlády. Když budou mít moc provádět změny, můžeme učinit první kroky k rovnější společnosti." # todo: NEW TRANSLATION
+ je_objective_encourage_liberal_ideas_activation_tt: "Cíl [AccessPlayer.GetObjective.GetObjectiveType.GetName] je aktivní" # todo: NEW TRANSLATION
  je_pass_laws: "Schválení zákonů" # todo: NEW TRANSLATION
  je_pass_laws_reason: "Nyní, když máme silnější liberální prvky ve vládě, měli bychom využít jejich vliv k prosazení více egalitárních zákonů.\n\nPOZNÁMKA: Pokud některý z těchto zákonů po dokončení tohoto zápisu zákonů zrušíte, tento zápis bude skryt, dokud nebude zákon znovu přijat." # todo: NEW TRANSLATION
+ je_pass_laws_activation_tt: "Buď #v $je_objective_encourage_liberal_ideas$#!, nebo #v $je_liberate_the_slaves$#! [concept_journal_entry] byl dokončen" # todo: NEW TRANSLATION
  je_public_services: "Veřejné služby" # todo: NEW TRANSLATION
- je_public_services_reason: "S přijatými zákony bychom měli rozšířit naše [Concept('concept_institution','$concept_institutions$')|l], aby se staly dostupnější a přístupnější obyvatelstvu.$egalitarian_objective_note_loc$" # todo: NEW TRANSLATION
+ je_public_services_reason: "S přijatými zákony bychom měli rozšířit naše [Concept('concept_institution','$concept_institutions|q$')|l], aby se staly dostupnější a přístupnější obyvatelstvu.$egalitarian_objective_note_loc$" # todo: CHANGED (predtym: S přijatými zákony bychom měli rozšířit naše [Concept('concept_institution','$concept_institutions$')|l], aby se staly d)
+ je_public_services_activation_tt: "#v $je_pass_laws$#! [concept_journal_entry] byl dokončen" # todo: NEW TRANSLATION
+ je_public_services_activation_2_tt: "[GetPlayer.GetName] přijal zákony [GetLawType('law_multicultural').GetName], [GetLawType('law_public_schools').GetName] a [GetLawType('law_protected_speech').GetName]" # todo: NEW TRANSLATION
+ je_public_services_activation_3_tt: "[GetPlayer.GetName] nemá státní náboženství" # todo: NEW TRANSLATION
  je_liberate_the_slaves: "Osvobodit otroky" # todo: NEW TRANSLATION
  je_liberate_the_slaves_reason: "Jak se můžeme nazývat egalitární společností, když stále aktivně využíváme otroctví v naší zemi? Je nezbytné, aby prvním krokem bylo zastavení této zastaralé a nemorální praxe." # todo: NEW TRANSLATION
+ je_liberate_the_slaves_activation_tt: "Cíl [AccessPlayer.GetObjective.GetObjectiveType.GetName] je aktivní" # todo: NEW TRANSLATION
  je_women_and_children: "Ženy a děti" # todo: NEW TRANSLATION
  je_women_and_children_reason: "Učinili jsme mnoho kroků k nastolení egalitární společnosti, ale musíme zajistit, aby tato práva byla dostupná všem. Měli bychom usilovat o ukončení nespravedlivých praktik vůči ženám a dětem.$egalitarian_objective_note_loc$" # todo: NEW TRANSLATION
+ je_women_and_children_activation_tt: "#v $je_public_services$#! [concept_journal_entry] byl dokončen" # todo: NEW TRANSLATION
+ je_women_and_children_activation_2_tt: "[GetPlayer.GetName] stále zachovává zákony [GetLawType('law_multicultural').GetName], [GetLawType('law_public_schools').GetName] a [GetLawType('law_protected_speech').GetName]" # todo: NEW TRANSLATION
+ je_women_and_children_activation_3_tt: "[GetPlayer.GetName] nemá státní náboženství" # todo: NEW TRANSLATION
  je_egalitarian_society: "Egalitární společnost" # todo: NEW TRANSLATION
  je_egalitarian_society_reason: "Nyní, když máme všechny zákony a instituce na místě, měli bychom zajistit, že máme rovnou společnost, která poskytuje stejné příležitosti všem našim občanům. Naše země by měla být jasným příkladem, který povede svět na cestu egalitarismu.$egalitarian_objective_note_loc$" # todo: NEW TRANSLATION
+ je_egalitarian_society_activation_tt: "#v $je_women_and_children$#! [concept_journal_entry] byl dokončen" # todo: NEW TRANSLATION
+ je_egalitarian_society_activation_2_tt: "#v $je_liberate_the_slaves$#! [concept_journal_entry] byl dokončen" # todo: NEW TRANSLATION
+ je_egalitarian_society_activation_3_tt: "[GetPlayer.GetName] stále zachovává zákony [GetLawType('law_multicultural').GetName], [GetLawType('law_public_schools').GetName] a [GetLawType('law_protected_speech').GetName]" # todo: NEW TRANSLATION
+ je_egalitarian_society_activation_4_tt: "[GetPlayer.GetName] přijal zákony [GetLawType('law_compulsory_primary_school').GetName] a [GetLawType('law_womens_suffrage').GetName]" # todo: NEW TRANSLATION
+ je_egalitarian_society_activation_5_tt: "[GetPlayer.GetName] nemá státní náboženství" # todo: NEW TRANSLATION
  liberalizing_the_government_complete: "Liberální myšlení" # todo: NEW TRANSLATION
  liberalizing_the_government_complete_desc: "Nyní, když jste dokončili svůj první zápis do deníku, jste na dobré cestě ke splnění zbývajících částí tohoto cíle a vytvoření vaší egalitární společnosti." # todo: NEW TRANSLATION
  egalitarian_society_welcome: "Egalitární společnost" # todo: NEW TRANSLATION
- egalitarian_society_welcome_desc: "Vítejte v cíli Hráče Egalitární společnost. V tomto cíli vám budou zadány série [Concept('concept_journal_entry', '$concept_journal_entries$')|l], které vás nasměrují k vytvoření egalitární společnosti." # todo: NEW TRANSLATION
+ egalitarian_society_welcome_desc: "Vítejte v cíli Hráče Egalitární společnost. V tomto cíli vám budou zadány série [Concept('concept_journal_entry', '$concept_journal_entries|q$')|l], které vás nasměrují k vytvoření egalitární společnosti." # todo: CHANGED (predtym: Vítejte v cíli Hráče Egalitární společnost. V tomto cíli vám budou zadány série [Concept('concept_journal_entry', '$conc)
  liberalizing_the_government_complete_1: "Liberální myšlení" # todo: NEW TRANSLATION
  liberalizing_the_government_complete_1_desc: "Výborně! Právě jste dokončili svůj první cíl a jste na dobré cestě k vytvoření egalitární společnosti." # todo: NEW TRANSLATION
  egalitarian_society_complete: "Egalitární společnost dokončena" # todo: NEW TRANSLATION
@@ -114,30 +140,50 @@
  egalitarian_objective_note_loc: "\n\nPOZNÁMKA: Pokud dojde k zrušení některého ze zákonů přijatých v předchozích zápisech do deníku, tento zápis bude skryt a nebudete moci dále postupovat v tomto cíli, dokud nebude zákon znovu přijat." # todo: NEW TRANSLATION
  je_colonization_laws: "Koloniální mocnost" # todo: NEW TRANSLATION
  je_colonization_laws_reason: "První kroky k ustavení naší hegemonie by měly směřovat k rozšíření hranic zámořím. Měli bychom upravit naše zákony tak, aby nám umožňovaly kolonizovat a podpořit naše cíle." # todo: NEW TRANSLATION
+ je_colonization_laws_activation_tt: "Cíl [AccessPlayer.GetObjective.GetObjectiveType.GetName] je aktivní" # todo: NEW TRANSLATION
  je_african_colonies: "Africké kolonie" # todo: NEW TRANSLATION
  je_african_colonies_reason: "Nyní, když naše zákony umožňují zakládat kolonie, měli bychom se jako první krok k rozšíření naší hegemonie zaměřit na získávání území na africkém kontinentě." # todo: NEW TRANSLATION
+ je_african_colonies_activation_tt: "#v $je_colonization_laws$#! [concept_journal_entry] byl dokončen" # todo: NEW TRANSLATION
  je_expand_navy_and_army: "Posílení ozbrojených sil" # todo: NEW TRANSLATION
  je_expand_navy_and_army_reason: "S našimi prvními koloniemi bychom se měli připravit na nejhorší. Naše armáda nemusí být nejsilnější na světě, ale měla by odradit ostatní od pokusu o [Concept('concept_diplomatic_play','diplomatickou hru')] proti nám." # todo: NEW TRANSLATION
+ je_expand_navy_and_army_activation_tt: "#v $je_african_colonies$#! [concept_journal_entry] byl dokončen" # todo: NEW TRANSLATION
  je_form_alliance: "Uzavírat aliance" # todo: NEW TRANSLATION
  je_form_alliance_reason: "Udržení silné armády je důležité, ale není to jediný způsob, jak zajistit naši bezpečnost. Měli bychom vytvořit aliance s dalšími mocnostmi po celém světě, které nám mohou pomoci, pokud se některý stát pokusí nás připravit o to, co je naše." # todo: NEW TRANSLATION
+ je_form_alliance_activation_tt: "#v $je_colonization_laws$#! [concept_journal_entry] byl dokončen" # todo: NEW TRANSLATION
  je_take_subject: "Udržet podřízené" # todo: NEW TRANSLATION
  je_take_subject_reason: "Když je naše moc upevněna, měli bychom rozšířit sféru vlivu nad jinými státy. Podrobení několika zemí významně zvýší náš vliv na mezinárodní scéně." # todo: NEW TRANSLATION
+ je_take_subject_activation_tt: "#v $je_colonization_laws$#! [concept_journal_entry] byl dokončen" # todo: NEW TRANSLATION
  je_increase_technology: "Upevnit naši technologickou převahu" # todo: NEW TRANSLATION
  je_increase_technology_reason: "Počty jsou důležité, ale neměli bychom spoléhat jen na obrovské množství vojáků, pokud to není nutné. Měli bychom našim vojákům zajistit správné nástroje pro jejich úkoly." # todo: NEW TRANSLATION
+ je_increase_technology_activation_tt: "#v $je_expand_navy_and_army$#! [concept_journal_entry] byl dokončen" # todo: NEW TRANSLATION
  je_greatest_power: "Největší mocnost" # todo: NEW TRANSLATION
  je_greatest_power_reason: "Můžeme být uznáni jako Velmoc, ale měli bychom světu ukázat, že jsme Největší mocnost, že žádný národ nás nemůže vyrovnat." # todo: NEW TRANSLATION
+ je_greatest_power_activation_tt: "#v $je_colonization_laws$#! [concept_journal_entry] byl dokončen" # todo: NEW TRANSLATION
+ je_greatest_power_activation_2_tt: "[GetPlayer.GetName] začal hru jako [Concept('concept_great_power','$concept_great_power|q$')]" # todo: NEW TRANSLATION
  je_greater_power: "Velmoc" # todo: NEW TRANSLATION
  je_greater_power_reason: "Byli jsme regionální mocností, ale nyní bychom měli upevnit naše postavení ve světě a připojit se k ostatním velmocím jako ukázku naší síly." # todo: NEW TRANSLATION
+ je_greater_power_activation_tt: "#v $je_colonization_laws$#! [concept_journal_entry] byl dokončen" # todo: NEW TRANSLATION
+ je_greater_power_activation_2_tt: "[GetPlayer.GetName] začal hru jako [Concept('concept_major_power','$concept_major_power|q$')]" # todo: NEW TRANSLATION
  je_great_power: "Hlavní mocnost" # todo: NEW TRANSLATION
  je_great_power_reason: "Nikdy jsme nebyli nejsilnější, ale to se teď změní! Ukážeme světu, že nejsme pouhým malým výběžkem s bezvýznamným hlasem." # todo: NEW TRANSLATION
+ je_great_power_activation_tt: "#v $je_colonization_laws$#! [concept_journal_entry] byl dokončen" # todo: NEW TRANSLATION
+ je_great_power_activation_2_tt: "[GetPlayer.GetName] začal hru jako [Concept('concept_minor_power','$concept_minor_power|q$')] nebo nižší mocnost" # todo: NEW TRANSLATION
  je_unrecognized_power: "Uznaná mocnost" # todo: NEW TRANSLATION
- je_unrecognized_power_reason: "Odsuzováni takzvanými "civilizovanými" mocnostmi, skrze práci a boj jim prokážeme svou hodnotu a zajistíme si respektované místo mezi společenstvím národů. " # todo: NEW TRANSLATION
+ je_unrecognized_power_reason: "Odsuzováni takzvanými „civilizovanými“ mocnostmi, skrze práci a boj jim prokážeme svou hodnotu a zajistíme si respektované místo mezi společenstvím národů. " # todo: NEW TRANSLATION
+ je_unrecognized_power_activation_tt: "#v $je_colonization_laws$#! [concept_journal_entry] byl dokončen" # todo: NEW TRANSLATION
+ je_unrecognized_power_activation_2_tt: "[GetPlayer.GetName] začal hru jako [Concept('concept_unrecognized_power','$concept_unrecognized_major_power|q$')]" # todo: NEW TRANSLATION
  je_the_hegemon: "Hegemon" # todo: NEW TRANSLATION
  je_the_hegemon_reason: "Ukázali jsme světu, čeho jsme schopni. Dosáhli jsme velkých pokroků. Nyní bychom však měli zajistit, že máme i dostatečnou populaci, která podpoří naše globální postavení." # todo: NEW TRANSLATION
+ je_the_hegemon_activation_tt: "[GetPlayer.GetCustom('hegemon_rank_objective_je')] byl dokončen" # todo: NEW TRANSLATION
+ hegemon_rank_objective_je_greatest: "#v $je_greatest_power$#! [concept_journal_entry]" # todo: NEW TRANSLATION
+ hegemon_rank_objective_je_greater: "#v $je_greater_power$#! [concept_journal_entry]" # todo: NEW TRANSLATION
+ hegemon_rank_objective_je_great: "#v $je_great_power$#! [concept_journal_entry]" # todo: NEW TRANSLATION
+ hegemon_rank_objective_je_unrecognized: "#v $je_unrecognized_power$#! [concept_journal_entry]" # todo: NEW TRANSLATION
+ hegemon_rank_objective_je_fallback: "Cíl postupu v žebříčku" # todo: NEW TRANSLATION
  colonization_law_passed_complete_1: "Koloniální mocnost" # todo: NEW TRANSLATION
  colonization_law_passed_complete_1_desc: "Výborně! Právě jste dokončili svůj první cíl a jste na dobré cestě k vybudování vlastní hegemonie." # todo: NEW TRANSLATION
  hegemon_welcome: "Hegemonie" # todo: NEW TRANSLATION
- hegemon_welcome_desc: "Vítejte v cíli Hráče Hegemonie. V tomto cíli vám budou zadány série [Concept('concept_journal_entry', '$concept_journal_entries$')|l], které vás povedou k vytvoření vlastní hegemonie." # todo: NEW TRANSLATION
+ hegemon_welcome_desc: "Vítejte v cíli Hráče Hegemonie. V tomto cíli vám budou zadány série [Concept('concept_journal_entry', '$concept_journal_entries|q$')|l], které vás povedou k vytvoření vlastní hegemonie." # todo: CHANGED (predtym: Vítejte v cíli Hráče Hegemonie. V tomto cíli vám budou zadány série [Concept('concept_journal_entry', '$concept_journal_)
  hegemon_complete: "Hegemonie dokončena" # todo: NEW TRANSLATION
  hegemon_complete_desc: "Výborně! Dokončili jste cíl Hegemonie. Pokračujte ve hraní nebo vyzkoušejte jiný cíl." # todo: NEW TRANSLATION
  modifier_industrial_barriers_nat_supremacy: "Rasistické reakce" # todo: NEW TRANSLATION

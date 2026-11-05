@@ -10,6 +10,18 @@
 #   [CZPartyNF(XPARTY,'G')]  = [P.GetCustom('PARTY_G')]     (plain text)
 #
 # Same for CZGoods (GDS_*), CZIG (IG_*) and CZMarket (MARKET_*).
+#
+# Since 1.15 goods and cultures decline without customizable localization:
+# [X.GetAltNameNoFormatting('adj_G')] reads the key <object>_adj_G
+# (localization/cz_goods_l_polish.yml, cz_cultures_l_polish.yml; the culture
+# case 'ou' is 'adj_ou_cz'). GetAltName adds the icon and tooltip like GetName
+# (tested in game, event cz_altname_debug.1), so goods need no *_TT wrapper:
+# CZGoods = GetAltName, CZGoodsNF = GetAltNameNoFormatting. A missing key
+# falls back to the plain name.
+# Interest groups likewise: [IG.GetAltName('G')] reads <current IG name key>_G
+# (country variants too, cz_interest_groups_l_polish.yml; tested in game, event
+# cz_altname_debug.3): CZIG = GetAltName, CZIGNF = GetAltNameNoFormatting.
+# Only parties and markets still use the *_TT wrappers of 99_pl_tooltips.txt.
 ##################################################
 
 macro = {
@@ -27,25 +39,25 @@ macro = {
 macro = {
 	description = "Declined goods name with tooltip, cases N G D A L I"
 	definition = "CZGoods(XGOODS,XCASE)"
-	replace_with = "XGOODS.GetCustom(Concatenate('GDS_',Concatenate(XCASE,'_TT')))"
+	replace_with = "XGOODS.GetAltName(Concatenate('adj_',XCASE))"
 }
 
 macro = {
-	description = "Declined goods name without formatting, cases N G D A L I"
+	description = "Declined goods name without formatting, cases N G D A L I (key <goods>_adj_<case>)"
 	definition = "CZGoodsNF(XGOODS,XCASE)"
-	replace_with = "XGOODS.GetCustom(Concatenate('GDS_',XCASE))"
+	replace_with = "XGOODS.GetAltNameNoFormatting(Concatenate('adj_',XCASE))"
 }
 
 macro = {
 	description = "Declined interest group name with tooltip, cases G D A L I (nominative is GetName)"
 	definition = "CZIG(XIG,XCASE)"
-	replace_with = "XIG.GetCustom(Concatenate('IG_',Concatenate(XCASE,'_TT')))"
+	replace_with = "XIG.GetAltName(XCASE)"
 }
 
 macro = {
-	description = "Declined interest group name without formatting, cases G D A L I (nominative is GetName)"
+	description = "Declined interest group name without formatting, cases G D A L I (key <current IG name>_<case>)"
 	definition = "CZIGNF(XIG,XCASE)"
-	replace_with = "XIG.GetCustom(Concatenate('IG_',XCASE))"
+	replace_with = "XIG.GetAltNameNoFormatting(XCASE)"
 }
 
 macro = {

@@ -3,20 +3,22 @@
  TRIGGER_ANY_STATE_IN_GEOGRAPHIC_REGION_NOT: "Žádný [Concept('concept_state','stát')|l] v [GeographicRegion.GetName]:"
  TRIGGER_ANY_STATE_IN_GEOGRAPHIC_REGION_ALL: "Všechny [Concept('concept_state','státy')|l] v [GeographicRegion.GetName]:"
  TRIGGER_ANY_STATE_IN_GEOGRAPHIC_REGION_ALL_NOT: "Žádné [Concept('concept_state','státy')|l] v [GeographicRegion.GetName]:"
- TRIGGER_ANY_STATE_IN_GEOGRAPHIC_REGION_COUNT: "$PARAMETERS$ $FILTER$[Concept('concept_state', '$concept_states$')|l] v [GeographicRegion.GetName]:"
- TRIGGER_ANY_STATE_IN_GEOGRAPHIC_REGION_PERCENT: "$PARAMETERS$ z $FILTER$[Concept('concept_state', '$concept_states$')|l] v [GeographicRegion.GetName]:"
+ TRIGGER_ANY_STATE_IN_GEOGRAPHIC_REGION_COUNT: "$PARAMETERS$ $FILTER$[Concept('concept_state', '$concept_states|q$')|l] v [GeographicRegion.GetName]:" # todo: CHANGED (predtym: $PARAMETERS$ $FILTER$[Concept('concept_state', '$concept_states$')|l] v [GeographicRegion.GetName]:)
+ TRIGGER_ANY_STATE_IN_GEOGRAPHIC_REGION_COUNT_FIRST: "$PARAMETERS$ $FILTER$[Concept('concept_state', '$concept_states|q$')] v [GeographicRegion.GetName]:" # todo: NEW TRANSLATION
+ TRIGGER_ANY_STATE_IN_GEOGRAPHIC_REGION_COUNT_THIRD: "$PARAMETERS$ $FILTER$[Concept('concept_state', '$concept_states|q$')] v [GeographicRegion.GetName]:" # todo: NEW TRANSLATION
+ TRIGGER_ANY_STATE_IN_GEOGRAPHIC_REGION_PERCENT: "$PARAMETERS$ z $FILTER$[Concept('concept_state', '$concept_states|q$')|l] v [GeographicRegion.GetName]:" # todo: CHANGED (predtym: $PARAMETERS$ z $FILTER$[Concept('concept_state', '$concept_states|q$')] v [GeographicRegion.GetName]:)
  TRIGGER_ANY_STATE_REGION_IN_GEOGRAPHIC_REGION: "Libovolný [Concept('concept_state_region','státní oblast')|l] v [GeographicRegion.GetName]:"
  TRIGGER_ANY_STATE_REGION_IN_GEOGRAPHIC_REGION_NOT: "Žádný [Concept('concept_state_region','státní oblast')|l] v [GeographicRegion.GetName]:"
  TRIGGER_ANY_STATE_REGION_IN_GEOGRAPHIC_REGION_ALL: "Všechny [Concept('concept_state_region','státní oblasti')|l] v [GeographicRegion.GetName]:"
  TRIGGER_ANY_STATE_REGION_IN_GEOGRAPHIC_REGION_ALL_NOT: "Žádné [Concept('concept_state_region','státní oblasti')|l] v [GeographicRegion.GetName]:"
- TRIGGER_ANY_STATE_REGION_IN_GEOGRAPHIC_REGION_COUNT: "$PARAMETERS$ $FILTER$[Concept('concept_state_region', '$concept_state_regions$')|l] v [GeographicRegion.GetName]:"
+ TRIGGER_ANY_STATE_REGION_IN_GEOGRAPHIC_REGION_COUNT: "$PARAMETERS$ $FILTER$[Concept('concept_state_region', '$concept_state_regions|q$')|l] v [GeographicRegion.GetName]:" # todo: CHANGED (predtym: $PARAMETERS$ $FILTER$[Concept('concept_state_region', '$concept_state_regions$')|l] v [GeographicRegion.GetName]:)
  TRIGGER_ANY_STATE_REGION_IN_GEOGRAPHIC_REGION_PERCENT: "$PARAMETERS$ z $FILTER$[Concept('concept_state_region','státní oblasti')|l] v [GeographicRegion.GetName]:"
  TRIGGER_ANY_STRATEGIC_REGION_IN_GEOGRAPHIC_REGION: "Libovolný [Concept('concept_strategic_region','strategický region')|l] v [GeographicRegion.GetName]:"
  TRIGGER_ANY_STRATEGIC_REGION_IN_GEOGRAPHIC_REGION_NOT: "Žádný [Concept('concept_strategic_region','strategický region')|l] v [GeographicRegion.GetName]:"
  TRIGGER_ANY_STRATEGIC_REGION_IN_GEOGRAPHIC_REGION_ALL: "Všechny [Concept('concept_strategic_region','strategické regiony')|l] v [GeographicRegion.GetName]:"
  TRIGGER_ANY_STRATEGIC_REGION_IN_GEOGRAPHIC_REGION_ALL_NOT: "Žádné [Concept('concept_strategic_region','strategické regiony')|l] v [GeographicRegion.GetName]:"
- TRIGGER_ANY_STRATEGIC_REGION_IN_GEOGRAPHIC_REGION_COUNT: "$PARAMETERS$ $FILTER$[Concept('concept_strategic_region', '$concept_strategic_regions$')|l] v [GeographicRegion.GetName]:"
- TRIGGER_ANY_STRATEGIC_REGION_IN_GEOGRAPHIC_REGION_PERCENT: "$PARAMETERS$ z $FILTER$[Concept('concept_strategic_region', '$concept_strategic_regions$')|l] v [GeographicRegion.GetName]:"
+ TRIGGER_ANY_STRATEGIC_REGION_IN_GEOGRAPHIC_REGION_COUNT: "$PARAMETERS$ $FILTER$[Concept('concept_strategic_region', '$concept_strategic_regions|q$')|l] v [GeographicRegion.GetName]:" # todo: CHANGED (predtym: $PARAMETERS$ $FILTER$[Concept('concept_strategic_region', '$concept_strategic_regions$')|l] v [GeographicRegion.GetName])
+ TRIGGER_ANY_STRATEGIC_REGION_IN_GEOGRAPHIC_REGION_PERCENT: "$PARAMETERS$ z $FILTER$[Concept('concept_strategic_region', '$concept_strategic_regions|q$')|l] v [GeographicRegion.GetName]:" # todo: CHANGED (predtym: $PARAMETERS$ z $FILTER$[Concept('concept_strategic_region', '$concept_strategic_regions$')|l] v [GeographicRegion.GetNam)
  TRIGGER_ANY_PROVINCE_IN_GEOGRAPHIC_REGION: "Libovolný [Concept('concept_province','provincie')|l] v [GeographicRegion.GetName]:"
  TRIGGER_ANY_PROVINCE_IN_GEOGRAPHIC_REGION_NOT: "Žádný [Concept('concept_province','provincie')|l] v [GeographicRegion.GetName]:"
  TRIGGER_ANY_PROVINCE_IN_GEOGRAPHIC_REGION_ALL: "Všechny [Concept('concept_province','provincie')|l] v [GeographicRegion.GetName]:"
@@ -28,7 +30,11 @@
  TRIGGER_ANY_COUNTRY_IN_GEOGRAPHIC_REGION_ALL: "Všechny [Concept('concept_country','země')|l] v [GeographicRegion.GetName]:"
  TRIGGER_ANY_COUNTRY_IN_GEOGRAPHIC_REGION_ALL_NOT: "Žádné [Concept('concept_country','země')|l] v [GeographicRegion.GetName]:"
  TRIGGER_ANY_COUNTRY_IN_GEOGRAPHIC_REGION_COUNT: "$PARAMETERS$ $FILTER$[Concept('concept_country','Země')|l] v [GeographicRegion.GetName]:"
- TRIGGER_ANY_COUNTRY_IN_GEOGRAPHIC_REGION_PERCENT: "$PARAMETERS$ z $FILTER$[Concept('concept_country', '$concept_countries$')|l] v [GeographicRegion.GetName]:"
+ TRIGGER_ANY_COUNTRY_IN_GEOGRAPHIC_REGION_COUNT_FIRST: "$PARAMETERS$ $FILTER$[Concept('concept_country', '$concept_countries|q$')] v [GeographicRegion.GetName]:" # todo: NEW TRANSLATION
+ TRIGGER_ANY_COUNTRY_IN_GEOGRAPHIC_REGION_COUNT_THIRD: "$PARAMETERS$ $FILTER$[Concept('concept_country', '$concept_countries|q$')] v [GeographicRegion.GetName]:" # todo: NEW TRANSLATION
+ TRIGGER_ANY_COUNTRY_IN_GEOGRAPHIC_REGION_PERCENT: "$PARAMETERS$ z $FILTER$[Concept('concept_country', '$concept_countries|q$')|l] v [GeographicRegion.GetName]:" # todo: CHANGED (predtym: $PARAMETERS$ z $FILTER$[Concept('concept_country', '$concept_countries$')|l] v [GeographicRegion.GetName]:)
+ TRIGGER_ANY_COUNTRY_IN_GEOGRAPHIC_REGION_PERCENT_FIRST: "$PARAMETERS$ z $FILTER$[Concept('concept_country', '$concept_countries|q$')] v [GeographicRegion.GetName]:" # todo: NEW TRANSLATION
+ TRIGGER_ANY_COUNTRY_IN_GEOGRAPHIC_REGION_PERCENT_THIRD: "$PARAMETERS$ z $FILTER$[Concept('concept_country', '$concept_countries|q$')] v [GeographicRegion.GetName]:" # todo: NEW TRANSLATION
  SCOPE_DEBUG_GEOGRAPHIC_REGION: "Geografický region ($KEY$)"
  TRIGGER_COUNTRY_IS_ON_SAME_CONTINENT: "[COUNTRY.GetNameNoFlag] je na stejném kontinentu jako [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
  TRIGGER_COUNTRY_IS_ON_SAME_CONTINENT_NOT: "[COUNTRY.GetNameNoFlag] #bold není#! na stejném kontinentu jako [TARGET_COUNTRY.GetName]" # todo: NEW TRANSLATION
@@ -85,6 +91,7 @@
  geographic_region_latin_america: "Latinská Amerika" # todo: NEW TRANSLATION
  geographic_region_north_andes: "Severní Andy" # todo: NEW TRANSLATION
  geographic_region_greater_canada: "Velká Kanada" # todo: NEW TRANSLATION
+ geographic_region_canadian_confederation: "Kanadská konfederace" # todo: NEW TRANSLATION
  geographic_region_southern_cone: "Jižní kužel" # todo: NEW TRANSLATION
  geographic_region_colonial_new_spain: "Koloniální Nové Španělsko"
  geographic_region_colonial_new_grenada: "Koloniální Nová Grenada"
@@ -121,6 +128,7 @@
  geographic_region_allahabad_bombay_line: "Allahábád-Bombaj linie" # todo: NEW TRANSLATION
  geographic_region_bombay_madras_line: "Bombaj-Madras linie" # todo: NEW TRANSLATION
  geographic_region_gujarat_bombay_line: "Gujarat-Bombaj linie" # todo: NEW TRANSLATION
+ geographic_region_qing_empire: "Říše Čching" # todo: NEW TRANSLATION
  geographic_region_ring_of_fire: "Ohňový prstenec"
  geographic_region_ring_of_fire_desc: "Řetězec seizmicky aktivních míst a sopek podél okraje Tichého oceánu."
  geographic_region_alpide_belt: "Alpidský pás"
@@ -135,6 +143,28 @@
  geographic_region_new_world: "Nový svět" # todo: NEW TRANSLATION
  geographic_region_old_world: "Starý svět" # todo: NEW TRANSLATION
  geographic_region_krakatoa_tsunami_zone: "Zóna tsunami Krakatoa" # todo: NEW TRANSLATION
+ geographic_region_east_slavic_states: "Východoslovanské domoviny" # todo: NEW TRANSLATION
+ geographic_region_diocese_of_kamchatka: "Kamčatská diecéze" # todo: NEW TRANSLATION
+ geographic_region_baltic_governorates: "Baltské gubernie" # todo: NEW TRANSLATION
+ geographic_region_congress_poland: "Kongresové Polsko" # todo: NEW TRANSLATION
+ geographic_region_trans_siberian_line: "Transsibiřská magistrála" # todo: NEW TRANSLATION
+ geographic_region_french_revolution_zone: "Oblast Francouzské revoluce" # todo: NEW TRANSLATION
+ geographic_region_russia_western_borderlands: "Oblast západního pohraničí" # todo: NEW TRANSLATION
+ geographic_region_rcw_north: "Severní Rusko" # todo: NEW TRANSLATION
+ geographic_region_rcw_petrograd: "Petrohrad" # todo: NEW TRANSLATION
+ geographic_region_rcw_central: "Střední Rusko" # todo: NEW TRANSLATION
+ geographic_region_rcw_volga: "Povolží" # todo: NEW TRANSLATION
+ geographic_region_rcw_urals: "Ural" # todo: NEW TRANSLATION
+ geographic_region_rcw_south: "Jižní Rusko" # todo: NEW TRANSLATION
+ geographic_region_rcw_ukraine: "Ukrajina" # todo: NEW TRANSLATION
+ geographic_region_rcw_west: "Západní pohraničí" # todo: NEW TRANSLATION
+ geographic_region_rcw_baltic: "Pobaltí" # todo: NEW TRANSLATION
+ geographic_region_rcw_west_siberia: "Západní Sibiř" # todo: NEW TRANSLATION
+ geographic_region_rcw_east_siberia: "Východní Sibiř" # todo: NEW TRANSLATION
+ geographic_region_rcw_far_east: "Dálný východ" # todo: NEW TRANSLATION
+ geographic_region_rcw_steppe: "Kazašská step" # todo: NEW TRANSLATION
+ geographic_region_rcw_turkestan: "Turkestán" # todo: NEW TRANSLATION
+ geographic_region_rcw_transcaucasia: "Zakavkazsko" # todo: NEW TRANSLATION
  geographic_region_northern_europe: "$region_northern_europe$" # todo: NEW TRANSLATION
  geographic_region_western_europe: "$region_western_europe$" # todo: NEW TRANSLATION
  geographic_region_southern_europe: "$region_southern_europe$" # todo: NEW TRANSLATION
@@ -166,6 +196,14 @@
  geographic_region_pacific_coast: "$region_pacific_coast$" # todo: NEW TRANSLATION
  geographic_region_southern_africa: "$region_southern_africa$" # todo: NEW TRANSLATION
  geographic_region_arabia: "$region_arabia$" # todo: NEW TRANSLATION
+ geographic_region_northwestern_russia: "Severozápadní Rusko" # todo: NEW TRANSLATION
+ geographic_region_central_russia: "Střední Rusko" # todo: NEW TRANSLATION
+ geographic_region_southern_russia: "Jižní Rusko" # todo: NEW TRANSLATION
+ geographic_region_russian_siberia: "Sibiř" # todo: NEW TRANSLATION
+ geographic_region_priamurye: "Přiamurje" # todo: NEW TRANSLATION
+ geographic_region_transcaucasia: "Zakavkazsko" # todo: NEW TRANSLATION
+ geographic_region_russian_eurasia: "Ruská Eurasie" # todo: NEW TRANSLATION
+ geographic_region_austria: "Rakousko" # todo: NEW TRANSLATION
  geographic_region_england_old: "$region_england$" # todo: NEW TRANSLATION
  geographic_region_north_sea_coast_old: "$region_north_sea_coast$" # todo: NEW TRANSLATION
  geographic_region_occitania_old: "$region_occitania$" # todo: NEW TRANSLATION

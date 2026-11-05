@@ -3,6 +3,10 @@
  journal_entry_goal_progress_money: "@money![JournalEntry.GetGoalProgressValue|D] / @money![JournalEntry.GetGoalAddValue|D]"
  JOURNAL_ENTRY_NAME_CONTEXTLESS: "$NAME$"
  JOURNAL_ENTRY_NAME_COUNTRY_CONTEXT: "$NAME$"
+ JOURNAL_ENTRY_DEFAULT_ADVANCE_HEADER: "Postup:" # todo: NEW TRANSLATION
+ JOURNAL_ENTRY_DEFAULT_DEPLETION_HEADER: "Ústup:" # todo: NEW TRANSLATION
+ PROGRESS_CONDITIONS_HEADER: "Podmínky postupu" # todo: NEW TRANSLATION
+ PROGRESS_BAR_CONDITIONS_BAR_HEADER: "#title $NAME$#!" # todo: NEW TRANSLATION
  INVOLVED_COUNTRIES: "Zapojené $concept_countries$"
  INACTIVE_JOURNAL_ENTRY_INVOLVED_COUNTRIES_DESC: "Předpokládané $INVOLVED_COUNTRIES$:\n$LIST$"
  ACTIVE_JOURNAL_ENTRY_INVOLVED_COUNTRIES_DESC: "$INVOLVED_COUNTRIES$:\n$LIST$"
@@ -10,6 +14,43 @@
  INACTIVE_JOURNAL_ENTRY_INVOLVED_COUNTRY_EFFECT_DESC: "$ACTIVE_JOURNAL_ENTRY_INVOLVED_COUNTRY_EFFECT_DESC$"
  ACTIVE_JOURNAL_ENTRY_INVOLVED_COUNTRY_LIST: "#header $INVOLVED_COUNTRIES$#!\n$AMOUNT|v$ v $NAME|v$\n$TOOLTIP_DELIMITER$\n$LIST$"
  ACTIVE_JOURNAL_ENTRY_INVOLVED_COUNTRY_EFFECT_DESC: "Všechny #tooltippable;tooltip:$BREAKDOWN_TAG$ $INVOLVED_COUNTRIES$#!:\n$DETAILS$"
+ JOURNAL_FILTER_DESC_ALL: "Vše" # todo: NEW TRANSLATION
+ JOURNAL_FILTER_DESC_ACTIVE_POTENTIAL: "$ACTIVE$ & $POTENTIAL$" # todo: NEW TRANSLATION
+ JOURNAL_FILTER_DESC_ACTIVE_CONCLUDED: "$ACTIVE$ & $CONCLUDED$" # todo: NEW TRANSLATION
+ JOURNAL_FILTER_DESC_POTENTIAL_CONCLUDED: "$POTENTIAL$ & $CONCLUDED$" # todo: NEW TRANSLATION
+ JOURNAL_ENTRY_ACTIVATION_DESC_HEADER: "#title Aktivuje se, pokud:#!" # todo: NEW TRANSLATION
+ JOURNAL_ENTRY_ACTIVATION_HEADER: "#title Aktivuje se pokud:\n#!" # todo: MOVED KEY
+ JOURNAL_ENTRY_INVALIDATION_HEADER: "#title Stane se neplatným, pokud:\n#!" # todo: MOVED KEY
+ JOURNAL_ENTRY_TIMEOUT: "#title Vyprší za #v $TIMELEFT_STRING$#!#!" # todo: MOVED KEY
+ JOURNAL_ENTRY_WILL_BE_ACTIVATED: "Jsou splněny všechny podmínky pro aktivaci této $concept_journal_entry$, brzy se aktivuje" # todo: NEW TRANSLATION
+ JOURNAL_ENTRY_WITH_GROUP: "[JournalEntry.GetType.GetGroup.GetName]\n[Concept('concept_journal_entry','Záznam v deníku')]" # todo: MOVED KEY
+ JOURNAL_ENTRY_TYPE_WITH_GROUP: "[JournalEntryType.GetGroup.GetName]\n[concept_journal_entry]" # todo: NEW TRANSLATION
+ CONCLUDED_JOURNAL_ENTRY_WITH_GROUP: "[ConcludedJournalEntry.GetType.GetGroup.GetName]\n[concept_journal_entry]" # todo: NEW TRANSLATION
+ JOURNAL_ENTRY_CONCLUDED_LABEL: "Ukončeno [ConcludedJournalEntry.GetConclusionDateDesc|v]" # todo: NEW TRANSLATION
+ JOURNAL_ENTRY_OUTCOME_HISTORICAL_TOOLTIP: "Tento výsledek odpovídá historické skutečnosti" # todo: NEW TRANSLATION
+ JOURNAL_ENTRY_OUTCOME_HISTORICAL_OPEN_URL_TOOLTIP: "$JOURNAL_ENTRY_OUTCOME_HISTORICAL_TOOLTIP$\n\nVe vašem webovém prohlížeči se otevře následující odkaz\n\n[JournalEntryOutcome.GetHistoricalUrl|v]" # todo: NEW TRANSLATION
+ JOURNAL_ENTRY_CONCLUDED_HISTORICAL_OPEN_URL_TOOLTIP: "$JOURNAL_ENTRY_OUTCOME_HISTORICAL_TOOLTIP$\n\nVe vašem webovém prohlížeči se otevře následující odkaz\n\n[ConcludedJournalEntry.GetHistoricalUrl|v]" # todo: NEW TRANSLATION
+ JOURNAL_WINDOW_HEADER: "Žurnál" # todo: MOVED KEY
+ JOURNAL_ENTRY_HEADING: "[Concept('concept_journal_entry','Záznam v deníku')]: [JournalEntry.GetType.GetGroup.GetName] " # todo: MOVED KEY
+ JOURNAL_ENTRY_TYPE_HEADING: "[JournalEntryType.GetGroup.GetName] [concept_journal_entry]" # todo: NEW TRANSLATION
+ JOURNAL_ENTRY_ON_ACTIVATION: "#title Pokud bude aktivován:#!\n$EFFECT$" # todo: MOVED KEY
+ JOURNAL_ENTRY_ON_INVALIDATION: "#title Pokud bude zneplatněno:#!\n$EFFECT$" # todo: MOVED KEY
+ JOURNAL_ENTRY_ON_TIMEOUT: "#title Pokud čas vyprší:#!\n$EFFECT$" # todo: MOVED KEY
+ JOURNAL_ENTRY_TIMEOUT_CONCLUSION_DESC: "$concept_journal_entry$ vypršela" # todo: NEW TRANSLATION
+ JOURNAL_ENTRY_EVENT_OUTCOMES: "#tooltippable #tooltip:$BREAKDOWN_TAG$ Možné efekty události#!#!" # todo: MOVED KEY
+ JOURNAL_ENTRY_EVENT_OUTCOMES_TOOLTIP: "#header $JOURNAL_ENTRY_NAME$ – možné efekty události#!\n$TOOLTIP_DELIMITER$\n$DETAILS$" # todo: MOVED KEY
+ JOURNAL_ENTRY_ON_TIMEOUT_LONG: "[JournalEntry.GetOnTimeoutTooltip]\n\nVyprší za #v [LabelingHelper.GetMultiTypeGameTimeDifferenceFromDays( JournalEntry.GetTimeoutDaysLeft, '(int32)5', '' )]#!" # todo: MOVED KEY
+ JOURNAL_ENTRY_MODIFIERS_HEADER: "#title Během aktivity platí následující účinky:#!" # todo: NEW TRANSLATION
+ HAS_ON_PULSE: "#debug Debug: Tento záznam v deníku má nějaký druh OnPulse#!" # todo: MOVED KEY
+ DEBUG_NO_CHARACTER_IN_GBR_IS_VICTORIA: "#debug Debug: V GBR žádná postava není Victoria#!" # todo: MOVED KEY
+ SCALING_MODIFIER_ENTRY: "$DESC$#indent_newline:3 \n $MULT_ICON$#variable $SCALE|^$#! aktuální měřítko#!" # todo: NEW TRANSLATION
+ DEBUG_JOURNAL_ENTRY_ID: "#debug Ladění: ID záznamu deníku je [JournalEntry.GetType.GetKey]#!" # todo: NEW TRANSLATION # todo: MOVED KEY
+ je_standard_completion_header: "#title Bude dokončeno, pokud:\n#!" # todo: NEW TRANSLATION
+ je_standard_failure_header: "#title Selže, pokud:\n#!" # todo: NEW TRANSLATION
+ je_standard_on_completion_header: "#title Po dokončení:#!\n$EFFECT$" # todo: NEW TRANSLATION
+ je_standard_on_failure_header: "#title Při neúspěchu:#!\n$EFFECT$" # todo: NEW TRANSLATION
+ je_standard_completion_conclusion_desc: "$concept_journal_entry$ bylo úspěšně dokončeno" # todo: NEW TRANSLATION
+ je_standard_failure_conclusion_desc: "$concept_journal_entry$ skončilo neúspěchem" # todo: NEW TRANSLATION
  je_group_global_test: "Příliš mnoho Lippe"
  je_global_test: "Lippská krize"
  je_global_test_reason: "Přítomnost četných zdivočelých Lippe znervózňuje investory. Musíme zajistit, aby bylo o všechny Lippe náležitě postaráno, jinak se světová ekonomika zhroutí."
@@ -25,17 +66,13 @@
  je_secret_police_research_identification_reason: "Tajná policie chce, aby byly vyzkoumány $identification_documents$."
  notification_je_secret_police_research_identification_complete_name: "$identification_documents$ pro tajnou policii"
  notification_je_secret_police_research_identification_complete_desc: "Úspěšně jste vyzkoumali $identification_documents$ pro tajnou policii."
- notification_je_secret_police_research_identification_complete_tooltip: "Úspěšně jste vyzkoumali $identification_documents$ pro tajnou policii, čímž jste získali modifikátor $modifier_secret_police_supported$."
  notification_je_secret_police_research_identification_fail_desc: "Nepodařilo se vám vyzkoumat $identification_documents$."
- notification_je_secret_police_research_identification_fail_tooltip: "Nepodařilo se vám vyzkoumat $identification_documents$ pro tajnou policii."
  je_make_schools_secular: "Změnit školský zákon na sekulární"
  je_make_schools_secular_reason: "$intelligentsia$ chtějí, aby vzdělávání bylo sekulární."
  notification_je_make_schools_secular_complete_name: "Sekulární vzdělávání"
  notification_je_make_schools_secular_complete_desc: "Úspěšně jste změnili svůj školský zákon na sekulární."
- notification_je_make_schools_secular_complete_tooltip: "Úspěšně jste změnili svůj školský zákon na sekulární, čímž jste získali modifikátory $modifier_religious_schools_abolished_intelligentsia$ a $modifier_religious_schools_abolished_devout$."
  notification_je_make_schools_secular_fail_name: "Nepodařilo se získat sekulární vzdělávání"
  notification_je_make_schools_secular_fail_desc: "Nepodařilo se vám přejít na sekulární školský zákon."
- notification_je_make_schools_secular_fail_tooltip: "Nepodařilo se vám přejít na sekulární školský zákon."
  je_group_iberia: "Pyrenejské sjednocení"
  je_group_historical_content: "Národní agenda"
  je_group_crises: "Krizové situace"
@@ -59,4 +96,7 @@
  je_group_russia_expansion: "Vládce východu"
  je_group_france_divided_monarchists: "Rozdělení monarchisté"
  je_group_france_expansion: "Přirozené hranice Francie"
+ je_group_tsarpoints: "Císař a samovládce" # todo: NEW TRANSLATION
+ je_group_great_game: "Velká hra" # todo: NEW TRANSLATION
+ je_group_socialism: "Socialistické hnutí" # todo: NEW TRANSLATION
  je_group_global_international_situations: "Mezinárodní situace"

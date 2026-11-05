@@ -1,5 +1,5 @@
 ﻿l_polish:
- CHARACTERS_HEADER: "[Concept('concept_character', '$NATIONAL_CAST$')]"
+ CHARACTERS_HEADER: "[Concept('concept_character', '$NATIONAL_CAST|q$')]" # todo: CHANGED (predtym: [Concept('concept_character', '$NATIONAL_CAST$')])
  ALL_CHARACTERS: "Všechny postavy"
  NATIONAL_CAST: "Národní obsazení"
  CHARACTERS_FILTER_COUNT: "[CharacterFilter.GetNumFilteredCharacters|0]/[CharacterFilter.GetNumTotalCharacters|0] $concept_characters$" # todo: CHANGED
@@ -17,9 +17,6 @@
  NON_HISTORICAL_FILTER_NAME: "Nehistorický" # todo: CHANGED
  ideology_child: "Dítě" # todo: NEW TRANSLATION
  ideology_child_desc: "Tato postava je dítě a ještě si nevyvinula politickou ideologii." # todo: CHANGED
- character_role_ig_leader: "[Concept('concept_leader','Vůdce')]" # todo: NEW TRANSLATION
- character_role_magnate: "[Concept('concept_magnate','Magnát')]" # todo: NEW TRANSLATION
- character_role_other: "Ostatní" # todo: NEW TRANSLATION
  holding_revenue_magnate_scale: "[Concept('concept_holding','Držení')] [Concept('concept_revenue','příjmy')]" # todo: NEW TRANSLATION
  PREP_IN: "v" # todo: NEW TRANSLATION
  PREP_OF: "z" # todo: NEW TRANSLATION
@@ -41,7 +38,7 @@
  LOYALTY_NEUTRAL: "#v Neutrální#!"
  LOYALTY_RELIABLE: "#p Spolehlivý#!"
  LOYALTY_FAITHFUL: "#p Věrný#!"
- INTEREST_GROUP_APPROVAL: "[Concept('concept_approval','Spokojenost')] [INTEREST_GROUP.GetCustom('IG_G_TT')]" # todo: NAME CASE
+ INTEREST_GROUP_APPROVAL: "[Concept('concept_approval','Spokojenost')] [INTEREST_GROUP.GetAltName('G')]" # todo: NAME CASE
  CHARACTER_IDEOLOGY_STANCES: "[IDEOLOGY.GetName] postoje k aktuálním a přijímaným [Concept('concept_law','zákonům')]" # todo: CHANGED # todo: CONCEPT CASE
  ASSIGN_COMMANDER_WRONG_TYPE: "[CHARACTER.GetFullName] nelze přiřadit k [MILITARY_FORMATION.GetName], protože nejsou správným typem velitele pro [MILITARY_FORMATION.GetName]." # todo: CHANGED
  ASSIGN_COMMANDER_ALREADY_ASSIGNED: "[CHARACTER.GetFullName] je již přiřazen k [MILITARY_FORMATION.GetName]." # todo: NEW TRANSLATION
@@ -66,6 +63,7 @@
  ASSIGN_OR_RECRUIT_CHARACTER: "[SelectLocalization(MilitaryFormation.IsFleet,'ASSIGN_OR_RECRUIT_CHARACTER_ADMIRAL','ASSIGN_OR_RECRUIT_CHARACTER_GENERAL')]" # todo: NEW TRANSLATION
  ASSIGN_OR_RECRUIT_CHARACTER_GENERAL: "Přiřadit nebo najmout [Concept('concept_general','generál')] pro [MilitaryFormation.GetName]" # todo: CHANGED
  ASSIGN_OR_RECRUIT_CHARACTER_ADMIRAL: "Přiřadit nebo najmout [Concept('concept_admiral','admirál')] pro [MilitaryFormation.GetName]" # todo: CHANGED
+ ASSIGN_OR_REQRUIT_CHARACTER_ADMIRAL_UNAVAILABLE_DEFEATED: "\n@red_cross! $FORMATION_FULLY_DEFEATED_ASSIGN_UNAVAILABLE$" # todo: NEW TRANSLATION
  RECRUIT_COMMANDER_UNASSIGNED_LIMIT: "Nelze najmout [CHARACTER.GetFullName], protože [COUNTRY.GetName] již má [SelectLocalization(MILITARY_FORMATION.IsFleet,'NUM_IDLE_ADMIRALS','NUM_IDLE_GENERALS')]/[SelectLocalization(MILITARY_FORMATION.IsFleet,'MAX_IDLE_ADMIRALS','MAX_IDLE_GENERALS')] volných [SelectLocalization(MilitaryFormation.IsArmy, 'MILITARY_FORMATION_GENERALS_CONCEPT', 'MILITARY_FORMATION_ADMIRALS_CONCEPT')]." # todo: CHANGED
  UNASSIGN_COMMANDER_LIMIT: "Nelze odebrat přiřazení [CHARACTER.GetFullName], protože [COUNTRY.GetName] již má [SelectLocalization(CHARACTER.IsAdmiral,'NUM_IDLE_ADMIRALS','NUM_IDLE_GENERALS')]/[SelectLocalization(CHARACTER.IsAdmiral,'MAX_IDLE_ADMIRALS','MAX_IDLE_GENERALS')] volných [SelectLocalization(MilitaryFormation.IsArmy, 'MILITARY_FORMATION_GENERALS_CONCEPT', 'MILITARY_FORMATION_ADMIRALS_CONCEPT')]." # todo: CHANGED
  DISBAND_FORMATION_UNASSIGNED_COMMANDER_LIMIT: "Nelze rozpustit [MILITARY_FORMATION.GetName], protože jeho [Concept('concept_commander','velitel')] by zůstal volný a [COUNTRY.GetName] již má [SelectLocalization(MILITARY_FORMATION.IsFleet,'NUM_IDLE_ADMIRALS','NUM_IDLE_GENERALS')]/[SelectLocalization(MILITARY_FORMATION.IsFleet,'MAX_IDLE_ADMIRALS','MAX_IDLE_GENERALS')] volných [SelectLocalization(MilitaryFormation.IsArmy, 'MILITARY_FORMATION_GENERALS_CONCEPT', 'MILITARY_FORMATION_ADMIRALS_CONCEPT')]." # todo: CHANGED # todo: CONCEPT CASE

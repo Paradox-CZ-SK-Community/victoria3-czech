@@ -1,8 +1,9 @@
 ﻿l_polish:
  je_cuba_espanol: "Cuba es España"
- je_cuba_espanol_reason: "Kuba zůstává věrná zemi [ROOT.GetCountry.GetOverlord.GetNameNoFlag]. Natolik věrná, že reformisté mezi [SCOPE.gsInterestGroup('landholders').GetCustom('IG_I_TT')] usilují o to, aby byla [ROOT.GetCountry.GetNameNoFlag] uznána jako formální [ROOT.GetCountry.GetOverlord.GetAdjectiveNoFormatting] provincie s odpovídajícím zastoupením v cortes a aby bílí [SCOPE.sCulture('caribeno').GetName] gentlemani byli od nynějška považováni za [SCOPE.sCulture('spanish').GetName]. Mnozí ostrovní [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]ové jejich nárok podporují.\n\nJak se Cubanos a Španělé stále více politicky i ekonomicky proplétají, existuje šance, že se sen reformistů naplní; Kuba už nebude kolonií, ale skutečnou součástí země [ROOT.GetCountry.GetOverlord.GetNameNoFormatting]." # todo: NAME CASE
+ je_cuba_espanol_reason: "Kuba zůstává věrná zemi [ROOT.GetCountry.GetOverlord.GetNameNoFlag]. Natolik věrná, že reformisté mezi [SCOPE.gsInterestGroup('landholders').GetAltName('I')] usilují o to, aby byla [ROOT.GetCountry.GetNameNoFlag] uznána jako formální [ROOT.GetCountry.GetOverlord.GetAdjectiveNoFormatting] provincie s odpovídajícím zastoupením v cortes a aby bílí [SCOPE.sCulture('caribeno').GetName] gentlemani byli od nynějška považováni za [SCOPE.sCulture('spanish').GetName]. Mnozí ostrovní [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]ové jejich nárok podporují.\n\nJak se Cubanos a Španělé stále více politicky i ekonomicky proplétají, existuje šance, že se sen reformistů naplní; Kuba už nebude kolonií, ale skutečnou součástí země [ROOT.GetCountry.GetOverlord.GetNameNoFormatting]." # todo: NAME CASE
  je_cuba_espanol_tracker: "[Concept('concept_liberty_desire','Touha po svobodě')] je #v [ROOT.GetCountry.GetLibertyDesireRaw|0]#! #tooltippable;tooltip:[ROOT.GetCountry.GetTooltipTag],liberty_desire_factors_tt (#v #blue [ROOT.GetCountry.GetWeeklyLibertyDesireChange|2]#!#!#! týdně)"
  je_cuba_espanol_completion_header: "Kuba se může spojit se Španělskem, pokud:\n"
+ je_cuba_espanol_completion_conclusion_desc: "$concept_journal_entry$ skončil sjednocením Kuby se Španělskem" # todo: NEW TRANSLATION
  liberty_desire_factors_tt: "[Country.GetWeeklyLibertyDesireChangeDesc]"
  je_cuba_espanol_completion_header_victory_header: "#title Pokud se Kuba spojí se Španělskem:#!\n$EFFECT$"
  has_investment_rights_with_overlord: "[ROOT.GetCountry.GetName] získala od země [ROOT.GetCountry.GetOverlord.GetName] [Concept('concept_foreign_investment_rights','práva na zahraniční investice')]"
@@ -27,6 +28,7 @@
  je_cuba_Pro_USA_status_desc: "Hledači svobody se chtějí připojit k USA"
  je_cuba_independencia_status_desc: "Hledači svobody chtějí nezávislost"
  je_cuba_independencia_completion_header: "Budoucnost našeho národa bude rozhodnuta, až:\n"
+ je_cuba_independencia_completion_conclusion_desc: "$concept_journal_entry$ skončil získáním nezávislosti Kuby" # todo: NEW TRANSLATION
  je_cuba_has_joined_usa: "Osvobození Kuby bylo vykoupeno zemí [SelectLocalization(SCOPE.sCountry('usa').Exists, SCOPE.sCountry('usa').GetName, 'US')]"
  je_cuba_has_joined_csa: "Osvobození Kuby bylo vykoupeno zemí [SelectLocalization(SCOPE.sCountry('usa').Exists, SCOPE.sCountry('usa').GetName, 'US')] nebo [SCOPE.sCountry('csa').GetName]"
  je_cuba_has_gained_independence: "Kuba získala nezávislost na zemi [SelectLocalization(SCOPE.sCountry('spain').IsValid, SCOPE.sCountry('spain').GetName, 'SPA')] a není závislou zemí žádného jiného národa"

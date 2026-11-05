@@ -1,0 +1,352 @@
+﻿l_polish:
+ je_congress_poland: "Bílí a rudí" # todo: NEW TRANSLATION
+ je_congress_poland_reason: "[Glossary('glossary_third_partition','$glossary_third_partition_short|q$')] přineslo [SCOPE.sCountry('russia_poland_scope').GetName] kontrolu nad velkou částí bývalé Polsko-litevské unie. Carové zpočátku drželi [SCOPE.sCountry('congress_poland_scope').GetName] v [concept_personal_union] a z velké části respektovali ústavu a [Glossary('glossary_sejm','$glossary_sejm_short|q$')].\n\nPo [Glossary('glossary_november_uprising','$glossary_november_uprising_short|q$')] ruské úřady tvrdě zakročily proti nesouhlasu a zavedly organický statut – polská autonomie byla výrazně omezena a zemi měl spravovat místodržící jmenovaný samotným carem. Touha po polské nezávislosti přetrvává, ale neúspěch by mohl Polsko odsoudit k desetiletím autokratické vlády.\n$TOOLTIP_DELIMITER$\n@information! #b Bílí#!, které tvoří [SCOPE.gsInterestGroup('poland_landowners').GetName] a [SCOPE.gsInterestGroup('poland_industrialists').GetName], se pokoušejí reformní cestou dosáhnout větší autonomie a obnovy [glossary_sejm].\n\n#b Rudí#! jsou především [SCOPE.gsInterestGroup('poland_intelligentsia').GetName] a [SCOPE.gsInterestGroup('poland_rural_folk').GetName], kteří podporují násilné povstání proti [SCOPE.sCountry('russia_poland_scope').GetAltAdjective('D')]. Jsou lehkomyslní a před zažehnutím požáru možná nezváží, zda jsou připraveni." # todo: CHANGED (predtym: [Glossary('glossary_third_partition','$glossary_third_partition_short|q$')] přineslo [SCOPE.sCountry('russia_poland_scop)
+ je_congress_poland_white_victory: "K vítězství #b Bílých#! je třeba:\n" # todo: NEW TRANSLATION
+ je_congress_poland_white_victory_conclusion_desc: "$concept_journal_entry$ skončil vítězstvím #b Bílých#!" # todo: NEW TRANSLATION
+ je_congress_poland_red_victory: "K vítězství #b Rudých#! je třeba:\n" # todo: NEW TRANSLATION
+ je_congress_poland_red_victory_conclusion_desc: "$concept_journal_entry$ skončil vítězstvím #b Rudých#!" # todo: NEW TRANSLATION
+ je_congress_poland_white_victory_effect_header: "Při vítězství #b Bílých#!:\n$EFFECT$" # todo: NEW TRANSLATION
+ je_congress_poland_red_victory_effect_header: "Při vítězství #b Rudých#!:\n$EFFECT$" # todo: NEW TRANSLATION
+ je_congress_poland_bar: "Rudí a bílí" # todo: NEW TRANSLATION
+ je_congress_poland_bar_desc: "Rudí: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#!" # todo: NEW TRANSLATION
+ je_congress_poland_bar_desc_2: "Bílí: [Divide_CFixedPoint(Subtract_CFixedPoint(ScriptedProgressBar.GetMaxValue, JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)), Subtract_CFixedPoint(ScriptedProgressBar.GetMaxValue, ScriptedProgressBar.GetMinValue))|v%]" # todo: NEW TRANSLATION
+ poland_no_universities: "uzavření [GetBuildingType('building_university').GetName]" # todo: NEW TRANSLATION
+ warsaw_uni_button: "Znovuotevřít Varšavskou univerzitu" # todo: NEW TRANSLATION
+ warsaw_uni_button_desc: "Varšavskou univerzitu uzavřely ruské úřady poté, co se většina jejích akademiků připojila k beznadějnému Listopadovému povstání. Polsko tak zůstalo bez elitní instituce vyššího vzdělávání." # todo: NEW TRANSLATION
+ poland_can_build_unis_tt: "[SCOPE.sCountry('congress_poland_scope').GetName] může stavět [GetBuildingType('building_university').GetName]" # todo: NEW TRANSLATION
+ poland_owns_warsaw: "[SCOPE.sState('warsaw_state_scope').GetName] vlastní [SCOPE.sCountry('congress_poland_scope').GetName]" # todo: NEW TRANSLATION
+ notification_poland_uni_name: "[GetBuildingType('building_university').GetName] v [SCOPE.sState('warsaw_state_scope').GetName] znovu otevřena" # todo: NEW TRANSLATION
+ notification_poland_uni_desc: "Trocha vědomostí je nebezpečná věc." # todo: NEW TRANSLATION
+ notification_poland_uni_tooltip: "#header $notification_poland_uni_name$#!\n$TOOLTIP_DELIMITER$\n$notification_poland_uni_desc$" # todo: NEW TRANSLATION
+ poland_red_advance: "Posílí věc #b Rudých#! o #v [GetPlayer.MakeScope.ScriptValue('congress_poland_red_shove_percent')|%0]#!" # todo: NEW TRANSLATION
+ poland_red_advance_large: "Posílí věc #b Rudých#! o #v [GetPlayer.MakeScope.ScriptValue('congress_poland_red_shove_large_percent')|%0]#!" # todo: NEW TRANSLATION
+ poland_white_advance: "Posílí věc #b Bílých#! o #v [GetPlayer.MakeScope.ScriptValue('congress_poland_white_shove_percent')|%0]#!" # todo: NEW TRANSLATION
+ poland_white_advance_large: "Posílí věc #b Bílých#! o #v [GetPlayer.MakeScope.ScriptValue('congress_poland_white_shove_large_percent')|%0]#!" # todo: NEW TRANSLATION
+ poland_whites_strong: "#b Bílí#! mají alespoň #v [GetPlayer.MakeScope.ScriptValue('congress_poland_whites_strong_percent')|%0]#!" # todo: NEW TRANSLATION
+ poland_whites_max_strength: "Ukazatel postupu musí dosáhnout #b -100%#!" # todo: NEW TRANSLATION
+ poland_reds_max_strength: "Ukazatel postupu musí dosáhnout #b 100%#!" # todo: NEW TRANSLATION
+ poland_whites_victory_bar: "#b Bílí#! dosáhli #v 100%#!" # todo: NEW TRANSLATION
+ poland_reds_victory_bar: "#b Rudí#! dosáhli #v 100%#!" # todo: NEW TRANSLATION
+ appeased_poland_modifier: "Uklidněné Polsko" # todo: NEW TRANSLATION
+ poland_censorship: "[SCOPE.sCountry('congress_poland_scope').GetName] má zákon [GetLawType('law_censorship').GetName] nebo [GetLawType('law_outlawed_dissent').GetName]" # todo: NEW TRANSLATION
+ poland_guaranteed_liberties: "[SCOPE.sCountry('congress_poland_scope').GetName] má zákon [GetLawType('law_national_guard').GetName] nebo [GetLawType('law_guaranteed_liberties').GetName]" # todo: NEW TRANSLATION
+ poland_right_of_assembly: "[SCOPE.sCountry('congress_poland_scope').GetName] má zákon [GetLawType('law_right_of_assembly').GetName] nebo [GetLawType('law_protected_speech').GetName]" # todo: NEW TRANSLATION
+ poland_secret_police: "[SCOPE.sCountry('congress_poland_scope').GetName] má zákon [GetLawType('law_secret_police').GetName]" # todo: NEW TRANSLATION
+ poland_expanded_1: "[SCOPE.sCountry('congress_poland_scope').GetName] vlastní 3 celé [Concept('concept_state', '$concept_states|q$')] na [concept_homeland] kultury [GetCulture('polish').GetName]" # todo: NEW TRANSLATION
+ poland_expanded_2: "[SCOPE.sCountry('congress_poland_scope').GetName] vlastní 5 celých [Concept('concept_state', '$concept_states|q$')] na [concept_homeland] kultury [GetCulture('polish').GetName]" # todo: NEW TRANSLATION
+ poland_expanded_3: "[SCOPE.sCountry('congress_poland_scope').GetName] vlastní 7 celých [Concept('concept_state', '$concept_states|q$')] na [concept_homeland] kultury [GetCulture('polish').GetName]" # todo: NEW TRANSLATION
+ poland_landowners_industrialists: "[SCOPE.gsInterestGroup('poland_landowners').GetName] jsou v [SCOPE.sCountry('congress_poland_scope').GetAltAdjective('L')] [concept_powerful]" # todo: CHANGED (predtym: [SCOPE.gsInterestGroup('poland_landowners').GetName] jsou v [SCOPE.sCountry('congress_poland_scope').GetName] [concept_p)
+ poland_landowners_industrialists_2: "[SCOPE.gsInterestGroup('poland_industrialists').GetName] jsou v [SCOPE.sCountry('congress_poland_scope').GetAltAdjective('L')] [concept_powerful]" # todo: CHANGED (predtym: [SCOPE.gsInterestGroup('poland_industrialists').GetName] jsou v [SCOPE.sCountry('congress_poland_scope').GetName] [conce)
+ poland_intelligentsia_rural: "[SCOPE.gsInterestGroup('poland_intelligentsia').GetName] nebo [SCOPE.gsInterestGroup('poland_rural_folk').GetName] jsou v [SCOPE.sCountry('congress_poland_scope').GetAltAdjective('L')] [concept_powerful]" # todo: CHANGED (predtym: [SCOPE.gsInterestGroup('poland_intelligentsia').GetName] nebo [SCOPE.gsInterestGroup('poland_rural_folk').GetName] jsou )
+ poland_russia_gdp: "[concept_gdp] [SCOPE.sCountry('congress_poland_scope').GetAdjective] činí alespoň #b 7%#! [concept_gdp] [SCOPE.sCountry('russia_poland_scope').GetAdjective]" # todo: NEW TRANSLATION
+ poland_russia_gdp_low: "[concept_gdp] [SCOPE.sCountry('congress_poland_scope').GetAdjective] činí méně než #b 5%#! [concept_gdp] [SCOPE.sCountry('russia_poland_scope').GetAdjective]" # todo: NEW TRANSLATION
+ poland_sol: "průměrná [concept_sol] v [SCOPE.sCountry('congress_poland_scope').GetAltAdjective('L')] je vyšší než [concept_expected_sol]" # todo: CHANGED (predtym: průměrná [concept_sol] v [SCOPE.sCountry('congress_poland_scope').GetName] je vyšší než [concept_expected_sol])
+ poland_sol_low: "průměrná [concept_sol] v [SCOPE.sCountry('congress_poland_scope').GetAltAdjective('L')] je nižší než [concept_expected_sol]" # todo: CHANGED (predtym: průměrná [concept_sol] v [SCOPE.sCountry('congress_poland_scope').GetName] je nižší než [concept_expected_sol])
+ pol_rus_civil_war: "[SCOPE.sCountry('russia_poland_scope').GetName] čelí možnosti [concept_civil_war]" # todo: NEW TRANSLATION
+ poland_viceroy_button: "Jmenování místodržícího" # todo: NEW TRANSLATION
+ poland_viceroy_cooldown_tt: "O jmenování místodržícího se neuvažovalo alespoň #b 5 let#!" # todo: NEW TRANSLATION
+ poland_conciliatory_viceroy: "Smířlivý místodržící" # todo: NEW TRANSLATION
+ poland_autocratic_viceroy: "Represivní místodržící" # todo: NEW TRANSLATION
+ pol_viceroy_unlikely: "Místodržící Polska má nad vládou obrovskou moc a vládne v podstatě autokraticky. Zatímco #b smířlivého místodržícího#! lze možná přesvědčit k mírnějšímu postupu, #b represivní místodržící#! bude pravděpodobně jednat opačně a podněcovat tak nacionalistické napětí.\n\n@red_cross! Rusko #b pravděpodobně#! nejmenuje #b smířlivého#! místodržícího" # todo: NEW TRANSLATION
+ pol_viceroy_likely: "Místodržící Polska má nad vládou obrovskou moc a vládne v podstatě autokraticky. Zatímco #b smířlivého místodržícího#! lze možná přesvědčit k mírnějšímu postupu, #b represivní místodržící#! bude pravděpodobně jednat opačně a podněcovat tak nacionalistické napětí.\n\nRusko #b pravděpodobně#! jmenuje #b smířlivého#! místodržícího" # todo: NEW TRANSLATION
+ pol_viceroy_for_russia: "Místodržící Polska má nad vládou obrovskou moc a vládne v podstatě autokraticky. Zatímco #b smířlivého místodržícího#! lze možná přesvědčit k mírnějšímu postupu, #b represivní místodržící#! bude pravděpodobně jednat opačně a podněcovat tak nacionalistické napětí." # todo: NEW TRANSLATION
+ congress_poland.1.t: "Místodržící Polska" # todo: NEW TRANSLATION
+ congress_poland.1.d: "[SCOPE.sCharacter('tsar_scope').GetPrimaryRoleTitle] se rozhodl přezkoumat místodržitelství [SCOPE.sCountry('congress_poland_scope').GetAdjective]. Současný místodržící, [SCOPE.sCharacter('poland_viceroy_scope').GetFullName], zvolil [SCOPE.sCharacter('poland_viceroy_scope').GetCustom('ConciliatoryRepressive')] přístup, který sice některým vyhovuje, ale neobešel se bez kritiků." # todo: NEW TRANSLATION
+ congress_poland.1.d2: "[SCOPE.sCharacter('tsar_scope').GetPrimaryRoleTitle] byl vyzván, aby jmenoval nového místodržícího [SCOPE.sCountry('congress_poland_scope').GetName]. Hlavní otázkou je, zda má vládu nového místodržícího charakterizovat železná ruka, nebo otevřená náruč." # todo: NEW TRANSLATION
+ congress_poland.1.f: "„Čím déle vládnu, tím více jsem přesvědčen, že smířlivá politika je chybná. Krutost sice přiživuje nenávist a touhu po pomstě, slabost je však trestána ještě tvrději. Mírnost bychom měli projevit jen tehdy, když je to – což se stává zřídka – zapotřebí. Jinak svou politiku stavím na hrozbách a naší rozhodnosti a síle.“" # todo: NEW TRANSLATION
+ congress_poland.1.a: "[SCOPE.sCharacter('poland_viceroy_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('poland_viceroy_scope').GetLastName] už svou práci odvádí dobře." # todo: NEW TRANSLATION
+ congress_poland.1.b: "Nový místodržící nesmí šetřit ranami." # todo: NEW TRANSLATION
+ congress_poland.1.b2: "S Polskem bychom měli zacházet mírněji." # todo: NEW TRANSLATION
+ poland_already_conciliatory: "Místodržící není smířlivý" # todo: NEW TRANSLATION
+ poland_conciliatory_loc: "#b smířlivý#!" # todo: NEW TRANSLATION
+ poland_repressive_loc: "#b represivní#!" # todo: NEW TRANSLATION
+ notification_poland_repressive_viceroy_notification_name: "[SCOPE.sCountry('russia_poland_scope').GetName] jmenuje represivního místodržícího" # todo: NEW TRANSLATION
+ notification_poland_repressive_viceroy_notification_desc: "Tyranie [SCOPE.sCountry('russia_poland_scope').GetAdjective] znovu svírá [SCOPE.sCountry('congress_poland_scope').GetName]." # todo: NEW TRANSLATION
+ notification_poland_repressive_viceroy_notification_tooltip: "#header $notification_poland_repressive_viceroy_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_poland_repressive_viceroy_notification_desc$" # todo: NEW TRANSLATION
+ notification_poland_conciliatory_viceroy_notification_name: "[SCOPE.sCountry('russia_poland_scope').GetName] jmenuje smířlivého místodržícího" # todo: NEW TRANSLATION
+ notification_poland_conciliatory_viceroy_notification_desc: "Pro [SCOPE.sCountry('congress_poland_scope').GetAltAdjective('A')] stále existuje naděje." # todo: CHANGED (predtym: Pro [SCOPE.sCountry('congress_poland_scope').GetName] stále existuje naděje.)
+ notification_poland_conciliatory_viceroy_notification_tooltip: "#header $notification_poland_conciliatory_viceroy_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_poland_conciliatory_viceroy_notification_desc$" # todo: NEW TRANSLATION
+ expand_poland_button: "Rozšířit Kongresové Polsko" # todo: NEW TRANSLATION
+ expand_poland_button_desc: "Pokud by se další části Polska nějakým způsobem dostaly do ruských rukou, mohlo by být v zájmu všech začlenit tato území do správy Kongresového Polska." # todo: NEW TRANSLATION
+ congress_poland.2.t: "Rozšíření [SCOPE.sCountry('congress_poland_scope').GetNameNoFormatting]" # todo: NEW TRANSLATION
+ congress_poland.2.d: "[SCOPE.sCharacter('tsar_scope').GetPrimaryRoleTitle] obdržel žádost o rozšíření [SCOPE.sCountry('congress_poland_scope').GetName], území, kterému [SCOPE.sCountry('russia_poland_scope').GetName] velkodušně dovoluje jistou omezenou podobu samosprávy." # todo: NEW TRANSLATION
+ congress_poland.2.f: "„Naše hranice se stále posouvají na západ a já nebudu zlehčovat slávu tohoto úspěchu nikde, kde jsou uši, které o něm mohou slyšet. Pravdou však je, že nás tíží velký počet neukázněných Poláků, kterým by lépe prospělo uzavření pod správu místodržícího, než aby zamořovali naši vlastní administrativu.“" # todo: NEW TRANSLATION
+ congress_poland.2.a: "Poláci jsou méně problematičtí, když si mohou namlouvat, že mají [GetCulture('polish').GetName]." # todo: NEW TRANSLATION
+ congress_poland.2.b: "Na územní celistvosti hranic [SCOPE.sCountry('russia_poland_scope').GetAdjective] nebudeme dělat kompromisy." # todo: NEW TRANSLATION
+ poland_territory_cooldown_tt: "[SCOPE.sCountry('russia_poland_scope').GetName] nejméně #b 5 let#! neuvažovalo o rozšíření [SCOPE.sCountry('congress_poland_scope').GetName]" # todo: NEW TRANSLATION
+ russia_decides_expand_poland: "[SCOPE.sCountry('russia_poland_scope').GetName] rozhodne, zda postoupí území [SCOPE.sCountry('congress_poland_scope').GetName]" # todo: NEW TRANSLATION
+ notification_poland_expansion_accepted_name: "[SCOPE.sCountry('russia_poland_scope').GetName] souhlasí s rozšířením [SCOPE.sCountry('congress_poland_scope').GetName]" # todo: NEW TRANSLATION
+ notification_poland_expansion_accepted_desc: "Krok ke znovusjednocení [GetCulture('polish').GetName] národa!" # todo: NEW TRANSLATION
+ notification_poland_expansion_accepted_tooltip: "#header $notification_poland_expansion_accepted_name$#!\n$TOOLTIP_DELIMITER$\n$notification_poland_expansion_accepted_desc$" # todo: NEW TRANSLATION
+ notification_poland_expansion_refused_name: "Kdy se konečně zbavíme svých utlačovatelů?" # todo: NEW TRANSLATION
+ notification_poland_expansion_refused_desc: "[SCOPE.sCountry('russia_poland_scope').GetName] odmítá rozšíření [SCOPE.sCountry('congress_poland_scope').GetAdjective]." # todo: NEW TRANSLATION
+ notification_poland_expansion_refused_tooltip: "#header $notification_poland_expansion_refused_name$#!\n$TOOLTIP_DELIMITER$\n$notification_poland_expansion_refused_desc$" # todo: NEW TRANSLATION
+ poland_army_tt: "[SCOPE.sCountry('congress_poland_scope').GetName] má alespoň jednu [concept_army]" # todo: NEW TRANSLATION
+ congress_poland.3.t: "Obnova polské ústavy" # todo: NEW TRANSLATION
+ congress_poland.3.d: "Věc #b Bílých#! v [SCOPE.sCountry('congress_poland_scope').GetAltAdjective('L')] uspěla a obnovila [SCOPE.sCountry('congress_poland_scope').GetAdjectiveNoFormatting] ústavu. [SCOPE.sCountry('russia_poland_scope').GetName] bude alespoň prozatím respektovat nařízení [glossary_sejm] a z velké části ponechá Polsku samosprávu." # todo: CHANGED (predtym: Věc b Bílých ! v [SCOPE.sCountry('congress_poland_scope').GetName] uspěla a obnovila [SCOPE.sCountry('congress_poland_sc)
+ congress_poland.3.f: "„Polské legie byly obnoveny, ale pochodují do rytmu ruských bubnů. Sejm už nezasedá tajně, nýbrž jedná přímo před očima cara. Nelze se ubránit pocitu, že jsme za autonomii zaplatili nezávislostí. Pomodlím se za polský národ, který jsme získali, ale také za ten, který jsme ztratili.“" # todo: NEW TRANSLATION
+ congress_poland.3.a: "Smírné řešení." # todo: NEW TRANSLATION
+ dp_polish_uprising: "Polské povstání" # todo: NEW TRANSLATION
+ polish_uprising: "Polské povstání" # todo: NEW TRANSLATION
+ congress_poland.4.t: "Polské povstání" # todo: NEW TRANSLATION
+ congress_poland.4.d: "#b Rudí#! v [SCOPE.sCountry('congress_poland_scope').GetAltAdjective('L')] shromáždili veškerou podporu, jakou jen mohli, a chopili se zbraní ve jménu [SCOPE.sCountry('congress_poland_scope').GetAdjective] svobody. Modlí se, aby to stačilo." # todo: CHANGED (predtym: b Rudí ! v [SCOPE.sCountry('congress_poland_scope').GetName] shromáždili veškerou podporu, jakou jen mohli, a chopili se)
+ congress_poland.4.f: "Bohu díky, že když naši synové dnes odcházejí,\nnení to pro nové šaty, ba ani pamflety,\nani aby se v pařížské kavárně učili,\njak Francouzi své dluhy řádně hromadí.\nTeď máme svého drahého Napoleona,\njenž nemá čas na plané hovory o módě,\njenž méně dbá o kabát než o zbraň,\na přeje si, aby Polsko ze všech zemí\nse stalo tím, čím kdysi bývalo – republikou!\n\n—Adam Mickiewicz, #italic Pan Tadeusz#!" # todo: NEW TRANSLATION
+ congress_poland.4.a: "Mohou tak málo porazit tak mnoho?" # todo: NEW TRANSLATION
+ congress_poland_restrictions: "Organický statut: armáda" # todo: NEW TRANSLATION
+ congress_poland_laws: "Organický statut: zákony" # todo: NEW TRANSLATION
+ congress_poland.5.t: "Organický statut" # todo: NEW TRANSLATION
+ congress_poland.5.d: "Po [glossary_november_uprising] [SCOPE.sCountry('russia_poland_scope').GetName] výrazně omezilo [SCOPE.sCountry('congress_poland_scope').GetAdjectiveNoFormatting] autonomii. [SCOPE.sCountry('congress_poland_scope').GetName] nesmí zřizovat armádu, otevírat univerzity ani přijímat vlastní zákony. Na všechny státní záležitosti bude dohlížet ruský místodržící." # todo: NEW TRANSLATION
+ congress_poland.5.f: "Čas od času k nám do Litvy dorazí zprávy\no starém žebrákovi, jenž bez nohy či paže\nnatahuje jedinou ruku pro chléb.\nKdyž almužnu přijme,\nohlédne se po panském sídle s obavou: zda tam není\nruský voják, jarmulka či rudý\nlímec. Pak bez studu přizná,\nže kdysi vedl polskou legii.\n\n—Adam Mickiewicz, #italic Pan Tadeusz#!" # todo: NEW TRANSLATION
+ congress_poland.5.a: "A tak se vrací se svými starými a unavenými kostmi..." # todo: NEW TRANSLATION
+ congress_poland.5.a.tt: "... do vlasti, kterou už nemůže bránit" # todo: NEW TRANSLATION
+ poland_has_conciliatory_viceroy: "Polsko má #b smířlivého#! místokrále" # todo: NEW TRANSLATION
+ poland_has_repressive_viceroy: "Polsko má #b represivního#! místokrále" # todo: NEW TRANSLATION
+ poland_army_button: "Obnovit polskou armádu" # todo: NEW TRANSLATION
+ poland_army_button_desc: "Polská armáda byla po Listopadovém povstání násilně rozpuštěna. Možná by ji nyní bylo možné obnovit, pokud by nad ní byl zajištěn náležitý dohled." # todo: NEW TRANSLATION
+ congress_poland_red_conscription: "Polské povstání" # todo: NEW TRANSLATION
+ pol_cannot_build_unis: "Nelze postavit [GetBuildingType('building_university').GetName], dokud nebude znovu otevřena #b Varšavská univerzita#!" # todo: NEW TRANSLATION
+ poland_sejm_button: "Obnovit Sejm" # todo: NEW TRANSLATION
+ poland_sejm_button_desc: "Sejm pod ruským místokrálem sice zasedá v tajnosti, ale bez valného účinku. Má-li Polsko někdy získat autonomii, musí Sejm znovu dostat pravomoc vládnout." # todo: NEW TRANSLATION
+ poland_lib_desire: "[SCOPE.sCountry('congress_poland_scope').GetAdjective] [concept_liberty_desire] je alespoň #b 50#!" # todo: NEW TRANSLATION
+ poland_lib_desire_2: "[SCOPE.sCountry('congress_poland_scope').GetAdjective] [concept_liberty_desire] je alespoň #b 75#!" # todo: NEW TRANSLATION
+ poland_lobby: "[SCOPE.sCountry('congress_poland_scope').GetName] má [concept_political_lobby] zaměřenou proti nadřízené mocnosti s alespoň #b 5#! [concept_political_lobby_appeasement] a #b 25%#! [concept_clout]" # todo: NEW TRANSLATION
+ poland_radicals: "více než #b 10%#! [Concept('concept_radical','$concept_radicals|q$')] v zemi [SCOPE.sCountry('congress_poland_scope').GetName]" # todo: NEW TRANSLATION
+ poland_unhappy_igs: "[SCOPE.gsInterestGroup('poland_intelligentsia').GetName] nebo [SCOPE.gsInterestGroup('poland_rural_folk').GetName] jsou v zemi [SCOPE.sCountry('congress_poland_scope').GetName] $ig_approval_unhappy$" # todo: NEW TRANSLATION
+ poland_bureaucracy: "Polsko nemá deficit [concept_bureaucracy]" # todo: NEW TRANSLATION
+ poland_viceroy_bar_trigger: "#b Bílí#! dosáhli alespoň #v [GetPlayer.MakeScope.ScriptValue('congress_poland_viceroy_request_percent')|%0]#!" # todo: NEW TRANSLATION
+ DIPLOMATIC_ACCEPTANCE_RUSSIA_NO_APPEASEMENT_POLAND: "#v $RUS$#! nemusí usmiřovat #v $POL$#!" # todo: NEW TRANSLATION
+ poland_will_have_conciliatory_viceroy: "[SCOPE.sCountry('congress_poland_scope').GetName] bude mít #b smířlivého#! místokrále" # todo: NEW TRANSLATION
+ poland_will_have_repressive_viceroy: "[SCOPE.sCountry('congress_poland_scope').GetName] bude mít #b represivního#! místokrále" # todo: NEW TRANSLATION
+ polish_fervor: "[concept_fervor] kultury [GetCulture('polish').GetName] je alespoň #b 50#!" # todo: NEW TRANSLATION
+ notification_poland_army_toast_name: "Armáda země [SCOPE.sCountry('congress_poland_scope').GetAdjective] byla obnovena" # todo: NEW TRANSLATION
+ notification_poland_army_toast_desc: "Legie země [SCOPE.sCountry('congress_poland_scope').GetAdjective] znovu vytáhnou do boje!" # todo: NEW TRANSLATION
+ notification_poland_army_toast_tooltip: "#header $notification_poland_army_toast_name$#!\n$TOOLTIP_DELIMITER$\n$notification_poland_army_toast_desc$" # todo: NEW TRANSLATION
+ notification_poland_sejm_toast_name: "Sejm země [SCOPE.sCountry('congress_poland_scope').GetAdjective] byl obnoven" # todo: NEW TRANSLATION
+ notification_poland_sejm_toast_desc: "Do země [SCOPE.sCountry('congress_poland_scope').GetName] se vrací samospráva" # todo: NEW TRANSLATION
+ notification_poland_sejm_toast_tooltip: "#header $notification_poland_army_toast_name$#!\n$TOOLTIP_DELIMITER$\n$notification_poland_army_toast_desc$" # todo: NEW TRANSLATION
+ poland_pu: "[SCOPE.sCountry('congress_poland_scope').GetName] je v [concept_personal_union] se zemí [SCOPE.sCountry('russia_poland_scope').GetName]" # todo: NEW TRANSLATION
+ poland_has_pu: "Polsku byla udělena větší autonomie" # todo: NEW TRANSLATION
+ je_russia_provisional_government: "Prozatímní vláda" # todo: NEW TRANSLATION
+ je_russia_provisional_government_reason: "Po pádu starého režimu byla v [ROOT.GetCountry.GetCapital.GetCityHubName] vyhlášena #b prozatímní vláda#!. Její moc ovládají [SCOPE.GetRootScope.GetCountry.GetCustom('provisional_government_identity_plural')], které se snaží získat legitimitu a zajistit, aby jejich vize budoucnosti země #v $RUS$#! zvítězila nad starým režimem i nad jejich soupeři z řad [SCOPE.GetRootScope.GetCountry.GetCustom('provisional_government_opponent_identity_singular')].\n\n@information! Jednota [SCOPE.sCountry('russia_scope').GetAdjective] prozatímní vlády visí na vlásku. Pokud [SCOPE.sCountry('russia_scope').GetRuler.GetPrimaryRoleTitle] rychle nezajistí legitimitu [SCOPE.sCountry('russia_scope').GetRuler.GetHerHis] nové vládě, zemi [SCOPE.sCountry('russia_scope').GetName] pohltí strašlivá [concept_revolution]." # todo: NEW TRANSLATION
+ pg_conservatives: "Konzervativci" # todo: NEW TRANSLATION
+ pg_liberals: "Liberálové" # todo: NEW TRANSLATION
+ pg_socialists: "Socialisté" # todo: NEW TRANSLATION
+ pg_conservative: "Konzervativec" # todo: NEW TRANSLATION
+ pg_liberal: "Liberál" # todo: NEW TRANSLATION
+ pg_socialist: "Socialista" # todo: NEW TRANSLATION
+ pg_who_knows: "Bývalí opozičníci" # todo: NEW TRANSLATION
+ pg_who_knows_singular: "Opozičník" # todo: NEW TRANSLATION
+ je_rus_prov_gov_survive_header: "Ke stabilizaci #b prozatímní vlády#!:\n" # todo: NEW TRANSLATION
+ je_rus_prov_gov_survive_conclusion_desc: "$concept_journal_entry$ skončil stabilizací #b prozatímní vlády#!" # todo: NEW TRANSLATION
+ je_rus_prov_gov_survive_effect_header: "Pokud bude #b prozatímní vláda#! stabilizována:\n$EFFECT$" # todo: NEW TRANSLATION
+ je_rus_prov_gov_fail_header: "#b Ruská občanská válka#! začne, pokud:\n" # todo: NEW TRANSLATION
+ je_rus_prov_gov_fail_conclusion_desc: "$concept_journal_entry$ skončil vypuknutím #b ruské občanské války#!" # todo: NEW TRANSLATION
+ je_rus_prov_gov_fail_effect_header: "Pokud vypukne #b ruská občanská válka#!:\n$EFFECT$" # todo: NEW TRANSLATION
+ je_rus_prov_gov_bar: "Prozatímní vláda" # todo: NEW TRANSLATION
+ je_rus_prov_gov_bar_desc: "Stabilita: ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)]/60)" # todo: NEW TRANSLATION
+ rus_prov_gov_bar_full_tt: "Ukazatel pokroku je naplněn" # todo: NEW TRANSLATION
+ rus_prov_gov_survived_ten_years_tt: "#b Prozatímní vláda#! se udržela alespoň #v 10 let#!" # todo: NEW TRANSLATION
+ rus_prov_gov_stable: "alespoň #b 75#! [concept_legitimacy]" # todo: NEW TRANSLATION
+ rus_prov_gov_illegitimate: "méně než #b 75#! [concept_legitimacy]" # todo: NEW TRANSLATION
+ rus_prov_gov_civil_war_minor: "[concept_revolution] dosáhla alespoň #b nízkého#! pokroku" # todo: NEW TRANSLATION
+ rus_prov_gov_civil_war_major: "[concept_revolution] dosáhla alespoň #b středního#! pokroku" # todo: NEW TRANSLATION
+ russian_civil_war_outcome_effect_tt: "Rusko se rozpadne na množství států ovládaných vojevůdci a vypukne krvavá občanská válka" # todo: NEW TRANSLATION
+ rus_prov_gov_legitimate_status: "#b Prozatímní vláda#! má vysokou [concept_legitimacy]" # todo: NEW TRANSLATION
+ rus_prov_gov_illegitimate_status: "#b Prozatímní vláda#! má nízkou [concept_legitimacy]" # todo: NEW TRANSLATION
+ rus_prov_gov_no_civilwar_status: "\nV zemi [SCOPE.sCountry('russia_scope').GetName] neprobíhá žádná [concept_revolution]" # todo: NEW TRANSLATION
+ rus_prov_gov_civilwar_status: "\nV zemi [SCOPE.sCountry('russia_scope').GetName] se schyluje k [concept_revolution]" # todo: NEW TRANSLATION
+ rus_prov_gov_success_mod: "Hladké předání moci" # todo: NEW TRANSLATION
+ modifier_russian_revolution_new_government: "Revoluční vláda" # todo: NEW TRANSLATION
+ rus_prov_gov.1.t: "Prozatímní už jen podle názvu" # todo: NEW TRANSLATION
+ rus_prov_gov.1.d: "Navzdory všem očekáváním má země [SCOPE.sCountry('russia_scope').GetName] stabilní vládu. Budoucnost jistě nebude bez problémů, přinejmenším se však podařilo odvrátit ničivou [concept_civil_war]." # todo: NEW TRANSLATION
+ rus_prov_gov.1.f: "Nebyl to nekrvavý převrat ani zcela pokojné předání moci. Nebyla to však krvavá lázeň. Nespočet ruských matek se věnuje svým každodenním povinnostem jako vždy, aniž by musely pohřbívat své syny." # todo: NEW TRANSLATION
+ rus_prov_gov.1.a: "Jaké štěstí, že se to obešlo s tak malým krveprolitím." # todo: NEW TRANSLATION
+ rus_prov_gov.2.t: "Prozatímní vláda" # todo: NEW TRANSLATION
+ rus_prov_gov.2.d: "Revoluce! Starý režim padl a v [SCOPE.sState('russia_capital').GetCityHubName] se moci chopila nová [SCOPE.sCountry('russia_scope').GetAdjective] vláda v čele s [SCOPE.sCharacter('russia_ruler_scope').GetFullName], která prosazuje [SCOPE.sLaw('principles_law').GetName]. Zatímco zavádí nový systém [SCOPE.sLaw('power_law').GetName], reakcionáři i radikálové se začínají ozbrojovat na [concept_civil_war]." # todo: NEW TRANSLATION
+ rus_prov_gov.2.f: "„Svět se domnívá, že ruská revoluce skončila. Nenechte se zmást. Ruská revoluce teprve začíná.“\n\n—Alexander Kerenskij" # todo: NEW TRANSLATION
+ rus_prov_gov.2.a: "Co si počneme?" # todo: NEW TRANSLATION
+ rus_prov_gov_no_civil_wars: "Neprobíhá žádná aktivní [concept_civil_war]" # todo: NEW TRANSLATION
+ rus_prov_gov.3.t: "Samospráva neruských národností" # todo: NEW TRANSLATION
+ rus_prov_gov.3.d: "V masách nominálně [SCOPE.sCountry('russia_scope').GetAdjective] poddaných se probudil neochvějný národní [concept_fervor] a v chaosu revoluce vyhlásily autonomní vlády. Znepokojivá je především nově vyhlášená vláda [SCOPE.sCountry('rus_autonomy_nation').GetGovernment.GetName] v zemi [SCOPE.sCountry('rus_autonomy_nation').GetName]." # todo: NEW TRANSLATION
+ rus_prov_gov.3.f: "„Rusové jsou všichni víceméně převlečení imperialisté, včetně revolucionářů. Jejich povahy, vždy toužící po absolutnu, se vyznačují výrazným centralismem. Nesnášejí rozmanitost, nedokáží se smířit s nesouladem – to vše otupuje jejich vůli a představivost.“\n\n—Józef Piłsudski" # todo: NEW TRANSLATION
+ rus_prov_gov.3.a: "Budou toho litovat." # todo: NEW TRANSLATION
+ je_russia_civil_war: "Ruská občanská válka" # todo: NEW TRANSLATION
+ je_russia_civil_war_reason: "V Rusku je snad tolik znepřátelených frakcí, kolik je mužů se zbraní v ruce. Zemi pohltila rozsáhlá občanská válka a násilí neskončí, dokud nebudou všichni Rusové opět sjednoceni pod jedinou vládou.\n$TOOLTIP_DELIMITER$\n@information! [Concept('concept_truce','$concept_truces|q$')] mezi zeměmi, jejichž [Concept('concept_primary_cultures','$concept_primary_culture|q$')] zahrnují kulturu [GetCulture('russian').GetName], budou rychle zrušeny." # todo: NEW TRANSLATION
+ je_rus_civil_war_header: "K ukončení ruské občanské války:\n" # todo: NEW TRANSLATION
+ je_rus_civil_war_conclusion_desc: "$concept_journal_entry$ skončil ukončením #b ruské občanské války#!" # todo: NEW TRANSLATION
+ je_rus_civil_war_effect_header: "Pokud bude ruská občanská válka ukončena:\n$EFFECT$" # todo: NEW TRANSLATION
+ je_rus_civil_war_partitioned_header: "Rusko se rozpadne, pokud:\n" # todo: NEW TRANSLATION
+ je_rus_civil_war_partitioned_effect_header: "Pokud nezůstane žádná #b ruská#! frakce:\n$EFFECT$" # todo: NEW TRANSLATION
+ je_rus_civil_war_partitioned_conclusion_desc: "$concept_journal_entry$ skončil rozdělením Ruska; nezůstala žádná #b ruská#! frakce." # todo: NEW TRANSLATION
+ je_rus_civil_war_frozen_conclusion_desc: "$concept_journal_entry$ skončil bez vítěze. Přeživší #b ruské#! frakce uzavřely neklidný mír." # todo: NEW TRANSLATION
+ rcw_one_russian_faction_left_tt: "Zbývá pouze jedna nezávislá #b ruská#! frakce" # todo: NEW TRANSLATION
+ rcw_no_russian_faction_left_tt: "Nezbývá žádná nezávislá ruská frakce" # todo: NEW TRANSLATION
+ rcw_victor_tt: "Občanskou válku vyhraje poslední zbývající #b ruská#! frakce" # todo: NEW TRANSLATION
+ rcw_separatist_survived_tt: "Separatistické národy přežily válku" # todo: NEW TRANSLATION
+ rus_cw_pale_horse: "A hle, kůň bledý, a jméno tomu, kdož seděl na něm, smrt, a peklo šlo za ním.\n\n" # todo: NEW TRANSLATION
+ rus_cw_phase_1_status: "Občanská válka zuří dál" # todo: NEW TRANSLATION
+ rus_cw_phase_2_status: "Zbývající vojevůdci si stále činí nároky na svrchovanost" # todo: NEW TRANSLATION
+ rcw.1.t: "Ruská občanská válka" # todo: NEW TRANSLATION
+ rcw.1.d: "Prozatímní vláda selhala. Pod volným vedením země [SCOPE.sCountry('rcw_opposition_country').GetName] vznikly nesčetné legie, které vedou nespokojení vojevůdci, jako například [SCOPE.sCharacter('scariest_russian_warlord').GetFullName] v zemi [SCOPE.sCountry('scariest_russian_warlord_country').GetName]. Ještě není vše ztraceno; naši spojenci se rovněž shromažďují na naší straně. Mezi naše nejvýznamnější podporovatele patří vláda země [SCOPE.sCountry('friendliest_russian_warlord_country').GetName] vedená [SCOPE.sCharacter('friendliest_russian_warlord').GetFullName]." # todo: NEW TRANSLATION
+ rcw.1.f: "„Nemyslete si, že jsem přišel přinést na zem pokoj: nepřišel jsem přinést pokoj, nýbrž meč. Neboť jsem přišel postavit člověka proti jeho otci, dceru proti matce a snachu proti tchyni. A nepřáteli člověka budou členové jeho vlastní domácnosti.“\n\n—Matouš 10, Bible krále Jakuba#!" # todo: NEW TRANSLATION
+ rcw.1.a: "Do války!" # todo: NEW TRANSLATION
+ rcw_warlords_button: "Znovu začlenit loajální frakci" # todo: NEW TRANSLATION
+ rcw_warlords_button_desc: "Mnozí naši ruští soudruzi byli v chaosu války nuceni ustavit místní vlády. Jakmile se naskytne příležitost, musíme je znovu začlenit." # todo: NEW TRANSLATION
+ rcw_switch_country_button_1: "Hrát za [GetGlobalVariable('rcw_switch_target_1').GetCountry.GetName]" # todo: NEW TRANSLATION
+ rcw_switch_country_button_2: "Hrát za [GetGlobalVariable('rcw_switch_target_2').GetCountry.GetName]" # todo: NEW TRANSLATION
+ rcw_switch_country_button_3: "Hrát za [GetGlobalVariable('rcw_switch_target_3').GetCountry.GetName]" # todo: NEW TRANSLATION
+ rcw_switch_country_button_4: "Hrát za [GetGlobalVariable('rcw_switch_target_4').GetCountry.GetName]" # todo: NEW TRANSLATION
+ rcw_switch_country_button_desc: "$rcw_switch_country_window_tt$" # todo: NEW TRANSLATION
+ rcw_switch_country_window_tt: "@warning! Tato možnost je dostupná pouze po dobu #v [GetPlayer.MakeScope.ScriptValue('rcw_switch_window_days')|0]#! dní!" # todo: NEW TRANSLATION
+ gdp_nameless_is_less_than_root: "$GDP_SHORT$ dané země je nižší než @money![ROOT.GetCountry.GetGDP|vD]" # todo: NEW TRANSLATION
+ nameless_is_at_peace: "Je v míru" # todo: NEW TRANSLATION
+ nameless_is_at_war: "Je ve [concept_war]" # todo: NEW TRANSLATION
+ annex_a_russian_warlord: "Sousední přátelský #b ruský#! válečnický stát s nižším HDP bude anektován" # todo: NEW TRANSLATION
+ rcw_warlords_button_ideologically_aligned: "Je ideologicky spřízněn s [ROOT.GetCountry.GetAltAdjectiveNoFormatting('I')]" # todo: CHANGED (predtym: Je ideologicky spřízněn s [ROOT.GetCountry.GetNameNoFormatting])
+ rcw_warlords_button_target_tt: "Menší a ideologicky spřízněná ruská frakce, která je v míru, s námi sousedí" # todo: NEW TRANSLATION
+ rcw.3.t: "Konec ruské občanské války" # todo: NEW TRANSLATION
+ rcw.3.d: "Rozdrtili jsme veškerý ozbrojený odpor nepřátel státu a přivedli naše spojence zpět do našich řad. Ruská občanská válka je konečně u konce." # todo: NEW TRANSLATION
+ rcw.3.f: "Občanská válka je nejkrutější ze všech válek. Nelze si ji představit bez násilí nejen vůči významným osobám, ale v současných podmínkách ani bez vraždění starců, stařenek a dětí.\n\n—Leon Trockij, #italic Jejich morálka a naše#!" # todo: NEW TRANSLATION
+ rcw.3.a: "Nastává éra stability a míru." # todo: NEW TRANSLATION
+ rcw.3.b: "A teď ti separatisté..." # todo: NEW TRANSLATION
+ rcw.3.c: "Nové Rusko bude větší než všechno, co tu bylo před ním." # todo: NEW TRANSLATION
+ rcw_3_b_claim_lost_territories_tt: "Získá [Concept('concept_claim', '$concept_claims|q$')] na všech [concept_state], které náležely k #b $dyn_c_russian_empire$#! před vypuknutím #b $je_russia_civil_war$#!" # todo: NEW TRANSLATION
+ rcw_enactment: "Vítězný režim" # todo: NEW TRANSLATION
+ rcw_reward_enactment: "$rcw_enactment$" # todo: NEW TRANSLATION
+ rcw_reward_construction: "$rcw_enactment$" # todo: NEW TRANSLATION
+ rcw_reward_warfare: "$rcw_enactment$" # todo: NEW TRANSLATION
+ rcw_modifier: "Hle, bledý kůň" # todo: NEW TRANSLATION
+ rcw_independence_secured: "Nezávislost zajištěna" # todo: NEW TRANSLATION
+ rcw_map_red: "[SCOPE.sCountry('rcw_map_owner').GetName] se přidává k #b rudým#!" # todo: NEW TRANSLATION
+ rcw_map_white: "[SCOPE.sCountry('rcw_map_owner').GetName] se přidává k #b bílému hnutí#!" # todo: NEW TRANSLATION
+ rcw_map_green: "[SCOPE.sCountry('rcw_map_owner').GetName] se přidává k #b zeleným#!" # todo: NEW TRANSLATION
+ rcw_map_black: "[SCOPE.sCountry('rcw_map_owner').GetName] se přidává k #b anarchistickému hnutí#!" # todo: NEW TRANSLATION
+ rcw_map_democratic: "[SCOPE.sCountry('rcw_map_owner').GetName] se přidává k #b bílým demokratům#!" # todo: NEW TRANSLATION
+ rcw_map_separatist: "[SCOPE.sCountry('rcw_map_owner').GetName] je #b separatistický#! stát usilující o nezávislost#!" # todo: NEW TRANSLATION
+ rcw.4.t1: "Rudý teror v oblasti [SCOPE.sState('rcw_terror_state').GetName]" # todo: NEW TRANSLATION
+ rcw.4.t2: "Bílý teror v oblasti [SCOPE.sState('rcw_terror_state').GetName]" # todo: NEW TRANSLATION
+ rcw.4.t3: "Velký teror v oblasti [SCOPE.sState('rcw_terror_state').GetName]" # todo: NEW TRANSLATION
+ rcw.4.d: "Jednotky [SCOPE.GetRootScope.GetCountry.GetCustom('my_rcw_side_loc')] pod velením [SCOPE.sCharacter('rcw_terror_general').GetFullName] zahájily v oblasti [SCOPE.sState('rcw_terror_state').GetName] tažení s cílem najít a popravit všechny [SCOPE.GetRootScope.GetCountry.GetCustom('enemy_rcw_side_loc')] živly mezi civilním obyvatelstvem." # todo: NEW TRANSLATION
+ rcw.4.f: "Co je lepší? Vypátrat, uvěznit, a někdy dokonce zastřelit stovky zrádců z řad kadetů, nestraníků, menševiků a socialistů-revolucionářů, kteří vystupují (někteří se zbraní v ruce, jiní se spiknutími, další zase agitací proti mobilizaci, jako menševičtí tiskaři a železničáři atd.) proti sovětské moci, jinými slovy ve prospěch Děnikina? Anebo nechat věci dojít tak daleko, že Kolčak a Děnikin budou moci zmasakrovat, postřílet a ubít k smrti desetitisíce dělníků a rolníků? Rozhodnutí není těžké. \n\n—Vladimir Lenin, #italic Boj proti kontrarevoluci v týlu#!" # todo: NEW TRANSLATION
+ rcw.4.a: "Nenechte naživu ani jediného [SCOPE.GetRootScope.GetCountry.GetCustom('enemy_rcw_side_loc')] psa!" # todo: NEW TRANSLATION
+ rcw.4.b: "Ujistěte se, že většina z nich skutečně sympatizuje s [SCOPE.GetRootScope.GetCountry.GetCustom('enemy_rcw_side_loc')]." # todo: NEW TRANSLATION
+ rcw_whites_custom: "Bílí" # todo: NEW TRANSLATION
+ rcw_reds_custom: "Rudí" # todo: NEW TRANSLATION
+ rcw_generic_custom: "Ruský" # todo: NEW TRANSLATION
+ rcw_generic_2_custom: "nepřítel" # todo: NEW TRANSLATION
+ rcw_terror: "Teror" # todo: NEW TRANSLATION
+ rcw.5.t: "Ruské zlaté rezervy" # todo: NEW TRANSLATION
+ rcw.5.d: "[SCOPE.sCharacter('kazan_ruler').GetFullName] nařídil [SCOPE.GetRootScope.GetCountry.GetCustom('enemy_rcw_side_loc')] armádě přepravit většinu ruských zlatých rezerv do oblasti [SCOPE.sState('kazan_owner_capital').GetCityHubName], sídla vlády země [SCOPE.sCountry('kazan_owner').GetAdjective]. Konvoj obrněných vlaků právě odváží zlato z oblasti [SCOPE.sState('kazan_state').GetName]." # todo: NEW TRANSLATION
+ rcw.5.f: "U vagónu, kde se nacházela strážnice, jsme byli svědky příznačné scény. Dorazila nová stráž, asi dva tucty mladíků, kteří neměli ponětí a vůbec je nezajímalo, co jim bylo svěřeno na hlídání. Stáli ve skupince, smáli se nebo nadávali a rozhlíželi se na všechny strany. Soudruh Šelepin, velitel první sovětské stráže, chtěl vidět jejich velitele, kterého však nebylo možné najít. Nakonec se odněkud vynořil — beze zbraně a opasku, jen ve své pláštěnce a plstěných botách. \n\n — Čila, velitel 10. českého pluku" # todo: NEW TRANSLATION
+ rcw.5.a: "To zlato potřebujeme!" # todo: NEW TRANSLATION
+ russian_gold_reserves_lost: "Ztráta ruských zlatých rezerv" # todo: NEW TRANSLATION
+ capture_gold_reserves_capital_tt: "Část zlatých rezerv získáme zpět, pokud znovu dobudeme oblast [SCOPE.sState('kazan_owner_capital').GetName]." # todo: NEW TRANSLATION
+ rcw.6.t: "Získání zlatých rezerv zpět" # todo: NEW TRANSLATION
+ rcw.6.d: "Zlaté rezervy byly konečně získány zpět z trezorů v oblasti [SCOPE.sState('russian_gold_state').GetCityHubName]. Zdá se, že velká část chybí, pravděpodobně byla prodána na financování válečného úsilí [SCOPE.GetRootScope.GetCountry.GetCustom('enemy_rcw_side_loc')]." # todo: NEW TRANSLATION
+ rcw.6.f: "Přeprava vlaku se zlatými rezervami probíhá následovně: vpředu jede určený vlak s rotou stráží, čítající až 150 mužů; během jízdy jsou hlídky na střechách vagónů, na zadních plošinách a na lokomotivě, při zastávkách pak u vagónů; před vlakem jede kulomet s obsluhou a hlídka obchází vlak. \n\n — Alexandr Kosuchin, důstojník Čeky" # todo: NEW TRANSLATION
+ rcw.6.a: "Aspoň se nám podařilo získat část zlata zpět." # todo: NEW TRANSLATION
+ rcw.7.t: "Osud cara" # todo: NEW TRANSLATION
+ rcw.7.d: "Byl vydán rozkaz zastřelit bývalého cara [SCOPE.sCharacter('void_tsar_scope').GetFullName] v [SCOPE.sCharacter('void_tsar_scope').GetHerHis] dočasném domově v oblasti [SCOPE.sState('tsar_temp_state').GetFarmHubName], spolu s [SCOPE.sCharacter('void_tsar_scope').GetHerHis] přeživší rodinou." # todo: NEW TRANSLATION
+ rcw.7.d2: "Od svržení cara [SCOPE.sCharacter('void_tsar_scope').GetFullName] už nějaká doba uplynula a rozhodnutí už nelze dále odkládat. Musíme rozhodnout o [SCOPE.sCharacter('void_tsar_scope').GetHerHis] osudu." # todo: NEW TRANSLATION
+ rcw.7.f: "„A rodina?“\n„I rodina s ním.“\n„Všichni?“\n„Všichni.“\n\n — Lev Trockij, #italic Deník v exilu#!" # todo: NEW TRANSLATION
+ rcw.7.f2: "Chtěli jsme si trochu zacvičit, a tak jsme se zabavili odklízením ledu, který ucpával propusti rybníka. Brzy se podél zábradlí parku sešel dav vojáků a civilistů, kteří sledovali naši práci. Po nějaké době přišel důstojník stráže k carovi a oznámil mu, že ho velitel posádky v Carském Selu právě varoval před obávanou nepřátelskou demonstrací, nebo dokonce pokusem o životy členů císařské rodiny, a požádal nás, abychom nezůstávali tam, kde jsme. Car odpověděl, že se nebojí a že mu dobří lidé nijak nevadí. \n\n — Pierre Gilliard, #italic Třináct let na ruském dvoře#!" # todo: NEW TRANSLATION
+ rcw.7.a: "Soud a poprava [SCOPE.sCharacter('void_tsar_scope').GetFullName] budou podívanou pro masy." # todo: NEW TRANSLATION
+ rcw.7.b: "Bývalý car může odejít do oblasti [SCOPE.sState('tsar_temp_state').GetFarmHubName] a zůstat v domácím vězení." # todo: NEW TRANSLATION
+ rcw.7.c: "Takové vychloubání krvežíznivostí..." # todo: NEW TRANSLATION
+ fate_of_the_tsar: "Osud cara" # todo: NEW TRANSLATION
+ je_bolsheviks: "Co dělat?" # todo: NEW TRANSLATION
+ je_bolsheviks_reason: "O moc v zemi [SCOPE.sCountry('russia_scope').GetName] soupeří tři socialistické frakce:\n\n#b Bolševici#! podporují [GetIdeology('ideology_vanguardist').GetName] výklad $marxism$ a čerpají podporu z hnutí #v $movement_communist$#!, #v $movement_labor$#! a zájmové skupiny [SCOPE.gsInterestGroup('unions_scope').GetName]. #b Bolševici#! provedou převrat, jakmile získají dostatečnou podporu a [concept_legitimacy] klesne na 50, nebo se vlády chopí prozatímní vláda.\n\n#b Menševici#! zastávají ideologii [GetIdeology('ideology_state_socialist').GetName] a čerpají podporu z hnutí #v $movement_socialist$#!, #v $movement_labor$#! a zájmové skupiny [SCOPE.gsInterestGroup('nerds_scope').GetName]. #b Menševici#! podporují postupný přechod k socialismu a moci se neujmou mimořádnými prostředky.\n\n#b Leví socialisté-revolucionáři#! jsou [GetIdeology('ideology_anarchist').GetName] frakce agrárních socialistů. Čerpají podporu z hnutí #v $movement_land_reform$#!, #v $movement_anarchist$#! a zájmové skupiny [SCOPE.gsInterestGroup('peasants_scope').GetName]. #b Leví eserové#! provedou převrat, jakmile získají dostatečnou podporu a $concept_legitimacy$ klesne na 50, nebo se vlády chopí prozatímní vláda.\n\nPodpora každé frakce se postupně přibližuje cílové hodnotě, kterou určují tyto zdroje a [concept_popularity] a [concept_prominence] jejího vůdce." # todo: NEW TRANSLATION
+ je_bolsheviks_possible_tt: "[concept_journal_entry] #v $je_reform_or_revolution$#! skončil vítězstvím #b reformistů#!" # todo: NEW TRANSLATION
+ je_bolshevik_bar: "Bolševici" # todo: NEW TRANSLATION
+ je_bolshevik_bar_desc: "Podpora bolševiků: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[ScriptedProgressBar.GetMaxValue|0])" # todo: NEW TRANSLATION
+ je_menshevik_bar: "Menševici" # todo: NEW TRANSLATION
+ je_menshevik_bar_desc: "Podpora menševiků: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[ScriptedProgressBar.GetMaxValue|0])" # todo: NEW TRANSLATION
+ je_left_sr_bar: "Leví socialisté-revolucionáři" # todo: NEW TRANSLATION
+ je_left_sr_bar_desc: "Podpora levých eserů: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[ScriptedProgressBar.GetMaxValue|0])" # todo: NEW TRANSLATION
+ bolshevik_bar_moderating_factor_tt: "posun k cílové podpoře #b bolševiků#! na úrovni #tooltippable;tooltip:[GetPlayer.GetTooltipTag],bolshevik_pivot_factors_tt [ROOT.GetCountry.MakeScope.Var('bolshevik_pivot_var').GetValue|0]#!" # todo: NEW TRANSLATION
+ bolshevik_pivot_factors_tt: "Cílová podpora #b bolševiků#!: [GetPlayer.MakeScope.ScriptValue('bolshevik_value')|0]/200  #indent_newline:3 \n[GetPlayer.MakeScope.GetScriptValueDesc('bolshevik_value')]#!" # todo: NEW TRANSLATION
+ menshevik_bar_moderating_factor_tt: "posun k cílové podpoře #b menševiků#! na úrovni #tooltippable;tooltip:[GetPlayer.GetTooltipTag],menshevik_pivot_factors_tt [ROOT.GetCountry.MakeScope.Var('menshevik_pivot_var').GetValue|0]#!" # todo: NEW TRANSLATION
+ menshevik_pivot_factors_tt: "Cílová podpora #b menševiků#!: [GetPlayer.MakeScope.ScriptValue('menshevik_value')|0]/200  #indent_newline:3 \n[GetPlayer.MakeScope.GetScriptValueDesc('menshevik_value')]#!" # todo: NEW TRANSLATION
+ left_sr_bar_moderating_factor_tt: "posun k cílové podpoře #b levých eserů#! na úrovni #tooltippable;tooltip:[GetPlayer.GetTooltipTag],left_sr_pivot_factors_tt [ROOT.GetCountry.MakeScope.Var('left_sr_pivot_var').GetValue|0]#!" # todo: NEW TRANSLATION
+ left_sr_pivot_factors_tt: "Cílová podpora #b levých eserů#!: [GetPlayer.MakeScope.ScriptValue('left_sr_value')|0]/200  #indent_newline:3 \n[GetPlayer.MakeScope.GetScriptValueDesc('left_sr_value')]#!" # todo: NEW TRANSLATION
+ socialist_faction_movement_desc: "[Concept('concept_political_movement_support', '$concept_political_movement_support_short|q$')] spřízněných [Concept('concept_political_movement','$concept_political_movements|q$')]" # todo: NEW TRANSLATION
+ socialist_faction_labor_desc: "Podpora v rámci hnutí #v $movement_labor$#!" # todo: NEW TRANSLATION
+ socialist_faction_leader_prominence_desc: "[concept_prominence] vůdce frakce" # todo: NEW TRANSLATION
+ socialist_faction_leader_popularity_desc: "[concept_popularity] vůdce frakce" # todo: NEW TRANSLATION
+ socialist_faction_ig_clout_desc: "[concept_clout] spřízněných [Concept('concept_interest_group','$concept_interest_groups|q$')]" # todo: NEW TRANSLATION
+ je_bolsheviks_grace_over_tt: "Tento [concept_journal_entry] je aktivní déle než #v 1 rok#!" # todo: NEW TRANSLATION
+ socialist_factions_all_weak_tt: "Každá socialistická frakce má podporu nižší než [Divide_CFixedPoint(GetPlayer.MakeScope.ScriptValue('socialist_faction_bar_failure_threshold'), '(CFixedPoint)2')|v0] %" # todo: NEW TRANSLATION
+ suppress_russian_socialist_faction: "Socialistické frakce potlačeny" # todo: NEW TRANSLATION
+ discredited_leftist_modifier: "Zdiskreditovaný levičák" # todo: NEW TRANSLATION
+ popular_leftist_movement_setback: "Neúspěch levicového hnutí" # todo: NEW TRANSLATION
+ bolshevik_government_modifier: "Disciplína avantgardy" # todo: NEW TRANSLATION
+ menshevik_government_modifier: "Sociálnědemokratický konsenzus" # todo: NEW TRANSLATION
+ sr_government_modifier: "Půda rolníkům" # todo: NEW TRANSLATION
+ bolshevik_leader_status: "Bolševiky vede [ROOT.Var('bolshevik_leader').GetCharacter.GetFullName]\n" # todo: NEW TRANSLATION
+ bolshevik_leader_status_empty: "Bolševikům chybí výrazný vůdce\n" # todo: NEW TRANSLATION
+ menshevik_leader_status: "Menševiky vede [ROOT.Var('menshevik_leader').GetCharacter.GetFullName]\n" # todo: NEW TRANSLATION
+ menshevik_leader_status_empty: "Menševikům chybí výrazný vůdce\n" # todo: NEW TRANSLATION
+ sr_leader_status: "Levé esery vede [ROOT.Var('left_sr_leader').GetCharacter.GetFullName]" # todo: NEW TRANSLATION
+ sr_leader_status_empty: "Levým eserům chybí výrazný vůdce" # todo: NEW TRANSLATION
+ je_bolsheviks_bolsheviks_conclusion_desc: "$concept_journal_entry$ skončil vítězstvím #b bolševiků#!" # todo: NEW TRANSLATION
+ je_bolsheviks_mensheviks_header: "K dosažení vítězství #b menševiků#!:\n" # todo: NEW TRANSLATION
+ je_bolsheviks_mensheviks_conclusion_desc: "$concept_journal_entry$ skončil vítězstvím #b menševiků#!" # todo: NEW TRANSLATION
+ je_bolsheviks_mensheviks_effect_header: "Při vítězství #b menševiků#!:\n$EFFECT$" # todo: NEW TRANSLATION
+ je_bolsheviks_sr_header: "K dosažení vítězství #b levých eserů#!:\n" # todo: NEW TRANSLATION
+ je_bolsheviks_sr_conclusion_desc: "$concept_journal_entry$ skončil vítězstvím #b levých eserů#!" # todo: NEW TRANSLATION
+ je_bolsheviks_sr_effect_header: "Při vítězství #b levých eserů#!:\n$EFFECT$" # todo: NEW TRANSLATION
+ je_bolsheviks_coup_header: "K dosažení vítězství #b bolševiků#!:\n" # todo: NEW TRANSLATION
+ je_bolsheviks_coup_effect_header: "Při vítězství #b bolševiků#!:\n$EFFECT$" # todo: NEW TRANSLATION
+ bolshevik_bar_strong: "#b Bolševici#! mají podporu alespoň [Divide_CFixedPoint(GetPlayer.MakeScope.ScriptValue('socialist_faction_bar_victory_threshold'), '(CFixedPoint)2')|v0] %" # todo: NEW TRANSLATION
+ menshevik_bar_strong: "#b Menševici#! mají podporu alespoň [Divide_CFixedPoint(GetPlayer.MakeScope.ScriptValue('socialist_faction_bar_victory_threshold'), '(CFixedPoint)2')|v0] %" # todo: NEW TRANSLATION
+ has_communist_revolution_tt: "Zažívá #v $movement_communist_short$#! nebo #v $movement_labor_short$#! [concept_revolution] s alespoň #v 50%#! pokroku" # todo: NEW TRANSLATION
+ has_peasant_anarchist_revolution_tt: "Zažívá #v $movement_anarchist_short$#! nebo #v $movement_land_reform_short$#! [concept_revolution] s alespoň #v 50%#! pokroku" # todo: NEW TRANSLATION
+ je_bolsheviks_invalid_conclusion_desc: "$concept_journal_entry$ skončil přijetím #v $law_council_republic$#!" # todo: NEW TRANSLATION
+ sr_bar_strong: "#b Levicoví eserové#! mají alespoň [Divide_CFixedPoint(GetPlayer.MakeScope.ScriptValue('socialist_faction_bar_victory_threshold'), '(CFixedPoint)2')|v0]% podpory" # todo: NEW TRANSLATION
+ bolsheviks.1.t: "Co dělat?" # todo: NEW TRANSLATION
+ bolsheviks.1.desc: "[SCOPE.sCountry('russia_scope').GetAdjective]á levice se ostře rozdělila na tři frakce s velmi odlišnými vizemi budoucnosti. #b Bolševici#! vedou [SCOPE.sPoliticalMovement('bolshevik_movement').GetName], #b menševici#! vedou [SCOPE.sPoliticalMovement('menshevik_movement').GetName] a levicoví eserové vedou [SCOPE.sPoliticalMovement('left_sr_movement').GetName]." # todo: NEW TRANSLATION
+ bolsheviks.1.f: "„Jediným vážným organizačním principem, který mohou aktivní pracovníci našeho hnutí přijmout, je přísné utajení, přísný výběr členů a výcvik profesionálních revolucionářů.“\n\n—Vladimir Lenin, #italic Co dělat?#!" # todo: NEW TRANSLATION
+ bolsheviks.1.a: "Podpořit #b bolševiky#!" # todo: NEW TRANSLATION
+ bolsheviks.1.b: "Podpořit #b menševiky#!" # todo: NEW TRANSLATION
+ bolsheviks.1.c: "Podpořit #b levicové esery#!" # todo: NEW TRANSLATION
+ bolsheviks.1.d: "Zrada! Povstání!" # todo: NEW TRANSLATION
+ bolsheviks_start_at_tt: "Podpora #b bolševiků#! začne na hodnotě #v [Divide_CFixedPoint(GetPlayer.MakeScope.Var('bolshevik_current_var').GetValue, '(CFixedPoint)2')|1]%#!" # todo: NEW TRANSLATION
+ mensheviks_start_at_tt: "Podpora #b menševiků#! začne na hodnotě #v [Divide_CFixedPoint(GetPlayer.MakeScope.Var('menshevik_current_var').GetValue, '(CFixedPoint)2')|1]%#!" # todo: NEW TRANSLATION
+ left_sr_start_at_tt: "Podpora #b levicových eserů#! začne na hodnotě #v [Divide_CFixedPoint(GetPlayer.MakeScope.Var('left_sr_current_var').GetValue, '(CFixedPoint)2')|1]%#!" # todo: NEW TRANSLATION
+ support_russian_socialist_faction: "Rostoucí socialistické nálady" # todo: NEW TRANSLATION
+ bolsheviks.2.t: "Převrat [SCOPE.GetRootScope.GetCountry.GetCustom('bolsheviks_srs')]" # todo: NEW TRANSLATION
+ bolsheviks.2.t_1: "Dobytí Zimního paláce" # todo: NEW TRANSLATION
+ bolsheviks: "Bolševik" # todo: NEW TRANSLATION
+ left_srs: "Socialistický revolucionář" # todo: NEW TRANSLATION
+ bolsheviks_plural: "Bolševici" # todo: NEW TRANSLATION
+ left_srs_plural: "Levicoví eserové" # todo: NEW TRANSLATION
+ proletariat_loc: "proletariát" # todo: NEW TRANSLATION
+ peasants_loc: "rolnictvo" # todo: NEW TRANSLATION
+ bolsheviks.2.d: "[SCOPE.GetRootScope.GetCountry.GetCustom('bolsheviks_srs_plural')], pod vedením [SCOPE.sCharacter('rev_leader').GetFullName], zmobilizovali [SCOPE.GetRootScope.GetCountry.GetCustom('peasants_proletariat')] a dobyli palác v [ROOT.GetCountry.GetCapital.GetCityHubName]. Nový režim prohlásil, že se [SCOPE.sCountry('russia_scope').GetName] od nynějška stane [GetLawType('law_council_republic').GetName]." # todo: NEW TRANSLATION
+ bolsheviks.2.f: "„Máme sílu masové organizace, která všechno překoná a povede proletariát ke světové revoluci. Nyní musíme začít budovat proletářský socialistický stát v Rusku. Ať žije světová socialistická revoluce!“\n\n—Vladimir Lenin" # todo: NEW TRANSLATION
+ bolsheviks.2.a: "Sláva revoluci!" # todo: NEW TRANSLATION
+ bolsheviks.3.t: "Vítězství socialistů" # todo: NEW TRANSLATION
+ bolsheviks.3.d: "[SCOPE.GetRootScope.GetCountry.GetCustom('bolsheviks_srs_plural')] pod vedením [SCOPE.sCharacter('socialist_faction_leader').GetFullName] konečně položili základy své socialistické republiky. Moc pevně drží ve svých rukou a budoucnost [SCOPE.sCountry('russia_scope').GetName] se chystá vydat odvážným novým směrem." # todo: NEW TRANSLATION
+ bolsheviks.3.f: "„Naše strana... má před sebou obrovskou budoucnost. Je stranou zářné, mocné víry v socialismus a Internacionálu. Nelze ji zničit, ani vámi, ani dočasnou reakcí, protože ona i její myšlenky žijí v masách, jsou zakořeněny v hlubinách jejich psychologie a revoluční obrození celého lidstva nevyhnutelně proběhne pod praporem její Ideje, Ideje osvobození lidské osobnosti.“\n\n—Maria Spiridonova" # todo: NEW TRANSLATION
+ bolsheviks.3.a: "Ať žije socialismus!" # todo: NEW TRANSLATION
+ bol_labor_add: "#b Bolševici#! získají větší podporu od [SCOPE.sPoliticalMovement('labor_movement_scope').GetName]" # todo: NEW TRANSLATION
+ men_labor_add: "#b Menševici#! získají větší podporu od [SCOPE.sPoliticalMovement('labor_movement_scope').GetName]" # todo: NEW TRANSLATION
+ bol_labor_subtract: "#b Bolševici#! získají menší podporu od [SCOPE.sPoliticalMovement('labor_movement_scope').GetName]" # todo: NEW TRANSLATION
+ men_labor_subtract: "#b Menševici#! získají menší podporu od [SCOPE.sPoliticalMovement('labor_movement_scope').GetName]" # todo: NEW TRANSLATION
+ bolsheviks.4.t: "Masy a předvoj" # todo: NEW TRANSLATION
+ bolsheviks.4.d: "Na velkém shromáždění [SCOPE.sPoliticalMovement('labor_movement_scope').GetName] vedou [SCOPE.sCharacter('bolshevik_leader').GetFullName] a [SCOPE.sCharacter('menshevik_leader').GetFullName] vášnivou debatu o úloze proletariátu v organizování revoluce. Oba doufají, že získají příznivce pro své frakce, #b bolševiky#! a #b menševiky#!." # todo: NEW TRANSLATION
+ bolsheviks.4.f: "Za nimi, za těmito vůdci, stojí celé masy bojovníků, revolučních dělníků, kteří roznášejí provolání, vybírají peníze, demonstrují v ulicích, jdou do vězení i do vyhnanství, ale nepatří ani k žádnému výboru, ani k jiné organizaci. Nejsou tito bojovníci, tito naši vojáci, členy strany? Máme je ze strany vyloučit? Kdo ve straně zůstane? Jen generálové bez armády.  \n\n — 23. zasedání druhého sjezdu RSDDS" # todo: NEW TRANSLATION
+ bolsheviks.4.a: "#b Bolševici#! [SCOPE.sCharacter('bolshevik_leader').GetFullName] povedou předvoj lidu." # todo: NEW TRANSLATION
+ bolsheviks.4.b: "Výzva #b menševiků#! ke zdrženlivosti bude mít největší ohlas." # todo: NEW TRANSLATION
+ bolsheviks.4.c: "To jsou jen prázdné řeči." # todo: NEW TRANSLATION
+ bolshevik_labor_activism: "Bolševický aktivismus mezi dělníky" # todo: NEW TRANSLATION
+ menshevik_labor_support: "Podpora menševiků mezi dělníky" # todo: NEW TRANSLATION
+ social_faction_labor_failure: "Rozčarovaní dělníci" # todo: NEW TRANSLATION
+ most_popular_leftist_modifier: "Významný levičák" # todo: NEW TRANSLATION
+ popular_leftist_movement_support: "Vzestup levice" # todo: NEW TRANSLATION
+ bolsheviks.5.t: "Rozkolníci!" # todo: NEW TRANSLATION
+ bolsheviks.5.d: "Na velké konferenci [SCOPE.GetRootScope.GetCountry.GetCustom('bolsheviks_srs_plural')] vypukl chaos. Hrozby rozkolu a obvinění z liberalismu se jen množí, dokud [SCOPE.sCharacter('most_popular_leftist').GetFullName] nezvýší [SCOPE.sCharacter('most_popular_leftist').GetHerHis] hlas a neobrátí se k davu…" # todo: NEW TRANSLATION
+ bolsheviks.5.f: "Jestliže se, uneseni logikou toho, co jste začali, oddělíte a vytvoříte samostatnou politickou stranu, okamžitě sklidíte to, co nyní zaséváte: rozpadnete se na řadu frakčních skupin, neschopných dodržovat stranickou disciplínu, jednajících jako partyzáni, každá po svém, a vaše strana se stane obětí úplného rozptýlení a rozdrobení. \n\n — Victor Černov" # todo: NEW TRANSLATION
+ bolsheviks.5.a: "Tento projev bude inspirovat celé generace [SCOPE.GetRootScope.GetCountry.GetCustom('bolsheviks_srs_plural')]." # todo: NEW TRANSLATION
+ bolsheviks.5.b: "Pověst [SCOPE.sCharacter('most_popular_leftist').GetLastName] se z tak trapné rétoriky nikdy nevzpamatuje." # todo: NEW TRANSLATION
+ mensheviks_plural: "Menševici" # todo: NEW TRANSLATION

@@ -2,16 +2,16 @@
  SET_CHARACTER_EFFECT: "#V $CHARACTER|v$#! stává se charakterem příkazu #V $COMMAND$#!"
  SET_CHARACTER_NONE_EFFECT: "Postava #V $COMMAND$ není přiřazena"
  ADD_TREASURY_EFFECT_POSITIVE: "Země obdrží @money!$VALUE|+=$"
- ADD_TREASURY_EFFECT_NEGATIVE: "Země ztrácí @money![Negate_CFixedPoint('(CFixedPoint)$VALUE$')|+]"
+ ADD_TREASURY_EFFECT_NEGATIVE: "Země ztrácí @money![Negate_CFixedPoint('(CFixedPoint)$VALUE$')|+]" # todo: CHANGED (predtym: Země ztrácí @money![Negate_CFixedPoint('(CFixedPoint)$VALUE|q$')|+])
  ADD_TREASURY_EFFECT_FIRST_POSITIVE: "[COUNTRY.GetNameNoFlag] získává @money!$VALUE|+=$"
- ADD_TREASURY_EFFECT_FIRST_NEGATIVE: "[COUNTRY.GetNameNoFlag] ztrácí @money![Negate_CFixedPoint('(CFixedPoint)$VALUE$')|+]"
+ ADD_TREASURY_EFFECT_FIRST_NEGATIVE: "[COUNTRY.GetNameNoFlag] ztrácí @money![Negate_CFixedPoint('(CFixedPoint)$VALUE$')|+]" # todo: CHANGED (predtym: [COUNTRY.GetNameNoFlag] ztrácí @money![Negate_CFixedPoint('(CFixedPoint)$VALUE|q$')|+])
  ADD_TREASURY_EFFECT_THIRD_POSITIVE: "[COUNTRY.GetName] získává @money!$VALUE|+=$"
- ADD_TREASURY_EFFECT_THIRD_NEGATIVE: "[COUNTRY.GetName] ztrácí @money![Negate_CFixedPoint('(CFixedPoint)$VALUE$')|+]"
+ ADD_TREASURY_EFFECT_THIRD_NEGATIVE: "[COUNTRY.GetName] ztrácí @money![Negate_CFixedPoint('(CFixedPoint)$VALUE$')|+]" # todo: CHANGED (predtym: [COUNTRY.GetName] ztrácí @money![Negate_CFixedPoint('(CFixedPoint)$VALUE|q$')|+])
  EXECUTE_EVENT_OPTION: "$EFFECT_DESC$"
  SET_COUNTRY_ARMY_SP_TARGET: "#variable [COUNTRY.GetAdjectiveNoFormatting]#! armáda Síla Bod(@army_SP!) cíl nastaven na #variable $VALUE$#!"
  SET_COUNTRY_NAVY_SP_TARGET: "#variable [COUNTRY.GetAdjectiveNoFormatting]"
  SET_RELATIONS: "#variable [COUNTRY.GetAdjectiveNoFormatting]#! vztahy vůči #variable [TARGET_COUNTRY.GetName]#! jsou nastaveny na #variable $VALUE|0$#!"
- SET_TENSION: "[Concept('concept_tension','Napětí')] mezi [COUNTRY.GetAltAdjective('I')] a [TARGET_COUNTRY.GetAltAdjective('I')] nastavena na #variable $VALUE|0$#!"
+ SET_TENSION: "[Concept('concept_tension','Napětí')] mezi [COUNTRY.GetAltAdjective('I')] a [TARGET_COUNTRY.GetAltAdjective('I')] nastavena na #variable $VALUE|0$#!" # todo: CHANGED (predtym: [Concept('concept_tension', '$concept_tensions|q$')] mezi [COUNTRY.GetName] a [TARGET_COUNTRY.GetName] nastavena na vari)
  SET_STRATEGY: "[COUNTRY.GetName] přijímá #variable [AIStrategy.GetName]#! strategii"
  SET_DIPLOMATS_EXPELLED: "Vyhnat diplomaty [TARGET_COUNTRY.GetName], čímž se brání všem zlepšením vztahů po dobu #b 5 let#!"
  SET_DIPLOMATS_EXPELLED_NEGATIVE: "[TARGET_COUNTRY.GetAltAdjective('sti')] diplomaté #b nebudou#! ze země #b vyhoštěni#!, což zabrání jakémukoli zlepšování vztahů po dobu #b 5 let#!"
@@ -23,8 +23,8 @@
  SET_MUTUAL_SECRET_GOAL: "[COUNTRY.GetName] a [TARGET_COUNTRY.GetName] přijímají #variable $SECRET_GOAL$#! tajný cíl vůči sobě"
  SET_TAX_LEVEL: "[COUNTRY.GetName] má svou celkovou úroveň [Concept('concept_taxes','zdanění')] nastavenu na #variable $TARIFF_LEVEL$#!"
  SET_TAX_LEVEL_FIRST: "[COUNTRY.GetName] má celkovou úroveň [Concept('concept_taxes','zdanění')] nastavenu na #variable $TARIFF_LEVEL$#!"
- SET_TAX_LEVEL_THIRD: "[COUNTRY.GetName] má svou celkovou úroveň [Concept('concept_taxes','zdanění')] nastavenu na"
- SET_TARIFF_FOCUS: "[COUNTRY.GetName] má svůj [Concept('concept_tariffs','$concept_tariff$')|l] zaměření pro [Goods.GetCustom('GDS_A_TT')] nastavenu na" # todo: NAME CASE
+ SET_TAX_LEVEL_THIRD: "[COUNTRY.GetName] má svou celkovou úroveň [Concept('concept_taxes','zdanění')] nastavenu na" # todo: CHANGED (predtym: [COUNTRY.GetName] má svou celkovou úroveň [Concept('concept_taxes','$concept_taxation|q$')] nastavenu na variable $TARIF)
+ SET_TARIFF_FOCUS: "[COUNTRY.GetName] má svůj [Concept('concept_tariffs','$concept_tariff|q$')|l] zaměření pro [Goods.GetAltName('adj_A')] nastavenu na" # todo: CHANGED (predtym: [COUNTRY.GetName] má svůj [Concept('concept_tariffs','$concept_tariff|q$')|l] zaměření pro [Goods.GetName] nastavenu na )
  SET_GOVERNMENT_WAGE_LEVEL: "[COUNTRY.GetName] má svou úroveň [Concept('concept_government_wage','vládní mzda')|l] nastavenu na"
  SET_MILITARY_WAGE_LEVEL: "[COUNTRY.GetName] má stanovenou úroveň [Concept('concept_military_wage','vojenská mzda')|l] na #v $WAGE_LEVEL$#!"
  ADD_CHANGE_RELATIONS_PROGRESS: "#variable [COUNTRY.GetAdjectiveNoFormatting]#! získává pokrok v změně vztahů #variable $VALUE$#! s [TARGET_COUNTRY.GetName]"
@@ -37,6 +37,8 @@
  SET_STOCKPILE: "$SET_ARMY_STOCKPILE$"
  ACTIVATE_LAW: "[COUNTRY.GetName] aktivuje zákon [Law.GetFullNameWithStatus]"
  ACTIVATE_LAW_FIRST: "[COUNTRY.GetNameNoFlag] zavádí zákon [Law.GetFullNameWithStatus]"
+ ENACT_LAW_EFFECT: "[COUNTRY.GetName] přijímá zákon [Law.GetFullNameWithStatus]" # todo: NEW TRANSLATION
+ ENACT_LAW_EFFECT_FIRST: "[COUNTRY.GetNameNoFlag] přijímá zákon [Law.GetFullNameWithStatus]" # todo: NEW TRANSLATION
  SET_INSTITUTION_INVESTMENT_LEVEL: "[COUNTRY.GetName] změní investiční úroveň instituce [INSTITUTION.GetName] na $LEVEL|v$"
  CHANGE_INSTITUTION_INVESTMENT_LEVEL: "[Country.GetName] změní investiční úroveň instituce [Institution.GetName] o $INVESTMENT|v$"
  ACTIVATE_LAW_WITH_INVESTMENT_LEVEL: "[COUNTRY.GetName] povoluje zákon [Law.GetFullNameWithStatus] s investiční úrovní $LEVEL|v$"
@@ -71,8 +73,8 @@
  CHANGE_RELATIONS_FIRST_NEG: "[COUNTRY.GetAdjectiveNoFlag] [Concept('concept_relations','vztahy')] vůči [TARGET_COUNTRY.GetName] se zhorší o $VALUE|0-$"
  CHANGE_RELATIONS_THIRD: "[COUNTRY.GetAdjective] [Concept('concept_relations','vztahy')] vůči [TARGET_COUNTRY.GetName] se zlepší o $VALUE|0+$"
  CHANGE_RELATIONS_THIRD_NEG: "[COUNTRY.GetAdjective] [Concept('concept_relations','vztahy')] vůči [TARGET_COUNTRY.GetName] se zhorší o $VALUE|0-$"
- CHANGE_TENSION: "[Concept('concept_tension','Napětí')] mezi [COUNTRY.GetAltAdjective('I')] a [TARGET_COUNTRY.GetAltAdjective('I')] se zvýšilo o #N $VALUE|0$#!"
- CHANGE_TENSION_NEG: "[Concept('concept_tension','Napětí')] mezi [COUNTRY.GetAltAdjective('I')] a [TARGET_COUNTRY.GetAltAdjective('I')] se snížilo o #P $VALUE|0$#!"
+ CHANGE_TENSION: "[Concept('concept_tension','Napětí')] mezi [COUNTRY.GetAltAdjective('I')] a [TARGET_COUNTRY.GetAltAdjective('I')] se zvýšilo o #N $VALUE|0$#!" # todo: CHANGED (predtym: [Concept('concept_tension', '$concept_tensions|q$')] mezi [COUNTRY.GetName] a [TARGET_COUNTRY.GetName] se zvýšilo o N $V)
+ CHANGE_TENSION_NEG: "[Concept('concept_tension','Napětí')] mezi [COUNTRY.GetAltAdjective('I')] a [TARGET_COUNTRY.GetAltAdjective('I')] se snížilo o #P $VALUE|0$#!" # todo: CHANGED (predtym: [Concept('concept_tension', '$concept_tensions|q$')] mezi [COUNTRY.GetName] a [TARGET_COUNTRY.GetName] se snížilo o P $V)
  SET_OWES_OBLIGATION_TO: "Dluží [Concept('concept_obligation','závazek')|l] [TARGET_COUNTRY.GetAltAdjective('D')]"
  SET_OWES_OBLIGATION_TO_NEG: "Už nedluží [Concept('concept_obligation','závazek')|l] [TARGET_COUNTRY.GetAltAdjective('D')]"
  SET_OWES_OBLIGATION_TO_FIRST: "[COUNTRY.GetNameNoFlag] dluží [Concept('concept_obligation','závazek')|l] [TARGET_COUNTRY.GetAltAdjective('D')]"
@@ -82,8 +84,8 @@
  VALIDATE_SUBSIDIES: "[COUNTRY.GetName] zajistí, že jeho průmyslové dotace jsou platné"
  VALIDATE_SUBSIDIES_NEG: "[COUNTRY.GetName] NEBUDE zajišťovat, že její průmyslové dotace jsou platné"
  RECALCULATE_POP_IG_SUPPORT: "Všichni [Concept('concept_pop','populace')] okamžitě znovu zváží svou podporu [Concept('concept_interest_group','zájmových skupin')|l]" # todo: CONCEPT CASE
- RECALCULATE_POP_IG_SUPPORT_FIRST: "Všechna [Concept('concept_pop','populace')|l] v [COUNTRY.GetAltAdjectiveNoFlag('L')] okamžitě přehodnotí svou podporu [Concept('concept_interest_group','zájmových skupin')|l]"
- RECALCULATE_POP_IG_SUPPORT_THIRD: "Všichna [Concept('concept_pop','populace')|l] v [COUNTRY.GetAltAdjective('L')] okamžitě znovu zváží svou podporu [Concept('concept_interest_group','zájmových skupin')|l]"
+ RECALCULATE_POP_IG_SUPPORT_FIRST: "Všechna [Concept('concept_pop','populace')|l] v [COUNTRY.GetAltAdjectiveNoFlag('L')] okamžitě přehodnotí svou podporu [Concept('concept_interest_group','zájmových skupin')|l]" # todo: CHANGED (predtym: Všechna [Concept('concept_pop', '$concept_pops|q$')] v [COUNTRY.GetNameNoFlag] okamžitě přehodnotí svou podporu [concept)
+ RECALCULATE_POP_IG_SUPPORT_THIRD: "Všichna [Concept('concept_pop','populace')|l] v [COUNTRY.GetAltAdjective('L')] okamžitě znovu zváží svou podporu [Concept('concept_interest_group','zájmových skupin')|l]" # todo: CHANGED (predtym: Všechna [Concept('concept_pop', '$concept_pops|q$')] v [COUNTRY.GetName] okamžitě znovu zváží svou podporu [concept_inte)
  SET_COUNTRY_TYPE: "[COUNTRY.GetName] se stává #variable $COUNTRY_TYPE$#!"
  SET_COUNTRY_TYPE_FIRST: "[COUNTRY.GetNameNoFlag] se stává #variable $COUNTRY_TYPE$#!"
  SET_COUNTRY_TYPE_THIRD: "[COUNTRY.GetName] se stává #variable $COUNTRY_TYPE$#!"
@@ -111,28 +113,28 @@
  LIBERATE_SLAVES_THIRD: "Všichni [GetPopType('slaves').GetName] v $SUBJECT_NAME$ budou osvobozeni"
  LIBERATE_SLAVES_IN_INCORPORATED_STATES: "Všichni [GetPopType('slaves').GetName|l] v [Concept('concept_incorporated_state', 'nezačleněných státech')] budou osvobozeni"
  LIBERATE_SLAVES_IN_INCORPORATED_STATES_FIRST: "Všichni [GetPopType('slaves').GetName|l] v [Concept('concept_incorporated_state', 'nezačleněných státech')] v [Country.GetNameNoFlag] budou osvobozeni"
- LIBERATE_SLAVES_IN_INCORPORATED_STATES_THIRD: "Všichni [GetPopType('slaves').GetName|l] v [Concept('concept_incorporated_state', 'nezačleněných státech')] v [Country.GetAltAdjective('L')] budou osvobozeni"
+ LIBERATE_SLAVES_IN_INCORPORATED_STATES_THIRD: "Všichni [GetPopType('slaves').GetName|l] v [Concept('concept_incorporated_state', 'nezačleněných státech')] v [Country.GetAltAdjective('L')] budou osvobozeni" # todo: CHANGED (predtym: Všichni [GetPopType('slaves').GetName|l] v [Concept('concept_incorporated_state', '$concept_incorporated_states|q$')] v )
  LIBERATE_SLAVES_IN_UNINCORPORATED_STATES: "Všichni [GetPopType('slaves').GetName|l] v [Concept('concept_unincorporated_state', 'nezačleněných státech')] budou osvobozeni"
- LIBERATE_SLAVES_IN_UNINCORPORATED_STATES_FIRST: "Všichni [GetPopType('slaves').GetName|l] v [Concept('concept_unincorporated_state', 'nezačleněných státech')] v [Country.GetAltAdjectiveNoFlag('L')] budou osvobozeni"
- LIBERATE_SLAVES_IN_UNINCORPORATED_STATES_THIRD: "Všichni [GetPopType('slaves').GetName|l] v [Concept('concept_unincorporated_state', 'nezačleněných státech')] v [Country.GetAltAdjective('L')] budou osvobozeni"
+ LIBERATE_SLAVES_IN_UNINCORPORATED_STATES_FIRST: "Všichni [GetPopType('slaves').GetName|l] v [Concept('concept_unincorporated_state', 'nezačleněných státech')] v [Country.GetAltAdjectiveNoFlag('L')] budou osvobozeni" # todo: CHANGED (predtym: Všichni [GetPopType('slaves').GetName|l] v [Concept('concept_unincorporated_state', '$concept_unincorporated_states|q$'))
+ LIBERATE_SLAVES_IN_UNINCORPORATED_STATES_THIRD: "Všichni [GetPopType('slaves').GetName|l] v [Concept('concept_unincorporated_state', 'nezačleněných státech')] v [Country.GetAltAdjective('L')] budou osvobozeni" # todo: CHANGED (predtym: Všichni [GetPopType('slaves').GetName|l] v [Concept('concept_unincorporated_state', '$concept_unincorporated_states|q$'))
  SET_HEIR: "[TARGET_CHARACTER.GetFullName] se stává [Concept('concept_heir', Select_CString(TARGET_CHARACTER.IsFemale, 'dědičkou', 'dědicem'))|l]"
  SET_HEIR_FIRST: "[TARGET_CHARACTER.GetFullName] se stává [Concept('concept_heir', Select_CString(TARGET_CHARACTER.IsFemale, 'dědičkou', 'dědicem'))|l] [COUNTRY.GetAltAdjective('G')]"
  SET_HEIR_THIRD: "[TARGET_CHARACTER.GetFullName] se stává [Concept('concept_heir', Select_CString(TARGET_CHARACTER.IsFemale, 'dědičkou', 'dědicem'))|l] [COUNTRY.GetName]"
- ADD_PRIMARY_CULTURE: "[TARGET_CULTURE.GetName] se stává [Concept('concept_primary_cultures','primární kulturou')] [COUNTRY.GetAltAdjective('G')]"
- ADD_PRIMARY_CULTURE_FIRST: "[TARGET_CULTURE.GetName] se stává [Concept('concept_primary_cultures','primární kulturou')] [COUNTRY.GetAltAdjectiveNoFlag('G')]"
- ADD_PRIMARY_CULTURE_THIRD: "[TARGET_CULTURE.GetName] se stává [Concept('concept_primary_cultures','primární kulturou')] [COUNTRY.GetAltAdjective('G')]"
- REMOVE_PRIMARY_CULTURE: "[TARGET_CULTURE.GetName] přestává být [Concept('concept_primary_cultures','primární kulturou')] [COUNTRY.GetAltAdjective('G')]"
- REMOVE_PRIMARY_CULTURE_FIRST: "[TARGET_CULTURE.GetName] přestává být [Concept('concept_primary_cultures','primární kulturou')] [COUNTRY.GetAltAdjectiveNoFlag('G')]"
- REMOVE_PRIMARY_CULTURE_THIRD: "[TARGET_CULTURE.GetName] přestává být [Concept('concept_primary_cultures','primární kulturou')] [COUNTRY.GetAltAdjective('G')]"
+ ADD_PRIMARY_CULTURE: "[TARGET_CULTURE.GetName] se stává [Concept('concept_primary_cultures','primární kulturou')] [COUNTRY.GetAltAdjective('G')]" # todo: CHANGED (predtym: [TARGET_CULTURE.GetName] se stává [Concept('concept_primary_cultures','$concept_primary_culture|q$')] [COUNTRY.GetName])
+ ADD_PRIMARY_CULTURE_FIRST: "[TARGET_CULTURE.GetName] se stává [Concept('concept_primary_cultures','primární kulturou')] [COUNTRY.GetAltAdjectiveNoFlag('G')]" # todo: CHANGED (predtym: [TARGET_CULTURE.GetName] se stává [Concept('concept_primary_cultures','$concept_primary_culture|q$')] [COUNTRY.GetNameNo)
+ ADD_PRIMARY_CULTURE_THIRD: "[TARGET_CULTURE.GetName] se stává [Concept('concept_primary_cultures','primární kulturou')] [COUNTRY.GetAltAdjective('G')]" # todo: CHANGED (predtym: [TARGET_CULTURE.GetName] se stává [Concept('concept_primary_cultures','$concept_primary_culture|q$')] [COUNTRY.GetName])
+ REMOVE_PRIMARY_CULTURE: "[TARGET_CULTURE.GetName] přestává být [Concept('concept_primary_cultures','primární kulturou')] [COUNTRY.GetAltAdjective('G')]" # todo: CHANGED (predtym: [TARGET_CULTURE.GetName] přestává být [Concept('concept_primary_cultures','$concept_primary_culture|q$')] [COUNTRY.GetNa)
+ REMOVE_PRIMARY_CULTURE_FIRST: "[TARGET_CULTURE.GetName] přestává být [Concept('concept_primary_cultures','primární kulturou')] [COUNTRY.GetAltAdjectiveNoFlag('G')]" # todo: CHANGED (predtym: [TARGET_CULTURE.GetName] přestává být [Concept('concept_primary_cultures','$concept_primary_culture|q$')] [COUNTRY.GetNa)
+ REMOVE_PRIMARY_CULTURE_THIRD: "[TARGET_CULTURE.GetName] přestává být [Concept('concept_primary_cultures','primární kulturou')] [COUNTRY.GetAltAdjective('G')]" # todo: CHANGED (predtym: [TARGET_CULTURE.GetName] přestává být [Concept('concept_primary_cultures','$concept_primary_culture|q$')] [COUNTRY.GetNa)
  SET_STATE_RELIGION: "[TARGET_RELIGION.GetName] se stává státním náboženstvím [COUNTRY.GetAltAdjective('G')]"
  SET_STATE_RELIGION_FIRST: "[TARGET_RELIGION.GetName] se stává [Concept('concept_state_religion','státním náboženstvím')|l] [COUNTRY.GetAltAdjectiveNoFlag('G')]"
  SET_STATE_RELIGION_THIRD: "[TARGET_RELIGION.GetName] se stává [Concept('concept_state_religion','státním náboženstvím')|l] [COUNTRY.GetAltAdjective('G')]"
- ADD_CULTURAL_OBSESSION: "[CULTURE.GetName] kultura se stává posedlou na [GOODS.GetCustom('GDS_L')]"
- REMOVE_CULTURAL_OBSESSION: "[CULTURE.GetName] přestává být posedlý [GOODS.GetCustom('GDS_I')]"
+ ADD_CULTURAL_OBSESSION: "[CULTURE.GetName] kultura se stává posedlou na [GOODS.GetAltNameNoFormatting('adj_L')]"
+ REMOVE_CULTURAL_OBSESSION: "[CULTURE.GetName] přestává být posedlý [GOODS.GetAltNameNoFormatting('adj_I')]"
  ADD_CULTURAL_TABOO_GLOBAL: "[GOODS.GetName] je nyní považováno za [Concept('concept_taboo','tabu')]" # todo: NEW TRANSLATION
- ADD_CULTURAL_TABOO_THIRD: "[CULTURE.GetName] bude nyní považovat [GOODS.GetCustom('GDS_A_TT')] za [Concept('concept_taboo','tabu')]" # todo: NEW TRANSLATION # todo: NAME CASE
+ ADD_CULTURAL_TABOO_THIRD: "[CULTURE.GetName] bude nyní považovat [GOODS.GetAltName('adj_A')] za [Concept('concept_taboo','tabu')]" # todo: NEW TRANSLATION # todo: NAME CASE
  REMOVE_CULTURAL_TABOO_GLOBAL: "[GOODS.GetName] již není považováno za [Concept('concept_taboo','tabu')]" # todo: NEW TRANSLATION
- REMOVE_CULTURAL_TABOO_THIRD: "[CULTURE.GetName] již nebude považovat [GOODS.GetCustom('GDS_A_TT')] za [Concept('concept_taboo','tabu')]" # todo: NEW TRANSLATION # todo: NAME CASE
+ REMOVE_CULTURAL_TABOO_THIRD: "[CULTURE.GetName] již nebude považovat [GOODS.GetAltName('adj_A')] za [Concept('concept_taboo','tabu')]" # todo: NEW TRANSLATION # todo: NAME CASE
  ADD_TRADITION_TRAIT: "[CULTURE.GetName] přijímá [DISCRIMINATION_TRAIT.GetName] [Concept('concept_tradition_trait','rys tradice')|l]"
  REMOVE_TRADITION_TRAIT: "[CULTURE.GetName] opouští [DISCRIMINATION_TRAIT.GetName] [Concept('concept_tradition_trait','rys tradice')|l]"
  ADD_CULTURAL_COMMUNITY: "Nová [CULTURE.GetName] [Concept('concept_cultural_community','kulturní komunita')|l] se objevuje"
@@ -143,10 +145,19 @@
  SET_NAME_FORMAT: "[CULTURE.GetName] mění formát jmen" # todo: NEW TRANSLATION
  SET_NAME_FORMAT_GLOBAL: "Mění formát jmen" # todo: NEW TRANSLATION
  ADD_FERVOR: "[Concept('concept_fervor','Horlivost')] [CULTURE.GetName] se změní o #variable $VALUE|0+$#!"
+ ADD_FERVOR_NEG: "[concept_fervor] [CULTURE.GetName] je #negative_value snížena#! o #negative_value $VALUE|0$#!" # todo: NEW TRANSLATION
  CREATE_RANDOM_CHARACTER_NAME: "Postava"
  CREATE_CHARACTER: "$CHARACTER_NAME$ se objevuje v [COUNTRY.GetName]"
  CREATE_CHARACTER_FIRST: "$CHARACTER_NAME$ se objevuje v [COUNTRY.GetNameNoFlag]"
  CREATE_CHARACTER_THIRD: "$CHARACTER_NAME$ se objevuje v [COUNTRY.GetName]"
+ CREATE_CHARACTER_TOOLTIP: "#header $STRING$#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$" # todo: NEW TRANSLATION
+ CREATE_CHARACTER_TOOLTIP_ROLE: "[Concept('concept_character_role','$concept_character_roles|q$')]: $VALUE|v$" # todo: NEW TRANSLATION
+ CREATE_CHARACTER_TOOLTIP_INTEREST_GROUP: "[concept_interest_group]: $VALUE|v$" # todo: NEW TRANSLATION
+ CREATE_CHARACTER_TOOLTIP_IDEOLOGY: "[concept_ideology]: $VALUE|v$" # todo: NEW TRANSLATION
+ CREATE_CHARACTER_TOOLTIP_HOME_REGION: "[concept_home_state]: $VALUE|v$" # todo: NEW TRANSLATION
+ CREATE_CHARACTER_TOOLTIP_AGE: "Věk: $VALUE|0v$" # todo: NEW TRANSLATION
+ CREATE_CHARACTER_TOOLTIP_AGE_RANGE: "Věk: $MIN|0v$ až $MAX|0v$" # todo: NEW TRANSLATION
+ CREATE_CHARACTER_TOOLTIP_TRAITS: "[Concept('concept_character_trait','$concept_character_traits|q$')]: $VALUE|v$" # todo: NEW TRANSLATION
  ADD_INNOVATION: "#variable [COUNTRY.GetAdjectiveNoFormatting]#! [Concept('concept_innovation','inovace')|l] se zvýšila o $VALUE|+$"
  ADD_INNOVATION_NEG: "#variable [COUNTRY.GetAdjectiveNoFormatting]#! [Concept('concept_innovation','inovace')|l] se snížil o $VALUE|+$"
  ADD_INVESTMENT_POOL: "#variable [COUNTRY.GetAdjectiveNoFormatting]#! [Concept('concept_investment_pool','investiční fond')|l] zvýšeno o @money!$VALUE|D+$"
@@ -176,7 +187,9 @@
  REMOVE_INITIATOR_BACKERS: "[COUNTRY.GetName] opouští [TARGET_DIPLOMATIC_PLAY.GetName]"
  REMOVE_TARGET_BACKERS: "[COUNTRY.GetName] opouští [TARGET_DIPLOMATIC_PLAY.GetName]"
  ADD_INITIATOR_BACKERS: "[COUNTRY.GetName] se připojuje k [TARGET_DIPLOMATIC_PLAY.GetName] na straně iniciátorů"
+ ADD_INITIATOR_BACKERS_FIRST: "[COUNTRY.GetNameNoFlag] se připojuje k [TARGET_DIPLOMATIC_PLAY.GetName] na straně iniciátora" # todo: NEW TRANSLATION
  ADD_TARGET_BACKERS: "[COUNTRY.GetName] se připojuje k [TARGET_DIPLOMATIC_PLAY.GetName] na straně cílů"
+ ADD_TARGET_BACKERS_FIRST: "[COUNTRY.GetNameNoFlag] se připojuje k [TARGET_DIPLOMATIC_PLAY.GetName] na straně cíle" # todo: NEW TRANSLATION
  ADD_ESCALATION: "[DIPLOMATIC_PLAY.GetName] eskalace se zvýšila o $VALUE|-$"
  ADD_ESCALATION_NEG: "[DIPLOMATIC_PLAY.GetName] eskalace se snížila o $VALUE|-$"
  END_PLAY: "[DIPLOMATIC_PLAY.GetName] končí"
@@ -192,8 +205,8 @@
  ADD_MANEUVERS_THIRD_NEG: "Snižuje [Concept('concept_maneuver','manévry')] pro [TARGET_COUNTRY.GetName] v [DiplomaticPlay.GetName] o $VALUE|0-$" # todo: NEW TRANSLATION
  ADD_WAR_WAR_SUPPORT: "[Country.GetAdjectiveNoFormatting] [Concept('concept_war_support','Válečná podpora')|l] v [War.GetName] se zvyšuje o $VALUE|+$"
  ADD_WAR_WAR_SUPPORT_NEG: "[Country.GetAdjectiveNoFormatting] [Concept('concept_war_support','Válečná podpora')|l] v [War.GetName] klesá o $VALUE|+$"
- ADD_WAR_EXHAUSTION: "[Country.GetAdjectiveNoFormatting] [Concept('concept_war_exhaustion','Válečná únava')|l] zisk v [War.GetName] se zvyšuje o $VALUE|+$"
- ADD_WAR_EXHAUSTION_NEG: "[Country.GetAdjectiveNoFormatting] [Concept('concept_war_exhaustion','Válečná únava')|l] zisk v [War.GetName] klesá o $VALUE|+$"
+ ADD_WAR_SUPPORT_CHANGE: "[Country.GetAdjectiveNoFormatting] [concept_war_support] ve válce [War.GetName] se zvyšuje o $VALUE|+$" # todo: NEW TRANSLATION
+ ADD_WAR_SUPPORT_CHANGE_NEG: "[Country.GetAdjectiveNoFormatting] [concept_war_support] ve válce [War.GetName] se snižuje o $VALUE|+$" # todo: NEW TRANSLATION
  ADD_WAR_GOAL: "[COUNTRY.GetName] přidává [WAR_GOAL_DRAFT.GetName] [Concept('concept_war_goal','válečný cíl')] do [DIPLOMATIC_PLAY_TYPE.GetName] [Concept('concept_diplomatic_play','diplomatické hry')]" # todo: CONCEPT CASE
  ADD_WAR_GOAL_FIRST: "[COUNTRY.GetNameNoFlag] přidává [WAR_GOAL_DRAFT.GetName] [Concept('concept_war_goal','válečný cíl')] do [DIPLOMATIC_PLAY_TYPE.GetName] [Concept('concept_diplomatic_play','diplomatické hry')]" # todo: CONCEPT CASE
  ADD_WAR_GOAL_THIRD: "[COUNTRY.GetName] přidává [WAR_GOAL_DRAFT.GetName] [Concept('concept_war_goal','válečný cíl')] do [DIPLOMATIC_PLAY_TYPE.GetName] [Concept('concept_diplomatic_play','diplomatické hry')]" # todo: CONCEPT CASE
@@ -215,6 +228,9 @@
  END_TRUCE: "Počet [Concept('concept_truce','příměří')|l] s [TARGET_COUNTRY.GetName] je odstraněn"
  END_TRUCE_FIRST: "[Concept('concept_truce','Příměří')] mezi [COUNTRY.GetAltAdjectiveNoFlag('I')] a [TARGET_COUNTRY.GetAltAdjectiveNoFlag('I')] je odstraněn"
  END_TRUCE_THIRD: "[Concept('concept_truce','Příměří')|l] mezi [COUNTRY.GetAltAdjective('I')] a [TARGET_COUNTRY.GetAltAdjective('I')] je odstraněno"
+ LEAVE_PLAYS_SUPPORTING: "Přestává podporovat [TARGET_COUNTRY.GetName] ve všech [Concept('concept_diplomatic_play','$concept_diplomatic_plays|q$')] a [Concept('concept_war','$concept_wars|q$')]" # todo: NEW TRANSLATION
+ LEAVE_PLAYS_SUPPORTING_FIRST: "[COUNTRY.GetNameNoFlag] přestává podporovat [TARGET_COUNTRY.GetName] ve všech [Concept('concept_diplomatic_play','$concept_diplomatic_plays|q$')] a [Concept('concept_war','$concept_wars|q$')]" # todo: NEW TRANSLATION
+ LEAVE_PLAYS_SUPPORTING_THIRD: "[COUNTRY.GetName] přestává podporovat [TARGET_COUNTRY.GetName] ve všech [Concept('concept_diplomatic_play','$concept_diplomatic_plays|q$')] a [Concept('concept_war','$concept_wars|q$')]" # todo: NEW TRANSLATION
  VIOLATE_SOVEREIGNTY_JOIN: "[COUNTRY.GetName] se připojuje k [Concept('concept_war','válce')] na straně [TARGET_COUNTRY.GetName]"
  VIOLATE_SOVEREIGNTY_JOIN_FIRST: "[TARGET_COUNTRY.GetName] se připojuje k [Concept('concept_war','válce')] na straně [COUNTRY.GetAltAdjective('A')]"
  VIOLATE_SOVEREIGNTY_JOIN_THIRD: "[COUNTRY.GetName] jde do [Concept('concept_war','války')|l] s [TARGET_COUNTRY.GetAltAdjective('I')]" # todo: CONCEPT CASE
@@ -314,19 +330,19 @@
  MOVE_POP: "$VALUE|vD$ [POP.GetName] v [POP.GetState.GetName] se přesune na [TARGET_STATE.GetName]"
  EFFECT_CREATE_ASSIGNMENT: "Přiřaďte [CHARACTER.GetFullName] k [STRATEGIC_REGION.GetName]"
  EFFECT_PROJECT_POWER: "[CHARACTER.GetFullName] bude vyvíjet moc v [STRATEGIC_REGION.GetName]"
- EFFECT_ADD_ORGANIZATION: "[Concept('concept_military_formation','Formace')] [SelectLocalization(GreaterThan_CFixedPoint('(CFixedPoint)$VALUE$','(CFixedPoint)0'),'ADD_ORGANIZATION_GAINS','ADD_ORGANIZATION_LOSES')] $VALUE|+=$ [Concept('concept_organization','Organizace')|l]"
- EFFECT_ADD_ORGANIZATION_THIRD: "[MILITARY_FORMATION.GetName] [SelectLocalization(GreaterThan_CFixedPoint('(CFixedPoint)$VALUE$','(CFixedPoint)0'),'ADD_ORGANIZATION_GAINS','ADD_ORGANIZATION_LOSES')] $VALUE|+=$ [Concept('concept_organization','Organizace')|l] (aktuální hodnota: [MILITARY_FORMATION.GetOrganization])"
+ EFFECT_ADD_ORGANIZATION: "[Concept('concept_military_formation','Formace')] [SelectLocalization(GreaterThan_CFixedPoint('(CFixedPoint)$VALUE$','(CFixedPoint)0'),'ADD_ORGANIZATION_GAINS','ADD_ORGANIZATION_LOSES')] $VALUE|+=$ [Concept('concept_organization','Organizace')|l]" # todo: CHANGED (predtym: [Concept('concept_military_formation','Formace')] [SelectLocalization(GreaterThan_CFixedPoint('(CFixedPoint)$VALUE|q$',')
+ EFFECT_ADD_ORGANIZATION_THIRD: "[MILITARY_FORMATION.GetName] [SelectLocalization(GreaterThan_CFixedPoint('(CFixedPoint)$VALUE$','(CFixedPoint)0'),'ADD_ORGANIZATION_GAINS','ADD_ORGANIZATION_LOSES')] $VALUE|+=$ [Concept('concept_organization','Organizace')|l] (aktuální hodnota: [MILITARY_FORMATION.GetOrganization])" # todo: CHANGED (predtym: [MILITARY_FORMATION.GetName] [SelectLocalization(GreaterThan_CFixedPoint('(CFixedPoint)$VALUE|q$','(CFixedPoint)0'),'ADD)
  ADD_ORGANIZATION_GAINS: "získává"
  ADD_ORGANIZATION_LOSES: "ztrácí"
- EFFECT_ADD_MORALE: "[Concept('concept_unit','Vojenská jednotka')] [SelectLocalization(GreaterThan_CFixedPoint('(CFixedPoint)$VALUE$','(CFixedPoint)0'),'ADD_MORALE_GAINS','ADD_MORALE_LOSES')] $VALUE|+=$ [Concept('concept_morale','Morálka')|l]"
- EFFECT_ADD_MORALE_THIRD: "[COMBATUNIT.GetName] [SelectLocalization(GreaterThan_CFixedPoint('(CFixedPoint)$VALUE$','(CFixedPoint)0'),'ADD_MORALE_GAINS','ADD_MORALE_LOSES')] $VALUE|+=$ [Concept('concept_morale','Morálka')|l]"
+ EFFECT_ADD_MORALE: "[Concept('concept_unit','Vojenská jednotka')] [SelectLocalization(GreaterThan_CFixedPoint('(CFixedPoint)$VALUE$','(CFixedPoint)0'),'ADD_MORALE_GAINS','ADD_MORALE_LOSES')] $VALUE|+=$ [Concept('concept_morale','Morálka')|l]" # todo: CHANGED (predtym: [Concept('concept_unit','Vojenská jednotka')] [SelectLocalization(GreaterThan_CFixedPoint('(CFixedPoint)$VALUE|q$','(CFi)
+ EFFECT_ADD_MORALE_THIRD: "[COMBATUNIT.GetName] [SelectLocalization(GreaterThan_CFixedPoint('(CFixedPoint)$VALUE$','(CFixedPoint)0'),'ADD_MORALE_GAINS','ADD_MORALE_LOSES')] $VALUE|+=$ [Concept('concept_morale','Morálka')|l]" # todo: CHANGED (predtym: [COMBATUNIT.GetName] [SelectLocalization(GreaterThan_CFixedPoint('(CFixedPoint)$VALUE|q$','(CFixedPoint)0'),'ADD_MORALE_)
  ADD_MORALE_GAINS: "získává"
  ADD_MORALE_LOSES: "ztrácí"
  TRIGGER_EVENT_DELAY_ONE_DAY: "v"
  TRIGGER_EVENT_DELAY_NUM_DAYS: "v"
  TRIGGER_EVENT_DELAY_RANGE_DAYS: "v #v $DAYS_MIN$#! do #v $DAYS_MAX$#! dní"
- TRIGGER_EVENT: "Spouští událost #variable $EVENT_NAME$#![ConcatIfNeitherEmpty(' ', '$DELAY_DESCRIPTION$')]"
- TRIGGER_EVENT_COUNTRY: "$COUNTRY_NAME$ získává událost #variable $EVENT_NAME$#![ConcatIfNeitherEmpty(' ', '$DELAY_DESCRIPTION$')]"
+ TRIGGER_EVENT: "Spouští událost #variable $EVENT_NAME$#![ConcatIfNeitherEmpty(' ', '$DELAY_DESCRIPTION|q$')]" # todo: CHANGED (predtym: Spouští událost variable $EVENT_NAME$ ![ConcatIfNeitherEmpty(' ', '$DELAY_DESCRIPTION$')])
+ TRIGGER_EVENT_COUNTRY: "$COUNTRY_NAME$ získává událost #variable $EVENT_NAME$#![ConcatIfNeitherEmpty(' ', '$DELAY_DESCRIPTION|q$')]" # todo: CHANGED (predtym: $COUNTRY_NAME$ získává událost variable $EVENT_NAME$ ![ConcatIfNeitherEmpty(' ', '$DELAY_DESCRIPTION$')])
  custom_trigger_event_unspecific: "Spouští událost"
  ANNEX_EFFECT: "[COUNTRY.GetName] anektuje [TARGET_COUNTRY.GetName]"
  ANNEX_EFFECT_FIRST: "[COUNTRY.GetNameNoFlag] anektuje [TARGET_COUNTRY.GetName]"
@@ -347,19 +363,19 @@
  UNSET_ONLY_LEGAL_PARTY_EFFECT_FIRST: "[COUNTRY.GetNameNoFlag] již nemá pouze jednu legální [Concept('concept_party','strana')|l]"
  UNSET_ONLY_LEGAL_PARTY_EFFECT_GLOBAL: "[Concept('concept_country','Země')] již nemá pouze jednu legální [Concept('concept_party','strana')|l]"
  UNSET_ONLY_LEGAL_PARTY_EFFECT_THIRD: "[COUNTRY.GetName] již nemá pouze jednu legální [Concept('concept_party','strana')|l]"
- ADD_MODIFIER: "Získá #tooltippable #tooltip:[GetRawTextTooltipTag('$ADD_MODIFIER_BREAKDOWN$')] $MODIFIER_NAME$#!#! $MAYBE_DECAYING_WITH_SPACE_AFTER$$DURATION$\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!"
- ADD_MODIFIER_FIRST: "$SUBJECT_NAME$ získává #tooltippable #tooltip:[GetRawTextTooltipTag('$ADD_MODIFIER_BREAKDOWN$')] $MODIFIER_NAME$#!#! $MAYBE_DECAYING_WITH_SPACE_AFTER$$DURATION$\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!"
- ADD_MODIFIER_THIRD: "$SUBJECT_NAME$ získává #tooltippable #tooltip:[GetRawTextTooltipTag('$ADD_MODIFIER_BREAKDOWN$')] $MODIFIER_NAME$#!#! $MAYBE_DECAYING_WITH_SPACE_AFTER$$DURATION$\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!"
+ ADD_MODIFIER: "Získá #tooltippable #tooltip:[GetRawTextTooltipTag('$ADD_MODIFIER_BREAKDOWN|q$')] $MODIFIER_NAME$#!#! $MAYBE_DECAYING_WITH_SPACE_AFTER$$DURATION$\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!" # todo: CHANGED (predtym: Získá tooltippable tooltip:[GetRawTextTooltipTag('$ADD_MODIFIER_BREAKDOWN$')] $MODIFIER_NAME$ ! ! $MAYBE_DECAYING_WITH_S)
+ ADD_MODIFIER_FIRST: "$SUBJECT_NAME$ získává #tooltippable #tooltip:[GetRawTextTooltipTag('$ADD_MODIFIER_BREAKDOWN|q$')] $MODIFIER_NAME$#!#! $MAYBE_DECAYING_WITH_SPACE_AFTER$$DURATION$\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!" # todo: CHANGED (predtym: $SUBJECT_NAME$ získává tooltippable tooltip:[GetRawTextTooltipTag('$ADD_MODIFIER_BREAKDOWN$')] $MODIFIER_NAME$ ! ! $MAYB)
+ ADD_MODIFIER_THIRD: "$SUBJECT_NAME$ získává #tooltippable #tooltip:[GetRawTextTooltipTag('$ADD_MODIFIER_BREAKDOWN|q$')] $MODIFIER_NAME$#!#! $MAYBE_DECAYING_WITH_SPACE_AFTER$$DURATION$\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!" # todo: CHANGED (predtym: $SUBJECT_NAME$ získává tooltippable tooltip:[GetRawTextTooltipTag('$ADD_MODIFIER_BREAKDOWN$')] $MODIFIER_NAME$ ! ! $MAYB)
  ADD_MODIFIER_BREAKDOWN: "#header $MODIFIER_NAME$#!\n$MODIFIER_DESC$"
- ADD_ENACTMENT_MODIFIER: "[COUNTRY.GetName] získává #tooltippable #tooltip:[GetRawTextTooltipTag('$ADD_MODIFIER_BREAKDOWN$')] $MODIFIER_NAME$#!#! $MAYBE_DECAYING_WITH_SPACE_AFTER$během současného nebo příštího zákona [Concept('concept_enactment_of_laws','uzákonění')]\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!"
+ ADD_ENACTMENT_MODIFIER: "[COUNTRY.GetName] získává #tooltippable #tooltip:[GetRawTextTooltipTag('$ADD_MODIFIER_BREAKDOWN|q$')] $MODIFIER_NAME$#!#! $MAYBE_DECAYING_WITH_SPACE_AFTER$během současného nebo příštího zákona [Concept('concept_enactment_of_laws','uzákonění')]\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!" # todo: CHANGED (predtym: [COUNTRY.GetName] získává tooltippable tooltip:[GetRawTextTooltipTag('$ADD_MODIFIER_BREAKDOWN$')] $MODIFIER_NAME$ ! ! $M)
  ADD_ENACTMENT_MODIFIER_NEG: "$ADD_ENACTMENT_MODIFIER$"
  ADD_ENACTMENT_MODIFIER_FIRST: "$ADD_ENACTMENT_MODIFIER$"
  ADD_ENACTMENT_MODIFIER_FIRST_NEG: "$ADD_ENACTMENT_MODIFIER$"
  ADD_ENACTMENT_MODIFIER_THIRD: "$ADD_ENACTMENT_MODIFIER$"
  ADD_ENACTMENT_MODIFIER_THIRD_NEG: "$ADD_ENACTMENT_MODIFIER$"
- REMOVE_MODIFIER: "$SUBJECT_NAME$ #v ztrácí #! #tooltippable #tooltip:[GetRawTextTooltipTag('$REMOVE_MODIFIER_BREAKDOWN$')] #variable $MODIFIER_NAME$#!#!#!\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!"
- REMOVE_MODIFIER_FIRST: "$SUBJECT_NAME$ #v ztrácí #! #tooltippable #tooltip:[GetRawTextTooltipTag('$REMOVE_MODIFIER_BREAKDOWN$')] #variable $MODIFIER_NAME$#!#!#!\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!"
- REMOVE_MODIFIER_THIRD: "$SUBJECT_NAME$ #v ztrácí #!  #tooltippable #tooltip:[GetRawTextTooltipTag('$REMOVE_MODIFIER_BREAKDOWN$')] #variable $MODIFIER_NAME$#!#!#!\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!"
+ REMOVE_MODIFIER: "$SUBJECT_NAME$ #v ztrácí #! #tooltippable #tooltip:[GetRawTextTooltipTag('$REMOVE_MODIFIER_BREAKDOWN|q$')] #variable $MODIFIER_NAME$#!#!#!\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!" # todo: CHANGED (predtym: $SUBJECT_NAME$ v ztrácí ! tooltippable tooltip:[GetRawTextTooltipTag('$REMOVE_MODIFIER_BREAKDOWN$')] variable $MODIFIER_)
+ REMOVE_MODIFIER_FIRST: "$SUBJECT_NAME$ #v ztrácí #! #tooltippable #tooltip:[GetRawTextTooltipTag('$REMOVE_MODIFIER_BREAKDOWN|q$')] #variable $MODIFIER_NAME$#!#!#!\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!" # todo: CHANGED (predtym: $SUBJECT_NAME$ v ztrácí ! tooltippable tooltip:[GetRawTextTooltipTag('$REMOVE_MODIFIER_BREAKDOWN$')] variable $MODIFIER_)
+ REMOVE_MODIFIER_THIRD: "$SUBJECT_NAME$ #v ztrácí #!  #tooltippable #tooltip:[GetRawTextTooltipTag('$REMOVE_MODIFIER_BREAKDOWN|q$')] #variable $MODIFIER_NAME$#!#!#!\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!" # todo: CHANGED (predtym: $SUBJECT_NAME$ v ztrácí ! tooltippable tooltip:[GetRawTextTooltipTag('$REMOVE_MODIFIER_BREAKDOWN$')] variable $MODIFIER_)
  REMOVE_MODIFIER_BREAKDOWN: "#header $MODIFIER_NAME$#!\n$MODIFIER_DESC$"
  REMOVE_ENACTMENT_MODIFIER: "$REMOVE_MODIFIER$"
  ACTIVATE_PRODUCTION_METHOD: "Aktivujte [PRODUCTION_METHOD.GetName] pro budovy typu [BUILDING_TYPE.GetName] v $TARGET|v$"
@@ -468,12 +484,12 @@
  SET_TARIFFS_EXPORT_PRIORITY: "[COUNTRY.GetName] začíná vybírat #v Export Prioritized#! [Concept('concept_tariffs','cla')|l] na [TARGET_GOODS.GetName]"
  SET_TARIFFS_EXPORT_PRIORITY_FIRST: "[COUNTRY.GetNameNoFlag] začíná vybírat #v Export Prioritized#! [Concept('concept_tariffs','cla')|l] na [TARGET_GOODS.GetName]"
  SET_TARIFFS_EXPORT_PRIORITY_THIRD: "[COUNTRY.GetName] začíná vybírat #v Export Prioritized#! [Concept('concept_tariffs','cla')|l] na [TARGET_GOODS.GetName]"
- POP_EFFECT_FILTER: "[AddLocalizationIf(InterestGroup.IsValid, 'POP_EFFECT_FILTER_INTEREST_GROUP')][AddLocalizationIf(Culture.IsValid, 'POP_EFFECT_FILTER_CULTURE')][AddLocalizationIf(Religion.IsValid, 'POP_EFFECT_FILTER_RELIGION')][AddLocalizationIf(PopType.IsValid, 'POP_EFFECT_FILTER_POP_TYPE')][AddTextIf(Not(EqualTo_string('none', '$STRATA$')), Concatenate(Localize('$STRATA$'), ' '))][Concept('concept_pop','populace')]"
+ POP_EFFECT_FILTER: "[AddLocalizationIf(InterestGroup.IsValid, 'POP_EFFECT_FILTER_INTEREST_GROUP')][AddLocalizationIf(Culture.IsValid, 'POP_EFFECT_FILTER_CULTURE')][AddLocalizationIf(Religion.IsValid, 'POP_EFFECT_FILTER_RELIGION')][AddLocalizationIf(PopType.IsValid, 'POP_EFFECT_FILTER_POP_TYPE')][AddTextIf(Not(EqualTo_string('none', '$STRATA|q$')), Concatenate(Localize('$STRATA|q$'), ' '))][Concept('concept_pop','populace')]" # todo: CHANGED (predtym: [AddLocalizationIf(InterestGroup.IsValid, 'POP_EFFECT_FILTER_INTEREST_GROUP')][AddLocalizationIf(Culture.IsValid, 'POP_E)
  POP_EFFECT_FILTER_INTEREST_GROUP: "[InterestGroup.GetName] členové "
  POP_EFFECT_FILTER_CULTURE: "[Culture.GetName] "
  POP_EFFECT_FILTER_RELIGION: "[Religion.GetName] "
  POP_EFFECT_FILTER_POP_TYPE: "[PopType.GetName] "
- POP_EFFECT_FILTER_STRATA: "[Localize('$STRATA$')] "
+ POP_EFFECT_FILTER_STRATA: "[Localize('$STRATA|q$')] " # todo: CHANGED (predtym: [Localize('$STRATA$')])
  ADD_RADICALS: "$VALUE|-=1%$ z $FILTER_DESC$ se stávájí [Concept('concept_radical','radikály')|l]"
  ADD_RADICALS_FIRST: "$VALUE|-=1%$ z $FILTER_DESC$ v [COUNTRY.GetNameNoFlag] se stávají [Concept('concept_radical','radikály')|l]"
  ADD_RADICALS_THIRD: "$VALUE|-=1%$ z $FILTER_DESC$ v [COUNTRY.GetName] se stávájí [Concept('concept_radical','radikály')|l]"
@@ -513,6 +529,7 @@
  CHANGE_TAG_FIRST: "[COUNTRY.GetNameNoFlag] se stává $NEW_TAG|v$"
  CHANGE_TAG_THIRD: "[COUNTRY.GetNameNoFlag] se stává $NEW_TAG|v$"
  CHANGE_SUBJECT_TYPE: "Stává se [SUBJECT_TYPE.GetName] [Country.GetOverlord.GetName]"
+ CHANGE_SUBJECT_TYPE_FIRST: "[Country.GetNameNoFlag] se stává [SUBJECT_TYPE.GetName] [Country.GetOverlord.GetName]" # todo: NEW TRANSLATION
  PARTIES_EMERGENCE: "To způsobí vznik stran."
  PARTIES_DISAPPEARENCE: "To způsobí zmizení stran."
  UPDATE_PARTY_SUPPORT_EFFECT: "[Concept('concept_interest_group','Zájmové skupiny')] znovu vyhodnotí svou podporu [Concept('concept_party','stran')|l]." # todo: CONCEPT CASE
@@ -535,8 +552,8 @@
  ADD_CULTURE_ACCEPTANCE_MODIFIER_NEG: "$ADD_CULTURE_ACCEPTANCE_MODIFIER$"
  ADD_CULTURE_ACCEPTANCE_MODIFIER_FIRST_NEG: "$ADD_CULTURE_ACCEPTANCE_MODIFIER_FIRST$"
  ADD_CULTURE_ACCEPTANCE_MODIFIER_THIRD_NEG: "$ADD_CULTURE_ACCEPTANCE_MODIFIER_THIRD$"
- ADD_FERVOR_TARGET_MODIFIER: "$MODIFIER_DESC$ [Concept('concept_pop','populace')] v [Country.GetAltAdjective('L')]"
- ADD_FERVOR_TARGET_MODIFIER_NEG: "$MODIFIER_DESC$ [Concept('concept_pop','populace')] v [Country.GetAltAdjective('L')]"
+ ADD_FERVOR_TARGET_MODIFIER: "$MODIFIER_DESC$ [Concept('concept_pop','populace')] v [Country.GetAltAdjective('L')]" # todo: CHANGED (predtym: $MODIFIER_DESC$ [Concept('concept_pop', '$concept_pops|q$')] v [Country.GetName])
+ ADD_FERVOR_TARGET_MODIFIER_NEG: "$MODIFIER_DESC$ [Concept('concept_pop','populace')] v [Country.GetAltAdjective('L')]" # todo: CHANGED (predtym: $MODIFIER_DESC$ [Concept('concept_pop', '$concept_pops|q$')] v [Country.GetName])
  ADD_CULTURE_STANDARD_OF_LIVING_MODIFIER: "Přidává $MODIFIER_DESC$ do [State.GetName]"
  EXILE_CHARACTER_THIRD: "[CHARACTER.GetFullName] je [Concept('concept_exile','vyhnán')]"
  EXILE_CHARACTER_THIRD_NEG: "[CHARACTER.GetFullName] NENÍ [Concept('concept_exile','vyhnán')]"
@@ -567,12 +584,12 @@
  ADD_CAREER_LENGTH_THIRD: "[CHARACTER.GetFullName] má prodlouženo působení jako $ROLE$ do $DATE|v$" # todo: NEW TRANSLATION
  ADD_CAREER_LENGTH_GLOBAL: "Působení jako $ROLE$ prodlouženo do $DATE|v$" # todo: NEW TRANSLATION
  ALL_ROLES: "všechny role" # todo: NEW TRANSLATION
- ADD_ENACTMENT_PHASE_FIRST: "[Concept('concept_enactment_of_laws','Uzákonění')] [COUNTRY.GetLawBeingEnacted.GetName] v [COUNTRY.GetNameNoFlag] postupuje o $VALUE|v0$ [Select_CString( EqualTo_CFixedPoint( '(CFixedPoint)$VALUE$', '(CFixedPoint)1' ), Concept('concept_enactment_phase','$concept_enactment_phase_short$'), Concept('concept_enactment_phase','$concept_enactment_phases_short$') )]"
- ADD_ENACTMENT_PHASE_THIRD: "[Concept('concept_enactment_of_laws','Uzákonění')] zákona [COUNTRY.GetLawBeingEnacted.GetName] v [COUNTRY.GetName] se posune o $VALUE|v0$ [Select_CString( EqualTo_CFixedPoint( '(CFixedPoint)$VALUE$', '(CFixedPoint)1' ), Concept('concept_enactment_phase','$concept_enactment_phase_short$'), Concept('concept_enactment_phase','$concept_enactment_phases_short$') )]"
- ADD_ENACTMENT_PHASE_GLOBAL: "[Concept('concept_enactment_of_laws','Uzákonění')] se posune o $VALUE|v0$ [Select_CString( EqualTo_CFixedPoint( '(CFixedPoint)$VALUE$', '(CFixedPoint)1' ), Concept('concept_enactment_phase','$concept_enactment_phase_short$'), Concept('concept_enactment_phase','$concept_enactment_phases_short$') )]"
- ADD_ENACTMENT_SETBACK_FIRST: "[Concept('concept_enactment_of_laws','Uzákonění')] zákona [COUNTRY.GetLawBeingEnacted.GetName] v [COUNTRY.GetNameNoFlag] získává $VALUE|v0$ [Select_CString( EqualTo_CFixedPoint( '(CFixedPoint)$VALUE$', '(CFixedPoint)1' ), Concept('concept_enactment_setback', '$concept_enactment_setback_short$'), Concept('concept_enactment_setback', '$concept_enactment_setbacks_short$') )]"
- ADD_ENACTMENT_SETBACK_THIRD: "[Concept('concept_enactment_of_laws','Uzákonění')] zákona [COUNTRY.GetLawBeingEnacted.GetName] v [COUNTRY.GetName] získává $VALUE|v0$ [Select_CString( EqualTo_CFixedPoint( '(CFixedPoint)$VALUE$', '(CFixedPoint)1' ), Concept('concept_enactment_setback', '$concept_enactment_setback_short$'), Concept('concept_enactment_setback', '$concept_enactment_setbacks_short$') )]"
- ADD_ENACTMENT_SETBACK_GLOBAL: "[Concept('concept_enactment_of_laws','Uzákonění')] získává $VALUE|v0$ [Select_CString( EqualTo_CFixedPoint( '(CFixedPoint)$VALUE$', '(CFixedPoint)1' ), Concept('concept_enactment_setback', '$concept_enactment_setback_short$'), Concept('concept_enactment_setback', '$concept_enactment_setbacks_short$') )]"
+ ADD_ENACTMENT_PHASE_FIRST: "[Concept('concept_enactment_of_laws','Uzákonění')] [COUNTRY.GetLawBeingEnacted.GetName] v [COUNTRY.GetNameNoFlag] postupuje o $VALUE|v0$ [Select_CString( EqualTo_CFixedPoint( '(CFixedPoint)$VALUE$', '(CFixedPoint)1' ), Concept('concept_enactment_phase','$concept_enactment_phase_short|q$'), Concept('concept_enactment_phase','$concept_enactment_phases_short|q$') )]" # todo: CHANGED (predtym: [Concept('concept_enactment_of_laws','Uzákonění')] [COUNTRY.GetLawBeingEnacted.GetName] v [COUNTRY.GetNameNoFlag] postup)
+ ADD_ENACTMENT_PHASE_THIRD: "[Concept('concept_enactment_of_laws','Uzákonění')] zákona [COUNTRY.GetLawBeingEnacted.GetName] v [COUNTRY.GetName] se posune o $VALUE|v0$ [Select_CString( EqualTo_CFixedPoint( '(CFixedPoint)$VALUE$', '(CFixedPoint)1' ), Concept('concept_enactment_phase','$concept_enactment_phase_short|q$'), Concept('concept_enactment_phase','$concept_enactment_phases_short|q$') )]" # todo: CHANGED (predtym: [Concept('concept_enactment_of_laws','Uzákonění')] zákona [COUNTRY.GetLawBeingEnacted.GetName] v [COUNTRY.GetName] se po)
+ ADD_ENACTMENT_PHASE_GLOBAL: "[Concept('concept_enactment_of_laws','Uzákonění')] se posune o $VALUE|v0$ [Select_CString( EqualTo_CFixedPoint( '(CFixedPoint)$VALUE$', '(CFixedPoint)1' ), Concept('concept_enactment_phase','$concept_enactment_phase_short|q$'), Concept('concept_enactment_phase','$concept_enactment_phases_short|q$') )]" # todo: CHANGED (predtym: [Concept('concept_enactment_of_laws','Uzákonění')] se posune o $VALUE|v0$ [Select_CString( EqualTo_CFixedPoint( '(CFixed)
+ ADD_ENACTMENT_SETBACK_FIRST: "[Concept('concept_enactment_of_laws','Uzákonění')] zákona [COUNTRY.GetLawBeingEnacted.GetName] v [COUNTRY.GetNameNoFlag] získává $VALUE|v0$ [Select_CString( EqualTo_CFixedPoint( '(CFixedPoint)$VALUE$', '(CFixedPoint)1' ), Concept('concept_enactment_setback', '$concept_enactment_setback_short|q$'), Concept('concept_enactment_setback', '$concept_enactment_setbacks_short|q$') )]" # todo: CHANGED (predtym: [Concept('concept_enactment_of_laws','Uzákonění')] zákona [COUNTRY.GetLawBeingEnacted.GetName] v [COUNTRY.GetNameNoFlag])
+ ADD_ENACTMENT_SETBACK_THIRD: "[Concept('concept_enactment_of_laws','Uzákonění')] zákona [COUNTRY.GetLawBeingEnacted.GetName] v [COUNTRY.GetName] získává $VALUE|v0$ [Select_CString( EqualTo_CFixedPoint( '(CFixedPoint)$VALUE$', '(CFixedPoint)1' ), Concept('concept_enactment_setback', '$concept_enactment_setback_short|q$'), Concept('concept_enactment_setback', '$concept_enactment_setbacks_short|q$') )]" # todo: CHANGED (predtym: [Concept('concept_enactment_of_laws','Uzákonění')] zákona [COUNTRY.GetLawBeingEnacted.GetName] v [COUNTRY.GetName] získá)
+ ADD_ENACTMENT_SETBACK_GLOBAL: "[Concept('concept_enactment_of_laws','Uzákonění')] získává $VALUE|v0$ [Select_CString( EqualTo_CFixedPoint( '(CFixedPoint)$VALUE$', '(CFixedPoint)1' ), Concept('concept_enactment_setback', '$concept_enactment_setback_short|q$'), Concept('concept_enactment_setback', '$concept_enactment_setbacks_short|q$') )]" # todo: CHANGED (predtym: [Concept('concept_enactment_of_laws','Uzákonění')] získává $VALUE|v0$ [Select_CString( EqualTo_CFixedPoint( '(CFixedPoin)
  CLEAR_ENACTMENT_MODIFIER_FIRST: "Předchozí výsledky budou odstraněny v [COUNTRY.GetNameNoFlag]:\n$MODIFIER_BREAKDOWN$"
  CLEAR_ENACTMENT_MODIFIER_THIRD: "Předchozí výsledky budou odstraněny v [COUNTRY.GetName]:\n$MODIFIER_BREAKDOWN$"
  CLEAR_ENACTMENT_MODIFIER_FIRST_NEG: "Předchozí výsledky NEBUDOU odstraněny v [COUNTRY.GetNameNoFlag]:\n$MODIFIER_BREAKDOWN$"
@@ -590,7 +607,7 @@
  CREATE_DIPLOMATIC_CATALYST_GLOBAL: "Při [DIPLOMATIC_CATALYST_TYPE.GetName] $concept_diplomatic_catalyst$ se spouští s [TARGET_COUNTRY.GetAltAdjective('I')]"
  CREATE_POLITICAL_MOVEMENT_THIRD: "Nový [TARGET_POLITICAL_MOVEMENT_TYPE.GetName|v] je vytvořen v [COUNTRY.GetAltAdjective('L')]"
  CREATE_POLITICAL_MOVEMENT_FIRST: "Nový [TARGET_POLITICAL_MOVEMENT_TYPE.GetName|v] je vytvořen"
- CREATE_POLITICAL_MOVEMENT_GLOBAL: "Nový $concept_political_movement$ je vytvořen"
+ CREATE_POLITICAL_MOVEMENT_GLOBAL: "Nový $concept_political_movement$ je vytvořen" # todo: CHANGED MINOR
  ADD_LOBBY_MEMBER_GLOBAL: "[TARGET_INTEREST_GROUP.GetName] se připojuje k [POLITICAL_LOBBY.GetName]"
  ADD_LOBBY_MEMBER_THIRD: "[TARGET_INTEREST_GROUP.GetName] se připojuje k [POLITICAL_LOBBY.GetName]"
  REMOVE_LOBBY_MEMBER_GLOBAL: "[TARGET_INTEREST_GROUP.GetName] opouští [POLITICAL_LOBBY.GetName]"
@@ -602,10 +619,10 @@
  ADD_RELIGION_STANDARD_OF_LIVING_MODIFIER: "Přidá $MODIFIER_DESC$ [Concept('concept_pop','populace')] v [State.GetName] $DURATION$"
  SET_IMMUNE_TO_REVOLUTIONS: "[Concept('concept_revolution','Revoluce')] se nemůže stát v této zemi"
  SET_IMMUNE_TO_REVOLUTIONS_NEG: "[Concept('concept_revolution','Revoluce')] se může normálně stát v této zemi"
- SET_IMMUNE_TO_REVOLUTIONS_FIRST: "[Concept('concept_revolution','Revoluce')] se nemůže stát v [COUNTRY.GetAltAdjectiveNoFlag('L')]"
- SET_IMMUNE_TO_REVOLUTIONS_FIRST_NEG: "[Concept('concept_revolution','Revoluce')] může normálně nastat v [COUNTRY.GetAltAdjectiveNoFlag('L')]"
- SET_IMMUNE_TO_REVOLUTIONS_THIRD: "[Concept('concept_revolution','Revoluce')] se v [COUNTRY.GetAltAdjective('L')] nemůže stát"
- SET_IMMUNE_TO_REVOLUTIONS_THIRD_NEG: "[Concept('concept_revolution','Revoluce')] se může normálně stát v [COUNTRY.GetAltAdjective('L')]"
+ SET_IMMUNE_TO_REVOLUTIONS_FIRST: "[Concept('concept_revolution','Revoluce')] se nemůže stát v [COUNTRY.GetAltAdjectiveNoFlag('L')]" # todo: CHANGED (predtym: [Concept('concept_revolution', '$concept_revolutions|q$')] se nemůže stát v [COUNTRY.GetNameNoFlag])
+ SET_IMMUNE_TO_REVOLUTIONS_FIRST_NEG: "[Concept('concept_revolution','Revoluce')] může normálně nastat v [COUNTRY.GetAltAdjectiveNoFlag('L')]" # todo: CHANGED (predtym: [Concept('concept_revolution', '$concept_revolutions|q$')] může normálně nastat v [COUNTRY.GetNameNoFlag])
+ SET_IMMUNE_TO_REVOLUTIONS_THIRD: "[Concept('concept_revolution','Revoluce')] se v [COUNTRY.GetAltAdjective('L')] nemůže stát" # todo: CHANGED (predtym: [Concept('concept_revolution', '$concept_revolutions|q$')] se v [COUNTRY.GetName] nemůže stát)
+ SET_IMMUNE_TO_REVOLUTIONS_THIRD_NEG: "[Concept('concept_revolution','Revoluce')] se může normálně stát v [COUNTRY.GetAltAdjective('L')]" # todo: CHANGED (predtym: [Concept('concept_revolution', '$concept_revolutions|q$')] se může normálně stát v [COUNTRY.GetName])
  COPY_LAWS: "Kopíruje zákony [TARGET_COUNTRY.GetName]"
  COPY_LAWS_FIRST: "[COUNTRY.GetNameNoFlag] kopíruje zákony [TARGET_COUNTRY.GetAltAdjective('G')]"
  COPY_LAWS_THIRD: "[COUNTRY.GetName] kopíruje zákony [TARGET_COUNTRY.GetAltAdjective('G')]"
@@ -643,21 +660,42 @@
  ADD_LEVERAGE_FIRST_NEG: "[POWER_BLOC.GetName] ztrácí #negative_value $VALUE$#! [Concept('concept_power_bloc_leverage','páka')|l] v [TARGET_COUNTRY.GetAltAdjective('G')]"
  ADD_LEVERAGE_THIRD: "[POWER_BLOC.GetName] získává #positive_value $VALUE$#! [Concept('concept_power_bloc_leverage','páka')|l] v [TARGET_COUNTRY.GetAltAdjective('G')]"
  ADD_LEVERAGE_THIRD_NEG: "[POWER_BLOC.GetName] ztrácí #negative_value $VALUE$#! [Concept('concept_power_bloc_leverage','páka')|l] v [TARGET_COUNTRY.GetAltAdjective('G')]"
+ LEAVE_POWER_BLOC_EFFECT: "Opouští [concept_power_bloc]" # todo: NEW TRANSLATION
+ LEAVE_POWER_BLOC_EFFECT_FIRST: "[COUNTRY.GetNameNoFlag] opouští svůj [concept_power_bloc]" # todo: NEW TRANSLATION
+ LEAVE_POWER_BLOC_EFFECT_THIRD: "[COUNTRY.GetName] opouští svůj [concept_power_bloc]" # todo: NEW TRANSLATION
+ LEAVE_POWER_BLOC_EFFECT_NEG: "Zůstává v [concept_power_bloc]" # todo: NEW TRANSLATION
+ LEAVE_POWER_BLOC_EFFECT_FIRST_NEG: "[COUNTRY.GetNameNoFlag] zůstává ve svém [concept_power_bloc]" # todo: NEW TRANSLATION
+ LEAVE_POWER_BLOC_EFFECT_THIRD_NEG: "[COUNTRY.GetName] zůstává ve svém [concept_power_bloc]" # todo: NEW TRANSLATION
+ DESTROY_POWER_BLOC: "[concept_power_bloc] je rozpuštěn" # todo: NEW TRANSLATION
+ DESTROY_POWER_BLOC_FIRST: "[POWER_BLOC.GetName] je rozpuštěn" # todo: NEW TRANSLATION
+ DESTROY_POWER_BLOC_THIRD: "[POWER_BLOC.GetName] je rozpuštěn" # todo: NEW TRANSLATION
+ DESTROY_POWER_BLOC_NEG: "[concept_power_bloc] není rozpuštěn" # todo: NEW TRANSLATION
+ DESTROY_POWER_BLOC_FIRST_NEG: "[POWER_BLOC.GetName] není rozpuštěn" # todo: NEW TRANSLATION
+ DESTROY_POWER_BLOC_THIRD_NEG: "[POWER_BLOC.GetName] není rozpuštěn" # todo: NEW TRANSLATION
+ ADD_POWER_BLOC_MANDATE: "[concept_power_bloc] získává #positive_value $VALUE$#! [concept_power_bloc_mandate]" # todo: NEW TRANSLATION
+ ADD_POWER_BLOC_MANDATE_NEG: "[concept_power_bloc] ztrácí #negative_value $VALUE$#! [concept_power_bloc_mandate]" # todo: NEW TRANSLATION
+ ADD_POWER_BLOC_MANDATE_FIRST: "[POWER_BLOC.GetName] získává #positive_value $VALUE$#! [concept_power_bloc_mandate]" # todo: NEW TRANSLATION
+ ADD_POWER_BLOC_MANDATE_FIRST_NEG: "[POWER_BLOC.GetName] ztrácí #negative_value $VALUE$#! [concept_power_bloc_mandate]" # todo: NEW TRANSLATION
+ ADD_POWER_BLOC_MANDATE_THIRD: "[POWER_BLOC.GetName] získává #positive_value $VALUE$#! [concept_power_bloc_mandate]" # todo: NEW TRANSLATION
+ ADD_POWER_BLOC_MANDATE_THIRD_NEG: "[POWER_BLOC.GetName] ztrácí #negative_value $VALUE$#! [concept_power_bloc_mandate]" # todo: NEW TRANSLATION
+ CHANGE_POWER_BLOC_NAME: "[concept_power_bloc] se přejmenovává na $POWER_BLOC_NAME$" # todo: NEW TRANSLATION
+ CHANGE_POWER_BLOC_NAME_FIRST: "[POWER_BLOC.GetName] se přejmenovává na $POWER_BLOC_NAME$" # todo: NEW TRANSLATION
+ CHANGE_POWER_BLOC_NAME_THIRD: "[POWER_BLOC.GetName] se přejmenovává na $POWER_BLOC_NAME$" # todo: NEW TRANSLATION
  DEPLOY_TO_FRONT_THIRD: "[MILITARY_FORMATION.GetName] je nasazen na [TARGET_FRONT.GetName]"
  DEPLOY_TO_FRONT_GLOBAL: "[Concept('concept_military_formation','Formace')] je nasazen do [Concept('concept_front','fronty')|l]" # todo: CONCEPT CASE
  EFFECT_UNASSIGN_FROM_FORMATION_THIRD: "[CHARACTER.GetFullName] je odvolán ze svého [Concept('concept_military_formation','formace')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  EFFECT_UNASSIGN_FROM_FORMATION_GLOBAL: "Velitel je odvolán ze svého [Concept('concept_military_formation','formace')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  INCREASE_AUTONOMY: "[Concept('concept_autonomy','Autonomie')] se zvyšuje na [SUBJECT_TYPE.GetName]"
  INCREASE_AUTONOMY_NEG: "[Concept('concept_autonomy','Autonomie')] zůstává nezměněno"
- INCREASE_AUTONOMY_FIRST: "Zvyšujeme naši [Concept('concept_autonomy','autonomii')|l], stáváme se $SUBJECT_TYPE|v$" # todo: CONCEPT CASE
+ INCREASE_AUTONOMY_FIRST: "Zvyšujeme naši [Concept('concept_autonomy','autonomii')|l], stáváme se [SUBJECT_TYPE.GetName]" # todo: CHANGED (predtym: Zvyšujeme naši [Concept('concept_autonomy','autonomii')|l], stáváme se $SUBJECT_TYPE|v$)
  INCREASE_AUTONOMY_FIRST_NEG: "[Concept('concept_autonomy','Autonomie')] zůstává nezměněno"
- INCREASE_AUTONOMY_THIRD: "[COUNTRY.GetName] má zvýšenou autonomii, stává se $SUBJECT_TYPE|v$ [COUNTRY.GetOverlord.GetAltAdjective('G')]"
+ INCREASE_AUTONOMY_THIRD: "[COUNTRY.GetName] má zvýšenou autonomii, stává se [SUBJECT_TYPE.GetName] [COUNTRY.GetOverlord.GetAltAdjective('G')]" # todo: CHANGED (predtym: [COUNTRY.GetName] má zvýšenou autonomii, stává se [SUBJECT_TYPE.GetName] [COUNTRY.GetOverlord.GetName])
  INCREASE_AUTONOMY_THIRD_NEG: "[COUNTRY.GetName] autonomie zůstává nezměněna"
  DECREASE_AUTONOMY: "[Concept('concept_autonomy','Autonomie')] se snižuje na [SUBJECT_TYPE.GetName]"
  DECREASE_AUTONOMY_NEG: "[Concept('concept_autonomy','Autonomie')] zůstává nezměněna"
- DECREASE_AUTONOMY_FIRST: "Snižujeme naši [Concept('concept_autonomy','autonomii')|l], stáváme se $SUBJECT_TYPE|v$" # todo: CONCEPT CASE
+ DECREASE_AUTONOMY_FIRST: "Snižujeme naši [Concept('concept_autonomy','autonomii')|l], stáváme se [SUBJECT_TYPE.GetName]" # todo: CHANGED (predtym: Snižujeme naši [Concept('concept_autonomy','autonomii')|l], stáváme se $SUBJECT_TYPE|v$)
  DECREASE_AUTONOMY_FIRST_NEG: "[Concept('concept_autonomy','Autonomie')] se nemění"
- DECREASE_AUTONOMY_THIRD: "[COUNTRY.GetName] má sníženou autonomii, stává se $SUBJECT_TYPE|v$ [COUNTRY.GetOverlord.GetAltAdjective('G')]"
+ DECREASE_AUTONOMY_THIRD: "[COUNTRY.GetName] má sníženou autonomii, stává se [SUBJECT_TYPE.GetName] [COUNTRY.GetOverlord.GetAltAdjective('G')]" # todo: CHANGED (predtym: [COUNTRY.GetName] má sníženou autonomii, stává se [SUBJECT_TYPE.GetName] [COUNTRY.GetOverlord.GetName])
  DECREASE_AUTONOMY_THIRD_NEG: "[COUNTRY.GetName] autonomie zůstává nezměněna"
  TELEPORT_TO_FRONT_THIRD: "[MILITARY_FORMATION.GetName] se okamžitě přesune na [TARGET_FRONT.GetName]"
  TELEPORT_TO_FRONT_GLOBAL: "[Concept('concept_military_formation','Formace')] je okamžitě přesunut na [Concept('concept_front','frontu')]" # todo: CHANGED (predtym: [Concept('concept_military_formation','Formace')] je okamžitě přesunut na [Concept('concept_front','frontu')])
@@ -703,15 +741,15 @@
  TRANSFER_SUBJECT_GLOBAL: "[TARGET_COUNTRY.GetName] je převedena jako [Concept('concept_subject','závislá země')] [COUNTRY.GetAltAdjective('D')]"
  TRANSFER_SUBJECT_FIRST: "[TARGET_COUNTRY.GetName] je převedena jako [Concept('concept_subject','závislá země')] [COUNTRY.GetAltAdjectiveNoFlag('D')]"
  TRANSFER_SUBJECT_THIRD: "[TARGET_COUNTRY.GetName] je převedena jako [Concept('concept_subject','závislá země')] [COUNTRY.GetAltAdjective('D')]"
- ADD_ELECTORAL_CONFIDENCE: "[Concept('concept_electoral_confidence','Důvěra ve volby')] se zvýší o #variable $VALUE|+0%$#!"
- ADD_ELECTORAL_CONFIDENCE_NEGATIVE: "[Concept('concept_electoral_confidence','Důvěra ve volby')] se sníží o #variable $VALUE|-0%$#!"
- ADD_ELECTORAL_CONFIDENCE_FIRST: "[COUNTRY.GetAltAdjectiveNoFlag('aa')] [Concept('concept_electoral_confidence','Důvěra ve volby')|l] se zvýší o #variable $VALUE|+0%$#!"
- ADD_ELECTORAL_CONFIDENCE_FIRST_NEGATIVE: "[COUNTRY.GetAltAdjectiveNoFlag('aa')] [Concept('concept_electoral_confidence','Důvěra ve volby')|l] se sníží o #variable $VALUE|-0%$#!"
- ADD_ELECTORAL_CONFIDENCE_THIRD: "[COUNTRY.GetAltAdjective('aa')] [Concept('concept_electoral_confidence','Důvěra ve volby')|l] se zvýší o #variable $VALUE|+0%$#!"
- ADD_ELECTORAL_CONFIDENCE_THIRD_NEGATIVE: "[COUNTRY.GetAltAdjective('aa')] [Concept('concept_electoral_confidence','Důvěra ve volby')|l] se sníží o #variable $VALUE|-0%$#!"
- SET_ELECTORAL_CONFIDENCE: "[Concept('concept_electoral_confidence','Důvěra ve volby')] je nastavena na #variable $VALUE|0%$#!"
- SET_ELECTORAL_CONFIDENCE_FIRST: "[COUNTRY.GetAltAdjectiveNoFlag('aa')] [Concept('concept_electoral_confidence','Důvěra ve volby')|l] je nastavena na #variable $VALUE|0%$#!"
- SET_ELECTORAL_CONFIDENCE_THIRD: "[COUNTRY.GetAltAdjective('aa')] [Concept('concept_electoral_confidence','Důvěra ve volby')|l] je nastavena na #variable $VALUE|0%$#!"
+ ADD_ELECTORAL_CONFIDENCE: "[Concept('concept_electoral_confidence','Důvěra ve volby')] se zvýší o #variable $VALUE|+0%$#!" # todo: CHANGED NUMBER
+ ADD_ELECTORAL_CONFIDENCE_NEGATIVE: "[Concept('concept_electoral_confidence','Důvěra ve volby')] se sníží o #variable $VALUE|-0%$#!" # todo: CHANGED NUMBER
+ ADD_ELECTORAL_CONFIDENCE_FIRST: "[COUNTRY.GetAltAdjectiveNoFlag('aa')] [Concept('concept_electoral_confidence','Důvěra ve volby')|l] se zvýší o #variable $VALUE|+0%$#!" # todo: CHANGED NUMBER
+ ADD_ELECTORAL_CONFIDENCE_FIRST_NEGATIVE: "[COUNTRY.GetAltAdjectiveNoFlag('aa')] [Concept('concept_electoral_confidence','Důvěra ve volby')|l] se sníží o #variable $VALUE|-0%$#!" # todo: CHANGED NUMBER
+ ADD_ELECTORAL_CONFIDENCE_THIRD: "[COUNTRY.GetAltAdjective('aa')] [Concept('concept_electoral_confidence','Důvěra ve volby')|l] se zvýší o #variable $VALUE|+0%$#!" # todo: CHANGED NUMBER
+ ADD_ELECTORAL_CONFIDENCE_THIRD_NEGATIVE: "[COUNTRY.GetAltAdjective('aa')] [Concept('concept_electoral_confidence','Důvěra ve volby')|l] se sníží o #variable $VALUE|-0%$#!" # todo: CHANGED NUMBER
+ SET_ELECTORAL_CONFIDENCE: "[Concept('concept_electoral_confidence','Důvěra ve volby')] je nastavena na #variable $VALUE|0%$#!" # todo: CHANGED NUMBER
+ SET_ELECTORAL_CONFIDENCE_FIRST: "[COUNTRY.GetAltAdjectiveNoFlag('aa')] [Concept('concept_electoral_confidence','Důvěra ve volby')|l] je nastavena na #variable $VALUE|0%$#!" # todo: CHANGED NUMBER
+ SET_ELECTORAL_CONFIDENCE_THIRD: "[COUNTRY.GetAltAdjective('aa')] [Concept('concept_electoral_confidence','Důvěra ve volby')|l] je nastavena na #variable $VALUE|0%$#!" # todo: CHANGED NUMBER
  EFFECT_KILL_SHIP: "Jeden [Concept('concept_ship','loď')] je zničen" # todo: NEW TRANSLATION
  EFFECT_KILL_SHIP_THIRD: "[SHIP.GetName] je zničen" # todo: NEW TRANSLATION
  EFFECT_DAMAGE_SHIP: "Jeden [Concept('concept_ship','loď')] utrpí $VALUE|0v$ poškození" # todo: NEW TRANSLATION
@@ -736,3 +774,9 @@
  CLEAR_MOVEMENT_DEFEATED: "Zrušit stav poražení [POLITICAL_MOVEMENT.GetName]" # todo: NEW TRANSLATION
  SET_MOVEMENT_DEFEATED_THIRD: "Nastavit [POLITICAL_MOVEMENT.GetName] jako poražené v této [Concept('concept_country','zemi')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CLEAR_MOVEMENT_DEFEATED_THIRD: "Zrušit stav poražení [POLITICAL_MOVEMENT.GetName] v této [Concept('concept_country','zemi')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ ESTABLISH_COSSACK_HOST_GLOBAL: "Zakládá [GetBuildingType('building_cossack_host').GetName] v tomto [concept_state]" # todo: NEW TRANSLATION
+ ESTABLISH_COSSACK_HOST_THIRD: "Zakládá [GetBuildingType('building_cossack_host').GetName] ve státě [STATE.GetName]" # todo: NEW TRANSLATION
+ ADD_DECREE: "Vydává [concept_decree] [DECREE_TYPE.GetName] v $TARGET|v$" # todo: NEW TRANSLATION
+ REMOVE_DECREE: "Ruší [concept_decree] [DECREE_TYPE.GetName] v $TARGET|v$" # todo: NEW TRANSLATION
+ REPLACE_DECREE: "Nahrazuje [concept_decree] [DECREE_TYPE.GetName] dekretem [TARGET_DECREE_TYPE.GetName] $concept_decree$ v $TARGET|v$" # todo: NEW TRANSLATION
+ DECREE_EFFECT_TARGET_COUNTRY: "všechny [Concept('concept_state','$concept_states|q$')] země [COUNTRY.GetName]" # todo: NEW TRANSLATION

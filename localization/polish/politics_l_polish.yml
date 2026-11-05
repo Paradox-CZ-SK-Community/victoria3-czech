@@ -1,7 +1,7 @@
 ﻿l_polish:
  IG_TRAIT_NOT_MARGINAL_CHECK: "[InterestGroup.GetName] #b nejsou#! [Concept('concept_marginalized','marginalizována')]"
- IG_TRAIT_APPROVAL_THRESHOLD_MIN: "[Concept('concept_approval','Spokojenost')] [InterestGroup.GetCustom('IG_G_TT')] je alespoň $THRESHOLD|+$ (aktuálně: #v #tooltippable #tooltip:[InterestGroup.GetTooltipTag],IG_APPROVAL_BREAKDOWN [InterestGroup.GetApprovalValue|+]#!#!#!)" # todo: NAME CASE
- IG_TRAIT_APPROVAL_THRESHOLD_MAX: "[Concept('concept_approval','Spokojenost')] [InterestGroup.GetCustom('IG_G_TT')] je $THRESHOLD|+$ nebo horší (aktuálně: #v #tooltippable #tooltip:[InterestGroup.GetTooltipTag],IG_APPROVAL_BREAKDOWN [InterestGroup.GetApprovalValue|+]#!#!#!)" # todo: NAME CASE
+ IG_TRAIT_APPROVAL_THRESHOLD_MIN: "[Concept('concept_approval','Spokojenost')] [InterestGroup.GetAltName('G')] je alespoň $THRESHOLD|+$ (aktuálně: #v #tooltippable #tooltip:[InterestGroup.GetTooltipTag],IG_APPROVAL_BREAKDOWN [InterestGroup.GetApprovalValue|+]#!#!#!)" # todo: NAME CASE
+ IG_TRAIT_APPROVAL_THRESHOLD_MAX: "[Concept('concept_approval','Spokojenost')] [InterestGroup.GetAltName('G')] je $THRESHOLD|+$ nebo horší (aktuálně: #v #tooltippable #tooltip:[InterestGroup.GetTooltipTag],IG_APPROVAL_BREAKDOWN [InterestGroup.GetApprovalValue|+]#!#!#!)" # todo: NAME CASE
  ACTIVE_IG_GROUP_TRAITS: "#title Aktivní rysy zájmové skupiny#!"
  ELECTION: "Volby"
  CIVIL_WARS: "Občanské války"
@@ -15,10 +15,19 @@
  FREE_REFORM_DATE_TOOLTIP: "Poslední den pro bezplatnou reformu: [Date.GetString]"
  ELECTORAL_CONFIDENCE_WITH_VALUE: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],ELECTORAL_CONFIDENCE_TOOLTIP $ELECTORAL_CONFIDENCE_VALUE$#!#! [Concept('concept_electoral_confidence','důvěra ve volby')]"
  ELECTORAL_CONFIDENCE_VALUE: "[SelectLocalization(GreaterThanOrEqualTo_CFixedPoint(GetPlayer.GetElectoralConfidence, '(CFixedPoint)1.0'),'ELECTORAL_CONFIDENCE_VALUE_GOOD', 'ELECTORAL_CONFIDENCE_VALUE_BAD')]"
- ELECTORAL_CONFIDENCE_VALUE_GOOD: "#v [GetPlayer.GetElectoralConfidence|%0]#!"
- ELECTORAL_CONFIDENCE_VALUE_BAD: "#v [GetPlayer.GetElectoralConfidence|%0]#!"
- ELECTORAL_CONFIDENCE_TOOLTIP: "#header [Concept('concept_electoral_confidence','Důvěra ve volby')]#!\n$ELECTORAL_CONFIDENCE_VALUE$ pro [GetPlayer.GetName]\n$TOOLTIP_DELIMITER$\n#title Účinky:#!#indent_newline:3 \n[GetPlayer.GetElectoralConfidenceEffectDesc]#!"
- ELECTORAL_CONFIDENCE_SCALING_DESC: "#title Účinky důvěry ve volby jsou upraveny o $SCALING|=%0v$ kvůli:#!\n$DETAILS$"
+ ELECTORAL_CONFIDENCE_VALUE_GOOD: "#v [GetPlayer.GetElectoralConfidence|%0]#!" # todo: CHANGED NUMBER
+ ELECTORAL_CONFIDENCE_VALUE_BAD: "#v [GetPlayer.GetElectoralConfidence|%0]#!" # todo: CHANGED NUMBER
+ ELECTORAL_CONFIDENCE_TOOLTIP: "#header [Concept('concept_electoral_confidence','Důvěra ve volby')]#!\n$ELECTORAL_CONFIDENCE_VALUE$ pro [GetPlayer.GetName]\n$TOOLTIP_DELIMITER$\n[ConcatIfNeitherEmpty(AddLocalizationIf(NotEqualTo_CFixedPoint(GetPlayer.GetModifier.GetValueFor('country_electoral_confidence_over_time'), '(CFixedPoint)0'), 'ELECTORAL_CONFIDENCE_MONTHLY_CHANGE'), '\n\n')][ConcatIfNeitherEmpty(AddLocalizationIf(GreaterThan_CFixedPoint(GetPlayer.MakeScope.ScriptValue('electoral_confidence_campaign_start_gain'), '(CFixedPoint)0'), 'ELECTORAL_CONFIDENCE_CAMPAIGN_START_GAIN'), '\n\n')]#title Účinky:#!#indent_newline:3 \n[GetPlayer.GetElectoralConfidenceEffectDesc]#![ConcatIfNeitherEmpty('\n\n', GetPlayer.GetElectoralConfidenceScalingDesc)]" # todo: CHANGED (predtym: header [Concept('concept_electoral_confidence','Důvěra ve volby')] !\n$ELECTORAL_CONFIDENCE_VALUE$ pro [GetPlayer.GetNam)
+ ELECTORAL_CONFIDENCE_MONTHLY_CHANGE: "[GetPlayer.GetModifier.GetValueWithBreakdownFor('country_electoral_confidence_over_time')] měsíční změna#indent_newline:3 [ConcatIfNeitherEmpty('\n', AddLocalizationIf(And(LessThan_CFixedPoint(GetPlayer.GetModifier.GetValueFor('country_electoral_confidence_over_time'), '(CFixedPoint)0'), LessThanOrEqualTo_CFixedPoint(GetPlayer.GetElectoralConfidence, GetPlayer.MakeScope.ScriptValue('electoral_confidence_drift_limit'))), 'ELECTORAL_CONFIDENCE_DRIFT_FLOOR'))]#!" # todo: NEW TRANSLATION
+ ELECTORAL_CONFIDENCE_DRIFT_FLOOR: "#v [GetPlayer.MakeScope.ScriptValue('electoral_confidence_drift_floor')|%1]#! nejnižší hodnota, na kterou může měsíční změna klesnout" # todo: NEW TRANSLATION
+ ELECTORAL_CONFIDENCE_CAMPAIGN_START_GAIN: "Na začátku každé [concept_election] kampaně:#indent_newline:3 \n#tooltippable #tooltip:[GetPlayer.GetTooltipTag],ELECTORAL_CONFIDENCE_CAMPAIGN_START_GAIN_TOOLTIP #v [GetPlayer.MakeScope.ScriptValue('electoral_confidence_campaign_start_gain')|=+%1]#!#!#! z [GetAmendmentType('amendment_tradition_of_free_elections').GetName]#!" # todo: NEW TRANSLATION
+ ELECTORAL_CONFIDENCE_CAMPAIGN_START_GAIN_TOOLTIP: "#header Zisk během kampaně [concept_election]#!\n[SelectLocalization(GreaterThan_CFixedPoint(GetPlayer.MakeScope.ScriptValue('electoral_confidence_campaign_start_uncapped_gain'), GetPlayer.MakeScope.ScriptValue('electoral_confidence_campaign_start_max_gain')), 'ELECTORAL_CONFIDENCE_CAMPAIGN_START_GAIN_CAPPED', 'ELECTORAL_CONFIDENCE_CAMPAIGN_START_GAIN_BELOW_MAX')]\n$TOOLTIP_DELIMITER$\n#title Díky:#!#indent_newline:3 \n#v [GetPlayer.MakeScope.ScriptValue('electoral_confidence_campaign_start_max_gain')|=+%1]#! z [GetAmendmentType('amendment_tradition_of_free_elections').GetName]#!\n\n#title Násobeno:#!#indent_newline:3 \n#v [GetPlayer.MakeScope.ScriptValue('eagle_burger_freedom_literacy')|%1]#! / #b [GetPlayer.MakeScope.ScriptValue('eagle_burger_freedom_full_literacy_rate')|%1]#! [concept_literacy] (×[GetPlayer.MakeScope.ScriptValue('eagle_burger_freedom_literacy_factor')|2])\n#v [GetPlayer.MakeScope.ScriptValue('eagle_burger_freedom_urbanization_per_million')|0]#! / #b [GetPlayer.MakeScope.ScriptValue('eagle_burger_freedom_full_urbanization_per_million')|0]#! [concept_urbanization] na milion [Concept('concept_pop', '$concept_pops|q$')] (×[GetPlayer.MakeScope.ScriptValue('eagle_burger_freedom_urbanization_factor')|2])[ConcatIfNeitherEmpty('\n', AddLocalizationIf(GreaterThan_CFixedPoint(GetPlayer.MakeScope.ScriptValue('eagle_burger_freedom_elected_bureaucrats_factor'), '(CFixedPoint)1'), 'ELECTORAL_CONFIDENCE_CAMPAIGN_START_GAIN_ELECTED_BUREAUCRATS'))][ConcatIfNeitherEmpty('\n', AddLocalizationIf(GreaterThan_CFixedPoint(GetPlayer.MakeScope.ScriptValue('eagle_burger_freedom_crownland_diets_factor'), '(CFixedPoint)1'), 'ELECTORAL_CONFIDENCE_CAMPAIGN_START_GAIN_CROWNLAND_DIETS'))][ConcatIfNeitherEmpty('\n', AddLocalizationIf(GreaterThan_CFixedPoint(GetPlayer.MakeScope.ScriptValue('eagle_burger_freedom_second_amendment_factor'), '(CFixedPoint)1'), 'ELECTORAL_CONFIDENCE_CAMPAIGN_START_GAIN_SECOND_AMENDMENT'))]#!" # todo: NEW TRANSLATION
+ ELECTORAL_CONFIDENCE_CAMPAIGN_START_GAIN_CAPPED: "#v [GetPlayer.MakeScope.ScriptValue('electoral_confidence_campaign_start_gain')|=+%1]#! aktuálně (omezeno na #v [GetPlayer.MakeScope.ScriptValue('electoral_confidence_campaign_start_max_gain')|%1]#! z #v [GetPlayer.MakeScope.ScriptValue('electoral_confidence_campaign_start_uncapped_gain')|=+%1]#!)" # todo: NEW TRANSLATION
+ ELECTORAL_CONFIDENCE_CAMPAIGN_START_GAIN_BELOW_MAX: "#v [GetPlayer.MakeScope.ScriptValue('electoral_confidence_campaign_start_gain')|=+%1]#! aktuálně" # todo: NEW TRANSLATION
+ ELECTORAL_CONFIDENCE_CAMPAIGN_START_GAIN_ELECTED_BUREAUCRATS: "#v ×[GetPlayer.MakeScope.ScriptValue('eagle_burger_freedom_elected_bureaucrats_factor')|2]#! z [GetLawType('law_elected_bureaucrats').GetName]" # todo: NEW TRANSLATION
+ ELECTORAL_CONFIDENCE_CAMPAIGN_START_GAIN_CROWNLAND_DIETS: "#v ×[GetPlayer.MakeScope.ScriptValue('eagle_burger_freedom_crownland_diets_factor')|2]#! z [GetLawType('law_crownland_diets').GetName]" # todo: NEW TRANSLATION
+ ELECTORAL_CONFIDENCE_CAMPAIGN_START_GAIN_SECOND_AMENDMENT: "#v ×[GetPlayer.MakeScope.ScriptValue('eagle_burger_freedom_second_amendment_factor')|2]#! z [GetAmendmentType('amendment_american_second_amendment').GetName]" # todo: NEW TRANSLATION
+ ELECTORAL_CONFIDENCE_SCALING_DESC: "#title Účinky důvěry ve volby jsou upraveny o $SCALING|=%0v$ kvůli:#!\n$DETAILS$" # todo: CHANGED NUMBER
  grant_leadership_must_be_pressured_ig: "[Concept('concept_interest_group','Zájmová skupina')] je [Concept('concept_political_movement_pressure','pod tlakem')] ze strany [Concept('concept_political_movement','politické hnutí')] [Concept('concept_agitator','agitátor')]"
  POLITICAL_MOVEMENT_ENACTING: "uvedení"
  POLITICAL_MOVEMENT_RESTORING: "obnovování"
@@ -63,7 +72,7 @@
  POLITICAL_MOVEMENT_RADICALISM_SCRIPT_VALUE_FORMAT: "#v $VALUE|-=%$#! z $KEY$"
  POLITICAL_MOVEMENT_TARGET_ACTIVISM_EFFECT: "#v $VALUE|=-%0$#! [Concept('concept_activism','aktivismus hnutí')]"
  POLITICAL_MOVEMENT_LAW_LOYALIST_IMPACT: "#title Vliv na počet [Concept('concept_loyalist', 'loajalistů')] z úspěšného uzákonění:#!\n$DETAILS$"
- POLITICAL_MOVEMENT_LAW_LOYALIST_IMPACT_ENTRY: "[POLITICAL_MOVEMENT.GetName]: @population! $NUM_INDIVIDUALS|pD$ [Concept('concept_individual','jednotlivců')] se stane více loajální"
+ POLITICAL_MOVEMENT_LAW_LOYALIST_IMPACT_ENTRY: "[POLITICAL_MOVEMENT.GetName]: @population! $NUM_INDIVIDUALS|pD$ [Concept('concept_individual','jednotlivců')] se stane více loajální" # todo: CHANGED (predtym: [POLITICAL_MOVEMENT.GetName]: @population! $NUM_INDIVIDUALS|pD$ [Concept('concept_individual','jednotlivců')] se stane v)
  POLITICAL_MOVEMENT_LAW_RADICALISM_IMPACT_HEADER: "Efekt na [Concept('concept_activism','aktivismus')]:"
  POLITICAL_MOVEMENT_LAW_RADICALISM_IMPACT_ENTRY: "[POLITICAL_MOVEMENT.GetName]: Okamžitě se změní o $IMMEDIATE_VALUE|=-%$ a časem se posune směrem k $TARGET_VALUE_LABEL$ ($TARGET_VALUE|v0%$)"
  POLITICAL_MOVEMENT_POP_SUPPORT_TOOLTIP: "#header [Concept('concept_political_movement_support','Podpora politického hnutí')] od [Concept('concept_pop','populací')]#!\n[PoliticalMovement.GetNumSupportingIndividuals|Dv] [Concept('concept_individual','jednotlivců')] napříč všemi $concept_pops$\n$TOOLTIP_DELIMITER$\nMezi všemi podporovateli je [PoliticalMovement.GetNumSupportingRadicals|D-] [Concept('concept_radical','radikálové')] kteří přispívají [Concept('concept_activism','aktivismus')] k hnutí\n\nTento $concept_political_movement_short$ způsobuje [PoliticalMovement.PredictNumberOfRadicalsEveryMonth|D-=] $concept_individuals$ aby se každý měsíc stávali více $concept_radical$" # todo: CONCEPT CASE
@@ -77,12 +86,12 @@
  POLITICAL_MOVEMENT_TO_PRESERVE_NAME: "Zachovat [LawType.GetName]"
  POLITICAL_MOVEMENT_TO_RESTORE_NAME: "Obnovit [LawType.GetName]"
  POLITICAL_MOVEMENT_PRESSURE_ON_INTEREST_GROUP: "#v [InterestGroup.GetFractionOfCloutSupportingMovement(PoliticalMovement.Self)|%0]#!"
- POLITICAL_MOVEMENT_PRESSURE_ON_INTEREST_GROUP_LABEL: "[Concept('concept_political_movement_pressure','Politický tlak')] na [InterestGroup.GetCustom('IG_A_TT')]" # todo: NAME CASE
+ POLITICAL_MOVEMENT_PRESSURE_ON_INTEREST_GROUP_LABEL: "[Concept('concept_political_movement_pressure','Politický tlak')] na [InterestGroup.GetAltName('A')]" # todo: NAME CASE
  POLITICAL_MOVEMENT_TOOLTIP_HEADER: "[PoliticalMovement.GetNameNoFormatting]"
  POLITICAL_MOVEMENT_IS_REVOLUTIONARY: "#r Tento $concept_political_movement$ je [Concept('concept_revolution','revoluční')]#!"
  POLITICAL_MOVEMENT_IS_SECESSIONIST: "#r Tento $concept_political_movement$ je [Concept('concept_secession','separatista')]#!"
  POLITICAL_MOVEMENT_REVOLUTION_CLOCK_CHECKPOINT: "[PoliticalMovement.GetCivilWar.GetClockCheckpointRemainingWeeks|v] týdnů do příštího kontrolního bodu (#v [PoliticalMovement.GetCivilWar.GetClockCheckpointDateString]#!)"
- POLITICAL_MOVEMENT_REVOLUTION_CLOCK_CHECKPOINT_TOOLTIP: "$POLITICAL_MOVEMENT_REVOLUTION_CLOCK_CHECKPOINT$\n$TOOLTIP_DELIMITER$\nPři každém kontrolním bodě má vznikající [Concept('concept_revolution','revoluce')] šanci buď zvýšit, nebo snížit svůj pokrok směrem k vypuknutí plnohodnotné $concept_revolution$ [Concept('concept_war','válku')]. Čím vyšší [Concept('concept_political_movement_support','podpora')] a [Concept('concept_activism','aktivismus')] má $concept_revolutionary$ [Concept('concept_political_movement', '$concept_political_movement_short$')|l], tím větší riziko, že se celkový pokrok $concept_revolution$ zvýší." # todo: CONCEPT CASE
+ POLITICAL_MOVEMENT_REVOLUTION_CLOCK_CHECKPOINT_TOOLTIP: "$POLITICAL_MOVEMENT_REVOLUTION_CLOCK_CHECKPOINT$\n$TOOLTIP_DELIMITER$\nPři každém kontrolním bodě má vznikající [Concept('concept_revolution','revoluce')] šanci buď zvýšit, nebo snížit svůj pokrok směrem k vypuknutí plnohodnotné $concept_revolution$ [Concept('concept_war','válku')]. Čím vyšší [Concept('concept_political_movement_support','podpora')] a [Concept('concept_activism','aktivismus')] má $concept_revolutionary$ [Concept('concept_political_movement', '$concept_political_movement_short|q$')|l], tím větší riziko, že se celkový pokrok $concept_revolution$ zvýší." # todo: CHANGED (predtym: $POLITICAL_MOVEMENT_REVOLUTION_CLOCK_CHECKPOINT$\n$TOOLTIP_DELIMITER$\nPři každém kontrolním bodě má vznikající [Concept)
  POLITICAL_MOVEMENT_REVOLUTION_PROGRESS: "#v #tooltippable #tooltip:[PoliticalMovement.GetTooltipTag],CIVIL_WAR_PROGRESS_TOOLTIP [PoliticalMovement.GetCivilWar.GetProgress|1%]#!#!#! celkový pokrok směrem k [PoliticalMovement.GetCivilWar.GetName]"
  POLITICAL_MOVEMENT_REVOLUTION_PROGRESS_AT_CHECKPOINT: "#tooltippable #tooltip:[PoliticalMovement.GetTooltipTag],POLITICAL_MOVEMENT_REVOLUTION_PROGRESS_AT_CHECKPOINT_TOOLTIP #v [PoliticalMovement.GetCivilWar.GetProgressAtCheckpoint|=%-1]#!#!#! pokrok bude přidán na příštím kontrolním bodu"
  POLITICAL_MOVEMENT_REVOLUTION_PROGRESS_AT_CHECKPOINT_TOOLTIP: "[PoliticalMovement.GetCivilWar.GetProgressAtCheckpointDesc]"
@@ -100,17 +109,17 @@
  POLITICAL_MOVEMENT_LOYALTY_PREDICTIONS_NONE: "Toto $concept_political_movement_short$ v současnosti #b nezpůsobuje#! žádné [Concept('concept_radical', 'radikály')]"
  POLITICAL_MOVEMENT_ACTIVISM_CAUTION: "$concept_activism_short$ je předpovězen, že se změní na @activism_red! [LabelingHelper.GetLabelForRadicalism(PoliticalMovement.GetTargetRadicalism)] (#v [PoliticalMovement.GetTargetRadicalism|%0]#!). Pokud bude dále provokováno, [PoliticalMovement.GetNameNoIcon] se může stát [Concept('concept_revolution','revoluční')]"
  POLITICAL_MOVEMENT_ACTIVISM_WARNING: "@warning! Předpovězený [Concept('concept_activism','aktivismus')] je #r #tooltippable #tooltip:[PoliticalMovement.GetTooltipTag],POLITICAL_MOVEMENT_RADICALISM_BREAKDOWN [PoliticalMovement.GetTargetRadicalism|%0]#!#!#! činí [Concept('concept_civil_war','občanská válka')] nevyhnutelným"
- POLITICAL_MOVEMENT_POP_ATTRACTION_FACTORS_HEADER: "Faktory přitahující [Concept('concept_pop','populace')] k této [Concept('concept_political_movement', '$concept_political_movement_short$')|l]"
+ POLITICAL_MOVEMENT_POP_ATTRACTION_FACTORS_HEADER: "Faktory přitahující [Concept('concept_pop','populace')] k této [Concept('concept_political_movement', '$concept_political_movement_short|q$')|l]" # todo: CHANGED (predtym: Faktory přitahující [Concept('concept_pop','populace')] k této [Concept('concept_political_movement', '$concept_politica)
  NO_POLITICAL_MOVEMENT_POP_ATTRACTION_FACTORS: "Žádné faktory přitahující [Concept('concept_pop','populace')]"
  POLITICAL_MOVEMENT_LAWS_AND_RADICALS_HEADER: "$concept_radicals$ a dotčené $concept_laws$"
  POLITICAL_MOVEMENT_AFFECTED_LAWS_SUCCESS_HEADER: "#v [PoliticalMovement.GetAffectedSuccessPercentageOnEndorsedLaws|0=+%]#! [Concept('concept_enactment_success','úspěch')] šance"
  POLITICAL_MOVEMENT_AFFECTED_LAWS_STALL_HEADER: "#v [PoliticalMovement.GetAffectedSuccessPercentageOnOpposedLaws|0=-%]#! [Concept('concept_enactment_stall','obstrukce')] šance"
  NO_AFFECTED_LAWS_DUE_TO_LOW_RADICALISM: "Nedostatek [Concept('concept_activism','aktivizmu')] k ovlivnění jakýchkoliv [Concept('concept_law','zákonů')]"
  CLOUT: "$concept_clout$"
- POLITICAL_MOVEMENT_SUPPORT_FROM_POPS: "$VALUE|v=%$ z podpory @population! $NUM_INDIVIDUALS|vD$ [Concept('concept_individual','jednotlivci')]\n$TAB$(reprezentuje $FRACTION|v%0$ politicky aktivní [Concept('concept_pop','populace')|l])"
+ POLITICAL_MOVEMENT_SUPPORT_FROM_POPS: "$VALUE|v=%$ z podpory @population! $NUM_INDIVIDUALS|vD$ [Concept('concept_individual','jednotlivci')]\n$TAB$(reprezentuje $FRACTION|v%0$ politicky aktivní [Concept('concept_pop','populace')|l])" # todo: CHANGED (predtym: $VALUE|v=%$ z $concept_political_movement_support_short$ podpory @population! $NUM_INDIVIDUALS|vD$ [Concept('concept_ind)
  POLITICAL_MOVEMENT_SUPPORT_FROM_MILITARY: "$VALUE|v=%$ z podpory $NUM_INDIVIDUALS|vD$ [GetPopType('soldiers').GetName] a [GetPopType('officers').GetName]\n$TAB$(reprezentuje $FRACTION|v%0$ celkové [Concept('concept_political_strength', 'politické síly')] armády)"
  POLITICAL_MOVEMENT_SUPPORT_FROM_WEALTH: "$VALUE|v=%$ z $concept_political_movement_support_short$ z $WEALTH|Dv$ [Concept('concept_political_strength','politické síly')] z [Concept('concept_wealth','bohatství')]\n$TAB$(co představuje $FRACTION|v%0$ z celkového $concept_political_strength$ z $concept_wealth$ v [Concept('concept_country','zemi')])" # todo: CONCEPT CASE
- POLITICAL_MOVEMENT_SUPPORT_FROM_POPS_POP: "$VALUE|v=%$ z podpory @population! $NUM_INDIVIDUALS|vD$ [Concept('concept_individual','jednotlivců')]"
+ POLITICAL_MOVEMENT_SUPPORT_FROM_POPS_POP: "$VALUE|v=%$ z podpory @population! $NUM_INDIVIDUALS|vD$ [Concept('concept_individual','jednotlivců')]" # todo: CHANGED (predtym: $VALUE|v=%$ z $concept_political_movement_support_short$ podpory @population! $NUM_INDIVIDUALS|vD$ [Concept('concept_ind)
  POLITICAL_MOVEMENT_SUPPORT_FROM_MILITARY_POP: "$VALUE|v=%$ z $concept_political_movement_support_short$ $NUM_INDIVIDUALS|vD$ [GetPopType('soldiers').GetName] a [GetPopType('officers').GetName]"
  POLITICAL_MOVEMENT_SUPPORT_FROM_WEALTH_POP: "$VALUE|v=%$ z $concept_political_movement_support_short$ $WEALTH|Dv$ [Concept('concept_political_strength','politická síla')] z [Concept('concept_wealth','bohatství')]"
  POLITICAL_MOVEMENT_SUPPORT_WITHIN_IDENTITY: "Tento $concept_political_movement_short$ má $SUPPORT|v%0$ $concept_political_movement_support_short$ uvnitř jeho spojené [Concept('concept_culture','kultura')] a/nebo [Concept('concept_religion','náboženství')]"
@@ -154,15 +163,12 @@
  button_refuse_law_imposition: "Odmítnout uložení"
  button_refuse_law_imposition_desc: "Zanechte tohoto podniku a informujte [SCOPE.sC('foreign_imposition_country').GetNameNoFlag], že nebudete vyhovovat jejich přáním."
  law_imposition_already_enacting_law: "My #b právě nepřijímáme#! navrhovaný zákon"
- notification_imposition_demand_sent_name: "Žádost o uložení odeslána"
+ notification_imposition_demand_sent_name: "[SCOPE.sLaw('foreign_imposition_law').GetName] požadován od [SCOPE.sC('country_imposed_upon').GetName]" # todo: CHANGED (predtym: Žádost o uložení odeslána)
  notification_imposition_demand_sent_desc: "[SCOPE.sC('country_imposed_upon').GetName] brzy uvede [SCOPE.sLaw('foreign_imposition_law').GetName] na naši žádost."
- notification_imposition_demand_sent_tooltip: "#header $notification_imposition_demand_sent_name$#!\n$TOOLTIP_DELIMITER$\n$notification_imposition_demand_sent_desc$"
  notification_imposition_started_name: "[SCOPE.sC('country_imposed_upon').GetName] uvede [SCOPE.sLaw('foreign_imposition_law').GetName]"
  notification_imposition_started_desc: "[SCOPE.sC('country_imposed_upon').GetName] zahájil proces uvedení [SCOPE.sLaw('foreign_imposition_law').GetName], který jste na ně uložili."
- notification_imposition_started_tooltip: "#header $notification_imposition_started_name$#!\n$TOOLTIP_DELIMITER$\n$notification_imposition_started_desc$"
  notification_imposition_deferred_name: "[SCOPE.sC('country_imposed_upon').GetName] odloží uvedení [SCOPE.sLaw('foreign_imposition_law').GetName]"
  notification_imposition_deferred_desc: "[SCOPE.sC('country_imposed_upon').GetName] přijímá uložení [SCOPE.sLaw('foreign_imposition_law').GetName] na sebe, ale zvolila si jej provést v příhodném čase."
- notification_imposition_deferred_tooltip: "#header $notification_imposition_deferred_name$#!\n$TOOLTIP_DELIMITER$\n$notification_imposition_deferred_desc$"
  OPPOSING_MOVEMENT_TOOLTIP: "@disapproves! [Concept('concept_endorse_oppose','Odporuje')] [Law.GetName]"
  ENDORSING_MOVEMENT_TOOLTIP: "@approves! [Concept('concept_endorse_oppose','Podporuje')] [Law.GetName]"
  TOOLTIP_TYPE_AMENDMENT: "[Concept('concept_amendment','Dodatek')]"
@@ -174,21 +180,21 @@
  DATA_AMENDMENTS_TAX_MODIFIERS_HEADER: "Daňové modifikátory:"
  DATA_AMENDMENTS_INSTITUTION_MODIFIERS_HEADER: "Modifikátory institucí:"
  DATA_AMENDMENTS_SPONSOR_MODIFIERS_HEADER: "Modifikátory sponzora:"
- REPEAL_AMENDMENT_TOOLTIP: "#header Zrušit [Concept('concept_amendment','dodatek')|l] [Amendment.GetName] #!\n[ConcatIfNeitherEmpty('\n$DATA_AMENDMENTS_REPEAL_HEADER$\n', Amendment.GetOnRepealEffectsDesc)]"
+ REPEAL_AMENDMENT_TOOLTIP: "#header Zrušit [Concept('concept_amendment','dodatek')|l] [Amendment.GetName] #!\n[ConcatIfNeitherEmpty('\n$DATA_AMENDMENTS_REPEAL_HEADER$\n', Amendment.GetOnRepealEffectsDesc)]" # todo: CHANGED (predtym: header Zrušit [Concept('concept_amendment','dodatek')|l] [Amendment.GetName] !\n[GetDesc(Amendment.Repeal)][ConcatIfNeit)
  AMENDMENT_SPONSOR: "#title Sponzor:#!\n$TAB$[Amendment.GetSponsor.GetName]"
  AMENDMENT_TIMEOUT_ACTIVE: "#title Dočasné:#!\n$TAB$Vyprší #variable [Amendment.GetTimeoutDate]#!" # todo: NEW TRANSLATION
  AMENDMENT_TIMEOUT_ENACTING: "#title Dočasné:#!\n$TAB$Vyprší #variable [Amendment.GetTimeoutMonths]#! měsíců poté, co [Concept('concept_law','zákon')] vstoupí v platnost" # todo: NEW TRANSLATION
  AMENDMENT_PARENT_LAW_TYPE_TITLE: "#title [Concept('concept_parent_law','Mateřský zákon')]:#!"
  AMENDMENT_PARENT_LAW_TYPE: "[Amendment.GetParentLawType.GetName]"
  AMENDMENT_EFFECTS_AND_MODIFIERS: "Účinky a modifikátory"
- AMENDMENT_TOOLTIP_ENDORSED: "@approves! #tooltippable #tooltip:[Amendment.GetTooltipTag],AMENDMENT_TOOLTIP_ENDORSED_BREAKDOWN [Amendment.GetNumEndorsingInterestGroups|v]#!#! [Concept('concept_interest_group','zájmové skupiny')] [Amendment.GetEndorsingInterestGroupsSummary] [Concept('concept_endorse_oppose', 'podporuje')] tento dodatek"
- AMENDMENT_TOOLTIP_NOT_ENDORSED: "Tento dodatek #b není#! @approves! [Concept('concept_endorse_oppose', 'podporován')] žádnou [Concept('concept_interest_group','zájmovou skupinou')]"
+ AMENDMENT_TOOLTIP_ENDORSED: "@approves! #tooltippable #tooltip:[Amendment.GetTooltipTag],AMENDMENT_TOOLTIP_ENDORSED_BREAKDOWN [Amendment.GetNumEndorsingInterestGroups|v]#!#! [Concept('concept_interest_group','zájmové skupiny')] [Amendment.GetEndorsingInterestGroupsSummary] [Concept('concept_endorse_oppose', 'podporuje')] tento dodatek" # todo: CHANGED (predtym: @approves! tooltippable tooltip:[Amendment.GetTooltipTag],AMENDMENT_TOOLTIP_ENDORSED_BREAKDOWN [Amendment.GetNumEndorsin)
+ AMENDMENT_TOOLTIP_NOT_ENDORSED: "Tento dodatek #b není#! @approves! [Concept('concept_endorse_oppose', 'podporován')] žádnou [Concept('concept_interest_group','zájmovou skupinou')]" # todo: CHANGED (predtym: Tento $concept_amendment$ b není ! @approves! [Concept('concept_endorse_oppose', 'podporován')] žádnou [Concept('concept)
  AMENDMENT_TOOLTIP_ENDORSED_BREAKDOWN: "[Amendment.GetEndorsingInterestGroupsBreakdown]"
- AMENDMENT_TOOLTIP_INDIFFERENT: "@indifferent! #tooltippable #tooltip:[Amendment.GetTooltipTag],AMENDMENT_TOOLTIP_INDIFFERENT_BREAKDOWN [Amendment.GetNumIndifferentInterestGroups|v]#!#! [Concept('concept_interest_group','zájmové skupiny')] [Amendment.GetIndifferentInterestGroupsSummary] jsou [Concept('concept_endorse_oppose','lhostejný')] k tomuto dodatku"
- AMENDMENT_TOOLTIP_NOT_INDIFFERENT: "Žádná [Concept('concept_interest_group','zájmová skupina')|l] nejsou @indifferent! [Concept('concept_endorse_oppose','lhostejný')|l] k tomuto dodatku"
+ AMENDMENT_TOOLTIP_INDIFFERENT: "@indifferent! #tooltippable #tooltip:[Amendment.GetTooltipTag],AMENDMENT_TOOLTIP_INDIFFERENT_BREAKDOWN [Amendment.GetNumIndifferentInterestGroups|v]#!#! [Concept('concept_interest_group','zájmové skupiny')] [Amendment.GetIndifferentInterestGroupsSummary] jsou [Concept('concept_endorse_oppose','lhostejný')] k tomuto dodatku" # todo: CHANGED (predtym: @indifferent! tooltippable tooltip:[Amendment.GetTooltipTag],AMENDMENT_TOOLTIP_INDIFFERENT_BREAKDOWN [Amendment.GetNumIn)
+ AMENDMENT_TOOLTIP_NOT_INDIFFERENT: "Žádná [Concept('concept_interest_group','zájmová skupina')|l] nejsou @indifferent! [Concept('concept_endorse_oppose','lhostejný')|l] k tomuto dodatku" # todo: CHANGED (predtym: Žádná [Concept('concept_interest_group','zájmová skupina')|l] nejsou @indifferent! [Concept('concept_endorse_oppose','lh)
  AMENDMENT_TOOLTIP_INDIFFERENT_BREAKDOWN: "[Amendment.GetIndifferentInterestGroupsBreakdown]"
- AMENDMENT_TOOLTIP_OPPOSED: "@disapproves! #tooltippable #tooltip:[Amendment.GetTooltipTag],AMENDMENT_TOOLTIP_OPPOSED_BREAKDOWN [Amendment.GetNumOpposingInterestGroups|v]#!#! [Concept('concept_interest_group','zájmové skupiny')] [Amendment.GetOpposingInterestGroupsSummary] [Concept('concept_endorse_oppose', 'oponují')] tento dodatek"
- AMENDMENT_TOOLTIP_NOT_OPPOSED: "Tento dodatek #b není#! @disapproves! [Concept('concept_endorse_oppose', 'oponován')] žádnou [Concept('concept_interest_group','zájmové skupině')]"
+ AMENDMENT_TOOLTIP_OPPOSED: "@disapproves! #tooltippable #tooltip:[Amendment.GetTooltipTag],AMENDMENT_TOOLTIP_OPPOSED_BREAKDOWN [Amendment.GetNumOpposingInterestGroups|v]#!#! [Concept('concept_interest_group','zájmové skupiny')] [Amendment.GetOpposingInterestGroupsSummary] [Concept('concept_endorse_oppose', 'oponují')] tento dodatek" # todo: CHANGED (predtym: @disapproves! tooltippable tooltip:[Amendment.GetTooltipTag],AMENDMENT_TOOLTIP_OPPOSED_BREAKDOWN [Amendment.GetNumOpposi)
+ AMENDMENT_TOOLTIP_NOT_OPPOSED: "Tento dodatek #b není#! @disapproves! [Concept('concept_endorse_oppose', 'oponován')] žádnou [Concept('concept_interest_group','zájmové skupině')]" # todo: CHANGED (predtym: Tento $concept_amendment$ b není ! @disapproves! [Concept('concept_endorse_oppose', 'oponován')] žádnou [Concept('concep)
  AMENDMENT_TOOLTIP_OPPOSED_BREAKDOWN: "[Amendment.GetOpposingInterestGroupsBreakdown]"
  ACTIVE_LAW_AMENDMENTS_TEXT: "#v #tooltippable [GetDataModelSize(Law.GetAllAmendments)]#!#! [SelectLocalization(EqualTo_int32(GetDataModelSize(Law.GetAllAmendments), '(int32)1'), 'AMENDMENT', 'AMENDMENTS')]"
  AMENDMENT: "$concept_amendment$"
@@ -218,9 +224,11 @@
  UNHAPPY_WITH_NON_MIGUELIST_MONARCHY: "Nespokojeni s monarchií, která není [GetIdeology('ideology_miguelist').GetName]" # todo: NEW TRANSLATION
  HUNGARIAN_REVOLUTION: "Dokončeno #v $je_hungarian_revolution$#!" # todo: NEW TRANSLATION
  CHOSE_A_DIFFERENT_PATH: "Zvolena jiná cesta" # todo: NEW TRANSLATION
+ CHOSE_A_DIFFERENT_RADICAL_PATH: "Zvolila jinou cestu" # todo: NEW TRANSLATION
  POWERFUL_DEVOUT: "Mocní $ig_devout$" # todo: NEW TRANSLATION
  UNHAPPY_INTELLIGENTSIA: "[Concept('concept_approval','Spokojenost')] je $ig_approval_unhappy$ (#v [GetDefine('NPolitics','APPROVAL_THRESHOLD_UNHAPPY')|0=+]#!) nebo méně" # todo: NEW TRANSLATION
  FACTORY_COUNCILS_LAW: "[GetLawType('law_factory_councils').GetName] [Concept('concept_law','zákon')]" # todo: NEW TRANSLATION
+ FACTORY_COUNCILS_AMENDMENT: "[GetAmendmentType('amendment_factory_councils').GetName] [concept_amendment]" # todo: NEW TRANSLATION
  COMBINATION_ACTS_LAW: "[GetLawType('law_combination_acts').GetName] [Concept('concept_law','zákon')]" # todo: NEW TRANSLATION
  GUILDS_OR_ANTI_STRIKE_LAW: "[GetLawType('law_guild_system').GetName] nebo [GetLawType('law_anti_strike_laws').GetName]" # todo: NEW TRANSLATION
  RIGHT_TO_ASSOCIATE_LAW: "[GetLawType('law_right_to_associate').GetName] [Concept('concept_law','zákon')]" # todo: NEW TRANSLATION
@@ -249,14 +257,20 @@
  CONTENT_IN_CR: "[Concept('concept_approval','Spokojenost')] je nad #v 0#! s aktivním [GetLawType('law_council_republic').GetName] [Concept('concept_law','zákonem')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  CONTENT_TU: "[Concept('concept_approval','Spokojenost')] je nad #v 0#! bez aktivního [GetLawType('law_council_republic').GetName] [Concept('concept_law','zákona')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  COUNCIL_REPUBLIC_LAW: "[GetLawType('law_council_republic').GetName] [Concept('concept_law','zákon')]" # todo: NEW TRANSLATION
+ COMMUNAL_ADMINISTRATION_LAW: "[GetLawType('law_communal_administration').GetName] [concept_law]" # todo: NEW TRANSLATION
+ REVOLUTIONARY_GUARD_LAW: "[GetLawType('law_revolutionary_guard').GetName] [concept_law]" # todo: NEW TRANSLATION
  NATIONAL_LIBERATION_ALLIANCE: "Aliance národního osvobození" # todo: NEW TRANSLATION
  INTERNATIONAL_SUPPORT: "Mezinárodní podpora" # todo: NEW TRANSLATION
  COMMUNISM_1_COMPLETE: "Komunistické vítězství v #v $je_communism_1$#!" # todo: NEW TRANSLATION
  AUTOCRACY_OR_OLIGARCHY_LAW: "[GetLawType('law_autocracy').GetName] nebo [GetLawType('law_oligarchy').GetName] [Concept('concept_law','zákon')]" # todo: NEW TRANSLATION
- AUTOCRACY_OLIGARCHY_SPS_TECHNOCRACY_LAW: "[Concept('concept_in_government','Ve vládě')] s aktivním [GetLawType('law_council_republic').GetName] [Concept('concept_law','zákonem')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
+ CR_SPS_LAW: "[concept_in_government] s aktivními [GetLawType('law_council_republic').GetName] a [GetLawType('law_single_party_state').GetName] [concept_law]" # todo: NEW TRANSLATION
+ PEASANTS_PERCENT: "Vysoký podíl obyvatelstva tvořený $peasants$" # todo: NEW TRANSLATION
+ LOW_PEASANTS_PERCENT: "Nízký podíl obyvatelstva tvořený $peasants$" # todo: NEW TRANSLATION
+ HIGH_GDP_PER_CAPITA: "Vysoký [Concept('concept_gdp_per_capita','$concept_gdp_per_capita_short|q$')]" # todo: NEW TRANSLATION
+ LOW_GDP_PER_CAPITA: "Nízký [Concept('concept_gdp_per_capita','$concept_gdp_per_capita_short|q$')]" # todo: NEW TRANSLATION
  HAPPY_WITHOUT_FASCISM: "[Concept('concept_approval','Spokojenost')] je #v 0#! nebo více bez aktivních [GetLawType('law_corporate_state').GetName] nebo [GetLawType('law_ethnostate').GetName] [Concept('concept_law','zákon')]" # todo: NEW TRANSLATION
  WAR_REPARATIONS: "[Concept('concept_enforced_treaty','Vynucená smlouva')] $war_reparations$ [Concept('concept_treaty','smlouva')] [Concept('concept_article','článek')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
- PRESENT_MINORITIES: "Diskriminované menšiny v [Concept('concept_incorporated_state', '$concept_incorporated_states$')|l]" # todo: NEW TRANSLATION
+ PRESENT_MINORITIES: "Diskriminované menšiny v [Concept('concept_incorporated_state', '$concept_incorporated_states|q$')|l]" # todo: CHANGED (predtym: Diskriminované menšiny v [Concept('concept_incorporated_state', '$concept_incorporated_states|q$')])
  BANKRUPTCY: "V [Concept('concept_bankruptcy','bankrotu')]" # todo: NEW TRANSLATION # todo: CONCEPT CASE
  PB_OR_ARMED_FORCES: "$ig_petty_bourgeoisie$ nebo $ig_armed_forces$" # todo: NEW TRANSLATION
  TU_OR_INTELLIGENTSIA: "$ig_intelligentsia$ nebo $ig_trade_unions$" # todo: NEW TRANSLATION

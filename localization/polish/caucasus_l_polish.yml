@@ -4,7 +4,7 @@
  je_the_eastern_border_treaty_of_beijing: "Uplatnit nároky na Primorye" # todo: NEW TRANSLATION
  je_the_eastern_border_treaty_of_beijing_desc: "Region #bold Primorye#! nabízí příležitost vybudovat přístav s teplou vodou u Tichého oceánu, čímž by se výrazně zvýšila naše schopnost projekce moci. Můžeme sjednat smlouvu, která zajistí toto území využitím čínské slabosti." # todo: NEW TRANSLATION
  obligation_for_outer_manchuria_tt: "Vyměníme naši povinnost za #bold Primorye#!." # todo: NEW TRANSLATION
- transfer_of_outer_manchuria_tt: "Budeme požadovat předání #bold Primorye#! pod ruskou vládu." # todo: NEW TRANSLATION
+ transfer_of_outer_manchuria_tt: "Budeme požadovat předání #bold Primorye#! pod #v $RUS_ADJ$#! vládu" # todo: CHANGED (predtym: Budeme požadovat předání bold Primorye ! pod ruskou vládu.)
  china_explosion_point_2_tt: "Pokrok #b $je_warlord_china$#! [Concept('concept_journal_entry','záznam v deníku')] je pod #v 3#! (aktuálně #variable [SCOPE.sCountry('china_scope').MakeScope.Var('china_warlord_explosion').GetValue]#!)" # todo: NEW TRANSLATION
  war_with_china_not_russia_tt: "Není ve válce s #bold Rusko#!, a vede [Concept('concept_war','válku')] proti jiné zemi než #bold Rusko#!" # todo: NEW TRANSLATION
  russo_chinese.1.t: "Pekingská smlouva" # todo: NEW TRANSLATION
@@ -18,42 +18,65 @@
  je_the_eastern_border_russia_chuguchak_protocol_desc: "Získání dalších území ve Střední Asii je prioritou ruské vlády. S Čínou v chaosu existuje příležitost rozšířit se do sporných oblastí." # todo: NEW TRANSLATION
  obligation_for_central_asia_tt: "Vyměníme naši povinnost za území ve Střední Asii." # todo: NEW TRANSLATION
  russia_chuguchak_protocol_req_tt: "Státy #BOLD Semireche#! a #BOLD Akmolinsk#! jsou pod kontrolou Ruska nebo ruského vazala" # todo: NEW TRANSLATION
- transfer_of_central_asia_tt: "Budeme požadovat předání sporných #BOLD kazašských a kyrgyzských#! území pod ruskou nadvládu." # todo: NEW TRANSLATION
+ transfer_of_central_asia_tt: "Budeme požadovat předání sporných #BOLD kazašských a kyrgyzských#! území pod #v $RUS_ADJ$#! nadvládu" # todo: CHANGED (predtym: Budeme požadovat předání sporných BOLD kazašských a kyrgyzských ! území pod ruskou nadvládu.)
  russo_chinese.2.t: "Čugučacký protokol" # todo: NEW TRANSLATION
  russo_chinese.2.d: "Zahájili jsme jednání se zástupci [SCOPE.sCountry('china_scope').GetName], abychom vymezili hranici mezi našimi národy na západě. V regionu Střední Asie je mnoho příležitostí pro územní zisky." # todo: NEW TRANSLATION
  russo_chinese.2.f: "Naším úkolem je zajistit, aby země Kyrgyzů a Kazachů, ti věrní poddaní Ruska, byly sjednoceny pod státem, který je schopen poskytnout bezpečnost proti současnému stavu banditismu a drobných krádeží v regionu." # todo: NEW TRANSLATION
  russo_chinese.2.a: "[SCOPE.sState('tomsk_scope').GetName] a [SCOPE.sState('ili_scope').GetName] budou dostačující." # todo: NEW TRANSLATION
  russo_chinese.2.b: "Území [SCOPE.sState('kirghizia_scope').GetName] je rovněž nezbytným ziskem." # todo: NEW TRANSLATION
  russo_chinese.2.c: "Území [SCOPE.sCountry('kirgiz_scope').GetAdjective] bude učiněno celistvým pod naším protektorátem." # todo: NEW TRANSLATION
+ treaty_of_beijing_tt: "[SCOPE.sCountry('china_scope').GetName] postoupí [concept_state] [SCOPE.sState('outer_manchuria_scope').GetName] zemi [ROOT.GetCountry.GetName]" # todo: NEW TRANSLATION
+ chuguchak_protocol_altai_jetisy_tt: "[SCOPE.sCountry('china_scope').GetName] postoupí [Concept('concept_state', '$concept_states|q$')] [SCOPE.sState('tomsk_scope').GetName] a [SCOPE.sState('ili_scope').GetName] zemi [ROOT.GetCountry.GetName]" # todo: NEW TRANSLATION
+ chuguchak_protocol_altai_tt: "[SCOPE.sCountry('china_scope').GetName] postoupí [concept_state] [SCOPE.sState('tomsk_scope').GetName] zemi [ROOT.GetCountry.GetName]" # todo: NEW TRANSLATION
+ chuguchak_protocol_jetisy_tt: "[SCOPE.sCountry('china_scope').GetName] postoupí [concept_state] [SCOPE.sState('ili_scope').GetName] zemi [ROOT.GetCountry.GetName]" # todo: NEW TRANSLATION
+ chuguchak_protocol_altai_jetisy_kirghizia_tt: "[SCOPE.sCountry('china_scope').GetName] postoupí [Concept('concept_state', '$concept_states|q$')] [SCOPE.sState('tomsk_scope').GetName], [SCOPE.sState('ili_scope').GetName] a [SCOPE.sState('kirghizia_scope').GetName] zemi [ROOT.GetCountry.GetName]" # todo: NEW TRANSLATION
+ chuguchak_protocol_altai_kirghizia_tt: "[SCOPE.sCountry('china_scope').GetName] postoupí [Concept('concept_state', '$concept_states|q$')] [SCOPE.sState('tomsk_scope').GetName] a [SCOPE.sState('kirghizia_scope').GetName] zemi [ROOT.GetCountry.GetName]" # todo: NEW TRANSLATION
+ chuguchak_protocol_jetisy_kirghizia_tt: "[SCOPE.sCountry('china_scope').GetName] postoupí [Concept('concept_state', '$concept_states|q$')] [SCOPE.sState('ili_scope').GetName] a [SCOPE.sState('kirghizia_scope').GetName] zemi [ROOT.GetCountry.GetName]" # todo: NEW TRANSLATION
+ chuguchak_protocol_kirghizia_tt: "[SCOPE.sCountry('china_scope').GetName] postoupí [concept_state] [SCOPE.sState('kirghizia_scope').GetName] zemi [ROOT.GetCountry.GetName]" # todo: NEW TRANSLATION
+ chuguchak_protocol_kirgiz_tt: "[SCOPE.sCountry('china_scope').GetName] postoupí [concept_state] [SCOPE.sState('kirghizia_scope').GetName] zemi [SCOPE.sCountry('kirgiz_scope').GetName]" # todo: NEW TRANSLATION
  russo_chinese.3.t: "Vládce Východu" # todo: NEW TRANSLATION
  russo_chinese.3.d: "Zajištěním [SCOPE.sState('vladivostok_scope').GetName] se sen o [ROOT.GetCountry.GetAdjective] námořní nadvládě v Tichém oceánu přiblížil realitě. Město [SCOPE.sState('vladivostok_scope').GetPortHubName] se stane naším novým hlavním přístavem na Východě." # todo: NEW TRANSLATION
- russo_chinese.3.f: ""Tento přístav lze považovat za nejlepší ze všech. Mnohé připomíná Olgu, ale jen menší, teplejší a příjemnější. Nicméně kolem jsou stejné duby a stejné malebné hory. V nížinách šumí řeky; na březích je mnoho pramenů. Naše stanoviště postavené nedávno, se svými bílými stany, působí dobře mezi duby, které ještě nebyly vykáceny a právě byly vyčištěny."\n\n— Sergej Maksimov" # todo: NEW TRANSLATION
+ russo_chinese.3.f: "„Tento přístav lze považovat za nejlepší ze všech. Mnohé připomíná Olgu, ale jen menší, teplejší a příjemnější. Nicméně kolem jsou stejné duby a stejné malebné hory. V nížinách šumí řeky; na březích je mnoho pramenů. Naše stanoviště postavené nedávno, se svými bílými stany, působí dobře mezi duby, které ještě nebyly vykáceny a právě byly vyčištěny.“\n\n— Sergej Maksimov" # todo: NEW TRANSLATION
  russo_chinese.3.a: "Přesunout sibiřské lodě co nejrychleji." # todo: NEW TRANSLATION
  russo_chinese.3.b: "Přístav Vladivostok bude nejkrásnějším v naší zemi." # todo: NEW TRANSLATION
  modifier_vladivostok_navy: "Vládce Východu" # todo: NEW TRANSLATION
  modifier_vladivostok_navy_country: "Projekce moci v Tichomoří" # todo: NEW TRANSLATION
  modifier_vladivostok_civilian: "Vládce Východu" # todo: NEW TRANSLATION
  je_caucasian_war: "Kavkazská válka" # todo: NEW TRANSLATION
- je_caucasian_war_reason: "Naše územní ambice v Kavkazských horách jsou zbržděny tvrdým místním odporem. Musíme zničit veškerý zbývající odpor, abychom zajistili jižní hranici a otevřeli území k osídlení.\n\nJakmile budou prozkoumány technologie #bold Rifling#! a #bold Logistics#!, bude možné #bold eskalovat válku#! a zahájit invazi plného rozsahu do povstaleckých států." # todo: NEW TRANSLATION
- caucasus_secured_tt: "V kavkazském regionu neexistuje žádný nezávislý #bold čerkeský#! nebo #bold severokavkazský#! národ." # todo: NEW TRANSLATION
+ je_caucasian_war_reason: "[SelectLocalization( ObjectsEqual( GetPlayer.Self, SCOPE.sCountry('russia_scope').Self ), 'je_caucasian_war_reason_russia', SelectLocalization( ObjectsEqual( GetPlayer.Self, SCOPE.sCountry('circassia_scope').Self ), 'je_caucasian_war_reason_circassia', SelectLocalization( ObjectsEqual( GetPlayer.Self, SCOPE.sCountry('imamate_scope').Self ), 'je_caucasian_war_reason_imamate', 'je_caucasian_war_reason_observer' ) ) )]\n\n@information! Postup [SCOPE.sCountry('russia_scope').GetName] mohou brzdit [Concept('concept_truce','$concept_truces|q$')] se zeměmi [SCOPE.sCountry('circassia_scope').GetName] a [SCOPE.sCountry('imamate_scope').GetName]. Jakmile [SCOPE.sCountry('russia_scope').GetNameNoFlag] získá technologie #bold Rifling#! a #bold Logistics#!, může #bold eskalovat válku#! a #bold porušit příměří#! a zahájit invazi plného rozsahu na Kavkaz." # todo: CHANGED (predtym: Naše územní ambice v Kavkazských horách jsou zbržděny tvrdým místním odporem. Musíme zničit veškerý zbývající odpor, aby)
+ je_caucasian_war_reason_russia: "Naše územní ambice v Kavkazských horách maří tvrdý odpor místních obyvatel. Abychom zabezpečili naši jižní hranici a umožnili osidlování těchto území, musíme potlačit veškerý zbývající odpor." # todo: NEW TRANSLATION
+ je_caucasian_war_reason_circassia: "Imperiální ambice země #v $RUS$#! vyžadují úplné zničení našich domovů. Abychom odolali náporu #v $RUS_ADJ$#!, musíme sjednotit kmeny země #v $CIR$#! a společně bojovat." # todo: NEW TRANSLATION
+ je_caucasian_war_reason_imamate: "Imperiální ambice země #v $RUS$#! vyžadují podrobení Kavkazu. Abychom čelili pravoslavné invazi #v $RUS_ADJ$#!, musíme sjednotit národy země #v $dyn_c_chechnya_imamate$#! a společně bojovat za spravedlivou věc." # todo: NEW TRANSLATION
+ je_caucasian_war_reason_observer: "Imperiální ambice země #v $RUS$#! vyžadují podrobení Kavkazských hor, jejichž obyvatelé se postupu #v $RUS_ADJ$#! urputně brání." # todo: NEW TRANSLATION
+ je_caucasian_war_russian_victory: "K dosažení #b ruského#! vítězství:\n" # todo: NEW TRANSLATION
+ je_caucasian_war_russian_victory_conclusion_desc: "$concept_journal_entry$ skončil #b ruským#! vítězstvím" # todo: NEW TRANSLATION
+ je_caucasian_war_on_russian_victory: "Při #b ruském#! vítězství:\n$EFFECT$" # todo: NEW TRANSLATION
+ je_caucasian_war_caucasian_victory: "K dosažení #b kavkazského#! vítězství:\n" # todo: NEW TRANSLATION
+ je_caucasian_war_caucasian_victory_conclusion_desc: "$concept_journal_entry$ skončil #b kavkazským#! vítězstvím" # todo: NEW TRANSLATION
+ je_caucasian_war_on_caucasian_victory: "Při #b kavkazském#! vítězství:\n$EFFECT$" # todo: NEW TRANSLATION
+ caucasus_secured_tt: "Žádná nezávislá [concept_country] nemá své [Concept('concept_capital_state','$concept_capital_state_short|q$')] v oblasti [GetGeographicRegion('geographic_region_caucasus_old').GetName]." # todo: CHANGED (predtym: V kavkazském regionu neexistuje žádný nezávislý bold čerkeský ! nebo bold severokavkazský ! národ.)
  caucasus_lost_tt: "Celé oblasti států #bold Kuban#!, #bold North Caucasus#! a #bold Dagestan#! vypadly z kontroly [SCOPE.sCountry('russia_scope').GetAdjective]." # todo: NEW TRANSLATION
- je_caucasian_war_circassia: "Čest před životem" # todo: NEW TRANSLATION
- je_caucasian_war_circassia_reason: "Imperiální ambice [SCOPE.sCountry('russia_scope').GetName] vyžadují totální zničení našich domovů. Abychom odolali [SCOPE.sCountry('russia_scope').GetAdjective] náporu, musíme sjednotit kmeny [ROOT.GetCountry.GetName] a postavit se společně v boji." # todo: NEW TRANSLATION
- je_caucasian_war_imamate: "Gazavat" # todo: NEW TRANSLATION
- je_caucasian_war_imamate_reason: "Imperiální ambice [SCOPE.sCountry('russia_scope').GetName] vyžadují podrobení Kavkazu. Abychom čelili [SCOPE.sCountry('russia_scope').GetAdjective] ortodoxní invazi, musíme sjednotit národy [ROOT.GetCountry.GetName] a postavit se společně v posvátném boji." # todo: NEW TRANSLATION
+ tiflis_cut_off_from_russia_tt: "[SelectLocalization(SCOPE.sState('tiflis_scope').IsValid, SCOPE.sState('tiflis_scope').GetName, 'STATE_GREATER_CAUCASUS')] je oddělena od [concept_market_area] [SelectLocalization(SCOPE.sCountry('russia_scope').IsValid, SCOPE.sCountry('russia_scope').GetCapital.GetName, 'capital_of_russia_tt')] po dobu [ROOT.GetCountry.MakeScope.ScriptValue('caucasus_war_doom_value')|v0] nebo více po sobě jdoucích měsíců" # todo: NEW TRANSLATION
+ tiflis_cut_off_from_russia_active_tt: "[SelectLocalization(SCOPE.sState('tiflis_scope').IsValid, SCOPE.sState('tiflis_scope').GetName, 'STATE_GREATER_CAUCASUS')] je oddělena od [concept_market_area] [SelectLocalization(SCOPE.sCountry('russia_scope').IsValid, SCOPE.sCountry('russia_scope').GetCapital.GetName, 'capital_of_russia_tt')] po dobu [ROOT.GetCountry.MakeScope.ScriptValue('caucasus_war_doom_value')|v0] nebo více po sobě jdoucích měsíců (aktuálně [SCOPE.sJournalEntry('journal_entry').MakeScope.Var('caucasus_doom_var').GetValue|v0])" # todo: NEW TRANSLATION
  caucasus_war_attacker: "Kavkazská válka" # todo: NEW TRANSLATION
  caucasus_war_defender_circassia: "Čest před životem" # todo: NEW TRANSLATION
  caucasus_war_defender_imamate: "Odpor a úcta" # todo: NEW TRANSLATION
+ capital_of_russia_tt: "[Concept('concept_capital_state','$concept_capital_state_short|q$')] země #v $RUS_ADJ$#!" # todo: NEW TRANSLATION
  russia_escalate_caucasian_war: "Eskalovat kavkazskou válku" # todo: NEW TRANSLATION
  russia_escalate_caucasian_war_desc: "S novými a zdokonalenými metodami ochrany našich zásob a vedení války jsme konečně schopni zničit kavkazské povstalce plnou silou naší armády." # todo: NEW TRANSLATION
  no_turmoil_tt: "[STATE.GetName] má #bold nepokoje#! pod 15%" # todo: NEW TRANSLATION
- caucasian_war_non_escalated_loc: "Konflikt hoří pomalu, veden hlavně prostřednictvím nájezdů a vpádů." # todo: NEW TRANSLATION
+ caucasian_war_non_escalated_loc: "Konflikt hoří pomalu, veden z velké části prostřednictvím nájezdů a vpádů." # todo: CHANGED (predtym: Konflikt hoří pomalu, veden hlavně prostřednictvím nájezdů a vpádů.)
  caucasian_war_escalated_loc: "Konflikt eskaloval v kampaň plného rozsahu." # todo: NEW TRANSLATION
- caucasian_war_milyutin_loc: "Konflikt eskaloval do kampaně za úplné vyhlazení rebelů." # todo: NEW TRANSLATION
+ caucasian_war_milyutin_loc: "Konflikt eskaloval do kampaně za úplné vyhlazení horalů." # todo: CHANGED (predtym: Konflikt eskaloval do kampaně za úplné vyhlazení rebelů.)
+ caucasian_war_danger_loc: "@warning! [SelectLocalization(SCOPE.sState('tiflis_scope').IsValid, SCOPE.sState('tiflis_scope').GetName, 'STATE_GREATER_CAUCASUS')] bylo odříznuto od [SelectLocalization(SCOPE.sCountry('russia_scope').IsValid, SCOPE.sCountry('russia_scope').GetCapital.GetName, 'capital_of_russia_tt')], což ohrožuje [SCOPE.sCountry('russia_scope').GetAdjective] kontrolu nad Kavkazem." # todo: NEW TRANSLATION
  je_the_last_kazakh_khan: "Poslední kazašský chan" # todo: NEW TRANSLATION
  je_the_last_kazakh_khan_reason: "Prohlášen zástupci tří žuzů za chána znovusjednoceného [SCOPE.sCountry('khanate_scope').GetName], [SCOPE.sCharacter('kenesary_scope').GetFullName] se otevřeně vzbouřil proti [ROOT.GetCountry.GetAdjective] nadvládě. Abychom jednou provždy zajistili kazašská území, musí být rebelující chanát zničen." # todo: NEW TRANSLATION
  je_pacify_the_steppes: "Pacifikace stepí" # todo: NEW TRANSLATION
- je_pacify_the_steppes_reason: "Navzdory nominální kontrole [ROOT.GetCountry.GetAdjective] nad kazašskou stepí od 18. století sužuje území banditismus a neoddanost. Kazašští rebelové vedení aristokratem [SCOPE.sCharacter('kenesary_scope').GetFullName] opět opakovaně útočí na naše zásobovací konvoje a pevnosti v regionu.\n\nJen konečná pacifikace stepi umožní [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] být skutečně suverénem Kazachstánu." # todo: NEW TRANSLATION
+ je_pacify_the_steppes_reason: "Navzdory nominální kontrole [SCOPE.sCountry('russia_scope').GetAdjective] nad kazašskou stepí od 18. století sužuje území banditismus a neoddanost. [GetCulture('kazak').GetName] rebelové vedení aristokratem [SCOPE.sCharacter('kenesary_scope').GetFullName] opět opakovaně útočí na naše zásobovací konvoje a pevnosti v regionu.\n\nJen konečná pacifikace stepi umožní [SCOPE.sCountry('russia_scope').GetRuler.GetPrimaryRoleTitle] být skutečně suverénem Kazachstánu." # todo: CHANGED (predtym: Navzdory nominální kontrole [ROOT.GetCountry.GetAdjective] nad kazašskou stepí od 18. století sužuje území banditismus a)
+ je_pacify_the_steppes_pacified: "K pacifikaci stepi:\n" # todo: NEW TRANSLATION
+ je_pacify_the_steppes_on_pacified: "Při pacifikaci stepi:\n$EFFECT$" # todo: NEW TRANSLATION
+ je_pacify_the_steppes_revolt: "K vyvolání #b kazašského povstání#!:\n" # todo: NEW TRANSLATION
+ je_pacify_the_steppes_on_revolt: "Při vypuknutí #b kazašského povstání#!:\n$EFFECT$" # todo: NEW TRANSLATION
  khanate_is_destroyed_tt: "Kazašský chanát byl zničen" # todo: NEW TRANSLATION
  kazakhstan_events.1.t: "Kazašské povstání" # todo: NEW TRANSLATION
  kazakhstan_events.1.d: "Povstalečtí zástupci kazašských žuzů vyhlásili obnovení sjednoceného [SCOPE.sCountry('kazakh_scope').GetName] pod chánen [SCOPE.sCharacter('kenesary_scope').GetFullName]. Povstání ohrožuje naše zájmy po celé Střední Asii." # todo: NEW TRANSLATION
@@ -73,28 +96,28 @@
  kazakhstan_events.3.b: "Konsolidujte zde naše zisky před dalším postupem." # todo: NEW TRANSLATION
  kazakhstan_events.4.t: "Kozácká hlídka přepadena" # todo: NEW TRANSLATION
  kazakhstan_events.4.d: "Oddíl sibiřských kozáků v [SCOPE.sState('raid_state').GetName] byl přepaden a pobit skupinou kazašských jezdců nesoucích prapor [SCOPE.sCharacter('kenesary_scope').GetFullName]." # todo: NEW TRANSLATION
- kazakhstan_events.4.f: ""Všude je nepořádek. Vzniká částečně z nezapomenutelného opomenutí a částečně z bázlivosti kozáků, kteří marně snaží nafouknout bojeschopnost sil slovy, aby nějak ospravedlnili svou zavrženíhodnou nedbalost."" # todo: NEW TRANSLATION
+ kazakhstan_events.4.f: "„Všude je nepořádek. Vzniká částečně z nezapomenutelného opomenutí a částečně z bázlivosti kozáků, kteří marně snaží nafouknout bojeschopnost sil slovy, aby nějak ospravedlnili svou zavrženíhodnou nedbalost.“" # todo: NEW TRANSLATION
  kazakhstan_events.4.a: "Udejte náhradu [SCOPE.sCountry('kazakh_scope').GetRuler.GetPrimaryRoleTitle] za karavanu." # todo: NEW TRANSLATION
  kazakhstan_events.4.b: "Je odpovědností Kazachů zajistit svá vlastní území." # todo: NEW TRANSLATION
- notification_kazakhstan_cossack_patrol_attacked_notification_name: "[SCOPE.sCountry('russia_scope').GetAdjective] kozácká hlídka přepadena v [SCOPE.sState('raid_state').GetName]" # todo: NEW TRANSLATION
+ notification_kazakhstan_cossack_patrol_attacked_notification_name: "kozácká hlídka přepadena v [SCOPE.sState('raid_state').GetName]" # todo: CHANGED (predtym: [SCOPE.sCountry('russia_scope').GetAdjective] kozácká hlídka přepadena v [SCOPE.sState('raid_state').GetName])
  notification_kazakhstan_cossack_patrol_attacked_notification_desc: "Rebelové loajální [SCOPE.sCharacter('kenesary_scope').GetFullName] přepadli hlídku sibiřských kozáků v [SCOPE.sState('raid_state').GetName]." # todo: NEW TRANSLATION
  kazakhstan_events.5.t: "Hraniční pevnost přepadena" # todo: NEW TRANSLATION
  kazakhstan_events.5.d: "Jedna z našich pevností v stepích [SCOPE.sState('raid_state').GetName] byla přepadena skupinou kazašských rebelů pod vedením [SCOPE.sCharacter('kenesary_scope').GetFullName]. Po obsazení pevnosti a rozprášení posádky povstalci bez milosti zničili nejbližší ruská sídla." # todo: NEW TRANSLATION
  kazakhstan_events.5.f: "Když průzkumníkův kůň pohlédl k tomu, co kdysi bylo branou, spatřil to, co zůstalo. Vrstva popela stále pokrývala trosky, usazená požárem, který zčernal a zuhelnatil trámy a zemní valy, jež tvořily hradby. Od doby, kdy byla pevnost spálena, nepřišel déšť, takže popel zachoval to, co zbylo.\n\nTam, kde byla pevnost, byl nyní hrob. Tam, kde byla posádka, byl nyní jen trvalý zápach kouře." # todo: NEW TRANSLATION
  kazakhstan_events.5.a: "Místní jsou jediní odpovědní za tuto katastrofu." # todo: NEW TRANSLATION
  kazakhstan_events.5.b: "Musíme věnovat více zdrojů ochraně našich zájmů." # todo: NEW TRANSLATION
- notification_kazakhstan_fortress_raid_notification_name: "[SCOPE.sCountry('russia_scope').GetAdjective] hraniční pevnost zničena rebely" # todo: NEW TRANSLATION
+ notification_kazakhstan_fortress_raid_notification_name: "[SCOPE.sCountry('russia_scope').GetAdjective] pevnost zničena rebely" # todo: CHANGED (predtym: [SCOPE.sCountry('russia_scope').GetAdjective] hraniční pevnost zničena rebely)
  notification_kazakhstan_fortress_raid_notification_desc: "Hraniční pevnost [SCOPE.sCountry('russia_scope').GetAdjective] byla přepadena a spálena silami [SCOPE.sCharacter('kenesary_scope').GetFullName] v [SCOPE.sState('raid_state').GetName]." # todo: NEW TRANSLATION
  kazakhstan_events.6.t: "Věrné auly pobity" # todo: NEW TRANSLATION
  kazakhstan_events.6.d: "Rebelové [SCOPE.sCharacter('kenesary_scope').GetFullName] napadli a vyvraždili skupinu věrných aulů v [SCOPE.sState('raid_state').GetName], šíříce hrůzu mezi těmi Kazaši, kteří zůstali věrní správě staršího sultána [SCOPE.sCharacter('senior_sultan_scope').GetFullName]." # todo: NEW TRANSLATION
- kazakhstan_events.6.f: ""Jak máme proklamovat věrnost tobě, který bere ruské mince, schovávaje se za ruskými hlídkami, ve městě vystavěném Rusy? Proč bychom měli cítit ten strach, který ty tak spravedlivě cítíš?"" # todo: NEW TRANSLATION
+ kazakhstan_events.6.f: "„Jak máme proklamovat věrnost tobě, který bere ruské mince, schovávaje se za ruskými hlídkami, ve městě vystavěném Rusy? Proč bychom měli cítit ten strach, který ty tak spravedlivě cítíš?“" # todo: NEW TRANSLATION
  kazakhstan_events.6.a: "Přináší zkázu svému vlastnímu lidu." # todo: NEW TRANSLATION
  kazakhstan_events.6.b: "Musíme požádat o další pomoc [SCOPE.sCountry('russia_scope').GetRuler.GetPrimaryRoleTitle]." # todo: NEW TRANSLATION
  notification_kazakhstan_auls_slaughtered_notification_name: "Kazašské auly pobity v [SCOPE.sState('raid_state').GetName]" # todo: NEW TRANSLATION
  notification_kazakhstan_auls_slaughtered_notification_desc: "Síly [SCOPE.sCharacter('kenesary_scope').GetFullName] pobily kazašské auly v [SCOPE.sState('raid_state').GetName] věrné [ROOT.GetCountry.GetAdjective]-jmenovanému staršímu sultánovi." # todo: NEW TRANSLATION
  kazakhstan_events.7.t: "Chánova korespondence" # todo: NEW TRANSLATION
  kazakhstan_events.7.d: "Ucházející se chán Kazachů, [SCOPE.sCharacter('kenesary_scope').GetFullName], poslal korespondenci [SCOPE.sCharacter('ruler_scope').GetFullName], žádaje o alianci s [ROOT.GetCountry.GetName] proti svým rivalům v Rusku a Kazachstánu." # todo: NEW TRANSLATION
- kazakhstan_events.7.f: ""Zase a znovu jsem žádal o pokoj a přátelství od ruského cara a jeho poddaných, a přesto neprokázali žádné čisté úmysly. Jejich touha dominovat našim domovům roste rok od roku - letos to budou ruské pevnosti na řece Irtyš, ale příští rok to bude Sarysu."" # todo: NEW TRANSLATION
+ kazakhstan_events.7.f: "„Zase a znovu jsem žádal o pokoj a přátelství od ruského cara a jeho poddaných, a přesto neprokázali žádné čisté úmysly. Jejich touha dominovat našim domovům roste rok od roku - letos to budou ruské pevnosti na řece Irtyš, ale příští rok to bude Sarysu.“" # todo: NEW TRANSLATION
  kazakhstan_events.7.a: "Ruské a jejich vazalové jsou hrozbou pro nás všechny." # todo: NEW TRANSLATION
  kazakhstan_events.7.b: "Nechceme být součástí jeho boje." # todo: NEW TRANSLATION
  kazakhstan_events.8.t: "Kazašský nájezd odražen" # todo: NEW TRANSLATION
@@ -149,10 +172,10 @@
  modifier_defeat_of_kenesary_khan: "Uklidněné stepi" # todo: NEW TRANSLATION
  caucasuswar.1.t: "Neúspěšný vpád do [SCOPE.sCountry('adversary_scope').GetName]" # todo: NEW TRANSLATION
  caucasuswar.1.d: "Vpád, který jsme zahájili z [SCOPE.sState('invasion_base_state').GetName] na území nárokované [SCOPE.sCountry('adversary_scope').GetName], selhal. Odeslané jednotky se stáhly po těžkých ztrátách v drsném kavkazském terénu." # todo: NEW TRANSLATION
- caucasuswar.1.f: ""Byli v stromech - museli být varováni dříve, než jsme začali. Čekali, až se ocitneme v tom zatraceném lese, než na nás otevřou palbu... major padl první a naše koně byli přepíchnuti. Jak to máme zvládnout, pane? Jak máme toto území vzít, když nemůžeme tvrdit, že ovládáme cokoli, kromě stínu našich vlastních nohou?"" # todo: NEW TRANSLATION
+ caucasuswar.1.f: "„Byli v stromech - museli být varováni dříve, než jsme začali. Čekali, až se ocitneme v tom zatraceném lese, než na nás otevřou palbu... major padl první a naše koně byli přepíchnuti. Jak to máme zvládnout, pane? Jak máme toto území vzít, když nemůžeme tvrdit, že ovládáme cokoli, kromě stínu našich vlastních nohou?“" # todo: NEW TRANSLATION
  caucasuswar.1.a: "Zakryjte ústup palbou a děly." # todo: NEW TRANSLATION
  caucasuswar.1.b: "Stažení sil a tiché přeskupení." # todo: NEW TRANSLATION
- notification_caucasus_russian_failed_attack_notification_name: "Neúspěšný [SCOPE.sCountry('russia_scope').GetAdjective] vpád do našeho území" # todo: NEW TRANSLATION
+ notification_caucasus_russian_failed_attack_notification_name: "Neúspěšný [SCOPE.sCountry('russia_scope').GetAdjective] vpád" # todo: CHANGED (predtym: Neúspěšný [SCOPE.sCountry('russia_scope').GetAdjective] vpád do našeho území)
  notification_caucasus_russian_failed_attack_notification_desc: "Expedice [SCOPE.sCountry('russia_scope').GetAdjective] z [SCOPE.sState('invasion_base_state').GetName] byla odrazena poté, co se pokusila obsadit jedno z našich kontrolovaných regionů." # todo: NEW TRANSLATION
  caucasuswar.2.t: "Kavkazský zásobovací konvoj přepaden" # todo: NEW TRANSLATION
  caucasuswar.2.d: "Konvoj vyslaný, aby dodal potřebné střelivo a zásoby našim silám v [SCOPE.sState('invasion_base_state').GetName], byl přepaden silami [SCOPE.sCountry('adversary_scope').GetName]. Při boji byla ztracena značná část jeho nákladu." # todo: NEW TRANSLATION
@@ -177,14 +200,14 @@
  notification_caucasus_tribe_defection_notification_desc: "Kmen [SCOPE.sCulture('defector_culture').GetName] složil věrnost [SCOPE.sCountry('russia_scope').GetAdjective] [SCOPE.sCountry('russia_scope').GetRuler.GetPrimaryRoleTitle], čímž se oslabuje naše kontrola nad vlastními zeměmi." # todo: NEW TRANSLATION
  caucasuswar.5.t: "Memorandum [SCOPE.sCharacter('milyutin_scope').GetLastName]" # todo: NEW TRANSLATION
  caucasuswar.5.d: "Nově povýšený generálporučík [SCOPE.sCharacter('milyutin_scope').GetFullName] zaslal carovi memorandum, v němž hovoří ve prospěch vyhnání nebo vyhlazení celého [SCOPE.sCulture('circassian_culture').GetName] obyvatelstva Kavkazu." # todo: NEW TRANSLATION
- caucasuswar.5.f: ""realizace této myšlenky by měla trojí či čtvrtý cíl: za prvé, zbavit kavkazskou plošinu neustále nepřátelského obyvatelstva a tím otevřít krásná a úrodná místa pro naši kozáckou populaci; za druhé, dát domorodým samotným lepší postavení, zajistit jejich budoucnost, kterou nyní nemají, protože, jak přišli do Turecka, museli se sami postarat..."" # todo: NEW TRANSLATION
+ caucasuswar.5.f: "„realizace této myšlenky by měla trojí či čtvrtý cíl: za prvé, zbavit kavkazskou plošinu neustále nepřátelského obyvatelstva a tím otevřít krásná a úrodná místa pro naši kozáckou populaci; za druhé, dát domorodým samotným lepší postavení, zajistit jejich budoucnost, kterou nyní nemají, protože, jak přišli do Turecka, museli se sami postarat...“" # todo: NEW TRANSLATION
  caucasuswar.5.a: "Schválit memorandum a eskalovat vyhnání." # todo: NEW TRANSLATION
  caucasuswar.5.b: "Toto opatření učiní hory navždy neovladatelnými." # todo: NEW TRANSLATION
  milyutin_available_tt: "[SCOPE.sCharacter('milyutin_scope').GetFullName] se stane [Concept('concept_general','generálem')]." # todo: NEW TRANSLATION
  caucasuswar.6.t: "Dezercie k [SCOPE.sCountry('adversary_scope').GetName]" # todo: NEW TRANSLATION
  caucasuswar.6.d: "Multietnická povaha imámátu [SCOPE.sCharacter('shamil_scope').GetFullName] se ukázala být neodolatelná pro mnoho našich poddaných v [SCOPE.sState('invasion_base_state').GetName]. Důstojníci i pozemkoví vlastníci nahlásili četné dezertace k imámátu." # todo: NEW TRANSLATION
- caucasuswar.6.f: ""Špatné zacházení s našimi vojáky-dezertéry od Čečenů odrazovalo mnoho nespolehlivých vojáků, a zejména Poláky, od útěku; ale když nyní zjistí, že Šamil dává svobodu dezertérům, mám obavy, že útěky se rozmnoží. Myslím, že je třeba nechat poprvé zajaté dezertéry popravovat. Společně s tímto jsem nařídil všem soukromým velitelům zpřísnit dohled nad nespolehlivými vojáky a okamžitě mi hlásit o těch, kdo utíkají."\n\n— Melenty Jakovlevič Olševskij" # todo: NEW TRANSLATION
- caucasuswar.6.a: "Zpřísnit bezpečnost v regionu, aby se předešlo dalším dezercím." # todo: NEW TRANSLATION
+ caucasuswar.6.f: "„Špatné zacházení s našimi vojáky-dezertéry od Čečenů odrazovalo mnoho nespolehlivých vojáků, a zejména Poláky, od útěku; ale když nyní zjistí, že Šamil dává svobodu dezertérům, mám obavy, že útěky se rozmnoží. Myslím, že je třeba nechat poprvé zajaté dezertéry popravovat. Společně s tímto jsem nařídil všem soukromým velitelům zpřísnit dohled nad nespolehlivými vojáky a okamžitě mi hlásit o těch, kdo utíkají.“\n\n— Melenty Jakovlevič Olševskij" # todo: NEW TRANSLATION
+ caucasuswar.6.a: "Zpřísnit bezpečnost v regionu, aby se předešlo dalším dezercím." # todo: CHANGED MINOR
  caucasuswar.6.b: "Nechceme si nadělat další nepřátelství mezi lidmi." # todo: NEW TRANSLATION
  notification_caucasus_russian_soldiers_defection_notification_name: "[SCOPE.sCountry('russia_scope').GetAdjective] vojáci přecházejí k našim armádám" # todo: NEW TRANSLATION
  notification_caucasus_russian_soldiers_defection_notification_desc: "Skupina špatně zacházených [SCOPE.sCountry('russia_scope').GetAdjective] vojáků prohlásila konverzi k islámu a touhu podpořit náš boj proti vetřelci." # todo: NEW TRANSLATION
@@ -201,19 +224,19 @@
  caucasuswar.8.b: "Nemáme důvod se do toho zapojovat." # todo: NEW TRANSLATION
  circassia_decision_tt: "Budeme mít možnost nabídnout [Concept('concept_recognized_power','Recognition')] [SCOPE.sCountry('circassia_scope').GetAdjective] státu prostřednictvím #bold Rozhodnutí#!." # todo: NEW TRANSLATION
  caucasuswar.9.t: "Vyslanec imámátu" # todo: NEW TRANSLATION
- caucasuswar.9.d: "Po smrti našeho bývalého [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] a na žádost mnoha z [SCOPE.gsInterestGroup('devout_scope').GetCustom('IG_G_TT')], [SCOPE.sCountry('imamate_scope').GetName] vyslal vysoce postaveného naiba, aby upevnil vazby mezi našimi národy a vedl [ROOT.GetCountry.GetName] v jeho boji." # todo: NEW TRANSLATION # todo: NAME CASE
+ caucasuswar.9.d: "Po smrti našeho bývalého [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] a na žádost mnoha z [SCOPE.gsInterestGroup('devout_scope').GetAltName('G')], [SCOPE.sCountry('imamate_scope').GetName] vyslal vysoce postaveného naiba, aby upevnil vazby mezi našimi národy a vedl [ROOT.GetCountry.GetName] v jeho boji." # todo: NEW TRANSLATION # todo: NAME CASE
  caucasuswar.9.f: "Po třetím měsíci, kdy slyšel naše volání na Východ po učiteli, který by nám osvítil cestu, přišel, jeho přítomnost jako titán a jeho vůle jako bouře ohně." # todo: NEW TRANSLATION
  caucasuswar.9.a: "Budeme poctěni, že se sjednotíme s našimi bratry v islámu." # todo: NEW TRANSLATION
  caucasuswar.9.b: "Náš boj je především národní." # todo: NEW TRANSLATION
  muhammad_amin_ruler_tt: "#v Muhammad Amin Asiyalev#! se stane naším [Concept('concept_ruler','vládcem')]" # todo: NEW TRANSLATION
  caucasuswar.10.t: "Výprava Kangaroo" # todo: NEW TRANSLATION
  caucasuswar.10.d: "Oddíl převážně [SCOPE.sCulture('polish_culture').GetName] a [SCOPE.sCulture('hungarian_culture').GetName] dobrovolníků z [SCOPE.sCountry('austria_scope').GetAdjective] [SCOPE.sState('galicia_scope').GetName] připlul do [ROOT.GetCountry.GetName] parníkem Kangaroo, aby pomohl jako dobrovolníci v boji proti [SCOPE.sCountry('russia_scope').GetAdjective] vetřelcům." # todo: NEW TRANSLATION
- caucasuswar.10.f: ""V životě člověka jsou některé předtuchy a touhy, které, navzdory své zdánlivé nepravděpodobnosti, se někdy splní. Zažil jsem to na vlastní kůži. Když jsem emigroval, měl jsem posedlou myšlenku jet na Kavkaz. Tehdy mi nebylo víc než dvaadvacet a téměř romantické legendy o Šamilovi a horských hrdinech, kteří odolávají gigantické síle Ruska v tak malých počtech, na mě hluboce zapůsobily. Hledal jsem cestu, jak se s nimi spojit, a kdekoliv jsem byl - v Německu, Anglii nebo Francii - snažil jsem se najít podporu pro tento nápad a vzbudit o něj zájem. Považovali mě za bezohledného snílka a vyčleňovali mi příklad některých mých krajanů a několika zoufalých darebáků z Anglie..."" # todo: NEW TRANSLATION
+ caucasuswar.10.f: "„V životě člověka jsou některé předtuchy a touhy, které, navzdory své zdánlivé nepravděpodobnosti, se někdy splní. Zažil jsem to na vlastní kůži. Když jsem emigroval, měl jsem posedlou myšlenku jet na Kavkaz. Tehdy mi nebylo víc než dvaadvacet a téměř romantické legendy o Šamilovi a horských hrdinech, kteří odolávají gigantické síle Ruska v tak malých počtech, na mě hluboce zapůsobily. Hledal jsem cestu, jak se s nimi spojit, a kdekoliv jsem byl - v Německu, Anglii nebo Francii - snažil jsem se najít podporu pro tento nápad a vzbudit o něj zájem. Považovali mě za bezohledného snílka a vyčleňovali mi příklad některých mých krajanů a několika zoufalých darebáků z Anglie...“" # todo: NEW TRANSLATION
  caucasuswar.10.a: "Udělit jejich vůdci roli velitele a poslat ho na frontu." # todo: NEW TRANSLATION
  caucasuswar.10.b: "Uvítali bychom výcvik podle [SCOPE.sCountry('austria_scope').GetAdjective] taktik." # todo: NEW TRANSLATION
  caucasuswar_end.1.t: "Pád Čerkeska" # todo: NEW TRANSLATION
  caucasuswar_end.1.d: "S ukončením naší kampaně v [SCOPE.sState('kuban_state').GetStateRegion.GetName] padla pod naší kontrolu celá bývalá čerkeská území. Země je nyní dostupná pro osídlení donskými kozáky." # todo: NEW TRANSLATION
- caucasuswar_end.1.f: ""V tom roce bylo učiněno téměř bezprecedentní dílo v historii: žádný z horských obyvatel nepozůstává na svých původních místech a probíhají opatření k očištění regionu, aby se připravil pro nové ruské obyvatelstvo."" # todo: NEW TRANSLATION
+ caucasuswar_end.1.f: "„V tom roce bylo učiněno téměř bezprecedentní dílo v historii: žádný z horských obyvatel nepozůstává na svých původních místech a probíhají opatření k očištění regionu, aby se připravil pro nové ruské obyvatelstvo.“" # todo: NEW TRANSLATION
  caucasuswar_end.1.a: "Deportace budou pokračovat, dokud země nebude čistá." # todo: NEW TRANSLATION
  caucasuswar_end.1.b: "Začněte proces integrace čerkeských národů." # todo: NEW TRANSLATION
  caucasuswar_end.2.t: "Čest a život" # todo: NEW TRANSLATION
@@ -224,7 +247,7 @@
  caucasuswar_end.2.c: "Nastal čas, aby naši ochránci splnili své sliby." # todo: NEW TRANSLATION
  caucasuswar_end.3.t: "Konec imámátu" # todo: NEW TRANSLATION
  caucasuswar_end.3.d: "S okupací [SCOPE.sState('dagestan_state').GetStateRegion.GetName] a kapitulací či dezercí mnoha bývalých kavkazských naibů se vůdce imámátu nakonec vzdal [ROOT.GetCountry.GetAdjective] armádě na žádost manželek a dětí jeho posledních stoupenců." # todo: NEW TRANSLATION
- caucasuswar_end.3.f: ""Celý svět zná o vašich činech a jejich sláva nezmizí. Pokud se dnes, podrobujetece osudu, vydáte k veliteli a vzdáte se štědrosti suverénního [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle], zachráníte tisíc lidí, kteří jsou naživu a věrní vám, před smrtí. Dokončete své slavné činy aktem opatrnosti a štědrosti a sardar požádá suveréna, aby zajistil budoucnost vás a vaší rodiny."\n\n— Ivan Davidovič Lazarev" # todo: NEW TRANSLATION
+ caucasuswar_end.3.f: "„Celý svět zná o vašich činech a jejich sláva nezmizí. Pokud se dnes, podrobujetece osudu, vydáte k veliteli a vzdáte se štědrosti suverénního [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle], zachráníte tisíc lidí, kteří jsou naživu a věrní vám, před smrtí. Dokončete své slavné činy aktem opatrnosti a štědrosti a sardar požádá suveréna, aby zajistil budoucnost vás a vaší rodiny.“\n\n— Ivan Davidovič Lazarev" # todo: NEW TRANSLATION
  caucasuswar_end.3.a: "V Čečensku byl konečně nalezen mír." # todo: NEW TRANSLATION
  caucasuswar_end.3.b: "Míru nebude, dokud bude Šamil uctíván." # todo: NEW TRANSLATION
  caucasuswar_end.4.t: "Katastrofa na Kavkaze" # todo: NEW TRANSLATION
@@ -244,11 +267,8 @@
  caucasuswar_end.5.b: "Musíme najít způsob, jak se přizpůsobit tomuto novému míru." # todo: NEW TRANSLATION
  russia_offer_circassia_recognition: "Nabídnout Čerkesku uznání" # todo: NEW TRANSLATION
  russia_offer_circassia_recognition_desc: "Žádosti o mezinárodní podporu, které mladý čerkeský národ posílá, představují vynikající příležitost rozšířit naši sféru vlivu na Kavkaze." # todo: NEW TRANSLATION
- circassia_recognition_tt: "Čerkesku bude nabídnuta šance stát se [Concept('concept_recognized_power','$concept_recognized_power$')|l], pokud dokáže #bold konsolidovat#! a #bold získat zpět své území#! od Ruska." # todo: NEW TRANSLATION
+ circassia_recognition_tt: "Čerkesku bude nabídnuta šance stát se [Concept('concept_recognized_power','$concept_recognized_power|q$')|l], pokud dokáže #bold konsolidovat#! a #bold získat zpět své území#! od Ruska." # todo: CHANGED (predtym: Čerkesku bude nabídnuta šance stát se [Concept('concept_recognized_power','$concept_recognized_power$')|l], pokud dokáže)
  no_country_recognised_circassia_tt: "Žádná jiná země nenabídla #v $CIR$#! uznání" # todo: NEW TRANSLATION
- russia_out_of_kuban_tt: "#v $RUS$#! nemá [Concept('concept_state','stát')] v [SCOPE.sStateRegion('kuban_scope').GetName]" # todo: NEW TRANSLATION
- russia_out_of_north_caucasus_tt: "#v $RUS$#! nemá [Concept('concept_state','stát')] v [SCOPE.sStateRegion('north_caucasus_scope').GetName]" # todo: NEW TRANSLATION
- russia_out_of_dagestan_tt: "#v $RUS$#! nemá [Concept('concept_state','stát')] v [SCOPE.sStateRegion('dagestan_scope').GetName]" # todo: NEW TRANSLATION
  imamate_dispatch_muhammad_amin: "Poslat naiba do Čerkeska" # todo: NEW TRANSLATION
  imamate_dispatch_muhammad_amin_desc: "Smrt dvou čerkeských Thamadů v rychlém sledu zanechala naše západní bratry toužící po postavě, která by je sjednotila. Vyslání našeho emisara do Čerkeska by mohlo zajistit potřebnou alianci s našimi spolubojovníky a znovu sjednotit kmeny." # todo: NEW TRANSLATION
  circassia_muhammad_amin_tt: "Pošleme zručného naiba do #bold Čerkeska#!, aby sjednotil horské národy pod islám." # todo: NEW TRANSLATION
@@ -257,20 +277,20 @@
  je_conquest_of_central_asia_reason: "Abychom zajistili naši jižní hranici, čelili britské moci v Indii a otevřeli trasy, jimiž můžeme rozšířit [ROOT.GetCountry.GetAdjective] vliv na Blízký východ, vláda [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] vydala pravomoc k zakládání protektorátů po celé Střední Asii a rozšiřování našeho impéria do Turkestánu." # todo: NEW TRANSLATION
  russian_central_asia.1.t: "Dobytí Turkestánu" # todo: NEW TRANSLATION
  russian_central_asia.1.d: "Jih od kazašské stepi leží chanáty Střední Asie, další soubor bariér zastavujících [ROOT.GetCountry.GetAdjective] projekci moci do Indie a na Blízký východ. Vládě [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] za každou cenu stoji za to je přivést do našeho vlivu." # todo: NEW TRANSLATION
- russian_central_asia.1.f: ""Nejsou to ani ambiciózní plány ani sobecké kalkulace, které vedou Rusko vpřed do Střední Asie, ale jen touha pacifikovat ten region, dát impuls jeho produktivním silám a otevřít nejkratší cestu pro prodej produktů Turkestánu do evropské části Ruska."" # todo: NEW TRANSLATION
+ russian_central_asia.1.f: "„Nejsou to ani ambiciózní plány ani sobecké kalkulace, které vedou Rusko vpřed do Střední Asie, ale jen touha pacifikovat ten region, dát impuls jeho produktivním silám a otevřít nejkratší cestu pro prodej produktů Turkestánu do evropské části Ruska.“" # todo: NEW TRANSLATION
  russian_central_asia.1.a: "Nejlépe bude zvolit medovější přístup." # todo: NEW TRANSLATION
  russian_central_asia.1.b: "Turkestán se musí podřídit [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle], mírem nebo válkou." # todo: NEW TRANSLATION
  central_asia_influence_tt: "Státy Střední Asie budou ochotnější se nám podřídit." # todo: NEW TRANSLATION
  notification_central_asia_bribes_notification_name: "[SCOPE.sCountry('russia_scope').GetAdjective] rozšiřuje finanční vliv" # todo: NEW TRANSLATION
  notification_central_asia_bribes_notification_desc: "Obchodníci a diplomaté zastupující [SCOPE.sCountry('russia_scope').GetName] v naší zemi začali rozhazovat peníze a získávat přízně místních úředníků [ROOT.GetCountry.GetAdjectiveNoFormatting]." # todo: NEW TRANSLATION
  russian_central_asia.2.t: "Velká hra" # todo: NEW TRANSLATION
- russian_central_asia.2.d: "S otevřením obchodních cest Střední Asie pro [SCOPE.sCountry('india_overlord').GetAdjective] Indii a Blízký východ zůstávají tyto trasy zadrhávány pouze státem [SCOPE.sCountry('afghan_scope').GetName]. Několik jastrabích postav v [SCOPE.gsInterestGroup('hawkish_ig').GetCustom('IG_L_TT')] navrhlo tento stát jako potenciální protektorát." # todo: NEW TRANSLATION # todo: NAME CASE
+ russian_central_asia.2.d: "S otevřením obchodních cest Střední Asie pro [SCOPE.sCountry('india_overlord').GetAdjective] Indii a Blízký východ zůstávají tyto trasy zadrhávány pouze státem [SCOPE.sCountry('afghan_scope').GetName]. Několik jastrabích postav v [SCOPE.gsInterestGroup('hawkish_ig').GetAltName('L')] navrhlo tento stát jako potenciální protektorát." # todo: NEW TRANSLATION # todo: NAME CASE
  russian_central_asia.2.f: "Obávám se, že získání těchto rozlehlých zemí jen popudí strach v srdcích [SCOPE.sCountry('india_overlord').GetAdjectiveNoFormatting] a že mohou začít další války o národy, které lpí na statusu nárazníků mezi našimi impérii. Musí být dosaženo míru - ať už smlouvou, nebo jejich úplnou kapitulací." # todo: NEW TRANSLATION
  russian_central_asia.2.a: "Kábul bude jednou také [ROOT.GetCountry.GetAdjective]." # todo: NEW TRANSLATION
  russian_central_asia.2.b: "Lépe nám poslouží jemnější přístup." # todo: NEW TRANSLATION
  russian_central_asia.3.t: "Turkménská pohroma" # todo: NEW TRANSLATION
  russian_central_asia.3.d: "Navzdory obecnému přijetí naší svrchovanosti nad Turkestánem mnohé [SCOPE.sCountry('turkmenia_scope').GetAdjectiveNoFlag] kmeny na jihu pokračují v nájezdech na naše země bez strachu z odplaty a odmítají se podřídit naší autoritě. Abychom napravili tuto nespravedlnost, [SCOPE.GetRootScope.GetCountry.GetRuler.GetPrimaryRoleTitle] [SCOPE.GetRootScope.GetCountry.GetRuler.GetFirstName] vyhlásil velkou expedici do turkménských zemí." # todo: NEW TRANSLATION
- russian_central_asia.3.f: "Pouští prst po mapě rozložené na stole mezi nimi všemi, generál pohrdavě zamručel. "Tady!" zahřměl, "Tady udeříme! Ten hnízdo #italic loupeže#! a #italic zkázy#!! Působí nám to příliš dlouho jako překážka pro naše ambice a naši milost." Mávl směrem k masám mužů a zbraní těsně za plátnem stanu. "Připravte koně. Ráno vyrazíme."" # todo: NEW TRANSLATION
+ russian_central_asia.3.f: "Pouští prst po mapě rozložené na stole mezi nimi všemi, generál pohrdavě zamručel. „Tady!“ zahřměl, „Tady udeříme! Ten hnízdo #italic loupeže#! a #italic zkázy#!! Působí nám to příliš dlouho jako překážka pro naše ambice a naši milost.“ Mávl směrem k masám mužů a zbraní těsně za plátnem stanu. „Připravte koně. Ráno vyrazíme.“" # todo: NEW TRANSLATION
  russian_central_asia.3.a: "Ukažme těmto nájezdníkům ruskou sílu." # todo: NEW TRANSLATION
  modifier_suzerain_of_central_asia: "Suzerén Střední Asie" # todo: NEW TRANSLATION
  modifier_central_asian_influence: "Ovlivňování Střední Asie" # todo: NEW TRANSLATION
@@ -279,7 +299,7 @@
  Murtazeki: "Murtazeki" # todo: NEW TRANSLATION
  Circassian_Army: "Čerkeská armáda" # todo: NEW TRANSLATION
  je_circassian_expulsions: "Vyhoštění Čerkesů" # todo: NEW TRANSLATION
- je_circassian_expulsions_reason: "Ambice vlády osídlit bývalé území Čerkeska loajálními kozáky vedly k nelítostné kampani vyhnat obyvatelstvo [SCOPE.sCulture('circassian_culture_scope').GetName] regionu za každou cenu.\n\nDokud bude tento [Concept('concept_journal_entry','záznam v deníku')] aktivní, budou [SCOPE.sCulture('circassian_culture_scope').GetName] [Concept('concept_pop', '$concept_pops$')|l] deportováni z našich hranic, za cenu obrovských ztrát na životech." # todo: NEW TRANSLATION
+ je_circassian_expulsions_reason: "Ambice vlády osídlit bývalé území Čerkeska loajálními kozáky vedly k nelítostné kampani vyhnat obyvatelstvo [SCOPE.sCulture('circassian_culture_scope').GetName] regionu za každou cenu.\n\nDokud bude tento [Concept('concept_journal_entry','záznam v deníku')] aktivní, budou [SCOPE.sCulture('circassian_culture_scope').GetName] [Concept('concept_pop', '$concept_pops|q$')|l] deportováni z našich hranic, za cenu obrovských ztrát na životech." # todo: CHANGED (predtym: Ambice vlády osídlit bývalé území Čerkeska loajálními kozáky vedly k nelítostné kampani vyhnat obyvatelstvo [SCOPE.sCult)
  circassia_defeated_tt: "#v $CIR$#! byl poražen" # todo: NEW TRANSLATION
  will_lead_to_expulsions_tt: "@warning! Toto povede k drastickým následkům pro populaci [SCOPE.sCulture('circassian_culture').GetName]" # todo: NEW TRANSLATION
  has_halted_deportations_tt: "Zastavil deportace lidí [SCOPE.sCulture('circassian_culture_scope').GetName]" # todo: NEW TRANSLATION
@@ -296,7 +316,7 @@
  caucasus_expulsions.1.c: "Máme jiné věci, na které se zaměřit." # todo: NEW TRANSLATION
  caucasus_expulsions.2.t: "[SCOPE.sCountry('russia_scope').GetName] žádá o migrační smlouvu" # todo: NEW TRANSLATION
  caucasus_expulsions.2.d: "Úředníci [SCOPE.sCountry('russia_scope').GetAdjective] oslovili vládu žádostí o povolení deportovat až padesát tisíc lidí [SCOPE.sCulture('circassian_culture_scope').GetName] do našeho území. Pozorovatelé [SCOPE.sCountry('russia_scope').GetAdjectiveNoFormatting] jednání na Kavkaze varují, že deportace mohou být mnohem rozsáhlejší." # todo: NEW TRANSLATION
- caucasus_expulsions.2.f: ""Návrh komise počítá s přepravou až deseti tisíc rodin. Přeprava za pět rublů na hlavu, dva mají zaplatit migranti sami, s pobídkami pro soukromé aktéry." To byl ruský postoj. Úředník si pochybil, ale nemohl to vyslovit. Na severu probíhá válka - ne formální, ale přesto válka. Masovější exodus je jistota a jeho podmínky budou jistě mnohem chaotičtější, než je uváděno." # todo: NEW TRANSLATION
+ caucasus_expulsions.2.f: "„Návrh komise počítá s přepravou až deseti tisíc rodin. Přeprava za pět rublů na hlavu, dva mají zaplatit migranti sami, s pobídkami pro soukromé aktéry.“ To byl ruský postoj. Úředník si pochybil, ale nemohl to vyslovit. Na severu probíhá válka - ne formální, ale přesto válka. Masovější exodus je jistota a jeho podmínky budou jistě mnohem chaotičtější, než je uváděno." # todo: NEW TRANSLATION
  caucasus_expulsions.2.a: "Bylo by vhodné osídlit náš východ." # todo: NEW TRANSLATION
  caucasus_expulsions.2.b: "Tato smlouva hrozí destabilizací." # todo: NEW TRANSLATION
  caucasus_expulsions.3.t: "Oceán krve" # todo: NEW TRANSLATION
@@ -306,16 +326,13 @@
  caucasus_expulsions.3.b: "Nemůžeme udělat nic." # todo: NEW TRANSLATION
  circassian_refugees_deportations_tt: "[SCOPE.sCulture('circassian_culture_scope').GetName] uprchlíci začnou připlouvat do přístavů v severní Anatolii" # todo: NEW TRANSLATION
  circassian_refugees_warning_tt: "Podstatně větší procento uprchlíků [SCOPE.sCulture('circassian_culture_scope').GetName] bude na cestě zabito" # todo: NEW TRANSLATION
- hide_deportation_events_tt: "Budoucí události deportací budou skryty a objeví se jako #bold oznámení#!" # todo: NEW TRANSLATION
- circassians_below_5_percent: "Státní [Concept('concept_pop', '$concept_population$')|l] je méně než #v 5%#! [SCOPE.sCulture('circassian_culture_scope').GetName]" # todo: NEW TRANSLATION
- three_pops_deported_tt: "Několik [SCOPE.sCulture('circassian_culture_scope').GetName] [Concept('concept_pop', '$concept_pops$')|l] bude deportováno do [SCOPE.sState('expulsion_destination_state').GetName]" # todo: NEW TRANSLATION
+ hide_deportation_events_tt: "\n@information! Budoucí události deportací budou skryty a objeví se jako #bold oznámení#!. Zvolené efekty se automaticky uplatní vždy, když vlny deportovaných [SCOPE.sCulture('circassian_culture_scope').GetName] odplují přes Černé moře." # todo: CHANGED (predtym: Budoucí události deportací budou skryty a objeví se jako bold oznámení !)
+ circassians_below_5_percent: "Státní [Concept('concept_pop', '$concept_population|q$')|l] je méně než #v 5%#! [SCOPE.sCulture('circassian_culture_scope').GetName]" # todo: CHANGED (predtym: Státní [Concept('concept_pop', '$concept_population$')|l] je méně než v 5% ! [SCOPE.sCulture('circassian_culture_scope'))
+ three_pops_deported_tt: "Několik [SCOPE.sCulture('circassian_culture_scope').GetName] [Concept('concept_pop', '$concept_pops|q$')|l] bude deportováno do [SCOPE.sState('expulsion_destination_state').GetName]" # todo: CHANGED (predtym: Několik [SCOPE.sCulture('circassian_culture_scope').GetName] [Concept('concept_pop', '$concept_pops$')|l] bude deportová)
  notification_ottoman_circassian_refugees_arrived_name: "Připlouvají čerkeští uprchlíci" # todo: CHANGED (predtym: Připlouvají čerkesští uprchlíci)
  notification_ottoman_circassian_refugees_arrived_desc: "Lodě plné [SCOPE.sCulture('circassian_culture_scope').GetName] uprchlíků deportovaných z [SCOPE.sCountry('russia_scope').GetName] přistály na pobřeží [SCOPE.sState('expulsion_destination_state').GetName]. Mnozí již zemřeli na choroby během plavby." # todo: NEW TRANSLATION
- notification_ottoman_circassian_refugees_arrived_tooltip: "#header $notification_ottoman_circassian_refugees_arrived_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ottoman_circassian_refugees_arrived_desc$" # todo: NEW TRANSLATION
- notification_circassians_deported_message_name: "Vyhoštěni čerkeští [Concept('concept_pop', '$concept_pops$')|l]" # todo: CHANGED (predtym: Vyhoštěni čerkesští [Concept('concept_pop', '$concept_pops$')|l])
+ notification_circassians_deported_message_name: "Vyhoštěni čerkeští [Concept('concept_pop', '$concept_pops|q$')|l]" # todo: CHANGED (predtym: Vyhoštěni čerkeští [Concept('concept_pop', '$concept_pops$')|l])
  notification_circassians_deported_message_desc: "Lodě plné vyhoštěných [SCOPE.sCulture('circassian_culture_scope').GetName] vypluly směrem do [SCOPE.sState('expulsion_destination_state').GetName]. Mnozí již zemřeli na nemocích na březích Černého moře." # todo: NEW TRANSLATION
- notification_circassians_deported_message_tooltip: "#header $notification_ottoman_circassian_refugees_arrived_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ottoman_circassian_refugees_arrived_desc$" # todo: NEW TRANSLATION
  notification_ottoman_protest_notification_name: "[SCOPE.sCountry('ottoman_scope').GetName] protestuje proti vyhošťování" # todo: NEW TRANSLATION
  notification_ottoman_protest_notification_desc: "[SCOPE.sCountry('ottoman_scope').GetName] podal formální diplomatický protest odsuzující zacházení s deportovanými [SCOPE.sCulture('circassian_culture_scope').GetName] a vyzval k ukončení vyhošťování." # todo: NEW TRANSLATION
- notification_ottoman_protest_notification_tooltip: "#header $notification_ottoman_circassian_refugees_arrived_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ottoman_circassian_refugees_arrived_desc$" # todo: NEW TRANSLATION
  grain_more_than_35_percent_more_expensive_tt: "#variable Obilí#! je o více než #variable 70%#! dražší než [Concept('concept_base_price','základní cena')|l]" # todo: NEW TRANSLATION
