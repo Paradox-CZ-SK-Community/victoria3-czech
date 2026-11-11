@@ -22,7 +22,7 @@
  RIVALS_WITH_TARGET: "[COUNTRY.GetName] má [Concept('concept_rivalry','rivalitu')] s [TARGET_COUNTRY.GetAltAdjective('I')|v]"
  TARGET_IS_OUR_SUBJECT: "[TARGET_COUNTRY.GetName|v] je [Concept('concept_subject','závislou zemí')] [COUNTRY.GetName]"
  CANNOT_JOIN_AGAINST_OVERLORD_BACKER: "[TARGET_COUNTRY.GetName|v] je [Concept('concept_subject','závislou zemí')] [COUNTRY.GetAltAdjective('G')], která podporuje [COUNTRY_THIRD_PARTY.GetName]"
- MUST_SUPPORT_OVERLORD: "[COUNTRY.GetName] je $SUBJECT_TYPE|v$ [COUNTRY.GetAltAdjective('G')] a může přejít na druhou stranu jen pokud jsou #v $ai_attitude_rebellious$#! a cíleny s [Concept('concept_war_goal','válečným cílem')] nebo [Concept('concept_sway','ovlivnění')], které by je učinily nezávislými"
+ MUST_SUPPORT_OVERLORD: "[TARGET_COUNTRY.GetName|v] je $SUBJECT_TYPE|v$ [COUNTRY.GetAltAdjective('G')] a může přejít na druhou stranu jen pokud jsou #v $ai_attitude_rebellious$#! a cíleny s [Concept('concept_war_goal','válečným cílem')] nebo [Concept('concept_sway','ovlivnění')], které by je učinily nezávislými" # todo: CHANGED (predtym: [COUNTRY.GetName] je $SUBJECT_TYPE|v$ [COUNTRY.GetAltAdjective('G')] a může přejít na druhou stranu jen pokud jsou v $ai)
  SUBJECT_TARGETED_BY_WARGOAL: "Nelze jednat proti nadřízenému státu, pokud jste v probíhající válce přímo cílem [concept_war_goal]" # todo: NEW TRANSLATION
  SUBJECT_HAS_OCCUPIED_STATE: "Nelze jednat proti nadřízenému státu, pokud je některý z vašich [concept_states] okupován" # todo: NEW TRANSLATION
  CANNOT_DECLARE_NEUTRALITY_FORCED_INTO_OVERLORD_REVOLUTION: "V občanské válce nadřízeného státu nelze vyhlásit neutralitu — musíte si vybrat stranu, jinak budete při [concept_countdown_to_war] přiděleni k loajalistům" # todo: NEW TRANSLATION
@@ -155,7 +155,7 @@
  WARGOAL_TARGET_HAS_NOTHING_TO_RELEASE: " #variable $TARGET_NAME$#! nemá žádné nedávno nadobudnutý státy nebo subjekty, které by uvolnilo"
  WARGOAL_RECENT_REGIME_CHANGE: "[TARGET_COUNTRY.GetName] byla nedávno cílem změny režimu"
  WARGOAL_REGIME_CHANGE_COULD_NOT_INSTALL_ANY_IG: "Alespoň jedna z našich [Concept('concept_government','vládnoucích')] [Concept('concept_interest_group', 'zájmových skupin')] nesmí být [Concept('concept_marginalized','marginalizována')|l] v [TARGET_COUNTRY.GetAltAdjective('L')]" # todo: CHANGED (predtym: Alespoň jedna z našich [Concept('concept_government','vládnoucích')] [Concept('concept_interest_group', 'zájmových skupi)
- WARGOAL_COUNTRY_IDEOLOGICAL_DIFFERENCE_TOO_SMALL: "Politické systémy [Concept('concept_government','vlády')|l] [COUNTRY.GetAltAdjective('G')] a [TARGET_COUNTRY.GetAltAdjective('G')] jsou příliš ideologicky podobné" # todo: CHANGED (predtym: Politické systémy [Concept('concept_government','vlády')|l] [COUNTRY.GetName] a [TARGET_COUNTRY.GetName] jsou příliš ide)
+ WARGOAL_COUNTRY_IDEOLOGICAL_DIFFERENCE_TOO_SMALL: "[Concept('concept_regime_change','Změna režimu')] by v [TARGET_COUNTRY.GetAltAdjective('L')] nezměnila žádné [Concept('concept_law','zákony')]" # todo: CHANGED (predtym: Politické systémy [Concept('concept_government','vlády')|l] [COUNTRY.GetAltAdjective('G')] a [TARGET_COUNTRY.GetAltAdjec)
  WARGOAL_COUNTRY_IS_NOT_COLONIZABLE: "[COUNTRY.GetName] není [Concept('concept_decentralized_nation','decentralizovaným národem')]"
  WARGOAL_TARGET_IS_COLONIZABLE: "[COUNTRY.GetName] je [Concept('concept_decentralized_nation','decentralizovaným národem')]"
  WARGOAL_SUBJECT_TRANSFER_NOT_ALLOWED: "[COUNTRY.GetName] je #v $SUBJECT_TYPE$#! a nemůže být cíleno na $war_goal_transfer_subject_type_name$"

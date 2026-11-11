@@ -458,6 +458,8 @@
  TREATY_BINDING_PERIOD_HAS_ENDED_SHORT_NO_CONCEPT: "Již není závazná"
  TREATY_NO_BINDING_PERIOD: "Bez [Concept('concept_binding_period','závazného období')]"
  TREATY_NO_BINDING_PERIOD_NO_CONCEPT: "Bez závazného období"
+ TREATY_BINDING_PERIOD_FRAME_TOOLTIP: "#header [SelectLocalization(IsZero(Treaty.GetBindingDaysLeft), SelectLocalization(IsZero(Treaty.GetBindingDays), 'TREATY_NO_BINDING_PERIOD_NO_CONCEPT', 'TREATY_BINDING_PERIOD_HAS_ENDED_SHORT_NO_CONCEPT'), 'TREATY_BINDING_PERIOD_FRAME_TOOLTIP_REMAINING')]#![ConcatIfNeitherEmpty('\n', AddLocalizationIf(Treaty.IsBindingPeriodPending, 'TREATY_BINDING_PERIOD_PENDING_TOOLTIP'))]\n$TOOLTIP_DELIMITER$\n$concept_binding_period_desc$" # todo: NEW TRANSLATION
+ TREATY_BINDING_PERIOD_FRAME_TOOLTIP_REMAINING: "$concept_binding_period_bound$ po dobu [Treaty.GetBindingPeriodRemainingFormatted]" # todo: NEW TRANSLATION
  TREATY_DRAFT_BINDING_PERIOD: "$concept_binding_period_bound$ na [TreatyDraft.GetBindingPeriodFormatted]"
  TREATY_DRAFT_NO_BINDING_PERIOD: "Přidat závazné období"
  TREATY_DRAFT_AUTOMATIC_WITHDRAWAL_TOOLTIP: "Automaticky odstoupit po skončení [concept_binding_period][AddLocalizationIf(TreatyDraft.CanAutomaticallyWithdraw, 'TREATY_DRAFT_AUTOMATIC_WITHDRAWAL_STATE')][AddLocalizationIf(Not(TreatyDraft.CanAutomaticallyWithdraw), 'TREATY_DRAFT_AUTOMATIC_WITHDRAWAL_NEEDS_BINDING_PERIOD')]" # todo: NEW TRANSLATION
@@ -739,7 +741,8 @@
  YEARS_COUNT_PLURAL_TOOLTIPPABLE: "#tooltippable #tooltip:$TOOLTIP_TAG$ $VALUE|v$#!#! roky"
  WORLD_MARKET_HEADER: "Světový trh"
  GOTO_WORLD_MARKET: "Jít na [Concept('concept_world_market','světový trh')]"
- MARKET_STATES_PANEL_MARKET_ACCESS_TOOLTIP: "#header [Concept('concept_market_access','Přístup na trh')] do [State.GetMarket.GetName]#!\n[State.GetMarketAccessDesc]"
+ GOTO_WORLD_MARKET_HUB: "Jít na toto [Concept('concept_world_market_hub','centrum světového trhu')]" # todo: NEW TRANSLATION
+ MARKET_STATES_PANEL_MARKET_ACCESS_TOOLTIP: "#header [Concept('concept_market_access','Přístup na trh')] do [State.GetMarket.GetOwner.GetFlagTextIcon] [State.GetMarket.GetName]#!\n[State.GetMarketAccessDesc]" # todo: CHANGED (predtym: header [Concept('concept_market_access','Přístup na trh')] do [State.GetMarket.GetName] !\n[State.GetMarketAccessDesc])
  STATES_PANEL_MARKET_ACCESS_ISOLATED: "[Concept('concept_market_access','Přístup na trh')]: [Concept('concept_isolated_state','izolovaný státní region')]"
  ISOLATED_STATE: "[Concept('concept_isolated_state','Izolovaný státní region')]"
  DEBUG_MODIFIERS: "#title Debug - Modifikátory#!"
@@ -1573,7 +1576,8 @@
  MILITARY_FORMATION_SUPPLY_GREEN: "@supply! #g [MilitaryFormation.GetSupplyRaw|0%]#!" # todo: NEW TRANSLATION
  MILITARY_FORMATION_SUPPLY_RED: "@supply! #n [MilitaryFormation.GetSupplyRaw|0%]#!" # todo: NEW TRANSLATION
  MILITARY_FORMATION_CURRENT_AND_TOTAL_SUPPLY_SHIPS: "#v [MilitaryFormation.GetNumAssignedSupplyShips|D]#!/[MilitaryFormation.GetNumWantedSupplyShips|D]" # todo: NEW TRANSLATION
- MILITARY_FORMATION_SUPPLY_DISTANCE: "@supply! Vzdálenost zásobování: #v $VALUE|D$#!" # todo: NEW TRANSLATION
+ SEA_REGION_MILITARY_FORMATION_SUPPLY_DISTANCE: "[MilitaryFormation.GetEffectiveSupplyDistance|v0]" # todo: NEW TRANSLATION
+ SEA_REGION_MILITARY_FORMATION_SUPPLY_TOOLTIP: "$MILITARY_FORMATION_SUPPLY_TOOLTIP$\n#tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],MILITARY_FORMATION_NAVAL_SUPPLY_DISTANCE_BREAKDOWN [MilitaryFormation.GetEffectiveSupplyDistance|v0]#!#! námořní vzdálenost pro [Concept('concept_supply','zásobování')] z [MilitaryFormation.GetSupplyHub.GetName]" # todo: NEW TRANSLATION
  MILITARY_FORMATION_SUPPLY_FROM_SHIPPING_LANE: "[Concept('concept_shipping_lane','Námořní trasa')]"
  MILITARY_FORMATION_SUPPLY_FROM_FLEET_SUPPORT: "$concept_fleet_support$"
  MILITARY_FORMATION_SUPPLY_CAPACITY_DESC: "#header [Concept('concept_supply','Zásobování')] kapacita#!\n#v $VALUE|D$#! celková kapacita" # todo: NEW TRANSLATION
@@ -2028,7 +2032,9 @@
  NUM_SEA_NODES_TEXT: "Mořské uzly:"
  NUM_SEA_NODES_VALUE: "[Country.GetSupplyNetworkNumSeaNodes]"
  NUM_SEA_NODES_TOOLTIP: "[Country.GetAdjectiveNoFormatting|v] [Concept('concept_supply_network','zásobovací síť')] se rozprostí na [Country.GetSupplyNetworkNumSeaNodes] námořních uzlech.\n\n[Country.GetSupplyNetworkNumSeaNodesDesc]"
- SHIPPING_LANE_TOOLTIP: "#header [ShippingLane.GetName]#!\n[ShippingLane.GetDesc]\n\n[Concept('concept_shipping_lane_effectiveness','Efektivita námořní trasy')]: [ShippingLane.GetEffectivenessFormatted]\n[GetGoods('merchant_marine').GetName] dopyt: [ShippingLane.GetMerchantMarineDemandFormatted]"
+ SHIPPING_LANE_TOOLTIP: "#header [ShippingLane.GetName]#!\n[ShippingLane.GetDesc]\n$TOOLTIP_DELIMITER$\n[ShippingLane.GetEffectivenessFormatted] [Concept('concept_shipping_lane_effectiveness','efektivita námořní trasy')]\n[ShippingLane.GetMerchantMarineDemandFormatted] poptávka po [GetGoods('merchant_marine').GetAltNameNoFormatting('adj_L')|l]" # todo: CHANGED (predtym: header [ShippingLane.GetName] !\n[ShippingLane.GetDesc]\n\n[Concept('concept_shipping_lane_effectiveness','Efektivita ná)
+ SEA_REGION_SHIPPING_LANE_EFFECTIVENESS: "#[GetSupplyNetworkColorstring( ShippingLane.GetEffectivenessRaw )] [ShippingLane.GetEffectivenessRaw|%0]#!" # todo: NEW TRANSLATION
+ SEA_REGION_SHIPPING_LANE_MERCHANT_MARINE_DEMAND: "@merchant_marine![ShippingLane.GetMerchantMarineDemandRaw|vD]" # todo: NEW TRANSLATION
  REQUIRED_CONVOYS_BREAKDOWN: "$TAB$#v [Negate_int32('(int32)$PORT_CONNECTION_CONVOYS$')|=+]#! z [Concept('concept_port_connection','přístavního spojení')]\n$TAB$#v [Negate_int32('(int32)$SUPPLY_ROUTE_CONVOYS$')|=+]#! z [Concept('concept_supply_route','zásobovací trasy')]\n$TAB$#v [Negate_int32('(int32)$GOODS_TRANSFER_CONVOYS$')|=+]#! z [GetArticleType('goods_transfer').GetName]" # todo: CONCEPT CASE
  NO_SUPPLY_NETWORK: "Žádné [Concept('concept_country','země')] nevyužívá tuto [Concept('concept_supply_network','zásobovací síť')]"
  NOT_PART_OF_ANY_MILITARY_FORMATION: "Není součástí žádné [Concept('concept_military_formation','formace')]"
@@ -2068,6 +2074,7 @@
  ORIGIN_STATE_NAME: "[State.GetName]"
  ORIGIN_STATE_NUMBER_OF_SHIPPING_LANES: "(#v [GetDataModelSize( State.AccessShippingLanesFromThisState(SeaRegionPanel.GetProvince.Self) )]#!)"
  ORIGIN_STATE_NUMBER_OF_SHIPPING_LANES_TOOLTIP: "Celkový počet [Concept('concept_shipping_lane','námořní trasy')] do/z [State.GetName] přes tento námořní region"
+ SEA_REGION_WORLD_MARKET_HUBS_HEADER: "[Concept('concept_world_market_hub', '$concept_world_market_hubs|q$')] napojená sem" # todo: NEW TRANSLATION
  ORIGIN_STATE_TOTAL_CONVOYS_USED: "@convoys! #v [State.GetTotalConvoysFromShippingLanesViaState(SeaRegionPanel.GetProvince.Self)|D]#!"
  ORIGIN_STATE_TOTAL_CONVOYS_USED_TOOLTIP: "Celkový počet lodí @merchant_marine! #tooltippable_name #tooltip:[GetGoods('merchant_marine').GetTooltipTag],DATA_GOODS_NAME_TOOLTIP,GoodsTooltip [GetGoods('merchant_marine').GetAltNameNoFormatting('adj_G')|l]#!#! použitých [Concept('concept_shipping_lane', 'námořních tras')] do/ze státu [State.GetName] přes tuto mořskou oblast" # todo: CHANGED (predtym: Celkový počet [GetGoods('merchant_marine').GetName] použitých [Concept('concept_shipping_lane', '$concept_shipping_lanes)
  ORIGIN_STATE_TOTAL_MERCHANT_MARINE_DEMAND: "@merchant_marine! #v [State.GetTotalMerchantMarineDemandViaState(SeaRegionPanel.GetProvince.Self)|D]#!" # todo: NEW TRANSLATION
@@ -2168,10 +2175,13 @@
  GENERAL_NAVAL_INVASION_TOOLTIP: "#header $naval_invasion$#!\nDoprovází rozkaz #variable $naval_invasion$#! na [Character.GetInvasion.GetTargetState.GetName|v]\n\n[Character.GetInvasion.GetStatus]"
  FORMATION_BUSY_INVASION: "[MilitaryFormation.GetName] se #b neúčastní#! [Concept('concept_invasion','invazí')]" # todo: CONCEPT CASE
  FORMATION_BUSY_BATTLE: "[MilitaryFormation.GetName] není #b zapletena#! do [Concept('concept_battle','bitvy')]" # todo: CONCEPT CASE
- FORMATION_FULLY_DEFEATED: "[MilitaryFormation.GetName] je [Concept('concept_admiral_defeated','poražen')] a musí se vrátit do svého [Concept('concept_hq','HQ')], aby se opravil.\nPokrok oprav: [MilitaryFormation.GetFleetRepairProgress|0%v]" # todo: CHANGED (predtym: [MilitaryFormation.GetName] je plně [Concept('concept_admiral_defeated','poražen')] a musí se vrátit do svého [Concept(')
+ FORMATION_FULLY_DEFEATED: "[MilitaryFormation.GetName] je [Concept('concept_admiral_defeated','poražen')] a musí se vrátit do [Concept('concept_hq','HQ')], aby se opravil.\nObnoveno [MilitaryFormation.GetFleetRepairProgress|0%v] [Concept('concept_fleet_hit_points','životů')] a [Concept('concept_ship_crew','posádky')]" # todo: CHANGED (predtym: [MilitaryFormation.GetName] je [Concept('concept_admiral_defeated','poražen')] a musí se vrátit do svého [Concept('conce)
  FORMATION_FULLY_DEFEATED_SHORT: "Aktuálně [Concept('concept_admiral_defeated','poražen')]"
- FORMATION_FULLY_DEFEATED_ASSIGN_UNAVAILABLE: "[MilitaryFormation.GetName] je [concept_admiral_defeated] a musí se vrátit do svého [concept_hq], aby se opravila, než bude možné změnit či odvolat jejího admirála.\nPostup oprav: [MilitaryFormation.GetFleetRepairProgress|0%v]" # todo: NEW TRANSLATION
- FORMATION_FULLY_DEFEATED_MERGE_UNAVAILABLE: "[MilitaryFormation.GetName] je [concept_admiral_defeated] a musí se vrátit do svého [concept_hq], aby se opravila, než ji bude možné sloučit s jinými flotilami.\nPostup oprav: [MilitaryFormation.GetFleetRepairProgress|0%v]" # todo: NEW TRANSLATION
+ FORMATION_FULLY_DEFEATED_ASSIGN_UNAVAILABLE: "[MilitaryFormation.GetName] je [Concept('concept_admiral_defeated','poražena')] a musí se vrátit do [concept_hq], aby se opravila, než bude možné změnit či odvolat jejího [Concept('concept_admiral','admirála')].\nObnoveno [MilitaryFormation.GetFleetRepairProgress|0%v] [Concept('concept_fleet_hit_points','životů')] a [Concept('concept_ship_crew','posádky')]" # todo: CHANGED (predtym: [MilitaryFormation.GetName] je [concept_admiral_defeated] a musí se vrátit do svého [concept_hq], aby se opravila, než b)
+ FORMATION_FULLY_DEFEATED_MERGE_UNAVAILABLE: "[MilitaryFormation.GetName] je [Concept('concept_admiral_defeated','poražena')] a musí se vrátit do [concept_hq], aby se opravila, než ji bude možné sloučit s jinými [Concept('concept_fleet','loďstvy')].\nObnoveno [MilitaryFormation.GetFleetRepairProgress|0%v] [Concept('concept_fleet_hit_points','životů')] a [Concept('concept_ship_crew','posádky')]" # todo: CHANGED (predtym: [MilitaryFormation.GetName] je [concept_admiral_defeated] a musí se vrátit do svého [concept_hq], aby se opravila, než j)
+ FORMATION_DEFEATED_MUST_RETURN_TO_HQ: "Momentálně [Concept('concept_admiral_defeated','poražen')] a musí se vrátit do [concept_hq] k opravě" # todo: NEW TRANSLATION
+ FORMATION_DEFEATED_REPAIR_PROGRESS: "$concept_fleet_hit_points_short$ / $concept_ship_crew_short$: obnoveno [MilitaryFormation.GetFleetRepairProgress|0%v]" # todo: NEW TRANSLATION
+ FORMATION_DEFEATED_REPAIR_PROGRESS_CONCEPTS: "Obnoveno [MilitaryFormation.GetFleetRepairProgress|0%v] [Concept('concept_fleet_hit_points','životů')] a [Concept('concept_ship_crew','posádky')]" # todo: NEW TRANSLATION
  COMMANDER_BUSY: "[Character.GetFullName] je [Concept('concept_busy','zaneprázdněný')]"
  ADMIRAL_BUSY_NAVAL_INVASION: "#warning @warning! Změna rozkazu zruší příkaz #variable $naval_invasion$#! na [Character.GetInvasion.GetTargetState.GetName|v], který provádí [Character.GetInvasion.GetGeneral.GetFullName].#!"
  COMMANDER_HAS_NO_BATTALIONS: "$NAME$ nemá žádné [Concept('concept_battalion','prapory')]"
@@ -2879,9 +2889,9 @@
  interests_lens_tab: "Regionální akce"
  interests_lens_tab_tooltip: "Interagujte se [Concept('concept_strategic_region','strategickými regiony')]"
  NUMBER_OF_PLAYER_OBJECTIVE_JOURNAL_ENTRIES: "Máte #v [Subtract_int32(GetDataModelSize(AccessPlayer.AccessActivePlayerObjectiveJournalEntries), GetDataModelSize(AccessPlayer.AccessActivePinnedPlayerObjectiveJournalEntries))]#! nepřipnutých [SelectLocalization(EqualTo_int32(Subtract_int32(GetDataModelSize(AccessPlayer.AccessActivePlayerObjectiveJournalEntries), GetDataModelSize(AccessPlayer.AccessActivePinnedPlayerObjectiveJournalEntries)), '(int32)1'), 'challenge', 'challenges')]"
- NUMBER_OF_PLAYER_OBJECTIVE_JOURNAL_ENTRIES_SHORT: "#v [Subtract_int32(GetDataModelSize(AccessPlayer.AccessActivePlayerObjectiveJournalEntries), GetDataModelSize(AccessPlayer.AccessActivePinnedPlayerObjectiveJournalEntries))]#! nepřipnuté"
+ NUMBER_OF_PLAYER_OBJECTIVE_JOURNAL_ENTRIES_SHORT: "#v [Subtract_int32(GetDataModelSize(AccessPlayer.AccessActivePlayerObjectiveJournalEntries), GetDataModelSize(AccessPlayer.AccessActivePinnedPlayerObjectiveJournalEntries))|=]#! další" # todo: CHANGED (predtym: v [Subtract_int32(GetDataModelSize(AccessPlayer.AccessActivePlayerObjectiveJournalEntries), GetDataModelSize(AccessPlaye)
  NUMBER_OF_NON_PLAYER_OBJECTIVE_JOURNAL_ENTRIES: "Máte #v [Subtract_int32(GetDataModelSize(AccessPlayer.AccessActiveNonPlayerObjectiveJournalEntries), GetDataModelSize(AccessPlayer.AccessActivePinnedNonPlayerObjectiveJournalEntries))]#! neupnutých [SelectLocalization(EqualTo_int32(Subtract_int32(GetDataModelSize(AccessPlayer.AccessActiveNonPlayerObjectiveJournalEntries), GetDataModelSize(AccessPlayer.AccessActivePinnedNonPlayerObjectiveJournalEntries)), '(int32)1'), 'JOURNAL_ENTRY_HEADING', 'ACTIVE_JOURNAL_ENTRIES')]"
- NUMBER_OF_NON_PLAYER_OBJECTIVE_JOURNAL_ENTRIES_SHORT: "#v [Subtract_int32(GetDataModelSize(AccessPlayer.AccessActiveNonPlayerObjectiveJournalEntries), GetDataModelSize(AccessPlayer.AccessActivePinnedNonPlayerObjectiveJournalEntries))]#! skryty"
+ NUMBER_OF_NON_PLAYER_OBJECTIVE_JOURNAL_ENTRIES_SHORT: "#v [Subtract_int32(GetDataModelSize(AccessPlayer.AccessActiveNonPlayerObjectiveJournalEntries), GetDataModelSize(AccessPlayer.AccessActivePinnedNonPlayerObjectiveJournalEntries))|=]#! další" # todo: CHANGED (predtym: v [Subtract_int32(GetDataModelSize(AccessPlayer.AccessActiveNonPlayerObjectiveJournalEntries), GetDataModelSize(AccessPl)
  EFFECT_RATIO_BELOW_MAX: "#v $EFFECT_RATIO|0%$#!"
  EFFECT_RATIO_ABOVE_MAX: "#v $EFFECT_RATIO|0%$#! nebo více"
  POWER_TOOLTIP: "#tooltip_header $POWER_TYPE$#!\nBilance: #variable $VAL|+=0$#![ConcatIfNeitherEmpty( '\n', '$EFFECT|q$' )]" # todo: CHANGED (predtym: tooltip_header $POWER_TYPE$ !\nBilance: variable $VAL|+=0$ ![ConcatIfNeitherEmpty( '\n', '$EFFECT$' )])
@@ -3635,8 +3645,6 @@
  POWER_BLOC_FORMATION_MANDATES_BASE: "$VALUE|=+$ ze základní hodnoty" # todo: NEW TRANSLATION
  POWER_BLOC_FORMATION_MANDATES_SPENT: "#title $VALUE|v$ utraceno za [Concept('concept_power_bloc_principle','$concept_power_bloc_principles|q$')]:#!#indent_newline:3 \n$BREAKDOWN$#!" # todo: NEW TRANSLATION
  POWER_BLOC_FORMATION_MANDATES_SPENT_ENTRY: "$VALUE|=+$ $PRINCIPLE$" # todo: NEW TRANSLATION
- POWER_BLOC_FORMATION_MANDATES_LOST_DESC: "@warning! Neutracené [SelectLocalization(EqualTo_int32('(int32)$LOST|q$', '(int32)1'), 'POWER_BLOC_MANDATE_CONCEPT', 'POWER_BLOC_MANDATES_CONCEPT')] v počtu #negative_value $LOST$#! budou při založení [concept_power_bloc] ztraceny, protože jich může mít nejvýše #v [GetDefine('NPowerBlocs', 'MAX_MANDATES')]#!. Utraťte je za [Concept('concept_power_bloc_principle','$concept_power_bloc_principles|q$')], abyste o ně nepřišli." # todo: NEW TRANSLATION
- FORM_POWER_BLOC_MANDATES_LOST_WARNING: "Neutracené [SelectLocalization(EqualTo_int32('(int32)$LOST|q$', '(int32)1'), 'POWER_BLOC_MANDATE_CONCEPT', 'POWER_BLOC_MANDATES_CONCEPT')] v počtu #negative_value $LOST$#! budou ztraceny, protože $concept_power_bloc$ může mít nejvýše [GetDefine('NPowerBlocs', 'MAX_MANDATES')|v]" # todo: NEW TRANSLATION
  AVAILABLE_MANDATES_TITLE: "Dostupné [Concept('concept_power_bloc_mandate','mandáty')]"
  MANDATE_CONCEPT: "[Concept('concept_power_bloc_mandate','Mandát')]"
  MANDATES_CONCEPT: "[Concept('concept_power_bloc_mandate','Mandáty')]"
@@ -3674,6 +3682,7 @@
  MARKET_ACCESS: "[Concept('concept_market_access','Přístup na trh')]"
  MARKET_ACCESS_SHORT: "[Concept('concept_market_access', 'Přístup')]"
  WORLD_MARKET_ACCESS: "[Concept('concept_world_market_access','Přístup na světový trh')]"
+ MARKET_PANEL_TRADE_CAPACITY: "[concept_trade_capacity]" # todo: NEW TRANSLATION
  WORLD_MARKET_ACCESS_SHORT: "[Concept('concept_world_market_access', 'Přístup')]"
  GDP_CONTRIBUTION: "[Concept('concept_gdp','HDP')] příspěvek"
  GDP_OWNERSHIP: "[Concept('concept_gdp','HDP')] vlastnictví"
@@ -3749,9 +3758,45 @@
  DOUBLE_NEWLINE: "\n\n"
  PRODUCING_GOODS: "#title Produkce: [Goods.GetName]#!"
  USING_GOODS: "#title Spotřeba: [Goods.GetName]#!"
- MARKET_COUNTRY_TRADE_CAPACITY_TOOLTIP: "#header [Concept('concept_trade_capacity','Obchodní kapacita')] v $MARKET_NAME$#!\n$BALANCE|+=$ pro [COUNTRY.GetAltAdjective('A')] ($USAGE|v$/$CAPACITY|v$)\n$TOOLTIP_DELIMITER$\n$DETAILS$" # todo: CONCEPT CASE
- MARKET_COUNTRY_TRADE_CAPACITY_STATE_ENTRY: "[STATE.GetTradeCapacityBalance|+=] ve [STATE.GetName] ([STATE.GetTradeCapacityUsage|v]/[STATE.GetTradeCapacity|v])"
- MARKET_COUNTRY_TRADE_CAPACITY: "[Country.GetAdjective] [Concept('concept_trade_capacity','obchodní kapacita')]: [Market.GetCountryTradeCapacityBalance(Country.Self)|+=] ([Market.GetCountryTradeCapacityUsage(Country.Self)|v]/[Market.GetCountryTradeCapacity(Country.Self)|v])"
+ MARKET_COUNTRY_TRADE_CAPACITY_STATE_ENTRY: "[STATE.GetTradeCapacityBalance|+=] ze státu [STATE.GetName] (#tooltippable #tooltip:[STATE.GetTooltipTag],STATE_TRADE_CAPACITY_USAGE_TOOLTIP [STATE.GetTradeCapacityUsage|v]#!#!/#tooltippable #tooltip:[STATE.GetTooltipTag],STATE_TRADE_CAPACITY_TOOLTIP [STATE.GetTradeCapacity|v]#!#!)" # todo: CHANGED (predtym: [STATE.GetTradeCapacityBalance|+=] ve [STATE.GetName] ([STATE.GetTradeCapacityUsage|v]/[STATE.GetTradeCapacity|v]))
+ MARKET_ALL_WORLD_MARKET_HUBS: "$concept_world_market_hubs$: všechna" # todo: NEW TRANSLATION
+ MARKET_ALL_WORLD_MARKET_HUBS_TOOLTIP: "Zobrazit [Concept('concept_trade','obchod')] přes všechna [Concept('concept_world_market_hub','centra světového trhu')] v [MarketPanel.GetMarket.GetName]" # todo: NEW TRANSLATION
+ MARKET_WORLD_MARKET_HUB_FILTER_LABEL: "[SelectLocalization(MarketPanel.HasSelectedWorldMarketHub, 'MARKET_WORLD_MARKET_HUB_FILTER_SPECIFIC', 'MARKET_ALL_WORLD_MARKET_HUBS')]" # todo: NEW TRANSLATION
+ MARKET_WORLD_MARKET_HUB_FILTER_SPECIFIC: "[MarketPanel.GetSelectedWorldMarketHub.GetOwner.GetFlagTextIcon] [MarketPanel.GetSelectedWorldMarketHub.GetWorldMarketHubNameNoFormatting]" # todo: NEW TRANSLATION
+ MARKET_WORLD_MARKET_HUB_FILTER_TOOLTIP: "Filtrovat [Concept('concept_trade','obchod')] podle [Concept('concept_world_market_hub','center světového trhu')] v [MarketPanel.GetMarket.GetOwner.GetFlagTextIcon] [MarketPanel.GetMarket.GetName]\n\n#instruction Kliknutím vyberete [Concept('concept_world_market_hub','$concept_world_market_hub|q$')|l]#!" # todo: NEW TRANSLATION
+ MARKET_WORLD_MARKET_HUB_FILTER_TITLE: "Vyberte [Concept('concept_world_market_hub','centrum světového trhu')] pro filtrování" # todo: NEW TRANSLATION
+ MARKET_WORLD_MARKET_HUB_BUTTON_TOOLTIP: "$MARKET_WORLD_MARKET_HUB_SELECTED_TOOLTIP$\n\n#instruction Kliknutím zobrazíte pouze [Concept('concept_trade','$concept_trade|q$')|l] přes toto [Concept('concept_world_market_hub','$concept_world_market_hub|q$')|l]#!" # todo: NEW TRANSLATION
+ MARKET_WORLD_MARKET_HUB_SELECTED_TOOLTIP: "$WORLD_MARKET_HUB_TOOLTIP_HEADER$\n$WORLD_MARKET_HUB_INFO$" # todo: NEW TRANSLATION
+ WORLD_MARKET_HUB_INFO: "$WORLD_MARKET_HUB_OWNER$\n$TOOLTIP_DELIMITER$\n$WORLD_MARKET_HUB_TRADING_STATES$[AddLocalizationIf(State.HasBlockadeSeaRegion, 'MARKET_WORLD_MARKET_HUB_EXIT_SEA')]" # todo: NEW TRANSLATION
+ WORLD_MARKET_HUB_TOOLTIP_HEADER: "#header [State.GetWorldMarketHubNameNoFormatting]#!\n[concept_world_market_hub] ve státě [State.GetName]" # todo: NEW TRANSLATION
+ WORLD_MARKET_HUB_OWNER: "Vlastník: [State.GetOwner.GetName]" # todo: NEW TRANSLATION
+ WORLD_MARKET_HUB_FOR_MARKET: "$concept_world_market_hub_short$ pro [State.GetMarket.GetOwner.GetFlagTextIcon] [State.GetMarket.GetName]" # todo: NEW TRANSLATION
+ WORLD_MARKET_HUB_OWNER_YOURS: "$WORLD_MARKET_HUB_OWNER$ (vy)" # todo: NEW TRANSLATION
+ WORLD_MARKET_HUB_OWNER_FRIENDLY: "$WORLD_MARKET_HUB_OWNER$ (#g přátelský#!)" # todo: NEW TRANSLATION
+ WORLD_MARKET_HUB_OWNER_HOSTILE: "$WORLD_MARKET_HUB_OWNER$ (#r nepřátelský#!)" # todo: NEW TRANSLATION
+ WORLD_MARKET_HUB_OWNER_NEUTRAL: "$WORLD_MARKET_HUB_OWNER$ (neutrální)" # todo: NEW TRANSLATION
+ WORLD_MARKET_HUB_TRADING_STATES: "[Concept('concept_trade','Obchoduje')] přes něj: #tooltippable #tooltip:[State.GetTooltipTag],WORLD_MARKET_HUB_TRADING_STATES_DESC [State.GetWorldMarketHubTradingStateCount|v]#!#! [SelectLocalization(EqualTo_int32(State.GetWorldMarketHubTradingStateCount, '(int32)1'), 'NUM_STATES_TOOLTIP_count_SINGULAR', 'NUM_STATES_TOOLTIP_count_PLURAL')]" # todo: NEW TRANSLATION
+ WORLD_MARKET_HUB_TRADING_STATES_DESC: "[State.GetWorldMarketHubTradingStatesDesc]" # todo: NEW TRANSLATION
+ WORLD_MARKET_HUB_TRADING_STATES_TOOLTIP: "#header [Concept('concept_state','Státy')] obchodující přes [STATE.GetWorldMarketHubNameWithCountryFlag]#!\nCelkem $COUNT|v$\n$TOOLTIP_DELIMITER$\n$DETAILS$" # todo: NEW TRANSLATION
+ WORLD_MARKET_HUB_TRADING_STATE_ENTRY: "[STATE.GetOwner.GetFlagTextIcon] [STATE.GetName]: #tooltippable #tooltip:[STATE.GetTooltipTag],STATE_TRADE_CAPACITY_USAGE_TOOLTIP [STATE.GetTradeCapacityUsage|v]#!#!/#tooltippable #tooltip:[STATE.GetTooltipTag],STATE_TRADE_CAPACITY_TOOLTIP [STATE.GetTradeCapacity|v]#!#! [Concept('concept_trade_capacity','obchodní kapacita')], #tooltippable #tooltip:[STATE.GetTooltipTag],STATE_WORLD_MARKET_ACCESS_DESC [STATE.GetWorldMarketAccessFormatted]#!#! [Concept('concept_world_market_access','přístup na světový trh')]" # todo: NEW TRANSLATION
+ WORLD_MARKET_HUB_EXIT_SEA: "Napojeno přes [State.GetBlockadeSeaRegionName]" # todo: NEW TRANSLATION
+ WORLD_MARKET_HUB_TRADE_CAPACITY: "#tooltippable #tooltip:[State.GetTooltipTag],WORLD_MARKET_HUB_TRADE_CAPACITY_TOOLTIP [State.GetWorldMarketHubTradeCapacityBalance|+=]#!#! [Concept('concept_trade_capacity','obchodní kapacita')] (#tooltippable #tooltip:[State.GetTooltipTag],WORLD_MARKET_HUB_TRADE_CAPACITY_TOOLTIP [State.GetWorldMarketHubTradeCapacityUsage|v]#!#!/#tooltippable #tooltip:[State.GetTooltipTag],WORLD_MARKET_HUB_TRADE_CAPACITY_TOOLTIP [State.GetWorldMarketHubTradeCapacity|v]#!#!)" # todo: NEW TRANSLATION
+ WORLD_MARKET_HUB_TRADE_CAPACITY_TOOLTIP: "[State.GetWorldMarketHubTradeCapacityDesc]" # todo: NEW TRANSLATION
+ WORLD_MARKET_HUB_ACCESS: "[State.GetWorldMarketAccessFormatted] [Concept('concept_world_market_access','přístup na světový trh')]" # todo: NEW TRANSLATION
+ MARKET_WORLD_MARKET_HUB_EXIT_SEA: "\n$WORLD_MARKET_HUB_EXIT_SEA$" # todo: NEW TRANSLATION
+ MARKET_WORLD_MARKET_HUB_TRADE_CAPACITY: "[MarketPanel.GetMarket.GetWorldMarketHubTradeCapacityBalance(State.Self)|+=] ([MarketPanel.GetMarket.GetWorldMarketHubTradeCapacityUsage(State.Self)|v]/[MarketPanel.GetMarket.GetWorldMarketHubTradeCapacity(State.Self)|v])" # todo: NEW TRANSLATION
+ MARKET_WORLD_MARKET_HUB_ACCESS: "[State.GetWorldMarketAccessFormatted]" # todo: NEW TRANSLATION
+ MARKET_TRADE_CAPACITY: "[MarketPanel.GetMarket.GetTradeCapacityBalance|+=] ([MarketPanel.GetMarket.GetTradeCapacityUsage|v]/[MarketPanel.GetMarket.GetTradeCapacity|v])" # todo: NEW TRANSLATION
+ MARKET_TRADE_CAPACITY_TOOLTIP: "#header [concept_trade_capacity]#!\n$NAME$\n$BALANCE|+=$ aktuálně\n$USAGE|v$ využito\n$CAPACITY|v$ k dispozici\n$TOOLTIP_DELIMITER$\n$DETAILS$" # todo: NEW TRANSLATION
+ MARKET_WORLD_MARKET_HUB_IMPORTS_TOOLTIP: "#header [STATE.GetWorldMarketHubNameWithCountryFlag]: [Concept('concept_trade','dovoz')] ze [Concept('concept_world_market','světového trhu')] ($GOODS_NAME$)#!\nAktuálně celkem: $TRADES|vD$\n$TOOLTIP_DELIMITER$\n$DETAILS$" # todo: NEW TRANSLATION
+ MARKET_WORLD_MARKET_HUB_EXPORTS_TOOLTIP: "#header [STATE.GetWorldMarketHubNameWithCountryFlag]: [Concept('concept_trade','vývoz')] na [Concept('concept_world_market','světový trh')] ($GOODS_NAME$)#!\nAktuálně celkem: $TRADES|vD$\n$TOOLTIP_DELIMITER$\n$DETAILS$" # todo: NEW TRANSLATION
+ MARKET_PANEL_TRADE_SCOPE: "[SelectLocalization(MarketPanel.HasSelectedWorldMarketHub, 'MARKET_PANEL_TRADE_SCOPE_HUB', 'MARKET_PANEL_TRADE_SCOPE_MARKET')]" # todo: NEW TRANSLATION
+ MARKET_PANEL_TRADE_SCOPE_HUB: "$concept_world_market_hub_short$ [MarketPanel.GetSelectedWorldMarketHub.GetWorldMarketHubNameNoFormatting]" # todo: NEW TRANSLATION
+ MARKET_PANEL_TRADE_SCOPE_MARKET: "[MarketPanel.GetMarket.GetOwner.GetFlagTextIcon] [MarketPanel.GetMarket.GetName]" # todo: NEW TRANSLATION
+ MARKET_PANEL_PARTNER_TRADE_VALUES: "[MakeLineIf(NotZero_CFixedPoint(MarketPanel.GetImportedAmountFromPartner(Market.Self, Goods.Self)), 'MARKET_PANEL_PARTNER_EXPORTS')][MakeLineIf(NotZero_CFixedPoint(MarketPanel.GetExportedAmountToPartner(Market.Self, Goods.Self)), 'MARKET_PANEL_PARTNER_IMPORTS')][MakeLineIf(NotZero_CFixedPoint(Market.GetExportedAmount(Goods.Self)), 'MARKET_EXPORTS_TO_WORLD_MARKET')][MakeLineIf(NotZero_CFixedPoint(Market.GetImportedAmount(Goods.Self)), 'MARKET_IMPORTS_FROM_WORLD_MARKET')]" # todo: NEW TRANSLATION
+ MARKET_PANEL_PARTNER_EXPORTS: "@market_sell_orders! [Concept('concept_trade','Vývoz')] [MarketPanel.GetImportedAmountFromPartner(Market.Self, Goods.Self)|v0] [Goods.GetAltNameNoFormatting('adj_G')|l] – $MARKET_PANEL_TRADE_SCOPE$" # todo: CHANGED (predtym: @market_sell_orders! [Concept('concept_trade','Vývoz')] [MarketPanel.GetImportedAmountFromPartner(Market.Self, Goods.Sel)
+ MARKET_PANEL_PARTNER_IMPORTS: "@market_buy_orders! [Concept('concept_trade','Dovoz')] [MarketPanel.GetExportedAmountToPartner(Market.Self, Goods.Self)|v0] [Goods.GetAltNameNoFormatting('adj_G')|l] – $MARKET_PANEL_TRADE_SCOPE$" # todo: CHANGED (predtym: @market_buy_orders! [Concept('concept_trade','Dovoz')] [MarketPanel.GetExportedAmountToPartner(Market.Self, Goods.Self)|)
+ GOTO_WORLD_MARKET_HUB_NO_TRADE: "Žádný [Concept('concept_state','stát')] v [State.GetMarket.GetName] [Concept('concept_trade','neobchoduje')] přes toto [Concept('concept_world_market_hub','centrum světového trhu')]" # todo: NEW TRANSLATION
  STATE_WORLD_MARKET_ACCESS: "[Concept('concept_world_market_access','Přístup na světový trh')]\n[State.GetWorldMarketAccessFormatted]"
  STATE_WORLD_MARKET_ACCESS_DESC: "#header [Concept('concept_world_market_access','Přístup na světový trh')]#!\n[State.GetWorldMarketAccessFormatted] pro [State.GetNameWithCountryFlag]\n[MakeLineIf( IsZero(State.GetTradeCapacity), 'NO_WORLD_MARKET_ACCESS_DUE_TO_NO_TRADE_CAPACITY')]$TOOLTIP_DELIMITER$\n[State.GetWorldMarketAccessDesc]" # todo: CHANGED (predtym: header [Concept('concept_world_market_access','Přístup na světový trh')] !\n[State.GetWorldMarketAccessFormatted] pro [S)
  STATE_TRADE_CAPACITY: "[Concept('concept_trade_capacity','Obchodní kapacita')]\nVyužívá se #tooltippable #tooltip:[State.GetTooltipTag],STATE_TRADE_CAPACITY_USAGE_TOOLTIP [State.GetTradeCapacityUsage|v0]#!#! z #tooltippable #tooltip:[State.GetTooltipTag],STATE_TRADE_CAPACITY_TOOLTIP [State.GetTradeCapacity|v0]#!#!"
@@ -3770,10 +3815,8 @@
  WORLD_MARKET_HUB_SCORE_COLD: "#b $COLD_SEVERITY$#! [concept_cold_intensity] v oblasti [STATE_REGION.GetName] na vrcholu zimy" # todo: NEW TRANSLATION
  WORLD_MARKET_ACCESS_IS_HUB: "[STATE.GetWorldMarketHubNameWithCountryFlag] je [Concept('concept_world_market_hub','centrum světového trhu')] pro [STATE.GetMarket.GetOwner.GetFlagTextIcon] [STATE.GetMarket.GetName]" # todo: CHANGED (predtym: [STATE.GetName] je [Concept('concept_world_market_hub','centrum světového trhu')] pro [STATE.GetMarket.GetName])
  WORLD_MARKET_ACCESS_HAS_HUB: "Připojeno ke [Concept('concept_world_market','světovýmu trhu')] skrze [STATE.GetWorldMarketHubNameWithCountryFlag] [Concept('concept_world_market_hub','centrum světového trhu')|l]" # todo: CHANGED (predtym: Připojeno ke [Concept('concept_world_market','světovýmu trhu')] skrze [Concept('concept_world_market_hub','centrum světo)
- STATE_MILITARY_WORLD_MARKET_ACCESS_DESC: "#header [State.GetWorldMarketHubName] [concept_world_market_hub] pro trh [State.GetMarket.GetName]#!\n#tooltippable #tooltip:[State.GetTooltipTag],STATE_MILITARY_WORLD_MARKET_ACCESS_BREAKDOWN [State.GetWorldMarketAccessFormatted]#!#! [concept_world_market_access] pro [State.GetNameWithCountryFlag]\n\n[SelectLocalization(State.HasBlockadeSeaRegion, 'WORLD_MARKET_HUB_BLOCKADE_IN_SEA_REGION', 'WORLD_MARKET_HUB_BLOCKADE_HERE')][ConcatIfNeitherEmpty('\n', AddLocalizationIf(IsZero(State.GetTradeCapacity), 'NO_WORLD_MARKET_ACCESS_DUE_TO_NO_TRADE_CAPACITY'))]" # todo: NEW TRANSLATION
  WORLD_MARKET_HUB_BLOCKADE_IN_SEA_REGION: "@information! [Concept('concept_blockade','$concept_blockading|q$')] oblasti [State.GetBlockadeSeaRegionName] by snížila $concept_world_market_access$ pro každý [concept_state], který obchoduje přes tento $concept_world_market_hub_short$, pokud by nebylo možné přejít na jiný s postihem za vzdálenost." # todo: NEW TRANSLATION
  WORLD_MARKET_HUB_BLOCKADE_HERE: "@information! K tomuto [concept_world_market_hub] se [concept_blockade] nedostane." # todo: NEW TRANSLATION
- STATE_MILITARY_WORLD_MARKET_ACCESS_BREAKDOWN: "#header [concept_world_market_access]#!\n[State.GetWorldMarketAccessFormatted] pro [State.GetNameWithCountryFlag]\n$TOOLTIP_DELIMITER$\n#title Vypočítáno jako:#!#indent_newline:3 \n[State.GetWorldMarketAccessDesc]#!" # todo: NEW TRANSLATION
  WORLD_MARKET_ACCESS_FALLBACK_HUB: "Obchodování přes vzdálenější $concept_world_market_hub$, protože poskytuje lepší přístup než nejbližší centrum v oblasti [STATE.GetWorldMarketHubNameWithCountryFlag]" # todo: NEW TRANSLATION
  WORLD_MARKET_ACCESS_FALLBACK_HUB_DISTANCE_FACTOR: "#n x$VALUE|2$#! kvůli vzdálenosti od [STATE.GetWorldMarketHubNameWithCountryFlag] $concept_world_market_hub_short$ (nejméně x$MIN|2$)" # todo: NEW TRANSLATION
  WORLD_MARKET_ACCESS_HUB_MARKET_ACCESS_FACTOR: "#n x$VALUE|2$#! kvůli [concept_market_access] v [STATE.GetWorldMarketHubNameWithCountryFlag] $concept_world_market_hub_short$" # todo: NEW TRANSLATION
@@ -4670,6 +4713,7 @@
  LEADER_POPULARITY: "[Concept('concept_popularity','Popularita')] vůdce [SCOPE.gsInterestGroup('interest_group').GetLeader.GetFullNameWithTitle]"
  IN_GOVERNMENT_ATTRACTION: "Dopad zdanění na přitažlivost zájmové skupiny"
  MILITARY_INDUSTRIES: "Zaměstnání ve vojenském průmyslu"
+ MILITARY_INDUSTRY_OWNERSHIP: "Vlastnictví ve vojenském průmyslu" # todo: NEW TRANSLATION
  POP_MILITARY_BUREAUCRACY: "Rusko-americká vojenská byrokracie"
  STATE_ATHEISM_LAW: "[GetLawType('law_state_atheism').GetName] [Concept('concept_law','zákon')]"
  STATE_RELIGION_LAW: "[GetLawType('law_state_religion').GetName] [Concept('concept_law','zákon')]"
@@ -6481,11 +6525,11 @@
  TARIFFS: "Tarify"
  GOODS_WITHOUT_WORLD_MARKET_TRADE: "Zboží bez světového trhu"
  GOODS_CATEGORY: "Kategorie zboží"
- SHOW_ZERO_TRADE: "Má obchod"
+ SHOW_ZERO_TRADE: "Má nějaký obchod" # todo: CHANGED (predtym: Má obchod)
  TARIFFS_SHOW_ALL: "Zobrazit vše"
- TARIFFS_SHOW_ALL_TT: "Zobrazit vše"
+ TARIFFS_SHOW_ALL_TT: "Zobrazit veškeré [Concept('concept_good','zboží')]" # todo: CHANGED (predtym: Zobrazit vše)
  TARIFFS_SHOW_ONLY_TRADED: "Pouze obchodované"
- TARIFFS_SHOW_ONLY_TRADED_TT: "Pouze obchodované"
+ TARIFFS_SHOW_ONLY_TRADED_TT: "Pouze obchodované [Concept('concept_good','zboží')]" # todo: CHANGED (predtym: Pouze obchodované)
  TOTAL_TARIFFS_SUBVENTIONS_MONEY_STATE_BALANCE_FOR_GOODS: "@money![Goods.GetStateTariffsSubventionsBalance|K=+]"
  TOTAL_TARIFFS_SUBVENTIONS_MONEY_STATE_BALANCE_FOR_GOODS_TOOLTIP: "[Goods.GetStateTariffsSubventionsBalanceDesc]"
  TOTAL_TARIFFS_SUBVENTIONS_MONEY_MARKET_BALANCE_FOR_GOODS: "@money![Goods.GetMarketTariffsSubventionsBalance|K=+]"
@@ -6494,8 +6538,8 @@
  TOTAL_TARIFFS_SUBVENTIONS_MONEY_BALANCE_FOR_GOODS_DESC: "$HEADER$\n$VALUE|K=+$ v $NAME$\n$TOOLTIP_DELIMITER$\n$TARIFFS|K=+$ z $concept_tariffs$ ($TARIFF_RATE|%0v$ sazba $concept_tariff$)\n$SUBVENTIONS|K=+$ z $concept_subventions$ ($SUBVENTION_RATE|%0v$ sazba $concept_subvention$)"
  TOTAL_TARIFFS_SUBVENTIONS_MONEY_BALANCE_FOR_GOODS_NO_TRADE_DESC: "$HEADER$\n$TOOLTIP_DELIMITER$\nŽádný [Concept('concept_trade','obchod')] tohoto [Concept('concept_good','zboží')] v $NAME|v$"
  TOTAL_TARIFFS_SUBVENTIONS_MONEY_BALANCE_FOR_GOODS_NONE_DESC: "$HEADER$\n$TOOLTIP_DELIMITER$\nŽádné $concept_tariffs$ ani $concept_subventions$ pro toto [Concept('concept_good','zboží')] v $NAME|v$"
- WORLD_MARKET_GOODS_EXPORT_TOOLTIP: "#header [Market.GetName] [Goods.GetName] $concept_exports$#!\nMnožství: [Market.GetExportedAmount(Goods.Self)|v0]" ##header [Market.GetName] [Goods.GetTextIcon][Nbsp][Goods.GetName] $concept_exports$#!\nMnožství: [Market.GetExportedAmount(Goods.Self)|v0]
- WORLD_MARKET_GOODS_IMPORT_TOOLTIP: "#header [Market.GetName] [Goods.GetName] $concept_imports$#!\nMnožství: [Market.GetImportedAmount(Goods.Self)|v0]" ##header [Market.GetName] [Goods.GetTextIcon][Nbsp][Goods.GetName] $concept_imports$#!\nMnožství: [Market.GetImportedAmount(Goods.Self)|v0]
+ WORLD_MARKET_GOODS_EXPORT_TOOLTIP: "#header [Concept('concept_trade','Vývoz')] [Goods.GetAltName('adj_G')] – $MARKET_PANEL_TRADE_SCOPE$#!\nMnožství: [MarketPanel.GetExportedAmount(Goods.Self)|v0]" # todo: CHANGED (predtym: header [Concept('concept_trade','Vývoz')] [Goods.GetAltName('adj_G')] z $MARKET_PANEL_TRADE_SCOPE$ !\nMnožství: [MarketP)
+ WORLD_MARKET_GOODS_IMPORT_TOOLTIP: "#header [Concept('concept_trade','Dovoz')] [Goods.GetAltName('adj_G')] – $MARKET_PANEL_TRADE_SCOPE$#!\nMnožství: [MarketPanel.GetImportedAmount(Goods.Self)|v0]" # todo: CHANGED (predtym: header [Concept('concept_trade','Dovoz')] [Goods.GetAltName('adj_G')] do $MARKET_PANEL_TRADE_SCOPE$ !\nMnožství: [Market)
  revolution_name: "[Concept('concept_revolution','Revoluce')]"
  secession_name: "[Concept('concept_secession','Odtržení')]"
  REVOLUTIONS_HEADER: "#header $concept_revolution$#!"
@@ -7420,7 +7464,7 @@
  MARKET_ACCESS_DESC_BASE_MAX: "[concept_infrastructure_usage] ve výši #tooltippable #tooltip:[State.GetTooltipTag],STATE_INFRASTRUCTURE_USAGE_TOOLTIP $INFRASTRUCTURE_USAGE|0v$#!#! je v rámci dostupné [concept_infrastructure] ve výši #tooltippable #tooltip:[State.GetTooltipTag],STATE_INFRASTRUCTURE_TOOLTIP $INFRASTRUCTURE|0v$#!#!, takže základní $concept_market_access$ zůstává na #P $MARKET_ACCESS|%0v$#!" # todo: CHANGED (predtym: Protože je [Concept('concept_infrastructure_usage','využití infrastruktury')|l] nižší nebo rovno [Concept('concept_infra)
  MARKET_ACCESS_DESC_BASE: "@warning! [concept_infrastructure_usage] ve výši #tooltippable #tooltip:[State.GetTooltipTag],STATE_INFRASTRUCTURE_USAGE_TOOLTIP $INFRASTRUCTURE_USAGE|0v$#!#! překračuje dostupnou [concept_infrastructure] ve výši #tooltippable #tooltip:[State.GetTooltipTag],STATE_INFRASTRUCTURE_TOOLTIP $INFRASTRUCTURE|0v$#!#!, takže základní $concept_market_access$ klesá na #N $MARKET_ACCESS|%0v$#!" # todo: CHANGED (predtym: @warning! Protože je [Concept('concept_infrastructure_usage','využití infrastruktury')|l] vyšší než [Concept('concept_in)
  MARKET_ACCESS_DESC_CONNECTED_LAND: "Připojeno k [State.GetMarket.GetOwner.GetFlagTextIcon] [State.GetMarket.GetName] prostřednictvím pozemní cesty" # todo: CHANGED (predtym: Připojeno k [State.GetMarket.GetName] prostřednictvím pozemní cesty)
- MARKET_ACCESS_DESC_CONNECTED_OVERSEAS: "Připojeno k [State.GetMarket.GetOwner.GetFlagTextIcon] [State.GetMarket.GetName] prostřednictvím přístavů [ShippingLane.GetBeginState.GetNameWithCountryFlag] a [ShippingLane.GetEndState.GetNameWithCountryFlag] při plném základním $concept_market_access$ #P $MARKET_ACCESS|%0v$#!" # todo: CHANGED (predtym: Připojeno k [State.GetMarket.GetName] prostřednictvím přístavů [ShippingLane.GetBeginState.GetName] a [ShippingLane.GetE)
+ MARKET_ACCESS_DESC_CONNECTED_OVERSEAS: "Připojeno k [State.GetMarket.GetOwner.GetFlagTextIcon] [State.GetMarket.GetName] prostřednictvím přístavů [ShippingLane.GetBeginState.GetNameWithCountryFlag] a [ShippingLane.GetEndState.GetNameWithCountryFlag]" # todo: CHANGED (predtym: Připojeno k [State.GetMarket.GetOwner.GetFlagTextIcon] [State.GetMarket.GetName] prostřednictvím přístavů [ShippingLane.)
  MARKET_ACCESS_DESC_CONNECTED_OVERSEAS_INEFFICIENT: "Připojeno k [State.GetMarket.GetOwner.GetFlagTextIcon] [State.GetMarket.GetName] prostřednictvím [ShippingLane.GetCountry.GetAltAdjectiveNoFormatting('ee')] [Concept('concept_shipping_lane','námořní trasy')] skrze přístavy [ShippingLane.GetBeginState.GetNameWithCountryFlag] a [ShippingLane.GetEndState.GetNameWithCountryFlag], s $concept_market_access$ sníženým na #N $MARKET_ACCESS|%0v$#! z důvodu nízké [Concept('concept_shipping_lane_effectiveness','efektivity námořní trasy')]" # todo: CHANGED (predtym: Připojeno k [State.GetMarket.GetOwner.GetFlagTextIcon] [State.GetMarket.GetName] prostřednictvím [ShippingLane.GetCountr)
  MARKET_ACCESS_DESC_DISCONNECTED_OVERSEAS: "Nelze se připojit k [State.GetMarket.GetOwner.GetFlagTextIcon] [State.GetMarket.GetName] přes pevninskou trasu nebo přístavy" # todo: CHANGED (predtym: Nelze se připojit k [State.GetMarket.GetName] přes pevninskou trasu nebo přístavy)
  MARKET_ACCESS_DESC_NO_EXIT_PORT: "Nelze připojit k [State.GetMarket.GetOwner.GetFlagTextIcon] [State.GetMarket.GetName] po souši a [State.GetNameWithCountryFlag] nemá žádný přístav" # todo: CHANGED (predtym: Nelze připojit k [State.GetMarket.GetName] po souši a [State.GetName] nemá žádný přístav)
@@ -7458,8 +7502,8 @@
  POP_AVG_ANNUAL_WAGE_ENTRY: "@money!$WAGE|Dv$ - [Pop.GetCulture.GetName] [Pop.GetReligion.GetName] ([Pop.GetNumWorkforce|vD])"
  NON_LOCAL_GOODS: "Není [Concept('concept_good_production','produkováno')] ani [Concept('concept_good_consumption','spotřebováno')] ve státě [State.GetName]"
  STARVATION_HEADER: "Hladomor"
- FOOD_SECURITY_SPECIFIC_COUNTRY: "[FoodSecurityFilter.GetSelectedCountry.GetName]"
- FOOD_SECURITY_SPECIFIC_STATE: "[FoodSecurityFilter.GetSelectedState.GetCountry.GetFlagTextIcon] [FoodSecurityFilter.GetSelectedState.GetName]"
+ FOOD_SECURITY_SPECIFIC_COUNTRY: "[FoodSecurityFilter.GetSelectedCountry.GetNameNoFormatting]" # todo: CHANGED (predtym: [FoodSecurityFilter.GetSelectedCountry.GetName])
+ FOOD_SECURITY_SPECIFIC_STATE: "[FoodSecurityFilter.GetSelectedState.GetCountry.GetFlagTextIcon] [FoodSecurityFilter.GetSelectedState.GetNameNoFormatting]" # todo: CHANGED (predtym: [FoodSecurityFilter.GetSelectedState.GetCountry.GetFlagTextIcon] [FoodSecurityFilter.GetSelectedState.GetName])
  FOOD_SECURITY_COUNTRY_FILTER_LABEL: "[SelectLocalization(FoodSecurityFilter.HasSpecificCountry, 'FOOD_SECURITY_SPECIFIC_COUNTRY', 'FOOD_SECURITY_FILTER_ALL_COUNTRIES')][AddLocalizationIf(ObjectsEqual(GetPlayer.Self, FoodSecurityFilter.GetSelectedCountry.Self),' (Vy)')]"
  FOOD_SECURITY_COUNTRY_FILTER_TOOLTIP: "Filtr podle [Concept('concept_country','zemí')] v [Market.GetOwner.GetFlagTextIcon] [Market.GetName]" # todo: CONCEPT CASE
  FOOD_SECURITY_STATE_FILTER_LABEL: "[SelectLocalization(FoodSecurityFilter.HasSpecificState, 'FOOD_SECURITY_SPECIFIC_STATE', 'FOOD_SECURITY_FILTER_ALL_STATES')]"
@@ -8324,6 +8368,8 @@
  notification_diplo_play_join_side_notification_desc: "[SCOPE.sC('actor').GetName] se postavilo na stranu [SCOPE.sC('target').GetName] v [Concept('concept_diplomatic_play','diplomatické hře')] proti [SCOPE.sC('recipient').GetName]." # todo: CONCEPT CASE
  notification_diplo_play_abandon_side_notification_name: "[SCOPE.sC('actor').GetName] opustil [SCOPE.sC('target').GetName]"
  notification_diplo_play_abandon_side_notification_desc: "[SCOPE.sC('actor').GetName] opustil jejich podporu pro [SCOPE.sC('target').GetName] v [Concept('concept_diplomatic_play','diplomatické hře')] proti [SCOPE.sC('recipient').GetName]." # todo: CONCEPT CASE
+ notification_diplo_play_war_start_notification_name: "Válka s [SCOPE.sC('actor').GetAltAdjective('I')]" # todo: NEW TRANSLATION
+ notification_diplo_play_war_start_notification_desc: "Mezi námi a [SCOPE.sC('actor').GetAltAdjective('I')] vypukla válka." # todo: NEW TRANSLATION
  notification_diplo_play_war_start_third_party_notification_name: "Válka mezi [SCOPE.sC('actor').GetName] a [SCOPE.sC('target').GetName]"
  notification_diplo_play_war_start_third_party_notification_desc: "Válka propukla mezi [SCOPE.sC('actor').GetName] a [SCOPE.sC('target').GetName]."
  notification_diplo_play_subject_released_notification_name: "[SCOPE.sC('target').GetName] se osvobodil"
@@ -8522,6 +8568,7 @@
  STATE_RIGHT_CLICK_MENU_COLONIZE: "Kolonizovat"
  STATE_RIGHT_CLICK_MENU_CREATE_MARKET: "Vytvořit trh"
  STATE_RIGHT_CLICK_MENU_INCORPORATE: "$INCORPORATE$"
+ STATE_RIGHT_CLICK_MENU_WORLD_MARKET_HUB: "$concept_world_market_hub$" # todo: NEW TRANSLATION
  STATE_RIGHT_CLICK_MENU_CANCEL_INCORPORATION: "Zrušit začlenění ([State.GetIncorporationProgress|v%0] dokončeno)"
  SUBJECT_ACTIONS_BUTTON_TOOLTIP: "#header Zobrazit [Concept('concept_subject_action','akce závislé země')] se [Country.GetName]#!\n#v [GetDataModelSize(Country.GetAvailableSubjectDiploActions)|+]#! dostupných akcí"
  OVERLORD_ACTIONS_BUTTON_TOOLTIP: "#header Zobrazit [Concept('concept_overlord_action','akce vládce')] se [Country.GetName]#!\n#v [GetDataModelSize(Country.GetAvailableOverlordDiploActions)|+]#! dostupných akcí"
@@ -8812,6 +8859,9 @@
  NOT_PLAYER_MARKET_PRIORITY: "@red_cross! Nelze #b nastavit#! prioritu na [Goods.GetAltName('adj_A')] ve [Goods.GetMarket.GetName], protože nejste součástí tohoto [Concept('concept_market','trhu')]" # todo: CONCEPT CASE # todo: NAME CASE
  CURRENT_GOODS_FILTERS: "[SelectLocalization(And(MarketPanel.IsSelected('staple'), MarketPanel.IsSelected('military')), 'VŠECHNY ZBOŽÍ', 'VYBRANÝ FILTR')]"
  SELECTED_FILTER: "[AddTextIf(MarketPanel.IsSelected('staple'), '$STAPLE_FILTER_NAME|q$')][AddTextIf(MarketPanel.IsSelected('industrial'), '$INDUSTRIAL_FILTER_NAME|q$')][AddTextIf(MarketPanel.IsSelected('military'), '$MILITARY_FILTER_NAME|q$')][AddTextIf(MarketPanel.IsSelected('luxury'), '$LUXURY_FILTER_NAME|q$')]" # todo: CHANGED (predtym: [AddTextIf(MarketPanel.IsSelected('staple'), '$STAPLE_FILTER_NAME$')][AddTextIf(MarketPanel.IsSelected('industrial'), '$)
+ MARKET_CURRENT_FILTERS: "$CURRENT_GOODS_FILTERS$[AddLocalizationIf(InformationPanel.IsTabSelected('world_market_trade'), 'MARKET_WORLD_MARKET_HUB_CURRENT_FILTER')]" # todo: NEW TRANSLATION
+ MARKET_WORLD_MARKET_HUB_CURRENT_FILTER: " přes [SelectLocalization(MarketPanel.HasSelectedWorldMarketHub, 'MARKET_WORLD_MARKET_HUB_FILTER_SPECIFIC', 'MARKET_WORLD_MARKET_HUB_CURRENT_FILTER_ALL')]" # todo: NEW TRANSLATION
+ MARKET_WORLD_MARKET_HUB_CURRENT_FILTER_ALL: "$concept_world_market_hubs_short$ (všechna)" # todo: NEW TRANSLATION
  WORLD_MARKET_CURRENT_GOODS_FILTERS: "[SelectLocalization(And(WorldMarketPanel.IsSelected('staple'), WorldMarketPanel.IsSelected('military')), 'ALL_GOODS', 'WORLD_MARKET_SELECTED_FILTER')]"
  WORLD_MARKET_SELECTED_FILTER: "[AddTextIf(WorldMarketPanel.IsSelected('staple'), '$STAPLE_FILTER_NAME|q$')][AddTextIf(WorldMarketPanel.IsSelected('industrial'), '$INDUSTRIAL_FILTER_NAME|q$')][AddTextIf(WorldMarketPanel.IsSelected('military'), '$MILITARY_FILTER_NAME|q$')][AddTextIf(WorldMarketPanel.IsSelected('luxury'), '$LUXURY_FILTER_NAME|q$')]" # todo: CHANGED (predtym: [AddTextIf(WorldMarketPanel.IsSelected('staple'), '$STAPLE_FILTER_NAME$')][AddTextIf(WorldMarketPanel.IsSelected('indust)
  MARKET_TRADE_VALUES: "[MakeLineIf(NotZero_CFixedPoint(Market.GetExportedAmountToMarket(Goods.GetMarket, Goods.Self)), 'MARKET_EXPORTS_TO_MARKET')][MakeLineIf(NotZero_CFixedPoint(Market.GetImportedAmountFromMarket(Goods.GetMarket, Goods.Self)), 'MARKET_IMPORTS_FROM_MARKET')][MakeLineIf(NotZero_CFixedPoint(Market.GetExportedAmount(Goods.Self)), 'MARKET_EXPORTS_TO_WORLD_MARKET')][MakeLineIf(NotZero_CFixedPoint(Market.GetImportedAmount(Goods.Self)), 'MARKET_IMPORTS_FROM_WORLD_MARKET')]"
@@ -10234,3 +10284,10 @@
  POP_SUPPORT_COSSACKS_PRESENT: "Přítomnost kozáků v [concept_state]" # todo: NEW TRANSLATION
  COSSACKS_UNDER_NON_COSSACK_COUNTRY: "Kozáci žijící v nekozácké [concept_country]" # todo: NEW TRANSLATION
  RECENTLY_REMOVED_COSSACKS_HOST: "Nedávno rozpuštěná kozácká vojska" # todo: NEW TRANSLATION
+ MILITARY_FORMATION_SUPPLY_DISTANCE: "@supply! Vzdálenost zásobování: #v $VALUE|D$#!" # todo: NEW TRANSLATION # todo: NOT IN ENGLISH
+ POWER_BLOC_FORMATION_MANDATES_LOST_DESC: "@warning! Neutracené [SelectLocalization(EqualTo_int32('(int32)$LOST|q$', '(int32)1'), 'POWER_BLOC_MANDATE_CONCEPT', 'POWER_BLOC_MANDATES_CONCEPT')] v počtu #negative_value $LOST$#! budou při založení [concept_power_bloc] ztraceny, protože jich může mít nejvýše #v [GetDefine('NPowerBlocs', 'MAX_MANDATES')]#!. Utraťte je za [Concept('concept_power_bloc_principle','$concept_power_bloc_principles|q$')], abyste o ně nepřišli." # todo: NEW TRANSLATION # todo: NOT IN ENGLISH
+ FORM_POWER_BLOC_MANDATES_LOST_WARNING: "Neutracené [SelectLocalization(EqualTo_int32('(int32)$LOST|q$', '(int32)1'), 'POWER_BLOC_MANDATE_CONCEPT', 'POWER_BLOC_MANDATES_CONCEPT')] v počtu #negative_value $LOST$#! budou ztraceny, protože $concept_power_bloc$ může mít nejvýše [GetDefine('NPowerBlocs', 'MAX_MANDATES')|v]" # todo: NEW TRANSLATION # todo: NOT IN ENGLISH
+ MARKET_COUNTRY_TRADE_CAPACITY_TOOLTIP: "#header [Concept('concept_trade_capacity','Obchodní kapacita')] v $MARKET_NAME$#!\n$BALANCE|+=$ pro [COUNTRY.GetAltAdjective('A')] ($USAGE|v$/$CAPACITY|v$)\n$TOOLTIP_DELIMITER$\n$DETAILS$" # todo: CONCEPT CASE # todo: NOT IN ENGLISH
+ MARKET_COUNTRY_TRADE_CAPACITY: "[Country.GetAdjective] [Concept('concept_trade_capacity','obchodní kapacita')]: [Market.GetCountryTradeCapacityBalance(Country.Self)|+=] ([Market.GetCountryTradeCapacityUsage(Country.Self)|v]/[Market.GetCountryTradeCapacity(Country.Self)|v])" # todo: NOT IN ENGLISH
+ STATE_MILITARY_WORLD_MARKET_ACCESS_DESC: "#header [State.GetWorldMarketHubName] [concept_world_market_hub] pro trh [State.GetMarket.GetName]#!\n#tooltippable #tooltip:[State.GetTooltipTag],STATE_MILITARY_WORLD_MARKET_ACCESS_BREAKDOWN [State.GetWorldMarketAccessFormatted]#!#! [concept_world_market_access] pro [State.GetNameWithCountryFlag]\n\n[SelectLocalization(State.HasBlockadeSeaRegion, 'WORLD_MARKET_HUB_BLOCKADE_IN_SEA_REGION', 'WORLD_MARKET_HUB_BLOCKADE_HERE')][ConcatIfNeitherEmpty('\n', AddLocalizationIf(IsZero(State.GetTradeCapacity), 'NO_WORLD_MARKET_ACCESS_DUE_TO_NO_TRADE_CAPACITY'))]" # todo: NEW TRANSLATION # todo: NOT IN ENGLISH
+ STATE_MILITARY_WORLD_MARKET_ACCESS_BREAKDOWN: "#header [concept_world_market_access]#!\n[State.GetWorldMarketAccessFormatted] pro [State.GetNameWithCountryFlag]\n$TOOLTIP_DELIMITER$\n#title Vypočítáno jako:#!#indent_newline:3 \n[State.GetWorldMarketAccessDesc]#!" # todo: NEW TRANSLATION # todo: NOT IN ENGLISH
